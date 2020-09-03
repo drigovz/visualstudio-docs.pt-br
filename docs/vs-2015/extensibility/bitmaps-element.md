@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184666"
 ---
 # <a name="bitmaps-element"></a>Elemento Bitmaps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Grupos [elemento Bitmap](../extensibility/bitmap-element.md) elementos.  
+Agrupa elementos de [elemento de bitmap](../extensibility/bitmap-element.md) .  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Bitmaps>  
@@ -39,20 +39,20 @@ Grupos [elemento Bitmap](../extensibility/bitmap-element.md) elementos.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|  
+|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos de bitmap.|  
 |[Elemento Bitmap](../extensibility/bitmap-element.md)|Define um bitmap.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas do VSPackage.|  
+|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -64,6 +64,6 @@ Grupos [elemento Bitmap](../extensibility/bitmap-element.md) elementos.
 </Bitmaps>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Como os VSPackages adicionam elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

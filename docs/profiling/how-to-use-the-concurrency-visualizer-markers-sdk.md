@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0782744236777fb84a6d87f93f59697275df1c11
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331387"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como usar o SDK de marcadores de Visualização Simultânea
@@ -166,5 +166,5 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
      ![Visualizador de simultaneidade com 3 séries de marcador personalizado](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)

@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (modelos do Visual Studio) | Microsoft Docs
+title: Elemento assembly (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,24 +14,24 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184699"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento de assembly (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos.  
+Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
- \<Referências >  
- \<Referência >  
- \<Assembly >  
+ \<References>  
+ \<Reference>  
+ \<Assembly>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Assembly> AssemblyName </Assembly>  
@@ -41,10 +41,10 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -55,9 +55,9 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- Esse texto Especifica o assembly a ser adicionado a um projeto quando o modelo de item é instanciado. O nome do assembly deve ser especificado em uma das seguintes maneiras:  
+ Esse texto especifica o assembly a ser adicionado a um projeto quando o modelo de item é instanciado. Esse nome de assembly deve ser especificado de uma das seguintes maneiras:  
   
-- Como um nome completo do assembly. Por exemplo:  
+- Como um nome de assembly completo. Por exemplo:  
   
     ```  
     <Assembly>  
@@ -72,12 +72,12 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
     ```  
   
 ## <a name="remarks"></a>Comentários  
- O `Assembly` é um elemento filho obrigatório de `Reference`.  
+ `Assembly` é um elemento filho obrigatório de `Reference` .  
   
- O `Reference`, `References,` e `Assembly` elementos podem ser usados somente em arquivos. vstemplate que tenham um `Type` valor de atributo `Item`.  
+ Os `Reference` `References,` elementos e `Assembly` podem ser usados somente em arquivos. vstemplate que tenham um `Type` valor de atributo de `Item` .  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona as referências aos assemblies System. dll e System.  
+ O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona referências aos assemblies System.dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -97,6 +97,6 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

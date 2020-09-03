@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850071"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
- A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://www.w3.org/TR/CSS2/box.html) do elemento selecionado em um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
+ A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://www.w3.org/TR/CSS2/box.html) do elemento selecionado em um [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativo, Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
   
 > [!TIP]
 > As alterações feitas na guia **layout** não são permanentes. Você pode fazer alterações permanentes em seu código-fonte e, em seguida, atualizar seu aplicativo usando o botão **Atualizar aplicativo do Windows** (somente para aplicativos da Windows Store e da Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
@@ -105,7 +105,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
      Essa exibição fornece algumas informações úteis sobre o elemento:  
   
-    - As cores correspondem ao realce da caixa que aparece no Simulador ao focalizar os elementos. A cor azul representa as dimensões do elemento \<img >. A cor marrom-claro representa os valores de margem.  
+    - As cores correspondem ao realce da caixa que aparece no Simulador ao focalizar os elementos. A cor azul representa as \<img> dimensões do elemento. A cor marrom-claro representa os valores de margem.  
   
     - A margem esquerda (margin-left) é definida, o que sugere a causa do problema, pois corresponde ao sintoma (preto no lado esquerdo das imagens).  
   
@@ -114,7 +114,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
 11. Para ver como a regra de margem esquerda é aplicada, escolha a guia **computada** e examine a regra de margem esquerda. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
   
     > [!TIP]
-    > A guia **computada** mostra que a regra de margem esquerda está definida no seletor de `..hubpage .hub. section4 .sub-image-row img` CSS, encontrada em Hub. css. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
+    > A guia **computada** mostra que a regra de margem esquerda está definida no `..hubpage .hub. section4 .sub-image-row img` seletor de CSS, encontrada em Hub. css. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
   
      Você também pode usar a guia **layout** para testar modificações em valores de layout.  
   
@@ -122,11 +122,11 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 13. Digite `0` e pressione Enter. (Você também pode usar as teclas de seta para cima e para baixo para alterar o valor.)  
   
-14. Selecione os outros elementos \<img > no explorador do DOM e altere os valores da margem esquerda para 0.  
+14. Selecione os outros \<img> elementos no explorador do dom e altere os valores da margem esquerda para 0.  
   
 15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na guia **computada** sob a regra Margin-Left.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar estilos CSS usando o explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)
+ [Exibir os ouvintes de eventos do DOM](../debugger/view-dom-event-listeners.md)

@@ -12,18 +12,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc1fb57c7ec43421b211b29cfd6ab97b24a1864c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184741"
 ---
 # <a name="bitmap-element"></a>Elemento Bitmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define um bitmap. O bitmap é carregado de um recurso ou de um arquivo.  
+Define um bitmap. O bitmap é carregado a partir de um recurso ou de um arquivo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Bitmap guid="guidImages" href="images\MyImage.bmp" usedList="bmp1, bmp2, bmp3" />  
@@ -36,20 +36,20 @@ Define um bitmap. O bitmap é carregado de um recurso ou de um arquivo.
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador de comando/ID de GUID.<br /><br /> O atributo de guid para um bitmap não está associado a qualquer VSPackage ou outro grupo de comando.  Ele deve ser exclusivo para a definição de bitmap e não deve ser usado para qualquer outra finalidade.|  
-|resID|ID do identificador de comando/ID de GUID. É necessário o resID ou o atributo href.<br /><br /> O atributo resID é uma ID de recurso de inteiro que determina a faixa de bitmap que deve ser carregada durante a mesclagem de tabela de comando.  Quando a tabela de comando está sendo carregada, os bitmaps especificados pela ID de recurso serão carregados do recurso do mesmo módulo.|  
-|usedlist do bloco|Necessário se o atributo resID estiver presente. Seleciona as imagens disponíveis na faixa de bitmap.|  
-|{1&gt;href&lt;1}|Caminho para o bitmap. É necessário o resID ou o atributo href.<br /><br /> O caminho de inclusão é pesquisado para o arquivo de imagem indicada, o que é inserido no binário resultante.  Durante a mesclagem de tabela de comando, a imagem é copiada e nenhuma pesquisa de recursos adicionais ou a carga é necessária.  Se o atributo usedlist do bloco não estiver presente, todas as imagens na faixa de estão disponíveis. **Observação:**  Imagens podem ser fornecidas em vários formatos que incluem. bmp,. PNG e. gif.  Versões anteriores do compilador não dava suporte a imagens de bitmap de 32 bits que tinha informações de alfa para transparência parcial. A solução alternativa para essas versões é usar o formato. PNG.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Obrigatórios. GUID do identificador de comando GUID/ID.<br /><br /> O atributo GUID de um bitmap não está associado a nenhum VSPackage ou outro grupo de comandos.  Ele deve ser exclusivo para a definição de bitmap e não deve ser usado para nenhuma outra finalidade.|  
+|resID|ID do identificador de comando de GUID/ID. O atributo resID ou href é necessário.<br /><br /> O atributo resID é uma ID de recurso de número inteiro que determina a faixa de bitmap a ser carregada durante a mesclagem da tabela de comandos.  Quando a tabela de comandos estiver sendo carregada, os bitmaps especificados pela ID do recurso serão carregados a partir do recurso do mesmo módulo.|  
+|é usado|Obrigatório se o atributo resID estiver presente. Seleciona as imagens disponíveis na faixa de bitmap.|  
+|href|Caminho para o bitmap. O atributo resID ou href é necessário.<br /><br /> O caminho de inclusão é procurado para o arquivo de imagem indicado, que é inserido no binário resultante.  Durante a mesclagem de tabela de comando, a imagem é copiada e nenhuma pesquisa de recurso adicional ou carga é necessária.  Se o atributo usedlist não estiver presente, todas as imagens na faixa estarão disponíveis. **Observação:**  As imagens podem ser fornecidas em um dos vários formatos que incluem. bmp,. png e. gif.  As versões anteriores do compilador não davam suporte a imagens de bitmap de 32 bits que tinham informações alfa para transparência parcial. A solução alternativa para essas versões é usar o formato. png.|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos do Bitmap.|  
+|[Elemento Bitmaps](../extensibility/bitmaps-element.md)|Agrupa elementos de bitmap.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -59,5 +59,5 @@ Define um bitmap. O bitmap é carregado de um recurso ou de um arquivo.
   usedList="1, 2, 3, 4"/>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

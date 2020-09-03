@@ -1,5 +1,5 @@
 ---
-title: Alterar o texto de um comando de Menu | Microsoft Docs
+title: Alterando o texto de um comando de menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,22 +13,22 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8fd3fc01a5dd3e10e633b876b719695d6b26c18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184487"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Alterando o texto de um comando de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As etapas a seguir mostram como alterar o rótulo de texto de um comando de menu usando o <xref:System.ComponentModel.Design.IMenuCommandService> service.  
+As etapas a seguir mostram como alterar o rótulo de texto de um comando de menu usando o <xref:System.ComponentModel.Design.IMenuCommandService> serviço.  
   
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Alterar um rótulo de comando de menu com o IMenuCommandService  
+## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Alterando um rótulo de comando de menu com o IMenuCommandService  
   
-1. Crie um projeto do VSIX chamado `MenuText` com um comando de menu denominado **ChangeMenuText**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Crie um projeto VSIX chamado `MenuText` com um comando de menu chamado **ChangeMenuText**. Para obter mais informações, consulte [criando uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2. No arquivo .vstc, adicione o `TextChanges` sinalizar ao seu comando de menu, conforme mostrado no exemplo a seguir.  
+2. No arquivo. vstc, adicione o `TextChanges` sinalizador ao comando de menu, conforme mostrado no exemplo a seguir.  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -41,7 +41,7 @@ As etapas a seguir mostram como alterar o rótulo de texto de um comando de menu
     </Button>  
     ```  
   
-3. No arquivo ChangeMenuText.cs, crie um manipulador de eventos será chamado antes do comando de menu é exibido.  
+3. No arquivo ChangeMenuText.cs, crie um manipulador de eventos que será chamado antes que o comando de menu seja exibido.  
   
     ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
@@ -54,11 +54,11 @@ As etapas a seguir mostram como alterar o rótulo de texto de um comando de menu
     }  
     ```  
   
-     Você também pode atualizar o status do comando de menu nesse método, alterando a <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, e <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> propriedades sobre o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto.  
+     Você também pode atualizar o status do comando de menu nesse método alterando as <xref:System.ComponentModel.Design.MenuCommand.Visible%2A> Propriedades, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A> e <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> no <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto.  
   
-4. No construtor ChangeMenuText, substitua o código de inicialização e o posicionamento de comando original pelo código que cria uma <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (em vez de uma `MenuCommand`) que representa o comando de menu, adiciona o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> manipulador de eventos e fornece um menu comando para o serviço de comando de menu.  
+4. No Construtor ChangeMenuText, substitua o código original de inicialização e posicionamento do comando pelo código que cria um <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (em vez de um `MenuCommand` ) que representa o comando de menu, adiciona o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> manipulador de eventos e fornece o comando de menu para o serviço de comando de menu.  
   
-     Aqui está o que deve se parecer com:  
+     Aqui está o que deve ser semelhante a:  
   
     ```csharp  
     private ChangeMenuText(Package package)  
@@ -85,6 +85,6 @@ As etapas a seguir mostram como alterar o rótulo de texto de um comando de menu
   
 5. Compile o projeto e comece a depuração. A instância experimental do Visual Studio é exibida.  
   
-6. Sobre o **ferramentas** menu, você verá um comando chamado **ChangeMenuText invocar**.  
+6. No menu **ferramentas** , você deverá ver um comando chamado **Invoke ChangeMenuText**.  
   
-7. Clique no comando. Você deve ver a caixa de mensagem anunciando que MenuItemCallback foi chamado. Quando você descartar a caixa de mensagem, você deverá ver o nome do comando no menu Ferramentas agora está **novo texto**.
+7. Clique no comando. Você deve ver a caixa de mensagem anunciando que MenuItemCallback foi chamado. Quando você descartar a caixa de mensagem, verá que o nome do comando no menu ferramentas agora é **novo texto**.

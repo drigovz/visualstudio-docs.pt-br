@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331412"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
@@ -276,7 +276,7 @@ if (performance.mark && performance.measure) {
 
  ![Filtrando a linha do tempo para um evento](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")
 
-### <a name="filter-events"></a><a name="FilterEvents"></a>Filtrar eventos
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtrar eventos
  Você pode filtrar alguns eventos do gráfico de detalhes da linha do tempo para reduzir o ruído nos dados ou para eliminar dados que não são interessantes para seu cenário de desempenho. É possível filtrar por nome ou por duração de evento, ou ainda, pelos filtros específicos descritos aqui.
 
  Desmarque a opção **Atividade em segundo plano** do ícone de filtro no painel inferior para filtrar a decodificação de imagem, o download especulativo e os eventos GC. Como esses eventos não são muito acionáveis, eles ficam ocultos por padrão.
@@ -331,15 +331,15 @@ if (performance.mark && performance.measure) {
 |Análise de HTML|Carregando|Um novo conteúdo HTML foi encontrado e foi feita uma tentativa de analisa-lo em nós e de inseri-lo na árvore DOM.|
 |Solicitação HTTP|Carregando|Um recurso remoto foi encontrado no DOM, ou uma XMLHttpRequest foi criada resultando em uma solicitação HTTP.|
 |Download especulativo|Carregando|O conteúdo HTML da página foi pesquisado para obter os recursos necessários de modo que as solicitações HTTP subsequentes para os recursos pudessem ser agendadas rapidamente.|
-|Função de retorno de chamada do quadro de animação|Script|O navegador estava prestes a renderizar outro quadro e isso disparou uma função de retorno de chamada fornecida pelo aplicativo.|
-|Evento DOM|Script|Um evento DOM ocorreu e foi executado.<br /><br /> A propriedade `context` para o evento DOM, como `DOMContentLoaded` ou `click` é mostrada entre parênteses.|
-|Ouvinte de eventos|Script|Um ouvinte de evento foi chamado e executado.|
-|Ouvinte de consulta de mídia|Script|Uma consulta de mídia registrada foi invalidada, resultando na execução dos seus ouvintes associados.|
-|Observador de mutação|Script|Um ou mais elementos DOM observados foram modificados, resultando na execução de um retorno de chamada associado do MutationObserver.|
-|Avaliação de script|Script|Um novo elemento SCRIPT foi encontrado no DOM e foi feita uma tentativa de analisar e executar o script.|
-|Timer|Script|Um temporizador agendado teve o tempo decorrido, e isso resultou na execução de sua função associada de retorno de chamada.|
-|Função de retorno de chamada assíncrona do Windows Runtime|Script|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Windows Runtime.|
-|Evento do Windows Runtime|Script|Um evento ocorrido em um objeto do Windows Runtime disparou um ouvinte registrado.|
+|Função de retorno de chamada do quadro de animação|Scripting|O navegador estava prestes a renderizar outro quadro e isso disparou uma função de retorno de chamada fornecida pelo aplicativo.|
+|Evento DOM|Scripting|Um evento DOM ocorreu e foi executado.<br /><br /> A propriedade `context` para o evento DOM, como `DOMContentLoaded` ou `click` é mostrada entre parênteses.|
+|Ouvinte de eventos|Scripting|Um ouvinte de evento foi chamado e executado.|
+|Ouvinte de consulta de mídia|Scripting|Uma consulta de mídia registrada foi invalidada, resultando na execução dos seus ouvintes associados.|
+|Observador de mutação|Scripting|Um ou mais elementos DOM observados foram modificados, resultando na execução de um retorno de chamada associado do MutationObserver.|
+|Avaliação de script|Scripting|Um novo elemento SCRIPT foi encontrado no DOM e foi feita uma tentativa de analisar e executar o script.|
+|Temporizador|Scripting|Um temporizador agendado teve o tempo decorrido, e isso resultou na execução de sua função associada de retorno de chamada.|
+|Função de retorno de chamada assíncrona do Windows Runtime|Scripting|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Windows Runtime.|
+|Evento do Windows Runtime|Scripting|Um evento ocorrido em um objeto do Windows Runtime disparou um ouvinte registrado.|
 |Coleta de lixo|GC|O tempo foi gasto na coleta de memória para objetos que não estão mais em uso.|
 |Cálculo CSS|Estilo|Foram feitas alterações no DOM que exigiram que as propriedades de estilo de todos os elementos afetados fossem recalculadas.|
 |Layout|Estilo|Foram feitas alterações no DOM que exigiram que o tamanho e/ou a posição de todos os elementos afetados fossem recalculados.|
@@ -357,5 +357,5 @@ if (performance.mark && performance.measure) {
 
 - Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

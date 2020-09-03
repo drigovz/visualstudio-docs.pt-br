@@ -12,32 +12,32 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184865"
 ---
 # <a name="adding-a-toolbar"></a>Adicionando uma barra de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visual Studio.  
+Este tutorial mostra como adicionar uma barra de ferramentas ao IDE do Visual Studio.  
   
- Uma barra de ferramentas é uma faixa horizontal ou vertical que contém botões que estão associados aos comandos. Dependendo da sua implementação, uma barra de ferramentas no IDE pode ser reposicionada, encaixada em qualquer lado da janela principal do IDE ou feita estar na frente de outras janelas.  
+ Uma barra de ferramentas é uma faixa horizontal ou vertical que contém botões associados a comandos. Dependendo de sua implementação, uma barra de ferramentas no IDE pode ser reposicionada, encaixada em qualquer lado da janela principal do IDE, ou feita para permanecer na frente de outras janelas.  
   
- Além disso, os usuários podem adicionar comandos a uma barra de ferramentas ou removê-las dela usando o **personalizar** caixa de diálogo. Normalmente, as barras de ferramentas em VSPackages são personalizáveis pelo usuário. O IDE manipula toda a personalização e o VSPackage responde a comandos. O VSPackage não precisa saber em que um comando é localizado fisicamente.  
+ Além disso, os usuários podem adicionar comandos a uma barra de ferramentas ou removê-los usando a caixa de diálogo **Personalizar** . Normalmente, as barras de ferramentas no VSPackages são personalizáveis pelo usuário. O IDE trata todas as personalizações e o VSPackage responde aos comandos. O VSPackage não precisa saber onde um comando está localizado fisicamente.  
   
- Para obter mais informações sobre menus, consulte [comandos, Menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Para obter mais informações sobre menus, consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-an-extension-with-a-toolbar"></a>Criar uma extensão com uma barra de ferramentas  
- Crie um projeto do VSIX chamado `IDEToolbar`. Adicionar um modelo de item de comando de menu chamado **ToolbarTestCommand**. Para obter informações sobre como fazer isso, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+## <a name="creating-an-extension-with-a-toolbar"></a>Criando uma extensão com uma barra de ferramentas  
+ Crie um projeto VSIX denominado `IDEToolbar` . Adicione um modelo de item de comando de menu chamado **ToolbarTestCommand**. Para obter informações sobre como fazer isso, consulte [criando uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>Criando uma barra de ferramentas para o IDE  
   
-1. No ToolbarTestCommandPackage.vsct, procure a seção de símbolos. No elemento GuidSymbol chamado guidToolbarTestCommandPackageCmdSet, adicione as declarações para uma barra de ferramentas e um grupo de barra de ferramentas, da seguinte maneira.  
+1. Em ToolbarTestCommandPackage. vsct, procure a seção símbolos. No elemento GuidSymbol chamado guidToolbarTestCommandPackageCmdSet, adicione declarações para uma barra de ferramentas e um grupo de barras de ferramentas, da seguinte maneira.  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visu
   
     ```  
   
-2. Na parte superior da seção de comandos, crie uma seção de Menus. Adicione um elemento do Menu para a seção de Menus para definir sua barra de ferramentas.  
+2. Na parte superior da seção comandos, crie uma seção menus. Adicione um elemento de menu à seção menus para definir sua barra de ferramentas.  
   
     ```xml  
     <Menus>  
@@ -60,9 +60,9 @@ Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visu
     </Menus>  
     ```  
   
-     Barras de ferramentas não podem ser aninhadas, como submenus. Portanto, não é necessário atribuir um grupo pai. Além disso, você não precisa definir uma prioridade, porque o usuário pode mover as barras de ferramentas. Normalmente, o posicionamento inicial de uma barra de ferramentas é definido por meio de programação, mas as alterações subsequentes pelo usuário são persistentes.  
+     As barras de ferramentas não podem ser aninhadas como submenus. Portanto, você não precisa atribuir um grupo pai. Além disso, você não precisa definir uma prioridade, pois o usuário pode mover barras de ferramentas. Normalmente, o posicionamento inicial de uma barra de ferramentas é definido programaticamente, mas alterações subsequentes pelo usuário são persistidas.  
   
-3. No [grupos](../extensibility/groups-element.md) seção, após a entrada de grupo existente, defina uma [grupo](../extensibility/group-element.md) elemento para conter os comandos da barra de ferramentas.  
+3. Na seção [grupos](../extensibility/groups-element.md) , após a entrada de grupo existente, defina um elemento de [grupo](../extensibility/group-element.md) para conter os comandos da barra de ferramentas.  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visu
     </Group>  
     ```  
   
-4. Fazer com que o botão aparecem na barra de ferramentas. Na seção de botões, substitua o bloco pai no botão à barra de ferramentas. O bloco de botão resultante deve ter esta aparência:  
+4. Faça com que o botão apareça na barra de ferramentas. Na seção botões, substitua o bloco pai no botão pela barra de ferramentas. O bloco de botão resultante deve ter a seguinte aparência:  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -83,13 +83,13 @@ Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visu
     </Button>  
     ```  
   
-     Por padrão, se uma barra de ferramentas não tem nenhum comando, ele não aparece.  
+     Por padrão, se uma barra de ferramentas não tiver comandos, ela não será exibida.  
   
 5. Compile o projeto e comece a depuração. A instância experimental deve aparecer.  
   
-6. Clique com botão direito a barra de menus do Visual Studio para obter uma lista das barras de ferramentas. Selecione **barra de ferramentas de teste**.  
+6. Clique com o botão direito do mouse na barra de menus do Visual Studio para obter a lista de barras de ferramentas. Selecione a **barra de ferramentas de teste**.  
   
-7. Agora você deve ver sua barra de ferramentas como um ícone à direita de localizar no ícone de arquivos. Quando você clica no ícone, você verá uma caixa de mensagem que diz **ToolbarTestCommandPackage. Dentro de IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .  
+7. Agora você deve ver sua barra de ferramentas como um ícone à direita do ícone localizar nos arquivos. Ao clicar no ícone, você deverá ver uma caixa de mensagem que diz **ToolbarTestCommandPackage. Dentro de IDEToolbar. ToolbarTestCommand. MenuItemCallback ()**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

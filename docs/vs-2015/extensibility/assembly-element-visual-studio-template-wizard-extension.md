@@ -1,5 +1,5 @@
 ---
-title: Elemento Assembly (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs
+title: Elemento assembly (extensão do assistente de modelo do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,22 +14,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184726"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Elemento de assembly (Extensão do Assistente de Modelo do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interface.  
+Especifica o nome ou nome forte do assembly que implementa a `IWizard` interface.  
   
- \<VSTemplate >  
-\<WizardExtension >  
-\<Assembly >  
+ \<VSTemplate>  
+\<WizardExtension>  
+\<Assembly>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Assembly>AssemblyName</Assembly>  
@@ -39,24 +39,24 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o Assistente de modelo.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contém os elementos de registro para personalizar o assistente de modelo.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- Esse texto Especifica o assembly que implementa o `IWizard` interface. O nome do assembly deve ser especificado como um nome completo do assembly. Por exemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
+ Esse texto especifica o assembly que implementa a `IWizard` interface. Esse nome de assembly deve ser especificado como um nome de assembly completo. Por exemplo, `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
 ## <a name="remarks"></a>Comentários  
- O `Assembly` é um elemento filho obrigatório de `WizardExtension`.  
+ `Assembly` é um elemento filho obrigatório de `WizardExtension` .  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
@@ -89,7 +89,7 @@ Especifica o nome ou o nome forte do assembly que implementa o `IWizard` interfa
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
+ [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

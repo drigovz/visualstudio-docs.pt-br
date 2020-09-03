@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331471"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Como pausar e retomar a coleta de dados de desempenho
@@ -38,6 +38,6 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
 
   - Escolha **Pare a criação de perfil** para encerrar a sessão de criação de perfil e gerar relatórios.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
 - [Como iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)

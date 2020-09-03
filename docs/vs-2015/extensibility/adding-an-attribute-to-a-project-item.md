@@ -1,5 +1,5 @@
 ---
-title: Adicionando um atributo a um Item de projeto | Microsoft Docs
+title: Adicionando um atributo a um item de projeto | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184828"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Adicionando um atributo a um item de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> obter e definir o valor dos atributos de um item de projeto. SetItemAttribute cria o atributo se ele ainda não existir, adicioná-lo para os metadados de item de projeto.  
+Os métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> Get e definem o valor dos atributos de um item de projeto. SetItemAttribute criará o atributo se ele ainda não existir, adicionando-o aos metadados do item de projeto.  
   
 ## <a name="adding-an-attribute-to-a-project-item"></a>Adicionando um atributo a um item de projeto  
   
 #### <a name="to-add-an-attribute-to-a-project-item"></a>Para adicionar um atributo a um item de projeto  
   
-- O código a seguir usa o <xref:EnvDTE.DTE> objeto de automação e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> método para adicionar um atributo a um item de projeto. A ID do item de projeto é obtida do nome de item de projeto "program.cs". O atributo "MyAttribute" é adicionado a este item de projeto e recebe o valor "MyValue".  
+- O código a seguir usa o <xref:EnvDTE.DTE> objeto Automation e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> método para adicionar um atributo a um item de projeto. A ID do item de projeto é obtida do nome do item de projeto "program.cs". O atributo "MyAttribute" é adicionado a este item de projeto e recebe o valor "MyValue".  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -48,5 +48,5 @@ Os métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.G
   
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Persistir os dados no arquivo de projeto do MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+## <a name="see-also"></a>Consulte Também  
+ [Mantendo os dados no arquivo de projeto do MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

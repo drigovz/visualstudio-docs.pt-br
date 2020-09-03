@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849263"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Como: Chamar o depurador de fluxo de trabalho
@@ -26,7 +26,7 @@ Geralmente, você depura fluxos de trabalho assim como você os programas de dep
 - Use a depuração remota. Para obter informações sobre como usar a depuração remota, consulte [como habilitar a depuração remota](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
-    > Se o aplicativo de fluxo de trabalho for direcionado para a arquitetura x86 e estiver hospedado em um computador que executa um sistema operacional de 64 bits, a depuração remota não funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] esteja instalado no computador remoto ou o destino do aplicativo de fluxo de trabalho seja alterado para **qualquer CPU**.
+    > Se o aplicativo de fluxo de trabalho for direcionado para a arquitetura x86 e estiver hospedado em um computador que executa um sistema operacional de 64 bits, a depuração remota não funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] o esteja instalado no computador remoto ou o destino do aplicativo de fluxo de trabalho seja alterado para **qualquer CPU**.
 
 ### <a name="stepping-through-code"></a>Percorrendo o código
 
@@ -40,5 +40,5 @@ Geralmente, você depura fluxos de trabalho assim como você os programas de dep
 
 - Se você estiver criando um projeto de aplicativo de console de fluxo de trabalho, basta pressionar **F5** para iniciar a depuração em seu aplicativo e fluxo de trabalho. Se você estiver criando uma biblioteca de atividade em seus próprios, você deve ter um executável do aplicativo host como um projeto de inicialização. Para definir um projeto de inicialização no **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto do host e selecione **definir como projeto de inicialização**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Como definir pontos de interrupção em fluxos de](../workflow-designer/how-to-set-breakpoints-in-workflows.md) trabalho [Depurando fluxos de trabalho com o designer de fluxo de trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f7cfd0d7a578d2ddaff28e9821f1d190bb2e10d
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331447"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Como especificar o binário a ser iniciado
@@ -39,6 +39,6 @@ Para criar perfis de binários, como DLLs, você deve inserir informações na c
 
 7. Clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)

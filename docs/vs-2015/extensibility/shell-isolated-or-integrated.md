@@ -15,16 +15,16 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850226"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolado ou integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode criar seu próprio aplicativo baseado no Visual Studio no modo integrado ou isolado. No modo integrado, muitos recursos do Visual Studio estão disponíveis, além de seu aplicativo. No modo isolado, você escolhe um subconjunto de recursos do Visual Studio que deseja distribuir juntamente com sua própria extensão.  
+Você pode criar seu próprio aplicativo baseado no Visual Studio no modo integrado ou isolado. No modo integrado, muitos recursos do Visual Studio estão disponíveis além do seu aplicativo. No modo isolado, você escolhe um subconjunto de recursos do Visual Studio que deseja distribuir junto com sua própria extensão.  
   
 ## <a name="integrated-mode"></a>Modo integrado  
  O modo integrado permite que os usuários usem recursos padrão do Visual Studio junto com suas ferramentas personalizadas. O Shell integrado destina-se principalmente a hospedar linguagens de programação e ferramentas de desenvolvimento de software.  
@@ -57,5 +57,5 @@ Você pode criar seu próprio aplicativo baseado no Visual Studio no modo integr
 ## <a name="additional-resources"></a>Recursos adicionais  
  Para obter mais informações sobre pacotes redistribuíveis, consulte o site de [downloads de extensibilidade do Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

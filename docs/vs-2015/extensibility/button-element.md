@@ -1,5 +1,5 @@
 ---
-title: Elemento de botão | Microsoft Docs
+title: Elemento Button | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 58f63968ed02f49b0ccfa4dda24f684fed339bc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184547"
 ---
 # <a name="button-element"></a>Elemento Button
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Define um elemento que o usuário pode interagir com o. Botões podem ser de tipos diferentes: Botão, botão de menu e SplitDropDown.  
+Define um elemento com o qual o usuário pode interagir. Os botões podem ser de tipos diferentes: Button, MenuButton e SplitDropDown.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Button guid="guidMyCommandSet" id="MyCommand" priority="0x102" type="button">  
@@ -41,30 +41,30 @@ Define um elemento que o usuário pode interagir com o. Botões podem ser de tip
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. GUID do identificador de comando/ID de GUID.|  
-|id|Necessário. ID do identificador de comando/ID de GUID.|  
+|guid|Obrigatórios. GUID do identificador de comando GUID/ID.|  
+|id|Obrigatórios. ID do identificador de comando de GUID/ID.|  
 |priority|Opcional. Um valor numérico que especifica a prioridade.|  
-|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não for especificado, usa o botão.<br /><br /> Botão<br /> Um comando padrão que aparece na barra de ferramentas (normalmente como um botão icônico), menus e menus de contexto.<br /><br /> Botão de menu<br /> Um item de menu que não executar um comando, mas produz outro menu.<br /><br /> SplitDropDown<br /> Controles, como os botões Desfazer e refazer na barra de ferramentas padrão no Microsoft Word.|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|tipo|Opcional. Um valor enumerado que especifica o tipo de botão.<br /><br /> Se não for fornecido, o usará o botão.<br /><br /> Botão<br /> Um comando padrão que aparece nas barras de ferramentas (normalmente, como um botão de icônico), menus e menus de contexto.<br /><br /> MenuButton<br /> Um item de menu que não executa um comando, mas produz outro menu.<br /><br /> SplitDropDown<br /> Controles, como os botões desfazer e refazer na barra de ferramentas padrão do Microsoft Word.|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Parent](../extensibility/parent-element.md)|Opcional. O elemento pai do botão.|  
+|[Elemento pai](../extensibility/parent-element.md)|Opcional. O elemento pai do botão.|  
 |[Elemento Icon](../extensibility/icon-element.md)|Opcional. O ícone associado ao botão.|  
-|[Elemento Command Flag](../extensibility/command-flag-element.md)|Necessário. Os valores válidos de CommandFlag para um botão serão o seguinte.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextoAltera<br /><br /> -TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> - TextOnly|  
-|[Elemento Strings](../extensibility/strings-element.md)|Necessário. O filho [elemento ButtonText](../extensibility/buttontext-element.md) deve ser definido.|  
+|[Elemento Command Flag](../extensibility/command-flag-element.md)|Obrigatórios. Os valores de CommandFlag válidos para um botão são os seguintes.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> -Defaultdesabilitoud<br /><br /> -Invisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nopersonalizar<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -PICT<br /><br /> -Exec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -Textchanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -Somente|  
+|[Elemento Strings](../extensibility/strings-element.md)|Obrigatórios. O [elemento ButtonText](../extensibility/buttontext-element.md) filho deve ser definido.|  
 |Anotação|Comentário opcional.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento Buttons](../extensibility/buttons-element.md)|Agrupa os elementos de botão.|  
+|[Elemento Buttons](../extensibility/buttons-element.md)|Elementos de botão de grupos.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir define um botão em um arquivo. VSCT.  
+ O exemplo a seguir define um botão em um arquivo. vsct.  
    
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -78,5 +78,5 @@ Define um elemento que o usuário pode interagir com o. Botões podem ser de tip
 </Button>
  ```
 
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
