@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74302842"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: diretrizes
@@ -59,7 +59,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
    Um diagrama de caso de uso pode mostrar quais casos de uso têm suporte do seu sistema ou de seus subsistemas.
 
-## <a name="BasicSteps"></a>Etapas básicas para desenhar diagramas de caso de uso
+## <a name="basic-steps-for-drawing-use-case-diagrams"></a><a name="BasicSteps"></a> Etapas básicas para desenhar diagramas de caso de uso
 
 > [!NOTE]
 > As etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md).
@@ -110,7 +110,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 7. Desenhe diagramas separados para se concentrar em diferentes subsistemas ou em grupos diferentes de casos de uso relacionados. Todos os diagramas em um projeto de modelagem são exibições do mesmo modelo.
 
-## <a name="Actors"></a>Desenhando atores e casos de uso
+## <a name="drawing-actors-and-use-cases"></a><a name="Actors"></a> Desenhando atores e casos de uso
  A principal finalidade de um diagrama de caso de uso é mostrar quem interage com seu sistema e as metas principais que eles obtêm com ele.
 
 - Crie **atores** para representar classes de pessoas, organizações, outros sistemas, software ou dispositivos que interagem com seu sistema ou subsistema.
@@ -170,7 +170,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
  ![Caso de uso mostrando a multiplicidade muitos para muitos](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Para declarar que vários atores da mesma classe podem participar em uma única ocorrência de um caso de uso, defina a multiplicidade na extremidade do ator da associação como **1..\*** .
+- Para declarar que vários atores da mesma classe podem participar em uma única ocorrência de um caso de uso, defina a multiplicidade na extremidade do ator da associação como **1. \* **..
 
    Na ilustração, um ou mais restaurantes podem fazer parte do cumprimento da mesma ordem de refeição.
 
@@ -190,7 +190,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
    - **1** para declarar que exatamente uma instância dessa função participa de cada link.
 
-   - **1..\*** para declarar que uma ou mais instâncias dessa função participam de cada link.
+   - **1.. \* ** para declarar que uma ou mais instâncias dessa função participam de cada link.
 
    - **0.. 1** para indicar que a participação é opcional.
 
@@ -217,7 +217,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
     > [!NOTE]
     > Se você posicionar no novo diagrama um ator e um caso de uso que já esteja associado, a associação entre eles será exibida automaticamente no novo diagrama.
 
-## <a name="Details"></a>Descrevendo casos de uso em detalhes
+## <a name="describing-use-cases-in-detail"></a><a name="Details"></a> Descrevendo casos de uso em detalhes
  Um caso de uso representa:
 
 - Uma meta de um ator no uso do sistema, como **comprar um refeição**; e
@@ -270,7 +270,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, elemento do OneNote ou página da Web
 
-1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com '\\\\' ou uma página da Web ou URL do SharePoint começando com ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
+1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com ' \\ \\ ', uma página da Web ou uma URL do SharePoint começando em ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
 
 2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso de uso.
 
@@ -280,9 +280,9 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 > Você pode clicar duas vezes em um artefato para abrir o diagrama ou documento ao qual ele se vincula.
 
 ### <a name="linking-use-cases-to-work-items"></a>Vinculando casos de uso a itens de trabalho
- Se o seu projeto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e você tem [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], você pode vincular cada caso de uso a um item de trabalho no [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para saber como fazer esses links, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).
+ Se o seu projeto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e você tem [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , você pode vincular cada caso de uso a um item de trabalho no [!INCLUDE[esprfound](../includes/esprfound-md.md)] . Para saber como fazer esses links, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).
 
- Isso permite que você:
+ Isso permite a você:
 
 - Descreva o caso de uso no item de trabalho vinculado. Em particular, se o seu projeto usar o modelo de processo formal do Visual Studio, você poderá vincular a um item de trabalho de caso de uso. Este tipo de item de trabalho fornece campos para descrever as metas e os cenários do caso de uso.
 
@@ -290,7 +290,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 - Vincule tarefas ao caso de uso para que você possa acompanhar o progresso do trabalho de desenvolvimento.
 
-## <a name="Structuring"></a>Estruturando casos de uso
+## <a name="structuring-use-cases"></a><a name="Structuring"></a> Estruturando casos de uso
  Você deve tentar descrever o comportamento do sistema com apenas alguns casos de uso principais. Cada caso de uso grande define uma meta principal que um ator alcança, como comprar um produto ou, do ponto de vista do fornecedor, fornecendo produtos para venda.
 
  Depois de tornar essas metas claras, você pode entrar em mais detalhes sobre como cada meta é alcançada e sobre variações nas metas básicas.
@@ -305,7 +305,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 - [Separando casos variantes com extend](#Extend)
 
-### <a name="Include"></a>Mostrando os detalhes de um caso de uso com include
+### <a name="showing-the-details-of-a-use-case-with-include"></a><a name="Include"></a> Mostrando os detalhes de um caso de uso com include
  Use uma relação de **inclusão** para mostrar que um caso de uso descreve alguns dos detalhes de outro. Na ilustração, **pedido uma refeição** inclui **pagamento**, **escolha menu**e **escolha item de menu**. Cada um dos casos de uso incluídos e mais detalhados é uma etapa que o ator ou os atores podem ter que realizar para atingir o objetivo geral do caso de uso, incluindo o caso. A seta deve apontar para o caso de uso mais detalhado, incluído.
 
 > [!CAUTION]
@@ -323,7 +323,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 - Evite repetir cenários compartilhados em diferentes casos de uso.
 
-#### <a name="Steps"></a>Definindo a ordem das etapas detalhadas
+#### <a name="defining-the-order-of-the-detailed-steps"></a><a name="Steps"></a> Definindo a ordem das etapas detalhadas
  O diagrama de caso de uso não diz nada sobre a ordem na qual as etapas mais detalhadas devem ser executadas, nem sobre se cada uma delas é sempre necessária.
 
  Para tornar a ordem das etapas clara, você pode usar um **artefato** para anexar um documento separado ao, incluindo o caso de uso. No exemplo a seguir, um diagrama de atividade anexado ao caso de uso pedido de refeição. Como alternativa, você pode usar um documento de texto que tenha uma lista de etapas ou uma sequência de capturas de tela. Para obter mais informações, consulte [descrevendo casos de uso em detalhes](#Details).
@@ -338,7 +338,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
   ![Etapas de caso de uso mostradas no diagrama de atividades vinculadas](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")
 
-### <a name="Inheritance"></a>Compartilhando metas com generalização
+### <a name="sharing-goals-with-generalization"></a><a name="Inheritance"></a> Compartilhando metas com generalização
  Use uma relação de generalização para mostrar que um caso de uso *especializado* é uma maneira específica de atingir as metas expressas por outro caso de uso *geral* . A ponta de seta aberta deve apontar para o caso de uso mais geral.
 
  ![Casos de uso que mostram a relação de generalização](../modeling/media/uml-ucguidegeneral.png "UML_UCGuideGeneral")
@@ -368,7 +368,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 4. Os atores compartilhados entre os casos de uso especializados podem ser movidos para o caso de uso geral.
 
-### <a name="Extend"></a>Separando casos variantes com extend
+### <a name="separating-variant-cases-with-extend"></a><a name="Extend"></a> Separando casos variantes com extend
  Use um link de extensão para mostrar que um caso de uso pode adicionar funcionalidade a outro caso de uso em determinadas circunstâncias. A seta deve apontar para o caso de uso principal e estendido.
 
  ![Um caso de uso que estende outra](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")
@@ -407,7 +407,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 - Essa extensão estará disponível somente em versões específicas do sistema. Você pode mostrar cada versão como um subsistema separado no diagrama de caso de uso.
 
-## <a name="Subsystems"></a>Usando limites de subsistema
+## <a name="using-subsystem-boundaries"></a><a name="Subsystems"></a> Usando limites de subsistema
  Use um limite de subsistema para mostrar quais casos de uso estão dentro do escopo do seu sistema.
 
 #### <a name="to-draw-a-subsystem-boundary"></a>Para desenhar um limite de subsistema
@@ -420,7 +420,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 3. Arraste os casos de uso existentes para dentro ou para fora do subsistema para ajustar seu conteúdo.
 
-   \- ou -
+   \- ou –
 
    Para criar um novo caso de uso diretamente em um subsistema, clique em **caso de uso** na caixa de ferramentas e clique dentro do subsistema.
 
@@ -440,5 +440,5 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
  ![Os subsistemas mostram versões diferentes de um sistema](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Modelos de usuário de modelo](../modeling/model-user-requirements.md) [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md) [editar modelos UML e diagramas diagramas de](../modeling/edit-uml-models-and-diagrams.md) [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) referência [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md) [vídeo: organizando recursos em casos](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

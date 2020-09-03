@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115068"
 ---
 # <a name="understand-build-platforms"></a>Noções básicas sobre plataformas de build
@@ -30,14 +30,14 @@ Você pode armazenar versões diferentes de propriedades de solução e de proje
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Como: Configurar projetos para segmentar plataformas](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explica como configurar um projeto para se destinar a uma plataforma específica.
 
-[Como: Configurar projetos para segmentar várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Como: configurar projetos para várias plataformas de destino](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explica como configurar um projeto para se destinar a várias plataformas.
 
 ## <a name="see-also"></a>Confira também
 
 - [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)

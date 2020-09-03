@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb62e5ad1d67f0e7bc85692935e64f85eb1c72df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202202"
 ---
-# <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
+# <a name="idiainjectedsourceget_crc"></a>IDiaInjectedSource::get_crc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma verificação de redundância cíclica (CRC) calculada a partir de bytes do código-fonte.  
+Recupera uma CRC (verificação de redundância cíclica) calculada com base nos bytes do código-fonte.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_crc ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o CRC calculado a partir de bytes do código-fonte.  
+ fora Retorna o CRC calculado a partir dos bytes do código-fonte.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

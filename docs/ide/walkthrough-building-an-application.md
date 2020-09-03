@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115404"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
@@ -35,15 +35,15 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
    ![Menu Compilar, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Na lista **de configuração da solução Ativa,** escolha ** \<Novo... \>**.
+1. Na lista **configuração de solução ativa** , escolha **\<New...\>** .
 
 1. Na caixa de diálogo **Nova Configuração da Solução**, dê à nova configuração o nome `Test`, copie as configurações da configuração **Depuração** existente e, em seguida, escolha o botão **OK**.
 
    ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Na lista **de plataformas de solução Ativa,** escolha ** \<Novo... \>**.
+1. Na lista **plataforma de solução ativa** , escolha **\<New...\>** .
 
-1. Na caixa de diálogo **Plataforma nova solução,** escolha **x64**e não copie as configurações da plataforma x86.
+1. Na caixa de diálogo **nova plataforma de solução** , escolha **x64**e não copie as configurações da plataforma x86.
 
    ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -65,7 +65,7 @@ Em seguida, você compilará a solução com a configuração de build personali
 
 ### <a name="build-the-solution"></a>Compilar a solução
 
-- Na barra de menu, escolha **Build** > **Build Solution**ou **pressione Ctrl**+**Shift**+**B**.
+- Na barra de menus, escolha **criar**  >  **solução de compilação**ou pressione **Ctrl** + **Shift** + **B**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 
@@ -93,7 +93,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.
 
-1. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
+1. Na barra de menus, escolha **Exibir**  >  **páginas de propriedades**.
 
      O **Designer de Projeto** é aberto.
 
@@ -113,7 +113,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. No **Gerenciador de Soluções**, escolha o nó do projeto de nível superior.
 
-2. Na barra de menu, escolha **Exibir** > **páginas de propriedade**.
+2. Na barra de menus, escolha **Exibir**  >  **páginas de propriedades**.
 
      O **Designer de Projeto** é aberto.
 
@@ -148,13 +148,13 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Na lista **Detalhes da saída de build do projeto do MSBuild**, escolha **Normal** e, em seguida, o botão **OK**.
 
-1. Na barra de menu, escolha **Build** > **Clean Solution**.
+1. Na barra de menus, escolha **criar**  >  **solução limpa**.
 
 1. Compile a solução e, em seguida, examine as informações na Janela de **Saída**.
 
      As informações do build incluem a hora de início do build (localizada no início) e ordem em que os arquivos foram processados. Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.
 
-     Por exemplo, na compilação C#, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso, **0168**, que você especificou anteriormente neste tópico, juntamente com três outros avisos.
+     Por exemplo, na compilação C#, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso **0168**, que você especificou anteriormente neste tópico, juntamente com três outros avisos.
 
      No build do Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) não inclui avisos específicos a serem excluídos e, portanto, nenhum aviso é exibido.
 
@@ -223,6 +223,6 @@ Parabéns! Você concluiu este passo a passo com êxito.
 
 ## <a name="see-also"></a>Confira também
 
-- [Passo a passo: Criar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Walkthrough: compilar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md)

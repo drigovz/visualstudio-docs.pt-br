@@ -18,10 +18,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772618"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
@@ -35,7 +35,7 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 
 |Coluna|Descrição|
 |------------|-----------------|
-|**Nome da Classe**|O nome de classe do tipo alocado.|
+|**Nome da classe**|O nome de classe do tipo alocado.|
 |**ID do Processo**|A ID de processo da execução de criação de perfil.|
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
@@ -73,4 +73,4 @@ A exibição Tempo de Vida do Objeto está disponível quando **Também coletar 
 |**Bytes de Heap de Objetos Grandes Coletados**|O tamanho, em bytes, das instâncias desse tipo que estavam no heap de objeto grande e que foram coletadas na execução da criação de perfil.|
 
 ## <a name="see-also"></a>Confira também
-- [Exibições de dados de memória .NET](../profiling/dotnet-memory-data-views.md)
+- [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)

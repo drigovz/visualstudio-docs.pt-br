@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300877"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
@@ -37,13 +37,13 @@ ms.locfileid: "74300877"
 > [!NOTE]
 > Se você quiser criar seus próprios comandos de menu, consulte [como adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-## <a name="what"></a>Quais comandos você pode modificar?
+## <a name="what-commands-can-you-modify"></a><a name="what"></a> Quais comandos você pode modificar?
 
 #### <a name="to-discover-what-commands-you-can-modify"></a>Para descobrir quais comandos podem ser modificados
 
-1. No projeto `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Esse C# arquivo pode ser encontrado em Gerenciador de soluções como uma subsidiária do `CommandSet.tt`.
+1. No projeto `DslPackage`, abra `GeneratedCode\CommandSet.cs`. Esse arquivo C# pode ser encontrado em Gerenciador de Soluções como uma subsidiária do `CommandSet.tt` .
 
-2. Encontre classes neste arquivo cujos nomes terminam com "`CommandSet`", por exemplo, `Language1CommandSet` e `Language1ClipboardCommandSet`.
+2. Localizar classes neste arquivo cujos nomes terminam com " `CommandSet` ", por exemplo, `Language1CommandSet` e `Language1ClipboardCommandSet` .
 
 3. Em cada classe de conjunto de comandos, digite "`override`" seguido por um espaço. O IntelliSense mostrará uma lista dos métodos que podem ser substituídos. Cada comando contém um par de métodos cujos nomes começam com "`ProcessOnStatus`" e "`ProcessOnMenu`".
 
@@ -54,7 +54,7 @@ ms.locfileid: "74300877"
     > [!NOTE]
     > Normalmente, é aconselhável não editar arquivos que foram gerados. Qualquer edição será perdida na próxima vez em que os arquivos forem gerados.
 
-## <a name="extend"></a>Estender a classe de conjunto de comandos apropriada
+## <a name="extend-the-appropriate-command-set-class"></a><a name="extend"></a> Estender a classe de conjunto de comandos apropriada
  Crie um novo arquivo que contenha uma declaração parcial da classe de conjunto de comandos.
 
 #### <a name="to-extend-the-command-set-class"></a>Estender a classe de Conjunto de Comandos
@@ -65,7 +65,7 @@ ms.locfileid: "74300877"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. Em **DslPackage**, crie uma pasta chamada **código personalizado**. Nessa pasta, crie um novo arquivo de classe chamado `CommandSet.cs`.
+2. Em **DslPackage**, crie uma pasta chamada **código personalizado**. Nessa pasta, crie um novo arquivo de classe chamado `CommandSet.cs` .
 
 3. No novo arquivo, grave uma declaração parcial que contenha o mesmo namespace e o nome que a classe parcial gerada. Por exemplo:
 
@@ -79,8 +79,8 @@ ms.locfileid: "74300877"
 
      **Observação** Se você usou o modelo de arquivo de classe para criar o novo arquivo, deverá corrigir o namespace e o nome da classe.
 
-## <a name="override"></a>Substituir os métodos de comando
- A maioria dos comandos tem dois métodos associados: o método com um nome como `ProcessOnStatus`... Determina se o comando deve ser visível e habilitado. É chamado sempre que o usuário clicar com o botão direito do mouse no diagrama e deve ser executado rapidamente e não realizar alterações. `ProcessOnMenu`... é chamado quando o usuário clica no comando e deve executar a função do comando. É possível substituir qualquer um dos métodos ou os dois.
+## <a name="override-the-command-methods"></a><a name="override"></a> Substituir os métodos de comando
+ A maioria dos comandos tem dois métodos associados: o método com um nome como `ProcessOnStatus` ... Determina se o comando deve ser visível e habilitado. É chamado sempre que o usuário clicar com o botão direito do mouse no diagrama e deve ser executado rapidamente e não realizar alterações. `ProcessOnMenu`... é chamado quando o usuário clica no comando e deve executar a função do comando. É possível substituir qualquer um dos métodos ou os dois.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Para alterar quando o comando é exibido em um menu
  Substituir o ProcessOnStatus... forma. Esse método deve definir as propriedades Visível e Habilitado de seu parâmetro MenuCommand. Geralmente, o comando examina this.CurrentSelection para determinar se o comando é aplicável aos elementos selecionados e também poderá examinar suas propriedades para determinar se o comando pode ser aplicado em seu estado atual.
@@ -138,17 +138,17 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()` - `true` se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-o usuário não selecionou várias formas
+- `this.IsSingleSelection()` -o usuário não selecionou várias formas
 
-- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
+- `this.SingleSelection` -a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement` -o elemento de modelo representado por uma forma.
 
   Para obter mais informações sobre como navegar de elemento para elemento e sobre como criar objetos e links, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Consulte também
- <xref:System.ComponentModel.Design.MenuCommand> [escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Walkthrough: obtendo informações de um link selecionado](../misc/walkthrough-getting-information-from-a-selected-link.md) [como VSPackages Add user interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Command Table (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct referência de esquema XML](../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.ComponentModel.Design.MenuCommand>[Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Walkthrough: obtendo informações de um link selecionado](../misc/walkthrough-getting-information-from-a-selected-link.md) [como VSPackages Add user interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Command Table (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct referência de esquema XML](../extensibility/vsct-xml-schema-reference.md)

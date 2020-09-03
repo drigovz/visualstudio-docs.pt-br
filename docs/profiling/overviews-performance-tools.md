@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772661"
 ---
 # <a name="overviews-performance-tools"></a>Visões gerais (ferramentas de desempenho)
@@ -44,7 +44,7 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
  Saiba os valores de dados que são relatados ao usar o método de criação de perfil de simultaneidade.
 
-- [Janela do Explorador de desempenho](../profiling/performance-explorer-window.md)
+- [Janela de Gerenciador de Desempenho](../profiling/performance-explorer-window.md)
 
  Descreve a janela que é usada para configurar e iniciar sessões de desempenho.
 
@@ -58,5 +58,5 @@ Esta seção fornece visões gerais conceituais e de terminologia para as Ferram
 
 ## <a name="see-also"></a>Confira também
 
-- [Começando](../profiling/getting-started-with-performance-tools.md)
-- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+- [Guia de Introdução](../profiling/getting-started-with-performance-tools.md)
+- [Performance Explorer](../profiling/performance-explorer.md)

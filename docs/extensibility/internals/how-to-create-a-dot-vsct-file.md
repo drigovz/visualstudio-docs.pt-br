@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905532"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Como criar um arquivo. vsct
@@ -69,7 +69,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo de origem *. C
 
 5. Na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] janela do prompt de comando, navegue até o diretório.
 
-6. Type
+6. Tipo
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -96,7 +96,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
 3. No prompt de comando do Visual Studio, vá para o diretório que contém os arquivos *. CTO* e *. ctsym* .
 
-4. Type
+4. Tipo
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym

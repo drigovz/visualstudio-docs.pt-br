@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773303"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição do Chamador/Receptor – dados de amostragem da memória do .NET
@@ -35,12 +35,12 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Tipo**|O contexto da função:<br /><br /> **0** – a função atual<br /><br /> **1** – uma função que chama a função atual<br /><br /> **2** – uma função que é chamada pela função atual<br /><br /> Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
-|**Nível**|A profundidade da função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|A profundidade da função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
 |**Alocações Inclusivas**|–   Para a função atual, o número de objetos que foram alocados pela função na execução de criação de perfil. Esse número inclui objetos criados em funções do computador chamado.<br />–   Para uma função do chamador, o número das alocações inclusivas da função atual que foram geradas por chamadas dessa função.<br />–   Para uma função do computador chamado, o número de objetos alocados pela instância dessa função que foram chamados pela função atual. O número inclui alocações que foram feitas por funções chamadas pela função do computador chamado.|
 |**% de Alocações Inclusivas**|O percentual de todos os objetos que foram criados na execução de criação de perfil que eram alocações inclusivas dessa função.|
 |**Alocações Exclusivas**|– Para a função atual, o número de objetos que foram criados quando a função estava executando código do corpo da função (isto é, quando a função estava na parte superior da pilha de chamadas). O número não inclui objetos que foram criados em funções que foram chamadas pela função.<br />–   Para uma função do chamador, o número das alocações exclusivas da função atual que foram geradas por chamadas dessa função.<br />–   Para uma função do computador chamado, o número de objetos criados pelas instâncias dessa função que foram chamados pela função atual. O número não inclui os objetos alocados por funções criadas pela função do computador chamado.|
@@ -52,6 +52,6 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
 
 ## <a name="see-also"></a>Confira também
 - [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)
-- [Exibição de chamada/callee - dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)
-- [Exibição caller/Callee - dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)

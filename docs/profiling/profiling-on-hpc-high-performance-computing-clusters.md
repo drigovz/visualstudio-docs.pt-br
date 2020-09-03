@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772114"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
@@ -47,13 +47,13 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*% Cabeçalho%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 | | |
 |------------------| - |
-| *%HeadNode%* | Nome do nó principal do cluster. |
+| *Cabeçalho* | Nome do nó principal do cluster. |
 | *%FxPath%* | Caminho para o instalador do .NET Framework 4. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação do Visual Studio, o caminho é: Standalone Profiler\x64\vs_profiler.exe |
 
@@ -103,7 +103,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
     - Selecione **Inicializar a criação de perfil após a conclusão do assistente** para iniciar a criação de perfil imediatamente ou desmarque a caixa de seleção para iniciar a criação de perfil manualmente.
 
-10. Clique em **concluir**.
+10. Clique em **Concluir**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Configurar as propriedades de criação de perfil HPC usando páginas de propriedade da sessão de desempenho
 

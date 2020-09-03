@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 551c183dd9c368b1af16c1fe52b36762f4e71504
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773290"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação
@@ -33,10 +33,10 @@ A exibição de Chamador/Computador Chamado exibe informações de criação de 
 |Coluna|Descrição|
 |------------|-----------------|
 |**Nome da função**|O nome da função.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Número de Chamadas**|O número total de chamadas feitas para essa função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
@@ -93,5 +93,5 @@ A exibição de Chamador/Computador Chamado exibe informações de criação de 
 ## <a name="see-also"></a>Confira também
 - [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)
-- [Exibição caller/Callee - dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Exibição de chamada/callee - dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Exibição Caller/Callee-dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

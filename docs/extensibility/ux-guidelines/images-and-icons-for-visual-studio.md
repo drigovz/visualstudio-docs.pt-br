@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906110"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso de imagem no Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagem no Visual Studio
  Antes de criar o trabalho artístico, considere usar as mais de 1.000 imagens na [biblioteca de imagens do Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipos de imagens
@@ -34,7 +34,7 @@ ms.locfileid: "85906110"
 
 - **Cursores.** Usado para indicar se uma operação é permitida usando o mouse, onde um objeto pode ser descartado e assim por diante.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Design de ícone
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Design de ícone
 
 ### <a name="overview"></a>Visão geral
  O Visual Studio usa ícones de estilo moderno, que têm uma geometria limpa e um equilíbrio de 50/50 de positivo/negativo (claro/escuro) e usam metáforas diretas e compreensíveis. Ícones cruciais de design Points Center em relação à clareza, simplificação e contexto.
@@ -234,7 +234,7 @@ ms.locfileid: "85906110"
 
  Para obter mais informações sobre como usar cores em ícones do Visual Studio, consulte [usando cores em imagens](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Usando cores em imagens
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Usando cores em imagens
 
 ### <a name="overview"></a>Visão geral
  Os ícones no Visual Studio são basicamente monodesvios. A cor é reservada para transmitir informações específicas e nunca para decoração. A cor é usada:
@@ -258,7 +258,7 @@ ms.locfileid: "85906110"
 ### <a name="base-palette"></a>Paleta de base
  Todos os ícones padrão contêm três cores de base. Os ícones não contêm gradientes ou sombras projetadas, com uma ou duas exceções para ícones de ferramenta 3D.
 
-|Uso|Nome|Valor (tema claro)|Essas|Exemplo|
+|Uso|Name|Valor (tema claro)|Essas|Exemplo|
 |-----------|----------|---------------------------|------------|-------------|
 |Plano de fundo/escuro|VS BG|424242/66, 66, 66|![Amostra 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Exemplo de paleta de base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primeiro plano/luz|VS FG|F0EFF1/240.239.241|![F0EFF1 de amostra](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -271,7 +271,7 @@ ms.locfileid: "85906110"
 #### <a name="action-modifiers"></a>Modificadores de ação
  As quatro cores abaixo indicam os tipos de ações exigidas pelos modificadores de ação:
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|Name|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Positivo|Ação VS verde|388A34/56138, 52|![388A34 de amostra](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativo|Ação VS vermelho|A1260D/161, 38, 13|![A1260D de amostra](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -314,14 +314,14 @@ ms.locfileid: "85906110"
 
 #### <a name="folder"></a>Pasta
 
-|Uso|Nome|Valor (todos os temas)|Essas|Exemplo|
+|Uso|Name|Valor (todos os temas)|Essas|Exemplo|
 |-----------|----------|--------------------------|------------|-------------|
 |Pastas|Pasta|DCB67A/220.182.122|![DCB67A de amostra](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Ícone de cor da pasta](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguagens do Visual Studio
  Cada um dos idiomas ou plataformas comuns disponíveis no Visual Studio tem uma cor associada. Essas cores são usadas no ícone base ou em modificadores de idioma que aparecem no canto superior direito dos ícones compostos.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|Name|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML ASP WPF azul|0095D7/0149.215|![0095D7 de amostra](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP roxo|9B4F96/155, 79150|![9B4F96 de amostra](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,7 +346,7 @@ ms.locfileid: "85906110"
 #### <a name="intellisense"></a>IntelliSense
  Os ícones do IntelliSense usam uma paleta de cores exclusiva. Essas cores são usadas para ajudar os usuários a distinguir rapidamente entre os diferentes itens na lista de pop-ups do IntelliSense.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|Name|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Classe, evento|Ação do VS laranja|C27D1A/194125, 26|![C27D1A de amostra](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Método de extensão, método, módulo, delegado|Ação VS roxa|652D90/101, 45144|![652D90 de amostra](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -367,7 +367,7 @@ ms.locfileid: "85906110"
 ### <a name="notifications"></a>Notificações
  As notificações no Visual Studio são usadas para indicar o status. A paleta de notificação usa as quatro cores a seguir, bem como opções de preenchimento de primeiro plano preto ou branco, para definir notificações com os seguintes níveis de status.
 
-|Uso|Nome|Valor (todos os temas)|Essas|
+|Uso|Name|Valor (todos os temas)|Essas|
 |-----------|----------|--------------------------|------------|
 |Status: neutro|Notificação azul (VS. azul)|1BA1E2/27.161.226|![1BA1E2 de amostra](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Status: positivo|Notificação verde (VS verde)|339933/51153, 51|![Amostra 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|

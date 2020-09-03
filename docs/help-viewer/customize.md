@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284966"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar o Help Viewer
@@ -45,6 +45,6 @@ Abra a caixa de diálogo **Opções do Visualizador** escolhendo o botão **Opç
 |Alterar o número máximo de entradas de histórico que aparecem na janela **Favoritos**|Escolha um valor na lista **Máximo de entradas do Histórico salvas**.|
 |Incluir ou excluir conteúdo em inglês quando você exibir conteúdo de uma versão diferente do inglês de um produto.|Marque ou desmarque a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**. **Cuidado:** esse recurso também controla se você pode baixar o conteúdo em inglês na guia **Gerenciar Conteúdo**.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

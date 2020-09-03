@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905983"
 ---
-# <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: criando um serviço de linguagem herdado
+# <a name="walkthrough-creating-a-legacy-language-service"></a>Passo a passo: Criando um serviço de linguagem herdado
 Usar as classes de linguagem MPF (Managed Package Framework) para implementar um serviço de linguagem no [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] é simples. Você precisa de um VSPackage para hospedar o serviço de idioma, o próprio serviço de linguagem e um analisador para seu idioma.
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -42,11 +42,11 @@ Usar as classes de linguagem MPF (Managed Package Framework) para implementar um
 
     Você pode usar qualquer nome que desejar. Esses procedimentos detalhados aqui pressupõem MyLanguagePackage como o nome.
 
-3. Selecione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como o idioma e a opção para gerar um novo arquivo de chave. Clique em **Próximo**.
+3. Selecione [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] como o idioma e a opção para gerar um novo arquivo de chave. Clique em **Avançar**.
 
-4. Insira as informações apropriadas da empresa e do pacote. Clique em **Próximo**.
+4. Insira as informações apropriadas da empresa e do pacote. Clique em **Avançar**.
 
-5. Selecione o **comando de menu**. Clique em **Próximo**.
+5. Selecione o **comando de menu**. Clique em **Avançar**.
 
     Se você não pretende dar suporte a trechos de código, basta clicar em concluir e ignorar a próxima etapa.
 

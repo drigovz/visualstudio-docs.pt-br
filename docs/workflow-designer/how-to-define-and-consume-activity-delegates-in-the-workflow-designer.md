@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817496"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Defina e consumir representantes de atividade em Designer de Fluxo de Trabalho
@@ -62,7 +62,7 @@ O .NET Framework 4,5 inclui um designer pronto para a <xref:System.Activities.St
 
 19. Na coluna **valor** do argumento chamado **argumento**, insira **itens [índice]**. Clique em **OK** para fechar a caixa de diálogo **DelegateArguments** .
 
-20. Arraste uma atividade de <xref:System.Activities.Statements.Assign> na linha horizontal abaixo de atividade de <xref:System.Activities.Statements.InvokeDelegate> . A <xref:System.Activities.Statements.Assign> atividade é criada e uma <xref:System.Activities.Statements.Sequence> atividade é criada automaticamente para conter as duas atividades na seção **corpo** da atividade **myforeach** . A sequência é necessária, pois a seção **Body** só pode conter uma única atividade. A criação automática de uma nova <xref:System.Activities.Statements.Sequence> atividade é um novo recurso do .NET Framework 4,5.
+20. Arraste uma atividade de <xref:System.Activities.Statements.Assign> na linha horizontal abaixo de atividade de <xref:System.Activities.Statements.InvokeDelegate> . A  <xref:System.Activities.Statements.Assign> atividade é criada e uma <xref:System.Activities.Statements.Sequence> atividade é criada automaticamente para conter as duas atividades na seção **corpo** da atividade **myforeach** . A sequência é necessária, pois a seção **Body** só pode conter uma única atividade. A criação automática de uma nova <xref:System.Activities.Statements.Sequence> atividade é um novo recurso do .NET Framework 4,5.
 
 21. Defina a propriedade **to** da <xref:System.Activities.Statements.Assign> atividade como **index**. Defina a propriedade **valor** da atividade **atribuir** como **índice + 1**.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: 'IDebugProcessEx2:: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202828"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método adiciona um nó de programa para cada mecanismo de depuração (DES) especificado.  
+Esse método adiciona um nó de programa para cada mecanismo de depuração especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,20 +44,20 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Parâmetros  
  `guidLaunchingEngine`  
- [in] O `GUID` de a DE que deve ser usada para iniciar programas (e é considerada como para adicionar seus próprios nós de programa).  
+ no O `GUID` de a é usado para iniciar programas (e é considerado para adicionar seus próprios nós de programa).  
   
  `rgguidSpecificEngines`  
- [in] Matriz de `GUID`s de DEs para qual programa nós serão adicionados.  
+ no Matriz de `GUID` s de des para a qual os nós de programa serão adicionados.  
   
  `celtSpecificEngines`  
- [in] O número de `GUID`s no `rgguidSpecificEngines` matriz.  
+ no O número de `GUID` s na `rgguidSpecificEngines` matriz.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- [Nós de programa](../../../extensibility/debugger/program-nodes.md) será adicionado para cada Alemanha listados no `rgguidSpecificEngines`— exceto o mecanismo de inicialização (conforme indicado na `guidLaunchingEngine`), que são assumidos para adicionar seu próprio nó de programa quando ele inicia um programa.  
+ [Nós de programa](../../../extensibility/debugger/program-nodes.md) serão adicionados para cada um dos listados em `rgguidSpecificEngines` — excluindo o mecanismo de inicialização (como fornecido em `guidLaunchingEngine` ), que é considerado para adicionar seu próprio nó de programa quando ele inicia um programa.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [Nós de programa](../../../extensibility/debugger/program-nodes.md)

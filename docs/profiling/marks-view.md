@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773962"
 ---
 # <a name="marks-view"></a>Exibição de marcas
@@ -26,7 +26,7 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
 
  As marcas padrão que são pré-populadas no rótulo de relatório no início e no final do programa.
 
- Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, consulte [Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, consulte [como: coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md).
 
  Para criar um filtro entre duas marcas, selecione a marca, clique com o botão direito do mouse clique em **Adicionar filtro por marcas** ou **Adicionar filtro por carimbo de data/hora**.
 
@@ -42,5 +42,5 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
 
 ## <a name="see-also"></a>Confira também
 - [Visão geral do relatório de desempenho](../profiling/performance-report-overview.md)
-- [Como: Coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;janela nib&#93; controle de coleta de dados](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [Como: coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [ Janela de controle de coleta de dados do&#91;NIB&#93;](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

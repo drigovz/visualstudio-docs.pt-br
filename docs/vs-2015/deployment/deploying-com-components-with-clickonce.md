@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c83367881b7ed6a69fe10af8b7c68eb1692e3e6
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74706890"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
@@ -40,21 +40,21 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
   
  Isolar um componente COM requer que ele seja registrado no computador do desenvolvedor, mas não precisa ser registrado no computador do usuário final. Para isolar um componente COM, tudo o que você precisa fazer é definir sua propriedade **isolada** de referência como **true**. Por padrão, essa propriedade é definida como **false**, indicando que ela deve ser tratada como uma referência com registrada. Se essa propriedade for **true**, ela fará com que um manifesto seja gerado para esse componente no momento da compilação. Ele também faz com que os arquivos correspondentes sejam copiados para a pasta do aplicativo durante a instalação.  
   
- Quando o gerador de manifesto encontra uma referência COM isolada, ele enumera todas as entradas de `CoClass` na biblioteca de tipos do componente, correspondendo a cada entrada com seus dados de registro correspondentes e gerando definições de manifesto para todas as classes COM no arquivo de biblioteca de tipos.  
+ Quando o gerador de manifesto encontra uma referência COM isolada, ele enumera todas as `CoClass` entradas na biblioteca de tipos do componente, correspondendo a cada entrada com seus dados de registro correspondentes e gerando definições de manifesto para todas as classes com no arquivo de biblioteca de tipos.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Implantando componentes COM sem registro usando o ClickOnce  
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] tecnologia de implantação é bem adequada para a implantação de componentes COM isolados, porque tanto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] quanto COM sem registro exigem que um componente tenha um manifesto para ser implantado.  
+ [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a tecnologia de implantação é adequada para a implantação de componentes COM isolados, porque o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] e o com sem registro exigem que um componente tenha um manifesto para ser implantado.  
   
  Normalmente, o autor do componente deve fornecer um manifesto. No entanto, se não, o Visual Studio é capaz de gerar um manifesto automaticamente para um componente COM. A geração de manifesto é executada durante o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] processo de publicação; para obter mais informações, consulte [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md). Esse recurso também permite aproveitar os componentes herdados que você criou em ambientes de desenvolvimento anteriores, como o Visual Basic 6,0.  
   
- Há duas maneiras de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantar componentes COM:  
+ Há duas maneiras de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantar componentes com:  
   
 - Use o bootstrapper para implantar seus componentes COM; Isso funciona em todas as plataformas com suporte.  
   
 - Use o isolamento de componente nativo (também conhecido como implantação COM livre de registro). No entanto, isso só funcionará em um sistema operacional Windows XP ou superior.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Exemplo de isolamento e implantação de um componente COM simples  
- Para demonstrar a implantação de componente COM sem registro, este exemplo criará um aplicativo baseado no Windows no Visual Basic que faz referência a um componente COM nativo isolado criado usando Visual Basic 6,0 e o implanta usando o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ Para demonstrar a implantação de componente COM sem registro, este exemplo criará um aplicativo baseado no Windows no Visual Basic que faz referência a um componente COM nativo isolado criado usando Visual Basic 6,0 e o implanta usando o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
  Primeiro, você precisará criar o componente COM nativo:  
   
@@ -69,7 +69,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
   
 3. Em **Gerenciador de soluções**, clique duas vezes em **Class1. vb** para abrir o editor de texto.  
   
-4. Em Class1. vb, adicione o seguinte código após o código gerado para o método `New`:  
+4. Em Class1. vb, adicione o seguinte código após o código gerado para o `New` método:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
     End Sub  
     ```  
   
-5. Crie o componente. No menu **Compilar** , clique em **Compilar solução**.  
+5. Crie o componente. No menu **Compilar**, clique em **Solução de Compilação**.  
   
 > [!NOTE]
 > O COM sem registro oferece suporte somente a DLLs e tipos de projeto de controles COM. Você não pode usar EXEs com com sem registro.  
@@ -94,7 +94,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
   
 4. Clique com o botão direito do mouse no nó **referências** e selecione **Adicionar referência** no menu de contexto.  
   
-5. Na caixa de diálogo **Adicionar referência** , clique na guia **procurar** , navegue até VB6Hello. dll e, em seguida, selecione-o.  
+5. Na caixa de diálogo **Adicionar referência** , clique na guia **procurar** , navegue até VB6Hello.dll e, em seguida, selecione-o.  
   
     Uma referência de **VB6Hello** é exibida na lista de referências.  
   
@@ -111,7 +111,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
    End Sub  
    ```  
   
-9. Execute o aplicativo. No menu **depurar** , clique em **Iniciar Depuração**.  
+9. Execute o aplicativo. No menu **Depurar**, clique em **Iniciar Depuração**.  
   
    Em seguida, você precisa isolar o controle. Cada componente COM que seu aplicativo usa é representado em seu projeto como uma referência COM. Essas referências são visíveis no nó **referências** na janela **Gerenciador de soluções** . (Observe que você pode adicionar referências diretamente usando o comando **Adicionar referência** no menu **projeto** ou indiretamente arrastando um controle ActiveX para o formulário.)  
   
@@ -123,14 +123,14 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
   
 2. Na janela **Propriedades** , altere o valor da propriedade **isolada** de **false** para **true**.  
   
-3. No menu **Compilar** , clique em **Compilar solução**.  
+3. No menu **Compilar**, clique em **Solução de Compilação**.  
   
-   Agora, quando você pressiona F5, o aplicativo funciona conforme o esperado, mas agora ele está sendo executado em COM sem registro. Para provar isso, tente cancelar o registro do componente VB6Hello. dll e executar o RegFreeComDemo1. exe fora do IDE do Visual Studio. Desta vez, quando o botão é clicado, ele ainda funciona. Se você renomear temporariamente o manifesto do aplicativo, ele falhará novamente.  
+   Agora, quando você pressiona F5, o aplicativo funciona conforme o esperado, mas agora ele está sendo executado em COM sem registro. Para provar isso, tente cancelar o registro do componente de VB6Hello.dll e executar RegFreeComDemo1.exe fora do IDE do Visual Studio. Desta vez, quando o botão é clicado, ele ainda funciona. Se você renomear temporariamente o manifesto do aplicativo, ele falhará novamente.  
   
 > [!NOTE]
-> Você pode simular a ausência de um componente COM Cancelando o registro temporariamente. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32`, em seguida, cancele o registro do componente digitando `regsvr32 /u VB6Hello.dll`. Você pode registrá-lo novamente digitando `regsvr32 VB6Hello.dll`.  
+> Você pode simular a ausência de um componente COM Cancelando o registro temporariamente. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32` e cancele o registro do componente digitando `regsvr32 /u VB6Hello.dll` . Você pode registrá-lo novamente digitando `regsvr32 VB6Hello.dll` .  
   
- A etapa final é publicar o aplicativo usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
+ A etapa final é publicar o aplicativo usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] :  
   
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>Para publicar uma atualização de aplicativo com um componente COM isolado  
   
@@ -145,7 +145,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
    Se você examinar os arquivos publicados, observará que o arquivo Sysmon. ocx está incluído. O controle é totalmente isolado para esse aplicativo, o que significa que, se o computador do usuário final tiver outro aplicativo usando uma versão diferente do controle, ele não poderá interferir nesse aplicativo.  
   
 ## <a name="referencing-native-assemblies"></a>Referenciando assemblies nativos  
- O Visual Studio dá suporte a referências a Visual Basic C++ nativos 6,0 ou assemblies; essas referências são chamadas de referências nativas. Você pode saber se uma referência é nativa verificando se sua propriedade de **tipo de arquivo** está definida como **Native** ou **ActiveX**.  
+ O Visual Studio dá suporte a referências a assemblies nativos Visual Basic 6,0 ou C++; essas referências são chamadas de referências nativas. Você pode saber se uma referência é nativa verificando se sua propriedade de **tipo de arquivo** está definida como **Native** ou **ActiveX**.  
   
  Para adicionar uma referência nativa, use o comando **Add Reference** e, em seguida, navegue até o manifesto. Alguns componentes colocam o manifesto dentro da DLL. Nesse caso, você pode simplesmente escolher a própria DLL e o Visual Studio a adicionará como uma referência nativa se detectar que o componente contém um manifesto incorporado. O Visual Studio também incluirá automaticamente todos os arquivos dependentes ou assemblies listados no manifesto se eles estiverem na mesma pasta que o componente referenciado.  
   
@@ -172,7 +172,7 @@ A implantação de componentes COM herdados tem sido tradicionalmente uma tarefa
   
   Um componente COM só pode ser isolado uma vez por aplicativo. Por exemplo, você não pode isolar o mesmo componente COM de dois projetos de **biblioteca de classes** diferentes que fazem parte do mesmo aplicativo. Isso resultará em um aviso de compilação e o aplicativo não será carregado em tempo de execução. Para evitar esse problema, a Microsoft recomenda que você encapsula os componentes COM em uma única biblioteca de classes.  
   
-  Há vários cenários em que o registro COM é necessário na máquina do desenvolvedor, embora a implantação do aplicativo não exija registro. A propriedade `Isolated` requer que o componente COM seja registrado no computador do desenvolvedor para gerar automaticamente o manifesto durante a compilação. Não há recursos de captura de registro que invoquem o auto-registro durante a compilação. Além disso, todas as classes não explicitamente definidas na biblioteca de tipos não serão refletidas no manifesto. Ao usar um componente com com um manifesto pré-existente, como uma referência nativa, o componente pode não precisar ser registrado no tempo de desenvolvimento. No entanto, o registro será necessário se o componente for um controle ActiveX e você quiser incluí-lo na **caixa de ferramentas** e no designer de Windows Forms.  
+  Há vários cenários em que o registro COM é necessário na máquina do desenvolvedor, embora a implantação do aplicativo não exija registro. A `Isolated` propriedade requer que o componente com seja registrado no computador do desenvolvedor para gerar automaticamente o manifesto durante a compilação. Não há recursos de captura de registro que invoquem o auto-registro durante a compilação. Além disso, todas as classes não explicitamente definidas na biblioteca de tipos não serão refletidas no manifesto. Ao usar um componente com com um manifesto pré-existente, como uma referência nativa, o componente pode não precisar ser registrado no tempo de desenvolvimento. No entanto, o registro será necessário se o componente for um controle ActiveX e você quiser incluí-lo na **caixa de ferramentas** e no designer de Windows Forms.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

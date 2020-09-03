@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 008aa6bd9402cde760ffc61a613aba778c8ec96f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773264"
 ---
 # <a name="callercallee-view---sampling-data"></a>Exibição do chamador/receptor – dados de amostragem
@@ -29,7 +29,7 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
  **Funções que foram chamadas pela função atual** são exibidas na grade inferior e mostram informações de criação de perfil para as funções do computador chamado (filho) da função selecionada quando a função filho foi chamada pela função atual.
 
 > [!NOTE]
-> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [ferramentas de desempenho em aplicativos windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 |Coluna|Descrição|
 |------------|-----------------|
@@ -37,10 +37,10 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Tipo**|O contexto da função:<br /><br /> -   **0** – a função atual<br />-   **1** – uma função que chama a função atual<br />-   **2** – uma função que é chamada pela função atual|
 |**Nome da Função Raiz**|Nome da função atual.|
 |**Amostras Inclusivas**|–   Para a função atual, o número de amostras que foram coletadas, embora essa função ou uma de suas funções filho estivesse em execução.<br />–   Para uma função do chamador, o número de amostras inclusivas da função atual que foram coletadas quando essa função chamou a função atual.<br />–   Para uma função do computador chamado, o número de amostras inclusivas dessa função que foram coletadas quando a função atual chamou essa função.|
@@ -49,6 +49,6 @@ A exibição de Chamador/Computador Chamado exibe informações de perfil para u
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função.|
 
 ## <a name="see-also"></a>Confira também
-- [Exibição caller/Callee - dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
-- [Exibição de chamada/callee - dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
-- [Exibição caller/Callee - dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
+- [Exibição Caller/Callee-dados de amostragem de memória .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação de memória .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Exibição do chamador/receptor-dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar o tempo de execução do .NET Framework | Microsoft Docs'
+title: Como especificar o runtime do .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203406"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Como: Especificar o tempo de execução do .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Como especificar o runtime do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Com o lançamento do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], os aplicativos podem ser compostos de módulos que foram compilados usando versões diferentes do tempo de execução do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Por padrão, as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analisam o primeiro tempo de execução que é carregado pelo aplicativo. Você pode especificar o tempo de execução a ser analisado ao iniciar um aplicativo com o criador de perfil e ao anexar o criador de perfil a um aplicativo que já esteja em execução.  
+Com o lançamento do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], os aplicativos podem ser compostos de módulos que foram compilados usando versões diferentes do tempo de execução do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Por padrão, as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] analisam o primeiro runtime que é carregado pelo aplicativo. Você pode especificar o tempo de execução a ser analisado ao iniciar um aplicativo com o criador de perfil e ao anexar o criador de perfil a um aplicativo que já esteja em execução.  
   
  **Requisitos**  
   
@@ -32,7 +32,7 @@ Com o lançamento do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], o
   
 1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho, clique em **Propriedades** e, em seguida, clique em **Avançado**.  
   
-     A caixa de listagem **Versão do CLR de Destino** exibe **Automático** e as versões de tempo de execução do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que estão instaladas no computador.  
+     A caixa de listagem **Versão do CLR de Destino** exibe **Automático** e as versões de runtime do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que estão instaladas no computador.  
   
 2. Execute uma das seguintes etapas:  
   
@@ -46,7 +46,7 @@ Com o lançamento do [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], o
   
 2. Na caixa de diálogo Anexar Criador de Perfil a Processo, clique no processo você deseja analisar.  
   
-     A caixa de listagem **Versão do CLR de Destino** exibe **Automático** e as versões de tempo de execução do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que estão instaladas no computador.  
+     A caixa de listagem **Versão do CLR de Destino** exibe **Automático** e as versões de runtime do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que estão instaladas no computador.  
   
 3. Execute uma das seguintes etapas:  
   

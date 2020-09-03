@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02d51c5799391863262d285e1cda209a3b7938d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300847"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserir controles e modificar seu comportamento no XAML Designer
@@ -25,16 +25,16 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 
 - [Adicionar controles ao formulário](#Insert)
 
-- [Fazer com que controles façam coisas](#Modify)
+- [Fazer com que os controles façam coisas](#Modify)
 
-## <a name="Insert"></a> Adicionar controles à prancheta
+## <a name="add-controls-to-the-artboard"></a><a name="Insert"></a> Adicionar controles à prancheta
  Você pode arrastar controles do painel **Ativos** para a **prancheta** e, em seguida, modificá-los na janela **Propriedades**.
 
- ![FlipView &#45; de &#45; ativos de mistura](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
+ ![Misturar &#45; ativos &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")
 
  Esses vídeos mostram como usar alguns dos controles mais comuns.
 
-|Controle|Assista a um breve vídeo|
+|Control|Assista a um vídeo curto|
 |-------------|-------------------------|
 |`Menu` ![](../designers/media/015a263c-0b2b-4253-ac57-b86fcb8c9591.png "015a263c-0b2b-4253-ac57-b86fcb8c9591")|![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [adicionar os controles](https://www.youtube.com/watch?v=ra4AHfgD4Ys&list=PLBDF977B2F1DAB358&index=45)|
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar um botão](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|
@@ -45,7 +45,7 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>Fazer um controle de uma imagem, forma ou caminho
  Você pode transformar qualquer objeto em um controle.
 
- ![Caixa de diálogo fazer controle de mesclagem](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
+ ![Caixa de diálogo Transformar em Controle do Blend](../designers/media/blend-makeintocontrol-xaml.png "blend_MakeIntoControl_XAML")
 
  Por exemplo, imagine uma imagem de uma televisão no centro da página. Você pode criar controles de imagens pequenas que se parecem com botões de televisão. Em seguida, os usuários podem clicar nesses botões para trocar de canal.
 
@@ -53,7 +53,7 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 
  Para criar um controle, selecione um objeto. No menu **Ferramentas**, clique em **Transformar em Controle**.
 
-## <a name="Modify"></a> Fazer com que controles façam coisas
+## <a name="make-controls-do-things"></a><a name="Modify"></a> Fazer com que controles façam coisas
  Controles podem executar ações quando os usuários interagem com eles. Por exemplo, eles podem iniciar uma animação, atualizar uma fonte de dados ou reproduzir um vídeo.
 
  Use *gatilhos*, *comportamentos* e *eventos* para fazer com que os controles façam coisas.
@@ -68,11 +68,11 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 ### <a name="behaviors"></a>Comportamentos
  Um *comportamento* é um pacote reutilizável de código. Ele pode fazer um pouco mais além de alterar as propriedades. Ele pode realizar ações como consultar um serviço de dados. A combinação vem com uma pequena coleção deles, mas você pode adicionar mais. Arraste um comportamento para qualquer objeto na sua prancheta e personalize o comportamento configurando propriedades.
 
- ![FluidMoveBehavior no painel de propriedades](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")
+ ![FluidMoveBehavior no painel Propriedades](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")
 
  **Assista a um breve vídeo:** configurar as dicas de combinação de ![recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [: introdução ao uso de comportamentos parte 1](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
-### <a name="events"></a>Events
+### <a name="events"></a>Eventos
  Para máxima flexibilidade, manipule um *evento*. Você precisará gravar algum código.
 
  **Assista a um breve vídeo:** ![configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Adicionar um evento do mouse](https://www.youtube.com/watch?v=2PMxAlb-x_E).

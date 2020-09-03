@@ -7,10 +7,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 4bd769ebd2605d98b4c8a3c473dfca00f86b0f06
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159013"
 ---
 | **Valor** | **Resultado** |
@@ -24,4 +24,4 @@ ms.locfileid: "76159013"
 | 5005 | Erro de análise de linha de comando do inicializador |
 | 5007 | A operação foi bloqueada – o computador não atende aos requisitos |
 | –1073741510 | O Instalador do Microsoft Visual Studio foi terminado (por usuário ou processo externo) |
-| Outros<br>(por exemplo:<br>-1, 1, 1.603) | Condição de falha ocorreu. Verifique os logs para obter mais informações |
+| Outro<br>(por exemplo:<br>-1, 1, 1.603) | Condição de falha ocorreu. Verifique os logs para obter mais informações |

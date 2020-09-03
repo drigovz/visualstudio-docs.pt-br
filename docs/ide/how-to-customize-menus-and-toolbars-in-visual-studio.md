@@ -28,10 +28,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284393"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
@@ -117,7 +117,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     Também é possível redefinir todos os menus e barras de ferramentas escolhendo o botão **Redefinir Tudo**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)

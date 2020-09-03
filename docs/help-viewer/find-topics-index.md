@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284952"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Localizar tópicos usando o índice do Visualizador da Ajuda
@@ -77,7 +77,7 @@ Se você não encontrar uma entrada para a palavra ou frase inserida, tente o se
 
     Por exemplo, se tiver inserido o termo "compilando", tente "criando".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como localizar tópicos no Sumário](../help-viewer/find-topics-toc.md)
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)

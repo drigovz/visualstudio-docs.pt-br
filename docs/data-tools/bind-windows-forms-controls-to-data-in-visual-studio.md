@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283002"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associar controles do Windows Forms a dados no Visual Studio
@@ -80,7 +80,7 @@ A ilustração a seguir mostra os controles associados a dados padrão que são 
 
 Observe também que cada controle tem uma marca inteligente. Essa marca permite personalizações que se aplicam somente ao controle.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associando controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associação de dados em Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

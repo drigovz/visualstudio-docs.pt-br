@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905206"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
-Quando o serviço de linguagem fornece a colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens coloráveis e retorna tipos de token correspondentes a esses itens coloráveis. O analisador deve retornar tipos de token que pertençam a uma lista de itens coloráveis. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]exibe cada item colorável na janela de código de acordo com os atributos atribuídos pelo objeto Colorizer ao tipo de token apropriado.
+Quando o serviço de linguagem fornece a colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens coloráveis e retorna tipos de token correspondentes a esses itens coloráveis. O analisador deve retornar tipos de token que pertençam a uma lista de itens coloráveis. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] exibe cada item colorável na janela de código de acordo com os atributos atribuídos pelo objeto Colorizer ao tipo de token apropriado.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]não especifica uma interface do analisador, e a implementação do analisador é completamente ativada para você. No entanto, uma implementação de analisador padrão é fornecida no projeto de pacote de linguagem do Visual Studio. Para código gerenciado, a MPF (estrutura de pacote gerenciada) fornece suporte completo para colorir o texto.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não especifica uma interface do analisador, e a implementação do analisador é completamente ativada para você. No entanto, uma implementação de analisador padrão é fornecida no projeto de pacote de linguagem do Visual Studio. Para código gerenciado, a MPF (estrutura de pacote gerenciada) fornece suporte completo para colorir o texto.
 
  Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar a coloração de sintaxe, consulte [Walkthrough: realce Text](../../extensibility/walkthrough-highlighting-text.md).
 

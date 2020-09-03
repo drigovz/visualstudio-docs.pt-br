@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299631"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bancos de dados de exemplo do SQL Server
@@ -27,7 +27,7 @@ Os bancos de dados de exemplo são úteis para experimentar consultas do SQL e d
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar um banco de dados de um arquivo. bak no Visual Studio
 
-1. Quando você faz backup de um banco de dados Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o arquivo. bak utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **exibir** > **pesquisador de objetos do SQL Server**. Se você não o vir, talvez seja necessário instalá-lo. Vá para o **painel de controle** > **programas e recursos**, localize Microsoft Visual Studio 2015 e clique no botão **alterar** . Quando a lista de componentes instalados aparecer na janela do instalador, marque a caixa de seleção **pesquisador de objetos do SQL Server** e continue com a instalação.
+1. Quando você faz backup de um banco de dados Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o arquivo. bak utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **Exibir**  >  **pesquisador de objetos do SQL Server**. Se você não o vir, talvez seja necessário instalá-lo. Vá para o **painel de controle**  >  **programas e recursos**, localize Microsoft Visual Studio 2015 e clique no botão **alterar** . Quando a lista de componentes instalados aparecer na janela do instalador, marque a caixa de seleção **pesquisador de objetos do SQL Server** e continue com a instalação.
 
 2. Em Pesquisador de Objetos do SQL Server, clique com o botão direito do mouse em qualquer mecanismo de banco de dados SQL Server (por exemplo, LocalDB) e selecione**nova consulta**.
 

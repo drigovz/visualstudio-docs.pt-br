@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference | Microsoft Docs
+title: IDebugPointerObject::D eReference | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725568"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Aponta o objeto para.
+Obtém o objeto apontado para.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int Dereference(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwIndex`\
-[em] Um simples byte offset desde o início do objeto apontou para.
+no Um deslocamento de byte simples do início do objeto apontado para.
 
 `ppObject`\
-[fora] Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando o objeto apontado para, mais deslocamento, se houver.
+fora Retorna um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa o objeto apontado para, além de offset, se houver.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro. Retorna E_FAIL se este objeto não apontar para outro objeto.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro. Retorna E_FAIL se esse objeto não apontar para outro objeto.
 
 ## <a name="remarks"></a>Comentários
  O objeto apontado pode ser um tipo primitivo ou mais complexo, como uma classe ou estrutura.

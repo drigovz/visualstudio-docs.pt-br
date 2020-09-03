@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284926"
 ---
 # Como localizar tópicos no sumário
@@ -31,7 +31,7 @@ Na guia **Sumário**, você pode usar o sumário para localizar informações. O
 
 ## Filtrar o sumário
 
-Você pode filtrar o Sumário para restringir o escopo dos tópicos que aparecem na guia **conteúdo** . os títulos aparecem na lista somente se contiverem a raiz do termo que você especificar. Por exemplo, se você especificar "solucionar" como filtro, somente títulos que contiverem "solucionar" ou "solucionar problemas" aparecerão. Nós cujos títulos não contiverem o termo serão recolhidos para um único nó com um sinal de reticências (**...**).
+Você pode filtrar o Sumário para restringir o escopo dos tópicos que aparecem na guia **conteúdo** . Os títulos só aparecerão na lista se contiverem a raiz do termo que você especificar. Por exemplo, se você especificar "solucionar" como filtro, somente títulos que contiverem "solucionar" ou "solucionar problemas" aparecerão. Nós cujos títulos não contiverem o termo serão recolhidos para um único nó com um sinal de reticências (**...**).
 
 1. Escolha a guia **Sumário**.
 
@@ -50,7 +50,7 @@ Se tiver aberto um tópico usando os recursos de pesquisa de texto completo ou o
 
      A guia **Sumário** é aberta e exibe o local do tópico no Sumário.
 
-## Veja também
+## Confira também
 
 - [Como localizar tópicos no índice](../help-viewer/find-topics-index.md)
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300265"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
@@ -40,7 +40,7 @@ ms.locfileid: "74300265"
 
  Dentro do IDE, é possível realizar as seguintes tarefas adicionais:
 
-- [Alterar o diretório de saída do build](../ide/how-to-change-the-build-output-directory.md).
+- [Altere o diretório de saída da compilação](../ide/how-to-change-the-build-output-directory.md).
 
 - [Identificar projetos que dependem da saída de outro projeto para compilar corretamente](../ide/how-to-create-and-remove-project-dependencies.md).
 
@@ -52,5 +52,5 @@ ms.locfileid: "74300265"
 
 - Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)

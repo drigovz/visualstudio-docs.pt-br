@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299668"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
@@ -40,16 +40,16 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 - Atualizações visuais que são menos frequentes do que o esperado. Isso ocorrerá se o thread de interface de usuário estiver muito ocupado para manter uma taxa de quadros estável. Por exemplo, se o thread de interface de usuário estiver ocupado, os quadros poderão ser ignorados. Qualquer trabalho do thread sem interface de usuário, como solicitações de rede, decodificação de imagens e pinturas, também pode limitar a frequência de atualizações visuais. (Nem toda pintura é executada no thread de interface de usuário.)  
   
-## <a name="RunningProfiler"></a> Executar a ferramenta de capacidade de resposta da interface do usuário HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a><a name="RunningProfiler"></a> Executar a ferramenta de capacidade de resposta da interface do usuário HTML  
  Você pode usar a ferramenta de Capacidade de Resposta de Interface do Usuário HTML quando tiver um aplicativo universal do Windows ou aplicativo da Windows Store aberto no Visual Studio ou instalado em um computador executando o Windows 8 ou posterior.  
   
 1. Se você estiver executando o aplicativo no Visual Studio, na barra de ferramentas **Padrão**, na lista **Iniciar Depuração**, escolha um destino de implantação, como um dos emuladores do Windows Phone, **Computador Local**, **Simulador** ou **Computador Remoto**.  
   
-2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** .  
+2. No menu **depurar** , escolha **criador de perfil de desempenho...**.  
   
      Se desejar alterar o destino da análise para o criador de perfil, escolha **Alterar Destino**.  
   
-     ![Destino da análise de alterações](../profiling/media/js-tools-target.png "|::ref1::|")  
+     ![Destino da análise de alterações](../profiling/media/js-tools-target.png "JS_Tools_Target")  
   
      As seguintes opções estão disponíveis para o destino de análise:  
   
@@ -73,10 +73,10 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 6. Para interromper a criação de perfil do aplicativo e exibir os dados coletados pelo criador de perfil, selecione **Parar de coletar**.  
   
-## <a name="IsolateAnIssue"></a> Isolar um problema  
+## <a name="isolate-an-issue"></a><a name="IsolateAnIssue"></a> Isolar um problema  
  A seção a seguir fornece sugestões para ajudá-lo a isolar problemas de desempenho. Para obter uma explicação passo a passo sobre como identificar e corrigir problemas de desempenho por meio de um aplicativo de teste de desempenho de amostra, consulte [Passo a passo: melhorando a capacidade de resposta da interface do usuário (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
-### <a name="Workflow"></a> Isolar um problema de capacidade de resposta da interface do usuário  
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> Isolar um problema de capacidade de resposta da interface do usuário  
  Estas etapas fornecem um fluxo de trabalho sugerido que pode ajudá-lo a usar o Criador de Perfis de Capacidade de Resposta de Interface de Usuário de forma mais eficaz:  
   
 1. Abra o aplicativo no Visual Studio.  
@@ -100,7 +100,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 8. Se você tiver adicionado marcas de usuário, elas aparecerão na opção [Exibir a linha do tempo da sessão de diagnóstico](#Ruler) do criador de perfil. A ilustração a seguir mostra uma única marca de usuário usada para especificar uma operação específica em seu código.  
   
-     ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref2::|")  
+     ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. Identifique uma área de interesse na linha de tempo e nos gráficos do criador de perfil usando marcas de usuário, eventos de ciclo de vida do aplicativo ou dados visíveis nos gráficos. Veja a seguir algumas diretrizes para ajudá-lo a analisar e usar os dados dos gráficos:  
   
@@ -114,7 +114,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
      A ilustração a seguir mostra o gráfico de utilização da CPU com uma área de interesse realçada.  
   
-     ![Gráfico de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref3::|")  
+     ![Grafo de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Use a opção [Exibir detalhes da linha de tempo](#TimelineDetails) para obter informações detalhadas sobre os eventos que são realizados com muita frequência ou demorando muito tempo para terminar. Por exemplo, procure o seguinte:  
   
@@ -133,12 +133,12 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 13. Depois de ampliar, selecione uma parte da utilização da CPU ou do gráfico Taxa de Transferência Visual. Quando você faz uma seleção, o gráfico de detalhes da linha do tempo no painel inferior do criador de perfis muda para mostrar somente o período selecionado.  
   
-### <a name="IsolateVisualThroughput"></a> Isolar um problema de taxa de transferência visual  
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolar um problema de taxa de transferência visual  
  Períodos de utilização excessiva da CPU podem resultar em taxas de quadros baixas ou inconsistentes. Se você desenvolve jogos e aplicativos de mídia avançados, o gráfico de taxa de transferência visual pode fornecer dados mais importantes do que o gráfico de utilização da CPU.  
   
  Para isolar um problema de taxa de transferência visual, siga as etapas descritas na seção anterior, mas use o gráfico de taxa de transferência visual como um dos pontos de dados chave.  
   
-### <a name="ProfileMark"></a> Marcar código para análise  
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> Marcar código para análise  
  Para ajudar a isolar uma seção do código de aplicativo associada aos dados que aparecem nos gráficos, você pode adicionar uma chamada de função ao aplicativo para instruir o criador de perfil a inserir uma marca de perfil — um triângulo invertido — na linha do tempo no momento em que a função for executada. Qualquer marca de usuário que você adicione aparecerá na linha do tempo para o gráfico de utilização da CPU, o gráfico de taxa de transferência visual e o gráfico de detalhes da linha do tempo.  
   
  Para adicionar uma marca de usuário, adicione o seguinte código ao aplicativo. Este exemplo usa “obtendo dados” como a descrição do evento.  
@@ -157,7 +157,7 @@ if (performance && performance.mark) {
   
  A ilustração a seguir mostra a régua de diagnóstico com uma única marca de usuário e sua dica de ferramenta.  
   
- ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref4::|")  
+ ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  Você também pode criar eventos gerados por ferramenta na exibição dos detalhes da linha do tempo para ver quanto tempo se passa entre duas marcas de usuário. O código a seguir adiciona uma segunda marca de usuário e uma medida do tempo decorrido entre a execução de duas marcas de usuário (o código anterior mostra a primeira marca de usuário).  
   
@@ -172,17 +172,17 @@ if (performance.mark && performance.measure) {
   
  A medição da duração aparece como um evento de **Medida do usuário** na exibição de detalhes da linha do tempo e mostra informações detalhadas quando selecionada.  
   
- ![Evento de medida do usuário na exibição de detalhes da linha do tempo](../profiling/media/js-htmlvizprofiler-user-measure.png "|::ref5::|")  
+ ![Evento de medida do usuário na exibição de detalhes da linha do tempo](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-## <a name="AnalyzeData"></a> Analisar dados  
+## <a name="analyze-data"></a><a name="AnalyzeData"></a> Analisar dados  
  As seções a seguir fornecem informações para ajudar a interpretar os dados que aparecem no criador de perfil.  
   
-### <a name="Ruler"></a> Exibir a linha do tempo da sessão de diagnóstico  
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Exibir a linha do tempo da sessão de diagnóstico  
  A régua na parte superior do criador de perfil mostra a linha do tempo para informações analisadas. Essa linha do tempo se aplica tanto para o gráfico de utilização da CPU quanto para o gráfico de taxa de transferência visual.  
   
  Esta é a aparência da sessão de diagnóstico com uma dica de ferramenta exibida para vários eventos de ciclo de vida do aplicativo:  
   
- ![Régua de sessão de diagnóstico](../profiling/media/js-htmlvizprof-ruler.png "|::ref6::|")  
+ ![Régua de sessão de diagnóstico](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
   
  A linha do tempo mostra quando ocorrem os eventos de ciclo de vida do aplicativo, como o evento de ativação, e mostra marcas de usuário (triângulos com a marca de usuário) que você pode adicionar ao seu código. Você pode selecionar os eventos para mostrar dicas de ferramenta com mais informações. Para obter mais informações sobre as marcas de usuário, consulte [Marcar código para análise](#ProfileMark) neste tópico.  
   
@@ -192,8 +192,8 @@ if (performance.mark && performance.measure) {
   
 - Um evento de navegação, que ocorre quando você navega para outra página. Uma dica de ferramenta para o evento mostra a URL da página de destino.  
   
-### <a name="CPUUtilization"></a> Exibir a utilização da CPU  
- O gráfico de utilização da CPU permite identificar períodos em que há uma atividade excessiva da CPU. Ele fornece informações sobre o consumo médio do aplicativo na CPU durante um período. As informações são codificadas por cores para representar as seguintes categorias específicas: **Carregamento**, **Script**, **coleta de lixo (GC)** , **Estilo**, **Renderização** e **Decodificação de imagem**. Para obter mais informações sobre essas categorias, consulte [Referência de eventos do criador de perfil](#ProfilerEvents) mais adiante, neste tópico.  
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Exibir a utilização da CPU  
+ O gráfico de utilização da CPU permite identificar períodos em que há uma atividade excessiva da CPU. Ele fornece informações sobre o consumo médio do aplicativo na CPU durante um período. As informações são codificadas por cores para representar as seguintes categorias específicas: **Carregamento**, **Script**, **coleta de lixo (GC)**, **Estilo**, **Renderização** e **Decodificação de imagem**. Para obter mais informações sobre essas categorias, consulte [Referência de eventos do criador de perfil](#ProfilerEvents) mais adiante, neste tópico.  
   
  O gráfico da utilização da CPU mostra a quantidade de tempo gasto em todos os threads de aplicativo, combinando valores de utilização da CPU para uma ou mais CPUs em um único valor de porcentagem. O valor da utilização da CPU poderá exceder 100 por cento quando mais de uma CPU estiver sendo usada.  
   
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  Este exemplo mostra a aparência do gráfico da utilização da CPU:  
   
- ![Gráfico de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref7::|")  
+ ![Grafo de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
  Use este gráfico para:  
   
@@ -214,7 +214,7 @@ if (performance.mark && performance.measure) {
   
   Para obter mais informações sobre como usar o grafo , consulte [Isolar um problema de capacidade de resposta da interface do usuário](#Workflow) neste tópico.  
   
-### <a name="VisualThroughput"></a> Exibir a taxa de transferência visual (FPS)  
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> Exibir a taxa de transferência visual (FPS)  
  O gráfico de taxa de transferência visual permite que você identifique períodos em que a taxa de quadros cai. Ele mostra os quadros por segundo (FPS) para o aplicativo. Este gráfico é mais útil para o desenvolvimento de jogos e de aplicativos de mídia avançados.  
   
  O valor de FPS exibido pode diferir da taxa de quadros real. Tenha estas informações em mente quando for examinar dados nesse gráfico:  
@@ -227,7 +227,7 @@ if (performance.mark && performance.measure) {
   
   Este exemplo mostra a aparência do gráfico Taxa de Transferência Visual:  
   
-  ![Gráfico de taxa de transferência visual](../profiling/media/js-htmlvizprof-vizthru.png "|::ref8::|")  
+  ![Gráfico de taxa de transferência visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
   Use o gráfico Taxa de Transferência Visual para:  
   
@@ -237,7 +237,7 @@ if (performance.mark && performance.measure) {
   
 - Obtenha uma exibição mais detalhada de um período selecionado clicando no botão **Ampliar**.  
   
-### <a name="TimelineDetails"></a> Exibir detalhes da linha de tempo  
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> Exibir detalhes da linha de tempo  
  O gráfico de detalhes da linha do tempo aparece no painel inferior do Criador de Perfil de Capacidade de Resposta da Interface de Usuário. Ele fornece informações sequenciais e hierárquicas sobre eventos que consumiram a maioria do tempo da CPU durante períodos selecionados. Esse grafo pode ajudá-lo a determinar o que disparou um evento específico e, em alguns casos, como o evento é remapeado para o código-fonte. Esse gráfico também ajuda a determinar o tempo necessário para pintar atualizações visuais na tela.  
   
  O gráfico mostra o trabalho de threads de interface de usuário e trabalha em threads de plano de fundo que podem contribuir para a lentidão das atualizações visuais. O gráfico não mostra o trabalho JavaScript JIT, o trabalho de GPU assíncrono, o trabalho executado fora do processo do host (como o trabalho RuntimeBroker.exe e dwm.exe) ou o trabalho para as áreas do Windows Runtime que não foram instrumentadas para criação de perfil (como o E/S de disco).  
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  Este exemplo mostra a aparência do gráfico de detalhes da linha do tempo quando o ouvinte de eventos para um evento de clique DOM é selecionado:  
   
- ![Gráfico de detalhes da linha de tempo](../profiling/media/js-htmlvizprof-timelinedet.png "|::ref9::|")  
+ ![Gráfico de detalhes da linha de tempo](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  Nesta ilustração, o manipulador de eventos **spinAction** na coluna **Nome do evento** é um link que, quando selecionado, levará você ao manipulador de eventos no código-fonte. No painel direito, a propriedade **Callback function** fornece o mesmo link ao código-fonte. Outras propriedades também fornecem informações sobre o evento, como o elemento DOM associado.  
   
@@ -276,17 +276,17 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.  
 
-### <a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo  
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo  
  Você pode filtrar a exibição nos detalhes da linha do tempo para um evento particular selecionando **Filtrar para evento** no menu de contexto de um evento específico. Quando você escolhe essa opção, a linha do tempo e a exibição de grade têm como escopo o evento selecionado A seleção no gráfico de uso da CPU também tem como escopo o evento especial.  
   
- ![Filtrando a linha do tempo para um evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "|::ref10::|")  
+ ![Filtrando a linha do tempo para um evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
-### <a name="FilterEvents"></a> Filtrar eventos  
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtrar eventos  
  Você pode filtrar alguns eventos do gráfico de detalhes da linha do tempo para reduzir o ruído nos dados ou para eliminar dados que não são interessantes para seu cenário de desempenho. É possível filtrar por nome ou por duração de evento, ou ainda, pelos filtros específicos descritos aqui.  
   
  Desmarque a opção **Atividade em segundo plano** do ícone de filtro no painel inferior para filtrar a decodificação de imagem, o download especulativo e os eventos GC. Como esses eventos não são muito acionáveis, eles ficam ocultos por padrão.  
   
- ![Filtrando eventos na linha do tempo](../profiling/media/js-htmlvizprofiler-event-filter.png "|::ref11::|")  
+ ![Filtrando eventos na linha do tempo](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Para filtrar os eventos de solicitação HTTP, desmarque a opção **Tráfego de rede** do ícone de filtro no painel inferior. Por padrão, esses eventos são mostrados no gráfico de detalhes da linha do tempo.  
   
@@ -297,30 +297,30 @@ if (performance.mark && performance.measure) {
   
  Para filtrar as medidas do usuário, desmarque a opção **Medidas do usuário**. As medidas do usuário são eventos de nível superior, sem filhos.  
   
-### <a name="GroupFrames"></a> Agrupar eventos por quadro  
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> Agrupar eventos por quadro  
  Você pode agrupar os eventos que aparecem na exibição dos detalhes da linha do tempo em quadros individuais. Tais eventos de quadros são eventos gerados por ferramenta e representam contêineres de evento de nível superior, para todo o trabalho de thread da interface do usuário que ocorre entre os eventos de pintura. Para habilitar esta exibição, selecione **Agrupar eventos de nível superior por quadro**.  
   
- ![Agrupar eventos de nível superior por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "|::ref12::|")  
+ ![Agrupar eventos de nível superior por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Ao agrupar os eventos por quadro, cada um dos eventos de nível superior na exibição de detalhes da linha do tempo representa um quadro.  
   
- ![Eventos de linha do tempo agrupados por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping.png "|::ref13::|")  
+ ![Eventos de linha do tempo agrupados por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-## <a name="SaveSession"></a> Salvar uma sessão de diagnóstico  
+## <a name="save-a-diagnostic-session"></a><a name="SaveSession"></a> Salvar uma sessão de diagnóstico  
  No Visual Studio, você pode salvar uma sessão de diagnóstico ao fechar a guia associada à sessão. As sessões salvas podem ser reabertas mais tarde.  
   
-## <a name="ProfilerEvents"></a> Referência de evento do criador de perfil  
+## <a name="profiler-event-reference"></a><a name="ProfilerEvents"></a> Referência de evento do criador de perfil  
  Os eventos do Criador de Perfis são categorizados e codificados por cor no Criador de Perfis de Capacidade de Resposta de Interface de Usuário. Essas são as categorias de evento:  
   
-- **Carregamento.** Indica o tempo gasto para recuperar recursos do aplicativo e analisar HTML e CSS quando o aplicativo é carregado pela primeira vez. Isso pode incluir solicitações de rede.  
+- **Carregado.** Indica o tempo gasto para recuperar recursos do aplicativo e analisar HTML e CSS quando o aplicativo é carregado pela primeira vez. Isso pode incluir solicitações de rede.  
   
-- **Geração de script.** Indica a análise de tempo gasto e o JavaScript em execução. Isso inclui eventos DOM, temporizadores, avaliação de script e trabalho de quadro de animação. Inclui o código do usuário e o código da biblioteca.  
+- **Script.** Indica a análise de tempo gasto e o JavaScript em execução. Isso inclui eventos DOM, temporizadores, avaliação de script e trabalho de quadro de animação. Inclui o código do usuário e o código da biblioteca.  
   
-- **GC.** Indica o tempo gasto na coleta de lixo.  
+- **GCS.** Indica o tempo gasto na coleta de lixo.  
   
-- **Estilização.** Indica o tempo gasto analisando o CSS e calculando a apresentação e o layout do elemento.  
+- **Estiliza.** Indica o tempo gasto analisando o CSS e calculando a apresentação e o layout do elemento.  
   
-- **Renderização.** Indica o tempo gasto na pintura da tela.  
+- **Tratamento.** Indica o tempo gasto na pintura da tela.  
   
 - **Decodificação de imagem.** Indica o tempo gasto com a descompactação e a decodificação de imagens.  
   
@@ -330,21 +330,21 @@ if (performance.mark && performance.measure) {
   
   Esta tabela mostra os eventos e suas descrições:  
   
-|evento|Categoria do evento|Ocorre quando|  
+|Evento|Categoria de evento|Ocorre quando|  
 |-----------|--------------------|-----------------|  
 |Análise de CSS|Carregando|Um novo conteúdo CSS foi encontrado e foi feita uma tentativa de analisar o conteúdo CSS.|  
 |Análise de HTML|Carregando|Um novo conteúdo HTML foi encontrado e foi feita uma tentativa de analisa-lo em nós e de inseri-lo na árvore DOM.|  
 |Solicitação HTTP|Carregando|Um recurso remoto foi encontrado no DOM, ou uma XMLHttpRequest foi criada resultando em uma solicitação HTTP.|  
 |Download especulativo|Carregando|O conteúdo HTML da página foi pesquisado para obter os recursos necessários de modo que as solicitações HTTP subsequentes para os recursos pudessem ser agendadas rapidamente.|  
-|Função de retorno de chamada do quadro de animação|Script|O navegador estava prestes a renderizar outro quadro e isso disparou uma função de retorno de chamada fornecida pelo aplicativo.|  
-|Evento DOM|Script|Um evento DOM ocorreu e foi executado.<br /><br /> A propriedade `context` para o evento DOM, como `DOMContentLoaded` ou `click` é mostrada entre parênteses.|  
-|Ouvinte de eventos|Script|Um ouvinte de evento foi chamado e executado.|  
-|Ouvinte de consulta de mídia|Script|Uma consulta de mídia registrada foi invalidada, resultando na execução dos seus ouvintes associados.|  
-|Observador de mutação|Script|Um ou mais elementos observados do DOM foram modificados, resultando na execução do retorno de chamada associado do MutationObserver.|  
-|Avaliação de script|Script|Um novo elemento SCRIPT foi encontrado no DOM e foi feita uma tentativa de analisar e executar o script.|  
-|Temporizador|Script|Um temporizador agendado teve o tempo decorrido, e isso resultou na execução de sua função associada de retorno de chamada.|  
-|Função de retorno de chamada assíncrona do Windows Runtime|Script|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Windows Runtime.|  
-|Evento do Windows Runtime|Script|Um evento ocorrido em um objeto do Windows Runtime disparou um ouvinte registrado.|  
+|Função de retorno de chamada do quadro de animação|Scripting|O navegador estava prestes a renderizar outro quadro e isso disparou uma função de retorno de chamada fornecida pelo aplicativo.|  
+|Evento DOM|Scripting|Um evento DOM ocorreu e foi executado.<br /><br /> A propriedade `context` para o evento DOM, como `DOMContentLoaded` ou `click` é mostrada entre parênteses.|  
+|Ouvinte de eventos|Scripting|Um ouvinte de evento foi chamado e executado.|  
+|Ouvinte de consulta de mídia|Scripting|Uma consulta de mídia registrada foi invalidada, resultando na execução dos seus ouvintes associados.|  
+|Observador de mutação|Scripting|Um ou mais elementos observados do DOM foram modificados, resultando na execução do retorno de chamada associado do MutationObserver.|  
+|Avaliação de script|Scripting|Um novo elemento SCRIPT foi encontrado no DOM e foi feita uma tentativa de analisar e executar o script.|  
+|Temporizador|Scripting|Um temporizador agendado teve o tempo decorrido, e isso resultou na execução de sua função associada de retorno de chamada.|  
+|Função de retorno de chamada assíncrona do Windows Runtime|Scripting|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Windows Runtime.|  
+|Evento do Windows Runtime|Scripting|Um evento ocorrido em um objeto do Windows Runtime disparou um ouvinte registrado.|  
 |Coleta de lixo|GC|O tempo foi gasto na coleta de memória para objetos que não estão mais em uso.|  
 |Cálculo CSS|Estilo|Foram feitas alterações no DOM que exigiram que as propriedades de estilo de todos os elementos afetados fossem recalculadas.|  
 |Layout|Estilo|Foram feitas alterações no DOM que exigiram que o tamanho e/ou a posição de todos os elementos afetados fossem recalculados.|  
@@ -354,7 +354,7 @@ if (performance.mark && performance.measure) {
 |Quadro|N/D|Foram feitas alterações visuais no DOM, o que exigiu que todas as partes afetadas da página fossem redesenhadas. Este é um evento gerado por ferramenta usado para agrupamento.|  
 |Medida do usuário|N/D|Um cenário específico do aplicativo foi medido usando o método `performance.measure`. Este é um evento gerado por ferramenta usado para analisar códigos.|  
   
-## <a name="Tips"></a> Informações adicionais  
+## <a name="additional-information"></a><a name="Tips"></a> Informações adicionais  
   
 - Assista a [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o criador de perfil de Capacidade de Resposta de Interface do Usuário.  
   
@@ -362,5 +362,5 @@ if (performance.mark && performance.measure) {
   
 - Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Analisar o desempenho do aplicativo](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115047"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
@@ -86,7 +86,7 @@ Você pode achar as sugestões a seguir úteis para ajudar a perceber os benefí
 
 - Próximo ao final de cada iteração, mantenha um workshop de requisitos para definir em detalhes os requisitos ou as histórias de usuários que serão desenvolvidos na próxima iteração. Convide usuários e participantes de negócios que podem decidir sobre prioridades, bem como desenvolvedores e testadores de sistemas. Permita três horas para definir os requisitos para uma iteração de 2 semanas.
 
-- O objetivo do workshop é que todos concordem com o que será realizado no final da próxima iteração. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma pendência de iteração: ou seja, uma lista de tarefas de desenvolvimento no Team Foundation e conjuntos de testes no [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- O objetivo do workshop é que todos concordem com o que será realizado no final da próxima iteração. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma pendência de iteração: ou seja, uma lista de tarefas de desenvolvimento no Team Foundation e conjuntos de testes no [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - No workshop de requisitos, discuta o design apenas insofár, pois você precisa determinar as estimativas para as tarefas de desenvolvimento. Caso contrário, mantenha a discussão sobre o comportamento do sistema que os usuários podem enfrentar diretamente. Mantenha o modelo de requisitos separado do modelo arquitetônico.
 
@@ -131,12 +131,12 @@ Tipos diferentes de diagrama são úteis para descrever o design em diferentes n
 
 |**Categoria**|**Links**|
 |-|-|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif) [vídeos como faço para do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> link do ![para vídeo](../data-tools/media/playvideo.gif) [Channel 9: UML com o Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif) [série como faço para o MSDN: ferramentas e EXTENSIBILIDADE UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
-|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) - <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) - |
+|**Vídeos**|![link para vídeo ](../data-tools/media/playvideo.gif) [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![link para o canal de vídeo ](../data-tools/media/playvideo.gif) [9: UML com o Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![link para vídeo ](../data-tools/media/playvideo.gif) [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Fóruns**|- [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Orientação de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

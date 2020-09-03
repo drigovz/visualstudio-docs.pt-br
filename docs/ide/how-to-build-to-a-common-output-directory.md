@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a499b5ca5ea64dd9ded10f82b1af43258f346d3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284770"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Como criar um diretório de saída comum
@@ -34,7 +34,7 @@ Por padrão, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila c
 
 4. Repita as etapas 1 a 3 para todos os projetos na solução.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
 - [Como alterar o diretório de saída do build](../ide/how-to-change-the-build-output-directory.md)
