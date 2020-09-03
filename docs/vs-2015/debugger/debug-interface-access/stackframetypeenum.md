@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 655911bac1efbafe1838e24e2056282f9036479b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179197"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -25,7 +25,7 @@ ms.locfileid: "68179197"
 
 Especifica o tipo de quadro de pilha.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 enum StackFrameTypeEnum {  
@@ -40,29 +40,29 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>Elementos  
  `FrameTypeFPO`  
- Ponteiro de quadro especificado; Informações de FPO disponíveis.  
+ Ponteiro de quadro omitido; Informações de FPO disponíveis.  
   
  `FrameTypeTrap`  
- Quadro de interceptação de kernel.  
+ Quadro de interceptação do kernel.  
   
  `FrameTypeTSS`  
- Quadro de interceptação de kernel.  
+ Quadro de interceptação do kernel.  
   
  `FrameTypeStandard`  
  Quadro de pilha EBP padrão.  
   
  `FrameTypeFrameData`  
- Ponteiro de quadro especificado; Informações de dados de quadro disponíveis.  
+ Ponteiro de quadro omitido; Informações de dados de quadro disponíveis.  
   
  `FrameTypeUnknown`  
  Quadro que não tem nenhuma informação de depuração.  
   
 ## <a name="remarks"></a>Comentários  
- Os valores nesta enumeração são retornados por uma chamada para o [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.  
+ Os valores nessa enumeração são retornados por uma chamada para o método [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

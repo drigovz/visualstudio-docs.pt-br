@@ -12,55 +12,55 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6a2950ead23d2f1c6a5d1b4cb4d348a2937db4d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181195"
 ---
 # <a name="message-search-dialog-box"></a>Caixa de diálogo Pesquisa de Mensagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use essa caixa de diálogo para localizar e selecionar o nó de uma mensagem específica no [exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de mensagens. Em seguida, escolha **localizar mensagem** da **pesquisa** menu.  
+Use essa caixa de diálogo para localizar e selecionar o nó de uma mensagem específica no [modo de exibição de mensagens](../debugger/messages-view.md). Para exibir essa caixa de diálogo, mova o foco para uma janela de exibição de mensagens. Em seguida, escolha **Localizar mensagem** no menu **Pesquisar** .  
   
- As configurações a seguir estão disponíveis:  
+ As seguintes configurações estão disponíveis:  
   
  **Ferramenta Descobridora**  
- A ferramenta de arrastar e soltar usada para selecionar uma janela.  
+ A ferramenta arrastar e soltar usada para selecionar uma janela.  
   
  **Ocultar Spy + +**  
- Remove a janela principal do Spy + + e deixa o **MessageSearch** caixa de diálogo visível na parte superior de seus outros aplicativos.  
+ Remove a janela principal do Spy + + e deixa a caixa de diálogo **MessageSearch** visível sobre seus outros aplicativos.  
   
- **Identificador**  
- A ID exclusiva da mensagem a ser pesquisado.  
+ **Handle**  
+ A ID exclusiva da mensagem a ser pesquisada.  
   
  **Tipo**  
- O tipo de mensagem a ser pesquisado.  
+ O tipo de mensagem a ser pesquisada.  
   
- **Message**  
- A ID da mensagem a ser pesquisado.  
+ **Mensagem**  
+ A ID da mensagem a ser pesquisada.  
   
- **Direção de pesquisa para cima ou para baixo**  
+ **Pesquisar direção para cima ou para baixo**  
  A direção inicial da pesquisa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Procurando por uma mensagem na exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Explica como localizar uma mensagem específica na exibição de mensagens.  
+ [Pesquisando uma mensagem no modo de exibição de mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Explica como localizar uma mensagem específica no modo de exibição de mensagens.  
   
- [Exibição de Mensagens](../debugger/messages-view.md)  
- Exibe o fluxo de mensagem associado a uma janela, processo ou thread.  
+ [Exibição de mensagens](../debugger/messages-view.md)  
+ Exibe o fluxo de mensagens associado a uma janela, processo ou thread.  
   
  [Exibições do Spy++](../debugger/spy-increment-views.md)  
- Explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.  
+ Explica as exibições de árvore do Spy + + do Windows, mensagens, processos e threads.  
   
  [Usando Spy++](../debugger/using-spy-increment.md)  
- Apresenta a ferramenta Spy + + e explica como ele pode ser usado.  
+ Apresenta a ferramenta Spy + + e explica como ela pode ser usada.  
   
- [Caixa de diálogo Opções de Mensagem](../debugger/message-options-dialog-box.md)  
- Usado para selecionar quais mensagens são listadas na exibição de mensagens.  
+ [Caixa de diálogo Opções da Mensagem](../debugger/message-options-dialog-box.md)  
+ Usado para selecionar quais mensagens estão listadas no modo de exibição de mensagens.  
   
  [Caixa de diálogo Propriedades da Mensagem](../debugger/message-properties-dialog-box.md)  
- Usado para exibir as propriedades de uma mensagem selecionada na exibição de mensagens.  
+ Usado para exibir as propriedades de uma mensagem selecionada no modo de exibição de mensagens.  
   
- [Referência a Spy++](../debugger/spy-increment-reference.md)  
- Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
+ [Referência de Spy++](../debugger/spy-increment-reference.md)  
+ Inclui seções que descrevem cada menu e caixa de diálogo do Spy + +.

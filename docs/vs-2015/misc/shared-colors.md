@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548350"
 ---
 # <a name="shared-colors"></a>Cores compartilhadas
@@ -35,7 +35,7 @@ Inserir introdução aqui.
   
 ### <a name="command-structures"></a>Estruturas de comando  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Completos  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Completos  
  Os menus podem ocorrer em vários locais dentro do Visual Studio 2013: a barra de menus principal, inserida em janelas de documentos ou ferramentas, ou clique com o botão direito do mouse em vários locais em todo o IDE. Implementações de menus associados a outros elementos da interface do usuário são discutidas na seção para o respectivo elemento. Você sempre deve usar a implementação de menu padrão fornecida pelo ambiente do Visual Studio. No entanto, em algumas instâncias raras, talvez você não tenha acesso aos menus padrão do Visual Studio. Nessas situações, use os nomes de token a seguir para garantir que sua interface do usuário seja consistente com outros menus do Visual Studio.  
   
  ![Redline de menus](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -88,7 +88,7 @@ Não use...
 |![Título do menu com glifo pressionado](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Título do menu com glifo**|Primeiro plano (glifo)|`Environment.CommandBarMenuMouseDownGlyph`|  
 |![Título do menu com glifo pressionado](../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303-007_MenuTitleWithGlyphPressed")<br /><br /> **Título do menu com glifo**|Borda|`Environment.CommandBarMenuBorder`<br /><br /> Somente os lados esquerdo, superior e direito.|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -121,8 +121,8 @@ Não use...
 |![Menu padrão](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Plano de fundo do canal de ícone|`Environment.CommandBarMenuIconBackground`|  
 |![Menu padrão](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Separador|`Environment.CommandBarMenuSeparator`|  
 |![Menu padrão](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Shadow|`Environment.DropShadowBackground`|  
-|![Menu marcado](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Check**|Marca de seleção|`Environment.CommandBarCheckBox`|  
-|![Menu marcado](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Check**|Plano de fundo de marca de seleção|`Environment.CommandBarSelectedIcon`|  
+|![Menu marcado](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Verificado**|Marca de seleção|`Environment.CommandBarCheckBox`|  
+|![Menu marcado](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Verificado**|Plano de fundo de marca de seleção|`Environment.CommandBarSelectedIcon`|  
 |![Menu selecionado](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Plano de fundo do ícone|`Environment.CommandBarSelected`|  
 |![Menu selecionado](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Borda do ícone|`Environment.CommandBarSelectedBorder`|  
   
@@ -133,12 +133,12 @@ Não use...
 |![Focalização do menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Item de menu**|Segundo plano|`Environment.CommandBarMenuItemMouseOver`|  
 |![Focalização do menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Item de menu**|Primeiro plano (texto)|`Environment.CommandBarMenuItemMouseOver`|  
 |![Focalização do menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Item de menu**|Primeiro plano (glifo do submenu)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![Foco do menu verificado](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Check**|Marca de seleção|`Environment.CommandBarCheckBoxMouseOver`|  
-|![Foco do menu verificado](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Check**|Plano de fundo de marca de seleção|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![Foco do menu verificado](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Verificado**|Marca de seleção|`Environment.CommandBarCheckBoxMouseOver`|  
+|![Foco do menu verificado](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Verificado**|Plano de fundo de marca de seleção|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![Menu focalizado selecionado](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Plano de fundo do ícone|`Environment.CommandBarHoverOverSelected`|  
 |![Menu focalizado selecionado](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Borda do ícone|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -229,7 +229,7 @@ Não use...
 |![Ícone de comando pressionado](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Ícone de comando pressionado**|Primeiro plano (texto)|`Environment.CommandBarTextMouseDown`|  
 |![Ícone de comando pressionado](../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303-027_CommandIconPressed")<br /><br /> **Ícone de comando pressionado**|Borda|`Environment.CommandBarBorder`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -237,7 +237,7 @@ Não use...
 |![Ícone de comando desabilitado](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Ícone de comando desabilitado**|Primeiro plano (texto)|`Environment.CommandBarTextInactive`|  
 |![Ícone de comando desabilitado](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Ícone de comando desabilitado**|Borda|N/D|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Caixa de combinação  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Caixa de combinação  
   
 > [!IMPORTANT]
 > As caixas de combinação são semelhantes a menus suspensos, mas incluem uma região de texto editável. Se o menu suspenso não incluir uma região de texto editável, use os tokens de cor encontrados na [lista](../misc/shared-colors.md#BKMK_CommandDropDown)suspensa.  
@@ -304,7 +304,7 @@ Não use...
 |![Caixa de combinação&#47;soltar&#45;botão pressionado](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Botão suspenso**|Segundo plano|`Environment.ComboBoxButtonMouseDownBackground`|  
 |![Caixa de combinação&#47;soltar&#45;botão pressionado](../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br /><br /> **Botão suspenso**|Primeiro plano (glifo)|`Environment.ComboBoxMouseDownGlyph`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: Color. Category|  
 |---------------|-------------|--------------------------------|  
@@ -315,7 +315,7 @@ Não use...
 |![Caixa de combinação&#47;soltar&#45;botão para baixo desabilitado](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Botão suspenso**|Segundo plano|Nenhum|  
 |![Caixa de combinação&#47;soltar&#45;botão para baixo desabilitado](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Botão suspenso**|Primeiro plano (glifo)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Lista suspensa  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Lista suspensa  
   
 > [!IMPORTANT]
 > Os menus suspensos são semelhantes às caixas de combinação, mas não têm regiões de texto editáveis. Se a lista suspensa incluir uma região de texto editável, use os tokens de cor encontrados na [caixa de combinação](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -370,7 +370,7 @@ Não use...
 |![Botão de soltar&#45;pressionado](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Botão suspenso**|Segundo plano|`Environment.DropDownButtonMouseDownBackground`|  
 |![Botão de soltar&#45;pressionado](../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303-050_DropdownButtonPressed")<br /><br /> **Botão suspenso**|Primeiro plano (glifo)|`Environment.DropDownMouseDownGlyph`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -424,7 +424,7 @@ Não use...
 |![Botão de divisão pressionado](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Botão de divisão (pressionado)**|Borda|`Environment.CommandBarBorder`|  
 |![Botão de divisão pressionado](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303-056_SplitButtonPressed")<br /><br /> **Botão de divisão (pressionado)**|Separador|N/D|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -941,7 +941,7 @@ Não use...
 |![Realce do campo de entrada de pesquisa](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Campo de entrada com texto realçado**|Borda|Nenhum|  
 |![Realce do campo de entrada de pesquisa](../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br /><br /> **Campo de entrada com texto realçado**|Separador|`SearchControl.FocusedDropDownSeparator`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -1056,7 +1056,7 @@ Não use...
 |---------------|-------------|--------------------------------|  
 |![Hiperlink pressionado](../extensibility/ux-guidelines/media/0303-136-hyperlinkpressed.png "0303-136_HyperlinkPressed")|Primeiro plano (texto)|`Environment.PanelHyperlinkPressed`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -1117,7 +1117,7 @@ Não use...
 |![Seta da barra de rolagem pressionada](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Seta de rolagem**|Segundo plano|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Defina para a mesma cor que a barra de rolagem.|  
 |![Seta da barra de rolagem pressionada](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Seta de rolagem**|Primeiro plano (glifo)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Exibição de árvore  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Exibição de árvore  
  Várias janelas de ferramentas, incluindo a Gerenciador de Soluções, Gerenciador de Servidores e Modo de Exibição de Classe, implementam um esquema organizacional hierárquico cujas cores são controladas por nomes de cores na categoria de TreeView. Todos os itens em um modo de exibição de árvore têm cores de texto e em segundo plano. Os itens que têm elementos filho aninhados também têm glifos que indicam se o item está expandido ou recolhido.  
   
  ![Redline de exibição de árvore](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1199,7 +1199,7 @@ Não use...
 |![Botão](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Botão|`CommonControls.Button`|  
 |![Botão](../extensibility/ux-guidelines/media/0303-156-button.png "0303-156_Button")|Borda do botão|`CommonControls.ButtonBorder`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -1245,7 +1245,7 @@ Não use...
 |![Caixa de seleção](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Texto|`CommonControls.CheckBoxText`|  
 |![Caixa de seleção](../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")|Glifo|`CommonControls.CheckBoxGlyph`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -1303,7 +1303,7 @@ Não use...
 |![&#45;caixa de combinação de&#47;suspensa](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Glifo|`CommonControls.ComboBoxGlyph`|  
 |![&#45;caixa de combinação de&#47;suspensa](../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")|Plano de fundo do glifo|`CommonControls.ComboBoxGlyphBackground`|  
   
- **Desabilitado**  
+ **Desabilitada**  
   
 |Componente|Elemento|Nome do token: categoria. cor|  
 |---------------|-------------|--------------------------------|  
@@ -1432,13 +1432,13 @@ Não use...
   
 |Estado|Componente|Elemento|Nome do token: categoria. cor|  
 |-----------|---------------|-------------|--------------------------------|  
-|Padrão (selecionado)|Tab|Segundo plano|`ManifestDesigner.TabActive`|  
-|Padrão (selecionado)|Tab|Borda|Nenhum|  
+|Padrão (selecionado)|Guia|Segundo plano|`ManifestDesigner.TabActive`|  
+|Padrão (selecionado)|Guia|Borda|Nenhum|  
 |Padrão (selecionado)|Painel de descrição|Segundo plano|`ManifestDesigner.DescriptionPane`|  
 |Padrão (selecionado)|Página de conteúdo|Segundo plano|`ManifestDesigner.Background`|  
 |Padrão (selecionado)|Página de conteúdo|Texto auxiliar de diálogo|`ManifestDesigner.WatermarkText`<br /><br /> Esse nome de token não corresponde à sua função.|  
-|Não selecionado|Tab|Segundo plano|`ManifestDesigner.Tab.Inactive`|  
-|Passar o mouse|Tab|Segundo plano|`ManifestDesigner.Tab.Mouseover`|  
+|Não selecionado|Guia|Segundo plano|`ManifestDesigner.Tab.Inactive`|  
+|Passar o mouse|Guia|Segundo plano|`ManifestDesigner.Tab.Mouseover`|  
   
 ### <a name="tagging"></a>Marcação  
  O Visual Studio dá suporte à marcação, que permite que um usuário declare palavras-chave pesquisáveis para fins de acompanhamento. Por exemplo, gerentes de projeto e desenvolvedores podem usar Team Foundation Server (TFS) para marcar itens de trabalho. As tabelas a seguir fornecem nomes de cor para a marca em si e o glifo "ícone de fechamento" que aparece nos Estados de focalizar e selecionados.  

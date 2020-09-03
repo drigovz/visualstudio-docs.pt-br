@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram3::ExecuteOnThread | Microsoft Docs
+title: 'IDebugProgram3:: ExecuteOnThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722651"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-Executa o programa de depurador. O segmento é retornado para dar ao depurador informações sobre qual segmento o usuário está visualizando ao executar o programa.
+Executa o programa depurador. O thread é retornado para fornecer as informações do depurador sobre qual thread o usuário está visualizando ao executar o programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,23 +36,23 @@ int ExecuteOnThread(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pThread`\
-[em] Um objeto [IDebugThread2.](../../../extensibility/debugger/reference/idebugthread2.md)
+no Um objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Existem três maneiras diferentes que um depurador pode retomar a execução depois de parar:
+ Há três maneiras diferentes pelas quais um depurador pode retomar a execução após a interrupção:
 
-- Execute: Cancele qualquer etapa anterior e execute até o próximo ponto de ruptura e assim por diante.
+- Execute: cancele qualquer etapa anterior e execute até o próximo ponto de interrupção e assim por diante.
 
-- Passo: Cancele qualquer passo antigo e execute até que a nova etapa seja concluída.
+- Etapa: cancele qualquer etapa antiga e execute até que a nova etapa seja concluída.
 
-- Continue: Corra novamente e deixe qualquer passo antigo ativo.
+- Continuar: executar novamente e deixar qualquer etapa antiga ativa.
 
-  O segmento `ExecuteOnThread` passado é útil ao decidir qual passo cancelar. Se você não conhece o segmento, a execução de execute cancela todas as etapas. Com o conhecimento do segmento, você só precisa cancelar o passo no segmento ativo.
+  O thread passado para `ExecuteOnThread` é útil ao decidir qual etapa cancelar. Se você não souber o thread, a execução de execute cancela todas as etapas. Com o conhecimento do thread, você só precisa cancelar a etapa no thread ativo.
 
 ## <a name="see-also"></a>Confira também
 - [Executar](../../../extensibility/debugger/reference/idebugprogram2-execute.md)

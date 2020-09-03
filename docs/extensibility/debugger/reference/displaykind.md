@@ -14,16 +14,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7634ae3ee03b7e577f0621ffc263e4d45bfe194
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737255"
 ---
 # <a name="displaykind"></a>DisplayKind
-Enumera os valores válidos que representam os tipos de informações a serem retiradas de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e exibem para o usuário.
+Enumera os valores válidos que representam os tipos de informações a serem executadas de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e são exibidos para o usuário.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DisplayKind
@@ -55,11 +55,11 @@ Nome do campo.
 Tipo de campo.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Ee.h
+Cabeçalho: EE. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

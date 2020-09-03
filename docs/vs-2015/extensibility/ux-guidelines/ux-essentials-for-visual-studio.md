@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181458"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
@@ -20,166 +20,166 @@ ms.locfileid: "68181458"
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
-### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Seja consistente no ambiente do Visual Studio.
+### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. seja consistente no ambiente do Visual Studio.
 
-- Siga padrões de interação existente dentro do shell.
+- Siga os padrões de interação existentes no Shell.
 
-- Recursos para ser consistente com os requisitos de idioma e a habilidade do visual do shell de design.
+- Crie recursos para serem consistentes com os requisitos de habilidade e linguagem visual do Shell.
 
-- Use controles e comandos compartilhados quando existirem.
+- Use comandos e controles compartilhados quando eles existirem.
 
-- Compreenda a hierarquia do Visual Studio e como ele estabelece o contexto e unidades de interface do usuário.
+- Entenda a hierarquia do Visual Studio e como ela estabelece o contexto e orienta a interface do usuário.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Use o serviço de ambiente para fontes e cores.
 
-- Interface do usuário deve respeitar a configuração de fonte do ambiente atual, a menos que ela é exposta para personalização na página de fontes e cores na caixa de diálogo Opções.
+- A interface do usuário deve respeitar a configuração de fonte do ambiente atual, a menos que seja exposta para personalização na página fontes e cores da caixa de diálogo opções.
 
-- Elementos de interface do usuário devem usar o VSColor Service, usando tokens de ambiente compartilhado ou tokens de recurso específico.
+- Os elementos da interface do usuário devem usar o serviço VSColor, usando tokens de ambiente compartilhado ou tokens específicos do recurso.
 
-### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Tornar todas as imagens consistente com o novo estilo de VS.
+### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. tornar todas as imagens consistentes com o novo estilo VS.
 
 - Siga os princípios de design do Visual Studio para ícones, glifos e outros elementos gráficos.
 
 - Não coloque texto em elementos gráficos.
 
-### <a name="4-design-from-a-user-centric-perspective"></a>4. Design de uma perspectiva centrada no usuário.
+### <a name="4-design-from-a-user-centric-perspective"></a>4. Projete a partir de uma perspectiva centrada no usuário.
 
 - Crie o fluxo de tarefas antes dos recursos individuais dentro dele.
 
-- Estar familiarizado com os usuários e tornar esse conhecimento explícito em suas especificações.
+- Familiarize-se com seus usuários e torne esse conhecimento explícito em sua especificação.
 
 - Ao revisar a interface do usuário, avalie a experiência completa, bem como os detalhes.
 
-- Projete a interface do usuário para que ele permaneça funcional e atraente, independentemente do idioma ou localidade.
+- Projete sua interface do usuário para que ela permaneça funcional e atraente, independentemente da localidade ou da linguagem.
 
-## <a name="screen-resolution"></a>Resolução de tela
+## <a name="screen-resolution"></a>Resolução da tela
 
 ### <a name="minimum-resolution"></a>Resolução mínima
- A resolução mínima Dev14 do Visual Studio é 1280 x 1024. Isso significa que ele *possíveis* para usar o Visual Studio nessa resolução, embora não seja uma excelente experiência do usuário. Não há nenhuma garantia de que todos os aspectos poderá ser usados em resoluções menores que 1280 x 1024.
+ A resolução mínima para o Visual Studio Dev14 é 1280x1024. Isso significa que é *possível* usar o Visual Studio nessa resolução, embora talvez não seja uma experiência de usuário ideal. Não há nenhuma garantia de que todos os aspectos serão utilizáveis em resoluções inferiores a 1280x1024.
 
- Tamanho inicial da caixa de diálogo não deve exceder 1000 pixels de altura para se ajustar dentro do quadro do IDE dentro dessa resolução mínima a 96 dpi.
+ O tamanho inicial da caixa de diálogo não deve exceder 1000 pixels de altura para caber no quadro do IDE dentro dessa resolução mínima em 96 dpi.
 
 ### <a name="high-density-displays"></a>Monitores de alta densidade
- Interface do usuário no Visual Studio deve funcionar bem em todos os fatores de dimensionamento de DPI que oferece suporte a Windows fora da caixa: 150%, 200% e % de 250.
+ A interface do usuário no Visual Studio deve funcionar bem em todos os fatores de dimensionamento de DPI que o Windows dá suporte à caixa: 150%, 200% e 250%.
 
 ## <a name="anti-patterns"></a>Antipadrões
- Visual Studio contém muitos exemplos de interface do usuário que sigam nossas diretrizes e práticas recomendadas. Em um esforço para ser consistente, os desenvolvedores geralmente emprestam de padrões de design de interface do usuário de produto semelhantes a que está compilando. Embora essa seja uma boa abordagem que ajuda a nos orientar consistência na interação do usuário e design visual, podemos ocasionalmente enviar recursos com alguns detalhes que não atender às nossas diretrizes devido a restrições de agendamento ou defeito priorização. Nesses casos, queremos que as equipes de cópia em um destes "antipadrões" porque elas se proliferam inválido ou está inconsistente da interface do usuário dentro do ambiente do Visual Studio.
+ O Visual Studio contém muitos exemplos de interface do usuário que seguem nossas diretrizes e práticas recomendadas. Em um esforço para ser consistente, os desenvolvedores costumam emprestar os padrões de design da interface do usuário do produto, semelhante ao que estão criando. Embora essa seja uma boa abordagem que nos ajude a impulsionar a consistência na interação do usuário e no design do Visual, fazemos coisas para enviar recursos com alguns detalhes que não atendem às nossas diretrizes devido a restrições de agendamento ou à priorização de defeito. Nesses casos, não queremos que as equipes copiem um desses "antipadrões" porque elas proliferam interface de usuário inconsistente ou insuficiente no ambiente do Visual Studio.
 
-### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>Campos/configurações necessárias mostradas em estado de erro por padrão
+### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>Campos/configurações obrigatórios mostrados no estado de erro por padrão
 
 #### <a name="feature-team-goals"></a>Metas da equipe de recursos
 
-- Avise os usuários que incluíram um elemento que deve ser configurado.
+- Avise aos usuários que eles adicionaram um elemento que deve ser configurado.
 
 - Chame a atenção do usuário para as áreas que precisam de entrada.
 
-#### <a name="anti-pattern-solution"></a>Antipadrão de solução
- Assim que o usuário iniciou uma ação e antes da tarefa estiver concluída, coloque imediatamente parada crítica ícones ao lado de áreas que precisam de configuração.
+#### <a name="anti-pattern-solution"></a>Solução antipadrão
+ Assim que o usuário tiver iniciado uma ação e antes de concluir a tarefa, coloque imediatamente ícones de parada crítica ao lado das áreas que precisam de configuração.
 
-#### <a name="example-manifest-designer-declarations"></a>Exemplo: Declarações de Designer de manifesto
- Adicionar uma declaração à lista imediatamente coloca-o em um estado de erro, que persiste até que o usuário define as propriedades necessárias.
+#### <a name="example-manifest-designer-declarations"></a>Exemplo: declarações de designer de manifesto
+ A adição de uma declaração à lista a coloca imediatamente em um estado de erro, que persiste até que o usuário defina as propriedades necessárias.
 
- Nesse caso, há uma preocupação adicional porque o ícone usado para o alerta contém um "x", para que o comum remover ícone não pode ser usado ao lado dela. Como resultado, a interface do usuário usa um botão Remover, um controle mais trabalhoso.
+ Nesse caso, há uma preocupação adicional porque o ícone usado para o alerta contém um "x", portanto, o ícone de remoção comum não pode ser usado ao lado dele. Como resultado, a interface do usuário usa um botão remover, um controle mais desajeitado.
 
- ![Declaração de erro do Designer anti de manifesto&#45;padrão de](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti padrão")
+ ![Padrão de&#45;de declaração de erro do designer de manifesto](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-padrão")
 
- **Colocando a interface do usuário em um estado de erro por padrão é um antipadrão do Visual Studio.**
+ **Colocar a interface do usuário em um estado de erro por padrão é um antipadrão do Visual Studio.**
 
 #### <a name="alternatives"></a>Alternativas
  Uma solução muito melhor para esse problema seria:
 
-- Permitir que o usuário adicione uma declaração sem aviso e, em seguida, mover imediatamente para definir propriedades no item.
+- Permita que o usuário adicione uma declaração sem aviso e, em seguida, mova-se imediatamente para definir propriedades no item.
 
-- Adicionar o ícone de aviso (triângulo gold) quando foco é movido do item, como para adicionar outra declaração à lista de ou para tentar alterar guias dentro do designer.
+- Adicione o ícone de aviso (triângulo dourado) quando o foco se mover do item, como para adicionar outra declaração à lista ou tentar alterar as guias no designer.
 
-- Se o usuário tenta alterar guias antes de definir propriedades em todas as declarações, exibida uma caixa de diálogo explicando que o aplicativo não será criado (ou qualquer das implicações) até que os avisos sejam resolvidos. Se o usuário fecha a caixa de diálogo e guias de alterações assim mesmo, em seguida, um ícone (crítico ou aviso, conforme apropriado) é adicionado à guia de declarações.
+- Se o usuário tentar alterar as guias antes de definir as propriedades em qualquer declaração, desative uma caixa de diálogo explicando que o aplicativo não compilará (ou quaisquer as implicações) até que os avisos sejam resolvidos. Se o usuário ignorar a caixa de diálogo e alterar as guias de qualquer forma, um ícone (crítico ou aviso, conforme apropriado) será adicionado à guia declarações.
 
-### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Forçar o usuário ler o texto antes de ignorar a interface do usuário
+### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Forçando o usuário a ler texto antes de ignorar a interface do usuário
 
 #### <a name="feature-team-goals"></a>Metas da equipe de recursos
- Não permitir que o usuário ignorar a interface do usuário sem primeiro ver o texto de explicação.
+ Não permitir que o usuário ignore a interface do usuário sem primeiro ver o texto da explicação.
 
 #### <a name="anti-pattern"></a>Antipadrão
- A equipe inserindo os links de vídeos em vários locais dentro da interface do usuário do VS, decidimos contra o padrão comum de um X feche explicação de botão e a dica de ferramenta conforme especificado pelo UX e implementados em vez disso, uma lista suspensa e o link "Não mostrar novamente".
+ A equipe que insere os links de vídeo em vários locais dentro da interface do usuário do VS decidiu o padrão comum de um botão X Close e uma explicação da dica de ferramenta conforme especificado pela UX e, em vez disso, implementou um link suspenso e "não mostrar novamente".
 
- ![Texto explicativo anti&#45;padrão &#45; incorreto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")
+ ![Padrão de&#45;de texto de explicação &#45; incorreto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")
 
- **Incorreto: forçar o usuário leia textos explicativos antes de ignorar a interface do usuário é um antipadrão dentro do Visual Studio.**
+ **Incorreto: forçar o usuário a ler o texto explicativo antes de ignorar a interface do usuário é um antipadrão no Visual Studio.**
 
-#### <a name="result"></a>Resultado
- Em vez de um botão de fechar simple (um clique), o usuário é forçado a usar dois cliques para simplesmente ignorar a interface do usuário em cada local que pareça que os links de vídeos.
+#### <a name="result"></a>Result
+ Em vez de um botão de fechamento simples (um clique), o usuário é forçado a usar dois cliques para simplesmente ignorar a interface do usuário em cada lugar em que os links de vídeo são exibidos.
 
 #### <a name="alternatives"></a>Alternativas
- O design correto para essa situação seria seguem o padrão comum para o Internet Explorer, o Office e o Visual Studio: ao focalizar, o usuário pode ver a descrição da dica de ferramenta e um clique oculta a interface do usuário.
+ O design correto para essa situação seria seguir o padrão comum para o Internet Explorer, o Office e o Visual Studio: ao focalizar, o usuário pode ver a descrição da dica de ferramenta e um clique oculta a interface do usuário.
 
- ![Texto explicativo anti&#45;padrão &#45; correto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-padrão-corrigir")
+ ![Padrão de&#45;de texto de explicação &#45; correto](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-padrão-correto")
 
- **Correto: conforme projetado, links de vídeo deve exibir uma dica de ferramenta com informações adicionais ao passar o e clicando no "X" deve ignorar a mensagem sem a necessidade de interação adicional.**
+ **Correto: conforme projetado, os links de vídeo devem exibir uma dica de ferramenta com informações adicionais sobre o foco e clicar no "X" para ignorar a mensagem sem necessidade de mais interação.**
 
 ### <a name="using-command-bars-for-settings"></a>Usando barras de comando para configurações
- ![Barra de comandos anti&#45;padrão &#45; A Figura](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-padrão-FigureA")
+ ![Padrão anti&#45;da barra de comandos &#45; figura A](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-padrão-Figuraa")
 
- **Figura a: Antipadrão de barra de comando**
+ **Figura A: anti-padrão de barra de comandos**
 
- **A Figura A** representa esse antipadrão: colocar uma configuração abaixo de um botão de comando que se aplica a mais do que apenas o comando. Nesse esboço, há comandos além de iniciar depuração — como o modo de exibição no navegador, iniciar sem depuração e intervir — que respeita a configuração selecionada.
+ **A figura A** representa esse antipadrão: colocar uma configuração abaixo de um botão de comando que se aplica a mais do que apenas o comando. Neste esboço, há comandos além de iniciar depuração – como exibir no navegador, iniciar sem depuração e entrar, que respeitarão a configuração selecionada.
 
- ![Barra de comandos anti&#45;padrão &#45; Figura B](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-padrão-FigureB")
+ ![Padrão anti&#45;da barra de comandos &#45; figura B](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-padrão-FigureB")
 
- **Figura b: Melhor, mas ainda é um antipadrão de barra comando**
+ **Figura B: melhor, mas ainda um antipadrão de barra de comandos**
 
- Um pouco melhor, mas que ainda indesejável, é colocar as configurações desse tipo em barras de ferramentas, conforme mostrado na **Figura B**. Enquanto os botões de divisão ocupar menos espaço e, portanto, uma melhoria em listas suspensas, ambos os designs ainda estiver usando uma barra de ferramentas para promover a algo que não é realmente um comando.
+ Um pouco melhor, mas ainda indesejável, é colocar as configurações desse tipo nas barras de ferramentas, como mostra a **Figura B**. Embora os botões de divisão demorem menos espaço e sejam, portanto, uma melhoria sobre os menus suspensos, os dois designs ainda estão usando uma barra de ferramentas para promover algo que não é realmente um comando.
 
- ![Barra de comandos anti&#45;padrão &#45; Figura C](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-padrão-FigureC")
+ ![Padrão anti&#45;da barra de comandos &#45; figura C](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-padrão-FigureC")
 
- **Figura c: Uso correto de padrão de barra de comando do Visual Studio**
+ **Figura C: uso correto do padrão de barra de comandos do Visual Studio**
 
- Na **Figura C**, a configuração está vinculada a uma série de comandos. Não há nenhuma configuração global que está sendo definida e estamos mudando apenas entre quatro comandos. Isso é a única situação em que os comandos na barra de ferramentas são aceitáveis.
+ Na **Figura C**, a configuração está vinculada a uma série de comandos. Não há nenhuma configuração global sendo definida e estamos apenas alternando entre quatro comandos. Essa é a única situação na qual os comandos na barra de ferramentas são aceitáveis.
 
-### <a name="control-anti-patterns"></a>Antipadrões de controle
- Alguns antipadrões são uso simplesmente incorreto ou apresentação de um controle ou um grupo de controles.
+### <a name="control-anti-patterns"></a>Controlar antipadrões
+ Alguns antipadrões são simplesmente uso incorreto ou apresentação de um controle ou grupo de controles.
 
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Sublinhado usado como um rótulo de grupo, não um hiperlink
- Texto sublinhado deve ser usado apenas para os hiperlinks.
+ O texto sublinhado só deve ser usado para hiperlinks.
 
- **Ruim:**
+ **Satisfatório**
 
- ![Sublinhado&#45;padrão de rótulos de grupo](../../extensibility/ux-guidelines/media/0102-g-grouplabelincorrect.png "g_GroupLabelIncorrect 0102")
+ ![Padrão de sublinhado de&#45;em rótulos de grupo](../../extensibility/ux-guidelines/media/0102-g-grouplabelincorrect.png "0102-g_GroupLabelIncorrect")
 
- **Texto sublinhado que não é um hiperlink é um antipadrão do Visual Studio.**
+ **O texto sublinhado que não é um hiperlink é um antipadrão do Visual Studio.**
 
- **Boa:**
+ **Recomendá**
 
- ![Sublinhado&#45;padrão de rótulos de grupo &#40;correto&#41;](../../extensibility/ux-guidelines/media/0102-h-grouplabelcorrect.png "h_GroupLabelCorrect 0102")
+ ![&#45;padrão de sublinhado em rótulos de grupo &#40;correto&#41;](../../extensibility/ux-guidelines/media/0102-h-grouplabelcorrect.png "0102-h_GroupLabelCorrect")
 
- **Estilizada corretamente, não-hyperlink texto aparece não adornado da fonte de ambiente.**
+ **Com estilo correto, o texto sem hiperlink aparece como não adornado na fonte do ambiente.**
 
-#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Clicar em uma caixa de seleção de resulta em uma caixa de diálogo pop-up
- Clicando na caixa de seleção "Habilitar a área de trabalho remota para todas as funções" no Assistente "Publicar aplicativo do Windows Azure" imediatamente abre uma caixa de diálogo pop-up, um antipadrão do Visual Studio. Além disso, o campo da caixa de seleção não preenche com uma caixa de seleção após ser selecionado, antipadrão de outra interação.
+#### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Clicar em uma caixa de seleção resulta em um diálogo pop-up
+ Clicar na caixa de seleção "Habilitar Área de Trabalho Remota para todas as funções" no assistente "publicar o Windows Aplicativo Azure" abre imediatamente uma caixa de diálogo pop-up, um antipadrão do Visual Studio. Além disso, o campo caixa de seleção não é preenchido com uma caixa de seleção depois de ser selecionado, outro antipadrão de interação.
 
- ![Pop de caixa de seleção&#45;antise&#45;padrão](../../extensibility/ux-guidelines/media/0102-i-checkboxpopup.png "i_CheckboxPopup 0102")
+ ![Padrão de&#45;de caixa de seleção pop&#45;up](../../extensibility/ux-guidelines/media/0102-i-checkboxpopup.png "0102-i_CheckboxPopup")
 
- **Trazendo uma caixa de diálogo depois de clicar em uma caixa de seleção é um antipadrão do Visual Studio.**
+ **A ativação de uma caixa de diálogo após o clique de um antipadrão do Visual Studio.**
 
-### <a name="hyperlink-anti-patterns"></a>Antipadrões de hiperlink
+### <a name="hyperlink-anti-patterns"></a>Anti-padrões de hiperlink
  O exemplo a seguir contém dois antipadrões.
 
-1. Em primeiro plano ativar vermelho em foco significa compartilhado cor correta do serviço da fonte não está sendo usado.
+1. O primeiro plano que ativa o vermelho em foco significa que a cor compartilhada correta do serviço de fonte não está sendo usada.
 
-2. Não é o texto apropriado para um link para um tópico conceitual "Saiba mais". Objetivo do usuário não é saber mais, é compreender as ramificações de sua preferência.
+2. "Saiba mais" não é o texto apropriado para um link para um tópico conceitual. A meta do usuário não é saber mais, é entender as ramificações de sua escolha.
 
-   ![Hiperlink anti&#45;padrões](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "j_HyperlinkIncorrect 0102")
+   ![Padrões de anti&#45;de hiperlink](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")
 
-   **Ignorando o serviço de cor e uso de "Saiba mais" para os hiperlinks são antipadrões do Visual Studio.**
+   **Ignorar o serviço de cores e usar "Saiba mais" para hiperlinks são antipadrões do Visual Studio.**
 
-   **Solução melhor:** Digite a pergunta que o usuário deve estar se perguntando, clicando no link.
+   **Melhor solução:** Ponha a pergunta que o usuário deveria fazer clicando no link.
 
 - Como funcionam os serviços do Windows Azure?
 
-- Quando é necessário um projeto de serviços móveis do Windows Azure?
+- Quando preciso de um projeto de serviços móveis do Windows Azure?
 
-#### <a name="using-click-here-for-links"></a>Usando "Clique aqui" para links
- Hiperlinks devem ser um nome bastante auto-explicativo. É um antipadrão usar "Clique aqui" ou qualquer variação semelhante.
+#### <a name="using-click-here-for-links"></a>Usando "clique aqui" para obter links
+ Os hiperlinks devem ser autodescritivos. É um antipadrão usar "clique aqui" ou qualquer variação semelhante.
 
- **Ruim:** "Clique aqui para obter instruções sobre como criar um novo projeto."
+ **Inadequado:** "Clique aqui para obter instruções sobre como criar um novo projeto".
 
- **Boa:** "Como criar um novo projeto?"
+ **Bom:** "Como fazer criar um novo projeto?"

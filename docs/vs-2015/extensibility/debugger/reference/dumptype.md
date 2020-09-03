@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e74785f3843f0755cebb5a1f0cd93cf158806d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180953"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica a quantidade de estado de um programa (como threads em execução, quadros de pilha e o endereço da instrução atual) para despejo.  
+Especifica a quantidade de estado do programa (como threads em execução, quadros de pilha e endereço de instrução atual) a ser despejada.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_DUMPTYPE {   
@@ -43,21 +43,21 @@ public enum enum_DUMPTYPE { 
   
 ## <a name="members"></a>Membros  
  DUMP_MINIDUMP  
- Especifica um despejo de pequeno e compacto.  
+ Especifica um pequeno despejo compacto.  
   
  DUMP_FULLDUMP  
- Especifica um despejo completo, grande.  
+ Especifica um despejo grande e completo.  
   
 ## <a name="remarks"></a>Comentários  
- Passado como um argumento para o [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.  
+ Passado como um argumento para o método [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

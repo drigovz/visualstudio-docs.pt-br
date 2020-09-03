@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 718b84720c3dbfc03552b6b64a95645e72951057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190656"
 ---
-# <a name="idiasourcefilegetfilename"></a>IDiaSourceFile::get_fileName
+# <a name="idiasourcefileget_filename"></a>IDiaSourceFile::get_fileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o nome do arquivo de origem.  
@@ -35,10 +35,10 @@ HRESULT get_fileName ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o nome do arquivo de origem.  
+ fora Retorna o nome do arquivo de origem.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

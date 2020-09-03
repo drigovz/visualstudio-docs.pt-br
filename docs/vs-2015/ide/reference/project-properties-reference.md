@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b359d49ed4d670581406da3aad4cf05393f6b446
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662097"
 ---
 # <a name="project-properties-reference"></a>Referência de propriedades de projeto
@@ -26,7 +26,7 @@ Saiba mais sobre como configurar e personalizar as propriedades do projeto.
 
 ## <a name="project-properties-pages"></a>Páginas de propriedades do projeto
 
-|Título|DESCRIÇÃO|
+|Título|Descrição|
 |-----------|-----------------|
 |[Página de Aplicativo, Designer de Projeto (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)|Use essa página para especificar as configurações de aplicativo e as propriedades de um projeto [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)].|
 |[Página Aplicativo, Designer de Projeto (C#)](../../ide/reference/application-page-project-designer-csharp.md)|Use essa página para especificar as configurações de aplicativo e as propriedades de um projeto [!INCLUDE[csprcs](../../includes/csprcs-md.md)].|
@@ -44,5 +44,5 @@ Saiba mais sobre como configurar e personalizar as propriedades do projeto.
 |||
 |||
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Introdução às](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) [soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md) do Project Designer

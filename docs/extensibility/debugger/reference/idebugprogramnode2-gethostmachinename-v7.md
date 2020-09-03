@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2:GetHostMachineName_V7 | Microsoft Docs
+title: 'IDebugProgramNode2:: GetHostMachineName_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a8c328c83ebe52f842b1990debe07aed3fd764c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722088"
 ---
 # <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
@@ -41,19 +41,19 @@ int GetHostMachineName_V7 (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 `pbstrHostMachineName`\
-[fora] Retorna o nome da máquina em que o programa está sendo executado.
+fora Retorna o nome do computador no qual o programa está em execução.
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Valor Retornado
 
-Uma implementação `E_NOTIMPL`deve sempre retornar .
+Uma implementação sempre deve retornar `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> A partir do Visual Studio 2005, este método `E_NOTIMPL`não é mais utilizado e deve sempre retornar .
+> A partir do Visual Studio 2005, esse método não é mais usado e sempre deve retornar `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Confira também
 
