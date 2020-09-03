@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586023"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Walkthrough: criar um conjunto de um DataSet com o Designer de Conjunto de Dados
 
 Neste tutorial, você cria um conjunto de um DataSet usando o **Designer de conjunto de dados**. O artigo orienta você pelo processo de criação de um novo projeto e da adição de um novo item de **conjunto** de um. Você aprenderá a criar tabelas com base em tabelas em um banco de dados sem usar um assistente.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -46,7 +46,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
-2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
@@ -56,9 +56,9 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Adicionar um novo conjunto de aplicativos ao aplicativo
 
-1. No menu **Projeto**, selecione **Adicionar Novo Item**.
+1. No menu **Projeto**, selecione **Adicionar novo item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é exibida.
+     A caixa de diálogo **Adicionar Novo Item** aparecerá.
 
 2. No painel esquerdo, selecione **dados**e, em seguida, selecione **DataSet** no painel central.
 
@@ -106,11 +106,11 @@ Esta seção explica como adicionar tabelas ao conjunto de os.
 
 - Adicione mais consultas aos TableAdapters.
 
-- Adicione a lógica de validação para os eventos <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> das tabelas de dados no DataSet. Para obter mais informações, consulte [Validate data in DataSets](../data-tools/validate-data-in-datasets.md).
+- Adicione a lógica de validação para os <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> eventos ou das tabelas de dados no DataSet. Para obter mais informações, consulte [Validate data in DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
-- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validar dados](../data-tools/validate-data-in-datasets.md)
+- [Validar os dados](../data-tools/validate-data-in-datasets.md)

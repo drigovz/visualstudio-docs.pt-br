@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288956"
 ---
 # <a name="combinepath-task"></a>Tarefa CombinePath
@@ -67,7 +67,7 @@ A única propriedade que `CombinePath` permite ser uma lista é `Paths` , caso e
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

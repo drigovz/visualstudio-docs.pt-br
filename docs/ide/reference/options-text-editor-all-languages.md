@@ -43,13 +43,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566872"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo \> opções: Editor de texto todos os idiomas
+# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo opções: editor de texto \> todos os idiomas
 
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.
 
@@ -78,7 +78,7 @@ Quando selecionada, a sintaxe completa para a declaração ou procedimento atual
 
 Quando esta opção está selecionada e a caixa de seleção **Quebra automática de linha** está desmarcada, você pode clicar em qualquer lugar além do final de uma linha no Editor de Códigos e digitar. Esse recurso pode ser usado para posicionar comentários em um ponto consistente ao lado do seu código.
 
-**Embrulho de palavras**
+**Quebra automática de palavra**
 
 Quando selecionada, qualquer parte de uma linha que se estenda horizontalmente além da área visível do editor é exibida automaticamente na próxima linha. Selecionar essa opção habilita a opção **Mostrar glifos visuais para quebra automática de linha**.
 

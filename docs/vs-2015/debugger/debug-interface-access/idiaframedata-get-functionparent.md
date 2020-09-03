@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218a1df4f700ad33aa0af0aa453de84cbdae1752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203644"
 ---
-# <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
+# <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma interface de dados do quadro para a função de circunscrição.  
+Recupera uma interface de dados de quadro para a função de circunscrição.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_functionParent ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna um [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto para a função de circunscrição.  
+ fora Retorna um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) para a função de circunscrição.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

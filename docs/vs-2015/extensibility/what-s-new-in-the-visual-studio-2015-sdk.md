@@ -9,13 +9,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917325"
 ---
-# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Quais&#39;s novidades no SDK do Visual Studio 2015
+# <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>O que&#39;s New no SDK do Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visual Studio 2015, o Visual Studio 2015 atualizado e o Visual Studio 2017.
@@ -40,7 +40,7 @@ A partir do Visual Studio 2017, a verificação de modelos de projeto e item per
  A partir do SDK do Visual Studio 2015, você tem opções diferentes para criar extensões, dependendo da linguagem de programação que estiver usando.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# e Visual Basic
- Para C# o e Visual Basic, há uma gama completa de modelos de item de projeto que permitem que você crie VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, adornos de editor e extensões de margem do editor. Você pode adicionar qualquer um deles ao projeto VSIX padrão. Para obter mais informações, consulte .
+ Para o C# e o Visual Basic, há uma gama completa de modelos de item de projeto que permitem criar VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, adornos de editor e extensões de margem do editor. Você pode adicionar qualquer um deles ao projeto VSIX padrão. Para obter mais informações, consulte:
 
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -50,10 +50,10 @@ A partir do Visual Studio 2017, a verificação de modelos de projeto e item per
 
 - [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     O assistente de VSPackage não cria mais extensões C# no ou Visual Basic.
+     O assistente de VSPackage não cria mais extensões em C# ou Visual Basic.
 
 ### <a name="c"></a>C++
- Para C++o, o assistente de VSPackage dá suporte a comandos de menu, janelas de ferramentas e editores personalizados. Procure-o na caixa de diálogo **novo projeto** no  **C++ Visual/extensibilidade**.
+ Para C++, o assistente de VSPackage dá suporte a comandos de menu, janelas de ferramentas e editores personalizados. Procure-o na caixa de diálogo **novo projeto** em **Visual C++/extensibilidade**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assemblies de referência do SDK do VS via NuGet
  Para maior portabilidade e compartilhamento de projetos de extensibilidade, você pode usar as versões do NuGet dos assemblies de referência do SDK do VS.  Eles estão disponíveis no [NuGet.org](https://www.nuget.org/) publicado pelo [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) e podem ser facilmente adicionados ao seu projeto ou solução por meio da caixa de diálogo **referências/gerenciar pacotes NuGet** do Visual Studio. Você pode adicionar referências individuais a assemblies de extensibilidade específicos ou adicionar todos os assemblies de referências do SDK do VS ao mesmo tempo usando o [pacote meta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)do SDK do vs. Para saber mais sobre o NuGet, consulte [visão geral do NuGet](/nuget/) e [gerenciar pacotes NuGet usando a caixa de diálogo](/nuget/consume-packages/install-use-packages-visual-studio).
@@ -63,7 +63,7 @@ A partir do Visual Studio 2017, a verificação de modelos de projeto e item per
  Os modelos de item do SDK do VS usam o NuGet para suas referências e ferramentas de compilação para que você obtenha os benefícios do NuGet por padrão.
 
 > [!NOTE]
-> Você pode continuar a usar os assemblies de referência instalados pelo SDK do VS com seus projetos (localizados em \<local de instalação do Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e projetos de extensibilidade existentes não precisam ser atualizados para usar pacotes NuGet.  A caixa de diálogo referências do projeto **/Adicionar referência** continua a usar os assemblies de referência instalados pelo SDK do vs.
+> Você pode continuar a usar os assemblies de referência instalados pelo SDK do VS com seus projetos (localizados em \<Visual Studio Install Location> \ VSSDK\VisualStudioIntegration\Common\Assemblies) e projetos de extensibilidade existentes não precisam ser atualizados para usar pacotes NuGet.  A caixa de diálogo referências do projeto **/Adicionar referência** continua a usar os assemblies de referência instalados pelo SDK do vs.
 >
 > Se você quiser modificar seus projetos existentes para usar o NuGet, consulte [como migrar VSPackages para o Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tem uma seção sobre a atualização de projetos de extensibilidade para pacotes NuGet.
 

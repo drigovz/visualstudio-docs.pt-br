@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619308"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurando avisos no Visual Basic
@@ -90,7 +90,7 @@ O compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] inclui um conjunto de 
  ID: 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Aviso de variável local não utilizada
- Gerado quando uma variável local é declarada, mas nunca referenciada. O padrão é ativado.
+ Gerado quando uma variável local é declarada, mas nunca referenciada. O padrão é habilitado.
 
  ID: 42024
 
@@ -119,5 +119,5 @@ O compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] inclui um conjunto de 
 
  ID: 42029, 42031
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Assistente de exceção](../debugger/exception-assistant-dialog-box.md) [tipos de erro](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f) [try... Capturar... Finally Statement](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1) [Compile Page, Project Designer (Visual Basic) avisos do](../ide/reference/compile-page-project-designer-visual-basic.md) [compilador que estão desativados por padrão](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

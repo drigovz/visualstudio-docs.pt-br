@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288475"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como adicionar uma regra de limite usando o Editor de Teste de Carga
@@ -41,7 +41,7 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
     > [!NOTE]
     > Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para indicar que ultrapassar um limite é um problema ou como **Falso** para indicar que ficar abaixo do limite é um problema.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

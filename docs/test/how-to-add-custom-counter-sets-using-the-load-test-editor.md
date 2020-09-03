@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e2b78cb68f1e7a7e1f47c6cc3e771353d7e46ca9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288423"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Como adicionar conjuntos de contadores personalizados usando o Editor de Teste de Carga
@@ -46,7 +46,7 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
     > [!NOTE]
     > Também é possível adicionar um conjunto de contadores personalizados clicando com o botão direito do mouse em um conjunto de contadores existente, escolhendo copiar e colando-o no nó de conjuntos de contadores. Os contadores adicionais que são copiados, mas não são necessários, podem ser excluídos. Você pode alterar o nome do novo conjunto de contadores usando a janela **Propriedades**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

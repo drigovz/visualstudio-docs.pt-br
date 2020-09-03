@@ -8,10 +8,10 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 99373d7da8c7f83c8703b237ff83c63f9d1b6a53
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939096"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
@@ -36,7 +36,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 2. Selecione **Arquivo > Nova Solução**.
 
-3. Na categoria **Nuvem > Geral**, selecione o modelo do **Azure Functions**. Você usará o C# para criar uma biblioteca de classes .NET que hospeda o Azure Functions. Clique em **Próximo**.
+3. Na categoria **Nuvem > Geral**, selecione o modelo do **Azure Functions**. Você usará o C# para criar uma biblioteca de classes .NET que hospeda o Azure Functions. Clique em **Avançar**.
 
     ![Seleção de modelo do Azure Functions](media/azure-functions-lab-image1.png)
 

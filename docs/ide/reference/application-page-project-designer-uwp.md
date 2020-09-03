@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77173083"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
@@ -24,21 +24,21 @@ Use a página de projetos do **Aplicativo** para especificar informações de as
 
 ![Página de propriedades do aplicativo](media/application-page-uwp.png)
 
-Para acessar a página **Aplicativo**, escolha um nó do projeto **Gerenciador de Soluções**. Em seguida, escolha**Propriedades** **do projeto** > na barra de menu. As páginas de propriedades são abertas na guia **Aplicativo**.
+Para acessar a página **Aplicativo**, escolha um nó do projeto **Gerenciador de Soluções**. Em seguida, escolha Propriedades do **projeto**  >  **Properties** na barra de menus. As páginas de propriedades são abertas na guia **Aplicativo**.
 
 ## <a name="general-section"></a>Seção geral
 
-**Nome da**&mdash;montagem Especifica o nome do arquivo de saída que manterá o manifesto de montagem.
+**Nome** &mdash; do assembly Especifica o nome do arquivo de saída que irá conter o manifesto do assembly.
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**Namespace padrão**&mdash;Especifica o namespace base para arquivos adicionados ao projeto. Para saber mais sobre namespaces, confira [Namespaces (guia programação em C#)](/dotnet/csharp/programming-guide/namespaces/), [Namespaces (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) ou [Namespaces (C++)](/cpp/cpp/namespaces-cpp).
+**Namespace padrão** &mdash; Especifica o namespace de base para arquivos adicionados ao projeto. Para saber mais sobre namespaces, confira [Namespaces (guia programação em C#)](/dotnet/csharp/programming-guide/namespaces/), [Namespaces (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) ou [Namespaces (C++)](/cpp/cpp/namespaces-cpp).
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informações do**&mdash;conjunto A escolha deste botão exibe a [caixa de diálogo 'Informações de montagem '''](../../ide/reference/assembly-information-dialog-box.md)
+**Informações** &mdash; do assembly A escolha desse botão exibe a [caixa de diálogo informações do assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifesto do**&mdash;pacote Escolher este botão abre o desenhista do manifesto. O designer de manifesto também pode ser acessado escolhendo o arquivo _Package.appxmanifest_ no **Gerenciador de Soluções**. Para saber mais, confira [Configurar um pacote com o designer de manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
+**Manifesto** &mdash; do pacote A escolha desse botão abre o designer de manifesto. O designer de manifesto também pode ser acessado escolhendo o arquivo _Package.appxmanifest_ no **Gerenciador de Soluções**. Para saber mais, confira [Configurar um pacote com o designer de manifesto](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Seção de direcionamento
 
@@ -49,4 +49,4 @@ Para obter informações sobre o direcionamento de plataforma no Visual Studio, 
 ## <a name="see-also"></a>Confira também
 
 - [Criar seu primeiro aplicativo UWP](/windows/uwp/get-started/your-first-app)
-- [Escolher uma versão de UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)
+- [Escolher uma versão do UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version)

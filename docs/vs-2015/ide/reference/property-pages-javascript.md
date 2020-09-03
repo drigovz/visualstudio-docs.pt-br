@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9fa22a4ed52c3e0a1afdda0105716c0de9b3316
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851822"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedade, JavaScript
@@ -29,7 +29,7 @@ ms.locfileid: "75851822"
 
 As **Páginas de Propriedade** fornecem acesso às configurações do projeto. Você pode usar as páginas que aparecem nas **Páginas de Propriedade** para alterar as propriedades do projeto.
 
- Para acessar as propriedades do projeto, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **Projeto**, clique em **Propriedades**.
+ Para acessar as propriedades do projeto, selecione um nó do projeto no **Gerenciador de Soluções**. No menu **Projeto** , clique em **Propriedades**.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -42,7 +42,7 @@ As **Páginas de Propriedade** fornecem acesso às configurações do projeto. V
 
  **Plataforma** do Especifica as configurações de plataforma a serem exibidas ou modificadas. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
-## <a name="general-page"></a>Página geral
+## <a name="general-page"></a>Página Geral
  Use as seguintes opções para configurar propriedades gerais do projeto.
 
 > [!NOTE]

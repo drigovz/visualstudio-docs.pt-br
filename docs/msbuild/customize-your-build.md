@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288930"
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
@@ -287,7 +287,7 @@ msbuild /p:ForceImportBeforeCppTargets="C:\build\config\Custom.Before.Microsoft.
 
 Para uma configuração global (para afetar, digamos, todas as compilações do C++ para uma plataforma em um servidor de compilação), há dois métodos. Primeiro, você pode definir essas propriedades usando uma variável de ambiente do sistema que é sempre definida. Isso funciona porque o MSBuild sempre lê o ambiente e cria (ou substitui) Propriedades para todas as variáveis de ambiente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 

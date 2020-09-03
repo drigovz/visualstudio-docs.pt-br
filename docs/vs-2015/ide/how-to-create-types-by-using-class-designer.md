@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f87e3a3adda270f6b78b9134c7535bda6c73d952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533140"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando Designer de Classe
@@ -36,7 +36,7 @@ Para o design de novos tipos para projetos do Visual C# .NET and Visual Basic .N
 
 - [Aplicar um atributo personalizado a um membro de tipo](#CustAttributeMember)
 
-## <a name="create-a-new-type"></a><a name="CreateType"></a>Criar um novo tipo
+## <a name="create-a-new-type"></a><a name="CreateType"></a> Criar um novo tipo
 
 1. Na Caixa de Ferramentas, em Designer de Classe, arraste um dos itens abaixo para um diagrama de classes:
 
@@ -84,7 +84,7 @@ Para o design de novos tipos para projetos do Visual C# .NET and Visual Basic .N
 
      Quando terminar, os atributos personalizados são aplicados ao tipo.
 
-## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a>Aplicar um atributo personalizado a um membro de tipo
+## <a name="apply-a-custom-attribute-to-a-type-member"></a><a name="CustAttributeMember"></a> Aplicar um atributo personalizado a um membro de tipo
 
 1. Clique no nome do membro na forma de seu tipo em um diagrama de classes ou em sua linha na janela Detalhes da Classe.
 

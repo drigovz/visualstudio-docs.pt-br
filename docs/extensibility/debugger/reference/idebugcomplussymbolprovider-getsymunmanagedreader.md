@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b17479868b3f394c4e55aa9d04d92fd87e59aa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733740"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
-Recupera o leitor de símbolos para ser usado por código não gerenciado.
+Recupera o leitor de símbolos a ser usado pelo código não gerenciado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ int GetSymUnmanagedReader(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ulAppDomainID`\
-[em] Identificador do domínio do aplicativo.
+no Identificador do domínio do aplicativo.
 
 `guidModule`\
-[em] Identificador único do módulo.
+no Identificador exclusivo do módulo.
 
 `ppSymUnmanagedReader`\
-[fora] Retorna o objeto que representa o leitor de símbolos.
+fora Retorna o objeto que representa o leitor de símbolo.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(

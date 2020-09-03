@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288878"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar uma regra de extração personalizada para um teste de desempenho Web
@@ -206,7 +206,7 @@ End Namespace
 
 O método <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contém a funcionalidade principal de uma regra de extração. O método <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> no exemplo anterior usa um <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> que fornece a resposta gerada pela solicitação que essa regra de extração cobre. A resposta contém um <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> que contém todos os marcadores na resposta. Os marcadores de entrada são filtrados no <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Cada marcação de entrada é examinada quanto a um atributo chamado `name`, cujo valor é igual àquele fornecido pelo usuário para a propriedade `Name`. Se uma marcação com esse atributo correspondente for encontrada, será feita uma tentativa de extrair um valor contido no atributo `value`, se um atributo de valor existir. Se existir, o nome e o valor do marcador serão extraídos e adicionados ao contexto de teste de desempenho na Web. A regra de extração é aprovada.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

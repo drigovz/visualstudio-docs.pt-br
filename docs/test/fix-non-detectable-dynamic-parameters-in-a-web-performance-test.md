@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288748"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
@@ -126,7 +126,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 16. Tente ambos os links. Todos eles devem exibir a mensagem “Sucesso. Parâmetro querystring dinâmico encontrado."
 
-     ![Executar o aplicativo Web](../test/media/web_test_dynamicparameter_runapp.png)
+     ![Execute o aplicativo Web](../test/media/web_test_dynamicparameter_runapp.png)
 
      ![Êxito&#33;](../test/media/web_test_dynamicparameter_runapp2.png)
 

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476913"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
@@ -39,7 +39,7 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
  A tabela a seguir descreve os valores de registro que controlam os rótulos de legenda.
 
-|Item do registro|DESCRIÇÃO|
+|Item do registro|Descrição|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|A expressão regular usada para corresponder seus padrões.|
 |**SmartCaptionReplacement**|O formato para exibir todos os grupos correspondentes na **SmartCaptionExpression**.|
@@ -49,12 +49,12 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
 |Item do registro|Valor padrão|Explicação|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Corresponde a um caractere minúsculo seguido por um caractere maiúsculo ou um sublinhado.|
+|**SmartCaptionExpression**|( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +|Corresponde a um caractere minúsculo seguido por um caractere maiúsculo ou um sublinhado.|
 |**SmartCaptionReplacement**|$1 $2|O $1 representa os caracteres correspondentes nos primeiros parênteses da expressão, e o $2 representa os caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e a segunda correspondência.|
-|**SmartCaptionSuffix**|:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo a tornará `Company Name:`|
+|**SmartCaptionSuffix**|:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name` , o sufixo a tornará `Company Name:`|
 
 > [!CAUTION]
-> Você deve ter muito cuidado ao fazer qualquer coisa no editor do registro. Faça backup do registro antes de editá-lo. Se você usar o editor do registro incorretamente, poderá causar sérios problemas que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que os problemas que você causa usando o editor do registro incorretamente possam ser resolvidos. Use o Editor do Registro por sua conta e risco.
+> Você deve ter muito cuidado ao fazer qualquer coisa no editor do registro. Faça backup do registro antes de editá-lo. Se você usar o editor do registro incorretamente, poderá causar sérios problemas que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que os problemas que você causa usando o editor do registro incorretamente possam ser resolvidos. Use o Editor de Registro por sua conta e risco.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de legenda inteligente da janela fontes de dados
 
@@ -70,13 +70,13 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
 6. Expanda o nó **VisualStudio** .
 
-7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers`.
+7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers` .
 
-8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression` .
 
-9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
+9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement` .
 
-10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
+10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix` .
 
 11. Clique com o botão direito do mouse no item **SmartCaptionExpression** e selecione **Modificar**.
 
@@ -106,13 +106,13 @@ Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.co
 
 6. Expanda o nó **VisualStudio** .
 
-7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers`.
+7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers` .
 
-8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression` .
 
-9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
+9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement` .
 
-10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
+10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix` .
 
 11. Clique com o botão direito do mouse no item **SmartCaptionExpression** e selecione **Modificar**.
 

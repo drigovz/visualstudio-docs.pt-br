@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289151"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
@@ -31,7 +31,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -70,7 +70,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
@@ -109,9 +109,9 @@ O assembly que contém a tarefa personalizada é carregado quando o `Task` é us
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Como: configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md)   
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

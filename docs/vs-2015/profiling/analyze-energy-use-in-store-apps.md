@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82f5e6401ba65a0dfaffc268890ece0166432c08
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532945"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analisar o uso de energia em aplicativos da Store
@@ -120,7 +120,7 @@ if (performance && performance.mark) {
   
  ![Página de relatório do Energy Profiler](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
-|Imagem|Descrição|  
+|Image|Descrição|  
 |-|-|  
 |![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|O arquivo de relatório é chamado Report*AAAAMMDD-HHMM*.diagsession. Você poderá alterar o nome se decidir salvar o relatório.|  
 |![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
@@ -144,7 +144,7 @@ if (performance && performance.mark) {
   
  Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar uma tela de fundo escuro é uma maneira de reduzir custos.  
   
-## <a name="other-resources"></a><a name="BKMK_Other_resources"></a>Outros recursos  
+## <a name="other-resources"></a><a name="BKMK_Other_resources"></a> Outros recursos  
   
 - As seções **Estado da conexão e gerenciamento de custo** para [C#/VB/C++ e XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e [JavaScript e HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) no Centro de Desenvolvimento do Windows descrevem as APIs do Windows que fornecem informações sobre a conectividade de rede que seu aplicativo pode usar para minimizar os custos de tráfego de rede.  
   

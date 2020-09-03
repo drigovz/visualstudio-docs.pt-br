@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1648a31f623f4a285f9f827a7e9163a85182b01a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287565"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Como selecionar um repositório de resultados do teste de carga
@@ -53,7 +53,7 @@ Os resultados do teste de seus agentes ou do seu computador local podem ser salv
 
 8. Escolha **Fechar** na caixa de diálogo **Gerenciar o controlador de teste**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

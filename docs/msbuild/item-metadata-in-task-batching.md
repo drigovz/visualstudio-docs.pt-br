@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288982"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de item no envio de tarefas em lote
@@ -222,7 +222,7 @@ A [tarefa Message](../msbuild/message-task.md) exibe as seguintes informações:
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Metadados de item conhecido](../msbuild/msbuild-well-known-item-metadata.md)
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

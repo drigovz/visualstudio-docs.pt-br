@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851973"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
@@ -26,7 +26,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
  Sempre que você cria um novo recurso de uma propriedade existente, [Estilo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx), `ControlTemplate` ou caixa de diálogo **Criar Recurso** permite definir o recurso no nível do aplicativo, no nível do documento ou no nível do elemento. Esses níveis determinam onde você pode usar o recurso. Por exemplo, se você definir o recurso no nível de elemento, o recurso só poderá ser aplicado ao elemento no qual ele foi criado. Você também pode optar por armazenar o recurso em um dicionário de recursos, que é um arquivo separado que você pode usar novamente em outro projeto.
 
-### <a name="to-create-a-new-resource"></a>Criar um novo recurso
+### <a name="to-create-a-new-resource"></a>Para criar um novo recurso
 
 1. Com um arquivo XAML aberto no Designer XAML, crie um elemento ou selecione um elemento na janela Estrutura de Tópicos de Documento.
 
@@ -36,7 +36,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
      ![Caixa de diálogo Criar recurso](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
-3. Na caixa **Nome (Chave)** , insira um nome de chave. Este é o nome que você pode usar quando quer que outros elementos façam referência ao recurso.
+3. Na caixa **Nome (Chave)**, insira um nome de chave. Este é o nome que você pode usar quando quer que outros elementos façam referência ao recurso.
 
 4. Em **Definir em**, escolha opção que especifica onde você deseja que o recurso seja definido:
 
@@ -54,7 +54,7 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
 1. Na janela Estrutura de Tópicos de Documento, escolha o elemento ao qual você deseja aplicar um recurso.
 
-2. Siga um destes procedimentos:
+2. Realize um dos seguintes procedimentos:
 
    - Aplique um recurso a uma propriedade. Na janela Propriedades, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.
 
@@ -75,5 +75,5 @@ Os estilos e modelos de elementos no Designer XAML são armazenados em entidades
 
 3. Modifique as opções do recurso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

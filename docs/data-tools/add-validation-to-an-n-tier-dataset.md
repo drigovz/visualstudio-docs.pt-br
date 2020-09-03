@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283015"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
@@ -58,7 +58,7 @@ End Sub
 2. Clique duas vezes na coluna que você deseja validar. Essa ação cria o <xref:System.Data.DataTable.ColumnChanging> manipulador de eventos.
 
     > [!NOTE]
-    > O Designer de Conjunto de Dados não cria automaticamente um manipulador de eventos para o evento C#. O código necessário para lidar com o evento em C# está incluído na próxima seção. `SampleColumnChangingEvent`é criado e conectado ao <xref:System.Data.DataTable.ColumnChanging> evento no <xref:System.Data.DataTable.EndInit%2A> método.
+    > O Designer de Conjunto de Dados não cria automaticamente um manipulador de eventos para o evento C#. O código necessário para lidar com o evento em C# está incluído na próxima seção. `SampleColumnChangingEvent` é criado e conectado ao <xref:System.Data.DataTable.ColumnChanging> evento no <xref:System.Data.DataTable.EndInit%2A> método.
 
 3. Adicione o código para verificar se `e.ProposedValue` contém dados que atendem aos requisitos do seu aplicativo. Se o valor proposto for inaceitável, defina a coluna para indicar que ela contém um erro.
 
@@ -166,7 +166,7 @@ Crie um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> e
     }
     ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Walkthrough: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

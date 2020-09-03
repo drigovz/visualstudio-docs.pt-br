@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288969"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
@@ -32,7 +32,7 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 \<Project>
 \<ItemGroup>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemGroup Condition="'String A' == 'String B'"
@@ -63,8 +63,8 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
-| [Destino](../msbuild/target-element-msbuild.md) | A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md). |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
+| [Target (destino)](../msbuild/target-element-msbuild.md) | A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md). |
 
 ## <a name="example"></a>Exemplo
 
@@ -93,7 +93,7 @@ Os RowGroups podem ter condições aplicadas usando o `Condition` atributo. Ness
 
 O `Label` atributo é usado em alguns sistemas de compilação como uma maneira de controlar os comportamentos de compilação. Você pode usá-lo somente em declarações, como uma maneira de criar scripts MSBuild mais compreensíveis ou como uma configuração de controle para afetar as ações de compilação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

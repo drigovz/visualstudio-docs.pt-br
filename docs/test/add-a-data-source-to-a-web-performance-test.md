@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94ad53e4ac3d65bfe6cf08bf03f1f79c2075e03d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289060"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho para Web
@@ -154,7 +154,7 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
      ![Teste é aprovado usando associação de dados](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>P: Quais bancos de dados posso usar como uma fonte de dados?
 

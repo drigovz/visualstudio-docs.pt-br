@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586114"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
@@ -29,19 +29,19 @@ Este tópico lista os problemas comuns que podem ocorrer ao trabalhar com Window
 
 ## <a name="error-returning-data-from-a-service"></a>Erro ao retornar dados de um serviço
 
-Quando você retorna um `DataSet` ou `DataTable` de um serviço, você pode receber uma exceção "a cota de tamanho máximo para mensagens de entrada foi excedida". Por padrão, a propriedade `MaxReceivedMessageSize` para algumas associações é definida com um valor relativamente pequeno para limitar a exposição a ataques de negação de serviço. Você pode aumentar esse valor para evitar a exceção. Para obter mais informações, consulte <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
+Ao retornar um `DataSet` ou `DataTable` de um serviço, você pode receber uma exceção "a cota de tamanho máximo para mensagens de entrada foi excedida". Por padrão, a `MaxReceivedMessageSize` propriedade de algumas associações é definida com um valor relativamente pequeno para limitar a exposição a ataques de negação de serviço. Você pode aumentar esse valor para evitar a exceção. Para obter mais informações, consulte <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.
 
-Para corrigir esse erro:
+Para corrigir esse erro: 
 
-1. Em **Gerenciador de soluções**, clique duas vezes no arquivo *app. config* para abri-lo.
+1. Em **Gerenciador de soluções**, clique duas vezes no arquivo *app.config* para abri-lo.
 
-2. Localize a propriedade `MaxReceivedMessageSize` e altere-a para um valor maior.
+2. Localize a `MaxReceivedMessageSize` propriedade e altere-a para um valor maior.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Não é possível encontrar um serviço em minha solução
 
 Quando você clica no botão **descobrir** na caixa de diálogo **Adicionar referências de serviço** , um ou mais projetos de biblioteca de serviço WCF na solução não aparecem na lista de serviços. Isso pode ocorrer se uma biblioteca de serviço tiver sido adicionada à solução, mas ainda não tiver sido compilada.
 
-Para corrigir esse erro:
+Para corrigir esse erro: 
 
 - Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto da biblioteca de serviço WCF e clique em **Compilar**.
 
@@ -49,20 +49,20 @@ Para corrigir esse erro:
 
 Quando um usuário acessa um serviço WCF hospedado na Web por uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, a autenticação NTLM é usada. Se o usuário não tiver permissões administrativas, o usuário poderá receber a seguinte mensagem de erro: "a solicitação HTTP não está autorizada com o esquema de autenticação de cliente ' anônimo '. O cabeçalho de autenticação recebido do servidor era ' NTLM '. "
 
-Para corrigir esse erro:
+Para corrigir esse erro: 
 
 1. No projeto de site, abra as páginas de **Propriedades** .
 
 2. Na guia **Opções de início** , desmarque a caixa de seleção **autenticação NTLM** .
 
     > [!NOTE]
-    > Você deve desativar a autenticação NTLM somente para sites que contenham exclusivamente serviços WCF. A segurança para serviços WCF é gerenciada por meio da configuração no arquivo *Web. config* . Isso torna a autenticação NTLM desnecessária.
+    > Você deve desativar a autenticação NTLM somente para sites que contenham exclusivamente serviços WCF. A segurança para serviços WCF é gerenciada por meio da configuração no arquivo *web.config* . Isso torna a autenticação NTLM desnecessária.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>O nível de acesso para a configuração de classes geradas não tem nenhum efeito
 
-Definir a opção **nível de acesso para classes geradas** na caixa de diálogo **Configurar referências de serviço** como **interno** ou **Friend** nem sempre funcionará. Embora a opção pareça estar definida na caixa de diálogo, as classes de suporte resultantes são geradas com um nível de acesso de `Public`.
+Definir a opção **nível de acesso para classes geradas** na caixa de diálogo **Configurar referências de serviço** como **interno** ou **Friend** nem sempre funcionará. Embora a opção pareça estar definida na caixa de diálogo, as classes de suporte resultantes são geradas com um nível de acesso de `Public` .
 
-Essa é uma limitação conhecida de determinados tipos, como aqueles serializados usando o <xref:System.Xml.Serialization.XmlSerializer>.
+Essa é uma limitação conhecida de determinados tipos, como os serializados usando o <xref:System.Xml.Serialization.XmlSerializer> .
 
 ## <a name="error-debugging-service-code"></a>Erro ao depurar código de serviço
 
@@ -74,7 +74,7 @@ Se o projeto de serviço for removido da solução, essa dependência de compila
 
 Para corrigir esse erro, você precisa recompilar manualmente o projeto de serviço:
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Na caixa de diálogo **Opções** , expanda **projetos e soluções**e, em seguida, selecione **geral**.
 
@@ -82,7 +82,7 @@ Para corrigir esse erro, você precisa recompilar manualmente o projeto de servi
 
 4. Carregue o projeto de serviço WCF.
 
-5. Na caixa de diálogo **Configuration Manager** , defina a **configuração da solução ativa** como **depurar**. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+5. Na caixa de diálogo **Configuration Manager** , defina a **configuração da solução ativa** como **depurar**. Para obter mais informações, consulte [como: criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
 6. Em **Gerenciador de soluções**, selecione o projeto de serviço WCF.
 
@@ -90,11 +90,11 @@ Para corrigir esse erro, você precisa recompilar manualmente o projeto de servi
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services não são exibidos no navegador
 
-Quando ele tenta exibir uma representação XML de dados em um [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], o Internet Explorer pode misinterpret os dados como um RSS feed. Verifique se a opção para exibir RSS feeds está desabilitada.
+Quando ele tenta exibir uma representação XML de dados em um [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] , o Internet Explorer pode misinterpret os dados como um RSS feed. Verifique se a opção para exibir RSS feeds está desabilitada.
 
 Para corrigir esse erro, desabilite os RSS feeds:
 
-1. No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
+1. No Internet Explorer, no menu **ferramentas** , clique em **Opções da Internet**.
 
 2. Na guia **conteúdo** , na seção **feeds** , clique em **configurações**.
 
@@ -102,6 +102,6 @@ Para corrigir esse erro, desabilite os RSS feeds:
 
 4. Clique em **OK** para fechar a caixa de diálogo **Opções da Internet** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

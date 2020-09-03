@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772708"
 ---
 # <a name="modules-view---sampling-data"></a>Exibição Módulos – dados de amostragem
@@ -34,7 +34,7 @@ A exibição Módulos dos dados de amostragem mostra dados de desempenho agrupad
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função, linha ou ponteiro de instrução.|
 |**Caminho do Módulo**|O caminho do módulo que contém o módulo, função, linha ou ponteiro de instrução.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Amostras Inclusivas**|– Para uma função, o número de amostras em que estava executando essa função ou uma função que foi chamada por essa função; ou seja, o número de amostras da pilha de chamadas que continham essa função.<br />– Para um módulo, o número de amostras em que pelo menos uma função do módulo estava sendo executada.<br />– Para uma linha ou instrução, o número de amostras no qual essa linha ou instrução estava sendo executada.|
 |**% de Amostras Inclusivas**|– Para uma função ou módulo, o percentual de todas as amostras na execução de criação de perfil que eram amostras inclusivas dessa função ou módulo.<br />– Para uma linha ou instrução, o percentual de todas as amostras na execução de criação de perfil em que essa linha ou instrução estava em execução.|
@@ -42,6 +42,6 @@ A exibição Módulos dos dados de amostragem mostra dados de desempenho agrupad
 |**% de Amostras Exclusivas**|– Para uma função ou módulo, o percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função ou módulo.<br />– Para uma linha ou instrução, o percentual de todas as amostras na execução de criação de perfil em que essa linha ou instrução estava em execução.|
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de módulos - amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Exibição Módulos – instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
+- [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)

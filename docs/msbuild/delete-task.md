@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288904"
 ---
 # <a name="delete-task"></a>tarefa Delete
@@ -99,8 +99,8 @@ A `Delete` tarefa não fornece uma opção para excluir arquivos somente leitura
 
 Em geral, ao escrever scripts de Build, considere se a sua exclusão é logicamente parte de uma `Clean` operação. Se você precisar definir alguns arquivos a serem limpos como parte de uma operação normal `Clean` , poderá adicioná-los à `@(FileWrites)` lista e eles serão excluídos no próximo `Clean` . Se for necessário mais processamento personalizado, defina um destino e especifique para que ele seja executado definindo o atributo `BeforeTargets="Clean"` ou `AfterTargets="Clean"` , ou defina a versão personalizada dos `BeforeClean` destinos ou `AfterClean` . Consulte [personalizar sua compilação](customize-your-build.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefa RemoveDir](removedir-task.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

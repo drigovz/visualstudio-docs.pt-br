@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852360"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: Substituir Equals() por tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID da regra | DA0006 |  

@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 30bfdd49d871919503be767ea930b3d5f2f0fd95
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905770"
 ---
 # <a name="how-to-provide-a-service"></a>Como: fornecer um serviço
 Um VSPackage pode fornecer serviços que outros VSPackages podem usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicionar o serviço.
 
- A <xref:Microsoft.VisualStudio.Shell.Package> classe implementa <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer>contém métodos de retorno de chamada que fornecem serviços sob demanda.
+ A <xref:Microsoft.VisualStudio.Shell.Package> classe implementa <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> e <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> contém métodos de retorno de chamada que fornecem serviços sob demanda.
 
  Para obter mais informações sobre serviços, consulte [Service Essentials](../extensibility/internals/service-essentials.md) .
 

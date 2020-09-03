@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: GetAssemblyName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ad546e3cde5106a966ce4533ee059f0ba1e2565d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733981"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-Recupera o nome do conjunto dado o seu módulo e domínio de aplicativo.
+Recupera o nome do assembly de acordo com seu módulo e domínio de aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ int GetAssemblyName(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ulAppDomainID`\
-[em] Identificador para o domínio do aplicativo.
+no Identificador para o domínio do aplicativo.
 
 `guidModule`\
-[em] Identificador exclusivo para o módulo.
+no Identificador exclusivo do módulo.
 
 `pbstrName`\
-[fora] Retorna o nome da assembléia.
+fora Retorna o nome do assembly.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAssemblyName(

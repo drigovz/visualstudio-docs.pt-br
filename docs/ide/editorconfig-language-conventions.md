@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533452"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
@@ -50,7 +50,7 @@ Para cada convenção de linguagem, você pode especificar um valor que define s
 
 Uma severidade de convenção de linguagem especifica o nível no qual impor esse estilo. A tabela a seguir lista os valores possíveis de gravidade e seus efeitos:
 
-Severity | Efeito
+Severidade | Efeito
 :------- | ------
 `error` | Quando esta regra de estilo for violada, deverá ser exibido um erro do compilador.
 `warning` | Quando esta regra de estilo for violada, deverá ser exibido um aviso do compilador.
@@ -1047,7 +1047,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Nome da regra** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **ID da regra** | IDE0041 |
 | **Idiomas aplicáveis** | C# 6.0+ e Visual Basic 14+ |
-| **Valores** | `true`-Preferência é nulo verificar o método de igualdade de referência<br /><br />`false`-Preferência de método de igualdade de referência é nulo |
+| **Valores** | `true` -Preferência é nulo verificar o método de igualdade de referência<br /><br />`false` -Preferência de método de igualdade de referência é nulo |
 | **Padrão do Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Configurações de qualidade de código do .NET
@@ -1607,7 +1607,7 @@ csharp_prefer_braces = true:silent
 | **Nome da regra** | csharp_prefer_braces |
 | **ID da regra** | IDE0011 |
 | **Idiomas aplicáveis** | C# |
-| **Valores** | `true` – preferir chaves, até mesmo para uma linha de código<br /><br />`false` – preferir não usar chaves se permitido<br /><br />`when_multiline`-Preferir chaves em várias linhas |
+| **Valores** | `true` – preferir chaves, até mesmo para uma linha de código<br /><br />`false` – preferir não usar chaves se permitido<br /><br />`when_multiline` -Preferir chaves em várias linhas |
 | **Padrão do Visual Studio** | `true:silent` |
 
 Exemplos de código:

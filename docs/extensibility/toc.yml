@@ -442,7 +442,7 @@
       href: ux-guidelines/layout-for-visual-studio.md
     - name: Notificações e andamento
       href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: Animations
+    - name: Animações
       href: ux-guidelines/animations-for-visual-studio.md
     - name: Ferramentas de avaliação
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
@@ -784,7 +784,7 @@
           href: capability-flags.md
         - name: Sinalizadores de bit usados por comandos específicos
           href: bitflags-used-by-specific-commands.md
-        - name: Códigos de Erro
+        - name: Códigos de erro
           href: error-codes.md
         - name: Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778538"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Exibição Módulos – dados de instrumentação de memória do .NET
@@ -28,7 +28,7 @@ A exibição Módulos de dados de alocação de memória do .NET coletados usand
 |**Nome**|O nome da função ou módulo.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Número de Chamadas**|O número total de chamadas que foram feitas para essa função ou módulo.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
@@ -99,6 +99,6 @@ A exibição Módulos de dados de alocação de memória do .NET coletados usand
 |**Tempo Exclusivo Mínimo do Aplicativo**|– Para uma função, o tempo exclusivo mínimo do aplicativo de uma chamada para esse módulo ou função.<br />– Para um módulo, o tempo exclusivo mínimo do aplicativo de todas as chamadas para funções no módulo.|
 
 ## <a name="see-also"></a>Confira também
-- [Exibição de módulos - amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
-- [Exibição Módulos](../profiling/modules-view-sampling-data.md)
+- [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)
+- [Exibição de módulos](../profiling/modules-view-sampling-data.md)

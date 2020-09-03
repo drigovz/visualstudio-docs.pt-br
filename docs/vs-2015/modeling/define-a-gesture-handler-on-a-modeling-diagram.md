@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533062"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir um manipulador de gestos em um diagrama de modelagem
@@ -74,7 +74,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer`– Você só precisará disso se estiver estendendo diagramas de camada. Para obter mais informações, consulte [estender diagramas de camada](../modeling/extend-layer-diagrams.md).
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – Você só precisará disso se estiver estendendo diagramas de camada. Para obter mais informações, consulte [estender diagramas de camada](../modeling/extend-layer-diagrams.md).
 
 3. Adicione um arquivo de classe ao projeto e defina seu conteúdo para o código a seguir.
 
@@ -230,7 +230,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 
          **Projeto**  =  do *Seu projeto de biblioteca de classes*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Executando o manipulador de gestos
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Executando o manipulador de gestos
  Para fins de teste, execute o manipulador de gestos no modo de depuração.
 
 #### <a name="to-test-the-gesture-handler"></a>Para testar o manipulador de gestos
@@ -265,7 +265,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 
 - Não há nenhuma funcionalidade interna já definida para esse tipo de destino e elemento Descartado.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implementando o manipulador de gestos
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implementando o manipulador de gestos
 
 ### <a name="the-gesture-handler-methods"></a>Os métodos do manipulador de gestos
  A classe do manipulador de gestos implementa e exporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension> . Os métodos que você precisa definir são os seguintes:
@@ -274,7 +274,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Retorne `true` para permitir que o elemento de origem referenciado no `dragEvent` seja Descartado neste destino.<br /><br /> Esse método não deve fazer alterações no modelo. Ele deve funcionar rapidamente, pois é usado para determinar o estado da seta à medida que o usuário move o mouse.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Atualize o modelo com base no objeto de origem referenciado em `dragEvent` e no destino.<br /><br /> Chamado quando o usuário libera o mouse após arrastar.|
-|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target`é a forma com que o usuário clicou duas vezes.|
+|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` é a forma com que o usuário clicou duas vezes.|
 
  Você pode escrever manipuladores que podem aceitar não apenas UML também uma ampla variedade de outros itens, como arquivos, nós em uma exibição de classe do .NET e assim por diante. O usuário pode arrastar qualquer um desses itens para um diagrama UML, desde que você escreva um `OnDragDrop` método que possa decodificar a forma serializada dos itens. Os métodos de decodificação variam de um tipo de item para outro.
 
@@ -282,7 +282,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 
 - `ShapeElement target`. A forma ou o diagrama no qual o usuário arrastou algo.
 
-    `ShapeElement`é uma classe na implementação que se baseia nas ferramentas de modelagem UML. Para reduzir o risco de colocar o modelo UML e os diagramas em um estado inconsistente, recomendamos que você não use os métodos dessa classe diretamente. Em vez disso, empacote o elemento em um `IShape` e, em seguida, use os métodos descritos em [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` é uma classe na implementação que se baseia nas ferramentas de modelagem UML. Para reduzir o risco de colocar o modelo UML e os diagramas em um estado inconsistente, recomendamos que você não use os métodos dessa classe diretamente. Em vez disso, empacote o elemento em um `IShape` e, em seguida, use os métodos descritos em [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Para obter um `IShape` :
 
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Para obter mais informações, consulte [navegar no modelo UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalando e desinstalando uma extensão
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalando e desinstalando uma extensão
  Você pode instalar uma [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão no seu próprio computador e em outros computadores.
 
 #### <a name="to-install-an-extension"></a>Para instalar uma extensão
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versão] \Extensions**
 
-## <a name="example"></a><a name="DragExample"></a>Exemplo
+## <a name="example"></a><a name="DragExample"></a> Exemplo
  O exemplo a seguir mostra como criar linhas de vida em um diagrama de sequência, com base nas partes e portas de um componente, arrastados de um diagrama de componente.
 
  Para testá-lo, pressione F5. Uma instância experimental do Visual Studio é aberta. Nessa instância, abra um modelo UML e crie um componente em um diagrama de componente. Adicione a esse componente algumas interfaces e partes de componentes internas. Selecione as interfaces e as partes. Em seguida, arraste as interfaces e partes para um diagrama de sequência. (Arraste do diagrama de componente até a guia do diagrama de sequência e, em seguida, para baixo até o diagrama de sequência.) Uma linha de vida será exibida para cada interface e parte.

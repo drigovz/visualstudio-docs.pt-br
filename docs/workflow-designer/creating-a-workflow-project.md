@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597068"
 ---
 # <a name="workflow-project-templates"></a>Modelos de projeto de fluxo de trabalho
@@ -36,14 +36,14 @@ O Visual Studio fornece quatro modelos diferentes de projeto de fluxo de trabalh
 
 Para acessar esses modelos, primeiro instale o componente de **Windows Workflow Foundation** do Visual Studio. Para obter instruções detalhadas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Depois de instalar o componente **Windows Workflow Foundation** , selecione **arquivo** > **novo** **projeto**de > .
+1. Depois de instalar o componente **Windows Workflow Foundation** , selecione **arquivo**  >  **novo**  >  **projeto**.
 
 1. Pesquise e selecione um modelo de projeto de fluxo de trabalho, por exemplo, o modelo de **aplicativo do console de fluxo de trabalho** .
 
 1. Continue para criar o projeto.
 
    > [!NOTE]
-   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções**e selecione **Adicionar** > **novo projeto**.
+   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções**e selecione **Adicionar**  >  **novo projeto**.
 
 ## <a name="workflow-console-app"></a>Aplicativo de console de fluxo de trabalho
 
@@ -51,14 +51,14 @@ Se você escolher o modelo de **aplicativo do console de fluxo de trabalho** , o
 
 ## <a name="wcf-workflow-service-app"></a>Aplicativo de serviço de fluxo de trabalho WCF
 
-Se você escolher o modelo de **aplicativo de serviço de fluxo de trabalho do WCF** , o Visual Studio criará uma definição de serviço como XAML. O Designer de Fluxo de Trabalho é aberto no modo de exibição de design com uma atividade de <xref:System.Activities.Statements.Sequence> que contém um conjunto de atividades <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply>.
+Se você escolher o modelo de **aplicativo de serviço de fluxo de trabalho do WCF** , o Visual Studio criará uma definição de serviço como XAML. O Designer de Fluxo de Trabalho é aberto no modo de exibição de design com uma <xref:System.Activities.Statements.Sequence> atividade que contém um conjunto de <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> atividades e.
 
 ## <a name="activity-library"></a>Biblioteca de atividades
 
 Se você escolher o modelo de **biblioteca de atividades** , o Visual Studio criará uma definição de atividade em XAML. Designer de Fluxo de Trabalho abre e exibe a tela para sua atividade personalizada. Arraste uma atividade da **caixa de ferramentas** para a superfície de design para incluí-la em sua atividade personalizada.
 
 > [!NOTE]
-> Você só tem permissão para uma atividade filho no corpo da atividade personalizada. No entanto, essa atividade filho pode ser uma atividade composta, como uma atividade de <xref:System.Activities.Statements.Sequence> ou <xref:System.Activities.Statements.Flowchart> atividade.
+> Você só tem permissão para uma atividade filho no corpo da atividade personalizada. No entanto, essa atividade filho pode ser uma atividade composta, como uma <xref:System.Activities.Statements.Sequence> atividade ou <xref:System.Activities.Statements.Flowchart> atividade.
 
 ## <a name="activity-designer-library"></a>Biblioteca do designer de atividade
 
@@ -69,7 +69,7 @@ Para obter um exemplo de como implementar um designer de atividade personalizado
 > [!NOTE]
 > Designers de atividades personalizadas podem ser usados para atividades personalizadas e para atividades padrão do .NET.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Fluxos de trabalho de design (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

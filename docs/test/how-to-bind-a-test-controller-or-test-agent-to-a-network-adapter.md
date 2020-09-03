@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 925df819b903be3de3d44127243f3b18d1e9aff5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288241"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como associar um controlador de teste ou agente de teste a um adaptador de rede
@@ -49,7 +49,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Controlador de Teste do Visual Studio** e escolha **Parar**.
 
-     -ou-
+     - ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -95,7 +95,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Agente de Teste do Visual Studio** e escolha **Parar**.
 
-     -ou-
+     - ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -128,7 +128,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
     `net start vsttagent`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)

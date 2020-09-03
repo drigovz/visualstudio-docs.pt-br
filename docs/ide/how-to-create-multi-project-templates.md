@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284406"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojetos
@@ -186,7 +186,7 @@ Este exemplo usa o elemento **SolutionFolder** para dividir os projetos em dois 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Como: criar modelos de projeto](../ide/how-to-create-project-templates.md)

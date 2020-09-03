@@ -10,16 +10,16 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778239"
 ---
 # <a name="status"></a>Status
-A opção *VSPerfCmd.exe* **Status** exibe informações sobre o estado do profiler e quaisquer processos que estão sendo perfilados.
+A opção **status** do *VSPerfCmd.exe* exibe informações sobre o estado do criador de perfil e todos os processos que estão sendo analisados no momento.
 
- A opção **Status** deve ser a única opção especificada na linha de comando. O profiler deve ser inicializado com a opção *VSPerfCmd.exe* **Start** antes que qualquer status possa ser exibido.
+ A opção **Status** deve ser a única opção especificada na linha de comando. O criador de perfil deve ser inicializado com a opção *VSPerfCmd.exe* **Start** antes que qualquer status possa ser exibido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -27,7 +27,7 @@ A opção *VSPerfCmd.exe* **Status** exibe informações sobre o estado do profi
 VSPerfCmd.exe /Status
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  Nenhum
 
 ## <a name="remarks"></a>Comentários
@@ -60,7 +60,7 @@ VSPerfCmd.exe /Status
  **Usuários com direitos de acesso de monitoramento** Lista os nomes de usuários que têm acesso ao criador de perfil. Usuários adicionais podem ser concedidos acesso por meio da opção VSPerfCmd.exe **Admin**
 
 ## <a name="see-also"></a>Confira também
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
