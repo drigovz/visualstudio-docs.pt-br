@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289177"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Conjunto de Ferramentas
@@ -112,6 +112,6 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 
   Você também pode adicionar propriedades personalizadas, propriedades específicas do ToolsVersion para o arquivo de configuração usando a mesma sintaxe que você pode usar para adicionar a propriedade MSBuildToolsPath. Para disponibilizar essas propriedades personalizadas para o arquivo de projeto, use o mesmo nome como o nome do valor que é especificado no arquivo de configuração. Você pode definir Conjuntos de Ferramentas, mas não os subconjuntos de ferramentas no arquivo de configuração.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
+- [Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

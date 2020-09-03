@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288917"
 ---
 # <a name="exec-task"></a>tarefa Exec
@@ -74,7 +74,7 @@ O exemplo a seguir usa a tarefa `Exec` para executar um comando.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917550"
 ---
 # <a name="deploying-applications-services-and-components"></a>Implantando aplicativos, serviços e componentes
@@ -52,6 +52,6 @@ Ao implantar um aplicativo, serviço ou componente, você o distribui para insta
 |**Implantar um aplicativo de área de trabalho:** Usando a implantação do ClickOnce, você pode publicar um aplicativo de área de trabalho em um servidor Web ou em um compartilhamento de arquivos de rede. Os usuários podem, então, instalar o aplicativo com um único clique.|[Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Criar um programa de instalação:** Você pode criar um programa de instalação usando o InstallShield Limited Edition, que é gratuito.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Manter um programa de instalação existente:** Continue usando um programa de instalação criado em uma versão anterior do Visual Studio instalando a extensão de projetos Instalador do Visual Studio.|[Extensão de projetos de Instalador do Visual Studio](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> A documentação para projetos de instalador está disponível aqui: [implantação de instalador do Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Implantar um aplicativo C++ Visual:** você pode implantar o tempo C++ de execução Visual com um aplicativo usando a implantação central, a implantação local ou a vinculação estática.|[Implantando aplicativos da área de trabalho nativos (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Implantar um aplicativo Visual C++:** Você pode implantar o Visual C++ tempo de execução com um aplicativo usando a implantação central, a implantação local ou a vinculação estática.|[Implantando aplicativos da área de trabalho nativos (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Implantar um aplicativo para teste:** Você pode habilitar o desenvolvimento e os testes mais sofisticados implantando seus aplicativos em ambientes virtuais.|[Testar em um ambiente de laboratório](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Instalar pré-requisitos:** Você pode instalar os componentes de pré-requisito para aplicativos da área de trabalho configurando um instalador genérico, que é conhecido como bootstrapper.|[Pré-requisitos de implantação de aplicativos](../deployment/application-deployment-prerequisites.md)|
+|**Instalar pré-requisitos:** Você pode instalar os componentes de pré-requisito para aplicativos da área de trabalho configurando um instalador genérico, que é conhecido como bootstrapper.|[Pré-requisitos de implantação de aplicativo](../deployment/application-deployment-prerequisites.md)|

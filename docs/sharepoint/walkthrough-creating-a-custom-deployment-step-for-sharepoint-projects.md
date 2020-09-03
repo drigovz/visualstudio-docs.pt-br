@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015889"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Walkthrough: criar uma etapa de implantação personalizada para projetos do SharePoint
@@ -79,7 +80,7 @@ ms.locfileid: "86015889"
 
 5. Escolha o modelo de **projeto VSIX** , nomeie o projeto **UpgradeDeploymentStep**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **UpgradeDeploymentStep** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **UpgradeDeploymentStep** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
@@ -91,7 +92,7 @@ ms.locfileid: "86015889"
 
 4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **DeploymentStepExtension**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **DeploymentStepExtension** à solução e abre o arquivo de código de Class1 padrão.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **DeploymentStepExtension** à solução e abre o arquivo de código de Class1 padrão.
 
 5. Exclua o arquivo de código Class1 do projeto.
 
@@ -265,7 +266,7 @@ ms.locfileid: "86015889"
 
 7. Escolha o botão **Concluir**.
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o projeto EmployeesListDefinition.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto EmployeesListDefinition.
 
 8. Abra o menu de atalho para o projeto EmployeesListDefinition, escolha **Adicionar**e, em seguida, escolha **novo item**.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015889"
 
     3. **Padrão (em branco)** é escolhido na lista **criar uma lista personalizável baseada em:** .
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o item de lista Employees com uma coluna Title e uma única instância vazia e abre o designer de lista.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o item de lista Employees com uma coluna Title e uma única instância vazia e abre o designer de lista.
 
 12. No designer de lista, na guia **colunas** , escolha a linha **digite um nome de coluna novo ou existente** e, em seguida, adicione as seguintes colunas na lista **nome de exibição da coluna** :
 
@@ -342,7 +343,7 @@ ms.locfileid: "86015889"
 
 4. Verifique se o projeto é compilado com êxito, se o navegador da Web abre no site do SharePoint, se o item **listas** na barra de início rápido inclui a nova lista **Employees** e se a lista **Employees** inclui a entrada para Jim Hance.
 
-5. Feche o navegador da web.
+5. Feche o navegador da Web.
 
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>Para modificar a definição da lista e a instância da lista e reimplantá-las
 
@@ -482,5 +483,5 @@ ms.locfileid: "86015889"
 
 4. Feche as duas instâncias do Visual Studio (a instância experimental e a instância do Visual Studio na qual a solução UpgradeDeploymentStep está aberta).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estender o empacotamento e a implantação do SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

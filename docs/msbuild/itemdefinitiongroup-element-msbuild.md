@@ -19,19 +19,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21e3b6554a9d6e0024cc21fd898962177acfffa7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633623"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 
 O elemento `ItemDefinitionGroup` permite definir um conjunto de Definições de Item, que são valores de metadados aplicados por padrão a todos os itens do projeto. ItemDefinitionGroup substitui a necessidade de usar a [tarefa CreateItem](../msbuild/createitem-task.md) e [tarefa CreateProperty](../msbuild/createproperty-task.md). Para obter mais informações, confira [Definições de item](../msbuild/item-definitions.md).
 
-\<Project> \<ItemDefinitionGroup>
+\<Project>
+\<ItemDefinitionGroup>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemDefinitionGroup Condition="'String A' == 'String B'">
@@ -60,7 +61,7 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="example"></a>Exemplo
 

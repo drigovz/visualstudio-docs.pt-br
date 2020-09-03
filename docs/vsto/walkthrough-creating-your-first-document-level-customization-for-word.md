@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74567016"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Word
@@ -27,7 +27,7 @@ ms.locfileid: "74567016"
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Criando um projeto de documento do Word.
 
@@ -41,9 +41,9 @@ ms.locfileid: "74567016"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,11 +53,11 @@ ms.locfileid: "74567016"
 
 ### <a name="to-create-a-new-word-document-project-in-visual-studio"></a>Para criar um novo projeto de documento do Word no Visual Studio
 
-1. Iniciar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
 ::: moniker range="vs-2017"
-3. No painel modelos, expanda **Visual C#**  ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do VSTO** .
 
@@ -92,7 +92,7 @@ ms.locfileid: "74567016"
 
 2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no arquivo de código **ThisDocument** e clique em **Designer de exibição**.
 
-     \- ou -
+     \- ou –
 
      Em **Gerenciador de soluções**, clique duas vezes no arquivo de código **ThisDocument** .
 
@@ -110,9 +110,9 @@ ms.locfileid: "74567016"
 
  Em seguida, adicione o código ao arquivo de código ThisDocument. O novo código usa o modelo de objeto do Word para adicionar um segundo parágrafo de texto ao documento. Por padrão, o arquivo de código ThisDocument contém o seguinte código gerado:
 
-- Uma definição parcial da classe `ThisDocument`, que representa o modelo de programação do documento e fornece acesso ao modelo de objeto do Word. Para obter mais informações, consulte [visão geral](../vsto/word-object-model-overview.md)de [item de host de documento](../vsto/document-host-item.md) e modelo de objeto do Word. O restante da classe de `ThisDocument` é definido em um arquivo de código oculto que você não deve modificar.
+- Uma definição parcial da `ThisDocument` classe, que representa o modelo de programação do documento e fornece acesso ao modelo de objeto do Word. Para obter mais informações, consulte [visão geral](../vsto/word-object-model-overview.md)de [item de host de documento](../vsto/document-host-item.md) e modelo de objeto do Word. O restante da `ThisDocument` classe é definido em um arquivo de código oculto que você não deve modificar.
 
-- Os manipuladores de eventos `ThisDocument_Startup` e `ThisDocument_Shutdown`. Esses manipuladores de eventos são chamados quando o documento é aberto e fechado. Use esses manipuladores de eventos para inicializar sua personalização quando o documento for aberto e para limpar os recursos usados pela sua personalização quando o documento for fechado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+- Os `ThisDocument_Startup` `ThisDocument_Shutdown` manipuladores de eventos e. Esses manipuladores de eventos são chamados quando o documento é aberto e fechado. Use esses manipuladores de eventos para inicializar sua personalização quando o documento for aberto e para limpar os recursos usados pela sua personalização quando o documento for fechado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Para adicionar um segundo parágrafo de texto ao documento usando código
 
@@ -120,13 +120,13 @@ ms.locfileid: "74567016"
 
      O arquivo de código é aberto no Visual Studio.
 
-2. Substitua o manipulador de eventos `ThisDocument_Startup` pelo código a seguir. Quando o documento é aberto, esse código adiciona um segundo parágrafo de texto ao documento.
+2. Substitua o `ThisDocument_Startup` manipulador de eventos pelo código a seguir. Quando o documento é aberto, esse código adiciona um segundo parágrafo de texto ao documento.
 
      [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    > Esse código usa o valor de índice 1 para acessar o primeiro parágrafo na propriedade <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Embora Visual Basic e o C# Visual usem matrizes baseadas em 0, os limites de matriz inferiores da maioria das coleções no modelo de objeto do Word são 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
+    > Esse código usa o valor de índice 1 para acessar o primeiro parágrafo na <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> propriedade. Embora Visual Basic e o Visual C# usem matrizes baseadas em 0, os limites de matriz inferiores da maioria das coleções no modelo de objeto do Word são 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="test-the-project"></a>Testar o projeto
 
@@ -152,7 +152,7 @@ ms.locfileid: "74567016"
 
 1. No Visual Studio, no menu **Compilar** , clique em **limpar solução**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
  Agora que você criou uma personalização básica no nível do documento para o Word, você pode aprender mais sobre como desenvolver personalizações a partir destes tópicos:
 
@@ -170,9 +170,9 @@ ms.locfileid: "74567016"
 
 - Implantando personalizações em nível de documento para [o Word: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Visão geral &#40;do desenvolvimento de soluções do Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Word](../vsto/word-solutions.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)

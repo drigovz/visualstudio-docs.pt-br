@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542610"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
 Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. O Visual Studio já deve estar instalado no computador de destino.
 
-## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a>Escolhendo entre a implantação do VSIX e do MSI
+## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> Escolhendo entre a implantação do VSIX e do MSI
  Há dois métodos de implantação de uma linguagem específica de domínio:
 
 |Método|Benefícios|
@@ -25,7 +25,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 |VSX (extensão do Visual Studio)|Muito fácil de implantar: Copie e execute o arquivo **. vsix** do projeto DslPackage.<br /><br /> Para obter mais informações [, consulte Instalando e desinstalando uma DSL usando o VSX](#Installing).|
 |MSI (arquivo do instalador)|– Permite que o usuário abra o Visual Studio clicando duas vezes em um arquivo DSL.<br />-Associa um ícone ao tipo de arquivo DSL no computador de destino.<br />-Associa um XSD (esquema XML) ao tipo de arquivo DSL. Isso evita avisos quando o arquivo é carregado no Visual Studio.<br /><br /> Você deve adicionar um projeto de instalação à sua solução para criar um MSI.<br /><br /> Para obter mais informações, consulte [implantando uma DSL usando um arquivo MSI](#msi).|
 
-## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a>Instalar e desinstalar uma DSL usando o VSX
+## <a name="install-and-uninstall-a-dsl-by-using-the-vsx"></a><a name="Installing"></a> Instalar e desinstalar uma DSL usando o VSX
 
 Quando o DSL é instalado por esse método, o usuário pode abrir um arquivo DSL no Visual Studio, mas o arquivo não pode ser aberto no Windows Explorer.
 
@@ -63,7 +63,7 @@ Quando o DSL é instalado por esse método, o usuário pode abrir um arquivo DSL
 
    *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a>Implantando uma DSL em um MSI
+## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a> Implantando uma DSL em um MSI
  Ao definir um arquivo MSI (Windows Installer) para sua DSL, você pode permitir que os usuários abram arquivos DSL no Windows Explorer. Você também pode associar um ícone e uma breve descrição à sua extensão de nome de arquivo. Além disso, o MSI pode instalar um XSD que pode ser usado para validar arquivos DSL. Se desejar, você pode adicionar outros componentes ao MSI que serão instalados ao mesmo tempo.
 
  Para obter mais informações sobre arquivos MSI e outras opções de implantação, consulte [Implantando aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md).

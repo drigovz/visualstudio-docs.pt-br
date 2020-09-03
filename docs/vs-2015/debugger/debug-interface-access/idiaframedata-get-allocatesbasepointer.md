@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 90a32930c51caad61e07b0e6fdfe5b164a5515bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203665"
 ---
-# <a name="idiaframedatagetallocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
+# <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que indica se o ponteiro de base está alocado para o código nesse intervalo de endereço. Este método foi preterido.  
+Recupera um sinalizador que indica se o ponteiro base é alocado para o código neste intervalo de endereços. Esse método é preterido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,14 +35,14 @@ HRESULT get_allocatesBasePointer ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se um ponteiro de base é alocado; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se um ponteiro base é alocado; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Essa propriedade deve ser usada somente pelo código que anteriormente acessados FPO_DATA ou quando a cadeia de caracteres do programa é retornada pelo [idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) método é `NULL`. Caso contrário, a cadeia de caracteres do programa contém todas as informações necessárias para computar os valores de registro anterior.  
+ Essa propriedade deve ser usada somente pelo código que anteriormente acessado FPO_DATA, ou quando a cadeia de caracteres do programa retornada pelo método [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) for `NULL` . Caso contrário, a cadeia de caracteres do programa contém todas as informações necessárias para calcular valores de registro anteriores.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

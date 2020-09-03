@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651056"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
@@ -47,16 +47,16 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
 
 - [Preencher as tabelas com dados](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passos, verifique se você tem SQL Server Data Tools instalado. No menu **Exibir** , você deve ver **pesquisador de objetos do SQL Server**. Se não estiver lá, vá para **Adicionar ou remover programas**, clique em **Visual Studio 2015**, selecione **alterar**e selecione a caixa ao lado de **SQL Server Data Tools**.
 
-## <a name="BKMK_CreateNewSQLDB"></a>Criar um projeto e um arquivo de banco de dados local
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> Criar um projeto e um arquivo de banco de dados local
 
 #### <a name="to-create-a-project-and-a-database-file"></a>Para criar um projeto e um arquivo de banco de dados
 
-1. Crie um projeto de Windows Forms chamado `SampleDatabaseWalkthrough`.
+1. Crie um projeto Windows Forms que é nomeado `SampleDatabaseWalkthrough` .
 
-2. Na barra de menus, selecione **projeto**  > **Adicionar novo item**.
+2. Na barra de menus, selecione **projeto**  >  **Adicionar novo item**.
 
 3. Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.
 
@@ -64,7 +64,7 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
 
 4. Nomeie o banco de dados **SampleDatabase**e, em seguida, selecione o botão **Adicionar** .
 
-5. Se a janela **fontes de dados** não estiver aberta, abra-a selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **Exibir**  >  outras**fontes de dados**do**Windows**  > .
+5. Se a janela **fontes de dados** não estiver aberta, abra-a selecionando as teclas Shift + Alt + D ou, na barra de menus, selecionando **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
 
 6. Na janela **fontes de dados** , selecione o link **Adicionar nova fonte de dados** .
 
@@ -72,11 +72,11 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
 
    Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.
 
-- No Visual Studio, selecione **exibir**  > **pesquisador de objetos do SQL Server** se essa janela ainda não estiver aberta. Abra a janela Propriedades expandindo o nó **conexões de dados** , abrindo o menu de atalho para SampleDatabase. MDF e, em seguida, selecionando **Propriedades**.
+- No Visual Studio, selecione **Exibir**  >  **pesquisador de objetos do SQL Server** se essa janela ainda não estiver aberta. Abra a janela Propriedades expandindo o nó **conexões de dados** , abrindo o menu de atalho para SampleDatabase. MDF e, em seguida, selecionando **Propriedades**.
 
-- Como alternativa, você pode selecionar **exibir**  > **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra a janela Propriedades expandindo o nó **conexões de dados** . Abra o menu de atalho para SampleDatabase. MDF e selecione **Propriedades**.
+- Como alternativa, você pode selecionar **Exibir**  >  **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra a janela Propriedades expandindo o nó **conexões de dados** . Abra o menu de atalho para SampleDatabase. MDF e selecione **Propriedades**.
 
-## <a name="BKMK_CreateNewTbls"></a>Criar tabelas, colunas, chaves primárias e chaves estrangeiras
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> Criar tabelas, colunas, chaves primárias e chaves estrangeiras
  Nesta seção, você criará algumas tabelas, uma chave primária em cada tabela e algumas linhas de dados de exemplo. Na próxima explicação passo a passo, você terá uma idea de como essas informações podem ser exibidas em um aplicativo. Você também criará uma chave estrangeira para especificar como os registros em uma tabela podem corresponder aos registros na outra tabela.
 
 #### <a name="to-create-the-customers-table"></a>Para criar a tabela Customers
@@ -96,7 +96,7 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
     |`ContactName`|`nvarchar (50)`|Verdadeiro (marcado)|
     |`Phone`|`nvarchar (24)`|Verdadeiro (marcado)|
 
-4. Abra o menu de atalho para a linha `CustomerID` e, em seguida, selecione **definir chave primária**.
+4. Abra o menu de atalho da `CustomerID` linha e, em seguida, selecione **definir chave primária**.
 
 5. Abra o menu de atalho para a linha padrão e, em seguida, selecione **excluir**.
 
@@ -106,9 +106,9 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
     CREATE TABLE [dbo].[Customers]
     ```
 
-     Você deve ver algo parecido com isso:
+     Você deverá ver algo como:
 
-     ![Designer de Tabela](../data-tools/media/raddata-table-designer.png "Designer de Tabela raddata")
+     ![Criador de Tabelas](../data-tools/media/raddata-table-designer.png "Designer de Tabela raddata")
 
 7. No canto superior esquerdo da **Designer de tabela**, selecione o botão **Atualizar** .
 
@@ -147,7 +147,7 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
 
      ![Adicionando uma chave estrangeira no Designer de Tabela](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. Na caixa de texto que aparece, substitua **ToTable** por `Customers`.
+2. Na caixa de texto exibida **, substitua por** `Customers` .
 
 3. No painel T-SQL, atualize a última linha para corresponder ao exemplo a seguir:
 
@@ -161,7 +161,7 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
 
      As alterações são salvas no arquivo do banco de dados local.
 
-## <a name="BKMK_Populating"></a>Preencher as tabelas com dados
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> Preencher as tabelas com dados
 
 #### <a name="to-populate-the-tables-with-data"></a>Para popular as tabelas com dados
 
@@ -182,9 +182,9 @@ Você pode explorar tarefas básicas, como adicionar tabelas e definir colunas, 
     > [!IMPORTANT]
     > Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna CustomerID da tabela Customers.
 
-7. Na barra de menus, selecione **arquivo**  > **salvar tudo**.
+7. Na barra de menus, selecione **arquivo**  >  **salvar tudo**.
 
-8. Na barra de menus, selecione **arquivo**  > **fechar solução**.
+8. Na barra de menus, selecione **arquivo**  >  **fechar solução**.
 
     > [!NOTE]
     > Como prática recomendada, é possível fazer backup do arquivo de banco de dados recém-criado copiando-o e colando a cópia em outro local ou dando à cópia um nome diferente.

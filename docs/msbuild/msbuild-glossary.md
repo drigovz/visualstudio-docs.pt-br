@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633337"
 ---
 # <a name="msbuild-glossary"></a>Glossário do MSBuild
@@ -140,7 +140,7 @@ destino, criar\
 Consulte destino, execução.
 
 destino, avaliar\
-Devido à compilação incremental, os destinos devem ser analisados quanto a possíveis alterações nas propriedades e nos itens. Mesmo se o destino for ignorado, essas alterações deverão ser feitas. Avaliar um destino significa executar essa análise e fazer essas alterações. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md).
+Devido à compilação incremental, os destinos devem ser analisados quanto a possíveis alterações nas propriedades e nos itens. Mesmo se o destino for ignorado, essas alterações deverão ser feitas. Avaliar um destino significa executar essa análise e fazer essas alterações. Para obter mais informações, consulte [Builds incrementais](../msbuild/incremental-builds.md).
 
 destino, executar\
 Executar um destino significa avaliá-lo e executar todas as tarefas que não têm condições ou cujas condições são avaliadas como true. Durante a compilação incremental, os destinos podem ser ignorados ou executados, mas eles são sempre avaliados. Para obter mais informações, consulte destino, avaliação.
@@ -161,7 +161,7 @@ arquivo de destino\
 Um arquivo de destino é um arquivo de projeto que contém, em grande parte, destinos e tarefas que orientam o build. Por convenção, ele tem a extensão de arquivo *.targets*. Normalmente, os arquivos de destino são importados no fim dos arquivos de projeto associados.
 
 tarefa\
-As tarefas são unidades de código executável que os projetos do MSBuild usam para executar operações de construção. Por exemplo, uma tarefa pode compilar os arquivos de entrada ou executar uma ferramenta externa. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
+Tarefas são unidades de código executável que os projetos do MSBuild usam para executar operações de compilação. Por exemplo, uma tarefa pode compilar os arquivos de entrada ou executar uma ferramenta externa. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
 transformação\
 Uma transformação é uma conversão individual de uma coleção de item para outra. Além de habilitar um projeto para converter as coleções de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md).

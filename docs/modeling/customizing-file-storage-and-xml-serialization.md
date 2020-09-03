@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542734"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
@@ -272,7 +272,7 @@ Esses elementos são encontrados no Gerenciador de DSL em **dados de Behavior\Cl
 |É personalizado|Defina como **true** se você quiser escrever seu próprio código de serialização e desserialização para essa classe de domínio.<br /><br /> Compile a solução e investigue os erros para descobrir instruções detalhadas.|
 |Classe de domínio|Classe de domínio à qual este nó de dados de classe se aplica. Somente leitura.|
 |Nome do elemento|Nome do nó XML para elementos desta classe. O valor padrão é uma versão em minúsculas do nome da classe de domínio.|
-|Nome do atributo do moniker|Nome do atributo usado nos elementos do moniker para conter a referência. Se estiver em branco, o nome da propriedade ou da ID de chave será usado.<br /><br /> Neste exemplo, é "Name":`<personMoniker name="/Mike Nash"/>`|
+|Nome do atributo do moniker|Nome do atributo usado nos elementos do moniker para conter a referência. Se estiver em branco, o nome da propriedade ou da ID de chave será usado.<br /><br /> Neste exemplo, é "Name":  `<personMoniker name="/Mike Nash"/>`|
 |Nome do elemento do moniker|Nome do elemento XML usado para monikers que se referem a elementos dessa classe.<br /><br /> O valor padrão é uma versão em minúsculas do nome de classe sufixos por "moniker". Por exemplo, `personMoniker`.|
 |Nome do tipo de moniker|Nome do tipo XSD gerado para os monikers para elementos desta classe. O XSD está no **Dsl\Generated de esquema de código \\ \* . xsd**|
 |Serializar ID|Se for true, o elemento GUID será incluído no arquivo. Isso deve ser verdadeiro se não houver nenhuma propriedade marcada como **moniker chave** e a DSL definir relações de referência para essa classe.|

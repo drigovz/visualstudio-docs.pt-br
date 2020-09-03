@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e52bf174e5a41d79fa23bfca39121db668e40e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643856"
 ---
 # <a name="statement-completion-for-identifiers"></a>Conclusão de instrução para identificadores
@@ -50,15 +50,15 @@ O JavaScript não permite a digitação explícita de declarações de variávei
 
 - Um objeto está em uma função que é chamada em resposta a um evento. No momento do design, o mecanismo do IntelliSense não pode determinar o tipo dos objetos usados nessa situação.
 
-   Se o mecanismo do IntelliSense puder determinar que o evento deve ser chamado, normalmente com o uso de `addEventListener` para o evento no documento ativo, serão fornecidas informações mais precisas do IntelliSense.
+   Se o mecanismo IntelliSense puder determinar que o evento deve ser chamado, normalmente com o uso de `addEventListener` para o evento no documento ativo, serão fornecidas informações mais precisas do IntelliSense.
 
-  Quando o IntelliSense não consegue identificar um objeto, o mecanismo do IntelliSense popula a lista de conclusão com entidades nomeadas ou identificadores que estão presentes no documento ativo. Quando a lista de conclusão contém esses identificadores, os ícones de informações aparecem ao lado deles. Além disso, uma dica de ferramenta para cada identificador indica que a expressão é desconhecida. A ilustração a seguir mostra as opções de conclusão de instrução para um objeto do tipo `light` que não pode ser identificado porque o objeto e suas propriedades são indefinidos. No entanto, a propriedade `intensity` está disponível na lista de identificadores porque ela foi usada na função `illuminate`.
+  Quando o IntelliSense não consegue identificar um objeto, o mecanismo do IntelliSense popula a lista de conclusão com entidades nomeadas ou identificadores que estão presentes no documento ativo. Quando a lista de conclusão contém esses identificadores, os ícones de informações aparecem ao lado deles. Além disso, uma dica de ferramenta para cada identificador indica que a expressão é desconhecida. A ilustração a seguir mostra as opções de conclusão de instrução para um objeto do tipo `light` que não pode ser identificado porque o objeto e suas propriedades são indefinidos. No entanto, a `intensity` propriedade está disponível na lista de identificadores porque ela foi usada na `illuminate` função.
 
   **Opções de conclusão para um objeto que não pode ser identificado**
 
-  ![IntelliSense do JavaScript para identificadores](../ide/media/js-intellisense-identifiers.png "|::ref1::|")
+  ![IntelliSense do JavaScript para identificadores](../ide/media/js-intellisense-identifiers.png "js_intellisense_identifiers")
 
   Você pode substituir a lista de conclusão de um objeto usando comentários de documentação XML ou recursos de extensibilidade do JavaScript IntelliSense. Usando esses recursos, você pode fornecer informações de tipo e informações mais descritivas do IntelliSense quando ele pode não estar disponível de outra forma. Para obter mais informações, consulte [Extending JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) and [CREATE XML Documentation Comments](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

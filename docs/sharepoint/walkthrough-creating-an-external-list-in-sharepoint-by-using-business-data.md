@@ -20,9 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015824"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: criar uma lista externa no SharePoint usando dados corporativos
@@ -181,7 +182,7 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
 10. Repita a etapa 6 para criar um descritor de tipo para cada um dos campos a seguir.
 
-    |Nome|Nome do Tipo|
+    |Name|Nome do Tipo|
     |----------|---------------|
     |Nome|System.String|
     |LastName|System.String|
@@ -236,7 +237,7 @@ Para habilitar o serviço BDC para exibir os contatos em uma lista, você deve a
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
 
-## <a name="test-the-project"></a>Teste do projeto
+## <a name="test-the-project"></a>Testar o projeto
 
 Quando você executa o projeto, o site do SharePoint é aberto e o Visual Studio adiciona seu modelo ao serviço de conectividade de dados corporativos. Crie uma lista externa no SharePoint que faça referência à entidade Contact. Os dados de contatos no banco de dados AdventureWorks aparecem na lista.
 
@@ -273,7 +274,7 @@ Você pode aprender mais sobre como projetar modelos para o serviço BDC no Shar
 - [Como adicionar um método de atualizador](../sharepoint/how-to-add-an-updater-method.md).
 - [Como adicionar um método excluidor](../sharepoint/how-to-add-a-deleter-method.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Criar um modelo](../sharepoint/designing-a-business-data-connectivity-model.md) 
  de conectividade de dados corporativos [Criar um modelo](../sharepoint/creating-a-business-data-connectivity-model.md) 

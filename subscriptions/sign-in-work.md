@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta corporativa ou de estudante.
 ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906134"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Entrar em assinaturas do Visual Studio com sua conta corporativa ou de estudante 
@@ -28,7 +28,7 @@ Este artigo fornecerá as etapas para entrar com um endereço de email fornecido
    > [!NOTE]
    > Esse endereço também é identificado no Email de Boas-vindas do assinante que você recebeu. Verifique as pastas de lixo eletrônico, se você tiver problemas para localizar o email de boas-vindas.
 
-3. Clique em **Continue**.
+3. Clique em **Continuar**.
 4. Você será redirecionado para sua página de entrada empresarial.
 5. Digite sua senha.
 6. Clique em **entrar**
@@ -40,13 +40,13 @@ Você também pode ver a assinatura atualmente selecionada no canto superior dir
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>Usar sua MSA (Conta Microsoft) para entrar em uma conta corporativa ou de estudante
 
-1. Vá para [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
+1. Acesse [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída
 
    > [!NOTE]
    > Esse endereço também é identificado na Carta de Boas-vindas do assinante. Se você não recebeu a Carta de boas-vindas, verifique as pastas de lixo eletrônico
 
-3. Clique em **Continue**.
+3. Clique em **Continuar**.
 4. Você será redirecionado para uma página de decisão.
     - Selecione **Conta corporativa ou de estudante** se a assinatura estiver atribuída a uma conta "Corporativa ou de estudante" associada a um locatário do AAD (Azure Active Directory).
     - Selecione **pessoal** se a assinatura estiver associada a um endereço de email "corporativo", mas também tiver sido convertida em uma MSA (conta da Microsoft) "pessoal".

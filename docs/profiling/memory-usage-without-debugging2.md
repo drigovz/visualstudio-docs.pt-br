@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543345"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
@@ -76,7 +76,7 @@ Os números são links que abrem exibições do relatório **Uso de Memória** d
 
   ![Links de exibição do instantâneo](../profiling/media/memuse__snapshotview_numbered.png "Links de exibição do instantâneo")
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O número total de bytes na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo classificado pelo tamanho total de instâncias do tipo.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|O número total de objetos na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo classificado pela contagem de instâncias dos tipos.|
@@ -130,7 +130,7 @@ Os dois links abrem o mesmo relatório. A única diferença é a ordem de classi
 
 A árvore de **Heap Gerenciado** em um relatório de detalhes do instantâneo tem as seguintes colunas:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Tipo de Objeto**|O nome do tipo ou instância de objeto.|
 |**Count**|O número de instâncias do objeto do tipo. **Contagem** é sempre 1 para uma instância.|
@@ -152,7 +152,7 @@ A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos
 
 A árvore de **Tipos Referenciados** em um relatório de detalhes do instantâneo tem as seguintes colunas. Uma árvore de **Objetos Referenciados** não tem a coluna **Contagem de Referência**.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Tipo de Objeto** ou **Instância**|O nome do tipo ou da instância.|
 |**Contagem de referência**|No caso de tipos, o número de instâncias de objeto do tipo.|
@@ -176,7 +176,7 @@ Os dois links abrem o mesmo relatório. A única diferença é a ordem de classi
 
 A árvore de **Heap Gerenciado** em um relatório de diferenças de instantâneos tem as seguintes colunas:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Tipo de Objeto**|O nome do tipo ou instância de objeto.|
 |**Count**|O número de instâncias de um tipo no instantâneo primário. **Count** é sempre 1 para uma instância.|
@@ -203,7 +203,7 @@ A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos
 
 Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâneos tem as seguintes colunas. Uma árvore de **Objetos Referenciados** tem as colunas **Instância**, **Tamanho (Bytes)**, **Tamanho Inclusivo (Bytes)** e **Módulo**.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Tipo de Objeto** ou **Instância**|O nome do tipo ou instância de objeto.|
 |**Contagem de referência**|O número de instâncias de um tipo no instantâneo primário.|

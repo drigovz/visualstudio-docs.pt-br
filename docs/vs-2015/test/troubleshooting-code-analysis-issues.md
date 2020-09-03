@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4eee70b3184496e8dbb7d784501a5cac2aac00ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672115"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionando problemas de análise do código
@@ -21,9 +21,9 @@ ms.locfileid: "72672115"
 
 Este tópico contém informações de solução de problemas para os seguintes problemas de análise de código do Visual Studio.
 
-- [Alterações em uma Regra do Visual Studio 2010 Não Afetarão as Versões Anteriores do Visual Studio](#ChildRuleSetChangesInPreviousVersions)
+- [As alterações em um conjunto de regras do Visual Studio 2010 não são refletidas nas versões anteriores do Visual Studio](#ChildRuleSetChangesInPreviousVersions)
 
-## <a name="ChildRuleSetChangesInPreviousVersions"></a> Alterações em uma Regra do Visual Studio 2010 Não Afetarão as Versões Anteriores do Visual Studio
+## <a name="changes-in-a-visual-studio-2010-rule-set-are-not-reflected-in-previous-visual-studio-versions"></a><a name="ChildRuleSetChangesInPreviousVersions"></a> Alterações em uma Regra do Visual Studio 2010 Não Afetarão as Versões Anteriores do Visual Studio
 
 Ao criar um conjunto de regras no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contém um conjunto de regras filho, uma alteração no conjunto de regras filho pode não ser aplicada em execuções de análise de código em computadores que usam uma versão anterior do Visual Studio. Para resolver esse problema, é necessário forçar uma reescrita de conjunto de regras pai, que é o conjunto de regras que contém o conjunto de regras filho.
 
@@ -33,7 +33,7 @@ Ao criar um conjunto de regras no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-
 
 3. Abra o conjunto de regras, reverta a alteração e, em seguida, salve o conjunto de regras novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a qualidade do aplicativo](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
 - [Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

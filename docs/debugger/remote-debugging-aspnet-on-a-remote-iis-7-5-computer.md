@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173909"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Depuração remota do ASP.NET em um computador remoto IIS
@@ -66,9 +66,9 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
     Para fazer isso no Visual Studio 2017, escolha **arquivo > novo > projeto**e, em seguida, selecione **Visual C# > Web > ASP.NET aplicativo Web**. Na seção modelos do **ASP.NET 4.5.2** , selecione **MVC**. Verifique se a **caixa de seleção Habilitar suporte do Docker** não está selecionada e se a **autenticação** está definida como **sem autenticação**. Nomeie o projeto **MyASPApp**.)
     ::: moniker-end
 
-2. Abra o arquivo *HomeController.cs* e defina um ponto de interrupção no `About()` método.
+2. Abra o arquivo  *HomeController.cs* e defina um ponto de interrupção no `About()` método.
 
-## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalar e configurar o IIS no Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a> Instalar e configurar o IIS no Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -83,7 +83,7 @@ Se a configuração de segurança aprimorada estiver habilitada no Internet Expl
 
 Ao baixar o software, você pode obter solicitações para conceder permissão para carregar vários recursos e scripts de site. Alguns desses recursos não são necessários, mas para simplificar o processo, clique em **Adicionar** quando solicitado.
 
-## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a>Instalar o ASP.NET 4,5 no Windows Server
+## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a> Instalar o ASP.NET 4,5 no Windows Server
 
 Se você quiser informações mais detalhadas para instalar o ASP.NET no IIS, consulte [iis 8,0 usando ASP.NET 3,5 e ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -132,7 +132,7 @@ Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado auto
 1. Na caixa de diálogo **configurações** , habilite a depuração clicando em **Avançar**, escolha uma configuração de **depuração** e, em seguida, escolha **remover arquivos adicionais no destino** nas opções de **publicação de arquivo** .
 
     > [!IMPORTANT]
-    > Se você escolher uma configuração de versão, desabilite a depuração no arquivo *Web. config* quando publicar.
+    > Se você escolher uma configuração de versão, desabilite a depuração no arquivo de *web.config* quando publicar.
 
 1. Clique em **salvar** e Republique o aplicativo.
 
@@ -140,7 +140,7 @@ Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado auto
 
 Você pode usar essa opção para implantar seu aplicativo se quiser copiar o aplicativo para o IIS usando o PowerShell, o RoboCopy ou desejar copiar manualmente os arquivos.
 
-### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurar o site do ASP.NET no computador do Windows Server
+### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurar o site do ASP.NET no computador do Windows Server
 
 1. Abra o Windows Explorer e crie uma nova pasta, **C:\Publish**, em que você implantará posteriormente o projeto ASP.net.
 
@@ -162,7 +162,7 @@ Você pode usar essa opção para implantar seu aplicativo se quiser copiar o ap
 
 Você também pode publicar e implantar o aplicativo usando o sistema de arquivos ou outras ferramentas.
 
-1. (ASP.NET 4.5.2) Certifique-se de que o arquivo Web. config liste a versão correta do .NET.  Por exemplo, se você estiver direcionando ASP.NET 4.5.2, verifique se essa versão está listada em Web. config.
+1. (ASP.NET 4.5.2) Certifique-se de que o arquivo web.config liste a versão correta do .NET.  Por exemplo, se você estiver direcionando ASP.NET 4.5.2, verifique se essa versão está listada em web.config.
 
     ```xml
     <system.web>
@@ -179,13 +179,13 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Baixar e instalar as ferramentas remotas no Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Baixar e instalar as ferramentas remotas no Windows Server
 
 Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurar o depurador remoto no Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -194,7 +194,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 Para obter informações sobre como executar o depurador remoto como um serviço, consulte [executar o depurador remoto como um serviço](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Anexar ao aplicativo ASP.NET do computador do Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Anexar ao aplicativo ASP.NET do computador do Visual Studio
 
 1. No computador do Visual Studio, abra a solução que você está tentando depurar (**MyASPApp** se estiver seguindo as etapas neste artigo).
 2. No Visual Studio, clique em **depurar > anexar ao processo** (CTRL + ALT + P).
@@ -219,11 +219,11 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
     Se você não vir nenhum processo, tente usar o endereço IP em vez do nome do computador remoto (a porta é necessária). Você pode usar `ipconfig` o em uma linha de comando para obter o endereço IPv4.
 
-5. Marque **Mostrar processos de todos os usuários**.
+5. Marque  **Mostrar processos de todos os usuários**.
 
-6. Digite a primeira letra de um nome de processo para localizar rapidamente **w3wp. exe** para ASP.NET 4,5.
+6. Digite a primeira letra de um nome de processo para localizar rapidamente **w3wp.exe** para ASP.NET 4,5.
 
-    Se você tiver vários processos mostrando **w3wp. exe**, verifique a coluna **nome de usuário** . Em alguns cenários, a coluna **nome de usuário** mostra o nome do pool de aplicativos, como o **IIS APPPOOL\DefaultAppPool**. Se você vir o pool de aplicativos, uma maneira fácil de identificar o processo correto é criar um novo pool de aplicativos nomeados para a instância do aplicativo que você deseja depurar e, em seguida, encontrá-lo facilmente na coluna **nome de usuário** .
+    Se você tiver vários processos mostrando **w3wp.exe**, verifique a coluna **nome de usuário** . Em alguns cenários, a coluna **nome de usuário** mostra o nome do pool de aplicativos, como o **IIS APPPOOL\DefaultAppPool**. Se você vir o pool de aplicativos, uma maneira fácil de identificar o processo correto é criar um novo pool de aplicativos nomeados para a instância do aplicativo que você deseja depurar e, em seguida, encontrá-lo facilmente na coluna **nome de usuário** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")

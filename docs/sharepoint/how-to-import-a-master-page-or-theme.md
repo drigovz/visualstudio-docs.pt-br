@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015294"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Como importar uma página mestra ou tema
-  Você pode dar uma aparência consistente às páginas do seu site do SharePoint criando e usando páginas mestras e temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]o não fornece modelos para esses elementos, mas você pode criá-los no SharePoint Designer e, em seguida, importá-los para o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obter mais informações, consulte [bloco de construção: páginas e interface do usuário](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) no site da Microsoft.
+  Você pode dar uma aparência consistente às páginas do seu site do SharePoint criando e usando páginas mestras e temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o não fornece modelos para esses elementos, mas você pode criá-los no SharePoint Designer e, em seguida, importá-los para o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obter mais informações, consulte [bloco de construção: páginas e interface do usuário](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) no site da Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Para importar uma página mestra ou tema
 
@@ -88,7 +89,7 @@ ms.locfileid: "86015294"
 
      A lista de páginas mestras ou temas é exibida e contém a página mestra ou o tema que você importou.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Páginas mestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importando itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Criar páginas para o SharePoint](../sharepoint/creating-pages-for-sharepoint.md)

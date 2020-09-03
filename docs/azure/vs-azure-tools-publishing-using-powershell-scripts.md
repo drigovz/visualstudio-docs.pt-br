@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84179954"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste
@@ -306,7 +306,7 @@ return $WebDeployPackage
     Para automatizar o teste do seu aplicativo, adicione código ao `Test-WebApplication`. Certifique-se de cancelar os comentários das linhas em **Publish-WebApplication.ps1** no qual essas funções são chamadas. Se você não fornecer uma implementação, poderá compilar manualmente seu projeto com o Visual Studio e depois executar o script de publicação para publicar no Azure.
 
 ## <a name="publishing-function-summary"></a>Resumo da função de publicação
-Para obter ajuda para as funções que você pode usar no prompt de comando do Windows PowerShell, use o comando `Get-Help function-name`. A Ajuda inclui exemplos e ajuda de parâmetro. O mesmo texto de ajuda também está nos arquivos de origem do script **AzureWebAppPublishModule. psm1** e **Publish-WebApplication. ps1**. O script e a ajuda estão localizados em seu idioma do Visual Studio.
+Para obter ajuda para as funções que você pode usar no prompt de comando do Windows PowerShell, use o comando `Get-Help function-name`. A Ajuda inclui exemplos e ajuda de parâmetro. O mesmo texto de ajuda também está nos arquivos de origem do script **AzureWebAppPublishModule. psm1** e **Publish-WebApplication.ps1**. O script e a ajuda estão localizados em seu idioma do Visual Studio.
 
 **AzureWebAppPublishModule**
 

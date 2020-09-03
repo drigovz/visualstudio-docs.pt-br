@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542851"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos da Store no Visual Studio
@@ -29,7 +29,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 >
 >   Para obter mais informações, consulte [Executar o teste de unidade em seu código](../test/unit-test-your-code.md) na Biblioteca do MSDN.
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Neste tópico
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Neste tópico
  [Estruturas de teste de unidade e projetos de teste](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Executando testes no Gerenciador de Testes](#BKMK_Running_tests_in_Test_Explorer)
@@ -50,10 +50,10 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 
   [Depuração de testes de unidade](#BKMK_Debugging_unit_tests)
 
-## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a>Estruturas de teste de unidade e projetos de teste
+## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Estruturas de teste de unidade e projetos de teste
  O Visual Studio Express para aplicativos da Windows Store inclui as estruturas de teste de unidade da Microsoft para código C++ gerenciado e nativo. O Gerenciador de Testes pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Os projetos de teste podem ser qualquer combinação de Visual C++ ou estruturas de teste de unidade Visual C# e Visual Basic. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem do .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++.
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Executando testes no Gerenciador de testes
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Executando testes no Gerenciador de testes
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
 
  ![Gerenciador de Testes de Unidade](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 
  ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Executando testes
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> Executando testes
  Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
@@ -75,7 +75,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 
   A barra de aprovação/reprovação na parte superior da janela do Gerenciador de Testes é animada conforme os testes são executados. Na conclusão da execução de teste, a barra de aprovação/reprovação ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Exibindo resultados de teste
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> Exibindo resultados de teste
  Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos **Testes com falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. O painel de detalhes na parte inferior do Gerenciador de Testes exibe um resumo da execução de teste.
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Exibindo detalhes do teste
@@ -103,7 +103,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 ### <a name="grouping-tests"></a><a name="BKMK_Grouping_tests"></a> Agrupando testes
  Por padrão, o Gerenciador de Testes exibe os testes como nós filhos de **Testes Reprovados**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**.
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![Botão de grupo do Gerenciador de Testes](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar os testes pelo tempo necessário para executá-los, abra a lista **Agrupar por** e escolha **Duração**. Escolha **Resultado do Teste** para mudar para o agrupamento original.|
 

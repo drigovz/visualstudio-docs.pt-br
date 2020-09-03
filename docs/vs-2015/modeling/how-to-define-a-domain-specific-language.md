@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ded7dcc05907f2f6a3d8c43af175ad55c499f56
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543319"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
@@ -30,7 +30,7 @@ ms.locfileid: "85543319"
 
 Para definir uma linguagem específica de domínio (DSL), crie uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a partir de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
 
-## <a name="selecting-a-template-solution"></a><a name="templates"></a>Selecionando uma solução de modelo
+## <a name="selecting-a-template-solution"></a><a name="templates"></a> Selecionando uma solução de modelo
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |Produto|Link de download|
@@ -121,7 +121,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
   Exclua ou renomeie outras classes para atender aos seus requisitos.
 
-## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a>Padrões para definir uma DSL
+## <a name="patterns-for-defining-a-dsl"></a><a name="patterns"></a> Padrões para definir uma DSL
  Recomendamos que você desenvolva uma DSL adicionando ou ajustando um ou dois recursos por vez. Adicione um recurso, execute a DSL e teste-a, em seguida, adicione um ou dois recursos adicionais. Um recurso típico de sua DSL pode ser:
 
 - Uma classe de domínio, a relação de incorporação que conecta o elemento ao modelo, a forma necessária para exibir elementos dessa classe no diagrama e a ferramenta do elemento que permite aos usuários criar elementos.
@@ -148,7 +148,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 > [!NOTE]
 > "Modelo" refere-se a uma instância de sua DSL que os usuários criam e geralmente é exibida como um diagrama. Este tópico discute o diagrama da Definição de DSL e os diagramas de modelo que aparecem quando sua DSL é usada.
 
-## <a name="defining-domain-classes"></a><a name="classes"></a>Definindo classes de domínio
+## <a name="defining-domain-classes"></a><a name="classes"></a> Definindo classes de domínio
  As classes de domínio representam os conceitos de sua DSL. As instâncias são *elementos de modelo*. Por exemplo, em uma DSL **MusicLibrary** , você pode ter classes de domínio denominadas **Album** e **Song**.
 
  Para criar uma classe de domínio, você pode arrastar da ferramenta de **classe de domínio nomeada** para o diagrama e, em seguida, renomear a classe.
@@ -230,7 +230,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
 7. **Salve o arquivo, feche-o e abra-o novamente**. Após a expansão dos nós, todas as instâncias criadas devem estar visíveis no gerenciador.
 
-## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a>Definindo formas no diagrama
+## <a name="defining-shapes-on-the-diagram"></a><a name="shapes"></a> Definindo formas no diagrama
  Você pode definir as classes de elementos que aparecem em um diagrama como retângulos, elipses ou ícones.
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Para definir uma classe de elementos que aparece como formas em um diagrama
@@ -326,7 +326,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
    Depois de testar inicialmente uma forma, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="defining-reference-relationships"></a><a name="references"></a>Definindo relações de referência
+## <a name="defining-reference-relationships"></a><a name="references"></a> Definindo relações de referência
  Você pode definir uma relação de referência entre qualquer classe de domínio de origem e qualquer classe de domínio de destino. As relações de referência são geralmente exibidas em um diagrama como conectores, que são linhas entre formas.
 
  Por exemplo, se Álbuns de música e Artistas forem exibidos como formas no diagrama, será possível definir um relação chamada ArtistsAppearedOnAlbums, a qual vincula os Artistas aos Álbuns nos quais eles trabalharam. Veja o exemplo na figura.
@@ -408,7 +408,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
    Depois de testar inicialmente um conector, talvez você queira ajustar algumas de suas propriedades e adicionar outros recursos mais avançados. Para obter mais informações, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a>Definindo formas que contêm listas: formas de compartimento
+## <a name="defining-shapes-that-contain-lists-compartment-shapes"></a><a name="compartments"></a> Definindo formas que contêm listas: formas de compartimento
  Uma forma do compartimento contém uma ou mais listas de itens. Por exemplo, em uma DSL de Biblioteca de Músicas, você poderia usar formas do compartimento para representar os Álbuns de música. Em cada Álbum, há uma lista de Canções.
 
  ![Forma de compartimento](../modeling/media/compartmentshape.png "CompartmentShape")
@@ -536,7 +536,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
 7. Selecione o vínculo ou o item na forma do compartimento. O vínculo e o item devem desaparecer.
 
-## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a>Definindo portas no limite de outra forma
+## <a name="defining-ports-on-the-boundary-of-another-shape"></a><a name="ports"></a> Definindo portas no limite de outra forma
  Uma porta é uma forma que está localizada no limite de outra forma.
 
  As portas também podem ser usadas para fornecer um ponto de conexão fixo em outra forma, no qual o usuário pode desenhar conectores. Nesse caso, você pode tornar a forma da porta transparente.
@@ -559,7 +559,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
   Para obter mais informações, consulte [Propriedades de formas de porta](../modeling/properties-of-port-shapes.md).
 
-## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a>Definindo uma DSL que tem raias
+## <a name="defining-a-dsl-that-has-swimlanes"></a><a name="swimlanes"></a> Definindo uma DSL que tem raias
  As raias são uma partição horizontal ou vertical de um diagrama. Cada raia corresponde a um elemento de modelo. Sua definição de DSL requer uma classe de domínio para os elementos de raia.
 
  A melhor maneira de criar uma DSL com raias é criar uma nova solução DSL e escolher o modelo de solução Fluxo de Tarefa. Na Definição de DSL, a classe Ator é a classe de domínio mapeada para a raia. Renomeie essa e as outras classes da forma adequada ao seu projeto.
@@ -570,7 +570,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
  Para obter mais informações, consulte [Propriedades de raias](../modeling/properties-of-swimlanes.md).
 
-## <a name="adding-property-types"></a><a name="addTypes"></a>Adicionando tipos de propriedade
+## <a name="adding-property-types"></a><a name="addTypes"></a> Adicionando tipos de propriedade
 
 ### <a name="domain-enumerations-and-literals"></a>Enumerações e literais de domínio
  Uma enumeração de domínio é um tipo com vários valores de literais.
@@ -586,7 +586,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 
  Para adicionar um tipo, clique com o botão direito do mouse na raiz do modelo no Gerenciador de DSL e clique em **Adicionar novo tipo externo**. Na janela Propriedades, defina o nome como **cor** e o namespace como **System. Drawing**. Esse tipo agora aparece no Gerenciador de DSL em **tipos de domínio**. Você pode escolhê-lo sempre que definir o tipo de uma propriedade de domínio.
 
-## <a name="customizing-the-dsl"></a><a name="custom"></a>Personalizando a DSL
+## <a name="customizing-the-dsl"></a><a name="custom"></a> Personalizando a DSL
  Usando as técnicas descritas neste tópico, é possível criar com rapidez uma DSL com uma notação diagramática, uma forma XML legível e as ferramentas básicas necessárias para gerar código e outros artefatos.
 
  Há dois métodos de extensão da definição de DSL:

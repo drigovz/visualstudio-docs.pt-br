@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015678"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Walkthrough: estender um tipo de item de projeto do SharePoint
@@ -76,7 +77,7 @@ ms.locfileid: "86015678"
 
 6. Na caixa **nome** , digite **GenerateExternalDataLists**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **GenerateExternalDataLists** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **GenerateExternalDataLists** ao **Gerenciador de soluções**.
 
 7. Se o arquivo Source. Extension. vsixmanifest não abrir automaticamente, abra o menu de atalho no projeto GenerateExternalDataLists e, em seguida, escolha **abrir**
 
@@ -94,7 +95,7 @@ ms.locfileid: "86015678"
 
 5. Na caixa **nome** , digite **BdcProjectItemExtension**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **BdcProjectItemExtension** à solução e abre o arquivo de código de Class1 padrão.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **BdcProjectItemExtension** à solução e abre o arquivo de código de Class1 padrão.
 
 6. Exclua o arquivo de código Class1 do projeto.
 
@@ -236,7 +237,7 @@ ms.locfileid: "86015678"
 
 14. Verifique se a seção **listas** na área início rápido ainda não contém uma lista baseada no modelo BDC padrão no projeto. Você deve primeiro criar uma lista de dados externa usando a interface do usuário do SharePoint ou usando a extensão de item do projeto.
 
-15. Feche o navegador da web.
+15. Feche o navegador da Web.
 
 16. Na instância do Visual Studio que tem o projeto TestBDCModel aberto, abra o menu de atalho do nó **TestBDCModel** no **Gerenciador de soluções**e escolha **gerar lista de dados externos**.
 
@@ -254,7 +255,7 @@ ms.locfileid: "86015678"
 
      O modelo de projeto **modelo de conectividade de dados corporativos** gera o modelo BDC padrão que fornece todos esses dados.
 
-22. Feche o navegador da web.
+22. Feche o navegador da Web.
 
 ## <a name="clean-up-the-development-computer"></a>Limpar o computador de desenvolvimento
  Depois de concluir o teste da extensão de item de projeto, remova a lista externa e o modelo BDC do site do SharePoint e remova a extensão de item de projeto do Visual Studio.
@@ -269,7 +270,7 @@ ms.locfileid: "86015678"
 
 4. Em **permissões e gerenciamento**, escolha **excluir esta lista**e, em seguida, escolha **OK** para confirmar que você deseja enviar a lista para a lixeira.
 
-5. Feche o navegador da web.
+5. Feche o navegador da Web.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Para remover o modelo BDC do site do SharePoint
 
@@ -291,7 +292,7 @@ ms.locfileid: "86015678"
 
 5. Feche as duas instâncias do Visual Studio (a instância experimental e a instância na qual a solução GenerateExternalDataLists está aberta).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)

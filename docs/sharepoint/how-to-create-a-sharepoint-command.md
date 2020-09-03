@@ -13,9 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016217"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Como: criar um comando do SharePoint
@@ -76,7 +77,7 @@ ms.locfileid: "86016217"
 ## <a name="deploying-the-command"></a>Implantando o comando
  Para implantar o comando, inclua o assembly de comando no mesmo [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote do*VSIX*(a mesma extensão) com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension. vsixmanifest. Para obter mais informações, consulte [implantar extensões para as ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Chamar para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [Como executar um comando do SharePoint](../sharepoint/how-to-execute-a-sharepoint-command.md)
 - [Walkthrough: estender Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

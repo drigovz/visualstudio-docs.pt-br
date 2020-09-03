@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579450"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
@@ -22,13 +22,13 @@ ms.locfileid: "77579450"
 Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e adiciona rótulos, um botão, e outros controles a um formulário. Você também define as propriedades para cada controle adicionado. O projeto conterá o formulário, controles e (posteriormente neste tutorial) o código. O botão inicia o teste, os rótulos mostram os problemas do teste e outros controles mostram as respostas dos teste e o tempo permanece para concluir o teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, consulte [tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-for-a-form"></a>Para criar um projeto para um formulário
 
 ::: moniker range="vs-2017"
 
-1. Na barra de menu, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, escolha **arquivo** > **novo** > **projeto**.
 
 1. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
@@ -43,15 +43,15 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ::: moniker range="vs-2019"
 
-1. Na janela inicial, escolha **Criar um novo projeto**.
+1. Na janela iniciar, escolha **criar um novo projeto**.
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **Desktop** na lista **de tipos de projeto.**
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **área de trabalho** na lista tipo de **projeto** .
 
-   Depois de aplicar o filtro **tipo Projeto,** escolha o modelo **do Aplicativo de formulários do Windows (.NET Framework)** para C# ou Visual Basic e escolha **Next**.
+   Depois de aplicar o filtro de **tipo de projeto** , escolha o modelo **aplicativo de Windows Forms (.NET Framework)** para C# ou Visual Basic e, em seguida, escolha **Avançar**.
 
-   ![Escolha o modelo C# ou Visual Basic para o Aplicativo Formulários do Windows (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Escolha o modelo C# ou Visual Basic para o aplicativo Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)**, poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
@@ -64,7 +64,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho.
 
-1. Na janela **Configurar seu novo projeto**, digite ou insira *MathQuiz* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+1. Na janela **Configurar seu novo projeto**, digite ou insira *MathQuiz* na caixa **Nome do projeto**. Em seguida, escolha **criar**.
 
 ::: moniker-end
 
@@ -100,9 +100,9 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 6. Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla **Backspace** para apagar o seu valor.
 
-7. Escolha o sinal**+** de mais ( ) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Tamanho** para **15,75**.
+7. Escolha o sinal de adição ( **+** ) ao lado da propriedade **fonte** e, em seguida, altere o valor da propriedade **tamanho** para **15,75**.
 
-     Você pode alterar várias propriedades da fonte, como mostra a captura de tela a seguir.
+     Você pode alterar várias propriedades de fonte, como mostra a captura de tela a seguir.
 
      ![Tamanho da fonte de exibição na janela Propriedades](../ide/media/express_setfontsize.png)
 
@@ -130,7 +130,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 8. Escolha o rótulo **plusLeftLabel** e, em seguida, pressione as teclas **Ctrl**+**C** ou **Copiar** no menu **Editar**.
 
-9. Cole o rótulo três vezes escolhendo as teclas **Ctrl**+**V** ou **Cole** no menu **Editar.**
+9. Cole o rótulo três vezes escolhendo as teclas **Ctrl** + **V** ou **colar** no menu **Editar** .
 
 10. Organize os três novos rótulos de modo que fiquem em uma linha à direita do rótulo **plusLeftLabel**.
 
@@ -150,7 +150,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 16. Altere o valor da propriedade **(Name)** do controle NumericUpDown para **sum**.
 
-     Você criou a primeira linha, como mostrado na ilustração a seguir.
+     Você criou a primeira linha, conforme mostrado na ilustração a seguir.
 
      ![A primeira linha do teste de matemática](../ide/media/express_firstrow.png)
 
@@ -196,7 +196,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 6. Defina o valor da propriedade **TabIndex** para o controle **startButton** como **1**.
 
     > [!NOTE]
-    > A propriedade **TabIndex** define a ordem dos controles quando a pessoa realizando o teste escolhe a tecla **Tab**. Para ver como funciona, abra qualquer caixa de diálogo (por exemplo, na barra de menu, escolha **Abrir arquivos)** > **Open**e escolha a **tecla Tab** algumas vezes. Inspecione como o cursor move o controle para controlar cada vez que você escolhe a tecla **Tab**. Um programador decidiu a ordem ao criar o formulário.
+    > A propriedade **TabIndex** define a ordem dos controles quando a pessoa realizando o teste escolhe a tecla **Tab**. Para ver como funciona, abra qualquer caixa de diálogo (por exemplo, na barra de menus, escolha **arquivo**  >  **abrir**) e, em seguida, escolha a tecla **Tab** algumas vezes. Inspecione como o cursor move o controle para controlar cada vez que você escolhe a tecla **Tab**. Um programador decidiu a ordem ao criar o formulário.
 
 7. Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.
 
@@ -208,6 +208,6 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[Passo 2: Crie um problema de adição aleatória](../ide/step-2-create-a-random-addition-problem.md)**.
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 2: criar um problema de adição aleatória](../ide/step-2-create-a-random-addition-problem.md)**.
 
 - Para retornar ao tópico de visão geral, veja [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).

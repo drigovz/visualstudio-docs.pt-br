@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015814"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usar módulos para incluir arquivos na solução
@@ -55,7 +56,7 @@ ms.locfileid: "86015814"
 
  Cada arquivo que você deseja implantar requer uma `<File>` entrada de elemento separada em *Elements.xml*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como: incluir arquivos usando um módulo](../sharepoint/how-to-include-files-by-using-a-module.md)
 - [Como provisionar um arquivo](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

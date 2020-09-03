@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173922"
 ---
 # <a name="design-warnings"></a>Avisos de design
@@ -93,6 +93,6 @@ Os avisos de design dão suporte à adesão às [diretrizes de design de .NET Fr
 | [CA1066: Implementar IEquatable ao substituir Equals](../code-quality/ca1066.md) | Um tipo de valor substitui o <xref:System.Object.Equals%2A> método, mas não <xref:System.IEquatable%601> implementa. |
 | [CA1067: Substituir Equals ao implementar IEquatable](../code-quality/ca1067.md) | Um tipo implementa <xref:System.IEquatable%601> , mas não substitui o <xref:System.Object.Equals%2A> método. |
 | [CA1068: Os parâmetros CancellationToken devem vir por último](../code-quality/ca1068.md) | Um método tem um parâmetro CancellationToken que não é o último parâmetro. |
-| [CA1069: Enums não devem ter valores duplicados](../code-quality/ca1069.md) | Uma enumeração tem vários membros que são atribuídos explicitamente ao mesmo valor de constante. |
-| [CA1070: não declarar campos de evento como virtuais](../code-quality/ca1070.md) | Um [evento do tipo campo](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) foi declarado como virtual. |
+| [CA1069: Enumerações não devem ter valores duplicados](../code-quality/ca1069.md) | Uma enumeração tem vários membros que são atribuídos explicitamente ao mesmo valor de constante. |
+| [CA1070: Não declarar os campos de evento como virtuais](../code-quality/ca1070.md) | Um [evento do tipo campo](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) foi declarado como virtual. |
 | [CA2210: Assemblies devem ter nomes fortes válidos](../code-quality/ca2210.md) | O nome forte protege clientes do carregamento desconhecido de um assembly adulterado. Os assemblies sem nomes fortes não devem ser implantados fora de cenários muito limitados. Se você compartilhar ou distribuir assemblies não assinados corretamente, o assembly poderá ser adulterado, o Common Language Runtime poderá não carregar o assembly ou o usuário talvez precise desabilitar a verificação em seu computador. |

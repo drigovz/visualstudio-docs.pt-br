@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621503"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabalhando no Editor de Conjunto de Regras de Análise do Código
@@ -27,7 +27,7 @@ O editor de conjunto de regras de análise de código permite que você especifi
 |------------|-----------------|
 |**Aviso**|Gera um aviso na janela de **lista de erros** .|
 |**Erro**|Gera um erro na janela de **lista de erros** .|
-|**Nenhum**|Desabilita a regra.|
+|**Nenhuma**|Desabilita a regra.|
 
  O editor exibe as regras em uma estrutura de árvore que agrupa as regras por um campo de conjunto de regras que você especificar. Para adicionar ou remover regras de um conjunto de regras, execute uma ou mais das seguintes etapas:
 
@@ -45,8 +45,8 @@ O editor de conjunto de regras de análise de código permite que você especifi
 |Controle ToolBar|Descrição|
 |---------------------|-----------------|
 |**Expandir Tudo**|Mostra as regras em todos os grupos.|
-|**Recolher tudo**|Oculta as regras em todos os grupos.|
-|**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em **\<None >** para mostrar as regras sem grupos.|
+|**Recolher Tudo**|Oculta as regras em todos os grupos.|
+|**Agrupar por**|Especifica o campo pelo qual as regras são agrupadas. Clique **\<None>** para mostrar as regras sem grupos.|
 |**Opções de Coluna**|Especifica os campos de regra a serem exibidos.|
 |**Ocultar regras que não se aplicam à solução atual**|Mostra ou oculta regras que não são do mesmo tipo de destino que a solução.|
 |**Mostrar regras que podem gerar erros de análise de código**|Mostra ou oculta as regras que são atribuídas à ação de erro.|

@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::LoadSymbols | Microsoft Docs
+title: 'IDebugModule3:: LoadSymbols | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c61339305200acc9a6c572a1a96595dc4cb6f50
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726778"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
@@ -41,9 +41,9 @@ int LoadSymbols();
  Se o método for bem-sucedido, retornará `S_OK`. Se falhar, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método carrega os símbolos do caminho de pesquisa atual (que pode ser alterado chamando o método [SetSymbolPath).](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)
+ Esse método carrega os símbolos do caminho de pesquisa atual (que pode ser alterado chamando o método [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) ).
 
- Este método é preferido em relação ao método [ReloadSymbols_Deprecated.](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)
+ Esse método é preferencial sobre o método [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

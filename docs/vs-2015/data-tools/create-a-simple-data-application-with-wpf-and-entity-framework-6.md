@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 403415eaf8a882efdd63fdb9a73b5489b91f2529
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651079"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
@@ -34,7 +34,7 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 
 ## <a name="configure-the-project"></a>Configurar o projeto
 
-1. No Visual Studio, escolha **arquivo &#124; novo projeto** e, em seguida, C# crie um novo aplicativo do WPF.
+1. No Visual Studio, escolha **arquivo &#124; novo projeto** e, em seguida, crie um novo aplicativo WPF em C#.
 
 2. Em seguida, adicionaremos o pacote NuGet para Entity Framework 6. Em Gerenciador de Soluções, selecione o nó do projeto. No menu principal, escolha **projeto &#124; gerenciar pacotes NuGet...**
 
@@ -48,7 +48,7 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 
 ## <a name="create-the-model"></a>Criar o modelo
 
-1. Clique com o botão direito do mouse no nó do projeto em Gerenciador de Soluções e escolha  **&#124; adicionar novo item**. No painel esquerdo, no C# nó, escolha **dados** e, no painel central, escolha **ADO.NET modelo de dados de entidade**.
+1. Clique com o botão direito do mouse no nó do projeto em Gerenciador de Soluções e escolha **adicionar &#124; novo item**. No painel esquerdo, no nó C#, escolha **dados** e, no painel central, escolha **ADO.NET modelo de dados de entidade**.
 
     ![Novo item de projeto do modelo de Entity Framework](../data-tools/media/raddata-ef-new-project-item.png "Novo item de projeto do raddata EF")
 
@@ -62,19 +62,19 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 
     ![Escolher objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png "raddata escolher objetos do EF")
 
-5. O assistente gera as C# classes que representam o modelo de Entity Framework. Essas são C# classes simples e são as que iremos associar à interface do usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associam as classes a objetos no banco de dados.  Os arquivos. tt são modelos T4 que geram o código que funcionará no modelo e salvará as alterações no banco de dados. Você pode ver todos esses arquivos em Gerenciador de Soluções no nó Northwind_model:
+5. O assistente gera as classes C# que representam o modelo de Entity Framework. Essas são classes simples do C# e são as que iremos associar à interface do usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associam as classes a objetos no banco de dados.  Os arquivos. tt são modelos T4 que geram o código que funcionará no modelo e salvará as alterações no banco de dados. Você pode ver todos esses arquivos em Gerenciador de Soluções no nó Northwind_model:
 
     ![Arquivos de modelo do Gerenciador de Soluções EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "arquivos de modelo do raddata Gerenciador de Soluções EF")
 
     A superfície do designer para o arquivo. edmx permite que você modifique algumas propriedades e relações no modelo. Não usaremos o designer neste passo a passos.
 
-6. Os arquivos. tt são de finalidade geral e precisamos ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections.  Em Gerenciador de Soluções, expanda o nó Northwind_model até encontrar Northwind_model. tt. (Verifique se você **não** está no *. Arquivo context. tt que está diretamente abaixo do arquivo. edmx).
+6. Os arquivos. tt são de finalidade geral e precisamos ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections.  Em Gerenciador de Soluções, expanda o Northwind_model nó até encontrar Northwind_model. tt. (Verifique se você **não** está no *. Arquivo context. tt que está diretamente abaixo do arquivo. edmx).
 
-   - Substitua as duas ocorrências de <xref:System.Collections.ICollection> por <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Substitua as duas ocorrências de <xref:System.Collections.ICollection> por <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
-   - Substitua a primeira ocorrência de <xref:System.Collections.Generic.HashSet%601> por <xref:System.Collections.ObjectModel.ObservableCollection%601> em torno da linha 51. Não substituir a segunda ocorrência de HashSet
+   - Substitua a primeira ocorrência de <xref:System.Collections.Generic.HashSet%601> por pela <xref:System.Collections.ObjectModel.ObservableCollection%601> linha 51. Não substituir a segunda ocorrência de HashSet
 
-   - Substitua a única ocorrência de <xref:System.Collections.Generic> (em torno da linha 334) por <xref:System.Collections.ObjectModel>.
+   - Substitua a única ocorrência de <xref:System.Collections.Generic> (em torno da linha 334) por <xref:System.Collections.ObjectModel> .
 
 7. Pressione **Ctrl + Shift + B** para compilar o projeto. Quando a compilação é concluída, as classes de modelo são visíveis para o assistente de fontes de dados.
 
@@ -83,15 +83,15 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 ## <a name="databind-the-model-to-the-xaml-page"></a>Vincule o modelo à página XAML
  É possível escrever seu próprio código de ligação de dados, mas é muito mais fácil permitir que o Visual Studio faça isso para você.
 
-1. No menu principal, escolha **projeto &#124; Adicionar nova fonte de dados** para abrir o assistente de configuração da fonte de **dados**. Escolha o **objeto** porque estamos ligando às classes de modelo, não ao banco de dados:
+1. No menu principal, escolha **projeto &#124; Adicionar nova fonte de dados** para abrir o **Assistente de configuração da fonte de dados**. Escolha o **objeto** porque estamos ligando às classes de modelo, não ao banco de dados:
 
      ![Assistente de configuração de fonte de dados com fonte de objeto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png "Assistente de configuração da fonte de dados do raddata com fonte de objeto")
 
-2. Selecione cliente.  (As fontes de pedidos serão geradas automaticamente a partir da propriedade de navegação Orders no Customer.)
+2. Selecione Cliente.  (As fontes de pedidos serão geradas automaticamente a partir da propriedade de navegação Orders no Customer.)
 
      ![Adicionar classes de entidade como fontes de dados](../data-tools/media/raddata-add-entity-classes-as-data-sources.png "raddata adicionar classes de entidade como fontes de dados")
 
-3. Clique em **concluir**
+3. Clique em **Concluir**
 
 4. Navegue até MainWindow. XAML na exibição de código. Vamos manter o XAML muito simples para os fins deste exemplo. Altere o título de MainWindow para algo mais descritivo e aumente sua altura e largura para 600 x 800 por enquanto. Você sempre pode alterá-lo mais tarde. Agora, adicione essas três definições de linha à grade principal, uma linha para os botões de navegação, uma para os detalhes do cliente, uma para a grade que mostra seus pedidos:
 
@@ -103,11 +103,11 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
            </Grid.RowDefinitions>
     ```
 
-5. Agora, abra MainWindow. XAML para exibi-lo no designer. Isso fará com que a janela fontes de dados apareça como uma opção na margem da janela do Visual Studio ao lado da caixa de ferramentas. Clique na guia para abrir a janela ou pressione **Shift + Alt + D** ou escolha **Exibir &#124; outras fontes de dados do &#124; Windows**. Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação clientes e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária.  Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário.  Por exemplo, pode fazer sentido colocar a caixa de texto nome na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
+5. Agora, abra MainWindow. XAML para exibi-lo no designer. Isso fará com que a janela fontes de dados apareça como uma opção na margem da janela do Visual Studio ao lado da caixa de ferramentas. Clique na guia para abrir a janela ou pressione **Shift + Alt + D** ou escolha **Exibir &#124; outras fontes de dados do Windows &#124;**. Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação clientes e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária.  Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário.  Por exemplo, pode fazer sentido colocar a caixa de texto nome na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
 
      ![Associação de fonte de dados de clientes a controles individuais](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "Associação de fonte de dados de clientes raddata a controles individuais")
 
-     No modo de exibição de código, agora você pode ver um novo elemento `Grid` na linha 1 (a linha intermediária) da grade pai. A grade pai tem um atributo `DataContext` que se refere a um CollectionViewSource que foi adicionado ao elemento `Windows.Resources`. Dado esse contexto de dados, quando a primeira caixa de texto, por exemplo, é associada a "address", esse nome é mapeado para a propriedade `Address` no objeto `Customer` atual no CollectionViewSource.
+     No modo de exibição de código, agora você pode ver um novo `Grid` elemento na linha 1 (a linha intermediária) da grade pai. A grade pai tem um `DataContext` atributo que se refere a um CollectionViewSource que foi adicionado ao `Windows.Resources` elemento. Dado esse contexto de dados, quando a primeira caixa de texto, por exemplo, é associada a "address", esse nome é mapeado para a `Address` propriedade no `Customer` objeto atual no CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -142,13 +142,13 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
            }
     ```
 
-     Adicione uma diretiva de `using` para System. Data. Entity para colocar o método de extensão de carga no escopo:
+     Adicione uma `using` diretiva para System. Data. Entity para colocar o método de extensão de carga no escopo:
 
     ```csharp
     using System.Data.Entity;
     ```
 
-     Agora, role para baixo e localize o manipulador de eventos Window_Loaded. Observe que o Visual Studio adicionou um objeto CollectionViewSource para nós. Isso representa o objeto NorthwindEntities que selecionamos quando criamos o modelo. Vamos adicionar o código a Window_loaded para que o método inteiro agora se pareça com este:
+     Agora, role para baixo e localize o manipulador de eventos Window_Loaded. Observe que o Visual Studio adicionou um objeto CollectionViewSource para nós. Isso representa o objeto NorthwindEntities que selecionamos quando criamos o modelo. Vamos adicionar o código para Window_loaded para que o método inteiro agora se pareça com este:
 
     ```csharp
     private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -170,7 +170,7 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 8. Pressione **F5**. Você deve ver os detalhes do primeiro cliente que foi recuperado para o CollectionViewSource e seus pedidos na grade de dados. A formatação não é ótima, então vamos corrigi-la. e fazer uma maneira de exibir os outros registros e realizar operações CRUD básicas.
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Ajustar o design da página e adicionar grades para novos clientes e pedidos
- A organização padrão produzida pelo Visual Studio não é ideal para nosso aplicativo, portanto, faremos algumas alterações manualmente no XAML. Também precisaremos de algumas "Forms" (que são, na verdade, grades) para permitir que o usuário adicione um novo cliente ou um novo pedido.    Para poder adicionar um novo cliente e um pedido, precisamos de um conjunto separado de caixas de texto que não sejam associadas a dados à `CollectionViewSource`. Vamos controlar a grade que o usuário vê em um determinado momento definindo a propriedade Visible nos métodos do manipulador.
+ A organização padrão produzida pelo Visual Studio não é ideal para nosso aplicativo, portanto, faremos algumas alterações manualmente no XAML. Também precisaremos de algumas "Forms" (que são, na verdade, grades) para permitir que o usuário adicione um novo cliente ou um novo pedido.    Para poder adicionar um novo cliente e uma ordem, precisamos de um conjunto separado de caixas de texto que não sejam associadas a dados ao `CollectionViewSource` . Vamos controlar a grade que o usuário vê em um determinado momento definindo a propriedade Visible nos métodos do manipulador.
 
  Por fim, adicionaremos um botão de exclusão a cada linha na grade Orders para permitir que um usuário exclua uma ordem individual.
 
@@ -455,7 +455,7 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 
 #### <a name="add-command-handlers-to-the-mainwindow-class"></a>Adicionar manipuladores de comandos à classe MainWindow
 
-1. O code-behind é mínimo, exceto para os métodos Add e Delete. Observe que a navegação é executada por meio da chamada de métodos na Propriedade View do CollectionViewSource. O DeleteOrderCommandHandler mostra como executar uma exclusão em cascata em um pedido. Precisamos primeiro excluir o Detalhes_pedido associado a ele. O UpdateCommandHandler adiciona um novo cliente à coleção ou apenas atualiza o objeto existente com qualquer alteração que o usuário fez nas caixas de texto.
+1. O code-behind é mínimo, exceto para os métodos Add e Delete. Observe que a navegação é executada por meio da chamada de métodos na Propriedade View do CollectionViewSource. O DeleteOrderCommandHandler mostra como executar uma exclusão em cascata em um pedido. Precisamos primeiro excluir os Order_Details associados a ele. O UpdateCommandHandler adiciona um novo cliente à coleção ou apenas atualiza o objeto existente com qualquer alteração que o usuário fez nas caixas de texto.
 
 2. Adicione esses métodos de manipulador à classe MainWindow em MainWindow.xaml.cs, se seu CollectionViewSource para a tabela Customers tiver um nome diferente, você precisará ajustar o nome em cada um destes métodos:
 
@@ -703,5 +703,5 @@ Este Walkthough mostra como criar um aplicativo básico "Forms over data" no Vis
 
 3. Pressione **F5**. Você deve ver seus dados e os botões de navegação devem funcionar conforme o esperado. Clique em "confirmar" para adicionar um novo cliente ou pedido ao modelo depois de inserir os dados.  Clique em "Cancelar" para fazer o back-out de um novo cliente ou formulário de novo pedido sem salvar. Você pode fazer edições em clientes e pedidos existentes diretamente nas caixas de texto, e essas alterações serão gravadas automaticamente no modelo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  Documentação [do Visual Studio Data Tools para .net](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework](https://msdn.microsoft.com/data/ee712907.aspx)

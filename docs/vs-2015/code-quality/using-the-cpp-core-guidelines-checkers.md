@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173545"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
@@ -51,7 +51,7 @@ A Diretrizes Principais do C++ é um conjunto portátil de diretrizes, regras e 
   
    ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Para habilitar ou desabilitar os conjuntos de regras de Verificação Principal do C++, abra a caixa de diálogo **páginas de propriedades** do seu projeto. Em **Propriedades de configuração**, expanda **análise de código**, **extensões**. No controle suspenso ao lado de **habilitar verificação principal do C++ (liberado)** ou **Habilitar verificação principal do C++ (experimental)**, escolha **Sim** ou **não**. Escolha **OK** ou **aplicar** para salvar suas alterações.  
+   Para habilitar ou desabilitar os conjuntos de regras de Verificação Principal do C++, abra a caixa de diálogo **páginas de propriedades** do seu projeto. Em **Propriedades de configuração**, expanda  **análise de código**, **extensões**. No controle suspenso ao lado de **habilitar verificação principal do C++ (liberado)** ou **Habilitar verificação principal do C++ (experimental)**, escolha **Sim** ou **não**. Escolha **OK** ou **aplicar** para salvar suas alterações.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Verificar tipos, limites e tempos de vida  
  O pacote de Verificação Principal do C++ atualmente contém verificadores para a [segurança de tipo](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), segurança de [limites](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)e perfis de segurança de [tempo de vida](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -83,7 +83,7 @@ int main()
   
 - C26485 é associado à regra. 3: nenhum decaimento de matriz para ponteiro.  
   
-- C26481 são limites de regra. 1: não use aritmética de ponteiro. Use `span` em vez disso.  
+- C26481 são limites de regra. 1: não use aritmética de ponteiro. Use `span` em seu lugar.  
   
   Se os conjuntos de regras de análise de código Verificação Principal do C++ estiverem instalados e habilitados quando você compilar esse código, os dois primeiros avisos serão gerados, mas o terceiro será suprimido. Aqui está a saída da compilação do código de exemplo:  
   
@@ -96,7 +96,7 @@ int main()
 **rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): aviso C26494: a variável ' arr ' é uninitializ**  
-**Ed. sempre inicializar um objeto. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
+**comandos. Sempre inicializar um objeto. (Type. 5: https: \/ /go.Microsoft.com/fwlink/p/?link**  
 **ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): aviso C26485: expressão ' arr ': nenhuma matriz para**  

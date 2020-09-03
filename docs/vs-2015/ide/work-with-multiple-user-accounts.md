@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917781"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
@@ -29,16 +29,16 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
 
 1. Entre no Visual Studio 2015 com um conta Microsoft ou uma conta organizacional. Você deve ver seu nome de usuário refletido no canto superior direito da janela, semelhante a este:
 
-     ![Currentlly usuário conectado](../ide/media/vs2015-username.png "VS2015_UserName")
+     ![Usuário atualmente conectado](../ide/media/vs2015-username.png "VS2015_UserName")
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
  Pressione **Ctrl + Alt + S** abrir o **Gerenciador de Servidores**. Clique no ícone do Azure e, quando ele for expandido, você deverá ver os recursos disponíveis na conta do Azure associada à ID que você usou para fazer logon no Visual Studio 2015. Ele deve ser semelhante a este, exceto que você vê seus próprios recursos, e não o Sr. Guido:
 
- ![Gerenciador de Servidores mostrando o nó de ferramentas do Azure expandido](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
+ ![Gerenciador de Servidores mostrando o nó de Ferramentas do Azure expandido](../ide/media/vs2015-serverexplorer.png "VS2015_ServerExplorer")
 
  Na primeira vez que você usar o Visual Studio em qualquer dispositivo específico, a caixa de diálogo mostrará apenas as assinaturas registradas na ID que você usou para entrar no IDE. Você pode acessar os recursos de qualquer uma das outras contas diretamente do **Gerenciador de Servidores** clicando com o botão direito do mouse no nó do Azure e escolhendo **Gerenciar e Filtrar Assinaturas** e, em seguida, adicionar suas contas do controle de seletor de conta. Você pode escolher outra conta, se desejar, clicando na seta para baixo e escolhendo na lista de contas. Depois de escolher a conta, é possível escolher qual assinatura dessa conta você deseja exibir no Gerenciador de Servidores.
 
- ![Caixa de diálogo gerenciar assinaturas do Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
+ ![Caixa de diálogo Gerenciar assinaturas do Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
 
  Na próxima vez que você abrir o Gerenciador de Servidores, os recursos dessa(s) assinatura(s) serão exibidos.
 
@@ -49,10 +49,10 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
 2. Clique com o botão direito do mouse no nó do projeto em Gerenciador de Soluções e escolha **adicionar > serviço conectado**. O assistente Adicionar Serviço Conectado é exibido e mostra a lista de serviços na conta do Azure associada à sua ID de logon do Visual Studio. Observe que você não precisa entrar separadamente no Azure. No entanto, é necessário entrar nas outras contas na primeira vez que você tentar acessar os recursos delas de um determinado computador.
 
     > [!WARNING]
-    > Se esta for a primeira vez que você está criando um aplicativo da Store no Visual Studio 2015 em um computador específico, você será solicitado a habilitar seu dispositivo para o modo de desenvolvimento acessando **configurações &#124; . Atualizações e segurança &#124; para desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+    > Se esta for a primeira vez que você está criando um aplicativo da Store no Visual Studio 2015 em um computador específico, você será solicitado a habilitar seu dispositivo para o modo de desenvolvimento acessando **configurações &#124;. Atualizações e &#124; de segurança para desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
 
-### <a name="access_azure"></a> Acessar o Azure Active Directory em um projeto Web
- O Azure AD habilita o suporte para o logon única do usuário final em aplicativos Web ASP.NET MVC ou autenticação AD nos serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao seu domínio do Active Directory podem usar suas contas existentes do Azure AD para conectar-se aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio. Para ver isso em ação, crie um aplicativo Web (**Arquivo > Novo Projeto > C# > Nuvem > Aplicativo Web ASP.NET**). Na caixa de diálogo Novo Projeto ASP.NET escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
+### <a name="access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Acessar Azure Active Directory em um projeto Web
+ O Azure AD habilita o suporte para o logon única do usuário final em aplicativos Web ASP.NET MVC ou autenticação AD nos serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao seu domínio do Active Directory podem usar suas contas existentes do Azure AD para conectar-se aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio. Para ver isso em ação, crie um aplicativo Web (**Arquivo > Novo Projeto > C# > Nuvem > Aplicativo Web ASP.NET**). Na caixa de diálogo novo projeto ASP.NET, escolha **alterar autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
 
  ![Caixa de diálogo Alterar autenticação para ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 

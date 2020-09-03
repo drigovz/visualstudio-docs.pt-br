@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619722"
 ---
 # <a name="code-snippets"></a>Snippets de código
@@ -48,7 +48,7 @@ finally
 
 ```
 
- Você pode inserir esse snippet clicando em **Inserir Snippet** no menu de contexto da janela de código, então **Visual C#** , então digite `tryf` e, em seguida, TAB; ou você pode digitar `tryf` e pressionar TAB + TAB.
+ Você pode inserir esse snippet clicando em **Inserir Snippet** no menu de contexto da janela de código, então **Visual C#**, então digite `tryf` e, em seguida, TAB; ou você pode digitar `tryf` e pressionar TAB + TAB.
 
  Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha de código (por exemplo, `return FALSE;`) e, em seguida, clicar em **Envolver com** e então em **se**, o snippet de código será expandido ao redor da linha:
 
@@ -85,5 +85,5 @@ End Property
 
  Você pode adicionar e remover diretórios de snippet com os botões **Adicionar** e **Remover** na caixa de diálogo **Gerenciador de Snippets de Código**. Para adicionar snippets de código individuais, use o botão **Importar**.
 
-## <a name="see-also"></a>Consulte também
- [Walkthrough: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md) [como: distribuir](../ide/how-to-distribute-code-snippets.md) [as práticas recomendadas de trechos de código para usar trechos de código de solução de](../ide/best-practices-for-using-code-snippets.md) [problemas](../ide/troubleshooting-snippets.md) trechos de código [Visual C# ](../ide/visual-csharp-code-snippets.md) [ C++ ](../ide/visual-cpp-code-snippets.md) trechos de códigos visuais [Referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md)
+## <a name="see-also"></a>Consulte Também
+ [Walkthrough: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md) [como: distribuir](../ide/how-to-distribute-code-snippets.md) [as práticas recomendadas de trechos de código para usar trechos de código solução de](../ide/best-practices-for-using-code-snippets.md) [problemas](../ide/troubleshooting-snippets.md) de trechos de código [Visual C#](../ide/visual-csharp-code-snippets.md) [Visual C++](../ide/visual-cpp-code-snippets.md) trechos de código trechos de código [referência de esquema](../ide/code-snippets-schema-reference.md)

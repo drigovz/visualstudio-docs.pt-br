@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557682"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como incluir pré-requisitos com um aplicativo ClickOnce
@@ -24,7 +24,7 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
 > [!NOTE]
 > Para adicionar um pacote do instalador para o .NET Framework, consulte [.NET Framework guia de implantação para desenvolvedores](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
-## <a name="Package"></a> Para adicionar um pacote de instalador ao usar Package.xml  
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Para adicionar um pacote de instalador ao usar Package.xml  
   
 1. No Explorador de Arquivos, abra a pasta **Pacotes**.  
   
@@ -34,10 +34,10 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
   
 3. No Bloco de Notas, abra o arquivo **Package.xml**.  
   
-4. Localize o elemento **Name** que contém `http://go.microsoft.com/fwlink`e copie a URL. Inclua a parte **LinkID**.  
+4. Localize o elemento **Name** que contém `http://go.microsoft.com/fwlink` e copie a URL. Inclua a parte **LinkID**.  
   
     > [!NOTE]
-    > Se nenhum elemento **Name** contiver `http://go.microsoft.com/fwlink`, abra o arquivo **Product. xml** na pasta raiz para obter o pré-requisito e localize a cadeia de caracteres **fwlink** .  
+    > Se nenhum elemento de **nome** contiver `http://go.microsoft.com/fwlink` , abra o arquivo **Product.xml** na pasta raiz para obter o pré-requisito e localize a cadeia de caracteres **fwlink** .  
   
     > [!IMPORTANT]
     > Alguns pré-requisitos têm vários pacotes de instalador (por exemplo, para sistemas de 32 bits ou 64 bits). Se vários elementos **Name** contiverem **fwlink**, você deverá repetir as etapas restantes para cada um deles.  
@@ -52,5 +52,5 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
   
      Agora você poderá distribuir o pacote de instalador com seu aplicativo.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

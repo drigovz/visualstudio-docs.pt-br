@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287981"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como: criar um teste de unidade controlado por dados
@@ -171,7 +171,7 @@ Se você executou o método `AddIntegers_FromDataSourceTest` de nosso exemplo, a
 
 Quando o método em teste é corrigido e o teste é novamente executado, a barra de resultados ficará verde e o método de teste é movido para o grupo **Teste Aprovado**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>

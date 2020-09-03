@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476982"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir snippets de código
@@ -58,11 +58,11 @@ Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer 
 
 #### <a name="setting-up-the-directory-structure"></a>Configurando a estrutura de diretório
 
-1. No Gerenciador de Soluções, selecione o nó do projeto e adicione uma pasta que tenha o nome que você deseja que o snippet tenha no Gerenciador de Snippets de Código. Neste caso, deve ser **HelloWorldVB**.
+1. No Gerenciador de Soluções, selecione o nó do projeto e adicione uma pasta que tenha o nome que você deseja que o snippet tenha no Gerenciador de Snippets de Código. Nesse caso, deve ser **HelloWorldVB**.
 
 2. Mova o arquivo .snippet para a pasta **HelloWorldVB**.
 
-3. Selecione o arquivo .snippet no Gerenciador de Soluções e, na janela **Propriedades**, garanta que **Ação de Build** esteja definida como **Conteúdo**; **Copiar para Diretório de Saída** esteja definido como **Copiar Sempre**; e **Incluir em VSIX** esteja definido como **true**.
+3. Selecione o arquivo. snippet na Gerenciador de Soluções e, na janela **Propriedades** , verifique se a **ação de compilação** está definida como **conteúdo**, **copiar para o diretório de saída** está definido como **copiar sempre**e **incluir no VSIX** está definido como **verdadeiro**.
 
 #### <a name="adding-the-pkgdef-file"></a>Adicionando o arquivo .pkgdef
 
@@ -80,7 +80,7 @@ Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer 
 
      Se você examinar essa chave, poderá ver como especificar diferentes idiomas.
 
-3. Selecione o arquivo .pkgdef no Gerenciador de Soluções e, na janela **Propriedades**, garanta que **Ação de Build** esteja definida como **Conteúdo**; **Copiar para Diretório de Saída** esteja definido como **Copiar Sempre**; e **Incluir em VSIX** esteja definido como **true**.
+3. Selecione o arquivo. pkgdef na Gerenciador de Soluções e, na janela **Propriedades** , verifique se a **ação de compilação** está definida como **conteúdo**, **copiar para o diretório de saída** está definido como **copiar sempre**e **incluir no VSIX** está definido como **verdadeiro**.
 
 4. Adicione o arquivo .pkgdef como um ativo no manifesto VSIX. No arquivo source.extension.vsixmanifest, vá para a guia **Ativos** e clique em **Novo**.
 
@@ -92,7 +92,7 @@ Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer 
 
 2. Compile o projeto e comece a depuração. Uma segunda instância do Visual Studio deve ser exibida.
 
-3. Na instância experimental, vá para **Ferramentas /Gerenciador de Snippets de Código** e defina a **Linguagem** como **Básica**. Você deve ver HelloWorldVB como uma das pastas e ser capaz de expandir a pasta para ver o snippet HelloWorldVB.
+3. Na instância experimental, vá para **ferramentas/trechos de código Gerenciador** e defina o **idioma** como **básico**. Você deve ver HelloWorldVB como uma das pastas e ser capaz de expandir a pasta para ver o snippet HelloWorldVB.
 
 4. Teste o snippet. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Snippet**.
 

@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738051"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
-Enumera valores válidos para bandeiras opcionais. Os sinalizadores opcionais podem ser usados para especificar informações adicionais quando você definir um ponto de ruptura. Essa enumeração estende a [enumeração BP_FLAGS.](../../../extensibility/debugger/reference/bp-flags.md)
+Enumera os valores válidos para sinalizadores opcionais. Os sinalizadores opcionais podem ser usados para especificar informações adicionais quando você define um ponto de interrupção. Essa enumeração estende a enumeração de [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,23 +54,23 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>Campos
 `BP90_FLAG_NONE`\
-Não especifica nenhum sinalizador de ponto de ruptura.
+Especifica um sinalizador de ponto de interrupção.
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-Especifica que o mecanismo de depuração (DE) deve mapear o ponto de ruptura usando a posição do documento. Isso é aplicável apenas aos pontos de interrupção definidos em arquivos de origem orientados a script, como ASP (Active Server Pages, páginas de servidor ativo).
+Especifica que o mecanismo de depuração (DE) deve mapear o ponto de interrupção usando a posição do documento. Isso é aplicável somente a pontos de interrupção definidos em arquivos de origem orientados por script, como páginas de Active Server (ASP).
 
 `BP90_FLAG_DONT_STOP`\
-Especifica que o ponto de partida deve ser processado pelo motor de depuração, mas que o motor de depuração não deve parar por aí; ou seja, um objeto de evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) não deve ser enviado. Esta bandeira foi projetada para ser usada principalmente com pontos de rastreamento.
+Especifica que o ponto de interrupção deve ser processado pelo mecanismo de depuração, mas que o mecanismo de depuração, por fim, não deve parar por aí; ou seja, um objeto de evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) não deve ser enviado. Esse sinalizador foi projetado para ser usado principalmente com pontos de rastreamento.
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-Usado pelo motor de depuração nativo para determinar se o estado de desestatador deve ser limpo. Ele difere de BP90_FLAG_DONT_STOP porque BP90_FLAG_DONT_STOP não é definido se o ponto de rastreamento executa uma macro.
+Usado pelo mecanismo de depuração nativo para determinar se o estado de depuração deve ser limpo. Ele é diferente de BP90_FLAG_DONT_STOP porque BP90_FLAG_DONT_STOP não será definido se o ponto de rastreamento executar uma macro.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Msdbg90.h
+Cabeçalho: Msdbg90. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542916"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Tempo de CPU de GC elevado
@@ -27,7 +27,7 @@ ms.locfileid: "85542916"
 |-|-|  
 |ID de regra|DA0023|  
 |Categoria|Uso do .NET Framework|  
-|Método de criação de perfil|Todos|  
+|Método de criação de perfil|Tudo|  
 |Mensagem|O % de tempo no GC é bem alto. Essa indicação de quantidade excessiva de sobrecarga de coleta de lixo pode estar afetando a capacidade de resposta do aplicativo. Você pode coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado melhor pelo aplicativo.|  
 |Tipo de regra|Informativo|  
   

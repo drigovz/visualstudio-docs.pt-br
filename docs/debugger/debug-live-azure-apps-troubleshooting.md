@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182866"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos da depuração de instantâneos no Visual Studio
@@ -37,7 +37,7 @@ Siga estas etapas:
 * Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo do **debug**  >  **Attach depurador de instantâneos...**  >  **Recurso**  >  do Azure **Selecione existente**ou no Cloud Explorer.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
-Se você tiver habilitado a autenticação/autorização (EasyAuth) em seu serviço de aplicativo, poderá encontrar um erro 401 com LaunchAgentAsync na mensagem de erro da pilha de chamadas. Verifique se a **ação a ser tomada quando a solicitação não está autenticada** está definida para **Permitir solicitações anônimas (nenhuma ação)** no portal do Azure e forneça um Authorization. JSON em D:\Home\sites\wwwroot com o conteúdo a seguir em vez disso. 
+Se você tiver habilitado a autenticação/autorização (EasyAuth) em seu serviço de aplicativo, poderá encontrar um erro 401 com LaunchAgentAsync na mensagem de erro da pilha de chamadas. Verifique se a **ação a ser tomada quando a solicitação não está autenticada** está definida para **Permitir solicitações anônimas (nenhuma ação)** no portal do Azure e forneça um authorization.jsno D:\Home\sites\wwwroot com o conteúdo a seguir em vez disso. 
 
 ```
 {
@@ -59,7 +59,7 @@ Se você tiver habilitado a autenticação/autorização (EasyAuth) em seu servi
 }
 ```
 
-A primeira rota efetivamente protege seu domínio de aplicativo semelhante a **fazer logon com [identityprovider]**. A segunda rota expõe o ponto de extremidade SnapshotDebugger AgentLaunch fora da autenticação, que executa a ação predefinida de iniciar o agente de diagnóstico SnapshotDebugger *somente se* a extensão de site pré-instalada do SnapshotDebugger estiver habilitada para seu serviço de aplicativo. Para obter mais detalhes sobre a configuração Authorization. JSON, consulte [regras de autorização de URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+A primeira rota efetivamente protege seu domínio de aplicativo semelhante a **fazer logon com [identityprovider]**. A segunda rota expõe o ponto de extremidade SnapshotDebugger AgentLaunch fora da autenticação, que executa a ação predefinida de iniciar o agente de diagnóstico SnapshotDebugger *somente se* a extensão de site pré-instalada do SnapshotDebugger estiver habilitada para seu serviço de aplicativo. Para obter mais detalhes sobre o authorization.jssobre configuração, consulte [regras de autorização de URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) Proibido
 
@@ -223,7 +223,7 @@ Logs de instrumentação podem ser encontrados nos seguintes locais:
   - Logs de mecanismo de instrumentação em /tmp/diag/log.txt /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath no DockerFile)
   - Log de ponto de interrupção de produção em /tmp/diag/shLog.txt
 
-## <a name="known-issues"></a>Problemas conhecidos
+## <a name="known-issues"></a>Problemas Conhecidos
 
 - Atualmente, não há suporte para a depuração de instantâneos com vários clientes do Visual Studio no mesmo Serviço de Aplicativo.
 - Otimizações Roslyn IL não têm suporte total em projetos ASP.NET Core. Para alguns projetos ASP.NET Core, talvez não seja possível ver algumas variáveis ou usar algumas variáveis em instruções condicionais.
@@ -242,7 +242,7 @@ A depuração de instantâneos e o Application Insights dependem de um ICorProfi
 - Inicie o site do Slot. Recomendamos que você visite o site para aquecê-lo novamente.
 - Troque o Slot com a produção.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)

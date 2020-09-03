@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290023"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Adicionar atributo DebuggerDisplay
@@ -36,7 +36,7 @@ Esta geração de código aplica-se a:
 
 3. O atributo DebuggerDisplay será adicionado junto com um método auto que retorna o ToString padrão (). 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

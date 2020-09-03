@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015935"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1
@@ -86,7 +87,7 @@ ms.locfileid: "86015935"
 
 6. Na caixa **nome** , digite **CustomActionProjectItem**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **CustomActionProjectItem** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **CustomActionProjectItem** ao **Gerenciador de soluções**.
 
 #### <a name="to-create-the-item-template-project"></a>Para criar o projeto de modelo de item
 
@@ -100,7 +101,7 @@ ms.locfileid: "86015935"
 
 5. Na caixa **nome** , digite **ItemTemplate**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **ItemTemplate** à solução.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ItemTemplate** à solução.
 
 #### <a name="to-create-the-extension-project"></a>Para criar o projeto de extensão
 
@@ -112,7 +113,7 @@ ms.locfileid: "86015935"
 
 4. Na caixa **nome** , digite **ProjectItemDefinition**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **ProjectItemDefinition** à solução e abre o arquivo de código de Class1 padrão.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ProjectItemDefinition** à solução e abre o arquivo de código de Class1 padrão.
 
 5. Exclua o arquivo de código Class1 do projeto.
 
@@ -448,7 +449,7 @@ ms.locfileid: "86015935"
 ## <a name="next-steps"></a>Próximas etapas
  Depois de concluir este passo a passos, você pode adicionar um assistente ao modelo de item. Quando um usuário adiciona um item de projeto de ação personalizada a um projeto do SharePoint, o assistente coleta informações sobre a ação (como sua localização e a URL para navegar quando a ação é escolhida) e adiciona essas informações ao arquivo de *Elements.xml* no novo item de projeto. Para obter mais informações, consulte [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

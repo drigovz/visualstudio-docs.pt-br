@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566972"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Walkthrough: criar sua primeira personalização em nível de documento para o Excel
@@ -27,7 +27,7 @@ ms.locfileid: "74566972"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Criando um projeto de pasta de trabalho do Excel.
 
@@ -41,9 +41,9 @@ ms.locfileid: "74566972"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,11 +53,11 @@ ms.locfileid: "74566972"
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Para criar um novo projeto de pasta de trabalho do Excel no Visual Studio
 
-1. Iniciar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
 ::: moniker range="vs-2017"
-3. No painel modelos, expanda **Visual C#**  ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do VSTO** .
 
@@ -104,7 +104,7 @@ ms.locfileid: "74566972"
 
 2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no arquivo de código **Plan1** e clique em **Designer de exibição**.
 
-     \- ou -
+     \- ou –
 
      Em **Gerenciador de soluções**, clique duas vezes no arquivo de código **Plan1** .
 
@@ -125,9 +125,9 @@ ms.locfileid: "74566972"
 
  Em seguida, adicione o código ao arquivo de código Plan1. O novo código usa o modelo de objeto do Excel para adicionar uma segunda linha de texto à pasta de trabalho. Por padrão, o arquivo de código Plan1 contém o seguinte código gerado:
 
-- Uma definição parcial da classe `Sheet1`, que representa o modelo de programação da planilha e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, [item de host de planilha](../vsto/worksheet-host-item.md) e [visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md). O restante da classe de `Sheet1` é definido em um arquivo de código oculto que você não deve modificar.
+- Uma definição parcial da `Sheet1` classe, que representa o modelo de programação da planilha e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, [item de host de planilha](../vsto/worksheet-host-item.md) e [visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md). O restante da `Sheet1` classe é definido em um arquivo de código oculto que você não deve modificar.
 
-- Os manipuladores de eventos `Sheet1_Startup` e `Sheet1_Shutdown`. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega sua personalização. Use esses manipuladores de eventos para inicializar sua personalização quando ele for carregado e para limpar os recursos usados pela sua personalização quando ele for descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+- Os `Sheet1_Startup` `Sheet1_Shutdown` manipuladores de eventos e. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega sua personalização. Use esses manipuladores de eventos para inicializar sua personalização quando ele for carregado e para limpar os recursos usados pela sua personalização quando ele for descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Para adicionar uma segunda linha de texto à planilha usando código
 
@@ -135,7 +135,7 @@ ms.locfileid: "74566972"
 
      O arquivo de código é aberto no Visual Studio.
 
-2. Substitua o manipulador de eventos `Sheet1_Startup` pelo código a seguir. Quando Plan1 é aberto, esse código adiciona uma segunda linha de texto à planilha.
+2. Substitua o `Sheet1_Startup` manipulador de eventos pelo código a seguir. Quando Plan1 é aberto, esse código adiciona uma segunda linha de texto à planilha.
 
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
@@ -164,7 +164,7 @@ ms.locfileid: "74566972"
 
 1. No Visual Studio, no menu **Compilar** , clique em **limpar solução**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
  Agora que você criou uma personalização básica no nível do documento para o Excel, você pode aprender mais sobre como desenvolver personalizações a partir destes tópicos:
 
@@ -182,9 +182,9 @@ ms.locfileid: "74566972"
 
 - Implantando personalizações em nível de documento para [o Excel: implante uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Visão geral &#40;do desenvolvimento de soluções do Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluções do Excel](../vsto/excel-solutions.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)

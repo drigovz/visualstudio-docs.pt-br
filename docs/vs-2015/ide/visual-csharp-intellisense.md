@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36803dfbba7ea6d6d2a869fb94c05105ed4af15d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643343"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
@@ -32,7 +32,7 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
 
 - Variáveis, comandos e nomes de funções,
 
-- [Snippets de código](#CodeSnippets),
+- [Trechos de código](#CodeSnippets),
 
 - [Palavras-chave de linguagem](#Keywords),
 
@@ -40,13 +40,13 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
 
   A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de preenchimento filtradas no C#](../misc/filtered-completion-lists-in-csharp.md) e [Itens pré-selecionados da lista de preenchimento no C#](../misc/pre-selected-completion-list-items-in-csharp.md).
 
-### <a name="CodeSnippets"></a> Snippets de código em listas de preenchimento
+### <a name="code-snippets-in-completion-lists"></a><a name="CodeSnippets"></a> Snippets de código em listas de preenchimento
  No Visual C#, a lista de preenchimento inclui snippets de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os snippets de código são exibidos na lista de preenchimento como o [Elemento de atalho (snippets de código do IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) do snippet.  Para obter mais informações sobre os snippets de código disponíveis no Visual C# por padrão, consulte [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md).
 
-### <a name="Keywords"></a> Palavras-chave de linguagem em listas de preenchimento
+### <a name="language-keywords-in-completion-lists"></a><a name="Keywords"></a> Palavras-chave de linguagem em listas de preenchimento
  No Visual C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave de linguagem do C#, consulte [Palavras-chave do C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).
 
-### <a name="ExtensionMethods"></a> Métodos de extensão em listas de preenchimento
+### <a name="extension-methods-in-completion-lists"></a><a name="ExtensionMethods"></a> Métodos de extensão em listas de preenchimento
  No Visual C#, a lista de preenchimento inclui Métodos de Extensão que estão no escopo.
 
 > [!NOTE]
@@ -67,11 +67,11 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
 
 - **Cláusulas catch.**
 
-- **Inicializadores de objeto:** somente os membros que podem ser inicializados serão exibidos na lista de preenchimento.
+- **Inicializadores de objeto:** Somente os membros que podem ser inicializados aparecerão na lista de conclusão.
 
 - **Nova palavra-chave**: ao digitar `new` e pressionar a BARRA DE ESPAÇOS, é exibida uma lista de preenchimento. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens são selecionados automaticamente na lista de preenchimento em busca de declarações e instruções de retorno nos métodos.
 
-- **Operadores as e is:** uma lista de preenchimento filtrada é exibida automaticamente ao pressionar a BARRA DE ESPAÇOS depois de digitar a palavra-chave `as` ou `is`.
+- **as e são operadores:** Uma lista de conclusão filtrada é exibida automaticamente quando você pressiona a barra de espaços depois de digitar a `as` `is` palavra-chave ou.
 
 - Eventos: ao digitar a palavra-chave `event`, a lista de preenchimento conterá apenas os tipos de delegado.
 
@@ -141,7 +141,7 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
 
  Ao digitar o operador `+=` após um campo de evento em um arquivo .cs, o IntelliSense mostra a opção de pressionar a tecla TAB. Isso insere uma nova instância de um delegado que aponta para o método que manipula o evento.
 
- ![Botão conectar automaticamente](../ide/media/vxautohookup.gif "vxAutoHookUp")
+ ![Botão Vínculo Automático](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
  Se você pressionar TAB, o IntelliSense concluirá a instrução para você automaticamente e exibirá a referência de manipulador de eventos como um texto selecionado no Editor de Código. Para concluir o vínculo automático de evento, o IntelliSense solicita que você pressione a tecla TAB novamente para criar um stub vazio para o manipulador de eventos.
 
@@ -153,9 +153,9 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
  Se você pressionar TAB, o IntelliSense criará um stub de um método com a assinatura correta e colocará o cursor no corpo do manipulador de eventos.
 
 > [!NOTE]
-> Use o comando **Navegação Regressiva** no menu **Exibir** (CTRL+-) para retornar à declaração de vínculo de evento.
+> Use o comando **navegar para trás** no menu **Exibir** (Ctrl +-) para voltar à instrução de conexão do evento.
 
  A tarefa a seguir mostra como o IntelliSense vincula automaticamente um manipulador de eventos chamado `button1_Click` a um campo de evento chamado `button1.Click`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Visual Studio IDE](../ide/visual-studio-ide.md)

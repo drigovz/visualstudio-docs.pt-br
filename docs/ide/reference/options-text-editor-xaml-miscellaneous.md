@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544086"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
@@ -43,7 +43,7 @@ Use a página de propriedades **Diversos** para especificar como elementos e atr
 
 Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|
 |**Citações de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|
@@ -56,4 +56,4 @@ Use essa configuração para controlar quando os erros e avisos são gerados aut
 
 ## <a name="see-also"></a>Confira também
 
-- [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
+- [XAML na WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

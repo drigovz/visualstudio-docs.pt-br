@@ -12,10 +12,10 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 907b71d82a3c630bedc48209e735d9cf817432ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543150"
 ---
 # <a name="visual-studio-shell-integrated"></a>Shell (integrado) do Visual Studio
@@ -37,7 +37,7 @@ O Shell integrado do Visual Studio inclui o IDE (ambiente de desenvolvimento int
 |Suporte ao idioma|-Nenhum|  
 |IDE|<ul><li>Configurações<br /><br /> <ul><li>Criar configurações</li><li>Importar e exportar configurações</li><li>Redefinir configurações</li></ul></li><li>Integração da **caixa de ferramentas**</li><li>Integração do **lista de tarefas**</li><li>Integração da ajuda</li><li>Caixa de diálogo **Opções**</li><li>Gerenciamento de fontes e cores</li><li>Janela de **saída**</li><li>Janela de **comando**</li><li>Gerenciamento de janelas</li><li>Comandos, menus e associações de teclas</li><li>Tempo de execução de DSL (linguagem específica do domínio)</li></ul>|  
 |Sistema de projeto e tipos de projeto|-Soluções e pastas de solução<br />-Gerenciador de configurações de soluções<br />-Gerenciamento de item<br />– Soluções de projeto único e de vários projetos<br />-Designer de Aplicativos (Propriedades de projeto simplificadas)<br />-Adicionar referência Web<br />-Adicionar Referência de Serviço<br />-Projeto único<br />-Tipos de projeto de site<br />-Projetos de aplicativos Web|  
-|Build|-Etapas de compilação personalizadas no IDE<br />-Pré-compilação para proteção de propriedade intelectual (IP)<br />-Assinatura de código<br />     MSBuild|  
+|Compilação|-Etapas de compilação personalizadas no IDE<br />-Pré-compilação para proteção de propriedade intelectual (IP)<br />-Assinatura de código<br />     MSBuild|  
 |Editor|-Ferramentas de navegação de código (localização unificada, definição de origem, herança)<br />-Navegação de código<br />-IntelliSense<br />-SmartTags<br />-Refatoração<br />-Lista de estilos<br />-Filtragem de IntelliSense<br />-   Janela de **definição de código**|  
 |Designer|-Windows Presentation Foundation designer<br />-Designer de Formulários do Windows<br />-Web designer e editor de HTML|  
 |Dados|-   **Gerenciador de servidores** (simplificado: somente dados). Consulte a observação 1.<br />-   Janela **fontes de dados**<br />-Conjunto completo de controles de dados<br />-Editor de XML<br />-Vinculação de dados à fonte de dados local (. MDF ou. MDB<br />-Vinculação de dados ao objeto<br />-Associação de dados ao serviço Web<br />-Ligação de dados com o servidor de banco local<br />-Ligação de dados com o servidor de banco remoto<br />-Ferramentas DDL para dados remotos<br />-   Extensibilidade de **Gerenciador de servidores** ( [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] exemplos)|  

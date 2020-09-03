@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779760"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem de memória do .NET
@@ -37,11 +37,11 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço da função.|
-|**Nível**|A profundidade da função na árvore de chamadas.|
+|**Endereço da função**|O endereço da função.|
+|**Level**|A profundidade da função na árvore de chamadas.|
 |**Alocações Inclusivas**|O número de objetos que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número inclui alocações feitas por funções filho.|
 |**% de Alocações Inclusivas**|O percentual de todos os objetos que foram criados na execução de criação de perfil que eram alocações inclusivas dessa função.|
 |**Alocações Exclusivas**|O número de objetos que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número não inclui alocações feitas por funções filho.|
@@ -53,5 +53,5 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 
 ## <a name="see-also"></a>Confira também
 - [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-sampling-data.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-instrumentation-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-sampling-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-instrumentation-data.md)

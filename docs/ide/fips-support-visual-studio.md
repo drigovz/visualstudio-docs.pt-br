@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84180487"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Suporte do Visual Studio para o modo de operação aprovado pelo FIPS 140-2
@@ -33,6 +33,6 @@ Para saber mais sobre o modo de operação aprovado pelo FIPS 140-2 para o Visua
 - [Windows: criptografia do sistema e uso de algoritmos compatíveis com FIPS para criptografia, hash e assinatura](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing)
 - [.NET Core: conformidade com FIPS](/dotnet/standard/security/fips-compliance/)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Aplicativos seguros](securing-applications.md)

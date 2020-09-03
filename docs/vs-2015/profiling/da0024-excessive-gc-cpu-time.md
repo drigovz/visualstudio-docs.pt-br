@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 945e934ce16c9e08209f89d8d2d2dcdfe166a4c6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542812"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tempo de CPU de GC excessivo
@@ -27,7 +27,7 @@ ms.locfileid: "85542812"
 |-|-|  
 |ID de regra|DA0024|  
 |Categoria|Uso do .NET Framework|  
-|Método de criação de perfil|Todos|  
+|Método de criação de perfil|Tudo|  
 |Mensagem|O % de tempo no GC é muito alto. Há uma quantidade excessiva de sobrecarga de coleta de lixo.|  
 |Tipo de regra|Aviso|  
   

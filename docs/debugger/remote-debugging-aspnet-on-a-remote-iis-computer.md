@@ -11,10 +11,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173858"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core de depuração remota em um computador IIS remoto no Visual Studio
@@ -64,7 +64,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 
 4. Abra o arquivo About.cshtml.cs e defina um ponto de interrupção no `OnGet` método (em modelos mais antigos, abra HomeController.cs em vez disso e defina o ponto de interrupção no `About()` método).
 
-## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Instalar e configurar o IIS no Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a> Instalar e configurar o IIS no Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -129,7 +129,7 @@ Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado auto
 1. Na caixa de diálogo **configurações** , habilite a depuração clicando em **Avançar**, escolha uma configuração de **depuração** e, em seguida, escolha **remover arquivos adicionais no destino** nas opções de **publicação de arquivo** .
 
     > [!IMPORTANT]
-    > Se você escolher uma configuração de versão, desabilite a depuração no arquivo *Web. config* quando publicar.
+    > Se você escolher uma configuração de versão, desabilite a depuração no arquivo de *web.config* quando publicar.
 
 1. Clique em **salvar** e Republique o aplicativo.
 
@@ -137,7 +137,7 @@ Depois que o aplicativo for implantado com êxito, ele deverá ser iniciado auto
 
 Você pode usar essa opção para implantar seu aplicativo se quiser copiar o aplicativo para o IIS usando o PowerShell, o RoboCopy ou desejar copiar manualmente os arquivos.
 
-### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurar o site do ASP.NET Core no computador do Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurar o site do ASP.NET Core no computador do Windows Server
 
 1. Abra o Windows Explorer e crie uma nova pasta, **C:\Publish**, em que você implantará posteriormente o projeto ASP.NET Core.
 
@@ -163,13 +163,13 @@ Você também pode publicar e implantar o aplicativo usando o sistema de arquivo
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Baixar e instalar as ferramentas remotas no Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Baixar e instalar as ferramentas remotas no Windows Server
 
 Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurar o depurador remoto no Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurar o depurador remoto no Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -178,7 +178,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 Para obter informações sobre como executar o depurador remoto como um serviço, consulte [executar o depurador remoto como um serviço](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Anexar ao aplicativo ASP.NET do computador do Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Anexar ao aplicativo ASP.NET do computador do Visual Studio
 
 1. No computador do Visual Studio, abra a solução que você está tentando depurar (**MyASPApp** se você estiver seguindo todas as etapas neste artigo).
 2. No Visual Studio, clique em **depurar > anexar ao processo** (CTRL + ALT + P).
@@ -205,15 +205,15 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
     Se você quiser usar o botão **Localizar** , talvez seja necessário abrir a [porta UDP 3702](#bkmk_openports) no servidor.
 
-5. Marque **Mostrar processos de todos os usuários**.
+5. Marque  **Mostrar processos de todos os usuários**.
 
 6. Digite a primeira letra do nome do processo para localizar rapidamente seu aplicativo.
 
-    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) no IIS, selecione o processo **w3wp. exe** correto. A partir do .NET Core 3, esse é o padrão.
+    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) no IIS, selecione o processo de **w3wp.exe** correto. A partir do .NET Core 3, esse é o padrão.
 
-    * Caso contrário, selecione o processo **dotnet. exe** . (Esse é o modelo de hospedagem fora do processo.)
+    * Caso contrário, selecione o processo de **dotnet.exe** . (Esse é o modelo de hospedagem fora do processo.)
 
-    Se você tiver vários processos mostrando *w3wp. exe* ou *dotnet. exe*, verifique a coluna **nome de usuário** . Em alguns cenários, a coluna **nome de usuário** mostra o nome do pool de aplicativos, como o **IIS APPPOOL\DefaultAppPool**. Se você vir o pool de aplicativos, mas ele não for exclusivo, crie um novo pool de aplicativos nomeados para a instância do aplicativo que você deseja depurar e, em seguida, você poderá encontrá-lo facilmente na coluna **nome de usuário** .
+    Se você tiver vários processos mostrando *w3wp.exe* ou *dotnet.exe*, verifique a coluna **nome de usuário** . Em alguns cenários, a coluna **nome de usuário** mostra o nome do pool de aplicativos, como o **IIS APPPOOL\DefaultAppPool**. Se você vir o pool de aplicativos, mas ele não for exclusivo, crie um novo pool de aplicativos nomeados para a instância do aplicativo que você deseja depurar e, em seguida, você poderá encontrá-lo facilmente na coluna **nome de usuário** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")

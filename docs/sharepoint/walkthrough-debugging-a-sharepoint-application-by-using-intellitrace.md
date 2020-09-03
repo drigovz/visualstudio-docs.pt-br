@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015757"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Walkthrough: Depurar um aplicativo do SharePoint usando o IntelliTrace
@@ -244,7 +245,7 @@ Em seguida, adicione o código a dois métodos no receptor de recursos: `Feature
     }
     ```
 
-## <a name="test-the-project"></a>Teste do projeto
+## <a name="test-the-project"></a>Testar o projeto
 
 Agora que o código foi adicionado ao receptor de recursos e o coletor de dados está em execução, implante e execute a solução do SharePoint para testar se ele funciona corretamente.
 
@@ -328,7 +329,7 @@ Agora você pode exibir o arquivo de log do IntelliTrace no Visual Studio para l
 
      O código agora é executado corretamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Verificar e depurar o código do SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532698"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
@@ -41,7 +41,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
  ![Depuração com pilhas de chamadas em mapas de código](../debugger/media/debuggermap_overview.png)
 
- Você precisará de:
+ Você precisará do seguinte:
 
  ::: moniker range="vs-2017"
 
@@ -71,7 +71,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - [Localizar bugs usando o mapa](#FindBugs)
 
-- [P & A](#QA)
+- [P & R](#QA)
 
   Para obter detalhes dos comandos e ações que você pode usar ao trabalhar com mapas de código, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -140,7 +140,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
  ![Adicionar nova chamada de método para pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="q--a"></a><a name="QA"></a>P & A
+## <a name="q--a"></a><a name="QA"></a> P & A
 
 - **Nem todas as chamadas aparecem no mapa. Por?**
 

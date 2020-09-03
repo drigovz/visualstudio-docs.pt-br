@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015360"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Walkthrough: Adicionar receptores de evento de recurso
@@ -116,7 +117,7 @@ ms.locfileid: "86015360"
 
      Observe que um anúncio aparece na lista **comunicados** depois que o recurso é desativado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

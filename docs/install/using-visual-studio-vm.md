@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183230"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Imagens do Visual Studio no Azure
@@ -32,15 +32,15 @@ Você é novo no Azure? [Crie uma conta gratuita do Azure](https://azure.microso
 
 ## <a name="what-configurations-and-versions-are-available"></a>Quais configurações e versões estão disponíveis?
 
-As imagens para as versões principais mais recentes, Visual Studio 2019, Visual Studio 2017 e Visual Studio 2015, podem ser encontradas no Azure Marketplace.  Para cada versão principal lançada, você verá a versão RTW (lançada originalmente para a Web) e as últimas versões atualizadas.  Cada uma dessas versões oferece as edições do Visual Studio Enterprise e Visual Studio Community.  Essas imagens são atualizadas pelo menos uma vez por mês para incluir as atualizações mais recentes do Visual Studio e do Windows.  Embora os nomes das imagens permaneçam os mesmos, a descrição de cada imagem inclui a versão do produto instalada e a data inicial da imagem.
+Imagens para as principais versões mais recentes, Visual Studio 2019 e Visual Studio 2017, Visual Studio 2015, podem ser encontradas no Microsoft Azure Marketplace.  Para cada versão principal, você consulta a versão originalmente RTW ("lançada para a Web") e as versões atualizadas mais recentes.  Cada uma dessas versões oferece as edições do Visual Studio Enterprise e Visual Studio Community.  Essas imagens são atualizadas pelo menos uma vez por mês para incluir as atualizações mais recentes do Visual Studio e do Windows.  Embora os nomes das imagens permaneçam os mesmos, a descrição de cada imagem inclui a versão do produto instalada e a data inicial da imagem.
 
 | Versão de lançamento                                                                                                                                          | Edições              |    Versão do produto    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: mais recente (versão 16,5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 16.5.4 da versão    |
-| Visual Studio 2019: RTW                         | Enterprise            | 16.0.13 da versão    |
-| Visual Studio 2017: Versão mais recente (versão 15,9)           | Enterprise, Community | 15.9.22 da versão   |
-| Visual Studio 2017: RTW                             | Enterprise, Community | 15.0.28 da versão   |
-| Visual Studio 2015: Última (Atualização 3)              | Enterprise, Community | Versão 14.0.25431.01 |
+| [Visual Studio 2019: mais recente (versão 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versão 16.5.4    |
+| Visual Studio 2019: RTW                         | Enterprise            | Versão 16.0.13    |
+| Visual Studio 2017: Mais recente (versão 15.9)           | Enterprise, Community | Versão 15.9.22   |
+| Visual Studio 2017: RTW                             | Enterprise, Community | Versão 15.0.28   |
+| Visual Studio 2015: Mais recente (atualização 3)              | Enterprise, Community | Versão 14.0.25431.01 |
 
 > [!NOTE]
 > De acordo com a política de atendimento da Microsoft, a versão original (RTW) do Visual Studio 2015 expirou para manutenção. O Visual Studio 2015 Atualização 3 é a única versão restante oferecida para a linha de produtos Visual Studio 2015.
@@ -101,7 +101,7 @@ Para obter mais informações, consulte [Conectar-se ao Visual Studio](../ide/si
 
 O espectro de ambientes de desenvolvimento é imenso e há custos reais associados à compilação de ambientes mais complexos. Independentemente da configuração do seu ambiente, você pode salvar ou capturar sua VM configurada como uma "imagem base" para uso futuro ou para outros membros da sua equipe. A seguir, ao inicializar uma nova VM, provisione-a a partir da imagem base e não da imagem do Marketplace do Azure.
 
-Um resumo rápido: Utilize a ferramenta de Preparação do Sistema (Sysprep) e desligue a VM em execução, a seguir, capture *(Figura 1)* a VM como uma imagem através da Interface do Usuário no portal do Azure. O Azure salva o arquivo `.vhd` que contém a imagem, na conta de armazenamento de sua escolha. A nova imagem aparecerá como um recurso de imagem na lista de recursos da sua assinatura.
+Resumo rápido: Utilize a ferramenta de Preparação do Sistema (Sysprep) e desligue a VM em execução, a seguir, capture *(Figura 1)* a VM como uma imagem através da Interface do Usuário no portal do Azure. O Azure salva o arquivo `.vhd` que contém a imagem, na conta de armazenamento de sua escolha. A nova imagem aparecerá como um recurso de imagem na lista de recursos da sua assinatura.
 
 ![Capturar uma imagem por meio da interface do usuário do portal do Azure](media/capture-vm.png)
 

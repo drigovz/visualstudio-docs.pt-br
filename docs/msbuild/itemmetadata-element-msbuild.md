@@ -17,19 +17,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633610"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
 
 Contém uma chave de metadados de item definida pelo usuário, que contém o valor de metadados do item. Um item pode ter qualquer número de pares de chave-valor de metadados.
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
+ \<Item>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ItemMetadataName> Item Metadata value</ItemMetadataName>

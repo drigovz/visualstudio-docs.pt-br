@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633116"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
-O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo *microsoft.common.tasks,* um arquivo *microsoft.common.targets* e compiladores como *csc.exe* e *vbc.exe*. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.
+O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para compilar um aplicativo. Normalmente, um conjunto de ferramentas do MSBuild inclui um arquivo *Microsoft. Common. Tasks* , um arquivo *Microsoft. Common. targets* e compiladores como *csc.exe* e *vbc.exe*. A maioria dos conjuntos de ferramentas pode ser usada para compilar aplicativos para mais de uma versão do .NET Framework e mais de uma plataforma de sistema. No entanto, o conjunto de ferramentas do MSBuild 2.0 pode ser usado para visar apenas o NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Atributo ToolsVersion
 
@@ -87,7 +87,7 @@ O MSBuild fornece duas maneiras de acessar o conjunto de ferramentas:
 
 - Usando os métodos <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
-As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. Começando no Visual Studio 2017, o MSBuild deixa de ter um local fixo. Por padrão, ele está localizado na pasta *MSBuild\15.0\Bin* em relação ao local de instalação do Visual Studio. Nas versões anteriores, o MSBuild usa o valor do atributo `ToolsVersion` no arquivo de projeto para localizar a chave do Registro correspondente e, em seguida, usa as informações da chave do Registro para definir as propriedades do conjunto de ferramentas. Por exemplo, `ToolsVersion` se `12.0`tiver o valor, então o MSBuild define as propriedades do Conjunto de Ferramentas de acordo com esta chave de registro: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
+As propriedades do conjunto de ferramentas especificam os caminhos das ferramentas. Começando no Visual Studio 2017, o MSBuild deixa de ter um local fixo. Por padrão, ele está localizado na pasta *MSBuild\15.0\Bin* em relação ao local de instalação do Visual Studio. Nas versões anteriores, o MSBuild usa o valor do atributo `ToolsVersion` no arquivo de projeto para localizar a chave do Registro correspondente e, em seguida, usa as informações da chave do Registro para definir as propriedades do conjunto de ferramentas. Por exemplo, se `ToolsVersion` tiver o valor `12.0` , o MSBuild definirá as propriedades do conjunto de ferramentas de acordo com essa chave do registro: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
 
  Estas são as propriedades do conjunto de ferramentas:
 
@@ -135,4 +135,4 @@ Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.
 ## <a name="see-also"></a>Confira também
 
 - [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
-- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)

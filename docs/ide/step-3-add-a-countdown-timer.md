@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579877"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
@@ -25,7 +25,7 @@ ms.locfileid: "77579877"
 Na terceira parte deste tutorial, você adicionará um timer de contagem regressiva para controlar o número de segundos restantes até o término do teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, consulte [tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Para adicionar um timer de contagem regressiva
 
@@ -62,7 +62,7 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
      Você adicionou uma instrução de `if else`, que é como você informa os programas a tomar decisões. Uma instrução de `if else` se parece com o seguinte.
 
     > [!NOTE]
-    > O exemplo a seguir é apenas para demonstração - não adicioná-lo ao seu projeto.
+    > O exemplo a seguir é apenas para demonstração – não o adicione ao seu projeto.
 
     ```vb
     If (something that your program will check) Then
@@ -112,6 +112,6 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[Passo 4: Adicione o método CheckTheAnswer().](../ide/step-4-add-the-checktheanswer-parens-method.md)**
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 4: Adicionar o método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)**.
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).

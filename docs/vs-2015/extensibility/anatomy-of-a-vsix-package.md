@@ -13,10 +13,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852281"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia de um pacote do VSIX
@@ -27,12 +27,12 @@ Um pacote VSIX é um arquivo. vsix que contém uma ou mais extensões do Visual 
  O formato do pacote VSIX segue o padrão OPC (Open Packaging Conventions). O pacote contém binários e arquivos de suporte, juntamente com um arquivo [Content_Types]. xml e um arquivo de manifesto. vsix. Um pacote VSIX pode conter a saída de vários projetos ou até mesmo vários pacotes que têm seus próprios manifestos.  
   
 > [!NOTE]
-> Os nomes dos arquivos incluídos nos pacotes VSIX não devem incluir espaços, nem caracteres reservados em identificadores de recursos uniformes (URI), conforme definido em [\[RFC2396\]](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> Os nomes dos arquivos incluídos nos pacotes VSIX não devem incluir espaços, nem caracteres reservados em identificadores de recursos uniformes (URI), conforme definido em [ \[ rfc2396 \] ](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>O manifesto do VSIX  
  O manifesto do VSIX contém informações sobre a extensão a ser instalada e segue o esquema VSX. Para obter mais informações, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Para obter um exemplo de manifesto do VSIX, consulte [elemento PackageManifest (elemento raiz, esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
- O manifesto do VSIX deve ser nomeado `extension.vsixmanifest` quando ele é incluído em um arquivo. vsix.  
+ O manifesto do VSIX deve ser nomeado `extension.vsixmanifest` quando é incluído em um arquivo. vsix.  
   
 ## <a name="the-content"></a>O conteúdo  
  Um pacote VSIX pode conter modelos, itens de caixa de ferramentas, VSPackages ou qualquer outro tipo de extensão com suporte no Visual Studio.  
@@ -47,16 +47,16 @@ Um pacote VSIX é um arquivo. vsix que contém uma ou mais extensões do Visual 
   
  Se o manifesto de extensão incluir um ou mais elementos de [referência](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) , **as extensões e as atualizações** compararão o manifesto de cada referência às extensões instaladas no sistema e instalará a extensão referenciada se ela ainda não estiver instalada. Se uma versão anterior de uma extensão referenciada for instalada, a versão mais recente a substituirá.  
   
- Se um projeto em uma solução de vários projetos incluir uma referência a outro projeto na mesma solução, o pacote VSIX incluirá as dependências desse projeto. Você pode substituir esse comportamento clicando na referência para o projeto interno e, em seguida, na janela **Propriedades** , definindo os **grupos de saída incluídos na propriedade VSIX** como `BuiltProjectOutputGroup`.  
+ Se um projeto em uma solução de vários projetos incluir uma referência a outro projeto na mesma solução, o pacote VSIX incluirá as dependências desse projeto. Você pode substituir esse comportamento clicando na referência para o projeto interno e, em seguida, na janela **Propriedades** , definindo os **grupos de saída incluídos na propriedade VSIX** como `BuiltProjectOutputGroup` .  
   
  Para incluir DLLs satélite de assemblies referenciados no pacote VSIX, adicione `SatelliteDllsProjectOutputGroup` aos **grupos de saída incluídos na propriedade VSIX** .  
   
 ## <a name="installation-location"></a>Local de instalação  
  Durante a instalação, **as extensões e as atualizações** do buscam o conteúdo do pacote do VSIX em uma pasta em%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- Por padrão, a instalação se aplica somente ao usuário atual, pois% LocalAppData% é um diretório específico do usuário. No entanto, se você definir o elemento [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) do manifesto como `True`, a extensão será instalada em..\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions e estará disponível para todos os usuários do computador.  
+ Por padrão, a instalação se aplica somente ao usuário atual, pois% LocalAppData% é um diretório específico do usuário. No entanto, se você definir o elemento [AllUsers](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) do manifesto como `True` , a extensão será instalada em.. \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions e estará disponível para todos os usuários do computador.  
   
-## <a name="content_typesxml"></a>[Content_Types].xml  
- O arquivo [Content_Types]. xml identifica os tipos de arquivo no arquivo. vsix expandido. O Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o próprio arquivo. Para obter mais informações sobre esse arquivo, consulte [a estrutura do arquivo Content_types\]. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+## <a name="content_typesxml"></a>[Content_Types]. xml  
+ O arquivo [Content_Types]. xml identifica os tipos de arquivo no arquivo. vsix expandido. O Visual Studio usa esse arquivo durante a instalação do pacote, mas não instala o próprio arquivo. Para obter mais informações sobre esse arquivo, consulte [a estrutura do \] arquivo Content_types. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
  Um arquivo [Content_Types]. xml é exigido pelo padrão OPC (Open Packaging Conventions). Para obter mais informações sobre o OPC, consulte [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx) no site do MSDN.

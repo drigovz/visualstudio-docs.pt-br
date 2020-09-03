@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ffa3c76f0f1afa0c9c445cfaf6f5f92484a73ba7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543553"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento entryPointsCollection (desenvolvimento do Office no Visual Studio)
@@ -46,10 +46,10 @@ ms.locfileid: "85543553"
 
  O `entryPointsCollection` elemento não tem atributos.
 
- `entryPointsCollection`tem os elementos a seguir.
+ `entryPointsCollection` tem os elementos a seguir.
 
 ### <a name="entrypoints"></a>entryPoints
- Obrigatórios. A função do `entryPoints` elemento no `vstav3` namespace é definida no [elemento&#60;entrypoints&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
+ Obrigatórios. A função do `entryPoints` elemento no `vstav3` namespace é definida no [ elemento&#60;entrypoints&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível do documento
 

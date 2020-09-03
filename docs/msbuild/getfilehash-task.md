@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8f3de9a4f2fe848e1cbd41e14e82498845ca2cf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77578654"
 ---
 # <a name="getfilehash-task"></a>Tarefa GetFileHash
@@ -38,8 +38,8 @@ Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https
 |`Items`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br />A entrada `Files` com metadados adicionais definidos como o hash do arquivo.|
 |`Hash`|Parâmetro de saída `String`.<br /><br />O hash do arquivo. Essa saída é definida somente se exatamente um item foi passado.|
 |`Algorithm`|Parâmetro `String` opcional.<br /><br />O algoritmo. Valores permitidos: `SHA256`, `SHA384`, `SHA512`. Padrão = `SHA256`.|
-|`MetadataName`|Parâmetro `String` opcional.<br /><br />O nome de metadados em que o hash é armazenado em cada item. Usa `FileHash` como padrão.|
-|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Usa `hex` como padrão. Valores permitidos = `hex`, `base64`.|
+|`MetadataName`|Parâmetro `String` opcional.<br /><br />O nome de metadados em que o hash é armazenado em cada item. O padrão é `FileHash`.|
+|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. O padrão é `hex`. Valores permitidos = `hex`, `base64`.|
 
 ## <a name="example"></a>Exemplo
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544008"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identificadores não devem ter um sufixo incorreto
@@ -51,7 +51,7 @@ ms.locfileid: "85544008"
 |Permissão|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Fila|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Pilha|<xref:System.Collections.Stack?displayProperty=fullName>|
-|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
+|Fluxo|<xref:System.IO.Stream?displayProperty=fullName>|
 
  Além disso, os seguintes sufixos **não** devem ser usados:
 
