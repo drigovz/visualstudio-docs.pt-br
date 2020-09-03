@@ -1,5 +1,5 @@
 ---
-title: 'Como: Registrar uma biblioteca com o Gerenciador de objetos | Microsoft Docs'
+title: 'Como: registrar uma biblioteca com o Gerenciador de objetos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,28 +15,28 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162033"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Como: Registrar uma biblioteca com o Gerenciador de Objetos
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Como registrar uma biblioteca com o Gerenciador de Objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador de objetos**, **Pesquisador de chamadas** e **Find Symbol Results**, que você possa exibir símbolos em seu projeto ou em componentes externos. Os símbolos incluir namespaces, classes, interfaces, métodos e outros elementos de linguagem. As bibliotecas de acompanhar esses símbolos e expô-los para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objeto que preenche as ferramentas com os dados.  
+Símbolos – ferramentas de navegação, como **modo de exibição de classe**, **pesquisador de objetos**, **pesquisador de chamadas** e **Localizar resultados de símbolos**, permitem Exibir símbolos em seu projeto ou em componentes externos. Os símbolos incluem namespaces, classes, interfaces, métodos e outros elementos de linguagem. As bibliotecas acompanham esses símbolos e os expõem ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gerenciador de objetos que popula as ferramentas com os dados.  
   
- O Gerenciador de objetos controla de todas as bibliotecas disponíveis. Cada biblioteca deve registrar com o Gerenciador de objetos antes de fornecer os símbolos para as ferramentas de navegação de símbolo.  
+ O Gerenciador de objetos controla todas as bibliotecas disponíveis. Cada biblioteca deve ser registrada com o Gerenciador de objetos antes de fornecer símbolos para as ferramentas de navegação de símbolos.  
   
- Normalmente, você registra uma biblioteca quando é carregado um VSPackage. No entanto, ele pode ser feito em outro momento, conforme necessário. Você cancelar o registro a biblioteca quando o VSPackage é desligado.  
+ Normalmente, você registra uma biblioteca quando um VSPackage é carregado. No entanto, isso pode ser feito em outro momento, conforme necessário. Você cancela o registro da biblioteca quando o VSPackage é desligado.  
   
- Para registrar uma biblioteca, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> método. No caso de biblioteca de código gerenciado, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.  
+ Para registrar uma biblioteca, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> método. No caso da biblioteca de código gerenciado, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.  
   
  Para cancelar o registro de uma biblioteca, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> método.  
   
- Para obter uma referência para o Gerenciador de objetos <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, passe o <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID ao serviço `GetService` método.  
+ Para obter uma referência ao Gerenciador de objetos, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> , passe a <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID de serviço para o `GetService` método.  
   
-## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Registrar e cancelar o registro de uma biblioteca com o Gerenciador de objetos  
+## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Registrando e cancelando o registro de uma biblioteca com o Gerenciador de objetos  
   
 #### <a name="to-register-a-library-with-the-object-manager"></a>Para registrar uma biblioteca com o Gerenciador de objetos  
   
@@ -57,7 +57,7 @@ Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador
   
     ```  
   
-2. Obtenha uma referência a um objeto do <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> de tipo e chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.  
+2. Obtenha uma referência a um objeto do <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> tipo e chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> método.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -113,7 +113,7 @@ Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador
   
 #### <a name="to-unregister-a-library-with-the-object-manager"></a>Para cancelar o registro de uma biblioteca com o Gerenciador de objetos  
   
-1. Obtenha uma referência a um objeto do <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> de tipo e chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> método.  
+1. Obtenha uma referência a um objeto do <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> tipo e chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> método.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -166,7 +166,7 @@ Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador
   
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Extensibilidade do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-extensibility.md)   
- [Suporte a ferramentas de navegação de símbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Como: expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>Consulte Também  
+ [Extensibilidade do serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-extensibility.md)   
+ [Símbolo de suporte-ferramentas de navegação](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [Como expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

@@ -24,13 +24,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728327"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Instruções passo a passo: um Windows Form
+# <a name="walkthrough-debugging-a-windows-form"></a>Passo a passo: Depurando um Windows Form
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.
 
  Primeiro, você deve fechar as soluções abertas.
@@ -46,11 +46,11 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
 1. No menu **Arquivo**, escolha **Novo** e clique em **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+     A caixa de diálogo **Novo Projeto** aparecerá.
 
-2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++** , em seguida,
+2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++**, em seguida,
 
-    1. Para Visual Basic ou Visual C#, selecione **Windows Desktop**  > **aplicativo Windows Form**.
+    1. Para Visual Basic ou Visual C#, selecione **Windows Desktop**  >  **Windows Form app**.
 
     2. Para Visual C++, selecione **aplicativo de área de trabalho do Windows**.
 
@@ -124,7 +124,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
 4. No menu **Depurar**, escolha **Windows**, em seguida, **Inspeção** e clique em **Watch1**.
 
-5. Na janela **Watch1**, clique em uma linha em branco. Na coluna **nome** , digite `textBox1.Text` (se você estiver usando Visual Basic ou Visual C#) ou `textBox1->Text` (se estiver usando C++), em seguida, pressione Enter.
+5. Na janela **Watch1**, clique em uma linha em branco. Na coluna **nome** , digite `textBox1.Text` (se você estiver usando Visual Basic ou Visual C#) ou `textBox1->Text` (se estiver usando C++) e pressione Enter.
 
      A janela **Watch1** mostra o valor dessa variável entre aspas como:
 
@@ -167,7 +167,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
     textBox1->Text = "Button was clicked!";
     ```
 
-2. No menu **depurar** , selecione **Iniciar sem depuração**.
+2. No menu **Depurar**, selecione **Iniciar Sem Depurar**.
 
      O Windows Form inicia a execução no Windows, como se você tivesse clicado duas vezes em seu executável. O depurador não está anexado.
 
@@ -175,7 +175,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
      A caixa de diálogo **Anexar ao Processo** é exibida.
 
-4. No painel **processos disponíveis** , localize o nome do processo (Walkthrough_SimpleDebug. exe) na coluna **processo** e clique nele.
+4. No painel **processos disponíveis** , localize o nome do processo (Walkthrough_SimpleDebug.exe) na coluna **processo** e clique nele.
 
 5. Clique no botão **anexar** .
 
@@ -183,6 +183,6 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
      O depurador interromperá a execução do Windows Form no ponto de interrupção.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

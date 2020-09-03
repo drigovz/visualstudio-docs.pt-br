@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938855"
+ms.locfileid: "89402620"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -161,4 +161,4 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
 
 - **Redimensionador de imagem** – Esta função cria imagens redimensionadas sempre que um blob é adicionado a um contêiner. O modelo usa a cadeia de conexão e o caminho para o gatilho, uma saída de imagem pequena e uma saída de imagem média.
 
-- **Token SAS** – Esta função gera um token SAS para um determinado contêiner do Armazenamento do Azure e um nome de blob. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Os **Direitos de acesso** também precisam ser definidos. O nível de autorização controla se a função requer uma chave de API e qual chave deve ser usada; Função usa uma tecla de função; Admin usa a chave mestra. Para obter mais informações, consulte o exemplo de [Função do Azure em C# para gerar tokens SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/).
+- **Token SAS** – Esta função gera um token SAS para um determinado contêiner do Armazenamento do Azure e um nome de blob. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Os **Direitos de acesso** também precisam ser definidos. O nível de autorização controla se a função requer uma chave de API e qual chave usar; A função usa uma chave de função; O administrador usa sua chave de acesso da conta. Para obter mais informações, consulte o exemplo de [Função do Azure em C# para gerar tokens SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

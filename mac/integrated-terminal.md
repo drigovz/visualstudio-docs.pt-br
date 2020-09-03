@@ -6,10 +6,10 @@ ms.author: jomatthi
 ms.date: 05/14/2020
 ms.assetid: EFD53CE9-8174-4FE4-8863-2984D22FD921
 ms.openlocfilehash: d362938e8f0075591ea5d4ed8461d11395680b5c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84185199"
 ---
 # <a name="integrated-terminal"></a>Terminal Integrado
@@ -26,13 +26,13 @@ Por padrão, quando o terminal for iniciado, ele será:
 - Defina o diretório de trabalho como o caminho da solução atual.
 - Carregue o Shell do sistema padrão.
 
-## <a name="search"></a>Pesquisar
+## <a name="search"></a>Search
 Você pode pesquisar o conteúdo da janela do terminal usando o menu **pesquisar > localizar...** .
 
 ![* Experiência de pesquisa no terminal integrado Visual Studio para Mac *](media/integrated-terminal-search.png)
 
 ## <a name="terminal-keyboard-shortcuts"></a>Atalhos de teclado do terminal
-|Comandos|Atalhos de teclado|
+|Comandos|Atalhos do teclado|
 |-|-|
 |Mostrar/ocultar a janela do terminal|**CTRL + '**|
 |Criar nova instância de terminal|**CTRL + '**|

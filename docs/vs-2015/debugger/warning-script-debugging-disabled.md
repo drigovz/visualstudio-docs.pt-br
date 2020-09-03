@@ -1,5 +1,5 @@
 ---
-title: 'Aviso: Depuração de script desabilitada | Microsoft Docs'
+title: 'Aviso: depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161379"
 ---
-# <a name="warning-script-debugging-disabled"></a>Aviso: Depuração de script desabilitada
+# <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A depuração de scripts está atualmente desabilitada no Internet Explorer  
@@ -38,7 +38,7 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
   
 3. Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.  
   
-4. Limpe **Desabilitar depuração de scripts (Internet Explorer)** .  
+4. Limpe **Desabilitar depuração de scripts (Internet Explorer)**.  
   
 5. Clique em **OK**.  
   
@@ -46,5 +46,5 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
   
      As novas configurações serão aplicadas.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Anexar ao script](../debugger/how-to-attach-to-script.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: anexar ao script](../debugger/how-to-attach-to-script.md)

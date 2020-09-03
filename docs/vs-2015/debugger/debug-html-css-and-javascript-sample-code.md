@@ -1,5 +1,5 @@
 ---
-title: Depurar o código de exemplo HTML, CSS e JavaScript | Microsoft Docs
+title: Depurar HTML, CSS e código de exemplo JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,21 +15,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161465"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de exemplo em HTML, CSS e JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
- O código neste tópico é o arquivo de exemplo para [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
+ O código neste tópico é o arquivo de exemplo para [início rápido: debug HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.  
   
-## <a name="sample-code"></a>Código de exemplo  
- O código HTML a seguir é usado na tag \<body> no Início Rápido.  
+## <a name="sample-code"></a>Exemplo de código  
+ O código HTML a seguir é usado na \<body> marca no guia de início rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -104,5 +104,5 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 })();  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>Consulte Também  
+ [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

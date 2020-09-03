@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentfield | Microsoft Docs
+title: 'IDebugCustomAttribute:: getparentfield | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fae84a4d02438335aea00c50dd9b89520d08bae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732693"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Obtém o campo ao qual o atributo personalizado é anexado.
+Obtém o campo ao qual o atributo personalizado está anexado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetParentField(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppField`\
-[fora] Retorna o objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o campo ao qual o atributo personalizado é anexado.
+fora Retorna o objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa o campo ao qual o atributo personalizado está anexado.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Ligue para o método [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) no objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retornado para determinar que tipo de campo o pai é.
+ Chame o método [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) no objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retornado para determinar que tipo de campo o pai é.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

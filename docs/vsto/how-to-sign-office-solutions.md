@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545750"
 ---
 # <a name="how-to-sign-office-solutions"></a>Como: assinar soluções do Office
@@ -45,7 +45,7 @@ ms.locfileid: "85545750"
 
 5. Para verificar se o certificado correto está sendo usado, clique em **mais detalhes** para exibir as informações do certificado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)

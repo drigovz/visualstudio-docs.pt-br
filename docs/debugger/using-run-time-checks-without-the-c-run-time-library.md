@@ -24,16 +24,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728658"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Usando verificações de tempo de execução sem a biblioteca em tempo de execução do C
 Se você vincular seu programa sem a biblioteca de tempo de execução C, usando **/NODEFAULTLIB**e quiser usar verificações de tempo de execução, será necessário vincular com RunTmChk. lib.
 
-O `_RTC_Initialize` inicializa o programa para verificações de tempo de execução. Se você não se vincular à biblioteca em tempo de execução C, deverá verificar se o programa é compilado com verificações de erro em tempo de execução antes de chamar o `_RTC_Initialize`, do seguinte modo:
+`_RTC_Initialize` Inicializa o programa para verificações de tempo de execução. Se você não se vincular à biblioteca em tempo de execução C, deverá verificar se o programa é compilado com verificações de erro em tempo de execução antes de chamar o `_RTC_Initialize`, do seguinte modo:
 
 ```cpp
 #ifdef __MSVC_RUNTIME_CHECKS
@@ -41,7 +41,7 @@ O `_RTC_Initialize` inicializa o programa para verificações de tempo de execu�
 #endif
 ```
 
-Se você não se vincular à biblioteca em tempo de execução C, também deverá definir uma função chamada `_CRT_RTC_INITW`. O `_CRT_RTC_INITW` instala a função definida pelo usuário como a função padrão de relatório de erros, do seguinte modo:
+Se você não se vincular à biblioteca em tempo de execução C, também deverá definir uma função chamada `_CRT_RTC_INITW`. `_CRT_RTC_INITW` instala a função definida pelo usuário como a função de relatório de erros padrão, da seguinte maneira:
 
 ```cpp
 // C version:
@@ -63,5 +63,5 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 
 Depois de instalar a função padrão de relatório de erros, você poderá instalar funções adicionais de relatório de erros com `_RTC_SetErrorFuncW`. Para obter mais informações, confira [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
 
-## <a name="see-also"></a>Consulte também
-[Como usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)
+## <a name="see-also"></a>Confira também
+[Como: usar verificações nativas em tempo de execução](../debugger/how-to-use-native-run-time-checks.md)

@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ecbabae86b762c9143dba6be5aa0e4683a92b0dd
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250773"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
@@ -146,7 +146,7 @@ Para obter informações sobre dados de interação de camada coletados por ferr
 
 [Modos de exibição de interação de camada](../profiling/tier-interaction-views.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Como coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 

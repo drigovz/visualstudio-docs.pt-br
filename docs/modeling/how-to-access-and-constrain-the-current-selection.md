@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545685"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Como acessar e restringir a seleção atual
@@ -30,7 +30,7 @@ Dependendo do comando, o manipulador de comandos pode precisar da seleção no d
 
 1. A <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> classe define os membros a seguir que podem ser usados para acessar a seleção atual.
 
-    |Membro|Descrição|
+    |Membro|DESCRIÇÃO|
     |-|-|
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>|Retorna `true` se qualquer um dos elementos selecionados no designer de modelo for uma forma de compartimento; caso contrário, `false` .|
     |Método <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Retorna `true` se o diagrama está selecionado no designer de modelo; caso contrário, `false` .|

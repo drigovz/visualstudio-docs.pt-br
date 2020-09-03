@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
 ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249532"
 ---
 # <a name="create-razor-web-apps"></a>Criar aplicativos Web Razor
@@ -57,7 +57,7 @@ Arquivos de suporte têm nomes que começam com um sublinhado. Por exemplo, o ar
 
 O *launchSettings.jsno* arquivo contém as configurações do IIS, a URL do aplicativo e outras configurações relacionadas.
 
-### <a name="app-settings"></a>Configurações de aplicativo
+### <a name="app-settings"></a>Configurações do aplicativo
 
 O *appSettings.jsno* arquivo contém dados de configuração, como cadeias de conexão.
 
@@ -75,6 +75,6 @@ Esse arquivo contém o ponto de entrada para o programa. Saiba mais em [Host da 
 
 Esse arquivo contém um código que configura o comportamento do aplicativo, como se o aplicativo requer consentimento para cookies. Saiba mais em [Inicialização de aplicativos no ASP.NET Core](/aspnet/core/fundamentals/startup).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 Para obter um guia mais abrangente para a criação de aplicativos Web do Razor, consulte [Introduction to Razor pages in ASP.NET Core](/aspnet/core/razor-pages/index).

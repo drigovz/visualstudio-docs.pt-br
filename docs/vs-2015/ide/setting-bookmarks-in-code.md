@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba9f9b605d4f82f5244dbc68fb37f96d8ccce51d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673165"
 ---
 # <a name="setting-bookmarks-in-code"></a>Definindo identificadores no código
@@ -23,7 +23,7 @@ ms.locfileid: "72673165"
 
 Você pode usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente para um local específico e alternar entre locais.
 
- Comandos de indicador e ícones estão disponíveis em dois locais: a janela de indicadores (**Exibição/Janela de Indicadores**) e a barra de ferramentas do editor de texto.
+ Os comandos e ícones de indicador estão disponíveis em dois locais: a janela de indicadores (**janela de exibição/indicador**) e a barra de ferramentas do editor de texto.
 
 ## <a name="managing-bookmarks"></a>Gerenciando indicadores
  Para adicionar um indicador, coloque o cursor na linha que você deseja marcar. Clique no botão de **Alternância** ou pressione CTRL + K. Isso adiciona o indicador. Se você clicar no botão de Alternância (ou pressionar CTRL + K) novamente, o indicador será removido. Você também pode excluir indicadores clicando no botão **Excluir** na janela de indicadores.

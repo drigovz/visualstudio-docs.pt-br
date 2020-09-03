@@ -1,17 +1,17 @@
 ---
 title: Código de refatoração
 description: Como refinar código usando o Visual Studio para Mac e ações rápidas.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691292"
+ms.locfileid: "89402568"
 ---
 # <a name="refactoring"></a>Refatoração
 
@@ -31,9 +31,9 @@ Isso destaca o símbolo e todas as referências a ele. Quando você começar a d
 
 ![Renomear e identificador](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Ações rápidas
+## <a name="quick-actions-and-refactorings"></a>Ações e Refatorações Rápidas
 
-As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação.
+Ações rápidas e refatorações permitem refatorar, gerar ou modificar código com facilidade com uma única ação.
 
 É possível usar as Ações rápidas para:
 
@@ -55,7 +55,7 @@ O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicaç
 
    ![Lâmpada com o mouse focalizando](media/refactoring-lightbulb-hover.png)
 
-- Lâmpadas e chaves de fenda são exibidas na margem esquerda do editor quando você move o cursor para uma linha de código para o qual uma Ação Rápida está disponível.
+- As lâmpadas e as chave de fenda aparecem na margem esquerda do editor quando você move o cursor para uma linha de código para a qual uma ação ou refatoração rápida está disponível.
 
 - Pressione a **opção (⌥)** + **Enter** em qualquer lugar em uma linha para ver uma lista de ações rápidas e refatoração disponíveis.
 

@@ -11,22 +11,22 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162111"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento de descrição (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica a descrição do modelo como ele aparece em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
+Especifica a descrição do modelo como ele aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<Descrição >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<Description>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Description>  
@@ -45,17 +45,17 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|  
-|`ID`|Atributo opcional para cenários de usuário avançado.<br /><br /> Especifica a ID de recurso do Visual Studio.|  
+|`Package`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|  
+|`ID`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Especifica a ID de recurso do Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.  
@@ -63,10 +63,10 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
  O texto fornece uma descrição do modelo.  
   
 ## <a name="remarks"></a>Comentários  
- O `Description` é um elemento filho obrigatório do elemento `TemplateData`.  
+ `Description` é um elemento filho obrigatório do `TemplateData` elemento.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra os metadados para um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
+ O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -92,6 +92,6 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

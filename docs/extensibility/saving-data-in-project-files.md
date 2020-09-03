@@ -13,26 +13,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fd6cfaa450bc268665ae0f58109c99002da6152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701349"
 ---
 # <a name="save-data-in-project-files"></a>Salvar dados em arquivos de projeto
-Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no arquivo do projeto. O MPF (Managed Package Framework, estrutura de pacotes gerenciados) fornece duas interfaces para realizar essa tarefa:
+Um subtipo de projeto pode salvar e recuperar dados específicos de subtipo no arquivo de projeto. A MPF (estrutura de pacote gerenciada) fornece duas interfaces para realizar essa tarefa:
 
-- A <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permite acessar valores de propriedade da seção **MSBuild** do arquivo do projeto. Os métodos fornecidos por podem ser chamados por <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> qualquer usuário sempre que o usuário precisar carregar ou salvar dados relacionados à construção.
+- A <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permite acessar valores de propriedade da seção **MSBuild** do arquivo de projeto. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> podem ser chamados por qualquer usuário sempre que o usuário precisar carregar ou salvar dados relacionados à compilação.
 
-- O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> é usado para persistir dados relacionados à não-compilação em XML de forma livre. Os métodos fornecidos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] são chamados por sempre que necessário para persistir dados relacionados à não-compilação no arquivo do projeto.
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> é usado para persistir dados não relacionados à compilação em XML de forma livre. Os métodos fornecidos pelo <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> são chamados pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sempre que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] precisa persistir dados relacionados à não compilação no arquivo de projeto.
 
-  Para obter mais informações sobre como persistir dados relacionados à compilação e não-construção, consulte [Persistir dados no arquivo do projeto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).
+  Para obter mais informações sobre como persistir dados relacionados à compilação e não à compilação, consulte [persistir dados no arquivo de projeto do MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).
 
 ## <a name="save-and-retrieve-build-related-data"></a>Salvar e recuperar dados relacionados à compilação
 
-### <a name="to-save-a-build-related-data-in-the-project-file"></a>Para salvar um dado relacionado à compilação no arquivo do projeto
+### <a name="to-save-a-build-related-data-in-the-project-file"></a>Para salvar uma compilação de dados relacionados no arquivo de projeto
 
-- Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> o método para salvar um caminho completo do arquivo do projeto.
+- Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método para salvar um caminho completo do arquivo de projeto.
 
     ```
     private SpecializedProject project;
@@ -45,9 +45,9 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));
     ```
 
-### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Para recuperar dados relacionados à compilação do arquivo do projeto
+### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Para recuperar dados relacionados à compilação do arquivo de projeto
 
-- Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> o método para recuperar um caminho completo do arquivo do projeto.
+- Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> método para recuperar um caminho completo do arquivo de projeto.
 
     ```
     private SpecializedProject project;
@@ -60,11 +60,11 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));
     ```
 
-## <a name="save-and-retrieve-non-build-related-data"></a>Salvar e recuperar dados relacionados à não-compilação
+## <a name="save-and-retrieve-non-build-related-data"></a>Salvar e recuperar dados não relacionados à compilação
 
-### <a name="to-save-non-build-related-data-in-the-project-file"></a>Para salvar dados relacionados à não-compilação no arquivo do projeto
+### <a name="to-save-non-build-related-data-in-the-project-file"></a>Para salvar dados não relacionados à compilação no arquivo de projeto
 
-1. Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> o método para determinar se um fragmento XML foi alterado desde que foi salvo pela última vez em seu arquivo atual.
+1. Implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> método para determinar se um fragmento XML foi alterado desde que foi salvo pela última vez em seu arquivo atual.
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
     }
     ```
 
-2. Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> o método para salvar os dados XML no arquivo do projeto.
+2. Implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> método para salvar os dados XML no arquivo de projeto.
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -143,9 +143,9 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
     }
     ```
 
-### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Para recuperar dados relacionados à não-compilação no arquivo do projeto
+### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Para recuperar dados não relacionados à compilação no arquivo de projeto
 
-1. Implementar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> o método para inicializar as propriedades de extensão do projeto e outros dados independentes de construção. Este método é chamado se não houver dados de configuração XML presentes no arquivo do projeto.
+1. Implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> método para inicializar as propriedades de extensão do projeto e outros dados independentes de compilação. Esse método será chamado se não houver nenhum dado de configuração XML presente no arquivo de projeto.
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
         return VSConstants.S_OK;
     ```
 
-2. Implementar <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> o método para carregar os dados XML do arquivo do projeto.
+2. Implemente o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> método para carregar os dados XML do arquivo de projeto.
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)
@@ -206,7 +206,7 @@ Um subtipo de projeto pode salvar e recuperar dados específicos do subtipo no a
     ```
 
 > [!NOTE]
-> Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior em [amostras VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+> Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior em [exemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 ## <a name="see-also"></a>Confira também
-- [Persistir dados no arquivo de projeto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [Manter dados no arquivo de projeto do MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

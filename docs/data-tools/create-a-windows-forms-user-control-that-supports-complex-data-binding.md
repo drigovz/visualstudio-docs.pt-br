@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586842"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos
@@ -51,7 +51,7 @@ Durante este passo a passos, você aprenderá a:
 
 - Adicionar o novo controle, arrastando-o da **janela Fontes de Dados** para **Form1**.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -85,7 +85,7 @@ Como este passo a passos cria um controle vinculável de dados complexo de um **
 
 ## <a name="design-the-complexdatagridview-control"></a>Criar o controle ComplexDataGridView
 
-Para adicionar um <xref:System.Windows.Forms.DataGridView> ao controle de usuário, arraste uma <xref:System.Windows.Forms.DataGridView> da **caixa de ferramentas** para a superfície de design do controle de usuário.
+Para adicionar um <xref:System.Windows.Forms.DataGridView> ao controle de usuário, arraste um <xref:System.Windows.Forms.DataGridView> da **caixa de ferramentas** para a superfície de design do controle de usuário.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Adicionar o atributo de associação de dados necessário
 
@@ -98,11 +98,11 @@ Para controles complexos que dão suporte à associação de dados, você pode i
     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
 
-1. No menu **Compilação**, escolha **Compilar Solução**.
+1. No menu **Compilar** , escolha **Compilar solução**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do seu banco de dados
 
-Use o assistente de **configuração de fonte de dados** para criar uma fonte de dados com base na tabela `Customers` no banco de dados de exemplo Northwind:
+Use o assistente de **configuração de fonte de dados** para criar uma fonte de dados com base na `Customers` tabela no banco de dados de exemplo Northwind:
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
@@ -110,7 +110,7 @@ Use o assistente de **configuração de fonte de dados** para criar uma fonte de
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **escolher sua conexão de dados** , siga um destes procedimentos:
 
    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -124,11 +124,11 @@ Use o assistente de **configuração de fonte de dados** para criar uma fonte de
 
 8. Selecione a tabela `Customers` e clique em **Concluir**.
 
-   O **NorthwindDataSet** é adicionado ao projeto e a tabela `Customers` aparece na janela **Fontes de Dados**.
+   O **NorthwindDataSet** é adicionado ao seu projeto e a `Customers` tabela é exibida na janela **Data Sources** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Definir a tabela Customers para usar o controle ComplexDataGridView
 
-Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário:
+Na janela **fontes de dados** , você pode definir o controle a ser criado antes de arrastar itens para o formulário:
 
 1. Abra **Form1** no designer.
 
@@ -142,13 +142,13 @@ Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes 
 
 ## <a name="add-controls-to-the-form"></a>Adicionar controles ao formulário
 
-Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para o formulário. Verifique se o controle **ComplexDataGridView** é usado para exibir os dados da tabela.
+Você pode criar os controles associados a dados arrastando itens da janela **fontes de dados** para o formulário. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para o formulário. Verifique se o controle **ComplexDataGridView** é usado para exibir os dados da tabela.
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Dependendo dos requisitos do aplicativo, existem várias etapas que você pode realizar após criar um controle com suporte a associação de dados. Algumas etapas seguintes típicas incluem:
 
@@ -156,8 +156,8 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 - Criando controles que suportam cenários de pesquisa. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Controles do Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Controles de Windows Forms](/dotnet/framework/winforms/controls/index)

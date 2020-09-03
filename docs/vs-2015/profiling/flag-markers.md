@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e531d2d2a41cc9ceaa3b6ba39c6d77a166cfae83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193707"
 ---
 # <a name="flag-markers"></a>Marcadores de sinalizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Tempos de execução, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.  
+Um marcador de sinalizador representa algo que ocorreu em um instante de tempo em um aplicativo. Um sinalizador pode representar muitos tipos de eventos de aplicativo. Por exemplo, um sinalizador pode mostrar quando um determinado item de trabalho foi agendado ou quando uma exceção foi lançada. Runtimes, como a Biblioteca de Paralelismo de Tarefas, também podem gerar sinalizadores.  
   
 ## <a name="flag-importance"></a>Importância do sinalizador  
  Sinalizadores são exibidos em tamanhos diferentes dependendo de sua importância. Como qualquer marcador, a importância pode ser baixa, normal, alta ou crítica.  Esta ilustração mostra a aparência dos marcadores segundo seu nível de importância:  
@@ -38,7 +38,7 @@ Marcadores mostrando as categorias
 ## <a name="alerts"></a>Alertas  
  Um alerta é um sinalizador vermelho que representa um evento crítico do aplicativo, como uma exceção.  Este é um alerta:  
   
- ![Marcador de alerta do Visualizador de simultaneidade](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Marcador de alerta de Visualização Simultânea](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Um marcador de alerta  
   
 ## <a name="aggregation-flags"></a>Sinalizadores de agregação  
@@ -49,6 +49,6 @@ Um marcador de alerta
  ![Sinalizadores de agregação mostrando quatro níveis de importância](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Sinalizadores de agregação por nível de importância  
   
-## <a name="see-also"></a>Veja também  
- [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)   
- [SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)
+## <a name="see-also"></a>Consulte Também  
+ [Marcadores do Visualizador de simultaneidade](../profiling/concurrency-visualizer-markers.md)   
+ [SDK do Visualizador de Simultaneidade](../profiling/concurrency-visualizer-sdk.md)

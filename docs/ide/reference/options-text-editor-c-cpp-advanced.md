@@ -15,10 +15,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275207"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
@@ -52,7 +52,7 @@ O banco de dados de navegação de código não coleta dados para arquivos que n
 
 **Desabilitar Limpeza Implícita**
 
-O banco de dados de navegação de código não limpa arquivos implícitos que não são mais referenciados. Essa opção impede que arquivos implícitos sejam removidos do banco de dados quando não são mais usados. Por exemplo, se você adicionar um a diretiva `#include` que referencia mapi.h a um dos seus arquivos de origem, mapi.h será encontrado e indexado. Se você, em seguida, remover o #include e o arquivo não for referenciado em outro lugar, as informações sobre ele eventualmente serão removidas a menos que você escolha essa opção. (Consulte a opção **Intervalo de solução de rescanete.)** Essa opção é ignorada quando você rescaneia explicitamente a solução.
+O banco de dados de navegação de código não limpa arquivos implícitos que não são mais referenciados. Essa opção impede que arquivos implícitos sejam removidos do banco de dados quando não são mais usados. Por exemplo, se você adicionar um a diretiva `#include` que referencia mapi.h a um dos seus arquivos de origem, mapi.h será encontrado e indexado. Se você, em seguida, remover o #include e o arquivo não for referenciado em outro lugar, as informações sobre ele eventualmente serão removidas a menos que você escolha essa opção. (Consulte a opção **examinar novamente o intervalo de solução** .) Essa opção é ignorada quando você examina a solução de forma explícita.
 
 **Desabilitar Pastas de Dependências Externas**
 
@@ -64,17 +64,17 @@ Recrie o banco de dados de navegação de código do nada na próxima vez em que
 
 **Verificar Novamente Intervalo da Solução**
 
-Um trabalho do tipo 'Examinar Novamente a Solução Agora' será agendado para o intervalo que você especificar. Você deve especificar entre 0 e 5000 minutos. O valor padrão é 60 minutos. Enquanto a solução é verificada novamente, os carimbos de data/hora do arquivo são verificados para determinar se o arquivo foi alterado fora do IDE. (As alterações feitas no IDE são rastreadas automaticamente e os arquivos são atualizados.) Arquivos implicitamente incluídos são verificados para determinar se todos eles ainda estão referenciados.
+Um trabalho do tipo 'Examinar Novamente a Solução Agora' será agendado para o intervalo que você especificar. Você deve especificar entre 0 e 5000 minutos. O valor padrão é 60 minutos. Enquanto a solução é verificada novamente, os carimbos de data/hora do arquivo são verificados para determinar se o arquivo foi alterado fora do IDE. (As alterações feitas no IDE são automaticamente rastreadas e os arquivos são atualizados.) Os arquivos incluídos implicitamente são verificados para determinar se todos eles ainda são referenciados.
 
 ## <a name="diagnostic-logging"></a>Diagnostic Logging
 
 Essas opções são fornecidas no caso de a Microsoft solicitar a coleta de informações avançadas para diagnosticar um problema. As informações de log não são úteis para os usuários e é recomendável deixá-las desabilitadas.
 
-**Habilitar o registro**
+**Habilitar registro em log**
 
 Habilita o registro em log do diagnóstico para a janela de saída.
 
-**Nível de registro**
+**Nível de log**
 
 Defina o detalhamento do log, de 0 a 5.
 
@@ -208,4 +208,4 @@ Se habilitado, você poderá colocar o texto selecionado entre parênteses digit
 
 ## <a name="see-also"></a>Confira também
 
-- [Definindo opções de editor específicos do idioma](../../ide/reference/setting-language-specific-editor-options.md)
+- [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md)

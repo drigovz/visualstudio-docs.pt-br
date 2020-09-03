@@ -1,5 +1,5 @@
 ---
-title: VsCT XML Schema Atributos Condicionais | Microsoft Docs
+title: Atributos condicionais de esquema XML VSCT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697941"
 ---
-# <a name="vsct-xml-schema-conditional-attributes"></a>VsCT XML atributos condicionais do esquema
-Você pode aplicar atributos condicionais a todas as listas e itens. Operadores lógicos e expressões de expansão de símbolos avaliam ser verdadeiros ou falsos. Se for verdade, a lista ou item associado será incluído na saída resultante.
+# <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionais de esquema XML VSCT
+Você pode aplicar atributos condicionais a todas as listas e itens. Os operadores lógicos e as expressões de expansão de símbolo são avaliados como verdadeiro ou falso. Se for true, a lista ou o item associado será incluído na saída resultante.
 
- Você pode testar expansões de tokens contra outras expansões ou constantes de tokens. A `Defined()` função testa se um nome específico foi definido, mesmo que não tenha valor.
+ Você pode testar expansões de token em relação a outras expansões ou constantes de token. A função `Defined()` testa se um nome específico foi definido, mesmo se não tiver nenhum valor.
 
- Quando um atributo Condição é aplicado a uma lista, a condição é aplicada a todos os elementos da criança da lista. Se um elemento filho em si contém um atributo Condição, então sua condição é combinada com a expressão pai por uma operação AND.
+ Quando um atributo Condition é aplicado a uma lista, a condição é aplicada a todos os elementos filho na lista. Se um elemento filho contiver um atributo Condition, sua condição será combinada com a expressão pai por uma operação AND.
 
- Os valores 1, '1' e 'verdadeiro' são avaliados como verdadeiros, e 0, '0' e 'falso' são avaliados como falsos.
+ Os valores 1, ' 1 ' e ' verdadeiro ' são avaliados como verdadeiros, e 0, ' 0 ' e ' falso ' são avaliados como falso.
 
 ## <a name="operators"></a>Operadores
- Use os seguintes operadores para avaliar expressões condicionais.
+ Use os operadores a seguir para avaliar expressões condicionais.
 
 |Operador|Definição|
 |--------------|----------------|
 |(,)|Agrupamento|
 |!|Não lógico|
-|\<>, \<=, >=, ==, !=|Igualdade e Igualdade|
+|\<, >, \<=, >=, ==, !=|Relacional e igualdade|
 |e|Boolean|
 |ou|Boolean|
 
@@ -70,4 +70,4 @@ and !Defined(DEBUG)">
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Tabela de comando do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Tabela de comandos do Visual Studio (. Arquivos de vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Leia | Microsoft Docs
+title: 'IDebugDisassemblyStream2:: Read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732101"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Leia as instruções a partir da posição atual no fluxo de desmontagem.
+Lê as instruções a partir da posição atual no fluxo de desmontagem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,28 +45,28 @@ int Read( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwInstructions`\
-[em] O número de instruções para desmontar. Este valor também é o `prgDisassembly` comprimento máximo da matriz.
+no O número de instruções a serem desmembradas. Esse valor também é o comprimento máximo da `prgDisassembly` matriz.
 
 `dwFields`\
-[em] Uma combinação de [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) bandeiras da enumeração `prgDisassembly` DISASSEMBLY_STREAM_FIELDS que indicam quais campos devem ser preenchidos.
+no Uma combinação de sinalizadores da enumeração [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) que indica quais campos do `prgDisassembly` devem ser preenchidos.
 
 `pdwInstructionsRead`\
-[fora] Retorna o número de instruções realmente desmontadas.
+fora Retorna o número de instruções realmente desmontadas.
 
 `prgDisassembly`\
-[fora] Uma matriz de estruturas de [DesmontagemData](../../../extensibility/debugger/reference/disassemblydata.md) que é preenchida com o código desmontado, uma estrutura por instrução desmontada. O comprimento desta matriz é `dwInstructions` ditado pelo parâmetro.
+fora Uma matriz de estruturas [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) que é preenchida com o código desmontado, uma estrutura por instrução desmontada. O comprimento dessa matriz é determinado pelo `dwInstructions` parâmetro.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O número máximo de instruções disponíveis no escopo atual pode ser obtido ligando para o método [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
+ O número máximo de instruções disponíveis no escopo atual pode ser obtido chamando o método [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .
 
- A posição atual de onde a próxima instrução é lida pode ser alterada chamando o método [Buscar.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+ A posição atual na qual a próxima instrução é lida pode ser alterada chamando o método [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
- A `DSF_OPERANDS_SYMBOLS` bandeira pode ser `DSF_OPERANDS` adicionada `dwFields` à bandeira no parâmetro para indicar que os nomes dos símbolos devem ser usados ao desmontar as instruções.
+ O `DSF_OPERANDS_SYMBOLS` sinalizador pode ser adicionado ao `DSF_OPERANDS` sinalizador no `dwFields` parâmetro para indicar que os nomes de símbolo devem ser usados ao desmontar as instruções.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

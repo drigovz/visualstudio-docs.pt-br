@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545724"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
@@ -29,7 +29,7 @@ Um diagrama de dependência permite organizar itens da solução do Visual Studi
 
 [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Criar um diagrama de dependência
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> Criar um diagrama de dependência
 
 Antes de criar um diagrama de dependência, verifique se sua solução tem um projeto de modelagem.
 
@@ -51,7 +51,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Em **Adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente em sua solução.
 
-     -ou-
+     - ou -
 
      Escolha **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.
 
@@ -78,7 +78,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 ![Diagrama de dependência gerado a partir de um mapa de código](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>Criar camadas de artefatos
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Criar camadas de artefatos
  É possível criar camadas dos itens de solução do Visual Studio como, por exemplo, projetos, arquivos de código, namespaces, classes e métodos. Isso cria automaticamente links entre camadas e itens, incluindo-os no processo de validação da camada.
 
  Também é possível vincular camadas a itens que não dão suporte à validação como, por exemplo, documentos do Word ou apresentações do Powerpoint, de forma que você pode associar uma camada a especificações ou planos. Também é possível vincular camadas a arquivos em projetos compartilhados entre vários aplicativos, mas o processo de validação não incluirá essas camadas, exibidas com nomes genéricos como, por exemplo, "Camada 1" e "Camada 2".
@@ -107,7 +107,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 - Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Gerenciar links entre camadas e artefatos
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Gerenciar links entre camadas e artefatos
 
 1. No diagrama de dependência, abra o menu de atalho da camada e escolha **exibir links**.
 
@@ -123,7 +123,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 |Criar uma nova camada com base em um link de artefato existente|Arraste o link de artefato para uma área em branco no diagrama.|
 |Verifique se um artefato vinculado dá suporte à validação em relação ao diagrama de dependência.|Examine a coluna de **validação de suporte** para o link do artefato.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Dependências existentes de engenharia reversa
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Dependências existentes de engenharia reversa
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. É possível fazer engenharia reversa em dependências existentes para artefatos vinculados a camadas no diagrama.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
   Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Editar camadas e dependências para mostrar o design pretendido
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Editar camadas e dependências para mostrar o design pretendido
  Para descrever as alterações que você planeja fazer no sistema ou na arquitetura pretendida, edite o diagrama de dependência:
 
 |**Para**|**Realizar estas etapas**|
@@ -144,10 +144,10 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 |Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade de **namespaces proibidos** da camada. Use um ponto-e-vírgula (**;**) para separar os namespaces.|
 |Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace na propriedade **namespaces obrigatórios** da camada. Use um ponto-e-vírgula (**;**) para separar os namespaces.|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Alterar como os elementos aparecem no diagrama
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Alterar como os elementos aparecem no diagrama
  É possível alterar o tamanho, a forma, a cor e a posição das camadas ou a cor das dependências editando-se suas propriedades.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Descobrir padrões e dependências em um mapa de código
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Descobrir padrões e dependências em um mapa de código
  Ao criar diagramas de dependência, você também pode criar **mapas de código**. Esses diagramas podem ajudá-lo a descobrir padrões e dependências enquanto explora o código. Use Gerenciador de Soluções, Modo de Exibição de Classe ou pesquisador de objetos para explorar assemblies, namespaces e classes, que geralmente correspondem bem às camadas existentes. Para obter mais informações sobre mapas de código, consulte:
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
@@ -156,7 +156,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

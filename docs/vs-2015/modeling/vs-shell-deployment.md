@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a42ec6a762655589bfd589ae9dc0354e3a7d1cb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659313"
 ---
 # <a name="vs-shell-deployment"></a>Implantação do VS Shell
@@ -25,7 +25,7 @@ Um shell isolado permite que você determine qual funcionalidade do Visual Studi
 
 1. No projeto **DslPackage** , abra **Source.Extension.tt**.
 
-2. Em `<SupportedProducts>` inserir:
+2. Em `<SupportedProducts>` Inserir:
 
     ```
     <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>

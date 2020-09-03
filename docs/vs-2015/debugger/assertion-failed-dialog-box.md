@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161816"
 ---
 # <a name="assertion-failed-dialog-box"></a>Caixa de diálogo Falha de Asserção
@@ -35,9 +35,9 @@ Uma instrução de declaração especifica uma condição que você espera ser v
   
 |Clique em|Para|  
 |-----------|--------|  
-|Repetir|Depure a declaração ou obtenha ajuda nas declarações.|  
+|Tentar novamente|Depure a declaração ou obtenha ajuda nas declarações.|  
 |Ignorar|Ignore a declaração e continue executando o programa.|  
 |Anular|Interrompa a execução do programa e termine a sessão de depuração.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Asserções C/C++](../debugger/c-cpp-assertions.md)

@@ -1,5 +1,5 @@
 ---
-title: Escolha a caixa de diálogo de pontos de interrupção | Microsoft Docs
+title: Caixa de diálogo escolher pontos de interrupção | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5977eb6bad9063e1ef08502cac53159a37c27151
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161623"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Caixa de diálogo Escolher Pontos de Interrupção
@@ -37,14 +37,14 @@ ms.locfileid: "68161623"
 
 A caixa de diálogo **Escolher Pontos de Interrupção** abre quando você tenta definir um ponto de interrupção de uma entrada ambígua na caixa de diálogo **Novo Ponto de Interrupção**. Um exemplo comum de entrada ambígua é um nome de função sobrecarregada.  
   
- **Pontos de interrupção**  
+ **Pontos de Interrupção**  
  Relaciona os possíveis pontos de interrupção que podem ser definidos com base na entrada ambígua. Você pode selecionar um ou mais pontos de interrupção para definir.  
   
- **All**  
+ **Todos**  
  Seleciona todos os pontos de interrupção relacionados na caixa **Pontos de Interrupção**.  
   
- **Nenhum**  
+ **Nenhuma**  
  Limpa todos os pontos de interrupção listados na caixa **Pontos de Interrupção**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)

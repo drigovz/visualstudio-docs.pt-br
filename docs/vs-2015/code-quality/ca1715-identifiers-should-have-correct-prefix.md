@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fe362a58a047c8594d09bc6985c48d16f21d3b76
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545594"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
@@ -37,7 +37,7 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1715
 ## <a name="cause"></a>Causa
  O nome de uma interface visível externamente não começa com ' I ' em letras maiúsculas.
 
- -ou-
+ - ou -
 
  O nome de um parâmetro de tipo genérico em um tipo ou método visível externamente não começa com uma letra maiúscula ' T'.
 

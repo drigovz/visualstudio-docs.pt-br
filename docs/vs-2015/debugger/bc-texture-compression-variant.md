@@ -1,5 +1,5 @@
 ---
-title: Variante de compressão de textura BC | Microsoft Docs
+title: Variante de compactação de textura BC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161698"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
@@ -63,5 +63,5 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 ## <a name="example"></a>Exemplo  
  Essa variante compacta as texturas em blocos no tempo de execução, antes da chamada de `CreateTexture2D`. Essa abordagem não é recomendada para códigos de produção porque as texturas não compactadas consomem mais espaço em disco. Além disso, a etapa adicional necessária pode aumentar consideravelmente o tempo de carregamento no aplicativo porque a compactação em blocos requer muitos recursos computacionais para realizar a codificação. Em vez disso, recomendamos que você faça a compactação das texturas quando não estiver conectado, usando um editor ou processador de imagens que faça parte do pipeline da sua compilação. Essas abordagens diminuem o espaço necessário em disco, eliminam a sobrecarga do tempo de execução no aplicativo e proporcionam mais tempo de processamento para que as imagens tenham a melhor qualidade possível.  
   
-## <a name="see-also"></a>Consulte também  
- [Variante de metade/um quarto nas dimensões de textura](../debugger/half-quarter-texture-dimensions-variant.md)
+## <a name="see-also"></a>Consulte Também  
+ [Variante de dimensões de textura de semestre/trimestre](../debugger/half-quarter-texture-dimensions-variant.md)

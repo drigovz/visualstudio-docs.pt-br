@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586868"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
-Quando você cria um aplicativo que manipula dados em um banco de dado, executa tarefas básicas, como definir cadeias de conexão, inserir dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples Windows Forms "formulários por data" usando C# Visual ou Visual Basic e ADO.net.  Todas as tecnologias de dados do .NET, incluindo conjuntos, LINQ to SQL e Entity Framework, por fim, executam etapas muito semelhantes às mostradas neste artigo.
+Quando você cria um aplicativo que manipula dados em um banco de dado, executa tarefas básicas, como definir cadeias de conexão, inserir dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples Windows Forms "formulários por data" usando o Visual C# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET, incluindo conjuntos, LINQ to SQL e Entity Framework, por fim, executam etapas muito semelhantes às mostradas neste artigo.
 
 Este artigo demonstra uma maneira simples de obter dados de um banco de dado de maneira rápida. Se seu aplicativo precisar modificar dados de maneiras não triviais e atualizar o banco de dado, você deverá considerar o uso de Entity Framework e o uso da vinculação de dados para sincronizar automaticamente os controles de interface do usuário com as alterações nos dados subjacentes.
 
 > [!IMPORTANT]
 > Para manter o código simples, ele não inclui manipulação de exceção pronta para produção.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para criar o aplicativo, você precisará de:
 
@@ -35,7 +35,7 @@ Para criar o aplicativo, você precisará de:
 
 - LocalDB do SQL Server Express. Se você não tiver SQL Server Express LocalDB, poderá instalá-lo na [página de download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Este tópico pressupõe que você esteja familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários ao projeto, colocar botões e outros controles nos formulários, definir propriedades dos controles e codificar eventos simples. Se você não estiver familiarizado com essas tarefas, sugerimos que você conclua o tópico [introdução C# ao Visual e Visual Basic](../ide/quickstart-visual-basic-console.md) antes de iniciar este passo a passos.
+Este tópico pressupõe que você esteja familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários ao projeto, colocar botões e outros controles nos formulários, definir propriedades dos controles e codificar eventos simples. Se você não estiver familiarizado com essas tarefas, sugerimos que você conclua o tópico [introdução ao Visual C# e à Visual Basic antes de](../ide/quickstart-visual-basic-console.md) iniciar este passo a passos.
 
 ## <a name="set-up-the-sample-database"></a>Configurar o banco de dados de exemplo
 
@@ -84,7 +84,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
    ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
 
-|Controles para o formulário de navegação|{1&gt;Propriedades&lt;1}|
+|Controles para o formulário de navegação|Propriedades|
 | - |----------------|
 |Botão|Nome = btnGoToAdd|
 |Botão|Nome = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png)
 
-|Controles para o formulário NewCustomer|{1&gt;Propriedades&lt;1}|
+|Controles para o formulário NewCustomer|Propriedades|
 | - |----------------|
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = true|
@@ -109,7 +109,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 ![preencher ou cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
-|Controles para o formulário FillOrCancel|{1&gt;Propriedades&lt;1}|
+|Controles para o formulário FillOrCancel|Propriedades|
 | - |----------------|
 |TextBox|Nome = txtOrderID|
 |Botão|Nome = btnFindByOrderID|
@@ -120,16 +120,16 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 |Botão|Nome = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de conexão
-Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo *app. config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
+Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo de *App.config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
 
-Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl**+**A**, **Ctrl**+**C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
+Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** + **A**, **Ctrl** + **C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
 
-1. Se você estiver usando C#o, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
+1. Se você estiver usando C#, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
     Se você estiver usando Visual Basic, em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**, expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
 
-2. Na coluna **nome** , digite `connString`.
+2. Na coluna **nome** , digite `connString` .
 
-3. Na lista **tipo** , selecione **(cadeia de conexão)** .
+3. Na lista **tipo** , selecione **(cadeia de conexão)**.
 
 4. Na lista **escopo** , selecione **aplicativo**.
 
@@ -148,7 +148,7 @@ O formulário de navegação é aberto quando você executa o aplicativo. O bot�
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Tornar o formulário de navegação o formulário de inicialização
 
-Se você estiver usando C#o, em **Gerenciador de Soluções**, abra **Program.cs**e altere a linha de `Application.Run` para esta: `Application.Run(new Navigation());`
+Se você estiver usando C#, em **Gerenciador de soluções**, abra **Program.cs**e, em seguida, altere a `Application.Run` linha para: `Application.Run(new Navigation());`
 
 Se você estiver usando Visual Basic, em **Gerenciador de soluções**, abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
 
@@ -175,7 +175,7 @@ Crie um manipulador de eventos de clique vazio para cada botão no formulário N
 
 Para concluir a lógica do formulário NewCustomer, siga estas etapas.
 
-1. Traga o namespace `System.Data.SqlClient` para o escopo para que você não precise qualificar totalmente os nomes de seus membros.
+1. Coloque o `System.Data.SqlClient` namespace no escopo para que você não precise qualificar totalmente os nomes de seus membros.
 
      ```csharp
      using System.Data.SqlClient;
@@ -229,10 +229,10 @@ Para concluir a lógica do formulário FillOrCancel, siga estas etapas.
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
-## <a name="test-your-application"></a>Testar seu aplicativo
+## <a name="test-your-application"></a>Teste seu aplicativo
 
 Selecione a tecla **F5** para compilar e testar seu aplicativo depois de codificar cada manipulador de eventos de clique e depois de concluir a codificação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

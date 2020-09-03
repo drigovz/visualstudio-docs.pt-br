@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729542"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Caixa de diálogo Aviso de Código Obsoleto
@@ -35,7 +35,7 @@ Essa caixa de diálogo aparece quando você fez alterações no código nativo q
 
 Se você marcar essa caixa de seleção, Editar e Continuar aplicará as alterações de código sem solicitar permissão no futuro. Você pode ativar esse aviso sobre novamente indo para a caixa de diálogo **Opções**, abrindo a pasta **Depuração**, clicando na página **Editar e Continuar** e selecionando **Avisar sobre código obsoleto**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Alterações de código com suporte (C++)](supported-code-changes-cpp.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](edit-and-continue.md)
