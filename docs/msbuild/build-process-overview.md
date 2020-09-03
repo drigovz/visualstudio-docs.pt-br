@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290071"
 ---
 # <a name="how-msbuild-builds-projects"></a>Como o MSBuild compila projetos
@@ -113,7 +113,7 @@ Há dois caminhos de código que o MSBuild pode executar, o normal, descrito aqu
 
 Projetos individuais especificam sua dependência em outros projetos por meio de `ProjectReference` itens. Quando um projeto na parte superior da pilha começa a Compilar, ele atinge o ponto em que o `ResolveProjectReferences` destino é executado, um destino padrão definido nos arquivos de destino comuns.
 
-`ResolveProjectReferences`Invoca a tarefa do MSBuild com entradas dos `ProjectReference` itens para obter as saídas. Os `ProjectReference` itens são transformados em itens locais, como `Reference` . A fase de execução do MSBuild para o projeto atual pausa enquanto a fase de execução começa a processar o projeto referenciado (a fase de avaliação é feita primeiro, conforme necessário). O projeto referenciado só é criado depois que você começa a criar o projeto dependente e, portanto, cria uma árvore de compilação de projetos.
+`ResolveProjectReferences` Invoca a tarefa do MSBuild com entradas dos `ProjectReference` itens para obter as saídas. Os `ProjectReference` itens são transformados em itens locais, como `Reference` . A fase de execução do MSBuild para o projeto atual pausa enquanto a fase de execução começa a processar o projeto referenciado (a fase de avaliação é feita primeiro, conforme necessário). O projeto referenciado só é criado depois que você começa a criar o projeto dependente e, portanto, cria uma árvore de compilação de projetos.
 
 O Visual Studio permite a criação de dependências de projeto em arquivos de solução (. sln). As dependências são especificadas no arquivo de solução e só são respeitadas ao criar uma solução ou ao compilar dentro do Visual Studio. Se você criar um único projeto, esse tipo de dependência será ignorado. As referências de solução são transformadas pelo MSBuild em `ProjectReference` itens e, depois disso, são tratadas da mesma maneira.
 
@@ -155,7 +155,7 @@ Na implementação, *Microsoft. Common. targets* é um wrapper fino que importa 
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild`e `AfterBuild` são pontos de extensão. Eles estão vazios no arquivo *Microsoft. Common. CurrentVersion. targets* , mas os projetos podem fornecer seus próprios `BeforeBuild` e `AfterBuild` destinos com tarefas que precisam ser executadas antes ou depois do processo de compilação principal. `AfterBuild`é executado antes do destino não op, `Build` , porque `AfterBuild` aparece no `DependsOn` atributo no `Build` destino, mas ocorre após `CoreBuild` .
+`BeforeBuild` e `AfterBuild` são pontos de extensão. Eles estão vazios no arquivo *Microsoft. Common. CurrentVersion. targets* , mas os projetos podem fornecer seus próprios `BeforeBuild` e `AfterBuild` destinos com tarefas que precisam ser executadas antes ou depois do processo de compilação principal. `AfterBuild` é executado antes do destino não op, `Build` , porque `AfterBuild` aparece no `DependsOn` atributo no `Build` destino, mas ocorre após `CoreBuild` .
 
 O `CoreBuild` destino contém as chamadas para as ferramentas de compilação, da seguinte maneira:
 
@@ -238,6 +238,6 @@ Muitos comportamentos de compilação podem ser configurados definindo proprieda
 
 O processo do MSBuild tem vários outros pontos de extensão diferentes daqueles descritos aqui. Consulte [personalizar sua compilação](customize-your-build.md). e [como estender o processo de compilação do Visual Studio](how-to-extend-the-visual-studio-build-process.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [MSBuild](msbuild.md)

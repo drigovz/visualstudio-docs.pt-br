@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536299"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (Bootstrapper)
@@ -82,9 +82,9 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 |`ProcessorArchitecture`|Opcional. O processador do computador de destino desta instalação. O padrão é `msil`.|
 
 ## <a name="externalcheck"></a>ExternalCheck
- Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `ExternalCheck` , o bootstrapper executará o programa externo nomeado em um processo separado e armazenará seu código de saída na propriedade indicada por `Property` . `ExternalCheck`é útil para implementar verificações de dependência complexas ou quando a única maneira de verificar a existência de um componente é instanciá-lo.
+ Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `ExternalCheck` , o bootstrapper executará o programa externo nomeado em um processo separado e armazenará seu código de saída na propriedade indicada por `Property` . `ExternalCheck` é útil para implementar verificações de dependência complexas ou quando a única maneira de verificar a existência de um componente é instanciá-lo.
 
- `ExternalCheck`Não contém elementos e tem os seguintes atributos.
+ `ExternalCheck` Não contém elementos e tem os seguintes atributos.
 
 |Atributo|Descrição|
 |---------------|-----------------|
@@ -95,7 +95,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 ## <a name="filecheck"></a>FileCheck
  Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `FileCheck` , o bootstrapper determinará se o arquivo nomeado existe e retornará o número de versão do arquivo. Se o arquivo não tiver um número de versão, o bootstrapper definirá a propriedade nomeada `Property` como 0. Se o arquivo não existir, `Property` não será definido como qualquer valor.
 
- `FileCheck`Não contém elementos e tem os seguintes atributos.
+ `FileCheck` Não contém elementos e tem os seguintes atributos.
 
 | Atributo | Descrição |
 |-----------------| - |
@@ -108,7 +108,7 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 ## <a name="msiproductcheck"></a>MsiProductCheck
  Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `MsiProductCheck` , o bootstrapper verifica se a instalação do Microsoft Windows Installer especificada foi executada até ser concluída. O valor da propriedade é definido dependendo do estado do produto instalado. Um valor positivo indica que o produto está instalado, 0 ou-1 indica que ele não está instalado. (Consulte a função Windows Installer SDK MsiQueryFeatureState para obter mais informações.) . Se Windows Installer não estiver instalado no computador, `Property` não será definido.
 
- `MsiProductCheck`Não contém elementos e tem os seguintes atributos.
+ `MsiProductCheck` Não contém elementos e tem os seguintes atributos.
 
 |Atributo|Descrição|
 |---------------|-----------------|
@@ -119,24 +119,24 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 ## <a name="registrycheck"></a>RegistryCheck
  Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `RegistryCheck` , o bootstrapper verifica se a chave do Registro especificada existe ou se tem o valor indicado.
 
- `RegistryCheck`Não contém elementos e tem os seguintes atributos.
+ `RegistryCheck` Não contém elementos e tem os seguintes atributos.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obrigatórios. O nome da chave do Registro.|
-|`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value`deve ser uma cadeia de caracteres ou uma DWORD.|
+|`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value` deve ser uma cadeia de caracteres ou uma DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Esse elemento é um elemento filho opcional de `InstallChecks` . Para cada instância do `RegistryFileCheck` , o bootstrapper recupera a versão do arquivo especificado, primeiro tentando recuperar o caminho para o arquivo da chave do Registro especificada. Isso é particularmente útil se você quiser pesquisar um arquivo em um diretório especificado como um valor no registro.
 
- `RegistryFileCheck`Não contém elementos e tem os seguintes atributos.
+ `RegistryFileCheck` Não contém elementos e tem os seguintes atributos.
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Property`|Obrigatórios. O nome da propriedade para armazenar o resultado. Essa propriedade pode ser referenciada de um teste sob o `InstallConditions` elemento, que é um filho do `Command` elemento. Para obter mais informações, consulte [ \<Commands> elemento](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obrigatórios. O nome da chave do Registro. Seu valor é interpretado como o caminho para um arquivo, a menos que o `File` atributo seja definido. Se essa chave não existir, `Property` não será definida.|
-|`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value`deve ser uma cadeia de caracteres.|
+|`Value`|Opcional. O nome do valor do registro a ser recuperado. O padrão é retornar o texto do valor padrão. `Value` deve ser uma cadeia de caracteres.|
 |`FileName`|Opcional. O nome de um arquivo. Se especificado, o valor obtido da chave do registro será considerado um caminho de diretório e esse nome será anexado a ele. Se não for especificado, o valor retornado do registro será considerado o caminho completo de um arquivo.|
 |`SearchDepth`|Opcional. A profundidade na qual Pesquisar subpastas para o arquivo nomeado. A pesquisa é de profundidade-primeiro. O padrão é 0, o que restringe a pesquisa para a pasta de nível superior especificada pelo valor da chave do registro.|
 
@@ -180,5 +180,5 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
 ```
 
 ## <a name="see-also"></a>Confira também
-- [\<Commands>elementos](../deployment/commands-element-bootstrapper.md)
+- [\<Commands> elementos](../deployment/commands-element-bootstrapper.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

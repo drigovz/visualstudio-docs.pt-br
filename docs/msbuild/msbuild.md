@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289190"
 ---
 # <a name="msbuild"></a>MSBuild
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  As seções a seguir descrevem alguns dos elementos básicos do formato de arquivo de projeto do MSBuild. Para obter um tutorial sobre como criar um arquivo de projeto básico, consulte [Passo a passo: criar um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-### <a name="properties"></a><a name="BKMK_Properties"></a> Propriedades
+### <a name="properties"></a><a name="BKMK_Properties"></a> propriedades
 
  As propriedades representam pares chave-valor que podem ser usados para configurar builds. As propriedades são declaradas com a criação de um elemento que tem o nome da propriedade como um filho de um elemento [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Por exemplo, o código a seguir cria uma propriedade chamada `BuildDir` que tem um valor de `Build`.
 
@@ -90,7 +90,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
-### <a name="items"></a><a name="BKMK_Items"></a>Los
+### <a name="items"></a><a name="BKMK_Items"></a> Los
 
  Os itens são entradas no sistema de build e normalmente representam arquivos. Os itens são agrupados em tipos de item com base em nomes de itens definidos pelo usuário. Esses tipos de item podem ser usados como parâmetros para tarefas, que usam os itens individuais para executar as etapas do processo de build.
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Os itens podem ser declarados usando caracteres curinga e podem conter metadados adicionais para cenários de build mais avançados. Para obter mais informações sobre os itens, consulte [Itens](../msbuild/msbuild-items.md).
 
-### <a name="tasks"></a><a name="BKMK_Tasks"></a>Tarefa
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> Tarefas
 
  Tarefas são unidades de código executável que os projetos do MSBuild usam para executar operações de compilação. Por exemplo, uma tarefa pode compilar os arquivos de entrada ou executar uma ferramenta externa. As tarefas podem ser reutilizadas e podem ser compartilhadas por diferentes desenvolvedores em projetos diferentes.
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Para obter mais informações sobre as tarefas, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
-### <a name="targets"></a><a name="BKMK_Targets"></a>Aos
+### <a name="targets"></a><a name="BKMK_Targets"></a> Aos
 
  Os destinos agrupam tarefas em uma ordem específica e expõe seções do arquivo de projeto como pontos de entrada para o processo de build. Os destinos geralmente são agrupados em seções lógicas para aumentar a legibilidade e para permitir a expansão. Dividir as etapas de build em destinos permite que você chame uma parte do processo de build de outros destinos sem copiar essa seção do código em cada destino. Por exemplo, se vários pontos de entrada no processo de build precisam de referências para serem compilados, você pode criar um destino que compila as referências e, em seguida, executar esse destino de todos os pontos de entrada em que ele é necessário.
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Para obter um tutorial sobre como usar o MSBuild no Visual Studio, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a>Multidirecionamento
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a> Multidirecionamento
 
  Usando o Visual Studio, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework. Por exemplo, você pode compilar um aplicativo para ser executado no .NET Framework 2,0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado em .NET Framework 4,5 em uma plataforma de 64 bits. A capacidade de compilar para mais de uma estrutura é chamada de multiplataforma.
 
@@ -176,15 +176,15 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Para obter mais informações, consulte [multidirecionamento](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-| Title | Descrição |
+| Título | Descrição |
 | - | - |
-| [Walkthrough: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. |
-| [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md) | Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio. |
+| [Passo a passo: Criar um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. |
+| [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md) | Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio. |
 | [Conceitos do MSBuild](../msbuild/msbuild-concepts.md) | Apresenta os quatro blocos de construção do MSBuild: propriedades, itens, destinos e tarefas. |
 | [Itens](../msbuild/msbuild-items.md) | Descreve os conceitos gerais por trás do formato de arquivo do MSBuild e como as peças se encaixam. |
-| [Propriedades do MSBuild](../msbuild/msbuild-properties.md) | Introduz propriedades e coleções de propriedades. Propriedades são pares chave-valor que podem ser usados para configurar builds. |
+| [propriedades MSBuild](../msbuild/msbuild-properties.md) | Introduz propriedades e coleções de propriedades. Propriedades são pares chave-valor que podem ser usados para configurar builds. |
 | [Destinos](../msbuild/msbuild-targets.md) | Explica como agrupar tarefas em uma ordem específica e habilitar seções do processo de build a ser chamado na linha de comando. |
 | [Tarefas](../msbuild/msbuild-tasks.md) | Mostra como criar uma unidade de código executável que pode ser usada pelo MSBuild para executar operações de compilação atômicas. |
 | [Condições](../msbuild/msbuild-conditions.md) | Discute como usar o atributo `Condition` em um elemento do MSBuild. |

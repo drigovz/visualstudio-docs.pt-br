@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95927385ce3218d73ba6b94819429163178bb65b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917341"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Adicionando referências usando o NuGet versus um SDK de Extensão
@@ -26,7 +26,7 @@ ms.locfileid: "75917341"
 
 - O NuGet é um sistema de gerenciamento de pacotes de software livre que simplifica o processo de incorporação de bibliotecas em uma solução de projeto. Para obter mais informações, consulte [NuGet Overview (Visão geral do NuGet)](/nuget/what-is-nuget).
 
-- Um SDK é uma coleção de arquivos que o Visual Studio trata como um único item de referência. A caixa de diálogo **Gerenciador de Referências** lista todos os SDKs relevantes para o projeto que está aberto quando você exibe essa caixa de diálogo. Quando você adiciona um SDK a um projeto, é possível acessar todo o conteúdo desse SDK por meio do IntelliSense, da **Caixa de Ferramentas**, dos designers, do **Pesquisador de Objetos**, do MSBuild, da implantação, da depuração e do empacotamento. Para obter mais informações sobre SDKs, consulte [Creating a Software Development Kit (Criando um Software Development Kit)](../extensibility/creating-a-software-development-kit.md).
+- Um SDK é uma coleção de arquivos que o Visual Studio trata como um único item de referência. A caixa de diálogo **Gerenciador de referências** lista todos os SDKs que são relevantes para o projeto que está aberto quando você exibe essa caixa de diálogo. Quando você adiciona um SDK a um projeto, é possível acessar todo o conteúdo desse SDK por meio do IntelliSense, da **Caixa de Ferramentas**, dos designers, do **Pesquisador de Objetos**, do MSBuild, da implantação, da depuração e do empacotamento. Para obter mais informações sobre SDKs, consulte [Creating a Software Development Kit (Criando um Software Development Kit)](../extensibility/creating-a-software-development-kit.md).
 
 ## <a name="which-mechanism-should-i-use"></a>Qual mecanismo devo usar?
  A tabela a seguir ajuda a comparar os recursos de referência de um SDK com os recursos de referência do NuGet.
@@ -35,7 +35,7 @@ ms.locfileid: "75917341"
 |-------------|-----------------|---------------|-------------------|-----------------|
 |O mecanismo referencia uma entidade e, em seguida, todos os arquivos e funcionalidades estarão disponíveis.|S|Você adiciona um SDK usando a caixa de diálogo **Gerenciador de Referências** e todos os arquivos e funcionalidades estarão disponíveis durante o fluxo de trabalho de desenvolvimento.|S||
 |O MSBuild consome automaticamente os assemblies e os arquivos de metadados do Windows (.winmd).|S|As referências no SDK são automaticamente passadas para o compilador.|S||
-|O MSBuild consome automaticamente os arquivos .h ou .lib.|S|O arquivo *SDKName*.props informa ao Visual Studio como configurar o diretório do Visual C++ e assim por diante, para consumo automático do arquivo .h ou .lib.|N||
+|O MSBuild consome automaticamente os arquivos .h ou .lib.|S|O arquivo *SDKName*. props informa ao Visual Studio como configurar o diretório Visual C++ e assim por diante, para consumo de arquivo. h ou. lib automático.|N||
 |O MSBuild consome automaticamente os arquivos .js ou .css.|S|No **Gerenciador de Soluções**, é possível expandir o nó de referência do SDK do JavaScript para mostrar arquivos .js ou .css individuais e, em seguida, gerar marcações `<source include/>` arrastando esses arquivos para seus arquivos de origem. O SDK dá suporte ao F5 e à configuração automática do pacote.|S||
 |O MSBuild adiciona automaticamente o controle na **Caixa de Ferramentas**.|S|A **Caixa de Ferramentas** pode consumir SDKs e mostrar controles nas guias especificadas.|N||
 |O mecanismo dá suporte ao VSIX (Instalador do Visual Studio para extensões).|S|O VSIX tem um manifesto e uma lógica especiais para criar pacotes do SDK|S|O VSIX pode ser inserido em outro programa de instalação.|
@@ -70,5 +70,5 @@ ms.locfileid: "75917341"
 |O mecanismo está disponível para todas as edições do Visual Studio.|S|O SDK dá suporte a todas as edições do Visual Studio, desde o Visual Studio Express até o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|S|O NuGet dá suporte a todas as edições do Visual Studio Express, do Express até o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|
 |O mecanismo está disponível para todos os tipos de projeto.|N|O SDK dá suporte a aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] a partir do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|N|É possível examinar uma lista de projetos permitidos.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99831638219481d7db331f2a4429fffce58ecc96
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76113794"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
@@ -40,15 +40,15 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 Para obter mais informações, consulte estes tópicos:
 
-- [Como: Definir opções de acessibilidade IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Como definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Como: Usar o teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Como: usar o teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
 - [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
 
-- [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
 > As informações desta página podem se aplicar somente aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se você adquiriu este produto fora dos Estados Unidos, visite o site [Acessibilidade da Microsoft](https://www.microsoft.com/accessibility/) para obter uma lista de números de telefone e endereços dos serviços de suporte da Microsoft. Contate qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta página estão disponíveis em sua região. Informações sobre acessibilidade também estão disponíveis em outros idiomas.

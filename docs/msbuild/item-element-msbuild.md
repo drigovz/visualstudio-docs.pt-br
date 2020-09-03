@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289008"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
@@ -31,7 +31,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
 \<ItemGroup>
 \<Item>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Item Include="*.cs"
@@ -124,9 +124,9 @@ O exemplo de código a seguir mostra como usar o atributo `Update` para modifica
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Itens](../msbuild/msbuild-items.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
-- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [propriedades MSBuild](../msbuild/msbuild-properties.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

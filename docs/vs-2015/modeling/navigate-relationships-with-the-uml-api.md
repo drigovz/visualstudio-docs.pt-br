@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918255"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navegar em relações com a API UML
@@ -26,7 +26,7 @@ Um modelo consiste em elementos vinculados juntos por diferentes tipos de relaç
 ## <a name="traversing-relationships"></a>Relações de atravessamento
 
 ### <a name="any-relationship"></a>Qualquer relação
- Use `GetRelatedElements<T>()` para localizar todos os elementos conectados a um elemento especificado. Defina `T` como `IRelationship` para atravessar relações de todos os tipos ou use um tipo mais específico, como `IAssociation` para atravessar exatamente esse tipo.
+ Use `GetRelatedElements<T>()` para localizar todos os elementos conectados a um elemento especificado. Defina `T` como `IRelationship` para atravessar relações de todos os tipos ou use um tipo mais específico, como `IAssociation` para atravessar apenas esse tipo.
 
 ```
 IElement anElement;
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Enumerando relações
- Todas as propriedades do modelo UML que retornam vários valores estão em conformidade com a interface de > de < IEnumerable. Isso significa que você pode usar [expressões de consulta LINQ](/dotnet/csharp/linq/index) e os métodos de extensão definidos no namespace **System. Linq** .
+ Todas as propriedades do modelo UML que retornam vários valores estão em conformidade com a interface IEnumerable<> . Isso significa que você pode usar [expressões de consulta LINQ](/dotnet/csharp/linq/index) e os métodos de extensão definidos no namespace **System. Linq** .
 
  Por exemplo:
 
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegar pelo modelo UML](../modeling/navigate-the-uml-model.md)

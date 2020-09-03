@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
 ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916689"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Adicionando armazenamento do Azure usando os serviços conectados do Visual Studio
@@ -44,7 +44,7 @@ Após a conclusão, a caixa de diálogo **Adicionar Serviços Conectados** exibe
 
 1. Na caixa de diálogo **Armazenamento do Azure**, selecione uma conta de armazenamento existente e escolha **Adicionar**.
 
-    Se você precisar criar uma conta de armazenamento, passe para a próxima etapa. Caso contrário, pule para a etapa 6.
+    Se você precisar criar uma conta de armazenamento, passe para a próxima etapa. Caso contrário, ignore a etapa 6.
 
     ![Adicionar conta de armazenamento existente ao projeto](./media/vs-azure-tools-connected-services-storage/select-azure-storage-account.png)
 
@@ -68,7 +68,7 @@ Quando você acaba de fazer suas escolhas na caixa de diálogo, o Visual Studio 
 - Projeto de serviço de nuvem (funções Web e funções de trabalho) — [O que aconteceu — projetos Serviço de Nuvem](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - Projetos de Trabalho Web — [O que aconteceu — projetos de Trabalho Web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 - [Fórum do MSDN: Armazenamento do Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog da equipe do Armazenamento do Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Documentação do Armazenamento do Azure](/azure/storage/)

@@ -13,19 +13,19 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944246"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Como gerar informações de registro para um instalador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O utilitário RegPkg. exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado a um pacote de instalação Windows Installer. O RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem da instalação com base no [conjunto de ferramentas Windows Installer XML](https://documentation.help/WiX-Toolset/index.html).
+O utilitário RegPkg.exe pode ser usado para gerar um manifesto de registro para um VSPackage gerenciado. O manifesto pode ser incorporado a um pacote de instalação Windows Installer. O RegPkg também pode gerar um arquivo que pode ser incluído em um arquivo de origem da instalação com base no [conjunto de ferramentas Windows Installer XML](https://documentation.help/WiX-Toolset/index.html).
   
 > [!IMPORTANT]
-> O RegPkg gera nomes de caminho específicos ao seu sistema de desenvolvimento, portanto, sempre que você usar o RegPkg, deverá editar a saída para usar as propriedades Windows Installer formatadas apropriadas. Por exemplo, o valor InprocServer32 deve ser **[SystemFolder] mscoree. dll** e os caminhos devem usar **[#filekey]** e **[$componentkey]** . Ajustar a saída dessa maneira dá suporte a computadores com o Windows instalado em uma unidade diferente ou em um diretório diferente, nomes de diretório localizados e caminhos que os usuários podem escolher. Para obter mais informações, consulte [formatado](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) no SDK do Windows Installer. Se você seguir as convenções de RegPkg para seus caminhos de sistema de desenvolvimento, por exemplo, IDs de arquivo do formato File_*filename*, será necessário fazer menos alterações.  
+> O RegPkg gera nomes de caminho específicos ao seu sistema de desenvolvimento, portanto, sempre que você usar o RegPkg, deverá editar a saída para usar as propriedades Windows Installer formatadas apropriadas. Por exemplo, o valor InprocServer32 deve ser **[SystemFolder] mscoree.dll** e os caminhos devem usar **[#filekey]** e **[$componentkey]**. Ajustar a saída dessa maneira dá suporte a computadores com o Windows instalado em uma unidade diferente ou em um diretório diferente, nomes de diretório localizados e caminhos que os usuários podem escolher. Para obter mais informações, consulte [formatado](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) no SDK do Windows Installer. Se você seguir as convenções de RegPkg para seus caminhos de sistema de desenvolvimento, por exemplo, IDs de arquivo do formato File_*filename*, será necessário fazer menos alterações.  
   
 ### <a name="to-create-a-registration-manifest"></a>Para criar um manifesto de registro  
   
@@ -182,6 +182,6 @@ O utilitário RegPkg. exe pode ser usado para gerar um manifesto de registro par
     </Include>  
     ```  
   
-## <a name="see-also"></a>Veja também  
- [Registrando  VSPackages](registering-vspackages.md)  
+## <a name="see-also"></a>Consulte Também  
+ [Registrando VSPackages](registering-vspackages.md)   
  [VSPackages](../../extensibility/internals/vspackages.md)

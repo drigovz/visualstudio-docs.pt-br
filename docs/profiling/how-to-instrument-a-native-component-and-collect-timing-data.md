@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9436487655e04649228a1bdb60c5d48138f13842
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327827"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Como instrumentar um componente autônomo nativo e coletar dados de tempo com o criador de perfil usando a linha de comando
@@ -80,6 +80,6 @@ Para coletar dados de tempo detalhados de um componente usando o método de inst
 
      **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)

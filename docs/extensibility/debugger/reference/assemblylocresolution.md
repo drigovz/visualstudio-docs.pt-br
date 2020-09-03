@@ -1,5 +1,5 @@
 ---
-title: RESOLUÇÃO DE MONTAGEM | Microsoft Docs
+title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738143"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Especifica onde um conjunto está localizado.
+Especifica onde um assembly está localizado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_ASSEMBLYLOCRESOLUTION {
@@ -48,28 +48,28 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Campos
 `ALR_NAME`\
-O conjunto está localizado no namespace atual.
+O assembly está localizado no namespace atual.
 
 `ALR_USERDIR`\
-O conjunto está localizado em um diretório de usuários.
+O assembly está localizado em um diretório de usuário.
 
 `ALR_SHAREDDIR`\
-A montagem está localizada em diretório compartilhado.
+O assembly está localizado no diretório compartilhado.
 
 `ALR_REMOTEDIR`\
-A montagem está localizada em um diretório remoto.
+O assembly está localizado em um diretório remoto.
 
 ## <a name="remarks"></a>Comentários
-Esses valores são devolvidos pelos métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+Esses valores são retornados pelos métodos [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
 
-Esses valores podem ser `OR` combinados com a operação.
+Esses valores podem ser combinados com a `OR` operação.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

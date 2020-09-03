@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327798"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
@@ -68,7 +68,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
     > [!NOTE]
     > Não especifique o executável (.* exe*) que exercita as DLLs.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 Coleta de dados de [controle](../profiling/controlling-data-collection.md) 
  [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

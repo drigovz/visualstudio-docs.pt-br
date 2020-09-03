@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327694"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como iniciar um aplicativo .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando
@@ -98,7 +98,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     - Feche o aplicativo de destino.
 
-         -ou-
+         - ou -
 
     - Digite **VSPerfCmd/Detach**
 
@@ -106,6 +106,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
      **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)

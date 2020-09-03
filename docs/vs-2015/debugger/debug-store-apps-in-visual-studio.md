@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc2d05c6b6aae4b2f33d135c6859da7b17de963
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533153"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicativos da Store no Visual Studio
@@ -28,7 +28,7 @@ O depurador do Visual Studio permite que você controle a execução de um progr
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Iniciar uma sessão de depuração (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|A sessão Como iniciar uma depuração descreve diferentes opções para configurar e iniciar uma sessão de depuração para um aplicativo JavaScript.|
 |[Controlar a execução em uma sessão de depuração (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|A navegação pelo depurador leva você através de um aplicativo simples que demonstra como iniciar e parar a depuração, como navegar através do código e como visualizar o estado do programa.|

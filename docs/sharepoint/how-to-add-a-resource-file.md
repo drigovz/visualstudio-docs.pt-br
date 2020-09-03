@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015178"
 ---
 # <a name="how-to-add-a-resource-file"></a>Como adicionar um arquivo de recurso
@@ -49,5 +50,5 @@ ms.locfileid: "86015178"
 
 3. Quando o **Editor de recursos** for aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , adicione recursos ao arquivo de recurso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

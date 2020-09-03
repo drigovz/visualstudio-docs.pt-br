@@ -8,14 +8,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 026fe95eb9e32e335832e782ffde72c93f89dc67
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111404"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Orientação de ferramentas de arquitetura do Visual Studio
 
-Neste guia de ferramentas de arquitetura é um pacote que pode ser baixado de diretrizes práticas sobre o uso das ferramentas de modelagem no Visual Studio 2010. Ele apresenta uma visão geral de como usar as ferramentas de modelagem de maneira integrada e aborda os cenários mais comuns em que as ferramentas são usadas.
+Essas diretrizes de ferramentas de arquitetura são um pacote para download de diretrizes práticas sobre o uso das ferramentas de modelagem no Visual Studio 2010. Ele apresenta uma visão de alto nível de como usar todas as ferramentas de modelagem de maneira integrada e discute os cenários mais comuns nos quais as ferramentas são usadas.
 
-O conteúdo foi criado com o Visual Studio ALM Rangers, um grupo especial que tem membros na equipe de produto do Visual Studio, Microsoft Services, Microsoft Most Valued Professionals (MVPs) e leva do Visual Studio Community.
+O conteúdo foi criado pelo Visual Studio ALM Rangers, um grupo especial que tem membros da equipe do produto Visual Studio, serviços da Microsoft, MVPs (Microsoft Most Valuable Professionals) e leads da Comunidade do Visual Studio.

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917322"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
@@ -24,7 +24,7 @@ Para usar modelos com eficiência em um projeto de desenvolvimento, os integrant
 
 Para iniciar em um projeto ou subprojeto rapidamente, é útil ter um modelo de projeto que segue a estrutura do projeto que você escolheu. Este tópico descreve como criar e usar um modelo desse tipo.
 
-Este tópico pressupõe que você está trabalhando em um projeto que é grande o suficiente para exigir vários membros da equipe e talvez tenha várias equipes. O código e os modelos do projeto são armazenados em um sistema de controle do código-fonte, como [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Pelo menos alguns membros da equipe usam o Visual Studio para desenvolver modelos e outros membros da equipe podem exibir os modelos usando outras versões do Visual Studio.
+Este tópico pressupõe que você está trabalhando em um projeto que é grande o suficiente para exigir vários membros da equipe e talvez tenha várias equipes. O código e os modelos do projeto são armazenados em um sistema de controle do código-fonte, como [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] . Pelo menos alguns membros da equipe usam o Visual Studio para desenvolver modelos e outros membros da equipe podem exibir os modelos usando outras versões do Visual Studio.
 
 Para ver quais versões do Visual Studio dão suporte a cada ferramenta e recurso de modelagem, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ Em um projeto médio ou grande, a estrutura da equipe é baseada na estrutura do
 
 1. Baseie a estrutura de suas soluções na estrutura do seu aplicativo, como aplicativo Web, aplicativo de serviço ou aplicativo de área de trabalho. Uma variedade de arquiteturas comuns é discutida em [arquétipos de aplicativo no guia de arquitetura de aplicativos da Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
-2. Crie uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que chamaremos de solução de arquitetura. Essa solução será usada para criar o design geral do sistema. Ele conterá modelos, mas sem código.
+2. Crie uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução, que chamaremos de solução de arquitetura. Essa solução será usada para criar o design geral do sistema. Ele conterá modelos, mas sem código.
 
     Adicione um diagrama de camada a esta solução. No diagrama de camadas, desenhe a arquitetura que você escolheu para seu aplicativo. Por exemplo, o diagrama pode mostrar essas camadas e as dependências entre elas: apresentação; Lógica de negócios; e dados.
 
@@ -109,7 +109,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 4. Seguindo as instruções no assistente, selecione os projetos que você deseja incluir no modelo, forneça um nome e uma descrição para o modelo e especifique um local de saída.
 
 > [!NOTE]
-> O material neste tópico é dissociado e parafraseado das diretrizes de ferramentas de arquitetura do Visual Studio, escrito pelo Visual Studio ALM Rangers, que é uma colaboração entre MVPs (maior valor para profissionais), serviços da Microsoft e o Visual Studio equipe e gravadores de produto. [Clique aqui para baixar o pacote de diretrizes completo.](https://archive.codeplex.com/?p=vsarchitectureguide)
+> O material neste tópico é dissociado e parafraseado das diretrizes de ferramentas de arquitetura do Visual Studio, escrito pelo Visual Studio ALM Rangers, que é uma colaboração entre MVPs (maior valor para profissionais), serviços da Microsoft e a equipe e os escritores de produtos do Visual Studio. [Clique aqui para baixar o pacote de diretrizes completo.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Materiais relacionados
 
@@ -117,7 +117,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) – diretrizes adicionais sobre como gerenciar modelos em uma equipe
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 
-[Gerenciar modelos e diagramas sob controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md)
-[usar modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
+[Gerenciar modelos e diagramas sob controle](../modeling/manage-models-and-diagrams-under-version-control.md) 
+ de versão [Usar modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

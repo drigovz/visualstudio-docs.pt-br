@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586809"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
@@ -84,7 +84,7 @@ No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão 
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Para usar um novo provedor de marcador em um projeto em C ou em C++
 
-1. Use a função `CvInitProvider` para inicializar um PCV_PROVIDER. O construtor usa um GUID * e PCV_PROVIDER\*.
+1. Use a função `CvInitProvider` para inicializar um PCV_PROVIDER. O construtor usa um GUID * e PCV_PROVIDER \* .
 
 2. Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Nessa caixa de diálogo, insira o GUID usado para criar o provedor e uma descrição do provedor.
 
@@ -123,7 +123,7 @@ No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Referência da biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
 |[Referência de biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|

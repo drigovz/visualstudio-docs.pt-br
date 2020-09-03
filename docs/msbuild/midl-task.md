@@ -27,23 +27,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633467"
 ---
 # <a name="midl-task"></a>tarefa MIDL
 
 Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe*. Para obter mais informações, confira [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  Veja a seguir a descrição dos parâmetros da tarefa **MIDL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalIncludeDirectories**
 
-     Parâmetro opcional **string[].**
+     Parâmetro opcional de **cadeia de caracteres []** .
 
      Adiciona um diretório à lista de diretórios que são pesquisados quanto a arquivos IDL importados, arquivos de cabeçalho incluídos e ACF (arquivos de configuração de aplicativo).
 
@@ -51,15 +51,15 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **AdditionalOptions**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
-     Uma lista de opções de linha de comando. Por exemplo, /\<option1> /\<option2> /\<option#>. Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa MIDL.
+     Uma lista de opções de linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa MIDL.
 
      Para obter mais informações, confira [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ApplicationConfigurationMode**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, permite que você use algumas palavras-chave ACF no arquivo IDL.
 
@@ -67,7 +67,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ClientStubFile**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do arquivo de stub do cliente para uma interface RPC.
 
@@ -75,7 +75,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **CPreprocessOptions**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica as opções para passar para o pré-processador C/C++. Especifique uma lista delimitada por espaço de opções de pré-processador.
 
@@ -83,7 +83,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **DefaultCharType**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o tipo de caractere padrão que o compilador C usará para compilar o código gerado.
 
@@ -92,14 +92,14 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
     |**Com sinal**|**/char signed**|
-    |**Unsigned**|**/char unsigned**|
-    |**Ascii**|**/char ascii7**|
+    |**Não assinados**|**/char unsigned**|
+    |**Localizados**|**/char ascii7**|
 
      Para obter mais informações, confira a opção **/char** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **DllDataFileName**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome de arquivo para o arquivo *dlldata* gerado para um DLL de proxy.
 
@@ -107,7 +107,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **EnableErrorChecks**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o tipo de verificação de erro que os stubs gerados executarão no tempo de execução.
 
@@ -115,15 +115,15 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
-    |**Nenhum**|**/error none**|
-    |**EnableCustom**|**/error**|
+    |**Nenhuma**|**/error none**|
+    |**EnableCustom**|**/Error**|
     |**Todos**|**/error all**|
 
      Para obter mais informações, confira a opção **/error** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **ErrorCheckAllocations**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, verifique se há erros de memória insuficiente.
 
@@ -131,7 +131,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ErrorCheckBounds**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, verifica o tamanho de variação compatível e matrizes variáveis em relação à especificação de tamanho da transmissão.
 
@@ -139,7 +139,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ErrorCheckEnumRange**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, verifica se os valores de enumeração estão em um intervalo permitido.
 
@@ -147,7 +147,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ErrorCheckRefPointers**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, verifique se nenhum ponteiro de referência nula é passado para os stubs de cliente.
 
@@ -155,7 +155,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ErrorCheckStubData**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, gera um stub que captura exceções de unmarshaling no lado do servidor e as propaga para o cliente.
 
@@ -163,7 +163,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **GenerateClientFiles**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica se o compilador gera arquivos de origem de C do lado do cliente para uma interface RPC.
 
@@ -171,14 +171,14 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
-    |**Nenhum**|**/client none**|
-    |**Esboço**|**/client stub**|
+    |**Nenhuma**|**/client none**|
+    |**Gerenciador**|**/client stub**|
 
      Para obter mais informações, confira a opção **/client** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateServerFiles**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica se o compilador gera arquivos de origem de C do lado do servidor para uma interface RPC.
 
@@ -186,14 +186,14 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
-    |**Nenhum**|**/server none**|
-    |**Esboço**|**/server stub**|
+    |**Nenhuma**|**/server none**|
+    |**Gerenciador**|**/server stub**|
 
      Para obter mais informações, confira a opção **/server** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
 - **GenerateStublessProxies**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, gera os stubs totalmente interpretados com proxies sem stub para interfaces de objeto.
 
@@ -201,7 +201,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **GenerateTypeLibrary**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se ele for `true`, um arquivo de biblioteca de tipos (*.tlb*) não será gerado.
 
@@ -209,7 +209,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **HeaderFileName**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do arquivo de cabeçalho gerado.
 
@@ -217,7 +217,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **IgnoreStandardIncludePath**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, a tarefa MIDL pesquisa somente os diretórios especificados usando a opção **AdditionalIncludeDirectories** e ignora o diretório atual e os diretórios especificados pela variável de ambiente INCLUDE.
 
@@ -225,13 +225,13 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **InterfaceIdentifierFileName**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do *arquivo identificador de interface* para uma interface COM. Isso substitui o nome padrão é obtido, adicionando "_i.c" ao nome do arquivo IDL.
 
      Para obter mais informações, confira a opção **/iid** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
-- **Localeid**
+- **LocaleID**
 
      Parâmetro **int** opcional.
 
@@ -241,7 +241,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **MkTypLibCompatible**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se ele for `true`, exigirá que o formato do arquivo de entrada seja compatível com o *mktyplib.exe* versão 2.03.
 
@@ -249,7 +249,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **OutputDirectory**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o diretório padrão em que a tarefa MIDL grava os arquivos de saída.
 
@@ -257,7 +257,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **PreprocessorDefinitions**
 
-     Parâmetro opcional **string[].**
+     Parâmetro opcional de **cadeia de caracteres []** .
 
      Especifica um ou mais *defines*, ou seja, um nome e um valor opcional a serem passados para o pré-processador C como se por uma diretiva `#define`. A forma de cada define é *nome[=valor]*.
 
@@ -265,7 +265,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ProxyFileName**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do arquivo de proxy da interface para uma interface COM.
 
@@ -273,7 +273,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **RedirectOutputAndErrors**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Redireciona a saída, como mensagens de erro e avisos, da saída padrão para o arquivo especificado.
 
@@ -281,13 +281,13 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **ServerStubFile**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do arquivo de stub do servidor para uma interface RPC.
 
      Para obter mais informações, confira a opção **/sstub** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **ClientStubFile** nessa tabela.
 
-- **Fonte**
+- **Origem**
 
      Parâmetro `ITaskItem[]` obrigatório.
 
@@ -295,7 +295,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **StructMemberAlignment**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o alinhamento (*nível de empacotamento*) de estruturas no sistema de destino.
 
@@ -303,7 +303,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
-    |**NotSet**|*\<nenhum>*|
+    |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
     |**2**|**/Zp2**|
     |**4**|**/Zp4**|
@@ -313,7 +313,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **SuppressCompilerWarnings**
 
-     Parâmetro **booleano** opcional.
+     Parâmetro **booliano** opcional.
 
      Se `true`, suprime mensagens de aviso da tarefa MIDL.
 
@@ -329,7 +329,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **TargetEnvironment**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o ambiente no qual o aplicativo é executado.
 
@@ -337,10 +337,10 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
     |Valor|Opção de linha de comando|
     |-----------|--------------------------|
-    |**NotSet**|*\<nenhum>*|
+    |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
     |**Itanium**|**/env ia64**|
-    |**X64**|**/env x64**|
+    |**X86**|**/env x64**|
 
      Para obter mais informações, confira a opção **/env** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
@@ -352,7 +352,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **TypeLibFormat**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o formato do arquivo de biblioteca de tipos.
 
@@ -367,7 +367,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **TypeLibraryName**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica o nome do arquivo de biblioteca de tipos.
 
@@ -375,7 +375,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **UndefinePreprocessorDefinitions**
 
-     Parâmetro opcional **string[].**
+     Parâmetro opcional de **cadeia de caracteres []** .
 
      Remove qualquer definição anterior de um nome passando o nome para o pré-processador C como se por uma diretiva `#undefine`. Especifique um ou mais nomes definidos anteriormente.
 
@@ -389,7 +389,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira as opções **/robust** e **/no_robust** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
 
-- **Warnaserror**
+- **WarnAsError**
 
      Parâmetro `Boolean` opcional.
 
@@ -401,7 +401,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
 - **WarningLevel**
 
-     Parâmetro opcional **string.**
+     Parâmetro de **cadeia de caracteres** opcional.
 
      Especifica a gravidade (*nível de aviso*) de avisos a serem emitidos. Nenhum aviso é emitido para um valor de 0. Caso contrário, um aviso será emitido se seu nível de aviso for numericamente menor ou igual ao valor especificado.
 

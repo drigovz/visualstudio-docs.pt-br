@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 227838334067d33c8a50c81d3a3c013c6baee356
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533075"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
@@ -78,7 +78,7 @@ Uma DSL (linguagem específica de domínio) é criada usando uma solução espec
    > [!NOTE]
    > Se você vir uma mensagem que alerta você não executar modelos de texto de fontes não confiáveis, clique em **OK**. Você pode definir que essa mensagem não apareça novamente.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>As páginas do assistente de Designer de DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> As páginas do assistente de Designer de DSL
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de definir o campo extensão de arquivo.
 
 ### <a name="solution-settings-page"></a>Página de configurações da solução

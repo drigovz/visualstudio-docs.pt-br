@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289268"
 ---
 # <a name="msbuild-batching"></a>Envio em lote do MSBuild
@@ -93,7 +93,7 @@ Esta seção descreve como entender os efeitos da alteração de propriedades e/
 
 Como o lote de destino e o envio em lote de tarefas são duas operações diferentes do MSBuild, é importante entender exatamente qual forma de envio em lote do MSBuild usa em cada caso. Quando a sintaxe de envio em lote `%(ItemMetadataName)` é exibida em uma tarefa em um destino, mas não em um atributo no destino, o MSBuild usa o envio em lote de tarefas. A única maneira de especificar o envio em lote de destino é usando a sintaxe de envio em lote em um atributo de destino, geralmente o `Outputs` atributo.
 
-Com o lote de destino e o envio em lote de tarefas, os lotes podem ser considerados para serem executados de forma independente. Todos os lotes começam com uma cópia do mesmo estado inicial dos valores de metadados de propriedade e item. Qualquer mutação de valores de propriedade durante a execução do lote não é visível para outros lotes. Considere o exemplo a seguir:
+Com o lote de destino e o envio em lote de tarefas, os lotes podem ser considerados para serem executados de forma independente. Todos os lotes começam com uma cópia do mesmo estado inicial dos valores de metadados de propriedade e item. Qualquer mutação de valores de propriedade durante a execução do lote não é visível para outros lotes. Considere o seguinte exemplo:
 
 ```xml
   <ItemGroup>
@@ -219,7 +219,7 @@ não é permitido.
 
 Para obter mais informações sobre funções de propriedade, confira [Funções de propriedade](../msbuild/property-functions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

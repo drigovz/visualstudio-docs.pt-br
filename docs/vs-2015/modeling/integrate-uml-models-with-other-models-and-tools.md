@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918360"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrar modelos UML a outros modelos e ferramentas
@@ -36,7 +36,7 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
 
    O estereótipo e suas propriedades são visíveis para o usuário na janela Propriedades.
 
-   Para implantar essa extensão, você empacotaria a definição de perfil e o código de extensão em uma única extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+   Para implantar essa extensão, você empacotaria a definição de perfil e o código de extensão em uma única [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão.
 
    Para obter mais informações, consulte [definir um perfil para estender o UML](../modeling/define-a-profile-to-extend-uml.md).
 
@@ -63,5 +63,5 @@ Há duas maneiras de codificar referências a elementos de modelo:
 
    Para obter mais informações, consulte [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [como adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) [como: responder a alterações em um modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)

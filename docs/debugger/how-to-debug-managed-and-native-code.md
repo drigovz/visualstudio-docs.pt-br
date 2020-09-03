@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182632"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depurar C# e C++ na mesma sessão de depuração
@@ -28,7 +28,7 @@ O Visual Studio permite que você habilite mais de um tipo de depurador em uma s
 
 Este tutorial mostra como depurar código nativo de um aplicativo gerenciado, mas você também pode [depurar código gerenciado de um aplicativo nativo](../debugger/how-to-debug-in-mixed-mode.md). O depurador também dá suporte a outros tipos de depuração de modo misto, como a depuração de [Python e código nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e ao uso do depurador de scripts em tipos de aplicativo, como o ASP.NET.
 
-Neste tutorial, você vai:
+Neste tutorial, você irá:
 
 > [!div class="checklist"]
 > * Criar uma DLL nativa simples

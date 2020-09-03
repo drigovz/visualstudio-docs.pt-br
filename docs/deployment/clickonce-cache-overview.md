@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d7abeeec4a640119e3089c795ac529a10f8dc09
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182619"
 ---
 # <a name="clickonce-cache-overview"></a>Visão geral do cache do ClickOnce
@@ -29,9 +29,9 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
  Ao fornecer um único local para o armazenamento de aplicativos, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] assume a tarefa de gerenciar a instalação física de um aplicativo do usuário. O cache também ajuda a isolar aplicativos mantendo os assemblies e arquivos de dados para todos os aplicativos e suas versões distintas separadas uns dos outros. Por exemplo, quando você atualiza um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, essa versão e seus recursos de dados são fornecidos com seus próprios diretórios no cache.
 
 ## <a name="cache-storage-quota"></a>Cota de armazenamento em cache
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os aplicativos hospedados online são restritos na quantidade de espaço que podem ocupar por uma cota que restringe o tamanho do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache. O tamanho do cache se aplica a todos os aplicativos online do usuário; um aplicativo online único e parcialmente confiável é limitado a ocupar metade do espaço da cota. Os aplicativos instalados não são limitados pelo tamanho do cache e não contam com relação ao limite de cache. Para todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, o cache retém apenas a versão atual e a versão instalada anteriormente.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos hospedados online são restritos na quantidade de espaço que podem ocupar por uma cota que restringe o tamanho do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache. O tamanho do cache se aplica a todos os aplicativos online do usuário; um aplicativo online único e parcialmente confiável é limitado a ocupar metade do espaço da cota. Os aplicativos instalados não são limitados pelo tamanho do cache e não contam com relação ao limite de cache. Para todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, o cache retém apenas a versão atual e a versão instalada anteriormente.
 
  Por padrão, os computadores cliente têm 250 MB de armazenamento para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos online. Os arquivos de dados não contam para esse limite. Um administrador do sistema pode aumentar ou reduzir essa cota em um determinado computador cliente alterando a chave do registro, **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment\onlineappquotainkb**, que é um valor DWORD que expressa o tamanho do cache em kilobytes. Por exemplo, para reduzir o tamanho do cache para 50 MB, você alteraria esse valor para 51200.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Acesso a dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

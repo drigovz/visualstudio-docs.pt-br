@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919070"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisando a qualidade do aplicativo usando as ferramentas de análise de código
@@ -27,7 +27,7 @@ ms.locfileid: "75919070"
 
 Nesta seção [analisando a qualidade de código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) , a análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações das regras de programação e design definidas nas diretrizes de design do Microsoft .NET Framework. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.
 
- [Analisando aC++ qualidade do c/Code usando a análise de código,](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) a ferramenta de análise de c/C++ Code fornece informações para desenvolvedoresC++ sobre possíveis defeitos em seu código-fonte/c. Erros de codificação comuns relatados pela ferramenta incluem estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e de recursos.
+ [Analisando a qualidade de código C/C++ usando a análise de código](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) A ferramenta de análise de código do C/C++ fornece informações para os desenvolvedores sobre possíveis defeitos em seu código-fonte C/C++. Erros de codificação comuns relatados pela ferramenta incluem estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e de recursos.
 
  [Usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Selecione e crie *conjuntos de regras* para aplicar ao seu projeto.
 
@@ -38,11 +38,11 @@ Nesta seção [analisando a qualidade de código gerenciado](../code-quality/ana
 ### <a name="code-analysis-for-drivers"></a>Análise de código para drivers
  As ferramentas de análise de código podem ajudar a melhorar a estabilidade e a confiabilidade de seu driver, analisando sistematicamente o código-fonte do driver.
 
- [Analisando a qualidade do driver usando ferramentas de análise de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) A análise de código para drivers é uma ferramenta de verificação estática de tempo de compilação que detecta erros de C++ codificação básicos em C e programas e inclui um módulo especializado que é projetado para detectar erros no código de driver de modo kernel (principalmente). O SDV (verificador de driver estático) é uma ferramenta de verificação estática que analisa sistematicamente o código-fonte de drivers do modo kernel do Windows. SDV determina se o driver interage corretamente com o kernel do sistema operacional Windows.
+ [Analisando a qualidade do driver usando ferramentas de análise de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) A análise de código para drivers é uma ferramenta de verificação estática de tempo de compilação que detecta erros básicos de codificação em programas em C e C++ e inclui um módulo especializado projetado para detectar erros no código de driver de modo kernel (principalmente). O SDV (verificador de driver estático) é uma ferramenta de verificação estática que analisa sistematicamente o código-fonte de drivers do modo kernel do Windows. SDV determina se o driver interage corretamente com o kernel do sistema operacional Windows.
 
  [Análise de código para avisos de drivers](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Descreve os avisos que a análise de código dos drivers relata quando detecta um possível erro no código do driver.
 
-## <a name="related-tasks"></a>Tarefas relacionadas
+## <a name="related-tasks"></a>Related Tasks
  [Medindo a complexidade e a manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insira a descrição aqui.
 
  [Teste de unidade em seu código](../test/unit-test-your-code.md) Insira a descrição aqui.
