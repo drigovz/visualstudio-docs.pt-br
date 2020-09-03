@@ -1,5 +1,5 @@
 ---
-title: Exibindo arquivos usando o comando Arquivo Aberto | Microsoft Docs
+title: Exibindo arquivos usando o comando abrir arquivo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,46 +13,46 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708591"
 ---
-# <a name="display-files-by-using-the-open-file-command"></a>Exibir arquivos usando o comando Abrir arquivo
-As etapas a seguir descrevem como o IDE lida com o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]comando Arquivo **Aberto,** que está disponível no menu **Arquivo** em . As etapas também descrevem como os projetos devem responder a chamadas originárias deste comando.
+# <a name="display-files-by-using-the-open-file-command"></a>Exibir arquivos usando o comando abrir arquivo
+As etapas a seguir descrevem como o IDE manipula o comando **Abrir arquivo** , que está disponível no menu **arquivo** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . As etapas também descrevem como os projetos devem responder a chamadas que se originam desse comando.
 
- Quando um usuário clica no comando **Abrir arquivo** no menu **Arquivo** e seleciona um arquivo na caixa de diálogo **Arquivo Aberto,** ocorre o seguinte processo:
+ Quando um usuário clica no comando **Abrir arquivo** no menu **arquivo** e seleciona um arquivo na caixa de diálogo **Abrir arquivo** , ocorre o seguinte processo:
 
 1. Usando a tabela de documentos em execução, o IDE determina se o arquivo já está aberto em um projeto.
 
-    - Se o arquivo estiver aberto, o IDE ressurgirá a janela.
+    - Se o arquivo estiver aberto, o IDE retona a janela.
 
     - Se o arquivo não estiver aberto, o IDE chamará <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> para consultar cada projeto para determinar qual projeto pode abrir o arquivo.
 
         > [!NOTE]
-        > Na implementação <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>do projeto, forneça um valor prioritário que indique o nível em que seu projeto abre o arquivo. Os valores prioritários <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> são fornecidos na enumeração.
+        > Na implementação do projeto do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> , forneça um valor de prioridade que indica o nível no qual o projeto abre o arquivo. Os valores de prioridade são fornecidos na <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeração.
 
-2. Cada projeto responde com um nível de prioridade que indica a importância que ele coloca em ser o projeto para abrir o arquivo.
+2. Cada projeto responde com um nível de prioridade que indica a importância que ele coloca para que o projeto Abra o arquivo.
 
-3. O IDE usa os seguintes critérios para determinar qual projeto abre o arquivo:
+3. O IDE usa os critérios a seguir para determinar qual projeto abre o arquivo:
 
-    - O projeto que responde com a`DP_Intrinsic`maior prioridade ( ) abre o arquivo. Se mais de um projeto responder com essa prioridade, o primeiro projeto a responder abre o arquivo.
+    - O projeto que responde com a prioridade mais alta ( `DP_Intrinsic` ) abre o arquivo. Se mais de um projeto responder com essa prioridade, o primeiro projeto a responder abrirá o arquivo.
 
-    - Se nenhum projeto responder com a`DP_Intrinsic`maior prioridade ( ), mas todos os projetos respondem com a mesma, menor prioridade, o projeto ativo abre o arquivo. Se nenhum projeto estiver ativo, o primeiro projeto a responder abre o arquivo.
+    - Se nenhum projeto responder com a prioridade mais alta ( `DP_Intrinsic` ), mas todos os projetos responderem com a mesma prioridade mais baixa, o projeto ativo abrirá o arquivo. Se nenhum projeto estiver ativo, o primeiro projeto a ser respondido abrirá o arquivo.
 
-    - Se nenhum projeto reivindicar a`DP_Unsupported`propriedade do arquivo (), o projeto Arquivos Diversos abrirá o arquivo.
+    - Se nenhum projeto alega a propriedade do arquivo ( `DP_Unsupported` ), o projeto de arquivos diversos abre o arquivo.
 
-         Se uma instância do projeto Arquivos Diversos for criada, o projeto sempre responderá com o valor `DP_CanAddAsExternal`. Esse valor indica que o projeto pode abrir o arquivo. Este projeto é usado para abrigar arquivos abertos que não estão em nenhum outro projeto. A lista de itens deste projeto não é persistiu; este projeto só é visível no **Solution Explorer** quando ele é usado para abrir um arquivo.
+         Se uma instância do projeto de arquivos diversos for criada, o projeto sempre responderá com o valor `DP_CanAddAsExternal` . Esse valor indica que o projeto pode abrir o arquivo. Este projeto é usado para alojar arquivos abertos que não estão em nenhum outro projeto. A lista de itens neste projeto não é persistente; Esse projeto é visível em **Gerenciador de soluções** somente quando é usado para abrir um arquivo.
 
-         Se o projeto Arquivos Diversos não indicar que ele pode abrir o arquivo, uma instância do projeto não foi criada. Neste caso, o IDE cria uma instância do projeto Arquivos Diversos e diz ao projeto para abrir o arquivo.
+         Se o projeto de arquivos diversos não indicar que ele pode abrir o arquivo, uma instância do projeto não será criada. Nesse caso, o IDE cria uma instância do projeto de arquivos diversos e informa ao projeto para abrir o arquivo.
 
-4. Assim que o IDE determinar qual projeto abre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> o arquivo, ele chama o método nesse projeto.
+4. Assim que o IDE determina qual projeto abre o arquivo, ele chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> método nesse projeto.
 
-5. O projeto então tem a opção de abrir o arquivo usando um editor específico do projeto ou um editor padrão. Para obter mais informações, consulte [Como: Abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md) [e como: Abrir editores padrão,](../../extensibility/how-to-open-standard-editors.md)respectivamente.
+5. Em seguida, o projeto tem a opção de abrir o arquivo usando um editor específico do projeto ou um editor padrão. Para obter mais informações, consulte [como: abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md) e [como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md), respectivamente.
 
 ## <a name="see-also"></a>Confira também
-- [Exibir arquivos usando o comando Abrir com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
-- [Abrir e salvar itens do projeto](../../extensibility/internals/opening-and-saving-project-items.md)
-- [Como: Abrir editores específicos de projetos](../../extensibility/how-to-open-project-specific-editors.md)
-- [Como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
+- [Exibir arquivos usando o comando abrir com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
+- [Abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)
+- [Como: abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)

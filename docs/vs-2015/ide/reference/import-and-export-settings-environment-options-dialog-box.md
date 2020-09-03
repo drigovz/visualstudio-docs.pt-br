@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85f52873f52a822a6f6a79ebea545569dc40bf73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671018"
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Caixa de diálogo Opções, Ambiente, Importar e Exportar Configurações
@@ -23,5 +23,5 @@ ms.locfileid: "72671018"
 
 Use esta página para especificar onde seu arquivo de configurações de usuário está salvo e se você deseja usar um arquivo de configurações de equipe. Para obter mais informações sobre configurações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

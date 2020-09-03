@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4c2f2445bc7139c5bbc80a35905e24c319c9dfa
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284640"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
@@ -58,8 +58,8 @@ Você pode especificar o local de saída gerado pelo seu projeto por configuraç
 >
 > ![Seletor de configuração de build do Visual Studio de 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página de compilação, designer de projeto (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [Página de propriedades geral (projeto)](/cpp/build/reference/general-property-page-project)
-- [Compilação e construção](../ide/compiling-and-building-in-visual-studio.md)
+- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)

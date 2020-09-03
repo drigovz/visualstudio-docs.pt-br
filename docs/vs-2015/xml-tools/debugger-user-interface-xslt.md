@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670982"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
@@ -23,7 +23,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 
  Para obter mais informações, consulte a [referência da interface do usuário de depuração](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>A janela locais
+## <a name="locals-window"></a>Janela Locais
  A janela locais exibe informações sobre todas as variáveis definidos na folha de estilos. A janela locais contém três colunas de informações:
 
  **Nome** do Esta coluna contém os nomes de todas as variáveis locais no escopo atual. Conjuntos de nó têm um controle de árvore que você possa fazer pesquisa detalhadas para consultar suas subpastas.
@@ -42,7 +42,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 
  Para obter mais informações, consulte [como: alterar o contexto do depurador](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
 
-## <a name="output-window"></a>Janela Saída
+## <a name="output-window"></a>Janela de saída
  A janela de saída mostra todas as mensagens de erro ou exceções de segurança que ocorrem durante a depuração.
 
  O depurador XSLT usa uma janela separada para exibir a saída do depurador. Essa é a mesma janela usada para exibir a saída de um comando **show XSL output** .
@@ -55,7 +55,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 > [!NOTE]
 > O depurador XSLT não tem nenhum aviso, o que nunca aparece na lista de tarefas.
 
-## <a name="breakpoints-window"></a>A janela de pontos de interrupção
+## <a name="breakpoints-window"></a>Janela Pontos de Interrupção
  A janela de pontos de interrupção mostra os pontos de interrupção definidos no projeto atual. Se um ponto de interrupção é adicionado quando a janela está em modo de exibição, a janela é atualizado automaticamente para mostrar o novo ponto de interrupção.
 
  A janela de pontos de interrupção deve se comportar da mesma maneira que outros depuradores do Visual Studio.
@@ -63,12 +63,12 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 ## <a name="command-windowimmediate-window"></a>Janela de comando/janela immediate
  Não implementado nesta versão do depurador XSLT.
 
-## <a name="watch-window"></a>Observação de janela
+## <a name="watch-window"></a>Janela de Observação
  A janela de observação é usada para avaliar as variáveis. Você também pode alterar os valores das variáveis.
 
  Variáveis exibidos na janela de observação são para o contexto atual (o item top-most na pilha de chamadas). Se você alterar o contexto, a janela de observação atualiza e exibe as variáveis definidas para esse contexto.
 
-## <a name="call-stack-window"></a>A janela de pilha de chamadas
+## <a name="call-stack-window"></a>Janela Pilha de Chamadas
  A janela a pilha de chamadas é usada para exibir os nomes de funções na pilha de chamadas, os tipos de parâmetro, e os valores de parâmetro. Informações de pilha de chamadas é mostrada somente quando o programa que está sendo depurado está em um estado de interrupção.
 
  A pilha de chamadas representa os vários contextos que a execução de fonte está atravessando. Por exemplo, se houver um chamada de modelo “a” ao modelo “b”, o modelo “a” e o modelo “b” aparecem na janela de pilha de chamadas com o contexto atual na parte superior da lista. O usuário pode ver a consulta que está em execução atualmente.
@@ -95,5 +95,5 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
 
  Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depurando](../xml-tools/debugging-xslt.md) [janelas de variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e) [básicas do depurador](../debugger/debugger-basics.md) XSLT

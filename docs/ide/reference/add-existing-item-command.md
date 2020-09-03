@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585698"
 ---
 # <a name="add-existing-item-command"></a>Comando Adicionar Item Existente
@@ -33,7 +33,7 @@ File.AddExistingItem filename [/e:editorname]
 `filename`\
 Obrigatórios. O caminho completo e o nome do arquivo, com a extensão, do item a adicionar à solução atual. Se o caminho do arquivo ou o nome do arquivo contiver espaços, coloque todo o caminho entre aspas.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /e: `editorname`\
 Opcional. Nome do editor no qual o arquivo será aberto. Se o argumento for especificado, mas nenhum nome de editor for fornecido, a caixa de diálogo **Abrir com** será exibida.
 
@@ -56,6 +56,6 @@ Este exemplo adiciona o arquivo, Form1.frm, à solução atual.
 ## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

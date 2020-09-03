@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284471"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
@@ -133,7 +133,7 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)

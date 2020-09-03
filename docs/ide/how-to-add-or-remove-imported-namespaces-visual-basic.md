@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284733"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
@@ -76,6 +76,6 @@ Se posteriormente mudar de ideia e decidir que realmente precisava da classe `Ev
 
 5. Clique no botão **Adicionar importação de usuário** para atualizar o namespace na lista **Namespaces importados**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)

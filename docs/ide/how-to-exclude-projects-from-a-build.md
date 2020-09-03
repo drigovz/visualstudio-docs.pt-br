@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c30dd912378fd933d29bff1d8828f31de58f9afa
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284315"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Como excluir projetos de um build
@@ -67,7 +67,7 @@ No painel **Build** da janela de **saída** , o Visual Studio relata o número d
 
 Para descobrir por que um projeto foi ignorado, observe a configuração ativa ( `Debug x86` no exemplo anterior) e escolha **criar**  >  **Configuration Manager**. Você pode exibir ou alterar quais projetos são ignorados para cada configuração, conforme discutido neste artigo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Noções sobre configurações de build](../ide/understanding-build-configurations.md)
 - [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)

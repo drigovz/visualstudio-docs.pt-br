@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produto&gt; elemento (Bootstrapper) | Microsoft Docs'
+title: '&lt;&gt;Elemento Product (Bootstrapper) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,18 +17,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200649"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produto&gt; elemento (Bootstrapper)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O `Product` é o elemento XML de nível superior dentro de um arquivo de produto.  
+O `Product` elemento é o elemento XML de nível superior dentro de um arquivo de produto.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Product  
@@ -148,7 +148,7 @@ ProductCode
 |`ProductCode`|Um identificador exclusivo para o produto.|  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra um arquivo de produto completo para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ O exemplo de código a seguir mostra um arquivo de produto completo para instalar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -252,5 +252,5 @@ ProductCode
 </Product>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

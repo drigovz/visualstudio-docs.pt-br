@@ -10,27 +10,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 962321a1ab1a1ca5332300eea0d21781a9e4bbf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670966"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatação, XML, editor de texto, a caixa de diálogo opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta caixa de diálogo permite que você especifique as configurações de formatação para o editor XML. Você pode acessar a caixa de diálogo **Opções** no menu **ferramentas** .
+Esta caixa de diálogo permite que você especifique as configurações de formatação para o Editor de XML. Você pode acessar a caixa de diálogo **Opções** no menu **Ferramentas**.
 
 > [!NOTE]
-> Essas configurações estão disponíveis quando você seleciona a pasta do **Editor de texto** , a pasta **XML** e a opção de **formatação** na caixa de diálogo **Opções** .
+> Estas configurações estão disponíveis quando você seleciona a pasta **Editor de Texto**, a pasta **XML** e a opção **Formatação** na caixa de diálogo **Opções**.
 
 ## <a name="attributes"></a>Atributos
  **Preservar formatação de atributo manual** Os atributos não são reformatados. Esse é o padrão.
 
 > [!NOTE]
-> Se os atributos estão em várias linhas, o editor recua cada linha de atributos para coincidir com o recuo de elemento pai.
+> Se os atributos estiverem em linhas múltiplas, o editor recua cada linha de atributos para corresponder ao recuo do elemento pai.
 
- **Alinhar atributos cada em sua própria linha** Alinha o segundo e os atributos subsequentes verticalmente para corresponder ao recuo do primeiro atributo. O texto a seguir XML é um exemplo de como os atributos seriam alinhados.
+ **Alinhar atributos cada em sua própria linha** Alinha o segundo e os atributos subsequentes verticalmente para corresponder ao recuo do primeiro atributo. O seguinte texto XML é um exemplo de como os atributos seriam alinhados.
 
 ```
 <item id = "123-A"
@@ -47,7 +47,7 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 ## <a name="mixed-content"></a>Conteúdo Misto
  **Preservar conteúdo misto por padrão** Determina se o editor reformata o conteúdo misto. Por padrão, o editor tenta reformatar conteúdo misturado, a não ser que quando o conteúdo for encontrado em um escopo de `xml:space="preserve"` .
 
- Se um elemento contém uma mistura de texto e de marcação, os conteúdos são consideradas conteúdo misturado. O código a seguir é um exemplo de um elemento com conteúdo misturado.
+ Se um elemento contiver uma mistura de texto e marcação, os conteúdos serão considerados de conteúdo misto. O código a seguir é um exemplo de um elemento com conteúdo misturado.
 
 ```
 <dir>c:\data\AlphaProject\
@@ -56,5 +56,5 @@ Esta caixa de diálogo permite que você especifique as configurações de forma
 </dir>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md) [componentes do editor XML](../xml-tools/xml-editor-components.md)

@@ -18,10 +18,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585412"
 ---
 # <a name="code-snippets"></a>Snippets de código
@@ -31,17 +31,17 @@ Snippets de código são pequenos blocos de código reutilizável que podem ser 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Snippet de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
-Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para visualizar todos os trechos instalados disponíveis para um idioma, abra o **Gerenciador de trechos** de código no menu **Ferramentas** (ou, **pressione Ctrl**+**K**, **Ctrl**+**B**), e escolha o idioma no menu suspenso na parte superior.
+Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para exibir todos os trechos de código instalados disponíveis para um idioma, abra o **Gerenciador de trechos de códigos** no menu **ferramentas** (ou pressione **Ctrl** + **K**, **Ctrl** + **B**) e escolha o idioma no menu suspenso na parte superior.
 
 ![Caixa de diálogo Gerenciador de Snippets de Código](media/code-snippets-manager.png)
 
 Em geral, os snippets de código podem ser acessados das seguintes maneiras:
 
-- Na barra de menu, escolha **Editar** > **IntelliSense** > **Inserir trecho**
+- Na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **trecho de código de inserção** do IntelliSense
 
-- No menu com o botão direito do mouse ou contexto no editor de código, escolha **Snippet** > **Insert Snippet**
+- No menu de contexto ou clique com o botão direito do mouse no editor **Snippet**de códigos, escolha trecho de código de  >  **inserção** de trecho
 
-- Do teclado, **pressione Ctrl**+**K,****Ctrl**+**X**
+- No teclado, pressione **Ctrl** + **K**,**Ctrl** + **X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Snippets de expansão e snippets de “envolver com”
 
@@ -60,9 +60,9 @@ finally
 }
 ```
 
-Você pode inserir este trecho clicando em **Inserir trecho** no menu com o botão direito do mouse (menu de contexto) da janela de código, em seguida, **Visual C#**, em seguida, digitar `tryf`e, em seguida, pressionar **Guia**. Ou, você `tryf` pode digitar e pressionar **Tab** duas vezes.
+Você pode inserir esse trecho clicando em **Inserir trecho** no menu do botão direito do mouse (menu de contexto) da janela de código, em seguida, em **Visual C#**, digite `tryf` e pressione **Tab**. Ou, você pode digitar `tryf` e pressionar **Tab** duas vezes.
 
-Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha `return FALSE;`de código (por exemplo), e, em seguida, escolher **Surround With** > **if**, o trecho é expandido ao redor da linha:
+Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha de código (por exemplo `return FALSE;` ,) e, em seguida, escolher **Circundar com**  >  **If**, o trecho será expandido em torno da linha:
 
 ```cpp
 if (true)
@@ -75,7 +75,7 @@ if (true)
 
 Snippets podem conter parâmetros de substituição, que são espaços reservados que você deve substituir de acordo com o código exato que você está escrevendo. No exemplo anterior, `true` é um parâmetro de substituição, que você poderia substituir pela condição apropriada. A substituição feita é repetida para cada instância do mesmo parâmetro de substituição no snippet.
 
-Por exemplo, no Visual Basic, há um snippet de código que insere uma propriedade. Para inserir o trecho, escolha > **'Snippet' Inserir trecho** do menu com o botão direito do mouse ou contexto em um arquivo de código Visual Basic. **Snippet** Em seguida, escolha **Propriedades de padrões de** > **código, procedimentos, eventos** > **definir uma propriedade**.
+Por exemplo, no Visual Basic, há um snippet de código que insere uma propriedade. Para inserir o trecho de código **, escolha trecho de código**  >  **Inserir trecho** no menu de contexto ou clique com o botão direito do mouse em um arquivo de códigos de Visual Basic. Em seguida, escolha Propriedades de **padrões de código**  >  **, procedimentos e eventos**  >  **defina uma propriedade**.
 
 ![Menu de snippet de código para Definir uma propriedade](media/code-snippets-vb-property.png)
 
@@ -97,11 +97,11 @@ Se você alterar `newPropertyValue` para `m_property`, cada instância de `newPr
 
 ## <a name="see-also"></a>Confira também
 
-- [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Walkthrough: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Como distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)
-- [Melhores práticas para o uso de trechos de código](../ide/best-practices-for-using-code-snippets.md)
+- [Práticas recomendadas para usar trechos de código](../ide/best-practices-for-using-code-snippets.md)
 - [Snippets de solução de problemas](../ide/troubleshooting-snippets.md)
-- [C# trechos de código](../ide/visual-csharp-code-snippets.md)
+- [Trechos de código C#](../ide/visual-csharp-code-snippets.md)
 - [Trechos de código C++](../ide/visual-cpp-code-snippets.md)
 - [Referência de esquema dos snippets de código](../ide/code-snippets-schema-reference.md)
 - [Snippets de código (Visual Studio para Mac)](/visualstudio/mac/snippets)

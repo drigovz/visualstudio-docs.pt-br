@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 562990b14edba11abf50dc735279cba36bb21518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671197"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelos de compartilhamento e diagramas de exportação
@@ -31,7 +31,7 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 
  Usuários diferentes podem trabalhar ao mesmo tempo em um modelo UML, mas devem funcionar em pacotes diferentes.
 
- Recomendamos que você use [!INCLUDE[esprscc](../includes/esprscc-md.md)].
+ É recomendável usar o [!INCLUDE[esprscc](../includes/esprscc-md.md)].
 
  Para obter mais informações, consulte [gerenciar modelos e diagramas sob controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md).
 
@@ -60,5 +60,5 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 |[Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)|Visão geral de modelos e diagramas.|
 |[Personalizar o modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Se você usar um perfil UML em um modelo e, em seguida, enviar o modelo para outra pessoa, ele deverá ter instalado o mesmo perfil.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md) [use modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c283d5ca29b67e772df2a0bb2e25dee70cd63fd3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284367"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Como distribuir snippets de código
@@ -123,6 +123,6 @@ Neste procedimento, você usará o mesmo trecho de código de Olá, Mundo que é
     Console.WriteLine("Hello, World!")
     ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Trechos de código](../ide/code-snippets.md)
+- [Snippets de código](../ide/code-snippets.md)
