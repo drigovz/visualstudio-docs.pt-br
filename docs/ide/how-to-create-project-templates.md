@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284380"
 ---
 # <a name="how-to-create-project-templates"></a>Como criar modelos de projeto
@@ -61,7 +61,7 @@ Você pode criar modelos de projeto manualmente reunindo os arquivos que constit
 
 Se o SDK do Visual Studio estiver instalado, você poderá encapsular o modelo concluído em um arquivo VSIX para implantação usando o modelo **Projeto VSIX**. Para obter mais informações, consulte [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: criar modelos de item](../ide/how-to-create-item-templates.md)

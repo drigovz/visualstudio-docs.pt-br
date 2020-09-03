@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905585"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: usar o log de atividades
@@ -38,7 +38,7 @@ VSPackages pode gravar mensagens no log de atividades. Esse recurso é especialm
         "Called for: {0}", this.ToString()));
     ```
 
-     Esse código obtém o <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> serviço e o converte em uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>grava uma entrada informativa no log de atividades usando o contexto cultural atual.
+     Esse código obtém o <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> serviço e o converte em uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> grava uma entrada informativa no log de atividades usando o contexto cultural atual.
 
 2. Quando o VSPackage é carregado (geralmente quando um comando é invocado ou uma janela é aberta), o texto é gravado no log de atividades.
 

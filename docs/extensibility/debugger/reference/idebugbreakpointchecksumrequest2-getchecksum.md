@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2:GetChecksum | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2:: getchecksum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735176"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Recupera o resumo do documento para uma solicitação de ponto de ruptura dado o identificador exclusivo do algoritmo de soma de verificação a ser usado.
+Recupera a soma de verificação do documento para uma solicitação de ponto de interrupção, dado o identificador exclusivo do algoritmo de soma de verificação a ser usado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ public int GetChecksum(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `guidAlgorithm`\
-[em] Identificador único do algoritmo de checksum.
+no Identificador exclusivo do algoritmo de soma de verificação.
 
 `pChecksumData`\
-[fora] Resumo de verificação de documentos para a solicitação de ponto de ruptura.
+fora Soma de verificação de documento para a solicitação de ponto de interrupção.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra uma função que verifica se a soma de verificação de um documento, que está prestes a ser vinculada, corresponde a uma da ui.
+O exemplo a seguir mostra uma função que verifica se a soma de verificação de um documento, que está prestes a ser associada, corresponde a uma da interface do usuário.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

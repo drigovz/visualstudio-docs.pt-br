@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: bind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 83d48e8df847620716b0f581be65ded48e2e5a13
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725979"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-Vincula este ponto de ruptura pendente a um ou mais locais de código.
+Associa esse ponto de interrupção pendente a um ou mais locais de código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int Bind();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de ruptura tiver sido excluído.
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção foi excluído.
 
 ## <a name="remarks"></a>Comentários
- Quando este método é chamado, um mecanismo de depuração (DE) deve tentar vincular esse ponto de ruptura pendente a todos os locais de código que correspondam.
+ Quando esse método é chamado, um mecanismo DE depuração (DE) deve tentar associar esse ponto de interrupção pendente a todos os locais de código correspondentes.
 
- Após o retorno desse método, o chamador precisa aguardar eventos indicando que o ponto de interrupção pendente está vinculado ou está errado antes de assumir que as chamadas para os [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods irão enumerar todos os pontos de interrupção vinculados ou de erro, respectivamente.
+ Depois que esse método retorna, o chamador precisa aguardar eventos indicando que o ponto de interrupção pendente está associado ou está com erro antes de assumir que as chamadas para [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md). os métodos enumerarão todos os pontos de interrupção de erro ou associados, respectivamente.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

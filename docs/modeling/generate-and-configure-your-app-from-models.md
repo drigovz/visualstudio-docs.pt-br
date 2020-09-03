@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114891"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
@@ -20,11 +20,11 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
  O modelo representa os requisitos mais diretamente do que o código. Ao derivar o comportamento do aplicativo diretamente do modelo, você pode responder a requisitos alterados de forma muito mais rápida e confiável do que ao atualizar o código. Embora seja necessário algum trabalho inicial para configurar a derivação, esse investimento é retornado se você espera alterações nos requisitos ou se planeja fazer várias variantes do produto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Gerando o código do seu aplicativo a partir de um modelo
- A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma solução do Visual Studio na qual você mantém o modelo. Para obter mais informações, consulte .
+ A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma solução do Visual Studio na qual você mantém o modelo. Para obter mais informações, consulte:
 
-- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
-- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 
   Esse método é fácil de aplicar de forma incremental. Comece com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de origem dessas partes para que se tornem arquivos de modelo de texto (. TT). Neste ponto, os arquivos Source. cs serão gerados automaticamente a partir dos arquivos de modelo, de modo que o aplicativo funcionará como antes.
 
@@ -35,9 +35,9 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
   No entanto, se você começar com um aplicativo existente, poderá descobrir que muita refatoração é necessária para separar os diferentes comportamentos governados pelo modelo para que eles possam ser variados independentemente. Recomendamos que você avalie esse aspecto do aplicativo ao estimar o custo do seu projeto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configurando seu aplicativo a partir de um modelo
- Se você quiser variar o comportamento do aplicativo em tempo de execução, não poderá usar a geração de código, que gera o código-fonte antes da compilação do aplicativo. Em vez disso, você pode criar seu aplicativo para ler o modelo e variar seu comportamento de acordo. Para obter mais informações, consulte .
+ Se você quiser variar o comportamento do aplicativo em tempo de execução, não poderá usar a geração de código, que gera o código-fonte antes da compilação do aplicativo. Em vez disso, você pode criar seu aplicativo para ler o modelo e variar seu comportamento de acordo. Para obter mais informações, consulte:
 
-- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Como abrir um modelo a partir de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que lerá o modelo e configurar uma estrutura que permita que seus valores sejam acessíveis para as partes variáveis. Tornar as partes variáveis genéricas é mais cara do que a geração de código.
 
@@ -70,8 +70,8 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo.
 
      Por exemplo, um diagrama de classes UML é uma coleção de caixas e setas; com essa notação, você pode, teoricamente, definir qualquer coisa. Mas não recomendamos que você use o diagrama de classe, exceto onde você está, na verdade, descrevendo um conjunto de tipos. Por exemplo, você poderia adaptar os diagramas de classe para descrever diferentes tipos de páginas da Web.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Como abrir um modelo a partir de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

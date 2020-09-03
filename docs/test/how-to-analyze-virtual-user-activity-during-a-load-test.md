@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288394"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
@@ -29,7 +29,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 2. Após a execução do teste de carga, a página de resumo dos resultados do teste é exibida. Escolha o botão **Detalhes do Usuário** na barra de ferramentas.
 
-     -ou-
+     - ou -
 
      Abra a exibição Gráficos escolhendo o botão **Gráficos** na barra de ferramentas. Clique com o botão direito do mouse em um gráfico e selecione **Ir para detalhe do usuário**.
 
@@ -57,7 +57,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
    - **Rede**
 
-   - **Hora de início**
+   - **Start Time**
 
    - **Duration**
 
@@ -99,11 +99,11 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
    - **Mostrar resultados com erros** Exibe resultados com erros que podem ajudar na depuração.
 
      > [!NOTE]
-     > A lista de tipos de erro listados no nó **Mostrar resultados com erros** pode ser investigada mais detalhadamente escolhendo o botão **tabelas** na barra de ferramentas do **Visualizador de resultados de teste de desempenho da Web** . Para obter mais informações, consulte [analisar resultados e erros de teste de carga na exibição tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > A lista de tipos de erro listados no nó **Mostrar resultados com erros** pode ser investigada mais detalhadamente escolhendo o botão **tabelas** na barra de ferramentas do **Visualizador de resultados de teste de desempenho da Web** . Para obter mais informações, consulte  [analisar resultados e erros de teste de carga na exibição tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      O **Gráfico de Atividade de Usuário Virtual** é atualizado de acordo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Walkthrough: usando o gráfico de atividade de usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

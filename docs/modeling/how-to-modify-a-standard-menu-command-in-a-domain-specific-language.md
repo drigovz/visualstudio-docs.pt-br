@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7236c074bda17023c989c744042db2de4046558
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532490"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
@@ -131,15 +131,15 @@ Os seguintes fragmentos são úteis com frequência dentro desses métodos:
 
 - `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()` - `true`Se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-o usuário não selecionou várias formas
+- `this.IsSingleSelection()` -o usuário não selecionou várias formas
 
-- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
+- `this.SingleSelection` -a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement` -o elemento de modelo representado por uma forma.
 
 Para obter mais informações sobre como navegar de elemento para elemento e sobre como criar objetos e links, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 

@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288246"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
@@ -83,15 +83,15 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 5. Escolha a guia **geral** . Selecione **eventos do IntelliTrace somente** para registrar eventos de diagnóstico significativos que têm impacto mínimo sobre o desempenho durante o teste.
 
-     -ou-
+     - ou -
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
 6. Para coletar dados do aplicativo ASP.NET em execução nos Serviços de Informações da Internet, selecione **Coletar dados de aplicativos ASP.NET em execução nos Serviços de Informações da Internet**. Configure o agente de teste na função servidor Web. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
+7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
@@ -100,11 +100,11 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 8. Escolha a guia **processos** . Selecione **coletar dados de todos os processos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de processos e **remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 
-9. Adicional Escolha a guia **eventos do IntelliTrace** . marque ou desmarque cada categoria de evento do IntelliTrace que você deseja incluir ou excluir ao coletar eventos de diagnóstico.
+9. Adicional Escolha a guia **eventos do IntelliTrace** . Marque ou desmarque cada categoria de evento do IntelliTrace que você deseja incluir ou excluir ao coletar eventos de diagnóstico.
 
 10. (Opcional) Expanda cada categoria de evento do IntelliTrace e marque ou desmarque cada evento específico que você deseja incluir ou excluir nos eventos do IntelliTrace.
 
@@ -124,7 +124,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
     > Para redefinir a configuração para este adaptador de dados de diagnóstico, escolha **Redefinir para a configuração padrão** no Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

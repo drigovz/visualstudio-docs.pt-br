@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0feabad8dfa3b086c9ed5a1a58e231719774f9cc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298368"
 ---
-# <a name="memory-usage"></a>Utilização de Memória
+# <a name="memory-usage"></a>Uso de Memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
+Localize vazamentos de memória e memória ineficiente enquanto estiver Depurando com a ferramenta de diagnóstico de **uso de memória** integrada ao depurador. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  
   
 - É possível analisar um único instantâneo para compreender o impacto relativo dos tipos de objeto sobre o uso da memória e encontrar o código no aplicativo que usa a memória de maneira ineficiente.  
   
@@ -27,7 +27,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
   O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
   
-  ![DiagnosticTools&#45;atualização1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Atualização1")  
+  ![DiagnosticTools&#45;Atualização1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Atualização1")  
   
   Embora você possa coletar instantâneos de memória a qualquer momento na ferramenta **Uso de Memória**, pode usar o depurador do Visual Studio para controlar como o seu aplicativo é executado ao investigar problemas de desempenho. A definição de pontos de interrupção, passo a passo, Interromper Tudo e outras ações de depurador podem ajudá-lo a concentrar as investigações de desempenho nos caminhos de código mais relevantes. A execução dessas ações enquanto o aplicativo é executado pode eliminar o ruído do código que não lhe interessa e reduzir significativamente a quantidade de tempo que leva para diagnosticar um problema.  
   
@@ -81,7 +81,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
 ### <a name="managed-types-reports"></a>Relatórios de tipos gerenciados  
  Escolha o link atual de uma célula **Objetos Gerenciados** ou **Tamanho de Heap Gerenciado** da tabela de resumo Uso de Memória.  
   
- ![Caminhos de relatório &#45; de tipo gerenciado do depurador para raiz](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Relatório de tipo gerenciado do depurador &#45; caminhos para raiz](../profiling/media/dbgdiag-mem-managedtypesreport-pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  O painel superior mostra a contagem e o tamanho dos tipos no instantâneo, incluindo o tamanho de todos os objetos referenciados pelo tipo (**inclusive tamanho**).  
   
@@ -93,7 +93,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
  Para exibir as instâncias de um tipo selecionado no painel superior, escolha o ícone do ![ícone de instância](../profiling/media/dbgdiag-mem-instanceicon.png "DBGDIAG_MEM_InstanceIcon") .  
   
- ![Exibição de instâncias](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![O modo de instâncias](../profiling/media/dbgdiag-mem-managedtypesreport-instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
  O modo de exibição **Instâncias** exibe as instâncias do objeto selecionado no instantâneo no painel superior. O painel Caminhos para Raiz e Objetos Referenciados exibem os objetos que fazem referência à instância selecionada e os tipos referenciados pela instância selecionada. Quando o depurador é interrompido no ponto em que o instantâneo foi tirado, você pode passar o mouse sobre a célula Valor para exibir os valores do objeto em uma dica de ferramenta.  
   
@@ -108,7 +108,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
      O modo de exibição **Instâncias** mostra cada instância do tipo selecionado. A seleção de uma instância exibe a pilha de chamadas resultou na criação da instância no painel **Pilha de Chamadas de Alocação**.  
   
-     ![Exibição de instâncias](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![O modo de instâncias](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
 - Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.  
   
@@ -118,13 +118,13 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
 - Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.  
   
-   ![Escolher um relatório &#40;de&#41;alteração de dif f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Escolha um relatório de alteração &#40;dif&#41;f](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 - Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.  
   
    ![Escolha um instantâneo da lista comparar com](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
-  O relatório de comparação adiciona colunas (marcadas com **(Diff)** ) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como o relatório de comparação Exibição de Tipo Nativo pode se parecer:  
+  O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como o relatório de comparação Exibição de Tipo Nativo pode se parecer:  
   
   ![Tipos nativos diff veiw](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   

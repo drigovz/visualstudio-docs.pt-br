@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737923"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
-Especifica a condição associada à contagem de passes de ponto de ruptura que faz com que o ponto de ruptura seja acionado.
+Especifica a condição associada à contagem de passagens de ponto de interrupção que faz com que o ponto de interrupção seja acionado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_PASSCOUNT_STYLE {
@@ -48,26 +48,26 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>Campos
 `BP_PASSCOUNT_NONE`\
-Não especifica nenhum estilo de contagem de passes de ponto de ruptura.
+Especifica nenhum estilo de contagem de passe de ponto de interrupção.
 
 `BP_PASSCOUNT_EQUAL`\
-Define o estilo de contagem de passes de ponto de quebra igual. O ponto de partida dispara quando o número de vezes que o ponto de partida é atingido é igual à contagem de passes.
+Define o estilo de contagem de passagens de ponto de interrupção como igual. O ponto de interrupção é acionado quando o número de vezes que o ponto de interrupção é atingido é igual à contagem de aprovações.
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-Define o estilo de contagem de passes de ponto de ruptura igual ou maior. O ponto de partida dispara quando o número de vezes que o ponto de ruptura é atingido é igual ou maior do que a contagem de passes.
+Define o estilo de contagem de passagens de ponto de interrupção como igual ou maior. O ponto de interrupção é acionado quando o número de vezes que o ponto de interrupção é atingido é igual ou maior que a contagem de aprovações.
 
 `BP_PASSCOUNT_MOD`\
-Especifica uma contagem de passes de módulo. Por exemplo, se a contagem `BP_PASSCOUNT_MOD` de passes for do tipo e o valor da contagem de passes for 4, o ponto de partida é acionado toda vez que a contagem de acertos for um múltiplo de 4.
+Especifica uma contagem de passagens de módulo. Por exemplo, se a contagem Pass for do tipo `BP_PASSCOUNT_MOD` e o valor da contagem Pass for 4, o ponto de interrupção será acionado sempre que a contagem de vezes for um múltiplo de 4.
 
 ## <a name="remarks"></a>Comentários
-Usado para `stylePassCount` o membro da estrutura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que, por sua vez, é membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Usado para o `stylePassCount` membro da estrutura de [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que, por sua vez, é um membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

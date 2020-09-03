@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3f7d09e29489dac0598b9558df595aedd0c5d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203051"
 ---
-# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+# <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica o tipo do nome de host.  
+Especifica o tipo de nome do host.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_GETHOSTNAME_TYPE {   
@@ -49,15 +49,15 @@ public enum enum_GETHOSTNAME_TYPE { 
  Especifica um nome de arquivo do host.  
   
 ## <a name="remarks"></a>Comentários  
- Esses valores são passados como um argumento para o [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) método para recuperar um nome de host em formatos diferentes.  
+ Esses valores são passados como um argumento para o método [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) para recuperar um nome de host em formatos diferentes.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

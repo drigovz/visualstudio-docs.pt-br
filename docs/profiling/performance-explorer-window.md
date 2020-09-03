@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772433"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
@@ -52,6 +52,6 @@ A janela do **Gerenciador de Desempenho** contém um controle de árvore que exi
 
 ## <a name="see-also"></a>Confira também
 
-[Visualizações gerais](../profiling/overviews-performance-tools.md)
-[configurando sessões](../profiling/configuring-performance-sessions.md)
-de desempenho[controlando a coleta de dados](../profiling/controlling-data-collection.md)
+[Visões gerais](../profiling/overviews-performance-tools.md) 
+ [Configurando sessões](../profiling/configuring-performance-sessions.md) 
+ de desempenho [Controlando a coleta de dados](../profiling/controlling-data-collection.md)

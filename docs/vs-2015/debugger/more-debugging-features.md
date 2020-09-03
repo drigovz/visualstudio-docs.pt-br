@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300530"
 ---
 # <a name="more-debugging-features"></a>Mais recursos de depuração
@@ -41,7 +41,7 @@ Esta seção contém recursos adicionais que você pode usar com o depurador do 
  [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Discute a depuração Just-In-Time, que pode iniciar o depurador automaticamente quando um programa falha ao executar fora do Visual Studio.  
   
- [Passo a passo: depuração em tempo de design](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Walkthrough: Depurando em tempo de design](../debugger/walkthrough-debugging-at-design-time.md)  
  Exibe como usar a janela Imediato do Visual Studio para executar uma função ou sub-rotina quando seu aplicativo não executar. 
   
  [Editar e continuar](../debugger/edit-and-continue.md)  
@@ -49,5 +49,5 @@ Esta seção contém recursos adicionais que você pode usar com o depurador do 
   
  [Usando arquivos de despejo](../debugger/using-dump-files.md) Descreve arquivos de despejo, incluindo instruções sobre como salvar e abrir. Os arquivos de despejo contêm um instantâneo do estado de programa em algum ponto no tempo, geralmente após uma falha. Se você testar seu programa em uma máquina que não tenha arquivos de origem ou PDBs instalados, poderá salvar um arquivo de despejo quando ocorrer uma falha e usar o arquivo de despejo para depurar a falha na máquina de compilação que tenha os arquivos de origem e os PDBs. 
   
- [Como restaurar comandos ocultos do depurador](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Como: restaurar comandos do depurador ocultos](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Descreve como tornar visíveis comandos do depurador que foram ocultos por configurações padrão do IDE.

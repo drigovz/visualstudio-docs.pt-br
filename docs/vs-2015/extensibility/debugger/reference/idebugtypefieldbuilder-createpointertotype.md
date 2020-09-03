@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType | Microsoft Docs
+title: 'IDebugTypeFieldBuilder:: CreatePointerToType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: af549b9b5bb7c70ab8ae9e685c9335836ae757ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202297"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
@@ -41,13 +41,13 @@ int CreatePointerToType(
   
 #### <a name="parameters"></a>Parâmetros  
  `pTypeField`  
- [in] Tipo para apontar para. Ele é representado pela [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.  
+ no Digite para apontar para. Ele é representado pela interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
  `pPtrToTypeField`  
- [out] Retorna o ponteiro representado por um novo **IDebugField** objeto.  
+ fora Retorna o ponteiro representado por um novo objeto **IDebugField** .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

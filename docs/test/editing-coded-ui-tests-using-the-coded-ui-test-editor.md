@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288722"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
@@ -125,7 +125,7 @@ Após a conclusão do método de divisão, salve as alterações no arquivo *UIM
 
 - É possível renomear o novo método. Selecione-o no painel **ações da interface do usuário** e escolha o botão **renomear** na barra de ferramentas do editor de teste de IU codificado.
 
-   -ou-
+   - ou -
 
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.
 
@@ -190,7 +190,7 @@ Após a inserção do atraso, salve as alterações no arquivo *UIMap.Designer* 
 
 Se for necessário garantir que um controle específico esteja disponível antes de uma ação de interface do usuário, considere a adição de código personalizado ao método de teste por meio do método UITestControl.WaitForControlXXX() apropriado. Para saber mais, confira [Fazer testes de IU codificado aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)

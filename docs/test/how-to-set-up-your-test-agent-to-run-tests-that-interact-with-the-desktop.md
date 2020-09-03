@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287526"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
@@ -84,6 +84,6 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
    Se o controlador de teste para o agente de teste estiver registrado no Team Foundation Server, o status de um agente de teste que estiver sendo executado como um processo interativo será exibido no modo de exibição **Controladores** na **Central do Laboratório** do Microsoft Test Manager. Ele é listado com um símbolo de asterisco precedente para denotar que está sendo executado como um processo interativo. Para reiniciar o agente de teste, você deve usar a ferramenta que é executada no computador para o agente de teste e não o modo de exibição **Controladores**.
    ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

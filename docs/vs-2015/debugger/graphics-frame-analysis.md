@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300515"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
@@ -77,7 +77,7 @@ Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio
 #### <a name="timeline"></a>Linha do tempo  
  A linha do tempo mostra uma visão geral dos horários de chamadas de desenho em relação umas às outras. Como barras maiores correspondem a horários de desenho maiores, você pode usá-las para localizar rapidamente as chamadas de desenho mais custosas no quadro. Quando o quadro capturado contiver um número muito grande de chamadas de desenho, diversas chamadas de desenho são combinadas em uma única barra, cujo comprimento é a soma dessas chamadas de desenho.  
   
- ![A linha do tempo&#45;mostra os custos de chamada de empate.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![A linha do tempo mostra os custos de chamada de empate&#45;.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Você pode deixar o ponteiro sobre uma barra para ver a qual evento de chamada de desenho a barra corresponde. Escolher a barra faz com que a lista de eventos seja sincronizada com esse evento.  
   
@@ -139,7 +139,7 @@ Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio
   
  A Análise de Quadro limita o número de novas tentativas a 10. Se sua plataforma tiver um gerenciamento de energia ou clock-gating agressivo, isso pode fazer com que a Análise de Quadro falhe e relate um erro por ter excedido o limite de novas tentativas. Se a plataforma permitir, você pode atenuar esse problema redefinindo o gerenciamento de energia e a aceleração da velocidade de clock de sua plataforma para que sejam menos agressivos.  
   
-## <a name="HardwareSupport"></a> Suporte a hardware  
+## <a name="hardware-support"></a><a name="HardwareSupport"></a> Suporte a hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Consultas de carimbos de data/hora e oclusão  
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.  
@@ -182,7 +182,7 @@ Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio
 > [!NOTE]
 > Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso. Contanto que esteja utilizando a API do Direct3D 11, do Direct3D 11.1 ou do Direct3D 11.2, você poderá usar o nível de recurso desejado e a Análise de Quadro funcionará.  
   
-## <a name="Variants"></a> Variantes  
+## <a name="variants"></a><a name="Variants"></a> Variantes  
  Cada alteração que a Análise de Quadros realiza na maneira em que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
   
 |Variante|Descrição|  
@@ -194,7 +194,7 @@ Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio
 |**Filtragem de textura de ponto**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtragem de textura de ponto) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura bilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtragem de textura bilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtragem de textura trilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtragem de textura trilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtragem de textura anisotrópica**|Define o modo de filtragem como `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (filtragem de textura anisotrópica de 16x) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtragem de textura anisotropic**|Define o modo de filtragem como `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (filtragem de textura anisotrópica de 16x) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Formato de destino de renderização de 16 bpp**|Define o formato de pixels como `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos os destinos de renderização e buffers de fundo.<br /><br /> Para obter mais informações, consulte [variante de formato de destino de renderização 16bpp](../debugger/16bpp-render-target-format-variant.md)|  
 |**Geração de mapas mip**|Ativa mapas mip em todas as texturas que não são destinos de renderização.<br /><br /> Para obter mais informações, consulte [variação de geração de mapa MIP](../debugger/mip-map-generation-variant.md).|  
 |**Dimensões de textura pela metade**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização pela metade de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 128 x 64 texels.<br /><br /> Para obter mais informações, consulte [variante de dimensões de textura semestre/trimestre](../debugger/half-quarter-texture-dimensions-variant.md).|  
