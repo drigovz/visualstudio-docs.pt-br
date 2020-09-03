@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771575"
 ---
 # <a name="targetclr"></a>TargetCLR
@@ -27,15 +27,15 @@ A opção **TargetCLR** especifica a versão do CLR (Common Language Runtime) cu
 VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  `ClrVersion` O número de versão do CLR. Use o formato de versão **vN.N.NNNNN**.
 
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **TargetCLR** pode ser usada somente com as opções de **Inicialização** ou **Anexar**.
 
- **Lançamento:** `AppName` Inicia o aplicativo especificado e começa a traçar o perfil.
+ **Iniciar:** `AppName` Inicia o aplicativo especificado e começa a criar o perfil.
 
- **Anexar:** `PID` Começa a traçar o perfil do processo especificado.
+ **Anexar:** `PID` Começa a criar o perfil do processo especificado.
 
 ## <a name="example"></a>Exemplo
  Nesse exemplo, a opção TargetCLR é usada para garantir que a versão 4.0.11003 do CLR tenha um perfil criado.

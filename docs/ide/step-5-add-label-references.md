@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579333"
 ---
 # <a name="step-5-add-label-references"></a>Etapa 5: Adicionar referências de rótulo
@@ -31,11 +31,11 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > Use o controle de linguagem de programação no canto superior direito desta página para exibir o trecho de código C# ou o trecho de código Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho de código C# ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Essas variáveis de referência parecem semelhantes às instruções que você usou anteriormente para adicionar objetos (como os objetos <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> e <xref:System.Random>) ao formulário. No entanto, essas instruções não fazem com que os dois controles de rótulo extras apareçam no formulário, pois a palavra-chave `new` não foi usada em nenhuma das duas instruções. Sem a palavra-chave `new`, nenhum objeto é criado. Por esse motivo `firstClicked` e `secondClicked` são chamadas de variáveis de referência: elas rastreiam (ou fazem referência a) os objetos Label.
 
-     Quando uma variável não está acompanhando um objeto, ela é `null` definida como `Nothing` um valor reservado especial: em C# e no Visual Basic. Desse modo, quando o programa for iniciado, `firstClicked` e `secondClicked` serão definidas como `null` ou `Nothing`, o que significa que as variáveis não estão rastreando nada.
+     Quando uma variável não mantém o controle de um objeto, ela é definida como um valor reservado especial: `null` em C# e `Nothing` em Visual Basic. Desse modo, quando o programa for iniciado, `firstClicked` e `secondClicked` serão definidas como `null` ou `Nothing`, o que significa que as variáveis não estão rastreando nada.
 
 2. Modifique o manipulador de eventos <xref:System.Windows.Forms.Control.Click> para usar a nova variável de referência `firstClicked`. Remova a última instrução no método do manipulador de eventos `label_Click()` (`clickedLabel.ForeColor = Color.Black;`) e substitua-a pela instrução `if` que se segue. (Não se esqueça de incluir o comentário e a instrução `if` inteira.)
 
@@ -44,15 +44,15 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
 
 3. Salve e execute seu programa. Escolha um dos controles de rótulo e seu ícone é exibido.
 
-4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está acompanhando o primeiro rótulo `firstClicked` que o jogador `null` escolheu, `Nothing` então não é igual a C# ou no Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Assim, apenas o primeiro ícone escolhido fica preto, e os outros ícones são invisíveis, como mostrado na imagem a seguir.
+4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está acompanhando o primeiro rótulo que o jogador escolheu, portanto, `firstClicked` não é igual a `null` em C# ou `Nothing` em Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Portanto, somente o primeiro ícone escolhido fica preto e os outros ícones são invisíveis, conforme mostrado na imagem a seguir.
 
      ![Jogo da memória mostrando um ícone](../ide/media/express_tut4step5.png)<br/>
-***Jogo correspondente*** *mostrando um ícone*
+***Jogo de correspondência*** *mostrando um ícone*
 
      Essa situação será corrigida na primeira etapa do tutorial adicionando um controle **Temporizador**.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[Passo 6: Adicione um temporizador](../ide/step-6-add-a-timer.md)**.
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 6: adicionar um temporizador](../ide/step-6-add-a-timer.md)**.
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo](../ide/step-4-add-a-click-event-handler-to-each-label.md).

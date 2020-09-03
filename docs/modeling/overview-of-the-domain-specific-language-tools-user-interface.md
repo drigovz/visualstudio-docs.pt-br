@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532399"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
@@ -25,7 +25,7 @@ Quando você abre uma solução de Ferramentas de Linguagem Específica de Domí
 
  A tabela a seguir explica como as partes da interface do usuário são usadas.
 
-|**Elemento**|**Definição**|
+|**Element**|**Definição**|
 |-|-|
 |Diagrama|O diagrama exibe o modelo de domínio.<br /><br /> O diagrama tem dois lados. Um dos lados define os tipos dos elementos nos modelos. O outro lado define como os modelos aparecerão na tela.|
 |Caixa de Ferramentas|Arraste as ferramentas da caixa de ferramentas para adicionar classes de domínio e tipos de forma ao diagrama. Para adicionar relacionamentos, conectores e mapas de formas, clique na ferramenta, em seguida, clique no nó de origem no diagrama e, em seguida, no nó de destino.|

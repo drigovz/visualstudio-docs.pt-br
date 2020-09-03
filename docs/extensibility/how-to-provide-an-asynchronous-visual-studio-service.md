@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905733"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Como: fornecer um serviço assíncrono do Visual Studio
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Para tornar esse serviço visível fora deste pacote, defina o valor do sinalizador Promote como *verdadeiro* como o último parâmetro:`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Para tornar esse serviço visível fora deste pacote, defina o valor do sinalizador Promote como *verdadeiro* como o último parâmetro:  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Adicione uma referência a *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 
@@ -173,7 +173,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 1. Adicione um comando de menu ao seu projeto. (No **Gerenciador de soluções**, selecione o nó do projeto, clique com o botão direito do mouse e selecione **Adicionar**  >  **Novo item**  >  **Extensibilidade**  >  do **Comando personalizado**.) Nomeie o arquivo de comando *TestAsyncCommand.cs*.
 
-2. O modelo de comando personalizado adiciona novamente o `Initialize()` método ao arquivo *TestAsyncPackage.cs* para inicializar o comando. No `Initialize()` método, copie a linha que inicializa o comando. O resultado deve ser assim:
+2. O modelo de comando personalizado adiciona novamente o `Initialize()` método ao arquivo *TestAsyncPackage.cs* para inicializar o comando. No `Initialize()` método, copie a linha que inicializa o comando. Ele deverá ser parecido com:
 
     ```csharp
     TestAsyncCommand.Initialize(this);

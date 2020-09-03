@@ -8,10 +8,10 @@ ms.date: 06/23/2020
 ms.topic: how-to
 description: Saiba como comprar recentemente as assinaturas mensais do Visual Studio para o portal de administração de assinaturas
 ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904696"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Adicionar novas assinaturas mensais do Visual Studio ao portal de administração de assinaturas
@@ -24,7 +24,7 @@ As etapas para adicionar assinaturas mensais dependem de quais tipos de assinatu
 - Se você já é um administrador de assinaturas adquiridas por meio do licenciamento por volume, mas ainda não adicionou ou gerenciau assinaturas mensais, será necessário adicioná-las usando as etapas fornecidas abaixo.
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Como adicionar assinaturas mensais
-1. Entre no portal de administração de assinaturas em<https://manage.visualstudio.com>
+1. Entre no portal de administração de assinaturas em <https://manage.visualstudio.com>
 1. Na guia **gerenciar assinantes** , escolha a lista suspensa **novo contrato** 
 1. Escolha **novas assinaturas mensais** na lista suspensa
    > [!div class="mx-imgBorder"]

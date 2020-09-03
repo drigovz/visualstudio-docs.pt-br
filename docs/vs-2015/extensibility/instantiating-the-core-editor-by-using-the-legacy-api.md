@@ -1,5 +1,5 @@
 ---
-title: Criando uma instância o Editor principal usando a API herdada | Microsoft Docs
+title: Instanciar o editor principal usando a API herdada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203919"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Instanciar o Editor de núcleo usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O editor é responsável por funções, como inserção, exclusão, copiar e colar de edição de texto. Ele combina essas funções com os fornecidos pelos serviços de linguagem, como coloração de texto, recuo e preenchimento de declaração do IntelliSense.  
+O editor é responsável por funções de edição de texto, como inserção, exclusão, cópia e colagem. Ele combina essas funções com as fornecidas por serviços de linguagem, como coloração de texto, recuo e conclusão de instrução IntelliSense.  
   
- Você pode instanciar uma instância do editor de núcleo de uma das três maneiras:  
+ Você pode instanciar uma instância do editor principal de uma das três maneiras:  
   
-- Crie explicitamente uma instância do núcleo do editor em uma janela.  
+- Crie explicitamente uma instância do editor principal em uma janela.  
   
-- Fornecer uma fábrica de editor que retorna uma instância do editor de núcleo  
+- Fornecer uma fábrica de editor que retorna uma instância do editor principal  
   
 - Abra um arquivo da hierarquia do projeto.  
   
-  As seções a seguir discutem como usar a API herdada para instanciar o editor.  
+  As seções a seguir discutem como usar a API herdada para criar uma instância do editor.  
   
-## <a name="explicitly-opening-a-core-editor-instance"></a>Abrir explicitamente uma instância do Editor de núcleo  
- Ao obter explicitamente uma instância do editor de núcleo:  
+## <a name="explicitly-opening-a-core-editor-instance"></a>Abrindo explicitamente uma instância do editor principal  
+ Ao obter explicitamente uma instância do editor principal:  
   
-- Obter um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> para manter o objeto de dados de documento que está sendo editado.  
+- Obtenha um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> para manter o objeto de dados do documento sendo editado.  
   
-- Criar uma representação de linha que é orientada a dados do objeto de documento com a criação de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> da interface do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface.  
+- Crie uma representação orientada por linha do objeto de dados de documento criando uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interface da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interface.  
   
-- Definir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> como o objeto de dados de documento para uma instância da implementação padrão do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interface, usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> método.  
+- Defina <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> como o objeto de dados de documento para uma instância da implementação padrão da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interface, usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> método.  
   
-   Host de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> da instância em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interface usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> método.  
+   Hospede a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> instância em uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interface usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> método.  
   
-  Neste ponto, exibindo o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interface fornece uma janela que contém uma instância do editor de núcleo.  
+  Neste ponto, a exibição da <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interface fornece uma janela que contém uma instância do editor principal.  
   
-  No entanto, isso não é uma instância muito útil, porque não têm teclas de atalho ou acesso a recursos avançados. Para obter acesso a recursos avançados e teclas de atalho:  
+  No entanto, essa não é uma instância muito útil, porque não tem teclas de atalho ou acesso a recursos avançados. Para obter acesso a teclas de atalho e recursos avançados:  
   
-- Use o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método a ser associado a um serviço de linguagem e o objeto de dados de documento que usa o editor.  
+- Use o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método para associar um serviço de linguagem e o objeto de dados de documento que o editor usa.  
   
-- Crie suas próprias teclas de atalho ou usar o padrão do sistema, definindo o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objetos exibem as propriedades. Para fazer isso, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> método com o <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> propriedade.  
+- Crie suas próprias teclas de atalho ou use o padrão do sistema definindo as <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> Propriedades de exibição dos objetos. Para fazer isso, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> método com a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> propriedade.  
   
-   Para obter e usar teclas de atalho não padrão, gerá-los usando o arquivo. VSCT. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+   Para obter e usar as teclas de atalho não padrão, gere-as usando o arquivo. vsct. Para obter mais informações, consulte [tabela de comandos do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Como usar uma fábrica de Editor para obter o Editor de núcleo  
- Ao implementar um editor de núcleo com uma fábrica de editor usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, siga as etapas descritas na seção anterior para hospedar explicitamente uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> usando uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto de dados de documento, em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto.  
+## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Como usar uma fábrica de editor para obter o editor principal  
+ Ao implementar um editor de núcleo com uma fábrica de editor usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método, siga todas as etapas descritas na seção anterior para hospedar explicitamente um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> usando um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto de dados de documento em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto.  
   
- Para exibir o texto, obter um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> objeto e chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
+ Para exibir o texto, obtenha uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> objeto e chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
   
- Para fornecer um serviço de linguagem para o editor, chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método dentro de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
+ Para fornecer um serviço de idioma para o editor, chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método dentro do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
   
- Para obter padrão de teclas de atalho, diferentemente da seção anterior, você usar o contexto do comando retornado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método ao obter o editor principal do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
+ Para obter as teclas de atalho padrão, diferentemente da seção anterior, use o contexto de comando retornado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método ao obter o editor de núcleo do <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método.  
   
- Se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método retorna o mesmo comando GUID como o editor de texto, a instância do editor de núcleo obtém automaticamente o padrão teclas de atalho.  
+ Se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> método retornar o mesmo GUID de comando que o editor de texto, a instância do editor principal obterá automaticamente as teclas de atalho padrão.  
   
- Para obter informações gerais, consulte [passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
+ Para obter informações gerais, consulte [Walkthrough: Criando um editor principal e registrando um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Dentro do Editor de núcleo](../extensibility/inside-the-core-editor.md)   
- [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Passo a passo: criar um editor principal e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+## <a name="see-also"></a>Consulte Também  
+ [Dentro do editor principal](../extensibility/inside-the-core-editor.md)   
+ [Abrindo e salvando itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
+ [Passo a passo: Criar um editor principal e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

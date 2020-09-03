@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778382"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
@@ -38,8 +38,8 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
 ```
 
-#### <a name="parameters"></a>parâmetros
- `PID` O identificador inteiro do processo a ser iniciado ou interrompido. Os IDs do processo estão listados na guia **Processo** do Gerenciador de Tarefas do Windows.
+#### <a name="parameters"></a>Parâmetros
+ `PID` O identificador inteiro do processo a ser iniciado ou interrompido. As IDs de processo são listadas na guia **processo** do Gerenciador de tarefas do Windows.
 
 ## <a name="required-subcommands"></a>Subcomandos necessários
  Nenhum
@@ -47,15 +47,15 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ## <a name="valid-subcommands"></a>Subcomandos válidos
  **ProcessOn** e **ProcessOff** podem ser especificados em linhas de comando que também contêm os subcomandos a seguir.
 
- **Início:** `Method` Inicia a sessão de criação de perfil de linha de comando e define o método de criação de perfil especificado.
+ **Início:** `Method` Inicializa a sessão de criação de perfil de linha de comando e define o método de criação de perfil especificado.
 
- **Lançamento:** `AppName` Inicia a aplicação especificada e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` Inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
- **Anexar:** `PID` Começa a traçar o perfil do processo especificado.
+ **Anexar:** `PID` Inicia a criação de perfil do processo especificado.
 
  **GlobalOff**&#124;**GlobalOn** Interrompe ou inicia a criação de perfil para todos os processos em uma sessão de criação de perfil de linha de comando.
 
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Pára ou inicia o perfil do segmento especificado (apenas método de instrumentação).
+ {**ThreadOff**&#124;**Threading**} **:**`TID` Interrompe ou inicia a criação de perfil para o thread especificado (somente método de instrumentação).
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, o subcomando **ProcessOff** é usado para coletar dados de criação de inicialização do aplicativo.
@@ -73,7 +73,7 @@ VSPerfCmd /Shutdown
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

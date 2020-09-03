@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::CanBind | Microsoft Docs
+title: 'IDebugPendingBreakpoint2:: canbind | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 07625f7249092e2de3d3dccaaef31a2869755e36
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725967"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
-Determina se esse ponto de ruptura pendente pode se ligar a um local de código.
+Determina se esse ponto de interrupção pendente pode ser associado a um local de código.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ int CanBind ( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppErrorEnum`\
-[fora] Retorna um objeto [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) que contém uma lista de objetos [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) se houver erros.
+fora Retorna um objeto [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) que contém uma lista de objetos [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) se houver erros.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK.` bem-sucedido, retorna retorna `S_FALSE` se o ponto de ruptura `ppErrorEnum` não puder vincular, nesse caso os erros são devolvidos pelo parâmetro. Caso contrário, retornará um código de erro. Retorna `E_BP_DELETED` se o ponto de ruptura tiver sido excluído.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK.` retornará `S_FALSE` se o ponto de interrupção não puder ser associado, caso em que os erros são retornados pelo `ppErrorEnum` parâmetro. Caso contrário, retornará um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção foi excluído.
 
 ## <a name="remarks"></a>Comentários
- Este método é chamado para determinar o que aconteceria se esse ponto de ruptura pendente fosse vinculado. Chame o método [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) para realmente vincular o ponto de ruptura pendente.
+ Esse método é chamado para determinar o que aconteceria se esse ponto de interrupção pendente fosse associado. Chame o método [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) para realmente ligar o ponto de interrupção pendente.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra como `CPendingBreakpoint` implementar este método para um objeto simples que expõe a interface [IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+ O exemplo a seguir mostra como implementar esse método para um `CPendingBreakpoint` objeto simples que expõe a interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
@@ -142,4 +142,4 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
-- [Associar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Associa](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477003"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Instruções: habilitar a depuração para aplicativos ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para habilitar a depuração, você deve habilitá-la na página de **Propriedades do projeto** e no arquivo Web. config do aplicativo.  
+Para habilitar a depuração, você deve habilitá-la na página de **Propriedades do projeto** e no arquivo de web.config do aplicativo.  
   
 > [!NOTE]  
 > As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
@@ -78,12 +78,12 @@ O arquivo web.config deve parecer com o exemplo a seguir. Observe que pode haver
 </configuration>  
 ```  
   
-## <a name="robust-programming"></a>Programação Robusta  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] detecta automaticamente quaisquer alterações em arquivos Web. config e aplica as novas definições de configuração. Você não precisa reiniciar o computador ou reiniciar o servidor IIS para que as alterações entrem em vigor.  
+## <a name="robust-programming"></a>Programação robusta  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o detecta automaticamente quaisquer alterações em Web.config arquivos e aplica as novas definições de configuração. Você não precisa reiniciar o computador ou reiniciar o servidor IIS para que as alterações entrem em vigor.  
   
-Um site pode conter vários diretórios e subdiretórios virtuais, e arquivos Web.config podem existir em cada um. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativos herdam as configurações dos arquivos Web. config em níveis mais altos no caminho da URL. Os arquivos de configuração hierárquicos permitem modificar configurações de vários aplicativos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ao mesmo tempo, como, por exemplo, para todos os aplicativos abaixo deles na hierarquia. No entanto, se `debug` for definido em um arquivo mais baixo na hierarquia, ele substituirá o valor mais alto.  
+Um site pode conter vários diretórios e subdiretórios virtuais, e arquivos Web.config podem existir em cada um. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] os aplicativos herdam as configurações de Web.config arquivos em níveis mais altos no caminho da URL. Os arquivos de configuração hierárquicos permitem modificar configurações de vários aplicativos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ao mesmo tempo, como, por exemplo, para todos os aplicativos abaixo deles na hierarquia. No entanto, se `debug` for definido em um arquivo mais baixo na hierarquia, ele substituirá o valor mais alto.  
   
-Por exemplo, você pode especificar `debug="true"` em `www.microsoft.com/aaa/Web.config`, e qualquer aplicativo na pasta AAA ou em qualquer subpasta de AAA herdará essa configuração. Portanto, se o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] estiver em `www.microsoft.com/aaa/bbb`, ele herdará essa configuração, assim como qualquer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativos em `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`e assim por diante. A única exceção será se um desses aplicativos substituir a configuração por meio de seu próprio arquivo mais baixo Web.config.  
+Por exemplo, você pode especificar `debug="true"` em `www.microsoft.com/aaa/Web.config` , e qualquer aplicativo na pasta AAA ou em qualquer subpasta de AAA herdará essa configuração. Portanto, se seu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo estiver em `www.microsoft.com/aaa/bbb` , ele herdará essa configuração, assim como qualquer aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] no `www.microsoft.com/aaa/ccc` , `www.microsoft.com/aaa/ddd` , e assim por diante. A única exceção será se um desses aplicativos substituir a configuração por meio de seu próprio arquivo mais baixo Web.config.  
   
 Habilitar o modo de depuração afetará significativamente o desempenho do aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Lembre-se de desabilitar o modo de depuração antes de implantar um aplicativo de versão ou conduzir medidas de desempenho.  
   

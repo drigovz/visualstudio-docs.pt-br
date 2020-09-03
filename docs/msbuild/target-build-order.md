@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585451"
 ---
 # <a name="target-build-order"></a>Ordem de build de destino
@@ -23,7 +23,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
 
 - `InitialTargets`. Este atributo `Project` especifica os destinos que serão executados primeiro, mesmo se os destinos foram especificados na linha de comando ou no atributo `DefaultTargets`.
 
-- `DefaultTargets`. Este `Project` atributo especifica quais alvos são executados se um alvo não for especificado explicitamente na linha de comando.
+- `DefaultTargets`. Esse `Project` atributo especifica quais destinos serão executados se um destino não for especificado explicitamente na linha de comando.
 
 - `DependsOnTargets`. Este atributo `Target` especifica os destinos que devem ser executados antes que esse destino possa ser executado.
 
@@ -31,7 +31,7 @@ Os destinos deverão ser ordenados se a entrada para um destino depender da saí
 
 Um destino nunca é executado duas vezes durante um build, mesmo se um destino posterior no build depende dele. Depois que um destino tiver sido executado, sua contribuição para o build será concluída.
 
-Os destinos podem ter um atributo `Condition`. Se a condição especificada for avaliada como `false`, o destino não será executado e não terá nenhum efeito no build. Para obter mais informações sobre as condições, consulte [Condições](../msbuild/msbuild-conditions.md).
+Os destinos podem ter um atributo `Condition`. Se a condição especificada for avaliada como `false`, o destino não será executado e não terá nenhum efeito no build. Para obter mais informações sobre condições, consulte [condições](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Destinos Iniciais
 
@@ -113,7 +113,7 @@ O MSBuild determina a ordem de build de destinos da seguinte maneira:
 
 1. Os destinos `InitialTargets` são executados.
 
-2. Os alvos especificados na linha de comando pelo interruptor **de destino** são executados. Se você não especificar nenhum destino na linha de comando, os destinos `DefaultTargets` serão executados. Se nenhum deles estiver presente, o primeiro destino encontrado será executado.
+2. Os destinos especificados na linha de comando pela opção **-target** são executados. Se você não especificar nenhum destino na linha de comando, os destinos `DefaultTargets` serão executados. Se nenhum deles estiver presente, o primeiro destino encontrado será executado.
 
 3. O atributo `Condition` do destino é avaliado. Se o atributo `Condition` estiver presente e for avaliado como `false`, o destino não será executado e não terá nenhum efeito adicional no build.
 
