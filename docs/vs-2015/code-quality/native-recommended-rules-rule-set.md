@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608871"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de regras recomendadas nativo
@@ -156,7 +156,7 @@ As regras nativas recomendadas se concentram nos problemas mais críticos e comu
 |                      [C28020](../code-quality/c28020.md)                       |                                               A expressão não é verdadeira nesta chamada                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           O parâmetro que está sendo anotado deve ser um ponteiro                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            As classes de função nessa função não correspondem às classes de função no typedef usado para defini-la.            |
-|                      [C28023](../code-quality/c28023.md)                       |         A função que está sendo atribuída ou passada deve ter uma anotação \_Function_class \_ para pelo menos uma das classes         |
+|                      [C28023](../code-quality/c28023.md)                       |         A função que está sendo atribuída ou passada deve ter uma \_ \_ anotação Function_class para pelo menos uma das classes         |
 |                      [C28024](../code-quality/c28024.md)                       | O ponteiro de função que está sendo atribuído é anotado com a classe de função, que não está contida na lista de classe (s) de função. |
 |                      [C28039](../code-quality/c28039.md)                       |                                     O tipo de parâmetro real deve corresponder exatamente ao tipo                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            Uma variável que é acessada por meio de uma função Interlocked sempre deve ser acessada por meio de uma função Interlocked.            |

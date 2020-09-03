@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop | Microsoft Docs
+title: 'IDebugCanStopEvent2:: canpare | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8167013489b3b37e254100f7547cd61d54529b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191192"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Notifica o mecanismo de depuração (DES) ou não interromper no local atual do código ou simplesmente continuar a execução.  
+Notifica o mecanismo de depuração (DE) se deseja ou não parar no local do código atual ou apenas continuar a execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,17 +40,17 @@ int CanStop ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `fCanStop`  
- [in] Diferente de zero (`TRUE`) se o DE deve parar no local atual do código; caso contrário, zero (`FALSE`).  
+ no Diferente de zero ( `TRUE` ) se o de deve parar no local do código atual; caso contrário, zero ( `FALSE` ).  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O receptor desse evento normalmente chama o [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método para determinar o motivo pelo qual o DE que deseja interromper e, em seguida, chama o `IDebugCanStopEvent2::CanStop` método com a resposta apropriada.  
+ O receptor desse evento normalmente chama o método [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) para determinar o motivo pelo qual o deseja parar e, em seguida, chama o `IDebugCanStopEvent2::CanStop` método com a resposta apropriada.  
   
- Se o DE parar, ele envia um evento que descreve o motivo para interrupção. Normalmente, há dois eventos que são enviadas, uma quebra de usuário ou sinal representada pela [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) interface e um evento de ponto de interrupção representado pela [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) interface.  
+ Se o DE for interrompido, ele enviará um evento que descreve o motivo da interrupção. Normalmente, há dois eventos que são enviados, um usuário ou uma quebra de sinal representada pela interface [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) e um evento de ponto de interrupção representado pela interface [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

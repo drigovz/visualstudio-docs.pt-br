@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::GetProgramNode | Microsoft Docs
+title: 'IDebugProgramEx2:: GetProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf3ef288a98d538c94702cf18f2cba8b7b87c20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181996"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém o nó de programa associado com um programa.  
+Obtém o nó de programa associado a um programa.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,11 +40,11 @@ int GetProgramNode( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppProgramNode`  
- [out] Retorna um [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó de programa associado a este programa.  
+ fora Retorna um objeto [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que representa o nó de programa associado a este programa.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

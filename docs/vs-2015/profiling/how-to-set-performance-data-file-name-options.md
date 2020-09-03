@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71ac053a24b3f765a58fc050ceec84115e1a4e3d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548389"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome de arquivo de dados de desempenho
@@ -44,7 +44,7 @@ Por padrão, um arquivo de dados de criação de perfil (.vsp) é salvo usando a
   
 3. Em **Relatório**, altere qualquer uma das seguintes configurações:  
   
-    |Nome|Descrição|  
+    |Name|Descrição|  
     |-|-|  
     |**Local do relatório**|Especifica um diretório para armazenar os arquivos de dados de criação de perfil.|  
     |**Nome do relatório**|Especifica um nome de base para os arquivos.|  

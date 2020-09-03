@@ -25,16 +25,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984209"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornecer informações de empacotamento e implantação em itens de projeto
-  Todos os itens de projeto do SharePoint em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:
+  Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:
 
-- Propriedades do recurso
+- Propriedades de recurso
 
 - Receptores de recursos
 
@@ -44,7 +44,7 @@ ms.locfileid: "72984209"
 
   Essas propriedades aparecem na janela **Propriedades** .
 
-## <a name="feature-properties"></a>Propriedades do recurso
+## <a name="feature-properties"></a>Propriedades de recursos
  Use a propriedade **Propriedades do recurso** para especificar os dados que o recurso usa. Os dados de propriedades de recurso são um conjunto de valores (armazenados como pares de chave/valor) que é incluído com um recurso quando ele é implantado no SharePoint. Depois que o recurso for implantado, você poderá acessar os valores de propriedade em seu código.
 
  Quando você adiciona um valor de propriedade de recurso a um item de projeto, o valor é adicionado como um elemento no manifesto do recurso do item. Em um projeto de modelo BDC (conectividade de dados corporativos), por exemplo, a propriedade de recurso ModelFileName aparece como:
@@ -57,7 +57,7 @@ ms.locfileid: "72984209"
 
  Valores de propriedade de recurso idênticos de todos os itens de projeto são mesclados juntos no manifesto de recurso. No entanto, se dois itens de projeto diferentes especificarem a mesma chave de propriedade de recurso com valores não correspondentes, ocorrerá um erro de validação.
 
- Para adicionar propriedades de recurso diretamente ao arquivo de recurso ( *. Feature*), chame o método de modelo de objeto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Se você usar esse método, lembre-se de que a mesma regra sobre a adição de valores de propriedade de recurso idênticos nas propriedades do recurso também se aplica às propriedades adicionadas diretamente ao arquivo de recurso.
+ Para adicionar propriedades de recurso diretamente ao arquivo de recurso (*. Feature*), chame o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] método de modelo de objeto do SharePoint <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A> . Se você usar esse método, lembre-se de que a mesma regra sobre a adição de valores de propriedade de recurso idênticos nas propriedades do recurso também se aplica às propriedades adicionadas diretamente ao arquivo de recurso.
 
 ## <a name="feature-receiver"></a>Receptor de recursos
  Os receptores de recursos são o código que é executado quando determinados eventos ocorrem em um recurso que contém um item de projeto. Por exemplo, você pode definir receptores de recursos que são executados quando o recurso é instalado, ativado ou atualizado. Uma maneira de adicionar um receptor de recursos é adicioná-lo diretamente a um recurso, conforme descrito em [passo a passos: Adicionar receptores de evento de recurso](../sharepoint/walkthrough-add-feature-event-receivers.md). Outra maneira é fazer referência a um nome de classe de receptor de recurso e assembly na propriedade **Receiver de recurso** .
@@ -68,9 +68,9 @@ ms.locfileid: "72984209"
 ### <a name="reference-method"></a>Método Reference
  Outra maneira de adicionar um receptor de recursos é usando a propriedade **receptor de recurso** de um item de projeto para fazer referência a um assembly de receptor de recurso. O valor da propriedade receiver do recurso tem duas subpropriedades: **assembly** e **nome da classe**. O assembly deve usar seu nome "forte" totalmente qualificado e o nome da classe deve ser o nome completo do tipo. Para obter mais informações, consulte [Assemblies com nome forte](/previous-versions/dotnet/netframework-4.0/wd40t7ad(v=vs.100)). Depois de implantar a solução no SharePoint, o recurso usa o receptor de recursos referenciado para manipular eventos de recurso.
 
- No momento da compilação da solução, os valores de Propriedade do receptor de recursos no recurso e seus projetos se mesclam para definir os atributos ReceiverAssembly e ReceiverClass do elemento Feature no manifesto do recurso do arquivo de solução do SharePoint ( *. wsp*). Portanto, se os valores de propriedade assembly e nome de classe de um item de projeto e um recurso forem ambos especificados, o item de projeto e os valores de propriedade de recurso deverão corresponder. Se os valores não corresponderem, você receberá um erro de validação. Se você quiser que um item de projeto faça referência a um assembly de receptor de recursos diferente daquele que seu recurso usa, mova-o para outro recurso.
+ No momento da compilação da solução, os valores de Propriedade do receptor de recursos no recurso e seus projetos se mesclam para definir os atributos ReceiverAssembly e ReceiverClass do elemento Feature no manifesto do recurso do arquivo de solução do SharePoint (*. wsp*). Portanto, se os valores de propriedade assembly e nome de classe de um item de projeto e um recurso forem ambos especificados, o item de projeto e os valores de propriedade de recurso deverão corresponder. Se os valores não corresponderem, você receberá um erro de validação. Se você quiser que um item de projeto faça referência a um assembly de receptor de recursos diferente daquele que seu recurso usa, mova-o para outro recurso.
 
- Se você fizer referência a um assembly do receptor de recursos que ainda não está no servidor, você também deverá incluir o próprio arquivo de assembly no pacote; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não a adiciona para você. Quando você implanta o recurso, o arquivo de assembly é copiado para o [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] do sistema ou para a pasta bin no diretório físico do SharePoint. Para obter mais informações, consulte Como: [Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+ Se você fizer referência a um assembly do receptor de recursos que ainda não está no servidor, você também deverá incluir o próprio arquivo de assembly no pacote; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o não o adiciona para você. Quando você implanta o recurso, o arquivo de assembly é copiado para a pasta do sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] ou do compartimento no diretório físico do SharePoint. Para obter mais informações, consulte Como: [Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
  Para obter mais informações sobre receptores de recursos, consulte [receptor de eventos de recurso](/previous-versions/office/developer/sharepoint-2007/bb862634(v=office.12)) e eventos de [recurso](/previous-versions/office/developer/sharepoint-2010/ms469501(v=office.14)).
 
@@ -105,7 +105,7 @@ ms.locfileid: "72984209"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Estender o empacotamento e a implantação do SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b0d9dec8ec9b3eb8860bb8b3a4ed8f7347aa54d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662227"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opções, Editor de Texto, JavaScript, IntelliSense
@@ -31,7 +31,7 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
 ## <a name="validation"></a>Validação
  Você pode usar essas opções para definir preferências de como o editor JavaScript valida a sintaxe no seu documento.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Mostrar erros de sintaxe** Quando essa caixa de seleção não está marcada, o editor de código JavaScript não mostra erros de sintaxe. Isso será útil se você estiver trabalhando com código que não escreveu e não pretende corrigir erros de sintaxe.
 
  Quando essa caixa de seleção é marcada, você tem a opção de marcar a caixa de seleção **Mostrar erros como avisos**.
@@ -43,16 +43,16 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
 > [!NOTE]
 > Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
 
-## <a name="statement-completion"></a>Preenchimento de declaração
+## <a name="statement-completion"></a>Conclusão de instrução
  Você pode usar essas opções para alterar o comportamento do preenchimento de declaração do IntelliSense.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Usar apenas Tab ou ENTER para confirmar** Quando essa caixa de seleção é marcada, o editor de código do JavaScript acrescenta instruções com itens selecionados na lista de conclusão somente depois de escolher a guia ou Inserir chave. Quando essa caixa de seleção não é marcada, outros caracteres, como ponto, vírgula, dois-pontos, parênteses de abertura e chave de abertura ({), também podem acrescentar instruções com os itens selecionados.
 
 ## <a name="references"></a>Referências
  Você pode usar essas opções para especificar os tipos de arquivo .js do IntelliSense que estão no escopo de diferentes tipos de projeto JavaScript. Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais do IntelliSense. Também é possível usar essa página para definir a ordem de carregamento de scripts que devem ser carregados no tempo de execução e para adicionar arquivos de extensão do IntelliSense.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Grupos de referência** Esta opção especifica o tipo de grupo de referência. Há suporte para três grupos de referência:
 
  Você pode usar grupos de referência predefinidos para especificar se determinados arquivos .js do IntelliSense estão no escopo para diferentes projetos JavaScript. Quatro grupos de referência estão disponíveis:
@@ -72,5 +72,5 @@ Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar 
 
  **Adicionar uma referência ao grupo** Essa opção fornece uma maneira de adicionar outros arquivos IntelliSense. js navegando para os arquivos apropriados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

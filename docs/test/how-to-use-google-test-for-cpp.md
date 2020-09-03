@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287240"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Como usar o Google Test para C++ no Visual Studio
@@ -67,6 +67,6 @@ No arquivo test *. cpp* , adicione as diretivas necessárias `#include` para tor
 
 Agora, você está pronto para gravar e executar testes no Google Test. Consulte o [Google Test primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md) para obter informações sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)

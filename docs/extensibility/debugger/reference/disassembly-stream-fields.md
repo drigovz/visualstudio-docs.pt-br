@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737361"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 Especifica quais informações recuperar sobre um campo de desmontagem.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DISASSEMBLY_STREAM_FIELDS {
@@ -66,57 +66,57 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Campos
 `DSF_ADDRESS`\
-Inicializar/usar `bstrAddress` o campo.
+Inicializar/usar o `bstrAddress` campo.
 
 `DSF_ADDRESSOFFSET`\
-Inicializar/usar `bstrAddressOffset` o campo.
+Inicializar/usar o `bstrAddressOffset` campo.
 
 `DSF_CODEBYTES`\
-Inicializar/usar `bstrCodeBytes` o campo.
+Inicializar/usar o `bstrCodeBytes` campo.
 
 `DSF_OPCODE`\
-Inicializar/usar `bstrOpCode` o campo.
+Inicializar/usar o `bstrOpCode` campo.
 
 `DSF_OPERANDS`\
-Inicializar/usar `bstrOperands` o campo.
+Inicializar/usar o `bstrOperands` campo.
 
 `DSF_SYMBOL`\
-Inicializar/usar `bstrSymbol` o campo.
+Inicializar/usar o `bstrSymbol` campo.
 
 `DSF_CODELOCATIONID`\
-Inicializar/usar `uCodeLocationId` o campo.
+Inicializar/usar o `uCodeLocationId` campo.
 
 `DSF_POSITION`\
-Inicializar/usar `posBeg` os `posEnd` campos e.
+Inicializar/usar os `posBeg` `posEnd` campos e.
 
 `DSF_DOCUMENTURL`\
-Inicializar/usar `bstrDocumentUrl` o campo.
+Inicializar/usar o `bstrDocumentUrl` campo.
 
 `DSF_BYTEOFFSET`\
-Inicializar/usar `dwByteOffset` o campo.
+Inicializar/usar o `dwByteOffset` campo.
 
 `DSF_FLAGS`\
-Inicialize/use `dwFlags` o campo[(DISASSEMBLY_FLAGS).](../../../extensibility/debugger/reference/disassembly-flags.md)
+Inicializar/usar o `dwFlags` campo ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Inclua nomes de `bstrOperands` símbolos no campo.
+Inclua nomes de símbolo no `bstrOperands` campo.
 
 `DSF_ALL`\
 Especifica todos os campos para o fluxo de desmontagem.
 
 ## <a name="remarks"></a>Comentários
-Passou como parâmetro para o método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar quais campos da estrutura [DesassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devem ser inicializados.
+Passado como um parâmetro para o método [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) para indicar quais campos da estrutura [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) devem ser inicializados.
 
-Usado para `dwFields` o `DisassemblyData` membro da estrutura para indicar quais campos são usados e válidos quando a estrutura é devolvida.
+Usado para o `dwFields` membro da `DisassemblyData` estrutura para indicar quais campos são usados e válidos quando a estrutura é retornada.
 
-Esses valores podem ser combinados com um pouco `OR`.
+Esses valores podem ser combinados com um bit a bit `OR` .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

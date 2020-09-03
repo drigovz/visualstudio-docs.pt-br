@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0225ae23ed141b317d4424da573593d446766f43
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287305"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Como especificar a propriedade de armazenamento de detalhes de tempo para uma configuração de execução de teste de carga
@@ -59,7 +59,7 @@ Você pode editar um valor da propriedade **Armazenamento de detalhes de mediç�
 
      Depois de definir a configuração de **todos os detalhes individuais** para a propriedade de **armazenamento de detalhes de tempo** , você pode executar o teste de carga e exibir o gráfico de atividade de **usuário virtual**. Para obter mais informações, consulte [como: analisar o que os usuários virtuais estão fazendo durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Walkthrough: usando o gráfico de atividade de usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

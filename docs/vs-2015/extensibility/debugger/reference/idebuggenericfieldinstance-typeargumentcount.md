@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft Docs
+title: 'IDebugGenericFieldInstance:: TypeArgumentCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 80c2aea4130fe7de0208d4c40b0f01afed06eecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180853"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Retorna o número de tipo de argumentos de parâmetro para esta instância.  
+Retorna o número de argumentos de parâmetro de tipo para esta instância.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,13 +39,13 @@ int TypeArgumentCount(
   
 #### <a name="parameters"></a>Parâmetros  
  `pcArgs`  
- [no, out] Número de argumentos de parâmetro de tipo para esta instância.  
+ [entrada, saída] Número de argumentos de parâmetro de tipo para esta instância.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Por exemplo, se lista\<int >, esse método retornará 1 e, se lista\<int, float2 > Esse método retorna 2. Esse método retornará 0 se não houver nenhum argumento de tipo.  
+ Por exemplo, se List \<int> , esse método retornará 1 e, se List, \<int,float2> esse método retornará 2. Esse método retornará 0 se não houver nenhum argumento de tipo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

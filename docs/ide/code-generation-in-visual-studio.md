@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594247"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Recursos de geração de código no Visual Studio
@@ -32,6 +32,6 @@ O Visual Studio pode ajudá-lo a gerar, corrigir e refatorar o código de vária
 ## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../ide/code-snippets.md)
-- [Ações rápidas](../ide/quick-actions.md)
+- [Ações Rápidas](../ide/quick-actions.md)
 - [Refatoração](../ide/refactoring-in-visual-studio.md)
-- [Modelos de texto de geração de código e T4](../modeling/code-generation-and-t4-text-templates.md)
+- [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)

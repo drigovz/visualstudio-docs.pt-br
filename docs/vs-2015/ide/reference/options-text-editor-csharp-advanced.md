@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f2d11e78c2402a6541bc87748ed6ba348ba80fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662329"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
@@ -33,7 +33,7 @@ ms.locfileid: "72662329"
 Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do Visual C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="outlining"></a>Estrutura de tópicos
  Insira o modo de estrutura de tópicos quando os arquivos são abertos quando selecionado, descreve automaticamente o arquivo de código, que cria blocos recolhíveis de código. Na primeira vez que um arquivo é aberto, blocos #regions e blocos de códigos inativos são recolhidos.
@@ -61,13 +61,13 @@ Use essa caixa de diálogo para modificar as configurações de formatação do 
  Avisar sobre membros com referências geradas pelo compilador exibe uma caixa de diálogo de aviso quando você tenta refatorar um membro que tem o mesmo nome que uma referência gerada pelo compilador.
 
 ## <a name="xml-documentation-comments"></a>Comentários da documentação XML
- Gerar comentários de documentação XML para///quando selecionado, insere o \<summary > marca de início e término automaticamente para comentários de documentação XML depois de digitar a introdução de comentário///. Para obter mais informações sobre a documentação XML, consulte [Comentários da documentação XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
+ Gerar comentários de documentação XML para///quando selecionado, insere as \<summary> marcas de início e término automaticamente para comentários de documentação XML depois de digitar a introdução de comentário///. Para obter mais informações sobre a documentação XML, consulte [Comentários da documentação XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).
 
 ## <a name="implement-interface"></a>Implementar interface
- O código gerado por surround com #region insere um #region \<*nome da interface*> membro ao redor dos métodos quando implementar interface ou implementar interface explicitamente é usado.
+ O código gerado por surround com #region insere um \<*interface name*> membro #region ao redor dos métodos quando implementar interface ou implementar interface explicitamente é usado.
 
 ## <a name="organize-usings"></a>Organizar Usos
- Coloque as diretivas ' System ' primeiro ao classificar usando quando selecionado, `System` usando diretivas aparecem antes de outras usando diretivas. Para obter mais informações, consulte [Classificar usos](../../misc/sort-usings.md).
+ Coloque as diretivas ' System ' primeiro ao classificar usando quando selecionadas, `System` usando as diretivas aparecem antes de outras usando diretivas. Para obter mais informações, consulte [Classificar usos](../../misc/sort-usings.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comentários de documentação XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199) [definindo opções de editor específicas da linguagem](../../ide/reference/setting-language-specific-editor-options.md) [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

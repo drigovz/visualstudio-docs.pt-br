@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcc62ed0b4a1f0a9ddd43ef692f748db4d9b6f10
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465835"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
@@ -66,7 +66,7 @@ IDiaEnumSymbols* pEnum;
 pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

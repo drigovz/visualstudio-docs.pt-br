@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo | Microsoft Docs
+title: 'IDebugProgram2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 53f16a3ef6bd1328d73c8a6c71c666968d5564d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722820"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Obtém o nome e GUID do motor de depuração (DE) executando este programa.
+Obtém o nome e o GUID do mecanismo de depuração (DE) que executa este programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int GetEngineInfo( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pbstrEngine`\
-[fora] Retorna o nome do DE executando este programa.
+fora Retorna o nome do de execução deste programa.
 
 `pguidEngine`\
-[fora] Retorna o GUID do DE executando este programa.
+fora Retorna o GUID do de execução deste programa.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
  Cada DE define seu próprio GUID para identificação.

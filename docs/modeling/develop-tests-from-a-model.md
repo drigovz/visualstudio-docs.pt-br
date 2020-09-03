@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596652"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
-Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], também poderá manter links entre os modelos e os testes.
+Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] o, também poderá manter links entre os modelos e os testes.
 
  Para ver quais versões do Visual Studio oferecem suporte a esses recursos, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -36,7 +36,7 @@ Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar 
  Você pode criar e manter uma relação entre os testes do sistema e um modelo de requisitos. Para estabelecer essa relação, você escreve testes que correspondem aos elementos principais do modelo de requisitos. O Visual Studio ajuda a manter essa relação, permitindo que você crie links entre os testes e partes do modelo. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário de modelo](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Gravar testes para cada caso de uso
- Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], poderá criar um grupo de testes para cada caso de uso definido em seu modelo de requisitos. Por exemplo, se você tiver uma ordem de uso, faça uma refeição, que inclui criar pedido e Adicionar item ao pedido, você pode criar testes para o geral e mais detalhados desses casos de uso.
+ Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] o, poderá criar um grupo de testes para cada caso de uso definido em seu modelo de requisitos. Por exemplo, se você tiver uma ordem de uso, faça uma refeição, que inclui criar pedido e Adicionar item ao pedido, você pode criar testes para o geral e mais detalhados desses casos de uso.
 
  Essas diretrizes podem ser úteis:
 
@@ -53,13 +53,13 @@ Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar 
 - Ao projetar os testes, separe a escolha dos dados de teste do código ou script que determina se a pré-condição foi alcançada. Por exemplo, um teste de uma função aritmética simples pode ser: entrada 4; Verifique se a saída é 2. Em vez disso, projete o script como: escolha uma entrada; Multiplique a saída por si mesma e verifique se o resultado é a entrada original. Esse estilo permite que você varie as entradas de teste sem alterar o corpo principal do teste.
 
 #### <a name="linking-tests-to-use-cases"></a>Vinculando testes a casos de uso
- Se você estiver usando [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para criar e executar seus testes, poderá organizar seus testes em itens de trabalho de requisito, caso de uso ou de história de usuário. Você pode vincular esses itens de trabalho a casos de uso em seu modelo. Isso permite que você rastreie rapidamente as alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.
+ Se você estiver usando [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] o para projetar e executar seus testes, poderá organizar seus testes em itens de trabalho de requisito, caso de uso ou de história de usuário. Você pode vincular esses itens de trabalho a casos de uso em seu modelo. Isso permite que você rastreie rapidamente as alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular testes a um caso de uso
 
-1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], crie um requisito e baseie um conjunto de testes nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] , crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule o item de trabalho de requisito a um ou mais casos de uso em seu modelo.
 
@@ -128,8 +128,8 @@ Assert (countAfter == countBefore = 1);
 
  Do ponto de vista dos testes, um modelo de requisitos pode ser visto como um atalho para os testes. Portanto, é importante manter a relação entre os testes e o modelo em todo o projeto.
 
-## <a name="Attaching"></a>Anexando casos de teste a elementos de modelo
- Se o seu projeto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], você pode vincular testes aos elementos em seu modelo. Isso permite que você encontre rapidamente os testes afetados por uma alteração nos requisitos e ajuda a acompanhar a extensão para a qual um requisito foi percebido.
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Anexando casos de teste a elementos de modelo
+ Se o seu projeto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] , você pode vincular testes aos elementos em seu modelo. Isso permite que você encontre rapidamente os testes afetados por uma alteração nos requisitos e ajuda a acompanhar a extensão para a qual um requisito foi percebido.
 
  Você pode vincular testes a todos os tipos de elemento. Estes são alguns exemplos:
 
@@ -145,9 +145,9 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular testes a um elemento de modelo ou relação
 
-1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], crie um requisito e baseie um conjunto de testes nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] , crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule o item de trabalho de requisito a um ou mais elementos em seu modelo.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Adicione ao conjunto de testes, casos de teste que verificam o requisito expresso no elemento de modelo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)

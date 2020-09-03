@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593558"
 ---
 # <a name="services-page-project-designer"></a>Página Serviços, Designer de Projeto
@@ -76,7 +76,7 @@ Abre [Configurações Avançadas para a Caixa de Diálogo Serviços](../../ide/r
 ## <a name="see-also"></a>Confira também
 
 - [Serviços de aplicativos cliente](/dotnet/framework/common-client-technologies/client-application-services)
-- [Configurações Avançadas para a Caixa de Diálogo Serviços](../../ide/reference/advanced-settings-for-services-dialog-box.md)
+- [Caixa de diálogo Configurações Avançadas para Serviços](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Como configurar serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
-- [Compilar página, designer de projeto (visual básico)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Página de Compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

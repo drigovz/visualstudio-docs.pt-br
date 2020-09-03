@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b3f47f41466d8eb7ddf0a4700428b6e28500b61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596301"
 ---
 # <a name="wpf-msbuild-reference"></a>Referência do WPF MSBuild
@@ -29,7 +29,7 @@ O WPF (Windows Presentation Foundation) estende o MSBuild (Microsoft Build Engin
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Arquivos WPF .targets](../msbuild/wpf-dot-targets-files.md)
+[Arquivos .targets do WPF](../msbuild/wpf-dot-targets-files.md)
 
 Descreve os arquivos .targets do WPF.
 

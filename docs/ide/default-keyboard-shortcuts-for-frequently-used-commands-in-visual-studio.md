@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596717"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado populares para o Visual Studio
@@ -23,7 +23,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 > [!NOTE]
 > É possível [pesquisar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
 
-## <a name="build"></a>Build
+## <a name="build"></a>Compilação
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -119,7 +119,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |File.SaveSelectedItems|**Ctrl+S** [Global]|
 |File.ViewinBrowser|**Ctrl+Shift+W** [Global]|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projeto
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -145,14 +145,14 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |View.ClassView|**Ctrl+Shift+C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br />ou **Ctrl+\\, E** [Global]|
-|View.NavigateBackward|**Ctrl+-** [Global]|
+|View.NavigateBackward|**Ctrl +-** [global]|
 |View.NavigateForward|**Ctrl+Shift+-** [Global]|
 |View.ObjectBrowser|**Ctrl+Alt+J** [Global]|
 |View.Output|**Ctrl+Alt+O** [Global]|
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**Ctrl+Alt+S** [Global]|
-|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br />ou **Shift+Alt+F10** [Global, Modo Design do Editor de HTML]|
+|View.ShowSmartTag|**CTRL +.** [Global]<br /><br />ou **Shift+Alt+F10** [Global, Modo Design do Editor de HTML]|
 |View.SolutionExplorer|**Ctrl+Alt+L** [Global]|
 |View.TfsTeamExplorer|**Ctrl+\\, Ctrl+M** [Global]|
 |View.Toolbox|**Ctrl+Alt+X** [Global]|

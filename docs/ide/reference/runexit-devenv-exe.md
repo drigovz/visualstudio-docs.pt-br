@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593597"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -31,15 +31,15 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
 ## <a name="arguments"></a>Argumentos
 
-- *Solutionname*
+- *SolutionName*
 
   O caminho completo e o nome de um arquivo de solução.
 
-- *Projectname*
+- *ProjectName*
 
   O caminho completo e o nome de um arquivo de projeto.
 
-- `/Out`*Nome de saída*
+- `/Out`*NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -64,5 +64,5 @@ devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Reconstruir (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

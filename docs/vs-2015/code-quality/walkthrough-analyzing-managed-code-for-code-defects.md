@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609327"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Instruções passo a passo: analisando código gerenciado em busca de defeitos de código
@@ -27,23 +27,23 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
  Este passo a passo irá orientá-lo pelo processo de uso da análise de código para analisar seus assemblies de código gerenciado .NET para conformidade com as diretrizes de design do Microsoft .NET Framework.
 
- Neste tutorial, você:
+ Neste passo a passo, você vai:
 
 - Analise e corrija avisos de defeito de código.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>Criar uma biblioteca de classes
 
 #### <a name="to-create-a-class-library"></a>Para criar uma biblioteca de classes
 
-1. No menu **arquivo** do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], clique em **novo** e em **projeto**.
+1. No menu **arquivo** do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , clique em **novo** e em **projeto**.
 
-2. Na caixa de diálogo **novo projeto** , em **tipos de projeto**, clique em **C#Visual**.
+2. Na caixa de diálogo **novo projeto** , em **tipos de projeto**, clique em **Visual C#**.
 
-3. Em **modelos**, selecione **biblioteca de classes**.
+3. Em **Modelos**, selecione **Biblioteca de Classes**.
 
 4. Na caixa de texto **nome** , digite **CodeAnalysisManagedDemo** e clique em **OK**.
 
@@ -61,13 +61,13 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
 1. Selecione o projeto CodeAnalysisManagedDemo em **Gerenciador de soluções**.
 
-2. No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto** , clique em **Propriedades**.
 
      A página de propriedades CodeAnalysisManagedDemo é exibida.
 
 3. Clique em **CodeAnalysis**.
 
-4. Verifique se a opção **Habilitar análise de código no Build (define constante CODE_ANALYSIS**) está marcada.
+4. Verifique se a opção  **Habilitar análise de código na compilação (define CODE_ANALYSIS constante**) está marcada.
 
 5. Na lista suspensa **executar esta regra definida** , selecione **todas as regras da Microsoft**.
 
@@ -83,7 +83,7 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
 #### <a name="to-correct-code-analysis-rule-violations"></a>Para corrigir violações de regra de análise de código
 
-1. No menu **Exibir** , clique em **lista de erros**.
+1. No menu **Exibir** , clique em **Lista de Erros**.
 
      Dependendo do perfil de desenvolvedor que você escolheu, talvez seja necessário apontar para **outras janelas** no menu **Exibir** e clicar em **lista de erros**.
 
@@ -99,15 +99,15 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
        Em seguida, adicione o código `[assembly: CLSCompliant(true)]` ao final do arquivo AssemblyInfo.cs.
 
-       Recompilar o projeto.
+       Recompile o projeto.
 
 - [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Adicione o seguinte construtor a esta classe: demonstração pública (cadeia de caracteres)
 
-  - Adicione o Construtor `public demo (String s) : base(s) { }` à classe `demo`.
+  - Adicione o construtor `public demo (String s) : base(s) { }` à classe `demo` .
 
 - [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Adicione o seguinte construtor a esta classe: demonstração pública (cadeia de caracteres, exceção)
 
-  - Adicione o Construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo`.
+  - Adicione o construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo` .
 
 - [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Adicione o seguinte construtor a esta classe: demonstração protegida (SerializationInfo, StreamingContext)
 
@@ -115,29 +115,29 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
        Em seguida, adicione o Construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-       Recompilar o projeto.
+       Recompile o projeto.
 
 - [CA1032: implemente construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design: Adicione o seguinte construtor a esta classe: demonstração pública ()
 
-  - Adicione o Construtor `public demo () : base() { }` à classe `demo` **.**
+  - Adicione o construtor `public demo () : base() { }` à classe `demo` **.**
 
-       Recompilar o projeto.
+       Recompile o projeto.
 
 - [CA1709: os identificadores devem estar](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)em algum certo: Microsoft. Naming: corrija a capitalização do nome de namespace ' TestCode ' alterando-o para ' TestCode '.
 
-  - Altere a capitalização do namespace `testCode` para `TestCode`.
+  - Altere a capitalização do namespace `testCode` para `TestCode` .
 
 - [CA1709: os identificadores devem estar](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)em algum certo: Microsoft. Naming: corrija a capitalização do nome de tipo ' demo ' alterando-o para ' demo '.
 
-  - Altere o nome do membro para `Demo`.
+  - Altere o nome do membro para `Demo` .
 
 - [CA1709: os identificadores devem estar](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)em algum certo: Microsoft. Naming: corrija a capitalização do nome de membro ' item ' alterando-o para ' item '.
 
-  - Altere o nome do membro para `Item`.
+  - Altere o nome do membro para `Item` .
 
 - [CA1710: os identificadores devem ter o sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: Renomear ' TestCode. demo ' para terminar em ' Exception '.
 
-  - Altere o nome da classe e seus construtores para `DemoException`.
+  - Altere o nome da classe e seus construtores para `DemoException` .
 
 - [CA2210: assemblies devem ter nomes fortes válidos](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): assinar ' ManagedDemo ' com uma chave de nome forte.
 
@@ -149,9 +149,9 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
        Marque a caixa de seleção **assinar o assembly** .
 
-       Na lista **escolher um arquivo de chave de nome de cadeia de caracteres** , selecione **\<New... >** .
+       Na lista **escolher um arquivo de chave de nome de cadeia de caracteres** , selecione **\<New…>** .
 
-       A caixa de diálogo **criar chave de nome forte** é exibida.
+       A caixa de diálogo **Criar Chave de Nome Forte** é aberta.
 
        No **nome do arquivo de chave**, digite TestKey.
 
@@ -159,13 +159,13 @@ Neste tutorial, você analisa um projeto gerenciado para defeitos de código usa
 
        No menu **arquivo** , clique em **salvar itens selecionados**e feche as páginas de propriedades.
 
-       Recompilar o projeto.
+       Recompile o projeto.
 
 - [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. Usage: adicionar um atributo [Serializable] ao tipo ' demo ', pois esse tipo implementa ISerializable.
 
-  - Adicione o atributo `[Serializable ()]` à classe `demo`.
+  - Adicione o `[Serializable ()]` atributo à classe `demo` .
 
-       Recompilar o projeto.
+       Recompile o projeto.
 
   Depois de concluir as alterações, o arquivo Class1.cs deverá ser semelhante ao seguinte:
 
@@ -205,6 +205,6 @@ namespace TestCode
 
       Para obter mais informações, consulte [como: suprimir avisos usando o item de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)
 
-2. Recompilar o projeto.
+2. Recompile o projeto.
 
     O projeto é compilado sem avisos ou erros.

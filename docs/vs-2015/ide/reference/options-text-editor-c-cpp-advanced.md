@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 236135cd4b4f813471ece7a0eeb1b221c7242df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662360"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
@@ -96,9 +96,9 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Desabilitar rabiscos** Desabilita os rabiscos de erro do IntelliSense. Os “rabiscos” vermelhos não aparecem na janela do editor, mas o erro ainda aparecerá na janela Lista de Erros.
 
- **Desabilitar #include preenchimento automático** Desabilita a conclusão automática de instruções `#include`.
+ **Desabilitar #include preenchimento automático** Desabilita a conclusão automática de `#include` instruções.
 
- **Usar barra em #include preenchimento automático** Dispara a conclusão automática de instruções `#include` quando "/" é usado. O delimitador padrão é a barra invertida “ \”. O compilador pode aceitar qualquer um, então use esta opção para especificar o que sua base de código usa.
+ **Usar barra em #include preenchimento automático** Dispara a conclusão automática de `#include` instruções quando "/" é usado. O delimitador padrão é a barra invertida “ \”. O compilador pode aceitar qualquer um, então use esta opção para especificar o que sua base de código usa.
 
  **Máximo de unidades de conversão em cache** O número máximo de unidades de tradução que serão mantidas ativas a qualquer momento para solicitações do IntelliSense. Você deve especificar um valor entre 2 e 15. Esse número está diretamente relacionado ao número máximo de processos de VCPkgSrv.exe que serão executados (para uma determinada instância do Visual Studio). O valor padrão é 2, mas se você tiver memória disponível, poderá aumentar esse valor e possivelmente alcançar um desempenho ligeiramente melhor no IntelliSense.
 
@@ -106,7 +106,7 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Desabilitar a lista agressiva de membros** A lista de membros não aparece enquanto você digita o nome de um tipo ou variável. A lista é exibida somente depois que você digita um dos caracteres de confirmação, conforme definido na opção **Caracteres de Confirmação de Lista de Membros**.
 
- **Desabilitar palavras-chave da lista de membros** Palavras-chave de idioma, como `void`, `class` `switch` não aparecem nas sugestões da lista de membros.
+ **Desabilitar palavras-chave da lista de membros** Palavras-chave de idioma como `void` , `class` , `switch` não aparecem em sugestões de lista de membros.
 
  **Desabilitar trechos de código de lista de membros** Os trechos de código não aparecem nas sugestões da lista de membros.
 
@@ -125,5 +125,5 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Desabilitar Realce de Referência**
 
-## <a name="see-also"></a>Consulte também
- [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)
+## <a name="see-also"></a>Consulte Também
+ [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594156"
 ---
 # <a name="c-code-snippets"></a>Snippets de código C#
@@ -25,7 +25,7 @@ Os snippets de código são snippets de código prontos que você pode inserir r
 
 Você pode inserir um snippet de código no local do cursor ou inserir um snippet de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Snippet de Código é invocada por meio dos comandos **Inserir Snippet de Código** ou **Envolver Com** no menu do **IntelliSense** ou usando os atalhos de teclado **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S**, respectivamente.
 
-O **Code Snippet Inserter** exibe o nome do trecho de código para todos os trechos de código disponíveis. A Unidade de Inserção de Snippet de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do snippet de código. A Unidade de Inserção de Snippet de Código realça a correspondência mais próxima de um nome de snippet de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Snippet de Código será fechada e o snippet de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no editor de códigos, a Unidade de Inserção de Snippet de Código será ignorada sem inserir um snippet de código.
+O **Inserir trecho de código** exibe o nome do trecho de código para todos os trechos de código disponíveis. A Unidade de Inserção de Snippet de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do snippet de código. A Unidade de Inserção de Snippet de Código realça a correspondência mais próxima de um nome de snippet de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Snippet de Código será fechada e o snippet de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no editor de códigos, a Unidade de Inserção de Snippet de Código será ignorada sem inserir um snippet de código.
 
 ## <a name="default-code-snippets"></a>Snippets de código padrão
 
@@ -36,9 +36,9 @@ Por padrão, os snippets de código a seguir são incluídos no Visual Studio pa
 |#if|Cria uma diretiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e uma diretiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Em qualquer lugar.|
 |#region|Cria uma diretiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e uma diretiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Em qualquer lugar.|
 |~|Cria um [finalizador](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (destruidor) para a classe que o contém.|Dentro de uma classe.|
-|atributo|Cria uma declaração para uma classe que deriva de <xref:System.Attribute>.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
-|verificado|Cria um bloco [checked](/dotnet/csharp/language-reference/keywords/checked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|class|Cria uma declaração de classe.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|Atributo|Cria uma declaração para uma classe que deriva de <xref:System.Attribute>.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|checked|Cria um bloco [checked](/dotnet/csharp/language-reference/keywords/checked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
+|classe|Cria uma declaração de classe.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |ctor|Cria um construtor para a classe que o contém.|Dentro de uma classe.|
 |cw|Cria uma chamada para <xref:System.Console.WriteLine%2A>.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |do|Cria um loop [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
@@ -46,7 +46,7 @@ Por padrão, os snippets de código a seguir são incluídos no Visual Studio pa
 |enum|Cria uma declaração [enum](/dotnet/csharp/language-reference/keywords/enum).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |equals|Cria uma declaração de método que substitui o método <xref:System.Object.Equals%2A> definido na classe <xref:System.Object>.|Dentro de uma classe ou um struct.|
 |exception|Cria uma declaração para uma classe que deriva de uma exceção (<xref:System.Exception> por padrão).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
-|for|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
+|para|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |foreach|Cria um loop [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |forr|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for) que decrementa a variável de loop depois de cada iteração.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |if|Cria um bloco [if](/dotnet/csharp/language-reference/keywords/if-else).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
@@ -67,14 +67,14 @@ Por padrão, os snippets de código a seguir são incluídos no Visual Studio pa
 |switch|Cria um bloco [switch](/dotnet/csharp/language-reference/keywords/switch).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |experimentar|Cria um bloco [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |tryf|Cria um bloco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|desmarcado|Cria um bloco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
+|unchecked|Cria um bloco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |unsafe|Cria um bloco [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|Usando|Cria uma diretiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|Dentro de um namespace (incluindo o namespace global).|
+|using|Cria uma diretiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|Dentro de um namespace (incluindo o namespace global).|
 |while|Cria um loop [while](/dotnet/csharp/language-reference/keywords/while).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 
 ## <a name="see-also"></a>Confira também
 
-- [Funções de trecho de código](../ide/code-snippet-functions.md)
+- [Funções de snippet de código](../ide/code-snippet-functions.md)
 - [Snippets de código](../ide/code-snippets.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Como usar snippets de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)

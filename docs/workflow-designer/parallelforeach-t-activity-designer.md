@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876041"
 ---
 # <a name="parallelforeach-activity-designer"></a>Designer de atividade ParallelForEach
@@ -25,11 +25,11 @@ A <xref:System.Activities.Statements.ParallelForEach%601> atividade tem uma <xre
 
 ## <a name="the-parallelforeacht-activity"></a>A atividade ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>enumera seus valores e agenda o <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> para cada valor que ele enumera. Agenda somente <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. Como o corpo executa depende se <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> vai ociosa.
+<xref:System.Activities.Statements.ParallelForEach%601> enumera seus valores e agenda o <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> para cada valor que ele enumera. Agenda somente <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. Como o corpo executa depende se <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> vai ociosa.
 
 Se <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> não vai ociosa, executa em uma ordem inversa como as atividades agendados são tratadas como uma pilha, a atividade agendada a última executa primeiro. Por exemplo, se você tiver uma coleção de {1,2,3,4} in <xref:System.Activities.Statements.ParallelForEach%601> e usar um **WriteLine** como o corpo para gravar o valor. Você tem 4, 3, 2, 1 impresso no console. Isso ocorre porque o **WriteLine** não fica ocioso, portanto, depois de 4 atividades **WriteLine** terem sido agendadas, elas eram executadas usando um comportamento de pilha (primeiro a fim).
 
-Mas se você tiver atividades em <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> que pode ir ociosa, como uma atividade de <xref:System.ServiceModel.Activities.Receive> ou a atividade de <xref:System.Activities.Statements.Delay> . Em seguida não há necessidade de esperar que eles terminem concluir. <xref:System.Activities.Statements.ParallelForEach%601>vai para a próxima atividade de corpo agendada e tente executá-la. Se a atividade ociosa vai além disso, <xref:System.Activities.Statements.ParallelForEach%601> move novamente em atividade de corpo seguir.
+Mas se você tiver atividades em <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> que pode ir ociosa, como uma atividade de <xref:System.ServiceModel.Activities.Receive> ou a atividade de <xref:System.Activities.Statements.Delay> . Em seguida não há necessidade de esperar que eles terminem concluir. <xref:System.Activities.Statements.ParallelForEach%601> vai para a próxima atividade de corpo agendada e tente executá-la. Se a atividade ociosa vai além disso, <xref:System.Activities.Statements.ParallelForEach%601> move novamente em atividade de corpo seguir.
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>Usando o \<T> Designer de atividade ParallelForEach
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:Syste
 
 Por padrão, o iterador do loop é chamado item. Você pode alterar o nome da variável de iterador na caixa **foreach** no designer de atividade do **ParallelForEach \<T> ** . O iterador do loop pode ser usado em expressões nos filhos de atividade de <xref:System.Activities.Statements.ParallelForEach%601> .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Sequência](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)
-- [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)
+- [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

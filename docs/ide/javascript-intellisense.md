@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593714"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -48,8 +48,8 @@ Do Visual Studio 2017 em diante, o JavaScript IntelliSense exibe muito mais info
 O TypeScript usa várias fontes para criar essas informações:
 
 - [IntelliSense baseado na inferência de tipos](#TypeInference)
-- [IntelliSense baseado em JSDoc](#JsDoc)
-- [IntelliSense baseado em arquivos de declaração TypeScript](#TsDeclFiles)
+- [IntelliSense com base em JSDoc](#JsDoc)
+- [IntelliSense com base em arquivos de declaração TypeScript](#TsDeclFiles)
 - [Aquisição automática de definições de tipo](#Auto)
 
 <a name="TypeInference"></a>

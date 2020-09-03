@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287318"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa
@@ -68,7 +68,7 @@ A propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa par
 
 6. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Tempo de rampa de etapa**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

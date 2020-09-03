@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179074"
 ---
 # <a name="net-memory-allocations-view"></a>Exibição de alocações da memória do .NET
@@ -41,16 +41,16 @@ A exibição de Alocações lista os tipos criados durante a execução de cria�
   
 - Para exibir o caminho mais ativo, clique com o botão direito do mouse no tipo ou na função e, em seguida, clique em **Expandir Afunilamento**.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|O nome do tipo alocado ou da função.|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém o tipo ou a função.|  
+|**Nome do processo**|O nome do processo.|  
+|**Nome do módulo**|O nome do módulo que contém o tipo ou a função.|  
 |**Caminho do Módulo**|O caminho do módulo que contém o tipo ou a função.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição do tipo ou função.|  
 |**Número de linha da função**|O número de linha do início dessa definição de tipo ou função no arquivo de origem.|  
-|**Nível**|Indica se os dados são de um tipo ou uma função.|  
+|**Level**|Indica se os dados são de um tipo ou uma função.|  
 |**Alocações Inclusivas**|– Para uma função, o número total de objetos do tipo pai criados pela função. Esse número inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|  
 |**% de Alocações Inclusivas**|– Para uma função, o percentual de todos os objetos criados na execução de criação de perfil que eram alocações inclusivas do tipo pai pela função.<br />– Para um tipo, o percentual do número total de objetos do criados na execução de criação de perfil que eram instâncias do tipo.|  
 |**Alocações Exclusivas**|– Para uma função, o número de objetos criados quando a função estava executando diretamente na parte superior da pilha de chamadas. Esse número não inclui objetos criados em funções filho.<br />– Para um tipo, o número total de instâncias desse tipo que foram criadas.|  

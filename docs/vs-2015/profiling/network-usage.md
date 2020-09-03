@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20f7003bbcd319a6a8487d496697d3dcd0b7a18a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548415"
 ---
 # <a name="network-usage"></a>Uso de Rede
@@ -54,12 +54,12 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
  ![Painel de detalhes da ferramenta de rede](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Cabeçalhos**|Informações sobre os cabeçalhos de solicitação do evento.|  
 |**Corpo**|A solicitação e os dados de carga de resposta.|  
 |**Parâmetros**|Os valores e os nomes de parâmetro de cadeia de caracteres de consulta.|  
-|**Cookies**|Dados de cookie de solicitação e resposta.|  
+|**Arar**|Dados de cookie de solicitação e resposta.|  
 |**Timings**|Um gráfico dos estágios de aquisição dos recursos selecionados.|  
   
  A barra de **resumo** de rede mostra o número de operações de rede que são exibidos em qualquer ponto, a quantidade de dados que foi transferida, quanto tempo levou para baixar e o número de erros (solicitações com respostas 4xx ou 5xx) visível.  

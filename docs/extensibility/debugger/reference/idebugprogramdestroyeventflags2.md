@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722495"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Habilita um mecanismo de depuração para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] substituir o comportamento padrão da ia quando você termina uma sessão de depuração.
+Permite que um mecanismo de depuração substitua o comportamento padrão da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário quando você finaliza uma sessão de depuração.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por motores de depuração. É útil para hosts que podem criar e destruir vários programas ao longo da vida de um processo.
+ Essa interface é implementada pelos mecanismos de depuração. É útil para hosts que podem criar e destruir vários programas durante o tempo de vida de um processo.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugProgramDestroyEventFlags2`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugProgramDestroyEventFlags2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera o programa de destruir bandeiras.|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Recupera os sinalizadores de destruição do programa.|
 
 ## <a name="remarks"></a>Comentários
- O comportamento padrão [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] da ui é voltar ao modo de design depois de todos os programas terem enviado um evento de destruição de programa. Esta interface permite que um mecanismo de depuração altere esse comportamento.
+ O comportamento padrão da [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário é voltar para o modo de design depois que todos os programas tiverem enviado um evento de destruição de programa. Essa interface permite que um mecanismo de depuração altere esse comportamento.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

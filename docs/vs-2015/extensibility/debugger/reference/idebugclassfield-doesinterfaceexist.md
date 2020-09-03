@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Microsoft Docs
+title: IDebugClassField::D oesInterfaceExist | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f71346c1b69729ae54ef0d33be4149e7000316c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191133"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se uma interface específica é definida na classe.  
+Determina se uma interface específica está definida na classe.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,13 +40,13 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszInterfaceName`  
- [in] Uma cadeia de caracteres que contém o nome da interface a ser procurado.  
+ no Uma cadeia de caracteres que contém o nome da interface a ser procurada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, Retorna S_OK, retorna S_FALSE se a interface não existir; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK, retornará S_FALSE se a interface não existir; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Em vigor, esse método obtém uma enumeração de todas as interfaces e pesquisa a lista para uma interface correspondente.  
+ Esse método em vigor Obtém uma enumeração de todas as interfaces e procura uma interface correspondente na lista.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
