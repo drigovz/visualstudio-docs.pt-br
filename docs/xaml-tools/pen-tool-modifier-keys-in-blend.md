@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328376"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Caneta no Blend para Visual Studio
@@ -36,8 +36,8 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um demarca
 |Criar uma curva suave ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta**, clique em um ponto final de um dos demarcadores e arraste um ponto final do outro demarcador|![Criar uma curva suave ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
 |Criar um novo demarcador|Mantenha a tecla **Ctrl** pressionada e clique fora do demarcador anterior para parar de adicionar pontos ao demarcador anterior. Em seguida, clique no local ou arraste o ponto para o local em que deseja que o novo demarcador comece|![Criar um novo demarcador](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Caneta ponteiro de inicialização|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Teclas modificadoras da prancheta](artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras da ferramenta Seleção Direta](direct-selection-tool-modifier-keys-in-blend.md)
-- [Desenhar formas e caminhos](draw-shapes-and-paths.md)
+- [Desenhe as formas e demarcadores](draw-shapes-and-paths.md)

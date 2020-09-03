@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419192"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build
@@ -65,7 +65,7 @@ Expande a caixa de edição para exibir uma lista de macros para inserir na caix
 
 Lista as macros disponíveis e o valor delas. Consulte Macros abaixo para obter uma descrição de cada uma. Você pode selecionar somente uma macro por vez para inserir na caixa de edição de linha de comando.
 
-**Inserir**
+**Inserção**
 
 Insere na caixa de edição de inserções na linha de comando a macro selecionada na tabela de macros.
 
@@ -95,7 +95,7 @@ Você pode usar qualquer uma dessas macros para especificar locais de arquivos o
 |`$(TargetFileName)`|O nome do arquivo de saída primária do build (definido como nome de base e extensão de arquivo).|
 |`$(TargetExt)`|A extensão de arquivo do arquivo de saída primária para o build. Inclui o “.” antes da extensão de arquivo.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Especificando eventos de build personalizados no Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Página Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

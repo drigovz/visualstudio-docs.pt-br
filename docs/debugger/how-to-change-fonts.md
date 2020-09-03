@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350258"
 ---
 # <a name="how-to-change-fonts"></a>Como alterar fontes
@@ -30,7 +30,7 @@ Você pode alterar a fonte, o estilo da fonte e o tamanho da fonte para o Spy + 
 
    A seleção de **salvar fonte como padrão** fará com que todas as outras janelas do Spy + + usem essa fonte.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672256"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Início rápido: desenvolvimento orientado por testes com o Gerenciador de Testes
@@ -29,7 +29,7 @@ ms.locfileid: "72672256"
 - Consulte todas as informações que você precisa em uma janela.
 
 ## <a name="using-test-explorer"></a>Usando o Gerenciador de Testes
- ![Gerenciador de testes de unidade mostrando o botão executar tudo](../test/media/unittestexplorer-beta.png "UnitTestExplorer (beta)")
+ ![Gerenciador de Testes de Unidade mostrando o botão Executar Todos](../test/media/unittestexplorer-beta.png "UnitTestExplorer (beta)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes
 
@@ -67,7 +67,7 @@ ms.locfileid: "72672256"
 > [!NOTE]
 > Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [usar uma estrutura de teste diferente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Walkthrough: usando testes de unidade para desenvolver um método
  Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [usar uma estrutura de teste diferente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Criando o teste e o método
@@ -76,9 +76,9 @@ ms.locfileid: "72672256"
 
 2. Criar um projeto de teste.
 
-   - Na caixa de diálogo **Novo Projeto**, escolha **Visual C#** , **Teste** e escolha **Projeto de Teste de Unidade**.
+   - Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.
 
-        ![Novos projetos de código e teste](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+        ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
 3. Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:
 
@@ -124,7 +124,7 @@ ms.locfileid: "72672256"
 
 7. Selecione os itens em **Rastreamento de pilha** para ver onde o teste falhou.
 
-   ![O Gerenciador de testes de unidade mostrando o teste com falha.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![Gerenciador de Testes de Unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    Neste ponto, você criou um teste e um stub que você modificará para que o teste seja aprovado.
 
@@ -139,13 +139,13 @@ ms.locfileid: "72672256"
      }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de testes, escolha **executar tudo**.
 
      Compila o código e o teste é executado.
 
      O teste é aprovado.
 
-     ![Gerenciador de testes de unidade mostrando um teste de passagem.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Gerenciador de Testes de Unidade mostrando teste aprovado.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Adicionar testes para estender o intervalo de entradas
 
@@ -180,7 +180,7 @@ ms.locfileid: "72672256"
     }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de testes, escolha **executar tudo**.
 
      O novo teste falha, embora o primeiro teste ainda seja aprovado.
 
@@ -202,7 +202,7 @@ ms.locfileid: "72672256"
     }
     ```
 
-4. No Gerenciador de Testes, escolha **Executar Todos**.
+4. No Gerenciador de testes, escolha **executar tudo**.
 
      Ambos os testes agora foram aprovados.
 
@@ -227,7 +227,7 @@ ms.locfileid: "72672256"
      }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de testes, escolha **executar tudo**.
 
      O método sob teste é executado em loop e deve ser cancelado manualmente.
 
@@ -248,7 +248,7 @@ ms.locfileid: "72672256"
     ...
     ```
 
-5. No Gerenciador de Testes, escolha **Executar Todos**.
+5. No Gerenciador de testes, escolha **executar tudo**.
 
      Dessa vez os testes são aprovados.
 
@@ -287,4 +287,4 @@ ms.locfileid: "72672256"
 
      Todos os testes ainda são aprovados.
 
-     ![Gerenciador de testes de unidade mostrando 3 testes aprovados.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Gerenciador de Testes de Unidade mostrando 3 testes aprovados.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

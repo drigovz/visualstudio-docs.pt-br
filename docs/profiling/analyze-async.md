@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290066"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analisar o desempenho do código assíncrono do .NET
@@ -47,6 +47,6 @@ Para investigar melhor uma tarefa ou atividade específica, clique com o botão 
 
 ![Ferramenta Async do .NET com ir para arquivo de origem selecionado](../profiling/media/async-tool-gotosource.png "Ferramenta Async do .NET com ir para arquivo de origem selecionado")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Otimizando as configurações do criador de perfil](../profiling/optimize-profiler-settings.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460202"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erro: não é possível acessar a interface de depuração do SQL Server
@@ -29,5 +29,5 @@ Essa mensagem ocorre quando você tenta depurar o SQL que em um computador onde 
 
 - Consulte [Configurando a depuração do SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

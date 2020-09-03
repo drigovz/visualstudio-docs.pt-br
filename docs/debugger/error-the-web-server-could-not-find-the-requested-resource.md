@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5cce9afe8f27b25a01c0f6276164522a78a2ed9a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460345"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Erro: o servidor Web não conseguiu localizar o recurso solicitado
@@ -32,5 +32,5 @@ Há várias causas possíveis adicionais desse erro. Algumas das causas mais com
 
  Para obter mais informações sobre como solucionar problemas do IIS, confira [Gerenciamento e administração do IIS](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Erro: o servidor Web foi bloqueado e está bloqueando o verbo de depuração](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

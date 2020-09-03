@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543111"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Atalhos de teclado e mouse no diagrama de classe e janela Detalhes da Classe (Designer de Classe)
@@ -36,7 +36,7 @@ ms.locfileid: "85543111"
 
 - [Usando o teclado na Janela Detalhes da Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Usando o mouse em Designer de Classe
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Usando o mouse em Designer de Classe
  As seguintes ações do mouse têm suporte em diagramas de classe:
 
 |Combinação do mouse|Contexto|Descrição|
@@ -62,7 +62,7 @@ ms.locfileid: "85543111"
 
 - A Janela Detalhes da Classe oferece vários botões para a criação de novos membros na classe atual e para navegar entre os compartimentos dos membros na grade da Janela Detalhes da Classe. Para obter mais informações, consulte Botões da Janela Detalhes da Classe.
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Usando o teclado no Designer de Classe
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Usando o teclado no Designer de Classe
  As seguintes ações do teclado têm suporte em diagramas de classe:
 
 |Chave|Contexto|Descrição|
@@ -99,8 +99,8 @@ ms.locfileid: "85543111"
 |Chave|Result|
 |-|-|
 |, (vírgula)|Se o cursor estiver em uma linha de parâmetro, digitar uma vírgula move o cursor para o campo Nome do parâmetro seguinte. Se o cursor estiver na linha do último parâmetro de um método, ele moverá o cursor para o \<add parameter> campo, que você pode usar para criar um novo parâmetro.<br /><br /> Se o cursor estiver em outro lugar na Janela Detalhes da Classe, digitar uma vírgula literalmente adiciona uma vírgula ao campo atual.|
-|; (ponto e vírgula)<br /><br /> ou o<br /><br /> ) (parêntese de fechamento)|Mova o cursor para o campo Nome da próxima linha de membro na grade da Janela Detalhes da Classe.|
-|Tab|Move o cursor para o campo seguinte, se movendo primeiro da esquerda para a direita e, depois, de cima para baixo. Se o cursor estiver se movendo de um campo no qual você digitou texto, a Janela Detalhes da Classe processa o texto e o armazena se ele não produzir um erro.<br /><br /> Se o cursor estiver em um campo vazio, como \<add parameter> , Tab o move para o primeiro campo da próxima linha.|
+|; (ponto e vírgula)<br /><br /> ou<br /><br /> ) (parêntese de fechamento)|Mova o cursor para o campo Nome da próxima linha de membro na grade da Janela Detalhes da Classe.|
+|Guia|Move o cursor para o campo seguinte, se movendo primeiro da esquerda para a direita e, depois, de cima para baixo. Se o cursor estiver se movendo de um campo no qual você digitou texto, a Janela Detalhes da Classe processa o texto e o armazena se ele não produzir um erro.<br /><br /> Se o cursor estiver em um campo vazio, como \<add parameter> , Tab o move para o primeiro campo da próxima linha.|
 |\<space>|Move o cursor para o campo seguinte, se movendo primeiro da esquerda para a direita e, depois, de cima para baixo. Se o cursor estiver em um campo vazio, como \<add parameter> , ele será movido para o primeiro campo da próxima linha. Observe que \<space> é digitado imediatamente após uma vírgula ser ignorada.<br /><br /> Se o cursor estiver no campo Resumo, digitar um espaço adiciona um caractere de espaço.<br /><br /> Se o cursor estiver na coluna Ocultar de uma determinada linha, digitar um espaço alterna o valor da caixa de seleção Ocultar.|
 |CTRL + Tab|Mude para outra janela do documento. Por exemplo, mude da Janela Detalhes da Classe para um arquivo de código aberto.|
 |ESC (Escape)|Se você tiver começado a digitar texto em um campo, pressionar ESC atua como uma tecla de desfazer, revertendo o conteúdo do campo para o valor anterior. Se a Janela Detalhes da Classe tiver foco geral, mas nenhuma célula específica estiver em foco, pressionar ESC tira o foco da Janela Detalhes da Classe.|

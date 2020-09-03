@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460832"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
@@ -73,7 +73,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
 
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.
 
-    3. Clique em **Continue**.
+    3. Clique em **Continuar**.
 
          A caixa de diálogo Recursos do Windows é exibida.
 
@@ -113,7 +113,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
 
 10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticação do Microsoft Digest](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Executando aplicativos Web no Windows Vista com o IIS 7,0 e o Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

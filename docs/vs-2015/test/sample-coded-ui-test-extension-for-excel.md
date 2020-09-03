@@ -11,10 +11,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672237"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Extensão de teste de IU codificado de amostra para Excel
@@ -42,12 +42,12 @@ O componente de extensão da amostra é executado no processo de teste de IU cod
 ### <a name="propertyprovider"></a>PropertyProvider
  Herdada da classe <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>, essa classe fornece uma classe base para dar suporte às propriedades dos elementos de interface do usuário para gravação e reprodução de teste. Para obter mais informações, consulte [Classe PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [Classe ExtensionPackage](../test/sample-excel-extension-extensionpackage-class.md)
+- [ExtensionPackage Class](../test/sample-excel-extension-extensionpackage-class.md)
 - [Classe TechnologyManager](../test/sample-excel-extension-technologymanager-class.md)
 - [Classe ActionFilter](../test/sample-excel-extension-actionfilter-class.md)
 - [Classes Element](../test/sample-excel-extension-element-classes.md)

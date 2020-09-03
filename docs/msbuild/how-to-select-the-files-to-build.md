@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633805"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
@@ -27,7 +27,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 
 Os itens representam as entradas para um build. Para obter mais informações sobre os itens, consulte [Itens](../msbuild/msbuild-items.md).
 
-Para incluir arquivos para uma compilação, eles devem ser incluídos em uma lista de itens no arquivo de projeto MSBuild. Vários arquivos podem ser adicionados a listas de itens incluindo os arquivos individualmente ou usando caracteres curinga para incluir vários arquivos ao mesmo tempo.
+Para incluir arquivos para uma compilação, eles devem ser incluídos em uma lista de itens no arquivo de projeto do MSBuild. Vários arquivos podem ser adicionados a listas de itens incluindo os arquivos individualmente ou usando caracteres curinga para incluir vários arquivos ao mesmo tempo.
 
 #### <a name="to-declare-items-individually"></a>Para declarar itens individualmente
 
@@ -101,7 +101,7 @@ Em um arquivo de projeto, você pode usar a notação @() em tarefas para especi
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
-> Você deve usar curingas com itens para especificar as entradas para uma compilação; não é possível especificar `Sources` as entradas usando o atributo em tarefas msbuild, como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
+> Você deve usar caracteres curinga com itens para especificar as entradas para uma compilação; Você não pode especificar as entradas usando o `Sources` atributo em tarefas do MSBuild, como [CSC](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
@@ -177,5 +177,5 @@ O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs
 
 ## <a name="see-also"></a>Confira também
 
-- [Como: Excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Itens](../msbuild/msbuild-items.md)

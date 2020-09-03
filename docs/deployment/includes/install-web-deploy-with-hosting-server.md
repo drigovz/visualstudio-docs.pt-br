@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85292081"
 ---
 A Implantação da Web 3.6 para Servidores de Hospedagem fornece recursos adicionais de configuração que permitem a criação do arquivo de configurações da publicação por meio da interface do usuário.
@@ -24,7 +24,7 @@ A Implantação da Web 3.6 para Servidores de Hospedagem fornece recursos adicio
 
     Os scripts e as ferramentas são necessários para permitir a geração do arquivo de configurações da publicação.
 
-4. Adicional Verifique se Implantação da Web está sendo executado corretamente abrindo o **painel de controle > sistema e segurança > ferramentas administrativas > serviços**e, em seguida, verifique se:
+4. Adicional Verifique se Implantação da Web está sendo executado corretamente abrindo o  **painel de controle > sistema e segurança > ferramentas administrativas > serviços**e, em seguida, verifique se:
 
     * O **serviço Web Deployment Agent** está em execução (o nome do serviço é diferente em versões mais antigas).
 

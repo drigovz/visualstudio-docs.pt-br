@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460605"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
@@ -55,7 +55,7 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
 
 - Você pode adicionar o usuário às permissões do depurador remoto (na janela do depurador remoto, **ferramentas > permissões**).
 
-- Se você não puder usar os métodos nas etapas anteriores, poderá permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas > opções** . Quando você **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve usar essa opção somente se não tiver nenhuma opção ou se estiver em uma rede privada.
+- Se você não puder usar os métodos nas etapas anteriores, poderá permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas > opções** . Quando você   **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve usar essa opção somente se não tiver nenhuma opção ou se estiver em uma rede privada.
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>O firewall no computador remoto não permite conexões de entrada para o depurador remoto
  O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o Firewall do Windows, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
@@ -70,9 +70,9 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
  Talvez seja necessário fazer a depuração remota em um momento diferente ou reagendar o trabalho na rede por um horário diferente.
 
 ## <a name="more-help"></a>Mais ajuda
- Para obter mais ajuda do depurador remoto, incluindo opções de linha de comando, clique em **ajuda > uso** na janela do depurador remoto. Se você não o tiver aberto, poderá ver a página da Web copiando a linha a seguir para uma janela do **Explorador de arquivos** . (Você precisa substituir \<Visual Studio installation directory> pelo local da instalação do Visual Studio.)
+ Para obter mais ajuda do depurador remoto, incluindo opções de linha de comando, clique em **ajuda > uso** na janela do depurador remoto. Se você não o tiver aberto, poderá ver a página da Web copiando a linha a seguir para uma janela do  **Explorador de arquivos** . (Você precisa substituir \<Visual Studio installation directory> pelo local da instalação do Visual Studio.)
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)
