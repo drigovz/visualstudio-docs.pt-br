@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911692"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Como gerenciar perfis e configurações de serviço
-## <a name="overview"></a>Visão Geral
+## <a name="overview"></a>Visão geral
 Quando você publica um serviço de nuvem, o Visual Studio armazena informações de configuração em dois tipos de arquivos de configuração: perfis e configurações de serviço. Configurações de serviço (arquivos .cscfg) armazenam configurações para os ambientes de implantação para um serviço de nuvem do Azure. O Azure usa esses arquivos de configuração ao gerenciar seus serviços de nuvem. Por outro lado, perfis (arquivos .azurePubxml) armazenam configurações de publicação para os serviços de nuvem. Essas configurações são um registro do que você escolhe quando utiliza o assistente de publicação e são usadas localmente pelo Visual Studio. Este tópico explica como trabalhar com ambos os tipos de arquivos de configuração.
 
 ## <a name="service-configurations"></a>Configurações de Serviço
@@ -48,15 +48,15 @@ Você também pode abrir a caixa de diálogo **Gerenciar Configurações** das p
      O arquivo de configuração de serviço é removido do projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-rename-a-service-configuration"></a>Para renomear uma configuração de serviço
-1. No Gerenciador de Soluções, abra o menu de atalho do projeto do Azure e selecione **Gerenciar Configurações**.
+1. No Gerenciador de Soluções, abra o menu de atalho para o projeto do Azure e, em seguida, selecione **gerenciar configurações**.
 
     A caixa de diálogo **Gerenciar Configurações de Serviço** é exibida.
-2. Para renomear uma configuração de serviço, escolha a nova configuração de serviço na lista **Nome** e selecione **Renomear**. Na caixa de texto **Nome**, digite o nome que você deseja usar para essa configuração de serviço e selecione **OK**.
+2. Para renomear uma configuração de serviço, escolha a nova configuração de serviço na lista **Nome** e selecione **Renomear**. Na caixa de texto **nome** , digite o nome que você deseja usar para essa configuração de serviço e selecione **OK**.
 
     O nome do arquivo de configuração de serviço é modificado no projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-change-a-service-configuration"></a>Para alterar uma configuração de serviço
-* Se você quiser alterar uma configuração de serviço, abra o menu de atalho da função específica que você deseja alterar no projeto do Azure e selecione **Propriedades**. Consulte [como: configurar as funções para um serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) para obter mais informações.
+* Se você quiser alterar uma configuração de serviço, abra o menu de atalho da função específica que você deseja alterar no projeto do Azure e selecione **Propriedades**. Confira [Como configurar as funções para um Serviço de Nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) para saber mais.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Fazer diferentes combinações de configurações usando perfis
 Usando um perfil, você pode preencher automaticamente o **Assistente de Publicação** com diferentes combinações de configurações para diferentes finalidades. Por exemplo, você pode ter um perfil para depuração e outro para compilações de versão. Nesse caso, o perfil **Depurar** teria a opção **IntelliTrace** habilitada e a configuração **Depurar** selecionada; seu perfil **Versão** teria a opção **IntelliTrace** desabilitada e a configuração **Versão** selecionada. Você também pode usar perfis diferentes para implantar um serviço usando uma conta de armazenamento diferente.
@@ -96,4 +96,4 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
 5. (Opcional) Selecione **Publicar** para publicar o serviço de nuvem usando as novas configurações. Se você não deseja publicar seu serviço de nuvem no momento e você fecha o Assistente de Publicação, o Visual Studio pergunta se você deseja salvar as alterações feitas ao perfil.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para saber como configurar outras partes do projeto do Azure no Visual Studio, confira [Configurar um projeto do Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).
+Para saber mais sobre como configurar outras partes do seu projeto do Azure a partir do Visual Studio, consulte [Configurando um projeto do Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md).

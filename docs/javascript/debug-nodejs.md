@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285186"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
@@ -58,7 +58,7 @@ Se a fonte for minificada ou criada por um transcompilador como o TypeScript ou 
 
 Para obter ajuda para gerar mapas de origem, consulte [gerar mapas de origem para depuração](#generate_source_maps).
 
-### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a>Preparar o navegador para depuração
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Preparar o navegador para depuração
 
 ::: moniker range=">=vs-2019"
 Para este cenário, use o Microsoft Edge (Chromium), atualmente chamado de **Microsoft Edge beta** no IDE ou Chrome.
@@ -162,7 +162,7 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
    * Se você precisar dividir o código em um arquivo JavaScript transcompilado (por exemplo, *app-bundle.js*) e não puder fazê-lo, remova o arquivo do mapa de origem, *filename.js. map*.
 
-### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a>Solucionando problemas de pontos de interrupção e mapas de origem
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Solucionando problemas de pontos de interrupção e mapas de origem
 
 Se você precisar dividir o código em um arquivo de origem TypeScript ou JSX e não puder fazê-lo, use **anexar ao processo** conforme descrito nas etapas anteriores para anexar o depurador. Verifique se o seu ambiente está configurado corretamente:
 
@@ -210,7 +210,7 @@ Essa é uma configuração somente de desenvolvimento para habilitar a depuraç�
 
 Para cenários complicados, as ferramentas de navegador (**F12**) às vezes funcionam melhor para depuração, pois não exigem alterações em prefixos personalizados.
 
-### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a>Configurar mapas de origem usando um tsconfig.jsno arquivo
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Configurar mapas de origem usando um tsconfig.jsno arquivo
 
 Se você adicionar um arquivo *tsconfig.json* ao projeto, o Visual Studio tratará a raiz do diretório como um projeto TypeScript. Para adicionar o arquivo, clique com o botão direito do mouse em seu projeto no Gerenciador de Soluções e escolha **adicionar > novo Item > arquivo de configuração JSON do TypeScript**. Um arquivo *tsconfig.json* como o mostrado a seguir é adicionado ao projeto.
 

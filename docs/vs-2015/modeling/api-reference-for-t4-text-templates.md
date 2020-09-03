@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd4f0ef9fe4e9b8f284dd082ebadf27910806beb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672860"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referência de API para modelos de texto T4
@@ -23,8 +23,8 @@ A API de modelagem de texto permite invocar e personalizar a transformação de 
 
 ## <a name="namespaces"></a>Namespaces
 
-|espaço de nome|Finalidade|
+|Namespace|Finalidade|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.TextTemplating>|Contém classes para a funcionalidade de transformação de modelo de texto. O mecanismo de transformação de modelo de texto é integrado ao Visual Studio e transforma arquivos de modelo de texto em arquivos de saída de texto gerados.|
-|[Mode](/previous-versions/ee844312(v=vs.140))|Fornece recursos de transformação de texto relacionados a modelos UML e linguagens específicas de domínio, como acesso a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fornece acesso ao serviço de modelagem de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Modelagem](/previous-versions/ee844312(v=vs.140))|Fornece recursos de transformação de texto relacionados a modelos UML e linguagens específicas de domínio, como o acesso ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fornece acesso ao serviço de modelagem de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

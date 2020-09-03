@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156632"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Como exibir uma lista de itens separada por vírgulas
@@ -46,7 +46,7 @@ Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../in
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Exemplo  
- Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo, Phrases.txt. No comando findstr, cadeias de caracteres de pesquisa literais são indicadas pela opção **/c:** , portanto, o separador de item, `/c:` é inserido entre os itens na lista de itens de `@(Phrase)`.  
+ Neste exemplo, a tarefa [exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar cadeias de caracteres de texto especificadas no arquivo, Phrases.txt. No comando findstr, cadeias de caracteres de pesquisa literais são indicadas pela opção **/c:**, portanto, o separador de item, `/c:` é inserido entre os itens na lista de itens de `@(Phrase)`.  
   
  Neste exemplo, a linha de comando equivalente é:  
   
@@ -69,6 +69,6 @@ Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../in
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
  [Itens](../msbuild/msbuild-items.md)

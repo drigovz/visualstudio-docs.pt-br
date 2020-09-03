@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f7a24345174854462a2118df626223a8a299cd7f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736849"
 ---
 # <a name="field_modifiers"></a>FIELD_MODIFIERS
 Especifica modificadores para um tipo de campo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_MODIFIERS {
@@ -118,10 +118,10 @@ Indica que o campo tem acesso protegido.
 Indica que o campo tem acesso privado.
 
 `FIELD_MOD_NOMODIFIERS`\
-Indica que o campo não tem modificadores.
+Indica que o campo não tem nenhum modificador.
 
 `FIELD_MOD_STATIC`\
-Indica que o campo está estático.
+Indica que o campo é estático.
 
 `FIELD_MOD_CONSTANT`\
 Indica que o campo é uma constante.
@@ -151,7 +151,7 @@ Indica que o campo é uma interface.
 Indica que o campo é final.
 
 `FIELD_MOD_SENTINEL`\
-Indica que o campo é uma sentinela.
+Indica que o campo é um sentinela.
 
 `FIELD_MOD_INNERCLASS`\
 Indica que o campo é uma classe interna.
@@ -160,22 +160,22 @@ Indica que o campo é uma classe interna.
 Indica que o campo é opcional.
 
 `FIELD_MOD_BYREF`\
-Indica que o campo é um argumento de referência. Isto é especificamente para argumentos de método.
+Indica que o campo é um argumento de referência. Isso é especificamente para argumentos de método.
 
 `FIELD_MOD_HIDDEN`\
 Indica que o campo deve ser oculto ou apresentado em outro contexto; por exemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] locais estáticos.
 
 `FIELD_MOD_MARSHALASOBJECT`\
-Indica que o campo representa `IUnknown` um objeto com uma interface.
+Indica que o campo representa um objeto com uma `IUnknown` interface.
 
 `FIELD_MOD_SPECIAL_NAME`\
-Indica que o campo tem um `.ctor` nome especial,[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] por exemplo, para um construtor (somente).
+Indica que o campo tem um nome especial, por exemplo, `.ctor` para um Construtor ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
 
 `FIELD_MOD_HIDEBYSIG`\
-Indica que o `Overloads` campo tem a palavra-chave aplicada a ele (apenas).[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]
+Indica que o campo tem a `Overloads` palavra-chave aplicada a ele ( [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
 
 `FIELD_MOD_WRITEONLY`\
-Indica que o campo é somente para gravação. Este valor não `FIELD_MOD_ALL`está incluído, pois o único uso desses campos somente para gravação é para avaliação de funções. Um usuário deve pedir `FIELD_MOD_WRITEONLY` explicitamente campos.
+Indica que o campo é somente gravação. Esse valor não está incluído no `FIELD_MOD_ALL` , pois o único uso desses campos somente gravação é para a avaliação da função. Um usuário deve solicitar explicitamente os `FIELD_MOD_WRITEONLY` campos.
 
 `FIELD_MOD_ACCESS_MASK`\
 Indica uma máscara para acesso ao campo.
@@ -184,16 +184,16 @@ Indica uma máscara para acesso ao campo.
 Indica uma máscara para modificadores de campo.
 
 ## <a name="remarks"></a>Comentários
-Usado para `dwModifiers` o membro da estrutura [FIELD_INFO.](../../../extensibility/debugger/reference/field-info.md)
+Usado para o `dwModifiers` membro da estrutura de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .
 
-Esses valores também são passados para o método [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) para filtrar para campos específicos.
+Esses valores também são passados para o método [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) para filtrar campos específicos.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

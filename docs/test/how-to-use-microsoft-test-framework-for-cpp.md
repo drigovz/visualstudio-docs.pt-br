@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287110"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
@@ -23,7 +23,7 @@ O Microsoft Unit Testing Framework para C/C++ está incluído por padrão na car
 
 Normalmente, o código de teste é executado no próprio projeto na mesma solução que o código que você deseja testar. Para instalar e configurar um novo projeto de teste, consulte [Gravar testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a>Para gravar testes de unidade no mesmo projeto
+## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a> Para gravar testes de unidade no mesmo projeto
 
 Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, talvez você precise criar os testes no mesmo projeto que o programa que você está testando. Gravar testes de unidade no mesmo projeto:
 
@@ -37,7 +37,7 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, ta
 
       | Diretório | Propriedade |
       |-| - |
-      | **Incluir Diretórios** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Diretórios de inclusão** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
       | **Diretórios de Biblioteca** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 1. Adicione um arquivo de teste de unidade C++:
@@ -116,6 +116,6 @@ As seguintes características predefinidas são encontradas em `CppUnitTest.h`. 
 |`TEST_OWNER(ownerAlias)`|Use a característica de proprietário predefinida para especificar um proprietário do método de teste.|
 |`TEST_PRIORITY(priority)`|Use a característica de prioridade predefinida para atribuir prioridades relativas a seus métodos de teste.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)

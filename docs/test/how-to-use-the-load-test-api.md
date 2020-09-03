@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287097"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Como usar a API de teste de carga
@@ -59,7 +59,7 @@ Você também pode criar plug-ins para testes de desempenho na Web. Para obter m
 
      Para uma implementação do <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> , consulte [como: criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)

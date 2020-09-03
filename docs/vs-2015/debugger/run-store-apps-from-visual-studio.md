@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540303"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Executar aplicativos da Store pelo Visual Studio
@@ -30,7 +30,7 @@ Os aplicativos da Windows Store são executados em uma grande variedade de dispo
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Executar aplicativos da Windows Store na máquina local](../debugger/run-windows-store-apps-on-the-local-machine.md)|Execute seu aplicativo da Windows Store no dispositivo com Visual Studio.|
 |[Executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md)|Execute o aplicativo da Windows Store em uma janela da área de trabalho que simula a funcionalidade [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], como toque e orientação.|

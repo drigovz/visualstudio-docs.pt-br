@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286551"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
@@ -193,7 +193,7 @@ Se você estiver usando uma versão mais antiga do Visual Studio, algumas opçõ
 
 - Use esta opção quando estiver depurando o código .NET C++, pois o novo mecanismo de depuração não oferece suporte à avaliação de expressões .NET C++. No entanto, habilitar o modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação do depurador atual para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos, como `std::string` nos projetos do Visual Studio 2015.   Use Visual Studio 2013 projetos para a experiência de depuração ideal nesses casos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

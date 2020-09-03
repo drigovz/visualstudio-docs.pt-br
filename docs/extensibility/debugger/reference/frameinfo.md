@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736789"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Descreve um quadro de pilha.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct tagFRAMEINFO {
@@ -65,53 +65,53 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Membros
 `m_dwValidFields`\
-Uma combinação de bandeiras da enumeração [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica quais campos são preenchidos.
+Uma combinação de sinalizadores da enumeração [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica quais campos são preenchidos.
 
 `m_bstrFuncName`\
-O nome da função associado ao quadro de pilha.
+O nome da função associada ao registro de ativação.
 
 `m_bstrReturnType`\
-O tipo de retorno associado ao quadro de pilha.
+O tipo de retorno associado ao registro de ativação.
 
 `m_bstrArgs`\
-Os argumentos para a função associada ao quadro de pilha.
+Os argumentos para a função associada ao registro de ativação.
 
 `m_bstrLanguage`\
-A linguagem em que a função é implementada.
+O idioma no qual a função é implementada.
 
 `m_bstrModule`\
-O nome do módulo associado ao quadro de pilha.
+O nome do módulo associado ao quadro da pilha.
 
 `m_addrMin`\
-O endereço mínimo de pilha física.
+O endereço de pilha física mínimo.
 
 `m_addrMAX`\
-O endereço máximo da pilha física.
+O endereço de pilha física máximo.
 
 `m_pFrame`\
-O objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa este quadro de pilha.
+O objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa esse quadro de pilhas.
 
 `m_pModule`\
-O objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa o módulo que contém este quadro de pilha.
+O objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa o módulo que contém esse quadro de pilhas.
 
 `m_fHasDebugInfo`\
-Não-zero`TRUE`( ) se existir informações de depuração no quadro dado.
+Diferente de zero ( `TRUE` ) se houver informações de depuração no quadro determinado.
 
 `m_fStaleCode`\
-Não-zero`TRUE`( ) se o quadro de pilha estiver associado a um código que não é mais válido.
+Diferente de zero ( `TRUE` ) se o registro de ativação estiver associado a um código que não é mais válido.
 
 `m_fAnnotatedFrame`\
-Não-zero`TRUE`( ) se o quadro de pilha for anotado pelo gerenciador de depuração de sessão (SDM).
+Diferente de zero ( `TRUE` ) se o registro de ativação for anotado pelo SDM (Gerenciador de depuração de sessão).
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) a ser preenchido. Essa estrutura também está contida em uma lista contida na interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, por sua vez, é retornada de uma chamada para o método [EnumFrameInfo.](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) a ser preenchido. Essa estrutura também está contida em uma lista contida na interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, por sua vez, é retornada de uma chamada para o método [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

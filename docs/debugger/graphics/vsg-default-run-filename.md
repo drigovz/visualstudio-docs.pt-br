@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734837"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
@@ -25,7 +25,7 @@ Define o nome de arquivo padrão do arquivo de log de gráficos.
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `filename` o nome de arquivo fornecido por padrão ao arquivo de log de gráficos quando as informações gráficas são capturadas programaticamente.
+ `filename` O nome de arquivo fornecido por padrão para o arquivo de log de gráficos quando as informações gráficas são capturadas programaticamente.
 
 ## <a name="value"></a>Valor
  Um literal de cadeia de caracteres que representa o nome de arquivo do arquivo de log de gráficos. Por padrão, L "default. vsglog".
@@ -35,9 +35,9 @@ Define o nome de arquivo padrão do arquivo de log de gráficos.
 ```
 
 ## <a name="remarks"></a>Comentários
- Se o símbolo de pré-processador `DONT_SAVE_VSGLOG_TO_TEMP` for definido, o nome do arquivo será relativo ao diretório atual do aplicativo capturado, ou será um caminho absoluto; caso contrário, ele é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
+ Se o símbolo de pré-processador `DONT_SAVE_VSGLOG_TO_TEMP` for definido, o nome do arquivo será relativo ao diretório atual do aplicativo capturado, ou é um caminho absoluto; caso contrário, ele é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
 
- Para alterar o nome de arquivo definido, você deve redefini-lo antes de incluir `vsgcapture.h` em seu programa.
+ Para alterar o nome de arquivo definido, você deve redefini-lo antes `vsgcapture.h` de incluir em seu programa.
 
 ## <a name="example"></a>Exemplo
  Este exemplo mostra como alterar o nome de arquivo padrão do arquivo de captura:
@@ -49,5 +49,5 @@ Define o nome de arquivo padrão do arquivo de log de gráficos.
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

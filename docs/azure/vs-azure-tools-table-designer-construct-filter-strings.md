@@ -10,32 +10,32 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911653"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o Designer de Tabela
-## <a name="overview"></a>Visão Geral
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o designer de tabela
+## <a name="overview"></a>Visão geral
 Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer**do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](/rest/api/storageservices/).
 
-O WCF Data Services é baseado no [Open Data Protocol](https://www.odata.org/) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro ( **$filter**), consulte a [Especificação de convenções de URI do OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+O WCF Data Services é baseado no [Open Data Protocol](https://www.odata.org/) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro (**$filter**), consulte a [Especificação de convenções de URI do OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operadores de comparação
 Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade:
 
 | Operador lógico | Descrição | Cadeia de caracteres de filtro de exemplo |
 | --- | --- | --- |
-| eq |Igual |City eq 'Redmond' |
+| eq |Igual a |City eq 'Redmond' |
 | gt |Maior que |Preço gt 20 |
 | ge |Maior ou igual a |Preço ge 10 |
 | lt |Menor que |Preço lt 20 |
-| le |Menor que ou igual a |Preço le 100 |
-| ne |Não é igual a |City ne 'London' |
+| le |Menor ou igual |Preço le 100 |
+| ne |Diferente de |City ne 'London' |
 | e |And |Preço le 200 e Preço gt 3,5 |
 | ou |Ou |Preço le 3,5 ou Preço gt 200 |
-| not |não |não isAvailable |
+| not |Not |não isAvailable |
 
 Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importantes:
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734896"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
@@ -26,7 +26,7 @@ Recomendamos usar mapas mip nas cenas 3D quando houver memória disponível para
 Se essa variante tiver um ganho de desempenho considerável, é sinal de que você está usando as texturas sem habilitar os mapas mip e, por isso, não está aproveitando ao máximo o cache da textura.
 
 ## <a name="remarks"></a>Comentários
-A geração do mapa mip é forçada em cada chamada de `ID3D11Device::CreateTexture2D` que cria uma textura de origem. Especificamente, a geração de mapa MIP é forçada quando o objeto D3D11_TEXTURE2D_DESC passado `pDesc` descreve um recurso de sombreador inalterável; Isto é:
+A geração do mapa mip é forçada em cada chamada de `ID3D11Device::CreateTexture2D` que cria uma textura de origem. Especificamente, a geração de mapa MIP é forçada quando o objeto de D3D11_TEXTURE2D_DESC passado `pDesc` descreve um recurso de sombreador inalterável; isto é:
 
 - O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.
 
@@ -69,5 +69,5 @@ Lembre-se de que ao fornecer os dados iniciais para `CreateTexture2D`, você tam
 > [!NOTE]
 > Se quiser fornecer seu próprio conteúdo aos níveis de mip em vez de gerá-lo automaticamente, crie as texturas usando um editor de imagens compatível com texturas com mapas mip. Em seguida, carregue o arquivo e transmita os níveis de mip a `CreateTexture2D`.
 
-## <a name="see-also"></a>Consulte também
-[Variante de metade/um quarto nas dimensões de textura](half-quarter-texture-dimensions-variant.md)
+## <a name="see-also"></a>Confira também
+[Variante de dimensões de textura de semestre/trimestre](half-quarter-texture-dimensions-variant.md)

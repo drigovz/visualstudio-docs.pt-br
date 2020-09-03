@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736866"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Especifica o tipo de campo contido em um objeto [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+Especifica o tipo de campo contido em um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_KIND {
@@ -144,7 +144,7 @@ Indica que o campo é uma classe.
 Indica que o campo é uma interface.
 
 `FIELD_TYPE_UNION`\
-Indica que o campo é um sindicato.
+Indica que o campo é uma União.
 
 `FIELD_TYPE_ARRAY`\
 Indica que o campo é uma matriz.
@@ -168,7 +168,7 @@ Indica que o campo é um rótulo.
 Indica que o campo é um typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Indica que o campo é um campo de bits.
+Indica que o campo é um área de bits.
 
 `FIELD_TYPE_NAMESPACE`\
 Indica que o campo é um namespace.
@@ -201,7 +201,7 @@ Indica que o campo é local.
 Indica que o campo é um parâmetro.
 
 `FIELD_SYM_THIS`\
-Indica que o campo é o ponteiro "isso".
+Indica que o campo é o ponteiro "This".
 
 `FIELD_SYM_GLOBAL`\
 Indica que o campo é global.
@@ -210,7 +210,7 @@ Indica que o campo é global.
 Indica que o campo recupera propriedades.
 
 `FIELD_SYM_PROP_SETTER`\
-Indica que o campo define propriedades.
+Indica que o campo define as propriedades.
 
 `FIELD_SYM_EXTENDED`\
 Reservado para uso futuro.
@@ -222,19 +222,19 @@ Indica uma máscara para tipos de campo.
 Indica uma máscara para tipos de campo.
 
 `FIELD_SYM_MASK`\
-Indica uma máscara para informações de símbolos.
+Indica uma máscara para informações de símbolo.
 
 ## <a name="remarks"></a>Comentários
-Retornou de uma chamada para o método [GetKind.](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+Retornado de uma chamada para o método [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
-Dependendo do tipo de campo, [o QueryInterface](/cpp/atl/queryinterface) pode ser chamado na interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para uma forma mais específica de interface. Por exemplo, se `FIELD_TYPE_METHOD` [getKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retornar, `QueryInterface` você`DebugField` pode então chamar I para obter a interface [IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
+Dependendo do tipo de campo, [QueryInterface](/cpp/atl/queryinterface) pode ser chamado na interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) para uma forma mais específica de interface. Por exemplo, se [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retornar `FIELD_TYPE_METHOD` , você poderá chamar `QueryInterface` em I `DebugField` para obter a interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
