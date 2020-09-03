@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634559"
 ---
 # <a name="assignculture-task"></a>Tarefa AssignCulture
 
-Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome do arquivo *Form1.fr-fr.resx* tem um identificador de cultura incorporado "fr-fr", de modo `Culture` que `fr-fr`esta tarefa produzirá um item que tenha o mesmo nome de arquivo com os metadados iguais a . A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.
+Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome de arquivo *Form1.fr-fr. resx* tem um identificador de cultura incorporado "fr-fr", portanto, essa tarefa produzirá um item que tem o mesmo nome de arquivo com os metadados `Culture` iguais a `fr-fr` . A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
@@ -74,7 +74,7 @@ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <x
 
 A tabela a seguir descreve o valor dos itens de saída após a execução da tarefa. Os metadados de item são mostrados entre parênteses após o item.
 
-|Coleta de itens|Conteúdo|
+|Coleta de itens|Sumário|
 |---------------------|--------------|
 |`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* (sem metadados adicionais)|
 |`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|

@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: fba240c29cb8142a9ec4b4d28c71112c1974a5b1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331065"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
@@ -96,6 +96,6 @@ Para alterar as opções de exibição de controle, clique no ícone na parte in
 
 Quando você selecionar **Exibir Somente os Controles de Plataforma**, todos os controles personalizados provenientes de SDKs, controles de usuário do cliente e outros não serão renderizados completamente. Em vez disso, eles serão substituídos por controles de fallback para demonstrar o tamanho e a posição do controle.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Projetar XAML no Visual Studio e no Blend para Visual Studio](designing-xaml-in-visual-studio.md)

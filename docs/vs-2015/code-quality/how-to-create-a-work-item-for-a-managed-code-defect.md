@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655129"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Como criar um item de trabalho para um defeito de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o recurso de acompanhamento de item de trabalho para registrar o item de trabalho no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Para usar esse recurso, seu projeto deve fazer parte do projeto de equipe no [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+Você pode usar o recurso de acompanhamento de item de trabalho para registrar o item de trabalho de dentro do [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Para usar esse recurso, seu projeto deve fazer parte do projeto de equipe no [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Para criar um item de trabalho para um defeito de código gerenciado
 

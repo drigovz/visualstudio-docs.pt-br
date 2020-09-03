@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6061b614442d7bcb2f3465b1c40f35d583626c45
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167566"
 ---
 # <a name="mobility-warnings"></a>Avisos de mobilidade
@@ -26,7 +26,7 @@ Os avisos de mobilidade dão suporte ao uso de energia eficiente.
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Regra|DESCRIÇÃO|
+|Regra|Descrição|
 |----------|-----------------|
-|[CA1600: não usar a prioridade de processo ociosa](../code-quality/ca1600.md)|Não defina a prioridade do processo como Ocioso. Os processos que têm System.Diagnostics.ProcessPriorityClass.Idle ocuparão a CPU quando estariam ociosos e, assim, bloquearão a espera.|
-|[CA1601: não usar temporizadores que impeçam alterações no estado de energia](../code-quality/ca1601.md)|A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos.|
+|[CA1600: Não usar prioridade de processo ociosa](../code-quality/ca1600.md)|Não defina a prioridade do processo como Ocioso. Os processos que têm System.Diagnostics.ProcessPriorityClass.Idle ocuparão a CPU quando estariam ociosos e, assim, bloquearão a espera.|
+|[CA1601: Não usar temporizadores que impedem alterações no estado de energia](../code-quality/ca1601.md)|A atividade periódica de alta frequência manterá a CPU ocupada e interferirá nos temporizadores ociosos que economizam energia e desligam monitores e discos rígidos.|

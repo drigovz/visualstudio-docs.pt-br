@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546504"
 ---
 # <a name="files-element"></a>Elemento de arquivos
@@ -31,7 +31,7 @@ ms.locfileid: "85546504"
 </Files>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
  **Filecollectiontype**
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos

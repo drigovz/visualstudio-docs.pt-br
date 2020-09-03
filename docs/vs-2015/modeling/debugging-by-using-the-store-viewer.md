@@ -13,19 +13,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a870c66b1c14dc6ddf3e38fb6e5be8c116be3573
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654887"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Depurando por meio do Visualizador de Repositório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Com o Visualizador da loja, você pode examinar o estado de um *repositório* usado pelo [!INCLUDE[dsl](../includes/dsl-md.md)]. O Visualizador da loja exibe todos os elementos de modelo de domínio que estão em um repositório específico, juntamente com propriedades de elemento e links entre elementos.
+Com o Visualizador da loja, você pode examinar o estado de um *repositório* usado pelo [!INCLUDE[dsl](../includes/dsl-md.md)] . O Visualizador da loja exibe todos os elementos de modelo de domínio que estão em um repositório específico, juntamente com propriedades de elemento e links entre elementos.
 
 ## <a name="opening-store-viewer"></a>Abrindo o Visualizador da loja
- Quando você estiver no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilação experimental, pare seu código em um ponto de interrupção em que uma instância do repositório contém informações de modelo. Em seguida, abra o Visualizador da loja digitando o seguinte comando na janela **imediata** :
+ Quando você estiver na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilação experimental, pare seu código em um ponto de interrupção em que uma instância do repositório contém informações de modelo. Em seguida, abra o Visualizador da loja digitando o seguinte comando na janela **imediata** :
 
 ```
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
@@ -40,16 +40,16 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 >
 > `StoreViewer.Show(mystore);`
 
- O método `Show` tem várias sobrecargas. Você pode especificar uma instância de um repositório ou uma partição como o parâmetro.
+ O `Show` método tem várias sobrecargas. Você pode especificar uma instância de um repositório ou uma partição como o parâmetro.
 
- Como alternativa, você pode colocar a linha de código que exibe o Visualizador da loja em qualquer lugar no código em que o parâmetro que você passa para o método de `Show` está no escopo. Essa ação exibe o Visualizador da loja quando a linha de código é executada como um instantâneo do conteúdo do repositório.
+ Como alternativa, você pode colocar a linha de código que exibe o Visualizador da loja em qualquer lugar no código em que o parâmetro que você passa para o `Show` método está no escopo. Essa ação exibe o Visualizador da loja quando a linha de código é executada como um instantâneo do conteúdo do repositório.
 
 ### <a name="using-store-viewer"></a>Usando o Visualizador da loja
  Quando o Visualizador da loja é aberto, uma janela de Windows Forms do modelo é exibida, como mostra a ilustração a seguir.
 
- ![](../modeling/media/storeviewer2.png "storeviewer2")Visualizador da loja
+ ![](../modeling/media/storeviewer2.png "storeviewer2") Visualizador da loja
 
- O Visualizador da loja tem três painéis: o painel esquerdo, o painel superior direito e o painel inferior direito. O painel esquerdo é uma exibição de árvore dos tipos no membro de `DomainDataDirectory` de uma loja. Se você expandir o nó de partição e clicar em um elemento, as propriedades do elemento aparecerão no painel superior direito. Se o elemento estiver vinculado a outros elementos, os elementos adicionais aparecerão no painel inferior direito. Se você clicar duas vezes em um elemento no painel inferior direito, o elemento será realçado no painel esquerdo.
+ O Visualizador da loja tem três painéis: o painel esquerdo, o painel superior direito e o painel inferior direito. O painel esquerdo é uma exibição de árvore dos tipos no `DomainDataDirectory` membro de uma loja. Se você expandir o nó de partição e clicar em um elemento, as propriedades do elemento aparecerão no painel superior direito. Se o elemento estiver vinculado a outros elementos, os elementos adicionais aparecerão no painel inferior direito. Se você clicar duas vezes em um elemento no painel inferior direito, o elemento será realçado no painel esquerdo.
 
-## <a name="see-also"></a>Consulte também
- [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
+## <a name="see-also"></a>Consulte Também
+ [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)

@@ -1,5 +1,5 @@
 ---
-title: campo m_stateObject | Microsoft Docs
+title: Campo de m_stateObject | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738379"
 ---
-# <a name="m_stateobject-field"></a>m_stateObject campo
-Um objeto que representa dados que a ação usará.
+# <a name="m_stateobject-field"></a>campo de m_stateObject
+Um objeto que representa os dados que serão usados pela ação.
 
- **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montagem:** mscorlib (in *mscorlib.dll*)
+ **Assembly:** mscorlib (no *mscorlib.dll*)
 
- Como você não pode acessar este membro interno do .NET Framework, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +33,7 @@ Um objeto que representa dados que a ação usará.
 ```
 
 ## <a name="remarks"></a>Comentários
- Este é `state` o parâmetro <xref:System.Threading.Tasks.Task.%23ctor%2A> na construtora. É também o campo <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> de apoio para a propriedade.
+ Esse é o `state` parâmetro no <xref:System.Threading.Tasks.Task.%23ctor%2A> Construtor. Também é o campo de apoio para a <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> propriedade.
 
 ## <a name="see-also"></a>Confira também
 - [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

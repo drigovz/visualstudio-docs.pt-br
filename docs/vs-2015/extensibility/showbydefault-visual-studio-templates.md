@@ -14,22 +14,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 98779743f1e7c68f579334d74d3651357c6ee0b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184122"
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se `false`, especifica que o modelo só será exibido em especificado [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).  
+Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ShowByDefault >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ShowByDefault>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ShowByDefault> true/false </ShowByDefault>  
@@ -39,27 +39,27 @@ Se `false`, especifica que o modelo só será exibido em especificado [TemplateG
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`. Se for true, especifica que o modelo será exibido para todos os tipos de projeto. Se false, o modelo será exibido apenas sob especificado `TemplateGroupID`.  
+ O texto deve ser `true` ou `false` . Se for true, especifica que o modelo será exibido para todos os tipos de projeto. Se for false, o modelo só será exibido sob o especificado `TemplateGroupID` .  
   
 ## <a name="remarks"></a>Comentários  
  `ShowByDefault` é um elemento opcional. O valor padrão é `true`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,7 +86,7 @@ Se `false`, especifica que o modelo só será exibido em especificado [TemplateG
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Elemento TemplateGroupID (Modelos do Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md)

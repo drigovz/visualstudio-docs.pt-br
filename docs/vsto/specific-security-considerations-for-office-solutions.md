@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 571b604b87fb7fac4e78c83a791c265d910fae94
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985590"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações de segurança específicas para soluções do Office
@@ -48,7 +48,7 @@ ms.locfileid: "72985590"
 - Pode ser uma boa ideia exibir um aviso quando o documento for aberto se seu aplicativo executar qualquer ação privilegiada. Por exemplo, você pode criar uma tela inicial ou uma caixa de diálogo de inicialização informando que o aplicativo acessará informações pessoais e fazer com que o usuário escolha continuar ou cancelar. Se um usuário final receber tal aviso de um documento aparentemente inocente, ele poderá sair do aplicativo antes que qualquer coisa seja comprometida.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>O código está bloqueado pelo Object Model Guard do Outlook
- Microsoft Office pode restringir o uso do código de determinadas propriedades, métodos e objetos no modelo de objeto. Ao restringir o acesso a esses objetos, o Outlook ajuda a impedir que worms de email e vírus usem o modelo de objeto para fins mal-intencionados. Esse recurso de segurança é conhecido como o Object Model Guard do Outlook. Se um suplemento do VSTO tentar usar uma propriedade ou método restrito enquanto o Object Model Guard estiver habilitado, o Outlook exibirá um aviso de segurança que permite ao usuário parar a operação ou permitirá que o usuário conceda acesso à propriedade ou ao método por um período limitado de t IMEs. Se o usuário parar a operação, os suplementos do VSTO do Outlook criados usando as soluções do Office no Visual Studio lançarão um <xref:System.Runtime.InteropServices.COMException>.
+ Microsoft Office pode restringir o uso do código de determinadas propriedades, métodos e objetos no modelo de objeto. Ao restringir o acesso a esses objetos, o Outlook ajuda a impedir que worms de email e vírus usem o modelo de objeto para fins mal-intencionados. Esse recurso de segurança é conhecido como o Object Model Guard do Outlook. Se um suplemento do VSTO tentar usar uma propriedade ou método restrito enquanto o Object Model Guard estiver habilitado, o Outlook exibirá um aviso de segurança que permite ao usuário parar a operação ou permitirá que o usuário conceda acesso à propriedade ou ao método por um período de tempo limitado. Se o usuário parar a operação, os suplementos do VSTO do Outlook criados usando as soluções do Office no Visual Studio lançarão um <xref:System.Runtime.InteropServices.COMException> .
 
  O Object Model Guard pode afetar os suplementos do VSTO de diferentes maneiras, dependendo se o Outlook é usado com o Microsoft Exchange Server:
 
@@ -59,27 +59,27 @@ ms.locfileid: "72985590"
   A partir do Outlook 2007, o comportamento do Object Model Guard foi alterado para melhorar a experiência do desenvolvedor e do usuário, ajudando a manter o Outlook seguro. Para obter mais informações, consulte [alterações de segurança de código no Outlook 2007](/previous-versions/office/developer/office-2007/bb226709(v=office.12)).
 
 ### <a name="minimize-object-model-guard-warnings"></a>Minimizar avisos do Object Model Guard
- Para ajudar a evitar avisos de segurança ao usar propriedades e métodos restritos, certifique-se de que seu suplemento do VSTO obtenha objetos do Outlook do campo `Application` da classe `ThisAddIn` em seu projeto. Para obter mais informações sobre esse campo, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
+ Para ajudar a evitar avisos de segurança ao usar propriedades e métodos restritos, certifique-se de que seu suplemento do VSTO obtenha objetos do Outlook do `Application` campo da `ThisAddIn` classe em seu projeto. Para obter mais informações sobre esse campo, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
 
- Somente objetos do Outlook obtidos desse objeto podem ser confiáveis pelo Object Model Guard. Por outro lado, os objetos que são obtidos de um novo objeto de `Microsoft.Office.Interop.Outlook.Application` não são confiáveis, e as propriedades e os métodos restritos gerarão avisos de segurança se o Object Model Guard estiver habilitado.
+ Somente objetos do Outlook obtidos desse objeto podem ser confiáveis pelo Object Model Guard. Por outro lado, os objetos que são obtidos de um novo `Microsoft.Office.Interop.Outlook.Application` objeto não são confiáveis, e as propriedades e os métodos restritos gerarão avisos de segurança se o Object Model Guard estiver habilitado.
 
- O exemplo de código a seguir exibirá um aviso de segurança se o Object Model Guard estiver habilitado. A propriedade `To` da classe `Microsoft.Office.Interop.Outlook.MailItem` é restrita pelo Object Model Guard. O objeto `Microsoft.Office.Interop.Outlook.MailItem` não é confiável porque o código o obtém de uma `Microsoft.Office.Interop.Outlook.Application` que é criada usando o operador **New** , em vez de obtê-lo do campo `Application`.
+ O exemplo de código a seguir exibirá um aviso de segurança se o Object Model Guard estiver habilitado. A `To` propriedade da `Microsoft.Office.Interop.Outlook.MailItem` classe é restrita pelo Object Model Guard. O `Microsoft.Office.Interop.Outlook.MailItem` objeto não é confiável porque o código o obtém de um `Microsoft.Office.Interop.Outlook.Application` que é criado usando o **novo** operador, em vez de obtê-lo do `Application` campo.
 
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
 
- O exemplo de código a seguir demonstra como usar a propriedade Restricted to de um objeto `Microsoft.Office.Interop.Outlook.MailItem` que é confiável pelo Object Model Guard. O código usa o campo de `Application` confiável para obter o `Microsoft.Office.Interop.Outlook.MailItem`.
+ O exemplo de código a seguir demonstra como usar a propriedade Restricted to de um `Microsoft.Office.Interop.Outlook.MailItem` objeto que é confiável pelo Object Model Guard. O código usa o `Application` campo confiável para obter o `Microsoft.Office.Interop.Outlook.MailItem` .
 
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
-> Se o Outlook for usado com o Exchange, a obtenção de todos os objetos do Outlook do `ThisAddIn.Application` não garante que o suplemento do VSTO poderá acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange definir o Outlook para negar automaticamente todas as tentativas de acesso a informações de endereço usando o modelo de objeto do Outlook, o Outlook não permitirá que o exemplo de código anterior acesse a propriedade to, mesmo que o exemplo de código use o campo de `ThisAddIn.Application` confiável.
+> Se o Outlook for usado com o Exchange, a obtenção de todos os objetos do Outlook do `ThisAddIn.Application` não garante que o suplemento do VSTO poderá acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange definir o Outlook para negar automaticamente todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, o Outlook não permitirá que o exemplo de código anterior acesse a propriedade to, mesmo que o exemplo de código use o `ThisAddIn.Application` campo confiável.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Especificar quais suplementos confiar ao usar o Exchange
  Quando o Outlook é usado com o Exchange, os administradores podem especificar que determinados suplementos do VSTO possam ser executados sem encontrar o Object Model Guard. Os suplementos do VSTO do Outlook criados usando as soluções do Office no Visual Studio não podem ser confiáveis individualmente; Eles só podem ser confiáveis como um grupo.
 
- O Outlook confia em um suplemento do VSTO com base em um código hash da DLL do ponto de entrada do suplemento do VSTO. Todos os suplementos do VSTO do Outlook que se destinam ao [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usam a mesma DLL de ponto de entrada (*VSTOLoader. dll*). Isso significa que, se um administrador confiar em qualquer suplemento do VSTO que direcione a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para ser executado sem encontrar o Object Model Guard, todos os outros suplementos do VSTO que se destinam ao [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] também são confiáveis. Para obter mais informações sobre como confiar em suplementos específicos do VSTO para execução sem encontrar o Object Model Guard, consulte [especificar o método que o Outlook usa para gerenciar os recursos de prevenção de vírus](/previous-versions/office/office-2007-resource-kit/cc179194(v=office.12)).
+ O Outlook confia em um suplemento do VSTO com base em um código hash da DLL do ponto de entrada do suplemento do VSTO. Todos os suplementos do VSTO do Outlook que visam [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usar a mesma DLL de ponto de entrada (*VSTOLoader.dll*). Isso significa que, se um administrador confiar em qualquer suplemento do VSTO que tenha como alvo o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a ser executado sem encontrar o Object Model Guard, todos os outros suplementos do VSTO destinados ao [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] também serão confiáveis. Para obter mais informações sobre como confiar em suplementos específicos do VSTO para execução sem encontrar o Object Model Guard, consulte [especificar o método que o Outlook usa para gerenciar os recursos de prevenção de vírus](/previous-versions/office/office-2007-resource-kit/cc179194(v=office.12)).
 
 ## <a name="permission-changes-do-not-take-effect-immediately"></a>As alterações de permissão não entram em vigor imediatamente
  Se o administrador ajustar as permissões para um documento ou assembly, os usuários deverão encerrar e reiniciar todos os aplicativos do Office para que essas alterações sejam impostas.
@@ -99,9 +99,9 @@ ms.locfileid: "72985590"
 
 - Componentes de dados em tempo real gerenciados e não gerenciados.
 
-  Os procedimentos a seguir descrevem como os usuários podem usar a **central de confiabilidade** para restringir o carregamento dos suplementos do VSTO no Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Microsoft Office 2010. Esses procedimentos não afetam os suplementos do VSTO ou as personalizações criadas usando as ferramentas de desenvolvimento do Office no Visual Studio.
+  Os procedimentos a seguir descrevem como os usuários podem usar a **central de confiabilidade** para restringir o carregamento dos suplementos do VSTO na Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e Microsoft Office 2010. Esses procedimentos não afetam os suplementos do VSTO ou as personalizações criadas usando as ferramentas de desenvolvimento do Office no Visual Studio.
 
-#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice_15_shortvstoincludesoffice-15-short-mdmd-applications"></a>Para desabilitar os suplementos do VSTO nos aplicativos Microsoft Office 2010 e Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]
+#### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-office_15_short-applications"></a>Para desabilitar os suplementos do VSTO no Microsoft Office 2010 e nos [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos da Microsoft
 
 1. Escolha a guia **arquivo** .
 
@@ -115,5 +115,5 @@ ms.locfileid: "72985590"
 
 6. No painel de detalhes, selecione **exigir que os suplementos de aplicativo sejam assinados por um fornecedor confiável** ou **desabilite todos os suplementos de aplicativo**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Proteger soluções do Office](../vsto/securing-office-solutions.md)

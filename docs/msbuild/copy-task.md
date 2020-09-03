@@ -22,23 +22,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634364"
 ---
 # <a name="copy-task"></a>tarefa Copy
 
 Copia os arquivos para um novo local no sistema de arquivos.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `Copy`.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|`CopiedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os itens que foram copiados com sucesso, *incluindo* aqueles que não foram realmente copiados, mas foram ignorados porque já estavam atualizados e `SkipUnchangedFiles` foram `true`.|
+|`CopiedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os itens que foram copiados com êxito, *incluindo* aqueles que não foram realmente copiados, mas foram ignorados porque já estavam atualizados e foram `SkipUnchangedFiles` `true` .|
 |`DestinationFiles`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica a lista de arquivos para a qual os arquivos de origem serão copiados. Essa lista deve ser um mapeamento um-para-um com a lista especificada no parâmetro `SourceFiles`. Ou seja, o primeiro arquivo especificado em `SourceFiles` será copiado para o primeiro local especificado em `DestinationFiles` e assim por diante.|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o diretório para o qual você deseja copiar os arquivos. Isso deve ser um diretório, não um arquivo. Se o diretório não existir, ele será criado automaticamente.|
 |`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Substitua arquivos mesmo se eles estiverem marcados como arquivos somente leitura|
@@ -76,7 +76,7 @@ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <x
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir copia `MySourceFiles` os itens da coleção de itens na pasta *c:\MyProject\Destination*.
+O exemplo a seguir copia os itens na `MySourceFiles` coleção de itens para a pasta *c:\MyProject\Destination*.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -97,7 +97,7 @@ O exemplo a seguir copia `MySourceFiles` os itens da coleção de itens na pasta
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir demonstra como fazer uma cópia recursiva. Este projeto copia todos os arquivos recursivamente de *c:\MySourceTree* em *c:\MyDestinationTree*, mantendo a estrutura do diretório.
+O exemplo a seguir demonstra como fazer uma cópia recursiva. Este projeto copia todos os arquivos recursivamente de *c:\MySourceTree* para *c:\MyDestinationTree*, mantendo a estrutura de diretórios.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

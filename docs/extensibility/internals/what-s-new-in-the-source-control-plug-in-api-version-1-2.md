@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 913fec8b820b5f32f564c84aba52a78df82efac1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711749"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>O que&#39;s New na API de plug-in de controle do código-fonte versão 1,2
@@ -32,5 +32,5 @@ Esta seção destaca a funcionalidade de controle de código-fonte avançado na 
 
 - [Remoção de informações de controle do código-fonte do. Proj e. Os arquivos sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) explicam como a API de plug-in de controle do código-fonte versão 1,2 armazena informações sobre projetos e soluções.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

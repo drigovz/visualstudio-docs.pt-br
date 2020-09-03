@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184097"
 ---
 # <a name="comparing-properties-and-items"></a>Comparando propriedades e itens
@@ -23,7 +23,7 @@ ms.locfileid: "68184097"
 
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.  
   
-- Propriedades são pares nome-valor. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).  
+- Propriedades são pares nome-valor. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).  
   
 - Itens são objetos que normalmente representam arquivos. Objetos de item podem ter coleções de metadados associadas. Metadados são pares nome-valor. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
@@ -56,7 +56,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
   
  adiciona o destino CustomBuild à lista de destinos, dando a `BuildDependsOn` o valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para obter mais informações, consulte [Target Build Order (Ordem de build de destino)](../msbuild/target-build-order.md).  
+ A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para obter mais informações, consulte [ordem de compilação de destino](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversões entre cadeias de caracteres e listas de itens  
  O MSBuild executa conversões em e de tipos de item e valores de cadeias de caracteres conforme necessário. Para ver como uma lista de itens pode se tornar um valor de cadeia de caracteres, considere o que acontece quando um tipo de item é usado como o valor de uma propriedade do MSBuild:  
@@ -181,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

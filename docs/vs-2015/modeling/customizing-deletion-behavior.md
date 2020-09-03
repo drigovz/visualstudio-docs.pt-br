@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d0dcfc5724e87d57d2803b9b64a6eb121314b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655042"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
@@ -29,7 +29,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 
 - [Comportamento de exclusão padrão](#default)
 
-- [Definindo a opção propagar exclusão de uma função](#property)
+- [Configurando a opção Propagar Exclusão de uma função](#property)
 
 - [Substituindo o fechamento de exclusão](#closure) – Use essa técnica em que a exclusão pode levar à exclusão de elementos vizinhos.
 
@@ -37,11 +37,11 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 
 - [Regras de exclusão](#rules) – use regras para propagar atualizações de qualquer tipo na loja, em que uma alteração pode levar a outras.
 
-- [Eventos de exclusão](#rules) – use os eventos de armazenamento para propagar atualizações fora da loja, por exemplo, para outros documentos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [Eventos de exclusão](#rules) – use os eventos de armazenamento para propagar atualizações fora da loja, por exemplo, para outros [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] documentos.
 
 - Cancelar [mesclagem](#unmerge) – use a operação de desmesclagem para desfazer a operação de mesclagem que anexou um elemento filho ao seu pai.
 
-## <a name="default"></a>Comportamento de exclusão padrão
+## <a name="default-deletion-behavior"></a><a name="default"></a> Comportamento de exclusão padrão
  Por padrão, as seguintes regras regem a propagação da exclusão:
 
 - Se um elemento for excluído, todos os elementos incorporados também serão excluídos. Os elementos incorporados são os elementos de destino das relações de incorporação para os quais este elemento é a fonte. Por exemplo, se houver uma relação incorporada do **álbum** para a **música**, quando um determinado álbum for excluído, todas as suas músicas também serão excluídas.
@@ -54,7 +54,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 
 - Todo relacionamento conectado ao elemento, seja na origem ou no destino, é excluído. A propriedade de função do elemento na função oposta passa a não conter o elemento excluído.
 
-## <a name="property"></a>Definindo a opção propagar exclusão de uma função
+## <a name="setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a> Definindo a opção propagar exclusão de uma função
  Você pode fazer com que a exclusão se propague ao longo da relação de referência ou de um filho incorporado ao seu pai.
 
 #### <a name="to-set-delete-propagation"></a>Para configurar a propagação de exclusão
@@ -79,7 +79,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
 > [!NOTE]
 > Para adicionar o código de programa à sua definição de DSL, crie um arquivo de código separado no projeto de **DSL** e grave definições parciais para aumentar as classes na pasta de código gerada. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-## <a name="closure"></a>Definindo um fechamento de exclusão
+## <a name="defining-a-delete-closure"></a><a name="closure"></a> Definindo um fechamento de exclusão
  A operação de exclusão usa a classe _YourModel_**DeleteClosure** para determinar quais elementos excluir, devido a uma seleção inicial. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um vínculo e o elemento de uma das funções do vínculo. Ele deve retornar um dos seguintes valores:
 
 - **VisitorFilterResult. Yes**– o elemento deve ser excluído e o Walker deve continuar a experimentar os outros links do elemento.
@@ -132,7 +132,7 @@ partial class MusicLibDeleteClosure
 
  No entanto, a técnica supõe que a exclusão afete apenas seus vizinhos no gráfico de relações: não é possível usar esse método para excluir um elemento em outra parte do modelo. Você não poderá usá-lo se quiser adicionar elementos ou fazer outras alterações em resposta a uma exclusão.
 
-## <a name="ondeleting"></a>Usando OnDelete e OnDeleted
+## <a name="using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a> Usando OnDelete e OnDeleted
  Você pode substituir `OnDeleting()` ou `OnDeleted()` em uma classe de domínio ou em uma relação de domínio.
 
 1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> é chamado quando um elemento está prestes a ser excluído, mas antes que suas relações sejam desconectadas. Ele ainda é navegável de outros elementos e ainda está em `store.ElementDirectory`.
@@ -141,7 +141,7 @@ partial class MusicLibDeleteClosure
 
     `IsDeleting` é verdadeiro.
 
-2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, as funções ainda fazem referência aos antigos participantes da função. `IsDeleted` é verdadeiro.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> é chamado quando o elemento foi excluído. Ele permanece no heap do CLR para que um Desfazer possa ser realizado, se necessário, mas é desvinculado de outros elementos e removido de `store.ElementDirectory`. Para relações, as funções ainda fazem referência aos antigos participantes da função.`IsDeleted` é verdadeiro.
 
 3. OnDeleting e OnDeleted são chamados quando o usuário invoca Desfazer depois de criar um elemento e quando uma exclusão anterior é repetida em Refazer. Use `this.Store.InUndoRedoOrRollback` para evitar atualizar elementos de repositório nesses casos. Para obter mais informações, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
@@ -199,7 +199,7 @@ partial class Artist
 
  Quando você executa <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> em um elemento, OnDeleting e OnDeleted são chamados. Esses métodos são realizados em linha, isto é, imediatamente antes e após a exclusão real. Se o seu código excluir dois ou mais elementos, OnDeleting e OnDeleted serão chamados em alternância em todos eles, um após o outro.
 
-## <a name="rules"></a>Eventos e regras de exclusão
+## <a name="deletion-rules-and-events"></a><a name="rules"></a> Eventos e regras de exclusão
  Como uma alternativa aos manipuladores OnDelete, você pode definir regras e eventos de exclusão.
 
 1. As regras de **exclusão** **e exclusão são** disparadas apenas em uma transação e não em um desfazer ou refazer. Você pode configurá-las para serem colocadas em fila para execução no final da transação em que a exclusão é realizada. As regras Deleting são sempre executadas antes de qualquer regra Deleted na fila.
@@ -289,12 +289,12 @@ partial class NestedShapesSampleDocData
 
 ```
 
-## <a name="unmerge"></a>Cancelar a mesclagem
+## <a name="unmerge"></a><a name="unmerge"></a> Cancelar a mesclagem
  A operação que anexa um elemento filho a seu pai é chamada de *mesclagem*. Ela ocorre quando um novo elemento ou grupo de elementos é criado a partir da caixa de ferramentas, ou transferida de outra parte do modelo, ou copiada da área de transferência. Além de criar uma relação de incorporação entre o pai e seu novo filho, a operação de mesclagem também pode definir relações adicionais, criar elementos auxiliares e definir valores de propriedades nos elementos. A operação de mesclagem é encapsulada em uma EMD (Diretiva de Mesclagem de Elementos).
 
- Um EMD também encapsula a operação de *desmesclagem* ou `MergeDisconnect` complementar. Se você tiver um conjunto de elementos que foi construído usando uma mesclagem, é recomendável usar a operação desfazer mesclagem associada para remover um elemento dele se quiser deixar os elementos restantes em um estado consistente. A operação desfazer mesclagem normalmente usa as técnicas descritas nas seções anteriores.
+ Um EMD também encapsula a operação ou *desmesclagem* complementar `MergeDisconnect` . Se você tiver um conjunto de elementos que foi construído usando uma mesclagem, é recomendável usar a operação desfazer mesclagem associada para remover um elemento dele se quiser deixar os elementos restantes em um estado consistente. A operação desfazer mesclagem normalmente usa as técnicas descritas nas seções anteriores.
 
  Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md) [Personalizando a criação do elemento e o movimento](../modeling/customizing-element-creation-and-movement.md) [de escrita de código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

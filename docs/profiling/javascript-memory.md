@@ -21,10 +21,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a9c7a4b58613c0c4bd94ea4f4ce6162f620553
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331266"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analisar o uso de memória do JavaScript em aplicativos UWP
@@ -167,7 +167,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 ## <a name="view-live-memory-usage-summary"></a>Exibir resumo do uso de memória em tempo real
  A exibição do resumo do uso de memória em tempo real fornece um gráfico de uso de memória para o aplicativo em execução e uma coleção de todos os quadros de resumo de instantâneos. Nesta exibição, você pode executar tarefas básicas como obter instantâneos, analisar informações resumidas e navegar para outros modos de exibição. Quando você parar a coleta de dados, o gráfico de memória desaparecerá e você verá apenas a exibição [Ver resumo de instantâneo](#view-a-snapshot-summary).
 
- O gráfico de memória mostra uma exibição em tempo real da memória do processo do aplicativo, que inclui bytes particulares, a memória nativa e o heap de JavaScript. O gráfico de memória é uma exibição rolável da memória do processo. Veja como ela se parece:
+ O gráfico de memória mostra uma exibição em tempo real da memória do processo do aplicativo, que inclui bytes particulares, a memória nativa e o heap de JavaScript. O gráfico de memória é uma exibição rolável da memória do processo. Esta é a aparência dele:
 
  ![Grafo de memória do analisador de memória JavaScript](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")
 
@@ -228,7 +228,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
 
 - **Identificador (es)**. Nome que melhor identifica o objeto. Por exemplo, para elementos HTML, os detalhes do instantâneo mostram o valor do atributo ID, se um for usado.
 
-- **Tipo**. Tipo de objeto (por exemplo, elemento de link HTML ou elemento div).
+- **Type**. Tipo de objeto (por exemplo, elemento de link HTML ou elemento div).
 
 - **Tamanho**. Tamanho do objeto, não incluindo o tamanho de nenhum objeto referenciado.
 

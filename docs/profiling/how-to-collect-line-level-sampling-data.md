@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 55afe3be6b01e382c82fb41b7a09fa5f84c92365
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330895"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível de linha
@@ -56,6 +56,6 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 
 - Ao iniciar um aplicativo, digite **VSPerfCmd/LineOff \<other arguments> **.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 - [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

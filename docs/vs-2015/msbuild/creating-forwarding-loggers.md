@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184028"
 ---
 # <a name="creating-forwarding-loggers"></a>Criando agentes de log de encaminhamento
@@ -39,9 +39,9 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
  Depois que o agente de encaminhamento tiver sido compilado em um assembly, você deve informar o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para usá-lo durante builds. Para fazer isso, use as opções `/FileLogger`, `/FileLoggerParameters` e `/DistributedFileLogger` junto com MSBuild.exe. A opção `/FileLogger` informa ao MSBuild.exe que o agente está diretamente anexado. A opção `/DistributedFileLogger` significa que há um arquivo de log por nó. Para definir parâmetros no agente de encaminhamento, use a opção `/FileLoggerParameters`. Para obter mais informações sobre essas e outras opções do MSBuild.exe, consulte [Referência de Linha de Comando](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Agentes com reconhecimento de multiprocessador  
- Quando você cria um projeto em um sistema com vários processadores, as mensagens de build de cada processador não são intercaladas automaticamente em uma sequência unificada. Em vez disso, você deve estabelecer uma prioridade de agrupamento de mensagens usando a classe <xref:Microsoft.Build.Framework.BuildEventContext> que está anexada a cada mensagem. Para obter mais informações sobre o build de vários processadores, consulte [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md).  
+ Quando você cria um projeto em um sistema com vários processadores, as mensagens de build de cada processador não são intercaladas automaticamente em uma sequência unificada. Em vez disso, você deve estabelecer uma prioridade de agrupamento de mensagens usando a classe <xref:Microsoft.Build.Framework.BuildEventContext> que está anexada a cada mensagem. Para obter mais informações sobre a criação de vários processadores, consulte [fazendo logon em um ambiente com vários processadores](../msbuild/logging-in-a-multi-processor-environment.md).  
   
-## <a name="see-also"></a>Veja também  
- [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Agentes de Log de Build](../msbuild/build-loggers.md)   
- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
+## <a name="see-also"></a>Consulte Também  
+ [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Compilar agentes](../msbuild/build-loggers.md)   
+ [Fazendo logon em um ambiente com vários processadores](../msbuild/logging-in-a-multi-processor-environment.md)

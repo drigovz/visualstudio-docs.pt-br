@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331075"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração
@@ -24,7 +24,7 @@ Você pode usar essas ferramentas nas seguintes configurações:
 |Tipo de aplicativo|Sistema operacional e ferramentas|
 |-----------------|--------------------------------|
 |Aplicativos Windows Presentation Foundation (4,0 e superior)|Windows 7 e posterior|
-|Aplicativos Universais do Windows|Windows 10 e posterior, com o [SDK do Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
+|Aplicativos universais do Windows|Windows 10 e posterior, com o [SDK do Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|
 
 ## <a name="look-at-elements-in-the-live-visual-tree"></a>Examinar elementos na árvore visual ao vivo
 
@@ -150,6 +150,6 @@ Você pode usar essas ferramentas XAML mesmo quando não tiver o código-fonte. 
 
 4. Na segunda instância do Visual Studio, abra a **árvore visual ao vivo** (**depuração > árvore visual do Windows > Live**). Você deve ver os elementos da interface do usuário do **TestXaml** , e você deve ser capaz de manipulá-los como fez ao depurar o aplicativo diretamente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](xaml-hot-reload.md)

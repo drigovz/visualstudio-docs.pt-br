@@ -1,5 +1,5 @@
 ---
-title: Lançamento de um Programa | Microsoft Docs
+title: Iniciando um programa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,47 +12,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738484"
 ---
-# <a name="launch-a-program"></a>Lançar um programa
-Os usuários que desejam depurar um programa podem pressionar **F5** para executar o depurador a partir do IDE. Isso começa uma série de eventos que resultam na conexão do IDE a um mecanismo de depuração (DE), que por sua vez está conectado, ou conectado, ao programa da seguinte forma:
+# <a name="launch-a-program"></a>Iniciar um programa
+Os usuários que desejam depurar um programa podem pressionar **F5** para executar o depurador do IDE. Isso inicia uma série de eventos que, por fim, resultam na conexão do IDE com um mecanismo DE depuração (DE), que, por sua vez, está conectado, ou anexado, ao programa da seguinte maneira:
 
-1. O IDE primeiro chama o pacote do projeto para obter as configurações ativas de depuração do projeto da solução. As configurações incluem o diretório inicial, as variáveis de ambiente, a porta em que o programa será executado e o DE para usar para criar o programa, se especificado. Essas configurações são passadas para o pacote de depuração.
+1. O IDE primeiro chama o pacote de projeto para obter as configurações de depuração de projeto ativo da solução. As configurações incluem o diretório inicial, as variáveis de ambiente, a porta na qual o programa será executado e o DE usar para criar o programa, se especificado. Essas configurações são passadas para o pacote de depuração.
 
-2. Se um DE for especificado, o DE chamará o sistema operacional para iniciar o programa. Como conseqüência do lançamento do programa, o ambiente de tempo de execução do programa carrega. Por exemplo, se um programa for escrito no MSIL, o tempo de execução do idioma comum será invocado para executar o programa.
+2. Se um DE for especificado, o DE chamará o sistema operacional para iniciar o programa. Como consequência de iniciar o programa, o ambiente de tempo de execução do programa é carregado. Por exemplo, se um programa for escrito em MSIL, o Common Language Runtime será invocado para executar o programa.
 
-    -ou-
+    - ou -
 
-    Se um DE não for especificado, a porta liga para o sistema operacional para iniciar o programa, o que faz com que o ambiente de tempo de execução do programa seja carregado.
-
-   > [!NOTE]
-   > Se um DE for usado para lançar um programa, é provável que o mesmo DE seja anexado ao programa.
-
-3. Dependendo se o DE ou a porta lançaram o programa, o DE ou o ambiente de tempo de execução criam uma descrição do programa, ou nó, e notificam a porta que o programa está executando.
+    Se um DE não for especificado, a porta chamará o sistema operacional para iniciar o programa, o que faz com que o ambiente de tempo de execução do programa seja carregado.
 
    > [!NOTE]
-   > Recomenda-se que o ambiente de tempo de execução crie o nó do programa, pois o nó do programa é uma representação leve de um programa que pode ser depurado. Não há necessidade de carregar um DE inteiro apenas para criar e registrar um nó de programa. Se o DE foi projetado para ser executado no processo do IDE, mas nenhum IDE está realmente em execução, precisa haver um componente que possa adicionar um nó de programa à porta.
+   > Se um DE for usado para iniciar um programa, é provável que o mesmo DE será anexado ao programa.
 
-   O programa recém-criado, juntamente com quaisquer outros programas, relacionados ou não relacionados, lançados ou anexados a partir do mesmo IDE, compõem uma sessão de depuração.
+3. Dependendo se a porta DE ou a que iniciou o programa, o DE ou o ambiente de tempo DE execução cria uma descrição do programa, ou nó, e notifica a porta que o programa está em execução.
 
-   Programáticamente, quando o usuário pressiona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]pela primeira vez **f5**, 's debug package chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> pacote de projeto (que <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> está associado ao tipo de programa que está sendo lançado) através do método, que por sua vez preenche uma estrutura com as configurações ativas de depuração do projeto da solução. Esta estrutura é passada de volta para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> pacote de depuração através de uma chamada para o método. O pacote de depuração instancia o Session Debug Manager (SDM), que inicia o programa sendo depurado e quaisquer mecanismos de depuração associados.
+   > [!NOTE]
+   > É recomendável que o ambiente de tempo de execução crie o nó do programa, pois o nó do programa é uma representação leve de um programa que pode ser depurado. Não há necessidade de carregar um inteiro DE apenas para criar e registrar um nó de programa. Se o DE for projetado para ser executado no processo do IDE, mas nenhum IDE estiver realmente em execução, precisará ser um componente que pode adicionar um nó de programa à porta.
 
-   Um dos argumentos passados para o SDM é o GUID do DE a ser usado para lançar o programa.
+   O programa recém-criado, junto com quaisquer outros programas, relacionados ou não relacionados, iniciados ou anexados a partir do mesmo IDE, compõem uma sessão de depuração.
 
-   Se o DE `GUID_NULL`GUID não for, o SDM co-cria o DE e, em seguida, chama seu método [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para iniciar o programa. Por exemplo, se um programa for `IDebugEngineLaunch2::LaunchSuspended` escrito `CreateProcess` em `ResumeThread` código nativo, provavelmente chamará e (funções Win32) para executar o programa.
+   Programaticamente, quando o usuário pressiona primeiro **F5**, o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pacote de depuração do chama o pacote do projeto (que está associado ao tipo de programa que está sendo iniciado) por meio do <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método, que, por sua vez, preenche uma <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> estrutura com as configurações de depuração de projeto ativo da solução. Essa estrutura é passada de volta para o pacote de depuração por meio de uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> método. Em seguida, o pacote de depuração instancia o SDM (Gerenciador de depuração de sessão), que inicia o programa que está sendo depurado e todos os mecanismos de depuração associados.
 
-   Como conseqüência do lançamento do programa, o ambiente de tempo de execução do programa é carregado. O DE ou o ambiente de tempo de execução criam uma interface [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) para descrever o programa e passam essa interface para [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) para notificar a porta que o programa está executando.
+   Um dos argumentos passados para o SDM é o GUID do DE a ser usado para iniciar o programa.
 
-   Se `GUID_NULL` for aprovada, a porta lança o programa. Uma vez que o programa está sendo `IDebugProgramNode2` executado, o ambiente de `IDebugPortNotify2::AddProgramNode`tempo de execução cria uma interface para descrever o programa e passa-o para . Isso notifica a porta que o programa está executando. Em seguida, o SDM anexa o mecanismo de depuração ao programa de execução.
+   Se o DE GUID não for `GUID_NULL` , o SDM cocriará o de e, em seguida, chamará seu método [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para iniciar o programa. Por exemplo, se um programa for escrito em código nativo, `IDebugEngineLaunch2::LaunchSuspended` provavelmente ele chamará `CreateProcess` e `ResumeThread` (funções do Win32) para executar o programa.
+
+   Como consequência de iniciar o programa, o ambiente de tempo de execução do programa é carregado. O ou o ambiente DE tempo DE execução cria uma interface [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) para descrever o programa e passa essa interface para [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) para notificar a porta que o programa está em execução.
+
+   Se `GUID_NULL` for passado, a porta iniciará o programa. Depois que o programa estiver em execução, o ambiente de tempo de execução criará uma `IDebugProgramNode2` interface para descrever o programa e passá-lo para `IDebugPortNotify2::AddProgramNode` . Isso notifica a porta de que o programa está em execução. Em seguida, o SDM anexa o mecanismo de depuração ao programa em execução.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Notificando a porta](../../extensibility/debugger/notifying-the-port.md) Explica o que acontece depois que um programa é lançado e a porta é notificada.
+ [Notificando a porta](../../extensibility/debugger/notifying-the-port.md) Explica o que acontece depois que um programa é iniciado e a porta é notificada.
 
- [Anexando após um lançamento](../../extensibility/debugger/attaching-after-a-launch.md) Documentos quando a sessão de depuração estiver pronta para anexar o DE ao programa.
+ [Anexando após uma inicialização](../../extensibility/debugger/attaching-after-a-launch.md) Documentos quando a sessão de depuração estiver pronta para anexar o DE ao programa.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) Contém links para várias tarefas de depuração, como o lançamento de um programa e a avaliação de expressões.
+ [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md) Contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.

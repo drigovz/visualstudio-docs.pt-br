@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
+title: 'IDebugReference2:: GetDerivedMostReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720620"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
@@ -39,15 +39,15 @@ int GetDerivedMostReference( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppDerivedMost`\
-[fora] Retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa a propriedade derivada.
+fora Retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa a propriedade mais derivada.
 
-## <a name="return-value"></a>Valor retornado
- Retorna sempre `E_NOTIMPL`.
+## <a name="return-value"></a>Valor Retornado
+ Sempre retorna `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, se esta propriedade descreve `ClassRoot` um objeto que implementa, `ClassDerived` mas que `ClassRoot`na verdade é uma instanciação disso é derivado, então esse método retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) representando uma referência ao `ClassDerived` objeto.
+ Por exemplo, se essa propriedade descrever um objeto que implementa, `ClassRoot` mas que, na verdade, é uma instanciação de `ClassDerived` que é derivada de `ClassRoot` , esse método retornará um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa uma referência ao `ClassDerived` objeto.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

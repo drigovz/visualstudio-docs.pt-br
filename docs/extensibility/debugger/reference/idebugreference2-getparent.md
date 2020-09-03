@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetParent | Microsoft Docs
+title: 'IDebugReference2:: GetParent | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720433"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
-Obtém a referência dos pais de uma referência. Reservado para uso futuro.
+Obtém a referência pai de uma referência. Reservado para uso futuro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int GetParent ( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppParent`\
-[fora] Retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa o pai desta propriedade.
+fora Retorna um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) que representa o pai desta propriedade.
 
-## <a name="return-value"></a>Valor retornado
- Retorna sempre `E_NOTIMPL`.
+## <a name="return-value"></a>Valor Retornado
+ Sempre retorna `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

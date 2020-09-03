@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7003f75b59773e8761095c15826bf5e6abcf23ff
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331044"
 ---
 # <a name="perftips"></a>PerfTips
@@ -54,6 +54,6 @@ O depurador do Visual Studio *PerfTips* e as **Ferramentas de Diagnóstico** int
 
 2. Marque ou desmarque **Habilitar ferramentas de diagnóstico durante a depuração**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b72f419331b2a02c55d885a2b8855070698879a
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78167605"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Erros da ferramenta FxCopCmd
@@ -27,7 +27,7 @@ A tabela a seguir descreve os códigos de erro retornados por FxCopCmd:
 |-----------|-------------------|
 |Nenhum erro|0x0|
 |Erro de análise|0x1|
-|Exceções de regra|0x2|
+|Exceções da regra|0x2|
 |Erro de carregamento do projeto|0x4|
 |Erro de carregamento do assembly|0x8|
 |Erro de carregamento da biblioteca de regras|0x10|
@@ -54,4 +54,4 @@ O **erro de análise** é retornado para erros fatais. Isso indica que a anális
 
 ## <a name="see-also"></a>Confira também
 
-- [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)
+- [Erros do aplicativo de análise do código](../code-quality/code-analysis-application-errors.md)

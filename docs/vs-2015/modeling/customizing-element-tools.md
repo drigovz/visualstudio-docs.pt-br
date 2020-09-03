@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655016"
 ---
 # <a name="customizing-element-tools"></a>Ferramentas de elemento personalizadas
@@ -24,7 +24,7 @@ Em algumas definições de DSL, você representa um único conceito como um grup
  Você também pode substituir o que acontece quando a ferramenta é arrastada para o diagrama ou para um elemento.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Personalizando o conteúdo de uma ferramenta de elemento
- Cada ferramenta de elemento armazena uma instância de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que contém uma versão serializada de um ou mais elementos e links de modelo. Por padrão, o EGP de uma ferramenta de elemento contém uma instância da classe que você especifica para a ferramenta. Você pode alterar isso substituindo *YourLanguage* `ToolboxHelper.CreateElementToolPrototype`. Esse método é chamado quando o pacote de DSL é carregado.
+ Cada ferramenta de elemento armazena uma instância de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), que contém uma versão serializada de um ou mais elementos e links de modelo. Por padrão, o EGP de uma ferramenta de elemento contém uma instância da classe que você especifica para a ferramenta. Você pode alterar isso substituindo *YourLanguage* `ToolboxHelper.CreateElementToolPrototype` . Esse método é chamado quando o pacote de DSL é carregado.
 
  Um parâmetro do método é a ID da classe que você especificou na definição de DSL. Quando o método é chamado com a classe em que você está interessado, você pode adicionar elementos extras ao EGP.
 
@@ -62,5 +62,5 @@ public partial class CircuitDiagramToolboxHelper
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844363"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
@@ -33,7 +33,7 @@ Com a Plataforma Universal do Windows e nosso único núcleo do Windows, é poss
 
  É apenas uma coleção de contratos e versões. Ela permite escolher o destino de execução do aplicativo. Você não tem mais como destino um sistema operacional. Agora você pode destinar seu aplicativo a uma ou mais famílias de dispositivos. Saiba mais detalhes neste [guia da plataforma](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>Requisitos do
+## <a name="requirements"></a>Requisitos
  As ferramentas de Desenvolvimento de Aplicativo Universal do Windows vêm com emuladores que podem ser usados para ver a aparência de seu aplicativo em diferentes dispositivos. Se você desejar usar esses emuladores, precisará instalar esse software em um computador físico. O computador físico deve executar o Windows 8.1 (x64) Professional Edition ou superior e ter um processador que dá suporte ao Cliente Hyper-V e à SLAT (Conversão de Endereços de Segundo Nível). Os emuladores não podem ser usados quando o Visual Studio está instalado em uma máquina virtual.
 
  Esta é a lista de software de que você precisa:
@@ -54,7 +54,7 @@ Com a Plataforma Universal do Windows e nosso único núcleo do Windows, é poss
 
   Você poderá usar o designer XAML apenas se sua plataforma de desenvolvimento for o Windows 10.
 
-## <a name="universal-windows-apps"></a>Aplicativos Universais do Windows
+## <a name="universal-windows-apps"></a>Aplicativos universais do Windows
  Escolha sua linguagem de desenvolvimento preferencial entre C#, Visual Basic, C++ ou JavaScript para [criar um aplicativo Universal do Windows para dispositivos Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Se preferir, assista a [este vídeo de introdução](https://channel9.msdn.com/Series/ConnectOn-Demand/229).
 
  Se você tiver aplicativos da Windows Store 8.1, aplicativos Windows Phone 8.1 ou aplicativos Universais do Windows criados com o Visual Studio 2015 RC, [porte esses aplicativos existentes](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) para que eles usem a última Plataforma Universal do Windows.

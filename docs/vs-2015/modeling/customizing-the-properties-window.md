@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f628cdecbebbb10b7bb2709a2022297e1171a427
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654941"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode personalizar a aparência e o comportamento da janela Propriedades em sua DSL (linguagem específica de domínio) no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Na definição de DSL, você define as propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, seja em um diagrama ou no Gerenciador de modelos, cada propriedade de domínio é listada na janela Propriedades. Isso permite que você veja e edite os valores das propriedades de domínio, mesmo que você não os tenha mapeado para campos de forma no diagrama.
+Você pode personalizar a aparência e o comportamento da janela Propriedades em sua DSL (linguagem específica de domínio) no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Na definição de DSL, você define as propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, seja em um diagrama ou no Gerenciador de modelos, cada propriedade de domínio é listada na janela Propriedades. Isso permite que você veja e edite os valores das propriedades de domínio, mesmo que você não os tenha mapeado para campos de forma no diagrama.
 
 ## <a name="names-descriptions-and-categories"></a>Nomes, descrições e categorias
  **Nome e nome para exibição**. Na definição de uma propriedade de domínio, o nome de exibição da propriedade é o nome que aparece em tempo de execução na janela Propriedades. Por outro lado, o nome é usado quando você escreve o código do programa para atualizar a propriedade. O nome deve ser um nome alfanumérico CLR correto, mas o nome de exibição pode conter espaços.
@@ -41,7 +41,7 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 
  Clique com o botão direito do mouse em uma classe Shape na definição de DSL, aponte para **Adicionar exposto**e escolha um recurso.
 
- Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor a **cor** `,` as propriedades**TextColor**, **DashStyle**e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
+ Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor as propriedades **Color** `,` **TextColor**, **DashStyle**e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
 
 ## <a name="forwarding-displaying-properties-of-related-elements"></a>Encaminhamento: exibindo Propriedades de elementos relacionados
  Quando o usuário de sua DSL seleciona um elemento em um modelo, as propriedades desse elemento são exibidas na janela Propriedades. No entanto, você também pode exibir as propriedades de elementos relacionados especificados. Isso será útil se você tiver definido um grupo de elementos que funciona em conjunto. Por exemplo, você pode definir um elemento principal e um elemento de plug-in opcional. Se o elemento principal for mapeado para uma forma e o outro não for, será útil ver todas as suas propriedades como se estivessem em um elemento.
@@ -51,7 +51,7 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 ### <a name="default-property-forwarding-cases"></a>Casos de encaminhamento de propriedades padrão
  Quando o usuário seleciona uma forma ou um conector, ou um elemento no Explorer, as seguintes propriedades são exibidas no janela Propriedades:
 
-- As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aquelas definidas em classes base. Uma exceção é que as propriedades de domínio para as quais você definiu **são navegáveis** para `False`.
+- As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aquelas definidas em classes base. Uma exceção é que as propriedades de domínio para as quais você definiu **são navegáveis** `False` .
 
 - Os nomes dos elementos que são vinculados por meio de relações que têm uma multiplicidade de 0.. 1. Isso fornece um método conveniente para ver elementos vinculados opcionalmente, mesmo que você não tenha definido um mapeamento de conector para a relação.
 
@@ -60,7 +60,7 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 - Propriedades de domínio que são definidas na forma ou no conector selecionado.
 
 ### <a name="adding-property-forwarding"></a>Adicionando encaminhamento de propriedade
- Para encaminhar uma propriedade, você define um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, poderá usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe como o valor de uma propriedade de domínio na segunda classe de domínio. Por exemplo, se você tiver uma relação entre uma classe de domínio de **livro** e uma classe de domínio de **autor** , poderá usar um descritor de tipo de domínio para fazer com que a propriedade **Name** do **autor** de um livro seja exibida na janela Propriedades quando o usuário seleciona o livro.
+ Para encaminhar uma propriedade, você define um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, poderá usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe como o valor de uma propriedade de domínio na segunda classe de domínio. Por exemplo, se você tiver uma relação entre uma classe de domínio de **livro** e uma classe de domínio de **autor** , poderá usar um descritor de tipo de domínio para fazer com que a propriedade **Name** do **autor** de um livro seja exibida na janela Propriedades quando o usuário selecionar o livro.
 
 > [!NOTE]
 > O encaminhamento de propriedade afeta somente a janela Propriedades quando o usuário está editando um modelo. Ele não define uma propriedade de domínio na classe de recebimento. Se você quiser acessar a propriedade de domínio encaminhada em outras partes da definição de DSL ou no código do programa, deverá acessar o elemento de encaminhamento.
@@ -69,7 +69,7 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Para encaminhar uma propriedade de outro elemento
 
-1. Crie uma solução de [!INCLUDE[dsl](../includes/dsl-md.md)] que contenha pelo menos duas classes, que neste exemplo são chamadas de **Book** e **Author**. Deve haver uma relação de qualquer tipo entre o **livro** e o **autor**.
+1. Crie uma [!INCLUDE[dsl](../includes/dsl-md.md)] solução que contenha pelo menos duas classes, que neste exemplo são chamadas de **Book** e **Author**. Deve haver uma relação de qualquer tipo entre o **livro** e o **autor**.
 
      A multiplicidade da função de origem (a função no lado do **livro** ) deve ser 0.. 1 ou 1.. 1, para que cada **livro** tenha um **autor**.
 
@@ -129,7 +129,7 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 
     No janela Propriedades, selecione o tipo externo na lista suspensa no campo **tipo** .
 
-   Nesse estágio, os usuários podem exibir os valores da propriedade, mas não podem editá-lo. Os valores exibidos são obtidos da função `ToString()`. Você pode escrever o código do programa que define o valor da propriedade, por exemplo, em um comando ou regra.
+   Nesse estágio, os usuários podem exibir os valores da propriedade, mas não podem editá-lo. Os valores exibidos são obtidos da `ToString()` função. Você pode escrever o código do programa que define o valor da propriedade, por exemplo, em um comando ou regra.
 
 ### <a name="setting-a-property-editor"></a>Configurando um editor de propriedades
  Adicione um atributo CLR à Propriedade Domain, no seguinte formato:
@@ -143,9 +143,9 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 
  Você pode definir o atributo em uma propriedade usando a entrada de **atributo personalizado** no janela Propriedades.
 
- O tipo de `AnEditor` deve ser derivado do tipo especificado no segundo parâmetro. O segundo parâmetro deve ser <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor>. Para obter mais informações, consulte <xref:System.ComponentModel.EditorAttribute>.
+ O tipo de `AnEditor` deve ser derivado do tipo especificado no segundo parâmetro. O segundo parâmetro deve ser <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Para obter mais informações, consulte <xref:System.ComponentModel.EditorAttribute>.
 
- Você pode especificar seu próprio editor ou um editor fornecido na [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], como <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor>. Por exemplo, use o procedimento a seguir para ter uma propriedade na qual o usuário possa inserir um nome de arquivo.
+ Você pode especificar seu próprio editor ou um editor fornecido no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , como <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor> . Por exemplo, use o procedimento a seguir para ter uma propriedade na qual o usuário possa inserir um nome de arquivo.
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Para definir uma propriedade de domínio de nome de arquivo
 
@@ -166,20 +166,20 @@ Você pode personalizar a aparência e o comportamento da janela Propriedades em
 
     1. Pressione CTRL + F5 ou F5. Na solução de depuração, abra um arquivo de teste. Crie um elemento da classe de domínio e selecione-o.
 
-    2. Na janela Propriedades, selecione a propriedade domínio. O campo valor mostra uma elipse **[...]** .
+    2. Na janela Propriedades, selecione a propriedade domínio. O campo valor mostra uma elipse **[...]**.
 
     3. Clique nas reticências. Uma caixa de diálogo de arquivo é exibida. Selecione um arquivo e feche a caixa de diálogo. O caminho do arquivo agora é o valor da Propriedade Domain.
 
 ### <a name="defining-your-own-property-editor"></a>Definindo seu próprio editor de propriedade
  Você pode definir seu próprio editor. Você faria isso para permitir que o usuário edite um tipo que você definiu ou para editar um tipo padrão de forma especial. Por exemplo, você pode permitir que o usuário insira uma cadeia de caracteres que representa uma fórmula.
 
- Você define um editor escrevendo uma classe que é derivada de <xref:System.Drawing.Design.UITypeEditor>. Sua classe deve substituir:
+ Você define um editor escrevendo uma classe que é derivada de <xref:System.Drawing.Design.UITypeEditor> . Sua classe deve substituir:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interagir com o usuário e atualizar o valor da propriedade.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar se o editor abrirá uma caixa de diálogo ou fornecerá um menu suspenso.
 
-  Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedades. Para fazer isso, substitua `GetPaintValueSupported` e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.
+  Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedades. Para fazer isso, substitua `GetPaintValueSupported` e `PaintValue` .  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Adicione o código em um arquivo de código separado no projeto **DSL** .
@@ -318,5 +318,5 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 
 ```
 
-## <a name="see-also"></a>Consulte também
- [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
+## <a name="see-also"></a>Consulte Também
+ [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)

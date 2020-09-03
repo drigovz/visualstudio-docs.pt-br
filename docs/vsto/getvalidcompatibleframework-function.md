@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2219417fe8ddae3d11d0e624ad12d3de80e290dd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520218"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Função GetValidCompatibleFramework
@@ -36,5 +36,5 @@ HRESULT WINAPI GetValidCompatibleFramework(
 |*lpwszCompatibleFrameworksXML*|Não use.|
 |*pbstrValidFrameworkTag*|Não use.|
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
  Se a função for realizada com sucesso, ela retornará **S_OK**. Se a função falhar, será exibido um código de erro.

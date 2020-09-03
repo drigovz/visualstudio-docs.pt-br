@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844281"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] simples que é hospedado em um aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e, em seguida, acessá-lo de um aplicativo Windows Forms.
+Este tutorial demonstra como criar um simples [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] que é hospedado em um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo Web e, em seguida, acessá-lo de um aplicativo Windows Forms.
 
  Neste passo a passo, você realizará as seguintes tarefas:
 
@@ -32,7 +32,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 - Criará um [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que representa a tabela Customers no banco de dados da Northwind.
 
-- Crie um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Criará um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Criará um aplicativo cliente e adicionará uma referência ao [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
@@ -40,8 +40,8 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 - Se desejar, adicionará recursos de filtragem ao aplicativo.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - O banco de dados de exemplo Northwind.
 
@@ -56,7 +56,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 #### <a name="to-create-the-web-project"></a>Para criar o projeto Web
 
-1. Na barra de menus, escolha **arquivo**, **novo**, **projeto**.
+1. Na barra de menus, escolha **arquivo**, **novo**,  **projeto**.
 
 2. Na caixa de diálogo **Novo Projeto**, expanda os nós **Visual Basic** ou **Visual C#** e **Web** e escolha o modelo **Aplicativo Web ASP .NET**.
 
@@ -72,7 +72,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 2. Na caixa de diálogo **Adicionar Novo Item**, escolha o nó **Dados** e, em seguida, o item **Modelo de Dados de Entidade ADO.NET**.
 
-3. Na caixa de texto **nome** , digite `NorthwindModel`e, em seguida, escolha o botão **Adicionar** .
+3. Na caixa de texto **nome** , digite `NorthwindModel` e, em seguida, escolha o botão **Adicionar** .
 
     O Assistente do Modelo de Dados de Entidade é aberto.
 
@@ -108,9 +108,9 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 2. Na caixa de diálogo **Adicionar Novo Item**, escolha o nó **Web** e, em seguida, o item **WCF Data Services 5.6**.
 
-3. Na caixa de texto **nome** , digite `NorthwindCustomers`e, em seguida, escolha o botão **Adicionar** .
+3. Na caixa de texto **nome** , digite `NorthwindCustomers` e, em seguida, escolha o botão **Adicionar** .
 
-    O arquivo NorthwindCustomers. svc aparece no **Editor de código**.
+    O arquivo NorthwindCustomers.svc aparece no **Editor de Códigos**.
 
 4. No **Editor de Códigos**, localize o primeiro comentário `TODO:` e substitua o código pelo seguinte:
 
@@ -131,7 +131,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
    > [!NOTE]
    > Em alguns casos, o Internet Explorer interpretará incorretamente os dados como um RSS feed. Você deve verificar se a opção para exibir RSS feeds está desabilitada. Para obter mais informações, consulte [Solucionando problemas de referências de serviço](../data-tools/troubleshooting-service-references.md).
 
-8. Fechar a janela do navegador.
+8. Feche a janela do navegador.
 
    Nas próximas etapas, você criará um aplicativo cliente do Windows Forms para consumir o serviço.
 
@@ -144,7 +144,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 1. Na barra de menus, escolha Arquivo, **Adicionar**, **novo projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda o **Visual Basic** ou o nó do **Visual C#**  e escolha o nó **Windows** e, em seguida, escolha **Windows Forms aplicativo**.
+2. Na caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** e escolha o nó **Windows** e, em seguida, escolha **Windows Forms aplicativo**.
 
 3. Na caixa de texto **Nome**, insira `NorthwindClient` e, em seguida, escolha o botão **OK**.
 
@@ -219,7 +219,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
    ```
 
-6. No **Gerenciador de soluções**, abra o menu de atalho do arquivo NorthwindCustomers. svc e escolha **Exibir no navegador**. O Internet Explorer é aberto e o esquema XML do serviço é exibido.
+6. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo NorthwindCustomers.svc e escolha **Exibir no Navegador**. O Internet Explorer é aberto e o esquema XML do serviço é exibido.
 
 7. Copie a URL da barra de endereços do Internet Explorer.
 
@@ -240,7 +240,7 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 2. Adicione um controle <xref:System.Windows.Forms.TextBox> e um controle <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** ao formulário.
 
-3. Abra o menu de atalho para o controle de <xref:System.Windows.Forms.Button> e escolha **Exibir código**e, em seguida, adicione o seguinte código ao manipulador de eventos `Button1_Click`:
+3. Abra o menu de atalho para o <xref:System.Windows.Forms.Button> controle e escolha **Exibir código**e, em seguida, adicione o seguinte código ao `Button1_Click` manipulador de eventos:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -275,5 +275,5 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 6. Na caixa de texto, insira **Londres** e escolha o botão. Somente os clientes de London são exibidos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Windows Communication Foundation serviços e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) [como: Adicionar, atualizar ou remover uma referência do WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

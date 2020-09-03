@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187154"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
@@ -37,7 +37,7 @@ Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma explor
 
  Para atenuar essa vulnerabilidade, esteja atento às interfaces expostas pelo visualizador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Arquitetura do visualizador](../debugger/visualizer-architecture.md)
 - [Como escrever um visualizador](create-custom-visualizers-of-data.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

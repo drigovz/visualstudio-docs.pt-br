@@ -12,13 +12,13 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
 ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88714414"
 ---
-# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensão de projetos Instalador do Visual Studio e .NET Core 3,1
+# <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensão de Projetos do Instalador do Visual Studio e .NET Core 3.1
 
 O empacotamento de aplicativos como um MSI geralmente é realizado usando a extensão de projetos Instalador do Visual Studio.
 
@@ -54,7 +54,7 @@ A opção **.NET Core Runtime...** deve ser selecionada para aplicativos de cons
 >[!NOTE]
 >Esses itens estão presentes a partir da versão do Visual Studio 2019 atualização 7.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Pré-requisitos](../ide/reference/prerequisites-dialog-box.md)
 - [Pré-requisitos de implantação de aplicativo](../deployment/application-deployment-prerequisites.md)
