@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551674"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemplos e orientações de desenvolvimento do Office
@@ -51,7 +51,7 @@ ms.locfileid: "69551674"
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primária do Office e o que há de novo no desenvolvimento do Office.|
+|[Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primária do Office e o que há de novo no desenvolvimento do Office.|
 |[Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica como as soluções de código gerenciado do Office funcionam a partir da perspectiva do desenvolvedor e do usuário final e inclui informações sobre como o código gerenciado funciona com documentos e aplicativos do Office.|
 |[Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)|Lista perguntas frequentes sobre programação com o desenvolvimento do Office no Visual Studio e fornece links para tópicos que podem ajudar a resolver problemas comuns.|
 |[Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)|Fornece links para informações sobre como criar Microsoft Office soluções e sobre a função de assemblies em sua solução.|

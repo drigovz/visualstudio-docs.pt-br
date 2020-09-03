@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551852"
 ---
 # <a name="build-office-solutions"></a>Criar soluções do Office
@@ -94,20 +94,20 @@ ms.locfileid: "69551852"
  Para projetos de nível de documento, você também deve adicionar o local totalmente qualificado do documento à lista de pastas confiáveis do Office. Para obter mais informações, consulte [Grant Trust to Documents](../vsto/granting-trust-to-documents.md).
 
 ## <a name="change-the-platform-target"></a>Alterar o destino da plataforma
- Por padrão, o destino da plataforma para projetos do Office é **qualquer CPU**. Normalmente, você não deve alterar essa configuração. As soluções do Office criadas com qualquer configuração de destino de plataforma de **CPU** são executadas nas versões de 32 bits e 64 bits [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] da [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]Microsoft ou do.
+ Por padrão, o destino da plataforma para projetos do Office é **qualquer CPU**. Normalmente, você não deve alterar essa configuração. As soluções do Office criadas com qualquer configuração de destino de plataforma de **CPU** são executadas nas versões de 32 bits e 64 bits da Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou do [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] .
 
- Você deve definir o destino da plataforma como x64 somente se estiver criando uma solução que será executada somente nas versões de 64 bits da Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]e sua solução chamará as APIs nativas de 64 bits. Para obter mais informações sobre como alterar a configuração de destino [de plataforma, consulte Como: Configure Projetos para plataformas](../ide/how-to-configure-projects-to-target-platforms.md)de destino.
+ Você deve definir o destino da plataforma como x64 somente se estiver criando uma solução que será executada somente nas versões de 64 bits da Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] e sua solução chamará as APIs nativas de 64 bits. Para obter mais informações sobre como alterar a configuração de destino de plataforma, consulte [como configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
  Se você definir o destino da plataforma como x64, a solução não será executada nas versões de 32 bits do Windows ou do Office. O destino da plataforma x64 requer que a solução seja executada em um processo de 64 bits.
 
 ## <a name="use-the-clean-command"></a>Usar o comando limpar
- Para remover os arquivos de projeto criados do computador de desenvolvimento, você pode usar o comando **limpar** no menu **Compilar** no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. O comando **limpar** exclui todos os arquivos no local de saída da compilação. Para projetos de nível de aplicativo, o comando **limpar** também remove as entradas do registro que são criadas pelo processo de compilação.
+ Para remover os arquivos de projeto criados do computador de desenvolvimento, você pode usar o comando **limpar** no menu **Compilar** no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . O comando **limpar** exclui todos os arquivos no local de saída da compilação. Para projetos de nível de aplicativo, o comando **limpar** também remove as entradas do registro que são criadas pelo processo de compilação.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
 |[Depurar projetos do Office](../vsto/debugging-office-projects.md)|Apresenta os problemas envolvidos na depuração de projetos do Office.|
-|[Passo a passo: Criar sua primeira personalização em nível de documento para o Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Demonstra como criar uma personalização básica no nível do documento para o Excel.|
-|[Como: Reabilitar um suplemento do VSTO que foi desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Descreve como reabilitar um suplemento do VSTO que tenha sido rígido ou desabilitado por software.|
+|[Walkthrough: criar sua primeira personalização em nível de documento para o Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Demonstra como criar uma personalização básica no nível do documento para o Excel.|
+|[Como: reabilitar um suplemento do VSTO que foi desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Descreve como reabilitar um suplemento do VSTO que tenha sido rígido ou desabilitado por software.|
 |[Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)|Fornece links para informações sobre como criar soluções do Office e sobre a função de assemblies em sua solução.|

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381906"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Como especificar um local alternativo para atualizações da implantação
@@ -60,7 +60,7 @@ Você pode instalar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
  Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que usam `<deploymentProvider>` devem declarar explicitamente as permissões de que precisam no manifesto do aplicativo, para que o aplicativo não receba diferentes níveis de confiança em computadores diferentes.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Passo a passo: Implantar um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

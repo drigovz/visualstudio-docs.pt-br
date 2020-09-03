@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 49abe3c0c78fd789b2108526f222c2fe544c73f3
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68192231"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315780"
 ---
-  **Aplica-se a:** As informações neste tópico se aplicam para adicionar o VSTO\-nos projetos do Word. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../../vsto/features-available-by-office-application-and-project-type.md).
+  **Aplica-se a:** As informações neste tópico se aplicam ao VSTO Add \- in Projects for Word. Para obter mais informações, consulte [recursos disponíveis por aplicativo do Office e tipo de projeto](../../vsto/features-available-by-office-application-and-project-type.md).

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107845"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
@@ -44,17 +44,17 @@ Saiba mais sobre as tecnologias compatíveis com o design acessível. Também in
 
 * **Diretrizes para design da interface do usuário do teclado** Este artigo técnico descreve como criar um aplicativo do Windows para o qual os usuários possam navegar do teclado. Para obter mais informações, confira [Guidelines for keyboard user interface design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Diretrizes para o design da interface do usuário do teclado).
 
-* **Acessibilidade do console** Este artigo técnico descreve as APIs e eventos usados para expor o console no Windows XP para auxílios de acessibilidade. Para obter mais informações, confira [Acessibilidade do console](/previous-versions/windows/desktop/dnacc/console-accessibility).
+* **Acessibilidade do console** Este artigo técnico descreve as APIs e os eventos usados para expor o console do no Windows XP para obter auxílios de acessibilidade. Para obter mais informações, confira [Acessibilidade do console](/previous-versions/windows/desktop/dnacc/console-accessibility).
 
 ## <a name="websites"></a>Sites
 
 - [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
-- **Criando páginas da Web acessíveis com DHTML** Este artigo técnico lista elementos HTML 4.0 que são acessíveis, bem como dicas acessíveis de design web. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
+- **Criando páginas da Web acessíveis com DHTML** Este artigo técnico lista os elementos HTML 4,0 que são acessíveis, bem como dicas de design da Web acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 
-- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/)informações, consulte .
+- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Confira também
 
