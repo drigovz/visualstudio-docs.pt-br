@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592419"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, janela Propriedades
@@ -28,7 +28,7 @@ A codificação de caractere para o arquivo. Alterar essa propriedade também al
 
 **Entrada**
 
-O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelos comandos **Start XSLT** , por exemplo, **XML** > **Iniciar XSLT sem depuração**. Um documento pode ser selecionado usando o botão procurar ( **...** ).
+O documento de entrada associado com a folha de estilos XSLT. Ele é usado pelos comandos **Start XSLT** , por exemplo, **XML**  >  **Start XSLT sem depuração**. Um documento pode ser selecionado usando o botão procurar (**...**).
 
 Essa propriedade só é visível quando um arquivo XSLT é aberto no editor.
 
@@ -36,7 +36,7 @@ Essa propriedade só é visível quando um arquivo XSLT é aberto no editor.
 
 O arquivo que é gerado para transformar um documento XML.
 
-Se um arquivo não for especificado, um nome de arquivo padrão será gerado com base no atributo `method` no elemento `xsl:output`, que determina a extensão do arquivo. O arquivo padrão é localizado no diretório temporário do usuário atual.
+Se um arquivo não for especificado, um nome de arquivo padrão será gerado com base no `method` atributo no `xsl:output` elemento, que determina a extensão do arquivo. O arquivo padrão é localizado no diretório temporário do usuário atual.
 
 **Esquemas**
 
@@ -50,6 +50,6 @@ O arquivo XSLT usado para transformar o documento quando os comandos **Iniciar D
 
 Ao editar um arquivo XSLT, essa propriedade pode ser usada para especificar que uma folha de estilos diferente deve ser usada quando o comando **Iniciar Depuração XSLT** ou **Iniciar XSLT sem depuração** está selecionado. Por exemplo, talvez você queira fazer isso quando estiver editando uma folha de estilos que está incluída em uma folha de estilos pai.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: Depurando erros e caixas de diálogo de aviso | Microsoft Docs
+title: Erros de depuração e caixas de diálogo de aviso | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65691192"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
@@ -35,9 +35,9 @@ ms.locfileid: "65691192"
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md)  
+ [Caixa de diálogo Falha de Asserção](../debugger/assertion-failed-dialog-box.md)  
   
- [Caixa de diálogo Não É Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)  
+ [Caixa de diálogo Não é Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)  
   
  [O depurador não pode exibir o código-fonte ou a desmontagem](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
   
@@ -45,7 +45,7 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
   
  [Caixa de diálogo Falha ao Aplicar Alterações de Código](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
- [Caixa de diálogo do Depurador do Microsoft Visual Studio (Exceção Lançada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
+ [Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
  [Caixa de diálogo Não Há Nenhum Código-Fonte Disponível para a Localização Atual](../debugger/no-source-available.md)  
   
@@ -57,10 +57,10 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
   
  [Não é possível se conectar ao computador](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [Erro: Não é possível depurar porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Erro: a depuração não é possível porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Depurando Script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Depurando script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [Erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   

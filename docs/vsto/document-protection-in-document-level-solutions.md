@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253802"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Proteção de documentos em soluções de nível de documento
@@ -33,7 +33,7 @@ ms.locfileid: "71253802"
  Quando a proteção de documentos está habilitada em um documento aberto no designer, todos os controles são removidos da **caixa de ferramentas** ou ficam indisponíveis, e você não pode arrastar nada da janela **fontes de dados** para o documento.
 
 ## <a name="serverdocument-and-protected-documents"></a>ServerDocument e documentos protegidos
- Se um documento estiver protegido, o cache de dados não poderá ser acessado de fora do documento. Você não pode usar <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> a classe para recuperar ou manipular dados armazenados em cache em um documento protegido ou usar outros métodos <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> da classe.
+ Se um documento estiver protegido, o cache de dados não poderá ser acessado de fora do documento. Você não pode usar a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe para recuperar ou manipular dados armazenados em cache em um documento protegido ou usar outros métodos da <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
 
 ## <a name="word-document-protection-in-the-designer"></a>Proteção de documentos do Word no designer
  Se você adicionar proteção a um documento ou modelo do Word enquanto ele estiver aberto no Visual Studio, não poderá iniciar a imposição da proteção no designer. O documento está no modo de design enquanto está aberto no Visual Studio e deve estar em modo de execução antes que você possa começar a impor a proteção.
@@ -47,15 +47,15 @@ ms.locfileid: "71253802"
 ## <a name="enforce-word-document-protection-on-build"></a>Impor proteção de documentos do Word na compilação
  O Visual Studio começa a impor a proteção para documentos e modelos do Word durante o processo de compilação, para que a proteção seja habilitada quando o documento for aberto para depuração. O documento está protegido com uma senha vazia.
 
- A proteção é habilitada durante a compilação, de forma que, se <xref:Microsoft.Office.Tools.Word.Document.Startup> houver código no evento de documento que possa causar exceções ou alterar o comportamento do aplicativo, esse código poderá ser depurado corretamente. Se você habilitar a proteção depois que o documento for aberto, o código de inicialização não poderá ser depurado ou testado.
+ A proteção é habilitada durante a compilação, de forma que, se houver código no evento de documento <xref:Microsoft.Office.Tools.Word.Document.Startup> que possa causar exceções ou alterar o comportamento do aplicativo, esse código poderá ser depurado corretamente. Se você habilitar a proteção depois que o documento for aberto, o código de inicialização não poderá ser depurado ou testado.
 
 ## <a name="setting-the-password"></a>Definindo a senha
  O Visual Studio habilita automaticamente a proteção, mas não fornece nenhuma senha por padrão. Se desejar que a proteção do documento tenha uma senha, você deverá adicioná-la antes de implantar sua solução. A adição de uma senha permite que os usuários autorizados removam a proteção do documento; sem uma senha, a proteção não pode ser facilmente removida. Para obter detalhes sobre como definir uma senha, consulte a ajuda no aplicativo específico do Office.
 
-## <a name="see-also"></a>Consulte também
-- [Como: Proteger documentos e partes de documentos programaticamente](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
+## <a name="see-also"></a>Confira também
+- [Como: proteger documentos e partes de documentos programaticamente](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Visão geral do gerenciamento de direitos de informação e extensões de código gerenciado](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Proteção por senha em documentos do Office](../vsto/password-protection-on-office-documents.md)
-- [Como: Permitir que o código execute por trás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Como: permitir que o código execute por trás de documentos com permissões restritas](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)

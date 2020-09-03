@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638765"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Treinar um modelo do TensorFlow na nuvem
@@ -52,7 +52,7 @@ Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) qu
 
    ![Abrir projeto](media/tensorflow-local/open-project.png)
 
-   ![Abrir a solução](media/tensorflow-local/open-solution.png)
+   ![Abrir solução](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Adicionar a VM remota do Azure
 
@@ -69,7 +69,7 @@ Na janela de envio:
 
 - Na lista **Cluster a ser usado**, selecione o computador remoto (com o prefixo "rm:") ao qual enviar o trabalho.
 
-- Digite um **nome de trabalho**.
+- Insira um **nome de trabalho**.
 
 - Clique em **Enviar**.
 

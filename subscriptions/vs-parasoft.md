@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Saiba como ativar a assinatura do Parasoft Virtualize/SOA Test Professional incluída em sua assinatura do Visual Studio.
 ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904391"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop em assinaturas do Visual Studio
@@ -47,7 +47,7 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 
 9. Escolha o idioma desejado e, em seguida, clique em **OK**.
 
-10. O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Próximo**.
+10. O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Avançar**.
     > [!div class="mx-imgBorder"]
     > ![Iniciar instalação do benefício Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
 

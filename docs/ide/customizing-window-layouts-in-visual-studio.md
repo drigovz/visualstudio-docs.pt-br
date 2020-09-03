@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 30a810f39c06958c79505773f052e96b982e5d5b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87546060"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
@@ -38,7 +38,7 @@ Também é possível dar um nome ao layout personalizado e salvá-lo e, em segui
 
 ## <a name="tool-and-document-windows"></a>Janelas de ferramentas e do documento
 
-O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem **Gerenciador de soluções**, **Gerenciador de servidores**, **janela de saída**, **lista de erros**, designers, janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas de documentos podem ser arrastadas pela guia. Clique com o botão direito do mouse na guia ou na barra de título para definir outras opções na janela.
+O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem **Gerenciador de soluções**, **Gerenciador de servidores**, **janela de saída**, **lista de erros**, designers, janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas de documentos podem ser arrastadas por sua guia. Clique com o botão direito do mouse na guia ou na barra de título para definir outras opções na janela.
 
 O menu **janela** mostra opções para encaixe, flutuação e ocultação de janelas no IDE. Clique com o botão direito do mouse na guia de janela ou na barra de título para ver outras opções para essa janela específica. É possível exibir mais de uma instância de determinadas janelas de ferramentas por vez. Por exemplo, é possível exibir mais de uma janela do navegador da Web e é possível criar outras instâncias de algumas janelas de ferramentas escolhendo **Nova Janela** no menu **Janela**.
 
@@ -46,7 +46,7 @@ O menu **janela** mostra opções para encaixe, flutuação e ocultação de jan
 
 Quando é necessário exibir ou editar dois locais ao mesmo tempo em um documento, é possível dividir as janelas. Para dividir seu documento em duas seções de rolagem independente, clique em **Dividir** no menu **Janela**. Clique em **Remover Divisão** no menu **Janela** para restaurar o modo de exibição único.
 
-### <a name="tabs"></a>Guias
+### <a name="tabs"></a>Tabulações
 
 Você pode usar guias para organizar o layout de várias maneiras diferentes. Por exemplo, você pode exibir uma visualização de um arquivo no editor sem abrir o arquivo, pode agrupar suas guias e muito mais.
 

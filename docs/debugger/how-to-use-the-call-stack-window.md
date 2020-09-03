@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348737"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
@@ -66,7 +66,7 @@ Código de não usuário é qualquer código que não seja mostrado quando [apen
 
 `[<External Code>]`
 
-## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Alternar para outro quadro de pilha (alterar o contexto do depurador)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Alternar para outro quadro de pilha (alterar o contexto do depurador)
 
 1. Na janela **pilha de chamadas** , clique com o botão direito do mouse no registro de ativação cujo código e dados você deseja exibir.
 
@@ -110,7 +110,7 @@ Em Visual Studio Enterprise (somente), você pode exibir mapas de código para a
 
 - Clique com o botão direito do mouse na janela **pilha de chamadas** e defina ou desmarque **Mostrar \<**_the information that you want_**> **.
 
-## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Carregar símbolos para um módulo (C#, C++, Visual Basic, F #)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Carregar símbolos para um módulo (C#, C++, Visual Basic, F #)
 
 Na janela **Pilha de Chamadas**, você pode carregar símbolos de depuração para o código que atualmente não tem símbolos carregados. Esses símbolos podem ser .NET ou símbolos do sistema baixados dos servidores de símbolos públicos da Microsoft ou símbolos em um caminho de símbolo no computador que você está depurando.
 
@@ -138,7 +138,7 @@ Consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify
 
 5. Selecione **OK** para fechar a caixa de diálogo **Opções** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Código misto e informações ausentes na janela pilha de chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

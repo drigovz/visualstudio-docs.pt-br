@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 318ab9263b530ac283d210f59aa8ca29733c6e8d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738063"
 ---
 # <a name="debugging-user-interface-reference"></a>Referência de interface do usuário de depuração
@@ -34,15 +34,15 @@ Você pode encontrar as seguintes caixas de diálogo ao depurar seu aplicativo.
 
 - [Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
 
-- [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)
+- [Depurando, Caixa de Diálogo Opções](../debugger/debugging-options-dialog-box.md)
 
 - [Caixa de diálogo Editar e Continuar](../debugger/edit-and-continue-dialog-box.md)
 
 - [Caixa de diálogo Parar Depuração em Andamento](../debugger/stop-debugging-in-progress-dialog-box.md)
 
-- [Caixas de diálogo Depurando Erros e Aviso](../debugger/debugging-errors-and-warning-dialog-boxes.md)
+- [Caixas de diálogo Depurando Erros e Avisos](../debugger/debugging-errors-and-warning-dialog-boxes.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Janela Comando](../ide/reference/command-window.md)
+- [Janela de comando](../ide/reference/command-window.md)

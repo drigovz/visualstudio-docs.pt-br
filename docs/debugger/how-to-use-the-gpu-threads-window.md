@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348711"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Como: usar a janela threads GPU (C++)
@@ -102,7 +102,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 
 - Escolha o botão de sinalizador na janela Threads da GPU.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como: usar a janela de inspeção paralela](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Walkthrough: Depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

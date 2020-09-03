@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697852"
 ---
 # <a name="crt-debug-library-use"></a>Uso da biblioteca de depuração CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para usar uma das bibliotecas de depuração do CRT, você deve vincular com [/Debug](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) e compile com **/MDd**, **/MTd**, ou **/LDd**.  
+A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para usar uma das bibliotecas de depuração do CRT, você deve vincular com [/debug](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) e compilar com **/MDD**, **/MTD**ou **/ldd**.  
   
 ## <a name="remarks"></a>Comentários  
  As definições e macros principais de depuração de CRT podem ser encontradas no arquivo de cabeçalho CRTDBG.h.  
@@ -51,6 +51,6 @@ A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para
   
  Para obter mais informações sobre as várias bibliotecas em tempo de execução que você pode usar, confira [Bibliotecas em tempo de execução C](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f).  
   
-## <a name="see-also"></a>Consulte também  
- [Técnicas de depuração do CRT](../debugger/crt-debugging-techniques.md)   
- [/MD, /MT, /LD (usar biblioteca de tempo de execução)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)
+## <a name="see-also"></a>Consulte Também  
+ [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)   
+ [/MD,/MT,/LD (use a biblioteca de tempo de execução)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

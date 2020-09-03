@@ -2,17 +2,17 @@
 title: O benefício Pluralsight nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 04/20/2020
+ms.date: 08/04/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: f06b2bb8d2151255cb606fd3dcb8344b1fb37411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
+ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "87375892"
+ms.locfileid: "89365856"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -23,35 +23,49 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
  Dependendo do tipo de assinatura que eles tiverem, nem todos os assinantes que tiverem usado anteriormente uma assinatura do Pluralsight fornecida por meio de uma assinatura do Visual Studio poderão resgatar novas ofertas de benefício do Pluralsight. Se você não estiver qualificado para resgatar os benefícios adicionais de treinamento do Pluralsight, você receberá uma notificação quando tentar ativar o benefício no site do Pluralsight.
 
 ## <a name="activation-steps"></a>Etapas de ativação
-1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **obter código** no bloco benefício do Pluralsight, localizado na seção desenvolvimento profissional.
+1. Para ativar sua assinatura, conecte-se ao [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Ativar** no bloco benefício do pluralsight.  Para restringir a lista de blocos exibidos, você pode escolher um filtro de grupo.  O Pluralsight está localizado no grupo de benefícios de desenvolvimento profissional.
    > [!div class="mx-imgBorder"]
-   > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-6month-tile.png)
-   >
-   > [!IMPORTANT]
-   > Quando você clica no link "Obter código" no bloco de benefício do Pluralsight, poderá receber a seguinte mensagem:
-   >
-   > **"Observação: se você tiver ativado anteriormente uma oferta diferente do Pluralsight por meio de sua assinatura do Visual Studio, talvez esse código não permita que você crie uma nova conta do Pluralsight."**
+   > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Clique em ativar para solicitar seu benefício")
 
-2. Você receberá uma notificação de que o código do cupom foi recuperado com êxito.  Clique em **Ativar**.
-
-3. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.
+1. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.
    - Forneça as informações de contato solicitadas no formulário
-   - Clique na caixa de seleção para aceitar os termos de uso e a política de privacidade
-   - Clique em **Concordo. Ativar o benefício**.
+   - Clique na caixa de seleção para aceitar os termos de uso
+   - Clique em **resgatar**.
    > [!div class="mx-imgBorder"]
-   > ![Ative seu benefício da Pluralsight](_img/vs-pluralsight/vs-pluralsight-create-account.png)
+   > ![Registro da Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Preencha o formulário de registro, clique na caixa de seleção para aceitar os termos e clique em resgatar")
 
-5. Pode levar um momento para configurar sua conta.  Quando terminar, você verá uma confirmação na página e receberá um email com suas informações de logon.  O email será enviado para o alias especificado quando você criou a conta.  Verifique suas pastas de lixo eletrônico ou de spam se você tiver dificuldade para encontrar a mensagem.
+   > [!NOTE]
+   > A página de registro expira após alguns minutos.  Se você não concluir o processo de registro antes que a página expire, retorne ao bloco do Pluralsight na <https://my.visualstudio.com/benefits> página e clique em **Ativar** novamente. 
+
+1. Pode levar um momento para configurar sua conta.  Depois que isso for concluído, você verá uma confirmação na página e receberá um email com suas informações de logon.  O email será enviado para o alias especificado quando você criou a conta.  Verifique suas pastas de lixo eletrônico ou de spam se você tiver dificuldade para encontrar a mensagem.
 
    > [!NOTE]
    > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
-   
 
-6. Depois que sua conta tiver sido criada com êxito, o email que você receber conterá seu nome de usuário e solicitará que você crie uma senha.  Forneça sua senha, insira-a novamente para confirmá-la e, em seguida, clique em **Fazer logon no Pluralsight**.
+1. Clique em **Definir senha**.
 
-7. Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
+1. Insira a senha desejada no campo **nova senha** , insira-a novamente no campo **Confirmar senha** e clique em **salvar**.
 
-8. Pronto!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+1. Pronto!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+
+## <a name="status-of-your-pluralsight-subscription"></a>Status da sua assinatura do pluralsight
+Depois de ativar o benefício da Pluralsight, a aparência do bloco no portal de assinaturas do Visual Studio será alterada para ajudá-lo a acompanhar o status da sua assinatura.  
+
+### <a name="while-your-subscription-is-active"></a>Enquanto sua assinatura está ativa
+Em vez do botão "ativar", agora você verá um pequeno botão circular que, se clicado, levará você diretamente ao portal da Pluralsight para que você possa entrar e continuar com seu treinamento.  
+
+No título da Pluralsight na parte superior do bloco, você verá o texto exibindo o tempo restante da sua assinatura do pluralsight.  Quando sua assinatura estiver dentro de 60 dias de expiração, o texto será alternado para exibir o número de dias restantes em vez de meses.  
+
+Na parte inferior do bloco, você verá o texto mostrando a data de ativação e a data de validade da sua assinatura do pluralsight.
+
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do Pluralsight após a ativação](_img/vs-pluralsight/vs-pluralsight-activated.png "Após a ativação, o bloco exibirá o número de dias restantes em sua assinatura, juntamente com a data de expiração e um link para o portal da Pluralsight.")
+
+### <a name="when-your-subscription-expires"></a>Quando sua assinatura expirar
+Quando a sua assinatura do Pluralsight expirar, o status será alterado para "0 dias restantes" e o link para o portal da Pluralsight será removido. Você ainda poderá ver a data em que ativou a assinatura, bem como a data de expiração.  
+   > [!div class="mx-imgBorder"]
+   > ![Bloco do Pluralsight após a expiração](_img/vs-pluralsight/vs-pluralsight-expired.png "Após a expiração, o link para o Pluralsight será removido e as datas em que a assinatura estava ativa aparecerão na parte inferior do bloco.")
+
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -83,6 +97,9 @@ R: Nem todas as assinaturas do Visual Studio Enterprise incluem os benefícios d
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: Tenho acesso a playlists ou canais de aprendizado personalizados?
 A: Sim. Como assinante do Visual Studio, você obtém acesso a funções em destaque, roteiros de aprendizado e canais personalizados (listas de reprodução) como parte do seu benefício de treinamento da Pluralsight. O conteúdo em destaque foi especialmente organizado pela Microsoft e Pluralsight e é voltado para o aprendizado em áreas-chave de interesse. Ative seu benefício da Pluralsight por meio de seu portal de assinatura do Visual Studio <https://my.visualstudio.com/benefits> para obter acesso a esse e a outros conteúdos no Home Page pluralsight.
+
+### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>P: o bloco Pluralsight não tem um link "ativar". Como posso ativar o benefício?
+R: se você já tiver ativado o benefício da Pluralsight, o link "ativar" será substituído por um link que o levará para a página de entrada do pluralsight.  Você também verá a data em que ativou o benefício, bem como informações sobre quanto tempo resta em sua assinatura.  Se você já usou uma assinatura, não poderá ativar outra.
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: O que acontece quando minha assinatura Pluralsight termina?
 R: ao final da sua assinatura gratuita do Pluralsight, você poderá optar por comprar uma assinatura diretamente do Pluralsight.  Entre em contato com [Pluralsight](https://www.pluralsight.com) para obter todos os detalhes.

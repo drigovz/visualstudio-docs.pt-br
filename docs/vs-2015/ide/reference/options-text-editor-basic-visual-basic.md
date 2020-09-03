@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1edb7ceae1ba187b01b92d64ca33d41d83364e72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662379"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opções, Editor de Texto, Básico (Visual Basic)
@@ -50,7 +50,7 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 
   **Habilitar modo de estrutura de tópicos** Ao abrir um arquivo no editor de código, você pode exibir o documento no modo de estrutura de tópicos. Consulte [Estrutura de Tópicos](../../ide/outlining.md) para obter mais informações. Quando essa opção é selecionada, o recurso de estrutura de tópicos é ativado quando você abre um arquivo.
 
-  **Inserção automática de membros de interface e MustOverride** Quando você confirma uma instrução `Implements` ou uma instrução `Inherits` para uma classe, o editor de texto insere protótipos para os membros que precisam ser implementados ou substituídos, respectivamente.
+  **Inserção automática de membros de interface e MustOverride** Quando você confirma uma `Implements` instrução ou uma `Inherits` instrução para uma classe, o editor de texto insere protótipos para os membros que precisam ser implementados ou substituídos, respectivamente.
 
   **Mostrar separadores de linha de procedimento** O editor de texto indica o escopo visual de procedimentos. Uma linha é desenhada nos arquivos de origem .vb do seu projeto nos locais listados na tabela a seguir:
 
@@ -62,7 +62,7 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 
  **Habilitar sugestões de correção de erro** O editor de texto pode sugerir soluções para erros comuns e permitir que você selecione a correção apropriada, que é então aplicada ao seu código.
 
- **Habilitar realce de referências e palavras-chave** O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula, como `If..Then`, `While...End While` ou `Try...Catch...Finally`. Você pode navegar entre referências realçadas ou palavras-chave pressionando CTRL+SHIFT+SETA PARA BAIXO ou CTRL+SHIFT+SETA PARA CIMA.
+ **Habilitar realce de referências e palavras-chave** O editor de texto pode realçar todas as instâncias de um símbolo ou todas as palavras-chave em uma cláusula, como, `If..Then` `While...End While` ou `Try...Catch...Finally` . Você pode navegar entre referências realçadas ou palavras-chave pressionando CTRL+SHIFT+SETA PARA BAIXO ou CTRL+SHIFT+SETA PARA CIMA.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  Opções [geral, ambiente, opções da caixa de diálogo](../../ide/reference/general-environment-options-dialog-box.md) [, editor de texto, todos os idiomas, guias](../../ide/reference/options-text-editor-all-languages-tabs.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Parar alterações de código | Microsoft Docs'
+title: 'Como: parar as alterações de código | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 739538d82a478f182c06de0e34b13f8a1bd2b2e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690055"
 ---
-# <a name="how-to-stop-code-changes"></a>Como: Parar alterações de código
+# <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.  
@@ -43,6 +43,6 @@ Quando Editar e Continuar estiver no processo de aplicar alterações de código
   
   Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Editar e continuar](../debugger/edit-and-continue.md)   
  [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348724"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
@@ -49,7 +49,7 @@ Você pode usar a ferramenta Finder na caixa de diálogo **localizar janela** pa
 
     Se você selecionou **Propriedades**, a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md) será aberta. Se você selecionou **mensagens**, uma janela [exibição de mensagens](../debugger/messages-view.md) será aberta.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

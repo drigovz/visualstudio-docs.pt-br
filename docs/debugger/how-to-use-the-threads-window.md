@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348646"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Walkthrough: Depurar um aplicativo multithread usando a janela threads (C#, Visual Basic, C++)
@@ -168,7 +168,7 @@ Além de **sinalizar**, **desmarcar**e remover **sinalizador de todos os threads
 - **Renomear**, que permite alterar o nome do thread.
 - [Congelar e descongelar](#bkmk_freeze) comandos.
 
-## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Congelar e descongelar a execução do thread
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Congelar e descongelar a execução do thread
 
 Você pode congelar e descongelar, ou suspender e retomar, threads para controlar a ordem na qual os threads executam o trabalho. Congelar e descongelar Threads pode ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
 
@@ -207,6 +207,6 @@ Com o marcador de thread no código-fonte, você pode alternar somente para thre
 
 Agora você aprendeu os conceitos básicos da depuração de aplicativos multissegmentados. Você pode observar, sinalizar e desmarcar e congelar e descongelar Threads usando a janela **threads** , a lista de **threads** na barra de ferramentas **local de depuração** ou marcadores de thread no editor de código-fonte.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos multissegmentados](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)

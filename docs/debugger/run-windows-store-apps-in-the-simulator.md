@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348135"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
@@ -101,7 +101,7 @@ O botão **girar emulação de toque** define o modo de interação com gestos d
 > [!NOTE]
 > Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [introdução à interface do usuário e design](/windows/uwp/layout/design-and-ui-intro). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.
 
-## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Capture uma captura de tela de seu aplicativo para envio para Microsoft Store
+## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Capture uma captura de tela de seu aplicativo para envio para Microsoft Store
  Ao enviar um aplicativo para Microsoft Store, você deve incluir capturas de tela do aplicativo.
 
 > [!NOTE]
@@ -159,6 +159,6 @@ Você pode navegar na barra de ferramentas do simulador pressionando **Ctrl + Al
 
 Você pode desligar o simulador pressionando **Ctrl + Alt + F4**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Executar aplicativos do Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

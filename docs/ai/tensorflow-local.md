@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638750"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Treinar um modelo do TensorFlow no local
@@ -50,7 +50,7 @@ Baixe este [Repositório GitHub](https://github.com/Microsoft/samples-for-ai) qu
 
    ![Abrir projeto](media/tensorflow-local/open-project.png)
 
-   ![Abrir a solução](media/tensorflow-local/open-solution.png)
+   ![Abrir solução](media/tensorflow-local/open-solution.png)
 
 - Localize o projeto MNIST no **Gerenciador de Soluções**, clique nele com o botão direito do mouse e selecione **Definir como Projeto de Inicialização**.
 

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738389"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Ferramentas para depurar threads e processos no Visual Studio
@@ -38,13 +38,13 @@ ms.locfileid: "72738389"
  O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece ferramentas avançadas e mas fáceis de usar para depurar threads e processos.
 
 ## <a name="tools-and-features"></a>Ferramentas e recursos
-As ferramentas que você precisa usar em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dependem do tipo de código que você está tentando depurar:
+As ferramentas que você precisa usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dependem do tipo de código que você está tentando depurar:
 
 - Para processos, as principais ferramentas são a caixa de diálogo **anexar ao processo** , a janela **processos** e a barra de ferramentas **local de depuração** .
 
 - Para threads, as principais ferramentas para depuração de threads são a janela **threads** , marcadores de thread em janelas de origem, janela **pilhas paralelas** , janela de **inspeção paralela** e a barra de ferramentas **local de depuração** .
 
-- Para o código que usa o <xref:System.Threading.Tasks.Task> na [TPL (biblioteca de tarefas paralelas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/) (código nativo), as principais ferramentas para depurar aplicativos multithread são a janela **pilhas paralelas** , a **inspeção paralela** janela e a janela **tarefas** (a janela **tarefas** também dá suporte ao objeto de Promise do JavaScript).
+- Para o código que usa <xref:System.Threading.Tasks.Task> o na [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), o [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/) (código nativo), as principais ferramentas de depuração de aplicativos multissegmentados são a janela **pilhas paralelas** , a janela de **inspeção paralela** e a janela **tarefas** (a janela **tarefas** também dá suporte ao objeto de Promise do JavaScript).
 
 - Para depurar threads na GPU, a principal ferramenta é o Windows **threads de GPU** .
 
@@ -54,7 +54,7 @@ As ferramentas que você precisa usar em [!INCLUDE[vsprvs](../code-quality/inclu
 |--------------------|---------------------------|-----------------------------|
 |Caixa de diálogo **Anexar ao Processo**|Processos disponíveis você pode anexar:<br /><br /> – Nome do Processo (.exe)<br />– Número de identificação do processo<br />– Título da barra de menus<br />– Tipo (v4.0 gerenciado; v2.0 gerenciado, v1.1, v1.0; x86; x64; IA64)<br />– Nome de usuário (nome de conta)<br />– Número da sessão|Selecione um processo anexar.<br /><br /> Selecione um computador remoto<br /><br /> Altere o tipo de transporte para se conectar a computadores remotos|
 |Janela **Processos**|Processos anexados:<br /><br /> – Nome do processo<br />– Número de identificação do processo<br />– Caminho para o .exe do processo<br />– Título da barra de menus<br />– Estado (interrupção. em execução)<br />– Depurando (nativo, gerenciado, etc.)<br />– Tipo de transporte (padrão, nativo sem autenticação)<br />– Qualificador de transporte (computador remoto)|Ferramentas:<br /><br /> – Anexar<br />– Desanexar<br />– Encerrar<br /><br /> O menu de atalho:<br /><br /> – Anexar<br />– Desanexar<br />– Desanexar quando a depuração for interrompida<br />– Encerrar|
-|Janela **Threads**|Threads durante o processo atual:<br /><br /> – ID de thread<br />– ID gerenciada<br />– Categoria (thread principal, thread de interface, manipulador de chamada de procedimento remoto ou thread de trabalho)<br />– Nome do thread<br />– Localização em que o thread é criado<br />– Prioridade<br />– Máscara de afinidade<br />– Contagem suspensa<br />– Nome do processo<br />– Indicador de Sinalização<br />– Indexador suspenso|Ferramentas:<br /><br /> – Pesquisar<br />– Pesquisar pilha de chamadas<br />– Sinalizar Apenas Meu Código<br />– Sinalizar seleção de módulo personalizada<br />– Agrupar por<br />– Colunas<br />– Expandir/recolher pilhas de chamadas<br />– Expandir/recolher grupos<br />– Congelar/descongelar threads<br /><br /> O menu de atalho:<br /><br /> – Mostrar threads na origem<br />– Alternar para um thread<br />– Congelar um thread em execução<br />– Descongelar um thread congelado<br />– Sinalizar um thread para estudos adicionais<br />– Remover a sinalização de um thread<br />– Renomear um thread<br />– Exibir e ocultar threads<br /><br /> Outras ações:<br /><br /> – Exibir a pilha de chamadas para um thread em um DataTip|
+|Janela **threads**|Threads durante o processo atual:<br /><br /> – ID de thread<br />– ID gerenciada<br />– Categoria (thread principal, thread de interface, manipulador de chamada de procedimento remoto ou thread de trabalho)<br />– Nome do thread<br />– Localização em que o thread é criado<br />– Prioridade<br />– Máscara de afinidade<br />– Contagem suspensa<br />– Nome do processo<br />– Indicador de Sinalização<br />– Indexador suspenso|Ferramentas:<br /><br /> – Pesquisar<br />– Pesquisar pilha de chamadas<br />– Sinalizar Apenas Meu Código<br />– Sinalizar seleção de módulo personalizada<br />– Agrupar por<br />– Colunas<br />– Expandir/recolher pilhas de chamadas<br />– Expandir/recolher grupos<br />– Congelar/descongelar threads<br /><br /> O menu de atalho:<br /><br /> – Mostrar threads na origem<br />– Alternar para um thread<br />– Congelar um thread em execução<br />– Descongelar um thread congelado<br />– Sinalizar um thread para estudos adicionais<br />– Remover a sinalização de um thread<br />– Renomear um thread<br />– Exibir e ocultar threads<br /><br /> Outras ações:<br /><br /> – Exibir a pilha de chamadas para um thread em um DataTip|
 |Janela de origem|Indexadores de threads na medianiz esquerda indicam um ou vários segmentos (desativado por padrão, ativado usando o menu de atalho na janela **Threads**)|O menu de atalho:<br /><br /> – Alternar para um thread<br />– Sinalizar um thread para estudos adicionais<br />– Remover a sinalização de um thread|
 |Barra de ferramentas **Localização de Depuração**|– Processo atual<br />– Suspender o aplicativo<br />– Retomar o aplicativo<br />– Suspender e encerrar o aplicativo<br />– Thread atual<br />– Alternar o estado do sinalizador do thread atual<br />– Mostrar somente threads sinalizados<br />– Mostrar somente o processo atual<br />– Registro de ativação atual|– Alternar para outro processo<br />– Suspender, retomar ou encerrar o aplicativo<br />– Alternar para outro thread no processo atual<br />– Alternar para outro registro de ativação no thread atual<br />– Sinalizar ou remover sinalização de threads atuais<br />– Mostrar somente threads sinalizados<br />– Mostrar somente o processo atual|
 |Janela **Pilhas Paralelas**|– Pilhas de chamadas para vários threads em uma janela.<br />– Registro de ativação ativo para cada thread.<br />– Chamadores e receptores de qualquer método.|– Remover threads especificados<br />-Alternar para exibição de tarefas<br />– Sinalizar ou remover sinalização de um thread<br />– Zoom|
@@ -62,8 +62,8 @@ As ferramentas que você precisa usar em [!INCLUDE[vsprvs](../code-quality/inclu
 |Janela **tarefas**|– Exibir informações sobre os objetos de <xref:System.Threading.Tasks.Task>, incluindo ID de tarefa, status de tarefa (agendada, executando, em espera, em deadlock), bem como qual thread está atribuído à tarefa.<br />– Localização atual na pilha de chamadas.<br />– O delegado passado para a tarefa no horário de criação|– Alternar para a tarefa atual<br />– Sinalizar ou remover sinalização de uma tarefa<br />– Congelar ou descongelar uma tarefa|
 |Janela **Threads de GPU**|– A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.<br />-A coluna de thread atual, na qual uma seta amarela indica o thread atual.<br />– A coluna **Contagem de Threads**, que exibe o número de threads na mesma localização.<br />– A coluna **Linha**, que exibe a linha de código na qual cada grupo de threads está localizado.<br />– A coluna de **Endereço**, que exibe o endereço da instrução no qual cada grupo de threads está localizado.<br />– A coluna **Localização**, que é a localização no código do endereço.<br />– A coluna **Status**, que mostra se o thread está ativo ou bloqueado.<br />– A coluna **Lado a lado**, que mostra o índice lado a lado para os threads na linha.|-Alterar para um thread diferente<br />– Exibir um determinado bloco e thread<br />– Exibir ou ocultar uma coluna<br />– Classificar por coluna<br />– Agrupar threads<br />– Congelar ou descongelar threads<br />– Sinalizar ou remover sinalização de um thread<br />– Exibir somente threads sinalizados|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Anexar aos processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Depurando código de GPU](../debugger/debugging-gpu-code.md)

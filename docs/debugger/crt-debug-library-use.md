@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745617"
 ---
 # <a name="crt-debug-library-use"></a>Uso da biblioteca de depuração CRT
@@ -45,7 +45,7 @@ A biblioteca em tempo de execução C fornece amplo suporte à depuração. Para
 
  Para obter mais informações sobre as várias bibliotecas em tempo de execução que você pode usar, confira [Bibliotecas em tempo de execução C](/cpp/c-runtime-library/crt-library-features).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)
-- [/MD, /MT, /LD (usar biblioteca de tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [/MD,/MT,/LD (use a biblioteca de tempo de execução)](/cpp/build/reference/md-mt-ld-use-run-time-library)

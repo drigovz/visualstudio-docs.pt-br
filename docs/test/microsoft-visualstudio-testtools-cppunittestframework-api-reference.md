@@ -8,21 +8,21 @@ ms.workload:
 - multiple
 author: corob-msft
 ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 5ab22b8601db9c420691f8e57abe140e837aa720
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82109423"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::CppUnitTestFramework`. Use essas APIs para gravar testes de unidade do C++ com base em Microsoft Native Unit Test Framework. Há um [Exemplo de Uso](#example) no final do tópico.
 
-Os arquivos de cabeçalho e lib estão localizados na * \<pasta de instalação do Visual Studio> \vc\auxiliary\vs\unittest*.
+Os arquivos de cabeçalho e lib estão localizados em * \<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
 
 Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de teste nativo.
 
-## <a name="in-this-topic"></a><a name="In_this_topic"></a>Neste tópico
+## <a name="in-this-topic"></a><a name="In_this_topic"></a> Neste tópico
 
 [CppUnitTest. h](#cppUnitTest_h)
 
@@ -88,7 +88,7 @@ Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de 
 
       [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-    - [Digita](#logger)
+    - [Agente](#logger)
 
     - [Gravar mensagem](#write_message)
 
@@ -102,7 +102,7 @@ Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de 
 TEST_CLASS(className)
 ```
 
-Necessário para cada classe que contém métodos de teste. Identifica *className* como uma classe de teste. `TEST_CLASS`deve ser declarado no escopo do namespace.
+Necessário para cada classe que contém métodos de teste. Identifica *className* como uma classe de teste. `TEST_CLASS` deve ser declarado no escopo do namespace.
 
 ```cpp
 TEST_METHOD(methodName)
@@ -115,7 +115,7 @@ Define *methodName* como um método de teste. `TEST_METHOD` deve ser declarado n
 
 ### <a name="initialize-and-cleanup"></a><a name="Initialize_and_cleanup"></a> Inicialização e limpeza
 
-#### <a name="test-methods"></a><a name="test_methods"></a>Métodos de teste
+#### <a name="test-methods"></a><a name="test_methods"></a> Métodos de teste
 
 ```cpp
 TEST_METHOD_INITIALIZE(methodName)
@@ -174,7 +174,7 @@ Define o método *methodName* executado quando um módulo é descarregado. `TEST
 
 ### <a name="create-test-attributes"></a><a name="create_test_attributes"></a> Criar atributos de teste
 
-#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a>Atributos do método de teste
+#### <a name="test-method-attributes"></a><a name="test_method_attributes"></a> Atributos do método de teste
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
@@ -187,7 +187,7 @@ Adiciona os atributos definidos com um ou mais macros `TEST_METHOD_ATTRIBUTE` ao
 
 Uma macro `TEST_METHOD_ATTRIBUTE` define um atributo com o nome *attributeName* e o valor *attributeValue*.
 
-#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a>Atributos de classe de teste
+#### <a name="test-class-attributes"></a><a name="test_class_attributes"></a> Atributos de classe de teste
 
 ```cpp
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
@@ -200,7 +200,7 @@ Adiciona os atributos definidos com um ou mais macros `TEST_CLASS_ATTRIBUTE` à 
 
 Uma macro `TEST_CLASS_ATTRIBUTE` define um atributo com o nome *attributeName* e o valor *attributeValue*.
 
-#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a>Atributos do módulo de teste
+#### <a name="test-module-attributes"></a><a name="test_module_attributes"></a> Atributos do módulo de teste
 
 ```cpp
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
@@ -213,7 +213,7 @@ Adiciona os atributos definidos com um ou mais macros `TEST_MODULE_ATTRIBUTE` ao
 
 Uma macro `TEST_MODULE_ATTRIBUTE` define um atributo com o nome *attributeName* e o valor *attributeValue*.
 
-#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a>Atributos predefinidos
+#### <a name="pre-defined-attributes"></a><a name="pre_defined_attributes"></a> Atributos predefinidos
 
 Essas macros de atributo predefinidas são fornecidas como uma conveniência para casos comuns. Elas podem ser substituídas para a macro `TEST_METHOD_ATTRIBUTE` descrita acima.
 
@@ -247,7 +247,7 @@ TEST_IGNORE()
 
 Define um `TEST_METHOD_ATTRIBUTE` com o nome `Ignore` e o valor de atributo de `true`.
 
-## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a>CppUnitTestAssert. h
+## <a name="cppunittestasserth"></a><a name="cppUnitTestAssert_h"></a> CppUnitTestAssert. h
 
 ### <a name="general-asserts"></a><a name="general_asserts"></a> Declarações Gerais
 
@@ -387,7 +387,7 @@ static void Assert::AreNotSame (
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-null"></a><a name="general_is_null"></a>É nulo
+#### <a name="is-null"></a><a name="general_is_null"></a> É nulo
 Verifica se um ponteiro é NULO.
 
 ```cpp
@@ -398,7 +398,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-not-null"></a><a name="general_is_not_null"></a>Não é nulo
+#### <a name="is-not-null"></a><a name="general_is_not_null"></a> Não é nulo
 Verifica se um ponteiro não é NULO
 
 ```cpp
@@ -409,7 +409,7 @@ static void Assert::IsNotNull(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-true"></a><a name="general_is_True"></a>É verdadeiro
+#### <a name="is-true"></a><a name="general_is_True"></a> É verdadeiro
 Verifica se uma condição é true
 
 ```cpp
@@ -419,7 +419,7 @@ static void Assert::IsTrue(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="is-false"></a><a name="general_is_false"></a>É false
+#### <a name="is-false"></a><a name="general_is_false"></a> É false
 Verifica se uma condição é false
 
 ```cpp
@@ -429,7 +429,7 @@ static void Assert::IsFalse(
     const __LineInfo* pLineInfo = NULL)
 ```
 
-#### <a name="fail"></a><a name="general_Fail"></a>Recuperação
+#### <a name="fail"></a><a name="general_Fail"></a> Recuperação
 Força a falha do resultado do caso de teste
 
 ```cpp
@@ -510,7 +510,7 @@ static void Assert::AreNotSame(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-null"></a><a name="winrt_is_null"></a>É nulo
+#### <a name="is-null"></a><a name="winrt_is_null"></a> É nulo
 Verifica se um ponteiro do Windows Runtime é um nullptr.
 
 ```cpp
@@ -521,7 +521,7 @@ static void Assert::IsNull(
     const __LineInfo* pLineInfo= nullptr)
 ```
 
-#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a>Não é nulo
+#### <a name="is-not-null"></a><a name="winrt_is_not_null"></a> Não é nulo
 Verifica se um ponteiro do Windows Runtime não é um nullptr.
 
 ```cpp
@@ -555,9 +555,9 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)
 ```
 
-## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a>CppUnitTestLogger. h
+## <a name="cppunittestloggerh"></a><a name="cppunittestlogger_h"></a> CppUnitTestLogger. h
 
-### <a name="logger"></a><a name="logger"></a>Digita
+### <a name="logger"></a><a name="logger"></a> Digita
 A classe de agente contém métodos estáticos para gravar na **Janela de Saída**.
 
 ### <a name="write-message"></a><a name="write_message"></a> Gravar Mensagem
@@ -571,7 +571,7 @@ static void Logger::WriteMessage(const wchar_t* message)
 static void Logger::WriteMessage(const char* message)
 ```
 
-## <a name="example"></a><a name="example"></a>Exemplo
+## <a name="example"></a><a name="example"></a> Exemplo
 Esse código é um exemplo de uso do VSCppUnit. Ele inclui exemplos de metadados de atributo, acessórios, testes de unidade com asserções e registro em log personalizado.
 
 ```cpp
@@ -638,7 +638,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)

@@ -20,19 +20,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738198"
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferece suporte à depuração de código de consulta integrado da linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações da depuração LINQ.
+O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dá suporte à depuração de código de consulta integrada à linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações da depuração LINQ.
 
-## <a name="BKMK_ViewingLINQResults"></a> Exibindo os resultados do LINQ
+## <a name="viewing-linq-results"></a><a name="BKMK_ViewingLINQResults"></a> Exibindo os resultados do LINQ
  É possível exibir o resultado de uma declaração LINQ usando DataTips, a janela de observação, e a caixa de diálogo QuickWatch. Ao usar uma janela de origem, você pode pausar o ponteiro em uma consulta na janela de origem e um DataTip aparecerá. É possível copiar uma variável LINQ e colá-la na janela de observação ou na caixa de diálogo QuickWatch.
 
- Em LINQ, uma consulta não é avaliada quando é criada ou declarada, mas somente quando a consulta é usada. Portanto, a consulta não terá um valor até ser avaliada. Para obter uma descrição completa da criação e avaliação de consultas, consulte [introdução às consultasC#LINQ ()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [escrever sua primeira consulta LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
+ Em LINQ, uma consulta não é avaliada quando é criada ou declarada, mas somente quando a consulta é usada. Portanto, a consulta não terá um valor até ser avaliada. Para obter uma descrição completa da criação e avaliação de consultas, consulte [introdução às consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) ou [escrever sua primeira consulta LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).
 
  Para exibir o resultado de uma consulta, o depurador deverá avaliá-lo. Essa avaliação implícita, que ocorre quando você exibe um resultado de consulta LINQ no depurador, tem alguns efeitos que você deve considerar:
 
@@ -40,7 +40,7 @@ ms.locfileid: "72738198"
 
 - Avaliar uma consulta pode resultar em efeitos colaterais, que são alterações no valor dos dados ou no estado do seu programa. Nem todas as consultas têm efeitos colaterais. Para determinar se uma consulta pode ser avaliada com segurança sem efeitos colaterais, você deverá compreender o código que implementa a consulta.
 
-## <a name="BKMK_SteppingAndLinq"></a> Etapas e o LINQ
+## <a name="stepping-and-linq"></a><a name="BKMK_SteppingAndLinq"></a> Etapas e o LINQ
  Quando estiver depurando o código LINQ, a depuração terá algumas diferenças de comportamento que você deve saber.
 
 ### <a name="linq-to-sql"></a>LINQ to SQL
@@ -104,12 +104,12 @@ End Function
 
  A consulta revisada chama a função `IsEven` em cada passo por meio de `items`. É possível usar as janelas de depuração para ver se cada item está de acordo com a condição especificada, e você pode percorrer o código em `IsEven`. O predicado neste exemplo é bastante simples. No entanto, se você tem um predicado mais difícil que precisa depurar, essa técnica pode ser muito útil.
 
-## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar e continuar não compatível com LINQ
+## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar e continuar não compatível com LINQ
  Editar e continuar dá suporte a alterações em consultas LINQ com limitações. Para obter detalhes, consulte enc. de [alterações com suporte](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Depurando SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
 - [Introdução a consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
-- [Introdução ao LINQ no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
+- [Introdução a LINQ no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

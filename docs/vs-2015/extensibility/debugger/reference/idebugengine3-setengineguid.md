@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetEngineGuid | Microsoft Docs
+title: 'IDebugEngine3:: SetEngineGuid | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f0fcba593533fef80e1e560291c6760ef145b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195885"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Esse método define o mecanismo de depuração (DES) `GUID`.  
+Esse método define o (DE) do mecanismo de depuração `GUID` .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -43,8 +43,8 @@ int SetEngineGuid(
  `guidEngine`  
  [in] `GUID` do mecanismo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

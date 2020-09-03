@@ -22,20 +22,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737888"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Editar código e continuar a depuração no Visual StudioC#(, VB C++,)
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Editar código e continuar a depuração no Visual Studio (C#, VB, C++)
 Editar e Continuar é um recurso que economiza tempo e permite que você faça alterações no seu código-fonte enquanto o programa está no modo de interrupção. Quando você retoma a execução do programa escolhendo um comando de execução como **continue** ou **Step**, Edit and Continue aplica automaticamente as alterações de código com algumas limitações. Isso permite que você faça alterações no código durante uma sessão de depuração, em vez de ter que parar, recompilar o programa inteiro e reiniciar a sessão de depuração.
 
- Esta seção inclui os seguintes tópicos:
+ Esta seção inclui os tópicos a seguir:
 
  [Como habilitar e desabilitar Editar e Continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
- [Como parar as alterações de código](../debugger/how-to-stop-code-changes.md)
+ [Como: parar alterações de código](../debugger/how-to-stop-code-changes.md)
 
  [Editar e continuar (C++)](../debugger/edit-and-continue-visual-cpp.md)
 
@@ -43,9 +43,9 @@ Editar e Continuar é um recurso que economiza tempo e permite que você faça a
 
  [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Não há suporte para Editar e Continuar em F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Editar e Continuar não suportado para F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

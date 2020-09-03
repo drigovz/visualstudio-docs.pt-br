@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugEndereços::Reset | Microsoft Docs
+title: 'IEnumDebugAddresses:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48026ee5f359c80c2c807fa857f1ec749823e2b7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717628"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
-Este método redefine a enumeração para o primeiro elemento.
+Esse método redefine a enumeração para o primeiro elemento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,15 +35,15 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
  Nenhum
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Depois que este método é chamado, a próxima chamada para [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) retorna o primeiro elemento da enumeração.
+ Depois que esse método é chamado, a próxima chamada para [Next](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) retorna o primeiro elemento da enumeração.
 
 ## <a name="see-also"></a>Confira também
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
-- [Avançar](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)
+- [Próximo](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

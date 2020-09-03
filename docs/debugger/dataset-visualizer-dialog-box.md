@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745595"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
@@ -31,10 +31,10 @@ O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de Da
 
  Você pode fazer alterações nos objetos neste visualizador. As alterações serão salvas assim que você confirmar uma linha.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  Tabela Use esta caixa de listagem suspensa para selecionar uma tabela dentro do conjunto de um que você deseja visualizar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

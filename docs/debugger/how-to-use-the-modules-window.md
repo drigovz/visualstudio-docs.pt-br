@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348672"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Exibir DLLs e executáveis na janela módulos (C#, C++, Visual Basic, F #)
@@ -77,7 +77,7 @@ A coluna **status do símbolo** na janela **módulos** mostra quais módulos tê
 
 1. No menu de clique com o botão direito do mouse, selecione ou desmarque **sempre carregar automaticamente**. As alterações entrarão em vigor na próxima sessão de depuração.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Interrompendo a execução](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

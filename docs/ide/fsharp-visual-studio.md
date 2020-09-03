@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507970"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
@@ -45,9 +45,9 @@ A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 
 |Configuração do projeto|Compatível com o F#?|Observações|
 |---------------|----------------|-----|
-|Arquivos de recurso|Yes||
-|Configurações de build, depuração e referência|Yes||
-|Multiplataforma|Yes||
+|Arquivos de recurso|Sim||
+|Configurações de build, depuração e referência|Sim||
+|Multiplataforma|Sim||
 |Ícone e manifesto|Não|Disponível por meio das opções da linha de comando do compilador.|
 |Serviços de Cliente ASP.NET|Não||
 |ClickOnce|Não|Use um projeto de cliente em outra linguagem .NET, se aplicável.|
@@ -74,7 +74,7 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 
 A seguinte tabela resume as configurações específicas do F#:
 
-|Página do Designer de Projeto|Setting|Descrição|
+|Página do Designer de Projeto|Configuração|Descrição|
 | - |-------|-----------|
 |Build|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
 |Build|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
@@ -85,29 +85,29 @@ Há suporte para os seguintes recursos dos editores de código e de texto do Vis
 
 |Recurso|Descrição|Compatível com o F#?|
 |-------|-----------|----------------|
-|Comentar automaticamente|Permite que você comente ou remova a marca de comentário das seções de código.|Yes|
+|Comentar automaticamente|Permite que você comente ou remova a marca de comentário das seções de código.|Sim|
 |Formatar automaticamente|Reformata o código com recuo e estilo padrão.|Não|
-|Indicadores|Permite que você salve locais no editor.|Yes|
-|Alterar recuo|Recua ou desfaz o recuo das linhas selecionadas.|Yes|
-|Recuo inteligente|Recua e desfaz o recuo do cursor automaticamente, de acordo com as regras de escopo do F#.|Yes|
-|[Localizar e substituir texto](finding-and-replacing-text.md)|Permite que você faça pesquisas em um arquivo, um projeto ou uma solução e, potencialmente, altere o texto.|Yes|
+|Indicadores|Permite que você salve locais no editor.|Sim|
+|Alterar recuo|Recua ou desfaz o recuo das linhas selecionadas.|Sim|
+|Recuo inteligente|Recua e desfaz o recuo do cursor automaticamente, de acordo com as regras de escopo do F#.|Sim|
+|[Localizar e substituir texto](finding-and-replacing-text.md)|Permite que você faça pesquisas em um arquivo, um projeto ou uma solução e, potencialmente, altere o texto.|Sim|
 |Ir para definição da API .NET|Quando o cursor estiver posicionado em uma API .NET, essa configuração mostrará o código gerado com base nos metadados .NET.|Não|
-|Ir para definição de API definida pelo usuário|Quando o cursor estiver em uma entidade de programa definida, essa configuração moverá o cursor para o local no código em que a entidade foi definida.|Yes|
-|Ir para a linha|Permite que você vá para uma linha específica em um arquivo, por número de linha.|Yes|
-|Barras de navegação na parte superior do arquivo|Permite que você vá para locais no código, por exemplo, por nome da função.|Yes|
-|Diretrizes de estrutura de bloco|Mostra as diretrizes que indicam os escopos do F#, que podem ser focalizados para obter uma versão prévia.|Yes|
-|[Estrutura de tópicos](outlining.md)|Permite que você recolha as seções do código para criar uma exibição mais compacta.|Yes|
-|Tabular|Converte espaços em tabulações.|Yes|
-|Colorização de tipo|Mostra os nomes de tipo definidos em uma cor especial.|Yes|
-|Localização Rápida. Confira Localização Rápida, Janela Localizar e Substituir.|Permite que você faça pesquisas em um arquivo ou um projeto.|Yes|
-|**Ctrl** + **clique** para ir para a definição|Permite que você mantenha a tecla **Ctrl** pressionada e clique em um símbolo do F# para invocar a opção Ir para Definição.|Yes|
-|Ir para definição de QuickInfo|Símbolos clicáveis dentro das dicas de ferramenta que invocam a opção Ir para Definição.|Yes|
-|Ir para Todos|Permite a navegação global e de correspondência difusa para todas as construções de F # por meio de **Ctrl** + **T**.|Yes|
-|Renomeação embutida|Renomeia todas as ocorrências de um símbolo embutido.|Yes|
-|Localizar todas as Referências|Localiza todas as ocorrências de um símbolo em uma base de código.|Yes|
-|Simplificar a correção de código do nome|Remove os qualificadores desnecessários para símbolos do F#.|Yes|
-|Remover correção de código de instrução `open` não utilizada|Remove todas as instruções `open` desnecessárias de um documento.|Yes|
-|Correção de código do valor não utilizada|Sugere a renomeação de um identificador não utilizado para sublinhado.|Yes|
+|Ir para definição de API definida pelo usuário|Quando o cursor estiver em uma entidade de programa definida, essa configuração moverá o cursor para o local no código em que a entidade foi definida.|Sim|
+|Ir para a linha|Permite que você vá para uma linha específica em um arquivo, por número de linha.|Sim|
+|Barras de navegação na parte superior do arquivo|Permite que você vá para locais no código, por exemplo, por nome da função.|Sim|
+|Diretrizes de estrutura de bloco|Mostra as diretrizes que indicam os escopos do F#, que podem ser focalizados para obter uma versão prévia.|Sim|
+|[Estrutura de tópicos](outlining.md)|Permite que você recolha as seções do código para criar uma exibição mais compacta.|Sim|
+|Tabular|Converte espaços em tabulações.|Sim|
+|Colorização de tipo|Mostra os nomes de tipo definidos em uma cor especial.|Sim|
+|Localização Rápida. Confira Localização Rápida, Janela Localizar e Substituir.|Permite que você faça pesquisas em um arquivo ou um projeto.|Sim|
+|**Ctrl** + **clique** para ir para a definição|Permite que você mantenha a tecla **Ctrl** pressionada e clique em um símbolo do F# para invocar a opção Ir para Definição.|Sim|
+|Ir para definição de QuickInfo|Símbolos clicáveis dentro das dicas de ferramenta que invocam a opção Ir para Definição.|Sim|
+|Ir para Todos|Permite a navegação global e de correspondência difusa para todas as construções de F # por meio de **Ctrl** + **T**.|Sim|
+|Renomeação embutida|Renomeia todas as ocorrências de um símbolo embutido.|Sim|
+|Localizar todas as Referências|Localiza todas as ocorrências de um símbolo em uma base de código.|Sim|
+|Simplificar a correção de código do nome|Remove os qualificadores desnecessários para símbolos do F#.|Sim|
+|Remover correção de código de instrução `open` não utilizada|Remove todas as instruções `open` desnecessárias de um documento.|Sim|
+|Correção de código do valor não utilizada|Sugere a renomeação de um identificador não utilizado para sublinhado.|Sim|
 
 Para obter informações gerais sobre como editar o código no Visual Studio, bem como os recursos do editor de texto, confira [Escrever o código no editor](writing-code-in-the-code-and-text-editor.md).
 
@@ -117,17 +117,17 @@ A seguinte tabela resume os recursos do IntelliSense compatíveis e não compat�
 
 |Recurso|Descrição|Compatível com o F#?|
 |-------|-----------|----------------|
-|Implementar interfaces automaticamente|Gera os stubs de código para os métodos de interface.|Yes|
+|Implementar interfaces automaticamente|Gera os stubs de código para os métodos de interface.|Sim|
 |Snippets de código|Injeta o código de uma biblioteca de constructos de codificação comuns em tópicos.|Não|
-|Completar Palavra|Economiza tempo de digitação preenchendo palavras e nomes conforme você digita.|Yes|
-|Conclusão automática|Quando habilitado, faz com que a palavra seja selecionada para selecionar a primeira correspondência conforme você digita, em vez de esperar que você selecione um ou pressione **Ctrl** + **espaço**.|Yes|
-|Oferecer preenchimento para símbolos em namespaces não abertos|Com o preenchimento automático, um símbolo correspondente que reside em um namespace não aberto é sugerido, oferecendo o preenchimento com a instrução `open` correspondente, quando selecionado.|Yes|
+|Completar Palavra|Economiza tempo de digitação preenchendo palavras e nomes conforme você digita.|Sim|
+|Conclusão automática|Quando habilitado, faz com que a palavra seja selecionada para selecionar a primeira correspondência conforme você digita, em vez de esperar que você selecione um ou pressione **Ctrl** + **espaço**.|Sim|
+|Oferecer preenchimento para símbolos em namespaces não abertos|Com o preenchimento automático, um símbolo correspondente que reside em um namespace não aberto é sugerido, oferecendo o preenchimento com a instrução `open` correspondente, quando selecionado.|Sim|
 |Gerar elementos de código|Permite que você gere o código de stub para uma variedade de constructos.|Não|
-|Listar Membros|Quando você digita o operador de acesso de membro (.), essa opção mostra os membros de um tipo.|Yes|
+|Listar Membros|Quando você digita o operador de acesso de membro (.), essa opção mostra os membros de um tipo.|Sim|
 |Organizar usings/open|Organiza os namespaces referenciados por instruções **using** no C# ou diretivas **open** no F#.|Não|
-|Informações de Parâmetro|Mostra informações úteis sobre os parâmetros conforme você digita uma chamada de função.|Yes|
-|Informação Rápida|Exibe a declaração completa de um identificador no código.|Yes|
-|Preenchimento automático de chaves|Preenche automaticamente constructos de sintaxe semelhantes à chave do F# de maneira transacional.|Yes|
+|Informações de Parâmetro|Mostra informações úteis sobre os parâmetros conforme você digita uma chamada de função.|Sim|
+|Informação Rápida|Exibe a declaração completa de um identificador no código.|Sim|
+|Preenchimento automático de chaves|Preenche automaticamente constructos de sintaxe semelhantes à chave do F# de maneira transacional.|Sim|
 
 Para obter informações gerais sobre o IntelliSense, confira [Usar o IntelliSense](using-intellisense.md).
 
@@ -138,15 +138,15 @@ A seguinte tabela resume os recursos disponíveis ao depurar o código F#:
 |Recurso|Descrição|Compatível com o F#?|
 |-------|-----------|----------------|
 |Janela Autos|Mostra variáveis automáticas ou temporárias.|Não|
-|Pontos de interrupção|Permite que você pause a execução de código em pontos específicos durante a depuração.|Yes|
-|Pontos de interrupção condicionais|Permite pontos de interrupção que testam uma condição que determina se a execução deve ser colocada em pausa.|Yes|
+|Pontos de interrupção|Permite que você pause a execução de código em pontos específicos durante a depuração.|Sim|
+|Pontos de interrupção condicionais|Permite pontos de interrupção que testam uma condição que determina se a execução deve ser colocada em pausa.|Sim|
 |Editar e continuar|Permite que o código seja modificado e compilado durante a depuração de um programa em execução sem interromper e reiniciar o depurador.|Não|
 |Avaliador de expressão|Avalia e executa o código em tempo de execução.|Não, mas o avaliador de expressão C# pode ser usado, embora seja necessário usar a sintaxe C#.|
-|Depuração de histórico|Permite que você intervenha no código executado anteriormente.|Yes|
-|Janela Locais|Mostra as variáveis e os valores definidos localmente.|Yes|
-|Executar até o cursor|Permite que você execute o código até que a linha que contém o cursor seja atingida.|Yes|
-|Depuração Completa|Permite que você avance a execução e passe para qualquer chamada de função.|Yes|
-|Depuração Parcial|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Yes|
+|Depuração de histórico|Permite que você intervenha no código executado anteriormente.|Sim|
+|Janela Locais|Mostra as variáveis e os valores definidos localmente.|Sim|
+|Executar até o cursor|Permite que você execute o código até que a linha que contém o cursor seja atingida.|Sim|
+|Depuração Completa|Permite que você avance a execução e passe para qualquer chamada de função.|Sim|
+|Depuração Parcial|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Sim|
 
 Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.yml).
 
@@ -159,19 +159,19 @@ A tabela a seguir resume o suporte para o F# nas ferramentas do Visual Studio.
 |Hierarquia de chamadas|Exibe a estrutura aninhada das chamadas de função no código.|Não|
 |Métricas de código|Coleta informações sobre o código, como contagens de linha.|Não|
 |Exibição de Classe|Fornece uma exibição baseada em tipo do código em um projeto.|Não|
-|[Janela Lista de Erros](reference/error-list-window.md)|Mostra uma lista de erros no código.|Yes|
-|[F# Interativo](/dotnet/fsharp/tutorials/fsharp-interactive/)|Permite que você digite (ou copie e cole) o código F# e execute-o imediatamente, seja qual for o build do projeto. A janela do F# Interativo é um REPL (Loop Ler, Avaliar, Imprimir).|Yes|
+|[Janela Lista de Erros](reference/error-list-window.md)|Mostra uma lista de erros no código.|Sim|
+|[F# Interativo](/dotnet/fsharp/tutorials/fsharp-interactive/)|Permite que você digite (ou copie e cole) o código F# e execute-o imediatamente, seja qual for o build do projeto. A janela do F# Interativo é um REPL (Loop Ler, Avaliar, Imprimir).|Sim|
 |Pesquisador de Objetos|Permite que você veja os tipos em um assembly.|Os tipos F# exibidos em assemblies compilados não são exibidos exatamente como são criados. Você pode percorrer a representação compilada de tipos F#, mas não pode exibir os tipos como são exibidos no F#.|
-|[janela Saída](reference/output-window.md)|Exibe a saída de build.|Yes|
-|Análise de desempenho|Fornece ferramentas para avaliar o desempenho do código.|Yes|
-|Janela de Propriedades|Exibe e permite a edição das propriedades do objeto no ambiente de desenvolvimento que tem o foco.|Yes|
-|Gerenciador de Servidores|Fornece maneiras de interagir com uma variedade de recursos do servidor.|Yes|
-|Gerenciador de Soluções|Permite que você veja e gerencie projetos e arquivos.|Yes|
+|[janela Saída](reference/output-window.md)|Exibe a saída de build.|Sim|
+|Análise de desempenho|Fornece ferramentas para avaliar o desempenho do código.|Sim|
+|Janela de Propriedades|Exibe e permite a edição das propriedades do objeto no ambiente de desenvolvimento que tem o foco.|Sim|
+|Gerenciador de Servidores|Fornece maneiras de interagir com uma variedade de recursos do servidor.|Sim|
+|Gerenciador de Soluções|Permite que você veja e gerencie projetos e arquivos.|Sim|
 |Lista de Tarefas|Permite que você gerencie itens de trabalho pertencentes ao código.|Não|
 |Projetos de teste|Fornece recursos que ajudam você a testar o código.|Não|
-|Caixa de Ferramentas|Exibe as guias que contêm objetos arrastáveis como controles e seções de texto ou de código.|Yes|
+|Caixa de Ferramentas|Exibe as guias que contêm objetos arrastáveis como controles e seções de texto ou de código.|Sim|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Guia do F# (.NET Framework)](/dotnet/fsharp/)
 - [Introdução ao F# no Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

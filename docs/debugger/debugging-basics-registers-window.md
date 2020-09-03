@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738257"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual StudioC#( C++,, Visual Basic F#,)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual Studio (C#, C++, Visual Basic, F #)
 
 A janela **Registros** só ficará disponível se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**.
 
@@ -40,9 +40,9 @@ A janela **Registros** só ficará disponível se a depuração do nível de end
 
  Para saber mais sobre como exibir a janela **Registros**, confira [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md).
 
- Quando você examinar a janela de **registros** , verá entradas como `EAX = 003110D8`.
+ Quando você examinar a janela de **registros** , verá entradas como `EAX = 003110D8` .
 
- O símbolo à esquerda do sinal de `=` é o nome do registro, `EAX`, nesse caso. O número à direita do sinal `=` representa o conteúdo do registro.
+ O símbolo à esquerda do `=` sinal é o nome do registro, `EAX` , nesse caso. O número à direita do sinal `=` representa o conteúdo do registro.
 
  A janela **Registros** permite fazer mais do que apenas exibir o conteúdo de um registro. Quando você está no modo de interrupção em código nativo, pode clicar no conteúdo de um registro e editar o valor. Isso não é algo que você deve fazer aleatoriamente. A menos que você compreenda o registro que está editando, e os dados que ele contém, o resultado de uma edição descuidada provavelmente será uma falha de programa ou alguma outra consequência indesejada. Infelizmente, uma explicação detalhada dos conjuntos de registro dos vários processadores Intel e compatíveis com Intel vai além do escopo dessa breve introdução.
 
@@ -59,12 +59,12 @@ Para processadores Intel x86, você pode ver os seguintes sinalizadores na janel
 |Estouro|OV = 1|
 |Direção|PARA CIMA = 1|
 |Atividades|EI = 1|
-|Assine|PL = 1|
+|Assinar|PL = 1|
 |Zero|ZR = 1|
 |Transporte auxiliar|AC = 1|
-|Paridade|PE = 1|
-|Levam|CY = 1|
+|Parity|PE = 1|
+|Carry|CY = 1|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

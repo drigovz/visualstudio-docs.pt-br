@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591496"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Caixa de diálogo Opções (Visual Studio)
@@ -45,4 +45,4 @@ Marcar ou desmarcar **Mostrar todas as configurações** aplica todas as altera�
 
 ## <a name="see-also"></a>Confira também
 
-- [Personalizando o Editor](../how-to-change-text-case-in-the-editor.md)
+- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543774"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
@@ -42,7 +42,7 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
 
 ## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Visão geral de teste de unidade
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Inícios rápidos
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Inícios rápidos
  Para obter uma introdução ao teste de unidade que leva você diretamente para a parte de codificação, confira um destes tópicos:
 
 - [Passo a passo: criação e execução de testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
 
 - [Código nativo de teste de unidade com o gerenciador de testes](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>O exemplo de solução mybank
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> O exemplo de solução mybank
  Neste tópico, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são escritos em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
 
  ![Solução MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - A classe `CheckingAccountTests` contém os métodos de teste de unidade para a classe `CheckingAccount`.
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Escreva seus testes
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Escreva seus testes
  A estrutura de teste de unidade que você usa e o Visual Studio IntelliSense vão guiá-lo durante a criação do código para os testes de unidade de um projeto de código. Para poder executar no Gerenciador de Testes, a maioria das estruturas exige que você adicione atributos específicos para identificar os métodos de teste de unidade. As estruturas também fornecem uma maneira, geralmente por meio de instruções assert ou atributos de método, para indicar se o método de teste foi aprovado ou reprovado. Outros atributos identificam métodos de instalação opcionais que estão na inicialização da classe e antes de cada método de teste e dos métodos de subdivisão que serão executados após cada método de teste e antes que a classe seja destruída.
 
  O padrão AAA (Arrange, Act, Assert) é uma maneira comum de escrever testes de unidade para um método em teste.
@@ -226,7 +226,7 @@ public void My_Test ()
 
  Você também pode filtrar os testes em qualquer modo de exibição correspondendo o texto na caixa de pesquisa em nível global ou selecionando um dos filtros predefinidos. Você pode executar uma seleção de testes a qualquer momento. Os resultados de uma execução de teste aparecem imediatamente na barra de aprovação/reprovação na parte superior da janela do Gerenciador. Os detalhes do resultado de um método de teste são exibidos quando você seleciona o teste.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Executar e exibir testes
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Executar e exibir testes
  A barra de ferramentas do Gerenciador de Testes ajuda você a descobrir, organizar e executar os testes desejados.
 
  ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -240,7 +240,7 @@ public void My_Test ()
 > [!WARNING]
 > A execução de testes de unidade após cada compilação só tem suporte no Visual Studio Enterprise.
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![Executar após o build](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e **Executar Testes após Build** na barra de ferramentas do Gerenciador de Testes.|
 
@@ -249,7 +249,7 @@ public void My_Test ()
 
  ![Pesquisar categorias de filtro](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![Botão de grupo do Gerenciador de Testes](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
 

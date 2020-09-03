@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9e3f97021e742db7b22a400dee0682669b07e4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662724"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Como: Criar aplicativos de console sequenciais de fluxo de trabalho (o legados)
@@ -27,16 +27,16 @@ Siga estas etapas para criar um projeto de aplicativo de console sequencial de f
 
 1. Inicie o Visual Studio.
 
-2. No menu **Arquivo**, aponte para **Novo** e selecione **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo**e selecione **Projeto**.
 
-     A caixa de diálogo **Novo Projeto** é aberta.
+     A caixa de diálogo **Novo Projeto** será aberta.
 
 3. Selecione a opção **.NET Framework 3,0** ou a opção **.NET Framework 3,5** na lista suspensa na parte superior da janela **novo projeto** para acessar o designer herdado.
 
     > [!NOTE]
-    > A opção padrão em [!INCLUDE[vs2010](../includes/vs2010-md.md)] é **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.
+    > A opção padrão no [!INCLUDE[vs2010](../includes/vs2010-md.md)] é **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.
 
-4. No painel **tipos de projeto** , selecione projetos C# visuais ou Visual Basic projetos (em **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.
+4. No painel **tipos de projeto** , selecione projetos do Visual C# ou Visual Basic projetos (em **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.
 
 5. No painel **modelos** , selecione **aplicativo de console de fluxo de trabalho Sequencial**.
 
@@ -52,5 +52,5 @@ Siga estas etapas para criar um projeto de aplicativo de console sequencial de f
 
 9. Arraste uma atividade da **caixa de ferramentas** para a superfície de design na área de **soltar atividade** designada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando projetos de fluxo de trabalho herdados](../workflow-designer/creating-legacy-workflow-projects.md) [desenvolvendo fluxos de trabalho](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

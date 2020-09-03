@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b35850367ef4bcc4e49cc3d6e76b41a2e9f4cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151702"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereço especificado.  
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no intervalo de endereços especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,24 +34,24 @@ HRESULT findInlineeLinesByAddr ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `parent`  
- [in] Um `IDiaSymbol` que representa o pai do objeto.  
+ no Um `IDiaSymbol` objeto que representa o pai.  
   
  `isect`  
- [in] Especifica o componente de seção do endereço.  
+ no Especifica o componente da seção do endereço.  
   
  `offset`  
- [in] Especifica o componente de deslocamento do endereço.  
+ no Especifica o componente de deslocamento do endereço.  
   
  `length`  
- [in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.  
+ no Especifica o intervalo de endereços, em número de bytes, a ser abordado com essa consulta.  
   
  `ppResult`  
- [out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.  
+ fora Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha recuperados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)   
