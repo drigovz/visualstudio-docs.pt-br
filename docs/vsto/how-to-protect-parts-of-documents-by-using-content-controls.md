@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541343"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Como: proteger partes de documentos usando controles de conteúdo
@@ -34,7 +34,7 @@ ms.locfileid: "85541343"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Proteger um controle de conteúdo
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Proteger um controle de conteúdo
  Você pode impedir que os usuários editem ou excluam um controle de conteúdo definindo as propriedades do controle em um projeto de nível de documento em tempo de design ou em tempo de execução.
 
  Você também pode proteger os controles de conteúdo que você adiciona a um documento em tempo de execução usando um projeto de suplemento do VSTO. Para obter mais informações, consulte [como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md).
@@ -102,7 +102,7 @@ ms.locfileid: "85541343"
      [!code-vb[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#15)]
      [!code-csharp[Trin_WordAddInDynamicControls#15](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#15)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)
 - [Controles de conteúdo](../vsto/content-controls.md)
 - [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

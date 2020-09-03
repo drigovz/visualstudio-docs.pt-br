@@ -14,41 +14,41 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08abf401b4e8f0e7a33d882e8178d77e6f248318
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723283"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
-Esta interface é uma interface de extensão implementada pelos implementadores [IDebugProcess2.](../../../extensibility/debugger/reference/idebugprocess2.md) Ele permite que o implementador obtenha informações sobre o ambiente do processo de depuração.
+Essa interface é uma interface de extensão implementada por implementadores de [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) . Ele permite que o implementador Obtenha informações sobre o ambiente de processo de depuração.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcessQueryProperties: IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Implemente esta interface para obter informações sobre o ambiente de execução de um processo de depuração.
+ Implemente essa interface para obter informações sobre o ambiente de execução de um processo de depuração.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugProcessQueryProperties`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugProcessQueryProperties` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Consultas para um valor de propriedade.|
-|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Consultas para valores de propriedade.|
+|[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|Consulta um valor de propriedade.|
+|[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|Consultas de valores de propriedade.|
 
 ## <a name="remarks"></a>Comentários
- Esta interface raramente é implementada.
+ Essa interface raramente é implementada.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Portpriv.h
+ Cabeçalho: Portpriv. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

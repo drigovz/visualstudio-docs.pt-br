@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541317"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Como: ler e gravar nas propriedades do documento
@@ -78,7 +78,7 @@ ms.locfileid: "85541317"
 
  Embora você esteja trabalhando com o Word e o Excel e seus objetos, Microsoft Office fornece a lista de propriedades de documento internas disponíveis. A tentativa de acessar uma propriedade indefinida gera uma exceção.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md)
 - [Como: criar e modificar propriedades de documento personalizadas](../vsto/how-to-create-and-modify-custom-document-properties.md)

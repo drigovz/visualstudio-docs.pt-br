@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
+title: 'IDebugProcessSecurity:: QueryCanSafelyAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e03ccbb7761802401239768c54f4ea5b36ab86bf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723202"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-Este método permite que o fornecedor da porta exiba um aviso antes que o usuário se conecte a um processo inseguro.
+Esse método permite que o fornecedor da porta exiba um aviso antes que o usuário se conecte a um processo não seguro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,13 +34,13 @@ int QueryCanSafelyAttach();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Os valores de devolução são os seguintes:
+ Os valores de retorno são os seguintes:
 
-- `S_OK`: A fixação ao processo é segura e nenhuma caixa de diálogo de aviso é mostrada.
+- `S_OK`: A anexação ao processo é segura e nenhuma caixa de diálogo de aviso é mostrada.
 
-- `S_FALSE`: A fixação pode ser um problema de segurança e uma caixa de diálogo com um aviso é mostrada.
+- `S_FALSE`: A anexação pode ser um problema de segurança e uma caixa de diálogo com um aviso é mostrada.
 
-- `FAILURE`: A fixação ao processo falha.
+- `FAILURE`: A anexação ao processo falha.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

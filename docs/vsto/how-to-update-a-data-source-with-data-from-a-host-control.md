@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541239"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: atualizar uma fonte de dados com dados de um controle de host
@@ -112,7 +112,7 @@ ms.locfileid: "85541239"
      [!code-csharp[Trin_VstcoreDataExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#21)]
      [!code-vb[Trin_VstcoreDataExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#21)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)

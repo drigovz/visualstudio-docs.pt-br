@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876119"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Caixa de diálogo definição de CorrelatesOn
@@ -34,7 +34,7 @@ A tabela a seguir descreve os elementos da interface do usuário da caixa de di�
 
 O designer de atividade **Receive** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho, sempre que as atividades são geralmente colocadas. Descartar o designer de atividade cria uma <xref:System.ServiceModel.Activities.Receive> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de recebimento. Para abrir a caixa de diálogo **definição de CorrelatesOn** , selecione o designer de atividade de **recebimento** e, em seguida, na grade de propriedades, selecione o botão de reticências ao lado do texto da coleção para a propriedade **CorrelatesOn** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [Adicione a caixa de diálogo CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)

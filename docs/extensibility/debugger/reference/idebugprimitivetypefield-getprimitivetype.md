@@ -1,5 +1,5 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
+title: 'IDebugPrimitiveTypeField:: getprimitivatype | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a66c7c2e312795fa4303c8702e70cd509536de98
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724284"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
-Recupera o tipo primitivo que está associado a este campo.
+Recupera o tipo primitivo associado a este campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,12 +38,12 @@ int GetPrimitiveType (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pdwType`\
-[fora] Valor a partir da [Enumeração CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa o tipo primitivo.
+fora Valor da [enumeração CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa o tipo primitivo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, `S_FALSE`retorna.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

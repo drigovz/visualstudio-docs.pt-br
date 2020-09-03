@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach | Microsoft Docs
+title: IDebugProgram2::D Etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e177b1347981e420223ecafad18eedcf9de30234
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723062"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-Destaca um motor de depuração do programa.
+Desanexa um mecanismo de depuração do programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,10 +38,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um programa destacado continua em execução, mas não faz mais parte da sessão de depuração. Não mais eventos de depuração do programa são enviados uma vez que o motor de depuração é desligado.
+ Um programa desanexado continua em execução, mas não faz mais parte da sessão de depuração. Nenhum evento de depuração de programas mais é enviado quando o mecanismo de depuração é desanexado.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

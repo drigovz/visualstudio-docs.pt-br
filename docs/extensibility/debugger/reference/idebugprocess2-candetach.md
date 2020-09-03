@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach | Microsoft Docs
+title: 'IDebugProcess2:: desanexar | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2bfb7b7b586f9c8b86e75d453389525c61a63bc4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724181"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-Determina se o Gerenciador de depuração de sessão (SDM) pode desvincular o processo.
+Determina se o SDM (Gerenciador de depuração de sessão) pode desanexar o processo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK.` bem-sucedido, retorna retorna se `S_FALSE` o depurador não puder se desvincular do processo. Caso contrário, retornará um código de erro.
+ Se for bem-sucedido, `S_OK.` retornará `S_FALSE` um retorno se o depurador não puder ser desanexado do processo. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)

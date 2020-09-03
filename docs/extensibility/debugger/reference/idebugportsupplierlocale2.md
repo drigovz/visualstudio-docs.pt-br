@@ -11,37 +11,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724293"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
-Fornece suporte local para um fornecedor portuário.
+Fornece suporte de localidade para um fornecedor de porta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierLocale2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Um fornecedor de porta personalizado implementa essa interface para definir o local.
+ Um fornecedor de porta personalizado implementa essa interface para definir a localidade.
 
 ## <a name="methods"></a>Métodos
  A tabela a seguir mostra os métodos de **IDebugPortSupplierLocale2**.
 
 |Método|Descrição|
 |------------|-----------------|
-|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Define a localidade para o fornecedor do porto.|
+|[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Define a localidade para o fornecedor da porta.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Portpriv.h
+ Cabeçalho: Portpriv. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

@@ -11,23 +11,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724317"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Fornece suporte para um fornecedor de porta selecionar e interagir com um servidor principal.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierEx2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Um fornecedor de porta personalizado implementa essa interface para que ele possa selecionar o servidor principal a ser usado.
+ Um fornecedor de porta personalizado implementa essa interface para que ela possa selecionar o servidor principal a ser usado.
 
 ## <a name="methods"></a>Métodos
  A tabela a seguir mostra os métodos de **IDebugPortSupplierEx2**.
@@ -37,11 +37,11 @@ IDebugPortSupplierEx2 : IUnknown
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|Define o servidor principal para o fornecedor da porta.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Portpriv.h
+ Cabeçalho: Portpriv. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

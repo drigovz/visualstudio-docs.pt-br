@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
+title: 'IDebugProgram2:: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c22a5ce398e76ee97b2f0448900fd4e38f996615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723042"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Recupera uma lista dos contextos de código para uma determinada posição em um arquivo de origem.
+Recupera uma lista de contextos de código para uma determinada posição em um arquivo de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ int EnumCodeContexts( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pDocPos`\
-[em] Um objeto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) representando uma posição abstrata em um arquivo de origem conhecido pelo IDE.
+no Um objeto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) que representa uma posição abstrata em um arquivo de origem conhecido pelo IDE.
 
-`ppEnum`[fora] Retorna um objeto [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) que contém uma lista dos contextos de código.
+`ppEnum` fora Retorna um objeto [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) que contém uma lista de contextos de código.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método permite que o Gerenciador de depuração de sessão (SDM) ou IDE mapeie uma posição de arquivo de origem em uma posição de código. Mais de um contexto de código é retornado se a fonte gerar vários blocos de código (por exemplo, modelos C++).
+ Esse método permite que o SDM (Gerenciador de depuração de sessão) ou o IDE mapeie uma posição de arquivo de origem para uma posição de código. Mais de um contexto de código é retornado se a origem gera vários blocos de código (por exemplo, modelos de C++).
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

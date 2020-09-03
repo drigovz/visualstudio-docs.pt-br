@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972355"
 ---
 # <a name="create-a-c-extension-for-python"></a>Criar uma extensão do C++ para o Python
@@ -120,7 +120,7 @@ Siga as instruções nesta seção para criar dois projetos de C++ idênticos ch
 
 1. Defina as propriedades específicas, conforme descrito na tabela a seguir e, em seguida, selecione **OK**.
 
-    | Tab | Propriedade | Valor |
+    | Guia | Propriedade | Valor |
     | --- | --- | --- |
     | **Geral** | **Geral**  >  **Nome do destino** | Especifique o nome do módulo ao qual você deseja se referir do Python nas instruções `from...import`. Você pode usar esse mesmo nome em C++ ao definir o módulo para Python. Se você quiser usar o nome do projeto como o nome do módulo, deixe o valor padrão de **$(ProjectName)**. |
     | | **Geral**  >  **Extensão de destino** | **.pyd** |
@@ -410,6 +410,6 @@ Há uma variedade de meios para criar extensões Python, conforme descrito na ta
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidade de integração, compatibilidade com o PyPy. | Mais novo, menos maduro. |
 | [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Semelhante ao cffi usando C++. | Mais recente, pode ter alguns problemas com o VS 2017. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 O exemplo completo deste passo a passo pode ser encontrado em [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub).

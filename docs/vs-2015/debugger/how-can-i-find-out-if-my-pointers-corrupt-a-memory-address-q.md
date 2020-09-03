@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d4f23b885b2e72e53d288946df18e038d9d956d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476774"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Como posso saber se meus ponteiros corrompem um endereço de memória?
@@ -39,7 +39,7 @@ Descrição do problema
   
 #### <a name="check-for-heap-corruption"></a>Verificação de danos do heap  
   
-- A maior parte das corrupções de memória acontece, na verdade, devido à corrupção da heap. Tente usar o utilitário global dos sinalizadores (gflags.exe) ou pageheap.exe. Consulte [GFlags e pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap) e [como usar o utilitário pageheap para detectar erros de memória em um projeto do C++ Microsoft Visual](https://support.microsoft.com/help/264471/how-to-use-the-pageheap-utility-to-detect-memory-errors-in-a-microsoft).
+- A maior parte das corrupções de memória acontece, na verdade, devido à corrupção da heap. Tente usar o utilitário global dos sinalizadores (gflags.exe) ou pageheap.exe. Consulte [GFlags e pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap) e [como usar o utilitário pageheap para detectar erros de memória em um projeto Microsoft Visual C++](https://support.microsoft.com/help/264471/how-to-use-the-pageheap-utility-to-detect-memory-errors-in-a-microsoft).
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Para localizar onde o endereço de memória foi alterado  
   

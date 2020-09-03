@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryPropriedades:QueryProperties | Microsoft Docs
+title: 'IDebugProcessQueryProperties:: Queryproperties | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723324"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Este método consulta valores de propriedade especificados do processo de depuração.
+Esse método consulta um valor de propriedade especificado do processo de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `celt`\
-[em] Tamanho das matrizes que contêm as definições de propriedade e valores de propriedade.
+no Tamanho das matrizes que contêm as definições de propriedade e os valores de propriedade.
 
 `dwPropType`\
-[em] Uma matriz que contém definições das propriedades consultadas. Os valores possíveis são:
+no Uma matriz que contém definições das propriedades consultadas. Os valores possíveis são:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -53,13 +53,13 @@ int QueryProperties(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-[fora] Uma matriz contendo os valores da propriedade.
+fora Uma matriz que contém os valores de propriedade.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método raramente é usado.
+ Esse método raramente é usado.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

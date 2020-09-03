@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723193"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity`é implementado por um fornecedor de porta para avisar o usuário que anexar ao processo é inseguro.
+`IDebugProcessSecurity` é implementado por um fornecedor de porta para avisar o usuário que anexar ao processo não é seguro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -26,23 +26,23 @@ ms.locfileid: "80723193"
 IDebugProcessSecurity : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugProcessSecurity`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugProcessSecurity` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Getusername](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtém o nome de usuário do fornecedor do porto.|
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Adverte um usuário que anexar ao processo de depuração é inseguro.|
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Obtém o nome de usuário do fornecedor da porta.|
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Avisa um usuário que anexar ao processo de depuração não é seguro.|
 
 ## <a name="remarks"></a>Comentários
- Implemente esta interface para mostrar um aviso e permita que o usuário cancele se o processo ao qual você está anexando pode ser considerado inseguro.
+ Implemente essa interface para mostrar um aviso e permitir que o usuário cancele se o processo ao qual você está anexando puder ser considerado não seguro.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Portas](../../../extensibility/debugger/ports.md)
