@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664187"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Caneta no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A tabela a seguir lista os atalhos que você pode usar para modificar um caminho enquanto o estiver criando com a ferramenta ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")caneta. Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.
+A tabela a seguir lista os atalhos que você pode usar para modificar um demarcador, enquanto o está criando com a ferramenta **Caneta**![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.
 
 |Para realizar esta ação|Faça isto|Ponteiro|
 |-----------------------|-------------|-------------|
@@ -37,5 +37,5 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um caminho
 |Criar uma curva suave ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta**, clique em um ponto final de um dos demarcadores e arraste um ponto final do outro demarcador|![](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png "bd12dfa4-112e-4f37-9765-3479e6b69894")<br /><br /> Caneta ponteiro de união|
 |Criar um novo demarcador|Mantenha a tecla CTRL pressionada e clique fora do caminho anterior a fim de parar de adicionar pontos ao caminho anterior e clique ou arraste no local onde deseja que o novo caminho comece|![](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png "69758176-5f53-465b-808c-f13fd1a0b3f2")<br /><br /> Caneta ponteiro de inicialização|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Atalhos de teclado e chaves de modificador](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md) chaves [modificadoras de prancheta](../designers/artboard-modifier-keys-in-blend.md) [seleção direta chaves modificadores de ferramenta](../designers/direct-selection-tool-modifier-keys-in-blend.md) [desenhar formas e caminhos](../designers/draw-shapes-and-paths.md)

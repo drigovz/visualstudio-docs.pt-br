@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d591595c65f00e0198ded9492ae0b8399e363e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670094"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
@@ -21,7 +21,7 @@ ms.locfileid: "72670094"
 
 O Visual Studio e o .NET Framework juntos fornecem amplo suporte de API e ferramentas para conectar-se a bancos de dados, modelar os dados na memória e exibir os dados na interface do usuário.  As classes de .NET Framework que fornecem a funcionalidade de acesso a dados são conhecidas como [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). O ADO.NET, juntamente com as ferramentas de dados no Visual Studio, foi originalmente projetado principalmente para dar suporte a bancos de dados relacionais e XML. Atualmente, muitos fornecedores de banco de dados NoSQL ou terceiros oferecem provedores de ADO.NET.
 
- O Visual Studio 2015 atualização 2 inclui as atualizações mais recentes do [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que habilitam o suporte para os recursos mais recentes no [banco de dados SQL](https://azure.microsoft.com/services/sql-database/) do Azure e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). O [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) dá suporte a ADO.net, exceto para conjuntos de valores e tipos relacionados. Se você estiver direcionando o .NET Core e exigir uma camada de ORM (mapeamento relacional de objeto), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
+ O Visual Studio 2015 atualização 2 inclui as atualizações mais recentes do            [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que habilitam o suporte para os recursos mais recentes no [banco de dados SQL](https://azure.microsoft.com/services/sql-database/) do Azure e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). O [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) dá suporte a ADO.net, exceto para conjuntos de valores e tipos relacionados. Se você estiver direcionando o .NET Core e exigir uma camada de ORM (mapeamento relacional de objeto), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).
 
  O diagrama a seguir mostra uma visão simplificada da arquitetura básica:
 
@@ -53,7 +53,7 @@ O Visual Studio e o .NET Framework juntos fornecem amplo suporte de API e ferram
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 
-- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 
@@ -65,5 +65,5 @@ O Visual Studio e o .NET Framework juntos fornecem amplo suporte de API e ferram
 
 - [Recursos adicionais para solucionar problemas de erros de acesso a dados](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

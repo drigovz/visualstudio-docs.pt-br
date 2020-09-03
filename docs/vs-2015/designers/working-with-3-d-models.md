@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 555a9065e76d93a4c8dfbfc1acae30bfe4ea2a5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663961"
 ---
 # <a name="working-with-3-d-models"></a>Trabalhando com modelos 3D
@@ -32,5 +32,5 @@ Você pode usar o Editor de Modelo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Editor de modelo](../designers/model-editor.md)|Descreve como usar o Editor de Modelos para trabalhar com modelos 3D.|
-|[Exemplos do Editor de Modelo](../designers/model-editor-examples.md)|Fornece links para tópicos que demonstram como usar o Editor de modelo para executar tarefas comuns de modelagem 3D.|
+|[Editor de modelos](../designers/model-editor.md)|Descreve como usar o Editor de Modelos para trabalhar com modelos 3D.|
+|[Exemplos do editor de modelos](../designers/model-editor-examples.md)|Fornece links para tópicos que demonstram como usar o Editor de modelo para executar tarefas comuns de modelagem 3D.|

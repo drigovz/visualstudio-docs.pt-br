@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d2dae9d1c7a08205a09cad67a0049accba2cae71
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670923"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Como criar e editar um arquivo de esquema XSD
@@ -39,5 +39,5 @@ Este tópico descreve como criar um novo arquivo de esquema XML (XSD) e, em segu
 
      O XML Schema Explorer é atualizado com o novo conjunto de esquema.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Trabalhando com tarefas XML Data](../xml-tools/working-with-xml-data.md) [Designer de esquema XML](../xml-tools/xml-schema-designer-tasks.md)

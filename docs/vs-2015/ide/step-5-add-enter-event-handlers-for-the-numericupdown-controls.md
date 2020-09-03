@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671756"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown
@@ -40,17 +40,17 @@ Na quinta parte deste tutorial, você adicionará manipuladores de eventos de En
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Para adicionar um manipulador de eventos para inserir um controle NumericUpDown
 
-1. Escolha o primeiro controle NumericUpDown (chamado “soma”) no formulário e, em seguida, na caixa de diálogo **Propriedades**, escolha o ícone de **Eventos** na barra de ferramentas.
+1. Escolha o primeiro controle NumericUpDown (chamado "soma") no formulário e, em seguida, na caixa de diálogo **Propriedades**, escolha o ícone de **Eventos** na barra de ferramentas.
 
      A guia **Eventos** na caixa de diálogo **Propriedades** exibe todos os eventos para os quais você pode responder (manipular) para o item que você escolher no formulário. Como você escolheu o controle NumericUpDown, todos os eventos listados serão pertinentes a ele.
 
-2. Escolha o evento de **Enter**, digite `answer_Enter` e pressione a tecla Enter.
+2. Escolha o evento **Enter**, digite `answer_Enter` e pressione a tecla Enter.
 
      ![Caixa de diálogo Propriedades](../ide/media/express-answerenter.png "Express_AnswerEnter") Caixa de diálogo Propriedades
 
      Você adicionou um manipulador de eventos Enter para o controle NumericUpDown de soma e você nomeou esse manipulador **answer_Enter**.
 
-3. No método para o manipulador de eventos **answer_Enter**, adicione o código a seguir.
+3. No método para o manipulador de eventos **answer_Enter** , adicione o código a seguir.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ Na quinta parte deste tutorial, você adicionará manipuladores de eventos de En
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte [Etapa 6: adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 6: adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
 
-- Para retornar à etapa anterior do tutorial, veja [Etapa 4: adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 4: Adicionar o método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

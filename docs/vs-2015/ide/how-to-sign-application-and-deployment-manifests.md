@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7924201f4cf58e1066434707a8453b0fe1913bc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670729"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e implantação
@@ -30,11 +30,11 @@ ms.locfileid: "72670729"
 
 Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os manifestos do aplicativo e de implantação deverão ser assinados com um par de chaves pública/privada e assinados usando a tecnologia Authenticode. É possível assinar os manifestos usando um certificado do repositório de certificados do Windows ou um arquivo de chave.
 
- Para obter mais informações sobre a implantação do ClickOnce, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).
+ Para obter mais informações sobre a implantação do ClickOnce, consulte [segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
  A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados em .exe. Para obter mais informações, consulte a seção “Gerando manifestos não assinados” deste documento.
 
- Para obter informações sobre como criar arquivos de chave, consulte [Como criar um par de chaves pública-privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
+ Para obter informações sobre como criar arquivos de chave, consulte [como: criar um par de chaves públicas-privadas](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).
 
 > [!NOTE]
 > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte apenas a arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão .pfx. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.
@@ -48,7 +48,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
      A caixa de diálogo **Selecionar um Certificado** é exibida e mostra o conteúdo do repositório de certificados do Windows.
 
     > [!TIP]
-    > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **certificados** para exibir informações adicionais da Ajuda.
+    > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. Você pode clicar em **certificados** para exibir informações adicionais de ajuda.
 
 3. Selecione o certificado que você deseja usar para assinar os manifestos.
 
@@ -62,7 +62,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
      A caixa de diálogo **Selecionar Arquivo** é exibida.
 
-3. Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave (.pfx) que você deseja usar e clique no botão **Abrir**.
+3. Na caixa de **diálogo Selecionar arquivo** , navegue até o local do arquivo de chave (. pfx) que você deseja usar e clique em **abrir**.
 
     > [!NOTE]
     > Essa opção dá suporte apenas aos arquivos que têm a extensão .pfx. Se você tiver um arquivo de chave ou um certificado em outro formato, armazene-o no repositório de certificados do Windows e selecione o certificado que é descrito no procedimento anterior. A finalidade do certificado selecionado deve incluir a assinatura de código.
@@ -93,7 +93,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 2. Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-3. Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, consulte [Como definir a versão de publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, consulte [como: definir a versão de publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Publique o aplicativo.
 
@@ -108,5 +108,5 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 3. Publique o aplicativo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Assemblies de nome forte](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) [como criar uma página de assinatura de par de chaves pública-privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114) [,](../ide/reference/signing-page-project-designer.md) [segurança e implantação de ClickOnce](../deployment/clickonce-security-and-deployment.md) do designer de projeto

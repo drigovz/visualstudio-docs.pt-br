@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136fd00bea736af0f0c589c28eae597ff8fd558e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670699"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
@@ -34,13 +34,13 @@ A propriedade `Icon` de um projeto especifica o arquivo de ícone (.ico) que ser
 
 1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).
 
-2. Na barra de menus, escolha **Projeto**, **Propriedades**.
+2. Na barra de menus, escolha **projeto**, **Propriedades**.
 
 3. Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.
 
-4. **(Visual Basic)**  Na lista **Ícone**, escolha um arquivo de ícone (.ico).
+4. **(Visual Basic) ** Na lista **Ícone**, escolha um arquivo de ícone (.ico).
 
-     **C#** Próximo à lista **Ícone**, escolha o botão **\<Procurar...>** e navegue até o local do ícone de arquivo desejado.
+     **C#** Próximo à lista de **ícones** , escolha o **\<Browse...>** botão e, em seguida, navegue até o local do arquivo de ícone desejado.
 
-## <a name="see-also"></a>Consulte também
- [Página de aplicativo, designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [página de aplicativo,C#designer de projeto ()](../ide/reference/application-page-project-designer-csharp.md) [Gerenciando Propriedades de aplicativo](../ide/application-properties.md) [como: Adicionar ou remover recursos](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+## <a name="see-also"></a>Consulte Também
+ [Página de aplicativo, designer de projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) [página de aplicativo, designer de projeto (C#)](../ide/reference/application-page-project-designer-csharp.md) [Gerenciando Propriedades de aplicativo](../ide/application-properties.md) [como: Adicionar ou remover recursos](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

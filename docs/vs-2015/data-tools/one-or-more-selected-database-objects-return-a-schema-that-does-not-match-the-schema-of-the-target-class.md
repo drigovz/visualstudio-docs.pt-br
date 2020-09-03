@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a37ff592784d7c12c245337983808bd4064dc922
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669996"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Um ou mais objetos de base de dados selecionado retornam um esquema que não corresponde ao esquema de classe de destino
@@ -29,5 +29,5 @@ Um ou mais objetos de base de dados selecionado retornam um esquema que não cor
 
 2. Selecione um objeto de base de dados que retorna os dados que correspondem ao esquema de classe de destino (a classe base do objeto de dados está sendo arrastada em object relational Designer de Objetos).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas de LINQ to SQL em métodos DataContext do Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [(o/r designer)](../data-tools/datacontext-methods-o-r-designer.md) [como criar métodos DataContext mapeados para procedimentos armazenados e funções (O/r designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
