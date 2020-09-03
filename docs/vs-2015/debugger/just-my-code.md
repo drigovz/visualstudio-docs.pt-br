@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62da3a36a34a2111bb139765268fbb0bef9b500d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531918"
 ---
 # <a name="just-my-code"></a>Apenas Meu Código
@@ -34,41 +34,41 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
 > [!NOTE]
 > A configuração **habilitar apenas meu código** é uma configuração global que é aplicada a todos os projetos do Visual Studio em todos os idiomas.  
   
-### <a name="override-call-stack-filtering"></a><a name="BKMK_Override_call_stack_filtering"></a>Substituir filtragem de pilha de chamadas  
+### <a name="override-call-stack-filtering"></a><a name="BKMK_Override_call_stack_filtering"></a> Substituir filtragem de pilha de chamadas  
  Em exibições da pilha de chamadas, como as janelas pilha de chamadas e tarefas, Apenas Meu Código recolhe o código que não é do usuário em um quadro anotado rotulado `[External Code]` . Para exibir os quadros recolhidos, escolha **Mostrar código externo** no menu de contexto da exibição da pilha de chamadas.  
   
 > [!NOTE]
 > A configuração **Mostrar código externo** é salva no criador de perfil do usuário atual. Ela é aplicada a todos os projetos em todas as linguagens que são abertos pelo usuário.  
   
-## <a name="net-framework-just-my-code"></a><a name="BKMK__NET_Framework_Just_My_Code"></a>.NET Framework Apenas Meu Código  
+## <a name="net-framework-just-my-code"></a><a name="BKMK__NET_Framework_Just_My_Code"></a> .NET Framework Apenas Meu Código  
   
-### <a name="user-and-non-user-code"></a><a name="BKMK_NET_User_and_non_user_code"></a>Usuário e código de não usuário  
+### <a name="user-and-non-user-code"></a><a name="BKMK_NET_User_and_non_user_code"></a> Usuário e código de não usuário  
  Para distinguir o código de usuário do código que não é do usuário, Apenas Meu Código examina os arquivos de símbolo (. pdb) e otimizações de programa. O depurador considera o código como sendo de não usuário quando o binário não é otimizado ou quando o arquivo .pdb não está disponível.  
   
  Três atributos também afetam o que o depurador considera como sendo Meu Código:  
   
-- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute>informa ao depurador que o código ao qual ele está aplicado não é meu código.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> informa ao depurador que o código ao qual ele está aplicado não é meu código.  
   
 - <xref:System.Diagnostics.DebuggerHiddenAttribute> oculta o código do depurador, mesmo que Apenas Meu Código esteja desativado.  
   
-- <xref:System.Diagnostics.DebuggerStepThroughAttribute>instrui o depurador a percorrer o código ao qual ele é aplicado, em vez de entrar no código.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> instrui o depurador a percorrer o código ao qual ele é aplicado, em vez de entrar no código.  
   
   Todos os demais códigos são considerados código de usuário.  
   
-### <a name="stepping-behavior"></a><a name="BKMK_NET_Stepping_behavior"></a>Comportamento de depuração  
+### <a name="stepping-behavior"></a><a name="BKMK_NET_Stepping_behavior"></a> Comportamento de depuração  
  Ao **entrar** (atalho de teclado: F11) código de não usuário, o depurador percorre o código para a próxima instrução de usuário. Quando você **sai** (teclado: Shift + F11), o depurador é executado para a próxima linha de código de usuário. Se nenhum código de usuário for encontrado, a execução continuará até que o aplicativo seja fechado, um ponto de interrupção seja atingido ou uma exceção ocorra.  
   
-### <a name="breakpoint-behavior"></a><a name="BKMK_NET_Breakpoint_behavior"></a>Comportamento do ponto de interrupção  
+### <a name="breakpoint-behavior"></a><a name="BKMK_NET_Breakpoint_behavior"></a> Comportamento do ponto de interrupção  
  Quando Apenas Meu Código está habilitado, você pode escolher **interromper tudo** (teclado: Ctrl + Alt + Break) e parar a execução em um local onde não há nenhum código de usuário a ser exibido. Quando isso acontece, a janela Sem Código Fonte será exibida. Se você escolher em um comando de etapa, o depurador leva você até a próxima linha do código do usuário.  
   
-### <a name="exception-behavior"></a><a name="BKMK_NET_Exception_behavior"></a>Comportamento da exceção  
+### <a name="exception-behavior"></a><a name="BKMK_NET_Exception_behavior"></a> Comportamento da exceção  
  Se uma exceção sem tratamento ocorre no código de não usuário, o depurador é interrompido na linha do código de usuário na qual a exceção foi gerada.  
   
  Se as exceções de primeira opção estiverem habilitadas para a exceção, a linha do código de usuário será realçada em verde. A pilha de chamadas exibe um quadro anotado rotulado **[código externo]**.  
   
 ## <a name="c-just-my-code"></a><a name="BKMK_C___Just_My_Code"></a> Apenas Meu Código do C++  
   
-### <a name="user-and-non-user-code"></a><a name="BKMK_CPP_User_and_non_user_code"></a>Usuário e código de não usuário  
+### <a name="user-and-non-user-code"></a><a name="BKMK_CPP_User_and_non_user_code"></a> Usuário e código de não usuário  
  O Apenas Meu Código do C++ é diferente do Apenas Meu Código do .NET Framework e do JavaScript porque o comportamento de depuração é independente do comportamento da pilha de chamadas.  
   
  **Pilhas de chamadas**  
@@ -87,15 +87,15 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
   Você pode criar o seu próprio `.natstepfilter` e `.natjmc` Personalizar o comportamento da janela de depuração e de etapas no `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` .  
   
-### <a name="stepping-behavior"></a><a name="BKMK_CPP_Stepping_behavior"></a>Comportamento de depuração  
+### <a name="stepping-behavior"></a><a name="BKMK_CPP_Stepping_behavior"></a> Comportamento de depuração  
  Quando você **entrar no** (atalho de teclado: F11) código não-usuário do código do usuário, o depurador percorre o código para a próxima linha do código de usuário. Quando você **sai** (teclado: Shift + F11), o depurador é executado para a próxima linha de código de usuário. Se nenhum código de usuário for encontrado, a execução continuará até que o aplicativo seja fechado, um ponto de interrupção seja atingido ou uma exceção ocorra.  
   
  Se o depurador for interrompido em um código de não usuário (por exemplo, se um comando Interromper Tudo parar em um código de não usuário), a depuração continua no código de não usuário.  
   
-### <a name="exception-behavior"></a><a name="BKMK_CPP_Exception_behavior"></a>Comportamento da exceção  
+### <a name="exception-behavior"></a><a name="BKMK_CPP_Exception_behavior"></a> Comportamento da exceção  
  Quando o depurador atinge uma exceção, ele parará na exceção independentemente de estar em código de usuário ou de não usuário. As opções não **tratadas do usuário** na caixa de diálogo **exceções** são ignoradas.  
   
-### <a name="customize-stepping-behavior"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a>Personalizar comportamento de depuração  
+### <a name="customize-stepping-behavior"></a><a name="BKMK_CPP_Customize_stepping_behavior"></a> Personalizar comportamento de depuração  
  Você pode especificar as funções a serem percorrendo listando-as como código de não usuário em `*.natstepfilter` arquivos.  
   
 - Para especificar o código de não-usuário para todos os usuários do computador do Visual Studio, adicione o arquivo. natstepfilter à `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` pasta.  
@@ -125,9 +125,9 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
 |Função|Obrigatórios. Especifica uma ou mais funções como funções de não usuário.|  
 |`Name`|Obrigatórios. Uma expressão regular formatada como ECMA-262 que especifica o nome completo da função a ser correspondida. Por exemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> informa ao depurador que todos os métodos em `MyNS::MyClass` devem ser considerados como código de não usuário. A correspondência diferencia maiúsculas e minúsculas.|  
 |`Module`|Opcional. Uma expressão regular formatada como ECMA-262 que especifica o caminho completo do módulo que contém a função. A correspondência não diferencia maiúsculas de minúsculas.|  
-|`Action`|Obrigatórios. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> -   `NoStepInto`– informa ao depurador para percorrer a função correspondente.<br />-   `StepInto`– informa ao depurador para entrar nas funções correspondentes, substituindo qualquer outra `NoStepInto` para as funções correspondentes.|  
+|`Action`|Obrigatórios. Um destes valores que diferenciam maiúsculas e minúsculas:<br /><br /> -   `NoStepInto`  – informa ao depurador para percorrer a função correspondente.<br />-   `StepInto`  – informa ao depurador para entrar nas funções correspondentes, substituindo qualquer outra `NoStepInto` para as funções correspondentes.|  
   
-### <a name="customize-call-stack-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a>Personalizar o comportamento da pilha de chamadas  
+### <a name="customize-call-stack-behavior"></a><a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar o comportamento da pilha de chamadas  
  Você pode especificar módulos, arquivos de origem e funções para tratar como código não-usuário em pilhas de chamadas, especificando-os nos `*.natjmc` arquivos.  
   
 - Para especificar o código de não-usuário para todos os usuários do computador do Visual Studio, adicione o arquivo. natjmc à `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` pasta.  
@@ -179,12 +179,12 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
 ## <a name="javascript-just-my-code"></a><a name="BKMK_JavaScript_Just_My_Code"></a> Apenas Meu Código do JavaScript  
   
-### <a name="user-and-non-user-code"></a><a name="BKMK_JS_User_and_non_user_code"></a>Usuário e código de não usuário  
+### <a name="user-and-non-user-code"></a><a name="BKMK_JS_User_and_non_user_code"></a> Usuário e código de não usuário  
  **Classificações de código**  
   
  O Apenas Meu Código do JavaScript controla a depuração e a exibição da pilha de chamadas categorizando o código em uma destas classificações:  
   
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|  
 |**MyCode**|Código do usuário que você possui e controla.|  
 |**LibraryCode**|Código de não usuário de bibliotecas que você usa com frequência e do qual seu aplicativo depende para funcionar corretamente (por exemplo WinJS ou jQuery).|  
@@ -206,7 +206,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
   Todos os demais códigos são classificados como **MyCode**.  
   
-### <a name="stepping-behavior"></a><a name="BKMK_JS_Stepping_behavior"></a>Comportamento de depuração  
+### <a name="stepping-behavior"></a><a name="BKMK_JS_Stepping_behavior"></a> Comportamento de depuração  
   
 - Se uma função não for um código de usuário (**MyCode**), a **depuração entrará** (atalho de teclado: F11) se comporta como uma **etapa** (teclado: F10).  
   
@@ -216,7 +216,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
 - **Depuração temporária** (teclado: Shift + F11) para na próxima linha do código do usuário. Se nenhum código de usuário for encontrado, a execução continuará até que o aplicativo seja fechado, um ponto de interrupção seja atingido ou uma exceção ocorra.  
   
-### <a name="breakpoint-behavior"></a><a name="BKMK_JS_Breakpoint_behavior"></a>Comportamento do ponto de interrupção  
+### <a name="breakpoint-behavior"></a><a name="BKMK_JS_Breakpoint_behavior"></a> Comportamento do ponto de interrupção  
   
 - Os pontos de interrupção definidos em qualquer código serão sempre atingidos independentemente da classificação desse código  
   
@@ -226,7 +226,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
 
   - **UnrelatedCode** código, o depurador não é interrompido.  
   
-### <a name="exception-behavior"></a><a name="BKMK_JS_Exception_behavior"></a>Comportamento da exceção  
+### <a name="exception-behavior"></a><a name="BKMK_JS_Exception_behavior"></a> Comportamento da exceção  
  Se ocorrer uma exceção não tratada em:  
   
 - Código **MyCode** ou **LibraryCode** , o depurador sempre é interrompido.  
@@ -239,7 +239,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
 - Se a exceção não for tratada, o depurador será interrompido.  
   
-### <a name="customize-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a>Personalizar Apenas Meu Código  
+### <a name="customize-just-my-code"></a><a name="BKMK_JS_Customize_Just_My_Code"></a> Personalizar Apenas Meu Código  
  Para categorizar código de usuário e de não usuário para um único projeto do Visual Studio, adicione um arquivo .json denominado `mycode.json` à pasta raiz do projeto.  
   
  As classificações são executadas nesta ordem:  
@@ -282,7 +282,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
  Os pares de chave de valor **eval**, **Function**e **scriptblock** determinam como o código gerado dinamicamente é classificado.  
   
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|  
 |**Eval**|Script que é executado passando uma cadeia de caracteres à função `eval` fornecida pelo host. Por padrão, o script Eval é classificado como **MyCode**.|  
 |**Função**|Script que é executado passando uma cadeia de caracteres para o construtor `Function`. Por padrão, o script Function é classificado como **LibraryCode**.|  
@@ -290,20 +290,20 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
  Você pode alterar o valor para um destas palavras-chave:  
   
-- `MyCode`classifica o script como **MyCode**.  
+- `MyCode`  classifica o script como **MyCode**.  
   
-- `Library`classifica o script como **LibraryCode**.  
+- `Library`  classifica o script como **LibraryCode**.  
   
-- `Unrelated`classifica o script como **UnrelatedCode**.  
+- `Unrelated`  classifica o script como **UnrelatedCode**.  
   
   **MyCode, Libraries e Unrelated**  
   
   Os pares de valor de chave **MyCode**, **bibliotecas**e não **relacionados** especificam as URLs ou os arquivos que você deseja incluir em uma classificação:  
   
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|  
 |**MyCode**|Uma matriz de URLs ou arquivos que são classificados como **MyCode**.|  
 |**Bibliotecas**|Uma matriz de URLs ou arquivos que são classificados como **LibraryCode**.|  
 |**Unrelated**|Uma matriz de URLs ou arquivos que são classificados como **UnrelatedCode**.|  
   
- A cadeia de caracteres da URL ou do arquivo pode conter um ou mais `*` caracteres, que correspondem a zero ou mais caracteres. `*`é o equivalente da expressão regular `.*` .
+ A cadeia de caracteres da URL ou do arquivo pode conter um ou mais `*` caracteres, que correspondem a zero ou mais caracteres. `*` é o equivalente da expressão regular `.*` .

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85279868"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
@@ -94,7 +94,7 @@ Quando você estiver com um zoom das linhas do tempo na parte superior do relat�
 
 Para ajudar a encontrar o que você está procurando, filtre o relatório uso de GPU com base em nomes de processo, IDs de thread e o nome do evento. Além disso, é possível escolher qual taxa de atualização da exibição determina as linhas do vsync. Será possível classificar os eventos hierarquicamente se o aplicativo usar a interface [ID3DUserDefinedAnnotation](/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) para agrupar comandos de renderização.
 
- Estes são mais detalhes:
+ Aqui estão mais detalhes:
 
 |Controle de filtro|Descrição|
 |--------------------|-----------------|

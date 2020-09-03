@@ -13,29 +13,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719175"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-Esta interface representa um provedor de símbolos que fornece símbolos e tipos, devolvendo-os como campos.
+Essa interface representa um provedor de símbolos que fornece símbolos e tipos, retornando-os como campos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSymbolProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
-Um provedor de símbolos deve implementar essa interface para fornecer informações de símbolo e tipo a um avaliador de expressão.
+Um provedor de símbolo deve implementar essa interface para fornecer informações de símbolo e tipo a um avaliador de expressão.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Essa interface é obtida usando `CoCreateInstance` a função do COM (para provedores de símbolos não gerenciados) ou carregando o conjunto de código gerenciado apropriado e instanciando o provedor de símbolos com base nas informações encontradas nesse conjunto. O mecanismo de depuração instancia o provedor de símbolos para trabalhar em coordenação com o avaliador de expressão. Consulte o Exemplo para uma abordagem para instanciar esta interface.
+Essa interface é obtida usando `CoCreateInstance` a função de com (para provedores de símbolos não gerenciados) ou carregando o assembly de código gerenciado apropriado e instanciando o provedor de símbolos com base nas informações encontradas nesse assembly. O mecanismo de depuração instancia o provedor de símbolos para trabalhar em coordenação com o avaliador de expressão. Consulte o exemplo de uma abordagem para instanciar essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
-A tabela a seguir `IDebugSymbolProvider`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+A tabela a seguir mostra os métodos de `IDebugSymbolProvider` .
 
 |Método|Descrição|
 |------------|-----------------|
@@ -46,26 +46,26 @@ A tabela a seguir `IDebugSymbolProvider`mostra os métodos de .
 |[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|Mapeia uma posição de documento em uma matriz de endereços de depuração.|
 |[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|Mapeia um contexto de documento em uma matriz de endereços de depuração.|
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|Mapeia um endereço de depuração em um contexto de documento.|
-|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtém o idioma usado para compilar o código no endereço de depuração.|
+|[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|Obtém a linguagem usada para compilar o código no endereço de depuração.|
 |`GetGlobalContainer`|Preterido. Não use.|
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtém o campo representando um nome de método totalmente qualificado.|
-|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtém o tipo de campo de classe representando um nome de classe totalmente qualificado.|
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|Obtém o campo que representa um nome de método totalmente qualificado.|
+|[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|Obtém o tipo de campo de classe que representa um nome de classe totalmente qualificado.|
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|Cria um enumerador para namespaces associados ao endereço de depuração.|
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Mapeia um nome de símbolo para um tipo de símbolo.|
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtém o endereço de depuração que segue um endereço de depuração dado em um método.|
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Obtém o endereço de depuração que segue um determinado endereço de depuração em um método.|
 
 ## <a name="remarks"></a>Comentários
-Esta interface mapeia posições de documentos em endereços de depuração e vice-versa.
+Essa interface mapeia as posições do documento em endereços de depuração e vice-versa.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como instanciar o provedor de símbolos, dado o seu GUID (um mecanismo de depuração deve saber esse valor).
+Este exemplo mostra como criar uma instância do provedor de símbolos, dado seu GUID (um mecanismo de depuração deve saber esse valor).
 
 ```cpp
 // A debug engine uses its own symbol provider and would know the GUID

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::QueryIsLocal | Microsoft Docs
+title: 'IDebugDefaultPort2:: QueryIsLocal | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c06230f7bbd1825fe73a22f9b1fdc35aea35c499
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732332"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-Este método determina se esta porta está na máquina local.
+Esse método determina se essa porta está no computador local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,7 +35,7 @@ int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Retorna `S_OK` se esta porta estiver local (na mesma `S_FALSE` máquina que o chamador) ou se a porta estiver em outra máquina.
+ Retorna `S_OK` se essa porta for local (no mesmo computador que o chamador) ou `S_FALSE` se a porta estiver em outro computador.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

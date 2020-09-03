@@ -9,10 +9,10 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3ebb18aaff78d9782b6210e25bcd697d21c8570
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660761"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
@@ -20,7 +20,7 @@ ms.locfileid: "72660761"
 
 Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
   - Abra o arquivo **QTAgent32_40.exe.config**.
 
-    Por padrão, esse arquivo está localizado em **\<drive>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    Por padrão, esse arquivo está localizado em ** \<drvie> : \Program Files (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
 
@@ -46,7 +46,7 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
   - Abra o arquivo **QTAgent32.exe.config**.
 
-    Por padrão, esse arquivo está localizado em **\<drive>:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.
+    Por padrão, esse arquivo está localizado em ** \<drvie> : \Program Files (x86) \Microsoft Visual Studio 12.0 \ Common7\IDE**.
 
     Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
 
@@ -69,9 +69,9 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
 1. No menu **TESTE**, escolha a opção **Windows** e **Gerenciador de Testes**.
 
-2. No menu **COMPILAR**, escolha **Compilar Solução**.
+2. No menu **Compilar** , escolha **Compilar solução**.
 
-3. No Gerenciador de Testes, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
+3. No Gerenciador de testes, selecione o teste de interface do usuário codificado que você deseja executar, abra o menu de atalho e escolha **executar testes de seleção**.
 
      Os testes automatizados será executados e indicarão se passaram ou falharam.
 
@@ -80,7 +80,7 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
 4. Clique no link **Saída** nos resultados do Gerenciador de Testes.
 
-     ![Link de saída no Gerenciador de testes](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")
+     ![Link de saída no Gerenciador de Testes](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")
 
      Essa ação exibe a saída do teste, que inclui um link ao log de ações.
 
@@ -90,9 +90,9 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
      O log é exibido em seu navegador da Web.
 
-     ![Arquivo de log de teste de IU codificado](../test/media/cuit-htmlactionlog3.png "CUIT_HTMLActionLog3")
+     ![Arquivo de log do teste de IU codificado](../test/media/cuit-htmlactionlog3.png "CUIT_HTMLActionLog3")
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 ### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>P: O que aconteceu com a chave EnableHtmlLogger?
  Havia duas ou mais definições de configuração para habilitar o agente HTML em testes de IU codificados nas versões anteriores do Visual Studio:
@@ -107,5 +107,5 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
  Essas duas definições foram preteridas no Visual Studio 2012. EqtTraceLevel é a única definição que precisa ser modificada para habilitar o HtmlLogger.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [como: executar testes de Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

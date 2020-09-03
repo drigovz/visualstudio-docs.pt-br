@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531542"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de atalho (Visualizador da Ajuda)
@@ -66,7 +66,7 @@ ms.locfileid: "85531542"
 |Tópico|Ctrl + Shift + sinal de adição|Aumente o zoom em 10%.|
 |Tópico|CTRL + sinal de subtração|Diminua o zoom em 10%.|
 |Tópico|CTRL + 0 (zero)|Altere o zoom para 100%.|
-|Índice|Tab|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
+|Índice|Guia|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
 |Índice|Ctrl + K|Mude entre a exibição de entradas que contêm a palavra-chave que você especificar e entradas que começam com a palavra-chave que você especificar.|
 |Favoritos|Ctrl +Shift + Del|Limpe o histórico de navegação.|
 |Favoritos|Del|Exclua o item especificado.|
@@ -76,7 +76,7 @@ ms.locfileid: "85531542"
 |Sumário, Índice, Pesquisa e Favoritos|Ctrl + P|Imprima o tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|Ctrl + F2|Exiba uma visualização de impressão do tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|CTRL + clique|Abra o tópico em uma nova guia.|
-|Pesquisar|Esc|Limpe a caixa de texto de pesquisa.|
+|Search|Esc|Limpe a caixa de texto de pesquisa.|
 |Opções do Visualizador|Alt + T|Altere o foco para a lista **Tamanho do Texto**.|
 |Opções do Visualizador|Alt + S|Altere o foco para a lista **Máximo de Resultados da Pesquisa**.|
 |Opções do Visualizador|Alt + H|Altere o foco para a lista **Máximo de entradas do Histórico salvas**.|
@@ -85,8 +85,8 @@ ms.locfileid: "85531542"
 |Localizar|Digite|Altere o foco para o próximo item.|
 |Localizar|Shift + Enter|Altere o foco para o item anterior.|
 |Localizar|Esc|Oculta a caixa de texto **Localizar**.|
-|Barra de status|Alt + E|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
-|Barra de status|Alt + U|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
+|Barra de Status|Alt + E|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
+|Barra de Status|Alt + U|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
 
  **Gerenciamento de janelas**
 
@@ -103,14 +103,14 @@ ms.locfileid: "85531542"
 |-|-|
 |Alt + D|Altere a origem de instalação para o disco.|
 |Alt + O|Altere a origem de instalação para online.|
-|Tab|Altere o foco para a caixa de texto **Caminho do repositório local**.|
-|Tab|Altere o foco para **Mover…** .|
+|Guia|Altere o foco para a caixa de texto **Caminho do repositório local**.|
+|Guia|Altere o foco para **Mover…** .|
 |Alt + V|Abra a caixa de diálogo **Mover Conteúdo**.|
 |Ctrl + Alt + F|Altere o foco para a caixa de texto **Filtrar documentação**.|
-|Tab|Altere o foco para a lista de documentação.|
+|Guia|Altere o foco para a lista de documentação.|
 |Seta para cima e seta para baixo|Role a lista de documentação.|
 |Space|Adicione um item à lista **Alterações pendentes**.|
-|Tab|Altere o foco para a lista **Alterações pendentes**.|
+|Guia|Altere o foco para a lista **Alterações pendentes**.|
 |Seta para cima e seta para baixo|Role a lista **Alterações pendentes**.|
 |Space|Remova um item da lista **Alterações pendentes**.|
 |Alt + T|Aplique todas as alterações pendentes.|

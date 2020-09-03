@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551511"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referência geral (desenvolvimento do Office no Visual Studio)
@@ -39,16 +39,16 @@ ms.locfileid: "69551511"
 
  Descreve como os manifestos de implantação são usados nas soluções do Office.
 
-- [Referência &#40;da interface do usuário desenvolvimento do Office no Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Referência de interface do usuário &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
  Lista os tópicos que explicam as opções que aparecem em várias caixas de diálogo, janelas e outras interfaces de usuário.
 
-- [Mensagens &#40;de erro desenvolvimento do Office no Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Mensagens de erro &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Lista os tópicos que explicam mensagens de erro para projetos do Office.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  Fornece links para informações sobre configuração, modelos de projeto, assemblies de interoperabilidade primária do Office e o que há de novo no desenvolvimento do Office.
 

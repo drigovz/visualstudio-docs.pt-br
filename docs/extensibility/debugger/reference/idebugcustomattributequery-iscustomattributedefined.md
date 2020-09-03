@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs
+title: 'IDebugCustomAttributeQuery:: IsCustomAttributeDefined | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732623"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
@@ -38,15 +38,15 @@ int IsCustomAttributeDefined(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pszCustomAttributeName`\
-[em] Nome do atributo personalizado.
+no Nome do atributo personalizado.
 
-## <a name="return-value"></a>Valor retornado
-Se o atributo personalizado `S_OK`for definido, retorna; caso contrário, `S_FALSE`retorna.
+## <a name="return-value"></a>Valor Retornado
+Se o atributo personalizado for definido, retornará `S_OK` ; caso contrário, retornará `S_FALSE` .
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um objeto **CDebugClassFieldSymbol** que expõe a interface [IDebugCustomAttributeQuery.](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugClassFieldSymbol** que expõe a interface [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) .
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(

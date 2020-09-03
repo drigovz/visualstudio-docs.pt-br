@@ -1,5 +1,5 @@
 ---
-title: RequiredPlatformVersion Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento RequiredPlatformVersion (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,22 +10,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701492"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelos do Visual Studio)
-Especifica a versão mínima do sistema operacional que o modelo de projeto requer para funcionar corretamente. Este elemento é usado para modelos de projeto que criam [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.
+Especifica a versão mínima do sistema operacional que o modelo de projeto requer para funcionar corretamente. Esse elemento é usado para modelos de projeto que criam [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.
 
- O `RequiredPlatformVersion` valor é comparado diretamente com a versão do sistema operacional. Se `RequiredPlatformVersion` o for maior do que a versão do sistema operacional, o modelo não aparecerá na caixa de diálogo **Novo Projeto.** Para especificar [!INCLUDE[win8](../debugger/includes/win8_md.md)] um modelo `RequiredPlatformVersion` para ou superior, defina como 6.2.0. Para especificar [!INCLUDE[win81](../debugger/includes/win81_md.md)] um modelo `RequiredPlatformVersion` para ou superior, defina como 6.3.0.
+ O `RequiredPlatformVersion` valor é comparado diretamente com a versão do sistema operacional. Se o `RequiredPlatformVersion` for maior que a versão do sistema operacional, o modelo não aparecerá na caixa de diálogo **novo projeto** . Para especificar um modelo para o [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou superior, defina `RequiredPlatformVersion` como 6.2.0. Para especificar um modelo para o [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou superior, defina `RequiredPlatformVersion` como 6.3.0.
 
- Modelos que `RequiredPlatformVersion`especificam =8 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] são compatíveis com modelos de clienteanteriores.
+ Modelos que especificam `RequiredPlatformVersion` = 8 são compatíveis com modelos de cliente anteriores [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
 
- VSTemplate Data-modelo ..... TargetPlatformName RequiredPlatformVersion
+ TemplateData VSTemplate.... TargetPlatformName RequiredPlatformVersion
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <RequiredPlatformVersion> OperatingSystem </RequiredPlatformVersion>
@@ -44,16 +44,16 @@ Especifica a versão mínima do sistema operacional que o modelo de projeto requ
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplatePlatformNome](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica a plataforma que o modelo de projeto tem como alvo.|
+|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Especifica a plataforma de destino do modelo de projeto.|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
 ## <a name="remarks"></a>Comentários
- Este texto especifica a versão mínima do sistema operacional exigida pelo modelo.
+ Esse texto especifica a versão mínima do sistema operacional exigida pelo modelo.
 
 ## <a name="example"></a>Exemplo
- Este exemplo especifica que o [!INCLUDE[win8](../debugger/includes/win8_md.md)] modelo de projeto tem como alvo ou posterior.
+ Este exemplo especifica que o modelo de projeto tem como destino [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">

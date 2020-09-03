@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress2::GetProcessID | Microsoft Docs
+title: 'IDebugAddress2:: getprocessid | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e41e7768432f8b014edef01e80a8e85a4dc200fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165171"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera a ID do processo que possui o objeto representado por este [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) interface.  
+Recupera a ID do processo que possui o objeto representado por essa interface [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,10 +40,10 @@ int GetProcessID (
   
 #### <a name="parameters"></a>Parâmetros  
  `pProcID`  
- [out] A ID de processo.  
+ fora A ID do processo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

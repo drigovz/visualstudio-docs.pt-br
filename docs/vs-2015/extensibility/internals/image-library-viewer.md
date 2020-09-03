@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532022"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
@@ -131,7 +131,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
  Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:  
   
-|**Elemento**|**Atributos (todos obrigatórios)**|**Definição**|  
+|**Element**|**Atributos (todos obrigatórios)**|**Definição**|  
 |-|-|-|  
 |\<Size>|Valor|A fonte será usada para imagens do tamanho determinado (em unidades do dispositivo). A imagem será quadrada.|  
 |\<SizeRange>|MinSize, MaxSize|A fonte será usada para imagens de MinSize para MaxSize (em unidades de dispositivo) inclusivamente. A imagem será quadrada.|  
@@ -146,7 +146,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
 |**Atributo**|**Definição**|  
 |-|-|  
-|Type|Necessária O tipo do recurso nativo, XAML ou PNG|  
+|Tipo|Necessária O tipo do recurso nativo, XAML ou PNG|  
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|  
   
  **ImageList**  

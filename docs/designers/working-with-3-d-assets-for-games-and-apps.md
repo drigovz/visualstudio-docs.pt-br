@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589793"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabalhar com ativos 3D para jogos e aplicativos
@@ -35,7 +35,7 @@ Use o Editor de Imagens do Visual Studio para trabalhar com imagens e texturas e
 
 ### <a name="3d-models"></a>Modelos 3D
 
-Os modelos 3D criam espaço e forma em jogos e aplicativos. Minimamente, os modelos codificam a posição dos pontos no espaço 3D — que são conhecidos como *vértices*— juntamente com dados de indexação para definir linhas ou triângulos que representam a forma do modelo. É possível associar dados adicionais a esses vértices — por exemplo, informações de cores, vetores normais ou atributos específicos ao aplicativo. Cada modelo também pode definir atributos de todo o objeto — por exemplo, qual sombreador é usado para calcular a aparência da superfície do objeto ou qual textura é aplicada a ele.
+Os modelos 3D criam espaço e forma em jogos e aplicativos. Minimamente, os modelos codificam a posição de pontos no espaço 3D, que são conhecidos como *vértices*, junto com os dados de indexação para definir linhas ou triângulos que representam a forma do modelo. É possível associar dados adicionais a esses vértices — por exemplo, informações de cores, vetores normais ou atributos específicos ao aplicativo. Cada modelo também pode definir atributos de todo o objeto — por exemplo, qual sombreador é usado para calcular a aparência da superfície do objeto ou qual textura é aplicada a ele.
 
 Use o Editor de Modelo do Visual Studio para trabalhar com modelos 3D em vários formatos comuns.
 
@@ -54,7 +54,7 @@ O Visual Studio usa o DirectX para renderizar ativos 2D e 3D. Selecione o render
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Trabalhando com texturas e imagens](../designers/working-with-textures-and-images.md)|Descreve como usar o Visual Studio para trabalhar com imagens e texturas.|
 |[Trabalhando com modelos 3D](../designers/working-with-3-d-models.md)|Descreve como usar o Visual Studio para trabalhar com modelos 3D.|

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660849"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -30,7 +30,7 @@ Executa o comando especificado depois de iniciar o IDE (ambiente de desenvolvime
 devenv /command CommandName
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `CommandName` Necessário. O nome completo de um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ou seu alias, colocado entre aspas duplas. Para obter mais informações sobre comandos e a sintaxe de aliases, consulte [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Comentários
@@ -45,5 +45,5 @@ devenv /command CommandName
 devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Linha de comando do devenv alterna](../../ide/reference/devenv-command-line-switches.md) os [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

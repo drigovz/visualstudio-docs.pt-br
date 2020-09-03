@@ -1,5 +1,5 @@
 ---
-title: Campo m_children | Microsoft Docs
+title: Campo de m_children | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149057"
 ---
-# <a name="mchildren-field"></a>Campo m_children
+# <a name="m_children-field"></a>Campo m_children
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A lista de tarefas filho que estão registrados com essa tarefa.  
+A lista de tarefas filho que são registradas com esta tarefa.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (no mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,7 +37,7 @@ A lista de tarefas filho que estão registrados com essa tarefa.
 ## <a name="remarks"></a>Comentários  
  Enquanto a tarefa está em execução, somente o thread que executa a tarefa deve acessar essa matriz.  
   
- Se a tarefa for concluída, outros threads podem acessar este campo desde que eles não adiciona nada a ele ou remover nada dela.  
+ Se a tarefa for concluída, outros threads poderão acessar esse campo contanto que eles não adicionem nada a ele nem removam nada dele.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

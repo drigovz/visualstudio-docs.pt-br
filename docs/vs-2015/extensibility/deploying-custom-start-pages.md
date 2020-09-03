@@ -1,5 +1,5 @@
 ---
-title: Implantar páginas iniciais personalizadas | Microsoft Docs
+title: Implantando páginas iniciais personalizadas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,40 +12,40 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162099"
 ---
 # <a name="deploying-custom-start-pages"></a>Implantando páginas iniciais personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode implantar páginas de inicialização personalizada usando a implantação do VSIX ou copiando os arquivos nos locais corretos no computador de destino.  
+Você pode implantar páginas iniciais personalizadas usando a implantação do VSIX ou copiando os arquivos para os locais corretos no computador de destino.  
   
-## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Implantação do VSIX usando o modelo de projeto de página de início  
- Quando você cria uma página inicial, usando o modelo de projeto de página inicial e, em seguida, compile o projeto, o Visual Studio cria um arquivo. VSIX que você pode distribuir. Empacotar uma página inicial em um arquivo. VSIX oferece as seguintes opções para a implantação, dependendo do seu público-alvo:  
+## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Implantação do VSIX usando o modelo de projeto de página inicial  
+ Quando você cria uma página inicial usando o modelo de projeto de página inicial e, em seguida, compila o projeto, o Visual Studio cria um arquivo. vsix que você pode distribuir. Empacotar uma página inicial em um arquivo. vsix oferece as seguintes opções para implantação, dependendo do público-alvo:  
   
-- Você pode colocar o arquivo. VSIX em um compartilhamento de rede ou em um site público. Quando alguém abre o arquivo, a página de início é instalada automaticamente.  
+- Você pode colocar o arquivo. vsix em um compartilhamento de rede ou em um site público. Quando alguém abre o arquivo, a página inicial é instalada automaticamente.  
   
-- Você pode carregar o arquivo. VSIX para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site para que os usuários podem instalá-lo usando **Gerenciador de extensões**.  
+- Você pode carregar o arquivo. vsix no site da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários possam instalá-lo usando o **Gerenciador de extensões**.  
   
-  O modelo de página inicial do projeto cria uma cópia da página de início do Visual Studio padrão para que você possa modificar a cópia e preservar o original.  
+  O modelo de projeto página inicial cria uma cópia da página inicial do Visual Studio padrão para que você possa modificar a cópia e preservar o original.  
   
-  Você pode obter o modelo de projeto de página inicial usando **Extension Manager** ou fazendo o download no site da Web.  
+  Você pode obter o modelo de projeto de página inicial usando o **Gerenciador de extensões** ou baixando-o do site da Web.  
   
-## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Implantação do VSIX sem usar o modelo de projeto de página de início  
- Uma implantação bem-sucedida do VSIX requer uma extensão para ser instalado em pastas que são reconhecidas pelo processo de registro VSIX e pelo **Extension Manager**. Como o modelo de projeto de página inicial já especifica nas pastas corretas, é recomendável que você usá-lo sempre que você deseja empacotar uma extensão para a implantação do VSIX. No entanto, se você tiver um caso em que você não pode usar o modelo, você pode criar uma implantação de VSIX sem usá-lo.  
+## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>Implantação do VSIX sem usar o modelo de projeto de página inicial  
+ Uma implantação de VSIX bem-sucedida requer que uma extensão seja instalada em pastas que são reconhecidas pelo processo de registro do VSIX e pelo **Gerenciador de extensões**. Como o modelo de projeto de página inicial já especifica as pastas corretas, recomendamos usá-lo sempre que desejar empacotar uma extensão para a implantação do VSIX. No entanto, se você tiver um caso no qual não possa usar o modelo, poderá criar uma implantação do VSIX sem usá-lo.  
   
- Para criar uma implantação de VSIX sem usar o modelo de projeto de página inicial, primeiro crie um arquivo. VSIX para a página de início em qualquer uma destas duas maneiras:  
+ Para criar uma implantação do VSIX sem usar o modelo de projeto de página inicial, primeiro crie um arquivo. vsix para a página inicial de uma destas duas maneiras:  
   
-- Adicionando seus arquivos de página inicial personalizados para um projeto vazio do VSIX. Para obter mais informações, consulte [modelo de projeto do VSIX](../extensibility/vsix-project-template.md).  
+- Adicionando os arquivos de página inicial personalizados a um projeto VSIX vazio. Para obter mais informações, consulte [modelo de projeto VSIX](../extensibility/vsix-project-template.md).  
   
-- Criando manualmente um arquivo. VSIX. Para obter mais informações, confira [Como: Empacotar manualmente uma extensão (implantação do VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
+- Criando manualmente um arquivo. vsix. Para obter mais informações, consulte [como: empacotar manualmente uma extensão (implantação do VSIX)](../misc/how-to-manually-package-an-extension-vsix-deployment.md).  
   
-  Para o Visual Studio reconhecer uma página inicial, o `Content Element` do manifesto do VSIX deve conter um `CustomExtension Element` que tem o `Type` atributo definido como `"StartPage"`. Uma extensão de página inicial que foi instalada usando a implantação do VSIX aparece na **Personalizar página inicial** lista o **inicialização** página de opções como **[instalado a extensão]** *Nome de extensão*.  
+  Para que o Visual Studio reconheça uma página inicial, o `Content Element` do manifesto do VSIX deve conter um `CustomExtension Element` que tenha o `Type` atributo definido como `"StartPage"` . Uma extensão de página inicial que foi instalada usando a implantação do VSIX aparece na lista **Personalizar página inicial** na página opções de **inicialização** como o *nome da extensão* **[extensão instalada]** .  
   
-  Se o seu pacote de página inicial inclui assemblies, você deve adicionar o registro do caminho de associação para que eles estejam disponíveis quando o Visual Studio é iniciado. Para fazer isso, certifique-se de que seu pacote inclui um arquivo. pkgdef que tem as informações a seguir.  
+  Se o pacote de página inicial incluir assemblies, você deverá adicionar o registro de caminho de associação para que eles fiquem disponíveis quando o Visual Studio for iniciado. Para fazer isso, certifique-se de que o pacote inclui um arquivo. pkgdef que contém as informações a seguir.  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  
@@ -53,43 +53,43 @@ Você pode implantar páginas de inicialização personalizada usando a implanta
 ```  
   
 ### <a name="vsix-deployment-for-all-users"></a>Implantação do VSIX para todos os usuários  
- Por padrão, as extensões implantadas em pacotes VSIX instalam somente para o usuário atual. Você pode fazer uma instalação de página de início para todos os usuários da máquina de destino com a criação de uma implantação de todos os usuários.  
+ Por padrão, as extensões implantadas em pacotes VSIX são instaladas somente para o usuário atual. Você pode fazer uma instalação de página inicial para todos os usuários do computador de destino criando uma implantação de todos os usuários.  
   
 ##### <a name="to-create-an-all-users-deployment"></a>Para criar uma implantação de todos os usuários  
   
-1. Abra o arquivo Extension vsixmanifest no modo de exibição de código.  
+1. Abra o arquivo extension. vsixmanifest na exibição de código.  
   
-2. No `Identifier` elemento de manifesto do vsix, adicione uma `AllUsers` elemento que tem um valor de `true`.  
+2. No `Identifier` elemento do manifesto do VSIX, adicione um `AllUsers` elemento que tenha um valor de `true` .  
   
     ```  
     <AllUsers>true</AllUsers>  
     ```  
   
-     Isso faz com que o instalador do vsix solicitar permissões de administrador e, em seguida, instalar os arquivos \Common7\IDE\Extensions.  
+     Isso faz com que o instalador VSIX solicite permissões de administrador e, em seguida, instale os arquivos em \Common7\IDE\Extensions.  
   
 3. Abra o arquivo. pkgdef.  
   
-4. Modificar a. pkgdef para definir a página de início padrão em HKLM, adicionando o seguinte, onde *MyStartPage.xaml* é o nome do arquivo. XAML que contém a página inicial.  
+4. Modifique o. pkgdef para definir a página inicial padrão em HKLM adicionando o seguinte, em que *mystartpage. XAML* é o nome do arquivo. XAML que contém a página inicial.  
   
-     [$RootKey$\StartPage\Default]  
+     [$RootKey $ \StartPage\Default]  
   
-     "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
+     "URI" = "$PackageFolder $ \\ *mystartpage. XAML*"  
   
-     Isso informa ao Visual preparado para procurar no novo local da página inicial.  
+     Isso informa o Visual explicado para examinar o novo local da página inicial.  
   
 ## <a name="file-copy-deployment"></a>Implantação de cópia de arquivo  
- Não é necessário que criar um arquivo. VSIX para implantar uma página inicial personalizada. Em vez disso, você pode copiar a marcação e arquivos de suporte diretamente para a pasta do usuário \StartPages\. O **Personalizar página inicial** lista o **inicialização** página de opções lista todos os arquivos. XAML nessa pasta, junto com o caminho — por exemplo, %USERPROFILE%\My Documents\Visual Studio  *versão*\StartPages\\*nome do arquivo*. XAML. Se sua página inicial inclui referências a assemblies particulares, você deve copiá-los e colá-los na pasta \PrivateAssemblies\.  
+ Você não precisa criar um arquivo. vsix para implantar uma página inicial personalizada. Em vez disso, você pode copiar a marcação e os arquivos de suporte diretamente na pasta \StartPages\ do usuário. A lista **Personalizar página inicial** na página opções de **inicialização** lista cada arquivo. XAML nessa pasta, junto com o caminho — por exemplo,%USERPROFILE%\My Documentos\visual Studio *version*\StartPages \\ *File Name*. XAML. Se a página inicial incluir referências a assemblies privados, você deverá copiá-los e colá-los na pasta \PrivateAssemblies\  
   
- Para distribuir uma página inicial que você criou sem empacotamento-lo em um arquivo. VSIX, é recomendável que você use uma estratégia de cópia de arquivo básico, por exemplo, um script em lotes ou qualquer outra tecnologia de implantação que permite que você coloque os arquivos nos diretórios necessários.  
+ Para distribuir uma página inicial que você criou sem compactá-la em um arquivo. vsix, recomendamos que você use uma estratégia básica de cópia de arquivo, por exemplo, um script em lotes ou qualquer outra tecnologia de implantação que permita colocar os arquivos nos diretórios necessários.  
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Para instalar manualmente uma página inicial personalizada  
   
-1. Copie o arquivo. XAML que contém a marcação de página inicial, junto com quaisquer arquivos de suporte que não seja de assemblies e cole-os na pasta de \StartPages\ do usuário.  
+1. Copie o arquivo. XAML que contém a marcação de página inicial, junto com quaisquer arquivos de suporte que não sejam assemblies e cole-os na pasta \StartPages\ do usuário.  
   
-2. Se a página de início requer que os assemblies, copiá-los e colá-los em... \\ *Pasta de instalação do visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Se a página inicial exigir assemblies, copie-os e cole-os no. \\ *Pasta de instalação do Visual Studio*\Common7\IDE\PrivateAssemblies \\ .  
   
-3. No **Personalizar página inicial** lista os **inicialização** opções, selecione a nova página inicial. Para obter mais informações, consulte [Customizing the Start Page (Personalizando a página inicial)](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. Na lista **Personalizar página inicial** na página opções de **inicialização** , selecione a nova página inicial. Para obter mais informações, consulte [Customizing the Start Page (Personalizando a página inicial)](../ide/customizing-the-start-page-for-visual-studio.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Personalizando a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Adicionar um controle de usuário à página inicial](../extensibility/adding-user-control-to-the-start-page.md)

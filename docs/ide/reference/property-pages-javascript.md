@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926194"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedades, JavaScript
@@ -57,9 +57,9 @@ Use as seguintes opções para configurar propriedades gerais do projeto.
 
 Especifica o local dos arquivos de saída para a configuração do projeto. O caminho é relativo; se você inserir um caminho absoluto, o caminho absoluto será salvo no projeto. O caminho padrão é bin\Debug.
 
-Quando você usa configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Quando você clica em **Depurar** > **Depuração** (ou pressione **F5),** a compilação é colocada no local de depuração, independentemente do caminho de **saída** especificado. No entanto, o comando **Compilar Solução** no menu **Criar** a coloca no local especificado. Para habilitar configurações avançadas de compilação, na barra de menus, escolha **Opções de** > **ferramentas**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções**, selecione **Geral** e desmarque a caixa de seleção **Mostrar configurações de build avançadas**. Isso lhe dá controle manual sobre todos os valores de configuração e de se uma versão de depuração ou liberação é compilada.
+Quando você usa configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Quando você clica em **depurar**  >  **Iniciar Depuração** (ou pressionar **F5**), a compilação é colocada no local de depuração, independentemente do **caminho de saída** especificado. No entanto, o comando **Compilar Solução** no menu **Criar** a coloca no local especificado. Para habilitar as configurações de Build avançadas, na barra de menus, escolha **ferramentas**  >  **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções**, selecione **Geral** e desmarque a caixa de seleção **Mostrar configurações de build avançadas**. Isso lhe dá controle manual sobre todos os valores de configuração e de se uma versão de depuração ou liberação é compilada.
 
- **Linguagem padrão**
+ **Idioma Padrão**
 
 Especifica o idioma padrão para o projeto. A opção de idioma selecionada em **Relógio, Idioma e Região** no Painel de Controle especifica o idioma preferencial do usuário. Ao especificar um idioma padrão para o projeto, certifique-se de que os recursos de idioma padrão especificado sejam usados se o idioma preferencial do usuário não corresponder aos recursos de idioma fornecidos no aplicativo.
 
@@ -70,7 +70,7 @@ Use as seguintes opções para definir propriedades para o comportamento de depu
 > [!NOTE]
 > Algumas opções estão disponíveis somente em aplicativos UWP.
 
- **Depurador para lançamento**
+ **Depurador a ser iniciado**
 
 Especifica o host padrão para o depurador.
 

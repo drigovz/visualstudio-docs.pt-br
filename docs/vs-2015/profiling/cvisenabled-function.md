@@ -16,10 +16,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba30f3ab75504c0115b8a881f2014910f3b9fd0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68177784"
 ---
 # <a name="cvisenabled-function"></a>Função CvIsEnabled
@@ -50,11 +50,11 @@ HRESULT CvIsEnabledEx(
  `pProvider`  
  Objeto de provedor válido. Não pode ser NULL.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  S_OK se o provedor estiver habilitado no momento. S_FALSE se o provedor estiver desabilitado no momento. Código de erro em caso de erros. Use a macro FAILED para verificar a condição de erro e depois verifique se S_OK/S_FALSE.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** cvmarkers.h  
   
-## <a name="see-also"></a>Veja também  
- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 634051d47b3462e2462c5592448b20f70d09ae71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531931"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Iniciar uma sessão de depuração para aplicativos da Store no Visual Studio (JavaScript)
@@ -34,7 +34,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 > [!NOTE]
 > Para aplicativos escritos em XAML e Visual C#, Visual C++ ou Visual Basic, consulte [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Neste tópico
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Neste tópico
  [Neste tópico](#BKMK_In_this_topic)
 
  [{1&amp;gt;A maneira fácil de iniciar a depuração&amp;lt;1}](#BKMK_The_easy_way_to_start_debugging)
@@ -67,7 +67,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
 - [Anexar o depurador](#BKMK_Attach_the_debugger)
 
-## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a>A maneira fácil de iniciar a depuração
+## <a name="the-easy-way-to-start-debugging"></a><a name="BKMK_The_easy_way_to_start_debugging"></a> A maneira fácil de iniciar a depuração
  ![Aplica-se somente ao Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
 1. Abra a solução do aplicativo no Visual Studio.
@@ -80,22 +80,22 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
    O Visual Studio compila e inicia o aplicativo com o depurador anexado. A execução continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção sem tratamento ou o aplicativo chegue ao fim. Para obter mais informações, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).
 
-## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a>Configurar a sessão de depuração
+## <a name="configure-the-debugging-session"></a><a name="BKMK_Configure_the_debugging_session"></a> Configurar a sessão de depuração
  Como o script não está compilado, a configuração de compilação e as configurações da plataforma não se aplicam. Se você estiver depurando um C++ ou um componente gerenciado, defina a **configuração** para **depurar** e escolha a plataforma de destino na caixa de diálogo de **configuração** .
 
-### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Abrir a página de propriedades de depuração para o projeto
+### <a name="open-the-debugging-property-page-for-the-project"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Abrir a página de propriedades de depuração para o projeto
 
 1. No Gerenciador de Soluções, selecione o projeto. No menu de atalho, escolha **Propriedades**.
 
-2. Expanda o nó **Propriedades de configuração** e escolha **depuração**
+2. Expanda o nó **Propriedades de configuração**  e escolha **depuração**
 
-### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a>Escolher as opções de configuração de compilação
+### <a name="choose-the-build-configuration-options"></a><a name="BKMK_Choose_the_build_configuration_options"></a> Escolher as opções de configuração de compilação
 
 1. Na lista de **configurações** , escolha **depurar** ou **depuração (ativa)**.
 
 2. Na lista **plataforma** , escolha a plataforma de destino para a qual Compilar. Na maioria dos casos, **qualquer CPU** é a melhor opção.
 
-### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a>Escolher o destino de implantação
+### <a name="choose-the-deployment-target"></a><a name="BKMK_Choose_the_deployment_target"></a> Escolher o destino de implantação
  Você pode implantar e depurar um aplicativo no computador com o Visual Studio, no simulador do Visual Studio do computador local ou de um computador remoto. Você escolhe o destino na lista **depurador para iniciar** na página de propriedades **depuração** do projeto.
 
  ![Aplica-se somente ao Windows](../debugger/media/windows-only-content.png "windows_only_content")
@@ -105,7 +105,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 |Opção|Descrição|
 |-|-|
 |**Computador local**|Depura o aplicativo na sessão atual no computador local. Consulte [executar aplicativos da Windows Store no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md).|
-|**Simula**|Depura o aplicativo no simulador do Visual Studio para aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. O simulador é uma janela da área de trabalho que permite depurar recursos, como gestos de toque e rotação de dispositivos, que não estão disponíveis no computador local. Consulte [executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|
+|**Simulador**|Depura o aplicativo no simulador do Visual Studio para aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. O simulador é uma janela da área de trabalho que permite depurar recursos, como gestos de toque e rotação de dispositivos, que não estão disponíveis no computador local. Consulte [executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md).|
 |**Computador remoto**|Depura o aplicativo em um dispositivo conectado ao computador local por uma intranet ou diretamente por meio de um cabo Ethernet. Para depurar remotamente, as Ferramentas Remotas do Visual Studio devem estar instaladas e em execução no dispositivo remoto. Consulte [executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
 
  Se você escolher **computador remoto**, especifique o nome ou o endereço IP do computador remoto de uma das seguintes maneiras:
@@ -128,7 +128,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
  Escolha um desses depuradores na lista **tipo de depurador** :
 
-|Type|Description|
+|Tipo|Descrição|
 |-|-|
 |**{1&amp;gt;Somente Script&amp;lt;1}**|Depura o código JavaScript no aplicativo. O código gerenciado e o código nativo são ignorados.|
 |**Somente nativo**|Depura o código C/C++ nativo no aplicativo. O código gerenciado e o código JavaScript são ignorados.|
@@ -136,7 +136,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 |**Somente Gerenciado**|Depura o código gerenciado no aplicativo. O código JavaScript e o código C/C++ nativo são ignorados.|
 |**Misto (Gerenciado e Nativo)**|Depura o código C/C++ nativo e o código gerenciado no aplicativo. O código JavaScript é ignorado.|
 
-### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a>Adicional Atraso ao iniciar o aplicativo na sessão de depuração
+### <a name="optional-delay-starting-the-app-in-the-debug-session"></a><a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> Adicional Atraso ao iniciar o aplicativo na sessão de depuração
  Por padrão, o Visual Studio inicia o aplicativo imediatamente quando você começa a depuração. Você também pode iniciar uma sessão de depuração, mas atrasar o início do seu aplicativo. O aplicativo é iniciado no depurador quando é iniciado do menu Iniciar ou por um contrato de ativação ou quando é iniciado por outro processo ou método. Você também pode usar o início atrasado para depurar eventos em segundo plano no aplicativo que você quer que ocorram quando o aplicativo não está em execução.
 
  Você especifica se deve atrasar a inicialização do seu aplicativo na lista **Iniciar aplicativo** na página de propriedades **depuração** do projeto do aplicativo. Escolha uma destas opções:
@@ -145,19 +145,19 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
 - Escolha **Sim** para iniciar o aplicativo imediatamente.
 
-### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a>Adicional Desabilitar loopbacks de rede
+### <a name="optional-disable-network-loopbacks"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a> Adicional Desabilitar loopbacks de rede
  ![Aplica-se somente ao Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Por motivos de segurança, um aplicativo da Windows Store instalado da maneira padrão não pode efetuar chamadas de rede para o dispositivo em que está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para o Windows Store, você deve testá-lo sem a isenção.
 
  Para remover a isenção de auto-retorno de rede, escolha **não** na lista **permitir loopback de rede** na página de propriedades **depuração** .
 
-## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a>Iniciar a sessão de depuração
+## <a name="start-the-debugging-session"></a><a name="BKMK_Start_the_debugging_session"></a> Iniciar a sessão de depuração
 
-### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a>Iniciar Depuração (F5)
+### <a name="start-debugging-f5"></a><a name="BKMK_Start_debugging__F5_"></a> Iniciar Depuração (F5)
  Quando você escolhe **Iniciar Depuração** no menu **depurar** (teclado: F5), o Visual Studio inicia o aplicativo com o depurador anexado. A execução continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção sem tratamento ou o aplicativo chegue ao fim.
 
-### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Iniciar Depuração (F5), mas atrasar o início do aplicativo
+### <a name="start-debugging-f5-but-delay-the-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Iniciar Depuração (F5), mas atrasar o início do aplicativo
  Você pode definir o aplicativo para ser executado no modo de depuração, mas inicie-o por outro método que não seja o depurador. Por exemplo, convém depurar a inicialização do aplicativo no menu Iniciar ou depurar um processo em segundo plano do aplicativo sem iniciá-lo. Para atrasar o início do aplicativo, faça o seguinte:
 
 1. Na página de **depuração** das propriedades do projeto de aplicativo, escolha **não** na lista **Iniciar aplicativo** .
@@ -170,7 +170,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
    . Para obter mais informações sobre como depurar tarefas em segundo plano, consulte [disparar eventos de suspensão, retomada e segundo plano para a Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-## <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a>Iniciar um aplicativo instalado no depurador
+## <a name="start-an-installed-app-in-the-debugger"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Iniciar um aplicativo instalado no depurador
  Quando você inicia a depuração usando F5, o Visual Studio compila e implanta o aplicativo, define que ele seja executado no modo de depuração e, em seguida, inicia-o. Para iniciar um aplicativo que já está instalado em um dispositivo, use a caixa de diálogo Depurar Pacote do Aplicativo Instalado. Esse procedimento é útil quando você precisa depurar um aplicativo instalado da Windows Store ou quando você tem os arquivos de origem do aplicativo, mas não tem um projeto do Visual Studio para o aplicativo. Por exemplo, você pode ter um sistema de build personalizado que não use projetos ou soluções do Visual Studio.
 
  O aplicativo pode ser instalado no dispositivo local ou pode estar localizado em um dispositivo remoto.  É possível iniciar o aplicativo imediatamente ou defini-lo para ser executado no depurador quando for iniciado por outro processo ou método, por exemplo, no menu Iniciar ou por um contrato de ativação. Você também pode definir o aplicativo para ser executado no modo de depuração quando quiser depurar um processo em segundo plano sem iniciar o aplicativo. Para obter mais informações, consulte [disparar eventos de suspensão, retomada e segundo plano para a Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
@@ -187,7 +187,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Computador local**  |                                                                                                                Depura o aplicativo na sessão atual no computador local. Consulte [executar aplicativos da Windows Store no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
-   |   **Simula**    | Depura o aplicativo no simulador do Visual Studio para aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. O simulador é uma janela da área de trabalho que permite depurar recursos, como gestos de toque e rotação de dispositivos, que não estão disponíveis no computador local. Consulte [executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md). |
+   |   **Simulador**    | Depura o aplicativo no simulador do Visual Studio para aplicativos [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. O simulador é uma janela da área de trabalho que permite depurar recursos, como gestos de toque e rotação de dispositivos, que não estão disponíveis no computador local. Consulte [executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Computador remoto** |                          Depura o aplicativo em um dispositivo conectado ao computador local por uma intranet ou diretamente por meio de um cabo Ethernet. Para depurar remotamente, as Ferramentas Remotas do Visual Studio devem estar instaladas e em execução no dispositivo remoto. Consulte [executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
 
 3. Escolha o aplicativo na lista **pacotes de aplicativos instalados** .
@@ -198,7 +198,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
    Quando você clica em **Iniciar**, o aplicativo é iniciado ou definido para ser executado no modo de depuração.
 
-## <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Anexar o depurador a um aplicativo em execução
+## <a name="attach-the-debugger-to-a-running-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Anexar o depurador a um aplicativo em execução
  Para anexar o depurador a um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], você deve usar o Gerenciador de Pacotes Depuráveis para definir a execução do aplicativo no modo de depuração. Esse recurso é instalado com as Ferramentas Remotas do Visual Studio.
 
  Anexar o depurador a um aplicativo é útil quando você precisa depurar um aplicativo já instalado; por exemplo, um que tenha sido instalado na Windows Store. A anexação é necessária quando você tem os arquivos de origem do aplicativo, mas não tem um projeto do Visual Studio para ele. Por exemplo, você pode ter um sistema de build personalizado que não use projetos ou soluções do Visual Studio.
@@ -211,7 +211,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
 3. Anexe o depurador ao aplicativo em execução.
 
-### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a>Definir o aplicativo para ser executado no modo de depuração
+### <a name="set-the-app-to-run-in-debug-mode"></a><a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Definir o aplicativo para ser executado no modo de depuração
 
 1. Instale as Ferramentas Remotas do Visual Studio no dispositivo em que o aplicativo está instalado. Consulte [instalando as ferramentas remotas](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
@@ -223,12 +223,12 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
 4. No prompt do PowerShell, insira `Enable-AppxDebug` *PackageFullName* , em que *PackageFullName* é o identificador PackageFullName do aplicativo.
 
-### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a>Anexar o depurador
+### <a name="attach-the-debugger"></a><a name="BKMK_Attach_the_debugger"></a> Anexar o depurador
 
 > [!TIP]
 > Os aplicativos JavaScript são executados em uma instância do processo wwahost.exe. Se outros aplicativos JavaScript estiverem em execução quando você anexa ao aplicativo, será necessário saber a ID do processo numérico (PID) do wwahost.exe em que o aplicativo está executando.
 >
-> A maneira mais fácil de lidar com essa situação é fechar todos os outros aplicativos JavaScript. Do contrário, você pode abrir o Gerenciador de Tarefas do Windows antes de iniciar o aplicativo e observar as IDs dos processos wwahost.exe. Quando você especifica o processo a ser anexado na caixa de diálogo **processos disponíveis** , o wwahost.exe do aplicativo terá uma ID diferente daquelas que você anotou.
+> A maneira mais fácil de lidar com essa situação é fechar todos os outros aplicativos JavaScript. Do contrário, você pode abrir o Gerenciador de Tarefas do Windows antes de iniciar o aplicativo e observar as IDs dos processos wwahost.exe. Quando você especifica o processo a ser anexado na caixa de diálogo **processos disponíveis**  , o wwahost.exe do aplicativo terá uma ID diferente daquelas que você anotou.
 
  Para anexar o depurador:
 
@@ -252,7 +252,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 
    - Escolha **depurar esses tipos de código** e, em seguida, escolha um ou mais tipos na lista.
 
-4. Na lista **processos disponíveis** , escolha o processo de **wwahost.exe** apropriado. Use a coluna **título** para identificar seu aplicativo.
+4. Na lista **processos disponíveis**  , escolha o processo de **wwahost.exe** apropriado. Use a coluna **título** para identificar seu aplicativo.
 
 5. Escolha **anexar**.
 

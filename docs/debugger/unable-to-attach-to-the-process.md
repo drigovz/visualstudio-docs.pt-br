@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728882"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Não é possível anexar ao processo
@@ -44,9 +44,9 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
 
 1. No menu **Iniciar**, selecione **Painel de Controle**.
 
-2. No Painel de Controle, clique duas vezes em **Ferramentas administrativas**.
+2. No painel de controle, clique duas vezes em **Ferramentas administrativas**.
 
-3. Na janela Ferramentas administrativas, clique duas vezes em **Política de Segurança Local**.
+3. Na janela ferramentas administrativas, clique duas vezes em **política de segurança local**.
 
 4. Na janela Política de Segurança Local, selecione **Políticas Locais**.
 
@@ -59,5 +59,5 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
 
 7. Feche todas as janelas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

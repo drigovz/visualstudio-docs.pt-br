@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590027"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Editar tempos de processamento para simular atrasos de interação humana no site em cenários de testes de carga
@@ -29,7 +29,7 @@ As opções de **Perfil de Processamento** são descritas na lista a seguir:
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**Fora**
+**Desativado**
 
 Os tempos de processamento serão ignorados. Use essa configuração se você quiser gerar a carga máxima para forçar extremamente seu servidor Web. Não a use quando você estiver tentando criar interações mais realistas do usuário com um servidor Web.
 
@@ -42,7 +42,7 @@ Os tempos de processamento são usados exatamente como foram registrados no test
 Os tempos de processamento são usados, mas variados em uma curva normal. Fornece uma simulação mais realista de usuários virtuais variando ligeiramente o tempo de pensamento entre solicitações.
 
 > [!NOTE]
-> Para obter uma lista completa das propriedades do cenário do teste de carga e suas descrições, consulte [Propriedades do cenário do teste de carga](../test/load-test-scenario-properties.md).
+> Para obter uma lista completa das propriedades do cenário de teste de carga e suas descrições, consulte [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
 ## <a name="change-the-think-profile"></a>Alterar o perfil de processamento
 

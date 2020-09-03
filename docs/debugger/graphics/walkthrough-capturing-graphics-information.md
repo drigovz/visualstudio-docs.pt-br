@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734733"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: capturando informações de gráficos
-Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnóstico de Gráficos para capturar manualmente informações de gráficos de um aplicativo do Direct3D.
+# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: Capturando informações de gráficos
+Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para capturar manualmente informações de gráficos de um aplicativo do Direct3D.
 
  Este tutorial ilustra essas tarefas:
 
@@ -29,7 +29,7 @@ Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/include
 
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Para habilitar a captura de informações gráficas após o carregamento de um projeto ou solução
 
-1. Em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], carregue um arquivo de projeto ou de solução para o aplicativo do qual você deseja capturar informações sobre elementos gráficos.
+1. No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , carregue um arquivo de projeto ou solução para o aplicativo do qual você deseja capturar informações sobre elementos gráficos.
 
 2. Na barra de ferramentas Diagnóstico de Gráficos, escolha **Iniciar diagnóstico**.
 
@@ -47,7 +47,7 @@ Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/include
 
 - Na barra de ferramentas Diagnóstico de Gráficos, escolha o botão **capturar** . ![Ícone do botão de captura de gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   \- ou -
+   - ou -
 
    Com o aplicativo em foco, pressione a **tela de impressão**.
 
@@ -58,5 +58,5 @@ Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/include
 
 - Saiba como analisar as informações de gráficos capturadas usando as ferramentas de Diagnóstico de Gráficos. Consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Capturando informações de gráficos](capturing-graphics-information.md)

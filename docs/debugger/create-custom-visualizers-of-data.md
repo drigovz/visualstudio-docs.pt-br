@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280870"
 ---
 # <a name="create-custom-data-visualizers"></a>Criar visualizadores de dados personalizados
@@ -93,7 +93,7 @@ No código do lado do depurador:
 
    Esses são os únicos TFMs com suporte.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Passo a passo: Escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Passo a passo: Escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)

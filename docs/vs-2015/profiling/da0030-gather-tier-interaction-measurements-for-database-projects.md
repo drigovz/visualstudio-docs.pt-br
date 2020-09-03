@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
+title: 'DA0030: coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152623"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Coletar medidas de interação de camadas para projetos de banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0030 |  
-| Categoria | Uso das ferramentas de criação de perfil |  
+ID da regra | DA0030 |  
+| Categoria | Uso de Ferramentas de Criação de Perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Coleta de medições de interação para aplicativos de várias camadas ajudam você a compreender os padrões de uso de banco de dados e os dados importantes acessará atrasos. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.|  
+| Mensagem | A coleta de medidas de interação para aplicativos de várias camadas ajudará você a entender os padrões de uso do banco de dados e os atrasos de acesso a data. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.|  
 | Tipo de regra | Informações |  
   
 ## <a name="cause"></a>Causa  

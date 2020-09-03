@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 34729f3dd67cdd124d71cd06204d8754a5c22fb8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162016"
 ---
 # <a name="customizing-performance-tools-report-views"></a>Personalizando exibições de relatório das ferramentas de desempenho
@@ -28,13 +28,13 @@ Esta seção aborda como personalizar relatórios gerados com as Ferramentas de 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Adicionar, remover e classificar colunas em uma exibição de relatório:** é possível especificar as colunas que você deseja exibir em exibições baseada em tabela, bem como especificar a ordem na qual as colunas são exibidas. Também é possível classificar as linhas da tabela de relatório pelos valores da coluna.|-   [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)|  
+|**Adicionar, remover e classificar colunas em uma exibição de relatório:** é possível especificar as colunas que você deseja exibir em exibições baseada em tabela, bem como especificar a ordem na qual as colunas são exibidas. Também é possível classificar as linhas da tabela de relatório pelos valores da coluna.|-   [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)|  
 |**Eliminar funções pequenas do relatório:** é possível eliminar dos relatórios as funções que são menores do que o limite especificado.|-   [Como configurar a redução de ruído em exibições de relatório](../profiling/how-to-configure-noise-reduction-in-report-views.md)|  
-|**Filtrar a data em uma exibição de relatório**: é possível limitar os dados exibidos em um relatório para um segmento de tempo da execução de criação de perfil. É possível especificar um segmento de tempo no gráfico de linha do tempo da Exibição de Resumo ou especificar o segmento de tempo em uma consulta definida no filtro de exibição de relatório. Também é possível filtrar os relatórios para mostrar apenas as funções definidas nos arquivos do código.|-   [Filtrando exibições de relatório](../profiling/filtering-report-views.md)<br />-   [Como filtrar exibições de relatório na linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Como filtrar exibições de relatório das ferramentas de criação de perfil para exibir Apenas Meu Código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md)|  
+|**Filtrar a data em uma exibição de relatório**: é possível limitar os dados exibidos em um relatório para um segmento de tempo da execução de criação de perfil. É possível especificar um segmento de tempo no gráfico de linha do tempo da Exibição de Resumo ou especificar o segmento de tempo em uma consulta definida no filtro de exibição de relatório. Também é possível filtrar os relatórios para mostrar apenas as funções definidas nos arquivos do código.|-   [Filtrando modos de exibição de relatório](../profiling/filtering-report-views.md)<br />-   [Como filtrar exibições de relatório na linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Como filtrar Ferramentas de Criação de Perfil exibições de relatório para exibir Apenas Meu Código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtro de exibição do relatório de desempenho](../profiling/performance-report-view-filter.md)|  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Exibições de relatório de desempenho](../profiling/performance-report-views.md)  
+ [Exibições do relatório de desempenho](../profiling/performance-report-views.md)  
  Descreve as exibições que podem ser usadas para analisar os dados de criação de perfil.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

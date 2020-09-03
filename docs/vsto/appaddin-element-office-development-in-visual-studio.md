@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bf9ea990d12bd24adee3f6a24a39fa43c74fb71
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531632"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento appAddin (desenvolvimento do Office no Visual Studio)
@@ -50,13 +50,13 @@ ms.locfileid: "85531632"
  O elemento **appAddin** tem os seguintes elementos filho.
 
 ### <a name="friendlyname"></a>friendlyName
- Opcional. O elemento **FriendlyName** é explicado no [elemento&#60;friendlyname&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Opcional. O elemento **FriendlyName** é explicado no [ elemento&#60;friendlyname&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
-### <a name="description"></a>descrição
+### <a name="description"></a>description
  Opcional. O elemento **Description** é explicado em [&#60;descrição&#62; elemento &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).
 
 ### <a name="formregions"></a>formRegions
- Necessário apenas para os suplementos do VSTO do Outlook que incluem regiões de formulário. O elemento **FormRegions** é explicado no [elemento&#60;FormRegions&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).
+ Necessário apenas para os suplementos do VSTO do Outlook que incluem regiões de formulário. O elemento **FormRegions** é explicado no [ elemento&#60;FormRegions&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md).
 
 ## <a name="vsto-add-in-example"></a>Exemplo de suplemento do VSTO
 

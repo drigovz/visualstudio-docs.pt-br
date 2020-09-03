@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660833"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
@@ -82,7 +82,7 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
 
   Quando você cria um projeto, a configuração **Opção Estrita** na **página Compilar** é definida como o valor da configuração **Opção Estrita** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração padrão inicial de **Opção Estrita** em **Padrões do VB** é **Desativada**.
 
-  **Avisos Individuais da Opção Estrita.** A seção **Configurações de Aviso** da **página Compilar** tem configurações que correspondem às três condições que causam um erro em tempo de compilação quando `Option Strict` está ativado. A seguir estão estas configurações:
+  **Opção estrita de avisos individuais.** A seção **Configurações de Aviso** da **página Compilar** tem configurações que correspondem às três condições que causam um erro em tempo de compilação quando `Option Strict` está ativado. A seguir estão estas configurações:
 
 - **Conversão implícita**
 
@@ -92,7 +92,7 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
 
   Quando você define **Opção Estrita** como **Ativada**, todas estas três definições de configuração de aviso são definidas como **Erro**. Quando você define **Opção Estrita** como **Desativada**, todas as três configurações são definidas como **Nenhum**.
 
-  Você pode alterar individualmente cada definição de configuração de aviso como **Nenhum**, **Aviso** ou **Erro**. Se todas as três definições de configuração de aviso estiverem definidas como **Erro**, `On` aparecerá na caixa `Option strict`. Se todas as três estiverem definidas como **Nenhum**, `Off` será exibido nessa caixa. Para qualquer outra combinação dessas configurações, **(personalizado)** será exibido.
+  Você pode alterar individualmente cada definição de configuração de aviso como **Nenhum**, **Aviso** ou **Erro**. Se todas as três definições de configuração de aviso estiverem definidas como **erro**, `On` aparecerá na `Option strict` caixa. Se todos os três estiverem definidos como **nenhum**, `Off` aparecerá nesta caixa. Para qualquer outra combinação dessas configurações, **(personalizado)** será exibido.
 
   **Opção compare** Especifica o tipo de comparação de cadeia de caracteres a ser usada. Selecione **Binário** para instruir o compilador a usar comparações de cadeias de caracteres binárias com diferenciação de maiúsculas e minúsculas. Selecione **Texto** usar comparações de cadeias de caracteres de texto específicas da localidade sem diferenciação de maiúsculas e minúsculas.
 
@@ -152,5 +152,5 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
 
   **Opções Avançadas de Build** Clique neste botão para acessar a caixa de diálogo **Configurações do AdvancedCompiler**. Use a caixa de diálogo **Configurações Avançadas do Compilador** para especificar as propriedades avançadas de configuração de build de um projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depurar e liberar configurações de projeto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [Gerenciando Propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [como: especificar eventos de compilação (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Visual Basic compilador de linha de comando](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c) [como: criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

@@ -1,5 +1,5 @@
 ---
-title: Suporte do serviço de linguagem para depuração | Microsoft Docs
+title: Suporte ao serviço de linguagem para depuração | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,24 +12,24 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c61f7fa7e698e2c01cadb1dbb36a321c6e656e35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194993"
 ---
 # <a name="language-service-support-for-debugging"></a>Suporte do serviço de linguagem para depuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Um serviço de linguagem pode fornecer recursos que dão suporte a um depurador por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interface. Esses recursos incluem a validação de pontos de interrupção e fornecendo uma lista de expressões para o **automóveis** janela.  
+Um serviço de linguagem pode fornecer recursos que dão suporte a um depurador por meio da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interface. Esses recursos incluem validação de pontos de interrupção e fornecimento de uma lista de expressões para a janela de **automóveis** .  
   
- No entanto, você precisa ter um avaliador de expressão para depurar seu idioma. O avaliador de expressão é responsável por avaliar expressões para produzir valores durante a depuração. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte:  
+ No entanto, você precisa ter um avaliador de expressão para depurar seu idioma. O avaliador de expressão é responsável por avaliar expressões para produzir valores durante a depuração. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte:  
   
-- [Avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
+- [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
-- [Amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
+- [Exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
 ## <a name="compiler-output"></a>Saída do compilador  
- O tipo do compilador determina o que você precisa fazer para implementar a depuração para seu idioma. Se o compilador direciona o sistema operacional Windows e grava um arquivo. PDB, você pode depurar programas com o mecanismo que é integrado ao Visual Studio de depuração de código nativo. Se o compilador produz Microsoft intermediate language (MSIL), você pode depurar programas com o código gerenciado, depuração engine, que também é integrado ao Visual Studio. Se seu compilador se destina a um sistema operacional proprietário ou um ambiente de tempo de execução diferente, você precisa escrever seu próprio mecanismo de depuração.  
+ O tipo de compilador determina o que você precisa fazer para implementar a depuração para seu idioma. Se o seu compilador tiver como alvo o sistema operacional Windows e gravar um arquivo. pdb, você poderá depurar programas com o mecanismo de depuração de código nativo integrado ao Visual Studio. Se o seu compilador produzir a MSIL (Microsoft Intermediate Language), você poderá depurar programas com o mecanismo de depuração de código gerenciado, que também é integrado ao Visual Studio. Se o seu compilador tiver como alvo um sistema operacional proprietário ou um ambiente de tempo de execução diferente, você precisará escrever seu próprio mecanismo de depuração.  
   
- Para obter mais informações sobre a implementação de depuração para seu idioma, consulte [guia de Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) no SDK do Visual Studio de depuração.
+ Para obter mais informações sobre como implementar a depuração para seu idioma, consulte [introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md) no SDK de depuração do Visual Studio.

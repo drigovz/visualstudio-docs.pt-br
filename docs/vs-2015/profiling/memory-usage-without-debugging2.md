@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532035"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memória sem depuração
@@ -34,7 +34,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
   Este tópico descreve como usar a ferramenta Uso de Memória para analisar um aplicativo XAML universal do Windows. Se você quiser analisar o uso de memória em aplicativos universais do Windows que usam JavaScript e HTML, consulte [Analisar o uso de memória (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Iniciar uma sessão de diagnóstico de uso de memória  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Iniciar uma sessão de diagnóstico de uso de memória  
   
 1. Abra um projeto universal do Windows em C# no Visual Studio.  
   
@@ -44,7 +44,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
      ![Iniciar uma a sessão de diagnóstico de uso de memória](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>Monitorar o uso da memória  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Monitorar o uso da memória  
  Embora você possa usar a ferramenta **Uso de Memória** para gerar relatórios detalhados que podem ser usados para encontrar e corrigir problemas, você também pode usá-la para estudar os efeitos de memória em tempo real de um cenário que esteja desenvolvendo ativamente.  
   
  Quando você inicia uma sessão de diagnóstico, seu aplicativo é iniciado e a janela **Ferramentas de Diagnóstico** mostra um gráfico de linha do tempo do uso de memória do aplicativo.  
@@ -63,7 +63,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  Para a coleta de instantâneos, inicie uma nova sessão de diagnóstico. Escolha **Tirar Instantâneo** quando quiser capturar os dados da memória. Para gerar um relatório, escolha **Parar**.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>Página Visão geral de uso de memória  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Página Visão geral de uso de memória  
  Depois de parar a coleta de dados, a ferramenta Uso de Memória para o aplicativo e exibe o relatório geral.  
   
  ![Página de visão geral de uso de memória](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -79,7 +79,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
   Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
   
-|Imagem|Descrição|  
+|Image|Descrição|  
 |-|-|  
 |![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|O texto do link mostra o número total de bytes na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo, que é classificado pelo tamanho total de instâncias do tipo.|  
 |![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|O texto do link mostra o número total de objetos na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo, que é classificado pela contagem de instâncias dos tipos.|  
@@ -94,7 +94,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 #### <a name="managed-heap"></a><a name="BKMK_Managed_Heap"></a> Heap Gerenciado  
  A árvore de heap gerenciado [Árvore de Heap Gerenciado (detalhes do instantâneo)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) e a [Árvore de Heap Gerenciado (diferenças de instantâneo)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) mostram os tipos e instâncias no relatório. Escolher um tipo ou instância exibe as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.  
   
-#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a>Caminhos para a raiz  
+#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> Caminhos para a raiz  
  A [Árvore de Caminhos para a Raiz (detalhes do instantâneo)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) e os [Árvore de Caminhos para a Raiz (diferenças do instantâneo)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) mostram uma cadeia de objetos que fazem referência ao tipo ou instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.  
   
 #### <a name="referenced-objects"></a><a name="BKMK_Referenced_Objects"></a> Objetos Referenciados  
@@ -112,13 +112,13 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  ![Opções de classificação e filtro](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>Sem  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> Sem  
  Digite uma cadeia de caracteres na caixa **Filtrar** para restringir as exibições de árvore a tipos que contêm o texto especificado. O filtro não diferencia maiúsculas de minúsculas e reconhece a cadeia de caracteres especificada em qualquer parte dos nomes do tipo.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Recolher pequenos objetos  
  Quando esse filtro é aplicado, os tipos cujo **Tamanho (Bytes)** é inferior a 0,5% do tamanho total da memória do instantâneo são escondidos na lista **Heap Gerenciado**.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Apenas Meu Código  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Apenas Meu Código  
  O filtro **Apenas Meu Código** oculta a maioria das instâncias geradas pelo código externo. Tipos externos são de propriedade do sistema operacional, de componentes do Framework ou gerados pelo compilador.  
   
 ## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Relatórios de detalhes do instantâneo  
@@ -135,7 +135,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  ![Árvore de heap gerenciada](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Tipo de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Count**|O número de instâncias do objeto do tipo. O número é sempre 1 para uma instância.|  
@@ -154,7 +154,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  ![Árvore Objjects referenciada para instâncias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Tamanho (Bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos contidos no tipo.<br /><br /> No caso de uma instância, o tamanho do objeto, excluindo o tamanho dos objetos contidos no objeto.|  
@@ -176,7 +176,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  Observe que as colunas **Contagem**, **Tamanho (Bytes)** e **Tamanho Inclusivo (Bytes)** foram recolhidas na imagem.  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Tipo de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Count**|O número de instâncias de um tipo no instantâneo primário. **Count** é sempre 1 para uma instância.|  
@@ -196,7 +196,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  ![Árvore Objjects referenciada para instâncias](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Tamanho (Bytes)**|No caso de uma instância, o tamanho do objeto no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.<br /><br /> No caso de um tipo, o tamanho total das instâncias do tipo no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.|  

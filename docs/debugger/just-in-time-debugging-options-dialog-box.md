@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731605"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Caixa de diálogo Just-In-Time, Depuração, Opções
@@ -55,6 +55,6 @@ Para acessar a página **Just-In-Time**, vá até o menu **Ferramentas** e cliqu
 
  **Acesso negado. Fazer com que um administrador habilite a depuração Just-in-time ou repare a instalação do Visual Studio.**
 
-## <a name="see-also"></a>Consulte também
-- [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)
+## <a name="see-also"></a>Confira também
+- [Depurando, Caixa de Diálogo Opções](../debugger/debugging-options-dialog-box.md)
 - [Como especificar configurações do depurador](../debugger/how-to-specify-debugger-settings.md)

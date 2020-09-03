@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161983"
 ---
 # <a name="performance-report-views"></a>Exibições do relatório de desempenho
@@ -35,17 +35,17 @@ Essa seção fornece informações de referência sobre os relatórios e as exib
  [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)  
  Informações de referência para as exibições e os relatórios dos arquivos de dados de criação de perfil que são gerados usando o método de instrumentação.  
   
- [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)  
+ [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)  
  Informações de referência para as exibições e relatórios de arquivos de dados de criação de perfil que incluem dados de memória .NET.  
   
  [Exibições de dados da contenção de recurso](../profiling/resource-contention-data-views.md)  
  Informações de referência para as exibições e os relatórios de arquivos de dados de criação de perfil que são gerados usando o método de simultaneidade.  
   
- [Visualização Simultânea](../profiling/concurrency-visualizer.md)  
+ [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)  
  Informações de referência para as exibições e relatórios de arquivos de dados de criação de perfil gerados usando o método de simultaneidade e que incluem dados de execução de threads.  
   
- [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)  
+ [Exibição de interações da camada](../profiling/tier-interactions-view.md)  
  Informações de referência para a exibição Interação e relatórios de arquivos de dados de criação de perfil que incluem dados de interação entre camadas.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

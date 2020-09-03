@@ -16,10 +16,10 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531658"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
@@ -98,14 +98,14 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
 #### <a name="call-tree-structure"></a><a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas  
  ![GetMaxNumberButton&#95;clique em árvore de chamadas](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
-|Imagem|Descrição|  
+|Image|Descrição|  
 |-|-|  
 |![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|  
 |![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção **Mostrar Código Externo** está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|  
 |![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|  
 |![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]**.|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Código externo  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Código externo  
  O código externo consiste em funções nos componentes do sistema e da estrutura executados pelo código que você escreve. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam o threading e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não se interessará pelo código externo, então, a árvore de chamadas de Uso da CPU coletará as funções externas de um método de usuário em um nó de **[Código Externo]**.  
   
  Quando desejar exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Exibição de filtro** e escolha **Aplicar**.  
@@ -156,7 +156,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
   
      Crie uma nova sessão no de hub Desempenho e Diagnóstico e adicione as duas ferramentas Capacidade de resposta da interface de usuário XAML e Uso da CPU. Execute o cenário de coleta. Se você já leu isso, o relatório provavelmente não dirá nada que você ainda não tenha percebido, mas as diferenças na linha do tempo de **utilização de thread da interface do usuário** para os dois métodos são surpreendentes. Em aplicativos complexos do mundo real, a combinação de ferramentas pode ser muito útil.  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>MainPage. XAML  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage. XAML  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png 
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
 ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950584"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
@@ -238,7 +238,7 @@ Depois que o workspace for configurado, ele poderá ser alterado ou removido cli
 As opções a seguir podem ser usadas para a autenticação no servidor:
 
 - Oauth
-- Basic
+- Básico
 - Ntlm
 
 Para usar a autenticação Básica é necessário habilitar **Credenciais de autenticação alternativas** no Azure DevOps Services, seguindo as etapas abaixo:
@@ -273,6 +273,6 @@ Ao tentar [criar um workspace](#creating-a-new-workspace), verifique se as segui
 - O nome deve ter menos de 64 caracteres.
 - O caminho local não pode ser usado por outros workspaces.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Confira também
 
 - [Desenvolver e compartilhar seu código no TFVC usando o Visual Studio (no Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
