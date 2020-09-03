@@ -1,5 +1,5 @@
 ---
-title: WizardExtension Element (modelos de estúdio visual) | Microsoft Docs
+title: Elemento WizardExtension (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740378"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelos do Visual Studio)
 Contém os elementos de registro para personalizar o assistente de modelo.
 
- \<VSTemplate> ... \<> de extensão do assistente
+ \<VSTemplate> ... \<WizardExtension>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <WizardExtension>
@@ -45,20 +45,20 @@ Contém os elementos de registro para personalizar o assistente de modelo.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> Especifica o nome ou nome forte de um conjunto que aparece no cache de montagem global. Deve haver pelo `Assembly` menos um `WizardExtension` elemento em um elemento.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> O nome totalmente qualificado da classe `IWizard` que implementa a interface. Deve haver pelo `FullClassName` menos um `WizardExtension` elemento em um elemento.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> Especifica o nome ou nome forte de um assembly que aparece no cache de assembly global. Deve haver pelo menos um `Assembly` elemento em um `WizardExtension` elemento.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento necessário.<br /><br /> O nome totalmente qualificado da classe que implementa a `IWizard` interface. Deve haver pelo menos um `FullClassName` elemento em um `WizardExtension` elemento.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados para o modelo do projeto, modelo de item ou kit inicial.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados do modelo de projeto, modelo de item ou kit do iniciante.|
 
 ## <a name="remarks"></a>Comentários
- `WizardExtension`é um elemento `VSTemplate`infantil opcional de .
+ `WizardExtension` é um elemento filho opcional de `VSTemplate` .
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] do modelo padrão do projeto para um aplicativo Windows.
+ O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

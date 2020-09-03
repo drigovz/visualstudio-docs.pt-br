@@ -8,17 +8,17 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Conheça a responsabilidade dos administradores de rastrear atribuições de usuário e processar pedidos.
 ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232694"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Rastrear atribuição de usuário e processar pedidos
 Os administradores de assinaturas do Visual Studio devem controlar o uso do Visual Studio e processar pedidos de qualquer aumento no uso conforme o prazo descrito no contrato de Licenciamento por Volume ou no Contrato de produtos e serviços da Microsoft. O novo Portal de administração de assinaturas do Visual Studio tornou isso mais simples com um rastreador útil que mostra as licenças usadas e disponíveis.
 
 ## <a name="maximum-usage"></a>Uso máximo
-**A obrigação da sua empresa de comprar assinaturas do Visual Studio entra em vigor imediatamente quando:**
+**A obrigação da sua empresa de comprar as assinaturas do Visual Studio entra em vigor imediatamente quando:**
 - Uma licença é atribuída a um usuário **OU**
 - Um usuário interage com software do Visual Studio.
 
@@ -29,13 +29,13 @@ Sua obrigação de compra completa é determinada pelo número máximo de assina
 - Os administradores de assinaturas do Visual Studio podem reatribuir assinaturas de um assinante a outro após 90 dias do momento da atribuição original. 
     > [!NOTE]
     > Para evitar um nível artificialmente alto de uso máximo, sempre faça isso removendo primeiro a assinatura existente e, em seguida, adicionando a nova. 
-- Para ajudá-lo a monitorar o uso máximo da sua organização, há um relatório [de Uso Máximo](maximum-usage.md) no Portal de Administração de [Assinaturas](https://manage.visualstudio.com)do Visual Studio . 
+- Para ajudá-lo a monitorar o uso máximo da sua organização, há um relatório de [uso máximo](maximum-usage.md) no [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio. 
 
-## <a name="monthly-subscriptions-open-license-or-open-value"></a>Assinaturas mensais, licença aberta ou valor aberto
-Você pode estar atribuindo assinaturas através de programas como Open License e Open Value ou através do Visual Studio Marketplace mensalmente. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.
+## <a name="monthly-subscriptions-open-license-or-open-value"></a>Assinaturas mensais, Open License ou Open Value
+Você pode estar atribuindo assinaturas por meio de programas como Open License e Open Value ou por meio de Visual Studio Marketplace mensalmente. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.
 
 ## <a name="enterprise-mpsa-and-select-agreements"></a>Contratos Enterprise, MPSA e Select
-Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements oferecem flexibilidade em como usar e licenciar software do Visual Studio ao longo do tempo. Os administradores do Visual Studio devem fazer uma ordem anual de True-Up para levar suas licenças de software até o uso máximo estabelecido durante o período de contrato.
+Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements oferecem flexibilidade em como usar e licenciar software do Visual Studio ao longo do tempo. Os administradores do Visual Studio devem fazer uma ordem anual de verdadeiro para trazer suas licenças de software para o uso máximo estabelecido durante o período do contrato.
 
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
@@ -45,7 +45,7 @@ Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements ofer
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
-- [Responsabilidades de administrador](admin-responsibilities.md)
+- [Responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

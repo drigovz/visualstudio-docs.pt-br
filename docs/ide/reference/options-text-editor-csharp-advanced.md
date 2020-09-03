@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214686"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
@@ -129,7 +129,7 @@ Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre 
 
 ## <a name="editor-help"></a>Ajuda do Editor
 ::: moniker range=">=vs-2019"
-- Dicas de nome de parâmetro embutido 
+- Dicas de Nome de Parâmetro Embutido 
     
     Quando selecionado, insere dicas de nome de parâmetro para literais, literais convertidos e instanciações de objeto antes de cada argumento nas chamadas de função.  
     

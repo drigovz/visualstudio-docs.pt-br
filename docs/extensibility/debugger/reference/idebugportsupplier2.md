@@ -13,26 +13,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724480"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-Esta interface fornece portas para o Gerenciador de depuração de sessão (SDM).
+Essa interface fornece portas para o SDM (Gerenciador de depuração de sessão).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
-Um fornecedor de porto personalizado implementa essa interface para representar um fornecedor de porta.
+Um fornecedor de porta personalizado implementa essa interface para representar um fornecedor de porta.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Uma chamada `CoCreateInstance` para com o `GUID` retorno de um fornecedor de porta esta interface (esta é a maneira típica de obter esta interface). Por exemplo:
+Uma chamada para `CoCreateInstance` com um fornecedor de porta `GUID` retorna essa interface (essa é a maneira típica de obter essa interface). Por exemplo:
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -49,36 +49,36 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }
 ```
 
-Uma chamada para [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) retorna essa interface, representando [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]o fornecedor de porta atual que está sendo usado por .
+Uma chamada para [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) retorna essa interface, representando o fornecedor de porta atual que está sendo usado pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
-- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) retorna esta interface, representando o fornecedor de portas que criou a porta.
+- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) retorna essa interface, representando o fornecedor da porta que criou a porta.
 
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) representa uma `IDebugPortSupplier` lista de `IEnumDebugPortSuppliers` interfaces (a interface é obtida da [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]representando todos os fornecedores de portas registrados com ).
+- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) representa uma lista de `IDebugPortSupplier` interfaces (a `IEnumDebugPortSuppliers` interface é Obtida de [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), representando todos os fornecedores de porta registrados com o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ).
 
 Um mecanismo de depuração normalmente não interage com um fornecedor de porta.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
-A tabela a seguir `IDebugPortSupplier2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+A tabela a seguir mostra os métodos de `IDebugPortSupplier2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Pega o nome do fornecedor do porto.|
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Obtém o identificador do fornecedor do porto.|
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Obtém um porto de um fornecedor portuário.|
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumera os portos que já existem.|
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifica se um fornecedor portuário suporta a adição de novas portas.|
-|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Adiciona um porto.|
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Obtém o nome do fornecedor da porta.|
+|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Obtém o identificador do fornecedor da porta.|
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Obtém uma porta de um fornecedor de porta.|
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumera as portas que já existem.|
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifica se um fornecedor de porta dá suporte à adição de novas portas.|
+|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Adiciona uma porta.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Remove uma porta.|
 
 ## <a name="remarks"></a>Comentários
-Um fornecedor portuário pode identificar-se por nome e ID, adicionar e remover portas e enumerar todas as portas que o fornecedor portuário fornece.
+Um fornecedor de porta pode se identificar por nome e ID, adicionar e remover portas e enumerar todas as portas que o fornecedor de porta fornece.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

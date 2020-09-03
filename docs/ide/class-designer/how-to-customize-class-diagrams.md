@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770175"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Como personalizar diagramas de classe
@@ -37,7 +37,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
 2. Na barra de ferramentas **Designer de classe** , clique no botão **ampliar** ou **reduzir** para alterar o nível de zoom da superfície do designer.
 
-     ou o
+     ou
 
      Especifique um determinado valor de zoom. É possível usar a lista suspensa **Aplicar Zoom** ou digitar um nível de zoom válido (o intervalo válido é entre 10% e 400%).
 

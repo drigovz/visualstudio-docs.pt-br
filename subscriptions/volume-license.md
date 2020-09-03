@@ -8,13 +8,13 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Saiba como os administradores de contratos de licença de volume podem acessar o Portal de Administração de assinaturas do Visual Studio
 ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233139"
 ---
-# <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Acessando o Portal de Administração como um admin em um contrato de Licença de Volume
+# <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Acessando o portal de administração como um administrador em um contrato de licença por volume
 
 Se você for o contato principal ou para notificações no contrato de sua organização, o acesso ao portal será provisionado automaticamente para você ao configurar seu contrato de licenciamento por volume. Você receberá um email de boas-vindas disparado pelo sistema, que solicitará sua entrada no portal. O email indicará qual endereço de email deve ser usado para entrar no portal. 
 
@@ -23,7 +23,7 @@ Se você for o contato principal ou para notificações no contrato de sua organ
 
 Quando estiver conectado, você será configurado automaticamente como um superadministrador e poderá começar a gerenciar assinaturas e outros administradores. Para obter informações sobre as diferenças entre superadministradores e administradores, dê uma olhada em nosso artigo sobre [funções de administrador](admin-roles.md).
 
-Isso se aplica a todos os tipos de contratos de licenciamento de volume, incluindo, mas não se limitando a: contratos corporativos, assinaturas corporativas, Select, Select Plus, Open, Open License, Govt. e Academic agreements. 
+Isso se aplica a todos os tipos de contrato de licenciamento por volume, incluindo, mas não se limitando a: contratos Enterprise, assinaturas corporativas, selecione, selecione mais, abra, abra licença, govt. e contratos acadêmicos. 
 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

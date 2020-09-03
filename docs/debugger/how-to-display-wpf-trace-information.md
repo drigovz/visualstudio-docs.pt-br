@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349777"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Como exibir informações de acompanhamento WPF
@@ -84,5 +84,5 @@ O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]�
 
 8. Clique em **OK**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando WPF](../debugger/debugging-wpf.md)

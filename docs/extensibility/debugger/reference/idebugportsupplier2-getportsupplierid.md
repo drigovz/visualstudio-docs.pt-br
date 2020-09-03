@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2:GetPortSupplierId | Microsoft Docs
+title: 'IDebugPortSupplier2:: GetPortSupplierId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9f56e412d0312de4b6e9522da24004ca37d522aa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724611"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
-Obtém o identificador do fornecedor do porto.
+Obtém o identificador do fornecedor da porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ HRESULT GetPortSupplierId( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pguidPortSupplier`\
-[fora] Retorna o GUID do fornecedor portuário.
+fora Retorna o GUID do fornecedor da porta.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aefe710cc730d5624abc01bbdfc54d9961788787
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656392"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica informações de documentação para funções de `get` e `set` para propriedades ECMAScript 3.
+Especifica informações de documentação para o `get` e `set` funções para propriedades ECMAScript 3.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,11 +44,11 @@ Especifica informações de documentação para funções de `get` e `set` para 
 
 - Uma função de construtor JavaScript.
 
-  `integer` Opcional. Se `type` for `Number`, especifica se a propriedade é um número inteiro. Defina como `true` para indicar que a propriedade é um inteiro; caso contrário, defina como `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
+  `integer` Opcional. Se `type` for `Number` , especifica se a propriedade é um inteiro. Defina como `true` para indicar que a propriedade é um inteiro; caso contrário, defina como `false` . Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
-  `domElement` Opcional. Esse atributo foi preterido; o atributo `type` tem precedência sobre esse atributo. Esse atributo especifica se a propriedade documentada é um elemento DOM. Defina como `true` para especificar que a propriedade é um elemento DOM; caso contrário, defina como `false`. Se o atributo `type` não estiver definido e `domElement` estiver definido como `true`, o IntelliSense tratará a propriedade documentada como um `HTMLElement` ao executar a conclusão da instrução.
+  `domElement` Opcional. Esse atributo foi preterido; o atributo `type` tem precedência sobre esse atributo. Esse atributo especifica se a propriedade documentada é um elemento DOM. Defina como `true` para especificar que a propriedade é um elemento DOM; caso contrário, defina como `false` . Se o `type` atributo não estiver definido e `domElement` for definido como `true` , o IntelliSense tratará a propriedade documentada como um `HTMLElement` ao executar a conclusão da instrução.
 
-  `mayBeNull` Opcional. Especifica se a propriedade documentada pode ser definida como nula. Defina como `true` para indicar que a propriedade pode ser definida como nula; caso contrário, defina como `false`. O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
+  `mayBeNull` Opcional. Especifica se a propriedade documentada pode ser definida como nula. Defina como `true` para indicar que a propriedade pode ser definida como nula; caso contrário, defina como `false` . O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
   `elementType` Opcional. Se `type` for `Array`, esse atributo especificará o tipo dos elementos na matriz.
 
@@ -58,17 +58,17 @@ Especifica informações de documentação para funções de `get` e `set` para 
 
   `elementMayBeNull` Opcional. Se `type` for `Array`, especificará se os elementos na matriz podem ser definidos como null. Defina como `true` para indicar que os elementos na matriz podem ser definidos como null; caso contrário, defina como `false`. O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
-  `locid` Opcional. O identificador para informações de localização sobre a propriedade. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo do identificador depende do formato especificado no elemento [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. O identificador para informações de localização sobre a propriedade. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo de identificador depende do formato especificado no [\<loc>](../ide/loc-javascript.md) elemento.
 
-  `description` Opcional. Uma descrição da propriedade.
+  `description` Opcional. A descrição da propriedade.
 
 ## <a name="remarks"></a>Comentários
- As propriedades ECMAScript 5 usam o elemento [\<summary >](../ide/summary-javascript.md) .
+ As propriedades ECMAScript 5 usam o [\<summary>](../ide/summary-javascript.md) elemento.
 
- Use o elemento `<value>` imediatamente antes da função `get` ou `set`.
+ Use o `<value>` elemento imediatamente antes da `get` `set` função ou.
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir mostra como usar o elemento `<value>` em uma função `get`.
+ O exemplo de código a seguir mostra como usar o `<value>` elemento em uma `get` função.
 
 ```javascript
 function Sys$CancelEventArgs$get_cancel() {
@@ -78,5 +78,5 @@ function Sys$CancelEventArgs$get_cancel() {
 }
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)

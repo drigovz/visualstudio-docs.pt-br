@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489630"
 ---
 # <a name="optimizing-your-azure-code"></a>Otimizando o código do Azure

@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643361"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Adicionar o cache do Azure para Redis usando os serviços conectados do Visual Studio
@@ -51,7 +51,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 1. Na página **Adicionar dependência** , selecione **cache do Azure para Redis**.
 
-    ![Adicionar cache do Azure para Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
+    ![Adicionar o Cache do Azure para Redis](./media/azure-redis-cache-add-connected-service/azure-redis-cache.png)
 
     Se você ainda não tiver entrado, entre em sua conta do Azure. Se você não tiver uma conta do Azure, poderá se inscrever para uma [avaliação gratuita](https://azure.microsoft.com/account/free).
 
@@ -83,7 +83,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
    ![Dependências de serviço](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Cache do Azure para a página do produto Redis](https://azure.microsoft.com/services/cache)
 - [Documentação do cache do Azure para Redis](/azure/azure-cache-for-redis/)

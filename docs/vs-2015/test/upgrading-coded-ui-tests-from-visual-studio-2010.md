@@ -9,10 +9,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a29e531ca9b2a74e67abf80a0e3017a0f5b0b07
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298003"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
@@ -46,7 +46,7 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 |Novas APIs de teste de código de IU foram adicionadas ao [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Haverá falha na compilação**<br /><br /> Se você criar Testes de IU codificados usando a nova API de teste de IU no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], esses projetos não poderão ser abertos no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Os projetos que usam a nova API devem ser gerenciados somente no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |No [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], foram adicionadas referências dentro de uma instrução ‘Choose’ no arquivo csproj. No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], estamos usando um arquivo de destino de Comentários para incluir referências ao Assembly de Teste de IU codificado.|No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], não é possível adicionar um Teste de IU codificado a um Projeto de teste criado no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (ou SP1) que não continha um Teste de IU codificado.<br /><br /> O processo de reparação adiciona o arquivo de destino e a instrução Choose. Se um Teste de IU codificado não estiver no Projeto de teste, o projeto será marcado como reparado e as referências apropriadas não serão adicionadas na adição do Teste de IU codificado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Será necessário criar um novo Projeto de teste na mesma solução usando o [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e adicionar o novo Teste de IU codificado a ele. Como alternativa, adicione Testes de IU codificados ao Projeto de teste no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 e abra esse projeto no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-## <a name="UpgradingCodedUIFromVS2010_Update"></a> Atualização do Visual Studio 2010 SP1
+## <a name="visual-studio-2010-sp1-update"></a><a name="UpgradingCodedUIFromVS2010_Update"></a> Atualização do Visual Studio 2010 SP1
  Uma atualização para o [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 com suporte de compatibilidade para o Visual Studio 2012 e o Windows 8 está disponível para download no [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=34677) e também como uma atualização do Visual Studio.
 
  Depois de aplicar a atualização, os seguintes recursos de ferramenta de teste de IU codificado do [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 serão aprimorados para o Windows 8:
@@ -63,5 +63,5 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 
 - **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](https://support.microsoft.com/help/2736182/a-gdr-update-for-visual-studio-2010-sp1-is-available-to-add-compatibil).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Portando, migrando e Atualizando projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [atualizando testes de versões anteriores do Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [gerando um teste de interface do usuário codificado de uma ação existente gravando](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurações e plataformas com suporte para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

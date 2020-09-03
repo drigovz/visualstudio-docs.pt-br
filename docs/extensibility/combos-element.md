@@ -1,5 +1,5 @@
 ---
-title: Elemento Combos | Microsoft Docs
+title: Elemento de combinação | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739807"
 ---
-# <a name="combos-element"></a>Elemento combos
-Grupos [Elementos de elemento combo.](../extensibility/combo-element.md)
+# <a name="combos-element"></a>Elemento de combinação
+Agrupa elementos de [elemento de combinação](../extensibility/combo-element.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <Combos>
@@ -37,20 +37,20 @@ Grupos [Elementos de elemento combo.](../extensibility/combo-element.md)
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento combos](../extensibility/combos-element.md)|Grupos combo elementos.|
-|[Elemento combo](../extensibility/combo-element.md)|Define os comandos que aparecem em uma caixa de combinação.|
+|[Elemento de combinação](../extensibility/combos-element.md)|Agrupa elementos de combinação.|
+|[Elemento de combinação](../extensibility/combo-element.md)|Define os comandos que aparecem em uma caixa de combinação.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento comandos](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|
+|[Elemento Commands](../extensibility/commands-element.md)|Representa a coleção de comandos na barra de ferramentas VSPackage.|
 
 ## <a name="example"></a>Exemplo
 
@@ -77,5 +77,5 @@ Grupos [Elementos de elemento combo.](../extensibility/combo-element.md)
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Como o VSPackages adiciona elementos de interface de usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

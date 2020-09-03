@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349751"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Depurar aplicativos ASP.NET ou ASP.NET Core no Visual Studio
@@ -138,9 +138,9 @@ Os projetos ASP.NET têm *web.config* arquivos por padrão, que contêm as infor
    </configuration>
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]o detecta automaticamente quaisquer alterações em *web.config* arquivos e aplica as novas definições de configuração. Você não precisa reiniciar o computador ou o servidor IIS para que as alterações entrem em vigor.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o detecta automaticamente quaisquer alterações em *web.config* arquivos e aplica as novas definições de configuração. Você não precisa reiniciar o computador ou o servidor IIS para que as alterações entrem em vigor.
 
-Um site pode conter vários diretórios virtuais e subdiretórios, com *web.config* arquivos em cada um. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]os aplicativos herdam as definições de configuração de *web.config* arquivos em níveis mais altos no caminho da URL. As configurações de arquivo hierárquico *web.config* se aplicam a todos os [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos abaixo delas na hierarquia. Definir uma configuração diferente em um arquivo de *web.config* inferior na hierarquia substitui as configurações no arquivo superior.
+Um site pode conter vários diretórios virtuais e subdiretórios, com *web.config* arquivos em cada um. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] os aplicativos herdam as definições de configuração de *web.config* arquivos em níveis mais altos no caminho da URL. As configurações de arquivo hierárquico *web.config* se aplicam a todos os [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos abaixo delas na hierarquia. Definir uma configuração diferente em um arquivo de *web.config* inferior na hierarquia substitui as configurações no arquivo superior.
 
 Por exemplo, se você especificar `debug="true"` no <em>www.Microsoft.com/AAA/web.config</em>, qualquer aplicativo na pasta *AAA* ou em qualquer subpasta de *AAA* herda essa configuração, exceto se um desses aplicativos substituir a configuração pelo seu próprio arquivo de *web.config* .
 
@@ -182,7 +182,7 @@ Há diferentes maneiras de publicar aplicativos no IIS. Estas etapas mostram com
 > [!IMPORTANT]
 > O modo de depuração reduz consideravelmente o desempenho do seu aplicativo. Para obter o melhor desempenho, defina `debug="false"` na *web.config* e especifique uma compilação de versão ao implantar um aplicativo de produção ou realizar medidas de desempenho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração do ASP.NET: requisitos do sistema](aspnet-debugging-system-requirements.md)
 - [Como executar o processo de trabalho em uma conta de usuário](how-to-run-the-worker-process-under-a-user-account.md)
 - [Como localizar o nome do processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

@@ -18,10 +18,10 @@ ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
 ms.openlocfilehash: fe4eec389389622f0d87d30edbbd46d7c5b53d80
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81276299"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio
@@ -32,7 +32,7 @@ Além disso, observe o seguinte sobre a página:
 
 * Cada carga de trabalho tem sua própria seção, seguida pela ID da carga de trabalho e por uma tabela dos componentes que estão disponíveis para a carga de trabalho.
 * Por padrão, os componentes **Obrigatórios** serão instalados durante a instalação da carga de trabalho.
-* Se você escolher, você também pode instalar os componentes **Recomendado** e **Opcional.**
+* Se você optar por, também poderá instalar os componentes **recomendados** e **opcionais** .
 * Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
 
 Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, consulte a página [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).

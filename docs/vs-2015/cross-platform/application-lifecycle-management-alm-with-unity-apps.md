@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233285"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos do Unity
@@ -83,7 +83,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |Compilar definições com pré e pós-scripts|Sim|Uma definição de build personalizada que usa a linha de comando do Unity para executar um build também pode ser configurada para scripts de pré e pós-build.|  
 |Integração contínua incluindo check-ins restritos|Sim|Check-ins restritos somente para TFVC, uma vez que Git funciona em um modelo de solicitação pull, em vez de check-ins.|  
   
-## <a name="testing"></a>Testes  
+## <a name="testing"></a>Testando  
  Link de referência: **[Testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
@@ -91,9 +91,9 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||  
 |Teste manual|Sim||  
 |Gerenciador de Teste (testes de gravação e reprodução)|Somente dispositivos Windows e emuladores Android||  
-|Cobertura de código|n/d|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|  
+|Cobertura de código|N/D|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|  
 |[Teste de unidade de código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|O Unity fornece a própria estrutura de teste de unidade como parte das [Ferramentas de Teste do Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|  
-|[Use automação de iu para testar seu código](../test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|  
+|[Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|  
   
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código  
  Link de referência: **[Melhorar a qualidade do código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -103,7 +103,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |[Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sim|Pode analisar o código de script C# no Visual Studio.|  
 |[Localizando código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sim|Pode analisar o código de script C# no Visual Studio.|  
 |[Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sim|Pode analisar o código de script C# no Visual Studio.|  
-|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|  
+|[Performance Explorer](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|  
 |[Analisar problemas de memória .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|  
   
 ## <a name="release-management"></a>Gerenciamento de liberações  

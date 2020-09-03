@@ -7,10 +7,10 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 47ddfa11b4c05896037c1fb18e285d46fc79520b
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88214617"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac
@@ -40,7 +40,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 2. Selecione **Arquivo > Nova Solução**.
 
-3. Selecione a categoria **.NET Core > Aplicativo** e o modelo **Aplicativo Web ASP.NET Core (C#)**. Clique em **Próximo**.
+3. Selecione a categoria **.NET Core > Aplicativo** e o modelo **Aplicativo Web ASP.NET Core (C#)**. Clique em **Avançar**.
 
     ![Captura de tela mostrando como selecionar um modelo de aplicativo Web para seu novo projeto.](media/netcore-image1.png)
 
@@ -126,7 +126,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![Captura de tela mostrando a guia geral de configuração de execução, com executar no console externo selecionado e pausar a saída do console não selecionada.](media/netcore-image19.png)
 
-5. Selecione **F5** para compilar e executar o aplicativo. Como alternativa, você pode selecionar **Executar > Iniciar Depuração**.
+5. Pressione **F5** para compilar e executar o aplicativo. Como alternativa, você pode selecionar **Executar > Iniciar Depuração**.
 
 6. O Visual Studio para Mac iniciará duas janelas. A primeira é uma janela de console que fornece uma exibição do aplicativo para servidores auto-hospedados.
 

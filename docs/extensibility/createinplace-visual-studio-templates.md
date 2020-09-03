@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (Modelos de Estúdio Visual)
+title: Elemento CreateInPlace (modelos do Visual Studio)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739667"
 ---
-# <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace (modelos do Visual Studio)
-Especifica se criar o projeto e executar a substituição de parâmetros no local especificado ou executar a substituição de parâmetros em um local temporário e, em seguida, salvar o projeto no local especificado.
+# <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (modelos do Visual Studio)
+Especifica se deseja criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salvar o projeto no local especificado.
 
- \<VSTemplate \<>Modelo \<de dados> criar> no lugar
+ \<VSTemplate> \<TemplateData>
+ \<CreateInPlace>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <CreateInPlace> true/false </CreateInPlace>
@@ -45,18 +46,18 @@ Especifica se criar o projeto e executar a substituição de parâmetros no loca
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve `true` `false`ser ou . Se `true`, o projeto for criado e a substituição dos parâmetros for realizada no local especificado na caixa de diálogo **Novo Projeto.** Se `false`, a substituição do parâmetro for realizada em um local temporário e o projeto for copiado para o local especificado.
+ O texto deve ser `true` ou `false` . Se `true` , o projeto é criado e a substituição de parâmetro é executada no local especificado na caixa de diálogo **novo projeto** . Se `false` , a substituição de parâmetro será executada em um local temporário e o projeto será copiado para o local especificado.
 
 ## <a name="remarks"></a>Comentários
  `CreateInPlace` é um elemento opcional. O valor padrão é `true`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] os metadados de um modelo.
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo.
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

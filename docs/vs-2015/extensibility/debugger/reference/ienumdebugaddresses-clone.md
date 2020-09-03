@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Clone | Microsoft Docs
+title: 'IEnumDebugAddresses:: clone | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 732b01b813a9d09861d87a75a3078407bb75bcab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191968"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
@@ -40,13 +40,13 @@ int Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppEnum`  
- [out] Retorna uma cópia dessa enumeração como um objeto separado.  
+ fora Retorna uma cópia dessa enumeração como um objeto separado.  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/Valor do retorno  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- A cópia da enumeração tem o mesmo estado original no momento em que esse método é chamado. No entanto, a cópia e o original estados são separados e podem ser alterados individualmente.  
+ A cópia da enumeração tem o mesmo estado que o original no momento em que esse método é chamado. No entanto, os Estados da cópia e do original são separados e podem ser alterados individualmente.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

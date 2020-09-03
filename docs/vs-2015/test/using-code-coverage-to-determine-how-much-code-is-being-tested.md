@@ -11,10 +11,10 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851248"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usando cobertura de código para determinar quanto código está sendo testado
@@ -26,9 +26,9 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 
  A cobertura de código é uma opção quando você executa métodos de teste usando o Gerenciador de Testes. A tabela de resultados mostra a porcentagem do código que foi executada em cada assembly, classe e método. Além disso, o editor de código-fonte mostra que código foi testado.
 
- ![Resultados da cobertura de código com cores](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Resultados da cobertura de código com coloração](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -50,7 +50,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 >   Se você estiver trabalhando com código não gerenciado (nativo), use uma compilação de depuração.
 >   - Verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.
 >
->   Se você não obtiver os resultados esperados, consulte [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.
+>   Se você não obtiver os resultados esperados, consulte [solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.
 
 ## <a name="reporting-in-blocks-or-lines"></a>Emissão de relatórios em os blocos ou linhas
  A cobertura de código é contada em *blocos*. Um bloco é uma parte do código com exatamente um ponto de entrada e de saída.  Se o fluxo de controle do programa passar por um bloco durante a execução do teste, esse bloco será considerado coberto. O número de vezes que o bloco é usado não tem efeito sobre o resultado.
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Use as seguintes macros:
 
- `ExcludeFromCodeCoverage(` *Exclusionname* `, L"` *nomedafunção* `");`
+ `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
 
- `ExcludeSourceFromCodeCoverage(` *Exclusionname* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName* é qualquer nome exclusivo.
 
@@ -256,11 +256,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.
 
-   - <em>No entanto, não há nenhum campo chamado **Tipo de Arquivo de Configurações de Execução</em>* .*
+   - <em>No entanto, não há nenhum campo chamado **Tipo de Arquivo de Configurações de Execução</em>*.*
 
       Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.
 
-   ![Definindo a definição de compilação para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Configurando a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    Depois que a compilação é executada, os resultados da cobertura de código são anexados à execução do teste e aparecem no resumo de compilação.
 
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      No menu **Iniciar** do Windows, escolha **Todos os Programas**, **Microsoft Visual Studio**, **Ferramentas do Visual Studio** e **Prompt de Comando do Desenvolvedor**.
 
-2. Executar:
+2. Execute:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>{1&gt;Orientação&lt;1}
+### <a name="guidance"></a>Diretrizes
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md) [solução de problemas](../test/troubleshooting-code-coverage.md) [de unidade de cobertura de código teste seu código](../test/unit-test-your-code.md)

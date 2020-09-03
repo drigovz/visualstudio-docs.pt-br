@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533726"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de atalho no Help Viewer
@@ -24,7 +24,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 
 |Área|Teclas|Ação|
 |----------|---------------|------------|
-|Aplicativo geral|**Space**|Use em vez de **Enter** em qualquer lugar, exceto nos campos de edição.|
+|Aplicativo geral|**Disco**|Use em vez de **Enter** em qualquer lugar, exceto nos campos de edição.|
 |Aplicativo geral|**F1**|Abra a **Ajuda** do elemento atual da interface do usuário.|
 |Aplicativo geral|**F11**|Alterne entre o modo de exibição de tela inteira e o modo de exibição normal.|
 |Barra de ferramentas|**Backspace**<br /><br /> -OU-<br /><br /> **ALT** + **Seta para a esquerda**|Exiba a página anterior.|
@@ -45,10 +45,10 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Tópico|Tecla do **Menu de Atalho**<br /><br /> OU<br /><br /> **Shift** + **F10**|Exiba o menu de atalho do elemento da interface do usuário atual.|
 |Tópico|**Seta para cima**|Role até o início do documento uma linha por vez.|
 |Tópico|**Seta para baixo**|Role até o final do documento uma linha por vez.|
-|Tópico|**Page Up**|Role até o início do documento uma tela por vez.|
+|Tópico|**Página acima**|Role até o início do documento uma tela por vez.|
 |Tópico|**Page Down**|Role até o final do documento uma tela por vez.|
 |Tópico|**Início**|Vá até o início do documento.|
-|Tópico|**End**|Vá até o final do documento.|
+|Tópico|**Completo**|Vá até o final do documento.|
 |Tópico|**Ctrl** + **F**|Localize o texto de pesquisa nesta página.|
 |Tópico|**F5**|Atualize a página atual.|
 |Tópico|**Ctrl** + **P**|Imprima a página atual.|
@@ -64,7 +64,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Tópico|**Ctrl** + **Shift** + **Sinal de adição**|Aumente o zoom em 10%.|
 |Tópico|**Ctrl** + **Sinal de subtração**|Diminua o zoom em 10%.|
 |Tópico|**Ctrl** + **0** (zero)|Altere o zoom para 100%.|
-|Índice|**Tab**|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
+|Índice|**Guia**|Alterne o foco da entrada de palavras-chave para a lista de palavras-chave.|
 |Índice|**Ctrl** + **K**|Mude entre a exibição de entradas que contêm a palavra-chave que você especificar e entradas que começam com a palavra-chave que você especificar.|
 |Favoritos|**Ctrl** + **Shift** + **Del**|Limpe o histórico de navegação.|
 |Favoritos|**Confirmar**|Exclua o item especificado.|
@@ -83,8 +83,8 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Localizar|**Digita**|Altere o foco para o próximo item.|
 |Localizar|**Shift** + **Insira**|Altere o foco para o item anterior.|
 |Localizar|**Esc**|Oculta a caixa de texto **Localizar**.|
-|Barra de status|**ALT** + **E**|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
-|Barra de status|**ALT** + **U**|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
+|Barra de Status|**ALT** + **E**|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
+|Barra de Status|**ALT** + **U**|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
 
  **Gerenciamento de janelas**
 
@@ -101,16 +101,16 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |-|-|
 |**ALT** + **D**|Altere a origem de instalação para o disco.|
 |**ALT** + **O**|Altere a origem de instalação para online.|
-|**Tab**|Altere o foco para a caixa de texto **Caminho do repositório local**.|
-|**Tab**|Altere o foco para o botão **Mover**.|
+|**Guia**|Altere o foco para a caixa de texto **Caminho do repositório local**.|
+|**Guia**|Altere o foco para o botão **Mover**.|
 |**ALT** + **V**|Abra a caixa de diálogo **Mover Conteúdo**.|
 |**Ctrl** + **ALT** + **F**|Altere o foco para a caixa de texto **Filtrar documentação**.|
-|**Tab**|Altere o foco para a lista de documentação.|
+|**Guia**|Altere o foco para a lista de documentação.|
 |**Seta para cima** e **Seta para Baixo**|Role a lista de documentação.|
-|**Space**|Adicione um item à lista **Alterações pendentes**.|
-|**Tab**|Altere o foco para a lista **Alterações pendentes**.|
+|**Disco**|Adicione um item à lista **Alterações pendentes**.|
+|**Guia**|Altere o foco para a lista **Alterações pendentes**.|
 |**Seta para cima** e **Seta para Baixo**|Role a lista **Alterações pendentes**.|
-|**Space**|Remova um item da lista **Alterações pendentes**.|
+|**Disco**|Remova um item da lista **Alterações pendentes**.|
 |**ALT** + **T**|Aplique todas as alterações pendentes.|
 
 ## <a name="see-also"></a>Confira também

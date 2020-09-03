@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 92d0e984d4ccf595af2821dff9c02d069b16404d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273836"
 ---
 # <a name="advanced-example-for-containers"></a>Exemplo avançado para contêineres
@@ -174,7 +174,7 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 Opcionalmente, passar um ou os dois argumentos `FROM_IMAGE` e `CHANNEL_URL` usando a opção de linha de comando `--build-arg` para especificar uma imagem de base diferente ou o local de um layout interno para manter uma imagem fixa.
 
    > [!TIP]
-   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes do Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md).
    >
 
 ## <a name="diagnosing-install-failures"></a>Diagnosticando falhas de instalação

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297788"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para projetar aplicativos acessíveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use os links a seguir para localizar informações sobre as tecnologias que dão suporte a design acessível, bem como dicas e exemplos para desenvolver aplicativos do Windows e sites da Web acessíveis. Informações gerais sobre acessibilidade podem ser encontradas online em [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
+Use os links a seguir para localizar informações sobre as tecnologias que dão suporte a design acessível, bem como dicas e exemplos para desenvolver aplicativos do Windows e sites da Web acessíveis. Informações gerais sobre acessibilidade podem ser encontradas online em [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/) .
 
 ## <a name="technologies"></a>Tecnologias
 
@@ -56,5 +56,5 @@ Use os links a seguir para localizar informações sobre as tecnologias que dão
 
 - **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Recursos de Acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

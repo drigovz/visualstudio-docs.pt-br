@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349647"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Como examinar um código de sistema após uma exceção
@@ -43,5 +43,5 @@ Quando uma exceção ocorre, você poderá precisar examinar o código dentro de
 
 4. Agora você pode examinar o código do sistema na janela **Pilha de Chamadas** e em outras janelas. Por exemplo, você pode clicar duas vezes em um registro de ativação de chamadas para exibir o código em uma fonte ou na janela **Desmontagem**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)

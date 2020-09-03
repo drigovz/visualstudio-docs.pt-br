@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 090aeb83f6d0480c511acd808498953ae6c01940
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851098"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
@@ -23,7 +23,7 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
 
  Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, já pode carregar uma imagem. Antes de adicionar um comentário ao seu código e testá-lo, leva tempo para examinar os conceitos de código, pois você usará esses conceitos frequentemente:
 
-- Quando você clica duas vezes no botão **Mostrar uma imagem** no Designer de Formulários do Windows, o IDE adiciona automaticamente um *método* para o código do seu programa.
+- Quando você clica duas vezes no botão **mostrar uma imagem** no designer de formulários do Windows, o IDE adiciona automaticamente um *método* ao código do programa.
 
 - Os métodos são a forma como você organiza seu código: é como o código é agrupado.
 
@@ -43,9 +43,9 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Não é necessário um ponto e vírgula no Visual Basic.) A instrução anterior informa o controle de `PictureBox` para carregar o arquivo selecionado pelo usuário com o componente **OpenFileDialog** .
+   As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Não é necessário um ponto e vírgula no Visual Basic.) A instrução anterior informa o `PictureBox` controle para carregar o arquivo selecionado pelo usuário com o componente **OpenFileDialog** .
 
-  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [tutorial 1: criar um visualizador C# de imagens no-vídeo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagem no Visual Basic-Video 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [tutorial 1: criar um visualizador de imagem em C#-vídeo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-add-comments"></a>Para adicionar comentários
 
@@ -55,14 +55,14 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]
 
     > [!NOTE]
-    > O manipulador de eventos de Clique do botão **showButton** foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa o programa para abrir a caixa de diálogo **Abrir Arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK**, carregue o arquivo na PictureBox.
+    > O manipulador de eventos de Clique do botão **showButton** foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa ao seu programa para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em PictureBox.
 
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.
     >
-    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas**, **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#** . Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops**, **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
+    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas**, **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#**. Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops**, **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
     >
-    >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla TAB. Muitos snippets aparecem na janela **IntelliSense**, e é por isso que você escolhe a tecla TAB duas vezes: primeiro para selecionar o snippet na janela **IntelliSense** e depois para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
+    >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla TAB. Muitos trechos de código aparecem na janela do **IntelliSense** , que é o motivo pelo qual você escolhe a tecla TAB duas vezes: primeiro para selecionar o trecho na janela do **IntelliSense** e, em seguida, dizer ao IDE para usar o trecho de código. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
 
 2. Antes de executar o programa, salve seu programa clicando no botão **Salvar Todos** na barra de ferramentas, que aparece da seguinte forma.
 
@@ -81,7 +81,7 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
 2. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de **Meus Documentos**, dentro da pasta **My Pictures\Sample Pictures**.
 
     > [!NOTE]
-    > Se você não vir nenhuma imagem na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro "Todos os arquivos (*.\*)" está selecionado na lista suspensa no canto inferior direito da caixa de diálogo.
+    > Se você não vir nenhuma imagem na caixa de diálogo **selecionar um arquivo de imagem** , certifique-se de que o filtro "todos os arquivos (*. \* )" esteja selecionado na lista suspensa no lado inferior direito da caixa de diálogo.
 
 3. Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os recipientes TableLayoutPanel e FlowLayoutPanel: eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.
 
@@ -89,6 +89,6 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a etapa seguinte do tutorial, consulte [Etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-- Para voltar à próxima anterior do tutorial, consulte [Etapa 8: escrever código para o manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 8: escrever código para o manipulador de eventos do botão Mostrar uma imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

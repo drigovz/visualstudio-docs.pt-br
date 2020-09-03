@@ -11,26 +11,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 554ac24d7148f0d5de07779f35376b28b7ff7b07
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724838"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
-Representa uma ui personalizada para selecionar a porta.
+Representa uma interface do usuário personalizada para selecionar a porta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortPicker : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por fornecedores portuários. Um fornecedor de porta define seu seletor de portas `metricPortPickerCLSID` expondo-o como clsid e apontando a métrica para o CLSID exposto.
+ Essa interface é implementada por fornecedores de porta. Um fornecedor de porta define seu seletor de porta expondo-o como um CLSID e apontando a `metricPortPickerCLSID` métrica no CLSID exposto.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugPortPicker`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugPortPicker` .
 
 |Método|Descrição|
 |------------|-----------------|
@@ -38,8 +38,8 @@ IDebugPortPicker : IUnknown
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Define o provedor de serviços.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

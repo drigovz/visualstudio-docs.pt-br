@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769404"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
@@ -48,7 +48,7 @@ Os pontos de interrupção são uma das técnicas de depuração mais importante
 > [!NOTE]
 > Se você souber a tarefa ou o problema que está tentando resolver, mas precisar saber qual tipo de ponto de interrupção usar, consulte [localizar sua tarefa de depuração](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Definir pontos de interrupção no código-fonte
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Definir pontos de interrupção no código-fonte
 
 Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código C# a seguir, você pode definir um ponto de interrupção na linha de código com a atribuição de variável ( `int testInt = 1` ), o `for` loop ou qualquer código dentro do `for` loop. Você não pode definir um ponto de interrupção em assinaturas de método, declarações para um namespace ou classe, ou declarações de variável, se não houver nenhuma atribuição e nenhum getter/setter.
 
@@ -74,7 +74,7 @@ Aqui estão algumas instruções gerais para trabalhar com pontos de interrupç�
 
 - Defina condições e ações, adicione e edite rótulos ou exporte um ponto de interrupção clicando com o botão direito do mouse nele e selecionando o comando apropriado, ou passando o cursor sobre ele e selecionando o ícone de **configurações** .
 
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Ações de ponto de interrupção e tracepoints
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Ações de ponto de interrupção e tracepoints
 
 Um *tracepoint* é um ponto de interrupção que imprime uma mensagem na janela de **Saída**. Um tracepoint pode agir como uma instrução de rastreamento temporária na linguagem de programação e não pausa a execução do código. Você cria um tracepoint definindo uma ação especial na janela **configurações de ponto de interrupção** . Para obter instruções detalhadas, consulte [usar tracepoints no depurador do Visual Studio](../debugger/using-tracepoints.md).
 
@@ -164,7 +164,7 @@ Em **condições** na janela **configurações de ponto de interrupção** , sel
 
 Coloque os valores da cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (and), `||` (or), `!` (não) e parênteses.
 
-## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Definir pontos de interrupção de função
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Definir pontos de interrupção de função
 
 Você pode interromper a execução quando uma função é chamada. Isso é útil, por exemplo, quando você sabe o nome da função, mas não sua localização. Ele também será útil se você tiver funções com o mesmo nome e quiser interromper todas elas (como funções ou funções sobrecarregadas em projetos diferentes).
 
@@ -275,7 +275,7 @@ Para abrir a janela **pontos de interrupção** , selecione **depurar**  >  **Wi
 
 Para selecionar as colunas a serem exibidas na janela **pontos de interrupção** , selecione **Mostrar colunas**. Selecione um cabeçalho de coluna para classificar a lista de pontos de interrupção por essa coluna.
 
-### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a>Rótulos de ponto de interrupção
+### <a name="breakpoint-labels"></a><a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Rótulos de ponto de interrupção
 Você pode usar rótulos para classificar e filtrar a lista de pontos de interrupção na janela **pontos de interrupção** .
 
 1. Para adicionar um rótulo a um ponto de interrupção, clique com o botão direito do mouse no ponto de interrupção no código-fonte ou na janela **pontos de interrupção** e, em seguida, selecione **Editar rótulos**. Adicione um novo rótulo ou escolha um existente e, em seguida, selecione **OK**.
@@ -289,7 +289,7 @@ Você pode usar rótulos para classificar e filtrar a lista de pontos de interru
 - Para exportar todos os pontos de interrupção, desmarque todas as caixas e deixe o campo de **pesquisa** em branco. Selecione o ícone **exportar todos os pontos de interrupção correspondentes aos critérios de pesquisa atuais** e salve o arquivo.
 - Para importar pontos de interrupção, na janela **pontos de interrupção** , selecione o ícone **importar pontos de interrupção de um arquivo** , navegue até o local do arquivo XML e selecione **abrir**.
 
-## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Definir pontos de interrupção de janelas do depurador
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Definir pontos de interrupção de janelas do depurador
 
 Você também pode definir pontos de interrupção da **pilha de chamadas** e janelas do depurador de **desmontagem** .
 

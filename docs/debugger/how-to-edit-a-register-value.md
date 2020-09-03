@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7a341fa3f8d41bf4788db5bb4b4957fd8cca81
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349816"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Como: editar um valor de registro (C#, C++, Visual Basic, F #)
@@ -42,5 +42,5 @@ A janela Registros só ficará disponível se a depuração do nível de endere�
     > [!CAUTION]
     > Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inócua pode resultar em alterações em alguns bits menos significativos no registro de um ponto flutuante.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

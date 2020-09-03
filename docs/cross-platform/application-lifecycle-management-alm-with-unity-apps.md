@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232940"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
@@ -92,13 +92,13 @@ Link de referência: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||
 |Teste manual|Sim||
 |Gerenciador de Teste (testes de gravação e reprodução)|Somente dispositivos Windows e emuladores Android||
-|Cobertura de código|n/d|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|
-|[Unidade teste seu código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|A Unity fornece sua própria estrutura de teste de unidade como parte das ferramentas de [teste Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|
+|Cobertura de código|N/D|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|
+|[Teste de unidade em seu código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|O Unity fornece sua própria estrutura de teste de unidade como parte das [ferramentas de teste do Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (repositório de ativos do Unity). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|
 |[Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)|Não|Os testes de IU codificados dependem de controles legíveis na interface do usuário do aplicativo. Os aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível para ferramentas de teste de IU codificado.|
 
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código
 
-Link de referência: ** [Melhorar a qualidade do código](../test/improve-code-quality.md)**
+Link de referência: ** [melhorar a qualidade do código](../test/improve-code-quality.md)**
 
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|

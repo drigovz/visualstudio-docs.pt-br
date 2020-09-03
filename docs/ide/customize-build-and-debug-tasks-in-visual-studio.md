@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533713"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
@@ -221,7 +221,7 @@ Você pode criar tarefas para qualquer arquivo ou pasta especificando seu nome n
 |`${relativeFile}`| O caminho relativo para o arquivo ou a pasta (por exemplo, *src\hello.js*)|
 |`${fileBasename}`| O nome do arquivo sem caminho ou extensão (por exemplo, *Olá*)|
 |`${fileDirname}`| O caminho completo para o arquivo, excluindo o nome de arquivo (por exemplo, *C:\sources\hello\src*)|
-|`${fileExtname}`| A extensão do arquivo selecionado (por exemplo, *. js*)|
+|`${fileExtname}`| A extensão do arquivo selecionado (por exemplo,  *. js*)|
 
 ## <a name="configure-debugging-with-launchvsjson"></a>Configurar a depuração com launch.vs.json
 
@@ -311,7 +311,7 @@ As configurações lidas no arquivo *.gitignore* são aplicadas ao seu diretóri
 
 ## <a name="see-also"></a>Confira também
 
-- [Desenvolver código sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Projetos Open Folder para C++](/cpp/build/open-folder-projects-cpp)
 - [Projetos do CMake para C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Referência de NMAKE](/cpp/build/reference/nmake-reference)

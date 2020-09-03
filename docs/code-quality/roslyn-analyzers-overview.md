@@ -13,53 +13,53 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 78a47cb2a5aefd7d20e0b8087f5f3ad735716175
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79431274"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Visão geral dos analisadores de código-fonte
 
-Os analisadores de código .NET Compiler Platform ("Roslyn") inspecionam seu código C# ou Visual Basic para obter estilo, qualidade e manutenção, design e outros problemas.
+Os analisadores de código .NET Compiler Platform ("Roslyn") inspecionam seu código em C# ou Visual Basic para estilo, qualidade e facilidade de manutenção, design e outros problemas.
 
-- Alguns analisadores são incorporados ao Visual Studio. O ID de diagnóstico, ou código, para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. A maioria desses analisadores incorporados inspeciona o estilo de [código](../ide/code-styles-and-code-cleanup.md)e você pode configurar preferências na [página de opções](../ide/code-styles-and-code-cleanup.md) do editor de texto ou em um [arquivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Um punhado de analisadores embutidos olham para a qualidade do código.
+- Alguns analisadores são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. A maioria desses analisadores internos inspeciona o [estilo de código](../ide/code-styles-and-code-cleanup.md)e você pode configurar preferências na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Alguns analisadores internos analisam a qualidade do código.
 
-- Você pode instalar analisadores adicionais como um pacote NuGet ou uma extensão do Visual Studio. Por exemplo: 
+- Você pode instalar analisadores adicionais como um pacote NuGet ou uma extensão do Visual Studio. Por exemplo:
 
-  - [Analisadores FXCop](../code-quality/install-fxcop-analyzers.md), analisadores de qualidade de código recomendados pela Microsoft
-  - Analisadores de terceiros, como [StyleCop,](https://www.nuget.org/packages/StyleCop.Analyzers/) [Roslynator,](https://www.nuget.org/packages/Roslynator.Analyzers/) [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/)e [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - [Analisadores do FxCop](../code-quality/install-fxcop-analyzers.md), analisadores de qualidade de código recomendados pela Microsoft
+  - Analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
-Se as violações de regras forem encontradas por um analisador, elas serão relatadas no editor de código (como um *squiggle* o código ofensivo) e na janela Lista de erros.
+Se violações de regra forem encontradas por um analisador, elas serão relatadas no editor de códigos (como um *rabisco* no código incorreto) e na janela de lista de erros.
 
 Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de código* associadas que podem ser aplicadas para corrigir o problema. Cada diagnóstico do analisador inserido no Visual Studio tem uma correção de código associada. As correções de código são mostradas no menu do ícone de lâmpada, juntamente com outros tipos de [Ações rápidas](../ide/quick-actions.md). Para saber mais sobre essas correções de código, confira [Ações rápidas comuns](../ide/common-quick-actions.md).
 
 ![Violação do analisador e correção de código de Ação Rápida](../code-quality/media/built-in-analyzer-code-fix.png)
 
-## <a name="source-code-analysis-versus-legacy-analysis"></a>Análise de código-fonte versus análise de legado
+## <a name="source-code-analysis-versus-legacy-analysis"></a>Análise de código-fonte versus análise herdada
 
-A análise de origem dos analisadores Roslyn substitui a [análise legado](../code-quality/code-analysis-for-managed-code-overview.md) por código gerenciado. Muitas das regras de análise do legado já foram reescritas como analisadores de código roslyn. Para modelos de projetos mais novos, como .NET Core e .NET Standard, a análise de legado nem está disponível.
+A análise de origem por analisadores Roslyn substitui a [análise herdada](../code-quality/code-analysis-for-managed-code-overview.md) para código gerenciado. Muitas das regras de análise herdadas já foram reescritas como analisadores de código Roslyn. Para modelos de projeto mais recentes, como projetos .NET Core e .NET Standard, a análise herdada ainda não está disponível.
 
-Como violações de regras de análise de legado, violações de análise de código-fonte aparecem na janela Lista de erros no Visual Studio. Além disso, as violações da análise de código fonte também aparecem no editor de código como *squiggles* o código ofensivo. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir&mdash;mostra três violações um vermelho, um verde e um cinza:
+Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir mostra três violações &mdash; um vermelho, um verde e um cinza:
 
-![Squiggles no editor de código no Visual Studio](media/diagnostics-severity-colors.png)
+![Rabiscos no editor de códigos do Visual Studio](media/diagnostics-severity-colors.png)
 
-Os analisadores de código inspecionam o código no momento da compilação, como a análise de legado, se estiver habilitada, mas também vivem como você digita. Você pode configurar o escopo da análise de código vivo para executar apenas para o documento atual, todos os documentos abertos ou toda a solução. [Veja Como: Configurar o escopo da análise de código ao vivo.](./configure-live-code-analysis-scope-managed-code.md)
+Os analisadores de código inspecionam o código no momento da compilação, como a análise herdada, se ela estiver habilitada, mas também ao vivo conforme você digita. Você pode configurar o escopo da análise de código ao vivo para ser executado somente para o documento atual, para todos os documentos abertos ou para a solução inteira. Consulte [como: configurar o escopo da análise de código ao vivo](./configure-live-code-analysis-scope-managed-code.md).
 
 > [!TIP]
-> Erros e avisos de tempo de build dos analisadores de código serão mostrados apenas se os analisadores estiverem instalados como um pacote NuGet. Os analisadores embutidos (por exemplo, IDE0067 e IDE0068) nunca são executados durante a construção.
+> Erros e avisos de tempo de build dos analisadores de código serão mostrados apenas se os analisadores estiverem instalados como um pacote NuGet. Os analisadores internos (por exemplo, IDE0067 e IDE0068) nunca são executados durante a compilação.
 
-Não só os analisadores de código roslyn relatam os mesmos tipos de problemas que a análise de legado, mas facilitam a correção de uma ou todas as ocorrências da violação em seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, eles são implementados como [Ações Rápidas.](../ide/quick-actions.md) Nem todos os diagnósticos do analisador têm uma correção de código associada.
+Não apenas os analisadores de código Roslyn relatam os mesmos tipos de problemas que a análise herdada faz, mas eles facilitam a correção de uma ou de todas as ocorrências da violação em seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, eles são implementados como [ações rápidas](../ide/quick-actions.md). Nem todos os diagnósticos do analisador têm uma correção de código associada.
 
 > [!NOTE]
-> Antes do lançamento do Visual Studio 2019 16.5, a opção de menu **Analyze** > **Run Code Analysis** executa a análise do legado. Iniciando o Visual Studio 2019 16.5, a opção de menu **Run Code Analysis** executa analisadores baseados em Roslyn para o projeto ou solução selecionados.
+> Antes do Visual Studio 2019 versão 16,5, a opção de menu **analisar**  >  **executar análise de código** executa a análise herdada. Iniciando o Visual Studio 2019 16,5, a opção de menu **executar análise de código** executa analisadores baseados em Roslyn para o projeto ou solução selecionada.
 
-Para diferenciar entre violações de analisadores de código e análise de legado na Lista de Erros, olhe para a coluna **Ferramenta.** Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
+Para diferenciar as violações dos analisadores de código e da análise herdada no Lista de Erros, examine a coluna de **ferramentas** . Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
 
 ![Coluna Ferramenta na Lista de Erros](media/code-analysis-tool-in-error-list.png)
 
 > [!TIP]
-> A propriedade **RunCodeAnalysis** MSBuild em um arquivo de projeto se aplica apenas à análise de legado. Se você instalar analisadores, defina **RunCodeAnalysis** como **falso** no arquivo do projeto, para evitar que a análise de legado seja executada após a compilação.
+> A Propriedade MSBuild do **RunCodeAnalysis** em um arquivo de projeto aplica-se somente à análise herdada. Se você instalar os analisadores, defina **RunCodeAnalysis** como **false** no arquivo de projeto, para impedir que a análise herdada seja executada após a compilação.
 >
 > ```xml
 > <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -67,23 +67,23 @@ Para diferenciar entre violações de analisadores de código e análise de lega
 
 ## <a name="nuget-package-versus-vsix-extension"></a>Pacote NuGet em comparação com a extensão do VSIX
 
-Os analisadores de código Roslyn podem ser instalados por projeto através de um pacote NuGet. Alguns também estão disponíveis como uma extensão do Visual Studio, nesse caso eles se aplicam a qualquer solução que você abra no Visual Studio. Há algumas importantes diferenças de comportamento entre esses dois métodos de [instalar analisadores](../code-quality/install-roslyn-analyzers.md).
+Os analisadores de código Roslyn podem ser instalados por projeto por meio de um pacote NuGet. Alguns também estão disponíveis como uma extensão do Visual Studio; nesse caso, eles se aplicam a qualquer solução que você abrir no Visual Studio. Há algumas importantes diferenças de comportamento entre esses dois métodos de [instalar analisadores](../code-quality/install-roslyn-analyzers.md).
 
 ### <a name="scope"></a>Escopo
 
-Se você instalar analisadores como uma extensão do Visual Studio, eles se aplicam no nível da solução e em todas as instâncias do Visual Studio. Se você instalar os analisadores como um pacote NuGet, que é o método preferencial, eles serão aplicáveis somente ao projeto em que o pacote NuGet foi instalado. Em ambientes de equipe, os analisadores instalados como pacotes NuGet estão no escopo para *todos os desenvolvedores* que trabalham nesse projeto.
+Se você instalar analisadores como uma extensão do Visual Studio, eles serão aplicados no nível da solução e em todas as instâncias do Visual Studio. Se você instalar os analisadores como um pacote NuGet, que é o método preferencial, eles serão aplicáveis somente ao projeto em que o pacote NuGet foi instalado. Em ambientes de equipe, os analisadores instalados como pacotes NuGet estão no escopo para *todos os desenvolvedores* que trabalham nesse projeto.
 
 ### <a name="build-errors"></a>Erros de compilação
 
 Para que as regras sejam impostas no tempo de build, incluindo por meio da linha de comando ou como parte de uma build de CI (integração contínua), instale os analisadores como um pacote NuGet. Os erros e avisos do analisador não serão exibidos no relatório de build se você instalar os analisadores como uma extensão.
 
-A imagem a seguir mostra a saída de compilação de linha de comando a partir da construção de um projeto que contém uma violação de regra do analisador:
+A imagem a seguir mostra a saída da compilação de linha de comando da criação de um projeto que contém uma violação de regra do analisador:
 
 ![Saída do MSBuild com violação de regra](media/command-line-build-analyzers.png)
 
 ### <a name="rule-severity"></a>Gravidade da regra
 
-Não é possível configurar a gravidade das regras dos analisadores que foram instalados como uma extensão do Visual Studio. Para configurar a [gravidade da regra](../code-quality/use-roslyn-analyzers.md#rule-severity), instale os analisadores como um pacote NuGet.
+Você não pode configurar a severidade de regras de analisadores que foram instalados como uma extensão do Visual Studio. Para configurar a [gravidade da regra](../code-quality/use-roslyn-analyzers.md#rule-severity), instale os analisadores como um pacote NuGet.
 
 ## <a name="next-steps"></a>Próximas etapas
 

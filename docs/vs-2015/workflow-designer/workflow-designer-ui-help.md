@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657553"
 ---
 # <a name="workflow-designer-ui-help"></a>Ajuda de Designer de Fluxo de Trabalho interface de usuário
-Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Ao trabalhar em [!INCLUDE[vs2010](../includes/vs2010-md.md)], você pode acessar esses tópicos na interface do usuário pressionando **F1** quando uma caixa de diálogo [!INCLUDE[wfd2](../includes/wfd2-md.md)] estiver aberta.
+Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Ao trabalhar no [!INCLUDE[vs2010](../includes/vs2010-md.md)] , você pode acessar esses tópicos na interface do usuário pressionando **F1** quando uma [!INCLUDE[wfd2](../includes/wfd2-md.md)] caixa de diálogo estiver aberta.
 
  Esta seção também contém vários tópicos preocupados com navegação e mensagens de erro.
 
@@ -29,13 +29,13 @@ Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../inclu
 
  [Caixa de diálogo Definição de CorrelatesOn](../workflow-designer/correlateson-definition-dialog-box.md)
 
- [Caixa de diálogo Adicionar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)
+ [Adicione a caixa de diálogo CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)
 
  [Caixas de diálogo Adicionar Parâmetros e Adicionar Argumentos](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)
 
  [Caixa de diálogo Editor de Coleção de Tipos](../workflow-designer/type-collection-editor-dialog-box.md)
 
- [Caixa de diálogo Definição de Conteúdo](../workflow-designer/content-definition-dialog-box.md)
+ [Caixa de diálogo de conteúdo da definição](../workflow-designer/content-definition-dialog-box.md)
 
  [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)
 
@@ -45,4 +45,4 @@ Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../inclu
 
  [Atalhos de teclado](../workflow-designer/keyboard-shortcuts-in-the-workflow-designer.md)
 
- [Mensagens de Erro](../workflow-designer/error-messages-in-workflow-designer.md)
+ [Mensagens de erro](../workflow-designer/error-messages-in-workflow-designer.md)

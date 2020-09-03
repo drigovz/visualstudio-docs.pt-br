@@ -10,20 +10,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47f4703b90446dc615df350ee0641678996196c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657539"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A exibição do modelo de conteúdo fornece uma representação gráfica de nós locais e globais de esquema e seus componentes, de incluir simples e tipos complexos, de elementos, grupos de modelo, de atributos, e de grupos de atributo. Comentários e instruções de processamento XML não podem ser exibidos no modo do modelo de conteúdo. A exibição do modelo de conteúdo contém dois painéis: um painel do **espaço de trabalho** que contém uma lista dos nós no espaço de trabalho do [Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)e a superfície de design onde você pode ver o modelo de conteúdo dos nós de esquema selecionados no **espaço de trabalho** painel. A exibição do modelo de conteúdo também inclui a barra de ferramentas do designer de esquema XML e a barra de rastreamento.
+A exibição do modelo de conteúdo fornece uma representação gráfica de nós locais e globais de esquema e seus componentes, de incluir simples e tipos complexos, de elementos, grupos de modelo, de atributos, e de grupos de atributo. Comentários e instruções de processamento XML não podem ser exibidos no modo do modelo de conteúdo. A exibição do modelo de conteúdo contém dois painéis: um painel do **espaço de trabalho** que contém uma lista dos nós no espaço de trabalho do [Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)e a superfície de design onde você pode ver o modelo de conteúdo dos nós de esquema selecionados no painel do **espaço de trabalho** . A exibição do modelo de conteúdo também inclui a barra de ferramentas do designer de esquema XML e a barra de rastreamento.
 
  Na figura a seguir, o painel de workspace contém seis nós de esquema. O nó de `purchaseOrder` é selecionado no painel de Workpace e exibido na superfície de design.
 
- ![Exibição de modelo de conteúdo do designer de esquema XML](../xml-tools/media/xsddesigner-contentmodelview.gif "XSDDesigner_ContentModelView")
+ ![Exibição do modelo de conteúdo do Designer de Esquema XML](../xml-tools/media/xsddesigner-contentmodelview.gif "XSDDesigner_ContentModelView")
 
 ## <a name="workspace-panel"></a>Painel de workspace
  Depois de adicionar nós ao espaço de trabalho, a lista de nós aparecerá no painel do **espaço de trabalho** do modo de exibição de modelo de conteúdo. Quando você seleciona nós no painel do **espaço de trabalho** , eles aparecem na superfície de design da exibição do modelo de conteúdo. Para excluir nós do workpsace, use a barra de ferramentas do designer XSD, o menu de contexto do painel do **espaço de trabalho** ou a tecla Delete.
@@ -45,11 +45,11 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Mostrar no XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|
-|**Mostrar no modo de exibição de gráfico**|Alterna a O modo de gráfico.|
-|**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
-|**Mostrar documentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
-|**Exportar diagrama como imagem...**|Salva a superfície de design para um arquivo XPS.|
+|**Apresentação em XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|
+|**Apresentação no modo de gráfico**|Alterna a O modo de gráfico.|
+|**Gerencia o exemplo XML**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
+|**Documentação de apresentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
+|**Diagrama de exportação como a imagem…**|Salva a superfície de design para um arquivo XPS.|
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
 |**Janela Propriedades**|Abre a janela **Propriedades** (se ainda não estiver aberta). Esta janela exibe informações sobre o nó.|
 
@@ -57,12 +57,12 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Mostrar no XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|
-|**Mostrar no modo de exibição de gráfico**|Alterna para representar graficamente a exibição.|
-|**Limpar espaço de trabalho**|Limpa o workspace e a superfície de design.|
-|**Remover do espaço de trabalho**|Removes selecionou nós de workspace e da superfície de design.|
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|
-|**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
+|**Apresentação em XML Schema Explorer**|Coloca o foco no esquema Explorer e ressalta o nó do esquema.|
+|**Apresentação no modo de gráfico**|Alterna para representar graficamente a exibição.|
+|**O workspace claro**|Limpa o workspace e a superfície de design.|
+|**Remova de workspace**|Removes selecionou nós de workspace e da superfície de design.|
+|**Remova todos com exceção de seleção de workspace**|Remove os nós que não são selecionados de workspace e da superfície de design.|
+|**Gerencia o exemplo XML**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 |**Selecionar tudo**|Selecionar todos os nós no painel de workspace.|
 |**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado em XML Schema Explorer também será selecionado no editor XML.|
 |**Janela Propriedades**|Abre a janela **Propriedades** (se ainda não estiver aberta). Esta janela exibe informações sobre o nó.|
@@ -73,17 +73,17 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 ## <a name="xsd-designer-toolbar"></a>Barra de ferramentas do designer XSD
  Os seguintes botões da barra de ferramentas do designer XSD são ativados quando a exibição do modelo de conteúdo está ativo.
 
- ![Barra de ferramentas do designer de esquema XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
+ ![Barra de ferramentas do Designer de Esquema XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Mostrar exibição inicial**|Alterna para o [modo de exibição de início](../xml-tools/start-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 1**.|
-|**Mostrar exibição do modelo de conteúdo**|Alterna para a [exibição do modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 2**.|
-|**Mostrar exibição de gráfico**|Alterna para o [modo de exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 3**.|
-|**Limpar espaço de trabalho**|Limpa o workspace e a superfície de design.|
-|**Remover do espaço de trabalho**|Removes selecionou nós de workspace e serface de design.|
-|**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e serface de design.|
-|**Mostrar documentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
+|**Mostrar Exibição Inicial**|Alterna para o [modo de exibição de início](../xml-tools/start-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 1**.|
+|**Mostrar Exibição de Modelo de Conteúdo**|Alterna para a [exibição do modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 2**.|
+|**Mostrar Exibição de Gráfico**|Alterna para o [modo de exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl + 3**.|
+|**O workspace claro**|Limpa o workspace e a superfície de design.|
+|**Remova de workspace**|Removes selecionou nós de workspace e serface de design.|
+|**Remova todos com exceção de seleção de workspace**|Remove os nós que não são selecionados de workspace e serface de design.|
+|**Documentação de apresentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
 
 ## <a name="panscroll"></a>Bandeja/rolagem
  Você pode filtrar a superfície de design usando barras de rolagem ou mantendo a tecla CTRL quando você clique e arraste o mouse. Quando você filtra a superfície de design usando o clique e o arrastar, o cursor será alterado a quatro setas cruzadas apontando em quatro direções.
@@ -99,7 +99,7 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 
 - Excluindo única ou mais nós.
 
-## <a name="zoom"></a>Aplicar Zoom
+## <a name="zoom"></a>Zoom
  O zoom está disponível no canto inferior direito da exibição do modelo de conteúdo.
 
  O zoom pode ser controlado das seguintes maneiras:
@@ -115,5 +115,5 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 
  Se você alterar o esquema definido no editor XML as alterações serão sincronizadas no modo de modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Consulte também
- [O workspace do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)
+## <a name="see-also"></a>Consulte Também
+ [Espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)

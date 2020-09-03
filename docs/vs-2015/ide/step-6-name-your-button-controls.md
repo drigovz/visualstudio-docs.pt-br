@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851124"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
@@ -26,7 +26,7 @@ Há apenas uma PictureBox em seu formulário. Quando você a adicionou, o IDE a 
 
  Há quatro botões no formulário e o IDE os nomeou **button1**, **button2**, **button3** e **button4**. Apenas olhando seus nomes atuais, você não consegue saber qual botão é o botão de **Fechar** e qual é o botão **Mostrar uma imagem**. É por isso que é útil atribuir nomes mais informativos aos controles de botão.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-video 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) ou [tutorial 1: criar um visualizador de imagens em C#-vídeo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Para nomear os controles de botão
 
@@ -41,7 +41,7 @@ Há apenas uma PictureBox em seu formulário. Quando você a adicionou, o IDE a 
 
 3. Clique duas vezes no botão **Mostrar uma imagem** no formulário. Como alternativa, escolha o botão **Mostrar uma imagem** no formulário e, em seguida, pressione a tecla ENTER. Quando você fizer isso, o IDE abrirá uma guia adicional na janela principal chamada **Form1.cs** (**Form1.vb** se você estiver usando Visual Basic). Esta guia mostra o arquivo de código por trás do formulário, conforme mostrado na seguinte imagem.
 
-     ![Guia Form1.cs com a guia&#35; Visual C Code](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs com C# código Visual
+     ![Guia Form1.cs com código de&#35; do Visual C](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Guia Form1.cs com código do Visual C#
 
 4. Foco nesta parte do código. (Escolha a guia **VB** abaixo se você estiver usando o Visual Basic para exibir a versão de Visual Basic do código.)
 

@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80375557"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
-Contém um conjunto de tarefas para o MSBuild ser executado sequencialmente.
+Contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
 
  \<Project> \<Target>
 
@@ -59,10 +59,10 @@ Contém um conjunto de tarefas para o MSBuild ser executado sequencialmente.
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Name`|Atributo obrigatório.<br /><br /> O nome do destino. Um nome de destino `$@()%*?.`pode conter qualquer caractere, exceto .|
-|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre as condições, consulte [Condições](../msbuild/msbuild-conditions.md).|
-|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md) [, Como: Construir incrementalmente](../msbuild/how-to-build-incrementally.md)e [Transformações](../msbuild/msbuild-transforms.md).|
-|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md) [, Como: Construir incrementalmente](../msbuild/how-to-build-incrementally.md)e [Transformações](../msbuild/msbuild-transforms.md).|
+|`Name`|Atributo obrigatório.<br /><br /> O nome do destino. Um nome de destino pode conter qualquer caractere, exceto `$@()%*?.` .|
+|`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre condições, consulte [condições](../msbuild/msbuild-conditions.md).|
+|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md), [como criar incrementalmente](../msbuild/how-to-build-incrementally.md)e [transformações](../msbuild/msbuild-transforms.md).|
+|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, consulte [compilações incrementais](../msbuild/incremental-builds.md), [como criar incrementalmente](../msbuild/how-to-build-incrementally.md)e [transformações](../msbuild/msbuild-transforms.md).|
 |`Returns`|Atributo opcional.<br /><br /> O conjunto de itens que será disponibilizado para tarefas que invocam esse destino, por exemplo, tarefas do MSBuild. Vários destinos são separados por ponto e vírgula. Se os destinos no arquivo não tiverem nenhum atributo `Returns`, os atributos de Saídas serão usados para essa finalidade.|
 |`KeepDuplicateOutputs`|Atributo booliano opcional.<br /><br /> Se for `true`, várias referências ao mesmo item nos Retornos do destino serão registradas.  Por padrão, esse atributo é `false`.|
 |`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
@@ -74,20 +74,20 @@ Contém um conjunto de tarefas para o MSBuild ser executado sequencialmente.
 
 | Elemento | Descrição |
 | - | - |
-| [Tarefa](../msbuild/task-element-msbuild.md) | Cria e executa uma instância de uma tarefa MSBuild. Pode haver zero ou mais tarefas em um destino. |
+| [Tarefa](../msbuild/task-element-msbuild.md) | Cria e executa uma instância de uma tarefa do MSBuild. Pode haver zero ou mais tarefas em um destino. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contém um conjunto de elementos `Property` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `PropertyGroup`. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Contém um conjunto de elementos `Item` definidos pelo usuário. A partir do .NET Framework 3.5, um elemento `Target` pode conter elementos `ItemGroup`. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md). |
-| [OnError](../msbuild/onerror-element-msbuild.md) | Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` é ErrorAndStop (ou `false`) para uma tarefa com falha. Pode haver zero ou mais elementos `OnError` em um destino. Se `OnError` elementos estiverem presentes, eles deverão ser os últimos elementos do elemento `Target`.<br /><br /> Para obter `ContinueOnError` informações sobre o atributo, consulte [Elemento tarefa (MSBuild)](../msbuild/task-element-msbuild.md). |
+| [OnError](../msbuild/onerror-element-msbuild.md) | Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` é ErrorAndStop (ou `false`) para uma tarefa com falha. Pode haver zero ou mais elementos `OnError` em um destino. Se `OnError` elementos estiverem presentes, eles deverão ser os últimos elementos do elemento `Target`.<br /><br /> Para obter informações sobre o `ContinueOnError` atributo, consulte [elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Elementos pai
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
- O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo MSBuild executa dependências na ordem `DependsOnTargets` em que aparecem no atributo, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).
+ O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo MSBuild executa dependências na ordem em que aparecem no `DependsOnTargets` atributo, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).
 
  O MSBuild depende da ordem de importação, e a última definição de um destino com um atributo `Name` específico é a definição usada.
 

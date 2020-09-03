@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349400"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como executar o processo de trabalho em uma conta de usuário
@@ -86,6 +86,6 @@ Para configurar o computador de modo que você possa executar o processo de trab
 
 13. Clique em **OK** para fechar a caixa de diálogo **Propriedades de arquivos temporários do ASP.NET**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Depuração ASP.NET: requisitos do sistema](../debugger/aspnet-debugging-system-requirements.md)

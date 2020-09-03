@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657380"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
@@ -79,7 +79,7 @@ ms.locfileid: "72657380"
 
 - Especifique as relações entre as tabelas para que as chaves estrangeiras sejam manipuladas corretamente. Para obter mais informações, consulte [preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Use o **Assistente de configuração do TableAdapter** para especificar a consulta ou o procedimento armazenado que preencherá o conjunto de dados e quais operações de banco (atualização, exclusão e assim por diante) serão implementadas. Para saber mais, consulte estes tópicos:
+- Use o **Assistente de configuração do TableAdapter** para especificar a consulta ou o procedimento armazenado que preencherá o conjunto de dados e quais operações de banco (atualização, exclusão e assim por diante) serão implementadas. Para saber mais, consulte esses tópicos:
 
   - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -89,7 +89,7 @@ ms.locfileid: "72657380"
 
   - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
-- Consultar e Pesquisar os dados no DataSet. Para obter mais informações, consulte conjuntos de dados de [consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] habilita o [LINQ (consulta integrada à linguagem)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre os dados em um objeto <xref:System.Data.DataSet>. Para obter mais informações, consulte [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Consultar e Pesquisar os dados no DataSet. Para obter mais informações, consulte conjuntos de dados de [consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] habilita o [LINQ (consulta integrada à linguagem)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Use a janela **fontes de dados** para associar controles de interface do usuário ao conjunto de dados ou a suas colunas individuais, e para especificar quais colunas são editáveis pelo usuário. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
@@ -99,5 +99,5 @@ ms.locfileid: "72657380"
 ## <a name="datasets-and-xml"></a>Conjuntos de e XML
  Para obter informações sobre a conversão de conjuntos de dados de e para XML, consulte [Read XML data to a DataSet](../data-tools/read-xml-data-into-a-dataset.md) e [Save a DataSet as XML](../data-tools/save-a-dataset-as-xml.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

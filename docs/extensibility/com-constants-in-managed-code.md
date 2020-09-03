@@ -1,5 +1,5 @@
 ---
-title: Com Constantes em Código Gerenciado | Microsoft Docs
+title: Constantes COM em código gerenciado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 919d000e44b90e975543f8aa6419968a40149adf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739835"
 ---
-# <a name="com-constants-in-managed-code"></a>Com constantes em código gerenciado
-O MPF (Managed Package Framework, quadro de pacotes gerenciados) disponibiliza algumas constantes com padrão para código gerenciado. Essas constantes estão listadas abaixo para sua referência.
+# <a name="com-constants-in-managed-code"></a>Constantes COM em código gerenciado
+A MPF (estrutura de pacote gerenciada) torna algumas constantes COM padrão disponíveis para o código gerenciado. Essas constantes estão listadas abaixo para sua referência.
 
-## <a name="boolean-hresult-values"></a>Valores booleanos hresult
+## <a name="boolean-hresult-values"></a>Valores de HRESULT boolianos
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
 
  <xref:Microsoft.VisualStudio.VSConstants.S_OK>
 
-## <a name="hresult-values"></a>Valores de HRESULT
+## <a name="hresult-values"></a>Valores HRESULT
  <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>
 
  <xref:Microsoft.VisualStudio.VSConstants.E_ACCESSDENIED>
@@ -89,7 +89,7 @@ O MPF (Managed Package Framework, quadro de pacotes gerenciados) disponibiliza a
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>Erros de despacho OLE
+## <a name="ole-dispatch-errors"></a>Erros de expedição de OLE
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
@@ -127,4 +127,4 @@ O MPF (Managed Package Framework, quadro de pacotes gerenciados) disponibiliza a
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
 ## <a name="see-also"></a>Confira também
-- [Manipulação de erros e valores de devolução](../extensibility/error-handling-and-return-values.md)
+- [Tratamento de erros e valores de retorno](../extensibility/error-handling-and-return-values.md)

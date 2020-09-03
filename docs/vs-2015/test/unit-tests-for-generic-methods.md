@@ -12,10 +12,10 @@ caps.latest.revision: 49
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2619e975dbfd22d96db2cc382a7cebbf04a05223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657284"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
@@ -29,11 +29,11 @@ Você pode gerar testes de unidade para métodos genéricos exatamente como fari
 ## <a name="examples"></a>Exemplos
  Os exemplos a seguir ilustram testes de unidade para genéricos:
 
-- [Edição do código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
+- [Editando o código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
 
 - [Usando uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
 
-### <a name="EditingGeneratedTestCode"></a> Exemplo 1: edição do código de teste gerado
+### <a name="example-1-editing-generated-test-code"></a><a name="EditingGeneratedTestCode"></a> Exemplo 1: edição do código de teste gerado
  O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.
 
  O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
-> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [Como depurar durante a execução de um teste em uma solução do ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [como depurar durante a execução de um teste em uma solução ASP.net](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-### <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: usando uma restrição de tipo
+### <a name="example-2-using-a-type-constraint"></a><a name="TypeConstraintNotSatisfied"></a> Exemplo 2: usando uma restrição de tipo
  Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.
 
  A segunda seção mostra código do projeto de teste.
@@ -197,5 +197,5 @@ namespace ClassLibrary2
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Anatomia de uma unidade de teste](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) de unidade [teste seu código](../test/unit-test-your-code.md)

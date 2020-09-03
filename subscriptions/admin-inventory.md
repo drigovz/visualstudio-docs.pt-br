@@ -8,10 +8,10 @@ ms.date: 03/06/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
 ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232766"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
@@ -26,7 +26,7 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - Obter ajuda com a reconciliação manual. Inscreva a sua equipe para ajudar a reconciliar os usuários de desenvolvimento e teste com seu ambiente de desenvolvimento e teste.
 
 ## <a name="resources"></a>Recursos
-- [Visual Studio licenciamento de papel branco](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
+- [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
@@ -38,7 +38,7 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
-- [Responsabilidades de administrador](admin-responsibilities.md)
+- [Responsabilidades do administrador](admin-responsibilities.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

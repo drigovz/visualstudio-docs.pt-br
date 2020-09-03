@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14c9924346471e098d9ba9f1abb52fda0d3c9969
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198664"
 ---
-# <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
+# <a name="idiaaddressmapput_relativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Permite ao cliente habilitar ou desabilitar o cálculo e o uso de endereços virtuais relativos (RVA).  
+Permite que o cliente habilite ou desabilite o cálculo e o uso de endereços virtuais relativos (RVA).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,19 +35,19 @@ HRESULT put_relativeVirtualAddressEnabled ( 
   
 #### <a name="parameters"></a>Parâmetros  
  NewVal  
- [in] Definido como `TRUE` para habilitar, ou `FALSE` para desabilitar.  
+ no Defina como `TRUE` para habilitar ou `FALSE` desabilitar.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Endereços de objetos de depuração descritos pelas interfaces do DIA e, em relação à base, de imagem do executável podem ser recuperados como endereços virtuais.  
+ Os endereços para objetos de depuração descritos por interfaces de DIA e relativos à base de imagem do executável podem ser recuperados como endereços virtuais relativos.  
   
- O uso de RVAs é habilitado quando segmentos inicialmente são carregados de um arquivo PDB. Para obter o estado atual do uso de RVAs, chame o [idiaaddressmap:: Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) método.  
+ O uso de RVAs é habilitado quando os segmentos são carregados inicialmente de um arquivo PDB. Para obter o estado atual do uso de RVAs, chame o método [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) .  
   
- O `put_relativeVirtualAddress` método deve ser chamado para habilitar RVAs após uma chamada bem-sucedida para o [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) método estabeleceu novos cabeçalhos de imagem.  
+ O `put_relativeVirtualAddress` método deve ser chamado para habilitar RVAs após uma chamada bem-sucedida para o método [IDiaAddressMap:: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) tiver estabelecido novos cabeçalhos de imagem.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
+ [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)   
  [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273888"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
@@ -41,7 +41,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
 > [!WARNING]
 > Este Dockerfile de exemplo exclui apenas SDKs do Windows anteriores que não podem ser instalados em contêineres. As versões anteriores causam uma falha no comando de build.
 
-1. Abra um prompt de comando.
+1. Abra o prompt de comando.
 
 1. Crie um novo diretório (recomendado):
 
@@ -87,7 +87,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ```
 
    > [!TIP]
-   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes do Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -129,7 +129,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ```
 
    > [!TIP]
-   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes do Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Para obter uma lista de cargas de trabalho e componentes, consulte o [diretório de componentes ferramentas de Build do Visual Studio](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -140,7 +140,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ::: moniker-end
    
    > [!NOTE]
-   > O `3010` código de erro é usado para indicar o sucesso com uma reinicialização necessária, consulte [mensagens de erro MsiExec.exe](/windows/win32/msi/error-codes) para obter mais informações.
+   > O código `3010` de erro é usado para indicar êxito com uma reinicialização necessária, consulte [MsiExec.exe mensagens de erro](/windows/win32/msi/error-codes) para obter mais informações.
 
 1. Execute o seguinte comando nesse diretório.
 
@@ -172,7 +172,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
 
 Agora que a imagem foi criada, é possível executá-la em um contêiner para fazer builds interativos e automatizados. O exemplo usa o Prompt de Comando do Desenvolvedor, assim, PATH e outras variáveis de ambiente já estão configuradas.
 
-1. Abra um prompt de comando.
+1. Abra o prompt de comando.
 
 1. Execute o contêiner para iniciar um ambiente do PowerShell com as variáveis de ambiente de desenvolvedor configuradas:
 
@@ -195,11 +195,11 @@ Agora que a imagem foi criada, é possível executá-la em um contêiner para fa
 Para usar essa imagem no fluxo de trabalho CI/CD, publique-a no seu próprio [Registro de Contêiner do Azure](https://azure.microsoft.com/services/container-registry) ou em outro [registro Docker](https://docs.docker.com/registry/deploying) interno, assim, os servidores só precisarão efetuar pull dessa imagem.
 
    > [!NOTE]
-   > Se o contêiner Docker não for recomeçado, provavelmente haverá um problema de instalação do Visual Studio. Você pode atualizar o arquivo Docker para remover a etapa que chama o comando visual studio batch. Isso permite que você inicie o contêiner Docker e leia os registros de erro de instalação.
+   > Se o contêiner do Docker não for iniciado, provavelmente haverá um problema de instalação do Visual Studio. Você pode atualizar o Dockerfile para remover a etapa que chama o comando de lote do Visual Studio. Isso permite que você inicie o contêiner do Docker e leia os logs de erros da instalação.
    >
-   > No arquivo Dockerfile, `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` remova `&&` os `ENTRYPOINT` parâmetros e parâmetros do comando. O comando deve `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`ser agora. Em seguida, reconstrua `run` o arquivo Docker e execute o comando para acessar arquivos de contêiner. Para localizar os registros de erro `$env:TEMP` de instalação, `dd_setup_<timestamp>_errors.log` vá até o diretório e localize o arquivo.
+   > No arquivo Dockerfile, remova os `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` parâmetros e `&&` do `ENTRYPOINT` comando. O comando deve ser agora `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Em seguida, recompile o Dockerfile e execute o `run` comando para acessar os arquivos de contêiner. Para localizar os logs de erros de instalação, vá para o `$env:TEMP` diretório e localize o `dd_setup_<timestamp>_errors.log` arquivo.
    >
-   > Depois de identificar e corrigir o problema `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` de instalação, `ENTRYPOINT` você pode adicionar os parâmetros de volta ao comando e reconstruir seu arquivo Docker.
+   > Depois de identificar e corrigir o problema de instalação, você pode adicionar `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` os `&&` parâmetros e de volta ao `ENTRYPOINT` comando e recriar o Dockerfile.
    >
    > Para obter mais informações, veja [Problemas conhecidos de contêineres](build-tools-container-issues.md).
 

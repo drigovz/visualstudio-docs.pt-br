@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770306"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelos de projeto do Visual Studio)
@@ -74,7 +74,7 @@ Especifica um arquivo que está incluído no modelo de projeto.
  Um `string` que representa o nome ou o caminho para um arquivo no arquivo template *. zip* .
 
 ## <a name="remarks"></a>Comentários
- `ProjectItem`é um filho opcional de `Project` .
+ `ProjectItem` é um filho opcional de `Project` .
 
  O `TargetFileName` atributo pode ser usado para criar uma estrutura de diretório diferente da estrutura de diretório no arquivo template *. zip* . Por exemplo, se o arquivo *MyFile. vb* existir na raiz do arquivo *. zip* do modelo, mas você quiser que o arquivo seja colocado em um diretório chamado *CustomFiles* em todos os projetos criados a partir do modelo, você usaria o seguinte XML:
 

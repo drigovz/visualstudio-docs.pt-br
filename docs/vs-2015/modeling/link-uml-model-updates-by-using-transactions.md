@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8930bba76830a6116c3182f3fb2936cd4f1a3e47
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657604"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular atualizações de modelo UML usando transações
@@ -34,7 +34,7 @@ Ao definir uma extensão para os designers UML no Visual Studio, você pode agru
 
  **Microsoft. VisualStudio. Modeling. Sdk. [versão]. dll**
 
- Dentro de sua classe, declare uma propriedade importada que tenha o tipo <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext>:
+ Dentro de sua classe, declare uma propriedade importada que tenha o tipo <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> :
 
  `using Microsoft.VisualStudio.Modeling.ExtensionEnablement;`
 
@@ -62,13 +62,13 @@ Ao definir uma extensão para os designers UML no Visual Studio, você pode agru
 
  Observe o seguinte:
 
-- Você sempre deve incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado para seu estado no início da transação.
+- Você deve sempre incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado para seu estado no início da transação.
 
-- Se ocorrer uma exceção que não é detectada dentro da transação, a transação será revertida. É um padrão frequente para colocar o bloco de `using` da transação dentro de um bloco de `try…catch`.
+- Se ocorrer uma exceção que não é detectada dentro da transação, a transação será revertida. É um padrão frequente para colocar o `using` bloco da transação dentro de um `try…catch` bloco.
 
 - Você pode aninhar transações.
 
-- Você pode fornecer qualquer nome que não seja em branco para `BeginTransaction()`.
+- Você pode fornecer qualquer nome que não seja em branco para `BeginTransaction()` .
 
 - Somente o repositório de modelos UML é afetado por essas transações. As transações de modelagem não afetam: variáveis, repositórios externos, como arquivos e bancos de dados, diagramas de camadas e modelos de código.
 
@@ -108,5 +108,5 @@ Ao definir uma extensão para os designers UML no Visual Studio, você pode agru
  }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Programação com a API UML](../modeling/programming-with-the-uml-api.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

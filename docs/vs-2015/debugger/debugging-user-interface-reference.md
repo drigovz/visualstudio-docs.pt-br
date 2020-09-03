@@ -1,5 +1,5 @@
 ---
-title: Referência de Interface do usuário de depuração | Microsoft Docs
+title: Depuração de referência da interface do usuário | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191225"
 ---
 # <a name="debugging-user-interface-reference"></a>Referência de interface do usuário de depuração
@@ -40,14 +40,14 @@ Você pode encontrar as seguintes caixas de diálogo ao depurar seu aplicativo.
   
 - [Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
-- [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)  
+- [Depurando, Caixa de Diálogo Opções](../debugger/debugging-options-dialog-box.md)  
   
 - [Caixa de diálogo Editar e Continuar](../debugger/edit-and-continue-dialog-box.md)  
   
 - [Caixa de diálogo Parar Depuração em Andamento](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
-- [Caixas de diálogo Depurando Erros e Aviso](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
+- [Caixas de diálogo Depurando Erros e Avisos](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
-## <a name="see-also"></a>Consulte também  
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Janela Comando](../ide/reference/command-window.md)
+## <a name="see-also"></a>Consulte Também  
+ [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md)   
+ [Janela de comando](../ide/reference/command-window.md)

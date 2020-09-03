@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81445006"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
@@ -41,13 +41,13 @@ Neste tutorial, você aprenderá como:
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se você ainda não instalou o Visual Studio 2019, acesse a página [de downloads](https://visualstudio.microsoft.com/downloads/) do Visual Studio para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2019, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se você ainda não instalou o Visual Studio 2017, acesse a página [de downloads](https://visualstudio.microsoft.com/downloads/) do Visual Studio para instalá-lo gratuitamente.
+    Se você ainda não instalou o Visual Studio 2017, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)   para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Se você precisa instalar a carga de trabalho, mas já tem o Visual Studio, vá para **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Visual Studio Installer. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, vá para **ferramentas**  >  **obter ferramentas e recursos...**, que abre o instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
@@ -65,7 +65,7 @@ Neste tutorial, você aprenderá como:
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (TypeScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    Na barra de menus superior, escolha **arquivo**  >  **novo**  >  **projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
 
     ![Criar um aplicativo TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
@@ -75,7 +75,7 @@ Neste tutorial, você aprenderá como:
 
 1. Pressione **F5** para criar e executar o aplicativo e verifique se tudo está funcionando conforme esperado.
 
-1. Selecione **Adicionar arquivo** > **ao controle de origem** para criar um repositório Git local para o projeto.
+1. Selecione **arquivo**  >  **Adicionar ao controle do código-fonte** para criar um repositório git local para o projeto.
 
     Neste ponto, um aplicativo Node.js que usa a estrutura Express e é escrito em TypeScript está funcionando e fez o check-in no controle do código-fonte local.
 
@@ -87,7 +87,7 @@ Para configurar o GitHub para o Visual Studio:
 
 1. Verifique se a [Extensão do GitHub para Visual Studio](https://visualstudio.github.com/) está instalada e habilitada usando o item de menu **Ferramentas** > **Extensões e Atualizações**.
 
-2. No menu **selecione Exibir** > **Outros Windows** > **GitHub**.
+2. No menu, selecione **Exibir**  >  **outro**  >  **GitHub**do Windows.
 
     A janela do GitHub será aberta.
 
@@ -130,7 +130,7 @@ Para configurar o GitHub para o Visual Studio:
     > [!WARNING]
     > O processo de implantação do Serviço de Aplicativo usa um conjunto de heurísticas para determinar qual tipo de aplicativo ele deve tentar executar. Se um arquivo *.sln* for detectado no conteúdo implantado, ele presumirá que um projeto baseado no MSBuild está sendo implantado. A configuração adicionada acima substitui essa lógica e especifica explicitamente que se trata de um aplicativo Node.js. Sem essa configuração, o aplicativo Node.js não será implantado se o arquivo *.sln* fizer parte do repositório que está sendo implantado no Serviço de Aplicativo.
 
-7. Em **Configurações de**aplicativo, adicione `WEBSITE_NODE_DEFAULT_VERSION` outra configuração `8.9.0`com um nome e um valor de .
+7. Em **configurações do aplicativo**, adicione outra configuração com um nome `WEBSITE_NODE_DEFAULT_VERSION` e um valor de `8.9.0` .
 
 8. Após a implantação, abra o Serviço de Aplicativo e selecione **Opções de implantação**.
 

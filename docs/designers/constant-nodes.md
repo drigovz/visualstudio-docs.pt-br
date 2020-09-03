@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769312"
 ---
 # <a name="constant-nodes"></a>Nós de constante
@@ -31,7 +31,7 @@ Embora cada instância de sombreador de pixel receba apenas um conjunto de valor
 |----------|-------------|----------------|
 |**Vetor de Câmera**|O vetor que se estende do pixel atual para a câmera no espaço de mundo.<br /><br /> É possível usar isso para calcular reflexões no espaço de mundo.<br /><br /> **Saída**<br /><br /> `Output`: `float3`<br /> O vetor do pixel atual da câmera.|Nenhum|
 |**Constante de Cor**|Um valor de cor constante.<br /><br /> **Saída**<br /><br /> `Output`: `float4`<br /> O valor da cor.|**Saída**<br /> O valor da cor.|
-|**Amortiza**|Um valor escalar constante.<br /><br /> **Saída**<br /><br /> `Output`: `float`<br /> O valor escalar.|**Saída**<br /> O valor escalar.|
+|**Constante**|Um valor escalar constante.<br /><br /> **Saída**<br /><br /> `Output`: `float`<br /> O valor escalar.|**Saída**<br /> O valor escalar.|
 |**Constante 2D**|Uma constante de vetor de dois componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float2`<br /> O valor do vetor.|**Saída**<br /> O valor do vetor.|
 |**Constante 3D**|Uma constante de vetor de três componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float3`<br /> O valor do vetor.|**Saída**<br /> O valor do vetor.|
 |**Constante 4D**|Uma constante de vetor de quatro componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float4`<br /> O valor da cor.|**Saída**<br /> O valor do vetor.|

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349894"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>Como exibir e ocultar grupos de registros (C#, C++, Visual Basic, F #)
@@ -43,6 +43,6 @@ Para reduzir a confusão, a janela **Registros** organiza os registros em grupos
 
      Os grupos de registro que não têm suporte pelo hardware no qual você está depurando estão desabilitados no menu de atalho, e não podem ser selecionados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

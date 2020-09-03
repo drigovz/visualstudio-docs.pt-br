@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f899e081377ecc1a56e141f8793d6f707df2b69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534076"
 ---
 # <a name="application-timeline"></a>Linha do Tempo do Aplicativo
@@ -40,7 +40,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 > [!NOTE]
 > Você pode coletar e analisar os dados de uso da CPU e os dados de consumo de energia junto a dados da **ApplicationTimeline**. Consulte [executar ferramentas de criação de perfil sem depuração](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a>Coletar dados de Linha do Tempo do Aplicativo  
+## <a name="collect-application-timeline-data"></a><a name="BKMK_Collect_Timeline_data_for_your_app"></a> Coletar dados de Linha do Tempo do Aplicativo  
  Você pode criar o perfil de capacidade de resposta de seu aplicativo em seu computador local, dispositivo conectado, emuladores ou simulador do Visual Studio ou em um dispositivo remoto. Consulte [executar ferramentas de criação de perfil sem depuração](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -65,7 +65,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
      ![Cronograma relatório do criador de perfil](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a>Analisar dados de criação de perfil de linha do tempo  
+## <a name="analyze-timeline-profiling-data"></a><a name="BKMK_Analyze_Timeline_profiling_data"></a> Analisar dados de criação de perfil de linha do tempo  
  Depois de coletar os dados para a criação de perfil, você pode usar estas etapas para iniciar a análise:  
   
 1. Examine as informações nos gráficos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.  
@@ -97,9 +97,9 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
  Há suporte para os seguintes eventos:  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
-|**Parsing**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados como resultado do evento raiz. Isso permitirá identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|  
+|**Análise**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados como resultado do evento raiz. Isso permitirá identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|  
 |**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Isso pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e ArrangeOverride) e cria as árvores visuais que participaram de uma passagem do Layout. Você pode usar essa visualização para determinar quais das suas árvores lógicas precisam de remoção ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|  
 |**Render**|Tempo gasto desenhando elementos XAML na tela.|  
 |**I/0**|Tempo gasto na recuperação de dados do disco local ou de recursos de rede acessados por meio da [API WinINet (Microsoft Windows Internet)](https://msdn.microsoft.com/library/windows/desktop/aa385331.aspx).|  
@@ -112,7 +112,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 #### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personalizando os detalhes da Linha do Tempo  
  Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filtrar e especificar as anotações das entradas da exibição **Detalhes da linha do tempo**.  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |-|-|  
 |**Classificar por**|Classifique por hora de início ou o duração de eventos.|  
 |![Agrupar eventos por quadro](../profiling/media/timeline-groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|  
