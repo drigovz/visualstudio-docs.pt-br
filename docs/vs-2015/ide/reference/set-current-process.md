@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c362d3f5dda5015e91ac88dd8f0abd60a185ba72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665474"
 ---
 # <a name="set-current-process"></a>Definir processo atual
@@ -30,7 +30,7 @@ Define o processo especificado como o processo ativo no depurador.
 Debug.SetCurrentProcess index
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `index` Necessário. O índice do processo.
 
 ## <a name="remarks"></a>Comentários
@@ -42,5 +42,5 @@ Debug.SetCurrentProcess index
 >Debug.SetCurrentProcess 1
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comando de](../../ide/reference/command-window.md) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) para o [Visual Studio Command alias](../../ide/reference/visual-studio-command-aliases.md)

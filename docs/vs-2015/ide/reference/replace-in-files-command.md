@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665612"
 ---
 # <a name="replace-in-files-command"></a>Comando Substituir nos Arquivos
@@ -35,12 +35,12 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 [/reset] [/stop] [/sub] [/text2] [/wild] [/word]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `findwhat` Necessário. O texto a ser correspondido.
 
  `replacewith` Necessário. O texto a ser substituído pelo texto correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  /All ou/a opcional. Substitui todas as ocorrências do texto da pesquisa pelo texto de substituição.
 
  /case ou /c Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
@@ -78,5 +78,5 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md) [substituir na](../../ide/replace-in-files.md) [janela de comando](../../ide/reference/command-window.md) arquivos [Localizar/comandos caixa de comando](../../ide/find-command-box.md) [comandos do Visual](../../ide/reference/visual-studio-commands.md) Studio [Command alias](../../ide/reference/visual-studio-command-aliases.md)

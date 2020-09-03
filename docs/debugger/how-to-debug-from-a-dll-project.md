@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 081e897b0ff76dd97d2c174bf8c6fbfa2334f8ff
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350115"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: Depurar de um projeto de DLL no Visual Studio (C#, C++, Visual Basic, F #)
@@ -81,7 +81,7 @@ Os projetos DLL nativos e gerenciados têm configurações diferentes para espec
 
 Se a depuração não atingir seus pontos de interrupção, verifique se a saída da DLL (por padrão, a pasta * \<project> \debug* ) é o local que o aplicativo de chamada está chamando.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração de projetos de DLL](../debugger/debugging-dll-projects.md)
 - [Configurações de projeto para configurações de depuração em C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configurações de projeto para uma configuração de depuração de Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)

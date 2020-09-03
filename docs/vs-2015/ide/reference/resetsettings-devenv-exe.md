@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41e402a9268acecb70c83e26bab0e682d4ec59f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665589"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -33,7 +33,7 @@ Restaura [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] configurações padrão
 Devenv /ResetSettings SettingsFile
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `SettingsFile` O caminho completo e o nome do arquivo .vssettings a ser aplicado a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
  Para restaurar o perfil de Configurações Gerais de Desenvolvimento, use `General`.
@@ -48,5 +48,5 @@ Devenv /ResetSettings SettingsFile
 Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```
 
-## <a name="see-also"></a>Veja também
- [Personalizando as configurações de desenvolvimento nas opções](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [de linha de Comando do Devenv do Visual Studio](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Personalizando as configurações de desenvolvimento nas opções de linha de comando do devenv do Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv Command Line Switches](../../ide/reference/devenv-command-line-switches.md)

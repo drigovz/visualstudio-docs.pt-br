@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28480399238c1c915056d3929f8fd188cfff7eca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665506"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -34,7 +34,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>Comentários
  Essa opção impede que todos os VSPackages de terceiros sejam carregados quando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é iniciado, garantindo assim uma execução estável.
 
-## <a name="description"></a>DESCRIÇÃO
+## <a name="description"></a>Descrição
  O exemplo a seguir inicia o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no modo de segurança.
 
 ## <a name="code"></a>Código
@@ -43,5 +43,5 @@ devenv /SafeMode
 Devenv.exe /SafeMode
 ```
 
-## <a name="see-also"></a>Veja também
- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando do desenvolvedor](../../ide/reference/devenv-command-line-switches.md)

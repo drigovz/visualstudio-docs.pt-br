@@ -18,20 +18,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665637"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use a página **Referências** do **Designer de Projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas de classes do .NET Framework ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).
+Use a página **referências** do **Designer de projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas de classes do .NET Framework ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).
 
  Para acessar a página **Referências**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Referências**.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  As opções a seguir permitem selecionar ou remover referências e namespaces importados em seu projeto.
 
  **Referências não utilizadas** Clique neste botão para acessar a caixa de diálogo **referências não utilizadas** .
@@ -54,7 +54,7 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
 
  Escolha **Referência** para adicionar uma referência ao seu projeto usando a caixa de diálogo Adicionar Referência.
 
- Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo Adicionar Referência Web.
+ Escolha **referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo Adicionar referência Web.
 
  **Remover** Selecione uma ou mais referências na lista de **referências** e clique nesse botão para excluí-lo.
 
@@ -62,7 +62,7 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
 
  **Namespaces importados** Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar importação de usuário** para adicioná-lo à lista de namespaces.
 
- Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, insira o alias e o namespace no namespace de *alias*de formato = *namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar importação de usuário** Clique neste botão para adicionar o namespace especificado na caixa **namespaces importados** à lista de namespaces importados. O botão fica ativo somente se o namespace especificado ainda não estiver na lista.
 
@@ -76,5 +76,5 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
 
 - Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md) [NIB: caixa de diálogo Adicionar referência da Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) [instrução Imports (namespace XML)](https://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

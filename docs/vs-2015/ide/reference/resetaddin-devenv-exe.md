@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9958e6e9a540dce1a405df8991780600b8f4a702
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665597"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -31,11 +31,11 @@ Remove comandos e comando da interface do usuário associado ao Suplemento espec
 Devenv /ResetAddin AddIn
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `AddIn` Opcional. O nome de comando do Suplemento.
 
 ## <a name="remarks"></a>Comentários
- Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>* .Connect<em>.\<AddInSolutionName></em> e aparece no Connect.cs como o parâmetro `commandName` do método `Exec`. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.
+ Por padrão, o nome do comando do suplemento é igual a *\<AddInSolutionName>* . Conecte-se<em>. \<AddInSolutionName> </em>e aparece em Connect.cs como o `commandName` parâmetro do `Exec` método. Você também pode verificar o nome do comando começando a digitar o nome do suplemento na janela Comandos no Visual Studio e usando o IntelliSense para preencher o restante.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir inicia o Visual Studio e impede o suplemento `MyAddin` de ser executado na inicialização.
@@ -44,5 +44,5 @@ Devenv /ResetAddin AddIn
 Devenv.exe /ResetAddin MyAddin.Connect.MyAddin
 ```
 
-## <a name="see-also"></a>Veja também
- [Personalizando as configurações de desenvolvimento no Visual Studio ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv opções de linha de comando](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Personalizando as configurações de desenvolvimento nas opções de linha de comando do devenv do Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv Command Line Switches](../../ide/reference/devenv-command-line-switches.md)

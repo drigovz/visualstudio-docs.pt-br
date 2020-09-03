@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2:GetMetricGuid | Microsoft Docs
+title: 'IDebugSettingsCallback2:: GetMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08f03e0d09db17e3dbcda30588191ff3efcb1c41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719982"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
-Recupera o identificador exclusivo de uma métrica dada a seu nome.
+Recupera o identificador exclusivo de uma métrica de acordo com seu nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ private int GetMetricGuid(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pszType`\
-[em] Tipo da métrica.
+no Tipo da métrica.
 
 `guidSection`\
-[em] Identificador único da seção.
+no Identificador exclusivo da seção.
 
 `pszMetric`\
-[em] Nome da métrica.
+no Nome da métrica.
 
 `pguidValue`\
-[fora] Retorna o identificador exclusivo da métrica.
+fora Retorna o identificador exclusivo da métrica.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 008169829a6cf76e959d00f010959239a5f390b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665654"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
@@ -33,7 +33,7 @@ Limpa e, em seguida, compila a configuração de solução especificada.
 devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `SolnConfigName` Necessário. O nome da configuração de solução que será usada para recompilar a solução nomeada no `SolutionName`.
 
  `SolutionName` Necessário. O caminho completo e o nome do arquivo de solução.
@@ -57,5 +57,5 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Veja também
- [Opções](../../ide/reference/devenv-command-line-switches.md) [de linha de comando do devenv/build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando do devenv](../../ide/reference/devenv-command-line-switches.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

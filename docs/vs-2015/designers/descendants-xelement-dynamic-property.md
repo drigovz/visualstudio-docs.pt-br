@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b0496a04219c88573b3b555ef879a046d90faa3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664779"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendentes (propriedade dinâmica de XElement)
@@ -21,13 +21,13 @@ ms.locfileid: "72664779"
 
 Obtém um indexador usado para recuperar todos os elementos descendentes do elemento atual que corresponde ao nome especificado expandido.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 elem.Descendants[{namespaceName}localName]
 ```
 
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno
+## <a name="property-valuereturn-value"></a>Valor da propriedade/Valor do retorno
  Um indicador de tipo `IEnumerable<XElement> Item(String expandedName)`. Esse marcador utiliza o nome expandido de elementos especificados descendente e retorna os elementos filho correspondentes em uma coleção de <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>` .
 
 ## <a name="remarks"></a>Comentários
@@ -37,5 +37,5 @@ elem.Descendants[{namespaceName}localName]
 
  Esta propriedade usa a execução adiada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Elementos](../designers/elements-xelement-dynamic-property.md) de [propriedades dinâmicas da classe XElement](../designers/xelement-class-dynamic-properties.md)

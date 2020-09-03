@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bf0d37e6f734fa4b3229488bc3eee2732c3063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665440"
 ---
 # <a name="set-current-thread-command"></a>Comando Definir Thread Atual
@@ -32,7 +32,7 @@ Define o thread especificado como o thread atual.
 Debug.SetCurrentThread index
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `index` Necessário. Seleciona um thread por seu índice.
 
 ## <a name="example"></a>Exemplo
@@ -41,5 +41,5 @@ Debug.SetCurrentThread index
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela](../../ide/reference/command-window.md) de comando [Localizar/comando caixa](../../ide/find-command-box.md) de comandos do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

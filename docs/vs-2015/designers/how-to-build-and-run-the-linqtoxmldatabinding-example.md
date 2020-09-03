@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5584494f65eaef72c2aa350af4e5af36155e0501
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664621"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como: Compilar e executar o exemplo de LinqToXmlDataBinding
@@ -45,9 +45,9 @@ Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visu
 
 1. No Solution Explorer, renomeie o arquivo de origem Window1.xaml a L2XDBForm.xaml. O arquivo de origem dependente Window1.xaml.cs deve ser automaticamente renomeia a L2XDBForm.xaml.cs.
 
-2. Substitua o código-fonte encontrado no arquivo L2XDBForm.xaml pela seção de código do tópico [Código-fonte de L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). (Use o modo de exibição XAML para trabalhar com esse arquivo.)
+2. Substitua o código-fonte encontrado no arquivo L2XDBForm. XAML pela seção de código do tópico [código-fonte L2DBForm. XAML](../designers/l2dbform-xaml-source-code.md). (Use o modo de exibição XAML para trabalhar com esse arquivo.)
 
-3. Da mesma forma, substitua a origem em L2XDBForm.xaml.cs com o código localizado em [Código-fonte L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
+3. Da mesma forma, substitua a origem em L2XDBForm.xaml.cs com o código encontrado no [código-fonte L2DBForm.XAML.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 4. No arquivo App.xaml, substitua todas as ocorrências da cadeia de caracteres “Window1.xaml” com “L2XDBForm.xaml”.
 
@@ -58,7 +58,7 @@ Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visu
 
 #### <a name="to-run-the-program-and-view-the-book-list"></a>Para executar o programa e exibir a lista de livros
 
-1. Execute LinqToXmlDataBinding pressionando **F5** (**Iniciar Depuração**) ou **Ctrl+F5** (**Iniciar sem Depuração**). Uma janela de programa com o título **Vinculação de dados de WPF usando LINQ to XML** deverá ser exibida.
+1. Execute LinqToXmlDataBinding pressionando **F5** (**Iniciar Depuração**) ou **Ctrl + F5** (**Iniciar sem depuração**). Uma janela de programa com o título **Vinculação de dados de WPF usando LINQ to XML** deverá ser exibida.
 
 2. Observe a seção superior da interface do usuário, que exibe o **XML** bruto que representa a lista de livros. É exibida usando um controle de <xref:System.Windows.Controls.TextBlock> WPF, que não permite a interação por meio do mouse ou do teclado.
 
@@ -68,7 +68,7 @@ Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visu
 
 1. Para excluir um livro existente da lista, selecione-o na seção **Lista de livros** e, em seguida, clique no botão **Remover o livro selecionado**. Observe que a entrada de livro foi removida do livro e das listagens crua de código-fonte XML.
 
-2. Para adicionar um novo livro à lista, insira valores nos controles **ID** e **Valor** <xref:System.Windows.Controls.TextBox> na última seção, **Adicionar novo livro** e, em seguida, clique no botão **Adicionar Livro**. Observe que o livro será acrescentado à lista no livro e em listagens de XML. Este programa não validar valores de entrada.
+2. Para adicionar um novo livro à lista, insira valores nos controles **ID** e **Valor**<xref:System.Windows.Controls.TextBox> na última seção, **Adicionar novo livro** e, em seguida, clique no botão **Adicionar Livro**. Observe que o livro será acrescentado à lista no livro e em listagens de XML. Este programa não validar valores de entrada.
 
 #### <a name="to-edit-an-existing-book-entry"></a>Para editar uma entrada existente de livro
 
@@ -76,5 +76,5 @@ Este tópico mostra como criar e compilar o projeto de LinqToXmlDataBinding Visu
 
 2. Editar os valores usando o teclado. Assim que um ou outro controle de <xref:System.Windows.Controls.TextBox> fracamente acoplados o foco, as alterações são propagadas automaticamente as listagens de código-fonte XML e de livro.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Vinculação de dados do WPF usando o exemplo de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md) [Walkthrough:](../designers/walkthrough-linqtoxmldatabinding-example.md) [desenvolvimento de aplicativo de exemplo LinqToXmlDataBinding no Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

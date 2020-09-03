@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 768b0d43d8e6b52781e3f2dc2029e0b96b3a6548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665534"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Para obter mais informações, consulte [segurança de acesso de código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
  Para acessar a página **Segurança**, clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.
 
@@ -64,6 +64,6 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
 
  **Avançado** Abre a [caixa de diálogo Configurações de segurança avançadas](../../ide/reference/advanced-security-settings-dialog-box.md), que é usada para definir as configurações para depurar o aplicativo com permissões restritas. Essas configurações são verificadas durante a depuração, e exceções de permissão indicam que seu aplicativo pode precisar de mais permissões do que as que foram definidas em uma zona.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  <xref:System.Security.Permissions.WebBrowserPermission> <xref:System.Security.Permissions.MediaPermission>
- [Segurança de acesso ao código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [como habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md) [como: definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) [como: definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [segurança do ClickOnce e](../../deployment/clickonce-security-and-deployment.md) [Propriedades do projeto](../../ide/reference/project-properties-reference.md) de implantação referência da [caixa de diálogo Configurações avançadas de segurança](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Segurança de acesso a código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [como: Habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md) [como: definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) [como: definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [Propriedades do projeto](../../ide/reference/project-properties-reference.md) de [implantação e segurança](../../deployment/clickonce-security-and-deployment.md) [configuração da caixa de diálogo Configurações avançadas de segurança](../../ide/reference/advanced-security-settings-dialog-box.md)

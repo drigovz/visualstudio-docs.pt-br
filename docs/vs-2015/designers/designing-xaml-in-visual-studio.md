@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c48e44e0488d61e3061d680962bf22e42935090
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664721"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Criando o XAML no Visual Studio
@@ -27,11 +27,11 @@ O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para cr
  É possível mudar entre o Visual Studio e o Blend for Visual Studio e até mesmo ter o mesmo projeto aberto nos dois ao mesmo tempo. As alterações feitas nos arquivos XAML em uma IDE podem ser aplicadas por meio de recarregamento automático ao mudar para a outra IDE. É possível controlar o comportamento de recarregamento por meio de opções na caixa de diálogo **Ferramentas**, **Opções** em uma das IDEs.
 
 ### <a name="shared-capabilities"></a>Funcionalidades compartilhadas
- Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio compartilham o mesmo conjunto de janelas e funcionalidades, com algumas diferenças sutis. Alguns destaques incluem:
+ Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio compartilham o mesmo conjunto de janelas e funcionalidades, com algumas diferenças sutis. Alguns dos destaques incluem:
 
 - **Uma interface do usuário consistente:** você pode criar seus aplicativos no contexto conhecido da interface do usuário do Visual Studio, que torna a alternância entre IDEs uma experiência mais agradável e produtiva. O Blend for Visual Studio usa o tema Escuro do Visual Studio, que ajuda você a se concentrar no conteúdo que está criando, melhorando o contraste entre o conteúdo e a interface do usuário. Consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-     ![O IDE Blend para Visual Studio](../designers/media/blendide.png "BlendIDE")
+     ![A IDE do Blend para Visual Studio](../designers/media/blendide.png "BlendIDE")
 
 - **XAML IntelliSense:** as IDEs dão suporte a todas as funcionalidades comuns que você espera do IntelliSense, incluindo preenchimento de declaração, suporte para operações comuns do editor como comentário e formatação de código, bem como navegação para recursos, associação e código.
 
@@ -43,7 +43,7 @@ O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para cr
 
 - **Layouts e configurações sincronizados:** layouts personalizados permitem salvar e aplicar as personalizações de layout da janela de ferramentas. O Visual Studio sincronizará essas personalizações e preferências para o Visual Studio e o Blend for Visual Studio entre os computadores, quando você se conectar com a mesma conta da Microsoft. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-- **Um Gerenciador de Soluções comum:** o Gerenciador de Soluções fornece uma exibição organizada dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Consulte [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
+- **Um Gerenciador de Soluções comum:** o Gerenciador de Soluções fornece uma exibição organizada dos projetos e de seus arquivos, bem como o acesso imediato aos comandos associados a eles. Com o Gerenciador de Soluções, fica mais fácil trabalhar com projetos corporativos grandes. Consulte [soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md).
 
 - **Team Explorer:** com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
@@ -55,7 +55,7 @@ O Visual Studio e o Blend for Visual Studio fornecem ferramentas visuais para cr
 |Para|Visual Studio|Blend for Visual Studio|Mais informações|
 |--------|-------------------|-----------------------------|----------------------|
 |**Criar animações**|Não há nenhuma ferramenta de design para animações; você precisa criá-las de forma programática. Isso exige noções básicas da animação e do sistema de tempo no WPF, além de amplas competências em codificação.|Você cria animações visualmente e pode visualizá-las no Blend for Visual Studio. Isso é mais rápido e mais preciso do que criar as animações em código. É possível adicionar gatilhos para manipular a interação do usuário e mudar para o código para adicionar manipuladores de eventos e outras funcionalidades.|[Animar objetos](../designers/animate-objects-in-xaml-designer.md)|
-|**Transformar formas e texto em demarcadores para facilitar a manipulação**|Não há suporte.|Você pode fazer alterações sutis ou drásticas em formas (como retângulos e elipses) convertendo-as em demarcadores, que fornecem um melhor controle de edição.  É possível alterar a forma ou combinar demarcadores, além de criar demarcadores compostos com base em várias formas.<br /><br /> Você também pode converter blocos de texto em demarcadores para manipulá-los como imagens vetoriais.|[Desenhar formas e demarcadores](../designers/draw-shapes-and-paths.md)|
+|**Transformar formas e texto em demarcadores para facilitar a manipulação**|Não há suporte.|Você pode fazer alterações sutis ou drásticas em formas (como retângulos e elipses) convertendo-as em demarcadores, que fornecem um melhor controle de edição.  É possível alterar a forma ou combinar demarcadores, além de criar demarcadores compostos com base em várias formas.<br /><br /> Você também pode converter blocos de texto em demarcadores para manipulá-los como imagens vetoriais.|[Desenhe as formas e demarcadores](../designers/draw-shapes-and-paths.md)|
 |**Adicionar interatividade a seus designs de interface do usuário**|Exige um código C#, Visual Basic ou C++.|Arraste e solte comportamentos em controles para adicionar interatividade aos designs estáticos. Os comportamentos são snippets de código prontos para uso que encapsulam funcionalidades como arrastar/soltar, zoom e alterações de estado visual. Há um conjunto cada vez maior de comportamentos que você pode escolher, além de poder criar seus próprios.<br /><br /> Em seguida, você pode personalizar cada comportamento alterando suas propriedades no Blend for Visual Studio ou adicionando manipuladores de eventos ao código.|[Inserir controles e modificar seu comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|
 |**Usar a arte da Adobe**|Não há suporte.|Importe a arte do Adobe FXG, PhotoShop ou Illustrator e implemente a interface do usuário no Blend for Visual Studio.|[Inserir imagens, vídeos e clipes de áudio](../designers/insert-images-videos-and-audio-clips-in-xaml-designer.md)|
 |**Editar controles, modelos e estilos**|Exige a codificação e o conhecimento de estilos e modelos do WPF.|Transforme qualquer imagem em um controle.<br /><br /> Use as ferramentas de edição de modelo para fazer alterações em controles, estilos e modelos com apenas alguns cliques do mouse.<br /><br /> Por exemplo, é possível usar os recursos de estilo do Blend for Visual Studio para implementar controles WPF comuns (como botões, caixas de listagem, barras de rolagem, menus, etc.) e alterar a cor, o estilo ou o modelo subjacente diretamente no Blend for Visual Studio. Você pode mudar para o código para dar os toques finais, se desejar.|[Modificar o estilo de objetos](../designers/modify-the-style-of-objects-in-blend.md)|

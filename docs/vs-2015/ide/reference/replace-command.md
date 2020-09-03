@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665625"
 ---
 # <a name="replace-command"></a>Comando Substituir
@@ -34,12 +34,12 @@ Edit.Replace findwhat replacewith [/all] [/case]
 [/wild|/regex] [/word]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `findwhat` Necessário. O texto a ser correspondido.
 
  `replacewith` Necessário. O texto a ser substituído pelo texto correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  /All ou/a opcional. Substitui todas as ocorrências do texto da pesquisa pelo texto de substituição.
 
  /case ou /c Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
@@ -73,5 +73,5 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Veja também
- [Localizando e substituindo o texto ](../../ide/finding-and-replacing-text.md) janela do [Command ](../../ide/reference/command-window.md) [Find Box/Command ](../../ide/find-command-box.md) comandos do [Visual Studio ](../../ide/reference/visual-studio-commands.md) aliases de comando do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>Consulte Também
+ [Localizando e substituindo a janela de comando de texto](../../ide/finding-and-replacing-text.md) [Command Window](../../ide/reference/command-window.md) [pesquisa/comando caixa](../../ide/find-command-box.md) de comandos [Visual](../../ide/reference/visual-studio-commands.md) Studio [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

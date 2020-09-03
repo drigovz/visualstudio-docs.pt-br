@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198872"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
@@ -31,7 +31,7 @@ ms.locfileid: "68198872"
 
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.  
   
- Para obter mais informações, confira [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Para obter mais informações, consulte [como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Configurações de projeto do depurador](../debugger/debugger-project-settings.md)  
@@ -49,18 +49,18 @@ Essa seção descreve as configurações de propriedade relacionadas ao depurado
  [Como: Depurar um executável que não faz parte de uma solução do Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Explica como depurar um executável que não foi criado como parte de um projeto do Visual Studio.  
   
- [Como: Depurar com a origem do Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
+ [Como depurar com a origem do Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
  Descreve como depurar a origem do premium do Microsoft Code Center Premium em seu projeto do Visual Studio.  
   
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)  
  Descreve como depurar aplicativos de 64 bits.  
   
  [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md)  
- Descreve os diferentes aspectos do processo de hospedagem.  
+ Descreve diferentes aspectos do processo de hospedagem.  
   
- [Como: Especificar a versão do .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Como especificar uma versão .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Descreve como definir uma chave do Registro para indicar ao depurador a versão a ser usada.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)

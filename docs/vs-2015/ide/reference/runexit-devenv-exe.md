@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6d1158a12de8b8adfe20fa6d045b756abf8d7b3c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665495"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
@@ -31,7 +31,7 @@ Compila e executa a solução ou o projeto especificado e, em seguida, fecha o I
 devenv /runexit {SolutionName|ProjectName}
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `SolutionName` Necessário. O caminho completo e o nome de um arquivo de solução.
 
  `ProjectName` Necessário. O caminho completo e o nome de um arquivo de projeto.
@@ -50,5 +50,5 @@ devenv /runexit {SolutionName|ProjectName}
 devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Veja também
- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv. exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md) [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

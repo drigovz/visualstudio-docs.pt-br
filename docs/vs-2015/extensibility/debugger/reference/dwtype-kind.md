@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f37fb773a07291a883f5cb65e4cb4ac840a87a14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198787"
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
+# <a name="dwtype_kind"></a>dwTYPE_KIND
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica como interpretar o tipo de um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.  
+Especifica como interpretar o tipo de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,25 +46,25 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>Parâmetros  
  TYPE_KIND_METADATA  
- O [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) união deve ser interpretada como um [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) estrutura.  
+ A União de [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) deve ser interpretada como uma estrutura de [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) .  
   
  TYPE_KIND_PDB  
- O `TYPE_INFO` união deve ser interpretada como um [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) estrutura.  
+ A `TYPE_INFO` União deve ser interpretada como uma estrutura de [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) .  
   
  TYPE_KIND_BUILT  
- O `TYPE_INFO` união deve ser interpretada como um [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) estrutura.  
+ A `TYPE_INFO` União deve ser interpretada como uma estrutura de [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) .  
   
 ## <a name="remarks"></a>Comentários  
- Os valores dessa enumeração aparecem na `dwKind` campo do [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estruturar e são usados para determinar como interpretar o `type` membro de união. O `TYPE_INFO` estrutura é retornada por uma chamada para o [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) método.  
+ Os valores dessa enumeração aparecem no `dwKind` campo da estrutura de [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) e são usados para determinar como interpretar o `type` membro da União. A `TYPE_INFO` estrutura é retornada por uma chamada para o método [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Cabeçalho: sh. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: da9ba9572e121a9eba74cd8d624789032f1bb4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665663"
 ---
 # <a name="quick-watch-command"></a>Comando Inspeção Rápida
@@ -32,7 +32,7 @@ Exibe o texto selecionado ou especificado no campo Expressão da [Caixa de diál
 Debug.QuickWatchq [text]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `text` Opcional. O texto a ser adicionado à caixa de diálogo **Inspeção Rápida**.
 
 ## <a name="remarks"></a>Comentários
@@ -44,5 +44,5 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>Veja também
- [Como: usar a caixa de diálogo QuickWatch ](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) comandos do [Visual Studio ](../../ide/reference/visual-studio-commands.md) [Command janela ](../../ide/reference/command-window.md) [Find caixa de/Command ](../../ide/find-command-box.md) aliases de comando do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+## <a name="see-also"></a>Consulte Também
+ [Como: usar a caixa de diálogo QuickWatch da janela de comando de](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [Command Window](../../ide/reference/command-window.md) comando [Localizar/](../../ide/find-command-box.md) usar a caixa de comando aliases de [comandos do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

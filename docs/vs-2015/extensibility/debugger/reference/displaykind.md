@@ -11,16 +11,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10bed6b3398b93b0776876491d812ec36c9e9e04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198814"
 ---
 # <a name="displaykind"></a>DisplayKind
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Enumera os valores válidos que representam os tipos de informações para levar de uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de objeto e exibir para o usuário.  
+Enumera os valores válidos que representam os tipos de informações a serem executadas de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) e são exibidos para o usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -54,12 +54,12 @@ public enum enum_DisplayKind
  Tipo de campo.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: EE.h  
+ Cabeçalho: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)
