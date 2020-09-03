@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190715"
 ---
 # <a name="idiasession"></a>IDiaSession
@@ -25,59 +25,59 @@ ms.locfileid: "68190715"
 
 Fornece um contexto de consulta para símbolos de depuração.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaSession : IUnknown  
 ```  
   
 ## <a name="methods"></a>Métodos  
- A tabela a seguir mostra os métodos de `IDiaSession`.  
+ A tabela a seguir mostra os métodos de `IDiaSession` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos. Este é o mesmo valor que foi passado para o `put_loadAddress` método.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos. **Observação:**  É importante chamar esse método quando você receber um `IDiaSession` do objeto e antes de começar a usar o objeto.|  
+|[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera o endereço de carregamento do arquivo executável que corresponde aos símbolos neste repositório de símbolos. Esse é o mesmo valor que foi passado para o `put_loadAddress` método.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos neste repositório de símbolos. **Observação:**  É importante chamar esse método quando você recebe um `IDiaSession` objeto e antes de começar a usar o objeto.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Recupera uma referência ao escopo global.|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Recupera um enumerador para todas as tabelas contidas no repositório de símbolos.|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Recupera um enumerador para todos os símbolos nomeados em locais estáticos.|  
-|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Recupera todos os filhos de um identificador do pai especificado que corresponde ao tipo de nome e o símbolo.|  
+|[IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)|Recupera todos os filhos de um identificador pai especificado que correspondem ao nome e ao tipo de símbolo.|  
 |[IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado.|  
-|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço relativo virtual (RVA) especificado.|  
+|[IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual relativo (RVA) específico.|  
 |[IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado (VA).|  
 |[IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)|Recupera o símbolo que contém um token de metadados especificado.|  
 |[IDiaSession::symsAreEquiv](../../debugger/debug-interface-access/idiasession-symsareequiv.md)|Verifica se dois símbolos são equivalentes.|  
-|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Recupera um símbolo de por seu identificador exclusivo.|  
-|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um especificado de endereço virtual relativo e o deslocamento.|  
-|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado e o deslocamento.|  
-|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Recupera um arquivo de origem pelo nome e compiland.|  
-|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Recupera um arquivo de origem pelo identificador de arquivo de origem.|  
-|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Recupera os números de linha dentro de um identificador de arquivo de origem e de compiland especificado.|  
-|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Recupera as linhas que contêm um endereço especificado em um compiland especificado.|  
-|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Recupera as linhas em um compiland especificado que contêm um endereço virtual relativo de especificado.|  
-|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Localiza as informações de número de linha para linhas contidas em um intervalo de endereços especificado.|  
-|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Recupera as linhas em um compiland especificado pelo número de arquivo e linha do código-fonte.|  
-|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Recupera uma fonte que foram colocada em um repositório de símbolos por provedores de atributos ou outros componentes do processo de compilação.|  
+|[IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)|Recupera um símbolo por seu identificador exclusivo.|  
+|[IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)|Recupera um tipo de símbolo especificado que contém, ou está mais próximo de, um endereço virtual relativo especificado e um deslocamento.|  
+|[IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)|Recupera um tipo de símbolo especificado que contém ou está mais próximo de, um endereço virtual e um deslocamento especificados.|  
+|[IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)|Recupera um arquivo de origem por compiland e nome.|  
+|[IDiaSession::findFileById](../../debugger/debug-interface-access/idiasession-findfilebyid.md)|Recupera um arquivo de origem por identificador de arquivo de origem.|  
+|[IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)|Recupera números de linha dentro de um compiland e identificador de arquivo de origem especificados.|  
+|[IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)|Recupera as linhas em um compiland especificado que contém um endereço especificado.|  
+|[IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)|Recupera as linhas em um compiland especificado que contém um endereço virtual relativo especificado.|  
+|[IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)|Localiza as informações de número de linha para as linhas contidas em um intervalo de endereços especificado.|  
+|[IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)|Recupera as linhas em um compiland especificado por arquivo de origem e número de linha.|  
+|[IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md)|Recupera uma fonte que foi colocada no repositório de símbolos por provedores de atributos ou outros componentes do processo de compilação.|  
 |[IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)|Recupera uma sequência enumerada de fluxos de dados de depuração.|  
-|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um determinado endereço.|  
-|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um endereço relativo virtual (RVA) especificado.|  
-|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um endereço virtual especificado (VA).|  
-|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado.|  
-|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereço especificado.|  
-|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço relativo virtual (RVA) especificado.|  
-|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço virtual especificado (VA).|  
-|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, o número de arquivo e linha de origem especificado.|  
-|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas que correspondem a um nome especificado.|  
-|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Retorna uma enumeração de símbolos para que o valor da marca especificado corresponde à variável na função de stub do acelerador pai.|  
-|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos em uma função de stub do acelerador pai especificado em um endereço virtual relativo de especificado.|  
-|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retorna uma enumeração de símbolos para quadros embutidos correspondente ao nome da função especificados em linha.|  
+|[IDiaSession::findInlineFramesByAddr](../../debugger/debug-interface-access/idiasession-findinlineframesbyaddr.md)|Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um determinado endereço.|  
+|[IDiaSession::findInlineFramesByRVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyrva.md)|Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um endereço virtual relativo (RVA) específico.|  
+|[IDiaSession::findInlineFramesByVA](../../debugger/debug-interface-access/idiasession-findinlineframesbyva.md)|Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um endereço virtual especificado (VA).|  
+|[IDiaSession::findInlineeLines](../../debugger/debug-interface-access/idiasession-findinlineelines.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado.|  
+|[IDiaSession::findInlineeLinesByAddr](../../debugger/debug-interface-access/idiasession-findinlineelinesbyaddr.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no intervalo de endereços especificado.|  
+|[IDiaSession::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyrva.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no endereço virtual relativo (RVA) especificado.|  
+|[IDiaSession::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasession-findinlineelinesbyva.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no endereço virtual (VA) especificado.|  
+|[IDiaSession::findInlineeLinesByLinenum](../../debugger/debug-interface-access/idiasession-findinlineelinesbylinenum.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, no arquivo de origem e no número de linha especificados.|  
+|[IDiaSession::findInlineesByName](../../debugger/debug-interface-access/idiasession-findinlineesbyname.md)|Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções embutidas que correspondem a um nome especificado.|  
+|[IDiaSession::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsforacceleratorpointertag.md)|Retorna uma enumeração de símbolos para a variável para a qual o valor de marca especificado corresponde na função de stub do acelerador pai.|  
+|[IDiaSession::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasession-findsymbolsbyrvaforacceleratorpointertag.md)|Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos em uma função de stub de acelerador pai especificada em um endereço virtual relativo especificado.|  
+|[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Retorna uma enumeração de símbolos para quadros embutidos correspondentes ao nome da função embutida especificada.|  
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Retorna uma enumeração de símbolos para quadros embutidos que correspondem ao local de origem especificado.|  
   
 ## <a name="remarks"></a>Comentários  
- É importante chamar o [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) método depois de criar o `IDiaSession` objeto — e o valor passado para o `put_loadAddress` método deve ser diferente de zero — de qualquer propriedade de endereço virtual (VA) dos símbolos a serem acessível. O endereço de carga proveniente de qualquer programa carregado o arquivo executável que está sendo depurado. Por exemplo, você pode chamar a função Win32 `GetModuleInformation` para recuperar o endereço de carregamento para o executável, dado um identificador para o executável.  
+ É importante chamar o método [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) depois de criar o `IDiaSession` objeto — e o valor passado para o `put_loadAddress` método deve ser diferente de zero — para que qualquer propriedade de endereço virtual (VA) de símbolos seja acessível. O endereço de carregamento é proveniente de qualquer programa que carregou o executável que está sendo depurado. Por exemplo, você pode chamar a função do Win32 `GetModuleInformation` para recuperar o endereço de carregamento do executável, dado um identificador para o executável.  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como obter o `IDiaSession` interface como parte de uma inicialização geral do SDK do DIA.  
+ Este exemplo mostra como obter a `IDiaSession` interface como parte de uma inicialização geral do dia SDK.  
   
 ```cpp#  
 CComPtr<IDiaDataSource> pSource;  
@@ -113,15 +113,15 @@ void InitializeDIA(const char *szFilename)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
+ Cabeçalho: dia2. h  
   
- Biblioteca: diaguids.lib  
+ Biblioteca: diaguids. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Visão geral](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces (debug interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Sobre](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   

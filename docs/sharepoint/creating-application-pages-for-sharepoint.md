@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981108"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo para o SharePoint
@@ -43,14 +43,14 @@ ms.locfileid: "72981108"
 
 |Pasta|Descrição|
 |------------|-----------------|
-|Layouts|Mapeia para o diretório virtual _ layouts do sistema de arquivos do SharePoint.|
-|Subpasta layouts|Contém os arquivos que compõem a página do aplicativo. Por padrão, essa pasta tem o mesmo nome que o seu projeto. Você pode renomear essa pasta a qualquer momento. Quando você executa o projeto, o Visual Studio implanta essa pasta no diretório virtual _ layouts do sistema de arquivos do SharePoint.|
+|Layouts|Mapeia para o diretório virtual _layouts do sistema de arquivos do SharePoint.|
+|Subpasta layouts|Contém os arquivos que compõem a página do aplicativo. Por padrão, essa pasta tem o mesmo nome que o seu projeto. Você pode renomear essa pasta a qualquer momento. Quando você executa o projeto, o Visual Studio implanta essa pasta no diretório virtual _layouts do sistema de arquivos do SharePoint.|
 
  O Visual Studio adiciona os seguintes arquivos ao seu projeto:
 
 |Arquivo|Descrição|
 |----------|-----------------|
-|Arquivo de paginação ASP.NET ( *. aspx*)|Contém a marcação XML que define a página.|
+|Arquivo de paginação ASP.NET (*. aspx*)|Contém a marcação XML que define a página.|
 |Arquivo de código de página do aplicativo|Contém o código por trás da página do aplicativo. Adicione o código que manipula eventos a esse arquivo.|
 |Arquivo de código do designer de página do aplicativo|Contém o código que é gerado pelo designer. Não edite este arquivo diretamente.|
 
@@ -62,16 +62,16 @@ ms.locfileid: "72981108"
 
  Você pode depurar uma página de aplicativo da mesma forma que depuraria outros itens de projeto do SharePoint no Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abre o site do SharePoint.
 
- Para exibir a página do aplicativo, você deve navegar manualmente até o local da página do aplicativo (por exemplo: http://<em>server_name</em>/_Layouts/*Project_Name*/ApplicationPage1.aspx).
+ Para exibir a página do aplicativo, você deve navegar manualmente até o local da página do aplicativo (por exemplo: http://<em>server_name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx).
 
  Para obter mais informações sobre como depurar projetos do SharePoint, consulte [solução de problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
 ## <a name="choose-a-master-page"></a>Escolher uma página mestra
  Por padrão, um item de **página de aplicativo** faz referência à página mestra do site que você está usando para depurar seu projeto. Essa página é denominada v4. Master e você pode encontrá-la listada na **Galeria de páginas mestras** do site do SharePoint.
 
- Você pode alterar explicitamente qual página mestra é usada pela página do aplicativo definindo o atributo `MasterPageFile` do elemento `Page` do aplicativo. (Por exemplo: `MasterPageFile="~/_layouts/applicationv4.master"`). Na verdade, você deve definir esse atributo se as páginas mestras dinâmicas não estiverem habilitadas no servidor do SharePoint. Para obter mais informações sobre páginas mestras no SharePoint, consulte [páginas mestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
+ Você pode alterar explicitamente qual página mestra é usada pela página do aplicativo definindo o `MasterPageFile` atributo do `Page` elemento Application. (Por exemplo: `MasterPageFile="~/_layouts/applicationv4.master"` ). Na verdade, você deve definir esse atributo se as páginas mestras dinâmicas não estiverem habilitadas no servidor do SharePoint. Para obter mais informações sobre páginas mestras no SharePoint, consulte [páginas mestras](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolvimento do SharePoint Foundation em detalhes](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Visão geral do ASP.NET](/aspnet/overview)
 - [Páginas da Web do ASP.NET](/aspnet/web-pages/index)

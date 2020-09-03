@@ -11,10 +11,10 @@ ms.author: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876067"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
@@ -39,6 +39,6 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.I
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Verdadeiro|O nome de <xref:System.Activities.ActivityDelegate> a ser chamado quando a atividade executar. Essa propriedade pode ser editada na superfície do designer e é obrigatória.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|Falso|A coleção de argumento de representante chamado. As chaves são os nomes dos objetos de parâmetro no <xref:System.Activities.ActivityDelegate> , e os valores são os argumentos cujas expressões são avaliadas e atribuídas aos objetos de parâmetro correspondentes. Para exibir a caixa de diálogo **DelegateArguments** em que você pode definir essa propriedade, clique no botão de reticências no campo **DelegateArguments** da grade de propriedades. Clique no campo **criar argumento** para adicionar os argumentos.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: Defina e consumir representantes de atividade em Designer de Fluxo de Trabalho](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

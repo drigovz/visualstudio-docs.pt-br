@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911321"
 ---
-# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados do IntelliTrace salvosC#(, Visual Basic C++,)
+# <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados do IntelliTrace salvos (C#, Visual Basic, C++)
 
 Vá para os pontos específicos da execução do aplicativo quando você iniciar a depuração de um arquivo de log do IntelliTrace (.iTrace). Esse arquivo pode conter eventos de desempenho, exceções, threads, etapas de teste, módulos e outras informações do sistema que o IntelliTrace registra durante a execução do seu aplicativo.
 
@@ -34,45 +34,45 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 - Um arquivo .iTrace de uma destas origens:
 
-    |**Source**|**Confira**|
+    |**Origem**|**Esse**|
     |----------------|-------------|
-    |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não em edições Professional ou Community)|[Recursos do IntelliTrace](../debugger/intellitrace-features.md)|
+    |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não em edições Professional ou Community)|[funcionalidades do IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
-## <a name="GetStarted"></a> O que você deseja fazer?
+## <a name="what-do-you-want-to-do"></a><a name="GetStarted"></a> O que você deseja fazer?
 
 - [Abrir um log do IntelliTrace](#Open)
 
 - [Noções básicas sobre o log do IntelliTrace](#Understand)
 
-- [Iniciar depuração a partir de um log do IntelliTrace](#StartDebugging)
+- [Iniciar a depuração de um log do IntelliTrace](#StartDebugging)
 
-## <a name="Open"></a> Abrir um log do IntelliTrace
+## <a name="open-an-intellitrace-log"></a><a name="Open"></a> Abrir um log do IntelliTrace
  Em um computador com Visual Studio Enterprise, abra o arquivo. iTrace.
 
 - Clique duas vezes no arquivo .iTrace fora do Visual Studio ou abra o arquivo de dentro do Visual Studio.
 
-     \- ou -
+     \- ou –
 
 - Se o arquivo .iTrace estiver anexado a um item de trabalho do Team Foundation Server, siga estas etapas no item de trabalho:
 
   - Em **Todos os Links**, localize o arquivo .iTrace. Abra-o.
 
-    \- ou -
+    \- ou –
 
   - Em **Etapas de Reprodução**, escolha o link **IntelliTrace**.
 
 > [!TIP]
 > Se você fechou o arquivo IntelliTrace durante a depuração, poderá reabri-lo facilmente. Vá para o menu **Depurar**, escolha **IntelliTrace**, **Mostrar Resumo do Log**. Você também pode escolher **Mostrar Resumo do Log** na janela **IntelliTrace**. Isso só estará disponível durante a depuração com o IntelliTrace.
 
-## <a name="Understand"></a> Noções básicas sobre o log do IntelliTrace
+## <a name="understand-the-intellitrace-log"></a><a name="Understand"></a> Entender o log do IntelliTrace
  Algumas das seções a seguir no arquivo. iTrace aparecerão somente se você coletou dados de uma fonte específica, por exemplo, de aplicativos do SharePoint.
 
-|**Section**|**Contém**|**Origem de coleta**|
+|**Seção**|**Contém**|**Origem de coleta**|
 |-----------------|------------------|---------------------------|
 |[Violações de desempenho](#Performance)|Eventos de desempenho com chamadas de função que excedam o limite configurado|Microsoft Monitoring Agent, um coletor autônomo ou com o System Center 2012 R2 Operations Manager para aplicativos Web ASP.NET hospedados no IIS|
 |[Dados de exceção](#ExceptionData)|Exceções, incluindo toda a pilha de chamadas para cada exceção|Todas as fontes|
-|[Análise](#Analysis)|Somente para aplicativos do SharePoint 2010 e do SharePoint 2013. Diagnostique eventos do IntelliTrace e do SharePoint, como eventos do depurador, eventos de ULS, exceções não identificadas e outros dados que o Microsoft Monitoring Agent registrou.|Microsoft Monitoring Agent, um coletor autônomo ou com o System Center 2012 R2 Operations Manager|
+|[Analisa](#Analysis)|Somente para aplicativos do SharePoint 2010 e do SharePoint 2013. Diagnostique eventos do IntelliTrace e do SharePoint, como eventos do depurador, eventos de ULS, exceções não identificadas e outros dados que o Microsoft Monitoring Agent registrou.|Microsoft Monitoring Agent, um coletor autônomo ou com o System Center 2012 R2 Operations Manager|
 |[Informações do sistema](#SystemInfo)|Configurações e especificações do sistema host|Todas as fontes|
 |[Lista de threads](#ThreadsList)|Threads executados durante a coleta|Todas as fontes|
 |[Módulos](#Modules)|Módulos que o processo de destino carregou na ordem em que foram carregados.|Todas as fontes|
@@ -82,15 +82,15 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 - Escolha um cabeçalho de coluna para classificar dados.
 
-- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos ( **:** ) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula ( **;** ) para adicionar outro valor de coluna e de pesquisa.
+- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos (**:**) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula (**;**) para adicionar outro valor de coluna e de pesquisa.
 
      Por exemplo, para localizar os eventos de desempenho que tenham a palavra "lento" na coluna **Descrição**, digite:
 
      `Description:slow`
 
-## <a name="StartDebugging"></a> Iniciar depuração a partir de um log do IntelliTrace
+## <a name="start-debugging-from-an-intellitrace-log"></a><a name="StartDebugging"></a> Iniciar depuração a partir de um log do IntelliTrace
 
-### <a name="Performance"></a> Violações de desempenho
+### <a name="performance-violations"></a><a name="Performance"></a> Violações de desempenho
  Revise os eventos de desempenho que foram registrados para seu aplicativo. Você pode ocultar esses eventos que não ocorrem com frequência.
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Para iniciar a depuração de um evento de desempenho
@@ -121,7 +121,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
      Agora você pode revisar outros valores gravados, a pilha de chamadas, navegar por código, ou usar a janela do **IntelliTrace** para [avançar ou retornar "no tempo" entre outros métodos](../debugger/intellitrace.md) que foram chamados durante esse evento de desempenho.
 
-### <a name="ExceptionData"></a> Dados de exceção
+### <a name="exception-data"></a><a name="ExceptionData"></a> Dados de exceção
  Revise as exceções acionadas e que foram registradas para seu aplicativo. Você pode agrupar as exceções que tenham o mesmo tipo e a mesma pilha de chamadas de forma que você veja apenas a exceção mais recente.
 
 ##### <a name="to-start-debugging-from-an-exception"></a>Para iniciar a depuração a partir de uma exceção
@@ -147,7 +147,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |**Horário do Evento Mais Recente** ou **Hora do Evento**|Carimbo de data/hora registrado quando a exceção foi acionada|
     |**Pilha de chamadas**|Pilha de chamadas para uma exceção.<br /><br /> Para ver a pilha de chamadas, escolha uma exceção na lista. A pilha de chamadas aparece abaixo da lista de exceções.|
 
-### <a name="Analysis"></a> Análise
+### <a name="analysis"></a><a name="Analysis"></a> Analisa
  Diagnostique problemas com os aplicativos do SharePoint 2010 e do SharePoint 2013 usando uma ID de correlação do SharePoint ou examine qualquer exceção sem tratamento encontrada pelo Microsoft Monitoring Agent.
 
 - Use uma ID de correlação do SharePoint para localizar sua solicitação da Web e eventos correspondentes. Escolha um evento e inicie a depuração no ponto onde e quando o evento ocorreu.
@@ -160,11 +160,11 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
     Por exemplo:
 
-    ![ID &#45; de correlação &#45; de erros do IntelliTrace SharePoint](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![Erro do IntelliTrace &#45; SharePoint &#45; ID de correlação](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
 2. Abra o arquivo .iTrace, vá para **Análise** e digite a ID de correlação do SharePoint para revisar a solicitação da Web e os eventos registrados correspondentes.
 
-    ![Log &#45; do IntelliTrace Insira a ID de correlação do SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Log do IntelliTrace &#45; Insira a ID de correlação do SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
 3. Sob **Eventos de Solicitação**, examine os eventos. A partir da parte superior, os eventos aparecem na ordem em que aconteceram.
 
@@ -172,7 +172,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
    2. Escolha **Iniciar Depuração** para iniciar depuração no ponto onde o evento aconteceu.
 
-      ![Exibição do arquivo &#45; de log do &#43; IntelliTrace eventos de solicitação da Web](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Arquivo de log do IntelliTrace &#45; exibir eventos de &#43; de solicitação da Web](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
    Você pode ver esses tipos de eventos do SharePoint com eventos do IntelliTrace:
 
@@ -187,12 +187,12 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |**Campo do IntelliTrace**|**Campo do ULS do SharePoint**|
     |----------------------------|------------------------------|
     |**ID**|**EventID**|
-    |**Nível**|**Nível**|
+    |**Level**|**Level**|
     |**ID da categoria**|**ID da categoria**|
     |**Categoria**|**Categoria**|
-    |**Área**|**Produto**|
-    |**Saída**|**Message**|
-    |**ID de correlação**|**ID de correlação**|
+    |**Área**|**Product**|
+    |**Saída**|**Mensagem**|
+    |**ID de Correlação**|**ID de Correlação**|
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Iniciar depuração a partir de uma exceção sem tratamento
 
@@ -202,11 +202,11 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 3. Escolha **Exceção da Depuração** para iniciar a depuração no ponto onde e quando a exceção aconteceu.
 
-    ![Exceções não &#45; tratadas do SharePoint de log do IntelliTrace](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Log do IntelliTrace &#45; exceções não tratadas do SharePoint](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
    Para obter instruções, consulte [Walkthrough: Depurando um aplicativo do SharePoint usando o IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Para os tipos de dados que o agente registra, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
-### <a name="ThreadsList"></a> Lista de threads
+### <a name="threads-list"></a><a name="ThreadsList"></a> Lista de threads
  Examine os threads registrados executados no processo de destino. Você pode iniciar a depuração do primeiro evento válido do IntelliTrace em um thread selecionado.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Para iniciar a depuração de um thread específico
@@ -222,8 +222,8 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 |**Coluna**|**Exibe**|
 |----------------|-------------------|
 |**ID**|Número de ID do thread|
-|**Nome**|Nome do thread. Threads sem nome aparecem como "\<Sem nome>".|
-|**Hora de início**|A hora em que o thread foi criado|
+|**Nome**|Nome do thread. Os threads sem nome aparecem como " \<No Name> ".|
+|**Start Time**|A hora em que o thread foi criado|
 |**Hora de término**|A hora em que o thread foi concluído|
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Para iniciar a depuração de uma etapa específica do teste
@@ -242,22 +242,22 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 |**Caso de teste**|Casos de teste da sessão de teste selecionada. Esta lista estará vazia se os dados de teste tiverem sido criados usando um teste exploratório manual.|
 |**Grade de etapas do teste**|Etapas de teste que foram registradas com o resultado de teste de aprovação ou de falha|
 
-### <a name="SystemInfo"></a> Informações do sistema
+### <a name="system-info"></a><a name="SystemInfo"></a> Informações do sistema
  Esta seção mostra detalhes sobre o sistema que hospedou o aplicativo, por exemplo, informações de hardware, do sistema operacional e específicas do ambiente e do processo.
 
-### <a name="Modules"></a> Módulos
+### <a name="modules"></a><a name="Modules"></a> Módulos
  Esta seção mostra os módulos que o processo de destino carregou. Os módulos aparecem na ordem em que foram carregados.
 
 |**Coluna**|**Exibe**|
 |----------------|-------------------|
-|**Nome do Módulo**|Nome do arquivo do módulo|
+|**Nome do módulo**|Nome do arquivo do módulo|
 |**Caminho do Módulo**|Local do disco onde o módulo foi carregado|
 |**ID do módulo**|O identificador exclusivo do módulo que é específico da versão e que contribui para os arquivos de símbolo (PDB) correspondentes. Consulte [localizando arquivos de símbolo (. pdb) e arquivos de origem](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).|
 
 ### <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
- [Usando o coletor IntelliTrace autônomo](../debugger/using-the-intellitrace-stand-alone-collector.md)
+ [Usar o coletor autônomo do IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)
+ [funcionalidades do IntelliTrace](../debugger/intellitrace-features.md)
 
  [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 

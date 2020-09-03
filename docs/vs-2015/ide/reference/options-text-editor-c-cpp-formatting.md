@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5ad06dfb32c301985eb4976f6c89c7be1e0e68da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662338"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
@@ -44,7 +44,7 @@ Permite alterar o comportamento padrão do Editor de Códigos quando você está
  **Porcentagem de opacidade de código inativo** O grau de opacidade para blocos de código inativos pode ser personalizado.
 
 ## <a name="indentation"></a>Recuo
- **Recuar chaves** Você pode configurar como as chaves são alinhadas quando você pressiona ENTER depois de iniciar um bloco de código, por exemplo, uma função ou um loop de `for`. As chaves podem ser alinhadas com o primeiro caractere do bloco de códigos ou recuadas.
+ **Recuar chaves** Você pode configurar como as chaves são alinhadas quando você pressiona ENTER depois de iniciar um bloco de código, por exemplo, uma função ou um `for` loop. As chaves podem ser alinhadas com o primeiro caractere do bloco de códigos ou recuadas.
 
  **Recuo automático na guia** Você pode configurar o que acontece na linha de código atual quando você pressiona TAB. A linha é recuada ou uma tabulação é inserida.
 
@@ -66,5 +66,5 @@ Permite alterar o comportamento padrão do Editor de Códigos quando você está
 
 - [Instrução while (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md) [usando o IntelliSense](../../ide/using-intellisense.md)

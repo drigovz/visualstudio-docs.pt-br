@@ -1,5 +1,5 @@
 ---
-title: Modelo de um serviço de linguagem legado | Microsoft Docs
+title: Modelo de um serviço de linguagem herdado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707042"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modelo de um serviço de linguagem herdado
-Um serviço de idioma define os elementos e recursos para um idioma específico, e é usado para fornecer ao editor informações específicas para esse idioma. Por exemplo, o editor precisa conhecer os elementos e palavras-chave do idioma para suportar a coloração da sintaxe.
+Um serviço de linguagem define os elementos e recursos para um idioma específico e é usado para fornecer ao editor informações específicas para esse idioma. Por exemplo, o editor precisa saber os elementos e as palavras-chave do idioma para dar suporte à cor da sintaxe.
 
- O serviço de idiomas funciona em estreita colaboração com o buffer de texto gerenciado pelo editor e a exibição que contém o editor. A opção Microsoft IntelliSense **Quick Info** é um exemplo de um recurso fornecido por um serviço de idiomas.
+ O serviço de linguagem trabalha em conjunto com o buffer de texto gerenciado pelo editor e a exibição que contém o editor. A opção de **informações rápidas** do Microsoft IntelliSense é um exemplo de um recurso fornecido por um serviço de linguagem.
 
-## <a name="a-minimal-language-service"></a>Um serviço mínimo de idioma
- O serviço de idioma mais básico contém os seguintes dois objetos:
+## <a name="a-minimal-language-service"></a>Um serviço de linguagem mínima
+ O serviço de linguagem mais básico contém os dois objetos a seguir:
 
-- O serviço de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> *idiomas* implementa a interface. Um serviço de idioma saem com informações sobre o idioma, incluindo nome, extensões de nome de arquivo, gerenciador de janelas de código e colorador.
+- O *serviço de linguagem* implementa a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Um serviço de linguagem tem informações sobre a linguagem, incluindo seu nome, extensões de nome de arquivo, Gerenciador de janelas de código e Colorizer.
 
-- O *colorador* <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> implementa a interface.
+- O *Colorizer* implementa a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.
 
-  O desenho conceitual a seguir mostra um modelo de um serviço de linguagem básica.
+  O desenho conceitual a seguir mostra um modelo de um serviço de linguagem básico.
 
-  ![Gráfico do modelo de serviço de idioma](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Modelo básico de serviço de linguagem
+  ![Gráfico de modelo do serviço de linguagem](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Modelo de serviço de linguagem básica
 
-  A janela do documento hospeda a *exibição* do documento do editor, neste caso o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principal. A exibição do documento e o buffer de texto são de propriedade do editor. Esses objetos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funcionam através de uma janela de documento especializada chamada *janela de código*. A janela de código <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> está contida em um objeto que é criado e controlado pelo IDE.
+  A janela do documento hospeda a *exibição de documento* do editor, neste caso, o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principal. O modo de exibição de documento e o buffer de texto pertencem ao editor. Esses objetos funcionam com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o por meio de uma janela de documento especializada chamada de *janela de código*. A janela de código está contida em um <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é criado e controlado pelo IDE.
 
-  Quando um arquivo com uma determinada extensão é carregado, o editor localiza o serviço de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> idioma associado a essa extensão e passa para ele a janela de código chamando o método. O serviço de idiomaretorna um *gerenciador de janelas de*código , que implementa a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.
+  Quando um arquivo com uma determinada extensão é carregado, o editor localiza o serviço de idioma associado a essa extensão e passa para ele a janela de código chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> método. O serviço de linguagem retorna um *Gerenciador de janelas de código*, que implementa a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.
 
   A tabela a seguir fornece uma visão geral dos objetos no modelo.
 
 | Componente | Objeto | Função |
 |------------------| - | - |
-| Buffer de texto | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Um fluxo de texto de leitura/gravação unicode. É possível que o texto use outras codificações. |
-| Janela de código | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Uma janela de documento que contenha uma ou mais visualizações de texto. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] está no modo De interface de vários documentos (MDI), a janela de código é uma criança MDI. |
-| Exibição de texto | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Uma janela que permite ao usuário navegar e visualizar texto usando o teclado e o mouse. Uma exibição de texto aparece para o usuário como um editor. Você pode usar visualizações de texto em janelas de editor ordinários, na janela Saída e na janela 'Imediato'. Além disso, você pode configurar uma ou mais exibições de texto dentro de uma janela de código. |
-| Gerenciador de texto | Gerenciado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> serviço, a partir <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> do qual você obtém um ponteiro | Um componente que mantém informações comuns compartilhadas por todos os componentes descritos anteriormente. |
-| Serviço de idiomas | Dependente da implementação; Implementa<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Um objeto que fornece ao editor informações específicas do idioma, como destaque de sintaxe, conclusão da instrução e correspondência de suporte. |
+| Buffer de texto | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Um fluxo de texto de leitura/gravação Unicode. É possível que o texto use outras codificações. |
+| Janela de código | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Uma janela de documento que contém uma ou mais exibições de texto. Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o está no modo MDI (interface de vários documentos), a janela de código é um filho MDI. |
+| Exibição de texto | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Uma janela que permite ao usuário navegar e exibir texto usando o teclado e o mouse. Uma exibição de texto é exibida para o usuário como um editor. Você pode usar modos de exibição de texto em janelas de editor comuns, na janela saída e na janela imediata. Além disso, você pode configurar uma ou mais exibições de texto em uma janela de código. |
+| Gerenciador de texto | Gerenciado pelo <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> serviço, do qual você obtém um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> ponteiro | Um componente que mantém informações comuns compartilhadas por todos os componentes descritos anteriormente. |
+| Serviço de linguagem | Dependente de implementação; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Um objeto que fornece ao editor informações específicas de idioma, como realce de sintaxe, conclusão de instrução e correspondência de chaves. |
 
 ## <a name="see-also"></a>Confira também
 - [Dados de documentos e exibição de documentos em editores personalizados](../../extensibility/document-data-and-document-view-in-custom-editors.md)

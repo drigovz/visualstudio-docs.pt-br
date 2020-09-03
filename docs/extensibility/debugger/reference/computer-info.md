@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27794dff51646b72dbbfda81ead02e5206ade78b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737659"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
-Descreve o computador no qual o depurador está sendo executado.
+Descreve o computador no qual o depurador está em execução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,21 +48,21 @@ public struct COMPUTER_INFO
 Identifica a arquitetura do microprocessador.
 
 `wSuiteMask`\
-Identifica a máscara da suíte.
+Identifica a máscara do pacote.
 
 `dwOperatingSystemVersion`\
-Número da versão do sistema operacional.
+Número de versão do sistema operacional.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é devolvida pelo método [GetComputerInfo.](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+Essa estrutura é retornada pelo método [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Msdbg.h
+Cabeçalho: Msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
-- [ObterInformações do Computador](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

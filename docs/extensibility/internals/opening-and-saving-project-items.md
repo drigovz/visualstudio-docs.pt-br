@@ -1,5 +1,5 @@
 ---
-title: Abertura e Economia de Itens do Projeto | Microsoft Docs
+title: Abrindo e salvando itens de projeto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,43 +13,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706963"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
-Quando você adiciona um novo tipo de projeto, você deve [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerenciar a abertura e a salvação de seus arquivos de projetos no ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.
+Ao adicionar um novo tipo de projeto, você deve gerenciar a abertura e o salvamento de seus arquivos de projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Exibindo arquivos usando o comando Abrir Arquivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 
- Fornece uma explicação passo-a-passo de como o IDE lida com o comando **Arquivo Aberto** e o papel dos projetos na resposta a este comando.
+ Fornece uma explicação passo a passo de como o IDE manipula o comando **Open File** e a função de projetos no respondendo a esse comando.
 
 - [Exibindo arquivos usando o comando Abrir Com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 
- Fornece uma explicação detalhada e passo a passo de como o IDE lida com o comando **Open With,** solicitando a abertura de um arquivo que tenha alguma escolha de editores padrão.
+ Fornece uma explicação detalhada e passo a passo de como o IDE trata o comando **Open with** , solicitando a abertura de um arquivo que tem alguma opção de editores padrão.
 
 - [Como abrir editores específicos a um projeto](../../extensibility/how-to-open-project-specific-editors.md)
 
- Fornece instruções passo-a-passo para especificar que arquivos de um determinado tipo em seu projeto devem ser abertos usando um editor específico do projeto.
+ Apresenta instruções passo a passo para especificar que os arquivos de um tipo específico em seu projeto devem ser abertos usando um editor específico do projeto.
 
 - [Como abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
 
- Fornece instruções passo-a-passo para especificar como habilitar o IDE para abrir um editor padrão para arquivos do seu tipo de projeto.
+ Fornece instruções passo a passo para especificar como habilitar o IDE para abrir um editor padrão para arquivos em seu tipo de projeto.
 
 - [Como abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
 
- Fornece instruções passo a passo para abrir um editor específico do projeto para um arquivo aberto.
+ Fornece instruções detalhadas para abrir um editor específico do projeto para um arquivo aberto.
 
 - [Salvando um documento padrão](../../extensibility/internals/saving-a-standard-document.md)
 
- Fornece uma explicação detalhada de como o IDE lida com os comandos **Save,** **Save As**e **Save All** para um documento aberto em um editor padrão.
+ Fornece uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos** para um documento aberto em um editor padrão.
 
 - [Salvando um documento personalizado](../../extensibility/internals/saving-a-custom-document.md)
 
- Fornece um diagrama e uma explicação detalhada de como o IDE lida com os comandos **Save,** **Save As**e Save **All para** documentos abertos em um editor personalizado.
+ Fornece um diagrama e uma explicação detalhada de como o IDE manipula os comandos **salvar**, **salvar como**e **salvar todos os** documentos abertos em um editor personalizado.
 
 - [Determinando qual editor abre um arquivo em um projeto](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)
 
@@ -58,8 +58,8 @@ Quando você adiciona um novo tipo de projeto, você deve [!INCLUDE[vsprvs](../.
 ## <a name="related-sections"></a>Seções relacionadas
 - [Criar designers e editores personalizados](../../extensibility/creating-custom-editors-and-designers.md)
 
- Lista os quatro tipos de editores que o IDE pode hospedar e dá descrições de cada editor.
+ Lista os quatro tipos de editores que o IDE pode hospedar e fornece descrições de cada editor.
 
-- [Tipos de projeto](../../extensibility/internals/project-types.md)
+- [Tipos de Projeto](../../extensibility/internals/project-types.md)
 
- Discute como os projetos controlam a forma como esse código é compilado e construído, como os editores são abertos e como os itens do projeto são formatados.
+ Discute como os projetos controlam a maneira como o código é compilado e criado, como os editores são abertos e como os itens de projeto são formatados.

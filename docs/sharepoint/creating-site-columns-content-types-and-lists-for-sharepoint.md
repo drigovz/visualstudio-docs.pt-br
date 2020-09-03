@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984510"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Criar colunas de site, tipos de conteúdo e listas para o SharePoint
@@ -31,7 +31,7 @@ ms.locfileid: "72984510"
 ## <a name="site-columns"></a>Colunas do site
  As colunas do site são um dos elementos mais básicos que você pode adicionar a um projeto do SharePoint. Uma coluna de site representa um tipo de dados, como um número de telefone, um comentário ou o nome da cidade de um contato em uma lista de contatos.
 
- O novo modelo de item de projeto coluna de site torna a criação de colunas de site mais fácil do que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML no arquivo *Elements. xml* da coluna do site para incluir as informações desejadas, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna do site apareça no SharePoint. Para obter mais informações sobre colunas de site, consulte [introdução às colunas](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
+ O novo modelo de item de projeto coluna de site torna a criação de colunas de site mais fácil do que na versão anterior do Visual Studio. Depois de criar uma nova coluna de site, você pode modificar o XML no arquivo de *Elements.xml* da coluna do site para incluir as informações desejadas, como seu nome de exibição, seu tipo de dados e o grupo no qual você deseja que a coluna do site apareça no SharePoint. Para obter mais informações sobre colunas de site, consulte [introdução às colunas](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
 
 ## <a name="content-types-and-lists"></a>Tipos de conteúdo e listas
  Tipos de conteúdo e listas estão entre os elementos usados com mais frequência no SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "72984510"
 
  Uma lista é uma coleção de informações no SharePoint que você pode compartilhar com outras pessoas. Listas consistem em linhas de colunas que contêm dados. Alguns exemplos de listas incluem: uma lista de tarefas, uma lista de contatos e uma lista de anúncios.
 
- Os novos tipos de conteúdo e designers de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tornam a criação de tipos e listas de conteúdo de site muito mais fácil e mais intuitiva do que na versão anterior do Visual Studio. A interface do usuário permite que você construa visualmente tipos de conteúdo e listas de forma familiar e permite classificar e agrupar dados em listas e usar títulos de grupo. Para obter mais informações sobre tipos de conteúdo, consulte [tipos de conteúdo](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14)). Para obter mais informações sobre listas, consulte [listar formulários](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14)) e [exibições de lista](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14)).
+ O novo tipo de conteúdo e os designers de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tornam a criação de tipos de conteúdo de site e listas muito mais fáceis e intuitivas do que na versão anterior do Visual Studio. A interface do usuário permite que você construa visualmente tipos de conteúdo e listas de forma familiar e permite classificar e agrupar dados em listas e usar títulos de grupo. Para obter mais informações sobre tipos de conteúdo, consulte [tipos de conteúdo](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14)). Para obter mais informações sobre listas, consulte [listar formulários](/previous-versions/office/developer/sharepoint-2010/aa543232(v=office.14)) e [exibições de lista](/previous-versions/office/developer/sharepoint-2010/ff604021(v=office.14)).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -48,5 +48,5 @@ ms.locfileid: "72984510"
 |-----------|-----------------|
 |[Walkthrough: criar uma coluna de site, um tipo de conteúdo e uma lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Demonstra como criar colunas de site que são usadas em um tipo de conteúdo personalizado. O tipo de conteúdo é usado em uma lista personalizada.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Comece a desenvolver no SharePoint 2010](/sharepoint/dev/)

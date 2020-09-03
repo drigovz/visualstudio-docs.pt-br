@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 04d1db2ca8176678d8a72a84ede2bddcbfa2f152
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737884"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
-Contém as informações necessárias para implementar um ponto de ruptura, incluindo GUID, restrição e tracepoint do fornecedor.
+Contém as informações necessárias para implementar um ponto de interrupção, incluindo GUID do fornecedor, restrição e tracepoint.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_REQUEST_INFO2 {
@@ -65,53 +65,53 @@ public struct BP_REQUEST_INFO2 {
 
 ## <a name="members"></a>Membros
 `dwFields`\
-Uma combinação de bandeiras da enumeração [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica quais campos são preenchidos.
+Uma combinação de sinalizadores da enumeração [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) que especifica quais campos são preenchidos.
 
 `guidLanguage`\
 O GUID do idioma.
 
 `bpLocation`\
-A estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) que especifica o tipo de local do ponto de ruptura.
+A estrutura de [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) que especifica o tipo do local do ponto de interrupção.
 
 `pProgram`\
-O objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o aplicativo no qual ocorre o ponto de ruptura.
+O objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o aplicativo no qual ocorre o ponto de interrupção.
 
 `bstrProgramName`\
-O nome do aplicativo no qual ocorre o ponto de ruptura.
+O nome do aplicativo no qual ocorre o ponto de interrupção.
 
 `pThread`\
-O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento no qual ocorre o ponto de ruptura.
+O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o thread no qual o ponto de interrupção ocorre.
 
 `bstrThreadName`\
-O nome do segmento no qual ocorre o ponto de ruptura.
+O nome do thread no qual o ponto de interrupção ocorre.
 
 `bpCondition`\
-A [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura que descreve as condições sob as quais o ponto de ruptura será acionado.
+A estrutura de [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que descreve as condições sob as quais o ponto de interrupção será acionado.
 
 `bpPassCount`\
-A [estrutura BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que contém as informações de contagem de passes do ponto de ruptura.
+A estrutura de [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que contém as informações de contagem de aprovação do ponto de interrupção.
 
 `dwFlags`\
-Uma combinação de bandeiras da enumeração [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica as bandeiras para o ponto de ruptura solicitado.
+Uma combinação de sinalizadores da enumeração [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) que especifica os sinalizadores para o ponto de interrupção solicitado.
 
 `guidVendor`\
-GUID de fornecedor. Pode ser um valor nulo.
+GUID do fornecedor. Pode ser um valor nulo.
 
 `bstrConstraint`\
-Nome da restrição de ponto de ruptura. Pode ser um valor nulo.
+Nome da restrição de ponto de interrupção. Pode ser um valor nulo.
 
 `bstrTracepoint`\
 Nome do ponto de rastreamento. Pode ser um valor nulo.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é devolvida pelo método [GetRequestInfo2.](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
+Essa estrutura é retornada pelo método [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

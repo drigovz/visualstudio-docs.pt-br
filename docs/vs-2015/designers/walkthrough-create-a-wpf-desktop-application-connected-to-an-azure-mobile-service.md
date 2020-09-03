@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664022"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure
@@ -21,7 +21,7 @@ ms.locfileid: "72664022"
 
 Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente um aplicativo de área de trabalho moderno que usa um serviço móvel do Azure para armazenar e fornecer dados.
 
-## <a name="Requirements"></a> Pré-requisitos
+## <a name="prerequisites"></a><a name="Requirements"></a> Pré-requisitos
  Você precisará dos seguintes itens para concluir este passo a passo:
 
 - Visual Studio 2015 – qualquer versão que dê suporte ao desenvolvimento do WPF.
@@ -30,7 +30,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 
   - Você pode se inscrever para uma conta de avaliação gratuita [aqui](https://azure.microsoft.com/pricing/free-trial/).
 
-  - Você pode ativar os [benefícios de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Sua assinatura do MSDN fornece a você créditos mensais que podem ser usados para serviços pagos do Azure.
+  - Você pode ativar os [benefícios de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Todos os meses, sua assinatura do MSDN lhe oferece créditos que podem ser usados para serviços pagos do Azure.
 
 ## <a name="create-a-project-and-add-references"></a>Criar um projeto e adicionar referências
  A primeira etapa é criar um projeto WPF e adicionar um pacote NuGet que permita conexão com os serviços móveis do Azure.
@@ -49,7 +49,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Para adicionar uma referência ao SDK de Serviços Móveis do Microsoft Azure
 
-1. No **Gerenciador de Soluções**, abra o menu de atalho para o nó **Referências** e escolha **Gerenciar Pacotes do NuGet**.
+1. Em **Gerenciador de soluções**, abra o menu de atalho para o nó **referências** e escolha **gerenciar pacotes NuGet**.
 
 2. Em **Gerenciar Pacotes do NuGet**, escolha o campo **Pesquisar** e insira `mobileservices`.
 
@@ -204,7 +204,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 
 #### <a name="to-create-and-modify-the-main-window"></a>Para criar e modificar a janela principal
 
-1. No **Gerenciador de Soluções**, clique duas vezes no arquivo **MainWindow.xaml**.
+1. No **Gerenciador de Soluções**, abra o arquivo **MainWindow.xaml**.
 
 2. **Importante**. Essa etapa é apenas para C#. Se você estiver usando Visual Basic, pule para a próxima etapa. No painel inferior do designer, localize a linha `xmlns:local=”clr-namespace:WPFQuickStart”` e substitua-a pelo seguinte código XAML:
 
@@ -484,7 +484,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
     > [!NOTE]
     > Talvez seja necessário alterar a parte numérica da URL. O Microsoft Azure requer uma URL exclusiva para cada serviço móvel.
 
-     Isso define a URL para o serviço a ser `https://wpfquickstart01.azure-mobile.net/`.
+     Isso define a URL para o serviço como `https://wpfquickstart01.azure-mobile.net/` .
 
 4. Na lista **BANCO DE DADOS**, escolha uma opção de banco de dados. Como esse é um aplicativo que provavelmente não terá muito uso, você pode escolher a opção **Criar um banco de dados SQL de 20 MB gratuito** ou escolher o banco de dados gratuito já associado à sua assinatura.
 
@@ -547,7 +547,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 
 #### <a name="to-run-the-application"></a>Para executar o aplicativo
 
-1. Na barra de menus, selecione **Depurar**, **Iniciar Depuração** (ou pressione F5).
+1. Na barra de menus, escolha **depurar**, **Iniciar Depuração** (ou pressione F5).
 
 2. Na caixa de texto **Inserir um TodoItem**, digite `Do something`e, em seguida, escolha o botão **Salvar**.
 
@@ -568,5 +568,5 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 
  Você pode se conectar a bancos de dados do SQL existentes ou outras fontes de dados usando os serviços móveis do Azure. Consulte [Documentação dos serviços móveis](https://azure.microsoft.com/services/app-service/mobile/).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Walkthrough: meu primeiro aplicativo de área de trabalho do WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md) [cria aplicativos de área de trabalho modernos com Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737778"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Dá a razão de um ponto de ruptura não ter sido vinculado.
+Fornece o motivo pelo qual um ponto de interrupção foi desassociado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_UNBOUND_REASON {
@@ -48,26 +48,26 @@ public enum enum_BP_UNBOUND_REASON {
 
 ## <a name="fields"></a>Campos
 `BPUR_UNKNOWN`\
-A razão é desconhecida.
+O motivo é desconhecido.
 
 `BPUR_CODE_UNLOADED`\
-O código que contém o ponto de ruptura foi descarregado.
+O código que contém o ponto de interrupção foi descarregado.
 
 `BPUR_BREAKPOINT_REBIND`\
-O ponto de ruptura foi a repercussão para um local diferente. Isso pode acontecer após editar e continuar as operações quando o ponto de ruptura se mover, ou quando o ponto de ruptura estiver vinculado a um arquivo com um caminho que não é mais válido.
+O ponto de interrupção foi reassociado a um local diferente. Isso pode acontecer após as operações de editar e continuar quando o ponto de interrupção se move, ou quando o ponto de interrupção está associado a um arquivo com um caminho que não é mais válido.
 
 `BPUR_ BREAKPOINT_ERROR`\
-O ponto de ruptura é determinado para estar errado depois de ser vinculado. Isso acontece com pontos de interrupção gerenciados cujas condições não são mais válidas.
+O ponto de interrupção é determinado como erro depois de ser associado. Isso ocorre com pontos de interrupção gerenciados cujas condições não são mais válidas.
 
 ## <a name="remarks"></a>Comentários
-Devolvido pelo método [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+Retornado pelo método [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

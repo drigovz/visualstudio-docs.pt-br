@@ -8,15 +8,15 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594208"
 ---
 # <a name="visual-c-intellisense-features"></a>Funcionalidades do Visual C++ IntelliSense
 
-IntelliSense é um nome dado a um conjunto de recursos que tornam a codificação mais conveniente. O IntelliSense para C++ está disponível para arquivos autônomos, bem como para arquivos que fazem parte de um projeto em C++. Em projetos multiplataforma, alguns recursos do IntelliSense estão disponíveis em arquivos *.cpp* e *.c* no projeto de código compartilhado, mesmo quando você está em um contexto Android ou iOS.
+IntelliSense é um nome dado a um conjunto de recursos que tornam a codificação mais conveniente. O IntelliSense para C++ está disponível para arquivos autônomos, bem como para arquivos que fazem parte de um projeto em C++. Em projetos de plataforma cruzada, alguns recursos do IntelliSense estão disponíveis em arquivos *. cpp* e *. c* no projeto de código compartilhado, mesmo quando você está em um contexto Android ou Ios.
 
 Este artigo fornece uma visão geral dos recursos C++ IntelliSense. Para obter informações sobre como configurar seu projeto para o IntelliSense e como solucionar problemas, consulte [Configurar um projeto do C++ para o IntelliSense](visual-cpp-intellisense-configuration.md).
 
@@ -34,11 +34,11 @@ Você pode usar os itens de menu e os atalhos de teclado mostrados na imagem a s
 
 Quando você começa a digitar uma palavra-chave, um tipo, uma função, um nome de variável ou outro elemento de programa que o compilador reconhece, o editor se oferece para completar a palavra para você.
 
-Para obter uma lista dos ícones e seus significados, consulte [Os ícones "Exibição de classe" e "Navegador de objetos".](../ide/class-view-and-object-browser-icons.md)
+Para obter uma lista dos ícones e seus significados, consulte os [ícones modo de exibição de classe e pesquisador de objetos](../ide/class-view-and-object-browser-icons.md).
 
 ![Janela Completar Palavra do Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Na primeira vez que você invoca a lista de membros, ela mostra apenas membros acessíveis para o contexto atual. Se você pressionar **Ctrl**+**J** depois disso, ele mostra todos os membros, independentemente da acessibilidade. Se você invocá-la uma terceira vez, uma lista ainda maior de elementos do programa será mostrada. Você pode desativar a lista de membros na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Geral** > **Listar membros automaticamente**.
+Na primeira vez que você invoca a lista de membros, ela mostra apenas membros acessíveis para o contexto atual. Se você pressionar **Ctrl** + **J** depois disso, ela mostrará todos os membros, independentemente da acessibilidade. Se você invocá-la uma terceira vez, uma lista ainda maior de elementos do programa será mostrada. Você pode desativar a lista de membros na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Geral** > **Listar membros automaticamente**.
 
 ![Lista de membros do Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 

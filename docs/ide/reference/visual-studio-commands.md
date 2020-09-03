@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596366"
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
@@ -31,7 +31,7 @@ Muitos comandos têm aliases. Para obter uma lista de aliases de comando, confir
 
 ## <a name="escape-character"></a>Caractere de escape
 
-O caractere de escape para comandos do Visual Studio é um acento circunflexo (^). O caractere de escape significa que o caractere imediatamente a seguir é interpretado literalmente, e não como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo: 
+O caractere de escape para comandos do Visual Studio é um acento circunflexo (^). O caractere de escape significa que o caractere imediatamente a seguir é interpretado literalmente, e não como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo:
 
 ```
 >Edit.Find ^^t /regex
@@ -47,7 +47,7 @@ Os seguintes comandos usam argumentos ou opções:
 | - | - |
 | [Add Existing Item](../../ide/reference/add-existing-item-command.md) | Adiciona um arquivo existente à solução atual e abre-o. |
 | [Add Existing Project](../../ide/reference/add-existing-project-command.md) | Adiciona um projeto existente à solução atual. |
-| [Adicionar Novo Item](../../ide/reference/add-new-item-command.md) | Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quadros à solução atual e a abre. |
+| [Adicionar novo item](../../ide/reference/add-new-item-command.md) | Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quadros à solução atual e a abre. |
 | [Alias](../../ide/reference/alias-command.md) | Cria um novo alias para um comando completo, comando e argumentos completos ou até mesmo outro alias. |
 | [Evaluate Statement](../../ide/reference/evaluate-statement-command.md) | Avalia e exibe a instrução fornecida. |
 | [Localizar](../../ide/reference/find-command.md) | Pesquisa arquivos usando um subconjunto das opções disponíveis no controle **Localizar e Substituir**. |
@@ -56,30 +56,30 @@ Os seguintes comandos usam argumentos ou opções:
 | [List Call Stack](../../ide/reference/list-call-stack-command.md) | Exibe a pilha de chamadas atual. |
 | [List Disassembly](../../ide/reference/list-disassembly-command.md) | Inicia o processo de depuração e permite que você especifique como os erros são tratados. |
 | [List Memory](../../ide/reference/list-memory-command.md) | Exibe o conteúdo do intervalo de memória especificado. |
-| [Módulos de lista](../../ide/reference/list-modules-command.md) | Lista os módulos do processo atual. |
+| [Listar módulos](../../ide/reference/list-modules-command.md) | Lista os módulos do processo atual. |
 | [List Registers](../../ide/reference/list-registers-command.md) | Exibe uma lista de registros. |
 | [List Source](../../ide/reference/list-source-command.md) | Exibe as linhas de código-fonte especificadas. |
 | [List Threads](../../ide/reference/list-threads-command.md) | Exibe uma lista dos threads no programa atual. |
 | [Log Command Window Output](../../ide/reference/log-command-window-output-command.md) | Copia todas as entradas e saídas da janela Comando para um arquivo. |
 | [Novo arquivo](../../ide/reference/new-file-command.md) | Cria um novo arquivo e o adiciona ao projeto atualmente selecionado. |
-| [Arquivo aberto](../../ide/reference/open-file-command.md) | Abre um arquivo existente e permite que você especifique um editor. |
-| [Projeto Aberto](../../ide/reference/open-project-command.md) | Abre um projeto existente e permite que você o adicione à solução atual. |
+| [Abrir arquivo](../../ide/reference/open-file-command.md) | Abre um arquivo existente e permite que você especifique um editor. |
+| [Abrir projeto](../../ide/reference/open-project-command.md) | Abre um projeto existente e permite que você o adicione à solução atual. |
 | [Imprimir](../../ide/reference/print-command.md) | Avalia a expressão e exibe os resultados ou o texto especificado. |
-| [Comando Quick Watch](../../ide/reference/quick-watch-command.md) | Exibe o texto selecionado ou especificado no campo **Expressão** da caixa de diálogo **Inspeção Rápida**. |
+| [Comando de inspeção rápida](../../ide/reference/quick-watch-command.md) | Exibe o texto selecionado ou especificado no campo **Expressão** da caixa de diálogo **Inspeção Rápida**. |
 | [Substituir](../../ide/reference/replace-command.md) | Substitui texto em arquivos usando um subconjunto das opções disponíveis no controle **Localizar e Substituir**. |
-| [Substituir em Arquivos](../../ide/reference/replace-in-files-command.md) | Substitui texto em arquivos usando um subconjunto das opções disponíveis em [Substituir nos Arquivos](../../ide/replace-in-files.md). |
+| [Substituir em arquivos](../../ide/reference/replace-in-files-command.md) | Substitui texto em arquivos usando um subconjunto das opções disponíveis em [Substituir nos Arquivos](../../ide/replace-in-files.md). |
 | [Set Current Stack Frame](../../ide/reference/set-current-stack-frame-command.md) | Permite que você exiba um registro de ativação específico. |
 | [Set Current Thread](../../ide/reference/set-current-thread-command.md) | Permite que você exiba um thread específico. |
 | [Set Radix](../../ide/reference/set-radix-command.md) | Determina o número de bytes a ser exibido. |
 | [Shell](../../ide/reference/shell-command.md) | Inicia programas de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] como se o comando tivesse sido executado no prompt de comando. |
-| [Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md) | Exibe a URL especificada em uma janela de navegador da Web, tanto dentro do IDE (ambiente de desenvolvimento integrado) ou externa ao IDE. |
-| [Início](../../ide/reference/start-command.md) | Inicia o processo de depuração e permite que você especifique como os erros são tratados. |
+| [Comando de createwebbrowser](../../ide/reference/showwebbrowser-command.md) | Exibe a URL especificada em uma janela de navegador da Web, tanto dentro do IDE (ambiente de desenvolvimento integrado) ou externa ao IDE. |
+| [Iniciar](../../ide/reference/start-command.md) | Inicia o processo de depuração e permite que você especifique como os erros são tratados. |
 | [Caminho](../../ide/reference/symbol-path-command.md) | Define a lista de diretórios para o depurador pesquisar símbolos. |
-| [Alternar Ponto de Interrupção](../../ide/reference/toggle-breakpoint-command.md) | Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo. |
-| [Comando Inspecionar](../../ide/reference/watch-command.md) | Cria e abre uma instância especificada de uma janela **Inspeção**. |
+| [Alternar ponto de interrupção](../../ide/reference/toggle-breakpoint-command.md) | Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo. |
+| [Comando Watch](../../ide/reference/watch-command.md) | Cria e abre uma instância especificada de uma janela **Inspeção**. |
 
 ## <a name="see-also"></a>Confira também
 
-- [Janela de comando](../../ide/reference/command-window.md)
-- [Caixa de encontrar/comando](../../ide/find-command-box.md)
+- [Janela Comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

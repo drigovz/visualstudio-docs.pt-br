@@ -1,5 +1,5 @@
 ---
-title: 'Nova geração de projetos: Sob o Capô, Parte Dois | Microsoft Docs'
+title: 'Nova geração de projeto: nos bastidores, parte dois | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707017"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: nos bastidores, Parte dois
+# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: Bastidores, parte dois
 
-Em [New Project Generation: Under the Hood, Part One vimos](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) como a caixa de diálogo do Novo **Projeto** é preenchida. Vamos supor que você selecionou um **aplicativo visual C# Windows,** preencheu as caixas de texto **nome** e **localização** e clicou EM OK.
+Em [nova geração de projeto: nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como a caixa de diálogo **novo projeto** é populada. Vamos supor que você selecionou um **aplicativo do Windows em Visual C#**, preencheu as caixas de texto **nome** e **local** e clicou em OK.
 
-## <a name="generating-the-solution-files"></a>Gerando os arquivos de solução
- A escolha de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] um modelo de aplicativo direciona para descompactar e abrir o arquivo .vstemplate correspondente e para lançar um modelo para interpretar os comandos XML neste arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.
+## <a name="generating-the-solution-files"></a>Gerando os arquivos da solução
+ Escolher um modelo de aplicativo direciona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para descompactar e abrir o arquivo. vstemplate correspondente e iniciar um modelo para interpretar os comandos XML nesse arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.
 
- O modelo descompacta arquivos de origem, chamados modelos de item, da mesma pasta .zip que contém o arquivo .vstemplate. O modelo copia esses arquivos para o novo projeto, personalizando-os de acordo.
+ O modelo desempacota os arquivos de origem, chamados de modelos de item, da mesma pasta. zip que contém o arquivo. vstemplate. O modelo copia esses arquivos para o novo projeto, personalizando-os adequadamente.
 
-### <a name="template-parameter-replacement"></a>Substituição do parâmetro do modelo
- Quando o modelo copia um modelo de item para um novo projeto, ele substitui quaisquer parâmetros de modelo por strings para personalizar o arquivo. Um parâmetro de modelo é um token especial que é precedido e seguido por um sinal de dólar, por exemplo, $date$.
+### <a name="template-parameter-replacement"></a>Substituição de parâmetro de modelo
+ Quando o modelo copia um modelo de item para um novo projeto, ele substitui todos os parâmetros de modelo por cadeias de caracteres para personalizar o arquivo. Um parâmetro de modelo é um token especial que é precedido e seguido por um cifrão, por exemplo, $date $.
 
- Vamos olhar para um modelo típico de item do projeto. Extrair e examinar Program.cs na pasta Arquivos do Programa\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip folder.
+ Vamos examinar um modelo de item de projeto típico. Extraia e examine Program.cs na pasta Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ namespace $safeprojectname$
 }
 ```
 
-Se você criar um novo projeto de aplicativo `$safeprojectname$` do Windows chamado Simple, o modelo substituirá o parâmetro pelo nome do projeto.
+Se você criar um novo projeto de aplicativo do Windows chamado Simple, o modelo substituirá o `$safeprojectname$` parâmetro pelo nome do projeto.
 
 ```csharp
 using System;
@@ -62,10 +62,10 @@ namespace Simple
 }
 ```
 
- Para obter uma lista completa de parâmetros do modelo, consulte [Parâmetros de modelo](../../ide/template-parameters.md).
+ Para obter uma lista completa de parâmetros de modelo, consulte [parâmetros de modelo](../../ide/template-parameters.md).
 
-## <a name="a-look-inside-a-vstemplate-file"></a>Um olhar dentro de um . Arquivo VSTemplate
- Um arquivo básico .vstemplate tem esse formato
+## <a name="a-look-inside-a-vstemplate-file"></a>Uma olhada dentro de um. Arquivo VSTemplate
+ Um arquivo. vstemplate básico tem esse formato
 
 ```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
@@ -76,9 +76,9 @@ namespace Simple
 </VSTemplate>
 ```
 
- Analisamos a \<seção TemplateData> na [Nova Geração de Projetos: Sob o Capô, Parte Um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). As tags nesta seção são usadas para controlar a aparência da caixa de diálogo **Novo Projeto.**
+ Examinamos a \<TemplateData> seção na [nova geração do projeto: nos bastidores, Part One](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). As marcas nesta seção são usadas para controlar a aparência da caixa de diálogo **novo projeto** .
 
- As tags \<na seção TemplateContent> controlam a geração de novos projetos e itens do projeto. Aqui está \<a seção TemplateContent> do arquivo cswindowsapplication.vstemplate no \Program Files\Microsoft Visual Studio 8\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip folder.
+ As marcas na \<TemplateContent> seção controlam a geração de novos projetos e itens de projeto. Aqui está a \<TemplateContent> seção do arquivo cswindowsapplication. vstemplate na pasta \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
 ```xml
 <TemplateContent>
@@ -112,26 +112,26 @@ namespace Simple
 </TemplateContent>
 ```
 
- O \<Projeto> tag controla a geração \<de um projeto, e o ProjectItem> tag controla a geração de um item do projeto. Se o parâmetro ReplaceParameters for verdadeiro, o modelo personalizará todos os parâmetros do modelo no arquivo ou item do projeto. Neste caso, todos os itens do projeto são personalizados, exceto configurações.configurações.
+ A \<Project> marca controla a geração de um projeto e a \<ProjectItem> marca controla a geração de um item de projeto. Se o parâmetro ReplaceParameters for true, o modelo personalizará todos os parâmetros de modelo no arquivo ou item de projeto. Nesse caso, todos os itens de projeto são personalizados, exceto para Settings. Settings.
 
- O parâmetro TargetFileName especifica o nome e o caminho relativo do arquivo ou item do projeto resultante. Isso permite que você crie uma estrutura de pasta para o seu projeto. Se você não especificar esse argumento, o item do projeto terá o mesmo nome do modelo de item do projeto.
+ O parâmetro TargetFileName especifica o nome e o caminho relativo do arquivo ou item de projeto resultante. Isso permite que você crie uma estrutura de pastas para seu projeto. Se você não especificar esse argumento, o item de projeto terá o mesmo nome que o modelo de item de projeto.
 
- A estrutura de pasta de aplicativos do Windows resultante é assim:
+ A estrutura resultante da pasta do aplicativo do Windows tem esta aparência:
 
- ![Solução simples](../../extensibility/internals/media/simplesolution.png "Solução simples")
+ ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
 
- A primeira \<e única tag project> no modelo diz:
+ A primeira e única \<Project> marca no modelo lê:
 
 ```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
- Isso instrui o modelo Do Novo Projeto a criar o arquivo de projeto Simple.csproj copiando e personalizando o item de modelo windowsapplication.csproj.
+ Isso instrui o novo modelo de projeto a criar o arquivo de projeto simples. csproj copiando e personalizando o item de modelo WindowsApplication. csproj.
 
-### <a name="designers-and-references"></a>Designers e Referências
- Você pode ver no Solution Explorer que a pasta Propriedades está presente e contém os arquivos esperados. Mas e as referências de projetos e dependências de arquivos de designer, como Resources.Designer.cs ao Resources.resx, e Form1.Designer.cs a Form1.cs?  Estes são configurados no arquivo Simple.csproj quando ele é gerado.
+### <a name="designers-and-references"></a>Designers e referências
+ Você pode ver na Gerenciador de Soluções que a pasta Propriedades está presente e contém os arquivos esperados. Mas e as referências de projeto e as dependências de arquivo de designer, como Resources.Designer.cs para Resources. resx e Form1.Designer.cs para Form1.cs?  Eles são configurados no arquivo. csproj simples quando ele é gerado.
 
- Aqui está \<o itemGroup> do Simple.csproj que cria as referências do projeto:
+ Aqui está o \<ItemGroup> de Simple. csproj que cria as referências do projeto:
 
 ```xml
 <ItemGroup>
@@ -144,7 +144,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- Você pode ver que essas são as seis referências de projeto que aparecem no Solution Explorer. Aqui está uma seção de outro \<ItemGroup>. Muitas linhas de código foram excluídas para clareza. Esta seção torna Settings.Designer.cs dependente de Configurações.configurações:
+ Você pode ver que essas são as seis referências de projeto que aparecem na Gerenciador de Soluções. Aqui está uma seção de outra \<ItemGroup> . Muitas linhas de código foram excluídas para fins de clareza. Esta seção torna o Settings.Designer.cs dependente das configurações. configurações:
 
 ```xml
 <ItemGroup>
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Confira também
 
-- [Geração de novo projeto: nos bastidores, Parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Geração de novo projeto: Bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

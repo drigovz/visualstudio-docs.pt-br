@@ -11,27 +11,27 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68183465"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Escolhendo uma estratégia de implementação de mecanismo de depuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use a arquitetura de tempo de execução para determinar sua estratégia de implementação de (DES) do mecanismo de depuração. O mecanismo de depuração pode ser criado no processo para o programa a ser depurado, no processo no Gerenciador de depuração de sessão do Visual Studio (SDM) ou out-of-process para ambos. As diretrizes a seguir devem ajudar a escolher entre essas três estratégias.  
+Use a arquitetura de tempo de execução para determinar sua estratégia DE implementação do mecanismo DE depuração. O mecanismo de depuração pode ser criado em processo para o programa a ser depurado, em processo para o SDM (Gerenciador de depuração de sessão) do Visual Studio, ou fora de processo para ambos. As diretrizes a seguir devem ajudá-lo a escolher entre essas três estratégias.  
   
 ## <a name="guidelines"></a>Diretrizes  
- Embora seja possível para o DE ser out-of-process para o SDM e o programa a ser depurado, normalmente há nenhum motivo para fazer isso. Chamadas entre limites de processo são relativamente lentas.  
+ Embora seja possível que o DE seja fora do processo para o SDM e o programa a ser depurado, normalmente não há motivo para isso. Chamadas entre limites de processo são relativamente lentas.  
   
- Depurar mecanismos já são fornecidos para o ambiente de tempo de execução nativo do Win32 e para o ambiente do common language runtime. Se for necessário substituir o DE para qualquer um desses ambientes, você deve criar o DE processo com o SDM.  
+ Os mecanismos de depuração já são fornecidos para o ambiente de tempo de execução nativo do Win32 e para o ambiente de Common Language Runtime. Se for necessário substituir o de para qualquer um desses ambientes, você deverá criar o DE em processo com o SDM.  
   
- Caso contrário, você pode escolher entre a criação DE em processo para o SDM ou em processo para o programa a ser depurado. É importante considerar se o avaliador de expressão de precisa de acesso frequente para o repositório de símbolos do programa e se o repositório de símbolos pode ser carregado na memória para acesso rápido. Além disso, considere o seguinte:  
+ Caso contrário, você pode escolher entre criar o DE em processo para o SDM ou em processo para o programa a ser depurado. É importante considerar se o avaliador de expressão de DE precisa de acesso frequente ao armazenamento de símbolos do programa e se o armazenamento de símbolos pode ser carregado na memória para acesso rápido. Considere também o seguinte:  
   
-- Se não houver muitas chamadas entre o avaliador de expressão e o repositório de símbolos, ou se o repositório de símbolos pode ser lidos no espaço de memória do SDM, crie o DE em processo para o SDM. Você deve retornar o CLSID do mecanismo de depuração para o SDM quando ele se conecta ao seu programa. O SDM usa este CLSID para criar uma instância no processo de.  
+- Se não houver muitas chamadas entre o avaliador de expressão e o armazenamento de símbolos, ou se o repositório de símbolos puder ser lido no espaço de memória do SDM, crie o DE em processo para o SDM. Você deve retornar o CLSID do mecanismo de depuração para o SDM quando ele for anexado ao seu programa. O SDM usa esse CLSID para criar uma instância em processo do de.  
   
-- Se o DE deve chamar o programa para acessar o repositório de símbolos, crie o DE processo com o programa. Nesse caso, o programa cria a instância do DE.  
+- Se o DE precisar chamar o programa para acessar o armazenamento de símbolo, crie o DE em processo com o programa. Nesse caso, o programa cria a instância do de.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

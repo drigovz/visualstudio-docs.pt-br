@@ -1,5 +1,5 @@
 ---
-title: TIPO DE DESPEJO | Microsoft Docs
+title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0d4d42709efdefe097b4c8a78a0b00f45f2e1a2b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737204"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Especifica quanto do estado de um programa (como executar threads, quadros de pilha e endereço de instrução atual) é descartado.
+Especifica a quantidade de estado do programa (como threads em execução, quadros de pilha e endereço de instrução atual) a ser despejada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DUMPTYPE {
@@ -44,20 +44,20 @@ public enum enum_DUMPTYPE {
 
 ## <a name="fields"></a>Campos
 `DUMP_MINIDUMP`\
-Especifica um despejo pequeno e compacto.
+Especifica um pequeno despejo compacto.
 
 `DUMP_FULLDUMP`\
 Especifica um despejo grande e completo.
 
 ## <a name="remarks"></a>Comentários
-Passou como um argumento para o método [WriteDump.](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+Passado como um argumento para o método [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

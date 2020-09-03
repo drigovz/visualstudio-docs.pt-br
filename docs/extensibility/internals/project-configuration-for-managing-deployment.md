@@ -1,5 +1,5 @@
 ---
-title: Configuração do projeto para gerenciamento de implantação | Microsoft Docs
+title: Configuração de projeto para gerenciamento de implantação | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 62f7bf6535a89e46799ade88fe8976974b3019c5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706704"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuração de projeto para gerenciar a implantação
-Implantação é o ato de mover fisicamente os itens de saída de um processo de compilação para o local esperado para depuração e instalação. Por exemplo, um aplicativo Web pode ser construído em uma máquina local e, em seguida, colocado no servidor.
+A implantação é o ato de mover fisicamente os itens de saída de um processo de compilação para o local esperado para depuração e instalação. Por exemplo, um aplicativo Web pode ser criado em um computador local e, em seguida, colocado no servidor.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]suporta duas maneiras pelas quais os projetos podem estar envolvidos na implantação:
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o oferece suporte a duas maneiras em que os projetos podem estar envolvidos na implantação:
 
-- Como objeto do processo de implantação.
+- Como o assunto do processo de implantação.
 
-- Como gerente do processo de implantação.
+- Como o gerente do processo de implantação.
 
-  Antes que as soluções possam ser implantadas, você deve primeiro adicionar um projeto de implantação para configurar opções de implantação. Se o projeto de implantação ainda não existir, será perguntado se deseja criar um quando selecionar **'Implantar solução'** no menu **Construir** ou clicar com o botão direito do mouse na solução. Clicar **em Sim** abre a caixa de diálogo **Adicionar novo projeto** com o projeto **'Controle remoto' do Assistente** de Implante selecionado.
+  Antes que as soluções possam ser implantadas, você deve primeiro adicionar um projeto de implantação para configurar as opções de implantação. Se o projeto de implantação ainda não existir, você será perguntado se deseja criar um ao selecionar **implantar solução** no menu **Compilar** ou clicar com o botão direito do mouse na solução. Clicar em **Sim** abre a caixa de diálogo **Adicionar novo projeto** com o projeto do **Assistente de implantação remota** selecionado.
 
-  O Assistente de Implantação Remota pede que o tipo de aplicativo (Windows ou Web), os grupos de saída do projeto incluam, quaisquer arquivos adicionais que você deseja incluir e o computador remoto para o qual você deseja implantar. A última página do assistente exibe um resumo das opções selecionadas.
+  O assistente de implantação remota solicita o tipo de aplicativo (Windows ou Web), os grupos de saída do projeto a serem incluídos, os arquivos adicionais que você deseja incluir e o computador remoto no qual você deseja implantar. A última página do assistente exibe um resumo das opções selecionadas.
 
-  Projetos que são objeto de um processo de implantação produzem itens de saída que devem ser movidos para um ambiente alternativo. Esses itens de saída são descritos como parâmetros para a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interface, cujo objetivo principal se permitir projetos para agrupar saídas. Para obter mais informações relacionadas à implementação de , consulte `IVsProjectCfg2` [Configuração do projeto para saída](../../extensibility/internals/project-configuration-for-output.md).
+  Os projetos que são o assunto de um processo de implantação produzem itens de saída que devem ser movidos para um ambiente alternativo. Esses itens de saída são descritos como parâmetros para a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interface, cuja principal finalidade é permitir que os projetos agrupem saídas. Para obter mais informações relacionadas à implementação do `IVsProjectCfg2` , consulte [configuração de projeto para saída](../../extensibility/internals/project-configuration-for-output.md).
 
-  Os projetos de implantação, que gerenciam o processo de implantação, habilitam o comando Deploy e respondem quando este comando é selecionado. Os projetos <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> de implantação implementam a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> para executar a implantação e fazem chamadas para a interface para relatar eventos de status de implantação.
+  Projetos de implantação, que gerenciam o processo de implantação, habilitam o comando implantar e respondem quando esse comando é selecionado. Projetos de implantação implementam a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface para executar a implantação e fazer chamadas para a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> interface para relatar eventos de status de implantação.
 
-  As configurações podem especificar dependências que afetam suas operações de compilação ou implantação. Construir ou implantar dependências são projetos que devem ser construídos ou implantados antes ou depois que as próprias configurações forem construídas ou implantadas. As dependências de construção <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> entre projetos são descritas com a interface e implantam dependências com a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interface. Para obter mais informações, consulte [Configuração do projeto para construção](../../extensibility/internals/project-configuration-for-building.md).
+  As configurações podem especificar dependências que afetam suas operações de compilação ou implantação. Compilar ou implantar dependências são projetos que devem ser compilados ou implantados antes ou depois que as próprias configurações são criadas ou implantadas. As dependências de compilação entre projetos são descritas com a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interface e implantam dependências com a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interface. Para obter mais informações, consulte [configuração de projeto para compilação](../../extensibility/internals/project-configuration-for-building.md).
 
 ## <a name="see-also"></a>Confira também
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)

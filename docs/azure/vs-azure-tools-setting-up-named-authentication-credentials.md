@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911674"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurar credenciais de autenticação nomeadas
@@ -38,6 +38,6 @@ Se você deseja criar um certificado por conta própria, pode consultar as instr
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Visão geral de aplicativos Web](/azure/app-service/)
-- [Implantar seu aplicativo no Serviço de Aplicativo do Azure](/azure/app-service/app-service-deploy-local-git)
+- [Implantar seu aplicativo no serviço Azure App](/azure/app-service/app-service-deploy-local-git)
 - [Implantar Trabalhos Web usando o Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Criar e implantar um serviço de nuvem](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

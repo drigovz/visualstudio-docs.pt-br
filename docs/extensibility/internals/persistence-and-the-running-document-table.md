@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ba698f20b83d1a7af42aeca046aa2a8c943838ef
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706714"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistência e a tabela de documentos em execução
-No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, os projetos são completamente responsáveis por gerenciar a persistência de seus itens <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>de projeto, que realizam utilizando o serviço, . Os documentos são a unidade básica de persistência no ambiente do Visual Studio. Os projetos coordenam a abertura, a poupança e a renomeação de documentos com a tabela de documentos em execução (RDT), um recurso que rastreia o estado de todos os documentos abertos.
+No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, os projetos são totalmente responsáveis por gerenciar a persistência de seus itens de projeto, que são realizados usando o serviço, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> . Os documentos são a unidade básica de persistência no ambiente do Visual Studio. Os projetos coordenam a abertura, o salvamento e a renomeação de documentos com a tabela de documentos em execução (RDT), um recurso que controla o estado de todos os documentos abertos.
 
-## <a name="managing-persistence"></a>Gerenciamento da persistência
- Os projetos controlam o serviço de persistência <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> do ambiente implementando a interface. Embora o ambiente nunca peça diretamente que um documento persista, ele pede ao projeto de dono (ou hierarquia) para salvar o documento. Isso torna possível que o projeto salve os dados do item do projeto em arquivos locais, arquivos remotos, um banco de dados, um repositório ou outro meio.
+## <a name="managing-persistence"></a>Gerenciando a persistência
+ Os projetos controlam o serviço de persistência do ambiente implementando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interface. Embora o ambiente nunca solicite diretamente que um documento persista, ele solicita que o projeto proprietário (ou hierarquia) salve o documento. Isso possibilita que o projeto Salve seus dados de item de projeto em arquivos locais, em arquivos remotos, em um banco de dado, em um repositório ou em outro meio.
 
- O ambiente global mantém o RDT. O ambiente mantém entradas para todas as janelas abertas e documentos no RDT, o que permite que eles recebam notificações especiais, como quando uma solução é fechada. Além disso, o RDT permite que o ambiente rastreie seus nós correspondentes no **Solution Explorer**. O RDT mantém um registro por objeto aberto e persistente, incluindo arquivos de projeto e documentos de item de projeto.
+ O ambiente global mantém o RDT. O ambiente mantém entradas para todas as janelas e documentos abertos no RDT, o que torna possível que eles recebam notificações especiais, como quando uma solução é fechada. Além disso, o RDT possibilita que o ambiente acompanhe seus nós correspondentes no **Gerenciador de soluções**. O RDT mantém um registro por objeto aberto e persistente, incluindo arquivos de projeto e documentos de item de projeto.
 
 ## <a name="see-also"></a>Confira também
 - [Tabela de documento em execução](../../extensibility/internals/running-document-table.md)

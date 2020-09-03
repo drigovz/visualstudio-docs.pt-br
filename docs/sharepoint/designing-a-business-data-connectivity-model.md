@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984461"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Criar um modelo de conectividade de dados corporativos
@@ -26,7 +26,7 @@ ms.locfileid: "72984461"
 ## <a name="add-entities"></a>Adicionar entidades
  Você pode adicionar uma entidade arrastando ou copiando uma **entidade** da caixa de **ferramentas** do Visual Studio para o BDC designer. Para obter mais informações, consulte [como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Defina os campos da entidade em uma classe. Por exemplo, você pode adicionar um campo chamado `Address` a uma classe `Customer`. Você pode adicionar uma nova classe ao projeto ou usar uma classe existente criada usando outras ferramentas, como o Object Relational Designer (O/R Designer). O nome da entidade e o nome da classe que representa a entidade não precisam corresponder. Você relaciona a classe à entidade ao definir os métodos em seu modelo.
+ Defina os campos da entidade em uma classe. Por exemplo, você pode adicionar um campo chamado `Address` a uma `Customer` classe. Você pode adicionar uma nova classe ao projeto ou usar uma classe existente criada usando outras ferramentas, como o Object Relational Designer (O/R Designer). O nome da entidade e o nome da classe que representa a entidade não precisam corresponder. Você relaciona a classe à entidade ao definir os métodos em seu modelo.
 
 ## <a name="add-methods"></a>Adicionar métodos
  O serviço do BDC chama métodos em seu modelo quando os usuários exibem, adicionam, atualizam ou excluem informações em uma lista ou Web Part que se baseia em seu modelo. Você deve adicionar um método ao modelo para cada tarefa que o usuário pode executar. Crie métodos selecionando qualquer um dos cinco tipos de método básicos da janela **detalhes do método do BDC** . A tabela a seguir descreve os cinco métodos básicos de um modelo BDC.
@@ -42,7 +42,7 @@ ms.locfileid: "72984461"
 ## <a name="define-method-parameters"></a>Definir parâmetros do método
  Quando você cria um método, o Visual Studio adiciona os parâmetros de entrada e saída apropriados para o tipo de método. Esses parâmetros são apenas espaços reservados. Na maioria dos casos, você deve modificar os parâmetros para que eles passem ou retornem o tipo correto de dados. Por exemplo, por padrão, um método Finder retorna uma cadeia de caracteres. Na maioria dos casos, você deseja modificar o parâmetro de retorno do método Finder para que ele retorne uma coleção de entidades. Você pode fazer isso modificando o descritor de tipo do parâmetro. Um descritor de tipo é uma coleção de atributos que descreve o tipo de dados de um parâmetro. Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- O Visual Studio permite que você copie os descritores de tipo entre os parâmetros no modelo. Por exemplo, você pode definir um descritor de tipo chamado `CustomerTD` para o parâmetro de retorno do método `GetCustomer`. Você pode copiar o descritor de tipo `CustomerTD` no **BDC Explorer**e, em seguida, colar esse descritor de tipo no parâmetro de entrada do método `CreateCustomer`. Isso impede que você precise definir o mesmo descritor de tipo mais de uma vez.
+ O Visual Studio permite que você copie os descritores de tipo entre os parâmetros no modelo. Por exemplo, você pode definir um descritor de tipo chamado `CustomerTD` para o parâmetro de retorno do `GetCustomer` método. Você pode copiar o `CustomerTD` descritor de tipo no **Gerenciador do BDC**e, em seguida, colar esse descritor de tipo no parâmetro de entrada do `CreateCustomer` método. Isso impede que você precise definir o mesmo descritor de tipo mais de uma vez.
 
 ## <a name="method-instances"></a>Instâncias de método
  Quando você cria um método, o Visual Studio adiciona uma instância de método padrão. Uma instância de método é uma referência a um método, mais os valores padrão para os parâmetros. Um único método pode ter várias instâncias de método. Cada instância é uma combinação da assinatura do método e de um conjunto de valores padrão. Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984461"
 ## <a name="validate-the-model"></a>Validar o modelo
  Você pode validar seu modelo durante o desenvolvimento. O Visual Studio identifica problemas que podem impedir que seu modelo se comportar conforme o esperado. Esses problemas aparecem no **lista de erros**do Visual Studio.
 
- Você pode validar um modelo abrindo o menu de atalho para o BDC designer e, em seguida, escolhendo **validar**. Se o modelo contiver erros, eles aparecerão na **lista de erros**. Você pode mover rapidamente o cursor para o código que contém um erro clicando duas vezes no erro na lista. Como alternativa, você pode escolher as teclas **F8** ou **Shift**+**F8** repetidamente para avançar ou retroceder os erros na lista.
+ Você pode validar um modelo abrindo o menu de atalho para o BDC designer e, em seguida, escolhendo **validar**. Se o modelo contiver erros, eles aparecerão na **lista de erros**. Você pode mover rapidamente o cursor para o código que contém um erro clicando duas vezes no erro na lista. Como alternativa, você pode escolher as teclas **F8** ou **Shift** + **F8** repetidamente para avançar ou retroceder os erros na lista.
 
  Os erros de validação podem ocorrer quando as regras do modelo são violadas de alguma forma. Por exemplo, se a propriedade **IsCollection** de um descritor de tipo for definida como **true**, mas não existir nenhum descritor de tipo filho, um erro de validação será exibido. Talvez seja necessário consultar as regras de um modelo BDC para entender alguns erros que aparecem no **lista de erros**do Visual Studio. Para obter mais informações sobre as regras de um modelo BDC, consulte [BdcMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -89,7 +89,7 @@ ms.locfileid: "72984461"
 |----------|------------|
 |Para implantar modelos no serviço BDC.|Editar|
 |Para criar listas e Web Parts usando tipos de conteúdo externo (entidades) em seu modelo.|Selecionável em clientes|
-|Para criar, ler, atualizar e excluir dados de entidade.|Executar|
+|Para criar, ler, atualizar e excluir dados de entidade.|Execute (executar)|
 
  Para obter mais informações sobre essas configurações, consulte [Gerenciamento de serviços de conectividade de dados corporativos](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 

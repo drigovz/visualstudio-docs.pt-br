@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ac287462149a20f52a1affdeab7fa6b8333711
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737641"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
-Indica o protocolo que está sendo usado para se comunicar entre um servidor de depuração e o pacote de depuração (DE).
+Indica o protocolo que está sendo usado para comunicação entre um servidor de depuração e o pacote DE depuração (DE).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,35 +53,35 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>Campos
 `CONNECTION_NONE`\
-Nenhuma conexão foi feita a um servidor.
+Nenhuma conexão foi feita com um servidor.
 
 `CONNECTION_UNKNOWN`\
 Uma conexão foi feita, mas é de um tipo desconhecido.
 
 `CONNECTION_LOCAL`\
-A conexão é com um servidor local.
+A conexão é para um servidor local.
 
 `CONNECTION_PIPE`\
-A conexão é através de um tubo chamado.
+A conexão é por meio de um pipe nomeado.
 
 `CONNECTION_TCPIP`\
 A conexão usa TCP/IP.
 
 `CONNECTION_HTTP`\
-A conexão usa HTTP (através de um servidor Web).
+A conexão usa HTTP (por meio de um servidor Web).
 
 `CONNECTION_OTHER`\
-Algum outro tipo de conexão foi estabelecida (esse valor não é usado atualmente).
+Algum outro tipo de conexão foi estabelecido (esse valor não é usado no momento).
 
 ## <a name="remarks"></a>Comentários
-Esses valores são devolvidos a partir do método [GetConnectionProtocol.](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)
+Esses valores são retornados do método [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737793"
 ---
 # <a name="bp_type"></a>BP_TYPE
-Especifica se o ponto de ruptura está em um local de código, é um local de dados ou é outro tipo de ponto de ruptura.
+Especifica se o ponto de interrupção está em um local de código, é um local de dados ou outro tipo de ponto de interrupção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_TYPE {
@@ -48,26 +48,26 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>Campos
 `BPT_NONE`\
-Não especifica nenhum tipo de ponto de ruptura.
+Especifica nenhum tipo de ponto de interrupção.
 
 `BPT_CODE`\
-Especifica um ponto de quebra de código.
+Especifica um ponto de interrupção de código.
 
 `BPT_DATA`\
-Especifica um ponto de ruptura de dados.
+Especifica um ponto de interrupção de dados.
 
 `BPT_SPECIAL`\
-Especifica um ponto de ruptura que não é nem um código nem um tipo de dados. Este tipo é preterido e não deve ser usado.
+Especifica um ponto de interrupção que não é um código nem um tipo de dados. Esse tipo é preterido e não deve ser usado.
 
 ## <a name="remarks"></a>Comentários
-Passou como parâmetro para os métodos [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) e [GetBreakpointType.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)
+Passado como um parâmetro para os métodos [Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) e [getbreakpointtype](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

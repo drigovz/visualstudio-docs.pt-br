@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662154"
 ---
 # <a name="print-command"></a>Comando Imprimir
@@ -33,7 +33,7 @@ Avalia uma expressão ou exibe o texto especificado.
 Debug.Print text
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `text` Necessário. A expressão a ser avaliada ou o texto a ser exibido.
 
 ## <a name="remarks"></a>Comentários
@@ -57,5 +57,5 @@ Debug.Print text
 >Debug.Print varA
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comando avaliar instrução](../../ide/reference/evaluate-statement-command.md) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela de comando](../../ide/reference/command-window.md) [Localizar/comandos caixa](../../ide/find-command-box.md) de comando [Visual Studio aliases de comando](../../ide/reference/visual-studio-command-aliases.md)

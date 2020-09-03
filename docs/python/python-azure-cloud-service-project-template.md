@@ -12,28 +12,28 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72983659"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
 O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de Nuvem do Azure usando o Python.
 
-Um [serviço de nuvem](/azure/cloud-services/) consiste em várias *funções de trabalho* e *funções web*, sendo que cada uma executa uma tarefa separada conceitualmente, mas pode ser replicada separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. No que diz respeito ao Python, qualquer estrutura web que suporte o WSGI pode ser usada para escrever tal aplicativo (conforme suportado pelo modelo de [projeto web).](python-web-application-project-templates.md) As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Eles normalmente fazem uso dos pacotes dentro do pacote "azure", que é instalado com [`pip install azure`](https://pypi.org/project/azure).
+Um [serviço de nuvem](/azure/cloud-services/) consiste em várias *funções de trabalho* e *funções web*, sendo que cada uma executa uma tarefa separada conceitualmente, mas pode ser replicada separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Onde o Python está preocupado, qualquer estrutura da Web que dê suporte a WSGI pode ser usada para gravar tal aplicativo (como suportado pelo [modelo de projeto Web](python-web-application-project-templates.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Normalmente, eles fazem uso dos pacotes no pacote "Azure", que é instalado com o [`pip install azure`](https://pypi.org/project/azure) .
 
 Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 e posterior (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](/azure/python/).
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. Instale o [Azure .NET SDK para Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), que é necessário para usar o modelo de serviço em nuvem.
-1. No Visual Studio, selecione **File** > **New** > **Project,** depois procure por "Azure Python" e selecione **Azure Cloud Service** na lista:
+1. Instale o [SDK do .net do Azure para Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/), que é necessário para usar o modelo de serviço de nuvem.
+1. No Visual Studio, selecione **arquivo**  >  **novo**  >  **projeto**, pesquise por "Azure Python" e selecione **serviço de nuvem do Azure** na lista:
 
     ![Modelo de Projeto de Nuvem do Azure para o Python](media/template-azure-cloud-project.png)
 
-1. Selecione uma ou mais funções a serem incluídas. Projetos de nuvem podem combinar funções escritas em linguagens diferentes; portanto, é possível escrever com facilidade cada parte do aplicativo na linguagem mais adequada. Para adicionar novas funções ao projeto após concluir esta caixa de diálogo, clique com o botão direito do mouse **Em Funções** no **Solution Explorer** e selecione um dos itens em **Adicionar**.
+1. Selecione uma ou mais funções a serem incluídas. Projetos de nuvem podem combinar funções escritas em linguagens diferentes; portanto, é possível escrever com facilidade cada parte do aplicativo na linguagem mais adequada. Para adicionar novas funções ao projeto depois de concluir essa caixa de diálogo, clique com o botão direito do mouse em **funções** em **Gerenciador de soluções** e selecione um dos itens em **Adicionar**.
 
     ![Adicionando funções no modelo de Projeto de Nuvem do Azure](media/template-azure-cloud-service-project-wizard.png)
 
@@ -45,7 +45,7 @@ Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte
 
     ![Arquivos de suporte à função de trabalho](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Para adicionar esses scripts de configuração a um novo projeto, clique com o botão direito do mouse no projeto, selecione **Adicionar** > **novo item**e selecione **Arquivos de suporte à função da Web** ou arquivos de suporte à função do **trabalhador**.
+    Para adicionar esses scripts de configuração a um novo projeto, clique com o botão direito do mouse no projeto, selecione **Adicionar**  >  **novo item**e selecione arquivos de **suporte de função Web** ou **arquivos de suporte de função de trabalho**.
 
 ## <a name="configure-role-deployment"></a>Configurar a implantação de função
 
@@ -67,7 +67,7 @@ Uma configuração adicional pode ser feita da seguinte maneira:
 
 Ao escrever as funções, é possível testar o projeto de nuvem localmente usando o Emulador do Serviço de Nuvem. O emulador está incluído nas SDK Tools do Azure e é uma versão limitada do ambiente usado quando o Serviço de Nuvem é publicado no Azure.
 
-Para iniciar o emulador, primeiro verifique se o projeto de nuvem é o projeto de inicialização na solução clicando com o botão direito do mouse e selecionando **Definir como projeto de inicialização**. Em seguida, selecione **Debug** > **Start Debugging** **(F5)** ou **Debug** > **Start sem depuração** **(Ctrl**+**F5**).
+Para iniciar o emulador, primeiro verifique se o projeto de nuvem é o projeto de inicialização na solução clicando com o botão direito do mouse e selecionando **Definir como projeto de inicialização**. Em seguida, selecione **depurar**  >  **Iniciar Depuração** (**F5**) ou **depurar**  >  **Iniciar sem depuração** (**Ctrl** + **F5**).
 
 Observe que, devido a limitações no emulador, não é possível depurar o código do Python. Portanto, recomendamos que você depure as funções executando-as de forma independente e, em seguida, use o emulador para o teste de integração antes da publicação.
 
