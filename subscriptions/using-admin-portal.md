@@ -2,21 +2,23 @@
 title: Introdução ao portal de administração de assinaturas | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249863"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426870"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
 
 O Portal de Administração de Assinaturas do Visual Studio fornece as ferramentas necessárias para gerenciar as assinaturas da sua organização em um único lugar. 
+
+Faça um tour pelo portal.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Depois de atribuir assinaturas, a guia Gerenciar assinantes fornece informaçõe
 - O nível de assinatura que foi atribuído.
 - A data em que a assinatura foi atribuída.
 - A data de validade da assinatura.
-- Uma descrição de texto opcional.
-- Uma indicação se os downloads para o assinante foram habilitados ou desabilitados.
+- Um campo de referência para observações adicionais.
+- Uma indicação se os downloads para assinantes estão habilitados ou desabilitados.
 - O país em que eles estão localizados.
 - A preferência de idioma para o email de comunicação de atribuição do portal de administração.
 - Um campo opcional para um endereço de email diferente usado para comunicações de conexão.
 
 No canto superior esquerdo da página, há vários ícones que você pode selecionar para revelar uma visão geral da atribuição de assinatura, os detalhes do contrato e o relatório de uso máximo.
 
-Para ver informações adicionais sobre o número de licenças de assinatura adquiridas, atribuídas e ainda disponíveis em sua organização para cada contrato, selecione o ícone superior para habilitar o painel de deslizamento.
+Para ver informações adicionais sobre o número de licenças de assinatura adquiridas, atribuídas e ainda disponíveis em sua organização para cada contrato, clique no ícone superior para habilitar o painel de deslizamento.
 > [!div class="mx-imgBorder"]
 > ![Página Assinantes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
@@ -57,7 +59,7 @@ Para obter mais informações sobre o contrato que você está exibindo, selecio
 - [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

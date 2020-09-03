@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633116"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426957"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -45,7 +45,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 ::: moniker-end
 
 > [!NOTE]
-> Alguns tipos de projeto usam o atributo `sdk` em vez do `ToolsVersion`. Para saber mais, confira [Pacotes, metadados e estruturas](/dotnet/core/packages) e [Adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
+> Alguns tipos de projeto usam o atributo `sdk` em vez do `ToolsVersion`. Para obter mais informações, consulte [adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Como funciona o atributo ToolsVersion
 
@@ -132,7 +132,7 @@ O MSBuild fornece sobrecargas para os métodos `ToolLocationHelper` que adiciona
 
 Os subconjuntos de ferramentas foram introduzidos no .NET Framework 4.5.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)
