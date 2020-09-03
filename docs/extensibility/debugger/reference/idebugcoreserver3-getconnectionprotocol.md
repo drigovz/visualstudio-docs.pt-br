@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetConnectionProtocol | Microsoft Docs
+title: 'IDebugCoreServer3:: GetConnectionProtocol | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d60bb8eb333e117290c710e03faafc51f4e31a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732907"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Retorna um valor que indica o protocolo que está sendo usado para se comunicar entre o servidor e o pacote de depuração.
+Retorna um valor que indica o protocolo que está sendo usado para comunicação entre o servidor e o pacote de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,12 +39,12 @@ int GetConnectionProtocol(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pProtocol`\
-[fora] Devolve um dos valores da [enumeração CONNECTION_PROTOCOL.](../../../extensibility/debugger/reference/connection-protocol.md)
+fora Retorna um dos valores da enumeração [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

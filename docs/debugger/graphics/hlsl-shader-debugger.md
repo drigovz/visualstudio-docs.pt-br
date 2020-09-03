@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735297"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
@@ -27,7 +27,7 @@ O depurador do HLSL no Analisador de Gráficos do Visual Studio ajuda a entender
 ## <a name="understanding-the-hlsl-debugger"></a>Noções básicas do depurador HLSL
  O depurador HLSL pode ajudar você a entender os problemas que ocorrem no código do sombreador. A depuração do código HLSL no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se parece com a depuração de código que foi escrito em outras linguagem, como no C++, C# ou Visual Basic. Você pode inspecionar o conteúdo das variáveis, definir pontos de interrupção, avançar no código e percorrer até a pilha de chamadas, exatamente como faz ao depurar outras linguagens.
 
- No entanto, como as GPUs alcançam alto desempenho executando o código do sombreador em centenas de threads simultaneamente, o depurador do HLSL foi projetado para trabalhar em conjunto com as outras ferramentas do analisador de gráficos para apresentar todas essas informações de forma a ajudar você a se sentir fosse. O analisador de gráficos recria quadros capturados usando informações que foram registradas em um log de gráficos; o depurador do HLSL não monitora a execução da GPU em tempo real à medida que ele executa o código do sombreador. Como um log de gráficos contém informações suficientes para recriar qualquer parte da saída e como a análise de gráficos fornece ferramentas que podem ajudá-lo a identificar o pixel exato e o evento em que ocorre um erro, o depurador HLSL só precisa simular o sombreador exato thread no qual você está interessado. Isso significa que o trabalho do sombreador pode ser simulado na CPU, onde seu funcionamento interno é no modo de exibição completa. Isso é o que proporciona ao depurador HLSL uma experiência de depuração parecida com a de uma CPU.
+ No entanto, como as GPUs alcançam alto desempenho executando o código do sombreador em centenas de threads simultaneamente, o depurador do HLSL foi projetado para trabalhar em conjunto com as outras ferramentas do analisador de gráficos para apresentar todas essas informações de forma a ajudá-lo a fazer sentido. O analisador de gráficos recria quadros capturados usando informações que foram registradas em um log de gráficos; o depurador do HLSL não monitora a execução da GPU em tempo real à medida que ele executa o código do sombreador. Como um log de gráficos contém informações suficientes para recriar qualquer parte da saída e como a análise de gráficos fornece ferramentas que podem ajudá-lo a identificar o pixel exato e o evento em que ocorre um erro, o depurador HLSL só precisa simular o thread do sombreador exato em que você está interessado. Isso significa que o trabalho do sombreador pode ser simulado na CPU, onde seu funcionamento interno é no modo de exibição completa. Isso é o que proporciona ao depurador HLSL uma experiência de depuração parecida com a de uma CPU.
 
  No entanto, o depurador HLSL, atualmente, encontra-se limitado por estes motivos:
 
@@ -72,7 +72,7 @@ O depurador do HLSL no Analisador de Gráficos do Visual Studio ajuda a entender
 
    Para obter exemplos de como usar o depurador HLSL para depurar erros de sombreador, consulte [exemplos](graphics-diagnostics-examples.md) ou os passo a passos vinculados a na seção Consulte também.
 
-## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Passo a passo: usando diagnóstico de gráficos para depurar um sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+## <a name="see-also"></a>Confira também
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

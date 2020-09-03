@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c08967d333fc23dfed9089936cbef86889b2145
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661254"
 ---
 # <a name="go-to-line"></a>Ir para a linha
@@ -26,7 +26,7 @@ ms.locfileid: "72661254"
 
 Essa caixa de diálogo permite ir para uma linha específica no documento ativo. Para acessar essa caixa de diálogo, abra um documento para edição e selecione **Ir para** no menu **Editar**.
 
- Número de linha (1-`n`) permite que você insira o número da linha no documento ativo ao qual você deseja mover. O número inserido deve estar entre 1 e `n`, o número de linhas no documento atual.
+ Número de linha (1- `n` ) permite que você insira o número da linha no documento ativo para o qual você deseja mover. O número inserido deve estar entre 1 e `n`, o número de linhas no documento atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Configurando indicadores no código](../../ide/setting-bookmarks-in-code.md) que [localizam e substituem](../../ide/finding-and-replacing-text.md) o [código de escrita](../../ide/writing-code-in-the-code-and-text-editor.md) de texto

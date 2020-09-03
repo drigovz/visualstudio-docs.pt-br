@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735444"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
@@ -31,23 +31,23 @@ A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a 
 
  A tabela de objetos dá suporte a copiar e colar para que você possa usar outra ferramenta — por exemplo, o Microsoft Excel — para examinar seu conteúdo.
 
- Além disso, você pode usar o menu suspenso de **tipo** no canto superior esquerdo para alternar a exibição de objetos de **buffers**de tipo, **sombreadores** ou **texturas**ou todos esses itens de uma só vez.  Além disso, você pode usar a caixa de pesquisa no canto superior direito para localizar linhas específicas em todos os dados apresentados.  Por exemplo, você pode pesquisar por *D32_FLOAT* para localizar todas as instâncias de objetos desse formato na lista.
+ Além disso, você pode usar o menu suspenso de **tipo** no canto superior esquerdo para alternar a exibição de objetos de **buffers**de tipo, **sombreadores** ou **texturas**ou todos esses itens de uma só vez.  Além disso, você pode usar a caixa de pesquisa no canto superior direito para localizar linhas específicas em todos os dados apresentados.  Por exemplo, você pode pesquisar *D32_FLOAT* para localizar todas as instâncias de objetos desse formato na lista.
 
 ### <a name="graphics-object-table-format"></a>Formato da Tabela de Objetos Gráficos
  A tabela de objetos exibe os objetos e recursos do Direct3D que dão suporte ao quadro associado ao evento selecionado — por exemplo, objetos de estado, buffers, sombreadores, texturas e outros recursos. Objetos que foram criados em um quadro anterior, mas não são usados durante o quadro capturado, são omitidos da tabela de objetos. Objetos que tenham sido destruídos pelo eventos anteriores durante o quadro capturado são omitidos nos eventos subsequentes. Objetos que não são definidos no D3D10Device ou D3D11DeviceContext são exibidos como texto cinza. Os objetos são exibidos em um formato de tabela.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Identificador**|O ID do objeto.|
 |**Nome**|Informações específicas do aplicativo que foi definido no objeto usando a função Direct3D `SetPrivateData`, normalmente para fornecer informações adicionais de identificação sobre um objeto.|
 |**Tipo**|O tipo de objeto.|
 |**Ativo**|Exibe "*" para um objeto que foi definido no D3D10Device ou D3D11DeviceContext durante o quadro capturado.<br /><br /> Isso corresponde aos objetos que são exibidos como texto cinza, mas fornece uma entrada de coluna que você pode usar para classificar a tabela de objetos.|
-|**Size**|O tamanho do objeto em bytes.|
-|**Formatar**|O formato do objeto. Por exemplo, o formato de um objeto de textura ou o modelo de sombreador de um objeto sombreador.|
+|**Tamanho**|O tamanho do objeto em bytes.|
+|**Formato**|O formato do objeto. Por exemplo, o formato de um objeto de textura ou o modelo de sombreador de um objeto sombreador.|
 |**Largura**|A largura de um objeto de textura. Não se aplica a outros tipos de objeto.|
 |**Altura**|A altura de um objeto de textura. Não se aplica a outros tipos de objeto.|
-|**Profundidade**|A profundidade de um objeto de textura 3D. Se uma textura não for 3D, o valor é 0. Não se aplica a outros tipos de objeto.|
-|**Mips**|O número de níveis de MIP que um objeto de textura possui. Não se aplica a outros tipos de objeto.|
+|**Depth**|A profundidade de um objeto de textura 3D. Se uma textura não for 3D, o valor é 0. Não se aplica a outros tipos de objeto.|
+|**Seqüencia**|O número de níveis de MIP que um objeto de textura possui. Não se aplica a outros tipos de objeto.|
 |**ArraySize**|O número de texturas em uma matriz de textura. O intervalo é de 1 a um limite superior definido pelo nível de recurso atual. Para um mapa de cubos, esse valor é 6 vezes o número de mapas de cubo na matriz.|
 |**Amostras**|O número de multiamostras por pixel.|
 
@@ -78,7 +78,7 @@ A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a 
 
  Você também pode alternar a caixa de seleção **Mostrar deslocamentos** para ocultar ou exibir o deslocamento de cada elemento no buffer.
 
-|Digite|Descrição|
+|Tipo|Descrição|
 |----------|-----------------|
 |**float**|Um valor de ponto flutuante de 32 bits.|
 |**float2**|Um vetor que contém dois valores de ponto flutuante de 32 bits.|
@@ -96,7 +96,7 @@ A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a 
 |**u2byte**|Um valor inteiro sem sinal de 16 bits.|
 |**u4byte**|Um valor inteiro sem sinal de 32 bits. O mesmo que **uint**.|
 |**u8byte**|Um valor inteiro sem sinal de 64 bits. O mesmo que **uint64**.|
-|**half**|Um valor de ponto flutuante de 16 bits.|
+|**centímetro**|Um valor de ponto flutuante de 16 bits.|
 |**half2**|Um vetor que contém dois valores de ponto flutuante de 16 bits.|
 |**half3**|Um vetor que contém três valores de ponto flutuante de 16 bits.|
 |**half4**|Um vetor que contém quatro valores de ponto flutuante de 16 bits.|
@@ -109,6 +109,6 @@ A tabela de objetos gráficos na análise de gráficos do Visual Studio ajuda a 
 |**uint64**|Um valor inteiro sem sinal de 64 bits. O mesmo que **u8byte**.|
 |**bool**|Um valor booleano (`true` ou `false`). Cada valor booleano é representado por um valor de 32 bits.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
-- [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

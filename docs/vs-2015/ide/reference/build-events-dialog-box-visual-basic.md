@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9fa3b4365f49d172e077ca132b26a49580228c25
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660953"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Caixa de diálogo de Eventos de Build (Visual Basic)
@@ -34,18 +34,18 @@ Use a caixa de diálogo **Eventos de Build** para especificar as instruções de
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
- **Linha de comando do evento de pós-build** Especifica os comandos a serem executados após o término do build. Para digitar comandos longos, clique em **Editar Pós-Build** para exibir a **Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build**.
+ **Linha de comando do evento de pós-build** Especifica os comandos a serem executados após o término do build. Para digitar comandos longos, clique em **Editar pós-compilação** para exibir a caixa de comando de evento de **pré-compilação evento/pós-compilação linha d**ialog.
 
 > [!NOTE]
-> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
  **Executar o evento de pós-build** Especifica as condições para que o evento de pós-build seja executado, conforme é mostrado na tabela a seguir.
 
-|Opção|Resultado|
+|Opção|Result|
 |------------|------------|
-|**Sempre**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
-|**No build bem-sucedido**|O evento de pós-build será executado se o build for bem-sucedido. O evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido. Essa é a configuração padrão.|
+|**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
+|**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. O evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido. Essa é a configuração padrão.|
 |**Quando o build atualizar a saída do projeto**|O evento de pós-build só será executado quando o arquivo de saída do compilador (.exe ou .dll) for diferente do arquivo de saída anterior do compilador. Um evento de pós-build não será executado se um projeto for atualizado.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Página de compilação, designer de projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) como especificar a caixa de diálogo evento de pré-compilação [de eventos de compilação (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [/linha de comando de evento de pós-compilação](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

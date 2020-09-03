@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21b572e99d23c882f90a1e9218e7a52fb94aedb8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660902"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
@@ -38,7 +38,7 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
 
  **Configuração** Especifica quais definições de configuração devem ser exibidas ou modificadas. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.
 
- **Plataforma** Especifica quais configurações de plataforma devem ser exibidas ou modificadas. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
+ **Plataforma** Especifica quais configurações de plataforma devem ser exibidas ou modificadas. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Geral
  As opções a seguir permitem definir várias configurações do compilador do C#.
@@ -69,7 +69,7 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
 
   **Otimizar código** Habilita ou desabilita as otimizações executadas pelo compilador para tornar o arquivo de saída menor, mais rápido e mais eficiente. Para obter mais informações, consulte [/optimize (opções do compilador C#)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).
 
-## <a name="errors-and-warnings"></a>Erros e Avisos
+## <a name="errors-and-warnings"></a>Erros e avisos
  As configurações a seguir são usadas para configurar as opções de erro e de aviso para o processo de build.
 
  **Nível de aviso** Especifica o nível a ser exibido para os avisos do compilador. Para obter mais informações, consulte [/warn (opções do compilador C#)](https://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).
@@ -96,9 +96,9 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
 
  **Registrar para interoperabilidade COM** Indica que o aplicativo gerenciado vai expor um objeto COM (um COM Callable Wrapper) que permite que um objeto COM interaja com o aplicativo gerenciado. A propriedade **Tipo de saída** da [página Aplicativo](../../ide/reference/application-page-project-designer-visual-basic.md) do **Designer de Projeto** desse aplicativo deve ser definida como **Biblioteca de Classes** para que a propriedade **Registrar para a interoperabilidade COM** esteja disponível. Para obter uma classe de exemplo que pode ser incluída no aplicativo [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e exposta como um objeto COM, consulte [Classe COM de exemplo](https://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).
 
- **Gerar o assembly de serialização** Especifica se o compilador usará o XML Serializer Generator Tool (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [Ferramenta Geradora de Serializador XML (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).
+ **Gerar o assembly de serialização** Especifica se o compilador usará o XML Serializer Generator Tool (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [XML Serializer Generator Tool (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).
 
  **Avançado** Clique para exibir a caixa de diálogo [Configurações de Build Avançadas (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-## <a name="see-also"></a>Veja também
- [Propriedades do projeto referência](../../ide/reference/project-properties-reference.md) [ C# opções do compilador](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+## <a name="see-also"></a>Consulte Também
+ [Propriedades do projeto referência](../../ide/reference/project-properties-reference.md) [Opções do compilador C#](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

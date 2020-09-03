@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71301688"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Converter uma função local em um método
@@ -20,11 +20,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O que é isso?** Converta uma função local em um método.
+**O que:** Converta uma função local em um método.
 
 **Quando:** Você tem uma função local que deseja definir fora do seu contexto local atual.
 
-**Por que:** Você deseja converter uma função local em um método para que você possa chamá-la fora do seu contexto local. O recomendado é converter em um método quando a função local está ficando muito longa. Ao definir a função em um método separado, seu código fica mais fácil de ler.
+**Por que:** Você deseja converter uma função local em um método para que você possa chamá-la fora do contexto local. O recomendado é converter em um método quando a função local está ficando muito longa. Ao definir a função em um método separado, seu código fica mais fácil de ler.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Refatoração de converter uma função local em um método
 
@@ -32,7 +32,7 @@ Esta refatoração aplica-se a:
 
     ![Converter uma função local em um exemplo de código de método](media/convert-local-function-to-method.png)
 
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
     ![Converter uma função local em um exemplo de correção de código de método](media/convert-local-function-to-method-codefix.png)
 

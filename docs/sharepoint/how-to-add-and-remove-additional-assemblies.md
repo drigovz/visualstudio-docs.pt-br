@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014827"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Como: Adicionar e remover assemblies adicionais
@@ -107,7 +108,7 @@ ms.locfileid: "86014827"
 
 3. Escolha a chave excluir.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Como personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Como: Adicionar e remover itens para recursos do SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

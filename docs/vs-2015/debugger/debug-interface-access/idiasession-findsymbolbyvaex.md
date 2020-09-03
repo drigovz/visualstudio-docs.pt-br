@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 14a0b573609d52269809dcaa6e900e17affcecfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196370"
 ---
 # <a name="idiasessionfindsymbolbyvaex"></a>IDiaSession::findSymbolByVAEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual especificado (VA) e o deslocamento.  
+Recupera um tipo de símbolo especificado que contém ou está mais próximo de, um endereço virtual (VA) especificado e um deslocamento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,19 +38,19 @@ HRESULT findSymbolByVAEx ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `va`  
- [in] Especifica a VA.  
+ no Especifica o VA.  
   
  `symtag`  
- [in] Tipo de símbolo a ser localizada. Valores são tirados de [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração.  
+ no Tipo de símbolo a ser encontrado. Os valores são obtidos da enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .  
   
  `ppSymbol`  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperado do objeto que representa o símbolo.  
+ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo recuperado.  
   
  `displacement`  
- [out] Retorna um valor que especifica um deslocamento de endereço virtual fornecido pelo `va`.  
+ fora Retorna um valor que especifica um deslocamento do endereço virtual fornecido por `va` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
   
@@ -60,7 +60,7 @@ LONG disp = 0;
 pSession->findSymbolByVAEx( va, SymTagFunction, &pFunc, &disp );  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)   

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734998"
 ---
 # <a name="init"></a>Init
@@ -27,12 +27,12 @@ void Init(
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `vsgLogGetter` uma entidade que possa ser chamada, como uma função, um ponteiro de função, lambda ou um objeto de função — que usa como parâmetros o comprimento de um buffer composto por `wchar_t` e um ponteiro para esse buffer e retorna `void`. Quando invocado, a entidade callable determina o nome do arquivo que será usado para registrar informações gráficas e grava-o no buffer especificado antes de retornar.
+ `vsgLogGetter` Uma entidade que possa ser chamada, como uma função, um ponteiro de função, lambda ou um objeto de função — que usa como parâmetros o comprimento de um buffer composto `wchar_t` e um ponteiro para esse buffer, e retorna `void` . Quando invocado, a entidade callable determina o nome do arquivo que será usado para registrar informações gráficas e grava-o no buffer especificado antes de retornar.
 
 ## <a name="remarks"></a>Comentários
- A função `Init` é chamada automaticamente quando uma instância da classe `VsgDbg` é construída especificando o parâmetro `bDefaultInit` de seu construtor como `true`; caso contrário, `Init` deve ser chamado explicitamente antes que você possa capturar e registrar informações de gráficos ativamente.
+ A `Init` função é chamada automaticamente quando uma instância da `VsgDbg` classe é construída especificando o `bDefaultInit` parâmetro de seu construtor como `true` ; caso contrário, `Init` deve ser chamado explicitamente antes que você possa capturar e registrar informações de gráficos ativamente.
 
- Você pode finalizar e fechar o arquivo de log de gráficos ativo chamando `UnInit` e, em seguida, capturar e registrar mais informações sobre gráficos em um novo arquivo de log de gráficos chamando `Init` novamente. Você pode repetir isso quantas vezes desejar para criar vários arquivos de log de gráficos independentes usando a mesma instância de `VsgDbg`.
+ Você pode finalizar e fechar o arquivo de log de gráficos ativo chamando e `UnInit` , em seguida, capturar e registrar mais informações sobre gráficos em um novo arquivo de log de gráficos chamando `Init` novamente. Você pode repetir isso quantas vezes desejar para criar vários arquivos de log de gráficos independentes usando a mesma `VsgDbg` instância.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [UnInit](init.md)

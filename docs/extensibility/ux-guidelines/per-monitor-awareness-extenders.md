@@ -15,23 +15,23 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585374"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Suporte para reconhecimento por monitor para extensores do Visual Studio
 
-As versões anteriores ao Visual Studio 2019 tinham seu contexto de reconhecimento de DPI definido como reconhecimento do sistema, em vez de reconhecimento de DPI por monitor (PMA). A execução no reconhecimento do sistema resultou em uma experiência visual degradada (por exemplo, fontes ou ícones borrados) sempre que o Visual Studio precisasse renderizar monitores com diferentes fatores de escala ou remotos em computadores com configurações de exibição diferentes (por exemplo, diferentes Dimensionamento do Windows).
+As versões anteriores ao Visual Studio 2019 tinham seu contexto de reconhecimento de DPI definido como reconhecimento do sistema, em vez de reconhecimento de DPI por monitor (PMA). A execução no reconhecimento do sistema resultou em uma experiência visual degradada (por exemplo, fontes ou ícones borrados) sempre que o Visual Studio precisasse renderizar monitores com fatores de escala diferentes ou remotos em computadores com configurações de exibição diferentes (por exemplo, dimensionamento diferente do Windows).
 
 O contexto de reconhecimento de DPI do Visual Studio 2019 é definido como PMA, quando o ambiente dá suporte a ele, permitindo que o Visual Studio seja renderizado de acordo com a configuração da exibição onde ele é hospedado, em vez de uma configuração de sistema única definida. Por fim, convertendo em uma interface do usuário sempre nítida para áreas de superfície que dão suporte ao modo PMA.
 
 Consulte a documentação [sobre desenvolvimento de aplicativos para desktop de alto dpi no Windows](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows) para obter mais informações sobre os termos e o cenário geral abordados neste documento.
 
-## <a name="quickstart"></a>Início rápido
+## <a name="quickstart"></a>Guia de Início Rápido
 
-- Verifique se o Visual Studio está em execução no modo de PMA (consulte Habilitando o **PMA**)
+- Verifique se o Visual Studio está em execução no modo de PMA (consulte **habilitando o PMA**)
 
 - Validar se a extensão funciona corretamente em um conjunto de cenários comuns (consulte **testando suas extensões para problemas de PMA**)
 
@@ -126,7 +126,7 @@ As imagens a seguir mostram as restrições do sistema operacional Windows **pad
 ![Uma captura de tela do comportamento correto de pai](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Você pode alterar esse comportamento definindo o comportamento de Hospedagem de thread (consulte a [Enumeração Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Você pode alterar esse comportamento definindo o comportamento de Hospedagem de thread (consulte [Dpi_Hosting_Behavior Enumeração](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Como resultado, se você definir a relação pai-filho entre os modos sem suporte, ele falhará e o controle ou a janela poderá não ser renderizado conforme o esperado.
 
@@ -168,7 +168,7 @@ Como a espionagem, as ferramentas XAML no Visual Studio podem ajudar a diagnosti
 
 ### <a name="replace-dpihelper-calls"></a>Substituir chamadas DpiHelper
 
-Na maioria dos casos, corrigir problemas de interface do usuário no modo PMA se resume a substituir chamadas em código gerenciado para as classes antigas *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* e *Microsoft. VisualStudio. PlatformUI. DpiHelper* , com chamadas para o novo  *Classe auxiliar Microsoft. VisualStudio. Utilities. DpiAwareness* . 
+Na maioria dos casos, corrigir problemas de interface do usuário no modo PMA se resume a substituir chamadas em código gerenciado para as classes antigas *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* e *Microsoft. VisualStudio. PlatformUI. DpiHelper* , com chamadas para a nova classe auxiliar *Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -230,7 +230,7 @@ IVsDpiAware : public IUnknown
 };
 ```
 
-Para linguagens gerenciadas, o melhor lugar para implementar essa interface está na mesma classe que deriva de *Microsoft. VisualStudio. Shell. ToolWindowPane*. Para C++o, o melhor lugar para implementar essa interface está na mesma classe que implementa *IVsWindowPane* de VSShell. h.
+Para linguagens gerenciadas, o melhor lugar para implementar essa interface está na mesma classe que deriva de *Microsoft. VisualStudio. Shell. ToolWindowPane*. Para o C++, o melhor lugar para implementar essa interface está na mesma classe que implementa *IVsWindowPane* de VSShell. h.
 
 O valor retornado pela propriedade Mode na interface é um __VSDPIMODE (e é convertido para um UINT no Managed):
 

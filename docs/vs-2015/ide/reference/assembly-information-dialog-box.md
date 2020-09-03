@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06374f70c2552f3e635ada3bc40ef82d890fb46b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661021"
 ---
 # <a name="assembly-information-dialog-box"></a>Caixa de diálogo Informações do Assembly
@@ -25,9 +25,9 @@ ms.locfileid: "72661021"
 
 A caixa de diálogo **Informações do Assembly** é usada para especificar os valores dos atributos de assembly global [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], que são armazenados no arquivo AssemblyInfo criado automaticamente com o projeto. No **Gerenciador de Soluções**, o arquivo está localizado no nó **Meu Projeto** em [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (clique em **Mostrar Todos os Arquivos** para exibi-lo); ele está localizado em **Propriedades** em [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Para obter mais informações sobre atributos de assembly, consulte [Atributos](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
- Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Aplicativo**. Na página **Aplicativo**, clique no botão **Informações do Assembly**.
+ Para acessar essa caixa de diálogo, selecione um nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de projeto** for exibido, clique na guia **aplicativo** . Na página do **aplicativo** , clique no botão **informações do assembly** .
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Título** Especifica um título para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyTitleAttribute>.
 
  **Descrição** Especifica uma descrição opcional para o manifesto do assembly. Corresponde ao <xref:System.Reflection.AssemblyDescriptionAttribute>.
@@ -46,9 +46,9 @@ A caixa de diálogo **Informações do Assembly** é usada para especificar os v
 
  **GUID** Um GUID exclusivo que identifica o assembly. Ao criar um projeto, o Visual Studio gera um GUID para o assembly. Corresponde ao <xref:System.Guid>.
 
- **Linguagem Neutra** Especifica com qual cultura o assembly é compatível. Corresponde ao <xref:System.Resources.NeutralResourcesLanguageAttribute>. O padrão é **(Nenhum)** .
+ **Linguagem Neutra** Especifica com qual cultura o assembly é compatível. Corresponde ao <xref:System.Resources.NeutralResourcesLanguageAttribute>. O padrão é **(nenhum)**.
 
  **Tornar assembly visível para o COM** Especifica se os tipos no assembly estarão disponíveis para o COM. Corresponde ao <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
-## <a name="see-also"></a>Veja também
- [Página de aplicativo, designer de projeto (Visual Basic) ](../../ide/reference/application-page-project-designer-visual-basic.md) [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+## <a name="see-also"></a>Consulte Também
+ [Página de aplicativo, atributos do designer de projeto (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

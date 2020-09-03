@@ -1,5 +1,5 @@
 ---
-title: ProjectType Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento ProjectType (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,19 +14,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701801"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelos do Visual Studio)
-Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na caixa de diálogo **Novo Projeto** ou **Adicionar Novo Item.**
+Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
 
 > [!WARNING]
-> Os modelos de projeto são suportados para C++ a partir do Visual Studio 2012. Eles não são suportados para C++ no Visual Studio 2010 e versões anteriores.
+> Modelos de projeto têm suporte para C++ a partir do Visual Studio 2012. Eles não têm suporte para C++ no Visual Studio 2010 e em versões anteriores.
 
- \<VSTemplate \<> TemplateData> \<ProjectType>
+ \<VSTemplate> \<TemplateData>
+ \<ProjectType>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,25 +48,25 @@ Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- Este valor especifica o tipo de projeto que o modelo criará e deve conter um dos seguintes valores:
+ Esse valor especifica o tipo de projeto que o modelo criará e deve conter um dos seguintes valores:
 
-- `CSharp`: Especifica que o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo cria um projeto ou item.
+- `CSharp`: Especifica que o modelo cria um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto ou item.
 
-- `VisualBasic`: Especifica que o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] modelo cria um projeto ou item.
+- `VisualBasic`: Especifica que o modelo cria um [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projeto ou item.
 
-- `Web`: Especifica que o modelo cria um projeto ou item da Web. Se `ProjectType` o elemento contiver esse valor, a linguagem do projeto ou item será definida no [ProjectSubType Element (Visual Studio Templates)](../extensibility/projectsubtype-element-visual-studio-templates.md).
+- `Web`: Especifica que o modelo cria um projeto da Web ou item. Se o `ProjectType` elemento contiver esse valor, o idioma do projeto ou do item será definido no [elemento ProjectSubType (modelos do Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
 ## <a name="remarks"></a>Comentários
- `ProjectType`é um elemento `TemplateData`filho necessário de .
+ `ProjectType` é um elemento filho obrigatório de `TemplateData` .
 
- O valor `ProjectType` do elemento especifica onde o modelo está localizado na caixa de diálogo **Novo Projeto** ou **Adicionar Novo Item.** Por exemplo, um `ProjectType` modelo `CSharp` com um valor de aparece sob o nó **Visual C#** na caixa de diálogo **Projeto** Novo.
+ O valor do `ProjectType` elemento especifica onde o modelo está localizado na caixa de diálogo **novo projeto** ou **Adicionar novo item** . Por exemplo, um modelo com um `ProjectType` valor de `CSharp` é exibido sob o nó **Visual C#** na caixa de diálogo **novo projeto** .
 
- Um subtipo de modelo pode ser especificado usando o elemento [ProjectSubType.](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ Um subtipo de modelo pode ser especificado usando o elemento [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.

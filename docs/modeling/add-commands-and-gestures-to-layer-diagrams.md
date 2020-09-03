@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531385"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
@@ -108,7 +108,7 @@ Se você quiser criar um VSIX que contém comandos, validadores de camada e outr
 
 8. Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o arquivo **. vsix** no diretório **bin** do projeto VSIX. Copie-o para o computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no explorador de arquivos.
 
-## <a name="defining-a-menu-command"></a><a name="command"></a>Definindo um comando de menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Definindo um comando de menu
 
 Você pode adicionar mais definições de comando de menu a um gesto ou projeto de comando existente. Cada comando é definido por uma classe que tem as seguintes características:
 
@@ -124,11 +124,11 @@ Você pode adicionar mais definições de comando de menu a um gesto ou projeto 
 
 - Os métodos que implementam `ICommandExtension` são os seguintes:
 
-  - `string Text {get;}`-O rótulo que aparece no menu.
+  - `string Text {get;}` -O rótulo que aparece no menu.
 
-  - `void QueryStatus(IMenuCommand command)`-chamado quando o usuário clica com o botão direito do mouse no diagrama e determina se o comando deve ser visível e habilitado para a seleção atual do usuário.
+  - `void QueryStatus(IMenuCommand command)` -chamado quando o usuário clica com o botão direito do mouse no diagrama e determina se o comando deve ser visível e habilitado para a seleção atual do usuário.
 
-  - `void Execute(IMenuCommand command)`-chamado quando o usuário seleciona o comando.
+  - `void Execute(IMenuCommand command)` -chamado quando o usuário seleciona o comando.
 
 - Para determinar a seleção atual, você pode importar `IDiagramContext` :
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="defining-a-gesture-handler"></a><a name="gesture"></a>Definindo um manipulador de gestos
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Definindo um manipulador de gestos
 
 Um manipulador de gestos responde quando o usuário arrasta itens para o diagrama de dependência e quando o usuário clica duas vezes em qualquer lugar no diagrama.
 

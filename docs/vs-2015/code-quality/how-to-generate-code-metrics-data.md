@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661286"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas do código
@@ -25,7 +25,7 @@ ms.locfileid: "72661286"
 
 Você pode optar por gerar resultados de métricas de código para uma solução inteira ou um projeto selecionado.
 
- **Requirements**
+ **Requisitos**
 
  Visual Studio Enterprise
 
@@ -33,11 +33,11 @@ Você pode optar por gerar resultados de métricas de código para uma solução
 
 - Clique no **menu analisar**e, em seguida, clique em **métricas de CalculateCode para solução**.
 
-     \- ou -
+     \- ou –
 
 - Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e clique em **métricas de CalculateCode**.
 
-     \- ou -
+     \- ou –
 
 - Na janela **resultados de métricas de código** , clique no botão **métricas de CalculateCode para solução** .
 
@@ -49,7 +49,7 @@ Você pode optar por gerar resultados de métricas de código para uma solução
 
 2. Clique em **analisar**e, em seguida, clique em **gerar métricas de código para projetos selecionados**.
 
-    \- ou -
+    \- ou –
 
     Clique com o botão direito do mouse em suas seleções e clique em **métricas do CalculateCode**.
 
@@ -59,5 +59,5 @@ Você pode optar por gerar resultados de métricas de código para uma solução
 
 - Expanda a árvore na coluna **hierarquia** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

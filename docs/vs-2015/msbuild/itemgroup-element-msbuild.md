@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20c22e0ea2ef05c108ebe564b186ede2a02f9dfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162420"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
@@ -34,7 +34,7 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
  \<Project>  
  \<ItemGroup>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <ItemGroup Condition="'String A' == 'String B'">  
@@ -48,22 +48,22 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIÇÃO|  
+|Atributo|Descrição|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional. Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|Define as entradas do processo de build. Pode não haver nenhum ou pode haver mais de um elemento `Item` em um `ItemGroup`.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[Projeto](../msbuild/project-element-msbuild.md)|Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
-|[Target](../msbuild/target-element-msbuild.md)|A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).|  
+|[Target (destino)](../msbuild/target-element-msbuild.md)|A partir do .NET Framework 3.5, o elemento `ItemGroup` pode aparecer dentro de um elemento `Target`. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).|  
   
 ## <a name="remarks"></a>Comentários  
   
@@ -87,7 +87,7 @@ Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) defi
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Itens](../msbuild/msbuild-items.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Los](../msbuild/msbuild-items.md)   
  [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

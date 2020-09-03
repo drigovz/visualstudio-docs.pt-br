@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Atualizar os controles em uma faixa de faixas em tempo de execução'
+title: 'Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255344"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Passo a passo: Atualizar os controles em uma faixa de faixas em tempo de execução
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução
 
 Este tutorial demonstra como usar o modelo de objeto Ribbon para atualizar os controles em uma faixa de faixas depois que a faixa de faixas é carregada no aplicativo do Office.
 
@@ -32,7 +32,7 @@ Este tutorial demonstra como usar o modelo de objeto Ribbon para atualizar os co
 
 O exemplo extrai dados do banco de dado de exemplo Northwind para preencher uma caixa de combinação e um menu no Microsoft Office Outlook. Os itens que você selecionar nesses controles preencherão automaticamente campos como **para** e **assunto** em uma mensagem de email.
 
-Esta explicação passo a passo ilustra as seguintes tarefas:
+Este passo a passo ilustra as seguintes tarefas:
 
 - Crie um novo projeto de suplemento do VSTO do Outlook.
 
@@ -43,11 +43,11 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 - Atualizar controles na faixa de faixas em tempo de execução.
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ Primeiro, crie um projeto de suplemento do VSTO do Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para criar um novo projeto de suplemento do VSTO do Outlook
 
-1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Outlook com o nome **Ribbon_Update_At_Runtime**.
+1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , crie um projeto de suplemento do VSTO do Outlook com o nome **Ribbon_Update_At_Runtime**.
 
 2. Na caixa de diálogo **novo projeto** , selecione **criar diretório para solução**.
 
 3. Salve o projeto no diretório de projeto padrão.
 
-     Para obter mais informações, confira [Como: Crie projetos do Office no Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Criar um grupo de faixa de uma personalizada
 
@@ -73,9 +73,9 @@ A faixa de para este exemplo aparecerá quando um usuário compor uma nova mensa
 
 ### <a name="to-design-a-custom-group"></a>Para criar um grupo personalizado
 
-1. No menu **Projeto**, clique em **Adicionar Novo Item**.
+1. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)** .
+2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
 3. Altere o nome da nova faixa de forma para **CustomerRibbon**e clique em **Adicionar**.
 
@@ -149,15 +149,15 @@ Use a janela **Data Sources** para adicionar um conjunto de dados tipado ao seu 
 
 8. Marque a caixa de seleção ao lado de cada uma das tabelas a seguir:
 
-    1. **Utilizam**
+    1. **Clientes**
 
     2. **Detalhes do pedido**
 
-    3. **Solicitar**
+    3. **Pedidos**
 
-    4. **Produto**
+    4. **Produtos**
 
-9. Clique em **Finalizar**.
+9. Clique em **Concluir**.
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>Atualizar controles no grupo personalizado em tempo de execução
 
@@ -179,7 +179,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
 
 3. Em **Gerenciador de soluções**, clique em **CustomerRibbon.cs** ou **CustomerRibbon. vb** para selecioná-lo.
 
-4. No menu **Exibir** , clique em **código**.
+4. No menu **Exibir** , clique em **Código**.
 
     O arquivo de código da faixa de Ribbon é aberto no editor de código.
 
@@ -188,7 +188,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Adicione o código a seguir dentro `CustomerRibbon` da classe. Esse código declara a tabela de dados e os adaptadores de tabela que você usará para armazenar informações do cliente, pedidos, detalhes do pedido e tabelas de produtos do banco de dados Northwind.
+6. Adicione o código a seguir dentro da `CustomerRibbon` classe. Esse código declara a tabela de dados e os adaptadores de tabela que você usará para armazenar informações do cliente, pedidos, detalhes do pedido e tabelas de produtos do banco de dados Northwind.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
@@ -207,7 +207,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
 
-9. Adicione o código a seguir à classe `CustomerRibbon`. Esse código usa consultas LINQ para executar as seguintes tarefas:
+9. Adicione o código a seguir à classe `CustomerRibbon` . Esse código usa consultas LINQ para executar as seguintes tarefas:
 
    - Adiciona um submenu ao menu **ProductsPurchased** para cada ordem de venda relacionada ao cliente selecionado.
 
@@ -224,7 +224,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
 
 11. No designer de faixa de faixas, clique duas vezes na caixa de combinação **clientes** .
 
-     O arquivo de código da faixa de faixas é aberto no editor `ComboBox1_TextChanged` de códigos e o manipulador de eventos é exibido.
+     O arquivo de código da faixa de faixas é aberto no editor de códigos e o `ComboBox1_TextChanged` manipulador de eventos é exibido.
 
 12. Substitua o `ComboBox1_TextChanged` manipulador de eventos pelo código a seguir. Esse código executa as seguintes tarefas:
 
@@ -235,12 +235,12 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
       [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
       [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
 
-13. Adicione o seguinte `Click` manipulador de eventos `CustomerRibbon` à classe. Esse código adiciona o nome dos produtos selecionados ao campo corpo de novas mensagens de email.
+13. Adicione o seguinte `Click` manipulador de eventos à `CustomerRibbon` classe. Esse código adiciona o nome dos produtos selecionados ao campo corpo de novas mensagens de email.
 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Adicione o código a seguir à classe `CustomerRibbon`. Esse código executa as seguintes tarefas:
+14. Adicione o código a seguir à classe `CustomerRibbon` . Esse código executa as seguintes tarefas:
 
     - Popula a linha para de novas mensagens de email usando o endereço de email do cliente selecionado no momento.
 
@@ -263,7 +263,7 @@ Para criar uma mensagem de email de acompanhamento do cliente, selecione um clie
 
 2. No Outlook, no menu **arquivo** , aponte para **novo**e clique em mensagem de **email**.
 
-     Ocorrem as seguintes ações:
+     As seguintes ações ocorrem:
 
     - Uma nova janela Inspetor de mensagem de email é exibida.
 
@@ -273,7 +273,7 @@ Para criar uma mensagem de email de acompanhamento do cliente, selecione um clie
 
 3. Na guia **mensagem** da faixa de opções, no grupo **compras de clientes** , selecione um cliente na caixa de combinação **clientes** .
 
-     Ocorrem as seguintes ações:
+     As seguintes ações ocorrem:
 
     - O menu **produtos comprados** é atualizado para mostrar cada pedido de vendas do cliente selecionado.
 
@@ -291,22 +291,22 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 
 - Adicione a interface do usuário baseada em contexto a qualquer personalização no nível do documento. Para obter mais informações, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md).
 
-- Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulário do Outlook.
+- Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Adicione um painel de tarefas personalizado ao Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [LINQ (Consulta Integrada à Linguagem)](/dotnet/csharp/linq/index)
-- [Como: Introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Designer da faixa de opções](../vsto/ribbon-designer.md)
-- [Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)
 - [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Como: Alterar a posição de uma guia na faixa de posições](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
-- [Como: Adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Como: Exportar uma faixa de faixas do designer de faixa de das para XML da faixa de das](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Como: Mostrar erros da interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Como alterar a posição de uma guia na faixa de forma](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
+- [Como: adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Como mostrar erros de interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)

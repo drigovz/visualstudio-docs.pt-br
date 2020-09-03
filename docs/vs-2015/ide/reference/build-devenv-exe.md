@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419716d750771908a43318d051cb0b4681d35149
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660979"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -32,7 +32,7 @@ Compila uma solução usando um arquivo de configuração de solução especific
 Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig ProjConfigName]]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `SolutionName` Necessário. O caminho completo e o nome do arquivo de solução.
 
  `SolnConfigName` Necessário. O nome da configuração de solução que será usada para compilar a solução nomeada no `SolutionName`.
@@ -57,5 +57,5 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Veja também
- [Criação e limpeza de projetos e soluções no Visual Studio ](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Devenv opções de linha de comando ](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv. exe) ](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv. exe) ](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+## <a name="see-also"></a>Consulte Também
+ [Criando e limpando projetos e soluções nas opções de linha de comando do devenv do Visual Studio,](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [Devenv Command Line Switches](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

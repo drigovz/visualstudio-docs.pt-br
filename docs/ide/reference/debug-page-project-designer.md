@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418737"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
@@ -34,7 +34,7 @@ Para acessar a página **Depurar**, selecione um nó do projeto no **Gerenciador
 
 As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.
 
-**Configuration**
+**Configuração**
 
 Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Depurar** (padrão), **Versão** ou **Todas as Configurações**.
 
@@ -82,7 +82,7 @@ Esta opção especifica se a depuração de código nativo tem suporte. Marque e
 
 Marque ou desmarque esta caixa de seleção para habilitar ou desabilitar a depuração de procedimentos SQL de seu aplicativo do Visual Basic. Essa caixa de seleção é desmarcada por padrão.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
 - [Definições do projeto para configurações de depuração do C#](../../debugger/project-settings-for-csharp-debug-configurations.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ccb4f838c702cb1843d5c0f44dd7f54219f27a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589767"
 ---
 # <a name="work-with-shaders"></a>Trabalhar com sombreadores
@@ -35,8 +35,8 @@ Como DGSL é compatível com DGML, você pode usar ferramentas projetadas para a
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
-|[Designer de Sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|
-|[Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)|Discute os tipos de nós de Designer de Sombreadores que você pode usar para obter efeitos gráficos.|
-|[Exemplos do Designer de Sombreador](../designers/how-to-create-a-basic-color-shader.md)|Fornece links para tópicos que demonstram como usar o Designer do sombreador para atingir efeitos gráficos comuns.|
+|[Designer de sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|
+|[Nós do designer do sombreador](../designers/shader-designer-nodes.md)|Discute os tipos de nós de Designer de Sombreadores que você pode usar para obter efeitos gráficos.|
+|[Exemplos do designer de sombreador](../designers/how-to-create-a-basic-color-shader.md)|Fornece links para tópicos que demonstram como usar o Designer do sombreador para atingir efeitos gráficos comuns.|

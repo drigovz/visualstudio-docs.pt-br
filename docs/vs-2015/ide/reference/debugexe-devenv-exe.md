@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660799"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -31,7 +31,7 @@ Abre o arquivo executável especificado a ser depurado.
 Devenv /debugexe ExecutableFile
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `ExecutableFile` Necessário. O caminho e o nome de um arquivo .exe.
 
  Se o arquivo .exe não for encontrado ou não existir, nenhum aviso nem erro será exibido, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] iniciará normalmente.
@@ -46,5 +46,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe
 ```
 
-## <a name="see-also"></a>Veja também
- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando do desenvolvedor](../../ide/reference/devenv-command-line-switches.md)

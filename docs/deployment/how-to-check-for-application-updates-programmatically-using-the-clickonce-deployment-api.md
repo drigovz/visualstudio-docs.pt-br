@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382569"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce
@@ -59,7 +59,7 @@ O ClickOnce fornece duas maneiras de atualizar um aplicativo quando ele é impla
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
  Seu aplicativo deve ter permissões de confiança total para usar a atualização programática.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como especificar um local alternativo para atualizações da implantação](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

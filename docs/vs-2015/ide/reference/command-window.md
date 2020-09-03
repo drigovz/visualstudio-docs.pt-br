@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660839"
 ---
 # <a name="command-window"></a>Janela Comando
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado. O exemplo mostrado aqui demonstra como pesquisar o padrão "^t".
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar aspas para nomes de caminho com espaços
- Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"** .
+ Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

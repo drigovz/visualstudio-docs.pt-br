@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551869"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Arquitetura de soluções do Office no Visual Studio
@@ -51,11 +51,11 @@ Explica como as propriedades de documento personalizadas funcionam em personaliz
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-[Visão geral &#40;do desenvolvimento de soluções do Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Visão geral do desenvolvimento de soluções do Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md)
 
 Fornece uma introdução ao uso de Microsoft Office como uma plataforma para o desenvolvimento de soluções comerciais.
 
-[Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Introdução &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Fornece links para informações sobre como configurar um computador de desenvolvimento para criar soluções do Office, como começar a criar soluções e o que mudou desde as versões anteriores do Office Developer Tools no Visual Studio.
 
@@ -63,6 +63,6 @@ Fornece links para informações sobre como configurar um computador de desenvol
 
 Fornece links para informações sobre como criar soluções do Office.
 
-[Referência &#40;geral desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Referência geral &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
-Fornece links para informações sobre elementos de interface do usuário em projetos do Office, manifestos de aplicativo e implantação para projetos do Office [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]e APIs no.
+Fornece links para informações sobre elementos de interface do usuário em projetos do Office, manifestos de aplicativo e implantação para projetos do Office e APIs no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .

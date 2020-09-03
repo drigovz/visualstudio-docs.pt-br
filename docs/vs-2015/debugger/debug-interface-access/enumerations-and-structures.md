@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 466b04d87c9493c2c73677a0b96245211157e896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164289"
 ---
 # <a name="enumerations-and-structures"></a>Enumerações e estruturas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Essas são as enumerações e estruturas usadas pelo SDK do DIA.  
+Essas são as enumerações e estruturas usadas pelo DIA SDK.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
@@ -35,13 +35,13 @@ Essas são as enumerações e estruturas usadas pelo SDK do DIA.
  Especifica o tipo básico do símbolo.  
   
  [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)  
- Especifica o escopo de visibilidade (nível de acesso) de funções de membro e variáveis.  
+ Especifica o escopo de visibilidade (nível de acesso) de funções e variáveis de membro.  
   
  [Enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)  
- Especifica a convenção de chamada para uma função.  
+ Especifica a Convenção de chamada para uma função.  
   
  [Enumeração CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.  
+ Especifica o idioma do código-fonte do aplicativo ou módulo vinculado.  
   
  [Enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  Especifica o processador de destino.  
@@ -53,36 +53,36 @@ Essas são as enumerações e estruturas usadas pelo SDK do DIA.
  Indica o escopo específico de um valor de dados.  
   
  [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)  
- Indica o tipo de informações de localização contidas em um símbolo.  
+ Indica o tipo de informações de local contidas em um símbolo.  
   
  [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)  
- Especifica o tipo de memória para acessar.  
+ Especifica o tipo de memória a ser acessado.  
   
  [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)  
- Especifica as opções de pesquisa para nomes de arquivo e símbolos.  
+ Especifica as opções de pesquisa para nomes de arquivo e símbolo.  
   
  [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)  
  Especifica o tipo de quadro de pilha.  
   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)  
- Especifica o tipo do símbolo.  
+ Especifica o tipo de símbolo.  
   
  [Enumeração THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)  
- Designa os tipos de conversão.  
+ Designa tipos de conversão.  
   
  [Enumeração UdtKind](../../debugger/debug-interface-access/udtkind.md)  
- Descreve a variedade de tipo definido pelo usuário (UDT).  
+ Descreve a variedade de UDT (tipo definido pelo usuário).  
   
 ## <a name="structures"></a>Estruturas  
  [Estrutura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- Descreve uma entrada em um mapa de endereço.  
+ Descreve uma entrada em um mapa de endereços.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
- Especifica as interfaces fornecidas pelo SDK do DIA.  
+ Especifica as interfaces fornecidas pelo DIA SDK.  
   
  [Constantes (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- Especifica as constantes que estão disponíveis no SDK do DIA.  
+ Especifica as constantes que estão disponíveis no DIA SDK.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
