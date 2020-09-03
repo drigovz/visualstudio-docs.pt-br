@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 240995eb744f8107503c108cbcdbbb8522748b79
-ms.sourcegitcommit: 8c4dc60b665e7065a5231d6b61380731221d9fc5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87115331"
 ---
 # <a name="program-vsto-add-ins"></a>Programar suplementos do VSTO
@@ -105,7 +105,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 
-### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a>Acessar um documento quando o aplicativo do Office for iniciado
+### <a name="access-a-document-when-the-office-application-starts"></a><a name="AccessingDocuments"></a> Acessar um documento quando o aplicativo do Office for iniciado
  Nem todos os [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos abrem automaticamente um documento quando você os inicia, e nenhum dos [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos abre um documento quando você os inicia. Portanto, não adicione código no `ThisAdd-In_Startup` manipulador de eventos se o código exigir que um documento seja aberto. Em vez disso, adicione esse código a um evento que o aplicativo do Office gera quando um usuário cria ou abre um documento. Dessa forma, você pode garantir que um documento seja aberto antes que seu código execute operações nele.
 
  O exemplo de código a seguir funciona com um documento no Word somente quando o usuário cria um documento ou abre um documento existente.

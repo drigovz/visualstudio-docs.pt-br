@@ -17,22 +17,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651883"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Como localizar tópicos no Índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Na guia **Sumário**, você pode usar o sumário para localizar informações. O sumário é uma lista expansível que contém todos os tópicos nos livros instalados. Para obter informações de acessibilidade sobre como navegar pelo sumário, consulte [Teclas de atalho (Visualizador da Ajuda)](../ide/shortcut-keys-help-viewer.md).
+Na guia **Sumário**, você pode usar o sumário para localizar informações. O sumário é uma lista expansível que contém todos os tópicos nos livros instalados. Para obter informações de acessibilidade sobre como navegar pelo Sumário, consulte [teclas de atalho (Visualizador da ajuda)](../ide/shortcut-keys-help-viewer.md).
 
 > [!IMPORTANT]
 > O escopo dos tópicos disponíveis no sumário depende do filtro selecionado.
 
 ## <a name="filter-the-toc"></a>Filtrar o sumário
- Você pode filtrar o Sumário para restringir o escopo dos tópicos que aparecem na guia **conteúdo** . os títulos aparecem na lista somente se contiverem a raiz do termo que você especificar. Por exemplo, se você especificar "solucionar" como filtro, somente títulos que contiverem "solucionar" ou "solucionar problemas" aparecerão. Nós cujos títulos não contiverem o termo serão recolhidos para um único nó com um sinal de reticências (...).
+ Você pode filtrar o Sumário para restringir o escopo dos tópicos que aparecem na guia **conteúdo** . Os títulos só aparecerão na lista se contiverem a raiz do termo que você especificar. Por exemplo, se você especificar "solucionar" como filtro, somente títulos que contiverem "solucionar" ou "solucionar problemas" aparecerão. Nós cujos títulos não contiverem o termo serão recolhidos para um único nó com um sinal de reticências (...).
 
 #### <a name="to-filter-the-toc"></a>Para filtrar o sumário
 
@@ -54,5 +54,5 @@ Na guia **Sumário**, você pode usar o sumário para localizar informações. O
 
      A guia **Sumário** é aberta e exibe o local do tópico no Sumário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Localizar informações](../ide/locate-information.md) [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

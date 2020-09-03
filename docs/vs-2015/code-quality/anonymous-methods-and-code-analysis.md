@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652219"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anônimos e análise de código
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Métodos anônimos embutidos
- Os avisos e as métricas para um método anônimo que é declarado como uma atribuição embutida para um campo são associados ao construtor. Se o campo for declarado como `static` (`Shared` em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), os avisos e as métricas serão associados ao construtor da classe; caso contrário, eles serão associados ao construtor da instância.
+ Os avisos e as métricas para um método anônimo que é declarado como uma atribuição embutida para um campo são associados ao construtor. Se o campo for declarado como `static` ( `Shared` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), os avisos e as métricas serão associados ao construtor da classe; caso contrário, eles serão associados ao construtor da instância.
 
  Por exemplo, na classe a seguir, todos os avisos encontrados na declaração de **anonymousMethod1** serão gerados no construtor padrão da **classe**gerado implicitamente. Enquanto isso, os encontrados em **anonymousMethod2** serão aplicados no construtor de classe gerado implicitamente.
 
@@ -108,7 +108,7 @@ class Class
 
  Uma classe pode conter um método anônimo embutido que atribui um valor a um campo que tem vários construtores. Nesse caso, os avisos e as métricas são associados a todos os construtores, a menos que esse construtor se encadeia a outro construtor na mesma classe.
 
- Por exemplo, na classe a seguir, todos os avisos encontrados na declaração de **anonymousMethod** devem ser gerados em relação à **classe (int)** e à **classe (cadeia de caracteres)** , mas não à **classe ()** .
+ Por exemplo, na classe a seguir, todos os avisos encontrados na declaração de **anonymousMethod** devem ser gerados em relação à **classe (int)** e à **classe (cadeia de caracteres)** , mas não à **classe ()**.
 
 ```vb
 
@@ -152,5 +152,5 @@ class Class
 
  Você pode contornar esse problema de uma das duas maneiras. Você pode declarar **anonymousMethod** em um Construtor comum que todos os construtores se encadeadom. Ou você pode declará-lo em um método de inicialização que é chamado por todos os construtores.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

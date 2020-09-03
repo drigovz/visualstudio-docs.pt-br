@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1b1a54d8be5ab4aa9703d318d0b537deff53b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652878"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
@@ -38,11 +38,11 @@ ms.locfileid: "72652878"
 
 O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é uma boa prática salvar essas alterações de volta no banco de dado. Faça isso de uma das três maneiras:
 
-- Chamando um dos métodos `Update` de um TableAdapter
+- Chamando um dos `Update` métodos de um TableAdapter
 
 - Chamando um dos métodos DBDirect do TableAdapter
 
-- Chamando o método UpdateAll na `TableAdapterManager` que o Visual Studio gera para você quando o conjunto de um contiver tabelas relacionadas a outras tabelas no conjunto de um
+- Chamando o método UpdateAll no que o `TableAdapterManager` Visual Studio gera para você quando o conjunto de um contiver tabelas relacionadas a outras tabelas no conjunto de um
 
   Quando os dados associam tabelas de DataSet a controles em uma página do Windows Form ou XAML, a arquitetura de vinculação de dados faz todo o trabalho para você.
 
@@ -54,8 +54,8 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 |[Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Como executar atualizações com TableAdapters|
 |[Atualização hierárquica](../data-tools/hierarchical-update.md)|Como executar atualizações de um conjunto de informações com duas ou mais tabelas relacionadas|
 |[Lidar com uma exceção de simultaneidade](../data-tools/handle-a-concurrency-exception.md)|Como tratar exceções quando dois usuários tentam alterar os mesmos dados em um banco de dado ao mesmo tempo|
-|[Como salvar dados pelo uso de uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o namespace System. Transactions e o objeto TransactionScope|
-|[Salvando dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Como salvar dados em uma transação usando o namespace System. Transactions|
+|[Salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o namespace System. Transactions e o objeto TransactionScope|
+|[Salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Como salvar dados em uma transação usando o namespace System. Transactions|
 |[Salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md)|Como editar registros e salvar alterações em várias tabelas de volta no banco de dados|
 |[Salvar dados de um objeto em um banco de dados](../data-tools/save-data-from-an-object-to-a-database.md)|Como passar dados de um objeto que não está em um DataSet para um Database usando um método DbDirect TableAdapter|
 |[Salvando dados com os métodos DBDirect TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Como usar o TableAdapter para enviar consultas SQL diretamente para o banco de dados|
@@ -73,29 +73,29 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 ## <a name="merge-datasets"></a>Mesclar conjuntos de os
  Você pode atualizar o conteúdo de um conjunto de um DataSet *mesclando* -o com outro conjunto de um. Isso envolve a cópia do conteúdo de um conjunto de *fonte de origem* para o conjunto de código de chamada (referido como o DataSet de *destino* ). Quando você mescla conjuntos de os, os novos registros no conjunto de recursos de origem são adicionados ao conjunto de fonte de destino. Além disso, colunas extras no conjunto de fonte de origem são adicionadas ao DataSet de destino. A mesclagem de conjuntos de aplicativos é útil quando você tem um conjunto de um DataSet local e Obtém um segundo conjunto de um outro aplicativo. Ele também é útil quando você obtém um segundo conjunto de dados de um componente, como um Web Service XML, ou quando você precisa integrá-los a partir de vários DataSets.
 
- Ao mesclar conjuntos de valores, você pode passar um argumento booliano (`preserveChanges`) que informa ao método <xref:System.Data.DataSet.Merge%2A> se as modificações existentes devem ser retidas no conjunto de valores de destino. Como os conjuntos de informações mantêm várias versões de registros, é importante ter em mente que mais de uma versão dos registros está sendo mesclada. A tabela a seguir mostra como um registro em dois conjuntos de valores é mesclado:
+ Ao mesclar conjuntos de valores, você pode passar um argumento booliano ( `preserveChanges` ) que informa ao <xref:System.Data.DataSet.Merge%2A> método se as modificações existentes devem ser retidas no conjunto de valores de destino. Como os conjuntos de informações mantêm várias versões de registros, é importante ter em mente que mais de uma versão dos registros está sendo mesclada. A tabela a seguir mostra como um registro em dois conjuntos de valores é mesclado:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 |--------------------|--------------------|--------------------|
 |Original|James Wilson|James C. Wilson|
-|Atual|Jim Wilson|James C. Wilson|
+|Current|Jim Wilson|James C. Wilson|
 
- Chamar o método <xref:System.Data.DataSet.Merge%2A> na tabela anterior com `preserveChanges=false targetDataset.Merge(sourceDataset)` resulta no seguinte:
+ Chamar o <xref:System.Data.DataSet.Merge%2A> método na tabela anterior com os `preserveChanges=false targetDataset.Merge(sourceDataset)` resultados a seguir:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 |--------------------|--------------------|--------------------|
 |Original|James C. Wilson|James C. Wilson|
-|Atual|James C. Wilson|James C. Wilson|
+|Current|James C. Wilson|James C. Wilson|
 
- Chamar o método <xref:System.Data.DataSet.Merge%2A> com `preserveChanges = true targetDataset.Merge(sourceDataset, true)` resulta no seguinte:
+ Chamar o <xref:System.Data.DataSet.Merge%2A> método com os `preserveChanges = true targetDataset.Merge(sourceDataset, true)` resultados a seguir:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 |--------------------|--------------------|--------------------|
 |Original|James C. Wilson|James C. Wilson|
-|Atual|Jim Wilson|James C. Wilson|
+|Current|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
-> No cenário de `preserveChanges = true`, se o método <xref:System.Data.DataSet.RejectChanges%2A> for chamado em um registro no conjunto de dados de destino, ele será revertido para os dados originais do DataSet de *origem* . Isso significa que se você tentar atualizar a fonte de dados original com o DataSet de destino, talvez não seja possível localizar a linha original a ser atualizada. Você pode evitar uma violação de simultaneidade preenchendo outro conjunto de dados com os registros atualizados da fonte e, em seguida, executando uma mesclagem para evitar uma violação de simultaneidade. (Uma violação de simultaneidade ocorre quando outro usuário modifica um registro na fonte de dados depois que ele é preenchido.)
+> No `preserveChanges = true` cenário, se o <xref:System.Data.DataSet.RejectChanges%2A> método for chamado em um registro no conjunto de dados de destino, ele será revertido para os dados originais do DataSet de *origem* . Isso significa que se você tentar atualizar a fonte de dados original com o DataSet de destino, talvez não seja possível localizar a linha original a ser atualizada. Você pode evitar uma violação de simultaneidade preenchendo outro conjunto de dados com os registros atualizados da fonte e, em seguida, executando uma mesclagem para evitar uma violação de simultaneidade. (Uma violação de simultaneidade ocorre quando outro usuário modifica um registro na fonte de dados depois que ele é preenchido.)
 
 ## <a name="update-constraints"></a>Atualizar restrições
  Para fazer alterações em uma linha de dados existente, adicione ou atualize dados nas colunas individuais. Se o conjunto de registros contiver restrições (como chaves estrangeiras ou restrições não anuláveis), é possível que o registro esteja temporariamente em um estado de erro à medida que você atualizá-lo. Ou seja, ele pode estar em um estado de erro depois que você terminar de atualizar uma coluna, mas antes de chegar ao próximo.
@@ -109,9 +109,9 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
   Depois de concluir uma atualização, você pode reabilitar a verificação de restrição, que também habilita novamente os eventos de atualização e os gera.
 
 > [!NOTE]
-> No Windows Forms, a arquitetura de ligação de dados interna do DataGrid suspende a verificação de restrição até que o foco saia de uma linha e você não precise chamar explicitamente os métodos <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> ou <xref:System.Data.DataRow.CancelEdit%2A>.
+> No Windows Forms, a arquitetura de vinculação de dados criada no DataGrid suspende a verificação de restrição até que o foco saia de uma linha e você não precise chamar explicitamente os <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> métodos, ou <xref:System.Data.DataRow.CancelEdit%2A> .
 
- As restrições são automaticamente desabilitadas quando o método <xref:System.Data.DataSet.Merge%2A> é invocado em um conjunto de um DataSet. Quando a mesclagem for concluída, se houver alguma restrição no conjunto de um que não possa ser habilitada, uma <xref:System.Data.ConstraintException> será lançada. Nessa situação, a propriedade <xref:System.Data.DataSet.EnforceConstraints%2A> é definida como `false,` e todas as violações de restrição devem ser resolvidas antes de redefinir a propriedade <xref:System.Data.DataSet.EnforceConstraints%2A> como `true`.
+ As restrições são desabilitadas automaticamente quando o <xref:System.Data.DataSet.Merge%2A> método é invocado em um conjunto de uma. Quando a mesclagem for concluída, se houver alguma restrição no conjunto de um que não possa ser habilitado, um <xref:System.Data.ConstraintException> será gerado. Nessa situação, a <xref:System.Data.DataSet.EnforceConstraints%2A> propriedade é definida como `false,` e todas as violações de restrição devem ser resolvidas antes de redefinir a <xref:System.Data.DataSet.EnforceConstraints%2A> propriedade para `true` .
 
  Depois de concluir uma atualização, você pode reabilitar a verificação de restrição, que também habilita novamente os eventos de atualização e os gera.
 
@@ -121,32 +121,32 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
  Quando você atualiza um registro em um conjunto de registros, há a possibilidade de um erro. Por exemplo, você pode, inadvertidamente, gravar dados do tipo errado em uma coluna ou dados muito longos ou dados que tenham algum outro problema de integridade. Ou você pode ter verificações de validação específicas do aplicativo que podem gerar erros personalizados durante qualquer estágio de um evento de atualização. Para obter mais informações, consulte [Validate data in DataSets](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="maintaining-information-about-changes"></a>Mantendo informações sobre alterações
- As informações sobre as alterações em um conjunto de dados são mantidas de duas maneiras: sinalizando linhas que indicam que foram alteradas (<xref:System.Data.DataRow.RowState%2A>) e mantendo várias cópias de um registro (<xref:System.Data.DataRowVersion>). Usando essas informações, os processos podem determinar o que foi alterado no conjunto de dados e podem enviar as atualizações apropriadas para a fonte.
+ As informações sobre as alterações em um conjunto de dados são mantidas de duas maneiras: sinalizando linhas que indicam que foram alteradas ( <xref:System.Data.DataRow.RowState%2A> ) e mantendo várias cópias de um registro ( <xref:System.Data.DataRowVersion> ). Usando essas informações, os processos podem determinar o que foi alterado no conjunto de dados e podem enviar as atualizações apropriadas para a fonte.
 
 ### <a name="rowstate-property"></a>Propriedade RowState
- A propriedade <xref:System.Data.DataRow.RowState%2A> de um objeto <xref:System.Data.DataRow> é um valor que fornece informações sobre o status de uma linha de dados específica.
+ A <xref:System.Data.DataRow.RowState%2A> propriedade de um <xref:System.Data.DataRow> objeto é um valor que fornece informações sobre o status de uma linha de dados específica.
 
- A tabela a seguir detalha os possíveis valores da enumeração <xref:System.Data.DataRowState>:
+ A tabela a seguir detalha os possíveis valores da <xref:System.Data.DataRowState> enumeração:
 
 |Valor de DataRowState|Descrição|
 |------------------------|-----------------|
-|<xref:System.Data.DataRowState>|A linha foi adicionada como um item a um <xref:System.Data.DataRowCollection>. (Uma linha nesse estado não tem uma versão original correspondente, pois ela não existia quando o último método de <xref:System.Data.DataRow.AcceptChanges%2A> foi chamado).|
-|<xref:System.Data.DataRowState>|A linha foi excluída usando o <xref:System.Data.DataRow.Delete%2A> de um objeto <xref:System.Data.DataRow>.|
-|<xref:System.Data.DataRowState>|A linha foi criada, mas não faz parte de nenhum <xref:System.Data.DataRowCollection>. Um objeto <xref:System.Data.DataRow> está nesse estado imediatamente após ele ter sido criado, antes de ser adicionado a uma coleção e depois de ser removido de uma coleção.|
+|<xref:System.Data.DataRowState>|A linha foi adicionada como um item a um <xref:System.Data.DataRowCollection> . (Uma linha nesse estado não tem uma versão original correspondente, pois ela não existia quando o último <xref:System.Data.DataRow.AcceptChanges%2A> método foi chamado).|
+|<xref:System.Data.DataRowState>|A linha foi excluída usando o <xref:System.Data.DataRow.Delete%2A> de um <xref:System.Data.DataRow> objeto.|
+|<xref:System.Data.DataRowState>|A linha foi criada, mas não faz parte de nenhum <xref:System.Data.DataRowCollection>. Um <xref:System.Data.DataRow> objeto está nesse estado imediatamente após ele ter sido criado, antes de ser adicionado a uma coleção e depois de ser removido de uma coleção.|
 |<xref:System.Data.DataRowState>|Um valor de coluna na linha foi alterado de alguma forma.|
 |<xref:System.Data.DataRowState>|A linha não foi alterada desde a última chamada a <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>Enumeração DataRowVersion
- Os conjuntos de valores mantêm várias versões de registros. A enumeração de <xref:System.Data.DataRowVersion> de um objeto <xref:System.Data.DataRow> é um valor que pode ser usado para retornar uma versão específica de um objeto <xref:System.Data.DataRow>.
+ Os conjuntos de valores mantêm várias versões de registros. A <xref:System.Data.DataRowVersion> enumeração de um <xref:System.Data.DataRow> objeto é um valor que pode ser usado para retornar uma versão específica de um <xref:System.Data.DataRow> objeto.
 
- A tabela a seguir detalha os possíveis valores da enumeração <xref:System.Data.DataRowVersion>:
+ A tabela a seguir detalha os possíveis valores da <xref:System.Data.DataRowVersion> enumeração:
 
 |Valor de DataRowVersion|Descrição|
 |--------------------------|-----------------|
-|<xref:System.Data.DataRowVersion>|A versão atual de um registro contém todas as modificações que foram executadas no registro desde a última vez que <xref:System.Data.DataRow.AcceptChanges%2A> foi chamado. Se a linha tiver sido excluída, não haverá nenhuma versão atual.|
+|<xref:System.Data.DataRowVersion>|A versão atual de um registro contém todas as modificações que foram executadas no registro desde a última vez que o <xref:System.Data.DataRow.AcceptChanges%2A> foi chamado. Se a linha tiver sido excluída, não haverá nenhuma versão atual.|
 |<xref:System.Data.DataRowVersion>|O valor padrão de um registro, conforme definido pelo esquema ou pela fonte de dados do conjunto.|
 |<xref:System.Data.DataRowVersion>|A versão original de um registro é uma cópia do registro como foi a última vez que as alterações foram confirmadas no conjunto de registros. Em termos práticos, normalmente essa é a versão de um registro como lido de uma fonte de dados.|
-|<xref:System.Data.DataRowVersion>|A versão proposta de um registro que está disponível temporariamente enquanto você está no meio de uma atualização — ou seja, entre o tempo que você chamou o método <xref:System.Data.DataRow.BeginEdit%2A> e o método <xref:System.Data.DataRow.EndEdit%2A>. Normalmente, você acessa a versão proposta de um registro em um manipulador para um evento, como <xref:System.Data.DataTable.RowChanging>. Invocar o método <xref:System.Data.DataRow.CancelEdit%2A> reverte as alterações e exclui a versão proposta da linha de dados.|
+|<xref:System.Data.DataRowVersion>|A versão proposta de um registro que está disponível temporariamente enquanto você está no meio de uma atualização — ou seja, entre a hora em que você chamou o <xref:System.Data.DataRow.BeginEdit%2A> método e o <xref:System.Data.DataRow.EndEdit%2A> método. Normalmente, você acessa a versão proposta de um registro em um manipulador para um evento, como <xref:System.Data.DataTable.RowChanging> . Invocar o <xref:System.Data.DataRow.CancelEdit%2A> método reverte as alterações e exclui a versão proposta da linha de dados.|
 
  As versões original e atual são úteis quando as informações de atualização são transmitidas para uma fonte de dados. Normalmente, quando uma atualização é enviada para a fonte de dados, as novas informações do banco de dado estão na versão atual de um registro. As informações da versão original são usadas para localizar o registro a ser atualizado.
 
@@ -154,21 +154,21 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 
  A versão proposta é útil quando você precisa executar a validação antes de realmente confirmar as alterações no conjunto de os.
 
- Mesmo que os registros tenham mudado, nem sempre há versões originais ou atuais dessa linha. Quando você insere uma nova linha na tabela, não há nenhuma versão original, apenas uma versão atual. Da mesma forma, se você excluir uma linha chamando o método de `Delete` da tabela, haverá uma versão original, mas nenhuma versão atual.
+ Mesmo que os registros tenham mudado, nem sempre há versões originais ou atuais dessa linha. Quando você insere uma nova linha na tabela, não há nenhuma versão original, apenas uma versão atual. Da mesma forma, se você excluir uma linha chamando o método da tabela `Delete` , haverá uma versão original, mas nenhuma versão atual.
 
- Você pode testar para ver se existe uma versão específica de um registro consultando o método <xref:System.Data.DataRow.HasVersion%2A> de uma linha de dados. Você pode acessar qualquer uma das versões de um registro passando um valor de enumeração de <xref:System.Data.DataRowVersion> como um argumento opcional ao solicitar o valor de uma coluna.
+ Você pode testar para ver se existe uma versão específica de um registro consultando o método de uma linha de dados <xref:System.Data.DataRow.HasVersion%2A> . Você pode acessar qualquer uma das versões de um registro, passando um <xref:System.Data.DataRowVersion> valor de enumeração como um argumento opcional ao solicitar o valor de uma coluna.
 
 ## <a name="getting-changed-records"></a>Obtendo registros alterados
- É uma prática comum não atualizar todos os registros em um conjunto de um. Por exemplo, um usuário pode estar trabalhando com um controle de <xref:System.Windows.Forms.DataGridView> Windows Forms que exibe vários registros. No entanto, o usuário pode atualizar apenas alguns registros, excluir um e inserir um novo. DataSets e tabelas de dados fornecem um método (`GetChanges`) para retornar apenas as linhas que foram modificadas.
+ É uma prática comum não atualizar todos os registros em um conjunto de um. Por exemplo, um usuário pode estar trabalhando com um controle de Windows Forms <xref:System.Windows.Forms.DataGridView> que exibe vários registros. No entanto, o usuário pode atualizar apenas alguns registros, excluir um e inserir um novo. DataSets e tabelas de dados fornecem um método ( `GetChanges` ) para retornar apenas as linhas que foram modificadas.
 
- Você pode criar subconjuntos de registros alterados usando o método `GetChanges` da tabela de dados (<xref:System.Data.DataTable.GetChanges%2A>) ou do conjunto (<xref:System.Data.DataSet.GetChanges%2A>). Se você chamar o método para a tabela de dados, ele retornará uma cópia da tabela com apenas os registros alterados. Da mesma forma, se você chamar o método no conjunto de registros, obterá um novo conjunto de novos com os registros alterados.
+ Você pode criar subconjuntos de registros alterados usando o `GetChanges` método de uma tabela de dados ( <xref:System.Data.DataTable.GetChanges%2A> ) ou do conjunto ( <xref:System.Data.DataSet.GetChanges%2A> ). Se você chamar o método para a tabela de dados, ele retornará uma cópia da tabela com apenas os registros alterados. Da mesma forma, se você chamar o método no conjunto de registros, obterá um novo conjunto de novos com os registros alterados.
 
- `GetChanges`, por si só, retorna todos os registros alterados. Por outro lado, ao passar o <xref:System.Data.DataRowState> desejado como um parâmetro para o método `GetChanges`, você pode especificar qual subconjunto de registros alterados deseja: registros recém-adicionados, registros que são marcados para exclusão, registros desanexados ou registros modificados.
+ `GetChanges` por si só, retorna todos os registros alterados. Por outro lado, ao passar o desejado <xref:System.Data.DataRowState> como um parâmetro para o `GetChanges` método, você pode especificar qual subconjunto de registros alterados deseja: registros recém-adicionados, registros que são marcados para exclusão, registros desanexados ou registros modificados.
 
  Obter um subconjunto de registros alterados é útil quando você deseja enviar registros para outro componente para processamento. Em vez de enviar o conjunto de registros inteiro, você pode reduzir a sobrecarga de comunicação com o outro componente obtendo apenas os registros de que o componente precisa. Para obter mais informações, consulte [como: recuperar linhas alteradas](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).
 
 ## <a name="committing-changes-in-the-dataset"></a>Confirmando alterações no conjunto de
- Conforme são feitas alterações no conjunto de registros, a propriedade <xref:System.Data.DataRow.RowState%2A> de linhas alteradas é definida. As versões original e atual dos registros são estabelecidas, mantidas e disponibilizadas para você pela propriedade <xref:System.Data.DataRowView.RowVersion%2A>. Os metadados armazenados nas propriedades dessas linhas alteradas são necessários para enviar as atualizações corretas para a fonte de dados.
+ Conforme as alterações são feitas no conjunto de registros, a <xref:System.Data.DataRow.RowState%2A> propriedade das linhas alteradas é definida. As versões original e atual dos registros são estabelecidas, mantidas e disponibilizadas para você pela <xref:System.Data.DataRowView.RowVersion%2A> propriedade. Os metadados armazenados nas propriedades dessas linhas alteradas são necessários para enviar as atualizações corretas para a fonte de dados.
 
  Se as alterações refletirem o estado atual da fonte de dados, você não precisará mais manter essas informações. Normalmente, há duas ocasiões em que o conjunto de e sua fonte estão em sincronia:
 
@@ -176,12 +176,12 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 
 - Depois de enviar as alterações do conjunto de dados para a fonte, (mas não antes, porque você perderia as informações de alteração necessárias para enviar alterações ao banco de dado).
 
-  Você pode confirmar as alterações pendentes para o conjunto de acordo chamando o método <xref:System.Data.DataSet.AcceptChanges%2A>. Normalmente, <xref:System.Data.DataSet.AcceptChanges%2A> é chamado durante os seguintes horários em seu aplicativo.
+  Você pode confirmar as alterações pendentes para o conjunto de acordo chamando o <xref:System.Data.DataSet.AcceptChanges%2A> método. Normalmente, <xref:System.Data.DataSet.AcceptChanges%2A> é chamado durante os seguintes horários em seu aplicativo.
 
-- Depois de carregar o conjunto de um. Se você carregar um conjunto de um dataset chamando o método `Fill` do TableAdapter, o adaptador automaticamente confirmará as alterações para você. No entanto, se você carregar um conjunto de um DataSet mesclando outro conjunto de um para ele, precisará confirmar as alterações manualmente.
+- Depois de carregar o conjunto de um. Se você carregar um conjunto de um dataset chamando o método de um TableAdapter `Fill` , o adaptador automaticamente confirmará as alterações para você. No entanto, se você carregar um conjunto de um DataSet mesclando outro conjunto de um para ele, precisará confirmar as alterações manualmente.
 
   > [!NOTE]
-  > Você pode impedir que o adaptador confirme automaticamente as alterações ao chamar o método `Fill` definindo a propriedade `AcceptChangesDuringFill` do adaptador como `false`. Se estiver definido como `false`, a <xref:System.Data.DataRow.RowState%2A> de cada linha inserida durante o preenchimento será definida como <xref:System.Data.DataRowState>.
+  > Você pode impedir que o adaptador confirme automaticamente as alterações ao chamar o `Fill` método definindo a `AcceptChangesDuringFill` Propriedade do adaptador como `false` . Se for definido como `false` , o <xref:System.Data.DataRow.RowState%2A> de cada linha inserida durante o preenchimento será definido como <xref:System.Data.DataRowState> .
 
 - Depois de enviar alterações de conjunto de um para outro processo, como um serviço Web XML.
 
@@ -190,29 +190,29 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 
   Esse método realiza o seguinte:
 
-- Grava a versão <xref:System.Data.DataRowVersion> de um registro em sua versão <xref:System.Data.DataRowVersion> e substitui a versão original.
+- Grava a <xref:System.Data.DataRowVersion> versão de um registro em sua <xref:System.Data.DataRowVersion> versão e substitui a versão original.
 
-- Remove qualquer linha em que a propriedade <xref:System.Data.DataRow.RowState%2A> está definida como <xref:System.Data.DataRowState>.
+- Remove qualquer linha para a qual a <xref:System.Data.DataRow.RowState%2A> propriedade está definida <xref:System.Data.DataRowState> .
 
-- Define a propriedade <xref:System.Data.DataRow.RowState%2A> de um registro como <xref:System.Data.DataRowState>.
+- Define a <xref:System.Data.DataRow.RowState%2A> propriedade de um registro como <xref:System.Data.DataRowState> .
 
-  O método <xref:System.Data.DataSet.AcceptChanges%2A> está disponível em três níveis. Você pode chamá-lo em um objeto <xref:System.Data.DataRow> para confirmar as alterações apenas para essa linha. Você também pode chamá-lo em um objeto <xref:System.Data.DataTable> para confirmar todas as linhas de uma tabela. Por fim, você pode chamá-lo no objeto <xref:System.Data.DataSet> para confirmar todas as alterações pendentes em todos os registros de todas as tabelas do conjunto de recursos.
+  O <xref:System.Data.DataSet.AcceptChanges%2A> método está disponível em três níveis. Você pode chamá-lo em um <xref:System.Data.DataRow> objeto para confirmar as alterações apenas dessa linha. Você também pode chamá-lo em um <xref:System.Data.DataTable> objeto para confirmar todas as linhas de uma tabela. Por fim, você pode chamá-lo no <xref:System.Data.DataSet> objeto para confirmar todas as alterações pendentes em todos os registros de todas as tabelas do conjunto de recursos.
 
   A tabela a seguir descreve quais alterações são confirmadas com base em qual objeto o método é chamado.
 
-|Método|Resultado|
+|Método|Result|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|As alterações são confirmadas somente na linha específica.|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|As alterações são confirmadas em todas as linhas na tabela específica.|
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|As alterações são confirmadas em todas as linhas em todas as tabelas do conjunto de registros.|
 
 > [!NOTE]
-> Se você carregar um conjunto de um dataset chamando o método `Fill` do TableAdapter, não precisará aceitar as alterações explicitamente. Por padrão, o método `Fill` chama o método `AcceptChanges` depois de concluir o preenchimento da tabela de dados.
+> Se você carregar um conjunto de um dataset chamando o método de um TableAdapter `Fill` , não precisará aceitar as alterações explicitamente. Por padrão, o `Fill` método chama o `AcceptChanges` método depois de concluir o preenchimento da tabela de dados.
 
- Um método relacionado, `RejectChanges`, desfaz o efeito das alterações copiando a versão do <xref:System.Data.DataRowVersion> de volta para a versão <xref:System.Data.DataRowVersion> de registros. Ele também define a <xref:System.Data.DataRow.RowState%2A> de cada registro de volta para <xref:System.Data.DataRowState>.
+ Um método relacionado, `RejectChanges` , desfaz o efeito das alterações copiando a <xref:System.Data.DataRowVersion> versão de volta para a <xref:System.Data.DataRowVersion> versão dos registros. Ele também define o <xref:System.Data.DataRow.RowState%2A> de cada registro de volta para <xref:System.Data.DataRowState> .
 
 ## <a name="data-validation"></a>Validação de dados
- Para verificar se os dados em seu aplicativo atendem aos requisitos dos processos para os quais ele foi passado, muitas vezes você precisa adicionar a validação. Isso pode envolver a verificação de que a entrada de um usuário em um formulário está correta, Validando os dados que são enviados ao seu aplicativo por outro aplicativo ou até mesmo verificando se as informações calculadas em seu componente se enquadram nas restrições da fonte de dados e os requisitos do aplicativo.
+ Para verificar se os dados em seu aplicativo atendem aos requisitos dos processos para os quais ele foi passado, muitas vezes você precisa adicionar a validação. Isso pode envolver a verificação de que a entrada de um usuário em um formulário está correta, Validando os dados que são enviados ao seu aplicativo por outro aplicativo ou até mesmo verificando se as informações calculadas em seu componente se enquadram nas restrições da fonte de dados e dos requisitos do aplicativo.
 
  Você pode validar os dados de várias maneiras:
 
@@ -223,9 +223,9 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 - No back-end de dados, enviando dados para a fonte de dados — por exemplo, o banco de dado — e permitindo que ele aceite ou rejeite os dados. Se você estiver trabalhando com um banco de dados que tenha recursos sofisticados para validação de dado e fornecimento de informações de erro, isso pode ser uma abordagem prática porque você pode validar os dados independentemente de onde eles vêm. No entanto, essa abordagem pode não acomodar requisitos de validação específicos do aplicativo. Além disso, ter a fonte de dados validar dados pode resultar em várias viagens de ida e volta para a fonte de dados, dependendo de como seu aplicativo facilita a resolução de erros de validação gerados pelo back-end.
 
   > [!IMPORTANT]
-  > Ao usar comandos de dados com uma propriedade <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> definida como <xref:System.Data.CommandType>, verifique cuidadosamente as informações enviadas de um cliente antes de passá-las para o banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível. Para obter mais informações, consulte [Visão geral de explorações de script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
+  > Ao usar comandos de dados com uma <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriedade definida como <xref:System.Data.CommandType> , verifique cuidadosamente as informações enviadas de um cliente antes de passá-las para o banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se as informações são válidas. É uma prática recomendada sempre usar consultas parametrizadas ou procedimentos armazenados quando possível. Para obter mais informações, consulte [Visão geral de explorações de script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
-  Depois que as alterações tiverem sido feitas em um conjunto de dados, você poderá transmitir as alterações para uma fonte. Normalmente, você faz isso chamando o método `Update` de um TableAdapter (ou adaptador de dados). O método percorre cada registro em uma tabela de dados, determina qual tipo de atualização é necessário (Update, INSERT ou Delete), se houver, e executa o comando apropriado.
+  Depois que as alterações tiverem sido feitas em um conjunto de dados, você poderá transmitir as alterações para uma fonte. Normalmente, você faz isso chamando o `Update` método de um TableAdapter (ou adaptador de dados). O método percorre cada registro em uma tabela de dados, determina qual tipo de atualização é necessário (Update, INSERT ou Delete), se houver, e executa o comando apropriado.
 
 ## <a name="transmitting-updates-to-the-data-source"></a>Transmitindo atualizações para a fonte de dados
  Como uma ilustração de como as atualizações são feitas, suponha que seu aplicativo use um conjunto de dados que contenha uma única tabela. O aplicativo busca duas linhas do banco de dados. Após a recuperação, a tabela de dados na memória tem esta aparência:
@@ -236,7 +236,7 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 (Unchanged)    c400         Nancy Buchanan    Pending
 ```
 
- Seu aplicativo altera o status de Nancy Buchanan para "preferencial". Como resultado dessa alteração, o valor da propriedade <xref:System.Data.DataRow.RowState%2A> para essa linha muda de <xref:System.Data.DataRowState> para <xref:System.Data.DataRowState>. O valor da propriedade <xref:System.Data.DataRow.RowState%2A> para a primeira linha permanece <xref:System.Data.DataRowState>. A tabela de dados agora tem esta aparência:
+ Seu aplicativo altera o status de Nancy Buchanan para "preferencial". Como resultado dessa alteração, o valor da <xref:System.Data.DataRow.RowState%2A> propriedade para essa linha muda de <xref:System.Data.DataRowState> para <xref:System.Data.DataRowState> . O valor da <xref:System.Data.DataRow.RowState%2A> propriedade para a primeira linha permanece <xref:System.Data.DataRowState> . A tabela de dados agora tem esta aparência:
 
 ```
 (RowState)     CustomerID   Name             Status
@@ -244,30 +244,30 @@ O DataSet é uma cópia de dados na memória. Se você modificar esses dados, é
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
- Agora, seu aplicativo chama o método `Update` para transmitir o conjunto de dados para o Database. O método inspeciona cada linha por vez. Para a primeira linha, o método transmite nenhuma instrução SQL para o banco de dados porque essa linha não foi alterada desde que foi obtida originalmente do banco de dados.
+ Agora, seu aplicativo chama o `Update` método para transmitir o conjunto de dados para o Database. O método inspeciona cada linha por vez. Para a primeira linha, o método transmite nenhuma instrução SQL para o banco de dados porque essa linha não foi alterada desde que foi obtida originalmente do banco de dados.
 
- No entanto, para a segunda linha, o método `Update` invoca automaticamente o comando de dados correto e o transmite para o banco de dado. A sintaxe específica da instrução SQL depende do dialeto do SQL com suporte do armazenamento de dados subjacente. Mas as características gerais a seguir da instrução SQL transmitida são notáveis:
+ No entanto, para a segunda linha, o `Update` método invoca automaticamente o comando de dados correto e o transmite para o banco de dado. A sintaxe específica da instrução SQL depende do dialeto do SQL com suporte do armazenamento de dados subjacente. Mas as características gerais a seguir da instrução SQL transmitida são notáveis:
 
-- A instrução SQL transmitida é uma instrução UPDATE. O adaptador sabe usar uma instrução UPDATE porque o valor da propriedade <xref:System.Data.DataRow.RowState%2A> é <xref:System.Data.DataRowState>.
+- A instrução SQL transmitida é uma instrução UPDATE. O adaptador sabe usar uma instrução UPDATE porque o valor da <xref:System.Data.DataRow.RowState%2A> propriedade é <xref:System.Data.DataRowState> .
 
-- A instrução SQL transmitida inclui uma cláusula WHERE que indica que o destino da instrução UPDATE é a linha na qual `CustomerID = 'c400'`. Essa parte da instrução SELECT distingue a linha de destino de todas as outras porque a `CustomerID` é a chave primária da tabela de destino. As informações da cláusula WHERE são derivadas da versão original do registro (`DataRowVersion.Original`), caso os valores necessários para identificar a linha tenham sido alterados.
+- A instrução SQL transmitida inclui uma cláusula WHERE que indica que o destino da instrução UPDATE é a linha em que `CustomerID = 'c400'` . Essa parte da instrução SELECT distingue a linha de destino de todas as outras porque a `CustomerID` é a chave primária da tabela de destino. As informações da cláusula WHERE são derivadas da versão original do registro ( `DataRowVersion.Original` ), caso os valores necessários para identificar a linha tenham sido alterados.
 
 - A instrução SQL transmitida inclui a cláusula SET, para definir os novos valores das colunas modificadas.
 
     > [!NOTE]
-    > Se a propriedade `UpdateCommand` do TableAdapter tiver sido definida como o nome de um procedimento armazenado, o adaptador não construirá uma instrução SQL. Em vez disso, ele invoca o procedimento armazenado com os parâmetros apropriados passados.
+    > Se a propriedade do TableAdapter `UpdateCommand` tiver sido definida como o nome de um procedimento armazenado, o adaptador não construirá uma instrução SQL. Em vez disso, ele invoca o procedimento armazenado com os parâmetros apropriados passados.
 
 ## <a name="passing-parameters"></a>Passando parâmetros
- Normalmente, você usa parâmetros para passar os valores para os registros que serão atualizados no banco de dados.  Quando o método `Update` do TableAdapter executa uma instrução UPDATE, ele precisa preencher os valores de parâmetro. Ele obtém esses valores da coleção de `Parameters` para o comando de dados apropriado — nesse caso, o objeto `UpdateCommand` no TableAdapter.
+ Normalmente, você usa parâmetros para passar os valores para os registros que serão atualizados no banco de dados.  Quando o método do TableAdapter `Update` executa uma instrução UPDATE, ele precisa preencher os valores de parâmetro. Ele obtém esses valores da `Parameters` coleção para o comando de dados apropriado — nesse caso, o `UpdateCommand` objeto no TableAdapter.
 
- Se você usou as ferramentas do Visual Studio para gerar um adaptador de dados, o objeto `UpdateCommand` contém uma coleção de parâmetros que correspondem a cada espaço reservado de parâmetro na instrução.
+ Se você usou as ferramentas do Visual Studio para gerar um adaptador de dados, o `UpdateCommand` objeto contém uma coleção de parâmetros que correspondem a cada espaço reservado de parâmetro na instrução.
 
- A propriedade <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> de cada parâmetro aponta para uma coluna na tabela de dados. Por exemplo, a propriedade `SourceColumn` para os parâmetros `au_id` e `Original_au_id` é definida como qualquer coluna na tabela de dados que contenha a ID do autor. Quando o método de `Update` do adaptador é executado, ele lê a coluna ID do autor do registro que está sendo atualizado e preenche os valores na instrução.
+ A <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> propriedade de cada parâmetro aponta para uma coluna na tabela de dados. Por exemplo, a `SourceColumn` propriedade para os `au_id` `Original_au_id` parâmetros e é definida como qualquer coluna na tabela de dados que contenha a ID do autor. Quando o método do adaptador `Update` é executado, ele lê a coluna ID do autor do registro que está sendo atualizado e preenche os valores na instrução.
 
  Em uma instrução UPDATE, você precisa especificar os novos valores (aqueles que serão gravados no registro), bem como os valores antigos (para que o registro possa ser localizado no banco de dados). Há, portanto, dois parâmetros para cada valor: um para a cláusula SET e outro para a cláusula WHERE. Ambos os parâmetros lêem dados do registro que está sendo atualizado, mas eles obtêm versões diferentes do valor da coluna com base na [Propriedade SqlParameter. SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)do parâmetro. O parâmetro da cláusula SET Obtém a versão atual e o parâmetro da cláusula WHERE Obtém a versão original.
 
 > [!NOTE]
-> Você também pode definir valores na coleção `Parameters` você mesmo no código, que normalmente faria em um manipulador de eventos para o evento <xref:System.Data.DataTable.RowChanging> do adaptador de dados.
+> Você também pode definir valores na `Parameters` coleção por conta própria no código, que normalmente faria em um manipulador de eventos para o evento do adaptador de dados <xref:System.Data.DataTable.RowChanging> .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) [preparando seu aplicativo para receber](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) [controles de ligação de dados para dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md) [Validando dados](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

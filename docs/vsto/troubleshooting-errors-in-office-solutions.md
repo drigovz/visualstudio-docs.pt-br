@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234686"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Solucionar erros em soluções do Office
@@ -40,7 +40,7 @@ ms.locfileid: "87234686"
 
 - [Depurar projetos](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Criar, atualizar e abrir projetos
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Criar, atualizar e abrir projetos
  Você pode encontrar os erros a seguir ao criar ou abrir projetos do Office.
 
 ### <a name="the-project-cannot-be-created"></a>O projeto não pode ser criado
@@ -84,7 +84,7 @@ ms.locfileid: "87234686"
 
  Depois de concluir a atualização do projeto, você poderá desinstalar o tempo de execução das ferramentas do Visual Studio 2005 para Office Second Edition do computador de desenvolvimento se ele não estiver sendo usado por outras soluções do Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Usar os designers
+## <a name="use-the-designers"></a><a name="designers"></a> Usar os designers
  Você pode encontrar os erros a seguir ao trabalhar com o documento, a pasta de trabalho ou o designer de planilha em projetos de nível de documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>Falha ao carregar o designer corretamente
@@ -105,7 +105,7 @@ ms.locfileid: "87234686"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>O comando Inserir Clip-Art não faz nada no designer do Visual Studio
  Quando o Excel ou o Word estiver aberto no designer do Visual Studio, clicar no botão **Clip-Art** na guia **ilustrações** da faixa de palavras não abre o painel de tarefas **Clip-Art** . Para adicionar clip-art, você deve abrir a cópia da pasta de trabalho ou do documento que está na pasta principal do projeto (não a cópia que está no diretório *\Bin* ) fora do Visual Studio, adicionar o clip-art e, em seguida, salvar a pasta de trabalho ou o documento.
 
-## <a name="write-code"></a><a name="code"></a>Escrever código
+## <a name="write-code"></a><a name="code"></a> Escrever código
  Você pode encontrar os erros a seguir ao escrever código em projetos do Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alguns eventos de objetos do Office não estão acessíveis ao usar o C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234686"
 
  Para obter mais informações sobre interfaces de evento nos PIAs do Office, consulte [visão geral de classes e interfaces nos assemblies de interoperabilidade primária do Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Não é possível fazer referência a classes do PIA do Office em projetos direcionados ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Não é possível fazer referência a classes do PIA do Office em projetos direcionados ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  Em projetos que se destinam ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , o código que faz referência a uma classe que é definida em um pia do Office não será compilado por padrão. As classes nos PIAs usam a classe *objectname*da Convenção de nomenclatura, como <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Por exemplo, o código a seguir de um projeto de suplemento do VSTO do Word não será compilado.
 
 ```vb
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Embora você tenha importado o namespace do Word ou do Excel e tenha acesso a todas as classes dentro dele, você deve qualificar totalmente todos os tipos com o Word ou o Excel para remover a ambiguidade do namespace.
 
-## <a name="build-projects"></a><a name="building"></a>Compilar projetos
+## <a name="build-projects"></a><a name="building"></a> Compilar projetos
  Você pode encontrar os erros a seguir ao criar projetos do Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Não é possível criar um projeto de nível de documento baseado em um documento com permissões restritas
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Erros do compilador ocorrem depois que um controle NamedRange é excluído
  Se você excluir um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle de uma planilha que não seja a planilha ativa no designer, o código gerado automaticamente não poderá ser removido do seu projeto e poderão ocorrer erros de compilador. Para verificar se o código foi removido, você deve sempre selecionar a planilha que contém o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para torná-la a planilha ativa antes de excluir o controle. Se o código gerado automaticamente não for excluído quando você excluir o controle, você poderá fazer com que o designer exclua o código ativando a planilha e fazendo uma alteração para que a planilha fique marcada como modificada. Quando você recria o projeto, o código é removido.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Depurar projetos
+## <a name="debug-projects"></a><a name="debugging"></a> Depurar projetos
  Você pode encontrar os erros a seguir ao depurar projetos do Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>A solicitação de desinstalação aparece quando você publica e instala uma solução no computador de desenvolvimento

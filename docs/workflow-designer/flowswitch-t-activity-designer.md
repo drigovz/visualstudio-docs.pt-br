@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d6637682bd6ba649f27c1a53f3b1448629f03736
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88711567"
 ---
 # <a name="flowswitcht-activity-designer"></a>Designer de atividade FlowSwitch\<T>
@@ -46,7 +46,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.F
 |<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|Falso|Especifica um mapeamento exclusivo de resultados possíveis obtidos de avaliar <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> a um conjunto de objetos de <xref:System.Activities.Statements.FlowNode> .|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|Verdadeiro|Especificar o mapeamento quando a avaliação de <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> não coincide com um dos valores contidos no objeto de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> .|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 - [Fluxograma](../workflow-designer/flowchart-activity-designer.md)

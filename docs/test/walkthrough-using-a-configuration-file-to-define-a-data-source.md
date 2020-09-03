@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75776149"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
@@ -269,5 +269,5 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 ## <a name="see-also"></a>Confira também
 
-- [Unidade teste seu código](../test/unit-test-your-code.md)
+- [Teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

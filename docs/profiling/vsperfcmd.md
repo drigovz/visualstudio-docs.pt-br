@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330012"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
 
 |Opção|Descrição|
 |------------|-----------------|
-|**Admin: segurança**, \<**ALLOW&#124;DENY**> , *direita*[ *direita*],\<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|
+|**Admin: segurança**, \<**ALLOW&#124;DENY**> , *direita*[ *direita*], \<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|
 |**Admin:Security, List**|Lista o estado atual dos serviços de criação de perfil e lista as permissões de usuário.|
 |**Administrador:**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|
 |**Administrador:** \<*Service*&#124;*Driver*> **Inicialização automática**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|
@@ -90,7 +90,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  A opção **VSPerfCmd /Driver** está obsoleta. Use a opção **VsPerfCmd Admin** para essa funcionalidade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [VSInstr](../profiling/vsinstr.md)
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

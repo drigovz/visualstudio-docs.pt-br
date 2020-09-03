@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 46ed1b1f94cd2ef23ff0704912cb2a2194ba7dab
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634182"
 ---
 # <a name="fileclassifier-task"></a>Tarefa FileClassifier
@@ -35,11 +35,11 @@ O <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifica um conjunto de 
 |`CLREmbeddedResource`|Não utilizado.|
 |`CLRResourceFiles`|Não utilizado.|
 |`CLRSatelliteEmbeddedResource`|Não utilizado.|
-|`Culture`|Parâmetro opcional **string.**<br /><br /> Especifica a cultura para o build. Esse valor pode ser **nulo** se o build não for localizável. Se for **nulo**, o valor padrão será o valor em letras minúsculas que **CultureInfo.InvariantCulture** retorna.|
+|`Culture`|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica a cultura para o build. Esse valor pode ser **nulo** se o build não for localizável. Se for **nulo**, o valor padrão será o valor em letras minúsculas que **CultureInfo.InvariantCulture** retorna.|
 |`MainEmbeddedFiles`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Especifica os recursos não localizáveis que são inseridos no assembly principal.|
 |`OutputType`|Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de arquivo no qual inserir os arquivos de origem especificados. Os valores válidos são **exe**, **winexe** ou **library**.|
 |`SatelliteEmbeddedFiles`|Parâmetro de saída opcional **ITaskItem[]**.<br /><br /> Especifica os arquivos localizáveis que são inseridos no assembly satélite para a cultura especificada pelo parâmetro **Culture**.|
-|`SourceFiles`|Parâmetro **ITaskItem necessário[].**<br /><br /> Especifica a lista de arquivos a classificar.|
+|`SourceFiles`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica a lista de arquivos a classificar.|
 
 ## <a name="remarks"></a>Comentários
 
@@ -68,7 +68,7 @@ O exemplo a seguir classifica um único arquivo de origem como um recurso e, em 
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Internals de extensão paralela para o Quadro .NET | Microsoft Docs
+title: Elementos internos de extensão paralela para o .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,30 +11,30 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6a3583e94a0bfff4474db03aa9d083add921f3da
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738264"
 ---
-# <a name="parallel-extension-internals-for-the-net-framework"></a>Internos de extensão paralelas para o Quadro .NET
-Esta seção descreve os tipos internos, métodos e campos de classes que ajudam você a implementar um depurador personalizado para as extensões paralelas ao .NET Framework.
+# <a name="parallel-extension-internals-for-the-net-framework"></a>Elementos internos de extensão paralela para o .NET Framework
+Esta seção descreve os tipos internos, os métodos e os campos de classes que ajudam a implementar um depurador personalizado para as extensões paralelas para o .NET Framework.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Classe de tarefas](../../extensibility/debugger/task-class-internal-members.md) Descreve os dados internos <xref:System.Threading.Tasks.Task?displayProperty=fullName> membros da classe.
+ [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md) Descreve os membros de dados internos da <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe.
 
- [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md) Descreve os dados internos <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> membros da classe.
+ [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md) Descreve os membros de dados internos da <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe.
 
- [Classe Propriedades Contingentes](../../extensibility/debugger/contingentproperties-class-internal-members.md) Descreve os dados internos `System.Threading.Tasks.ContingentProperties` membros da classe.
+ [Classe contingentproperties](../../extensibility/debugger/contingentproperties-class-internal-members.md) Descreve os membros de dados internos da `System.Threading.Tasks.ContingentProperties` classe.
 
- [Estrutura do AsyncTaskMethodBuilder](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md) Descreve os membros internos <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> da estrutura.
+ [Estrutura AsyncTaskMethodBuilder](../../extensibility/debugger/asynctaskmethodbuilder-structure-internal-members.md) Descreve os membros internos da <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> estrutura.
 
- [AsyncTaskMethodBuilder\<TResult> estrutura](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md) Descreve os <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> membros internos da estrutura.
+ [A \<TResult> estrutura AsyncTaskMethodBuilder](../../extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members.md) descreve os membros internos da <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> estrutura.
 
- [Estrutura do AsyncVoidMethodBuilder](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md) Descreve os membros internos <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> da estrutura.
+ [Estrutura AsyncVoidMethodBuilder](../../extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members.md) Descreve os membros internos da <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> estrutura.
 
 ## <a name="see-also"></a>Confira também
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
-- [Extensibilidade do depurador visual studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+- [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
 - [Programação paralela](/dotnet/standard/parallel-programming/index)

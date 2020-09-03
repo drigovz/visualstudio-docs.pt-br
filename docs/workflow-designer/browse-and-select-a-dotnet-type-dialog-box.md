@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597107"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
@@ -39,7 +39,7 @@ Esta caixa de diálogo é empregada em um número de cenários do usuário, incl
 
 1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
 
-2. Siga um destes procedimentos:
+2. Realize um dos seguintes procedimentos:
 
     - Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique duas vezes no tipo para selecioná-lo.
 
@@ -65,14 +65,14 @@ A lista de tipos na caixa **nome do tipo** fica mais curta à medida que você d
 
 Por exemplo:
 
-1. A **operação** de digitação corresponde a <xref:System.OperationCanceledException>, mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.
+1. A **operação** de digitação corresponde <xref:System.OperationCanceledException> , mas não <xref:System.InvalidOperationException> . Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.
 
-2. Digitar **Generic** corresponde a <xref:System.GenericUriParser> mas não a tipos no namespace <xref:System.Collections.Generic>. Para procurar tipos no namespace <xref:System.Collections.Generic>, digite o nome totalmente qualificado do namespace.
+2. Digitando correspondências **genéricas** <xref:System.GenericUriParser> , mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar tipos no <xref:System.Collections.Generic> namespace, digite o nome totalmente qualificado do namespace.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo
 
 Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usando os designers de atividade](control-flow-activity-designers.md)

@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597263"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 
-Diferentemente de uma linguagem de finalidade geral C# como o ou o UML, uma DSL (linguagem específica de domínio) foi projetada para expressar instruções em um determinado espaço de problema ou domínio.
+Diferentemente de uma linguagem de finalidade geral, como C# ou UML, uma DSL (linguagem específica de domínio) foi projetada para expressar instruções em um determinado espaço de problema ou domínio.
 
 As DSLs conhecidas incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas muito pior para descrever ideias que estão fora de seu próprio escopo. Os setores individuais também têm suas próprias DSLs. Por exemplo, no setor de telecomunicações, as linguagens de descrição da chamada são amplamente usadas para especificar a sequência de Estados em uma chamada telefônica e, no setor de viagens aéreas, uma DSL padrão é usada para descrever as reservas de voo.
 
@@ -68,13 +68,13 @@ Uma linguagem gráfica específica do domínio deve incluir os seguintes recurso
 
 - Geração de artefatos
 
-- {1&gt;Serialização&lt;1}
+- Serialização
 
-- Integração com Visual Studio
+- Integração com o Visual Studio
 
 ### <a name="notation"></a>Notation
 
-Uma linguagem específica de domínio deve ter um conjunto razoavelmente pequeno de elementos que podem ser facilmente definidos e estendidos para representar construções específicas de domínio. Uma notação consiste em formas, que representam os elementos e conectores, que representam as relações entre os elementos, em uma superfície de diagrama gráfico. No [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], as formas podem ser estendidas e refinadas para representar os elementos de sua linguagem específica de domínio.
+Uma linguagem específica de domínio deve ter um conjunto razoavelmente pequeno de elementos que podem ser facilmente definidos e estendidos para representar construções específicas de domínio. Uma notação consiste em formas, que representam os elementos e conectores, que representam as relações entre os elementos, em uma superfície de diagrama gráfico. No [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , as formas podem ser estendidas e refinadas para representar os elementos de sua linguagem específica de domínio.
 
 ### <a name="domain-model"></a>Modelo de domínio
 
@@ -84,11 +84,11 @@ Uma linguagem específica de domínio deve combinar o conjunto de elementos e as
 
 Uma das principais finalidades de uma linguagem específica de domínio é gerar um artefato, por exemplo, código-fonte, um arquivo XML ou alguns outros dados utilizáveis. Normalmente, uma alteração no modelo significa uma alteração no artefato. Você pode usar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para gerar artefatos e gerá-los novamente quando alterar o modelo.
 
-### <a name="serialization"></a>{1&gt;Serialização&lt;1}
+### <a name="serialization"></a>Serialização
 
-Uma linguagem específica de domínio deve ser persistida em alguma forma que possa ser editada, salva, fechada e recarregada. o [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa um formato XML que permite que você defina e personalize como sua linguagem específica de domínio é serializada ou persistente.
+Uma linguagem específica de domínio deve ser persistida em alguma forma que possa ser editada, salva, fechada e recarregada. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa um formato XML que permite definir e personalizar como sua linguagem específica de domínio é serializada ou persistente.
 
-### <a name="integration-with-visual-studio"></a>Integração com Visual Studio
+### <a name="integration-with-visual-studio"></a>Integração com o Visual Studio
 
 Como o [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] é hospedado no Visual Studio, ele estende muitas janelas e controles do Visual Studio. Ele também permite que você personalize o comportamento de comandos de menu, de itens da caixa de ferramentas e de outros elementos da interface do usuário.
 

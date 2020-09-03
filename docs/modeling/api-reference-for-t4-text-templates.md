@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597208"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referência de API para modelos de texto T4
 
 A API de modelagem de texto permite invocar e personalizar a transformação de [modelos de texto](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="namespaces"></a>{1&gt;Namespaces&lt;1}
+## <a name="namespaces"></a>Namespaces
 
 |Namespace|Finalidade|
 |-|-|

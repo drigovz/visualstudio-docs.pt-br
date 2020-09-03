@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652140"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
@@ -68,7 +68,7 @@ As Ferramentas DSL (Ferramentas de Linguagem Específica de Domínio), que são 
 ## <a name="validation-in-dsl-tools"></a>Validação nas Ferramentas DSL
  As DSL fornecem um nível de validação para verificar se o modelo de domínio atende aos requisitos básicos para geração de código. Normalmente, ao criar sua própria linguagem específica de domínio, você adicionaria sua própria validação para expressar suas regras de lógica de negócios. Para obter mais informações sobre a validação personalizada, confira [Validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
 
- É recomendável que você valide a linguagem específica de domínio com frequência durante sua criação. Se sua linguagem específica de domínio tiver erros de validação, você não poderá gerar o código-fonte. O processo de geração de código-fonte usando modelos é executado clicando em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Sempre que você modificar a definição de linguagem, clique em **Transformar Todos os Modelos**. Para obter mais informações, [consulte Como: Criar uma solução de idioma específica de domínio.](../modeling/how-to-create-a-domain-specific-language-solution.md)
+ É recomendável que você valide a linguagem específica de domínio com frequência durante sua criação. Se sua linguagem específica de domínio tiver erros de validação, você não poderá gerar o código-fonte. O processo de geração de código-fonte usando modelos é executado clicando em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Sempre que você modificar a definição de linguagem, clique em **Transformar Todos os Modelos**. Para obter mais informações, consulte [como: criar uma solução de linguagem específica de domínio](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personalização das Ferramentas DSL
  Você pode fornecer código adicional para refinar o comportamento do modelo e definir restrições em seu idioma. Se necessário, você pode fazer alterações significativas modificando os modelos de texto.
@@ -79,4 +79,4 @@ As Ferramentas DSL (Ferramentas de Linguagem Específica de Domínio), que são 
  Quando você compila e executa a solução de Ferramentas DSL no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], uma segunda instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mostra a aparência da linguagem específica de domínio ao usuário da linguagem. Depois de verificar se tudo está funcionando corretamente, você poderá distribuir o arquivo `.vsix` que encontrará na pasta de build do projeto DslPackage. Esse arquivo pode ser usado para instalar a DSL como uma extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em outros computadores.  Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Consulte Também
- [O glossário de](../extensibility/the-experimental-instance.md) [ferramentas de linguagem específicas de domínio de](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) instância experimental
+ [A instância Experimental](../extensibility/the-experimental-instance.md) [ferramentas de linguagem específica de domínio Glossário](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

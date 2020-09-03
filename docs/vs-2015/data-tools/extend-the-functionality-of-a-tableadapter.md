@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 19367f812a87d6aa585e123100f1d08144c57ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672368"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estender a funcionalidade de um TableAdapter
@@ -35,15 +35,15 @@ Você pode estender a funcionalidade de um TableAdapter adicionando código ao a
  As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou [parcial (tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).
 
 ## <a name="locate-tableadapters-in-code"></a>Localizar TableAdapters no código
- Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter geradas não são classes aninhadas de <xref:System.Data.DataSet>. Os TableAdapters estão localizados em um namespace com base no nome do DataSet associado do TableAdapter. Por exemplo, se seu aplicativo contiver um conjunto de um DataSet chamado `HRDataSet`, os TableAdapters estarão localizados no namespace `HRDataSetTableAdapters`. (A convenção de nomenclatura segue este padrão: *DatasetName* + `TableAdapters`).
+ Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter geradas não são classes aninhadas de <xref:System.Data.DataSet> . Os TableAdapters estão localizados em um namespace com base no nome do DataSet associado do TableAdapter. Por exemplo, se seu aplicativo contiver um conjunto de um DataSet chamado `HRDataSet` , os TableAdapters estarão localizados no `HRDataSetTableAdapters` namespace. (A Convenção de nomenclatura segue este padrão: *DataSetName*  +  `TableAdapters` ).
 
- O exemplo a seguir pressupõe um TableAdapter chamado `CustomersTableAdapter`is em um projeto com `NorthwindDataSet`.
+ O exemplo a seguir pressupõe que um TableAdapter nomeado `CustomersTableAdapter` está em um projeto com `NorthwindDataSet` .
 
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Para criar uma classe parcial para um TableAdapter
 
 1. Adicione uma nova classe ao seu projeto acessando o menu **projeto** e selecionando**Adicionar classe**.
 
-2. Nomeie a classe `CustomersTableAdapterExtended`.
+2. Nome da classe `CustomersTableAdapterExtended`.
 
 3. Selecione **Adicionar**.
 
@@ -52,5 +52,5 @@ Você pode estender a funcionalidade de um TableAdapter adicionando código ao a
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

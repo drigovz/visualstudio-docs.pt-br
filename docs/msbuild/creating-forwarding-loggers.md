@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634299"
 ---
 # <a name="create-forwarding-loggers"></a>Criar agentes de encaminhamento
@@ -36,7 +36,7 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
 
 ## <a name="specify-a-forwarding-logger"></a>Especificar um agente de encaminhamento
 
- Depois que o logger de encaminhamento tiver sido compilado em uma montagem, você deve dizer ao MSBuild para usá-lo durante as compilações. Para isso, use `-FileLogger` `-FileLoggerParameters`o `-DistributedFileLogger` , e switches juntamente com *MSBuild.exe*. O `-FileLogger` switch informa ao *MSBuild.exe* que o logger está diretamente conectado. A opção `-DistributedFileLogger` significa que há um arquivo de log por nó. Para definir parâmetros no agente de encaminhamento, use a opção `-FileLoggerParameters`. Para obter mais informações sobre esses e outros switches *MSBuild.exe,* consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
+ Depois que o agente de log de encaminhamento tiver sido compilado em um assembly, você deverá dizer ao MSBuild para usá-lo durante as compilações. Para fazer isso, use as `-FileLogger` `-FileLoggerParameters` Opções, e `-DistributedFileLogger` junto com *MSBuild.exe*. A `-FileLogger` opção informa *MSBuild.exe* que o agente de log está diretamente anexado. A opção `-DistributedFileLogger` significa que há um arquivo de log por nó. Para definir parâmetros no agente de encaminhamento, use a opção `-FileLoggerParameters`. Para obter mais informações sobre essas e outras opções de *MSBuild.exe* , consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Agentes com reconhecimento de multiprocessador
 
@@ -45,5 +45,5 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
 ## <a name="see-also"></a>Confira também
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Construir madeireiros](../msbuild/build-loggers.md)
-- [Login em um ambiente de vários processadores](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Agentes de build](../msbuild/build-loggers.md)
+- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)

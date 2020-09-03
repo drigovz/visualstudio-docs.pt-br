@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546231"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Como: adicionar controles de gráfico a planilhas
@@ -35,7 +35,7 @@ ms.locfileid: "85546231"
 
   Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.Chart> controles, consulte [controle de gráfico](../vsto/chart-control.md).
 
-## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a>Adicionar controles de gráfico em tempo de design
+## <a name="add-chart-controls-at-design-time"></a><a name="designtime"></a> Adicionar controles de gráfico em tempo de design
  Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.Chart> controle à sua planilha da mesma maneira que adicionaria um gráfico de dentro do aplicativo.
 
 > [!NOTE]
@@ -55,7 +55,7 @@ ms.locfileid: "85546231"
 
 6. Na caixa de diálogo **selecionar fonte de dados** , clique em **OK**.
 
-## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Adicionar controles de gráfico em tempo de execução em um projeto de nível de documento
+## <a name="add-chart-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Adicionar controles de gráfico em tempo de execução em um projeto de nível de documento
  Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.Chart> controle dinamicamente em tempo de execução. Os gráficos criados dinamicamente não são persistidos no documento como controles de host quando o documento é fechado. Para obter mais informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-chart-control-to-a-worksheet-programmatically"></a>Para adicionar um controle de gráfico a uma planilha programaticamente
@@ -65,7 +65,7 @@ ms.locfileid: "85546231"
      [!code-csharp[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#1)]
 
-## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Adicionar controles de gráfico em tempo de execução em um projeto de suplemento do VSTO
+## <a name="add-chart-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Adicionar controles de gráfico em tempo de execução em um projeto de suplemento do VSTO
  Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.Chart> controle programaticamente a qualquer planilha aberta em um projeto de suplemento do VSTO. Para obter mais informações, consulte [estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
  Os controles de gráfico criados dinamicamente não são persistidos na planilha como controles de host quando a planilha é fechada. Para obter mais informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -82,7 +82,7 @@ ms.locfileid: "85546231"
 
 - Dados a serem colocados em gráfico, armazenados no intervalo de a5 a D8 na planilha.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Controle de gráfico](../vsto/chart-control.md)

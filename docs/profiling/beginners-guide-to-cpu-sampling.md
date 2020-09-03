@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330599"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
@@ -124,7 +124,7 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
 
      Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para saber mais sobre como usar a exibição de comparação, veja [Como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Performance Explorer](../profiling/performance-explorer.md)
 - [Guia de Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Visões gerais](../profiling/overviews-performance-tools.md)

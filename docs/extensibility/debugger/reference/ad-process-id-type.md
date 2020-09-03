@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a88fbe97cede8d343f1a96bc1917a69b8905b02b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738194"
 ---
 # <a name="ad_process_id_type"></a>AD_PROCESS_ID_TYPE
-Especifica como interpretar um ID de processo na estrutura [AD_PROCESS_ID.](../../../extensibility/debugger/reference/ad-process-id.md)
+Especifica como interpretar uma ID de processo na estrutura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_AD_PROCESS_ID {
@@ -44,20 +44,20 @@ public enum enum_AD_PROCESS_ID {
 
 ## <a name="fields"></a>Campos
 `AD_PROCESS_ID_SYSTEM`\
-ID de processo é um identificador de sistema. Use `ProcessId.dwProcessId` o campo da estrutura [AD_PROCESS_ID.](../../../extensibility/debugger/reference/ad-process-id.md)
+ID do processo é um identificador do sistema. Use o `ProcessId.dwProcessId` campo da estrutura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) .
 
 `AD_PROCESS_ID_GUID`\
-O ID do processo é um GUID. Use `ProcessId.guidProcessId` o campo `AD_PROCESS_ID` da estrutura.
+A ID do processo é um GUID. Use o `ProcessId.guidProcessId` campo da `AD_PROCESS_ID` estrutura.
 
 ## <a name="remarks"></a>Comentários
-Utilizado para `ProcessIdType` o membro da [estrutura AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) identificar o tipo de ID do processo que está contido na estrutura. Determina como interpretar `ProcessId` a união na estrutura.
+Usado para o `ProcessIdType` membro da estrutura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) para identificar o tipo de ID de processo que está contido na estrutura. Determina como interpretar a `ProcessId` União na estrutura.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

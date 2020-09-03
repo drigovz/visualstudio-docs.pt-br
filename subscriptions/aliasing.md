@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
 ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234634"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Entrar em assinaturas do Visual Studio pode falhar ao usar aliases
@@ -40,7 +40,7 @@ Uma incompatibilidade de UPN pode ser encontrada quando uma empresa tem uma Acti
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Como corrigir uma incompatibilidade de UPN
 
-1. Acessar o portal de gerenciamento da administração do Visual Studio[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Acessar o portal de gerenciamento da administração do Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. Localize o Assinante que tem o problema de incompatibilidade de UPN. (O recurso de [filtro](search-license.md) pode facilitar a localização de um assinante.)
 
@@ -56,7 +56,7 @@ As contas de assinatura pessoal também poderão enfrentar problemas se o endere
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Como detectar se sua conta de assinatura pessoal é afetada por um problema de alias
 
-1. Entrar no[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
+1. Entrar no [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Verifique se o endereço de email de entrada listado no canto superior direito da página corresponde ao endereço usado para entrar.  Se o endereço de email conectado não for o mesmo que o endereço de email usado para acessar o site, haverá um conflito entre sua conta e o alias.
 
@@ -82,7 +82,7 @@ Como administrador, há duas opções para garantir que seus assinantes tenham u
 - A segunda opção (menos segura) é permitir que seus assinantes entrem usando um endereço de email diferente do seu endereço de email do diretório.
 
 Ambas as opções são configuradas no portal de administração ao concluir as seguintes etapas:  
-1. Entrar[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Entrar [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. Se você estiver alterando um único usuário, selecione esse usuário na tabela e clique com o botão direito do mouse para editar. Isso abrirá um painel em que você pode modificar o endereço de email de entrada. Faça as atualizações necessárias no campo endereço de email de entrada. Clique em salvar e as alterações entrarão em vigor.  
 

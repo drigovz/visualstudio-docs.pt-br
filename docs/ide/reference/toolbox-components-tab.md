@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597302"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
 Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes .NET incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou componentes de terceiros a essa guia.
 
-Para exibir essa guia, abra um designer do Windows Forms. Selecione **Exibir** > **caixa de ferramentas**. Em **Caixa de ferramentas**, selecione a guia **Componentes**.
+Para exibir essa guia, abra um designer do Windows Forms. Selecione **Exibir**  >  **caixa de ferramentas**. Em **Caixa de ferramentas**, selecione a guia **Componentes**.
 
 ## <a name="components"></a>Componentes
 
@@ -32,7 +32,7 @@ Para exibir essa guia, abra um designer do Windows Forms. Selecione **Exibir** >
 
 Cria uma instância do componente <xref:System.ComponentModel.BackgroundWorker> que pode executar uma operação em um thread separado e dedicado. Para obter mais informações, confira [Componente BackgroundWorker](/dotnet/framework/winforms/controls/backgroundworker-component).
 
-**Directoryentry**
+**DirectoryEntry**
 
 Cria uma instância do componente <xref:System.DirectoryServices.DirectoryEntry>, que encapsula um nó ou um objeto na hierarquia do Active Directory e pode ser usada para interagir com provedores de serviços do Active Directory.
 
@@ -56,7 +56,7 @@ Cria uma instância do componente <xref:System.IO.FileSystemWatcher>, que pode s
 
 Cria uma instância do componente <xref:System.Windows.Forms.HelpProvider> que fornece ajuda pop-up ou online para controles. Para obter mais informações, confira [Componente HelpProvider](/dotnet/framework/winforms/controls/helpprovider-component-windows-forms).
 
-**Imagelist**
+**ImageList**
 
 Cria uma instância do componente <xref:System.Windows.Forms.ImageList> que fornece métodos para gerenciar uma coleção de objetos <xref:System.Drawing.Image>. Para obter mais informações, confira [Componente ImageList](/dotnet/framework/winforms/controls/imagelist-component-windows-forms).
 
@@ -64,7 +64,7 @@ Cria uma instância do componente <xref:System.Windows.Forms.ImageList> que forn
 
 Cria uma instância do componente <xref:System.Messaging.MessageQueue>, que pode ser usada para interagir com filas de mensagens, incluindo a leitura e gravação de mensagens em filas, o processamento de transações e a realização de tarefas de administração de fila.
 
-**Performancecounter**
+**PerformanceCounter**
 
 Cria uma instância do componente <xref:System.Diagnostics.PerformanceCounter>, que pode ser usada para interagir com contadores de desempenho do Windows, incluindo a criação de novas categorias e instâncias, a leitura de valores de contadores e a execução de cálculos nos dados do contador.
 
@@ -89,6 +89,6 @@ Cria uma instância do componente <xref:System.Windows.Forms.Timer>, que pode se
 
 ## <a name="see-also"></a>Confira também
 
-- [Controles a serem usados no Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
-- [Escolher itens da Caixa de Ferramentas, componentes do WPF](choose-toolbox-items-wpf-components.md)
-- [Ferramentas](../../ide/reference/toolbox.md)
+- [Controles a serem usados em Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
+- [Escolher itens da Caixa de Ferramentas, Componentes do WPF](choose-toolbox-items-wpf-components.md)
+- [Caixa de Ferramentas](../../ide/reference/toolbox.md)

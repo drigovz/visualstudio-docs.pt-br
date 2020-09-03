@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634312"
 ---
 # <a name="createproperty-task"></a>Tarefa CreateProperty
@@ -36,7 +36,7 @@ A tabela a seguir descreve os parâmetros da tarefa `CreateProperty`.
 | Parâmetro | Descrição |
 |------------------| - |
 | `Value` | Parâmetro de saída `String` opcional.<br /><br /> Especifica o valor a ser copiado para a nova propriedade. |
-| `ValueSetByTask` | Parâmetro de saída `String` opcional.<br /><br /> Contém o mesmo valor que o parâmetro `Value`. Use este parâmetro somente quando quiser evitar que a propriedade de saída seja definida pelo MSBuild quando ele pular o alvo de fechamento porque as saídas estão atualizadas. |
+| `ValueSetByTask` | Parâmetro de saída `String` opcional.<br /><br /> Contém o mesmo valor que o parâmetro `Value`. Use esse parâmetro somente quando desejar evitar que a propriedade de saída seja definida pelo MSBuild quando ignorar o destino delimitador porque as saídas estão atualizadas. |
 
 ## <a name="remarks"></a>Comentários
 

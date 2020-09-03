@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652308"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
@@ -21,7 +21,7 @@ ms.locfileid: "72652308"
 
 Em modelos de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a diretiva de `output` é usada pare definir a extensão do nome de arquivo e a codificação do arquivo transformado.
 
- Por exemplo, se seu projeto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inclui um arquivo de modelo chamado **MyTemplate.tt** que contém a seguinte diretiva:
+ Por exemplo, se seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto inclui um arquivo de modelo chamado **MyTemplate.tt** que contém a seguinte diretiva:
 
  `<#@output extension=".cs"#>`
 

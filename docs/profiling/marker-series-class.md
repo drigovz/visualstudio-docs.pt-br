@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f7df74624ea602b5c996d5523a45826137119f5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330711"
 ---
 # <a name="marker_series-class"></a>Classe marker_series
@@ -32,14 +32,14 @@ class marker_series;
 
 ### <a name="public-constructors"></a>Construtores públicos
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
-|[Construtor marker_series:: marker_series](../profiling/marker-series-marker-series-constructor.md)|Inicia uma nova instância da classe `marker_series`.|
+|[Construtor marker_series:: marker_series](../profiling/marker-series-marker-series-constructor.md)|Inicializa uma nova instância da classe `marker_series`.|
 |[destruidor de marker_series:: ~ marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Destrói o objeto marker_series e libera todos os recursos alocados.|
 
 ### <a name="public-methods"></a>Métodos públicos
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |[método marker_series:: is_enabled](../profiling/marker-series-is-enabled-method.md)|Determina se alguma sessão habilitou o provedor.|
 |[método marker_series:: write_alert](../profiling/marker-series-write-alert-method.md)|Grava um alerta para o arquivo de rastreamento da Visualização Simultânea.|
@@ -54,5 +54,5 @@ class marker_series;
 
  **Namespace:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [namespace de diagnóstico](../profiling/diagnostic-namespace.md)

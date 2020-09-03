@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9e94bedf95b58d9876d37eb496ede0c5ec9a8531
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985448"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
@@ -33,7 +33,7 @@ ms.locfileid: "72985448"
 > [!NOTE]
 > Este tutorial apresenta o código do suplemento do VSTO em pequenas seções para facilitar a discussão da lógica por trás do código.
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Criação da interface do usuário (IU) do painel de tarefas personalizado.
 
@@ -48,26 +48,26 @@ ms.locfileid: "72985448"
 - Sincronizando o botão de alternância da faixa de opção com o painel de tarefas personalizado.
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou Microsoft Outlook 2010.
 
 ## <a name="create-the-project"></a>Criar o projeto
- Os painéis de tarefas personalizados são implementados em suplementos do VSTO. Comece criando um projeto de suplemento do VSTO para Outlook.
+ Os painéis de tarefas personalizados são implementados nos suplementos do VSTO. Comece criando um projeto de suplemento do VSTO para Outlook.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
 1. Crie um projeto de **suplemento do Outlook** com o nome **OutlookMailItemTaskPane**. Use o modelo de projeto de **suplemento do Outlook** . Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] abre o arquivo de código *ThisAddIn.cs* ou *ThisAddIn. vb* e adiciona o projeto **OutlookMailItemTaskPane** ao **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo de código *ThisAddIn.cs* ou *ThisAddIn. vb* e adiciona o projeto **OutlookMailItemTaskPane** ao **Gerenciador de soluções**.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Criar a interface do usuário do painel de tarefas personalizado
- Não há nenhum designer visual para os painéis de tarefas personalizados, mas você pode criar um controle de usuário com a interface que desejar. O painel de tarefas personalizado neste suplemento do VSTO tem uma interface do usuário simples que contém um controle de <xref:System.Windows.Forms.TextBox>. Mais adiante neste tutorial, você adicionará o controle de usuário ao painel de tarefas personalizado.
+ Não há nenhum designer visual para os painéis de tarefas personalizados, mas você pode criar um controle de usuário com a interface que desejar. O painel de tarefas personalizado neste suplemento do VSTO tem uma interface do usuário simples que contém um <xref:System.Windows.Forms.TextBox> controle. Mais adiante neste tutorial, você adicionará o controle de usuário ao painel de tarefas personalizado.
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Para criar a interface do usuário do painel de tarefas personalizado
 
@@ -86,9 +86,9 @@ ms.locfileid: "72985448"
 
 ### <a name="to-create-a-custom-ribbon-ui"></a>Para criar uma interface do usuário personalizada
 
-1. No menu **Projeto**, clique em **Adicionar Novo Item**.
+1. No menu **Projeto** , clique em **Adicionar Novo Item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)** .
+2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
 3. Altere o nome da nova faixa de forma para **ManageTaskPaneRibbon**e clique em **Adicionar**.
 
@@ -122,7 +122,7 @@ ms.locfileid: "72985448"
 
 - Quando o usuário clica no botão de alternância na faixa de opção. Nesse caso, o suplemento do VSTO deve ocultar ou exibir o painel de tarefas correspondente.
 
-  Para habilitar o suplemento do VSTO para manter o controle de qual painel de tarefas personalizado está associado a cada mensagem de email aberta, crie uma classe personalizada que encapsula pares de <xref:Microsoft.Office.Interop.Outlook.Inspector> e <xref:Microsoft.Office.Tools.CustomTaskPane> objetos. Essa classe cria um novo objeto de painel de tarefas personalizado para cada mensagem de email e exclui o painel de tarefas personalizado quando a mensagem de email correspondente é fechada.
+  Para habilitar o suplemento do VSTO para manter o controle de qual painel de tarefas personalizado está associado a cada mensagem de email aberta, crie uma classe personalizada que encapsula pares <xref:Microsoft.Office.Interop.Outlook.Inspector> de <xref:Microsoft.Office.Tools.CustomTaskPane> objetos e. Essa classe cria um novo objeto de painel de tarefas personalizado para cada mensagem de email e exclui o painel de tarefas personalizado quando a mensagem de email correspondente é fechada.
 
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Para criar uma classe para gerenciar janelas de inspetores e painéis de tarefas personalizados
 
@@ -133,22 +133,22 @@ ms.locfileid: "72985448"
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
 
-3. Adicione o código a seguir ao arquivo *ThisAddIn.cs* ou *ThisAddIn. vb* , fora da classe `ThisAddIn` (para Visual C#, adicione este código dentro do namespace`OutlookMailItemTaskPane`). A classe `InspectorWrapper` gerencia um par de objetos <xref:Microsoft.Office.Interop.Outlook.Inspector> e <xref:Microsoft.Office.Tools.CustomTaskPane>. Você concluirá a definição dessa classe nas etapas a seguir.
+3. Adicione o código a seguir ao arquivo *ThisAddIn.cs* ou *ThisAddIn. vb* , fora da `ThisAddIn` classe (para Visual C#, adicione este código dentro do `OutlookMailItemTaskPane` namespace). A `InspectorWrapper` classe gerencia um par de <xref:Microsoft.Office.Interop.Outlook.Inspector> <xref:Microsoft.Office.Tools.CustomTaskPane> objetos e. Você concluirá a definição dessa classe nas etapas a seguir.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
 
-4. Adicione o Construtor a seguir após o código que você adicionou na etapa anterior. Esse construtor cria e inicializa um novo painel de tarefas personalizado que é associado ao objeto de <xref:Microsoft.Office.Interop.Outlook.Inspector> que é passado. No C#, o Construtor também anexa manipuladores de eventos ao evento<xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close>do objeto<xref:Microsoft.Office.Interop.Outlook.Inspector>e ao evento<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>do objeto<xref:Microsoft.Office.Tools.CustomTaskPane>.
+4. Adicione o Construtor a seguir após o código que você adicionou na etapa anterior. Esse construtor cria e inicializa um novo painel de tarefas personalizado que está associado ao <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que é passado. No C#, o Construtor também anexa manipuladores de eventos ao <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> evento do <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto e ao <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> evento do <xref:Microsoft.Office.Tools.CustomTaskPane> objeto.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
      [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
 
-5. Adicione o seguinte método após o código que você adicionou na etapa anterior. Esse método é um manipulador de eventos para o evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> do objeto <xref:Microsoft.Office.Tools.CustomTaskPane> que está contido na classe `InspectorWrapper`. Esse código atualiza o estado do botão de alternância sempre que o usuário abre ou fecha o painel de tarefas personalizado.
+5. Adicione o seguinte método após o código que você adicionou na etapa anterior. Esse método é um manipulador de eventos para o <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> evento do <xref:Microsoft.Office.Tools.CustomTaskPane> objeto que está contido na `InspectorWrapper` classe. Esse código atualiza o estado do botão de alternância sempre que o usuário abre ou fecha o painel de tarefas personalizado.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
      [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
 
-6. Adicione o seguinte método após o código que você adicionou na etapa anterior. Esse método é um manipulador de eventos para o evento <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> do objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> que contém a mensagem de email atual. O manipulador de eventos libera recursos quando a mensagem de email é fechada. O manipulador de eventos também remove o painel de tarefas personalizado atual da coleção de `CustomTaskPanes`. Isso ajuda a evitar várias instâncias do painel de tarefas personalizado quando a próxima mensagem de email é aberta.
+6. Adicione o seguinte método após o código que você adicionou na etapa anterior. Esse método é um manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> evento do <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto que contém a mensagem de email atual. O manipulador de eventos libera recursos quando a mensagem de email é fechada. O manipulador de eventos também remove o painel de tarefas personalizado atual da `CustomTaskPanes` coleção. Isso ajuda a evitar várias instâncias do painel de tarefas personalizado quando a próxima mensagem de email é aberta.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
      [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
@@ -159,37 +159,37 @@ ms.locfileid: "72985448"
      [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>Inicializar e limpar os recursos usados pelo suplemento
- Adicione código à classe `ThisAddIn` para inicializar o suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo suplemento do VSTO quando ele for descarregado. Você inicializa o suplemento do VSTO Configurando um manipulador de eventos para o evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e passando todas as mensagens de email existentes para esse manipulador de eventos. Quando o suplemento do VSTO for descarregado, desanexe o manipulador de eventos e limpe os objetos usados pelo suplemento do VSTO.
+ Adicione código à `ThisAddIn` classe para inicializar o suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo suplemento do VSTO quando ele for descarregado. Você inicializa o suplemento do VSTO Configurando um manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e passando todas as mensagens de email existentes para esse manipulador de eventos. Quando o suplemento do VSTO for descarregado, desanexe o manipulador de eventos e limpe os objetos usados pelo suplemento do VSTO.
 
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Para inicializar e limpar os recursos usados pelo suplemento do VSTO
 
-1. No arquivo *ThisAddIn.cs* ou *ThisAddIn. vb* , localize a definição da classe `ThisAddIn`.
+1. No arquivo *ThisAddIn.cs* ou *ThisAddIn. vb* , localize a definição da `ThisAddIn` classe.
 
-2. Adicione as seguintes declarações à classe `ThisAddIn`:
+2. Adicione as seguintes declarações à `ThisAddIn` classe:
 
-   - O campo `inspectorWrappersValue` contém todos os objetos <xref:Microsoft.Office.Interop.Outlook.Inspector> e `InspectorWrapper` que são gerenciados pelo suplemento do VSTO.
+   - O `inspectorWrappersValue` campo contém todos os <xref:Microsoft.Office.Interop.Outlook.Inspector> `InspectorWrapper` objetos e que são gerenciados pelo suplemento do VSTO.
 
-   - O campo `inspectors` mantém uma referência à coleção de janelas de Inspetor na instância atual do Outlook. Essa referência impede que o coletor de lixo libere a memória que contém o manipulador de eventos para o evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>, que você irá declarar na próxima etapa.
+   - O `inspectors` campo mantém uma referência à coleção de janelas de Inspetor na instância atual do Outlook. Essa referência impede que o coletor de lixo libere a memória que contém o manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento, que você irá declarar na próxima etapa.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
 
-3. Substitua o método `ThisAddIn_Startup` pelo código a seguir. Esse código anexa um manipulador de eventos ao evento <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e passa cada objeto <xref:Microsoft.Office.Interop.Outlook.Inspector> existente para o manipulador de eventos. Se o usuário carregar o suplemento do VSTO depois que o Outlook já estiver em execução, o suplemento do VSTO usará essas informações para criar painéis de tarefas personalizados para todas as mensagens de email que já estiverem abertas.
+3. Substitua o método `ThisAddIn_Startup` pelo seguinte código. Esse código anexa um manipulador de eventos ao <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento e passa todos <xref:Microsoft.Office.Interop.Outlook.Inspector> os objetos existentes para o manipulador de eventos. Se o usuário carregar o suplemento do VSTO depois que o Outlook já estiver em execução, o suplemento do VSTO usará essas informações para criar painéis de tarefas personalizados para todas as mensagens de email que já estiverem abertas.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
 
-4. Substitua o método `ThisAddIn_ShutDown` pelo código a seguir. Esse código desanexa o manipulador de eventos <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> e limpa os objetos usados pelo suplemento do VSTO.
+4. Substitua o método `ThisAddIn_ShutDown` pelo seguinte código. Esse código desanexa o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos e limpa os objetos usados pelo suplemento do VSTO.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
 
-5. Adicione o seguinte manipulador de eventos <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> à classe `ThisAddIn`. Se um novo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiver uma mensagem de email, o método criará uma instância de um novo objeto de `InspectorWrapper` para gerenciar a relação entre a mensagem de email e o painel de tarefas correspondente.
+5. Adicione o seguinte <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> manipulador de eventos à `ThisAddIn` classe. Se um novo <xref:Microsoft.Office.Interop.Outlook.Inspector> contiver uma mensagem de email, o método criará uma instância de um novo `InspectorWrapper` objeto para gerenciar a relação entre a mensagem de email e o painel de tarefas correspondente.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
 
-6. Adicione a propriedade a seguir à classe `ThisAddIn`. Essa propriedade expõe o campo de `inspectorWrappersValue` particular para codificar fora da classe `ThisAddIn`.
+6. Adicione a propriedade a seguir à `ThisAddIn` classe. Essa propriedade expõe o `inspectorWrappersValue` campo particular ao código fora da `ThisAddIn` classe.
 
     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]
@@ -202,20 +202,20 @@ ms.locfileid: "72985448"
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **OutlookMailItemTaskPane** e clique em **Compilar**. Verifique se o projeto é compilado sem erros.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Sincronizar o botão de alternância da faixa de opção com o painel de tarefas personalizado
- O botão de alternância parecerá ser pressionado quando o painel de tarefas estiver visível e parecerá não ser pressionado quando o painel de tarefas estiver oculto. Para sincronizar o estado do botão com o painel de tarefas personalizado, modifique o manipulador de eventos <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> do botão de alternância.
+ O botão de alternância parecerá ser pressionado quando o painel de tarefas estiver visível e parecerá não ser pressionado quando o painel de tarefas estiver oculto. Para sincronizar o estado do botão com o painel de tarefas personalizado, modifique o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> manipulador de eventos do botão de alternância.
 
 ### <a name="to-synchronize-the-custom-task-pane-with-the-toggle-button"></a>Para sincronizar o painel de tarefas personalizado com o botão de alternância
 
 1. No designer de faixa de opção, clique duas vezes no botão de alternância **Mostrar painel de tarefas** .
 
-     O Visual Studio gera automaticamente um manipulador de eventos chamado `toggleButton1_Click`, que manipula o evento <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> do botão de alternância. O Visual Studio também abre o arquivo *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon. vb* no editor de códigos.
+     O Visual Studio gera automaticamente um manipulador de eventos chamado `toggleButton1_Click` , que manipula o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> evento do botão de alternância. O Visual Studio também abre o arquivo *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon. vb* no editor de códigos.
 
 2. Adicione as instruções a seguir à parte superior do arquivo *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon. vb* .
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
 
-3. Substitua o manipulador de eventos `toggleButton1_Click` pelo código a seguir. Quando o usuário clica no botão de alternância, esse método oculta ou exibe o painel de tarefas personalizado que está associado à janela do Inspetor atual.
+3. Substitua o `toggleButton1_Click` manipulador de eventos pelo código a seguir. Quando o usuário clica no botão de alternância, esse método oculta ou exibe o painel de tarefas personalizado que está associado à janela do Inspetor atual.
 
      [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
      [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
@@ -266,7 +266,7 @@ ms.locfileid: "72985448"
 
 - Crie um botão da faixa de medida no Excel que possa ser usado para ocultar ou exibir um painel de tarefas personalizado. Para obter mais informações, consulte [Walkthrough: sincronizar um painel de tarefas personalizado com um botão Ribbon](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4bf604e747158c651f284c6463c2c2f65ae3c47a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651812"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
@@ -58,7 +58,7 @@ Criar um modelo de Web é diferente de criar outros tipos de modelos. Como model
    </TemplateData>
    ```
 
-7. Selecione os arquivos em seu modelo (isso inclui o modelo .vstemplate), clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)** . Os arquivos são compactados em um arquivo .zip.
+7. Selecione os arquivos em seu modelo (isso inclui o modelo .vstemplate), clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)**. Os arquivos são compactados em um arquivo .zip.
 
 8. Coloque o arquivo de modelo .zip no diretório de modelo de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por padrão, esse diretório é \Meus Documentos\Visual Studio *Versão*\Templates\Meus Modelos Exportados\\.
 
@@ -86,5 +86,5 @@ Criar um modelo de Web é diferente de criar outros tipos de modelos. Como model
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  Criando [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [de modelos de item e projeto](../ide/creating-project-and-item-templates.md)

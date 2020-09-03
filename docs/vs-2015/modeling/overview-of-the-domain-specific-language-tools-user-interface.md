@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bffb1f7fe6449f078c21c14b0a070cbd23db539
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652133"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
@@ -25,11 +25,11 @@ ms.locfileid: "72652133"
 
 Quando você abrir uma solução de Ferramentas DSL (Ferramentas de Linguagem Específica de Domínio) no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pela primeira vez, a interface do usuário será semelhante à figura a seguir.
 
- ![dsl designer](../modeling/media/dsl-designer.png "dsl_designer")
+ ![Designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")
 
  A tabela a seguir explica como as partes da interface do usuário são usadas.
 
-|**Elemento**|**Definição**|
+|**Element**|**Definição**|
 |-----------------|--------------------|
 |Diagrama|O diagrama exibe o modelo de domínio.<br /><br /> O diagrama tem dois lados. Um dos lados define os tipos dos elementos nos modelos. O outro lado define como os modelos aparecerão na tela.|
 |Caixa de Ferramentas|Arraste as ferramentas da caixa de ferramentas para adicionar classes de domínio e tipos de forma ao diagrama. Para adicionar relacionamentos, conectores e mapas de formas, clique na ferramenta, em seguida, clique no nó de origem no diagrama e, em seguida, no nó de destino.|
@@ -39,7 +39,7 @@ Quando você abrir uma solução de Ferramentas DSL (Ferramentas de Linguagem Es
 ## <a name="the-domain-model-diagram"></a>O diagrama de modelo de domínio
  O diagrama de modelo de domínio é dividido em duas partes. Um dos lados do diagrama mostra os elementos e os relacionamentos no modelo. O outro lado mostra como o modelo deve ser exibido e inclui as formas que serão usadas para exibir os elementos e as propriedades do diagrama de modelo. A imagem a seguir mostra os elementos do diagrama.
 
- ![dsl designer com raia](../modeling/media/dsl-desinger.png "dsl_desinger")
+ ![Designer de DSL com raia](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.
 
@@ -51,4 +51,4 @@ Quando você abrir uma solução de Ferramentas DSL (Ferramentas de Linguagem Es
 |Mapas de formas|Um mapa de formas aparece como uma linha no diagrama de modelo de domínio, uma vinculando uma forma à classe de domínio que ele exibe ou um conector com o relacionamento de domínio que ele exibe.|
 
 ## <a name="see-also"></a>Consulte Também
- [Visão geral das ferramentas de idioma específicas de domínio Ferramentas](../modeling/overview-of-domain-specific-language-tools.md) de idioma específicas de [domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Personalizando e estendendo um idioma específico de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [Visão geral de Ferramentas de Linguagem Específica de Domínio](../modeling/overview-of-domain-specific-language-tools.md) [ferramentas de linguagem específica de domínio Glossário](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)

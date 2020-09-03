@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672336"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
@@ -24,7 +24,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
  Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários às **referências** do seu projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários às **referências** do seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto.
 
 ## <a name="using-the-assembly-directive"></a>Usando a diretiva de assembly
  A sintaxe da diretiva é a seguinte:
@@ -45,7 +45,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclua as referências necessárias na seção de **referências** do seu projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclua as referências necessárias na seção de **referências** do seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Assemblies padrão
  Os seguintes assemblies são carregados automaticamente, de modo que não seja necessário gravar diretivas de assembly para eles:
@@ -66,7 +66,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
 
 - O assembly que contém seu DSL.
 
-## <a name="msbuild"></a>Usando propriedades de projeto no MSBuild e no Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Usando propriedades de projeto no MSBuild e no Visual Studio
  Macros do Visual Studio como $(SolutionDir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
 
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:
@@ -92,5 +92,5 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Diretiva de inclusão T4](../modeling/t4-include-directive.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6b750830e8263d0016f52a71ad4eac8c6950eda8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651858"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Como implementar uma interface (Designer de Classe)
@@ -50,5 +50,5 @@ No Designer de Classe, você pode implementar uma interface no diagrama de class
 
      Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface. Neste ponto, a interface é implementada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: criar tipos usando Designer de classe](../ide/how-to-create-types-by-using-class-designer.md) [como exibir tipos existentes (Designer de classe)](../ide/how-to-view-existing-types-class-designer.md) como criar [classes de refatoração](../ide/refactoring-classes-and-types-class-designer.md) de [tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md) e tipos de herança (Designer de classe).

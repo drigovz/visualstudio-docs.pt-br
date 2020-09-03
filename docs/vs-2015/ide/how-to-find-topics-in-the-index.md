@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651932"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Como localizar tópicos no Índice
@@ -43,5 +43,5 @@ O índice contém uma lista de palavras-chave que são associadas a tópicos no 
 
      Se a palavra-chave especificada for associada a apenas um tópico, ele será exibido. Caso contrário, uma lista de todos os tópicos associados àquela palavra-chave aparece.
 
-## <a name="see-also"></a>Veja também
- [Index Search Tips](../ide/index-search-tips.md) (Dicas de pesquisa do índice)
+## <a name="see-also"></a>Consulte Também
+ [Dicas de pesquisa do índice](../ide/index-search-tips.md)
