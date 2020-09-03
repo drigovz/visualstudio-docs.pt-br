@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1800fa9b07c71c885fcba03f233a147efad14ef5
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814493"
 ---
 # <a name="expected--"></a>Esperado '-'
@@ -28,6 +28,6 @@ Você tentou criar um literal de expressão regular, mas não incluiu uma das ba
   
 - Insira uma barra de terminação para marcar o final da expressão regular.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

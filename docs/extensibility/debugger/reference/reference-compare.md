@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713725"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 Especifica o tipo de comparação para referências.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_REFERENCE_COMPARE { 
@@ -46,23 +46,23 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Campos
  `REF_COMPARE_EQUAL`\
- Especifica uma comparação igual a igual.
+ Especifica uma comparação de igual para.
 
  `REF_COMPARE_LESS_THAN`\
- Especifica uma comparação menor que a.
+ Especifica uma comparação de menor que.
 
  `REF_COMPARE_GREATER_THAN`\
- Especifica uma comparação maior do que a.
+ Especifica uma comparação maior que.
 
 ## <a name="remarks"></a>Comentários
- Passou como um argumento para o método [Compare.](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ Passado como um argumento para o método [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

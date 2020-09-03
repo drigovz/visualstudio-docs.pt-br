@@ -14,16 +14,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2ddb00e2cf70055c34335d8f2123004eb031a05
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713840"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
-Enumera os valores válidos do programa para destruir bandeiras.
+Enumera os valores válidos dos sinalizadores de destruição do programa.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PPROGRAM_DESTROY_FLAGS
@@ -42,17 +42,17 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 
 ## <a name="fields"></a>Campos
  `PROGRAM_DESTROY_CONTINUE_DEBUGGING`\
- Destruir o programa, mas continuar a depurar.
+ Destrua o programa, mas continue a depurar.
 
 ## <a name="remarks"></a>Comentários
- A enumeração é devolvida pelo método [GetFlags.](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)
+ A enumeração é retornada pelo método [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290015"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Gerar operadores IEquatable ao gerar Equals para structs
@@ -40,13 +40,13 @@ Esta geração de código aplica-se a:
 
    - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
 
-   - Clique no botão ![chave de fenda](../media/screwdriver-icon.png) ícone que aparece na margem esquerda.
+   - Clique no ícone ![chave de fenda](../media/screwdriver-icon.png) ícone que aparece na margem esquerda.
 
    ![Gerar IEquatable e Equals para structs](media/generate-equals-structs.png)
 
 3. Selecione **gerar Equals (Object)** no menu suspenso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)

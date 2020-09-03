@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544840"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Como: expor código ao VBA em um projeto Visual Basic
@@ -36,7 +36,7 @@ ms.locfileid: "85544840"
 
 - [Expor o código que não está em uma classe de item de host](#NonHostItem)
 
-## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a>Expor o código em uma classe de item de host
+## <a name="expose-code-in-a-host-item-class"></a><a name="HostItemCode"></a> Expor o código em uma classe de item de host
  Para permitir que o código VBA chame Visual Basic código em uma classe de item de host, defina a propriedade **EnableVbaCallers** do item de host como **true**.
 
  Para obter instruções que demonstram como expor um método de uma classe de item de host e, em seguida, chamá-la do VBA, consulte [passo a passos: chamar código do VBA em um projeto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). Para obter mais informações sobre itens de host, consulte [visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md).
@@ -71,7 +71,7 @@ ms.locfileid: "85544840"
 
 6. Compile o projeto.
 
-## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a>Expor o código que não está em uma classe de item de host
+## <a name="expose-code-that-is-not-in-a-host-item-class"></a><a name="NonHostItem"></a> Expor o código que não está em uma classe de item de host
  Para habilitar o código VBA para chamar Visual Basic código que não está em uma classe de item de host, modifique o código para que ele fique visível para o VBA.
 
 ### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>Para expor o código que não está em uma classe de item de host para o VBA

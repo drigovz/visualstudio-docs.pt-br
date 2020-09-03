@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: af32127476c83100c0340021428e3abc572ef2f7
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815630"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>')' esperado na expressão regular (JavaScript)
@@ -31,6 +31,6 @@ Você tentou criar uma captura de expressão regular, asserção ou grupo, mas n
     > [!NOTE]
     > Se você quiser corresponder a um único parêntese, escape-o com uma barra invertida \\ (-para que ele não seja interpretado como um caractere especial [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] .  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

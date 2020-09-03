@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815130"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
@@ -74,7 +74,7 @@ O [NuGet](https://www.nuget.org/) é o gerenciador de pacotes para o .NET. O NuG
 
 1. Procure no NuGet para localizar um pacote compatível que você deseja adicionar (.NET Standard 2.0 ou .NET 4.x). Este exemplo demonstra a adição do [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/), um pacote popular para trabalhar com JSON, a um projeto do .NET Standard 2.0.
 
-1. Clique no botão **Download**:
+1. Clique no botão **baixar** :
 
     ![botão download](media/vstu_nuget-download.png)
 

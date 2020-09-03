@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca69e9d3a20bff5d5f22548448d404a7d042f449
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815364"
 ---
 # <a name="expected-"></a>'{' esperado
@@ -28,5 +28,5 @@ Você não incluiu a chave à esquerda que marca o início do corpo da função.
   
 - Adicione a chave esquerda que marca o início do corpo da função.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto Function](../../javascript/reference/function-object-javascript.md)

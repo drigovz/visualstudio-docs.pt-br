@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545230"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
@@ -47,7 +47,7 @@ ms.locfileid: "85545230"
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
 
 ### <a name="description"></a>Descrição
- Um método no exemplo a seguir manipula um inteiro que viola essa regra. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]requer que a opção **remover** estouro de inteiro seja desabilitada para que isso seja acionado.
+ Um método no exemplo a seguir manipula um inteiro que viola essa regra. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] requer que a opção **remover** estouro de inteiro seja desabilitada para que isso seja acionado.
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]

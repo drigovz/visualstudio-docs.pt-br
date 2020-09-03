@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814818"
 ---
 # <a name="expected-"></a>Esperado ' \@ '
@@ -33,6 +33,6 @@ Você tentou criar uma variável a ser usada com instruções de compilação co
     ```  
   
 ## <a name="see-also"></a>Confira também  
- [@setPrivacidade](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Privacidade](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)

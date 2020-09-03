@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 39350a9e1d340651f8e15de109ecf61eb98996bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671455"
 ---
 # <a name="properties-of-elements-on-uml-component-diagrams"></a>Propriedades de elementos em diagramas de componente UML
@@ -31,21 +31,21 @@ Em um diagrama de componente UML, cada elemento no diagrama tem propriedades. Pa
 
 ## <a name="properties-of-elements"></a>Propriedades de elementos
 
-|propriedade|Padrão|Elemento|Descrição|
+|Propriedade|Padrão|Elemento|Descrição|
 |--------------|-------------|-------------|-----------------|
-|**Nome**|Um nome padrão|Todos|Identifica o elemento.|
-|**Nome qualificado**|Namespace:: nome|Todos|Identifica o elemento exclusivamente.<br /><br /> Um nome de componente ou tipo é prefixado com o nome qualificado do pacote que o contém.<br /><br /> Um nome de parte ou porta é prefixado com o nome qualificado do componente que o possui.|
-|**Itens de trabalho**|0 associado|Todos|O número de itens de trabalho associados a este elemento. Para associar itens de trabalho, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).|
-|**Descrição**|(nenhum)|Todos|Você pode fazer observações gerais sobre o elemento aqui.|
+|**Nome**|Um nome padrão|Tudo|Identifica o elemento.|
+|**Nome Qualificado**|Namespace:: nome|Tudo|Identifica o elemento exclusivamente.<br /><br /> Um nome de componente ou tipo é prefixado com o nome qualificado do pacote que o contém.<br /><br /> Um nome de parte ou porta é prefixado com o nome qualificado do componente que o possui.|
+|**Itens de trabalho**|0 associado|Tudo|O número de itens de trabalho associados a este elemento. Para associar itens de trabalho, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).|
+|**Descrição**|(nenhum)|Tudo|Você pode fazer observações gerais sobre o elemento aqui.|
 |**Cor**|(padrão para o tipo)|Componente, parte, delegação, assembly de parte|A cor da forma. Ao contrário de outras propriedades, essa é a cor da forma, em vez do elemento de modelo exibido pela forma.|
-|**É instanciado indiretamente**|verdadeiro|Componente|O componente existe apenas como um artefato de design. Em tempo de execução, somente suas partes existem.|
-|**É abstrato**|False|Componente|A definição de componente pode ser usada somente como uma generalização da qual outros componentes podem ser especializados.|
+|**É instanciado indiretamente**|Verdadeiro|Componente|O componente existe apenas como um artefato de design. Em tempo de execução, somente suas partes existem.|
+|**É Abstrato**|Falso|Componente|A definição de componente pode ser usada somente como uma generalização da qual outros componentes podem ser especializados.|
 |**Visibilidade**|Público|Componente, parte, porta|**Público** -globalmente visível.<br /><br /> **Pacote** -visível no pacote.<br /><br /> **Particular** -visível dentro do componente de propriedade.<br /><br /> **Protegido** – visível para os componentes derivados do proprietário.|
 |**Tipo**|Tipo na criação|Parte<br /><br /> Porta|O tipo de uma parte é um componente ou uma classe.<br /><br /> O tipo de uma porta é uma interface.|
-|**Multiplicidade**|1|Parte<br /><br /> Porta|Indica quantas instâncias do tipo especificado formam parte do componente pai.<br /><br /> `1`-exatamente um.<br /><br /> `0..1`-um ou nenhum.<br /><br /> `*`-uma coleção de qualquer número.<br /><br /> `n..m`-uma coleção de de n a m instâncias.|
-|**É comportamento**|False|Porta|Se for true, as mensagens para essa porta serão tratadas por atividades ou operações que são descritas como parte do componente, em vez de suas partes.|
-|**É serviço**|False|Porta|Se for true, essa porta faz parte da interface publicada desse componente.|
+|**Multiplicidade**|1|Parte<br /><br /> Porta|Indica quantas instâncias do tipo especificado formam parte do componente pai.<br /><br /> `1` -exatamente um.<br /><br /> `0..1` -um ou nenhum.<br /><br /> `*` -uma coleção de qualquer número.<br /><br /> `n..m` -uma coleção de de n a m instâncias.|
+|**É comportamento**|Falso|Porta|Se for true, as mensagens para essa porta serão tratadas por atividades ou operações que são descritas como parte do componente, em vez de suas partes.|
+|**É serviço**|Falso|Porta|Se for true, essa porta faz parte da interface publicada desse componente.|
 |**LinkedPackage**|Modelo|Diagrama|O namespace padrão para elementos adicionados a este diagrama.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)

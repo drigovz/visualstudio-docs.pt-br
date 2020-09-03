@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815585"
 ---
 # <a name="object-member-expected"></a>Membro de objeto esperado
@@ -28,6 +28,6 @@ Você tentou executar uma operação no membro de dados de um objeto, mas o memb
   
 - Certifique-se de que você digitou corretamente o nome do membro de dados.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto Object](../../javascript/reference/object-object-javascript.md)   
  [Objetos e matrizes](../../javascript/objects-and-arrays-javascript.md)

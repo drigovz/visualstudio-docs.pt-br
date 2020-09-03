@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633896"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Como exibir uma lista de itens separados por vírgulas
 
-Quando você trabalha com listas de itens no Microsoft Build Engine (MSBuild), às vezes é útil exibir o conteúdo dessas listas de itens de uma maneira fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.
+Quando você trabalha com listas de itens no Microsoft Build Engine (MSBuild), às vezes é útil exibir o conteúdo dessas listas de itens de forma que seja fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar itens em uma lista com vírgulas
 
@@ -46,7 +46,7 @@ O separador pode ser um único caractere ou uma cadeia de caracteres e deve ser 
 
 ## <a name="example"></a>Exemplo
 
-Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo *Phrases.txt*. No comando findstr, as strings de pesquisa literal são indicadas pelo **-c:** switch, de modo que o separador do item, `-c:` seja inserido entre itens da `@(Phrase)` lista de itens.
+Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo *Phrases.txt*. No comando Findstr, as cadeias de caracteres de pesquisa literais são indicadas pela opção **-c:** , portanto, o separador de item `-c:` é inserido entre os itens na `@(Phrase)` lista de itens.
 
 Neste exemplo, a linha de comando equivalente é:
 

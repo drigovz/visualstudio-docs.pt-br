@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6a7c944eb3d5378ad0fc1542b90ad182f7eb976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671288"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
@@ -28,7 +28,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Obtendo acesso a um modelo e diagramas
  Para ler um diagrama UML ou um diagrama de camada, você deve primeiro usar o Visual Studio para abrir o projeto de modelagem e, em seguida, abrir o diagrama dentro dele.
 
- Por esse motivo, se você quiser ler um diagrama ou diagrama de camada UML, também deverá ter acesso ao projeto de modelagem no qual ele foi criado. Você pode fazer isso acessando o projeto de [!INCLUDE[esprscc](../includes/esprscc-md.md)] ou obtendo uma cópia dos arquivos de projeto.
+ Por esse motivo, se você quiser ler um diagrama ou diagrama de camada UML, também deverá ter acesso ao projeto de modelagem no qual ele foi criado. Você pode fazer isso acessando o projeto do [!INCLUDE[esprscc](../includes/esprscc-md.md)] ou obtendo uma cópia dos arquivos de projeto.
 
 > [!NOTE]
 > Isso não se aplica a mapas de código e diagramas de classe .NET gerados a partir do código. Esses diagramas podem ser exibidos independentemente de um projeto de modelagem.
@@ -38,7 +38,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 - Os dois arquivos de diagrama do diagrama que você deseja ler, por exemplo, **MyDiagram. classdiagram e MyDiagram. classdiagram. layout**.
 
     > [!NOTE]
-    > Para diagramas de camada, você também deve ter o arquivo chamado _MyDiagram_ **. layerdiagram. supressões**.
+    > Para diagramas de camada, você também deve ter o arquivo chamado _MyDiagram_**. layerdiagram. supressões**.
 
 - O arquivo de projeto de modelagem (**MyModel. modelproj**)
 
@@ -55,7 +55,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 
   Você pode salvar essas alterações. Se você quiser tornar as alterações visíveis para outros usuários, será necessário pelo menos enviar os arquivos **. layout** atualizados.
 
-## <a name="RelatedTopics"></a> Tópicos relacionados
+## <a name="related-topics"></a><a name="RelatedTopics"></a> Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
@@ -66,5 +66,5 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
 |[Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)|Um diagrama de sequência mostra as interações entre os elementos em um design de software.|
 |[Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)|Um diagrama de caso de uso mostra os usuários de um sistema e as atividades que eles podem executar para obter metas específicas.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

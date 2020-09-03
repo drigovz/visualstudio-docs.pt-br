@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719b31e834b5410dd137a0c5b69cc07ae01651e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645466"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Como compilar várias configurações simultaneamente
@@ -25,7 +25,7 @@ ms.locfileid: "72645466"
 
 2. Todos os projetos do Visual Basic.
 
-   Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
+   Para obter mais informações sobre configurações de compilação, consulte [noções básicas sobre configurações de compilação](../ide/understanding-build-configurations.md).
 
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Para compilar um projeto em várias configurações de build
 
@@ -38,5 +38,5 @@ ms.locfileid: "72645466"
 
 3. Escolha os botões **Build** ou **Recompilar** para compilar o projeto com as configurações especificadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: criar e editar configurações que](../ide/how-to-create-and-edit-configurations.md) [compreendem as configurações de Build](../ide/understanding-build-configurations.md) que [criam vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

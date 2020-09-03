@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713418"
 ---
 # <a name="text_position"></a>TEXT_POSITION
-Descreve a localização da linha e da coluna no texto dado.
+Descreve o local da linha e da coluna no texto fornecido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 Índice de linha no arquivo de origem.
 
 `dwColumn`\
-Deslocamento de caráter em linha.
+Deslocamento de caractere na linha.
 
 ## <a name="remarks"></a>Comentários
 
-Esta estrutura é utilizada nas estruturas [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DesassemblyData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Essa estrutura é usada nas estruturas [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Esta estrutura é preenchida por uma chamada para os seguintes métodos:
+Essa estrutura é preenchida por uma chamada para os seguintes métodos:
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,9 +63,9 @@ Esta estrutura é preenchida por uma chamada para os seguintes métodos:
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-Esta estrutura é passada como um parâmetro para os seguintes métodos:
+Essa estrutura é passada como um parâmetro para os seguintes métodos:
 
-- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
 - [onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)
 
@@ -77,11 +77,11 @@ Esta estrutura é passada como um parâmetro para os seguintes métodos:
 
 ## <a name="requirements"></a>Requisitos
 
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 
@@ -90,7 +90,7 @@ Esta estrutura é passada como um parâmetro para os seguintes métodos:
 - [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
 - [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
-- [Gettext](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
+- [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815013"
 ---
 # <a name="xml-editor"></a>Editor de XML
@@ -54,7 +54,7 @@ O [criador de perfil XSLT](../xml-tools/xslt-profiler.md) cria relatórios de de
 
 A [ferramenta de hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) permite que você adicione pontos de interrupção em folhas de estilo incluídas e/ou regras de modelo internas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Opções do editor de XML – formatação](../ide/reference/options-text-editor-xml-formatting.md)
 - [Opções do editor de XML – diversos](../ide/reference/options-text-editor-xml-miscellaneous.md)

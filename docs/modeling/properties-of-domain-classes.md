@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544177"
 ---
 # <a name="properties-of-domain-classes"></a>Propriedades de classes de domínio
@@ -34,6 +34,6 @@ As classes de domínio têm as propriedades na tabela a seguir. Para obter infor
 |Nome de exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave opcional que é usada para indexar a ajuda F1 para essa classe de domínio.|\<none>|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

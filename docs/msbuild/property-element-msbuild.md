@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632947"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 
-Contém um nome e valor de propriedade definidos pelo usuário. Todas as propriedades usadas em um projeto MSBuild `PropertyGroup` devem ser especificadas como filho de um elemento.
+Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade usada em um projeto do MSBuild deve ser especificada como um filho de um `PropertyGroup` elemento.
 
  \<Project> \<PropertyGroup>
 
@@ -80,5 +80,5 @@ Contém um nome e valor de propriedade definidos pelo usuário. Todas as proprie
 
 ## <a name="see-also"></a>Confira também
 
-- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [propriedades MSBuild](../msbuild/msbuild-properties.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
