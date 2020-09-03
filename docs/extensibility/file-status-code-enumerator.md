@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 184c8686ea184aea2cbd0a64873718cbe72f7615
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711449"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de status de arquivo
-O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle de origem. Esta enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e pela função de retorno de `POPLISTFUNC` chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).
+O `SccStatus` enumerador contém valores constantes nomeados que especificam o estado de um arquivo no sistema de controle do código-fonte. Essa enumeração é usada pelo [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e pela `POPLISTFUNC` função de retorno de chamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obter detalhes).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 enum SccStatus {
@@ -49,43 +49,43 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>Membros
- SCC_STATUS_INVALID status não pôde ser obtido; não confie nisso.
+ Não foi possível obter SCC_STATUS_INVALID status; Não confie nela.
 
- SCC_STATUS_NOTCONTROLLED Arquivo não está sob controle de origem.
+ SCC_STATUS_NOTCONTROLLED arquivo não está no controle do código-fonte.
 
- SCC_STATUS_CONTROLLED Arquivo está sob controle de origem.
+ SCC_STATUS_CONTROLLED arquivo está sob controle do código-fonte.
 
- SCC_STATUS_CHECKEDOUT Verificado pelo usuário atual no disco local.
+ SCC_STATUS_CHECKEDOUT check-out feito pelo usuário atual no disco local.
 
- SCC_STATUS_OUTOTHER Arquivo é verificado por outro usuário.
+ O check-out do arquivo do SCC_STATUS_OUTOTHER foi feito por outro usuário.
 
- SCC_STATUS_OUTEXCLUSIVE Arquivo é exclusivamente verificado.
+ O check-out exclusivo do arquivo de SCC_STATUS_OUTEXCLUSIVE foi feito.
 
- SCC_STATUS_OUTMULTIPLE Arquivo é verificado por mais de um usuário.
+ O check-out do arquivo de SCC_STATUS_OUTMULTIPLE é feito por mais de um usuário.
 
- SCC_STATUS_OUTOFDATE O arquivo não é o mais recente.
+ SCC_STATUS_OUTOFDATE o arquivo não é o mais recente.
 
- SCC_STATUS_DELETED Arquivo foi excluído do projeto.
+ SCC_STATUS_DELETED arquivo foi excluído do projeto.
 
- SCC_STATUS_LOCKED Arquivo está bloqueado; não são permitidas mais versões.
+ SCC_STATUS_LOCKED arquivo está bloqueado; Não há mais nenhuma versão permitida.
 
- SCC_STATUS_MERGED Arquivo foi mesclado, mas ainda não foi corrigido/verificado.
+ SCC_STATUS_MERGED arquivo foi mesclado, mas ainda não foi corrigido/verificado.
 
- SCC_STATUS_SHARED Arquivo é compartilhado entre projetos.
+ SCC_STATUS_SHARED arquivo é compartilhado entre projetos.
 
- SCC_STATUS_PINNED Arquivo é compartilhado com uma versão explícita.
+ SCC_STATUS_PINNED arquivo é compartilhado para uma versão explícita.
 
- SCC_STATUS_MODIFIED Arquivo foi modificado/quebrado/violado.
+ SCC_STATUS_MODIFIED arquivo foi modificado/interrompido/violado.
 
- SCC_STATUS_OUTBYUSER Arquivo é verificado pelo usuário atual.
+ O check-out do arquivo do SCC_STATUS_OUTBYUSER foi feito pelo usuário atual.
 
- SCC_STATUS_NOMERGE Arquivo nunca pode ser mesclado e não precisa ser salvo antes de um GET.
+ SCC_STATUS_NOMERGE arquivo nunca pode ser mesclado com o e não precisa ser salvo antes de um GET.
 
- SCC_STATUS_RESERVED_1 Reservado para uso interno.
+ SCC_STATUS_RESERVED_1 reservado para uso interno.
 
- SCC_STATUS_RESERVED_2 Reservado para uso interno.
+ SCC_STATUS_RESERVED_2 reservado para uso interno.
 
 ## <a name="see-also"></a>Confira também
-- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)
+- [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

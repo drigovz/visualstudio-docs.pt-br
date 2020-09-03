@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461220"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarquia lexical de tipos de símbolos
@@ -45,8 +45,8 @@ A tabela a seguir mostra os tipos de símbolo na hierarquia lexical.
 > [!NOTE]
 > As propriedades de símbolo adicionais podem estar disponíveis dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
-- [Símbolos e marcas de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

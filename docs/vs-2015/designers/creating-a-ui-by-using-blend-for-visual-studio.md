@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1a65f42dafca696bfa638964b825410b576d4845
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544281"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Criando uma interface de usuário usando o Blend para Visual Studio
@@ -45,7 +45,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 
  ![Painel Ferramentas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
-|Imagem|Tipo de ferramenta|Imagem|Tipo de ferramenta|
+|Image|Tipo de ferramenta|Image|Tipo de ferramenta|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Ferramentas Seleção** Selecione objetos e demarcadores.<br /><br /> Use a ferramenta **Seleção Direta** para selecionar objetos aninhados e segmentos de caminho.|![Texto explicativo A](../designers/media/b5-label-a.png "b5_label_A")|**Ferramentas gradiente e pincel**|
 |![](../designers/media/b1-2.png "B1_2")|**Ferramentas de exibição** Ajuste a prancheta, como para zoom e movimento panorâmico.|![Texto explicativo B](../designers/media/b5-label-b.png "b5_label_B")|**Ferramentas de caminho**|
@@ -56,12 +56,12 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 
  **Assista a um vídeo curto:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a>Tour do painel ativos
+## <a name="tour-of-the-assets-panel"></a><a name="Assets"></a> Tour do painel ativos
  É possível encontrar todos os controles no painel **Ativos**, semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta no painel **Ativos**, incluindo estilos, mídia, comportamentos e efeitos.
 
  ![Painel Ativos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Caixa de pesquisa** Digite na caixa **Pesquisar** para filtrar a lista de ativos.|
 |![](../designers/media/b1-2.png "B1_2")|**Modo de grade e Modo de lista** Mude entre as exibições **Modo de grade** e **Modo de lista** dos ativos.|
@@ -69,12 +69,12 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-4.png "B1_4")|**Estilos** Mostre todos os estilos contidos no dicionário de recursos.|
 |![](../designers/media/b1-5.png "B1_5")|**Descrição** Exiba uma descrição da categoria ou subcategoria de ativos selecionada.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a>Tour do painel de Objetos e Linha do Tempo
+## <a name="tour-of-the-objects-and-timeline-panel"></a><a name="Objects"></a> Tour do painel de Objetos e Linha do Tempo
  Use esse painel para organizar os objetos na prancheta e, se quiser, para animá-los.
 
  ![Painel Objeto e Linha do Tempo no modo de animação](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Exibição Objetos** Exiba uma árvore visual de um documento. É possível fazer uma busca detalhada em vários níveis de detalhamento. Você também pode adicionar camadas para organizar ainda mais os objetos na prancheta. Dessa forma, é possível bloqueá-los e ocultá-los como um grupo.|
 |![](../designers/media/b1-2.png "B1_2")|**Indicador do modo de registro** Veja se você está registrando as alterações de propriedade em uma linha do tempo.|
@@ -93,7 +93,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-15.png "B1_15")|**Zoom da linha do tempo** Defina a resolução de zoom da linha do tempo. Aumentar o zoom permite editar uma animação com mais detalhes e diminuir o zoom mostra mais uma visão geral do que está acontecendo no decorrer de períodos de tempo mais longos. Se você aumentar o zoom, mas não conseguir definir um quadro chave na posição de tempo desejada, verifique se a resolução de ajuste está definida com um valor suficientemente alto.|
 |![Texto explicativo 16](../designers/media/b5-label-16.png "b5_label_16")|**Área de composição da linha do tempo** Exiba a linha do tempo e mova quadros chave arrastando-os ou usando os menus de atalho.|
 
-## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a>Tour pelo painel de propriedades
+## <a name="tour-of-the-properties-panel"></a><a name="Properties"></a> Tour pelo painel de propriedades
  Use esse painel para exibir e modificar as propriedades de um objeto. Você também pode defini-las diretamente na prancheta. Nesse caso, as alterações na propriedade serão refletidas no painel **Propriedades**.
 
  ![Painel Propriedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

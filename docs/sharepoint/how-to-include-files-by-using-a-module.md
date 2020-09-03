@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016300"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Como: incluir arquivos usando um módulo
@@ -62,6 +63,6 @@ ms.locfileid: "86016300"
 
      Os arquivos são copiados para os locais especificados no SharePoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

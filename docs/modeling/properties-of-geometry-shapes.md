@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1d97cc53e55a809b9dd43d572e7395abc5a8344
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544125"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriedades de formas geométricas
@@ -27,7 +27,7 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |-|-|-|
 |Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma (horizontal, vertical, diagonal para frente, diagonal para trás ou nenhum).|Horizontal|
-|Geometry|A geometria desta forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
+|Geometria|A geometria desta forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
 |Cor do contorno|A cor da estrutura de tópicos desta forma.|Preto|
 |Estilo do contorno tracejado|O estilo de contorno tracejado dessa forma (sólido, traço, ponto, travessão ponto, travessão ponto ponto ou personalizado).|Sólido|
@@ -51,6 +51,6 @@ Você pode usar formas de geometria para especificar como as instâncias de clas
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para essa forma.|\<none>|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

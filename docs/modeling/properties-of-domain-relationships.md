@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544151"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriedades de relacionamentos de domínio
@@ -29,7 +29,7 @@ As propriedades na tabela a seguir são associadas a uma relação de domínio. 
 |Permite duplicatas|Se `True` , os links duplicados da relação de domínio poderão ser criados entre os mesmos dois elementos.|`False`|
 |Relações de base|Se a relação de domínio for derivada, a relação base da relação de domínio.|\<none>|
 |Está incorporando|Se `True` , a relação de domínio é uma relação incorporada. Se `False` , a relação é uma relação de referência.|\<both>|
-|Nome|O nome da relação de domínio.|Nome atual|
+|Name|O nome da relação de domínio.|Nome atual|
 |Namespace|O namespace que é afiliado ao relacionamento de domínio.|Namespace atual|
 |Observações|Observações informais que estão associadas à relação de domínio.|\<none>|
 |Descrição|A descrição usada para documentar o código e é usada na interface do usuário do designer gerado.|\<none>|

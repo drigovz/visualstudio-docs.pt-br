@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Depurando Amostras | Microsoft Docs
+title: Amostras de depuração do Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2c3ac20f541f83103e0ded8c11881317e8d1aca4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712412"
 ---
-# <a name="visual-studio-debugging-samples"></a>Imagens de depuração do Visual Studio
-Duas amostras mostram como estender o depurador visual studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
+# <a name="visual-studio-debugging-samples"></a>Amostras de depuração do Visual Studio
+Dois exemplos mostram como estender o depurador do Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
-- A amostra avaliadora de expressão de depurador, para [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]idiomas gerenciados, está incluída no . Na [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] janela, clique na guia **Amostras,** clique em **All** ou **C#** na lista de idiomas e, em seguida, clique em **Depurar**.
+- O exemplo do avaliador de expressão do depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Na [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] janela, clique na guia **exemplos** , clique em **tudo** ou em **C#** na lista de idiomas e clique em **depurador**.
 
-- O Visual Studio Debug Engine Sample, para línguas nativas, está disponível na MSDN Code Gallery. Para obter mais informações, consulte [a amostra do mecanismo de depuração](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) do Visual Studio no site da Microsoft.
+- O exemplo de mecanismo de depuração do Visual Studio, para idiomas nativos, está disponível na Galeria de códigos do MSDN. Para obter mais informações, consulte [exemplo do mecanismo de depuração do Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) no site da Microsoft.

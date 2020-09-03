@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0a4883d36c1833c66a2539380184521b070f5c2a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544723"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>Interface IWefDebuggingSupport
@@ -39,7 +39,7 @@ interface IWefDebuggingSupport : IUnknown
 ## <a name="methods"></a>Métodos
  A tabela a seguir lista os métodos que a interface IWefDebuggingSupport define.
 
-|Nome|Descrição|
+|Name|Descrição|
 |----------|-----------------|
 |[Método GetAutoInsertExtensions](../vsto/getautoinsertextensions-method.md)|Obtém informações sobre os aplicativos para o Office que devem ser inseridos automaticamente durante a depuração.|
 |[Método SetWefProcessId](../vsto/setwefprocessid-method.md)|Fornece o identificador do processo que executará o conteúdo do WEF (Web Extensions Framework).|

@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114756"
 ---
 # <a name="rethrow-activity-designer"></a>Designer de atividade de Relançar
 
-O designer de atividade **Rethrow** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Rethrow>.
+O designer de atividade **Rethrow** é usado para criar e configurar uma <xref:System.Activities.Statements.Rethrow> atividade.
 
 ## <a name="the-rethrow-activity"></a>A atividade Rethrow
 
@@ -27,18 +27,18 @@ A atividade de <xref:System.Activities.Statements.Rethrow> lança uma exceção 
 
 ### <a name="use-the-rethrow-activity-designer"></a>Usar o designer de atividade Rethrow
 
-Acesse o designer de atividade **Rethrow** na categoria **tratamento de erros** da **caixa de ferramentas**. O designer de atividade **Rethrow** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Descartar o designer de atividade cria uma atividade de <xref:System.Activities.Statements.Rethrow> com um **DisplayName** padrão de Throw. O valor <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **Rethrow** ou na caixa **DisplayName** da grade de propriedades.
+Acesse o designer de atividade **Rethrow** na categoria **tratamento de erros** da **caixa de ferramentas**. O designer de atividade **Rethrow** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.Rethrow> atividade com um **DisplayName** padrão de Throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do designer de atividade **Rethrow** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-rethrow-properties"></a>As propriedades Rethrow
 
-A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Rethrow> e descreve como elas são usadas no designer:
+A tabela a seguir mostra as <xref:System.Activities.Statements.Rethrow> Propriedades e descreve como elas são usadas no designer:
 
-|Nome da Propriedade|Necessário|Medição de|
+|Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Rethrow> . O padrão é Relançar.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Rethrow> . O padrão é Relançar.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Coleta](../workflow-designer/collection-activity-designers.md)
+- [Coleção](../workflow-designer/collection-activity-designers.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

@@ -11,19 +11,19 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: e48777a50ddf66a8e5493698fb401ff7201de03e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114683"
 ---
-# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Caixa de diálogo opções: Windows Forms Designer > Data UI Customização
+# <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>Caixa de diálogo opções: Designer de Formulários do Windows > personalização da interface do usuário de dados
 
-Essa caixa de diálogo define quais controles aparecem na lista de controles disponíveis para itens na janela Fontes de Dados. Para abri-lo, selecione **Opções de** > **ferramentas**e selecione a**personalização da ia de dados**do windows forms **designer.** > 
+Essa caixa de diálogo define quais controles aparecem na lista de controles disponíveis para itens na janela Fontes de Dados. Para abri-lo, **Tools**selecione  >  **Opções**de ferramentas e, em seguida, selecione **Designer de formulários do Windows**  >  **personalização da interface do usuário de dados**.
 
 É possível selecionar um controle de um item na janela Fontes de Dados antes de arrastá-lo para o formulário em um aplicativo do Windows Forms. Os controles disponíveis são determinados pelo tipo de dados do item. Cada tipo de dados possui uma lista de controles associados válidos, conforme definido nessa caixa de diálogo, incluindo um controle padrão. Ao arrastar um item da janela Fontes de Dados para um formulário sem selecionar um controle, o controle padrão para o tipo de dados do item selecionado é adicionado ao formulário.
 
-Personalize a lista de controles associados, marcando e desmarcando as caixas de seleção dos controles disponíveis para cada tipo de dados. Para adicionar um controle à lista, adicione um controle que implemente o atributo de associação de dados <xref:System.ComponentModel.DefaultBindingPropertyAttribute> ou <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> à Caixa de Ferramentas. Em seguida, o controle aparece na lista de controles para o tipo de dados. Para obter mais informações, [consulte Como: Adicionar controles personalizados à janela Fontes de dados](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
+Personalize a lista de controles associados, marcando e desmarcando as caixas de seleção dos controles disponíveis para cada tipo de dados. Para adicionar um controle à lista, adicione um controle que implemente o atributo de associação de dados <xref:System.ComponentModel.DefaultBindingPropertyAttribute> ou <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> à Caixa de Ferramentas. Em seguida, o controle aparece na lista de controles para o tipo de dados. Para obter mais informações, consulte [como: adicionar controles personalizados à janela fontes de dados](../..//data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="data-type"></a>Tipo de dados
 

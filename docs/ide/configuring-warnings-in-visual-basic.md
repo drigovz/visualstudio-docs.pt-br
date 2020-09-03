@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114722"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
@@ -120,8 +120,8 @@ ID: 42029, 42031
 ## <a name="see-also"></a>Confira também
 
 - [Tipos de erro](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Tentar... Pegar... Finalmente declaração](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Tentar... Capturar... Instrução Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Página de Compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avisos do compilador que estão desligados por padrão](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Compilar página, designer de projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Avisos de compilador desativados por padrão](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

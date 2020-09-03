@@ -24,15 +24,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114563"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
-Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, consulte [Passo a passo: Construindo um aplicativo](../ide/walkthrough-building-an-application.md).
+Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [explicação: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar e limpar projetos e soluções no Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
@@ -59,33 +59,33 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 1. No **Gerenciador de Soluções**, escolha ou abra o projeto.
 
-2. Na barra de menu, escolha **Construir**e, em seguida, escolha **Build** *ProjectName* ou **Rebuild** *ProjectName*.
+2. Na barra de menus, escolha **Compilar**e, em seguida, escolha **criar** *ProjectName* ou **recriar** *ProjectName*.
 
-    - Escolha **Build** *ProjectName* para construir apenas os componentes do projeto que mudaram desde a compilação mais recente.
+    - Escolha **criar** *ProjectName* para compilar somente os componentes do projeto que foram alterados desde a compilação mais recente.
 
-    - Escolha **Reconstruir** *projectName* para "limpar" o projeto e, em seguida, construir os arquivos do projeto e todos os componentes do projeto.
+    - Escolha **recriar** *ProjectName* para "limpar" o projeto e, em seguida, compilar os arquivos de projeto e todos os componentes do projeto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar apenas o projeto de inicialização e suas dependências
 
-1. Na barra de menus, escolha **Opções de** > **ferramentas**.
+1. Na barra de menus, escolha **ferramentas**  >  **Opções**.
 
 2. Na caixa de diálogo **Opções**, expanda o nó **Projetos e Soluções** e, em seguida, escolha a página **Compilar e Executar**.
 
-     A caixa de diálogo **Construir e Executar** > **projetos e opções** > **de soluções** é aberta.
+     A caixa de diálogo **criar e executar**  >  **projetos e**  >  **Opções** de soluções é aberta.
 
 3. Marque a caixa de seleção **Compilar apenas projetos de inicialização e dependências ao Executar**.
 
      Quando essa caixa de seleção estiver marcada, somente o projeto de inicialização atual e suas dependências serão compilados quando você executar qualquer uma das seguintes etapas:
 
-    - Na barra de menu, escolha **Debug** > **Start** **(F5).**
+    - Na barra de menus, escolha **depurar**  >  **início** (**F5**).
 
-    - Na barra de menu, escolha **Build** > **Build Solution** **(Ctrl**+**Shift**+**B**).
+    - Na barra de menus, escolha **Compilar**  >  **Compilar solução** (**Ctrl** + **Shift** + **B**).
 
-    Quando essa caixa de seleção estiver desmarcada, todos os projetos, suas dependências e os arquivos de solução serão compilados quando você executar um dos comandos anteriores. Por padrão, essa caixa de seleção é desmarcada.
+    Quando essa caixa de seleção estiver desmarcada, todos os projetos, suas dependências e os arquivos de solução serão compilados quando você executar um dos comandos anteriores. Por padrão, essa caixa de seleção está desmarcada.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Para compilar somente o projeto Visual C++ selecionado
 
-Escolha [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] um projeto e, em seguida, na barra de menu, escolha **Somente construir** > **projeto**e um dos seguintes comandos:
+Escolha um [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projeto e, na barra de menus, escolha **Compilar**  >  **projeto apenas**e um dos seguintes comandos:
 
 - **Somente build** *ProjectName*
 
@@ -107,18 +107,18 @@ Se os arquivos tiverem dependências, os arquivos serão compilados em ordem de 
 
 Execute uma das seguintes etapas:
 
-- Na barra de menu, selecione **Build** > **Cancel**.
+- Na barra de menus, selecione **criar**  >  **Cancelar**.
 
-- Pressione **Ctrl**+**Break**.
+- Pressione **Ctrl** + **Break**.
 
 ## <a name="see-also"></a>Confira também
 
 - [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
-- [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
-- [Entendendo as configurações de construção](../ide/understanding-build-configurations.md)
+- [Compilando e compilando](../ide/compiling-and-building-in-visual-studio.md)
+- [Noções sobre configurações de build](../ide/understanding-build-configurations.md)
 - [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Referência de construção C/C++](/cpp/build/reference/c-cpp-building-reference)
-- [Interruptores de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md)
+- [Referência de compilação do C/C++](/cpp/build/reference/c-cpp-building-reference)
+- [Opções de linha de comando do devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Criar e limpar projetos e soluções (Visual Studio para Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

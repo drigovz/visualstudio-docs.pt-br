@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016688"
 ---
 # <a name="how-to-localize-code"></a>Como: Localizar código
@@ -67,7 +68,7 @@ ms.locfileid: "86016688"
 
      As cadeias de caracteres localizadas aparecem no aplicativo. Para exibir recursos localizados, o servidor do SharePoint deve ter um pacote de idiomas instalado que corresponda à cultura do arquivo de recurso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Localizar soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Como localizar um recurso](../sharepoint/how-to-localize-a-feature.md)
 - [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)

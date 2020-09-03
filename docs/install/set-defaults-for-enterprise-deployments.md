@@ -19,10 +19,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d03912eecd7b3cfa3563fc095453fee3ddf9b163
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114286"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Definir padrões para implantações empresariais do Visual Studio
@@ -50,7 +50,7 @@ Alguns valores de registro são definidos automaticamente na primeira vez em que
 
 Você pode definir os valores de registro a seguir:
 
-| **Nome** | **Tipo** | **Padrão** | **Descrição** |
+| **Nome** | **Tipo** | **Default** | **Descrição** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | O diretório em que os manifestos de pacote e opcionalmente, as cargas são armazenados. Para obter mais informações, consulte a página [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md). |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Manter cargas de pacote, mesmo após a instalação. Você pode alterar o valor a qualquer momento. Desabilitar a política removerá quaisquer payloads de pacote em cache para a instância que você reparar ou modificar. Para obter mais informações, consulte a página [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md). |
@@ -65,6 +65,6 @@ Você pode definir os valores de registro a seguir:
 
 ## <a name="see-also"></a>Confira também
 
-- [Instale o Visual Studio](install-visual-studio.md)
+- [Instalar o Visual Studio](install-visual-studio.md)
 - [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md)
-- [Use parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544801"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Como: Ocultar controles em planilhas ao imprimir
@@ -41,7 +41,7 @@ ms.locfileid: "85544801"
 
 3. Na janela **Propriedades** , defina a <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> propriedade como **false**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545022"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
@@ -41,7 +41,7 @@ Os Snippets de Código IntelliSense são partes de código pré-criadas que est�
 |[Elemento Function](../ide/code-snippets-schema-reference.md#function)|[Elemento Object](../ide/code-snippets-schema-reference.md#object)|[Elemento URL](../ide/code-snippets-schema-reference.md#url)|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|[Elemento Reference](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly-element"></a><a name="assembly"></a>Elemento assembly
+## <a name="assembly-element"></a><a name="assembly"></a> Elemento assembly
  Especifica o nome do assembly referenciado pelo snippet de código.
 
 > [!NOTE]
@@ -146,7 +146,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica o código, juntamente como os literais e objetos, que você pode usar quando esse snippet de código é inserido em um projeto.
 
-## <a name="codesnippet-element"></a><a name="codesnippet"></a>Elemento CodeSnippet
+## <a name="codesnippet-element"></a><a name="codesnippet"></a> Elemento CodeSnippet
  Permite que você especifique um título e vários Snippets de Código IntelliSense, que podem ser inseridos em arquivos de código do Visual Studio.
 
 ```xml
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippets](../ide/code-snippets-schema-reference.md#codesnippets)|Elemento raiz do esquema XML do snippet de código.|
 
-## <a name="codesnippets-element"></a><a name="codesnippets"></a>Elemento trechos
+## <a name="codesnippets-element"></a><a name="codesnippets"></a> Elemento trechos
  Agrupa elementos [CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet). O elemento `CodeSnippets` é o elemento raiz do esquema XML do snippet de código.
 
 ```xml
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento opcional. Elemento pai de todos os dados do snippet de código. Pode ser que não haja nenhum ou mais de um elemento `CodeSnippet` em um elemento `CodeSnippets`.|
 
-## <a name="declarations-element"></a><a name="declarations"></a>Elemento Declarations
+## <a name="declarations-element"></a><a name="declarations"></a> Elemento Declarations
  Especifica os literais e os objetos que compõem as partes de um snippet de código que você pode editar.
 
 ```xml
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
-## <a name="default-element"></a><a name="default"></a>Elemento padrão
+## <a name="default-element"></a><a name="default"></a> Elemento padrão
  Especifica o valor padrão do literal ou do objeto para um Snippet de Código IntelliSense.
 
 ```xml
@@ -221,7 +221,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica o valor padrão do literal ou do objeto que preenche os campos do snippet de código que você pode editar.
 
-## <a name="description-element"></a><a name="description"></a>Elemento Description
+## <a name="description-element"></a><a name="description"></a> Elemento Description
  Especifica as informações descritivas sobre o conteúdo de um Snippet de Código IntelliSense.
 
 ```xml
@@ -236,7 +236,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto descreve o snippet de código.
 
-## <a name="function-element"></a><a name="function"></a>Elemento Function
+## <a name="function-element"></a><a name="function"></a> Elemento Function
  Especifica uma função a ser executada quando o literal ou o objeto receber foco no Visual Studio.
 
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica uma função a ser executada quando o campo de literal ou objeto recebe foco no Visual Studio.
 
-## <a name="header-element"></a><a name="header"></a>Elemento Header
+## <a name="header-element"></a><a name="header"></a> Elemento Header
  Especifica informações gerais sobre o Snippet de Código IntelliSense.
 
 ```xml
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Elemento pai de todos os dados do snippet de código.|
 
-## <a name="helpurl-element"></a><a name="helpurl"></a>Elemento HelpUrl
+## <a name="helpurl-element"></a><a name="helpurl"></a> Elemento HelpUrl
  Especifica uma URL que fornece mais informações sobre um snippet de código.
 
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
 
  Um valor de texto é opcional. Esse texto especifica a URL a ser visitada para obter mais informações sobre um snippet de código.
 
-## <a name="id-element"></a><a name="id"></a>Elemento ID
+## <a name="id-element"></a><a name="id"></a> Elemento ID
  Especifica um identificador exclusivo para um elemento `Literal` ou `Object`. Dois literais ou objetos no mesmo snippet de código não podem ter o mesmo valor de texto em seus elementos `ID`. Literais e objetos não podem conter um elemento `ID` com um valor de fim. O valor `$end$` é reservado e usado para marcar o local onde colocar o cursor depois que o snippet de código é inserido.
 
 ```xml
@@ -321,7 +321,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica o identificador exclusivo do objeto ou literal.
 
-## <a name="import-element"></a><a name="import"></a>Importar elemento
+## <a name="import-element"></a><a name="import"></a> Importar elemento
  Especifica os namespaces importados usados por um Snippet de Código IntelliSense.
 
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Imports](../ide/code-snippets-schema-reference.md#imports)|Elemento de agrupamento para elementos **Import**.|
 
-## <a name="imports-element"></a><a name="imports"></a>Elemento Imports
+## <a name="imports-element"></a><a name="imports"></a> Elemento Imports
  Agrupa elementos `Import` individuais.
 
 > [!NOTE]
@@ -377,7 +377,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. A palavra-chave para o snippet de código.
 
-## <a name="keywords-element"></a><a name="keywords"></a>Elemento de palavras-chave
+## <a name="keywords-element"></a><a name="keywords"></a> Elemento de palavras-chave
  Agrupa elementos `Keyword` individuais. As palavras-chave de snippet de código são usadas pelo Visual Studio e representam uma maneira padronizada de os provedores de conteúdo online adicionarem palavras-chave personalizadas para pesquisa ou categorização
 
 ```xml
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header)|Contém informações gerais sobre o snippet de código.|
 
-## <a name="literal-element"></a><a name="literal"></a>Elemento literal
+## <a name="literal-element"></a><a name="literal"></a> Elemento literal
  Define os literais do snippet de código que você pode editar. O elemento `Literal` é usado para identificar um substituto para uma parte de código totalmente contido no snippet, mas que provavelmente será personalizado depois de inserido no código. Por exemplo, cadeias de caracteres literais, valores numéricos e alguns nomes de variáveis devem ser declarados como literais.
 
  Os literais e objetos não podem conter um elemento **ID** com um valor de selecionado ou fim. O valor `$selected$` representa o texto selecionado no documento que deve ser inserido no snippet quando ele é invocado. `$end$` marca o local para colocar o cursor depois que o snippet de código é inserido.
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Declarations](../ide/code-snippets-schema-reference.md#declarations)|Contém os literais e objetos de um snippet de código que você pode editar.|
 
-## <a name="namespace-element"></a><a name="namespace"></a>Elemento namespace
+## <a name="namespace-element"></a><a name="namespace"></a> Elemento namespace
  Especifica o namespace que deve ser importado para compilação e execução do snippet de código. O namespace especificado no elemento `Namespace` é adicionado automaticamente a uma instrução `Imports` no início do código, se ele ainda não existir.
 
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica um namespace que o snippet de código supõe que seja importado.
 
-## <a name="object-element"></a><a name="object"></a>Elemento Object
+## <a name="object-element"></a><a name="object"></a> Elemento Object
  Define os objetos do snippet de código que você pode editar. O elemento `Object` é usado para identificar um item que é exigido pelo snippet de código, mas que provavelmente será definido fora do snippet em si. Por exemplo, os controles do Windows Forms, os controles do ASP.NET, as instâncias do objeto e as instâncias do tipo devem ser declarados como objetos. As declarações de objeto exigem que um tipo seja especificado, o que é feito com o elemento `Type`.
 
 ```xml
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento References](../ide/code-snippets-schema-reference.md#references)|Elemento de agrupamento de elementos `Reference`.|
 
-## <a name="references-element"></a><a name="references"></a>Elemento References
+## <a name="references-element"></a><a name="references"></a> Elemento References
  Agrupa elementos `Reference` individuais.
 
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contém as referências, as importações, as declarações e o código do snippet de código.|
 
-## <a name="shortcut-element"></a><a name="shortcut"></a>Elemento Shortcut
+## <a name="shortcut-element"></a><a name="shortcut"></a> Elemento Shortcut
  Especifica o texto do atalho usado para inserir o snippet. O valor de texto de um elemento `Shortcut` pode conter apenas caracteres alfanuméricos, hifens ( - ) e sublinhados ( _ ).
 
 > [!CAUTION]
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Elemento CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet)|Permite que você especifique um título e vários Snippets de Código IntelliSense, que podem ser inseridos em arquivos de código do Visual Studio.|
 
-## <a name="snippettype-element"></a><a name="snippettype"></a>Elemento SnippetType
+## <a name="snippettype-element"></a><a name="snippettype"></a> Elemento SnippetType
  Especifica como o Visual Studio insere o snippet de código.
 
 ```xml
@@ -625,7 +625,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica a descrição da Dica de Ferramenta a ser associada ao objeto ou literal no snippet de código.
 
-## <a name="type-element"></a><a name="type"></a>Elemento Type
+## <a name="type-element"></a><a name="type"></a> Elemento Type
  Especifica o tipo do objeto. O elemento `Object` é usado para identificar um item que é exigido pelo snippet de código, mas que provavelmente será definido fora do snippet em si. Por exemplo, os controles do Windows Forms, os controles do ASP.NET, as instâncias do objeto e as instâncias do tipo devem ser declarados como objetos. As declarações de objeto exigem que um tipo seja especificado, o que é feito com o elemento `Type`.
 
 ```xml
@@ -640,7 +640,7 @@ is a great color. I love Blue.
 
  Um valor de texto é obrigatório. Esse texto especifica o tipo do objeto.
 
-## <a name="url-element"></a><a name="url"></a>Elemento URL
+## <a name="url-element"></a><a name="url"></a> Elemento URL
  Especifica uma URL que fornece mais informações sobre o assembly referenciado.
 
 > [!NOTE]

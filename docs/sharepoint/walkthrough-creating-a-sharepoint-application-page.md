@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016488"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Walkthrough: criar uma página de aplicativo do SharePoint
@@ -150,7 +151,7 @@ Você pode aprender mais sobre como criar conteúdo de página do SharePoint usa
 
 - [Crie controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Como: criar uma página](../sharepoint/how-to-create-an-application-page.md) 
  de aplicativo [Tipo de página de _layouts de aplicativo](/previous-versions/office/aa979604(v=office.14))

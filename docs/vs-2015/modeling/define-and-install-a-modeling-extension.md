@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544983"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
@@ -109,7 +109,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 3. Se você usou **Iniciar sem depuração** , mas deseja usar o depurador, volte para a instância principal do Visual Studio. No menu **depurar** , clique em **anexar ao processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalando e desinstalando uma extensão
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalando e desinstalando uma extensão
  Execute as etapas a seguir para executar sua extensão na instância principal do Visual Studio em seu próprio computador ou em outros computadores.
 
 1. Em seu computador, localize o arquivo **. vsix** criado por seu projeto de extensão.
@@ -130,7 +130,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão
 
-1. No menu **Ferramentas**, clique em **Extensões e Atualizações**.
+1. Clique em **Extensões e Atualizações** no menu **Ferramentas**.
 
 2. Expanda **extensões instaladas**.
 

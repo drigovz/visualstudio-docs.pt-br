@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545048"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 não use algoritmos de criptografia desfeitos
@@ -38,9 +38,9 @@ ms.locfileid: "85545048"
 
  Para algoritmos de criptografia:
 
-- <xref:System.Security.Cryptography.DES>a criptografia contém um tamanho de chave pequeno, que pode ser forçado por uma força bruta em menos de um dia.
+- <xref:System.Security.Cryptography.DES> a criptografia contém um tamanho de chave pequeno, que pode ser forçado por uma força bruta em menos de um dia.
 
-- <xref:System.Security.Cryptography.RC2>a criptografia é suscetível a um ataque de chave relacionada, em que o invasor encontra relações matemáticas entre todos os valores de chave.
+- <xref:System.Security.Cryptography.RC2> a criptografia é suscetível a um ataque de chave relacionada, em que o invasor encontra relações matemáticas entre todos os valores de chave.
 
   Essa regra é disparada quando encontra qualquer uma das funções criptográficas acima no código-fonte e gera um aviso ao usuário.
 

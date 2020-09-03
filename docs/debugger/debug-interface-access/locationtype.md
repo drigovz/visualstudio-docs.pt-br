@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461213"
 ---
 # <a name="locationtype"></a>LocationType
@@ -42,29 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Elementos
-`LocIsNull`As informações de local não estão disponíveis.
+`LocIsNull` As informações de local não estão disponíveis.
 
-`LocIsStatic`O local é estático.
+`LocIsStatic` O local é estático.
 
-`LocIsTLS`O local está no armazenamento local de thread.
+`LocIsTLS` O local está no armazenamento local de thread.
 
-`LocIsRegRel`A localização é relativa ao registro.
+`LocIsRegRel` A localização é relativa ao registro.
 
-`LocIsThisRel`O local é `this` relativo.
+`LocIsThisRel` O local é `this` relativo.
 
-`LocIsEnregistered`O local está em um registro.
+`LocIsEnregistered` O local está em um registro.
 
-`LocIsBitField`O local está em um campo de bits.
+`LocIsBitField` O local está em um campo de bits.
 
-`LocIsSlot`O local é um slot MSIL (Microsoft Intermediate Language).
+`LocIsSlot` O local é um slot MSIL (Microsoft Intermediate Language).
 
-`LocIsIlRel`O local é MSIL-Relative.
+`LocIsIlRel` O local é MSIL-Relative.
 
-`LocInMetaData`O local está nos metadados.
+`LocInMetaData` O local está nos metadados.
 
-`LocIsConstant`O local está em um valor constante.
+`LocIsConstant` O local está em um valor constante.
 
-`LocTypeMax`O número de tipos de local nesta enumeração.
+`LocTypeMax` O número de tipos de local nesta enumeração.
 
 ## <a name="remarks"></a>Comentários
 As propriedades disponíveis para a interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dependem do local do símbolo dentro do arquivo de imagem. Para obter mais informações, consulte [locais de símbolo](../../debugger/debug-interface-access/symbol-locations.md).
@@ -74,7 +74,7 @@ Os valores nessa enumeração são retornados por uma chamada para o método [ID
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

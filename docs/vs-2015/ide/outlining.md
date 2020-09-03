@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 907d075f597799edd582c9f2bae693eac92c0b2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544957"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
@@ -49,6 +49,6 @@ Você pode optar por ocultar a exibição de algum código recolhendo uma regiã
 |Interromper Ocultação Atual|(CTRL + M, CTRL + U) – remove as informações de estrutura de tópicos para a região definida pelo usuário atualmente selecionada. Não disponível no Visual Basic.|
 |Recolher para Definições|(CTRL + M, CTRL + S) – recolhe os membros de todos os tipos.|
 |Recolher bloco:\<logical boundary>|(Visual C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
-|Recolher tudo em:\<logical structures>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
+|Recolher tudo em: \<logical structures>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
 
  Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).

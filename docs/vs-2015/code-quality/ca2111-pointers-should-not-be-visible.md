@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7429251a66ce2fe22a825a153cb90248faabb9fd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544359"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Ponteiros não devem ser visíveis
@@ -36,7 +36,7 @@ ms.locfileid: "85544359"
  Um campo público ou <xref:System.IntPtr?displayProperty=fullName> protegido <xref:System.UIntPtr?displayProperty=fullName> não é somente leitura.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.IntPtr>e <xref:System.UIntPtr> são tipos de ponteiro que são usados para acessar memória não gerenciada. Se um ponteiro não for privado, interno ou somente leitura, o código mal-intencionado poderá alterar o valor do ponteiro, potencialmente permitindo o acesso a locais arbitrários na memória ou causando falhas de aplicativo ou sistema.
+ <xref:System.IntPtr> e <xref:System.UIntPtr> são tipos de ponteiro que são usados para acessar memória não gerenciada. Se um ponteiro não for privado, interno ou somente leitura, o código mal-intencionado poderá alterar o valor do ponteiro, potencialmente permitindo o acesso a locais arbitrários na memória ou causando falhas de aplicativo ou sistema.
 
  Se você pretende proteger o acesso ao tipo que contém o campo ponteiro, consulte [CA2112: tipos protegidos não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 

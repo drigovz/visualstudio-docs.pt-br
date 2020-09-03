@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 7c1fafd3b21dd40da1215e7864c6d66090589d03
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328077"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de memória usando a linha de comando do criador de perfil
@@ -40,7 +40,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
      **VSPerfClrEnv /globaltracegc**
 
-     -ou-
+     - ou -
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -126,6 +126,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 3. Reinicie o computador.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Exibições de dados de memória do .NET](../profiling/dotnet-memory-data-views.md)
