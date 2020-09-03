@@ -25,7 +25,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312711"
+ms.locfileid: "89316131"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erros de depuração remota e solução de problemas
 

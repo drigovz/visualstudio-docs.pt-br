@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014643"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Como: Adicionar e remover pastas mapeadas
@@ -77,5 +78,5 @@ Você pode adicionar pastas mapeadas a um projeto usando comandos na barra de me
 
 3. Para remover uma pasta mapeada do projeto, abra o menu de atalho, escolha **excluir**e, em seguida, escolha o botão **OK** na caixa de diálogo para confirmar a remoção.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

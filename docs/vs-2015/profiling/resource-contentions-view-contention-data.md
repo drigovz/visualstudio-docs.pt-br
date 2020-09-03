@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149275"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
@@ -42,7 +42,7 @@ A exibição Contenção de Recursos lista os dados de contenção para os recur
   
 ## <a name="navigating-the-resource-allocation-view"></a>Navegando pela Exibição de alocação de recurso  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome**|O nome do recurso ou da função.|  
 |**Tempo Bloqueado Exclusivo**|-   Para um recurso, o tempo total que o acesso ao recurso foi bloqueado e fez o thread aguardar.<br />-   Para uma função, o tempo pelo qual essas instâncias da função foram impedidas de acessar o recurso pai quando a função estava executando código no corpo da função. Não inclui o tempo bloqueado nas funções que foram chamadas pela função.|  
@@ -53,10 +53,10 @@ A exibição Contenção de Recursos lista os dados de contenção para os recur
 |**% de Tempo Bloqueado Inclusivo**|-  Para um recurso, o percentual de todo o tempo bloqueado nos dados de criação de perfil que representou tempo bloqueado deste recurso<br />-   Para uma função, o percentual de todo o tempo bloqueado na execução da criação de perfil que representou o tempo bloqueado inclusivo dessas instâncias de função.|  
 |**Contenções Inclusivas**|-   Para um recurso, o número total de vezes que o acesso ao recurso foi bloqueado e fez um thread aguardar.<br />-   Para uma função, o percentual de todos os eventos de contenção na execução da criação de perfil que eram eventos de contenção inclusivos dessas instâncias de função para o recurso pai.|  
 |**% de Contenções Inclusivas**|-   Para um recurso, o percentual de todos os eventos de contenção na execução da criação de perfil que eram de contenção para acessar esse recurso.<br />-   Para uma função, o número de vezes que essas instâncias da função foram impedidas de acessar o recurso pai quando a função estava executando código no corpo da função. Não inclui o bloqueio de eventos em funções que foram chamadas pela função.|  
-|**Nível**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Level**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Nome do Módulo**|O nome do módulo que contém a função.|  
+|**Nome do módulo**|O nome do módulo que contém a função.|  
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|  
 |**ID do Processo**|A PID (ID do processo) do processo no qual a função estava sendo executada.|  
-|**Nome do Processo**|O nome do processo.|  
+|**Nome do processo**|O nome do processo.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|

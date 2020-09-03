@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731904"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-Representa um resumo de verificação de um documento de depuração e permite passar a soma de verificação entre os componentes.
+Representa uma soma de verificação para um documento de depuração e permite passar a soma de verificação entre componentes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentChecksum2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Essa interface pode ser implementada por qualquer componente que exponha a interface [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) No entanto, ele é implementado principalmente por mecanismos de depuração para que o resumo de verificação incorporado em um arquivo de símbolo (*.pdb) possa ser passado de volta para o IDE e usado ao encontrar uma fonte.
+ Essa interface pode ser implementada por qualquer componente que expõe a interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . No entanto, ele é implementado principalmente por mecanismos de depuração para que a soma de verificação inserida em um arquivo de símbolo (*. pdb) possa ser passada de volta para o IDE e usada durante a localização de uma origem.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugDocumentChecksum2`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugDocumentChecksum2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Recupera o resumo do documento e o identificador de algoritmo, dado o número máximo de bytes a serem usados.|
+|[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|Recupera a soma de verificação do documento e o identificador do algoritmo de acordo com o número máximo de bytes a serem usados.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

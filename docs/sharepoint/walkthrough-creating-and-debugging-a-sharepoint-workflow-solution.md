@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014624"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Walkthrough: criar e depurar uma solução de fluxo de trabalho do SharePoint
@@ -286,7 +287,7 @@ ms.locfileid: "86014624"
 
 - Para saber mais sobre Windows Workflow Foundation atividades, consulte [namespace System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Modelos de projeto e item de projeto do SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

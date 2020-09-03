@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605992"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Caixa de diálogo \> opções: Formatação JavaScript do Editor de \> Texto
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Caixa de diálogo opções: \> formatação JavaScript do editor de texto \>
 
-Use a página **Formatação** da caixa de diálogo **Opções** para definir opções para formatar código no Editor de Código. Para acessar esta página, na barra de menus, escolha **Opções de** > **ferramentas**e, em seguida, expanda a**formatação****JavaScript/TypeScript** > do **Editor** > de texto .
+Use a página **Formatação** da caixa de diálogo **Opções** para definir opções para formatar código no Editor de Código. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções**e expanda formatação do **Editor de texto**  >  **JavaScript/TypeScript**  >  **Formatting**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -66,7 +66,7 @@ Essas opções determinam como os espaços são inseridos na exibição do **Có
 |**Inserir espaço após ponto e vírgula nas instruções "for"**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço depois de cada ponto-e-vírgula na primeira linha de um loop `for`.|
 |**Inserir espaço antes e depois de operadores binários**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço antes e depois de operadores binários (por exemplo, +, -, &&, &#124;&#124;).|
 |**Inserir espaço após palavras-chaves em instruções de fluxo de controle**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço depois das palavras-chave JavaScript nas instruções de fluxo de controle.|
-|**Insira espaço após palavra-chave de função para funções anônimas**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço após a palavra-chave `function` para funções anônimas.|
+|**Inserir espaço após palavra-chave Function para funções anônimas**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço após a palavra-chave `function` para funções anônimas.|
 |**Inserir espaço após a abertura e antes de fechar parênteses não vazios**|Quando essa opção é selecionada, o Editor de Código adicionará um espaço após o parêntese de abertura e antes do parêntese de fechamento se houver caracteres não vazios dentro dos parênteses.|
 
 ## <a name="see-also"></a>Confira também

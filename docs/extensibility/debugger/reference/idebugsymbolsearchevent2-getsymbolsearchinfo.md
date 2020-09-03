@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: 'IDebugSymbolSearchEvent2:: GetSymbolSearchInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: be498154a8141c61f114682893d0aaf8b841cf95
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718890"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-Chamado por um manipulador de eventos para recuperar resultados sobre um processo de carga de símbolos.
+Chamado por um manipulador de eventos para recuperar resultados sobre um processo de carregamento de símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,24 +43,24 @@ int GetSymbolSearchInfo(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pModule`\
-[fora] Um objeto IDebugModule3 representando o módulo para o qual os símbolos foram carregados.
+fora Um objeto IDebugModule3 que representa o módulo para o qual os símbolos foram carregados.
 
 `pbstrDebugMessage`\
-[dentro, fora] Retorna uma seqüência contendo quaisquer mensagens de erro do módulo. Se não houver erro, então esta seqüência apenas conterá o nome do módulo, mas nunca está vazio.
+[entrada, saída] Retorna uma cadeia de caracteres que contém qualquer mensagem de erro do módulo. Se não houver nenhum erro, essa cadeia de caracteres conterá apenas o nome do módulo, mas nunca estará vazia.
 
 > [!NOTE]
-> [C++] `pbstrDebugMessage` não `NULL` pode ser e `SysFreeString`deve ser libertado com .
+> [C++] `pbstrDebugMessage` Não pode ser `NULL` e deve ser liberado com `SysFreeString` .
 
 `pdwModuleInfoFlags`\
-[fora] Uma combinação de bandeiras da [enumeração MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) indicando se algum símbolo foi carregado.
+fora Uma combinação de sinalizadores da enumeração [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) indicando se os símbolos foram carregados.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando um manipulador recebe o evento [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) após uma tentativa de carregar símbolos de depuração de um módulo, o manipulador pode chamar esse método para determinar os resultados dessa carga.
+ Quando um manipulador recebe o evento [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) depois que é feita uma tentativa de carregar símbolos de depuração para um módulo, o manipulador pode chamar Thismethod para determinar os resultados dessa carga.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

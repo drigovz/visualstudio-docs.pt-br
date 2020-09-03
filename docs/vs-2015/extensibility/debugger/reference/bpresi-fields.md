@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 52a4b9719b03c353dd3933c16b6f494f19f9c6ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153196"
 ---
-# <a name="bpresifields"></a>BPRESI_FIELDS
+# <a name="bpresi_fields"></a>BPRESI_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especifica as informações a serem recuperados sobre a resolução bem-sucedida de um ponto de interrupção.  
+Especifica as informações a serem recuperadas sobre a resolução bem-sucedida de um ponto de interrupção.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_BPRESI_FIELDS {   
@@ -47,32 +47,32 @@ public enum enum_BPRESI_FIELDS { 
   
 ## <a name="members"></a>Membros  
  BPRESI_BPRESLOCATION  
- Inicialização/usar o `bpResLocation` campo (localização de resolução de ponto de interrupção) a [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura.  
+ Inicializar/usar o `bpResLocation` campo (local de resolução de ponto de interrupção) da estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) .  
   
  BPRESI_PROGRAM  
- Inicialização/usar o `pProgram` campo do `BP_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `pProgram` campo da `BP_RESOLUTION_INFO` estrutura.  
   
  BPRESI_THREAD  
- Inicialização/usar o `pThread` campo do `BP_RESOLUTION_INFO` estrutura.  
+ Inicializar/usar o `pThread` campo da `BP_RESOLUTION_INFO` estrutura.  
   
  BPRESI_ALLFIELDS  
  Especifica todos os campos.  
   
 ## <a name="remarks"></a>Comentários  
- Passado para o [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) método para indicar quais campos da [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) são de estrutura a ser inicializado.  
+ Passado para o método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) para indicar quais campos da estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) devem ser inicializados.  
   
- Esses sinalizadores também são usados para indicar quais campos do `BP_RESOLUTION_INFO` estrutura são usados e válidos quando essa estrutura é retornada.  
+ Esses sinalizadores também são usados para indicar quais campos da `BP_RESOLUTION_INFO` estrutura são usados e válidos quando essa estrutura é retornada.  
   
- Esses valores podem ser combinados com um bit a bit `OR`.  
+ Esses valores podem ser combinados com um bit a bit `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)

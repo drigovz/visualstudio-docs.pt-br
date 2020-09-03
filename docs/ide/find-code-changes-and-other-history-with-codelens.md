@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588649"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
@@ -23,7 +23,7 @@ O CodeLens permite que você mantenha o foco no trabalho enquanto descobre o que
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> CodeLens está disponível na edição Visual Studio Community, no entanto, os indicadores *de controle de origem* não estão disponíveis nesta edição.
+> O CodeLens está disponível no Visual Studio Community Edition, no entanto, os indicadores de *controle do código-fonte* não estão disponíveis nesta edição.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Entre em contato com sua equipe sobre alterações em seu código sem sair do ed
 
 ![CodeLens – contate sua equipe](../ide/media/codelens-contact-info.png)
 
-Para escolher os indicadores que deseja ver ou desativar o CodeLens, acesse **Tools** > **Options** > **Text Editor** > **All Languages** > **CodeLens**.
+Para escolher os indicadores que você deseja ver ou desativar o CodeLens e voltar, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **CodeLens**.
 
 ## <a name="find-references-to-your-code"></a>Localize referências ao seu código
 
@@ -97,7 +97,7 @@ Isto é o que você vê ao usar o TFVC (Controle de Versão do Team Foundation) 
 
 O período de tempo padrão são os últimos 12 meses. Se o código estiver armazenado no Team Foundation Server, você poderá alterar o período executando o [comando TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) com o [comando CodeIndex](../ide/codeindex-command.md) e com o sinalizador **/indexHistoryPeriod**.
 
-Para ver um histórico detalhado de todas as alterações, incluindo as de mais de um ano atrás, escolha **Mostrar todas as alterações de arquivo:**
+Para ver um histórico detalhado de todas as alterações, incluindo as de mais de um ano atrás, escolha **Mostrar todas as alterações de arquivo**:
 
 ![Mostrar todas as alterações de código](../ide/media/codelens-show-all-file-changes.png)
 
@@ -118,7 +118,7 @@ Encontre alterações de um arquivo inteiro nos indicadores no nível do arquivo
 > [!NOTE]
 > Os indicadores no nível do arquivo não estão disponíveis para arquivos C# e Visual Basic.
 
-Para ver mais detalhes sobre uma alteração, clique com o botão direito do mouse nesse item. Dependendo se você estiver usando o TFVC ou o Git, haverá opções para comparar as versões do arquivo, exibir detalhes e acompanhar o conjunto de alterações, obter a versão selecionada do arquivo e enviar por email para o autor dessa alteração. Alguns desses detalhes aparecem no **Team Explorer**.
+Para ver mais detalhes sobre uma alteração, clique com o botão direito do mouse nesse item. Dependendo se você estiver usando o TFVC ou o Git, haverá opções para comparar as versões do arquivo, exibir detalhes e acompanhar o conjunto de alterações, obter a versão selecionada do arquivo e enviar por email para o autor dessa alteração. Alguns desses detalhes são exibidos em **Team Explorer**.
 
 É possível ver quem alterou seu código ao longo do tempo. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
@@ -130,7 +130,7 @@ Sua equipe pode ter vários branches, por exemplo, um branch principal e um bran
 
 ![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelensfirstbranchconceptual.png)
 
-Você pode descobrir quantas pessoas mudaram seu código e quantas alterações foram feitas no ramo principal pressionando **Alt**+**6**:
+Você pode descobrir quantas pessoas alteraram seu código e quantas alterações foram feitas na ramificação principal pressionando **ALT** + **6**:
 
 ![CodeLens: encontre quantas alterações foram feitas no branch](../ide/media/codelens-branch-changes.png)
 
@@ -164,7 +164,7 @@ Por exemplo, agora o código no branch Main tem a correção de bug do branch "D
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Comparar uma alteração recebida com a versão local
 
-Compare uma alteração recebida com a versão local pressionando **Shift**+**F10**ou clicando duas vezes no conjunto de alterações.
+Compare uma alteração de entrada com sua versão local pressionando **Shift** + **F10**ou clicando duas vezes no conjunto de alterações.
 
 ![CodeLens: comprar a alteração recebida com a versão local](../ide/media/codelens-branch-incoming-change-menu.png)
 
@@ -172,7 +172,7 @@ Compare uma alteração recebida com a versão local pressionando **Shift**+**F1
 
 O ícone na coluna **Branch** indica como o branch está relacionado ao branch no qual você está trabalhando.
 
-|**Ícone**|**A alteração foi proveniente de:**|
+|**Cone**|**A alteração foi proveniente de:**|
 |--------------| - |
 |![CodeLens: alteração de ícone do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
 |![CodeLens: alteração de ícone do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
@@ -219,7 +219,7 @@ Descubra testes de unidade existentes para o código C# ou Visual Basic sem abri
 
 2. Se você ainda não tiver feito isso, crie seu aplicativo para carregar os indicadores de teste do CodeLens. 
 
-3. Revise os testes para o código pressionando **Alt**+**3**.
+3. Examine os testes do código pressionando **ALT** + **3**.
 
      ![CodeLens – escolher o status do teste no editor de códigos](../ide/media/codelens-choose-test-indicator.png)
 
@@ -231,11 +231,11 @@ Descubra testes de unidade existentes para o código C# ou Visual Basic sem abri
 
      ![CodeLens – ir para a definição de teste de unidade](../ide/media/codelens-unit-test-definition.png)
 
-6. Para revisar os resultados do teste, escolha![o](../ide/media/codelenstestfailedicon.png) indicador ![de](../ide/media/codelenstestpassedicon.png)status do teste (ícone de falha no teste ou ícone aprovado no teste) ou **pressione Alt**+**1**.
+6. Para examinar os resultados do teste, escolha o indicador status do teste (ícone de ![ teste de falha ](../ide/media/codelenstestfailedicon.png) ou ![ ícone de teste aprovado ](../ide/media/codelenstestpassedicon.png) ) ou pressione **ALT** + **1**.
 
      ![CodeLens – ver o resultado do teste de unidade](../ide/media/codelens-unit-test-result.png)
 
-7. Para ver quantas pessoas mudaram este teste, quem mudou este teste, ou quantas alterações foram feitas neste teste, [encontre o histórico do seu código](#find-changes-in-your-code) e itens vinculados.
+7. Para ver quantas pessoas alteraram esse teste, quem alterou esse teste ou quantas alterações foram feitas nesse teste, [encontre o histórico do código](#find-changes-in-your-code) e os itens vinculados.
 
 ## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 
@@ -246,11 +246,11 @@ Para usar o teclado para selecionar indicadores, pressione a tecla **Alt** e man
 > [!NOTE]
 > Para selecionar o indicador **revisões**, mantenha **Alt** pressionado usando as teclas de seta para a esquerda e direita para navegar.
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Como desligo ou ligo o CodeLens ou escolho quais indicadores ver?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Como fazer ativar ou desativar CodeLens ou escolher quais indicadores ver?
 
-**R:** é possível ativar ou desativar indicadores, exceto o indicador de referências. Vá para **Ferramentas** > **Opções Editor** > **Text Editor** > de texto**Todos os idiomas** > **CodeLens**.
+**R:** é possível ativar ou desativar indicadores, exceto o indicador de referências. Vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **CodeLens**.
 
 Quando os indicadores são ativados, você pode abrir as opções do CodeLens nos indicadores.
 
@@ -264,18 +264,18 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 
 **R:** o CodeLens é exibido no código C# e Visual Basic no nível de método, classe, indexador e propriedade. O CodeLens é exibido no nível de arquivo para todos os outros tipos de arquivos.
 
-- Certifique-se que o CodeLens está ativado. Vá para **Ferramentas** > **Opções Editor** > **Text Editor** > de texto**Todos os idiomas** > **CodeLens**.
+- Certifique-se que o CodeLens está ativado. Vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **CodeLens**.
 
 - Se seu código estiver armazenado no TFS, certifique-se de que a indexação do código está ativada usando o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Os indicadores relacionados a DevOps são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme se você tem [permissões de membro da equipe](/azure/devops/organizations/security/view-permissions?view=vsts).
+- Os indicadores relacionados a DevOps são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme que você tem [permissões de membro da equipe](/azure/devops/organizations/security/view-permissions?view=vsts).
 
-- Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você sabe que o código do seu aplicativo tem testes unitários, mas os indicadores de teste não aparecem, tente construir a solução **(Ctrl**+**Shift**+**B**).
+- Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você souber que o código do aplicativo tem testes de unidade, mas os indicadores de teste não aparecerem, tente criar a solução (**Ctrl** + **Shift** + **B**).
 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> CodeLens está disponível na edição Visual Studio Community, no entanto, os indicadores *de controle de origem* não estão disponíveis nesta edição.
+> O CodeLens está disponível no Visual Studio Community Edition, no entanto, os indicadores de *controle do código-fonte* não estão disponíveis nesta edição.
 
 ::: moniker-end
 
@@ -312,13 +312,13 @@ O CodeLens não dá suporte a diferentes versões do Lync ou do Skype instaladas
 
 Para usar o teclado:
 
-1. Pressione **Alt**+**T**+**O** para abrir a caixa de diálogo **Opções.**
+1. Pressione **ALT** + **T** + **o** para abrir a caixa de diálogo **Opções** .
 
 2. Pressione **Seta para cima** ou **Seta para baixo** para acessar o nó **Ambiente**. Em seguida, pressione **Seta para a esquerda** para expandir o nó.
 
 3. Pressione **Seta para baixo** para acessar **Fontes e Cores**.
 
-4. Pressione **Guia** para ir para as **configurações de Mostrar para** lista e, em seguida, **pressione Seta** para baixo para selecionar **CodeLens**.
+4. Pressione **Tab** para ir para a lista **Mostrar configurações de** e, em seguida, pressione a **seta para baixo** para selecionar **CodeLens**.
 
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: Posso mover o HUD do CodeLens?
 
@@ -348,7 +348,7 @@ Para usar o teclado:
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: posso gerenciar a maneira como o CodeLens processa o código para mostrar o histórico e os itens vinculados?
 
-**A:** Sim. Se o código estiver no TFS, use o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
+**R:** Sim. Se o código estiver no TFS, use o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: Meus indicadores de teste do CodeLens não aparecem mais no meu arquivo quando abro minha solução pela primeira vez. Como posso carregá-los?
 

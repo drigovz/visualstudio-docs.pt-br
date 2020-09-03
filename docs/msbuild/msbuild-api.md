@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9d3cdaf2bcc7d7c62f7224c3a8c439d03282ef0
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371918"
 ---
 # <a name="use-the-msbuild-api"></a>Usar a API do MSBuild
 
 O MSBuild fornece uma superfície de API pública para que seu programa possa executar builds e inspecionar projetos. Versões recentes das APIs do MSBuild podem ser encontradas nos seguintes pacotes NuGet:
 
-| Nome do pacote | Description |
+| Nome do pacote | Descrição |
 | ------------ | ----------- |
 | [Microsoft. Build](https://www.nuget.org/packages/Microsoft.Build) | Contém o assembly Microsoft. Build, que é usado para criar, editar e avaliar projetos do MSBuild.|
 | [Microsoft.Build.Framework](https://www.nuget.org/packages/Microsoft.Build.Framework)| Contém o assembly de estrutura MSBuild comum usado por outros assemblies do MSBuild. |
@@ -33,7 +33,7 @@ Há várias versões diferentes da API do MSBuild e, para as versões 15 e 16, h
 A documentação da API do MSBuild pode ser encontrada usando o [navegador de API do .net](/dotnet/api)ou procurando os namespaces na lista a seguir.
 
 ::: moniker range="vs-2017"
-| Namespace | Aplica-se A | Description |
+| Namespace | Aplica-se A | Descrição |
 |-----------| -----------| ----------- |
 | [Microsoft. Build. Construction](/dotnet/api/Microsoft.Build.Construction?view=msbuild-15) | Tudo |  Contém tipos que o modelo de objeto do MSBuild usa para construir raízes de projeto com valores não avaliados. Cada raiz de projeto corresponde a um arquivo de projeto ou de destino. |
 | [Microsoft. Build. Definition](/dotnet/api/Microsoft.Build.Definition?view=msbuild-15) | Tudo | Contém a `ProjectOptions` classe, que dá suporte à construção do projeto. |
@@ -57,7 +57,7 @@ A documentação da API do MSBuild pode ser encontrada usando o [navegador de AP
 | [Microsoft.Build.Utilities](/dotnet/api/Microsoft.Build.Utilities?view=msbuild-15) | Tudo | Contém classes auxiliares que você pode usar para criar seus próprios agentes e tarefas do MSBuild.|
 :::moniker-end
 :::moniker range=">=vs-2019"
-| Namespace | Aplica-se A | Description |
+| Namespace | Aplica-se A | Descrição |
 |-----------| -----------| ----------- |
 | [Microsoft. Build. Construction](/dotnet/api/Microsoft.Build.Construction?view=msbuild-16) | Tudo |  Contém tipos que o modelo de objeto do MSBuild usa para construir raízes de projeto com valores não avaliados. Cada raiz de projeto corresponde a um arquivo de projeto ou de destino. |
 | [Microsoft. Build. Definition](/dotnet/api/Microsoft.Build.Definition?view=msbuild-16) | Tudo | Contém a `ProjectOptions` classe, que dá suporte à construção do projeto. |

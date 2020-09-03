@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 244c5e22fadaa17cb107dc2e733870fafe14477e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164096"
 ---
 # <a name="string-visualizer-dialog-box"></a>Caixa de diálogo Visualizador da Cadeia de Caracteres
@@ -36,6 +36,6 @@ ms.locfileid: "68164096"
 
 Esta caixa de diálogo é um dos visualizadores padrão fornecidos com o depurador do Visual Studio. Além de texto normal, o Visualizador de Cadeia de Caracteres pode avaliar cadeias de caracteres HTML e XML, permitindo que você exiba os resultados em um formato significativo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

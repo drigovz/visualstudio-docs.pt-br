@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461531"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
@@ -24,7 +24,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 
 Este documento não confere direitos para redistribuir o software externamente nem para fornecer ambientes de build a terceiros.
 
-> Isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e opiniões expressadas neste documento, incluindo URLs e outras referências a sites da Internet, podem ser alteradas sem aviso prévio. A Microsoft não oferece nenhuma garantia, explícita ou implícita, quanto às informações fornecidas aqui. Você assume o risco de usá-las.<br /><br />  Este documento não fornece a você nenhum direito legal a qualquer propriedade intelectual de qualquer produto da Microsoft. Você pode copiar e usar este documento para fins de consulta interna.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
+> Isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e opiniões expressadas neste documento, incluindo URLs e outras referências a sites da Internet, podem ser alteradas sem aviso prévio. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas. Você assume o risco de usá-las.<br /><br /> Este documento não fornece direitos legais e nenhuma propriedade intelectual sobre qualquer produto da Microsoft. Você pode copiar e usar este documento para fins de referência interna.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
 
 Este passo a passo foi validado nos seguintes sistemas operacionais:
 
@@ -102,9 +102,9 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - %ProgramFiles%\Common Files\Merge Modules\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\VC\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\ProjectComponents\
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\Tools\ProjectComponents\
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\
 
@@ -114,23 +114,23 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
 3. Copie estes arquivos do computador host para o computador de build:
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\msobj110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msobj110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdb110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdb110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdbcore.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbcore.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\mspdbsrv.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\mspdbsrv.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\msvcdis110.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\msvcdis110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\makehm.exe
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\makehm.exe
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\VCVarsQueryRegistry.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\VCVarsQueryRegistry.bat
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\Tools\vsvars32.bat
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\Tools\vsvars32.bat
 
-4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Os arquivos são tipicamente localizados em subpastas a *versão %ProgramFiles%\Microsoft Visual Studio\\\<>\\ \<edição>\VC\redist\x86* ou *%ProgramFiles%\Microsoft Visual\\\<Studio versão>\\ \<edição>\VC\redist\x64,* dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
+4. As seguintes bibliotecas de runtime do Visual C++ serão necessárias apenas se você executar saídas de build no computador de build, por exemplo, como parte do teste automatizado. Os arquivos normalmente estão localizados em subpastas na pasta *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x86* ou *%ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition> \VC\redist\x64* , dependendo da arquitetura do sistema. Em sistemas x86, copie os binários x86 para a pasta *Windows\System32*\. Em sistemas x64, copie os binários x86 para a pasta *Windows\SysWOW64* e os binários x64 para a *Windows\System32*.
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -192,7 +192,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
 Você deve criar entradas do Registro para definir configurações para MSBuild.
 
-1. Identifique a pasta pai para entradas do Registro. Todas as entradas de Registro são criadas sob a mesma chave pai. Em um computador x86, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Em um computador x64, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Independentemente da arquitetura do sistema, este passo a passo refere-se à chave pai como %RegistryRoot%.
+1. Identifique a pasta pai para entradas do Registro. Todas as entradas de Registro são criadas sob a mesma chave pai. Em um computador x86, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Em um computador x64, a chave pai é **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Independentemente da arquitetura do sistema, este passo a passo refere-se à chave pai como %RegistryRoot%.
 
     > [!NOTE]
     > Se a arquitetura do computador host for diferente do computador de build, certifique-se de usar a chave pai apropriado em cada computador. Isso é especialmente importante se você estiver automatizando o processo de exportação.
@@ -255,7 +255,7 @@ Para usar o MSBuild no computador de build, é preciso definir as variáveis de 
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Usar vcvarsall.bat para definir variáveis de ambiente
 
-Abra uma janela **Prompt de comando** no computador de compilação e execute *%Arquivos de programa%\Microsoft Visual\\\<Studio versão>\\ \<edição>\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
+Abra uma janela de **prompt de comando** no computador de compilação e execute *% Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition>\VC\vcvarsall.bat*. Você pode usar um argumento de linha de comando para especificar o conjunto de ferramentas que você deseja usar: x86, x64 nativo ou x64 de compilador cruzado. Se você não especificar um argumento de linha de comando, o conjunto de ferramentas x86 será usado.
 
 Esta tabela descreve os argumentos compatíveis com *vcvarsall.bat*:
 
@@ -271,7 +271,7 @@ Se *vcvarsall.bat* for executado com êxito – ou seja, nenhuma mensagem de err
 
 1. Para configurar manualmente o ambiente de linha de comando, adicione este caminho à variável de ambiente PATH:
 
-    - %Program Files%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE
+    - % Program Files%\Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE
 
 2. Opcionalmente, você também pode adicionar os seguintes caminhos à variável PATH para tornar mais fácil usar o MSBuild para compilar suas soluções.
 
@@ -295,15 +295,15 @@ O MSBuild requer que alguns assemblies adicionais sejam instalados no GAC do com
 
     - %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll
 
-    - %ProgramFiles%\Microsoft Visual Studio\\\<versão>\\\<edição>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
+    - %ProgramFiles%\Microsoft Visual Studio \\ \<version> \\ \<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
 2. Para instalar os assemblies no GAC, localize *gacutil.exe* no computador de build; normalmente, ele está em %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se você não conseguir localizar essa pasta, repita as etapas na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo.
 
      Abra uma janela do **Prompt de Comando** que tem direitos administrativos e execute este comando para cada arquivo:
 
-     **gacutil -i \<file>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Uma reinicialização pode ser necessária para um assembly ser instalado totalmente no GAC.
@@ -339,7 +339,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         para
+         como
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -349,7 +349,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         para
+         como
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

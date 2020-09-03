@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589312"
 ---
 # <a name="image-editor"></a>Editor de imagem
@@ -30,11 +30,11 @@ O **Editor de Imagens** dá suporte aos seguintes formatos de imagem:
 |Nome do formato|Extensão de nome de arquivo|
 |-----------------| - |
 |Formato PNG (Portable Network Graphics)|*.png*|
-|JPEG|*.jpg*, *.jpeg*, *.jpe*, *.jfif*|
+|JPEG|*. jpg*, *. jpeg*, *. jpe*, *. JFIF*|
 |Direct Draw Surface|*.dds*|
-|Formato GIF (Graphics Interchange Format)|*.gif*|
-|Bitmap|*.bmp,* *.dib*|
-|Formato TIFF|*.tif,* *.tiff*|
+|Formato GIF (Graphics Interchange Format)|*. gif*|
+|Bitmap|*. bmp*, *. dib*|
+|Formato TIFF|*. tif*, *. TIFF*|
 |Formato TGA (Targa)|*.tga*|
 
 ## <a name="get-started"></a>Introdução
@@ -48,7 +48,7 @@ Esta seção descreve como adicionar uma imagem ao seu projeto do Visual Studio 
 2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e escolha um formato de arquivo apropriado para a imagem.
 
    > [!NOTE]
-   > Se você não vir a categoria **Elementos Gráficos** na caixa de diálogo **Adicionar Novo Item**, talvez seja necessário instalar o componente **Editores de imagens e modelos 3D**. Feche a caixa de diálogo e selecione **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menu, para abrir o Visual Studio **Installer**. Selecione a guia **Componentes individuais** e, em seguida, selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**. Selecione **Modificar**.
+   > Se você não vir a categoria **Elementos Gráficos** na caixa de diálogo **Adicionar Novo Item**, talvez seja necessário instalar o componente **Editores de imagens e modelos 3D**. Feche a caixa de diálogo e, em seguida, selecione **ferramentas**  >  **obter ferramentas e recursos** na barra de menus para abrir o **instalador do Visual Studio**. Selecione a guia **Componentes individuais** e, em seguida, selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**. Selecione **Modificar**.
    >
    > ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 
@@ -101,9 +101,9 @@ Antes de começar a trabalhar com a imagem criada, você pode alterar sua config
 
 ## <a name="work-with-the-image-editor"></a>Trabalhar com o Editor de Imagens
 
-Esta seção descreve como usar o **Editor de Imagens** para modificar texturas e imagens.
+Esta seção descreve como usar o **Editor de imagem** para modificar texturas e imagens.
 
-Os comandos que afetam o estado do Editor de **imagens** estão localizados na barra de ferramentas **do Modo Editor** de Imagens, juntamente com comandos avançados. A barra de ferramentas está localizada ao longo da borda superior da superfície de design **do Image Editor.** As ferramentas de desenho estão localizadas na barra de ferramentas do **Editor de Imagens** ao longo da borda mais à esquerda da superfície de design do **Image Editor.**
+Os comandos que afetam o estado do **Editor de imagem** estão localizados na barra de ferramentas do **modo editor de imagem** junto com comandos avançados. A barra de ferramentas está localizada ao longo da borda superior da superfície de design do **Editor de imagem** . As ferramentas de desenho estão localizadas na barra de ferramentas do **Editor de imagens** na borda mais à esquerda da superfície de design do **Editor de imagens** .
 
 ### <a name="image-editor-mode-toolbar"></a>Barra de ferramentas Modo do Editor de Imagens
 
@@ -116,41 +116,41 @@ A tabela a seguir descreve os itens na barra de ferramentas **Modo do Editor de 
 |**Selecionar**|Habilita a seleção de uma região retangular de uma imagem. Depois de selecionar uma região, você poderá recortar, copiar, mover, ajustar escala, girar, inverter ou excluir. Quando há uma seleção ativa, as ferramentas de desenho só afetam a região selecionada.|
 |**Seleção Irregular**|Habilita a seleção de uma região irregular de uma imagem. Depois de selecionar uma região, você poderá recortar, copiar, mover, ajustar escala, girar, inverter ou excluir. Quando há uma seleção ativa, as ferramentas de desenho só afetam a região selecionada.|
 |**Seleção de Varinha**|Habilita a seleção de uma região de cor semelhante de uma imagem. A *tolerância*, ou seja, a diferença máxima entre cores adjacentes na qual elas são consideradas semelhantes, pode ser configurada para incluir um intervalo maior ou menor de cores semelhantes. Depois de selecionar uma região, você poderá recortar, copiar, mover, ajustar escala, girar, inverter ou excluir. Quando há uma seleção ativa, as ferramentas de desenho só afetam a região selecionada.|
-|**Panorâmica**|Habilita a movimentação da imagem em relação ao quadro de janela. No modo **Panorâmica**, selecione um ponto na imagem e mova-o.<br /><br /> Você pode ativar temporariamente o modo **Pan** pressionando e segurando a tecla **Ctrl.**|
-|**Zoom**|Habilita a exibição de mais ou menos detalhes da imagem em relação ao quadro de janela. No modo **Aplicar Zoom**, selecione um ponto na imagem e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> Você pode aumentar ou diminuir pressionando e segurando **Ctrl** enquanto você usa**+** a roda**-** do mouse ou pressione o sinal de mais ( ) ou sinal de menos ().|
+|**Panorâmica**|Habilita a movimentação da imagem em relação ao quadro de janela. No modo **Panorâmica**, selecione um ponto na imagem e mova-o.<br /><br /> Você pode ativar temporariamente o modo **panorâmico** pressionando e segurando a tecla **Ctrl** .|
+|**Zoom**|Habilita a exibição de mais ou menos detalhes da imagem em relação ao quadro de janela. No modo **Aplicar Zoom**, selecione um ponto na imagem e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> Você pode ampliar ou reduzir pressionando e mantendo **Ctrl** enquanto usa a roda do mouse ou pressiona o sinal de adição () ou o sinal de **+** subtração ( **-** ).|
 |**Aplicar Zoom para o Tamanho Real**|Exibe a imagem usando uma relacionamento 1:1 entre os pixels da imagem e os pixels da tela.|
 |**Aplicar zoom para ajustar**|Exibe a imagem completa no quadro de janela.|
 |**Zoom para a largura**|Exibe a largura completa da imagem no quadro de janela.|
-|**Grade**|Habilita ou desabilita a grade que mostra os limites de pixel. A grade pode não aparecer até você ampliar a imagem.|
+|**Grid**|Habilita ou desabilita a grade que mostra os limites de pixel. A grade pode não aparecer até você ampliar a imagem.|
 |**Exibição do Próximo Nível de MIP**|Ativa o próximo nível maior de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|
 |**Exibir um Nível de MIP Anterior**|Ativa o próximo nível menor de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|
 |**Canal vermelho**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita ou desabilita o canal da cor específica. **Observação:** habilitando ou desabilitando sistematicamente os canais de cor, você pode isolar problemas relacionados a um ou mais deles. Por exemplo, você poderia identificar a transparência alfa incorreta.|
-|**Fundo**|Habilita ou desabilita a exibição da tela de fundo através das partes transparentes da imagem. Você pode configurar como a tela de fundo é exibida escolhendo entre estas opções:<br /><br /> **Quadriculado**<br /> Usa uma cor verde junto com a cor da tela de fundo especificada para exibir a tela de fundo como um padrão quadriculado. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.<br /><br /> Tela de fundo branco<br /> Usa a cor branca para exibir a tela de fundo.<br /><br /> Tela de fundo preto<br /> Usa a cor preta para exibir a tela de fundo.<br /><br /> Animar a tela de fundo<br /> Movimenta o padrão quadriculado lentamente em panorâmica. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.|
+|**Tela de fundo**|Habilita ou desabilita a exibição da tela de fundo através das partes transparentes da imagem. Você pode configurar como a tela de fundo é exibida escolhendo entre estas opções:<br /><br /> **Quadriculado**<br /> Usa uma cor verde junto com a cor da tela de fundo especificada para exibir a tela de fundo como um padrão quadriculado. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.<br /><br /> Tela de fundo branco<br /> Usa a cor branca para exibir a tela de fundo.<br /><br /> Tela de fundo preto<br /> Usa a cor preta para exibir a tela de fundo.<br /><br /> Animar a tela de fundo<br /> Movimenta o padrão quadriculado lentamente em panorâmica. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.|
 |**Propriedades**|Alterna entre abrir e fechar a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Motores Gráficos**<br /><br /> **Renderização com D3D11**<br /> Usa direct3D 11 para renderizar a superfície de design do **Image Editor.**<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa o Direct3D 11 Windows Advanced Rasterization Platform (WARP) para tornar o design do **Image Editor** superficial.<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP gerados, você deve usar o formato *.dds* para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:** Você pode escolher o botão **Avançado** para executar o último comando novamente.|
+|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Mecanismos gráficos**<br /><br /> **Renderizar com D3D11**<br /> Usa o Direct3D 11 para renderizar a superfície de design do **Editor de imagem** .<br /><br /> **Renderizar com o D3D11WARP**<br /> Usa a WARP (plataforma de rasterização avançada do Windows) do Direct3D 11 para renderizar a superfície de design do **Editor de imagem** .<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP gerados, você deve usar o formato *. DDS* para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:** Você pode escolher o botão **avançado** para executar o último comando novamente.|
 
 ### <a name="image-editor-toolbar"></a>Barra de ferramentas do editor de imagens
 
 ![Barra de ferramentas do editor de imagens](../designers/media/digit-tre-toolbar.png)
 
-A tabela a seguir descreve os itens na barra de ferramentas **do Image Editor,** que estão listados na ordem em que aparecem de cima para baixo:
+A tabela a seguir descreve os itens na barra de ferramentas do **Editor de imagem** , que são listados na ordem em que aparecem de cima para baixo:
 
 |Item da barra de ferramentas|Descrição|
 |------------------|-----------------|
 |**Lápis**|Usa a seleção de cor ativa para desenhar um traço com alias. Você pode definir a cor e a espessura do traço na janela **Propriedades**.|
-|**Escova**|Usa a seleção de cor ativa para desenhar um traço suavizado. Você pode definir a cor e a espessura do traço na janela **Propriedades**.|
+|**Pincel**|Usa a seleção de cor ativa para desenhar um traço suavizado. Você pode definir a cor e a espessura do traço na janela **Propriedades**.|
 |**Spray**|Usa a seleção de cor ativa para desenhar um traço suavizado que se mescla à imagem e se torna mais saturado com o decorrer do tempo. Você pode definir a cor e a espessura do traço na janela **Propriedades**.|
 |**Conta-gotas**|Define a seleção de cor ativa para a cor do pixel selecionado.|
 |**Preencher**|Usa a seleção de cor ativa para preencher uma região da imagem. A região afetada é definida como o pixel em que o preenchimento é aplicado, junto com cada pixel conectado a ele por pixels da mesma cor e que são a mesma cor em si. Se o preenchimento for aplicado em uma seleção ativa, a região afetada ficará restringida pela seleção.<br /><br /> Por padrão, a seleção de cor ativa é mesclada com a região afetada da imagem de acordo com seu componente alfa. Para usar a seleção de cores ativa para substituir a região afetada, pressione e segure a tecla **Shift** ao usar a ferramenta de preenchimento.|
 |**Borracha**|Define pixels para a cor totalmente transparente se a imagem der suporte a um canal alfa. Caso contrário, define os pixels para a cor da tela de fundo ativa.|
-|**Linha**, **Retângulo**, **Retângulo Arredondado**, **Elipse**|Desenha uma forma na imagem. Você pode definir a cor e a espessura da estrutura de tópicos na janela **Propriedades**.<br /><br /> Para desenhar um primitivo que tenha largura e altura iguais, pressione e segure **Shift** enquanto você desenha.|
-|**Texto**|Usa a seleção de cor de primeiro plano para desenhar o texto. A cor da tela de fundo é determinada pela seleção de cor da tela de fundo. Para uma tela de fundo transparente, o valor alfa da seleção da cor da tela de fundo deve ser 0. Quando a região de texto estiver ativa, você pode definir se o texto é desenhado com um traço suavizado ou pode definir o **Valor**, **Fonte**, **Tamanho** e o estilo — **Negrito**, **Itálico** ou **Sublinhado** — do texto na janela **Propriedades**. O conteúdo e a aparência do texto é finalizada quando a região de texto não está mais ativa.|
+|**Linha**, **Retângulo**, **Retângulo Arredondado**, **Elipse**|Desenha uma forma na imagem. Você pode definir a cor e a espessura da estrutura de tópicos na janela **Propriedades**.<br /><br /> Para desenhar um primitivo com largura e altura iguais, pressione e mantenha a **tecla Shift** pressionada ao desenhar.|
+|**Text**|Usa a seleção de cor de primeiro plano para desenhar o texto. A cor da tela de fundo é determinada pela seleção de cor da tela de fundo. Para uma tela de fundo transparente, o valor alfa da seleção da cor da tela de fundo deve ser 0. Quando a região de texto estiver ativa, você pode definir se o texto é desenhado com um traço suavizado ou pode definir o **Valor**, **Fonte**, **Tamanho** e o estilo — **Negrito**, **Itálico** ou **Sublinhado** — do texto na janela **Propriedades**. O conteúdo e a aparência do texto é finalizada quando a região de texto não está mais ativa.|
 |**Girar**|Gira a imagem 90 graus no sentido horário.|
-|**Guarnição**|Corta a imagem para a seleção ativa.|
+|**Trim**|Corta a imagem para a seleção ativa.|
 
 ### <a name="work-with-mip-levels"></a>Trabalhar com níveis de MIP
 
-Alguns formatos de imagem, por exemplo, o DirectDraw Surface (*.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis MIP, consulte [Como: Criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Alguns formatos de imagem, por exemplo, o DirectDraw Surface (*.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis MIP, consulte [como: criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Trabalhar com transparência
 
@@ -161,7 +161,7 @@ A tabela a seguir descreve como os diferentes tipos ferramentas controlam como a
 |Ferramenta|Descrição|
 |----------|-----------------|
 |**Lápis**, **Pincel**, **Spray**, **Linha**, **Retângulo**, **Retângulo Arredondado**, **Elipse**, **Texto**|Para mesclar a seleção de cor ativa com a imagem na janela **Propriedades**, expanda o grupo de propriedades **Canais**, marque a caixa de seleção **Desenhar** no canal **Alfa** e desenhe normalmente.<br /><br /> Para desenhar usando a seleção de cor ativa e deixar o valor alfa da imagem em vigor, desmarque a caixa de seleção **Desenhar** do canal **Alfa** e, em seguida, desenhe normalmente.|
-|**Preencher**|Para mesclar a seleção de cor ativa junto com a imagem, escolha a área a ser preenchida.<br /><br /> Para usar a seleção ativa de cores — incluindo o valor do canal alfa — para substituir a imagem, pressione e segure **Shift** e escolha a área a ser preenchida.|
+|**Preencher**|Para mesclar a seleção de cor ativa junto com a imagem, escolha a área a ser preenchida.<br /><br /> Para usar a seleção de cor ativa, incluindo o valor do canal alfa, para substituir a imagem, pressione e mantenha pressionada a **tecla Shift** e escolha a área a ser preenchida.|
 
 ### <a name="image-properties"></a>Propriedades da imagem
 
@@ -179,16 +179,16 @@ A tabela a seguir descreve as propriedades da imagem:
 |Nível de MIP|O nível de MIP ativo. Este item só está disponível para texturas que têm níveis de MIP.|
 |Contagem de Nível de Mip|O número total de níveis de MIP na imagem. Este item só está disponível para texturas que têm níveis de MIP.|
 |Contagem de Quadros|O número total de quadros na imagem. Este item só está disponível para imagens que dão suporte a matrizes de textura.|
-|Frame|O quadro atual. Somente o primeiro quadro pode ser exibido; todos os outros quadros são perdidos quando a imagem é salva.|
+|Quadro|O quadro atual. Somente o primeiro quadro pode ser exibido; todos os outros quadros são perdidos quando a imagem é salva.|
 |Contagem de Fatia de Profundidade|O número total de fatias de profundidade na imagem. Este item só está disponível para imagens que dão suporte a texturas de volume.|
 |Fatia de Profundidade|A fatia de profundidade atual. Somente a primeira fatia pode ser exibida; todas as outras fatias são perdidas quando a imagem é salva.|
 
 > [!NOTE]
-> Como a propriedade **Girar por** se aplica a todas as ferramentas e regiões selecionadas, ela sempre aparece na parte inferior da janela **Propriedades** junto com outras propriedades de ferramenta. **Girar por** sempre é exibido, pois a imagem inteira é implicitamente selecionada quando não há nenhuma outra seleção ou ferramenta ativa. Para obter mais informações sobre o **Rotate by** property, consulte propriedades [da ferramenta](#tool -properties).
+> Como a propriedade **Girar por** se aplica a todas as ferramentas e regiões selecionadas, ela sempre aparece na parte inferior da janela **Propriedades** junto com outras propriedades de ferramenta. **Girar por** sempre é exibido, pois a imagem inteira é implicitamente selecionada quando não há nenhuma outra seleção ou ferramenta ativa. Para obter mais informações sobre a propriedade **girar por** , consulte [Propriedades da ferramenta](#tool -properties).
 
 ### <a name="resize-images"></a>Redimensionar imagens
 
-Há duas maneiras de redimensionar uma imagem. Em ambos os casos, o **Editor de Imagens** usa interpolação bilinear para reamostrar a imagem.
+Há duas maneiras de redimensionar uma imagem. Em ambos os casos, o **Editor de imagem** usa interpolação bilinear para reamostrar a imagem.
 
 - Na janela **Propriedades**, especifique os novos valores para as propriedades **Largura** e **Altura**.
 
@@ -217,11 +217,11 @@ A tabela a seguir descreve as combinações de teclas modificadoras válidas:
 |Ctrl|Turno|Alt|Descrição|
 |----------|-----------|---------|-----------------|
 ||||Redimensiona o conteúdo da região selecionada.|
-||**Turno**||Redimensiona proporcionalmente o conteúdo da região selecionada.|
+||**Alternância**||Redimensiona proporcionalmente o conteúdo da região selecionada.|
 |||**Alt**|Redimensiona a região selecionada. Isso define uma nova região de seleção.|
-||**Turno**|**Alt**|Redimensiona proporcionalmente a região selecionada. Isso define uma nova região de seleção.|
-|**Ctrl**|||Copia e redimensiona o conteúdo da região selecionada.|
-|**Ctrl**|**Turno**||Copia e redimensiona proporcionalmente o conteúdo da região selecionada.|
+||**Alternância**|**Alt**|Redimensiona proporcionalmente a região selecionada. Isso define uma nova região de seleção.|
+|**Teclas**|||Copia e redimensiona o conteúdo da região selecionada.|
+|**Teclas**|**Alternância**||Copia e redimensiona proporcionalmente o conteúdo da região selecionada.|
 
 ### <a name="tool-properties"></a>Propriedades da ferramenta
 
@@ -235,10 +235,10 @@ A tabela a seguir descreve as propriedades da ferramenta:
 |----------|----------------|
 |Todas as ferramentas e seleções|**Girar por**<br /> Define a quantidade, em graus, que o efeito da seleção ou ferramenta é girado no sentido horário.|
 |**Lápis**, **Pincel**, **Spray**, **Borracha**|**Espessura**<br /> Define o tamanho da área afetada pela ferramenta.|
-|**Texto**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Valor**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Tamanho**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|
+|**Text**|**Antialias**<br /> Desenha o texto com bordas suavizadas. Isso fornece ao texto uma aparência mais suave.<br /><br /> **Valor**<br /> O texto a ser desenhado.<br /><br /> **Fonte**<br /> A fonte usada para desenhar o texto.<br /><br /> **Tamanho**<br /> O tamanho do texto.<br /><br /> **Negrito**<br /> Transforma a fonte em negrito.<br /><br /> **Itálico**<br /> Transforma a fonte em itálico.<br /><br /> **Sublinhado**<br /> Transforma a fonte em sublinhado.|
 |**Primitivo 2D**|**Antialias**<br /> Desenha primitivos com bordas suavizadas. Isso concede ao texto uma aparência mais suave.<br /><br /> **Espessura**<br /> Define a espessura da linha de que forma o limite do primitivo.<br /><br /> **Raio X**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas superior e inferior do primitivo.<br /><br /> **Raio Y**<br /> (Somente retângulo arredondado) Define o raio de arredondamento para as bordas esquerda e direita do primitivo.|
-|**Lápis,** **escova,** **escova de ar,** **2D primitivo**|**Canais**<br /> Habilita ou desabilita os canais de cor específicos para exibição e desenho. Se a **Exibição** for definida como um canal de cor específico, esse canal estará visível na imagem; caso contrário, ele não será visível. Se **Desenhar** estiver definido para um canal de cor específico, tal canal será afetado por operações de desenho; caso contrário, ele não será.|
-|**Seleção de Varinha**, **Preenchimento**|**Tolerância**<br /> Define a diferença máxima entre cores adjacentes dentro da qual elas são consideradas semelhantes, para que cores menos ou mais semelhantes façam parte da região afetada ou selecionada. Por padrão, o valor é 32, o que significa que pixels adjacentes em 32 tons (mais claros ou mais escuros) da cor original são considerados como parte da região.|
+|**Lápis**, **pincel**, **aerógrafo**, **primitivo 2D**|**Canais**<br /> Habilita ou desabilita os canais de cor específicos para exibição e desenho. Se a **Exibição** for definida como um canal de cor específico, esse canal estará visível na imagem; caso contrário, ele não será visível. Se **Desenhar** estiver definido para um canal de cor específico, tal canal será afetado por operações de desenho; caso contrário, ele não será.|
+|**Seleção de Varinha**, **Preenchimento**|**Tolerável**<br /> Define a diferença máxima entre cores adjacentes dentro da qual elas são consideradas semelhantes, para que cores menos ou mais semelhantes façam parte da região afetada ou selecionada. Por padrão, o valor é 32, o que significa que pixels adjacentes em 32 tons (mais claros ou mais escuros) da cor original são considerados como parte da região.|
 
 ## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 
@@ -247,47 +247,47 @@ A tabela a seguir descreve as propriedades da ferramenta:
 |Mudar para o modo **Selecionar**|**S**|
 |Mudar para o modo **Zoom**|**Z**|
 |Mudar para o modo **Panorâmico**|**K**|
-|Selecionar tudo|**Ctrl**+**A**|
-|Excluir a seleção atual|**Excluir**|
-|Cancelar a seleção atual|**Esc** (fuga)|
-|Ampliar|**Roda do mouse ctrl**+**para a frente**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Mais Sinal**+**( )|
-|Reduzir|**Roda do mouse ctrl**-**para trás**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Sinal de**-** menos ( )|
+|Selecionar tudo|**Ctrl** + **Um**|
+|Excluir a seleção atual|**Delete (excluir)**|
+|Cancelar a seleção atual|**ESC** (escape)|
+|Ampliar|**Ctrl** + **Avanço da roda do mouse**<br /><br /> **Ctrl** + **PageUp**<br /><br /> Sinal de adição ( **+** )|
+|Reduzir|**Ctrl** - **Rolagem do mouse para trás**<br /><br /> **Ctrl** - **PageDown**<br /><br /> Sinal de subtração ( **-** )|
 |Movimentar a imagem para cima em panorama|**Botão de rolagem do mouse para trás**<br /><br /> **PageDown**|
 |Movimentar a imagem para baixo em panorama|**Botão de rolagem do mouse para frente**<br /><br /> **PageUp**|
-|Movimentar a imagem para a esquerda em panorama|**Roda**+do mouse shift**para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Página de**+**turnoparabaixo**|
-|Movimentar a imagem para a direita em panorama|**Roda**+de mouse shift**para a frente**<br /><br /> **Botão de rolagem do mouse para a direita**<br /><br /> **Shift**+**PageUp**|
-|Aplicar zoom para o tamanho real|**Ctrl**+**0** (zero)|
-|Ajustar a imagem à janela|**Ctrl**+**G,** **Ctrl**+**F**|
-|Ajustar a imagem à largura da janela|**Ctrl**+**G**, **Ctrl**+**I**|
-|Ativar/desativar grade|**Ctrl**+**G,** **Ctrl**+**G**|
-|Recortar imagem para a seleção atual|**Ctrl**+**G,** **Ctrl**+**C**|
-|Exibir próximo nível de MIP (mais detalhes)|**Ctrl**+**G,** **Ctrl**+**6**|
-|Exibir nível anterior de MIP (menos detalhes)|**Ctrl**+**G,** **Ctrl**+**7**|
-|Ativar/desativar canal de cor vermelha|**Ctrl**+**G,** **Ctrl**+**1**|
-|Ativar/desativar canal de cor verde|**Ctrl**+**G**, **Ctrl**+**2**|
-|Ativar/desativar canal de cor azul|**Ctrl**+**G,** **Ctrl**+**3**|
-|Ativar/desativar o canal alfa (transparência)|**Ctrl**+**G,** **Ctrl**+**4**|
-|Ativar/desativar o padrão quadriculado alfa|**Ctrl**+**G**, **Ctrl**+**B**|
+|Movimentar a imagem para a esquerda em panorama|**Shift** + **Rolagem do mouse para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Shift** + **PageDown**|
+|Movimentar a imagem para a direita em panorama|**Shift** + **Avanço da roda do mouse**<br /><br /> **Botão de rolagem do mouse para a direita**<br /><br /> **Shift** + **PageUp**|
+|Aplicar zoom para o tamanho real|**Ctrl** + **0** (zero)|
+|Ajustar a imagem à janela|**Ctrl** + **G**, **Ctrl** + **F**|
+|Ajustar a imagem à largura da janela|**Ctrl** + **G**, **Ctrl** + **I**|
+|Ativar/desativar grade|**Ctrl** + **G**, **Ctrl** + **g**|
+|Recortar imagem para a seleção atual|**Ctrl** + **G**, **Ctrl** + **C**|
+|Exibir próximo nível de MIP (mais detalhes)|**Ctrl** + **G**, **Ctrl** + **6**|
+|Exibir nível anterior de MIP (menos detalhes)|**Ctrl** + **G**, **Ctrl** + **7**|
+|Ativar/desativar canal de cor vermelha|**Ctrl** + **G**, **Ctrl** + **1**|
+|Ativar/desativar canal de cor verde|**Ctrl** + **G**, **Ctrl** + **2**|
+|Ativar/desativar canal de cor azul|**Ctrl** + **G**, **Ctrl** + **3**|
+|Ativar/desativar o canal alfa (transparência)|**Ctrl** + **G**, **Ctrl** + **4**|
+|Ativar/desativar o padrão quadriculado alfa|**Ctrl** + **G**, **Ctrl** + **B**|
 |Mudar para a ferramenta Seleção Irregular|**L**|
 |Mudar para a ferramenta Seleção de Varinha|**M**|
 |Mudar para a ferramenta Lápis|**P**|
 |Mudar para a ferramenta Pincel|**B**|
-|Mudar para a ferramenta Preenchimento|**F**|
-|Mudar para a ferramenta Borracha|**E**|
+|Mudar para a ferramenta Preenchimento|**Fixo**|
+|Mudar para a ferramenta Borracha|**Oriental**|
 |Mudar para a ferramenta Texto|**T**|
 |Mudar para a ferramenta Seleção de Cor (conta-gotas)|**I**|
-|Move a seleção ativa e seu conteúdo.|**As teclas de flecha.**|
-|Redimensiona a seleção ativa e seu conteúdo.|**Teclas de**+**seta** ctrl|
-|Move a seleção ativa, mas não seu conteúdo.|**Teclas de**+**seta** de mudança|
-|Redimensiona a seleção ativa, mas não seu conteúdo.|**Teclas**+**de seta** **ctrl**+de mudança|
-|Confirmar a camada atual|**Retorno**|
+|Move a seleção ativa e seu conteúdo.|Teclas de **direção** .|
+|Redimensiona a seleção ativa e seu conteúdo.|**Ctrl** + Teclas de **direção**|
+|Move a seleção ativa, mas não seu conteúdo.|**Shift** + Teclas de **direção**|
+|Redimensiona a seleção ativa, mas não seu conteúdo.|**Shift** + **Ctrl** + Teclas de **direção**|
+|Confirmar a camada atual|**Exibir**|
 |Diminuir a espessura da ferramenta|**[**|
 |Aumentar a espessura da ferramenta|**]**|
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas que você pode usar no Visual Studio para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de modelos](../designers/model-editor.md)|Descreve como usar o Editor de Modelos do Visual Studio para trabalhar com modelos 3D.|
-|[Designer de sombreado](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|
+|[Designer de sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do Visual Studio para trabalhar com sombreadores.|

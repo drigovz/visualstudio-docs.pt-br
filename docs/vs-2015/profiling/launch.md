@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154759"
 ---
 # <a name="launch"></a>Inicializar
@@ -36,14 +36,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Opções válidas  
  As seguintes opções de VSPerfCmd podem ser combinadas com a opção **Inicializar** em uma única linha de comando.  
   
- **Iniciar:** `Method`  
+ **Início:**`Method`  
  Inicializa a sessão de criador de perfil de linha de comando e define o método de criação de perfil especificado.  
   
- **GlobalOn** e **GlobalOff**  
+ **Globalize** e **GlobalOff**  
  Retoma (**GlobalOn**) ou pausa (**GlobalOff**) a criação de perfil, mas não termina a sessão de criação de perfil.  
   
- **ProcessOn:** `PID` e **ProcessOff**:`PID`  
- Retoma (**ProcessOn**) ou pausa (**ProcessOff**) a criação de perfil para o processo especificado.  
+ **Processo:** `PID` e **ProcessOff**:`PID`  
+  Retoma (**ProcessOn**) ou pausa (**ProcessOff**) a criação de perfil para o processo especificado.  
   
  **TargetCLR**  
  Especifica a versão do CLR (Common Language Runtime) do .NET Framework a ser analisada quando mais de uma versão for carregada em uma sessão de criação de perfil. Por padrão, a primeira versão carregada é analisada.  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Inicia o aplicativo de linha de comando especificado em uma nova janela.  
   
- **Args:** `ArgList`  
+ **Args:**`ArgList`  
  Especifica a lista de argumentos a serem passados para o aplicativo.  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Opções de amostragem  
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando **Inicializar**. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.  
   
- **Temporizador**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Contador**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**alocação**&#124;**tempo de vida**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**Sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[:**alocação**&#124;**tempo de vida**]  
  Especifica o número e o tipo do intervalo de amostragem.  
   
 - **Temporizador** – exemplifica cada ciclo de relógio do processador `Cycles` não interrompido. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.  
@@ -74,7 +74,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 - **Contador** – exemplifica cada número `Reload` do contador de desempenho de CPU especificado por `Name`. Opcionalmente, `FriendlyName` pode especificar uma cadeia de caracteres para usar como o cabeçalho de coluna nos relatórios do criador de perfil.  
   
-- **GC** – Coleta dados da memória de .NET. Por padrão (**alocação**), os dados são coletados em todos os eventos de alocação da memória. Quando o parâmetro **tempo de vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.  
+- **GC** – Coleta dados da memória de .NET. Por padrão (**alocação**), os dados são coletados em todos os eventos de alocação da memória. Quando o parâmetro de **tempo de vida** é especificado, os dados também são coletados em cada evento de coleta de lixo.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo demonstra o uso de **Inicializar** para iniciar um aplicativo.  
@@ -84,8 +84,8 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criação de perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

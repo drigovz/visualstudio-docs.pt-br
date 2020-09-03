@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184205"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
@@ -37,7 +37,7 @@ Pressione **F5** (**depurar > iniciar depuração**) ou o botão **Iniciar Depur
 
 Os pontos de interrupção são um recurso útil quando você sabe qual linha ou seção de código deseja examinar em detalhes.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a>Navegar pelo código no depurador usando comandos Step
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Navegar pelo código no depurador usando comandos Step
 
 Nós fornecemos os atalhos de teclado para a maioria dos comandos porque eles tornam a navegação pelo código do aplicativo mais rápida. (Os comandos equivalentes, como comandos de menu, são mostrados entre parênteses).
 

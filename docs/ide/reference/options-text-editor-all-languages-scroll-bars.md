@@ -33,10 +33,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75588792"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem
@@ -53,7 +53,7 @@ Quando selecionada, exibe uma barra de rolagem horizontal, que permite rolar de 
 
 Quando selecionada, exibe uma barra de rolagem vertical que permite rolar para cima e para baixo para exibir os elementos que estão fora da área de exibição do Editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.
 
-## <a name="display"></a>Exibição
+## <a name="display"></a>Monitor
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Mostrar anotações sobre a barra de rolagem vertical
 

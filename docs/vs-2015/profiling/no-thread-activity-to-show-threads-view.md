@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205867"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Nenhuma atividade de thread a ser mostrada (exibição de threads)
@@ -35,5 +35,5 @@ Essa área mostra dados sobre threads não ocultos no intervalo de tempo visíve
   
 - Verifique se a Redução de Ruído está definida com um limite baixo.  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de Threads](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>Consulte Também  
+ [Modo de Exibição de Threads](../profiling/threads-view-parallel-performance.md)

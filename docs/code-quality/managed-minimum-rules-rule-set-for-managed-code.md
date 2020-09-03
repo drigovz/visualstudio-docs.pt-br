@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587349"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Conjunto de regras mínimas gerenciado para código gerenciado
@@ -24,4 +24,4 @@ As regras mínimas gerenciadas se concentram nos problemas mais críticos em seu
 |[CA1001](../code-quality/ca1001.md)|Tipos com campos descartáveis devem ser descartáveis|
 |[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
 |[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
-|[CA2231](../code-quality/ca2231.md)|Sobrecarga do operador Equals ao substituir `ValueType.Equals`|
+|[CA2231](../code-quality/ca2231.md)|Sobrecarga do operador EQUAL na substituição `ValueType.Equals`|

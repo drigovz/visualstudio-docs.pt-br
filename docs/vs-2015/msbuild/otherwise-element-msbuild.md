@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acf285c895e5160e850b6bc8f20f920279a5e26c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154785"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
@@ -40,7 +40,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
  \<Choose>  
  ...  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Otherwise>  
@@ -54,26 +54,26 @@ Especifica o bloco de código a executar se e somente se as condições de todos
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|  
+|[Escolha](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um elemento `Otherwise`.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de definidos elementos [Property](../msbuild/property-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `PropertyGroup` em um elemento `Otherwise`.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|  
+|[Escolha](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|  
   
 ## <a name="remarks"></a>Comentários  
  Pode haver apenas um elemento `Otherwise` em um elemento `Choose` e ele deve ser o último elemento.  
   
- Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar diversas alternativas possíveis. Para obter mais informações, confira [ Constructos condicionais](../msbuild/msbuild-conditional-constructs.md).  
+ Os elementos `Choose`, `When` e `Otherwise` são usados juntos para fornecer uma maneira de selecionar uma seção de código para executar entre diversas possíveis alternativas. Para obter mais informações, consulte [constructos condicionais](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Exemplo  
  O seguinte projeto usa o `Choose` elemento para selecionar o conjunto de valores de propriedades no elemento `When` a ser definido. Se os `Condition` atributos de ambos `When` elementos são avaliadas como `false`, os valores de propriedades no elemento `Otherwise` são definidos.  
@@ -123,6 +123,6 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Constructos condicionais](../msbuild/msbuild-conditional-constructs.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

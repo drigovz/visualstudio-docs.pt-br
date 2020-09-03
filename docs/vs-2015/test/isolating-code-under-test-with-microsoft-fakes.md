@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660477"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolando código em teste com falsificação da Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes do aplicativo por *stubs* ou *shims*. Esses são pequenos trechos de código sob o controle de seus testes. Ao isolar seu código para teste, você sabe que se o teste falhar, a causa está lá e não em outro lugar. Stubs e shims também permitem que você teste seu código mesmo que outras partes do aplicativo ainda não estejam funcionando.
+As falsificações da Microsoft ajudam você a isolar o código que você está testando, substituindo outras partes do aplicativo por *stubs* ou *shims*. Esses são pequenos trechos de código sob o controle de seus testes. Ao isolar seu código para teste, você sabe que se o teste falhar, a causa está lá e não em outro lugar. Stubs e shims também permitem que você teste seu código mesmo que outras partes do aplicativo ainda não estejam funcionando.
 
  O Fakes vem em duas versões:
 
@@ -26,9 +26,9 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
 
 - Um [shim](#shims) modifica o código compilado do aplicativo no tempo de execução para que, em vez de fazer uma chamada de método específica, ele execute o código shim que fornecido pelo teste. Os shims podem ser usados para substituir chamadas para assemblies que você não pode modificar, como assemblies do .NET.
 
-  ![Falsificações substituem outros componentes](../test/media/fakes-2.png "Falsificações-2")
+  ![As falsificações substituem outros componentes](../test/media/fakes-2.png "Falsificações-2")
 
-  **Requirements**
+  **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -51,7 +51,7 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
 
  Em geral, recomendamos que você use tipos de stub para isolar das dependências dentro de sua base de código. É possível fazer isso ocultando os componentes atrás das interfaces. Os tipos de shims podem ser usados para isolar de componentes de terceiros que não oferecem uma API testável.
 
-## <a name="stubs"></a> Introdução aos stubs
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> Introdução aos stubs
  Para obter uma descrição mais detalhada, consulte [Usando stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
 1. **Injetar interfaces**
@@ -81,7 +81,7 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
 
     2. Selecione a referência ao assembly em que a interface (por exemplo, IStockFeed) é definida. No menu de atalho dessa referência, escolha **Adicionar Assembly do Fakes**.
 
-    3. Recompile a solução.
+    3. Recriar a solução.
 
 3. Em seus testes, construa instâncias do stub e forneça o código para seus métodos:
 
@@ -141,11 +141,11 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
 
     ```
 
-     A parte especial da mágica aqui é a classe `StubIStockFeed`. Para cada interface no assembly referenciado, o mecanismo Microsoft Fakes gera uma classe de stub. O nome da classe de stub é derivado do nome da interface, com "`Fakes.Stub`" como um prefixo e os nomes de tipo de parâmetro anexados.
+     A parte especial da mágica aqui é a classe `StubIStockFeed`. Para cada interface no assembly referenciado, o mecanismo Microsoft Fakes gera uma classe de stub. O nome da classe de stub é derivado do nome da interface, com " `Fakes.Stub` " como um prefixo e os nomes de tipo de parâmetro anexados.
 
      Os stubs também são gerados para getters e setters de propriedades, para eventos e métodos genéricos. Para obter mais informações, consulte [Usando stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="shims"></a> Introdução aos shims
+## <a name="getting-started-with-shims"></a><a name="shims"></a> Introdução aos shims
  Para obter uma descrição mais detalhada, consulte [Usando shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
  Suponhamos que seu componente contenha chamadas para `DateTime.Now`:
@@ -247,4 +247,4 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
  [Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Convenções de nomenclatura, geração de código e compilação no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+ [Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

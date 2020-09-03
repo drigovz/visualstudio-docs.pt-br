@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545763"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: direcionar aplicativos do Office por meio de assemblies de interoperabilidade primária
@@ -51,7 +51,7 @@ ms.locfileid: "85545763"
 
      O nome do assembly aparece na pasta **References** de **Gerenciador de soluções**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Assemblies de interoperabilidade primária do Office](../vsto/office-primary-interop-assemblies.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

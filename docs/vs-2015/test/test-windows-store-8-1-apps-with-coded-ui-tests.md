@@ -9,10 +9,10 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce4c6ceec9489abcd3573c126aefe98a268187c3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660439"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 da Windows Store com testes de UI codificados
@@ -32,7 +32,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 2. Crie um novo projeto para um aplicativo da Windows Store baseado em XAML usando um modelo Visual C# ou Visual Basic.
 
-     ![Criar um XAML do aplicativo &#40;em branco da Windows Store&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
+     ![Criar um aplicativo em branco da Windows Store &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")
 
 3. No Gerenciador de Soluções, abra MainPage.xaml. Na Caixa de Ferramentas, arraste um controle de botão e um controle de caixa de texto para a superfície do design.
 
@@ -66,7 +66,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 1. Crie um novo projeto de teste de IU codificado para o aplicativo da Windows Store.
 
-    ![Nova interface do usuário codificada &#40;Tet aplicativos da Windows Store&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
+    ![Novo projeto de Tet de interface do usuário codificado &#40;aplicativos da Windows Store&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")
 
 2. Escolha editar o mapa de interface do usuário usando a ferramenta de fios.
 
@@ -78,7 +78,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 4. No aplicativo da Windows Store em execução, use a ferramenta de fios para selecionar o controle de botão e o controle de caixa de texto. Depois de adicionar cada controle, escolha o botão **Adicionar controle ao mapa de controle de interface do usuário** na barra de ferramentas do Construtor de Teste de IU Codificado.
 
-    ![Adicionar controle ao mapa de interface do usuário](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
+    ![Adicionar um controle ao mapa de interface do usuário](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")
 
 5. Escolha o botão **Gerar Código** na barra de ferramentas do Construtor de Teste de IU Codificado e escolha **Gerar** para criar o código para alterações no mapa de controle de interface do usuário.
 
@@ -86,7 +86,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 6. Escolha o botão para definir um valor na caixa de texto.
 
-    ![Clique no controle de botão para definir o valor da caixa de texto](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
+    ![Clicar no controle de botão para definir o valor da caixa de texto](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")
 
 7. Use a ferramenta de fios para selecionar o controle de caixa de texto e, em seguida, selecione a propriedade **Text**.
 
@@ -94,19 +94,19 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
 8. Adicione uma asserção. Ela será usada no teste para verificar se o valor está correto.
 
-    ![Escolher testbox com cruz&#45;e adicionar asserção](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
+    ![Escolha testbox com cruz&#45;cabelo e adicione asserção](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")
 
 9. Adicione e gere o código para a asserção.
 
-     ![Gerar código para asserção de caixa de texto](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
+     ![Gerar código para a asserção de caixa de texto](../test/media/cuit-windowsstoreapp-textbox-generate-assertion.png "CUIT_WindowsStoreApp_Textbox_Generate_Assertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      No Gerenciador de Soluções, abra o arquivo UIMap.Designer.cs para exibir o código adicionado aos controles e ao método assert.
 
      **Visual Basic**
 
-     No Gerenciador de Soluções, abra o arquivo CodedUITest1.vb e, no código do método de teste CodedUITestMethod1(), clique com o botão direito do mouse na chamada ao método de declaração adicionado automaticamente `Me.UIMap.AssertMethod1()` e escolha **Ir para Definição**. Isso abrirá o arquivo UIMap.Designer.vb no editor de código para ser possível exibir o código adicionado aos controles e ao método assert.
+     No Gerenciador de Soluções, abra o arquivo CodedUITest1.vb e, no código do método de teste CodedUITestMethod1(), clique com o botão direito do mouse na chamada para o método de declaração adicionado automaticamente `Me.UIMap.AssertMethod1()` e escolha **Ir para Definição**. Isso abrirá o arquivo UIMap.Designer.vb no editor de código para ser possível exibir o código adicionado aos controles e ao método assert.
 
     > [!WARNING]
     > Não modifique o arquivo UIMap.designer.cs ou UIMap.Designer.vb diretamente. Se fizer isso, as alterações no arquivo serão substituídas sempre que o teste for gerado.
@@ -290,9 +290,9 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
      Depois da conclusão do teste, o gerenciador de testes exibe que o teste foi aprovado.
 
-     ![Vídeos aprovados são exibidos no Test Explorer](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
+     ![A mensagem "Teste aprovado" é exibida no Gerenciador de Testes](../test/media/cuit-windowsstorapp-passedtest.png "CUIT_WindowsStorApp_PassedTest")
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 - **P: Por que não vejo a opção para registrar meu teste de IU codificado na caixa de diálogo Gerar Código para Teste de IU Codificado?**
 
@@ -311,9 +311,9 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
    **R**: Dependendo da plataforma em que você está testando o aplicativo UWP, crie o projeto de teste de IU codificado de uma destas maneiras:
 
-  - Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)** . Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.
+  - Um aplicativo UWP em execução no computador local será executado como um aplicativo da Loja. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows**.
 
-  - Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)** . Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.
+  - Um aplicativo UWP em execução em um emulador ou dispositivo móvel será executado como um aplicativo do Windows Phone. Para testar isso, é necessário usar o modelo **Projeto de Teste de IU Codificado (Windows Phone)**. Para encontrar esse modelo ao criar um novo projeto, acesse o nó **Windows**, **Universal**. Se preferir, acesse o nó **Windows**, **Windows 8**, **Windows Phone**.
 
     Depois de criar o projeto, a criação de um teste permanece a mesma que antes.
 
@@ -321,5 +321,5 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
    **R**: Todas as alterações de código feitas no arquivo UIMapDesigner.cs serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [defina uma propriedade de automação exclusiva para controles da Windows Store para teste](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
