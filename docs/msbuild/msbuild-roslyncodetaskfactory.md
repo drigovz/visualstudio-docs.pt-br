@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289203"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tarefas embutidas do MSBuild com RoslynCodeTaskFactory
@@ -261,7 +261,7 @@ Essas tarefas embutidas podem combinar caminhos e obter o nome do arquivo.
 
 ## <a name="provide-backward-compatibility"></a>Fornecer compatibilidade com versões anteriores
 
-`RoslynCodeTaskFactory`disponibilizado pela primeira vez no MSBuild versão 15,8. Suponha que você tenha uma situação em que deseja dar suporte a versões anteriores do Visual Studio e do MSBuild, quando `RoslynCodeTaskFactory` o não estava disponível, mas `CodeTaskFactory` era, mas você deseja usar o mesmo script de compilação. Você pode usar uma `Choose` construção que usa a `$(MSBuildVersion)` propriedade para decidir no momento da compilação se deseja usar `RoslynCodeTaskFactory` ou retornar para `CodeTaskFactory` , como no exemplo a seguir:
+`RoslynCodeTaskFactory` disponibilizado pela primeira vez no MSBuild versão 15,8. Suponha que você tenha uma situação em que deseja dar suporte a versões anteriores do Visual Studio e do MSBuild, quando `RoslynCodeTaskFactory` o não estava disponível, mas `CodeTaskFactory` era, mas você deseja usar o mesmo script de compilação. Você pode usar uma `Choose` construção que usa a `$(MSBuildVersion)` propriedade para decidir no momento da compilação se deseja usar `RoslynCodeTaskFactory` ou retornar para `CodeTaskFactory` , como no exemplo a seguir:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -310,7 +310,7 @@ Essas tarefas embutidas podem combinar caminhos e obter o nome do arquivo.
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Passo a passo: Criar uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462269"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
@@ -48,4 +48,4 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classes.
 ## <a name="see-also"></a>Confira também
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-- [Símbolos e marcas de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

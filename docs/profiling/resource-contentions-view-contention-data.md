@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778330"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
@@ -51,10 +51,10 @@ A exibição Contenção de Recursos lista os dados de contenção para os recur
 |**% de Tempo Bloqueado Inclusivo**|-  Para um recurso, o percentual de todo o tempo bloqueado nos dados de criação de perfil que representou tempo bloqueado deste recurso<br />-   Para uma função, o percentual de todo o tempo bloqueado na execução da criação de perfil que representou o tempo bloqueado inclusivo dessas instâncias de função.|
 |**Contenções Inclusivas**|-   Para um recurso, o número total de vezes que o acesso ao recurso foi bloqueado e fez um thread aguardar.<br />-   Para uma função, o percentual de todos os eventos de contenção na execução da criação de perfil que eram eventos de contenção inclusivos dessas instâncias de função para o recurso pai.|
 |**% de Contenções Inclusivas**|-   Para um recurso, o percentual de todos os eventos de contenção na execução da criação de perfil que eram de contenção para acessar esse recurso.<br />-   Para uma função, o número de vezes que essas instâncias da função foram impedidas de acessar o recurso pai quando a função estava executando código no corpo da função. Não inclui o bloqueio de eventos em funções que foram chamadas pela função.|
-|**Nível**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
+|**Level**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
 |**ID do Processo**|A PID (ID do processo) do processo no qual a função estava sendo executada.|
 |**Nome do processo**|O nome do processo.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|

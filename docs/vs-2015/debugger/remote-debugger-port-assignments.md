@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2628d8929a0d2b6fd3561f88c81cfaa3b62564f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542097"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
@@ -46,7 +46,7 @@ O Depurador Remoto do Visual Studio pode ser executado como um aplicativo ou com
 ## <a name="the-discovery-port"></a>A porta de descoberta  
  O UDP 3702 é usado para localizar instâncias em execução do depurador remoto na rede (por exemplo, a caixa de diálogo **Localizar** na caixa de diálogo **anexar ao processo** ). Ele é usado apenas para descobrir um computador que executa o depurador remoto, portanto, é opcional se você tiver alguma outra forma de saber o nome do computador ou o endereço IP de um dos computadores de destino. Essa é uma porta padrão para descoberta, portanto, o número da porta não pode ser configurado.  
   
- Se não quiser habilitar a descoberta, você poderá iniciar o msvsmon na linha de comando com a descoberta desabilitada: **msvsmon/noDiscovery**.  
+ Se não quiser habilitar a descoberta, você poderá iniciar o msvsmon na linha de comando com a descoberta desabilitada:  **msvsmon/noDiscovery**.  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Portas do depurador remoto no Azure  
  As portas a seguir são usadas pelo depurador remoto no Azure. As portas no serviço de nuvem são mapeadas para as portas na VM individual. Todas as portas são TCP.  

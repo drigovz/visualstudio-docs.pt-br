@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545074"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
@@ -132,17 +132,17 @@ Este artigo contém as seguintes tarefas para integradores do Visualizador da aj
 
  O corpo (sem incluir o cabeçalho e o rodapé) do tópico conterá links de página, uma seção de observação, uma área recolhível, um trecho de código e uma seção de texto específico de idioma.  Consulte a seção identidade visual para obter informações sobre essas áreas do tópico apresentado.
 
-1. Adicione uma marca de título de tópico:`<div class="title">Contoso Topic 4</div>`
+1. Adicione uma marca de título de tópico:  `<div class="title">Contoso Topic 4</div>`
 
-2. Adicionar uma seção de observação:`<div class="alert"> add your table tag and text </div>`
+2. Adicionar uma seção de observação: `<div class="alert"> add your table tag and text </div>`
 
-3. Adicione uma área recolhível:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Adicione uma área recolhível:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Adicione um trecho de código:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Adicionar texto específico à linguagem de código: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que devLangnu = permite que você insira outros idiomas. Por exemplo, devLangnu = "Fortran" exibirá o Fortran quando o trecho de código DisplayLanguage = Fortran
+5. Adicionar texto específico à linguagem de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que devLangnu = permite que você insira outros idiomas. Por exemplo, devLangnu = "Fortran" exibirá o Fortran quando o trecho de código DisplayLanguage = Fortran
 
-6. Adicionar links de página:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Adicionar links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Observação: para uma nova colorização de código "idioma de vídeo" (exemplo, F #, COBOL, Fortran) sem suporte no trecho de código será monocromático.
@@ -436,14 +436,14 @@ some F# code
 
 Recurso: **CollapsibleArea** use: expande recolhe o texto de controle de conteúdo
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |ExpandText|Expanda|
 |CollapseText|Recolher|
 
 Recurso:**CodeSnippet** use: texto de controle de trecho de código.  Observação: o conteúdo do trecho de código com espaço "não separável" será alterado para espaço.
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |CopyToClipboard|Copiar para a Área de Transferência|
 |ViewColorizedText|Exibir colorido|
@@ -453,7 +453,7 @@ Recurso:**CodeSnippet** use: texto de controle de trecho de código.  Observaç�
 
 Recurso: **comentários, rodapé e** uso do logotipo: forneça um controle de comentários para que o cliente forneça comentários sobre o tópico atual por email.  Texto de direitos autorais do conteúdo.  Definição do logotipo.
 
-|**Elemento**|**Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)**|
+|**Element**|**Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)**|
 |-|-|
 |Internacionais|© 2013 Microsoft Corporation. Todos os direitos reservados.|
 |SendFeedback|\<a href="{0}" {1}>Envie comentários \</a> sobre este tópico para a Microsoft.|
@@ -464,7 +464,7 @@ Recurso: **comentários, rodapé e** uso do logotipo: forneça um controle de co
 
 Recurso: uso de **isenção** : um conjunto de isenções de responsabilidade específicas para conteúdo traduzido do computador.
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |MT_Editable|Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_NonEditable|Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
@@ -475,7 +475,7 @@ Recurso: uso de **isenção** : um conjunto de isenções de responsabilidade es
 
 Recurso: use **linktable** : suporte para links de tópico online
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |LinkTableTitle|Vincular tabela|
 |TopicEnuLinkText|Exiba a versão em inglês \</a> deste tópico que está disponível no seu computador.|
@@ -484,7 +484,7 @@ Recurso: use **linktable** : suporte para links de tópico online
 
 Recurso: uso de **controle de áudio de vídeo** : exibir elementos e texto para conteúdo de vídeo
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |MultiMediaNotSupported|O Internet Explorer 9 ou superior deve estar instalado para dar suporte ao {0} conteúdo.|
 |VideoText|exibindo vídeo|
@@ -494,7 +494,7 @@ Recurso: uso de **controle de áudio de vídeo** : exibir elementos e texto para
 
 Recurso: **conteúdo não instalado controle** uso: elementos de texto (cadeias de caracteres) usados para a renderização de contentnotinstalled.htm
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |ContentNotInstalledTitle|Nenhum conteúdo foi encontrado no seu computador.|
 |ContentNotInstalledDownloadContentText|\<p>Para baixar o conteúdo para o seu computador, \<a href="{0}" {1}> clique na guia Gerenciar \</a> .\</p>|
@@ -502,7 +502,7 @@ Recurso: **conteúdo não instalado controle** uso: elementos de texto (cadeias 
 
 Recurso: **tópico não encontrado** uso de controle: elementos de texto (cadeias de caracteres) usados para a renderização de topicnotfound.htm
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |TopicNotFoundTitle|Não é possível localizar o tópico solicitado no seu computador.|
 |TopicNotFoundViewOnlineText|\<p>O tópico solicitado não foi encontrado no seu computador, mas você pode \<a href="{0}" {1}> Exibir o tópico online \</a> .\</p>|
@@ -511,14 +511,14 @@ Recurso: **tópico não encontrado** uso de controle: elementos de texto (cadeia
 
 Recurso: **tópico uso de controle corrompido** : elementos de texto (cadeias de caracteres) usados para a renderização de topiccorrupted.htm
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |TopicCorruptedTitle|Não é possível exibir o tópico solicitado.|
 |TopicCorruptedViewOnlineText|\<p>O Visualizador da ajuda não pode exibir o tópico solicitado. Pode haver um erro no conteúdo do tópico ou em uma dependência de sistema subjacente.\</p>|
 
 Recurso: uso de **controle de página inicial** : texto que dá suporte à exibição do conteúdo do nó de nível superior do Help Viewer.
 
-|**Elemento**|**Valor**|
+|**Element**|**Valor**|
 |-|-|
 |HomePageTitle|Página inicial do Help Viewer|
 |HomePageIntroduction|\<p>Bem-vindo ao Microsoft Help Viewer, uma fonte essencial de informações para todos que usam ferramentas, produtos, tecnologias e serviços da Microsoft. O Help Viewer fornece acesso a informações de instruções e referência, código de exemplo, artigos técnicos e muito mais. Para localizar o conteúdo de que você precisa, procure o Sumário, use a pesquisa de texto completo ou navegue pelo conteúdo usando o índice de palavra-chave.\</p>|
@@ -540,7 +540,7 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 |Definir e obter valores de cookie|GetCookie, SetCookie||
 |Membro herdado|changeMembersLabel|Expandir/recolher membro herdado|
 |Quando SelfBranded = false|Carregamento|Leia a cadeia de caracteres de consulta para verificar se é uma solicitação de impressão.  Defina todos os trechos para focalizar a guia preferencial do usuário.  Se for uma solicitação de impressão, defina isPrinterFriendly como true. Verifique o modo de alto contraste.|
-|Trecho de código|addSpecificTextLanguageTagSet||
+|Snippet de código|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
 ||setCodesnippetLang||
@@ -569,25 +569,25 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 
  O pacote de identidade visual contém um conjunto de arquivos HTM que dão suporte a cenários para a comunicação de informações de chave para ajudar os usuários de conteúdo, por exemplo, uma home page que contém uma seção que descreve quais conjuntos de conteúdo são instalados e as páginas que dizem ao usuário quando os tópicos não podem ser encontrados no conjunto de tópicos local. Esses arquivos HTM podem ser modificados por produto.  Os fornecedores de shell ISO são capazes de usar o pacote de identidade visual padrão e alterar o comportamento e o conteúdo dessas páginas para atender às suas necessidades.  Esses arquivos fazem referência ao respectivo pacote de identidade visual para que as marcas de identidade visual obtenham o conteúdo correspondente do arquivo de branding.xml.
 
-|**Arquivo**|**Utilizá**|**Fonte de conteúdo exibida**|
+|**Arquivo**|**Uso**|**Fonte de conteúdo exibida**|
 |-|-|-|
 |homepage.htm|Esta é uma página que exibe o conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Esse arquivo tem o atributo de metadados adicional "Microsoft.Help.Id" content = "-1", que coloca esse conteúdo na parte superior do Sumário de conteúdo local.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, marca\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, marca\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, marca\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|A seção de título Branding.xml marca \<HomePageInstalledBooks> , os dados gerados do aplicativo, \<HomePageNoBooksInstalled> quando nenhum livro é instalado.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, marca \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, marca \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, marca \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|A seção de título Branding.xml marca \<HomePageInstalledBooks> , os dados gerados do aplicativo,  \<HomePageNoBooksInstalled> quando nenhum livro é instalado.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Seção de título Branding.xml marca \<HomePageHelpSettings> , texto da seção \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Quando um tópico existe no conjunto local, mas por algum motivo não pode ser exibido (conteúdo corrompido).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, marca\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, marca\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, marca \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, marca \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Quando um tópico não é encontrado no conjunto de conteúdo local, nem está disponível online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, marca\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, marca\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, marca\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, marca \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, marca \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, marca \<TopicNotFoundText>|
 |contentnotinstalled.htm|Quando não há nenhum conteúdo local instalado para o produto.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, marca\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, marca\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, marca\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, marca \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, marca \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, marca \<ContentNotInstalledText>|
 
  **Arquivos CSS**
 
@@ -603,7 +603,7 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 
   O conteúdo do Visual Studio exibe um logotipo do Visual Studio, bem como outros gráficos.  A lista completa de arquivos gráficos no pacote de identidade visual do Visualizador da ajuda é mostrada abaixo.
 
-|**Arquivo**|**Utilizá**|**Exemplos**|
+|**Arquivo**|**Uso**|**Exemplos**|
 |-|-|-|
 |clear.gif|Usado para renderizar a área recolhível||
 |footer_slice.gif|Apresentação de rodapé||
@@ -747,9 +747,9 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 
   Para criar uma extensão de shell isolada:
 
-1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade**e, em seguida, escolha **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
+1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade**e, em seguida, escolha  **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
 
-2. No Gerenciador de Soluções, no projeto ContosoHelpShellUI, na pasta arquivos de recursos, abra ApplicationCommands. vsct. Verifique se essa linha foi comentada (pesquise por "No_Help"):`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. No Gerenciador de Soluções, no projeto ContosoHelpShellUI, na pasta arquivos de recursos, abra ApplicationCommands. vsct. Verifique se essa linha foi comentada (pesquise por "No_Help"): `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. Escolha a tecla F5 para compilar e executar a **depuração**. Na instância experimental do IDE do Shell isolado, escolha o menu **ajuda** . Verifique se a **exibição ajuda**, **adicione e remova o conteúdo da ajuda**e **defina** os comandos de preferência da ajuda.
 
@@ -791,7 +791,7 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 
 10. Copie o conteúdo da pasta ContosoHelpShell Release para \\ \Program Files (x86) \Contoso\ Folder.
 
-11. Inicie o editor do registro escolhendo **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo**e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
+11. Inicie o editor do registro escolhendo  **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo**e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
 
 12. Criar um repositório de conteúdo:
 
@@ -814,7 +814,7 @@ Recurso: uso de **controle de página inicial** : texto que dá suporte à exibi
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Shell integrado:
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Shell integrado:
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 

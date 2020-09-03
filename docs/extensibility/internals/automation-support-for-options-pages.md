@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709926"
 ---
-# <a name="automation-support-for-options-pages"></a>Suporte à automação para páginas de opções
-O VSPackages pode fornecer caixas de diálogo **de opções** personalizadas para o menu **Ferramentas** (páginas**de opções de ferramentas)** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e pode disponibilizá-las para o modelo de automação.
+# <a name="automation-support-for-options-pages"></a>Suporte de automação para páginas de opções
+O VSPackages pode fornecer caixas de diálogo de **Opções** personalizadas ao menu **ferramentas** (**ferramentas opções** páginas) no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e pode torná-las disponíveis para o modelo de automação.
 
 ## <a name="tools-options-pages"></a>páginas de Opções de Ferramentas
- Para criar uma página **de Opções de Ferramentas,** um VSPackage deve fornecer uma implementação de controle de usuário retornada ao ambiente através da implementação do método DO <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> VSPackage. (Ou, para código gerenciado, <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> o método.)
+ Para criar uma página de **Opções de ferramentas** , um VSPackage deve fornecer uma implementação de controle de usuário retornada ao ambiente por meio da implementação do VSPackage do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. (Ou, para o código gerenciado, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método.)
 
- É opcional, mas fortemente incentivado, para permitir o acesso a esta nova página através do modelo de automação. Você pode fazê-lo com as seguintes etapas:
+ É opcional, mas altamente recomendável permitir o acesso a essa nova página por meio do modelo de automação. Você pode fazer isso com as seguintes etapas:
 
-1. Estender <xref:EnvDTE._DTE.Properties%2A> o objeto através da implementação de um objeto derivado do IDispatch.
+1. Estenda o <xref:EnvDTE._DTE.Properties%2A> objeto por meio da implementação de um objeto derivado de IDispatch.
 
-2. Retorne uma implementação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método (ou <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> para código gerenciado do método) para o objeto derivado do IDispatch.
+2. Retornar uma implementação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método (ou para código gerenciado o <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> método) para o objeto derivado de IDispatch.
 
-3. Quando um consumidor <xref:EnvDTE._DTE.Properties%2A> de automação chama o método em <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> uma página de propriedade de **opção** personalizada, o ambiente usa o método para obter a implementação de automação de uma página de **opções** de ferramentas personalizadas.
+3. Quando um consumidor de automação chama o <xref:EnvDTE._DTE.Properties%2A> método em uma página de propriedades de **opção** personalizada, o ambiente usa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método para obter a implementação de automação de uma página de **Opções de ferramentas** personalizadas.
 
-4. O objeto de automação do VSPackage <xref:EnvDTE.Property> é então <xref:EnvDTE._DTE.Properties%2A>usado para fornecer cada um devolvido por .
+4. O objeto Automation do VSPackage é usado para fornecer cada um deles <xref:EnvDTE.Property> retornado por <xref:EnvDTE._DTE.Properties%2A> .
 
-   Para obter uma amostra implementando uma página de **opções** de ferramentas personalizadas, consulte [AMOSTRAS VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+   Para obter um exemplo de implementação de uma página de **Opções de ferramentas** personalizadas, consulte [exemplos de VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
 ## <a name="see-also"></a>Confira também
 - [Expor objetos do projeto](../../extensibility/internals/exposing-project-objects.md)

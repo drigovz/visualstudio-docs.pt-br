@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016387"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Walkthrough: criar uma Web Part para o SharePoint usando um designer
@@ -184,7 +185,7 @@ Na Web Part, especifique os calendários que você deseja incluir no modo de exi
 
 Os eventos de todos os calendários que você especificou aparecem no modo de exibição de calendário mensal.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 [Criar Web Parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Como: criar uma Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

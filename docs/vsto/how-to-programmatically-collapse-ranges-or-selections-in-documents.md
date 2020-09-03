@@ -17,18 +17,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1575a130a525c169553598fd15acfa8ba8fc397a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546114"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como: reduzir programaticamente intervalos ou seleções em documentos
   Se você estiver trabalhando com um <xref:Microsoft.Office.Interop.Word.Range> <xref:Microsoft.Office.Interop.Word.Selection> objeto ou, talvez queira alterar a seleção para um ponto de inserção antes de inserir texto, para evitar substituir o texto existente. Os <xref:Microsoft.Office.Interop.Word.Range> objetos e <xref:Microsoft.Office.Interop.Word.Selection> têm um método Collapse, que utiliza os <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeração:
 
-- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart>recolhe a seleção até o início da seleção. Esse será o padrão se você não especificar um valor de enumeração.
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseStart> recolhe a seleção até o início da seleção. Esse será o padrão se você não especificar um valor de enumeração.
 
-- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd>recolhe a seleção até o final da seleção.
+- <xref:Microsoft.Office.Interop.Word.WdCollapseDirection.wdCollapseEnd> recolhe a seleção até o final da seleção.
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

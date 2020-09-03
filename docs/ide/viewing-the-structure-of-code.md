@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543670"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
@@ -54,7 +54,7 @@ Caso tenha sido realizado o check-in do seu projeto para controle do código-fon
 
 A barra de ferramentas **modo de exibição de classe** contém os seguintes comandos:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Nova pasta**|Cria uma pasta ou subpasta virtual na qual você pode organizar os elementos usados com frequência. Eles são salvos no arquivo de solução ativa (*. suo*). Após você renomear ou excluir um elemento em seu código, ele pode aparecer em uma pasta virtual como um nó de erro. Para corrigir esse problema, exclua o nó de erro. Se tiver renomeado um elemento, você pode movê-lo da hierarquia do projeto para a pasta novamente.|
 |**Voltar**|Navega para o item selecionado anteriormente.|
@@ -65,7 +65,7 @@ A barra de ferramentas **modo de exibição de classe** contém os seguintes com
 
 O botão **configurações de modo de exibição de classe** na barra de ferramentas tem as seguintes configurações:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Mostrar Tipos Base**|Tipos base são exibidos.|
 |**Mostrar referências de projeto**|As referências de projeto são exibidas.|
@@ -80,7 +80,7 @@ O botão **configurações de modo de exibição de classe** na barra de ferrame
 
 O menu de atalho (ou clique com o botão direito do mouse) no **modo de exibição de classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Ir para Definição**|Localiza a definição do elemento no código-fonte ou no **Pesquisador de Objetos** se o elemento não estiver definido no projeto aberto.|
 |**Procurar definição**|Exibe o item selecionado no **Pesquisador de Objetos**.|
@@ -112,7 +112,7 @@ A janela **Hierarquia de Chamada** não encontra referências do grupo do métod
 
 O menu de atalho na janela **hierarquia de chamadas** contém os seguintes comandos:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Adicionar como Nova Raiz**|Adiciona o nó selecionado como um novo nó raiz.|
 |**Remover Raiz**|Remove o nó raiz selecionado do painel do modo de exibição de árvore.|
@@ -151,7 +151,7 @@ O **Pesquisador de Objetos** mantém controle das seleções feitas, e você pod
 
 Usando o botão **configurações do pesquisador de objetos** na barra de ferramentas, você pode especificar uma das seguintes exibições:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Exibir Namespaces**|Exibe namespaces em vez de contêineres físicos, no painel esquerdo. Namespaces armazenados em vários contêineres físicos são mesclados.|
 |**Exibir contêineres**|Exibe contêineres físicos em vez de namespaces, no painel esquerdo. As configurações **Exibir Namespaces** e **Exibir Contêineres** são mutuamente exclusivas.|
@@ -168,13 +168,13 @@ Usando o botão **configurações do pesquisador de objetos** na barra de ferram
 
 O menu de atalho (ou clique com o botão direito do mouse) no **pesquisador de objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Procurar definição**|Mostra o nó principal do item selecionado.|
 |**Localizar todas as referências**|Localiza o item do objeto selecionado e exibe os resultados em uma janela **Localizar Resultados**.|
 |**Filtrar Por Tipo**|Exibe apenas o namespace ou o tipo selecionado. É possível remover o filtro escolhendo o botão **Limpar Pesquisa**.|
 |**Cópia**|Copia o nome totalmente qualificado do item.|
-|**Removerr**|Se o escopo for um conjunto de componentes personalizado, remove o componente selecionado do escopo.|
+|**Remover**|Se o escopo for um conjunto de componentes personalizado, remove o componente selecionado do escopo.|
 |**Classificar em Ordem Alfabética**|Lista tipos e membros em ordem alfabética por nome.|
 |**Classificar por Tipo de Objeto**|Lista tipos e membros ordenados segundo o tipo (de forma que classes precedam interfaces, interfaces precedam representantes e métodos precedam propriedades).|
 |**Classificar por Acesso a Objeto**|Lista tipos e membros ordenados segundo o tipo de acesso, como público ou privado.|
@@ -197,7 +197,7 @@ Embora essa janela seja somente leitura, você pode definir pontos de interrupç
 
 O menu de atalho (ou clique com o botão direito do mouse) na janela de **definição de código** pode conter os seguintes comandos:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-|
 |**Ações e Refatorações Rápidas**||
 |**Renomear**||

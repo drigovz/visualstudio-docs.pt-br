@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543592"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento EntryPoint (desenvolvimento do Office no Visual Studio)
   Cada `entryPoint` elemento do `vstav3` namespace identifica um assembly de personalização que deve ser executado quando esse [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplicativo é instalado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPoint class>
@@ -45,12 +45,12 @@ ms.locfileid: "85543592"
 |---------------|-----------------|
 |`class`|Obrigatórios. Identifica um assembly de personalização a ser executado. A sintaxe para esse atributo é *NamespaceName. ClassName*.|
 
- `entryPoint`tem o seguinte elemento.
+ `entryPoint` tem o seguinte elemento.
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
  Obrigatórios. O `assemblyIdentity` elemento no `vstav3` namespace refere-se a um `assemblyIdentity` elemento existente no [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] manifesto do aplicativo.
 
- A função `assemblyIdentity` e seus atributos são definidos no [elemento&#60;assemblyIdentity&#62; &#40;aplicativo ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
+ A função `assemblyIdentity` e seus atributos são definidos no [ elemento&#60;assemblyIdentity&#62; &#40;aplicativo ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-application.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível do documento
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543189"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
@@ -94,7 +94,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 - **Projeto DslPackage** Este projeto contém código que permite que instâncias do DSL sejam abertas e editadas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Executando a DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Executando a DSL
  Você pode executar a solução DSL assim que a tiver criado. Posteriormente, você pode modificar a definição de DSL gradualmente, executando a solução novamente após cada alteração.
 
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar a DSL
@@ -383,7 +383,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
  Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Removendo DSLs experimentais antigas
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Removendo DSLs experimentais antigas
  Se você tiver criado DSLs experimentais que não deseja mais, poderá removê-las do computador redefinindo a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância experimental.
 
  Isso removerá do seu computador todas as DSLs experimentais e outras extensões experimentais [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Essas são extensões que foram executadas no modo de depuração.

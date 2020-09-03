@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535701"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Passo a passo: Criando classes LINQ to SQL usando a herança de tabela única (Designer Relacional de Objetos)
@@ -51,10 +51,10 @@ As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools
 
     |Nome da coluna|Tipo de Dados|Permitir Nulos|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**For**|
+    |**ID**|**int**|**Falso**|
     |**Tipo**|**int**|**True**|
-    |**Nome**|**nvarchar(200)**|**For**|
-    |**Sobrenome**|**nvarchar(200)**|**For**|
+    |**Nome**|**nvarchar(200)**|**Falso**|
+    |**Sobrenome**|**nvarchar(200)**|**Falso**|
     |**Gerente**|**int**|**True**|
 
 3. Defina a coluna de identificação como a chave primária.

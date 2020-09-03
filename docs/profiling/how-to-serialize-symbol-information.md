@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d28df6d36b1b91974483ae793e6e57f064974183
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328522"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Como serializar informações de símbolo
@@ -34,7 +34,7 @@ Você pode serializar os símbolos que são necessários para analisar seu aplic
 
 3. Em **Configuração Geral**, selecione **Serializar informações de símbolo automaticamente**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
 - [Como: consultar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [Como salvar arquivos de relatório analisados](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542214"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Usando a janela Pilhas Paralelas
@@ -51,7 +51,7 @@ A janela de **pilhas paralelas** é útil quando você está Depurando aplicativ
 ## <a name="method-context-icons"></a>Ícones do Contexto do método  
  A tabela a seguir descreve os ícones que fornecem informações sobre os quadros de pilhas ativas e atuais:  
   
-|Ícone|Descrição|  
+|ícone|Descrição|  
 |-|-|
 |![Seta amarela de pilhas paralelas](../debugger/media/icon-parallelyellowarrow.gif "Icon_ParallelYellowArrow")|Indica que o contexto do método contém o quadro de pilhas ativas do thread atual.|  
 |![Ícone de threads de pilhas paralelas](../debugger/media/icon-parallelthreads.gif "Icon_ParallelThreads")|Indica que o contexto do método contém o quadro de pilhas ativas de um thread não atual.|  

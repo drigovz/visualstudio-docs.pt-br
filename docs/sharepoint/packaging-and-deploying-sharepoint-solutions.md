@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015591"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
@@ -100,6 +101,6 @@ ms.locfileid: "86015591"
 
   Se um arquivo adicionado não se aplicar a qualquer projeto específico na solução, você poderá adicionar um projeto do SharePoint vazio à sua solução e, em seguida, adicionar os arquivos adicionais a ele. Outra alternativa para implantar arquivos no SharePoint, especialmente no banco de dados de conteúdo, é adicionar um módulo ao projeto e, em seguida, adicionar os arquivos ao módulo. Para obter mais informações, consulte [usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

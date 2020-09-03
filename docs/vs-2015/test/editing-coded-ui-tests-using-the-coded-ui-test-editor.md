@@ -13,10 +13,10 @@ caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c070f1bafb157e3979eb9c1f49b317b17807f1e7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82587004"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
@@ -85,7 +85,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
  Após concluir as modificações, salve-as no arquivo UIMap.Designer escolhendo **Salvar** na barra de ferramentas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  *O que mais eu deveria saber?*
- **Dicas**
+ **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a **tecla Alt** enquanto pressiona **Enter**ou pressione **F4**.
 
@@ -120,13 +120,13 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
 - Aviso de ![ícone de cuidado](../test/media/caution.gif "atenção") **:** se você dividir um método, deverá modificar qualquer código que chame o método existente para também chamar o novo método que você está prestes a criar se ainda quiser que essas ações de interface do usuário sejam incluídas. Quando um método é dividido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que chamam o método existente para que eles também chamem o novo método a ser criado. Escolha **Sim**.
 
-  **Dicas**
+  **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Para desfazer a divisão, escolha **desfazer** no menu **Editar** ou pressione CTRL + Z.
 
 - ![Dica](../test/media/tip.png "Dica") Você pode renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
 
-   -ou-
+   - ou -
 
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.
 
@@ -144,7 +144,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
 - Aviso de ![ícone de cuidado](../test/media/caution.gif "atenção") **:** depois de mover um método, você não poderá mais editá-lo usando o editor de teste de interface do usuário codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos. Quando um método é movido, uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que o método será movido do arquivo UIMap.uitest para o arquivo UIMap.cs ou UIMap.vb e que não será possível editar o método usando o Editor de Teste de IU Codificado. Escolha **Sim**.
 
-  **Dicas**
+  **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Para desfazer a movimentação, selecione **desfazer** no menu **Editar** ou pressione CTRL + Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.
 
@@ -162,7 +162,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
 - Aviso de ![ícone de cuidado](../test/media/caution.gif "atenção") **:** antes de localizar um controle de interface do usuário, verifique se o aplicativo associado ao teste está em execução.
 
-  **Dicas**
+  **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Como alternativa, você pode usar a opção **Localizar tudo** para verificar se todos os controles em um contêiner podem estar localizados corretamente. Essa opção será descrita na próxima seção.
 
@@ -196,13 +196,13 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
 - ![Prerequsite](../test/media/prereq.png "Pré-requisito") Se você precisar garantir que um controle específico esteja disponível antes de uma ação da interface do usuário, considere adicionar código personalizado ao método de teste usando o método UITestControl. WaitForControlXXX () apropriado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Fazer testes de IU codificados aguarda eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-  **Dicas**
+  **Sobre**
 
 - ![Dica](../test/media/tip.png "Dica") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a tecla ALT enquanto pressiona ENTER ou, alternativamente, pressione F4.
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Orientação
+### <a name="guidance"></a>Diretrizes
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>Perguntas frequentes

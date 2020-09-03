@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 123c9af48d93e23d4f582575848d981f57abd2f9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327895"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como instrumentar um serviço nativo e coletar dados de tempo detalhados usando a linha de comando do criador de perfil
@@ -92,6 +92,6 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 
 3. Substitua o módulo instrumentado pelo original. Se necessário, reconfigure o Tipo de inicialização do serviço.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 - [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)

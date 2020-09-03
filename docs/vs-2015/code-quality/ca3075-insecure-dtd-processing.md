@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545165"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento de DTD não seguro
@@ -29,19 +29,19 @@ ms.locfileid: "85545165"
  Se você usar instâncias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> inseguras ou referenciar origens de entidade externa, o analisador poderá aceitar a entrada não confiável e divulgar as informações confidenciais para invasores.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Uma [DTD (definição de tipo de documento)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](https://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , o que pode levar a ataques [de negação de serviço (dos)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regra é disparada quando:
+ Uma [DTD (definição de tipo de documento)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo  [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](https://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , o que pode levar a ataques [de negação de serviço (dos)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regra é disparada quando:
 
 - DtdProcessing está habilitado na <xref:System.Xml.XmlReader> instância, que resolve entidades XML externas usando <xref:System.Xml.XmlUrlResolver> .
 
 - A <xref:System.Xml.XmlNode.InnerXml%2A> propriedade no XML está definida.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>a propriedade está definida como Parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> a propriedade está definida como Parse.
 
 - A entrada não confiável é processada usando <xref:System.Xml.XmlResolver> em vez de <xref:System.Xml.XmlSecureResolver> .
 
 - O XmlReader.<xref:System.Xml.XmlReader.Create%2A> o método é invocado com uma <xref:System.Xml.XmlReaderSettings> instância insegura ou nenhuma instância.
 
-- <xref:System.Xml.XmlReader>é criado com valores ou configurações padrão inseguras.
+- <xref:System.Xml.XmlReader> é criado com valores ou configurações padrão inseguras.
 
   Em cada um desses casos, o resultado é o mesmo: o conteúdo do sistema de arquivos ou compartilhamentos de rede do computador em que o XML é processado será exposto ao invasor, que pode ser usado como um vetor de DoS.
 

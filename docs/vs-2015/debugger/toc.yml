@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Operador de contexto (C++)
                   href: context-operator-cpp.md
-                - name: 'Especificadores de formato em C#'
+                - name: Especificadores de formato em C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudovariáveis
                   href: pseudovariables.md
@@ -118,7 +118,7 @@
                   href: enabling-debug-features-in-visual-cpp-d-debug.md
             - name: Configurações das páginas de propriedade para projetos Web
               href: property-pages-settings-for-web-projects.md
-            - name: 'Definições do projeto para configurações de depuração do C#'
+            - name: Definições do projeto para configurações de depuração do C#
               href: project-settings-for-csharp-debug-configurations.md
             - name: Definições do projeto para uma configuração de depuração do Visual Basic
               href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Arquitetura do visualizador
                   href: visualizer-architecture.md
-                - name: 'Escrevendo um visualizador em C#'
+                - name: Escrevendo um visualizador em C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Como escrever um visualizador em Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: Alterações de código suportadas (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Editar e continuar (Visual C#)'
+        - name: Editar e continuar (Visual C#)
           items:
-            - name: 'Editar e continuar (Visual C#)'
+            - name: Editar e continuar (Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: 'Usar Editar e Continuar (C#)'
+            - name: Usar Editar e Continuar (C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'Alterações de código suportadas (C#)'
+            - name: Alterações de código suportadas (C#)
               href: supported-code-changes-csharp.md
         - name: Editar e Continuar (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Edições não suportadas em Editar e Continuar do Visual Basic
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'Editar e Continuar não suportado para F#'
+        - name: Editar e Continuar não suportado para F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Usando arquivos de despejo
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Depurar XAML no Blend para Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Navegar por uma sessão de depuração (XAML e C#)'
+            - name: Navegar por uma sessão de depuração (XAML e C#)
               items:
-                - name: 'Navegar na sessão de depuração (XAML e C#)'
+                - name: Navegar na sessão de depuração (XAML e C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'Código de exemplo da navegação do depurador (XAML e C#)'
+                - name: Código de exemplo da navegação do depurador (XAML e C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Disparar eventos de suspensão, retomada e de segundo plano para Windows Store)'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: Exibir informações de rastreamento do WPF
               href: how-to-display-wpf-trace-information.md
-        - name: 'Depurando F#'
+        - name: Depurando F#
           href: debugging-f-hash.md
     - name: Depurando código nativo
       items:

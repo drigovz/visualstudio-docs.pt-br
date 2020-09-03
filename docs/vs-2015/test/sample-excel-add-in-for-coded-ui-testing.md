@@ -11,10 +11,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6dc6b4385130c6341b5b3545c6c9f71dc67457f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672190"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Complemento do Excel de amostra para testes de IU codificado
@@ -45,5 +45,5 @@ Este suplemento de exemplo para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md
 ## <a name="exceluicommunicator-class"></a>Classe ExcelUICommunicator
  Essa classe implementa a interface `IExcelUITestCommunication` e obtém as informações de interface do usuário solicitadas do modelo de objeto do Excel. Para obter mais informações, consulte [Interface de comunicador do Excel de amostra](../test/sample-excel-communicator-interface.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Estendendo testes de interface do usuário codificados e gravações de ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md) [Walkthrough: criando seu primeiro suplemento do VSTO para desenvolvimento do Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) [e do Office](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

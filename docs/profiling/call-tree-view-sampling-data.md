@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779747"
 ---
 # <a name="call-tree-view---sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem
@@ -30,7 +30,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
  Os valores no modo de exibição de Árvore de Chamadas são para as instâncias de função que foram chamadas pela função pai na árvore de chamadas. Valores de percentual são calculados comparando o valor de instância de função para o número total de amostras na execução de criação de perfil.
 
 ## <a name="highlight-the-execution-hot-path"></a>Realçar o afunilamento de execução
- O modo de exibição de Árvore de Chamada pode expandir e realçar o caminho de execução do processo ou da função que foram amostrados com mais frequência. Para exibir o caminho mais ativo, clique com o botão direito do mouse no processo ou função e clique em **Expandir caminho quente**.
+ O modo de exibição de Árvore de Chamada pode expandir e realçar o caminho de execução do processo ou da função que foram amostrados com mais frequência. Para exibir o caminho mais ativo, clique com o botão direito do mouse no processo ou na função e, em seguida, clique em **expandir o Hot Path**.
 
 ## <a name="set-the-call-tree-root-node"></a>Configurar do nó raiz da árvore de chamadas
  Cada processo na execução de criação de perfil é exibido como um nó raiz. Para definir o nó inicial do modo de exibição de Árvore de Chamadas, clique com o botão direito do mouse no nó que você deseja definir como o nó inicial e selecione **Definir Raiz**.
@@ -43,11 +43,11 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço da função.|
-|**Nível**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
+|**Endereço da função**|O endereço da função.|
+|**Level**|A profundidade dessa função na árvore de chamadas. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|
 |**Amostras Exclusivas**|O número de amostras coletadas nessa função quando ela foi chamada pela função pai na árvore de chamadas. Esse número não inclui amostras coletadas em funções que foram chamadas pela função.|
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função quando ela foi chamada pela função pai na árvore de chamadas.|
 |**Amostras Inclusivas**|O número de amostras coletadas nessa função quando ela foi chamada pela função pai na árvore de chamadas. Esse número inclui amostras coletadas em funções chamadas pela função.|
@@ -58,4 +58,4 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 - [Modo de exibição de árvore de chamadas – dados de amostragem do criador de perfil](../profiling/call-Tree-view-sampling-data.md)
 - [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 - [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-instrumentation-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-instrumentation-data.md)

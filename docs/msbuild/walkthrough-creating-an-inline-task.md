@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289138"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
@@ -264,7 +264,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 </Code>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

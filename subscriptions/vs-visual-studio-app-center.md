@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
 ms.openlocfilehash: 27d2e060cf3f4ab1aad8b81c39a5cef52ac0e770
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906043"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
@@ -34,7 +34,7 @@ O App Center é o controle de missões para aplicativos.
     > [!div class="mx-imgBorder"]
     > ![Criar conta do App Center do VS](_img/vs-app-center/vs-app-center-create-account.png)
 
-4. E isso é tudo.  Basta clicar em **Adicionar nova organização** ou **Adicionar novo aplicativo** para começar!
+4. Isso é tudo para ela.  Basta clicar em **Adicionar nova organização** ou **Adicionar novo aplicativo** para começar!
     > [!div class="mx-imgBorder"]
     > ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png)
 

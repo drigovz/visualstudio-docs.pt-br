@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774120"
 ---
 # <a name="lineoff"></a>LineOff
@@ -27,13 +27,13 @@ Por padrão, o criador de perfil coleta os números de linha do código-fonte e 
 VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
-#### <a name="parameters"></a>parâmetros
+#### <a name="parameters"></a>Parâmetros
  Nenhum
 
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **LineOff** pode ser usada apenas em uma linha de comando que contenha a opção **Inicializar**.
 
- **Lançamento:** `AppName` Inicia a aplicação especificada e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` Inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
 ## <a name="example"></a>Exemplo
  Esse exemplo inicia o aplicativo e o criador de perfil e desabilita a amostragem de nível de linha.
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)

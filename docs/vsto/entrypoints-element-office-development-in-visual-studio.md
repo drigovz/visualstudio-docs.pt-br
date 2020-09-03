@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543566"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;elemento entryPoints &gt; (desenvolvimento do Office no Visual Studio)
   O `entryPoints` elemento do `vstav3` namespace contém todos os `entryPoint` elementos associados a uma solução do Office.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <entryPoints>
@@ -46,10 +46,10 @@ ms.locfileid: "85543566"
 |---------------|-----------------|
 |id|Necessário para implantação de vários projetos. O nome da solução do Office. A ID não pode conter o símbolo de igual (=).|
 
- `entryPoints`tem os elementos a seguir.
+ `entryPoints` tem os elementos a seguir.
 
 ### <a name="entrypoint"></a>entryPoint
- Obrigatórios. A função do `entryPoint` elemento no `vstav3` namespace é definida no [elemento&#60;EntryPoint&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
+ Obrigatórios. A função do `entryPoint` elemento no `vstav3` namespace é definida no [ elemento&#60;EntryPoint&#62; &#40;o desenvolvimento do Office no Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Exemplo de personalização no nível do documento
 

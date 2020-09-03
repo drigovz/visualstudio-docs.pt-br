@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016364"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar e depurar soluções do SharePoint
@@ -47,7 +48,7 @@ ms.locfileid: "86016364"
 ## <a name="using-the-clean-command"></a>Usando o comando limpar
  Quando uma solução do SharePoint é instalada em um servidor do SharePoint para depuração, o comando **limpar** não desinstala a solução. Em vez disso, você deve desativar os recursos por meio da configuração do SharePoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Procurar conexões do SharePoint usando Gerenciador de Servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

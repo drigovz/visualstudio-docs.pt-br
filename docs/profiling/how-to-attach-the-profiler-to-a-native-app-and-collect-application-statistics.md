@@ -11,10 +11,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9d463413833ad476b8d6ad90369f53267e3f7cff
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328675"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo independente nativo e coletar estatísticas do aplicativo usando a linha de comando
@@ -89,7 +89,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Digite **VSPerfCmd/Detach**
 
-         -ou-
+         - ou -
 
     - Feche o aplicativo de destino.
 
@@ -101,6 +101,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

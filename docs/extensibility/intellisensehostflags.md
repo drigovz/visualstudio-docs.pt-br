@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710264"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-Especifica bandeiras de host do IntelliSense.
+Especifica os sinalizadores de host IntelliSense.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,18 +36,18 @@ enum IntellisenseHostFlags
 };
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
 
 |Membros|Descrição|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|O buffer de contexto é somente leitura.|
-|`IHF_NOSEPARATESUBJECT`|Nenhum texto de assunto. O buffer de contexto contém o `!IHF_READONLYCONTEXT`alvo IntelliSense (implica ).|
-|`IHF_SINGLELINESUBJECT`|O texto do assunto não é capaz de várias linhas.|
-|`IHF_FORCECOMMITTOCONTEXT`|Igual a `CanCommitIntoReadOnlyBuffer`.|
-|`IHF_OVERTYPE`|A edição (em assunto ou contexto) deve ser feita no modo overtype.|
+|`IHF_NOSEPARATESUBJECT`|Nenhum texto de assunto. O buffer de contexto contém IntelliSense-Target (implica `!IHF_READONLYCONTEXT` ).|
+|`IHF_SINGLELINESUBJECT`|O texto do assunto não é compatível com várias linhas.|
+|`IHF_FORCECOMMITTOCONTEXT`|Mesmo que `CanCommitIntoReadOnlyBuffer`.|
+|`IHF_OVERTYPE`|A edição (no assunto ou no contexto) deve ser feita no modo sobrescrever.|
 
 ## <a name="requirements"></a>Requisitos
- SingleFileeditor.idl
+ SingleFileeditor. idl
 
 ## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

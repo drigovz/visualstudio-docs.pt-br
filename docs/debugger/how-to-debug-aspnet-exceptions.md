@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350128"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Como depurar exceções do ASP.NET
@@ -47,5 +47,5 @@ A depuração de exceções é uma parte importante do desenvolvimento de um apl
 
 - Coloque blocos de `try ... catch` em torno do código que pode lançar exceções que você pode prever e sabe como manipular. Por exemplo, se o aplicativo estiver fazendo chamadas para um serviço Web XML ou diretamente para o SQL Server, o código deve estar em blocos **try … catch** porque várias exceções podem ocorrer.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

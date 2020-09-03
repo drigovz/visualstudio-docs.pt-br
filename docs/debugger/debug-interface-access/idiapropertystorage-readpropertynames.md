@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 257546e54cb04713f2f13892ec782aca1712cfba
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466514"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
@@ -51,5 +51,5 @@ no Matriz de IDs de propriedade para as quais obter os nomes ( `PROPID` é defin
 ## <a name="remarks"></a>Comentários
  Os nomes de propriedade retornados devem ser liberados (chamando a `SysFreeString` função) quando não forem mais necessários.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
