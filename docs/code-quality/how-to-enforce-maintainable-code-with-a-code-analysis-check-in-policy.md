@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371853"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como impor código passível de manutenção com uma política de check-in de análise de código
@@ -57,7 +57,7 @@ Os administradores do controle de versão do Team Foundation podem adicionar as 
 
 3. Clique em **OK**. A nova política de check-in agora se aplica a check-ins futuros.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
 - [Criando e usando políticas de check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

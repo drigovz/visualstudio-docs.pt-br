@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381711"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Como especificar para onde o Visual Studio copia os arquivos
@@ -45,6 +45,6 @@ Quando você publica um aplicativo usando o ClickOnce, a `Publish Location` prop
 
      Observe que o texto deve estar presente na caixa **local de publicação** para que o botão procurar (**...**) funcione.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

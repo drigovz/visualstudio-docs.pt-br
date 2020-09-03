@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetName | Microsoft Docs
+title: 'IDebugCustomAttribute:: GetName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15d435d043d0e3863358628fa12016431a417918
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732764"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
@@ -39,15 +39,15 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `bstrName`\
-[fora] Retorna uma seqüência contendo o nome do atributo personalizado.
+fora Retorna uma cadeia de caracteres que contém o nome do atributo personalizado.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O nome retornado por este método corresponde ao nome da classe usada para declarar o atributo. Isso pode não corresponder exatamente ao nome da classe de atributo personalizado em si, pois c# permite que o sufixo "Atributo" seja descartado de um nome de atributo personalizado quando ele é usado em uma declaração.
+ O nomeado retornado por esse método corresponde ao nome da classe usada para declarar o atributo. Isso pode não corresponder exatamente ao nome da própria classe de atributo personalizado, pois C# permite que o sufixo "Attribute" seja Descartado de um nome de atributo personalizado quando ele é usado em uma declaração.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250296"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Caixa de diálogo AutoRecuperação, Ambiente, Opções
@@ -53,6 +53,6 @@ Use esta opção para personalizar a frequência com que um arquivo é salvo aut
 
 Use esta opção para especificar por quanto tempo o Visual Studio manterá arquivos criados para AutoRecuperação.
 
-### <a name="see-also"></a>Consulte também
+### <a name="see-also"></a>Confira também
 
 - [caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)

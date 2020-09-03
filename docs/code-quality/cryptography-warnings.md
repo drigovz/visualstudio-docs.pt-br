@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78923dfd2873b53790421cde3fe01f024e267202
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587687"
 ---
 # <a name="cryptography-warnings"></a>Avisos de criptografia
@@ -20,5 +20,5 @@ Os avisos de criptografia dão suporte a bibliotecas e aplicativos mais seguros 
 
 |Regra|Descrição|
 |----------|-----------------|
-|[CA5350: não usar algoritmos criptográficos fracos](../code-quality/ca5350.md)|Algoritmos de criptografia fracos e funções de hash são usados hoje por vários motivos, mas eles não devem ser usados para garantir a confidencialidade ou a integridade dos dados que eles protegem.        Essa regra é disparada quando encontra algoritmos TripleDES, SHA1 ou RIPEMD160 no código.|
-|[CA5351: não usar algoritmos criptográficos desfeitos](../code-quality/ca5351.md)|Os algoritmos de criptografia desfeitos não são considerados seguros e seu uso deve ser altamente desencorajado. Essa regra é disparada quando encontra o algoritmo de hash MD5 ou os algoritmos de criptografia DES ou RC2 no código.|
+|[CA5350: Não usar algoritmos de criptografia fracos](../code-quality/ca5350.md)|Algoritmos de criptografia fracos e funções de hash são usados hoje por vários motivos, mas eles não devem ser usados para garantir a confidencialidade ou a integridade dos dados que eles protegem.        Essa regra é disparada quando encontra algoritmos TripleDES, SHA1 ou RIPEMD160 no código.|
+|[CA5351 não use algoritmos de criptografia desfeitos](../code-quality/ca5351.md)|Os algoritmos de criptografia desfeitos não são considerados seguros e seu uso deve ser altamente desencorajado. Essa regra é disparada quando encontra o algoritmo de hash MD5 ou os algoritmos de criptografia DES ou RC2 no código.|

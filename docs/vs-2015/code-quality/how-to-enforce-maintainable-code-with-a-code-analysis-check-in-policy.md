@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660213"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como impor um código com facilidade de manutenção com uma política de check-in de análise do código
@@ -25,7 +25,7 @@ Os desenvolvedores podem usar a ferramenta de métricas de código para medir a 
 
  Os desenvolvedores podem habilitar a profundidade de herança, acoplamento de classes, índice de facilidade de manutenção e regras de complexidade para impor o código passível de manutenção por meio de políticas de check-in de análise de código. Todas as quatro regras são encontradas na categoria "regras de manutenção" no editor de política de análise de código.
 
- Os administradores do controle de versão para [!INCLUDE[esprfound](../includes/esprfound-md.md)] podem adicionar as regras de manutenção da análise de código aos requisitos da política de check-in. Essas políticas de check-in exigem que os desenvolvedores executem a análise de código com base nessas alterações de regra antes de iniciar um check-in.
+ Os administradores de controle de versão do [!INCLUDE[esprfound](../includes/esprfound-md.md)] podem adicionar as regras de manutenção da análise de código aos requisitos da política de check-in. Essas políticas de check-in exigem que os desenvolvedores executem a análise de código com base nessas alterações de regra antes de iniciar um check-in.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de políticas de análise de código
 
@@ -59,5 +59,5 @@ Os desenvolvedores podem usar a ferramenta de métricas de código para medir a 
 
 3. Clique em **OK**. A nova política de check-in agora se aplica a check-ins futuros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Valores de métricas de código](../code-quality/code-metrics-values.md) [criando e usando políticas de check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

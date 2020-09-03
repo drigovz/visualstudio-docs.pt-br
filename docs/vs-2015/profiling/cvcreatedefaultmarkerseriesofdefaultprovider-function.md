@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb0ab16dcd7e42a496317f4e7589bafdbdaf83dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162002"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Função CvCreateDefaultMarkerSeriesOfDefaultProvider
@@ -41,11 +41,11 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  `ppMarkerSeries`  
  Endereço da variável de objeto de série de marcador. O endereço não pode ser NULL; a variável pode ter qualquer valor.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  S_OK quando o provedor e a série de marcador são criados com êxito ou código de erro no caso de erros. Use as macros SUCCEEDED/FAILED para verificar a condição de erro.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** cvmarkers.h  
   
-## <a name="see-also"></a>Veja também  
- [Referência de biblioteca C++](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência da biblioteca C++](../profiling/cpp-library-reference.md)

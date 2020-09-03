@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
+title: 'IDebugBreakpointResolution2:: getbreakpointtype | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b08e031b2a1e3fb5f7f024d43e36cad85eaa0cfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206069"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
@@ -40,16 +40,16 @@ int GetBreakpointType( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pBPType`  
- [out] Retorna um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica o tipo de ponto de interrupção.  
+ fora Retorna um valor da enumeração [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica o tipo desse ponto de interrupção.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retornará E_FAIL se o `bpResLocation` campo associado [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura não é válida.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna E_FAIL se o `bpResLocation` campo na estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associada não for válido.  
   
 ## <a name="remarks"></a>Comentários  
  O ponto de interrupção pode ser um código ou um ponto de interrupção de dados, por exemplo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CDebugBreakpointResolution` objeto que expõe o [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um `CDebugBreakpointResolution` objeto simples que expõe a interface [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    
@@ -82,7 +82,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   

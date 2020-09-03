@@ -9,10 +9,10 @@ caps.latest.revision: 28
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9779dd685ad662cd0761dc85be58d0dbb3ccf0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660664"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
@@ -43,7 +43,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 
    ![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")
 
-## <a name="example"></a> Copiar este exemplo de arquivo .runsettings
+## <a name="copy-this-example-runsettings-file"></a><a name="example"></a> Copiar este exemplo de arquivo .runsettings
  Veja um arquivo *.runsettings típico. Cada elemento do arquivo é opcional, porque cada valor possui um padrão.
 
 ```xml
@@ -162,5 +162,5 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 |InProcMode|false|Se você quiser que os testes sejam executados no mesmo processo do adaptador MSTest, defina esse valor como true. Essa configuração fornece um ganho menor de desempenho. Mas se um teste fechar com uma exceção, os outros testes não continuarão.|
 |AssemblyResolution|false|É possível especificar caminhos para outros assemblies ao localizar e executar testes de unidade.  Por exemplo, use esses caminhos para assemblies de dependência que não residem no mesmo diretório que o assembly de teste.  Para especificar um caminho, use um elemento de “Caminho do diretório”.  Os caminhos podem conter variáveis de ambiente.<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando a análise de cobertura de código](../test/customizing-code-coverage-analysis.md) [especificando configurações de teste para testes do Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

@@ -1,5 +1,5 @@
 ---
-title: NúmeroOfParentCategoriesToRollUp (modelos)
+title: Elemento NumberOfParentCategoriesToRollUp (modelos)
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702363"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NúmeroOfParentCategoriesToRollUp element (modelos do Visual Studio)
-Especifica o número de categorias-pai que exibirão o modelo na caixa de diálogo **Novo Projeto.**
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (modelos do Visual Studio)
+Especifica o número de categorias pai que exibirá o modelo na caixa de diálogo **novo projeto** .
 
- \<VSTemplate \<>>TemplateData>NúmeroDeSérieDosPaisCategoriasToRolar>> \<
+ \<VSTemplate> \<TemplateData>
+ \<NumberOfParentCategoriesToRollUp>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <NumberOfParentCategoriesToRollUp>
@@ -47,18 +48,18 @@ Especifica o número de categorias-pai que exibirão o modelo na caixa de diálo
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
- Um `integer` valor é necessário.
+ `integer`É necessário um valor.
 
- Esse valor especifica o número de categorias-pai que exibirão o modelo na caixa de diálogo **Novo Projeto.**
+ Esse valor especifica o número de categorias pai que exibirá o modelo na caixa de diálogo **novo projeto** .
 
 ## <a name="remarks"></a>Comentários
  `NumberOfParentCategoriesToRollUp` é um elemento opcional.
 
 ## <a name="example"></a>Exemplo
- Este exemplo ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows. Se um modelo com esses metadados for colocado [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dois níveis de pasta abaixo do nó de nível superior, o modelo aparecerá no nó de nível superior na caixa de diálogo **Novo Projeto.** Se `NumberOfParentCategoriesToRollUp` o modelo não estiver definido, o modelo só aparecerá no nó em que está fisicamente localizado.
+ Este exemplo ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows. Se um modelo com esses metadados for colocado em dois níveis de pasta abaixo do nó de nível superior [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] , o modelo será exibido no nó de nível superior na caixa de diálogo **novo projeto** . Se o `NumberOfParentCategoriesToRollUp` não estiver definido, o modelo aparecerá apenas no nó no qual ele está localizado fisicamente.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -87,4 +88,4 @@ Especifica o número de categorias-pai que exibirão o modelo na caixa de diálo
 
 ## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

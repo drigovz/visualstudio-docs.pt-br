@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 139da31ced1d32def450a1dc176ca241b0c4677f
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014541"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Como: criar um modelo de BDC
@@ -56,7 +57,7 @@ ms.locfileid: "86014541"
 
      Um item de **modelo de conectividade de dados corporativos** é adicionado ao projeto. Por padrão, o modelo aparece no BDC designer. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Como: adicionar um arquivo de modelo BDC existente a um projeto do SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Como: usar um arquivo de recurso para especificar nomes, propriedades e permissões localizadas](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

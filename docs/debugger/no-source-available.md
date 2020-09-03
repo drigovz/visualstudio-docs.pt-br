@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730869"
 ---
 # <a name="no-source-available"></a>Nenhuma origem disponível
@@ -35,7 +35,7 @@ O projeto não contém código-fonte para o código que você está tentando exi
 
  **Sempre mostrar desmontagem de arquivos de origem ausentes** Selecione esta opção para exibir a **janela de desmontagem** automaticamente quando nenhuma fonte estiver disponível. Essa configuração também pode ser alterada na caixa de diálogo **Opções**, categoria **Depuração**, página **Geral**, marcando ou desmarcando **Mostrar desmontagem se a fonte não estiver disponível**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)
-- [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [SOS.dll (Extensão de Depuração SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+- [Especificar os arquivos de origem e símbolo (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [SOS.dll (extensão de depuração SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: CreateTypeFromPrimitive | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7f0367be350b433b0ff2add0538cccc06951215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194804"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cria um tipo de tipo primitivo especificado.  
+Cria um tipo a partir do tipo primitivo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -45,19 +45,19 @@ int CreateTypeFromPrimitive(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwPrimType`  
- [in] O valor dos [enumeração CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa o tipo primitivo.  
+ no Valor da [enumeração CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa o tipo primitivo.  
   
  `pAddress`  
- [in] Um objeto de endereço representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ no Um objeto de endereço representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `ppType`  
- [in] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o tipo de objeto.  
+ no Retorna um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o tipo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
@@ -96,5 +96,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660594"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
@@ -53,7 +53,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 
 5. Para ativar ou desativar as configurações personalizadas, desmarque ou selecione o arquivo no menu **Teste**, **Configurações de Teste**.
 
-   ![Menu configurações de teste com arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png "CodeCoverage-SettingsFile")
+   ![Menu de configurações de teste com o arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png "CodeCoverage-SettingsFile")
 
    Outros aspectos dos testes de unidade podem ser configurados no mesmo arquivo .runsettings. Para obter mais informações, consulte [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md).
 
@@ -99,19 +99,19 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
  `Include` é processado antes de `Exclude`.
 
 ### <a name="regular-expressions"></a>Expressões regulares
- Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Em particular:
+ Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Especialmente:
 
-1. **\.\\** * corresponde a uma cadeia de caracteres de qualquer caractere
+1. **\.\\*** corresponde a uma cadeia de caracteres de qualquer caractere
 
 2. **\\.** corresponde a um ponto ".")
 
-3. **\\(   \\)** corresponde a parênteses "(  )"
+3. ** \\ ( \\ )** faz a correspondência entre parênteses "()"
 
-4. **\\\\** corresponde a um delimitador de caminho de arquivo "\\"
+4. **\\\\** corresponde a um delimitador de caminho de arquivo " \\ "
 
 5. **^** corresponde ao início da cadeia de caracteres
 
-6. **$** corresponde ao final da cadeia de caracteres
+6. **$** corresponde ao fim da cadeia de caracteres
 
    Todas as correspondências não diferenciam maiúsculas de minúsculas.
 
@@ -194,7 +194,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Para personalizar as configurações de execução em uma definição de compilação
  Você pode obter dados de cobertura de código de uma compilação de equipe.
 
- ![Especificando RunSettings em uma definição de compilação](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
+ ![Especificando configurações de execução em uma definição de build](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
 
 1. Verifique se o arquivo .runsettings passou por check-in.
 
@@ -208,7 +208,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 
    Os resultados são visíveis na seção de resumo do relatório de compilação.
 
-## <a name="sample"></a>Exemplo de arquivo .runsettings
+## <a name="sample-runsettings-file"></a><a name="sample"></a>Exemplo de arquivo .runsettings
  Copie este código e edite-o de acordo com suas necessidades. Este é o arquivo .runsettings padrão.
 
  (Para outros usos do arquivo .runsettings confira [Configuração de testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
@@ -325,5 +325,5 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usando a cobertura de código para determinar a quantidade de código que está sendo testada](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) [teste de unidade em seu código](../test/unit-test-your-code.md)

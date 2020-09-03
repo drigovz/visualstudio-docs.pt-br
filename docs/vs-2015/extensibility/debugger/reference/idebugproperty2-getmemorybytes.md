@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryBytes | Microsoft Docs
+title: 'IDebugProperty2:: GetMemoryBytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77b58f247f2a7d12c5d39c4044c37e9c0782c947
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193526"
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
@@ -40,11 +40,11 @@ int GetMemoryBytes ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppMemoryBytes`  
- [out] Retorna um [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que pode ser usado para recuperar a memória que contém o valor da propriedade.  
+ fora Retorna um objeto [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) que pode ser usado para recuperar a memória que contém o valor da propriedade.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETMEMORYBYTES_NO_MEMORY_BYTES` se não houver nenhuma memória de bytes para recuperar.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. Retorna `S_GETMEMORYBYTES_NO_MEMORY_BYTES` se não houver nenhum byte de memória para recuperar.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

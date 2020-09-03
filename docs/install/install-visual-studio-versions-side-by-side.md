@@ -12,10 +12,10 @@ author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250256"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
@@ -82,7 +82,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Instalar o Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
@@ -101,7 +101,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: Alterações de código comC# suporte (e Visual Basic) | Microsoft Docs
+title: Alterações de código com suporte (C# e Visual Basic) | Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729082"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código comC# suporte (e Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código com suporte (C# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
 
 ## <a name="supported-changes-to-code"></a>Alterações com suporte no código
 
-A tabela a seguir mostra as alterações que podem ser feitas C# e Visual Basic código durante uma sessão de depuração sem reiniciar a sessão.
+A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Basic código durante uma sessão de depuração sem reiniciar a sessão.
 
 |Recurso/elemento de linguagem|Operação de edição com suporte|Limitações|
 |-|-|-|
@@ -43,7 +43,7 @@ A tabela a seguir mostra as alterações que podem ser feitas C# e Visual Basic 
 > Recursos de idioma mais novos, como interpolação de cadeia de caracteres e operadores condicionais nulos, geralmente são suportados por editar e continuar. Para obter as informações mais atuais, consulte a página [edições com suporte do ENC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) .
 
 ## <a name="unsupported-changes-to-code"></a>Alterações sem suporte no código
- As seguintes alterações não podem ser aplicadas C# e Visual Basic código durante uma sessão de depuração:
+ As seguintes alterações não podem ser aplicadas a código C# e Visual Basic durante uma sessão de depuração:
 
 - As alterações na instrução atual ou qualquer outra instrução ativa.
 
@@ -79,7 +79,7 @@ A tabela a seguir mostra as alterações que podem ser feitas C# e Visual Basic 
 |Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Código não seguro
- As alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não oferece suporte a alterações em código não seguro que sai dentro de um método que contém o operador de `stackalloc`.
+ As alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não oferece suporte a alterações em código não seguro que sai dentro de um método que contém o `stackalloc` operador.
 
 ## <a name="unsupported-app-scenarios"></a>Cenários de aplicativo sem suporte
 
@@ -105,6 +105,6 @@ Aplicativos e plataformas sem suporte incluem ASP.NET 5, Silverlight 5 e Windows
 
 - Depurando uma versão antiga do código depois que uma nova versão não é compilada devido a erros de compilação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014609"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Como adicionar e remover recursos e itens para um pacote usando o designer de pacotes
@@ -55,7 +56,7 @@ ms.locfileid: "86014609"
 
      Os itens do SharePoint aparecem nos **itens da** lista de soluções.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar pacotes de solução do SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Como: personalizar um pacote de solução do SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [Como: criar um pacote](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)

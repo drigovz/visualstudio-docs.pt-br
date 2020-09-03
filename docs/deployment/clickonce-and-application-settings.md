@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184127"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce e as configurações de aplicativo
@@ -27,11 +27,11 @@ As configurações do aplicativo para Windows Forms facilita a criação, o arma
  As informações a seguir se aplicam somente ao provedor de configurações de aplicativo padrão, a <xref:System.Configuration.LocalFileSettingsProvider> classe. Se você fornecer um provedor personalizado, esse provedor determinará como ele armazena seus dados e como ele atualiza suas configurações entre versões. Para obter mais informações sobre provedores de configurações do aplicativo, consulte [arquitetura de configurações do aplicativo](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>Arquivos de configurações do aplicativo
- As configurações do aplicativo consomem dois arquivos: * \<app> . exe. config* e *User. config*, em que *app* é o nome do seu aplicativo Windows Forms. o *User. config* é criado no cliente na primeira vez em que o aplicativo armazena configurações no escopo do usuário. * \<app> . exe. config*, por outro lado, existirá antes da implantação se você definir valores padrão para as configurações. O Visual Studio incluirá esse arquivo automaticamente quando você usar o comando **Publish** . Se você criar seu aplicativo ClickOnce usando o *Mage. exe* ou o *MageUI. exe*, verifique se esse arquivo está incluído nos outros arquivos do seu aplicativo ao preencher o manifesto do aplicativo.
+ As configurações do aplicativo consomem dois arquivos: * \<app>.exe.config* e *user.config*, em que *app* é o nome do seu aplicativo Windows Forms. *user.config* é criado no cliente na primeira vez em que o aplicativo armazena configurações no escopo do usuário. * \<app>.exe.config*, por outro lado, existirá antes da implantação se você definir valores padrão para as configurações. O Visual Studio incluirá esse arquivo automaticamente quando você usar o comando **Publish** . Se você criar seu aplicativo ClickOnce usando *Mage.exe* ou *MageUI.exe*, deverá verificar se esse arquivo está incluído nos outros arquivos do seu aplicativo ao preencher o manifesto do aplicativo.
 
- Em um aplicativo Windows Forms não implantado usando o ClickOnce, o arquivo * \<app> . exe. config* de um aplicativo é armazenado no diretório do aplicativo, enquanto o arquivo *User. config* é armazenado na pasta **Documents and Settings** do usuário. Em um aplicativo ClickOnce, o * \<app> . exe. config* reside no diretório do aplicativo dentro do cache de aplicativos do ClickOnce e *User. config* reside no diretório de dados do ClickOnce para esse aplicativo.
+ Em um aplicativo Windows Forms não implantado usando o ClickOnce, o arquivo de * \<app>.exe.config* de um aplicativo é armazenado no diretório do aplicativo, enquanto o arquivo de *user.config* é armazenado na pasta **Documents and Settings** do usuário. Em um aplicativo ClickOnce, * \<app>.exe.config* reside no diretório do aplicativo dentro do cache do aplicativo ClickOnce e *user.config* reside no diretório de dados do ClickOnce para esse aplicativo.
 
- Independentemente de como você implanta seu aplicativo, as configurações do aplicativo garantem o acesso de leitura seguro ao * \<app> . exe. config*e ao acesso de leitura/gravação seguro a *User. config*.
+ Independentemente de como você implanta seu aplicativo, as configurações do aplicativo garantem acesso seguro de leitura para * \<app>.exe.config*e acesso de leitura/gravação seguro para *user.config*.
 
  Em um aplicativo ClickOnce, o tamanho dos arquivos de configuração usados pelas configurações do aplicativo é restrito pelo tamanho do cache do ClickOnce. Para obter mais informações, consulte [visão geral do cache do ClickOnce](../deployment/clickonce-cache-overview.md).
 
@@ -42,18 +42,18 @@ As configurações do aplicativo para Windows Forms facilita a criação, o arma
 
 |Tipo de alteração|Ação de atualização|
 |--------------------|--------------------|
-|Configuração adicionada a * \<app> . exe. config*|A nova configuração é mesclada com o * \<app> . exe. config* da versão atual|
-|Configuração removida de * \<app> . exe. config*|A configuração antiga é removida do * \<app> . exe. config* da versão atual|
-|O padrão da configuração foi alterado; configuração local ainda definida como o padrão original em *User. config*|A configuração é mesclada com o *User. config* da versão atual com o novo padrão como o valor|
-|O padrão da configuração foi alterado; configuração definida como não padrão em *User. config*|A configuração é mesclada com o *User. config* da versão atual com o valor não padrão mantido|
+|Configuração adicionada a * \<app>.exe.config*|A nova configuração é mesclada com a * \<app>.exe.config* da versão atual|
+|Configuração removida do * \<app>.exe.config*|A configuração antiga é removida da * \<app>.exe.config* da versão atual|
+|O padrão da configuração foi alterado; configuração local ainda definida como padrão original no *user.config*|A configuração é mesclada com o *user.config* da versão atual com o novo padrão como o valor|
+|O padrão da configuração foi alterado; configuração definida como não padrão no *user.config*|A configuração é mesclada com o *user.config* da versão atual com o valor não padrão mantido|
 
 Se você criou sua própria classe wrapper de configurações de aplicativo e deseja personalizar a lógica de atualização, você pode substituir o <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> método.
 
 ## <a name="clickonce-and-roaming-settings"></a>Configurações de roaming e ClickOnce
  O ClickOnce não funciona com configurações de roaming, o que permite que o arquivo de configurações o acompanhe entre computadores em uma rede. Se você precisar de configurações de roaming, será necessário implementar um provedor de configurações de aplicativo que armazene as configurações pela rede ou desenvolver suas próprias classes de configurações personalizadas para armazenar as configurações em um computador remoto. Para obter mais informações em provedores de configurações, consulte [arquitetura de configurações do aplicativo](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Visão geral das configurações de aplicativo](/dotnet/framework/winforms/advanced/application-settings-overview)
+- [Visão geral das configurações do aplicativo](/dotnet/framework/winforms/advanced/application-settings-overview)
 - [Visão geral do cache do ClickOnce](../deployment/clickonce-cache-overview.md)
 - [Acesso a dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

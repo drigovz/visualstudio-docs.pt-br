@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
+title: 'IDebugModuleLoadEvent2:: GetModule | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0083946051fe78fc1bd19ea877475465e0b6477f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163425"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
@@ -44,17 +44,17 @@ int GetModule( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pModule`  
- [out] Retorna um [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que está carregando ou descarregando.  
+ fora Retorna um objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa o módulo que está carregando ou descarregando.  
   
  `pbstrDebugMessage`  
- [no, out] Retorna uma mensagem opcional que descreve esse evento. Se esse parâmetro for um valor nulo, nenhuma mensagem é solicitada.  
+ [entrada, saída] Retorna uma mensagem opcional que descreve esse evento. Se esse parâmetro for um valor nulo, nenhuma mensagem será solicitada.  
   
  `pbLoad`  
- [no, out] Diferente de zero (`TRUE`) se o módulo está sendo carregado e zero (`FALSE`) se o módulo está descarregando. Se esse parâmetro for um valor nulo, nenhum status é solicitada.  
+ [entrada, saída] Diferente de zero ( `TRUE` ) se o módulo estiver sendo carregado e zero ( `FALSE` ) se o módulo estiver descarregando. Se esse parâmetro for um valor nulo, nenhum status será solicitado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

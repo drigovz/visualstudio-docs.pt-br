@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926305"
 ---
 # <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
@@ -44,19 +44,19 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
  O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, confira [Tempo de sincronização](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Modo de suspensão
- O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Sleep time](../profiling/sleep-time.md).
+ O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de suspensão](../profiling/sleep-time.md).
 
 ### <a name="io"></a>E/S
- O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de I/O (exibição de segmentos)](../profiling/i-o-time-threads-view.md).
+ O relatório de E/S mostra as chamadas responsáveis por segmentos que estão bloqueando E/S e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [hora de e/s (exibição de threads)](../profiling/i-o-time-threads-view.md).
 
 ### <a name="memory-management"></a>Gerenciamento de memória
- O relatório de Gerenciamento de Memória mostra as chamadas responsáveis por segmentos que estão bloqueando operações de gerenciamento na memória e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de gerenciamento de memória](../profiling/memory-management-time.md).
+ O relatório de Gerenciamento de Memória mostra as chamadas responsáveis por segmentos que estão bloqueando operações de gerenciamento na memória e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de gerenciamento de memória](../profiling/memory-management-time.md).
 
 ### <a name="preemption"></a>Preempção
- O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias.  Você pode expandir cada processo para exibir os threads específicos que substituíram threads no processo atual e exibir uma divisão de instâncias de preempção por thread. Esse relatório de bloqueio é menos acionável que outros porque preempção normalmente é imposta sobre seu processo pelo sistema operacional e não por um problema no seu código. Para obter mais informações, consulte [o tempo de prevenção](../profiling/preemption-time.md).
+ O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias.  Você pode expandir cada processo para exibir os threads específicos que substituíram threads no processo atual e exibir uma divisão de instâncias de preempção por thread. Esse relatório de bloqueio é menos acionável que outros porque preempção normalmente é imposta sobre seu processo pelo sistema operacional e não por um problema no seu código. Para obter mais informações, consulte o [tempo de preempção](../profiling/preemption-time.md).
 
 ### <a name="ui-processing"></a>Processamento de interface do usuário
- O relatório de Processamento de interface do usuário mostra as chamadas responsáveis por bloquear segmentos que estão bloqueando em blocos de processamento de interface do usuário e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [o tempo de processamento da ia](../profiling/ui-processing-time.md).
+ O relatório de Processamento de interface do usuário mostra as chamadas responsáveis por bloquear segmentos que estão bloqueando em blocos de processamento de interface do usuário e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de processamento da IU](../profiling/ui-processing-time.md).
 
 ## <a name="see-also"></a>Confira também
-- [exibição Threads](../profiling/threads-view-parallel-performance.md)
+- [Exibição de threads](../profiling/threads-view-parallel-performance.md)

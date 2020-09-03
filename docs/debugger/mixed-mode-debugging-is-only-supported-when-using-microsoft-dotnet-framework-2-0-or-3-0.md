@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730924"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>A depuração de modo misto só é suportada quando o Microsoft .NET Framework 2.0 ou 3.0 é usado
@@ -53,5 +53,5 @@ As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem 
 
 - Consulte [Configurando a depuração do SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

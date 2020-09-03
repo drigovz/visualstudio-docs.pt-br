@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589377"
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
@@ -54,5 +54,5 @@ Debug.SymbolPath
 
 ## <a name="see-also"></a>Confira também
 
-- [Janela Comando](../../ide/reference/command-window.md)
+- [Janela de comando](../../ide/reference/command-window.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

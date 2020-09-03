@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 325bbecf3a34a00664a9f63cdbf995bd14138d7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194877"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyva"></a>IDiaEnumSymbolsByAddr::symbolByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Posiciona o enumerador ao executar uma pesquisa por endereço virtual (VA).  
+Posiciona o enumerador executando uma pesquisa por endereço virtual (VA).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,14 +36,14 @@ HRESULT symbolByVA ( 
   
 #### <a name="parameters"></a>Parâmetros  
  virtualAddress  
- [in] Endereço virtual.  
+ no Endereço virtual.  
   
  ppsymbol  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.  
+ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo encontrado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não pôde ser encontrado. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não foi encontrado. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

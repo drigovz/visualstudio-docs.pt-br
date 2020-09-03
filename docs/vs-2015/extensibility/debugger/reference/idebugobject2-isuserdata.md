@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData | Microsoft Docs
+title: 'IDebugObject2:: isuserdata | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fd595ce041ae1968e085e3b63b49d308cfd14452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194586"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Determina se o objeto representa dados de usuário.  
+Determina se o objeto representa dados do usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,13 +40,13 @@ int IsUserData(
   
 #### <a name="parameters"></a>Parâmetros  
  `pfUser`  
- [out] Retorna não zero (`TRUE`) se o objeto representa dados de usuário; zero (`FALSE`) se não existir.  
+ fora Retorna zero ( `TRUE` ) se o objeto representar dados do usuário; zero ( `FALSE` ) se não tiver.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Dados de usuário são qualquer objeto que faz parte de um módulo designado como JustMyCode (uma opção configurável pelo usuário que marca um módulo, como código de usuário e, portanto, visíveis em um rastreamento de pilha).  
+ Os dados do usuário são qualquer objeto que faça parte de um módulo designado como JustMyCode (uma opção configurável pelo usuário que marca um módulo como código do usuário e, portanto, visível em um rastreamento de pilha).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

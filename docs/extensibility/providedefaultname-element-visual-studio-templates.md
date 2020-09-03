@@ -1,5 +1,5 @@
 ---
-title: FornecerElementoNome Padrão (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento ProvideDefaultName (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701713"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>FornecerelementoDefaultName (modelos do Visual Studio)
-Especifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o sistema de projeto gerará um nome padrão para o modelo na caixa de diálogo **Adicionar novo item** ou novo **projeto.**
+# <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelos do Visual Studio)
+Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema do projeto irá gerar um nome padrão para o modelo na caixa de diálogo **Adicionar novo item** ou **novo projeto** .
 
- \<\<VSTemplate>Template>> \<ProvideDefaultName>
+ \<VSTemplate> \<TemplateData>
+ \<ProvideDefaultName>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,22 +45,22 @@ Especifica se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o sistem
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve `true` `false`ser ou , indicando se deve ou não gerar um nome padrão para o modelo na caixa **de diálogo Adicionar novo item** ou novo **projeto.**
+ O texto deve ser `true` ou `false` , indicando se deve ou não gerar um nome padrão para o modelo na caixa de **diálogo Adicionar novo item** ou **novo projeto** .
 
 ## <a name="remarks"></a>Comentários
  `ProvideDefaultName` é um elemento opcional. O valor padrão é `true`.
 
- Se `ProvideDefaultName` o `false`elemento for , as caixas **de nome** das caixas `<Enter_name>`de diálogo Adicionar novo **item** e novo **projeto** contêm o valor .
+ Se o `ProvideDefaultName` elemento for `false` , as caixas de **nome** das caixas de diálogo **Adicionar novo item** e **novo projeto** conterá o valor `<Enter_name>` .
 
- Use o elemento [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) para especificar o nome padrão do projeto ou item nas caixas de diálogo **Adicionar novo item** e **novo projeto.** Quando o valor `ProvideDefaultName` do `true`elemento é `DefaultName` , a omissão do elemento para projetos preenche a caixa de diálogo com o nome do modelo, ou seja, o valor do elemento [Nome.](../extensibility/name-element-visual-studio-templates.md)
+ Use o elemento [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) para especificar o nome padrão do projeto ou do item nas caixas de diálogo **Adicionar novo item** e **novo projeto** . Quando o valor do `ProvideDefaultName` elemento é `true` , a omissão do `DefaultName` elemento para projetos popula a caixa de diálogo com o nome do modelo, ou seja, o valor do elemento [Name](../extensibility/name-element-visual-studio-templates.md) .
 
 ## <a name="example"></a>Exemplo
- O exemplo de `ProvideDefaultName` código `false`a seguir define o elemento para .
+ O exemplo de código a seguir define o `ProvideDefaultName` elemento como `false` .
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"

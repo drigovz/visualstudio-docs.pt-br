@@ -12,47 +12,47 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149122"
 ---
 # <a name="launching-the-debugger"></a>Iniciando o depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Iniciando o depurador requer o envio de sequência correta de métodos e eventos com seus atributos apropriados.  
+Iniciar o depurador requer o envio da sequência correta de métodos e eventos com seus atributos adequados.  
   
 ## <a name="sequences-of-methods-and-events"></a>Sequências de métodos e eventos  
   
-1. O Gerenciador de sessão de depuração (SDM) é chamado, escolhendo a **Debug** menu e, em seguida, escolhendo **iniciar**. Ver [inicializando um programa](../../extensibility/debugger/launching-a-program.md) para obter mais informações.  
+1. O SDM (Gerenciador de depuração de sessão) é chamado escolhendo o menu **depurar** e, em seguida, escolhendo **Iniciar**. Consulte [iniciando um programa](../../extensibility/debugger/launching-a-program.md) para obter mais informações.  
   
-2. As chamadas SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método.  
+2. O SDM chama o método [onattach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
-3. Com base no modelo de processo (DES) do mecanismo de depuração, o `IDebugProgramNodeAttach2::OnAttach` método retorna um dos métodos a seguir, que determina o que acontece em seguida.  
+3. Com base no modelo de processo do mecanismo DE depuração (DE), o `IDebugProgramNodeAttach2::OnAttach` método retorna um dos seguintes métodos, que determina o que acontece em seguida.  
   
-     Se `S_FALSE` for retornado, o mecanismo de depuração (DES) deve ser carregado em andamento com a máquina virtual.  
+     Se `S_FALSE` for retornado, o mecanismo de depuração (de) será carregado no processo da máquina virtual.  
   
      - ou -  
   
-     Se `S_OK` for retornado, o DE deve ser carregado no processo do SDM. O SDM, em seguida, executa as seguintes tarefas:  
+     Se `S_OK` for retornado, o de será carregado no processo do SDM. O SDM executa as seguintes tarefas:  
   
-    1. Chamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações de mecanismo de.  
+    1. Chama [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações do mecanismo de de.  
   
-    2. Cria conjunta DE.  
+    2. Cocria o DE.  
   
-    3. Chamadas [anexar](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+    3. Chama [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-4. O envia DE um [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+4. O DE envia um [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-5. O envia DE um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+5. O DE envia um [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-6. O envia DE um [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+6. O DE envia um [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-7. O envia DE um [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+7. O DE envia um [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-8. O envia DE um [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
+8. O DE envia um [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) para o SDM com um `EVENT_SYNC` atributo.  
   
-## <a name="see-also"></a>Consulte também  
- [Chamar eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Chamando eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)   
  [Inicializando um programa](../../extensibility/debugger/launching-a-program.md)

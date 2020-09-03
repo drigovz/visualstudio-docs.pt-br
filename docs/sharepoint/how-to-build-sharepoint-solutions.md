@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d3beb1602a6572ed578208d6dd85951f1ea1c30b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014515"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Como: Compilar soluções do SharePoint
@@ -32,6 +33,6 @@ Criar sua solução do SharePoint não é diferente de criar outros aplicativos 
 
 3. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

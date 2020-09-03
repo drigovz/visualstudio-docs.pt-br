@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184270"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criar um arquivo de projeto do MSBuild do zero
@@ -49,7 +49,7 @@ Para concluir o passo a passos, você deve ter o Visual Studio instalado porque 
 
 ## <a name="extend-the-path"></a>Estender o caminho
 
-Para poder usar o MSBuild, você deve estender a variável de ambiente PATH para incluir todas as ferramentas necessárias. Você pode usar o **prompt de comando do desenvolvedor para o Visual Studio**. Pesquise por ele no Windows 10 na caixa de pesquisa na barra de tarefas do Windows. Para configurar o ambiente em um prompt de comando comum ou em um ambiente de script, execute *VSDevCmd. bat* na subpasta *Common7/Tools* de uma instalação do Visual Studio.
+Para poder usar o MSBuild, você deve estender a variável de ambiente PATH para incluir todas as ferramentas necessárias. Você pode usar o **prompt de comando do desenvolvedor para o Visual Studio**. Pesquise por ele no Windows 10 na caixa de pesquisa na barra de tarefas do Windows. Para configurar o ambiente em um prompt de comando comum ou em um ambiente de script, execute *VSDevCmd.bat* na subpasta *Common7/Tools* de uma instalação do Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Criar um aplicativo mínimo
 
@@ -234,7 +234,7 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 ```
 
 > [!NOTE]
-> Recomendamos que você adicione um delimitador de caminho de barra invertida (\\) no final do nome da pasta ao especificá-lo no elemento `OutputPath`, em vez de adicioná-lo ao atributo `OutputAssembly` da tarefa `Csc`. Portanto:
+> Recomendamos que você adicione um delimitador de caminho de barra invertida (\\) no final do nome da pasta ao especificá-lo no elemento `OutputPath`, em vez de adicioná-lo ao atributo `OutputAssembly` da tarefa `Csc`. Portanto,
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -329,7 +329,7 @@ O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
 1. No prompt de comando, digite **MSBuild HelloWorld. csproj-p:AssemblyName = Greetings**.
 
-     Como você não usou a opção **-t** para definir explicitamente o destino, o MSBuild executa o destino de compilação padrão. A opção **-p** substitui a `AssemblyName` propriedade e dá a ela o novo valor, `Greetings` . Isso faz com que um novo aplicativo, *Greetings. exe*, seja criado na pasta *\Bin \\ * .
+     Como você não usou a opção **-t** para definir explicitamente o destino, o MSBuild executa o destino de compilação padrão. A opção **-p** substitui a `AssemblyName` propriedade e dá a ela o novo valor, `Greetings` . Isso faz com que um novo aplicativo, *Greetings.exe*, seja criado na *pasta \\ \Bin* .
 
 2. Para verificar se a *pasta \\ \Bin* contém o aplicativo *MSBuildSample* e o novo aplicativo *Greetings* , digite **dir Bin**.
 
@@ -470,7 +470,7 @@ O exemplo a seguir mostra um arquivo de projeto que compila um aplicativo Visual
 
  O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, confira [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

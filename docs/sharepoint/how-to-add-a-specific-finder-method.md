@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014811"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como adicionar um método localizador específico
@@ -84,7 +85,7 @@ ms.locfileid: "86014811"
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Como adicionar um método localizador](../sharepoint/how-to-add-a-finder-method.md)
 - [Como: adicionar um método de criador](../sharepoint/how-to-add-a-creator-method.md)

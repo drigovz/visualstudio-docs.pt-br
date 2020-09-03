@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88251274"
 ---
 # <a name="convert-typeof-to-nameof"></a>Converter `typeof` em `nameof`
@@ -43,6 +43,6 @@ Esta refatoração aplica-se a:
 - Visual Basic
   <br>Selecione **converter ' GetType ' para ' NameOf '** ![ converter typeof em NameOf](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

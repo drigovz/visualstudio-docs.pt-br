@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2:GetPortNotify | Microsoft Docs
+title: 'IDebugDefaultPort2:: GetPortNotify | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 670dd128e6962c1e1d12f81eea03f9759fa56621
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732408"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
-Este método obtém uma interface [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) para esta porta.
+Esse método obtém uma interface [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) para essa porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetPortNotify(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppPortNotify`\
-[fora] Um objeto [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md)
+fora Um objeto [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Normalmente, `QueryInterface` o método é chamado sobre o objeto que implementa a interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) para obter uma interface [IDebugPortNotify2.](../../../extensibility/debugger/reference/idebugportnotify2.md) No entanto, existem circunstâncias em que a interface desejada é implementada em um objeto diferente. Este método oculta essas circunstâncias `IDebugPortNotify2` e retorna a interface do objeto mais apropriado.
+ Normalmente, o `QueryInterface` método é chamado no objeto que implementa a interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) para obter uma interface [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) . No entanto, há circunstâncias em que a interface desejada é implementada em um objeto diferente. Esse método oculta essas circunstâncias e retorna a `IDebugPortNotify2` interface do objeto mais apropriado.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

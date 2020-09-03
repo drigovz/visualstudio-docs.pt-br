@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfc85b0616fdf8f30732f2409a1a15040967dbb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660645"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
@@ -27,7 +27,7 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 
 1. No menu **Arquivo**, escolha **Novo** e, em seguida, escolha **Projeto** (Teclado: Ctrl + Shift + N).
 
-2. Na caixa de diálogo Novo Projeto, expanda o nó **Instalado**, escolha o idioma que você deseja usar para o projeto de teste e escolha **Testar**.
+2. Na caixa de diálogo Novo Projeto, expanda o nó **Instalado**, escolha a linguagem que deseja usar para o projeto de teste e clique em **Testar**.
 
 3. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Para testar o projeto Contas de nosso exemplo, você nomeará o projeto AccountsTests.
 
@@ -35,7 +35,7 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 
     1. Selecione o projeto no Gerenciador de Soluções.
 
-    2. No menu **Projeto**, escolha **Adicionar Referência...** .
+    2. No menu **projeto** , escolha **Adicionar referência...**.
 
     3. Na caixa de diálogo Gerenciador de Referência, abra o nó **Solução** e escolha **Projetos**. Verifique o nome do projeto de código e feche a caixa de diálogo.
 
@@ -46,9 +46,9 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 
  Consulte uma das seguintes seções:
 
-- [Escrevendo testes de unidade para .NET Framework com a estrutura de teste de unidade Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [Como escrever testes de unidade para .NET Framework com o framework de teste de unidade da Microsoft para código gerenciado](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
 
-- [Escrevendo testes de unidade para C/C++ com o Microsoft Unit Testing Framework para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+- [Como escrever testes de unidade para C/C++ com o framework de testes de unidade da Microsoft para C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
 
   **Executando testes de unidade**
 

@@ -23,21 +23,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731383"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
-Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de instruções `printf`. Você não precisa infechá-los em **#ifdef**s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
+Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa infechá-los em **#ifdef**s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
 
 |Macro|Descrição|
 |-----------|-----------------|
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Gera uma cadeia de caracteres de mensagem e zero a quatro argumentos. Para _RPT1 até **_RPT4**, a cadeia de caracteres de mensagem funciona como uma cadeia de caracteres de formatação de estilo printf para os argumentos.|
 |**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Da mesma forma que **_RPTn**, mas essas macros também geram a saída do nome do arquivo e o número da linha em que a macro está localizada.|
 
- Considere o exemplo a seguir:
+ Considere o seguinte exemplo:
 
 ```cpp
 #ifdef _DEBUG
@@ -79,5 +79,5 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
 
  Você pode alterar facilmente uma macro personalizada para relatar mais ou menos informações para destinos diferentes. Essa abordagem é particularmente útil à medida que os requisitos de depuração evoluem.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

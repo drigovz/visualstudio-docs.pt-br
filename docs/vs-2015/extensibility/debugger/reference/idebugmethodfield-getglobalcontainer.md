@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetGlobalContainer | Microsoft Docs
+title: 'IDebugMethodField:: GetGlobalContainer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63912b75435de503dec677b715d1914b419ba07a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162573"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
@@ -40,14 +40,14 @@ int GetGlobalContainer(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppClass`  
- [out] Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o módulo no qual esse método é definido.  
+ fora Retorna um [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) que representa o módulo no qual esse método é definido.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Retornado [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto representa o módulo de inteiro e é um objeto artificial, ou seja, o próprio módulo não tem uma classe real, mas ele pode ser representado por um `IDebugClassField` objeto, permitindo que os vários elementos do módulo a ser enumerado e descobertos.  
+ O objeto [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) retornado representa o módulo inteiro e é um objeto artificial, ou seja, o próprio módulo não tem uma classe real, mas pode ser representado por um `IDebugClassField` objeto, permitindo que os vários elementos do módulo sejam enumerados e descobertos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

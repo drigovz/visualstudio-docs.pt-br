@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660522"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
@@ -20,7 +20,7 @@ ms.locfileid: "72660522"
 
 O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise, Visual Studio Professional
 
@@ -52,11 +52,11 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
 
 4. Abra [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-5. Escolha **Procurar**.
+5. Escolha **procurar**.
 
 6. Na lista **Categoria**, expanda o nó **Ferramentas** e escolha **Teste**.
 
 7. Escolha uma estrutura na lista de resultados para navegar até uma página da Galeria do Visual Studio para a ferramenta.
 
-## <a name="see-also"></a>Consulte também
- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Consulte Também
+ [Teste de unidade de código](../test/unit-test-your-code.md)

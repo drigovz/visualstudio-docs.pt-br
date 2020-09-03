@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545776"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Como mostrar erros de interface do usuário do suplemento
@@ -42,7 +42,7 @@ ms.locfileid: "85545776"
     > [!NOTE]
     > Para o Outlook, a caixa de seleção **mostrar erros de interface do usuário do suplemento do VSTO** está localizada na seção **desenvolvedor** do painel detalhes. Para outros aplicativos, a caixa de seleção está localizada na seção **geral** do painel detalhes.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)

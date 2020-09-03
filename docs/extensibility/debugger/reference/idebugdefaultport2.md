@@ -13,45 +13,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f560a3dabefb0a8dede6520dcd8fd47f609a7780
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732319"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
-Esta interface fornece vários métodos para acessar as instalações de servidor e notificação de uma porta.
+Essa interface fornece vários métodos para acessar os recursos de notificação e servidor de uma porta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDefaultPort2 : IDebugPort2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O Visual Studio implementa esta interface para representar a porta de depuração para acesso a programas. Um fornecedor de porta personalizado também pode implementar essa interface se lidar com a depuração remota.
+ O Visual Studio implementa essa interface para representar a porta de depuração para acessar programas. Um fornecedor de porta personalizado também pode implementar essa interface se tratar da depuração remota.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Um argumento para métodos na interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) fornece essa interface. Chamar [queryInterface](/cpp/atl/queryinterface) em uma interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) também pode obter essa interface.
+ Um argumento para métodos na interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) fornece essa interface. Chamar [QueryInterface](/cpp/atl/queryinterface) em uma interface [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) também pode obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
- Além dos métodos definidos no [IDebugPort2,](../../../extensibility/debugger/reference/idebugport2.md)esta interface implementa os seguintes métodos:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Além dos métodos definidos no [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md), essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Obtém a interface de notificação da porta a partir desta porta.|
-|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtém a interface para o servidor que hospeda esta porta.|
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se esta porta está funcionando na máquina local.|
+|[GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md)|Obtém a interface de notificação de porta desta porta.|
+|[GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)|Obtém a interface para o servidor que hospeda essa porta.|
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugdefaultport2-queryislocal.md)|Determina se esta porta está em execução no computador local.|
 
 ## <a name="remarks"></a>Comentários
- O nome`IDebugDefaultPort2`" " é um pouco de um equívoco, pois não representa uma porta padrão. Pode se chamar "IDebugPort3".
+ O nome " `IDebugDefaultPort2` " é um pouco de um nome, pois não representa uma porta padrão. Ele poderia ser chamado de "IDebugPort3".
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2442bf4cc31eeb51332aa28325924e18ccb1ffb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660725"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analisando a cobertura de código em testes de verificação de build
@@ -28,13 +28,13 @@ A análise de cobertura de código no Microsoft Visual Studio mostra quanto de s
 
     Se você tiver mais de uma definição de Fonte de Teste, repita essa etapa para cada uma.
 
-   - <em>No entanto, não há nenhum campo chamado **Tipo de Arquivo de Configurações de Execução</em>* .*
+   - <em>No entanto, não há nenhum campo chamado **Tipo de Arquivo de Configurações de Execução</em>*.*
 
       Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha o botão de reticências **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, em **Test Runner**, selecione **Visual Studio Test Runner**.
 
-   ![Definindo a definição de compilação para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Configurando a definição de build para cobertura de código](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    Após a execução do build, os resultados da cobertura de código aparecem no resumo do build.
 
-## <a name="see-also"></a>Consulte também
- [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+## <a name="see-also"></a>Consulte Também
+ [Uso da cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

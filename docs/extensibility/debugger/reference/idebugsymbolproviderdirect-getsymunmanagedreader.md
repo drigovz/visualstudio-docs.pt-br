@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
+title: 'IDebugSymbolProviderDirect:: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718925"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-Recupera um leitor de símbolos para código não gerenciado.
+Recupera um leitor de símbolo para código não gerenciado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ int GetSymUnmanagedReader (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ulAppDomainID`\
-[em] Identificador do domínio do aplicativo.
+no Identificador do domínio do aplicativo.
 
 `guidModule`\
-[em] Identificador único do módulo.
+no Identificador exclusivo do módulo.
 
 `ppSymUnmanagedReader`\
-[fora] Retorna um objeto que representa o leitor de símbolos para código não gerenciado.
+fora Retorna um objeto que representa o leitor de símbolo para código não gerenciado.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
