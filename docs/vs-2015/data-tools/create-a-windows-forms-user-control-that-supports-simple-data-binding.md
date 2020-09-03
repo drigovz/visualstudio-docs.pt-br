@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf30a38384863c9ba5a8af35af3326a51058d831
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668767"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples
@@ -39,7 +39,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 |Implemente o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.DataGridView> que exibe listas (ou tabelas) de dados. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à ligação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implemente o <xref:System.ComponentModel.LookupBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.ComboBox>que exibe listas (ou tabelas) de dados, mas também precisa apresentar uma única coluna ou propriedade. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- Este passo a passo cria um controle simples que exibe dados de uma única coluna em uma tabela. Este exemplo usa a coluna `Phone` da tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário simples exibirá os números de telefone dos clientes em um formato de número de telefone padrão, usando um <xref:System.Windows.Forms.MaskedTextBox> e definindo a máscara como um número de telefone.
+ Este passo a passo cria um controle simples que exibe dados de uma única coluna em uma tabela. Este exemplo usa a coluna `Phone` da tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário simples exibirá os números de telefone dos clientes em um formato de número de telefone padrão, usando um <xref:System.Windows.Forms.MaskedTextBox> e definindo a máscara para um número de telefone.
 
  Durante este passo a passo, você aprenderá a:
 
@@ -57,7 +57,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 - Criar um formulário para exibir dados no novo controle.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -82,7 +82,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 1. No menu **Projeto**, escolha **Adicionar Controle do Usuário**.
 
-2. Digite `PhoneNumberBox` na área nome e clique em **Adicionar**.
+2. Digite `PhoneNumberBox` a área nome e clique em **Adicionar**.
 
      O controle **PhoneNumberBox** é adicionado ao **Gerenciador de Soluções** e abre no designer.
 
@@ -109,10 +109,10 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
      [!code-csharp[VbRaddataDisplaying#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/PhoneNumberBox.cs#3)]
      [!code-vb[VbRaddataDisplaying#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/PhoneNumberBox.vb#3)]
 
-3. No menu **Compilação**, escolha **Compilar Solução**.
+3. No menu **Compilar** , escolha **Compilar solução**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do seu banco de dados
- Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar uma fonte de dados com base na tabela `Customers` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão.
+ Esta etapa usa o assistente de **configuração de fonte de dados** para criar uma fonte de dados com base na `Customers` tabela no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão.
 
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
@@ -136,7 +136,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 8. Selecione a tabela `Customers` e clique em **Concluir**.
 
-     O **NorthwindDataSet** é adicionado ao projeto e a tabela `Customers` aparece na janela **Fontes de Dados**.
+     O **NorthwindDataSet** é adicionado ao seu projeto e a `Customers` tabela é exibida na janela **Data Sources** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Definir a coluna de telefone para usar o controle PhoneNumberBox
  Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
@@ -160,7 +160,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
 
-- Arraste o nó **clientes** principais da janela **fontes de dados** para o formulário e verifique se o controle de `PhoneNumberBox` é usado para exibir os dados na coluna `Phone`.
+- Arraste o nó **clientes** principais da janela **fontes de dados** para o formulário e verifique se o `PhoneNumberBox` controle é usado para exibir os dados na `Phone` coluna.
 
      Os controles de associação de dados com rótulos descritivos são exibidos no formulário, juntamente com uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para registros de navegação. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> são exibidos na bandeja de componentes.
 
@@ -177,5 +177,5 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 - Criando controles que suportam cenários de associação de dados mais complexos. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [criar um controle de usuário de Windows Forms que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles de Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [defina o controle a ser criado ao arrastar da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

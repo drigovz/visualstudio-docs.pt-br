@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669695"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Inserindo um diagrama em um formulário do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode inserir um diagrama de DSL em um controle do Windows, que aparece na janela [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Você pode inserir um diagrama de DSL em um controle do Windows, que aparece na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela.
 
 ## <a name="embedding-a-diagram"></a>Inserindo um diagrama
 
@@ -75,7 +75,7 @@ Você pode inserir um diagrama de DSL em um controle do Windows, que aparece na 
 
 #### <a name="updating-the-form-using-store-events"></a>Atualizando o formulário usando eventos de armazenamento
 
-1. No designer de formulário, adicione uma caixa de **listagem** chamada `listBox1`. Isso exibirá uma lista dos elementos no modelo. Ele será mantido em sincronização com o modelo usando eventos de *armazenamento*. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. No designer de formulário, adicione uma caixa de **listagem** chamada `listBox1` . Isso exibirá uma lista dos elementos no modelo. Ele será mantido em sincronização com o modelo usando eventos de *armazenamento*. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. No arquivo de código personalizado, substitua os métodos adicionais para a classe DocView:
 
@@ -149,9 +149,9 @@ Você pode inserir um diagrama de DSL em um controle do Windows, que aparece na 
 
     ```
 
-4. Para testar a DSL, pressione F5 e, na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra um arquivo de modelo de exemplo.
+4. Para testar a DSL, pressione F5 e, na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , abra um arquivo de modelo de exemplo.
 
      Observe que a caixa de listagem mostra uma lista dos elementos no modelo e que ele está correto após qualquer adição ou exclusão, e após desfazer e refazer.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Navegando e atualizando um modelo no](../modeling/navigating-and-updating-a-model-in-program-code.md) código de programação de código [para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

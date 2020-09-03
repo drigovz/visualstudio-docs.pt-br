@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 657bb91295134352fb00649ad06f59e34593c578
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669910"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir pacotes e namespaces
@@ -47,18 +47,18 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
 
  [Propriedades de pacotes](#Properties)
 
-## <a name="Namespaces"></a>Namespaces
+## <a name="namespaces"></a><a name="Namespaces"></a> Namespaces
  Os pacotes são úteis para separar o trabalho em áreas diferentes. Cada pacote define um namespace para que os nomes definidos em diferentes pacotes não entrem em conflito entre si.
 
- A propriedade nome qualificado de cada elemento é o nome qualificado do pacote ao qual pertence, seguido pelo nome do elemento. Por exemplo, se seu pacote for chamado de `MyPackage`, uma classe dentro do pacote terá um nome qualificado como `MyPackage::MyClass`. Como cada elemento está contido dentro de um modelo, cada nome qualificado começa com o nome do modelo.
+ A propriedade nome qualificado de cada elemento é o nome qualificado do pacote ao qual pertence, seguido pelo nome do elemento. Por exemplo, se seu pacote for chamado `MyPackage` , uma classe dentro do pacote terá um nome qualificado como `MyPackage::MyClass` . Como cada elemento está contido dentro de um modelo, cada nome qualificado começa com o nome do modelo.
 
  Um modelo também define um namespace, de modo que o nome qualificado de cada elemento em um modelo começa com o nome do modelo.
 
- Outros elementos de modelo também definem namespaces. Por exemplo, uma operação pertence ao namespace definido por sua classe pai, de modo que seu nome qualificado é como `MyModel ::MyPackage ::MyClass ::MyOperation`. Da mesma maneira, uma ação pertence ao namespace definido por sua atividade pai.
+ Outros elementos de modelo também definem namespaces. Por exemplo, uma operação pertence ao namespace definido por sua classe pai, de modo que seu nome qualificado é como `MyModel ::MyPackage ::MyClass ::MyOperation` . Da mesma maneira, uma ação pertence ao namespace definido por sua atividade pai.
 
  Os pacotes são contêineres. Se você mover ou excluir um pacote, as classes, os pacotes e outras coisas definidas dentro dele também serão movidos ou excluídos. O mesmo é verdadeiro para outros elementos que definem namespaces.
 
-## <a name="Packages"></a>Criando e exibindo pacotes
+## <a name="creating-and-viewing-packages"></a><a name="Packages"></a> Criando e exibindo pacotes
  Você pode criar um pacote em um diagrama de classe UML ou no Gerenciador de modelos UML.
 
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Para criar um pacote em um diagrama de classes UML
@@ -97,7 +97,7 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
     > [!NOTE]
     > Isso cria uma exibição do pacote neste diagrama. Ele não mostrará, necessariamente, todos os elementos que o pacote contém. Para verificar se você vê todo o conteúdo do pacote, exiba-o no Gerenciador de modelos UML.
 
-## <a name="Elements"></a>Criando elementos de modelo dentro de pacotes
+## <a name="creating-model-elements-inside-packages"></a><a name="Elements"></a> Criando elementos de modelo dentro de pacotes
  Há quatro maneiras pelas quais você pode posicionar elementos de modelo dentro de um pacote:
 
 - Adicione um novo elemento a um pacote no Gerenciador de modelos UML.
@@ -155,7 +155,7 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
 
     - No **Gerenciador de modelos UML**, cada elemento aparecerá sob o pacote.
 
-## <a name="Moving"></a>Movendo elementos para dentro e para fora dos pacotes
+## <a name="moving-elements-into-and-out-of-packages"></a><a name="Moving"></a> Movendo elementos para dentro e para fora dos pacotes
  Você pode mover um ou mais elementos para dentro ou para fora de um pacote.
 
  Se você mover um pacote, tudo dentro dele será movido com ele.
@@ -166,7 +166,7 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
 
      O nome qualificado do elemento será alterado para mostrar seu novo pacote ou modelo proprietário.
 
-     \- ou -
+     \- ou –
 
 - Em um diagrama de classe, arraste o elemento para uma forma de pacote.
 
@@ -175,7 +175,7 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
     > [!NOTE]
     > Se você arrastar um elemento de um pacote para uma parte em branco do diagrama, seu pacote proprietário não será alterado. Isso permite que você crie um diagrama que mostra elementos de vários pacotes sem precisar mostrar os próprios pacotes.
 
-## <a name="Pasting"></a>Colando elementos em um pacote
+## <a name="pasting-elements-into-a-package"></a><a name="Pasting"></a> Colando elementos em um pacote
  Você pode colar um elemento em um pacote. Se você colar um grupo de elementos relacionados em um pacote, as relações entre eles também serão coladas.
 
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Para colar elementos em um pacote em um diagrama de classes UML
@@ -187,40 +187,40 @@ No Visual Studio, um *pacote* é um contêiner para as definições de elementos
     > [!NOTE]
     > O pacote pode estar em um diagrama diferente.
 
-## <a name="Import"></a>Importar relações entre pacotes
+## <a name="import-relationships-between-packages"></a><a name="Import"></a> Importar relações entre pacotes
  Você pode definir uma relação de importação entre pacotes, usando a ferramenta de **importação** .
 
  Importar significa que os elementos definidos no pacote importado, que são os elementos na extremidade da seta da relação, são efetivamente definidos também no pacote de importação. Todos os elementos cuja visibilidade é definida como **pacote** também estarão visíveis no pacote de importação.
 
  Evite criar loops em relações de importação.
 
-## <a name="References"></a>Referências de um namespace para outro
+## <a name="references-from-one-namespace-to-another"></a><a name="References"></a> Referências de um namespace para outro
  Se você quiser fazer referência a um elemento de um pacote de outro, deverá usar o nome qualificado do elemento.
 
- Por exemplo, suponha que o pacote `SalesCommon` defina `CustomerAddress` de tipo. Em outro `RestaurantSales` de pacote, você deseja definir um tipo `MealOrder`, que tem um atributo do tipo endereço do cliente. Você tem duas opções:
+ Por exemplo, suponha que o pacote `SalesCommon` defina o tipo `CustomerAddress` . Em outro pacote `RestaurantSales` , você deseja definir um tipo `MealOrder` , que tem um atributo do tipo endereço do cliente. Você tem duas opções:
 
-- Especifique o tipo do atributo usando o nome totalmente qualificado `SalesCommon::CustomerAddress`. Você deve fazer isso somente se `CustomerAddress` tiver sua propriedade **Visibility** definida como **Public**.
+- Especifique o tipo do atributo usando o nome totalmente qualificado `SalesCommon::CustomerAddress` . Você deve fazer isso somente se `CustomerAddress` o tiver sua propriedade **Visibility** definida como **Public**.
 
-- Crie uma relação de importação do pacote de `RestaurantSales` para o pacote `SalesCommon`. Em seguida, você pode usar `CustomerAddress` sem usar seu nome qualificado.
+- Crie uma relação de importação do `RestaurantSales` pacote para o `SalesCommon` pacote. Em seguida, você pode usar `CustomerAddress` sem usar seu nome qualificado.
 
-## <a name="Properties"></a>Propriedades de pacotes
+## <a name="properties-of-packages"></a><a name="Properties"></a> Propriedades de pacotes
  Cada pacote tem as seguintes propriedades. Para ver as propriedades, clique com o botão direito do mouse no pacote, em um diagrama ou em um Gerenciador de modelos UML, e clique em **Propriedades**.
 
-|propriedade|Valor padrão|Descrição|
+|Propriedade|Valor padrão|Descrição|
 |--------------|-------------------|-----------------|
 |**Nome**|(um novo nome)|O nome do pacote. Você pode alterá-lo no diagrama ou na janela Propriedades.|
-|**Nome qualificado**|*Contêiner* :: *nome do pacote*|O nome completo, prefixado pelo nome do pacote ou modelo que contém este pacote. Para obter mais informações, consulte [Namespaces](#Namespaces).|
-|**Perfis**|esvaziá|Uma lista dos perfis vinculados a este pacote. Esses perfis fornecem estereótipos que podem ser aplicados aos elementos dentro do pacote. Para obter mais informações, consulte [personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
-|**Visibilidade**|**Público**|A visibilidade do pacote fora de seu pacote pai.|
-|**Itens de trabalho**|esvaziá|Uma lista de itens de trabalho vinculados. Para obter mais informações, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).|
+|**Nome Qualificado**|*Contêiner* :: *nome do pacote*|O nome completo, prefixado pelo nome do pacote ou modelo que contém este pacote. Para obter mais informações, consulte [Namespaces](#Namespaces).|
+|**Perfis**|(vazio)|Uma lista dos perfis vinculados a este pacote. Esses perfis fornecem estereótipos que podem ser aplicados aos elementos dentro do pacote. Para obter mais informações, consulte [personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
+|**Visibilidade**|**Pública**|A visibilidade do pacote fora de seu pacote pai.|
+|**Itens de trabalho**|(vazio)|Uma lista de itens de trabalho vinculados. Para obter mais informações, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).|
 |**Local de definição**|(um nome)|O nome do arquivo em que os detalhes do pacote são armazenados. Os arquivos estão dentro da pasta do projeto **ModelDefinition** . Essas informações podem ser úteis para fins de controle do código-fonte.|
-|**Descrição**|esvaziá|Uma descrição do pacote.|
-|**Estereótipos**|esvaziá|Estereótipos que são aplicados a este pacote. A lista de estereótipos disponíveis é determinada pelos perfis que você escolheu para este pacote e os pacotes que o contêm. Para obter mais informações, consulte [personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
+|**Descrição**|(vazio)|Uma descrição do pacote.|
+|**Estereótipos**|(vazio)|Estereótipos que são aplicados a este pacote. A lista de estereótipos disponíveis é determinada pelos perfis que você escolheu para este pacote e os pacotes que o contêm. Para obter mais informações, consulte [personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md).|
 
 ## <a name="how-packages-are-stored"></a>Como os pacotes são armazenados
  Quando você cria um novo pacote, um novo arquivo **. Uml** é criado na pasta do projeto **ModelDefinition** . O modelo raiz, que também é um pacote, também é armazenado em um arquivo **. Uml** .
 
  Além disso, cada diagrama é armazenado em dois arquivos, um que representa as formas do diagrama e um arquivo **. layout** que registra as posições das formas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editar modelos UML e](../modeling/edit-uml-models-and-diagrams.md) diagramas [diagramas de classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md) [gerenciar modelos e diagramas sob controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md)

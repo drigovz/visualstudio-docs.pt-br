@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 69ebcc264eb3caa68fa0dfd2998613a7c9037b2e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669781"
 ---
 # <a name="domain-property-value-change-handlers"></a>Manipuladores de alterações nos valores de propriedades de domínio
@@ -26,7 +26,7 @@ Em uma linguagem específica do domínio [!INCLUDE[vsprvs](../includes/vsprvs-md
 ## <a name="overriding-the-property-handler-methods"></a>Substituindo os métodos do manipulador de propriedades
  Cada propriedade de domínio de sua linguagem específica do domínio é manipulada por uma classe que está aninhada em sua classe de domínio pai. Seu nome segue o formato *PropertyName*PropertyHandler. Você pode inspecionar essa classe de manipulador de propriedade no arquivo **Dsl\Generated Code\DomainClasses.cs**. Na classe, `OnValueChanging()` é chamado imediatamente antes de o valor ser alterado, e `OnValueChanged()` é chamado imediatamente após o valor ser alterado.
 
- Por exemplo, suponha que você tenha uma classe de domínio denominada `Comment` que tenha uma propriedade de domínio de cadeia de caracteres denominada `Text` e uma propriedade de número inteiro chamada `TextLengthCount`. Para fazer com que `TextLengthCount` sempre contenha o comprimento da cadeia de caracteres `Text`, você pode escrever o código a seguir em um arquivo separado no projeto DSL:
+ Por exemplo, suponha que você tenha uma classe de domínio denominada `Comment` que tenha uma propriedade de domínio de cadeia de caracteres denominada `Text` e uma propriedade de número inteiro chamada `TextLengthCount` . Para fazer com que o `TextLengthCount` sempre contenha o comprimento da `Text` cadeia de caracteres, você pode escrever o seguinte código em um arquivo separado no projeto DSL:
 
 ```
 // Domain Class "Comment":
@@ -99,7 +99,7 @@ if (newValue > 10)
 
  Em vez disso, você poderia considerar a definição da propriedade derivada como uma propriedade calculada. Nesse caso, a propriedade não tem armazenamento próprio e está definindo a função que é avaliada sempre que o seu valor é necessário. Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).
 
- Em vez do exemplo anterior, você poderia definir o **tipo** de campo de `TextLengthCount` a ser **calculado** na definição de DSL. Você forneceria seu próprio método **Get** para essa propriedade de domínio. O método **Get** retornaria o comprimento atual da cadeia de caracteres `Text`.
+ Em vez do exemplo anterior, você poderia definir o **tipo** de campo de `TextLengthCount` a ser **calculado** na definição de DSL. Você forneceria seu próprio método **Get** para essa propriedade de domínio. O método **Get** retornaria o comprimento atual da `Text` cadeia de caracteres.
 
  No entanto, há uma possível desvantagem referente às propriedades calculadas, pois a expressão é avaliada toda vez que o valor é usado, o que pode representar um problema de desempenho. Além disso, não há nenhum OnValueChanging() e OnValueChanged() em uma propriedade calculada.
 

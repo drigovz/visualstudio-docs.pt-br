@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568653"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registrar saída da janela Comando
 
-Copia todas as entradas e saídas da janela **Comando** em um arquivo.
+Copia todas as entradas e saídas da janela de **comando** em um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ Opcional. O nome do arquivo de log. Por padrão, o arquivo é criado na pasta de
 > [!TIP]
 > Para alterar o local em que o arquivo de log é salvo, digite o caminho completo do arquivo entre aspas se o caminho contiver espaços.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 
 /on\
 Opcional. Inicia o log para a janela **Comando** no arquivo especificado e anexa o arquivo com as novas informações.
@@ -76,6 +76,6 @@ Este exemplo retoma o log de comandos no arquivo de log usado anteriormente.
 ## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela de comando](../../ide/reference/command-window.md)
-- [Caixa de encontrar/comando](../../ide/find-command-box.md)
+- [Janela Comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

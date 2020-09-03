@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568822"
 ---
 # <a name="import-and-export-settings-command"></a>Comando Importar e Exportar Configurações
 
 Importa, exporta ou redefine as configurações do Visual Studio.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 
 /export:`filename`
 

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f8fd8cdc8acdbf42b97e00f3c85647dd863721d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669961"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;returns&gt; (JavaScript)
@@ -38,17 +38,17 @@ Especifica informações de documentação para o resultado de uma chamada de fu
 #### <a name="parameters"></a>Parâmetros
  `type` Opcional. O tipo de dados do valor de retorno. O tipo pode ser um dos seguintes:
 
-- Um tipo de linguagem ECMAScript na especificação ECMAScript 5, como `Number` e `Object`.
+- Um tipo de linguagem ECMAScript na especificação ECMAScript 5, como `Number` e `Object` .
 
 - Um objeto DOM, como `HTMLElement`, `Window` e `Document`.
 
 - Uma função de construtor JavaScript.
 
-  `integer` Opcional. Se `type` for `Number`, especifica se o valor de retorno é um número inteiro. Defina como `true` para indicar que o valor de retorno é um inteiro; caso contrário, defina como `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
+  `integer` Opcional. Se `type` for `Number` , especifica se o valor de retorno é um inteiro. Defina como `true` para indicar que o valor de retorno é um inteiro; caso contrário, defina como `false` . Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
-  `domElement` Opcional. Esse atributo foi preterido; o atributo `type` tem precedência sobre esse atributo. Esse atributo especifica se o valor de retorno documentado é um elemento DOM. Defina como `true` para especificar que o valor de retorno é um elemento DOM; caso contrário, defina como `false`. Se o atributo `type` não estiver definido e `domElement` estiver definido como `true`, o IntelliSense tratará o valor de retorno documentado como um `HTMLElement` ao executar a conclusão da instrução.
+  `domElement` Opcional. Esse atributo foi preterido; o atributo `type` tem precedência sobre esse atributo. Esse atributo especifica se o valor de retorno documentado é um elemento DOM. Defina como `true` para especificar que o valor de retorno é um elemento DOM; caso contrário, defina como `false` . Se o `type` atributo não estiver definido e `domElement` for definido como `true` , o IntelliSense tratará o valor de retorno documentado como um `HTMLElement` ao executar a conclusão da instrução.
 
-  `mayBeNull` Opcional. Especifica se o valor de retorno documentado pode ser definido como nulo. Defina como `true` para indicar que o valor de retorno pode ser definido como nulo; caso contrário, defina como `false`. O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
+  `mayBeNull` Opcional. Especifica se o valor de retorno documentado pode ser definido como nulo. Defina como `true` para indicar que o valor de retorno pode ser definido como nulo; caso contrário, defina como `false` . O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
   `elementType` Opcional. Se `type` for `Array`, esse atributo especificará o tipo dos elementos na matriz.
 
@@ -58,14 +58,14 @@ Especifica informações de documentação para o resultado de uma chamada de fu
 
   `elementMayBeNull` Opcional. Se `type` for `Array`, especificará se os elementos na matriz podem ser definidos como null. Defina como `true` para indicar que os elementos na matriz podem ser definidos como null; caso contrário, defina como `false`. O valor padrão é `false`. Esse atributo não é usado pelo Visual Studio para fornecer informações do IntelliSense.
 
-  `locid` Opcional. O identificador para informações de localização sobre o valor de retorno. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo do identificador depende do formato especificado na marca [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. O identificador para informações de localização sobre o valor de retorno. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo de identificador depende do formato especificado na [\<loc>](../ide/loc-javascript.md) marca.
 
-  `value` Opcional. Especifica o código que deve ser avaliado para uso pelo IntelliSense em vez do próprio código de função. Por exemplo, você pode usar esse atributo para fornecer IntelliSense para retornos de chamada assíncronos, como um `Promise`. O uso do atributo `value` com o elemento `<returns>` pode melhorar o desempenho do IntelliSense, ignorando a execução de código demorado.
+  `value` Opcional. Especifica o código que deve ser avaliado para uso pelo IntelliSense em vez do próprio código de função. Por exemplo, você pode usar esse atributo para fornecer IntelliSense para retornos de chamada assíncronos, como um `Promise` . O uso do `value` atributo com o `<returns>` elemento pode melhorar o desempenho do IntelliSense, ignorando a execução de código demorado.
 
   `description` Opcional. Uma descrição do valor retornado.
 
 ## <a name="remarks"></a>Comentários
- O elemento `<returns>` deve ser colocado no corpo da função antes de qualquer instrução.
+ O `<returns>` elemento deve ser colocado no corpo da função antes de qualquer instrução.
 
 ## <a name="example"></a>Exemplo
  O exemplo de código a seguir mostra como usar o elemento `<returns>`.
@@ -101,5 +101,5 @@ calculate().  // Completion list for a Number.
 
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)

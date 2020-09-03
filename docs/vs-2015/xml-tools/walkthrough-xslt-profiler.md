@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7ee6665aea98edf7cb701f5fdfe07d293887bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669533"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Passo a passo: Profiler XSLT
@@ -21,7 +21,7 @@ ms.locfileid: "72669533"
 
 O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da ajuda, avalia, e problemas de desempenho relacionados de destino no código XSLT. O profiler XSLT inclui dicas úteis para XSL e otimizações de folha de estilos XSLT. Para aplicativos que requerem XSLT máximo desempenho, essa ferramenta pode ser essencial.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  O seguinte explicação passo a passo requer a versão 4,0 do Visual Studio 2010 and.NET Framework. O profiler XSLT só está disponível com a equipe do Microsoft Visual Studio o sistema com Ferramentas de design de Perfil instalado.
 
 ### <a name="create-the-performance-report"></a>Crie o relatório de desempenho
@@ -54,7 +54,7 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
 
 4. Selecione a opção de **exibição de função** na lista suspensa **exibição atual** . A **exibição de função** lista as funções chamadas durante a criação de perfil. Você pode classificar os dados em um nome de coluna. As colunas exibidas por padrão são:
 
-    - **Nome da Função**
+    - **Nome da função**
 
     - **Tempo Inclusivo Decorrido**
 
@@ -108,5 +108,5 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
 
 4. A exibição processo exibe uma tabela que inclui a **ID do processo**, o **nome do processo**, a hora de **início**e a **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Passo a passo: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

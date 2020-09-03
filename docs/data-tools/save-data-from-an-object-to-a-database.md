@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4afa0d376366b154501e1a0e4488af57b4448a32
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281650"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
@@ -76,6 +76,6 @@ Por padrão, os `DBDirect` métodos são criados em um TableAdapter que pode ser
 
 Você deve ter permissão para executar o selecionado `INSERT` , `UPDATE` ou `DELETE` na tabela no banco de dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

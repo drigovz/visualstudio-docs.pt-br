@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282599"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
@@ -40,7 +40,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 - Crie um novo TableAdapter, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     -ou-
+     - ou -
 
 - Acrescente uma consulta a um TableAdapter existente, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
@@ -65,7 +65,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 4. Digite um nome na caixa **Nome da nova consulta** ao criar uma nova consulta.
 
-     -ou-
+     - ou -
 
      Selecione uma consulta na caixa **Nome da consulta existente**.
 
@@ -98,6 +98,6 @@ Para habilitar uma consulta para aceitar valores nulos:
 
 3. Selecione o parâmetro que permite valores nulos e defina a propriedade **AllowDBNull** como `true` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

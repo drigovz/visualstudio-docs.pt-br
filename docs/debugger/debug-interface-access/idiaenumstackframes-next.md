@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77d50a6c59ea376950d8cd4653f29ba7d04f36ad
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467837"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
@@ -48,6 +48,6 @@ fora Retorna o número de elementos de quadro de pilha no enumerador obtido.
 ## <a name="return-value"></a>Valor Retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais quadros de pilha. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

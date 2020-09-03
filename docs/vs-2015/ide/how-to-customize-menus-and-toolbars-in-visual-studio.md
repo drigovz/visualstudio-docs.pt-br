@@ -29,10 +29,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667998"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
@@ -53,7 +53,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
 - [Redefinindo um menu ou uma barra de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)
 
-## <a name="bkmk_addmenu"></a> Adicionando, removendo ou movendo um menu na barra de menus
+## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a> Adicionando, removendo ou movendo um menu na barra de menus
 
 1. Na barra de menus, escolha **Ferramentas**, **Personalizar**.
 
@@ -63,13 +63,13 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     - Para adicionar um menu, escolha o botão **Adicionar Novo Menu**, escolha o botão **Modificar Seleção** e nomeie o menu que você deseja adicionar.
 
-         ![Caixa de diálogo Personalizar mostrando como adicionar um menu](../ide/media/addmenu.png "AddMenu")
+         ![Personalizar a caixa de diálogo mostrando como adicionar um menu](../ide/media/addmenu.png "AddMenu")
 
     - Para remover um menu, selecione-o na lista **Controles** e escolha o botão **Excluir**.
 
     - Para mover um menu na barra de menus, escolha o menu na lista **Controles** e escolha o botão **Mover para Cima** ou **Mover para Baixo**.
 
-## <a name="bkmk_addtoolbar"></a> Adicionando, removendo ou movendo uma barra de ferramentas
+## <a name="adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a> Adicionando, removendo ou movendo uma barra de ferramentas
 
 1. Na barra de menus, escolha **Ferramentas**, **Personalizar**.
 
@@ -79,7 +79,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     - Para adicionar uma barra de ferramentas, escolha o botão **Novo**, especifique um nome para a barra de ferramentas que você deseja adicionar e escolha o botão **OK**.
 
-         ![Caixa de diálogo Personalizar mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png "Subbarra de ferramentas")
+         ![Personalizar a caixa de diálogo mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png "Subbarra de ferramentas")
 
     - Para remover uma barra de ferramentas personalizada, selecione-a na lista **Barras de Ferramentas** e escolha o botão **Excluir**.
 
@@ -91,9 +91,9 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
          Você também pode arrastar uma barra de ferramentas pela sua borda esquerda para movê-la para qualquer lugar na área de encaixe principal.
 
         > [!NOTE]
-        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, consulte [Como definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade de barras de ferramentas, consulte [como definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
-## <a name="bkmk_customize"></a> Personalizando um menu ou uma barra de ferramentas
+## <a name="customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> Personalizando um menu ou uma barra de ferramentas
 
 1. Na barra de menus, escolha **Ferramentas**, **Personalizar**.
 
@@ -107,7 +107,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
          Na caixa de diálogo **Adicionar Comando**, escolha um item na lista **Categorias**, escolha um item na lista **Comandos** e escolha o botão **OK**.
 
-         ![Adicionar caixa de diálogo de comando no Visual Studio](../ide/media/addcommand.png "O AddCommand")
+         ![Adicionar caixa de diálogo Comando no Visual Studio](../ide/media/addcommand.png "O AddCommand")
 
     - Para excluir um comando, escolha-o na lista **Controles** e escolha o botão **Excluir**.
 
@@ -115,7 +115,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     - Para separar comandos em grupos, escolha um comando na lista **Controles**, escolha o botão **Modificar Seleção** e escolha **Começar um Grupo** no menu exibido.
 
-## <a name="bkmk_reset"></a> Redefinindo um menu ou uma barra de ferramentas
+## <a name="resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a> Redefinindo um menu ou uma barra de ferramentas
 
 1. Na barra de menus, escolha **Ferramentas**, **Personalizar**.
 

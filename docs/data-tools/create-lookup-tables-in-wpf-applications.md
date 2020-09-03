@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282612"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
@@ -88,7 +88,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|O Visual Studio associa essa propriedade à coluna ou à propriedade dos dados filho que você arrastou para o designer. Essa é a chave estrangeira para os dados pai.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|O Visual Studio define essa propriedade como o caminho da coluna ou da propriedade dos dados filho que são a chave estrangeira para os dados pai.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Exibir dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md)

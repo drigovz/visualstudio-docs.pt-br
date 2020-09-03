@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6018558ead8ae8b5532253cfa32180491514b040
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467676"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
@@ -57,7 +57,7 @@ Obtenha essa interface chamando os seguintes métodos:
 Este exemplo mostra como obter a `IDiaEnumSymbols` interface e, em seguida, usar essa enumeração para listar os tipos definidos pelo usuário (UDTs).
 
 > [!NOTE]
-> `CDiaBSTR`é uma classe que encapsula um `BSTR` e automaticamente trata a liberação da cadeia de caracteres quando a instanciação sai do escopo.
+> `CDiaBSTR` é uma classe que encapsula um `BSTR` e automaticamente trata a liberação da cadeia de caracteres quando a instanciação sai do escopo.
 
 ```C++
 void ShowUDTs(IDiaSymbol *pGlobals)
@@ -92,7 +92,7 @@ Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)

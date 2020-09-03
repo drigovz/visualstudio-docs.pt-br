@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f223acd5d6f62417b8a47889aa4e9e4a116335c6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467053"
 ---
 # <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
@@ -38,5 +38,5 @@ fora Retorna o nome do arquivo de objeto para o qual a origem foi compilada.
 ## <a name="return-value"></a>Valor Retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

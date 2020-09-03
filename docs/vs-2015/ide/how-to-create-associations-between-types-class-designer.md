@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb46d3bf7096d0a7e14ce3926514d946d7536e2d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668109"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Como criar associações entre tipos (Designer de Classe)
@@ -46,7 +46,7 @@ As linhas de associação no Designer de Classe mostram como as classes em um di
 
 - Na superfície de diagrama, clique no rótulo da linha de associação e edite-o.
 
-  \- ou -
+  \- ou –
 
 1. Clique na forma que contém a propriedade que é mostrada como uma associação.
 
@@ -56,5 +56,5 @@ As linhas de associação no Designer de Classe mostram como as classes em um di
 
      O nome é atualizado na Janela **Detalhes da Classe**, na linha de associação, na janela Propriedades e no código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como alterar entre notação de membro e notação de associação (Designer de Classe)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)

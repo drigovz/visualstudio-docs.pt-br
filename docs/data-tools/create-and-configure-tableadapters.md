@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282665"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
@@ -115,6 +115,6 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
     > [!NOTE]
     > Arrastar um objeto de **consulta** diretamente para o **Designer de conjunto de dados** cria um método que retorna apenas um valor escalar (único). Embora a consulta ou o procedimento armazenado selecionado possa retornar mais de um único valor, o método criado pelo assistente retornará apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

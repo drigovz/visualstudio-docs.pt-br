@@ -164,7 +164,7 @@
               href: display-related-data-in-wpf-applications.md
             - name: Associar controles a imagens de um banco de dados
               href: bind-controls-to-pictures-from-a-database.md
-        - name: Controles do Windows Forms
+        - name: Controles de formulários do Windows
           items:
             - name: Associar controles do Windows Forms a dados
               href: bind-windows-forms-controls-to-data-in-visual-studio.md

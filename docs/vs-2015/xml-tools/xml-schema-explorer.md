@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e9f61c56dd7ff2a9c6c19afc20ed279a7fdf855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669367"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
@@ -45,9 +45,9 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
 
 - Você também pode selecionar o esquema XML Explorerfrom menu **Exibir** .
 
-- Você pode acessar o esquema XML Explorerfrom um arquivo. vb que tem um literal XML Visual Basic associado a um arquivo. xsd. Para ver o conjunto de esquema no Gerenciador de esquema XML, clique com o botão direito do mouse em um nó XML em um literal XML ou em uma importação de namespace XML e selecione o comando **Mostrar no Gerenciador de esquema** . Para obter mais informações, consulte [integração de literais XML com o XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Você pode acessar o XML Schema Explorerdo arquivo .vb que tem um literal XML do Visual Basic associado a um arquivo .xsd. Para ver o conjunto de esquema no Gerenciador de esquema XML, clique com o botão direito do mouse em um nó XML em um literal XML ou em uma importação de namespace XML e selecione o comando **Mostrar no Gerenciador de esquema** . Para obter mais informações, consulte [integração de literais XML com o XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
-## <a name="tree-view"></a>Exibição de árvore
+## <a name="tree-view"></a>Modo de exibição de árvore
  O XML Schema Explorer exibe informações de conjunto de esquema pré-compilado em uma estrutura de árvore. A estrutura de árvore é organizada da seguinte maneira:
 
 - No nível superior está o nó do conjunto de esquema.
@@ -82,13 +82,13 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
 
 ## <a name="in-this-section"></a>Nesta seção
 
-- [Pesquisando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)
+- [Procurando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)
 
-- [Classificação, filtragem e agrupamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
+- [Classificação, filtragem, agrupamento e](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)
 
 - [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md)
 
 - [Integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como adicionar nós ao workspace por meio do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

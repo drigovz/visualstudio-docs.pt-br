@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc5d185640c9623a2213aaf7ad50fa68a088b15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669623"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Encontrar possíveis problemas usando analisadores de mapa de códigos
@@ -37,7 +37,7 @@ Execute analisadores em mapas de código para ajudá-lo a identificar o código 
 
 1. Na barra de ferramentas do mapa, escolha **layout**, **analisadores**e analisador que você deseja executar:
 
-   |**Analyz**|**Para identificar os nós que**|
+   |**Analisador**|**Para identificar os nós que**|
    |------------------|--------------------------------|
    |**Analisador de referências circulares**|Ter dependências circulares entre si. **Observação:**  As dependências circulares que estão no grupo **genéricos** não são mostradas no mapa quando você expande o grupo.|
    |**Localizar analisador de hubs**|Estão nos 25% principais de nós altamente conectados<br /><br /> **Para ocultar todos os outros nós no mapa**<br /><br /> -Abra o menu de atalho para o mapa, escolha **avançado**, **selecionar**, **ocultar não selecionado**.<br />     O mapa oculta os nós não selecionados e o analisador identifica novos nós como hubs.|
@@ -48,5 +48,5 @@ Execute analisadores em mapas de código para ajudá-lo a identificar o código 
 > [!TIP]
 > Se você tiver um mapa muito grande, a execução de um analisador poderá causar uma exceção de memória insuficiente. Se isso ocorrer, edite o mapa para reduzir seu escopo ou gere um menor e, em seguida, execute o analisador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md) [Use mapas de código para depurar seus](../modeling/use-code-maps-to-debug-your-applications.md) [métodos de mapa de aplicativos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

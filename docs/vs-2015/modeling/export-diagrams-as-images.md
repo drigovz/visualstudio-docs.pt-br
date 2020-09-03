@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669668"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
@@ -45,9 +45,9 @@ No Visual Studio, você pode salvar diagramas de modelagem em formatos somente l
 
 2. Na lista **nome** , selecione **Microsoft XPS Document Writer**e clique em **OK**.
 
-3. Na caixa de diálogo **salvar o arquivo como** , salve o arquivo como um arquivo de **documento XPS (\*. XPS)** .
+3. Na caixa de diálogo **salvar o arquivo como** , salve o arquivo como um arquivo de **documento XPS ( \* . XPS)** .
 
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criar modelos para seus modelos de](../modeling/create-models-for-your-app.md) [compartilhamento de aplicativo e exportar diagramas](../modeling/share-models-and-exporting-diagrams.md)

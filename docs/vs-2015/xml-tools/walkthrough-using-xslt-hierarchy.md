@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669560"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Passo a passo: Usando a hierarquia XSLT
@@ -114,5 +114,5 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
 
 6. Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a etapa no botão. Observe que a depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
-## <a name="see-also"></a>Consulte também
- [Passo a passo: Criador de Perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Consulte Também
+ [Passo a passo: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

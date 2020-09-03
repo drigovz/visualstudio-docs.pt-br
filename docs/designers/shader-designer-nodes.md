@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75d13aaf5d5b4257ff6ec7c2efc52adbdca7df92
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768790"
 ---
 # <a name="shader-designer-nodes"></a>Nós do Designer de Sombreador
@@ -41,7 +41,7 @@ Como o Designer de Sombreador, em última análise, deve gerar código-fonte HLS
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Nós de constante](../designers/constant-nodes.md)|Descreve nós que você pode usar para representar valores literais e informações de estado de vértice interpoladas em cálculos do sombreador. Como o estado do vértice é interpolado — e, portanto, é diferente para cada pixel — cada instância de sombreador de pixel recebe uma versão diferente da constante.|
 |[Nós de parâmetro](../designers/parameter-nodes.md)|Descreve nós que você pode usar para representar a posição da câmera, as propriedades de material, os parâmetros de iluminação, a hora e outras informações de estado do aplicativo em cálculos do sombreador.|

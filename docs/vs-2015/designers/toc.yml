@@ -44,9 +44,9 @@
                   href: artboard-modifier-keys-in-blend.md
                 - name: Teclas modificadoras da ferramenta Caneta
                   href: pen-tool-modifier-keys-in-blend.md
-                - name: Teclas modificadoras da ferramenta Seleção direta
+                - name: Teclas modificadoras da ferramenta Seleção Direta
                   href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: Produtos e serviços de acessibilidade
+            - name: Serviços e produtos de acessibilidade
               href: accessibility-products-and-services-blend.md
         - name: Atalhos de teclado do Designer XAML no Visual Studio e no Blend para Visual Studio
           href: keyboard-shortcuts-for-xaml-designer.md
@@ -94,7 +94,7 @@
                           href: element-xelement-dynamic-property.md
                         - name: Elementos
                           href: elements-xelement-dynamic-property.md
-                        - name: Descendants
+                        - name: Descendentes
                           href: descendants-xelement-dynamic-property.md
                         - name: Valor
                           href: value-xelement-dynamic-property.md

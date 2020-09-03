@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568315"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
-Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar esta página, na barra de menus, escolha **Opções de** > **ferramentas**e, em seguida, expanda a formatação do Editor **de** > texto**HTML (Formulários** > da**Web).**
+Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções**e, em seguida **Text Editor**, expanda  >  **formatação HTML do editor de texto (Web Forms)**  >  **Formatting**.
 
 ## <a name="capitalization"></a>Uso de maiúsculas
 
@@ -37,7 +37,7 @@ Essas opções especificam como a marcação para controles de servidor Web é c
 |Opção|Result|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do elemento fica exatamente como foi inserida.|
-|**Maiúsculas**|Nomes de elementos são reformatados para maiúsculas.|
+|**Letras maiúsculas**|Nomes de elementos são reformatados para maiúsculas.|
 |**Minúsculas**|Nomes de elementos são reformatados para minúsculas.|
 |**Definição do assembly**|A capitalização do elemento é determinada pelo modo como o elemento é definido na classe de tipo correspondente.|
 
@@ -48,7 +48,7 @@ Essas opções especificam se a formatação automática altera os nomes dos atr
 |Opção|Result|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do atributo fica exatamente como foi inserida.|
-|**Maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
+|**Letras maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
 |**Minúsculas**|Os nomes de atributo são reformatados para minúsculas.|
 
 ## <a name="automatic-formatting-options"></a>Opções de formatação automática
@@ -62,21 +62,21 @@ Essas opções fazem com que o Editor de exibição do código-fonte adicione ou
 
 - **Inserir aspas ao valor do atributo ao digitar**
 
-   Quando essa opção é selecionada, o editor coloca automaticamente aspas em torno de atributos à medida que você está digitando (por exemplo: ID="Select1"). Desmarque esta opção se você preferir manualmente inserir aspas na marcação.
+   Quando essa opção é selecionada, o editor coloca automaticamente os atributos entre aspas à medida que você está digitando (por exemplo: ID = "Select1"). Desmarque esta opção se você preferir manualmente inserir aspas na marcação.
 
    > [!NOTE]
    > Se esta opção está selecionada, qualquer aspas existente - as marcas na marcação são retidas; aspas são removidas nunca.
 
 - **Inserir aspas ao valor do atributo ao formatar**
 
-   Quando essa opção é selecionada, a formatação automática adiciona aspas em torno dos valores de atributo (por exemplo: ID="Select1").
+   Quando essa opção é selecionada, a formatação automática adiciona aspas ao contrário dos valores de atributo (por exemplo: ID = "Select1").
 
    > [!NOTE]
    > Se esta opção está selecionada, qualquer aspas existente - as marcas na marcação são retidas.
 
 - **Inserir automaticamente a marca de fechamento**
 
-   Quando essa opção é selecionada, o editor cria automaticamente uma tag de fechamento (por exemplo, ** \</b>**) quando você fecha a tag de abertura.
+   Quando essa opção é selecionada, o editor cria automaticamente uma marca de fechamento (por exemplo, **\</b>** ) quando você fecha a marca de abertura.
 
 ## <a name="tag-wrapping"></a>Quebra automática de marca
 
@@ -91,7 +91,7 @@ Essas opções determinam se o editor quebrará marcas em linhas se elas exceder
    > [!NOTE]
    > O valor que você especifica é usado como um valor mínimo. O editor não divide atributos individuais.
 
-- **Duração**
+- **Comprimento**
 
    Especifica o número de caracteres para exibir em uma linha antes que envolva. Essa caixa de entrada fica desabilitada a menos que a caixa **Quebrar marcas ao exceder o comprimento especificado** esteja marcada.
 

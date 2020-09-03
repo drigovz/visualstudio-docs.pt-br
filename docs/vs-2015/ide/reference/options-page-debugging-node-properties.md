@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668835"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de Opções, Depuração, Propriedades do Nó
@@ -24,7 +24,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 ## <a name="general"></a>Geral
  `DTE.Properties("Debugging", "General")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Booliano)|Determina se o depurador solicitará permissão antes de excluir todos os pontos de interrupção de um projeto.|
 |BreakAllProcesses|Get/Set (Booliano)|Determina se o depurador interromperá todos os processos sempre que um único processo for interrompido.|
@@ -54,7 +54,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 ## <a name="edit-and-continue"></a>Editar e continuar
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Booliano)|Determina se a opção Editar e Continuar está habilitada. Essa opção se aplica a todas as linguagens que dão suporte à opção Editar e Continuar.|
 |InvokedByCommands|Get/Set (Booliano)|Determina se a opção Editar e Continuar aplica as alterações de código automaticamente quando o usuário seleciona um comando de depuração como **Executar em Etapas** ou **Continuar**. Essa opção se aplica apenas ao código nativo.|
@@ -66,7 +66,7 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 ## <a name="just-in-time"></a>Just-In-Time
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código gerenciado.|
 |JitNative|Get/Set (Booliano)|Determina se a depuração Just-In-Time está habilitada para o código nativo.|
@@ -75,10 +75,10 @@ As tabelas a seguir descrevem as páginas (ou as coleções de propriedades) ass
 ## <a name="native"></a>Nativo
  `DTE.Properties("Debugging", "Native")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (Booliano)|Determina se o depurador carrega as tabelas de exportação de DLL.|
 |EnableRPC|Get/Set (Booliano)|Determina se o depurador pode intervir em chamadas COM de procedimento remoto.|
 
-## <a name="see-also"></a>Veja também
- [Controlando as configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [que determinam os nomes dos itens de propriedade na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) página opções páginas opções [, propriedades do nó fontes e cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Opções página, propriedades do nó do editor de texto](../../ide/reference/options-page-text-editor-node-properties.md) [geral, depuração, caixa de diálogo opções ](../../debugger/general-debugging-options-dialog-box.md) [Editar e continuar, depurar, caixa de diálogo opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [just-in-time, depuração, caixa de diálogo opções](../../debugger/just-in-time-debugging-options-dialog-box.md)
+## <a name="see-also"></a>Consulte Também
+ [Controlando as configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [que determinam os nomes dos itens de propriedade na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [página opções opções páginas, propriedades do nó fontes e cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Opções página, propriedades do nó do editor de texto](../../ide/reference/options-page-text-editor-node-properties.md) [geral, depuração, caixa de diálogo opções](../../debugger/general-debugging-options-dialog-box.md) [Editar e continuar, depuração, caixa de diálogo opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [just-in-time, depuração, caixa de diálogo opções](../../debugger/just-in-time-debugging-options-dialog-box.md)

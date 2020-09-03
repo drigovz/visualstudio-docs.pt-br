@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281689"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Como salvar dados usando uma transação
@@ -50,7 +50,7 @@ Para reverter a transação, acione uma exceção antes de chamar o <xref:System
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)

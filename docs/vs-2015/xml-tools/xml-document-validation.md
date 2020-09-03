@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee5d3cff260346a5bcc1806b09b955642c608f14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669485"
 ---
 # <a name="xml-document-validation"></a>Validação de documento XML
@@ -45,5 +45,5 @@ O Editor XML verifica a sintaxe do XML 1.0 e também executa validação de dado
 ## <a name="xml-schema-xsd-files"></a>Arquivos XSD (esquema XML)
  Ao editar um arquivo de esquema XML, o arquivo de xsdschema.xsd localizado no cache de esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Todos os erros de compilação também são mostrados com traços ondulados vermelhos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editor de XML](../xml-tools/xml-editor.md)

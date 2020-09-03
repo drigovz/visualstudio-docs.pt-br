@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568263"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opções, Editor de Texto, U-SQL, Formatação
 
-Use a página de opções **de formatação** para definir opções para formatação de código no editor de código. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**. Na caixa de diálogo **Opções**, escolha **Editor de Texto** > **U-SQL** > **Formatação**.
+Use a página opções de **formatação** para definir opções de formatação de código no editor de códigos. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções**. Na caixa de diálogo **Opções**, escolha **Editor de Texto** > **U-SQL** > **Formatação**.
 
 ## <a name="general-page"></a>Página Geral
 
@@ -44,11 +44,11 @@ As subpáginas **Recuo**, **Novas Linhas** e **Espaçamento** exibem uma janela 
 
 ### <a name="indentation-remarks"></a>Comentários de recuo
 
-Opções de recuo nas páginas **de guias** para cada idioma só determinam onde o editor de código coloca o cursor quando você **pressiona Enter** no final de uma linha. As opções de recuo em **Formatação** se aplicam quando o código é formatado automaticamente, por exemplo:
+As opções de recuo nas páginas de **guias** de cada idioma determinam apenas onde o editor de código coloca o cursor quando você pressiona **Enter** no final de uma linha. As opções de recuo em **Formatação** se aplicam quando o código é formatado automaticamente, por exemplo:
 
 - Quando você cola o código no arquivo enquanto **Formatar automaticamente ao colar** está selecionada
 - Quando o bloco que está sendo formatado é digitado manualmente
 
 ## <a name="see-also"></a>Confira também
 
-- [Caixa de diálogo Geral, Meio Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
+- [Caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md)

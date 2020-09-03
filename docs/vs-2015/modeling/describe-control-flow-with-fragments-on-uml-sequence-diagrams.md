@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669812"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrever o fluxo de controle com fragmentos em diagramas de sequência UML
@@ -102,7 +102,7 @@ Em um diagrama de sequência UML, os *fragmentos combinados* permitem mostrar lo
     > [!NOTE]
     > Diferentes tipos de fragmento combinado têm propriedades diferentes.
 
-## <a name="KindsOfFragment"></a>Tipos de fragmento combinado
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Tipos de fragmento combinado
 
 ### <a name="fragments-describing-control-flow"></a>Fragmentos que descrevem o fluxo de controle
  Um diagrama de sequência simples mostra apenas uma sequência típica. Você pode usar os seguintes tipos de fragmentos combinados para descrever as variações que podem ocorrer em ocasiões diferentes.
@@ -111,10 +111,10 @@ Em um diagrama de sequência UML, os *fragmentos combinados* permitem mostrar lo
 |-------------------|-----------------|
 |**Opt**|Opcional. Inclui uma seqüência que pode ou não acontecer. Você pode especificar, na proteção, a condição sob a qual ela ocorre.|
 |**Alt**|Contém uma lista de fragmentos que contêm sequências alternativas de mensagens. Apenas uma sequência ocorre em qualquer ocasião.<br /><br /> Você pode colocar um protetor em cada fragmento para indicar sob qual condição ele pode ser executado. Um protetor de **else** indica um fragmento que deve ser executado se nenhuma outra proteção for verdadeira. Se todas as proteções forem falsas e não houver **mais**, nenhum dos fragmentos será executado.|
-|**Loop**|O fragmento repete um número de vezes. Você pode indicar na proteção a condição sob a qual ela deve se repetir.<br /><br /> Os fragmentos combinados de loop têm as propriedades **min** e **Max**, que indicam o número mínimo e máximo de vezes que o fragmento pode ser repetido. O padrão não é restrição.|
-|**Interromper**|Se esse fragmento for executado, o restante da sequência será abandonado. Você pode usar a proteção para indicar a condição em que ocorrerá a interrupção.|
+|**While**|O fragmento repete um número de vezes. Você pode indicar na proteção a condição sob a qual ela deve se repetir.<br /><br /> Os fragmentos combinados de loop têm as propriedades **min** e **Max**, que indicam o número mínimo e máximo de vezes que o fragmento pode ser repetido. O padrão não é restrição.|
+|**Interrupção**|Se esse fragmento for executado, o restante da sequência será abandonado. Você pode usar a proteção para indicar a condição em que ocorrerá a interrupção.|
 |**Nominal**|Paralelo. Os eventos nos fragmentos podem ser intercalados.|
-|**Drasticamente**|Usado em um fragmento par ou Seq. Indica que as mensagens neste fragmento não devem ser intercaladas com outras mensagens.|
+|**Crítico**|Usado em um fragmento par ou Seq. Indica que as mensagens neste fragmento não devem ser intercaladas com outras mensagens.|
 |**Seq**|Há dois ou mais fragmentos de operando. As mensagens que envolvem a mesma linha de vida devem ocorrer na ordem dos fragmentos. Quando eles não envolvem as mesmas linhas de vida, as mensagens de fragmentos diferentes podem ser intercaladas em paralelo.|
 |**Strict**|Há dois ou mais fragmentos de operando. Os fragmentos devem ocorrer na ordem fornecida.|
 
@@ -130,5 +130,5 @@ Em um diagrama de sequência UML, os *fragmentos combinados* permitem mostrar lo
 |**Assert**|O fragmento do operando especifica as únicas sequências válidas. Normalmente usado em um fragmento de considere ou ignorar.|
 |**Neg**|A sequência mostrada neste fragmento não deve acontecer. Normalmente usado em um fragmento de considere ou ignorar.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md) [diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md) [Editar diagramas e modelos UML](../modeling/edit-uml-models-and-diagrams.md)

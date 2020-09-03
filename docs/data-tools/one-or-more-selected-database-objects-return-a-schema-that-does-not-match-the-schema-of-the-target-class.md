@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c4bba0b227321e30f86aa552add245195b34e3b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281897"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Um ou mais objetos de base de dados selecionado retornam um esquema que não corresponde ao esquema de classe de destino
@@ -27,6 +27,6 @@ Quando você arrastar objetos de base de dados existentes em classes de entidade
 
 2. Selecione um objeto de banco de dados que retorna os dados que correspondem ao esquema de classe de destino (a classe para a qual o objeto de banco de dados está sendo arrastado no **Designer Relacional de Objetos**).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

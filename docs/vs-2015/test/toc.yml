@@ -62,7 +62,7 @@
           items:
             - name: Escrevendo teste de unidade para C/C++ com o Microsoft Unit Testing Framework para C++
               href: writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md
-            - name: Adicionando testes de unidade a aplicativos do C++ existentes
+            - name: Adicionando testes de unidade para aplicativos C++ existentes
               href: unit-testing-existing-cpp-applications-with-test-explorer.md
             - name: Usando Microsoft.VisualStudio.TestTools.CppUnitTestFramework
               href: using-microsoft-visualstudio-testtools-cppunittestframework.md
@@ -76,7 +76,7 @@
               href: analyzing-code-coverage-in-build-verification-tests.md
             - name: Solução de problemas de cobertura de código
               href: troubleshooting-code-coverage.md
-        - name: Usando emuladores para isolar testes de unidade do Sharepoint 2010
+        - name: Usando emuladores para isolar os testes de unidade do Sharepoint 2010
           href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
     - name: Usar automação de interface do usuário para testar código
       items:
@@ -132,7 +132,7 @@
                   href: sample-excel-extension-technologymanager-class.md
                 - name: Classe PropertyProvider
                   href: sample-excel-extension-propertyprovider-class.md
-                - name: Classes de elemento
+                - name: Classes Element
                   href: sample-excel-extension-element-classes.md
                 - name: Classe ActionFilter
                   href: sample-excel-extension-actionfilter-class.md
@@ -156,9 +156,9 @@
           items:
             - name: Criar e executar testes de unidade
               href: create-and-run-unit-tests-for-a-store-app-in-visual-studio.md
-            - name: Executar o teste de unidade de uma DLL do C++
+            - name: Executar o teste de unidade de DLL do C++
               href: unit-testing-a-visual-cpp-dll-for-store-apps.md
-            - name: 'Executar o teste de unidade de um código C#'
+            - name: Executar o teste de unidade de um código C#
               href: unit-testing-visual-csharp-code-in-a-store-app.md
             - name: Executar testes de unidade no Gerenciador de Testes
               href: run-unit-tests-for-store-apps-in-visual-studio.md
@@ -166,7 +166,7 @@
           items:
             - name: Analisar a qualidade do código usando a análise de código estático
               href: analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md
-            - name: 'Analisar a qualidade do código do Visual Basic e C#'
+            - name: Analisar a qualidade do código Visual Basic e C#
               href: analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md
             - name: Analisar a qualidade do código C++
               href: analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis.md

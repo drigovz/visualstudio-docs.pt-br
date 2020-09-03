@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547609"
 ---
 # <a name="user-accounts-and-updates"></a>Contas de usuário e atualizações
@@ -27,7 +27,7 @@ O próprio Visual Studio é um ambiente conectado. Ao se conectar, você habilit
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Entrando no Visual Studio](../ide/signing-in-to-visual-studio.md)|Descreve como e por que entrar no Visual Studio.|
 |[Trabalhar com várias contas de usuário](../ide/work-with-multiple-user-accounts.md)|Descreve como associar várias contas da Microsoft e/ou contas corporativas ou de estudante para habilitar o acesso aos recursos e serviços de todas as contas.|
@@ -37,4 +37,4 @@ O próprio Visual Studio é um ambiente conectado. Ao se conectar, você habilit
 
 ## <a name="see-also"></a>Confira também
 
-- [IDE do Visual Studio](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../ide/visual-studio-ide.md)

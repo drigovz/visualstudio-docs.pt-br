@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669506"
 ---
 # <a name="working-with-xml-data"></a>Trabalhando com dados XML
@@ -24,7 +24,7 @@ O XML e as tecnologias relacionadas desempenham uma grande função na maneira c
 ## <a name="xml-editor"></a>Editor de XML
  O editor de XML é usado para editar documentos XML. Ele fornece verificação completa de sintaxe do XML 1.0, validação de esquema quando você digita, codificação por cores e IntelliSense. Se um esquema ou um definição de tipo de documento forem fornecidos, ele é usado pelo IntelliSense para listar os elementos e atributos permitidos.
 
- Os recursos adicionais incluem:
+ Recursos adicionais incluem:
 
 - Suporte de snippet de XML, incluindo snippets gerados por esquema.
 
@@ -59,5 +59,5 @@ O XML e as tecnologias relacionadas desempenham uma grande função na maneira c
 
  [Serviços Web XML em código gerenciado](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) Discute como criar e implantar serviços Web XML e como acessar serviços Web XML.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

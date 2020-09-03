@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281754"
 ---
 # <a name="create-relationships-between-datasets"></a>Criar relações entre conjuntos de dados
@@ -104,6 +104,6 @@ As relações entre tabelas de dados aparecem como linhas na **Designer de conju
 
 2. No menu **dados** , selecione o comando **Mostrar rótulos de relação** para exibir o nome da relação. Limpe esse comando para ocultar o nome da relação.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

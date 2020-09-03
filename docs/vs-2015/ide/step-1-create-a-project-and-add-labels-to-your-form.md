@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667356"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
@@ -64,13 +64,13 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 6. Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla Backspace para apagar o seu valor.
 
-7. Escolha o sinal de mais (+) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
+7. Escolha o sinal de adição (+) ao lado da propriedade **fonte** e, em seguida, altere o valor da propriedade **tamanho** para **15,75**.
 
      É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.
 
      ![Janela Propriedades mostrando o tamanho da fonte](../ide/media/express-setfontsize.png "Express_setFontSize") janela Propriedades mostrando o tamanho da fonte
 
-8. Adicione outro controle de **Label** da caixa de ferramentas e, em seguida, defina seu tamanho da fonte para **15,75**.
+8. Adicione outro controle **rótulo** da caixa de ferramentas e, em seguida, defina seu tamanho de fonte como **15,75**.
 
 9. Defina a propriedade **Text** como **Time Left**.
 
@@ -78,7 +78,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Para adicionar controles para os problemas de adição
 
-1. Adicione um controle de **Label** da caixa de ferramentas e, em seguida, defina sua propriedade **Text** para **?** (ponto de interrogação).
+1. Adicionar um controle **rótulo** da caixa de ferramentas e, em seguida, definir sua propriedade **Text** como **?** (ponto de interrogação).
 
 2. Defina a propriedade **AutoSize** para **False**.
 
@@ -92,9 +92,9 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 7. Defina a propriedade **(Name)** como **plusLeftLabel**.
 
-8. Escolha o rótulo **plusLeftLabel** e, em seguida, pressione as teclas Ctrl+C ou **Copiar** no menu **Editar**.
+8. Escolha o rótulo **plusLeftLabel** e, em seguida, escolha as teclas CTRL + C ou **copiar** no menu **Editar** .
 
-9. Cole o rótulo três vezes usando as teclas Ctrl+V ou a opção **Colar** no menu **Editar**.
+9. Cole o rótulo três vezes escolhendo as teclas Ctrl + V ou **colar** no menu **Editar** .
 
 10. Organize os três novos rótulos de modo que fiquem em uma linha à direita do rótulo **plusLeftLabel**.
 
@@ -110,7 +110,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
      Você aprenderá mais sobre esse tipo de controle posteriormente.
 
-15. Alinhe o controle **NumericUpDown** com os controles de rótulo para o problema de adição.
+15. Alinhar o controle **NumericUpDown** com os controles de rótulo para o problema de adição.
 
 16. Altere o valor da propriedade **(Name)** do controle **NumericUpDown** para **sum**.
 
@@ -134,7 +134,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 5. Nomeie o segundo rótulo de interrogação **minusRightLabel**.
 
-6. Nomeie o controle **NumericUpDown** como **difference**.
+6. Nomeie a **diferença**de controle **NumericUpDown** .
 
 7. Cole os cinco controles mais duas vezes.
 
@@ -172,6 +172,6 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte [Etapa 2: criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 2: criar um problema de adição aleatória](../ide/step-2-create-a-random-addition-problem.md).
 
-- Para retornar ao tópico de visão geral, consulte [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Para retornar ao tópico de visão geral, consulte [tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).

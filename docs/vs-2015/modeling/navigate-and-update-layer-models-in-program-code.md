@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668565"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
@@ -24,9 +24,9 @@ ms.locfileid: "72668565"
 
 Este tópico descreve os elementos e as relações em modelos de camada, que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de camada do ponto de vista do usuário, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md) e [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).
 
- O modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito neste tópico é uma fachada em um modelo <xref:Microsoft.VisualStudio.GraphModel> mais geral. Se você estiver escrevendo um [comando de menu ou uma extensão de gesto](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use o modelo de `Layer`. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), será mais fácil usar a `GraphModel`.
+ O modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito neste tópico é uma fachada em um modelo <xref:Microsoft.VisualStudio.GraphModel> mais geral. Se você estiver escrevendo um [comando de menu ou uma extensão de gesto](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use o `Layer` modelo. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), será mais fácil usar o `GraphModel` .
 
-## <a name="transactions"></a>Transações
+## <a name="transactions"></a>Transactions
  Ao atualizar um modelo, considere incluir as alterações em uma `ILinkedUndoTransaction`. Esse procedimento agrupará as alterações em uma transação. Se qualquer uma das alterações falhar, toda a transação será revertida. Se o usuário desfizer uma alteração, todas as alterações serão desfeitas em conjunto.
 
  Para obter mais informações, consulte [vincular atualizações de modelo UML usando transações](../modeling/link-uml-model-updates-by-using-transactions.md).
@@ -40,7 +40,7 @@ using (ILinkedUndoTransaction t =
 }
 ```
 
-## <a name="containment"></a>Confinamento
+## <a name="containment"></a>Contenção
  ![ILayer e ILayerModel podem conter ILayers.](../modeling/media/layerapi-containment.png "LayerApi_Containment")
 
  Camadas ([ILayer](/previous-versions/ff644251(v=vs.140))) e o modelo de camada ([ILayerModel](/previous-versions/ff643069(v=vs.140))) podem conter comentários e camadas.
@@ -97,7 +97,7 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). A propriedade Categorias indica que tipo de artefato é referenciado, tal como uma classe, arquivo executável ou assembly. As categorias determinam como o Identificador identifica o artefato de destino.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) cria uma referência de artefato de um <xref:EnvDTE.Project> ou <xref:EnvDTE.ProjectItem>. Esta é uma operação assíncrona. Portanto, você geralmente fornece um retorno de chamada realizado quando a criação é concluída.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) cria uma referência de artefato de um <xref:EnvDTE.Project> ou <xref:EnvDTE.ProjectItem> . Esta é uma operação assíncrona. Portanto, você geralmente fornece um retorno de chamada realizado quando a criação é concluída.
 
  As referências de artefato de camada não devem ser confundidas com artefatos em diagramas de casos de uso.
 
@@ -127,7 +127,7 @@ public void ... (...)
 
  [IShape](/previous-versions/ee806673(v=vs.140)) e [IDiagram](/previous-versions/ee789658(v=vs.140)) também são usados para exibir modelos UML. Para obter mais informações, consulte [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar comandos e gestos a diagramas de camada](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [Adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

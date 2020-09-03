@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3821262a456f9e3e764555fce5fc883b42d4ae9e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768650"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: Usar ativos 3D em seu jogo ou aplicativo
@@ -71,7 +71,7 @@ Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de ar
 
 |Tipo de item|Tipos de arquivo de origem|Formato do arquivo de saída|
 |---------------| - | - |
-|**Pipeline de conteúdo da imagem**|Formato PNG (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Formato TIFF (*.tif*, *.tiff*)<br /><br /> Formato TGA (*.tga*)|DirectDraw Surface (*.dds*)|
+|**Pipeline de conteúdo da imagem**|Gráfico de rede portátil (*. png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*. gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Formato TIFF (*.tif*, *.tiff*)<br /><br /> Formato TGA (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Pipeline de conteúdo da malha**|Arquivo de Intercâmbio AutoDesk FBX (*.fbx*)<br /><br /> Arquivo Collada DAE (*.dae*)<br /><br /> Arquivo Wavefront OBJ (*.obj*)|Arquivo de malha 3D (*.cmo*)|
 |**Pipeline de conteúdo do sombreador**|Visual Shader Graph (*.dgsl*)|Saída do Sombreador Compilado (*.cso*)|
 
@@ -211,7 +211,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|
 |[Como exportar uma textura que tenha Alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|

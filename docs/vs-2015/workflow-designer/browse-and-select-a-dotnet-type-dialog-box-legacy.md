@@ -14,23 +14,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668980"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET (legados)
-Este tópico descreve como usar a caixa de diálogo **procurar e selecionar um tipo .net** no [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **procurar e selecionar um tipo .net** no herdado [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Na janela **Propriedades** , quando você seleciona as propriedades que usam um .NET Framework tipo em um assembly referenciado, uma elipse **[...]** é exibida no final da caixa de texto da propriedade. Clicar em **[...]** abre a caixa de diálogo **procurar e selecionar um tipo .net** . Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore assemblies referenciados. Por exemplo, quando você estiver usando o designer de atividade, na janela **Propriedades** , clique nas reticências da **classe base** **[...]** para selecionar outra classe base para uma atividade da árvore assemblies referenciados.
 
  A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **procurar e selecionar um tipo do .net** .
 
-|Elemento da Interface do Usuário|Descrição|
+|Elemento da interface do usuário|Descrição|
 |----------------|-----------------|
 |**Nome do tipo:**|O nome do tipo selecionado.|
 |**Tipo**|O painel esquerdo exibe um modo de exibição de árvore assemblies referenciados. O painel direito exibe os tipos disponíveis para a seleção do assembly referenciado selecionado no painel esquerdo.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usando o designer de atividade herdado](../workflow-designer/using-the-legacy-activity-designer.md)
