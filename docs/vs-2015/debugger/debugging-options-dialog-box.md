@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo depuração, opções | Microsoft Docs
+title: Depuração, caixa de diálogo opções | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b1ab0f4875dcafc14b4b9fb8d3922d26e394c22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190476"
 ---
 # <a name="debugging-options-dialog-box"></a>Depurando, Caixa de Diálogo Opções
@@ -41,11 +41,11 @@ A pasta **Depuração**, na caixa de diálogo **Opções** no menu **Ferramentas
   
 - [Caixa de diálogo Just-In-Time, Depuração, Opções](../debugger/just-in-time-debugging-options-dialog-box.md)  
   
-- [Janela de Saída, Depuração, caixa de diálogo Opções](../debugger/output-window-debugging-options-dialog-box.md)  
+- [Caixa de diálogo Janela de Saída, Depuração, Opções](../debugger/output-window-debugging-options-dialog-box.md)  
   
-- [Símbolos de depuração, caixa de diálogo Opções](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+- [Caixa de diálogo símbolos, depuração, opções](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Referência da interface do usuário de depuração](../debugger/debugging-user-interface-reference.md)
+ [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md)   
+ [Referência de interface do usuário de depuração](../debugger/debugging-user-interface-reference.md)

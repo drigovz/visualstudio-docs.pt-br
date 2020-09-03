@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541252"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: reabilitar um suplemento do VSTO que foi desabilitado
@@ -47,7 +47,7 @@ ms.locfileid: "85541252"
 
 6. Selecione o suplemento do VSTO e clique em **habilitar**.
 
-7. Clique em **fechar**
+7. Clique em **Fechar**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Suplementos do VSTO desabilitados por software
  A desabilitação flexível pode ocorrer quando um suplemento do VSTO produz um erro que não faz com que o aplicativo feche inesperadamente. Por exemplo, um aplicativo pode desabilitar um suplemento do VSTO de maneira flexível se ele lançar uma exceção sem tratamento enquanto o <xref:Microsoft.Office.Tools.AddIn.Startup> manipulador de eventos estiver em execução.
@@ -73,7 +73,7 @@ ms.locfileid: "85541252"
 
 7. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar soluções do Office](../vsto/building-office-solutions.md)
 - [Depurar projetos do Office](../vsto/debugging-office-projects.md)
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)

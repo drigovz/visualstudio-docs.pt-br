@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981087"
 ---
 # <a name="create-an-association-between-entities"></a>Criar uma associação entre entidades
@@ -47,7 +47,7 @@ ms.locfileid: "72981087"
 ### <a name="foreign-key-based-association"></a>Associação baseada em chave estrangeira
  Você pode criar uma associação baseada em chave estrangeira relacionando um identificador na entidade de origem aos descritores de tipo definidos na entidade de destino. Essa relação permite que os consumidores do modelo forneçam uma interface do usuário aprimorada para seus usuários. Por exemplo, um formulário no Outlook que permite que um usuário crie um pedido de vendas que possa exibir clientes em uma lista suspensa; ou uma lista de pedidos de vendas no SharePoint que permite aos usuários abrir uma página de perfil para um cliente.
 
- Para criar uma associação baseada em chave estrangeira, os identificadores relacionados e os descritores de tipo que compartilham o mesmo nome e tipo. Por exemplo, você pode criar uma associação baseada em chave estrangeira entre uma entidade `Contact` e uma entidade `SalesOrder`. A entidade `SalesOrder` retorna um descritor de tipo `ContactID` como parte do parâmetro de retorno do localizador ou métodos de localizador específicos. Os dois descritores de tipo aparecem no **Editor de associação**. Para criar uma relação baseada em chave estrangeira entre a entidade de `Contact` e `SalesOrder` entidade, escolha o identificador de `ContactID` ao lado de cada um desses campos.
+ Para criar uma associação baseada em chave estrangeira, os identificadores relacionados e os descritores de tipo que compartilham o mesmo nome e tipo. Por exemplo, você pode criar uma associação baseada em chave estrangeira entre uma `Contact` entidade e uma `SalesOrder` entidade. A `SalesOrder` entidade retorna um `ContactID` descritor de tipo como parte do parâmetro de retorno do localizador ou métodos de localizador específicos. Os dois descritores de tipo aparecem no **Editor de associação**. Para criar uma relação baseada em chave estrangeira entre a `Contact` entidade e a `SalesOrder` entidade, escolha o `ContactID` identificador ao lado de cada um desses campos.
 
  Adicione código ao método de navegador de associação da entidade de origem que retorna uma coleção de entidades de destino. O exemplo a seguir retorna os pedidos de vendas de um contato.
 
@@ -60,22 +60,22 @@ ms.locfileid: "72981087"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>Associação de subunidade estrangeira
- Você pode criar uma associação sem identificadores de mapeamento para descritores de tipo de campo. Crie esse tipo de associação quando a entidade de origem não tiver uma relação direta com a entidade de destino. Por exemplo, uma tabela `SalesOrderDetail` não tem uma chave estrangeira que mapeia para uma chave primária em uma tabela `Contact`.
+ Você pode criar uma associação sem identificadores de mapeamento para descritores de tipo de campo. Crie esse tipo de associação quando a entidade de origem não tiver uma relação direta com a entidade de destino. Por exemplo, uma `SalesOrderDetail` tabela não tem uma chave estrangeira que mapeia para uma chave primária em uma `Contact` tabela.
 
- Se você quiser exibir informações na tabela `SalesOrderDetail` relacionadas a uma `Contact`, você poderá criar uma associação de um submeio estrangeiro entre a entidade `Contact` e a entidade `SalesOrderDetail`.
+ Se você quiser exibir informações na `SalesOrderDetail` tabela relacionada a um `Contact` , você poderá criar uma associação de um subunidade externo entre a `Contact` entidade e a `SalesOrderDetail` entidade.
 
- No método de navegação de associação da entidade `Contact`, retorne as entidades de `SalesOrderDetail` Unindo tabelas ou chamando um procedimento armazenado.
+ No método de navegação de associação da `Contact` entidade, retorne as `SalesOrderDetail` entidades Unindo tabelas ou chamando um procedimento armazenado.
 
  O exemplo a seguir retorna detalhes de todas as ordens de venda Unindo tabelas.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- No método de navegação de associação da entidade `SalesOrderDetail`, retorne o `Contact`relacionado. O exemplo a seguir demonstra isso.
+ No método de navegação de associação da `SalesOrderDetail` entidade, retorne o relacionado `Contact` . O exemplo a seguir demonstra isso.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Como: criar uma associação entre entidades](../sharepoint/how-to-create-an-association-between-entities.md)

@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540082"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "85540082"
 
 Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] controles associados a dados usando a janela **fontes de dados** . Primeiro, adicione uma fonte de dados à janela **fontes de dados** . Em seguida, arraste os itens da janela **fontes de dados** para o**designer do WPF**.
 
-## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>Adicionar uma fonte de dados à janela fontes de dados
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a> Adicionar uma fonte de dados à janela fontes de dados
  Antes de poder criar controles vinculados a dados, você deve primeiro adicionar uma fonte de dados à janela **fontes de dados** .
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>Primeiro, adicione uma fonte de dados à janela Fontes de Dados.
@@ -53,7 +53,7 @@ Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-title
 
     - [Associação de dados a controles existentes no designer](#existing).
 
-## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>Criar um controle que esteja associado a um único campo de dados
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a> Criar um controle que esteja associado a um único campo de dados
  Depois de adicionar uma fonte de dados à janela **fontes de dados** , você pode criar um novo controle vinculado a dados que exibe um único campo de dados, como um <xref:System.Windows.Controls.ComboBox> ou <xref:System.Windows.Controls.TextBox> .
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Para criar um controle que seja associado a único campo de dados
@@ -66,9 +66,9 @@ Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-title
 
 3. Arraste o item para um contêiner válido no designer. Para obter mais informações sobre contêineres válidos, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]cria o novo controle vinculado a dados e um título apropriado <xref:System.Windows.Controls.Label> no contêiner. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria o novo controle vinculado a dados e um título apropriado <xref:System.Windows.Controls.Label> no contêiner. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>Criar um controle associado a vários campos de dados
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a> Criar um controle associado a vários campos de dados
  Depois de adicionar uma fonte de dados à janela **fontes de dados** , você pode criar um novo controle vinculado a dados que exibe vários campos de dados, como um <xref:System.Windows.Controls.DataGrid> ou <xref:System.Windows.Controls.ListView> .
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Para criar um controle que seja associado a vários campos de dados.
@@ -84,9 +84,9 @@ Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-title
 
 3. Arraste o item para um contêiner válido no designer, como uma <xref:System.Windows.Controls.Grid>. Para obter mais informações sobre contêineres válidos, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]cria o novo controle vinculado a dados no contêiner. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria o novo controle vinculado a dados no contêiner. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>Criar um conjunto de controles associados a vários campos de dados
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a> Criar um conjunto de controles associados a vários campos de dados
  Depois de adicionar uma fonte de dados à janela de **fontes de dados** , você pode associar uma tabela de dados ou um objeto a um conjunto de controles. Um controle diferente é criado para cada coluna ou propriedade na tabela ou no objeto.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Criação de um conjunto de controles que está associado a vários campos de dados
@@ -100,9 +100,9 @@ Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-title
 
 3. Arraste o item para um contêiner válido no designer, como uma <xref:System.Windows.Controls.Grid>. Para obter mais informações sobre contêineres válidos, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]cria os novos controles ligados a dados no contêiner. Cada controle é associado a uma coluna ou propriedade diferente, e cada controle é acompanhado por um controle intitulado adequadamente <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar os controles aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria os novos controles ligados a dados no contêiner. Cada controle é associado a uma coluna ou propriedade diferente, e cada controle é acompanhado por um controle intitulado adequadamente <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar os controles aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>Binddata a controles existentes no designer
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a> Binddata a controles existentes no designer
  Depois de adicionar uma fonte de dados à janela **fontes de dados** , você pode adicionar uma associação de dados a um controle existente no designer.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>Para associar dados a um controle existente no designer
@@ -115,7 +115,7 @@ Você pode criar [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-title
 
 2. Arraste o item selecionado da janela **fontes de dados** para um controle existente no designer. O controle deve ser uma reprodução automática válida. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e código para associar o controle aos dados. Para obter mais informações, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
     > Se o controle já estiver associado aos dados, a associação de dados para o controle é reiniciada para aquele item que foi arrastado para o controle mais recentemente.

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876197"
 ---
 # <a name="content-definition-dialog-box"></a>Caixa de diálogo de conteúdo da definição
@@ -34,6 +34,6 @@ O designer de atividade **Receive** pode ser arrastado da **caixa de ferramentas
 
 O conteúdo pode ser especificado na seção de **mensagem** para uma <xref:System.ServiceModel.Activities.ReceiveMessageContent> atividade ou dentro da seção de **parâmetro** para uma <xref:System.ServiceModel.Activities.ReceiveParametersContent> atividade.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ajuda de Designer de Fluxo de Trabalho interface de usuário](browse-and-select-a-dotnet-type-dialog-box.md)

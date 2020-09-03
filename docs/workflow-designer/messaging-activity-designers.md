@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876184"
 ---
 # <a name="messaging-activity-designers"></a>Designers de atividade de mensagens
@@ -39,7 +39,7 @@ Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orient
 
 Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
-- [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)
+- [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
 - [Usando os designers de atividade](control-flow-activity-designers.md)
 

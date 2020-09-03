@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72431813"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multi-threaded no Visual Studio
@@ -42,7 +42,7 @@ O Visual Studio fornece ferramentas diferentes para uso na depuração de aplica
 
 - Para threads, as principais ferramentas para depuração de threads são a janela **threads** , marcadores de thread nas janelas de origem, a janela **pilhas paralelas** , a janela de **inspeção paralela** e a barra de ferramentas **local de depuração** . Para saber mais sobre o **Threads** janela e **local de depuração** barra de ferramentas, consulte [passo a passo: Depuração com a janela Threads](../debugger/how-to-use-the-threads-window.md). Para saber como usar as **pilhas paralelas** e as janelas de **inspeção paralelas** , consulte [introdução à depuração de um aplicativo multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md). Os dois tópicos mostram como usar marcadores de thread.
 
-- Para o código que usa a [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), as principais ferramentas para depuração são a janela **pilhas paralelas** , a janela de **inspeção paralela** e a janela **tarefas** , que também dá suporte a Linguagem. Para começar, consulte [passo a passos: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [explicando: Depurando um C++ aplicativo amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
+- Para o código que usa a [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), as principais ferramentas para depuração são a janela **pilhas paralelas** , a janela de **inspeção paralela** e a janela **tarefas** , que também oferece suporte a JavaScript. Para começar, consulte [passo a passos: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [explicando: Depurando um aplicativo C++ amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
 - Para depurar threads na GPU, a principal ferramenta é a janela **threads de GPU** . Consulte [como: usar a janela threads GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
@@ -66,7 +66,7 @@ Lista os recursos das ferramentas para depurar threads e processos.
 
 Explica como depurar vários processos.
 
- [Passo a passo: depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
+ [Walkthrough: Debug usando a janela threads](../debugger/how-to-use-the-threads-window.md).
 
 Walkthrough que mostra como usar a janela **threads** e a barra de ferramentas **Location de depuração** .
 
@@ -86,7 +86,7 @@ Marque ou sinalize threads aos quais você deseja dar atenção especial durante
 
 Técnicas para depurar um aplicativo executado em um conjunto de alto desempenho.
 
- [Dicas para threads de depuração no código nativo](../debugger/tips-for-debugging-threads-in-native-code.md)
+ [Dicas para depurar threads em código nativo](../debugger/tips-for-debugging-threads-in-native-code.md)
 
 Técnicas simples que podem ser úteis para depurar threads nativos.
 
@@ -94,11 +94,11 @@ Técnicas simples que podem ser úteis para depurar threads nativos.
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
- [Como definir um nome de thread em código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Como: definir um nome de thread em código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)

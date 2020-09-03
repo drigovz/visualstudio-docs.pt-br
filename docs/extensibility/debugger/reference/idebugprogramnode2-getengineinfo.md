@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2:GetEngineInfo | Microsoft Docs
+title: 'IDebugProgramNode2:: GetEngineInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722092"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-Obtém o nome e o identificador do mecanismo de depuração (DE) executando um programa.
+Obtém o nome e o identificador do mecanismo de depuração (DE) que executa um programa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int GetEngineInfo(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pbstrEngine`\
-[fora] Retorna o nome do DE executando o programa (C++-specific: este pode ser um ponteiro nulo indicando que o chamador não está interessado no nome do motor).
+fora Retorna o nome da execução do programa (específico do C++: esse pode ser um ponteiro nulo indicando que o chamador não está interessado no nome do mecanismo).
 
 `pguidEngine`\
-[fora] Retorna o identificador globalmente único do DE executando o programa (C++-specific: este pode ser um ponteiro nulo indicando que o chamador não está interessado no GUID do motor).
+fora Retorna o identificador global exclusivo da execução do programa (específico do C++: esse pode ser um ponteiro nulo indicando que o chamador não está interessado no GUID do mecanismo).
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

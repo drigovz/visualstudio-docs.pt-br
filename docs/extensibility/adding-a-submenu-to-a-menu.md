@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972316"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Adicionar um submenu a um menu
@@ -153,7 +153,7 @@ Este tutorial se baseia na demonstração em [Adicionar um menu à barra de menu
 
 5. No menu **TestMenu** , clique em **sub menu** e, em seguida, clique em **testar subcomando**. Uma caixa de mensagem deve aparecer e exibir o texto "comando de teste dentro de TestCommand. SubItemCallback ()".
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionar um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

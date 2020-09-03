@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72430827"
 ---
 # <a name="string-visualizer-dialog-box"></a>Caixa de diálogo Visualizador da Cadeia de Caracteres
@@ -38,7 +38,7 @@ O Visualizador de cadeia de caracteres interno inclui opções de texto sem form
 
 Para abrir o Visualizador de cadeia de caracteres, você deve estar em pausa durante a depuração. Focalize uma variável que tenha um valor de cadeia de caracteres de texto sem formatação, XML, HTML ou JSON e selecione o ícone de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Ícone do Visualizador").
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
 O campo **expressão** mostra a variável ou expressão que você está focalizando.
 
@@ -62,7 +62,7 @@ Uma cadeia de caracteres HTML bem formada aparece como se fosse renderizada em u
 
 ![Visualizador de cadeia de caracteres HTML](../debugger/media/dbg-string-visualizers-html.png "Visualizador de cadeia de caracteres HTML")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Criar visualizadores personalizados (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizações de dados no Visual Studio para Mac](/visualstudio/mac/data-visualizations)

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972290"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
@@ -33,7 +33,7 @@ Arquivos de configurações de execução são opcionais. Se você não precisar
 
 3. Especifique o arquivo *. RunSettings que você deseja usando um dos seguintes métodos:
 
-   - [IDE do Visual Studio](#specify-a-run-settings-file-in-the-ide)
+   - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [Linha de comando](#specify-a-run-settings-file-from-the-command-line)
    - [Crie um fluxo de trabalho](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Azure Test Plans ou Team Foundation Server (TFS).
 
@@ -458,7 +458,7 @@ O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma var
 > [!NOTE]
 > Como essas variáveis de ambiente sempre devem ser definidas quando o host de teste é iniciado, os testes sempre devem ser executados em um processo separado. Para isso, o sinalizador */InIsolation* será definido quando houver variáveis de ambiente para que o host de teste sempre seja invocado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)

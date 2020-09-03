@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595898"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Caixa de diálogo Contas, Ambiente, Opções
@@ -33,7 +33,7 @@ Quando essa opção é selecionada, o comportamento do Visual Studio é alterado
 
 ## <a name="registered-azure-clouds"></a>Nuvens do Azure registradas
 
-Esta seção mostra as instâncias de nuvem do Azure às quais você tem acesso por meio de uma ou mais contas que você usa para entrar no Visual Studio. Por exemplo, talvez você tenha acesso a uma instância particular do Azure no data center de sua empresa. Ou, você pode ter acesso a uma instância soberana ou governamental do Azure, como a Azure China 21 Vianet ou o Azure Governo dos EUA. A instância de nuvem global do Azure é exibida por padrão na lista e não pode ser removida.
+Esta seção mostra as instâncias de nuvem do Azure às quais você tem acesso por meio de uma ou mais contas que você usa para entrar no Visual Studio. Por exemplo, talvez você tenha acesso a uma instância particular do Azure no data center de sua empresa. Ou você pode ter acesso a uma instância do soberanas ou governamental do Azure, como o Azure China 21 vianet ou o Azure U.S. governamental. A instância de nuvem global do Azure é exibida por padrão na lista e não pode ser removida.
 
 Registre uma nuvem adicional do Azure escolhendo o botão **Adicionar**. A caixa de diálogo **Adicionar Nova Nuvem do Azure** lista várias instâncias de nuvem do Azure conhecidas às quais você pode se conectar ou você pode inserir a URL para um ponto de extremidade particular do Azure.
 

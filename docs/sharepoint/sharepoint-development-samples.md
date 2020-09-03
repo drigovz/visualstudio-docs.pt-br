@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984153"
 ---
 # <a name="sharepoint-development-samples"></a>Exemplos de desenvolvimento do SharePoint
@@ -24,7 +24,7 @@ ms.locfileid: "72984153"
 
  Você pode baixar cada exemplo individualmente. Você também pode baixar um pacote de exemplo, que tem exemplos relacionados que compartilham uma tecnologia ou um artigo. Você receberá uma notificação quando as alterações no código-fonte forem publicadas para qualquer exemplo baixado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Criar soluções do SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Exemplos do Visual Studio](https://code.msdn.microsoft.com/vstudio)
 - [Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)

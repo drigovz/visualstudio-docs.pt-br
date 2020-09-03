@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596380"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
@@ -41,17 +41,17 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="arguments"></a>Argumentos
 
-- *Solutionname*
+- *SolutionName*
 
   O caminho completo e o nome de um arquivo de solução.
 
-- *Projectname*
+- *ProjectName*
 
   O caminho completo e o nome de um arquivo de projeto.
 
 ## <a name="remarks"></a>Comentários
 
-Esta opção afeta o IDE do Visual Studio nas propriedades do projeto para **diretórios VC++**. Se você especificar a opção `/UseEnv`, o nó dos **Diretórios VC++** mostrará os valores para as variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB. (Também mostra valores para **Diretórios de Origem** e **Diretórios de Exclusão**.) Caso contrário, o nó substitui as variáveis de ambiente por cinco valores de diretório: **Diretórios executáveis,** **Diretórios de** **inclusão, diretórios de referência,** **diretórios de bibliotecas**e **diretórios winrt da biblioteca.**
+Esta opção afeta o IDE do Visual Studio nas propriedades do projeto para **diretórios VC++**. Se você especificar a opção `/UseEnv`, o nó dos **Diretórios VC++** mostrará os valores para as variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB. (Ele também mostra valores para **diretórios de origem** e **excluir diretórios**.) Caso contrário, o nó substituirá as variáveis de ambiente por cinco valores de diretório: **diretórios de arquivos executáveis**, **diretórios de** **referência**, diretórios de **biblioteca**e **diretórios WinRT de biblioteca**.
 
 > [!TIP]
 > Para acessar as propriedades do projeto, clique com o botão direito do mouse no projeto do C++ e selecione **Propriedades**. Na caixa de diálogo **Páginas de Propriedades**, selecione **Propriedades de Configuração** e, em seguida, **Diretórios do VC++**.

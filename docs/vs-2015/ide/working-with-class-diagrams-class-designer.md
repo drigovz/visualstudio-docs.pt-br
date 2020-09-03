@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ff02c3aeab131c0b9a2423c2cb2376d9f0ee618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602396"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabalhando com diagramas de classe (Designer de Classe)
@@ -58,7 +58,7 @@ Os diagramas de classe ajudam você a compreender a estrutura de classes de proj
 
  Explica como imprimir diagramas de classe.
 
- [Como adicionar comentários a diagramas de classe (Designer de Classe)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
+ [Como: adicionar comentários a diagramas de classe (Designer de Classe)](../ide/how-to-add-comments-to-class-diagrams-class-designer.md)
 
  Descreve como adicionar comentários a um diagrama de classe.
 
@@ -66,5 +66,5 @@ Os diagramas de classe ajudam você a compreender a estrutura de classes de proj
 
  Descreve como remover formas de diagramas de classe.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Exibindo tipos e relações (Designer de classe)](../ide/viewing-types-and-relationships-class-designer.md) [como: Personalizar diagramas de classe (Designer de classe)](../ide/how-to-customize-class-diagrams-class-designer.md) [como remover formas de tipo de diagramas de classe (Designer de classe)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

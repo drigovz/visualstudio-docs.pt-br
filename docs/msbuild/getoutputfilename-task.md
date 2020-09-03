@@ -18,26 +18,26 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593285"
 ---
 # <a name="getoutputfilename-task"></a>Tarefa GetOutputFileName
 
 Tarefa auxiliar para obter o nome do arquivo de saída para cl e outras ferramentas, que permite especificar somente o diretório de saída, o nome de arquivo completo ou nada.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa **GetOutputFileName**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**OutputExtension**|Parâmetro de **corda** necessário.|
-|**Outputfile**|Parâmetro opcional de saída de **string.**|
-|**OutputPath**|Parâmetro opcional **de string.**|
-|**Sourcefile**|Parâmetro de **corda** necessário.|
+|**OutputExtension**|Parâmetro de **cadeia de caracteres** necessário.|
+|**OutputFile**|Parâmetro de saída de **cadeia de caracteres** opcional.|
+|**OutputPath**|Parâmetro de **cadeia de caracteres** opcional.|
+|**SourceFile**|Parâmetro de **cadeia de caracteres** necessário.|
 
 ## <a name="see-also"></a>Confira também
 

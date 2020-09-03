@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: 'IDebugCodeContext2:: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0df2a08dd7906b9c4c0935d90150037a3bc0275a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190944"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
@@ -42,16 +42,16 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrLanguage`  
- [no, out] Retorna uma cadeia de caracteres que contém o nome da linguagem, como "C++."  
+ [entrada, saída] Retorna uma cadeia de caracteres que contém o nome do idioma, como "C++".  
   
  `pguidLanguage`  
- [no, out] Retorna o GUID para o idioma do contexto de código, por exemplo, `guidCPPLang`.  
+ [entrada, saída] Retorna o GUID para o idioma do contexto do código, por exemplo, `guidCPPLang` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  Pelo menos um dos parâmetros deve retornar um valor não nulo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4744864824da5efb238e9af1a5a12fcef79ea4ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659070"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Como: Use o designer variável
@@ -31,10 +31,10 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 
 3. Abra o designer de variável clicando no botão **variáveis** no canto inferior esquerdo da tela de design. O designer variável aparece.
 
-4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para a **variável tipo**e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para o **tipo de variável**e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir uma variável, selecione a variável clicando nela e pressione a tecla **delete** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usando o designer de fluxo de trabalho](../workflow-designer/using-the-workflow-designer.md) [variáveis e argumentos](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8) [como: usar o designer de argumentos](../workflow-designer/how-to-use-the-argument-designer.md)

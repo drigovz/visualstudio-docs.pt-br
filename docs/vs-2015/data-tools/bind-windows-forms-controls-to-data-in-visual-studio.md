@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672982"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associar controles do Windows Forms a dados no Visual Studio
@@ -58,11 +58,11 @@ Você pode exibir dados para os usuários do seu aplicativo ligando dados a Wind
 - [Passar dados entre formulários](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>Componente BindingSource
- O componente <xref:System.Windows.Forms.BindingSource> atende a duas finalidades. Primeiro, ele fornece uma camada de abstração ao ligar os controles em seu formulário aos dados. Os controles no formulário são associados ao componente <xref:System.Windows.Forms.BindingSource> (em vez de serem vinculados diretamente a uma fonte de dados).
+ O <xref:System.Windows.Forms.BindingSource> componente atende a duas finalidades. Primeiro, ele fornece uma camada de abstração ao ligar os controles em seu formulário aos dados. Os controles no formulário são associados ao <xref:System.Windows.Forms.BindingSource> componente (em vez de serem vinculados diretamente a uma fonte de dados).
 
  Em segundo lugar, ele pode gerenciar uma coleção de objetos. Adicionar um tipo ao <xref:System.Windows.Forms.BindingSource> cria uma lista desse tipo.
 
- Para obter mais informações sobre o componente <xref:System.Windows.Forms.BindingSource>, consulte:
+ Para obter mais informações sobre o <xref:System.Windows.Forms.BindingSource> componente, consulte:
 
 - [Componente BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
@@ -74,7 +74,7 @@ Você pode exibir dados para os usuários do seu aplicativo ligando dados a Wind
  Esse componente fornece uma interface do usuário para navegar pelos dados exibidos por um aplicativo do Windows. Para obter mais informações, consulte [Controle BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>Controle DataGridView
- Para exibir e editar dados tabulares de vários tipos diferentes de fontes de dados, use o controle <xref:System.Windows.Forms.DataGridView>. Você pode associar dados a um <xref:System.Windows.Forms.DataGridView> usando a propriedade <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Para obter mais informações, consulte [visão geral do controle DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Para exibir e editar dados tabulares de vários tipos diferentes de fontes de dados, use o <xref:System.Windows.Forms.DataGridView> controle. Você pode associar dados a um usando <xref:System.Windows.Forms.DataGridView> a <xref:System.Windows.Forms.DataGridView.DataSource%2A> propriedade. Para obter mais informações, consulte [visão geral do controle DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

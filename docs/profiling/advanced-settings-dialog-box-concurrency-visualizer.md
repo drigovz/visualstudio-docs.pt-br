@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911216"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
@@ -84,5 +84,5 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
   Os dois arquivos ETL armazenam os dados brutos de rastreamento e os dois arquivos da Visualização Simultânea armazenam os dados processados.  Os arquivos brutos de ETL normalmente não são usados após o processamento de um rastreamento.  Marcar a caixa de seleção **Excluir arquivos de ETL (Log de rastreamento de eventos) após a análise** reduz a quantidade de dados de rastreamento armazenados no disco.
 
 ## <a name="see-also"></a>Confira também
-- [Apenas Meu Código](../profiling/just-my-code-threads-view.md)
-- [Marcadores da Visualização Simultânea](../profiling/concurrency-visualizer-markers.md)
+- [Apenas meu código](../profiling/just-my-code-threads-view.md)
+- [Marcadores do Visualizador de simultaneidade](../profiling/concurrency-visualizer-markers.md)

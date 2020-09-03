@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737159"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`Representa as razões pelas quais **edite e continue** não está disponível.
+`This is for internal use only!` Representa os motivos pelos quais **Editar e continuar** não estão disponíveis.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,35 +54,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Campos
 `ENCUN_NONE`\
-Nenhuma razão específica para que edite e continue não esteja disponível.
+Nenhum motivo específico pelo qual editar e continuar não está disponível.
 
 `ENCUN_INTEROP`\
-Editar e continuar não está disponível durante uma chamada InterOp.
+Editar e continuar não está disponível durante uma chamada de interoperabilidade.
 
 `ENCUN_SQLCLR`\
-Edit and Continue não está disponível durante uma chamada de procedimento SQL que usa o Common Language Runtime (CLR).
+Editar e continuar não está disponível durante uma chamada de procedimento SQL que usa o CLR (Common Language Runtime).
 
 `ENCUN_MINIDUMP`\
-Edite e Continue não esteja disponível durante o processamento de um mini-dump.
+Editar e continuar não está disponível durante o processamento de um mini-despejo.
 
 `ENCUN_EMBEDDED`\
-Edite e Continue não esteja disponível no processamento de código incorporado.
+Editar e continuar não está disponível durante o processamento de código inserido.
 
 `ENCUN_ATTACH`\
-Edit e Continue não estão disponíveis porque a sessão foi anexada, não lançada pelo depurador.
+Editar e continuar não está disponível porque a sessão foi anexada a, não iniciada pelo, o depurador.
 
 `ENCUN_WIN64`\
-Edit e Continue não estão disponíveis durante o processamento do código windows de 64 bits.
+Editar e continuar não está disponível durante o processamento do código do Windows de 64 bits.
 
 ## <a name="remarks"></a>Comentários
-Esta enumeração é para [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]uso interno apenas por . Os métodos [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC,](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implementados por `E_NOTIMPL`um fornecedor de porto personalizado, devem sempre retornar .
+Essa enumeração é para uso interno apenas pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Os métodos [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) , conforme implementados por um fornecedor de porta personalizada, sempre devem retornar `E_NOTIMPL` .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.idl
+Cabeçalho: msdbg. idl
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

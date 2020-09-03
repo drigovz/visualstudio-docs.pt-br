@@ -1,5 +1,5 @@
 ---
-title: Configuração do projeto para construção | Microsoft Docs
+title: Configuração de projeto para compilação | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,48 +12,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706729"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 A lista de configurações de solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações de solução.
 
- Um usuário pode criar configurações adicionais de solução, cada uma com seu próprio nome único. Quando o usuário cria uma nova configuração de solução, o IDE é padrão para o nome de configuração correspondente nos projetos ou Depurar se não houver nome correspondente. O usuário pode alterar a seleção para atender a requisitos específicos, se necessário. A única exceção a esse comportamento é quando o projeto suporta uma configuração que corresponda ao nome da nova configuração da solução. Por exemplo, suponha que uma solução contenha Project1 e Project2. O Project1 tem configurações de projeto Debug, Retail e MyConfig1. O Project2 tem configurações de projeto Debug, Retail e MyConfig2.
+ Um usuário pode criar configurações de solução adicionais, cada uma com seu próprio nome exclusivo. Quando o usuário cria uma nova configuração de solução, o IDE usa como padrão o nome de configuração correspondente nos projetos ou depurar se não existir nenhum nome correspondente. O usuário pode alterar a seleção para atender a requisitos específicos, se necessário. A única exceção a esse comportamento é quando o projeto dá suporte a uma configuração que corresponde ao nome da nova configuração de solução. Por exemplo, suponha que uma solução contenha Projeto1 e Projeto2. O Projeto1 tem configurações de projeto Debug, Retail e MyConfig1. O Projeto2 tem configurações de projeto Debug, Retail e MyConfig2.
 
- Se o usuário criar uma nova configuração de solução chamada MyConfig2, o Project1 vinculará sua configuração de Depuração à configuração da solução por padrão. O Project2 também vincula sua configuração MyConfig2 à configuração da solução por padrão.
-
-> [!NOTE]
-> A ligação é insensível ao caso.
-
- Quando o usuário seleciona o item **Seleção múltipla** na lista de itens de desuso de configuração, o ambiente exibe uma caixa de diálogo que fornece a lista de configurações disponíveis.
-
- ![Múltiplas configurações](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs") Múltiplas configurações
-
- Nesta caixa de diálogo, o usuário pode selecionar uma ou várias configurações. Uma vez selecionados, os valores de propriedade exibidos na caixa de diálogo páginas de propriedade refletem a interseção de valores para as configurações selecionadas.
-
- Consulte [configuração de solução](../../extensibility/internals/solution-configuration.md) para obter informações relacionadas à adição e renomeação de configurações para soluções e projetos.
-
- Dependências de projetos e ordem de construção são independentes de configuração de solução: ou seja, você só pode configurar uma árvore de dependência para todos os projetos na solução. Clicar com o botão direito do mouse na solução ou no projeto e selecionar a opção **Dependências de Projeto** ou **Ordem de Construção de Projeto** abre a caixa de diálogo Dependências do **projeto.** Também pode ser aberto a partir do menu **do Projeto.**
-
- ![Dependências do Projeto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies") Dependências do projeto
-
- As dependências do projeto determinam a ordem em que os projetos são construídos. Use a guia 'Criar ordem na caixa de diálogo' para visualizar a ordem exata na qual os projetos dentro de uma solução serão construídos e use a guia Dependências para modificar a ordem de compilação.
+ Se o usuário criar uma nova configuração de solução chamada MyConfig2, Projeto1 associará sua configuração de depuração à configuração da solução por padrão. O Projeto2 também associa sua configuração MyConfig2 à configuração da solução por padrão.
 
 > [!NOTE]
-> Projetos na lista que têm suas caixas de seleção selecionadas, mas aparecem escurecidos, foram adicionados pelo ambiente devido a dependências explícitas especificadas pelas interfaces <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou não <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> podem ser alterados. Por exemplo, adicionar uma [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] referência de projeto a outro projeto adiciona automaticamente uma dependência de compilação que só pode ser removida excluindo a referência. Projetos cujas caixas de seleção são claras e parecem escurecidas não podem ser selecionados porque isso criaria um loop de dependência (por exemplo, o Project1 dependeria do Project2, e o Project2 dependeria do Project1), o que atrasaria a construção.
+> A associação não diferencia maiúsculas de minúsculas.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]os processos de compilação e link típicos que são invocados com um único comando Build. Dois outros processos de compilação também podem ser suportados: uma operação limpa para excluir todos os itens de saída de uma compilação anterior e uma verificação atualizada para determinar se um item de saída em uma configuração foi alterado.
+ Quando o usuário seleciona o item **seleção múltipla** na lista suspensa configuração, o ambiente exibe uma caixa de diálogo que fornece a lista de configurações disponíveis.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>objetos retornam <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> um correspondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>(retornado) para gerenciar seus processos de compilação. Para relatar o status de uma operação de compilação <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>enquanto ela está ocorrendo, as configurações fazem chamadas para, uma interface implementada pelo ambiente e qualquer outro objeto interessado em criar eventos de status.
+ ![Várias configurações](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs") Várias configurações
 
- Uma vez construídas, as configurações podem ser usadas para determinar se podem ou não ser executadas sob o controle do depurador. Configurações <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> implementadas para suportar a depuração.
+ Nessa caixa de diálogo, o usuário pode selecionar uma ou várias configurações. Depois de selecionado, os valores de propriedade exibidos na caixa de diálogo páginas de propriedades refletem a interseção de valores para as configurações selecionadas.
 
- Depois de implementar as dependências do projeto, você pode manipular programáticamente as dependências através do modelo de automação. Você <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> chama o modelo de automação. Não há interfaces de nível de API VSIP disponíveis que permitam a manipulação direta das configurações do gerenciador de compilação de soluções e suas propriedades.
+ Consulte [configuração da solução](../../extensibility/internals/solution-configuration.md) para obter informações relacionadas à adição e renomeação de configurações para soluções e projetos.
 
- Além disso, você pode fornecer uma grade na janela de dependências do projeto. Para obter mais informações, consulte [Properties Display Grid](../../extensibility/internals/properties-display-grid.md).
+ As dependências de projeto e a ordem de compilação são independentes de configuração de solução: ou seja, você só pode configurar uma árvore de dependência para todos os projetos na solução. Clicar com o botão direito do mouse na solução ou no projeto e selecionar a opção **dependências do projeto** ou **ordem de compilação do projeto** abre a caixa de diálogo **dependências do projeto** . Ele também pode ser aberto no menu **projeto** .
+
+ ![Dependências do projeto](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies") Dependências do projeto
+
+ As dependências do projeto determinam a ordem na qual os projetos são criados. Use a guia ordem de compilação na caixa de diálogo para exibir a ordem exata na qual os projetos dentro de uma solução serão compilados e use a guia dependências para modificar a ordem de compilação.
+
+> [!NOTE]
+> Os projetos na lista que têm suas caixas de seleção selecionadas, mas aparecem esmaecidos foram adicionados pelo ambiente devido a dependências explícitas especificadas pelas <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfaces do ou do <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> , e não podem ser alterados. Por exemplo, a adição de uma referência de projeto de um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto a outro projeto adiciona automaticamente uma dependência de compilação que só pode ser removida com a exclusão da referência. Os projetos cujas caixas de seleção são claras e aparecem esmaecidos não podem ser selecionados, pois isso criaria um loop de dependência (por exemplo, Projeto1 seria dependente de Projeto2, e Projeto2 seria dependente de Projeto1), o que paralisaria a compilação.
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] os processos de compilação incluem as operações típicas de compilação e vinculação que são invocadas com um único comando de compilação. Dois outros processos de compilação também podem ter suporte: uma operação de limpeza para excluir todos os itens de saída de uma compilação anterior e uma verificação atualizada para determinar se um item de saída em uma configuração foi alterado.
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> os objetos retornam um correspondente <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retornado de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> ) para gerenciar seus processos de compilação. Para relatar o status de uma operação de compilação enquanto ela está ocorrendo, as configurações fazem chamadas para <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> o, uma interface implementada pelo ambiente e qualquer outro objeto interessado em eventos de status de compilação.
+
+ Uma vez criadas, as definições de configuração podem ser usadas para determinar se elas podem ou não ser executadas sob o controle do depurador. As configurações implementam <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> para dar suporte à depuração.
+
+ Depois de implementar as dependências do projeto, você pode manipular programaticamente as dependências por meio do modelo de automação. Você chama <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> o modelo de automação. Não há nenhuma interface de nível de API do VSIP disponível que permita a manipulação direta das configurações do Gerenciador de compilação de solução e suas propriedades.
+
+ Além disso, você pode fornecer uma grade na janela dependências do projeto. Para obter mais informações, consulte [grade de exibição de propriedades](../../extensibility/internals/properties-display-grid.md).
 
 ## <a name="see-also"></a>Confira também
 - [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5685ad7a760e00392b5f9684cdf399ee320d4a0c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540251"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Marcar interfaces ComSource como IDispatch
@@ -36,7 +36,7 @@ ms.locfileid: "85540251"
  Um tipo é marcado com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo e pelo menos uma interface especificada não é marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo definido como o `InterfaceIsDispatch` valor.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes COM Visual Basic 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ela será exposta como uma interface dupla.
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes COM Visual Basic 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ela será exposta como uma interface dupla.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, adicione ou modifique o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo para que seu valor seja definido como InterfaceIsIDispatch para todas as interfaces especificadas com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo.
