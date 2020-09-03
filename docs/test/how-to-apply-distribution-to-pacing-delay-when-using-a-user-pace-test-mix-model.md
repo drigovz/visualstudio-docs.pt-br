@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288267"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes
@@ -52,7 +52,7 @@ O valor de **Aplicar distribuição à definição dos atrasos** pode ser defini
 
 5. Selecione **arquivo**  >  **salvar**. Agora, você pode executar o teste de carga usando o novo valor de **Aplicar Distribuição à Definição dos Atrasos**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)

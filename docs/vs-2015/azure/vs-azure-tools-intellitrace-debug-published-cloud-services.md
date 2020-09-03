@@ -12,18 +12,18 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 033e682344cbd255c8cbf41d7527ec7d08a5db20
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915618"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depuração de um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Depurando um serviço de nuvem do Azure publicado com o Visual Studio e o IntelliTrace
 Com o IntelliTrace, você pode registrar em log informações extensas de depuração sobre uma instância de função quando ela é executada no Azure. Se precisa encontrar a causa de um problema, você pode usar os logs do IntelliTrace para examinar seu código no Visual Studio como se ele estivesse em execução no Azure. Na verdade, o IntelliTrace registra dados de ambiente e a execução do código de chave quando seu aplicativo Azure está em execução como um serviço de nuvem no Azure, além de permitir que você reproduza os dados gravados usando o Visual Studio. 
 
 Você poderá usar o IntelliTrace se tiver o Visual Studio Enterprise instalado e seu aplicativo Azure se destinar ao .NET Framework 4 ou uma versão posterior. O IntelliTrace coleta informações sobre suas funções no Azure. As máquinas virtuais para essas funções sempre executam sistemas operacionais de 64 bits.
 
-Como alternativa, é possível usar a [depuração remota](vs-azure-tools-debugging-cloud-services-overview.md) para anexação direta a um serviço de nuvem em execução no Azure.
+Como alternativa, você pode usar a [depuração remota](vs-azure-tools-debugging-cloud-services-overview.md) para anexar diretamente a um serviço de nuvem em execução no Azure.
 
 > [!IMPORTANT]
 > O IntelliTrace destina-se apenas aos cenários de depuração e não deve ser usado para uma implantação de produção.
@@ -76,6 +76,6 @@ Com o Visual Studio, é possível baixar os logs do IntelliTrace de uma instânc
 > 
 > 
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 - [Opções de depuração dos serviços de nuvem do Azure](vs-azure-tools-debugging-cloud-services-overview.md)
 - [Publicando um serviço de nuvem do Azure usando o Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

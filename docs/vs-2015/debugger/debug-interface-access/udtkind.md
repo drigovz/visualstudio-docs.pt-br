@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9fb22471cea7cd717b8969682a0e1f643f912150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202379"
 ---
 # <a name="udtkind"></a>UdtKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Descreve a variedade de tipo definido pelo usuário (UDT).  
+Descreve a variedade de UDT (tipo definido pelo usuário).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum UdtKind {   
@@ -44,17 +44,17 @@ enum UdtKind { 
  UDT é uma classe.  
   
  UdtUnion  
- UDT é uma união.  
+ UDT é uma União.  
   
  UdtInterface  
  UDT é uma interface.  
   
 ## <a name="remarks"></a>Comentários  
- Os valores nesta enumeração são retornados pelo [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) método.  
+ Os valores nessa enumeração são retornados pelo método [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: cvconst.h  
+ Cabeçalho: cvconst. h  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)

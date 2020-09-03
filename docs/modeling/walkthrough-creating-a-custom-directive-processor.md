@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532230"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: criar um processador de diretiva personalizado
@@ -654,7 +654,7 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      A chave do Registro deverá ter os seguintes valores:
 
-   | Nome | Type | Dados |
+   | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -662,7 +662,7 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      Se você colocou o assembly no GAC, os valores deverão se parecer com o seguinte:
 
-   | Nome | Type | Dados |
+   | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |

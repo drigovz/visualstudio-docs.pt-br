@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76826465"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Como usar SDKs de projeto do MSBuild
 
-O MSBuild 15.0 introduziu o conceito do "projeto SDK", que simplifica o uso de kits de desenvolvimento de software que exigem propriedades e metas a serem importadas.
+O MSBuild 15,0 introduziu o conceito do "SDK do projeto", que simplifica o uso de kits de desenvolvimento de software que exigem Propriedades e destinos a serem importados.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ O MSBuild 15.0 introduziu o conceito do "projeto SDK", que simplifica o uso de k
 </Project>
 ```
 
-Durante a avaliação do projeto, o MSBuild adiciona importações implícitas na parte superior e inferior do arquivo do projeto:
+Durante a avaliação do projeto, o MSBuild adiciona importações implícitas na parte superior e inferior do arquivo de projeto:
 
 ```xml
 <Project>
@@ -56,9 +56,9 @@ Há três maneiras de referenciar um SDK de projeto:
     </Project>
     ```
 
-    Uma importação implícita é adicionada à parte superior e inferior do projeto, como discutido anteriormente.
+    Uma importação implícita é adicionada à parte superior e inferior do projeto, conforme discutido anteriormente.
     
-    Para especificar uma versão específica do SDK, aprome-o ao atributo: `Sdk`
+    Para especificar uma versão específica do SDK, acrescente-a ao `Sdk` atributo:
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -78,7 +78,7 @@ Há três maneiras de referenciar um SDK de projeto:
     </Project>
    ```
 
-   Uma importação implícita é adicionada à parte superior e inferior do projeto, como discutido anteriormente.
+   Uma importação implícita é adicionada à parte superior e inferior do projeto, conforme discutido anteriormente.
    
    O atributo `Version` não é necessário.
 
@@ -101,19 +101,19 @@ Há três maneiras de referenciar um SDK de projeto:
 
 ## <a name="how-project-sdks-are-resolved"></a>Como os SDKs de projeto são resolvidos
 
-Ao avaliar a importação, o MSBuild resolve dinamicamente o caminho para o SDK do projeto com base no nome e na versão especificada.  O MSBuild também tem uma lista de resolvers SDK registrados, que são plug-ins que localizam SDKs de projeto em sua máquina. Os plug-ins incluem:
+Ao avaliar a importação, o MSBuild resolve dinamicamente o caminho para o SDK do projeto com base no nome e na versão que você especificou.  O MSBuild também tem uma lista de resolvedores de SDK registrados, que são plug-ins que localizam SDKs de projeto em seu computador. Os plug-ins incluem:
 
 - Um resolvedor baseado em NuGet que consulta os feeds de pacotes configurados para pacotes do NuGet que correspondem à ID e à versão do SDK que você especificou.
 
-   Este resolver só está ativo se você especificou uma versão opcional. Pode ser usado para qualquer projeto personalizado SDK.
+   Esse resolvedor só estará ativo se você tiver especificado uma versão opcional. Ele pode ser usado para qualquer SDK do projeto personalizado.
    
-- Um resolver .NET CLI que resolve SDKs instalados com [.NET CLI](/dotnet/core/tools/).
+- Um resolvedor de CLI do .NET que resolve SDKs instalados com a [CLI do .net](/dotnet/core/tools/).
 
-   Este resolver localiza sdks `Microsoft.NET.Sdk` `Microsoft.NET.Sdk.Web` do projeto como e que fazem parte do produto.
+   Esse resolvedor localiza SDKs de projeto como `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web` que fazem parte do produto.
    
 - Um resolvedor padrão que resolve SDKs instalados com o MSBuild.
 
-O resolver SDK baseado em NuGet suporta especificar uma versão no arquivo [global.json,](/dotnet/core/tools/global-json) que permite controlar a versão sdk do projeto em um lugar e não em cada projeto individual:
+O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma versão na [global.jsno](/dotnet/core/tools/global-json) arquivo, que permite controlar a versão do SDK do projeto em um único lugar em vez de em cada projeto individual:
 
 ```json
 {
@@ -124,7 +124,7 @@ O resolver SDK baseado em NuGet suporta especificar uma versão no arquivo [glob
 }
 ```
 
-Somente uma versão de cada SDK de projeto pode ser usada durante uma compilação. Se você referenciar duas versões diferentes do mesmo projeto SDK, o MSBuild emite um aviso. Recomenda-se **não** especificar uma versão em seus projetos se uma versão for especificada no arquivo *global.json.*
+Somente uma versão de cada SDK de projeto pode ser usada durante uma compilação. Se você fizer referência a duas versões diferentes do mesmo SDK do projeto, o MSBuild emitirá um aviso. É recomendável **não** especificar uma versão em seus projetos se uma versão for especificada no *global.jsno* arquivo.
 
 ## <a name="see-also"></a>Confira também
 

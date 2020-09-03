@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738120"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
-Especifica o estilo de condição de ponto de interrupção para pontos de interrupção pendentes e vinculados.
+Especifica o estilo de condição do ponto de interrupção para pontos de interrupção pendentes e associados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,23 +46,23 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>Campos
 `BP_COND_NONE`\
-Dispara o ponto de ruptura quando a posição do ponto de ruptura é atingida. Nenhuma condição de ponto de ruptura especificada.
+Dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
 
 `BP_COND_WHEN_TRUE`\
-Dispara o ponto de ruptura somente quando a expressão `true`condicional associada ao ponto de ruptura é avaliada em .
+Dispara o ponto de interrupção somente quando a expressão condicional associada ao ponto de interrupção é avaliada como `true` .
 
 `BP_COND_WHEN_CHANGED`\
-Dispara o ponto de ruptura somente quando o valor da expressão condicional associada ao ponto de ruptura mudou de sua avaliação anterior.
+Dispara o ponto de interrupção somente quando o valor da expressão condicional associada ao ponto de interrupção foi alterado de sua avaliação anterior.
 
 ## <a name="remarks"></a>Comentários
-Usado para `styleCondition` o membro da estrutura [BP_CONDITION.](../../../extensibility/debugger/reference/bp-condition.md)
+Usado para o `styleCondition` membro da estrutura de [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

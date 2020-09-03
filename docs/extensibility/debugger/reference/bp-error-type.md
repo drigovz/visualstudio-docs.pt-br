@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738069"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
-Especifica o tipo de erro de um ponto de ruptura.
+Especifica o tipo de erro de um ponto de interrupção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,49 +62,49 @@ public enum enum_BP_ERROR_TYPE {
 
 ## <a name="fields"></a>Campos
 `BPET_NONE`\
-Não especifica nenhum erro de ponto de ruptura.
+Não especifica nenhum erro de ponto de interrupção.
 
 `BPET_TYPE_WARNING`\
-Especifica um erro de ponto de quebra no estilo de aviso.
+Especifica um erro de ponto de interrupção de estilo de aviso.
 
 `BPET_TYPE_ERROR`\
-Especifica um erro de ponto de quebra no estilo de erro.
+Especifica um erro de ponto de interrupção de estilo de erro.
 
 `BPET_SEV_HIGH`\
-Especifica um erro de ponto de ruptura de alta gravidade.
+Especifica um erro de ponto de interrupção de alta severidade.
 
 `BPET_SEV_GENERAL`\
-Especifica um erro de ponto de ruptura de gravidade média.
+Especifica um erro de ponto de interrupção de severidade média.
 
 `BPET_SEV_LOW`\
-Especifica um erro de ponto de ruptura de baixa gravidade.
+Especifica um erro de ponto de interrupção de baixa severidade.
 
 `BPET_TYPE_MASK`\
-Especifica um erro de ponto de ruptura no estilo da máscara.
+Especifica um erro de ponto de interrupção de estilo de máscara.
 
 `BPET_SEV_MASK`\
-Especifica um erro de ponto de ruptura no estilo severidade da máscara.
+Especifica um erro de ponto de interrupção de estilo de máscara de gravidade.
 
 `BPET_GENERAL_WARNING`\
-Especifica um erro de ponto de quebra no estilo de aviso geral.
+Especifica um erro de ponto de interrupção de estilo de aviso geral.
 
 `BPET_GENERAL_ERROR`\
-Especifica um erro de ponto de quebra no estilo de erro geral.
+Especifica um erro de ponto de interrupção de estilo de erro geral.
 
 `BPET_ALL`\
-Especifica todos os tipos de erro de ponto de ruptura.
+Especifica todos os tipos de erro de ponto de interrupção.
 
 ## <a name="remarks"></a>Comentários
-Esses valores podem ser combinados com um pouco e utilizados `OR` para o `dwType` membro da estrutura [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Passou como parâmetro para o método [EnumErrorBreakpoints.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+Esses valores podem ser combinados com uma e bit-a-bit `OR` e usados para o `dwType` membro da estrutura de [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Passado como um parâmetro para o método [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
-Um tipo de erro de ponto de ruptura é composto de um tipo e uma gravidade. Isso significa que um tipo de erro de ponto `BPET_TYPE_ERROR`de ruptura nunca é apenas `BPET_SEV_GENERAL`um tipo (por exemplo, ,) ou uma gravidade (por exemplo, ) por si só. `BPET_GENERAL_WARNING`e `BPET_GENERAL_ERROR` fornecer valores predefinidos para pontos de interrupção de advertência e erro gerais.
+Um tipo de erro de ponto de interrupção é composto por um tipo e uma severidade. Isso significa que um tipo de erro de ponto de interrupção nunca é apenas um tipo (por exemplo, `BPET_TYPE_ERROR` ) ou uma severidade (por exemplo, `BPET_SEV_GENERAL` ) por si só. `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` forneça valores predefinidos para avisos gerais e pontos de interrupção de erro.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

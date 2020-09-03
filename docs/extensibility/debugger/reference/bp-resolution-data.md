@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737847"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
-Descreve o resultado da vinculação de um ponto de ruptura de dados.
+Descreve o resultado da Associação de um ponto de interrupção de dados.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_RESOLUTION_DATA {
@@ -47,26 +47,26 @@ public struct BP_RESOLUTION_DATA {
 
 ## <a name="members"></a>Membros
 `bstrDataExpr`\
-A expressão de dados que foi vinculada.
+A expressão de dados que foi associada.
 
 `bstrFunc`\
-O nome da função que o ponto de ruptura de dados vinculou (se houver).
+O nome da função em que o ponto de interrupção de dados está associado (se houver).
 
 `bstrImage`\
-O nome do módulo (MyModule.dll, por exemplo) que o ponto de ruptura de dados se limitou.
+O nome do módulo (MyModule.dll, por exemplo) que o ponto de interrupção de dados está associado.
 
 `dwFlags`\
-Um valor da [enumeração BP_RES_DATA_FLAGS,](../../../extensibility/debugger/reference/bp-res-data-flags.md) descrevendo como o ponto de ruptura de dados é implementado.
+Um valor da enumeração [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) , que descreve como o ponto de interrupção de dados é implementado.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é membro da estrutura [BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) que por sua vez é membro da estrutura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) devolvida pelo método [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)
+Essa estrutura é um membro da estrutura de [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) , que, por sua vez, é um membro da estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) retornada pelo método [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

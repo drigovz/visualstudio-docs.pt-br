@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 3d56cfce70b0723b636b9b8ef7c6f3917015bf66
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915555"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script do Windows PowerShell)
@@ -32,16 +32,16 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuração do
+## <a name="configuration"></a>Configuração
 O caminho para o arquivo de configuração de JSON que descreve os detalhes da implantação.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |true |
-| Position |chamada |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
@@ -51,9 +51,9 @@ O nome da assinatura do Azure na qual você deseja criar o site.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |chamada |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
@@ -63,9 +63,9 @@ O caminho para o pacote de implantação Web a publicar no site. Você pode cria
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |chamada |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
@@ -75,9 +75,9 @@ O nome do administrador e a senha do Banco de Dados SQL no Azure.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |chamada |
+| Posição |nomeado |
 | Valor padrão |nenhum |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
@@ -87,9 +87,9 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |chamada |
+| Posição |nomeado |
 | Valor padrão |false |
-| Aceitar entrada do Pipeline? |false |
+| Aceitar entrada de pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="remarks"></a>Comentários
@@ -123,5 +123,5 @@ O arquivo de configuração JSON especifica os detalhes daquilo que está para s
 
 Você pode editar o arquivo de configuração JSON para alterar o que é implantado. Uma seção de site é obrigatória, mas a seção de banco de dados é opcional.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações, consulte [WebApplicationVM de publicação (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

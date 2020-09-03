@@ -15,16 +15,16 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737999"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-Descreve a localização de deslocamento de um ponto de ruptura em uma função em código.
+Descreve o local de deslocamento de um ponto de interrupção em uma função no código.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
@@ -35,22 +35,22 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 ## <a name="members"></a>Membros
 `bstrContext`\
-O contexto do ponto de ruptura, tipicamente um método ou nome de função como visto em uma pilha de chamadas.
+O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.
 
 `pFuncPos`\
-O objeto [IDebugFunction2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) que descreve o nome da função e a posição relativa desde o início da função.
+O objeto [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) que descreve o nome da função e a posição relativa do início da função.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é membro da estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de um sindicato.
+Essa estrutura é um membro da estrutura de [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de uma União.
 
-O `pFuncPos` membro indica onde definir o ponto de ruptura da função.
+O `pFuncPos` membro indica onde definir o ponto de interrupção da função.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

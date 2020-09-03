@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287487"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Como especificar agentes de teste a serem usados em cenários de teste de carga
@@ -39,7 +39,7 @@ Para obter mais informações, consulte [Controladores e agentes de teste](confi
 
 Outro motivo é que alguns, mas não todos, agentes podem ter software instalado neles que é necessário para determinado cenário.
 
-Você pode controlar a seleção do agente para uma determinada execução de teste usando funções nas configurações de teste. Para obter mais informações, consulte [coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+Você pode controlar a seleção do agente para uma determinada execução de teste usando funções nas configurações de teste. Para obter mais informações, consulte  [coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
 Se um computador de agente de teste tiver mais de 75% de utilização de CPU ou menos de 10% de memória física disponível, adicione mais agentes ao seu teste de carga para garantir que o computador do agente não se torne o gargalo em seu teste de carga.
 
@@ -64,7 +64,7 @@ Se um computador de agente de teste tiver mais de 75% de utilização de CPU ou 
 
 5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Agentes a usar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)

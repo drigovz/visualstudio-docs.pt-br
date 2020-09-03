@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774250"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Exibição de IPs (ponteiros de instrução) – dados de amostragem
@@ -30,10 +30,10 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a instrução.|
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|
-|**Arquivo de origem**|O arquivo de origem que contém a instrução.|
+|**Arquivo de Origem**|O arquivo de origem que contém a instrução.|
 |**Nome da função**|O nome da função que contém a instrução.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço de memória inicial da função no binário carregado.|
+|**Endereço da função**|O endereço de memória inicial da função no binário carregado.|
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que esse exemplo foi coletado.|
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que esse exemplo foi coletado.|
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que esse exemplo foi coletado.|
@@ -43,4 +43,4 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da instrução.|
 
 ## <a name="see-also"></a>Confira também
-- [Ponteiros de instrução (IPs) Visualização - amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Exibição de ponteiros de instrução (IPs)-amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

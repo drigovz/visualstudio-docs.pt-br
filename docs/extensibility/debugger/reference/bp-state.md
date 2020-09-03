@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737804"
 ---
 # <a name="bp_state"></a>BP_STATE
-Especifica a existência de um ponto de ruptura vinculado e também especifica se ele está habilitado.
+Especifica a existência de um ponto de interrupção associado e também especifica se ele está habilitado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_STATE {
@@ -48,26 +48,26 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>Campos
 `BPS_NONE`\
-Especifica que não existe ponto de ruptura.
+Especifica que não existe nenhum ponto de interrupção.
 
 `BPS_DELETED`\
-Especifica que o ponto de ruptura foi excluído.
+Especifica que o ponto de interrupção foi excluído.
 
 `BPS_DISABLED`\
-Especifica que o ponto de partida está desativado.
+Especifica que o ponto de interrupção está desabilitado.
 
 `BPS_ENABLED`\
-Especifica que o ponto de partida está ativado.
+Especifica que o ponto de interrupção está habilitado.
 
 ## <a name="remarks"></a>Comentários
-Retornou do método [GetState.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+Retornado do método [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

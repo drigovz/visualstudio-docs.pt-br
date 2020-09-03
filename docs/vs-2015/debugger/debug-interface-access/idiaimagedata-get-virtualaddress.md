@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df8a8a351fb7557d5483b006c9b0b31ea7fcf27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202214"
 ---
-# <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
+# <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o local na memória virtual da imagem.  
@@ -35,10 +35,10 @@ HRESULT get_virtualAddress ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o endereço virtual da imagem.  
+ fora Retorna o endereço virtual da imagem.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Assinar arquivos com SignTool.exe (ClickOnce) de instalação | Microsoft Docs'
+title: Como assinar arquivos de instalação com SignTool.exe (ClickOnce) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202171"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como: Assinar arquivos de instalação com SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como assinar arquivos de instalação com SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o SignTool.exe para assinar um programa de instalação (setup.exe). Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.  
@@ -79,5 +79,5 @@ Você pode usar o SignTool.exe para assinar um programa de instalação (setup.e
     signtool sign /f CertFileName Setup.exe  
     ```  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como: assinar novamente manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

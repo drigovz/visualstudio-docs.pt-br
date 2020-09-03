@@ -1,5 +1,5 @@
 ---
-title: 'Passo 2: Criar seu primeiro ASP.NET aplicativo web principal'
+title: 'Etapa 2: criando seu primeiro aplicativo Web ASP.NET Core'
 description: Crie seu primeiro aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77580079"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Passo 2: Crie seu primeiro aplicativo web ASP.NET Core
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core
 
 Crie seu primeiro aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 
@@ -33,12 +33,12 @@ _Assista a este vídeo e acompanhe-o para criar seu primeiro aplicativo Web ASP.
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Iniciar o Visual Studio 2019 e criar um projeto
 
-Inicie o Visual Studio 2019 e clique em **Criar um projeto**. Escolha **Aplicativo Web ASP.NET Core**. Escolha o modelo **Aplicativo Web** e mantenha o nome e local padrão do projeto. Na versão dropdown com a versão ASP.NET Core, escolha **ASP.NET Core 2.1** ou **ASP.NET Core 2.2**. Clique em **Criar**. Para obter instruções mais detalhadas, consulte o [vídeo anterior nesta série de tutoriais](tutorial-aspnet-core-ef-step-01.md).
+Inicie o Visual Studio 2019 e clique em **Criar um projeto**. Escolha **Aplicativo Web ASP.NET Core**. Escolha o modelo **Aplicativo Web** e mantenha o nome e local padrão do projeto. No menu suspenso com a versão ASP.NET Core, escolha **ASP.NET Core 2,1** ou **ASP.NET Core 2,2**. Clique em **Criar**. Para obter instruções mais detalhadas, consulte o [vídeo anterior nesta série de tutoriais](tutorial-aspnet-core-ef-step-01.md).
 
 ![Escolher opções de projeto ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 > [!WARNING]
-> Certifique-se de escolher ASP .NET Core 2.1 ou ASP.NET Core 2.2. Este tutorial não é compatível com ASP.NET Core 3.x.
+> Certifique-se de escolher ASP .NET Core 2,1 ou ASP.NET Core 2,2. Este tutorial não é compatível com o ASP.NET Core 3. x.
 
 ## <a name="explore-the-new-project"></a>Explorar o novo projeto
 
@@ -50,7 +50,7 @@ Na janela do gerenciador de soluções, à direita, você pode exibir os conteú
 
 A pasta *wwwroot* contém arquivos estáticos que estarão publicamente acessíveis do aplicativo Web. Normalmente, ele contém folhas de estilo, arquivos de script do lado do cliente e imagens.
 
-### <a name="pages"></a>Pages (Páginas)
+### <a name="pages"></a>Páginas
 
 A pasta *Pages* contém as Razor Pages do site. O modelo padrão fornece várias páginas, incluindo a página *Index.cshtml* que é a home page do aplicativo, bem como Sobre, Contato e assim por diante.
 
@@ -68,11 +68,11 @@ O Host da Web criado no *Program.cs* faz referência à classe Startup e chama o
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-A home page para o site inclui um pouco de marcação HTML e algum código do Razor do lado servidor. Ele usa o Razor para especificar o modelo de página, `IndexModel`, que está localizado no arquivo *Index.cshtml.cs* associado. Ele também define o título da página, definindo um valor em ViewData. Esse valor ViewData é lido no * \_arquivo Layout.cshtml,* localizado na pasta Compartilhada dentro da pasta Páginas. O arquivo de Layout é compartilhado por várias Razor Pages e fornece a aparência e experiência comuns para o aplicativo. O conteúdo de cada página é renderizado dentro HTML do arquivo de Layout.
+A home page para o site inclui um pouco de marcação HTML e algum código do Razor do lado servidor. Ele usa o Razor para especificar o modelo de página, `IndexModel`, que está localizado no arquivo *Index.cshtml.cs* associado. Ele também define o título da página, definindo um valor em ViewData. Esse valor ViewData é lido no arquivo * \_ layout. cshtml* , localizado na pasta compartilhada dentro da pasta páginas. O arquivo de Layout é compartilhado por várias Razor Pages e fornece a aparência e experiência comuns para o aplicativo. O conteúdo de cada página é renderizado dentro HTML do arquivo de Layout.
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
-Agora execute o aplicativo e exiba-o no navegador. Você pode executar o aplicativo usando **Ctrl**+**F5** ou escolhendo **Debug** > **Start Sem Depuração** no menu do Visual Studio.
+Agora execute o aplicativo e exiba-o no navegador. Você pode executar o aplicativo usando **Ctrl** + **F5** ou escolhendo **depurar**  >  **Iniciar sem Depurar** no menu do Visual Studio.
 
 ## <a name="customize-the-application"></a>Personalizar o aplicativo
 
@@ -124,8 +124,8 @@ Agora você deve ver o tempo real do servidor no navegador quando você navega p
 
 No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplicativo.
 
-[Tutorial: Trabalhando com dados no seu ASP.NET aplicativo principal](tutorial-aspnet-core-ef-step-03.md)
+[Tutorial: trabalhando com dados em seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Confira também
 
-- [Tutorial: Crie um aplicativo web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

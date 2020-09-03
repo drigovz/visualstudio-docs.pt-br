@@ -1,5 +1,5 @@
 ---
-title: Debug XAML in Blend | Microsoft Docs
+title: Depurar XAML no Blend | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e032f9f99087df26c82b4984c2267a35236bf6e
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81444603"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
@@ -55,11 +55,11 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first
   
     Na caixa de diálogo **Novo Projeto**, é exibida uma lista de tipos de projetos no lado esquerdo. Quando você clica em um tipo de projeto, os modelos de projeto associados a ele aparecem do lado direito.  
   
-2. Na lista de tipos de projetos, clique em **XAML (Windows Store)**.  
+2. Na lista de tipos de projeto, clique em **XAML (Windows Store)**.  
   
-3. Na lista de modelos de projeto, clique **em Blank App**.  
+3. Na lista de modelos de projeto, clique em **aplicativo em branco**.  
   
-4. Na caixa de texto `DebuggingSample` **Nome,** digite .  
+4. Na caixa de texto **nome** , digite `DebuggingSample` .  
   
 5. Na caixa de texto **Localização**, verifique a localização do projeto.  
   
@@ -99,7 +99,7 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first
   
     Uma mensagem de erro aparece alertando você que o projeto não pode ser criado e o painel **Resultados**, listando os erros, aparece na parte inferior do aplicativo.  
   
-    ![Depurar XAML no Blend for Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
+    ![Depurar XAML no Blend para Visual Studio](../debugger/media/blend-debugxaml-xaml.png "blend_debugXAML_XAML")  
   
 ### <a name="resolving-xaml-errors"></a>Resolvendo erros de XAML  
  Quando são detectados erros de XAML, a superfície de design exibe um alerta informando que seu projeto contém marcação inválida. À medida que você resolve os erros, a lista de erros no painel **Resultados** é atualizada. Quando você tiver resolvido todos os erros, a superfície de design é habilitada e seu aplicativo é exibido na superfície de design.  
@@ -108,22 +108,22 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first
   
 1. Clique duas vezes no primeiro erro da lista. A descrição é "O valor '<' não é um válido em um atributo". Quando você clica duas vezes no erro, o ponteiro encontra o local correspondente no código. O `<` que precede `Button` é válido e não um atributo, conforme sugerido na mensagem de erro. Se você observar a linha de código precedente, notará que as marcas de aspas de fechamento para o atributo `Top` estão faltando. Digite as marcas de aspas de fechamento. Observe que a lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.  
   
-2. Clique duas vezes na descrição "'0' não é válido no início de um nome." `Margin="0,149,0,0"`parece estar bem formado. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.  
+2. Clique duas vezes na descrição "' 0 ' não é válida no início de um nome." `Margin="0,149,0,0"` Parece estar bem formado. No entanto, observe que a codificação de cor da `Margin` não corresponde a outras instâncias de `Margin` no código. Como as marcas de cotação de fechamento estão faltando do par de nome/valor precedente (`VerticalAlignment="Top`), `Margin="` que é lido como parte do valor do atributo precedente, e 0 é lido como o início de um par de nome/valor. Digite as marcas de aspas de fechamento para `Top`. A lista de erros no painel **Resultados** é atualizada de acordo com suas alterações.  
   
 3. Clique duas vezes no erro restante, "A marca XML de fechamento 'Button' é discrepante." O ponteiro está localizado na tag **Grid** de fechamento (`</Grid>`), sugerindo que o erro está dentro do objeto `Grid`. Observe que o segundo objeto `Button` está sem a marcação de fechamento. Depois de adicionar a `/` de fechamento, a lista de painéis dos **Resultados** é atualizada. Agora que esses erros iniciais foram resolvidos, dois erros adicionais foram identificados.  
   
 4. Clique duas vezes em "O membro 'content' não é reconhecido nem acessível." O `c` em `content` deve estar em maiúsculas. Substitua o "c" minúsculo pelo "c" maiúsculo.  
   
-5. Clique duas vezes em "A propriedade 'Mame' não existe no `https://schemas.microsoft.com/winfx/2006/xaml` namespace." O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.  
+5. Clique duas vezes em "a propriedade ' Mame ' não existe no `https://schemas.microsoft.com/winfx/2006/xaml` namespace." O "M" em "Mame" deve ser um "N." Substitua o "M" com um "N". Agora que o XAML pode ser analisado, o aplicativo aparece na superfície de design.  
   
-    ![Depuração de XAML em Blend para Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
+    ![Depurando XAML no Blend para Visual Studio](../debugger/media/blend-debugartboard-xaml.png "blend_debugArtboard_XAML")  
   
     Pressione Ctrl+Shift+B para compilar um projeto e confirmar que não há restam erros.  
   
 ## <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio  
  Você pode abrir projetos do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] no Visual Studio para depurar o código de maneira mais fácil em seu aplicativo. Para abrir um projeto do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] no Visual Studio, clique com o botão direito do mouse no projeto no painel **Projetos** e clique em **Editar no Visual Studio**. Quando você encerrar sua sessão de depuração no Visual Studio, pressione Ctrl+Shift+S para salvar todas as mudanças e voltar para o [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Você será solicitado a recarregar o projeto. Clique em **Sim para Todos** para continuar trabalhando no [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos do Windows Store no Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
+ Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos da Windows Store no Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Obtendo ajuda  
- Se você precisar de mais [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] ajuda para depurar seu aplicativo, você pode procurar nos [fóruns da comunidade](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) de aplicativos da Windows Store para obter postagens relacionadas ao seu problema ou postar uma pergunta.
+ Se precisar de mais ajuda para depurar seu [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] aplicativo, você poderá pesquisar os [fóruns da comunidade de aplicativos da Windows Store](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) em busca de postagens relacionadas ao seu problema ou postar uma pergunta.

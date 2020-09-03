@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
+title: 'IDebugBreakpointResolution2:: getbreakpointtype | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734814"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Obtém o tipo de ponto de ruptura representado por esta resolução.
+Obtém o tipo do ponto de interrupção representado por essa resolução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ int GetBreakpointType( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pBPType`\
-[fora] Retorna um valor da enumeração [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica o tipo deste ponto de ruptura.
+fora Retorna um valor da enumeração [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) que especifica o tipo desse ponto de interrupção.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro. O retorno `bpResLocation` E_FAIL se o campo na estrutura [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associada não for válido.
+## <a name="return-value"></a>Valor Retornado
+Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna E_FAIL se o `bpResLocation` campo na estrutura de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associada não for válido.
 
 ## <a name="remarks"></a>Comentários
-O ponto de ruptura pode ser um código ou um ponto de ruptura de dados, por exemplo.
+O ponto de interrupção pode ser um código ou um ponto de interrupção de dados, por exemplo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como `CDebugBreakpointResolution` implementar este método para um objeto simples que expõe a interface [IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+O exemplo a seguir mostra como implementar esse método para um `CDebugBreakpointResolution` objeto simples que expõe a interface [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

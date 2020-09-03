@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115239"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Como definir as configurações em um arquivo de resposta
@@ -159,4 +159,4 @@ O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trab
 ## <a name="see-also"></a>Confira também
 
 * [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
-* [Solucionar problemas relacionados a erros relacionados à rede quando você instala ou usa o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
+* [Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)

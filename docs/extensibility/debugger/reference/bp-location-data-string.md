@@ -15,14 +15,14 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 75f881feaaa2068abd98d771a63024f20435d98f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737975"
 ---
 # <a name="bp_location_data_string"></a>BP_LOCATION_DATA_STRING
-Usado para definir pontos de interrupção de dados baseados em uma seqüência que o usuário pode inserir a partir do ambiente de desenvolvimento integrado (IDE).
+Usado para definir pontos de interrupção de dados baseados em uma cadeia de caracteres que o usuário pode inserir do ambiente de desenvolvimento integrado (IDE).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,26 +37,26 @@ typedef struct _BP_LOCATION_DATA_STRING {
 
 ## <a name="members"></a>Membros
 `pThread`\
-O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento no qual ocorre o ponto de ruptura.
+O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o thread no qual o ponto de interrupção ocorre.
 
 `bstrContext`\
-O contexto do ponto de ruptura dentro do código, tipicamente um método ou nome de função como visto em uma pilha de chamadas.
+O contexto do ponto de interrupção dentro do código, normalmente um nome de método ou função como visto em uma pilha de chamadas.
 
 `bstrDataExpr`\
-A seqüência de dados que o usuário entra para definir o ponto de ruptura.
+A cadeia de dados que o usuário insere para definir o ponto de interrupção.
 
 `dwNumElements`\
-O número de elementos na seqüência de dados em que ocorre o ponto de ruptura.
+O número de elementos na cadeia de caracteres de dados em que ocorre o ponto de interrupção.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é membro da estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de um sindicato.
+Essa estrutura é um membro da estrutura de [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de uma União.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

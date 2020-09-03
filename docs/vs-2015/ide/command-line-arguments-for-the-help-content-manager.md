@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619683"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>Opções e argumentos
  A tabela a seguir define as opções e os argumentos que você pode usar a ferramenta de linha de comando para o Gerenciador de Conteúdo da Ajuda:
 
-|Alternar|Necessário?|Arguments|
+|Comutador|Necessário?|Argumentos|
 |------------|---------------|---------------|
 |/operation|Sim|-   **Instalar** – adiciona livros de fonte de instalação especificada ao repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI, ou ambos. Se você não especificar o argumento /sourceURI, o URI do Visual Studio padrão será usado como a origem da instalação. Se você não especificar o argumento /booklist, todos os livros em /sourceUri serão instalados.<br />-   **Desinstalar** – remove os livros especificado do repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI.  Se você especificar o argumento /sourceURI, todos os livros serão removidos e o argumento /booklist será ignorado.<br />-   **Mover** – move o repositório local para o caminho que você especificar. O caminho local padrão de armazenamento é definido pela configuração da ajuda em %PROGRAMDATA%<br />     Esta opção requer os argumentos /locationPath e /catalogName. Mensagens de erro serão registradas no log de eventos se você especificar um caminho que não é válido ou se não houver espaço livre na unidade para manter o conteúdo.<br />-   **Atualizar** – atualiza os tópicos alterados desde que foram instalados ou atualizados mais recentemente.<br />     Esta opção requer o argumento /sourceURI.|
 |/catalogName|Sim|Especifica o nome do catálogo de conteúdo.|
@@ -59,7 +59,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/locationpath|Não|Especifica a pasta padrão para o conteúdo da Ajuda local. Você deve usar essa opção para instalar ou mover apenas o conteúdo. Se você especificar esta opção, também deverá especificar a opção /silent.|
 |/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório %Temp%. **Importante:** para instalar o conteúdo silenciosamente, use arquivos .cab assinados digitalmente, não arquivos .mshc.|
 |/launchingApp|Não|Define o aplicativo e o contexto de catálogo quando o Visualizador da Ajuda é iniciado sem o aplicativo pai. Os argumentos para essa opção são *CompanyName*, *ProductName* e *VersionNumber* (por exemplo, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Isso é necessário para a instalação do conteúdo com o parâmetro /silent.|
-|/wait *Seconds*|Não|Interrompe operações de instalação, desinstalação e atualização. Se uma operação já está em andamento para o catálogo, o processo esperará até o número determinado de segundos para continuar. Use 0 para aguardar indefinidamente.|
+|/wait *Seconds*|Não|Interrompe operações de instalação, desinstalação e atualização. Se uma operação já está em andamento para o catálogo, o processo esperará até o número determinado de segundos para continuar. Use 0 para esperar indefinidamente.|
 |/?|Não|Lista as opções e suas descrições para a ferramenta de linha de comando do Gerenciador de Conteúdo da Ajuda.|
 
 ### <a name="exit-codes"></a>Códigos de saída
@@ -88,5 +88,5 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Guia do administrador do Help Viewer orientação](../ide/help-viewer-administrator-guide.md) do [Gerenciador de conteúdo de substituições](../ide/help-content-manager-overrides.md)

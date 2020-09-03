@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6adbdedf8a71319877c5527e00e0e7c5e73fa6b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288774"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
@@ -89,7 +89,7 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 
 5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tempo de processamento entre iterações de teste**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Configurar agentes de teste e controladores de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)

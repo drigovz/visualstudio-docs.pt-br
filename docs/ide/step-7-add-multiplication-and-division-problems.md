@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579785"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Etapa 7: Adicionar problemas de multiplicação e divisão
@@ -25,7 +25,7 @@ ms.locfileid: "77579785"
 Na sétima parte deste tutorial, você adicionará problemas de multiplicação e de divisão, mas primeiro pense em como fazer essa alteração. Considere a etapa inicial, que envolve armazenar valores.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para uma visão geral do tutorial, consulte [Tutorial 2: Crie um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, consulte [tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Para adicionar problemas de multiplicação e de divisão
 
@@ -46,7 +46,7 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
-     Você não pode entrar facilmente no sinal de multiplicação (×) e no sinal de divisão (⁄) usando o teclado, então C# e Visual Basic aceitam um asterisco (*) para multiplicação e uma marca de barra (/) para divisão.
+     Você não pode inserir facilmente o sinal de multiplicação (×) e o sinal de divisão (÷) usando o teclado, portanto, o C# e Visual Basic aceitam um asterisco (*) para multiplicação e uma barra (/) para divisão.
 
 4. Altere a parte a mais recente do manipulador de eventos de escala <xref:System.Windows.Forms.Timer.Tick> do timer de modo que preencha a resposta correta quando o tempo de execução se esgotar.
 
@@ -62,6 +62,6 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[passo 8: Personalize o quiz](../ide/step-8-customize-the-quiz.md)**.
+- Para ir para a próxima etapa do tutorial, consulte **[Step 8: Customize The Quiz](../ide/step-8-customize-the-quiz.md)**.
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).

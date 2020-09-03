@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ee4e307040f22078ed66f897eaa868ccfd259577
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586719"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
@@ -58,7 +58,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
  Para obter mais informações, consulte [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).
 
 ## <a name="menu-commands"></a>Comandos de menu
- Você pode definir comandos que os usuários podem invocar clicando com o botão direito do mouse em elementos em um diagrama UML. Os comandos podem atualizar o modelo e os diagramas ou executar outras [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]operações no.
+ Você pode definir comandos que os usuários podem invocar clicando com o botão direito do mouse em elementos em um diagrama UML. Os comandos podem atualizar o modelo e os diagramas ou executar outras operações no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
  A Fabrikam define os comandos de menu para automatizar as operações realizadas com frequência, como criar uma central de verificação e conectá-la a uma correia de transmissão selecionada ou reorganizar um diagrama de acordo com as regras de layout da empresa.
 
@@ -79,7 +79,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
  Para obter mais informações, consulte [como: responder a alterações em um modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
 
 ## <a name="model-bus"></a>Barramento de modelo
- O barramento de modelo permite que você acesse um diagrama ou modelo de outro diagrama [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ou de outra extensão. Entre outras coisas, isso permite que você espalhe informações em mais de um modelo, para que várias pessoas possam trabalhar no modelo combinado ao mesmo tempo.
+ O barramento de modelo permite que você acesse um diagrama ou modelo de outro diagrama ou de outra [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão. Entre outras coisas, isso permite que você espalhe informações em mais de um modelo, para que várias pessoas possam trabalhar no modelo combinado ao mesmo tempo.
 
  A Fabrikam usa elementos em diagramas de atividade para representar o equipamento de manuseio de bagagem. Cada item de equipamento pode ter uma especificação mais detalhada em outro diagrama, que pode estar em outro modelo. As restrições de validação no diagrama de fluxo bagagem podem recuperar as propriedades relevantes do equipamento dos outros diagramas. As referências aos outros diagramas são armazenadas em propriedades adicionais definidas em estereótipos.
 

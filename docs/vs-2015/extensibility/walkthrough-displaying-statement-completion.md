@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Exibindo o preenchimento de declaração | Microsoft Docs'
+title: 'Walkthrough: exibindo a conclusão da instrução | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,76 +11,76 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202008"
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Passo a passo: Exibindo o preenchimento de declaração
+# <a name="walkthrough-displaying-statement-completion"></a>Passo a passo: exibindo o preenchimento de declaração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode implementar o preenchimento de declaração baseadas em linguagem definindo os identificadores para o qual você deseja fornecer conclusão e, em seguida, disparar uma sessão de conclusão. Você pode definir o preenchimento de declaração no contexto de um serviço de linguagem, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e, em seguida, exibir preenchimento para apenas esse tipo de, ou você pode disparar o preenchimento para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este passo a passo mostra como disparar a conclusão de instrução para o tipo de conteúdo "texto sem formatação", que é o tipo de conteúdo de arquivos de texto. O tipo de conteúdo "texto" é o ancestral de todos os outros tipos de conteúdo, inclusive código e arquivos XML.  
+Você pode implementar a conclusão da instrução baseada em linguagem definindo os identificadores para os quais você deseja fornecer a conclusão e, em seguida, disparando uma sessão de conclusão. Você pode definir a conclusão da instrução no contexto de um serviço de idioma, definir sua própria extensão de nome de arquivo e tipo de conteúdo e, em seguida, exibir a conclusão apenas para esse tipo, ou pode disparar a conclusão para um tipo de conteúdo existente — por exemplo, "texto sem formatação". Este tutorial mostra como disparar a conclusão da instrução para o tipo de conteúdo "texto não criptografado", que é o tipo de conteúdo dos arquivos de texto. O tipo de conteúdo "text" é o ancestral de todos os outros tipos de conteúdo, incluindo arquivos de código e XML.  
   
- Preenchimento de declaração costuma ser disparado ao digitar determinados caracteres — por exemplo, digitando o início de um identificador, como "using". Ele normalmente é descartado, pressionando a tecla barra de espaço, Tab ou Enter para confirmar uma seleção. Você pode implementar os recursos do IntelliSense que são disparados, digitando um caractere, usando um manipulador de comandos para os pressionamentos de tecla (o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e um provedor de manipulador que implementa o <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Para criar a fonte de conclusão, o que é a lista de identificadores que participam de conclusão, implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface e um provedor de fonte de conclusão (o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Os provedores são partes do componente Managed Extensibility Framework (MEF). Eles são responsáveis pelas classes de origem e o controlador de exportação e importação de serviços e agentes — por exemplo, o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, que permite a navegação no buffer de texto e o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, que dispara a sessão de conclusão.  
+ A conclusão da instrução é normalmente disparada digitando-se determinados caracteres — por exemplo, digitando o início de um identificador, como "usando". Normalmente, ele é Descartado pressionando-se a barra de espaços, a guia ou a tecla Enter para confirmar uma seleção. Você pode implementar os recursos do IntelliSense que são disparados digitando um caractere usando um manipulador de comando para os pressionamentos de tecla (a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) e um provedor de manipulador que implementa a <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Para criar a origem de conclusão, que é a lista de identificadores que participam da conclusão, implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface e um provedor de origem de conclusão (a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Os provedores são partes de componente Managed Extensibility Framework (MEF). Eles são responsáveis por exportar as classes de origem e controlador e importar serviços e agentes — por exemplo, o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que permite a navegação no buffer de texto e o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , que dispara a sessão de conclusão.  
   
- Este passo a passo mostra como implementar o preenchimento de declaração para um conjunto de identificadores de embutido em código. Em implementações completas, o serviço de linguagem e a documentação da linguagem são responsáveis por fornecer esse conteúdo.  
+ Este tutorial mostra como implementar a conclusão de uma instrução para um conjunto embutido de identificadores. Em implementações completas, o serviço de idioma e a documentação do idioma são responsáveis por fornecer esse conteúdo.  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
+## <a name="creating-a-mef-project"></a>Criando um projeto do MEF  
   
-#### <a name="to-create-a-mef-project"></a>Para criar um projeto MEF  
+#### <a name="to-create-a-mef-project"></a>Para criar um projeto do MEF  
   
-1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `CompletionTest`.  
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `CompletionTest` .  
   
-2. Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Adicione um modelo de item de classificação do editor ao projeto. Para obter mais informações, consulte [criando uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3. Exclua os arquivos de classe existentes.  
   
-4. Adicione as seguintes referências ao projeto e certifique-se de que **CopyLocal** é definido como `false`:  
+4. Adicione as seguintes referências ao projeto e verifique se **CopyLocal** está definido como `false` :  
   
-     Microsoft.VisualStudio.Editor  
+     Microsoft. VisualStudio. editor  
   
-     Microsoft.VisualStudio.Language.Intellisense  
+     Microsoft. VisualStudio. Language. IntelliSense  
   
-     Microsoft.VisualStudio.OLE.Interop  
+     Microsoft. VisualStudio. OLE. Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+     Microsoft. VisualStudio. Shell. 14.0  
   
-     Microsoft.VisualStudio.Shell.Immutable.10.0  
+     Microsoft. VisualStudio. Shell. imutável. 10.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+     Microsoft. VisualStudio. Textmanager. Interop  
   
 ## <a name="implementing-the-completion-source"></a>Implementando a origem de conclusão  
- A fonte de conclusão é responsável por coletar o conjunto de identificadores e adicionando o conteúdo para a janela de conclusão quando um usuário digita um gatilho de conclusão, como as primeiras letras de um identificador. Neste exemplo, os identificadores e suas descrições são embutidos no código o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método. A maioria dos usos do mundo real, você usaria o analisador da sua linguagem para obter os tokens para preencher a lista de conclusão.  
+ A fonte de conclusão é responsável por coletar o conjunto de identificadores e adicionar o conteúdo à janela de conclusão quando um usuário digita um gatilho de conclusão, como as primeiras letras de um identificador. Neste exemplo, os identificadores e suas descrições são embutidos em código no <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método. Na maioria dos usos do mundo real, você usaria o analisador de seu idioma para obter os tokens para preencher a lista de conclusão.  
   
 #### <a name="to-implement-the-completion-source"></a>Para implementar a origem de conclusão  
   
-1. Adicione um arquivo de classe e denomine- `TestCompletionSource`.  
+1. Adicione um arquivo de classe e nomeie-o `TestCompletionSource` .  
   
-2. Adicione essas importações:  
+2. Adicione estas importações:  
   
      [!code-csharp[VSSDKCompletionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#1)]
      [!code-vb[VSSDKCompletionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#1)]  
   
-3. Modifique a declaração de classe de `TestCompletionSource` para que ele implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3. Modifique a declaração de classe para `TestCompletionSource` que ela implemente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> :  
   
      [!code-csharp[VSSDKCompletionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#2)]
      [!code-vb[VSSDKCompletionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#2)]  
   
-4. Adicionar campos privados para o provedor de código-fonte, o buffer de texto e uma lista de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objetos (que correspondem aos identificadores que participarão da sessão de conclusão):  
+4. Adicione campos particulares para o provedor de origem, o buffer de texto e uma lista de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objetos (que correspondem aos identificadores que participarão da sessão de conclusão):  
   
      [!code-csharp[VSSDKCompletionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#3)]
      [!code-vb[VSSDKCompletionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#3)]  
   
-5. Adicione um construtor que define o buffer e o provedor de origem. O `TestCompletionSourceProvider` classe é definida em etapas posteriores:  
+5. Adicione um construtor que define o provedor de origem e o buffer. A `TestCompletionSourceProvider` classe é definida em etapas posteriores:  
   
      [!code-csharp[VSSDKCompletionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#4)]
      [!code-vb[VSSDKCompletionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#4)]  
   
-6. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método adicionando um conjunto de conclusão que contém as conclusões que você deseja fornecer o contexto. Cada conjunto de conclusão contém um conjunto de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> conclusões e corresponde a uma guia da janela de conclusão. (Em projetos do Visual Basic, as guias da janela de conclusão são nomeadas **comuns** e **todos os**.) O método FindTokenSpanAtPosition é definido na próxima etapa.  
+6. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> método adicionando um conjunto de conclusão que contenha as conclusões que você deseja fornecer no contexto. Cada conjunto de conclusão contém um conjunto de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> conclusões e corresponde a uma guia da janela de conclusão. (Em projetos Visual Basic, as guias de janela de conclusão são nomeadas como **comuns** e **todas**.) O método FindTokenSpanAtPosition é definido na próxima etapa.  
   
      [!code-csharp[VSSDKCompletionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#5)]
      [!code-vb[VSSDKCompletionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#5)]  
@@ -90,92 +90,92 @@ Você pode implementar o preenchimento de declaração baseadas em linguagem def
      [!code-csharp[VSSDKCompletionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#6)]
      [!code-vb[VSSDKCompletionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#6)]  
   
-8. Implementar o `Dispose()` método:  
+8. Implemente o `Dispose()` método:  
   
      [!code-csharp[VSSDKCompletionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#7)]
      [!code-vb[VSSDKCompletionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#7)]  
   
-## <a name="implementing-the-completion-source-provider"></a>Implementando o provedor de fonte de conclusão  
- O provedor de fonte de conclusão é a parte do componente MEF que instancia a origem de conclusão.  
+## <a name="implementing-the-completion-source-provider"></a>Implementando o provedor de origem de conclusão  
+ O provedor de origem de conclusão é a parte do componente do MEF que instancia a origem de conclusão.  
   
 #### <a name="to-implement-the-completion-source-provider"></a>Para implementar o provedor de origem de conclusão  
   
-1. Adicione uma classe chamada `TestCompletionSourceProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Exportar esta classe com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sem formatação" e um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "conclusão de teste".  
+1. Adicione uma classe chamada `TestCompletionSourceProvider` que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> . Exporte essa classe com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "texto sem formatação" e uma <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "conclusão do teste".  
   
      [!code-csharp[VSSDKCompletionTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#8)]
      [!code-vb[VSSDKCompletionTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#8)]  
   
-2. Importar um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, que é usado para localizar a palavra atual na fonte de conclusão.  
+2. Importar um <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> , que é usado para localizar a palavra atual na fonte de conclusão.  
   
      [!code-csharp[VSSDKCompletionTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#9)]
      [!code-vb[VSSDKCompletionTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#9)]  
   
-3. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> método para instanciar a origem de conclusão.  
+3. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> método para instanciar a origem de conclusão.  
   
      [!code-csharp[VSSDKCompletionTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#10)]
      [!code-vb[VSSDKCompletionTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#10)]  
   
-## <a name="implementing-the-completion-command-handler-provider"></a>Implementando o provedor de manipulador de comando de conclusão  
- O provedor de manipulador de comando de conclusão é derivado de um <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, que escuta um evento de criação de exibição de texto e converte o modo de exibição de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>— que permite a adição do comando para a cadeia de comando do shell do Visual Studio — para um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Como essa classe é uma exportação de MEF, você pode usá-lo para importar os serviços que são necessários para o manipulador de comandos.  
+## <a name="implementing-the-completion-command-handler-provider"></a>Implementando o provedor do manipulador de comandos de conclusão  
+ O provedor do manipulador de comandos de conclusão é derivado de a <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> , que escuta um evento de criação de exibição de texto e converte a exibição de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> — que permite a adição do comando à cadeia de comandos do shell do Visual Studio — a um <xref:Microsoft.VisualStudio.Text.Editor.ITextView> . Como essa classe é uma exportação de MEF, você também pode usá-la para importar os serviços exigidos pelo próprio manipulador de comandos.  
   
-#### <a name="to-implement-the-completion-command-handler-provider"></a>Para implementar o provedor de manipulador de comando de conclusão  
+#### <a name="to-implement-the-completion-command-handler-provider"></a>Para implementar o provedor do manipulador de comandos de conclusão  
   
-1. Adicione um arquivo chamado `TestCompletionCommandHandler`.  
+1. Adicione um arquivo chamado `TestCompletionCommandHandler` .  
   
-2. Adicione o seguinte usando instruções:  
+2. Adicione estas instruções using:  
   
      [!code-csharp[VSSDKCompletionTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#11)]
      [!code-vb[VSSDKCompletionTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#11)]  
   
-3. Adicione uma classe chamada `TestCompletionHandlerProvider` que implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exportar esta classe com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de "manipulador de conclusão de token", uma <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sem formatação" e um <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
+3. Adicione uma classe chamada `TestCompletionHandlerProvider` que implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> . Exporte essa classe com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> "manipulador de conclusão de token", um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto sem formatação" e um <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable> .  
   
      [!code-csharp[VSSDKCompletionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#12)]
      [!code-vb[VSSDKCompletionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#12)]  
   
-4. Importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, que habilita a conversão de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para um <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, uma <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>e um <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que habilita o acesso a serviços padrão do Visual Studio.  
+4. Importe o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> , que permite a conversão de um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> para um <xref:Microsoft.VisualStudio.Text.Editor.ITextView> , um <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> e um <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> que habilita o acesso aos serviços padrão do Visual Studio.  
   
      [!code-csharp[VSSDKCompletionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#13)]
      [!code-vb[VSSDKCompletionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#13)]  
   
-5. Implementar o <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> método para instanciar o manipulador de comandos.  
+5. Implemente o <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> método para instanciar o manipulador de comandos.  
   
      [!code-csharp[VSSDKCompletionTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#14)]
      [!code-vb[VSSDKCompletionTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#14)]  
   
 ## <a name="implementing-the-completion-command-handler"></a>Implementando o manipulador de comandos de conclusão  
- Como preenchimento de declaração é disparado por pressionamentos de tecla, você deve implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface para receber e processar os pressionamentos de teclas que dispararem, confirmam e ignorar a sessão de conclusão.  
+ Como a conclusão da instrução é disparada por pressionamentos de teclas, você deve implementar a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface para receber e processar os pressionamentos de teclas que disparam, confirmam e descartam a sessão de conclusão.  
   
-#### <a name="to-implement-the-completion-command-handler"></a>Para implementar o manipulador de comandos de conclusão  
+#### <a name="to-implement-the-completion-command-handler"></a>Para implementar o manipulador de comando de conclusão  
   
-1. Adicione uma classe chamada `TestCompletionCommandHandler` que implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Adicione uma classe chamada `TestCompletionCommandHandler` que implemente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> :  
   
     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2. Adicionar campos privados para o próximo manipulador de comando (para o qual você passar o comando), a exibição de texto, o provedor do manipulador de comando (o que permite o acesso a vários serviços) e uma sessão de conclusão:  
+2. Adicione campos particulares para o próximo manipulador de comandos (para o qual você passa o comando), a exibição de texto, o provedor de manipulador de comandos (que permite o acesso a vários serviços) e uma sessão de conclusão:  
   
     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3. Adicione um construtor que define o modo de texto e os campos de provedor e adiciona o comando para a cadeia de comando:  
+3. Adicione um construtor que defina a exibição de texto e os campos de provedor e adicione o comando à cadeia de comandos:  
   
     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4. Implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método, passando o comando ao longo de:  
+4. Implemente o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método passando o comando ao longo de:  
   
     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5. Implementar o método de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . Quando esse método recebe um pressionamento de tecla, ele deve fazer uma dessas coisas:  
+5. Implementar o método de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> . Quando esse método recebe um pressionamento de tecla, ele deve executar uma destas ações:  
   
-   - Permitir que o caractere a ser gravada no buffer e, em seguida, disparar ou filtrar a conclusão. (Caracteres imprimíveis fazem isso.)  
+   - Permitir que o caractere seja gravado no buffer e, em seguida, disparar ou filtrar a conclusão. (Imprimir caracteres faça isso.)  
   
-   - Confirmar a conclusão, mas não permitem que o caractere a ser gravado no buffer. (Espaço em branco, Tab e Enter fazem isso quando uma sessão de conclusão é exibida.)  
+   - Confirme a conclusão, mas não permita que o caractere seja gravado no buffer. (Espaço em branco, guia e digite fazer isso quando uma sessão de conclusão for exibida.)  
   
-   - Permitir que o comando a ser passado para o próximo manipulador. (Todos os outros comandos.)  
+   - Permitir que o comando seja passado para o próximo manipulador. (Todos os outros comandos).  
   
-     Como esse método pode exibir a interface do usuário, chame <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> para certificar-se de que ele não é chamado em um contexto de automação:  
+     Como esse método pode exibir a interface do usuário, chame para certificar-se de <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> que ele não seja chamado em um contexto de automação:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
@@ -190,18 +190,18 @@ Você pode implementar o preenchimento de declaração baseadas em linguagem def
     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
-## <a name="building-and-testing-the-code"></a>Compilar e testar o código  
- Para testar esse código, compile a solução CompletionTest e executá-lo na instância experimental.  
+## <a name="building-and-testing-the-code"></a>Criando e testando o código  
+ Para testar esse código, crie a solução CompletionTest e execute-a na instância experimental.  
   
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Para compilar e testar a solução CompletionTest  
   
 1. Compile a solução.  
   
-2. Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é instanciada.  
+2. Quando você executa esse projeto no depurador, uma segunda instância do Visual Studio é instanciada.  
   
-3. Crie um arquivo de texto e digite algum texto que inclui a palavra "Adicionar".  
+3. Crie um arquivo de texto e digite algum texto que inclua a palavra "Adicionar".  
   
-4. Conforme você digita, primeiro, "a" e, em seguida, "d", uma lista que contém "adição" e "adaptação" deve ser exibida. Observe que a adição é selecionada. Quando você digitar outra "d", a lista deve conter somente "adição", que agora está selecionada. Você pode confirmar "adição", pressionando a tecla barra de espaço, Tab ou Enter ou descartar a lista digitando Esc ou qualquer outra chave.  
+4. Conforme você digita o primeiro "a" e, em seguida, "d", uma lista que contém "adição" e "adaptação" deve ser exibida. Observe que a adição está selecionada. Quando você digita outro "d", a lista deve conter apenas "adição", que agora é selecionada. Você pode confirmar "adição" pressionando a barra de espaços, a guia ou a tecla Enter, ou descartar a lista digitando ESC ou qualquer outra chave.  
   
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>Consulte Também  
+ [Passo a passo: Vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

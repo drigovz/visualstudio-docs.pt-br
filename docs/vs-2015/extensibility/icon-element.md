@@ -12,18 +12,18 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203987"
 ---
 # <a name="icon-element"></a>Elemento Icon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O atributo guid da marca do ícone é o guid de um bitmap definido.  O atributo id seleciona o slot na faixa de bitmap. Esse elemento é opcional.  Se esse elemento é omitido o valor de **guidOfficeIcon:msotcidNoIcon** será assumida.  
+O atributo GUID da marca de ícone é o GUID de um bitmap definido.  O atributo ID seleciona o slot na faixa de bitmap. Esse elemento é opcional.  Se esse elemento for omitido, o valor de **guidOfficeIcon: msotcidNoIcon** será implícito.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Icon guid="guidImages" id="bmpPic1" />  
@@ -36,14 +36,14 @@ O atributo guid da marca do ícone é o guid de um bitmap definido.  O atributo 
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. O guid de um bitmap definido.|  
-|id|Necessário. Seleciona o slot na faixa de bitmap.|  
+|guid|Obrigatórios. O GUID de um bitmap definido.|  
+|id|Obrigatórios. Seleciona o slot na faixa de bitmap.|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|nenhuma.|nenhuma.|  
+|Nenhum.|Nenhum.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -51,5 +51,5 @@ O atributo guid da marca do ícone é o guid de um bitmap definido.  O atributo 
 |-------------|-----------------|  
 |[Elemento Buttons](../extensibility/buttons-element.md)||  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

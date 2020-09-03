@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar o binário para iniciar | Microsoft Docs'
+title: Como especificar o binário para iniciar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,16 +16,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203434"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Como: Especificar o binário para iniciar
+# <a name="how-to-specify-the-binary-to-start"></a>Como especificar o início do binário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.  
+Para criar perfis de binários, como DLLs, você deve inserir informações na caixa de diálogo ** \<Target> páginas de propriedades** . Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.  
   
  **Requisitos**  
   
@@ -47,5 +47,5 @@ Para analisar binários, como DLLs, você deve inserir informações na caixa de
   
 7. Clique em **OK**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)

@@ -13,36 +13,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735397"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
-Esta interface informa ao Gerenciador de Depuração de Sessão (SDM) que uma quebra assíncrona foi concluída com sucesso.
+Essa interface diz ao SDM (Gerenciador de depuração de sessão) que uma interrupção assíncrona foi concluída com êxito.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O DE implementa essa interface para suportar pausas de usuário em um programa. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface (o SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface).
+ O DE implementa essa interface para dar suporte a quebras de usuário em um programa. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que essa interface (o SDM usa [QueryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface).
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O SDM chama [causebreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando o usuário solicitou que o programa que está sendo depurado seja pausado. Quando o programa foi pausado com `IDebugBreakEvent2` sucesso, o DE envia o evento. Este evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando anexada ao programa que está sendo depurado.
+ O SDM chama [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) quando o usuário solicitou a depuração do programa a ser pausado. Quando o programa foi pausado com êxito, o DE envia o `IDebugBreakEvent2` evento. Esse evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fornecida pelo SDM quando ele é anexado ao programa que está sendo depurado.
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, um usuário pode selecionar o comando **Break All** no menu **Debug** para sair de um programa que está executando um loop infinito. O SDM diz ao programa para parar chamando [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). O DE `IDebugBreakEvent2` envia quando o programa finalmente pára.
+ Por exemplo, um usuário pode selecionar o comando **quebrar tudo** no menu **depurar** para interromper um programa que está executando um loop infinito. O SDM informa o programa para parar chamando [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md). O DE envia `IDebugBreakEvent2` quando o programa finalmente para.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

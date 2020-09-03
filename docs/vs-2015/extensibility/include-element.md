@@ -1,5 +1,5 @@
 ---
-title: Incluir elemento | Microsoft Docs
+title: Elemento include | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1bdc56c9d0b488bdbe24a8534ab516cc0fc831df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203943"
 ---
 # <a name="include-element"></a>Elemento Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O elemento Include Especifica um arquivo que pode ser localizado nos fornecida incluir o caminho para inserção no arquivo atual.  Todos os símbolos e tipos definidos se tornará parte do resultado compilado.  
+O elemento include especifica um arquivo que pode estar localizado no caminho de inclusão fornecido para inserção no arquivo atual.  Todos os símbolos e tipos definidos se tornarão parte do resultado compilado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```csharp  
 <Include href="stdidcmd.h" />  
@@ -38,20 +38,20 @@ O elemento Include Especifica um arquivo que pode ser localizado nos fornecida i
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|{1&gt;href&lt;1}|Necessário. O caminho para o arquivo de cabeçalho:<br /><br /> href="stdidcmd.h"|  
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|href|Obrigatórios. O caminho para o arquivo de cabeçalho:<br /><br /> href = "stdidcmd. h"|  
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|nenhuma.|nenhuma.|  
+|Nenhum.|Nenhum.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos — ou seja, itens de menu, menus, barras de ferramentas e caixas de combinação — que um VSPackage fornece ao IDE.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos (ou seja, itens de menu, menus, barras de ferramentas e caixas de combinação) que um VSPackage fornece ao IDE.|  
   
 ## <a name="example"></a>Exemplo  
   
@@ -59,5 +59,5 @@ O elemento Include Especifica um arquivo que pode ser localizado nos fornecida i
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

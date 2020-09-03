@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630919"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
 Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 
- \<Projeto \<> \<Escolha \<> Quando> Escolha> ... \<Caso contrário,> \<escolha> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,7 +60,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Escolher](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `When`.|
+|[Escolha](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `When`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um elemento `When`.|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de definidos elementos [Property](../msbuild/property-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `PropertyGroup` em um elemento `When`.|
 
@@ -63,7 +68,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Escolha o elemento (MSBuild)](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
+|[Escolher elemento (MSBuild)](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
 
 ## <a name="remarks"></a>Comentários
 

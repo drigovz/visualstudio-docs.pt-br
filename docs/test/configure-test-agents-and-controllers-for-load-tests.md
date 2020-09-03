@@ -8,10 +8,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8fa44ffd75cd64f3ce745524ecdcf6ccb7b9a9b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288800"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Visão geral dos agentes de teste e controladores de teste para executar testes de carga
@@ -89,6 +89,6 @@ Para obter informações importantes sobre os requisitos de hardware e software 
 
 Depois de instalar um controlador de teste e um ou mais agentes, você poderá especificar se deseja usar uma execução remota com o controlador de teste na configuração de teste para os testes de carga. Além disso, você pode especificar os dados e os adaptadores de diagnóstico a serem usados com a função associada aos agentes na configuração de teste.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

@@ -12,10 +12,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e740860046ee9d18a137dbd513202e259e90bf79
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557980"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
@@ -27,9 +27,9 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
 - Inicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo de segurança.  
   
-     Para iniciar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo de segurança, em um prompt de comando, digite **devenv. exe/safemode**.  
+     Para iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo de segurança, em um prompt de comando, digite **devenv.exe/safemode**.  
   
-     Durante esse processo, nenhum VSPackages é carregado, exceto os VSPackages incluídos com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Durante esse processo, nenhum VSPackages é carregado, exceto os VSPackages incluídos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>Para solucionar problemas de um VSPackage que não é carregado  
   
@@ -37,7 +37,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
      Para obter mais informações, consulte [a instância experimental](../extensibility/the-experimental-instance.md).  
   
-2. Se a VSPackage for destinada a executar na raiz do registro experimental, verifique se você está executando a versão experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Se a VSPackage for destinada a executar na raiz do registro experimental, verifique se você está executando a versão experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      Para executar a versão experimental, digite o seguinte em uma janela de comando: **devenv/rootsuffix exp**.  
   
@@ -45,7 +45,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
      Para obter mais informações, consulte [registrando VSPackages](internals/registering-vspackages.md) e [Gerenciando VSPackages](../extensibility/managing-vspackages.md).  
   
-4. Abra a janela **saída** da instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que está falhando ao carregar o VSPackage. As informações sobre o motivo da falha do carregamento do VSPackage podem ser exibidas nessa janela.  
+4. Abra a janela de **saída** da instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que está falhando ao carregar o VSPackage. As informações sobre o motivo da falha do carregamento do VSPackage podem ser exibidas nessa janela.  
   
     > [!NOTE]
     > Se você estiver iniciando a versão experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE (ambiente de desenvolvimento integrado), inspecione a janela de **saída** de ambas as versões.  
@@ -62,13 +62,13 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Para solucionar problemas de um comando que não está visível ou que gera um erro quando você clica em um comando  
   
-1. Mescle os comandos de menu novos ou alterados e aqueles já existentes no IDE digitando o seguinte no prompt de comando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]: **devenv/Rootsuffix exp/setup**.  
+1. Mescle os comandos de menu novos ou alterados e aqueles já existentes no IDE digitando o seguinte no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prompt de comando: **devenv/rootsuffix exp/setup**.  
   
-2. Verifique se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode encontrar o UI. dll para seu VSPackage.  
+2. Certifique-se de que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o possa encontrar UI.dll para seu VSPackage.  
   
     1. Localize o CLSID do VSPackage na seção pacotes do registro:  
   
-         HKLM\Software\Microsoft\Visual Studio\\ *\<versão >* \Packages  
+         \Packages HKLM\Software\Microsoft\Visual Studio \\ *\<version>*  
   
     2. Verifique se o caminho fornecido pela subchave SatelliteDll está correto.  
   
@@ -78,7 +78,7 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
      Bons pontos de partida para depuração são o construtor e o método de inicialização. Você também pode definir pontos de interrupção na área que deseja avaliar, como um comando de menu. Para habilitar pontos de interrupção, você deve executar sob o depurador.  
   
-    1. No menu **Projeto**, clique em **Propriedades**.  
+    1. No menu **Projeto** , clique em **Propriedades**.  
   
     2. Na caixa de diálogo **páginas de propriedades** , selecione a guia **depurar** .  
   
@@ -111,17 +111,17 @@ Veja a seguir os problemas comuns que você pode ter com seu VSPackage e dicas p
   
 1. Para código gerenciado, verifique se os caminhos de referência estão corretos.  
   
-   1. No menu **Projeto**, clique em **Propriedades**.  
+   1. No menu **Projeto** , clique em **Propriedades**.  
   
    2. Selecione a guia **referências** na caixa de diálogo **páginas de propriedades** e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **pesquisador de objeto** para procurar os objetos referenciados.  
   
-        Para código gerenciado, você pode usar o [Fuslogvw. exe (Visualizador de log de associação de assembly)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para exibir os detalhes de cargas de assembly com falha.  
+        Para código gerenciado, você pode usar a [Fuslogvw.exe (Visualizador de log de associação de assembly)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para exibir os detalhes das cargas de assembly com falha.  
   
-2. Para código não gerenciado, localize o CLSID do VSPackage no nó do registro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID:  
+2. Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
   
-    HKLM\Software\Microsoft\Visual Studio\\ *\<versão >* \CLSID  
+    \CLSID HKLM\Software\Microsoft\Visual Studio \\ *\<version>*  
   
    Verifique se a entrada InprocServer32 tem o caminho correto da dll VSPackage.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [VSPackages](../extensibility/internals/vspackages.md)

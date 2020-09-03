@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558180"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558180"
 
 - Um caminho relativo ou absoluto no formato padrão do Windows, como *C:\deploy\myapplication* ou *\MyApplication*.
 
-- Um caminho UNC (Convenção de nomenclatura universal), como *\\\ServerName\MyApplication\\* .
+- Um caminho UNC (Convenção de nomenclatura universal), como * \\ \ServerName\MyApplication \\ *.
 
-- Uma URL de um site da Web, como `http://www.contoso.com/MyApplication`.
+- Uma URL de um site da Web, como `http://www.contoso.com/MyApplication` .
 
-  Por padrão, o local de publicação será *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório Publish \ se não tiver o IIS instalado.
+  Por padrão, o local de publicação é *http://localhost/projectname/* se você tiver o IIS instalado ou o diretório Publish \ se não tiver o IIS instalado.
 
 > [!NOTE]
-> Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório *publish\\* , independentemente de você ter o IIS instalado.
+> Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório de *publicação \\ * , independentemente de você ter o IIS instalado.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual é o caminho de instalação padrão nos computadores dos usuários finais?
  O caminho de instalação é opcional. Você pode definir o caminho de instalação mais tarde, se preferir. Para obter detalhes, consulte [como alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -61,7 +61,7 @@ ms.locfileid: "77558180"
 
  O Visual Studio não grava o CD ou DVD. Você deve copiar a saída para um CD ou DVD manualmente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Publicar página, desenvolvimento do &#40;Project Designer Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Publicar página, designer de projeto &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

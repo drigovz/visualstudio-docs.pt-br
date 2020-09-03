@@ -8,14 +8,14 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7727d53c84ab876fe6616c8ec5d438033216481e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905597"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: usar AsyncPackage para carregar VSPackages em segundo plano
-Carregar e inicializar um pacote do VS pode resultar em e/s de disco. Se essa e/s ocorrer no thread da interface do usuário, isso pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 introduziu a <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.
+Carregar e inicializar um pacote do VS pode resultar em e/s de disco. Se essa e/s ocorrer no thread da interface do usuário, isso pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 introduziu a  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.
 
 ## <a name="create-an-asyncpackage"></a>Criar um AsyncPackage
  Você pode começar criando um projeto VSIX (**arquivo**  >  **novo**projeto de  >  **Project**  >  VSIX de extensibilidade do**Visual C#**  >  **Extensibility**  >  **VSIX Project**) e adicionando um VSPackage ao projeto (clique com o botão direito do mouse no projeto e **adicione**  >  **novo item**  >  **C# item**  >  **extensibilidade**  >  **Visual Studio Package**). Você pode criar seus serviços e adicionar esses serviços ao seu pacote.

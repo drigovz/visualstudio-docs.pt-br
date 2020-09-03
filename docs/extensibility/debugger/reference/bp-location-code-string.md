@@ -15,16 +15,16 @@ ms.workload:
 dev_langs:
 - CPP
 ms.openlocfilehash: 0fc0d9a053faf69fde500333ab0faafa0e8d3448
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737989"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
-Usado para definir pontos de interrupção de código com base em uma string que o usuário pode inserir a partir do ambiente de desenvolvimento integrado (IDE).
+Usado para definir pontos de interrupção de código com base em uma cadeia de caracteres que o usuário pode inserir do ambiente de desenvolvimento integrado (IDE).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_LOCATION_CODE_STRING {
@@ -35,20 +35,20 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 ## <a name="members"></a>Membros
 `bstrContext`\
-O contexto do ponto de ruptura dentro do código, tipicamente um método ou nome de função como visto em uma pilha de chamadas.
+O contexto do ponto de interrupção dentro do código, normalmente um nome de método ou função como visto em uma pilha de chamadas.
 
 `bstrCodeExpr`\
-A seqüência que o usuário digita para descrever o ponto de quebra de código.
+A cadeia de caracteres que o usuário digita para descrever o ponto de interrupção de código.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é membro da estrutura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de um sindicato.
+Essa estrutura é um membro da estrutura de [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) como parte de uma União.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

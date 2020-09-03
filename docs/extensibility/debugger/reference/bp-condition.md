@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 88ed6b6468c5765c8f987c1f15f3e4e8ade9c8c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738095"
 ---
 # <a name="bp_condition"></a>BP_CONDITION
-Descreve as condições sob as quais um ponto de ruptura dispara.
+Descreve as condições sob as quais um ponto de interrupção é acionado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_CONDITION {
@@ -49,31 +49,31 @@ public struct BP_CONDITION {
 
 ## <a name="members"></a>Membros
 `pThread`\
-O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o segmento ativo para o aplicativo que contém o ponto de ruptura.
+O objeto [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) que representa o thread ativo para o aplicativo que contém o ponto de interrupção.
 
 `styleCondition`\
-Um valor da enumeração [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) descrevendo o estilo desta condição de ponto de ruptura.
+Um valor da enumeração de [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) que descreve o estilo dessa condição de ponto de interrupção.
 
 `bstrContext`\
-A localização do ponto de ruptura.
+O local do ponto de interrupção.
 
 `bstrCondition`\
-A condição de disparo do ponto de ruptura.
+A condição de acionamento do ponto de interrupção.
 
 `nRadix`\
-Radix para ser usado na avaliação de qualquer informação numérica.
+Base a ser usada na avaliação de qualquer informação numérica.
 
 ## <a name="remarks"></a>Comentários
-Esta estrutura é um membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Essa estrutura é um membro das estruturas [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
-Essa estrutura também é passada como parâmetro para os métodos [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [SetCondition.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
+Essa estrutura também é passada como um parâmetro para os métodos [setcondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) e [setcondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

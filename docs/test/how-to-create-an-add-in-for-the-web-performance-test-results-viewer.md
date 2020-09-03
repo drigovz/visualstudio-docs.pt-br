@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287825"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: criar um suplemento para o Visualizador de Resultados de Teste de desempenho da Web
@@ -324,7 +324,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 Para melhorar a segurança impedindo que suplementos mal-intencionados sejam ativados automaticamente, o Visual Studio fornece configurações em uma página de **Opções de Ferramentas** chamada **Segurança de Macros/Suplemento**.
 
-Além disso, essa página de opções permite que você especifique as pastas nas quais o Visual Studio procura *. *Arquivos de registro do suplemento. Isso melhora a segurança, permitindo que você limite os locais em que os arquivos de registro *.AddIn* podem ser lidos. Isso ajuda a impedir que arquivos *.AddIn* mal-intencionados sejam usados acidentalmente.
+Além disso, essa página de opções permite que você especifique as pastas nas quais o Visual Studio procura *. * Arquivos de registro do suplemento. Isso melhora a segurança, permitindo que você limite os locais em que os arquivos de registro *.AddIn* podem ser lidos. Isso ajuda a impedir que arquivos *.AddIn* mal-intencionados sejam usados acidentalmente.
 
 **Configurações de Segurança do Suplemento**
 
@@ -334,7 +334,7 @@ As configurações no Visual Studio relacionadas à segurança do suplemento sã
 
 - **Permitir carregamento de componentes de Suplemento de uma URL.** Não é selecionado por padrão. Quando forem selecionados, os suplementos poderão ser carregados de sites externos. Quando não selecionados, os suplementos remotos são proibidos de serem carregados no Visual Studio. Se um suplemento não puder ser carregado por algum motivo, ele não poderá ser carregado na Web. Essa configuração controla somente o carregamento da DLL do suplemento. Os arquivos de registro *.Addin* precisam estar sempre localizados no sistema local.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>

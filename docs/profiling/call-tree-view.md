@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773329"
 ---
 # <a name="call-tree-view"></a>Visualização Árvore de Chamadas
@@ -41,15 +41,15 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 
  Para obter mais informações sobre as definições de colunas na exibição de árvore de chamadas, confira o seguinte:
 
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-sampling-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-sampling-data.md)
 
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-instrumentation-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-instrumentation-data.md)
 
 - [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
-- [Modo de exibição de árvore de chamadas](../profiling/call-tree-view-contention-data.md)
+- [Modo de exibição de árvore de chamada](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>Confira também
 - [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
-- [Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
-- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
+- [Entendendo sobre os valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)
+- [Entendendo sobre os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

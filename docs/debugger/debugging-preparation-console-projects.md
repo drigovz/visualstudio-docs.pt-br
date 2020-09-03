@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916282"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: projetos deC#console C++(,, F#Visual Basic,)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: projetos de console (C#, C++, Visual Basic, F #)
 
 A preparação para depurar um projeto de console é semelhante à preparação para depurar um projeto do Windows, com algumas considerações adicionais, como definir argumentos de linha de comando e como pausar o aplicativo para depuração. Para obter mais informações, consulte [aplicativos do Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), e [preparação de depuração:  Aplicativos do Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:
 
-- C#, Visual Basic e F# aplicativo de console
+- Aplicativo de console do C#, Visual Basic e F #
 
 - Aplicativo do Console C++ (.NET)
 
@@ -39,9 +39,9 @@ A preparação para depurar um projeto de console é semelhante à preparação 
 
 ## <a name="set-command-line-arguments"></a>Definir argumentos de linha de comando
 
-Talvez seja preciso especificar argumentos de linha de comando para o aplicativo de console. Para obter mais informações, consulte [configurações de projeto C++ para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md), [configurações de projeto para uma Visual Basic configuração de depuração](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)ou [configurações de projeto para configurações de C# depuração](../debugger/project-settings-for-csharp-debug-configurations.md).
+Talvez seja preciso especificar argumentos de linha de comando para o aplicativo de console. Para obter mais informações, consulte [configurações de projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [configurações de projeto para uma Visual Basic configuração de depuração](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)ou [configurações de projeto para configurações de depuração em C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Como todas as propriedades do projeto, esses argumentos persistem entre sessões de depuração e entre sessões do Visual Studio. Em virtude disso, se o aplicativo de console for um que você tenha depurado anteriormente, lembre-se de que pode haver argumentos das sessões anteriores inseridos na caixa de diálogo **\<Projeto> Páginas de Propriedades**.
+Como todas as propriedades do projeto, esses argumentos persistem entre sessões de depuração e entre sessões do Visual Studio. Portanto, se o aplicativo de console for aquele que você depurau anteriormente, lembre-se de que pode haver argumentos de sessões anteriores inseridas na caixa de diálogo ** \<Project> páginas de propriedades** .
 
 ## <a name="start-the-application"></a>Iniciar o aplicativo
 
@@ -49,7 +49,7 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
 - Defina um ponto de interrupção em seu código e inicie seu aplicativo.
 
-- Inicie seu aplicativo usando **F10** (**debug** > **Step Over**) ou **F11** (**debug** > **Step Into**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
+- Inicie seu aplicativo usando **F10** (**depurar depuração**  >  **Step Over**) ou **F11** (**depurar**  >  **etapa em**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
 
 - No editor de código, clique com o botão direito do mouse em uma linha e selecione **executar até o cursor**.
 
@@ -57,10 +57,10 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
   Quando você inicia um aplicativo de console do Visual Studio, a janela **Console** às vezes aparece por trás da janela do Visual Studio. Se você tentar iniciar o aplicativo de console do Visual Studio e nada acontecer, tente mover a janela do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
-- [Preparar para depurar C++ projetos](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Preparar para depurar projetos C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+- [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 070106dc4db0f5200c1346bbbf8c0b653aa104e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619674"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
@@ -40,7 +40,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 #### <a name="parameters"></a>Parâmetros
 
-|**Argumento**|**Descrição**|
+|**Argument**|**Descrição**|
 |------------------|---------------------|
 |`CollectionName`|Especifica o nome da coleção de projetos de equipe. Se o nome tiver espaços, coloque o nome entre aspas, por exemplo, “Fabrikam Web Site”.|
 |`CollectionId`|Especifica o número de identificação da coleção de projeto de equipe.|
@@ -49,15 +49,15 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opção**|**Descrição**|
 |----------------|---------------------|
 |**/indexingStatus**|Mostra o status e a configuração do serviço de indexação de código.|
-|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: iniciar a indexação de todos os conjuntos de alterações.<br />-   **off**: interromper a indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: interromper a indexação de conjuntos de alterações criados anteriormente e iniciar apenas a indexação de novos conjuntos de alterações.|
-|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: adicionar o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: remover o arquivo que você deseja que seja indexado na lista de arquivos ignorados.<br />-   **removeAll**: limpar a lista de arquivos ignorados e iniciar a indexação de todos os arquivos.<br />-   **view**: ver todos os arquivos que não estão sendo indexados.|
+|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: iniciar a indexação de todos os conjuntos de alterações.<br />-   **off**: interromper a indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: interromper a indexação de conjuntos de alterações criados anteriormente e iniciar apenas a indexação de novos conjuntos de alterações.|
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: adicionar o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: remover o arquivo que você deseja que seja indexado na lista de arquivos ignorados.<br />-   **removeAll**: limpar a lista de arquivos ignorados e iniciar a indexação de todos os arquivos.<br />-   **view**: ver todos os arquivos que não estão sendo indexados.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Mostra o número especificado de arquivos que excede o tamanho especificado em KB. É possível usar a opção **/ignoreList** para excluir esses arquivos da indexação.|
 |**/reindexAll**|Limpe os dados indexados anteriormente e reinicie a indexação.|
 |**/destroyCodeIndex [/noPrompt]**|Exclua o índice de código e remota todos os dados indexados. Não requererá confirmação se você usar a opção **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ exibir &#124; <`SizeInGBs`> &#124; desabilitar ]|Controle quantos dados temporários que o CodeLens cria ao processar conjuntos de alterações. O limite padrão é 2 GB.<br /><br /> -   **exibir**: mostrar o limite do tamanho atual.<br />-   `SizeInGBs`: alterar o limite do tamanho.<br />-   **desabilitar**: remover o limite do tamanho.<br /><br /> Esse limite é verificado antes de CodeLens processa um novo conjunto de alterações. Se os dados temporários excederem esse limite, o CodeLens pausará o processamento de conjuntos de alterações passados, não novos. CodeLens reiniciará o processamento depois que os dados são limpos e ficar abaixo desse limite. Limpeza executa automaticamente uma vez por dia. Isso significa que os dados temporários podem exceder esse limite até que a limpeza começa a ser executado.|
 |**/indexHistoryPeriod**:[ exibir &#124; tudo &#124; <`NumberOfMonths`> ]|Controle por quanto tempo indexar o histórico de alterações. Isso afeta a quantidade de histórico que o CodeLens mostra a você. O limite padrão é 12 meses. Isso significa que o CodeLens mostra seu histórico de alterações apenas dos últimos 12 meses.<br /><br /> -   **exibir**: mostrar o número atual de meses.<br />-   **tudo**: indexar todo o histórico de alterações.<br />-   `NumberOfMonths`: Altere o número de meses usado para indexar o histórico de alterações.|
-|**/collectionName:** `CollectionName`|Especifica o nome da coleção de projetos de equipe na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionId**.|
-|**/collectionId:** `CollectionId`|Especifica o número de identificação da coleção de projetos de equipe na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionName**.|
+|**/CollectionName:**`CollectionName`|Especifica o nome da coleção de projetos de equipe na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionId**.|
+|**/collectionId:**`CollectionId`|Especifica o número de identificação da coleção de projetos de equipe na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionName**.|
 
 ## <a name="examples"></a>Exemplos
 
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Gerenciando a configuração do servidor com](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) [ferramentas de linha de comando TFSConfig para TFS](https://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

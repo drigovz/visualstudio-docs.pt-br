@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852225"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associando atalhos de teclado a itens de menu
@@ -52,16 +52,16 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
   
 1. Abra o arquivo. vsct para seu pacote.  
   
-2. Crie uma seção `<KeyBindings>` vazia após a `<Commands>` se ela ainda não estiver presente.  
+2. Crie uma `<KeyBindings>` seção vazia após a `<Commands>` se ela ainda não estiver presente.  
   
    > [!WARNING]
    > Para obter mais informações sobre associações de chave, consulte [KeyBinding](../extensibility/keybinding-element.md).  
   
-    Na seção `<KeyBindings>`, crie uma entrada de `<KeyBinding>`.  
+    Na `<KeyBindings>` seção, crie uma `<KeyBinding>` entrada.  
   
-    Defina os atributos `guid` e `id` para aqueles do comando que você deseja invocar.  
+    Defina os `guid`  `id` atributos e para aqueles do comando que você deseja invocar.  
   
-    Defina o atributo `mod1` como **Control**, **ALT**ou **Shift**.  
+    Defina o `mod1` atributo como **Control**, **ALT**ou **Shift**.  
   
     A seção keybindings deve ser semelhante a esta:  
   
@@ -73,18 +73,18 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
   
    ```  
   
-   Se o atalho de teclado exigir mais de duas chaves, defina os atributos `mod2` e `key2`.  
+   Se o atalho de teclado exigir mais de duas chaves, defina `mod2` os `key2` atributos e.  
   
    Na maioria das situações, **Shift** não deve ser usada sem um segundo modificador, pois pressioná-la já faz com que a maioria das chaves alfanuméricas digite uma letra maiúscula ou um símbolo.  
   
    Os códigos de chave virtual permitem que você acesse chaves especiais que não têm um caractere associado a elas, por exemplo, chaves de função e a tecla **Backspace** . Para obter mais informações, consulte [códigos-chave virtuais](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Para disponibilizar o comando no editor do Visual Studio, defina o atributo `editor` como `guidVSStd97`.  
+   Para disponibilizar o comando no editor do Visual Studio, defina o `editor` atributo como `guidVSStd97` .  
   
-   Para disponibilizar o comando somente em um editor personalizado, defina o atributo `editor` como o nome do editor personalizado que foi gerado pelo modelo de pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você criou o VSPackage que inclui o editor personalizado. Para localizar o valor do nome, procure na seção `<Symbols>` por um nó `<GuidSymbol>` cujo atributo `name` termina em "`editorfactory`". Este é o nome do editor personalizado.  
+   Para disponibilizar o comando somente em um editor personalizado, defina o `editor` atributo como o nome do editor personalizado que foi gerado pelo modelo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote quando você criou o VSPackage que inclui o editor personalizado. Para localizar o valor do nome, examine a `<Symbols>` seção para um `<GuidSymbol>` nó cujo `name` atributo termina em " `editorfactory` ." Este é o nome do editor personalizado.  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo associa o atalho de teclado CTRL + ALT + C a um comando chamado `cmdidMyCommand` em um pacote chamado `MyPackage`.  
+ Este exemplo associa o atalho de teclado CTRL + ALT + C a um comando chamado `cmdidMyCommand` em um pacote denominado `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,11 +101,11 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 ```  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo associa o atalho de teclado CTL + B a um comando chamado `cmdidBold` em um projeto chamado `TestEditor`. O comando está disponível somente no editor personalizado e não em outros editores.  
+ Este exemplo associa o atalho de teclado CTL + B a um comando chamado `cmdidBold` em um projeto chamado `TestEditor` . O comando está disponível somente no editor personalizado e não em outros editores.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)
+## <a name="see-also"></a>Consulte Também  
+ [Estendendo comandos e menus](../extensibility/extending-menus-and-commands.md)

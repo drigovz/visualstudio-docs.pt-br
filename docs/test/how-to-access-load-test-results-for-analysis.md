@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288527"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar os resultados do teste de carga para análise
@@ -52,6 +52,6 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
      Você pode gerenciar os outros aspectos de resultados do teste da carga na caixa de diálogo **Abrir e gerenciar resultados**, que inclui importar, exportar e remover resultados do teste de carga. Para saber mais, confira [Gerenciar resultados do teste de carga no repositório de resultados do teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

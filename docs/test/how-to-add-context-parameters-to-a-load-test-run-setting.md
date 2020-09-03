@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288410"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como adicionar parâmetros de contexto a uma configuração de execução de teste de carga
@@ -60,7 +60,7 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
      Um novo parâmetro de contexto é adicionado à pasta **Parâmetros de contexto** na pasta **Configurações de execução** na árvore de teste de carga.
 
-     -ou-
+     - ou -
 
      Se a configuração de execução já contém uma pasta **Parâmetros de contexto**, você pode clicar com o botão direito do mouse nela e escolher **Adicionar parâmetro de contexto**.
 
@@ -70,6 +70,6 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
 6. Selecione as configurações de execução que quer que estejam ativas. Abra o menu de atalho nas configurações de execução e selecione **Definir como ativo**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905931"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Tutorial – Crie sua primeira extensão: Olá, Mundo
@@ -160,7 +160,7 @@ Etapa 2. No menu **ferramentas** da **instância experimental**, clique em **diz
 
 ![resultado final](media/hello-world-final-result.png)
 
-Você deve ver a saída do seu novo comando personalizado, neste caso, a caixa de diálogo no centro da tela que fornece a **Olá, mundo!** mensagem.
+Você deve ver a saída do seu novo comando personalizado, neste caso, a caixa de diálogo no centro da tela que fornece a **Olá, mundo!** .
 
 ## <a name="next-steps"></a>Próximas etapas
 

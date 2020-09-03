@@ -1,5 +1,5 @@
 ---
-title: 'Aviso: Depuração de script saudoso | Microsoft Docs'
+title: 'Aviso: depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81648496"
 ---
 # <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
@@ -44,4 +44,4 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
      As novas configurações serão aplicadas.
 
 ## <a name="see-also"></a>Confira também
-- [Como: Anexar ao script](attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Como: anexar ao script](attach-to-running-processes-with-the-visual-studio-debugger.md)

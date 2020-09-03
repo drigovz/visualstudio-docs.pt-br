@@ -8,10 +8,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288163"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para usar uma versão anterior do .NET Framework como destino
@@ -104,7 +104,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 6. No **Gerenciador de Soluções**, escolha **Recarregar Projeto** no menu aberto ao clicar com o botão direito do mouse do novo projeto de teste do C++.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar soluções do SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

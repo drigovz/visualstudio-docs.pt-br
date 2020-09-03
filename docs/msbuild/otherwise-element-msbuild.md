@@ -19,17 +19,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633038"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
 Especifica o bloco de código a executar se e somente se as condições de todos os elementos `When` forem avaliadas como `false`.
 
- \<Projeto \<> \<Escolha \<> Quando> Escolha> ... \<Caso contrário,> \<escolha> ...
+ \<Project> \<Choose>
+ \<When>
+ \<Choose>
+... \<Otherwise>
+ \<Choose>
+...
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,7 +58,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Escolher](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|
+|[Escolha](../msbuild/choose-element-msbuild.md)|Elemento opcional.<br /><br /> Avalia elementos filhos para selecionar uma seção do código para executar. Pode ser que não haja nenhum ou mais de um elemento `Choose` em um elemento `Otherwise`.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de elementos [Item](../msbuild/item-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um elemento `Otherwise`.|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento opcional.<br /><br /> Contém um conjunto de definidos elementos [Property](../msbuild/property-element-msbuild.md) definidos pelo usuário. Pode ser que não haja nenhum ou mais de um elemento `PropertyGroup` em um elemento `Otherwise`.|
 
@@ -61,7 +66,7 @@ Especifica o bloco de código a executar se e somente se as condições de todos
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Escolher](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
+|[Escolha](../msbuild/choose-element-msbuild.md)|Avalia elementos filhos para selecionar uma seção do código para executar.|
 
 ## <a name="remarks"></a>Comentários
 

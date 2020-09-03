@@ -8,10 +8,10 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85939074"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Depurando com Visual Studio para Mac
@@ -103,7 +103,7 @@ Os produtos Xamarin são fornecidos com o código-fonte para bibliotecas de clas
 
 Como esse recurso consome mais memória durante a depuração, ele fica desligado por padrão.
 
-Para habilitar esse recurso, navegue até **Visual Studio para Mac preferências de > > depurador** e verifique se a opção "**etapa em código externo**" está **selecionada**, conforme ilustrado abaixo:
+Para habilitar esse recurso, navegue até  **Visual Studio para Mac preferências de > > depurador** e verifique se a opção "**etapa em código externo**" está **selecionada**, conforme ilustrado abaixo:
 
 ![Opção entrar em código externo](media/debugging-image8.png)
 

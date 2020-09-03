@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916795"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
@@ -26,11 +26,11 @@ Você pode fazer extensões para o designer que você usa para Editar definiçõ
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Para criar uma solução de extensão de Designer de DSL
 
-1. Crie um novo projeto usando o modelo de projeto de biblioteca de classes. Na caixa de diálogo **novo projeto** , clique **em C# Visual** e, na janela do meio, clique em **biblioteca de classes**.
+1. Crie um novo projeto usando o modelo de projeto de biblioteca de classes. Na caixa de diálogo **novo projeto** , clique em **Visual C#** e, em seguida, na janela do meio, clique em **biblioteca de classes**.
 
      Este projeto conterá o código de suas extensões.
 
-2. Crie um novo projeto usando o modelo de projeto VSIX. Na caixa de diálogo **novo projeto** , expanda **Visual C#** , clique em **extensibilidade**e, na janela do meio, selecione **projeto VSIX**.
+2. Crie um novo projeto usando o modelo de projeto VSIX. Na caixa de diálogo **novo projeto** , expanda **Visual C#**, clique em **extensibilidade**e, na janela do meio, selecione **projeto VSIX**.
 
      Selecione **Adicionar à solução**.
 
@@ -46,17 +46,17 @@ Você pode fazer extensões para o designer que você usa para Editar definiçõ
 
 7. No projeto de biblioteca de classes, adicione referências aos seguintes assemblies:
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
-     System.ComponentModel.Composition
+     System. ComponentModel. composição
 
      System.Drawing
 
@@ -67,24 +67,24 @@ Você pode fazer extensões para o designer que você usa para Editar definiçõ
 ## <a name="testing-and-deployment"></a>Teste e implantação
  Para testar qualquer uma das extensões neste tópico, compile e execute a solução. Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta. Nesta instância, abra uma solução DSL. Edite o diagrama DslDefinition. O comportamento da extensão pode ser visto.
 
- Para implantar as extensões no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e em outros computadores, siga estas etapas:
+ Para implantar as extensões no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e em outros computadores, siga estas etapas:
 
-1. Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix
+1. Localize o arquivo de instalação do VSIX, em seu projeto VSIX no bin \\ * \\ \* . vsix
 
 2. Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou no explorador de arquivos), clique duas vezes nele.
 
-    O Gerenciador de extensões de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberto para confirmar que a extensão foi instalada.
+    O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gerenciador de extensões é aberto para confirmar que a extensão foi instalada.
 
    Para desinstalar a extensão, siga estas etapas:
 
-3. no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no menu **ferramentas** , clique em **Gerenciador de extensões**.
+3. no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , no menu **ferramentas** , clique em **Gerenciador de extensões**.
 
 4. Selecione a extensão e a exclua.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Adicionando um comando de menu de atalho
  Para fazer com que um comando de menu de atalho apareça na superfície de Designer de DSL ou na janela do Gerenciador de DSL, escreva uma classe semelhante à seguinte.
 
- A classe deve implementar `ICommandExtension` e deve ter o atributo `DslDefinitionModelCommandExtension`.
+ A classe deve implementar `ICommandExtension` e deve ter o atributo `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

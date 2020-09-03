@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b2712210d4761edb90414e2a27beba74a3bacbf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288657"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
@@ -56,7 +56,7 @@ Use esse recurso sempre que precisar criar testes de unidade, mas especialmente 
 
 No entanto, esse recurso é igualmente aplicável quando um desenvolvedor começa escrevendo um pouco de código e o usa para inicializar testes de unidade. Dentro do fluxo de codificação, o desenvolvedor talvez queira criar rapidamente um stub de método de teste de unidade (com uma classe de teste adequada e um projeto de teste adequado) para uma determinada parte do código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como criar stubs de método de teste de unidade com "Criar Testes de Unidade"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Postagens no blog sobre testes de unidade](https://devblogs.microsoft.com/devops/?s=unit+testing)

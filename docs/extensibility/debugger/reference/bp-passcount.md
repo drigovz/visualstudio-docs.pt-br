@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737905"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
-Descreve a contagem e as condições sobre as quais um ponto de ruptura condicional é disparado.
+Descreve a contagem e as condições nas quais um ponto de interrupção condicional é acionado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _BP_PASSCOUNT {
@@ -43,22 +43,22 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>Membros
 `dwPassCount`\
-O número de vezes para passar sobre o ponto de ruptura antes de disparar.
+O número de vezes para passar o ponto de interrupção antes de acionar.
 
 `stylePassCount`\
-Um valor da enumeração [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) que especifica o estilo da contagem de passes de ponto de ruptura.
+Um valor da enumeração de [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) que especifica o estilo da contagem de aprovações de ponto de interrupção.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é um membro da estrutura [BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
+Essa estrutura é membro da estrutura de [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) .
 
-Essa estrutura também é passada como parâmetro para os métodos[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)
+Essa estrutura também é passada como um parâmetro para os métodos[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) e[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)
