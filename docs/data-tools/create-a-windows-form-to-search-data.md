@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586803"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
@@ -43,7 +43,7 @@ As tarefas ilustradas neste passo a passo incluem:
 
 - Inserindo parâmetros no formulário e executando a consulta parametrizada.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -63,7 +63,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="create-the-windows-forms-application"></a>Criar o aplicativo Windows Forms
 
-Crie um novo projeto de **aplicativo Windows Forms** para C# o ou o Visual Basic. Nomeie o projeto **WindowsSearchForm**.
+Crie um novo projeto de **aplicativo Windows Forms** para C# ou Visual Basic. Nomeie o projeto **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
@@ -75,7 +75,7 @@ Esta etapa cria uma fonte de dados por meio de um banco de dados usando o assist
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **escolher sua conexão de dados** , siga um destes procedimentos:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -91,7 +91,7 @@ Esta etapa cria uma fonte de dados por meio de um banco de dados usando o assist
 
      O **NorthwindDataSet** é adicionado ao seu projeto e a tabela **Clientes** aparece na janela **Fontes de Dados**.
 
-## <a name="create-the-form"></a>Criar o formulário
+## <a name="create-the-form"></a> Criar o formulário
 
 Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário:
 
@@ -121,7 +121,7 @@ Você pode adicionar uma cláusula WHERE à consulta original usando a caixa de 
      ```
 
     > [!NOTE]
-    > As fontes de dados Access e OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE ficaria assim: `WHERE City = ?`.
+    > As fontes de dados Access e OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE ficaria assim: `WHERE City = ?` .
 
 4. Clique em **OK** para fechar a caixa de diálogo **Construtor de Critérios de Pesquisa**.
 
@@ -137,7 +137,7 @@ Executar o aplicativo abre o formulário e o torna pronto para pegar o parâmetr
 
      A grade de dados é populada com clientes que atendem aos critérios. Neste exemplo, a grade de dados exibe os clientes que têm o valor **Londres** na coluna **Cidade**.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez queira realizar após criar um formulário parametrizado. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
@@ -145,6 +145,6 @@ Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez
 
 - Editando o conjunto de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

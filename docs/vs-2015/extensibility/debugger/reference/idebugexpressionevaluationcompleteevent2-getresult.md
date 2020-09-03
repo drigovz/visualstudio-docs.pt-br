@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetResult | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73227762270fe4e22e6edc2643ede2d1e7a9bd70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148726"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
@@ -40,14 +40,14 @@ int GetResult( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppResult`  
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o resultado da avaliação da expressão.  
+ fora Retorna um objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) que representa o resultado da avaliação da expressão.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Retornado [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto contém o valor da expressão avaliada. Observe que esse valor pode ser um valor complexo como uma matriz, mas o resultado final deve ser um numérico ou valor que é exibido para o usuário de cadeia de caracteres.  
+ O objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) retornado contém o valor da expressão avaliada. Observe que esse valor pode ser um valor complexo, como uma matriz, mas o resultado final deve ser um valor numérico ou de cadeia de caracteres que é exibido para o usuário.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

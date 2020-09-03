@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Associação de dados complexos em um projeto de nível de documento'
+title: 'Walkthrough: ligação de dados complexa em um projeto de nível de documento'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,214 +16,214 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67692350"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados complexos em um projeto de nível de documento
-  Este passo a passo demonstra as Noções básicas de vinculação de dados complexos em um projeto de nível de documento. Você pode vincular várias células em uma planilha do Microsoft Office Excel para os campos no banco de dados Northwind do SQL Server.
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: ligação de dados complexa em um projeto de nível de documento
+  Este tutorial demonstra os conceitos básicos da ligação de dados complexa em um projeto de nível de documento. Você pode associar várias células em uma Microsoft Office planilha do Excel a campos no banco de dados Northwind SQL Server.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
-- Adicionando uma fonte de dados ao seu projeto de pasta de trabalho.
+- Adicionar uma fonte de dados ao projeto de pasta de trabalho.
 
-- Adicionando controles ligados a dados a uma planilha.
+- Adicionar controles vinculados a dados a uma planilha.
 
-- Salvando alterações de dados no banco de dados.
+- Salvar alterações de dados de volta no banco de dado.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Acesso a um servidor com o banco de dados de exemplo Northwind do SQL Server.
+- Acesso a um servidor com o banco de dados Northwind SQL Server exemplo.
 
-- Permissões para ler e gravar no banco de dados do SQL Server.
+- Permissões para ler e gravar no banco de dados de SQL Server.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
  A primeira etapa é criar um projeto de pasta de trabalho do Excel.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1. Criar um projeto de pasta de trabalho do Excel com o nome **vinculação de dados complexos de meu**. No assistente, selecione **criar um novo documento**.
+1. Crie um projeto de pasta de trabalho do Excel com o nome **minha vinculação de dados complexa**. No assistente, selecione **criar um novo documento**.
 
-     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **minha vinculação de dados complexos** projeto ao **Gerenciador de soluções**.
+     O Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o projeto de **ligação de dados complexo** a **Gerenciador de soluções**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
- Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao seu projeto.
+ Use a janela **Data Sources** para adicionar um conjunto de dados tipado ao seu projeto.
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
+1. Se a janela **fontes de dados** não estiver visível, exiba-a por, na barra de menus, escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
 
-2. Escolher **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+2. Escolha **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-3. Selecione **banco de dados** e, em seguida, clique em **próxima**.
+3. Selecione **banco de dados** e clique em **Avançar**.
 
-4. Selecione uma conexão de dados para o banco de dados do SQL Server de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.
+4. Selecione uma conexão de dados para o exemplo da Northwind SQL Server Database ou adicione uma nova conexão usando o botão **nova conexão** .
 
-5. Depois que uma conexão foi selecionado ou criado, clique em **próxima**.
+5. Depois que uma conexão for selecionada ou criada, clique em **Avançar**.
 
-6. Desmarque a opção para salvar a conexão se ela está selecionada e clique **próxima**.
+6. Desmarque a opção para salvar a conexão, se ela estiver selecionada, e clique em **Avançar**.
 
-7. Expanda o **tabelas** nó na **objetos de banco de dados** janela.
+7. Expanda o nó **tabelas** na janela **objetos de banco de dados** .
 
-8. Marque a caixa de seleção ao lado de **funcionários** tabela.
+8. Marque a caixa de seleção ao lado da tabela **funcionários** .
 
-9. Clique em **Finalizar**.
+9. Clique em **Concluir**.
 
-   O assistente adiciona as **funcionários** de tabela para o **fontes de dados** janela. Ele também adiciona um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.
+   O assistente adiciona a tabela **Employees** à janela **fontes de dados** . Ele também adiciona um conjunto de um dataset tipado ao seu projeto que está visível no **Gerenciador de soluções**.
 
 ## <a name="add-controls-to-the-worksheet"></a>Adicionar controles à planilha
- Uma planilha exibirá os **funcionários** tabela quando a pasta de trabalho é aberta. Os usuários poderão fazer alterações aos dados e, em seguida, salvar essas alterações no banco de dados, clicando em um botão.
+ Uma planilha exibirá a tabela **Employees** quando a pasta de trabalho for aberta. Os usuários poderão fazer alterações nos dados e, em seguida, salvar essas alterações de volta no banco de dado clicando em um botão.
 
- Para associar a planilha para a tabela automaticamente, você pode adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle na planilha do **fontes de dados** janela. Para dar ao usuário a opção de salvar as alterações, adicione uma <xref:System.Windows.Forms.Button> controlar do **caixa de ferramentas**.
+ Para associar a planilha à tabela automaticamente, você pode adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle à planilha na janela **Data Sources** . Para dar ao usuário a opção de salvar as alterações, adicione um <xref:System.Windows.Forms.Button> controle da **caixa de ferramentas**.
 
 #### <a name="to-add-a-list-object"></a>Para adicionar um objeto de lista
 
-1. Verifique se que o **Meus Binding.xlsx dados complexos** pasta de trabalho é aberta no designer do Visual Studio, com **Sheet1** exibido.
+1. Verifique se a pasta de trabalho **meus dados complexos Binding.xlsx** está aberta no designer do Visual Studio, com **Sheet1** exibida.
 
-2. Abra o **fontes de dados** janela e selecione o **funcionários** nó.
+2. Abra a janela **fontes de dados** e selecione o nó **funcionários** .
 
-3. Clique na seta suspensa que aparece.
+3. Clique na seta suspensa exibida.
 
 4. Selecione **ListObject** na lista suspensa.
 
-5. Arraste o **funcionários** tabela para a célula **A6**.
+5. Arraste a tabela **Employees** para a célula **a6**.
 
-     Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `EmployeesListObject` é criado na célula **A6**. Ao mesmo tempo, uma <xref:System.Windows.Forms.BindingSource> nomeado `EmployeesBindingSource`, um adaptador de tabela e um <xref:System.Data.DataSet> instância são adicionados ao projeto. O controle é associado à <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado a <xref:System.Data.DataSet> instância.
+     Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `EmployeesListObject` é criado na célula **a6**. Ao mesmo tempo, um <xref:System.Windows.Forms.BindingSource> nome `EmployeesBindingSource` , um adaptador de tabela e uma <xref:System.Data.DataSet> instância são adicionados ao projeto. O controle está associado ao <xref:System.Windows.Forms.BindingSource> , que, por sua vez, está associado à <xref:System.Data.DataSet> instância.
 
 ### <a name="to-add-a-button"></a>Para adicionar um botão
 
-1. Do **controles comuns** guia da **caixa de ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **A4** da planilha.
+1. Na guia **controles comuns** da caixa de **ferramentas**, adicione um <xref:System.Windows.Forms.Button> controle à célula **a4** da planilha.
 
-   A próxima etapa é adicionar texto ao botão quando a planilha é aberta.
+   A próxima etapa é adicionar texto ao botão quando a planilha for aberta.
 
 ## <a name="initialize-the-control"></a>Inicializar o controle
- Adicionar texto ao botão no <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> manipulador de eventos.
+ Adicione texto ao botão no manipulador de <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> eventos.
 
-### <a name="to-initialize-the-control"></a>Ao inicializar o controle
+### <a name="to-initialize-the-control"></a>Para inicializar o controle
 
-1. Na **Gerenciador de soluções**, clique com botão direito **Sheet1.vb** ou **Sheet1.cs**e, em seguida, clique em **Exibir código** no menu de atalho.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **Plan1. vb** ou **Sheet1.cs**e clique em **Exibir código** no menu de atalho.
 
-2. Adicione o seguinte código para o `Sheet1_Startup` método para definir o texto para o b`utton`.
+2. Adicione o código a seguir ao `Sheet1_Startup` método para definir o texto para o b `utton` .
 
     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
 
-3. Apenas para c#, adicione um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos para o `Sheet1_Startup` método.
+3. Somente para C#, adicione um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> evento ao `Sheet1_Startup` método.
 
     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
 
-   Agora adicione código para manipular o <xref:System.Windows.Forms.Control.Click> evento do botão.
+   Agora, adicione o código para manipular o <xref:System.Windows.Forms.Control.Click> evento do botão.
 
 ## <a name="save-changes-to-the-database"></a>Salvar alterações no banco de dados
- Todas as alterações foram feitas para os dados existem somente no conjunto de dados local até que eles são salvos no banco de dados explicitamente.
+ Todas as alterações feitas nos dados existem somente no conjunto de dados local até que sejam explicitamente salvas no banco de dado.
 
 ### <a name="to-save-changes-to-the-database"></a>Para salvar as alterações no banco de dados
 
-1. Adicionar um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos do `button`e adicione o seguinte código para confirmar todas as alterações que foram feitas no conjunto de dados no banco de dados.
+1. Adicione um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> evento do `button` e adicione o código a seguir para confirmar todas as alterações que foram feitas no conjunto de dados de volta para o Database.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
 ## <a name="test-the-application"></a>Testar o aplicativo
- Agora você pode testar sua pasta de trabalho para verificar se os dados aparecem conforme o esperado, e que você pode manipular os dados no objeto da lista.
+ Agora você pode testar sua pasta de trabalho para verificar se os dados aparecem como esperado e se você pode manipular os dados no objeto de lista.
 
 ### <a name="to-test-the-data-binding"></a>Para testar a associação de dados
 
 - Pressione **F5**.
 
-     Verifique se que, quando a pasta de trabalho é aberto, o objeto de lista é preenchido com dados do **funcionários** tabela.
+     Verifique se a pasta de trabalho é aberta, se o objeto de lista está preenchido com os dados da tabela **Employees** .
 
 ### <a name="to-modify-data"></a>Para modificar dados
 
 1. Clique na célula **B7**, que deve conter o nome **Davolio**.
 
-2. Digite o nome **Anderson**, em seguida, pressione **Enter**.
+2. Digite o nome **Anderson**e pressione **Enter**.
 
 ### <a name="to-modify-a-column-header"></a>Para modificar um cabeçalho de coluna
 
 1. Clique na célula que contém o cabeçalho de coluna **LastName**.
 
-2. Tipo de **Sobrenome**, incluindo um espaço entre as duas palavras e, em seguida, pressione **Enter**.
+2. Digite **Last Name**, incluindo um espaço entre as duas palavras, e pressione **Enter**.
 
 ### <a name="to-save-data"></a>Para salvar dados
 
 1. Clique em **salvar** na planilha.
 
-2. Saia do Excel. Clique em **não** quando for solicitado a salvar as alterações feitas por você.
+2. Saia do Excel. Clique em **não** quando for solicitado a salvar as alterações feitas.
 
 3. Pressione **F5** para executar o projeto novamente.
 
-     O objeto de lista é preenchido com os dados do **funcionários** tabela.
+     O objeto List é preenchido com dados da tabela **Employees** .
 
-4. Observe que o nome na célula **B7** ainda **Anderson**, quais são os dados de alterar o que você fez e salvo no banco de dados. O cabeçalho da coluna **LastName** foi alterado para seu formato original sem espaço, porque o cabeçalho de coluna não está associado ao banco de dados e você não salvou as alterações feitas à planilha.
+4. Observe que o nome na célula **B7** ainda é **Anderson**, que é a alteração de dados que você criou e salvou de volta no banco de dados. O cabeçalho de coluna **LastName** mudou de volta para seu formulário original sem espaço, porque o cabeçalho da coluna não está associado ao banco de dados e você não salvou as alterações feitas na planilha.
 
 ### <a name="to-add-new-rows"></a>Para adicionar novas linhas
 
 1. Selecione uma célula dentro do objeto de lista.
 
-    Uma nova linha aparece na parte inferior da lista, com um asterisco ( **\*** ) na primeira célula da nova linha.
+    Uma nova linha é exibida na parte inferior da lista, com um asterisco ( **\*** ) na primeira célula da nova linha.
 
 2. Adicione as seguintes informações na linha vazia.
 
-   |EmployeeID|LastName|FirstName|Título|
+   |IDFuncionário|LastName|Nome|Título|
    |----------------|--------------|---------------|-----------|
-   |10|Shu|Shu|Gerente de vendas|
+   |10|Ito|Shu|Gerente de Vendas|
 
 ### <a name="to-delete-rows"></a>Para excluir linhas
 
-- O número de 16 (linha 16) no lado esquerdo da planilha com o botão direito e, em seguida, clique em **excluir**.
+- Clique com o botão direito do mouse no número 16 (linha 16) no lado esquerdo da planilha e clique em **excluir**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Para classificar as linhas na lista
 
 1. Selecione uma célula dentro da lista.
 
-     Botões de seta aparecerão em cada cabeçalho de coluna.
+     Botões de seta aparecem em cada cabeçalho de coluna.
 
-2. Clique no botão de seta para a **Sobrenome** cabeçalho de coluna.
+2. Clique no botão de seta no cabeçalho da coluna **Last Name** .
 
 3. Clique em **classificar em ordem crescente**.
 
-     As linhas são classificadas em ordem alfabética por sobrenome.
+     As linhas são classificadas alfabeticamente pelos últimos nomes.
 
 ### <a name="to-filter-information"></a>Para filtrar informações
 
 1. Selecione uma célula dentro da lista.
 
-2. Clique no botão de seta para a **título** cabeçalho de coluna.
+2. Clique no botão de seta no cabeçalho da coluna **título** .
 
 3. Clique em **representante de vendas**.
 
-     A lista mostra somente as linhas que têm **representante de vendas** na **título** coluna.
+     A lista mostra apenas as linhas que têm **representante de vendas** na coluna **título** .
 
-4. Clique no botão de seta para a **título** cabeçalho da coluna novamente.
+4. Clique no botão de seta no cabeçalho da coluna **título** novamente.
 
-5. Clique em **(All)** .
+5. Clique em **(tudo)**.
 
-     A filtragem é removida e todas as linhas são exibidos.
+     A filtragem é removida e todas as linhas são exibidas.
 
 ## <a name="next-steps"></a>Próximas etapas
- Este passo a passo mostra as Noções básicas de vinculação de uma tabela em um banco de dados para um objeto de lista. Estas são algumas tarefas que podem vir a seguir:
+ Este tutorial mostra as noções básicas de associação de uma tabela em um banco de dados a um objeto de lista. Estas são algumas tarefas que podem vir a seguir:
 
-- Armazenar em cache os dados para que possa ser usado offline. Para obter mais informações, confira [Como: Armazenar em cache dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Armazene os dados em cache para que eles possam ser usados offline. Para obter mais informações, consulte [como armazenar em cache os dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
 - Implante a solução. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-- Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, confira [Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, consulte [Walkthrough: criar uma relação de detalhes mestre usando um conjunto de dados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
-- [Passo a passo: Associação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [Walkthrough: vinculação de dados simples em um projeto de nível de documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

@@ -1,22 +1,22 @@
 ---
 title: Configurações de EditorConfig
-ms.date: 08/01/2018
+ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 30c2ce8a10a6a1001f8fb7c21ba7db7db7243fe4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85770748"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402251"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
-Você pode adicionar um arquivo [EditorConfig](https://editorconfig.org/) ao seu projeto ou codebase para impor estilos de codificação consistentes para todos que trabalham na base de código. As configurações de EditorConfig têm precedência sobre as configurações do editor de texto global do Visual Studio. Isso significa que é possível personalizar cada base de código para usar as configurações de editor de texto específicas para esse projeto. Você ainda pode definir suas preferências pessoais editor na caixa de diálogo **Opções** do Visual Studio. Essas configurações se aplicam sempre que você estiver trabalhando em uma base de código sem um arquivo *. editorconfig* ou quando o arquivo *. editorconfig* não substituir uma configuração específica. Um exemplo de como essa preferência é o estilo de recuo&mdash;tabulações ou espaços.
+Você pode adicionar um arquivo EditorConfig ao seu projeto ou codebase para impor estilos de codificação consistentes para todos que trabalham na base de código. As configurações de EditorConfig têm precedência sobre as configurações do editor de texto global do Visual Studio. Isso significa que é possível personalizar cada base de código para usar as configurações de editor de texto específicas para esse projeto. Você ainda pode definir suas preferências pessoais editor na caixa de diálogo **Opções** do Visual Studio. Essas configurações se aplicam sempre que você estiver trabalhando em uma base de código sem um arquivo *. editorconfig* ou quando o arquivo *. editorconfig* não substituir uma configuração específica. Um exemplo de como essa preferência é o estilo de recuo&mdash;tabulações ou espaços.
 
 As configurações do EditorConfig são compatíveis com vários editores de códigos e IDEs, incluindo o Visual Studio. Ele é um componente portátil que acompanha o seu código e pode impor estilos de codificação mesmo fora do Visual Studio.
 

@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Localize uma lista dos downloads de software incluídos com a sua assinatura do Visual Studio.
 ms.openlocfilehash: 767d53c38aeaa9a9717ecacffcc08813950c008a
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250700"
 ---
 # <a name="what-software-is-available-for-download"></a>Qual software está disponível para download?
@@ -30,7 +30,7 @@ Para localizar produtos rapidamente, use as funções de "pesquisa" na parte sup
 
 Você também pode baixar uma planilha do Excel que contém uma lista extensa de [títulos de software disponíveis](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de assinatura.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

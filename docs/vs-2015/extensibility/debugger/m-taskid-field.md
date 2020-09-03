@@ -1,5 +1,5 @@
 ---
-title: Campo m_taskId | Microsoft Docs
+title: Campo de m_taskId | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f2b216b937eccd102f4a9d80b58bbb858845e63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149038"
 ---
-# <a name="mtaskid-field"></a>Campo m_taskId
+# <a name="m_taskid-field"></a>Campo m_taskId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O campo de suporte para o <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propriedade.  
+O campo de apoio para a <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> propriedade.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** mscorlib (em mscorlib. dll)  
+ **Assembly:** mscorlib (no mscorlib.dll)  
   
- Porque você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em comum Intermediate Language (CIL).  
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,5 +36,5 @@ O campo de suporte para o <xref:System.Threading.Tasks.Task.Id%2A?displayPropert
   
 ## <a name="remarks"></a>Comentários  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Classe de tarefa](../../extensibility/debugger/task-class-internal-members.md)

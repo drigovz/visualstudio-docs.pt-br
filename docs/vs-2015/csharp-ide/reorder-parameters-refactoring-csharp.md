@@ -1,5 +1,5 @@
 ---
-title: Reordenar refatoração deC#parâmetros () | Microsoft Docs
+title: Reordenação de parâmetros de refatoração (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,18 +17,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e39564fb108b63859620e2c4a650608cdf1e7e82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673139"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refatoração Reordenar Parâmetros (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` é uma operação C# de refatoração visual que fornece uma maneira fácil de alterar a ordem dos parâmetros para métodos, indexadores e delegados. `Reorder Parameters` altera a declaração e, em qualquer local em que o membro é chamado, os parâmetros são reorganizados para refletir o novo pedido.
+`Reorder Parameters` é uma operação de refatoração do Visual C# que fornece uma maneira fácil de alterar a ordem dos parâmetros para métodos, indexadores e delegados. `Reorder Parameters` altera a declaração e em qualquer local em que o membro é chamado, os parâmetros são reorganizados para refletir o novo pedido.
 
- Para executar a operação `Reorder Parameters`, coloque o cursor sobre ou ao lado de um método, indexador ou delegado. Quando o cursor estiver na posição, invoque a operação de `Reorder Parameters` pressionando o atalho de teclado ou clicando no comando no menu de atalho.
+ Para executar a `Reorder Parameters` operação, coloque o cursor sobre ou ao lado de um método, indexador ou delegado. Quando o cursor estiver na posição, invoque a `Reorder Parameters` operação pressionando o atalho de teclado ou clicando no comando no menu de atalho.
 
 > [!NOTE]
 > Não é possível reordenar o primeiro parâmetro em um método de extensão.
@@ -56,13 +56,13 @@ ms.locfileid: "72673139"
     }
     ```
 
-2. Coloque o cursor em `MethodB`, na declaração do método ou na chamada do método.
+2. Coloque o cursor sobre `MethodB` , na declaração do método ou na chamada do método.
 
 3. No menu **refatorar** , clique em **Reordenar parâmetros**.
 
      A caixa de diálogo **Reordenar parâmetros** é exibida.
 
-4. Na caixa de diálogo **Reordenar parâmetros** , selecione `int i` na lista **parâmetros** e clique no botão para baixo.
+4. Na caixa de diálogo **Reordenar parâmetros** , selecione `int i` na lista **parâmetros** e, em seguida, clique no botão para baixo.
 
      Como alternativa, você pode arrastar `int i` depois `bool b` na lista de **parâmetros** .
 
@@ -77,5 +77,5 @@ ms.locfileid: "72673139"
 ## <a name="remarks"></a>Comentários
  Você pode reordenar os parâmetros de uma declaração de método ou de uma chamada de método. Posicione o cursor sobre ou ao lado do método ou da declaração de delegado, mas não no corpo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)

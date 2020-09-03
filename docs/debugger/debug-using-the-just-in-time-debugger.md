@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350570"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador just-in-time no Visual Studio
@@ -26,7 +26,7 @@ A depuração Just-in-time funciona para aplicativos da área de trabalho do Win
 > [!TIP]
 > Se você quiser apenas interromper a exibição da caixa de diálogo do depurador just-in-time, mas não tiver o Visual Studio instalado, consulte [desabilitar o depurador just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md). Se você tiver instalado o Visual Studio, talvez seja necessário [desabilitar a depuração Just-in-time do registro do Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a>Habilitar ou desabilitar a depuração Just-in-time no Visual Studio
+## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a> Habilitar ou desabilitar a depuração Just-in-time no Visual Studio
 
 >[!NOTE]
 >Para habilitar ou desabilitar a depuração Just-in-time, você deve estar executando o Visual Studio como administrador. Habilitar ou desabilitar a depuração Just-in-time define uma chave do registro e privilégios de administrador podem ser necessários para alterar essa chave. Para abrir o Visual Studio como administrador, clique com o botão direito do mouse no aplicativo do Visual Studio e escolha **Executar como administrador**.
@@ -147,7 +147,7 @@ Você pode iniciar a depuração neste ponto. Se você estivesse Depurando um ap
 > [!CAUTION]
 > Se seu aplicativo contiver um código não confiável, uma caixa de diálogo de aviso de segurança será exibida, permitindo que você decida se deseja continuar com a depuração. Antes de continuar a depuração, decida se você confia no código. Você mesmo escreveu o código? Se o aplicativo está sendo executado em um computador remoto, você reconhece o nome do processo? Se o aplicativo estiver em execução localmente, considere a possibilidade de código mal-intencionado em execução no seu computador. Se você decidir que o código é confiável, selecione **OK**. Caso contrário, selecione **Cancelar**.
 
-## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a>Solucionar problemas de depuração Just-in-time
+## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a> Solucionar problemas de depuração Just-in-time
 
 Se a depuração Just-in-time não iniciar quando um aplicativo falhar, mesmo que ele esteja habilitado no Visual Studio:
 
@@ -189,7 +189,7 @@ Você poderá ver as seguintes mensagens de erro durante a depuração Just-in-t
 
     Para corrigir esse problema, use o Instalador do Visual Studio para reinstalar ou reparar a instalação do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

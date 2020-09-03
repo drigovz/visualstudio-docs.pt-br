@@ -1,5 +1,5 @@
 ---
-title: 'DA0502: Consumo máximo de CPU pelo processo do qual o perfil está sendo criado | Microsoft Docs'
+title: 'DA0502: consumo máximo de CPU pelo processo do qual o perfil está sendo criado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a47a9c5964ccf15d2c609233eb600f39bc3ad2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205932"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Consumo máximo de CPU pelo Processo cujo perfil está sendo criado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0502 |  
+ID da regra | DA0502 |  
 | Categoria | Monitoramento de recursos |  
-| Método de criação de perfil | Todos os |  
+| Método de criação de perfil | Todos |  
 | Mensagem | Essa regra é apenas para fins informativos. O contador Processo()\\% de tempo do processador mede o consumo da CPU do processo do qual o perfil está sendo criado. O valor relatado é o máximo observado em todos os intervalos de medição.|  
-| Tipo de regra | Informação |  
+| Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
   

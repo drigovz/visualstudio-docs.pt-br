@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::ResolveDynamicType | Microsoft Docs
+title: 'IDebugBinder:: ResolveDynamicType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3be2234121fe76702dbfa5784bf20c1558cadce3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205833"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
@@ -42,15 +42,15 @@ int ResolveDynamicType(
   
 #### <a name="parameters"></a>Parâmetros  
  `pDynamic`  
- [in] Uma [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) que representa um tipo de uma variável.  
+ no Um [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) que representa um tipo de uma variável.  
   
  `ppResolved`  
- [out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) fornecendo informações específicas sobre o tipo da variável.  
+ fora Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) fornecendo informações específicas sobre o tipo da variável.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

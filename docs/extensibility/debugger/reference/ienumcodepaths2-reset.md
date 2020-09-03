@@ -1,5 +1,5 @@
 ---
-title: iEnumCodePaths2::Reset | Microsoft Docs
+title: 'IEnumCodePaths2:: Reset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2392c25513b53137e5cdca332bc133ab998be999
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717799"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
@@ -38,10 +38,10 @@ int Reset();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Depois que este método é chamado, a próxima chamada para o método [Next](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) retorna o primeiro elemento da enumeração.
+ Depois que esse método é chamado, a próxima chamada para o [próximo](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) método retorna o primeiro elemento da enumeração.
 
 ## <a name="see-also"></a>Confira também
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

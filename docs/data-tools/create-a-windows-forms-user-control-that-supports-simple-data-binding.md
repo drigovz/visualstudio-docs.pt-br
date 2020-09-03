@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586816"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples
@@ -35,11 +35,11 @@ Ao criar controles para uso em cenários de vinculação de dados, você deve im
 |Implemente o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.DataGridView> que exibe listas (ou tabelas) de dados. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à ligação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implemente o <xref:System.ComponentModel.LookupBindingPropertiesAttribute> nos controles, como um <xref:System.Windows.Forms.ComboBox>que exibe listas (ou tabelas) de dados, mas também precisa apresentar uma única coluna ou propriedade. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
-Este passo a passo cria um controle simples que exibe dados de uma única coluna em uma tabela. Este exemplo usa a coluna `Phone` da tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário simples exibe os números de telefone dos clientes em um formato de número de telefone padrão, usando um <xref:System.Windows.Forms.MaskedTextBox> e definindo a máscara como um número de telefone.
+Este passo a passo cria um controle simples que exibe dados de uma única coluna em uma tabela. Este exemplo usa a coluna `Phone` da tabela `Customers` do banco de dados de exemplo Northwind. O controle de usuário simples exibe os números de telefone dos clientes em um formato de número de telefone padrão, usando um <xref:System.Windows.Forms.MaskedTextBox> e definindo a máscara para um número de telefone.
 
 Durante este passo a passo, você aprenderá a:
 
-- Criar um novo **Aplicativo do Windows Forms**.
+- Crie um novo **aplicativo Windows Forms**.
 
 - Adicionar um novo **Controle de Usuário** ao projeto.
 
@@ -53,7 +53,7 @@ Durante este passo a passo, você aprenderá a:
 
 - Criar um formulário para exibir dados no novo controle.
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -77,7 +77,7 @@ A primeira etapa é criar um **aplicativo Windows Forms**:
 
 1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
-2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
@@ -97,7 +97,7 @@ Este tutorial cria um controle vinculável de dados simples de um **controle de 
 
 ## <a name="design-the-phonenumberbox-control"></a>Criar o controle PhoneNumberBox
 
-Este passo a passos se expande sobre o <xref:System.Windows.Forms.MaskedTextBox> existente para criar o controle **PhoneNumberBox** :
+Este passo a passos se expande sobre o existente <xref:System.Windows.Forms.MaskedTextBox> para criar o controle **PhoneNumberBox** :
 
 1. Arraste um <xref:System.Windows.Forms.MaskedTextBox> da **Caixa de Ferramentas** para a superfície de design do controle de usuário.
 
@@ -116,11 +116,11 @@ Para controles simples que dão suporte à associação de dados, implemente o <
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3. No menu **Compilação**, escolha **Compilar Solução**.
+3. No menu **Compilar** , escolha **Compilar solução**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do seu banco de dados
 
-Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar uma fonte de dados com base na tabela `Customers` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [How to: Install exemplo databases](../data-tools/installing-database-systems-tools-and-samples.md).
+Esta etapa usa o assistente de **configuração de fonte de dados** para criar uma fonte de dados com base na `Customers` tabela no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [How to: Install exemplo databases](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
@@ -142,11 +142,11 @@ Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar u
 
 8. Selecione a tabela `Customers` e clique em **Concluir**.
 
-     O **NorthwindDataSet** é adicionado ao projeto e a tabela `Customers` aparece na janela **Fontes de Dados**.
+     O **NorthwindDataSet** é adicionado ao seu projeto e a `Customers` tabela é exibida na janela **Data Sources** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Definir a coluna de telefone para usar o controle PhoneNumberBox
 
-Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário:
+Na janela **fontes de dados** , você pode definir o controle a ser criado antes de arrastar itens para o formulário:
 
 1. Abra **Form1** no designer.
 
@@ -172,7 +172,7 @@ Os controles de associação de dados com rótulos descritivos são exibidos no 
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 Dependendo dos requisitos do aplicativo, existem várias etapas que você pode realizar após criar um controle com suporte a associação de dados. Algumas etapas seguintes típicas incluem:
 
@@ -180,7 +180,7 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 - Criando controles que suportam cenários de associação de dados mais complexos. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [criar um controle de usuário de Windows Forms que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

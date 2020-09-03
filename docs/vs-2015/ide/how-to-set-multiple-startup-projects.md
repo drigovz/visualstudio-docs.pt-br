@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f751ef8ecc884c0e0b338d70f9e198fdc07807cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660133"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Como definir vários projetos de inicialização
@@ -27,11 +27,11 @@ O Visual Studio permite especificar como mais de um projeto é executado ao inic
 
 1. No **Gerenciador de Soluções**, selecione a solução (o nó mais alto). Clique com o botão direito do mouse no nó para obter o menu de contexto.
 
-2. Selecione **Propriedades**. A caixa de diálogo **Páginas de Propriedades da Solução** é aberta.
+2. Selecione **Propriedades**. A caixa de diálogo **Páginas de Propriedades da Solução** será aberta.
 
 3. Expanda o nó **Propriedades Comuns** e clique em **Projeto de Inicialização**.
 
 4. Clique em **Vários Projetos de Inicialização** e defina as ações apropriadas. Para obter mais informações, consulte [NIB Como modificar propriedades do projeto e definições de configuração](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [criando soluções e projetos](../ide/creating-solutions-and-projects.md)

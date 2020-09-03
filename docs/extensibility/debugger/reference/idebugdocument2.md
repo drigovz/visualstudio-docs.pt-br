@@ -13,44 +13,44 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731997"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
-Esta interface representa um documento de origem.
+Essa interface representa um documento de origem.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocument2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]normalmente implementa essa interface. Um mecanismo de depuração (DE) também pode implementar essa interface quando precisa fornecer o código-fonte e a fonte não existe no disco.  Nesses casos, o DE também implementaria interfaces [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2,](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) bem como alguns métodos adicionais nas interfaces [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2.](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] normalmente implementa essa interface. Um mecanismo DE depuração (DE) também pode implementar essa interface quando precisa fornecer o código-fonte e a origem não existe no disco.  Nesses casos, o DE também implementará as interfaces [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) e [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) , bem como alguns métodos adicionais nas interfaces [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) e [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Métodos nas `IDebugDocumentContext2` `IDebugDisassemblyStream2`interfaces `IDebugDocumentPosition2` `IDebugActivateDocumentEvent2` retornam esta interface.
+ Os métodos nas `IDebugDocumentContext2` interfaces,, `IDebugDisassemblyStream2` `IDebugDocumentPosition2` e `IDebugActivateDocumentEvent2` retornam essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugDocument2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugDocument2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Obtém o nome do documento em uma das várias formas.|
+|[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|Obtém o nome do documento em uma de várias formas.|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|Obtém o identificador de classe do documento.|
 
 ## <a name="remarks"></a>Comentários
- Esta interface só é implementada quando o DE fornece o código fonte. Por exemplo, quando você está depurando script em uma página HTML, o DE fornece o código-fonte porque a fonte é baixada ou gerada dinamicamente e não existe como um arquivo de disco. Ao depurar idiomas tradicionais, como C++, essa interface não precisa ser implementada.
+ Essa interface é implementada somente quando a DE fornece o código-fonte. Por exemplo, quando você está depurando o script em uma página HTML, o DE fornece o código-fonte, pois a origem é baixada ou gerada dinamicamente e não existe como um arquivo de disco. Ao depurar linguagens tradicionais, como C++, essa interface não precisa ser implementada.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)

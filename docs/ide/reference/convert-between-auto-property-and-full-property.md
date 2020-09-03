@@ -1,5 +1,5 @@
 ---
-title: Converter entre propriedade automática e propriedade completa
+title: Converter entre propriedade automática e completa
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -10,37 +10,37 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395408"
 ---
-# <a name="convert-between-auto-property-and-full-property"></a>Converter entre propriedade automática e propriedade completa
+# <a name="convert-between-auto-property-and-full-property"></a>Converter entre propriedade automática e completa
 
 Esta refatoração aplica-se a:
 
 - C#
 
-**O que é isso?** Converta entre uma propriedade auto-implementada em uma propriedade completa.
+**O que:** Converta entre uma propriedade implementada automaticamente em uma propriedade completa.
 
-**Quando:** A lógica da propriedade mudou.
+**Quando:** A lógica da propriedade foi alterada.
 
-**Por que:** Você pode converter entre uma propriedade implementada automaticamente para uma propriedade completa manualmente, no entanto, esse recurso fará o trabalho automaticamente para você. 
+**Por que:** Você pode converter entre uma propriedade implementada automaticamente em uma propriedade completa manualmente, no entanto, esse recurso fará o trabalho automaticamente para você. 
 
 ## <a name="how-to"></a>Como fazer
 
-1. Coloque seu cursor no nome da propriedade.
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
-3. Selecione entre as duas opções a seguir: 
+1. Coloque o cursor sobre o nome da propriedade.
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
+3. Selecione uma das duas opções a seguir: 
 
-    Selecione **Converter para propriedade completa**.
+    Selecione **converter para Propriedade completa**.
 
    ![Converter a propriedade automática em propriedade completa](media/convert-auto-property-to-full-property.png) 
 
-    Selecione **Usar propriedade automática**. 
+    Selecione **usar Propriedade automática**. 
 
-    ![Converter propriedade completa em propriedade automática](media/convert-full-property-to-auto-property.png) 
+    ![Converter Propriedade completa em Propriedade automática](media/convert-full-property-to-auto-property.png) 
 
 ## <a name="see-also"></a>Confira também
 

@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81876493d48407549237ed626fc6ec5d2175fcd7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659601"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Executar o teste de unidade de um código Visual C# em um aplicativo da Store
@@ -34,22 +34,22 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 >
 >   Para obter mais informações, confira [Verificação do código usando testes de unidade](https://msdn.microsoft.com/library/dd264975.aspx) na biblioteca MSDN.
 
-## <a name="BKMK_In_this_topic"></a> Neste tópico
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Neste tópico
  [Criar a solução e o projeto de teste de unidade](#BKMK_Create_the_solution_and_the_unit_test_project)
 
- [Verificar se o testes são executados no Gerenciador de Testes](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
+ [Verificar se os testes são executados no Gerenciador de testes](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)
 
- [Adição da classe Rooter ao projeto Matemática](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
+ [Adicionar a classe Rootr ao projeto de matemáticas](#BKMK_Add_the_Rooter_class_to_the_Maths_project)
 
- [Como acoplar o projeto de teste ao projeto de aplicativo](#BKMK_Couple_the_test_project_to_the_app_project)
+ [Associar o projeto de teste ao projeto de aplicativo](#BKMK_Couple_the_test_project_to_the_app_project)
 
  [Multiplicar os testes iterativamente e fazê-los passar](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
  [Depurar um teste que falhou](#BKMK_Debug_a_failing_test)
 
- [Como refatorar o código](#BKMK_Refactor_the_code_)
+ [Refatorar o código](#BKMK_Refactor_the_code_)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
 
 1. No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.
 
@@ -97,7 +97,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
     3. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, confira [Como usar membros Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) na biblioteca MSDN.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se os testes são executados no Gerenciador de testes
 
 1. Insira um código de teste em `TestMethod1` do arquivo **UnitTest1.cs**:
 
@@ -119,7 +119,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
      ![Gerenciador de Testes](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Adição da classe Rooter ao projeto Matemática
+## <a name="add-the-rooter-class-to-the-maths-project"></a><a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Adição da classe Rooter ao projeto Matemática
 
 1. No Gerenciador de Soluções, escolha o nome do projeto **Matemática**. Do menu de atalho, escolha **Adicionar** e, então, **Classe**.
 
@@ -145,15 +145,15 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
 4. O método `SqareRoot` é apenas uma implementação mínima, suficiente para testar a estrutura básica da configuração de teste.
 
-## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Como acoplar o projeto de teste ao projeto de aplicativo
+## <a name="couple-the-test-project-to-the-app-project"></a><a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Como acoplar o projeto de teste ao projeto de aplicativo
 
 1. Adicione uma referência ao aplicativo Matemática para o projeto RooterTests.
 
-   1. No Gerenciador de Soluções, escolha o projeto **RooterTests** e, em seguida, escolha **Adicionar Referência...** no menu de atalho.
+   1. Em Gerenciador de Soluções, escolha o projeto **RooterTests** e, em seguida, escolha **Adicionar referência...** no menu de atalho.
 
    2. Na caixa de diálogo **Adicionar Referência - RooterTests**, expanda **Solução** e escolha **Projetos**. Então, selecione o item **Matemática**.
 
-        ![Adicionar uma referência ao projeto de matemáticas](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
+        ![Adicionar uma referência ao projeto Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")
 
 2. Adicione uma instrução Using ao arquivo UnitTest1.cs:
 
@@ -184,13 +184,13 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
     O novo teste é exibido no Gerenciador de Testes, no nó **Não Executar Testes**.
 
-5. No Gerenciador de Testes, escolha **Executar Todos**.
+5. No Gerenciador de testes, escolha **executar tudo**.
 
-    ![Teste básico aprovado](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+    ![Êxito no Teste básico](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
    Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que eles passem
 
 1. Adicione um novo teste:
 
@@ -215,11 +215,11 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
     >
     >  Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de testes, escolha **executar tudo**.
 
 3. O teste falhará.
 
-     ![O RangeTest falha](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![Falha de RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Logo após escrevê-los, verifique se cada um deles falha. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.
@@ -242,14 +242,14 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
     ```
 
-5. Compile a solução e, no Gerenciador de Testes, escolha **Executar Todos**.
+5. Compile a solução e, em seguida, no Gerenciador de testes, escolha **executar tudo**.
 
      Os três testes agora foram aprovados.
 
 > [!TIP]
 > Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Depurar um teste com falha
 
 1. Adicione outro teste a **UnitTest1.cs**:
 
@@ -284,11 +284,11 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
    ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de testes, escolha **executar tudo**.
 
     O teste falhará. Escolha o nome do teste no Gerenciador de Testes. A asserção com falha é realçada. A mensagem de falha fica visível no painel de detalhes do Gerenciador de Testes.
 
-    ![NegativeRangeTests falhou](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![Falha de NegativeRangeTests](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Para ver o motivo da falha do teste, percorra a função:
 
@@ -314,9 +314,9 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 
    Todos os testes agora foram aprovados.
 
-   ![Todos os testes aprovados](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
+   ![Todos os testes serão aprovados](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_"></a> Como refatorar o código
+## <a name="refactor-the-code"></a><a name="BKMK_Refactor_the_code_"></a> Refatorar o código
  **Simplifique o cálculo central na função SquareRoot.**
 
 1. Altere a implementação do resultado

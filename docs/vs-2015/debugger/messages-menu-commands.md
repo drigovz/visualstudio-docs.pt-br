@@ -1,5 +1,5 @@
 ---
-title: Mensagens de comandos de Menu | Microsoft Docs
+title: Comandos do menu mensagens | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 689ae78a5409a37fa6251044172f9108f296235b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206114"
 ---
 # <a name="messages-menu-commands"></a>Comandos do menu Mensagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O **mensagens** menu fornece comandos para controlar modos de exibição de mensagem.  
+O menu **mensagens** fornece comandos para controlar as exibições de mensagens.  
   
- **Iniciar/Parar registro em log**  
- Inicia ou interrompe a exibição de mensagem.  
+ **Iniciar/parar registro em log**  
+ Inicia ou para o modo de exibição de mensagem.  
   
  **Opções de log**  
- Abre o **MessageOptions** caixa de diálogo, onde você pode especificar critérios de pesquisa da mensagem.  
+ Abre a caixa de diálogo **mensagens** , onde você pode especificar critérios de pesquisa de mensagens.  
   
  **Limpar Log**  
- Limpa o conteúdo da exibição de mensagens ativa.
+ Limpa o conteúdo da exibição de mensagens ativas.

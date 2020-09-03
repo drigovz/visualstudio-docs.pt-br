@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68db108fe6193517d26957fd74807c2ed2b89035
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161397"
 ---
-# <a name="idiainjectedsourcegetfilename"></a>IDiaInjectedSource::get_filename
+# <a name="idiainjectedsourceget_filename"></a>IDiaInjectedSource::get_filename
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o nome do arquivo para a fonte.  
+Recupera o nome do arquivo para a origem.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_filename ( 
   
 #### <a name="parameters"></a>Parâmetros  
  pRetVal  
- [out] Retorna o nome do arquivo para a fonte.  
+ fora Retorna o nome do arquivo para a origem.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350596"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Depurar vários processos (C#, Visual Basic, C++)
@@ -69,7 +69,7 @@ Para obter mais informações, consulte [anexar a processos em execução](../de
 >[!NOTE]
 >O depurador não é anexado automaticamente a um processo filho que é inicializado por um processo depurado, mesmo se o projeto filho estiver na mesma solução. Para depurar um processo filho, anexe-o ao processo filho depois que ele for iniciado ou configure o editor do registro do Windows para iniciar o processo filho em uma nova instância do depurador.
 
-### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Usar o editor do registro para iniciar automaticamente um processo no depurador
+### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Usar o editor do registro para iniciar automaticamente um processo no depurador
 
 Às vezes, talvez seja necessário depurar o código de inicialização para um aplicativo que é iniciado por outro processo. Os exemplos incluem serviços e ações de configuração personalizada. Você pode fazer com que o depurador seja iniciado e anexado automaticamente ao aplicativo.
 
@@ -93,7 +93,7 @@ Para obter mais informações, consulte [anexar a processos em execução](../de
 
    ![Entrada de início do depurador automático no regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "Entrada de início do depurador automático no regedit.exe")
 
-## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Depurar com vários processos
+## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Depurar com vários processos
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Ao depurar um aplicativo com vários processos, os comandos de depuração de interrupção, depuração e continuação afetam todos os processos por padrão. Por exemplo, quando um processo é suspenso em um ponto de interrupção, a execução de todos os outros processos também é suspensa. Você pode alterar esse comportamento padrão para obter mais controle sobre os destinos dos comandos de execução.
@@ -172,7 +172,7 @@ A tabela a seguir descreve os comportamentos dos comandos parar, encerrar e desa
 |Janela de **processos** > **encerrar processo**|O processo selecionado foi encerrado.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |Janela de **processos** > **desanexar quando a depuração parar**|Se selecionado, **depurar**  >  **parar depuração** desanexará do processo selecionado. <br />Se não for selecionado, **depurar**  >  **parar depuração** finalizará o processo selecionado. |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

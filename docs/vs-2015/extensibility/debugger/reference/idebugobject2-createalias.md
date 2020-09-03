@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: 'IDebugObject2:: createalias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 070340d72006f4b81ac306dcf05d721105bb875a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194633"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
@@ -40,14 +40,14 @@ int CreateAlias(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppAlias`  
- [out] O alias de novo (ou existente).  
+ fora O novo (ou existente) alias.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Um alias é um rótulo que representa um objeto específico, enquanto o objeto está na memória.  
+ Um alias é um rótulo que representa um objeto específico enquanto o objeto está na memória.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

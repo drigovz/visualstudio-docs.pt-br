@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205980"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em logs em um ambiente multiprocessador
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Para encaminhar eventos em um agente de encaminhamento, chame o método <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> da interface <xref:Microsoft.Build.Framework.IEventRedirector>. Passar a <xref:Microsoft.Build.Framework.BuildEventArgs> adequada ou uma derivativa, como o parâmetro.  
   
- Para obter mais informações, consulte [Criando Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md).  
+ Para obter mais informações, consulte [criando agente de log de encaminhamento](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Anexando um Agente Distribuído  
  Para anexar um agente distribuído em um build de linha de comando, use a opção `/distributedlogger` (ou, `/dl` de forma abreviada). O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `/logger`, exceto em casos em que um agente distribuído seja composto por duas classes de registro em log: um agente de encaminhamento e um agente central. A seguir, está um exemplo de como anexar um agente distribuído:  
@@ -73,6 +73,6 @@ Culture=neutral
   
  Um asterisco (*) separa os dois nomes de agentes na opção `/dl`.  
   
-## <a name="see-also"></a>Veja também  
- [Agentes de Log de Build](../msbuild/build-loggers.md)   
- [Criando agentes de log de encaminhamento](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>Consulte Também  
+ [Compilar agentes](../msbuild/build-loggers.md)   
+ [Criando agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659460"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Atualizar um modelo UML por meio de um thread em segundo plano
@@ -32,7 +32,7 @@ ms.locfileid: "72659460"
 
 #### <a name="to-run-the-example"></a>Para executar o exemplo
 
-1. Crie um manipulador de comandos em C# um projeto, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Crie um manipulador de comandos em um projeto C#, conforme descrito em [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Certifique-se de que o projeto inclui referências a esses assemblies:
 
@@ -50,13 +50,13 @@ ms.locfileid: "72659460"
 
 3. Adicione ao projeto um formulário do Windows chamado **ProgressForm**. Ele deve exibir uma mensagem que indica que as atualizações estão em andamento. Ele não precisa ter outros controles.
 
-4. Adicione um C# arquivo que contenha o código mostrado após a etapa 7.
+4. Adicione um arquivo C# que contém o código que é mostrado após a etapa 7.
 
 5. Compile e execute o projeto.
 
     Uma nova instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] será iniciada no modo experimental.
 
-6. Crie ou abra um diagrama de classe UML na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+6. Crie ou abra um diagrama de classe UML na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 7. Clique com o botão direito do mouse em qualquer lugar no diagrama de classe UML e clique em **Adicionar várias classes UML**.
 
@@ -185,7 +185,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 
  `DiagramView uiThreadHolder = context.CurrentDiagram.GetObject<Diagram>().ActiveDiagramView;`
 
- Você pode usar `uiThreadHolder.Invoke()` para executar operações no thread da interface do usuário.
+ Você pode usar `uiThreadHolder.Invoke()` o para executar operações no thread da interface do usuário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)

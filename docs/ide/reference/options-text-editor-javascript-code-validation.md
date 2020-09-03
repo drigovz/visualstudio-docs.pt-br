@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605999"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Caixa de diálogo \> Opções: Validação \> de código javascript/typeScript
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Caixa de diálogo opções: \> validação de código JavaScript/TypeScript do editor de texto \>
 
 Use a página **Validação de Código** da caixa de diálogo **Opções** para modificar as configurações que afetam a maneira como o JavaScript trata os erros. É possível acessar a página **Validação de código** escolhendo **Ferramentas** > **Opções** na barra de menus e, em seguida, expandindo **Editor de Texto** > **JavaScript/TypeScript** > **Validação de código.**
 

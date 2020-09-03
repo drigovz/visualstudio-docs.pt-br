@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250174"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
@@ -70,7 +70,7 @@ O [pacote NPM do typescript](https://www.npmjs.com/package/typescript) adiciona 
 
    A configuração anterior fornece apenas uma introdução básica à configuração do TypeScript. Para obter informações sobre outras opções, consulte [tsconfig.jsem](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-## <a name="build-the-application"></a>Criar o aplicativo
+## <a name="build-the-application"></a>Compilar o aplicativo
 
 1. Adicione arquivos TypeScript (*. TS*) ou typescript JSX (*. TSX*) ao seu projeto e, em seguida, adicione o código TypeScript. Para obter um exemplo simples de TypeScript, use o seguinte:
 

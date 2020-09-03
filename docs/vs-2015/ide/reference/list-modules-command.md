@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4600f27f62d6e840041a65b4128df128e4d36873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659528"
 ---
 # <a name="list-modules-command"></a>Comando Listar Módulos
@@ -63,5 +63,5 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Janela de comando](../../ide/reference/command-window.md) de [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [como: usar a janela de módulos](../../debugger/how-to-use-the-modules-window.md)

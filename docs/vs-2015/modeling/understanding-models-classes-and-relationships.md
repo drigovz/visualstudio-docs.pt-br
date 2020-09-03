@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659554"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
@@ -26,7 +26,7 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
  Este tópico explica os recursos centrais da definição de DSL.
 
 ## <a name="the-dsl-definition"></a>A definição de DSL
- Quando você abre `Dsl\DslDefinition.dsl`, sua janela de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é semelhante à imagem a seguir.
+ Quando você abre `Dsl\DslDefinition.dsl` , sua [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela é semelhante à imagem a seguir.
 
  ![Designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")
 
@@ -132,9 +132,9 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
  Quando você cria uma relação em uma definição de DSL, os nomes de propriedade e relação recebem valores padrão. No entanto, você pode alterá-las.
 
 ## <a name="multiplicities"></a>Multiplicidades
- As multiplicidades especificam quantos elementos podem ter a mesma função em um relacionamento de domínio. No exemplo, a configuração de multiplicidade de zero para muitos (0.. \*) na função de **Catálogo** especifica que qualquer instância da classe de domínio do **Publicador** pode ter tantos links de relações **PublisherCatalog** quanto você deseja dar a ela.
+ As multiplicidades especificam quantos elementos podem ter a mesma função em um relacionamento de domínio. No exemplo, a configuração de multiplicidade de zero para muitos (0.. \* ) na função de **Catálogo** especifica que qualquer instância da classe de domínio do **Publicador** pode ter tantos links de relações **PublisherCatalog** quanto você deseja dar.
 
- Configure a multiplicidade de uma função digitando no diagrama ou modificando a propriedade `Multiplicity` na janela **Propriedades** . A tabela a seguir descreve as configurações dessa propriedade.
+ Configure a multiplicidade de uma função digitando no diagrama ou modificando a `Multiplicity` Propriedade na janela **Propriedades** . A tabela a seguir descreve as configurações dessa propriedade.
 
 |Tipo de multiplicidade|Descrição|
 |-----------------------|-----------------|
@@ -152,5 +152,5 @@ Uma DSL (linguagem específica de domínio) é definida por seu arquivo de defin
 
  Uma relação derivada especializa sua relação de base. As classes de domínio para as quais ele se vincula devem ser derivadas ou iguais às classes vinculadas pela relação base. Quando um link da relação derivada é criado em um modelo, ele é uma instância de relações derivadas e base. No código do programa, você pode navegar até a extremidade oposta do link usando as propriedades geradas pelo base ou pela classe derivada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Relações de domínio no Glossário de](../misc/domain-relationships-in-the-generated-api.md) [ferramentas de linguagem específica de domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) de API gerado

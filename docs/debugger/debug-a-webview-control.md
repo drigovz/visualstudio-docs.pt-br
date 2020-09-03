@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350635"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar um controle WebView em um aplicativo UWP
@@ -83,6 +83,6 @@ ms.locfileid: "85350635"
 
 6. Exiba e modifique variáveis em seu aplicativo ou use comandos de console, conforme descrito em [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos de console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183672"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
@@ -347,7 +347,7 @@ Agrupa elementos `Import` individuais.
 
 |Elemento filho|Descrição|
 |-------------------|-----------------|
-|[Importar elemento](../ide/code-snippets-schema-reference.md#import-element)|Elemento opcional. Contém os namespaces importados para o snippet de código. Pode ser haver zero ou mais elementos **Import** em um elemento `Imports`.|
+|[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Elemento opcional. Contém os namespaces importados para o snippet de código. Pode ser haver zero ou mais elementos **Import** em um elemento `Imports`.|
 
 |Elemento pai|Descrição|
 | - |-----------------|
@@ -430,7 +430,7 @@ Especifica o namespace que deve ser importado para compilação e execução do 
 
 |Elemento pai|Descrição|
 | - |-----------------|
-|[Importar elemento](../ide/code-snippets-schema-reference.md#import-element)|Importa o namespace especificado.|
+|[Elemento Import](../ide/code-snippets-schema-reference.md#import-element)|Importa o namespace especificado.|
 
 Um valor de texto é obrigatório. Esse texto especifica um namespace que o snippet de código supõe que seja importado.
 
@@ -658,7 +658,7 @@ Especifica uma URL que fornece mais informações sobre o assembly referenciado.
 
 Um valor de texto é obrigatório. Esse texto especifica uma URL com mais informações sobre o assembly referenciado. Essa URL é exibida quando a referência não pode ser adicionada ao projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../ide/code-snippets.md)
 - [Passo a passo: Para criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)

@@ -10,14 +10,14 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9ccb870f3b65d54da7d8aebd161a8be8a0f9baf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660132"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número de designer de atividade que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui vários designers de atividade que você pode usar ao construir seus fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
 
 ## <a name="in-this-section"></a>Nesta seção
  [StateMachine](../workflow-designer/statemachine-activity-designer.md) Contém um conjunto de fluxos de trabalho de Estados e modelos usando o paradigma de máquina de estado familiar.
@@ -48,9 +48,9 @@ ms.locfileid: "72660132"
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 

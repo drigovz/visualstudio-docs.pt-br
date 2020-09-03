@@ -6,10 +6,10 @@ ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
 ms.openlocfilehash: b9892a322c0264a1bdb68d672c7fe6c6e9b08d4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183594"
 ---
 # <a name="net-core-support"></a>Suporte do .NET Core
@@ -22,7 +22,7 @@ A tabela a seguir descreve as versões do .NET Core compatíveis com as versões
 |v2.1.600 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |v2.2.1 - v2.2.1xx | | | | | | |
 |v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
-|3.0 | | |✔︎|✔︎|✔︎|✔︎|
+|v3.0 | | |✔︎|✔︎|✔︎|✔︎|
 |v3.1 | | | |✔︎|✔︎|✔︎|
 |v 5.0 (versão prévia) | | | | | |✔︎|
 
@@ -30,7 +30,7 @@ A tabela a seguir descreve as versões do .NET Core compatíveis com as versões
 > Não há suporte para versões de visualização do SDK do .NET Core; Atualize para a versão de lançamento. Ao instalar o Visual Studio para Mac 8,4, a versão de lançamento do .NET Core v 3.1 será instalada.
 
 > [!IMPORTANT]
-> Se você estava usando o .NET Core v2.2.1xx com o Visual Studio para Mac 8.0, será necessário atualizar manualmente para uma versão compatível do .NET Core, conforme listado na tabela acima. É recomendável a versão [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) ou [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+> Se você estava usando o .NET Core v2.2.1xx com o Visual Studio para Mac 8.0, será necessário atualizar manualmente para uma versão compatível do .NET Core, conforme listado na tabela acima. Recomendamos o [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) ou o [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
 * O .NET Core v 3.1 é instalado por padrão para 8,4, 8,5 e 8,6.
 * O .NET Core v 3.0 é instalado por padrão para 8,3.

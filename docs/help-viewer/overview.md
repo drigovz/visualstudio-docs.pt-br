@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67824870"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
@@ -40,7 +40,7 @@ Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em se
 
 - Exibir, definir como indicador e imprimir tópicos.
 
-Para instalar o Help Viewer, confira [Instalação do Microsoft Help Viewer](../help-viewer/installation.md). Para começar a ler os tópicos no Help Viewer em vez de fazer isso online, acesse o menu **Ajuda** no Visual Studio e, em seguida, escolha **Definir Preferência de Ajuda** > **Iniciar no Help Viewer**.
+Para instalar o Help Viewer, consulte [Microsoft Help Viewer instalação](../help-viewer/installation.md). Para começar a ler os tópicos no Help Viewer em vez de fazer isso online, acesse o menu **Ajuda** no Visual Studio e, em seguida, escolha **Definir Preferência de Ajuda** > **Iniciar no Help Viewer**.
 
 > [!TIP]
 > Outra maneira de baixar conteúdo localmente para que você possa exibi-lo quando não houver conexão de Internet é baixar uma versão em PDF. Muitos conjuntos de documentação no docs.microsoft.com incluem um link na parte inferior do sumário para baixar um arquivo PDF que contém todos os artigos desse sumário.
@@ -49,24 +49,24 @@ Para instalar o Help Viewer, confira [Instalação do Microsoft Help Viewer](../
 
 ## <a name="help-viewer-tour"></a>Tour do Help Viewer
 
-Você pode localizar informações no conteúdo instalado usando as guias de navegação, exibir o conteúdo instalado na guia ou nas guias de tópico e gerenciar o conteúdo usando a guia **Gerenciar Conteúdo**. Você também pode executar tarefas adicionais usando os botões na barra de ferramentas e localizar informações adicionais no canto inferior direito da janela.
+Você pode encontrar informações no conteúdo instalado usando as guias de navegação, exibir conteúdo instalado na guia ou guias de tópico e gerenciar conteúdo usando a guia **gerenciar conteúdo** . Você também pode executar tarefas adicionais usando os botões na barra de ferramentas e encontrar informações adicionais no canto inferior direito da janela.
 
 ### <a name="navigation-tabs"></a>Guias de navegação
 
-|Tabulação|DESCRIÇÃO|
+|Guia|Descrição|
 |---|-----------|
-|Conteúdo|Exibe o conteúdo instalado como uma hierarquia (sumário). Você pode especificar critérios para filtrar os títulos que aparecem.|
+|Sumário|Exibe o conteúdo instalado como uma hierarquia (sumário). Você pode especificar critérios para filtrar os títulos que aparecem.|
 |Índice|Exibe uma lista alfabética de termos indexados. Você pode pesquisar no índice, especificar critérios para filtrar as entradas e exigir que entradas de índice contenham ou comecem com o texto que você especificar.|
-|Favoritos|Você pode adicionar tópicos aos "favoritos", escolhendo o botão **Adicionar a Favoritos** e os tópicos serão exibidos nessa guia. A seção **Histórico** exibe uma lista de tópicos que você exibiu recentemente.|
-|Pesquisar|Oferece uma caixa de texto em que você pode pesquisar termos em qualquer lugar no conteúdo, inclusive código e títulos de tópicos.|
+|Favoritos|Você pode escolher os tópicos "favoritos" escolhendo o botão **Adicionar aos favoritos** e os tópicos aparecem nessa guia. A seção **histórico** exibe uma lista de tópicos que você exibiu recentemente.|
+|Search|Oferece uma caixa de texto em que você pode pesquisar termos em qualquer lugar no conteúdo, inclusive código e títulos de tópicos.|
 
 ### <a name="view-topics"></a>Exibir tópicos
 
 Cada tópico aparece em sua própria guia e você pode abrir vários tópicos ao mesmo tempo.
 
-### <a name="manage-content"></a>Gerenciar o conteúdo
+### <a name="manage-content"></a>Gerenciar conteúdo
 
-Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **Gerenciar Conteúdo**. Na parte superior da guia, você pode usar o controle do **Código-fonte de instalação** para especificar se deseja instalar os livros de um local de rede ou de um disco ou um URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.
+Você pode instalar, atualizar, mover e excluir conteúdo usando a guia **gerenciar conteúdo** . Na parte superior da guia, você pode usar o controle do **código-fonte de instalação** para especificar se os livros devem ser instalados de um local de rede ou de um disco ou URI. A caixa **Caminho do repositório local** mostra o local em que os livros são instalados no computador local, e você pode movê-los para um local diferente escolhendo o botão **Mover**.
 
 A lista de conteúdo mostra quais livros você pode instalar ou já instalou, se uma atualização está disponível e o tamanho de cada livro. Você pode instalar ou remover um ou mais livros escolhendo os links **Adicionar** ou **Remover** apropriados e, em seguida, escolhendo o botão **Atualizar** no painel **Alterações pendentes**. Se houver atualizações disponíveis para quaisquer livros que você já tenha instalado, você poderá atualizar o conteúdo escolhendo o link **Clique aqui para baixar agora** na parte inferior da janela. Além disso, todos os livros instalados são atualizados se há atualizações disponíveis quando você instala livros adicionais.
 
@@ -89,10 +89,10 @@ A barra de ferramentas na janela do **Help Viewer** contém os seguintes botões
 
 - O botão **Gerenciar Conteúdo** torna a guia **Gerenciar Conteúdo** ativa.
 
-- O triângulo pequeno do lado direito abre uma lista de guias, incluindo guias de tópico e a guia **Gerenciar Conteúdo**. Você pode escolher um nome de guia para torná-la a guia ativa.
+- O triângulo pequeno no lado direito abre uma lista de guias, incluindo guias de tópico e a guia **gerenciar conteúdo** . Você pode escolher um nome de guia para torná-lo a guia ativa.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Instalação do Microsoft Help Viewer](../help-viewer/installation.md)
 - [Guia do administrador do Help Viewer](../help-viewer/administrator-guide.md)
-- [Instalar e gerenciar o conteúdo local](../help-viewer/install-manage-local-content.md)
+- [Instalar e gerenciar conteúdo local](../help-viewer/install-manage-local-content.md)

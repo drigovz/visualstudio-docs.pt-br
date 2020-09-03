@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: 'IDebugDocumentChecksum2:: GetChecksumAndAlgorithmId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c26d5b9c2c45fd1ce932fc1108e4f77f2508cb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731933"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-Recupera o resumo do documento e o identificador de algoritmo, dado o número máximo de bytes a serem usados.
+Recupera a soma de verificação do documento e o identificador do algoritmo de acordo com o número máximo de bytes a serem usados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,24 +44,24 @@ public int GetChecksumAndAlgorithmId(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pRetVal`\
-[fora] Identificador exclusivo para o algoritmo de checksum.
+fora Identificador exclusivo para o algoritmo de soma de verificação.
 
 `cMaxBytes`\
-[em] Número máximo de bytes a serem usados para a soma de cheques.
+no Número máximo de bytes a serem usados para a soma de verificação.
 
 `pChecksum`\
-[fora] Valor da soma de cheques.
+fora Valor da soma de verificação.
 
 `pcNumBytes`\
-[fora] Número real de bytes usados para a soma de cheques.
+fora Número real de bytes usados para a soma de verificação.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir usa este método para obter a soma de verificação e algoritmo para um documento.
+O exemplo a seguir usa esse método para obter a soma de verificação e o algoritmo de um documento.
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
