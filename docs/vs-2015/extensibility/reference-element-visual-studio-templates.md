@@ -1,5 +1,5 @@
 ---
-title: Referência de elemento (modelos do Visual Studio) | Microsoft Docs
+title: Elemento Reference (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193838"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento de referência (modelos do Visual Studio)
@@ -25,12 +25,12 @@ ms.locfileid: "68193838"
 
 Especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
- \<Referências >  
- \<Referência >  
+ \<References>  
+ \<Reference>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Reference>  
@@ -42,13 +42,13 @@ Especifica a referência de assembly a ser adicionada quando o item for adiciona
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos. Deve haver um `Assembly` elemento em cada `Reference` elemento.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos. Deve haver um `Assembly` elemento em todos os `Reference` elementos.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -57,12 +57,12 @@ Especifica a referência de assembly a ser adicionada quando o item for adiciona
 |[Referências](../extensibility/references-element-visual-studio-templates.md)|Agrupa as referências de assembly que o modelo adiciona aos projetos.|  
   
 ## <a name="remarks"></a>Comentários  
- O `Reference` é um elemento filho obrigatório de `References`.  
+ `Reference` é um elemento filho obrigatório de `References` .  
   
- O `Reference` e `References` elementos podem ser usados somente em arquivos. vstemplate que têm um `Type` valor de atributo `Item`.  
+ Os `Reference` `References` elementos e só podem ser usados em arquivos. vstemplate que tenham um `Type` valor de atributo de `Item` .  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona as referências aos assemblies System. dll e System.  
+ O exemplo a seguir ilustra o `TemplateContent` elemento de um modelo de item. Esse XML adiciona referências aos assemblies System.dll e System.Data.dll.  
   
 ```  
 <TemplateContent>  
@@ -82,6 +82,6 @@ Especifica a referência de assembly a ser adicionada quando o item for adiciona
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

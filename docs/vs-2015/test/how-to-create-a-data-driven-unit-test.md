@@ -16,10 +16,10 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660530"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como criar um teste de unidade orientado a dados
@@ -27,21 +27,21 @@ ms.locfileid: "72660530"
 
 Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, você pode configurar um método de teste de unidade para recuperar valores usados no método de teste de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.
 
- Esse tópico contém as seguintes seções:
+ Este tópico contém as seguintes seções:
 
 - [O método em teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)
 
-- [Criar uma fonte de dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)
+- [Criando uma fonte de dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)
 
-- [Adicionar um TestContext para a classe de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)
+- [Adicionando um TestContext à classe de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)
 
-- [Escrever o método de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)
+- [Escrevendo o método de teste](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)
 
-  - [Especificar o DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)
+  - [Especificando o DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)
 
-  - [Usar o TestContext.DataRow para acessar os dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
+  - [Usando TestContext. DataRow para acessar os dados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
 
-- [Execução do teste e exibição dos resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)
+- [Executando o teste e exibindo os resultados](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)
 
   A criação de um teste de unidade orientado a dados envolve as seguintes etapas:
 
@@ -53,7 +53,7 @@ Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, vo
 
 4. Usar o propriedade do indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar os valores que você pode usar em um teste.
 
-## <a name="BKMK_The_method_under_test"></a> O método em teste
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a> O método em teste
  Como exemplo, vamos supor que criamos:
 
 1. Uma solução chamada `MyBank` que aceita e processa transações para diferentes tipos de contas.
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> Criar uma fonte de dados
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> Criando uma fonte de dados
  Para testar o método `AddIntegers`, criamos uma fonte de dados que especifica um intervalo de valores para os parâmetros e a soma que você espera que seja retornada. Em nosso exemplo, criamos um banco de dados do Sql Compact chamado `MathsData` e uma tabela chamada `AddIntegersData` que contém os seguintes nomes de coluna e valores
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Adicionar um TestContext para a classe de teste
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Adicionar um TestContext para a classe de teste
  A estrutura de teste de unidade cria um objeto `TestContext` para armazenar as informações de fonte de dados de um teste orientado a dados. Em seguida, a estrutura define esse objeto como o valor da propriedade `TestContext` que criamos.
 
 ```
@@ -105,7 +105,7 @@ public TestContext TestContext
 
  Em seu método de teste, os dados são acessados por meio da propriedade do indexador `DataRow` do `TestContext`.
 
-## <a name="BKMK_Writing_the_test_method"></a> Escrever o método de teste
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> Escrever o método de teste
  O método de teste de `AddIntegers` é bastante simples. Para cada linha na fonte de dados, chamamos `AddIntegers` com os valores de coluna **FirstNumber** e **SecondNumber** como parâmetros e verificamos o valor retornado no valor da coluna **Sum**:
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Observe que o método `Assert` inclui uma mensagem que exibe os valores `x` e `y` de uma iteração com falha. Por padrão, os valores declarados `expected` e `actual` já estão incluídos nos detalhes de uma teste com falha.
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Especificar o DataSourceAttribute
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> Especificar o DataSourceAttribute
  O atributo `DataSource` especifica a cadeia de conexão para a fonte de dados e o nome da tabela a ser usada no método de teste. As informações exatas na cadeia de conexão são diferentes, dependendo do tipo de fonte de dados que você está usando. Neste exemplo, usamos um banco de dados SqlServerCe.
 
 ```
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Usar o TestContext.DataRow para acessar os dados
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Usar o TestContext.DataRow para acessar os dados
  Para acessar os dados na tabela `AddIntegersData`, use o indexador `TestContext.DataRow`. `DataRow` é um objeto <xref:System.Data.DataRow>, para que seja possível recuperar valores de colunas por índice ou nomes de colunas. Como os valores são retornados como objetos, é preciso convertê-los para o tipo apropriado:
 
 ```
@@ -173,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a> Execução do teste e exibição dos resultados
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> Execução do teste e exibição dos resultados
  Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste aparece na janela Gerenciador de Testes, no grupo **Testes Não Executados**. Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos de **Testes Reprovados**, **Testes Aprovados** e **Testes Não Executados**. Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar...** para escolher um subconjunto de testes a serem executados.
 
  A barra de resultados de teste na parte superior do Gerenciador é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel de detalhes na parte inferior da janela do Gerenciador de Testes. Selecione um teste para exibir seus detalhes no painel inferior.
@@ -182,7 +182,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
  Quando o método em teste é corrigido e o teste é novamente executado, a barra de resultados ficará verde e o método de teste é movido para o grupo **Teste Aprovado**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName> <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>

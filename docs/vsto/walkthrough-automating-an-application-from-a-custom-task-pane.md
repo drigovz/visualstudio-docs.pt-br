@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado'
+title: 'Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,20 +18,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871928"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Passo a passo: Automatizar um aplicativo de um painel de tarefas personalizado
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Walkthrough: automatizar um aplicativo de um painel de tarefas personalizado
   Este tutorial demonstra como criar um painel de tarefas personalizado que automatiza o PowerPoint. O painel de tarefas personalizado insere datas em um slide quando o usuário clica <xref:System.Windows.Forms.MonthCalendar> em um controle que está no painel de tarefas personalizado.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
  Embora este passo a passos use o PowerPoint especificamente, os conceitos demonstrados por instruções são aplicáveis a todos os aplicativos listados acima.
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Criando a interface do usuário do painel de tarefas personalizado.
 
@@ -40,23 +40,23 @@ ms.locfileid: "68871928"
 - Exibindo o painel de tarefas personalizado no PowerPoint.
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- Microsoft PowerPoint 2010 ou [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].
+- Microsoft PowerPoint 2010 ou [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)] .
 
 ## <a name="create-the-add-in-project"></a>Criar o projeto de suplemento
  A primeira etapa é criar um projeto de suplemento do VSTO para o PowerPoint.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1. Crie um projeto de suplemento do VSTO do PowerPoint com onome MyAddin, usando o modelo de projeto de suplemento do PowerPoint. Para obter mais informações, confira [Como: Crie projetos do Office no Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Crie um projeto de suplemento do VSTO do PowerPoint com o nome **MyAddin**, usando o modelo de projeto de suplemento do PowerPoint. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Abre o arquivo de código **ThisAddIn.cs** ou **ThisAddIn. vb** e adiciona o projeto MyAddin a **Gerenciador de soluções**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo de código **ThisAddIn.cs** ou **ThisAddIn. vb** e adiciona o projeto **MyAddin** a **Gerenciador de soluções**.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Criar a interface do usuário do painel de tarefas personalizado
  Não há nenhum designer visual para painéis de tarefas personalizados, mas você pode criar um controle de usuário com o layout desejado. Mais adiante neste tutorial, você adicionará o controle de usuário ao painel de tarefas personalizado.
@@ -80,14 +80,14 @@ ms.locfileid: "68871928"
 
 1. No designer, clique duas vezes no <xref:System.Windows.Forms.MonthCalendar> controle.
 
-     O arquivo **MyUserControl.cs** ou MyUserControl **. vb** é aberto e um manipulador de eventos para <xref:System.Windows.Forms.MonthCalendar.DateChanged> o evento é criado.
+     O arquivo **MyUserControl.cs** ou **MyUserControl. vb** é aberto e um manipulador de eventos para o <xref:System.Windows.Forms.MonthCalendar.DateChanged> evento é criado.
 
-2. Adicione o código a seguir à parte superior do arquivo. Esse código cria aliases para os namespaces do e do <xref:Microsoft.Office.Core> [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
+2. Adicione o código a seguir no início do arquivo. Esse código cria aliases para os <xref:Microsoft.Office.Core> namespaces do e do [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Adicione o código a seguir à classe `MyUserControl`. Esse código declara um objeto [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) como um membro de `MyUserControl`. Na etapa a seguir, você usará essa [forma](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) para adicionar uma caixa de texto a um slide na apresentação ativa.
+3. Adicione o código a seguir à classe `MyUserControl` . Esse código declara um objeto [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) como um membro de `MyUserControl` . Na etapa a seguir, você usará essa [forma](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) para adicionar uma caixa de texto a um slide na apresentação ativa.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -97,10 +97,10 @@ ms.locfileid: "68871928"
      [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
      [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
 
-5. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto MyAddin e clique em **Compilar**. Verifique se o projeto é compilado sem erros.
+5. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **MyAddin** e clique em **Compilar**. Verifique se o projeto é compilado sem erros.
 
 ## <a name="display-the-custom-task-pane"></a>Exibir o painel de tarefas personalizado
- Para exibir o painel de tarefas personalizado quando o suplemento do VSTO for iniciado, adicione o controle de usuário ao painel de tarefas <xref:Microsoft.Office.Tools.AddIn.Startup> no manipulador de eventos do suplemento do VSTO.
+ Para exibir o painel de tarefas personalizado quando o suplemento do VSTO for iniciado, adicione o controle de usuário ao painel de tarefas no <xref:Microsoft.Office.Tools.AddIn.Startup> manipulador de eventos do suplemento do VSTO.
 
 ### <a name="to-display-the-custom-task-pane"></a>Para exibir o painel de tarefas personalizado
 
@@ -108,7 +108,7 @@ ms.locfileid: "68871928"
 
 2. Clique com o botão direito do mouse em **ThisAddIn.cs** ou em **ThisAddIn. vb** e clique em **Exibir código**.
 
-3. Adicione o código a seguir à classe `ThisAddIn`. Esse código declara instâncias do `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros da `ThisAddIn` classe.
+3. Adicione o código a seguir à classe `ThisAddIn` . Esse código declara instâncias do `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros da `ThisAddIn` classe.
 
      [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
      [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
@@ -136,12 +136,12 @@ ms.locfileid: "68871928"
 
 - Crie um painel de tarefas personalizado em um suplemento do VSTO para um aplicativo diferente. Para obter mais informações sobre os aplicativos que dão suporte a painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-- Crie um botão da faixa de medida que possa ser usado para ocultar ou exibir um painel de tarefas personalizado. Para obter mais informações, confira [Passo a passo: Sincronizar um painel de tarefas personalizado com um botão](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)da faixa de de uma.
+- Crie um botão da faixa de medida que possa ser usado para ocultar ou exibir um painel de tarefas personalizado. Para obter mais informações, consulte [Walkthrough: sincronizar um painel de tarefas personalizado com um botão Ribbon](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-- Crie um painel de tarefas personalizado para cada mensagem de email aberta no Outlook. Para obter mais informações, confira [Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)Outlook.
+- Crie um painel de tarefas personalizado para cada mensagem de email aberta no Outlook. Para obter mais informações, consulte [Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
-- [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Passo a passo: Sincronizar um painel de tarefas personalizado com um botão da faixa de uma](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Walkthrough: sincronizar um painel de tarefas personalizado com um botão da faixa de das](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Walkthrough: Exibir painéis de tarefas personalizados com mensagens de email no Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

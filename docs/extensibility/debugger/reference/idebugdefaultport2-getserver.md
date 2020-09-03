@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2:GetServer | Microsoft Docs
+title: 'IDebugDefaultPort2:: GetServer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3dbe6d813b85865b0fdbc20296473684203a3f1e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732378"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
-Este método obtém uma interface para o servidor em que esta porta está.
+Esse método obtém uma interface para o servidor no qual essa porta está.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetServer(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppServer`\
-[fora] Retorna um objeto que implementa a interface [IDebugCoreServer3.](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+fora Retorna um objeto que implementa a interface [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) é implementado pelo Visual Studio e representa o servidor em que a porta está localizada.
+ O [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) é implementado pelo Visual Studio e representa o servidor no qual a porta está localizada.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

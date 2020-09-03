@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531555"
 ---
 # <a name="shader-designer-examples"></a>Exemplos do Designer de Sombreador
@@ -23,7 +23,7 @@ Os artigos nesta seção da documentação contêm exemplos que demonstram como 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Como: criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md)|Demonstra um sombreador que aplica uma cor constante a um objeto.|
 |[Como: criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)|Demonstra um sombreador que aplica o modelo de iluminação Lambert clássico a um objeto.|

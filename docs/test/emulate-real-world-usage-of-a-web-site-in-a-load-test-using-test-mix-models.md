@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589598"
 ---
 # <a name="test-mix-models-overview"></a>Visão geral de modelos de combinação de testes
@@ -85,7 +85,7 @@ O valor da propriedade de **Aplicar distribuição à definição dos atrasos** 
 Selecionar a opção Com base na ordem sequencial faz com que cada usuário virtual execute todos os testes no cenário na ordem em que os testes foram definidos.
 
 ## <a name="test-iterations-property"></a>Propriedade de iterações de teste
-Nas propriedades de Configurações de Execução, você pode especificar um valor para a propriedade de iterações de teste. Esse valor é o número de iterações de teste para execução em um teste de carga. Depois que o número especificado de iterações de teste for iniciado, nenhuma iteração adicional de teste será iniciada independentemente das configurações dos perfis de carga. Depois que o número de iterações de teste especificado tiver sido concluído, o teste de carga terminará. Para obter mais informações, [consulte Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Nas propriedades de Configurações de Execução, você pode especificar um valor para a propriedade de iterações de teste. Esse valor é o número de iterações de teste para execução em um teste de carga. Depois que o número especificado de iterações de teste for iniciado, nenhuma iteração adicional de teste será iniciada independentemente das configurações dos perfis de carga. Depois que o número de iterações de teste especificado tiver sido concluído, o teste de carga terminará. Para obter mais informações, consulte [como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="initialize-and-terminate-tests"></a>Inicializar e terminar testes
 Você pode selecionar testes para execução no início e o término da sessão de teste de carga de cada usuário virtual. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
@@ -107,6 +107,6 @@ Você pode selecionar testes para execução no início e o término da sessão 
 - [Editar modelos de combinação de testes para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Editar a combinação de testes para especificar quais testes incluir em um cenário de teste de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)
+- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
 - [Alterar o modelo de combinação de testes em um cenário](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

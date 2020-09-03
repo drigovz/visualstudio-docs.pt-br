@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criar seu primeiro suplemento do VSTO para Outlook'
+title: 'Walkthrough: criar seu primeiro suplemento do VSTO para Outlook'
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baedd24b7eba14b3f2fa6496a7a681773b81cb9b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69547980"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Passo a passo: Criar seu primeiro suplemento do VSTO para Outlook
-  Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office Outlook. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de qual item do Outlook está aberto. Para obter mais informações, consulte [visão geral &#40;do desenvolvimento&#41;do Office Solutions VSTO](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Walkthrough: criar seu primeiro suplemento do VSTO para Outlook
+  Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office Outlook. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de qual item do Outlook está aberto. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - Criando um projeto de suplemento do VSTO do Outlook para Outlook.
 
@@ -41,8 +41,8 @@ ms.locfileid: "69547980"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -54,9 +54,9 @@ ms.locfileid: "69547980"
 
 1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
 
-3. No painel modelos, expanda **Visual C#**  ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel modelos, expanda **Visual C#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
 
 4. No nó do **Office/SharePoint** expandido, selecione o nó **suplementos do Office** .
 
@@ -66,28 +66,28 @@ ms.locfileid: "69547980"
 
 7. Clique em **OK**.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]cria o projeto **FirstOutlookAddIn** e abre o arquivo de código **ThisAddIn** no editor.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o projeto **FirstOutlookAddIn** e abre o arquivo de código **ThisAddIn** no editor.
 
 ## <a name="write-code-that-adds-text-to-each-new-mail-message"></a>Escrever código que adiciona texto a cada nova mensagem de email
  Em seguida, adicione o código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do Outlook para adicionar texto a cada nova mensagem de email. Por padrão, o arquivo de código ThisAddIn contém o seguinte código gerado:
 
 - Uma definição parcial da `ThisAddIn` classe. Essa classe fornece um ponto de entrada para seu código e fornece acesso ao modelo de objeto do Outlook. Para obter mais informações, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md). O restante da `ThisAddIn` classe é definido em um arquivo de código oculto que você não deve modificar.
 
-- Os `ThisAddIn_Startup` manipuladores de eventos e `ThisAddIn_Shutdown` . Esses manipuladores de eventos são chamados quando o Outlook carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar seu suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ele for descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+- Os `ThisAddIn_Startup` `ThisAddIn_Shutdown` manipuladores de eventos e. Esses manipuladores de eventos são chamados quando o Outlook carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar seu suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo seu suplemento do VSTO quando ele for descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Para adicionar texto ao assunto e ao corpo de cada nova mensagem de email
 
-1. No arquivo de código ThisAddIn, declare um campo chamado `inspectors` `ThisAddIn` na classe. O `inspectors` campo mantém uma referência à coleção de janelas de Inspetor na instância atual do Outlook. Essa referência impede que o coletor de lixo libere a memória que contém o manipulador de eventos para <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> o evento.
+1. No arquivo de código ThisAddIn, declare um campo chamado `inspectors` na `ThisAddIn` classe. O `inspectors` campo mantém uma referência à coleção de janelas de Inspetor na instância atual do Outlook. Essa referência impede que o coletor de lixo libere a memória que contém o manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento.
 
     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]
 
-2. Substitua o `ThisAddIn_Startup` método pelo código a seguir. Esse código anexa um manipulador de eventos ao <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento.
+2. Substitua o método `ThisAddIn_Startup` pelo seguinte código. Esse código anexa um manipulador de eventos ao <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento.
 
     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]
 
-3. No arquivo de código ThisAddIn, adicione o código a seguir à `ThisAddIn` classe. Esse código define um manipulador de eventos para <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> o evento.
+3. No arquivo de código ThisAddIn, adicione o código a seguir à `ThisAddIn` classe. Esse código define um manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento.
 
     Quando o usuário cria uma nova mensagem de email, esse manipulador de eventos adiciona texto à linha de assunto e ao corpo da mensagem.
 
@@ -96,7 +96,7 @@ ms.locfileid: "69547980"
 
    Para modificar cada nova mensagem de email, os exemplos de código anteriores usam os seguintes objetos:
 
-- O `Application` campo`ThisAddIn` da classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Outlook.Application> objeto, que representa a instância atual do Outlook.
+- O `Application` campo da `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Outlook.Application> objeto, que representa a instância atual do Outlook.
 
 - O `Inspector` parâmetro do manipulador de eventos para o <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> evento. O `Inspector` parâmetro é um <xref:Microsoft.Office.Interop.Outlook.Inspector> objeto, que representa a janela do inspetor da nova mensagem de email. Para obter mais informações, consulte [soluções do Outlook](../vsto/outlook-solutions.md).
 
@@ -137,7 +137,7 @@ ms.locfileid: "69547980"
 
 - Implantando suplementos do VSTO para Outlook. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md)
 - [Soluções do Outlook](../vsto/outlook-solutions.md)
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

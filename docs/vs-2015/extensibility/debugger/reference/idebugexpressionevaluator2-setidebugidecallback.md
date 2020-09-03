@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetIDebugIDECallback | Microsoft Docs
+title: 'IDebugExpressionEvaluator2:: SetIDebugIDECallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de8f67f8ba501a9c97ad1fd1d0de58711ae0c52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149017"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Permite que um mecanismo de depuração passar um retorno de chamada para o avaliador de expressão durante a inicialização.  
+Permite que um mecanismo de depuração passe um retorno de chamada para o avaliador de expressão durante a inicialização.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,10 +39,10 @@ int SetIDebugIDECallback (
   
 #### <a name="parameters"></a>Parâmetros  
  `pCallback`  
- [in] A interface para o retorno de chamada.  
+ no Interface para o retorno de chamada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

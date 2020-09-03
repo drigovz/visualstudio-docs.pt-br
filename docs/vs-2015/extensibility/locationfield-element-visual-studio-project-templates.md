@@ -13,22 +13,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194467"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de diálogo é habilitada, desabilitada ou ocultada para o modelo de projeto.  
+Especifica se a caixa de texto **local** na caixa de diálogo **novo projeto** está habilitada, desabilitada ou oculta para o modelo de projeto.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<LocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<LocationField>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <LocationField> Enabled/Disabled/Hidden </LocationField>  
@@ -38,37 +38,37 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto**.|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
  Os valores de texto válidos são:  
   
-- `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.  
+- `Enabled`, que especifica que a caixa **local** da caixa de diálogo **novo projeto** está habilitada.  
   
-- `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.  
+- `Disabled`, que especifica que a caixa **local** da caixa de diálogo **novo projeto** está desabilitada.  
   
-- `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.  
+- `Hidden`, que especifica que a caixa **local** da caixa de diálogo **novo projeto** está oculta.  
   
 ## <a name="remarks"></a>Comentários  
  O valor padrão é `Enabled`.  
   
- O **local** caixa de texto a **novo projeto** caixa de diálogo permite que os usuários alterem o diretório padrão no qual os novos projetos são salvos.  
+ A caixa de texto **local** na caixa de diálogo **novo projeto** permite que os usuários alterem o diretório padrão no qual novos projetos são salvos.  
   
- O valor especificado no `Location` elemento só será considerado por caixa de diálogo se o sistema de projeto subjacente suportá-lo.  
+ O valor especificado no `Location` elemento só será respeitado pela caixa de diálogo se o sistema de projeto subjacente oferecer suporte a ele.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] modelo.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -95,6 +95,6 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

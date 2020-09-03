@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589572"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho para Web codificado
@@ -85,14 +85,14 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 ## <a name="qa"></a>Perguntas e respostas
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: Posso executar mais de um teste por vez?
-**A:** Sim, use o menu com o botão direito do mouse (contexto) no **Solution Explorer**.
+**R:** Sim, use o menu com o botão direito do mouse (contexto) no **Gerenciador de soluções**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: Devo adicionar uma fonte de dados antes ou depois de gerar um teste codificado?
 **R** É mais fácil adicionar uma [fonte de dados](../test/add-a-data-source-to-a-web-performance-test.md) antes de gerar o teste codificado, pois o código será gerado automaticamente para você.
 
 Ao executar um teste codificado com uma fonte de dados, você talvez veja a seguinte mensagem de erro:
 
-**Não foi possível executar o teste \<Nome do teste> no agente \<Nome do computador>: Referência de objeto não definida para uma instância de um objeto.**
+**Não foi possível executar o teste \<Test Name> no agente \<Computer Name> : referência de objeto não definida para uma instância de um objeto.**
 
 Isso pode ocorrer porque você tem um DataSourceAttribute definido para a classe de teste, sem um DataBindingAttribute correspondente. Para resolver esse erro, adicione um DataBindingAttribute apropriado, exclua-o ou insira um comentário fora do código.
 

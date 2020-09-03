@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3beefe16f8883eb64d7d0a2641cabf9eb1f702fa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729663"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Caixa de diálogo Parar Depuração em Andamento
@@ -33,6 +33,6 @@ Essa caixa de diálogo aparece quando o depurador está tentando interromper uma
 
  **Parar agora** Clique neste botão para encerrar a sessão de depuração imediatamente. O uso de **Stop agora** será encerrado em vez de desanexar os processos que estão sendo depurados. Se você estiver depurando processos do sistema, encerrar os processos com **Parar Agora** poderá ter efeitos inesperados e indesejados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Desanexando programas](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

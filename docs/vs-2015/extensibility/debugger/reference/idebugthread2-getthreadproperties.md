@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadProperties | Microsoft Docs
+title: 'IDebugThread2:: getthreadproperties | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd32c32d2ccdb041ea34ce8d9d7ca72f2035db94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153004"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtém as propriedades que descrevem esse thread.  
+Obtém as propriedades que descrevem este thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -42,19 +42,19 @@ int GetThreadProperties ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `dwFields`  
- [in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.  
+ no Uma combinação de sinalizadores da enumeração [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) que determina quais campos do `ptp` devem ser preenchidos.  
   
  `ptp`  
- [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.  
+ [entrada, saída] Uma estrutura de [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) que é preenchida com as propriedades do thread.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- As informações retornadas desse método normalmente são mostradas na **Threads** janela de depuração.  
+ As informações retornadas desse método normalmente são mostradas na janela de depuração de **threads** .  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um simples `CProgram` objeto que implementa o [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um `CProgram` objeto simples que implementa a interface [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) .  
   
 ```cpp#  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  
@@ -92,7 +92,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }    
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5da78c33af599accf5ff3a2e09a9afb52982573a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149284"
 ---
 # <a name="counter"></a>Contador
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 ## <a name="required-options"></a>Opções obrigatórias  
  A opção Counter só pode ser usada com uma das seguintes opções:  
   
- **Iniciar:** `Trace`  
+ **Início:**`Trace`  
  Inicializa o criador de perfil para usar o método de instrumentação.  
   
- **Inicialize:** `AppName`  
+ **Iniciar:**`AppName`  
  Inicia o aplicativo especificado e o criador de perfil. O criador de perfil deve ser inicializado para usar o método de amostragem.  
   
- **Anexar:** `PID`  
+ **Anexar:**`PID`  
  Inicia o criador de perfil e anexa-o ao processo especificado pela ID de processo. O criador de perfil deve ser inicializado para usar o método de amostragem.  
   
 ## <a name="example"></a>Exemplo  
@@ -73,8 +73,8 @@ VSPerfCmd.exe /Launch:TestApp.exe /Counter:NonHaltedCycles,1000,"Non-Halted Cycl
 VSPerfCmd.exe /Start:Trace /Output:TestApp.exe.vsp /Counter:L2InstructionFetches,,"L2 Cache Instruction Fetches"  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Criação de perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Criação de perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

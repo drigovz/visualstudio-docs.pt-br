@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7e7d9a6c1c417b3802ef1f94ac51fec14bf682a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280844"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Reter um endereço IP virtual constante para um serviço de nuvem do Azure
@@ -27,7 +27,7 @@ Você pode especificar configurações de implantação no **Assistente de Publi
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Para atualizar um serviço de nuvem sem alterar o respectivo VIP
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nome do projeto. No menu de atalho, selecione **Publicar**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto. No menu de atalho, selecione **Publicar**.
 
     ![Menu Publicar](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/solution-explorer-publish-menu.png)
 

@@ -12,18 +12,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194082"
 ---
-# <a name="parent-element"></a>Elementos pai
+# <a name="parent-element"></a>Elemento pai
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um menu ou grupo pode ser qualquer menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias é opcional. Se esse elemento for omitido, o pai do `Group_Undefined:0` será assumida.  
+O pai de um botão ou caixa de combinação pode ser apenas um grupo. O pai de um menu ou grupo pode ser qualquer outro menu ou grupo. Em um [elemento CommandPlacement](../extensibility/commandplacement-element.md), esse elemento é necessário; em todas as outras instâncias, é opcional. Se esse elemento for omitido, o pai de `Group_Undefined:0` será implícito.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
@@ -36,8 +36,8 @@ O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um m
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|GUID|Necessário. Identificador de comando do GUID/ID de GUID.|  
-|id|Necessário. Identificador de comando de ID de/ID de GUID.|  
+|guid|Obrigatórios. GUID do identificador de comando de GUID/ID.|  
+|id|Obrigatórios. ID do identificador de comando de GUID/ID.|  
   
 ### <a name="child-elements"></a>Elementos filho  
  Nenhum  
@@ -46,10 +46,10 @@ O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um m
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação.|  
-|[Elemento Buttons](../extensibility/buttons-element.md)|Grupos [elemento Button](../extensibility/button-element.md) elementos.|  
-|[Elemento Menus](../extensibility/menus-element.md)|Define todos os menus que implementa um VSPackage.|  
-|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|  
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos que um VSPackage fornece ao IDE (ambiente de desenvolvimento integrado). Por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação.|  
+|[Elemento Buttons](../extensibility/buttons-element.md)|Elementos do [elemento Button](../extensibility/button-element.md) de groups.|  
+|[Elemento Menus](../extensibility/menus-element.md)|Define todos os menus que um VSPackage implementa.|  
+|[Elemento Groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comandos de um VSPackage.|  
   
-## <a name="see-also"></a>Consulte também  
- [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Consulte Também  
+ [Arquivos .Vsct (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

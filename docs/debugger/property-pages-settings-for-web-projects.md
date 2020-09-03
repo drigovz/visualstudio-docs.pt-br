@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730592"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
@@ -35,7 +35,7 @@ Você pode alterar as configurações de propriedade de uma configuração de de
 
 | **Configuração** | **Descrição** |
 | - | - |
-| **Iniciar ação** | Cabeçalho que agrupa as opções relacionadas à inicialização do aplicativo. |
+| **Iniciar Ação** | Cabeçalho que agrupa as opções relacionadas à inicialização do aplicativo. |
 | **Usar página atual** | Especifica a página atual como o ponto de inicialização para depuração. |
 | **Página específica:** | Especifica a página da Web onde você deseja iniciar a depuração. |
 | **Iniciar programa externo:** | Especifica o comando para iniciar o programa que você deseja depurar. |
@@ -47,10 +47,10 @@ Você pode alterar as configurações de propriedade de uma configuração de de
 | **Usar servidor Web padrão** | Informa para usar o servidor Web padrão. |
 | **Usar servidor personalizado** | Permite inserir uma URL base para usar como o servidor. |
 | **Depuradores** | Cabeçalho que agrupa as opções relacionadas ao tipo de depuração a ser feito. |
-| **Depuração do ASP.NET** | Permite a depuração das páginas do servidor escritas para a plataforma de desenvolvimento do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Você precisa especificar uma URL em **URL inicial**. |
+| **Depuração ASP.NET** | Permite a depuração das páginas do servidor escritas para a plataforma de desenvolvimento do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Você precisa especificar uma URL em **URL inicial**. |
 | **Depuração de código nativo** | Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado. |
 | **Depuração do SQL Server** | Permite depuração de objetos de banco de dados do SQL Server. |
 | **Depuração do Silverlight** | Permite depuração de componentes do Silverlight. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

@@ -11,10 +11,10 @@ caps.latest.revision: 41
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660681"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
@@ -26,14 +26,14 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
 
 - Visual Studio Enterprise
 
-## <a name="best-practices"></a>Práticas recomendadas
+## <a name="best-practices"></a>Práticas Recomendadas
  Use as orientações a seguir para criar um teste de IU codificado flexível.
 
 - Use o **Construtor de Teste de IU Codificado** sempre que possível.
 
 - Não modifique o arquivo `UIMap.designer.cs` diretamente. Se fizer isso, as alterações no arquivo serão substituídas.
 
-- Crie o teste como uma sequência de métodos registrados. Para saber mais sobre como registrar um método, consulte [Criando Testes de IU Codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
+- Crie o teste como uma sequência de métodos registrados. Para obter mais informações sobre como registrar um método, consulte [criando testes de interface do usuário codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
 - Cada método registrado deve agir em uma única página, formulário ou caixa de diálogo. Crie um novo método de teste para cada nova página, formulário ou caixa de diálogo.
 
@@ -45,11 +45,11 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
 
 - Se a interface do usuário (IU) for alterada, registre novamente os métodos de teste, os métodos de asserção ou as seções afetadas de um método de teste existente.
 
-- Crie um arquivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo em seu aplicativo em teste. Para obter mais informações, consulte [Testar um Aplicativo Grande com Vários Mapas de Interface do Usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Crie um arquivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo em seu aplicativo em teste. Para obter mais informações, consulte [testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - No aplicativo em teste, use nomes significativos ao criar os controles de interface do usuário. Isso confere mais significado e usabilidade aos nomes de controle gerados automaticamente.
 
-- Se você estiver criando asserções codificando com a API, crie um método para cada asserção na parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) que está no arquivo `UIMap.cs`. Chame esse método do seu método de teste para executar a asserção.
+- Se você estiver criando asserções codificando com a API, crie um método para cada asserção na parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) que está no `UIMap.cs` arquivo. Chame esse método do seu método de teste para executar a asserção.
 
 - Se estiver codificando diretamente com a API, use as propriedades e métodos nas classes geradas no arquivo `UIMap.Designer.cs` do código o tanto quanto for possível. Essas classes tornarão o trabalho mais fácil e confiável e aumentarão a produtividade.
 
@@ -70,7 +70,7 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
 
   - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
 
-  Para saber mais sobre como registrar testes de IU codificados, consulte [Usar a Automação de Interface do Usuário para Testar o Código](../test/use-ui-automation-to-test-your-code.md).
+  Para obter mais informações sobre como registrar testes de interface do usuário codificados, consulte [usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md).
 
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>O que fazer se um processo de segundo plano precisar ser concluído antes de continuar o teste
  Talvez seja necessário esperar até que o processo seja concluído para continuar com a próxima ação de interface do usuário. Para fazer isso, você pode usar <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> para esperar para que o teste continue, como no exemplo a seguir.
@@ -86,11 +86,11 @@ this.UIMap.ClickSubmit();
 Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)
-- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Configurações e plataformas com suporte para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

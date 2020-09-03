@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 209aac56f4648554ce619cbe31cef19a8ab1fed7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531788"
 ---
 # <a name="publishing-clickonce-applications"></a>Publicando aplicativos ClickOnce
@@ -51,7 +51,7 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
 ## <a name="publish-page"></a>Página Publicação  
  A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce. A tabela a seguir relaciona tópicos  
   
-|Title|Descrição|  
+|Título|Descrição|  
 |-----------|-----------------|  
 |[Como especificar onde o Visual Studio copia os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Descreve como definir onde o Visual Studio coloca os arquivos de aplicativo e os manifestos.|  
 |[Como especificar o local para onde os usuários finais serão instalados](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Descreve como definir o local onde os usuários irão baixar e instalar o aplicativo.|  
@@ -75,7 +75,7 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
 ### <a name="publish-options-dialog-box"></a>Caixa de diálogo Opções de Publicação  
  A caixa de diálogo Opções de Publicação especifica as opções de implantação do aplicativo.  
   
-|Title|Descrição|
+|Título|Descrição|
 |-|-|  
 |[Como: alterar o idioma de publicação para um aplicativo ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Descreve como especificar um idioma e uma cultura para coincidir com a versão localizada.|  
 |[Como especificar um nome do menu Iniciar para um aplicativo ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Descreve como alterar o nome de exibição de um aplicativo ClickOnce.|  
@@ -85,9 +85,9 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
 |[Como: personalizar a página da Web padrão do ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Descreve como personalizar a página da Web que é gerada automaticamente e publicada com o aplicativo.|  
 |[Como habilitar o AutoStart para instalações por CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Descreve como habilitar a Autoinicialização para que o aplicativo ClickOnce seja iniciado automaticamente quando a mídia for inserida.|  
   
-## <a name="related-topics"></a>Tópicos Relacionados  
+## <a name="related-topics"></a>Tópicos relacionados  
   
-|Title|Descrição|  
+|Título|Descrição|  
 |-----------|-----------------|  
 |[Como: criar associações de arquivo para um aplicativo ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Descreve como adicionar suporte à extensão de nome de arquivo para um aplicativo ClickOnce.|  
 |[Como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Demonstra como recuperar os parâmetros passados na URL usada para executar um aplicativo ClickOnce.|  

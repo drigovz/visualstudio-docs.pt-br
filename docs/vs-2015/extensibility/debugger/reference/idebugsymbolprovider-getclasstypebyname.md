@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetClassTypeByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6aed4010789fd5fa9bd6f77bd41c7c1ad2076b81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155145"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
@@ -44,18 +44,18 @@ int GetClassTypeByName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszClassName`  
- [in] O nome da classe.  
+ no O nome da classe.  
   
  `nameMatch`  
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.  
+ no Seleciona o tipo de correspondência, por exemplo, diferencia maiúsculas de minúsculas. Um valor da enumeração de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .  
   
  `ppField`  
- [out] Retorna o tipo de classe, conforme representado pela [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
+ fora Retorna o tipo de classe conforme representado pela interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

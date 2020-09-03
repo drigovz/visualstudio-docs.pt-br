@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605959"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Caixa de diálogo \> opções: JavaScript/TypeScript \> Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Caixa de diálogo opções: editor de texto \> JavaScript/ \> refiapoing do TypeScript
 
-Use a página **Linting** da caixa de diálogo **Opções** para definir opções para analisar o código no Editor de Código. Para acessar esta página, na barra de menus, escolha **Opções de** > **ferramentas**e, em seguida, expanda o Editor **de** > texto**JavaScript/TypeScript** > **Linting**.
+Use a página **Linting** da caixa de diálogo **Opções** para definir opções para analisar o código no Editor de Código. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções**e expanda **Editor de texto**  >  **JavaScript/TypeScript**  >  **refiapoing**.
 
 ## <a name="eslint-settings"></a>Configurações de ESLint
 

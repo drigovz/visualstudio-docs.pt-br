@@ -1,5 +1,5 @@
 ---
-title: 'Como: Incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,74 +18,74 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153776"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como: Incluir um arquivo de dados em um aplicativo ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como incluir um arquivo de dados em um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalação de aplicativo é atribuído a um diretório de dados no disco local do computador de destino, onde o aplicativo pode gerenciar seus próprios dados. Arquivos de dados podem incluir arquivos de qualquer tipo: arquivos de texto, arquivos XML ou até mesmo arquivos de banco de dados (. mdb) do Microsoft Access. Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
+Cada [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo que você instala recebe um diretório de dados no disco local do computador de destino onde o aplicativo pode gerenciar seus próprios dados. Os arquivos de dados podem incluir arquivos de qualquer tipo: Arquivos de texto, arquivos XML ou até mesmo arquivos de banco de dados do Microsoft Access (. mdb). Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Para incluir um arquivo de dados usando Mage.exe  
   
-1. Adicione o arquivo de dados ao seu diretório de aplicativo com o restante dos arquivos do seu aplicativo.  
+1. Adicione o arquivo de dados ao diretório do aplicativo com o restante dos arquivos do aplicativo.  
   
-    Normalmente, o diretório de seu aplicativo será um diretório rotulado com a versão atual da implantação — por exemplo, v1.0.0.0.  
+    Normalmente, o diretório do aplicativo será um diretório rotulado com a versão atual da implantação — por exemplo, v 1.0.0.0.  
   
-2. Atualize o manifesto do aplicativo para o arquivo de dados de lista.  
+2. Atualize o manifesto do aplicativo para listar o arquivo de dados.  
   
-    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **Mage-u v 1.0.0.0 \ Application. manifest-FromDirectory v 1.0.0.0**  
   
-    Executar esta tarefa cria novamente a lista de arquivos no manifesto do aplicativo e também gera automaticamente as assinaturas de hash.  
+    Executar essa tarefa recria a lista de arquivos no manifesto do aplicativo e também gera automaticamente as assinaturas de hash.  
   
-3. Abra o manifesto do aplicativo em seu texto preferido ou editor XML e localize o `file` elemento para o arquivo adicionado recentemente.  
+3. Abra o manifesto do aplicativo no seu editor de XML ou texto preferido e localize o `file` elemento para o arquivo adicionado recentemente.  
   
-    Se você tiver adicionado um arquivo XML denominado `Data.xml`, o arquivo será semelhante ao exemplo de código a seguir.  
+    Se você adicionou um arquivo XML chamado `Data.xml` , o arquivo será semelhante ao exemplo de código a seguir.  
   
    `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-4. Adicione o atributo `type` a esse elemento e fornecê-lo com um valor de `data`.  
+4. Adicione o atributo `type` a esse elemento e forneça-o com um valor de `data` .  
   
    `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-5. Assinar novamente o manifesto do aplicativo usando o par de chaves ou certificado e assinar novamente o manifesto de implantação.  
+5. Assine novamente o manifesto do aplicativo usando seu par de chaves ou certificado e, em seguida, assine novamente o manifesto de implantação.  
   
-    Você deve reassinar o manifesto de implantação porque seu hash do manifesto do aplicativo foi alterado.  
+    Você deve assinar novamente o manifesto de implantação porque seu hash do manifesto do aplicativo foi alterado.  
   
-    **senha do cf - cert_file - pwd de manifesto do aplicativo de s - Mage**  
+    **manifesto do aplicativo Mage-s-CF cert_file-pwd senha**  
   
-    **manifesto de aplicativo do Mage -u implantação manifesto - appm**  
+    **manifesto de implantação de Mage-u-manifesto de aplicativo APPM**  
   
-    **manifesto de implantação de -s de Mage cf - certfile - pwd senha**  
+    **manifesto de implantação de Mage-s-CF CertFile-pwd senha**  
   
 6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Para incluir um arquivo de dados usando MageUI.exe  
   
-1. Adicione o arquivo de dados ao seu diretório de aplicativo com o restante dos arquivos do seu aplicativo.  
+1. Adicione o arquivo de dados ao diretório do aplicativo com o restante dos arquivos do aplicativo.  
   
-2. Normalmente, o diretório de seu aplicativo será um diretório rotulado com a versão atual da implantação — por exemplo, v1.0.0.0.  
+2. Normalmente, o diretório do aplicativo será um diretório rotulado com a versão atual da implantação — por exemplo, v 1.0.0.0.  
   
-3. Sobre o **arquivo** menu, clique em **abrir** para abrir o manifesto do aplicativo.  
+3. No menu **arquivo** , clique em **abrir** para abrir o manifesto do aplicativo.  
   
-4. Selecione o **arquivos** guia.  
+4. Selecione a guia **arquivos** .  
   
-5. Na caixa de texto na parte superior da guia, insira o diretório que contém os arquivos do aplicativo e, em seguida, clique em **popular**.  
+5. Na caixa de texto na parte superior da guia, insira o diretório que contém os arquivos do aplicativo e clique em **popular**.  
   
-     O arquivo de dados será exibida na grade.  
+     O arquivo de dados aparecerá na grade.  
   
-6. Defina as **tipo de arquivo** o valor do arquivo de dados para **dados**.  
+6. Defina o valor do **tipo de arquivo** do arquivo de dados para **dados**.  
   
-7. Salve o manifesto do aplicativo e, em seguida, assinar novamente o arquivo.  
+7. Salve o manifesto do aplicativo e, em seguida, assine novamente o arquivo.  
   
-     MageUI.exe solicitará que você assinar novamente o arquivo.  
+     MageUI.exe solicitará que você assine novamente o arquivo.  
   
-8. Assinar novamente o manifesto de implantação  
+8. Assinar novamente seu manifesto de implantação  
   
-     Você deve reassinar o manifesto de implantação porque seu hash do manifesto do aplicativo foi alterado.  
+     Você deve assinar novamente o manifesto de implantação porque seu hash do manifesto do aplicativo foi alterado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Acessando dados locais e remotos em aplicativos ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

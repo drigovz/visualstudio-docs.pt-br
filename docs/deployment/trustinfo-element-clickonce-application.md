@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184426"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;&gt;elemento TrustInfo (aplicativo ClickOnce)
 Descreve as permissões de segurança mínimas necessárias para que o aplicativo seja executado no computador cliente.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 
@@ -87,7 +87,7 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
      Obrigatórios. Identifica a versão da permissão. Normalmente, esse valor é `1` .
 
 ## <a name="ipermission"></a>IPermission
- Opcional. Esse elemento é um filho do `PermissionSet` elemento. O `IPermission` elemento identifica totalmente uma classe de permissão no .NET Framework. O `IPermission` elemento tem os atributos a seguir, mas pode ter atributos adicionais que correspondam às propriedades na classe de permissão. Para descobrir a sintaxe de uma permissão específica, consulte os exemplos listados no arquivo Security. config.
+ Opcional. Esse elemento é um filho do `PermissionSet` elemento. O `IPermission` elemento identifica totalmente uma classe de permissão no .NET Framework. O `IPermission` elemento tem os atributos a seguir, mas pode ter atributos adicionais que correspondam às propriedades na classe de permissão. Para descobrir a sintaxe de uma permissão específica, consulte os exemplos listados no arquivo de Security.config.
 
 - `class`
 
@@ -150,7 +150,7 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
 
    `requireAdministrator`, solicitando permissões de administrador completo.
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os aplicativos serão instalados apenas com um valor de `asInvoker` . A instalação com qualquer outro valor falhará.
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos serão instalados apenas com um valor de `asInvoker` . A instalação com qualquer outro valor falhará.
 
 - `uiAccess`
 
@@ -267,6 +267,6 @@ Descreve as permissões de segurança mínimas necessárias para que o aplicativ
 </trustInfo>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

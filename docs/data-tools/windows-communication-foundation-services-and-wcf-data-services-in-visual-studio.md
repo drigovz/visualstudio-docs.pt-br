@@ -36,10 +36,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281039"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
@@ -252,7 +252,7 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-| Title | Descrição |
+| Título | Descrição |
 | - | - |
 | [Passo a passo: criando um Serviço WCF em Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fornece uma demonstração passo a passo de como criar e usar serviços WCF no Visual Studio. |
 | [Walkthrough: Criando um serviço de dados WCF com o WPF e Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fornece uma demonstração passo a passo de como criar e usar WCF Data Services no Visual Studio. |
@@ -268,6 +268,6 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -14,10 +14,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
 ms.openlocfilehash: f185451a7f12c3c0b24d74d4a24b40d986ec536f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184387"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
@@ -49,7 +49,7 @@ Os administradores que usam uma instalação de layout de rede devem modificar o
 
 ### <a name="install-a-servicing-baseline-via-the-internet"></a>Instalar uma linha de base de manutenção via internet
 
-Para uma instalação baseada na internet, adicione `--channelUri` com um manifesto de canal inexistente à linha de comando usada para iniciar a instalação. Isso desabilita o Visual Studio de usar a versão mais recente disponível para uma atualização. Aqui está um exemplo:
+Para uma instalação baseada na internet, adicione `--channelUri` com um manifesto de canal inexistente à linha de comando usada para iniciar a instalação. Isso desabilita o Visual Studio de usar a versão mais recente disponível para uma atualização. Veja um exemplo:
 
 ```cmd
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
@@ -81,7 +81,7 @@ Para uma instalação baseada na internet, execute o novo instalador de versão 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

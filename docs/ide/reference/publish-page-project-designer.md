@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926164"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
@@ -45,7 +45,7 @@ Determina se o aplicativo é executado diretamente do **Local de Publicação** 
 
 Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.
 
- **Arquivos de aplicativos**
+ **Arquivos de aplicativo**
 
 Abre a caixa de diálogo Arquivos do Aplicativo, que é usada para especificar como e o local em que os arquivos individuais são instalados.
 
@@ -83,17 +83,17 @@ Publica o aplicativo usando as configurações atuais. Equivalente ao botão **C
 
 - [Publicando aplicativos ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Como publicar um Aplicativo ClickOnce usando o Assistente de Publicação](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Como: Especificar onde o Visual Studio copia os arquivos](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Como: Especificar o local onde os usuários finais serão instalados](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Como: Especificar um link para suporte técnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Como: Especificar o modo de instalação on-line ou clickOnce ou online](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Como especificar onde o Visual Studio copia os arquivos](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Como especificar o local para onde os usuários finais serão instalados](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Como especificar um link para suporte técnico](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Como especificar o modo de instalação do ClickOnce offline ou online](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
 - [Como habilitar o AutoStart para instalações por CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Como: Definir a versão ClickOnce Publish](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Como: definir a versão de publicação do ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Como incrementar a versão da publicação do ClickOnce automaticamente](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Como: Especificar quais arquivos são publicados por ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Como especificar quais arquivos são publicados pelo ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
 - [Como instalar pré-requisitos com um aplicativo ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Como: Gerenciar atualizações para um aplicativo ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Como: Alterar o idioma de publicação para um aplicativo ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Como: Especificar um nome do menu iniciar para um aplicativo ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Como: gerenciar atualizações para um aplicativo ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Como: alterar o idioma de publicação para um aplicativo ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Como especificar um nome do menu Iniciar para um aplicativo ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
 - [Como especificar uma página de publicação para um aplicativo ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-- [Cliqueemememem em Segurança e Implantação](../../deployment/clickonce-security-and-deployment.md)
+- [Segurança e implantação do ClickOnce](../../deployment/clickonce-security-and-deployment.md)

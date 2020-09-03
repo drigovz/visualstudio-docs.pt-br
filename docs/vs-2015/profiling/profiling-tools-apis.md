@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc5477055969ca9c9424d5cd51f34f12a411579
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871591"
 ---
 # <a name="profiling-tools-apis"></a>APIs de ferramentas de criação de perfil
@@ -25,14 +25,14 @@ Você pode inserir métodos gerenciados ou nativos das APIs das ferramentas de c
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)\
  Descreve os métodos de ferramentas de criação de perfil do C++.
 
- [Criador de perfil](/previous-versions/ms242704(v=vs.140))\
+ [Profiler](/previous-versions/ms242704(v=vs.140))\
  Descreve os métodos de ferramentas de criação de perfil do .NET.
 
- [Passo a passo: usar APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)\
+ [Walkthrough: usando as APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)\
  Saiba como usar os métodos das ferramentas de criação de perfil do .NET neste exemplo completo.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)
 
-## <a name="see-also"></a>Veja também
- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Consulte Também
+ [Performance Explorer](../profiling/performance-explorer.md)

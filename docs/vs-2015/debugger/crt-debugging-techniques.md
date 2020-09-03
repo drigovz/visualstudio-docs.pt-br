@@ -1,5 +1,5 @@
 ---
-title: Técnicas de depuração de CRT | Microsoft Docs
+title: Técnicas de depuração CRT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161486"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuração CRT
@@ -40,10 +40,10 @@ Se você estiver depurando um programa que usa a biblioteca em tempo de execuç�
  [Macros para relatórios](../debugger/macros-for-reporting.md)  
  Fornece informações sobre as macros **_RPTn** e **_RPTFn** (definidas em CRTDBG.H), que substituem o uso de instruções `printf` para depuração.  
   
- [Versões de depuração de funções de alocação de heap](../debugger/debug-versions-of-heap-allocation-functions.md)  
+ [Versões de depuração das funções de alocação da pilha](../debugger/debug-versions-of-heap-allocation-functions.md)  
  Discute as versões especiais de depuração das funções de alocação de heap, incluindo: como o CRT mapeia as chamadas, os benefícios de chamá-las explicitamente, como evitar a conversão, rastrear os tipos separados de alocações em blocos do cliente e os resultados de não definir _DEBUG.  
   
- [Detalhes do heap de depuração CRT](../debugger/crt-debug-heap-details.md)  
+ [Detalhes da pilha de depuração CRT](../debugger/crt-debug-heap-details.md)  
  Fornece links para o gerenciamento de memória e o heap de depuração, tipos de blocos no heap de depuração, como usar o heap de depuração, o estado de heap que informa funções e como controlar solicitações de alocação do heap.  
   
  [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)  
