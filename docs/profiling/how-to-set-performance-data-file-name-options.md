@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548116"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Como definir opções de nome do arquivo de dados de desempenho
@@ -39,7 +39,7 @@ Você pode alterar qualquer parâmetro de nomeação na página **Geral** da cai
 
 3. Em **Relatório**, altere qualquer uma das seguintes configurações:
 
-    |Nome|Descrição|
+    |Name|Descrição|
     |-|-|
     |**Local do relatório**|Especifica um diretório para armazenar os arquivos de dados de criação de perfil.|
     |**Nome do relatório**|Especifica um nome de base para os arquivos.|

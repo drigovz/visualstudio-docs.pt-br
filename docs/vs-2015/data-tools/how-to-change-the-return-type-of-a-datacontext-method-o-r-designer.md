@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 351a2f53d8ad8c5f29821d905c292cd988390869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658836"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Como alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)
@@ -38,9 +38,9 @@ O tipo de retorno de um método de <xref:System.Data.Linq.DataContext> (criado c
 
 1. Selecione o método de <xref:System.Data.Linq.DataContext> no painel de métodos e exclua-o.
 
-2. Arraste o objeto de banco de dados de **Gerenciador de Servidores** /**Gerenciador de banco de dados** para uma área vazia do o/R Designer.
+2. Arraste o objeto de banco de dados de **Gerenciador de servidores** / **Gerenciador de banco de dados** para uma área vazia do o/R Designer.
 
 3. Salve o arquivo. dbml.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [métodos DataContext (o/r designer)](../data-tools/datacontext-methods-o-r-designer.md) [como: criar métodos DataContext mapeados para procedimentos armazenados e funções (o/r designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

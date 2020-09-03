@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8681032840f09bcc4a90df66b3a6f37d664739ab
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466570"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
@@ -51,5 +51,5 @@ no Uma matriz de propriedades a ser lida. As propriedades podem ser especificada
 ## <a name="remarks"></a>Comentários
  Se uma propriedade não for encontrada, a entrada correspondente na `rgvar` matriz conterá um `VARIANT` com o tipo de `VT_EMPTY` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

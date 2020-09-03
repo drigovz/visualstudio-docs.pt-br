@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c1849cbccc1a903716ba94d02f47a339d6ce426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658565"
 ---
 # <a name="t4-parameter-directive"></a>Diretiva de parâmetro T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Em um modelo de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a diretiva `parameter` declara Propriedades em seu código de modelo que são inicializadas a partir de valores passados do contexto externo. Você pode definir esses valores se escrever um código que invoque a transformação de texto.
+Em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelo de texto, a `parameter` diretiva declara as propriedades no código do modelo que são inicializadas a partir de valores passados do contexto externo. Você pode definir esses valores se escrever um código que invoque a transformação de texto.
 
 ## <a name="using-the-parameter-directive"></a>Usando a diretiva de parâmetro
 
@@ -27,9 +27,9 @@ Em um modelo de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a diretiva `
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- A diretiva `parameter` declara Propriedades em seu código de modelo que são inicializadas a partir de valores passados do contexto externo. Você pode definir esses valores se escrever um código que invoque a transformação de texto. Os valores podem ser passados no dicionário de `Session` ou em <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ A `parameter` diretiva declara as propriedades no código do modelo que são inicializadas a partir de valores passados do contexto externo. Você pode definir esses valores se escrever um código que invoque a transformação de texto. Os valores podem ser passados no `Session` dicionário ou em <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
- Você pode declarar parâmetros de qualquer tipo remoto. Ou seja, o tipo deve ser declarado com <xref:System.SerializableAttribute> ou deve derivar de <xref:System.MarshalByRefObject>. Isso permite que os valores de parâmetro sejam passados para o AppDomain no qual o modelo é processado.
+ Você pode declarar parâmetros de qualquer tipo remoto. Ou seja, o tipo deve ser declarado com <xref:System.SerializableAttribute> ou deve derivar de <xref:System.MarshalByRefObject> . Isso permite que os valores de parâmetro sejam passados para o AppDomain no qual o modelo é processado.
 
  Por exemplo, você pode escrever um modelo de texto com o seguinte conteúdo:
 
@@ -45,7 +45,7 @@ Line <#= i #>
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>Passando valores de parâmetro para um modelo
- Se você estiver escrevendo uma extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], como um comando de menu ou um manipulador de eventos, poderá processar um modelo usando o serviço de modelagem de texto:
+ Se você estiver escrevendo uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão como um comando de menu ou um manipulador de eventos, poderá processar um modelo usando o serviço de modelagem de texto:
 
 ```csharp
 // Get a service provider – how you do this depends on the context:
@@ -64,7 +64,7 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>Passando valores no contexto da chamada
- Como alternativa, você pode passar valores como dados lógicos em <xref:System.Runtime.Remoting.Messaging.CallContext>.
+ Como alternativa, você pode passar valores como dados lógicos no <xref:System.Runtime.Remoting.Messaging.CallContext> .
 
  O exemplo a seguir passa valores usando os dois métodos:
 
@@ -89,9 +89,9 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passando valores para um modelo de texto de tempo de execução (pré-processado)
- Normalmente, não é necessário usar a diretiva `<#@parameter#>` com modelos de texto de tempo de execução (pré-processados). Em vez disso, você pode definir um Construtor adicional ou uma propriedade settable para o código gerado, por meio do qual você passa valores de parâmetro. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Normalmente, não é necessário usar a `<#@parameter#>` diretiva com modelos de texto de tempo de execução (pré-processados). Em vez disso, você pode definir um Construtor adicional ou uma propriedade settable para o código gerado, por meio do qual você passa valores de parâmetro. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- No entanto, se você quiser usar `<#@parameter>` em um modelo de tempo de execução, poderá passar valores para ele usando o dicionário de sessão. Como exemplo, suponha que você criou o arquivo como um modelo pré-processado chamado `PreTextTemplate1`. Você pode invocar o modelo em seu programa usando o código a seguir.
+ No entanto, se você quiser usar `<#@parameter>` o em um modelo de tempo de execução, poderá passar valores para ele usando o dicionário de sessão. Como exemplo, suponha que você criou o arquivo como um modelo pré-processado chamado `PreTextTemplate1` . Você pode invocar o modelo em seu programa usando o código a seguir.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -103,7 +103,7 @@ string resultText = t.TransformText();
 
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtendo argumentos de TextTemplate. exe
+## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtendo argumentos de TextTemplate.exe
 
 > [!IMPORTANT]
-> A diretiva `parameter` não recupera valores definidos no parâmetro `–a` do utilitário `TextTransform.exe`. Para obter esses valores, defina `hostSpecific="true"` na diretiva `template` e use `this.Host.ResolveParameterValue("","","argName")`.
+> A `parameter` diretiva não recupera valores definidos no `–a` parâmetro do `TextTransform.exe` utilitário. Para obter esses valores, defina `hostSpecific="true"` na `template` diretiva e use `this.Host.ResolveParameterValue("","","argName")` .

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7322724b2118cb8b844262696a6e7cbd91a74e9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658502"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O processo de transformação de modelo de texto usa um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como a saída. Por exemplo, você pode usar modelos de texto para gerar Visual Basic C# ou código, ou pode gerar um relatório HTML.
+O processo de transformação de modelo de texto usa um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como a saída. Por exemplo, você pode usar modelos de texto para gerar Visual Basic ou código C#, ou pode gerar um relatório HTML.
 
  Três componentes fazem parte desse processo: o mecanismo, o host e os processadores de diretiva. O mecanismo controla o processo; Ele interage com o host e com o processador de diretiva para produzir o arquivo de saída. O host fornece qualquer interação com o ambiente, como localizar arquivos e assemblies. O processador de diretivas adiciona funcionalidade, como a leitura de dados de um arquivo XML ou de um banco de dados.
 
@@ -31,7 +31,7 @@ O processo de transformação de modelo de texto usa um arquivo de modelo de tex
 
 |Componente|Descrição|Personalizável (Sim/não)|
 |---------------|-----------------|------------------------------|
-|Motores|O componente do mecanismo controla o processo de transformação do modelo de texto|Nº|
+|Mecanismo|O componente do mecanismo controla o processo de transformação do modelo de texto|Não.|
 |Host|O host é a interface entre o mecanismo do e o ambiente do usuário. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é um host do processo de transformação de texto.|Sim. Você pode escrever um host personalizado.|
 |Processadores de diretiva|Os processadores de diretiva são classes que manipulam diretivas em modelos de texto. Você pode usar diretivas para fornecer dados a um modelo de texto de uma fonte de entrada.|Sim. Você pode escrever processadores de diretiva personalizada|
 
@@ -51,7 +51,7 @@ O processo de transformação de modelo de texto usa um arquivo de modelo de tex
 
 - Definindo a extensão padrão para o arquivo de saída gerado.
 
-- Manipulando erros de transformação de modelo de texto. Por exemplo, o host pode exibir os erros na interface do usuário ou gravá-los em um arquivo. (Em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], os erros são exibidos na janela de mensagem de erro.)
+- Manipulando erros de transformação de modelo de texto. Por exemplo, o host pode exibir os erros na interface do usuário ou gravá-los em um arquivo. (No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , os erros são exibidos na janela de mensagem de erro.)
 
 - Fornecer um valor de parâmetro necessário se um usuário tiver chamado uma diretiva sem fornecer um valor. O processador de diretiva pode especificar o nome da diretiva e o parâmetro e solicitar que o host forneça um valor padrão, se tiver um.
 
@@ -60,8 +60,8 @@ O processo de transformação de modelo de texto usa um arquivo de modelo de tex
 
  Um processador de diretiva pode processar uma ou mais diretivas. Ao transformar um modelo, você deve ter instalado um processador de diretiva que pode lidar com as diretivas em seu modelo.
 
- As diretivas funcionam adicionando o código na classe de transformação gerada. Você chama as diretivas de um modelo de texto e o mecanismo processa todas as chamadas de diretiva ao criar a classe de transformação gerada. Depois de chamar uma diretiva com êxito, o restante do código que você escreve em seu modelo de texto pode contar com a funcionalidade que a diretiva fornece. Por exemplo, você pode fazer a seguinte chamada para a diretiva `import` em seu modelo:
+ As diretivas funcionam adicionando o código na classe de transformação gerada. Você chama as diretivas de um modelo de texto e o mecanismo processa todas as chamadas de diretiva ao criar a classe de transformação gerada. Depois de chamar uma diretiva com êxito, o restante do código que você escreve em seu modelo de texto pode contar com a funcionalidade que a diretiva fornece. Por exemplo, você pode fazer a seguinte chamada para a `import` diretiva em seu modelo:
 
  `<#@ import namespace="System.Text" #>`
 
- O processador de diretiva padrão converte isso em uma instrução `using` na classe de transformação gerada. Em seguida, você pode usar a classe `StringBuilder` no restante do código do modelo sem qualificá-la como `System.Text.StringBuilder`.
+ O processador de diretiva padrão converte isso em uma `using` instrução na classe de transformação gerada. Em seguida, você pode usar a `StringBuilder` classe no restante do código de modelo sem qualificá-la como `System.Text.StringBuilder` .

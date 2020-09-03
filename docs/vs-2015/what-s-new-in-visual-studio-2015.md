@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bdfae6235e7efb833eca0b87631af9204b4a678
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387103"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
@@ -73,7 +73,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
  Use C#, Visual Basic, C++ ou JavaScript para criar esses [aplicativos universais do Windows](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
- O ASP.NET 5 é uma importante atualização para MVC, WebAPI e Signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos modernos baseados em nuvem. As ferramentas do Visual Studio 2015 são mais bem integradas a ferramentas de desenvolvimento para a web populares, como Bower e Grunt. Para começar, consulte as várias Postagens de blog no [blog de ferramentas e desenvolvimento da Web de rede](https://devblogs.microsoft.com/aspnet/).
+ O ASP.NET 5 é uma importante atualização para MVC, WebAPI e Signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos modernos baseados em nuvem. As ferramentas do Visual Studio 2015 são mais bem integradas a ferramentas de desenvolvimento para a web populares, como Bower e Grunt. Para começar, consulte as várias Postagens de blog no  [blog de ferramentas e desenvolvimento da Web de rede](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Área de trabalho clássica e Windows Store
  O Visual Studio 2015 continua a oferecer suporte à área de trabalho clássica e ao desenvolvimento da Windows Store. À medida que o Windows evolui, o Visual Studio irá evoluir junto com ele.  No Visual Studio 2015, as bibliotecas e linguagens para .NET, bem como C++ fizeram avanços significativos que se aplicam a todas as versões do Windows.

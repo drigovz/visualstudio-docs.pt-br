@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::CreateInstanceInServer | Microsoft Docs
+title: 'IDebugCoreServer3:: CreateInstanceInServer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1d8964a79aaeb7b90dfbc809ec547d0282d79fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205270"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
@@ -48,23 +48,23 @@ int CreateInstanceInServer(
   
 #### <a name="parameters"></a>Parâmetros  
  `szDll`  
- [in] Caminho para a dll que implementa o CLSID especificado no `clsidObject` parâmetro. Quando se trata `NULL`, em seguida, COM `CoCreateInstance` função é chamada.  
+ no Caminho para a DLL que implementa o CLSID especificado no `clsidObject` parâmetro. Se for `NULL` , a função de com `CoCreateInstance` será chamada.  
   
  `wLangId`  
- [in] Localidade do mecanismo de depuração. Isso pode ser 0 se a [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) método não deve ser chamado.  
+ no Localidade do mecanismo de depuração. Isso pode ser 0 se o método [Setlocaling](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) não deve ser chamado.  
   
  `clsidObject`  
- [in] CLSID do mecanismo de depuração para criar.  
+ no CLSID do mecanismo de depuração a ser criado.  
   
  `riid`  
- [in] ID de interface de uma interface específica para recuperar a partir do objeto de classe.  
+ no ID da interface específica a ser recuperada do objeto de classe.  
   
  `ppvObject`  
- [out] `IUnknown` interface do objeto instanciado. Converter ou empacotar esse objeto para a interface desejada.  
+ [fora] `IUnknown` interface do objeto instanciado. Converta ou realize marshaling deste objeto para a interface desejada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

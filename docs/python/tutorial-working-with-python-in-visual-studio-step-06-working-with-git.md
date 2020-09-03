@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72289709"
 ---
 # <a name="step-6-work-with-git"></a>Etapa 6: Trabalhar com o Git
@@ -32,7 +32,7 @@ Este artigo fornece uma visão geral básica da criação de um repositório Git
 
     ![Informações adicionais são exibidas ao passar o mouse sobre um controle de Git na janela do Visual Studio](media/working-with-git-01.png)
 
-1. Quando você cria um novo repositório ou seleciona qualquer um dos controles do Git, o Visual Studio abre a janela **Team Explorer**. (Você pode abrir a janela a qualquer momento com o comando Do menu > **Do'Soturação do Explorador** de exibição.) **View** A janela tem três painéis principais, que você alterna entre usar o drop-down no cabeçalho **do Team Explorer.** O painel **Sync,** que fornece operações de publicação, também aparece quando você seleciona o controle **Push** (o ícone da seta para cima):
+1. Quando você cria um novo repositório ou seleciona qualquer um dos controles do Git, o Visual Studio abre a janela **Team Explorer**. (Você pode abrir a janela a qualquer momento com a **exibição**  >  **Team Explorer** comando de menu.) A janela tem três painéis principais, que você alterna entre usar a lista suspensa no cabeçalho **Team Explorer** . O painel **sincronizar** , que fornece operações de publicação, também aparece quando você seleciona o controle de **envio por push** (o ícone de seta para cima):
 
     ![Team Explorer no Visual Studio depois de criar um repositório local](media/working-with-git-02.png)
 
@@ -48,13 +48,13 @@ Este artigo fornece uma visão geral básica da criação de um repositório Git
 
     ![Team Explorer no Visual Studio mostrando branches](media/working-with-git-04.png)
 
-1. Selecionando o controle Git com o nome do repositório **(CosineWave** em uma imagem anterior), **o Team Explorer** mostra uma interface **Connect** com a qual você pode mudar rapidamente para outro repositório inteiramente.
+1. Selecionando o controle git com o nome do repositório (**CosineWave** em uma imagem anterior), **Team Explorer** mostra uma interface de **conexão** com a qual você pode rapidamente alternar para outro repositório por completo.
 
-1. Ao usar um repositório local, as alterações confirmadas vão diretamente para o repositório. Se você estiver conectado a um repositório remoto, selecione o cabeçalho de baixa no **Team Explorer,** escolha **Sincronizar** para alternar para a seção **Sincronização** e trabalhe com os comandos **Pull** and **Fetch** apresentados lá.
+1. Ao usar um repositório local, as alterações confirmadas vão diretamente para o repositório. Se você estiver conectado a um repositório remoto, selecione o cabeçalho suspenso no **Team Explorer**, escolha **sincronizar** para alternar para a seção **sincronização** e trabalhe com os comandos **pull** e **Fetch** apresentados aqui.
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
-Para um breve passo a passo da criação de um projeto a partir de um repositório remoto do Git, consulte [Quickstart: Clone um repositório de código Python no Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
+Para obter uma breve explicação da criação de um projeto de um repositório git remoto, consulte [início rápido: clonar um repositório de código Python no Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 Para obter um tutorial muito mais abrangente, incluindo informações sobre como lidar com conflitos de mesclagem, revisar código com solicitações de pull, trocar a base e fazer cherry-picking de alterações entre branches, confira [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart).
 
@@ -64,7 +64,7 @@ Parabéns por concluir este tutorial sobre Python no Visual Studio. Neste tutori
 
 - Criar projetos e exibir o conteúdo do projeto.
 - Use o editor de código e executar um projeto.
-- Use a janela **Interativa** para desenvolver um novo código e copie facilmente esse código para o editor.
+- Use a janela **interativa** para desenvolver um novo código e copiar facilmente esse código no editor.
 - Executar um programa concluído no depurador do Visual Studio.
 - Instalar pacotes e gerenciar ambientes do Python.
 - Trabalhar com o código em um repositório do Git.

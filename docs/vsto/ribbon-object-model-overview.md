@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6ca22704345fefb4944bda7dd9f71942fe8dfb50
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71256012"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto Ribbon
@@ -26,44 +26,44 @@ ms.locfileid: "71256012"
 
  Esse modelo de objeto Ribbon consiste principalmente na [classe Ribbon](#RibbonClass), nos [eventos da faixa](#RibbonEvents)de forma e nas [classes de controle da faixa](#RibbonControlClasses)de forma.
 
-## <a name="RibbonClass"></a>Classe da faixa de Ribbon
+## <a name="ribbon-class"></a><a name="RibbonClass"></a> Classe da faixa de Ribbon
  Quando você adiciona um novo item **da faixa de visualização (Visual Designer)** a um projeto, o Visual Studio adiciona uma classe de **faixa** de uma à sua projeto. A classe **Ribbon** herda da <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.
 
  Essa classe aparece como uma classe parcial que é dividida entre o arquivo de código da faixa de Ribbon e o arquivo de código do designer de faixa de Ribbon.
 
-## <a name="RibbonEvents"></a>Eventos da faixa de das
+## <a name="ribbon-events"></a><a name="RibbonEvents"></a> Eventos da faixa de das
  A classe **da faixa** de opções contém os três eventos a seguir:
 
-|evento|Descrição|
+|Evento|Descrição|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Gerado quando o aplicativo do Office carrega a personalização da faixa de uma. O <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load> manipulador de eventos é adicionado automaticamente ao arquivo de código da faixa de Ribbon. Use esse manipulador de eventos para executar código personalizado quando a faixa de faixas for carregada.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite armazenar imagens em cache na personalização da faixa de forma quando a faixa de faixas é carregada. Você pode obter um pequeno lucro de desempenho se você escrever código para armazenar em cache as imagens da faixa de faixas nesse manipulador de eventos. Para obter mais informações, consulte <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Gerado quando a instância da faixa de Ribbon é fechada.|
 
-## <a name="RibbonControlClasses"></a>Controles da faixa de faixas
- O <xref:Microsoft.Office.Tools.Ribbon> namespace contém um tipo para cada controle que você vê no grupo de **controles da faixa** de da Office da **caixa de ferramentas**.
+## <a name="ribbon-controls"></a><a name="RibbonControlClasses"></a> Controles da faixa de faixas
+ O <xref:Microsoft.Office.Tools.Ribbon> namespace contém um tipo para cada controle que você vê no grupo de **controles da faixa** de da Office da caixa de **ferramentas**.
 
- A tabela a seguir mostra o tipo de `Ribbon` cada controle. Para obter uma descrição de cada controle, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
+ A tabela a seguir mostra o tipo de cada `Ribbon` controle. Para obter uma descrição de cada controle, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
 |Nome do controle|Nome da classe|
 |------------------|----------------|
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**Botão**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
-|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**Gallery**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Edição**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
+|**Clip**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**Grupo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Rótulo**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
+|**Rotular**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
-|**Separador**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
+|**Caractere**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
-|**Tab**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Guia**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 
- O <xref:Microsoft.Office.Tools.Ribbon> namespace usa o prefixo "Ribbon" para esses tipos para evitar uma colisão de nome com os nomes de classes de controle <xref:System.Windows.Forms> no namespace.
+ O <xref:Microsoft.Office.Tools.Ribbon> namespace usa o prefixo "Ribbon" para esses tipos para evitar uma colisão de nome com os nomes de classes de controle no <xref:System.Windows.Forms> namespace.
 
  Quando você adiciona um controle ao designer de faixa de faixas, o designer de faixa de faixas declara a classe desse controle como um campo no arquivo de código do designer de faixa de das.
 
@@ -82,21 +82,21 @@ ms.locfileid: "71256012"
 |Obter a imagem que aparece em um controle.|Use a propriedade Image.|
 |Alterar o rótulo de um controle.|Use a propriedade Label.|
 |Adicionar dados definidos pelo usuário a um controle.|Use a propriedade Tag.|
-|Obter os itens em um <xref:Microsoft.Office.Tools.Ribbon.RibbonBox>, <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>ou<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>controlo.|Use a propriedade Items.|
-|Adicionar itens a um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>controle <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Use a propriedade Items.|
-|Adicione controles a um <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>.|Use a propriedade Items.<br /><br /> Para adicionar controles ao <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> depois que a faixa de faixas é carregada no aplicativo do Office, você deve definir a <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> Propriedade como true antes que a faixa de faixas seja carregada no aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).|
-|Obter o item selecionado de um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use a propriedade SelectedItem. Para um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>, use a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propriedade.|
-|Obtenha os grupos em um <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Use a propriedade <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
-|Especifique o número de linhas e colunas que aparecem em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use as <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> propriedades <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> e.|
+|Obter os itens em um <xref:Microsoft.Office.Tools.Ribbon.RibbonBox> , <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> , <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> ou<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> controlo.|Use a propriedade Items.|
+|Adicionar itens a um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> controle, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Use a propriedade Items.|
+|Adicione controles a um <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> .|Use a propriedade Items.<br /><br /> Para adicionar controles ao <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> depois que a faixa de faixas é carregada no aplicativo do Office, você deve definir a <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> propriedade como **true** antes que a faixa de faixas seja carregada no aplicativo do Office. Para obter informações, consulte [definir propriedades que se tornam somente leitura](#SettingReadOnlyProperties).|
+|Obter o item selecionado de um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> ,<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>, ou <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Use a propriedade SelectedItem. Para um <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox> , use a <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A> propriedade.|
+|Obtenha os grupos em um <xref:Microsoft.Office.Tools.Ribbon.RibbonTab> .|Use a propriedade <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
+|Especifique o número de linhas e colunas que aparecem em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> .|Use as <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> Propriedades e.|
 
-## <a name="SettingReadOnlyProperties"></a>Definir propriedades que se tornam somente leitura
+## <a name="set-properties-that-become-read-only"></a><a name="SettingReadOnlyProperties"></a> Definir propriedades que se tornam somente leitura
  Algumas propriedades só podem ser definidas antes que a faixa de faixas seja carregada. Há três locais para definir essas propriedades:
 
 - Na janela **Propriedades** do Visual Studio.
 
 - No construtor da classe **Ribbon** .
 
-- No método da classe `ThisWorkbook`, ou `ThisDocument`doseuprojeto. `ThisAddin` `CreateRibbonExtensibilityObject`
+- No `CreateRibbonExtensibilityObject` método da `ThisAddin` `ThisWorkbook` classe, ou `ThisDocument` do seu projeto.
 
   Os menus dinâmicos fornecem algumas exceções. Você pode criar novos controles, definir suas propriedades e, em seguida, adicioná-los a um menu dinâmico em tempo de execução, mesmo depois que a faixa de faixas que contém o menu for carregada.
 
@@ -107,26 +107,26 @@ ms.locfileid: "71256012"
 ### <a name="set-properties-in-the-constructor-of-the-ribbon"></a>Definir propriedades no construtor da faixa de faixas
  Você pode definir as propriedades de um `Ribbon` controle no construtor da classe **Ribbon** . Esse código deve aparecer após a chamada para o `InitializeComponent` método. O exemplo a seguir adiciona um novo botão a um grupo se a hora atual for 17:00 hora do Pacífico (UTC-8) ou posterior.
 
- Adicione o código a seguir.
+ Adicione o código seguinte:
 
  [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
  [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
 
- Em projetos C# visuais que você atualizou do Visual Studio 2008, o Construtor aparece no arquivo de código da faixa de Ribbon.
+ Em projetos do Visual C# que você atualizou do Visual Studio 2008, o Construtor aparece no arquivo de código da faixa de medida.
 
- Em projetos Visual Basic ou em projetos visuais C# que você criou no [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], o Construtor aparece no arquivo de código do designer de faixa de Ribbon. Esse arquivo é denominado *YourRibbonItem*. Designer.cs ou *YourRibbonItem*. Designer. vb. Para ver esse arquivo em projetos Visual Basic, primeiro você deve clicar no botão **Mostrar todos os arquivos** em Gerenciador de soluções.
+ Em projetos Visual Basic ou em projetos do Visual C# que você criou no [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] , o Construtor aparece no arquivo de código do designer de faixa de Ribbon. Esse arquivo é denominado *YourRibbonItem*. Designer.cs ou *YourRibbonItem*. Designer. vb. Para ver esse arquivo em projetos Visual Basic, primeiro você deve clicar no botão **Mostrar todos os arquivos** em Gerenciador de soluções.
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>Definir propriedades no método CreateRibbonExtensibilityObject
- Você pode definir as propriedades de um `Ribbon` controle ao substituir o `CreateRibbonExtensibilityObject` método na `ThisAddin`classe, `ThisWorkbook`ou `ThisDocument` do seu projeto. Para obter mais informações sobre `CreateRibbonExtensibilityObject` o método, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
+ Você pode definir as propriedades de um `Ribbon` controle ao substituir o `CreateRibbonExtensibilityObject` método na `ThisAddin` `ThisWorkbook` classe, ou `ThisDocument` do seu projeto. Para obter mais informações sobre o `CreateRibbonExtensibilityObject` método, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
- O exemplo a seguir define as propriedades da `CreateRibbonExtensibilityObject` faixa de opções `ThisWorkbook` no método da classe de um projeto de pasta de trabalho do Excel.
+ O exemplo a seguir define as propriedades da faixa de opções no `CreateRibbonExtensibilityObject` método da `ThisWorkbook` classe de um projeto de pasta de trabalho do Excel.
 
- Adicione o código a seguir.
+ Adicione o código seguinte:
 
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-### <a name="ReadOnlyProperties"></a>Propriedades que se tornam somente leitura
+### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> Propriedades que se tornam somente leitura
  A tabela a seguir mostra as propriedades que só podem ser definidas antes que a faixa de opções seja carregada.
 
 > [!NOTE]
@@ -139,20 +139,20 @@ ms.locfileid: "71256012"
 |**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
-|**Dinâmico**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
+|**Dinâmicos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**Agrupa**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
+|**Grupos**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**ItemSize**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |**MaxLength**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**Nome**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
-|**Propostas**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
+|**Posição**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**Linhas**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
-|**SizeString**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
+|**Tamanho da**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**StartFromScratch**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Guias**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Título**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
@@ -168,31 +168,31 @@ ms.locfileid: "71256012"
 ## <a name="ribbon-control-events"></a>Eventos de controle da faixa de Ribbon
  Cada classe de controle contém um ou mais eventos. A tabela a seguir descreve esses eventos.
 
-|evento|Descrição|
+|Evento|Descrição|
 |-----------|-----------------|
 |Clique em|Ocorre quando um controle é clicado.|
 |TextChanged|Ocorre quando o texto de uma caixa de edição ou caixa de combinação é alterado.|
-|ItemsLoading|Ocorre quando a coleção Items do controle é solicitada pelo Office. O Office armazena em cache a coleção de itens até que seu código altere as propriedades do controle ou chame <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> o método.|
+|ItemsLoading|Ocorre quando a coleção Items do controle é solicitada pelo Office. O Office armazena em cache a coleção de itens até que seu código altere as propriedades do controle ou chame o <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> método.|
 |ButtonClick|Ocorre quando um botão em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> ou <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> é clicado.|
-|SelectionChanged|Ocorre quando a seleção é feita <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> em <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> uma ou é alterada.|
+|SelectionChanged|Ocorre quando a seleção é feita em uma <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> ou é <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> alterada.|
 |DialogLauncherClick|Ocorre quando o ícone do inicializador de diálogo é clicado no canto inferior direito de um grupo.|
 
  Os manipuladores de eventos para esses eventos têm os dois parâmetros a seguir.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|*sender*|Um <xref:System.Object> que representa o controle que disparou o evento.|
-|*e*|Um <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contém um <xref:Microsoft.Office.Core.IRibbonControl>. Use este controle para acessar qualquer propriedade que não esteja disponível no modelo de objeto da faixa de forma [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]fornecido pelo.|
+|*Sender*|Um <xref:System.Object> que representa o controle que disparou o evento.|
+|*Oriental*|Um <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> que contém um <xref:Microsoft.Office.Core.IRibbonControl> . Use este controle para acessar qualquer propriedade que não esteja disponível no modelo de objeto da faixa de forma fornecido pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
-- [Como: Introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Designer da faixa de opções](../vsto/ribbon-designer.md)
-- [Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Passo a passo: Atualizar os controles em uma faixa de faixas em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
-- [Como: Adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Como: Exportar uma faixa de faixas do designer de faixa de das para XML da faixa de das](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Como: Mostrar erros da interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
+- [Como: adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Como mostrar erros de interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)

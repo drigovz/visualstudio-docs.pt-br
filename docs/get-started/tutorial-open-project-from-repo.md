@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Abra um projeto a partir de um repo'
+title: 'Tutorial: abrir um projeto de um repositório'
 description: Saiba como abrir um projeto em um repositório Git ou DevOps do Azure usando o Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,25 +15,25 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180432"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abra um projeto a partir de um repo
+# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: abrir um projeto de um repositório
 
 Neste tutorial, você usará o Visual Studio para se conectar a um repositório pela primeira vez e, em seguida, abrir um projeto nele.
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -185,5 +185,5 @@ Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer u
 
 ## <a name="see-also"></a>Confira também
 
-- [Serviços Azure DevOps: Comece com a Azure Repos e o Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Comece com o Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)

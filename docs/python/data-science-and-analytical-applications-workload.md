@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154886"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalar o suporte para ciência de dados no Visual Studio
@@ -80,15 +80,15 @@ O SQL Server dá suporte ao uso do Python para análises avançadas diretamente 
 
 Aproveite as seguintes vantagens executando o código no local em que os dados já residem:
 
-- **Eliminação da movimentação de dados**: Em vez de mover dados do banco de dados para seu aplicativo ou modelo, você pode construir aplicativos no banco de dados. Essa funcionalidade elimina os obstáculos de segurança, de conformidade, de governança, de integridade, bem como um host de problemas semelhantes relacionados à movimentação de grandes quantidades de dados. Também consuma conjuntos de dados que não se ajustam à memória de um computador cliente.
+- **Eliminação da movimentação de dados**: em vez de mover dados do banco de dados para seu aplicativo ou modelo, você pode criar aplicativos no banco de dado. Essa funcionalidade elimina os obstáculos de segurança, de conformidade, de governança, de integridade, bem como um host de problemas semelhantes relacionados à movimentação de grandes quantidades de dados. Também consuma conjuntos de dados que não se ajustam à memória de um computador cliente.
 
-- **Implantação fácil**: Uma vez que você tenha um modelo pronto, implantá-lo na produção é uma questão simples de incorporá-lo em um script T-SQL. Os aplicativos cliente SQL codificados em qualquer linguagem poderão aproveitar os modelos e a inteligência por meio de uma chamada de procedimento armazenado. Nenhuma integração de linguagem específica é necessária.
+- **Implantação fácil**: quando você tiver um modelo pronto, implantá-lo na produção é uma simples questão de incorporá-lo em um script T-SQL. Os aplicativos cliente SQL codificados em qualquer linguagem poderão aproveitar os modelos e a inteligência por meio de uma chamada de procedimento armazenado. Nenhuma integração de linguagem específica é necessária.
 
-- **Desempenho e escala de nível corporativo:** Você pode usar os recursos avançados do SQL Server, como tabela de memória e índices de armazenamento de colunas com as APIs escaláveis de alto desempenho nos pacotes RevoScale. A eliminação da movimentação de dados também significa que você evitará restrições de memória do cliente à medida que os dados aumentam ou que você deseja aumentar o desempenho do aplicativo.
+- **Escala e desempenho de nível empresarial**: você pode usar os recursos avançados do SQL Server como índices de tabela e de repositório de coluna na memória com as APIs escalonáveis de alto desempenho nos pacotes RevoScale. A eliminação da movimentação de dados também significa que você evitará restrições de memória do cliente à medida que os dados aumentam ou que você deseja aumentar o desempenho do aplicativo.
 
-- **Rich extensibility**: Você pode instalar e executar qualquer um dos pacotes de código aberto mais recentes no SQL Server para criar aplicativos de deep learning e IA em enormes quantidades de dados no SQL Server. A instalação de um pacote no SQL Server é tão simples quanto instalar um pacote no computador local.
+- **Extensibilidade avançada**: você pode instalar e executar qualquer um dos pacotes de software livre mais recentes no SQL Server para criar aplicativos de aprendizado profundo e de ia em grandes quantidades de dados no SQL Server. A instalação de um pacote no SQL Server é tão simples quanto instalar um pacote no computador local.
 
-- **Ampla disponibilidade sem custo adicional**: Integrações linguísticas estão disponíveis em todas as edições do SQL Server 2017 e posteriores, incluindo a edição Express.
+- **Ampla disponibilidade sem custo adicional**: as integrações de idioma estão disponíveis em todas as edições do SQL Server 2017 e posterior, incluindo a Express Edition.
 
 Para aproveitar ao máximo a integração ao SQL Server, use o instalador do Visual Studio para instalar a carga de trabalho de **Processamento e armazenamento de dados** com a opção **SQL Server Data Tools**. A última opção habilita o SQL IntelliSense, o realce de sintaxe e a implantação.
 
@@ -111,4 +111,4 @@ O SDK do Azure para Python facilita o consumo e gerenciamento de serviços do Mi
 O Azure Notebooks (atualmente em versão prévia) fornece acesso online gratuito aos blocos de anotações do Jupyter em execução na nuvem no Microsoft Azure. Como introdução, o serviço inclui blocos de anotações de exemplo em Python, em R e em F#. Visite [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Capturas de tela de notebooks Azure com a amostra Introdução a R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![Capturas de tela de Azure Notebooks com o exemplo introdução ao R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

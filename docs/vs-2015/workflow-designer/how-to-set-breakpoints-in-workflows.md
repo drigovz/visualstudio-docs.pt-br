@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d1bbb18a9015b52b3d65cb8f8fd02674693abc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659133"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
@@ -38,5 +38,5 @@ Quando você usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], você pode definir po
 
      Como alternativa, você também pode pressionar a tecla de atalho **F9** depois de selecionar a atividade ou pode clicar com o botão direito do mouse na atividade e selecionar **ponto** de interrupção e, em seguida, **Inserir ponto de interrupção** no menu de contexto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como invocar os fluxos de trabalho de depuração do depurador de fluxo de trabalho](../workflow-designer/how-to-invoke-the-workflow-debugger.md) [com o designer de fluxo de trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md) [como: Depurar XAML com o designer de fluxo de trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

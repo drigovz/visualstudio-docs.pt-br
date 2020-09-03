@@ -1,5 +1,5 @@
 ---
-title: Estendendo a barra de Status | Microsoft Docs
+title: Estendendo a barra de status | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 28fc1155279ec624cea576b5a70a25800d4ff837
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204416"
 ---
 # <a name="extending-the-status-bar"></a>Estendendo a barra de status
@@ -23,20 +23,20 @@ ms.locfileid: "68204416"
 
 Você pode usar a barra de status do Visual Studio na parte inferior do IDE para exibir informações.  
   
- Quando você estende a barra de status, você pode exibir informações e a interface do usuário em quatro regiões: a região de comentários, a barra de progresso, a região de animação e a região de designer. A região de comentários permite exibir texto e realce o texto exibido. A barra de progresso mostra o progresso incremental para operações de curta execução como salvar um arquivo. A região de animação exibe uma animação em loop continuamente para operações de longa execução ou operação de tamanho indeterminado, tais como a criação de vários projetos em uma solução. E a região de designer mostra o número de linha e coluna do local do cursor.  
+ Ao estender a barra de status, você pode exibir informações e a interface do usuário em quatro regiões: a região de comentários, a barra de progresso, a região de animação e a região do designer. A região de comentários permite exibir texto e realçar o texto exibido. A barra de progresso mostra o progresso incremental para operações de execução curta, como salvar um arquivo. A região de animação exibe uma animação em loop contínuo para operações de longa execução ou operação de comprimento indeterminado, como a criação de vários projetos em uma solução. E a região do designer mostra o número da linha e da coluna do local do cursor.  
   
- Você pode obter a barra de status usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface (da <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> service). Além disso, qualquer objeto colocado no local em um quadro de janela pode se registrar como um objeto de cliente da barra de status ao implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interface. Sempre que uma janela é ativada, o Visual Studio consulta o objeto localizado nessa janela para o `IVsStatusbarUser` interface. Se encontrado, ele chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método sobre a interface retornada e o objeto pode atualizar a barra de status de dentro desse método. Documentar o windows, por exemplo, pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método para atualizar as informações na região de designer quando eles se tornar ativos.  
+ Você pode obter a barra de status usando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface (do <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> serviço). Além disso, qualquer objeto de site em um quadro de janela pode ser registrado como um objeto de cliente de barra de status implementando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interface. Sempre que uma janela é ativada, o Visual Studio consulta o objeto site na janela para a `IVsStatusbarUser` interface. Se for encontrado, ele chamará o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método na interface retornada e o objeto poderá atualizar a barra de status dentro desse método. As janelas de documentos, por exemplo, podem usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> método para atualizar as informações na região do designer quando elas se tornam ativas.  
   
- Os procedimentos a seguir pressupõem que você compreenda como criar um projeto VSIX e adicione um comando de menu personalizado. Para obter informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Os procedimentos a seguir pressupõem que você entenda como criar um projeto VSIX e adicionar um comando de menu personalizado. Para obter informações, consulte [criando uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## <a name="modifying-the-status-bar"></a>Modificando a barra de Status  
- Este procedimento mostra como definir e obter o texto, exibir texto estático e realçar o texto exibido na região de comentários de barra de status.  
+## <a name="modifying-the-status-bar"></a>Modificando a barra de status  
+ Este procedimento mostra como definir e obter texto, exibir texto estático e realçar o texto exibido na região de comentários da barra de status.  
   
-#### <a name="reading-and-writing-to-the-status-bar"></a>Leitura e gravação para a barra de status  
+#### <a name="reading-and-writing-to-the-status-bar"></a>Lendo e gravando na barra de status  
   
-1. Crie um projeto do VSIX chamado **TestStatusBarExtension** e adicione um comando de menu chamado **TestStatusBarCommand**.  
+1. Crie um projeto VSIX chamado **TestStatusBarExtension** e adicione um comando de menu chamado **TestStatusBarCommand**.  
   
-2. No TestStatusBarCommand.cs, substitua o código de método do manipulador de comando (MenuItemCallback) com o seguinte:  
+2. No TestStatusBarCommand.cs, substitua o código do método do manipulador de comandos (MenuItemCallback) pelo seguinte:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -70,17 +70,17 @@ Você pode usar a barra de status do Visual Studio na parte inferior do IDE para
     }  
     ```  
   
-3. Compile o código e iniciar a depuração.  
+3. Compile o código e inicie a depuração.  
   
-4. Abra o **ferramentas** menu na instância experimental do Visual Studio. Clique o **TestStatusBarCommand invocar** botão.  
+4. Abra o menu **ferramentas** na instância experimental do Visual Studio. Clique no botão **invocar TestStatusBarCommand** .  
   
-     Você deverá ver que o texto na barra agora leituras de status **"Acabamos de gravar para a barra de status."** e a caixa de mensagem que aparece tem o mesmo texto.  
+     Você deve ver que o texto na barra de status agora lê **"nós acabamos de gravar na barra de status".** e a caixa de mensagem que aparece tem o mesmo texto.  
   
 #### <a name="updating-the-progress-bar"></a>Atualizando a barra de progresso  
   
 1. Neste procedimento, mostraremos como inicializar e atualizar a barra de progresso.  
   
-2. Abra o arquivo TestStatusBarCommand.cs e substitua o método MenuItemCallback com o código a seguir:  
+2. Abra o arquivo TestStatusBarCommand.cs e substitua o método MenuItemCallback pelo código a seguir:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -104,21 +104,21 @@ Você pode usar a barra de status do Visual Studio na parte inferior do IDE para
     }  
     ```  
   
-3. Compile o código e iniciar a depuração.  
+3. Compile o código e inicie a depuração.  
   
-4. Abra o **ferramentas** menu na instância experimental do Visual Studio. Clique em **TestStatusBarCommand invocar** botão.  
+4. Abra o menu **ferramentas** na instância experimental do Visual Studio. Clique no botão **invocar TestStatusBarCommand** .  
   
-     Você deverá ver que o texto na barra agora leituras de status **"Escrevendo para a barra de progresso".** Você também deve ver a barra de progresso é atualizada a cada segundo por 20 segundos. Depois que a barra de status e a barra de progresso são desmarcadas.  
+     Você deve ver que o texto na barra de status agora lê **"gravando na barra de progresso".** Você também deve ver a barra de progresso ser atualizada a cada segundo por 20 segundos. Depois que a barra de status e a barra de progresso são limpas.  
   
 #### <a name="displaying-an-animation"></a>Exibindo uma animação  
   
-1. A barra de status exibe uma animação de loop que indica uma operação de longa execução (por exemplo, compilando vários projetos em uma solução). Se você não vir essa animação, verifique se você tem o correto **Ferramentas / opções** configurações:  
+1. A barra de status exibe uma animação de loop que indica uma operação de execução longa (por exemplo, a criação de vários projetos em uma solução). Se você não vir essa animação, certifique-se de ter as configurações de **ferramentas/opções** corretas:  
   
-     Vá para o **Ferramentas/opções / contabilidade** guia e desmarque **ajustar automaticamente experiência visual com base no desempenho do cliente**. Em seguida, marque a opção de subpropriedades **habilitar experiência visual avançada do cliente**. Agora, você poderá visualizar a animação quando você compila o projeto em sua instância experimental do Visual Studio.  
+     Vá para a guia **ferramentas/opções/geral** e desmarque a opção **ajustar automaticamente a experiência visual com base no desempenho do cliente**. Em seguida, marque a subopção **habilitar experiência visual de cliente avançada**. Agora você deve ser capaz de ver a animação ao compilar o projeto em sua instância experimental do Visual Studio.  
   
-     Neste procedimento, exibimos a animação padrão do Visual Studio que representa a criação de um projeto ou solução.  
+     Neste procedimento, exibimos a animação padrão do Visual Studio que representa a criação de um projeto ou uma solução.  
   
-2. Abra o arquivo TestStatusBarCommand.cs e substitua o método MenuItemCallback com o código a seguir:  
+2. Abra o arquivo TestStatusBarCommand.cs e substitua o método MenuItemCallback pelo código a seguir:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -139,8 +139,8 @@ Você pode usar a barra de status do Visual Studio na parte inferior do IDE para
     }  
     ```  
   
-3. Compile o código e iniciar a depuração.  
+3. Compile o código e inicie a depuração.  
   
-4. Abra o **ferramentas** menu na instância experimental do Visual Studio e clique em **TestStatusBarCommand invocar**.  
+4. Abra o menu **ferramentas** na instância experimental do Visual Studio e clique em **invocar TestStatusBarCommand**.  
   
-     Quando você vir a caixa de mensagem, você também verá a animação na barra de status na extrema direita. Quando você descartar a caixa de mensagem, a animação desaparece.
+     Quando você vir a caixa de mensagem, você também deverá ver a animação na barra de status na extrema direita. Quando você descarta a caixa de mensagem, a animação desaparece.

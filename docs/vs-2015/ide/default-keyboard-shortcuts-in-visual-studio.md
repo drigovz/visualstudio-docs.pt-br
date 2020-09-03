@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2fb9fa4d9c4faaf01ec64e9eb722af8589de5588
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548090"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
@@ -100,7 +100,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 - [Diagrama de Casos de Uso UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)
 - [Designer de interface do usuário XAML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)
 - [Exibição de Design do Editor HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)
-- [Report Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)
+- [Designer de Relatórios](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)
 - [Editor de Tecla Aceleradora do VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)
 - [Editor de XML (texto)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)
 - [Modo Código-Fonte do Editor de HTML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)
@@ -108,22 +108,22 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 - [Editor da caixa de diálogo VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)
 - [Designer de Esquema XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)
 
-## <a name="global"></a><a name="bkmk_global"></a>Geral
+## <a name="global"></a><a name="bkmk_global"></a> Geral
 
-### <a name="analyze"></a><a name="bkmk_analyze"></a>Observa
+### <a name="analyze"></a><a name="bkmk_analyze"></a> Observa
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |Analyze.NavigateBackward|Shift+Alt+3|
 |Analyze.NavigateForward|Shift+Alt+4|
 
-### <a name="architecture"></a><a name="bkmk_architecture"></a>Arquitectura
+### <a name="architecture"></a><a name="bkmk_architecture"></a> Arquitetura
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|
 
-### <a name="build"></a><a name="bkmk_build"></a>Integrado
+### <a name="build"></a><a name="bkmk_build"></a> Integrado
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -132,13 +132,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Build.Compile|Ctrl+F7|
 |Build.RunCodeAnalysisonSolution|Alt+F11|
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>Modo de Exibição de Classe menus de contexto
+### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a> Modo de Exibição de Classe menus de contexto
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|
 
-### <a name="debug"></a><a name="bkmk_debug"></a>Verificação
+### <a name="debug"></a><a name="bkmk_debug"></a> Verificação
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -177,7 +177,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Debug.ParallelWatch3|Ctrl+Shift+D, 3|
 |Debug.ParallelWatch4|Ctrl+Shift+D, 4|
 |Debug.Processes|Ctrl + Alt + Z|
-|Debug.QuickWatch|Shift+F9<br /><br /> ou o<br /><br /> Ctrl + Alt + Q|
+|Debug.QuickWatch|Shift+F9<br /><br /> ou<br /><br /> Ctrl + Alt + Q|
 |Debug.RefreshWindowsapp|Ctrl+Shift+R|
 |Debug.Registers|Ctrl+Alt+G|
 |Debug.Restart|Ctrl+Shift+F5|
@@ -206,7 +206,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Debug.Watch3|Ctrl+Alt+W, 3|
 |Debug.Watch4|Ctrl+Alt+W, 4|
 
-### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>Menus de contexto do depurador
+### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a> Menus de contexto do depurador
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -214,7 +214,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|
 
-### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>Hub de diagnóstico
+### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a> Hub de diagnóstico
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
@@ -224,9 +224,9 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 
 |Comandos||
 |--------------|-|
-|Edit.Copy|Ctrl+C<br /><br /> ou o<br /><br /> Ctrl+Ins|
-|Edit.Cut|Ctrl+X<br /><br /> ou o<br /><br /> Shift+Delete|
-|Edit.CycleClipboardRing|Ctrl+Shift+V<br /><br /> ou o<br /><br /> Ctrl+Shift+Ins|
+|Edit.Copy|Ctrl+C<br /><br /> ou<br /><br /> Ctrl+Ins|
+|Edit.Cut|Ctrl+X<br /><br /> ou<br /><br /> Shift+Delete|
+|Edit.CycleClipboardRing|Ctrl+Shift+V<br /><br /> ou<br /><br /> Ctrl+Shift+Ins|
 |Edit.Delete|Excluir|
 |Edit.Find|Ctrl+F|
 |Edit.FindAllReferences|Shift+F12|
@@ -255,16 +255,16 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.NextBookmark|Ctrl+K, Ctrl+N|
 |Edit.NextBookmarkInFolder|Ctrl+Shift+K, Ctrl+Shift+N|
 |Edit.OpenFile|Ctrl+Shift+G|
-|Edit.Paste|Ctrl+V<br /><br /> ou o<br /><br /> Shift+Ins|
+|Edit.Paste|Ctrl+V<br /><br /> ou<br /><br /> Shift+Ins|
 |Edit.PreviousBookmark|Ctrl+K, Ctrl+P|
 |Edit.PreviousBookmarkInFolder|Ctrl+Shift+K, Ctrl+Shift+P|
 |Edit.QuickFindSymbol|Shift+Alt+F12|
-|Edit.Redo|Ctrl+Y<br /><br /> ou o<br /><br /> Ctrl+Shift+Z<br /><br /> ou o<br /><br /> Shift+Alt+Backspace|
+|Edit.Redo|Ctrl+Y<br /><br /> ou<br /><br /> Ctrl+Shift+Z<br /><br /> ou<br /><br /> Shift+Alt+Backspace|
 |Edit.RefreshRemoteReferences|Ctrl+Shift+J|
 |Edit.Replace|Ctrl+H|
 |Edit.ReplaceinFiles|Ctrl+Shift+H|
 |Edit.SelectAll|Ctrl+A|
-|Edit.SelectNextControl|Tab|
+|Edit.SelectNextControl|Guia|
 |Edit.SelectPreviousControl|Shift+Tab|
 |Edit.ShowTileGrid|Digite|
 |Edit.SizeControlDown|Ctrl+Shift+Seta para Baixo|
@@ -277,9 +277,9 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.SizeControlUpGrid|Shift+Seta para Cima|
 |Edit.StopSearch|Alt+F3, S|
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|
-|Edit.Undo|Ctrl+Z<br /><br /> ou o<br /><br /> Alt+Backspace|
+|Edit.Undo|Ctrl+Z<br /><br /> ou<br /><br /> Alt+Backspace|
 
-### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>Menus de contexto do editor
+### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a> Menus de contexto do editor
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -288,9 +288,9 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |EditorContextMenus.CodeWindow.Execute|Ctrl+Alt+F5|
 |EditorContextMenus.CodeWindow.GoToView|Ctrl+M, Ctrl+G|
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|
-|EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> ou o<br /><br /> Ctrl+K, T|
+|EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> ou<br /><br /> Ctrl+K, T|
 
-### <a name="file"></a><a name="bkmk_file"></a>Grupo
+### <a name="file"></a><a name="bkmk_file"></a> Grupo
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -306,7 +306,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |File.SaveSelectedItems|Ctrl+S|
 |File.ViewinBrowser|Ctrl+Shift+W|
 
-### <a name="help"></a><a name="bkmk_help"></a>Ajuda
+### <a name="help"></a><a name="bkmk_help"></a> Ajuda
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -315,13 +315,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Help.ViewHelp|Ctrl+F1|
 |Help.WindowHelp|Shift+F1|
 
-### <a name="load-test"></a><a name="bkmk_loadtest"></a>Teste de carga
+### <a name="load-test"></a><a name="bkmk_loadtest"></a> Teste de carga
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|
 
-### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a>Outros menus de contexto
+### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a> Outros menus de contexto
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
@@ -339,14 +339,14 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Project.Publishselectedfiles|Alt+;, Alt+P|
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>Menus de contexto de projeto e solução
+### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a> Menus de contexto de projeto e solução
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+Seta para Baixo|
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+Seta para Cima|
 
-### <a name="refactor"></a><a name="bkmk_refactor"></a>Refatorar
+### <a name="refactor"></a><a name="bkmk_refactor"></a> Refatorar
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -357,39 +357,39 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Refactor.Rename|Ctrl+R, Ctrl+R|
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|
 
-### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>Gerenciador de Soluções
+### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
-|SolutionExplorer.OpenFilesFilter|Ctrl+[, O<br /><br /> ou o<br /><br /> Ctrl+[, Ctrl+O|
-|SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> ou o<br /><br /> Ctrl+[, Ctrl+P|
-|SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> ou o<br /><br /> Ctrl+[, Ctrl+S|
+|SolutionExplorer.OpenFilesFilter|Ctrl+[, O<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+O|
+|SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+P|
+|SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> ou<br /><br /> Ctrl+[, Ctrl+S|
 
-### <a name="team"></a><a name="bkmk_team"></a>Time
+### <a name="team"></a><a name="bkmk_team"></a> Time
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
-|Team.Git.GoToGitBranches|Ctrl+0, Ctrl+N<br /><br /> ou o<br /><br /> Ctrl+0, N|
-|Team.Git.GoToGitChanges|Ctrl+0, Ctrl+G<br /><br /> ou o<br /><br /> Ctrl+0, G|
-|Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> ou o<br /><br /> Ctrl+0, O|
+|Team.Git.GoToGitBranches|Ctrl+0, Ctrl+N<br /><br /> ou<br /><br /> Ctrl+0, N|
+|Team.Git.GoToGitChanges|Ctrl+0, Ctrl+G<br /><br /> ou<br /><br /> Ctrl+0, G|
+|Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> ou<br /><br /> Ctrl+0, O|
 |Team.TeamExplorerSearch|Ctrl+'|
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Menus de contexto do Team Foundation
+### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a> Menus de contexto do Team Foundation
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
-|TeamFoundationContextMenus.Commands.GoToBuilds|Ctrl+0, Ctrl+B<br /><br /> ou o<br /><br /> Ctrl+0, B|
-|TeamFoundationContextMenus.Commands.GoToConnect|Ctrl+0, Ctrl+C<br /><br /> ou o<br /><br /> Ctrl+0, C|
-|TeamFoundationContextMenus.Commands.GoToDocuments|Ctrl+0, Ctrl+D<br /><br /> ou o<br /><br /> Ctrl+0, D|
-|TeamFoundationContextMenus.Commands.GoToHome|Ctrl+0, Ctrl+H<br /><br /> ou o<br /><br /> Ctrl+0, H|
-|TeamFoundationContextMenus.Commands.GoToMyWork|Ctrl+0, Ctrl+M<br /><br /> ou o<br /><br /> Ctrl+0, M|
-|TeamFoundationContextMenus.Commands.GoToPendingChanges|Ctrl+0, Ctrl+P<br /><br /> ou o<br /><br /> Ctrl+0, P|
-|TeamFoundationContextMenus.Commands.GoToReports|Ctrl+0, Ctrl+R<br /><br /> ou o<br /><br /> Ctrl+0, R|
-|TeamFoundationContextMenus.Commands.GoToSettings|Ctrl+0, Ctrl+S<br /><br /> ou o<br /><br /> Ctrl+0, S|
-|TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> ou o<br /><br /> Ctrl+0, A|
-|TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> ou o<br /><br /> Ctrl+0, W|
+|TeamFoundationContextMenus.Commands.GoToBuilds|Ctrl+0, Ctrl+B<br /><br /> ou<br /><br /> Ctrl+0, B|
+|TeamFoundationContextMenus.Commands.GoToConnect|Ctrl+0, Ctrl+C<br /><br /> ou<br /><br /> Ctrl+0, C|
+|TeamFoundationContextMenus.Commands.GoToDocuments|Ctrl+0, Ctrl+D<br /><br /> ou<br /><br /> Ctrl+0, D|
+|TeamFoundationContextMenus.Commands.GoToHome|Ctrl+0, Ctrl+H<br /><br /> ou<br /><br /> Ctrl+0, H|
+|TeamFoundationContextMenus.Commands.GoToMyWork|Ctrl+0, Ctrl+M<br /><br /> ou<br /><br /> Ctrl+0, M|
+|TeamFoundationContextMenus.Commands.GoToPendingChanges|Ctrl+0, Ctrl+P<br /><br /> ou<br /><br /> Ctrl+0, P|
+|TeamFoundationContextMenus.Commands.GoToReports|Ctrl+0, Ctrl+R<br /><br /> ou<br /><br /> Ctrl+0, R|
+|TeamFoundationContextMenus.Commands.GoToSettings|Ctrl+0, Ctrl+S<br /><br /> ou<br /><br /> Ctrl+0, S|
+|TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> ou<br /><br /> Ctrl+0, A|
+|TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> ou<br /><br /> Ctrl+0, W|
 
-### <a name="test"></a><a name="bkmk_test"></a>Testar
+### <a name="test"></a><a name="bkmk_test"></a> Testar
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -415,7 +415,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|
 |Tools.GoToCommandLine|Ctrl+/|
 
-### <a name="view"></a><a name="bkmk_view"></a>Exibição
+### <a name="view"></a><a name="bkmk_view"></a> Exibição
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -428,12 +428,12 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.CallHierarchy|Ctrl+Alt+K|
 |View.ClassView|Ctrl+Shift+C|
 |View.ClassViewGoToSearchCombo|Ctrl+K, Ctrl+V|
-|View.CodeDefinitionWindow|Ctrl+\\, D<br /><br /> ou o<br /><br /> Ctrl+\\, Ctrl+D|
+|View.CodeDefinitionWindow|Ctrl+\\, D<br /><br /> ou<br /><br /> Ctrl+\\, Ctrl+D|
 |View.CommandWindow|Ctrl+Alt+A|
 |View.DataSources|Shift+Alt+D|
 |View.DocumentOutline|Ctrl+Alt+T|
 |View.EditLabel|F2|
-|View.ErrorList|Ctrl+\\, E<br /><br /> ou o<br /><br /> Ctrl+\\, Ctrl+E|
+|View.ErrorList|Ctrl+\\, E<br /><br /> ou<br /><br /> Ctrl+\\, Ctrl+E|
 |View.F#Interactive|Ctrl + Alt + F|
 |View.FindSymbolResults|Ctrl+Alt+F12|
 |View.Forward|Alt+Seta para a Direita|
@@ -442,7 +442,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.NavigateBackward|Ctrl+-|
 |View.NavigateForward|Ctrl+Shift+-|
 |View.NextError|Ctrl+Shift+F12|
-|View.Notifications|Ctrl+W, N<br /><br /> ou o<br /><br /> Ctrl+W, Ctrl+N|
+|View.Notifications|Ctrl+W, N<br /><br /> ou<br /><br /> Ctrl+W, Ctrl+N|
 |View.ObjectBrowser|Ctrl+Alt+J|
 |View.ObjectBrowserGoToSearchCombo|Ctrl+K, Ctrl+R|
 |View.Output|Ctrl+Alt+O|
@@ -451,10 +451,10 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.PropertyPages|Shift+F4|
 |View.ResourceView|Ctrl+Shift+E|
 |View.ServerExplorer|Ctrl + Alt + S|
-|View.ShowSmartTag|Shift+Alt+F10<br /><br /> ou o<br /><br /> Ctrl+.|
+|View.ShowSmartTag|Shift+Alt+F10<br /><br /> ou<br /><br /> Ctrl+.|
 |View.SolutionExplorer|Ctrl+Alt+L|
 |View.SQLServerObjectExplorer|Ctrl+\\, Ctrl+S|
-|View.TaskList|Ctrl+\\, T<br /><br /> ou o<br /><br /> Ctrl+\\, Ctrl+T|
+|View.TaskList|Ctrl+\\, T<br /><br /> ou<br /><br /> Ctrl+\\, Ctrl+T|
 |View.TfsTeamExplorer|Ctrl+\\, Ctrl+M|
 |View.Toolbox|Ctrl+Alt+X|
 |View.UMLModelExplorer|Ctrl+\\, Ctrl+U|
@@ -464,7 +464,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.ZoomIn|Ctrl+Shift+.|
 |View.ZoomOut|Ctrl+Shift+,|
 
-### <a name="window"></a><a name="bkmk_window"></a>Window
+### <a name="window"></a><a name="bkmk_window"></a> Window
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -478,14 +478,14 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Window.NextDocumentWindowNav|Ctrl+Tab|
 |Window.NextPane|Alt+F6|
 |Window.NextSplitPane|F6|
-|Window.NextTab|Ctrl+Alt+PgDn<br /><br /> ou o<br /><br /> Ctrl+PgDn|
+|Window.NextTab|Ctrl+Alt+PgDn<br /><br /> ou<br /><br /> Ctrl+PgDn|
 |Window.NextTabandAddtoSelection|Ctrl+Shift+Alt+PgDn|
 |Window.NextToolWindowNav|Alt+F7|
 |Window.PreviousDocumentWindow|Ctrl+Shift+F6|
 |Window.PreviousDocumentWindowNav|Ctrl+Shift+Tab|
 |Window.PreviousPane|Shift+Alt+F6|
 |Window.PreviousSplitPane|Shift+F6|
-|Window.PreviousTab|Ctrl+Alt+PgUp<br /><br /> ou o<br /><br /> Ctrl+PgUp|
+|Window.PreviousTab|Ctrl+Alt+PgUp<br /><br /> ou<br /><br /> Ctrl+PgUp|
 |Window.PreviousTabandAddtoSelection|Ctrl+Shift+Alt+PgUp|
 |Window.PreviousToolWindowNav|Shift+Alt+F7|
 |Window.QuickLaunch|Ctrl+Q|
@@ -495,7 +495,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Window.SolutionExplorerSearch|Ctrl+;|
 |Window.WindowSearch|Alt+`|
 
-### <a name="azure"></a><a name="bkmk_windowsazure"></a>Azure
+### <a name="azure"></a><a name="bkmk_windowsazure"></a> Azure
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -517,7 +517,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.EntityDataModelBrowser|Ctrl+1|
 |View.EntityDataModelMappingDetails|Ctrl+2|
 
-## <a name="class-diagram"></a><a name="bkmk_classDiagram"></a>Diagrama de classe
+## <a name="class-diagram"></a><a name="bkmk_classDiagram"></a> Diagrama de classe
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -529,7 +529,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.RemovefromDiagram|Excluir|
 |View.ViewCode|Digite|
 
-## <a name="coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a>Editor de teste de interface do usuário codificado
+## <a name="coded-ui-test-editor"></a><a name="bkmk_codedUItest"></a> Editor de teste de interface do usuário codificado
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -540,14 +540,14 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|
 
-## <a name="dataset-editor"></a><a name="bkmk_dataset"></a>Editor de DataSet
+## <a name="dataset-editor"></a><a name="bkmk_dataset"></a> Editor de DataSet
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |OtherContextMenus.ColumnContext.InsertColumn|Inserir|
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|
 
-## <a name="difference-viewer"></a><a name="bkmk_diff"></a>Visualizador de diferenças
+## <a name="difference-viewer"></a><a name="bkmk_diff"></a> Visualizador de diferenças
 
 |Comandos|Atalhos do teclado|
 |-|-|
@@ -571,13 +571,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |DOMExplorer.SelectElement|Ctrl+B|
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|
 
-## <a name="f-interactive"></a><a name="bkmk_FSharp"></a>F# Interativo
+## <a name="f-interactive"></a><a name="bkmk_FSharp"></a> F# Interativo
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|
 
-## <a name="graph-document-editor"></a><a name="bkmk_graphDoc"></a>Editor de documento de gráfico
+## <a name="graph-document-editor"></a><a name="bkmk_graphDoc"></a> Editor de documento de gráfico
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -585,11 +585,11 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.BothDependencies|B|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.IncomingDependencies|I|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Advanced.Select.OutgoingDependencies|O|
-|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Shift+K<br /><br /> ou o<br /><br /> Ctrl+E, C|
+|ArchitectureContextMenus.DirectedGraphContextMenu.NewComment|Ctrl+Shift+K<br /><br /> ou<br /><br /> Ctrl+E, C|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Excluir|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-## <a name="graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a>Diagnóstico de Gráficos
+## <a name="graphics-diagnostics"></a><a name="bkmk_graphicsDebugger"></a> Diagnóstico de Gráficos
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -603,13 +603,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Gráficos.Ampliar|Shift+Alt+=|
 |Gráficos.Reduzir|Shift+Alt+-|
 
-## <a name="html-editor"></a><a name="bkmk_HTMLeditor"></a>Editor de HTML
+## <a name="html-editor"></a><a name="bkmk_HTMLeditor"></a> Editor de HTML
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|
 
-## <a name="html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a>Modo de design do editor de HTML
+## <a name="html-editor-design-view"></a><a name="bkmk_HTMLeditorDesign"></a> Modo de design do editor de HTML
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -632,7 +632,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |View.ViewMarkup|Shift+F7|
 |Window.PreviousTab|Ctrl+PgUp|
 
-## <a name="html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a>Exibição de origem do editor de HTML
+## <a name="html-editor-source-view"></a><a name="bkmk_HTMLeditorSource"></a> Exibição de origem do editor de HTML
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -671,7 +671,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|
 
-## <a name="microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a>Microsoft SQL Server Data Tools, comparação de esquemas
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a><a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, comparação de esquemas
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -682,27 +682,27 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |SQL.SSDTSchemaCompareStop|Alt+Break|
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|
 
-## <a name="microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a>Ferramentas de dados do Microsoft SQL Server, Designer de Tabela
+## <a name="microsoft-sql-server-data-tools-table-designer"></a><a name="bkmk_TableDesigner"></a> Ferramentas de dados do Microsoft SQL Server, Designer de Tabela
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |CommitAllEdits|Shift+Alt+U|
-|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+E|
-|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+Q|
-|SQL.MovetoSchema|Ctrl+R, M<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+M|
-|SQL.Rename|F2<br /><br /> ou o<br /><br /> Ctrl+R, R<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+R|
+|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+E|
+|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+Q|
+|SQL.MovetoSchema|Ctrl+R, M<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+M|
+|SQL.Rename|F2<br /><br /> ou<br /><br /> Ctrl+R, R<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+R|
 |ViewFileInScriptPanel|Shift+Alt+PgDn|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a>Ferramentas de dados Microsoft SQL Server, Editor T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a><a name="bkmk_TSQLeditor"></a> Ferramentas de dados Microsoft SQL Server, Editor T-SQL
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
 |CommitAllEdits|Shift+Alt+U|
 |SQL.ExecuteWithDebugger|Alt+F5|
-|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+E|
-|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+Q|
-|SQL.MovetoSchema|Ctrl+R, M<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+M|
-|SQL.Rename|F2<br /><br /> ou o<br /><br /> Ctrl+R, R<br /><br /> ou o<br /><br /> Ctrl+R, Ctrl+R|
+|SQL.ExpandWildcards|Ctrl+R, E<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+E|
+|SQL.FullyqualifyNames|Ctrl+R, Q<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+Q|
+|SQL.MovetoSchema|Ctrl+R, M<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+M|
+|SQL.Rename|F2<br /><br /> ou<br /><br /> Ctrl+R, R<br /><br /> ou<br /><br /> Ctrl+R, Ctrl+R|
 |SQL.TSqlEditorCancelQuery|Alt+Break|
 |SQL.TSqlEditorExecuteQuery|Ctrl+Shift+E|
 |SQL.TSqlEditorResultsAsFile|Ctrl+D, F|
@@ -714,7 +714,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a>Ferramentas de dados Microsoft SQL Server, Editor T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a><a name="bkmk_linkfix"></a> Ferramentas de dados Microsoft SQL Server, Editor T-SQL PDW
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -729,13 +729,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |TSqlEditorCloneQuery|Ctrl+Alt+N|
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|
 
-## <a name="page-inspector"></a><a name="bkmk_PageInspector"></a>Inspetor de Página
+## <a name="page-inspector"></a><a name="bkmk_PageInspector"></a> Inspetor de Página
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-## <a name="query-designer"></a><a name="bkmk_QueryDesigner"></a>Designer de consulta
+## <a name="query-designer"></a><a name="bkmk_QueryDesigner"></a> Designer de consulta
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -748,7 +748,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="query-results"></a><a name="bkmk_QueryResults"></a>Resultados da consulta
+## <a name="query-results"></a><a name="bkmk_QueryResults"></a> Resultados da consulta
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -756,7 +756,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |SQL.QueryResultsRefresh|Shift+Alt+R|
 |SQL.QueryResultsStop|Alt+Break|
 
-## <a name="report-designer"></a><a name="bkmk_ReportDesigner"></a>Report Designer
+## <a name="report-designer"></a><a name="bkmk_ReportDesigner"></a> Report Designer
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -765,7 +765,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.CharLeftExtend|Shift+Seta para a Esquerda|
 |Edit.CharRight|Seta para a Direita|
 |Edit.CharRightExtend|Shift+Seta para a Direita|
-|Edit.InsertTab|Tab|
+|Edit.InsertTab|Guia|
 |Edit.LineDown|Seta para Baixo|
 |Edit.LineDownExtend|Shift+Seta para Baixo|
 |Edit.LineUp|Seta para Cima|
@@ -782,7 +782,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.TabLeft|Shift+Tab|
 |View.ReportData|Ctrl+Alt+D|
 
-## <a name="sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a>Diagrama de sequência
+## <a name="sequence-diagram"></a><a name="bkmk_SequenceDiagram"></a> Diagrama de sequência
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -798,7 +798,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.SelectionCancel|Esc|
 |View.ViewCode|F7|
 
-## <a name="solution-explorer"></a><a name="bkmk_SolutionExplorer"></a>Gerenciador de Soluções
+## <a name="solution-explorer"></a><a name="bkmk_SolutionExplorer"></a> Gerenciador de Soluções
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
@@ -829,7 +829,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|
 |View.Refresh|F5|
 
-## <a name="team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a>Editor de detalhes de compilação do Team Foundation
+## <a name="team-foundation-build-detail-editor"></a><a name="bkmk_TFBuild"></a> Editor de detalhes de compilação do Team Foundation
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
@@ -841,11 +841,11 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-## <a name="text-editor"></a><a name="bkmk_TextEditor"></a>Editor de texto
+## <a name="text-editor"></a><a name="bkmk_TextEditor"></a> Editor de texto
 
 |                             Comandos                              |                  Atalhos do teclado                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
-|                          Edit.BreakLine                           |     Digite<br /><br /> ou o<br /><br /> Shift+Enter      |
+|                          Edit.BreakLine                           |     Digite<br /><br /> ou<br /><br /> Shift+Enter      |
 |                           Edit.CharLeft                           |                      Seta para a Esquerda                       |
 |                        Edit.CharLeftExtend                        |                   Shift+Seta para a Esquerda                    |
 |                     Edit.CharLeftExtendColumn                     |                 Shift+Alt+Seta para a Esquerda                  |
@@ -859,10 +859,10 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |                         Edit.CollapseTag                          |                    Ctrl+M, Ctrl+T                     |
 |                    Edit.CollapsetoDefinitions                     |                    Ctrl+M, Ctrl+O                     |
 |                       Edit.CommentSelection                       |                    Ctrl+K, Ctrl+C                     |
-|                         Edit.CompleteWord                         | Ctrl+Space<br /><br /> ou o<br /><br /> Alt+Seta para a Direita |
+|                         Edit.CompleteWord                         | Ctrl+Space<br /><br /> ou<br /><br /> Alt+Seta para a Direita |
 |                       Edit.CopyParameterTip                       |                   Ctrl+Shift+Alt+C                    |
 |                     Edit.DecreaseFilterLevel                      |                         Alt+,                         |
-|                       Edit.DeleteBackwards                        |   Backspace<br /><br /> ou o<br /><br /> Shift+Bkspce   |
+|                       Edit.DeleteBackwards                        |   Backspace<br /><br /> ou<br /><br /> Shift+Bkspce   |
 |                  Edit.DeleteHorizontalWhiteSpace                  |                    Ctrl+K, Ctrl+\                     |
 |                         Edit.DocumentEnd                          |                       Ctrl+End                        |
 |                      Edit.DocumentEndExtend                       |                    Ctrl+Shift+End                     |
@@ -877,7 +877,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |                        Edit.HideSelection                         |                    Ctrl+M, Ctrl+H                     |
 |                     Edit.IncreaseFilterLevel                      |                         Alt+.                         |
 |                      Edit.IncrementalSearch                       |                        Ctrl+I                         |
-|                          Edit.InsertTab                           |                          Tab                          |
+|                          Edit.InsertTab                           |                          Guia                          |
 |                           Edit.LineCut                            |                        Ctrl+L                         |
 |                          Edit.LineDelete                          |                     Ctrl+Shift+L                      |
 |                           Edit.LineDown                           |                      Seta para Baixo                       |
@@ -951,31 +951,31 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       Alt+PgUp                        |
 
-## <a name="uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a>Diagrama de atividade UML
+## <a name="uml-activity-diagram"></a><a name="bkmk_UMLactivityDiagram"></a> Diagrama de atividade UML
 
 |Comando|Atalho de teclado|
 |-------------|-----------------------|
 |Edit.Delete|Shift+Del|
 
-## <a name="uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a>Diagrama de classes UML
+## <a name="uml-class-diagram"></a><a name="bkmk_UMLclassDiagram"></a> Diagrama de classes UML
 
 |Comando|Atalho de teclado|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a>Diagrama de componente UML
+## <a name="uml-component-diagram"></a><a name="bkmk_UMLcomponentDiagram"></a> Diagrama de componente UML
 
 |Comando|Atalho de teclado|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a>Diagrama de caso de uso UML
+## <a name="uml-use-case-diagram"></a><a name="bkmk_UMLusecaseDiagram"></a> Diagrama de caso de uso UML
 
 |Comando|Atalho de teclado|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|Shift+Del|
 
-## <a name="vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a>Editor de aceleração de VC
+## <a name="vc-accelerator-editor"></a><a name="bkmk_vcaccelerator"></a> Editor de aceleração de VC
 
 |Comandos|Atalhos de teclado|
 |--------------|------------------------|
@@ -1010,13 +1010,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Format.CenterVertical|Ctrl+F9|
 |Format.CheckMnemonics|Ctrl+M|
 |Format.SizetoContent|Shift+F7|
-|Format.SpaceAcross|Alt+Seta para a Direita<br /><br /> ou o<br /><br /> Alt+Seta para a Esquerda|
-|Format.SpaceDown|Alt+Seta para Cima<br /><br /> ou o<br /><br /> Alt+Seta para Baixo|
+|Format.SpaceAcross|Alt+Seta para a Direita<br /><br /> ou<br /><br /> Alt+Seta para a Esquerda|
+|Format.SpaceDown|Alt+Seta para Cima<br /><br /> ou<br /><br /> Alt+Seta para Baixo|
 |Format.TabOrder|Ctrl+D|
 |Format.TestDialog|Ctrl+T|
 |Format.ToggleGuides|Ctrl+G|
 
-## <a name="vc-image-editor"></a><a name="bkmk_vcimageeditor"></a>Editor de imagem VC
+## <a name="vc-image-editor"></a><a name="bkmk_vcimageeditor"></a> Editor de imagem VC
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -1037,14 +1037,14 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Image.MagnificationTool|Ctrl+M|
 |Image.Magnify|Ctrl+Shift+M|
 |Image.NewImageType|Inserir|
-|Image.NextColor|Ctrl+]<br /><br /> ou o<br /><br /> Ctrl+Seta para a Direita|
-|Image.NextRightColor|Ctrl+Shift+]<br /><br /> ou o<br /><br /> Ctrl+Shift+Seta para a Direita|
+|Image.NextColor|Ctrl+]<br /><br /> ou<br /><br /> Ctrl+Seta para a Direita|
+|Image.NextRightColor|Ctrl+Shift+]<br /><br /> ou<br /><br /> Ctrl+Shift+Seta para a Direita|
 |Image.OutlinedEllipseTool|Shift+Alt+P|
 |Image.OutlinedRectangleTool|Shift+Alt+R|
 |Image.OutlinedRoundedRectangleTool|Shift+Alt+W|
 |Image.PencilTool|Ctrl+I|
-|Image.PreviousColor|Ctrl+[<br /><br /> ou o<br /><br /> Ctrl+Seta para a Esquerda|
-|Image.PreviousRightColor|Ctrl+Shift+[<br /><br /> ou o<br /><br /> Ctrl+Shift+Seta para a Esquerda|
+|Image.PreviousColor|Ctrl+[<br /><br /> ou<br /><br /> Ctrl+Seta para a Esquerda|
+|Image.PreviousRightColor|Ctrl+Shift+[<br /><br /> ou<br /><br /> Ctrl+Shift+Seta para a Esquerda|
 |Image.RectangleSelectionTool|Shift+Alt+S|
 |Image.RectangleTool|Alt+R|
 |Image.Rotate90Degrees|Ctrl+Shift+H|
@@ -1055,16 +1055,16 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Image.SmallerBrush|Ctrl+-|
 |Image.TextTool|Ctrl+T|
 |Image.UseSelectionasBrush|Ctrl+U|
-|Image.ZoomIn|Ctrl+Shift+.<br /><br /> ou o<br /><br /> Ctrl+Seta para Cima|
-|Image.ZoomOut|Ctrl+Shift+,<br /><br /> ou o<br /><br /> Ctrl+Seta para Baixo|
+|Image.ZoomIn|Ctrl+Shift+.<br /><br /> ou<br /><br /> Ctrl+Seta para Cima|
+|Image.ZoomOut|Ctrl+Shift+,<br /><br /> ou<br /><br /> Ctrl+Seta para Baixo|
 
-## <a name="vc-string-editor"></a><a name="bkmk_vcstringeditor"></a>Editor de cadeia de caracteres VC
+## <a name="vc-string-editor"></a><a name="bkmk_vcstringeditor"></a> Editor de cadeia de caracteres VC
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |Edit.NewString|Inserir|
 
-## <a name="view-designer"></a><a name="bkmk_viewDesigner"></a>Designer de exibição
+## <a name="view-designer"></a><a name="bkmk_viewDesigner"></a> Designer de exibição
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -1077,13 +1077,13 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |QueryDesigner.Results|Ctrl+4|
 |QueryDesigner.SQL|Ctrl+3|
 
-## <a name="visual-studio"></a><a name="bkmk_visualstudio"></a>Visual Studio
+## <a name="visual-studio"></a><a name="bkmk_visualstudio"></a> Visual Studio
 
 |Comando|Atalho do Teclado|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|
 
-## <a name="windows-forms-designer"></a><a name="bkmk_wfdesigner"></a>Designer de Formulários do Windows
+## <a name="windows-forms-designer"></a><a name="bkmk_wfdesigner"></a> Designer de Formulários do Windows
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -1096,7 +1096,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Edit.DocumentEndExtend|Shift+End|
 |Edit.DocumentStart|Página Inicial|
 |Edit.DocumentStartExtend|Shift+Home|
-|Edit.InsertTab|Tab|
+|Edit.InsertTab|Guia|
 |Edit.LineDown|Seta para Baixo|
 |Edit.LineDownExtend|Shift+Seta para Cima|
 |Edit.LineUp|Seta para Cima|
@@ -1131,7 +1131,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-## <a name="work-item-results-view"></a><a name="bkmk_WIresultsview"></a>Exibição dos resultados do item de trabalho
+## <a name="work-item-results-view"></a><a name="bkmk_WIresultsview"></a> Exibição dos resultados do item de trabalho
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
@@ -1144,31 +1144,31 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |Team.Refresh|F5|
 |Window.Toggle|Shift+Alt+V|
 
-## <a name="workflow-designer"></a><a name="bkmk_workflowdesigner"></a>Designer de Fluxo de Trabalho
+## <a name="workflow-designer"></a><a name="bkmk_workflowdesigner"></a> Designer de Fluxo de Trabalho
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|
-|Edit.CompleteWord|Ctrl+K, W<br /><br /> ou o<br /><br /> Ctrl+K, Ctrl+W<br /><br /> ou o<br /><br /> Ctrl+Barra de espaços<br /><br /> ou o<br /><br /> Alt+Seta para a Direita|
+|Edit.CompleteWord|Ctrl+K, W<br /><br /> ou<br /><br /> Ctrl+K, Ctrl+W<br /><br /> ou<br /><br /> Ctrl+Barra de espaços<br /><br /> ou<br /><br /> Alt+Seta para a Direita|
 |Edit.DecreaseFilterLevel|Alt+,|
 |Edit.IncreaseFilterLevel|Alt+.|
-|Edit.ListMembers|Ctrl+K, L<br /><br /> ou o<br /><br /> Ctrl+K, Ctrl+L<br /><br /> ou o<br /><br /> Ctrl+J|
-|Edit.ParameterInfo|Ctrl+K, P<br /><br /> ou o<br /><br /> Ctrl+K, Ctrl+P<br /><br /> ou o<br /><br /> Ctrl+Shift+Barra de espaços|
-|Edit.QuickInfo|Ctrl+K, I<br /><br /> ou o<br /><br /> Ctrl+K, Ctrl+I|
-|WorkflowDesigner.Collapse|Ctrl+E, Ctrl+C<br /><br /> ou o<br /><br /> Ctrl+E, C|
-|WorkflowDesigner.CollapseAll|ou o|
-|WorkflowDesigner.ConnectNodes|Ctrl+E, Ctrl+F<br /><br /> ou o<br /><br /> Ctrl+E, F|
-|WorkflowDesigner.CreateVariable|Ctrl+E, Ctrl+N<br /><br /> ou o<br /><br /> Ctrl+E, N|
-|WorkflowDesigner.ExpandAll|Ctrl+E, Ctrl+X<br /><br /> ou o<br /><br /> Ctrl+E, X|
-|WorkflowDesigner.ExpandInPlace|Ctrl+E, Ctrl+E<br /><br /> ou o<br /><br /> Ctrl+E, E|
-|WorkflowDesigner.GoToParent|Ctrl+E, Ctrl+P<br /><br /> ou o<br /><br /> Ctrl+E, P|
-|WorkflowDesigner.MoveFocus|Ctrl+E, Ctrl+M<br /><br /> ou o<br /><br /> Ctrl+E, M|
+|Edit.ListMembers|Ctrl+K, L<br /><br /> ou<br /><br /> Ctrl+K, Ctrl+L<br /><br /> ou<br /><br /> Ctrl+J|
+|Edit.ParameterInfo|Ctrl+K, P<br /><br /> ou<br /><br /> Ctrl+K, Ctrl+P<br /><br /> ou<br /><br /> Ctrl+Shift+Barra de espaços|
+|Edit.QuickInfo|Ctrl+K, I<br /><br /> ou<br /><br /> Ctrl+K, Ctrl+I|
+|WorkflowDesigner.Collapse|Ctrl+E, Ctrl+C<br /><br /> ou<br /><br /> Ctrl+E, C|
+|WorkflowDesigner.CollapseAll|ou|
+|WorkflowDesigner.ConnectNodes|Ctrl+E, Ctrl+F<br /><br /> ou<br /><br /> Ctrl+E, F|
+|WorkflowDesigner.CreateVariable|Ctrl+E, Ctrl+N<br /><br /> ou<br /><br /> Ctrl+E, N|
+|WorkflowDesigner.ExpandAll|Ctrl+E, Ctrl+X<br /><br /> ou<br /><br /> Ctrl+E, X|
+|WorkflowDesigner.ExpandInPlace|Ctrl+E, Ctrl+E<br /><br /> ou<br /><br /> Ctrl+E, E|
+|WorkflowDesigner.GoToParent|Ctrl+E, Ctrl+P<br /><br /> ou<br /><br /> Ctrl+E, P|
+|WorkflowDesigner.MoveFocus|Ctrl+E, Ctrl+M<br /><br /> ou<br /><br /> Ctrl+E, M|
 |WorkflowDesigner.NavigateThroughDesigner|Ctrl+Alt+F6|
-|WorkflowDesigner.Restore|Ctrl+E, Ctrl+R<br /><br /> ou o<br /><br /> Ctrl+E, R|
-|WorkflowDesigner.ShowHideArgumentDesigner|Ctrl+E, Ctrl+A<br /><br /> ou o<br /><br /> Ctrl+E, A|
-|WorkflowDesigner.ShowHideImportsDesigner|Ctrl+E, Ctrl+I<br /><br /> ou o<br /><br /> Ctrl+E, I|
-|WorkflowDesigner.ShowHideOverviewMap|Ctrl+E, Ctrl+O<br /><br /> ou o<br /><br /> Ctrl+E, O|
-|WorkflowDesigner.ShowHideVariableDesigner|Ctrl+E, Ctrl+V<br /><br /> ou o<br /><br /> Ctrl+E, V|
-|WorkflowDesigner.ToggleSelection|Ctrl+E, Ctrl+S<br /><br /> ou o<br /><br /> Ctrl+E, S|
+|WorkflowDesigner.Restore|Ctrl+E, Ctrl+R<br /><br /> ou<br /><br /> Ctrl+E, R|
+|WorkflowDesigner.ShowHideArgumentDesigner|Ctrl+E, Ctrl+A<br /><br /> ou<br /><br /> Ctrl+E, A|
+|WorkflowDesigner.ShowHideImportsDesigner|Ctrl+E, Ctrl+I<br /><br /> ou<br /><br /> Ctrl+E, I|
+|WorkflowDesigner.ShowHideOverviewMap|Ctrl+E, Ctrl+O<br /><br /> ou<br /><br /> Ctrl+E, O|
+|WorkflowDesigner.ShowHideVariableDesigner|Ctrl+E, Ctrl+V<br /><br /> ou<br /><br /> Ctrl+E, V|
+|WorkflowDesigner.ToggleSelection|Ctrl+E, Ctrl+S<br /><br /> ou<br /><br /> Ctrl+E, S|
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|
 
@@ -1195,7 +1195,7 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|
 
-## <a name="xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a>Designer de esquema XML
+## <a name="xml-schema-designer"></a><a name="bkmk_xmlSchemaDesigner"></a> Designer de esquema XML
 
 |Comandos|Atalhos do teclado|
 |--------------|------------------------|

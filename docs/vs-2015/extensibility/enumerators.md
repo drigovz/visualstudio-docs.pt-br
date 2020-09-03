@@ -11,42 +11,42 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 65a03a8dc741ec86aca3137f49cd753722ede215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204564"
 ---
 # <a name="enumerators"></a>Enumeradores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta seção lista os tipos de dados em que a API de plug-in de controle do código-fonte que o plug-in de controle do código-fonte deve saber sobre enumerador.  
+Esta seção lista os tipos de dados do enumerador na API de plug-in de controle do código-fonte que o plug-in de controle do código-fonte deve conhecer.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Código de comando](../extensibility/command-code-enumerator.md)  
- Enumera as opções para o [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) funções.  
+ Enumera as opções para as funções [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) .  
   
- [Message](../extensibility/message-enumerator.md)  
- Enumera os sinalizadores usados para o retorno de chamada, impressão [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ [Mensagem](../extensibility/message-enumerator.md)  
+ Enumera sinalizadores usados para o retorno de chamada de impressão, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
  [Código de status do arquivo](../extensibility/file-status-code-enumerator.md)  
- Contém valores constantes nomeados que especificam o estado de um arquivo sob controle do código-fonte.  
+ Contém valores de constantes nomeados que especificam o estado de um arquivo sob controle do código-fonte.  
   
  [Código de status do diretório](../extensibility/directory-status-code-enumerator.md)  
- Contém valores constantes nomeados que especificam o estado de um diretório sob controle do código-fonte.  
+ Contém valores de constantes nomeados que especificam o estado de um diretório sob controle do código-fonte.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Criar um plug-in de controle do código-fonte](../extensibility/internals/creating-a-source-control-plug-in.md)  
- Define o SDK do plug-in de controle de origem e descreve os recursos incluídos.  
+ [Criando um plug-in de controle do código-fonte](../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Define o SDK de plug-in de controle do código-fonte e descreve os recursos incluídos.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
- Solicita ao usuário para opções avançadas para o comando fornecido.  
+ Solicita ao usuário as opções avançadas para o comando fornecido.  
   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)  
- Examina a lista de arquivos para seu status atual. Além disso, usa o `pfnPopulate` função para notificar o chamador quando um arquivo não coincide com os critérios para o `nCommand`.  
+ Examina a lista de arquivos em busca de seu status atual. Além disso, o usa a `pfnPopulate` função para notificar o chamador quando um arquivo não corresponde aos critérios para o `nCommand` .  
   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
- Descreve a função de retorno de chamada que é usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens de controle de fonte de plug-in por meio do IDE.  
+ Descreve a função de retorno de chamada usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens do plug-in de controle do código-fonte por meio do IDE.  
   
  [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)  
- Fornece uma lista completa de todos os elementos na API de plug-in de controle de origem.
+ Fornece uma listagem completa de todos os elementos na API de plug-in de controle do código-fonte.

@@ -9,10 +9,10 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 68bff8dbe2d0e5d85c8b18eeafaeaad06ba3982e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540069"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Teste de unidade de aplicativos do C++ existentes com Gerenciador de Testes
@@ -121,7 +121,7 @@ Recomendamos que, antes de alterar um aplicativo existente, você verifique se e
 
        |Propriedade|Valor|
        |-|-|
-       |**Incluir Diretórios**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Diretórios de inclusão**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Diretórios de Biblioteca**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. Adicione um arquivo de teste de unidade C++:
