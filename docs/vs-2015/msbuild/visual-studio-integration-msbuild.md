@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825416"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina as condições em elementos `PropertyGroup`, `ItemGroup`, `Import`, de propriedade e de item para essa finalidade.  
   
 ## <a name="additional-build-actions"></a>Ações de Compilação Adicionais  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que o nome do tipo de item de um arquivo seja alterado em um projeto com a propriedade **Ação de build** da janela [Propriedades do Arquivo](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite alterar o nome do tipo de item de um arquivo em um projeto com a propriedade **criar ação** da janela [Propriedades do arquivo](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959) . Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
   
 ```  
 <ItemGroup>  
@@ -67,7 +67,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > Alguns nomes de tipo de item são específicos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], mas não aparecem nessa lista suspensa.  
   
 ## <a name="in-process-compilers"></a>Compiladores em Processo  
- Quando possível, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] para melhorar o desempenho. (não se aplica a [!INCLUDE[csprcs](../includes/csprcs-md.md)]). Para que isso funcione corretamente, as condições a seguir devem ser cumpridas:  
+ Quando possível, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] para melhorar o desempenho. (Não é aplicável a [!INCLUDE[csprcs](../includes/csprcs-md.md)] .) Para que isso funcione corretamente, as seguintes condições devem ser atendidas:  
   
 - Em um destino do projeto, deve haver uma tarefa nomeada como `Vbc` para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
@@ -127,16 +127,16 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Execução de Destino do Tempo de Design  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tentará executar destinos com determinados nomes ao carregar um projeto. Esses destinos incluem `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] executará esses destinos para que o compilador seja inicializado a fim de fornecer o IntelliSense, o depurador poderá ser inicializado e as referências exibidas no Gerenciador de Soluções poderão ser resolvidas. Se esses destinos não estiverem presentes, o projeto carregará e compilará corretamente, mas a experiência de tempo de design no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não será totalmente funcional.  
   
-## <a name="BKMK_EditingProjects"></a> Editando Arquivos de Projeto no Visual Studio  
+## <a name="editing-project-files-in-visual-studio"></a><a name="BKMK_EditingProjects"></a> Editando Arquivos de Projeto no Visual Studio  
  Para editar um [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] diretamente do projeto, abra o arquivo de projeto no editor de XML do Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descarregar e editar um arquivo de projeto no Visual Studio  
   
 1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.  
   
-     O projeto está marcado como **(indisponível)** .  
+     O projeto está marcado como **(indisponível)**.  
   
-2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>** .  
+2. No **Gerenciador de soluções**, abra o menu de atalho do projeto indisponível e escolha **Editar \<Project File> **.  
   
      O arquivo de projeto será aberto no Editor de XML do Visual Studio.  
   
@@ -145,7 +145,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Recarregar Projeto**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense e Validação  
- Ao usar o editor XML para editar arquivos de projeto, o IntelliSense e a validação são controlados pelos arquivos de esquema [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Eles são instalados no cache do esquema, que pode ser encontrado no *\<diretório de instalação do Visual Studio>* \Xml\Schemas\1033\MSBuild.  
+ Ao usar o editor XML para editar arquivos de projeto, o IntelliSense e a validação são controlados pelos arquivos de esquema [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Eles são instalados no cache de esquema, que pode ser encontrado em *\<Visual Studio installation directory>* \Xml\Schemas\1033\MSBuild.  
   
  Os tipos de núcleo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] são definidos em Microsoft.Build.Core.xsd e os tipos comuns usados por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] são definidos em Microsoft.Build.CommonTypes.xsd. Para personalizar os esquemas a fim de obter o IntelliSense e a validação para nomes, propriedades e tarefas de tipo de item personalizados, é possível editar o Microsoft.Build.xsd ou criar um esquema próprio que inclua CommonTypes ou esquemas de Núcleo. Ao criar um esquema próprio, será necessário direcionar o editor de XML a encontrá-lo por meio da janela **Propriedades**.  
   
@@ -181,13 +181,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
- [Iniciando um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Iniciando uma compilação de dentro do IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Registrando extensões do .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)   
+ [Elemento item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Elemento Property (MSBuild)](../msbuild/property-element-msbuild.md)   
- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Elemento de destino (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Tarefa Csc](../msbuild/csc-task.md)   
  [Tarefa Vbc](../msbuild/vbc-task.md)

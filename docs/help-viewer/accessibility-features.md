@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825140"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de acessibilidade do Help Viewer
-A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer acessível a pessoas com uma ampla variedade de capacidades.
+A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todos. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer acessível a pessoas com uma ampla variedade de capacidades.
 
 ## <a name="keyboard-access"></a>Acesso pelo teclado
 Você pode acessar todos os recursos do Help Viewer usando o teclado. Para obter mais informações, consulte [Teclas de atalho (Help Viewer)](../help-viewer/shortcut-keys.md).
@@ -33,7 +33,7 @@ Você pode alterar a largura das janelas de navegação ou documento apontando p
 ## <a name="help-viewer-position"></a>Posição do Help Viewer
 É possível reposicionar o Help Viewer arrastando sua barra de título para uma posição diferente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [Teclas de atalho (Help Viewer)](../help-viewer/shortcut-keys.md)
+- [Teclas de atalho (Visualizador da ajuda)](../help-viewer/shortcut-keys.md)

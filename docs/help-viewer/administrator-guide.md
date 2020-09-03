@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825121"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
@@ -59,13 +59,13 @@ O exemplo a seguir instala o conteúdo do inglês para o Visual Studio para um c
 
 #### <a name="to-install-english-content-from-the-internet"></a>Para instalar o conteúdo em inglês da Internet
 
-1. Escolha **Iniciar** e **Executar**.
+1. Escolha **Iniciar** e, em seguida, escolha **executar**.
 
 2. Digite o seguinte:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3. Pressione **ENTER**.
+3. Pressione **Enter**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Implantar conteúdo pré-instalado de Ajuda local em computadores cliente
 
@@ -114,7 +114,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 #### <a name="to-package-the-content"></a>Para criar um pacote com o conteúdo
 
-1. Crie uma pasta para copiar o conteúdo para uma implantação posterior. Por exemplo:  *C:\VSHelp*.
+1. Crie uma pasta para copiar o conteúdo para uma implantação posterior. Por exemplo: *C:\VSHelp*.
 
 2. Abra *cmd.exe* com permissões de Administrador.
 
@@ -130,7 +130,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 1. Crie um compartilhamento de rede e copie o conteúdo da ajuda nesse local.
 
-     Por exemplo, copie o conteúdo em *C:\VSHelp* para *\\\myserver\VSHelp*.
+     Por exemplo, copie o conteúdo em *C:\VSHelp* para * \\ \myserver\VSHelp*.
 
 2. Crie um arquivo *.bat* para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações. Por exemplo:
 
@@ -140,11 +140,11 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. Execute o arquivo *.bat* nos computadores locais em que você deseja instalar o conteúdo da Ajuda.
+3. Execute o arquivo *. bat* nos computadores locais em que você deseja instalar o conteúdo da ajuda.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../help-viewer/command-line-arguments.md)
-- [Substituições do Gerenciador de Conteúdo da Ajuda](../help-viewer/behavior-overrides.md)
+- [Argumentos de linha de comando para o Gerenciador de conteúdo da ajuda](../help-viewer/command-line-arguments.md)
+- [Substituições do Gerenciador de conteúdo da ajuda](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [SDK do Help Viewer](../extensibility/internals/microsoft-help-viewer-sdk.md)

@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691292"
 ---
 # <a name="refactoring"></a>Refatoração
@@ -42,7 +42,7 @@ As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o có
 * Aplicar uma refatoração (por exemplo, embutir uma variável temporária)
 * Gerar um código (por exemplo, introduzir uma variável local)
 
-Ações rápidas podem ser aplicadas ![usando o](media/quick-actions-light-bulb-icon.png) ícone ![da lâmpada](media/quick-actions-screwdriver-icon.png) da lâmpada ou ícones da chave de fenda da chave de fenda, ou pressionando **Opção ()Digite**+**Enter** quando o cursor estiver em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
+As ações rápidas podem ser aplicadas usando o ícone de ![ lâmpada de lâmpada ](media/quick-actions-light-bulb-icon.png) ou ícones de ![ ícone de chave de fenda ou ](media/quick-actions-screwdriver-icon.png) pressionando a **opção (⌥)** + **Enter** quando o cursor está em uma linha de código para a qual uma ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
 
 Para qualquer idioma, terceiros podem oferecer diagnósticos e sugestões personalizados, por exemplo, como parte de um SDK, e as lâmpadas do Visual Studio são acesas de acordo com essas regras.
 
@@ -57,7 +57,7 @@ O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicaç
 
 - Lâmpadas e chaves de fenda são exibidas na margem esquerda do editor quando você move o cursor para uma linha de código para o qual uma Ação Rápida está disponível.
 
-- **Opção de pressione (2)**+**Digite** em qualquer lugar em uma linha para ver uma lista de Ações rápidas e refatorações disponíveis.
+- Pressione a **opção (⌥)** + **Enter** em qualquer lugar em uma linha para ver uma lista de ações rápidas e refatoração disponíveis.
 
 ![Exibir itens de contexto](media/refactoring-context-action.png)
 

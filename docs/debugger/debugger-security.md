@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80527919"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
@@ -37,11 +37,11 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="managed-debugging-security"></a>Segurança de depuração gerenciada
  Aqui estão algumas recomendações gerais que se aplicam a todas as depurações gerenciadas.
 
-- Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. Os "usuários confiáveis" incluem você e um conjunto de usuários padrão, comumente definidos em computadores que tenham o .NET Framework instalado, por exemplo, **aspnet**, **localsystem**, **networkservice** e **localservice**. Para obter mais informações, consulte [Aviso de segurança: Anexar-se a um processo de propriedade de um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não se anexe a este processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+- Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. Os "usuários confiáveis" incluem você e um conjunto de usuários padrão, comumente definidos em computadores que tenham o .NET Framework instalado, por exemplo, **aspnet**, **localsystem**, **networkservice** e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo de propriedade de um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 - Tenha cuidado ao baixar um projeto fora da Internet e carregá-lo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso é muito arriscado de fazer mesmo sem depuração. Quando você fizer isso, estará supondo que o projeto e o código que contém sejam confiáveis.
 
-  Para obter mais informações, consulte [Depuração de código gerenciado](../debugger/debugging-managed-code.md).
+  Para obter mais informações, consulte [Depurando código gerenciado](../debugger/debugging-managed-code.md).
 
 ### <a name="remote-debugging-security"></a>Segurança de depuração remota
  A depuração local é geralmente mais segura do que a depuração remota. A depuração remota aumenta a área da superfície total que pode ser analisada.
@@ -50,14 +50,14 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 
  ![Diálogo de erro](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- Ao usar o modo autenticação do Windows, esteja ciente de que conceder uma permissão de usuário não confiável para se conectar ao msvsmon é perigoso, porque o usuário recebe todas as suas permissões no computador que hospeda msvsmon.
+ Ao usar o modo de autenticação do Windows, lembre-se de que a concessão de uma permissão de usuário não confiável para se conectar ao msvsmon é perigosa, pois o usuário recebe todas as suas permissões no computador que hospeda o msvsmon.
 
- Não depurar um processo desconhecido em uma máquina remota: existem potenciais explorações que podem afetar a máquina que executa o depurador, ou que podem comprometer o msvsmon. Se for absolutamente necessário depurar um processo desconhecido, tente depurá-lo localmente e use um firewall para manter todas as ameaças potenciais localizadas.
+ Não depurar um processo desconhecido em um computador remoto: há possíveis explorações que podem afetar o computador que executa o depurador ou que podem comprometer o msvsmon. Se for absolutamente necessário depurar um processo desconhecido, tente depurá-lo localmente e use um firewall para manter todas as ameaças potenciais localizadas.
 
- Para obter informações sobre a configuração do msvsmon, consulte [Configurar o depurador remoto](../debugger/remote-debugging.md#bkmk_setup).
+ Para obter informações sobre como configurar o msvsmon, consulte [Configurar o depurador remoto](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Segurança de depuração de serviços Web
- É mais seguro depurar localmente, mas como você provavelmente não terá o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado no servidor Web, a depuração local não poderá ser prática. Em geral, depurar serviços Web é feito remotamente, exceto durante o desenvolvimento, de modo que as recomendações para a segurança de depuração remota também se aplicarão à depuração de serviços Web. Aqui estão algumas práticas recomendadas adicionais. Para obter mais informações, consulte [Depuração de Serviços Web XML](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+ É mais seguro depurar localmente, mas como você provavelmente não terá o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado no servidor Web, a depuração local não poderá ser prática. Em geral, depurar serviços Web é feito remotamente, exceto durante o desenvolvimento, de modo que as recomendações para a segurança de depuração remota também se aplicarão à depuração de serviços Web. Aqui estão algumas práticas recomendadas adicionais. Para obter mais informações, consulte [DEBUGGING XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
 
 - Não habilite a depuração em um servidor Web que tenha sido comprometido.
 
@@ -78,7 +78,7 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
   Confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Confira também
-- [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)
-- [Primeiro olhe para o depurador](../debugger/debugger-feature-tour.md)
+- [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Aviso de segurança Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [Aviso de segurança: depurador deve executar comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [Aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

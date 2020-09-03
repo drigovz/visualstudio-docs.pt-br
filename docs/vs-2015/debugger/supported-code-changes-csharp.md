@@ -1,5 +1,5 @@
 ---
-title: Suporte para alterações de código (c#) | Microsoft Docs
+title: Alterações de código com suporte (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823533"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C#)
@@ -38,7 +38,7 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
   
 - Alterando a assinatura de um tipo.  
   
-- Adicionando um método anônimo que captura uma variável que não havia sido capturada antes.  
+- Adicionar um método anônimo que captura uma variável que não foi capturada antes.  
   
 - Alterando, removendo ou alterando atributos.  
   
@@ -47,19 +47,19 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
 - Adicionando `foreach`, `using`, ou `lock` em torno da instrução ativa.  
   
 ## <a name="unsafe-code"></a>Código não seguro  
- As alterações no código não seguro têm as mesmas restrições que as alterações no código seguro, com uma restrição adicional: Editar e continuar não dá suporte a alterações no código não seguro que saem de um método que contém o `stackalloc` operador.  
+ As alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não oferece suporte a alterações em código não seguro que sai dentro de um método que contém o `stackalloc` operador.  
   
 ## <a name="exceptions"></a>Exceções  
- Editar e continuar dá suporte a alterações `catch` e `finally` bloqueia, exceto que a adição de uma `catch` ou `finally` bloco em torno da instrução ativa não é permitido.  
+ Editar e continuar dá suporte a alterações `catch` e `finally` blocos, exceto que a adição de um `catch` `finally` bloco ou ao contrário da instrução ativa não é permitida.  
   
 ## <a name="unsupported-scenarios"></a>Cenários sem suporte  
  Editar e Continuar não está disponível nos seguintes cenários de depuração:  
   
-- Depurando código LINQ em determinadas circunstâncias. Para obter mais informações, consulte [Depurando LINQ](../debugger/debugging-linq.md).  
+- Depuração de código LINQ em determinadas circunstâncias. Para obter mais informações, consulte [Depurando LINQ](../debugger/debugging-linq.md).  
   
-  - Capturando uma variável que não havia sido capturada antes.  
+  - Capturando uma variável que não foi capturada antes.  
 
-  - Alterando o tipo de expressão de consulta (por exemplo, selecione um = > selecione Novo {um = um};)  
+  - Alterando o tipo de expressão de consulta (por exemplo, selecione a => selecione novo {A = a};)  
 
   - Removendo um `where` que contém uma instrução ativa.  
 
@@ -73,18 +73,18 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
   
 - Depuração de SQL.  
   
-- Depurando um despejo do Dr. Watson.  
+- Depurando um despejo de Dr. Watson.  
   
-- Editando o código após uma exceção sem tratamento, quando o "**desenrolar a pilha de chamadas em exceções não tratadas**" opção não estiver selecionada.  
+- Edição de código após uma exceção sem tratamento, quando a opção "**desenrolar a pilha de chamadas em exceções sem tratamento**" não está selecionada.  
   
-- Depurando um aplicativo inserido de tempo de execução.  
+- Depurando um aplicativo inserido de runtime.  
   
-- Depurando um aplicativo que tem **anexar** em vez de executar o aplicativo escolhendo **iniciar** do **depurar** menu.  
+- Depuração de um aplicativo que tem a **anexação** em vez de executar o aplicativo escolhendo **Iniciar** no menu **depurar** .  
   
 - Depurando código otimizado.  
   
 - Depurando uma versão antiga do código depois que uma nova versão não é compilada devido a erros de compilação.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

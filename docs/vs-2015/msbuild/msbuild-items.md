@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821645"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
@@ -31,9 +31,9 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
 - [Criando itens durante a execução](#BKMK_Creating2)  
   
-- [Referenciando itens em um arquivo de projeto](#BKMK_ReferencingItems)  
+- [Fazendo referência a itens em um arquivo de projeto](#BKMK_ReferencingItems)  
   
-- [Usando caracteres curinga para especificar itens](#BKMK_Wildcards)  
+- [Usando curingas para especificar itens](#BKMK_Wildcards)  
   
 - [Usando o atributo Exclude](#BKMK_ExcludeAttribute)  
   
@@ -47,7 +47,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
 - [Definições de item](#BKMK_ItemDefinitions)  
   
-- [Atributos de itens em um ItemGroup de um destino](#BKMK_AttributesWithinTargets)  
+- [Atributos de itens em um rowgroup de um destino](#BKMK_AttributesWithinTargets)  
   
   - [Remover atributo](#BKMK_RemoveAttribute)  
 
@@ -57,7 +57,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 
   - [Atributo KeepDuplicates](#BKMK_KeepDuplicates)  
   
-## <a name="BKMK_Creating1"></a> Criando itens em um arquivo de projeto  
+## <a name="creating-items-in-a-project-file"></a><a name="BKMK_Creating1"></a> Criando itens em um arquivo de projeto  
  Os itens são declarados no arquivo de projeto como elementos filho de um elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). O nome do elemento filho é o tipo do item. O atributo `Include` do elemento especifica os itens (arquivos) a serem incluídos com esse tipo de item. Por exemplo, o XML a seguir cria um tipo de item chamado `Compile`, que inclui dois arquivos.  
   
 ```  
@@ -77,7 +77,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </ItemGroup>  
 ```  
   
-## <a name="BKMK_Creating2"></a> Criando itens durante a execução  
+## <a name="creating-items-during-execution"></a><a name="BKMK_Creating2"></a> Criando itens durante a execução  
  Os itens que estão fora dos elementos de [destino](../msbuild/target-element-msbuild.md) são valores designados durante a fase de avaliação de um build. Durante a fase de execução subsequente, os itens podem ser criados ou modificados das seguintes maneiras:  
   
 - Qualquer tarefa pode emitir um item. Para emitir um item, o elemento [Task](../msbuild/task-element-msbuild.md) deve ter um elemento filho [Output](../msbuild/output-element-msbuild.md) que tem um atributo `ItemName`.  
@@ -86,15 +86,15 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
 - A partir do .NET Framework 3.5, os elementos `Target` podem conter elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que podem conter elementos de item.  
   
-## <a name="BKMK_ReferencingItems"></a> Referenciando itens em um arquivo de projeto  
- Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(`ItemType`). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, confira [Como: Selecione os arquivos a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+## <a name="referencing-items-in-a-project-file"></a><a name="BKMK_ReferencingItems"></a> Referenciando itens em um arquivo de projeto  
+ Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(`ItemType`). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, consulte [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
   
- Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Você pode usar a sintaxe @(*ItemType*, '*separator*') para especificar um separador diferente do padrão. Para obter mais informações, confira [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Você pode usar a sintaxe @(*ItemType*, '*separator*') para especificar um separador diferente do padrão. Para mais informações, consulte [Como exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
-## <a name="BKMK_Wildcards"></a> Usando caracteres curinga para especificar itens  
+## <a name="using-wildcards-to-specify-items"></a><a name="BKMK_Wildcards"></a> Usando caracteres curinga para especificar itens  
  Você pode usar os caracteres curinga **, \* e ? para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.  
   
-- O caractere curinga ? corresponde a um único caractere.  
+- O ? corresponde a um único caractere.  
   
 - O caractere curinga * corresponde a zero ou mais caracteres.  
   
@@ -112,9 +112,9 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Para obter mais informações sobre caracteres curinga, confira [Como: Selecione os arquivos a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+ Para obter mais informações sobre caracteres curinga, consulte [como: selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
   
-## <a name="BKMK_ExcludeAttribute"></a> Usando o atributo Exclude  
+## <a name="using-the-exclude-attribute"></a><a name="BKMK_ExcludeAttribute"></a> Usando o atributo Exclude  
  Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo .cs no diretório para o tipo de item de CSFile, exceto o arquivo `DoNotBuild.cs`.  
   
 ```  
@@ -130,9 +130,9 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Para obter mais informações, confira [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Para mais informações, consulte [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).  
   
-## <a name="BKMK_ItemMetadata"></a> Metadados de item  
+## <a name="item-metadata"></a><a name="BKMK_ItemMetadata"></a> Metadados do item  
  Os itens que podem conter metadados, além das informações nos atributos `Include` e `Exclude`. Esses metadados podem ser usados por tarefas que exigem mais informações sobre os itens ou para os destinos e tarefas de lote. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).  
   
  Os metadados são uma coleção de pares chave-valor que são declarados no arquivo de projeto como elementos filho de um elemento do item. O nome do elemento filho é o nome dos metadados e o valor do elemento filho é o valor dos metadados.  
@@ -149,8 +149,8 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
  Um item pode ter zero ou mais valores de metadados. Você pode alterar os valores de metadados a qualquer momento. Se definir metadados para um valor vazio, você efetivamente vai removê-lo do build.  
   
-### <a name="BKMK_ReferencingItemMetadata"></a> Referenciando metadados de item em um arquivo de projeto  
- Você pode fazer referência a metadados de item em todo o arquivo de projeto usando a sintaxe %(`ItemMetadataName`). Se existir a ambiguidade, você poderá qualificar uma referência usando o nome do tipo de item. Por exemplo, você pode especificar %(*ItemType.ItemMetaDataName*). O exemplo a seguir usa os metadados Display para colocar em lote a tarefa Message. Para obter mais informações sobre como usar os metadados do item para envio em lote, consulte [Metadados de Item no envio em lote de tarefas](../msbuild/item-metadata-in-task-batching.md).  
+### <a name="referencing-item-metadata-in-a-project-file"></a><a name="BKMK_ReferencingItemMetadata"></a> Referenciando metadados de item em um arquivo de projeto  
+ Você pode fazer referência a metadados de item em todo o arquivo de projeto usando a sintaxe %(`ItemMetadataName`). Se existir a ambiguidade, você poderá qualificar uma referência usando o nome do tipo de item. Por exemplo, você pode especificar%(*ItemType. Mymetadataname*). O exemplo a seguir usa os metadados de exibição para o lote da tarefa de mensagem. Para obter mais informações sobre como usar metadados de item para envio em lote, consulte [metadados de item em lote de tarefas](../msbuild/item-metadata-in-task-batching.md).  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -168,10 +168,10 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </Project>  
 ```  
   
-### <a name="BKMK_WellKnownItemMetadata"></a> Metadados de itens conhecidos  
- Sempre que um item é adicionado a um tipo de item, esse item é atribuído a alguns metadados conhecidos. Por exemplo, todos os itens que têm metadados `%(Filename)` conhecidos, cujo valor é o nome de arquivo do item. Para obter mais informações, consulte [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
+### <a name="well-known-item-metadata"></a><a name="BKMK_WellKnownItemMetadata"></a> Metadados de item conhecido  
+ Sempre que um item é adicionado a um tipo de item, esse item é atribuído a alguns metadados conhecidos. Por exemplo, todos os itens que têm metadados `%(Filename)` conhecidos, cujo valor é o nome de arquivo do item. Para obter mais informações, consulte [metadados de item bem conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
   
-### <a name="BKMK_Transforming"></a> Transformando os tipos de item ao usar metadados  
+### <a name="transforming-item-types-by-using-metadata"></a><a name="BKMK_Transforming"></a> Transformando tipos de item usando metadados  
  Você pode transformar listas de itens em novas listas de item usando metadados. Por exemplo, você pode transformar um tipo de item `CppFiles` que tem itens que representam arquivos .cpp em uma lista correspondente de arquivos .obj usando a expressão `@(CppFiles -> '%(Filename).obj')`.  
   
  O código a seguir cria um tipo de item `CultureResource` que contém cópias de todos os itens `EmbeddedResource` com metadados `Culture`. O valor de metadados `Culture` se torna o valor dos novos metadados `CultureResource.TargetDirectory`.  
@@ -189,7 +189,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
  Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md).  
   
-## <a name="BKMK_ItemDefinitions"></a> Definições de item  
+## <a name="item-definitions"></a><a name="BKMK_ItemDefinitions"></a> Definições de item  
  A partir do .NET Framework 3.5, você pode adicionar metadados padrão a qualquer tipo de item usando o [elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Como metadados conhecidos, os metadados padrão estão associados a todos os itens do tipo de item especificado. Você pode substituir explicitamente metadados padrão em uma definição de item. Por exemplo, o XML a seguir fornece aos itens `Compile` "one.cs" e "three.cs" os metadados `BuildDay` com o valor "Monday". O código fornece ao item "two.cs" os metadados `BuildDay` com o valor "Tuesday".  
   
 ```  
@@ -206,12 +206,12 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </ItemGroup>  
 ```  
   
- Para obter mais informações, consulte [Definições de item](../msbuild/item-definitions.md).  
+ Para obter mais informações, consulte [definições de item](../msbuild/item-definitions.md).  
   
-## <a name="BKMK_AttributesWithinTargets"></a> Atributos de itens em um ItemGroup de um destino  
+## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a><a name="BKMK_AttributesWithinTargets"></a> Atributos de itens em um rowgroup de um destino  
  A partir do .NET Framework 3.5, os elementos `Target` podem conter elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que podem conter elementos de item. Os atributos nesta seção são válidos quando são especificados para um item em um `ItemGroup` que é um `Target`.  
   
-### <a name="BKMK_RemoveAttribute"></a> Remover atributo  
+### <a name="remove-attribute"></a><a name="BKMK_RemoveAttribute"></a> Remover atributo  
  Os itens em um `ItemGroup` de um destino podem conter o atributo `Remove`, que remove itens específicos (arquivos) do tipo de item. Esse atributo foi introduzido no .NET Framework 3.5.  
   
  O exemplo a seguir remove todos os arquivos .config do tipo de item de compilação.  
@@ -224,7 +224,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </Target>  
 ```  
   
-### <a name="BKMK_KeepMetadata"></a> Atributo KeepMetadata  
+### <a name="keepmetadata-attribute"></a><a name="BKMK_KeepMetadata"></a> Atributo KeepMetadata  
  Se um item for gerado em um destino, o elemento de item poderá conter o atributo `KeepMetadata`. Se esse atributo for especificado, apenas os metadados que serão especificados na lista de nomes separados por ponto-e-vírgula serão transferidos do item de origem para o item de destino. Um valor vazio para esse atributo é equivalente a não especificação dele. O atributo `KeepMetadata` foi introduzido no .NET Framework 4.5.  
   
  O exemplo a seguir mostra como usar o atributo `KeepMetadata`.  
@@ -266,7 +266,7 @@ Output:
 -->  
 ```  
   
-### <a name="BKMK_RemoveMetadata"></a> Atributo RemoveMetadata  
+### <a name="removemetadata-attribute"></a><a name="BKMK_RemoveMetadata"></a> Atributo RemoveMetadata  
  Se um item for gerado em um destino, o elemento de item poderá conter o atributo `RemoveMetadata`. Se esse atributo for especificado, todos os metadados serão transferidos do item de origem para o item de destino, exceto os metadados cujos nomes estão contidos na lista de nomes separados por ponto-e-vírgula. Um valor vazio para esse atributo é equivalente a não especificação dele. O atributo `RemoveMetadata` foi introduzido no .NET Framework 4.5.  
   
  O exemplo a seguir mostra como usar o atributo `RemoveMetadata`.  
@@ -315,7 +315,7 @@ Output:
 -->  
 ```  
   
-### <a name="BKMK_KeepDuplicates"></a> Atributo KeepDuplicates  
+### <a name="keepduplicates-attribute"></a><a name="BKMK_KeepDuplicates"></a> Atributo KeepDuplicates  
  Se um item for gerado em um destino, o elemento de item poderá conter o atributo `KeepDuplicates`. `KeepDuplicates` é um atributo `Boolean` que especifica se um item deverá ser adicionado ao grupo de destino se for uma duplicata exata de um item existente.  
   
  Se os itens de origem e de destino tiverem o mesmo valor Include, mas metadados diferentes, o item será adicionado mesmo se `KeepDuplicates` estiver definido como `false`. Um valor vazio para esse atributo é equivalente a não especificação dele. O atributo `KeepDuplicates` foi introduzido no .NET Framework 4.5.  
@@ -354,12 +354,12 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [Como: Selecione os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)   
- [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
- [Definições de itens](../msbuild/item-definitions.md)   
+ [Como: selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)   
+ [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Como exibir uma lista de itens separados por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Definições de item](../msbuild/item-definitions.md)   
  [Envio em lote](../msbuild/msbuild-batching.md)   
- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
+ [Elemento item (MSBuild)](../msbuild/item-element-msbuild.md)

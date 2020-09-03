@@ -1,5 +1,5 @@
 ---
-title: Extensibilidade de projeto do Visual C++
+title: Extensibilidade do projeto Visual C++
 ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825561"
 ---
-# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
+# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Integração de extensibilidade e conjunto de ferramentas do sistema de projeto do Visual Studio C++
 
-O sistema de projeto do Visual C++ é usado para arquivos. vcxproj. Ele se baseia a [Visual Studio Common Project System (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) e fornece adicionais, pontos de extensibilidade específica do C++ para fácil integração de novos conjuntos de ferramentas, arquiteturas de compilação e plataformas de destino.
+O sistema de projeto Visual C++ é usado para arquivos. vcxproj. Ele é baseado no [CPS (sistema de projeto comum) do Visual Studio](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) e fornece pontos de extensibilidade específicos do C++ para uma fácil integração de novos conjuntos de ferramentas, arquiteturas de compilação e plataformas de destino.
 
-## <a name="c-msbuild-targets-structure"></a>Estrutura de destinos do MSBuild C++
+## <a name="c-msbuild-targets-structure"></a>Estrutura de destinos do MSBuild do C++
 
-Todos os arquivos. vcxproj importar esses arquivos:
+Todos os arquivos. vcxproj importam estes arquivos:
 
 ```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -31,7 +31,7 @@ Todos os arquivos. vcxproj importar esses arquivos:
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 ```
 
-Esses arquivos definem pouco por si só. Em vez disso, eles importarem outros arquivos com base nesses valores de propriedade:
+Esses arquivos definem pequenos por conta própria. Em vez disso, eles importam outros arquivos com base nesses valores de propriedade:
 
 - `$(ApplicationType)`
 
@@ -39,141 +39,141 @@ Esses arquivos definem pouco por si só. Em vez disso, eles importarem outros ar
 
 - `$(ApplicationTypeRevision)`
 
-   Isso deve ser uma cadeia de caracteres de versão válida, do formulário Revision]].
+   Essa deve ser uma cadeia de caracteres de versão válida, do formato Major. minor [. Build [. revision]].
 
-   Exemplos: 1.0, 10.0.0.0
+   Exemplos: 1,0, 10.0.0.0
 
 - `$(Platform)`
 
-   A arquitetura de compilação, denominado "Platform" por razões históricas.
+   A arquitetura de compilação, chamada "plataforma", por motivos históricos.
 
    Exemplos: Win32, x86, x64, ARM
 
 - `$(PlatformToolset)`
 
-   Exemplos: v140, v141, v141_xp, llvm
+   Exemplos: v140, v141, v141_xp, LLVM
 
-Esses valores de propriedade especificam nomes de pastas sob o `$(VCTargetsPath)` pasta raiz:
+Esses valores de propriedade especificam nomes de pasta na `$(VCTargetsPath)` pasta raiz:
 
 > `$(VCTargetsPath)`\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;*Tipo de aplicativo*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Plataformas*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Compatíveis*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` \
-&nbsp;&nbsp;&nbsp;&nbsp;*Plataformas*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;*Compatíveis*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
-O `$(VCTargetsPath)` \\ *plataformas* \\ pasta é usada quando `$(ApplicationType)` estiver vazio, para projetos de área de trabalho do Windows.
+A `$(VCTargetsPath)` \\ pasta *plataformas* \\ é usada quando o `$(ApplicationType)` está vazio, para projetos da área de trabalho do Windows.
 
 ### <a name="add-a-new-platform-toolset"></a>Adicionar um novo conjunto de ferramentas de plataforma
 
-Para adicionar um novo conjunto de ferramentas, por exemplo, "MyToolset" para a plataforma Win32 existente, crie uma *MyToolset* pasta sob `$(VCTargetsPath)`  *\\plataformas\\Win32\\ PlatformToolsets\\* e crie *Toolset.props* e *Toolset.targets* arquivos nela.
+Para adicionar um novo conjunto de ferramentas, por exemplo, "mytoolset" para a plataforma Win32 existente, crie uma pasta *mytoolset* em `$(VCTargetsPath)` * \\ plataformas \\ Win32 \\ PlatformToolsets \\ *e crie arquivos de conjunto de ferramentas *. props* e *Toolset. targets* nele.
 
-Cada nome de pasta sob *PlatformToolsets* aparece na **propriedades do projeto** caixa de diálogo como uma disponível **conjunto de ferramentas de plataforma** para a plataforma especificada, conforme mostrado aqui:
+Cada nome de pasta em *PlatformToolsets* é exibido na caixa de diálogo **Propriedades do projeto** como um conjunto de ferramentas de **plataforma** disponível para a plataforma especificada, como mostrado aqui:
 
-![A propriedade de conjunto de ferramentas de plataforma no diálogo de páginas de propriedades do projeto](media/vc-project-extensibility-platform-toolset-property.png "o conjunto de ferramentas de plataforma de propriedade na caixa de diálogo de páginas de propriedades do projeto")
+![A propriedade do conjunto de ferramentas da plataforma na caixa de diálogo páginas de propriedades do projeto](media/vc-project-extensibility-platform-toolset-property.png "A propriedade do conjunto de ferramentas da plataforma na caixa de diálogo páginas de propriedades do projeto")
 
-Criar semelhante *MyToolset* pastas e *Toolset.props* e *Toolset.targets* dá suporte a arquivos em cada pasta de plataforma existentes esse conjunto de ferramentas.
+Crie pastas *Mytoolset* semelhantes e o conjunto de ferramentas *. props* e os arquivos *Toolset. targets* em cada pasta de plataforma existente com suporte neste conjunto de ferramentas.
 
 ### <a name="add-a-new-platform"></a>Adicionar uma nova plataforma
 
-Para adicionar uma nova plataforma, por exemplo, "MyPlatform", crie uma *MyPlatform* pasta sob `$(VCTargetsPath)`  *\\plataformas\\* e crie  *Platform.default.Props*, *Platform.props*, e *Platform.targets* arquivos nela. Crie também uma `$(VCTargetsPath)`  *\\plataformas\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\*  pasta e crie pelo menos um conjunto de ferramentas nele.
+Para adicionar uma nova plataforma, por exemplo, "myplatform", crie uma pasta *myplatform* em `$(VCTargetsPath)` * \\ plataformas \\ *e crie a *plataforma. default. props*, *Platform. props*e os *arquivos Platform. targets* nela. Além disso, crie uma `$(VCTargetsPath)` pasta * \\ \\ Platforms** \\ PlatformToolsets \\ * da<strong><em>plataforma</em></strong>e crie pelo menos um conjunto de ferramentas nela.
 
-Todos os nomes de pastas sob o *plataformas* pasta para cada `$(ApplicationType)` e `$(ApplicationTypeRevision)` são exibidos no IDE como disponível **plataforma** escolhas para um projeto.
+Todos os nomes de pasta na pasta *plataformas* de `$(ApplicationType)` cada `$(ApplicationTypeRevision)` um e aparecem no IDE como opções de **plataforma** disponíveis para um projeto.
 
-![A opção de plataforma de novo na caixa de diálogo nova plataforma de projeto](media/vc-project-extensibility-new-project-platform.png "a nova opção de plataforma na caixa de diálogo nova plataforma de projeto")
+![A nova opção de plataforma na caixa de diálogo nova plataforma de projeto](media/vc-project-extensibility-new-project-platform.png "A nova opção de plataforma na caixa de diálogo nova plataforma de projeto")
 
 ### <a name="add-a-new-application-type"></a>Adicionar um novo tipo de aplicativo
 
-Para adicionar um novo tipo de aplicativo, crie uma *MyApplicationType* pasta sob `$(VCTargetsPath)` *\\tipo de aplicativo\\* e crie um *Defaults.props* arquivo nele. Pelo menos uma revisão é necessária para um tipo de aplicativo, portanto, também criar uma `$(VCTargetsPath)`  *\\tipo de aplicativo\\MyApplicationType\\1.0* pasta e criar um  *Defaults.Props* arquivo nele. Você também deve criar uma `$(VCTargetsPath)`  *\\ApplicationType\\MyApplicationType\\1.0\\plataformas* pasta e crie pelo menos uma plataforma nele.
+Para adicionar um novo tipo de aplicativo, crie uma pasta *myapplicationtype* em `$(VCTargetsPath)` * \\ tipo \\ de aplicativo* e crie um arquivo *padrão. props* nela. Pelo menos uma revisão é necessária para um tipo de aplicativo, portanto, também crie uma `$(VCTargetsPath)` pasta do * \\ tipo de aplicativo \\ myapplicationtype \\ 1,0* e crie um arquivo *padrão. props* nela. Você também deve criar uma `$(VCTargetsPath)` pasta de * \\ plataformas ApplicationType \\ myapplicationtype \\ \\ 1,0* e criar pelo menos uma plataforma nela.
 
-`$(ApplicationType)` e `$(ApplicationTypeRevision)` propriedades não são visíveis na interface do usuário. Eles são definidos nos modelos de projeto e não podem ser alterados depois que o projeto é criado.
+`$(ApplicationType)``$(ApplicationTypeRevision)`as propriedades e não são visíveis na interface do usuário. Eles são definidos nos modelos de projeto e não podem ser alterados após a criação do projeto.
 
 ## <a name="the-vcxproj-import-tree"></a>A árvore de importação. vcxproj
 
-Uma árvore simplificada de importações para arquivos de objetos e destinos do Microsoft C++ é semelhante a:
+Uma árvore simplificada de importações para os arquivos de propriedades e destinos do Microsoft C++ é semelhante a:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*padrão*\\\*. *arquivos de propriedades* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\*Default.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plataformas* \\ `$(Platform)` \\  *Platform.default.Props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*
+> `$(VCTargetsPath)`\\*Microsoft. cpp. default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore* \\ *Padrão* \\ \* . *props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` de \\ aplicativo *Padrão. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicativo \\ *Padrão. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicativo \\ *Platforms* \\ `$(Platform)` Plataformas \\ *Platform. padrão. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter* \\ *Padrão* \\ \* . *props*
 
-Projetos de área de trabalho do Windows não definem `$(ApplicationType)`, portanto, eles apenas importarem
+Projetos da área de trabalho do Windows não definem `$(ApplicationType)` , portanto, eles só importam
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*padrão*\\\*. *arquivos de propriedades* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*padrão*\\\*. *arquivos de propriedades*
+> `$(VCTargetsPath)`\\*Microsoft. cpp. default. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft. Common. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore* \\ *Padrão* \\ \* . *props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms* \\ `$(Platform)` Plataformas \\ *Platform. padrão. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter* \\ *Padrão* \\ \* . *props*
 
-Vamos usar o `$(_PlatformFolder)` propriedade para manter o `$(Platform)` locais de pasta da plataforma. Essa propriedade é
+Usaremos a `$(_PlatformFolder)` propriedade para manter os locais da `$(Platform)` pasta da plataforma. Essa propriedade é
 
-> `$(VCTargetsPath)`\\*Plataformas*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*Compatíveis*\\`$(Platform)`
 
-para aplicativos da área de trabalho do Windows, e
+para aplicativos da área de trabalho do Windows e
 
-> `$(VCTargetsPath)`\\*Tipo de aplicativo*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*plataformas*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*Application Type* \\ Tipo `$(ApplicationType)` \\ de `$(ApplicationTypeRevision)` aplicativo \\ *Plataformas*\\`$(Platform)`
 
 para todo o resto.
 
-Os arquivos de objetos são importados nesta ordem:
+Os arquivos props são importados nesta ordem:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*props* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *arquivos de propriedades*
+> `$(VCTargetsPath)`\\*Microsoft. cpp. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Platform. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ *Conjunto de ferramentas. props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *props*
 
 Os arquivos de destino são importados nesta ordem:
 
-> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* \
-&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*targets* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target* \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*.*targets*
+> `$(VCTargetsPath)`\\*Microsoft. cpp. targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Current. targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform. targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft. cpp. Platform. targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore* \\ \* . *destinos* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets* \\ `$(PlatformToolset)` PlatformToolsets \\ *Conjunto de ferramentas. Target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter* \\ \* . *destinos*
 
-Se você precisa definir algumas propriedades padrão para seu conjunto de ferramentas, você pode adicionar arquivos ImportBefore e ImportAfter nas pastas apropriadas.
+Se você precisar definir algumas propriedades padrão para o conjunto de ferramentas, poderá adicionar arquivos às pastas ImportBefore e ImportAfter apropriadas.
 
-## <a name="author-toolsetprops-and-toolsettargets-files"></a>Arquivos Toolset.props autor e Toolset.targets
+## <a name="author-toolsetprops-and-toolsettargets-files"></a>Criar arquivos de conjunto de ferramentas. props e Toolset. targets
 
-*Toolset.Props* e *Toolset.targets* arquivos têm controle total sobre o que acontece durante uma compilação quando esse conjunto de ferramentas é usado. Eles também podem controlar os depuradores disponíveis, alguns da interface de usuário do IDE, como o conteúdo a **páginas de propriedade** caixa de diálogo e alguns outros aspectos do comportamento do projeto.
+Os arquivos *Toolset. props* e *Toolset. targets* têm controle total sobre o que acontece durante uma compilação quando esse conjunto de ferramentas é usado. Eles também podem controlar os depuradores disponíveis, parte da interface do usuário do IDE, como o conteúdo na caixa de diálogo **páginas de propriedades** e alguns outros aspectos do comportamento do projeto.
 
-Embora o processo de compilação inteiro pode ser substituído por um conjunto de ferramentas, geralmente você deseja apenas a seu conjunto de ferramentas para modificar ou adicionar que algumas etapas de build ou usar ferramentas de compilação diferente, como parte de um processo de compilação existente. Para atingir essa meta, há um número de arquivos comuns de objetos e destinos de que seu conjunto de ferramentas pode importar. Dependendo do que você deseja fazer em seu conjunto de ferramentas, esses arquivos podem ser úteis para usar como importações ou exemplos:
+Embora um conjunto de ferramentas possa substituir todo o processo de compilação, normalmente você apenas deseja que o conjunto de ferramentas modifique ou adicione algumas etapas de compilação, ou use ferramentas de compilação diferentes, como parte de um processo de compilação existente. Para atingir esse objetivo, há vários arquivos comuns de props e de destinos que seu conjunto de ferramentas pode importar. Dependendo do que você deseja que seu conjunto de ferramentas faça, esses arquivos podem ser úteis para serem usados como importações ou como exemplos:
 
-- `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
+- `$(VCTargetsPath)`\\*Microsoft. CppCommon. targets*
 
   Esse arquivo define as principais partes do processo de compilação nativo e também importa:
 
-  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft. CppBuild. targets*
 
-  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft. BuildSteps. targets*
 
-  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft. Common. targets*
 
-- `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
+- `$(VCTargetsPath)`\\*Microsoft. cpp. Common. props*
 
-   Define padrões para conjuntos de ferramentas que usam os compiladores Microsoft e Windows de destino.
+   Define padrões para conjuntos de ferramentas que usam os compiladores da Microsoft e as janelas de destino.
 
-- `$(VCTargetsPath)`\\*Microsoft.Cpp.WindowsSDK.props*
+- `$(VCTargetsPath)`\\*Microsoft. cpp. WindowsSDK. props*
 
-   Esse arquivo determina o local do SDK do Windows e define algumas propriedades importantes para aplicativos destinados ao Windows.
+   Esse arquivo determina o local do SDK do Windows e define algumas propriedades importantes para aplicativos direcionados para o Windows.
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Integrar destinos específicos do conjunto de ferramentas com o padrão no processo de compilação do C++
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>Integrar destinos específicos do conjunto de ferramentas com o processo de compilação padrão do C++
 
-O processo de compilação de C++ de padrão é definido no *Microsoft.CppCommon.targets*. Lá, os destinos não chamam qualquer ferramenta de compilação específica; eles especificam principal criar etapas, seu pedido e dependências.
+O processo de compilação padrão do C++ é definido em *Microsoft. CppCommon. targets*. Os destinos não chamam nenhuma ferramenta de Build específica; Eles especificam as principais etapas de compilação, sua ordem e dependências.
 
-A compilação de C++ tem três etapas principais, que são representadas pelas seguintes destinos:
+A compilação C++ tem três etapas principais, que são representadas pelos seguintes destinos:
 
 - `BuildGenerateSources`
 
@@ -181,7 +181,7 @@ A compilação de C++ tem três etapas principais, que são representadas pelas 
 
 - `BuildLink`
 
-Porque cada etapa de compilação pode ser executada de forma independente, os destinos em execução em uma única etapa não podem depender de grupos de itens e propriedades definidas nos destinos que são executados como parte de uma etapa diferente. Essa divisão permite que determinados compilação otimizações de desempenho. Embora não seja usado por padrão, é incentivado ainda a honrar essa separação.
+Como cada etapa de compilação pode ser executada de forma independente, os destinos em execução em uma etapa não podem contar com os grupos de itens e as propriedades definidas nos destinos executados como parte de uma etapa diferente. Essa divisão permite determinadas otimizações de desempenho de compilação. Embora ele não seja usado por padrão, você ainda é incentivado a honrar essa separação.
 
 Os destinos que são executados dentro de cada etapa são controlados por essas propriedades:
 
@@ -191,7 +191,7 @@ Os destinos que são executados dentro de cada etapa são controlados por essas 
 
 - `$(BeforeBuildLinkTargets)`
 
-Cada etapa também tem propriedades Before e After.
+Cada etapa também tem as propriedades before e After.
 
 ```xml
 <Target
@@ -207,7 +207,7 @@ Cada etapa também tem propriedades Before e After.
   DependsOnTargets="$(CommonBuildOnlyTargets);$(BeforeBuildLinkTargets);$(BuildLinkTargets);$(AfterBuildLinkTargets)" />
 ```
 
-Consulte a *Microsoft.CppBuild.targets* arquivo para obter exemplos de destinos que estão incluídos em cada etapa:
+Consulte o arquivo *Microsoft. CppBuild. targets* para obter exemplos dos destinos que estão incluídos em cada etapa:
 
 ```xml
 <BuildCompileTargets Condition="'$(ConfigurationType)'\!='Utility'">
@@ -219,7 +219,7 @@ Consulte a *Microsoft.CppBuild.targets* arquivo para obter exemplos de destinos 
 </BuildCompileTargets>
 ```
 
-Se você examinar os destinos, tais como `_ClCompile`, você verá que eles não fazem nada diretamente por si só, mas em vez disso, dependem de outros destinos, incluindo `ClCompile`:
+Se você observar os destinos, como `_ClCompile` , você verá que eles não fazem nada diretamente, mas dependem de outros destinos, incluindo `ClCompile` :
 
 ```xml
 <Target Name="_ClCompile"
@@ -227,13 +227,13 @@ Se você examinar os destinos, tais como `_ClCompile`, você verá que eles não
 </Target>
 ```
 
-`ClCompile` e outro compilar destinos específicos de ferramenta são definidos como destinos vazios *Microsoft.CppBuild.targets*:
+`ClCompile` e outros destinos específicos da ferramenta de compilação são definidos como destinos vazios em *Microsoft. CppBuild. targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-Porque o `ClCompile` destino estiver vazio, a menos que seja substituído por um conjunto de ferramentas, nenhuma ação de compilação real é executada. Os destinos de conjunto de ferramentas podem substituir a `ClCompile` de destino, ou seja, eles podem conter outro `ClCompile` definição depois de importar *Microsoft.CppBuild.targets*:
+Como o `ClCompile` destino está vazio, a menos que seja substituído por um conjunto de ferramentas, nenhuma ação de Build real é executada. Os destinos do conjunto de ferramentas podem substituir o `ClCompile` destino, ou seja, eles podem conter outra `ClCompile` definição depois de importar *Microsoft. CppBuild. targets*:
 
 ```xml
 <Target Name="ClCompile"
@@ -243,21 +243,21 @@ Porque o `ClCompile` destino estiver vazio, a menos que seja substituído por um
 </Target>
 ```
 
-Apesar do nome, que foi criado antes que o Visual Studio implementou o suporte de plataforma cruzada, o `ClCompile` destino não terá que chamar CL.exe. Ele também pode chamar gcc, Clang ou com outros compiladores usando tarefas do MSBuild apropriadas.
+Apesar de seu nome, que foi criado antes do Visual Studio implementar o suporte de plataforma cruzada, o `ClCompile` destino não precisa chamar CL.exe. Ele também pode chamar Clang, gcc ou outros compiladores usando as tarefas apropriadas do MSBuild.
 
-O `ClCompile` destino não deve ter todas as dependências, exceto o `SelectClCompile` destino, que é necessário para o comando de compilação único arquivo trabalhar no IDE.
+O `ClCompile` destino não deve ter nenhuma dependência, exceto o `SelectClCompile` destino, que é necessário para que o comando de compilação de arquivo único funcione no IDE.
 
-## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Tarefas do MSBuild para usar em destinos do conjunto de ferramentas
+## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Tarefas do MSBuild a serem usadas em destinos do conjunto de ferramentas
 
-Para invocar uma ferramenta de build real, o destino precisa chamar uma tarefa do MSBuild. Há um basic [tarefa Exec](../msbuild/exec-task.md) que permite que você especifique uma linha de comando para executar. No entanto, as ferramentas de build geralmente têm muitas opções, entradas. e as saídas para acompanhar para as compilações incrementais, então, faz mais sentido ter tarefas especiais para eles. Por exemplo, o `CL` tarefa converte as propriedades do MSBuild em CL.exe comutadores, grava-os em um arquivo de resposta e chama CL.exe. Ele também acompanha todos os arquivos de entrada e saídos para mais tarde as compilações incrementais. Para obter mais informações, consulte [compilações incrementais e verificações atualizadas](#incremental-builds-and-up-to-date-checks).
+Para invocar uma ferramenta de compilação real, o destino precisa chamar uma tarefa do MSBuild. Há uma [tarefa Exec](../msbuild/exec-task.md) básica que permite especificar uma linha de comando a ser executada. No entanto, as ferramentas de compilação geralmente têm muitas opções, entradas. e saídas para rastrear compilações incrementais, de modo que faz mais sentido ter tarefas especiais para elas. Por exemplo, a `CL` tarefa converte as propriedades do MSBuild em CL.exe opções, grava-as em um arquivo de resposta e chama CL.exe. Ele também controla todos os arquivos de entrada e saída para compilações incrementais posteriores. Para obter mais informações, consulte [compilações incrementais e verificações atualizadas](#incremental-builds-and-up-to-date-checks).
 
-O Microsoft.Cpp.Common.Tasks.dll implementa essas tarefas:
+O Microsoft.Cpp.Common.Tasks.dll implementa estas tarefas:
 
 - `BSCMake`
 
 - `CL`
 
-- `ClangCompile` (opções do clang gcc)
+- `ClangCompile` (Clang-opções de gcc)
 
 - `LIB`
 
@@ -271,71 +271,71 @@ O Microsoft.Cpp.Common.Tasks.dll implementa essas tarefas:
 
 - `XDCMake`
 
-- `CustomBuild` (como Exec mas com entrada e saída de rastreamento)
+- `CustomBuild` (como exec, mas com acompanhamento de entrada e saída)
 
 - `SetEnv`
 
 - `GetOutOfDateItems`
 
-Se você tiver uma ferramenta que executa a mesma ação que uma ferramenta existente e que tem opções de linha de comando similares (assim como clang-cl e CL), você pode usar a mesma tarefa para os dois.
+Se você tiver uma ferramenta que execute a mesma ação que uma ferramenta existente e que tenha opções de linha de comando semelhantes (como Clang e CL do), você poderá usar a mesma tarefa para ambas.
 
-Se você precisar criar uma nova tarefa para uma ferramenta de compilação, você pode escolher entre as seguintes opções:
+Se você precisar criar uma nova tarefa para uma ferramenta de compilação, poderá escolher entre as seguintes opções:
 
-1. Se você usar essa tarefa raramente, ou se alguns segundos não importam para sua compilação, você pode usar tarefas do MSBuild 'inline':
+1. Se você usar essa tarefa raramente ou se alguns segundos não forem importantes para sua compilação, você poderá usar tarefas ' embutidas ' do MSBuild:
 
-   - Tarefa de XAML (uma regra de compilação personalizada)
+   - Tarefa XAML (uma regra de compilação personalizada)
 
-     Para obter um exemplo de uma declaração de tarefa de Xaml, consulte `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*e para seu uso, consulte `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*.
+     Para obter um exemplo de uma declaração de tarefa XAML, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml*e, para seu uso, consulte `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *MASM. targets*.
 
    - [Tarefa de código](../msbuild/msbuild-inline-tasks.md)
 
-1. Se você deseja o melhor desempenho da tarefa ou precisa apenas a funcionalidade mais complexa, usar o MSBuild regular [gravação de tarefa](../msbuild/task-writing.md) processo.
+1. Se você quiser um melhor desempenho de tarefas ou precisar apenas de uma funcionalidade mais complexa, use o processo de [gravação de tarefa](../msbuild/task-writing.md) regular do MSBuild.
 
-   Se nem todas as entradas e saídas da ferramenta são listadas na linha de comando da ferramenta, como mostra a `CL`, `MIDL`, e `RC` casos e se você quiser de entrada automática e rastreamento de arquivo de saída e criação de arquivos. tlog, derivar sua tarefa da `Microsoft.Build.CPPTasks.TrackedVCToolTask`classe. No momento, enquanto há documentação para a base [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) classe, não há exemplos ou documentação para obter os detalhes de `TrackedVCToolTask` classe. Se isso fosse de interesse específico, adicione sua voz a uma solicitação na [developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
+   Se nem todas as entradas e saídas da ferramenta estiverem listadas na linha de comando da ferramenta, como `CL` nos `MIDL` casos, e `RC` , se você quiser o rastreamento de arquivo de entrada e saída automático e a criação do arquivo. tlog, derive a tarefa da `Microsoft.Build.CPPTasks.TrackedVCToolTask` classe. No momento, embora haja documentação para a classe base [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) , não há exemplos ou documentação para os detalhes da `TrackedVCToolTask` classe. Se isso for de interesse particular, adicione sua voz a uma solicitação em [developercommunity.VisualStudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html).
 
-## <a name="incremental-builds-and-up-to-date-checks"></a>Builds incrementais e verificações atualizadas
+## <a name="incremental-builds-and-up-to-date-checks"></a>Compilações incrementais e verificações atualizadas
 
-A compilação incremental de MSBuild padrão se destina a uso `Inputs` e `Outputs` atributos. Se você especificá-los, o MSBuild chama o destino somente se qualquer uma das entradas tem um carimbo de hora mais recente que todas as saídas. Como arquivos de origem geralmente incluem ou importar outros arquivos e criar ferramentas produzir saídas diferentes, dependendo das opções de ferramenta, é difícil especificar todas as possíveis entradas e saídas de destinos do MSBuild.
+Os destinos de compilação incremental do MSBuild padrão usam `Inputs` `Outputs` atributos e. Se você especificá-los, o MSBuild chamará o destino somente se qualquer uma das entradas tiver um carimbo de data/hora mais recente do que todas as saídas. Como os arquivos de origem geralmente incluem ou importam outros arquivos, e as ferramentas de compilação produzem saídas diferentes dependendo das opções da ferramenta, é difícil especificar todas as entradas e saídas possíveis em destinos do MSBuild.
 
-Para gerenciar esse problema, a compilação de C++ usa uma técnica diferente para dar suporte a compilações incrementais. A maioria dos destinos não especificar as entradas e saídas e como resultado, sempre executar durante a compilação. As tarefas chamadas pelos destinos gravam informações sobre todas as entradas e saídas no *tlog* arquivos que têm uma extensão. tlog. Os arquivos. tlog são usados por compilações posteriores para verificar o que foi alterado e precisa ser recriado e o que é atualizado. Os arquivos. tlog também são a única fonte para a verificação de atualização de compilação padrão no IDE.
+Para gerenciar esse problema, a compilação C++ usa uma técnica diferente para dar suporte a compilações incrementais. A maioria dos destinos não especifica entradas e saídas e, como resultado, sempre é executada durante a compilação. As tarefas chamadas por destinos gravam informações sobre todas as entradas e saídas em arquivos *tlog* que têm uma extensão. tlog. Os arquivos. tlog são usados por compilações posteriores para verificar o que mudou e precisa ser recriado e o que está atualizado. Os arquivos. tlog também são a única fonte para a verificação padrão da compilação atual no IDE.
 
-Para determinar todas as entradas e saídas, tarefas de ferramenta nativa usam tracker.exe e o [FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) classe fornecida pelo MSBuild.
+Para determinar todas as entradas e saídas, as tarefas de ferramentas nativas usam tracker.exe e a classe [Filetrackr](/dotnet/api/microsoft.build.utilities.filetracker) fornecida pelo MSBuild.
 
-Microsoft.Build.CPPTasks.Common.dll define o `TrackedVCToolTask` classe base abstrata pública. A maioria das tarefas de ferramenta nativa é derivada dessa classe.
+Microsoft.Build.CPPTasks.Common.dll define a `TrackedVCToolTask` classe base abstrata pública. A maioria das tarefas de ferramentas nativas é derivada dessa classe.
 
-A partir do Visual Studio 2017 atualização 15,8, você pode usar o `GetOutOfDateItems` tarefa implementada em Microsoft.Cpp.Common.Tasks.dll para produzir arquivos. tlog para destinos personalizados com entradas e saídas conhecidas.
-Como alternativa, você pode criá-los usando o `WriteLinesToFile` tarefa. Consulte a `_WriteMasmTlogs` de destino no `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets* como exemplo.
+A partir do Visual Studio 2017 atualização 15,8, você pode usar a `GetOutOfDateItems` tarefa implementada em Microsoft.Cpp.Common.Tasks.dll para produzir arquivos. tlog para destinos personalizados com entradas e saídas conhecidas.
+Como alternativa, você pode criá-los usando a `WriteLinesToFile` tarefa. Consulte o `_WriteMasmTlogs` destino em `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *MASM. targets* como exemplo.
 
 ## <a name="tlog-files"></a>arquivos. tlog
 
-Há três tipos de arquivos. tlog: *leia*, *escrever*, e *linha de comando*. Arquivos. tlog a leitura e gravação são usados por builds incrementais e a verificação atualizada no IDE. Arquivos. tlog de linha de comando são usados somente em compilações incrementais.
+Há três tipos de arquivos. tlog: *leitura*, *gravação*e *linha de comando*. Ler e gravar arquivos. tlog são usados por compilações incrementais e pela verificação atualizada no IDE. Os arquivos de linha de comando. tlog são usados apenas em compilações incrementais.
 
-O MSBuild fornece essas classes de auxiliar para ler e gravar arquivos. tlog:
+O MSBuild fornece essas classes auxiliares para ler e gravar arquivos. tlog:
 
 - [CanonicalTrackedInputFiles](/dotnet/api/microsoft.build.utilities.canonicaltrackedinputfiles)
 
 - [CanonicalTrackedOutputFiles](/dotnet/api/microsoft.build.utilities.canonicaltrackedoutputfiles)
 
-O [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) classe pode ser usada para acesso de leitura e gravar arquivos. tlog e identificar entradas que são mais recentes de saídas, ou se uma saída está ausente. Ele é usado na verificação de atualização.
+A classe [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) pode ser usada para acessar arquivos Read e Write. tlog e identificar entradas que são mais novas do que saídas, ou se uma saída estiver ausente. Ele é usado na verificação atualizada.
 
-Arquivos. tlog de linha de comando contêm informações sobre linhas de comando usado na compilação. Eles são usados apenas para compilações incrementais, verificações não atualizadas, para que o formato interno é determinado pela tarefa do MSBuild que produz-los.
+Os arquivos de linha de comando. tlog contêm informações sobre linhas de comando usadas na compilação. Eles são usados apenas para compilações incrementais, não para verificações atualizadas, portanto, o formato interno é determinado pela tarefa do MSBuild que os produz.
 
-### <a name="read-tlog-format"></a>Formato. tlog de leitura
+### <a name="read-tlog-format"></a>Ler o formato. tlog
 
-*Leia* arquivos. tlog (\*arquivos tlog. Read.\*. tlog) contém informações sobre arquivos de origem e suas dependências.
+*Ler* arquivos. tlog ( \* . Read. \* . tlog) contêm informações sobre arquivos de origem e suas dependências.
 
-Um acento circunflexo ( **^** ) no início de uma linha indica uma ou mais fontes. Fontes que compartilham as mesmas dependências são separados por uma barra vertical ( **\|** ).
+Um acento circunflexo ( **^** ) no início de uma linha indica uma ou mais fontes. As fontes que compartilham as mesmas dependências são separadas por uma barra vertical ( **\|** ).
 
-Arquivos de dependência são listados após fontes de dados, cada um em sua própria linha. Todos os nomes de arquivo são caminhos completos.
+Os arquivos de dependência são listados após as fontes, cada um em sua própria linha. Todos os nomes de arquivo são caminhos completos.
 
-Por exemplo, suponha que as fontes do projeto são encontradas no *f:.\\testar\\ConsoleApplication1\\ConsoleApplication1*. Se seu arquivo de origem *Class1.cpp*, possui os seguintes inclui,
+Por exemplo, suponha que suas fontes de projeto sejam encontradas em *F: \\ test \\ ConsoleApplication1 \\ ConsoleApplication1*. Se o arquivo de origem, *Class1. cpp*, tiver esses incluem,
 
 ```cpp
 #include "stdafx.h" //precompiled header
 #include "Class1.h"
 ```
 
-em seguida, a *CL.read.1.tlog* arquivo contém o arquivo de origem, seguido por suas duas dependências:
+em seguida, o arquivo *CL. Read. 1. tlog* contém o arquivo de origem seguido por suas duas dependências:
 
 ```tlog
 ^F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.CPP
@@ -343,17 +343,17 @@ F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PCH
 F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.H
 ```
 
-Não é necessário gravar os nomes de arquivo em letras maiusculas, mas é uma conveniência para algumas ferramentas.
+Não é necessário escrever nomes de arquivo em letras maiúsculas, mas é uma conveniência para algumas ferramentas.
 
-### <a name="write-tlog-format"></a>Escrever formato. tlog
+### <a name="write-tlog-format"></a>Formato Write. tlog
 
-*Gravar* . tlog (\*Write.\*. arquivos tlog) se conectar a fontes e saídas.
+*Write* . tlog ( \* . Write. \* . tlog) os arquivos conectam fontes e saídas.
 
-Um acento circunflexo ( **^** ) no início de uma linha indica uma ou mais fontes. Várias fontes são separados por uma barra vertical ( **\|** ).
+Um acento circunflexo ( **^** ) no início de uma linha indica uma ou mais fontes. Várias fontes são separadas por uma barra vertical ( **\|** ).
 
-Os arquivos de saída criados a partir de fontes de devem estar listados depois de fontes de dados, cada um em sua própria linha. Todos os nomes de arquivo devem ser caminhos completos.
+Os arquivos de saída criados a partir das fontes devem ser listados após as fontes, cada um em sua própria linha. Todos os nomes de arquivo devem ser caminhos completos.
 
-Por exemplo, para um projeto ConsoleApplication simples que tem um arquivo de origem adicionais *Class1.cpp*, o *link.write.1.tlog* arquivo pode conter:
+Por exemplo, para um projeto ConsoleApplication simples que tem um arquivo de origem adicional *Class1. cpp*, o arquivo *link. Write. 1. tlog* pode conter:
 
 ```tlog
 ^F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CLASS1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\STDAFX.OBJ
@@ -362,19 +362,19 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.EXE
 F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 ```
 
-## <a name="design-time-build"></a>Compilação de tempo de design
+## <a name="design-time-build"></a>Compilação em tempo de design
 
-No IDE,. vcxproj projetos usam um conjunto de destinos do MSBuild para obter informações adicionais do projeto e gerar novamente os arquivos de saída. Alguns desses destinos são usados somente em compilações de tempo de design, mas muitos deles são usados em compilações regulares e compilações de tempo de design.
+No IDE, os projetos. vcxproj usam um conjunto de destinos do MSBuild para obter informações adicionais do projeto e para gerar novamente os arquivos de saída. Alguns desses destinos são usados apenas em compilações de tempo de design, mas muitos deles são usados tanto em compilações regulares quanto em compilações de tempo de design.
 
-Para obter informações gerais sobre compilações de tempo de design, consulte a documentação do CPS [builds de tempo de Design](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Esta documentação é apenas parcialmente aplicável aos projetos do Visual C++.
+Para obter informações gerais sobre compilações de tempo de design, consulte a documentação do CPS para [compilações de tempo de design](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Esta documentação é apenas parte aplicável a Visual C++ projetos.
 
-O `CompileDesignTime` e `Compile` destinos mencionados no tempo de design se baseia em documentação nunca executada para projetos. vcxproj. Projetos do Visual C++. vcxproj usam diferentes destinos de tempo de design para obter informações do IntelliSense.
+Os `CompileDesignTime` `Compile` destinos e mencionados na documentação de builds de tempo de design nunca são executados para projetos. vcxproj. Os projetos Visual C++. vcxproj usam destinos de tempo de design diferentes para obter informações do IntelliSense.
 
-### <a name="design-time-targets-for-intellisense-information"></a>Metas de tempo de design para as informações do IntelliSense
+### <a name="design-time-targets-for-intellisense-information"></a>Destinos de tempo de design para informações do IntelliSense
 
-As metas de tempo de design usadas em projetos. vcxproj são definidas no `$(VCTargetsPath)` \\ *Microsoft.Cpp.DesignTime.targets*.
+Os destinos de tempo de design usados em projetos. vcxproj são definidos em `$(VCTargetsPath)` \\ *Microsoft. cpp. designtime. targets*.
 
-O `GetClCommandLines` destino coleta opções do compilador para IntelliSense:
+O `GetClCommandLines` destino coleta opções de compilador para o IntelliSense:
 
 ```xml
 <Target
@@ -383,39 +383,39 @@ O `GetClCommandLines` destino coleta opções do compilador para IntelliSense:
   DependsOnTargets="$(DesignTimeBuildInitTargets);$(ComputeCompileInputsTargets)">
 ```
 
-- `DesignTimeBuildInitTargets` – somente a inicialização de build de destinos, necessários para o tempo de design de tempo de design. Entre outras coisas, esses destinos desabilite algumas das funcionalidades de build normal para melhorar o desempenho.
+- `DesignTimeBuildInitTargets` – destinos somente de tempo de design, necessários para a inicialização de compilação em tempo de design. Entre outras coisas, esses destinos desabilitam algumas funcionalidades de compilação regulares para melhorar o desempenho.
 
-- `ComputeCompileInputsTargets` – um conjunto de destinos que modifica as opções do compilador e itens. Esses destinos são executados em builds de tempo de design e regulares.
+- `ComputeCompileInputsTargets` – um conjunto de destinos que modifica opções e itens de compilador. Esses destinos são executados em compilações regulares e em tempo de design.
 
-As chamadas de destino a `CLCommandLine` tarefas para criar a linha de comando a serem usados para IntelliSense. Novamente, apesar do nome, ele pode manipular não apenas opções CL, mas as opções Clang e o gcc. O tipo de comutadores de compilador é controlado pelo `ClangMode` propriedade.
+O destino chama a `CLCommandLine` tarefa para criar a linha de comando a ser usada para o IntelliSense. Novamente, apesar de seu nome, ele pode manipular não apenas as opções de CL, mas também as opções Clang e gcc. O tipo das opções do compilador é controlado pela `ClangMode` propriedade.
 
-Atualmente, a linha de comando produzido pelo `CLCommandLine` tarefa sempre usa opções CL (mesmo no modo de Clang) porque eles são mais fácil para o mecanismo IntelliSense ao analisar.
+Atualmente, a linha de comando produzida pela `CLCommandLine` tarefa sempre usa as opções de CL (mesmo no modo Clang) porque elas são mais fáceis para o mecanismo IntelliSense analisar.
 
-Se você estiver adicionando um destino que é executado antes da compilação, regular ou tempo de design, verifique se ele não interromperá o tempo de design se baseia ou afetar o desempenho. A maneira mais simples para testar seu destino é abrir um prompt de comando do desenvolvedor e execute este comando:
+Se você estiver adicionando um destino que é executado antes da compilação, seja regular ou em tempo de design, certifique-se de que ele não interrompa as compilações de tempo de design ou afete o desempenho. A maneira mais simples de testar seu destino é abrir um prompt de comando do desenvolvedor e executar este comando:
 
 ```
 msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuration=Debug;Platform=Win32;BuildingInsideVisualStudio=true;DesignTimebuild=true /t:\_PerfIntellisenseInfo /v:d /fl /fileloggerparameters:PerformanceSummary \*.vcxproj
 ```
 
-Esse comando gera um log de compilação detalhado *MSBuild*, que tem um desempenho de resumo para os destinos e tarefas no final.
+Esse comando produz um log de compilação detalhado, *MSBuild. log*, que tem um resumo de desempenho para os destinos e as tarefas no final.
 
-Certifique-se de usar `Condition ="'$(DesignTimeBuild)' != 'true'"` em todas as operações que só fazem sentido para compilações regulares e não para builds de tempo de design.
+Certifique-se de usar `Condition ="'$(DesignTimeBuild)' != 'true'"` em todas as operações que fazem sentido apenas para compilações regulares e não para compilações de tempo de design.
 
-### <a name="design-time-targets-that-generate-sources"></a>Metas de tempo de design que geram fontes
+### <a name="design-time-targets-that-generate-sources"></a>Destinos de tempo de design que geram fontes
 
-*Esse recurso está desabilitado por padrão para projetos nativos de área de trabalho e atualmente não há suporte para projetos em cache*.
+*Esse recurso está desabilitado por padrão para projetos nativos de desktop e não tem suporte atualmente em projetos em cache*.
 
-Se `GeneratorTarget` metadados é definido para um item de projeto e, em seguida, o destino é executado automaticamente, ambos quando o projeto é carregado e quando o arquivo de origem é alterado.
+Se os `GeneratorTarget` metadados forem definidos para um item de projeto, o destino será executado automaticamente quando o projeto for carregado e quando o arquivo de origem for alterado.
 
 ::: moniker range="vs-2017"
 
-Por exemplo gerar automaticamente. cpp ou. h, arquivos de arquivos. XAML, o `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v15.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* arquivos definem-los entidades:
+Por exemplo, para gerar automaticamente arquivos. cpp ou. h de arquivos. XAML, os `$(VSInstallDir)` \\ arquivos *MSBuild* \\ *Microsoft* \\ *WindowsXaml* \\ *v 15.0* \\ \* \\ *Microsoft. Windows. UI. XAML. cpp. targets* definem estas entidades:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Por exemplo gerar automaticamente. cpp ou. h, arquivos de arquivos. XAML, o `$(VSInstallDir)` \\ *MSBuild*\\*Microsoft* \\  *WindowsXaml*\\*v16.0*\\\*\\*Microsoft.Windows.UI.Xaml.CPP.Targets* arquivos definem-los entidades:
+Por exemplo, para gerar automaticamente arquivos. cpp ou. h de arquivos. XAML, os `$(VSInstallDir)` \\ arquivos *MSBuild* \\ *Microsoft* \\ *WindowsXaml* \\ *v 16.0* \\ \* \\ *Microsoft. Windows. UI. XAML. cpp. targets* definem estas entidades:
 
 ::: moniker-end
 
@@ -435,7 +435,7 @@ Por exemplo gerar automaticamente. cpp ou. h, arquivos de arquivos. XAML, o `$(V
 </Target>
 ```
 
-Para usar `Task.HostObject` para obter o conteúdo não salvo arquivos de origem, os destinos e tarefas devem ser registrados como [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) para os projetos de determinado em um pkgdef:
+Para usar `Task.HostObject` o para obter o conteúdo não salvo de arquivos de origem, os destinos e a tarefa devem ser registrados como [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) para os projetos fornecidos em um pkgdef:
 
 ```reg
 \[$RootKey$\\Projects\\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\\MSBuildHostObjects\]
@@ -443,17 +443,17 @@ Para usar `Task.HostObject` para obter o conteúdo não salvo arquivos de origem
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Extensibilidade de projeto do Visual C++ no IDE do Visual Studio
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual C++ a extensibilidade do projeto no IDE do Visual Studio
 
-O sistema de projeto do Visual C++ se baseia a [sistema de projeto do VS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)e usa seus pontos de extensibilidade. No entanto, a implementação da hierarquia de projeto é específica para o Visual C++ e não baseado no CPS, extensibilidade de hierarquia é limitada aos itens de projeto.
+O sistema de projeto Visual C++ é baseado no [sistema do vs Project](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)e usa seus pontos de extensibilidade. No entanto, a implementação da hierarquia do projeto é específica para Visual C++ e não com base no CPS, portanto, a extensibilidade da hierarquia é limitada aos itens do projeto.
 
-### <a name="project-property-pages"></a>Páginas de propriedades do projeto
+### <a name="project-property-pages"></a>Página de propriedades do projeto
 
-Para obter informações gerais de design, consulte [Framework Multi-Targeting para projetos do VC + +](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
+Para obter informações gerais de design, consulte [estrutura multiplataforma para projetos do vc + +](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
-Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/build/reference/property-page-xml-files).
+Em termos simples, as páginas de propriedades que você vê na caixa de diálogo **Propriedades do projeto** de um projeto C++ são definidas por arquivos de *regras* . Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no arquivo de projeto. Arquivos de regras são arquivos. XML que usam o formato XAML. Os tipos usados para serializar eles são descritos em [Microsoft. Build. Framework. XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [Property Page XML Rule files](/cpp/build/reference/property-page-xml-files).
 
-Os arquivos de regra devem ser adicionados para o `PropertyPageSchema` grupo de itens:
+Os arquivos de regra devem ser adicionados ao `PropertyPageSchema` grupo de itens:
 
 ```xml
 <ItemGroup>
@@ -464,13 +464,13 @@ Os arquivos de regra devem ser adicionados para o `PropertyPageSchema` grupo de 
 </ItemGroup>
 ```
 
-`Context` metadados limita a visibilidade de regra, que também é controlada pelo tipo de regra e pode ter um destes valores:
+`Context` os metadados limitam a visibilidade da regra, que também é controlada pelo tipo de regra, e pode ter um destes valores:
 
 `Project` | `File` | `PropertySheet`
 
-CPS dá suporte a outros valores para o tipo de contexto, mas eles não são usados em projetos do Visual C++.
+O CPS dá suporte a outros valores para o tipo de contexto, mas eles não são usados em projetos Visual C++.
 
-Se a regra deve estar visível em mais de um contexto, use ponto e vírgula ( **;** ) para separar os valores de contexto, como mostrado aqui:
+Se a regra estiver visível em mais de um contexto, use ponto-e-vírgula (**;**) para separar os valores de contexto, conforme mostrado aqui:
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -478,9 +478,9 @@ Se a regra deve estar visível em mais de um contexto, use ponto e vírgula ( **
 </PropertyPageSchema>
 ```
 
-#### <a name="rule-format-and-main-types"></a>Formato de regra e os principais tipos
+#### <a name="rule-format-and-main-types"></a>Formato de regra e tipos principais
 
-O formato de regra é simples, portanto, esta seção descreve somente os atributos que afetam como a regra aparece na interface do usuário.
+O formato da regra é simples, portanto, esta seção descreve apenas os atributos que afetam a aparência da regra na interface do usuário.
 
 ```xml
 <Rule
@@ -491,16 +491,16 @@ O formato de regra é simples, portanto, esta seção descreve somente os atribu
   xmlns="http://schemas.microsoft.com/build/2009/properties">
 ```
 
-O `PageTemplate` atributo define como a regra é exibida na **páginas de propriedade** caixa de diálogo. O atributo pode ter um destes valores:
+O `PageTemplate` atributo define como a regra é exibida na caixa de diálogo **páginas de propriedades** . O atributo pode ter um destes valores:
 
 | Atributo | Descrição |
 |------------| - |
-| `generic` | Todas as propriedades são mostradas em uma única página nos títulos de categoria<br/>A regra pode ser visível para os `Project` e `PropertySheet` contextos, mas não `File`.<br/><br/> Exemplo: `$(VCTargetsPath)`\\*1033*\\*general.xml* |
-| `tool` | Categorias são mostradas como subpáginas.<br/>A regra pode ser visível em todos os contextos: `Project`, `PropertySheet` e `File`.<br/>A regra está visível nas propriedades do projeto somente se o projeto tem itens com o `ItemType` definidos no `Rule.DataSource`, a menos que o nome da regra está incluído no `ProjectTools` grupo de itens.<br/><br/>Exemplo: `$(VCTargetsPath)`\\*1033*\\*clang.xml* |
-| `debugger` | A página é mostrada como parte da página de depuração.<br/>Categorias são ignoradas no momento.<br/>O nome da regra deve corresponder do objeto Debug iniciador MEF `ExportDebugger` atributo.<br/><br/>Exemplo: `$(VCTargetsPath)`\\*1033*\\*debugger\_local\_windows.xml* |
-| *custom* | Modelo personalizado. O nome do modelo deve corresponder a `ExportPropertyPageUIFactoryProvider` atributo do `PropertyPageUIFactoryProvider` objeto MEF. Ver **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Exemplo: `$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
+| `generic` | Todas as propriedades são mostradas em uma página em títulos de categoria<br/>A regra pode ser visível para `Project` e `PropertySheet` contextos, mas não para `File` .<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
+| `tool` | As categorias são mostradas como subpáginas.<br/>A regra pode ser visível em todos os contextos `Project` : `PropertySheet` e `File` .<br/>A regra estará visível nas propriedades do projeto somente se o projeto tiver itens com o `ItemType` definido em `Rule.DataSource` , a menos que o nome da regra esteja incluído no `ProjectTools` grupo de itens.<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
+| `debugger` | A página é mostrada como parte da página de depuração.<br/>As categorias são ignoradas no momento.<br/>O nome da regra deve corresponder ao atributo do objeto MEF do inicializador de depuração `ExportDebugger` .<br/><br/>Exemplo: `$(VCTargetsPath)` \\ *1033* \\ * \_ \_windows.xmldo depurador local* do 1033 |
+| *Personalizar* | Modelo personalizado. O nome do modelo deve corresponder ao `ExportPropertyPageUIFactoryProvider` atributo do `PropertyPageUIFactoryProvider` objeto MEF. Consulte **Microsoft. VisualStudio. ProjectSystem. designers. Properties. IPropertyPageUIFactoryProvider**.<br/><br/> Exemplo: `$(VCTargetsPath)` \\ *1033* \\ *userMacros.xml* |
 
-Se a regra usa um dos modelos com base em grade de propriedade, ele poderá usar esses pontos de extensibilidade para suas propriedades:
+Se a regra usar um dos modelos baseados em grade de propriedade, ela poderá usar esses pontos de extensibilidade para suas propriedades:
 
 - [Editores de valor de propriedade](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/property_value_editors.md)
 
@@ -508,17 +508,17 @@ Se a regra usa um dos modelos com base em grade de propriedade, ele poderá usar
 
 #### <a name="extend-a-rule"></a>Estender uma regra
 
-Se você quiser usar uma regra existente, mas precisa adicionar ou remover (isto é, ocultar) apenas algumas propriedades, você pode criar uma [regra de extensão](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/extending_rules.md).
+Se você quiser usar uma regra existente, mas precisar adicionar ou remover (ou seja, ocultar) apenas algumas propriedades, poderá criar uma [regra de extensão](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/extending_rules.md).
 
 #### <a name="override-a-rule"></a>Substituir uma regra
 
-Talvez você queira seu conjunto de ferramentas para usar a maioria das regras do padrão de projeto, mas substitua apenas um ou alguns deles. Por exemplo, digamos que você deseja alterar a regra de C/C++ para mostrar as opções do compilador diferentes. Você pode fornecer uma nova regra com o mesmo nome e nome de exibição como a regra existente e incluí-lo no `PropertyPageSchema` grupo de itens após a importação de destinos de cpp padrão. Apenas uma regra com um determinado nome é usada no projeto e o último deles são incluídos na `PropertyPageSchema` wins do grupo de itens.
+Talvez você queira que o conjunto de ferramentas use a maioria das regras padrão do projeto, mas substitua apenas uma ou algumas delas. Por exemplo, digamos que você queira apenas alterar a regra C/C++ para mostrar diferentes opções de compilador. Você pode fornecer uma nova regra com o mesmo nome e nome de exibição que a regra existente e incluí-la no `PropertyPageSchema` grupo de itens após a importação de destinos de CPP padrão. Somente uma regra com um determinado nome é usada no projeto e a última incluída no `PropertyPageSchema` grupo de itens vence.
 
 #### <a name="project-items"></a>Itens do projeto
 
-O *Projectitemsschema* arquivo define as `ContentType` e `ItemType` os valores para os itens que são tratados como itens de projeto e define `FileExtension` elementos para determinar qual grupo de Item, um novo arquivo for adicionado ao.
+O arquivo de *ProjectItemsSchema.xml* define `ContentType` os `ItemType` valores e para os itens que são tratados como itens de projeto e define os `FileExtension` elementos para determinar a qual grupo de itens um novo arquivo será adicionado.
 
-O arquivo ProjectItemsSchema padrão for encontrado no `$(VCTargetsPath)` \\ *1033*\\*Projectitemsschema*. Para estendê-lo, você deve criar um arquivo de esquema com um novo nome, como *MyProjectItemsSchema.xml*:
+O arquivo ProjectItemsSchema padrão é encontrado em `$(VCTargetsPath)` \\ *1033* \\ *ProjectItemsSchema.xml*. Para estendê-lo, você deve criar um arquivo de esquema com um novo nome, como *MyProjectItemsSchema.xml*:
 
 ```xml
 <ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties">
@@ -536,7 +536,7 @@ O arquivo ProjectItemsSchema padrão for encontrado no `$(VCTargetsPath)` \\ *10
 </ProjectSchemaDefinitions>
 ```
 
-Em seguida, no arquivo de destinos, adicione:
+Em seguida, no arquivo de destino, adicione:
 
 ```xml
 <ItemGroup>
@@ -544,29 +544,29 @@ Em seguida, no arquivo de destinos, adicione:
 </ItemGroup>
 ```
 
-Exemplo: `$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
+Exemplo: `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml*
 
 ### <a name="debuggers"></a>Depuradores
 
 O serviço de depuração no Visual Studio dá suporte à extensibilidade para o mecanismo de depuração. Para obter mais informações, consulte estes exemplos:
 
-- [MIEngine, projeto de código-fonte aberto que dá suporte à depuração lldb](https://github.com/Microsoft/MIEngine)
+- [MIEngine, projeto de código-fonte aberto que dá suporte à depuração de lldb](https://github.com/Microsoft/MIEngine)
 
 - [Exemplo de mecanismo de depuração do Visual Studio](https://code.msdn.microsoft.com/windowsdesktop/Visual-Studio-Debug-Engine-c2e21c0e)
 
-Para especificar os mecanismos de depuração e outras propriedades para a sessão de depuração, você deve implementar uma [depurar iniciador](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) componente MEF e adicione um `debugger` regra. Por exemplo, consulte o `$(VCTargetsPath)` \\1033\\depurador\_local\_windows.xml arquivo.
+Para especificar os mecanismos de depuração e outras propriedades para a sessão de depuração, você deve implementar um componente MEF do [inicializador de depuração](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) e adicionar uma `debugger` regra. Para obter um exemplo, consulte o `$(VCTargetsPath)` \\ \\ \_ arquivowindows.xml do depurador local do 1033 \_ .
 
 ### <a name="deploy"></a>Implantar
 
-a extensibilidade do sistema de projeto do Visual Studio para usam o projetos. vcxproj [provedores implantar](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md).
+os projetos. vcxproj usam a extensibilidade do sistema de projetos do Visual Studio para [implantar provedores](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md).
 
-### <a name="build-up-to-date-check"></a>Construir verificação atualizada
+### <a name="build-up-to-date-check"></a>Verificação atualizada de compilação
 
-Por padrão, a verificação de atualização de compilação exige leitura arquivos. tlog a. tlog e gravação a ser criado no `$(TlogLocation)` pasta durante a compilação para todas as entradas de compilação e saídas.
+Por padrão, a verificação atualizada de compilação requer que arquivos Read. tlog e Write. tlog sejam criados na `$(TlogLocation)` pasta durante a compilação para todas as entradas e saídas de compilação.
 
-Para usar uma verificação de atualização personalizada:
+Para usar uma verificação personalizada atualizada:
 
-1. Desabilitar a verificação de atualização padrão adicionando os `NoVCDefaultBuildUpToDateCheckProvider` funcionalidade na *Toolset.targets* arquivo:
+1. Desabilite a verificação padrão atualizada adicionando a `NoVCDefaultBuildUpToDateCheckProvider` funcionalidade no arquivo *Toolset. targets* :
 
    ```xml
    <ItemGroup>
@@ -574,31 +574,31 @@ Para usar uma verificação de atualização personalizada:
    </ItemGroup>
    ```
 
-1. Implementar seu próprio [IBuildUpToDateCheckProvider](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IBuildUpToDateCheckProvider.md).
+1. Implemente seu próprio [IBuildUpToDateCheckProvider](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IBuildUpToDateCheckProvider.md).
 
 ## <a name="project-upgrade"></a>Atualização do projeto
 
-### <a name="default-vcxproj-project-upgrader"></a>Atualizador de projeto. vcxproj padrão
+### <a name="default-vcxproj-project-upgrader"></a>O Atualizador de projeto padrão. vcxproj
 
-As alterações de atualizador do projeto. vcxproj padrão a `PlatformToolset`, `ApplicationTypeRevision`, conjunto de ferramentas MSBuild versão e o .net framework. As duas últimas sempre são alteradas para os padrões de versão do Visual Studio, mas `PlatformToolset` e `ApplicationTypeRevision` pode ser controlado por propriedades especiais do MSBuild.
+O Atualizador de projeto default. vcxproj altera o `PlatformToolset` , o `ApplicationTypeRevision` MSBuild Toolset versão e o .NET Framework. Os dois últimos são sempre alterados para os padrões de versão do Visual Studio, mas `PlatformToolset` e `ApplicationTypeRevision` podem ser controlados por propriedades especiais do MSBuild.
 
 O atualizador usa esses critérios para decidir se um projeto pode ser atualizado ou não:
 
-1. Para projetos que definem `ApplicationType` e `ApplicationTypeRevision`, há uma pasta com um número de revisão maior que o atual.
+1. Para projetos que definem `ApplicationType` e `ApplicationTypeRevision` , há uma pasta com um número de revisão maior do que a atual.
 
-1. A propriedade `_UpgradePlatformToolsetFor_<safe_toolset_name>` está definido para o conjunto de ferramentas atual, e seu valor não é igual ao conjunto de ferramentas atual.
+1. A propriedade `_UpgradePlatformToolsetFor_<safe_toolset_name>` é definida para o conjunto de ferramentas atual e seu valor não é igual ao conjunto de ferramentas atual.
 
-   Esses nomes de propriedade,  *\<safe_toolset_name >* representa o nome do conjunto de ferramentas com todos os caracteres não alfanuméricos substituídos por um sublinhado ( **\_** ).
+   Nesses nomes de propriedade, *\<safe_toolset_name>* representa o nome do conjunto de ferramentas com todos os caracteres não alfanuméricos substituídos por um sublinhado ( **\_** ).
 
-Quando um projeto pode ser atualizado, ele participa *solução de redirecionamento*. Para obter mais informações, consulte [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
+Quando um projeto pode ser atualizado, ele participa da *solução redirecionando*. Para obter mais informações, consulte [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 
-Se você quiser Adornar os nomes de projeto em **Gerenciador de soluções** quando projetos usam um conjunto de ferramentas específico, defina um `_PlatformToolsetShortNameFor_<safe_toolset_name>` propriedade.
+Se você quiser adornar nomes de projeto em **Gerenciador de soluções** quando os projetos usarem um conjunto de ferramentas específico, defina uma `_PlatformToolsetShortNameFor_<safe_toolset_name>` propriedade.
 
-Para obter exemplos de `_UpgradePlatformToolsetFor_<safe_toolset_name>` e `_PlatformToolsetShortNameFor_<safe_toolset_name>` definições de propriedade, consulte o *Microsoft.Cpp.Default.props* arquivo. Para obter exemplos de uso, consulte o `$(VCTargetPath)` \\ *Microsoft.Cpp.Platform.targets* arquivo.
+Para obter exemplos `_UpgradePlatformToolsetFor_<safe_toolset_name>` de `_PlatformToolsetShortNameFor_<safe_toolset_name>` definições de propriedade e, consulte o arquivo *Microsoft. cpp. default. props* . Para obter exemplos de uso, consulte o `$(VCTargetPath)` \\ arquivo *Microsoft. cpp. Platform. targets* .
 
 ### <a name="custom-project-upgrader"></a>Atualizador de projeto personalizado
 
-Para usar um objeto de projeto personalizado do atualizador, implemente um componente MEF, conforme mostrado aqui:
+Para usar um objeto personalizado de atualização de projeto, implemente um componente MEF, como mostrado aqui:
 
 ```csharp
 /// </summary>
@@ -614,7 +614,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 }
 ```
 
-Seu código pode importar e chamar o objeto de atualizador. vcxproj padrão:
+Seu código pode importar e chamar o objeto de atualização padrão. vcxproj:
 
 ```csharp
 // ...
@@ -625,9 +625,9 @@ Seu código pode importar e chamar o objeto de atualizador. vcxproj padrão:
 // ...
 ```
 
-`IProjectRetargetHandler` é definido em *Microsoft.VisualStudio.ProjectSystem.VS.dll* e é semelhante ao `IVsRetargetProjectAsync`.
+`IProjectRetargetHandler` é definido em *Microsoft.VisualStudio.ProjectSystem.VS.dll* e é semelhante a `IVsRetargetProjectAsync` .
 
-Definir o `VCProjectUpgraderObjectName` propriedade informar ao sistema de projeto para usar o objeto do atualizador:
+Defina a `VCProjectUpgraderObjectName` propriedade para instruir o sistema de projeto a usar o objeto de atualização personalizado:
 
 ```xml
 <PropertyGroup>
@@ -637,7 +637,7 @@ Definir o `VCProjectUpgraderObjectName` propriedade informar ao sistema de proje
 
 #### <a name="disable-project-upgrade"></a>Desabilitar a atualização do projeto
 
-Para desabilitar atualizações de projeto, use um `NoUpgrade` valor:
+Para desabilitar as atualizações do projeto, use um `NoUpgrade` valor:
 
 ```xml
 <PropertyGroup>
@@ -645,32 +645,32 @@ Para desabilitar atualizações de projeto, use um `NoUpgrade` valor:
 </PropertyGroup>
 ```
 
-## <a name="project-cache-and-extensibility"></a>Cache do projeto e extensibilidade
+## <a name="project-cache-and-extensibility"></a>Cache e extensibilidade do projeto
 
-Para melhorar o desempenho ao trabalhar com soluções grandes do C++ no Visual Studio 2017, o [cache de projeto](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) foi introduzido. Ele é implementado como um banco de dados SQLite preenchido com dados do projeto e, em seguida, usado para carregar projetos sem carregar os projetos do MSBuild ou o CPS em memória.
+Para melhorar o desempenho ao trabalhar com grandes soluções C++ no Visual Studio 2017, o [cache do projeto](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/) foi introduzido. Ela é implementada como um banco de dados do SQLite populado com dado do projeto e, em seguida, usada para carregar projetos sem carregar projetos do MSBuild ou do CPS na memória.
 
-Como não há nenhum presente para projetos. vcxproj carregados do cache de objetos de CPS, componentes do MEF da extensão que importe `UnconfiguredProject` ou `ConfiguredProject` não pode ser criado. Para dar suporte à extensibilidade, o cache do projeto não é usado quando o Visual Studio detecta se um projeto usa (ou provavelmente usará) extensões MEF.
+Como não há objetos do CPS presentes para projetos. vcxproj carregados do cache, os componentes do MEF da extensão que importam `UnconfiguredProject` ou `ConfiguredProject` não podem ser criados. Para dar suporte à extensibilidade, o cache do projeto não é usado quando o Visual Studio detecta se um projeto usa (ou provavelmente usar) extensões do MEF.
 
-Esses tipos de projeto são sempre totalmente carregados e têm objetos CPS na memória, portanto, todas as extensões do MEF são criadas para eles:
+Esses tipos de projeto sempre são totalmente carregados e têm objetos do CPS na memória, de modo que todas as extensões de MEF são criadas para eles:
 
 - Projetos de inicialização
 
-- Projetos que têm um atualizador de projeto personalizado, ou seja, elas definem um `VCProjectUpgraderObjectName` propriedade
+- Projetos que têm um atualizador de projeto personalizado, ou seja, eles definem uma `VCProjectUpgraderObjectName` Propriedade
 
-- Projetos que não se destinam Windows de área de trabalho, ou seja, elas definem um `ApplicationType` propriedade
+- Projetos que não destinam as janelas de área de trabalho, ou seja, definem uma `ApplicationType` Propriedade
 
-- Itens de projeto (.vcxitems) e todos os projetos compartilhados que referenciam-las por importar projetos .vcxitems.
+- Projetos de itens compartilhados (. vcxitems) e quaisquer projetos que fazem referência a eles por importação de projetos. vcxitems.
 
-Se nenhuma dessas condições for detectada, um cache de projeto é criado. O cache inclui todos os dados do projeto MSBuild necessários para responder `get` as consultas em `VCProjectEngine` interfaces. Isso significa que todas as modificações nos objetos do MSBuild e feito por uma extensão de nível de arquivo de destinos deve funcionar em projetos carregados do cache.
+Se nenhuma dessas condições for detectada, um cache de projeto será criado. O cache inclui todos os dados do projeto MSBuild necessários para responder a `get` consultas em `VCProjectEngine` interfaces. Isso significa que todas as modificações no nível do arquivo de destinos e das propriedades do MSBuild feitas por uma extensão devem funcionar apenas em projetos carregados do cache.
 
-## <a name="shipping-your-extension"></a>Sua extensão de envio
+## <a name="shipping-your-extension"></a>Enviando sua extensão
 
-Para obter informações sobre como criar arquivos VSIX, consulte [envio extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Para obter informações sobre como adicionar arquivos para locais de instalação especial, por exemplo, para adicionar arquivos sob `$(VCTargetsPath)`, consulte [instalando fora da pasta de extensões](../extensibility/set-install-root.md).
+Para obter informações sobre como criar arquivos VSIX, consulte [enviando extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Para obter informações sobre como adicionar arquivos a locais de instalação especiais, por exemplo, para adicionar arquivos em `$(VCTargetsPath)` , consulte [instalando fora da pasta extensões](../extensibility/set-install-root.md).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-O sistema de compilação da Microsoft ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato extensível baseado em XML para arquivos de projeto. Você deve estar familiarizado com o basic [conceitos do MSBuild](../msbuild/msbuild-concepts.md) e com a forma [MSBuild para o Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funciona para estender o Visual C++ de sistema de projeto.
+O sistema Microsoft Build ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato baseado em XML extensível para arquivos de projeto. Você deve estar familiarizado com os [conceitos](../msbuild/msbuild-concepts.md) básicos do MSBuild e com o modo como o [MSBuild para Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funciona para estender o sistema de projeto Visual C++.
 
-O Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fornece a extensão de APIs que são usadas por CPS e o sistema de projeto do Visual C++. Para uma visão geral de como o MEF é usado pelo CPS, consulte [CPS e MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) na [VSProjectSystem visão de geral de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
+O Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fornece as APIs de extensão que são usadas pelo CPS e o sistema de projeto Visual C++. Para obter uma visão geral de como o MEF é usado pelo CPS, consulte [CPS e MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) na [visão geral do VSProjectSystem do MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
 Você pode personalizar o sistema de compilação existente para adicionar etapas de compilação ou novos tipos de arquivo. Para obter mais informações, consulte [visão geral do MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) e [trabalhando com propriedades do projeto](/cpp/build/working-with-project-properties).
