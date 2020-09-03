@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619268"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Criar comentários JSDoc para JavaScript IntelliSense
@@ -24,19 +24,19 @@ O IntelliSense no Visual Studio exibe informações que você adiciona a um scri
 ## <a name="jsdoc-comment-tags"></a>Marcas de comentário JSDoc
  As seguintes marcas de comentário JSDoc padrão são usadas pelo IntelliSense para exibir informações sobre seu código.
 
-|  Marca de JSDoc   |                       Sintaxe                        |                                                     Anotações                                                      |
+|  Marca de JSDoc   |                       Syntax                        |                                                     Observações                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *description*              |                                   Especifica uma função ou um método preterido.                                   |
-| @description |             @description *description*              |                              Especifica a descrição de uma função ou um método.                               |
-|    @param    | @param {*type*} *parameterName*<em>description</em> | Especifica informações para um parâmetro em uma função ou método.<br /><br /> O TypeScript também dá suporte a @paramTag. |
+| @deprecated  |              @deprecated*Descrição* do              |                                   Especifica uma função ou um método preterido.                                   |
+| @description |             @description*Descrição* do              |                              Especifica a descrição de uma função ou um método.                               |
+|    @param    | @param {*type*} *parameterName*<em>description</em> | Especifica informações para um parâmetro em uma função ou método.<br /><br /> O TypeScript também dá suporte a @paramTag . |
 |  @property   |          @property {*type*} *propertyName*          |   Especifica informações, incluindo uma descrição, para um campo ou membro definido em um objeto.    |
-|   @returns   |                  @returns {*type*}                  |           Especifica um valor de retorno.<br /><br /> Para o TypeScript, use @returnType em vez de @returns.           |
-|   @summary   |               @summary *description*                |                   Especifica a descrição de uma função ou método (o mesmo que @description).                   |
-|    @type     |                   @type {*type*}                    |                                Especifica o tipo para uma constante ou uma variável.                                |
+|   @returns   |                  @returns {*Type*}                  |           Especifica um valor de retorno.<br /><br /> Para TypeScript, use @returnType em vez de @returns .           |
+|   @summary   |               @summary*Descrição* do                |                   Especifica a descrição de uma função ou método (igual a @description ).                   |
+|    @type     |                   @type {*Type*}                    |                                Especifica o tipo para uma constante ou uma variável.                                |
 |   @typedef   |         @typedef {*type*} *customTypeName*          |                                            Especifica um tipo personalizado.                                            |
 
 ### <a name="examples"></a>Exemplos
- O exemplo a seguir mostra o uso das marcas @description, @param e @return JSDoc para uma função chamada `getArea`.
+ O exemplo a seguir mostra o uso das @description @param marcas, e @return JSDoc para uma função chamada `getArea` .
 
 ```javascript
 /** @description Determines the area of a circle that has the specified radius parameter.
@@ -50,11 +50,11 @@ function getArea(radius) {
 }
 ```
 
- No exemplo anterior, o IntelliSense mostra a descrição, o parâmetro e as informações de retorno quando você digita o parêntese de abertura para `getArea`.
+ No exemplo anterior, o IntelliSense mostra a descrição, o parâmetro e as informações de retorno quando você digita o parêntese de abertura para `getArea` .
 
  ![Informações do IntelliSense para uma função](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- O exemplo a seguir mostra como usar a marca de @typedef com a marca de @property.
+ O exemplo a seguir mostra como usar a @typedef marca com a @property marca.
 
 ```javascript
 /**
@@ -67,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();
 ```
 
- O exemplo a seguir mostra o uso das marcas de @type JSDoc. Como mostrado neste exemplo, os asteriscos únicos (*) que seguem o par de asterisco inicial (\* \*) não são necessários.
+ O exemplo a seguir mostra o uso das @type marcas JSDoc. Como mostrado neste exemplo, os asteriscos únicos (*) que seguem o par de asterisco inicial ( \* \* ) não são necessários.
 
 ```javascript
 /**
@@ -77,7 +77,7 @@ const RED = 'FF0000';
 
 ```
 
- O exemplo a seguir mostra como usar a marca @deprecated JSDoc.
+ O exemplo a seguir mostra como usar a @deprecated marca JSDoc.
 
 ```javascript
 /**

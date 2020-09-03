@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985077"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informações adicionais para erros do SharePoint
-  Você pode encontrar assistência na solução de problemas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos das ferramentas do SharePoint nos tópicos de solução de problemas e nos fóruns públicos.
+  Você pode encontrar assistência para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos das ferramentas do SharePoint nos tópicos de solução de problemas e nos fóruns públicos.
 
 ## <a name="troubleshoot-errors-and-issues"></a>Solucionar problemas e erros
- Para obter assistência com alguns erros comuns e outros problemas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas do SharePoint, consulte os seguintes tópicos:
+ Para obter assistência com alguns erros comuns e outros problemas nas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ferramentas do SharePoint, consulte os seguintes tópicos:
 
 - [Solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
@@ -36,15 +36,15 @@ ms.locfileid: "72985077"
 - [Solução de problemas de empacotamento e implantação do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Outros recursos
- A tabela a seguir lista os fóruns de ferramentas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint e outros recursos disponíveis.
+ A tabela a seguir lista os [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fóruns de ferramentas do SharePoint e outros recursos disponíveis.
 
 |Termo|Definição|
 |----------|----------------|
-|[Desenvolvimento do SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Fornece um fórum para perguntas sobre o desenvolvimento do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Fóruns do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Fornece um fórum para perguntas sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Desenvolvimento do SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Fornece um fórum para perguntas sobre o desenvolvimento do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Fóruns do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Fornece um fórum para perguntas sobre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Ajuda e Suporte da Microsoft](https://support.microsoft.com/)|Fornece acesso a artigos da Base de Dados de Conhecimento (KB), downloads e atualizações, Webcasts de suporte e outros serviços.|
 
  Se você ainda não consegue encontrar as respostas de que precisa, pode acessar opções de suporte online, como contatar o atendimento Microsoft ou pesquisar artigos da base de conhecimento. Para obter mais informações, consulte a página [ajuda e suporte da Microsoft](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

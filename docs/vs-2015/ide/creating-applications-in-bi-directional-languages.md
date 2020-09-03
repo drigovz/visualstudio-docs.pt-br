@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3d8649484178a537ed4af7bdde044a29893275
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619256"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Criando aplicativos em idiomas bidirecionais
@@ -32,7 +32,7 @@ ms.locfileid: "72619256"
 
 1. Aplicativos do Windows. É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para obter mais informações, consulte [Suporte bidirecional para aplicativos do Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
 
-2. Aplicativos Web. Os serviços Web dão suporte ao recebimento e envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a esses recursos bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para obter mais informações, consulte [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+2. aplicativos Web. Os serviços Web dão suporte ao recebimento e envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a esses recursos bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para obter mais informações, consulte [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 3. Aplicativos de console. Aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72619256"
 
 - Atributos e metadados.
 
-- Valores da propriedade. É possível usar um texto em árabe ou hebraico na janela Propriedades. A janela permite mudar entre o sentido de leitura da direita para a esquerda e da esquerda para a direita usando pressionamentos de tecla padrão do Windows (CTRL+Shift Direita para direita para a esquerda e CTRL+Shift Esquerda para esquerda para a direita).
+- Valores de propriedade. É possível usar um texto em árabe ou hebraico na janela Propriedades. A janela permite mudar entre o sentido de leitura da direita para a esquerda e da esquerda para a direita usando pressionamentos de tecla padrão do Windows (CTRL+Shift Direita para direita para a esquerda e CTRL+Shift Esquerda para esquerda para a direita).
 
 - Código e texto literal. No editor de código (que também é o editor de texto), é possível usar o árabe ou o hebraico para nomear classes, funções, variáveis, propriedades, literais de cadeia de caracteres, atributos e assim por diante. No entanto, o editor não dá suporte ao sentido de leitura da direita para a esquerda; o texto sempre começa na margem esquerda.
 
@@ -86,5 +86,5 @@ ms.locfileid: "72619256"
 
 - Comentários sobre o código. É possível criar comentários em árabe ou hebraico. Você também pode usar esses idiomas na ferramenta de construtor de comentários.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Suporte bidirecional para aplicativos de Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2) [suporte bidirecional para aplicativos Web ASP.net](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03) [Globalizando aplicativos](../ide/globalizing-applications.md) [Localizando aplicativos](../ide/localizing-applications.md)

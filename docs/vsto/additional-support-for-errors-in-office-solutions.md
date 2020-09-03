@@ -57,17 +57,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984630"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Suporte adicional para erros em soluções do Office
 
 Você pode usar os seguintes recursos para ajudá-lo a encontrar respostas para os problemas encontrados durante a criação de soluções do Office no Visual Studio.
 
-## <a name="troubleshoot-specific-errors"></a>Solucionar erros específicos
+## <a name="troubleshoot-specific-errors"></a>Solução de problemas de erros específicos
 
 Para obter assistência com alguns erros comuns em soluções do Office, consulte os seguintes tópicos:
 
@@ -91,7 +91,7 @@ Fornece acesso a artigos da Base de Dados de Conhecimento (KB), downloads e atua
 
 Fornece links para recursos adicionais para aprender mais sobre como desenvolver soluções do Office e o desenvolvimento do Office com o Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Solucionar erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Solucionar problemas de segurança da solução do Office](../vsto/troubleshooting-office-solution-security.md)
