@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658001"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de prancheta no Blend
@@ -42,5 +42,5 @@ Alguns atalhos de teclado não têm itens de menu associados, o que significa qu
 |Alternar entre documentos abertos|Pressionar CTRL+TAB|
 |Abra o painel **Ativos**|Pressionar CTRL+ponto final|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Atalhos de teclado](../designers/keyboard-shortcuts-in-blend.md) [teclas modificadoras de ferramenta](../designers/pen-tool-modifier-keys-in-blend.md) [seleção direta teclas modificadores de ferramenta](../designers/direct-selection-tool-modifier-keys-in-blend.md)

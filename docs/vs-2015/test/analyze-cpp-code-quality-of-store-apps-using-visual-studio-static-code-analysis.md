@@ -1,5 +1,5 @@
 ---
-title: C++aplicativos de repositório de análise de código estático
+title: Aplicativos da loja de análise de código estático do C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,23 +12,23 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672717"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")
 
  A ferramenta de análise de código no Visual Studio Express Edition examina o código em busca de uma série de problemas e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.
 
 > [!NOTE]
 > No Visual Studio Ultimate, no Visual Studio Premium e no Visual Studio Professional, você pode usar a funcionalidade completa das ferramentas de análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](https://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
 
-## <a name="BKMK_Run"></a> Executando análise de código
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Executando análise de código
  Para executar a análise de código em sua solução do Visual Studio:
 
 - No menu **Compilar**, escolha **Executar Análise de Código na Solução**.
@@ -41,9 +41,9 @@ Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
    A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.
 
-   ![Janela de análise de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Janela de Análise de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analisando e resolvendo avisos de análise de código
  Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema. Quando possível, a análise de código exibe o número da linha e a lógica da análise que levou ao aviso.
 
  ![Aviso de análise de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 > [!TIP]
 > Você pode executar a análise de código novamente na janela Análise de Código. Clique no botão **Analisar** e, em seguida, escolha o escopo da análise. A análise pode ser executada na solução inteira ou em um projeto selecionado.
 
-## <a name="BKMK_Suppress"></a> Suprimindo avisos da análise de código
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Suprimindo avisos de análise de código
  Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. É possível suprimir avisos individuais para que não apareçam mais na janela Análise de Código.
 
  Para suprimir um aviso:
@@ -68,14 +68,14 @@ Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 
 3. Escolha **Suprimir Mensagem** e escolha **Na Origem**.
 
-   Suprimir uma mensagem insere `#pragma(warning:`*WarningId*`)`, que suprime o aviso para a linha de código.
+   Suprimir uma mensagem insere `#pragma(warning:` *warningid* `)` que suprime o aviso para a linha de código.
 
-## <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código
  Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.
 
  ![Pesquisar e filtrar a janela de análise de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> Avisos da análise de código C++
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> Avisos de análise de código C++
  A análise de código gera os seguintes avisos para o código C++:
 
 |                                      Regra                                      |                                                  Descrição                                                  |

@@ -13,10 +13,10 @@ caps.latest.revision: 34
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f669c4dcfb91579ac50270914112cd6388e2743
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547973"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Instruções passo a passo: usando um arquivo de configuração para definir uma fonte de dados
@@ -55,7 +55,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
 
 3. Selecione o modelo de **Arquivo de Configuração de Aplicativo** e clique em **Adicionar**.
 
-## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a>Definir uma seção de configuração personalizada
+## <a name="define-a-custom-configuration-section"></a><a name="DefineCustomConfigurationSection"></a> Definir uma seção de configuração personalizada
  Examine o arquivo app.config. Ele contém pelo menos a declaração XML e um elemento raiz.
 
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Como adicionar a seção de configuração personalizada para o arquivo app.config

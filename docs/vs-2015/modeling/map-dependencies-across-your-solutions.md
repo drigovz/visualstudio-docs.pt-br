@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548077"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
@@ -51,7 +51,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 - [Compreendendo o código complexo com mapas de código](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a>Introdução aos mapas de código
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> Introdução aos mapas de código
  **Para usar mapas de código, você precisará**de:
 
 - Visual Studio Enterprise: crie mapas de código do editor de código, Gerenciador de Soluções, Modo de Exibição de Classe ou pesquisador de objetos.
@@ -91,7 +91,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 4. [Consulte dependências específicas](#SeeSpecificSource) para entender como você pode usar mapas de código para exibir dependências específicas dentro de sua solução.
 
-### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a>Para adicionar um novo mapa de código vazio à sua solução
+### <a name="to-add-a-new-empty-code-map-to-your-solution"></a><a name="CreateEmptyMap"></a> Para adicionar um novo mapa de código vazio à sua solução
 
 1. No **Gerenciador de soluções**, abra o menu de atalho para o nó de solução de nível superior. Escolha **Adicionar** e escolha **novo item**.
 
@@ -115,9 +115,9 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
      Agora você tem um mapa em branco, que não aparece nas pastas da solução.
 
-## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a>Ver dependências gerais
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> Ver dependências gerais
 
-### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a>Confira dependências em sua solução
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> Confira dependências em sua solução
 
 1. No menu **arquitetura** , escolha **gerar mapa de código para solução**.
 
@@ -189,7 +189,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 - Encontre possíveis problemas em seu código [executando um analisador](../modeling/find-potential-problems-using-code-map-analyzers.md).
 
-### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a>Ver dependências entre assemblies ou binários
+### <a name="see-dependencies-across-assemblies-or-binaries"></a><a name="OverviewCompiled"></a> Ver dependências entre assemblies ou binários
 
 1. [Crie um mapa de código vazio](#GetStarted)ou abra um mapa de código existente (arquivo. dgml).
 
@@ -198,7 +198,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 > [!NOTE]
 > Você pode arrastar assemblies ou binários do Windows Explorer ou explorador de arquivos somente se estiver executando-o e o Visual Studio no mesmo nível de permissões do UAC (controle de acesso do usuário). Por exemplo, se o UAC estiver ativado e você estiver executando o Visual Studio como administrador, o Windows Explorer ou o explorador de arquivos bloqueará a operação de arrastar. Para contornar isso, verifique se ambos estão em execução com o mesmo nível de permissão ou desative o UAC.
 
-## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a>Consulte dependências específicas
+## <a name="see-specific-dependencies"></a><a name="SeeSpecificSource"></a> Consulte dependências específicas
  Por exemplo, suponha que você tem uma revisão de código para executar em alguns arquivos com alterações pendentes. Para ver as dependências dessas alterações, você pode criar um mapa de código a partir desses arquivos.
 
  ![Mostrar dependências específicas em um mapa de códigos](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")
@@ -283,7 +283,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
      ![Use o painel de filtro para simplificar a exibição](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
-## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a>Consulte as dependências entre arquivos de origem C e C++ e arquivos de cabeçalho
+## <a name="see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a> Consulte as dependências entre arquivos de origem C e C++ e arquivos de cabeçalho
  Se você quiser criar mapas mais completos para projetos C++, defina a opção de compilador de informações de procura (**/fr**) nesses projetos. Consulte [/fr,/fr (criar. Arquivo SBR)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Do contrário, uma mensagem é exibida e solicita a definição dessa opção. Se você selecionar **OK**, isso definirá a opção apenas para o mapa atual. Você pode optar por ocultar a mensagem para todos os mapas posteriores. Se você ocultar essa mensagem, poderá exibi-la novamente. Defina a seguinte chave do registro como `0` ou exclua a chave:
 
  **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**
@@ -298,7 +298,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
      ![Primeiro&#45;grafo de dependência de nível para o arquivo. h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>Solucionar problemas de mapas para código C e C++
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> Solucionar problemas de mapas para código C e C++
  Esses itens não são suportados para os códigos C e C++:
 
 - Os tipos base não aparecem em mapas que incluem a hierarquia pai.
@@ -310,7 +310,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 |**Problema**|**Causa possível**|**Resolução**|
 |---------------|------------------------|--------------------|
 |Falha ao gerar o mapa de códigos.|Nenhum projeto na solução foi compilado com êxito.|Corrija os erros de compilação que ocorreram e, em seguida, gere o mapa novamente.|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]torna-se sem resposta quando você tenta gerar um mapa de código no menu **arquitetura** .|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] torna-se sem resposta quando você tenta gerar um mapa de código no menu **arquitetura** .|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|
 |Determinadas configurações do banco de dados de navegação do IntelliSense estão desabilitadas.|Determinadas configurações do IntelliSense podem ser desabilitadas na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] caixa de diálogo **Opções** .|Ative as configurações para habilitá-las.<br /><br /> Consulte [Opções, editor de texto, C/C++, avançado](../ide/reference/options-text-editor-c-cpp-advanced.md).|
 |A mensagem **métodos desconhecidos** aparece em um nó de método.<br /><br /> Esse problema ocorre porque o nome do método não pode ser resolvido.|O arquivo binário não pode ter uma tabela de realocação de base.|Ative a opção **/Fixed:** no do vinculador.<br /><br /> Consulte [/Fixed (endereço base fixo)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Talvez o arquivo de banco de dados do programa (.pdb) não tenha sido compilado.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Ative a opção **/debug** no vinculador.<br /><br /> Consulte [/debug (gerar informações de depuração)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
@@ -318,7 +318,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 ||As informações de depuração foram removidas do arquivo .pdb.|Se a opção **/PDBSTRIPPED** foi usada no vinculador, inclua o arquivo. pdb completo.<br /><br /> Consulte [/PDBSTRIPPED (símbolos privados de faixa)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
 ||O chamador não é uma função, e é uma conversão no arquivo binário ou um ponteiro na seção de dados.|Quando o chamador for uma conversão, tente usar `_declspec(dllimport)` para evitá-la.<br /><br /> Consulte:<br /><br /> -   [Regras e limitações gerais](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importando chamadas de função usando __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, DllImport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
-## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a>Fazer com que os mapas de código sejam renderizados mais rapidamente
+## <a name="make-code-maps-render-more-quickly"></a><a name="RenderMoreQuickly"></a> Fazer com que os mapas de código sejam renderizados mais rapidamente
  Quando você gera um mapa pela primeira vez, o Visual Studio indexa todas as dependências que ele encontra. Esse processo pode levar algum tempo, especialmente para soluções grandes, mas melhorará o desempenho mais tarde. Se seu código for alterado, o Visual Studio reindexará apenas o código atualizado. Para minimizar o tempo necessário para o mapa concluir a renderização, considere o seguinte:
 
 - [Mapeie somente as dependências que lhe interessam.](#SeeSpecificSource)
@@ -339,12 +339,12 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
   O mapa concluído mostrará dependências somente para código criado com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros aparecerão no mapa. Certifique-se de que um componente realmente cria e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.
 
-## <a name="share-code-maps"></a><a name="SavingExporting"></a>Compartilhar mapas de código
+## <a name="share-code-maps"></a><a name="SavingExporting"></a> Compartilhar mapas de código
 
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Compartilhar o mapa com outros usuários do Visual Studio
  Use o menu **arquivo** para salvar o mapa.
 
- -ou-
+ - ou -
 
  Para salvar o mapa como parte do projeto específico, na barra de ferramentas do mapa, escolha **compartilhar**, **mover** \<*CodeMapName*> **. dgml para**e, em seguida, escolha o projeto no qual você deseja salvar o mapa.
 

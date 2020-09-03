@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7700670774dcb38b054cf28275f64c0c3046f741
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205036"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Especificado que tipo de informações para recuperar para um processo.  
+Especificou o tipo de informações a serem recuperadas para um processo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PROCESS_INFO_FIELDS {   
@@ -57,46 +57,46 @@ public enum enum_PROCESS_INFO_FIELDS { 
   
 ## <a name="members"></a>Membros  
  PIF_FILE_NAME  
- Inicialização/usar o `bstrFileName` campo do [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) estrutura.  
+ Inicializar/usar o `bstrFileName` campo da estrutura de [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
  PIF_BASE_NAME  
- Inicialização/usar o `bstrBaseName` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `bstrBaseName` campo da `PROCESS_INFO` estrutura.  
   
  PIF_TITLE  
- Inicialização/usar o `bstrTitle` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `bstrTitle` campo da `PROCESS_INFO` estrutura.  
   
  PIF_PROCESS_ID  
- Inicialização/usar o `ProcessId` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `ProcessId` campo da `PROCESS_INFO` estrutura.  
   
  PIF_SESSION_ID  
- Inicialização/usar o `dwSessionId` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `dwSessionId` campo da `PROCESS_INFO` estrutura.  
   
  PIF_ATTACHED_SESSION_NAME  
- Inicialização/usar o `bstrAttachedSessionName` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `bstrAttachedSessionName` campo da `PROCESS_INFO` estrutura.  
   
  PIF_CREATION_TIME  
- Inicialização/usar o `CreationTime` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `CreationTime` campo da `PROCESS_INFO` estrutura.  
   
  PIF_FLAGS  
- Inicialização/usar o `Flags` campo do `PROCESS_INFO` estrutura.  
+ Inicializar/usar o `Flags` campo da `PROCESS_INFO` estrutura.  
   
  PIF_ALL  
  Preenche todos os campos.  
   
 ## <a name="remarks"></a>Comentários  
- Passado para o [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) método para indicar quais campos da [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) são de estrutura a ser inicializado.  
+ Passado para o método [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) para indicar quais campos da estrutura de [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) devem ser inicializados.  
   
- Também é usado na `Fields` campo do `PROCESS_INFO` estrutura para indicar quais campos são usados e válido.  
+ Também usado no `Fields` campo da `PROCESS_INFO` estrutura para indicar quais campos são usados e válidos.  
   
- Esses sinalizadores podem ser combinados com um bit a bit `OR`.  
+ Esses sinalizadores podem ser combinados com uma operadora de bits `OR` .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

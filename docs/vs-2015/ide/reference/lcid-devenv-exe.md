@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672695"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -35,7 +35,7 @@ Define o idioma padrão usado para texto, moeda e outros valores dentro do IDE (
 devenv {/LCID|/l} LocaleID
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `LocaleID` Necessário. O LCID (identificação de localidade) do idioma que você especificar.
 
 ## <a name="remarks"></a>Comentários
@@ -47,9 +47,9 @@ devenv {/LCID|/l} LocaleID
 
 |Idioma|LCID|
 |--------------|----------|
-|Chinês (simplificado)|2052|
-|Chinês (tradicional)|1028|
-|Inglês|1033|
+|Chinês (Simplificado)|2052|
+|Chinês (Tradicional)|1028|
+|Inglês|1046|
 |Francês|1036|
 |Alemão|1031|
 |Italiano|1040|
@@ -64,5 +64,5 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Opções de linha de comando do devenv](../../ide/reference/devenv-command-line-switches.md) [configurações internacionais, ambiente, caixa de diálogo opções](../../ide/reference/international-settings-environment-options-dialog-box.md) [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

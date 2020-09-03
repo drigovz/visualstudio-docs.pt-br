@@ -1,5 +1,5 @@
 ---
-title: Recursos do VsPackage de Controle de Fonte | Microsoft Docs
+title: Recursos de VSPackage de controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705006"
 ---
 # <a name="source-control-vspackage-features"></a>Recursos do VSPackage do controle do código-fonte
-Esta seção descreve os vários recursos de um vsPackage de controle de origem. Ele descreve os detalhes de registro e seleção para tal VSPackage e discute três dos principais recursos relacionados ao controle de origem: manuseio de eventos QEQS (Query-Edit Query-Save, substituição de glifos e interface de usuário personalizada (UI) para as funções de controle de origem.
+Esta seção descreve os vários recursos de um VSPackage de controle do código-fonte. Ele descreve os detalhes de registro e seleção de tal VSPackage e discute três dos principais recursos relacionados ao controle do código-fonte: tratamento de eventos de QEQS (consulta-edição de consulta-salvamento), substituição de glifo e interface do usuário personalizada para as funções de controle do código-fonte.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
 
- Descreve os mecanismos de registro e seleção do pacote.
+ Descreve os mecanismos de registro e seleção de pacote.
 
 - [Editar consulta salvar consulta](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Explica a função dos eventos Query-Edit Query-Save e como eles são tratados pelo controle de origem VSPackage.
+ Explica a função de consulta-editar consultas-salvar eventos e como eles são manipulados pelo VSPackage de controle do código-fonte.
 
 - [Controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 
- Descreve os níveis de controle de glifos e como implementá-los.
+ Descreve os níveis de controle de glifo e como implementá-los.
 
 - [Interface do usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)
 
- Descreve os elementos de ui que um controle de origem VSPackage pode especificar.
+ Descreve os elementos da interface do usuário que um VSPackage de controle do código-fonte pode especificar.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Discute como criar um controle de origem VSPackage que não apenas fornece a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funcionalidade de controle de origem, mas pode ser usado para personalizar a ui de controle de origem.
+ Discute como criar um VSPackage de controle do código-fonte que não só fornece funcionalidade de controle do código-fonte, mas pode ser usado para personalizar a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário do controle do código-fonte.

@@ -13,18 +13,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89192d814ccee3dd2a134807d8ce01880689d951
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204926"
 ---
-# <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
+# <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa estrutura fornece informações sobre processos em execução em um computador.  
+Essa estrutura fornece informações sobre os processos em execução em um computador.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 typedef struct tagPROVIDER_PROCESS_DATA {  
@@ -44,25 +44,25 @@ public struct PROVIDER_PROCESS_DATA {
   
 ## <a name="members"></a>Membros  
  Campos  
- Uma combinação de sinalizadores do [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumeração, que indica quais campos são preenchidos.  
+ Uma combinação de sinalizadores da enumeração [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , indicando quais campos estão preenchidos.  
   
  ProgramNodes  
- Um [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estrutura que contém uma matriz de nós de programa.  
+ Uma estrutura de [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) que contém uma matriz de nós de programa.  
   
  fIsDebuggerPresent  
- Diferente de zero (`TRUE`) se o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depurador está em execução, zero (`FALSE`) se não for.  
+ Diferente de zero ( `TRUE` ) se o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depurador estiver em execução, zero ( `FALSE` ) se não for.  
   
 ## <a name="remarks"></a>Comentários  
- Essa estrutura é passada para o [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método onde ele é preenchido.  
+ Essa estrutura é passada para o método [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) em que está preenchida.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735527"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
@@ -49,7 +49,7 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 
  **Informações do Direct3D** Lista informações sobre os recursos de hardware e driver do adaptador de vídeo que foi usado durante a sessão de captura.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Formato XR High Color de 10 bits**|**True** se o formato XR High Color de 10 bits tiver suporte; caso contrário, **False**.|
 |**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 tiver suporte; caso contrário, **False**.|
@@ -61,7 +61,7 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 
  **Exibir informações** Lista informações sobre o adaptador de vídeo que foi usado durante a sessão de captura.
 
-|propriedade|Descrição|
+|Propriedade|DESCRIÇÃO|
 |--------------|-----------------|
 |**Descrição**|A cadeia de caracteres de descrição da placa de vídeo.|
 |**Memória de vídeo**|A quantidade de memória instalada no adaptador gráfico.|
@@ -71,39 +71,39 @@ O documento de log de gráficos é o registro de eventos gráficos que ocorreram
 
  **Arquivo de teste** Lista informações sobre o arquivo de teste associado à sessão de captura.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
-|**Path**|O caminho do arquivo .vsglog. **Observação:**  Em captura herdada, essa propriedade não é usada.|
+|**Caminho**|O caminho do arquivo .vsglog. **Observação:**  Em captura herdada, essa propriedade não é usada.|
 
  **Informações do módulo** Lista o nome e a versão das bibliotecas de vínculo dinâmico (DLLs) que foram carregadas pelo aplicativo durante a sessão de captura.
 
  **Informações do sistema** Lista informações sobre o hardware e o sistema operacional que hospedam o aplicativo durante a sessão de captura.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Memória**|A quantidade de memória instalada no computador.|
 |**Arquitetura do SO**|A arquitetura da CPU de destino do sistema operacional.|
-|**Versão do SO**|A versão do sistema operacional.|
+|**Versão do sistema operacional**|A versão do sistema operacional.|
 |**Processador**|O processador instalado no computador.|
 |**Arquitetura do aplicativo de destino**|A arquitetura da CPU de destino do aplicativo. As informações presentes nesse campo podem ser diferentes das do campo **Arquitetura do SO**.|
 
  **Aplicativo de destino** Lista informações sobre o aplicativo que é o assunto da sessão de captura.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Data/hora da última modificação**|A data e hora em que o aplicativo foi compilado.|
-|**Path**|O caminho do aplicativo.|
+|**Caminho**|O caminho do aplicativo.|
 |**ID do Processo**|A ID do processo atribuída ao aplicativo.|
 |**Versão**|A versão do aplicativo.|
 
  **Arquivo de log do VSG** Lista informações sobre o documento de log de gráficos.
 
-| propriedade | Descrição |
+| Propriedade | Descrição |
 |------------------------| - |
 | **Criado por** | O nome do aplicativo que criou o documento de log de gráficos. Por exemplo, se a sessão de captura foi iniciada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (captura manual), o valor dessa propriedade será [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Hora de início da sessão** | A data e hora em que a sessão de captura começou. |
-| **Size** | O tamanho do documento de log de gráficos. |
+| **Tamanho** | O tamanho do documento de log de gráficos. |
 
-## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+## <a name="see-also"></a>Confira também
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

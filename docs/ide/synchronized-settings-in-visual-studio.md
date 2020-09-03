@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285199"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
@@ -89,7 +89,7 @@ Algumas configurações, como o layout da janela de ferramentas, não são compa
 
 Para redefinir todas as configurações para seus padrões, entre no Visual Studio e, em seguida, selecione **ferramentas**  >  **importar e exportar configurações** para abrir o **Assistente de importação e exportação de configurações**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Configurações do ambiente](../ide/environment-settings.md)

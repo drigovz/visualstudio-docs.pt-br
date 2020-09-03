@@ -12,17 +12,17 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278685"
 ---
 # <a name="options-text-editor-cc-view"></a>Opções, Editor de Texto, C/C++, Exibição
 
 Use essas páginas de propriedades para alterar o comportamento padrão do editor de código ao programar em C ou C++.
 
-Para acessar esta página de propriedade, escolha **Opções de** > **ferramentas** e expanda o Editor de **texto,** depois **C/C++** e, em seguida, escolha **Exibir**.
+Para acessar essa página de propriedades, escolha **ferramentas**  >  **Opções** e expanda **Editor de texto**, **C/C++** e, em seguida, escolha **Exibir**.
 
 ## <a name="code-squiggles"></a>Linhas ondulantes de código
 
@@ -56,5 +56,5 @@ Para acessar esta página de propriedade, escolha **Opções de** > **ferramenta
 
 ## <a name="see-also"></a>Confira também
 
-- [Definindo opções de editor específicos do idioma](../../ide/reference/setting-language-specific-editor-options.md)
+- [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refatoração em C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

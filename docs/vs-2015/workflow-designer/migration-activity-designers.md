@@ -10,17 +10,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bb2cf8e85dadb6ad9391da8227508b770c39bbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672653"
 ---
 # <a name="migration-activity-designers"></a>Designer de atividade de migração
 Os designers de atividade de migração são usados para chamar o fluxo de trabalho 3.0/3.5 atividades de um fluxo de trabalho que direcionam [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Os tópicos contidos nesta seção fornecem orientação sobre como usar o designer de atividade de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
 
 ## <a name="in-this-section"></a>Nesta seção
- [Interoperabilidade](../workflow-designer/interop-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Interop>.
+ [Interoperabilidade](../workflow-designer/interop-activity-designer.md) Usado para criar e configurar uma <xref:System.Activities.Statements.Interop> atividade.
 
 ## <a name="reference"></a>Referência
 
@@ -35,9 +35,9 @@ Os designers de atividade de migração são usados para chamar o fluxo de traba
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 

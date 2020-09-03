@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736667"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 Especifica o tipo de nome dos arquivos a serem recuperados.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_GETNAME_TYPE {
@@ -63,26 +63,26 @@ Especifica o caminho completo do documento ou contexto.
 Especifica um nome de arquivo base em vez de um caminho completo do documento ou contexto.
 
 `GN_MONIKERNAME`\
-Especifica um nome único do documento ou contexto na forma de um apelido.
+Especifica um nome exclusivo do documento ou contexto na forma de um moniker.
 
 `GN_URL`\
 Especifica um nome de URL do documento ou contexto.
 
 `GN_TITLE`\
-Especifica um título do documento, se existir.
+Especifica um título do documento, se houver.
 
 `GN_STARTPAGEURL`\
 Obtém a URL da página inicial para processos.
 
 ## <a name="remarks"></a>Comentários
-Esses valores são passados como parâmetros para os métodos [GetName,](../../../extensibility/debugger/reference/idebugdocument2-getname.md) [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar que tipo de nome retornar.
+Esses valores são passados como parâmetros para os métodos [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) para especificar o tipo de nome a ser retornado.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

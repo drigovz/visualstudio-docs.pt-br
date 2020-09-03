@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 61cadc0aaaec7c2c6b80fa812d3782ddf328c111
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68142994"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89323693"
 ---
 .NET Framework versão 4

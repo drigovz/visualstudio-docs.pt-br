@@ -1,5 +1,5 @@
 ---
-title: Configurações de projeto do depurador | Microsoft Docs
+title: Configurações do projeto do depurador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189577"
 ---
 # <a name="debugger-project-settings"></a>Configurações de projeto do depurador
@@ -35,16 +35,16 @@ Determinadas configurações de projeto também afetam a depuração. Essas conf
  Esta seção descreve quais opções estão disponíveis e como defini-las.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: Especificar as configurações do depurador](../debugger/how-to-specify-debugger-settings.md)  
+ [Como especificar configurações do depurador](../debugger/how-to-specify-debugger-settings.md)  
  Descreve as configurações do depurador na caixa de diálogo **Opções**.  
   
- [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)  
  Descreve as configurações de **Depurar** e **Versão** e como alternar entre elas.  
   
- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
+ [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
  Lista as propriedades disponíveis na caixa de diálogo **Páginas de Propriedades** para projetos C ou C++.  
   
- [Configurações do projeto para configurações de depuração de C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
+ [Definições do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
  Lista as propriedades disponíveis na caixa de diálogo **Páginas de Propriedades** para projetos C#.  
   
  [Configurações das páginas de propriedade para projetos Web](../debugger/property-pages-settings-for-web-projects.md)  
@@ -54,7 +54,7 @@ Determinadas configurações de projeto também afetam a depuração. Essas conf
  Lista as propriedades disponíveis na caixa de diálogo **Páginas de Propriedades** para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Especificar os arquivos de origem e símbolo (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Descreve como o depurador usa arquivos de símbolo e arquivos de origem para exibir informações para depuração.  
   
  [Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  
@@ -63,5 +63,5 @@ Determinadas configurações de projeto também afetam a depuração. Essas conf
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)  
  Descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)

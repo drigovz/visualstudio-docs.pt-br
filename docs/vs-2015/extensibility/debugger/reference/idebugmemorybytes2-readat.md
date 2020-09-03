@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
+title: 'IDebugMemoryBytes2:: ReadAt | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f10dc6e9e00e2b7f66722f3c89b74bb14e45fdbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180587"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
@@ -49,32 +49,32 @@ int ReadAt(
   
 #### <a name="parameters"></a>Parâmetros  
  `pStartContext`  
- [in] O [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica o local iniciar a leitura dos bytes.  
+ no O objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) que especifica onde começar a ler bytes.  
   
  `dwCount`  
- [in] O número de bytes a serem lidos. Também especifica o comprimento do `rgbMemory` matriz.  
+ no O número de bytes a serem lidos. Também especifica o comprimento da `rgbMemory` matriz.  
   
  `rgbMemory`  
- [no, out] Matriz preenchido com os bytes realmente lidos.  
+ [entrada, saída] Matriz preenchida com os bytes realmente lidos.  
   
  `pdwRead`  
- [out] Retorna o número de bytes contíguos realmente lidos.  
+ fora Retorna o número de bytes contíguos realmente lidos.  
   
  `pdwUnreadable`  
- [no, out] Retorna o número de bytes não pode ser lido. Pode ser um valor nulo se o cliente não se preocupam com o número de bytes não pode ser lido.  
+ [entrada, saída] Retorna o número de bytes ilegíveis. Pode ser um valor nulo se o cliente não tiver interesse no número de bytes ilegíveis.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Se 100 bytes são solicitados e os primeiros 50 são legíveis, os próximos 20 são ilegíveis e os 30 restantes são legíveis, esse método retorna:  
+ Se forem solicitados 100 bytes e o primeiro 50 for legível, os próximos 20 serão ilegíveis e os 30 restantes serão legíveis, esse método retornará:  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- Nesse caso, porque `*pdwRead + *pdwUnreadable < dwCount`, o chamador deve fazer uma chamada adicional para ler os bytes restantes 30 das 100 original solicitada e o [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto passado a `pStartContext` parâmetro deve ser avançado por 70.  
+ Nesse caso, como `*pdwRead + *pdwUnreadable < dwCount` , o chamador deve fazer uma chamada adicional para ler os 30 bytes restantes do 100 original solicitado e o objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) passado no `pStartContext` parâmetro deve ser avançado por 70.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

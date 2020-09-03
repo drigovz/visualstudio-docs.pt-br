@@ -13,16 +13,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189537"
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa função faz check-in anteriormente arquivos com check-out para o sistema de controle do código-fonte, armazenar as alterações e criar uma nova versão. Essa função é chamada com uma contagem e uma matriz de nomes dos arquivos para check-in.  
+Essa função faz check-out de arquivos extraídos anteriormente no sistema de controle do código-fonte, armazenando as alterações e criando uma nova versão. Essa função é chamada com uma contagem e uma matriz de nomes dos arquivos nos quais será feito o check-in.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,48 +40,48 @@ SCCRTN SccCheckin (
   
 #### <a name="parameters"></a>Parâmetros  
  pvContext  
- [in] A estrutura de contexto de plug-in de controle de origem.  
+ no A estrutura de contexto do plug-in de controle do código-fonte.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de SCC pode usar como um pai para todas as caixas de diálogo que ele oferece.  
+ no Um identificador para a janela do IDE que o plug-in SCC pode usar como um pai para qualquer caixa de diálogo que ele fornecer.  
   
  nFiles  
- [in] Número de arquivos selecionados para fazer check-in.  
+ no Número de arquivos selecionados para fazer check-in.  
   
  lpFileNames  
- [in] Matriz de nomes de caminho local totalmente qualificado dos arquivos para check-in.  
+ no Matriz de nomes de caminho locais totalmente qualificados dos arquivos nos quais fazer check-in.  
   
  lpComment  
- [in] Comentário a ser aplicado a cada um dos arquivos selecionados em check-in. Isso é `NULL` se solicitará que o plug-in de controle do código-fonte para um comentário.  
+ no Comentário a ser aplicado a cada um dos arquivos selecionados que estão sendo verificados. Isso ocorrerá `NULL` se o plug-in de controle do código-fonte solicitar um comentário.  
   
  fOptions  
- [in] Sinalizadores de comando, 0 ou `SCC_KEEP_CHECKEDOUT`.  
+ no Sinalizadores de comando, 0 ou `SCC_KEEP_CHECKEDOUT` .  
   
  pvOptions  
- [in] Opções de plug-in específico de SCC.  
+ no Opções específicas de plug-in SCC.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|SCC_OK|Arquivos foi verificado com êxito.|  
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle do código-fonte.|  
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. É recomendável uma nova tentativa.|  
-|SCC_E_NONSPECIFICERROR|Falha não específica. Arquivo não foi aprovado.|  
-|SCC_E_NOTCHECKEDOUT|O usuário não tem check-out do arquivo, portanto, não é possível fazer check-in.|  
-|SCC_E_CHECKINCONFLICT|Fazer check-in não pôde ser realizada porque:<br /><br /> -Outro usuário fez check-in em frente e `bAutoReconcile` era falsa.<br /><br /> - ou -<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|  
-|SCC_E_VERIFYMERGE|Arquivo tiver sido mesclada automaticamente, mas não foi verificado aguardam a verificação de usuário.|  
-|SCC_E_FIXMERGE|Arquivo tiver sido mesclada automaticamente, mas não foi verificado devido a um conflito de mesclagem que deve ser resolvido manualmente.|  
+|SCC_OK|O check-in dos arquivos foi realizado com êxito.|  
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|  
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|  
+|SCC_E_NONSPECIFICERROR|Falha não específica. O check-in do arquivo não foi feito.|  
+|SCC_E_NOTCHECKEDOUT|O usuário não fez o check-out do arquivo; portanto, não é possível verificá-lo.|  
+|SCC_E_CHECKINCONFLICT|O check-in não pôde ser executado porque:<br /><br /> -Outro usuário fez o check-in antecipado e `bAutoReconcile` foi falso.<br /><br /> - ou -<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|  
+|SCC_E_VERIFYMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado na verificação de usuário pendente.|  
+|SCC_E_FIXMERGE|O arquivo foi mesclado automaticamente, mas não foi verificado devido a um conflito de mesclagem que deve ser resolvido manualmente.|  
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|  
-|SCC_I_OPERATIONCANCELED|Operação foi cancelada antes da conclusão.|  
+|SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|  
 |SCC_I_RELOADFILE|Um arquivo ou projeto precisa ser recarregado.|  
-|SCC_E_FILENOTEXIST|Arquivo local não foi encontrado.|  
+|SCC_E_FILENOTEXIST|O arquivo local não foi encontrado.|  
   
 ## <a name="remarks"></a>Comentários  
- O comentário se aplica a todos os arquivos em check-in. O argumento de comentário pode ser um `null` de cadeia de caracteres, caso em que o plug-in de controle do código-fonte pode solicitar ao usuário uma cadeia de caracteres de comentário para cada arquivo.  
+ O comentário se aplica a todos os arquivos cujo check-in está sendo feito. O argumento comment pode ser uma `null` cadeia de caracteres; nesse caso, o plug-in de controle do código-fonte pode solicitar ao usuário uma cadeia de caracteres de comentário para cada arquivo.  
   
- O `fOptions` argumento pode ser fornecido um valor da `SCC_KEEP_CHECKEDOUT` sinalizador para indicar a intenção do usuário para o arquivo de check-in e check-out novamente.  
+ O `fOptions` argumento pode receber um valor do `SCC_KEEP_CHECKEDOUT` sinalizador para indicar a intenção do usuário de verificar o arquivo e conferir novamente.  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Consulte Também  
+ [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7726379258ef474b57f1ca4a924413cd93cf80bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672785"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>Anexar cadeias de caracteres de referência a elementos de modelo UML
@@ -28,7 +28,7 @@ Você pode escrever código para anexar cadeias de caracteres arbitrárias a ele
 ## <a name="attaching-a-reference-to-an-ielement"></a>Anexando uma referência a um ielemento
  Para usar os métodos a seguir, você deve adicionar uma referência a:
 
- Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll
+ Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll
 
  Você deve inserir essa diretiva em seu código:
 
@@ -36,11 +36,11 @@ Você pode escrever código para anexar cadeias de caracteres arbitrárias a ele
 
 |Chamada de método|Descrição|
 |-----------------|-----------------|
-|`element.AddReference (nameString, valueString, duplicatesAllowed)`|Cria um `IReference` com as cadeias de caracteres de nome e valor fornecidas e vincula-o a `element`. Retorna o `IReference`.<br /><br /> Gera uma exceção se `duplicatesAllowed` for false e já houver um `IReference` com o mesmo nome anexado a `element`.|
-|`element.GetReferences(name)`|Retorna todos os objetos de `IReference` vinculados a `element` que têm o `name` especificado.|
-|`element.DeleteAllReferences(name)`|Exclui todos os objetos de `IReference` vinculados ao elemento que têm o nome fornecido.|
-|`reference.Delete()`|Exclui este `IReference`.|
+|`element.AddReference (nameString, valueString, duplicatesAllowed)`|Cria um `IReference` com as cadeias de caracteres de nome e valor fornecidas e o vincula a `element` . Retorna o `IReference`.<br /><br /> Gera uma exceção se `duplicatesAllowed` for false e já houver um `IReference` com o mesmo nome anexado a `element` .|
+|`element.GetReferences(name)`|Retorna todos os `IReference` objetos vinculados a `element` que têm o especificado `name` .|
+|`element.DeleteAllReferences(name)`|Exclui todos os `IReference` objetos vinculados ao elemento que têm o nome fornecido.|
+|`reference.Delete()`|Exclui isso `IReference` .|
 |`ReferenceConstants.WorkItem`|O valor usado para nomear referências de item de trabalho.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definir um manipulador de link de item de trabalho](../modeling/define-a-work-item-link-handler.md) [definir e instalar uma programação de extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md) [com a API UML](../modeling/programming-with-the-uml-api.md)

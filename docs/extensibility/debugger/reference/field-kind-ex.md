@@ -14,16 +14,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736882"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
-Enumera tipos adicionais de campos que um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pode conter. Essa enumeração estende a [enumeração FIELD_KIND.](../../../extensibility/debugger/reference/field-kind.md)
+Enumera tipos adicionais de campos que um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pode conter. Essa enumeração estende a enumeração de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_KIND_EX
@@ -55,11 +55,11 @@ O campo contém uma variável de método.
 O campo contém uma variável de classe.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735569"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Estatísticas de memória e API de gráficos
@@ -36,11 +36,11 @@ Essa ferramenta exibirá a quantidade de memória que o driver de gráficos est�
 
 ![Estatísticas de Memória](media/gfx_diag_memory_statistics.png)
 
-A coluna **alocação de GPU** exibe a quantidade de memória usada pelo evento exibido na coluna **evento** .  Você também pode selecionar o ícone de inspeção ![watch ícone ](media/gfx_watch.png) para exibir o [histórico de recursos](graphics-event-list.md#resource-history) para o evento selecionado.
+A coluna **alocação de GPU** exibe a quantidade de memória usada pelo evento exibido na coluna **evento** .  Você também pode selecionar o ícone de inspeção ícone de inspeção ![ ](media/gfx_watch.png) para exibir o [histórico de recursos](graphics-event-list.md#resource-history) do evento selecionado.
 
 Assim como acontece com a ferramenta de estatísticas de API, você pode clicar com o botão direito do mouse na janela para copiar todos os dados como CSV, que podem ser colados em algo como o Excel para análise posterior.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 - [Histórico de recursos](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

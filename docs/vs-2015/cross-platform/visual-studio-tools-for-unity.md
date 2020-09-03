@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155272"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Ferramentas do Visual Studio para Unity
@@ -37,13 +37,13 @@ Nesta seção, você saberá mais sobre as Ferramentas do Visual Studio para Uni
  [Introdução](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md)  
  Nesta seção, você aprenderá como instalar as Ferramentas do Visual Studio para Unity para sua versão do Visual Studio e como começar a usar o Visual Studio com seu projeto do Unity.  
   
- [Usando o Ferramentas do Visual Studio para Unity](../cross-platform/using-visual-studio-tools-for-unity.md)  
+ [Usando o Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)  
  Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.  
   
  [Programando as Ferramentas do Visual Studio para Unity](../cross-platform/programming-visual-studio-tools-for-unity.md)  
  Nesta seção, você encontrará exemplos de como usar as Ferramentas do Visual Studio para API do Unity.  
   
- [Solução de problemas e problemas conhecidos](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
+ [Problemas conhecidos e de solução de problemas](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
  Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.  
   
  [Log de Alterações](../cross-platform/change-log-visual-studio-tools-for-unity.md)  

@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590521"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
-Diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos do usuário aos quais seu sistema de software deve dar suporte.
+Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário para os quais seu sistema de software deve dar suporte.
 
 Para ver quais versões do Visual Studio oferecem suporte a cada tipo de diagrama, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -42,7 +42,7 @@ Para visualizar a arquitetura de um sistema ou de um código existente, crie os 
 |Mapas de código<br /><br /> [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dependências e outras relações no código existente|
 |Diagramas de classe gerados por código<br /><br /> [Trabalhando com diagramas de classe (Designer de Classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Tipos e suas relações no código .NET|
 
-## <a name="related-tasks"></a>Tarefas relacionadas
+## <a name="related-tasks"></a>Related Tasks
 
 |**Tópico**|**Tarefa**|
 |-|-|

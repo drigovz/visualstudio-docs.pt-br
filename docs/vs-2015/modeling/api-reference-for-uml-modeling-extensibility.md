@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e48bf723b8b1cb77cc1f7f4de9cfb562caccde84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672804"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>Referência de API para extensibilidade de modelagem UML
@@ -29,8 +29,8 @@ Você pode escrever o código do programa para ler e modificar os modelos criado
 
 |Assembly|O que isso permite que você faça|
 |--------------|--------------------------------|
-|Microsoft. VisualStudio. Uml. interfaces. dll|-Ler e alterar elementos de modelo, como IUseCase, IAssociation e assim por diante.<br />-Navegue pelas relações entre os elementos.<br /><br /> Os namespaces e os tipos correspondem àqueles definidos na especificação UML.|
-|Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll|-Criar novas instâncias de elementos de modelo<br />-Acesse e modifique formas e diagramas.|
+|Microsoft.VisualStudio.Uml.Interfaces.dll|-Ler e alterar elementos de modelo, como IUseCase, IAssociation e assim por diante.<br />-Navegue pelas relações entre os elementos.<br /><br /> Os namespaces e os tipos correspondem àqueles definidos na especificação UML.|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll|-Criar novas instâncias de elementos de modelo<br />-Acesse e modifique formas e diagramas.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Estender modelos UML e](../modeling/extend-uml-models-and-diagrams.md) [referência de API de diagramas para o SDK de modelagem do Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

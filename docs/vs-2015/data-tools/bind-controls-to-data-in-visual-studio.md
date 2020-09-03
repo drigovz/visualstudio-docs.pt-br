@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673043"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
@@ -38,10 +38,10 @@ ms.locfileid: "72673043"
 
 |Fonte de dados|Suporte a arrastar e soltar no **Designer de formulários do Windows**|Suporte a arrastar e soltar no **designer do WPF**|Suporte a arrastar e soltar no **designer do Silverlight**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Conjunto de dados|Sim|Sim|Não|
+|Dataset|Sim|Sim|Não|
 |Modelo de Dados de Entidade|Sim<sup>1</sup>|Sim|Sim|
 |Classes do LINQ to SQL|Não<sup>2</sup>|Não<sup>2</sup>|Não<sup>2</sup>|
-|Serviços (incluindo [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], serviços WCF e serviços Web)|Sim|Sim|Sim|
+|Serviços (incluindo serviços [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] WCF e serviços Web)|Sim|Sim|Sim|
 |Objeto|Sim|Sim|Sim|
 |SharePoint|Sim|Sim|Sim|
 
@@ -52,7 +52,7 @@ ms.locfileid: "72673043"
 ## <a name="data-sources-window"></a>janela Fontes de Dados
  As fontes de dados estão disponíveis para seu projeto como itens na janela **fontes de dados** . Essa janela está visível ou pode ser acessada no menu **Exibir** , quando uma superfície de design de formulário é a janela ativa em seu projeto. Você pode arrastar itens desta janela para criar controles associados aos dados subjacentes e também pode configurar as fontes de dados clicando com o botão direito do mouse.
 
- ![Janela fontes de dados](../data-tools/media/raddata-data-sources-window.png "janela de fontes de dados do raddata")
+ ![janela Fontes de Dados](../data-tools/media/raddata-data-sources-window.png "janela de fontes de dados do raddata")
 
  Para cada tipo de dados que aparece na janela **fontes de dados** , um controle padrão é criado quando você arrasta o item para o designer. Antes de arrastar um item da janela **fontes de dados** , você pode alterar o controle que será criado. Para obter mais informações, consulte [definir o controle a ser criado ao arrastar da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
@@ -61,14 +61,14 @@ ms.locfileid: "72673043"
 
 |Tarefa|Mais informações|
 |----------|----------------------|
-|Abra a janela **fontes de dados** .|Abra uma superfície de design no editor e escolha **exibir**  > **fontes de dados**.|
+|Abra a janela **fontes de dados** .|Abra uma superfície de design no editor e escolha **Exibir**  >  **fontes de dados**.|
 |Adicione uma fonte de dados ao seu projeto.|[Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)|
 |Defina o controle que é criado quando você arrasta um item da janela **fontes de dados** para o designer.|[Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifique a lista de controles que estão associados aos itens na janela **fontes de dados** .|[Adicionar controles personalizados à janela Fontes de Dados](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
-|Criar controles vinculados a dados.|[Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|
+|Criar controles vinculados a dados.|[Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)|
 |Associar a um objeto ou uma coleção.|[Associar objetos no Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|
 |Filtre os dados que aparecem na interface do usuário.|[Filtrar e classificar dados em um Aplicativo do Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Personalizar legendas para controles.|[Personalizar o modo como o Visual Studio cria legendas para controles associados a dados](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  Associação [de dados do Visual Studio Data Tools para .net](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

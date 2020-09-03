@@ -1,5 +1,5 @@
 ---
-title: Guia espaço, caixa de diálogo de propriedades do processo | Microsoft Docs
+title: Guia espaço, caixa de diálogo Propriedades do processo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,27 +12,27 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189422"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Guia Espaço, Caixa de diálogo Propriedades do Processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use o **espaço** guia para examinar o espaço de endereço de um processo. Para exibir o [caixa de diálogo de propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para um [exibição de processos](../debugger/processes-view.md) janela. Selecione qualquer nó de processo na árvore e escolha **propriedades** da **exibição** menu.  
+Use a guia **espaço** para examinar o espaço de endereço de um processo. Para exibir a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md), mova o foco para uma janela de [exibição de processos](../debugger/processes-view.md) . Selecione qualquer nó de processo na árvore e escolha **Propriedades** no menu **Exibir** .  
   
- As seguintes configurações estão disponíveis sobre o **espaço** guia:  
+ As configurações a seguir estão disponíveis na guia **espaço** :  
   
 |Entrada|Descrição|  
 |-----------|-----------------|  
-|**Exibir para espaço marcado como**|Use essa caixa de listagem para selecionar a categoria de espaço (imagem, mapeada, reservados ou não atribuídos).|  
-|**Bytes Executáveis**|Para a categoria selecionada, a soma de todos os espaços de endereço que esse processo está usando. Memória executável é que podem ser executados por programas, mas pode não ser lidos ou gravados.|  
-|**Bytes de Execução-Somente Leitura**|Para a categoria selecionada, a soma de todos os espaços de endereço em uso com as propriedades somente leitura que esse processo está usando. EXEC-memória somente leitura é a memória que pode ser executada, bem como de leitura.|  
-|**Bytes de Execução-Leitura-Gravação**|Para a categoria selecionada, a soma de todos os espaços de endereço em uso com as propriedades de leitura / gravação que esse processo está usando. Memória de EXEC e leitura / gravação é aquela que pode ser executada por programas, bem como ler e modificado.|  
-|**Cópia de Bytes de gravação de EXEC**|Para a categoria selecionada, a soma de todos os espaços de endereço que podem ser executada por programas, bem como lida e gravada. Esse tipo de proteção é usado quando a memória precisa ser compartilhado entre processos. Se os processos de compartilhamento apenas lerem a memória, todos eles usarão a mesma memória. Se um processo de compartilhamento deseja acesso de gravação, será feita uma cópia da memória para o processo.|  
-|**Bytes Não Acessíveis**|Para a categoria selecionada, a soma de todos os espaços de endereço que impede que um processo de usá-lo. Tentativa de leitura ou uma violação de acesso é gerada se a gravação.|  
-|**Bytes Somente Leitura**|Para a categoria selecionada, a soma de todos os espaços de endereço que podem ser executado, bem como de leitura.|  
-|**Bytes de Leitura-Gravação**|Para a categoria selecionada, a soma de todos os espaços de endereço que permite a leitura e gravação.|  
-|**Bytes de Gravação-Cópia**|Para a categoria selecionada, a soma de todos os espaços de endereço que permite o compartilhamento de memória para leitura, mas não para gravação. Quando os processos estão lendo essa memória, eles podem compartilhar a mesma memória. No entanto, quando um processo de compartilhamento deseja ter acesso de leitura/gravação a essa memória compartilhada, é feita uma cópia do que a memória para gravação.|
+|**Exibir para espaço marcado como**|Use essa caixa de listagem para selecionar a categoria de espaço (imagem, mapeada, reservada ou não atribuída).|  
+|**Bytes Executáveis**|Para a categoria selecionada, a soma de todo o espaço de endereço que esse processo está usando. A memória executável é a memória que pode ser executada por programas, mas pode não ser lida ou gravada.|  
+|**Bytes de Execução-Somente Leitura**|Para a categoria selecionada, a soma de todo o espaço de endereço em uso com propriedades somente leitura que esse processo está usando. A memória do exec-somente leitura é a memória que pode ser executada, bem como a leitura.|  
+|**Bytes de Execução-Leitura-Gravação**|Para a categoria selecionada, a soma de todo o espaço de endereço em uso com as propriedades de leitura/gravação que esse processo está usando. O exec-Read-write memory é a memória que pode ser executada por programas, bem como leitura e modificação.|  
+|**Bytes de cópia de gravação de exec**|Para a categoria selecionada, a soma de todo o espaço de endereço que pode ser executado por programas, bem como leitura e gravação. Esse tipo de proteção é usado quando a memória precisa ser compartilhada entre processos. Se os processos de compartilhamento só lêem a memória, eles usarão a mesma memória. Se um processo de compartilhamento desejar acesso de gravação, uma cópia dessa memória será feita para o processo.|  
+|**Bytes Não Acessíveis**|Para a categoria selecionada, a soma de todo o espaço de endereço que impede um processo de usá-lo. Uma violação de acesso é gerada se a tentativa de gravação ou leitura for tentada.|  
+|**Bytes Somente Leitura**|Para a categoria selecionada, a soma de todo o espaço de endereço que pode ser executado, bem como a leitura.|  
+|**Bytes de Leitura-Gravação**|Para a categoria selecionada, a soma de todo o espaço de endereço que permite leitura e gravação.|  
+|**Bytes de Gravação-Cópia**|Para a categoria selecionada, a soma de todo o espaço de endereço que permite o compartilhamento de memória para leitura, mas não para gravação. Quando os processos estão lendo essa memória, eles podem compartilhar a mesma memória. No entanto, quando um processo de compartilhamento deseja ter acesso de leitura/gravação a essa memória compartilhada, uma cópia dessa memória é feita para gravação.|

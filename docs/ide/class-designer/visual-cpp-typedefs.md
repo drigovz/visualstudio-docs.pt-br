@@ -1,5 +1,5 @@
 ---
-title: Typedefs C++ em Class Designer
+title: TYPEDEFs C++ no Designer de Classe
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590677"
 ---
-# <a name="c-typedefs-in-class-designer"></a>Typedefs C++ em Class Designer
+# <a name="c-typedefs-in-class-designer"></a>TYPEDEFs C++ no Designer de Classe
 
-[Instruções typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O **Designer de Classe** é compatível com tipos de typedef do C++ declarados com a palavra-chave `typedef`, por exemplo:
+Instruções [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O **Designer de Classe** é compatível com tipos de typedef do C++ declarados com a palavra-chave `typedef`, por exemplo:
 
 ```cpp
 typedef class coord
@@ -68,7 +68,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedefs sem nome
 
-Embora seja possível declarar um typedef sem um nome, o **Designer de Classe** não usará o nome da marca especificada. O **Designer de Classe** use o nome gerado pelo **Modo de Exibição de Classe**. Por exemplo, a seguinte declaração é válida, mas aparece no **Class View** e **no Class Designer** como um objeto chamado **__unnamed**:
+Embora seja possível declarar um typedef sem um nome, o **Designer de Classe** não usará o nome da marca especificada. O **Designer de Classe** use o nome gerado pelo **Modo de Exibição de Classe**. Por exemplo, a declaração a seguir é válida, mas aparece em **modo de exibição de classe** e **Designer de classe** como um objeto chamado **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Confira também
 
-- [Trabalhe com código C++](working-with-visual-cpp-code.md)
-- [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+- [Trabalhar com código C++](working-with-visual-cpp-code.md)
+- [TYPEDEFs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d87cc57b31e63ae7aafa53c335df2b56f86a0409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658098"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Como habilitar e desabilitar análise de código automática para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode configurar a análise de código para ser executada antes de cada compilação de um projeto de código gerenciado. Você pode definir diferentes propriedades de análise de código para cada configuração de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+Você pode configurar a análise de código para ser executada antes de cada compilação de um projeto de código gerenciado. Você pode definir diferentes propriedades de análise de código para cada [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] configuração.
 
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Para habilitar ou desabilitar a análise automática de código
 
@@ -29,4 +29,4 @@ Você pode configurar a análise de código para ser executada antes de cada com
 
 3. Especifique o tipo de compilação na **configuração** e a plataforma de destino na **plataforma**.
 
-4. Para habilitar ou desabilitar a análise automática de código, marque ou desmarque a caixa de seleção **Habilitar análise de código na compilação (define constante CODE_ANALYSIS)** .
+4. Para habilitar ou desabilitar a análise automática de código, marque ou desmarque a caixa de seleção **Habilitar análise de código na compilação (define CODE_ANALYSIS constante)** .

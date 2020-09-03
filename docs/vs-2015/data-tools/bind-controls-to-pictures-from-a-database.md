@@ -24,16 +24,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b8f6ee192399c8af8a508b2f9c2817db954bb36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673010"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar a janela **Data Sources** para associar uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode associar uma imagem a um controle de <xref:System.Windows.Controls.Image> em um aplicativo WPF ou a um controle de <xref:System.Windows.Forms.PictureBox> em um aplicativo Windows Forms.
+Você pode usar a janela **Data Sources** para associar uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode associar uma imagem a um <xref:System.Windows.Controls.Image> controle em um aplicativo WPF ou a um <xref:System.Windows.Forms.PictureBox> controle em um aplicativo Windows Forms.
 
  As imagens em um banco de dados normalmente são armazenadas como matrizes de bytes. Os itens na janela **fontes de dados** que são armazenados como matrizes de bytes têm seu tipo de controle definido como **nenhum** por padrão, pois as matrizes de bytes podem conter qualquer coisa de uma matriz simples de bytes para o arquivo executável de um aplicativo grande. Para criar um controle de associação de dados para um item de matriz de bytes na janela **fontes de dados** que representa uma imagem, você deve selecionar o controle a ser criado.
 
@@ -53,5 +53,5 @@ Você pode usar a janela **Data Sources** para associar uma imagem em um banco d
 
     - Como alternativa, você pode selecionar um controle diferente que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você poderá adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

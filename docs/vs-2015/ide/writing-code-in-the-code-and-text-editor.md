@@ -61,10 +61,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548025"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escrevendo código no editor de códigos e de texto
@@ -128,7 +128,7 @@ O editor do Visual Studio fornece muitos recursos que tornam mais fácil para vo
 
 |Comando|Descrição|
 |-|-|
-|Ir para\<line number>|(**Editar/Ir para** ou CTRL + G): mover-se até um número de linha específico no documento ativo.|
+|Ir para \<line number>|(**Editar/Ir para** ou CTRL + G): mover-se até um número de linha específico no documento ativo.|
 |Navegar para|(**Editar/Navegar Para** ou CTRL + ,): localiza um símbolo ou um arquivo na solução ativa. Ele ajuda você a escolher um bom conjunto de resultados correspondentes de uma consulta. Você pode pesquisar por palavras-chave que estão contidas em um símbolo usando caracteres de minúsculas concatenadas e caracteres de sublinhado para dividir o símbolo em palavras-chave.|
 |Localizar Todas as Referências|(menu de contexto): localiza todas as referências ao elemento selecionado na solução.|
 |Ir para definição|(menu de contexto ou F12): localiza a definição do elemento selecionado.|
@@ -229,4 +229,4 @@ Esse recurso é particularmente útil se seu código tem nomes longos.
 - [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md)
 
 ## <a name="see-also"></a>Consulte Também
- [IDE do Visual Studio](../ide/visual-studio-ide.md)
+ [Visual Studio IDE](../ide/visual-studio-ide.md)

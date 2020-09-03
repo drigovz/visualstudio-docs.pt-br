@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155500"
 ---
 # <a name="performance-explorer"></a>Performance Explorer
@@ -36,7 +36,7 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Novas técnicas para o Windows 8**|[Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
+|**Novas técnicas para o Windows 8**|[Ferramentas de desempenho em aplicativos Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
 |**Compreender os conceitos de criação de perfil:** aprenda os conceitos e termos que você usará para coletar, exibir e analisar o desempenho do código usando as ferramentas de criação de perfil.|[Visões gerais](../profiling/overviews-performance-tools.md)|  
 |**Coloque a mão na massa:** aprenda os procedimentos básicos que você usará ao coletar, exibir e analisar o desempenho do código usando as ferramentas de criação de perfil. Experimente com esse passo a passo prático.|[Introdução](../profiling/getting-started-with-performance-tools.md)|  
 |**Configure a sessão de criação de perfil:** aprenda métodos avançados de como especificar os projetos ou os binários para analisar, selecione um método de criação de perfil, escolha os dados de desempenho para coletar e defina outras opções de sessão de criação de perfil.|[Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)|  
@@ -46,7 +46,7 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Salve e compartilhe seus resultados:** saiba como salvar dados de criação de perfil para arquivamento ou compartilhamento.|[Salvando e exportando dados de ferramentas de desempenho](../profiling/saving-and-exporting-performance-tools-data.md)|  
 |**Automatize a criação de perfil:** aprenda a usar as ferramentas de criação de perfil do prompt de comando.|[Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
 |**Controle a criação de perfil de com programação:** saiba como usar APIs das Ferramentas de Criação de Perfil nativas e gerenciadas para coletar de dados de controle diretamente do código-fonte.|[APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)|  
-|**Solucionar problemas de criação de perfil**|[Solução de problemas de ferramentas de desempenho](../profiling/troubleshooting-performance-tools-issues.md)|  
+|**Solucionar problemas de criação de perfil**|[Solucionando problemas de ferramentas de desempenho](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)

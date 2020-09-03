@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735491"
 ---
 # <a name="graphics-frame-validation"></a>Validação de quadro de gráficos
@@ -31,8 +31,8 @@ Clique no botão **executar validação** no canto superior esquerdo para inicia
 | Severidade | Corrupção, erro, aviso, informações ou mensagem. |
 | Categoria | Aplicativo definido, diversos, inicialização, limpeza, compilação, criação de estado, configuração de estado, obtenção de estado, execução, manipulação de recursos, sombreador, redundante e não utilizado. |
 | Mensagem | A mensagem associada ao evento. |
-| evento | O evento associado ao erro ou aviso. |
+| Evento | O evento associado ao erro ou aviso. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

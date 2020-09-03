@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
 ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387168"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
@@ -21,7 +21,7 @@ A revista de código é uma revista de desenvolvedor de software independente qu
 ## <a name="activation-steps"></a>Etapas de ativação
 O processo para configurar sua assinatura da revista de código é simples.  Basta seguir estas etapas:
 
-1. Visite[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2. Localize o bloco da revista de código na seção desenvolvimento profissional ou educação do portal e clique em **obter código**.
    > [!div class="mx-imgBorder"]
    > ![Bloco da revista de código](_img/vs-code-magazine/vs-code-magazine-tile.png "Bloco da revista de código")

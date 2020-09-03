@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d99cbf4aaa30e1afb95a98743c223edee94d98fe
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286291"
 ---
 # <a name="secure-clickonce-applications"></a>Proteger aplicativos ClickOnce
@@ -45,7 +45,7 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
  Incluir uma permissão que não faça parte do conjunto de permissões padrão para a zona da qual o aplicativo será implantado fará com que o usuário final seja solicitado a conceder permissão no momento da instalação ou atualização. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Em computadores onde esta política é implantada, permissões serão concedidas automaticamente e o usuário não será interpelado.
 
- Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]permite que você depure seu aplicativo na zona de segurança de destino e fornece ajuda para desenvolver aplicativos seguros. Para obter mais informações, consulte [depurar aplicativos ClickOnce que usam System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md).
+ Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite que você depure seu aplicativo na zona de segurança de destino e fornece ajuda para desenvolver aplicativos seguros. Para obter mais informações, consulte [depurar aplicativos ClickOnce que usam System. Deployment. Application](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md).
 
  Para saber mais sobre a segurança de acesso do código e o ClickOnce, veja [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
@@ -76,6 +76,6 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 ## <a name="deploying-obfuscated-assemblies"></a>Implantando assemblies ofuscados
  O Visual Studio inclui a versão gratuita da [PreEmptive Protection – Dotfuscator Community](../ide/dotfuscator/index.md), que pode ser usada para proteger os aplicativos ClickOnce por meio de ofuscação de código e medidas de proteção ativas.  Para obter detalhes, veja [Seção do ClickOnce do Guia do Usuário do Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
