@@ -6,10 +6,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815026"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Walkthrough: usar a hierarquia XSLT
@@ -109,6 +109,6 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
 
 6. Quando o depurador parar na instrução `<xsl:include href="xslincludefile.xsl" />` , pressione o botão **Step Into** . A depuração pode continuar na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criador de perfil XSLT](../xml-tools/xslt-profiler.md)

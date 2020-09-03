@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9f1b7aa37794618cd051cfdaaacb9359087cc664
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814714"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desenvolver aplicativos com o Designer de Fluxo de Trabalho
@@ -43,6 +43,6 @@ Para usar modelos de projeto de fluxo de trabalho no Visual Studio, primeiro ins
 
    O Visual Studio instala o componente **Windows Workflow Foundation** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

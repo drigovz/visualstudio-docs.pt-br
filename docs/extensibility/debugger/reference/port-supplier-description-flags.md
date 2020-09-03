@@ -14,17 +14,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713991"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
 Define os metadados que podem ser recuperados sobre um fornecedor de porta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
@@ -44,19 +44,19 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>Campos
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-Se selecionado, o ícone de aviso será exibido na ui.
+Se selecionado, o ícone de aviso será exibido na interface do usuário.
 
 ## <a name="remarks"></a>Comentários
 
-Esta enumeração é devolvida pelo método [GetDescription.](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)
+Essa enumeração é retornada pelo método [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) .
 
 ## <a name="requirements"></a>Requisitos
 
-Cabeçalho: Msdbg.h
+Cabeçalho: Msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 

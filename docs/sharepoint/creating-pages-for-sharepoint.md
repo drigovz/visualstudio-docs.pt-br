@@ -18,9 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 942891bc9281c07966160ea9df065408fcbfd5ff
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015169"
 ---
 # <a name="create-pages-for-sharepoint"></a>Criar páginas para o SharePoint
@@ -61,7 +62,7 @@ ms.locfileid: "86015169"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Criar páginas de aplicativo para o SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)|Descreve como adicionar páginas de aplicativos: conteúdo *. aspx* que é mesclado com uma página mestra do SharePoint.|
 |[Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)|Mostra como criar páginas do ASP.NET que são executadas em um site do SharePoint.|

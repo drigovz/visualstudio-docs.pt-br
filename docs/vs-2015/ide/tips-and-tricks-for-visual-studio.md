@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542981"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
@@ -49,7 +49,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Mostrar a Lista de Arquivos Abertos|Ctrl+Alt+Seta para baixo|
 |Mostrar Todas as Janelas Flutuantes|Ctrl+Shift+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Atalhos de janela
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Atalhos de janela
 
 |Comando|Atalho|
 |-|-|
@@ -59,7 +59,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Nova instância de Início|Win+Shift+n|
 |Alternar entre as Janelas|Win+n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Pesquisa do Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Pesquisa do Visual Studio
 
 |Comando|Atalho|
 |-|-|
@@ -69,7 +69,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Resultados de Escopo de Início Rápido|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
 |Pesquisar em Opções de Ferramentas|Ctrl+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Localização do editor
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Localização do editor
 
 |Comando|Atalho|
 |-|-|
@@ -82,9 +82,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Substituição Rápida - Substituir Próximo|Alt+R|
 |Substituição Rápida Substituir Tudo|Alt+A|
 |Localizar em Arquivos|Ctrl+Shift+F|
-|Substituir nos Arquivos|Ctrl+Shift+H|
+|Substituir em Arquivos|Ctrl+Shift+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Editor de código
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Editor de código
 
 |Comando|Atalho|
 |-|-|
@@ -109,7 +109,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Navegar entre vários resultados de espiada|F8 e Shift+F8|
 |Alterne entre a janela do editor de códigos e a janela de definição de auge|Shift+Esc|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barras
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Barras
 
 |Comando|Atalho|
 |-|-|
@@ -137,7 +137,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Buffer de limpeza imediata da janela|>cls|
 |Valor de Impressão de Janela Imediato|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Gerenciamento do ciclo de vida do aplicativo
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Gerenciamento do ciclo de vida do aplicativo
 
 Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

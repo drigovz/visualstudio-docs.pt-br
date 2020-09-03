@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462103"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
@@ -449,7 +449,7 @@ Os valores nessa enumeração são passados para os seguintes métodos:
 ## <a name="requirements"></a>Requisitos:
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

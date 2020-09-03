@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016137"
 ---
 # <a name="how-to-localize-a-feature"></a>Como localizar um recurso
@@ -56,7 +57,7 @@ ms.locfileid: "86016137"
 
      O título e a descrição do recurso localizado aparecem no aplicativo. Para exibir recursos localizados, o servidor do SharePoint deve ter um pacote de idiomas instalado que corresponda à cultura do arquivo de recurso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Localizar soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md)
 - [Como adicionar um arquivo de recurso](../sharepoint/how-to-add-a-resource-file.md)
 - [Como: localizar marcação ASPX](../sharepoint/how-to-localize-aspx-markup.md)

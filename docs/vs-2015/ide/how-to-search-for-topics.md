@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5830bb71f66b27acf2ba63133a130c2ea24a9c6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670762"
 ---
 # <a name="how-to-search-for-topics"></a>Como procurar tópicos
@@ -42,5 +42,5 @@ Você pode usar o recurso de pesquisa de texto completo para localizar todos os 
 
 4. Para exibir um tópico, escolha seu título na lista de resultados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md) [operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md) [operadores de pesquisa avançada em expressões de pesquisa](../ide/advanced-search-operators-in-search-expressions.md) [como: personalizar os resultados da pesquisa](../ide/how-to-customize-search-results.md)

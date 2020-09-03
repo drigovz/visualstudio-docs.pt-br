@@ -16,19 +16,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651109"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A caixa de diálogo **Configurar referência de serviço** permite que você configure o comportamento dos serviços de [!INCLUDE[vsindigo](../includes/vsindigo-md.md)].
+A caixa de diálogo **Configurar referência de serviço** permite que você configure o comportamento dos [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Serviços do.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  Para acessar a caixa de diálogo **Configurar referência de serviço** , clique com o botão direito do mouse em uma referência de serviço em **Gerenciador de soluções** e escolha **Configurar referência de serviço**. Você também pode acessar a caixa de diálogo clicando no botão **avançado** na **caixa de diálogo Adicionar referência de serviço**.
 
@@ -44,9 +44,9 @@ A caixa de diálogo **Configurar referência de serviço** permite que você con
 
 - Para especificar os tipos de coleção de lista ou dicionário para um cliente WCF, selecione os tipos nas listas **tipo de coleção** e tipo de **coleção de dicionário** .
 
-- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **referência lista de assemblies**.
+- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **lista assemblies referenciados**.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
  **Endereço** Usado para atualizar o endereço da Web em que uma referência de serviço procura um serviço. Por exemplo, durante o desenvolvimento, o serviço pode ser hospedado em um servidor de desenvolvimento, depois movido para um servidor de produção, precisando de uma alteração de endereço.
 
 > [!NOTE]
@@ -78,10 +78,10 @@ A caixa de diálogo **Configurar referência de serviço** permite que você con
  **Adicionar referência Web** Exibe a [caixa de diálogo NIB: Adicionar referência Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).
 
 > [!NOTE]
-> Essa opção deve ser usada somente para projetos direcionados à versão 2,0 do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+> Essa opção deve ser usada somente para projetos direcionados à versão 2,0 do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .
 
 > [!NOTE]
 > O botão **Adicionar referência Web** está disponível somente quando a caixa de diálogo **Configurar referência de serviço** é exibida na **caixa de diálogo Adicionar referência de serviço**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como adicionar, atualizar ou remover uma referência de serviço](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9) [como: adicionar uma referência a um serviço Web](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168) [Windows Communication Foundation serviços e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

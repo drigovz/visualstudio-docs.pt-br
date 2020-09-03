@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6da1a956ac958a95dd0c433283a71af0a9b29d1e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714088"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
-Especifica as bandeiras de estado de ponto de ruptura pendentes.
+Especifica os sinalizadores de estado de ponto de interrupção pendentes.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PENDING_BP_STATE_FLAGS { 
@@ -43,19 +43,19 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 ```
 
 ## <a name="fields"></a>Campos
- `PBPSF_NONE`Espaço.
+ `PBPSF_NONE` Reservado.
 
- `PBPSF_VIRTUALIZED`Especifica um ponto de ruptura virtualizado pendente, que deve ser vinculado toda vez que o novo código é carregado.
+ `PBPSF_VIRTUALIZED` Especifica um ponto de interrupção pendente virtualizado, um que deve ser associado toda vez que um novo código for carregado.
 
 ## <a name="remarks"></a>Comentários
- Usado para `flags` o membro da estrutura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+ Usado para o `flags` membro da estrutura de [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

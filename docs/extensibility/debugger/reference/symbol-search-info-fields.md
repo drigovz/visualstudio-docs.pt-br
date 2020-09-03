@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bf8a1ad8a5dabc663ef29f5f2c36fdf0fbd8b786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713473"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Especifica o tipo de informação de símbolo a ser recuperada.
+Especifica o tipo de informações de símbolo a recuperar.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,23 +47,23 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ## <a name="fields"></a>Campos
  `SSIF_NONE`\
- Indica que não há bandeiras
+ Indica que não há sinalizadores
 
  `SSIF_VERBOSE_SEARCH_INFO`\
- Retorna todos os caminhos de pesquisa usados para encontrar símbolos
+ Retorna todos os caminhos de pesquisa usados para localizar símbolos
 
 ## <a name="remarks"></a>Comentários
- Esses sinalizadores são passados como parâmetro para o método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) para determinar a quantidade de informações retornadas.
+ Esses sinalizadores são passados como um parâmetro para o método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) para determinar a quantidade de informações retornadas.
 
 > [!NOTE]
-> Atualmente, `SSIF_VERBOSE_SEARCH_INFO` apenas é suportado, e deve `dwFlags` ser especificado como parâmetro para `IDebugModule3::GetSymbolInfo`. Todos os outros valores retornam um erro.
+> Atualmente, `SSIF_VERBOSE_SEARCH_INFO` há suporte apenas para e deve ser especificado como o `dwFlags` parâmetro para `IDebugModule3::GetSymbolInfo` . Todos os outros valores retornam um erro.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

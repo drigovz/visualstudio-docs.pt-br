@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714005"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
-Especifica o estado de um ponto de ruptura pendente (um ponto de ruptura que ainda não foi vinculado).
+Especifica o estado de um ponto de interrupção pendente (um ponto de interrupção que ainda não foi associado).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PENDING_BP_STATE { 
@@ -48,26 +48,26 @@ public enum enum_PENDING_BP_STATE { 
 
 ## <a name="fields"></a>Campos
  `PBPS_NONE`\
- Espaço reservado para zero. Esse valor nunca é devolvido.
+ Espaço reservado para zero. Esse valor nunca é retornado.
 
  `PBPS_DELETED`\
- Indica que o ponto de ruptura pendente foi excluído.
+ Indica que o ponto de interrupção pendente foi excluído.
 
  `PBPS_DISABLED`\
- Indica que o ponto de ruptura pendente está desativado.
+ Indica que o ponto de interrupção pendente está desabilitado.
 
  `PBPS_ENABLED`\
- Indica que o ponto de ruptura pendente está ativado.
+ Indica que o ponto de interrupção pendente está habilitado.
 
 ## <a name="remarks"></a>Comentários
- Use como `state` membro da estrutura [PENDING_BP_STATE_INFO.](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+ Use como o `state` membro da estrutura de [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016348"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procurar conexões do SharePoint usando Gerenciador de Servidores
@@ -44,9 +45,9 @@ ms.locfileid: "86016348"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Como: Adicionar ou remover conexões do SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Descreve as etapas necessárias para adicionar um novo site do SharePoint ao nó **conexões do SharePoint** no **Gerenciador de servidores**.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

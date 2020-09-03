@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542201"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
@@ -37,7 +37,7 @@ No Designer XAML, uma *forma* é exatamente o que você esperaria. Por exemplo: 
 
 - [Criar um caminho de recorte](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Desenhar uma forma
+## <a name="draw-a-shape"></a><a name="Shape"></a> Desenhar uma forma
  É possível encontrar formas no painel **Ativos**.
 
  ![Categoria Formas no painel Ativos](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -89,24 +89,24 @@ No Designer XAML, uma *forma* é exatamente o que você esperaria. Por exemplo: 
 ### <a name="remove-a-point-in-a-path"></a>Remover um ponto em um caminho
  Use a ferramenta **Seleção**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") e a ferramenta **Caneta**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
 
- Use a ferramenta de **seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Em seguida, use a ferramenta **caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar no ponto que você deseja remover.
+ Use a ferramenta de **seleção**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Em seguida, use a ferramenta **caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar no ponto que você deseja remover.
 
 ### <a name="add-a-point-to-a-path"></a>Adicionar um ponto a um caminho
  Use a ferramenta **Seleção**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") e a ferramenta **Caneta**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54").
 
- Use a ferramenta de **seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Use a **Pen** ferramenta caneta ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar em qualquer lugar no caminho onde você deseja adicionar o ponto.
+ Use a ferramenta de **seleção**  ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Use a **Pen** ferramenta caneta ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar em qualquer lugar no caminho onde você deseja adicionar o ponto.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Converter uma forma em um caminho
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Converter uma forma em um caminho
  Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho.
 
  **Assista a um breve vídeo:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabalhando com caminhos: converter uma forma em um caminho](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Combinar caminhos
+## <a name="combine-paths"></a><a name="Combine"></a> Combinar caminhos
  É possível combinar caminhos e formas em um único caminho.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
 
-|Imagem|Descrição|Imagem|Descrição|
+|Image|Descrição|Image|Descrição|
 |-|-|-|-|
 |![](../designers/media/b1-1.png "B1_1")|Duas formas antes da combinação|![](../designers/media/b1-4.png "B1_4")|Intersect|
 |![](../designers/media/b1-2.png "B1_2")|União|![](../designers/media/b1-5.png "B1_5")|Excluir Sobreposição|
@@ -114,7 +114,7 @@ No Designer XAML, uma *forma* é exatamente o que você esperaria. Por exemplo: 
 
  **Assista a um breve vídeo:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabalhando com caminhos: combinar caminhos](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Criar um caminho composto
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Criar um caminho composto
  Quando você cria um caminho composto, todas as partes de interseção dos caminhos são subtraídas do resultado e o caminho resultante assume as propriedades visuais do caminho mais baixo.
 
  É possível separar um caminho composto a qualquer momento após sua criação.
@@ -123,7 +123,7 @@ No Designer XAML, uma *forma* é exatamente o que você esperaria. Por exemplo: 
 
  **Assista a um breve vídeo:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabalhando com caminhos: criar um demarcador composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Criar um caminho de recorte
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Criar um caminho de recorte
  Um caminho de recorte é um caminho ou uma forma que é aplicada a outro objeto, o que oculta as partes do objeto mascarado que fica fora do caminho de recorte.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

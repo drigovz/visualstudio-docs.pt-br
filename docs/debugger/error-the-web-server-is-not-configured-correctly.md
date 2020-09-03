@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 711297ef00c064c482ed3a86b896566b6e019534
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460319"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
@@ -47,6 +47,6 @@ Siga estas etapas para resolver esse problema:
 
 4. Se o `maxConnection` limite no IIS for muito baixo e você tiver muitas conexões, talvez seja necessário [aumentar o limite de conexão](/iis/configuration/system.applicationhost/sites/sitedefaults/limits).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depuração remota do ASP.NET em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
 - [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815325"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Quantificador inesperado (JavaScript)
@@ -47,6 +47,6 @@ Ao compor seu padrão de pesquisa de expressão regular, você criou um elemento
   
 - Verifique se o seu elemento de padrão de pesquisa contém apenas fatores de repetição legal.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
  [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

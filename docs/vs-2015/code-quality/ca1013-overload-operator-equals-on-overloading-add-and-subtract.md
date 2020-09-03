@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2304b78073b806dfc4aec9686f061d946b379ded
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545412"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Sobrecarregar o operador equals na sobrecarga de adição e subtração
@@ -42,7 +42,7 @@ ms.locfileid: "85545412"
 ## <a name="rule-description"></a>Descrição da Regra
  Quando as instâncias de um tipo podem ser combinadas usando operações como adição e subtração, você quase sempre deve definir igualdade para retornar `true` para duas instâncias que tenham os mesmos valores de constituintes.
 
- Você não pode usar o operador de igualdade padrão em uma implementação sobrecarregada do operador de igualdade. Isso causará um estouro de pilha. Para implementar o operador de igualdade, use o método Object. Equals em sua implementação. Veja os exemplos a seguir.
+ Você não pode usar o operador de igualdade padrão em uma implementação sobrecarregada do operador de igualdade. Isso causará um estouro de pilha. Para implementar o operador de igualdade, use o método Object. Equals em sua implementação. Veja o exemplo a seguir.
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then

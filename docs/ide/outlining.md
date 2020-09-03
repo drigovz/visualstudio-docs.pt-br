@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545438"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
@@ -49,11 +49,11 @@ Os comandos a seguir podem ser encontrados no **Edit**  >  submenu editar**estru
 |Interromper Ocultação Atual|(**Ctrl** + **M**, **Ctrl** + **U**) – remove as informações de estrutura de tópicos para a região definida pelo usuário selecionada no momento. Não disponível no Visual Basic.|
 |Recolher para Definições|(**Ctrl** + **M**, **Ctrl** + **o**)-recolhe os membros de todos os tipos.|
 |Recolher bloco:\<logical boundary>|C Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
-|Recolher tudo em:\<logical structures>|C Recolhe todas as estruturas dentro da função.|
+|Recolher tudo em: \<logical structures>|C Recolhe todas as estruturas dentro da função.|
 
 Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)

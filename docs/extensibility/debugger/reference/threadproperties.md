@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd0ed4e33b1f8e0e905f3c88493c9f513c177fbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713433"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
-Descreve as propriedades de um fio.
+Descreve as propriedades de um thread.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,35 +53,35 @@ public struct THREADPROPERTIES { 
 
 ## <a name="members"></a>Membros
  `dwFields`\
- Uma combinação de bandeiras da [enumeração THREADPROPERTY_FIELDS,](../../../extensibility/debugger/reference/threadproperty-fields.md) descrevendo quais campos nesta estrutura são válidos.
+ Uma combinação de sinalizadores da enumeração [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) , que descreve quais campos nessa estrutura são válidos.
 
  `dwThreadId`\
- A im.
+ A ID do thread.
 
  `dwSuspendCount`\
- A contagem de suspensão de linha.
+ A contagem de suspensões de thread.
 
  `dwThreadState`\
- Um valor da enumeração [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) indicando o estado do segmento operacional.
+ Um valor da enumeração [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) que indica o estado do thread operacional.
 
  `bstrPriority`\
- Uma seqüência especificando a prioridade de segmento; por exemplo, "Acima do Normal", "Normal" ou "Time Critical".
+ Uma cadeia de caracteres que especifica a prioridade do thread; por exemplo, "acima do normal", "normal" ou "tempo crítico".
 
  `bstName`\
- O nome da linha.
+ O nome do thread.
 
  `bstrLocation`\
- O local de rosca (geralmente o quadro de pilha superior), normalmente expresso como o nome do método onde a execução é atualmente interrompida.
+ O local do thread (geralmente o quadro de pilha superior), normalmente expresso como o nome do método em que a execução está interrompida no momento.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura é preenchida por uma chamada para o método [GetThreadProperties.](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) As informações tão retornadas são normalmente usadas na preencher a janela **Threads.**
+ Essa estrutura é preenchida por uma chamada para o método [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) . As informações retornadas normalmente são usadas para preencher a janela **threads** .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

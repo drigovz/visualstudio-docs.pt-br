@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21d7672d3c08012e75d73ee8bf4d9816b850eb2c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544827"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Como: expor código ao VBA em um projeto do Visual C#
@@ -101,7 +101,7 @@ ms.locfileid: "85544827"
 
 12. Compile o projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
 - [Combine personalizações do VBA e no nível do documento](../vsto/combining-vba-and-document-level-customizations.md)

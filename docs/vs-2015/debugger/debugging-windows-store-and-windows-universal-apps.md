@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8423884393be19149a06b7d30749649e1cf57ff
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545555"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>Depurando aplicativos universais do Windows e da Windows Store
@@ -32,7 +32,7 @@ O depurador do Visual Studio fornece suporte completo para depuração de aplica
   
 ## <a name="in-this-section"></a>Nesta seção  
   
-|Title|Descrição|  
+|Título|Descrição|  
 |-|-|  
 |[Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Execute aplicativos da Windows Store em um computador local, em um simulador ou emulador de aplicativo ou em um dispositivo remoto.|  
 |[Depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Encontre e corrija erros em seus aplicativos da Windows Store usando o depurador do Visual Studio.|  

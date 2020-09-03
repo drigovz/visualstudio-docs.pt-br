@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671370"
 ---
 # <a name="properties-of-model-elements"></a>Propriedades de elementos de modelo
@@ -28,4 +28,4 @@ Esta seção lista as propriedades que você vê no janela Propriedades quando v
 
  [Substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md)
 
- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
+ [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)

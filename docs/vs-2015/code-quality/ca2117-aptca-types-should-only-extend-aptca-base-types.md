@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543605"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Tipos APTCA devem estender somente tipos base APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85543605"
 
  Quando o atributo APTCA está presente em um assembly totalmente confiável e um tipo no assembly é herdado de um tipo que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois tipos `T1` e `T2` atenderem às seguintes condições, os chamadores mal-intencionados poderão usar o tipo `T1` para ignorar a demanda de herança de confiança total implícita que protege `T2` :
 
-- `T1`é um tipo público declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `T1` é um tipo público declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
-- `T1`herda de um tipo `T2` fora de seu assembly.
+- `T1` herda de um tipo `T2` fora de seu assembly.
 
 - `T2`o assembly do não tem o atributo APTCA e, portanto, não deve ser herdável por tipos em assemblies parcialmente confiáveis.
 

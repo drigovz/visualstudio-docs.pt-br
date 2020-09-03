@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016402"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 2
@@ -86,7 +87,7 @@ ms.locfileid: "86016402"
 
 5. Na lista de modelos de projeto, escolha **biblioteca de controle de usuário do WPF**, nomeie o projeto **ProjectTemplateWizard**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **ProjectTemplateWizard** à solução e abre o arquivo UserControl1. XAML padrão.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ProjectTemplateWizard** à solução e abre o arquivo UserControl1. XAML padrão.
 
 6. Exclua o arquivo UserControl1. XAML do projeto.
 
@@ -96,11 +97,11 @@ ms.locfileid: "86016402"
 
 2. Na parte superior da caixa de diálogo **Adicionar novo projeto** , escolha **.NET Framework 3,5** na lista de versões do .NET Framework.
 
-3. Expanda o nó do **Visual C#** ou o nó **Visual Basic** e, em seguida, escolha o nó do **Windows** .
+3. Expanda o nó do **Visual C#** ou o nó  **Visual Basic** e, em seguida, escolha o nó do **Windows** .
 
 4. Escolha o modelo de projeto de **biblioteca de classes** , nomeie o projeto **SharePointCommands**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **SharePointCommands** à solução e abre o arquivo de código de Class1 padrão.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **SharePointCommands** à solução e abre o arquivo de código de Class1 padrão.
 
 5. Exclua o arquivo de código Class1 do projeto.
 
@@ -165,13 +166,13 @@ ms.locfileid: "86016402"
 
 1. Em **Gerenciador de soluções**, escolha o nó do projeto **SharePointCommands** .
 
-2. Na barra de menus, escolha **projeto**, **Adicionar item existente**.
+2. Na barra de menus, escolha **projeto**,  **Adicionar item existente**.
 
 3. Na caixa de diálogo **Adicionar item existente** , navegue até a pasta que contém os arquivos de código do projeto ProjectTemplateWizard e escolha o arquivo de código **CommandIds** .
 
 4. Escolha a seta ao lado do botão **Adicionar** e, em seguida, escolha a opção **Adicionar como link** no menu exibido.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o arquivo de código ao projeto **SharePointCommands** como um link. O arquivo de código está localizado no projeto **ProjectTemplateWizard** , mas o código no arquivo também é compilado no projeto **SharePointCommands** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o arquivo de código ao projeto **SharePointCommands** como um link. O arquivo de código está localizado no projeto **ProjectTemplateWizard** , mas o código no arquivo também é compilado no projeto **SharePointCommands** .
 
 5. No projeto **SharePointCommands** , adicione outro arquivo de código chamado comandos.
 
@@ -537,7 +538,7 @@ ms.locfileid: "86016402"
 
      Para obter informações sobre como implantar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensões, consulte [enviando extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Criando modelos de item e de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

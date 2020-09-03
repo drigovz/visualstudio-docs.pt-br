@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671134"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
@@ -33,7 +33,7 @@ Exibe uma lista dos threads no programa atual.
 Debug.ListThreads [index]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `index` Opcional. Seleciona um thread pelo seu índice para o thread atual.
 
 ## <a name="remarks"></a>Comentários
@@ -45,5 +45,5 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Lista](../../ide/reference/list-call-stack-command.md) de comandos da pilha de chamadas lista de [desmontagem comando](../../ide/reference/list-disassembly-command.md) [do Visual Studio comandos](../../ide/reference/visual-studio-commands.md) da [janela](../../ide/reference/command-window.md) de comando [Localizar/comandos caixa de comando](../../ide/find-command-box.md) do [Visual Studio alias do comando](../../ide/reference/visual-studio-command-aliases.md)

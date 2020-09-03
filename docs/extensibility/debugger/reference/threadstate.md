@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b291cc1668b2b867729da11d4c561f74567f257
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713335"
 ---
 # <a name="threadstate"></a>THREADSTATE
-Especifica o estado do segmento.
+Especifica o estado do thread.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_THREADSTATE { 
@@ -50,29 +50,29 @@ public enum enum_THREADSTATE { 
 
 ## <a name="fields"></a>Campos
  `THREADSTATE_RUNNING`\
- Indica que o fio está funcionando.
+ Indica que o thread está em execução.
 
  `THREADSTATE_STOPPED`\
- Indica que o fio está parado por causa de um ponto de ruptura.
+ Indica que o thread foi interrompido devido a um ponto de interrupção.
 
  `THREADSTATE_FRESH`\
- Indica que o segmento foi criado, mas ainda não está executando o código.
+ Indica que o thread foi criado, mas que ainda não está executando o código.
 
  `THREADSTATE_DEAD`\
- Indica que o fio está morto.
+ Indica que o thread está inativo.
 
  `THREADSTATE_FROZEN`\
- Indica que o fio está congelado (nenhuma execução pode ser realizada).
+ Indica que o thread está congelado (nenhuma execução pode ser executada).
 
 ## <a name="remarks"></a>Comentários
- Usado para `dwThreadState` o campo da estrutura [THREADPROPERTIES.](../../../extensibility/debugger/reference/threadproperties.md)
+ Usado para o `dwThreadState` campo da estrutura [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713261"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-Esta estrutura representa um endereço que `this` é`Me` relativo a um ponteiro (no Visual Basic).
+Essa estrutura representa um endereço relativo a um `this` ponteiro ( `Me` em Visual Basic).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef struct _tagUNMANAGED_THIS_RELATIVE {
@@ -45,23 +45,23 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>Membros
  `dwOffset`\
- Byte offset de uma posição base (por exemplo, início de uma vtable de classe).
+ Deslocamento de byte de uma posição base (por exemplo, início de uma classe vtable).
 
  `dwBitOffset`\
- Deslocamento em bits de uma posição base (sempre 0, a menos que se refira a um campo de bits).
+ Deslocamento em bits de uma posição base (sempre 0 a menos que se refira a um campo de bits).
 
  `dwBitLength`\
- Número de bits representando o endereço (sempre 0, a menos que se refira a um campo de bits).
+ Número de bits que representam o endereço (sempre 0, a menos que se refira a um campo de bits).
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+ Essa estrutura faz parte da União na estrutura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido como `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (um valor da enumeração [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

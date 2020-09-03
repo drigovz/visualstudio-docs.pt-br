@@ -1,5 +1,5 @@
 ---
-title: Icon Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento Icon (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,18 +14,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710523"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Elemento de ícone (modelos do Visual Studio)
-Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como ícone, que aparece no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item,** para o modelo.
+# <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelos do Visual Studio)
+Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** , para o modelo.
 
- \<VSTemplate \<> TemplateData> \<Ícone>
+ \<VSTemplate> \<TemplateData>
+ \<Icon>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 <Icon>
@@ -44,8 +45,8 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como íc
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|`Package`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|
-|`ID`|Atributo opcional, para cenários avançados do usuário.<br /><br /> Especifica a ID de recurso do Visual Studio.|
+|`Package`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|
+|`ID`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
  Nenhum.
@@ -54,15 +55,15 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como íc
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.
 
- O texto fornece o nome do caminho e do arquivo do ícone de modelo que aparecerá na caixa de diálogo **Projeto** Novo.
+ O texto fornece o caminho e o nome do arquivo do ícone de modelo que aparecerá na caixa de diálogo **novo projeto** .
 
 ## <a name="remarks"></a>Comentários
- `Icon`é um elemento `TemplateData`filho necessário de .
+ `Icon` é um elemento filho obrigatório de `TemplateData` .
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra os metadados de um modelo de projeto para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo.

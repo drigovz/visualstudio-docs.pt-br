@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657456"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Como configurar a análise de código para um aplicativo Web do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] você pode selecionar em uma lista de conjuntos de *regras* de análise de código para aplicar a [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo Web. O conjunto de regras padrão é as regras recomendadas do Microsoft Mininimum. Você pode selecionar outro conjunto de regras para aplicar ao site.
+No [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] você pode selecionar em uma lista de conjuntos de *regras* de análise de código para aplicar ao [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo Web. O conjunto de regras padrão é as regras recomendadas do Microsoft Mininimum. Você pode selecionar outro conjunto de regras para aplicar ao site.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Para configurar um conjunto de regras para um projeto de estrutura de página ASP.NET
 
@@ -43,6 +43,6 @@ Em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
 
     - Selecione o conjunto de regras que você deseja usar.
 
-    - Selecione **\<Browse >** para especificar um conjunto de regras personalizadas existente que não esteja na lista.
+    - Selecione **\<Browse>** para especificar um conjunto de regras personalizadas existente que não esteja na lista.
 
     - Defina um conjunto de regras personalizadas. Para obter mais informações, consulte [criando conjuntos de regras personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).

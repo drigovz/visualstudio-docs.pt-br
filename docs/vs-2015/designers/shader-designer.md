@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36737b767757215010e9716663d5807091d3503b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664155"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
@@ -32,22 +32,22 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 |Nome do formato|Extensão do arquivo|Operações com suporte (Exibir, Editar, Exportar)|
 |-----------------|--------------------|-------------------------------------------------|
 |Idioma do Sombreador de Gráfico Direcionado|.dgsl|Exibir, Editar|
-|Sombreador HLSL (código-fonte)|.hlsl|Exportar|
-|Sombreador HLSL (código de bytes)|.cso|Exportar|
-|Cabeçalho C++ (matriz de código de bytes HLSL)|.h|Exportar|
+|Sombreador HLSL (código-fonte)|.hlsl|Exportação|
+|Sombreador HLSL (código de bytes)|.cso|Exportação|
+|Cabeçalho C++ (matriz de código de bytes HLSL)|.h|Exportação|
 
-## <a name="getting-started"></a>Guia de Introdução
+## <a name="getting-started"></a>Introdução
  Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e fornece informações básicas para você começar.
 
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Para adicionar um sombreador DGSL ao seu projeto
 
 1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar o sombreador e selecione **Adicionar**, **Novo Item**.
 
-2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)** .
+2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)**.
 
 3. Especifique o **Nome** do arquivo de modelo e a **Localização** em que deseja que ele seja criado.
 
-4. Escolha o botão **Adicionar**.
+4. Clique no botão **Adicionar**.
 
 ### <a name="the-default-shader"></a>O sombreador padrão
  Cada vez que você criar um sombreador DGSL, ele começará como um sombreador mínimo com apenas um nó de **Cor de Ponto** conectado ao nó **Cor Final**. Embora esse sombreador seja completo e funcional, ele não faz muita coisa. Portanto, a primeira etapa na criação de um sombreador de trabalho geralmente é excluir o nó **Cor de Ponto** ou desconectá-lo do nó **Cor Final** para liberar espaço para outros nós.
@@ -62,7 +62,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 
  Aqui está a barra de ferramentas **Modo de Designer de Sombreador**:
 
- ![A barra de ferramentas modal do designer do sombreador.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-modal-Toolbar")
+ ![A barra de ferramentas modal do Designer de Sombreador.](../designers/media/digit-dsd-modal-toolbar.png "Digit-DSD-modal-Toolbar")
 
  Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Sombreador**, que são listados na ordem em que aparecem, da esquerda para a direita:
 
@@ -71,7 +71,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 |**Selecionar**|Habilita a interação com nós e bordas no grafo. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|
 |**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, você pode manter pressionada a tecla Ctrl para ativar o modo **Panorâmico** temporariamente.|
 |**Zoom**|Habilita a exibição de mais ou menos detalhes do grafo de sombreador em relação ao quadro de janela. No modo **Zoom**, selecione um ponto na superfície de design e mova-o para a direita ou para baixo para ampliar ou então para a esquerda ou para cima para reduzir.<br /><br /> No modo **Selecionar**, você pode ampliar ou reduzir usando a roda do mouse enquanto mantém a tecla Ctrl pressionada.|
-|**Aplicar Zoom para Ajustar**|Exibe o grafo de sombreador completo no quadro de janela.|
+|**Ajustar zoom**|Exibe o grafo de sombreador completo no quadro de janela.|
 |**Modo de Renderização em Tempo Real**|Quando a renderização em tempo real for habilitada, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] redesenhará a superfície de design, mesmo quando nenhuma ação de usuário for executada. Esse modo é útil quando você trabalha com sombreadores que se alteram ao longo do tempo.|
 |**Visualizar com esfera**|Quando habilitado, um modelo de uma esfera é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
 |**Visualizar com cubo**|Quando habilitado, um modelo de um cubo é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
@@ -91,7 +91,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Para executar operações básicas no modo Selecionar
 
-- Veja como:
+- Este é o procedimento:
 
   - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
 
@@ -115,7 +115,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 
 - Na barra de ferramentas **Modos do Designer de Sombreador**, escolha a forma que você deseja.
 
-#### <a name="WWS_MaterialParameters"></a> Parâmetros de materiais e texturas
+#### <a name="textures-and-material-parameters"></a><a name="WWS_MaterialParameters"></a> Parâmetros de materiais e texturas
  Muitos sombreadores contam com texturas e propriedades de material para produzir uma aparência exclusiva para cada tipo de objeto em seu aplicativo. Para ver a aparência que seu sombreador terá em seu aplicativo, você pode definir as texturas e propriedades de material que são usadas para renderizar a visualização para corresponder às texturas e parâmetros que você deseja usar em seu aplicativo.
 
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Para associar uma textura diferente a um registro de textura ou modificar outros parâmetros de material
@@ -128,12 +128,12 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 
 |Parâmetro|Propriedades|
 |---------------|----------------|
-|**Textura 1** – **Textura 8**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
-|**Material Ambiente**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a cor difusa do pixel atual é devido à luz indireta – ou seja, luz ambiente.|
+|**Textura 1** – **Textura 8**|**Acesso**:                             **público** para permitir que a propriedade seja definida no editor de modelo; caso contrário, **privado**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
+|**Material Ambiente**|**Acesso**:                             **público** para permitir que a propriedade seja definida no editor de modelo; caso contrário, **privado**.<br /><br /> **Valor**: a cor difusa do pixel atual é devido à luz indireta – ou seja, luz ambiente.|
 |**Material Difuso**|**Access**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual difunde a iluminação direta.|
-|**Material Emissivo**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a contribuição de cor do pixel atual é devido à iluminação própria.|
-|**Material Especular**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual reflete a iluminação direta.|
-|**Material Energia Especular**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: o expoente que define a intensidade dos realces especulares no pixel atual.|
+|**Material Emissivo**|**Acesso**:                              **público** para permitir que a propriedade seja definida no editor de modelo; caso contrário, **privado**.<br /><br /> **Valor**: a contribuição de cor do pixel atual é devido à iluminação própria.|
+|**Material Especular**|**Acesso**:                              **público** para permitir que a propriedade seja definida no editor de modelo; caso contrário, **privado**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual reflete a iluminação direta.|
+|**Material Energia Especular**|**Acesso**:                             **público** para permitir que a propriedade seja definida no editor de modelo; caso contrário, **privado**.<br /><br /> **Valor**: o expoente que define a intensidade dos realces especulares no pixel atual.|
 
 #### <a name="time-based-effects"></a>Efeitos de tempo
  Alguns sombreadores têm um componente baseado em tempo que anima o efeito. Para mostrar qual a aparência do efeito em ação, a visualização tem que ser atualizada várias vezes por segundo. Por padrão, a visualização só é atualizada quando o sombreador é alterado; para alterar esse comportamento para que você possa exibir efeitos baseados em tempo, você precisa habilitar a renderização em tempo real.
@@ -156,13 +156,13 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 
  Para obter mais informações sobre como exportar sombreadores, consulte [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
 
-## <a name="keyboard-shortcuts"></a>Atalhos de teclado
+## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 
-|Comando|Atalhos de teclado|
+|Comando|Atalhos do teclado|
 |-------------|------------------------|
 |Mudar para o modo **Selecionar**|Ctrl+G, Gtrl+Q<br /><br /> S|
 |Mudar para o modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
-|Mudar para o modo **Panorâmico**|Ctrl+G, Ctrl+P<br /><br /> M|
+|Mudar para o modo **Panorâmico**|Ctrl+G, Ctrl+P<br /><br /> K|
 |Selecionar tudo|Ctrl+A|
 |Excluir a seleção atual|Excluir|
 |Cancelar a seleção atual|Escape|
@@ -186,5 +186,5 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 |Título|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
-|[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com texturas e imagens.|
-|[Editor de modelo](../designers/model-editor.md)|Descreve como usar o Editor de Modelos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com modelos 3D.|
+|[Editor de imagem](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com texturas e imagens.|
+|[Editor de modelos](../designers/model-editor.md)|Descreve como usar o Editor de Modelos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com modelos 3D.|

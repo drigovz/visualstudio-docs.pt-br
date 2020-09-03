@@ -1,5 +1,5 @@
 ---
-title: Cadastrando o Programa | Microsoft Docs
+title: Registrando o programa | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713166"
 ---
-# <a name="register-the-program"></a>Registre o programa
-Depois que o mecanismo de depuração adquiriu uma porta, representada por uma interface [IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) o próximo passo para permitir que o programa seja depurado é registrá-lo na porta. Uma vez registrado, o programa está disponível para depuração por um dos seguintes meios:
+# <a name="register-the-program"></a>Registrar o programa
+Depois que o mecanismo de depuração tiver adquirido uma porta, representada por uma interface [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , a próxima etapa na habilitação do programa a ser depurado é registrá-la na porta. Uma vez registrado, o programa está disponível para depuração por um dos seguintes meios:
 
-- O processo de anexação, que permite que o depurador obtenha controle completo de depuração de um aplicativo em execução.
+- O processo de anexar, que permite ao depurador obter controle de depuração completo de um aplicativo em execução.
 
-- Depuração just-in-time (JIT), que permite a depuração após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura em tempo de execução pega uma falha, o depurador é notificado antes que o sistema operacional ou o ambiente em tempo de execução libere a memória e os recursos do programa de falha.
+- Depuração JIT (just-in-time), que permite a depuração posterior ao fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes que o sistema operacional ou o ambiente de tempo de execução libere a memória e os recursos do programa de falha.
 
 ## <a name="registering-procedure"></a>Procedimento de registro
 
 ### <a name="to-register-your-program"></a>Para registrar seu programa
 
-1. Ligue para o método [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implementado pela porta.
+1. Chame o método [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implementado pela porta.
 
-     `IDebugPortNotify2::AddProgramNode`requer um ponteiro para uma interface [IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
+     `IDebugPortNotify2::AddProgramNode` requer um ponteiro para uma interface [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
-     Normalmente, quando o sistema operacional ou o ambiente em tempo de execução carrega um programa, ele cria o nó do programa. Se o mecanismo de depuração (DE) for solicitado a carregar o programa, o DE criará e registrará o nó do programa.
+     Normalmente, quando o sistema operacional ou o ambiente de tempo de execução carrega um programa, ele cria o nó do programa. Se o mecanismo de depuração (DE) for solicitado a carregar o programa, o DE criará e registrará o nó do programa.
 
      O exemplo a seguir mostra o mecanismo de depuração iniciando o programa e registrando-o com uma porta.
 
     > [!NOTE]
-    > Esta amostra de código não é a única maneira de iniciar e retomar um processo; este código é principalmente um exemplo de registro de um programa com uma porta.
+    > Este exemplo de código não é a única maneira de iniciar e retomar um processo; Esse código é principalmente um exemplo de registro de um programa com uma porta.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -105,5 +105,5 @@ Depois que o mecanismo de depuração adquiriu uma porta, representada por uma i
     ```
 
 ## <a name="see-also"></a>Confira também
-- [Obtendo um porto](../../extensibility/debugger/getting-a-port.md)
-- [Permitindo que um programa seja depurado](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Obtendo uma porta](../../extensibility/debugger/getting-a-port.md)
+- [Habilitando um programa a ser depurado](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

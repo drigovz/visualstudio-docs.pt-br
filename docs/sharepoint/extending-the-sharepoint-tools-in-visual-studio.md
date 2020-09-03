@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016038"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Estenda as ferramentas do SharePoint no Visual Studio
@@ -47,7 +48,7 @@ ms.locfileid: "86016038"
 
  Para instalar o SDK do Visual Studio, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md). Para obter mais informações sobre extensões do Visual Studio, consulte [iniciando o desenvolvimento de extensões do Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do modelo de programação das extensões de ferramentas do SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [Estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

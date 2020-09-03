@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b1f826c4dfcc8f000b37144b28dfcb8cf503a87
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462049"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
@@ -51,5 +51,5 @@ fora Retorna `TRUE` se a classe ou o método é lacrado; caso contrário, retorn
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

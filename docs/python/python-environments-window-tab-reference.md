@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545490"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
@@ -75,7 +75,7 @@ Se estiver disponível, a guia **Configurar** conterá detalhes, conforme descri
 ![Guia Configurar de Ambientes do Python](media/environments/environments-configure-tab-2019.png)
 ::: moniker-end
 
-| Campo | Descrição |
+| Campo | DESCRIÇÃO |
 | --- | --- |
 | **Descrição** | O nome a ser fornecido para o ambiente. |
 | **Caminho do prefixo** | A localização da pasta base do interpretador. Ao preencher esse valor e clicar em **Detecção Automática**, o Visual Studio tenta preencher os outros campos para você. |
@@ -165,7 +165,7 @@ As bibliotecas para as quais os dados não foram compilados serão marcadas com 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
