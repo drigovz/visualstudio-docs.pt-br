@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579526"
 ---
 # <a name="verifyfilehash-task"></a>Tarefa VerifyFileHash
 
-Verifica se um arquivo corresponde ao hash do arquivo esperado. Se o hash não corresponder, a tarefa falha.
+Verifica se um arquivo corresponde ao hash do arquivo esperado. Se o hash não corresponder, a tarefa falhará.
 
 Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) a ser usada para as versões do MSBuild inferiores a 16.0.
 
@@ -34,10 +34,10 @@ Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|`File`|Parâmetro `String` obrigatório.<br /><br />O arquivo a ser hashed e validado.|
+|`File`|Parâmetro `String` obrigatório.<br /><br />O arquivo com hash e validação.|
 |`Hash`|Parâmetro `String` obrigatório.<br /><br />O hash esperado do arquivo.|
 |`Algorithm`|Parâmetro `String` opcional.<br /><br />O algoritmo. Valores permitidos: `SHA256`, `SHA384`, `SHA512`. Padrão = `SHA256`.|
-|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Usa `hex` como padrão. Valores permitidos = `hex`, `base64`.|
+|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. O padrão é `hex`. Valores permitidos = `hex`, `base64`.|
 
 ## <a name="example"></a>Exemplo
 
@@ -61,7 +61,7 @@ O exemplo a seguir usa a tarefa `VerifyFileHash` para verificar sua própria som
 </Project>
 ```
 
-No MSBuild 16.5 e posterior, se você não quiser que a compilação falhe quando o hash não corresponder, como se você estiver usando a comparação de hash como condição para o fluxo de controle, você pode rebaixar o aviso para uma mensagem usando o seguinte código:
+No MSBuild 16,5 e posterior, se você não quiser que a compilação falhe quando o hash não corresponder, como se você estiver usando a comparação de hash como uma condição para o fluxo de controle, poderá fazer o downgrade do aviso para uma mensagem usando o seguinte código:
 
 ```xml
   <PropertyGroup>

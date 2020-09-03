@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 78c7f24d64ffca667706c3b2fcebeffad16a9d85
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714263"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
@@ -55,7 +55,7 @@ public enum enum_MODULE_FLAGS { 
  Não especifica nenhum módulo.
 
  `MODULE_FLAG_SYSTEM`\
- Especifica um módulo de sistema.
+ Especifica um módulo do sistema.
 
  `MODULE_FLAG_SYMBOLS`\
  Especifica um módulo de símbolo.
@@ -64,22 +64,22 @@ public enum enum_MODULE_FLAGS { 
  Especifica um módulo de 64 bits.
 
  `MODULE_FLAG_OPTIMIZED`\
- Especifica que o módulo foi otimizado. Este estado é refletido na janela **Módulos.**
+ Especifica que o módulo foi otimizado. Esse estado é refletido na janela **módulos** .
 
  `MODULE_FLAG_UNOPTIMIZED`\
- Especifica que o módulo não foi otimizado. Este estado é refletido na janela **Módulos.** Esse é o valor padrão.
+ Especifica que o módulo não foi otimizado. Esse estado é refletido na janela **módulos** . Esse é o valor padrão.
 
 ## <a name="remarks"></a>Comentários
- Usado para `m_dwModuleFlags` o membro da estrutura [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Usado para o `m_dwModuleFlags` membro da estrutura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
- Essas bandeiras podem ser combinadas com um pouco `OR`.
+ Esses sinalizadores podem ser combinados com uma operadora de bits `OR` .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

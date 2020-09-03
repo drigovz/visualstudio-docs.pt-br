@@ -23,10 +23,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418919"
 ---
 # <a name="remove-visual-studio"></a>Remover o Visual Studio
@@ -40,7 +40,7 @@ Se você tiver um erro catastrófico e não puder reparar ou desinstalar o Visua
 
 Você pode usar qualquer uma das seguintes opções de linha de comando com a `InstallCleanup.exe` ferramenta:
 
-| Alternar | Comportamento |
+| Comutador | Comportamento |
 | ------ | -------- |
 | `-i`   | Essa opção será o padrão se nenhuma outra opção for passada. Ele remove apenas o diretório de instalação principal e as informações do produto. Use essa opção se você pretende reinstalar a mesma versão do Visual Studio depois de executar a `InstallCleanup.exe` ferramenta. |
 | `-f`   | Essa opção remove o diretório de instalação principal, as informações do produto e a maioria dos outros recursos instalados fora do diretório de instalação, que também podem ser compartilhados com outras instalações do Visual Studio ou outros produtos. Use esta opção se você pretende remover o Visual Studio sem reinstalá-lo mais tarde. |
@@ -62,7 +62,7 @@ Veja como executar a `InstallCleanup.exe` ferramenta:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

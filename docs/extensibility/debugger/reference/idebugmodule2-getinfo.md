@@ -1,5 +1,5 @@
 ---
-title: IDebugModule2::GetInfo | Microsoft Docs
+title: 'IDebugModule2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726956"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
@@ -42,18 +42,18 @@ int GetInfo( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwFields`\
-[em] Uma combinação de [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) bandeiras da enumeração `pInfo` MODULE_INFO_FIELDS que especificam quais campos devem ser preenchidos.
+no Uma combinação de sinalizadores da enumeração [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) que especifica quais campos do `pInfo` devem ser preenchidos.
 
 `pInfo`\
-[dentro, fora] Uma [estrutura MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) que é preenchida com uma descrição do módulo.
+[entrada, saída] Uma estrutura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) que é preenchida com uma descrição do módulo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A estrutura [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contém o nome do módulo exibido na janela **Módulos.**
+ A estrutura de [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) contém o nome do módulo que é exibido na janela **módulos** .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

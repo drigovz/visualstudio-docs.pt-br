@@ -1,6 +1,6 @@
-- name: IDE do Visual Studio
+- name: Visual Studio IDE
   items:
-    - name: IDE do Visual Studio
+    - name: Visual Studio IDE
       href: visual-studio-ide.md
     - name: Otimizar o tempo de inicialização do Visual Studio
       href: optimize-visual-studio-startup-time.md
@@ -12,9 +12,9 @@
       items:
         - name: Introdução ao desenvolvimento com o Visual Studio
           href: get-started-developing-with-visual-studio.md
-        - name: 'Introdução ao Visual C# e ao Visual Basic'
+        - name: Introdução ao Visual C# e ao Visual Basic
           items:
-            - name: 'Introdução ao Visual C# e ao Visual Basic'
+            - name: Introdução ao Visual C# e ao Visual Basic
               href: getting-started-with-visual-csharp-and-visual-basic.md
             - name: Criar um aplicativo simples
               href: walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md
@@ -150,9 +150,9 @@
               href: how-to-create-starter-kits.md
             - name: Localizar e organizar modelos
               href: how-to-locate-and-organize-project-and-item-templates.md
-            - name: Personalizando modelos
+            - name: Personalização de modelos
               items:
-                - name: Personalizando modelos
+                - name: Personalização de modelos
                   href: customizing-project-and-item-templates.md
                 - name: Atualizar modelos existentes
                   href: how-to-update-existing-templates.md
@@ -166,9 +166,9 @@
                   href: visual-studio-template-reference.md
                 - name: Parâmetros de modelo
                   href: template-parameters.md
-    - name: Escrevendo Código
+    - name: Escrevendo código
       items:
-        - name: Escrevendo Código
+        - name: Escrevendo código
           href: writing-code-in-the-code-and-text-editor.md
         - name: Localizando e substituindo texto
           items:
@@ -180,7 +180,7 @@
               href: find-command-box.md
             - name: Localizar em Arquivos
               href: find-in-files.md
-            - name: Substituir em Arquivos
+            - name: Substituir nos Arquivos
               href: replace-in-files.md
         - name: Codificações e quebras de linha
           href: encodings-and-line-breaks.md
@@ -212,7 +212,7 @@
                   href: visual-basic-specific-intellisense.md
                 - name: Listas de conclusão filtradas em Visual Basic
                   href: filtered-completion-lists-in-visual-basic.md
-            - name: 'Visual C# IntelliSense'
+            - name: Visual C# IntelliSense
               href: visual-csharp-intellisense.md
             - name: Suporte de primeiro teste com o recurso gerar do uso
               href: walkthrough-test-first-support-with-the-generate-from-usage-feature.md
@@ -248,7 +248,7 @@
                       href: signature-javascript.md
                     - name: \<summary>
                       href: summary-javascript.md
-                    - name: \<valor>
+                    - name: \<value>
                       href: value-javascript.md
                     - name: \<var>
                       href: var-javascript.md
@@ -280,13 +280,13 @@
               href: walkthrough-creating-a-code-snippet.md
             - name: Distribuir snippets de código
               href: how-to-distribute-code-snippets.md
-            - name: 'Snippets de código do Visual C#'
+            - name: Snippets de código do Visual C#
               href: visual-csharp-code-snippets.md
             - name: Snippets de código do Visual C++
               href: visual-cpp-code-snippets.md
             - name: Funções de snippet de código
               href: code-snippet-functions.md
-            - name: 'Restaurar snippets de refatoração C#'
+            - name: Restaurar snippets de refatoração C#
               href: how-to-restore-csharp-refactoring-snippets.md
             - name: Usar snippets de código Surround-with
               href: how-to-use-surround-with-code-snippets.md
@@ -390,29 +390,29 @@
               href: find-code-changes-and-other-history-with-codelens.md
             - name: Comando CodeIndex
               href: codeindex-command.md
-        - name: 'Usando o ambiente de desenvolvimento do Visual Studio para C#'
+        - name: Usando o ambiente de desenvolvimento do Visual Studio para C#
           items:
-            - name: 'Usando o ambiente de desenvolvimento do Visual Studio para C#'
+            - name: Usando o ambiente de desenvolvimento do Visual Studio para C#
               href: ../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md
-            - name: 'Adicionar um arquivo de configuração de aplicativo no projeto C#'
+            - name: Adicionar um arquivo de configuração de aplicativo no projeto C#
               href: ../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md
             - name: Metadados como origem
               href: ../csharp-ide/metadata-as-source.md
-            - name: 'Refatoração (C#)'
+            - name: Refatoração (C#)
               items:
-                - name: 'Refatoração (C#)'
+                - name: Refatoração (C#)
                   href: ../csharp-ide/refactoring-csharp.md
-                - name: 'Refatoração Extrair Método (C#)'
+                - name: Refatoração Extrair Método (C#)
                   href: ../csharp-ide/extract-method-refactoring-csharp.md
-                - name: 'Refatoração Renomear (C#)'
+                - name: Refatoração Renomear (C#)
                   href: ../csharp-ide/rename-refactoring-csharp.md
-                - name: 'Refatoração Encapsular Campo (C#)'
+                - name: Refatoração Encapsular Campo (C#)
                   href: ../csharp-ide/encapsulate-field-refactoring-csharp.md
-                - name: 'Refatoração Extrair Interface (C#)'
+                - name: Refatoração Extrair Interface (C#)
                   href: ../csharp-ide/extract-interface-refactoring-csharp.md
-                - name: 'Refatoração Remover Parâmetros (C#)'
+                - name: Refatoração Remover Parâmetros (C#)
                   href: ../csharp-ide/remove-parameters-refactoring-csharp.md
-                - name: 'Refatoração Reordenar Parâmetros (C#)'
+                - name: Refatoração Reordenar Parâmetros (C#)
                   href: ../csharp-ide/reorder-parameters-refactoring-csharp.md
     - name: Depurando no Visual Studio
       href: ../debugger/debugging-in-visual-studio.md
@@ -470,7 +470,7 @@
               href: how-to-configure-projects-to-target-multiple-platforms.md
         - name: Especificar eventos de build (Visual Basic)
           href: how-to-specify-build-events-visual-basic.md
-        - name: 'Especificar eventos de build (C#)'
+        - name: Especificar eventos de build (C#)
           href: how-to-specify-build-events-csharp.md
         - name: Configurando avisos no Visual Basic
           href: configuring-warnings-in-visual-basic.md
@@ -754,7 +754,7 @@
                   items:
                     - name: 'Página de Build, Designer de Projeto (C#)'
                       href: reference/build-page-project-designer-csharp.md
-                    - name: 'Caixa de diálogo Configurações de Build Avançadas (C#)'
+                    - name: Caixa de diálogo Configurações de Build Avançadas (C#)
                       href: reference/advanced-build-settings-dialog-box-csharp.md
                 - name: 'Análise de Código, Designer de Projeto'
                   href: reference/code-analysis-project-designer.md
@@ -768,7 +768,7 @@
                       href: reference/build-events-dialog-box-visual-basic.md
                 - name: 'Página de Depuração, Designer de Projeto'
                   href: reference/debug-page-project-designer.md
-                - name: 'Página Minhas Extensões, Designer de Projeto'
+                - name: 'Página Minhas extensões, Designer de projeto'
                   href: reference/my-extensions-page-project-designer-visual-basic.md
                 - name: 'Página de Publicação, Designer de Projeto'
                   items:
@@ -826,7 +826,7 @@
               href: reference/devenv-command-line-switches.md
             - name: /?
               href: reference/q-devenv-exe.md
-            - name: /Build
+            - name: / Build
               href: reference/build-devenv-exe.md
             - name: /Clean
               href: reference/clean-devenv-exe.md
@@ -956,7 +956,7 @@
           href: reference/visual-studio-for-applications-reference.md
         - name: MSBuild
           href: ../msbuild/msbuild.md
-        - name: Recursos para solucionar problemas de erros IDE
+        - name: Recursos para solucionar problemas de erros do IDE
           href: reference/resources-for-troubleshooting-integrated-development-environment-errors.md
         - name: Acessibilidade para pessoas com deficiências
           items:

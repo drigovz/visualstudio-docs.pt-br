@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905158"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
@@ -30,7 +30,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 ## <a name="common-preparation"></a>Preparação comum
  É necessário um computador com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o e o plug-in de controle do código-fonte de destino instalado. Uma segunda máquina configurada de forma semelhante pode ser usada para alguns dos testes de controle do código-fonte abertos.
 
-## <a name="definition-of-terms"></a>Definição de termos
+## <a name="definition-of-terms"></a>Definições de termos
  Para fins deste guia de teste, use as seguintes definições de termo:
 
  Projeto de cliente qualquer tipo de projeto disponível no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que dê suporte à integração de controle do código-fonte (por exemplo,, [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ).
@@ -59,7 +59,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - Caso 1C: Adicionar solução do controle do código-fonte
 
-- [Área de teste 2: obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Área de teste 2: Obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Área de teste 3: fazer check-out/desfazer checkout](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
@@ -75,7 +75,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - O caso 3E: desfazer check-out
 
-- [Área de teste 4: fazer check-in](../../extensibility/internals/test-area-4-check-in.md)
+- [Área de teste 4: Fazer check-in](../../extensibility/internals/test-area-4-check-in.md)
 
   - Caso 4a: itens modificados
 
@@ -83,7 +83,7 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - 4C de caso: Adicionando projetos
 
-- [Área de teste 5: alterar o controle do código-fonte](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Área de teste 5: Alterar controle do código-fonte](../../extensibility/internals/test-area-5-change-source-control.md)
 
   - Caso 5a: associar
 
@@ -91,11 +91,11 @@ Esta seção fornece diretrizes para testar seu plug-in de controle do código-f
 
   - 5C de caso: reassociar
 
-- [Área de teste 6: excluir](../../extensibility/internals/test-area-6-delete.md)
+- [Área de teste 6: Excluir](../../extensibility/internals/test-area-6-delete.md)
 
-- [Testar área 7: compartilhar](../../extensibility/internals/test-area-7-share.md)
+- [Área de teste 7: Compartilhar](../../extensibility/internals/test-area-7-share.md)
 
-- [Área de teste 8: alternância de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Área de teste 8: Alternância de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
   - 8a de caso: alteração automática
 

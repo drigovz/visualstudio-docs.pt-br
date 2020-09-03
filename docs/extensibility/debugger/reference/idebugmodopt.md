@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e142ed1229f59cfc22ff33cba48e9e35eb4e4406
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726986"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 Representa um modificador opcional de depuração.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugModOpt : IUnknown
 ```
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Obtido a partir de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa uma classe ou método.
+ Obtido de um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa uma classe ou um método.
 
 ## <a name="methods"></a>Métodos
- Esta interface implementa o seguinte método:
+ Essa interface implementa o seguinte método:
 
 |Método|Descrição|
 |------------|-----------------|
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|Recupera uma lista de modificadores opcionais.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

@@ -18,10 +18,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801796"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: criar seu primeiro aplicativo ASP.NET Core usando o Entity Framework com o Visual Studio 2019
@@ -58,7 +58,7 @@ O Visual Studio pode ser usado para muitos tipos diferentes de desenvolvimento, 
 
 ![Escolher cargas de trabalho no Visual Studio 2019](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Instalar o
+## <a name="install"></a>Instalar
 
 Clique em **Instalar** e permitir que o instalador baixe e instale o Visual Studio.
 
@@ -98,6 +98,6 @@ No próximo vídeo, você aprenderá mais sobre o seu primeiro projeto do ASP.NE
 
 [Tutorial: criando seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tutorial: introdução ao C# e ASP.NET Core](tutorial-aspnet-core.md) Um tutorial mais detalhado sem uma explicação em vídeo

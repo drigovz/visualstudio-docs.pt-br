@@ -22,20 +22,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666858"
 ---
-# <a name="miscellaneous-files"></a>Arquivos diversos
+# <a name="miscellaneous-files"></a>arquivos diversos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para trabalhar de forma independente nos arquivos de um projeto ou de uma solução. Enquanto você tiver uma solução aberta, pode abrir e modificar arquivos sem adicioná-los a uma solução ou um projeto. Os arquivos com os quais você deseja trabalhar independentemente dos contêineres são chamados de arquivos diversos. Os arquivos diversos são externos às soluções e projetos, não estão incluídos em builds e não podem ser incluídos com uma solução sob controle do código-fonte.
 
  Abrir arquivos independentemente de um contêiner é útil para uma variedade de razões. Você pode ter um arquivo que deseja exibir enquanto desenvolve uma solução baseada em projeto, mas que não é parte integrante do desenvolvimento da solução. Exemplos comuns incluem instruções ou anotações de desenvolvimento, esquema de banco de dados e fragmentos de código. Além disso, você talvez queira criar um arquivo autônomo.
 
- ![Projetos de Soluções](../../ide/reference/media/projects-solutions-misc.gif "|::ref1::|")
+ ![Projetos de Soluções](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")
 
  O Gerenciador de Soluções poderá exibir uma pasta Arquivos Diversos para os arquivos se as opções para a pasta estiverem habilitadas. As opções podem ser definidas em [Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md). Depois de fechar um arquivo diverso, ele não é associado a nenhuma solução ou projeto específico, a menos que uma opção seja habilitada para isso também.
 
@@ -50,5 +50,5 @@ Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.
 ## <a name="folder-display-options"></a>Opções de exibição de pasta
  Você pode definir opções de exibição para a Pasta de Diversos para que ela seja exibida mesmo que você não tenha aberto nenhum Arquivo Diverso. O arquivo de solução não gerencia permanentemente uma lista de arquivos diversos. Ele usa um recurso opcional que permite que ele se lembre uma lista de arquivos MRU (recentemente usados) por usuário.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  Documentos de [soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md) [, caixa de diálogo ambiente, opções](../../ide/reference/documents-environment-options-dialog-box.md)

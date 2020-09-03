@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477093"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
@@ -43,7 +43,7 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 
 6. Salve e feche o arquivo .vstemplate.
 
-7. Selecione os arquivos incluídos em seu modelo, clique com o botão direito do mouse, selecione **Enviar Para** e clique em **Pasta Compactada (Zipada)** . Os arquivos selecionados são compactados em um arquivo .zip.
+7. Selecione os arquivos incluídos em seu modelo, clique com o botão direito do mouse, selecione **Enviar Para** e clique em **Pasta Compactada (Zipada)**. Os arquivos selecionados são compactados em um arquivo .zip.
 
 8. Insira o novo arquivo .zip no mesmo diretório do antigo arquivo .zip.
 

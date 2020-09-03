@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568120"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
-Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar opções diversas do XML, escolha O**Editor de** > **texto de opções** >  **de ferramentas** > **XML**e, em seguida, escolha **Diversos**.
+Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar opções de XML diversas, escolha **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **XML**e, em seguida, escolha **diversos**.
 
 ## <a name="auto-insert"></a>Inserir automaticamente
 
@@ -27,7 +27,7 @@ O editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma m
 
 **Citações de atributo**
 
-Ao criar atributos XML, o `="` `"` editor insere os**^** caracteres e posiciona o caret ( ) dentro das aspas. Esta caixa de seleção fica marcada por padrão.
+Ao criar atributos XML, o editor insere os `="` caracteres e `"` e posiciona o circunflexo ( **^** ) dentro das aspas. Esta caixa de seleção fica marcada por padrão.
 
 **Declarações de namespace**
 

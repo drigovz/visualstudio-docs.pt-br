@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477057"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
@@ -36,7 +36,7 @@ Essa mensagem de erro é exibida quando você insere um nome de Monitor de Depur
   
  As seções a seguir listam algumas outras razões pelas quais você pode ter chegado a essa mensagem e o que você pode fazer para corrigir o problema.  
   
-## <a name="to-correct-this-error"></a>Para corrigir esse erro  
+## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
 - Verifique se o Monitor de Depuração Remota do Visual Studio está instalado e em execução no computador remoto. Para obter informações sobre o depurador remoto e como instalá-lo, consulte [depuração remota](../debugger/remote-debugging.md).  
   
@@ -61,11 +61,11 @@ Essa mensagem de erro é exibida quando você insere um nome de Monitor de Depur
   
 - Você pode interromper o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.  
   
-- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/allow \<nome de usuário >** : `msvsmon /allow <username@computer>`  
+- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/Allow \<username> ** :`msvsmon /allow <username@computer>`  
   
 - Você pode adicionar o usuário às permissões do depurador remoto (na janela do depurador remoto, **ferramentas/permissões**).  
   
-- Se você não puder usar os métodos nas etapas anteriores, poderá permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas/opts** . Quando você **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve usar essa opção somente se não tiver nenhuma opção ou se estiver em uma rede privada.  
+- Se você não puder usar os métodos nas etapas anteriores, poderá permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas/opts** . Quando você   **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve usar essa opção somente se não tiver nenhuma opção ou se estiver em uma rede privada.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>O firewall no computador remoto não permite conexões de entrada para o depurador remoto  
  O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o Firewall do Windows, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
@@ -82,7 +82,7 @@ Essa mensagem de erro é exibida quando você insere um nome de Monitor de Depur
 ## <a name="more-help"></a>Mais ajuda  
  Para obter mais ajuda do depurador remoto, incluindo opções de linha de comando, abra o seguinte em um navegador:  
   
- **res://C: \ Program %2 0 arquivos \ Microsoft %2 0 Visual %2 0 Studio% 2014.0 \ Common7 \ IDE \ Remote %2 0 depurador \ x64 \ msvsmon. exe/help. htm**  
+ **res://C: \Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Consulte Também  
- [Depuração Remota](../debugger/remote-debugging.md)
+ [Depuração remota](../debugger/remote-debugging.md)

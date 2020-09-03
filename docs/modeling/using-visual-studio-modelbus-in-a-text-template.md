@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535935"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Usando o Visual Studio ModelBus em um modelo de texto
@@ -257,7 +257,7 @@ Agora você tem uma DSL que pode ser acessada por modelos de texto por meio de M
 
 1. Crie uma nova DSL usando o modelo de solução de linguagem mínima. Nomeie o idioma MBConsumer e defina a extensão de nome de arquivo como ". consume".
 
-2. No projeto DSL, adicione uma referência ao assembly de DSL MBProvider. Clique com o botão direito do mouse `MBConsumer\Dsl\References` e clique em **Adicionar referência**. Na guia **procurar** , localize`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. No projeto DSL, adicione uma referência ao assembly de DSL MBProvider. Clique com o botão direito do mouse  `MBConsumer\Dsl\References` e clique em **Adicionar referência**. Na guia **procurar** , localize `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Isso permite que você crie código que usa a outra DSL. Se você quiser criar referências a várias DSLs, adicione-as também.
 
@@ -291,7 +291,7 @@ Agora você tem uma DSL que pode ser acessada por modelos de texto por meio de M
 
    3. Navegue até `MBProvider\Debugging\Sample.provide` e clique em **Adicionar**.
 
-3. Abra `Sample.consume`.
+3. Abra o `Sample.consume`.
 
 4. Clique em um exemplo de forma e, na janela Propriedades, clique em **[...]** na propriedade MBR. Na caixa de diálogo, clique em **procurar** e selecione `Sample.provide` . Na janela elementos, expanda a tarefa tipo e selecione um dos elementos.
 

@@ -1,5 +1,5 @@
 ---
-title: Fontes de eventos (Visual Studio SDK) | Microsoft Docs
+title: Origens de eventos (SDK do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738778"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Fontes de eventos (Visual Studio SDK)
-Existem duas fontes de eventos: o motor de depuração (DE) e o Session Debug Manager (SDM). Os eventos enviados de um DE têm um motor não-NULO, enquanto os eventos enviados do SDM têm um motor NULL.
+# <a name="event-sources-visual-studio-sdk"></a>Origens de eventos (SDK do Visual Studio)
+Há duas fontes de eventos: o mecanismo de depuração (DE) e o SDM (Gerenciador de depuração de sessão). Os eventos enviados de um DE têm um mecanismo não nulo, enquanto os eventos enviados do SDM têm um mecanismo nulo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como enviar o **IDebugProgramCreateEvent2** do DE para o SDM.
+O exemplo a seguir mostra como enviar o **IDebugProgramCreateEvent2** do de para o SDM.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();

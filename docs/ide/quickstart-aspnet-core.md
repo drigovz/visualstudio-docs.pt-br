@@ -15,10 +15,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579968"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
@@ -27,17 +27,17 @@ Nesta introdução de 5 a 10 minutos que mostra como usar o Visual Studio, você
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-### <a name="install-visual-studio"></a>Instalar Visual Studio
+### <a name="install-visual-studio"></a>Instalar o Visual Studio
 
 ::: moniker range="vs-2017"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Se você ainda não instalou o Visual Studio, vá para a página [de downloads](https://visualstudio.microsoft.com/downloads) do Visual Studio para instalá-lo gratuitamente.
+Se você ainda não instalou o Visual Studio, vá para a página de [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Para começar, você criará um projeto de aplicativo Web ASP.NET Core. O tipo d
 
 1. Abra o Visual Studio 2017.
 
-1. Na barra de menu superior, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus superior, escolha **arquivo** > **novo** > **projeto**.
 
 1. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo Web ASP.NET Core**. <br/><br/>Em seguida, nomeie o arquivo `HelloWorld` e escolha **OK**.
 
@@ -85,7 +85,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
 1. Abra o Visual Studio.
 
-1. Na janela inicial, escolha **Criar um novo projeto**.
+1. Na janela iniciar, escolha **criar um novo projeto**.
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -106,11 +106,11 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
 
-1. Na janela **Configurar seu novo projeto**, digite ou insira *OláMundo* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+1. Na janela **Configurar seu novo projeto**, digite ou insira *OláMundo* na caixa **Nome do projeto**. Em seguida, escolha **criar**.
 
    ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'OláMundo'](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. Na **janela Criar uma nova janela ASP.NET Do Aplicativo da Web,** verifique se **ASP.NET Core 3.0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web**, que inclui Razor Pages de exemplo. Em seguida, escolha **Criar**.
+1. Na janela **criar um novo aplicativo Web ASP.NET Core** , verifique se **ASP.NET Core 3,0** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web**, que inclui Razor Pages de exemplo. Em seguida, escolha **Criar**.
 
    ![A janela 'Criar um novo Aplicativo Web ASP.NET Core'](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
@@ -161,7 +161,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
    ![Exibir a página Sobre atualizada que inclui o texto alterado](../ide/media/csharp-aspnet-about-page-hello-world.png)
 
-1. Feche o navegador da web.
+1. Feche o navegador da Web.
 
 ### <a name="review-your-work"></a>Examinar seu trabalho
 
@@ -175,21 +175,21 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
 
 ::: moniker range="vs-2019"
 
-1. No **Explorador de soluções,** expanda a pasta **Páginas** e escolha **Index.cshtml**.
+1. No **Gerenciador de soluções**, expanda a pasta **páginas** e, em seguida, escolha **index. cshtml**.
 
-   ![Escolha o arquivo Index.cshtml do Solution Explorer](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
+   ![Escolha o arquivo index. cshtml no Gerenciador de Soluções](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 
-   Este arquivo corresponde a uma página chamada **Home** no aplicativo web, que é executada em um navegador da Web.
+   Esse arquivo corresponde a uma página chamada **Home** no aplicativo Web, que é executado em um navegador da Web.
 
    ![A página Sobre no aplicativo Web](../ide/media/vs-2019/csharp-aspnet-index-page.png)
 
-   No editor, você verá código HTML para o texto que aparece na **página inicial.**
+   No editor, você verá o código HTML para o texto que aparece na **Home** Page.
 
-   ![O código HTML no arquivo Index.cshtml para a página inicial no editor do Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
+   ![O código HTML no arquivo index. cshtml para a Home Page no editor do Visual Studio](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. Mude o texto "Bem-vindo" para ler "**Hello World!**".
+1. Altere o texto "bem-vindo" para ler "**Olá, mundo!**".
 
-   ![No editor do Visual Studio, altere o código HTML padrão que diz Bem-vindo para dizer Hello World em vez](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
+   ![No editor do Visual Studio, altere o código HTML padrão que diz bem-vindo para dizer Olá, Mundo em vez disso](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 
 1. Escolha **IIS Express** ou pressione **Ctrl**+**F5** para executar o aplicativo e abri-lo em um navegador da Web.
 
@@ -198,11 +198,11 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
    > [!NOTE]
    > Se você receber uma mensagem de erro informando **Não é possível conectar ao servidor Web 'IIS Express'** ou uma mensagem de erro que mencione um certificado SSL, feche o Visual Studio. Em seguida, abra o Visual Studio usando a opção **Executar como administrador** no menu de contexto acessado ao clicar com o botão direito do mouse. Em seguida, execute o aplicativo novamente.
 
-1. No navegador da Web, verifique se **a página inicial** inclui seu texto atualizado.
+1. No navegador da Web, verifique se a **Home** Page inclui o texto atualizado.
 
    ![Exibir a página inicial atualizada que inclui as alterações feitas](../ide/media/vs-2019/csharp-aspnet-index-page-hello-world.png)
 
-1. Feche o navegador da web.
+1. Feche o navegador da Web.
 
 ::: moniker-end
 

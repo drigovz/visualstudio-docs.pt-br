@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f2437d10078eb623e063b3292d96ef9bb4a9cf64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714269"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
-Esta estrutura representa um valor de retorno de um método ou função.
+Essa estrutura representa um valor de retorno de um método ou função.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,26 +47,26 @@ public struct METADATA_ADDRESS_RETVAL {
 
 ## <a name="members"></a>Membros
  `tokMethod`\
- O ID do método para o valor deste retorno é para.
+ A ID do método para o qual esse valor de retorno é.
 
  `dwCorType`\
- O tipo base de valor de retorno. Este é um `CorElementType` valor da enumeração definida no arquivo .NET Framework SDK corhdr.h.
+ O tipo base do valor de retorno. Esse é um valor da `CorElementType` Enumeração definida no arquivo .NET Framework SDK CorHdr. h.
 
  `dwSigSize`\
- O tamanho da assinatura do valor `rgSig`de retorno (como armazenado em ).
+ O tamanho da assinatura do valor de retorno (como armazenado em `rgSig` ).
 
  `rgSig`\
- Uma matriz de bytes formando a assinatura do valor de retorno.
+ Uma matriz de bytes que formam a assinatura do valor de retorno.
 
 ## <a name="remarks"></a>Comentários
- Essa estrutura faz parte da união na [estrutura DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido para `ADDRESS_KIND_RETVAL` (um valor da enumeração [ADDRESS_KIND).](../../../extensibility/debugger/reference/address-kind.md)
+ Essa estrutura faz parte da União na estrutura de [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) quando o `dwKind` campo da `DEBUG_ADDRESS_UNION` estrutura é definido como `ADDRESS_KIND_RETVAL` (um valor da enumeração [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

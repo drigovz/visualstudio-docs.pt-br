@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f232446ed699bd7cc034e4b6d6148b665830cf2d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535519"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
@@ -99,11 +99,11 @@ Este tópico descreve como configurar o firewall para habilitar a depuração re
   
 3. Na página **tipo de regra** , selecione **porta** e clique em **Avançar**.  
   
-4. Na página **protocolo e portas** , selecione o protocolo de porta (TCP ou UDP). Selecione **portas locais específicas** e insira um ou mais números de porta que você deseja habilitar para o protocolo. Separe os números com vírgulas. Em seguida, clique em **Próximo**.  
+4. Na página **protocolo e portas** , selecione o protocolo de porta (TCP ou UDP). Selecione **portas locais específicas** e insira um ou mais números de porta que você deseja habilitar para o protocolo. Separe os números com vírgulas. Clique em **Avançar**.  
   
 5. Na página **ação** , selecione **permitir a conexão** e clique em **Avançar**.  
   
-6. Na página **perfil** , selecione um ou mais tipos de rede a serem habilitados para a porta. O tipo selecionado deve incluir a rede à qual o computador remoto está conectado. Em seguida, clique em **Próximo**.  
+6. Na página **perfil** , selecione um ou mais tipos de rede a serem habilitados para a porta. O tipo selecionado deve incluir a rede à qual o computador remoto está conectado. Clique em **Avançar**.  
   
 7. Na página **nome** , digite um nome para a regra e clique em **concluir**.  
   

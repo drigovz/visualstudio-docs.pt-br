@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905522"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como: usar assistentes com modelos de projeto
@@ -242,7 +242,7 @@ Para que o modelo de projeto personalizado use seu assistente personalizado, voc
 
      Novamente, não se esqueça das aspas. Você deverá ver uma linha na saída como esta
 
-     **O token de chave pública é\<token>**
+     **O token de chave pública é \<token>**
 
      Anote esse valor.
 

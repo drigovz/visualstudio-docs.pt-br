@@ -1,5 +1,5 @@
 ---
-title: Entrando no modo break | Microsoft Docs
+title: Entrando no modo de interrupção | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738885"
 ---
-# <a name="enter-break-mode"></a>Insira o modo de quebra
-As informações a seguir descrevem o processo que ocorre quando um ponto de ruptura é encontrado depois de entrar em uma função, correr para a linha de código-fonte que tem o cursor nele ou correr para um ponto de ruptura.
+# <a name="enter-break-mode"></a>Entrar no modo de interrupção
+As informações a seguir descrevem o processo que ocorre quando um ponto de interrupção é encontrado após a depuração em uma função, em execução na linha de código-fonte que tem o cursor em si ou em execução em um ponto de interrupção.
 
-## <a name="break-mode-process"></a>Processo de modo de quebra
+## <a name="break-mode-process"></a>Processo de modo de interrupção
 
-1. O mecanismo de depuração (DE) envia [IDebugBreakpointEvent2,](../../extensibility/debugger/reference/idebugbreakpointevent2.md) [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)ou qualquer outro evento de parada para fazer com que o IDE entre no modo de quebra.
+1. O mecanismo DE depuração (DE) envia [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)ou qualquer outro evento de interrupção para fazer com que o IDE entre no modo de interrupção.
 
-2. O SDM obtém as informações da pilha de chamadas do segmento, da seguinte forma:
+2. O SDM Obtém as informações da pilha de chamadas do thread, da seguinte maneira:
 
     - [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
@@ -33,13 +33,13 @@ As informações a seguir descrevem o processo que ocorre quando um ponto de rup
 
     - [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)
 
-    - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) para obter as informações do código-fonte
+    - [IDebugStackFrame2:: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) para obter as informações do código-fonte
 
-    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) para obter o nome do arquivo
+    - [IDebugDocumentContext2:: GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) obter o nome do arquivo
 
-    - [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) para obter o intervalo de demonstrações
+    - [IDebugDocumentContext2:: GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) para obter o intervalo de instruções
 
-    - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) para obter informações de memória
+    - [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) para obter informações de memória
 
 ## <a name="see-also"></a>Confira também
-- [Chamando eventos de depurador](../../extensibility/debugger/calling-debugger-events.md)
+- [Chamando eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)

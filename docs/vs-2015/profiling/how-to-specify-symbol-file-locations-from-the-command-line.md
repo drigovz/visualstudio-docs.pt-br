@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 01fbb6cfd1717562af79c067ede0cad9753ad5dd
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557897"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como especificar locais de arquivo de símbolo a partir da linha de comando
@@ -38,7 +38,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   Você também pode usar ambos os métodos.  
   
 > [!NOTE]
-> Se o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, consulte [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda deve configurar a VSPerfReport para usar o local e o servidor, conforme descrito posteriormente neste tópico.  
+> Se o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, consulte [How to: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md). Você ainda deve configurar a VSPerfReport para usar o local e o servidor, conforme descrito posteriormente neste tópico.  
   
 ## <a name="specifying-windows-symbol-files"></a>Especificar arquivos de símbolo do Windows  
   
@@ -64,4 +64,4 @@ Para exibir informações de símbolo como nomes de função e números de linha
 
  A seguinte linha de comando da VSPerfReport adiciona o diretório C:\Projects\Symbols ao caminho de pesquisa usando a opção **/SymbolPath**.  
   
- **VSPerfReport**  *MyApp* **. exe/SymbolPath: C:\Projects\Symbols/Summary: ALL**
+ **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

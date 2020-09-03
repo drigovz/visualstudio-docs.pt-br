@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904970"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Walkthrough: criar um SDK usando C# ou Visual Basic
@@ -29,7 +29,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 ## <a name="prerequisites"></a>Pré-requisitos
  Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Para criar o componente de Windows Runtime SimpleMath
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Para criar o componente de Windows Runtime SimpleMath
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 
@@ -57,7 +57,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 9. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto **SimpleMath** e escolha **Compilar**.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Para criar o projeto de extensão SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Para criar o projeto de extensão SimpleMathVSIX
 
 1. No menu de atalho do nó da **solução ' SimpleMath '** , escolha **Adicionar**  >  **novo projeto**.
 
@@ -154,7 +154,7 @@ Neste tutorial, você aprenderá a criar um SDK de biblioteca de matemática sim
 
 30. Escolha o botão **instalar** , aguarde a conclusão da instalação e reinicie o Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Para criar um aplicativo de exemplo que usa a biblioteca de classes
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 

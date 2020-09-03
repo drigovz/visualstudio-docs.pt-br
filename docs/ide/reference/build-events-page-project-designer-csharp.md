@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419049"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
@@ -29,7 +29,7 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
-**Configuration**
+**Configuração**
 
 Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -57,7 +57,7 @@ Especifica as condições a seguir para o evento de pós-build ser executado, co
 
 |Opção|Result|
 |------------|------------|
-|**Constante**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
+|**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
 |**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. Assim, o evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido.|
 |**Quando o build atualizar a saída do projeto**|O evento de pós-build só será executado quando o arquivo de saída do compilador (.exe ou .dll) for diferente do arquivo de saída anterior do compilador. Portanto, um evento de pós-build não será executado se um projeto for atualizado.|
 
@@ -96,7 +96,7 @@ Para um evento de pós-compilação, use o nome `PostBuild` e defina o atributo 
 > [!NOTE]
 > Essas alterações de arquivo de projeto foram feitas para dar suporte a projetos no estilo SDK. Se você estiver migrando um arquivo de projeto do formato antigo para o formato de estilo SDK manualmente, deverá excluir as `PreBuildEvent` `PostBuildEvent` Propriedades e e substituí-las `PreBuild` pelos `PostBuild` destinos e conforme mostrado no código anterior. Para saber como saber se seu projeto é um projeto no estilo SDK, consulte verificar o [formato do projeto](/nuget/resources/check-project-format).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

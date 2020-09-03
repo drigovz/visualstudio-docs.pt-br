@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714127"
 ---
 # <a name="object_type"></a>Object_Type
-Especifica o tipo de objeto do avaliador de expressão.
+Especifica o tipo de um objeto do avaliador de expressão.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_OBJECT_TYPE { 
@@ -70,31 +70,31 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Campos
  `OBJECT_TYPE_BOOLEAN`\
- Indica que o objeto é um booleano.
+ Indica que o objeto é um booliano.
 
  `OBJECT_TYPE_CHAR`\
  Indica que o objeto é um caractere.
 
  `OBJECT_TYPE_I1`\
- Indica que o objeto é um inteiro assinado por um byte.
+ Indica que o objeto é um inteiro com sinal de um byte.
 
  `OBJECT_TYPE_U1`\
  Indica que o objeto é um inteiro não assinado de um byte.
 
  `OBJECT_TYPE_I2`\
- Indica que o objeto é um inteiro assinado por dois bytes.
+ Indica que o objeto é um inteiro com sinal de dois bytes.
 
  `OBJECT_TYPE_U2`\
  Indica que o objeto é um inteiro não assinado de dois bytes.
 
  `OBJECT_TYPE_I4`\
- Indica que o objeto é um inteiro assinado por quatro bytes.
+ Indica que o objeto é um inteiro com sinal de quatro bytes.
 
  `OBJECT_TYPE_U4`\
- Indica que o objeto é um inteiro não assinado de quatro bytes.
+ Indica que o objeto é um inteiro sem sinal de quatro bytes.
 
  `OBJECT_TYPE_I8`\
- Indica que o objeto é um inteiro assinado por oito bytes.
+ Indica que o objeto é um inteiro com sinal de oito bytes.
 
  `OBJECT_TYPE_U8`\
  Indica que o objeto é um inteiro não assinado de oito bytes.
@@ -109,20 +109,20 @@ public enum enum_OBJECT_TYPE { 
  Indica que o objeto é um objeto.
 
  `OBJECT_TYPE_NULL`\
- Indica que o objeto é NULO.
+ Indica que o objeto é nulo.
 
  `OBJECT_TYPE_CLASS`\
  Indica que o objeto é uma classe.
 
 ## <a name="remarks"></a>Comentários
- Passou como um argumento para os métodos [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
+ Passado como um argumento para os métodos [Createprimitivaobject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [createarrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: ee.h
+ Cabeçalho: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

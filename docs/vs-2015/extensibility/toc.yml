@@ -856,7 +856,7 @@
           href: capability-flags.md
         - name: Sinalizadores de bit usados por comandos específicos
           href: bitflags-used-by-specific-commands.md
-        - name: Códigos de Erro
+        - name: Códigos de erro
           href: error-codes.md
         - name: Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
           href: strings-used-as-keys-for-finding-a-source-control-plug-in.md
@@ -898,7 +898,7 @@
   items:
     - name: Criar um Software Development Kit
       href: creating-a-software-development-kit.md
-    - name: 'Criando um SDK usando C# ou Visual Basic'
+    - name: Criando um SDK usando C# ou Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Criando um SDK usando C++
       href: walkthrough-creating-an-sdk-using-cpp.md

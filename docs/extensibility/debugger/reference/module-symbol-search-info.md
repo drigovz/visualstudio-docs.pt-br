@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5f15587759c4f665d1593d1298c47459a0e64aac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714255"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
-Contém informações de status sobre os caminhos de pesquisa de símbolos que foram pesquisados.
+Contém informações de status sobre caminhos de pesquisa de símbolos que foram pesquisados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,22 +46,22 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="members"></a>Membros
 
 `dwValidFields`\
-Uma combinação de bandeiras da enumeração [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) especificando o tipo de informação de pesquisa descrita nesta estrutura.
+Uma combinação de sinalizadores da enumeração [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) especificando o tipo de informações de pesquisa descritas nesta estrutura.
 
 `bstrVerboseSearchInfo`\
-Caminho de pesquisa e resultados concatenados em uma única seqüência.
+Caminho de pesquisa e resultados concatenados em uma única cadeia de caracteres.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é devolvida a partir de uma chamada para o método [GetSymbolInfo.](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)
+Essa estrutura é retornada de uma chamada para o método [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) .
 
-Se `bstrVerboseSearchInfo` o campo não estiver vazio, ele contém uma lista de caminhos pesquisados e os resultados dessa pesquisa. A lista é formatada com um caminho, seguido de uma elipse ("..."), seguida pelo resultado. Se houver mais de um par de resultados de caminho, cada par será separado por um par "\r\n" (carriage-return/linefeed). O padrão é assim:
+Se o `bstrVerboseSearchInfo` campo não estiver vazio, ele conterá uma lista de caminhos pesquisados e os resultados dessa pesquisa. A lista é formatada com um caminho, seguido por uma elipse ("..."), seguida pelo resultado. Se houver mais de um par de resultados de caminho, cada par será separado por um par "\r\n" (retorno de carro/alimentação de discagem). O padrão tem a seguinte aparência:
 
-\<caminho>... \<resultado>\r\n\<caminho>... \<resultado>\r\n\<caminho>... \<> de resultados
+\<path>...\<result> \r\n \<path> . \<result> .. \r\n \<path> ...\<result>
 
-Observe que a última entrada não tem uma seqüência \r\n.
+Observe que a última entrada não tem uma sequência \r\n.
 
-Aqui está `bstrVerboseSearchInfo` uma possível seqüência que foi enviada para o padrão para fora.
+Aqui está uma `bstrVerboseSearchInfo` cadeia de caracteres possível que foi enviada para o padrão.
 
 `c:\symbols\user32.pdb... File not found.`
 
@@ -71,11 +71,11 @@ Aqui está `bstrVerboseSearchInfo` uma possível seqüência que foi enviada par
 
 ## <a name="requirements"></a>Requisitos
 
-Cabeçalho: msdbg.h
+Cabeçalho: msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 

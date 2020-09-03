@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565936"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
@@ -39,7 +39,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  É recomendável inspecionar o código gerado para ajudar a entender a DSL. Para visualizar os arquivos gerados, expanda os arquivos *.tt no Gerenciador de Soluções.
 
- Os arquivos \*. tt contêm muito pouco código de geração. Ao invés, eles usam diretrizes `<#include>` para incluir arquivos de modelo compartilhados. Os arquivos compartilhados podem ser encontrados em **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ Os \* arquivos. tt contêm muito pouco código de geração. Ao invés, eles usam diretrizes `<#include>` para incluir arquivos de modelo compartilhados. Os arquivos compartilhados podem ser encontrados em **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Ao adicionar seu próprio código do programa à solução DSL, adicione-o em um arquivo separado, fora da pasta do Código Gerado. Talvez você queira criar uma pasta de **código personalizada** . (Ao adicionar um novo arquivo de código a uma pasta personalizada, lembre-se de corrigir o namespace no esqueleto inicial do código.)
 
@@ -58,7 +58,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados aparecem no projeto **DSL** .
 
- *YourDsl* `Schema.xsd`
+ *YourDsl*`Schema.xsd`
 
  O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para o diretório de compilação (**bin**). Ao instalar sua DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** para que os arquivos de modelo possam ser validados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -70,7 +70,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 
- A relação é criada no método de`Builder.Connect()` de *relacionamento* . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
+ A relação é criada no método *relationship* `Builder.Connect()` . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -118,7 +118,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
    Na DSL de exemplo, a classe `Comment` possui acessadores que acessa seu modelo pai através da relação de inserção `ComponentModelHasComments`.
 
-- {1&gt;Construtores&lt;1}. Se você quiser substituí-los, defina **tem Construtor personalizado** na classe de domínio.
+- Construtores. Se você quiser substituí-los, defina **tem Construtor personalizado** na classe de domínio.
 
 - Métodos do manipulador Protótipo de Grupo de Elementos (EGP). Eles serão necessários se o usuário puder *mesclar* (Adicionar) outro elemento nas instâncias dessa classe. Geralmente, o usuário faz isso arrastando de uma ferramenta de conexão ou outro formato ou colando.
 
@@ -200,7 +200,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  `DocData.cs`
 
- O *YourDsl* `DocData` gerencia o carregamento e o salvamento de um modelo no arquivo e cria a instância do repositório.
+ *YourDsl* `DocData` gerencia o carregamento e o salvamento de um modelo no arquivo e cria a instância do repositório.
 
  Por exemplo, se desejar salvar a DSL em um banco de dados ao invés de em um arquivo, é possível substituir os métodos `Load` e `Save`.
 
@@ -340,13 +340,13 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.
 
 > [!WARNING]
-> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. Em Gerenciador de Soluções, selecione o arquivo e verifique se a propriedade **incluir no VSIX** está `True`.
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. Em Gerenciador de Soluções, selecione o arquivo e certifique-se de que a propriedade **incluir no VSIX** seja `True` .
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
+- [Como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

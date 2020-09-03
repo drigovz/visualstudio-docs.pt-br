@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567210"
 ---
 # <a name="customize-startup"></a>Personalizar a inicialização
@@ -32,7 +32,7 @@ Também é possível mostrar uma página inicial personalizada, que é uma pági
 
 ## <a name="to-change-the-startup-item"></a>Para alterar o item de inicialização
 
-1. Na barra de menus, escolha **Opções de** > **ferramentas**.
+1. Na barra de menus, escolha **ferramentas**  >  **Opções**.
 
 2. Expanda **Ambiente** e escolha **Inicialização**.
 

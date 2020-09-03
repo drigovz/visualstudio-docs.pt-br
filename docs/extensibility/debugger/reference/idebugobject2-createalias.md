@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: 'IDebugObject2:: createalias | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726301"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Cria um ID ou alias exclusivo para este objeto ou retorna um alias existente.
+Cria uma ID exclusiva ou um alias para esse objeto ou retorna um alias existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int CreateAlias(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppAlias`\
-[fora] O novo (ou existente) alias.
+fora O novo (ou existente) alias.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um alias é um rótulo que representa um objeto em particular enquanto o objeto está na memória.
+ Um alias é um rótulo que representa um objeto específico enquanto o objeto está na memória.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

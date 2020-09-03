@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtrair | Microsoft Docs
+title: 'IDebugMemoryContext2:: subtrair | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c858beb8c3f9f587633dbae8b3b1fe73fd789663
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727441"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
@@ -42,20 +42,20 @@ int Subtract(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwCount`\
-[em] O número de bytes de memória para decretar.
+no O número de bytes de memória a serem reduzidos.
 
 `ppMemCxt`\
-[fora] Retorna um novo objeto [IDebugMemoryContext2.](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+fora Retorna um novo objeto [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um contexto de memória é um endereço, então subtrair um valor de um endereço produz um novo endereço que requer uma nova interface de contexto.
+ Um contexto de memória é um endereço, portanto, subtrair um valor de um endereço produz um novo endereço que requer uma nova interface de contexto.
 
- Esse método deve sempre produzir um novo contexto, mesmo que o endereço resultante esteja fora do espaço de memória associado a esse contexto. A única exceção a isso é se nenhuma memória `ppMemCxt` pode ser alocada para o novo contexto ou se for um valor nulo (o que é um erro).
+ Esse método sempre deve produzir um novo contexto, mesmo se o endereço resultante estiver fora do espaço de memória associado a esse contexto. A única exceção a isso é se nenhuma memória puder ser alocada para o novo contexto ou se `ppMemCxt` for um valor nulo (que é um erro).
 
 ## <a name="see-also"></a>Confira também
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

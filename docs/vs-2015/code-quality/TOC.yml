@@ -8,15 +8,15 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Visão geral da análise de código para código gerenciado
           href: code-analysis-for-managed-code-overview.md
-        - name: 'Como: Habilitar e desabilitar a análise de código automática'
+        - name: Como habilitar e desabilitar análise de código automática
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: 'Como: Habilitar e desabilitar a análise de solução completa'
+        - name: Como habilitar e desabilitar a análise de solução completa
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Suspensão automática de recursos
           href: automatic-feature-suspension.md
-        - name: 'Como: Executar análise de código manualmente'
+        - name: Como executar a análise de código manualmente
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: 'Passo a passo: Analisando o código gerenciado em busca de defeitos de código'
+        - name: 'Instruções passo a passo: analisando código gerenciado em busca de defeitos de código'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Suprimir avisos usando o atributo SuppressMessage
           items:
@@ -24,17 +24,17 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Visão geral de supressão na origem
               href: in-source-suppression-overview.md
-            - name: 'Como: Suprimir avisos usando o item de menu'
+            - name: Como suprimir avisos usando o item de menu
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: 'Como: Suprimir avisos para o código gerado'
+            - name: Como suprimir avisos para código gerenciado
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: 'Como: Personalizar o dicionário de análise de código'
+            - name: Como personalizar o dicionário de análise do código
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: Métodos anônimos e análise de código
               href: anonymous-methods-and-code-analysis.md
-            - name: 'Como: Exibir defeitos de código gerenciado'
+            - name: Como exibir defeitos de código gerenciado
               href: how-to-view-managed-code-defects.md
-            - name: 'Como: Criar um item de trabalho para um defeito de código gerenciado'
+            - name: Como criar um item de trabalho para um defeito de código gerenciado
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Avisos da análise de código para código gerenciado
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059: Membros não devem expor determinados tipos concretos'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060: Mova P/Invokes para a classe NativeMethods'
+                - name: 'CA1060: mover P/Invokes para a classe NativeMethods'
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061: Não ocultar métodos de classe base'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -202,21 +202,21 @@
                   href: ca1308-normalize-strings-to-uppercase.md
                 - name: 'CA1309: Usar StringComparison ordinal'
                   href: ca1309-use-ordinal-stringcomparison.md
-                - name: 'CA2101: Especificar marshaling para argumentos de cadeias de caracteres P/Invoke'
+                - name: 'CA2101: especificar marshaling para argumentos da cadeia de caracteres P/Invoke'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: Avisos de interoperabilidade
               items:
                 - name: Avisos de interoperabilidade
                   href: interoperability-warnings.md
-                - name: 'CA1400: Deve haver pontos de entrada P/Invoke'
+                - name: 'CA1400: os pontos de entrada P/Invoke devem existir'
                   href: ca1400-p-invoke-entry-points-should-exist.md
-                - name: 'CA1401: P/Invokes não devem ser visíveis'
+                - name: 'CA1401: P/Invokes não deve estar visível'
                   href: ca1401-p-invokes-should-not-be-visible.md
                 - name: 'CA1402: Evitar sobrecargas em interfaces visíveis no COM'
                   href: ca1402-avoid-overloads-in-com-visible-interfaces.md
                 - name: 'CA1403: Tipos de layout automático não devem ser visíveis no COM'
                   href: ca1403-auto-layout-types-should-not-be-com-visible.md
-                - name: 'CA1404: Chamar GetLastError imediatamente após P/Invoke'
+                - name: 'CA1404: chamar GetLastError logo depois de P/Invoke'
                   href: ca1404-call-getlasterror-immediately-after-p-invoke.md
                 - name: 'CA1405: Tipos base de tipo visível no COM devem ser visíveis no COM'
                   href: ca1405-com-visible-type-base-types-should-be-com-visible.md
@@ -236,9 +236,9 @@
                   href: ca1412-mark-comsource-interfaces-as-idispatch.md
                 - name: 'CA1413: Evitar campos não públicos em tipos de valor visíveis no COM'
                   href: ca1413-avoid-non-public-fields-in-com-visible-value-types.md
-                - name: 'CA1414: Marcar argumentos P/Invoke boolianos com MarshalAs'
+                - name: 'CA1414: marcar argumentos P/Invoke boolianos com MarshalAs'
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
-                - name: 'CA1415: Declarar P/Invokes corretamente'
+                - name: 'CA1415: declarar P/Invokes corretamente'
                   href: ca1415-declare-p-invokes-correctly.md
                 - name: Avisos de facilidade de manutenção
                   items:
@@ -356,7 +356,7 @@
                           href: portability-warnings.md
                         - name: 'CA1900: Campos de tipo de valor devem ser portáteis'
                           href: ca1900-value-type-fields-should-be-portable.md
-                        - name: 'CA1901: Declarações P/Invoke devem ser portáteis'
+                        - name: 'CA1901: as declarações de P/Invoke devem ser portáteis'
                           href: ca1901-p-invoke-declarations-should-be-portable.md
                         - name: 'CA1903: Usar apenas a API da estrutura de destino'
                           href: ca1903-use-only-api-from-targeted-framework.md
@@ -572,7 +572,7 @@
   items:
     - name: Analisando a qualidade do código do C/C++
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: 'Início Rápido: Análise de código para C/C++'
+    - name: 'Início Rápido: análise de código para C/C++'
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Usando conjuntos de regras para especificar as regras do C++ para execução
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: Análise de código para visão geral do C/C++
       href: code-analysis-for-c-cpp-overview.md
-    - name: 'Como: Definir as propriedades de análise de código para projetos C/C++'
+    - name: Como definir propriedades de análise de código para projetos do C/C++
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: 'Passo a passo: Analisando o código C/C++ em busca de defeitos'
+    - name: 'Instruções passo a passo: analisando código do C/C++ em busca de defeitos'
       items:
-        - name: 'Passo a passo: Analisando o código C/C++ em busca de defeitos'
+        - name: 'Instruções passo a passo: analisando código do C/C++ em busca de defeitos'
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Amostra de demonstração
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Práticas recomendadas e exemplos
           href: best-practices-and-examples-sal.md
-        - name: 'Como: Especificar informações de código adicionais usando _analysis_assume'
+        - name: Como especificar informações de código adicionais usando __analysis_assume
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Análise de código para avisos do C/C++
           items:
@@ -1190,21 +1190,21 @@
           items:
             - name: Usando conjuntos de regras para agrupar regras de análise de código
               href: using-rule-sets-to-group-code-analysis-rules.md
-            - name: 'Passo a passo: Configurando e usando um conjunto de regras personalizado'
+            - name: 'Instruções passo a passo: configurando e usando um conjunto de regras personalizado'
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: 'Como: Configurar a análise de código para um projeto de código gerenciado'
+            - name: Como configurar a análise de código para um projeto de código gerenciado
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: 'Como: Configurar a análise de código para um aplicativo Web ASP.NET'
+            - name: Como configurar a análise de código para um aplicativo Web do ASP.NET
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: 'Como: Sincronizar conjuntos de regras do projeto de código com a política de check-in do projeto de equipe'
+            - name: Como sincronizar conjuntos de regras do projeto de código com política de check-in do projeto da equipe
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: 'Como: Especificar conjuntos de regras para vários projetos em uma solução'
+            - name: Como especificar conjuntos de regras para vários projetos em uma solução
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: Criando conjuntos de regras personalizados
               items:
                 - name: Criando conjuntos de regras personalizados
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: 'Como: Criar um conjunto de regras personalizado'
+                - name: Como criar um conjunto de regras personalizado
                   href: how-to-create-a-custom-rule-set.md
                 - name: Trabalhando no Editor de Conjunto de Regras
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1304,11 +1304,11 @@
               items:
                 - name: Criando e usando políticas de check-in de análise do código
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: 'Como: Criar ou atualizar políticas de check-in de análise de código padrão'
+                - name: Como criar ou atualizar políticas de check-in de análise do código padrão
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Implementando políticas de check-in personalizadas para código gerenciado
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: 'Como: Impor um código de fácil manutenção com uma política de check-in de análise de código'
+                - name: Como impor um código com facilidade de manutenção com uma política de check-in de análise do código
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Compatibilidade da versão para políticas de check-in de análise do código
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Valores de métricas do código
       href: code-metrics-values.md
-    - name: 'Como: Gerar dados de métricas de código'
+    - name: Como gerar dados de métricas do código
       href: how-to-generate-code-metrics-data.md
     - name: Trabalhando com dados de métricas de código
       href: working-with-code-metrics-data.md
