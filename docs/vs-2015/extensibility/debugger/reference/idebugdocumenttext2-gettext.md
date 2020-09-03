@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: 'IDebugDocumentText2:: gettext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200175"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pos`  
- [in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.  
+ no Uma estrutura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que indica o local do texto a ser recuperado.  
   
  `cMaxChars`  
- [in] O número máximo de caracteres do texto a ser recuperado.  
+ no O número máximo de caracteres do texto a ser recuperado.  
   
  `pText`  
- [no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.  
+ [entrada, saída] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` um número de caracteres largos.  
   
  `pcNumChars`  
- [out] Retorna o número de caracteres realmente recuperados.  
+ fora Retorna o número de caracteres realmente recuperados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como esse método pode ser chamado do c#.  
+ Este exemplo mostra como esse método pode ser chamado a partir do C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  
@@ -99,6 +99,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

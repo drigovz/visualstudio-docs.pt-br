@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b65f2279270be0d5baef16d6d06e35a7fb0b854
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669538"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
@@ -113,7 +113,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>
     ```
 
-2. Insira o cursor após `<xsl:apply-templates select="phone" />` e pressione ENTER. Inicie digitando o elemento `xsl: apply-templates` a seguir:
+2. Insira o cursor depois `<xsl:apply-templates select="phone" />` e pressione Enter. Inicie digitando o elemento `xsl: apply-templates` a seguir:
 
     ```
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -162,5 +162,5 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
 
      Observe como a lista de prefixos apareceu nos atributos `stylesheet-prefix` e `result-prefix` do elemento de `xsl:namespace-alias`.
 
-## <a name="see-also"></a>Consulte também
- [Recursos do IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Consulte Também
+ [Recursos do IntelliSense o editor XML](../xml-tools/xml-editor-intellisense-features.md)

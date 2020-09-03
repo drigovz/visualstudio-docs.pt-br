@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669711"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
@@ -30,7 +30,7 @@ Uma interação é uma sequência de mensagens entre um conjunto de linhas de vi
 ## <a name="basic-code"></a>Código básico
 
 ### <a name="namespace-imports"></a>Importações de namespace
- Você deve incluir as seguintes instruções de `using`:
+ Você deve incluir as seguintes `using` instruções:
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -72,12 +72,12 @@ public class MySequenceDiagramCommand : ICommandExtension
 ```
 
 ### <a name="generated-and-uml-sequence-diagrams"></a>Diagramas de sequência gerados e UML
- Há dois tipos de diagramas de sequência: aqueles que são criados manualmente em um projeto de modelagem UML e aqueles que foram gerados a partir do código do programa. Use a propriedade `UmlMode` para descobrir qual diagrama de sequência você tem.
+ Há dois tipos de diagramas de sequência: aqueles que são criados manualmente em um projeto de modelagem UML e aqueles que foram gerados a partir do código do programa. Use a `UmlMode` propriedade para descobrir qual diagrama de sequência você tem.
 
 > [!NOTE]
 > Essa propriedade retorna false somente para diagramas de sequência gerados a partir de código usando Visual Studio 2013 e anterior. Isso inclui diagramas de sequência gerados por código migrados do 2013 e anterior. Esta versão do Visual Studio não dá suporte à geração de novos diagramas de sequência.
 
- Por exemplo, se você quiser criar um comando de menu que só seja visível em diagramas de sequência UML, o método `QueryStatus()` poderá incluir a seguinte instrução:
+ Por exemplo, se você quiser criar um comando de menu que só seja visível em diagramas de sequência UML, o `QueryStatus()` método poderá incluir a seguinte instrução:
 
 ```
 command.Enabled = command.Visible =
@@ -124,7 +124,7 @@ public void Execute (IMenuCommand command)
 
   Isso é particularmente importante quando você insere novos elementos ou move os elementos existentes. Elas não estarão nas posições corretas no diagrama até que você tenha executado uma dessas operações. Você só precisa chamar uma dessas operações uma vez ao final de uma série de alterações.
 
-  Para evitar bemusing o usuário que executa um desfazer após o comando, use um `ILinkedUndoTransaction` para incluir suas alterações e as operações finais `Layout()` ou `UpdateShapePositions()`. Por exemplo:
+  Para evitar bemusing o usuário que executa um desfazer após o comando, use um `ILinkedUndoTransaction` para colocar suas alterações e o final `Layout()` ou as `UpdateShapePositions()` operações. Por exemplo:
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -135,7 +135,7 @@ using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("
 }
 ```
 
- Para usar um `ILinkedUndoTransaction`, você deve fazer essa declaração em sua classe:
+ Para usar um `ILinkedUndoTransaction` , você deve fazer essa declaração em sua classe:
 
 ```
 [Import] ILinkedUndoContext LinkedUndoContext { get; set; }
@@ -163,7 +163,7 @@ foreach (IConnectableElement part in
 }
 ```
 
- Como alternativa, se a interação mostrar um conjunto arbitrário de objetos, você poderá criar uma propriedade ou outras `IConnectableElement` na própria interação:
+ Como alternativa, se a interação mostrar um conjunto arbitrário de objetos, você poderá criar uma propriedade ou outra `IConnectableElement` na própria interação:
 
 ```
 ILifeline lifeline = interaction.CreateLifeline();
@@ -242,11 +242,11 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
 ## <a name="troubleshooting"></a>Solução de problemas
- As formas serão exibidas em posições incorretas se as alterações não forem concluídas com uma operação `UpdateShapePositions()` ou `Layout()`.
+ As formas serão exibidas em posições incorretas se as alterações não forem concluídas com uma `UpdateShapePositions()` `Layout()` operação ou.
 
- A maioria dos outros problemas são causados por pontos de inserção sendo desalinhados, para que novas mensagens ou fragmentos precisem atravessar outras pessoas. Os sintomas podem ser que nenhuma alteração é executada ou uma exceção é lançada. A exceção pode não ser lançada até que a operação de `UpdateShapePositions()` ou `Layout()` seja executada.
+ A maioria dos outros problemas são causados por pontos de inserção sendo desalinhados, para que novas mensagens ou fragmentos precisem atravessar outras pessoas. Os sintomas podem ser que nenhuma alteração é executada ou uma exceção é lançada. A exceção pode não ser lançada até que `UpdateShapePositions()` a `Layout()` operação ou seja executada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft. VisualStudio. Uml. interações](/previous-versions/dd493373(v=vs.140))
 - [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

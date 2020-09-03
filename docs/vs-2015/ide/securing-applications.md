@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669944"
 ---
 # <a name="securing-applications"></a>Protegendo aplicativos
@@ -29,7 +29,7 @@ Embora a maioria dos aplicativos tenham desafios de segurança comuns, cada dom�
 
  [Melhores práticas de segurança](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Fornece informações sobre recursos de segurança e práticas disponíveis ao trabalhar no Visual C++.
 
- [Não está no BUILD: segurança e programaçãoC# (e Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) fornece informações sobre as três principais preocupações de segurança para C# Visual Basic e desenvolvedores: privilégios, aplicativos Web e a instalação do Visual Studio.
+ [Não está no Build: segurança e programação (C# e Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Fornece informações sobre as três principais preocupações de segurança para desenvolvedores de Visual Basic e C#: privilégios, aplicativos Web e instalação do Visual Studio.
 
 ## <a name="securing-mobile-applications"></a>Protegendo aplicativos móveis
  À medida que aumenta a popularidade dos dispositivos móveis, torna-se mais importante a segurança das informações e dos dados nesses dispositivos.
@@ -56,5 +56,5 @@ Embora a maioria dos aplicativos tenham desafios de segurança comuns, cada dom�
 
  [Segurança do Windows Forms](https://msdn.microsoft.com/library/932d438a-5285-46d8-a958-8c93d0ad6cae) Fornece uma visão geral da implementação de segurança do Windows Forms.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Segurança](../ide/security-in-visual-studio.md)

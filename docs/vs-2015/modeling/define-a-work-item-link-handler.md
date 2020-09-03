@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669930"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
@@ -36,7 +36,7 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
     1. No menu **Arquivo**, escolha **Novo**, **Projeto**.
 
-    2. Em **modelos instalados**, expanda **Visual C#**  ou **Visual Basic**e, em seguida, na coluna do meio, clique em **biblioteca de classes**.
+    2. Em **modelos instalados**, expanda **Visual C#** ou **Visual Basic**e, em seguida, na coluna do meio, clique em **biblioteca de classes**.
 
     3. Defina a **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.
 
@@ -46,7 +46,7 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
     1. No **Gerenciador de soluções**, no menu de atalho da solução, escolha **Adicionar**, **novo projeto**.
 
-    2. Em **modelos instalados**, expanda **Visual C#**  ou **Visual Basic**e, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **projeto VSIX**.
+    2. Em **modelos instalados**, expanda **Visual C#** ou **Visual Basic**e, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **projeto VSIX**.
 
 3. Defina o projeto VSIX como o projeto de inicialização da solução.
 
@@ -60,17 +60,17 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
     3. Na guia **ativos** , escolha um **novo**e, na caixa de diálogo, defina:
 
-         **Tipo**  = **componente MEF**
+         **Tipo**  =  de **Componente MEF**
 
-         **Fonte**  = **um projeto na solução atual**
+         **Origem**  =  do **Um projeto na solução atual**
 
-         **Projeto**  = *seu projeto de biblioteca de classes*
+         **Projeto**  =  do *Seu projeto de biblioteca de classes*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definindo o manipulador de link de item de trabalho
  Execute todas as tarefas a seguir no projeto de biblioteca de classes.
 
 ### <a name="project-references"></a>Referências de Projeto
- Adicione os seguintes assemblies de [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] a suas referências de projeto:
+ Adicione os seguintes [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assemblies às referências do projeto:
 
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`
 
@@ -82,16 +82,16 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-usado pelo código de exemplo
+ `System.Drawing` -usado pelo código de exemplo
 
- Se você não encontrar uma dessas referências na guia **.net** da caixa de diálogo **Adicionar referência** , use a guia Procurar para encontrá-la em \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\.
+ Se você não encontrar uma dessas referências na guia **.net** da caixa de diálogo **Adicionar referência** , use a guia Procurar para encontrá-la em \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\ .
 
 ### <a name="import-the-work-item-namespace"></a>Importar o namespace do item de trabalho
- Em suas **referências**de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], adicione referências aos seguintes assemblies:
+ Em suas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **referências**de projeto, adicione referências aos seguintes assemblies:
 
-- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
-- Microsoft. VisualStudio. TeamFoundation. WorkItemTracking. dll
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll
 
   No código do programa, importe os seguintes namespaces:
 
@@ -160,9 +160,9 @@ namespace WorkItems
 
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciada.
 
-     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado, verifique se o projeto VSIX está definido como o projeto de inicialização da solução.
+     **Solução de problemas**: se um novo não [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] for iniciado, verifique se o projeto VSIX está definido como o projeto de inicialização da solução.
 
-2. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimental, abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
+2. Em experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
 
 3. Crie um elemento de modelo, como classe UML, e defina seu nome.
 
@@ -174,19 +174,19 @@ namespace WorkItems
 
          Um novo formulário de item de trabalho é aberto.
 
-5. Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra `OnWorkItemCreated()` funcionou.
+5. Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra que `OnWorkItemCreated()` funcionou.
 
 6. Preencha o formulário, salve e feche o item de trabalho.
 
-7. Verifique se o item de trabalho agora está em vermelho colorido. Isso demonstra `OnWorkItemLinked()` no código de exemplo.
+7. Verifique se o item de trabalho agora está em vermelho colorido. Isso demonstra `OnWorkItemLinked()` o código de exemplo.
 
      **Solução de problemas**: se os métodos do manipulador não tiverem sido executados, verifique se:
 
     - O projeto de biblioteca de classes é listado como um componente MEF na lista de **conteúdo** em **Source. Extensions. manifest** no projeto VSIX.
 
-    - O atributo de `Export` correto é anexado à classe de manipulador e a classe implementa `ILinkedWorkItemExtension`.
+    - O `Export` atributo correto é anexado à classe de manipulador e a classe implementa `ILinkedWorkItemExtension` .
 
-    - Os parâmetros de todos os atributos de `Import` e de `Export` são válidos.
+    - Os parâmetros de todos `Import` os `Export` atributos e são válidos.
 
 ## <a name="about-the-work-item-handler-code"></a>Sobre o código do manipulador de item de trabalho
 
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```
 
 > [!NOTE]
-> Para fazer este exemplo funcionar, você deve adicionar uma referência de projeto a `System.Drawing.dll` e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. No entanto, essas adições não são necessárias para outras implementações de `OnWorkItemLinked`.
+> Para fazer este exemplo funcionar, você deve adicionar uma referência de projeto a `System.Drawing.dll` e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation` . No entanto, essas adições não são necessárias para outras implementações do `OnWorkItemLinked` .
 
 ### <a name="listening-for-link-removal"></a>Ouvindo a remoção do link
  `OnWorkItemRemoved` é chamado uma vez antes de cada link de item de trabalho que é excluído. Se um elemento de modelo for excluído, todos os seus links serão removidos.
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
 
  Para usar o exemplo a seguir, adicione esses assemblies do .NET às referências do seu projeto:
 
-- Microsoft. TeamFoundation. Client. dll
+- Microsoft.TeamFoundation.Client.dll
 
-- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
 ```
 
@@ -283,9 +283,9 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
    `http://tfServer:8080/tfs/projectCollection`
 
-   O caso é importante em `projectCollection`.
+   O caso é importante no `projectCollection` .
 
-- `RepositoryGuid` pode ser obtida em sua conexão do TFS:
+- `RepositoryGuid` pode ser obtido de sua conexão do TFS:
 
   ```csharp
   TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;
@@ -295,7 +295,7 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
   Para obter mais informações sobre referências, consulte [anexar cadeias de caracteres de referência a elementos de modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Microsoft. TeamFoundation. WorkItemTracking. Client. WorkItemStore](/previous-versions/visualstudio/visual-studio-2013/bb179850(v=vs.120))
 - [Vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md)

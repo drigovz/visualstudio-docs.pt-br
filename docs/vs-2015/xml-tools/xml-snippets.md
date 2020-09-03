@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669357"
 ---
 # <a name="xml-snippets"></a>Snippets XML
@@ -48,9 +48,9 @@ O editor de XML oferece um recurso, chamado *trechos XML*, que permite criar arq
  Para obter mais informações, consulte [como gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Crie novos snippets XML
- Além dos trechos de código incluídos no [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio por padrão, você também pode criar e usar seus próprios trechos de código XML.
+ Além dos trechos de código que estão incluídos com o [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio por padrão, você também pode criar e usar seus próprios trechos de código XML.
 
  Para obter mais informações, consulte [como: criar trechos de código XML](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editor de XML](../xml-tools/xml-editor.md)

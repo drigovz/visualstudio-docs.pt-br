@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c11c952223854ff1b4b963e24615e7abe831496
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669869"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
@@ -29,9 +29,9 @@ Outros usuários do Visual Studio podem instalar extensões de modelagem de cama
 
 #### <a name="to-install-the-extension"></a>Para instalar a extensão
 
-1. No projeto que contém **Source. vsix. manifest**, abra **bin \\ \\** * no explorador de arquivos.
+1. No projeto que contém **Source. vsix. manifest**, abra **bin \\ \\ *** no explorador de arquivos.
 
-2. Copie o arquivo **\*. vsix** para o computador no qual você deseja instalar a extensão.
+2. Copie o arquivo ** \* . vsix** para o computador no qual você deseja instalar a extensão.
 
 3. No computador de destino, clique duas vezes no arquivo *. vsix no Windows Explorer.
 
@@ -44,11 +44,11 @@ Outros usuários do Visual Studio podem instalar extensões de modelagem de cama
 2. Clique no nome da extensão e, em seguida, clique em **desinstalar**.
 
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalando uma extensão em um Team Foundation Build Server
- os servidores de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] normalmente não têm o Visual Studio instalado e, portanto, não é possível instalar o VSIX clicando duas vezes nele. A instalação do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] inclui alguns componentes que permitem a execução de uma extensão VSIX, mas você deve instalar a extensão manualmente.
+ [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] os servidores normalmente não têm o Visual Studio instalado e, portanto, não é possível instalar o VSIX clicando duas vezes nele. A instalação do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] inclui alguns componentes que permitem a execução de uma extensão VSIX, mas você deve instalar a extensão manualmente.
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Para instalar sua extensão de camada em um servidor de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]
+#### <a name="to-install-your-layer-extension-on-a-esprbuild-server"></a>Para instalar a extensão de camada em um [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] servidor
 
-1. Copie os arquivos **. vsix** do seu computador de desenvolvimento para o computador [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+1. Copie os arquivos **. vsix** do seu computador de desenvolvimento para o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] computador.
 
      Coloque o arquivo VSIX em um dos seguintes locais:
 
@@ -56,11 +56,11 @@ Outros usuários do Visual Studio podem instalar extensões de modelagem de cama
 
          %ProgramFiles%\Microsoft Visual Studio [versão] \Common7\IDE\Extensions\Microsoft
 
-    - Para instalar somente o serviço de rede que executa o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:
+    - Para instalar somente o serviço de rede que executa o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] :
 
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio \\ [versão] \Extensions\Microsoft
 
-    - Se você configurou o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para ser executado no modo interativo como um usuário específico, você pode instalar apenas para esse usuário:
+    - Se você tiver configurado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para ser executado no modo interativo como um usuário específico, poderá instalar apenas para esse usuário:
 
          %LocalAppData%\Microsoft\VisualStudio \\ [versão] \Extensions\Microsoft
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669460"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
@@ -22,7 +22,7 @@ ms.locfileid: "72669460"
 O editor XML fornece os recursos do IntelliSense comparáveis a outros editores de linguagem fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>O IntelliSense em um documento XSD
- Depois que um esquema estiver associado ao documento, você obterá uma lista suspensa dos elementos esperados sempre que digitar `"<"` ou clicar no botão **exibir uma lista de membros do objeto** na barra de ferramentas do editor de XML. Para obter informações sobre como associar esquemas a documentos XML, consulte validação de [documento XML](../xml-tools/xml-document-validation.md).
+ Depois que um esquema é associado ao documento, você obtém uma lista suspensa de elementos esperados sempre que digitar `"<"` ou clicar no botão **exibir uma lista de membros de objetos** na barra de ferramentas do editor de XML. Para obter informações sobre como associar esquemas a documentos XML, consulte validação de [documento XML](../xml-tools/xml-document-validation.md).
 
  Quando você digita o ESPAÇO de dentro de uma marca inicial, você também obtém uma lista suspensa que mostra todos os atributos que podem ser adicionados ao elemento atual.
 
@@ -85,19 +85,19 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 
  O editor XML faz isso para os seguintes itens:
 
-- Início correspondente e marcas de fim.
+- Correspondência de marcas inicial e de fim.
 
-- Qualquer par de colchetes angulares "\<" ou ">".
+- Qualquer par de colchetes angulares "\<" or ">".
 
 - Início e fim de comentários.
 
-- Início e final de instrução de processamento.
+- Início e fim de instruções de processamento.
 
 - Início e fim de blocos CDATA.
 
-- Início e fim de declarações de DTD.
+- Início e fim de declarações DTD.
 
-- Abrindo e fechando aspas em atributos.
+- Aspas de abertura e fechamento em abributos.
 
 ## <a name="modifying-the-intellisense-options"></a>Alterando as opções do IntelliSense
  Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas configurações de opções de ferramentas.
@@ -107,7 +107,7 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 |Name|Descrição|
 |----------|-----------------|
 |Fechar marcas|Insere fechar marcas para novos elementos.|
-|Aspas de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
+|Citações de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
 |Outra marcação|Comentários, CDATA termina, DOCTYPE, instruções de processamento, e outras declarações de marcação.|
 
 #### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático
@@ -118,5 +118,5 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
 
 3. Faça as alterações na seção **inserção automática** e clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editor de XML](../xml-tools/xml-editor.md) [usando o IntelliSense](../ide/using-intellisense.md) [WALKTHROUGH: usando o IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

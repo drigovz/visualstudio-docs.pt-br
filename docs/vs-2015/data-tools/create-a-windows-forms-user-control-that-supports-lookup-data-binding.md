@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668783"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Criar um controle de usuário do Windows Forms compatível com associação de dados de consulta
@@ -58,7 +58,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 - Criar um formulário para exibir dados no novo controle.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -83,7 +83,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 1. No menu **Projeto**, selecione **Adicionar Controle do Usuário**.
 
-2. Digite `LookupBox` na área **nome** e clique em **Adicionar**.
+2. Digite `LookupBox` a área **nome** e clique em **Adicionar**.
 
      O controle **LookupBox** é adicionado ao **Gerenciador de Soluções** e abre no designer.
 
@@ -105,7 +105,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
      [!code-csharp[VbRaddataDisplaying#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs#5)]
      [!code-vb[VbRaddataDisplaying#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb#5)]
 
-3. No menu **Compilação**, escolha **Compilar Solução**.
+3. No menu **Compilar** , escolha **Compilar solução**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do seu banco de dados
  Esta etapa cria uma fonte de dados usando o **Assistente de Configuração de Fonte de Dados** com base nas tabelas `Customers` e `Orders` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [instalar SQL Server bancos](../data-tools/install-sql-server-sample-databases.md)de dados de exemplo.
@@ -118,7 +118,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **escolher sua conexão de dados** , siga um destes procedimentos:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -132,7 +132,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 8. Selecione as tabelas `Customers` e `Orders` e, em seguida, clique em **Concluir**.
 
-     O **NorthwindDataSet** é adicionado ao projeto e as tabelas `Customers` e `Orders` aparecem na janela **Fontes de Dados**.
+     O **NorthwindDataSet** é adicionado ao seu projeto e as `Customers` tabelas e `Orders` aparecem na janela **Data Sources** .
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Definir a coluna CustomerID da tabela Orders para usar o controle LookupBox
  Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
@@ -160,7 +160,7 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Para criar controles de associação de dados no Windows Form
 
-- Arraste o nó **pedidos** da janela **fontes de dados** para o Windows Form e verifique se o controle **LookupBox** é usado para exibir os dados na coluna `CustomerID`.
+- Arraste o nó **pedidos** da janela **fontes de dados** para o Windows Form e verifique se o controle **LookupBox** é usado para exibir os dados na `CustomerID` coluna.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Associar o controle para procurar o CompanyName da tabela Customers
 
@@ -178,5 +178,5 @@ Ao exibir dados no Windows Forms, você poderá escolher os controles existentes
 
 - Navegue por alguns registros e verifique se `CompanyName` aparece no controle `LookupBox`.
 
-## <a name="see-also"></a>Consulte também
- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

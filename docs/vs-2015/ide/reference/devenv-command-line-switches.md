@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b8b0683024e2881f76bb6c54d9420d351fced08a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668721"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do desenvolvedor
@@ -34,7 +34,7 @@ ms.locfileid: "72668721"
 O Devenv permite definir várias opções para o IDE (ambiente de desenvolvimento integrado) e também criar, depurar e implantar projetos com base na linha de comando. Use essas opções para executar o IDE com base em um script ou um arquivo .bat, por exemplo, um script de build noturno ou para iniciar o IDE em uma configuração específica.
 
 > [!NOTE]
-> Para tarefas relacionadas ao build, agora é recomendável usar o MSBuild em vez do devenv. Para obter mais informações, consulte [Referência de linha de comando](../../msbuild/msbuild-command-line-reference.md).
+> Para tarefas relacionadas ao build, agora é recomendável usar o MSBuild em vez do devenv. Para obter mais informações, consulte [referência de linha de comando](../../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > É necessário executar o devenv como um administrador para usar as opções [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).
@@ -68,7 +68,7 @@ O Devenv permite definir várias opções para o IDE (ambiente de desenvolviment
 ## <a name="devenv-switches"></a>Opções do devenv
  Use as seguintes opções de linha de comando para exibir o IDE e realizar a tarefa descrita.
 
-|Opção de linha de comando|DESCRIÇÃO|
+|Opção de linha de comando|Descrição|
 |-------------------------|-----------------|
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|Inicia o IDE e executa o comando especificado.|
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|Carrega um executável [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] no controle do depurador. Essa opção não está disponível para os executáveis [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Para obter mais informações, consulte [Automatically start a process in the debugger (Iniciar automaticamente um processo no depurador)](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
@@ -85,14 +85,14 @@ O Devenv permite definir várias opções para o IDE (ambiente de desenvolviment
 
  Use as seguintes opções de linha de comando para realizar a tarefa descrita. Essas opções de linha de comando não exibem o IDE.
 
-|Opção de linha de comando|DESCRIÇÃO|
+|Opção de linha de comando|Descrição|
 |-------------------------|-----------------|
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|Exibe ajuda para opções do devenv na **Janela do prompt de comando**.<br /><br /> **Devenv /?**|
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Cria a solução ou o projeto especificado de acordo com a configuração da solução especificada.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Exclui os arquivos criados pelo comando de build sem afetar os arquivos de origem.<br /><br /> **Devenv myproj.csproj /clean**|
 |[/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Compila a solução, juntamente com os arquivos necessários para a implantação, de acordo com a configuração de soluções.<br /><br /> **Devenv myproj.csproj /deploy**|
 |[/Diff](../../ide/reference/diff.md)|Compara dois arquivos.  Assume quatro parâmetros: SourceFile, TargetFile, SourceDisplayName(opcional),TargetDisplayName(opcional).|
-|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Registra modelos de item ou de projeto localizados em *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates ou *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates para que eles possam ser acessados por meio das caixas de diálogo **Novo projeto** e **Adicionar novo item**.<br /><br /> **Devenv /InstallVSTemplates**|
+|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Registra os modelos de projeto ou item que estão localizados em *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates ou *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates para que possam ser acessados por meio das caixas de diálogo **novo projeto** e **Adicionar novo item** .<br /><br /> **Devenv /InstallVSTemplates**|
 |[/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Permite que você especifique um arquivo para receber erros ao compilar.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
 |[/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|O projeto a ser criado, limpo ou implantado. Será possível usar essa opção somente se você tiver fornecido também a opção /build, /rebuild, /clean ou /deploy.|
 |[/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)|Especifica a configuração de projeto a ser criada ou implantada. Será possível usar essa opção somente se você tiver fornecido a opção /project.|
@@ -101,5 +101,5 @@ O Devenv permite definir várias opções para o IDE (ambiente de desenvolviment
 |[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Notifica o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para mesclar os pacotes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no sistema e verificar o cache MEF para as alterações.|
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Atualiza o arquivo de solução especificado e todos os seus arquivos de projeto ou o arquivo de projeto especificado, para os formatos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] atuais para esses arquivos.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

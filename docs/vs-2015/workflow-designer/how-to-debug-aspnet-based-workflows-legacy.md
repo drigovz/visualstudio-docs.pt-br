@@ -15,20 +15,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668667"
 ---
-# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Depurar de fluxos de trabalho baseados no ASP.NET (herdado)
+# <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Fluxos de trabalho de depuração ASP.NET-Based (legados)
 Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](../includes/vstecasp-md.md)][!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado.
 
  Você pode depurar fluxos de trabalho herdados que são iniciados no ASP.NET ou em fluxos de trabalho herdados que são publicados como um serviço Web anexando o processo no qual o fluxo de trabalho é hospedado.
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Para depurar um fluxo de trabalho ASP.NET-based
 
-1. Habilite a depuração para o aplicativo ASP.NET definindo **Debug = true** no arquivo Web. config.
+1. Habilite a depuração para o aplicativo ASP.NET definindo **Debug = true** no arquivo web.config.
 
 2. Defina a biblioteca de fluxo de trabalho como o projeto de inicialização, e pontos de interrupção no fluxo de trabalho.
 
@@ -52,5 +52,5 @@ Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](.
 
 10. Abra a página da Web padrão em um navegador e inicie o fluxo de trabalho.
 
-## <a name="see-also"></a>Consulte também
- [Invocar o depurador do Visual Studio para [How de Windows Workflow Foundation (Herdado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) para: Definir pontos de interrupção em fluxos de trabalho (herdados)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [depurar fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md)
+## <a name="see-also"></a>Consulte Também
+ [Invocando o depurador do Visual Studio para Windows Workflow Foundation (Herdado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [como definir pontos de interrupção nos fluxos de trabalho herdados da depuração de fluxos de trabalho (herdados)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md) [Debugging Legacy Workflows](../workflow-designer/debugging-legacy-workflows.md)

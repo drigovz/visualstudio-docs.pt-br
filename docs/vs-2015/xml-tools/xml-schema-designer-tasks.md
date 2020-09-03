@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf7fe3ef493caa3b77e3e25e8cfa7873fb51eeb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669398"
 ---
 # <a name="xml-schema-designer-tasks"></a>Tarefas do Designer de Esquema XML
@@ -44,5 +44,5 @@ Esta seção descreve como concluir tarefas comuns com as ferramentas do Designe
 
  [Arquivos XSD de exemplo](../xml-tools/sample-xsd-files.md) Fornece listagens de código para os documentos XSD de exemplo que são usados nos exemplos de tarefa.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Designer de Esquema XML](../xml-tools/xml-schema-designer.md)

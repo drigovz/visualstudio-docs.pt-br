@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa954cfb356593a4f22a44faddd69acdcfc93e37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669561"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Passo a passo: Usando recursos do editor XML
@@ -32,7 +32,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela Propriedades do documento, clique no botão procurar ( **...** ) no campo **esquemas** .
+3. Na janela Propriedades do documento, clique no botão procurar (**...**) no campo **esquemas** .
 
      A caixa de diálogo **esquemas XSD** é exibida.
 
@@ -60,7 +60,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
     - **funcionário** para adicionar o elemento raiz.
 
-2. Selecione **\<!--** para adicionar um nó de comentário e pressione Enter.
+2. Selecione ** \< !--** para adicionar um nó de comentário e pressione Enter.
 
      O editor insere uma marca de fim do comentário e colocar o cursor entre o início e marcas de comentário final.
 
@@ -104,7 +104,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ### <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
-1. No menu **arquivo** , selecione **salvar como**.
+1. No menu **arquivo**, selecione **Salvar como**.
 
      A caixa de diálogo **salvar arquivo como** é exibida. O nome de arquivo padrão é “XMLFile1”.
 
@@ -129,5 +129,5 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editor de XML](../xml-tools/xml-editor.md)
