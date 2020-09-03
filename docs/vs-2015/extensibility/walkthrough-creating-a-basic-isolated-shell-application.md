@@ -13,18 +13,18 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850344"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Walkthrough: Criando um aplicativo de shell isolado básico
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Passo a passo: criar um aplicativo básico de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial mostra como criar uma solução de shell isolada, personalizar a ajuda sobre a janela de ferramentas e criar um programa de instalação que instala o Shell isolado.  
   
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}  
+## <a name="prerequisites"></a>Pré-requisitos  
  Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Para implantar o Shell isolado, você também deve usar o pacote redistribuível do shell do Visual Studio (isolado).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Criando uma solução de shell isolado  
@@ -59,7 +59,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 1. No projeto MyVSShellStub, abra \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Altere o valor do elemento `AppName` para **"AppName" = "editor de música da Fabrikam"**  
+2. Altere o `AppName` valor do elemento para **"AppName" = "editor de música da Fabrikam"**  
   
 3. Para alterar o ícone do aplicativo, copie um ícone diferente para o diretório \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Renomeie o arquivo ApplicationIcon. ico existente para ApplicationIcon1. ico. Renomeie o novo arquivo para ApplicationIcon. ico.  
   
@@ -70,7 +70,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Para personalizar o navegador da Web padrão home page  
   
-1. No arquivo MyVSShellStub. Application. pkgdef, altere o valor do elemento `DefaultHomePage` para "<https://www.microsoft.com>".  
+1. No arquivo MyVSShellStub. Application. pkgdef, altere o `DefaultHomePage` valor do elemento para " <https://www.microsoft.com> ".  
   
 2. Reconstrua o projeto MyVSShellStub.  
   
@@ -79,7 +79,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
 4. Em **exibição/outras janelas**, clique em **navegador da Web**. A janela do **navegador da Web** exibe o Home Page da Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Removendo o comando Print  
- O arquivo. vsct em um projeto de interface do usuário do Shell isolado consiste em um conjunto de declarações do formulário `<Define name=No_`*elemento*`>`, em que *Element* é um dos menus e comandos padrão do Visual Studio.  
+ O arquivo. vsct em um projeto de interface do usuário do Shell isolado consiste em um conjunto de declarações do `<Define name=No_` *elemento*Form `>` , em que *Element* é um dos menus e comandos padrão do Visual Studio.  
   
  Se uma declaração não tiver um comentário, esse menu ou comando será excluído do Shell isolado. Por outro lado, se uma declaração for comentada, o menu ou comando será incluído no Shell isolado.  
   
@@ -115,7 +115,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 2. Remova a marca de comentário da seguinte linha:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages \\ {87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Recompile a solução e inicie a depuração do Shell isolado. Abra um arquivo XML, por exemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verifique se as palavras-chave XML no arquivo não estão coloridas e se a digitação de "<" em uma linha não traz dicas de ferramenta XML.  
   
@@ -126,7 +126,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 1. O nome da empresa, as informações de direitos autorais, a versão do produto e a descrição do produto são encontrados no projeto MyVSShellStub. AboutBoxPackage, no arquivo \Properties\AssemblyInfo.cs. Abra este arquivo.  
   
-2. Altere o valor de `AssemblyCompany` para **Fabrikam**, os valores de `AssemblyProduct` e `AssemblyTitle` para o **Editor de música Fabrikam**e o valor de `AssemblyCopyright` para **Copyright © Fabrikam 2015**:  
+2. Altere o `AssemblyCompany` valor para **Fabrikam**, os `AssemblyProduct` `AssemblyTitle` valores e para **Editor de música fabrikam**e o `AssemblyCopyright` valor para **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. Para adicionar uma descrição do produto, altere o valor `AssemblyDescription` para **a descrição do editor de música da Fabrikam.** :  
+3. Para adicionar uma descrição do produto, altere o `AssemblyDescription` valor para **a descrição do editor de música da Fabrikam.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Inicie a depuração e, no aplicativo de shell isolado, abra a caixa **ajuda/sobre** . Você deve ver as cadeias de caracteres alteradas. O título da caixa de ajuda/sobre é o mesmo que o valor de `AssemblyTitle` em AssemblyInfo.cs.  
+4. Inicie a depuração e, no aplicativo de shell isolado, abra a caixa **ajuda/sobre** . Você deve ver as cadeias de caracteres alteradas. O título da caixa de ajuda/sobre é o mesmo que o `AssemblyTitle` valor em AssemblyInfo.cs.  
   
-5. As propriedades da caixa de **ajuda/sobre** em si são encontradas no arquivo MyVSShellStub. AboutBoxPackage\AboutBox.XAML. Para alterar a largura da caixa de ajuda/sobre, vá para o bloco de `AboutDialogStyle` e defina a propriedade `Width` como 200:  
+5. As propriedades da caixa de **ajuda/sobre** em si são encontradas no arquivo MyVSShellStub. AboutBoxPackage\AboutBox.XAML. Para alterar a largura da caixa de ajuda/sobre, vá para o `AboutDialogStyle` bloco e defina a `Width` propriedade como 200:  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -206,15 +206,15 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll. manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub. pkgdef  
   
     5. MyVSShellStub.pkgundef  
   
     6. MyVSShellStub.winprf  
   
-    7. Splash. bmp  
+    7. Splash.bmp  
   
 5. Clique no botão **Adicionar saídas de projeto** e adicione a **saída MyVSShellStub/principal**. Clique em **OK**.  
   
@@ -226,9 +226,9 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 9. Clique no botão **Adicionar arquivos** e, na pasta \MyVSShellStub\Release\Extensions\Application\, adicione os seguintes arquivos:  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub. AboutBoxPackage. pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub. Application. pkgdef  
   
 10. Clique com o botão direito do mouse no nó do **Editor de música Fabrikam [installdir]** no painel esquerdo e adicione uma nova pasta chamada **1033**.  
   
@@ -254,9 +254,9 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 21. Reconstrua a solução de shell isolado para criar o projeto de instalação.  
   
-     Você pode encontrar o arquivo setup. exe na seguinte pasta:  
+     Você pode encontrar o arquivo de setup.exe na seguinte pasta:  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
 ## <a name="testing-the-installation-program"></a>Testando o programa de instalação  
- Para testar a instalação, copie o arquivo setup. exe para um computador diferente e execute o executável da instalação. Você deve ser capaz de executar o aplicativo de shell isolado.
+ Para testar a instalação, copie o arquivo de setup.exe para um computador diferente e execute o executável de instalação. Você deve ser capaz de executar o aplicativo de shell isolado.

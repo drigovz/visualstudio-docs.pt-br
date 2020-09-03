@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: b70c44f72d8f9d8fb25eb1c459946797cfb97913
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331569"
 ---
 # <a name="console"></a>Console
@@ -33,7 +33,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 
  **Iniciar:** `AppName` Inicia o criador de perfil e o aplicativo especificado por `AppName` .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Aplicativos Autônomos de Perfil](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Criar o perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

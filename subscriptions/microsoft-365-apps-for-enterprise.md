@@ -8,10 +8,10 @@ ms.date: 06/24/2020
 ms.topic: how-to
 description: Saiba mais e instale os aplicativos Microsoft 365 para empresas
 ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800808"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplicativos para empresas em assinaturas do Visual Studio
@@ -55,8 +55,8 @@ O processo de ativação de seus aplicativos Microsoft 365 para a assinatura Ent
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Yes          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Yes          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Sim          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
 | Visual Studio Professional com GitHub Enterprise | VL | Não disponível         |  N/D          |
@@ -77,7 +77,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

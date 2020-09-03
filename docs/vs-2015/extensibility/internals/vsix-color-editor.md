@@ -7,10 +7,10 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea5695c41b19cbd77c56a63f22b52fca5ee6f1eb
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295438"
 ---
 # <a name="vsix-color-editor"></a>Editor de cores do VSIX
@@ -55,7 +55,7 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e Editar c
   
    **Etapa 1: determinar os nomes de categoria e token para os novos tokens de cor.**  
   
-   O esquema de nomenclatura preferencial para um VSColor é **[categoria] [tipo de interface do usuário] [estado]** . Não use a palavra "Color" em nomes de VSColor, pois ela é redundante.  
+   O esquema de nomenclatura preferencial para um VSColor é **[categoria] [tipo de interface do usuário] [estado]**. Não use a palavra "Color" em nomes de VSColor, pois ela é redundante.  
   
    Os nomes de categoria fornecem agrupamentos lógicos e devem ser definidos da forma mais restrita possível. Por exemplo, o nome de uma única janela de ferramenta pode ser um nome de categoria, mas o nome de uma unidade de negócios ou equipe de projeto inteira não é. O agrupamento de entradas em categorias ajuda a evitar a confusão entre as cores com o mesmo nome.  
   
@@ -67,19 +67,19 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e Editar c
   
 - Ativo  
   
-- Inactive  
+- Inativo  
   
 - MouseOver  
   
 - MouseDown  
   
-- Selecionado  
+- Selecionada  
   
 - Focalizado  
   
   Exemplos de alguns nomes de token para partes de um controle de item de lista:  
   
-- ListItem  
+- Item  
   
 - ListItemBorder  
   
@@ -135,11 +135,11 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e Editar c
   
   ![Editor de cores do VSIX pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "Editor de cores do VSIX pkgdef")  
   
-  No editor de cores de extensão do Visual Studio, escolha Arquivo > Exibir código de recurso para exibir o código usado para acessar as cores personalizadas na interface do usuário baseada no WPF.  
+  No editor de cores de extensão do Visual Studio, escolha Arquivo > exibir código de recurso para exibir o código usado para acessar as cores personalizadas na interface do usuário baseada no WPF.  
   
   ![Visualizador de código de recurso do editor de cores VSIX](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Visualizador de código de recurso do editor de cores VSIX")  
   
-  Inclua esse código em uma classe estática no projeto. Uma referência a **Microsoft. VisualStudio. Shell.\<VSVersion > 0. dll** precisa ser adicionada ao projeto para usar o tipo **a themeresourcekey** .  
+  Inclua esse código em uma classe estática no projeto. Uma referência a **Microsoft. VisualStudio. Shell. \<VSVersion>.0.dll** precisa ser adicionada ao projeto para usar o tipo **a themeresourcekey** .  
   
 ```csharp  
 namespace MyCustomColors  
@@ -190,7 +190,7 @@ namespace MyCustomColors
 ## <a name="notes"></a>Observações  
  Essa ferramenta deve ser usada para criar cores personalizadas para os temas preexistentes do Visual Studio ou para editar as cores de um tema personalizado do Visual Studio. Para criar temas personalizados do Visual Studio, baixe a [extensão do editor de tema de cores do Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) na Galeria de extensões do Visual Studio.  
   
-## <a name="sample-output"></a>Saída de Exemplo  
+## <a name="sample-output"></a>Saída de exemplo  
  **Saída de cor XML**  
   
  O arquivo. XML gerado pela ferramenta será semelhante a este:  
@@ -238,7 +238,7 @@ namespace MyCustomColors
   
 ```  
   
- **C#invólucro de chaves de recurso**  
+ **Wrapper de chaves de recurso do C#**  
   
  As chaves de recurso de cor geradas pela ferramenta serão semelhantes a esta:  
   

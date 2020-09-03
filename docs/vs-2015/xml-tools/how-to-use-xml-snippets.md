@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4998fbc530cf4350f4a64b0fd527e0764eafce27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656271"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Use snippets XML
@@ -109,5 +109,5 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
 
  As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do campo de trecho de código no painel **fontes e cores** da caixa de diálogo **Opções** . Para obter mais informações, consulte [como alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Trechos XML](../xml-tools/xml-snippets.md) [como: gerar um trecho XML de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md) [como criar trechos XML](../xml-tools/how-to-create-xml-snippets.md)

@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c6dcd6da21d83203f2e22472aaeb226f65e8475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191533"
 ---
 # <a name="instruction-pointers-ips-view"></a>Exibição de ponteiros de instrução (IPs)
@@ -36,7 +36,7 @@ A exibição dos Ponteiros de Instrução permite ver as instruções específic
   
  Para dados da memória do .NET, a exibição de Linhas identifica as instruções que alocam memória.  
   
-## <a name="see-also"></a>Veja também  
- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Exibição de IPs (ponteiros de instrução) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-contention-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de ponteiros de instrução (IPs)](../profiling/instruction-pointers-ips-view-sampling-data.md)   
+ [Exibição de ponteiros de instrução (IPs)-amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Exibição de ponteiros de instrução (IPs)](../profiling/instruction-pointers-ips-view-contention-data.md)

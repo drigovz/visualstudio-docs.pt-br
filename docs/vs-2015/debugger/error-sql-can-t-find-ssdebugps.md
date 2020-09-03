@@ -1,5 +1,5 @@
 ---
-title: 'Erro: SQL pode&#39;t consegue localizar SSDEBUGPS | Microsoft Docs'
+title: 'Erro: o SQL pode&#39;t localizar SSDEBUGPS | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185206"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>Erro: SQL pode&#39;t consegue localizar SSDEBUGPS
+# <a name="error-sql-can39t-find-ssdebugps"></a>Erro: o SQL pode&#39;t localizar SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 SSDEBUGPS.dll é o componente do host de depuração do SQL Server.  
@@ -33,9 +33,9 @@ SSDEBUGPS.dll é o componente do host de depuração do SQL Server.
   
  Há duas maneiras de resolver este erro: executando novamente a instalação da Depuração Remota e copiando o arquivo no computador do [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)].  
   
- Para executar novamente a instalação da depuração remota, siga as instruções em [depuração remota](../debugger/remote-debugging.md).  
+ Para executar novamente a instalação de depuração remota, siga as instruções em [depuração remota](../debugger/remote-debugging.md).  
   
- Se você puder localizar uma cópia de ssdebugps.dll, poderá copiá-lo no computador do [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]. Se houver, o arquivo estará no diretório \Arquivos de Programas\ Common Files\Microsoft Shared\SQL Debugging. Você pode encontrá-lo em outro [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] computador, ou em um computador que tenha [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] instalado.  
+ Se você puder localizar uma cópia de ssdebugps.dll, poderá copiá-lo no computador do [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]. Se houver, o arquivo estará no diretório \Arquivos de Programas\ Common Files\Microsoft Shared\SQL Debugging. Você pode encontrá-lo em outro [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] computador ou em um computador que tenha o [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] instalado.  
   
 ### <a name="to-copy-ssdebugpsdll-onto-the-sql-server-2005-machine"></a>Para copiar o SSDEBUGPS.dll no computador do SQL Server 2005  
   

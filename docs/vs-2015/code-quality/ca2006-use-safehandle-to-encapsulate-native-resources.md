@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fdf3ff02c86a878e9c955d2b3b92879870700efa
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521141"
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Usar SafeHandle para encapsular recursos nativos
@@ -40,7 +40,7 @@ ms.locfileid: "85521141"
 
  Nesses cenários, problemas de segurança ou confiabilidade também existirão se o acesso multithread for permitido para o `IntPtr` e uma maneira de liberar o recurso que é representado pelo `IntPtr` for fornecido. Esses problemas envolvem a reciclagem do `IntPtr` valor na liberação de recursos enquanto o uso simultâneo do recurso está sendo feito em outro thread. Isso pode causar condições de corrida em que um thread pode ler ou gravar dados associados ao recurso errado. Por exemplo, se o seu tipo armazena um identificador de sistema operacional como um `IntPtr` e permite que os usuários chamem o **fechamento** e qualquer outro método que usa esse identificador simultaneamente e sem algum tipo de sincronização, seu código tem um problema de reciclagem de identificador.
 
- Esse problema de reciclagem de identificador pode causar corrupção de dados e, frequentemente, uma vulnerabilidade de segurança. `SafeHandle`e sua classe irmã <xref:System.Runtime.InteropServices.CriticalHandle> fornece um mecanismo para encapsular um identificador nativo para um recurso para que tais problemas de Threading possam ser evitados. Além disso, você pode usar `SafeHandle` e sua classe irmã `CriticalHandle` para outros problemas de Threading, por exemplo, para controlar cuidadosamente o tempo de vida de objetos gerenciados que contêm uma cópia do identificador nativo em chamadas para métodos nativos. Nessa situação, muitas vezes você pode remover chamadas para `GC.KeepAlive` . A sobrecarga de desempenho tailandês que você incorrerá ao usar `SafeHandle` e, para um menor grau, `CriticalHandle` , muitas vezes, pode ser reduzida por meio de um design cuidadoso.
+ Esse problema de reciclagem de identificador pode causar corrupção de dados e, frequentemente, uma vulnerabilidade de segurança. `SafeHandle` e sua classe irmã <xref:System.Runtime.InteropServices.CriticalHandle> fornece um mecanismo para encapsular um identificador nativo para um recurso para que tais problemas de Threading possam ser evitados. Além disso, você pode usar `SafeHandle` e sua classe irmã `CriticalHandle` para outros problemas de Threading, por exemplo, para controlar cuidadosamente o tempo de vida de objetos gerenciados que contêm uma cópia do identificador nativo em chamadas para métodos nativos. Nessa situação, muitas vezes você pode remover chamadas para `GC.KeepAlive` . A sobrecarga de desempenho tailandês que você incorrerá ao usar `SafeHandle` e, para um menor grau, `CriticalHandle` , muitas vezes, pode ser reduzida por meio de um design cuidadoso.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Converta o `IntPtr` uso para `SafeHandle` para gerenciar com segurança o acesso a recursos nativos. Consulte o <xref:System.Runtime.InteropServices.SafeHandle> tópico de referência para obter exemplos.

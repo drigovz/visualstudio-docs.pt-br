@@ -1,5 +1,5 @@
 ---
-title: Implementando um Avaliador de Expressão | Microsoft Docs
+title: Implementando um avaliador de expressão | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,25 +12,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738547"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementar um avaliador de expressão
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Avaliar uma expressão é uma interação complexa entre o mecanismo de depuração (DE), o provedor de símbolos (SP), o objeto de aglutinante e o avaliador de expressão (EE). Esses quatro componentes são conectados por interfaces que são implementadas por um componente e consumidas por outro.
+ Avaliar uma expressão é uma interatividade complexa entre o mecanismo DE depuração (DE), o provedor de símbolos (SP), o objeto de fichário e o avaliador de expressão (EE). Esses quatro componentes são conectados por interfaces que são implementadas por um componente e consumidas por outro.
 
- O EE toma uma expressão do DE na forma de uma seqüência e analisa ou avalia-a. O EE executa as seguintes interfaces, que são consumidas pelo DE:
+ O EE usa uma expressão de de na forma de uma cadeia de caracteres e a analisa ou avalia. O EE executa as seguintes interfaces, que são consumidas pelo:
 
 - [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 
 - [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)
 
-  O EE chama o objeto de encadernação, fornecido pelo DE, para obter o valor de símbolos e objetos. O EE consome as seguintes interfaces, que são implementadas pelo DE:
+  O EE chama o objeto Binder, fornecido pelo DE, para obter o valor de símbolos e objetos. O EE consome as seguintes interfaces, que são implementadas pelo DE:
 
 - [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)
 
@@ -46,9 +46,9 @@ ms.locfileid: "80738547"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  O EE executa [o IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2`fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que exibe as informações apropriadas na janela **Locals**, **Watch**ou **Immediate.**
+  O EE executa [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que exibe as informações apropriadas na janela **locais**, **inspecionar**ou **imediato** .
 
-  O SP é entregue ao EE pelo DE quando pede informações. A SP executa interfaces que descrevem endereços e campos, como as seguintes interfaces e seus derivados:
+  O SP é fornecido ao EE pelo DE quando ele solicita informações. O SP executa interfaces que descrevem endereços e campos, como as seguintes interfaces e seus derivados:
 
 - [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
 

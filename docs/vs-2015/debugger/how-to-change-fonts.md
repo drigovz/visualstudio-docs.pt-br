@@ -1,5 +1,5 @@
 ---
-title: 'Como: Alterar fontes | Microsoft Docs'
+title: 'Como: alterar fontes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,28 +12,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185183"
 ---
-# <a name="how-to-change-fonts"></a>Como: Alterar fontes
+# <a name="how-to-change-fonts"></a>Como alterar fontes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode alterar a fonte, estilo de fonte e tamanho da fonte para o windows Spy + +.  
+Você pode alterar a fonte, o estilo da fonte e o tamanho da fonte para o Spy + + Windows.  
   
 ### <a name="to-change-font-options"></a>Para alterar as opções de fonte  
   
-1. Dos **modo de exibição** menu, escolha **fonte**.  
+1. No menu **Exibir** , escolha **fonte**.  
   
-2. Escolha uma fonte, estilo de fonte e tamanho da fonte.  
+2. Escolha uma fonte, um estilo de fonte e um tamanho de fonte.  
   
 3. Clique em **OK**.  
   
-   Selecionando **fonte Salvar como padrão** fará com que todas as futuras Spy + + windows para usar essa fonte.  
+   A seleção de **salvar fonte como padrão** fará com que todas as outras janelas do Spy + + usem essa fonte.  
   
-## <a name="see-also"></a>Consulte também  
- [Usando o Spy++](../debugger/using-spy-increment.md)   
- [Exibições do Spy++](../debugger/spy-increment-views.md)   
- [Referência a Spy++](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Usando o Spy + +](../debugger/using-spy-increment.md)   
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md)   
+ [Referência de Spy++](../debugger/spy-increment-reference.md)
