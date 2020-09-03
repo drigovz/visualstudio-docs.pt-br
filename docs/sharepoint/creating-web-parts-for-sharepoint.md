@@ -24,9 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015048"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar Web Parts para SharePoint
@@ -99,7 +100,7 @@ ms.locfileid: "86015048"
   Para obter mais informações sobre soluções em área restrita, consulte [diferenças entre as soluções de área restrita e de farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Criar Web Parts baseadas no SharePoint com estilo antigo
- Você pode usar os modelos no Visual Studio para criar [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web Parts personalizadas para o SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]as Web Parts são criadas sobre a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infraestrutura da Web Part e são o tipo recomendado para novos projetos.
+ Você pode usar os modelos no Visual Studio para criar [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web Parts personalizadas para o SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] as Web Parts são criadas sobre a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infraestrutura da Web Part e são o tipo recomendado para novos projetos.
 
  Em poucos casos, talvez seja necessário criar uma Web Part usando a Web Part com estilo mais antigo do SharePoint. Você pode usar o Visual Studio para criar esses tipos de Web Parts, mas o Visual Studio não fornece modelos projetados especificamente para ajudá-lo a criá-los.
 
@@ -107,7 +108,7 @@ ms.locfileid: "86015048"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar Web Parts para páginas do SharePoint.|
 |[Como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar Web Parts para o SharePoint usando uma superfície de Design Visual.|

@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015058"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Criar definições de site para o SharePoint
@@ -43,9 +44,9 @@ ms.locfileid: "86015058"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
-|[Passo a passo: Criar um projeto de definição de site básico](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|O conduz passo a passo por meio da criação de um projeto básico de definição de site no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Passo a passo: criar um projeto de definição de site básico](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|O conduz passo a passo por meio da criação de um projeto básico de definição de site no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Como criar uma definição e configuração de site personalizados](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Descreve como criar uma definição de site personalizada no SharePoint copiando uma definição de site existente e, em seguida, modificando a cópia.|
 |[*WebTemp.xml*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Descreve o arquivo original que especifica as definições de site disponíveis na seção **seleção de modelo** da página **novo site do SharePoint** .|
 |[Localizar soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Descreve como preparar suas soluções do SharePoint para uso global.|
@@ -57,5 +58,5 @@ ms.locfileid: "86015058"
 |[Páginas da Web do ASP.NET de programação](/previous-versions/aspnet/0yt4zca8(v=vs.100))|Fornece informações sobre como criar manipuladores de eventos em [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas e como trabalhar com o script de cliente.|
 |[Programação no Windows SharePoint Services](/previous-versions/office/developer/sharepoint-services/ms430674(v=office.12))|Descreve como usar o modelo de objeto gerenciado que é fornecido no [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] .|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

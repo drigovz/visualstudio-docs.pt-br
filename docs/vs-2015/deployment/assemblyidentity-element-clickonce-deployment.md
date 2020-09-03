@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;elemento AssemblyIdentity (implantação do ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,18 +18,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bfc2ff97a2eb465fe7306ebe368a20e2a7fd8638
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155720"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt; elemento (implantação do ClickOnce)
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento AssemblyIdentity (implantação do ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Identifica o assembly principal da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
+Identifica o assembly primário do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -43,20 +43,20 @@ Identifica o assembly principal da [!INCLUDE[ndptecclick](../includes/ndptecclic
 ```  
   
 ## <a name="elements-and-attributes"></a>Elementos e atributos  
- O `assemblyIdentity` elemento é necessário. Ele não contém nenhum elemento filho e tem os seguintes atributos.  
+ O `assemblyIdentity` elemento é obrigatório. Ele não contém nenhum elemento filho e tem os atributos a seguir.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`name`|Necessário. Identifica o nome legível por humanos da implantação para fins informativos.<br /><br /> Se `name` contiver caracteres especiais, como aspas simples ou duplas, o aplicativo poderá falhar ao ativar.|  
-|`version`|Necessário. Especifica o número de versão do assembly, no seguinte formato: `major.minor.build.revision`.<br /><br /> Esse valor deve ser incrementado em um manifesto atualizado para disparar uma atualização de aplicativo.|  
-|`publicKeyToken`|Necessário. Especifica uma cadeia hexadecimal de 16 caracteres que representa os últimos 8 bytes do valor de hash SHA-1 da chave pública sob a qual o manifesto de implantação é assinado. A chave pública que é usada para assinar deve ser de 2048 bits ou superior.<br /><br /> Embora a assinar um assembly é opcional mas recomendado, esse atributo é necessário. Se um assembly estiver assinado, você deve copiar um valor de um assembly autoassinado ou use um valor "fictício" de todos os zeros.|  
-|`processorArchitecture`|Necessário. Especifica o processador. Os valores válidos são `msil` de todos os processadores, `x86` para Windows de 32 bits `IA64` para Windows de 64 bits, e `Itanium` para processadores de 64 bits Intel Itanium.|  
-|`type`|Necessário. Para compatibilidade com a tecnologia de instalação lado a lado do Windows. O único valor permitido é `win32`.|  
+|`name`|Obrigatórios. Identifica o nome legível da implantação para fins informativos.<br /><br /> Se `name` o contiver caracteres especiais, como aspas simples ou duplas, o aplicativo poderá falhar ao ser ativado.|  
+|`version`|Obrigatórios. Especifica o número de versão do assembly, no seguinte formato: `major.minor.build.revision` .<br /><br /> Esse valor deve ser incrementado em um manifesto atualizado para disparar uma atualização de aplicativo.|  
+|`publicKeyToken`|Obrigatórios. Especifica uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do valor de hash SHA-1 da chave pública sob a qual o manifesto de implantação é assinado. A chave pública usada para assinar deve ter 2048 bits ou mais.<br /><br /> Embora a assinatura de um assembly seja recomendada, mas opcional, esse atributo é necessário. Se um assembly não estiver assinado, você deverá copiar um valor de um assembly autoassinado ou usar um valor "fictício" de todos os zeros.|  
+|`processorArchitecture`|Obrigatórios. Especifica o processador. Os valores válidos são `msil` para todos os processadores, `x86` para o windows de 32 bits, `IA64` para o Windows de 64 bits e `Itanium` para processadores Intel de 64 bits Itanium.|  
+|`type`|Obrigatórios. Para compatibilidade com a tecnologia de instalação lado a lado do Windows. O único valor permitido é `win32` .|  
   
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir ilustra uma `assemblyIdentity` elemento em um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. Este exemplo de código é parte de um exemplo maior fornecido para o [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) tópico.  
+ O exemplo de código a seguir ilustra um `assemblyIdentity` elemento em um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto de implantação. Este exemplo de código faz parte de um exemplo maior fornecido para o tópico [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) .  
   
 ```  
 <!-- Identify the deployment. -->  
@@ -69,6 +69,6 @@ Identifica o assembly principal da [!INCLUDE[ndptecclick](../includes/ndptecclic
   xmlns="urn:schemas-microsoft-com:asm.v1" />  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Elemento \<assemblyIdentity>](../deployment/assemblyidentity-element-clickonce-application.md)
+ [\<assemblyIdentity> Elementos](../deployment/assemblyidentity-element-clickonce-application.md)

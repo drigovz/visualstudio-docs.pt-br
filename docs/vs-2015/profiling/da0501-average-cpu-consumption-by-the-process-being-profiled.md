@@ -1,5 +1,5 @@
 ---
-title: 'DA0501: Consumo médio de CPU pelo Processo cujo perfil está sendo criado. | Microsoft Docs'
+title: 'DA0501: consumo de CPU médio pelo processo com perfil criado. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155771"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Consumo médio de CPU pelo Processo cujo perfil está sendo criado.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: consumo de CPU médio pelo processo com perfil criado.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA501 |  
+ID da regra | DA501 |  
 | Categoria | Monitoramento de recursos |  
-| Método de criação de perfil | Todos os |  
-| Mensagem | Média de consumo da CPU pelo processo que está sendo analisado. |  
+| Método de criação de perfil | Todos |  
+| Mensagem | Consumo médio de CPU pelo processo que está sendo analisado. |  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  

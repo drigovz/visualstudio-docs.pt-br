@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs
+title: 'IDebugSymbolProvider:: GetClassTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a1be0aaaf9e960b95deaa7c949993a950647ce89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719420"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
-Este método obtém o tipo de campo de classe representando um nome de classe totalmente qualificado.
+Esse método obtém o tipo de campo de classe que representa um nome de classe totalmente qualificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,18 +43,18 @@ int GetClassTypeByName(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pszClassName`\
-[em] O nome da classe.
+no O nome da classe.
 
 `nameMatch`\
-[em] Seleciona o tipo de correspondência, por exemplo, sensível a maiúsculas e minúsculas. Um valor da [enumeração NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
+no Seleciona o tipo de correspondência, por exemplo, diferencia maiúsculas de minúsculas. Um valor da enumeração de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppField`\
-[fora] Retorna o tipo de classe representado pela interface [IDebugClassField.](../../../extensibility/debugger/reference/idebugclassfield.md)
+fora Retorna o tipo de classe conforme representado pela interface [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

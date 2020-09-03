@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
+title: 'IDebugSymbolProviderDirect:: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718946"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
@@ -50,30 +50,30 @@ int GetMethodFromAddress(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pAddress`\
-[em] Endereço de depuração representado pela interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+no Endereço de depuração que é representado pela interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pGuid`\
-[fora] Identificador único do módulo.
+fora Identificador exclusivo do módulo.
 
 `pAppID`\
-[fora] Identificador do domínio do aplicativo.
+fora Identificador do domínio do aplicativo.
 
 `pTokenClass`\
-[fora] Token que representa a classe de contenção.
+fora O token que representa a classe que a contém.
 
 `pTokenMethod`\
-[fora] Token que representa o módulo.
+fora Token que representa o módulo.
 
 `pdwOffset`\
-[fora] Um deslocamento em bytes desde `pAddress` o início do parâmetro.
+fora Um deslocamento em bytes do início do `pAddress` parâmetro.
 
 `pdwVersion`\
-[fora] Número da versão do método.
+fora Número de versão do método.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

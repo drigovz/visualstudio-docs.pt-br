@@ -1,5 +1,5 @@
 ---
-title: Suporte a controle de origem | Microsoft Docs
+title: Suporte ao controle do código-fonte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,49 +11,49 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d1166197a5c79dcb0d1ddf4018227914346a6172
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156070"
 ---
 # <a name="supporting-source-control"></a>Suporte para controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a check-outs de arquivo, check-ins e outras operações de controle do código-fonte para seu projeto ou um editor. Como um cliente de controle do código-fonte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] foi projetado para interagir com um pacote de controle do código-fonte, como [!INCLUDE[vsvss](../../includes/vsvss-md.md)], que fornece o arquivamento, controle de versão e recursos de controle para um conjunto de arquivos definido dinamicamente.  
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a check-outs de arquivo, check-ins e outras operações de controle do código-fonte para seu projeto ou editor. Como um cliente de controle do código-fonte, o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é projetado para interagir com um pacote de controle do código-fonte, como [!INCLUDE[vsvss](../../includes/vsvss-md.md)] o, que fornece arquivamento, controle de versão e instalações para um conjunto de arquivos definido dinamicamente.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Modelo para pacotes de controle do código-fonte](../../extensibility/internals/model-for-source-control-packages.md)  
+ [Modelo de pacotes de controle do código-fonte](../../extensibility/internals/model-for-source-control-packages.md)  
  Descreve as interfaces que um tipo de projeto deve implementar para dar suporte ao controle do código-fonte.  
   
  [Decisões de design](../../extensibility/internals/source-control-design-decisions.md)  
- Fornece as perguntas para cujas respostas alterar como você pode implementar um tipo de projeto.  
+ Fornece perguntas cujas respostas mudam como você implementa um tipo de projeto.  
   
- [Detalhes de configuração](../../extensibility/internals/source-control-configuration-details.md)  
- Descreve como dar suporte a controle de origem é alterado a implementação de um tipo de projeto.  
+ [Detalhes da configuração](../../extensibility/internals/source-control-configuration-details.md)  
+ Descreve como o controle do código-fonte de suporte altera a implementação de um tipo de projeto.  
   
  [Diretrizes adicionais para projetos e editores](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
- Discute as práticas recomendadas para tipos de projeto e editores.  
+ Discute as práticas recomendadas para editores e tipos de projeto.  
   
- [Detalhes de tempo de execução](../../extensibility/internals/source-control-runtime-details.md)  
- Descreve como registrar um projeto quando um usuário adiciona a um sistema de controle de origem.  
+ [Detalhes de runtime](../../extensibility/internals/source-control-runtime-details.md)  
+ Descreve como registrar um projeto quando um usuário o adiciona a um sistema de controle de origem.  
   
 ## <a name="reference"></a>Referência  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>  
- Indica para o ambiente ou o pacote de controle de origem que um arquivo está prestes a ser alterada na memória ou salvos.  
+ Indica ao ambiente ou ao pacote de controle do código-fonte que um arquivo está prestes a ser alterado na memória ou salvo.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>  
- Permite que projetos e hierarquias se registrem com controle do código-fonte e obter informações sobre o status de controle do código-fonte.  
+ Permite que projetos e hierarquias se registrem com o controle do código-fonte e obtenham informações sobre o status do controle do código-fonte.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>  
- Quando implementado em um sistema de projeto para fornecer controle de origem para arquivos de projeto e itens de projeto.  
+ Implementado em um sistema de projeto para fornecer controle do código-fonte para arquivos de projeto e itens de projeto.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>  
- Usado por projetos para consultar o ambiente de permissão para adicionar, remover ou renomear um arquivo ou diretório em uma solução.  
+ Usado por projetos para consultar o ambiente para obter permissão para adicionar, remover ou renomear um arquivo ou diretório em uma solução.  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>  
- Notifica os clientes das alterações que foram feitas em arquivos de projeto ou diretórios.  
+ Notifica os clientes sobre as alterações feitas nos arquivos ou diretórios do projeto.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Tipos de projeto](../../extensibility/internals/project-types.md)  
- Fornece uma visão geral dos projetos como blocos de construção básicos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). São fornecidos links para tópicos adicionais que explicam como projetos de controle de criação e compilação de código.
+ [Tipos de Projeto](../../extensibility/internals/project-types.md)  
+ Fornece uma visão geral dos projetos como os blocos de construção básicos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE (ambiente de desenvolvimento integrado). São fornecidos links para tópicos adicionais que explicam como os projetos controlam a criação e a compilação de código.

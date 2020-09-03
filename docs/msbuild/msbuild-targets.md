@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250671"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
@@ -1012,7 +1012,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
         DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

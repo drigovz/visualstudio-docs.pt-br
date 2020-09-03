@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275441"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
@@ -30,10 +30,10 @@ ms.locfileid: "77275441"
   * [MaxRunsWithoutNewTests excedido](#maxrunswithoutnewtests-exceeded)
 
 * **Solução de restrição**
-  * [Não é possível concretizar solução](#cannot-concretize-solution)
+  * [Não é possível concretizar a solução](#cannot-concretize-solution)
 
-* **Domínios ou Tempo de execução**
-  * [precisa de ajuda para construir objeto](#help-construct)
+* **Domínios ou tempo de execução**
+  * [Precisa de ajuda para construir objeto](#help-construct)
   * [Precisa de Ajuda para Encontrar Tipos](#help-types)
   * [Tipo utilizável adivinhado](#usable-type-guessed)
 
@@ -43,13 +43,13 @@ ms.locfileid: "77275441"
 
 * **Instrumentação**
   * [Método Não Instrumentado Chamado](#uninstrumented-method-called)
-  * [Método Externo Chamado](#external-method-called)
-  * [Método inatoável chamado](#uninstrumentable-method-called)
+  * [Método externo chamado](#external-method-called)
+  * [Método não instrumentado chamado](#uninstrumentable-method-called)
   * [Problema de Capacidade de Teste](#testability-issue)
   * [Limitação](#limitation)
 
 * **Interpretador**
-  * [Observado Chamada Incompatibilidade](#observed-call-mismatch)
+  * [Incompatibilidade de chamada observada](#observed-call-mismatch)
   * [Valor armazenado em campo estático](#value-static-field)
 
 <a name="maxbranches-exceeded"></a>
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Você pode editar a opção **MaxConditions** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Por exemplo: 
+Você pode editar a opção **MaxConditions** de um atributo derivado de **PexSettingsAttributeBase**, como [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Por exemplo:
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -254,7 +254,7 @@ Você pode ajudar o IntelliTest apontando para um ou mais tipos que correspondam
 
 O IntelliTest [gera as entradas de teste](input-generation.md) para qualquer tipo de .NET. Quando um tipo é abstrato ou uma interface, o IntelliTest deve escolher uma implementação específica desse tipo. Para fazer essa escolha, é necessário saber quais são os tipos existentes.
 
-Quando este aviso é mostrado, ele indica que a IntelliTest analisou alguns dos conjuntos referenciados e encontrou um tipo de implementação, mas não é certo se ele deve usar esse tipo, ou se há tipos mais apropriados disponíveis em outros lugares. IntelliTest simplesmente escolhe um tipo que pareceu promissor.
+Quando esse aviso é mostrado, ele indica que o IntelliTest examinou alguns dos assemblies referenciados e encontrou um tipo de implementação, mas não tem certeza se ele deve usar esse tipo ou se há mais tipos apropriados disponíveis em outro lugar. IntelliTest simplesmente escolhe um tipo que pareceu promissor.
 
 Para evitar este aviso, você pode aceitar a escolha de tipo do IntelliTest ou ajudar o IntelliTest no uso de outros tios adicionando um [PexUseType](attribute-glossary.md#pexusetype) correspondente.
 

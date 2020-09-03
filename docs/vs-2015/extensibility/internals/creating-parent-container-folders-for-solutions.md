@@ -12,20 +12,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196933"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Criando pastas de contêiner pai para soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da Web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).  
+Na API de plug-in de controle do código-fonte versão 1,2, um usuário pode especificar um destino de controle do código-fonte de raiz única para todos os projetos da Web na solução. Essa raiz única é chamada de sur (raiz unificada).  
   
- A fonte de plug-in de API de controle de versão 1.1, se o usuário tiver adicionado uma solução multiprojeto ao controle do código-fonte, o usuário foi solicitado para especificar um destino de controle de origem para cada projeto da Web.  
+ Na API de plug-in de controle do código-fonte versão 1,1, se o usuário adicionou uma solução multiprojeto ao controle do código-fonte, o usuário foi solicitado a especificar um destino de controle do código-fonte para cada projeto Web.  
   
-## <a name="new-capability-flags"></a>Novos sinalizadores de recurso  
+## <a name="new-capability-flags"></a>Novos sinalizadores de capacidade  
  `SCC_CAP_CREATESUBPROJECT`  
   
  `SCC_CAP_GETPARENTPROJECT`  
@@ -35,36 +35,36 @@ Na fonte de controle de plug-in API versão 1.2, um usuário pode especificar um
   
  [SccGetParentProjectPath](../../extensibility/sccgetparentprojectpath-function.md)  
   
- O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, isso é feito nos seguintes casos:  
+ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE quase sempre cria uma pasta sur ao adicionar uma solução ao controle do código-fonte. Especificamente, isso é feito nos seguintes casos:  
   
-- O projeto é um compartilhamento de arquivos de projeto da Web.  
+- O projeto é um projeto Web de compartilhamento de arquivos.  
   
-- Existem diferentes unidades para o projeto e o arquivo de solução.  
+- Há unidades diferentes para o projeto e o arquivo de solução.  
   
-- Não há compartilhamento diferente para o projeto e o arquivo de solução.  
+- Há diferentes compartilhamentos para o projeto e o arquivo de solução.  
   
-- Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).  
+- Os projetos foram adicionados separadamente (em uma solução controlada por origem).  
   
-  No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.  
+  No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , é recomendável que o nome da pasta sur seja o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento nas duas versões.  
   
-|Recurso|tSource 1.1 de versão de API de plug-in de controle|Versão 1.2 da API de plug-in de controle de origem|  
+|Recurso|API de plug-in de controle tSource versão 1,1|API de plug-in de controle do código-fonte versão 1,2|  
 |-------------|----------------------------------------------|---------------------------------------------|  
 |Adicionar solução ao SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
-|Adicionar o projeto à solução de controle do código-fonte|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject() **Note:**  O Visual Studio pressupõe que uma solução é um filho direto do SUR o.|  
+|Adicionar projeto à solução controlada por origem|SccGetProjPath()<br /><br /> OpenProject ()|SccGetParentProjectPath()<br /><br /> SccOpenProject () **Observação:**  o Visual Studio pressupõe que uma solução é um filho direto do sur.|  
   
 ## <a name="examples"></a>Exemplos  
- A tabela a seguir lista os dois exemplos. Em ambos os casos, o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usuário é solicitado a fornecer um local de destino para a solução sob controle de origem até que o *user_choice* é especificado como um destino. Quando o user_choice for especificado, a solução e dois projetos são adicionados sem avisar o usuário para destinos de controle do código-fonte.  
+ A tabela a seguir lista dois exemplos. Em ambos os casos, o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usuário será solicitado a fornecer um local de destino para a solução no controle do código-fonte até que a  *user_choice* seja especificada como um destino. Quando o user_choice é especificado, a solução e dois projetos são adicionados sem solicitar ao usuário destinos de controle do código-fonte.  
   
-|Solução contém|Em locais de disco|Estrutura do banco de dados padrão|  
+|A solução contém|Em locais de disco|Estrutura padrão do banco de dados|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*/C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*/D/web1<br /><br /> $/*user_choice*/sln1/win1|  
+|sln1. sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot $ \web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*/C/web1<br /><br /> $/*user_choice*/web2|  
+|sln1. sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*/D/web1<br /><br /> $/*user_choice*/sln1/win1|  
   
- A pasta SUR e subpastas são criadas, independentemente da operação seja cancelada ou falha devido a um erro. Eles não são removidos automaticamente em condições de erro ou cancelamento.  
+ A pasta SUR e as subpastas são criadas independentemente de a operação ser cancelada ou falhar devido a um erro. Elas não são removidas automaticamente em condições de cancelamento ou erro.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] assume como padrão o comportamento da versão 1.1, se o plug-in de controle do código-fonte não retornar `SCC_CAP_CREATESUBPROJECT` e `SCC_CAP_GETPARENTPROJECT` sinalizadores de recurso. Além disso, os usuários de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pode escolher reverter para o versão 1.1 comportamento, definindo o valor da chave a seguir como DWORD: 00000001:  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o padrão é o comportamento da versão 1,1 se o plug-in de controle do código-fonte não retornar `SCC_CAP_CREATESUBPROJECT` e os `SCC_CAP_GETPARENTPROJECT` sinalizadores de funcionalidade. Além disso, os usuários de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] podem optar por reverter para o comportamento da versão 1,1 definindo o valor da seguinte chave como DWORD: 00000001:  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
+ [HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
   
-## <a name="see-also"></a>Consulte também  
- [Novidades na Versão 1.2 da API do plug-in de controle de código-fonte](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>Consulte Também  
+ [Novidades na API do plug-in de controle do código-fonte versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

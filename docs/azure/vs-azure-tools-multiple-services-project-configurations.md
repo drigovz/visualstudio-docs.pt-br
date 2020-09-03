@@ -10,10 +10,10 @@ ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85280538"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
@@ -53,7 +53,7 @@ Se você já tiver adicionado um ponto de extremidade HTTPS, a opção de ponto 
 
 Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor (**...**) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Página Configurações
+## <a name="settings-page"></a>Página de configurações
 
 Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](/previous-versions/azure/dn602775(v=azure.11)), especificamente, o método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 

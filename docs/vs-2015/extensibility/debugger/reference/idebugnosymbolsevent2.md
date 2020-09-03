@@ -11,29 +11,29 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d36b1091f34318ccba1ce0a997ad23043cbdeb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155573"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Sinaliza o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] da interface do usuário para avisar o usuário que símbolos não pôde ser localizados para o executável iniciado do depurador.  
+Sinaliza a interface de usuário do [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depurador para avisar ao usuário que não foi possível localizar os símbolos para o executável iniciado.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugNoSymbolsEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Implementado por mecanismos de depuração e consumido pelo [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] da interface do usuário do depurador.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ Implementado por mecanismos de depuração e consumido pela [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interface do usuário do depurador.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Msdbg.h  
+ Cabeçalho: Msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

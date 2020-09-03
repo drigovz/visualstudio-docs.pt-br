@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156442"
 ---
 # <a name="analyzing-performance-tools-data"></a>Analisando dados de ferramentas de desempenho
@@ -34,7 +34,7 @@ Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsp
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
 |**Usar regras de desempenho para identificar problemas rapidamente:** regras de desempenho das Ferramentas de Criação de Perfil identificam problemas comuns e ajudam a navegar facilmente no código-fonte que contém o problema. Tópicos de ajuda detalhados com frequência podem sugerir uma solução.|-   [Usando regras de desempenho para analisar dados](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**Entender os detalhes da exibição de relatório:** exibições de relatório das Ferramentas de Criação de Perfil apresentam dados de desempenho agregados para processos, threads, módulos e funções de uma execução de criação de perfil. Os dados exibidos dependem do método de criação de perfil usado para coletar os dados.|-   [Exibições do relatório de desempenho](../profiling/performance-report-views.md)|  
+|**Entender os detalhes da exibição de relatório:** exibições de relatório das Ferramentas de Criação de Perfil apresentam dados de desempenho agregados para processos, threads, módulos e funções de uma execução de criação de perfil. Os dados exibidos dependem do método de criação de perfil usado para coletar os dados.|-   [Exibições de relatório de desempenho](../profiling/performance-report-views.md)|  
 |**Configurar, classificar e filtrar exibições de relatório:** você pode especificar e ordenar as colunas de dados a exibir em um relatório, classificar as linhas do relatório e filtrar os dados para incluir somente um segmento de tempo especificado por você.|-   [Personalizando exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -42,5 +42,5 @@ Os relatórios de desempenho de Ferramentas de Criação de Perfil [!INCLUDE[vsp
   
  [Salvando e exportando dados de ferramentas de desempenho](../profiling/saving-and-exporting-performance-tools-data.md)  
   
-## <a name="see-also"></a>Veja também  
- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+## <a name="see-also"></a>Consulte Também  
+ [Performance Explorer](../profiling/performance-explorer.md)

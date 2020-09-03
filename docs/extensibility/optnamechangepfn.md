@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702244"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Esta é uma função de retorno de chamada especificada em `SCC_OPT_NAMECHANGEPFN`uma chamada para o [SccSetOption](../extensibility/sccsetoption-function.md) (usando opção) e é usada para comunicar alterações de nome feitas pelo plug-in de controle de origem de volta ao IDE.
+Essa é uma função de retorno de chamada especificada em uma ligação para o [SccSetOption](../extensibility/sccsetoption-function.md) (usando a opção `SCC_OPT_NAMECHANGEPFN` ) e é usada para comunicar alterações de nome feitas pelo plug-in de controle do código-fonte de volta para o IDE.
 
 ## <a name="signature"></a>Assinatura
 
@@ -32,26 +32,26 @@ typedef void (*OPTNAMECHANGEPFN)(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
  pvCallerData
 
-[em] Valor do usuário especificado em uma chamada anterior `SCC_OPT_USERDATA`para o [SccSetOption](../extensibility/sccsetoption-function.md) (utilização da opção ).
+no Valor de usuário especificado em uma chamada anterior para o [SccSetOption](../extensibility/sccsetoption-function.md) (usando a opção `SCC_OPT_USERDATA` ).
 
  pszOldName
 
-[em] O nome original do arquivo.
+no O nome original do arquivo.
 
  pszNewName
 
-[em] O nome para o nome do arquivo foi renomeado.
+no O nome para o qual o arquivo foi renomeado.
 
 ## <a name="return-value"></a>Valor retornado
  Nenhum.
 
 ## <a name="remarks"></a>Comentários
- Se um arquivo for renomeado durante uma operação de controle de origem, o plug-in de controle de origem poderá notificar o IDE sobre a alteração de nome através deste retorno de chamada.
+ Se um arquivo for renomeado durante uma operação de controle de origem, o plug-in de controle do código-fonte poderá notificar o IDE sobre a alteração do nome por meio desse retorno de chamada.
 
- Se o IDE não suportar esse retorno de chamada, ele não chamará a [Opção SccSet](../extensibility/sccsetoption-function.md) para especificá-la. Se o plug-in não suportar esse retorno `SCC_E_OPNOTSUPPORTED` de `SccSetOption` chamada, ele retornará da função quando o IDE tentar definir a chamada de volta.
+ Se o IDE não oferecer suporte a esse retorno de chamada, ele não chamará o [SccSetOption](../extensibility/sccsetoption-function.md) para especificá-lo. Se o plug-in não oferecer suporte a esse retorno de chamada, ele retornará `SCC_E_OPNOTSUPPORTED` da `SccSetOption` função quando o IDE tentar definir o retorno de chamada.
 
 ## <a name="see-also"></a>Confira também
 - [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)

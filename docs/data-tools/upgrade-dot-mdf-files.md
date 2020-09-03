@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281117"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
@@ -61,7 +61,7 @@ Antes de atualizar um banco de dados, considere os seguintes critérios:
 
 2. Na caixa de diálogo **Adicionar conexão** , especifique as seguintes informações:
 
-    - **Fonte de dados**:`Microsoft SQL Server (SqlClient)`
+    - **Fonte de dados**: `Microsoft SQL Server (SqlClient)`
 
     - **Nome do Servidor**:
 
@@ -101,7 +101,7 @@ Você também pode modificar uma conexão SQL Server Express para usar o LocalDB
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para fazer SQL Server Express o mecanismo de banco de dados padrão
 
-1. Na barra de menus, selecione **ferramentas**  >  **Opções**.
+1. Na barra de menus, selecione **Ferramentas** > **Opções**.
 
 2. Na caixa de diálogo **Opções** , expanda as opções **ferramentas de banco** de dados e, em seguida, selecione **conexões de dado**.
 
@@ -111,6 +111,6 @@ Você também pode modificar uma conexão SQL Server Express para usar o LocalDB
 
     SQL Server Express será o mecanismo de banco de dados padrão para seus aplicativos.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Acessando dados no Visual Studio](accessing-data-in-visual-studio.md)

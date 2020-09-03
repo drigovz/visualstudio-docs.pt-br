@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731491"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
@@ -41,8 +41,8 @@ Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e J
 
 |Ação|Atalho|
 |------------|--------------|
-|Executar um comando do console|Enter|
-|Limpar o console|ESC|
+|Executar um comando do console|Digite|
+|Limpar o console|Esc|
 |Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM
@@ -54,11 +54,11 @@ Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e J
 |Selecionar elemento|Ctrl+B|
 |Alternar entre exibir e ocultar caixas de realce da página da Web usando **Selecionar Elemento**|Ctrl+Shift+I|
 |Confirmar alterações usando **Editar como HTML**|Ctrl+Enter|
-|Descartar as alterações usando **Editar como HTML**|ESC|
+|Descartar as alterações usando **Editar como HTML**|Esc|
 |Aumentar o valor de CSS escolhido em 1|Seta para Cima|
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
 - [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
