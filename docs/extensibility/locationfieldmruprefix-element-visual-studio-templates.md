@@ -1,5 +1,5 @@
 ---
-title: LocationFieldMRUPrefix Element (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento LocationFieldMRUPrefix (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce86eecbab8c31f16ece4628eff28dc40416a0a9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702818"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (Modelos de Estúdio Visual)
-Especifica os caminhos usados mais recentemente (MRU) na caixa de diálogo **Novo Projeto** e **Adicionar Novo Item.**
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Elemento LocationFieldMRUPrefix (modelos do Visual Studio)
+Especifica os caminhos usados mais recentemente (MRU) na caixa de diálogo **novo projeto** e **Adicionar novo item** .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <LocationFieldMRUPrefix> ... </LocationFieldMRUPrefix>
@@ -43,11 +43,11 @@ Especifica os caminhos usados mais recentemente (MRU) na caixa de diálogo **Nov
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="remarks"></a>Comentários
- Este elemento só deve ser usado [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)]para modelos produzidos através do .
+ Esse elemento só deve ser usado para modelos produzidos por meio do [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 
 ## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
-- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

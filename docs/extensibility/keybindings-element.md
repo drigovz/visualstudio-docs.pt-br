@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703135"
 ---
-# <a name="keybindings-element"></a>Elemento KeyBindings
-O elemento KeyBindings agrupa elementos keybinding e outros agrupamentos keybindings.
+# <a name="keybindings-element"></a>Elemento keybindings
+O elemento keybindings agrupa elementos de KeyBinding e outros agrupamentos de keybindings.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ O elemento KeyBindings agrupa elementos keybinding e outros agrupamentos keybind
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento keybinding](../extensibility/keybinding-element.md)|Especifica atalhos de teclado para os comandos.|
-|[Keybindings](../extensibility/keybindings-element.md)|Grupos Elementos de vinculação de chaves e outros agrupamentos de keybindings.|
+|[Elemento keybind](../extensibility/keybinding-element.md)|Especifica atalhos de teclado para os comandos.|
+|[KeyBindings](../extensibility/keybindings-element.md)|Agrupa os elementos de keybindling e outros agrupamentos de keybindings.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos.|
+|[Elemento commandtable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos.|
 
 ## <a name="example"></a>Exemplo
 
@@ -66,5 +66,5 @@ O elemento KeyBindings agrupa elementos keybinding e outros agrupamentos keybind
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Elemento keybinding](../extensibility/keybinding-element.md)
-- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Elemento keybind](../extensibility/keybinding-element.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

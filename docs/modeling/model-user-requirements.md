@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590235"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
@@ -56,7 +56,7 @@ Você pode criar várias exibições diferentes dos requisitos dos usuários.  C
 
 Observe que a maioria dos tipos de diagramas pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a>Mostrando regras de negócio
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Mostrando regras de negócio
 
 Uma regra de negócio é um requisito que não está associado a um caso de uso específico e deve ser observado em todo o sistema.
 
@@ -76,7 +76,7 @@ Os tópicos a seguir fornecem mais informações:
 |-|-|
 |Como desenvolver código que siga as regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a>Descrevendo os requisitos de qualidade de serviço
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Descrevendo os requisitos de qualidade de serviço
 
 Há várias categorias de requisitos de qualidade de serviço. Eles incluem o seguinte:
 
@@ -96,7 +96,7 @@ Se um restaurante excluir um item de menu enquanto um cliente estiver solicitand
 
 Consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) para saber como desenvolver código que atenda aos requisitos de qualidade de serviço.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)

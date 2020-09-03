@@ -1,5 +1,5 @@
 ---
-title: Novidades no Controle de Fontes no Visual Studio 2015 SDK | Microsoft Docs
+title: O que há de novo no controle do código-fonte no SDK do Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,37 +13,37 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703405"
 ---
-# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>O que há de novo no Controle de Fontes para o Visual Studio 2015 SDK
+# <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>O que há de novo no controle do código-fonte para o SDK do Visual Studio 2015
 
-No [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], você pode fornecer uma solução de controle de origem profundamente integrada implementando um VSPackage de controle de origem. Esta seção descreve os recursos do controle de origem VSPackages e fornece uma visão geral das etapas de implementação.
+No [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , você pode fornecer uma solução de controle do código-fonte profundamente integrada implementando um VSPackage de controle do código-fonte. Esta seção descreve os recursos do VSPackages de controle do código-fonte e fornece uma visão geral das etapas de implementação.
 
-## <a name="the-source-control-vspackage"></a>O pacote VS de controle de origem
+## <a name="the-source-control-vspackage"></a>O controle do código-fonte VSPackage
 
-O Visual Studio suporta dois tipos de soluções de controle de origem. Em todas as versões do Visual Studio, você ainda pode integrar um plug-in baseado em API de controle de fonte. Você também pode criar um VSPackage para controle [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] de origem que fornece uma integração profunda, caminho adequado para soluções de controle de origem que requerem um alto nível de sofisticação e autonomia.
+O Visual Studio dá suporte a dois tipos de soluções de controle do código-fonte. Em todas as versões do Visual Studio, você ainda pode integrar um plug-in baseado em API de plug-in de controle do código-fonte. Você também pode criar um VSPackage para controle do código-fonte que fornece uma integração profunda, [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] caminho adequado para soluções de controle do código-fonte que exigem um alto nível de sofisticação e autonomia.
 
-Um VSPackage pode adicionar quase qualquer tipo de funcionalidade ao Visual Studio. Um controle de origem VSPackage fornece um recurso completo de controle de origem para o Visual Studio, desde a UI apresentada ao usuário até a comunicação back-end com o sistema de controle de origem.
+Um VSPackage pode adicionar praticamente qualquer tipo de funcionalidade ao Visual Studio. Um VSPackage de controle do código-fonte fornece um recurso de controle do código-fonte completo para o Visual Studio, da interface do usuário apresentada para a comunicação back-end com o sistema de controle do código-fonte.
 
-Implementar um controle de origem VSPackage requer uma estratégia de "tudo ou nada". O criador de um controle de origem VSPackage deve investir uma quantidade significativa de esforço na implementação de uma série de interfaces de controle de fonte e novos elementos de interface (caixas de diálogo, menus e barras de ferramentas) para cobrir toda a funcionalidade de controle de origem, bem como interfaces necessárias de qualquer pacote para se integrar com sucesso com o Visual Studio.
+A implementação de um VSPackage de controle do código-fonte requer uma estratégia "tudo ou nada". O criador de um VSPackage de controle do código-fonte deve investir uma quantidade significativa de esforço na implementação de várias interfaces de controle do código-fonte e novos elementos da interface do usuário (caixas de diálogo, menus e barras de ferramentas) para cobrir toda a funcionalidade de controle do código-fonte, bem como interfaces necessárias de qualquer pacote para integração com o Visual Studio.
 
-As etapas a seguir fornecem uma visão geral do que é necessário para implementar um pacote de controle de origem. Para obter detalhes, consulte [Criando um VsPackage de Controle de Origem](../../extensibility/internals/creating-a-source-control-vspackage.md).
+As etapas a seguir fornecem uma visão geral do que é necessário para implementar um pacote de controle do código-fonte. Para obter detalhes, consulte [criando um controle do código-fonte VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-1. Crie um VSPackage que ofereça um serviço de controle de origem privada.
+1. Crie um VSPackage que proffers um serviço de controle do código-fonte privado.
 
-2. Implemente as interfaces nos serviços relacionados ao controle de origem que <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> são <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> oferecidos pelo Visual Studio (por exemplo, a interface).
+2. Implemente as interfaces nos serviços relacionados ao controle do código-fonte que são proffered pelo Visual Studio (por exemplo, a <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> e a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interface).
 
-3. Registre seu controle de origem VSPackage.
+3. Registre seu VSPackage de controle do código-fonte.
 
-4. Implemente todas as interfaces de controle de origem, incluindo itens de menu, caixas de diálogo, barras de ferramentas e menus de contexto.
+4. Implemente toda a interface do usuário do controle do código-fonte, incluindo itens de menu, caixas de diálogo, barras de ferramentas e menus de contexto.
 
-5. Todos os eventos relacionados ao controle de origem são passados para o seu vSackage de controle de origem quando ele está ativo e deve ser tratado pelo seu VSPackage.
+5. Todos os eventos relacionados ao controle do código-fonte são passados para o VSackage de controle do código-fonte quando ele está ativo e devem ser tratados pelo seu VSPackage.
 
-6. Seu controle de origem VSPackage deve ouvir <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> eventos como aqueles que implementam a interface, bem <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> como eventos TPD (Track Project Document) (como implementado pela interface) e tomar as medidas necessárias.
+6. O VSPackage de controle do código-fonte deve escutar eventos como aqueles que implementam a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interface, bem como controlar os eventos de documento do projeto (TPD) (conforme implementado pela <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface) e tomar a ação necessária.
 
 ## <a name="see-also"></a>Confira também
 

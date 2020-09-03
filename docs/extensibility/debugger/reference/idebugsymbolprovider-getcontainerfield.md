@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField | Microsoft Docs
+title: 'IDebugSymbolProvider:: getcontainerfield | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 729457fd071ab4a271f46b159e031fdc5cfc19bd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719400"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
-Este método obtém o campo que contém o endereço de depuração.
+Esse método obtém o campo que contém o endereço de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int GetContainerField(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pAddress`\
-[em] O endereço representado por uma interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+no O endereço, conforme representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `ppContainerField`\
-[fora] Retorna um campo de contêiner representado por uma interface [IDebugContainerField.](../../../extensibility/debugger/reference/idebugcontainerfield.md)
+fora Retorna um campo de contêiner representado por uma interface [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
