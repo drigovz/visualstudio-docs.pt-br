@@ -21,10 +21,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
-ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75944223"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novidades do depurador no Visual Studio 2017
@@ -68,9 +68,9 @@ O depurador inclui estes novos recursos:
 
     ![Pesquisar em anexo ao processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obter mais informações sobre esses novos recursos, consulte as [notas de versão para [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
+Para obter mais informações sobre esses novos recursos, consulte as [notas de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] versão do ](/visualstudio/releasenotes/vs2017-relnotes).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

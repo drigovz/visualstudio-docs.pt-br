@@ -1,5 +1,5 @@
 ---
-title: Roteiro para estender o Depurador | Microsoft Docs
+title: Roteiro para estender o depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,42 +12,42 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713143"
 ---
-# <a name="roadmap-for-extending-the-debugger"></a>Roteiro para a extensão do depurador
-Esta documentação fornece informações de [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] guia e referência [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]para estender o depurador com o .
+# <a name="roadmap-for-extending-the-debugger"></a>Roteiro para estender o depurador
+Esta documentação fornece informações de guia e referência para estender o [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] depurador com o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a documentação de depuração inclui amostras, uma referência abrangente e vários cenários representativos que demonstram maneiras típicas de personalizar o depurador.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a documentação de depuração inclui exemplos, uma referência abrangente e vários cenários representativos que demonstram maneiras típicas de personalizar o depurador.
 
- O compilador e sua saída determinam o que é necessário para configurar a depuração em seu produto. Se o seu compilador:
+ Seu compilador e sua saída determinam o que é necessário para configurar a depuração em seu produto. Se o seu compilador:
 
-- Visa o sistema operacional nativo do Windows e escreve um *. Arquivo PDB,* você pode depurar programas com o mecanismo de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]depuração de código nativo (DE), que é integrado em . Você não precisa implementar um DE ou um avaliador de expressão. O avaliador de expressão é escrito para a sintaxe da linguagem de programação C++.
+- Tem como alvo o sistema operacional Windows nativo e grava um *. Arquivo PDB* , você pode depurar programas com o mecanismo de depuração de código nativo (de), que é integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Você não precisa implementar um avaliador DE expressão. O avaliador de expressão é escrito para a sintaxe da linguagem de programação C++.
 
-- Produz a saída de linguagem intermediária da Microsoft (MSIL), você pode depurar programas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]com o depurador de código gerenciado de cepa DE, que também é integrado em . Assim, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de amostra é fornecido para você. Para obter mais informações, consulte estes tópicos:
+- Produz a saída da MSIL (Microsoft Intermediate Language), você pode depurar programas com o mecanismo DE depuração DE código gerenciado DE, que também é integrado ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Portanto, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de exemplo é fornecido para você. Para obter mais informações, consulte estes tópicos:
 
    [Avaliação de expressão](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
    [Avaliando expressões](../../extensibility/debugger/evaluating-expressions.md)
 
-   [Contexto de avaliação de expressão](../../extensibility/debugger/expression-evaluation-context.md)
+   [Contexto de avaliação da expressão](../../extensibility/debugger/expression-evaluation-context.md)
 
-   [Avaliação de expressão no modo de quebra](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+   [Avaliação de expressão no modo de interrupção](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
 
-   [Escreva um avaliador de expressão em tempo de execução de linguagem comum](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+   [Gravar um avaliador de expressão de Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 
-- O alvo de um sistema operacional proprietário ou algum outro ambiente de tempo de execução, você precisa escrever seu próprio DE. Um tutorial que cria um DE simples usando ATL COM é fornecido. Para obter mais informações, consulte estes tópicos:
+- Tem como alvo um sistema operacional proprietário ou algum outro ambiente de tempo de execução, você precisa escrever seus próprios. Um tutorial que cria uma simples DE usar COM ATL é fornecido. Para obter mais informações, consulte estes tópicos:
 
-   [Crie um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+   [Criar um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Tutorial: Construa um mecanismo de depuração usando ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Tutorial: criar um mecanismo de depuração usando o COM ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
 
-   [Implementar um fornecedor portuário](../../extensibility/debugger/implementing-a-port-supplier.md)
+   [Implementar um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)
 
-   [Exemplos](../../extensibility/debugger/visual-studio-debugging-samples.md)
+   [Amostras](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
 ## <a name="see-also"></a>Confira também
 - [Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

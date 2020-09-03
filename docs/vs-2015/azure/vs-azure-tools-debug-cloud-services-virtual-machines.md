@@ -12,10 +12,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919161"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
@@ -43,7 +43,7 @@ O emulador simula o serviço de computação do Azure e o executa no ambiente lo
     > [!NOTE]
     > Quando você interrompe a execução ou a depuração do serviço, o emulador de computação local e o emulador de armazenamento não são interrompidos. Também é preciso pará-los explicitamente na área de notificação.
 
-## <a name="debug-a-cloud-service-in-azure"></a>Depure um serviço de nuvem no Azure
+## <a name="debug-a-cloud-service-in-azure"></a>Depurar um perfil de serviço de nuvem no Azure
 
 Para depurar um serviço de nuvem em um computador remoto, você deve habilitar essa funcionalidade explicitamente quando implanta o serviço de nuvem para que os serviços exigidos (msvsmon.exe, por exemplo) sejam instalados nas máquinas virtuais que executam suas instâncias de função. Se você não habilitou a depuração remota quando publicou o serviço, será preciso publicar novamente o serviço com a depuração remota habilitada.
 
@@ -60,7 +60,7 @@ Se você habilitar a depuração remota para um serviço de nuvem, ela não most
 
     Isso é apenas uma diretriz. Você pode optar por executar ambientes de teste em um ambiente de Produção. No entanto, você poderá afetar negativamente os usuários ao habilitar a depuração remota no ambiente de Produção. É possível escolher a configuração de Versão, mas a configuração de Depuração facilita a depuração.
 
-    ![Escolher a configuração de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
+    ![Escolher a configuração de Depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
 
 3. Siga as etapas comuns, mas marque a caixa de seleção **Habilitar depurador remoto para todas as funções** na guia **Configurações Avançadas**.
 
@@ -74,7 +74,7 @@ Se você habilitar a depuração remota para um serviço de nuvem, ela não most
 
     Se você depurar uma função, o depurador do Visual Studio anexará a cada instância dessa função. O depurador será interrompido em um ponto de interrupção da primeira instância de função que executa essa linha de código e atende a todas as condições desse ponto de interrupção. Se você depurar uma instância, o depurador será anexado apenas a essa instância e interrompido em um ponto de interrupção somente quando essa instância específica executar essa linha de código e atender às condições do ponto de interrupção.
 
-    ![Anexar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
+    ![Anexar Depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
 3. Depois que o depurador é anexado a uma instância, a depuração ocorre como de costume. O depurador é anexado automaticamente ao processo de host apropriado para sua função. Dependo da função, o depurador será anexado a w3wp.exe, a WaWorkerHost.exe ou a WaIISHost.exe. Para verificar o processo ao qual o depurador é anexado, expanda o nó da instância no Gerenciador de Servidores. Consulte [Arquitetura de função do Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) para obter mais informações sobre os processos do Azure.
 
@@ -82,7 +82,7 @@ Se você habilitar a depuração remota para um serviço de nuvem, ela não most
 
 4. Para identificar os processos aos quais o depurador é anexado, abra a caixa de diálogo Processos escolhendo, na barra de menus, Depurar, Windows, Processos. (Teclado: Ctrl+Alt+Z) Para desanexar um processo específico, abra o menu de atalho correspondente e, em seguida, selecione **Desanexar Processo**. Se preferir, localize o nó da instância no Gerenciador de Servidores, encontre o processo, abra o respectivo menu de atalho e clique em **Desanexar Processo**.
 
-    ![Depurar processos](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
+    ![Processos de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
 > [!WARNING]
 > Evite paradas longas em pontos de interrupção durante a depuração remota. O Azure trata um processo que foi interrompido por um pouco mais de alguns minutos como sem resposta e para de enviar tráfego para essa instância. Se você parar por muito tempo, o msvsmon.exe será desanexado do processo.
@@ -115,9 +115,9 @@ Você pode depurar programas que são executados em máquinas virtuais do Azure 
 
     O Azure instala a extensão da depuração remota na máquina virtual para habilitar a depuração.
 
-    ![Máquina virtual que permite comando de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
+    ![Comando Depuração habilitada para máquina virtual](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
 
-    ![Log de Atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
+    ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
 3. Depois que a extensão de depuração remota concluir a instalação, abra o menu de contexto da máquina virtual e selecione **Anexar Depurador...**
 
@@ -145,7 +145,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     A caixa de diálogo **Criar máquina virtual no Azure** é exibida.
 
-    ![Caixa de diálogo Criar projeto da Web de ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
+    ![Caixa de diálogo Criar projeto da Web do ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
     > será solicitado que você entre em sua conta do Azure, caso ainda não tenha entrado.
@@ -164,13 +164,13 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     O Azure instala a extensão da depuração remota na máquina virtual para habilitar a depuração.
 
-    ![Máquina virtual que permite comando de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
+    ![Comando Depuração habilitada para máquina virtual](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
 
-    ![Log de Atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
+    ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
 6. Publique seu projeto, como descrito em [Como implantar um projeto Web usando a publicação de um clique no Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Como você deseja depurar na máquina virtual, na página **Configurações** do assistente **Publicar Web**, selecione **Depurar** como a configuração. Isso garante que os símbolos de código estejam disponíveis durante a depuração.
 
-    ![Publicar configurações](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
+    ![Configurações de publicação](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
 7. Em **Opções de Publicação de Arquivo**, selecione **Remover arquivos adicionais no destino** se o projeto já tiver sido implantado anteriormente.
 
@@ -186,7 +186,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
 10. Clique nos processos que você deseja depurar na máquina virtual e selecione **Anexar**. Por exemplo, você pode escolher o processo w3wp.exe se quiser depurar um aplicativo Web na máquina virtual. Consulte [Depurar um o mais processos no Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) para obter mais informações.
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 
 * Use o **IntelliTrace** para coletar um log de chamadas e eventos de um servidor de versão. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 

@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 984b9d5d9bfd5c3800ec816e1f57489e0348f53c
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461283"
 ---
 # <a name="idiatable"></a>IDiaTable
 Enumera uma tabela de fonte de dados de DIA.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 IDiaTable : IEnumUnknown
@@ -66,7 +66,7 @@ As seguintes interfaces são implementadas com a `IDiaTable` interface (ou seja,
 A primeira função, `ShowTableNames` , exibe os nomes de todas as tabelas na sessão. A segunda função, `GetTable` , pesquisa todas as tabelas de uma tabela que implementa uma interface especificada. A terceira função, `UseTable` , mostra como usar a `GetTable` função.
 
 > [!NOTE]
-> `CDiaBSTR`é uma classe que encapsula um `BSTR` e automaticamente trata a liberação da cadeia de caracteres quando a instanciação sai do escopo.
+> `CDiaBSTR` é uma classe que encapsula um `BSTR` e automaticamente trata a liberação da cadeia de caracteres quando a instanciação sai do escopo.
 
 ```C++
 void ShowTableNames(IDiaSession *pSession)
@@ -137,7 +137,7 @@ Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
 - [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

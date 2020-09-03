@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f83cdb163881366a1a0bede95a07e1dae1fc50a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461094"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
@@ -36,17 +36,17 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementos
-`FrameTypeFPO`Ponteiro de quadro omitido; Informações de FPO disponíveis.
+`FrameTypeFPO` Ponteiro de quadro omitido; Informações de FPO disponíveis.
 
-`FrameTypeTrap`Quadro de interceptação do kernel.
+`FrameTypeTrap` Quadro de interceptação do kernel.
 
-`FrameTypeTSS`Quadro de interceptação do kernel.
+`FrameTypeTSS` Quadro de interceptação do kernel.
 
-`FrameTypeStandard`Quadro de pilha EBP padrão.
+`FrameTypeStandard` Quadro de pilha EBP padrão.
 
-`FrameTypeFrameData`Ponteiro de quadro omitido; Informações de dados de quadro disponíveis.
+`FrameTypeFrameData` Ponteiro de quadro omitido; Informações de dados de quadro disponíveis.
 
-`FrameTypeUnknown`Quadro que não tem nenhuma informação de depuração.
+`FrameTypeUnknown` Quadro que não tem nenhuma informação de depuração.
 
 ## <a name="remarks"></a>Comentários
 Os valores nessa enumeração são retornados por uma chamada para o método [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
@@ -54,6 +54,6 @@ Os valores nessa enumeração são retornados por uma chamada para o método [ID
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: cvconst. h
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

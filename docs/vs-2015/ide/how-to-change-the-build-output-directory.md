@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b665f5788d12c294e8ab7f55ecc63d183030a0ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645427"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
@@ -30,16 +30,16 @@ Você pode especificar o local de saída por configuração (para depuração, v
 
 #### <a name="to-change-the-build-output-directory"></a>Para alterar o diretório de saída do build
 
-1. Na barra de menus, escolha **Projeto**, **Propriedades** do *Appname*. Você também pode clicar com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecionar **Propriedades**.
+1. Na barra de menus, escolha **projeto**, *AppName* **Propriedades**. Você também pode clicar com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecionar **Propriedades**.
 
-2. Se você tiver um projeto do Visual Basic, selecione a guia **Compilar**. Se você tiver um projeto do Visual C#, selecione a guia **Build**. Se você tiver um projeto C++ ou um projeto de JavaScript, selecione a guia **Geral**.
+2. Se você tiver um projeto Visual Basic, selecione a guia **Compilar** . Se você tiver um projeto do Visual C#, selecione a guia **Compilar** . Se você tiver um projeto C++ ou um projeto JavaScript, selecione a guia **geral** .
 
 3. Na lista suspensa de configuração na parte superior, escolha a configuração cujo local do arquivo de saída você deseja alterar (depuração, versão ou todos).
 
      Localize a entrada do caminho de saída (**Caminho de Saída do Build** no Visual Basic, **Diretório de Saída** no Visual C++, **Caminho de Saída** no JavaScript e C#). Especifique um novo diretório de saída de build em relação ao diretório do projeto.
 
 > [!NOTE]
-> Em um Projeto de Instalação, a caixa **Nome do arquivo de saída** muda apenas o local do arquivo Setup.exe, não o local dos arquivos de projeto. Para obter mais informações, consulte **Build, Configuration Properties, Deployment Project Properties Dialog Box** (Caixa de diálogo Build, Propriedades de Configuração, Propriedades do Projeto de Implantação).
+> Em um Projeto de Instalação, a caixa **Nome do arquivo de saída** muda apenas o local do arquivo Setup.exe, não o local dos arquivos de projeto. Para obter mais informações, consulte **compilação, propriedades de configuração, caixa de diálogo Propriedades do projeto de implantação**.
 
-## <a name="see-also"></a>Veja também
- [Página de compilação, compilação deC#projeto ()](../ide/reference/build-page-project-designer-csharp.md) [página de propriedade geral (projeto)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45) [compilando e compilando](../ide/compiling-and-building-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Página de compilação, compilação do projeto (C#)](../ide/reference/build-page-project-designer-csharp.md) [página de propriedades geral (projeto)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45) [compilando e compilando](../ide/compiling-and-building-in-visual-studio.md)

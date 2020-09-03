@@ -1,5 +1,5 @@
 ---
-title: Glossário de depurador de depurador visual studio | Microsoft Docs
+title: Glossário do depurador do Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,59 +12,59 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713353"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossário do depurador do Visual Studio
-A seguir estão os [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] termos usados no SDK de depuração.
+Veja a seguir os termos usados no [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuração.
 
 ## <a name="terms"></a>Termos
- ponto de ruptura vinculado Uma abstração para um ponto de ruptura definido em código. Há uma relação um-para-um entre um ponto de ruptura vinculado e uma instrução de ponto de ruptura no fluxo de código. Quando o código é descarregado, os pontos de interrupção vinculados podem desvincular-se.
+ ponto de interrupção associado uma abstração para um ponto de interrupção definido no código. Há uma relação um-para-um entre um ponto de interrupção associado e uma instrução de ponto de interrupção no fluxo de código. Quando o código é descarregado, os pontos de interrupção associados podem desassociar.
 
- Causalidade Fornece a capacidade de rastrear um segmento lógico de execução através de vários segmentos físicos, processos e máquinas, e reconstruir a pilha de chamadas desse segmento lógico em qualquer ponto da vida desse segmento.
+ o causalidade fornece a capacidade de controlar um thread lógico de execução em vários threads, processos e máquinas físicos e reconstruir a pilha de chamadas desse thread lógico em qualquer ponto no tempo de vida desse thread.
 
- contexto de código Fornece uma abstração de uma posição em código conhecido pelo mecanismo de depuração. Para a maioria das arquiteturas de tempo de execução, um contexto de código é um endereço no fluxo de instruções de um programa. Para línguas não tradicionais, nas quais o código não pode ser representado por instruções, um contexto de código pode ser representado por outros meios.
+ o contexto de código fornece uma abstração de uma posição no código conhecida pelo mecanismo de depuração. Para a maioria das arquiteturas de tempo de execução, um contexto de código é um endereço no fluxo de instruções de um programa. Para linguagens não tradicionais, em que o código não pode ser representado por instruções, um contexto de código pode ser representado por outros meios.
 
- caminho de código Representa um ponto de execução no código onde um ramo é tomado ou uma chamada de função é feita. Um rastreamento de pilha é essencialmente uma lista de caminhos de código de chamada de função.
+ o caminho do código representa um ponto de execução no código em que um Branch é tirado ou uma chamada de função é feita. Um rastreamento de pilha é essencialmente uma lista de caminhos de código de chamada de função.
 
- debug engine (DE) Um componente que permite a depuração de uma arquitetura em tempo de execução. Um mecanismo de depuração funciona em conjunto com o intérprete ou sistema operacional e fornece serviços de depuração, como controle de execução, pontos de interrupção e avaliação de expressão.
+ mecanismo DE depuração (DE) um componente que permite a depuração de uma arquitetura de tempo de execução. Um mecanismo de depuração funciona em conjunto com o interpretador ou o sistema operacional e fornece serviços de depuração, como controle de execução, pontos de interrupção e avaliação de expressão.
 
- contexto do documento Fornece uma abstração de uma posição em um documento de arquivo de origem conhecido pelo mecanismo de depuração. Para a maioria dos idiomas, um contexto de documento é uma posição em um arquivo de origem. Para idiomas não tradicionais, para os quais o arquivo de origem pode não ser texto, um contexto de documento pode ser representado por alguns outros meios. Veja também *a posição do documento*.
+ o contexto do documento fornece uma abstração de uma posição em um documento de arquivo de origem conhecido pelo mecanismo de depuração. Para a maioria dos idiomas, um contexto de documento é uma posição em um arquivo de origem. Para idiomas não tradicionais, para os quais o arquivo de origem pode não ser texto, um contexto de documento pode ser representado por outros meios. Consulte também *posição do documento*.
 
- posição do documento Fornece uma abstração de uma posição em um arquivo de origem conhecido pelo IDE. Para a maioria dos idiomas, uma posição de documento é uma posição em um arquivo de origem. Para línguas não tradicionais, uma posição de documento pode ser representada de outras formas. Veja também *o contexto do documento*.
+ a posição do documento fornece uma abstração de uma posição em um arquivo de origem conhecido pelo IDE. Para a maioria dos idiomas, uma posição de documento é uma posição em um arquivo de origem. Para idiomas não tradicionais, uma posição de documento pode ser representada de outras maneiras. Consulte também *contexto de documento*.
 
- ponto de quebra de erro Uma abstração para descrever um erro em um ponto de ruptura pendente. Um ponto de ruptura de erro pode descrever um erro na localização do ponto de ruptura pendente, a expressão associada ao ponto de ruptura pendente ou outras informações que impedem que o ponto de ruptura pendente seja vinculado a um local de código.
+ erro de ponto de interrupção uma abstração para descrever um erro em um ponto de interrupção pendente. Um ponto de interrupção de erro pode descrever um erro no local do ponto de interrupção pendente, a expressão associada ao ponto de interrupção pendente ou outras informações que impedem que o ponto de interrupção pendente seja vinculado a um local de código.
 
- contexto de avaliação Fornece uma abstração de um contexto de programação para avaliação de expressão. Normalmente, um contexto de avaliação é um escopo. Ao fazer a avaliação da expressão em um contexto de expressão, o contexto de expressão fornece regras de escopo que correspondem ao seu ponto de criação. Por exemplo, um contexto de expressão criado em um quadro de pilha fornecerá o contexto para avaliar variáveis locais, parâmetros de método, membros de classe (se aplicável) e variáveis globais.
+ o contexto de avaliação fornece uma abstração de um contexto de programação para a avaliação da expressão. Normalmente, um contexto de avaliação é um escopo. Ao fazer a avaliação de expressão em um contexto de expressão, o contexto de expressão fornece regras de escopo que correspondem a seu ponto de criação. Por exemplo, um contexto de expressão criado em um quadro de pilha fornecerá o contexto para avaliar variáveis locais, parâmetros de método, membros de classe (se aplicável) e variáveis globais.
 
- exceção interceptada Uma exceção que é interceptada por um motor de depuração, mesmo que nenhum mecanismo de manuseio de exceção esteja em vigor no quadro de pilha atual.
+ exceção interceptada uma exceção que é interceptada por um mecanismo de depuração, mesmo que nenhum mecanismo de manipulação de exceção esteja em vigor no registro de ativação atual.
 
- JustMyCode O conceito de depurar apenas o código que pertence a um usuário e ignorar todos os códigos intermediários, como o código do sistema — mesmo que o código-fonte esteja disponível para esse código do sistema.
+ JustMyCode o conceito de depuração apenas do código que pertence a um usuário e ignorando todo o código intermediário, como código do sistema, mesmo se o código-fonte estiver disponível para esse código do sistema.
 
- ponto de interrupção pendente Fornece uma abstração para pontos de interrupção antes, durante e depois que o código é carregado e uma maneira de virtualizar pontos de interrupção. Um ponto de ruptura pendente:
+ o ponto de interrupção pendente fornece uma abstração para pontos de interrupção antes, durante e após o código ser carregado e uma maneira de virtualizar pontos de interrupção. Um ponto de interrupção pendente:
 
-- Contém todas as informações necessárias para vincular um ponto de ruptura ao código em um ou mais programas.
+- Contém todas as informações necessárias para associar um ponto de interrupção ao código em um ou mais programas.
 
-- Pode se ligar a vários locais de código em um ou mais programas.
+- Pode associar a vários locais de código em um ou mais programas.
 
-- Nunca se liga ao código.
+- Nunca se associa a código.
 
-  Cada código de tempo é carregado, todos os pontos de interrupção pendentes em um programa são verificados para ver se eles podem vincular. Diz-se que um ponto de interrupção pendente contém todos os pontos de interrupção vinculados que ele vincula.
+  Cada vez que o código é carregado, todos os pontos de interrupção pendentes em um programa são verificados para ver se eles podem se associar. Um ponto de interrupção pendente é dito para conter todos os pontos de interrupção associados que ele associa.
 
-  processo Um processo físico Win32. Um processo pode conter vários programas. Veja também *o programa*.
+  processar um processo do Win32 físico. Um processo pode conter vários programas. Consulte também *programa*.
 
-  programa Um único namespace em execução dentro de uma arquitetura de tempo de execução particular. Veja também *o processo*.
+  programar um único namespace em execução dentro de uma arquitetura de tempo de execução específica. Consulte também *processar*.
 
-  o SDM (Session Debug Manager, gerenciador de depuração) gerencia qualquer número de mecanismos de depuração de qualquer número de programas em vários processos em qualquer número de máquinas. No nível básico, o SDM é um multiplexador de motores de depuração. Além disso, o SDM fornece uma visão unificada da sessão de depuração para o IDE.
+  o SDM (Gerenciador de depuração de sessão) gerencia qualquer número de mecanismos de depuração Depurando qualquer número de programas em vários processos em qualquer número de computadores. No nível básico, o SDM é um multiplexador de mecanismos de depuração. Além disso, o SDM fornece uma exibição unificada da sessão de depuração para o IDE.
 
-  quadro de pilha Representa o estado de computação em um quadro específico e nível particular de chamadas de função aninhadas.
+  o registro de ativação representa o estado de computação em um determinado quadro e um nível específico de chamadas de função aninhadas.
 
-  thread A noção generalizada de execução de instruções baseada em pilha satisfazendo em pelo menos um programa.
+  Threade a noção generalizada da execução de instrução baseada em pilha em execução em pelo menos um programa.
 
-  ponto de ruptura de aviso Uma abstração para descrever um aviso em um ponto de ruptura pendente. Um ponto de ruptura de aviso descreve uma razão pela qual o ponto de ruptura pendente ainda não está vinculado a um local de código. Isso pode ser que o código ainda não tenha sido carregado para o local descrito pelo ponto de ruptura pendente, ou por algum outro motivo.
+  ponto de interrupção de aviso uma abstração para descrever um aviso em um ponto de interrupção pendente. Um ponto de interrupção de aviso descreve um motivo pelo qual o ponto de interrupção pendente ainda não está associado a um local de código. Isso pode ser que o código ainda não foi carregado para o local descrito pelo ponto de interrupção pendente ou por algum outro motivo.
 
 ## <a name="see-also"></a>Confira também
 - [Extensibilidade do depurador do Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

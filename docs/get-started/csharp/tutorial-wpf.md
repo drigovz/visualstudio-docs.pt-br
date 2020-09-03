@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419270"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: criar um aplicativo simples com C\#
@@ -298,7 +298,7 @@ Você pode testar o código durante a depuração ao adicionar alguns pontos de 
 
 #### <a name="add-breakpoints"></a>Adicionar pontos de interrupção
 
-1. Abra *Greetings.XAML.cs*e selecione a seguinte linha:`MessageBox.Show("Hello.")`
+1. Abra *Greetings.XAML.cs*e selecione a seguinte linha: `MessageBox.Show("Hello.")`
 
 1. Adicione um ponto de interrupção por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.
 
@@ -355,6 +355,6 @@ Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutori
 > [!div class="nextstepaction"]
 > [Continuar com mais tutoriais do WPF](/dotnet/framework/wpf/getting-started/wpf-walkthroughs/)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Dicas de produtividade](../../ide/productivity-features.md)

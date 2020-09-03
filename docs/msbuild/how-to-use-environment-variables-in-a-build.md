@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: afc679f9b782b8bc9ed3e04a2b8fb684cdbc1a20
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633779"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Como usar variáveis de ambiente em um build
@@ -68,5 +68,5 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
 ## <a name="see-also"></a>Confira também
 
 - [MSBuild](../msbuild/msbuild.md)
-- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
-- [Como: Construir os mesmos arquivos de origem com diferentes opções](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [propriedades MSBuild](../msbuild/msbuild-properties.md)
+- [Como: compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

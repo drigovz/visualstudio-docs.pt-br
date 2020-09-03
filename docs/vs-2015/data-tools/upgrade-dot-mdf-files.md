@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621404"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
@@ -72,23 +72,23 @@ Este tópico descreve as opções para atualizar seu arquivo de banco de dados (
 
    - **Fonte de dados**: `Microsoft SQL Server (SqlClient)`
 
-   - **Nome do servidor**:
+   - **Nome do Servidor**:
 
-       - Para usar a versão padrão: `(localdb)\MSSQLLocalDB`.  Isso especificará o ProjectV12 ou o ProjectV13, dependendo de qual versão do Visual Studio está instalada e quando a primeira instância de LocalDB foi criada. O nó **MSSQLLocalDB** no **pesquisador de objetos do SQL Server** mostra a qual versão ele está apontando.
+       - Para usar a versão padrão: `(localdb)\MSSQLLocalDB` .  Isso especificará o ProjectV12 ou o ProjectV13, dependendo de qual versão do Visual Studio está instalada e quando a primeira instância de LocalDB foi criada. O nó **MSSQLLocalDB** no **pesquisador de objetos do SQL Server** mostra a qual versão ele está apontando.
 
-       - Para usar uma versão específica: `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13`, em que V12 é LocalDB 2014 e v13 é LocalDB 2016.
+       - Para usar uma versão específica: `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13` , em que V12 é LocalDB 2014 e v13 é LocalDB 2016.
 
-   - **Anexar um arquivo de banco de dados**: o caminho físico do arquivo. MDF primário.
+   - **Anexar um arquivo do banco de dados**: O caminho físico da réplica primária mdf arquivo.
 
    - **Nome lógico**: O nome que você deseja usar com o arquivo.
 
-3. Selecione o botão **OK**.
+3. Selecione o botão **OK** .
 
 4. Quando for solicitado, selecione o botão **Sim** para atualizar o arquivo.
 
    O banco de dados é atualizado, é anexado ao mecanismo de banco de dados LocalDB e não é mais compatível com a versão mais antiga do LocalDB.
 
-   Você também pode modificar uma conexão SQL Server Express para usar o LocalDB abrindo o menu de atalho para a conexão e, em seguida, selecionando **Modificar conexão**. Na caixa de diálogo **Modificar conexão** , altere o nome do servidor para `(LocalDB)\MSSQLLocalDB`. Na caixa de diálogo **Propriedades avançadas** , verifique se a **instância do usuário** está definida como **false**.
+   Você também pode modificar uma conexão SQL Server Express para usar o LocalDB abrindo o menu de atalho para a conexão e, em seguida, selecionando **Modificar conexão**. Na caixa de diálogo **Modificar conexão** , altere o nome do servidor para `(LocalDB)\MSSQLLocalDB` . Na caixa de diálogo **Propriedades avançadas** , verifique se a **instância do usuário** está definida como **false**.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Para atualizar para uma versão mais recente do SQL Server Express
 
@@ -110,12 +110,12 @@ Este tópico descreve as opções para atualizar seu arquivo de banco de dados (
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para fazer SQL Server Express o mecanismo de banco de dados padrão
 
-1. Na barra de menus, selecione **ferramentas**  > **Opções**.
+1. Na barra de menus, selecione **Ferramentas** > **Opções**.
 
 2. Na caixa de diálogo **Opções** , expanda as opções de **ferramentas de dados** e selecione o nó **conexões de dados** .
 
-3. Na caixa de texto **nome da instância do SQL Server** , especifique o nome da instância do SQL Server Express ou LocalDB que você deseja usar. Se a instância não for nomeada, especifique `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.
+3. Na caixa de texto **nome da instância do SQL Server** , especifique o nome da instância do SQL Server Express ou LocalDB que você deseja usar. Se a instância não for nomeada, especifique `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
-4. Selecione o botão **OK**.
+4. Selecione o botão **OK** .
 
    SQL Server Express será o mecanismo de banco de dados padrão para seus aplicativos.

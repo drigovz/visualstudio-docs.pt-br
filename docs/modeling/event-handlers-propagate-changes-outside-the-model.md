@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114598"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
@@ -25,21 +25,21 @@ A superfície gráfica e outros controles de interface do usuário são exemplos
 
 ### <a name="to-define-a-store-event"></a>Para definir um evento de repositório
 
-1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Os tipos de evento usados com mais frequência são:
+1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Cada propriedade corresponde a um tipo de evento. Os tipos de evento usados com mais frequência são:
 
-    - `ElementAdded` disparado quando um elemento de modelo, link de relação, forma ou conector é criado.
+    - `ElementAdded` -disparado quando um elemento de modelo, link de relação, forma ou conector é criado.
 
-    - ElementPropertyChanged-disparado quando o valor de uma propriedade de domínio `Normal` é alterado. O evento será disparado somente se os valores novos e antigos não forem iguais. O evento não pode ser aplicado a propriedades de armazenamento calculadas e personalizadas.
+    - ElementPropertyChanged-disparado quando o valor de uma `Normal` propriedade de domínio é alterado. O evento será disparado somente se os valores novos e antigos não forem iguais. O evento não pode ser aplicado a propriedades de armazenamento calculadas e personalizadas.
 
          Ele não pode ser aplicado às propriedades de função que correspondem aos links de relação. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.
 
-    - disparado por `ElementDeleted` depois que um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de Propriedade do elemento, mas ele não terá nenhuma relação com outros elementos.
+    - `ElementDeleted` -disparado depois que um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de Propriedade do elemento, mas ele não terá nenhuma relação com outros elementos.
 
 2. Adicione uma definição de classe parcial para _YourDsl_**DocData** em um arquivo de código separado no projeto **DslPackage** .
 
-3. Escreva o código do evento como um método, como no exemplo a seguir. Pode ser `static`, a menos que você queira acessar `DocData`.
+3. Escreva o código do evento como um método, como no exemplo a seguir. Pode ser `static` , a menos que você queira acessar `DocData` .
 
-4. Substitua `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, poderá registrá-los todos no mesmo local.
+4. Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, poderá registrá-los todos no mesmo local.
 
 O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.
 
@@ -90,7 +90,7 @@ namespace Company.MusicLib
 
 ## <a name="use-events-to-make-undoable-adjustments-in-the-store"></a>Usar eventos para fazer ajustes desfeitos na loja
 
-Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
+Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
 No entanto, você pode usar um manipulador de eventos para fazer atualizações adicionais na loja, se quiser que o usuário consiga desfazer as atualizações adicionais separadamente do evento original. Por exemplo, suponha que caracteres minúsculos sejam a Convenção comum para títulos de álbuns. Você poderia escrever um manipulador de eventos de armazenamento que corrija o título para letras minúsculas depois que o usuário o tiver digitado em letras maiúsculas. Mas o usuário pode usar o comando Desfazer para cancelar a correção, restaurando os caracteres em maiúsculas. Uma segunda desfazer removeria a alteração do usuário.
 
@@ -170,7 +170,7 @@ Se você escrever um evento que atualize o repositório:
 
 Cada tipo de evento corresponde a uma coleção em Store. EventManagerDirectory. Você pode adicionar ou remover manipuladores de eventos a qualquer momento, mas é comum adicioná-los quando o documento é carregado.
 
-|nome da propriedade de `EventManagerDirectory`|Executado quando|
+|`EventManagerDirectory` Nome da propriedade|Executado quando|
 |-|-|
 |ElementAdded|Uma instância de uma classe de domínio, relação de domínio, forma, conector ou diagrama é criada.|
 |ElementDeleted|Um elemento de modelo foi removido do diretório de elementos do repositório e não é mais a origem ou o destino de nenhuma relação. O elemento não é realmente excluído da memória, mas é retido no caso de um futuro desfazer.|
@@ -184,7 +184,7 @@ Cada tipo de evento corresponde a uma coleção em Store. EventManagerDirectory.
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)
 - [Código de exemplo: diagramas de circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

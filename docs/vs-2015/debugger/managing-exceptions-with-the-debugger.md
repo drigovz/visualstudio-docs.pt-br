@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918952"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
@@ -64,7 +64,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Você pode encontrar exceções específicas usando a janela **Pesquisar** na barra de ferramentas **configurações de exceção** ou usar Pesquisar para filtrar namespaces específicos (por exemplo, **System.Io**).  
   
-### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>Definindo o depurador a ser interrompido quando uma exceção é gerada  
+### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>Setting the debugger to break when an exception is thrown (Configurando o depurador para interromper quando uma exceção é gerada)  
  O depurador pode interromper a execução no ponto em que uma exceção é lançada, dando a você a oportunidade de examinar a exceção antes que um manipulador seja invocado.  
   
  Na janela **configurações de exceção** , expanda o nó de uma categoria de exceções (por exemplo, **exceções do Common Language Runtime**, significando exceções .net) e marque a caixa de seleção para uma exceção específica dentro dessa categoria (por exemplo, **System. AccessViolationException**). Você também pode selecionar uma categoria inteira de exceções.  
@@ -73,7 +73,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Se você marcar uma determinada exceção, a execução do depurador será interrompida sempre que a exceção for lançada, independentemente de ser manipulada ou não manipulada. Neste ponto, a exceção é chamada de uma exceção de primeira chance. Por exemplo, aqui estão alguns cenários:  
   
-1. No aplicativo de C# console a seguir, o método Main gera um **AccessViolationException** dentro de um bloco de `try/catch`:  
+1. No aplicativo de console C# a seguir, o método Main gera um **AccessViolationException** dentro de um `try/catch` bloco:  
   
    ```csharp  
    static void Main(string[] args)  
@@ -91,16 +91,16 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
    }  
    ```  
   
-    Se você tiver o **AccessViolationException** verificado nas **configurações de exceção**, quando você executar esse código na execução do depurador será interrompido na linha de `throw`. Em seguida, você pode continuar a execução. O console deve exibir as duas linhas:  
+    Se você tiver o **AccessViolationException** verificado nas **configurações de exceção**, quando você executar esse código na execução do depurador será interrompido na `throw` linha. Em seguida, você pode continuar a execução. O console deve exibir as duas linhas:  
   
    ```  
    caught exception  
    goodbye  
    ```  
   
-    Mas não exibe a linha de `here`.  
+    Mas não exibe a `here` linha.  
   
-2. Um C# aplicativo de console faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que gera uma exceção e a trata e um segundo método que gera a mesma exceção e não a trata:  
+2. Um aplicativo de console C# faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que gera uma exceção e a manipula e um segundo método que gera a mesma exceção e não a trata:  
   
    ```vb  
    public class Class1  
@@ -135,13 +135,13 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
    }  
    ```  
   
-    Se você tiver o **AccessViolationException** verificado nas **configurações de exceção**, quando você executar esse código na execução do depurador será interrompido na linha de `throw` em **ThrowHandledException ()** e **ThrowUnhandledException ()** .  
+    Se você tiver o **AccessViolationException** verificado nas **configurações de exceção**, quando você executar esse código na execução do depurador será interrompido na `throw` linha em **ThrowHandledException ()** e **ThrowUnhandledException ()**.  
   
    Se desejar restaurar as configurações de exceção para os padrões, você pode clicar no botão **restaurar** na barra de ferramentas:  
   
    ![Restaurar padrões nas configurações de exceção](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>Definindo o depurador para continuar em exceções não tratadas pelo usuário  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> Definindo o depurador para continuar em exceções não tratadas pelo usuário  
  Se estiver depurando código .NET ou JavaScript com [apenas meu código](../debugger/just-my-code.md), você poderá dizer ao depurador para não interromper exceções que não são tratadas no código do usuário, mas que são tratadas em outro lugar.  
   
 1. Na janela **configurações de exceção** , abra o menu de contexto clicando com o botão direito do mouse em janela e selecionando **Mostrar colunas**. (Se você tiver desativado **apenas meu código**, não verá esse comando.)  
@@ -150,14 +150,14 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
 3. Você pode alterar essa configuração para uma exceção específica (selecione a exceção, clique com o botão direito do mouse e selecione/desmarque a opção **continuar quando não for tratado no código do usuário**) ou para uma categoria inteira de exceções (por exemplo, todas as exceções de Common Language Runtime).  
   
-   Por exemplo, aplicativos Web ASP.NET lidam com exceções convertendo-as em um código de status HTTP 500 ([tratamento de exceção na API ASP.net](/aspnet/web-api/overview/error-handling/exception-handling)), o que pode não ajudá-lo a determinar a origem da exceção. No exemplo a seguir, o código do usuário faz uma chamada para `String.Format()` que gera um <xref:System.FormatException>. A execução é interrompida da seguinte maneira:  
+   Por exemplo, aplicativos Web ASP.NET lidam com exceções convertendo-as em um código de status HTTP 500 ([tratamento de exceção na API ASP.net](/aspnet/web-api/overview/error-handling/exception-handling)), o que pode não ajudá-lo a determinar a origem da exceção. No exemplo a seguir, o código do usuário faz uma chamada para `String.Format()` que gera um <xref:System.FormatException> . A execução é interrompida da seguinte maneira:  
   
-   ![quebras na&#45;exceção de unhanlded do usuário](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![quebras no usuário&#45;exceção unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
-### <a name="adding-and-deleting-exceptions"></a>Adicionando e excluindo exceções  
+### <a name="adding-and-deleting-exceptions"></a>Adding and Deleting Exceptions (Adicionando e excluindo exceções)  
  Você pode adicionar e excluir exceções. Você pode excluir qualquer tipo de exceção de qualquer categoria, selecionando a exceção e clicando no botão **excluir** (o sinal de subtração) na barra de ferramentas **configurações de exceção** ou clicando com o botão direito do mouse na exceção e selecionando **excluir** no menu de contexto. Excluir uma exceção tem o mesmo efeito que ter a exceção desmarcada, o que é que o depurador não será interrompido quando for gerado.  
   
- Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System.UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
+ Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System. UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
   
  Se desejar adicionar uma exceção às exceções de acesso à memória da GPU, às exceções de tempo de execução do JavaScript ou às categorias de exceções Win32, você precisará incluir o código de erro, bem como a descrição.  
   
@@ -166,7 +166,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  As configurações de exceção são mantidas no arquivo. suo da solução, portanto, elas se aplicam a uma solução específica. Não é possível reutilizar configurações de exceção específicas em soluções. Neste ponto, somente exceções adicionadas são persistidas; as exceções excluídas não são. Em outras palavras, você pode adicionar uma exceção, fechar e reabrir a solução, e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção será exibida novamente.  
   
- A janela de **configurações de exceção** dá suporte a C# tipos de exceção genérica no, mas não em Visual Basic. Para interromper exceções como `MyNamespace.GenericException<T>`, você deve adicionar a exceção como **MyNamespace. genericException ' 1**. Ou seja, se você tiver criado uma exceção como esta:  
+ A janela de **configurações de exceção** dá suporte a tipos de exceção genérica em C#, mas não em Visual Basic. Para interromper exceções como `MyNamespace.GenericException<T>` , você deve adicionar a exceção como **MyNamespace. genericException ' 1**. Ou seja, se você tiver criado uma exceção como esta:  
   
 ```csharp  
 public class GenericException<T> : Exception  
@@ -181,10 +181,10 @@ public class GenericException<T> : Exception
   
  ![adicionando exceção genérica](../debugger/media/addgenericexception.png "Addgenéricaexception")  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Continuando a execução após uma exceção](../debugger/continuing-execution-after-an-exception.md)   
  [Como examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Como: usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   
+ [Como: usar verificações nativas em tempo de execução](../debugger/how-to-use-native-run-time-checks.md)   
  [Usando verificações de tempo de execução sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
-   do [Assistente de exceção](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)  
+ [Assistente de exceção](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918915"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
@@ -43,19 +43,19 @@ Em uma linguagem específica de domínio (DSL) criada com o SDK de Visualizaçã
 ## <a name="customizing-copy-and-paste-behavior"></a>Personalizando o comportamento copiar e colar
  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Habilitar ou desabilitar copiar, recortar e colar.**
+ **{1&amp;gt;Habilite ou desabilite os recursos copiar, recortar e colar.&amp;lt;1}**
 No Gerenciador de DSL, defina a propriedade **habilitar copiar colar** do nó do **Editor** .
 
- **Copiar links para o mesmo destino.** Por exemplo, para copiar uma caixa de comentários vinculada ao mesmo elemento de assunto.
+ **Copie links para o mesmo destino.**  Por exemplo, para copiar uma caixa de comentários vinculada ao mesmo elemento de assunto.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia somente para vincular**. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
  Copie os elementos vinculados. Por exemplo, quando você copia um novo elemento, cópias de todas as caixas de comentários vinculadas também são feitas.
 Defina a propriedade de **cópia propagada** da função para **propagar a cópia para o link e**o representante da função oposto. Para obter mais informações, consulte [Personalizando o comportamento de cópia de link](#customizeLinks).
 
- **Duplique rapidamente os elementos copiando e colando.** Normalmente, o item que você acabou de copiar ainda fica selecionado e você não pode colar o mesmo tipo de elemento nele.
+ **Duplique com rapidez os elementos copiando e colando.**  Normalmente, o item que você acabou de copiar ainda fica selecionado e você não pode colar o mesmo tipo de elemento nele.
 Adicione uma Diretiva Element Merge à classe de domínio e configure-a para encaminhar mesclagens para a classe pai. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
- \- ou -
+ \- ou –
 
  Selecione o diagrama antes de colar os elementos, substituindo `ClipboardCommandSet.ProcessOnPasteCommand()`. Adicione este código em um arquivo personalizado no projeto DslPackage:
 
@@ -77,20 +77,20 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Crie links adicionais quando o usuário colar em um destino selecionado.** Por exemplo, quando uma caixa de comentários é colada em um elemento, um link é estabelecido entre eles.
+ **Crie links adicionais quando o usuário colar em um destino selecionado.**  Por exemplo, quando uma caixa de comentários é colada em um elemento, um link é estabelecido entre eles.
 Adicione uma Diretiva Element Merge à classe de domínio de destino e configure-a para processar a mesclagem, adicionando links. Isso terá o mesmo efeito sobre as operações de arrastar. Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
- \- ou -
+ \- ou –
 
  Substitua `ClipboardCommandSet.ProcessOnPasteCommand()` para criar os links adicionais depois de chamar o método base.
 
  **Personalize os formatos nos quais os elementos podem ser copiados** para aplicativos externos – por exemplo, para adicionar uma borda ao formulário de bitmap.
-Substitua *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto DslPackage.
+Substitua *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto DslPackage.
 
- **Personalize como os elementos são copiados para a área de transferência pelo comando de cópia, mas não em uma operação de arrastar.**
-Substitua *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
+ **Personalize como os elementos são copiados para a área de transferência pelo comando copiar, mas não em uma operação de arrastar.**
+Substitua *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
 
- **Preserve o layout de forma por meio de copiar e colar.**
+ **Preserve o layout da forma com os comandos copiar e colar.**
 Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. 
 
  Para conseguir esse efeito, adicione as formas e conectores ao ElementGroupPrototype copiado. O método mais conveniente para substituir é o ElementOperations.CreateElementGroupPrototype(). Para fazer isso, adicione o seguinte código ao projeto Dsl:
@@ -147,7 +147,7 @@ partial class MyDslDiagram // EDIT NAME
 
 ```
 
- **Colar formas em um local escolhido, como a posição atual do cursor.**
+ **Cole formas em um local escolhido, como a posição atual do cursor.**
 Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas.
 
  Para conseguir esse efeito, substitua `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar a versão específica do local do `ElementOperations.Merge()`. Para fazer isso, adicione o seguinte código ao projeto DslPackage:
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Permitir que o usuário arraste e solte elementos.**
 Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizeLinks"></a>Personalizando o comportamento de cópia de link
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Personalizando o comportamento de cópia de link
  Quando o usuário copia um elemento, o comportamento padrão é que todos os elementos incorporados também sejam copiados. Você pode modificar o comportamento de cópia padrão. Na definição de DSL, selecione uma função em um lado de uma relação e, na janela Propriedades defina o valor de **cópia Propagas** .
 
  ![Propaga a propriedade de cópia da função de domínio](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
@@ -372,12 +372,12 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
 ```
 
-## <a name="standard-copy-behavior"></a>Comportamento copiar padrão
+## <a name="standard-copy-behavior"></a>Comportamento copiar padrão 
  O código nesta seção mostra métodos que você pode substituir para alterar o comportamento de cópia. Para ajudá-lo a entender como fazer suas próprias personalizações, esta seção mostra o código que substitui os métodos envolvidos na cópia, mas não altera o comportamento padrão.
 
  Quando o usuário pressiona CTRL+C ou usa o comando Copiar, o método <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> é chamado. Você pode ver como isso é configurado em **DslPackage\Generated Code\CommandSet.cs**. Para obter mais informações sobre como os comandos são configurados, consulte [como adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Você pode substituir ProcessOnMenuCopyCommand adicionando uma definição de classe parcial de *MyDsl*`ClipboardCommandSet` no projeto DslPackage.
+ Você pode substituir ProcessOnMenuCopyCommand adicionando uma definição de classe parcial de *MyDsl* `ClipboardCommandSet` no projeto DslPackage.
 
 ```csharp
 using System.Collections.Generic;
@@ -563,6 +563,6 @@ namespace Company.MyDsl
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) , [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)
  

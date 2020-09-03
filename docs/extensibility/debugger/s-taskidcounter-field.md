@@ -1,5 +1,5 @@
 ---
-title: campo s_taskIdCounter | Microsoft Docs
+title: Campo de s_taskIdCounter | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5b4c91d47fc1123a6737873fd27b7c95e0a98487
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713128"
 ---
 # <a name="s_taskidcounter-field"></a>Campo s_taskIdCounter
-O próximo identificador <xref:System.Threading.Tasks.Task> disponível para um objeto.
+O próximo identificador disponível para um <xref:System.Threading.Tasks.Task> objeto.
 
- **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montagem:** mscorlib (in mscorlib.dll)
+ **Assembly:** mscorlib (no mscorlib.dll)
 
- Como você não pode acessar este membro interno do .NET Framework, a seguinte sintaxe é fornecida na Linguagem Intermediária Comum (CIL).
+ Como você não pode acessar esse membro interno do .NET Framework, a sintaxe a seguir é fornecida em Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Sintaxe
 

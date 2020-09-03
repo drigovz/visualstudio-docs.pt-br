@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3cfbcf127b9951ddfce1d3db8fe1177087b0350a
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918499"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
@@ -36,5 +36,5 @@ Possíveis causas do erro incluem:
   
 - Se você estiver tentando depurar um aplicativo ASP.NET, consulte [publicando no IIS](https://docs.asp.net/en/latest/publishing/iis.html) para obter instruções sobre como implantar em um computador remoto que executa o IIS 8 ou superior, ou [a depuração remota ASP.net em um computador remoto do IIS 7,5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) para obter instruções sobre como implantar em um computador remoto que executa o IIS 7,5.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

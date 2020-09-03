@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815117"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Walkthrough: Depurar uma folha de estilos XSLT
@@ -70,7 +70,7 @@ Adicionaremos duas variáveis à janela **Watch 1** para que possamos examinar s
 
 3. Na próxima linha, digite `self::node()` o campo **nome** e pressione **Enter**.
 
-   `self::node()`é uma expressão XPath que é avaliada como o nó de contexto atual. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
+   `self::node()` é uma expressão XPath que é avaliada como o nó de contexto atual. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
 
 4. Expanda o `self::node()` nó e, em seguida, expanda o nó que é o valor `price` .
 
@@ -155,6 +155,6 @@ Os seguintes dois arquivos são usados por passo a passo.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)

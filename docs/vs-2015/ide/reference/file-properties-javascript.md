@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657719"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
@@ -53,7 +53,7 @@ ms.locfileid: "72657719"
 
 - **Conteúdo** – O arquivo está incluído no manifesto do pacote. Por exemplo, essa configuração é o valor padrão para um arquivo .htm, .js, .css, de imagem, de áudio ou de vídeo.
 
-- **Manifesto** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.
+- **Manifesto** – o arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.
 
 - **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.
 
@@ -74,7 +74,7 @@ ms.locfileid: "72657719"
 ### <a name="file-type"></a>Tipo de arquivo
  Exibe o tipo de arquivo da referência.
 
-### <a name="file-version"></a>Versão do arquivo
+### <a name="file-version"></a>Versão do Arquivo
  Exibe a versão de arquivo da referência.
 
 ### <a name="identity"></a>Identidade
@@ -89,11 +89,11 @@ ms.locfileid: "72657719"
 ### <a name="sdk-path"></a>Caminho do SDK
  Exibe o caminho para o arquivo do SDK referenciado.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
  Exibe o URI que deve ser incluído nos arquivos HTML ou JavaScript do projeto para incluir o arquivo como um arquivo de origem.
 
-### <a name="version"></a>Version
+### <a name="version"></a>Versão
  Exibe a versão da referência.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [NIB: Propriedades do projeto (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

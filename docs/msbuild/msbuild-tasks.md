@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633129"
 ---
 # <a name="msbuild-tasks"></a>tarefas MSBuild
 
-Uma plataforma de build precisa de capacidade para executar qualquer número de ações durante o processo de build. O MSBuild usa *tarefas* para executar essas ações. Uma tarefa é uma unidade de código executável usada pelo MSBuild para executar operações de construção atômica.
+Uma plataforma de build precisa de capacidade para executar qualquer número de ações durante o processo de build. O MSBuild usa *tarefas* para executar essas ações. Uma tarefa é uma unidade de código executável usada pelo MSBuild para executar operações de compilação atômica.
 
 ## <a name="task-logic"></a>Lógica da tarefa
 
- O formato de arquivo de projeto MSBuild XML não pode executar totalmente as operações de construção por conta própria, portanto, a lógica da tarefa deve ser implementada fora do arquivo do projeto.
+ O formato de arquivo de projeto XML do MSBuild não pode executar operações de compilação por conta própria, portanto, a lógica de tarefa deve ser implementada fora do arquivo de projeto.
 
  A lógica de execução de uma tarefa é implementada como uma classe do .NET que implementa a interface <xref:Microsoft.Build.Framework.ITask>, que é definida no namespace <xref:Microsoft.Build.Framework>.
 
- A classe de tarefa também define os parâmetros de entrada e saída disponíveis para a tarefa no arquivo de projeto. Todas as propriedades não-abstratas estáticas definidas pelo público expostas pela classe de tarefas podem receber valores no arquivo do projeto, colocando um atributo correspondente com o mesmo nome no elemento [Tarefa](../msbuild/task-element-msbuild.md) e definindo seu valor como mostrado nos exemplos posteriores deste artigo.
+ A classe de tarefa também define os parâmetros de entrada e saída disponíveis para a tarefa no arquivo de projeto. Todas as propriedades não-abstratas não estáticas de tabela pública expostas pela classe Task podem receber valores no arquivo de projeto colocando um atributo correspondente com o mesmo nome no elemento [Task](../msbuild/task-element-msbuild.md) e definindo seu valor, conforme mostrado nos exemplos mais adiante neste artigo.
 
- Você pode escrever sua própria tarefa por meio da criação de uma classe gerenciada que implementa a interface <xref:Microsoft.Build.Framework.ITask>. Para obter mais informações, consulte [Redação de tarefas](../msbuild/task-writing.md).
+ Você pode escrever sua própria tarefa por meio da criação de uma classe gerenciada que implementa a interface <xref:Microsoft.Build.Framework.ITask>. Para obter mais informações, consulte [gravação de tarefas](../msbuild/task-writing.md).
 
 ## <a name="execute-a-task-from-a-project-file"></a>Executar uma tarefa de um arquivo de projeto
 
- Antes de executar uma tarefa no seu arquivo de projeto, primeiro você deve mapear o tipo no assembly que implementa a tarefa para o nome da tarefa com o elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Isso permite que o MSBuild saiba onde procurar a lógica de execução da sua tarefa quando encontrá-la no arquivo do projeto.
+ Antes de executar uma tarefa no seu arquivo de projeto, primeiro você deve mapear o tipo no assembly que implementa a tarefa para o nome da tarefa com o elemento [UsingTask](../msbuild/usingtask-element-msbuild.md). Isso permite que o MSBuild saiba onde procurar a lógica de execução da sua tarefa ao encontrá-la em seu arquivo de projeto.
 
- Para executar uma tarefa em um arquivo de projeto MSBuild, crie um `Target` elemento com o nome da tarefa como filho de um elemento. Se uma tarefa aceita parâmetros, eles são passados como atributos do elemento.
+ Para executar uma tarefa em um arquivo de projeto do MSBuild, crie um elemento com o nome da tarefa como um filho de um `Target` elemento. Se uma tarefa aceita parâmetros, eles são passados como atributos do elemento.
 
- Listas de itens do MSBuild e propriedades podem ser usadas como parâmetros. Por exemplo, o código `MakeDir` a seguir chama `Directories` a tarefa `MakeDir` e define o `BuildDir` valor da propriedade do objeto igual ao valor da propriedade:
+ As listas e propriedades de item do MSBuild podem ser usadas como parâmetros. Por exemplo, o código a seguir chama a `MakeDir` tarefa e define o valor da `Directories` Propriedade do `MakeDir` objeto igual ao valor da `BuildDir` Propriedade:
 
 ```xml
 <Target Name="MakeBuildDirectory">
@@ -63,15 +63,15 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
 
 ## <a name="included-tasks"></a>Tarefas incluídas
 
- O MSBuild vem com muitas tarefas, como [copy](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios, e [CSC](../msbuild/csc-task.md), que compila arquivos de código fonte C#. Para obter uma lista completa de tarefas e informações de uso disponíveis, consulte [Referência tarefa](../msbuild/msbuild-task-reference.md).
+ O MSBuild é fornecido com muitas tarefas, como [Copy](../msbuild/copy-task.md), que copia arquivos, [MakeDir](../msbuild/makedir-task.md), que cria diretórios e [CSC](../msbuild/csc-task.md), que compila arquivos de código-fonte C#. Para obter uma lista completa de tarefas disponíveis e informações de uso, consulte [referência de tarefas](../msbuild/msbuild-task-reference.md).
 
 ## <a name="overridden-tasks"></a>Tarefas substituídas
 
- O MSBuild procura tarefas em vários locais. O primeiro local está em arquivos com a extensão *. SubstituiçãoTarefas* armazenadas nos diretórios framework .NET. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão *.Tasks* nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.
+ O MSBuild procura tarefas em vários locais. O primeiro local está em arquivos com a extensão *. OverrideTasks* armazenados nos diretórios .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão *.Tasks* nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.
 
 ## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Redação de tarefas](../msbuild/task-writing.md)
-- [Tarefas inline](../msbuild/msbuild-inline-tasks.md)
+- [Produção de tarefas](../msbuild/task-writing.md)
+- [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)

@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a85979c53d61d4b8d5a4f4b26d3ed3a1e19e952
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713635"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referência (APIs de depuração no Visual Studio)
 
-As referências do Visual Studio Debugging SDK descrevem o modelo básico para a arquitetura e funcionalidade de tempo de execução do depurador e seus componentes. A documentação faz o menor número possível de suposições sobre os componentes e interfaces que descreve, além do comportamento que define através das interfaces.
+O SDK de depuração do Visual Studio faz referência ao modelo básico para a arquitetura de tempo de execução e a funcionalidade do depurador e de seus componentes. A documentação faz o menor número possível de suposições sobre os componentes e as interfaces que ele descreve, além do comportamento que ele define por meio das interfaces.
 
-O objetivo da seção de referência é fornecer suporte para um conjunto de idiomas, tempos de execução e sistemas operacionais tão diversos quanto possível.
+O objetivo da seção de referência é fornecer suporte a um conjunto de idiomas, tempos de execução e sistemas operacionais mais diversificados possível.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
-Contém documentação para as interfaces, enumeradores e estruturas da API de depuração do Visual Studio.
+Contém a documentação para as interfaces, enumeradores e estruturas da API de depuração do Visual Studio.
 
 [Glossário](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 

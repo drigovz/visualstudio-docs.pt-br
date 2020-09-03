@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8457dde4a447b3b49349ee7f9a979479abe4aaf8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851618"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
@@ -27,7 +27,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
 - **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-- **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincroniza suas configurações do Visual Studio** – as configurações que você personaliza, como associações de teclas, layout de janela e tema de cores, se aplicam imediatamente quando você entra no Visual Studio em qualquer dispositivo. Consulte [Configurações sincronizadas no Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Desbloqueia permanentemente o Visual Studio Express** – você pode usar qualquer edição do Visual Studio Express por quanto tempo desejar, em vez de ficar limitado ao período de avaliação de 30 dias.
 
@@ -35,7 +35,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
 - **Estende o período de avaliação do Visual Studio** – você pode usar o Visual Studio Professional ou Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação de 30 dias.
 
-- **Desbloqueia o Visual Studio se você usa uma conta associada a uma assinatura do MSDN ou VSO**. Veja [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Desbloqueia o Visual Studio se você usa uma conta associada a uma assinatura do MSDN ou VSO**. Consulte [como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Conecta-se automaticamente a serviços como o Azure e Visual Studio Team Services** no IDE sem solicitar credenciais para a mesma conta novamente.
 
@@ -46,7 +46,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
  Depois de fornecer as configurações, o Visual Studio é iniciado, e você está conectado e pronto para começar. Para verificar se você entrou, procure seu nome de perfil no canto superior direito do ambiente do Visual Studio.
 
- ![Currentlly usuário conectado](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Usuário atualmente conectado](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A menos que você se desconecte, você será conectado automaticamente ao Visual Studio sempre que o iniciar e todas as alterações nas configurações sincronizadas são aplicadas automaticamente. Para se desconectar, escolha a seta para baixo próxima do seu nome de perfil no ambiente do Visual Studio, escolha o comando **Configurações da conta** e escolha o link **Sair**. Para entrar novamente, escolha o comando **Entrar** no canto superior direito do ambiente do Visual Studio.
 

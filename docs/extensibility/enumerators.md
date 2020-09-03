@@ -11,31 +11,31 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711849"
 ---
 # <a name="enumerators"></a>Enumeradores
-Esta seção lista os tipos de dados enumeradores na API plug-in de controle de fonte que o plug-in de controle de origem deve saber.
+Esta seção lista os tipos de dados do enumerador na API de plug-in de controle do código-fonte que o plug-in de controle do código-fonte deve conhecer.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Código de comando](../extensibility/command-code-enumerator.md) Enumera as opções para as funções [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList.](../extensibility/sccpopulatelist-function.md)
+- [Código de comando](../extensibility/command-code-enumerator.md) Enumera as opções para as funções [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) e [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
-- [Mensagem](../extensibility/message-enumerator.md) Enumera bandeiras usadas para o retorno de chamada de impressão, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+- [Mensagem](../extensibility/message-enumerator.md) de Enumera sinalizadores usados para o retorno de chamada de impressão, [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
-- [Código de status de arquivo](../extensibility/file-status-code-enumerator.md) Contém valores constantes nomeados que especificam o estado de um arquivo sob controle de origem.
+- [Código de status do arquivo](../extensibility/file-status-code-enumerator.md) Contém valores de constantes nomeados que especificam o estado de um arquivo sob controle do código-fonte.
 
-- [Código de status do diretório](../extensibility/directory-status-code-enumerator.md) Contém valores constantes nomeados que especificam o estado de um diretório sob controle de origem.
+- [Código de status do diretório](../extensibility/directory-status-code-enumerator.md) Contém valores de constantes nomeados que especificam o estado de um diretório sob controle do código-fonte.
 
 ## <a name="related-sections"></a>Seções relacionadas
-- [Criar um plug-in de controle de origem](../extensibility/internals/creating-a-source-control-plug-in.md) Define o SDK plug-in de controle de origem e descreve os recursos incluídos.
+- [Criar um plug-in de controle do código-fonte](../extensibility/internals/creating-a-source-control-plug-in.md) Define o SDK de plug-in de controle do código-fonte e descreve os recursos incluídos.
 
-- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Solicita ao usuário opções avançadas para o comando dado.
+- [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) Solicita ao usuário as opções avançadas para o comando fornecido.
 
-- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Examina a lista de arquivos para seu status atual. Além disso, `pfnPopulate` usa a função para notificar o chamador `nCommand`quando um arquivo não corresponde aos critérios do .
+- [SccPopulateList](../extensibility/sccpopulatelist-function.md) Examina a lista de arquivos em busca de seu status atual. Além disso, o usa a `pfnPopulate` função para notificar o chamador quando um arquivo não corresponde aos critérios para o `nCommand` .
 
-- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descreve a função de retorno de chamada que é usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens do plug-in de controle de origem através do IDE.
+- [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descreve a função de retorno de chamada usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens do plug-in de controle do código-fonte por meio do IDE.
 
-- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md) Fornece uma lista completa de todos os elementos da API plug-in de controle de fonte.
+- [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md) Fornece uma listagem completa de todos os elementos na API de plug-in de controle do código-fonte.
