@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
 ms.openlocfilehash: 8c7d502924175632bdabddc234af6ea18d2352ac
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950231"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilando e limpando Projetos e Soluções
@@ -45,6 +45,6 @@ Para interromper um build, pressione o quadrado vermelho na área de status:
 
 ![Pressione quadrado vermelho para parar o build](media/compiling-and-building-image3.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e limpar projetos e soluções (Visual Studio no Windows)](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

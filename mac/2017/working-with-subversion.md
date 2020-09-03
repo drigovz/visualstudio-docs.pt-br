@@ -5,16 +5,16 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: e5a9dd8120dd312bfc3e1c8905a725a58cca0e92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd46a9eba7770b73425f1461fab6cb8443ace26c
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983528"
+ms.locfileid: "89402264"
 ---
 # <a name="working-with-subversion"></a>Trabalhando com o Subversion
 
-O Subversion é o sistema de controle de versão centralizado que permite fazer check-out de uma única cópia mestra dos dados centralizados. Em contraste com o Git, fazer check-out de um repositório do Subversion não clona todo o repositório e cria apenas um instantâneo pontual.
+O Subversion é o sistema de controle de versão centralizado que permite que você confira uma única cópia principal dos dados centralizados. Em contraste com o Git, fazer check-out de um repositório do Subversion não clona todo o repositório e cria apenas um instantâneo pontual.
 
 O Subversion usa um modelo de copiar-modificar-mesclar para permitir que os usuários trabalhem simultaneamente no mesmo repositório. Isso significa que cada usuário cria uma cópia, local ou funcional, de dados centralizados na qual trabalham independentemente. As alterações nas cópias funcionais dos usuários são mescladas de forma cronológica.
 

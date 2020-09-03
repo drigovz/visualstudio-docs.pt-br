@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826173"
 ---
 # <a name="property-functions"></a>Funções de propriedade
@@ -41,17 +41,17 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
 - [MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
-- [MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [GetDirectoryNameOfFileAbove MSBuild](#BKMK_GetDirectoryNameOfFileAbove)  
   
 - [MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
-- [MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [GetRegistryValueFromView MSBuild](#BKMK_GetRegistryValueFromView)  
   
 - [MSBuild MakeRelative](#BKMK_MakeRelative)  
   
-- [MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [ValueOrDefault MSBuild](#BKMK_ValueOrDefault)  
   
-## <a name="BKMK_Syntax"></a> Sintaxe da função de propriedade  
+## <a name="property-function-syntax"></a><a name="BKMK_Syntax"></a> Sintaxe da função de propriedade  
  Três tipos de funções de propriedade estão listados abaixo. Cada função possui uma sintaxe diferente:  
   
 - Funções de propriedade de cadeia de caracteres (instância)  
@@ -60,12 +60,12 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
 - Funções de propriedade MSBuild  
   
-### <a name="BKMK_String"></a> Funções de propriedade de cadeia de caracteres  
+### <a name="string-property-functions"></a><a name="BKMK_String"></a> Funções de propriedade de cadeia de caracteres  
  Todos os valores de propriedade de compilação são apenas valores de cadeia de caracteres. Você pode usar métodos de cadeia (instância) para operar em qualquer valor de propriedade. Por exemplo, você pode extrair o nome da unidade (os três primeiros caracteres) de uma propriedade de compilação que representa um caminho completo usando este código:  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-### <a name="BKMK_Static"></a> Funções de propriedade estática  
+### <a name="static-property-functions"></a><a name="BKMK_Static"></a> Funções de propriedade estática  
  No seu script de compilação, você pode acessar propriedades e métodos estáticos de muitas classes de sistema. Para obter o valor de uma propriedade estática, use a seguinte sintaxe, em que *Class* é o nome da classe do sistema e *Property* é o nome da propriedade.  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
 - System.IO.File::ReadAllText  
   
-### <a name="BKMK_InstanceMethods"></a> Chamando métodos de instância em propriedades estáticas  
+### <a name="calling-instance-methods-on-static-properties"></a><a name="BKMK_InstanceMethods"></a> Chamando métodos de instância em propriedades estáticas  
  Se você acessar uma propriedade estática que retorna uma instância de objeto, poderá invocar métodos de instância desse objeto. Para invocar um método de instância, use a seguinte sintaxe, em que *Class* é o nome de classe de sistema, *Property* é o nome da propriedade, *Method* é o nome do método e *(Parameters)* é a lista de parâmetros para o método:  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-### <a name="BKMK_PropertyFunctions"></a> Funções de Propriedade de MSBuild  
+### <a name="msbuild-property-functions"></a><a name="BKMK_PropertyFunctions"></a> Funções de Propriedade do MSBuild  
  Vários métodos estáticos em sua compilação podem ser acessados para fornecer aritmética, lógica de bit a bit e suporte a caracteres de escape. Você pode acessar esses métodos usando a seguinte sintaxe, em que *Method* é o nome do método e *Parameters* é a lista de parâmetros para o método.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -188,7 +188,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
  Aqui está uma lista de funções da propriedade MSBuild:  
   
-|Assinatura da função|DESCRIÇÃO|  
+|Assinatura da função|Descrição|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Adicionar dois duplos.|  
 |long Add(long a, long b)|Adicionar dois longos.|  
@@ -207,7 +207,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
 |int BitwiseXor(int first, int second)|Realizar um bit a bit `XOR` no primeiro e segundo (primeiro ^ segundo).|  
 |int BitwiseNot(int first)|Realizar um bit a bit `NOT` (~primeiro).|  
   
-## <a name="BKMK_Nested"></a> Funções de propriedade aninhadas  
+## <a name="nested-property-functions"></a><a name="BKMK_Nested"></a> Funções de propriedade aninhadas  
  Você pode combinar funções de propriedade para formar funções mais complexas, como mostra o exemplo a seguir.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,8 +216,8 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
  Metadados também podem aparecer em funções de propriedade aninhadas. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).  
   
-## <a name="BKMK_DoesTaskHostExist"></a> MSBuild DoesTaskHostExist  
- A função de propriedade `DoesTaskHostExist` no MSBuild retorna se um host de tarefas está instalado atualmente para os valores de tempo de execução e arquitetura especificados.  
+## <a name="msbuild-doestaskhostexist"></a><a name="BKMK_DoesTaskHostExist"></a> DoesTaskHostExist MSBuild  
+ A função de propriedade `DoesTaskHostExist` no MSBuild retorna se um host de tarefas está instalado atualmente para os valores de runtime e arquitetura especificados.  
   
  Essa função de propriedade tem a seguinte sintaxe:  
   
@@ -225,7 +225,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
+## <a name="msbuild-getdirectorynameoffileabove"></a><a name="BKMK_GetDirectoryNameOfFileAbove"></a> MSBuild GetDirectoryNameOfFileAbove  
  A função da propriedade `GetDirectoryNameOfFileAbove` procura por um arquivo nos diretórios acima do diretório atual no caminho.  
   
  Essa função de propriedade tem a seguinte sintaxe:  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-## <a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
+## <a name="msbuild-getregistryvalue"></a><a name="BKMK_GetRegistryValue"></a> MSBuild GetRegistryValue  
  A função da propriedade `GetRegistryValue` do MSBuild retorna o valor de uma chave de registro. Essa função usa dois argumentos, o nome da chave e o nome do valor, e retorna o valor do registro. Se você não especificar um nome de valor, o valor padrão será retornado.  
   
  Os exemplos a seguir mostram como a função é usada:  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-## <a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
+## <a name="msbuild-getregistryvaluefromview"></a><a name="BKMK_GetRegistryValueFromView"></a> MSBuild GetRegistryValueFromView  
  A função de propriedade `GetRegistryValueFromView` do MSBuild obtém os dados de registro do sistema, dados a chave do registro, o valor e uma ou mais exibições de registro solicitada. A chave e o valor são pesquisados em cada exibição do registo em ordem até serem encontrados.  
   
  A sintaxe para essa função de propriedade é:  
@@ -271,13 +271,13 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
 |RegistryView.Registry64|A exibição do registro do aplicativo de 64 bits.|  
 |RegistryView.Default|A exibição do registro que corresponde ao processo em que o aplicativo está sendo executado.|  
   
- Confira o exemplo abaixo.  
+ A seguir, é mostrado um exemplo.  
   
  `$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))`  
   
  obtém os dados de SLRuntimeInstallPath da chave ReferenceAssemblies, procurando primeiro na exibição do registro de 64 bits e depois na exibição do registro de 32 bits.  
   
-## <a name="BKMK_MakeRelative"></a> MSBuild MakeRelative  
+## <a name="msbuild-makerelative"></a><a name="BKMK_MakeRelative"></a> MakeRelative MSBuild  
  A função de propriedade `MakeRelative` do MSBuild retorna o caminho relativo do segundo caminho relativo ao primeiro caminho. Cada caminho pode ser um arquivo ou pasta.  
   
  Essa função de propriedade tem a seguinte sintaxe:  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-## <a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
+## <a name="msbuild-valueordefault"></a><a name="BKMK_ValueOrDefault"></a> MSBuild ValueOrDefault  
  A função de propriedade `ValueOrDefault` do MSBuild retorna o primeiro argumento, a menos que seja nulo ou esteja vazio. Se o primeiro argumento for nulo ou estiver vazio, a função retornará o segundo argumento.  
   
  Os exemplos a seguir mostram como essa função é usada.  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 [Propriedades do MSBuild](msbuild-properties1.md)   
 [Visão geral do MSBuild](msbuild.md)

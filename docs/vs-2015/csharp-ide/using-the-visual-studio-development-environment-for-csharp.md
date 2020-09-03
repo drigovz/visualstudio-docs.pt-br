@@ -1,5 +1,5 @@
 ---
-title: Usando o ambiente de desenvolvimento C# para | Microsoft Docs
+title: Usando o ambiente de desenvolvimento para C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0cd8d8f2be0a653189130de6b38c8586957948d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673153"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para C \#
+# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para C\#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -39,18 +39,18 @@ O IDE (ambiente de desenvolvimento integrado) do Visual Studio é uma coleção 
 |[Introdução ao Designer de Projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Fornece uma visão geral do Designer de Projeto que oferece um local central para gerenciamento de propriedades, configurações e recursos de projetos.|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|Descreve as ferramentas do Visual Studio que ajudam a modificar e manipular texto, código e marcação, inserir e configurar controles e outros objetos e namespaces, além de adicionar referências a componentes e recursos externos.|
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|Fornece links para tópicos que descrevem recursos específicos do Visual C# como a geração automática de código e o IntelliSense para membros usados mais recentemente.|
-|[Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)|Fornece uma visão geral do uso de snippets de código no Visual C# para adicionar automaticamente construções de código comuns ao seu aplicativo|
+|[Trechos de código do Visual C#](../ide/visual-csharp-code-snippets.md)|Fornece uma visão geral do uso de snippets de código no Visual C# para adicionar automaticamente construções de código comuns ao seu aplicativo|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|Fornece links para procedimentos sobre como usar a janela Localizar e Substituir, Indicadores, Lista de Tarefas e Lista de Erros para localizar linhas de código.|
 |[Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)|Explica como procurar hierarquias de classes, membros de classes e recursos.|
-|[Como adicionar um arquivo de configuração do aplicativo a um projeto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
+|[Como: adicionar um arquivo de configuração de aplicativo a um projeto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
 |[Metadados como origem](../csharp-ide/metadata-as-source.md)|Descreve como o IDE permite exibir metadados como códigos-fonte.|
 |[Refatoração (C#)](../csharp-ide/refactoring-csharp.md)|Lista as operações de refatoração que ajudam a modificar seu código sem mudar o comportamento do aplicativo.|
 |[Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)|Explica como configurar depuração, versão e compilações especiais de sua solução do Visual Studio.|
 |[Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)|Descreve como executar o Depurador do Visual Studio para resolver erros de lógica e semântica.|
 |[Gerenciando recursos de aplicativo (.NET)](../ide/managing-application-resources-dotnet.md)|Mostra como adicionar ou editar recursos para seu projeto como cadeias de caracteres, imagens, ícones, áudio e arquivos.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
 
 - [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
 - [Introdução ao C#](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
-- [Referência de C#](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+- [Referência do C#](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e8d82712a2fb8e30b13f9f369bf87be5292c199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659486"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
@@ -34,14 +34,14 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
  ![Componentes e portas interconectadas](../modeling/media/componentsample.png "ComponentSample")
 
 ## <a name="the-structure-of-the-dsl-solution"></a>A Estrutura da Solução DSL
- O projeto **DSL** define a API para sua DSL. O projeto **DslPackage** define como ele se integra ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.
+ O projeto **DSL** define a API para sua DSL. O projeto **DslPackage** define como ele se integra ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.
 
 ### <a name="the-code-directories"></a>Os diretórios do código
  A maior parte do código em cada um desses projetos é gerada a partir de **Dsl\DslDefinition.DSL**. O código gerado está na pasta de **código gerada** . Para ver um arquivo gerado, clique em **[+]** ao lado do arquivo gerando **. tt** .
 
  É recomendável inspecionar o código gerado para ajudar a entender a DSL. Para visualizar os arquivos gerados, expanda os arquivos *.tt no Gerenciador de Soluções.
 
- Os arquivos \*. tt contêm muito pouco código de geração. Ao invés, eles usam diretrizes `<#include>` para incluir arquivos de modelo compartilhados. Os arquivos compartilhados podem ser encontrados em **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ Os \* arquivos. tt contêm muito pouco código de geração. Ao invés, eles usam diretrizes `<#include>` para incluir arquivos de modelo compartilhados. Os arquivos compartilhados podem ser encontrados em **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Ao adicionar seu próprio código do programa à solução DSL, adicione-o em um arquivo separado, fora da pasta do Código Gerado. Talvez você queira criar uma pasta de **código personalizada** . (Ao adicionar um novo arquivo de código a uma pasta personalizada, lembre-se de corrigir o namespace no esqueleto inicial do código.)
 
@@ -60,7 +60,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados aparecem no projeto **DSL** .
 
- @No__t_1 *YourDsl*
+ *YourDsl*`Schema.xsd`
 
  O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para o diretório de compilação (**bin**). Ao instalar sua DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** para que os arquivos de modelo possam ser validados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
@@ -72,7 +72,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 
- A relação é criada no método de `Builder.Connect()` de *relacionamento* . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
+ A relação é criada no método *relationship* `Builder.Connect()` . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -202,7 +202,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
 
  `DocData.cs`
 
- O *YourDsl* `DocData` gerencia o carregamento e o salvamento de um modelo no arquivo e cria a instância do repositório.
+ *YourDsl* `DocData` gerencia o carregamento e o salvamento de um modelo no arquivo e cria a instância do repositório.
 
  Por exemplo, se desejar salvar a DSL em um banco de dados ao invés de em um arquivo, é possível substituir os métodos `Load` e `Save`.
 
@@ -344,9 +344,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.
 
 > [!WARNING]
-> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. Em Gerenciador de Soluções, selecione o arquivo e verifique se a propriedade **incluir no VSIX** está `True`.
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. Em Gerenciador de Soluções, selecione o arquivo e certifique-se de que a propriedade **incluir no VSIX** seja `True` .
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md) [que compreenda modelos, classes e relações,](../modeling/understanding-models-classes-and-relationships.md) [Personalizando e estendendo um](../modeling/customizing-and-extending-a-domain-specific-language.md) código de escrita de linguagem específica de domínio [para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

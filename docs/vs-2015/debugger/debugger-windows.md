@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1395aba0ea2f40e0df95435a340f4104c9f25d03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545620"
 ---
-# <a name="debugger-windows"></a>Janelas do Depurador
+# <a name="debugger-windows"></a>Janelas do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode abrir a maioria das janelas do depurador enquanto estiver Depurando seu programa. Para ver uma lista de janelas do depurador, defina um ponto de interrupção e inicie a depuração. Quando você atingir o ponto de interrupção e a execução parar, clique em **depurar/Windows**.  

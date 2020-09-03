@@ -8,10 +8,10 @@ ms.date: 03/17/2020
 ms.topic: conceptual
 description: Gerenciando assinaturas na oferta Enterprise do GitHub do Visual Studio +
 ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249833"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gerenciar assinaturas do Visual Studio com o GitHub Enterprise
@@ -73,7 +73,7 @@ A Ajuda do GitHub fornece uma variedade de guias de administrador para responder
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenha [suporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)

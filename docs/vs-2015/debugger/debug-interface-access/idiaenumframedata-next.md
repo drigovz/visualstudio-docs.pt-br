@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe8735511e9830542ce8622a6d984a0a817671
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161227"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um número especificado de elementos de dados do quadro na sequência de enumeração.  
+Recupera um número especificado de elementos de dados de quadro na sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,17 +37,17 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parâmetros  
  celt  
- [in] O número de elementos de dados do quadro no enumerador a ser recuperado.  
+ no O número de elementos de dados de quadro no enumerador a ser recuperado.  
   
  rgelt  
- [out] Uma matriz de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objetos a ser preenchida com os elementos de dados do quadro solicitada.  
+ fora Uma matriz de objetos [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) a ser preenchida com os elementos de dados de quadro solicitados.  
   
  pceltFetched  
- [out] Retorna o número de elementos de dados do quadro no enumerador buscado.  
+ fora Retorna o número de elementos de dados de quadro no enumerador obtido.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há mais registros. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais registros. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

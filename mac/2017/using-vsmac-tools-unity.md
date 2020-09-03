@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79303291"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315311"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Usando as Ferramentas do Visual Studio para Mac para Unity
 
@@ -29,7 +29,7 @@ Outra opção é abrir o Visual Studio para Mac sem nenhum script no editor de c
 As Ferramentas do Visual Studio para Mac para Unity inclui um atalho para acessar a documentação da API do Unity. Para acessar a documentação da API do Unity no Visual Studio para Mac, posicione o cursor sobre a API do Unity você deseja conhecer e pressione o **comando ⌘ + ‘**.
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense para mensagens do Unity
-O mecanismo Unity transmite mensagens para scripts MonoBehavior, permitindo que os desenvolvedores escrevam códigoque reage a mensagens como OnMouseDown, OnTriggerEnter, etc. Como estes não são métodos virtuais na classe base MonoBehavior, alguns IDEs, como o MonoDevelop, não possuem funcionalidade de conclusão de código para mensagens Unity.
+O mecanismo do Unity transmite mensagens para scripts monocomportamento, permitindo que os desenvolvedores escrevam código que reage a mensagens como OnMouseDown, OnTriggerEnter, etc. Como esses não são métodos virtuais na classe multicomportamento base, alguns IDEs, como o MonoDevelop, não têm funcionalidade de conclusão de código para mensagens do Unity.
 
 No entanto, as Ferramentas do Visual Studio para Mac para Unity estende sua funcionalidade do IntelliSense para as mensagens do Unity. Isso torna mais fácil implementar mensagens Unity em scripts MonoBehaviour e auxilia no aprendizado da API do Unity. Para usar o IntelliSense para mensagens Unity:
 
@@ -71,7 +71,7 @@ Para adicionar um novo script MonoBehaviour C#, **clique com o botão direito do
 
 ### <a name="add-a-new-unity-shader"></a>Adicionar um novo sombreador do Unity
 
-Para adicionar um novo sombreador unity, **clique com o botão direito do mouse na pasta 'Ativos'** ou em um subdiretório no bloco 'Solução' e **selecione Adicionar > Novo Sombreador**.
+Para adicionar um novo sombreador do Unity, **clique com o botão direito do mouse na pasta ativos** ou em um subdiretório no painel de solução e selecione **Adicionar > novo sombreador**.
 
 ### <a name="add-a-new-folder"></a>Adicionar uma nova pasta
 

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161349"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
@@ -45,6 +45,6 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 |?|Ponto de interrogação, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|  
 |*|Asterisco, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como: escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)

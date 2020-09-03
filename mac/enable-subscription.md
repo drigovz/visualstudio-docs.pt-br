@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
 ms.openlocfilehash: 23c0266ad64f26438a11cdddb0bc9ee416507d0d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183932"
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
@@ -44,6 +44,6 @@ Atualmente não é possível utilizar uma chave do produto (Product Key) para ha
 
 Se você tiver comprado o Visual Studio Enterprise 2019 para Mac para computadores sem uma conexão de Internet, poderá continuar a usar o Visual Studio para Mac sem ativação, mas o Xamarin Inspector, Xamarin Profiler e recursos de assemblies inseridos não estarão disponíveis.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Entrar no Visual Studio (no Windows)](/visualstudio/ide/signing-in-to-visual-studio)

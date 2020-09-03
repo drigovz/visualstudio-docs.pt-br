@@ -1,5 +1,5 @@
 ---
-title: 'Como: Pausar e retomar a coleta de dados de desempenho | Microsoft Docs'
+title: Como pausar e retomar a coleta de dados de desempenho | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826155"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Como: Pausar e retomar a coleta dados de desempenho
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Como pausar e retomar a coleta de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode controlar interativamente a coleta de dados de criação de perfil na janela da página de sessão de criação de perfil.  
@@ -28,7 +28,7 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
  ![Página de sessão de criação de perfil](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
-> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa**  no menu **Depurar**.  
+> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa ** no menu **Depurar**.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Para pausar, retomar ou interromper a criação de perfil  
   
@@ -40,6 +40,6 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
 
   - Escolha **Pare a criação de perfil** para encerrar a sessão de criação de perfil e gerar relatórios.  
   
-## <a name="see-also"></a>Consulte também  
- [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
+## <a name="see-also"></a>Consulte Também  
+ [Controlando a coleta de dados](../profiling/controlling-data-collection.md)   
  [Como: Iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)

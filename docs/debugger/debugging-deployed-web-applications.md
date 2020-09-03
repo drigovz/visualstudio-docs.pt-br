@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350544"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Depurando aplicativos ASP.NET implantados
@@ -38,7 +38,7 @@ O processo para anexar ao processo de trabalho do [!INCLUDE[vstecasp](../code-qu
 > [!NOTE]
 > Muitos aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] fazem referência às DLLs que contêm a lógica de negócios ou outro código útil. Essa referência copia a DLL do computador local para a pasta \bin do diretório virtual do aplicativo Web quando você implanta seu aplicativo. Quando você estiver depurando, lembre-se de que o aplicativo Web está referenciando essa cópia da DLL e não a cópia em seu computador local.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Instruções: habilitar a depuração para aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Como localizar o nome do processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)

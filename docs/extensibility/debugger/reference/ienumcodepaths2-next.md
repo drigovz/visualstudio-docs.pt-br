@@ -1,5 +1,5 @@
 ---
-title: iEnumCodePaths2::Próximo | Microsoft Docs
+title: 'IEnumCodePaths2:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e126fc916360d0cc992da5f17edecda7cb2ef41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717812"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
@@ -43,18 +43,18 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `celt`\
-[em] O número de elementos para recuperar. Também especifica o tamanho `rgelt` máximo da matriz.
+no O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
 `rgelt`\
-[dentro, fora] Matriz de elementos [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) a serem preenchidos.
+[entrada, saída] Matriz de elementos [CODE_PATH](../../../extensibility/debugger/reference/code-path.md) a ser preenchida.
 
 `pceltFetched`\
-[fora] Retorna o número de elementos realmente retornados em `rgelt`.
+fora Retorna o número de elementos realmente retornados em `rgelt` .
 
-## <a name="return-value"></a>Valor retornado
- Se for bem-sucedido, retornará `S_OK`. Retornos `S_FALSE` se menos do que o número solicitado de elementos pode ser devolvido; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos puder ser retornado; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

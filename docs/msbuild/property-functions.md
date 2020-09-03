@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183646"
 ---
 # <a name="property-functions"></a>Funções de propriedade
@@ -344,8 +344,8 @@ Output:
 
 As funções `Exists` e `HasTrailingSlash` não são funções de propriedade. Eles estão disponíveis para uso com o `Condition` atributo. Consulte [condições do MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
+- [propriedades MSBuild](../msbuild/msbuild-properties.md)
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)

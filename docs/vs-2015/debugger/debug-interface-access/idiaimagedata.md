@@ -14,40 +14,40 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54d09a037fff08b1c34f9a0b5e1fbf018cd10bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161408"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Expõe os detalhes da base deslocamentos da memória e o local do módulo ou da imagem.  
+Expõe os detalhes do local de base e dos deslocamentos de memória do módulo ou da imagem.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDiaImageData : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDiaImageData`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDiaImageData` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera o local na memória virtual do módulo relativo para o aplicativo.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Recupera o local na memória virtual do módulo em relação ao aplicativo.|  
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera o local na memória virtual da imagem.|  
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Recupera o local da memória onde a imagem deve ser baseada.|  
   
 ## <a name="remarks"></a>Comentários  
- Alguns fluxos de depuração (XDATA, PDATA) contêm cópias dos dados também é armazenados na imagem. Eles transmitem dados de objetos podem ser consultados quanto a `IDiaImageData` interface. Consulte a seção "Observações para chamadores" neste tópico para obter detalhes.  
+ Alguns fluxos de depuração (XDATA, PDATA) contêm cópias de dados também armazenados na imagem. Esses objetos de dados de fluxo podem ser consultados para a `IDiaImageData` interface. Consulte a seção "notas para chamadores" neste tópico para obter detalhes.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Obtenha essa interface chamando `QueryInterface` em um [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objeto. Observe que nem todos depurar fluxos de suporte a `IDiaImageData` interface. Por exemplo, no momento, somente os fluxos XDATA e PDATA dão suporte a `IDiaImageData` interface.  
+ Obtenha essa interface chamando `QueryInterface` em um objeto [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) . Observe que nem todos os fluxos de depuração dão suporte à `IDiaImageData` interface. Por exemplo, no momento, apenas os fluxos XDATA e PDATA dão suporte à `IDiaImageData` interface.  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo pesquisa todos os fluxos de depuração para qualquer fluxo que dá suporte a `IDiaImageData` interface. Se tal fluxo for encontrado, algumas informações sobre esse fluxo são exibidas.  
+ Este exemplo pesquisa todos os fluxos de depuração de qualquer fluxo que ofereça suporte à `IDiaImageData` interface. Se esse fluxo for encontrado, algumas informações sobre esse fluxo serão exibidas.  
   
 ```cpp#  
 void ShowImageData(IDiaSession *pSession)  
@@ -114,12 +114,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
+ Cabeçalho: dia2. h  
   
- Biblioteca: diaguids.lib  
+ Biblioteca: diaguids. lib  
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>Consulte também  
- [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces (debug interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

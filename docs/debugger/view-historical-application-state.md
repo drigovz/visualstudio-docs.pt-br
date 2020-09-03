@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825520"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio (Visual Studio Enterprise)
@@ -34,13 +34,13 @@ Neste tutorial, você irá:
 
 1. Abra seu projeto no Visual Studio Enterprise.
 
-1. Abrir**opções de** >  **ferramentas** > **Configurações do IntelliTrace** e selecionar a opção Eventos e **instantâneos do IntelliTrace**.
+1. Abra **ferramentas**  >  **Opções**  >  configurações do**IntelliTrace** e selecione a opção **eventos e instantâneos do IntelliTrace**.
 
     Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**.
 
-    ![Habilitar o modo IntelliTrace Events and Snapshots](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo IntelliTrace Events and Snapshots")
+    ![Habilitar o modo de instantâneos e eventos do IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo de instantâneos e eventos do IntelliTrace")
 
-1. Se você quiser configurar opções para visualizar instantâneos em exceções, escolha **IntelliTrace** > **Advanced** na caixa de diálogo **Opções.**
+1. Se você quiser configurar opções para exibir instantâneos em exceções, escolha **IntelliTrace**  >  **avançado** na caixa de diálogo **Opções** .
 
     Essas opções estão disponíveis no Visual Studio 2017 Enterprise versão 15.7 em diante.
 
@@ -49,11 +49,11 @@ Neste tutorial, você irá:
     Quando você habilita eventos e instantâneos, tirar instantâneos em exceções também é habilitado por padrão. Você pode desabilitar os instantâneos em exceções, desmarcando **Coletar instantâneos em eventos de exceção**. Quando esse recurso está habilitado, os instantâneos são obtidos nas exceções sem tratamento. Para exceções tratadas, os instantâneos serão obtidos somente se a exceção for lançada e se não for um relançamento de uma exceção gerada anteriormente. Você pode definir um número máximo de instantâneos em exceções selecionando um valor na lista suspensa. O máximo se aplica a cada vez que o aplicativo entra em modo de interrupção (por exemplo, quando o aplicativo atinge um ponto de interrupção).
 
     > [!NOTE]
-    > Os instantâneos são obtidos somente para eventos de exceção que o IntelliTrace registra. Para código gerenciado, você pode especificar quais eventos o IntelliTrace registra selecionando**Opções de** >  **ferramentas** > **IntelliTrace Events**.
+    > Os instantâneos são obtidos somente para eventos de exceção que o IntelliTrace registra. Para código gerenciado, você pode especificar quais eventos os registros do IntelliTrace selecionando **ferramentas**  >  **Opções**  >  **eventos do IntelliTrace**.
 
 1. Em seu projeto, defina um ou mais pontos de interrupção e inicie a depuração (pressione **F5**) ou inicie a depuração percorrendo seu código (**F10** ou **F11**).
 
-    O IntelliTrace obtém um instantâneo do processo do aplicativo em cada etapa do depurador, em cada evento de ponto de interrupção e em cada evento de exceção sem tratamento. Esses eventos são registrados na guia **Eventos** na janela **Ferramentas de Diagnóstico** junto com outros eventos do IntelliTrace. Para abrir esta janela, escolha **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
+    O IntelliTrace obtém um instantâneo do processo do aplicativo em cada etapa do depurador, em cada evento de ponto de interrupção e em cada evento de exceção sem tratamento. Esses eventos são registrados na guia **Eventos** na janela **Ferramentas de Diagnóstico** junto com outros eventos do IntelliTrace. Para abrir essa janela, escolha **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico**.
 
     Um ícone de câmera aparece próximo aos eventos para os quais os instantâneos estão disponíveis.
 
@@ -65,9 +65,9 @@ Neste tutorial, você irá:
 
 1. Navegue entre os eventos usando os botões **Voltar Etapa (Alt + [)** e **Avançar Etapa (Alt +])** na barra de ferramentas Depurar.
 
-    Esses botões navegam pelos eventos que aparecem na guia **Eventos** na **janela Ferramentas de diagnóstico**. Dar um passo para trás ou para frente para um evento ativa automaticamente a [depuração histórica](../debugger/historical-debugging.md) no evento selecionado.
+    Esses botões navegam pelos eventos que aparecem na guia **eventos** na **janela ferramentas de diagnóstico**. Avançar ou retroceder para um evento ativa automaticamente a [depuração histórica](../debugger/historical-debugging.md) no evento selecionado.
 
-    ![Botões para trás e para frente](../debugger/media/intellitrace-step-back-icons-description.png "Botões para trás e para frente")
+    ![Botões voltar e avançar da etapa](../debugger/media/intellitrace-step-back-icons-description.png "Botões voltar e avançar da etapa")
 
     Quando você volta ou avança uma etapa, o Visual Studio entra em modo de depuração histórica. Nesse modo, o contexto do depurador alterna para a hora em que o evento selecionado foi registrado. O Visual Studio também move o ponteiro para a linha de código correspondente na janela de origem.
 
@@ -79,13 +79,13 @@ Neste tutorial, você irá:
 
 2. Para retornar à execução ao vivo, escolha **Continuar (F5)** ou clique no link **Retornar à depuração ao vivo** na barra de informações.
 
-3. Você também pode visualizar um instantâneo da guia **Eventos.** Para isso, selecione um evento com um instantâneo e clique **em Ativar depuração Histórica**.
+3. Você também pode exibir um instantâneo na guia **eventos** . Para fazer isso, selecione um evento com um instantâneo e clique em **Ativar depuração histórica**.
 
-    ![Ativar depuração histórica em um evento](../debugger/media/intellitrace-activate-historical-debugging.png "Ativar depuração histórica em um evento")
+    ![Ativar a depuração histórica em um evento](../debugger/media/intellitrace-activate-historical-debugging.png "Ativar a depuração histórica em um evento")
 
     Ao contrário do comando **Definir Próxima Instrução**, a exibição de um instantâneo não executa novamente seu código; ela fornece uma exibição estática do estado do aplicativo em um ponto no tempo ocorrido no passado.
 
-    ![Visão geral do recuo do IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Visão geral do retrocesso do IntelliTrace")
+    ![Visão geral de retorno de fundo do IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "Visão geral de retorno de fundo do IntelliTrace")
 
     Para saber mais sobre como inspecionar variáveis no Visual Studio, confira [Primeiro acesso ao depurador](../debugger/debugger-feature-tour.md)
 
@@ -101,7 +101,7 @@ No modo de eventos e instantâneos, o IntelliTrace captura todo o instantâneo d
 
 O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga de tirar um instantâneo é de cerca de 30 ms. Quando um instantâneo é obtido, o processo do aplicativo é bifurcado e a cópia bifurcada é suspensa. Quando você exibe um instantâneo, o Visual Studio está anexando a cópia bifurcada do processo. Para cada instantâneo, o Visual Studio copia apenas a tabela de página e define as páginas como gravação de cópia. Se os objetos no heap forem alterados entre as etapas do depurador associadas a instantâneos, a respectiva tabela de página será copiada, resultando em um custo mínimo de memória. Se o Visual Studio detectar que não há memória suficiente para criar um instantâneo, ele não o fará.
 
-## <a name="known-issues"></a>Problemas conhecidos
+## <a name="known-issues"></a>Problemas Conhecidos
 * Se você estiver usando o modo de eventos e instantâneos do IntelliTrace em versões do Windows anteriores ao Windows 10 Fall Creators Update (RS3) e se a plataforma de depuração de destino do aplicativo for definida como x86, o IntelliTrace não obterá instantâneos.
 
     Soluções alternativas:

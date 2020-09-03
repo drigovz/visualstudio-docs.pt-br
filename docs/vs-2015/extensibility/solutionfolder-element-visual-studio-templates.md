@@ -14,10 +14,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205535"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelos do Visual Studio)
@@ -25,12 +25,12 @@ ms.locfileid: "68205535"
 
 Agrupa projetos em modelos de vários projetos.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<TemplateContent>  
  \<ProjectCollection>  
  \<SolutionFolder>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <SolutionFolder Name="DirectoryName">  
@@ -62,10 +62,10 @@ Agrupa projetos em modelos de vários projetos.
 |`SolutionFolder`|Agrupa projetos em modelos de vários projetos.|  
   
 ## <a name="remarks"></a>Comentários  
- Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O `SolutionFolder` elemento é usado para organizar os projetos no modelo em grupos. As pastas especificadas por `SolutionFolder` elementos são criados como pastas de solução do projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações sobre modelos de vários projetos, consulte [como: Criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md).  
+ Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. O `SolutionFolder` elemento é usado para organizar os projetos no modelo em grupos. As pastas especificadas por `SolutionFolder` elementos são criadas como pastas de solução no projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Para obter mais informações sobre modelos de vários projetos, consulte [como: criar modelos de vários projetos](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo usa o `SolutionFolder` elemento para dividir o modelo de vários projetos em dois grupos, `Math Classes` e `Graphics Classes`. O modelo contém quatro projetos, dois dos quais são colocados em cada pasta de solução.  
+ Este exemplo usa o `SolutionFolder` elemento para dividir o modelo de vários projetos em dois grupos `Math Classes` e `Graphics Classes` . O modelo contém quatro projetos, dois dos quais são colocados em cada pasta de solução.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -99,7 +99,7 @@ Agrupa projetos em modelos de vários projetos.
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como: Criar modelos de multiprojeto](../ide/how-to-create-multi-project-templates.md)
+ [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)   
+ [Como criar modelos multiprojeto](../ide/how-to-create-multi-project-templates.md)

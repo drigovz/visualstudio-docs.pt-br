@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350739"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas automáticas e locais
@@ -97,7 +97,7 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
 
 ![Barra de ferramentas do local de depuração](../debugger/media/debuglocationtoolbar.png "Depurar barra de ferramentas de local")
 
-## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a>Variáveis na janela Autos (C#, C++, Visual Basic, Python)
+## <a name="variables-in-the-autos-window-c-c-visual-basic-python"></a><a name="bkmk_whatvariables"></a> Variáveis na janela Autos (C#, C++, Visual Basic, Python)
 
 Linguagens de código diferentes exibem variáveis diferentes nos **Autos** janela.
 
@@ -140,7 +140,7 @@ Linguagens de código diferentes exibem variáveis diferentes nos **Autos** jane
 
     A variável `e` não foi inicializada, pois a linha `e = 5` ainda não foi executada.
 
-## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a>Exibir valores de retorno de chamadas de método
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> Exibir valores de retorno de chamadas de método
  No código .NET e C++, você pode examinar os valores de retorno na **Autos** janela ao passar sobre ou fora de uma chamada de método. Pode ser útil exibir valores de retornor de chamadas de método quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro ou como o valor retornado de outro método.
 
  Por exemplo, o seguinte código C# adiciona os valores de retorno de duas funções:
@@ -175,7 +175,7 @@ Para ver os valores de retorno das `sumVars()` `subtractVars()` chamadas de mét
 
   ![Valor de retorno automático C #](../debugger/media/autosreturnvaluecsharp2.png "Valor de retorno automático C #")
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md)

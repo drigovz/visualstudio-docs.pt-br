@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247790"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analisar o uso de memória usando a ferramenta de alocação de objeto .NET
@@ -36,7 +36,7 @@ Depois de executar a ferramenta, você pode ver os caminhos de execução da fun
 
    ![Uma janela mostrando A coleção de parada](../profiling/media/stopcollectionlighttheme.png "Uma janela mostrando A coleção de parada")
 
-1. Selecione a guia **alocação** . o conteúdo da janela semelhante à captura de tela a seguir é exibido.
+1. Selecione a guia **alocação** . O conteúdo da janela semelhante à captura de tela a seguir é exibido.
 
    ![A guia alocação](../profiling/media/allocationview.png "A guia alocação")
 

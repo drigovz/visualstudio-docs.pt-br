@@ -1,5 +1,5 @@
 ---
-title: 'Depurando aplicativos Web: Erros e solução de problemas | Microsoft Docs'
+title: 'Depuração de aplicativos Web: erros e solução de problemas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141908"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurando aplicativos Web: erros e solução de problemas
@@ -41,22 +41,22 @@ Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
   
 - [Solução de problemas](../debugger/debugging-web-applications-troubleshooting.md)  
   
-- [Erro: O site usa endereço IP](../debugger/error-site-uses-ip-address.md)  
+- [Erro: o site usa o endereço IP](../debugger/error-site-uses-ip-address.md)  
   
-- [Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- [Erro: falha na verificação de segurança porque o serviço de administração do IIS não respondeu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
 - [Erro: ASP.NET não instalado](../debugger/error-aspnet-not-installed.md)  
   
-- [Erro: Falha na depuração porque a Autenticação Integrada do Windows não está habilitada](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
+- [Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
-- [Erro: O servidor Web não foi configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [Erro: o servidor Web não foi configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
-- [Erro: O servidor Web foi bloqueado e está bloqueando o verbo DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [Erro: o servidor Web foi bloqueado e está bloqueando o verbo de depuração](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
-- [Erro: Tempo limite atingido durante a depuração de serviços Web](../debugger/error-timeout-while-debugging-web-services.md)  
+- [Erro: tempo limite durante a depuração de serviços Web](../debugger/error-timeout-while-debugging-web-services.md)  
   
-- [Erro: Não é possível iniciar a depuração no servidor Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- [Erro: não é possível iniciar a depuração no servidor Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando aplicativos Web e script](../debugger/debugging-web-applications-and-script.md)

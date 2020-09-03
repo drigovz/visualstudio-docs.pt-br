@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
+title: 'IDebugProgramProvider2:: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a50faf4531a098dde544adcffe535ed26e9c5cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148512"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera uma lista de programas em execução de um processo especificado.  
+Recupera uma lista de programas em execução a partir de um processo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -48,34 +48,34 @@ int GetProviderProcessData(
   
 #### <a name="parameters"></a>Parâmetros  
  `Flags`  
- [in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os sinalizadores a seguir são típicos para essa chamada:  
+ no Uma combinação de sinalizadores da enumeração de [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Os seguintes sinalizadores são típicos para esta chamada:  
   
 |Sinalizador|Descrição|  
 |----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Chamador está em execução no computador remoto.|  
-|`PFLAG_DEBUGGEE`|Chamador está atualmente em depuração (informações adicionais sobre a realização de marshaling serão retornadas para cada nó).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Chamador foi anexado ao, mas não é iniciado pelo depurador.|  
-|`PFLAG_GET_PROGRAM_NODES`|Chamador está pedindo para obter uma lista de nós de programa a ser retornado.|  
+|`PFLAG_REMOTE_PORT`|O chamador está sendo executado no computador remoto.|  
+|`PFLAG_DEBUGGEE`|O chamador está sendo depurado no momento (informações adicionais sobre marshaling serão retornadas para cada nó).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|O chamador foi anexado a, mas não foi iniciado pelo depurador.|  
+|`PFLAG_GET_PROGRAM_NODES`|O chamador está solicitando uma lista de nós de programa a serem retornados.|  
   
  `pPort`  
- [in] A porta que o processo de chamada está em execução.  
+ no A porta em que o processo de chamada está sendo executado.  
   
  `processId`  
- [in] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que contém a ID do processo que contém o programa em questão.  
+ no Uma estrutura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que mantém a ID do processo que contém o programa em questão.  
   
  `EngineFilter`  
- [in] Uma matriz de GUIDs para os mecanismos de depuração atribuídos para depurar esse processo (eles serão usados para filtrar os programas que são retornados, na verdade, com base no que o suportam os mecanismos fornecidos; se não há mecanismos forem especificados, em seguida, serão retornados todos os programas).  
+ no Uma matriz de GUIDs para mecanismos de depuração atribuídos para depurar esse processo (eles serão usados para filtrar os programas que são realmente retornados com base em quais mecanismos fornecidos oferecem suporte; se nenhum mecanismo for especificado, todos os programas serão retornados).  
   
  `pProcess`  
- [out] Um [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura será preenchida com as informações solicitadas.  
+ fora Uma estrutura de [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) que é preenchida com as informações solicitadas.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, esse método é chamado por um processo para obter uma lista de programas em execução nesse processo. As informações retornadas são uma lista dos [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos.  
+ Esse método é normalmente chamado por um processo para obter uma lista de programas em execução nesse processo. As informações retornadas são uma lista de objetos [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   

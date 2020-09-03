@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2:Compare | Microsoft Docs
+title: 'IDebugDocumentContext2:: Compare | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731885"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Compara este contexto de documento com um determinado conjunto de contextos de documentos.
+Compara este contexto de documento com uma determinada matriz de contextos de documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,24 +45,24 @@ int Compare( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `compare`\
-[em] Um valor da [enumeração DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica o tipo de comparação.
+no Um valor da enumeração [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) que especifica o tipo de comparação.
 
 `rgpDocContextSet`\
-[em] Uma matriz de objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representam os contextos do documento sendo comparados.
+no Uma matriz de objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que representam os contextos de documento que estão sendo comparados.
 
 `dwDocContextSetLen`\
-[em] A duração da matriz de contextos de documentos para comparar.
+no O comprimento da matriz de contextos de documento a ser comparado.
 
 `pdwDocContext`\
-[fora] Retorna o índice `rgpDocContextSet` para a matriz do primeiro contexto de documento que satisfaz a comparação.
+fora Retorna o índice para a `rgpDocContextSet` matriz do primeiro contexto de documento que satisfaz a comparação.
 
-## <a name="return-value"></a>Valor retornado
- Retorna `S_OK` se um fósforo foi encontrado. Retorna `S_FALSE` se nenhuma correspondência foi encontrada. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Retorna `S_OK` se uma correspondência foi encontrada. Retorna `S_FALSE` se nenhuma correspondência foi encontrada. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Os objetos [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que são passados na matriz devem ser implementados pelo mesmo mecanismo de depuração que implementa o `IDebugDocumentContext2` objeto que está sendo chamado; caso contrário, a comparação não é válida.
+ Os objetos [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) que são passados na matriz devem ser implementados pelo mesmo mecanismo de depuração que implementa o `IDebugDocumentContext2` objeto que está sendo chamado; caso contrário, a comparação não é válida.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -13,51 +13,51 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6d040597f48d4514a58027df3335c080d6305a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144949"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface representa uma posição em um documento do arquivo de origem.  
+Essa interface representa uma posição em um documento de arquivo de origem.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugDocumentContext2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DES) implementa essa interface como parte de seu suporte para depuração no nível do código-fonte código. Além de uma posição no código-fonte, essa interface fornece métodos para comparar os contextos e navegar por meio de um documento de código-fonte.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O mecanismo de depuração (DE) implementa essa interface como parte de seu suporte para depuração de nível de código-fonte. Além de uma posição no código-fonte, essa interface fornece métodos para comparar contextos e navegar por um documento de código-fonte.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Métodos em várias interfaces, geralmente o [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) e [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) interfaces, retorne a esta interface.  
+ Os métodos em várias interfaces, geralmente as interfaces [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) e [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) , retornam essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDebugDocumentContext2`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDebugDocumentContext2` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|Obtém o documento que contém o contexto do documento.|  
-|[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|Obtém o nome de exibição do documento que contém o contexto do documento.|  
-|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)|Recupera uma lista de todos os contextos de código associado a este contexto de documento.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|Obtém o documento que contém este contexto de documento.|  
+|[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|Obtém o nome de exibição do documento que contém este contexto de documento.|  
+|[EnumCodeContexts](../../../extensibility/debugger/reference/idebugdocumentcontext2-enumcodecontexts.md)|Recupera uma lista de todos os contextos de código associados a este contexto de documento.|  
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugdocumentcontext2-getlanguageinfo.md)|Obtém o idioma associado a este contexto de documento.|  
-|[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Obtém o intervalo de instrução de arquivo deste contexto de documento.|  
-|[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)|Obtém o intervalo de origem de arquivo deste contexto de documento.|  
-|[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Compara este contexto de documento para uma determinada matriz de contextos de documento.|  
-|[Buscar](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Move o contexto do documento por um determinado número de instruções ou linhas.|  
+|[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|Obtém o intervalo de instruções do arquivo deste contexto de documento.|  
+|[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)|Obtém o intervalo de origem do arquivo deste contexto de documento.|  
+|[Comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Compara este contexto de documento com uma determinada matriz de contextos de documento.|  
+|[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Move o contexto do documento por um determinado número de instruções ou linhas.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)   

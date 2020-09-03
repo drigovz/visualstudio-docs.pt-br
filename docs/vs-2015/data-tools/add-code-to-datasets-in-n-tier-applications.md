@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673112"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
@@ -28,13 +28,13 @@ Você pode estender a funcionalidade de um conjunto de um DataSet criando um arq
 
 O código que define um conjunto de um DataSet é gerado toda vez que são feitas alterações na definição do conjunto de conjuntos. Esse código também é gerado quando você faz alterações durante a execução de qualquer assistente que modifica a configuração de um conjunto de uma. Para impedir que seu código seja excluído durante a regeneração de um conjunto de um DataSet, adicione o código ao arquivo de classe parcial do conjunto de um.
 
-Por padrão, depois de separar o conjunto de resultados e `TableAdapter` código, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um *DataSetName*de nome de um. Designer. vb (ou *DataSetName*. Designer.cs) que contém o código `TableAdapter`. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName*. DataSet. designer. vb (ou *DataSetName*. DataSet.Designer.cs). Esse arquivo contém o código do conjunto de conteúdo.
+Por padrão, depois de separar o DataSet e o `TableAdapter` código, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um *DataSetName*de nome de um. Designer. vb (ou *DataSetName*. Designer.cs) que contém o `TableAdapter` código. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName*. DataSet. designer. vb (ou *DataSetName*. DataSet.Designer.cs). Esse arquivo contém o código do conjunto de conteúdo.
 
 > [!NOTE]
-> Quando você separa conjuntos de valores e `TableAdapter`s (definindo a propriedade de **projeto DataSet** ), as classes parciais DataSet existentes no projeto não serão movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto do conjunto de um.
+> Quando você separa DataSets e `TableAdapter` s (definindo a propriedade de **projeto DataSet** ), as classes parciais DataSet existentes no projeto não serão movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto do conjunto de um.
 
 > [!NOTE]
-> Quando o código de validação precisa ser adicionado, o DataSet Designer fornece a funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [Adicionar validação a um conjunto](../data-tools/add-validation-to-an-n-tier-dataset.md)de dados de n camadas.
+> Quando o código de validação precisa ser adicionado, o DataSet Designer fornece a funcionalidade de geração <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [Adicionar validação a um conjunto](../data-tools/add-validation-to-an-n-tier-dataset.md)de dados de n camadas.
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
 
@@ -65,11 +65,11 @@ Por padrão, depois de separar o conjunto de resultados e `TableAdapter` código
     }
     ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Adicionar código a TableAdapters em aplicativos de N camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [Visão geral do TableAdaptermanager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [Visão geral de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
 - [Visão geral da atualização hierárquica](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

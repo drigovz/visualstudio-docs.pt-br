@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248641"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Etapa 5: implantar seu aplicativo ASP.NET Core no Azure
@@ -109,6 +109,6 @@ Saiba mais sobre como projetar aplicativos ASP.NET Core com esses recursos gratu
 
 [Arquitetura do aplicativo ASP.NET Core](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Publicar um aplicativo ASP.NET Core no Azure com o Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)

@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 577b2691ed67751407621d5000ee9a8abec318df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192011"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
@@ -24,38 +24,38 @@ ms.locfileid: "68192011"
 
 Essa interface representa uma lista de caminhos de código.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IEnumCodePaths2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DES) implementa essa interface para representar uma lista de caminhos de código.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O mecanismo de depuração (DE) implementa essa interface para representar uma lista de caminhos de código.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  Chame [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) para obter essa interface.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IEnumCodePaths2`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IEnumCodePaths2` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[Avançar](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera um número especificado de caminhos de código em uma sequência de enumeração.|  
-|[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora um número especificado de caminhos de código em uma sequência de enumeração.|  
-|[Reiniciar](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Redefine uma sequência de enumeração para o início.|  
-|[Clonar](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|  
+|[Próximo](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera um número especificado de caminhos de código em uma sequência de enumeração.|  
+|[Ignorar](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora um número especificado de caminhos de código em uma sequência de enumeração.|  
+|[Redefinir](../../../extensibility/debugger/reference/ienumcodepaths2-reset.md)|Redefine uma sequência de enumeração para o início.|  
+|[Clone](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|Obtém o número de caminhos de código em um enumerador.|  
   
 ## <a name="remarks"></a>Comentários  
- Um caminho de código representa uma chamada de função ou o ponto de ramificação em um programa. Uma lista de caminhos de código representa o caminho por meio do qual assumiu a execução do código.  
+ Um caminho de código representa um ponto de ramificação ou uma chamada de função em um programa. Uma lista de caminhos de código representa o caminho por meio do qual a execução do código foi realizada.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

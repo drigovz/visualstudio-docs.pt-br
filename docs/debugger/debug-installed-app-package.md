@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350726"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depurar um pacote de aplicativo UWP instalado no Visual Studio
@@ -54,7 +54,7 @@ Para obter mais informações sobre como depurar aplicativos UWP, consulte as po
 > [!NOTE]
 > Você também pode se conectar a qualquer UWP em execução ou a outro processo de aplicativo selecionando a **depuração**  >  **anexar para processar** no Visual Studio. Você não precisa do projeto original do Visual Studio para anexar a um processo em execução, mas carregar os símbolos do aplicativo ajudará significativamente ao depurar um processo para o qual você não tenha o código original. Consulte [especificar o símbolo e os arquivos de origem no depurador](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Depurar um aplicativo UWP instalado em um computador ou dispositivo remoto
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> Depurar um aplicativo UWP instalado em um computador ou dispositivo remoto
 
 Na primeira vez que o Visual Studio decorre bugs em um aplicativo UWP instalado em um dispositivo Windows 10 ou em um computador com o Windows 10 do post-Creator remoto, ele instala as ferramentas de depuração remota no dispositivo de destino.
 
@@ -94,7 +94,7 @@ Quando você inicia a depuração de um pacote do aplicativo instalado em um dis
 
 Para obter mais informações sobre a implantação remota de aplicativos UWP, consulte [implantar e depurar aplicativos UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) e [depurar aplicativos UWP em computadores remotos](run-windows-store-apps-on-a-remote-machine.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

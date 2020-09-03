@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 95232ab69d6f30435807764e1177d15d6e4622d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161432"
 ---
-# <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
+# <a name="idiaframedataget_type"></a>IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o tipo de quadro específicos do compilador.  
+Recupera o tipo de quadro específico do compilador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,11 +35,11 @@ HRESULT get_type ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna um valor da [enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumeração que indica o tipo de quadro específicos do compilador.  
+ fora Retorna um valor da enumeração de [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) que indica o tipo de quadro específico do compilador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ce9a927f8e2e732bd5b74d0f58afa40a7cf8efa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192438"
 ---
-# <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
+# <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o número de bytes de código.  
@@ -35,14 +35,14 @@ HRESULT get_length ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o número de bytes de código.  
+ fora Retorna o número de bytes de código.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- O valor retornado por esse método é o comprimento do código-fonte e é o mesmo valor, conforme retornado pela [idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) método.  
+ O valor retornado por esse método é o comprimento do código-fonte e é o mesmo valor retornado pelo método [IDiaInjectedSource:: get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
  [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

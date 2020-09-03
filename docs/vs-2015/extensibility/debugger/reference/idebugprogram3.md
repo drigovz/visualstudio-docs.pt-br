@@ -11,53 +11,53 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6de25108cf93314db17a2ac8de9ce8b1dcaed2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148605"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Essa interface representa um programa que está em execução em um processo e estende [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) , fornecendo informações de thread.  
+Essa interface representa um programa que está sendo executado em um processo e estende a [execução](../../../extensibility/debugger/reference/idebugprogram2-execute.md) fornecendo informações de thread.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProgram3 : IDebugProgram3  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DE) e um fornecedor de porta personalizado implementam essa interface para representar um programa em um processo. O Gerenciador de sessão de depuração (SDM) também implementa essa interface para fornecer informações em [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O mecanismo de depuração (DE) e um fornecedor de porta personalizado implementam essa interface para representar um programa em um processo. O SDM (Gerenciador de depuração de sessão) também implementa essa interface para fornecer informações a serem [anexadas](../../../extensibility/debugger/reference/idebugprogram2-attach.md).  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- O [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) evento retorna essa interface para um novo programa. Essa interface também é usada como um parâmetro para muitos métodos em várias interfaces.  
+ O evento [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) retorna essa interface para um novo programa. Essa interface também é usada como um parâmetro para muitos métodos em várias interfaces.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
- A tabela a seguir mostra os métodos de `IDebugProgram3`.  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
+ A tabela a seguir mostra os métodos de `IDebugProgram3` .  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Executa o programa. O thread é retornado para fornecer as informações do depurador em qual thread o usuário está exibindo durante a execução.|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Executa o programa. O thread é retornado para fornecer as informações do depurador sobre qual thread o usuário está exibindo durante a execução.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>Comentários  
- Um programa é um contêiner de thread em execução em uma arquitetura de tempo de execução específica, enquanto um processo é composto por um ou mais programas.  
+ Um programa é um contêiner de threads em execução em uma arquitetura de tempo de execução específica, enquanto um processo é composto de um ou mais programas.  
   
-## <a name="see-also"></a>Consulte também  
- [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
- [Avançar](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
- [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
- [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Getprogram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
+ [Última](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
+ [Circunstância](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Anexa](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)   
- [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Circunstância](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

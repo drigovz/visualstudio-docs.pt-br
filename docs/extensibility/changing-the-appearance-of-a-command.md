@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183711"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Alterar a aparência de um comando
@@ -84,7 +84,7 @@ Para alterar a aparência de um comando, execute uma destas ações:
 
 8. No menu **ferramentas** , agora você deve ver o **novo texto**. Clique em **novo texto**. O comando agora deve estar esmaecido.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)

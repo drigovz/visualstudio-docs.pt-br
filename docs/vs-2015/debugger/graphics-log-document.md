@@ -1,5 +1,5 @@
 ---
-title: Documento de Log de elementos gráficos | Microsoft Docs
+title: Documento de log de gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,23 +14,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161233"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O documento de Log de gráficos é o registro de eventos de gráficos que ocorreu enquanto o aplicativo foi executado em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.  
+O documento de log de gráficos é o registro de eventos gráficos que ocorreram enquanto seu aplicativo estava em execução em uma sessão de diagnóstico de gráficos. Depois de ser registrado, você pode examinar o log em Analisador de Gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.  
   
- Este é o que um documento de log gráficos é semelhante no analisador de gráficos:  
+ É a aparência de um documento de log de gráficos no analisador de gráficos:  
   
- ![Um log de gráficos que contém dois quadros capturados. ](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
+ ![Um log de gráficos que contém dois quadros capturados.](../debugger/media/gfx-diag-demo-graphics-log-orientation.png "gfx_diag_demo_graphics_log_orientation")  
   
 ## <a name="understanding-graphics-log-documents"></a>Entendendo os documentos de log de gráficos  
- Usando o analisador de gráficos para examinar um documento de log de gráficos, você pode visualizar os efeitos de eventos do Direct3D no destino de renderização que ocorreram durante a captura. É possível indicar as áreas exatas do destino de renderização com saídas inesperadas. Ao selecionar um pixel na área afetada, você pode usar os diagnósticos gráficos para inspecioná-la e inspecionar seus sombreadores, os eventos do Direct3D que a afetaram, a pilha de chamadas do aplicativo que resultou nesses eventos e os objetos do DirectX compatíveis com esses eventos. Você pode usar essas informações para diagnosticar problemas de renderização em seu jogo ou aplicativo.  
+ Usando o analisador de gráficos para examinar um documento de log de gráficos, você pode visualizar os efeitos de eventos de Direct3D no destino de renderização que ocorreu durante a captura. É possível indicar as áreas exatas do destino de renderização com saídas inesperadas. Ao selecionar um pixel na área afetada, você pode usar os diagnósticos gráficos para inspecioná-la e inspecionar seus sombreadores, os eventos do Direct3D que a afetaram, a pilha de chamadas do aplicativo que resultou nesses eventos e os objetos do DirectX compatíveis com esses eventos. Você pode usar essas informações para diagnosticar problemas de renderização em seu jogo ou aplicativo.  
   
  A parte superior da janela (**Graphics Experiment.vsglog**) exibe a saída do destino de renderização atual do quadro selecionado. A parte inferior exibe uma **Lista de Quadros** com imagens em miniatura dos quadros capturados.  
   
@@ -40,12 +40,12 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
   
 #### <a name="to-inspect-a-pixel"></a>Para inspecionar um pixel  
   
-- Na parte superior do documento de log de gráficos, selecione o pixel desejado da saída do destino de renderização. Com um pixel selecionado, você pode usar a janela **Histórico de Pixel de Gráficos** para exibir informações detalhadas sobre o pixel selecionado. Para obter mais informações, consulte [histórico de Pixel](../debugger/graphics-pixel-history.md).  
+- Na parte superior do documento de log de gráficos, selecione o pixel desejado da saída do destino de renderização. Com um pixel selecionado, você pode usar a janela **Histórico de Pixel de Gráficos** para exibir informações detalhadas sobre o pixel selecionado. Para obter mais informações, consulte [histórico de pixel](../debugger/graphics-pixel-history.md).  
   
 ## <a name="playback-machine"></a>Máquina de reprodução  
  No canto superior direito da **Lista de Quadros** fica a **Máquina de Reprodução**. O computador de reprodução é um computador ou dispositivo usado para reproduzir eventos de gráficos de um arquivo de log de gráficos em uma sessão de diagnóstico posterior. Ao usar outro dispositivo para reproduzir eventos capturados no lugar de seu computador de desenvolvimento, você pode reproduzir com mais precisão o ambiente de execução no qual o problema ocorreu. Por exemplo, você pode usar um computador com drivers ou hardwares gráficos que seu computador de desenvolvimento não usa ou outros tipos de dispositivos, como um tablet Windows RT baseado em ARM ou um dispositivo com Windows Phone.  
   
- Para obter informações sobre como especificar um computador de reprodução, consulte [como: Alterar o computador de reprodução de Diagnóstico de Gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Para obter informações sobre como especificar um computador de reprodução, consulte [como alterar o computador de reprodução de diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="graphics-log-summary-information"></a>Informações de resumo do log de elementos gráficos  
  Quando o arquivo de log de elementos gráficos está ativo, a janela **Propriedades** exibe informações sobre o ambiente que hospedou a sessão de captura do Diagnóstico de Gráficos. Essa janela exibe informações de diversas categorias.  
@@ -66,7 +66,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
  **Exibir informações**  
  Apresenta informações sobre a placa de vídeo usada durante a sessão de captura.  
   
-|Propriedade|Descrição|  
+|Propriedade|DESCRIÇÃO|  
 |--------------|-----------------|  
 |**Descrição**|A cadeia de caracteres de descrição da placa de vídeo.|  
 |**Memória de vídeo**|A quantidade de memória instalada no adaptador gráfico.|  
@@ -79,7 +79,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|**Path**|O caminho do arquivo .vsglog. **Observação:**  Essa propriedade não é usada em capturas herdadas.|  
+|**Caminho**|O caminho do arquivo .vsglog. **Observação:**  Em captura herdada, essa propriedade não é usada.|  
   
  **Informações do módulo**  
  Apresenta o nome e a versão das DLLs (bibliotecas de vínculo dinâmico) que foram carregadas pelo aplicativo durante a sessão de captura.  
@@ -91,7 +91,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 |--------------|-----------------|  
 |**Memória**|A quantidade de memória instalada no computador.|  
 |**Arquitetura do SO**|A arquitetura da CPU de destino do sistema operacional.|  
-|**Versão do SO**|A versão do sistema operacional.|  
+|**Versão do sistema operacional**|A versão do sistema operacional.|  
 |**Processador**|O processador instalado no computador.|  
 |**Arquitetura do aplicativo de destino**|A arquitetura da CPU de destino do aplicativo. As informações presentes nesse campo podem ser diferentes das do campo **Arquitetura do SO**.|  
   
@@ -101,7 +101,7 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 |Propriedade|Descrição|  
 |--------------|-----------------|  
 |**Data/hora da última modificação**|A data e hora em que o aplicativo foi compilado.|  
-|**Path**|O caminho do aplicativo.|  
+|**Caminho**|O caminho do aplicativo.|  
 |**ID do Processo**|A ID do processo atribuída ao aplicativo.|  
 |**Versão**|A versão do aplicativo.|  
   
@@ -112,8 +112,8 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 |--------------|-----------------|  
 |**Criado por**|O nome do aplicativo que criou o documento de log de gráficos. Por exemplo, se a sessão de captura foi iniciada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (captura manual), o valor dessa propriedade será [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |**Hora de início da sessão**|A data e hora em que a sessão de captura começou.|  
-|**Size**|O tamanho do documento de log de gráficos.|  
+|**Tamanho**|O tamanho do documento de log de gráficos.|  
   
-## <a name="see-also"></a>Consulte também  
- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Walkthrough: objetos ausentes devido a sombreamento de vértice](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Passo a passo: Como depurar erros de renderização devido ao sombreamento](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fa5d60d7fe662cff31b54bf3a13c203f4b6d8c9
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350687"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
@@ -57,7 +57,7 @@ Para a depuração remota, as seguintes portas devem estar abertas no computador
 |**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|
 |-|-|-|-|
 |4022|Entrada|TCP|Para VS 2017. O número da porta é incrementado em 2 para cada versão do Visual Studio. Para obter mais informações, consulte [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|4023|Entrada|TCP|Para VS 2017. O número da porta é incrementado em 2 para cada versão do Visual Studio. Essa porta é usada apenas para depurar remotamente um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4023|Entrada|TCP|Para VS 2017. O número da porta é incrementado em 2 para cada versão do Visual Studio. Essa porta é usada apenas para depurar remotamente um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte  [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Saída|UDP|Adicional Necessário para a descoberta de depurador remoto.|
 
 ::: moniker-end
@@ -67,7 +67,7 @@ Para a depuração remota, as seguintes portas devem estar abertas no computador
 |**Portas**|**Entrada/saída**|**Protocolo**|**Descrição**|
 |-|-|-|-|
 |4024|Entrada|TCP|Para VS 2019. O número da porta é incrementado em 2 para cada versão do Visual Studio. Para obter mais informações, consulte [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
-|4025|Entrada|TCP|Para VS 2019. O número da porta é incrementado em 2 para cada versão do Visual Studio. Essa porta é usada apenas para depurar remotamente um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
+|4025|Entrada|TCP|Para VS 2019. O número da porta é incrementado em 2 para cada versão do Visual Studio. Essa porta é usada apenas para depurar remotamente um processo de 32 bits de uma versão de 64 bits do depurador remoto. Para obter mais informações, consulte  [atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md).|
 |3702|Saída|UDP|Adicional Necessário para a descoberta de depurador remoto.|
 
 ::: moniker-end
@@ -121,7 +121,7 @@ Se você não puder anexar ao seu aplicativo com o depurador remoto, verifique s
   - Para exibir ou alterar as configurações de regra, clique com o botão direito do mouse no aplicativo do **depurador remoto** na lista e selecione **Propriedades**. Use as guias **Propriedades** para habilitar ou desabilitar a regra, ou alterar os números de porta, protocolos ou tipos de rede.
   - Se o aplicativo do depurador remoto não aparecer na lista de regras, [adicione e configure as portas corretas](#configure-ports-for-remote-debugging).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Atribuições de porta do depurador remoto do Visual Studio](../debugger/remote-debugger-port-assignments.md)

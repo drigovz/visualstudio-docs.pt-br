@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183724"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Adicionar um comando à barra de ferramentas Gerenciador de Soluções
@@ -38,7 +38,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Adicionar um botão à barra de ferramentas Gerenciador de Soluções
  Esta seção do passo a passos mostra como adicionar um botão à barra de ferramentas **Gerenciador de soluções** . Quando o botão é clicado, o código no método de retorno de chamada é executado.
 
-1. No arquivo *ToolbarButtonPackage. vsct* , vá para a `<Symbols>` seção. O `<GuidSymbol>` nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicione um `<IDSymbol>` elemento a este nó para declarar o grupo que irá conter o comando.
+1. No arquivo *ToolbarButtonPackage. vsct* , vá para a  `<Symbols>` seção. O `<GuidSymbol>`  nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicione um `<IDSymbol>` elemento a este nó para declarar o grupo que irá conter o comando.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
@@ -116,5 +116,5 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
 
    A visibilidade do botão é controlada pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] até que o VSPackage seja carregado. Depois que o VSPackage é carregado, a visibilidade do botão é controlada pelo VSPackage.  Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

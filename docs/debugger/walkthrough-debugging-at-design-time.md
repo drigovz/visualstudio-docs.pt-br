@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183555"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Depurar em tempo de design no Visual Studio (C#, C++/CLI, Visual Basic, F #)
@@ -83,13 +83,13 @@ O exemplo a seguir está em Visual Basic. Você também pode usar a janela **ime
 
 1. Abra a página XAML que contém o controle personalizado que você deseja depurar.
 
-   Para projetos UWP direcionados para o Windows Build 16299 ou superior, essa etapa iniciará o processo *UwpSurface. exe* . Para projetos do WPF direcionados para o Windows Build 16299 ou superior, essa etapa iniciará o processo *WpfSurface. exe* . Para versões do WPF ou UWP anteriores ao Windows Build 16299, essa etapa iniciará o processo *XDesProc. exe* . 
+   Para projetos UWP direcionados para o Windows Build 16299 ou superior, esta etapa iniciará o processo de *UwpSurface.exe* . Para projetos do WPF direcionados para o Windows Build 16299 ou superior, esta etapa iniciará o processo de *WpfSurface.exe* . Para versões do WPF ou UWP anteriores ao Windows Build 16299, essa etapa iniciará o processo de *XDesProc.exe* . 
 
 1. Abra uma segunda instância do Visual Studio. Não abra uma solução ou projeto na segunda instância.
 
 1. Na segunda instância do Visual Studio, abra o menu **depurar** e escolha **anexar ao processo...**.
 
-1. Dependendo do tipo de projeto (consulte as etapas anteriores), selecione o *UwpSurface. exe*, o *WpfSurface. exe*ou o processo *XDesProc. exe* na lista de processos disponíveis.
+1. Dependendo do tipo de projeto (consulte as etapas anteriores), selecione o *UwpSurface.exe*, *WpfSurface.exe*ou o processo de *XDesProc.exe* na lista de processos disponíveis.
 
 1. No campo **anexar a** do caixa de diálogo **anexar ao processo** , escolha o tipo de código correto para o controle personalizado que você deseja depurar.
 
@@ -107,6 +107,6 @@ O exemplo a seguir está em Visual Basic. Você também pode usar a janela **ime
 
 1. Depure o código na segunda instância do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

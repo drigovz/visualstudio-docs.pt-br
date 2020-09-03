@@ -13,10 +13,10 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350661"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos do Azure ASP.NET dinâmicos usando o Depurador de Instantâneos
