@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664506"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Como criar um sombreador de textura em escala de cinza
@@ -28,7 +28,7 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>Para criar um sombreador de textura em escala de cinza
 
-1. Crie um sombreador de textura básico, conforme descrito em [Como criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
+1. Crie um sombreador de textura básico, conforme descrito em [como criar um sombreador básico de textura](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Desconecte o terminal **RGB** do nó **Amostra de Textura** do terminal **RGB** do nó **Cor Final**. No modo de **Seleção**, escolha o terminal **RGB** do nó **Amostra de Textura** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
@@ -46,9 +46,9 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
 > [!NOTE]
 > Nesta ilustração foi usado um plano como a forma de visualização e foi especificada uma textura para demonstrar melhor o efeito do sombreador.
 
- ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-grayscale-effect.png "Efeito de escala de cinza de dígito")
+ ![Grafo de sombreador e uma versão prévia do efeito dele](../designers/media/digit-grayscale-effect.png "Efeito de escala de cinza de dígito")
 
- Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre a visualização de sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md)
+ Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como Visualizar sombreadores no designer do sombreador, consulte [Designer de sombreador](../designers/shader-designer.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [como exportar um](../designers/how-to-export-a-shader.md) [Editor de imagem](../designers/image-editor.md) do sombreador [Designer](../designers/shader-designer.md) de [sombreador](../designers/shader-designer-nodes.md)

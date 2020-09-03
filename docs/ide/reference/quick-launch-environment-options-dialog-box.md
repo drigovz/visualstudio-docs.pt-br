@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565663"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
@@ -30,7 +30,7 @@ O **Início Rápido** é habilitado por padrão quando você instala o Visual St
 
 ## <a name="category-list"></a>Lista de categorias
 
-Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, em conjunto com o número de itens na categoria. Para atravessar os resultados da pesquisa por categoria, escolha as teclas **Ctrl**+**Q** para mostrar todos os resultados da próxima categoria. Após o aparecimento da última categoria, **Ctrl**+**Q** mostra alguns resultados de cada categoria. Pressione **Ctrl**+**Shift**+**Q** para navegar pelas categorias em ordem inversa. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
+Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, em conjunto com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, escolha as teclas **Ctrl** + **Q** para mostrar todos os resultados da próxima categoria. Depois que a última categoria for exibida, **Ctrl** + **Q** mostrará alguns resultados de cada categoria. Pressione **Ctrl** + **Shift** + **p** para navegar pelas categorias na ordem inversa. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
 
 É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 
@@ -42,7 +42,7 @@ Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Us
 |Documentos|@doc<br /><br /> Por exemplo, `@doc program.cs`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
 > [!NOTE]
-> Você pode alterar as teclas de atalho na página **Teclado Geral** > **Keyboard** na caixa de diálogo **Opções.**
+> Você pode alterar as teclas de atalho na página **geral**do  >  **teclado** na caixa de diálogo **Opções** .
 
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 

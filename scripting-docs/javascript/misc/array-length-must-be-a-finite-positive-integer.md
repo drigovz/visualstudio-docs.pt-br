@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817080"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>O tamanho da matriz deve ser um número inteiro finito e positivo
@@ -41,5 +41,5 @@ Você está chamando o construtor de **matriz** com um argumento que não é um 
   
      Não há nenhum limite superior para o tamanho de uma matriz, a não ser o valor inteiro máximo (aproximadamente 4.000.000.000).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)

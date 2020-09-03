@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632115"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Iniciar um build pelo IDE
@@ -23,7 +23,7 @@ Sistemas de projeto personalizado devem usar <xref:Microsoft.VisualStudio.Shell.
 
 ## <a name="parallel-builds-and-threads"></a>Builds paralelas e threads
 
- O Visual Studio permite construções paralelas, o que requer mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build de dentro dos retornos de chamada.
+ O Visual Studio permite compilações paralelas, o que exige a mediação para acesso a recursos comuns. Os sistemas de projeto podem executar builds de forma assíncrona, mas esses sistemas não devem chamar funções de build de dentro dos retornos de chamada.
 
  Se o sistema de projeto modificar variáveis de ambiente, ele deverá definir o NodeAffinity do build para OutOfProc. Esse requisito significa que você não pode usar objetos de host, já que eles exigem o nó em processamento.
 

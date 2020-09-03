@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534232"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos frequentes no Visual Studio
@@ -44,7 +44,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 
 - [Exibição](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Integrado
+## <a name="build"></a><a name="bkmk_build"></a> Integrado
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |Build.Compile|Ctrl+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Verificação
+## <a name="debug"></a><a name="bkmk_debug"></a> Verificação
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Editor de Texto]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [Editor de Texto]|
 
-## <a name="file"></a><a name="bkmk_file"></a>Grupo
+## <a name="file"></a><a name="bkmk_file"></a> Grupo
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -147,7 +147,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Project.AddExistingItem|Shift+Alt+A [Global]|
 |Project.AddNewItem|Ctrl+Shift+A [Global]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Refatorar
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Refatorar
 
 |Comando|Atalho de teclado [Contexto]|
 |-------------|-----------------------------------|
@@ -159,7 +159,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Exibição
+## <a name="view"></a><a name="bkmk_view"></a> Exibição
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
 |View.ViewCode|Entre [Diagrama de Classes]<br /><br /> ou F7 [Designer de Configurações]|
 |View.ViewDesigner|Shift+F7 [Modo Código-fonte do Editor de HTML]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Window
+## <a name="window"></a><a name="bkmk_window"></a> Window
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|

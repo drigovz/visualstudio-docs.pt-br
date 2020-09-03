@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238342"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações em nível de documento
@@ -60,6 +60,6 @@ ms.locfileid: "88238342"
 |Quais tipos de dados você pode armazenar?|Qualquer objeto público em seu assembly de personalização que atenda a determinados requisitos. Para obter mais informações, consulte [armazenar dados em cache](../vsto/caching-data.md).|Quaisquer dados XML.|
 |Você pode acessar os dados sem iniciar Microsoft Office aplicativos?|Sim, usando a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornecida pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Sim, usando classes no <xref:System.IO.Packaging> namespace ou usando o SDK de formato XML aberto.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Dados em soluções do Office](../vsto/data-in-office-solutions.md)
 - [Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

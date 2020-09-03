@@ -1,5 +1,5 @@
 ---
-title: IDebugSourceServerMódulo::GetSourceServerData | Microsoft Docs
+title: 'IDebugSourceServerModule:: GetSourceServerData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,10 +14,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719923"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
@@ -39,18 +39,18 @@ public int GetSourceServerData(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pDataByteCount`\
-[fora] Número de bytes no conjunto de dados.
+fora Número de bytes na matriz de dados.
 
 `ppData`\
-[fora] Referência ao conjunto de dados.
+fora Referência à matriz de dados.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um objeto **CModule** que expõe a interface [IDebugSourceServerModule.](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+O exemplo a seguir mostra como implementar esse método para um objeto **CModule** que expõe a interface [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) .
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

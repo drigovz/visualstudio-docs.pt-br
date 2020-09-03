@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d6151825391fb01a027f67cb66568eb6b2edfc44
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816807"
 ---
 # <a name="javascript-object-expected"></a>Objeto do JavaScript esperado
@@ -28,6 +28,6 @@ Você tentou passar um não [!INCLUDE[javascript](../../javascript/includes/java
   
 - Verifique se o objeto que você está passando como parâmetro é do tipo correto.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objetos e matrizes](../../javascript/objects-and-arrays-javascript.md)   
  [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)

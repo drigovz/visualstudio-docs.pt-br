@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13b4db03a75decd41430c282a67276caa60182d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349374"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Como restaurar comandos de depurador ocultos
@@ -70,8 +70,8 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
 
 8. Na página **Importação Concluída**, revise todos os erros associados à redefinição das configurações em **Detalhes**.
 
-9. Clique em **fechar**
+9. Clique em **Fechar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

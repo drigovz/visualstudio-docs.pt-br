@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75405816"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -23,9 +23,9 @@ Ao digitar em um arquivo compatível, como um arquivo de código C#, os preenchi
 
 A janela de conclusão também oferece suporte para filtrar os preenchimentos incluídos por tipo. Por exemplo, é possível limitar os membros da lista para representar apenas tipos como classes ou representantes. Esse processo de filtragem pode ser habilitado por meio de um clique em um ícone específico que representa o tipo que será filtrado ou por meio de atalhos de teclado correspondentes a determinado tipo. Os ícones, que estão localizados na parte inferior da janela de conclusão, são os seguintes:
 
-| ícone                         | Nome          | Palavra-chave    | Tecla de acesso |
+| ícone                         | Name          | Palavra-chave    | Tecla de acesso |
 | -----------------------------|---------------| -----------|--------|
-| ![Ícone de classes](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![Ícone de classes](media/classes-icon.png)  | classe         | `class`    |  ⌥C
 | ![Ícone constante](media/constant-icon.png) | constante      | `const`    |  ⌥O
 | ![Ícone de representante](media/delegate-icon.png) | delegado      | `delegate` |  ⌥D
 | ![Ícone de enumeração](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
@@ -47,7 +47,7 @@ Ao clicar em um dos ícones ou ao pressionar as teclas de acesso correspondentes
 
 Outro recurso do IntelliSense é a capacidade de fornecer uma lista de parâmetros, quando apropriado. A lista de parâmetros fornece detalhes das assinaturas de método para o código que está sendo chamado. Ao clicar nas setas para cima/para baixo na assinatura, você pode percorrer cada uma das assinaturas de parâmetro disponíveis para determinar as mais adequadas às suas necessidades. Além dos detalhes dos tipos de dados permitidos, também pode haver uma descrição, conforme definido no método de destino por meio de comentários XML.
 
-![Parâmetro](media/intellisense-parameter.png)
+![Lista de parâmetros](media/intellisense-parameter.png)
 
 Conforme você preenche os parâmetros, o parâmetro que você está editando no momento ficará em negrito, enquanto os parâmetros inativos terão o peso padrão. 
 

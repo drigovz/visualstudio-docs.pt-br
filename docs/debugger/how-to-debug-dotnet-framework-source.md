@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350089"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Como depurar o código-fonte do .NET Framework
@@ -63,6 +63,6 @@ Para depurar .NET Framework origem, você deve:
 
    - Selecione **configurações de símbolo** para abrir a página **símbolos** . Na página **símbolos** , em **locais de arquivo de símbolo (. pdb)**, selecione **servidores de símbolos da Microsoft** para acessar símbolos dos servidores de símbolos públicos da Microsoft. Selecione os botões da barra de ferramentas para adicionar outros locais de símbolo e alterar a ordem de carregamento. Selecione **OK** para fechar a caixa de diálogo.
 
-### <a name="see-also"></a>Veja também
+### <a name="see-also"></a>Confira também
 - [Depuração de código gerenciado](../debugger/debugging-managed-code.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

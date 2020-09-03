@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350063"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um cluster de alto desempenho (C#, Visual Basic, C++)
@@ -96,7 +96,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Como: usar a janela de processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))

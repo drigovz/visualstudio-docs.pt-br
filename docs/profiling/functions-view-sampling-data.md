@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780020"
 ---
 # <a name="functions-view---sampling-data"></a>Exibição Funções – dados de amostragem
@@ -31,17 +31,17 @@ O modo de exibição de relatório de Funções do método de perfil de amostrag
 |**Nome do processo**|O nome do processo.|
 |**Nome do módulo**|O nome do módulo que contém a função.|
 |**Caminho do Módulo**|O demarcador do módulo que contém a função.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 |**Nome da função**|O nome totalmente qualificado da função.|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
-|**Endereço de função**|O endereço da função.|
+|**Endereço da função**|O endereço da função.|
 |**Amostras Inclusivas**|O número total de amostras que foram coletadas quando a função estava em execução, ou seja, o número de amostras que foram coletadas quando a função estava na pilha de chamadas. O número inclui amostras que foram coletadas quando as funções que foram chamadas por esta função estavam em execução.|
 |**% de Amostras Inclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras inclusivas dessa função.|
 |**Amostras Exclusivas**|O número total de amostras que foram coletadas quando o código no corpo da função estava em execução, ou seja, quando a função estava no topo na pilha de chamadas. Amostras que foram coletadas em funções que foram chamadas pela função não incluídas.|
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função.|
 
 ## <a name="see-also"></a>Confira também
-- [Como: Personalizar colunas de exibição de relatórios](../profiling/how-to-customize-report-view-columns.md)
-- [Exibição de funções - instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [Exibição de funções - amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Exibição de funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Exibição de funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Exibição de funções](../profiling/functions-view-instrumentation-data.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664546"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
@@ -32,13 +32,13 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
 ## <a name="the-phong-lighting-model"></a>O modelo de iluminação de Phong
  O modelo de iluminação de Phong amplia o modelo de iluminação de Lambert para incluir o realce especular, que simula as propriedades de reflexão de uma superfície. O componente especular fornece iluminação adicional das mesmas fontes de luz direcionais que são usadas no modelo de iluminação Lambert, mas sua contribuição para a cor final é processada de forma diferente. O realce especular afeta cada superfície na cena de forma diferente, com base na relação entre a direção da exibição, a direção das fontes de luz e a orientação da superfície. É um produto da cor especular, do potencial de reflexão e da orientação da superfície e a cor, intensidade e direção das fontes de luz. As superfícies que refletem a fonte de luz diretamente no visualizador recebem a contribuição especular máxima e as superfícies que refletem a fonte de luz distante do visualizador não recebem nenhuma contribuição. No modelo de iluminação de Phong, um ou mais componentes especulares são combinados para determinar a cor e a intensidade do realce especular para cada ponto no objeto e, em seguida, são adicionados ao resultado do modelo de iluminação de Lambert para produzir a cor final do pixel.
 
- Para obter mais informações sobre o modelo de iluminação de Lambert, consulte [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+ Para obter mais informações sobre o modelo de iluminação Lambert, consulte [como: criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
 #### <a name="to-create-a-phong-shader"></a>Para criar um sombreador Phong
 
-1. Crie um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Crie um sombreador Lambert, conforme descrito em [como: criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
@@ -55,9 +55,9 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
 > [!NOTE]
 > Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
 
- ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-lighting-graph.png "Gráfico de iluminação de dígitos")
+ ![Grafo de sombreador e uma versão prévia do efeito dele](../designers/media/digit-lighting-graph.png "Gráfico de iluminação de dígitos")
 
- Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md)
+ Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como Visualizar sombreadores no designer do sombreador, consulte a seção visualizações de sombreadores no [Designer de sombreador](../designers/shader-designer.md)
 
  A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a um modelo 3D. A propriedade **MaterialSpecular** foi definida como (1,00, 0,50, 0,20, 0,00) e sua propriedade **MaterialSpecularPower** foi definida como 16.
 
@@ -68,7 +68,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
 
  ![Iluminação Phong aplicada a um modelo](../designers/media/digit-lighting-model.png "Modelo de iluminação de dígitos")
 
- Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+ Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, consulte [como: aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [como: exportar um sombreador](../designers/how-to-export-a-shader.md) [como: criar um Lambert sombreador](../designers/how-to-create-a-basic-lambert-shader.md) de sombreador de [Designer](../designers/shader-designer.md) [de sombreador](../designers/shader-designer-nodes.md) básico

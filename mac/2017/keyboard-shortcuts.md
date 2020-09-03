@@ -124,7 +124,7 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Comandos|Atalhos do teclado|
 |-|-|
 |Adicionar arquivos|**⌥ ⌘ A**|
-|Compilação|**⌘K**, **⇧F6**|
+|Build|**⌘K**, **⇧F6**|
 |Compilar tudo|**⌘B**, **F6**|
 |Clean|**⇧ ⌘ K**|
 |Recompilar|**⌃ ⌘ K**|

@@ -18,10 +18,10 @@ ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
 ms.openlocfilehash: 1e24f90f24921bee9a6132ccc047c0b9da37fc90
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81276286"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Diretório de componentes do Visual Studio Desktop Express
@@ -32,7 +32,7 @@ Além disso, observe o seguinte sobre a página:
 
 * Cada carga de trabalho tem sua própria seção, seguida pela ID da carga de trabalho e por uma tabela dos componentes que estão disponíveis para a carga de trabalho.
 * Por padrão, os componentes **Obrigatórios** serão instalados durante a instalação da carga de trabalho.
-* Se você escolher, você também pode instalar os componentes **Recomendado** e **Opcional.**
+* Se você optar por, também poderá instalar os componentes **recomendados** e **opcionais** .
 * Também adicionamos uma seção que lista os componentes adicionais que não são afiliados a nenhuma carga de trabalho.
 
 Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar nossas dependências mínimas de componente. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, consulte a página [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
@@ -74,7 +74,7 @@ Microsoft.VisualStudio.Component.SQL.CMDUtils | Utilitários de linha de comando
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 15.0.26621.2 | Obrigatório
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Obrigatório
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Obrigatório
-Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.9.28107.0 | Obrigatório
+Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 15.9.28107.0 | Obrigatório
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Ferramentas de análise estática | 15.0.26208.0 | Obrigatório
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 15.0.26208.0 | Obrigatório
 Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte ao C++/CLI | 15.6.27309.0 | Obrigatório

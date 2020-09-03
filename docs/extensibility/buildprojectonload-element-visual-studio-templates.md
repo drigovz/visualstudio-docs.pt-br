@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload Element (modelos de estúdio visual) | Microsoft Docs
+title: Elemento BuildProjectOnload (modelos do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,14 +10,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739960"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (modelos do Visual Studio)
-Constrói apenas novos projetos à medida que você cria e os adiciona a uma solução. A solução inteira não foi construída.
+O cria apenas novos projetos conforme você cria e adiciona-os a uma solução. A solução inteira não é criada.
 
 Hierarquia de elementos:
 
@@ -46,18 +46,18 @@ Hierarquia de elementos:
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|`TemplateData`|Categoriza o modelo e define como ele aparece tanto no **Novo Projeto** quanto nas caixas de diálogo Adicionar **novo item.**|
+|`TemplateData`|Categoriza o modelo e define como ele aparece nas caixas de diálogo **novo projeto** e **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve `true` `false` ser ou indicar se deve construir apenas o novo projeto quando for criado a partir do modelo.
+ O texto deve ser `true` ou `false` para indicar se deseja Compilar apenas o novo projeto quando ele é criado a partir do modelo.
 
 ## <a name="remarks"></a>Comentários
  `BuildProjectOnLoad` é um elemento opcional. O valor padrão é `false`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados de um modelo Visual C#.
+ O exemplo a seguir ilustra os metadados de um modelo do Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ Hierarquia de elementos:
 
 ## <a name="see-also"></a>Confira também
 
-- [Atributo e elemento BuildOnLoad](buildonload-visual-studio-templates.md)
-- [Criando modelos de projetos e itens](../ide/creating-project-and-item-templates.md)
+- [Elemento e atributo BuildOnLoad](buildonload-visual-studio-templates.md)
+- [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664583"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
@@ -53,9 +53,9 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
 > [!NOTE]
 > Na ilustração foi especificada uma cor laranja para demonstrar melhor o efeito do sombreador.
 
- ![Grafo de sombreador e seu resultado em&#45;um modelo de 3 D](../designers/media/digit-flat-color-effect.png "Efeito de cor de dígito simples")
+ ![Grafo de sombreador e seu resultado em um modelo de 3&#45;D](../designers/media/digit-flat-color-effect.png "Efeito de cor de dígito simples")
 
- Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md).
+ Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como Visualizar sombreadores no designer do sombreador, consulte [Designer de sombreador](../designers/shader-designer.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [como exportar um](../designers/how-to-export-a-shader.md) [sombreador](../designers/shader-designer.md) de sombreador designer [nós designer de sombreador](../designers/shader-designer-nodes.md)

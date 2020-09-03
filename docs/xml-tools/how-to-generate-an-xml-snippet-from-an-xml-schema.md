@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817171"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como gerar um trecho XML a partir de um esquema XML
@@ -33,7 +33,7 @@ Este recurso está disponível somente nos elementos. As seguintes regras també
 
 - O cursor deve ser localizado imediatamente à direita do nome do elemento.
 
-O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any`os `xsd:anyAttribute` elementos e são ignorados e não resultam em construções de trecho adicionais.
+O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` os `xsd:anyAttribute` elementos e são ignorados e não resultam em construções de trecho adicionais.
 
 Os valores padrão são gerados e observados como valores editáveis. Se o esquema especifica um valor padrão, esse valor padrão é usado. Entretanto, se o valor padrão de esquema é uma cadeia de caracteres vazia, o editor gerencia os valores padrão da seguinte maneira:
 
@@ -154,7 +154,7 @@ A seguir estão os dados XML que são gerados com base nas informações de esqu
 </Contact>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Snippets XML](../xml-tools/xml-snippets.md)
 - [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)

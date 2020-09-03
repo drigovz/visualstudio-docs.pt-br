@@ -1,44 +1,44 @@
 ---
 title: Edição com vários cursores
-description: Insira texto em vários locais ao editar código no Visual Studio for Mac.
+description: Inserir texto em vários locais ao editar código em Visual Studio para Mac.
 author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75451443"
 ---
 # <a name="multi-caret-editing"></a>Edição com vários cursores
 
-A edição multi-caret permite adicionar _n_ número de pontos de inserção de uma só vez. Quando estiver no modo multicuidado, você pode adicionar carets adicionais ao documento, seja através de cliques no mouse ou através de comandos de teclado. O cuidador primário é denotado por um cursor vermelho, enquanto os cuidados secundários presentes em uma cor azul-claro. O modo de edição multicaret `ESC` pode ser desativado através da chave.
+A edição de vários argumentos permite adicionar _n_ número de pontos de inserção em uma única vez. Quando estiver no modo de cursor múltiplo, você poderá adicionar mais acentos ao documento por meio de cliques do mouse ou por meio de comandos de teclado. O cursor principal é indicado por um cursor vermelho, enquanto os sinais de interpolação secundários apresentam uma cor azul clara. O modo de edição de vários acentos pode ser desabilitado por meio da `ESC` chave.
 
-## <a name="enabling-multi-caret-editing"></a>Habilitando a edição multi-caret
+## <a name="enabling-multi-caret-editing"></a>Habilitando a edição de vários acento circunflexo
 
-### <a name="keyboard"></a>Teclado
+### <a name="keyboard"></a>Keyboard
 
-Você é capaz de ativar o modo multi-caret através do teclado de várias maneiras. A tabela a seguir fornece os atalhos de teclado disponíveis para inserir modos específicos de edição multi-caret:
+Você pode habilitar o modo de vários acentos por meio do teclado de várias maneiras. A tabela a seguir fornece os atalhos de teclado disponíveis para inserir modos específicos de edição com vários acentos:
 
 | Tecla de acesso  | Ação                        | 
 |---------| ------------------------------|
-|  ⌥⇧.   | Insira o próximo caret correspondente    | 
-|  ⌥⇧;   | Insira carets em todas as correspondências | 
-|  ⌥⇧,   | Remova o último caret             | 
-|  ⌥⇧/   | Mova-se último caret para baixo          | 
+|  ⌥⇧.   | Inserir próximo cursor correspondente    | 
+|  ⌥⇧;   | Inserir acento circunflexo em todas as correspondências | 
+|  ⌥⇧,   | Remover último cursor             | 
+|  ⌥⇧/   | Mover último cursor para baixo          | 
 
-Cada um desses comportamentos está ancorado na posição atual do cuidador quando você invoca o comando. Por exemplo, se o cuidador estiver no início da palavra "nome" e você invocar "Inserir caretas em todos os matching" (;) cada instância da palavra "nome" no documento atual terá um caret inserido no início da palavra. Da mesma forma, se você invocar o comando "Inserir o próximo caret correspondente" (().)) então um caret será colocado na próxima instância da palavra "nome". Este comando pode ser invocado várias vezes.
+Cada um desses comportamentos é ancorado à posição atual do cursor quando você invoca o comando. Por exemplo, se o cursor estiver no início da palavra "nome" e você invocar "inserir Cursors em todas as correspondências" (⌥ ⇧;) cada instância da palavra "nome" no documento atual terá um cursor inserido no início da palavra. Da mesma forma, se você invocar o comando "inserir próximo cursor correspondente" (⌥ ⇧.), um cursor será colocado na próxima instância da palavra "Name". Esse comando pode ser invocado várias vezes.
 
-![teclado multi-caret](media/multi-caret-keyboard.gif)
+![teclado de vários Cursors](media/multi-caret-keyboard.gif)
 
-## <a name="mousetouchpad"></a>Mouse/touchpad
+## <a name="mousetouchpad"></a>Mouse/Touchpad
 
-Usando seu cursor, você é capaz de liberar pontos de inserção específicos para suas múltiplas caretas. Enquanto os atalhos do teclado estão vinculados a strings correspondentes, você pode inserir manualmente uma careta em qualquer lugar do documento com o cursor. Uma vez que os carets são definidos, cada um ecoará as entradas-chave que você digita no teclado.
+Usando o cursor, você pode liberar pontos de inserção específicos para seus vários acentos. Embora os atalhos de teclado estejam associados a cadeias de caracteres correspondentes, você pode inserir manualmente um cursor em qualquer lugar do documento com o cursor. Depois que os Cursors forem definidos, cada um irá ecoar as entradas de chave digitadas no teclado.
 
-Para usar o mouse para inserir vários caretas, você deve pressionar e segurar e clicar onde você gostaria que os carets fossem inseridos. Você estará no modo de inserção enquanto as teclas forem mantidas. Se você inserir um caret em um local incorreto, você pode remover o cuidado continuando a segurar e clicando na mesma área novamente. Uma vez que você tenha todos os caretas localizados onde você gostaria, pare de pressionar as teclas e comece a digitar. O GIF a seguir demonstra tanto a seleção de um conjunto de pontos de inserção quanto a remoção de pontos de set erroneamente.
+Para usar o mouse para inserir vários acentos, você deve pressionar e manter ⌘ ⌥ e clicar no local em que deseja que os acento circunflexo sejam inseridos. Você estará no modo de inserção, desde que as chaves ⌘ ⌥ sejam mantidas. Se você inserir um cursor em um local incorreto, poderá remover o cursor continuando a manter ⌘ ⌥ e clicando na mesma área novamente. Quando você tiver todos os acento circunflexo localizados onde desejar, pare de pressionar as chaves ⌘ ⌥ e comece a digitar. O GIF a seguir demonstra como selecionar um conjunto de pontos de inserção, bem como remover pontos definidos erroneamente.
 
-![mouse multi-caret](media/multi-caret-mouse.gif)
+![mouse com vários acentos](media/multi-caret-mouse.gif)
 
 ## <a name="see-also"></a>Confira também
 

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780007"
 ---
 # <a name="modules-view---contention-data"></a>Exibição Módulos – dados de contenção
@@ -41,12 +41,12 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
 |**Nome**|O nome do módulo ou da função.|
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|
 |**Nome do processo**|O nome do processo.|
-|**Arquivo de origem**|O arquivo de origem que contém a definição dessa função.|
+|**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 
 ## <a name="see-also"></a>Confira também
-- [Como: Personalizar colunas de exibição de relatórios](../profiling/how-to-customize-report-view-columns.md)
-- [Exibição Módulos](../profiling/modules-view.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Exibição de módulos](../profiling/modules-view.md)
 - [Exibição Módulos – instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Exibição de módulos - amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
-- [Exibição Módulos](../profiling/modules-view-sampling-data.md)
+- [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)
+- [Exibição de módulos](../profiling/modules-view-sampling-data.md)

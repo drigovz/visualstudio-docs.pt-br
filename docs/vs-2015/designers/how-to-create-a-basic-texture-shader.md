@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664495"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Como criar um sombreador de textura básica
@@ -61,9 +61,9 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
 > [!NOTE]
 > Nesta ilustração foi usado um plano como a forma de visualização e foi especificada uma textura para demonstrar melhor o efeito do sombreador.
 
- ![Grafo de sombreador e uma versão prévia do efeito dele](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![Grafo de sombreador e uma versão prévia do efeito dele](../designers/media/digit-texture-effect.png "Efeito de textura de dígitos")
 
  Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre como visualizar sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Como: aplicar um sombreador a um](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Editor de imagem](../designers/image-editor.md) de modelo 3D [Designer](../designers/shader-designer.md) de [sombreador](../designers/shader-designer-nodes.md) de designer nós

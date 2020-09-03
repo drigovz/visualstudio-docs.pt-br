@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664571"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
@@ -38,7 +38,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
  As etapas a seguir mostram como criar uma textura que representa um destino de "alvo". Quando terminar, a textura deverá ser parecida com a figura a seguir. Para demonstrar melhor a transparência na textura, o Editor de Imagens foi configurado para usar um padrão quadriculado verde para exibi-la.
 
- ![Destino "alvo" com transparência mostrada em verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit-alvo-Texture-in-editor")
+ ![Destino de "alvo" com transparência mostrada em verde](../designers/media/digit-bullseye-texture-in-editor.png "Digit-alvo-Texture-in-editor")
 
  Antes de começar, verifique se a janela **Propriedades** está sendo exibida. A janela **Propriedades** é usada para definir o tamanho da imagem, alterar as propriedades da ferramenta e especificar cores enquanto você trabalha.
 
@@ -52,7 +52,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
 4. Defina a cor de primeiro plano como preto totalmente transparente. Na janela **Propriedades**, no grupo de propriedades **Cores**, selecione **Primeiro Plano**. Defina os valores das propriedades **R**, **G**, **B** e **A** ao lado do seletor de cor como `0`.
 
-5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** e, em seguida, pressione e mantenha a tecla Shift pressionada e escolha qualquer ponto na imagem. Usar a tecla Shift faz com que o valor alfa da cor de preenchimento substitua a cor na imagem. Caso contrário, o valor alfa é usado para misturar a cor de preenchimento com a cor da imagem.
+5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento**, em seguida, pressione e segure a tecla Shift e escolha qualquer ponto na imagem. Usar a tecla Shift faz com que o valor alfa da cor de preenchimento substitua a cor na imagem. Caso contrário, o valor alfa é usado para misturar a cor de preenchimento com a cor da imagem.
 
    > [!IMPORTANT]
    > Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.
@@ -86,9 +86,9 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 
     A textura de destino de "alvo" foi concluída. Aqui está a imagem final, mostrada com transparência.
 
-    ![A textura de destino "alvo" completa](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    ![A textura de destino de "alvo" completa](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
-    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, consulte [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
+    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, consulte [como: criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Consulte também
- [Editor de Imagens](../designers/image-editor.md)
+## <a name="see-also"></a>Consulte Também
+ [Editor de imagem](../designers/image-editor.md)

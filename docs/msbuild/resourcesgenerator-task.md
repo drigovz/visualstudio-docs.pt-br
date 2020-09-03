@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b5aba45292aaa55a719eb19d6f0f6f115e8b477
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632505"
 ---
 # <a name="resourcesgenerator-task"></a>Tarefa ResourcesGenerator
 
-A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou mais recursos *(.jpg,* *.ico,* *.bmp,* XAML em formato binário e outros tipos de extensão) em um arquivo *.resources.*
+A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou mais recursos (*. jpg*, *. ico*, *. bmp*, XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
@@ -34,11 +34,11 @@ A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou
 |---------------|-----------------|
 |`OutputPath`|Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho do diretório de saída. Se o caminho não for um caminho absoluto, ele será tratado como um caminho relativo ao diretório do projeto raiz.|
 |`OutputResourcesFile`|Parâmetro de saída **ITaskItem[]** obrigatório.<br /><br /> Especifica o caminho e o nome dos arquivos *.resource* gerados. Se o caminho não for um caminho absoluto, o arquivo *.resources* será gerado em relação ao diretório raiz do projeto.|
-|`ResourcesFiles`|Parâmetro **ITaskItem necessário[].**<br /><br /> Especifica um ou mais recursos para ser inserido no arquivo *.resources* gerado.|
+|`ResourcesFiles`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica um ou mais recursos para ser inserido no arquivo *.resources* gerado.|
 
 ## <a name="example"></a>Exemplo
 
- O exemplo a seguir gera um arquivo *.resources* com um único recurso *.bmp*. O recurso *.bmp* é gerado para um diretório que é relativo ao diretório raiz do projeto.
+ O exemplo a seguir gera um arquivo *.resources* com um único recurso *.bmp*. O recurso *. bmp* é gerado para um diretório relativo ao diretório raiz do projeto.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -56,7 +56,7 @@ A <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> tarefa incorpora um ou
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

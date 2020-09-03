@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bbeeb3d65e50e4cd3e33d4cab63dc619a1ad7a8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534310"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
@@ -44,7 +44,7 @@ Se quiser saber sobre as novas funcionalidades do Visual Studio 2015, consulte [
 ## <a name="ide-basics"></a>Noções básicas sobre o IDE
  A imagem a seguir mostra o IDE do Visual Studio com um projeto aberto, a janela do Gerenciador de Soluções para navegar nos arquivos de projeto e a janela do Team Explorer para navegação do controle do código-fonte e acompanhamento de item de trabalho. Os recursos destacados na barra de título são explicados em mais detalhes abaixo.
 
- ![IDE do Visual Studio](../ide/media/visualstudioide.png "VisualStudioIDE")
+ ![Visual Studio IDE](../ide/media/visualstudioide.png "VisualStudioIDE")
 
 ### <a name="signing-in"></a>Entrando
  Ao iniciar o Visual Studio pela primeira vez, você pode entrar usando sua conta da Microsoft ou sua conta corporativa ou de estudante. Ao entrar você poderá sincronizar suas configurações, como layouts de janela, entre vários dispositivos e conectar-se automaticamente aos serviços que precisar, como as assinaturas do Azure e o Visual Studio Team Services. Se você tiver uma licença baseada em assinatura, será necessário entrar no Visual Studio regularmente para manter seu token de licença atualizado. Se você tiver uma licença de chave do produto (Product Key), não será necessário entrar, mas se você o fizer será muito mais conveniente para conectar-se ao Visual Studio Team Services e às suas contas com o Azure, Office 365 e Salesforce.com. Para obter mais informações, consulte [entrar no Visual Studio](../ide/signing-in-to-visual-studio.md).
@@ -94,7 +94,7 @@ Se quiser saber sobre as novas funcionalidades do Visual Studio 2015, consulte [
 
  ![Prancheta](../ide/media/b5-artboard.png "b5_artboard")
 
-|Imagem|Descrição|
+|Image|Descrição|
 |-|-|
 |![](../designers/media/b1-1.png "B1_1")|**Modo de exibição de Design** Mostra o design visual do documento. Nesse modo de exibição, você pode desenhar ou modificar objetos na superfície de design.|
 |![](../designers/media/b1-2.png "B1_2")|**Navegação estrutural** Mova-se rapidamente entre o modo de edição de modelo, o modo de edição de estilo e o escopo de edição de objeto em um objeto selecionado.|

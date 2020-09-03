@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a704744032c5dea70246463a816ba8e1f5c84e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632466"
 ---
 # <a name="sdk-element-msbuild"></a>Elemento Sdk (MSBuild)
 
-Faz referência a um SDK do projeto MSBuild.
+Faz referência a um SDK de projeto do MSBuild.
 
  \<Project> \<Sdk>
 
@@ -56,10 +56,10 @@ Faz referência a um SDK do projeto MSBuild.
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="see-also"></a>Confira também
 
-- [Como: Referenciar um SDK do projeto MSBuild](../msbuild/how-to-use-project-sdk.md)
+- [Como referenciar um SDK de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

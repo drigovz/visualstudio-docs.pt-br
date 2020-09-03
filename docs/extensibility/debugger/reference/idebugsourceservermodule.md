@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2c362bc4a103c707238acfa3b3148f00c0e25be
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719916"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 Representa as informações do servidor de origem contidas em um arquivo PDB.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugSourceServerModule : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por mecanismos de depurador e consumida pela interface do usuário dedepurador.
+ Essa interface é implementada pelos mecanismos do depurador e consumida pela interface do usuário do depurador.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugSourceServerModule`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugSourceServerModule` .
 
 |Método|Descrição|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|Recupera uma matriz de informações do servidor de origem.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

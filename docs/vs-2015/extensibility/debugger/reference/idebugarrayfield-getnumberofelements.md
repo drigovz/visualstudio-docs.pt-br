@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetNumberOfElements | Microsoft Docs
+title: 'IDebugArrayField:: GetNumberOfElements | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d5627f263d743c4f8c83de683c24baf21cf594a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198748"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
@@ -40,13 +40,13 @@ int GetNumberOfElements(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwNumElements`  
- [out] Retorna o número de elementos na matriz.  
+ fora Retorna o número de elementos na matriz.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
  O valor retornado é o número total de elementos na matriz, independentemente do número de dimensões.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

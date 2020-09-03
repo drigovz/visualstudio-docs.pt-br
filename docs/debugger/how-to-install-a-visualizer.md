@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349556"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
@@ -50,9 +50,9 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
     - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Estrutura*
 
     onde a *estrutura* é:
-    - `net2.0`para depuradores que executam o `.NET Framework` tempo de execução.
-    - `netstandard2.0`para os depuradores que usam um tempo de execução que dá suporte a `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
-    - `netcoreapp`para depuradores que executam o `.NET Core` tempo de execução. (dá suporte a `.NET Core 2.0+` )
+    - `net2.0` para depuradores que executam o `.NET Framework` tempo de execução.
+    - `netstandard2.0` para os depuradores que usam um tempo de execução que dá suporte a `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
+    - `netcoreapp` para depuradores que executam o `.NET Core` tempo de execução. (dá suporte a `.NET Core 2.0+` )
 
    Uma DLL do lado do depurador será necessária se você quiser criar um visualizador autônomo. Essa DLL contém código para o objeto de dados, que pode implementar métodos de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 
@@ -84,6 +84,6 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
 > Se você quiser usar um visualizador gerenciado para a depuração remota, copie a DLL no mesmo caminho no computador remoto.
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Como escrever um visualizador](create-custom-visualizers-of-data.md)

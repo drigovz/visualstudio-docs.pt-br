@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7392b4185def34f38f0e183f2626bd648bb4b4ea
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350011"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Como depurar o método OnStart
@@ -52,6 +52,6 @@ Você pode depurar um serviço do Windows iniciando o serviço e anexando o depu
 
 5. Uma nova instância do Visual Studio é iniciada e a execução é interrompida no `Debugger.Launch()` método.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)

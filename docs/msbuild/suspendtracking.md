@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631999"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
@@ -34,7 +34,7 @@ HRESULT WINAPI SuspendTracking(void);
 
 ## <a name="return-value"></a>Valor retornado
 
- Um **HRESULT** com o conjunto **de bits bem sucedido** se o rastreamento foi suspenso.
+ Um **HRESULT** com o bit com **êxito** definido se o rastreamento foi suspenso.
 
 ## <a name="requirements"></a>Requisitos
 
