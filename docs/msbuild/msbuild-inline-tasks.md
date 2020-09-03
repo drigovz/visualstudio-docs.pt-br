@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81638040"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
@@ -52,7 +52,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
 
 - O atributo `TaskFactory` nomeia a classe que implementa a fábrica de tarefas em linha.
 
-- O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Alternativamente, você pode `AssemblyName` usar o atributo para especificar o nome totalmente qualificado da `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`classe de fábrica de tarefas inline, que normalmente está localizada em .
+- O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Como alternativa, você pode usar o `AssemblyName` atributo para especificar o nome totalmente qualificado da classe de fábrica de tarefa embutida, que normalmente está localizada em `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` .
 
 Os elementos restantes da tarefa `DoNothing` estão vazios w são fornecidos para ilustrar a ordem e a estrutura de uma tarefa em linha. Um exemplo mais robusto será apresentado posteriormente neste tópico.
 
@@ -83,7 +83,7 @@ Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha p
 
 - Se o valor de `Type` é `Fragment`, o código define o conteúdo do método `Execute`, mas não a assinatura ou a instrução `return`.
 
-O próprio código normalmente aparece entre um marcador `<![CDATA[` e um marcador `]]>`. Como o código está em uma seção CDATA, você não precisa se preocupar com o escape de caracteres reservados, por exemplo, "\<" ou ">".
+O próprio código normalmente aparece entre um marcador `<![CDATA[` e um marcador `]]>`. Como o código está em uma seção CDATA, você não precisa se preocupar com a saída de caracteres reservados, por exemplo, " \<" or "> ".
 
 Como alternativa, você pode usar o atributo `Source` do elemento `Code` para especificar o local de um arquivo que contém o código da sua tarefa. O código no arquivo de origem deve ser do tipo especificado pelo atributo `Type`. Se o atributo `Source` estiver presente, o valor padrão de `Type` será `Class`. Se `Source` é não estiver presente, o valor padrão será `Fragment`.
 

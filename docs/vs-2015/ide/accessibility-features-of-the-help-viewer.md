@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621102"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de Acessibilidade do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer 2.2 acessível a pessoas com uma ampla variedade de capacidades.
+A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todos. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer 2.2 acessível a pessoas com uma ampla variedade de capacidades.
 
 ## <a name="keyboard-access"></a>Acesso pelo teclado
  Você pode acessar todos os recursos do Help Viewer usando o teclado. Para obter mais informações, consulte [Teclas de atalho (Help Viewer)](../ide/shortcut-keys-help-viewer.md).
@@ -39,5 +39,5 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 ## <a name="internet-explorer-options"></a>Opções do Internet Explorer
  Você pode tornar o Help Viewer mais acessível alterando as opções do Internet Explorer relacionadas a como as páginas da Web aparecem. Para obter mais informações, consulte [Personalizar o Help Viewer](../ide/customize-the-help-viewer.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 0490912683fd683398c89e8e69b62dd3824ee04b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533465"
 ---
 # <a name="formatting-conventions"></a>Convenções de formatação
@@ -1193,7 +1193,7 @@ csharp_using_directive_placement = inside_namespace
 | **Nome da regra** | csharp_using_directive_placement |
 | **Idiomas aplicáveis** | C# |
 | **Versão introduzida** | Visual Studio 2019 versão 16.1 |
-| **Valores** | `outside_namespace`-Deixar de usar diretivas fora do namespace<br /><br />`inside_namespace`-Deixar de usar diretivas dentro do namespace |
+| **Valores** | `outside_namespace` -Deixar de usar diretivas fora do namespace<br /><br />`inside_namespace` -Deixar de usar diretivas dentro do namespace |
 
 Exemplos de código:
 

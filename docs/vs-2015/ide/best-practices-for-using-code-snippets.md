@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 74da305b69a9561573466d385c5d7b686da3693f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620319"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
@@ -27,7 +27,7 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 ## <a name="handling-exceptions"></a>Tratando exceções
  Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, consulte [Como manipular uma exceção usando try/catch (Guia de Programação do C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) e [Instrução Try... Catch...Finally](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).
 
-## <a name="file-locations"></a>Locais dos arquivos
+## <a name="file-locations"></a>Locais de arquivo
  Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o seguinte:
 
 - Encontrando um local acessível. Os usuários poderão não ter acesso à pasta Arquivos de Programas do computador; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
@@ -45,7 +45,7 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 
 - Protegendo recursos (como logs de eventos, Registro)
 
-- Armazenando segredos
+- Armazenar segredos
 
 - Verificando as entradas
 
@@ -66,5 +66,5 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 
   - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Visual Basic trechos de código IntelliSense](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643) [protegendo os](../ide/securing-applications.md) [trechos de código](../ide/code-snippets.md) de aplicativos

@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76dadd1a064a64884e3ff1cd1f2431bc1b94c3c4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633727"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 
   
-Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, consulte [Import element (MSBuild)](../msbuild/import-element-msbuild.md).
+Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. Para obter mais informações, consulte [elemento de importação (MSBuild)](../msbuild/import-element-msbuild.md).
 
 ```xml
 <Project>
   <ImportGroup>
 ```
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ImportGroup Condition="'String A' == 'String B'">
@@ -56,13 +56,13 @@ Contém uma coleção de elementos `Import` que são agrupados em uma condição
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Importar](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|
+|[Importaçãoação](../msbuild/import-element-msbuild.md)|Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="example"></a>Exemplo
 

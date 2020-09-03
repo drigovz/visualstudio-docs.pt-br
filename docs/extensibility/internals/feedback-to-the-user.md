@@ -1,5 +1,5 @@
 ---
-title: Feedback para o Usuário | Microsoft Docs
+title: Comentários para o usuário | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,48 +14,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708407"
 ---
-# <a name="feedback-to-the-user"></a>Feedback para o usuário
-No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE), o feedback visual sobre a funcionalidade disponível é baseado na seleção atual do usuário e no contexto de seleção global. A tabela a seguir lista a funcionalidade disponível em diferentes contextos de seleção.
+# <a name="feedback-to-the-user"></a>Comentários para o usuário
+No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado), os comentários visuais relacionados à funcionalidade disponível baseiam-se na seleção atual do usuário e no contexto de seleção global. A tabela a seguir lista a funcionalidade que está disponível em contextos de seleção diferentes.
 
 |Contexto de seleção|Funcionalidade disponível|
 |-----------------------|-----------------------------|
 |IDE|Global|
-|Conjunto de produtos atuais|Específico do produto|
+|Conjunto de produtos atual|Específico do produto|
 |Hierarquia ativa|Tipo de hierarquia específico|
 |Item de hierarquia ativa|Tipo de item de hierarquia específico|
 |Documento ativo|Tipo de documento específico|
-|Janela MDI (Topmost multiple-document interface, interface de vários documentos) top|Tipo de janela específico|
+|Janela MDI (interface de vários documentos) superior|Específico do tipo de janela|
 |Contexto de seleção atual|Contexto de seleção específico|
 
- Se você só aparecer a funcionalidade que os usuários precisam e fornecer continuamente feedback consistente de seleção e contexto do ambiente, você reduz a complexidade no IDE. As seguintes regras se aplicam sempre que uma janela é aberta no IDE:
+ Se você só Surface a funcionalidade de que os usuários precisam e fornece continuamente comentários de contexto de ambiente e seleção consistente, reduza a complexidade no IDE. As regras a seguir se aplicam sempre que uma janela é aberta no IDE:
 
-- Se a janela mudar seu contexto de seleção, o feedback de seleção será claramente indicado na janela, e a janela **Ajuda Dinâmica,** se mostrada, será atualizada para refletir o contexto atual.
+- Se a janela alterar seu contexto de seleção, os comentários de seleção serão indicados claramente na janela e a janela de **Ajuda dinâmica** , se mostrada, será atualizada para refletir o contexto atual.
 
-- Se a janela mudar o contexto de seleção global, todos os menus específicos do contexto, a janela de hierarquia ativa e a barra de título do aplicativo serão atualizadas para refletir o contexto atual.
+- Se a janela alterar o contexto de seleção global, todos os menus específicos de contexto, a janela de hierarquia ativa e a barra de título do aplicativo serão atualizados para refletir o contexto atual.
 
-- A janela deve superfície satisfazer propriedades para a seleção atual na janela **Propriedades** e, opcionalmente, se exibida, a caixa de diálogo **Páginas** de propriedade.
+- A janela deve trazer as propriedades de superfície para a seleção atual na janela **Propriedades** e, opcionalmente, se mostrado, a caixa de diálogo **páginas de propriedades** .
 
-- Se a janela não aparecer propriedades ou alterar o contexto de seleção global, o feedback de seleção não deve permanecer na janela quando não for mais a janela ativa no IDE.
+- Se a janela não Surface Propriedades ou alterar o contexto de seleção global, os comentários de seleção não deverão permanecer na janela quando ela não for mais a janela ativa no IDE.
 
-- Todas as janelas de ferramentas específicas de documentos devem refletir continuamente o documento ativo.
+- Todas as janelas de ferramentas específicas do documento devem refletir continuamente o documento ativo.
 
-- Menus, barras de ferramentas e a barra de título do aplicativo devem refletir a janela de cliente mdi (interface de vários documentos) mais alta.
+- Menus, barras de ferramentas e a barra de título do aplicativo devem refletir a janela de cliente MDI (interface de vários documentos) superior.
 
-  Por exemplo, quando a exibição HTML de um **Formulário Web** dentro de `<td>` um projeto de Aplicativo Web Básico Visual é aberta e o usuário seleciona uma tag, o feedback é fornecido da seguinte maneira:
+  Por exemplo, quando o modo de exibição HTML de um **formulário da Web** dentro de um Visual Basic projeto de aplicativo Web é aberto e o usuário seleciona uma `<td>` marca, os comentários são fornecidos da seguinte maneira:
 
-- A seleção é indicada na janela ativa e refletida na janela **Propriedades.**
+- A seleção é indicada na janela ativa e refletida na janela **Propriedades** .
 
-- A caixa de **ferramentas** específica do documento é atualizada para refletir o documento ativo.
+- A **caixa de ferramentas** específica do documento é atualizada para refletir o documento ativo.
 
-- A barra de ferramentas **do Editor** e o menu **Tabela** são exibidos e as atualizações da barra de título para refletir a janela Formulário da Web.
+- A barra de ferramentas do **Editor** e o menu **tabela** são exibidos e a barra de título é atualizada para refletir a janela do Web Form.
 
-- A janela de hierarquia ativa, que normalmente é **o Solution Explorer,** e sua atualização da barra de título para refletir o contexto atual e os comandos de menu **do Projeto** sensíveis ao contexto agora se aplicam ao projeto ativo do Aplicativo da Web.
+- A janela de hierarquia ativa, que normalmente é **Gerenciador de soluções**e sua atualização da barra de título para refletir o contexto atual e os comandos do menu de **projeto** sensível ao contexto agora se aplicam ao projeto de aplicativo Web ativo.
 
 ## <a name="see-also"></a>Confira também
 - [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

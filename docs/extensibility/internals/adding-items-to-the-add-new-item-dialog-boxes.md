@@ -1,5 +1,5 @@
 ---
-title: Adicionando itens às caixas de diálogo adicionar novos itens | Microsoft Docs
+title: Adicionando itens às caixas de diálogo Adicionar novo item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,76 +11,76 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710210"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Adicionar itens à caixa de diálogo Adicionar novo item
-O processo para adicionar itens à caixa de diálogo **Adicionar novo item** começa com as chaves do registro. Como mostrado nas entradas de registro a seguir, a seção **AddItemTemplates** contém o caminho e o nome do diretório em que os itens disponibilizados na caixa de diálogo **Adicionar novo item** são colocados.
+O processo para adicionar itens à caixa de diálogo **Adicionar novo item** começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, a seção **Additemtemplates** contém o caminho e o nome do diretório no qual os itens disponibilizados na caixa de diálogo **Adicionar novo item** são colocados.
 
 > [!NOTE]
-> A tabela imediatamente seguinte ao segmento de código contém informações adicionais sobre a entrada do registro.
+> A tabela imediatamente após o segmento de código contém informações adicionais sobre a entrada do registro.
 
- Esta seção está localizada em **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
+ Esta seção está localizada em **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
 
- O primeiro GUID é o CLSID para projetos desse tipo; o segundo GUID indica o tipo de projeto registrado para os modelos Adicionar itens:
+ O primeiro GUID é o CLSID para projetos desse tipo; o segundo GUID indica o tipo de projeto registrado para os modelos adicionar itens:
 
- **\\{C061DB26-5833-11D2-96F5-0000000000000000} \\Modelos de\\modelos\\de additemDir {ACEF4EB2-57CF-11D2-96F4-0000000000000}\\1**
+ **\\{C061DB26-5833-11D2-96F5-000000000000} \\ Additemtemplates \\ TemplatesDir \\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \\ 1**
 
- **@**= #6
+ **@** = #6
 
- **ModelosDir** = \\&lt;&gt;\\Visual Studio SDK\\&lt;caminho&gt;\\&lt;de&gt;\\&lt;instalação&gt;\\&lt;VSIntegração SomeFolder SomePackage SomeProject SomeProjectItems&gt;
+ **TemplatesDir**  =  \\ TemplatesDir &lt; Caminho de instalação do SDK do Visual Studio &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
- **ClassPriority** = dword:00000064
+ **SortPriority** = DWORD: 00000064
 
-| Nome | Type | Dados (do arquivo *.rgs)* | Descrição |
+| Nome | Tipo | Dados (do arquivo *. rgs* ) | Descrição |
 |------------------|-----------| - | - |
-| @ (Padrão) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | ID de recursos para adicionar modelos **de itens.** |
-| Modelos de ValDir | REG_SZ | %TEMPLATE_PATH%\\&lt;Alguns Itens de Projeto&gt; | Caminho dos itens do projeto exibidos na caixa de diálogo para o **assistente Adicionar novo item.** |
-| Val SortPriority | REG_DWORD | 100[!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]( ) | Determina a ordem de classificação no nó de árvore dos arquivos exibidos na caixa de diálogo **Adicionar novo item.** |
+| @ (Padrão) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | ID do recurso para adicionar modelos de **Item** . |
+| Valor TemplatesDir | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | Caminho dos itens de projeto exibidos na caixa de diálogo para o assistente para **Adicionar novo item** . |
+| Valor SortPriority | REG_DWORD | 100 ( [!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)] ) | Determina a ordem de classificação no nó de árvore dos arquivos exibidos na caixa de diálogo **Adicionar novo item** . |
 
 > [!NOTE]
-> Os GUIDS para os tipos de projeto Visual C# e Visual Basic são os seguintes:
+> Os GUIDs para os tipos de projeto do Visual C# e Visual Basic são os seguintes:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- O diretório listado para **TemplatesDir**, que é *%TEMPLATE_PATH%\\&lt;SomeProjectItems&gt;*, é o nó no lado esquerdo da caixa de caixa de diálogo **Adicionar novo item.** Elementos adicionais na árvore são baseados no subdiretório dentro desse diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel direito da caixa de diálogo **Adicionar novo item.**
+ O diretório listado para **TemplatesDir**, que é *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *, é o nó no lado esquerdo da árvore da caixa de diálogo **Adicionar novo item** . Elementos adicionais na árvore são baseados no subdiretório dentro desse diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel direito da caixa de diálogo **Adicionar novo item** .
 
- Normalmente, esta pasta conterá os arquivos de modelo para o seu projeto, como um arquivo HTML ou *.cpp* de modelo, e quaisquer arquivos *.vsz* para assistentes de partida. Para controlar como os itens são exibidos, você também pode incluir arquivos *.vsdir* para localizar nomes e ícones de diretórios. A seqüência de string localizada é a legenda que aparece na caixa de diálogo que representa este nó na árvore de caixa de caixa de caixa de diálogo **Adicionar novo item.**
+ Normalmente, essa pasta conterá os arquivos de modelo para seu projeto, como um arquivo de modelo HTML ou *. cpp* , e quaisquer arquivos *. vsz* para iniciar os assistentes. Para controlar como os itens são exibidos, você também pode incluir arquivos *. vsdir* para localizar nomes de diretório e ícones. A cadeia de caracteres localizada é a legenda que aparece na caixa de diálogo que representa esse nó na árvore da caixa de diálogo **Adicionar novo item** .
 
- No entanto, você não precisa ter tudo em um arquivo *.vsdir.* Você pode ter um arquivo *.vsdir* para cada item no diretório. Para obter mais informações, consulte [arquivos Dom (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) e [arquivos de diretório De modelo (.vsdir) arquivos](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
+ No entanto, você não precisa ter tudo em um arquivo *. vsdir* . Você pode ter um arquivo *. vsdir* para cada item no diretório. Para obter mais informações, consulte [arquivo do assistente (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) e [arquivos de descrição do diretório de modelo (. vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
-> Os arquivos *.vsdir* nos diretórios de modelo são opcionais. Se você quiser apenas colocar um elemento de projeto no diretório e exibi-lo na caixa de diálogo **Adicionar novo item,** você pode colocar esse arquivo no diretório de modelos especificado na seção **TemplatesDir.** Em seguida, o arquivo será exibido no painel direito da caixa de diálogo **Adicionar novo item** para esse projeto. No entanto, se você quiser exibir uma legenda localizada para o arquivo ou um ícone, você deve incluir pelo menos um arquivo *.vsdir* no diretório de modelos.
+> Os arquivos *. vsdir* nos diretórios de modelo são opcionais. Se você apenas deseja colocar um elemento de projeto no diretório e exibi-lo na caixa de diálogo **Adicionar novo item** , você pode colocar esse arquivo no diretório templates especificado na instrução **TemplatesDir** . O arquivo será exibido no painel direito da caixa de diálogo **Adicionar novo item** para esse projeto. No entanto, se você quiser exibir uma legenda localizada para o arquivo ou um ícone, deverá incluir pelo menos um arquivo *. vsdir* no diretório de modelos.
 
-## <a name="group-project-items"></a>Itens do projeto do grupo
- Se você quiser conter grupos de modelos em pastas na árvore caixa de diálogo **Adicionar novo item,** você deve ter subdiretórios sob o diretório de modelo raiz com os itens neles. Quando a caixa de diálogo **Adicionar novo item** é exibida aos usuários, eles também verão as subpastas e poderão selecionar elementos do projeto a partir deles.
+## <a name="group-project-items"></a>Agrupar itens de projeto
+ Se você quiser conter grupos de modelos em pastas na árvore da caixa de diálogo **Adicionar novo item** , deverá ter subdiretórios no diretório do modelo raiz com os itens neles. Quando a caixa de diálogo **Adicionar novo item** for exibida aos usuários, elas também verão as subpastas e poderão selecionar elementos do projeto a partir delas.
 
- A prioridade de classificação no segmento de código determina onde este diretório de modelo será criado na árvore em relação a outros elementos do nó da árvore. Para a caixa de diálogo **Adicionar novo item,** a prioridade de classificação é tudo o que você deve incluir para que seus itens sejam exibidos no local correto na caixa de diálogo.
+ A prioridade de classificação no segmento de código determina onde esse diretório de modelo será criado na árvore em relação a outros elementos do nó de árvore. Para a caixa de diálogo **Adicionar novo item** , a prioridade de classificação é tudo o que você deve incluir para que os itens sejam exibidos no local correto na caixa de diálogo.
 
- Você também pode <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> implementar a interface para filtrar o que é exibido na caixa de diálogo **Adicionar novo item.** Ao implementar esta interface, você pode configurar um diretório de modelo sustal no disco que contém, por exemplo, 50 arquivos de modelo e assistente. Dessa forma, você pode ter diferentes tipos de projeto com 20 arquivos que pertencem a um tipo de projeto, os outros 30 arquivos que pertencem a outro tipo de projeto, e todos os arquivos disponíveis em um tipo geral de projeto. Desta forma, dependendo de qual modelo de projeto é criado, você pode exibir um conjunto diferente de arquivos de modelo.
+ Você também pode implementar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interface para filtrar o que é exibido na caixa de diálogo **Adicionar novo item** . Ao implementar essa interface, você pode configurar um diretório de modelo no disco que contém, por exemplo, os arquivos de modelo e de assistente 50. Dessa forma, você pode ter diferentes tipos de projeto com 20 arquivos que pertencem a um tipo de projeto, os outros 30 arquivos que pertencem a outro tipo de projeto e todos os arquivos disponíveis em um tipo geral de projeto. Dessa maneira, dependendo de qual modelo de projeto é criado, você pode exibir um conjunto diferente de arquivos de modelo.
 
- Por exemplo, em um projeto Visual Basic, você pode ter projetos web e projetos de clientes. Os formulários da Web não são itens úteis para adicionar a um projeto cliente, e os formulários do Windows não são itens úteis para adicionar a um projeto de servidor Web. Portanto, você pode criar um diretório de modelo que contém todos os arquivos para ambos os tipos de projeto. Em seguida, <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>implementando, você pode ocultar itens que não devem ser exibidos com base no tipo de configurações de projeto ou projeto no projeto.
+ Por exemplo, em um projeto Visual Basic, você pode ter projetos Web e projetos de cliente. Os Web Forms não são itens úteis para adicionar a um projeto de cliente e o Windows Forms não são itens úteis para adicionar a um projeto de servidor Web. Portanto, você pode criar um diretório de modelo que contém todos os arquivos para os dois tipos de projeto. Em seguida, implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> , você pode ocultar itens que não devem ser exibidos com base no tipo de projeto ou nas configurações de projeto no projeto.
 
-## <a name="filter-project-items"></a>Filtrar itens do projeto
- `IVsFilterAddProjectItemDlg2`fornece para filtragem de elementos na árvore (painel esquerdo) e arquivos de projeto (painel direito) das seguintes maneiras:
+## <a name="filter-project-items"></a>Filtrar itens de projeto
+ `IVsFilterAddProjectItemDlg2` fornece filtragem de elementos na árvore (painel esquerdo) e arquivos de projeto (painel direito) das seguintes maneiras:
 
-- Pelos nomes localizados (legendas exibidas na caixa de diálogo contida no arquivo `IVsFilterAddProjectItemDlg` *.vsdir)* fornecidos por .
+- Pelos nomes localizados (legendas exibidas na caixa de diálogo contida no arquivo *. vsdir* ) fornecida pelo `IVsFilterAddProjectItemDlg` .
 
-- Pelos nomes reais dos arquivos e pastas no disco (não localizado — sem arquivo *.vsdir)* fornecido por `IVsFilterAddProjectItemDlg`.
+- Pelos nomes reais dos arquivos e pastas no disco (não localizado — no arquivo *. vsdir* ) fornecido pelo `IVsFilterAddProjectItemDlg` .
 
-- Por categoria, fornecida `IVsFilterAddProjectItemDlg2`por .
+- Por categoria, fornecido por `IVsFilterAddProjectItemDlg2` .
 
-  Para filtrar por categoria, forneça uma seqüência de categorias a um item no arquivo *.vsdir,* como *formulário da Web* ou *item Cliente* no Visual Basic. O código da caixa de diálogo recupera a classificação da categoria do arquivo *.vsdir* e passa para você. Em seguida, você pode passar `IVsFilterAddProjectItemDlg2` essas informações para sua implementação de filtrar a caixa de diálogo **Adicionar novo item** por categorias. Você também pode filtrar itens para páginas da Web ou como casos de aplicativo do cliente Win32. Além disso, você [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] pode identificar itens marcados como itens mfc (MFC) ou active template library (ATL). Ao identificar esses itens, o sistema de projetos pode definir suas próprias classificações para que o sistema possa ser filtrado com base em categorias e classificações.
+  Para filtrar por categoria, forneça uma cadeia de caracteres de categoria para um item no arquivo *. vsdir* , como *formulário da Web* ou *item de cliente* em Visual Basic. O código da caixa de diálogo recupera a classificação de categoria do arquivo *. vsdir* e a transmite para você. Em seguida, você pode passar essas informações para a implementação do `IVsFilterAddProjectItemDlg2` para filtrar a caixa de diálogo **Adicionar novo item** por categorias. Você também pode filtrar itens para páginas da Web ou como casos de aplicativo Win32 do cliente. Além disso, você pode identificar [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] itens marcados como MFC (MFC) ou itens da ATL (Active Template Library). Quando você identifica esses itens, o sistema de projeto pode definir suas próprias classificações para que o sistema possa ser filtrado com base em categorias e classificações.
 
-  Se você implementar essa funcionalidade de filtro, não será necessário mapear uma tabela de cada item que deve estar oculto. Você pode simplesmente classificar itens em tipos e colocar as classificações no arquivo *.vsdir* ou arquivos. Em seguida, você pode ocultar qualquer um dos itens que têm uma classificação específica implementando a interface. Desta forma, você pode tornar os itens na caixa de diálogo **Adicionar novo item** dinâmico com base no estado dentro do projeto.
+  Se você implementar essa funcionalidade de filtro, não precisará mapear uma tabela de todos os itens que devem estar ocultos. Você pode simplesmente classificar itens em tipos e colocar as classificações no arquivo *. vsdir* ou nos arquivos. Em seguida, você pode ocultar qualquer um dos itens que têm uma classificação específica implementando a interface. Dessa forma, você pode tornar os itens na caixa de diálogo **Adicionar novo item** dinâmicos com base no estado dentro do projeto.
 
 ## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
-- [Registre modelos de projetos e itens](../../extensibility/internals/registering-project-and-item-templates.md)
+- [Registrar modelos de projeto e item](../../extensibility/internals/registering-project-and-item-templates.md)
 - [CATIDs para objetos que normalmente são usados para estender projetos](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-- [Adicionar modelos de itens de projeto e projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)
-- [Descrição do diretório de modelo (.vsdir) arquivos](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-- [Arquivo Assistente (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [Adicionar projeto e modelos de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+- [Arquivos de descrição do diretório de modelo (. vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+- [Arquivo do assistente (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

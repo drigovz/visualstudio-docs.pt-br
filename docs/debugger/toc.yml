@@ -12,7 +12,7 @@
   items:
     - name: Introdução ao depurador
       href: debugger-feature-tour.md
-    - name: 'Depurar um aplicativo em Visual Basic ou C#'
+    - name: Depurar um aplicativo em Visual Basic ou C#
       href: quickstart-debug-with-managed.md
     - name: Depurar um aplicativo em C++
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: Tutoriais
   items:
-    - name: 'Aprender a depurar C#'
+    - name: Aprender a depurar C#
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: Aprender a depurar C++
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Depurar um aplicativo do Azure em tempo real
       href: debug-live-azure-applications.md
-    - name: 'Depurar tanto código C# quanto C++'
+    - name: Depurar tanto código C# quanto C++
       href: how-to-debug-managed-and-native-code.md
     - name: Inspecionar estados anteriores do aplicativo
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Solucionando problemas de pontos de interrupção
           href: troubleshooting-breakpoints.md
-        - name: 'Solução de problemas de pontos de interrupção de dados em C#'
+        - name: Solução de problemas de pontos de interrupção de dados em C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Inspeção de dados
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Operador de contexto (C++)
                   href: context-operator-cpp.md
-                - name: 'Especificadores de formato em C#'
+                - name: Especificadores de formato em C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudovariáveis
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: Alterações de código suportadas (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Editar e continuar (Visual C#)'
+        - name: Editar e continuar (Visual C#)
           items:
-            - name: 'Editar e continuar para C#'
+            - name: Editar e continuar para C#
               href: edit-and-continue-visual-csharp.md
-            - name: 'Usar Editar e Continuar (C#)'
+            - name: Usar Editar e Continuar (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: Alterações de código com suporte
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Solução de problemas de Recarga Dinâmica de XAML
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Não há suporte para Editar e Continuar em F#'
+        - name: Não há suporte para Editar e Continuar em F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Registrar na Janela de Saída
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Configurações de páginas de propriedades para projetos da Web
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Configurações do projeto para configurações de depuração do C#'
+                - name: Configurações do projeto para configurações de depuração do C#
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Definições do projeto para uma configuração de depuração do Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Depuração remota do ASP.NET Core no Azure
           href: remote-debugging-azure.md
-        - name: 'Depuração remota de um projeto C# ou Visual Basic'
+        - name: Depuração remota de um projeto C# ou Visual Basic
           href: remote-debugging-csharp.md
         - name: Depuração remota de um projeto C++
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Exibir informações de rastreamento do WPF
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Depurar F#'
+            - name: Depurar F#
               href: debugging-f-hash.md
         - name: Código C/C++
           items:

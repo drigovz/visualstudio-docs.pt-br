@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633077"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 
 Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError` for `false` para uma tarefa com falha.
 
- \<Project> \<Target> \<OnError>
+ \<Project> \<Target>
+ \<OnError>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,17 +58,17 @@ Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError`
 
 | Elemento | Descrição |
 | - | - |
-| [Destino](../msbuild/target-element-msbuild.md) | Elemento de contêiner para tarefas MSBuild. |
+| [Target (destino)](../msbuild/target-element-msbuild.md) | Elemento contêiner para tarefas do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
- O MSBuild `OnError` executa o `Target` elemento se uma das `ContinueOnError` tarefas `ErrorAndStop` do `false`elemento falhar com o atributo definido para (ou ). Quando a tarefa falhar, os destinos especificados no atributo `ExecuteTargets` serão executados. Se houver mais de um elemento `OnError` no destino, os elementos `OnError` serão executados sequencialmente quando a tarefa falhar.
+ O MSBuild executa o `OnError` elemento se uma das `Target` tarefas do elemento falhar com o `ContinueOnError` atributo definido como `ErrorAndStop` (ou `false` ). Quando a tarefa falhar, os destinos especificados no atributo `ExecuteTargets` serão executados. Se houver mais de um elemento `OnError` no destino, os elementos `OnError` serão executados sequencialmente quando a tarefa falhar.
 
- Para obter `ContinueOnError` informações sobre o atributo, consulte [Elemento tarefa (MSBuild)](../msbuild/task-element-msbuild.md). Para obter mais informações sobre os destinos, consulte [Destinos](../msbuild/msbuild-targets.md).
+ Para obter informações sobre o `ContinueOnError` atributo, consulte [elemento Task (MSBuild)](../msbuild/task-element-msbuild.md). Para obter mais informações sobre os destinos, consulte [Destinos](../msbuild/msbuild-targets.md).
 
 ## <a name="example"></a>Exemplo
 
- O código a seguir executa as tarefas `TaskOne` e `TaskTwo`. Se `TaskOne` falhar, o MSBuild avalia `OnError` o `OtherTarget` elemento e executa o destino.
+ O código a seguir executa as tarefas `TaskOne` e `TaskTwo`. Se `TaskOne` falhar, o MSBuild avaliará o `OnError` elemento e executará o `OtherTarget` destino.
 
 ```xml
 <Target Name="ThisTarget">

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851542"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
@@ -21,17 +21,17 @@ ms.locfileid: "75851542"
 
 Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O TableLayoutPanel ajuda a alinhar corretamente controles no formulário que você irá adicionar posteriormente.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [tutorial 1: criar um visualizador de imagens em C#-vídeo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para apresentar seu formulário com um controle TableLayoutPanel
 
-1. No lado esquerdo do IDE do Visual Studio, localize a guia **caixa de ferramentas** . escolha a guia **caixa de ferramentas** e a caixa de ferramentas é exibida. (Ou, na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.)
+1. No lado esquerdo do IDE do Visual Studio, localize a guia **caixa de ferramentas** . Escolha a guia **caixa de ferramentas** e a caixa de ferramentas será exibida. (Ou, na barra de menus, escolha **Exibir**, **Caixa de Ferramentas**.)
 
 2. Escolha o pequeno símbolo de triângulo ao lado do grupo **Contêineres** para abri-lo, como mostrado na imagem a seguir.
 
      ![Grupo de contêineres](../ide/media/express-toolbox.png "Express_Toolbox") Grupo de contêineres
 
-3. Você pode adicionar controles como botões, caixas de seleção e rótulos para seu formulário. Clique duas vezes no controle `TableLayoutPanel` na Caixa de Ferramentas. (Ou, você pode arrastar o controle da caixa de ferramentas para o formulário.) Quando você faz isso, o IDE adiciona um controle de `TableLayoutPanel` ao formulário, conforme mostrado na imagem a seguir.
+3. Você pode adicionar controles como botões, caixas de seleção e rótulos para seu formulário. Clique duas vezes no controle `TableLayoutPanel` na Caixa de Ferramentas. (Ou, você pode arrastar o controle da caixa de ferramentas para o formulário.) Quando você faz isso, o IDE adiciona um `TableLayoutPanel` controle ao formulário, conforme mostrado na imagem a seguir.
 
      ![Controle TableLayoutPanel](../ide/media/express-formtablelayout.png "Express_FormTableLayout") Controle TableLayoutPanel
 
@@ -69,18 +69,18 @@ Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O Tab
 
      ![Tarefas de TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel") Tarefas de TableLayoutPanel
 
-10. Escolha a tarefa **Editar Linhas e Colunas** para exibir a janela **Estilos de Coluna e Linha**. Escolha **Column1** e defina o tamanho como 15%, certificando-se de que o botão **Porcentagem** esteja selecionado e inserindo `15` na caixa **Porcentagem**. (Esse é um controle `NumericUpDown`, que será usado em um tutorial posterior.) Escolha **Coluna2** e defina-o como 85 por cento. Não escolha o botão **OK** ainda, pois a janela fechará. (Mas se você fizer isso, você pode reabri-la usando a lista de tarefas.)
+10. Escolha a tarefa **Editar Linhas e Colunas** para exibir a janela **Estilos de Coluna e Linha**. Escolha **Column1** e defina o tamanho como 15%, certificando-se de que o botão **Porcentagem** esteja selecionado e inserindo `15` na caixa **Porcentagem**. (Esse é um `NumericUpDown` controle, que será usado em um tutorial posterior.) Escolha **Coluna2** e defina-o como 85 por cento. Não escolha o botão **OK** ainda, pois a janela fechará. (Mas se você fizer isso, você pode reabri-la usando a lista de tarefas.)
 
      ![Estilos de coluna e linha TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Estilos de coluna e linha TableLayoutPanel
 
 11. Na lista suspensa **Mostrar** na parte superior da janela, escolha **Linhas**. Defina **Row1** como 90% e **Row2** como 10%.
 
-12. Escolha o botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. Você pode redimensionar linhas e colunas em TableLayoutPanel selecionando tableLayoutPanel1 no formulário e então arrastando as bordas de linha e coluna.
+12. Clique no botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. Você pode redimensionar linhas e colunas em TableLayoutPanel selecionando tableLayoutPanel1 no formulário e então arrastando as bordas de linha e coluna.
 
      ![Form1 com TableLayoutPanel redimensionado](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 com TableLayoutPanel redimensionado
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir à próxima etapa do tutorial, consulte [Etapa 5: adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 5: adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 
-- Para retornar à etapa anterior do tutorial, consulte [Etapa 3: definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 3: definir suas propriedades de formulário](../ide/step-3-set-your-form-properties.md).

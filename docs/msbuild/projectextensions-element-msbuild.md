@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632960"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
-Permite que os arquivos do projeto MSBuild contenham informações não-MSBuild. Qualquer coisa `ProjectExtensions` dentro de um elemento será ignorada pelo MSBuild.
+Permite que os arquivos de projeto do MSBuild contenham informações não MSBuild. Qualquer coisa dentro de um `ProjectExtensions` elemento será ignorada pelo MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -55,11 +55,11 @@ Permite que os arquivos do projeto MSBuild contenham informações não-MSBuild.
 
 | Elemento | Descrição |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto MSBuild. |
+| [Projeto](../msbuild/project-element-msbuild.md) | Elemento raiz necessário de um arquivo de projeto do MSBuild. |
 
 ## <a name="remarks"></a>Comentários
 
- Apenas `ProjectExtensions` um elemento pode ser usado em um projeto MSBuild.
+ Somente um `ProjectExtensions` elemento pode ser usado em um projeto do MSBuild.
 
 ## <a name="example"></a>Exemplo
 

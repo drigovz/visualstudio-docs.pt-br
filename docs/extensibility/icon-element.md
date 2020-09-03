@@ -1,5 +1,5 @@
 ---
-title: Elemento ícone | Microsoft Docs
+title: Elemento Icon | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710513"
 ---
-# <a name="icon-element"></a>Elemento ícone
-O atributo guia da tag Ícone é o guia de um bitmap definido. O `id` atributo seleciona o slot na tira bitmap. Esse elemento é opcional. Se esse elemento não estiver incluído, o valor do **guidOfficeIcon:msotcidNoIcon** estará implícito.
+# <a name="icon-element"></a>Elemento Icon
+O atributo GUID da marca de ícone é o GUID de um bitmap definido. O `id` atributo seleciona o slot na faixa de bitmap. Esse elemento é opcional. Se esse elemento não estiver incluído, o valor de **guidOfficeIcon: msotcidNoIcon** será implícito.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Icon guid="guidImages" id="bmpPic1" />
@@ -34,8 +34,8 @@ O atributo guia da tag Ícone é o guia de um bitmap definido. O `id` atributo s
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|guid|Obrigatórios. O guia de um bitmap definido.|
-|id|Obrigatórios. Seleciona o slot na tira bitmap.|
+|guid|Obrigatórios. O GUID de um bitmap definido.|
+|id|Obrigatórios. Seleciona o slot na faixa de bitmap.|
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -47,7 +47,7 @@ O atributo guia da tag Ícone é o guia de um bitmap definido. O `id` atributo s
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento botões](../extensibility/buttons-element.md)||
+|[Elemento Buttons](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>Confira também
-- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

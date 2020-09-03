@@ -1,5 +1,5 @@
 ---
-title: 'Como: Suporte delineamento em um serviço de idioma legado | Microsoft Docs'
+title: 'Como: dar suporte à estrutura de tópicos em um serviço de linguagem herdada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707913"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Como: Suporte delineamento em um serviço de idioma legado
-O delineamento é usado para expandir ou colapsar diferentes regiões do texto. A forma como o delineamento é usado pode ser definida de forma diferente por diferentes línguas. Para obter mais informações, consulte [Estrutura de tópicos](../../ide/outlining.md).
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Como: dar suporte à estrutura de tópicos em um serviço de linguagem herdada
+A estrutura de tópicos é usada para expandir ou recolher diferentes regiões de texto. A maneira como a estrutura de tópicos é usada pode ser definida de forma diferente por idiomas diferentes. Para obter mais informações, consulte [Estrutura de tópicos](../../ide/outlining.md).
 
- Os serviços de linguagem legados são implementados como parte de um VSPackage, mas a maneira mais nova de implementar recursos de serviço de idioma é usar extensões MEF. Para saber mais sobre a nova forma de implementar o delineamento, consulte [Passo a Passo: Delineando](../../extensibility/walkthrough-outlining.md).
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para obter mais informações sobre a nova maneira de implementar a estrutura de tópicos, consulte [Walkthrough: contorno](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> Recomendamos que você comece a usar a Nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de idiomas e permitirá que você aproveite os novos recursos do editor.
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.
 
- O seguinte demonstra como suportar este comando para o seu serviço de idioma.
+ O seguinte demonstra como dar suporte a esse comando para seu serviço de idioma.
 
-## <a name="to-support-outlining"></a>Para apoiar o delineamento
+## <a name="to-support-outlining"></a>Para dar suporte à estrutura de tópicos
 
 1. Implemente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> em seu objeto de serviço de idioma.
 
-2. Convoque <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> o objeto de sessão de delineamento atual para adicionar novas regiões de contorno.
+2. Chame <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> no objeto de sessão de estrutura de tópicos atual para adicionar novas regiões de estrutura de tópicos.
 
 ## <a name="robust-programming"></a>Programação robusta
- Quando um usuário seleciona **''''''''Desemrumio',** o IDE chama **Outlining** <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> o serviço de idioma.
+ Quando um usuário seleciona **recolher em definições** no menu de **estrutura de tópicos** , o IDE chama o serviço de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> idioma.
 
- Quando esse método é chamado, o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> IDE passa em um ponteiro <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (um ponteiro para um buffer de texto) e um (um ponteiro para a sessão de delineamento atual).
+ Quando esse método é chamado, o IDE passa um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> ponteiro (um ponteiro para um buffer de texto) e um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (um ponteiro para a sessão de estrutura de tópicos atual).
 
- Você pode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> chamar o método para várias regiões `rgOutlnReg` de contorno especificando essas regiões no parâmetro. O `rgOutlnReg` parâmetro é <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> uma estrutura. Esse processo permite especificar diferentes características da região oculta, como se uma determinada região é expandida ou colapsada.
+ Você pode chamar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> método para várias regiões de estrutura de tópicos especificando essas regiões no `rgOutlnReg` parâmetro. O `rgOutlnReg` parâmetro é uma <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> estrutura. Esse processo permite especificar diferentes características da região oculta, como se uma região específica é expandida ou recolhida.
 
 > [!NOTE]
-> Tenha cuidado ao esconder personagens de nova linha. O texto oculto deve se estender desde o início da primeira linha até o último caractere da última linha em uma seção, deixando visível o caractere final da nova linha.
+> Tenha cuidado ao ocultar caracteres de nova linha. O texto oculto deve se estender do início da primeira linha até o último caractere da última linha em uma seção, deixando o caractere de nova linha final visível.
 
 ## <a name="see-also"></a>Confira também
-- [Como: Fornecer suporte a texto oculto em um serviço de idioma legado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
-- [Como: Fornecer suporte de delineamento expandido em um serviço de idioma legado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Como fornecer suporte a texto oculto em um serviço de idioma herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Como fornecer suporte expandido para estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

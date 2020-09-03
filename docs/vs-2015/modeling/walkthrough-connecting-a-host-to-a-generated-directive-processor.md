@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532958"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Instruções passo a passo: conectando um host a um processador de diretriz gerado
@@ -70,7 +70,7 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
    > [!IMPORTANT]
    > Esta etapa gera o processador de diretiva e adiciona a chave para ele no registro.
 
-3. No menu **depurar** , clique em **Iniciar Depuração**.
+3. No menu **Depurar** , clique em **Iniciar Depuração**.
 
     Uma segunda instância de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta.
 

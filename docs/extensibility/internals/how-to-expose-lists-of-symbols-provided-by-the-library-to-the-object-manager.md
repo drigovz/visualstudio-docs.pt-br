@@ -1,5 +1,5 @@
 ---
-title: Expor listas de símbolos fornecidos ao gerenciador de objetos | Microsoft Docs
+title: Expor listas de símbolos fornecidos ao Gerenciador de objetos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,25 +15,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708083"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: Expor listas de símbolos fornecidos pela biblioteca ao gerenciador de objetos
-As ferramentas de navegação por símbolos, **Class View,** **Object Browser,** Call [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Browser** e Find Symbol **Results,** passam solicitações de novos dados para o gerenciador de objetos. O gerenciador de objetos encontra as bibliotecas apropriadas e solicita novas listas de símbolos. As bibliotecas respondem fornecendo dados [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] solicitados <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> ao gerenciador de objetos através da interface. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerenciador de objetos chama os métodos na <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface para obter os dados e os usa para preencher ou atualizar as visualizações das ferramentas de navegação de símbolos.
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos
+As ferramentas de navegação de símbolos, **modo de exibição de classe**, **pesquisador de objetos**, **pesquisador de chamadas** e **Localizar resultados de símbolos**, passar solicitações para novos dados para o Gerenciador de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] objetos. O Gerenciador de objetos localiza as bibliotecas apropriadas e solicita novas listas de símbolos. As bibliotecas respondem fornecendo os dados solicitados ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos por meio da <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos chama os métodos na <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface para obter os dados e usa-os para preencher ou atualizar as exibições das ferramentas de navegação de símbolos.
 
- Uma biblioteca pode receber solicitações de dados quando a ferramenta é invocada, o nó é expandido ou a exibição é atualizada. Quando uma ferramenta de navegação de símbolos é invocada pela primeira vez, o gerenciador de objetos solicita que a biblioteca forneça a lista de nível superior. Quando o usuário expande um nó de lista, a biblioteca fornece uma lista de crianças sob esse nó. Cada inquérito do gerenciador de objetos contém um índice do item de interesse. Para exibir uma nova lista, o gerenciador de objetos deve determinar quantos itens estão na lista, o tipo de itens, seus nomes, acessibilidade e outras propriedades.
+ Uma biblioteca pode receber solicitações de dados quando a ferramenta é chamada, o nó é expandido ou a exibição é atualizada. Quando uma ferramenta de navegação de símbolos é invocada pela primeira vez, o Gerenciador de objetos solicita a biblioteca para fornecer a lista de nível superior. Quando o usuário expande um nó de lista, a biblioteca fornece uma lista de filhos sob esse nó. Cada consulta do Gerenciador de objetos contém um índice do item de interesse. Para exibir uma nova lista, o Gerenciador de objetos deve determinar quantos itens estão na lista, o tipo dos itens, seus nomes, acessibilidade e outras propriedades.
 
 > [!NOTE]
-> Os exemplos de código gerenciado a seguir demonstram como fornecer <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> listas de símbolos através da implementação da interface. O gerenciador de objetos chama os métodos nesta interface e usa os dados obtidos para preencher ou atualizar as ferramentas de navegação por símbolos.
+> Os exemplos de código gerenciado a seguir demonstram como fornecer listas de símbolos por meio da implementação da <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O Gerenciador de objetos chama os métodos nesta interface e usa os dados obtidos para popular ou atualizar as ferramentas de navegação de símbolos.
 >
-> Para a implementação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> provedor de símbolo de código nativo, use a interface.
+> Para a implementação do provedor de símbolo de código nativo, use a <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.
 
-## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Para fornecer listas de símbolos para o gerenciador de objetos
+## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Para fornecer listas de símbolos para o Gerenciador de objetos
 
-1. Obtenha o número de itens na lista de símbolos implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> método. O exemplo a seguir demonstra como o gerenciador de objetos obtém as informações sobre o número de itens da lista.
+1. Obtenha o número de itens na lista de símbolos implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> método. O exemplo a seguir demonstra como o Gerenciador de objetos obtém as informações sobre o número de itens na lista.
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -55,7 +55,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
 
     ```
 
-2. Obtenha informações sobre as categorias e os atributos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> um determinado item da lista, implementando o método. As categorias de itens são <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> especificadas na enumeração. O exemplo a seguir demonstra como o gerenciador de objetos obtém atributos de itens para uma determinada categoria.
+2. Obtenha informações sobre as categorias e os atributos de um determinado item de lista implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> método. As categorias de item são especificadas na <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> enumeração. O exemplo a seguir demonstra como o Gerenciador de objetos obtém atributos de itens para uma determinada categoria.
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -150,7 +150,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
 
     ```
 
-3. Obtenha a representação de texto de um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> determinado item da lista implementando o método. O exemplo a seguir demonstra como obter um nome completo de um determinado item.
+3. Obtenha a representação de texto de um determinado item de lista implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> método. O exemplo a seguir demonstra como obter um nome completo de um determinado item.
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -168,7 +168,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
 
     ```
 
-4. Obtenha as informações do ícone para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> determinado item da lista, implementando o método. O ícone representa o tipo (classe, método e assim por diante) e acessibilidade (privada, pública e assim por diante) de um item da lista. O exemplo a seguir demonstra como obter as informações do ícone com base em um determinado atributo de item.
+4. Obtenha as informações de ícone de um determinado item de lista implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> método. O ícone representa o tipo (classe, método e assim por diante) e acessibilidade (privado, público e assim por diante) de um item de lista. O exemplo a seguir demonstra como obter as informações de ícone com base em um determinado atributo de item.
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -250,7 +250,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
 
     ```
 
-5. Obtenha as informações sobre se um determinado item <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> da lista é expansível implementando o método. O exemplo a seguir demonstra como obter as informações sobre se um determinado item pode ser expandido.
+5. Obtenha as informações sobre se um determinado item de lista é expansível implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> método. O exemplo a seguir demonstra como obter as informações sobre se um determinado item pode ser expandido.
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -277,7 +277,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
 
     ```
 
-6. Obtenha uma lista filho de símbolos de um <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> determinado item da lista, implementando o método. O exemplo a seguir demonstra como obter uma lista filho de símbolos de um determinado item para gráficos **de chamadas** ou **chamadores.**
+6. Obtenha uma lista de símbolos filho de um determinado item de lista implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> método. O exemplo a seguir demonstra como obter uma lista de símbolos filho de um determinado item para grafos de **chamada** ou de **chamadores** .
 
     ```vb
     ' Call graph list.
@@ -465,7 +465,7 @@ As ferramentas de navegação por símbolos, **Class View,** **Object Browser,**
     ```
 
 ## <a name="see-also"></a>Confira também
-- [Suporte a ferramentas de navegação por símbolos](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [Como: Registrar uma biblioteca com o gerenciador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [Como: Identificar símbolos em uma biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-- [Extensibilidade do serviço de linguagem legado](../../extensibility/internals/legacy-language-service-extensibility.md)
+- [Símbolo de suporte – ferramentas de navegação](../../extensibility/internals/supporting-symbol-browsing-tools.md)
+- [Como registrar uma biblioteca com o Gerenciador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Como identificar símbolos em uma biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [Extensibilidade do serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-extensibility.md)

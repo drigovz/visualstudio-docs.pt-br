@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633545"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
@@ -25,13 +25,13 @@ O registro em logs oferece uma maneira de monitorar o andamento de um build. O r
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Descreve os vários aspectos do login no MSBuild.
+ Descreve os vários aspectos de registro em log no MSBuild.
 
-- [Construir madeireiros](../msbuild/build-loggers.md)
+- [Agentes de build](../msbuild/build-loggers.md)
 
  Descreve as etapas necessárias para criar um agente único.
 
-- [Login em um ambiente de vários processadores](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)
 
  Descreve como o registro em logs funciona em um ambiente multiprocessador e os dois modelos de registro em log com multiprocessador.
 

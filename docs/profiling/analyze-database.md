@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290065"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analisar o desempenho do banco de dados usando a ferramenta de banco de dados
@@ -52,6 +52,6 @@ Depois de encontrar uma consulta que você deseja investigar, clique com o botã
 
 Se você selecionar um intervalo de tempo em um grafo, a tabela de consulta mostrará somente as consultas que ocorreram durante esse intervalo de tempo. Esse comportamento é especialmente útil quando você também executa a [ferramenta de uso da CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Otimizando as configurações do criador de perfil](../profiling/optimize-profiler-settings.md)

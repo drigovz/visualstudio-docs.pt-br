@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633909"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
@@ -34,7 +34,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Use a tarefa [MakeDir](../msbuild/makedir-task.md) para criar o diretório se o diretório não existir. Por exemplo: 
+2. Use a tarefa [MakeDir](../msbuild/makedir-task.md) para criar o diretório se o diretório não existir. Por exemplo:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -47,7 +47,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para remover um diretório e todos os arquivos contidos no diretório
 
-- Use a tarefa `RemoveDir` para remover o diretório. Por exemplo: 
+- Use a tarefa `RemoveDir` para remover o diretório. Por exemplo:
 
      `<RemoveDir Directories="$(builtdir)" />`
 
@@ -55,7 +55,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 
  O seguinte exemplo de projeto de código contém um novo destino, `Clean`, que usa a tarefa `RemoveDir` para excluir um diretório e todos os arquivos e diretórios que ele contém. Também no exemplo, o destino `Compile` cria um diretório separado para os itens de saída que são excluídos quando o build for removida.
 
- `Compile` é definido como o destino padrão e, portanto, é usado automaticamente a menos que você especifique um ou mais destinos diferentes. Use a opção de linha de comando **-target** para especificar um destino diferente. Por exemplo: 
+ `Compile` é definido como o destino padrão e, portanto, é usado automaticamente a menos que você especifique um ou mais destinos diferentes. Use a opção de linha de comando **-target** para especificar um destino diferente. Por exemplo:
 
  `msbuild <file name>.proj -target:Clean`
 
@@ -105,7 +105,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 
 ## <a name="see-also"></a>Confira também
 
-- [Faça tarefa de Dir](../msbuild/makedir-task.md)
-- [Remover tarefa Dir](../msbuild/removedir-task.md)
-- [Tarefa csc](../msbuild/csc-task.md)
+- [Tarefa MakeDir](../msbuild/makedir-task.md)
+- [Tarefa RemoveDir](../msbuild/removedir-task.md)
+- [tarefa Csc](../msbuild/csc-task.md)
 - [Destinos](../msbuild/msbuild-targets.md)

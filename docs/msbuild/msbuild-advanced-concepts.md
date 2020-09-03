@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289281"
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceitos avançados do MSBuild
@@ -23,16 +23,16 @@ Os documentos desta seção descrevem como usar técnicas avançadas para aprimo
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Envio em lote](../msbuild/msbuild-batching.md)|Descreve como enviar em lote destinos de build e tarefas baseadas em metadados de item.|
 |[Transformações](../msbuild/msbuild-transforms.md)|Explica como usar transformações para habilitar a análise de dependência.|
-|[Integração do Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Discute como usar arquivos de projeto do MSBuild ao compilar o código do Visual Studio IDE.|
+|[integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Discute como usar arquivos de projeto do MSBuild ao compilar o código do Visual Studio IDE.|
 |[Crie vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Descreve como compilar diversos projetos mais rapidamente em computadores com vários processadores ou processadores de vários núcleos.|
 |[Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)|Descreve como compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework.|
 |[Práticas recomendadas](../msbuild/msbuild-best-practices.md)|Recomenda as melhores práticas para escrever scripts MSBuild.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Registrando em log no MSBuild](../msbuild/logging-in-msbuild.md)

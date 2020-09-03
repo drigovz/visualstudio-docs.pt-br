@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633987"
 ---
 # <a name="getframeworksdkpath-task"></a>Tarefa GetFrameworkSdkPath
 
-Recupera o caminho para o Windows Software Development Kit (SDK).
+Recupera o caminho para o SDK (Software Development Kit) do Windows.
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
 A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkSdkPath`.
@@ -46,7 +46,7 @@ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <x
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a `GetFrameworkSdkPath` seguir usa a tarefa de armazenar `SdkPath` o caminho para o SDK do Windows na propriedade.
+O exemplo a seguir usa a `GetFrameworkSdkPath` tarefa para armazenar o caminho para o SDK do Windows na `SdkPath` propriedade.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

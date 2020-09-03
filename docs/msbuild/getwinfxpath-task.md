@@ -19,23 +19,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab8e15cef722e935dde322072f6834ba00be8bc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633961"
 ---
 # <a name="getwinfxpath-task"></a>Tarefa GetWinFXPath
 
-A <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tarefa retorna o diretório do tempo de execução atual .NET.
+A <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tarefa retorna o diretório do tempo de execução do .net atual.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
 | Parâmetro | Descrição |
 |-------------------| - |
-| `WinFXPath` | Parâmetro de saída opcional **String**.<br /><br /> Especifica o caminho real para o tempo de execução .NET. |
-| `WinFXNativePath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para o tempo de execução nativo .NET. |
-| `WinFXWowPath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para os conjuntos .NET no módulo Windows de 32 bits **no Windows** em sistemas de 64 bits. |
+| `WinFXPath` | Parâmetro de saída opcional **String**.<br /><br /> Especifica o caminho real para o tempo de execução do .NET. |
+| `WinFXNativePath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para o tempo de execução do .NET nativo. |
+| `WinFXWowPath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho para os assemblies do .NET no módulo do Windows de 32 bits no **Windows** em sistemas de 64 bits. |
 
 ## <a name="remarks"></a>Comentários
 
@@ -43,7 +43,7 @@ A <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tarefa retorna o diretório 
 
 ## <a name="example"></a>Exemplo
 
- O exemplo a seguir mostra como usar a tarefa **GetWinFXPath** para detectar o caminho nativo até o tempo de execução .NET.
+ O exemplo a seguir mostra como usar a tarefa **GetWinFXPath** para detectar o caminho nativo para o tempo de execução do .net.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -61,7 +61,7 @@ A <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> tarefa retorna o diretório 
 
 ## <a name="see-also"></a>Confira também
 
-- [Referência WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
+- [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

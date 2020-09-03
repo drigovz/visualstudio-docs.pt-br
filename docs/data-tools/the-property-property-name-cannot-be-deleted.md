@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535285"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>A propriedade \<property name> não pode ser excluída
 
-A propriedade \<property name> não pode ser excluída porque está definida como a **Propriedade discriminadora** para a herança entre \<class name> e\<class name>
+A propriedade \<property name> não pode ser excluída porque está definida como a **Propriedade discriminadora** para a herança entre \<class name> e \<class name>
 
 A propriedade selecionada está definida como a **propriedade discriminatória** para herança entre as classes mencionadas na mensagem de erro. Propriedades não podem ser excluídas estão participando na configuração de herança entre classes de dados.
 

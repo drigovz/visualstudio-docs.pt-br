@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b63f9ddf29ff74a4aa4bf089c266e12e37bb2f50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535532"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
@@ -73,7 +73,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
     - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.  
   
-4. Clique em **Próximo**.  
+4. Clique em **Avançar**.  
   
 5. Na terceira página do assistente:  
   
@@ -85,7 +85,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
     - Em **Local de implantação**, especifique o caminho para o diretório HPC server usa para imagens do estágio de implantação.  
   
-6. Clique em **Próximo**.  
+6. Clique em **Avançar**.  
   
 7. Na quarta página do assistente:  
   
@@ -99,7 +99,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
          Para analisar processos que são executados em um nó específico no cluster de HPC, selecione a opção **Perfil no nó** e, em seguida, selecione o nó da lista suspensa.  
   
-8. Clique em **Próximo**.  
+8. Clique em **Avançar**.  
   
 9. Na quinta página do assistente, você pode escolher iniciar imediatamente o criador de perfil e o processo de criação de perfil ou iniciar a criação de perfil posteriormente usando o Gerenciador de Desempenho.  
   

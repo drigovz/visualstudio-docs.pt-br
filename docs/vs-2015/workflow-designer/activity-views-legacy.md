@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851475"
 ---
 # <a name="activity-views-legacy"></a>Visualizações de atividade (legados)
@@ -29,13 +29,13 @@ Muitas das atividades fornecidas por [!INCLUDE[wf](../includes/wf-md.md)], que f
 
 |Opção de menu/guia|Descrição|
 |----------------------|-----------------|
-|**View [tipo de atividade]**|Selecione este menu catalogue ou a opção para exibir a representação gráfica padrão de atividade selecionada.|
-|**Exibir manipulador de cancelamento**|Selecione esta exibição de opção de menu ou guia para exibir o [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associado à atividade selecionada.|
-|**Exibir manipulador de falhas**|Selecione esta exibição de opção de menu ou guia para exibir o [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associado à atividade selecionada.|
-|**Exibir manipulador de compensação**|Selecione esta exibição de opção de menu ou guia para exibir o [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associado à [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)selecionada.|
-|**Exibir manipulador de eventos**|Selecione esta exibição de opção de menu ou guia para exibir o [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associado ao [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)selecionado.|
+|**Exibição [tipo de atividade]**|Selecione este menu catalogue ou a opção para exibir a representação gráfica padrão de atividade selecionada.|
+|**Exibir Manipulador de Cancelamento**|Selecione esta exibição de opção de menu ou guia para exibir o [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associado à atividade selecionada.|
+|**Manipulador de falha de exibição**|Selecione esta exibição de opção de menu ou guia para exibir o [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associado à atividade selecionada.|
+|**Exibir Manipulador de Compensação**|Selecione esta exibição de opção de menu ou guia para exibir o [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associado à [TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)selecionada.|
+|**Exibir o manipulador de eventos**|Selecione esta exibição de opção de menu ou guia para exibir o [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associado ao [EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)selecionado.|
 
  Para obter informações sobre modos de exibição semelhantes, consulte [exibições de fluxo de trabalho Sequencial (Herdado)](../workflow-designer/sequential-workflow-views-legacy.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Exibições de fluxo de trabalho sequenciais de atividades de fluxo de](../workflow-designer/sequential-workflow-views-legacy.md) [trabalho herdadas](../workflow-designer/legacy-workflow-activities.md)

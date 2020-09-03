@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536325"
 ---
 # <a name="image-service-and-catalog"></a>Serviço de imagem e catálogo
@@ -164,7 +164,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 
 Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:
 
-|**Elemento**|**Atributos (todos obrigatórios)**|**Definição**|
+|**Element**|**Atributos (todos obrigatórios)**|**Definição**|
 |-|-|-|
 |\<Size>|Valor|A fonte será usada para imagens do tamanho determinado (em unidades do dispositivo). A imagem será quadrada.|
 |\<SizeRange>|MinSize, MaxSize|A fonte será usada para imagens de MinSize para MaxSize (em unidades de dispositivo) inclusivamente. A imagem será quadrada.|
@@ -179,7 +179,7 @@ Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionai
 
 |**Atributo**|**Definição**|
 |-|-|
-|Type|Necessária O tipo do recurso nativo, XAML ou PNG|
+|Tipo|Necessária O tipo do recurso nativo, XAML ou PNG|
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|
 
  **ImageList**
@@ -506,11 +506,11 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
        this.BitmapIndex = <Value>;
        ```
 
-   2. Consulte a etapa #1 da "Como fazer usar moniker de imagem em uma nova janela de ferramenta?" seção acima.
+   2. Consulte a etapa #1 da "Como fazer usar moniker de imagem em uma nova janela de ferramenta?" acima.
 
 4. O comando para abrir a janela de ferramentas.
 
-   - Consulte a etapa #2 da "Como fazer usar moniker de imagem em uma nova janela de ferramenta?" seção acima.
+   - Consulte a etapa #2 da "Como fazer usar moniker de imagem em uma nova janela de ferramenta?" acima.
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Como fazer usar monikers de imagem em um arquivo. vsct?
  Atualize seu arquivo *. vsct* conforme indicado pelas linhas comentadas abaixo:
@@ -640,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Substitua o GUID de cada **ContainedImage**por $ (ImageCatalogGuid), substitua cada ID de **ContainedImage**por $ ( \<moniker> ) e adicione o atributo external = "true" a cada **ContainedImage**
 
-       - \<moniker>deve ser substituído pelo **KnownMoniker** que corresponde à imagem, mas com o "KnownMonikers". removido do nome.
+       - \<moniker> deve ser substituído pelo **KnownMoniker** que corresponde à imagem, mas com o "KnownMonikers". removido do nome.
 
    - Adicione <importar manifesto = "$ (ManifestFolder) \\<caminho dir de instalação relativa a * \> \Microsoft.VisualStudio.ImageCatalog.imagemanifest"/ \*> na parte superior da \<Symbols> seção.
 
@@ -819,7 +819,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - Estou atualizando meu provedor de lista de conclusão. Que **KnownMonikers** corresponde aos valores antigos de **StandardGlyphGroup** e **StandardGlyph** ?
 
-    |Nome|Nome|Nome|
+    |Name|Name|Name|
     |-|-|-|
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|

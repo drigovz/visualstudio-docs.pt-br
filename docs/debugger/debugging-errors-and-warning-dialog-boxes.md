@@ -22,29 +22,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916446"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md)
+ [Caixa de diálogo Falha de Asserção](../debugger/assertion-failed-dialog-box.md)
 
- [Caixa de diálogo Não É Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)
+ [Caixa de diálogo Não é Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)
 
  [O depurador não pode exibir o código-fonte ou a desmontagem](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Os serviços do depurador estão ficando sem memória](../debugger/error-debugger-services-no-memory.md)
+ [Memória insuficiente para os serviços do depurador](../debugger/error-debugger-services-no-memory.md)
 
  [Caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md)
 
  [Caixa de diálogo Falha ao Aplicar Alterações de Código](../debugger/edit-and-continue-dialog-box-cpp.md)
 
- [Caixa de diálogo do Depurador do Microsoft Visual Studio (Exceção Lançada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+ [Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
 
  [Caixa de diálogo Não Há Nenhum Código-Fonte Disponível para a Localização Atual](../debugger/no-source-available.md)
 
@@ -58,7 +58,7 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Erro: a depuração não é possível porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
-## <a name="related-sections"></a>Seções Relacionadas
+## <a name="related-sections"></a>Seções relacionadas
  [Depurando script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
@@ -67,6 +67,6 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Solução de problemas de instalação de depuração de SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
+ [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 
  [Segurança do depurador](../debugger/debugger-security.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536013"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
@@ -62,7 +62,7 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
     1. Crie um arquivo de texto e nomeie-o \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>é geralmente o mesmo que o nome do projeto.
+         \<*assemblyName*> é geralmente o mesmo que o nome do projeto.
 
     2. Selecione-o no Gerenciador de Soluções e defina suas propriedades da seguinte maneira:
 
@@ -182,7 +182,7 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
    Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:
 
-|Nome|Type|Dados|
+|Nome|Tipo|Dados|
 |-|-|-|
 |(Padrão)|REG_SZ|(valor não definido)|
 |Classe|REG_SZ|**\<Namespace Name>.\<Class Name>**|
@@ -190,7 +190,7 @@ Há várias maneiras de criar um arquivo .vsix. O procedimento a seguir descreve
 
  Se o assembly estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:
 
-|Nome|Type|Dados|
+|Nome|Tipo|Dados|
 |-|-|-|
 |(Padrão)|REG_SZ|(valor não definido)|
 |Classe|REG_SZ|\<**Your Fully Qualified Class Name**>|
