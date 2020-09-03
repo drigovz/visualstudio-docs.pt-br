@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c81f59f2dadf535af4e9a76949a29fd1355c33f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657753"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
@@ -30,7 +30,7 @@ Abre o arquivo especificado em uma instância existente do [!INCLUDE[vsprvs](../
 Devenv /edit [file1[ file2]]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `file1` Opcional. O arquivo a ser aberto em uma instância existente do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Se nenhuma instância do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] existir, uma nova instância será criada com um layout de janela simplificado, e o `file1` será aberto na nova instância.
 
  `file2` Opcional. Um ou mais arquivos adicionais a serem abertos na instância existente do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
@@ -47,5 +47,5 @@ Devenv /edit [file1[ file2]]
 devenv /edit MyFile.cs
 ```
 
-## <a name="see-also"></a>Veja também
- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando do desenvolvedor](../../ide/reference/devenv-command-line-switches.md)

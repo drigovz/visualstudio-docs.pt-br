@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e7dc0a0a640a9d3921801a9077b32ade5921ff7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463116"
 ---
 # <a name="idiasymbolget_language"></a>IDiaSymbol::get_language
@@ -41,6 +41,6 @@ fora Retorna um valor da enumeração de [enumeração CV_CFL_LANG](../../debugg
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumeração CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)

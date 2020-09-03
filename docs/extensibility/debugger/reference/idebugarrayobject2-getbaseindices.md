@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject2::GetBaseIndices | Microsoft Docs
+title: 'IDebugArrayObject2:: GetBaseIndices | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736136"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Recupera os índices base (limites inferiores) para cada índice dado o número de dimensões na matriz.
+Recupera os índices de base (limites inferiores) para cada índice, considerando o número de dimensões na matriz.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,18 +40,18 @@ int GetBaseIndices (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwRank`\
-[em] O número de dimensões (classificação) da matriz.
+no O número de dimensões (classificação) da matriz.
 
 `dwIndices`\
-[fora] Os índices base (limites inferiores) para a matriz.
+fora Os índices de base (limites inferiores) para a matriz.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Como exemplo, essa função retornaria '5' para a matriz criada pelo seguinte código C#:
+ Por exemplo, essa função retornaria ' 5 ' para a matriz criada pelo seguinte código C#:
 
 ```
 int[] lengths = { 12 };

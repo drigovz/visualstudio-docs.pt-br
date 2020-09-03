@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387025"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
@@ -69,8 +69,8 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 | Recurso | Teclas | Descrição |
 | --- | --- | --- |
 | **Continuar** | **F5** | Executa o código até chegar ao próximo ponto de interrupção. |
-| **Depuração Completa** | **F11** | Executa a próxima instrução e para. Se a próxima instrução for uma chamada a uma função, o depurador parará na primeira linha da função que está sendo chamada. |
-| **Depuração Parcial** | **F10** | Executa a próxima instrução, incluindo fazer uma chamada a uma função (executando todo o código) e aplicar qualquer valor retornado. A depuração parcial permite ignorar facilmente as funções que não precisam ser depuradas. |
+| **Intervir** | **F11** | Executa a próxima instrução e para. Se a próxima instrução for uma chamada a uma função, o depurador parará na primeira linha da função que está sendo chamada. |
+| **Contornar** | **F10** | Executa a próxima instrução, incluindo fazer uma chamada a uma função (executando todo o código) e aplicar qualquer valor retornado. A depuração parcial permite ignorar facilmente as funções que não precisam ser depuradas. |
 | **Sair** | **Shift** + **F11** | Executa o código até o final da função atual e, em seguida, executa em etapas até a instrução de chamada.  Esse comando é útil quando não é necessário depurar o restante da função atual. |
 | **Executar até o cursor** | **Ctrl** + **F10** | Executa o código até a localização do cursor no editor. Esse comando permite ignorar facilmente um segmento de código que não precisa ser depurado. |
 | **Definir Próxima Instrução** | **Ctrl** + **Shift** + **F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
@@ -243,7 +243,7 @@ As seguintes etapas habilitam a depuração na sessão atual do Visual Studio:
 
 1. Abra uma janela de comando no Visual Studio usando o comando de menu **Exibir**  >  **outra**  >  **janela de comando** do Windows.
 
-1. Insira o seguinte comando:
+1. Digite o seguinte comando:
 
     ```ps
     DebugAdapterHost.Logging /On /OutputWindow

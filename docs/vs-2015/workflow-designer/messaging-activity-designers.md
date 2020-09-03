@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6fb06bea4cebf2558990d23f7ece5b4f8db5b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658928"
 ---
 # <a name="messaging-activity-designers"></a>Designer de atividade de mensagem
@@ -25,7 +25,7 @@ Os designers de atividade de mensagem são usados para criar e configurar as ati
 |----------------------|-----------------|
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Cria e configura uma atividade de <xref:System.ServiceModel.Activities.CorrelationScope> que fornece gerenciamento implícito de atividades filhos de mensagem com um objeto de <xref:System.ServiceModel.Activities.CorrelationHandle> .|
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Cria e configura uma atividade de <xref:System.ServiceModel.Activities.InitializeCorrelation> que é usada para inicializar correlação sem enviar e receber uma mensagem.|
-|[Receber](../workflow-designer/receive-activity-designer.md)|Cria e configura uma atividade de <xref:System.ServiceModel.Activities.Receive> que receberá uma mensagem de um serviço.|
+|[Recebe](../workflow-designer/receive-activity-designer.md)|Cria e configura uma atividade de <xref:System.ServiceModel.Activities.Receive> que receberá uma mensagem de um serviço.|
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Cria um par de pré-compilação configurado <xref:System.ServiceModel.Activities.Send> e atividades de <xref:System.ServiceModel.Activities.ReceiveReply> dentro de uma atividade de <xref:System.Activities.Statements.Sequence> .|
 |[Enviar](../workflow-designer/send-activity-designer.md)|Cria e configura uma atividade de <xref:System.ServiceModel.Activities.Send> que enviar uma mensagem a um serviço.|
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Cria um par de pré-compilação configurado <xref:System.ServiceModel.Activities.Receive> e atividades de <xref:System.ServiceModel.Activities.SendReply> dentro de uma atividade de <xref:System.Activities.Statements.Sequence> .|
@@ -55,9 +55,9 @@ Os designers de atividade de mensagem são usados para criar e configurar as ati
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658069"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Medindo complexidade e facilidade de manutenção do código gerenciado
@@ -31,9 +31,9 @@ ms.locfileid: "72658069"
 
 A maior complexidade dos aplicativos de software modernos também aumenta a dificuldade de tornar o código confiável e passível de manutenção. Nos últimos anos, muitas medidas de software, conhecidas como métricas de código, foram desenvolvidas e podem ajudar os desenvolvedores a entender onde seu código precisa retrabalhar ou aumentar o teste.
 
- Os desenvolvedores podem usar [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] para gerar dados de métricas de código que medem a complexidade e a manutenção de seu código gerenciado. Os dados de métricas de código podem ser gerados para uma solução inteira ou um único projeto.
+ Os desenvolvedores podem usar [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] o para gerar dados de métricas de código que medem a complexidade e a manutenção de seu código gerenciado. Os dados de métricas de código podem ser gerados para uma solução inteira ou um único projeto.
 
- Esta seção descreve como gerar e usar métricas de código no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Esta seção descreve como gerar e usar métricas de código no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>Nesta seção
  [Valores de métricas de código](../code-quality/code-metrics-values.md)
@@ -48,5 +48,5 @@ A maior complexidade dos aplicativos de software modernos também aumenta a difi
 
  [Como: criar um item de trabalho com base em um resultado](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Solucionando problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md) [executando tarefas comuns de desenvolvimento](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

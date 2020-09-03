@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285940"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
@@ -33,7 +33,7 @@ Você pode usar as ferramentas de criação de perfil sem o depurador com o Wind
 
 [Blog Visual C++: criação de perfil de memória no Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

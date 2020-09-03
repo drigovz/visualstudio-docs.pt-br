@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a27bf67770eef770fddef0301a804e6c45579539
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387116"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: avaliar a função &#39;função&#39; atingiu o tempo limite e precisava ser anulado de forma não segura
@@ -34,9 +34,9 @@ Há três soluções possíveis para esse problema.
 A mensagem de erro informará o nome da função que o depurador tentou chamar. Se você puder modificar essa função, poderá impedir que o depurador chame o método getter ou ToString de propriedade. Tente uma das seguintes opções:
  
 * Altere o método para algum outro tipo de código além de um método getter ou ToString de propriedade e o problema irá desaparecer.
-    -ou-
+    - ou -
 * (Para ToString) Defina um atributo DebuggerDisplay no tipo e você pode fazer com que o depurador avalie algo diferente de ToString.
-    -ou-
+    - ou -
 * (Para um getter de propriedade) Coloque o `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo na propriedade. Isso pode ser útil se você tiver um método que precisa permanecer como uma propriedade para motivos de compatibilidade de API, mas deve ser realmente um método.
  
 ### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>#2 da solução: faça com que o código de destino peça ao depurador para anular a avaliação

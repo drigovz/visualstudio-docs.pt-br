@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a6e2f6e8011b001c88743871a137ebc0b8cd7c26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204792"
 ---
 # <a name="threadstate"></a>THREADSTATE
@@ -24,7 +24,7 @@ ms.locfileid: "68204792"
 
 Especifica o estado do thread.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_THREADSTATE {   
@@ -52,10 +52,10 @@ public enum enum_THREADSTATE { 
  Indica que o thread está em execução.  
   
  THREADSTATE_STOPPED  
- Indica que o thread é interrompido devido a um ponto de interrupção.  
+ Indica que o thread foi interrompido devido a um ponto de interrupção.  
   
  THREADSTATE_FRESH  
- Indica que o thread foi criado, mas ainda não está executando o código.  
+ Indica que o thread foi criado, mas que ainda não está executando o código.  
   
  THREADSTATE_DEAD  
  Indica que o thread está inativo.  
@@ -64,15 +64,15 @@ public enum enum_THREADSTATE { 
  Indica que o thread está congelado (nenhuma execução pode ser executada).  
   
 ## <a name="remarks"></a>Comentários  
- Usado para o `dwThreadState` campo do [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura.  
+ Usado para o `dwThreadState` campo da estrutura [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

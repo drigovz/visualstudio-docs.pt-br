@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286174"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
@@ -94,7 +94,7 @@ MSB4803: The task "ResolveComReference" is not supported on the .NET Core versio
 
 Essa tarefa não tem suporte na versão do .NET Core do MSBuild, que é usada quando você executa o `dotnet build` comando na linha de comando. Tente compilar o projeto invocando [MSBuild.exe](msbuild-command-line-reference.md) da prompt de comando do desenvolvedor do Visual Studio, já que isso usa a versão .NET Framework do MSBuild.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
-- [Referência de tarefa](../msbuild/msbuild-task-reference.md)
+- [Referência de tarefas](../msbuild/msbuild-task-reference.md)

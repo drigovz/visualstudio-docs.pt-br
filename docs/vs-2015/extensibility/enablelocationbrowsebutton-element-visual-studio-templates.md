@@ -13,22 +13,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204590"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Especifica se o **navegue** botão está disponível na **novo projeto** caixa de diálogo, para que os usuários podem facilmente modificar o diretório padrão em que um novo projeto é salvo.  
+Especifica se o botão **procurar** está disponível na caixa de diálogo **novo projeto** , para que os usuários possam modificar facilmente o diretório padrão em que um novo projeto é salvo.  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<EnableLocationBrowseButton>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>  
@@ -38,29 +38,29 @@ Especifica se o **navegue** botão está disponível na **novo projeto** caixa d
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="child-elements"></a>Elementos filho  
- nenhuma.  
+ Nenhum.  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
 |Elemento|Descrição|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|  
   
 ## <a name="text-value"></a>Valor de texto  
  Um valor de texto é obrigatório.  
   
- O texto deve ser `true` ou `false`, que indica se deve ou não exibir o **procurar** botão o **novo projeto** caixa de diálogo.  
+ O texto deve ser `true` ou `false` , indicando se deseja ou não exibir o botão **procurar** na caixa de diálogo **novo projeto** .  
   
 ## <a name="remarks"></a>Comentários  
- `EnableLocationBrowseButton` é um elemento opcional. O valor padrão é `true`, que exibe a **navegue** botão o **novo projeto** caixa de diálogo.  
+ `EnableLocationBrowseButton` é um elemento opcional. O valor padrão é `true` , que exibe o botão **procurar** na caixa de diálogo **novo projeto** .  
   
- No **novo projeto** caixa de diálogo, o **local** caixa de texto Especifica o diretório em que um novo projeto é salvo. O **navegue** botão Ajuda você a modificar esse diretório, exibindo o **local do projeto** caixa de diálogo que permite que você navegue facilmente para um diretório diferente que está disponível no seu computador, e em seguida, escolha-o como o diretório onde o novo projeto é salvo.  
+ Na caixa de diálogo **novo projeto** , a caixa de texto **local** especifica o diretório em que um novo projeto é salvo. O botão **procurar** ajuda a modificar esse diretório exibindo a caixa de diálogo **local do projeto** , que permite que você navegue facilmente para um diretório diferente que está disponível no computador e, em seguida, escolha-o como o diretório no qual o novo projeto é salvo.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
+ O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../includes/csprcs-md.md)] aplicativo do Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -87,6 +87,6 @@ Especifica se o **navegue** botão está disponível na **novo projeto** caixa d
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

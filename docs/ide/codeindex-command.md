@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591158"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
@@ -36,9 +36,9 @@ Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segu
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
 
-|**Argumento**|**Descrição**|
+|**Argument**|**Descrição**|
 |------------------| - |
 |`CollectionName`|Especifica o nome da coleção de projetos. Se o nome tiver espaços, coloque o nome entre aspas, por exemplo, "Site do Fabrikam".|
 |`CollectionId`|Especifica o número de identificação da coleção de projetos.|
@@ -54,7 +54,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|Exclua o índice de código e remota todos os dados indexados. Não requererá confirmação se você usar a opção **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ exibir &#124; <`SizeInGBs`> &#124; desabilitar ]|Controle quantos dados temporários que o CodeLens cria ao processar conjuntos de alterações. O limite padrão é 2 GB.<br /><br /> -   **exibir**: mostrar o limite do tamanho atual.<br />-   `SizeInGBs`: alterar o limite do tamanho.<br />-   **desabilitar**: remover o limite do tamanho.<br /><br /> Esse limite é verificado antes de CodeLens processa um novo conjunto de alterações. Se os dados temporários excederem esse limite, o CodeLens pausará o processamento de conjuntos de alterações passados, não novos. CodeLens reiniciará o processamento depois que os dados são limpos e ficar abaixo desse limite. Limpeza executa automaticamente uma vez por dia. Isso significa que os dados temporários podem exceder esse limite até que a limpeza começa a ser executado.|
 |**/indexHistoryPeriod**:[ exibir &#124; tudo &#124; <`NumberOfMonths`> ]|Controle por quanto tempo indexar o histórico de alterações. Isso afeta a quantidade de histórico que o CodeLens mostra a você. O limite padrão é 12 meses. Isso significa que o CodeLens mostra seu histórico de alterações apenas dos últimos 12 meses.<br /><br /> -   **exibir**: mostrar o número atual de meses.<br />-   **tudo**: indexar todo o histórico de alterações.<br />-   `NumberOfMonths`: Altere o número de meses usado para indexar o histórico de alterações.|
-|**/collectionName:**`CollectionName`|Especifica o nome da coleção de projetos na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionId**.|
+|**/CollectionName:**`CollectionName`|Especifica o nome da coleção de projetos na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionId**.|
 |**/collectionId:**`CollectionId`|Especifica o número de identificação da coleção de projetos na qual executar o comando **CodeIndex**. Obrigatório se você não usar **/CollectionName**.|
 
 ## <a name="examples"></a>Exemplos

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657812"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Trabalhar com conjuntos de dados em aplicativos de n camadas
@@ -65,4 +65,4 @@ Os aplicativos de dados de N camadas * são aplicativos centrados em dados que s
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-- [Aplicativos de N camadas e remotos com o LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [Aplicativos de n camadas e remoto com LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

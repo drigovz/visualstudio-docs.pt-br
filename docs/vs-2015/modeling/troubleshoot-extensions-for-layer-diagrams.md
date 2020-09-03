@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658469"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensões para diagramas de camada
@@ -24,28 +24,28 @@ ms.locfileid: "72658469"
 
 Este tópico aborda alguns problemas que você pode encontrar ao criar extensões de modelo de camada.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quando pressiono F5 para depurar minha extensão, meus comandos, manipuladores de gesto, extensões de validação ou propriedades personalizadas não aparecem em diagramas de camada na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>Quando pressiono F5 para depurar minha extensão, meus comandos, manipuladores de gesto, extensões de validação ou propriedades personalizadas não aparecem em diagramas de camada na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
 1. Abra sua solução de extensão na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e, no menu **Compilar** , clique em **Recompilar solução**.
 
-2. Pressione **F5** ou **Ctrl + F5** para iniciar a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Abra um diagrama de camada e teste sua extensão.
+2. Pressione **F5** ou **Ctrl + F5** para iniciar a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Abra um diagrama de camada e teste sua extensão.
 
    Continue com o próximo procedimento, se necessário.
 
 #### <a name="an-old-version-of-my-extension-runs"></a>Uma versão antiga da minha extensão é executada.
 
-1. Verifique se nenhuma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] está em execução.
+1. Certifique-se de que nenhuma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] esteja em execução.
 
 2. Exclua a seguinte pasta:%LocalAppData%\Microsoft\VisualStudio \\ [Version] \ComponentModelCache
 
    > [!NOTE]
-   > % LocalAppData% normalmente é *driveName*: \Users \\*username*\AppData\Local.
+   > % LocalAppData% normalmente é *driveName*: \Users \\ *username*\AppData\Local.
 
    Continue com o próximo procedimento, se necessário.
 
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Uma versão antiga dos meus resultados de validação é exibida ou meu método de validação não é chamado.
 
-1. Na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no menu **Compilar** , clique em **limpar solução**. Isso limpa os resultados em cache da análise de validação anterior.
+1. Na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , no menu **Compilar** , clique em **limpar solução**. Isso limpa os resultados em cache da análise de validação anterior.
 
 2. Verifique se as camadas em seu modelo estão associadas a elementos de código e se há pelo menos um link de dependência no modelo. A validação não será invocada se não houver nada a ser validado.
 
@@ -53,5 +53,5 @@ Este tópico aborda alguns problemas que você pode encontrar ao criar extensõe
 
 4. Em **Source. Extension. vsixmanifest** em seu projeto de validação de camada, certifique-se de ter adicionado um item de **componente do MEF** e um item de **tipo de extensão personalizada** sob **conteúdo**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Estender diagramas de camada](../modeling/extend-layer-diagrams.md)

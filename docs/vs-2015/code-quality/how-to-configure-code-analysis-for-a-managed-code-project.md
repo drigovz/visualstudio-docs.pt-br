@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1ac04a3d8834e3fc24f148fc36327d101e43720a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658854"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como configurar a análise de código para um projeto de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Em [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode escolher em uma lista de conjuntos de *regras* de análise de código para aplicar a um projeto de código gerenciado. O conjunto de regras padrão é o mínimo de regras recomendadas da Microsoft. Você pode aplicar outro conjunto de regras a um projeto ou a todos os projetos em uma solução.
+No [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] , [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)] , você pode escolher em uma lista de conjuntos de *regras* de análise de código para aplicar a um projeto de código gerenciado. O conjunto de regras padrão é o mínimo de regras recomendadas da Microsoft. Você pode aplicar outro conjunto de regras a um projeto ou a todos os projetos em uma solução.
 
 > [!NOTE]
 > Para obter informações sobre como configurar um conjunto de regras para aplicativos Web ASP.NET, consulte [como: configurar a análise de código para um aplicativo web ASP.net](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
@@ -37,7 +37,7 @@ Em [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
 
 3. Nas listas de **configuração** e **plataforma** , clique na configuração de compilação e na plataforma de destino.
 
-4. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, marque a caixa de seleção **Habilitar análise de código na compilação (define constante de CODE_ANALYSIS)** . Você também pode executar a análise de código manualmente abrindo o menu **analisar** e clicando em **executar análise de código no** *ProjectName*.
+4. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, marque a caixa de seleção **Habilitar análise de código na compilação (define CODE_ANALYSIS constante)** . Você também pode executar a análise de código manualmente abrindo o menu **analisar** e clicando em **executar análise de código no** *ProjectName*.
 
 5. Por padrão, a análise de código não relata avisos do código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a caixa de seleção **suprimir resultados do código gerado** .
 
@@ -48,11 +48,11 @@ Em [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
 
     - Clique no conjunto de regras que você deseja usar.
 
-    - Clique em **\<Browse... >** especificar um conjunto de regras personalizadas existente que não esteja na lista.
+    - Clique **\<Browse...>** para especificar um conjunto de regras personalizadas existente que não esteja na lista.
 
     - Defina um conjunto de regras personalizadas.
 
          Para obter mais informações, consulte [criando conjuntos de regras personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md).
 
-## <a name="see-also"></a>Consulte também
- [Passo a passo: configurando e usando um conjunto de regras personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
+## <a name="see-also"></a>Consulte Também
+ [Instruções passo a passo: configurando e usando um conjunto de regras personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

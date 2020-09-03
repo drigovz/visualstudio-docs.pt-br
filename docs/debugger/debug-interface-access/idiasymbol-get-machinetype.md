@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29bdfbab41c5382661e022d38a190d3bd19c38c3
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462913"
 ---
 # <a name="idiasymbolget_machinetype"></a>IDiaSymbol::get_machineType
@@ -41,6 +41,6 @@ fora Retorna um valor das [constantes IMAGE_FILE_MACHINE_](/windows/desktop/SysI
 > [!NOTE]
 > Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IMAGE_FILE_MACHINE_ constantes](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

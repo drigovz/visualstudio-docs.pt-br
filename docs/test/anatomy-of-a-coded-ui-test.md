@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591197"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia de um teste de IU codificado
@@ -29,11 +29,11 @@ Quando você cria um teste de IU codificado, o **Construtor de Teste de IU Codif
 |Arquivo|Conteúdo|Editável?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Seção Declarações](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parcial, gerada automaticamente)<br /><br /> [Métodos](#UIMapMethods)<br /><br /> [Propriedades](#UIMapProperties)|Não|
-|[Uimap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parcial)|Sim|
+|[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parcial)|Sim|
 |[CodedUITest1.cs](#CodedUITestCS)|[Classe CodedUITest1](#CodedUITestCS)<br /><br /> [Métodos](#CodedUITestMethods)<br /><br /> [Propriedades](#CodedUITestProperties)|Sim|
-|[UIMap.uitest](#UIMapuitest)|O mapa XML da interface do usuário para o teste.|Não|
+|[UIMap. UITest](#UIMapuitest)|O mapa XML da interface do usuário para o teste.|Não|
 
-### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a>UIMap.Designer.cs
+### <a name="uimapdesignercs"></a><a name="UIMapDesignerFile"></a> UIMap.Designer.cs
 Esse arquivo contém o código que é criado automaticamente com o **Construtor de Teste de IU Codificado** quando um teste é criado. Esse arquivo é recriado cada vez que um teste for alterado para que ele não seja um arquivo no qual você pode adicionar ou modificar o código.
 
 #### <a name="declarations-section"></a>Seção Declarações
@@ -191,7 +191,7 @@ Por padrão, esse arquivo contém uma classe `UIMap` parcial que não tem métod
 
 Todas as partes da [UIMap](/previous-versions/dd580454(v=vs.140)) podem usar os métodos e as propriedades de qualquer outra parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
-### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a>CodedUITest1.cs
+### <a name="codeduitest1cs"></a><a name="CodedUITestCS"></a> CodedUITest1.cs
 Esse arquivo é gerado pelo **Construtor de Teste de IU Codificado**, mas não será recriado sempre que o teste for modificado, de modo que você pode modificar o código nesse arquivo. O nome do arquivo é gerado do nome que você especificou para o teste quando você o criou.
 
 #### <a name="codeduitest1-class"></a>Classe CodedUITest1

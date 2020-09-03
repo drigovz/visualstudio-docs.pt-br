@@ -12,30 +12,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73003e00fef5c37db4a702e7a4a1121600673844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153696"
 ---
 # <a name="ports"></a>Portas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Em termos de arquitetura do depurador, uma **porta**:  
+Em termos da arquitetura do depurador, uma **porta**:  
   
-- Um contêiner para um conjunto de processos em execução em um servidor. Por exemplo, uma porta pode representar uma conexão para um dispositivo baseado em Windows CE por um cabo serial ou para um computador em rede não-DCOM. Uma porta especial, chamada de porta local, contém todos os processos em execução no computador local.  
+- É um contêiner para um conjunto de processos em execução em um servidor. Por exemplo, uma porta pode representar uma conexão com um dispositivo baseado em Windows CE por um cabo serial ou um computador não DCOM em rede. Uma porta especial, chamada de porta local, contém todos os processos em execução no computador local.  
   
-- Pode identificar em si por nome ou identificador.  
+- Pode se identificar por nome ou identificador.  
   
 - Pode enumerar todos os processos em execução na porta e iniciar e encerrar esses processos.  
   
-- É representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, que é criado, passando um [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argumento [adicionar porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+- É representado por uma interface [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , que é criada passando um argumento [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) para [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
-  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Fornece uma porta padrão que lida com processos de todos os baseados em Windows, nativos e gerenciados. Uma porta personalizada deve ser implementada para conexões com dispositivos externos que não são baseados em Windows. Para fornecer essas portas personalizadas, um fornecedor de porta personalizado também precisa ser implementado.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece uma porta padrão que manipula todos os processos baseados no Windows, nativos e gerenciados. Uma porta personalizada deve ser implementada para conexões com dispositivos externos que não são baseados no Windows. Para fornecer essas portas personalizadas, um fornecedor de porta personalizado também precisa ser implementado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Servidores](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [Processos](../../extensibility/debugger/processes.md)   
+ [Processar](../../extensibility/debugger/processes.md)   
  [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
  [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   

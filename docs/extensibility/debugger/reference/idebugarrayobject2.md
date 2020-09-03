@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a8a6580d0cbdead7866bbc6dd106a2aa0ea56f76
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736229"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Representa um objeto de matriz gerenciado e permite que um avaliador de expressão (EE) determine o índice base (limites inferiores) para a matriz.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject2 : IDebugArrayObject
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Isso é implementado pelo motor de depuração gerenciado (DE).
+ Isso é implementado pelo mecanismo DE depuração gerenciado (DE).
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na interface [IDebugArrayObject,](../../../extensibility/debugger/reference/idebugarrayobject.md) esta interface implementa os seguintes métodos:
+ Além dos métodos na interface [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) , essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Recupera os índices base (limites inferiores) para cada índice dado o número de dimensões na matriz.|
+|[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|Recupera os índices de base (limites inferiores) para cada índice, considerando o número de dimensões na matriz.|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|Determina se a matriz tem índices base (limites inferiores) definidos.|
 
 ## <a name="remarks"></a>Comentários
  Um avaliador de expressão usa essa interface para representar matrizes gerenciadas em uma árvore de análise.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Ee.h
+ Cabeçalho: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

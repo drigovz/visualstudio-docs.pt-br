@@ -12,31 +12,31 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3abd5b17d34c257de1f228a79d488bb7447f993
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658512"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>O arquivo DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DSL de uma solução de [!INCLUDE[dsl](../includes/dsl-md.md)], que define uma *linguagem específica de domínio*. O arquivo DslDefinition. DSL descreve as classes e relações de uma linguagem específica de domínio, junto com o diagrama, as formas, os conectores, o formato de serialização e a **caixa de ferramentas** da linguagem específica do domínio e suas ferramentas de edição. Em uma solução de linguagem específica do domínio, o código que define essas ferramentas é gerado de acordo com as informações no arquivo DslDefinition.dsl.
+Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto DSL de uma [!INCLUDE[dsl](../includes/dsl-md.md)] solução, que define uma *linguagem específica de domínio*. O arquivo DslDefinition. DSL descreve as classes e relações de uma linguagem específica de domínio, junto com o diagrama, as formas, os conectores, o formato de serialização e a **caixa de ferramentas** da linguagem específica do domínio e suas ferramentas de edição. Em uma solução de linguagem específica do domínio, o código que define essas ferramentas é gerado de acordo com as informações no arquivo DslDefinition.dsl.
 
  Geralmente, você usa o *Designer de linguagem específica de domínio* para editar o arquivo DslDefinition. DSL. No entanto, seu formato bruto é XML e você pode abrir um arquivo DslDefinition.dsl em um editor XML. Você pode achá-lo útil para entender quais informações o arquivo contém e como elas são organizadas para fins de depuração e de extensão.
 
  Os exemplos neste tópico são obtidos a partir do modelo de solução Diagrama de Componente. Para ver um exemplo, crie uma solução de linguagem específica do domínio baseada no modelo de solução Modelos de Componente. Depois de criar a solução, o arquivo DslDefinition.dsl aparece no Designer de Linguagem Específica do Domínio. Feche o arquivo, clique com o botão direito do mouse no **Gerenciador de soluções**, aponte para **abrir com**, clique em **Editor de XML**e em **OK**.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Seções do Arquivo DslDefinition.dsl
- O elemento raiz é \<Dsl >, e seus atributos identificam o nome da linguagem específica do domínio, o namespace e os números de versão principal e secundária para controle de versão. O esquema `DslDefinitionModel` define o conteúdo e a estrutura de um arquivo DslDefinition.dsl válido.
+ O elemento raiz é \<Dsl> , e seus atributos identificam o nome da linguagem específica do domínio, o namespace e os números de versão principal e secundária para controle de versão. O esquema `DslDefinitionModel` define o conteúdo e a estrutura de um arquivo DslDefinition.dsl válido.
 
- Os elementos filho do elemento raiz do \<Dsl > são os seguintes:
+ Os elementos filho do \<Dsl> elemento raiz são os seguintes:
 
  Classes esta seção define cada classe de domínio que gera uma classe no código gerado.
 
  Relações esta seção define cada relação no modelo. A origem e o destino representam os dois lados de uma relação.
 
- Tipos esta seção define cada tipo e seu namespace. As propriedades do domínio possuem dois tipos. `DomainEnumerations` são definidas no modelo e geram tipos no DomainModel.cs. `ExternalTypes` refere-se a tipos que são definidos em qualquer lugar (tal como `String` ou `Int32`) e não geram coisa alguma.
+ Tipos esta seção define cada tipo e seu namespace. As propriedades do domínio possuem dois tipos. `DomainEnumerations` são definidos no modelo e geram tipos em DomainModel.cs. `ExternalTypes` Consulte tipos que são definidos em outro lugar (como `String` ou `Int32` ) e não geram nada.
 
  Formas esta seção define as formas que descrevem como o modelo aparece em um designer. Essas formas geométricas são mapeadas para as classes no modelo na seção Diagrama.
 
@@ -125,7 +125,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
 </DomainClass>
 ```
 
- `NamedElement` é a base de muitas das outras classes, tais como `Component`, que possui suas próprias propriedades, além da propriedade `Name`, que é herdada de `NamedElement`. O nó filho BaseClass contém uma referência de moniker. Como a classe referenciada está no mesmo namespace, somente seu nome é necessário no moniker:
+ `NamedElement` é a base de várias das outras classes, como `Component` , que tem suas próprias propriedades, além da `Name` propriedade, da qual ela é herdada `NamedElement` . O nó filho BaseClass contém uma referência de moniker. Como a classe referenciada está no mesmo namespace, somente seu nome é necessário no moniker:
 
 ```
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -145,13 +145,13 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
 
 - **ID.** Esse atributo é um GUID. Se você não fornecer um valor no arquivo, o Designer de Linguagem Específica do Domínio criará um valor. (Nas ilustrações deste documento, esse atributo é geralmente omitido para economizar espaço.)
 
-- **Nome e namespace.** Estes atributos especificam o nome e o namespace da classe no código gerado. Juntos, eles devem ser exclusivos dentro da linguagem específica do domínio.
+- **Nome e Namespace.**  Estes atributos especificam o nome e o namespace da classe no código gerado. Juntos, eles devem ser exclusivos dentro da linguagem específica do domínio.
 
 - **InheritanceModifier.** Esse atributo é "abstrato", "lacrado" ou nenhum.
 
 - **DisplayName.** Esse atributo é o nome que aparece na janela **Propriedades** . O atributo DisplayName pode conter espaços e outra pontuação.
 
-- **GeneratesDoubleDerived.** Se este atributo estiver configurado como true, duas classes serão geradas e uma será uma subclasse da outra. Todos os métodos gerados estão na base e os construtores estão na subclasse. Ao configurar este atributo, você pode substituir qualquer método gerado no código personalizado.
+- **GeneratesDoubleDerived.**  Se este atributo estiver configurado como true, duas classes serão geradas e uma será uma subclasse da outra. Todos os métodos gerados estão na base e os construtores estão na subclasse. Ao configurar este atributo, você pode substituir qualquer método gerado no código personalizado.
 
 - **HasCustomConstructor**. Se este atributo estiver configurado como true, o construtor será omitido do código gerado para que você possa gravar sua própria versão.
 
@@ -188,7 +188,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
 
 - **IsElementName**. Se esse atributo estiver configurado como true, seu valor será configurado automaticamente como um valor exclusivo quando uma instância da classe pai for criada. Este atributo pode ser configurado como true para somente uma propriedade em cada classe, que deve ter um tipo de cadeia de caracteres. No exemplo de Diagrama de Componente, a propriedade `Name` em `NamedElement` possui o `IsElementName` configurado como true. Sempre que um usuário cria um elemento `Component` (que herda do `NamedElement`), o nome é automaticamente inicializado para algo como "Component6."
 
-- `DefaultValue` Se você tiver especificado este atributo, o valor especificado será atribuído a ele para novas instâncias desta classe. Se `IsElementName` estiver configurado, o atributo DefaultValue especifica a parte inicial da nova cadeia de caracteres.
+- `DefaultValue`. Se você tiver especificado este atributo, o valor especificado será atribuído a ele para novas instâncias desta classe. Se `IsElementName` estiver configurado, o atributo DefaultValue especifica a parte inicial da nova cadeia de caracteres.
 
 - **Categoria** é o cabeçalho sob o qual a propriedade aparecerá na janela **Propriedades** .
 
@@ -264,7 +264,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
 
  Neste exemplo, InPort é uma subclasse de ComponentPort e possui uma relação ComponentHasPorts. A propriedade é chamada de Componente.
 
- Ao escrever C# em relação a esse modelo, você pode percorrer um link em uma etapa usando a propriedade que a relação gera em cada uma das classes que ele relaciona:
+ Ao gravar C# com relação a este modelo, você pode pular um link em uma etapa usando a propriedade que a relação gera em cada uma das classes relacionada a ela:
 
 ```
      InPort port; ...  Component c = port.Component;
@@ -453,7 +453,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" …
 ```
 
-- O atributo **XmlSerializationBehavior** é inserido no atributo `Dsl`, mas o atributo **omitielement** foi definido na relação de incorporação. Portanto, nenhum atributo `RoleElementName` interfere. Por outro lado, um atributo **ClassData** é o atributo `RoleElementName` da relação incorporada entre um atributo **XmlSerializationBehavior** e um atributo **XmlClassData** .
+- O atributo **XmlSerializationBehavior** é inserido sob o `Dsl` atributo, mas o atributo **omitielement** foi definido na relação de incorporação. Portanto, nenhum atributo `RoleElementName` interfere. Por outro lado, um atributo **ClassData** é o `RoleElementName` atributo da relação incorporada entre um atributo **XmlSerializationBehavior** e um atributo **XmlClassData** .
 
 ```
 <Dsl Name="CmptDsl5" …> …
@@ -463,7 +463,7 @@ Este tópico descreve a estrutura do arquivo DslDefinition. DSL no projeto de DS
       <XmlClassData …>…</XmlClassData>
 ```
 
-- ConnectorHasDecorators é a relação inserida entre `Connector` e `Decorator`. `UseFullForm` foi configurado para que o nome da relação apareça com sua lista de propriedades de cada link do objeto Conector. No entanto, `OmitElement` também foi configurado para que nenhum `RoleElementName` inclua os vários links que são inseridos dentro do `Connector`:
+- ConnectorHasDecorators é a relação inserida entre `Connector` e `Decorator`. `UseFullForm` foi definido para que o nome da relação apareça com sua lista de propriedades para cada link do objeto do conector. No entanto, `OmitElement` também foi configurado para que nenhum `RoleElementName` inclua os vários links que são inseridos dentro do `Connector`:
 
 ```
 <Connector Name="AssociationLink" …>
@@ -537,5 +537,5 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
  Os mapas do conector também podem conter mapas do decorador.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas de linguagem específica de domínio Glossário](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) [como definir uma linguagem específica de domínio que](../modeling/how-to-define-a-domain-specific-language.md) [entende modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)

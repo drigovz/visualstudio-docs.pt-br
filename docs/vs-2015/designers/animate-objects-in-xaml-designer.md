@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ea2fdf1f47385a9be26fa65a93b9104b2d864079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658017"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animar objetos no XAML Designer
@@ -40,5 +40,5 @@ ms.locfileid: "72658017"
 |![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [animar o botão](http://www.popscreen.com/v/6A4fK/Microsoft-Expression-Blend-Animating-a-Button)|Crie efeitos interessantes que aparecem em um botão quando o usuário aponta para ele.|
 |![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar animação e trabalhar com a atenuação](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Anime efeitos que aparecem quando um usuário pressiona um botão na imagem de uma calculadora.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando uma interface do usuário usando o Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

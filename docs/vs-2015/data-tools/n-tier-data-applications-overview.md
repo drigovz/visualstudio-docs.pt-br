@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658064"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
@@ -35,22 +35,22 @@ Os aplicativos de dados de N camadas * são aplicativos de dados separados em v�
 
  O Visual Studio contém vários recursos para ajudar os desenvolvedores a criar aplicativos de n camadas:
 
-- O designer de conjunto de dados fornece uma propriedade de **projeto de conjunto** de dados que permite a você separar o DataSet (camada de entidade de dado) e a `TableAdapter`s (camada de acesso a dados) em projetos discretos.
+- O designer de conjunto de dados fornece uma propriedade de **projeto de conjunto** de dados que permite que você separe o DataSet (camada de entidade de dado) e `TableAdapter` s (camada de acesso a data) em projetos discretos.
 
 - As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornecem configurações para gerar o DataContext e as classes de dados em namespaces separados. Isso permite a separação lógica das camadas de acesso a dados e de entidade de dados.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornece o método <xref:System.Data.Linq.Table%601.Attach%2A> que permite reunir o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [N camadas e aplicativos remotos com LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornece o <xref:System.Data.Linq.Table%601.Attach%2A> método que permite reunir o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [N camadas e aplicativos remotos com LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
 
 ## <a name="presentation-tier"></a>Camada de apresentação
  A *camada de apresentação* é a camada na qual os usuários interagem com um aplicativo. Ele geralmente também contém lógica adicional do aplicativo. Os componentes típicos da camada de apresentação incluem o seguinte:
 
-- Componentes de vinculação de dados, como o <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.
+- Componentes de vinculação de dados, como o <xref:System.Windows.Forms.BindingSource> e o <xref:System.Windows.Forms.BindingNavigator> .
 
 - Representações de objeto de dados, como [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade para uso na camada de apresentação.
 
   A camada de apresentação normalmente acessa a camada intermediária usando uma referência de serviço (por exemplo, um [Windows Communication Foundation serviços e WCF Data Services no aplicativo do Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ). A camada de apresentação não acessa diretamente a camada de dados. A camada de apresentação se comunica com a camada de dados por meio do componente de acesso a dados na camada intermediária.
 
-## <a name="middle-tier"></a>Camada intermediária
+## <a name="middle-tier"></a>Camada Intermediária
  A camada *intermediária* é a camada que a camada de apresentação e a camada de dados usam para se comunicar entre si. Os componentes típicos da camada intermediária incluem o seguinte:
 
 - Lógica de negócios, como regras de negócio e validação de dados.
@@ -70,7 +70,7 @@ Os aplicativos de dados de N camadas * são aplicativos de dados separados em v�
   A camada intermediária normalmente se conecta à camada de dados usando uma conexão de dados. Essa conexão de dados normalmente é armazenada no componente de acesso a dados.
 
 ## <a name="data-tier"></a>Camada de Dados
- A *camada de dados* é basicamente o servidor que armazena os dados de um aplicativo (por exemplo, um servidor que executa o [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).
+ A *camada de dados* é basicamente o servidor que armazena os dados de um aplicativo (por exemplo, um servidor que executa o [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ).
 
  A ilustração a seguir mostra os recursos e as tecnologias disponíveis no Visual Studio e onde eles podem se ajustar à camada de dados de um aplicativo de n camadas.
 
@@ -85,9 +85,9 @@ Os aplicativos de dados de N camadas * são aplicativos de dados separados em v�
 
  [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
- [Walkthrough: adicionando validação a um aplicativo de dados de N camadas](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
+ [Instruções passo a passo: adicionando validação a um aplicativo de dados de N camadas](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
 
- [Aplicativos de N camadas e remotos com o LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+ [Aplicativos de n camadas e remoto com LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
-## <a name="see-also"></a>Consulte também
- [instruções passo <xref:System.Data.Linq.ITable.Attach%2A>s: criando uma](../data-tools/walkthrough-creating-an-n-tier-data-application.md) [atualização hierárquica](../data-tools/hierarchical-update.md) do aplicativo de dados de N camadas [Ferramentas do DataSet no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.Data.Linq.ITable.Attach%2A>[Walkthrough: Criando um](../data-tools/walkthrough-creating-an-n-tier-data-application.md) conjunto de dados de [atualização hierárquica](../data-tools/hierarchical-update.md) de aplicativos de data de N camadas [no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

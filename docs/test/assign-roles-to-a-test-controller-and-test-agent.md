@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591184"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
@@ -97,13 +97,13 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
 ::: moniker range="vs-2017"
 
-8. No menu **Teste,** selecione **Configurações** > de teste **Selecione Arquivo de configurações de teste** e escolha o arquivo *TestSettingDistributedTestWalkthrough.testsettings.*
+8. No menu **testar** , selecione **configurações de teste** > **Selecione arquivo configurações de teste** e escolha o arquivo *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. No menu **Teste,** escolha **Selecionar Arquivo de configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
+8. No menu **testar** , escolha **Selecionar arquivo de configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
 
 ::: moniker-end
 

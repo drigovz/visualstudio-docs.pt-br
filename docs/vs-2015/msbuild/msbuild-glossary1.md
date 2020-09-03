@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154836"
 ---
 # <a name="msbuild-glossary"></a>Glossário do MSBuild
@@ -38,7 +38,7 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  Consulte *projeto, filho*.
 
- condição
+ condition
 
  Muitos elementos do MSBuild podem ser definidos condicionalmente; ou seja, o atributo `Condition` aparece no elemento. O conteúdo dos elementos condicionais é ignorado a menos que a condição seja avaliada como `true`. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).
 
@@ -76,11 +76,11 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  Definição de item
 
- Os grupos de definição de item contêm as definições de item que adicionam metadados padrão a qualquer tipo de item. Como metadados conhecidos, os metadados padrão estão associados a todos os itens do tipo de item especificado. Os metadados padrão podem ser substituídos explicitamente em uma definição de item. Para obter mais informações, consulte [Definições de item](../msbuild/item-definitions.md).
+ Os grupos de definição de item contêm as definições de item que adicionam metadados padrão a qualquer tipo de item. Como metadados conhecidos, os metadados padrão estão associados a todos os itens do tipo de item especificado. Os metadados padrão podem ser substituídos explicitamente em uma definição de item. Para obter mais informações, consulte [definições de item](../msbuild/item-definitions.md).
 
  Função de item
 
- As funções de item obtêm informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens. Há funções para manipular cadeias de caracteres e caminhos de item. Para obter mais informações, consulte as [Funções de item](../msbuild/item-functions.md)
+ As funções de item obtêm informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens. Há funções para manipular cadeias de caracteres e caminhos de item. Para obter mais informações, consulte [funções de item](../msbuild/item-functions.md)
 
  metadados de item
 
@@ -112,11 +112,11 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  propriedade
 
- Uma propriedade é um par chave-valor que é usado para controlar o processo de build. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
+ Uma propriedade é um par chave-valor que é usado para controlar o processo de build. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
 
  propriedade, ambiente
 
- Uma propriedade de ambiente é uma propriedade que é inicializada automaticamente para o valor de uma variável de ambiente do sistema que tem o mesmo nome. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
+ Uma propriedade de ambiente é uma propriedade que é inicializada automaticamente para o valor de uma variável de ambiente do sistema que tem o mesmo nome. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
 
  Arquivo de propriedade
 
@@ -124,7 +124,7 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  propriedade, função
 
- Uma função de propriedade é uma propriedade do sistema ou um método que pode ser usado para avaliar scripts do MSBuild. Os métodos de propriedade podem ser usados para ler a hora do sistema, comparar cadeias de caracteres, combinar expressões regulares e executar outras ações. Para obter mais informações, consulte [Funções de propriedade](../msbuild/property-functions.md).
+ Uma função de propriedade é uma propriedade do sistema ou um método que pode ser usado para avaliar scripts do MSBuild. Os métodos de propriedade podem ser usados para ler a hora do sistema, comparar cadeias de caracteres, combinar expressões regulares e executar outras ações. Para obter mais informações, consulte [funções de propriedade](../msbuild/property-functions.md).
 
  função de propriedade, aninhada
 
@@ -132,11 +132,11 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Para obter mais informações, consulte [Funções de propriedade](../msbuild/property-functions.md).
+ Para obter mais informações, consulte [funções de propriedade](../msbuild/property-functions.md).
 
  propriedade, global
 
- Uma propriedade global é um par chave-valor que é usado para controlar o processo de build. As propriedades globais são definidas em um prompt de comando ou usando o atributo `Properties` de uma [tarefa do MSBuild](../msbuild/msbuild-task.md) e não podem ser modificadas durante a fase de avaliação de um build. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
+ Uma propriedade global é um par chave-valor que é usado para controlar o processo de build. As propriedades globais são definidas em um prompt de comando ou usando o atributo `Properties` de uma [tarefa do MSBuild](../msbuild/msbuild-task.md) e não podem ser modificadas durante a fase de avaliação de um build. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
 
  propriedade, local
 
@@ -144,11 +144,11 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  propriedade, Registro
 
- Uma propriedade de Registro tem um valor que é definido usando uma sintaxe especial que lê o valor de uma subchave de Registro do sistema. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
+ Uma propriedade de Registro tem um valor que é definido usando uma sintaxe especial que lê o valor de uma subchave de Registro do sistema. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
 
  propriedade, reservada
 
- Uma propriedade reservada é um par chave-valor que é usado para controlar o processo de build. As propriedades reservadas são inicializadas automaticamente com valores predefinidos. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
+ Uma propriedade reservada é um par chave-valor que é usado para controlar o processo de build. As propriedades reservadas são inicializadas automaticamente com valores predefinidos. Para obter mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).
 
  Escopo do projeto
 
@@ -206,7 +206,7 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  Um arquivo de destino é um arquivo de projeto que contém, em grande parte, destinos e tarefas que orientam o build. Por convenção, ele tem a extensão de arquivo .targets. Normalmente, os arquivos de destino são importados no fim dos arquivos de projeto associados.
 
- tarefa
+ task
 
  As tarefas são unidades de código executável que os projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usam para executar operações de build. Por exemplo, uma tarefa pode compilar os arquivos de entrada ou executar uma ferramenta externa. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
@@ -218,6 +218,6 @@ Esses termos são usados para descrever o MSBuild (Microsoft Build Engine) e seu
 
  Consulte *metadados, conhecidos*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [MSBuild1](../msbuild/msbuild.md)

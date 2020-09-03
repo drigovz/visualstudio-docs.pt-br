@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren | Microsoft Docs
+title: 'IDebugProperty2:: EnumChildren | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d6d3908c469b489eb16e4662f7515ea624825e3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721515"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
@@ -51,30 +51,30 @@ int EnumChildren ( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwFields`\
-[em] Uma combinação de bandeiras da enumeração [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que especifica quais campos nas estruturas [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumeradas devem ser preenchidos.
+no Uma combinação de sinalizadores da enumeração [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) que especifica quais campos nas estruturas de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) enumeradas devem ser preenchidos.
 
 `dwRadix`\
-[em] Especifica o radix a ser usado na formatação de qualquer informação numérica.
+no Especifica a base a ser usada na formatação de qualquer informação numérica.
 
 `guidFilter`\
-[em] GUID do filtro utilizado `dwAttribFilter` `pszNameFilter` com os `DEBUG_PROPERTY_INFO` parâmetros para selecionar quais crianças devem ser enumeradas. Por exemplo, `guidFilterLocals` filtros para variáveis locais.
+no GUID do filtro usado com os `dwAttribFilter` parâmetros e `pszNameFilter` para selecionar quais `DEBUG_PROPERTY_INFO` filhos devem ser enumerados. Por exemplo, `guidFilterLocals` filtros para variáveis locais.
 
 `dwAttribFilter`\
-[em] Uma combinação de bandeiras da enumeração [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) que especifica que tipo `DBG_ATTRIB_METHOD` de objetos enumerar, por exemplo, para todos os métodos que podem ser filhos desta propriedade. Usado em combinação `guidFilter` `pszNameFilter` com os parâmetros.
+no Uma combinação de sinalizadores da enumeração [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) que especifica que tipo de objetos enumerar, por exemplo, `DBG_ATTRIB_METHOD` para todos os métodos que podem ser filhos dessa propriedade. Usado em combinação com os `guidFilter` `pszNameFilter` parâmetros e.
 
 `pszNameFilter`\
-[em] O nome do filtro `guidFilter` usado `dwAttribFilter` com os `DEBUG_PROPERTY_INFO` parâmetros para selecionar quais crianças devem ser enumeradas. Por exemplo, definir este parâmetro para filtros "MyX" para todas as crianças com o nome "MyX".
+no O nome do filtro usado com os `guidFilter` parâmetros e `dwAttribFilter` para selecionar quais `DEBUG_PROPERTY_INFO` filhos devem ser enumerados. Por exemplo, definir esse parâmetro como "MyX" filtros para todos os filhos com o nome "MyX".
 
 `dwTimeout`\
-[em] Especifica o tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use `INFINITE` para esperar indefinidamente.
+no Especifica o tempo máximo, em milissegundos, a aguardar antes de retornar desse método. Use `INFINITE` para aguardar indefinidamente.
 
 `ppEnum`\
-[fora] Retorna um objeto [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) contendo uma lista das propriedades do filho.
+fora Retorna um objeto [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) que contém uma lista das propriedades filho.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

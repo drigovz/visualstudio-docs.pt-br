@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6d77c7a779afcbf7bc7fc3f8fbd863aa368ee7e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658544"
 ---
 # <a name="t4-text-template-directives"></a>Diretivas de modelo de texto T4
@@ -50,7 +50,7 @@ As diretivas fornecem instruções para o mecanismo de transformação do modelo
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- [Diretiva de saída T4](../modeling/t4-output-directive.md)
+ [T4 Diretiva de saída](../modeling/t4-output-directive.md)
 
 ```
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>

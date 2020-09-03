@@ -12,22 +12,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c38b15a3b819ce561c098c3b9810ee6884e526b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658530"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilitário do modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Há vários métodos que estão sempre disponíveis quando você escreve o código em um modelo de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Esses métodos são definidos em <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Há vários métodos que estão sempre disponíveis quando você escreve o código em um modelo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] texto. Esses métodos são definidos em <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 > [!TIP]
-> Você também pode usar outros métodos e serviços fornecidos pelo ambiente de host em um modelo de texto regular (não pré-processado). Por exemplo, você pode resolver caminhos de arquivo, erros de log e obter serviços fornecidos por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e quaisquer pacotes carregados.  Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+> Você também pode usar outros métodos e serviços fornecidos pelo ambiente de host em um modelo de texto regular (não pré-processado). Por exemplo, você pode resolver caminhos de arquivo, erros de log e obter serviços fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e quaisquer pacotes carregados.  Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ## <a name="write-methods"></a>Métodos de gravação
- Você pode usar os métodos `Write()` e `WriteLine()` para acrescentar texto dentro de um bloco de código padrão, em vez de usar um bloco de código de expressão. Os dois blocos de código a seguir são funcionalmente equivalentes.
+ Você pode usar os `Write()` `WriteLine()` métodos e para acrescentar texto dentro de um bloco de código padrão, em vez de usar um bloco de código de expressão. Os dois blocos de código a seguir são funcionalmente equivalentes.
 
 ##### <a name="code-block-with-an-expression-block"></a>Bloco de código com um bloco de expressão
 
@@ -55,7 +55,7 @@ while (i-- > 0)
 
  Talvez você ache útil usar um desses métodos de utilitário em vez de um bloco de expressões dentro de um bloco de código longo com estruturas de controle aninhadas.
 
- Os métodos `Write()` e `WriteLine()` têm duas sobrecargas, uma que usa um único parâmetro de cadeia de caracteres e outra que usa uma cadeia de caracteres de formato composto, mais uma matriz de objetos para incluir na cadeia de caracteres (como o método `Console.WriteLine()`). Os dois usos a seguir de `WriteLine()` são funcionalmente equivalentes:
+ Os `Write()` `WriteLine()` métodos e têm duas sobrecargas, uma que usa um único parâmetro de cadeia de caracteres e outra que usa uma cadeia de caracteres de formato composto, além de uma matriz de objetos para incluir na cadeia de caracteres (como o `Console.WriteLine()` método). Os dois usos a seguir do `WriteLine()` são funcionalmente equivalentes:
 
 ```
 <#
@@ -70,7 +70,7 @@ while (i-- > 0)
 ```
 
 ## <a name="indentation-methods"></a>Métodos de recuo
- Você pode usar métodos de recuo para formatar a saída do seu modelo de texto. A classe <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> tem uma propriedade de cadeia de caracteres de `CurrentIndent` que mostra o recuo atual no modelo de texto e um campo de `indentLengths` que é uma lista dos recuos que foram adicionados. Você pode adicionar um recuo com o método `PushIndent()` e subtrair um recuo com o método `PopIndent()`. Se você quiser remover todos os recuos, use o método `ClearIndent()`. O bloco de código a seguir mostra o uso desses métodos:
+ Você pode usar métodos de recuo para formatar a saída do seu modelo de texto. A <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe tem uma `CurrentIndent` propriedade de cadeia de caracteres que mostra o recuo atual no modelo de texto e um `indentLengths` campo que é uma lista dos recuos que foram adicionados. Você pode adicionar um recuo com o `PushIndent()` método e subtrair um recuo com o `PopIndent()` método. Se você quiser remover todos os recuos, use o `ClearIndent()` método. O bloco de código a seguir mostra o uso desses métodos:
 
 ```
 <#
@@ -97,7 +97,7 @@ Hello
 ```
 
 ## <a name="error-and-warning-methods"></a>Métodos de erro e aviso
- Você pode usar métodos de utilitário de erro e aviso para adicionar mensagens ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lista de Erros. Por exemplo, o código a seguir adicionará uma mensagem de erro à Lista de Erros.
+ Você pode usar métodos de utilitário de erro e aviso para adicionar mensagens ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros. Por exemplo, o código a seguir adicionará uma mensagem de erro à Lista de Erros.
 
 ```
 <#
@@ -114,11 +114,11 @@ Hello
 ```
 
 ## <a name="access-to-host-and-service-provider"></a>Acesso ao host e ao provedor de serviços
- A propriedade `this.Host` pode fornecer acesso às propriedades expostas pelo host que está executando o modelo. Para usar `this.Host`, você deve definir `hostspecific` atributo na diretiva `<@template#>`:
+ A propriedade `this.Host` pode fornecer acesso às propriedades expostas pelo host que está executando o modelo. Para usar `this.Host` o, você deve definir `hostspecific` o atributo na `<@template#>` diretiva:
 
  `<#@template ... hostspecific="true" #>`
 
- O tipo de `this.Host` depende do tipo de host no qual o modelo está sendo executado. Em um modelo que está sendo executado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode converter `this.Host` em `IServiceProvider` para obter acesso a serviços como o IDE. Por exemplo:
+ O tipo de `this.Host` depende do tipo de host no qual o modelo está sendo executado. Em um modelo que está sendo executado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , você pode converter `this.Host` para `IServiceProvider` para obter acesso a serviços como o IDE. Por exemplo:
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -126,10 +126,10 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 ```
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Usando um conjunto diferente de métodos de utilitário
- Como parte do processo de geração de texto, o arquivo de modelo é transformado em uma classe, que é sempre nomeada `GeneratedTextTransformation`and herda de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se você quiser usar um conjunto diferente de métodos em vez disso, poderá escrever sua própria classe e especificá-la na diretiva de modelo. Sua classe deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+ Como parte do processo de geração de texto, o arquivo de modelo é transformado em uma classe, que é sempre nomeada `GeneratedTextTransformation` e herdada de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> . Se você quiser usar um conjunto diferente de métodos em vez disso, poderá escrever sua própria classe e especificá-la na diretiva de modelo. Sua classe deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
- Use a diretiva `assembly` para referenciar o assembly onde a classe compilada pode ser encontrada.
+ Use a `assembly` diretiva para referenciar o assembly onde a classe compilada pode ser encontrada.

@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591210"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
@@ -28,7 +28,7 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
    1. Determine qual processo *QTAgent\*.exe* é iniciado quando você executa o teste. Uma maneira de fazer isso é observar a guia **Detalhes** no **Gerenciador de Tarefas** do Windows.
 
-   2. Abra o arquivo *.config* correspondente da *versão %ProgramFiles(x86)%\Microsoft Visual Studio\\\<>\\ \<edição>\Common7\IDE.* Por exemplo, se o processo que é executado é *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
+   2. Abra o arquivo *. config* correspondente na pasta *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<edition> \Common7\IDE* . Por exemplo, se o processo que é executado é *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
 
    2. Modifique o valor de **EqtTraceLevel** para o nível de log desejado.
 
@@ -60,9 +60,9 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Etapa 2: Execute o teste de IU codificado e veja o log
 
-Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent\*.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são produzidos não apenas quando o teste falha, mas também para testes bem-sucedidos quando o nível de rastreamento é definido como **verbose**.
+Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent\*.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são produzidos não apenas quando o teste falha, mas também para testes bem-sucedidos quando o nível de rastreamento é definido como **detalhado**.
 
-1. No menu **Teste,** escolha **O Windows** e selecione **Test Explorer**.
+1. No menu **testar** , escolha **Windows** e, em seguida, selecione **Gerenciador de testes**.
 
 2. No menu **Compilar**, escolha **Compilar Solução**.
 
@@ -81,7 +81,7 @@ Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent\
 
      ![Resultados e links de saída do teste de IU codificado](../test/media/cuit_htmlactionlog2.png)
 
-5. Escolha o link *UITestActionLog.html.*
+5. Escolha o link *UITestActionLog.html* .
 
      O log é exibido em seu navegador da Web.
 
