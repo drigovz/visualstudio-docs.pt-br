@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ded09d64a071c12e14de1597c21aad3872cacf4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468542"
 ---
 # <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
@@ -39,7 +39,7 @@ no Número de bytes de dados de cabeçalho. Deve ser `n*sizeof(IMAGE_SECTION_HEA
 
  data[]
 
-no Uma matriz de `IMAGE_SECTION_HEADER` estruturas a ser usada como cabeçalhos de imagem.
+no Uma matriz de  `IMAGE_SECTION_HEADER` estruturas a ser usada como cabeçalhos de imagem.
 
  originalHeaders
 
@@ -53,7 +53,7 @@ no Defina como `FALSE` se os cabeçalhos de imagem forem da nova imagem, `TRUE` 
 
  Cálculos de endereço virtual relativo dependem dos `IMAGE_SECTION_HEADER` valores. Normalmente, o DIA recupera esses arquivos do banco de dados do programa (. pdb). Se esses valores estiverem ausentes, o DIA não poderá calcular os endereços virtuais relativos e o método [IDiaAddressMap:: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retornará `FALSE` . O cliente deve, então, chamar o método [IDiaAddressMap::p ut_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) para habilitar os cálculos de endereço virtual relativo depois de fornecer os cabeçalhos de imagem ausentes da própria imagem.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
 - [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)

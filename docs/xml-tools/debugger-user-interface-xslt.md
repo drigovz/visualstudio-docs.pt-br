@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592874"
 ---
 # <a name="debugger-user-interface-xslt"></a>XSLT (interface do usuário do depurador)
@@ -29,7 +29,7 @@ A janela locais exibe informações sobre todas as variáveis definidos na folha
 
 Esta coluna contém os nomes de todos as variáveis locais no escopo atual. Os conjuntos de nós têm um controle de árvore que você pode fazer uma busca detalhada para ver suas subpastas.
 
-**Value**
+**Valor**
 
 Esta coluna mostra o valor contido por cada variável. O atributo, a instrução de processamento, o comentário, texto, e os nós CDATA exibem o valor de texto do nó. Os nós de namespace exibem URI de namespace.
 
@@ -49,7 +49,7 @@ A janela locais também exibe as variáveis predefinidos de contexto que acompan
 
 A janela de saída mostra todas as mensagens de erro ou exceções de segurança que ocorrem durante a depuração. Ele também mostra a saída do depurador.
 
-## <a name="task-list"></a>Lista de tarefas
+## <a name="task-list"></a>Lista de Tarefas
 
 O **lista de tarefas** lista todos os erros de compilação na folha de estilos. Clique duas vezes no erro leva o cursor para a linha com o erro.
 
@@ -64,7 +64,7 @@ A janela de pontos de interrupção mostra os pontos de interrupção definidos 
 
 A janela de pontos de interrupção deve se comportar da mesma maneira que outros depuradores do Visual Studio.
 
-## <a name="watch-window"></a>Janela de inspeção
+## <a name="watch-window"></a>Janela Inspecionar
 
 A janela de observação é usada para avaliar as variáveis. Você também pode alterar os valores das variáveis.
 
@@ -88,7 +88,7 @@ A lista a seguir descreve as restrições sobre a avaliação da expressão XPat
 
 - Somente as funções internas XPath são permitidas.
 
-- Funções XSLT internas, como `document()` e `key()`, não são permitidas.
+- Funções XSLT internas, como `document()` e `key()` não são permitidas.
 
 - As funções definidas pelo usuário não são permitidas.
 
@@ -100,7 +100,7 @@ A janela de desmontagem mostra o código do assembly que é gerado pelo compilad
 
 Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2:onReplaceText | Microsoft Docs
+title: 'IDebugDocumentTextEvents2:: onReplaceText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 812c77522213791519057d43ca3e725b6660612d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731408"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
@@ -41,15 +41,15 @@ int onReplaceText( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pos`\
-[em] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica onde o texto foi substituído.
+no Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) indica onde o texto foi substituído.
 
 `dwNumToReplace`\
-[em] Especifica o número de caracteres de texto que foram substituídos.
+no Especifica o número de caracteres do texto que foram substituídos.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

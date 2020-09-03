@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592920"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
@@ -107,8 +107,8 @@ Para desagrupar elementos e excluir o layout, clique com o botão direito do mou
 
 Você pode restaurar valores padrão de propriedades de layout específicas de um elemento usando o comando Redefinir Layout. Ao usar esse comando, você pode redefinir a margem, o alinhamento, a largura, a altura e o tamanho de um elemento, individual ou coletivamente.
 
-Para redefinir o layout do elemento, clique com o botão direito do mouse no elemento na janela de estrutura de tópicos do documento ou na prancheta e escolha **layout** > **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **layout** > **Redefinir tudo** para redefinir todas as propriedades de layout do elemento).
+Para redefinir o layout do elemento, clique com o botão direito do mouse no elemento na janela de estrutura de tópicos do documento ou na prancheta e escolha definição de **layout**  >  **Reset** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **layout**  >  **Redefinir tudo** para redefinir todas as propriedades de layout do elemento).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: iEnumCodePaths2::Skip | Microsoft Docs
+title: 'IEnumCodePaths2:: Skip | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c552e57c43b5abc1a41ecd468747b4ce32241a6f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717737"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
-Pula o número especificado de elementos.
+Ignora o número especificado de elementos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `celt`\
-[em] Número de elementos para pular.
+no Número de elementos a serem ignorados.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem-sucedido, retornará `S_OK`. `S_FALSE` Retornos `celt` se for maior do que o número de elementos restantes; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se `celt` é maior que o número de elementos restantes; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se `celt` especificar um valor maior do que o número de elementos `S_FALSE` restantes, a enumeração é definida até o final e é devolvida.
+ Se `celt` o especificar um valor maior que o número de elementos restantes, a enumeração será definida como end e `S_FALSE` será retornada.
 
 ## <a name="see-also"></a>Confira também
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

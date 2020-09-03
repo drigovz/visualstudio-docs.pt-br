@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593051"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
@@ -25,7 +25,7 @@ Para obter mais informações, consulte [tipos conhecidos de contrato de dados](
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo de **coleção de tipos** .
 
-|Elemento da interface|Descrição|
+|Elemento da interface do usuário|Descrição|
 |-|-----------------|
 |**Lista de Tipos**|Uma lista de tipos que foram adicionados ou removidos.|
 

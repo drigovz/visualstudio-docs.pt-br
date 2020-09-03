@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592510"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
@@ -27,7 +27,7 @@ As seguintes opções de filtro estão disponíveis. Por padrão, as opções **
 
 - **Mostrar arquivos de esquema**.
 
-- **Mostrar compositores (sequência/escolha/tudo)** .
+- **Mostrar compositores (sequência/escolha/tudo)**.
 
 ## <a name="sorting-options"></a>Opções de classificação
 
@@ -43,33 +43,33 @@ As seguintes opções de classificação estão disponíveis. O padrão é **cla
 
 Quando a opção **classificar por tipo** é selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
 
-1. nós de `import`.
+1. `import` Nós.
 
-2. nós de `include`.
+2. `include` Nós.
 
-3. nós de `redefine`.
+3. `redefine` Nós.
 
-4. nós de `attribute`.
+4. `attribute` Nós.
 
-5. nós de `attributeGroup`.
+5. `attributeGroup` Nós.
 
-6. nós de `complexType`.
+6. `complexType` Nós.
 
-7. nós de `simpleType`.
+7. `simpleType` Nós.
 
-8. nós de `element`.
+8. `element` Nós.
 
-9. nós de `group`.
+9. `group` Nós.
 
 ### <a name="sort-by-name"></a>Classificar por Nome
 
 Quando a opção **classificar por nome** for selecionada, os nós globais serão classificados na seguinte ordem:
 
-1. `import` nós (em ordem alfabética de namespaces).
+1. `import` Nós (em ordem alfabética de namespaces).
 
-2. `include` nós (em ordem alfabética de atributos `schemaLocation`).
+2. `include` Nós (em ordem alfabética de `schemaLocation` atributos).
 
-3. `redefine` nós (em ordem alfabética de atributos `schemaLocation`).
+3. `redefine` Nós (em ordem alfabética de `schemaLocation` atributos).
 
 4. Outros nós globais em ordem alfabética.
 
