@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671838"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
@@ -106,6 +106,6 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, veja [Etapa 4: adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 4: Adicionar o método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
-- Para retornar à etapa anterior do tutorial, veja [Etapa 2: criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 2: criar um problema de adição aleatória](../ide/step-2-create-a-random-addition-problem.md).

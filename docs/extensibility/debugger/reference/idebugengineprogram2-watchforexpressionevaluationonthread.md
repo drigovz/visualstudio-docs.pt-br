@@ -1,5 +1,5 @@
 ---
-title: idebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
+title: 'IDebugEngineProgram2:: WatchForExpressionEvaluationOnThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730369"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Permite (ou não permite) que a avaliação de expressão ocorra no segmento dado, mesmo que o programa tenha parado.
+Permite que a avaliação de expressão (ou não permite) ocorra no thread determinado, mesmo que o programa tenha sido interrompido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,29 +47,29 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pOriginatingProgram`\
-[em] Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) representando o programa que está avaliando uma expressão.
+no Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o programa que está avaliando uma expressão.
 
 `dwTid`\
-[em] Especifica o identificador do segmento.
+no Especifica o identificador do thread.
 
 `dwEvalFlags`\
-[em] Uma combinação de bandeiras da [enumeração EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especifica como a avaliação deve ser realizada.
+no Uma combinação de sinalizadores da enumeração [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) que especificam como a avaliação deve ser executada.
 
 `pExprCallback`\
-[em] Um objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) a ser usado para enviar eventos de depuração que ocorrem durante a avaliação de expressão.
+no Um objeto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) a ser usado para enviar eventos de depuração que ocorrem durante a avaliação da expressão.
 
 `fWatch`\
-[em] Se não zero`TRUE`(), permite a avaliação `dwTid`de expressão no segmento identificado por ; caso contrário,`FALSE`zero ( ) não permite avaliação de expressão sobre esse segmento.
+no Se não for zero ( `TRUE` ), permitirá a avaliação da expressão no thread identificado por `dwTid` ; caso contrário, zero ( `FALSE` ) não permitirá a avaliação da expressão nesse thread.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando o gerenciador de depuração de sessão (SDM) pede a um programa, identificado pelo `pOriginatingProgram` parâmetro, para avaliar uma expressão, ele notifica todos os outros programas anexados chamando esse método.
+ Quando o SDM (Gerenciador de depuração de sessão) solicita um programa, identificado pelo `pOriginatingProgram` parâmetro, para avaliar uma expressão, ele notifica todos os outros programas anexados chamando esse método.
 
- A avaliação de expressão em um programa pode fazer com que `IDispatch` o código seja executado em outro, devido à avaliação da função ou avaliação de quaisquer propriedades. Por causa disso, este método permite que a avaliação de expressão seja executada e concluída, mesmo que o segmento possa ser interrompido neste programa.
+ A avaliação de expressão em um programa pode fazer com que o código seja executado em outro, devido à avaliação de função ou avaliação de qualquer `IDispatch` propriedade. Por isso, esse método permite que a avaliação de expressão seja executada e concluída mesmo que o thread possa ser interrompido neste programa.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468696"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Referência do SDK de Acesso à Interface de Depuração
@@ -41,10 +41,10 @@ Descreve um número de cadeias de caracteres e seus rótulos que podem ser usado
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-[Símbolos e marcas de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Descreve quais símbolos são e como eles são identificados por tipo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [SDK de Acesso à Interface de Depuração](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

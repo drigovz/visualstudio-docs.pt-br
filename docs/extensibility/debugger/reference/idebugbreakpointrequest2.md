@@ -13,46 +13,46 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f30f9698c9c81322edd6935b40c16cad6f46024c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734919"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
-Esta interface representa as informações necessárias para criar e vincular qualquer tipo de ponto de ruptura.
+Essa interface representa as informações necessárias para criar e associar qualquer tipo de ponto de interrupção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O SDM (Session Debug Manager, gerenciador de depuração de sessão) normalmente implementa essa interface.
+ O SDM (Gerenciador de depuração de sessão) normalmente implementa essa interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O mecanismo de depuração (DE) recebe essa interface através de uma chamada para [CreatePendingBreakpoint,](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) a fim de criar um breakpoint pendente. Uma chamada para [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) pode recuperar esta interface do DE.
+ O mecanismo de depuração (DE) recebe essa interface por meio de uma chamada para [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) para criar um ponto de interrupção pendente. Uma chamada para [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md) pode recuperar essa interface a partir de de.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugBreakpointRequest2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugBreakpointRequest2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtém o tipo de localização de ponto de ruptura desta solicitação de ponto de ruptura.|
-|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Obtém as informações de solicitação de ponto de ruptura que descrevem essa solicitação de ponto de ruptura.|
+|[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|Obtém o tipo de local do ponto de interrupção dessa solicitação de ponto de interrupção.|
+|[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|Obtém as informações de solicitação de ponto de interrupção que descrevem essa solicitação de ponto de interrupção.|
 
 ## <a name="remarks"></a>Comentários
- Depois que o programa está sendo depurado, uma chamada para [Vincular vincula](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) um ponto de ruptura pendente ao local solicitado no programa.
+ Depois que o programa que está sendo depurado tiver sido carregado, uma chamada para [BIND](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) associará um ponto de interrupção pendente ao local solicitado no programa.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
-- [Associar](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [Associa](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

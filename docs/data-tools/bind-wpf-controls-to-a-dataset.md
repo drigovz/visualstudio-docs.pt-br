@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282911"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
@@ -60,7 +60,7 @@ Crie um novo projeto do WPF para exibir registros de produto.
 
 1. Abra o Visual Studio.
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+2. No menu **arquivo** , selecione **novo** > **projeto**.
 
 3. Expanda **Visual Basic** ou **Visual C#** e selecione **Windows**.
 
@@ -232,7 +232,7 @@ Adicione o código que permite aos usuários salvar alterações em registros de
 
 ## <a name="test-the-application"></a>Testar o aplicativo
 
-Criar e executar o aplicativo. Verifique se você pode exibir e atualizar registros de produtos.
+Crie e execute o aplicativo. Verifique se você pode exibir e atualizar registros de produtos.
 
 1. Pressione **F5**.
 
@@ -258,7 +258,7 @@ Depois de concluir este passo a passos, você pode tentar as seguintes tarefas r
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: exibir dados relacionados em um aplicativo do WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

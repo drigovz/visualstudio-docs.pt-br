@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671202"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Definindo uma imagem de plano de fundo em um diagrama
@@ -21,7 +21,7 @@ ms.locfileid: "72671202"
 
 No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode configurar a imagem de plano de fundo para um designer gerado usando código personalizado.
 
-## <a name="setting-the-background-image"></a>Configurando a imagem de plano de fundo
+## <a name="setting-the-background-image"></a>Configuração da imagem da tela de fundo
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Para configurar uma imagem de plano de fundo de um designer gerado
 
@@ -47,7 +47,7 @@ No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.
 
 11. Se Resources.Designer.cs estiver ausente, clique no arquivo Resources. resx em **Gerenciador de soluções**.
 
-12. Na janela **Propriedades** , defina a propriedade `Custom Tool` como `ResXFileCodeGenerator`.
+12. Na janela **Propriedades** , defina a `Custom Tool` propriedade como `ResXFileCodeGenerator` .
 
 13. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto DSL, aponte para **Adicionar**e clique em **nova pasta**.
 
@@ -104,5 +104,5 @@ No SDK de Visualização e Modelagem do [!INCLUDE[vsprvs](../includes/vsprvs-md.
 
      Para obter mais informações sobre como personalizar o modelo com o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md) que [personalizam campos de texto e imagem](../modeling/customizing-text-and-image-fields.md) [navegando e atualizando um modelo no código de código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

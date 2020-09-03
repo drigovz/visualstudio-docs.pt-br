@@ -1,5 +1,5 @@
 ---
-title: O que&#39;versão 1.2 da API plug-in de controle de novo na fonte de | Microsoft Docs
+title: O que&#39;s New na API de plug-in de controle do código-fonte versão 1,2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c3b06c9517110cf7d5d6b8a1310e88d419da126
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200941"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>O que&#39;s novos na fonte de controlar a versão 1.2 plug-in da API
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>O que&#39;s New na API de plug-in de controle do código-fonte versão 1,2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esta seção destaca a funcionalidade de controle do código fonte avançados na API de plug-in de controle do código-fonte versão 1.2. O exemplo a seguir lista os novos recursos na versão 1.2:  
+Esta seção destaca a funcionalidade de controle de código-fonte avançado na API de plug-in de controle do código-fonte versão 1,2. Veja a seguir uma lista dos novos recursos na versão 1,2:  
   
 ## <a name="changes"></a>Alterações  
  [Eliminação de arquivos ~SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md)  
- Explica como a fonte de controle de plug-in API 1.2 interage com os arquivos temporários.  
+ Explica como a API de plug-in de controle do código-fonte 1,2 interage com arquivos temporários.  
   
- [Aplicação de configurações entre várias conexões de projeto](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)  
- Ilustra como um plug-in de controle de origem pode usar uma operação em lote para executar a mesma operação de controle do código-fonte entre vários projetos ou vários contextos de conexão.  
+ [Aplicação de configurações em várias conexões de projeto](../../extensibility/internals/application-of-settings-across-multiple-project-connections.md)  
+ Ilustra como um plug-in de controle do código-fonte pode usar uma operação em lote para executar a mesma operação de controle do código-fonte em vários projetos ou em vários contextos de conexão.  
   
- [Criar pastas de contêiner pai para soluções](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)  
- Explica como o controle de fonte de plug-in API versão 1.2 permite que um usuário especificar um destino de controle de origem de raiz única para todos os projetos da Web dentro da solução.  
+ [Criando pastas de contêiner pai para soluções](../../extensibility/internals/creating-parent-container-folders-for-solutions.md)  
+ Explica como a API de plug-in de controle do código-fonte versão 1,2 permite que um usuário especifique um único destino de controle de origem de raiz para todos os projetos da Web na solução.  
   
- [Comparação opcional da pasta de projeto local para o controle do código-fonte](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)  
- Explica como a fonte de controle de plug-in API 1.2 compara as versões dos arquivos.  
+ [Comparação opcional da pasta do projeto local para o repositório de controle do código-fonte](../../extensibility/internals/optional-comparison-of-local-project-folder-to-source-control-store.md)  
+ Explica como a API de plug-in de controle do código-fonte 1,2 compara versões de arquivos.  
   
  [Remoção de informações de controle do código-fonte de arquivos .Proj e .Sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md)  
- Explica como o controle de fonte de plug-in API versão 1.2 armazena informações sobre projetos e soluções.  
+ Explica como a API de plug-in de controle do código-fonte versão 1,2 armazena informações sobre projetos e soluções.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

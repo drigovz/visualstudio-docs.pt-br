@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6a2d47a66cdedfc191212a178221712de6aefa61
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671695"
 ---
 # <a name="step-6-add-a-timer"></a>Etapa 6: Adicionar um temporizador
@@ -23,7 +23,7 @@ Em seguida, adicione um controle **Timer** ao jogo de correspondência. Um tempo
 
 ### <a name="to-add-a-timer"></a>Para adicionar um temporizador
 
-1. Na caixa de ferramentas do Designer de Formulários do Windows, escolha **Temporizador** (na categoria **Componentes**) e escolha a tecla ENTER ou clique duas vezes no temporizador para adicionar um controle de temporizador ao formulário. O ícone do temporizador, chamado **Timer1**, deve ser exibido em um espaço abaixo do formulário, como mostra na imagem a seguir.
+1. Na caixa de ferramentas no Designer de Formulários do Windows, escolha **temporizador** (na categoria **componentes** ) e, em seguida, escolha a tecla Enter ou clique duas vezes no temporizador para adicionar um controle de temporizador ao formulário. O ícone do temporizador, chamado **Timer1**, deve ser exibido em um espaço abaixo do formulário, como mostra na imagem a seguir.
 
      ![Temporizador](../ide/media/express-timer.png "Express_Timer") Tempo
 
@@ -32,7 +32,7 @@ Em seguida, adicione um controle **Timer** ao jogo de correspondência. Um tempo
 
 2. Escolha o ícone **Timer1** para selecionar o temporizador. Na janela **Propriedades**, mude do modo de exibição de eventos para o de propriedades. Em seguida, defina a propriedade **Intervalo** do temporizador como **750**, mas deixe a propriedade **Habilitado** definida como **Falso**. A propriedade **Intervalo** informa ao temporizador quanto tempo ele deve aguardar entre os *tiques* ou quando ele dispara seu evento Tick. Um valor de 750 informa ao temporizador para aguardar três quartos de um segundo (750 milissegundos) antes de disparar o evento Tick. Você chamará o método `Start()` para iniciar o temporizador apenas depois que o jogador escolher o segundo rótulo.
 
-3. Escolha o ícone do controle de temporizador no Designer de Formulários do Windows e escolha a tecla ENTER, ou clique duas vezes no temporizador, para adicionar um manipulador de eventos **Tick** vazio. Substitua o código pelo código a seguir ou insira-o manualmente no manipulador de eventos.
+3. Escolha o ícone controle de timer no Designer de Formulários do Windows e, em seguida, escolha a tecla ENTER ou clique duas vezes no temporizador para adicionar um manipulador de eventos de **tique** vazio. Substitua o código pelo código a seguir ou insira-o manualmente no manipulador de eventos.
 
      [!code-csharp[VbExpressTutorial4Step6#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial4Step6#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb#7)]
@@ -57,6 +57,6 @@ Em seguida, adicione um controle **Timer** ao jogo de correspondência. Um tempo
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 7: manter pares visíveis](../ide/step-7-keep-pairs-visible.md).
 
-- Para retornar à etapa anterior do tutorial, consulte [Etapa 5: Adicionar referências de rótulo](../ide/step-5-add-label-references.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 5: adicionar referências de rótulo](../ide/step-5-add-label-references.md).

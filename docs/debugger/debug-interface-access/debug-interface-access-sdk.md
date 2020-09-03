@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da0ced56e8bf7e61e7fa5251e834a762d4c66650
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468689"
 ---
 # <a name="debug-interface-access-sdk"></a>SDK de Acesso à Interface de Depuração
@@ -35,7 +35,7 @@ Fornece uma visão geral dos recursos de DIA SDK e especifica onde o DIA SDK é 
 
 Fornece instruções sobre como usar a API do DIA para consultar o arquivo. pdb.
 
-[Símbolos e marcas de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Discute como símbolos e marcas de símbolo são usados na API de DIA.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b216e89e6a04fb38537f9c45336d07cf6df4abdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671266"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
@@ -47,11 +47,11 @@ Quando um elemento é criado, excluído ou atualizado, você pode escrever um c�
 
 - **Criando regras personalizadas** Você cria uma regra personalizada como uma classe derivada de uma regra abstrata. Você também deve notificar a estrutura sobre a regra personalizada. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
-- **Inscrevendo-se em eventos** Antes de poder assinar um evento, crie um manipulador de eventos e um delegado. Em seguida, use o <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>property para assinar o evento. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **Inscrevendo-se em eventos** Antes de poder assinar um evento, crie um manipulador de eventos e um delegado. Em seguida, use a <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A> propriedade para assinar o evento. Para obter mais informações, consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 - **Desfazendo alterações** Quando você desfaz uma transação, os eventos são gerados, mas as regras não são aplicadas. Se uma regra alterar um valor e você desfazer essa alteração, o valor será redefinido para o valor original durante a ação de desfazer. Quando um evento é gerado, você deve alterar manualmente o valor de volta para seu valor original. Para saber mais sobre transactons e desfazer, consulte [como: usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).
 
-- **Passando argumentos de evento para regras e eventos** Os eventos e as regras passam um parâmetro `EventArgs` que tem informações sobre como o modelo foi alterado.
+- **Passando argumentos de evento para regras e eventos** Os eventos e as regras passam um `EventArgs` parâmetro que tem informações sobre como o modelo foi alterado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como interceptar um clique em uma forma ou decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) [escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 366567a13ad23ab19ffd88f19997b92025abe952
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671072"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: criando um Serviço WCF simples no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] simples, testá-lo e, em seguida, acessá-lo de um aplicativo Windows Forms.
+Este tutorial demonstra como criar um serviço simples [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] , testá-lo e, em seguida, acessá-lo de um aplicativo Windows Forms.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -32,9 +32,9 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
 
 #### <a name="to-create-a-wcf-service"></a>Para criar um serviço WCF
 
-1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+1. No menu **arquivo** , aponte para **novo** e clique em **projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda o **Visual Basic** ou o nó **Visual C#**  e clique em **WCF**, seguido pela **biblioteca de serviços WCF**. Clique em **OK** para abrir o projeto.
+2. Na caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** e clique em **WCF**, seguido pela **biblioteca de serviços WCF**. Clique em **OK** para abrir o projeto.
 
      ![O projeto da biblioteca de serviços do WCF](../data-tools/media/wcf1.PNG "wcf1")
 
@@ -48,12 +48,12 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
      [!code-csharp[WCFWalkthrough#4](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1_2.cs#4)]
      [!code-vb[WCFWalkthrough#4](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1_2.vb#4)]
 
-     Altere o tipo do parâmetro `value` para `String`:
+     Altere o tipo para o `value` parâmetro para `String` :
 
      [!code-csharp[WCFWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs#1)]
      [!code-vb[WCFWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb#1)]
 
-     No código acima, observe os atributos `<OperationContract()>` ou `[OperationContract]`. Esses atributos são necessários para qualquer método exposto pelo serviço.
+     No código acima, observe os `<OperationContract()>` atributos ou `[OperationContract]` . Esses atributos são necessários para qualquer método exposto pelo serviço.
 
 4. ![O arquivo Service1](../data-tools/media/wcf3.png "wcf3")
 
@@ -62,7 +62,7 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
      [!code-csharp[WCFWalkthrough#5](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1_2.cs#5)]
      [!code-vb[WCFWalkthrough#5](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1_2.vb#5)]
 
-     Altere o tipo para o parâmetro de valor para `String`:
+     Altere o tipo para o parâmetro de valor para `String` :
 
      [!code-csharp[WCFWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1.cs#2)]
      [!code-vb[WCFWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1.vb#2)]
@@ -75,9 +75,9 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
 
 2. No formulário do **cliente de teste do WCF** , clique duas vezes no método **GetData ()** em **IService1**. A guia **GetData** será exibida.
 
-     ![O método&#40; &#41; GetData](../data-tools/media/wcf4.png "wcf4")
+     ![O método GetData&#40;&#41; ](../data-tools/media/wcf4.png "wcf4")
 
-3. Na caixa **solicitação** , selecione o campo **valor** e digite `Hello`.
+3. Na caixa **solicitação** , selecione o campo **valor** e digite `Hello` .
 
      ![O campo de valor](../data-tools/media/wcf5.png "wcf5")
 
@@ -91,9 +91,9 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
 
 #### <a name="to-reference-a-wcf-service"></a>Para fazer referência a um serviço WCF
 
-1. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.
+1. No menu **arquivo** , aponte para **Adicionar** e clique em **novo projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda o **Visual Basic** ou o nó do **Visual C#**  e selecione **Windows**e, em seguida, selecione **Windows Forms aplicativo**. Clique em **OK** para abrir o projeto.
+2. Na caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** e selecione **Windows**e, em seguida, selecione **Windows Forms aplicativo**. Clique em **OK** para abrir o projeto.
 
      ![Windows Forms projeto de aplicativo](../data-tools/media/wcf7.png "wcf7")
 
@@ -111,11 +111,11 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
 
 1. Em **Gerenciador de soluções**, clique duas vezes em **Form1. vb** ou **Form1.cs** para abrir a designer de formulários do Windows se ela ainda não estiver aberta.
 
-2. Na **caixa de ferramentas**, arraste um controle de `TextBox`, um controle de `Label` e um controle de `Button` para o formulário.
+2. Na **caixa de ferramentas**, arraste um `TextBox` controle, `Label` um controle e um `Button` controle para o formulário.
 
      ![Adicionando controles ao formulário](../data-tools/media/wcf9.png "wcf9")
 
-3. Clique duas vezes no `Button` e adicione o seguinte código no manipulador de eventos `Click`:
+3. Clique duas vezes em `Button` e adicione o seguinte código ao manipulador de `Click` eventos:
 
      [!code-csharp[WCFWalkthrough#3](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs#3)]
      [!code-vb[WCFWalkthrough#3](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb#3)]
@@ -126,5 +126,5 @@ Este tutorial demonstra como criar um serviço [!INCLUDE[vsindigo](../includes/v
 
      ![O formulário que mostra o resultado](../data-tools/media/wcf10.png "wcf10")
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

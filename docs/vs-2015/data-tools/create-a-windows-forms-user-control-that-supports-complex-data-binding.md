@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99c4a20939ed2e3a036831930749bb59b5a42315
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670048"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos
@@ -58,7 +58,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 - Adicione o novo controle arrastando-o da **janela Data Sources** para o **Form1**.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -106,10 +106,10 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
      [!code-csharp[VbRaddataDisplaying#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/ComplexDataGridView.cs#4)]
      [!code-vb[VbRaddataDisplaying#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/ComplexDataGridView.vb#4)]
 
-3. No menu **Compilação**, escolha **Compilar Solução**.
+3. No menu **Compilar** , escolha **Compilar solução**.
 
 ## <a name="creating-a-data-source-from-your-database"></a>Criando uma fonte de dados do seu banco de dados
- Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar uma fonte de dados com base na tabela `Customers` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [instalar SQL Server bancos](../data-tools/install-sql-server-sample-databases.md)de dados de exemplo.
+ Esta etapa usa o assistente de **configuração de fonte de dados** para criar uma fonte de dados com base na `Customers` tabela no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [instalar SQL Server bancos](../data-tools/install-sql-server-sample-databases.md)de dados de exemplo.
 
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
@@ -119,7 +119,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **escolher sua conexão de dados** , siga um destes procedimentos:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -133,7 +133,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 8. Selecione a tabela `Customers` e clique em **Concluir**.
 
-     O **NorthwindDataSet** é adicionado ao projeto e a tabela `Customers` aparece na janela **Fontes de Dados**.
+     O **NorthwindDataSet** é adicionado ao seu projeto e a `Customers` tabela é exibida na janela **Data Sources** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Definir a tabela Customers para usar o controle ComplexDataGridView
  Na janela **Fontes de Dados**, você pode definir o controle a ser criado antes de arrastar itens para seu formulário.
@@ -151,7 +151,7 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 5. Clique na seta suspensa na tabela `Customers` e escolha **ComplexDataGridView** na lista de controle.
 
 ## <a name="addcontrols-to-the-form"></a>Addcontroles para o formulário
- Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.
+ Você pode criar os controles associados a dados arrastando itens da janela **fontes de dados** para o formulário.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
 
@@ -170,5 +170,5 @@ Ao exibir dados em formulários nos aplicativos do Windows, você poderá escolh
 
 - Criando controles que suportam cenários de pesquisa. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Associar controles de Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) [defina o controle a ser criado ao arrastar da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md) [Windows Forms controles](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

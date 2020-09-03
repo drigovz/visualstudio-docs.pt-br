@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201807"
 ---
 # <a name="error-task"></a>Tarefa Error
@@ -34,7 +34,7 @@ Interrompe um build e registra um erro com base em uma instrução condicional a
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `Error`.  
   
-|Parâmetro|DESCRIÇÃO|  
+|Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`Code`|Parâmetro `String` opcional.<br /><br /> O código de erro a associar ao erro.|  
 |`File`|Parâmetro `String` opcional.<br /><br /> O nome do arquivo que contém o erro. Se nenhum nome de arquivo for fornecido, o arquivo que contém a tarefa de erro será usado.|  
@@ -44,9 +44,9 @@ Interrompe um build e registra um erro com base em uma instrução condicional a
 ## <a name="remarks"></a>Comentários  
  A tarefa `Error` permite que projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] emitam o texto de erro para agentes e interrompe a execução de build.  
   
- Se o parâmetro `Condition` avaliar `true`, o build será interrompido e um erro será registrado. Se um parâmetro `Condition` não existir, o erro será registrado e a execução de build será interrompida. Para obter mais informações sobre registro, consulte [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Se o parâmetro `Condition` avaliar `true`, o build será interrompido e um erro será registrado. Se um parâmetro `Condition` não existir, o erro será registrado e a execução de build será interrompida. Para obter mais informações sobre registro em log, consulte [obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base TaskExtension](../msbuild/taskextension-base-class.md).  
+ Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir verifica se todas as propriedades necessárias estão definidas. Se elas não estiverem definidas, o projeto gerará um evento de erro e registrará o valor do parâmetro `Text` da tarefa `Error`.  
@@ -65,6 +65,6 @@ Interrompe um build e registra um erro com base em uma instrução condicional a
 </Project>  
 ```  
   
-## <a name="see-also"></a>Veja também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)   
+ [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)

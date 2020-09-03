@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670085"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Criar um banco de dados SQL usando um script
@@ -34,16 +34,16 @@ Neste tutorial, você usará o Visual Studio para criar um banco de dados pequen
 
 - [Implantar o banco de dados](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passos, você deve ter SQL Server Express LocalDB ou outro banco de dados SQL instalado.
 
-## <a name="CreateScript"></a>Criar um script que contenha um esquema de banco de dados
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> Criar um script que contenha um esquema de banco de dados
 
-#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Para criar um script do qual você pode importar um esquema
+#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Para criar um script a partir do qual você possa importar um esquema
 
-1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na barra de menus, selecione **arquivo**  > **novo** **arquivo**de  > .
+1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , na barra de menus, selecione **arquivo**  >  **novo**  >  **arquivo**.
 
-     A caixa de diálogo **novo arquivo** é exibida.
+     A caixa de diálogo **Novo Arquivo** será exibida.
 
 2. Na lista **categorias** , selecione **geral**.
 
@@ -213,42 +213,42 @@ Neste tutorial, você usará o Visual Studio para criar um banco de dados pequen
     GO
     ```
 
-5. Na barra de menus, selecione **arquivo**  > **salvar SqlQuery_1. SQL como**.
+5. Na barra de menus, selecione **arquivo**  >  **salvar SqlQuery_1. SQL como**.
 
      A caixa de diálogo **salvar arquivo como** é exibida.
 
-6. Na caixa **nome do arquivo** , digite `SampleImportScript.sql`, observe o local onde você salvará o arquivo e, em seguida, selecione o botão **salvar** .
+6. Na caixa **nome do arquivo** , digite `SampleImportScript.sql` , observe o local onde você salvará o arquivo e, em seguida, selecione o botão **salvar** .
 
-7. Na barra de menus, selecione **arquivo**  > **fechar solução**.
+7. Na barra de menus, selecione **arquivo**  >  **fechar solução**.
 
      Em seguida, crie um projeto de banco de dados e importe o esquema do script que você criou.
 
-## <a name="CreateProject"></a>Criar um projeto de banco de dados e importar um esquema
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> Criar um projeto de banco de dados e importar um esquema
 
 #### <a name="to-create-a-database-project"></a>Para criar um projeto de banco de dados
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, selecione **arquivo**  >  **novo**  >  **projeto**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+     A caixa de diálogo **Novo Projeto** aparecerá.
 
 2. Em **instalado**, expanda o nó **modelos** , expanda o nó **outros idiomas** , selecione a categoria **SQL Server** e, em seguida, selecione o modelo de projeto de **banco de dados SQL Server** .
 
     > [!NOTE]
     > O nó **outros idiomas** não aparece em todas as instalações do Visual Studio.
 
-3. Na caixa **nome** , digite `Small Database`.
+3. Na caixa **nome** , digite `Small Database` .
 
 4. Marque a caixa de seleção **criar diretório para solução** se ela ainda não estiver selecionada.
 
 5. Desmarque a caixa de seleção **Adicionar ao controle do código-fonte** se ela ainda não estiver desmarcada e, em seguida, selecione o botão **OK** .
 
-     O projeto de banco de dados é criado e aparece no **Gerenciador de soluções**.
+     O projeto de banco de dados é criado e aparece no **Gerenciador de Soluções**.
 
      Em seguida, importe o esquema de banco de dados do script.
 
-#### <a name="to-import-a-database-schema-from-a-script"></a>Para importar um esquema de banco de dados de um script
+#### <a name="to-import-a-database-schema-from-a-script"></a>Para importar um esquema de banco de dados de um script.
 
-1. Na barra de menus, selecione **projeto**  > **importar**  > **script**.
+1. Na barra de menus, selecione **projeto**  >  **importar**  >  **script**.
 
 2. Na página de **boas-vindas** , examine o texto e, em seguida, selecione o botão **Avançar** .
 
@@ -270,5 +270,5 @@ Neste tutorial, você usará o Visual Studio para criar um banco de dados pequen
 
      Neste ponto, o banco de dados contém apenas objetos do sistema, como tabelas e procedimentos armazenados. Depois de implantar o banco de dados, ele conterá as tabelas de usuário e os procedimentos armazenados que os scripts definem.
 
-## <a name="DeployDatabase"></a>Implantar o banco de dados
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> Implantar o banco de dados
  Quando você pressiona a tecla **F5** , implanta (ou publica) o banco de dados em um banco de dados LocalDB por padrão. Você pode implantar o banco de dados em um local diferente abrindo a página de propriedades do projeto, selecionando a guia **depurar** e, em seguida, alterando a cadeia de conexão.

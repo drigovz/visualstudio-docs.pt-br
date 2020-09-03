@@ -1,4 +1,5 @@
-title: Introdução a VSPackages de controle do código-fonte | Microsoft Docs
+---
+title: Introdução com VSPackages de controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708335"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>Comece com o controle de origem VSPackages
+# <a name="get-started-with-source-control-vspackages"></a>Introdução ao controle do código-fonte VSPackages
 
-Um VSPackage de controle de origem Ã© uma alternativa mais avanÃ§ada ao plug-in de controle de origem. Para obter mais informaÃ§Ãµes sobre plug-ins de controle de origem, consulte [Criar um plug-in de controle de origem](../../extensibility/internals/creating-a-source-control-plug-in.md). Um VSPackage de controle de origem permite o controle completo sobre o modelo de controle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de origem, recursos e interface do usuÃ¡rio (UI), e ele se integra ao ambiente como um VSPackage.
+Um VSPackage de controle de origem é uma alternativa mais avançada para o plug-in de controle do código-fonte. Para obter mais informações sobre plug-ins de controle do código-fonte, consulte [criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md). Um VSPackage de controle de origem permite o controle total sobre o modelo de controle do código-fonte, os recursos e a interface do usuário e se integra ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente como um VSPackage.
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Determine se deve implementar um VSPackage de controle de origem](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[Determinar se uma VSPackage de controle do código-fonte deve ser implementada](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-Explica as escolhas das soluÃ§Ãµes de controle de origem e fornece diretrizes amplas para a escolha de um caminho de integraÃ§Ã£o adequado.
+Explica as opções para soluções de controle do código-fonte e fornece diretrizes amplas para escolher um caminho de integração apropriado.
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [O que hÃ¡ de novo no controle de fontes](../../extensibility/internals/what-s-new-in-source-control.md)
+- [O que há de novo no controle do código-fonte](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   Descreve novos recursos usando VSPackages com controle de origem.
+   Descreve os novos recursos usando o VSPackages com o controle do código-fonte.
 
-- [Crie um controle de origem VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Criar um controle do código-fonte VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   Discute como criar um controle de origem VSPackage que nÃ£o apenas fornece a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funcionalidade de controle de origem, mas pode ser usado para personalizar a ui de controle de origem.
+   Discute como criar um VSPackage de controle do código-fonte que não só fornece funcionalidade de controle do código-fonte, mas pode ser usado para personalizar a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface do usuário do controle do código-fonte.
