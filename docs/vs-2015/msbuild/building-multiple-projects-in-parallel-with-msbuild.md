@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f80f0898167de133d78d27d26f97d0ab8ced0b31
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843945"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Compilando vários projetos paralelamente com o MSBuild
@@ -30,14 +30,14 @@ Você pode usar o MSBuild para criar vários projetos mais rápido, executando-o
 - O parâmetro de tarefa <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> em uma tarefa do MSBuild.  
   
 > [!NOTE]
-> A opção **/verbosity** ( **/v**) em uma linha de comando também pode afetar o desempenho de compilação. O desempenho de compilação pode piorar se o detalhamento de suas informações de log de compilação estiver definido como detalhado ou diagnóstico, que são usados para solução de problemas. Para obter mais informações, consulte [Obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md) e [Referências de linha de comando](../msbuild/msbuild-command-line-reference.md).  
+> A opção **detalhamento** (**/v**) em uma linha de comando também pode afetar o desempenho da compilação. O desempenho de compilação pode piorar se o detalhamento de suas informações de log de compilação estiver definido como detalhado ou diagnóstico, que são usados para solução de problemas. Para obter mais informações, consulte [obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md) e [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="maxcpucount-switch"></a>Opção /maxcpucount  
  Se você usar a opção `/maxcpucount`, ou `/m`, de forma abreviada, o MSBuild cria o número especificado de processos MSBuild.exe que podem ser executados em paralelo. Esses processos também são conhecidos como "processos de trabalho". Cada processo de trabalho usa um núcleo ou processador separado, se houver algum disponível, para compilar um projeto ao mesmo tempo em que outros processadores disponíveis criam outros. Por exemplo, definir essa opção para um valor de "4" faz com que o MSBuild crie quatro processos de trabalho para compilar o projeto.  
   
  Se você incluir a opção `/maxcpucount` sem especificar um valor, o MSBuild usará o número de processadores no computador.  
   
- Para obter mais informações sobre essa opção, que foi introduzida no MSBuild 3.5, consulte [Referências de linha de comando](../msbuild/msbuild-command-line-reference.md).  
+ Para obter mais informações sobre essa opção, que foi introduzida no MSBuild 3,5, consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
  O exemplo a seguir instrui o MSBuild a usar três processos de trabalho. Se você usar essa configuração, o MSBuild pode compilar três projetos ao mesmo tempo.  
   
@@ -72,7 +72,7 @@ msbuild.exe myproj.proj /maxcpucount:3
 </MSBuild>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Usando vários processadores para compilar projetos](../msbuild/using-multiple-processors-to-build-projects.md)   
- [Escrevendo agentes com reconhecimento de multiprocessador](../msbuild/writing-multi-processor-aware-loggers.md)   
- [Blog: Ajustando o paralelismo de compilação do C++](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)
+ [Escrevendo agentes com reconhecimento de vários processadores](../msbuild/writing-multi-processor-aware-loggers.md)   
+ [Blog de desenvolvimento de paralelismo de compilação C++](https://blogs.msdn.com/b/visualstudio/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)

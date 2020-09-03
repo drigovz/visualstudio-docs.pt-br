@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844196"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Instruções passo a passo: criando um aplicativo de dados de N camadas
@@ -55,7 +55,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
   ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [vídeo como criar um aplicativo de dados de N camadas](https://msdn2.microsoft.com/library/cc178916.aspx).
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir esta explicação passo a passo, será necessário:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -71,7 +71,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 1. No menu **arquivo** , crie um novo projeto.
 
     > [!NOTE]
-    > O **Designer de conjunto de dados** tem suporte em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e C# projetos. Crie o novo projeto em uma dessas linguagens.
+    > O **Designer de conjunto de dados** tem suporte em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projetos do e C#. Crie o novo projeto em uma dessas linguagens.
 
 2. Na caixa de diálogo **novo projeto** , no painel **tipos de projeto** , clique em **Windows**.
 
@@ -86,7 +86,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
      Uma solução NTierWalkthrough que contém o projeto DataEntityTier é criada e adicionada ao **Gerenciador de Soluções**.
 
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Criando a biblioteca de classes para manter os TableAdapters (DataAccessTier)
- A próxima etapa após a criação do projeto DataEntityTier é criar outro projeto de biblioteca de classes. Este projeto manterá o `TableAdapter`s gerado e será chamado de *camada de acesso a dados* do aplicativo. A camada de acesso a dados contém as informações necessárias para se conectar ao banco de dados e geralmente está localizada na camada intermediária.
+ A próxima etapa após a criação do projeto DataEntityTier é criar outro projeto de biblioteca de classes. Este projeto manterá os `TableAdapter` s gerados e será chamado de *camada de acesso a dados* do aplicativo. A camada de acesso a dados contém as informações necessárias para se conectar ao banco de dados e geralmente está localizada na camada intermediária.
 
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>Para criar a nova biblioteca de classes para os TableAdapters
 
@@ -99,7 +99,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
      O projeto DataAccessTier é criado e adicionado à solução NTierWalkthrough.
 
 ## <a name="creating-the-dataset"></a>Criando o conjunto de dados
- A próxima etapa é criar um conjunto de dados tipado. Os conjuntos de dados tipado são criados com a classe do conjunto de dados (incluindo as classes DataTables) e as classes `TableAdapter` em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separa o conjunto de e `TableAdapter`s em projetos diferentes, é a classe DataSet que é movida para o outro projeto, deixando as classes de `TableAdapter` no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os `TableAdapter`s (o projeto DataAccessTier). Você criará o conjunto de dados usando o **Assistente de configuração de fonte de dados**.
+ A próxima etapa é criar um conjunto de dados tipado. Os conjuntos de dados tipado são criados com a classe do conjunto de dados (incluindo as classes DataTables) e as classes `TableAdapter` em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separa o conjunto de e os `TableAdapter` s em projetos diferentes, é a classe do conjunto de um que é movida para o outro projeto, deixando as `TableAdapter` classes no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os `TableAdapter`s (o projeto DataAccessTier). Você criará o conjunto de dados usando o **Assistente de configuração de fonte de dados**.
 
 > [!NOTE]
 > É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão.
@@ -129,7 +129,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 7. Clique em **Avançar** na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** .
 
-8. Expanda o nó **Tabelas** na página **Escolher Objetos do Banco de Dados**.
+8. Expanda o nó **tabelas** na página **escolher seus objetos de banco de dados** .
 
 9. Clique nas caixas de seleção das tabelas **Customers** e **Orders** e, em seguida, clique em **Finish**.
 
@@ -185,11 +185,11 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 6. Na página **Escolher Métodos a Serem Gerados**, digite **GetCustomers** para o **Nome do método** na seção **Retornar uma DataTable**.
 
-7. Clique em **Finalizar**.
+7. Clique em **Concluir**.
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Para criar um método na camada de acesso a dados que retorna a tabela Pedidos
 
-1. Clique com o botão direito do mouse em OrdersTableAdapter e clique em **Adicionar consulta**.
+1. Clique com o botão direito do mouse em OrdersTableAdapter e clique em **Adicionar Consulta**.
 
 2. Na página **Escolher um Tipo de Comando**, mantenha o valor padrão de **Usar instruções SQL** e clique em **Próximo**.
 
@@ -199,7 +199,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 5. Na página **Escolher Métodos a Serem Gerados**, digite **GetOrders** para o **Nome do método** na seção **Retornar uma DataTable**.
 
-6. Clique em **Finalizar**.
+6. Clique em **Concluir**.
 
 7. No menu **Compilar**, clique em **Compilar Solução**.
 
@@ -208,7 +208,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 #### <a name="to-add-references-to-the-data-service"></a>Para adicionar referência aos serviço de dados
 
-1. Clique com o botão direito do mouse em DataService no **Gerenciador de soluções** e clique em **Adicionar referência**.
+1. Clique com o botão direito do mouse em DataService no **Gerenciador de Soluções** e clique em **Adicionar Referência**.
 
 2. Clique na guia **Projetos** na caixa de diálogo **Adicionar Referência**.
 
@@ -329,7 +329,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Para adicionar duas associações de dados DataGridViews ao formulário
 
-1. Em **Gerenciador de soluções**, selecione o projeto PresentationTier.
+1. No **Gerenciador de Soluções**, escolha o projeto PresentationTier.
 
 2. Na janela **Fontes de Dados**, expanda **NorthwindDataSet** e localize o nó **Clientes**.
 
@@ -365,7 +365,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar o valor maxReceivedMessageSize
 
-1. Em **Gerenciador de soluções**, clique duas vezes no arquivo app. config no projeto PresentationTier.
+1. No **Gerenciador de Soluções**, clique duas vezes no arquivo app.config no projeto PresentationTier.
 
 2. Encontre o atributo de tamanho **maxReceivedMessage** e altere o valor para `6553600`.
 
@@ -374,7 +374,7 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 #### <a name="to-test-the-application"></a>Para testar o aplicativo
 
-1. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1}
+1. Pressione F5.
 
 2. Os dados das tabelas Clientes e Pedidos são recuperados a partir do serviço de dados e exibidos no formulário.
 
@@ -385,5 +385,5 @@ Os aplicativos de dados de N camadas * são aplicativos que acessam dados e são
 
 - Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Trabalhar com conjuntos de dados em aplicativos de n camadas](../data-tools/work-with-datasets-in-n-tier-applications.md) [atualizações hierárquicas](../data-tools/hierarchical-update.md) [acessando o Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bae47d5fd759de66777c4e1472603d3bf4a193d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843933"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: evitar usar exceções no fluxo de controle
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitar usar exceções no fluxo de controle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID da regra | DA0007 |  
@@ -41,6 +41,6 @@ ID da regra | DA0007 |
  Para obter mais informações, consulte a seção [Exception Management](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic24) (Gerenciamento de exceções) de **Chapter 5 — Improving Managed Code Performance** (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume **Improving .NET Application Performance and Scalability** (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca **Microsoft Patterns and Practices** (Padrões e Práticas da Microsoft) no MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
- Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição Marcas. Encontre a coluna que contém as medições das **exceções .NET CLR (@ProcessInstance)\\nº de exceções geradas/segundo**. Determine se há fases específicas da execução do programa em que o tratamento de exceção é mais frequente do que em outras. Usando um perfil de amostragem, tente identificar instruções throw e blocos try/catch que geram exceções frequentes. Se necessário, adicione lógica para capturar blocos para ajudá-lo a entender quais exceções são tratadas com mais frequência. Sempre que possível, substitua instruções throw ou blocos catch frequentemente executados por uma lógica de controle de fluxo simples ou um código de validação.  
+ Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição Marcas. Localize a coluna que contém as medidas do **.NET CLR Exceptions ( @ProcessInstance ) \\ n º de exceções lançadas/s** . Determine se há fases específicas da execução do programa em que o tratamento de exceção é mais frequente do que em outras. Usando um perfil de amostragem, tente identificar instruções throw e blocos try/catch que geram exceções frequentes. Se necessário, adicione lógica para capturar blocos para ajudá-lo a entender quais exceções são tratadas com mais frequência. Sempre que possível, substitua instruções throw ou blocos catch frequentemente executados por uma lógica de controle de fluxo simples ou um código de validação.  
   
  Por exemplo, se você descobrir que seu aplicativo está tratando exceções DivideByZeroException frequentes, a adição de lógica ao programa para verificar se há denominadores com valores zero melhorará o desempenho do aplicativo.

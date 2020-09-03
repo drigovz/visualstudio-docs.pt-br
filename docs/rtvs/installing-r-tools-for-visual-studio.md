@@ -10,10 +10,10 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843724"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
@@ -46,7 +46,7 @@ As RTVS não serão instaladas se você tiver somente o Shell do Visual Studio i
 
 1. Defina quaisquer opções adicionais no lado direito, sob o mesmo nome de carga de trabalho. Por padrão, essa carga de trabalho inclui suporte a F# e Python. Para R, os requisitos mínimos são **Suporte à linguagem R**, **Suporte de runtime para desenvolvimento em R** e **Microsoft R Client**.
 
-As RTVS são instaladas em: *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<edition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* em que *\<version>* costuma ser `2017` e *\<edition>* é `Community`, `Professional` ou `Enterprise`.
+O RTVS é instalado em: *% ProgramFiles (x86)% \ Microsoft Visual Studio \<version> \<edition> Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio* , em que *\<version>* normalmente é `2017` *\<edition>* `Community` , `Professional` ou `Enterprise` .
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Instalar as RTVS no Visual Studio 2015
 
@@ -57,14 +57,14 @@ Com o Visual Studio 2015, você precisa instalar um interpretador de R e as Ferr
 As RTVS requerem uma instalação de 64 bits do R versão 3.2.1 ou posterior em uma ou mais das seguintes fontes:
 
 - [Microsoft R Open](https://mran.microsoft.com/download/)
-- [Cliente do Microsoft R](/machine-learning-server/r-client/what-is-microsoft-r-client)
+- [Microsoft R Client](/machine-learning-server/r-client/what-is-microsoft-r-client)
 - [CRAN R](https://cran.r-project.org/bin/windows/base/)
 
 O Microsoft R Open e o CRAN R permitem várias versões lado a lado. O Microsoft R Client, no entanto, dá suporte a apenas uma versão e sempre usa a última que foi instalada.
 
 ### <a name="install-the-r-tools"></a>Instalar as Ferramentas R
 
-Baixe o RTVS atual para Visual [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe)Studio 2015 de . As RTVS verificam se há uma versão adequada do Visual Studio e ajudam a instalar um interpretador de R, caso isso ainda não tenha sido feito.
+Baixe o RTVS atual para o Visual Studio 2015 do [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) . As RTVS verificam se há uma versão adequada do Visual Studio e ajudam a instalar um interpretador de R, caso isso ainda não tenha sido feito.
 
 > [!Note]
 > O instalador autônomo das RTVS funciona apenas com o Visual Studio 2015; com o Visual Studio 2017, instale o suporte ao R por meio da [Carga de trabalho para Aplicativos de ciência de dados e análise](#install-rtvs-in-visual-studio-2017) conforme descrito anteriormente.
@@ -81,7 +81,7 @@ A instalação offline é adequada para computadores que não estão conectados 
 
 1. Siga as instruções para criar uma instalação offline na página da Web.
 
-1. Para o Visual Studio 2015, baixe os [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip)instaladores RTVS offline de e .
+1. Para o Visual Studio 2015, baixe os instaladores offline do RTVS de [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) e [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip) .
 
 1. Instale o Visual Studio e as RTVS dos instaladores offline.
 
@@ -90,5 +90,5 @@ A instalação offline é adequada para computadores que não estão conectados 
 - [Introdução ao R](getting-started-with-r.md)
 - [Projetos de exemplo das Ferramentas do R](getting-started-samples.md)
 - [Ajuda nas Ferramentas do R](getting-started-help.md)
-- [R Opções de ferramentas](options-for-r-tools-in-visual-studio.md)
+- [Opções de Ferramentas R](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (anteriormente conhecido como R Server)](/machine-learning-server/)

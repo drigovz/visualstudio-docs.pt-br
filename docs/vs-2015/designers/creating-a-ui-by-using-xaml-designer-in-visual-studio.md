@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844013"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
@@ -34,15 +34,15 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 ## <a name="authoring-views"></a>Criando modos de exibição
  O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis** para mudar qual janela é exibida no topo: a prancheta ou o Editor XAML.
 
- No modo de exibição de Design, a janela que contém a *prancheta* é a janela ativa e você pode usá-la como superfície de trabalho primária. Você pode usá-la para criar visualmente uma página em seu aplicativo adicionando ou desenhando elementos e depois modificando-os. Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
+ No modo de exibição de Design, a janela que contém a *prancheta* é a janela ativa e você pode usá-la como uma superfície de trabalho principal. Você pode usá-la para criar visualmente uma página em seu aplicativo adicionando ou desenhando elementos e depois modificando-os. Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
 
- ![modo de exibição de Design de Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Modo de exibição de Design do Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Estas funcionalidades estão disponíveis no artboard:
 
  **Guias de alinhamento** As guias de alinhamento são *limites de alinhamento* que são exibidos como linhas vermelhas tracejadas para mostrar quando as bordas dos controles estão alinhadas ou quando as linhas de base de texto estão alinhadas. Os limites de alinhamento só são exibidos quando a opção de **ajuste a guias de alinhamento** está habilitada.
 
- Os trilhos de **grade** `Grid` Rails são usados para gerenciar linhas e colunas em um painel de [grade](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
+ **Trilhos de grade Trilhos ** `Grid` são usados para gerenciar linhas e colunas em um painel de [Grade](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
 
  **Adornos de grade** Um adorno `Grid` é exibido como um triângulo que tem uma linha vertical ou horizontal anexada a ele no trilho `Grid`. Quando você arrasta um adorno `Grid`, as larguras ou alturas das linhas ou colunas adjacentes são atualizadas enquanto o mouse é movimentado.
 
@@ -58,7 +58,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  No modo Design, os comandos adicionais do artboard estão disponíveis na área esquerda inferior da tela, como mostrado aqui:
 
- ![Comandos de modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandos do modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Estes comandos estão disponíveis na barra de ferramentas:
 
@@ -79,9 +79,9 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
  **Zoom de marcação** O zoom de marcação permite dimensionar o modo de exibição XAML. Você pode aplicar zoom de 20% a 400%.
 
 ## <a name="device-window"></a>Janela Dispositivo
- A janela Dispositivo no Designer XAML permite simular em tempo de design vários modos de exibição, vídeos e opções de exibição para seu projeto da Windows Store ou do Windows Phone. A janela Dispositivo está disponível no menu **Design** quando você estiver trabalhando no Designer XAML. Veja como é sua aparência:
+ A janela Dispositivo no Designer XAML permite simular em tempo de design vários modos de exibição, vídeos e opções de exibição para seu projeto da Windows Store ou do Windows Phone. A janela Dispositivo fica disponível no menu **Design** quando você está trabalhando no Designer XAML. Esta é a aparência dele:
 
- ![Janela do dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Janela Dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Estas são as opções disponíveis na janela Dispositivo:
 
@@ -108,7 +108,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
 - Exibir a estrutura hierárquica de todos os elementos no artboard.
 
-- Selecionar elementos para que você possa modificá-los (movê-los na hierarquia, modificá-los no artboard, definir suas propriedades na janela Propriedades e assim por diante). Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md)
+- Selecionar elementos para que você possa modificá-los (movê-los na hierarquia, modificá-los no artboard, definir suas propriedades na janela Propriedades e assim por diante). Para obter mais informações, consulte [trabalhando com elementos no designer XAML](../designers/working-with-elements-in-xaml-designer.md)
 
 - Criar e modificar modelos para elementos que são controles.
 
@@ -122,20 +122,20 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
   **Estrutura de Tópicos do Documento** O modo de exibição principal na janela Estrutura de Tópicos de Documento exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos.
 
-  **Mostrar/ocultar** Exibe ou oculta os elementos da prancheta que correspondem aos itens na Estrutura de Tópicos de Documento. Use os botões **Mostrar/ocultar**, que exibem um símbolo de olho quando mostrados ou pressione CTRL+H para ocultar elementos e SHIFT+CTRL+H para exibi-los.
+  **Mostrar/ocultar** Exibe ou oculta os elementos da prancheta que correspondem aos itens na Estrutura de Tópicos de Documento. Use os botões **Mostrar/ocultar** , que exibem um símbolo de olho quando mostrado ou pressione CTRL + h para ocultar os elementos e Shift + Ctrl + h para exibi-los.
 
-  **Bloquear/desbloquear** Bloqueia ou desbloqueia os elementos da prancheta que correspondem aos itens na Estrutura de Tópicos de Documento. Os elementos bloqueados não podem ser modificados. Use os botões **Bloquear/desbloquear**, que exibem um símbolo de cadeado quando bloqueados ou pressione CTRL+L para bloquear elementos e SHIFT+CTRL+L para desbloqueá-los.
+  **Bloquear/desbloquear** Bloqueia ou desbloqueia os elementos da prancheta que correspondem aos itens na Estrutura de Tópicos de Documento. Os elementos bloqueados não podem ser modificados. Use os botões **bloquear/desbloquear** , que exibem um símbolo de cadeado quando bloqueado ou pressione CTRL + l para bloquear elementos e SHIFT + CTRL + l para desbloqueá-los.
 
   **Retornar escopo para pageRoot** A opção na parte superior da janela Estrutura de Tópicos de Documento, que mostra um símbolo de seta para cima, retorna a estrutura de tópicos de documento ao escopo anterior. O controle de escopo só é aplicável quando você está no escopo de um estilo ou modelo.
 
 ## <a name="properties-window"></a>Janela de Propriedades
- A janela Propriedades permite definir valores de propriedade em controles. Veja como é sua aparência:
+ A janela Propriedades permite definir valores de propriedade em controles. Esta é a aparência dele:
 
- ![Janela Propriedades](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
+ ![Janela de Propriedades](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
  Há várias opções na parte superior da janela Propriedades. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela Propriedades exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações sobre como usar propriedades e manipular eventos, veja o artigo sobre [Guia de início rápido: adicionando controles e manipulando eventos](https://msdn.microsoft.com/library/windows/apps/xaml/hh465336.aspx)
 
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  Como [trabalhar com elementos no designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [: associação a dados em designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

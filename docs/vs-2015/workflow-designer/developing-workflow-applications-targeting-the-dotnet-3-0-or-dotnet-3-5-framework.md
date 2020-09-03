@@ -12,21 +12,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843871"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Aplicativos de fluxo de trabalho desenvolvendo que usam o .NET 3,0 ou o .NET Framework 3.5
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornece o [!INCLUDE[wfd1](../includes/wfd1-md.md)] para criar [!INCLUDE[wf](../includes/wf-md.md)] aplicativos que se destinam ao [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. O designer usa a interface do usuário e de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para a compilação e a depuração de aplicativos gráficos de fluxo de trabalho.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] fornece o [!INCLUDE[wfd1](../includes/wfd1-md.md)] para criar [!INCLUDE[wf](../includes/wf-md.md)] aplicativos direcionados para o [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . O designer usa a interface do usuário e de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para a compilação e a depuração de aplicativos gráficos de fluxo de trabalho.
 
- [!INCLUDE[vs2010](../includes/vs2010-md.md)] também fornece acesso a um designer de fluxo de trabalho herdado que pode ser usado para direcionar o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Esta seção contém a orientação sobre como usar este designer herdado.
+ [!INCLUDE[vs2010](../includes/vs2010-md.md)] também fornece acesso a um designer de fluxo de trabalho herdado que pode ser usado para direcionar o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] . Esta seção contém a orientação sobre como usar este designer herdado.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Usando o Designer de Fluxo de Trabalho herdado](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Usando Designer de Fluxo de Trabalho herdado](../workflow-designer/using-the-legacy-workflow-designer.md)
 
  [Depurando fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>Seções Relacionadas
- [Guia de programação Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)
+## <a name="related-sections"></a>Seções relacionadas
+ [Guia de programação do Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)

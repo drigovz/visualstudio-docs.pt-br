@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: abdf76c7f5f031d2ef7f3bcac2bae8a2c508b783
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738352"
 ---
 # <a name="modules"></a>Módulos
-Em termos da arquitetura de depurador, um *módulo:*
+Em termos da arquitetura do depurador, um *módulo*:
 
-- É um recipiente físico de código, como um arquivo executável ou um DLL.
+- É um contêiner físico de código, como um arquivo executável ou uma DLL.
 
-- Pode recarregar seus símbolos e descrever a si mesmo. As descrições dos módulos são exibidas na janela Módulos do IDE.
+- Pode recarregar seus símbolos e se descrever. As descrições de módulo são exibidas na janela módulos do IDE.
 
-- É representado por uma interface [IDebugModule2,](../../extensibility/debugger/reference/idebugmodule2.md) criada por um mecanismo de depuração para descrever o módulo.
+- É representado por uma interface [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , criada por um mecanismo de depuração para descrever o módulo.
 
 ## <a name="see-also"></a>Confira também
-- [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)
