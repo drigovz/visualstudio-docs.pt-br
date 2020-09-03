@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bfef86b8ea82077ba7fe3f753f9835c06c3380a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156655"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como compilar destinos específicos em soluções usando o MSBuild.exe
@@ -38,7 +38,7 @@ Você pode usar MSBuild.exe para compilar destinos específicos de projetos espe
 msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
  [MSBuild](msbuild.md)  

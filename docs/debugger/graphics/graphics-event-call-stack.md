@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735508"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
@@ -32,14 +32,14 @@ A pilha de chamadas de evento de gráficos no Analisador de Gráficos do Visual 
 ### <a name="graphics-event-call-stack-information"></a>Informações sobre a pilha de chamadas de gráfico
  A pilha de chamadas de evento não dá suporte a eventos de pré-quadro ou a eventos definidos pelo usuário. A pilha de chamadas de eventos de gráficos é exibida em um formato de tabela.
 
-|Column|Descrição|
+|Coluna|Descrição|
 |------------|-----------------|
 |**Nome**|Um símbolo que identifica a função que contém o site de chamada. O símbolo de depuração da função é exibido quando ela está disponível. Caso contrário, o deslocamento de função é exibido.|
 |**Arquivo**|O nome do arquivo do código-fonte ou arquivo de biblioteca que contém o site de chamada.|
-|**Local**|O número de linha do site de chamada.|
+|**Localidade**|O número de linha do site de chamada.|
 
 ### <a name="links-to-graphics-objects"></a>Links a objetos de gráficos
  Para entender o evento de gráficos selecionado, talvez seja necessário obter informações sobre os objetos do Direct3D associados a ele. A janela **pilha de chamadas de evento de gráficos** fornece links para essas informações.
 
-## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+## <a name="see-also"></a>Confira também
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)

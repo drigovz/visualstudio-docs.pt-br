@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602267"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
@@ -32,23 +32,23 @@ ms.locfileid: "72602267"
 - Tentam abrir o site da Web indicado quando você pressiona **CTRL** + clique com o botão esquerdo do mouse no link. Por padrão, o site da Web é exibido no navegador da Web interno.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos de menu encontrados podem diferir daqueles descritos na Ajuda, dependendo das configurações ativas ou edição. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Procedimento
 
 #### <a name="to-display-urls-as-links"></a>Para exibir URLs como links
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Clique em **Editor de Texto**.
 
 3. Para alterar a opção para apenas uma linguagem, expanda a pasta dessa linguagem e escolha **Geral**.
 
-     —ou—
+     — ou —
 
      Para alterar a opção para todas as linguagens, expanda a pasta **Todas as Linguagens** e escolha **Geral**.
 
 4. Em **Exibir**, selecione **Habilitar navegação de URL com um único clique**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizando a caixa de](../../ide/customizing-the-editor.md) [diálogo opções do editor de texto](../../ide/reference/text-editor-options-dialog-box.md) de editor [escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)

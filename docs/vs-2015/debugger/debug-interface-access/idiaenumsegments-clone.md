@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1def1f595b1b6afcedc36612f4e1c9cf33882b02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189937"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
@@ -35,10 +35,10 @@ HRESULT Clone ( 
   
 #### <a name="parameters"></a>Parâmetros  
  ppenum  
- [out] Retorna um [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) objeto que contém uma duplicata do enumerador. Os segmentos não são duplicados, apenas o enumerador.  
+ fora Retorna um objeto [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md) que contém uma duplicata do enumerador. Os segmentos não são duplicados, somente o enumerador.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

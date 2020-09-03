@@ -13,18 +13,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15ac788bf81ce83c2658b8a88a68ac5281020373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205082"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Especifica o estado de um ponto de interrupção pendente (um ponto de interrupção que ainda não foi associado).  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_PENDING_BP_STATE {   
@@ -59,15 +59,15 @@ public enum enum_PENDING_BP_STATE { 
  Indica que o ponto de interrupção pendente está habilitado.  
   
 ## <a name="remarks"></a>Comentários  
- Usar como o `state` membro a [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estrutura.  
+ Use como o `state` membro da estrutura de [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

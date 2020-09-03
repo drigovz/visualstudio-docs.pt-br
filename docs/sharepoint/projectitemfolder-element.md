@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539809"
 ---
 # <a name="projectitemfolder-element"></a>Elemento ProjectItemFolder
@@ -29,7 +29,7 @@ ms.locfileid: "85539809"
     Type = "Type of deployment for the mapped folder" />
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
  **ProjectItemFolderType**
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
@@ -39,7 +39,7 @@ ms.locfileid: "85539809"
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|**Destino**|Atributo **xs: String** necessário.<br /><br /> O caminho da pasta na instalação do SharePoint à qual a pasta mapeada corresponde, em relação à pasta raiz da implantação. A pasta raiz de implantação é determinada pelo tipo de implantação especificado pelo atributo de **tipo** .<br /><br /> Para obter mais informações, consulte as descrições das propriedades **caminho de implantação** e raiz de **implantação** dos itens de projeto do SharePoint em [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Target (destino)**|Atributo **xs: String** necessário.<br /><br /> O caminho da pasta na instalação do SharePoint à qual a pasta mapeada corresponde, em relação à pasta raiz da implantação. A pasta raiz de implantação é determinada pelo tipo de implantação especificado pelo atributo de **tipo** .<br /><br /> Para obter mais informações, consulte as descrições das propriedades **caminho de implantação** e raiz de **implantação** dos itens de projeto do SharePoint em [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 |**Tipo**|Atributo **xs: String** necessário.<br /><br /> O tipo de implantação para a pasta mapeada. Para obter mais informações sobre os valores possíveis, consulte a descrição para a propriedade **tipo de implantação** de itens de projeto do SharePoint em [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementos filho
@@ -63,6 +63,6 @@ ms.locfileid: "85539809"
 |**Arquivo de validação**|ProjectItemModelSchema. xsd|
 |**Pode estar vazio**|Não|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de item de projeto do SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 - [Como: Adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md)

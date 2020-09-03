@@ -1,5 +1,5 @@
 ---
-title: Suporte para trechos de código em um serviço de linguagem legado | Microsoft Docs
+title: Suporte para trechos de código em um serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,52 +13,52 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad871eb73341f6ab87229687e2a6df898ffda32d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704907"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
-Um trecho de código é um pedaço de código que é inserido no arquivo de origem. O trecho em si é um modelo baseado em XML com um conjunto de campos. Esses campos são destacados após a inserção do trecho e podem ter valores diferentes dependendo do contexto em que o trecho é inserido. Imediatamente após a inserção do trecho, o serviço de idioma pode formatar o trecho.
+Um trecho de código é uma parte do código que é inserido no arquivo de origem. O trecho em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados após o trecho de código ser inserido e podem ter valores diferentes, dependendo do contexto no qual o trecho de código é inserido. Imediatamente após a inserção do trecho de código, o serviço de linguagem pode formatar o trecho de código.
 
- O trecho é inserido em um modo de edição especial que permite que os campos do trecho sejam navegados usando a tecla TAB. Os campos podem suportar menus suspensos no estilo IntelliSense. O usuário compromete o trecho ao arquivo de origem digitando a chave ENTER ou ESC. Para saber mais sobre trechos, consulte [Code Snippets](../../ide/code-snippets.md).
+ O trecho de código é inserido em um modo de edição especial que permite que os campos do trecho de código sejam navegados usando a tecla TAB. Os campos podem dar suporte a menus suspensos estilo IntelliSense. O usuário confirma o trecho de código para o arquivo de origem digitando a tecla ENTER ou ESC. Para saber mais sobre trechos de código, consulte [trechos de códigos](../../ide/code-snippets.md).
 
- Os serviços de linguagem legados são implementados como parte de um VSPackage, mas a maneira mais nova de implementar recursos de serviço de idioma é usar extensões MEF. Para saber mais, consulte [Passo a Passo: Implementando Trechos de Código](../../extensibility/walkthrough-implementing-code-snippets.md).
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para obter mais informações, consulte [Walkthrough: implementando trechos de código](../../extensibility/walkthrough-implementing-code-snippets.md).
 
 > [!NOTE]
-> Recomendamos que você comece a usar a Nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de idiomas e permitirá que você aproveite os novos recursos do editor.
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.
 
-## <a name="managed-package-framework-support-for-code-snippets"></a>Suporte ao framework do pacote gerenciado para trechos de código
- O MPF (Managed Package Framework, quadro de pacotes gerenciados) suporta a maioria das funcionalidades de trechos, desde a leitura do modelo até a inserção do trecho e a habilitação do modo de edição especial. O suporte é <xref:Microsoft.VisualStudio.Package.ExpansionProvider> gerenciado através da classe.
+## <a name="managed-package-framework-support-for-code-snippets"></a>Suporte à estrutura de pacote gerenciado para trechos de código
+ A MPF (estrutura de pacote gerenciada) dá suporte à maioria das funcionalidades de trecho de código, desde a leitura do modelo até a inserção do trecho e a habilitação do modo de edição especial. O suporte é gerenciado por meio da <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe.
 
- Quando <xref:Microsoft.VisualStudio.Package.Source> a classe é <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> instanciada, <xref:Microsoft.VisualStudio.Package.LanguageService> o método na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe é chamado <xref:Microsoft.VisualStudio.Package.LanguageService> para obter <xref:Microsoft.VisualStudio.Package.ExpansionProvider> um objeto <xref:Microsoft.VisualStudio.Package.Source> (observe que a classe base sempre retorna um novo objeto para cada objeto).
+ Quando a <xref:Microsoft.VisualStudio.Package.Source> classe é instanciada, o <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> método na <xref:Microsoft.VisualStudio.Package.LanguageService> classe é chamado para obter um <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto (Observe que a classe base <xref:Microsoft.VisualStudio.Package.LanguageService> sempre retorna um novo <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto para cada <xref:Microsoft.VisualStudio.Package.Source> objeto).
 
- O MPF não suporta funções de expansão. Uma função de expansão é uma função nomeada que está incorporada em um modelo de trecho e retorna um ou mais valores para serem colocados em um campo. Os valores são devolvidos pelo <xref:Microsoft.VisualStudio.Package.ExpansionFunction> próprio serviço de linguagem através de um objeto. O <xref:Microsoft.VisualStudio.Package.ExpansionFunction> objeto deve ser implementado pelo serviço de idiomas para suportar funções de expansão.
+ O MPF não oferece suporte a funções de expansão. Uma função de expansão é uma função nomeada que é inserida em um modelo de trecho e retorna um ou mais valores a serem colocados em um campo. Os valores são retornados pelo próprio serviço de linguagem por meio de um <xref:Microsoft.VisualStudio.Package.ExpansionFunction> objeto. O <xref:Microsoft.VisualStudio.Package.ExpansionFunction> objeto deve ser implementado pelo serviço de linguagem para dar suporte a funções de expansão.
 
 ## <a name="providing-support-for-code-snippets"></a>Fornecendo suporte para trechos de código
- Para habilitar o suporte para trechos de código, você deve fornecer ou instalar os trechos e deve fornecer os meios para que o usuário insira esses trechos. Existem três etapas para habilitar o suporte para trechos de código:
+ Para habilitar o suporte para trechos de código, você deve fornecer ou instalar os trechos e deve fornecer os meios para que o usuário insira esses trechos. Há três etapas para habilitar o suporte para trechos de código:
 
-1. Instalando os arquivos de trecho.
+1. Instalando os arquivos de trecho de código.
 
-2. Habilitando trechos de código para o seu serviço de idioma.
+2. Habilitando trechos de código para seu serviço de idioma.
 
-3. Invocando <xref:Microsoft.VisualStudio.Package.ExpansionProvider> o objeto.
+3. Invocando o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.
 
-### <a name="installing-the-snippet-files"></a>Instalando os arquivos de snippet
- Todos os trechos de um idioma são armazenados como modelos em arquivos XML, normalmente um modelo de trecho por arquivo. Para obter detalhes sobre o esquema XML usado para modelos de trechos de código, consulte [Code Snippets Schema Reference](../../ide/code-snippets-schema-reference.md). Cada modelo de trecho é identificado com um ID de idioma. Este ID de idioma é especificado no `Language` registro \<e é colocado no atributo da marca Code> no modelo.
+### <a name="installing-the-snippet-files"></a>Instalando os arquivos de trecho de código
+ Todos os trechos de código de um idioma são armazenados como modelos em arquivos XML, normalmente um modelo de trecho por arquivo. Para obter detalhes sobre o esquema XML usado para modelos de trecho de código, consulte [referência de esquema de trechos de código](../../ide/code-snippets-schema-reference.md). Cada modelo de trecho de código é identificado com uma ID de idioma. Essa ID de idioma é especificada no registro e é colocada no `Language` atributo da \<Code> marca no modelo.
 
- Existem tipicamente dois locais onde os arquivos de modelo de trecho são armazenados: 1) onde seu idioma foi instalado e 2) na pasta do usuário. Esses locais são adicionados ao registro para que o Gerenciador **de Trechos de Código visual** do estúdio possa encontrar os trechos. A pasta do usuário é onde os trechos criados pelo usuário são armazenados.
+ Normalmente, há dois locais em que os arquivos de modelo de trecho são armazenados: 1) em que o idioma foi instalado e 2) na pasta do usuário. Esses locais são adicionados ao registro para que o **Gerenciador de trechos de código** do Visual Studio possa encontrar os trechos. A pasta do usuário é onde os trechos de código criados pelo usuário são armazenados.
 
- O layout típico da pasta para os arquivos de modelo de trecho instalados é\\assim: *[InstallRoot]*\\ *[TestLanguage]* \Snippets *[LCID]* \Snippets.
+ O layout de pasta típico para os arquivos de modelo de trecho instalados é semelhante a este: *[InstallRoot]* \\ *[TestLanguage]* \Snippets \\ *[LCID]* \Snippets.
 
- *[InstallRoot]* é a pasta em que seu idioma está instalado.
+ *[InstallRoot]* é a pasta na qual seu idioma está instalado.
 
  *[TestLanguage]* é o nome do seu idioma como um nome de pasta.
 
- *[LCID]* é o ID local. É assim que as versões localizadas de seus trechos são armazenadas. Por exemplo, o ID local para inglês é 1033, então *[LCID]* é substituído por 1033.
+ *[LCID]* é a ID de localidade. É assim que as versões localizadas dos trechos de código são armazenadas. Por exemplo, a ID de localidade para inglês é 1033, portanto, *[LCID]* é substituído por 1033.
 
- Um arquivo adicional deve ser fornecido e esse é um arquivo de índice, tipicamente chamado SnippetsIndex.xml ou ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido terminando em .xml). Este arquivo é normalmente armazenado na pasta *[InstallRoot]*\\ *[TestLanguage]* e especifica a localização exata da pasta de trechos, bem como o ID de idioma e GUID do serviço de idioma que usa os trechos. O caminho exato do arquivo de índice é colocado no registro conforme descrito posteriormente em "Instalação das Entradas de Registro". Aqui está um exemplo de um arquivo SnippetsIndex.xml:
+ Um arquivo adicional deve ser fornecido e é um arquivo de índice, normalmente chamado de SnippetsIndex.xml ou de ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido que termine em. xml). Normalmente, esse arquivo é armazenado na pasta *[InstallRoot]* \\ *[TestLanguage]* e especifica o local exato da pasta de trechos de código, bem como a ID de idioma e o GUID do serviço de idioma que usa os trechos de código. O caminho exato do arquivo de índice é colocado no registro, conforme descrito posteriormente em "Instalando as entradas do registro". Aqui está um exemplo de um arquivo de SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -75,26 +75,26 @@ Um trecho de código é um pedaço de código que é inserido no arquivo de orig
 </SnippetCollection>
 ```
 
- A \<tag> idioma especifica o `Lang` ID do idioma (o atributo) e o serviço de idioma GUID.
+ A \<Language> marca especifica a ID do idioma (o `Lang` atributo) e o GUID do serviço de idioma.
 
- Este exemplo pressupõe que você tenha instalado seu serviço de idioma na pasta de instalação do Visual Studio. O %LCID% é substituído pelo ID local atual do usuário. Várias \<tags SnippetDir> podem ser adicionadas, uma para cada diretório e local diferentes. Além disso, uma pasta de trecho pode conter subpastas, cada uma \<das quais é identificada no arquivo \<de índice com a tag SnippetSubDir> que está incorporada em uma tag SnippetDir>.
+ Este exemplo pressupõe que você instalou o serviço de idioma na pasta de instalação do Visual Studio. O% LCID% é substituído pela ID de localidade atual do usuário. Várias \<SnippetDir> marcas podem ser adicionadas, uma para cada diretório e localidade diferentes. Além disso, uma pasta de trecho de código pode conter subpastas, cada uma identificada no arquivo de índice com a \<SnippetSubDir> marca que é inserida em uma \<SnippetDir> marca.
 
- Os usuários também podem criar seus próprios trechos para o seu idioma. Estes são normalmente armazenados na pasta de configurações do usuário, por\\exemplo *[TestDocs]* \Code Snippets *[TestLanguage]* \Test Code Snippets, onde *[TestDocs]* é a localização da pasta de configurações do usuário para o Visual Studio.
+ Os usuários também podem criar seus próprios trechos de código para seu idioma. Normalmente, eles são armazenados na pasta de configurações do usuário, por exemplo, *[TestDocs]* \Code Snippets \\ *[TestLanguage]* \test trechos de código, em que *[TestDocs]* é o local da pasta de configurações do usuário para o Visual Studio.
 
- Os seguintes elementos de substituição podem \<ser colocados no caminho armazenado na> de DirPath no arquivo de índice.
+ Os seguintes elementos de substituição podem ser colocados no caminho armazenado na \<DirPath> marca no arquivo de índice.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|%LCID%|ID Locale.|
-|%InstallRoot%|Pasta de instalação raiz para o Visual Studio, por exemplo, C:\Program Files\Microsoft Visual Studio 8.|
-|%ProjDir%|Pasta contendo o projeto atual.|
-|%ProjItem%|Pasta contendo o item atual do projeto.|
-|%TestDocs%|Pasta na pasta de configurações do usuário, por exemplo,\\C:\Documentos e Configurações *[nome de usuário]* \Meus documentos\Visual Studio\8.|
+|LCID|ID da localidade.|
+|InstallRoot|Pasta de instalação raiz do Visual Studio, por exemplo, C:\Program Files\Microsoft Visual Studio 8.|
+|%ProjDir%|Pasta que contém o projeto atual.|
+|%ProjItem%|Pasta que contém o item de projeto atual.|
+|%TestDocs%|Na pasta configurações do usuário, por exemplo, C:\Documents and Settings \\ *[nome de usuário]* \Meus Documentos\Visual Studio\8.|
 
-### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitando trechos de código para o seu serviço de idioma
- Você pode habilitar trechos de código <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> para o seu serviço de idioma adicionando o atributo ao seu VSPackage (consulte [Registrando um serviço de idioma legado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes). Os <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parâmetros e parâmetros são `SearchPaths` opcionais, mas você deve incluir o parâmetro nomeado para informar o **Gerenciador de trechos** de código da localização de seus trechos.
+### <a name="enabling-code-snippets-for-your-language-service"></a>Habilitando trechos de código para seu serviço de idioma
+ Você pode habilitar trechos de código para seu serviço de idioma adicionando o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atributo ao seu VSPackage (consulte [registrando um serviço de idioma herdado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes). Os <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parâmetros e são opcionais, mas você deve incluir o `SearchPaths` parâmetro nomeado para informar o **Gerenciador de trechos de código** do local dos trechos.
 
- A seguir, um exemplo de como usar este atributo:
+ Veja a seguir um exemplo de como usar esse atributo:
 
 ```
 [ProvideLanguageCodeExpansion(
@@ -106,18 +106,18 @@ Um trecho de código é um pedaço de código que é inserido no arquivo de orig
          SearchPaths = @"%InstallRoot%\Test Snippet Language\Snippets\%LCID%\")]    // Path to snippets
 ```
 
-### <a name="calling-the-expansion-provider"></a>Chamando o Provedor de Expansão
- O serviço de idiomacontrola a inserção de qualquer trecho de código, bem como a forma como a inserção é invocada.
+### <a name="calling-the-expansion-provider"></a>Chamando o provedor de expansão
+ O serviço de linguagem controla a inserção de qualquer trecho de código, bem como a inserção de como é invocada.
 
 ## <a name="calling-the-expansion-provider-for-code-snippets"></a>Chamando o provedor de expansão para trechos de código
- Existem duas maneiras de invocar o provedor de expansão: usando um comando de menu ou usando um atalho de uma lista de conclusão.
+ Há duas maneiras de invocar o provedor de expansão: usando um comando de menu ou usando um atalho de uma lista de conclusão.
 
-### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserindo um trecho de código usando um comando menu
- Para usar um comando de menu para exibir o navegador de <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> trecho, <xref:Microsoft.VisualStudio.Package.ExpansionProvider> adicione um comando de menu e, em seguida, chame o método na interface em resposta a esse comando menu.
+### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserindo um trecho de código usando um comando de menu
+ Para usar um comando de menu para exibir o navegador de trechos de código, você adiciona um comando de menu e, em seguida, chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface em resposta a esse comando de menu.
 
-1. Adicione um comando e um botão ao seu arquivo .vsct. Você pode encontrar instruções para [fazê-lo](../../extensibility/creating-an-extension-with-a-menu-command.md)em Criar uma extensão com um comando menu .
+1. Adicione um comando e um botão ao seu arquivo. vsct. Você pode encontrar instruções para fazer isso na [criação de uma extensão com um comando de menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2. Obtenha uma classe <xref:Microsoft.VisualStudio.Package.ViewFilter> da classe <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> e anule o método para indicar suporte para o novo comando menu. Este exemplo sempre permite o comando menu.
+2. Derive uma classe da <xref:Microsoft.VisualStudio.Package.ViewFilter> classe e substitua o <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar suporte para o novo comando de menu. Este exemplo sempre habilita o comando de menu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Um trecho de código é um pedaço de código que é inserido no arquivo de orig
     }
     ```
 
-3. Anular o <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método <xref:Microsoft.VisualStudio.Package.ViewFilter> na classe <xref:Microsoft.VisualStudio.Package.ExpansionProvider> para obter <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> o objeto e chamar o método sobre esse objeto.
+3. Substitua o <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método na <xref:Microsoft.VisualStudio.Package.ViewFilter> classe para obter o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto e chamar o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método nesse objeto.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -203,7 +203,7 @@ Um trecho de código é um pedaço de código que é inserido no arquivo de orig
 
     ```
 
-     Os seguintes métodos na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe são chamados pelo Visual Studio na ordem dada durante o processo de inserção do trecho:
+     Os métodos a seguir na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe são chamados pelo Visual Studio na ordem determinada durante o processo de inserção do trecho de código:
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
@@ -215,16 +215,16 @@ Um trecho de código é um pedaço de código que é inserido no arquivo de orig
 
 8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-     Depois <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> que o método é chamado, o trecho <xref:Microsoft.VisualStudio.Package.ExpansionProvider> foi inserido e o objeto está em um modo de edição especial usado para modificar um trecho que acaba de ser inserido.
+     Depois que o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> método é chamado, o trecho de código foi inserido e o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto está em um modo de edição especial usado para modificar um trecho de código que acabou de ser inserido.
 
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Inserindo um trecho de código usando um atalho
- A implementação de um atalho de uma lista de conclusão está muito mais envolvida do que implementar um comando de menu. Primeiro, você deve adicionar atalhos de trecho à lista de conclusão de palavras do IntelliSense. Em seguida, você deve detectar quando um nome de atalho de trecho foi inserido como resultado da conclusão. Finalmente, você deve obter o título e o caminho do trecho <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> usando <xref:Microsoft.VisualStudio.Package.ExpansionProvider> o nome do atalho e passar essas informações para o método no método.
+ A implementação de um atalho de uma lista de conclusão é muito mais envolvida do que a implementação de um comando de menu. Primeiro, você deve adicionar atalhos de trecho à lista de preenchimento de palavra do IntelliSense. Em seguida, você deve detectar quando um nome de atalho de trecho de código foi inserido como resultado da conclusão. Por fim, você deve obter o título e o caminho do trecho de código usando o nome do atalho e passar essas informações para o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> método.
 
- Para adicionar atalhos de trecho à lista de <xref:Microsoft.VisualStudio.Package.Declarations> conclusão de <xref:Microsoft.VisualStudio.Package.AuthoringScope> palavras, adicione-os ao objeto da sua classe. Você deve ter certeza de que pode identificar o atalho como um nome de trecho. Por exemplo, consulte [Passo a Passo: Obtendo uma lista de trechos de código instalados (implementação legado)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).
+ Para adicionar atalhos de trecho à lista de preenchimento de palavras, adicione-os ao <xref:Microsoft.VisualStudio.Package.Declarations> objeto em sua <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe. Você deve certificar-se de que você possa identificar o atalho como um nome de trecho de código. Para obter um exemplo, consulte [Walkthrough: obtendo uma lista de trechos de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).
 
- Você pode detectar a inserção do <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> atalho de <xref:Microsoft.VisualStudio.Package.Declarations> trecho de código no método da classe. Como o nome do trecho já foi inserido no arquivo de origem, ele deve ser removido quando a expansão for inserida. O <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método toma um período que descreve o ponto de inserção para o trecho; se a extensão incluir o nome de trecho inteiro no arquivo de origem, esse nome será substituído pelo trecho.
+ Você pode detectar a inserção do atalho de trecho de código no <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> método da <xref:Microsoft.VisualStudio.Package.Declarations> classe. Como o nome do trecho de código já foi inserido no arquivo de origem, ele deve ser removido quando a expansão é inserida. O <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método usa um Span que descreve o ponto de inserção para o trecho de código; se a extensão incluir o nome inteiro do trecho no arquivo de origem, esse nome será substituído pelo trecho.
 
- Aqui está uma <xref:Microsoft.VisualStudio.Package.Declarations> versão de uma classe que lida com a inserção de trechos dado um nome de atalho. Outros métodos <xref:Microsoft.VisualStudio.Package.Declarations> da classe foram omitidos para clareza. Note que o construtor desta <xref:Microsoft.VisualStudio.Package.LanguageService> classe leva um objeto. Isso pode ser passado a <xref:Microsoft.VisualStudio.Package.AuthoringScope> partir de sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto (por exemplo, sua implementação da classe pode pegar o <xref:Microsoft.VisualStudio.Package.LanguageService> objeto em seu construtor e passar esse objeto para o construtor `TestDeclarations` da classe).
+ Aqui está uma versão de uma <xref:Microsoft.VisualStudio.Package.Declarations> classe que manipula a inserção de trecho de código dado um nome de atalho. Outros métodos na <xref:Microsoft.VisualStudio.Package.Declarations> classe foram omitidos para maior clareza. Observe que o construtor dessa classe usa um <xref:Microsoft.VisualStudio.Package.LanguageService> objeto. Isso pode ser passado de sua versão do <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto (por exemplo, sua implementação da <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe pode levar o <xref:Microsoft.VisualStudio.Package.LanguageService> objeto em seu construtor e passar esse objeto para seu `TestDeclarations` Construtor de classe).
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -325,7 +325,7 @@ namespace TestLanguagePackage
 }
 ```
 
- Quando o serviço de idioma recebe <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> o nome do atalho, ele chama o método para obter o nome do arquivo e o título do trecho de código. O serviço de <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> idiomas <xref:Microsoft.VisualStudio.Package.ExpansionProvider> então chama o método na classe para inserir o trecho de código. Os seguintes métodos são chamados pelo Visual <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Studio na ordem dada na classe durante o processo de inserção do trecho:
+ Quando o serviço de linguagem Obtém o nome do atalho, ele chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> método para obter o nome de arquivo e o título do trecho de código. Em seguida, o serviço de linguagem chama o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> método na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe para inserir o trecho de código. Os métodos a seguir são chamados pelo Visual Studio na ordem especificada na <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe durante o processo de inserção do trecho de código:
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-   Para obter mais informações sobre como obter uma lista de trechos de código instalados para o serviço de idioma, consulte [Passo a Passo: Obtendo uma lista de trechos de código instalados (Implementação legado)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).
+   Para obter mais informações sobre como obter uma lista de trechos de código instalados para seu serviço de idioma, consulte [passo a passos: obtendo uma lista de trechos de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).
 
-## <a name="implementing-the-expansionfunction-class"></a>Implementando a classe expansionfunction class
- Uma função de expansão é uma função nomeada que está incorporada em um modelo de trecho e retorna um ou mais valores para serem colocados em um campo. Para suportar funções de expansão em seu serviço de <xref:Microsoft.VisualStudio.Package.ExpansionFunction> idioma, <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> você deve derivar uma classe da classe e implementar o método. Em seguida, você <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> deve <xref:Microsoft.VisualStudio.Package.LanguageService> substituir o método na classe para retornar <xref:Microsoft.VisualStudio.Package.ExpansionFunction> uma nova instanciação da sua versão da classe para cada função de expansão que você suporta. Se você apoiar uma lista de valores possíveis de <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> uma função <xref:Microsoft.VisualStudio.Package.ExpansionFunction> de expansão, você também deve substituir o método na classe para retornar uma lista desses valores.
+## <a name="implementing-the-expansionfunction-class"></a>Implementando a classe ExpansionFunction
+ Uma função de expansão é uma função nomeada que é inserida em um modelo de trecho e retorna um ou mais valores a serem colocados em um campo. Para dar suporte a funções de expansão em seu serviço de idioma, você deve derivar uma classe da <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe e implementar o <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> método. Em seguida, você deve substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> método na <xref:Microsoft.VisualStudio.Package.LanguageService> classe para retornar uma nova instanciação da sua versão da <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para cada função de expansão com suporte. Se você oferecer suporte a uma lista de valores possíveis de uma função de expansão, você também deverá substituir o <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> método na <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe para retornar uma lista desses valores.
 
- Uma função de expansão que leva argumentos ou necessidades para acessar outros campos não deve ser associada a um campo editável, pois o provedor de expansão pode não ser totalmente inicializado no momento em que a função de expansão é chamada. Como resultado, a função de expansão não é capaz de obter o valor de seus argumentos ou qualquer outro campo.
+ Uma função de expansão que usa argumentos ou precisa acessar outros campos não deve ser associada a um campo editável, pois o provedor de expansão pode não ser totalmente inicializado pelo tempo que a função de expansão é chamada. Como resultado, a função de expansão não é capaz de obter o valor de seus argumentos ou de qualquer outro campo.
 
 ### <a name="example"></a>Exemplo
- Aqui está um exemplo de como `GetName` uma simples função de expansão chamada pode ser implementada. Esta função de expansão anexa um número a um nome de classe base cada vez que a função de expansão é instanciada (o que corresponde a cada vez que o trecho de código associado é inserido).
+ Aqui está um exemplo de como uma função de expansão simples chamada `GetName` pode ser implementada. Essa função de expansão acrescenta um número a um nome de classe base cada vez que a função de expansão é instanciada (que corresponde a cada vez que o trecho de código associado é inserido).
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Snippets de código](../../ide/code-snippets.md)
-- [Passo a passo: obtendo uma lista de snippets de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

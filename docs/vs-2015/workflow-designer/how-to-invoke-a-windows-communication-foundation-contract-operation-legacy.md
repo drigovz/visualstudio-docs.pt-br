@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f42600a739561a27a6dd8f6caa237027bac4554
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603701"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>Como: Chamar uma operação do Windows Communication Foundation (o legados)
@@ -41,11 +41,11 @@ Este tópico descreve como chamar uma operação do contrato de [!INCLUDE[indigo
 
 1. Selecione a atividade de <xref:System.Workflow.Activities.SendActivity> no designer.
 
-2. No painel **Propriedades** , especifique um nome para o <xref:System.Workflow.Activities.ChannelToken>. Este nome identifica unicamente o símbolo do canal.
+2. No painel **Propriedades** , especifique um nome para o <xref:System.Workflow.Activities.ChannelToken> . Este nome identifica unicamente o símbolo do canal.
 
 3. Expanda o nó simbólico do canal e especifique um nome para o ponto final de cliente que você usará no campo de <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> . A configuração de ponto de extremidade de mesmo nome no arquivo de configuração será usada para configurar o canal.
 
 4. Crie a configuração de ponto de extremidade no arquivo de configuração, se ele não existir. Para obter mais informações sobre como configurar seu cliente, consulte [visão geral do cliente WCF](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo escolher operação (herdada)](../workflow-designer/choose-operation-dialog-box-legacy.md) [como implementar uma operação de contrato do WCF (Herdado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md) [atividades de fluxo de trabalho herdadas](../workflow-designer/legacy-workflow-activities.md)

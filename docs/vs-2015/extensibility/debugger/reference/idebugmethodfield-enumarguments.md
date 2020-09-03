@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumArguments | Microsoft Docs
+title: 'IDebugMethodField:: EnumArguments | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5744e25f76676e70e25777596fb0d8eb3a580511
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205228"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
@@ -40,17 +40,17 @@ int EnumArguments(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppParams`  
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de tipos de argumento. Retorna um valor nulo se não houver nenhum argumento.  
+ fora Retorna um objeto [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) que representa a lista de tipos de argumento. Retorna um valor nulo se não houver argumentos.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum argumento. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK ou retornará S_FALSE se não houver argumentos. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Cada elemento é um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa os tipos de cada parâmetro. Chame o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para recuperar informações sobre o tipo de cada parâmetro.  
+ Cada elemento é um objeto [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa os tipos de cada parâmetro. Chame o método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) para recuperar informações sobre o tipo de cada parâmetro.  
   
- Se o nome do parâmetro é necessário juntamente com o tipo, em seguida, chame o [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) método.  
+ Se o nome do parâmetro for necessário junto com o tipo, chame o método [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

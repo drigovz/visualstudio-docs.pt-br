@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591275"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
@@ -46,7 +46,7 @@ A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela
 > [!NOTE]
 > É possível classificar a tabela escolhendo-se os cabeçalhos de coluna.
 
-Para obter mais informações, consulte [Analisar os resultados do teste de carga e os erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para obter mais informações, consulte [analisar resultados e erros de teste de carga na exibição tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Exibir violações de limite no painel Contadores
 
@@ -77,5 +77,5 @@ Para obter mais informações, confira [Analisar os resultados do teste de carga
 ## <a name="see-also"></a>Confira também
 
 - [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

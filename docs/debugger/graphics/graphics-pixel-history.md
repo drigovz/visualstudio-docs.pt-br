@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735480"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
@@ -35,10 +35,10 @@ A janela Histórico de pixels de gráficos no Analisador de Gráficos do Visual 
 
  É possível expandir cada primitiva para examinar como a saída do sombreador do pixel foi mesclada com a cor do pixel existente para produzir a cor resultante. A partir disso você também pode examinar ou depurar o código de sombreador de pixel que está associado à primitiva e ampliar o nó do sombreador de vértice para examinar a entrada do sombreador de vértice.
 
-### <a name="exclusion"></a> Exclusão de primitiva
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Exclusão de primitiva
  Quando uma primitiva é excluída por afetar a cor do pixel, a exclusão pode ocorrer por diversos motivos. Cada motivo é representado por um ícone que é descrito nesta tabela:
 
-|Ícone|Motivo da exclusão|
+|ícone|Motivo da exclusão|
 |----------|--------------------------|
 |![Ícone de falha de teste de profundidade.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|O pixel foi excluído porque não passou no teste de profundidade.|
 |![Ícone de falha de teste de tesoura.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|O pixel foi excluído porque não passou no teste de tesoura.|
@@ -74,6 +74,6 @@ A janela Histórico de pixels de gráficos no Analisador de Gráficos do Visual 
 ### <a name="links-to-graphics-objects"></a>Links a objetos de gráficos
  Para entender os eventos de gráficos no histórico de pixel, talvez você precise obter informações sobre o estado do dispositivo no momento do evento ou sobre os objetos do Direct3D referenciados pelo evento. Para cada evento no histórico de pixel, o **Histórico de Pixel de Gráficos** fornece links para o estado do dispositivo atual e para objetos relacionados.
 
-## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
-- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+## <a name="see-also"></a>Confira também
+- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

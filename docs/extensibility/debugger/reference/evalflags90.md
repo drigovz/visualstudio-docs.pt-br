@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 01951885541ba4acce33f3e4f06f7106116ccc62
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737094"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
-Enumera os valores válidos para bandeiras que controlam a avaliação de expressão. Esta enumeração estende a [enumeração EVALFLAGS.](../../../extensibility/debugger/reference/evalflags.md)
+Enumera os valores válidos para sinalizadores que controlam a avaliação da expressão. Essa enumeração estende a enumeração [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -66,41 +66,41 @@ public enum enum_EVALFLAGS90
 
 ## <a name="fields"></a>Campos
 `EVAL90_RETURNVALUE`\
-Especifica que o valor de retorno, se houver, seja avaliado.
+Especifica que o valor de retorno, se houver, será avaliado.
 
 `EVAL90_NOSIDEEFFECTS`\
-Especifica que efeitos colaterais não são permitidos.
+Especifica que os efeitos colaterais não são permitidos.
 
 `EVAL90_ALLOWBPS`\
-Especifica parar em pontos de interrupção.
+Especifica a interrupção nos pontos de interrupção.
 
 `EVAL90_ALLOWERRORREPORT`\
-Especifica que o relatório de erro para o host é permitido. Usado principalmente para avaliação de expressão em script no Internet Explorer.
+Especifica o relatório de erros para o host a ser permitido. Usado principalmente para avaliação de expressão no script no Internet Explorer.
 
 `EVAL90_FUNCTION_AS_ADDRESS`\
-As forças funcionam para serem avaliadas como endereços, em vez de invocar a função.
+Força as funções a serem avaliadas como endereços, em vez de invocar a função.
 
 `EVAL90_NOFUNCEVAL`\
-Impede que a função seja avaliada. Por exemplo, `int` considere o token na expressão `myExpression(int) + 10`. Esta função pode ser avaliada corretamente como um endereço, mas não como um valor.
+Impede que a função seja avaliada. Por exemplo, considere o `int` token na expressão `myExpression(int) + 10` . Essa função pode ser avaliada corretamente como um endereço, mas não como um valor.
 
 `EVAL90_NOEVENTS`\
-Sinalizar para indicar que os eventos que ocorrem durante a avaliação de expressão não devem ser enviados ao gerente de depuração de sessão (SDM) ou ao IDE.
+Sinalizador para indicar que os eventos que ocorrem durante a avaliação da expressão não devem ser enviados para o SDM (Gerenciador de depuração de sessão) ou para o IDE.
 
 `EVAL90_DESIGN_TIME_EXPR_EVAL`\
-Permite a avaliação da expressão de tempo de projeto.
+Habilita a avaliação de expressão em tempo de design.
 
 `EVAL90_ALLOW_IMPLICIT_VARS`\
-Permite a criação implícita de variáveis.
+Permite a criação de variável implícita.
 
 `EVAL90_FORCE_EVALUATION_NOW`\
-A avaliação das forças ocorrerá imediatamente. Isso é útil ao atender a uma solicitação, como uma solicitação de usuário.
+Força a avaliação a ocorrer imediatamente. Isso é útil ao atender a uma solicitação, como uma solicitação de usuário.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Msdbg90.h
+Cabeçalho: Msdbg90. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

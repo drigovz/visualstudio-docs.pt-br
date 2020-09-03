@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 47b5055cca0b00e7fdec49947df13b473a090aaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659092"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Como: Use o designer imports
-O designer imports permite que você inserir em namespaces para os tipos que você usará em suas expressões. Assim como as **importações** ou o **uso** de palavras-chave no Visual Basic C#.net e, a especificação de namespaces no designer de importações permite que você simplesmente Insira um nome de tipo em sua expressão em vez de um nome de tipo de versão totalmente qualificado.
+O designer imports permite que você inserir em namespaces para os tipos que você usará em suas expressões. Assim como as **importações** ou o **uso** de palavras-chave em Visual Basic .net e C#, a especificação de namespaces no designer de importações permite que você simplesmente Insira um nome de tipo em sua expressão em vez de um nome de tipo de versão totalmente qualificado.
 
- O designer imports reage a alterações na interface do usuário e as alterações feitas quando o fluxo de trabalho é salvo. Quando o fluxo de trabalho é salvo, namespaces podem ser adicionados automaticamente ao designer imports. Eles incluem o seguinte:
+ O designer imports reage a alterações na interface do usuário e as alterações feitas quando o fluxo de trabalho é salvo. Quando o fluxo de trabalho é salvo, namespaces podem ser adicionados automaticamente ao designer imports. Entre elas estão as seguintes:
 
 - Namespaces para alguns tipos usados em declarações de variável e argumento.
 

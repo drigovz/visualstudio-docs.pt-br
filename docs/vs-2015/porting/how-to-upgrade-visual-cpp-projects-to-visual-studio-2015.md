@@ -1,5 +1,5 @@
 ---
-title: 'Como: atualizar projetos do Visual C++ para o Visual Studio 2015 | Microsoft Docs'
+title: Como fazer upgrade de projetos do Visual C++ para o Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,13 +13,13 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278732"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Como: Atualizar projetos do Visual C++ para Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Como: atualizar projetos do Visual C++ para o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para verificar a documentação mais recente do Visual Studio 2017, confira [Guia de portabilidade e atualização do Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
@@ -53,5 +53,5 @@ Quando você abre primeiro um projeto do Visual C++ que foi criado em uma versã
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Continuação do trabalho com um PlatformToolset personalizado
  Se você desejar continuar a trabalhar com um Conjunto de Ferramentas de Plataforma no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], o conjunto de ferramentas deverá ser colocado em %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x86, ou em %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x64. Para obter informações de como criar um PlatformToolset personalizado, confira [Multiplataforma nativa C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) no blog da equipe do Visual C++.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Guia de atualização e compatibilização do Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Compatibilização, migração e atualização de projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

@@ -17,16 +17,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5abf89828576c44b2f5ec5c59813d366cec73b7a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661556"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você pode adicionar a projetos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir a **Caixa de Ferramentas**, clique em **Caixa de Ferramentas** no menu **Exibir**. Você pode encaixar a **Caixa de Ferramentas** e pode fixá-la aberta ou configurá-la para **Ocultar Automaticamente**.
+A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você pode adicionar a projetos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir a **Caixa de Ferramentas**, clique em **Caixa de Ferramentas** no menu **Exibir** . Você pode encaixar a **Caixa de Ferramentas** e pode fixá-la aberta ou configurá-la para **Ocultar Automaticamente**.
 
  Ícones da **Caixa de Ferramentas** podem ser arrastados para o modo de exibição de Design ou colados em um editor de código. As duas ações adicionam o código fundamental para criar uma instância do item de **Caixa de Ferramentas** no arquivo de projeto ativo.
 
@@ -50,5 +50,5 @@ A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você p
 
 - [Caixa de Ferramentas, Guia HTML](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))
 
-## <a name="see-also"></a>Veja também
- [Usando a caixa de ferramentas](../../ide/using-the-toolbox.md)
+## <a name="see-also"></a>Consulte Também
+ [Usando a Caixa de Ferramentas](../../ide/using-the-toolbox.md)

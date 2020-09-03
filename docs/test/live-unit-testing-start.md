@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287006"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introdução ao Live Unit Testing
@@ -273,7 +273,7 @@ Isso fornece informações suficientes para uma investigação preliminar do bug
 
    Live Unit Testing mostra que os resultados atualizados são exibidos, que também aparecem na janela Editor de código.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Live Unit Testing no Visual Studio](live-unit-testing.md)
 - [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md)
