@@ -13,43 +13,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729917"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-Essa interface é usada para comunicar tanto informações críticas de depuração, como parar em um ponto de interrupção, quanto informações não críticas, como uma mensagem de depuração.
+Essa interface é usada para comunicar informações de depuração críticas, como parar em um ponto de interrupção e informações não críticas, como uma mensagem de depuração.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O mecanismo de depuração (DE) e o fornecedor de porta personalizado implementam essa interface no mesmo objeto que todas as outras interfaces de eventos.
+ O mecanismo de depuração (DE) e o fornecedor DE porta personalizada implementam essa interface no mesmo objeto que todas as outras interfaces de evento.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Usando o argumento ID (Interface ID) dado a [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) or [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md), o Gerenciador `IDebugEvent2` de depuração de sessão (SDM) chama [queryInterface](/cpp/atl/queryinterface) na interface para obter a interface de evento apropriada.
+ Usando o argumento IID (ID de interface) fornecido ao [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ou [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), o SDM (Session Debug Manager) chama [QueryInterface](/cpp/atl/queryinterface) na `IDebugEvent2` interface para obter a interface de evento apropriada.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugEvent2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugEvent2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Getattributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtém os atributos para este evento de depuração.|
+|[Falha GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|Obtém os atributos para este evento de depuração.|
 
 ## <a name="remarks"></a>Comentários
- As interfaces de evento mais específicas, como [IDebugBreakpointEvent2,](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)não derivam da interface IDebugEvent2, `IDebugEvent2`mas são implementadas como uma interface separada no mesmo objeto que .
+ As interfaces de evento mais específicas, como [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md), não derivam da interface IDebugEvent2, mas, em vez disso, são implementadas como uma interface separada no mesmo objeto que `IDebugEvent2` .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

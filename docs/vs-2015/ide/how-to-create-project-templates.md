@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f358d5b95349fe99b2a2e01df5158d2c0aa10a11
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668048"
 ---
 # <a name="how-to-create-project-templates"></a>Como criar modelos de projeto
@@ -40,7 +40,7 @@ Este procedimento permite criar um modelo usando o assistente de **Exportação 
 
 3. Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre a substituição de parâmetros, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
 
-4. No menu **Arquivo**, clique em **Exportar Modelo**. O assistente de **Exportação de Modelo** é aberto.
+4. No menu **Arquivo**, clique em **Exportar Modelo**. O assistente para **Exportar modelo** é aberto.
 
 5. Clique em **Modelo de Projeto**.
 
@@ -52,9 +52,9 @@ Este procedimento permite criar um modelo usando o assistente de **Exportação 
 
 9. Insira um nome e uma descrição para o modelo.
 
-10. Clique em **Finalizar**. Seu projeto é exportado para um arquivo .zip e colocado no local de saída especificado e, se selecionado, é importado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+10. Clique em **Concluir**. Seu projeto é exportado para um arquivo .zip e colocado no local de saída especificado e, se selecionado, é importado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-     Se tiver o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] instalado, você poderá encapsular o modelo concluído em um arquivo .vsix para implantação usando o modelo **VSIX Project**. Para obter mais informações, consulte [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
+     Se tiver o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] instalado, você poderá encapsular o modelo concluído em um arquivo .vsix para implantação usando o modelo **VSIX Project**. Para obter mais informações, consulte [introdução com o modelo de projeto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md) [como: criar modelos de item](../ide/how-to-create-item-templates.md)

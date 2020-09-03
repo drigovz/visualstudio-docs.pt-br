@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282014"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Como salvar e editar cadeias de conexão
@@ -28,7 +28,7 @@ No **Assistente de configuração da fonte de dados**, selecione a opção para 
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Para salvar uma cadeia de conexão diretamente nas configurações do aplicativo
 1. No **Gerenciador de Soluções**, clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
-1. Selecione a guia **configurações** .
+1. Selecione a guia **Settings** (Configurações).
 1. Insira um **Nome** para a cadeia de conexão. Consulte esse nome ao acessar a cadeia de conexão no código.
 1. Configure o **Tipo** como (**Cadeia de conexão**).
 1. Mantenha o **Escopo** configurado como **Aplicativo**.
@@ -39,7 +39,7 @@ Você pode modificar as informações da conexão que são salvas nas configura�
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Para editar uma cadeia de conexão nas configurações do aplicativo
 1. No **Gerenciador de Soluções**, clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
-1. Selecione a guia **configurações** .
+1. Selecione a guia **Settings** (Configurações).
 1. Localize a conexão que você deseja editar e selecione o texto no campo **valor** .
 1. Edite a cadeia de conexão no campo **valor** ou clique no botão de **reticências** (...) no campo **valor** para editar a conexão com a caixa de diálogo **Propriedades da conexão** .
 
@@ -56,6 +56,6 @@ Você pode modificar as informações de conexão para cada TableAdapter em um c
 O armazenamento das informações confidenciais (tal como uma senha) dentro da cadeia de conexão pode afetar a segurança do aplicativo. O uso da segurança integrada do Windows é uma maneira mais segura de controlar o acesso a um banco de dados.
 Para obter mais informações, confira [Protegendo informações de conexão](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Adicionando conexões](../data-tools/add-new-connections.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ea4a05bfccddeedb29110ea6ee44f34f85534a8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466843"
 ---
 # <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
@@ -41,5 +41,5 @@ fora Retorna `TRUE` se as informações da linha descrevem o início de uma inst
 ## <a name="remarks"></a>Comentários
  As instruções podem abranger várias linhas. Esse método indica se o número de linha associado marca o início de uma instrução de várias linhas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

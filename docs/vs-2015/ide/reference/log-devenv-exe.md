@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666839"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -25,7 +25,7 @@ ms.locfileid: "72666839"
 
 Registra toda a atividade no arquivo de log para resolução de problemas. Este arquivo aparece depois de você chamar `devenv /log` pelo menos uma vez. Por padrão, o arquivo de log é:
 
- *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml
+ *% AppData%* \Microsoft\VisualStudio \\ *versão*\ActivityLog.xml
 
  em que *Versão* é a versão do Visual Studio. No entanto, você pode especificar um caminho e um nome de arquivo diferentes.
 
@@ -40,5 +40,5 @@ Devenv /log Path\NameOfLogFile
 
  O log é gravado em todas as instâncias do Visual Studio que você invocou com a opção /log. As instâncias de log do Visual Studio que você invocou sem a opção não são registradas.
 
-## <a name="see-also"></a>Veja também
- [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)
+## <a name="see-also"></a>Consulte Também
+ [Opções de linha de comando do desenvolvedor](../../ide/reference/devenv-command-line-switches.md)

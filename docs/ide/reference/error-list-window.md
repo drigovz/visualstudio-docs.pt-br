@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569657"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
@@ -41,7 +41,7 @@ A janela **Lista de Erros** permite que você execute as seguintes tarefas:
 
 - Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.
 
-Para exibir a **lista de erros,** escolha **'Exibir** > **lista de erros'** ou **pressione Ctrl**+**\\**+**E**.
+Para exibir o **lista de erros**, escolha **Exibir**  >  **lista de erros**ou pressione **Ctrl** + **\\** + **E**.
 
 É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.
 
@@ -76,7 +76,7 @@ Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de fe
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
 
-Severity
+Severidade
 
 Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]**, **Aviso [inativo]**).
 
@@ -88,7 +88,7 @@ Descrição
 
 Exibe o texto da entrada.
 
-Project
+Projeto
 
 Exibe o nome do projeto atual.
 

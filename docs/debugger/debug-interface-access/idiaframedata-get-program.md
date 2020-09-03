@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5a9f25c3913519b50131ec5860e127bef3ddc11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467263"
 ---
 # <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
@@ -39,7 +39,7 @@ fora Retorna a cadeia de caracteres do programa.
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A cadeia de caracteres do programa é uma sequência de macros que é interpretada para estabelecer o prólogo. Por exemplo, um quadro de pilha típico pode usar a cadeia de caracteres do programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` . O formato é notação de polonês reverso, em que os operadores seguem os operandos. `T0`representa uma variável temporária na pilha. Este exemplo executa as seguintes etapas:
+ A cadeia de caracteres do programa é uma sequência de macros que é interpretada para estabelecer o prólogo. Por exemplo, um quadro de pilha típico pode usar a cadeia de caracteres do programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="` . O formato é notação de polonês reverso, em que os operadores seguem os operandos. `T0` representa uma variável temporária na pilha. Este exemplo executa as seguintes etapas:
 
 1. Mover o conteúdo do registro `ebp` para `T0` .
 
@@ -51,5 +51,5 @@ fora Retorna a cadeia de caracteres do programa.
 
    Observe que a cadeia de caracteres do programa é específica para a CPU e para a Convenção de chamada configurada para a função representada pelo quadro de pilhas atual.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

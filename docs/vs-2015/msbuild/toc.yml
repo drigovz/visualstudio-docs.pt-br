@@ -144,7 +144,7 @@
                   href: standard-and-custom-toolset-configurations.md
                 - name: Substituindo as configurações de ToolsVersion
                   href: overriding-toolsversion-settings.md
-            - name: Estrutura de destino e plataforma de destino
+            - name: Estrutura e plataforma de destino
               href: msbuild-target-framework-and-target-platform.md
             - name: Resolvendo assemblies em tempo de design
               href: resolving-assemblies-at-design-time.md
@@ -180,9 +180,9 @@
       items:
         - name: Referência do MSBuild
           href: msbuild-reference.md
-        - name: Referência do esquema de arquivos de projeto
+        - name: Referência do esquema de arquivo de projeto
           items:
-            - name: Referência do esquema de arquivos de projeto
+            - name: Referência do esquema de arquivo de projeto
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -226,9 +226,9 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Referência de tarefas
+        - name: Referência da tarefa
           items:
-            - name: Referência de tarefas
+            - name: Referência da tarefa
               href: msbuild-task-reference.md
             - name: Tarefas do Visual C++
               items:
@@ -408,9 +408,9 @@
               href: wpf-msbuild-reference.md
             - name: Arquivos .Targets
               href: wpf-dot-targets-files.md
-            - name: Referência de tarefas
+            - name: Referência da tarefa
               items:
-                - name: Referência de tarefas
+                - name: Referência da tarefa
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

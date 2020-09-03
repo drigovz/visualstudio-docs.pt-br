@@ -14,23 +14,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 250c73ce0395f278b72c18605f1666290670e20a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634104"
 ---
 # <a name="formatversion-task"></a>Tarefa FormatVersion
 
 Acrescenta o número de revisão ao número de versão.
 
-- Caso #1: Entrada: Version=\<undefined>;  Revision=\<don't care>;   Saída: OutputVersion="1.0.0.0"
+- #1 de caso: entrada: versão = \<undefined> ;  Revisão = \<don't care> ;   Saída: OutputVersion = "1.0.0.0"
 
 - Caso #2: Entrada: Version="1.0.0.*"  Revision="5"  Saída: OutputVersion="1.0.0.5"
 
-- Caso #3: Entrada: Version="1.0.0.0"  Revision=\<don't care>;  Saída: OutputVersion="1.0.0.0"
+- #3 de caso: entrada: versão = "1.0.0.0" revisão = \<don't care> ;  Saída: OutputVersion = "1.0.0.0"
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `FormatVersion`.
 

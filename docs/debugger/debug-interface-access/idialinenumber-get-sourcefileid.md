@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5a0151a8cd5bcc10fb306b34762ad5d1bb698f4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466850"
 ---
 # <a name="idialinenumberget_sourcefileid"></a>IDiaLineNumber::get_sourceFileId
@@ -38,5 +38,5 @@ fora Retorna o identificador de arquivo de origem exclusivo para o arquivo de or
 ## <a name="return-value"></a>Valor Retornado
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

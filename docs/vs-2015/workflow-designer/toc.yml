@@ -62,7 +62,7 @@
               href: pickbranch-activity-designer.md
             - name: Sequência
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Comutador\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -110,7 +110,7 @@
           items:
             - name: Runtime
               href: runtime-activity-designers.md
-            - name: Persistir
+            - name: Persist
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -118,7 +118,7 @@
           items:
             - name: Primitivos
               href: primitives-activity-designers.md
-            - name: Assign
+            - name: Atribuir
               href: assign-activity-designer.md
             - name: Atrasar
               href: delay-activity-designer.md
@@ -136,7 +136,7 @@
               href: cancellationscope-activity-designer.md
             - name: CompensableActivity
               href: compensableactivity-activity-designer.md
-            - name: Compensar
+            - name: Compensate
               href: compensate-activity-designer.md
             - name: Confirmar
               href: confirm-activity-designer.md
@@ -158,7 +158,7 @@
           items:
             - name: Tratamento de erros
               href: error-handling-activity-designers.md
-            - name: Rethrow
+            - name: Relançar
               href: rethrow-activity-designer.md
             - name: Throw
               href: throw-activity-designer.md
@@ -286,7 +286,7 @@
               items:
                 - name: Designer herdado para a ajuda do Windows Workflow Foundation interface de usuário
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: Associar à caixa de diálogo de propriedade de uma atividade (legados)
+                - name: Associar a uma caixa de diálogo de propriedades da atividade (legados)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: Procurar e selecione uma caixa de diálogo de tipo do .NET (legados)
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

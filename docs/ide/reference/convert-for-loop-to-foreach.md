@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094601"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refatoração para converter entre um loop for e uma instrução foreach
@@ -42,11 +42,11 @@ Os motivos pelos quais talvez você deseje converter um loop [for](/dotnet/cshar
 
 - Você deseja simplificar seu código e reduza a probabilidade de erros lógicos nas seções do inicializador, de condição e de iteração.
 
-### <a name="how-to-use-it"></a>Como usar
+### <a name="how-to-use-it"></a>Como usá-lo
 
 1. Coloque o cursor na palavra-chave `for`.
 
-1. Pressione **Ctrl**+**.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
+1. Pressione **Ctrl** + **.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
 
    ![Converter em menu foreach](media/convert-to-foreach.png)
 
@@ -70,11 +70,11 @@ Os motivos pelos quais talvez você deseje converter uma instrução [foreach](/
 
 - Você está [iterando por meio de uma matriz multidimensional](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) e deseja ter mais controle sobre os elementos da matriz.
 
-### <a name="how-to-use-it"></a>Como usar
+### <a name="how-to-use-it"></a>Como usá-lo
 
 1. Coloque o cursor na palavra-chave `foreach` ou `For Each`.
 
-1. Pressione **Ctrl**+**.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
+1. Pressione **Ctrl** + **.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
 
    ![Converter em menu for](media/convert-to-for.png)
 
@@ -83,7 +83,7 @@ Os motivos pelos quais talvez você deseje converter uma instrução [foreach](/
 1. Como a refatoração introduz uma nova variável de contagem de iterações, a caixa **Renomear** é exibida no canto superior direito do editor. Se desejar escolher um nome diferente para a variável, digite-o e, em seguida, pressione **Enter** ou selecione **Aplicar** na caixa **Renomear**. Se você não deseja escolher um novo nome, pressione **Esc** ou selecione **Aplicar** para ignorar a caixa **Renomear**.
 
 > [!NOTE]
-> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para o tipo dos itens na coleção. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações específicas de estilo de código são configuradas no nível da máquina em **Ferramentas** > **Opções** > **Editor de** > texto**C#** > **Estilo de** > código**Preferências gerais** > **\'var,** ou no nível de solução em um arquivo [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
+> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para o tipo dos itens na coleção. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código em particular são configuradas no nível do computador, em **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C#**  >  **Code Style**  >  **General**  >  ** \' var ' Preferências**gerais, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
 
 ## <a name="see-also"></a>Confira também
 

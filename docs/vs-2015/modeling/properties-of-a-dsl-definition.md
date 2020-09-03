@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8755b1b70051c54157fa87ee0b66dbc9340b5024
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668463"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
@@ -27,24 +27,24 @@ As propriedades DslDefinition definem propriedades *de definição de linguagem 
 
  DslDefinition tem as propriedades na tabela a seguir:
 
-|propriedade|Descrição|Padrão|
+|Propriedade|Descrição|Padrão|
 |--------------|-----------------|-------------|
 |Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
-|Atributos personalizados|Atributos definidos personalizados para a classe de domínio.<br /><br /> **Observação** Use o botão procurar para adicionar um atributo.|\<nenhum>|
+|Atributos personalizados|Atributos definidos personalizados para a classe de domínio.<br /><br /> **Observação** Use o botão procurar para adicionar um atributo.|\<none>|
 |Nome da empresa|O nome do nome da empresa atual no registro do sistema.|Nome da empresa atual|
 |Name|O nome desta classe de domínio.|Nome atual|
-|espaço de nome|O namespace afiliado a esta classe de domínio.|Namespace atual|
-|GUID do pacote|O GUID para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
-|Namespace do pacote|O namespace para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
-|Nome do produto|O nome do produto que será registrado para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
-|Anotações|Observações associadas a esta classe de domínio.|\<nenhum>|
-|Descrição|Descrição para esta classe de domínio.|\<nenhum>|
-|Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<nenhum>|
-|Palavra-chave de ajuda|A palavra-chave Help associada a essa classe de domínio.|\<nenhum>|
-|Build|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
-|Versão principal|O número de Build principal incremental para essa definição de linguagem específica de domínio.|1|
-|Versão secundária|O número de Build secundário incremental para essa definição de linguagem específica de domínio.|0|
+|Namespace|O namespace afiliado a esta classe de domínio.|Namespace atual|
+|GUID do pacote|O GUID do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para essa DSL.|\<none>|
+|Namespace do pacote|O namespace do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para esta DSL.|\<none>|
+|Nome do Produto|O nome do produto que será registrado para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para essa DSL.|\<none>|
+|Observações|Observações associadas a esta classe de domínio.|\<none>|
+|Descrição|Descrição para esta classe de domínio.|\<none>|
+|Nome de exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<none>|
+|Palavra-chave de ajuda|A palavra-chave Help associada a essa classe de domínio.|\<none>|
+|Compilação|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
+|Versão Principal|O número de Build principal incremental para essa definição de linguagem específica de domínio.|1|
+|Versão Secundária|O número de Build secundário incremental para essa definição de linguagem específica de domínio.|0|
 |Revisão|O número da versão da revisão incremental para essa definição de linguagem específica de domínio.|0|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

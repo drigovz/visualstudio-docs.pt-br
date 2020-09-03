@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666171"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
@@ -24,13 +24,13 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo. O
  O modelo representa os requisitos mais diretamente do que o código. Ao derivar o comportamento do aplicativo diretamente do modelo, você pode responder a requisitos alterados de forma muito mais rápida e confiável do que ao atualizar o código. Embora seja necessário algum trabalho inicial para configurar a derivação, esse investimento é retornado se você espera alterações nos requisitos ou se planeja fazer várias variantes do produto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Gerando o código do seu aplicativo a partir de um modelo
- A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na qual você mantém o modelo. Para obter mais informações, consulte:
+ A maneira mais fácil de gerar código é usando modelos de texto. Você pode gerar código na mesma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução na qual você mantém o modelo. Para obter mais informações, consulte:
 
-- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Geração de código na hora de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 - [Gerar arquivos por meio de um modelo UML](../modeling/generate-files-from-a-uml-model.md)
 
-- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Gerando código a partir de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md)
 
   Esse método é fácil de aplicar de forma incremental. Comece com um aplicativo que funciona apenas para um caso específico e escolha algumas partes dele que você deseja variar do modelo. Renomeie os arquivos de origem dessas partes para que se tornem arquivos de modelo de texto (. TT). Neste ponto, os arquivos Source. cs serão gerados automaticamente a partir dos arquivos de modelo, de modo que o aplicativo funcionará como antes.
 
@@ -45,7 +45,7 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo. O
 
 - [Ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md)
 
-- [Como abrir um modelo partindo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Como abrir um modelo a partir de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que lerá o modelo e configurar uma estrutura que permita que seus valores sejam acessíveis para as partes variáveis. Tornar as partes variáveis genéricas é mais cara do que a geração de código.
 
@@ -78,5 +78,5 @@ Você pode gerar ou configurar partes do seu aplicativo a partir de um modelo. O
 
      Por exemplo, um diagrama de classes UML é uma coleção de caixas e setas; com essa notação, você pode, teoricamente, definir qualquer coisa. Mas não recomendamos que você use o diagrama de classe, exceto onde você está, na verdade, descrevendo um conjunto de tipos. Por exemplo, você poderia adaptar os diagramas de classe para descrever diferentes tipos de páginas da Web.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md) [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md) que [gera código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md) [como: abrir um modelo de arquivo em programa](../modeling/how-to-open-a-model-from-file-in-program-code.md) [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

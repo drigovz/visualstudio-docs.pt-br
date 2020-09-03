@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667122"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificando eventos de build personalizados no Visual Studio
@@ -31,7 +31,7 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
 - Visual C++ – [Especificando eventos de build](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
  Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível usar macros para criar eventos de build com mais facilidade. Para obter uma lista das macros disponíveis, consulte [Caixa de diálogo Linha de Comando do Evento de Pré-build/Evento de Pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Para obter melhores resultados, siga estas dicas de formatação:
@@ -50,10 +50,10 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
 - Inclua curingas, conforme necessário.
 
-     Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+     Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
     > [!NOTE]
     > `%I` no código acima deve ser `%%I` em scripts em lote.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [caixa de diálogo de linha de comando do evento de eventos/pós-build de pré-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md) [passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md)

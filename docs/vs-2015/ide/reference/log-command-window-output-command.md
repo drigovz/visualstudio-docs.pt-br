@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666862"
 ---
 # <a name="log-command-window-output-command"></a>Comando Saída da Janela Log de Comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Copia todas as entradas e saídas da janela **Comando** para um arquivo.
+Copia todas as entradas e saídas da janela de **comando** em um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,13 +32,13 @@ Copia todas as entradas e saídas da janela **Comando** para um arquivo.
 Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
-## <a name="arguments"></a>Arguments
- `filename` Opcional. Nome do arquivo de log. Por padrão, o arquivo é criado na pasta de perfil do usuário. Se o nome do arquivo já existir, o log será acrescentado ao final do arquivo existente. Se nenhum arquivo for especificado, o último arquivo especificado será usado. Não se houver nenhum arquivo anterior, será criado um arquivo de log padrão, chamado cmdline.log.
+## <a name="arguments"></a>Argumentos
+ `filename` Opcional. O nome do arquivo de log. Por padrão, o arquivo é criado na pasta de perfil do usuário. Se o nome do arquivo já existir, o log será acrescentado ao final do arquivo existente. Se nenhum arquivo for especificado, o último arquivo especificado será usado. Não se houver nenhum arquivo anterior, será criado um arquivo de log padrão, chamado cmdline.log.
 
 > [!TIP]
 > Para alterar o local em que o arquivo de log é salvo, digite o caminho completo do arquivo entre aspas se o caminho contiver espaços.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  /on opcional. Inicia o log para a janela **Comando** no arquivo especificado e anexa o arquivo com as novas informações.
 
  /off opcional. Parar o log para a janela **Comando**.
@@ -67,5 +67,5 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela](../../ide/reference/command-window.md) de comando [Localizar/comando caixa](../../ide/find-command-box.md) de comandos do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

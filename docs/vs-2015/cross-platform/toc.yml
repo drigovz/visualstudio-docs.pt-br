@@ -40,7 +40,7 @@
               href: customize-project-files-created-by-vstu.md
             - name: Exemplo – Retorno de chamada de log
               href: share-the-unity-log-callback-with-vstu.md
-        - name: Solucionando problemas e problemas conhecidos
+        - name: Solução de problemas e problemas conhecidos
           href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
         - name: Log de alterações
           href: change-log-visual-studio-tools-for-unity.md

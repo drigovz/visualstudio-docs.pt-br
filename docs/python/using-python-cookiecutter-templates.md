@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801575"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
@@ -82,7 +82,7 @@ As opções de CookieCutter estão disponíveis por meio de **ferramentas**  >  
 | Opção | Descrição |
 | --- | --- |
 | **URL de feed recomendada** | A localização do feed recomendado dos modelos. Pode ser uma URL ou um caminho para um arquivo local. Deixe a URL vazia para usar o feed padrão coletado pela Microsoft. O feed fornece uma lista simples de localizações de modelos, separadas por novas linhas. Para solicitar alterações ao feed coletado, faça uma solicitação pull [na fonte, no GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Mostrar Ajuda** | Controla a visibilidade da barra de informações de ajuda na parte superior da janela do Cookiecutter. |
+| **Mostrar ajuda** | Controla a visibilidade da barra de informações de ajuda na parte superior da janela do Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Otimizar modelos do Cookiecutter para o Visual Studio
 
@@ -98,7 +98,7 @@ A renderização padrão de uma variável de modelo depende do tipo de dados (ca
 | Propriedade | Descrição |
 | --- | --- |
 | Rotular | Especifica o que é exibido acima do editor para a variável, em vez do nome da variável. |
-| Description | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
+| Descrição | Especifica a dica de ferramenta que é exibida no controle de edição, em vez do valor padrão dessa variável. |
 | URL | Altera o rótulo para um hiperlink, com uma dica de ferramenta que mostra a URL. A seleção do hiperlink abre o navegador padrão do usuário para essa URL. |
 | Seletor | Permite a personalização do editor para uma variável. Atualmente, há suporte para os seguintes seletores:<ul><li>`string`: caixa de texto padrão, o padrão para cadeias de caracteres.</li><li>`list`: caixa de combinação padrão, o padrão para listas.</li><li>`yesno`: caixa de combinação para escolher entre `y` e `n`, para cadeias de caracteres.</li><li>`odbcConnection`: Caixa de texto com um botão **...** que abre um diálogo de conexão de banco de dados.</li></ul> |
 

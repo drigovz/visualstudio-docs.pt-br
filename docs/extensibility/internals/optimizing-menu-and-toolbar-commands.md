@@ -1,5 +1,5 @@
 ---
-title: Otimização de menus e comandos de barra de ferramentas | Microsoft Docs
+title: Otimizando os comandos de menu e barra de ferramentas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,19 +15,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4932a4404c3d76b089468864f84d011524e9cfa0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706913"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
-A adição de VSPackages e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] seus comandos correspondentes pode causar uma ui lotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fornece maneiras de ajudar a minimizar a confusão do comando da UI.
+A adição de VSPackages e seus comandos correspondentes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podem causar uma interface do usuário lotada. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras de ajudar a minimizar a confusão do comando da interface do usuário.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Disponibilizando comandos](../../extensibility/internals/making-commands-available.md)
 
- Fornece diretrizes gerais para minimizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a aglomeração da iu quando você adiciona VSPackages.
+ Fornece diretrizes gerais para minimizar a expansão da interface do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usuário quando você adiciona o VSPackages.
 
 - [Diretrizes de posicionamento](../../extensibility/internals/command-placement-guidelines.md)
 
@@ -36,4 +36,4 @@ A adição de VSPackages e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_
 ## <a name="related-sections"></a>Seções relacionadas
 - [Comandos, menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)
 
- Explica como criar uma ia que inclua menus, barras de ferramentas e caixas de comando.
+ Explica como criar uma interface do usuário que inclui menus, barras de ferramentas e caixas de combinação de comandos.

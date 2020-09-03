@@ -1,5 +1,5 @@
 ---
-title: iDebugManagedObject::SetFromManagedObject | Microsoft Docs
+title: 'IDebugManagedObject:: SetFromManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727703"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Define o valor da instância do objeto de classe de valor a partir da instância da classe de valor fornecida como parâmetro.
+Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecida como um parâmetro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int SetFromManagedObject(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pManagedObject`\
-[em] Uma interface que representa o objeto gerenciado que contém o novo valor.
+no Uma interface que representa o objeto gerenciado que contém o novo valor.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é usado para alterar o objeto gerenciado representado pelo objeto [IDebugManagedObject.](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+ Esse método é usado para alterar o objeto gerenciado, conforme representado pelo objeto [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

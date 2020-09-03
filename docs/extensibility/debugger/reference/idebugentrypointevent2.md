@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 531ff846f2488193ed7f3d9f200a1a4ea04df6f9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730324"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
-O mecanismo de depuração (DE) envia essa interface para o Gerenciador de depuração de sessão (SDM) quando o programa está prestes a executar sua primeira instrução de código de usuário.
+O mecanismo de depuração (DE) envia essa interface para o SDM (Gerenciador de depuração de sessão) quando o programa está prestes a executar sua primeira instrução de código de usuário.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEntryPointEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O DE implementa esta interface como parte de suas operações normais. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface. O SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
+ O DE implementa essa interface como parte de suas operações normais. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que essa interface. O SDM usa [QueryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia este objeto de evento quando o programa que está sendo depurado foi carregado e está pronto para executar a primeira instrução do código do usuário. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando anexada ao programa que está sendo depurado.
+ O DE cria e envia esse objeto DE evento quando o programa que está sendo depurado é carregado e está pronto para executar a primeira instrução do código do usuário. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando anexada ao programa que está sendo depurado.
 
 ## <a name="remarks"></a>Comentários
-- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) é enviado quando o programa está prestes a executar a primeira instrução. Por exemplo, `IDebugEntryPoint2` é enviado quando o programa está `main` prestes a executar a função do usuário.
+- [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) é enviado quando o programa está prestes a executar a primeira instrução. Por exemplo, `IDebugEntryPoint2` é enviado quando o programa está prestes a executar a função do usuário `main` .
 
- Quando o `IDebugEntryPointEvent2`DE enviar , a posição de código atual `main`deve estar na primeira instrução do código do usuário, como .
+ Quando o DE envia `IDebugEntryPointEvent2` , a posição atual do código deve estar na primeira instrução do código do usuário, como `main` .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

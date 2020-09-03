@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9975446cb8c7691f46b6d320f59718d9d87c8440
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467305"
 ---
 # <a name="idiaframedataget_lengthprolog"></a>IDiaFrameData::get_lengthProlog
@@ -41,5 +41,5 @@ fora Retorna o número de bytes do código de prólogo.
 ## <a name="remarks"></a>Comentários
  O código de prólogo é uma sequência de instruções que preserva os registros, define o estado da CPU e estabelece a pilha para a função.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

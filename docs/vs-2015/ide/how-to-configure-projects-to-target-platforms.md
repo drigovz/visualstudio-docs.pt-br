@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668199"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para destinar plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Aplicativos de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , consulte [aplicativos de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Definindo plataformas como destino com o Configuration Manager
  O **Configuration Manager** oferece uma maneira de adicionar rapidamente uma nova plataforma de destino para seu projeto. Se você selecionar uma das plataformas incluídas com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], as propriedades do projeto serão modificadas para compilar seu projeto para a plataforma selecionada.
@@ -41,7 +41,7 @@ ms.locfileid: "72668199"
 
    1. Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.
 
-        A caixa de diálogo **Nova Plataforma da Solução** será exibida.
+        A caixa de diálogo **Nova plataforma de solução** é exibida.
 
    2. Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.
 
@@ -55,13 +55,13 @@ ms.locfileid: "72668199"
 ## <a name="targeting-platforms-in-the-project-designer"></a>Definindo plataformas como destino no Designer de Projeto
  O Designer de Projeto também fornece uma maneira de definir diferentes plataformas como destino para seu projeto. Se selecionar uma das plataformas incluídas na lista na caixa de diálogo **Nova Plataforma de Solução** não funcionar para sua solução, você poderá criar um nome de configuração personalizado e modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.
 
- A execução dessa tarefa varia de acordo com a linguagem de programação que você está usando. Consulte os seguintes links para obter mais informações:
+ A execução dessa tarefa varia de acordo com a linguagem de programação que você está usando. Para obter mais informações, consulte os links a seguir:
 
 - Para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consulte [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).
 
-- Para projetos [!INCLUDE[csprcs](../includes/csprcs-md.md)], consulte [Página de Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Para [!INCLUDE[csprcs](../includes/csprcs-md.md)] projetos, consulte [página de compilação, designer de projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-- Para projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consulte [/clr (Compilação do Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
+- Para [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projetos, consulte [/CLR (compilação do Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
 
-## <a name="see-also"></a>Veja também
- [Entendendo plataformas](../ide/understanding-build-platforms.md) [de compilaçãoC# /Platform (opções de compilador)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [aplicativos de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64-suporte de bit](../ide/visual-studio-ide-64-bit-support.md)
+## <a name="see-also"></a>Consulte Também
+ [Entendendo as plataformas](../ide/understanding-build-platforms.md) [de compilação/Platform (opções do compilador C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [aplicativos de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE suporte a bit 64](../ide/visual-studio-ide-64-bit-support.md)

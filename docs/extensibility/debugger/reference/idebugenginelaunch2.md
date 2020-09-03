@@ -13,43 +13,43 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee77cbd680df2c851d53aac298605023227fa6f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730500"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
-Usado por um motor de depuração (DE) para iniciar e encerrar programas.
+Usado por um mecanismo DE depuração (DE) para iniciar e encerrar programas.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineLaunch2 : IDebugEngine2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por um DE personalizado se tiver requisitos especiais para iniciar um processo que não pode ser tratado inteiramente por uma porta personalizada. Este é tipicamente o caso quando o DE faz parte de um intérprete e o processo que está sendo depurado é um script: o intérprete precisa ser lançado primeiro, e então o script é carregado e iniciado. Uma porta pode lançar o intérprete, mas o script pode exigir um manuseio especial (que é onde o DE tem uma função). Esta interface só é implementada se houver requisitos exclusivos para o lançamento de um programa que uma porta personalizada não pode lidar.
+ Essa interface é implementada por um personalizado DE se tiver requisitos especiais para iniciar um processo que não pode ser manipulado inteiramente por uma porta personalizada. Normalmente, esse é o caso quando o DE faz parte de um intérprete e o processo que está sendo depurado é um script: o intérprete precisa ser iniciado primeiro e, em seguida, o script é carregado e iniciado. Uma porta pode iniciar o intérprete, mas o script pode exigir tratamento especial (que é onde o DE tem uma função). Essa interface é implementada somente se houver requisitos exclusivos para iniciar um programa que uma porta personalizada não possa manipular.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Esta interface é chamada pelo Session Debug Manager (SDM) se o SDM conseguir obter essa interface a partir da interface [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (usando queryInterface). Se essa interface pode ser obtida, o SDM sabe que o DE tem requisitos especiais e chama esta interface para iniciar o programa em vez de ter a porta lançando-o.
+ Essa interface é chamada pelo SDM (Gerenciador de depuração de sessão) se o SDM puder obter essa interface da interface [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) (usando QueryInterface). Se essa interface puder ser obtida, o SDM saberá que o DE tem requisitos especiais e chamará essa interface para iniciar o programa, em vez de fazer com que a porta o inicialize.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugEngineLaunch2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugEngineLaunch2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia um processo por meio do DE.|
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Inicia um processo por meio do de.|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Retoma a execução do processo.|
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Determina se um processo pode ser encerrado.|
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Termina um processo.|
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Finaliza um processo.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

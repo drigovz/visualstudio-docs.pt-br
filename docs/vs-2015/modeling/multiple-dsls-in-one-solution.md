@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a3b35e05108db879b365b9cafc39cacdf843397
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668563"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Várias DSLs em uma mesma solução
@@ -27,7 +27,7 @@ ms.locfileid: "72668563"
 
 1. Crie duas ou mais soluções DSL e um projeto VSIX e adicione todos os projetos a uma única solução.
 
-   - Para criar um novo projeto VSIX: na caixa de diálogo **novo projeto** , **selecione C#Visual** , **extensibilidade**, **projeto VSIX**.
+   - Para criar um novo projeto VSIX: na caixa de diálogo **novo projeto** , selecione **Visual C#**, **extensibilidade**, **projeto VSIX**.
 
    - Crie duas ou mais soluções DSL no diretório da solução VSIX.
 
@@ -35,31 +35,31 @@ ms.locfileid: "72668563"
 
         Certifique-se de criar cada DSL com uma extensão de nome de arquivo diferente.
 
-   - Altere os nomes dos projetos **DSL** e **DslPackage** para que eles sejam todos diferentes. Por exemplo: `Dsl1`, `DslPackage1`, `Dsl2` `DslPackage2`.
+   - Altere os nomes dos projetos **DSL** e **DslPackage** para que eles sejam todos diferentes. Por exemplo: `Dsl1` , `DslPackage1` , `Dsl2` , `DslPackage2` .
 
    - Em cada **DslPackage \* \ Source.Extension.tt**, atualize essa linha para o nome do projeto DSL correto:
 
         `string dslProjectName = "Dsl2";`
 
-   - Na solução VSIX, adicione os projetos de \* de DSL * e DslPackage.
+   - Na solução VSIX, adicione os projetos DSL * e DslPackage \* .
 
         É aconselhável colocar cada par em sua própria pasta da solução.
 
 2. Combine os manifestos VSIX das DSLs:
 
-   1. Abra _YourVsixProject_ **\Source.Extension.manifest**.
+   1. Abra _YourVsixProject_**\Source.Extension.manifest**.
 
    2. Para cada DSL, escolha **adicionar conteúdo** e adicionar:
 
-       - `Dsl*` projeto como um **componente MEF**
+       - `Dsl*` projeto como um **componente do MEF**
 
-       - `DslPackage*` projeto como um **componente MEF**
+       - `DslPackage*` projeto como um **componente do MEF**
 
        - `DslPackage*` projeto como um **pacote do vs**
 
 3. Compile a solução.
 
-   O VSIX resultante instalará as duas DSLs. Você pode testá-los usando F5 ou implantar _YourVsixProject_ **\bin\Debug \\ \*. vsix**.
+   O VSIX resultante instalará as duas DSLs. Você pode testá-los usando F5 ou implantar _YourVsixProject_**\bin\Debug \\ \* . vsix**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Integrando modelos usando o Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)

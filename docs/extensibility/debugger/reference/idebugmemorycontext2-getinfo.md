@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo | Microsoft Docs
+title: 'IDebugMemoryContext2:: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727468"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
-Recupera uma estrutura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) que descreve o contexto.
+Recupera uma estrutura de [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) que descreve o contexto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,15 +42,15 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwFields`\
-[em] Uma combinação de bandeiras da [enumeração CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) que indicam quais campos da estrutura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) devem ser preenchidos.
+no Uma combinação de sinalizadores da enumeração [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) que indica quais campos da estrutura de [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) devem ser preenchidos.
 
 `pInfo`\
-[dentro, fora] A `CONTEXT_INFO` estrutura que está preenchida.
+[entrada, saída] A `CONTEXT_INFO` estrutura que está preenchida.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

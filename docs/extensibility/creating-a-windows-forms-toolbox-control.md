@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801861"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Criar um controle de caixa de ferramentas de Windows Forms
 
 O modelo de item de controle de caixa de ferramentas Windows Forms que está incluído no Ferramentas de Extensibilidade do Visual Studio (SDK do VS), permite criar um controle **caixa de ferramentas** que é adicionado automaticamente quando a extensão é instalada. Este tutorial mostra como usar o modelo para criar um controle de contador simples que você pode distribuir para outros usuários.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
@@ -58,9 +58,9 @@ O `Counter` controle requer dois controles filho: a <xref:System.Windows.Forms.L
 
     |Control|Propriedade|Valor|
     |-------------|--------------|-----------|
-    |`Label1`|**Texto**|""|
+    |`Label1`|**Text**|""|
     |`Button1`|**Nome**|btnReset|
-    |`Button1`|**Texto**|Redefinir|
+    |`Button1`|**Text**|Redefinir|
 
 ### <a name="code-the-user-control"></a>Codificar o controle de usuário
 
@@ -216,7 +216,7 @@ O `Counter` controle irá expor um método para incrementar o contador, um event
 
 Quando você cria um controle de **caixa de ferramentas** , o Visual Studio cria um arquivo chamado *ProjectName. vsix* na pasta \bin\debug\ do seu projeto. Você pode implantar o controle carregando o arquivo *. vsix* em uma rede ou em um site da Web. Quando um usuário abre o arquivo *. vsix* , o controle é instalado e adicionado à **caixa de ferramentas** do Visual Studio no computador do usuário. Como alternativa, você pode carregar o arquivo *. vsix* para [Visual Studio Marketplace](https://marketplace.visualstudio.com/) para que os usuários possam encontrá-lo navegando **Tools**na  >  caixa de diálogo**extensões e atualizações** de ferramentas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)
 - [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)

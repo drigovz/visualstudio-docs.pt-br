@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568133"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opções, Editor de texto, XML, Formatação
 
-Use a página de opções de **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para acessar as opções de formatação XML, escolha O**Editor de** > **texto de opções** >  **de ferramentas** > **XML**e, em seguida, escolha **Formatação**.
+Use a página de opções de **Formatação** para especificar como elementos e atributos são formatados nos documentos XML. Para acessar opções de formatação XML, escolha **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **XML**e, em seguida, escolha **formatação**.
 
 ## <a name="attributes"></a>Atributos
 
@@ -41,7 +41,7 @@ Alinha o segundo e os atributos subsequentes verticalmente para corresponder ao 
 
 ## <a name="auto-reformat"></a>Reformatação Automática
 
-**Na pasta da prancheta**
+**Ao colar da área de transferência**
 
 Reformata o texto XML colado da área de transferência.
 

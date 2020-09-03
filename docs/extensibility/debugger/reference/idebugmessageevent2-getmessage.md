@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: 'IDebugMessageEvent2:: GetMessage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727405"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
-Faz com que a mensagem seja exibida.
+Obtém a mensagem a ser exibida.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,26 +48,26 @@ int GetMessage( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pMessageType`\
-[fora] Retorna um valor da enumeração [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) que descreve o tipo da mensagem.
+fora Retorna um valor da enumeração [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) que descreve o tipo da mensagem.
 
 `pbstrMessage`\
-[fora] Retorna a mensagem.
+fora Retorna a mensagem.
 
 `pdwType`\
-[fora] Retorna o tipo da mensagem, usando as `MessageBox` convenções da função Win32. Consulte a função [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obter detalhes.
+fora Retorna o tipo da mensagem, usando as convenções da função do Win32 `MessageBox` . Consulte a função [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obter detalhes.
 
 `pbstrHelpFileName`\
-[dentro, fora] Retorna o nome do arquivo de ajuda. Pode ser um valor nulo (C++) ou vazio (C#) se não houver arquivo de ajuda.
+[entrada, saída] Retorna o nome do arquivo de ajuda. Pode ser um valor nulo (C++) ou vazio (C#) se não houver nenhum arquivo de ajuda.
 
 `pdwHelpId`\
-[dentro, fora] Retorna o identificador de ajuda. Pode ser 0 se não houver ajuda associada a esta mensagem.
+[entrada, saída] Retorna o identificador da ajuda. Poderá ser 0 se não houver ajuda associada a esta mensagem.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
-- [Messagetype](../../../extensibility/debugger/reference/messagetype.md)
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

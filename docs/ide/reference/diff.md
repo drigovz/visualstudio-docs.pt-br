@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570083"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -31,11 +31,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 ## <a name="arguments"></a>Argumentos
 
-- *Sourcefile*
+- *SourceFile*
 
   Obrigatórios. O caminho completo e o nome do primeiro arquivo a ser comparado.
 
-- *Arquivo alvo*
+- *TargetFile*
 
   Obrigatórios. O caminho completo e o nome do segundo arquivo a ser comparado.
 

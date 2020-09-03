@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider:: IsHiddenCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d1ede1cbd8c2a69d45a8c653aa97d0bfb618f821
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733672"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Determina se o código no endereço de depurador especificado está oculto.
+Determina se o código no endereço do depurador especificado está oculto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,15 +37,15 @@ int IsHiddenCode(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pAddress`\
-[em] O endereço de depuração representado por uma interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+no O endereço de depuração que é representado por uma interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
-## <a name="return-value"></a>Valor retornado
-Se o código estiver `S_OK`oculto, retorna; caso contrário, `S_FALSE`retorna.
+## <a name="return-value"></a>Valor Retornado
+Se o código estiver oculto, retorna `S_OK` ; caso contrário, retorna `S_FALSE` .
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsHiddenCode(

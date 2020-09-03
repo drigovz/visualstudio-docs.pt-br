@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs
+title: 'IDebugGenericFieldDefinition:: GetFormalTypeParams | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728250"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-Recupera os parâmetros do tipo dado o número de parâmetros.
+Recupera os parâmetros de tipo de acordo com o número de parâmetros.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ int GetFormalTypeParams(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `cParams`\
-[em] Número de parâmetros.
+no Número de parâmetros.
 
 `ppParams`\
-[fora] Matriz de parâmetros de tipo.
+fora Matriz de parâmetros de tipo.
 
 `pcParams`\
-[dentro, fora] Número de parâmetros na `ppParams` matriz.
+[entrada, saída] Número de parâmetros na `ppParams` matriz.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Retorne os parâmetros de tipo em ordem da esquerda para a direita. Por exemplo,\<Dictionary K,V> retorna IDebugFormalGenericParameters {K,V}.
+ Retorne os parâmetros de tipo na ordem da esquerda para a direita. Por exemplo, Dictionary \<K,V> retorna IDebugFormalGenericParameters {K, V}.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

@@ -1,5 +1,5 @@
 ---
-title: idebugEngineProgram2::WatchForThreadstep | Microsoft Docs
+title: 'IDebugEngineProgram2:: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730356"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-Observa para que a execução (ou pare de observar a execução) ocorra no segmento dado.
+Inspeciona a execução (ou pára de observar a execução) para ocorrer no thread determinado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,26 +45,26 @@ int WatchForThreadStep( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pOriginatingProgram`\
-[em] Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) representando o programa sendo pisado.
+no Um objeto [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que representa o programa que está sendo percorrido.
 
 `dwTid`\
-[em] Especifica o identificador do segmento para assistir.
+no Especifica o identificador do thread a ser inspecionado.
 
 `fWatch`\
-[em] Não-zero`TRUE`( ) significa começar a observar `dwTid`a execução no segmento identificado por ; caso contrário,`FALSE`zero ( ) significa `dwTid`parar de assistir para execução em .
+no Diferente de zero ( `TRUE` ) significa começar a assistir para execução no thread identificado por `dwTid` ; caso contrário, zero ( `FALSE` ) significa parar de assistir para execução em `dwTid` .
 
 `dwFrame`\
-[em] Especifica um índice de quadro que controla o tipo de passo. Quando este valor é zero (0), o tipo de passo é "passo `dwTid` a passo" e o programa deve parar sempre que o segmento identificado por executá-lo. Quando `dwFrame` não é zero, o tipo de passo é "passo a passo" e o programa deve parar apenas se o segmento identificado por `dwTid` estiver sendo executado em um quadro cujo índice é igual ou maior na pilha do que `dwFrame`.
+no Especifica um índice de quadro que controla o tipo de etapa. Quando esse valor for zero (0), o tipo de etapa será "Step Into" e o programa deverá ser interrompido sempre que o thread identificado pelo for `dwTid` executado. Quando `dwFrame` for diferente de zero, o tipo de etapa será "Step Over" e o programa deverá parar somente se o thread identificado pelo `dwTid` estiver em execução em um quadro cujo índice seja igual ou superior na pilha do que `dwFrame` .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Quando o Gerenciador de depuração de sessão (SDM) etapa um programa, identificado pelo `pOriginatingProgram` parâmetro, ele notifica todos os outros programas anexados chamando esse método.
+ Quando o SDM (Gerenciador de depuração de sessão) percorre um programa, identificado pelo `pOriginatingProgram` parâmetro, ele notifica todos os outros programas anexados chamando esse método.
 
- Este método é aplicável apenas à revisão do mesmo segmento.
+ Esse método é aplicável somente à depuração do mesmo thread.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

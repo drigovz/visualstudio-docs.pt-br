@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569576"
 ---
 # <a name="find-in-files-command"></a>Comando Localizar nos Arquivos
@@ -36,7 +36,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 `findwhat`\
 Obrigatórios. O texto a ser correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /case ou /c\
 Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
@@ -87,7 +87,7 @@ Este exemplo procura btnCancel em todos os arquivos .cls localizados na pasta "M
 ## <a name="see-also"></a>Confira também
 
 - [Localizar em arquivos](../../ide/find-in-files.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

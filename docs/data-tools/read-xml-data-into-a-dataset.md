@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281780"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
@@ -142,9 +142,9 @@ A interface do usuário para esse aplicativo consiste no seguinte:
     |`TextBox1`|**Multilinha**|`true`|
     ||**ScrollBars**|**Vertical**|
     |`Button1`|**Nome**|`ReadXmlButton`|
-    ||**Texto**|`Read XML`|
+    ||**Text**|`Read XML`|
     |`Button2`|**Nome**|`ShowSchemaButton`|
-    ||**Texto**|`Show Schema`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Criar o DataSet que recebe os dados XML
 
@@ -214,7 +214,7 @@ Este tutorial ensina os conceitos básicos da leitura de um arquivo XML em um co
 
 - Edite os dados no DataSet e grave-os em um banco de dados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Acessar dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666224"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opções, Editor de Texto, F#, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para F#. Para acessar esta página de opções, escolha **Opções de** > **ferramentas**e, em seguida, escolha Editor **de** > texto**F#** > **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para F#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções**e, em seguida, escolha **Editor de texto**  >  **F #**  >  **IntelliSense**.
 
 ## <a name="completion-lists"></a>Listas de Conclusão
 
 - **Mostrar lista de conclusão depois que um caractere é digitado**
 
-   Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de preenchimento quando você começar a digitar. Se você não selecionar essa opção, a conclusão do IntelliSense ainda está disponível no menu IntelliSense ou pressionando O**Espaço** **Ctrl** + .
+   Quando essa opção estiver selecionada, o IntelliSense exibirá automaticamente a lista de preenchimento quando você começar a digitar. Se você não selecionar essa opção, a conclusão do IntelliSense ainda estará disponível no menu do IntelliSense ou pressionando **Ctrl**  +  **espaço**.
 
 - **Mostrar lista de conclusão depois que um caractere for excluído**
 

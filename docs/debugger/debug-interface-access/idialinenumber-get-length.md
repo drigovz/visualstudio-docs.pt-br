@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3804d018569a0b2e0ee5a11a3bb5edc8363cfffc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466885"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
@@ -41,5 +41,5 @@ fora Retorna o número de bytes em um bloco.
 ## <a name="remarks"></a>Comentários
  O bloco é o comprimento do código-fonte na linha, conforme representado pelo objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
