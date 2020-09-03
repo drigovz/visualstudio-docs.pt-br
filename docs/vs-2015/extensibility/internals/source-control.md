@@ -1,5 +1,5 @@
 ---
-title: Controle de fonte | Microsoft Docs
+title: Controle do código-fonte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a29071035ccdd8a94b4ae26323780bcb24e8e23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155664"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Esta seção discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por meio de um plug-in de controle do código-fonte ou um VSPackage de controle do código-fonte.  
+Esta seção aborda as opções para implementar o controle do código-fonte como um recurso integrado do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , seja por meio de um plug-in de controle do código-fonte ou de um VSPackage de controle do código-fonte.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Essentials](../../extensibility/internals/source-control-integration-essentials.md)  
@@ -29,15 +29,15 @@ Esta seção discute as opções para implementar o controle de origem como um r
  [Visão geral](../../extensibility/internals/source-control-integration-overview.md)  
  Uma visão geral das duas opções disponíveis para implementar o controle do código-fonte.  
   
- [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- Discute como criar um plug-in de controle de fonte que fornece funcionalidade de controle do código-fonte por meio de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface de usuário de controle do código-fonte (UI).  
+ [Criando um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ Discute como criar um plug-in de controle do código-fonte que fornece funcionalidade de controle do código-fonte por meio da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário do controle do código-fonte (IU).  
   
  [Criar um VSPackage de controle do código-fonte](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- Discute como criar um controle de fonte VSPackage que não apenas fornece a funcionalidade de controle do código-fonte, mas pode ser usado para personalizar o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] da interface do usuário do controle de origem.  
+ Discute como criar um VSPackage de controle do código-fonte que não só fornece funcionalidade de controle do código-fonte, mas pode ser usado para personalizar a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário do controle do código-fonte.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)  
  Referência para a API de plug-in de controle do código-fonte.  
   
  [Estender projetos](../../extensibility/extending-projects.md)  
- Descreve como usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projetos e soluções para organizar os arquivos de código e arquivos de recurso e como implementar o controle do código-fonte.
+ Descreve como usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projetos e soluções para organizar arquivos de código e arquivos de recursos e como implementar o controle do código-fonte.

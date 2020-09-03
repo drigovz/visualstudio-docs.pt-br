@@ -1,5 +1,5 @@
 ---
-title: Depurando aplicativos Web e Script | Microsoft Docs
+title: Depurando aplicativos e script da Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155911"
 ---
 # <a name="debugging-web-applications-and-script"></a>Depurando aplicativos Web e script
@@ -34,7 +34,7 @@ ms.locfileid: "68155911"
 
 Legenda da tabela:  
   
- Esta seção descreve técnicas de depuração comuns para aplicativos Web. Para obter mais informações, consulte [Noções básicas do depurador](../debugger/debugger-basics.md).  
+ Esta seção descreve técnicas de depuração comuns para aplicativos Web. Para obter mais informações, consulte [noções básicas do depurador](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Depurando aplicativos ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
@@ -43,7 +43,7 @@ Legenda da tabela:
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Lista os erros que podem ser encontrados ao depurar aplicativos Web e sugere correções.  
   
- [Passo a passo: Como depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Instruções passo a passo: depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Descreve como usar as janelas de ferramentas de **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -59,6 +59,6 @@ Legenda da tabela:
  [IntelliTrace](../debugger/intellitrace.md)  
  Localizar os bugs mais rápido e de maneira mais fácil registrando o histórico de execução do seu aplicativo com IntelliTrace. Retroceda e avance pelos eventos e pelas chamadas registrados para examinar o estado do aplicativo nos pontos-chave em tempo. Depure seu código sem definir muitos pontos de interrupção ou reiniciar o aplicativo com tanta frequência. Exige o Visual Studio Ultimate.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)

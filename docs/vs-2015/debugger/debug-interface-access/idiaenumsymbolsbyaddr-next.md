@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc58c8da54380b8a835d64fcc5dc079bb8d8023e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189645"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera os símbolos Avançar na ordem pelo endereço.  
+Recupera os próximos símbolos no endereço de ordenação.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,20 +37,20 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Parâmetros  
  celt  
- [in] O número de símbolos no enumerador a ser recuperado.  
+ no O número de símbolos no enumerador a ser recuperado.  
   
  rgelt  
- [out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representam os símbolos desejados.  
+ fora Uma matriz que deve ser preenchida com o objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa os símbolos desejados.  
   
  pceltFetched  
- [out] Retorna o número de símbolos no enumerador buscado.  
+ fora Retorna o número de símbolos no enumerador obtido.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum símbolo de mais. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais símbolos. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método atualiza a posição de enumerador pelo número de elementos buscada.  
+ Esse método atualiza a posição do enumerador pelo número de elementos buscados.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

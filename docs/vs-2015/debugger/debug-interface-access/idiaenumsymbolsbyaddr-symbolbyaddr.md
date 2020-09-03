@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6561c3afd273a2a559138ed2363b4ffa4fdd0fd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189615"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Posiciona o enumerador ao executar uma pesquisa por número de seção de imagem e o deslocamento.  
+Posiciona o enumerador executando uma pesquisa por número de seção de imagem e deslocamento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,17 +37,17 @@ HRESULT symbolByAddr ( 
   
 #### <a name="parameters"></a>Parâmetros  
  isect  
- [in] Número de seção de imagem.  
+ no Número da seção da imagem.  
   
  offsect  
- [in] Na seção de deslocamento.  
+ no Deslocamento na seção.  
   
  ppsymbol  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o símbolo encontrado.  
+ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo encontrado.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não pôde ser encontrado. Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o símbolo não foi encontrado. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

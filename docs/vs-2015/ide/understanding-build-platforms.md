@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 191db7fa1079ef971e6e00a5f2618a6720b93e23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672684"
 ---
 # <a name="understanding-build-platforms"></a>Noções sobre plataformas de build
@@ -30,9 +30,9 @@ ms.locfileid: "72672684"
 Você pode armazenar versões diferentes de propriedades de solução e de projeto que se aplicam a plataformas de destino diferentes. Por exemplo, você pode criar uma configuração de depuração que se destina a uma plataforma x86 e uma configuração de depuração que se destina a uma plataforma x64. Você pode alterar rapidamente a plataforma ativa para que você possa compilar várias configurações com facilidade.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como configurar projetos para direcionar a plataformas](../ide/how-to-configure-projects-to-target-platforms.md) explica como configurar um projeto para ser direcionado a uma plataforma específica.
+ [Como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md) Explica como configurar um projeto para direcionar uma plataforma específica.
 
- [Como configurar projetos para direcionar a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md) explica como configurar um projeto para ser direcionado a várias plataformas.
+ [Como: configurar projetos para várias plataformas de destino](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Explica como configurar um projeto para direcionar várias plataformas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Walkthrough: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [criando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [compilando e compilando](../ide/compiling-and-building-in-visual-studio.md)

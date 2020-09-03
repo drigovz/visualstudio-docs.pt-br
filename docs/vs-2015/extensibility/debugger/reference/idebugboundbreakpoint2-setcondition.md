@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition | Microsoft Docs
+title: 'IDebugBoundBreakpoint2:: setcondition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ac19bfe2109d7885265342ccc5ef4d358727d49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156202"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
@@ -41,15 +41,15 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Parâmetros  
  `bpCondition`  
- [in] Um valor a partir de [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) enumeração que descreve a condição.  
+ no Um valor da enumeração [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) que descreve a condição.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto associado de ponto de interrupção é definido como `BPS_DELETED` (parte do [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração).  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto de ponto de interrupção associado é definido como `BPS_DELETED` (parte da enumeração de [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).  
   
 ## <a name="remarks"></a>Comentários  
- Qualquer condição que foi previamente associada este ponto de interrupção será perdida.  
+ Qualquer condição que foi associada anteriormente a esse ponto de interrupção é perdida.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

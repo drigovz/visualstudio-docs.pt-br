@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isPointerToDataMember | Microsoft Docs
+title: 'IDiaSymbol:: get_isPointerToDataMember | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca44d11dfcec717e37a9bc13a2d87f9f5a94ede3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155875"
 ---
-# <a name="idiasymbolgetispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
+# <a name="idiasymbolget_ispointertodatamember"></a>IDiaSymbol::get_isPointerToDataMember
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Especifica se esse símbolo é um ponteiro para um membro de dados.  
+Especifica se este símbolo é um ponteiro para um membro de dados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,10 +32,10 @@ HRESULT get_isPointerToDataMember(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Um ponteiro para um `BOOL` que especifica se esse símbolo é um ponteiro para um membro de dados.  
+ fora Um ponteiro para um `BOOL` que especifica se este símbolo é um ponteiro para um membro de dados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

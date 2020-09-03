@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155943"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
@@ -34,7 +34,7 @@ Contém um conjunto de definidos elementos [Property](../msbuild/property-elemen
  \<Project>  
  \<PropertyGroup>  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <PropertyGroup Condition="'String A' == 'String B'">  
@@ -48,19 +48,19 @@ Contém um conjunto de definidos elementos [Property](../msbuild/property-elemen
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|DESCRIÇÃO|  
+|Atributo|Descrição|  
 |---------------|-----------------|  
 |Condição|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Elemento opcional.<br /><br /> Um nome de propriedade definida pelo usuário, que contém o valor da propriedade. Pode ser que não haja nenhum ou mais de um elemento *Property* em um elemento `PropertyGroup`.|  
+|[Propriedade](../msbuild/property-element-msbuild.md)|Elemento opcional.<br /><br /> Um nome de propriedade definida pelo usuário, que contém o valor da propriedade. Pode ser que não haja nenhum ou mais de um elemento *Property* em um elemento `PropertyGroup`.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|DESCRIÇÃO|  
+|Elemento|Descrição|  
 |-------------|-----------------|  
 |[Projeto](../msbuild/project-element-msbuild.md)|Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
@@ -75,6 +75,6 @@ Contém um conjunto de definidos elementos [Property](../msbuild/property-elemen
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)  
- [Propriedades MSBuild](msbuild-properties1.md)
+ [Propriedades do MSBuild](msbuild-properties1.md)
