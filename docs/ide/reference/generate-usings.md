@@ -13,10 +13,10 @@ ms.workload:
 helpviewer_keywords:
 - add missing usings
 ms.openlocfilehash: 903b160bac0e8096062e09fd78ff4c92c46cf8ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094317"
 ---
 # <a name="add-missing-usings-in-visual-studio"></a>Adicionar usos ausentes no Visual Studio
@@ -27,15 +27,15 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O que é isso?** Permite adicionar imediatamente as importações necessárias ou [usar diretivas](/dotnet/csharp/language-reference/keywords/using-directive) para código de cópia e cola.
+**O que:** Permite adicionar imediatamente as importações necessárias ou o [uso de diretivas](/dotnet/csharp/language-reference/keywords/using-directive) para o código de cópia e colagem.
 
-**Quando:** É prática comum copiar códigos de diferentes lugares do seu projeto ou outras fontes e colá-lo em novo código. Esta Ação Rápida encontra diretivas de importação ausentes para código de cópia e colado e, em seguida, solicita que você as adicione. Esta correção de código também pode adicionar referências de projeto para projeto.
+**Quando:** É uma prática comum copiar o código de locais diferentes em seu projeto ou outras fontes e colá-lo no novo código. Essa ação rápida localiza diretivas de importações ausentes para código de cópia e colagem e, em seguida, solicita que você as adicione. Essa correção de código também pode adicionar referências do projeto ao projeto.
 
-**Por que:** Como o Quick Action adiciona automaticamente as importações necessárias, `using` você não precisa copiar manualmente as diretivas que seu código precisa.
+**Por que:** Como a ação rápida adiciona automaticamente as importações necessárias, você não precisa copiar manualmente as `using` diretivas de que seu código precisa.
 
 ## <a name="add-missing-usings-refactoring"></a>Adicionar a refatoração de usos ausentes
 
-1. Copie o código de um arquivo e cole-o `using` em um novo sem incluir as diretivas necessárias. O erro resultante é acompanhado por uma correção de código que adiciona as diretivas faltantes. `using`
+1. Copie o código de um arquivo e cole-o em um novo sem incluir as `using` diretivas necessárias. O erro resultante é acompanhado por uma correção de código que adiciona as `using` diretivas ausentes.
 
     > [!NOTE]
     > É necessário ativar essa sugestão em **Ferramentas > Opções > Editor de Texto > C# > Avançado > Diretivas Using**.
@@ -44,7 +44,7 @@ Esta geração de código aplica-se a:
 
     ![Gerar usos](media/generate-using-codefix.png)
 
-3. Selecione **using \<sua referência\>;** para adicionar a referência ausente.
+3. Selecione **usando \<your reference\> ;** para adicionar a referência ausente.
 
     ![Gerar o resultado de instruções using](media/generate-using-result.png)
 
@@ -52,4 +52,4 @@ Esta geração de código aplica-se a:
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)
-- [Dicas para desenvolvedores .NET](../csharp-developer-productivity.md)
+- [Dicas para desenvolvedores do .NET](../csharp-developer-productivity.md)

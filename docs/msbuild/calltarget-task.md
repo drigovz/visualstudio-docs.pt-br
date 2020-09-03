@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26d29c236b89172ab6dc456be97016b98f2cae19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094555"
 ---
 # <a name="calltarget-task"></a>Tarefa CallTarget
@@ -33,7 +33,7 @@ Invoca os destinos especificados no arquivo de projeto.
 
 | Parâmetro | Descrição |
 |---------------------------| - |
-| `RunEachTargetSeparately` | Parâmetro de entrada de `Boolean` opcional.<br /><br /> Se `true`, o mecanismo MSBuild é chamado uma vez por alvo. Se `false`, o mecanismo MSBuild é chamado uma vez para construir todos os alvos. O valor padrão é `false`. |
+| `RunEachTargetSeparately` | Parâmetro de entrada de `Boolean` opcional.<br /><br /> Se `true` , o mecanismo do MSBuild será chamado uma vez por destino. Se `false` , o mecanismo do MSBuild será chamado uma vez para compilar todos os destinos. O valor padrão é `false`. |
 | `TargetOutputs` | Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém as saídas de todos os destinos compilados. |
 | `Targets` | Parâmetro `String[]` opcional.<br /><br /> Especifica o destino ou os destinos que serão compilados. |
 | `UseResultsCache` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o resultado em cache será retornado, se presente.<br /><br /> **Observação** Quando uma tarefa MSBuild for executada, a saída é armazenada em cache em um escopo (ProjectFileName, GlobalProperties)[TargetNames] como uma lista de itens de build. |
@@ -44,7 +44,7 @@ Invoca os destinos especificados no arquivo de projeto.
 
  Caso deseje criar os destinos padrão, use a [tarefa MSBuild](../msbuild/msbuild-task.md) e defina o parâmetro `Projects` como igual a `$(MSBuildProjectFile)`.
 
-Ao `CallTarget`usar, o MSBuild avalia o chamado alvo em um novo escopo, em oposição ao mesmo escopo de onde é chamado. Isso significa que quaisquer alterações de item e propriedade no chamado alvo não são visíveis para o alvo de chamada.  Para passar informações para o `TargetOutputs` alvo de chamada, use o parâmetro de saída.
+Ao usar `CallTarget` o, o MSBuild avalia o destino chamado em um novo escopo, em oposição ao mesmo escopo do qual ele é chamado. Isso significa que qualquer alteração de item e propriedade no destino chamado não é visível para o destino de chamada.  Para passar informações para o destino de chamada, use o `TargetOutputs` parâmetro de saída.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -17,24 +17,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094545"
 ---
 # <a name="xsltransformation-task"></a>Tarefa XslTransformation
 
 Transformações um XML de entrada usando um XSLT ou XSLT compilado e saídas para um arquivo ou um dispositivo de saída.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `XslTransformation`.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`OutputPaths`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos de saída para a transformação XML.|
-|`Parameters`|Parâmetro `String` opcional.<br /><br /> Especifica os parâmetros para o documento de entrada XSLT.  Forneça o XML bruto que `<Parameter Name="" Value="" Namespace="" />`mantém cada parâmetro como .|
+|`Parameters`|Parâmetro `String` opcional.<br /><br /> Especifica os parâmetros para o documento de entrada XSLT.  Forneça o XML bruto que contém cada parâmetro como `<Parameter Name="" Value="" Namespace="" />` .|
 |`XmlContent`|Parâmetro `String` opcional.<br /><br /> Especifica a entrada XML como uma cadeia de caracteres.|
 |`XmlInputPaths`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os arquivos de entrada XML.|
 |`XslCompiledDllPath`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o XSLT compilado.|
@@ -47,7 +47,7 @@ Transformações um XML de entrada usando um XSLT ou XSLT compilado e saídas pa
 
 ## <a name="example"></a>Exemplo
 
-No exemplo a seguir, um arquivo de transformação XSL *transform.xslt* é usado para modificar o arquivo `$(XmlInputFileName)`xml . O XML transformado é `$(IntermediateOutputPath)output.xml`escrito para . A transformação XSL toma `$(Parameter1)` como parâmetro de entrada.
+No exemplo a seguir, um arquivo de transformação XSL *Transform. XSLT* é usado para modificar o arquivo XML `$(XmlInputFileName)` . O XML transformado é gravado no `$(IntermediateOutputPath)output.xml` . A transformação XSL usa `$(Parameter1)` como um parâmetro de entrada.
 
 ```xml
     <XslTransformation XslInputPath="transform.xslt"
@@ -58,6 +58,6 @@ No exemplo a seguir, um arquivo de transformação XSL *transform.xslt* é usado
 
 ## <a name="see-also"></a>Confira também
 
-- [Parâmetros de XSLT](/dotnet/standard/data/xml/xslt-parameters)
+- [Parâmetros XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

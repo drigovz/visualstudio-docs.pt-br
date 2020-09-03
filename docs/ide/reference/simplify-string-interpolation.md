@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094300"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>Simplificar a refatoração de seqüência de cordas
+# <a name="simplify-string-interpolation-refactoring"></a>Simplificar refatoração de interpolação de cadeia de caracteres
 
 Esta refatoração aplica-se a:
 
@@ -25,19 +25,19 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O que é isso?** Permite simplificar uma [interpolação de cordas.](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation)
+**O que:** Permite simplificar uma [interpolação de cadeia de caracteres](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
 
-**Quando:** Você tem uma interpolação de cordas que pode ser simplificada.
+**Quando:** Você tem uma interpolação de cadeia de caracteres que pode ser simplificada.
 
-**Por que:** Simplificar uma interpolação de cordas pode fornecer mais clareza e sintaxe concisa. Esta ferramenta de refatoração executará a tarefa automaticamente em vez de ter que fazê-la manualmente.
+**Por que:** Simplificar uma interpolação de cadeia de caracteres pode fornecer mais clareza e sintaxe concisa. Essa ferramenta de refatoração executará a tarefa automaticamente em vez de fazer isso manualmente.
 
 ## <a name="how-to"></a>Como fazer
 
-1. Coloque seu caret na interpolação de cordas:
+1. Coloque o cursor sobre a interpolação da cadeia de caracteres:
 
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
-3. Selecione **Simplificar interpolação**
+3. Selecionar **simplificar interpolação**
 
     ![Simplificar a interpolação da cadeia de caracteres](media/simplify-string-interpolation.png)
 
