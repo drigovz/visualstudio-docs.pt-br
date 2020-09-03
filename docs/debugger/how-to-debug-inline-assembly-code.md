@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 528defb516b704f0425ac4389a2fd65befef7063
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350024"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Como depurar código de assembly embutido
@@ -39,7 +39,7 @@ O depurador fornece duas janelas para depurar o código do assembly embutido, a 
 
 2. Use a janela **Registros** para exibir conteúdo do registro.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

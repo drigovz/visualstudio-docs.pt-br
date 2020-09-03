@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8042b228a481dc3d720d8b422963db41abbddcd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533829"
 ---
 # <a name="vsperf"></a>VSPerf
@@ -27,7 +27,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
   
    Para obter mais informações sobre opções de criação de perfil, consulte [Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Neste tópico  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Neste tópico  
  Este tópico descreve as opções que você pode usar com a ferramenta de linha de comando `vsperf.exe`. Este tópico contém as seguintes seções:  
   
  [Somente aplicativos da Windows Store](#BKMK_windows_store_apps_only)  
@@ -56,7 +56,7 @@ Use a ferramenta de linha de comando **VsPerf** para:
 |**/args:{ExecutableArguments}**|Especifica os argumentos de linha de comando que passarão o destino **/launch**.|  
 |**/console**|Executa o destino **/launch** em uma nova janela de comando.|  
   
-## <a name="all-applications"></a><a name="BKMK_All_applications"></a>Todos os aplicativos  
+## <a name="all-applications"></a><a name="BKMK_All_applications"></a> Todos os aplicativos  
  Essas opções aplicam-se a qualquer aplicativo Windows 8 ou o Windows Server 2012.  
   
 |Opção|Descrição|  

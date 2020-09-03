@@ -10,10 +10,10 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 3ef987e99616c3eecf4731bf5ac89e16238e68aa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88643365"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Adicionar informações de Aplicativo Azure usando os serviços conectados do Visual Studio
@@ -83,7 +83,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
    ![Dependências de serviço](./media/azure-app-insights-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página do produto Azure Monitor](https://azure.microsoft.com/services/monitor/)
 - [Documentação do insights do Azure App](/azure/azure-monitor/app/app-insights-overview/)

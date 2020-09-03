@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac857d961b1ae736645ba2cfda3f1ef5755d0fa1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770282"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade do IDE
@@ -83,7 +83,7 @@ Também é possível alterar as configurações de como o texto é exibido no ed
     > [!TIP]
     > Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.
 
-7. Selecione **OK**.
+7. Escolha **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Alterando as cores usadas no IDE
 
@@ -99,12 +99,12 @@ Você pode optar por alterar as cores padrão de texto, indicadores de margem, e
 
 1. Selecione configurações de exibição entre as opções a seguir: **Primeiro plano do item**, **Tela de fundo do item** e **Negrito**.
 
-1. Selecione **OK**.
+1. Escolha **OK**.
 
 > [!TIP]
 > Para usar cores de alto contraste para todas as janelas de aplicativos em seu sistema operacional, pressione **ALT esquerda**com + **SHIFT esquerda** + **PrtScn**. Feche e reabra o Visual Studio, se estiver aberto, para implementar completamente as cores de alto contraste.
 
-## <a name="toolbars"></a>Barras de Ferramentas
+## <a name="toolbars"></a>Barras de ferramentas
 
 Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você pode adicionar texto a botões da barra de ferramentas.
 

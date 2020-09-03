@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3c08ce9605560173d6f29817372dee4af8d622e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349972"
 ---
 # <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
@@ -77,7 +77,7 @@ ms.locfileid: "85349972"
 9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à caixa de texto **Opções adicionais** .
 
     > [!WARNING]
-    > `/Zo`requer Visual Studio 2013 atualização 3 ou uma versão posterior.
+    > `/Zo` requer Visual Studio 2013 atualização 3 ou uma versão posterior.
     >
     >  Adicionar `/Zo` irá desabilitar [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md).
 
@@ -89,7 +89,7 @@ for (x=0; x<10; x++)
 
  Suponha que você defina um ponto de interrupção nesta linha. Você pode esperar que o ponto de interrupção seja atingido 10 vezes, mas se o código for otimizado, o ponto de interrupção será atingido somente uma vez. Isso ocorre porque a primeira instrução define o valor de `x` como 0. O compilador reconhece que isso somente precisa ser feito uma vez e o move para fora do loop. O ponto de interrupção também será movido. As instruções que comparam e incrementam `x` permanecem dentro do loop. Quando você exibe a janela **Desmontagem**, a [unidade da etapa](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) será definida automaticamente como Instrução para obter maior controle, o que é útil quando você passa por código otimizado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

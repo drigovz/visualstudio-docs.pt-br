@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88238174"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Aprenda a usar o editor de código para JavaScript
@@ -118,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 Você pode examinar os trechos de código disponíveis para a sua linguagem escolhendo **Editar**  >  **IntelliSense**  >  **trecho**do IntelliSense INSERT e, em seguida, escolhendo a pasta do seu idioma.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Snippets de código](../ide/code-snippets.md)
 - [Navegue pelos códigos](../ide/navigating-code.md)

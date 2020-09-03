@@ -12,18 +12,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771686"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação rápida de perfil de site com VSPerfASPNETCmd
 
-A ferramenta de linha de comando **VSPerfASPNETCmd** permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, [consulte Como: Instalar o profiler autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).
+A ferramenta de linha de comando **VSPerfASPNETCmd** permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, consulte [como: instalar o criador de perfil](../profiling/how-to-install-the-stand-alone-profiler.md)autônomo.
 
 > [!NOTE]
-> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [ferramentas de desempenho em aplicativos windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
  Em alguns cenários, tais como coletar dados de simultaneidade ou pausar e retomar a criação de perfil, o uso de **VSPerfCmd** é o método preferencial de criação de perfil.
 
@@ -32,7 +32,7 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite criar facilmente o 
 
 ## <a name="profile-an-aspnet-application"></a>Criar o perfil de um aplicativo ASP.NET
 
-Para criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], digite um dos comandos descritos nas seções a seguir. O site é iniciado e abre o criador de perfil para coletar dados. Exercite seu aplicativo e, em seguida, feche o navegador. Para parar a criação de perfil, **pressione** a tecla Enter na janela de solicitação de comando.
+Para criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], digite um dos comandos descritos nas seções a seguir. O site é iniciado e abre o criador de perfil para coletar dados. Exercite seu aplicativo e, em seguida, feche o navegador. Para interromper a criação de perfil, pressione a tecla **Enter** na janela do prompt de comando.
 
 > [!NOTE]
 > Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd**. Você pode usar a opção **/nowait** para forçar o prompt de comando a retornar. Confira [Usar a opção /NoWait](#use-the-nowait-option).
@@ -42,7 +42,7 @@ Para criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/inc
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- Um exemplo de *websiteUrl* hospedado no servidor local pode ser *http://localhost/MySite/default.aspx*. Um exemplo de um *http://www.contoso.com*site externo é . Para obter mais informações, confira as URLs de exemplo em [Para criar o perfil de um site sem abrir um projeto no Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+ Um exemplo de *websiteUrl* hospedado no servidor local pode ser *http://localhost/MySite/default.aspx*. Um exemplo de um site externo é *http://www.contoso.com* . Para obter mais informações, confira as URLs de exemplo em [Para criar o perfil de um site sem abrir um projeto no Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Para coletar dados de tempo detalhados usando o método de instrumentação
 
@@ -50,7 +50,7 @@ Use a seguinte linha de comando para coletar dados de tempo detalhados de um apl
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-Se você quiser traçar o perfil comcompilado estáticamente . arquivos *dll* em seu aplicativo web, você deve instrumentalar os arquivos usando a ferramenta de linha de comando [VSInstr.](../profiling/vsinstr.md) O comando vsperfaspnetcmd /trace incluirá dados dos arquivos instrumentados.
+Se você quiser criar o perfil de forma estática. arquivos *dll* em seu aplicativo Web, você deve instrumentar os arquivos usando a ferramenta de linha de comando [VSInstr](../profiling/vsinstr.md) . O comando vsperfaspnetcmd /trace incluirá dados dos arquivos instrumentados.
 
 ## <a name="to-collect-net-memory-data"></a>Para coletar dados de memória do .NET
 
@@ -103,5 +103,5 @@ Você pode adicionar qualquer uma das seguintes opções aos comandos listados a
 
 |Opção|Descrição|
 |------------|-----------------|
-|**/Saída:**`VspFile`|Por padrão, os dados de criação de perfil (.* vsp*) arquivo é criado no diretório atual com o nome do arquivo **PerformanceReport.vsp**. Use a opção /output para especificar um local diferente, nome do arquivo diferente ou ambos.|
-|**/PackSymbols:Off**|Por padrão, VsPerfASPNETCmd insere símbolos (nomes de função, de parâmetro e assim por diante) no arquivo .*vsp*. Inserir os símbolos pode tornar o arquivo de dados de criação de perfil muito grande. Se você tiver acesso ao . *pdb* arquivos que contêm os símbolos quando você analisa os dados, use a opção /packsymbols:off para desativar a incorporação dos símbolos.|
+|**/Output:**`VspFile`|Por padrão, os dados de criação de perfil (.* VSP*) é criado no diretório atual com o nome de arquivo **PerformanceReport. vsp**. Use a opção /output para especificar um local diferente, nome do arquivo diferente ou ambos.|
+|**/PackSymbols:Off**|Por padrão, VsPerfASPNETCmd insere símbolos (nomes de função, de parâmetro e assim por diante) no arquivo .*vsp*. Inserir os símbolos pode tornar o arquivo de dados de criação de perfil muito grande. Se você tiver acesso ao. arquivos *PDB* que contêm os símbolos ao analisar os dados, use a opção/PACKSYMBOLS: off para desabilitar a inserção dos símbolos.|

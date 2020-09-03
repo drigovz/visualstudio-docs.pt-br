@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851998"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
@@ -49,7 +49,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente na primeira vez em que a caixa de diálogo é aberta. Se você alterar posteriormente a estrutura de destino do projeto, será necessário selecionar os pré-requisitos manualmente para corresponder à nova estrutura de destino.
 
- Para obter mais informações, confira [Como: Destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Tipo de aplicativo** Especifica o tipo de aplicativo a ser compilado. Para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], é possível especificar **aplicativo da Windows Store**, **Biblioteca de Classes** ou **Arquivo WinMD**. Para a maioria dos outros tipos de aplicativo, é possível especificar **aplicativos do Windows**, **aplicativo de Console**, **Biblioteca de Classes**, **Serviço Windows** ou **Biblioteca de Controles da Web**.
 
@@ -64,9 +64,9 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 
  **Informações do assembly** Clicar neste botão exibe a [Caixa de Diálogo de Informações do Assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Objeto de inicialização** Define o ponto de entrada a ser chamado quando o aplicativo for carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Não definido)** .
+ **Objeto de inicialização** Define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classes não têm um ponto de entrada, sua única opção para essa propriedade é **(não definido)**.
 
- Por padrão, em um projeto do Aplicativo de Navegador do WPF, essa opção é **(Não definido)** . A outra opção é *Projectname*.App. Nesse tipo de projeto, é necessário definir o URI de inicialização para carregar um recurso de interface do usuário quando o aplicativo é iniciado. Para fazer isso, abra o arquivo Application.xaml em seu projeto e defina a propriedade `StartupUri` como um arquivo .xaml em seu projeto, como Window1.xaml. Para obter uma lista dos elementos raiz aceitáveis, consulte <xref:System.Windows.Application.StartupUri%2A>. Também é necessário definir um método `public static void Main()` em uma classe no projeto. Essa classe será exibida na lista **Objeto de inicialização** como *ProjectName.ClassName*. Em seguida, é possível selecionar a classe como o objeto de inicialização.
+ Por padrão, em um projeto do Aplicativo de Navegador do WPF, essa opção é **(Não definido)**. A outra opção é *ProjectName*. app. Nesse tipo de projeto, é necessário definir o URI de inicialização para carregar um recurso de interface do usuário quando o aplicativo é iniciado. Para fazer isso, abra o arquivo Application.xaml em seu projeto e defina a propriedade `StartupUri` como um arquivo .xaml em seu projeto, como Window1.xaml. Para obter uma lista dos elementos raiz aceitáveis, consulte <xref:System.Windows.Application.StartupUri%2A>. Também é necessário definir um método `public static void Main()` em uma classe no projeto. Essa classe será exibida na lista **Objeto de inicialização** como *ProjectName.ClassName*. Em seguida, é possível selecionar a classe como o objeto de inicialização.
 
  Consulte [/main (Opções do compilador do C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -79,7 +79,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 
  **Manifesto** Seleciona uma opção de geração de manifesto quando o aplicativo é executado no Windows Vista sob o UAC (Controle de Conta de Usuário). Essa opção pode ter os seguintes valores:
 
-- **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Esta é a opção padrão.
+- **Inserir manifesto com configurações padrão**. Dá suporte à maneira típica como o Visual Studio funciona no Windows Vista, que é inserir as informações de segurança no arquivo executável do aplicativo, especificando que `requestedExecutionLevel` seja `AsInvoker`. Essa é a opção padrão.
 
 - **Criar aplicativo sem um manifesto**. Esse método é conhecido como *virtualização*. Use essa opção para compatibilidade com aplicativos anteriores.
 
@@ -87,7 +87,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
 
   **Arquivo de recurso** Selecione este botão de opção ao fornecer um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.
 
-  Insira um nome de caminho ou use o botão Procurar ( **...** ) para adicionar um arquivo de recurso Win32 ao projeto.
+  Insira um nome de caminho ou use o botão Procurar (**... **) para adicionar um arquivo de recurso Win32 ao projeto.
 
-## <a name="see-also"></a>Consulte também
-[Gerenciando Propriedades do aplicativo](../../ide/application-properties.md) [escrevendo código em soluções do Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Consulte Também
+[Gerenciando propriedades do aplicativo](../../ide/application-properties.md) [Escrevendo código em soluções do Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

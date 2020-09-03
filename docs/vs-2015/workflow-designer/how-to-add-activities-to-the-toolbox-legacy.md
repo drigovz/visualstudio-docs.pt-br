@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656614"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Como: Adicione atividades a caixa de ferramentas (o legados)
-Ao criar uma solução de fluxo de trabalho com o [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], as atividades personalizadas podem ser adicionadas ao projeto de fluxo de trabalho e aos seus designers colocados na **caixa de ferramentas** para facilitar o acesso. Você também pode adicionar atividades diretamente à **caixa de ferramentas** de uma dll (biblioteca de vínculo dinâmico).
+Ao criar uma solução de fluxo de trabalho com o herdado [!INCLUDE[wfd1](../includes/wfd1-md.md)] que visa o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , as atividades personalizadas podem ser adicionadas ao projeto de fluxo de trabalho e aos seus designers colocados na **caixa de ferramentas** para facilitar o acesso. Você também pode adicionar atividades diretamente à **caixa de ferramentas** de uma dll (biblioteca de vínculo dinâmico).
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Para adicionar uma atividade à caixa de ferramentas de uma DLL
 
@@ -32,5 +32,5 @@ Ao criar uma solução de fluxo de trabalho com o [!INCLUDE[wfd1](../includes/wf
 
 4. Clique em **OK** para concluir a adição da atividade à caixa de ferramentas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Usando as atividades herdadas de fluxo de](../workflow-designer/using-the-legacy-activity-designer.md) [trabalho herdado](../workflow-designer/legacy-workflow-activities.md) do designer de atividades

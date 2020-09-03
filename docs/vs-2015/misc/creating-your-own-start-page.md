@@ -12,10 +12,10 @@ ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
 ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850987"
 ---
 # <a name="creating-your-own-start-page"></a>Criando sua própria página inicial
@@ -56,7 +56,7 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto p�
   
 2. Abra StartPage. XAML.  
   
-3. Remova todo o conteúdo da página, deixando apenas os elementos XML externos e o elemento contendo <xref:System.Windows.Controls.Grid> de grade, para que o arquivo. XAML seja semelhante ao exemplo a seguir.  
+3. Remova todo o conteúdo da página, deixando apenas os elementos XML externos e o elemento de grade que o contém <xref:System.Windows.Controls.Grid> , para que o arquivo. XAML seja semelhante ao exemplo a seguir.  
   
    ```xaml
       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -85,7 +85,7 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto p�
   
 #### <a name="to-test-a-custom-start-page"></a>Para testar uma página inicial personalizada  
   
-1. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1}  
+1. Pressione F5.  
   
     A instância experimental do Visual Studio é aberta com a nova página inicial instalada, mas não selecionada.  
   
@@ -99,6 +99,6 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto p�
   
    Você pode compartilhar sua página inicial personalizada carregando o arquivo. vsix do diretório bin\Debug para o site [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou para outro site ou compartilhamento de intranet. Para obter mais informações, consulte [implantando páginas iniciais personalizadas](../extensibility/deploying-custom-start-pages.md).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Personalizando a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Adicionar XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

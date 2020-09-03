@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851923"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
@@ -37,7 +37,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 1. Faça logon no servidor Web com uma conta de administrador.  
   
-2. Clique em **Iniciar** e em **Painel de Controle**.  
+2. Clique em **Iniciar** e em **painel de controle**.  
   
 3. No **Painel de Controle**, clique duas vezes em **Ferramentas Administrativas**.  
   
@@ -77,7 +77,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.  
   
-    3. Clique em **Continue**.  
+    3. Clique em **Continuar**.  
   
          A caixa de diálogo Recursos do Windows é exibida.  
   
@@ -101,7 +101,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 4. Clique em **Exibição clássica** e clique duas vezes em **Ferramentas Administrativas**.  
   
-5. Clique na coluna **Nome** e clique duas vezes em **Gerenciador do IIS (Serviços de Informações da Internet)** .  
+5. Clique na coluna **Nome** e clique duas vezes em **Gerenciador do IIS (Serviços de Informações da Internet)**.  
   
 6. Na coluna **Conexões**, expanda o nó para o servidor.  
   
@@ -115,9 +115,9 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 9. No painel **Autenticação**, na coluna **Nome**, clique com o botão direito do mouse em **Autenticação do Windows** e clique em **Habilitar**.  
   
-10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)** .  
+10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)**.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Depuração de aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticação do Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
+ [Autenticação Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Executando aplicativos Web no Windows Vista com o IIS 7,0 e o Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

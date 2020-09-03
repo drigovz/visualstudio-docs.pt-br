@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851020"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
@@ -32,7 +32,7 @@ ms.locfileid: "75851020"
 
 - Se usar o Visual Studio 2015 para abrir uma solução criada no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], você poderá, posteriormente, abrir e modificar a solução novamente na versão anterior, desde que não tenha implementado recursos que são específicos do Visual Studio 2015.
 
-- Se tentar usar o Visual Studio 2015 para abrir uma solução criada no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou em uma versão anterior, talvez seja necessário alterar os projetos e arquivos para que eles fiquem compatíveis com o Visual Studio 2015. Para saber mais, confira a página [Portar, migrar e fazer upgrade de projetos do Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015).
+- Se tentar usar o Visual Studio 2015 para abrir uma solução criada no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou em uma versão anterior, talvez seja necessário alterar os projetos e arquivos para que eles fiquem compatíveis com o Visual Studio 2015. Para obter mais informações, consulte a página [porta, migrar e atualizar projetos do Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) .
 
 - Se você desinstalar uma versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em um computador que tem mais de uma versão instalada, as associações de arquivo do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] são removidas para todas as versões. É possível remapear essas associações de arquivos usando o botão **Restaurar Associações de Arquivos** na página **Ambiente**, **Geral** da caixa de diálogo [Opções](../ide/reference/general-environment-options-dialog-box.md).
 
@@ -51,12 +51,12 @@ ms.locfileid: "75851020"
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Configurando Projetos](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[Como modificar a estrutura de destino e o conjunto de ferramentas de plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Como executar um aplicativo JScript em uma versão anterior do Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
 
 - [Instalar o Visual Studio](../install/install-visual-studio-2015.md)
 - [Portar, migrar e atualizar projetos do Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [Compilando aplicativos isolados do C/C++ e assemblies lado a lado](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [Criando aplicativos isolados C/C++ e assemblies lado a lado](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
 - [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534206"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
@@ -166,13 +166,13 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
          **Projeto**  =  do *Seu projeto de biblioteca de classes*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implementando o comando de menu
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Implementando o comando de menu
  A classe de comando de menu implementa os métodos necessários para o <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> .
 
 |Assinatura|Descrição|
 |-|-|
 |`string Text { get; }`|Retornar o rótulo do item de menu.|
-|`void QueryStatus(IMenuCommand command);`|Chamado quando o usuário clica com o botão direito do mouse no diagrama.<br /><br /> Esse método não deve alterar o modelo.<br /><br /> Use `DiagramContext.CurrentDiagram.SelectedShapes` para determinar se você deseja que o comando apareça e esteja habilitado.<br /><br /> Definição<br /><br /> -   `command.Visible`para `true` se o comando precisar aparecer no menu quando o usuário clicar com o botão direito do mouse no diagrama<br />-   `command.Enabled`para `true` se o usuário puder clicar no comando no menu<br />-   `command.Text`para definir o rótulo do menu dinamicamente|
+|`void QueryStatus(IMenuCommand command);`|Chamado quando o usuário clica com o botão direito do mouse no diagrama.<br /><br /> Esse método não deve alterar o modelo.<br /><br /> Use `DiagramContext.CurrentDiagram.SelectedShapes` para determinar se você deseja que o comando apareça e esteja habilitado.<br /><br /> Definição<br /><br /> -   `command.Visible` para `true` se o comando precisar aparecer no menu quando o usuário clicar com o botão direito do mouse no diagrama<br />-   `command.Enabled` para `true` se o usuário puder clicar no comando no menu<br />-   `command.Text` para definir o rótulo do menu dinamicamente|
 |`void Execute (IMenuCommand command);`|Chamado quando o usuário clica no item de menu, se estiver visível e habilitado.|
 
 ### <a name="accessing-the-model-in-code"></a>Acessando o modelo no código
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  No entanto, você deve estar ciente de que o repositório de modelos não é thread-safe. Você sempre deve usar o thread da interface do usuário para fazer atualizações e, se possível, impedir que o usuário faça edições enquanto a operação em segundo plano estiver em andamento. Para obter um exemplo, consulte [atualizar um modelo UML de um thread em segundo plano](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Executando o comando de menu
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Executando o comando de menu
  Para fins de teste, execute o comando no modo de depuração.
 
 #### <a name="to-test-the-menu-command"></a>Para testar o comando de menu
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - O tipo de diagrama de modelo que você está usando (classe UML, sequência e assim por diante) é listado como um dos atributos de classe de comando de menu `[ClassDesignerExtension]` `[SequenceDesignerExtension]` e assim por diante.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalando e desinstalando uma extensão
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalando e desinstalando uma extensão
  Você pode instalar uma [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão no seu próprio computador e em outros computadores.
 
 #### <a name="to-install-an-extension"></a>Para instalar uma extensão
@@ -273,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [versão] \Extensions**
 
-## <a name="example"></a><a name="MenuExample"></a>Exemplo
+## <a name="example"></a><a name="MenuExample"></a> Exemplo
  O exemplo a seguir mostra o código de um comando de menu que vai trocar os nomes de dois elementos em um diagrama de classe. Esse código deve ser compilado em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto de extensão e instalado conforme descrito nas seções anteriores.
 
 ```

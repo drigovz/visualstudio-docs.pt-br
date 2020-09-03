@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298992"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: diretrizes
@@ -43,7 +43,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
   Para obter informações de referência sobre os elementos em diagramas de atividade, consulte [diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md).
 
-## <a name="Relationships"></a>Relação com outros diagramas
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> Relação com outros diagramas
  Se você desenhar um diagrama de atividade para descrever um processo comercial ou uma maneira na qual os usuários usam o sistema, poderá desenhar um diagrama de caso de uso para mostrar uma exibição diferente das mesmas informações. No diagrama de caso de uso, você desenha ações como casos de uso. Dê ao caso de uso os mesmos nomes das ações correspondentes. As vantagens do modo de exibição de caso de uso são que você pode:
 
 - Mostrar em um diagrama o quão maiores ações/casos de uso são compostos de menores, usando a relação de inclusão.
@@ -56,7 +56,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
   Em um diagrama de atividade, você pode mostrar o fluxo de dados passado entre as ações. Consulte a seção sobre como [descrever o fluxo de dados](#DataFlows). Mas um diagrama de atividade não descreve a estrutura dos dados. Para essa finalidade, você pode desenhar um diagrama de classes UML. Para obter informações, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Etapas básicas para desenhar diagramas de atividade
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> Etapas básicas para desenhar diagramas de atividade
  As etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-draw-an-activity-diagram"></a>Para desenhar um diagrama de atividade
@@ -93,14 +93,14 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
 - No **Gerenciador de modelos UML**, arraste a atividade para um pacote.
 
-     \- ou -
+     \- ou –
 
 - No **Gerenciador de modelos UML**, clique com o botão direito do mouse na atividade e clique em **recortar**. Em seguida, clique com o botão direito do mouse no pacote e clique em **colar**.
 
     > [!NOTE]
     > A atividade será exibida no Gerenciador de modelos UML somente quando você adicionar o primeiro elemento ao diagrama.
 
-## <a name="SimpleControlFlow"></a>Descrevendo o fluxo de controle
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> Descrevendo o fluxo de controle
  Um diagrama de atividade descreve um processo de negócios ou um algoritmo de software como uma série de ações. As setas do conector mostram como o controle é passado sequencialmente de uma ação para a próxima. Normalmente, uma ação pode ser iniciada somente após a conclusão da ação anterior.
 
  A figura a seguir é um exemplo de como você pode mostrar uma sequência de ações com ações, conectores, branches e loops. Cada elemento é explicado com mais detalhes nas seções a seguir.
@@ -174,7 +174,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
   Formas simples não formam parte do modelo UML e não aparecem no Gerenciador de modelos UML.
 
-## <a name="DataFlows"></a>Descrevendo o fluxo de dados
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> Descrevendo o fluxo de dados
  Você pode descrever os dados que passam e saem de uma atividade de uma das duas maneiras:
 
 - Use um **nó de objeto**. Esse é o método mais simples de descrever as informações que fluem entre as atividades. Um nó de objeto é como uma variável em um programa. Ele representa algo que armazena um ou mais valores que estão passando de uma ação para outra.
@@ -236,7 +236,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
  Como alternativa, você pode especificar que o fluxo de objeto inclua uma transformação que converte dados entre o tipo do pino de saída e o tipo do PIN de entrada. A transformação mais comum desse tipo apenas extrai a parte apropriada de um tipo maior. O exemplo na figura implica a existência de uma transformação que extrai o endereço de envio dos detalhes do pedido.
 
-## <a name="Details"></a>Definindo uma ação com mais detalhes
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> Definindo uma ação com mais detalhes
  Além de usar o nome da ação para tornar claro o resultado que ela normalmente deve atingir, aqui estão algumas maneiras de adicionar mais detalhes a uma ação:
 
 - Escreva uma descrição mais detalhada na propriedade **Body** . Por exemplo, você poderia escrever um fragmento de código do programa ou pseudo-código ou uma descrição completa dos resultados obtidos.
@@ -245,7 +245,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
 - Defina as propriedades de **condição local** e as condições **de pré-condições locais** da ação para descrever seu resultado em detalhes mais específicos. Para obter mais informações, consulte [definindo condições e pré-condições](#Postcondition).
 
-### <a name="Subactivities"></a>Descrevendo subatividades com ações de comportamento de chamada
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> Descrevendo subatividades com ações de comportamento de chamada
  Você pode descrever o comportamento detalhado de uma ação usando um diagrama de atividade separado. Um comportamento chamado é um diagrama de atividade que é representado em seu diagrama de atividade principal por uma ação de comportamento de chamada. Você também pode usar a ação chamar comportamento para descrever o comportamento compartilhado entre diferentes atividades para que você não precise desenhar a subatividade várias vezes.
 
  Na figura a seguir, o diagrama 1 mostra uma atividade que tem uma ação de comportamento de chamada e o diagrama 2 mostra o diagrama de subatividade que mostra o comportamento chamado.
@@ -285,7 +285,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
   ![Os Pins no comportamento de chamada mapeiam para parâmetros de atividade](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>Definindo condições e pré-condições
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> Definindo condições e pré-condições
  Você pode usar as propriedades de **condição** local e as pré-condições **locais** para especificar em detalhes o resultado de uma ação. Essas propriedades descrevem o efeito da ação sem descrever como o efeito é atingido.
 
  Para definir essas propriedades, clique com o botão direito do mouse na ação e clique em **Propriedades**. Digite valores nas propriedades na janela Propriedades.
@@ -319,7 +319,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
   - Se você definir **é síncrono** como falso, você está indicando que o fluxo pode continuar para a próxima ação antes que a operação chamada seja concluída. Você não deve definir os Pins de saída ou os fluxos de dados enviados da ação.
 
-## <a name="Concurrent"></a>Fluxos simultâneos
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> Fluxos simultâneos
  Você pode usar o **nó Fork** e o **nó Join** para descrever dois ou mais threads de atividades que podem ser executados ao mesmo tempo.
 
  ![Os nós de bifurcação e junção mostram fluxos simultâneos](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
@@ -398,7 +398,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
 - Anexe um comentário ao PIN de entrada ou saída.
 
-  - Para distinguir essa descrição de um comentário geral, você pode iniciar o comentário com <\<**transformação**> > ou < **seleção**\<>.
+  - Para distinguir essa descrição de um comentário geral, você pode iniciar o comentário com <\<**transformation**>> ou <\<**selection**>>.
 
 - Especifique a transformação ou a seleção em detalhes em um diagrama de atividade separado.
 
@@ -426,5 +426,5 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
    Você também pode definir uma seleção para um nó de objeto e em Pins de entrada e saída individuais. Defina uma atividade de seleção como no procedimento anterior e, em seguida, defina a propriedade **Selection** do nó do objeto ou o PIN de entrada ou saída.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de sequência UML: referenciar](../modeling/uml-sequence-diagrams-reference.md) [diagramas de componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) diagramas de [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) diagramas de [classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: capturar fluxos de trabalho comerciais usando diagrama](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

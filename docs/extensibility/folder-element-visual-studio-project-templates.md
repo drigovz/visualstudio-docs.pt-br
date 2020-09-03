@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769584"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelos de projeto do Visual Studio)
@@ -50,7 +50,7 @@ Especifica uma pasta que será adicionada ao projeto.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|`Folder`|Especifica uma pasta a ser adicionada ao projeto. `Folder`os elementos podem conter `Folder` elementos filho.|
+|`Folder`|Especifica uma pasta a ser adicionada ao projeto. `Folder` os elementos podem conter `Folder` elementos filho.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Especifica um arquivo a ser adicionado ao projeto.|
 
 ### <a name="parent-elements"></a>Elementos pai
@@ -60,7 +60,7 @@ Especifica uma pasta que será adicionada ao projeto.
 |[Projeto](../extensibility/project-element-visual-studio-templates.md)|Elemento filho opcional de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
 ## <a name="remarks"></a>Comentários
- `Folder`é um filho opcional de `Project` .
+ `Folder` é um filho opcional de `Project` .
 
  Você pode usar qualquer um dos seguintes métodos para organizar itens de projeto em pastas em um modelo:
 

@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740351"
 ---
 # <a name="about-file-name-extensions"></a>Sobre extensões de nome de arquivo
-Quando você registra uma extensão de arquivo de um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSPackage, você o associa a uma versão de . Isso é importante se mais [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de uma versão do for instalado em um computador.
+Ao registrar uma extensão de arquivo de um VSPackage, você o associa a uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Isso é importante se mais de uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalada em um computador.
 
- As extensões de arquivo para VSPackages são registradas em **HKEY_CLASSES_ROOT** chave com um valor padrão que aponta para o identificador programático associado (ProgID).
+ As extensões de arquivo para VSPackages são registradas em **HKEY_CLASSES_ROOT** chave com um valor padrão que aponta para o identificador de programação (ProgID) associado.
 
- O exemplo a seguir mostra informações de registro para a extensão de arquivo *.vcproj:*
+ O exemplo a seguir mostra informações de registro para a extensão de arquivo *. vcproj* :
 
 ```
 HKEY_CLASSES_ROOT\
@@ -31,10 +31,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"
 ```
 
- Os arquivos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] associados devem ter um ProgID versionado, como `VisualStudio.vcproj.8.0`. Um ProgID versão permite instalações lado a lado do produto para manter associações de extensão de arquivo entre as versões do produto. Um ProgID específico da versão também permite que você use verbos padrão, como abrir, editar e assim por diante, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]sem a preocupação de substituir ou ser substituído por outros aplicativos ou versões de .
+ Os arquivos associados a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] devem ter um ProgID com versão, como `VisualStudio.vcproj.8.0` . Um ProgID com versão permite instalações lado a lado do produto para manter as associações de extensão de arquivo entre as versões do produto. Um ProgID específico da versão também permite que você use verbos padrão, como abrir, editar e assim por diante, sem a preocupação de substituir ou ser substituído por outros aplicativos ou versões do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
- Em certos casos, o ProgID associado a uma extensão de arquivo não deve ser alterado. Por exemplo, o ProgID para a extensão de arquivo *.htm* (progid = htmlfile) é codificado em vários lugares do sistema operacional, e é amplamente conhecido e usado em associação com arquivos *.htm* e *.html.*
+ Em determinados casos, o ProgID associado a uma extensão de arquivo não deve ser alterado. Por exemplo, o ProgID para a extensão de arquivo *. htm* (ProgID = HTMLFILE) é embutido em código em vários locais no sistema operacional e é amplamente conhecido e usado em associação com arquivos *. htm* e *. html* .
 
 ## <a name="see-also"></a>Confira também
-- [Registre extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
-- [Especificar manipuladores de arquivos para extensões de nome de arquivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)
+- [Registrar extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
+- [Especificar manipuladores de arquivo para extensões de nome de arquivo](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

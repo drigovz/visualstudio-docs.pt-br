@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656443"
 ---
 # <a name="using-intellisense"></a>Usando IntelliSense
@@ -44,13 +44,13 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
 
  Após selecionar um item, você poderá inseri-lo em seu código pressionando TAB ou inserindo um espaço. Se você selecionar um item e digitar um ponto, o item aparecerá seguido pelo ponto, que abrirá outra lista de membros. Ao selecionar um item, mas antes de inseri-lo, você obtém a Informação Rápida do item.
 
- Na lista de membros, o ícone à esquerda representa o tipo do membro, como namespace, classe, função ou variável. Para obter uma lista de ícones, consulte [Class View and Object Browser Icons (Modo de Exibição de Classe e ícones do Pesquisador de Objetos)](../ide/class-view-and-object-browser-icons.md). A lista pode ser muito longa, de modo que você pode pressionar PAGE UP e PAGE DOWN para mover para cima ou para baixo na lista.
+ Na lista de membros, o ícone à esquerda representa o tipo do membro, como namespace, classe, função ou variável. Para obter uma lista de ícones, consulte os [ícones modo de exibição de classe e pesquisador de objetos](../ide/class-view-and-object-browser-icons.md). A lista pode ser muito longa, de modo que você pode pressionar PAGE UP e PAGE DOWN para mover para cima ou para baixo na lista.
 
- ![Lista de membros do Visual Studio](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Lista de membros do Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  É possível invocar o recurso **Listar membros** manualmente digitando CTRL+J, clicando em **Editar/IntelliSense/Listar Membros** ou clicando no botão **Listar membros** na barra de ferramentas do editor. Quando é invocada em uma linha em branco ou fora de um escopo reconhecível, a lista exibe símbolos no namespace global.
 
- Para desativar Listar Membros por padrão (para que ele não seja exibido, exceto se especificamente invocado), vá para **Ferramentas/Opções/Todas as linguagens** e desmarque **Listar membros automaticamente**. Se você deseja desligar Listar Membros somente para uma linguagem específica, vá para as configurações **Gerais** dessa linguagem.
+ Para desativar os membros da lista por padrão (para que ele não apareça a menos que seja especificamente invocado), vá para **ferramentas/opções/todos os idiomas** e desmarque a opção **listar Membros automaticamente**. Se você deseja desligar Listar Membros somente para uma linguagem específica, vá para as configurações **Gerais** dessa linguagem.
 
  Você também pode alterar para o modo de sugestão, no qual apenas o texto que você digita é inserido no código. Por exemplo, se você inserir um identificador que não está na lista e pressionar TAB, no modo de preenchimento, a entrada poderá substituir o identificador digitado. Para alternar entre o modo de preenchimento e o modo de sugestão, pressione CTRL+ALT+ESPAÇO ou clique em **Editar/IntelliSense/Ativar/Desativar Modo de Preenchimento**.
 
@@ -59,7 +59,7 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
 
  O parâmetro em negrito indica o próximo parâmetro que é necessário à medida que você digita a função. Para funções sobrecarregadas, você pode usar as teclas de seta PARA CIMA e PARA BAIXO para exibir informações de parâmetro alternativas para as sobrecargas de função.
 
- ![Informações de Parâmetro](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![Informações de Parâmetro](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  Quando você anota funções e parâmetros com comentários da Documentação XML, os comentários são exibidos como Informações do Parâmetro. Para obter mais informações, consulte [Fornecendo comentários de código XML](../ide/supplying-xml-code-comments.md).
 
@@ -68,11 +68,11 @@ O IntelliSense é o termo geral para vários recursos: Listar Membros, Informaç
 ## <a name="quick-info"></a>Informação Rápida
  Informação Rápida exibe a declaração completa de qualquer identificador no seu código.
 
- ![Informações Rápidas sobre o Visual Studio](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Informações Rápidas sobre o Visual Studio](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  Quando você seleciona um membro na caixa **Listar Membros**, as Informações Rápidas também são exibidas.
 
- ![Informações do Parâmetro em um arquivo de código C&#35;](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![Informações do Parâmetro em um arquivo de código C&#35;](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  É possível invocar Informações Rápidas clicando em **Editar/IntelliSense/Informações Rápidas**, digitando CTRL+I ou clicando no botão **Informações Rápidas** na barra de ferramentas do editor.
 
@@ -101,5 +101,5 @@ MessageBox( hWnd, "String literal|") )
 
  **As opções automáticas estão desativadas.** Por padrão, o IntelliSense funciona automaticamente, mas é possível desabilitar isso. Mesmo se o preenchimento automático de declaração for desabilitado, é possível invocar um recurso IntelliSense.
 
-## <a name="see-also"></a>Veja também
- O [IntelliSense específico do Visual Basic](../ide/visual-basic-specific-intellisense.md) [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md) [JavaScript IntelliSense](../ide/javascript-intellisense.md) [fornecendo comentários de código XML](../ide/supplying-xml-code-comments.md)
+## <a name="see-also"></a>Consulte Também
+ [IntelliSense específico](../ide/visual-basic-specific-intellisense.md) do [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md) [JavaScript](../ide/javascript-intellisense.md) INTELLISENSE que [fornece comentários de código XML](../ide/supplying-xml-code-comments.md) Visual Basic

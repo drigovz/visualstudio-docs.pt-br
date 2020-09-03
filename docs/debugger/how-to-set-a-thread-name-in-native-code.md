@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349140"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
@@ -32,7 +32,7 @@ Há duas maneiras de definir um nome de thread. A primeira é por meio da funç�
 
 Vale a pena observar que _ambas as_ abordagens podem ser usadas juntas, se desejado, já que os mecanismos pelos quais eles trabalham são independentes uns dos outros.
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Definir um nome de thread usando`SetThreadDescription`
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Definir um nome de thread usando `SetThreadDescription`
 
 Benefícios:
 * Os nomes de thread são visíveis durante a depuração no Visual Studio, independentemente de o depurador ter sido anexado ou não ao processo no momento em que SetThreadDescription é invocado.
@@ -108,7 +108,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
 - [Como definir um nome de thread no código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

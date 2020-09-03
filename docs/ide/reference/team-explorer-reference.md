@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74538571"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
@@ -23,7 +23,7 @@ Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de c
 Depois que você se [conectar a um projeto](../connect-team-project.md) no **Team Explorer**, os seguintes links ficarão disponíveis na seção **Projeto**:
 
 - [Clonar repositório](/azure/devops/repos/git/clone)
-- [Web Portal](/azure/devops/project/navigation/index)
+- [Portal da Web](/azure/devops/project/navigation/index)
 - [Painel de tarefas](/azure/devops/boards/sprints/task-board)
 
 A página **Página Inicial** tem funções diferentes dependendo se você está conectado a um repositório [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) ou [TFVC (Controle de Versão do Team Foundation)](/azure/devops/repos/tfvc/overview).
@@ -98,11 +98,11 @@ Consulte:
 - [Instalar as Ferramentas de Entrega Contínua para Visual Studio](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [Configurar e executar a CD (entrega contínua) para o aplicativo](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>Página Configurações
+## <a name="settings-page"></a>Página de configurações
 
 A página **Configurações** permite configurar funcionalidades administrativas para um projeto ou uma coleção de projetos. Veja os artigos a seguir:
 
-| Project | Coleção de projetos | Outros |
+| Projeto | Coleção de projetos | Outro |
 | - | - | - |
 | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Segurança, controle do código-fonte (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Áreas de itens de trabalho](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterações de item de trabalho](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Configurações do portal](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertas do projeto](/azure/devops/notifications/howto-manage-team-notifications) | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controle do código-fonte (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gerenciador de Modelos de Processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Configurações globais do Git](/azure/devops/repos/git/git-config)<br/>[Configurações do repositório Git](/azure/devops/repos/git/git-config) |
 

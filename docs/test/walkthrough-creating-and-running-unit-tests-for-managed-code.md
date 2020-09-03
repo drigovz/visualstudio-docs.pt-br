@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 author: mikejo5000
 ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 316dd2182dd56b0cbde49f0cd82e9f75baa2530f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81223665"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
@@ -32,7 +32,7 @@ Este artigo orienta você pela criação, execução e personalização de uma s
 
 1. Abra o Visual Studio.
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+2. No menu **arquivo** , selecione **novo** > **projeto**.
 
    A caixa de diálogo **Novo Projeto** aparecerá.
 
@@ -51,7 +51,7 @@ Este artigo orienta você pela criação, execução e personalização de uma s
 
 1. Abra o Visual Studio.
 
-2. Na janela inicial, escolha **Criar um novo projeto**.
+2. Na janela iniciar, escolha **criar um novo projeto**.
 
 3. Pesquise o modelo de projeto **Aplicativo de Console (.NET Core)** do C#, selecione-o e, em seguida, clique em **Avançar**.
 
@@ -149,7 +149,7 @@ Agora você tem um projeto com métodos que você pode testar. Neste artigo, os 
 
 ::: moniker range="vs-2017"
 
-2. Na caixa de diálogo **Novo Projeto,** **expanda instalado,** expanda **o Visual C#** e escolha **Teste**.
+2. Na caixa de diálogo **novo projeto** , expanda **instalado**, expanda **Visual C#** e escolha **teste**.
 
 3. Na lista de modelos, selecione **Projeto de Teste de MSTest (.NET Core)**.
 
@@ -199,7 +199,7 @@ Crie uma classe de teste para verificar a classe `BankAccount`. Use o arquivo *U
 
 ::: moniker-end
 
-O arquivo *BankAccountTests.cs* agora contém o seguinte código:
+O arquivo *BankAccountTests.cs* agora contém o código a seguir:
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -219,7 +219,7 @@ namespace BankTests
 
 ### <a name="add-a-using-statement"></a>Adicionar uma instrução using
 
-Adicione uma [ `using` declaração](/dotnet/csharp/language-reference/keywords/using-statement) à classe de teste para poder chamar o projeto em teste sem usar nomes totalmente qualificados. Na parte superior do arquivo da classe, adicione:
+Adicione uma [ `using` instrução](/dotnet/csharp/language-reference/keywords/using-statement) à classe de teste para poder chamar o projeto em teste sem usar nomes totalmente qualificados. Na parte superior do arquivo da classe, adicione:
 
 ```csharp
 using BankAccountNS;
@@ -297,7 +297,7 @@ Um método de teste deve atender aos seguintes requisitos:
 
    Nesse caso, o teste falha.
 
-4. Selecione o método no **Test Explorer** para visualizar os detalhes na parte inferior da janela.
+4. Selecione o método no **Gerenciador de testes** para exibir os detalhes na parte inferior da janela.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Corrigir o código e executar os testes novamente
 
@@ -321,7 +321,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Executar o teste novamente
 
-No **Test Explorer,** escolha **Executar tudo** para refazer o teste. A barra verde/vermelho fica verde para indicar que o teste foi aprovado.
+No **Gerenciador de testes**, escolha **executar tudo** para executar novamente o teste. A barra verde/vermelho fica verde para indicar que o teste foi aprovado.
 
 ![Gerenciador de Testes no Visual Studio 2019 mostrando a aprovação no teste](media/test-explorer-banktests-passed.png)
 
@@ -431,7 +431,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Testar, gravar e analisar novamente
 
-Atualmente, o método de teste não lida com todos os casos que deveria. Se o método em `Debit` teste, o <xref:System.ArgumentOutOfRangeException> método, `debitAmount` não conseguiu lançar um quando o era maior que o saldo (ou menor que zero), o método de teste passaria. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
+Atualmente, o método de teste não lida com todos os casos que deveria. Se o método em teste, o `Debit` método falhou ao lançar um <xref:System.ArgumentOutOfRangeException> quando o `debitAmount` era maior do que o saldo (ou menor que zero), o método de teste passaria. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
 
 Esse é um bug no método de teste. Para resolver o problema, adicione uma declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> ao final do método de teste para lidar com o caso em que nenhuma exceção é gerada.
 
@@ -467,7 +467,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 As melhorias no código de teste levaram a métodos de teste mais robustos e informativos. Porém, o mais importante é que eles também melhoraram o código em teste.
 
 > [!TIP]
-> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidades de terceiros](../test/install-third-party-unit-test-frameworks.md).
+> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [instalar estruturas de teste de unidade de](../test/install-third-party-unit-test-frameworks.md)terceiros.
 
 ## <a name="see-also"></a>Confira também
 

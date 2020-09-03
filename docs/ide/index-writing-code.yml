@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Organizar e editar código no Visual Studio
-summary: Aprenda a trabalhar com projetos de código, usando recursos de editor de código e mantendo um estilo de código consistente.
+summary: Saiba mais sobre como trabalhar com projetos de código, usando recursos do editor de código e como manter o estilo de código consistente.
 metadata:
   title: Funcionalidades do editor de códigos
   description: Saiba mais sobre os recursos de edição de código no Visual Studio.
@@ -11,13 +11,13 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 03/18/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74316435"
 landingContent:
-- title: Abra ou crie um projeto
+- title: Abrir ou criar um projeto
   linkLists:
   - linkListType: tutorial
     links:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Usar o Visual Studio sem projetos ou soluções
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Use recursos de edição
+- title: Usar recursos de edição
   linkLists:
   - linkListType: overview
     links:
@@ -39,7 +39,7 @@ landingContent:
       url: navigating-code.md
     - text: Gerar e corrigir código
       url: code-generation-in-visual-studio.md
-    - text: Use o IntelliSense para conclusão de código
+    - text: Usar o IntelliSense para conclusão de código
       url: using-intellisense.md
     - text: Gerenciar preferências de estilo de código
       url: code-styles-and-code-cleanup.md
@@ -47,7 +47,7 @@ landingContent:
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Comece com linguagens de programação
+- title: Introdução às linguagens de programação
   linkLists:
   - linkListType: tutorial
     links:

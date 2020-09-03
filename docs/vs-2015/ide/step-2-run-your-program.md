@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851565"
 ---
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
@@ -21,7 +21,7 @@ ms.locfileid: "75851565"
 
 Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagem no Visual Basic-vídeo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [tutorial 1: criar um visualizador de imagem em C#-vídeo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-run-your-program"></a>Para executar o programa
 
@@ -52,10 +52,10 @@ Ao criar uma nova solução, você na verdade cria um programa que é executado.
     - Clique no botão X no canto superior da janela **Form1**.
 
     > [!NOTE]
-    > Ao executar o programa dentro do IDE, isso é chamado de *depuração* porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, consulte [Noções básicas sobre depuração](../debugger/debugger-basics.md).
+    > Quando você executa o programa de dentro do IDE, ele é chamado de *depuração* porque você normalmente faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, consulte [noções básicas do depurador](../debugger/debugger-basics.md).
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
+- Para ir para a próxima etapa do tutorial, consulte [etapa 3: definir suas propriedades de formulário](../ide/step-3-set-your-form-properties.md).
 
-- Para retornar à etapa anterior do tutorial, consulte [Etapa 1: Criar um projeto de Aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

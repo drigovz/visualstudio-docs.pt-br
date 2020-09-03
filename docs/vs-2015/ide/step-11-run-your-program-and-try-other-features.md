@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bff0467cfe9447b1cc7814d471f56ab323bb853d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851588"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: executar o programa e experimentar outros recursos
@@ -21,7 +21,7 @@ ms.locfileid: "75851588"
 
 O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de PictureBox. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [tutorial 1: criar um visualizador C# de imagens no-vídeo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagem no Visual Basic-Video 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [tutorial 1: criar um visualizador de imagem em C#-vídeo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Para executar o programa e definir a cor do plano de fundo
 
@@ -46,16 +46,16 @@ O programa é concluído e pronto para ser executado. Você pode executar o prog
 
 - Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
 
-- Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas ENTER ou ESC. Faça o programa abrir a caixa de diálogo **Abrir Arquivo** quando o usuário escolher ENTER e fechar a caixa quando o usuário escolher ESC.
+- Use as propriedades **AcceptButton** e **CancelButton** do formulário para que os botões sejam escolhidos automaticamente quando o usuário escolher a tecla Enter ou ESC. Faça o programa abrir a caixa de diálogo **Abrir arquivo** quando o usuário escolher Enter e fechar a caixa quando o usuário escolher ESC.
 
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para aprender sobre programação no Visual Studio, consulte [Conceitos de Programação](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+- Para saber mais sobre programação no Visual Studio, consulte [conceitos de programação](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
 - Para saber mais sobre o Visual Basic, consulte [Desenvolvendo aplicativos com o Visual Basic](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).
 
-- Para saber mais sobre o Visual [Introdução à linguagem C# e ao .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).
+- Para saber mais sobre o Visual C#, consulte [introdução à linguagem C# e à .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).
 
-- Para ir para o próximo tutorial, consulte [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Para ir para o próximo tutorial, consulte [tutorial 2: criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-- Para retornar à etapa anterior do tutorial, consulte [Etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para retornar à etapa anterior do tutorial, consulte [etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
