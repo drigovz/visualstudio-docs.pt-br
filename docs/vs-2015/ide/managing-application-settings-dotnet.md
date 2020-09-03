@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293870"
 ---
 # <a name="managing-application-settings-net"></a>Gerenciando configurações de aplicativo (.NET)
@@ -70,7 +70,7 @@ Você pode adicionar arquivos de configurações personalizadas ao seu projeto p
 
 Por exemplo, você pode adicionar um arquivo como SpecialSettings.settings ao projeto. Embora a classe `SpecialSettings` não seja exposta no namespace `My`, **Exibir Código** pode ler o arquivo de configurações personalizadas que contém `Partial Class SpecialSettings`.
 
-O Designer de Configurações primeiro pesquisa o arquivo Settings.settings que o sistema do projeto cria, esse é o arquivo padrão que o Designer de Projeto exibe na guia **Configurações**. Settings.settings está localizado na pasta Meu Projeto para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e na pasta Propriedades para projetos [!INCLUDE[csprcs](../includes/csprcs-md.md)]. O Designer de Projeto pesquisa então outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo .settings em outro lugar no projeto, o Designer de Projeto não conseguirá localizá-lo.
+O designer de configurações primeiro procura o arquivo Settings. Settings que o sistema de projeto cria; Esse é o arquivo padrão que o designer de projeto exibe na guia **configurações** . Settings. Settings está localizado na pasta meu projeto para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projetos e na pasta Propriedades de [!INCLUDE[csprcs](../includes/csprcs-md.md)] projetos. O Designer de Projeto pesquisa então outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo .settings em outro lugar no projeto, o Designer de Projeto não conseguirá localizá-lo.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Acessando ou alterando as configurações de aplicativo em tempo de execução no Visual Basic
 
@@ -100,6 +100,6 @@ Properties.Settings.Default.Save();
 
 Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
 
 - [Acessando configurações de aplicativo](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

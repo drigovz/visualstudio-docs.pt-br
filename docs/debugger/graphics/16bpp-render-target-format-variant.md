@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74188587"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Variante de formato de destino de renderização de 16 BPP
@@ -36,8 +36,8 @@ Outras estratégias para reduzir a largura de banda da memória incluem:
 
 Como sempre, você precisa levar em consideração as concessões em termos de qualidade de imagem que acompanham todas essas otimizações.
 
-Os aplicativos que fazem parte de uma cadeia de permuta têm um formato de buffer de fundo (DXGI_FORMAT_B5G6R5_UNORM) que não dá suporte a 16 BPP. Essas cadeias de permuta são criadas usando `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Para contornar essa limitação, execute as seguintes etapas:
-1. Crie um destino de renderização de formato B5G6R5_UNORM usando `CreateTexture2D` e renderizar para esse destino.
+Os aplicativos que fazem parte de uma cadeia de permuta têm um formato de buffer de fundo (DXGI_FORMAT_B5G6R5_UNORM) que não dá suporte a 16 BPP. Essas cadeias de permuta são criadas usando o `D3D11CreateDeviceAndSwapChain` ou o `IDXGIFactory::CreateSwapChain` . Para contornar essa limitação, execute as seguintes etapas:
+1. Crie um B5G6R5_UNORM formato de renderização de destino usando `CreateTexture2D` e renderizar para esse destino.
 2. Copie o destino de renderização para o BackBuffer de cadeia de permuta desenhando um quádruplo de tela inteira com o destino de renderização como sua textura de origem.
 3. Chame presente na sua cadeia de permuta.
 
@@ -58,7 +58,7 @@ Os aplicativos que fazem parte de uma cadeia de permuta têm um formato de buffe
  Como o formato B5G6R5 não tem um canal alfa, o conteúdo alfa não é preservado por essa variante. Se a renderização do aplicativo necessitar de um canal alfa no destino de renderização, você não poderá simplesmente alternar para o formato B5G6R5.
 
 ## <a name="example"></a>Exemplo
- A variante de **formato de destino de renderização de 16 bpp** pode ser reproduzida para destinos de renderização criados usando o `CreateTexture2D` usando um código como este:
+ A variante de **formato de destino de renderização de 16 bpp** pode ser reproduzida para destinos de renderização criados usando um `CreateTexture2D` código como este:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

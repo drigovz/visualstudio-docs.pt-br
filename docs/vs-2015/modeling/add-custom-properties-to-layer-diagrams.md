@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655294"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Adicionar propriedades personalizadas a diagramas de camada
@@ -32,9 +32,9 @@ Ao escrever o código de extensão para diagramas de camada, você pode armazena
 > [!IMPORTANT]
 > Para exibir as propriedades, você deve fazer a seguinte alteração em cada computador em que deseja que as propriedades da camada fiquem visíveis.
 >
->  1. Execute o bloco de notas usando **Executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
+>  1. Execute o bloco de notas usando **Executar como administrador**. Abra `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
 >
->  2. Dentro do elemento `Content`, adicione:
+>  2. Dentro do `Content` elemento, adicione:
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
@@ -42,7 +42,7 @@ Ao escrever o código de extensão para diagramas de camada, você pode armazena
 >
 >  3. Na seção **Ferramentas do Visual Studio** do menu Iniciar do aplicativo do Visual Studio, abra **prompt de comando do desenvolvedor**.
 >
->     Digita
+>     Insira:
 >
 >     `devenv /rootSuffix /updateConfiguration`
 >
@@ -69,18 +69,18 @@ public class MyProperty
 
  Você pode definir propriedades em [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou em qualquer uma de suas classes derivadas, que incluem:
 
-- `ILayerModel`-o modelo
+- `ILayerModel` -o modelo
 
-- `ILayer`-cada camada
+- `ILayer` -cada camada
 
-- `ILayerDependencyLink`-os links entre camadas
+- `ILayerDependencyLink` -os links entre camadas
 
 - `ILayerComment`
 
 - `ILayerCommentLink`
 
 ## <a name="example"></a>Exemplo
- O código a seguir é um descritor de propriedade personalizada típico. Ele define uma propriedade booliana no modelo de camada (`ILayerModel`) que permite que o usuário forneça valores para um método de validação personalizado.
+ O código a seguir é um descritor de propriedade personalizada típico. Ele define uma propriedade booliana no modelo de camada ( `ILayerModel` ) que permite que o usuário forneça valores para um método de validação personalizado.
 
 ```
 using System;
@@ -165,5 +165,5 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Estender diagramas de camada](../modeling/extend-layer-diagrams.md)

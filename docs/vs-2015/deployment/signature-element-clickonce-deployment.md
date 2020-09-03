@@ -1,5 +1,5 @@
 ---
-title: Elemento de&gt; de assinatura &lt;(implantação ClickOnce) | Microsoft Docs
+title: '&lt;&gt;Elemento Signature (implantação do ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db696546fdd64199753054b38fa2ac554f6a774f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295069"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>Elemento de&gt; de assinatura &lt;(implantação do ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (implantação do ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contém as informações necessárias para assinar digitalmente este manifesto de implantação.  
@@ -37,12 +37,12 @@ Contém as informações necessárias para assinar digitalmente este manifesto d
 ```  
   
 ## <a name="remarks"></a>Comentários  
- Assinar um manifesto de implantação usando uma assinatura de envelope é opcional, mas recomendado. Para obter mais informações sobre como assinar arquivos XML, consulte a recomendação World Wide Web Consortium, "sintaxe e processamento da assinatura XML", descrita em [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/).  
+ Assinar um manifesto de implantação usando uma assinatura de envelope é opcional, mas recomendado. Para obter mais informações sobre como assinar arquivos XML, consulte a recomendação World Wide Web Consortium, "sintaxe e processamento da assinatura XML", descrita em [http://www.w3.org/TR/xmldsig-core/](https://www.w3.org/TR/xmldsig-core/) .  
   
  Se você quiser assinar seu manifesto, os hashes deverão ser fornecidos para todos os arquivos. Um manifesto com arquivos que não têm hash não pode ser assinado, pois os usuários não podem verificar o conteúdo de arquivos sem hash.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir ilustra um elemento `Signature` em um manifesto de implantação usado em uma implantação de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+ O exemplo de código a seguir ilustra um `Signature` elemento em um manifesto de implantação usado em uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação.  
   
 ```  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
@@ -73,5 +73,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)

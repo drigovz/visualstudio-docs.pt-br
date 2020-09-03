@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714455"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
@@ -44,7 +44,7 @@ Este artigo fornece links para ajudá-lo a depurar diferentes tipos de aplicativ
 
   Os aplicativos da Web com AJAX ativado fazem uso intenso de códigos de script e desafios especiais de depuração de representação. Para obter informações sobre técnicas de depuração AJAX, consulte [visão geral de depuração e rastreamento de aplicativos AJAX](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

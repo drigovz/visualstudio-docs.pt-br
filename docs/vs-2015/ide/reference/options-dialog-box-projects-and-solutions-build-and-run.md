@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655183"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar
@@ -28,8 +28,8 @@ ms.locfileid: "72655183"
 
 Nesta caixa de diálogo, você pode especificar o número máximo de projetos do Visual C++ ou do Visual C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para abrir a caixa de diálogo **Opções**, escolha **Ferramentas**, **Opções** na barra de menus. Para acessar esse conjunto de opções, expanda **Projetos e Soluções** e, em seguida, escolha **Compilar e Executar**.
 
-## <a name="uielement-list"></a>Lista UIElement
- **número máximo de compilações paralelas do projeto** Especifica o número máximo de C++ C# projetos visuais e visuais que podem ser compilados ao mesmo tempo. Para otimizar o processo de build, o número máximo de compilações paralelas de projetos é automaticamente definido como o número de CPUs do seu computador. O máximo é de 32.
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
+ **número máximo de compilações paralelas do projeto** Especifica o número máximo de projetos do Visual C++ e do Visual C# que podem ser compilados ao mesmo tempo. Para otimizar o processo de build, o número máximo de compilações paralelas de projetos é automaticamente definido como o número de CPUs do seu computador. O máximo é 32.
 
  **Compilar somente projetos de inicialização e dependências na execução** Somente o projeto de inicialização e suas dependências serão criados se essa caixa de seleção estiver marcada quando você escolher a tecla F5; escolha **depurar**, **Iniciar** na barra de menus; ou escolha **Compilar**, **criar** na barra de menus. Todos os projetos, dependências e arquivos de solução serão compilados se essa caixa de seleção estiver desmarcada quando você escolher a tecla F5; escolha **Depurar**, **Iniciar** na barra de menus; ou escolha **Build**, **Build** na barra de menus. Por padrão, essa opção está desmarcada.
 
@@ -64,7 +64,7 @@ Nesta caixa de diálogo, você pode especificar o número máximo de projetos do
  > [!NOTE]
 > Essa opção se aplica somente a projetos do Visual C++.
 
- Determina quanta informação é gravada no arquivo de log de build, que está localizado em \\...\\*ProjectName*\Debug\\*ProjectName*.log.
+ Determina a quantidade de informações gravada no arquivo de log de compilação, localizado em \\ .. \\ . *ProjectName*\debug \\ *ProjectName*. log.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)

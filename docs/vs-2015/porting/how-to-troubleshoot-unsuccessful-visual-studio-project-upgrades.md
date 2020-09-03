@@ -19,10 +19,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844445"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Como solucionar problemas de atualizações de projeto do Visual Studio malsucedidas
@@ -56,5 +56,5 @@ ms.locfileid: "75844445"
 
    Se você quiser que seu projeto seja executado na versão atualizada do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], deverá atualizar as referências do projeto, e também atualizar todas as instruções de `Imports` ou `Using` que chamam as referências. Se o projeto for carregado no IDE, você poderá atualizar as referências usando o **Gerenciador de Soluções** ou a caixa de diálogo **Gerenciador de Referências**.
 
-## <a name="see-also"></a>Veja também
- [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [convertendo para ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+## <a name="see-also"></a>Consulte Também
+ [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [convertendo para ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

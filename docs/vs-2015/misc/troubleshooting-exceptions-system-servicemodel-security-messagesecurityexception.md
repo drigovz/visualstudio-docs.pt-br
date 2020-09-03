@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b8ce3f16c1439d62cfa1e2cff344b70e6724c42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655360"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Exceções de solução de problemas: System.ServiceModel.Security.MessageSecurityException
-Uma exceção <xref:System.ServiceModel.Security.MessageSecurityException> é gerada quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que uma mensagem não está protegida corretamente ou foi violada. O erro ocorre com mais frequência quando todas as seguintes condições forem verdadeiras:
+Uma <xref:System.ServiceModel.Security.MessageSecurityException> exceção é gerada quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] o determina que uma mensagem não está protegida corretamente ou foi violada. O erro ocorre com mais frequência quando todas as seguintes condições forem verdadeiras:
 
 - Você usa uma referência de serviço WCF sobre uma conexão remota, por exemplo, Conexão de Área de Trabalho Remota ou Serviços de Terminal para se comunicar com um serviço WCF (.svc) em um projeto do site ou aplicativo Web.
 
@@ -84,5 +84,5 @@ O [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server normalment
 
 3. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
- <xref:System.ServiceModel.Security.MessageSecurityException> [usar o assistente de exceção](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.ServiceModel.Security.MessageSecurityException> [Usar o Assistente de Exceção](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

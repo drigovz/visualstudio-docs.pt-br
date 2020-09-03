@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74292335"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Adicionar estereótipos a elementos de modelo UML
@@ -63,15 +63,15 @@ Você pode adicionar um estereótipo a um elemento de modelo UML para anotá-lo 
 
     - Em um diagrama de classes UML, clique na ferramenta de um elemento e, em seguida, clique dentro do pacote no diagrama.
 
-         \- ou -
+         \- ou –
 
     - No Gerenciador de modelos UML, clique com o botão direito do mouse no pacote, aponte para **Adicionar**e clique em um tipo de elemento.
 
-         \- ou -
+         \- ou –
 
     - No Gerenciador de modelos UML, arraste um elemento existente para o pacote.
 
-         \- ou -
+         \- ou –
 
     - Vincule um diagrama ao pacote e, em seguida, crie elementos dentro do diagrama.
 
@@ -81,6 +81,6 @@ Você pode adicionar um estereótipo a um elemento de modelo UML para anotá-lo 
 
          Você pode fazer isso somente com alguns tipos de diagrama.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md)
 

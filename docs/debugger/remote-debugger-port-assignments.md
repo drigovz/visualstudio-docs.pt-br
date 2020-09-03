@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74239452"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
@@ -42,9 +42,9 @@ Em outras palavras, o número da porta atribuída ao depurador remoto é increme
 
  Na janela depurador remoto, clique em **ferramentas > opções**e defina o número da porta TCP/IP.
 
- Na linha de comando, inicie o depurador remoto com a opção **/Port** : **msvsmon/Port \<número da porta >** .
+ Na linha de comando, inicie o depurador remoto com a opção **/Port** : **msvsmon/Port \<port number> **.
 
- Você pode encontrar todas as opções de linha de comando do depurador remoto na ajuda da depuração remota (pressione **F1** ou clique em **Ajuda > uso** na janela do depurador remoto).
+ Você pode encontrar todas as opções de linha de comando do depurador remoto na ajuda da depuração remota (pressione **F1** ou clique em **ajuda > uso** na janela do depurador remoto).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 64 bits
 ::: moniker range=">=vs-2019"
@@ -54,12 +54,12 @@ Em outras palavras, o número da porta atribuída ao depurador remoto é increme
  Quando a versão de 64 bits do depurador remoto é iniciada, ela usa a porta principal (4022) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto iniciará uma versão de 32 bits do depurador remoto na porta 4023 (o número da porta principal é incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usará 4022 e 4023 não será usado.
 :::moniker-end
 
- Essa porta é configurável na linha de comando: **msvsmon/wow64port \<número da porta >** .
+ Essa porta é configurável na linha de comando: **msvsmon/wow64port \<port number> **.
 
 ## <a name="the-discovery-port"></a>A porta de descoberta
  O UDP 3702 é usado para localizar instâncias em execução do depurador remoto na rede (por exemplo, a caixa de diálogo **Localizar** na caixa de diálogo **anexar ao processo** ). Ele é usado apenas para descobrir um computador que executa o depurador remoto, portanto, é opcional se você tiver alguma outra forma de saber o nome do computador ou o endereço IP de um dos computadores de destino. Essa é uma porta padrão para descoberta, portanto, o número da porta não pode ser configurado.
 
- Se não quiser habilitar a descoberta, você poderá iniciar o msvsmon na linha de comando com a descoberta desabilitada: **msvsmon/noDiscovery**.
+ Se não quiser habilitar a descoberta, você poderá iniciar o msvsmon na linha de comando com a descoberta desabilitada:  **msvsmon/noDiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Portas do depurador remoto no Azure
  As portas a seguir são usadas pelo depurador remoto no Azure. As portas no serviço de nuvem são mapeadas para as portas na VM individual. Todas as portas são TCP.
@@ -71,5 +71,5 @@ Em outras palavras, o número da porta atribuída ao depurador remoto é increme
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Depuração remota](../debugger/remote-debugging.md)

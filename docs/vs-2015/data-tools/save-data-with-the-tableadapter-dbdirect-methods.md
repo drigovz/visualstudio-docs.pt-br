@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655414"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tutorial fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações do seu banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando os métodos individuais `Insert`, `Update` e `Delete` conforme necessário pelo seu aplicativo (em oposição ao método de `Update` sobrecarregado que executa a atualização, inserir e excluir instruções em uma única chamada).
+Este tutorial fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações do seu banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando os `Insert` métodos individuais, `Update` e `Delete` conforme necessário pelo seu aplicativo (em oposição ao `Update` método sobrecarregado que executa as instruções UPDATE, INSERT e Delete em uma única chamada).
 
  Durante este passo a passo, você aprenderá a:
 
@@ -43,7 +43,7 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
 - Adicione métodos para acessar diretamente o banco de dados e executar inserções, atualizações e exclusões.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -68,7 +68,7 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
 1. No menu **dados** , selecione **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o **Assistente de Configuração de Fonte de Dados**.
+2. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
 3. Na tela **escolher um tipo de fonte de dados** , selecione **banco**de dado e, em seguida, selecione **Avançar**.
 
@@ -76,7 +76,7 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         \- ou -
+         - ou -
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
 
@@ -86,7 +86,7 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
 7. Na tela **escolher seus objetos de banco de dados** , expanda o nó **tabelas** .
 
-8. Selecione a tabela `Region` e, em seguida, selecione **concluir**.
+8. Selecione a `Region` tabela e, em seguida, selecione **concluir**.
 
      O **NorthwindDataSet** é adicionado ao projeto e a tabela `Region` aparece na janela **Fontes de Dados**.
 
@@ -107,9 +107,9 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
     |Name|Texto|
     |----------|----------|
-    |`InsertButton`|**Inserir**|
-    |`UpdateButton`|**Atualizar**|
-    |`DeleteButton`|**Excluir**|
+    |`InsertButton`|**Inserção**|
+    |`UpdateButton`|**Atualização**|
+    |`DeleteButton`|**Delete (excluir)**|
 
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Para adicionar código para inserir novos registros no banco de dados
 
@@ -157,5 +157,5 @@ Este tutorial fornece instruções detalhadas para executar instruções SQL dir
 
 - Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

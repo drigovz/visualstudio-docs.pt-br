@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846326"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
-Este tópico descreve como usar a caixa de diálogo **Editor de condição de regra** no [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **Editor de condição de regra** no herdado [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Você cria e modifica condições declarativas de regra usando a caixa de diálogo **Editor de condição de regra** . Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
@@ -41,13 +41,13 @@ Este tópico descreve como usar a caixa de diálogo **Editor de condição de re
 
   A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **Editor de condição de regra** .
 
-|Elemento da interface|Descrição|
+|Elemento da interface do usuário|Descrição|
 |----------------|-----------------|
 |**Problema**|Insira a expressão para a condição de regra.|
 |**OK**|Clique para salvar a condição de regra.|
 
 ## <a name="entering-condition-expressions"></a>Inserindo expressões de condição
- Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu semelhante ao IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são **==** , **>** , **\<** , **>=** e **<=** . Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.
+ Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu semelhante ao IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são **==** ,, **>** **\<**, **>=** e **<=** . Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.
 
  Você pode especificar o tipo para a comparação e pode comparar com uma cadeia de caracteres **nula** ou vazia. Você pode fazer chamadas aninhados aos membros em uma variável que contém um tipo complexo, por exemplo, `this.Address.State == "WA"`.
 
@@ -55,13 +55,13 @@ Este tópico descreve como usar a caixa de diálogo **Editor de condição de re
 
 - Operadores relacionais: ==, =! =
 
-- Operadores de comparação: <, \<=, >, > =
+- Operadores de comparação: <, \<=, > , >=
 
 - Operadores aritméticos: +, -, *,/, MODIFICAÇÃO
 
-- Operadores lógicos: and, & &, ou &#124; &#124;,, não,!
+- Operadores lógicos: AND,  &&, ou,  &#124;&#124;, não,!
 
-- Operadores de bits-bit: &,&#124;
+- Operadores bits: &, &#124;
 
   Precedência de operadores de expressão segue regras de precedência de operador C#.
 
@@ -81,5 +81,5 @@ Este tópico descreve como usar a caixa de diálogo **Editor de condição de re
 
   Para obter mais informações sobre condições, consulte [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [IfElseActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelseactivity.aspx) [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx) [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx) [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx) [caixa de diálogo de seleção de condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md) [usando condições em fluxos de trabalho](https://msdn2.microsoft.com/library/bb628447.aspx) [Designer herdado para ajuda da interface do usuário Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

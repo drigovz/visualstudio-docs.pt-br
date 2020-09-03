@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655400"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
@@ -51,7 +51,7 @@ No Visual Studio, você pode usar snippets de código para adicionar código com
 
 3. Use as teclas de atalho: **CTRL + K + S**
 
-   Selecione **#if**. Você deve ver algo parecido com isso:
+   Selecione **#if**. Você deverá ver algo como:
 
 ```cpp
 #if 0
@@ -62,7 +62,7 @@ No Visual Studio, você pode usar snippets de código para adicionar código com
  Em seguida, você pode substituir o 0 pela condição correta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Onde posso encontrar uma lista completa dos snippets de código do C++?
- Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++** . Na janela abaixo, expanda **Visual C++** . Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
+ Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++**. Na janela abaixo, expanda **Visual C++**. Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
 
  Os nomes da maioria dos snippets de código são auto-explicativos, mas alguns nomes podem ser confusos.
 
@@ -148,7 +148,7 @@ for (auto& i : v)
 ```
 
 ## <a name="the-destructor-snippet-"></a>O snippet de destruidor (~)
- O snippet de destruidor ( **~** ) apresenta comportamento diferente em diferentes contextos. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
+ O trecho do destruidor ( **~** ) mostra um comportamento diferente em contextos diferentes. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
 
 ```cpp
 class SomeClass {
