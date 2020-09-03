@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350440"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecione seu aplicativo com a depuração histórica do IntelliTrace no Visual Studio (C#, Visual Basic, C++)
@@ -51,7 +51,7 @@ private static int AddInt(int add)
 }
 ```
 
-Vamos pressupor que o valor esperado de `resultInt` após a chamada `AddAll()` seja 20 (o resultado de incrementos `testInt` 20 vezes). (Também vamos supor que você não consiga ver o bug no `AddInt()` ). Mas o resultado é, na verdade, 44. Como podemos encontrar o bug sem passar por `AddAll()` 10 vezes? Podemos usar a depuração histórica para encontrar o bug com mais rapidez e facilidade. Veja como:
+Vamos pressupor que o valor esperado de `resultInt` após a chamada `AddAll()` seja 20 (o resultado de incrementos `testInt` 20 vezes). (Também vamos supor que você não consiga ver o bug no `AddInt()` ). Mas o resultado é, na verdade, 44. Como podemos encontrar o bug sem passar por `AddAll()` 10 vezes? Podemos usar a depuração histórica para encontrar o bug com mais rapidez e facilidade. Este é o procedimento:
 
 1. Em **ferramentas > opções > intellitrace > geral**, verifique se o IntelliTrace está habilitado e selecione **eventos do IntelliTrace e informações de chamada**. Se você não selecionar essa opção, não será possível ver a medianiz de navegação (conforme explicado abaixo).
 

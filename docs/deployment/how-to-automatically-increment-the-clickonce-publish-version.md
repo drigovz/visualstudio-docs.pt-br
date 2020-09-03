@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 710f2d045af4da92116334e64efa5ce528563d1d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382595"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Como incrementar automaticamente a versão de publicação do ClickOnce
@@ -41,7 +41,7 @@ Você pode desabilitar esse comportamento na página **publicar** do designer de
 
 3. Na seção **Publicar versão** , desmarque a caixa de seleção **incrementar revisão automaticamente com cada versão** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

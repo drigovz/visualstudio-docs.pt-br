@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88dde869e6e9e1551459ce1171364709baf6403e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350427"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Como posso depurar violações de acesso ao executar meu programa fora do depurador?
@@ -34,6 +34,6 @@ ms.locfileid: "85350427"
 ## <a name="solution"></a>Solução
  Defina a opção [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e execute o programa autônomo, até que ocorra a violação de acesso. Em seguida, na caixa de diálogo **Violação de Acesso**, clique em **Cancelar** para iniciar o depurador.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Perguntas frequentes de depuração do código nativo](../debugger/debugging-native-code-faqs.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

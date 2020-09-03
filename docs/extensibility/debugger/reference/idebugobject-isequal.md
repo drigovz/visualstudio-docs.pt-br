@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::Equalequal | Microsoft Docs
+title: 'IDebugObject:: IsEqual | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726508"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
@@ -41,18 +41,18 @@ int IsEqual(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pObject`\
-[em] Um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representando o objeto para comparar.
+no Um objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa o objeto a ser comparado.
 
 `pfIsEqual`\
-[fora] Retorna não-zero`TRUE`( ) se os valores dos objetos forem iguais; caso contrário, retorna`FALSE`zero ( ).
+fora Retornará um valor diferente de zero ( `TRUE` ) se os valores dos objetos forem iguais; caso contrário, retornará zero ( `FALSE` ).
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Normalmente, este método pode comparar os endereços dos valores representados pelo `pObject` parâmetro e este objeto [IDebugObject;](../../../extensibility/debugger/reference/idebugobject.md) se os endereços são iguais, então os objetos podem ser considerados iguais.
+ Normalmente, esse método pode comparar os endereços dos valores representados pelo `pObject` parâmetro e esse objeto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; se os endereços forem iguais, os objetos poderão ser considerados iguais.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Microsoft Docs
+title: 'IDebugObject:: GetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 45d555cbea6bf8239ef4527ba982072e17532af4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726547"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Obtém o valor do objeto como uma série consecutiva de bytes.
+Obtém o valor do objeto como uma série de bytes consecutivos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int GetValue(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pValue`\
-[dentro, fora] Uma matriz que é preenchida com uma série consecutiva de bytes representando o valor do objeto.
+[entrada, saída] Uma matriz que é preenchida com uma série consecutiva de bytes que representa o valor do objeto.
 
 `nSize`\
-[em] O número máximo de bytes para buscar.
+no O número máximo de bytes a buscar.
 
-## <a name="return-value"></a>Valor retornado
- Se for bem sucedido, retorna S_OK; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Obtenha o número total de bytes de valor que podem ser buscados chamando o método [GetSize.](../../../extensibility/debugger/reference/idebugobject-getsize.md)
+ Obtenha o número total de bytes de valor que podem ser buscados chamando o método [GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835648"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.
 
 A captura programática é útil em cenários como:
@@ -25,7 +25,7 @@ A captura programática é útil em cenários como:
 
 - Chame `CaptureCurrentFrame` quando um problema de renderização é difícil de prever e capturar em testes manuais, mas pode ser previsto programaticamente usando informações sobre o estado do aplicativo em tempo de execução.
 
-## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a>Captura programática no Windows 10
+## <a name="programmatic-capture-in-windows-10"></a><a name="CaptureDX11_2"></a> Captura programática no Windows 10
 Esta parte do tutorial demonstra a captura programática em aplicativos que usam a API do DirectX 11,2 no Windows 10, que usa o método robusto de captura.
 
 Esta seção mostra como fazer estas tarefas:
@@ -115,6 +115,6 @@ Este passo a passo demonstrou como capturar informações gráficas de forma pro
 - Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Confira também
-- [Passo a passo: capturando informações de gráficos](walkthrough-capturing-graphics-information.md)
+- [Passo a passo: Capturando informações de gráficos](walkthrough-capturing-graphics-information.md)
 - [Capturando informações de gráficos](capturing-graphics-information.md)
 - [Ferramenta de captura de linha de comando](command-line-capture-tool.md)

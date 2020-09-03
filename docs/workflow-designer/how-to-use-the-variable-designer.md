@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817405"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Como: Use o designer variável
@@ -36,7 +36,7 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
     > [!NOTE]
     > Para excluir uma variável, selecione a variável clicando nela e pressione a tecla **delete** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variáveis e argumentos](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

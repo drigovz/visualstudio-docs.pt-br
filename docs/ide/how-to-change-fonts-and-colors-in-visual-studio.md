@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801432"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Como alterar fontes, cores e temas no Visual Studio
@@ -122,7 +122,7 @@ Para saber mais sobre outras opções de acessibilidade do Visual Studio dispon�
 
 Para saber mais detalhes sobre todos os elementos da interface do usuário para os quais você pode alterar os esquemas de fontes e cores, consulte a página da [caixa de diálogo fontes e cores, ambiente, opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como: alterar fontes e cores para o editor no Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Recursos do editor de código do Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)

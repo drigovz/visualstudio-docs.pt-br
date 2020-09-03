@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350453"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Introdução ao Diagnóstico de Gráficos do Visual Studio
@@ -28,7 +28,7 @@ Nesta seção, você se preparará para usar Diagnóstico de Gráficos pela prim
 
  Para obter informações sobre como instalar ferramentas de gráficos, consulte [instalar ferramentas de gráficos para Windows 10](#InstallGraphicsTools).
 
-## <a name="install-graphics-tools-for-windows-10"></a><a name="InstallGraphicsTools"></a>Instalar ferramentas de gráficos para Windows 10
+## <a name="install-graphics-tools-for-windows-10"></a><a name="InstallGraphicsTools"></a> Instalar ferramentas de gráficos para Windows 10
  No Windows 10, a infra-estrutura de Diagnóstico de Gráficos é fornecida por um recurso opcional do Windows chamado *ferramentas de gráficos*. Esse recurso é necessário para capturar e reproduzir informações de gráficos no Windows 10, independentemente de o aplicativo ser capturado ter como destino uma versão anterior do Windows ou qual versão do Direct3D ela usa. Você pode optar por instalar o recurso de ferramentas de gráficos antecipadamente; caso contrário, ele será instalado sob demanda na primeira vez que você iniciar uma sessão de Diagnóstico de Gráficos do Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Para instalar as ferramentas de gráficos para Windows 10
@@ -93,5 +93,5 @@ Verifique se você pode compilar e executar o aplicativo antes de prosseguir. Es
 
  Para saber mais sobre como usar as ferramentas do analisador de gráficos juntas, consulte os [exemplos](graphics-diagnostics-examples.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Elementos gráficos do Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

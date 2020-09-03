@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca6f13620bb486cf1663bd5bef9a9a93b2c8a480
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817353"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>A função não tem um objeto de protótipo válido
@@ -28,6 +28,6 @@ Você tentou usar o **instanceof** para determinar se um objeto foi derivado de 
   
 - Verifique se a propriedade da função `prototype` se refere a um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto válido.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Confira também  
  [Objeto de função](../../javascript/reference/function-object-javascript.md)   
  [Propriedade prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

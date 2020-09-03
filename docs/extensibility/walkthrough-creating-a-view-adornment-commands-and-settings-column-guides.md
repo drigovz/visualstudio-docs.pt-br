@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905033"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Walkthrough: criar uma exibição Adornment, comandos e configurações (guias de coluna)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`precisa se aprofundar para obter uma <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> visão do código.  Se você rastrear `GetActiveTextView` o, `GetActiveView` o e `GetTextViewFromVsTextView` o, poderá ver como fazer isso. O código a seguir é o código relevante, começando com a seleção atual, obtendo o quadro da seleção, obtendo o DocView do quadro como um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , obtendo um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> do IVsTextView, obtendo um host de exibição e, por fim, o o iwpftextview:
+`GetCurrentEditorColumn` precisa se aprofundar para obter uma <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> visão do código.  Se você rastrear `GetActiveTextView` o, `GetActiveView` o e `GetTextViewFromVsTextView` o, poderá ver como fazer isso. O código a seguir é o código relevante, começando com a seleção atual, obtendo o quadro da seleção, obtendo o DocView do quadro como um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , obtendo um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> do IVsTextView, obtendo um host de exibição e, por fim, o o iwpftextview:
 
 ```csharp
    IVsMonitorSelection selection =

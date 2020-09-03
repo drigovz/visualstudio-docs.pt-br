@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsProxy | Microsoft Docs
+title: 'IDebugObject:: isproxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6cab0d0d0f5f1c2e491c9aa0fe9efd26b39e51df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726480"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
@@ -38,15 +38,15 @@ int IsProxy (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pfIsProxy`\
-[fora] `TRUE` se o objeto for um proxy transparente; caso contrário, `FALSE`.
+[fora] `TRUE` Se o objeto for um proxy transparente; caso contrário, `FALSE` .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é implementado pelo mecanismo de depuração C++ padrão.
+ Esse método é implementado pelo mecanismo de depuração padrão do C++.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

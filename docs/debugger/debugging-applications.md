@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535155"
 ---
 # <a name="debugging-applications"></a>Depurando aplicativos
@@ -25,7 +25,7 @@ As seções a seguir lidam com a depuração de tipos específicos de aplicativo
 
 ## <a name="debugging-for-different-types-of-applications"></a>Depurando para diferentes tipos de aplicativos
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Depurar aplicativos UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Descreve como depurar aplicativos UWP.|
 |[Depurar o código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual C#, Visual Basic, F # e C++/CLI).|

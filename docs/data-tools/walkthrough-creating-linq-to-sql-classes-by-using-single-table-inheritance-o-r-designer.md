@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535259"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
@@ -51,10 +51,10 @@ Para ver como a herança funciona, crie uma pequena `Person` tabela, use-a como 
 
     |Nome da coluna|Tipo de Dados|Permitir Nulos|
     |-----------------|---------------|-----------------|
-    |**ID**|**int**|**For**|
+    |**ID**|**int**|**Falso**|
     |**Tipo**|**int**|**True**|
-    |**Nome**|**nvarchar(200)**|**For**|
-    |**Sobrenome**|**nvarchar(200)**|**For**|
+    |**Nome**|**nvarchar(200)**|**Falso**|
+    |**Sobrenome**|**nvarchar(200)**|**Falso**|
     |**Gerente**|**int**|**True**|
 
 3. Defina a coluna de identificação como a chave primária.

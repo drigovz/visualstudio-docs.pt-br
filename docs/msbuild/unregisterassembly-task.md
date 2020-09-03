@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631491"
 ---
 # <a name="unregisterassembly-task"></a>Tarefa UnregisterAssembly
 
 Cancela o registro os assemblies especificados para fins de interoperabilidade COM. Executa o inverso da [tarefa RegisterAssembly](../msbuild/registerassembly-task.md).
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `UnregisterAssembly`.
 
@@ -66,6 +66,6 @@ Cancela o registro os assemblies especificados para fins de interoperabilidade C
 
 ## <a name="see-also"></a>Confira também
 
-- [RegistrartarefaTarefaAssembly](../msbuild/registerassembly-task.md)
+- [Tarefa RegisterAssembly](../msbuild/registerassembly-task.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

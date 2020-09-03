@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9530e7ec018a89c3648f61660a5651eddaace805
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817483"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como definir pontos de interrupção em fluxos de trabalho
@@ -38,7 +38,7 @@ Um ponto de interrupção tem três Estados: *pendente*, *associado*e *erro*. Qu
 
    Como alternativa, você pode pressionar **F9** depois de selecionar a atividade, ou clicar com o botão direito do mouse na atividade **e selecionar ponto**  >  de interrupção de**inserção** de ponto de quebra no menu de atalho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Fluxos de trabalho de depuração com designers de Fluxo de Trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 - [Como: Depuração XAML com designers de Fluxo de Trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905364"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como instalar um plug-in de controle do código-fonte
@@ -28,7 +28,7 @@ A criação de um plug-in de controle de origem envolve três etapas:
 3. Registre a DLL fazendo entradas de registro apropriadas.
 
 ## <a name="integration-with-visual-studio"></a>Integração com o Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]dá suporte a plug-ins de controle do código-fonte que estão em conformidade com a API de plug-in de controle do código
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a plug-ins de controle do código-fonte que estão em conformidade com a API de plug-in de controle do código
 
 ### <a name="register-the-source-control-plug-in"></a>Registrar o plug-in de controle do código-fonte
  Antes que um IDE (ambiente de desenvolvimento integrado) em execução possa chamar o sistema de controle do código-fonte, primeiro ele deve localizar a DLL de plug-in de controle do código-fonte que exporta a API.
@@ -68,7 +68,7 @@ A criação de um plug-in de controle de origem envolve três etapas:
 
     Veja a seguir o conteúdo de exemplo desta subchave.
 
-   |Entrada de registro|Valor de exemplo|
+   |Entrada de Registro|Valor de exemplo|
    |--------------------|------------------|
    |HKEY_LOCAL_MACHINE \SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|
 

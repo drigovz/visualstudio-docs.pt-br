@@ -23,10 +23,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631504"
 ---
 # <a name="unzip-task"></a>Tarefa de descompactação
@@ -36,15 +36,15 @@ Descompacta um arquivo *.zip* no local especificado.
 >[!NOTE]
 >A tarefa `Unzip` está disponível apenas no MSBuild 15.8 e superiores.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `Unzip`.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> Especifica a pasta de destino para descompactar o arquivo.|
-|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. Usa `false` como padrão.|
-|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. Usa `true` como padrão. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
+|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. O padrão é `false`.|
+|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. O padrão é `true`. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
 |`SourceFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica um ou mais arquivos a serem descompactados. Quando vários arquivos são especificados, eles são descompactados em ordem na mesma pasta.|
 
 ## <a name="remarks"></a>Comentários

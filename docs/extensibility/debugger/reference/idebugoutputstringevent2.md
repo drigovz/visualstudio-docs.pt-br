@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726023"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-Esta interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de depuração de sessão (SDM) para produzir uma seqüência.
+Essa interface é enviada pelo mecanismo de depuração (DE) para o SDM (Gerenciador de depuração de sessão) para gerar uma cadeia de caracteres.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugOutputStringEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O DE implementa esta interface para enviar uma seqüência de string para a janela **Saída** do IDE. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface. O SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
+ O DE implementa essa interface para enviar uma cadeia de caracteres para a janela de **saída** do IDE. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que essa interface. O SDM usa [QueryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia esse objeto de evento para enviar uma seqüência de string sacada na janela **Saída.** O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando é anexada ao programa que está sendo depurado.
+ O DE cria e envia este objeto de evento para enviar uma cadeia de caracteres para a janela de **saída** . O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando ele é anexado ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugOutputStringEvent2`mostra o método de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra o método de `IDebugOutputStringEvent2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Recebe a mensagem exibivel.|
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|Obtém a mensagem de exibição.|
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, em código não gerenciado, a seqüência de séries a ser originada `OutputDebugString` pode ser originada quando o programa que está sendo depurado envia uma seqüência para a função Win32. Esta seqüência é interceptada pelo DE e `IDebugOutputStringEvent2` enviada para o SDM como evento.
+ Por exemplo, no código não gerenciado, a cadeia de caracteres a ser impressa pode se originar quando o programa que está sendo depurado envia uma cadeia de caracteres para a função do Win32 `OutputDebugString` . Essa cadeia de caracteres é interceptada pelo DE e enviada para o SDM como o `IDebugOutputStringEvent2` evento.
 
- Use [o IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) para enviar uma mensagem que exija uma resposta do usuário.
+ Use [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) para enviar uma mensagem que requer uma resposta do usuário.
 
- Use [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) para enviar uma mensagem de erro que não exija uma resposta.
+ Use [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) para enviar uma mensagem de erro que não requer uma resposta.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
