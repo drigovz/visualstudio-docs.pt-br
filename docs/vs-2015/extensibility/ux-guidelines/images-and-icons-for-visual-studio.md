@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544788"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Uso de imagem no Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagem no Visual Studio
  Antes de criar o trabalho artístico, considere usar as mais de 1.000 imagens na [biblioteca de imagens do Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipos de imagens
@@ -35,7 +35,7 @@ ms.locfileid: "85544788"
 
 - **Cursores.** Usado para indicar se uma operação é permitida usando o mouse, onde um objeto pode ser descartado e assim por diante.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Design de ícone
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Design de ícone
 
 ### <a name="overview"></a>Visão geral
  O Visual Studio usa ícones de estilo moderno, que têm uma geometria limpa e um equilíbrio de 50/50 de positivo/negativo (claro/escuro) e usam metáforas diretas e compreensíveis. Ícones cruciais de design Points Center em relação à clareza, simplificação e contexto.
@@ -269,7 +269,7 @@ ms.locfileid: "85544788"
 
  Para obter mais informações sobre como usar cores em ícones do Visual Studio, consulte [usando cores em imagens](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Usando cores em imagens
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Usando cores em imagens
 
 ### <a name="overview"></a>Visão geral
  Os ícones no Visual Studio são basicamente monodesvios. A cor é reservada para transmitir informações específicas e nunca para decoração. A cor é usada:
@@ -318,7 +318,7 @@ ms.locfileid: "85544788"
 ##### <a name="examples"></a>Exemplos
  O verde é usado para modificadores de ação positivos, como "Adicionar", "executar", "reproduzir" e "validar".
 
-|Execute|Executar consulta|Executar todas as etapas|Adicionar controle|
+|Executar|Executar consulta|Executar todas as etapas|Adicionar controle|
 |-|-|-|-|
 |![Ícone de execução](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Ícone executar consulta](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405-04_ExecuteQuery")|![Ícone reproduzir todas as etapas](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405-05_PlayAllSteps")|![Adicionar ícone de controle](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405-06_AddControl")|
 
@@ -343,7 +343,7 @@ ms.locfileid: "85544788"
 #### <a name="special-cases"></a>Casos especiais
  Em casos especiais, um modificador de ação colorida pode ser usado independentemente como um ícone autônomo. A cor usada para o ícone reflete as ações com as quais o ícone está associado. Esse uso é limitado a um pequeno subconjunto de ícones, incluindo:
 
-|Execute|Stop|Excluir|Salvar|Navegação Regressiva|
+|Executar|Stop|Excluir|Salvar|Navegação Regressiva|
 |-|-|-|-|-|
 |![Ícone de execução](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Ícone parar](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![Ícone excluir](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![Ícone navegar para trás](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>Paleta de hierarquia de código
@@ -422,7 +422,7 @@ ms.locfileid: "85544788"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  Em geral, o Visual Studio online consiste em recursos hospedados em um navegador. A cor varia em ambientes diferentes, mas o estilo permanece o mesmo.
 
-|Agrupar|Uso|Name|Valor (todos os temas)|Essas|
+|Grupo|Uso|Name|Valor (todos os temas)|Essas|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Segundo plano|BG TFSO|656565/101, 101, 101|![Amostra 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Contorno|TFSO OUT|FFFFFF/255, 255, 255|![FFFFFF de amostra](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
@@ -435,7 +435,7 @@ ms.locfileid: "85544788"
 |F12|Plano de fundo em foco|Focalizar BG|D9EBF7/217.235.247|![D9EBF7 de amostra](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Plano de fundo pressionado|BG pressionado|B2D7F0/178.215.240|![B2D7F0 de amostra](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Contorno|VS OUT|F6F6F6/246.246.246|![F6F6F6 de amostra](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|
-|F12|Informações|Informações|00BCF2/0188.242|![00BCF2 de amostra](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
+|F12|Informação|Informação|00BCF2/0188.242|![00BCF2 de amostra](../../extensibility/ux-guidelines/media/0405-00bcf2.png "0405_00BCF2")|
 |F12|Aviso|Aviso|F28300/242131, 0|![F28300 de amostra](../../extensibility/ux-guidelines/media/0405-f28300.png "0405_F28300")|
 |F12|Erro/negativo|Error_Negative|E81123/232, 17, 35|![E81123 de amostra](../../extensibility/ux-guidelines/media/0405-e81123.png "0405_E81123")|
 |F12|Iniciar/positivo|Start_Positive|009E49/0158, 73|![009E49 de amostra](../../extensibility/ux-guidelines/media/0405-009e49.png "0405_009E49")|

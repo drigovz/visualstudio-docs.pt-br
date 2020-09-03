@@ -1,5 +1,5 @@
 ---
-title: Elemento Oculto (Modelos de Estúdio Visual) | Microsoft Docs
+title: Elemento Hidden (modelos do Visual Studio) | Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711119"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Elemento oculto (modelos do Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelos do Visual Studio)
 
-Especifica se o modelo aparece no novo projeto ou adiciona caixas de diálogo **De novo item.**
+Especifica se o modelo é exibido nas caixas de diálogo novo projeto ou **Adicionar novo item** .
 
 ```xml
 <VSTemplate>
@@ -30,7 +30,7 @@ Especifica se o modelo aparece no novo projeto ou adiciona caixas de diálogo **
         <Hidden>
 ```
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Hidden>true</Hidden>
@@ -53,19 +53,19 @@ Nenhum.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **Novo Projeto** ou na caixa de diálogo Adicionar **novo item.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
 
 Um valor de texto é obrigatório.
 
-O texto deve `true` `false`ser ou , indicando se o modelo aparecerá ou não nas caixas de diálogo **Novo Projeto** ou **Adicionar Novo Item.**
+O texto deve ser `true` ou `false` , indicando se o modelo será exibido ou não nas caixas de diálogo **novo projeto** ou **Adicionar novo item** .
 
 ## <a name="remarks"></a>Comentários
 
 `Hidden` é um elemento opcional.
 
-Se especificado, não são `TemplateData` necessários outros elementos infantis do elemento.
+Se especificado, não serão necessários outros elementos filho do `TemplateData` elemento.
 
 ## <a name="example"></a>Exemplo
 

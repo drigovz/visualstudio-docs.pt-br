@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd2e8a41ef4b9708df079e94bcac8b8c06189116
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536104"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para Visual Studio
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>A fonte do ambiente
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> A fonte do ambiente
  Todas as fontes no Visual Studio devem ser expostas ao usuário para personalização. Isso é feito principalmente por meio da página **fontes e cores** na caixa de diálogo **ferramentas > opções** . As três principais categorias de configurações de fonte são:
 
 - **Fonte do ambiente** – a fonte primária do IDE (ambiente de desenvolvimento integrado), usada para todos os elementos da interface, incluindo caixas de diálogo, menus, janelas de ferramentas e janelas de documentos. Por padrão, a fonte do ambiente está vinculada a uma fonte do sistema que aparece como 9 pt Segoe UI nas versões atuais do Windows. O uso de uma fonte para todos os elementos de interface ajuda a garantir uma aparência de fonte consistente em todo o IDE.
@@ -32,7 +32,7 @@ ms.locfileid: "85536104"
 
 1. Para texto de código no editor, redimensione com a configuração fonte de texto de código e responda ao nível de zoom do texto do editor.
 
-2. Todos os outros elementos da interface devem estar vinculados à configuração de fonte do ambiente e responder a quaisquer alterações globais no ambiente. Isso inclui (mas não se limita a):
+2. Todos os outros elementos da interface devem estar vinculados à configuração de fonte do ambiente e responder a quaisquer alterações globais no ambiente. Isso inclui (entre outros):
 
     - Texto em menus de contexto
 
@@ -69,7 +69,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Substitua `Microsoft.VisualStudio.Shell.11.0` pela versão atual da dll do MPF.)
 
- Para exibir a caixa de diálogo, chame " `ShowModal()` " na classe `ShowDialog()` . `ShowModal()`define o estado modal correto no Shell, garante que a caixa de diálogo esteja centralizada na janela pai e assim por diante.
+ Para exibir a caixa de diálogo, chame " `ShowModal()` " na classe `ShowDialog()` . `ShowModal()` define o estado modal correto no Shell, garante que a caixa de diálogo esteja centralizada na janela pai e assim por diante.
 
  O código é o seguinte:
 
@@ -78,7 +78,7 @@ MyWindow window = new MyWindow();
 window.ShowModal()
 ```
 
- `ShowModal`Retorna um bool? (booliano anulável) com o `DialogResult` , que pode ser usado se necessário. O valor de retorno será true se a caixa de diálogo tiver sido fechada com **OK**.
+ `ShowModal` Retorna um bool? (booliano anulável) com o `DialogResult` , que pode ser usado se necessário. O valor de retorno será true se a caixa de diálogo tiver sido fechada com **OK**.
 
  Se você precisar exibir alguma interface do usuário do WPF que não seja uma caixa de diálogo e esteja hospedada por conta própria `HwndSource` , como uma janela pop-up ou uma janela filho do WPF de uma janela pai Win32/WinForms, será necessário definir o `FontFamily` e `FontSize` o no elemento raiz do elemento WPF. (O Shell define as propriedades na janela principal, mas elas não serão herdadas além de uma `HWND` ). O Shell fornece recursos aos quais as propriedades podem ser associadas, desta forma:
 
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Referência de formatação (dimensionamento/negrito)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Referência de formatação (dimensionamento/negrito)
  Algumas caixas de diálogo exigem que o texto específico seja negrito ou um tamanho diferente da fonte do ambiente. Anteriormente, as fontes maiores que a fonte do ambiente eram codificadas como " `environment font +2` " ou semelhantes. Usar os trechos de código fornecidos dará suporte a monitores de alto DPI e garantirá que o texto de exibição sempre apareça no tamanho e peso corretos (como Light ou Semilight).
 
 > [!NOTE]
@@ -301,7 +301,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Para redefinir a fonte, clique em "usar padrões" em **ferramentas > opções > ambiente > fontes e cores**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Estilo de texto
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Estilo de texto
  O estilo de texto se refere ao tamanho da fonte, peso e capitalização. Para obter diretrizes de implementação, consulte [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Capitalização de texto

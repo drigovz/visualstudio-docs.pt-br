@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173597"
 ---
 # <a name="author-vsct-files"></a>Arquivos Author. vsct
@@ -229,11 +229,11 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
 
    Alguns tipos de menu e de botão incluem comportamentos especializados. A lista a seguir descreve alguns tipos de menus e botões especializados. Para outros tipos, consulte as `types` descrições de atributo no [menu](../../extensibility/menu-element.md), no [botão](../../extensibility/button-element.md)e nos elementos de [combinação](../../extensibility/combo-element.md) .
 
-   - Caixa de combinação: uma caixa de combinação é uma lista suspensa que pode ser usada em uma barra de ferramentas. Para adicionar caixas de combinação à interface do usuário, crie um elemento de [combinação](../../extensibility/combos-element.md) no `Commands` elemento. Em seguida, adicione ao `Combos` elemento um `Combo` elemento para cada caixa de combinação a ser adicionada. `Combo`os elementos têm os mesmos atributos e filhos que os `Button` elementos e também têm `DefaultWidth` `idCommandList` atributos e. O `DefaultWidth` atributo define a largura em pixels e o `idCommandList` atributo aponta para uma ID de comando que é usada para preencher a caixa de combinação.
+   - Caixa de combinação: uma caixa de combinação é uma lista suspensa que pode ser usada em uma barra de ferramentas. Para adicionar caixas de combinação à interface do usuário, crie um elemento de [combinação](../../extensibility/combos-element.md) no `Commands` elemento. Em seguida, adicione ao `Combos` elemento um `Combo` elemento para cada caixa de combinação a ser adicionada. `Combo` os elementos têm os mesmos atributos e filhos que os `Button` elementos e também têm `DefaultWidth` `idCommandList` atributos e. O `DefaultWidth` atributo define a largura em pixels e o `idCommandList` atributo aponta para uma ID de comando que é usada para preencher a caixa de combinação.
 
    - Controlador de menu: um controlador de menu é um botão que tem uma seta ao lado dele. Clicar na seta abre uma lista. Para adicionar um controlador de menu à interface do usuário, crie um `Menu` elemento e defina seu `type` atributo como `MenuController` ou `MenuControllerLatched` , dependendo do comportamento desejado. Para preencher um controlador de menu, defina-o como o pai de um `Group` elemento. O controlador de menu exibirá todos os filhos desse grupo em sua lista suspensa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Estender menus e comandos](../../extensibility/extending-menus-and-commands.md)
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência de esquema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

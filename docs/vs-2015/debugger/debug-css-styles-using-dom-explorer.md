@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852431"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos CSS com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
  Quando estiver Depurando aplicativos da Windows Store, Windows Phone aplicativos da loja e aplicativos criados usando Ferramentas do Visual Studio para Apache Cordova, você poderá exibir e alterar as regras de CSS para elementos DOM selecionados e seus elementos filho.  
   
@@ -38,7 +38,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
  As guias **estilos**, **computado**e **alterações** fornecem exibições diferentes das informações de estilo.  
   
-- Use a guia **estilos** para exibir as regras organizadas por nome do seletor de CSS, como `html, body`. Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
+- Use a guia **estilos** para exibir as regras organizadas por nome do seletor de CSS, como `html, body` . Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
   
 - Use a guia **computada** para exibir os valores computados de um estilo. Por exemplo, se você definir um tamanho como 1em, o valor calculado pelo Internet Explorer poderá ser 16px. Os estilos nessa guia estão organizados por nome de estilo, como `height`. Você também pode usar essa guia para habilitar ou desabilitar estilos específicos, editar valores manualmente e ver os resultados imediatos dessas alterações.  
   
@@ -48,7 +48,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
 - Use a guia **alterações** (somente para aplicativos da Windows Store e da Windows Phone Store) para identificar e rastrear os estilos CSS que você alterou durante uma sessão de depuração.  
   
 > [!TIP]
-> As alterações feitas aos estilos nas guias **estilos** e **computado** não são permanentes. Elas são perdidas quando você interrompe a depuração. Para alterar o código-fonte e recarregar as páginas sem parar e reiniciar o depurador, atualize seu aplicativo usando o botão de ![botão Atualizar aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Atualizar aplicativo**do Windows) na barra de ferramentas de **depuração** (somente aplicativos da Windows Store e da Windows Phone Store). Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> As alterações feitas aos estilos nas guias **estilos** e **computado** não são permanentes. Elas são perdidas quando você interrompe a depuração. Para alterar o código-fonte e recarregar as páginas sem parar e reiniciar o depurador, atualize seu aplicativo usando o botão de  ![botão Atualizar aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Atualizar aplicativo**do Windows) na barra de ferramentas de **depuração** (somente aplicativos da Windows Store e da Windows Phone Store). Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Exemplo de correção de uma regra de CSS  
  Este exemplo mostra como inspecionar regras de CSS e depurar um problema de estilo. Por exemplo, vamos supor que você mude a cor de uma fonte usada para exibir títulos de grupo no modelo de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Aplicativo de Separação.  
@@ -118,7 +118,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
     <h4 class="item-title">Group Title: 1</h4>  
     ```  
   
-     Quando você seleciona o elemento H4 no Explorador do DOM, suas guias mostram as regras associadas ao elemento H4. A guia **computada** é mostrada aqui, com a propriedade `color` aberta:  
+     Quando você seleciona o elemento H4 no Explorador do DOM, suas guias mostram as regras associadas ao elemento H4. A guia **computada** é mostrada aqui, com a `color` Propriedade aberta:  
   
      ![Guia estilos de rastreamento no explorador do DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
@@ -140,7 +140,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 10. Selecione a guia **alterações** .  
   
-     Use a guia **alterações** para identificar e rastrear as alterações de estilo feitas durante uma sessão de depuração. A ilustração a seguir mostra o seletor de `.itemspage .itemslist .item .item-overlay .item-title` na guia **alterações** , que agora é substituído.  
+     Use a guia **alterações** para identificar e rastrear as alterações de estilo feitas durante uma sessão de depuração. A ilustração a seguir mostra o `.itemspage .itemslist .item .item-overlay .item-title` seletor na guia **alterações** , que agora é substituído.  
   
      ![Guia alterações do explorador do DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
@@ -154,10 +154,10 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
 15. Use o teclado para modificar esse valor. Altere-o para `rgb(255, 255, 0, 0.87)` e pressione Enter. As cores dos títulos do item no Simulador mudam para amarelo.  
   
-16. Para fazer alterações no arquivo CSS de origem, clique no link **itens. css** na guia **estilos** . Isso abre o Items. CSS, onde você pode alterar o valor do estilo de `color` no código do aplicativo. Para atualizar o aplicativo sem interromper e reiniciar o depurador, clique no botão ![Atualizar aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Atualizar aplicativo do Windows**) na barra de ferramentas **depurar** .  
+16. Para fazer alterações no arquivo CSS de origem, clique no link **itens. css** na guia **estilos** . Isso abre o Items. CSS, onde você pode alterar o valor do `color` estilo no código do aplicativo. Para atualizar o aplicativo sem interromper e reiniciar o depurador, clique no botão  ![Atualizar aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Atualizar aplicativo do Windows**) na barra de ferramentas **depurar** .  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar o layout usando o explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)   
- [Exibir ouvintes de evento DOM](../debugger/view-dom-event-listeners.md)   
+ [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)   
  [Suporte ao produto e acessibilidade](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

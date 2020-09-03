@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75929219"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de regras de segurança para código gerenciado
@@ -86,5 +86,5 @@ Use o conjunto de regras do Microsoft Security Rules para análise de código he
 |[CA3010](../code-quality/ca3010.md)|Examinar código quanto a vulnerabilidades de injeção de XAML|
 |[CA3011](../code-quality/ca3011.md)|Examinar código quanto a vulnerabilidades de injeção de DLL|
 |[CA3012](../code-quality/ca3012.md)|Examinar código quanto a vulnerabilidades de injeção de regex|
-|[CA5358](../code-quality/ca5358.md)|Não usar modos de codificação não seguros|
+|[CA5358](../code-quality/ca5358.md)|Não usar modos de criptografia não seguros|
 |[CA5403](../code-quality/ca5403.md)|Não embutir o certificado em código|

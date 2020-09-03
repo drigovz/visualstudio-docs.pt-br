@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645423"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Como compilar um diretório de saída comum
@@ -29,11 +29,11 @@ Por padrão, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compila cada projeto e
 
 1. Clique em um projeto na solução.
 
-2. No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto** , clique em **Propriedades**.
 
 3. Dependendo do tipo de projeto, clique na guia **Compilar** ou na guia **Build** e defina o **Caminho de saída** para uma pasta usar para todos os projetos na solução.
 
 4. Repita as etapas 1 a 3 para todos os projetos na solução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Compilando e compilando](../ide/compiling-and-building-in-visual-studio.md) [como: alterar o diretório de saída da compilação](../ide/how-to-change-the-build-output-directory.md)

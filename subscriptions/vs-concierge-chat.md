@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
 ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906052"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Atendimento via Chat em assinaturas do Visual Studio
@@ -27,7 +27,7 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
     > [!div class="mx-imgBorder"]
     > ![Bloco de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. Clique em **Continue**.
+3. Clique em **Continuar**.
 
 4. Será aberta uma janela de chat, e você verá um contador mostrando a posição na fila.
 
@@ -71,6 +71,6 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 Para obter mais informações sobre ferramentas e serviços da Microsoft, confira a documentação do:
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
-- [IDE do Visual Studio](/visualstudio/)
+- [Visual Studio IDE](/visualstudio/)
 
 Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.

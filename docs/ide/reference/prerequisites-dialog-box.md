@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419166"
 ---
 # <a name="prerequisites-dialog-box"></a>Caixa de diálogo Pré-requisitos
@@ -56,7 +56,7 @@ Os componentes de pré-requisitos exibidos na caixa de diálogo **Pré-requisito
 |**Bibliotecas de Runtime do Visual C++ "14" (x64)**|Esse pacote instala as bibliotecas em tempo de execução Visual C++ para os sistemas operacionais x64, que fornecem rotinas de programação para o sistema operacional Microsoft Windows. Essas rotinas automatizam várias tarefas comuns de programação que não são fornecidas pelas linguagens C e C++.<br /><br /> Para obter mais informações, consulte [Referência da biblioteca em tempo de execução C](/cpp/c-runtime-library/c-run-time-library-reference).|
 |**Bibliotecas de Runtime do Visual C++ "14" (x86)**|Esse pacote instala as bibliotecas em tempo de execução Visual C++ para os sistemas operacionais x86, que fornecem rotinas de programação para o sistema operacional Microsoft Windows. Essas rotinas automatizam várias tarefas comuns de programação que não são fornecidas pelas linguagens C e C++.<br /><br /> Para obter mais informações, consulte [Referência da biblioteca em tempo de execução C](/cpp/c-runtime-library/c-run-time-library-reference).|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Página de Publicação, Designer de Projeto](../../ide/reference/publish-page-project-designer.md)
 - [Pré-requisitos de implantação de aplicativo](../../deployment/application-deployment-prerequisites.md)

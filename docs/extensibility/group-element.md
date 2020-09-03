@@ -1,5 +1,5 @@
 ---
-title: Elemento de Grupo | Microsoft Docs
+title: Elemento Group | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711226"
 ---
 # <a name="group-element"></a>Elemento Group
-Define um grupo de comando VSPackage.
+Define um grupo de comandos VSPackage.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">
@@ -36,10 +36,10 @@ Define um grupo de comando VSPackage.
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|guid|Obrigatórios. GUIA do identificador de comando GUID/ID.|
-|id|Obrigatórios. ID do identificador de comando GUID/ID.|
+|guid|Obrigatórios. GUID do identificador de comando GUID/ID.|
+|id|Obrigatórios. ID do identificador de comando de GUID/ID.|
 |priority|Opcional. Um valor numérico que especifica a prioridade.|
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -52,7 +52,7 @@ Define um grupo de comando VSPackage.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento de grupos](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comando de um VSPackage.|
+|[Elemento groups](../extensibility/groups-element.md)|Contém entradas que definem os grupos de comandos de um VSPackage.|
 
 ## <a name="example"></a>Exemplo
 
@@ -63,4 +63,4 @@ Define um grupo de comando VSPackage.
 ```
 
 ## <a name="see-also"></a>Confira também
-- [Arquivos da tabela de comando do Visual Studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

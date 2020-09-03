@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544762"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Como: armazenar em cache uma fonte de dados programaticamente em um documento do Office
@@ -54,7 +54,7 @@ ms.locfileid: "85544762"
     > [!NOTE]
     > Não chame `StopCaching` do manipulador de eventos para o `Shutdown` evento de um documento ou planilha. No momento em que o `Shutdown` evento é gerado, é muito tarde para modificar o cache de dados. Para obter mais informações sobre o `Shutdown` evento, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Dados de cache](../vsto/caching-data.md)
 - [Como armazenar em cache dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

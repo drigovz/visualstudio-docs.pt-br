@@ -11,10 +11,10 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.openlocfilehash: df0322b26768ad5d325fc0fd07585f805fc96825
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919145"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Conheça as várias maneiras de depurar um serviço de nuvem do Azure
@@ -29,5 +29,5 @@ Se você estiver usando o Visual Studio Enterprise para escrever funções desti
 ## <a name="remote-debugging"></a>Depuração remota 
 Você pode habilitar a depuração remota nos serviços de nuvem no momento em que implanta o serviço de nuvem usando o Visual Studio. Se você optar por habilitar a depuração remota para uma implantação, os serviços de depuração remota serão instalados nas máquinas virtuais que executam cada instância de função. Esses serviços – como `msvsmon.exe` – não afetam o desempenho nem resultam em custos extras. Para saber mais, consulte [Depurar o serviço de nuvem no Azure](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure)
 
-## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+## <a name="next-steps"></a>Próximas etapas
 - [Depurando um serviço de nuvem ou uma VM do Azure no Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md) – conheça os detalhes de como depurar serviços de nuvem do Azure.

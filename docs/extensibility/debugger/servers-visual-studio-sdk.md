@@ -1,5 +1,5 @@
 ---
-title: Servidores (Visual Studio SDK) | Microsoft Docs
+title: Servidores (SDK do Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712890"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servidores (SDK do Visual Studio)
-Na arquitetura dedepurador, um *servidor:*
+Na arquitetura do depurador, um *servidor*:
 
-- É um contêiner de portos e fornecedores portuários e comunica portos e fornecedores portuários para o gerenciador de depuração de sessão (SDM) e motores de depuração.
+- É um contêiner de portas e fornecedores de porta e comunica portas e fornecedores de porta para o SDM (Gerenciador de depuração de sessão) e os mecanismos de depuração.
 
-- Pode identificar-se pelo nome e enumerar seus portos e fornecedores portuários.
+- Pode se identificar por nome e enumerar suas portas e fornecedores de porta.
 
-- É representado por uma interface [IDebugCoreServer2,](../../extensibility/debugger/reference/idebugcoreserver2.md) que só é implementada pelo Visual Studio (uma instância de um servidor para cada instância do Visual Studio em execução).
+- É representado por uma interface [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , que é implementada pelo Visual Studio (uma instância de um servidor para cada instância do Visual Studio em execução).
 
 ## <a name="see-also"></a>Confira também
 - [Portas](../../extensibility/debugger/ports.md)
-- [Fornecedores portuários](../../extensibility/debugger/port-suppliers.md)
-- [Conceitos de depurador](../../extensibility/debugger/debugger-concepts.md)
+- [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md)
+- [Conceitos do depurador](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

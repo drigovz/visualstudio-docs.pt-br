@@ -1,5 +1,5 @@
 ---
-title: Converter entre cadeias de caracteres regulares e literais de cadeia de caracteres textuais
+title: Converter entre cadeias de caracteres regulares e literais de cadeia de caracteres verbatim
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290016"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Converter entre cadeia de caracteres regular e refatoração de literais de cadeia de caracteres textual
@@ -44,6 +44,6 @@ Esta refatoração aplica-se a:
 
     ![Converter em cadeia de caracteres textual](media/convert-to-verbatim-string.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

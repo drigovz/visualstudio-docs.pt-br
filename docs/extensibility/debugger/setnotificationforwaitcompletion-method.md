@@ -1,5 +1,5 @@
 ---
-title: Método de conclusão do SetNotificationWaitWait | Microsoft Docs
+title: Método SetNotificationForWaitCompletion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712868"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Método SetNotificationForWaitCompletion
-Define ou limpa a TASK_STATE_WAIT_COMPLETION_NOTIFICATION parte do estado.
+Define ou limpa o bit de estado TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 
- **Espaço de nome:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Montagem:** mscorlib (in *mscorlib.dll*)
+ **Assembly:** mscorlib (no *mscorlib.dll*)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,15 +30,15 @@ Define ou limpa a TASK_STATE_WAIT_COMPLETION_NOTIFICATION parte do estado.
 internal void SetNotificationForWaitCompletion(bool enabled)
 ```
 
-### <a name="parameters"></a>parâmetros
+### <a name="parameters"></a>Parâmetros
  `enabled`
 
- `true`para definir a broca; `false` para desdefinir a broca.
+ `true` para definir o bit; `false` para remover a definição do bit.
 
 ## <a name="exceptions"></a>Exceções
 
 ## <a name="remarks"></a>Comentários
- O depurador define esta broca para ajudar a sair de um corpo de método assíncrono. Se `enabled` `true`for, este método deve ser chamado apenas em uma tarefa que ainda não foi concluída. Quando `enabled` `false`é , este método pode ser chamado em tarefas concluídas. Em ambos os casoes, ele só deve ser usado para tarefas de estilo de promessa.
+ O depurador define esse bit para ajudar a depurar um corpo de método assíncrono. Se `enabled` for `true` , esse método deve ser chamado apenas em uma tarefa que ainda não foi concluída. Quando `enabled` é `false` , esse método pode ser chamado em tarefas concluídas. Em ambos os eventos, ele só deve ser usado para tarefas de estilo Promise.
 
 ## <a name="requirements"></a>Requisitos
 

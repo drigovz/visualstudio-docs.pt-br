@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
 ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938679"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio para Mac por trás de um firewall ou servidor proxy
@@ -26,7 +26,7 @@ Como o Instalador do Visual Studio para Mac baixa de vários domínios e servido
 
 ### <a name="microsoft-domains"></a>Domínios da Microsoft
 
-| Domain| Finalidade |
+| Domínio| Finalidade |
 | ----------------------------------- |---------------------------|
 | *.live.com| Gerenciamento de Credenciais |
 | app.vssps.visualstudio.com| Metadados do Instalador|
@@ -41,7 +41,7 @@ Como o Instalador do Visual Studio para Mac baixa de vários domínios e servido
 
 ### <a name="third-party-domains"></a>Domínios de terceiros
 
-| Domain| Finalidade |
+| Domínio| Finalidade |
 | --------------------------|-------------------------|
 | dl.google.com | SDK do Android |
 | download.oracle.com | Java SDK|
@@ -80,7 +80,7 @@ Para garantir que você tenha acesso a todos os recursos de que precisa no Visua
 
 ### <a name="android-projects"></a>Projetos do Android
 
-| Domain| Finalidade|
+| Domínio| Finalidade|
 | ------------------------------------|------------------------------------|
 | time.android.com| Servidor de Horário para o Android Emulator |
 | connectivitycheck.gstatic.com | Conectividade para o Android Emulator|

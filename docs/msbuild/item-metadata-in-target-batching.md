@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633662"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadados de item no envio de destinos em lote
 
-O MSBuild tem a capacidade de executar análises de dependência nas entradas e saídas de um alvo de compilação. Se for determinado que as entradas ou as saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.
+O MSBuild tem a capacidade de executar a análise de dependência nas entradas e saídas de um destino de compilação. Se for determinado que as entradas ou as saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.
 
-Se um destino contiver uma tarefa que use itens em `Target` lote como entradas ou saídas, o elemento do destino deve usar o loteamento em seus `Inputs` ou `Outputs` atributos para permitir que o MSBuild pule lotes de itens que já estão atualizados.
+Se um destino contiver uma tarefa que usa itens em lote como entradas ou saídas, o `Target` elemento do destino deverá usar o envio em lote em seus `Inputs` `Outputs` atributos ou para permitir que o MSBuild ignore lotes de itens já atualizados.
 
 ## <a name="batch-targets"></a>Destinos em lotes
 
-O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em dois lotes baseados nos metadados de item `Culture`. Cada um desses lotes é passada para a tarefa `AL`, que cria um assembly de saída para cada lote. Usando o loteamento `Outputs` no `Target` atributo do elemento, o MSBuild pode determinar se cada um dos lotes individuais está atualizado antes de executar o destino. Sem o uso do envio em lote de destino, ambos os lotes de itens seriam executados pela tarefa toda vez que o destino fosse executado.
+O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em dois lotes baseados nos metadados de item `Culture`. Cada um desses lotes é passada para a tarefa `AL`, que cria um assembly de saída para cada lote. Usando o envio em lote no `Outputs` atributo do `Target` elemento, o MSBuild pode determinar se cada um dos lotes individuais está atualizado antes de executar o destino. Sem o uso do envio em lote de destino, ambos os lotes de itens seriam executados pela tarefa toda vez que o destino fosse executado.
 
 ```xml
 <Project
@@ -70,6 +70,6 @@ O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em do
 ## <a name="see-also"></a>Confira também
 
 - [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)
-- [Lotes](../msbuild/msbuild-batching.md)
-- [Elemento-alvo (MSBuild)](../msbuild/target-element-msbuild.md)
-- [Metadados de itens em loteamento de tarefas](../msbuild/item-metadata-in-task-batching.md)
+- [Envio em lote](../msbuild/msbuild-batching.md)
+- [Elemento de destino (MSBuild)](../msbuild/target-element-msbuild.md)
+- [Metadados de item no envio de tarefas em lote](../msbuild/item-metadata-in-task-batching.md)

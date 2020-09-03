@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544866"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento Customization (desenvolvimento do Office no Visual Studio)
@@ -71,7 +71,7 @@ ms.locfileid: "85544866"
  O `customization` elemento tem o seguinte elemento filho.
 
 #### <a name="appaddin"></a>appAddin
- O `appAddin` elemento no `vstov4` namespace é definido no [elemento&#60;appAddin&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).
+ O `appAddin` elemento no `vstov4` namespace é definido no [ elemento&#60;appAddin&#62; &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md).
 
 ## <a name="example-of-a-document-level-customization"></a>Exemplo de uma personalização no nível do documento
 
@@ -119,7 +119,7 @@ ms.locfileid: "85544866"
 </vstov4:customization>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Manifestos do aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md)

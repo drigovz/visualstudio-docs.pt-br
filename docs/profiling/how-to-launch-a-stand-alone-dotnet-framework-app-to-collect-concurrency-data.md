@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327898"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
@@ -89,7 +89,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
     - Feche o aplicativo de destino.
 
-         -ou-
+         - ou -
 
     - Digite **VSPerfCmd/Detach**
 
@@ -97,5 +97,5 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
      **VSPerfCmd**  [/Shutdown](../profiling/shutdown.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Coletar dados de simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542565"
 ---
 # <a name="share-code-maps"></a>Compartilhar mapas de códigos
@@ -22,7 +22,7 @@ Você pode salvar mapas de código como parte de um projeto do Visual Studio, co
 
 Use o menu **arquivo** para salvar o mapa.
 
--ou-
+- ou -
 
 Para salvar o mapa como parte do projeto específico, na barra de ferramentas do mapa, escolha **compartilhar**  >  **mover \<CodeMapName> . dgml em**e, em seguida, escolha o projeto no qual você deseja salvar o mapa.
 
@@ -57,6 +57,6 @@ Ao exportar um mapa de código como um arquivo XPS, você pode vê-lo em visuali
 
 3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS ( \* . XPS)**. Selecione **Salvar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Mapear dependências com mapas de código](../modeling/map-dependencies-across-your-solutions.md)

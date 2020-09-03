@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672134"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testando um aplicativo grande com vários mapas de interface do usuário
@@ -23,11 +23,11 @@ ms.locfileid: "72672134"
 
 Este tópico fala sobre como usar testes de IU codificados quando você estiver testando um aplicativo grande usando diversos mapas de interface do usuário.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
-  Quando você cria um novo teste de interface do usuário codificado, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Framework de teste gera código para o teste por padrão em uma classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).
+  Quando você cria um novo teste de interface do usuário codificado, a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estrutura de teste gera código para o teste por padrão em uma classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).
 
   O código gerado para o mapa de interface do usuário contém uma classe para cada objeto com o qual há interação. Para cada método gerado, é gerada uma classe complementar aos parâmetros de método especificamente para o método em questão. Se houver uma grande quantidade de objetos, páginas, formulários e controles em seu aplicativo, o mapa de interface do usuário pode ficar muito grande. Além disso, se houver diversas pessoas trabalhando nos testes, o aplicativo fica pesado com um único arquivo grande de mapa de interface do usuário.
 
@@ -56,7 +56,7 @@ Este tópico fala sobre como usar testes de IU codificados quando você estiver 
 
 2. Clique com o botão direito do mouse na pasta `UIMaps`, aponte para **Adicionar** e clique em **Novo Item**.
 
-    A caixa de diálogo **Adicionar Novo Item** é exibida.
+    A caixa de diálogo **Adicionar novo item** é exibida.
 
    > [!NOTE]
    > Você deve estar em um projeto de teste de IU codificado para adicionar um novo mapa de testes de IU codificado.
@@ -138,10 +138,10 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
+- [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
 - [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)

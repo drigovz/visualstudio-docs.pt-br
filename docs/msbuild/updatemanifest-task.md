@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25e410ba3122e0065f92186195ee5a82d6a55c2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631336"
 ---
 # <a name="updatemanifest-task"></a>Tarefa UpdateManifest
 
 Atualiza as propriedades selecionadas em um manifesto e assina-as novamente.
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
  A tabela a seguir descreve os parâmetros da tarefa `UpdateManifest`.
 
@@ -40,7 +40,7 @@ Atualiza as propriedades selecionadas em um manifesto e assina-as novamente.
 
 ## <a name="remarks"></a>Comentários
 
- Além de ter os parâmetros listados na tabela, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Classe base de tarefas](../msbuild/task-base-class.md).
+ Além de ter os parâmetros listados na tabela, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [classe base da tarefa](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Confira também
 

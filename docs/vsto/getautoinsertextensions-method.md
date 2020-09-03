@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5d88af6f24306b7b243359c9797a2cb7e7449bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543501"
 ---
 # <a name="getautoinsertextensions-method"></a>Método GetAutoInsertExtensions
@@ -36,7 +36,7 @@ HRESULT GetAutoInsertExtensions(
 |---------------|-----------------|
 |*psaExtensionNames*|Os nomes de extensão dos aplicativos para o Office.|
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
  Um valor HRESULT que indica se o método foi concluído com êxito.
 
 ## <a name="remarks"></a>Comentários

@@ -14,21 +14,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633935"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como criar os mesmos arquivos de origem com opções diferentes
 
-Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode construir um projeto para ser executado em uma plataforma específica, como x86 ou x64. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com o MSBuild, você usa propriedades e condições para criar as diferentes configurações de compilação.
+Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode criar um projeto para ser executado em uma plataforma específica, como x86 ou x64. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com o MSBuild, você usa as propriedades e as condições para criar as diferentes configurações de compilação.
 
-## <a name="use-properties-to-control-build-settings"></a>Use propriedades para controlar as configurações de compilação
+## <a name="use-properties-to-control-build-settings"></a>Usar propriedades para controlar as configurações de compilação
 
 O elemento `Property` define uma variável que é referenciada várias vezes em um arquivo de projeto, como o local de um diretório temporário ou para definir os valores de propriedades que são usadas em várias configurações, como um build de Depuração e um build de Versão. Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
-Você pode usar propriedades para alterar a configuração de seu build sem precisar alterar o arquivo de projeto. O atributo `Condition` do elemento `Property` e do elemento `PropertyGroup` permite alterar o valor de propriedades. Para obter mais informações sobre as condições do MSBuild, consulte [Condições](../msbuild/msbuild-conditions.md).
+Você pode usar propriedades para alterar a configuração de seu build sem precisar alterar o arquivo de projeto. O atributo `Condition` do elemento `Property` e do elemento `PropertyGroup` permite alterar o valor de propriedades. Para obter mais informações sobre as condições do MSBuild, consulte [condições](../msbuild/msbuild-conditions.md).
 
 ### <a name="to-set-a-group-of-properties-that-depends-on-another-property"></a>Para definir um grupo de propriedades que depende de outra propriedade
 
@@ -51,11 +51,11 @@ Você pode usar propriedades para alterar a configuração de seu build sem prec
 
 ## <a name="specify-properties-on-the-command-line"></a>Especificar propriedades na linha de comando
 
-Quando o arquivo de projeto é escrito para aceitar várias configurações, você precisa ter a capacidade de alterar essas configurações sempre que compilar o projeto. O MSBuild fornece essa capacidade permitindo que as propriedades sejam especificadas na linha de comando usando o **switch -property** ou **-p.**
+Quando o arquivo de projeto é escrito para aceitar várias configurações, você precisa ter a capacidade de alterar essas configurações sempre que compilar o projeto. O MSBuild fornece essa capacidade, permitindo que as propriedades sejam especificadas na linha de comando usando a opção **-Property** ou **-p** .
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>Para definir uma propriedade de projeto na linha de comando
 
-- Use o **interruptor de propriedade** com o valor da propriedade e da propriedade. Por exemplo: 
+- Use a opção **-Property** com o valor da propriedade e da propriedade. Por exemplo:
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -69,7 +69,7 @@ Quando o arquivo de projeto é escrito para aceitar várias configurações, voc
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Para especificar mais de uma propriedade de projeto na linha de comando
 
-- Use o **-property** ou **-p** switch várias vezes com os valores de propriedade e propriedade, ou use um conjunto **de propriedade** ou **-p** e separe várias propriedades com ponto e vírgula (;). Por exemplo: 
+- Use a opção **-Property** ou **-p** várias vezes com os valores de propriedade e propriedade, ou use a opção de uma **Propriedade** ou **-p** e separe várias propriedades com ponto-e-vírgula (;). Por exemplo:
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
@@ -81,7 +81,7 @@ Quando o arquivo de projeto é escrito para aceitar várias configurações, voc
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
   ```
 
-  As variáveis de ambiente também são tratadas como propriedades e são automaticamente incorporadas pelo MSBuild. Para obter mais informações sobre o uso de variáveis de ambiente, consulte [Como: Usar variáveis de ambiente em uma compilação](../msbuild/how-to-use-environment-variables-in-a-build.md).
+  As variáveis de ambiente também são tratadas como propriedades e são automaticamente incorporadas pelo MSBuild. Para obter mais informações sobre como usar variáveis de ambiente, consulte [como: usar variáveis de ambiente em uma compilação](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
   O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.
 
@@ -192,4 +192,4 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 - [MSBuild](../msbuild/msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
-- [Elemento do projeto (MSBuild)](../msbuild/project-element-msbuild.md)
+- [Elemento Project (MSBuild)](../msbuild/project-element-msbuild.md)

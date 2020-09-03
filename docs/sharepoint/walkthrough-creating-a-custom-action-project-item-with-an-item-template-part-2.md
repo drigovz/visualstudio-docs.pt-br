@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016107"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2
@@ -65,7 +66,7 @@ ms.locfileid: "86016107"
 
 5. Escolha o modelo de projeto de **biblioteca de controle de usuário do WPF** , nomeie o projeto **ItemTemplateWizard**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Adiciona o projeto **ItemTemplateWizard** à solução.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o projeto **ItemTemplateWizard** à solução.
 
 6. Exclua o item UserControl1 do projeto.
 
@@ -300,7 +301,7 @@ ms.locfileid: "86016107"
 
 12. Na caixa **título** , insira **centro de desenvolvedores do SharePoint**.
 
-13. Na caixa **Descrição** , digite **abre o site do centro de desenvolvedores do SharePoint**.
+13. Na caixa  **Descrição** , digite **abre o site do centro de desenvolvedores do SharePoint**.
 
 14. Na caixa **URL** , digite **https://docs.microsoft.com/sharepoint/dev/** e, em seguida, escolha o botão **concluir** .
 
@@ -340,7 +341,7 @@ ms.locfileid: "86016107"
 
 4. Feche as duas instâncias do Visual Studio (a instância experimental e a instância do Visual Studio na qual a solução CustomActionProjectItem está aberta).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Criar modelos de item e modelos de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f45d08a82bdc3f6807f9a4d5a0cb31dc157e4c9c
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328655"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando
@@ -95,7 +95,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Parar o serviço.
 
-         -ou-
+         - ou -
 
     - Digite **VSPerfCmd/Detach**
 
@@ -103,6 +103,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Profile services (Serviços de perfil)](../profiling/command-line-profiling-of-services.md)
 - [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)
