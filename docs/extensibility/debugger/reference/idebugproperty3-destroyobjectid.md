@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID | Microsoft Docs
+title: IDebugProperty3::D estroyObjectID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721207"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Destrói o ID único associado a esta propriedade, indicando que o chamador não se importa mais em identificar essa propriedade exclusivamente de todas as outras propriedades.
+Destrói a ID exclusiva associada a essa propriedade, indicando que o chamador não se importa mais para identificar essa propriedade exclusivamente de todas as outras propriedades.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,12 +38,12 @@ int DestroyObjectID();
 ```
 
 ## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se o mecanismo de depuração não precisar suportar IDs exclusivos para uma propriedade (porque `E_NOTIMPL` ele já os rastreia exclusivamente internamente), então ele pode simplesmente retornar para este método.
+ Se o mecanismo de depuração não precisar dar suporte a IDs exclusivas para uma propriedade (porque ela já as acompanha exclusivamente internamente), ela poderá simplesmente retornar `E_NOTIMPL` para esse método.
 
- IDs exclusivos são criados com uma chamada para o método [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) quando o chamador deseja ter certeza de que essa propriedade é identificada exclusivamente entre todas as outras propriedades.
+ As IDs exclusivas são criadas com uma chamada para o método [Createobjectid](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) quando o chamador deseja certificar-se de que essa propriedade é identificada exclusivamente entre todas as outras propriedades.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

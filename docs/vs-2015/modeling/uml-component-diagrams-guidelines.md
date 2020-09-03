@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297161"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componente UML: diretrizes
@@ -41,7 +41,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
   É possível usar um diagrama de componente para representar o design, independentemente da linguagem ou da plataforma que o design usa ou usará.
 
-## <a name="OtherDiagrams"></a>Relação com outros diagramas
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Relação com outros diagramas
  É possível usar um diagrama de componente com outros diagramas.
 
 |Outro diagrama|Ajuda a debater e transmitir esses aspectos do design|
@@ -51,7 +51,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 |Diagramas de Atividade|-O processamento interno executado por um componente em resposta a mensagens de entrada.<br /><br /> Para obter mais informações, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagramas de Camada|-Camadas de arquitetura lógica para seus componentes.<br /><br /> Para obter mais informações, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Etapas básicas para desenhar diagramas de componente
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Etapas básicas para desenhar diagramas de componente
  Para obter informações de referência sobre os elementos em diagramas de componente, consulte [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md).
 
  Para obter mais informações sobre como usar diagramas de componente no processo de design, consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md).
@@ -82,7 +82,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
 1. Clique em **componente** na caixa de ferramentas e, em seguida, clique em uma parte em branco do diagrama.
 
-     \- ou -
+     \- ou –
 
      Copie e cole um componente existente.
 
@@ -161,7 +161,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
     3. Se você quisesse criar uma interface necessária, clique na marca de ação e, em seguida, clique em **converter para a interface necessária**.
 
-## <a name="Parts"></a>Mostrando as partes internas de um componente
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Mostrando as partes internas de um componente
  ![Diagrama de componente mostrando partes internas](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  É possível colocar partes (3) em um componente (1) para mostrar como ele é feito de componentes menores que interagem entre si.
@@ -188,13 +188,13 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
          Um novo componente é criado no **Gerenciador de modelos UML**. Este é o novo tipo da parte.
 
-         \- ou -
+         \- ou –
 
          Arraste um componente existente do Gerenciador de Modelos UML para o componente pai.
 
          Uma nova parte (3) é exibida no componente pai. O tipo é o componente arrastado do Gerenciador de Modelos UML.
 
-         \- ou -
+         \- ou –
 
          Clique com o botão direito do mouse em um componente, em um diagrama ou em um Gerenciador de modelos UML, e clique em **copiar**.
 
@@ -206,7 +206,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
     3. É possível adicionar interfaces fornecidas e obrigatórias (4, 5) à nova parte. Clique na **interface fornecida** ou na ferramenta de **interface necessária** e, em seguida, clique na parte.
 
-         \- ou -
+         \- ou –
 
          Arraste uma interface existente do **Gerenciador de modelos UML** para a parte.
 
@@ -255,7 +255,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
      Agora é possível adicionar partes a ela.
 
-## <a name="Designing"></a>Criando o componente
+## <a name="designing-the-component"></a><a name="Designing"></a> Criando o componente
 
 ### <a name="describing-how-the-parts-collaborate"></a>Descrevendo Como as Partes Colaboram
  É possível desenham um diagrama de sequência para mostrar como as partes trabalham juntas em resposta a uma mensagem que chega ao componente pai.
@@ -332,5 +332,5 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
 
   É possível usar o nome da seta de dependência para denotar um tipo específico de uso. Para definir o nome, clique com o botão direito do mouse na seta, clique em **Propriedades**e defina o campo **nome** na janela Propriedades.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editar modelos UML e](../modeling/edit-uml-models-and-diagrams.md) diagramas diagramas de [componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) [diagramas de sequência UML: referenciar](../modeling/uml-sequence-diagrams-reference.md) diagramas de [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) diagramas de [classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: criando a estrutura física usando diagramas](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

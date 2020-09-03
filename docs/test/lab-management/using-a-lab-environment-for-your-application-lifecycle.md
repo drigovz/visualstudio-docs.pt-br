@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88144682"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
@@ -101,19 +101,19 @@ Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No ent
 |Recurso|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
 |**Teste**|||
-|Executar testes manuais|Suportado|Suportado|
-|Executar IU codificado e outros testes automáticos|Suportado|Suportado|
-|Arquivo com muitos bugs usando adaptadores de diagnóstico|Suportado|Suportado|
+|Executar testes manuais|Com suporte|Com suporte|
+|Executar IU codificado e outros testes automáticos|Com suporte|Com suporte|
+|Arquivo com muitos bugs usando adaptadores de diagnóstico|Com suporte|Com suporte|
 |**Compilar implantação**|||
-|Fluxos de trabalho compilar/implantar/testar automáticos|Suportado|Suportado|
+|Fluxos de trabalho compilar/implantar/testar automáticos|Com suporte|Com suporte|
 |**Criação e gerenciamento de ambiente**|||
 |Usar máquinas físicas, além de virtuais|Sem suporte|Com suporte|
 |Usar máquinas virtuais de terceiros|Sem suporte|Com suporte|
-|Instalar automaticamente agentes de teste em computadores com ambiente de laboratório|Suportado|Suportado|
+|Instalar automaticamente agentes de teste em computadores com ambiente de laboratório|Com suporte|Com suporte|
 |Salvar e implantar o estado de um ambiente de laboratório usando instantâneos de ambiente|Com suporte|Sem suporte|
 |Criar ambientes de laboratório a partir de modelos VM|Com suporte|Sem suporte|
 |Ambiente de início/parada/instantâneo|Com suporte|Sem suporte|
-|Conecte-se ao ambiente usando o Visualizador de Ambiente|Suportado|Suportado|
+|Conecte-se ao ambiente usando o Visualizador de Ambiente|Com suporte|Com suporte|
 |Executa várias cópias de um ambiente ao mesmo tempo usando isolamento de rede|Com suporte|Sem suporte|
 
 ### <a name="lab-management-concepts"></a>Conceitos de Lab Management

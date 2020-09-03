@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656112"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Passo a passo: Depurar uma folha de estilos XSLT
@@ -27,7 +27,7 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
 2. Copie os dois arquivos de exemplo para seu computador local.
 
-## <a name="start-debugging"></a>Iniciar a depuração
+## <a name="start-debugging"></a>Iniciar Depuração
 
 #### <a name="to-start-debugging"></a>Para iniciar a depuração
 
@@ -37,13 +37,13 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
     A folha de estilos é aberta no editor XML.
 
-3. Clique no botão procurar ( **...** ) no campo de **entrada** da janela Propriedades do documento.
+3. Clique no botão procurar (**...**) no campo de **entrada** da janela Propriedades do documento.
 
-4. Localize o arquivo books. xml e clique em **abrir**.
+4. Localize o arquivo de books.xml e clique em **abrir**.
 
     Isso define o arquivo de documento de origem que é usado para a transformação XSLT.
 
-5. Clique com o botão direito do mouse na marca de início `xsl:if`, aponte para ponto de **interrupção**e clique em **Inserir ponto de interrupção**.
+5. Clique com o botão direito do mouse na `xsl:if` marca de início, aponte para ponto de **interrupção**e clique em **Inserir ponto de interrupção**.
 
 6. Clique no botão **depurar XSL** na barra de ferramentas do editor de XML.
 
@@ -55,7 +55,7 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
    A janela **saída XSL** exibe a saída da transformação XSL. Essa janela é separada da janela de **saída do Visual Studio** .
 
-## <a name="watch-window"></a>Observação de janela
+## <a name="watch-window"></a>Janela de Observação
 
 #### <a name="to-use-the-watch-window"></a>Para usar a janela de observação
 
@@ -63,13 +63,13 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 
      Isso torna a observação 1 janela visível.
 
-2. Digite `$bookAverage` no campo **nome** e pressione Enter.
+2. Digite `$bookAverage` o campo **nome** e pressione Enter.
 
      O valor da variável de `$bookAverage` é exibido na janela.
 
-3. Digite `self::node()` no campo **nome** e pressione Enter.
+3. Digite `self::node()` o campo **nome** e pressione Enter.
 
-     `self::node()` é uma expressão XPath que avalia ao nó atual de contexto. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
+     `self::node()` é uma expressão XPath que é avaliada como o nó de contexto atual. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
 
 4. Expanda o nó de `self::node()` em seguida, expanda o nó de `price` .
 
@@ -154,5 +154,5 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depuração de XSLT](../xml-tools/debugging-xslt.md)

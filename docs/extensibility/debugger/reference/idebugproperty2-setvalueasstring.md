@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsString | Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 112ded163f38b93e9918387d8ca6beafb8282647
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721245"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-Define o valor de uma propriedade a partir de uma determinada seqüência.
+Define o valor de uma propriedade de uma determinada cadeia de caracteres.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ int SetValueAsString ( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pszValue`\
-[em] Uma seqüência contendo o valor a ser definido.
+no Uma cadeia de caracteres que contém o valor a ser definido.
 
 `nRadix`\
-[em] Um rádio para ser usado na interpretação de qualquer informação numérica. Isso pode ser 0 para tentar determinar o radix automaticamente.
+no Uma Radix a ser usada na interpretação de qualquer informação numérica. Isso pode ser 0 para tentar determinar a base automaticamente.
 
 `dwTimeout`\
-[em] Especifica o tempo máximo, em milissegundos, para esperar antes de retornar deste método. Use `INFINITE` para esperar indefinidamente.
+no Especifica o tempo máximo, em milissegundos, a aguardar antes de retornar desse método. Use `INFINITE` para aguardar indefinidamente.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna código de erro. A tabela a seguir mostra outros valores possíveis.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro. A tabela a seguir mostra outros valores possíveis.
 
 |Valor|Descrição|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|A seqüência não pôde ser convertida em um valor de propriedade, ou o valor da propriedade não pôde ser definido.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|A cadeia de caracteres não pôde ser convertida em um valor de propriedade ou o valor da propriedade não pôde ser definido.|
 |`E_SETVALUE_VALUE_IS_READONLY`|a propriedade é somente leitura.|
 
 ## <a name="see-also"></a>Confira também

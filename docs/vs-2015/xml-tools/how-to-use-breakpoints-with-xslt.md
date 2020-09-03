@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656303"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Como: Use pontos de interrupção com XSLT
@@ -32,7 +32,7 @@ Você pode definir pontos de interrupção em uma folha de estilos XSLT ou no do
 
 2. Posicione o cursor no local do ponto de interrupção, clique com o botão direito do mouse, aponte para ponto de **interrupção**e clique em **Inserir ponto de interrupção**.
 
-3. Clique no botão procurar ( **...** ) no campo de **entrada** da janela Propriedades do documento.
+3. Clique no botão procurar (**...**) no campo de **entrada** da janela Propriedades do documento.
 
 4. Localize o documento de origem XML e clique em **abrir**.
 
@@ -49,7 +49,7 @@ Você pode definir pontos de interrupção em uma folha de estilos XSLT ou no do
 
 2. Posicione o cursor no local do ponto de interrupção, clique com o botão direito do mouse, aponte para ponto de **interrupção**e clique em **Inserir ponto de interrupção**.
 
-3. Clique no botão procurar ( **...** ) no campo folha de **estilos** da janela Propriedades do documento.
+3. Clique no botão procurar (**...**) no campo folha de **estilos** da janela Propriedades do documento.
 
 4. Localize o documento de origem XML e clique em **abrir**.
 
@@ -57,5 +57,5 @@ Você pode definir pontos de interrupção em uma folha de estilos XSLT ou no do
 
 5. Clique no botão **depurar XSL** na barra de ferramentas do editor de XML.
 
-## <a name="see-also"></a>Consulte também
- [Passo a passo: depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+## <a name="see-also"></a>Consulte Também
+ [Passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

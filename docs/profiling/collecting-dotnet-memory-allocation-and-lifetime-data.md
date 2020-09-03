@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331710"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Coletar dados de tempo de vida e de alocação de memória do .NET
@@ -78,7 +78,7 @@ As tarefas na tabela a seguir são opções na caixa de diálogo **Páginas de P
 |Na página **Contadores de CPU**, especifique um ou mais contadores de desempenho de processador para serem adicionados aos dados de criação de perfil.|- [Como: coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na página **Avançado**, especifique outras opções VSInstr.exe que você desejar, como opções para incluir ou excluir funções específicas. Para obter mais informações sobre opções VSInstr, consulte [VSInstr](../profiling/vsinstr.md)|- [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Configurar sessões](../profiling/configuring-performance-sessions.md) 
  de desempenho [Como: escolher métodos](../profiling/how-to-choose-collection-methods.md) 

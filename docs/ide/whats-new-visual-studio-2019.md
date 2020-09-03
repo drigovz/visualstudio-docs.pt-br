@@ -16,10 +16,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801055"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
@@ -236,7 +236,7 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 * Se você tiver um problema em que o Visual Studio pare de responder, falha ou outro problema de desempenho, você poderá compartilhar facilmente as etapas de reprodução e os arquivos de suporte conosco usando o [relatório de uma ferramenta problemática](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Notas de versão do Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)

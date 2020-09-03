@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656167"
 ---
 # <a name="searching-the-schema-set"></a>Procurando pelo conjunto de esquema
@@ -28,7 +28,7 @@ XML Schema Explorer permite que você procurar o esquema define as seguintes man
 ## <a name="keyword-search"></a>Palavra-chave pesquisa
  Você executa pesquisas de palavra-chave inserindo uma subcadeia de caracteres na caixa de texto **Pesquisar schemaSet** da barra de ferramentas do Gerenciador de esquema XML.
 
- ![Pesquisa de palavra-chave do Gerenciador de esquema XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
  XML Schema Explorer procura o esquema definido pelo seguinte:
 
@@ -51,5 +51,5 @@ XML Schema Explorer permite que você procurar o esquema define as seguintes man
 ## <a name="clearing-search-results"></a>Resultados da pesquisa de esclarecimento
  Para limpar os resultados da pesquisa, clique no botão **x** no painel resultados do resumo da barra de ferramentas de pesquisa do Gerenciador de esquema XML.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

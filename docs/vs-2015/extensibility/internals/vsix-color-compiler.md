@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c92fb2ad45bc0fb09c7e9bd8e87db38c13a99736
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546738"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
@@ -52,7 +52,7 @@ A ferramenta de compilador de cores de extensão do Visual Studio é um aplicati
   
 |**Atributo**|**Definição**|  
 |-|-|  
-|Nome|Necessária O nome do tema|  
+|Name|Necessária O nome do tema|  
 |GUID|Necessária O GUID do tema (deve corresponder à formatação de GUID)|  
   
  Ao criar cores personalizadas para o Visual Studio, essas cores precisam ser definidas para os temas a seguir. Se não existir nenhuma cor para um tema específico, o Visual Studio tentará carregar as cores ausentes do tema claro.  
@@ -76,7 +76,7 @@ A ferramenta de compilador de cores de extensão do Visual Studio é um aplicati
     
 |**Atributo**|**Definição**|  
 |-|-|  
-|Nome|Necessária O nome da categoria|  
+|Name|Necessária O nome da categoria|  
 |GUID|Necessária O GUID da categoria (deve corresponder à formatação de GUID)|  
   
  **Cor**  
@@ -92,7 +92,7 @@ A ferramenta de compilador de cores de extensão do Visual Studio é um aplicati
   
 |**Atributo**|**Definição**|  
 |-|-|  
-|Nome|Necessária O nome da cor|  
+|Name|Necessária O nome da cor|  
   
  **Plano de fundo e/ou primeiro plano**  
   
@@ -105,7 +105,7 @@ A ferramenta de compilador de cores de extensão do Visual Studio é um aplicati
   
 |**Atributo**|**Definição**|  
 |-|-|  
-|Type|Necessária O tipo da cor. Pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválida ou não está definida.<br /><br /> *CT_RAW:* Um valor de ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
+|Tipo|Necessária O tipo da cor. Pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválida ou não está definida.<br /><br /> *CT_RAW:* Um valor de ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows de SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio de __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
 |Fonte|Necessária O valor da cor representada em hexadecimal|  
   
  Todos os valores compatíveis com a enumeração __VSCOLORTYPE são suportados pelo esquema no atributo Type. No entanto, recomendamos que você use apenas CT_RAW e CT_SYSCOLOR.  

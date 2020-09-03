@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295918"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do Administrador do Visual Studio
@@ -44,8 +44,8 @@ Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador 
 |------------------|--------------------------|----------------------|-----------------|  
 |Êxito|0x00000000 [0]|0x00000bc2 [3010]|Instalação bem-sucedida.|  
 |Bloquear|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se o único bloco a ser relatado for "Reinicialização Pendente", o valor retornado será o valor Reinicialização Incompleta Necessária (0x80048bc7).|  
-|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Quando o valor de reinicialização é retornado, o código de retorno é 1602.|  
-|Reinicialização incompleta necessária|{1&gt;N/A&lt;1}|0x80048bc7 [-2147185721]|A reinicialização é necessária antes de continuar a instalação.|  
+|Cancelar|0x00000642 [1602]|0x80048642 [-2147187134]|Quando o valor de reinicialização é retornado, o código de retorno é 1602.|  
+|Reinicialização incompleta necessária|N/D|0x80048bc7 [-2147185721]|A reinicialização é necessária antes de continuar a instalação.|  
 |Falha|0x00000643 [1603]|0x80048643 [-2147187133]|Quando o valor de reinicialização é retornado, o código de retorno é 1603.|  
   
 ## <a name="interactive-administrator-installer"></a>Instalador de administrador interativo  
@@ -69,8 +69,8 @@ Por padrão, a instalação do Visual Studio habilita os comentários do cliente
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Como instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
 |[Como criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
 |[Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto ao implantar em vários computadores.|  
 |[Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)|Fornece informações sobre como gerenciar instalações de ajuda local para ambientes de rede que têm ou não têm acesso à Internet.|  
-|[Instalar o Visual Studio](../install/install-visual-studio-2015.md)|Fornece instruções e links para tópicos que descrevem como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Instalar o Visual Studio](../install/install-visual-studio-2015.md)|Fornece instruções e links para tópicos que descrevem como instalar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

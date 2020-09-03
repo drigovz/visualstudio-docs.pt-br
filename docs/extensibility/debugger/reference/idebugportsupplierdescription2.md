@@ -11,34 +11,34 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724359"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Habilita [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] que a ui exiba o texto dentro da seção Informações de **transporte** da caixa de diálogo **Anexar ao processo.**
+Permite que a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário exiba texto dentro da seção **informações de transporte** da caixa de diálogo **anexar ao processo** .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplierDescription2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Esta interface é implementada por fornecedores portuários.
+ Essa interface é implementada por fornecedores de porta.
 
 ## <a name="methods"></a>Métodos
- A tabela a seguir `IDebugPortSupplierDescription2`mostra os métodos de .
+ A tabela a seguir mostra os métodos de `IDebugPortSupplierDescription2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera os metadados de descrição e descrição do fornecedor da porta.|
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Recupera os metadados de descrição e descrição para o fornecedor da porta.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

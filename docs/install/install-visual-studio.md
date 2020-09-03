@@ -21,10 +21,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 3f0d17fcaf856799ded82ebe684d671b358cb8df
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114265"
 ---
 # <a name="install-visual-studio"></a>Instalar o Visual Studio
@@ -170,7 +170,7 @@ Após a instalação do instalador, use-o para personalizar sua instalação sel
 
 ## <a name="step-5---choose-individual-components-optional"></a>Etapa 5 – escolher componentes individuais (opcional)
 
-Se você não quiser usar o recurso de cargas de trabalho para personalizar a instalação do Visual Studio, ou se quiser adicionar mais componentes do que as instalações de uma carga de trabalho, poderá fazer isso instalando ou adicionando componentes individuais da guia **componentes individuais** . escolha o que deseja e siga os prompts.
+Se você não quiser usar o recurso de cargas de trabalho para personalizar a instalação do Visual Studio ou se quiser adicionar mais componentes do que uma carga de trabalho é instalada, você pode fazer isso instalando ou adicionando componentes individuais da guia **componentes individuais** . Escolha o que você deseja e, em seguida, siga os prompts.
 
 ::: moniker range="vs-2017"
 

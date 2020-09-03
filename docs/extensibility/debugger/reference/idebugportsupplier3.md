@@ -13,46 +13,46 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724440"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-Essa interface permite que um chamador determine se um fornecedor de portas pode preservar portas (escrevendo-as em disco) entre invocações do depurador e, em seguida, obter uma lista dessas portas preservadas.
+Essa interface permite que um chamador determine se um fornecedor de porta pode preservar portas (gravando-as em disco) entre invocações do depurador e, em seguida, obter uma lista dessas portas preservadas.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier3 : IDebugPortSupplier2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Um fornecedor de porta personalizado implementa essa interface para suportar a persistência ou salvar informações da porta em disco. Esta interface deve ser implementada no mesmo objeto que a interface [IDebugPortSupplier2.](../../../extensibility/debugger/reference/idebugportsupplier2.md)
+ Um fornecedor de porta personalizado implementa essa interface para dar suporte à persistência ou ao salvamento de informações de porta em disco. Essa interface deve ser implementada no mesmo objeto que a interface [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Ligue para a `IDebugPortSupplier2` [QueryInterface](/cpp/atl/queryinterface) na interface para obter esta interface.
+ Chame [QueryInterface](/cpp/atl/queryinterface) na `IDebugPortSupplier2` interface para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
- Além dos métodos herdados da interface [IDebugPortSupplier2,](../../../extensibility/debugger/reference/idebugportsupplier2.md) esta interface suporta o seguinte:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Além dos métodos herdados da interface [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) , essa interface oferece suporte ao seguinte:
 
 |Método|Descrição|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retorna se o fornecedor de portas pode persistir portas (escrevendo-as em disco) entre invocações do depurador.|
-|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retorna um objeto que pode ser usado para enumerar todas as portas que foram escritas em disco por este fornecedor de portas.|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Retorna se o fornecedor da porta pode persistir portas (gravando-as no disco) entre invocações do depurador.|
+|[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Retorna um objeto que pode ser usado para enumerar por todas as portas que foram gravadas no disco por este fornecedor de porta.|
 
 ## <a name="remarks"></a>Comentários
- Se um fornecedor de portas pode persistir portas através de invocações, ele deve implementar esta interface. As portas devem ser carregadas quando o fornecedor da porta estiver instanciado e gravado em disco quando o fornecedor da porta for destruído.
+ Se um fornecedor de porta pode persistir portas entre invocações, ele deve implementar essa interface. As portas devem ser carregadas quando o fornecedor da porta for instanciado e gravado no disco quando o fornecedor da porta for destruído.
 
- Um mecanismo de depuração normalmente não interage com um fornecedor de porta e não terá uso para esta interface.
+ Um mecanismo de depuração normalmente não interage com um fornecedor de porta e não terá uso para essa interface.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

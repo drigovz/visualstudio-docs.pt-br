@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297397"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
@@ -67,11 +67,11 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 2. Na parte superior do relatório, selecione uma seção de um dos gráficos que mostra o problema que você deseja investigar. A seleção pode ser feita em até 3 segundos; seções mais longas serão truncadas no início.  
   
-    ![Postar&#45;coleção, selecione um intervalo para exibir detalhes](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Poste&#45;coleção, selecione um intervalo para exibir detalhes](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3. Na parte inferior do relatório, escolha o link **Exibir detalhes** na mensagem **... Clique aqui para exibir detalhes de uso de GPU para esse intervalo** para exibir uma linha do tempo detalhada da seleção.  
+3. Na parte inferior do relatório, escolha o link **Exibir detalhes** no... ** Clique aqui para exibir detalhes do uso de GPU** dessa mensagem de intervalo para exibir uma linha do tempo detalhada da sua seleção.  
   
-    ![Pós&#45;-coleção, com intervalo selecionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Postar&#45;coleção com o intervalo selecionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Isso abrirá um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar gargalos e oportunidades de aumento de paralelismo no código.  
   
@@ -80,7 +80,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  A parte inferior exibe uma listagem dos eventos de gráficos que ocorreram durante o período do relatório.  
   
- Esta é a janela **Relatório de Uso de GPU**:  
+ Veja a janela **relatório de uso da GPU** :  
   
  ![O relatório uso de GPU, com cronogramas de CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
@@ -88,26 +88,26 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  Para ajudá-lo a encontrar o que você está procurando, é possível filtrar o Relatório de Uso de GPU com base nos nomes do Processo, nas IDs do Thread e no nome do evento; além disso, você pode escolher a taxa de atualização de qual vídeo determina as linhas do VSync e classificar os eventos hierarquicamente, caso o aplicativo use a interface ID3DUserDefinedAnnotation para agrupar comandos de renderização.  
   
- Estes são mais detalhes:  
+ Aqui estão mais detalhes:  
   
 |Controle de filtro|Descrição|  
 |--------------------|-----------------|  
-|**Process**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|  
-|**Thread**|A ID do thread de seu interesse. Em um aplicativo com multi-thread, isso pode ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|  
-|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
-|**Filtrar**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|  
+|**Processo**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|  
+|**Processo**|A ID do thread de seu interesse. Em um aplicativo com multi-thread, isso pode ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|  
+|**Exibição**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
+|**Filter**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|  
 |**Classificação de Hierarquia**|Uma caixa de seleção que indica se as hierarquias de eventos – definidas por meio de marcadores do usuário – são preservadas ou ignoradas.|  
   
  A lista de eventos na parte inferior do Relatório de Uso de GPU exibe os detalhes de cada evento.  
   
 |Coluna|Descrição|  
 |------------|-----------------|  
-|**Nome do Evento**|O nome do evento de gráficos. Normalmente, um evento corresponde a um evento em uma linha do tempo do thread da CPU e a um evento em uma linha do tempo da GPU.<br /><br /> Os nomes de eventos podem ser “não atribuídos” se o Uso de GPU não pôde determinar o nome de um evento. Para obter mais informações, consulte a observação abaixo desta tabela.|  
+|**Nome do evento**|O nome do evento de gráficos. Normalmente, um evento corresponde a um evento em uma linha do tempo do thread da CPU e a um evento em uma linha do tempo da GPU.<br /><br /> Os nomes de eventos podem ser “não atribuídos” se o Uso de GPU não pôde determinar o nome de um evento. Para obter mais informações, consulte a observação abaixo desta tabela.|  
 |**Início da CPU (ns)**|A hora em que o evento foi iniciado na CPU com uma chamada a uma API do Direct3D. O tempo é medido em nanossegundos, relativo à hora de início do aplicativo.|  
 |**Início da GPU (ns)**|A hora em que o evento foi iniciado na GPU. O tempo é medido em nanossegundos, relativo à hora de início do aplicativo.|  
 |**Duração da GPU (ns)**|O tempo que o evento levou para ser concluído na GPU, em nanossegundos.|  
-|**Nome do Processo**|O nome do aplicativo do qual o evento foi originado.|  
-|**ID do Thread**|A ID do thread da qual o evento foi obtido.|  
+|**Nome do processo**|O nome do aplicativo do qual o evento foi originado.|  
+|**ID do thread**|A ID do thread da qual o evento foi obtido.|  
   
 > [!IMPORTANT]
 > O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como “não atribuídos”. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
@@ -130,18 +130,18 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  Ao adiar a coleta de informações de criação de perfil usando essa configuração, outro link ficará disponível na parte inferior da janela de ferramentas Uso de GPU quando o aplicativo for executado na ferramenta Uso de GPU. Para iniciar a coleta de informações de criação de perfil, escolha o link **Iniciar** na mensagem **Iniciar coleta de dados detalhados de Uso de GPU adicionais**.  
   
-## <a name="hwsupport"></a> Suporte de hardware e driver  
+## <a name="hardware-and-driver-support"></a><a name="hwsupport"></a> Suporte de hardware e driver  
  Há suporte para os seguintes hardware e drivers de GPU:  
   
-|Console|Descrição da GPU|Versão de driver necessária|  
+|Fornecedor|Descrição da GPU|Versão de driver necessária|  
 |------------|---------------------|-----------------------------|  
-|Intel®|Processadores Intel® Core da 4ª geração (“Haswell”)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|\- (usar os últimos drivers)|  
+|Intel®|Processadores Intel® Core da 4ª geração (“Haswell”)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|- (usar os últimos drivers)|  
 |AMD®|A maioria, a partir da AMD Radeon™ HD série 7000 (excluindo AMD Radeon™ HD 7350-7670)<br /><br /> Aceleradores de GPUs AMD Radeon™, AMD FirePro™ e AMD FirePro com a arquitetura GCN (Graphics Core Next).<br /><br /> APUs (Unidades de Processamento Acelerado) AMD® série E e AMD série A com a arquitetura GCN (Graphics Core Next) (“Kaveri”, “Kabini”, “Temash”, “Beema”, “Mullins”)|14.7 RC3 ou superior|  
 |NVIDIA®|A maioria, a partir da NVIDIA® GeForce® série 400.<br /><br /> Aceleradores de GPUs NVIDIA® GeForce®, NVIDIA Quadro® e NVIDIA® Tesla™ com a arquitetura Fermi™, Kepler™ ou Maxwell™.|343.37 ou superior|  
   
  No momento, não há suporte para configurações de GPU múltipla, como NVIDIA® SLI™ e AMD Crossfire™. Há suporte para a configuração de elementos gráficos híbridos, como NVIDIA® Optimus™ e AMD Enduro™.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Confira também  
   
 - [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   

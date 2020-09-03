@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801042"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Como: configurar a análise herdada para código gerenciado
@@ -97,6 +97,6 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos ao 
 
 5. Selecione o campo **conjunto de regras** de um projeto e, em seguida, selecione o nome do conjunto de regras que você deseja aplicar.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

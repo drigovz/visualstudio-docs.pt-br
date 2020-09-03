@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::SetValueAsReference | Microsoft Docs
+title: 'IDebugProperty2:: SetValueAsReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721259"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
-Define o valor desta propriedade para o valor da referência dada.
+Define o valor dessa propriedade como o valor da referência fornecida.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,28 +45,28 @@ int SetValueAsReference(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `rgpArgs`\
-[em] Uma série de argumentos para passar para o definidor de propriedade de código gerenciado. Se o definidor de propriedades não aceitar argumentos ou se este objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) não se referir a tal definidor de propriedade, `rgpArgs` deve ser um valor nulo. Este parâmetro é tipicamente um valor nulo.
+no Uma matriz de argumentos para passar para o setter de propriedade de código gerenciado. Se o setter da propriedade não usar argumentos ou se esse objeto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) não fizer referência a tal setter de propriedade, `rgpArgs` deverá ser um valor nulo. Esse parâmetro é normalmente um valor nulo.
 
 `dwArgCount`\
-[em] O número de argumentos na `rgpArgs` matriz.
+no O número de argumentos na `rgpArgs` matriz.
 
 `pValue`\
-[em] Uma referência, na forma de um objeto [IDebugReference2,](../../../extensibility/debugger/reference/idebugreference2.md) ao valor a ser usado para definir esta propriedade.
+no Uma referência, na forma de um objeto [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) , ao valor a ser usado para definir essa propriedade.
 
 `dwTimeout`\
-[em] Quanto tempo levar para definir o valor, em milissegundos. Um valor `INFINITE`típico é . Isso afeta o tempo que qualquer avaliação possível pode levar.
+no Quanto tempo levar para definir o valor, em milissegundos. Um valor típico é `INFINITE` . Isso afeta o período de tempo que qualquer avaliação possível pode tomar.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro, tipicamente um dos seguintes:
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro, normalmente um dos seguintes:
 
 |Erro|Descrição|
 |-----------|-----------------|
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|A definição do valor de uma referência não é suportada.|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|O valor não pode ser definido, pois esta propriedade se refere a um método.|
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Não há suporte para a definição do valor de uma referência.|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|O valor não pode ser definido, pois essa propriedade se refere a um método.|
 |`E_SETVALUE_VALUE_IS_READONLY`|O valor é somente leitura e não pode ser definido.|
-|`E_NOTIMPL`|O método não é implementado.|
+|`E_NOTIMPL`|O método não está implementado.|
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

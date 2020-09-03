@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: 'IDebugProperty3:: GetStringChars | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 693a29bc30ef206428713ace36275389de1b7f0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721087"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Recupera a string associada a esta propriedade e armazena-a em um buffer fornecido pelo usuário.
+Recupera a cadeia de caracteres associada a essa propriedade e a armazena em um buffer fornecido pelo usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,26 +43,26 @@ int GetStringChars(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `buflen`\
-[em] Número máximo de caracteres que o buffer fornecido pelo usuário pode conter.
+no Número máximo de caracteres que o buffer fornecido pelo usuário pode conter.
 
 `rgString`\
-[fora] Devolve a corda.
+fora Retorna a cadeia de caracteres.
 
- [C++ somente], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da string. Este buffer deve `buflen` ser pelo menos caracteres (não bytes) em tamanho.
+ [C++ Only], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da cadeia de caracteres. Esse buffer deve ter pelo menos `buflen` caracteres (não bytes) de tamanho.
 
 `pceltFetched`\
-[fora] Onde o número de caracteres realmente armazenados no buffer é devolvido. (Pode `NULL` estar em C++.)
+fora Em que o número de caracteres realmente armazenados no buffer é retornado. (Pode estar `NULL` em C++.)
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Em C++, deve-se tomar cuidado para garantir `buflen` que o buffer tenha pelo menos caracteres Unicode. Observe que um caractere Unicode tem 2 bytes de comprimento.
+Em C++, deve-se ter cuidado para garantir que o buffer tenha pelo menos `buflen` caracteres Unicode de comprimento. Observe que um caractere Unicode tem 2 bytes de comprimento.
 
 > [!NOTE]
-> Em C++, a seqüência retornada não inclui um caractere nulo final. Se dado, `pceltFetched` especificará o número de caracteres na seqüência.
+> Em C++, a cadeia de caracteres retornada não inclui um caractere nulo de terminação. Se for especificado, `pceltFetched` especificará o número de caracteres na cadeia de caracteres.
 
 ## <a name="example"></a>Exemplo
 

@@ -28,13 +28,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295609"
 ---
-# <a name="using-the-toolbox"></a>Usando a caixa de ferramentas
+# <a name="using-the-toolbox"></a>Usando a Caixa de Ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar a caixa de ferramentas para adicionar controles e outros itens ao seu projeto. Você pode arrastar e soltar diferentes controles na superfície do designer que você está usando, redimensionar e posicionar os controles.
@@ -58,9 +58,9 @@ Você pode usar a caixa de ferramentas para adicionar controles e outros itens a
 
 - **Classificar itens em ordem alfabética** – classifica os itens por nome.
 
-- **Redefinir barra de ferramentas** – restaura as configurações e itens padrão da caixa de ferramentas.
+- **Redefinir barra de ferramentas** – restaura as configurações de caixa de ferramentas e os itens padrão.
 
-- **Adicionar Guia** – adiciona uma nova guia da caixa de ferramentas.
+- **Adicionar guia** – adiciona uma nova guia da caixa de ferramentas.
 
 - **Mover para Cima** – move o item selecionado para cima.
 

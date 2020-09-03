@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093628"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
@@ -35,21 +35,21 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 - Executar um teste de carga.
 
-- Execute as etapas no [Passo a Passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classe C# simples que contém um projeto de teste de desempenho web e carga com alguns testes de unidade nele.
+- Execute as etapas descritas em [Walkthrough: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de teste de carga e desempenho da Web com alguns testes de unidade.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Criar um teste de carga que contém testes de unidade usando o Novo Assistente de Teste de Carga
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar o Novo assistente de teste de carga
 
-1. Certifique-se de ter instalado o componente **de ferramentas de teste de desempenho da Web e de carga** descrita em Criar um projeto de teste de [carga](../test/quickstart-create-a-load-test-project.md).
+1. Verifique se você instalou o componente de **ferramentas de teste de carga e desempenho da Web** descrito em [criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md).
 
-1. Abra a solução do Banco que você criou no [Passo a Passo: Criando e executando testes unitários para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1. Abra a solução de banco que você criou em [passo a passos: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 1. No **Gerenciador de Soluções**, abra o menu de atalho do nó da solução de Banco, escolha **Adicionar** e **Novo Projeto**.
 
      A caixa de diálogo **Adicionar Novo Projeto** é exibida.
 
-1. Na caixa de diálogo **Adicionar novo projeto,** expanda **o Visual C#** e escolha **Teste**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Escolha **OK**.
+1. Na caixa de diálogo **Adicionar novo projeto** , expanda **Visual C#** e escolha **testar**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Escolha **OK**.
 
      O projeto de teste de desempenho na Web e de carga BankLoadTest é adicionado à solução.
 
@@ -59,7 +59,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 1. A página **Bem-vindo** do **Novo Assistente de Teste de Carga** é a primeira página.
 
-1. Escolha **a seguir**.
+1. Escolha **Próxima**.
 
 ### <a name="to-edit-settings-for-load-test-scenario"></a>Para editar as configurações do cenário de teste de carga
 
@@ -86,13 +86,13 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 5. Defina **Contagem máxima de usuários** como 100 usuários.
 
-6. Escolha **a seguir**.
+6. Escolha **Próxima**.
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Para selecionar o modelo de combinação de testes para o cenário
 
-1. Em **Como a mistura de teste deve ser modelada, selecione**Com base no número total de **testes**.
+1. Em **como a combinação de testes deve ser modelada**, selecione **com base no número total de testes**.
 
-2. Escolha **a seguir**.
+2. Escolha **Próxima**.
 
 ### <a name="to-add-unit-tests-to-the-scenario"></a>Para adicionar testes de unidade ao cenário
 
@@ -100,9 +100,9 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 2. Escolha **Adicionar** para selecionar testes.
 
-3. Escolha os testes da unidade **CreditTest** listados no painel **Testes Disponíveis,** que lista todos os testes de desempenho da Web e testes unitários no projeto de teste de desempenho e carga da Web.
+3. Escolha os testes de unidade do **CreditTest** listados no painel **testes disponíveis** , que lista todos os testes de desempenho da Web e testes de unidade no projeto de teste de carga e desempenho na Web.
 
-4. Escolha a seta para adicionar o teste da unidade **CreditTest** ao painel **Testes selecionados.**
+4. Escolha a seta para adicionar o teste de unidade **CreditTest** ao painel **testes selecionados** .
 
 5. Repita as etapas 3 e 4 para os testes de unidade **DebitTest** e **FreezeAccountTest**.
 
@@ -112,7 +112,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 7. Mova o controle deslizante em **Distribuição** para **CreditTest** ligeiramente para a direita para ajustar a distribuição de teste. Observe que os outros controles deslizantes se movem para a esquerda automaticamente, de forma que a distribuição permaneça em 100%.
 
-8. Escolha **a seguir**.
+8. Escolha **Próxima**.
 
 ### <a name="to-select-network-mix-for-test-scenario"></a>Para selecionar a combinação de redes para o cenário de teste
 
@@ -120,11 +120,11 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
      Você pode adicionar mais tipos de rede. Use os controles deslizantes para ajustar a distribuição e a relevância do teste.
 
-2. Escolha **a seguir**.
+2. Escolha **Próxima**.
 
 ### <a name="to-specify-computers-to-monitor-with-counter-sets-during-load-test-run"></a>Para especificar computadores para monitorar com conjuntos de contadores durante a execução do teste de carga
 
-1. Escolha **a seguir**.
+1. Escolha **Próxima**.
 
      Para obter mais informações sobre conjuntos de contadores, confira [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 

@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093788"
 ---
 # <a name="sort-usings"></a>Classificar usos
@@ -26,16 +26,16 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O que é isso?** Classificar usos.
+**O que:** Classificar usando.
 
-**Quando:** Você quer `using` classificar diretivas no topo do seu arquivo para que eles estejam em ordem alfabética. 
+**Quando:** Você deseja classificar `using` as diretivas na parte superior do arquivo para que elas estejam em ordem alfabética. 
 
-**Por que:** Torna mais fácil encontrar uma diretiva de uso.
+**Por que:** Ele facilita a localização de uma diretiva de uso.
 
 ## <a name="how-to"></a>Como fazer
 
 1. Selecione **Editar** na barra de menus.
-2. Selecione **Intellisense** > **Sort Usings**.
+2. Selecione **Intellisense**  >  **classificação IntelliSense usando**.
 
    ![Classificar usos](media/sort-usings.png)
 

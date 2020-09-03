@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800938"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e do SharePoint no Visual Studio
@@ -82,7 +82,7 @@ ms.locfileid: "88800938"
 |Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre suplementos do SharePoint e soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Criar um suplemento do VSTO
- Crie um suplemento do VSTO para direcionar o Office 2007 ou o Office 2010, ou para estender o Office 2013 e o Office 2016 além do que é possível com os suplementos do Office. os suplementos do VSTO são executados somente na área de trabalho. Os usuários precisam instalar suplementos do VSTO, de modo que normalmente são mais difíceis de implantar e dar suporte ao.  No entanto, seu suplemento do VSTO pode ser integrado mais próximo ao Office. Por exemplo, ele pode adicionar controles à Faixa de Opções do Office e executar tarefas de automação avançadas como mesclar documentos ou modificar gráficos. Você pode aproveitar o .NET Framework e usar o C# e o Visual Basic para interagir com objetos do Office.
+ Crie um suplemento do VSTO para o Office 2007 ou o Office 2010 de destino ou estenda o Office 2013 e o Office 2016 além do que é possível com os suplementos do Office. Os suplementos do VSTO são executados somente na área de trabalho. Os usuários precisam instalar suplementos do VSTO, de modo que normalmente são mais difíceis de implantar e dar suporte ao.  No entanto, seu suplemento do VSTO pode ser integrado mais próximo ao Office. Por exemplo, ele pode adicionar controles à Faixa de Opções do Office e executar tarefas de automação avançadas como mesclar documentos ou modificar gráficos. Você pode aproveitar o .NET Framework e usar o C# e o Visual Basic para interagir com objetos do Office.
 
  Veja um exemplo do que um suplemento do VSTO pode fazer. Este suplemento do VSTO adiciona controles da faixa de, um painel de tarefas personalizado e uma caixa de diálogo ao PowerPoint.
 

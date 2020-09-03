@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74296095"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funcionalidades de Acessibilidade do Visual Studio
@@ -37,11 +37,11 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 > [!IMPORTANT]
 > As informações nesta seção somente são aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver obtido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha o pacote de software ou pode visitar a página [Fale Conosco do Suporte da Microsoft](https://support.microsoft.com/contactus/) e clicar no link **Localizar escritórios da Microsoft em todo o mundo** (na parte inferior da página). Esta página fornece uma lista de números de telefone e endereços da Microsoft para suporte aos serviços. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
 
- Para mais informações, consulte os seguintes tópicos:
+ Para obter mais informações, consulte estes tópicos:
 
 - [Como definir opções de acessibilidade IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
-- [Como usar o teclado de forma exclusiva](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Como: usar o teclado exclusivamente](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
 - [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
@@ -49,5 +49,5 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 - [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Produtos e serviços de acessibilidade da Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546712"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar a transformação de texto no processo de compilação
@@ -26,7 +26,7 @@ A [transformação de texto](../modeling/code-generation-and-t4-text-templates.m
 
 Há algumas diferenças em termos do que as tarefas de compilação podem fazer, dependendo do mecanismo de compilação que você usa. Quando você cria a solução no Visual Studio, um modelo de texto pode acessar a API do Visual Studio (EnvDTE) se o atributo [hostspecific = "true"](../modeling/t4-template-directive.md) estiver definido. Mas isso não é verdadeiro quando você cria a solução na linha de comando ou quando inicia uma compilação de servidor por meio do Visual Studio. Nesses casos, a compilação é executada pelo MSBuild e um host T4 diferente é usado. Isso significa que você não pode acessar itens como nomes de arquivo de projeto da mesma maneira quando cria um modelo de texto usando o MSBuild. No entanto, você pode [passar informações de ambiente em modelos de texto e processadores de diretiva usando parâmetros de compilação](#parameters).
 
-## <a name="configure-your-machines"></a><a name="buildserver"></a>Configurar seus computadores
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurar seus computadores
 
 Para habilitar tarefas de compilação em seu computador de desenvolvimento, instale o SDK de modelagem para Visual Studio.
 
@@ -220,7 +220,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a>Passar dados de contexto de compilação para os modelos
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Passar dados de contexto de compilação para os modelos
 
 Você pode definir valores de parâmetros no arquivo do projeto. Por exemplo, você pode passar Propriedades de [compilação](../msbuild/msbuild-properties.md) e [variáveis de ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -252,9 +252,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue`Obtém dados `T4ParameterValues` somente de quando você usa o MSBuild. Quando você transforma o modelo usando o Visual Studio, os parâmetros têm valores padrão.
+> `ResolveParameterValue` Obtém dados `T4ParameterValues` somente de quando você usa o MSBuild. Quando você transforma o modelo usando o Visual Studio, os parâmetros têm valores padrão.
 
-## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>Usar as propriedades do projeto no assembly e incluir diretivas
+## <a name="use-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usar as propriedades do projeto no assembly e incluir diretivas
 
 Macros do Visual Studio como **$ (SolutionDir)** não funcionam no MSBuild. Você pode usar as propriedades do projeto como alternativa.
 
@@ -283,7 +283,7 @@ Agora você pode usar sua propriedade de projeto no assembly e diretivas de incl
 
 Essas diretivas obtêm valores de T4parameterValues nos hosts do MSBuild e do Visual Studio.
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 **Por que desejo transformar modelos no servidor de compilação? Já transformamos modelos no Visual Studio antes de fazer check-in do meu código.**
 
@@ -303,13 +303,13 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 
 ::: moniker range="vs-2017"
 
-- Há uma boa orientação no modelo de MSbuild do T4 em`%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Há uma boa orientação no modelo de MSbuild do T4 em `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Há uma boa orientação no modelo de MSbuild do T4 em`%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Há uma boa orientação no modelo de MSbuild do T4 em `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

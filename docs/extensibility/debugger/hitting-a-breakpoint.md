@@ -1,5 +1,5 @@
 ---
-title: Acertando um Breakpoint | Microsoft Docs
+title: Atingir um ponto de interrupção | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738572"
 ---
 # <a name="hit-a-breakpoint"></a>Atingir um ponto de interrupção
-A seção a seguir descreve o processo quando o mecanismo de depuração (DE) atinge um ponto de ruptura durante a execução ou pisando:
+A seção a seguir descreve o processo quando o mecanismo de depuração (DE) atinge um ponto de interrupção durante a execução ou a depuração:
 
-## <a name="troubleshoot-a-hit-breakpoint"></a>Solucionar problemas de um ponto de ruptura de sucesso
+## <a name="troubleshoot-a-hit-breakpoint"></a>Solucionar um ponto de interrupção de clique
 
 1. O DE envia uma interface [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) como um **EVENT_SYNC_STOP**.
 
-2. O SDM (Session Debug Manager, gerenciador de depuração de sessão) chama [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obter o breakpoint que foi atingido.
+2. O SDM (Gerenciador de depuração de sessão) chama [IDebugBreakpointEvent2::: EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obter o ponto de interrupção que foi atingido.
 
 ## <a name="see-also"></a>Confira também
-- [Eventos de depurador de chamadas](../../extensibility/debugger/calling-debugger-events.md)
+- [Chamar eventos do depurador](../../extensibility/debugger/calling-debugger-events.md)

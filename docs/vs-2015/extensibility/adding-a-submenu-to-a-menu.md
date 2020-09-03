@@ -1,5 +1,5 @@
 ---
-title: Adicionando um Submenu a um Menu | Microsoft Docs
+title: Adicionando um submenu a um menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,29 +14,29 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184895"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Adicionando um submenu a um menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , mostrando como adicionar um submenu para o **TestMenu** menu.  
+Este tutorial se baseia na demonstração em [adicionando um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , mostrando como adicionar um submenu ao menu **TestMenu** .  
   
- Um submenu é um menu secundário que aparece em outro menu. Um submenu pode ser identificado pela seta que segue o seu nome. Clicando no nome faz com que o submenu e seus comandos a serem exibidos.  
+ Um submenu é um menu secundário que aparece em outro menu. Um submenu pode ser identificado pela seta que segue seu nome. Clicar no nome faz com que o submenu e seus comandos sejam exibidos.  
   
- Este passo a passo cria um submenu em um menu na barra de menus do Visual Studio e coloca um novo comando no submenu. O passo a passo também implementa o novo comando.  
+ Este tutorial cria um submenu em um menu na barra de menus do Visual Studio e coloca um novo comando no submenu. O Walkthrough também implementa o novo comando.  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="adding-a-submenu-to-a-menu"></a>Adicionando um submenu a um menu  
   
-1. Siga as etapas em [adicionar um Menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) para criar o item de menu e de projeto. As etapas neste passo a passo presumem que o nome do projeto VSIX é `TopLevelMenu`.  
+1. Siga as etapas em [adicionando um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) para criar o projeto e o item de menu. As etapas neste passo a passos pressupõem que o nome do projeto VSIX é `TopLevelMenu` .  
   
-2. Abra TestCommandPackage.vsct. No `<Symbols>` seção, adicione uma `<IDSymbol>` elemento para o submenu, um para o grupo de submenu e outro para o comando, tudo no `<GuidSymbol>` nó chamado "guidTopLevelMenuCmdSet". Esse é o mesmo nó que contém o `<IDSymbol>` elemento para o menu de nível superior.  
+2. Abra TestCommandPackage. vsct. Na `<Symbols>` seção, adicione um `<IDSymbol>` elemento para o submenu, um para o grupo de submenu e um para o comando, tudo no `<GuidSymbol>` nó chamado "guidTopLevelMenuCmdSet". Esse é o mesmo nó que contém o `<IDSymbol>` elemento para o menu de nível superior.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -44,7 +44,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>  
     ```  
   
-3. Adicionar submenu recém-criado para o `<Menus>` seção.  
+3. Adicione o submenu recém-criado à `<Menus>` seção.  
   
     ```xml  
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">  
@@ -56,9 +56,9 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
     </Menu>  
     ```  
   
-     O par de ID do GUID do pai Especifica o grupo de menu que foi gerado [adicionar um Menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), e é um filho do menu de nível superior.  
+     O par GUID/ID do pai especifica o grupo de menus que foi gerado na [adição de um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)e é um filho do menu de nível superior.  
   
-4. Adicione o grupo de menu definido na etapa 2 para o `<Groups>` seção e torná-lo um filho do submenu.  
+4. Adicione o grupo de menus definido na etapa 2 à `<Groups>` seção e torne-o um filho do submenu.  
   
     ```xml  
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">  
@@ -66,7 +66,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
     </Group>  
     ```  
   
-5. Adicione um novo `<Button>` elemento para o `<Buttons>` seção para definir o comando criado na etapa 2 como um item no submenu.  
+5. Adicione um novo `<Button>` elemento à `<Buttons>` seção para definir o comando criado na etapa 2 como um item no submenu.  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -81,7 +81,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
   
 6. Compile a solução e inicie a depuração. Você deve ver a instância experimental.  
   
-7. Clique em **TestMenu** para ver um submenu novo chamado **submenu**. Clique em **submenu** para abrir o submenu e ver um novo comando, **teste subcomando**. Observe que clicar em **teste subcomando** não faz nada.  
+7. Clique em **TestMenu** para ver um novo submenu chamado **submenu**. Clique em **submenu** para abrir o submenu e ver um novo comando, **testar subcomando**. Observe que clicar em **testar subcomando** não faz nada.  
   
 ## <a name="adding-a-command"></a>Adicionando um comando  
   
@@ -91,7 +91,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2. Adicione o subcomando. Localize o construtor de comando. Adicione as seguintes linhas imediatamente após a chamada para o `AddCommand` método.  
+2. Adicione o subcomando. Localize o construtor de comandos. Adicione as linhas a seguir logo após a chamada para o `AddCommand` método.  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
@@ -101,7 +101,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
   
     ```  
   
-     O `SubItemCallback` manipulador de comandos será definido posteriormente. Agora, o construtor deve ser assim:  
+     O `SubItemCallback` manipulador de comando será definido mais tarde. O Construtor agora deve ser assim:  
   
     ```csharp  
     private TestCommand(Package package)  
@@ -126,7 +126,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
                 }  
     ```  
   
-3. Adicione SubItemCallback(). Esse é o método que é chamado quando o comando novo no submenu é clicado.  
+3. Adicione SubItemCallback (). Esse é o método que é chamado quando o novo comando no submenu é clicado.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -154,8 +154,8 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
   
 4. Compile o projeto e comece a depuração. A instância experimental deve aparecer.  
   
-5. Sobre o **TestMenu** menu, clique em **submenu** e, em seguida, clique em **teste subcomando**. Uma caixa de mensagem deve aparecer e exibir o texto, "Teste comando dentro de TestCommand.SubItemCallback()".  
+5. No menu **TestMenu** , clique em **sub menu** e, em seguida, clique em **testar subcomando**. Uma caixa de mensagem deve aparecer e exibir o texto "comando de teste dentro de TestCommand. SubItemCallback ()".  
   
-## <a name="see-also"></a>Consulte também  
- [Adicionar um Menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Adicionando um menu à barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

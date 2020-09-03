@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546764"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chamar GC.SuppressFinalize corretamente
@@ -41,7 +41,7 @@ ms.locfileid: "85546764"
 - Um método chama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa algo diferente deste (eu em Visual Basic).
 
 ## <a name="rule-description"></a>Descrição da Regra
- O <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite que os usuários liberem recursos a qualquer momento antes que o objeto fique disponível para a coleta de lixo. Se o <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método for chamado, ele liberará os recursos do objeto. Isso torna a finalização desnecessária. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>deve chamar <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que o coletor de lixo não chame o finalizador do objeto.
+ O <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite que os usuários liberem recursos a qualquer momento antes que o objeto fique disponível para a coleta de lixo. Se o <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método for chamado, ele liberará os recursos do objeto. Isso torna a finalização desnecessária. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> deve chamar <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que o coletor de lixo não chame o finalizador do objeto.
 
  Para evitar que tipos derivados com finalizadores precisem reimplementar [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e para chamá-lo, os tipos não lacrados sem os finalizadores ainda devem chamar <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 

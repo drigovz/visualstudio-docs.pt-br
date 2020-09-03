@@ -12,14 +12,14 @@ ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850319"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: criar um controle de caixa de ferramentas que usa Windows Forms
-O modelo de controle de caixa de ferramentas de Windows Forms que está incluído na [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite criar controles de Windows Forms que são adicionados automaticamente à **caixa de ferramentas** quando a extensão é instalada. Este tópico mostra como usar o modelo para criar um controle de **caixa de ferramentas** que você pode distribuir para outros usuários..  
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como criar um controle de caixa de ferramentas que usa o Windows Forms
+O modelo de controle de caixa de ferramentas de Windows Forms que está incluído no [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite que você crie Windows Forms controles que são adicionados automaticamente à **caixa de ferramentas** quando a extensão é instalada. Este tópico mostra como usar o modelo para criar um controle de **caixa de ferramentas** que você pode distribuir para outros usuários..  
   
 > [!NOTE]
 > Para saber como baixar o SDK do Visual Studio, consulte [Visual Studio Extensibility Developer Center](https://msdn.microsoft.com/vsx/default.aspx) no site do MSDN.  
@@ -29,7 +29,7 @@ O modelo de controle de caixa de ferramentas de Windows Forms que está incluíd
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para criar um projeto de controle de caixa de ferramentas de Windows Forms  
   
-1. No menu **Arquivo**, clique em **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, clique em **Novo** e em **Projeto**.  
   
 2. Na caixa de diálogo **novo projeto** , em **modelos instalados**, clique no nó para sua linguagem de programação preferida e clique em **extensibilidade**. Na lista de tipos de projeto, selecione **Windows Forms controle caixa de ferramentas**.  
   
@@ -54,9 +54,9 @@ O modelo de controle de caixa de ferramentas de Windows Forms que está incluíd
   
 2. Na definição da classe parcial que implementa o controle, clique com o botão direito do mouse no nome da classe, clique em **Refactor**e, em seguida, clique em **renomear**. Altere o nome da classe para o nome que você deseja exibir na **caixa de ferramentas** quando o controle estiver instalado.  
   
-3. Imediatamente acima da definição de classe, na declaração de atributo `ProvideToolboxControl`, altere o valor do primeiro parâmetro para o nome do grupo de itens que hospedará o controle na **caixa de ferramentas**.  
+3. Imediatamente acima da definição de classe, na `ProvideToolboxControl` declaração de atributo, altere o valor do primeiro parâmetro para o nome do grupo de itens que hospedará o controle na **caixa de ferramentas**.  
   
-     O exemplo a seguir mostra o atributo `ProvideToolboxControl` e a definição de classe ajustada para um controle chamado `Counter` no grupo de itens `General`.  
+     O exemplo a seguir mostra o `ProvideToolboxControl` atributo e a definição de classe ajustada para um controle chamado `Counter` no `General` grupo de itens.  
   
      [!code-csharp[ToolboxControlWinForms#07](../snippets/csharp/VS_Snippets_VSSDK/toolboxcontrolwinforms/cs/toolboxcontrol.cs#07)]  
   
@@ -67,7 +67,7 @@ O modelo de controle de caixa de ferramentas de Windows Forms que está incluíd
   
 #### <a name="to-build-and-test-the-control"></a>Para compilar e testar o controle  
   
-1. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1}  
+1. Pressione F5.  
   
 2. Na nova instância do Visual Studio, crie um projeto de aplicativo Windows Forms.  
   
@@ -89,5 +89,5 @@ O modelo de controle de caixa de ferramentas de Windows Forms que está incluíd
   
      Se você carregar o arquivo no site da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , outros usuários poderão usar o **Gerenciador de extensões** no Visual Studio para localizar o controle e instalá-lo.  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte Também  
  [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)

@@ -13,26 +13,26 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295520"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No SDK de visualização e modelagem, você pode definir manipuladores de eventos de armazenamento para propagar alterações para recursos fora da loja, como variáveis de não armazenamento, arquivos, modelos em outras lojas ou outras extensões de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Os manipuladores de eventos de armazenamento são executados após o término da transação na qual o evento de disparo ocorreu. Eles também são executados em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de armazenamento, os eventos de armazenamento são mais úteis para atualizar os valores que estão fora do repositório. Ao contrário dos eventos do .NET, os manipuladores de eventos de armazenamento são registrados para escutar uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras de lidar com alterações, consulte [respondendo e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
+No SDK de visualização e modelagem, você pode definir manipuladores de eventos de armazenamento para propagar alterações para recursos fora da loja, como variáveis de não armazenamento, arquivos, modelos em outras lojas ou outras [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões. Os manipuladores de eventos de armazenamento são executados após o término da transação na qual o evento de disparo ocorreu. Eles também são executados em uma operação de desfazer ou refazer. Portanto, ao contrário das regras de armazenamento, os eventos de armazenamento são mais úteis para atualizar os valores que estão fora do repositório. Ao contrário dos eventos do .NET, os manipuladores de eventos de armazenamento são registrados para escutar uma classe: você não precisa registrar um manipulador separado para cada instância. Para obter mais informações sobre como escolher entre diferentes maneiras de lidar com alterações, consulte [respondendo e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
 
  A superfície gráfica e outros controles de interface do usuário são exemplos de recursos externos que podem ser tratados por eventos de armazenamento.
 
 ### <a name="to-define-a-store-event"></a>Para definir um evento de repositório
 
-1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Os tipos de evento usados com mais frequência são:
+1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Cada propriedade corresponde a um tipo de evento. Os tipos de evento usados com mais frequência são:
 
    - `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.
 
-   - ElementPropertyChanged – disparado quando o valor de uma propriedade de domínio `Normal` é alterado. O evento será disparado somente se os valores novos e antigos não forem iguais. O evento não pode ser aplicado a propriedades de armazenamento calculadas e personalizadas.
+   - ElementPropertyChanged – disparado quando o valor de uma `Normal` propriedade de domínio é alterado. O evento será disparado somente se os valores novos e antigos não forem iguais. O evento não pode ser aplicado a propriedades de armazenamento calculadas e personalizadas.
 
         Ele não pode ser aplicado às propriedades de função que correspondem aos links de relação. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.
 
@@ -40,9 +40,9 @@ No SDK de visualização e modelagem, você pode definir manipuladores de evento
 
 2. Adicione uma definição de classe parcial para _YourDsl_**DocData** em um arquivo de código separado no projeto **DslPackage** .
 
-3. Escreva o código do evento como um método, como no exemplo a seguir. Pode ser `static`, a menos que você queira acessar `DocData`.
+3. Escreva o código do evento como um método, como no exemplo a seguir. Pode ser `static` , a menos que você queira acessar `DocData` .
 
-4. Substitua `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, poderá registrá-los todos no mesmo local.
+4. Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, poderá registrá-los todos no mesmo local.
 
    O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.
 
@@ -175,7 +175,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Armazenar tipos de evento
  Cada tipo de evento corresponde a uma coleção em Store. EventManagerDirectory. Você pode adicionar ou remover manipuladores de eventos a qualquer momento, mas é comum adicioná-los quando o documento é carregado.
 
-|nome da propriedade de `EventManagerDirectory`|Executado quando|
+|`EventManagerDirectory` Nome da propriedade|Executado quando|
 |-------------------------------------------|-------------------|
 |ElementAdded|Uma instância de uma classe de domínio, relação de domínio, forma, conector ou diagrama é criada.|
 |ElementDeleted|Um elemento de modelo foi removido do diretório de elementos do repositório e não é mais a origem ou o destino de nenhuma relação. O elemento não é realmente excluído da memória, mas é retido no caso de um futuro desfazer.|
@@ -189,5 +189,5 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2:GetDescription | Microsoft Docs
+title: 'IDebugPortSupplierDescription2:: GetDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c2e99b55b89ef921c42fab582f65788923aa15c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724376"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Recupera os metadados de descrição e descrição do fornecedor da porta.
+Recupera os metadados de descrição e descrição para o fornecedor da porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ public int GetDescription(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pdwFlags`\
-[fora] Sinalizadores de metadados para a descrição.
+fora Sinalizadores de metadados para a descrição.
 
 `pbstrText`\
-[fora] Descrição do fornecedor portuário.
+fora Descrição do fornecedor da porta.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

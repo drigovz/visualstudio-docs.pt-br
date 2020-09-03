@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297659"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
@@ -50,7 +50,7 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
 - A intervenção ou saída de métodos pode se comportar incorretamente, especialmente em iteradores ou em instruções switch.  
   
-## <a name="reporting-errors"></a>Erros de relatório  
+## <a name="reporting-errors"></a>Relatório de erros  
  Ajude-nos a melhorar a qualidade das Ferramentas do Visual Studio para Unity enviando relatórios de erro quando ocorrerem falhas, congelamentos ou outros erros. Isso nos ajuda a investigar e corrigir problemas nas Ferramentas do Visual Studio para Unity. Obrigado!  
   
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Como relatar um erro quando o Visual Studio congela  
@@ -64,7 +64,7 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
 3. Anexe o depurador à instância congelada do Visual Studio. No diálogo **Anexar ao Processo**, selecione a instância congelada do Visual Studio na tabela **Processos Disponíveis** e, em seguida, escolha o botão **Anexar**.  
   
-4. Pause o Depurador. Na nova instância do Visual Studio, escolha **Depurar**, **Interromper Tudo** no menu principal ou pressione **Ctrl+Alt+Break**.  
+4. Pause o Depurador. Na nova instância do Visual Studio, no menu principal, escolha **depurar**, **interromper tudo** ou apenas pressionar **Ctrl + Alt + Break**.  
   
 5. Crie um despejo de thread. Na janela Comando, digite o comando a seguir e pressione **Enter**.  
   
@@ -74,4 +74,4 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
     Talvez seja necessário tornar a janela **Comando** visível primeiro. No Visual Studio, escolha **Exibir**, **Outras Janelas**, **janela Comando** no menu principal.  
   
-6. Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com), junto com uma descrição do que você estava fazendo quando o Visual Studio congelou.
+6. Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , juntamente com uma descrição do que você estava fazendo quando o Visual Studio ficou congelado.

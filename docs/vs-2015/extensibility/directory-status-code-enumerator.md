@@ -1,5 +1,5 @@
 ---
-title: Enumerador de código de Status de diretório | Microsoft Docs
+title: Enumerador de código de status de diretório | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185247"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumerador de código de status do diretório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O `SccDirStatus` enumerador contém valores constantes nomeados que especificam o estado de um diretório no sistema de controle de origem. Essa enumeração é usada pelo [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Essa foi introduzida na versão 1.2 do que a API de plug-in de controle do código-fonte.  
+O `SccDirStatus` enumerador contém valores constantes nomeados que especificam o estado de um diretório no sistema de controle do código-fonte. Essa enumeração é usada pelo [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Isso foi introduzido na versão 1,2 da API de plug-in de controle do código-fonte.  
   
-## <a name="syntax"></a>Sintaxe  
+## <a name="syntax"></a>Syntax  
   
 ```  
 enum SccDirStatus {  
@@ -36,17 +36,17 @@ enum SccDirStatus {
   
 ## <a name="members"></a>Membros  
  SCC_DIRSTATUS_INVALID  
- Não foi possível obter o status; Não confie nele.  
+ Não foi possível obter o status; Não confie nela.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Diretório não está sob controle do código-fonte.  
+ O diretório não está no controle do código-fonte.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Diretório está sob controle de origem.  
+ O diretório está sob controle do código-fonte.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Projeto correspondente a esse diretório está vazio.  
+ O projeto correspondente a este diretório está vazio.  
   
-## <a name="see-also"></a>Consulte também  
- [Plug-ins de controle de origem](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)   
  [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

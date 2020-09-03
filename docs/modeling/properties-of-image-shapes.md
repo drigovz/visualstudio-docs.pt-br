@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 13a9fc3c2d9c7f3f30f035eed036d2a9fb63d667
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520842"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
@@ -58,7 +58,7 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de imagem `none` ( `abstract` ou `sealed` ).|nenhum|
 |Forma da imagem base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome desta forma.|Nome atual|
+|Name|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|O local em que a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -69,7 +69,7 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Nome de exibição|O nome que será exibido no designer gerado para essa forma.|\<none>|
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este elemento.|\<none>|
-|Imagem|O caminho para o arquivo de imagem usado para esta forma.|\<none>|
+|Image|O caminho para o arquivo de imagem usado para esta forma.|\<none>|
 
 ## <a name="see-also"></a>Confira também
 
