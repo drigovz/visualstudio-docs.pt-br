@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2c83b1b8e85c7d1db016dfa568f71fda7fd8c17
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876054"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
@@ -31,7 +31,7 @@ O Designer de Fluxo de Trabalho inclui vários designers de atividade que você 
 ## <a name="related-sections"></a>Seções relacionadas
  Para outros tipos de designer de atividade, consulte os seguintes tópicos.
 
- [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md)
+ [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 

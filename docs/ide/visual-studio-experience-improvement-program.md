@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71693010"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
@@ -21,13 +21,13 @@ O VSCEIP (Programa de Aperfeiçoamento da Experiência do Usuário do Visual Stu
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]
-> As configurações de telemetria VSCEIP não se aplicam a 'Relatar um problema' no Visual Studio. Quando você reporta um problema, os registros são coletados e enviados para a Microsoft somente quando você fornece permissão clicando em 'Enviar'. Se você estiver interessado em gerenciar registros antes de enviar para 'Relatar um problema' consulte [Feedback Data Privacy](./developer-community-privacy.md) para obter mais detalhes.
+> As configurações de aceitação ou saída de telemetria do VSCEIP não se aplicam a ' relatar um problema ' no Visual Studio. Quando você relata um problema, os logs são coletados e enviados à Microsoft somente quando você fornece permissão clicando em ' enviar '. Se você estiver interessado em gerenciar logs antes de enviar para ' relatar um problema ', consulte a [privacidade dos dados de comentários](./developer-community-privacy.md) para obter mais detalhes.
 
 ## <a name="opt-in-or-out"></a>Aceitar ou recusar
 
 O VSCEIP está ativado por padrão. Você pode desligá-lo ou ativá-lo novamente seguindo estas instruções:
 
-1. No Visual Studio, escolha **Ajudar** > **enviar feedback**e, em seguida, selecione **Configurações**.
+1. No Visual Studio, escolha **ajuda**  >  **enviar comentários**e, em seguida, selecione **configurações**.
 
    A caixa de diálogo **Programa de Aperfeiçoamento da Experiência do Visual Studio** será aberta.
 
@@ -45,7 +45,7 @@ Chave do Registro e configurações relevantes:
 
 - Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- Quando a diretiva de grupo está ativada, chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- Quando Política de Grupo estiver habilitada, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Chave do Registro e configurações relevantes:
 
 - Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- Quando a diretiva de grupo está ativada, chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+- Quando Política de Grupo estiver habilitada, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
 
 ::: moniker-end
 
@@ -61,11 +61,11 @@ Entrada = **Optin**
 
 Valor = (DWORD)
 
-- **0** é optado por sair (desligue o VSCEIP)
-- **1** é optado (ligar o VSCEIP)
+- **0** é recusado (desative o VSCEIP)
+- **1** é aceito (ativar o VSCEIP)
 
 > [!CAUTION]
-> A edição incorreta do Registro poderá danificar seriamente o sistema. Antes de alterar o Registro, faça um backup dos dados importantes do computador. Você também pode usar a opção **de inicialização última configuração boa conhecida** se encontrar problemas após a aplicação de alterações manuais.
+> A edição incorreta do Registro pode causar danos graves ao sistema. Antes de alterar o Registro, faça backup de todos os dados importantes do computador. Você também pode usar a opção de inicialização **última configuração válida** se encontrar problemas após a aplicação das alterações manuais.
 
 Para obter mais informações sobre as informações coletadas, processadas ou transmitidas pelo VSCEIP, confira a [Política de privacidade da Microsoft](https://privacy.microsoft.com/privacystatement).
 
@@ -74,5 +74,5 @@ Para obter mais informações sobre as informações coletadas, processadas ou t
 * [Informações de diagnóstico coletadas pelo Visual Studio](diagnostic-data-collection.md)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Comunidade de desenvolvedores do Estúdio Visual](https://developercommunity.visualstudio.com/)
+* [Comunidade de desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
 * [Política de Privacidade da Microsoft](https://privacy.microsoft.com/privacystatement)

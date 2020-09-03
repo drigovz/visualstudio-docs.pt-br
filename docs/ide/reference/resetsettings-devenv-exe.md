@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593857"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -48,11 +48,11 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | Nome da coleção padrão | Especificador da coleção |
   | --- | --- |
   | **Geral** | `General` |
-  | **Javascript** | `JavaScript` |
+  | **JavaScript** | `JavaScript` |
   | **Visual Basic** | `VB` |
   | **Visual C #** | `CSharp` |
   | **Visual C++** | `VC` |
-  | **Desenvolvimento Web** | `Web` |
+  | **Desenvolvimento para a Web** | `Web` |
   | **Desenvolvimento para a Web (Somente Código)** | `WebCode` |
 
 ## <a name="remarks"></a>Comentários

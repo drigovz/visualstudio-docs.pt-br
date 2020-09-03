@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658968"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
@@ -85,6 +85,6 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
 
     5. Desfazer
 
-    6. Refazer
+    6. Refaz
 
 - Para remapear atalhos de teclado para comandos de edição de expressão dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] em [!INCLUDE[vs2010](../includes/vs2010-md.md)], edite os atalhos no escopo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . As alterações feitas no escopo do editor de texto não se aplicam automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).

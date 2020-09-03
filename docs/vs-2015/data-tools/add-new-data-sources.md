@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85c07ad7995bc614df4b988bb17fa8977452b5d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673062"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
@@ -44,21 +44,21 @@ No contexto do .NET Data Tools no Visual Studio, o termo *fonte de dados* refere
 > [!NOTE]
 > Se você não estiver usando recursos de vinculação de dados, DataSets, Entity Framework, LINQ to SQL, WCF ou SharePoint, o conceito de uma "fonte de dados" não se aplicará. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.
 
- Você cria e edita fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e inicie o assistente selecionando **projeto**  > **Adicionar nova fonte de dados** (descrita em mais detalhes posteriormente neste artigo).
+ Você cria e edita fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e inicie o assistente selecionando **projeto**  >  **Adicionar nova fonte de dados** (descrito em mais detalhes mais adiante neste artigo).
 
- ![Assistente de configuração de fonte de dados](../data-tools/media/data-source-configuration-wizard.png "Assistente para Configuração da Fonte de Dados")
+ ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png "Assistente para Configuração da Fonte de Dados")
 
- Depois de criar uma fonte de dados, ela aparecerá na janela de ferramentas de **fontes de dados** (Shift + Alt + D ou **Exibir**  >  outra**fonte de dados**do**Windows**  > ). Você pode arrastar uma fonte de dados da janela **fontes de dados** para um controle ou superfície de design de formulário. Isso faz com que o código clichê seja gerado — o código que exibe os dados originados no armazenamento de dados para o usuário. A ilustração a seguir mostra um conjunto de um DataSet que foi descartado em um formulário do Windows. Se você tiver selecionado F5 no aplicativo, os dados do banco de dado subjacente aparecerão nos controles do formulário.
+ Depois de criar uma fonte de dados, ela aparecerá na janela de ferramentas de **fontes de dados** (Shift + Alt + D ou **Exibir**  >  **outra**  >  **fonte de dados**do Windows). Você pode arrastar uma fonte de dados da janela **fontes de dados** para um controle ou superfície de design de formulário. Isso faz com que o código clichê seja gerado — o código que exibe os dados originados no armazenamento de dados para o usuário. A ilustração a seguir mostra um conjunto de um DataSet que foi descartado em um formulário do Windows. Se você tiver selecionado F5 no aplicativo, os dados do banco de dado subjacente aparecerão nos controles do formulário.
 
  ![Operação de arrastar da fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png "operação de arrastar da fonte de dados raddata")
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>Fonte de dados para um banco de dado ou um arquivo de banco
 
-### <a name="dataset"></a>Conjunto de dados
- Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração da fonte de dados** (**projeto**  > **Adicionar nova** fonte de dados) e escolha o tipo de fonte de dados do **banco** . Siga os prompts para especificar uma conexão de banco de dados nova ou existente ou um arquivo de banco de dados.
+### <a name="dataset"></a>Dataset
+ Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração da fonte de dados** (**projeto**  >  **Adicionar nova** fonte de dados) e escolha o tipo de fonte de dados do **banco** . Siga os prompts para especificar uma conexão de banco de dados nova ou existente ou um arquivo de banco de dados.
 
 ### <a name="entity-classes"></a>Classes de entidade
- Para criar um modelo de Entity Framework como uma fonte de dados, primeiro execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade (**projeto**  > **adicionar novo item**  > **ADO.NET modelo de dados de entidade**).
+ Para criar um modelo de Entity Framework como uma fonte de dados, primeiro execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade (**projeto**  >  **Adicionar novo item**  >  **ADO.NET modelo de dados de entidade**).
 
  ![Novo item de projeto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata novo item de projeto de modelo de Entity Framework")
 
@@ -97,10 +97,10 @@ No contexto do .NET Data Tools no Visual Studio, o termo *fonte de dados* refere
 > Talvez seja necessário compilar o projeto que contém os objetos antes que os objetos apareçam no modo de exibição de árvore.
 
 > [!NOTE]
-> Para dar suporte à vinculação de dados do tipo "arrastar e soltar", os objetos que implementam a interface <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> devem ter um construtor padrão. Caso contrário, o Visual Studio não poderá instanciar o objeto de fonte de dados e exibirá um erro quando você arrastar o item para a superfície de design.
+> Para dar suporte à vinculação de dados do tipo "arrastar e soltar", os objetos que implementam a <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> interface ou devem ter um construtor padrão. Caso contrário, o Visual Studio não poderá instanciar o objeto de fonte de dados e exibirá um erro quando você arrastar o item para a superfície de design.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Fonte de dados para uma lista do SharePoint
- Você pode criar uma fonte de dados de uma lista do SharePoint executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **SharePoint** . O SharePoint expõe dados por meio de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], portanto, criar uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. A seleção do item do **SharePoint** no **Assistente de configuração da fonte de dados** abre a caixa de diálogo **Adicionar referência de serviço** , em que você se conecta ao serviço de dados do SharePoint apontando para o servidor do SharePoint.  Isso requer o SDK do SharePoint.
+ Você pode criar uma fonte de dados de uma lista do SharePoint executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **SharePoint** . O SharePoint expõe dados por meio [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] do, portanto, criar uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. A seleção do item do **SharePoint** no **Assistente de configuração da fonte de dados** abre a caixa de diálogo **Adicionar referência de serviço** , em que você se conecta ao serviço de dados do SharePoint apontando para o servidor do SharePoint.  Isso requer o SDK do SharePoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

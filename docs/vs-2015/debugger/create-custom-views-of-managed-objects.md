@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578051"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Criar exibições personalizadas de objetos gerenciados
@@ -52,8 +52,8 @@ Você pode personalizar o modo como o Visual Studio exibe tipos de dados nas jan
   
  As exibições de tipo nativo também podem ser personalizadas para gravar um suplemento do avaliador de expressão. Para obter mais informações, consulte [exemplo de EEAddIn: depuração do avaliador de expressões de depurador](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Janelas Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
- [Aprimorando a depuração com os atributos de exibição do depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Janelas Watch e QuickWatch](../debugger/watch-and-quickwatch-windows.md)   
+ [Melhorando a depuração com os atributos de exibição do depurador](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

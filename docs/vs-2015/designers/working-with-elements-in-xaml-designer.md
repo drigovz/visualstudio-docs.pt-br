@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663983"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
@@ -22,7 +22,7 @@ ms.locfileid: "72663983"
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Adicionando um elemento a um layout
- *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Você pode usar vários elementos filho `Panel`, como [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.
+ *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Você pode usar vários  `Panel` elementos filho, como [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contêineres de layout e para posicionar e organizar os elementos em uma página.
 
  Por padrão, um painel `Grid` é usado como o contêiner de layout de nível superior em uma página ou formulário. Você pode adicionar painéis de layout, controles ou outros elementos dentro do layout de página de nível superior.
 
@@ -30,14 +30,14 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 - No Designer XAML, siga um destes procedimentos:
 
-  - Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).
+  - Clique duas vezes em um elemento na **caixa de ferramentas** (ou selecione um elemento na caixa de ferramentas e pressione Enter).
 
   - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.
 
   - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos
- Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos da janela Estrutura de Tópicos de Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** estiver definida para um elemento). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.
+ Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. Na parte inferior da lista de elementos na janela de estrutura de tópicos do documento está o elemento na frente (exceto quando a propriedade **ZIndex** de um elemento é definida). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.
 
 #### <a name="to-change-the-layering-order"></a>Para alterar a ordem das camadas
 
@@ -60,7 +60,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 ## <a name="changing-the-alignment-of-an-element"></a>Alterando o alinhamento de um elemento
  Você pode alinhar elementos na prancheta usando comandos de menu ou arrastando os elementos para guias de alinhamento.
 
- *Guia de alinhamento* é uma indicação visual que ajuda a alinhar um elemento em relação a outros elementos no aplicativo.
+ Um *SnapLine* é uma indicação visual que ajuda a alinhar um elemento em relação a outros elementos no aplicativo.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Para alinhar dois ou mais elementos usando comandos de menu
 
@@ -121,5 +121,5 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 - Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento, selecione **Layout**, **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout**, **Redefinir Tudo** para redefinir todas as propriedades de layout para o elemento).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

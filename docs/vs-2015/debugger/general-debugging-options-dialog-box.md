@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72573547"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
@@ -43,9 +43,9 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
  **Quebra quando as exceções cruzam AppDomain ou limites gerenciados/nativos**  
  Na depuração gerenciada ou de modo misto, o common language runtime pode capturar exceções que cruzem limites de domínio de aplicativo ou domínios gerenciados/nativos quando as seguintes condições forem verdadeiras:  
   
- 1 \) quando o código nativo chama o código gerenciado usando a interoperabilidade COM e o código gerenciado gera uma exceção. Consulte [introdução à interoperabilidade com](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1 \) quando o código nativo chama o código gerenciado usando a interoperabilidade com e o código gerenciado gera uma exceção. Consulte [introdução à interoperabilidade com](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2 \) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio 2 do aplicativo e o código no aplicativo domínio 2 gera uma exceção. Consulte [programação com domínios de aplicativo](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2 \) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio 2 do aplicativo, e o código no aplicativo domínio 2 gera uma exceção. Consulte [programação com domínios de aplicativo](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3 \) quando o código chama uma função usando reflexão, e a função gera uma exceção. Consulte [reflexão](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
@@ -69,7 +69,7 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
  **Habilitar Apenas Meu Código**  
  O depurador exibe e percorre as etapas do código do usuário ("meu código") apenas, ignorando o código do sistema e outro código que é otimizado ou que não tem símbolos de depuração.  
   
- **Mostrar todos os membros de objetos que não são de usuário em janelas de variáveis (somente Visual Basic)**  
+ **{1&amp;gt;Mostrar todos os membros dos objetos não usuário nas janelas de variáveis (somente Visual Basic)&amp;lt;1}**  
  Ativa a exibição de membros não-públicos em objetos que são de código não usuário (não "My Code").  
   
  **Avisar se não houver nenhum código de usuário na inicialização**  
@@ -84,7 +84,7 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
  **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**  
  Ativa a classificação automática da propriedades e as chamadas de função implícitas nas janelas de variáveis e na caixa de diálogo **QuickWatch**.  
   
- **Chamar função de conversão de cadeia de caracteres em objetosC# em janelas de variáveis (e somente JavaScript)**  
+ **Chamar função de conversão de cadeia de caracteres em objetos em janelas de variáveis (somente C# e JavaScript)**  
  Executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos em janelas de variáveis. Portanto, o resultado é exibido como uma cadeia de caracteres em vez do nome do tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Habilitar suporte a servidor de origem**  
@@ -99,7 +99,7 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
  **Permitir servidor de origem para assemblies de confiança parcial (somente gerenciado)**  
  Quando o suporte do servidor de origem é ativado, esta configuração substitui o comportamento padrão de não recuperar as fontes dos assemblies de confiança parcial.  
   
- **Realçar toda a linha para pontos de interrupção e a instrução atual**  
+ **{1&amp;gt;Realce a linha inteira para pontos de interrupção e a instrução atual&amp;lt;1}**  
  Quando o depurador realça um ponto de interrupção ou uma declaração atual, realça a linha inteira.  
   
  **Exigir que os arquivos de origem correspondam exatamente à versão original**  
@@ -136,17 +136,17 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
   
 - Você está usando uma linguagem .NET Framework diferente de C#, VB ou F#, que fornece seu próprio Avaliador de Expressão (incluindo C++/CLI).  
   
-- Você deseja habilitar editar e continuar para projetos C++ enquanto a depuração de modo misto.  
+- Você deseja habilitar editar e continuar para projetos C++ enquanto estiver depurando o modo misto.  
   
   Observe que escolher o modo Compatibilidade gerenciada desativa alguns recursos que são implementados somente no mecanismo de depuração padrão.  
   
   **Usar o modo de compatibilidade nativo**  
   Quando essa opção é selecionada, o depurador usa o depurador nativo do Visual Studio 2010 em vez do novo depurador nativo.  
   
-  Você deve usar essa opção quando estiver Depurando C++ o código .net, porque o novo mecanismo de depuração não oferece C++ suporte à avaliação de expressões .net. No entanto, habilitar o modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação do depurador atual para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos como `std::string` em projetos do Visual Studio 2015.  Use Visual Studio 2013 projetos para a experiência de depuração ideal nesses casos.  
+  Você deve usar essa opção quando estiver depurando o código .NET C++, pois o novo mecanismo de depuração não oferece suporte à avaliação de expressões .NET C++. No entanto, habilitar o modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação do depurador atual para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos, como `std::string` nos projetos do Visual Studio 2015.  Use Visual Studio 2013 projetos para a experiência de depuração ideal nesses casos.  
   
-  **Usar os avaliadores de expressão herdados C# e VB**  
-  O depurador usará os Visual Studio 2013 C#avaliadores de expressão/VB em vez dos avaliadores de expressão baseados em Roslyn do Visual Studio 2015.  
+  **Usar os avaliadores de expressão C# e VB herdados**  
+  O depurador usará os Visual Studio 2013 avaliadores de expressão C#/VB em vez dos avaliadores de expressão baseados em Roslyn do Visual Studio 2015.  
   
   **Avisar ao usar visualizadores de depurador personalizados contra processos potencialmente não seguros (somente gerenciados)**  
   O Visual Studio avisa quando você está usando um visualizador de depurador personalizado que está executando código no processo de depuração, pois ele poderia estar executando código não seguro.  
@@ -173,16 +173,16 @@ A página**ferramentas/opções/depuração/geral** permite definir as seguintes
   Você pode usar a funcionalidade Editar e continuar durante a depuração.  
   
   **Habilitar editar e continuar nativo**  
-  Você pode usar a funcionalidade Editar e continuar durante a depuração C++ de código nativo. Para obter mais informações, consulte [Editar e continuar ( C++Visual)](../debugger/edit-and-continue-visual-cpp.md).  
+  Você pode usar a funcionalidade Editar e continuar ao depurar código C++ nativo. Para obter mais informações, consulte [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
   **Aplicar alterações ao continuar (somente nativo)**  
   O Visual Studio compila e aplica automaticamente qualquer alteração de código pendente que você tenha feito ao continuar o processo de um estado de interrupção. Se não estiver selecionado, você poderá optar por aplicar as alterações usando o item "aplicar alterações de código" no menu Depurar.  
   
-  **Avisar sobre código obsoleto (somente nativo)**  
+  **Avisar sobre o código obsoleto (somente nativo)**  
   Obter avisos sobre código obsoleto.  
   
   **Permitir pré-compilação (somente nativo)**  
   A pré-compilação é permitida.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)

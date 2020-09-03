@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c885c0c983e6fafd69d55b3d68f8ed6e8ff2628c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387259"
 ---
 # <a name="control-of-execution"></a>Controle de execução
@@ -41,11 +41,11 @@ O mecanismo de depuração (DE) normalmente envia um dos seguintes eventos como 
   
 5. Se o usuário opta por entrar, acima ou fora de uma função, o IDE solicita a sessão de depuração para chamar o método do programa `Step` , passando-o para a unidade de etapa (instrução, instrução ou linha) e o tipo de etapa — ou seja, se deseja entrar, acima ou fora da função. Quando a etapa for concluída, o DE enviará um evento DE conclusão de etapa para a sessão de depuração, que é um evento de parada.  
   
-    -ou-  
+    - ou -  
   
     Se o usuário optar por continuar executando a partir do ponteiro de instrução atual, o IDE solicitará a sessão de depuração para chamar o método **Execute** do programa. O programa retoma a execução até encontrar a próxima condição de interrupção.  
   
-    -ou-  
+    - ou -  
   
     Se a sessão de depuração for ignorar um evento de interrupção específico, a sessão de depuração chamará o método **continue** do programa. Se o programa estava passando para cima ou para fora de uma função quando ele encontrou a condição de interrupção, ele continua a etapa.  
   

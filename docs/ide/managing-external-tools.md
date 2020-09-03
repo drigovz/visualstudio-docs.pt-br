@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591288"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
@@ -47,9 +47,9 @@ O menu **Ferramentas** contém vários comandos internos, incluindo:
 
 É possível adicionar uma ferramenta externa para aparecer no menu **Ferramentas**.
 
-1. Abra a caixa de diálogo **Ferramentas Externas** escolhendo **Ferramentas** > **Externas**.
+1. Abra a caixa de diálogo **Ferramentas externas** escolhendo **ferramentas**  >  **externas ferramentas**.
 
-1. Clique em **Adicionar** e preencha as informações. Por exemplo, a entrada a seguir faz com que o **Windows Explorer** abra no diretório do arquivo que você tem atualmente aberto no Visual Studio:
+1. Clique em **Adicionar** e preencha as informações. Por exemplo, a seguinte entrada faz com que o **Windows Explorer** Abra no diretório do arquivo que você abriu atualmente no Visual Studio:
 
    * Título: `Open File Location`
 
@@ -61,7 +61,7 @@ O menu **Ferramentas** contém vários comandos internos, incluindo:
 
 Esta é uma lista completa de argumentos que podem ser usados ao definir uma ferramenta externa:
 
-|Nome|Argumento|Descrição|
+|Name|Argumento|Descrição|
 |----------|--------------|-----------------|
 |Caminho de item|$(ItemPath)|O nome de arquivo completo do arquivo atual (unidade + caminho + nome de arquivo).|
 |Diretório do item|$(ItemDir)|O diretório do arquivo atual (unidade + caminho).|
@@ -81,8 +81,8 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|
 
 > [!NOTE]
-> A barra de status IDE exibe as variáveis **Linha atual** e **coluna atual** para indicar onde o ponto de inserção está localizado no Editor **de código**ativo . A **variável Texto atual** retorna o texto ou código selecionado nesse local.
+> A barra de status do IDE exibe a **linha atual** e as variáveis da **coluna atual** para indicar onde o ponto de inserção está localizado no **Editor de código**ativo. A variável de **texto atual** retorna o texto ou o código selecionado nesse local.
 
 ## <a name="see-also"></a>Confira também
 
-- [Ferramentas de compilação C/C++](/cpp/build/reference/c-cpp-build-tools)
+- [Ferramentas de Build do C/C++](/cpp/build/reference/c-cpp-build-tools)

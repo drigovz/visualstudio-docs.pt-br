@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3ad3c6b1c66ffa5ec512cfda857738d1219628e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606688"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Usando temas em fluxos de trabalho (legados)
@@ -29,5 +29,5 @@ Este tópico descreve como usar temas em [!INCLUDE[wf](../includes/wf-md.md)] ao
 
  Você pode selecionar temas personalizados padrão e salvos usando a [caixa de diálogo temas, designer de fluxo de trabalho, opções (Herdado)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md). Para abrir essa caixa de diálogo, clique em **Selecionar tema personalizado** no menu do **fluxo de trabalho** (ou clique com o botão direito do mouse na superfície de design do fluxo de trabalho e clique em **Selecionar tema personalizado**) e selecione a opção **Designer de fluxo de trabalho** . Selecione o tema desejado e clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo configuração de tema (herdada)](../workflow-designer/theme-configuration-dialog-box-legacy.md) [temas, designer de fluxo de trabalho, caixa de diálogo Opções (Herdado)](../workflow-designer/themes-workflow-designer-options-dialog-box-legacy.md) [usando o designer de fluxo de trabalho herdado](../workflow-designer/using-the-legacy-workflow-designer.md)

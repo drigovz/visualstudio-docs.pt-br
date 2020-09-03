@@ -1,5 +1,5 @@
 ---
-title: Soluções e Projetos
+title: Soluções e projetos
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661192"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
@@ -70,7 +70,7 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
  O diagrama a seguir mostra a relação entre projetos e soluções e os itens que eles contêm logicamente.
 
- ![Projetos e soluções do Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Projetos e soluções do Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, consulte [Criando modelos de item e de projeto](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 ## <a name="managing-projects-in-solution-explorer"></a>Gerenciamento de projetos no Gerenciador de Soluções
  Depois de criar um novo projeto, você usa o **Gerenciador de Soluções** para exibir e gerenciar projetos e soluções e seus itens associados. A ilustração a seguir mostra o Gerenciador de Servidores com uma solução em C# que contém dois projetos.
 
- ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -94,13 +94,13 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
 - [Propriedades do aplicativo](../ide/application-properties.md)
 
-- [Gerenciando Assinatura de Assembly e Manifesto](../ide/managing-assembly-and-manifest-signing.md)
+- [Gerenciando a assinatura de assembly e de manifesto](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Como especificar um ícone do aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Como especificar um ícone de aplicativo (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Direcionamento de uma versão específica do .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Visual Studio IDE](../ide/visual-studio-ide.md)

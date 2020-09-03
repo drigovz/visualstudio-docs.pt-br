@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Microsoft Docs
+title: 'IDebugProgram2:: WriteDump | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722729"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-Escreve um despejo em um arquivo.
+Grava um despejo em um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int WriteDump( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `DumpType`\
-[em] Um valor da enumeração [DUMPtype](../../../extensibility/debugger/reference/dumptype.md) que especifica o tipo de despejo, por exemplo, curto ou longo.
+no Um valor da enumeração [dumptype](../../../extensibility/debugger/reference/dumptype.md) que especifica o tipo de despejo, por exemplo, curto ou longo.
 
 `pszDumpUrl`\
-[em] A URL para escrever o dump to. Normalmente, isso é na `file://c:\path\filename.ext`forma de , mas pode ser qualquer URL válido.
+no A URL na qual gravar o despejo. Normalmente, isso está na forma de `file://c:\path\filename.ext` , mas pode ser qualquer URL válida.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Um dump de programa normalmente incluiria o quadro de pilha atual, a própria pilha, uma lista dos threads em execução no programa e, possivelmente, qualquer memória que o programa possui.
+ Um despejo de programa normalmente incluiria o quadro de pilhas atual, a pilha em si, uma lista dos threads em execução no programa e, possivelmente, qualquer memória que o programa possui.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

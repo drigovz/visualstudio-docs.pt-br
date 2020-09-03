@@ -10,10 +10,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286837"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Use os Azure Test Plans, em vez do Lab Management, para executar os testes automatizados
@@ -29,7 +29,7 @@ O Microsoft Test Manager e o Lab Management contam com uma definição de build 
 
 | Etapas | Com o build XAML | Em um build ou uma versão |
 |-------|----------------------|-----------------|
-| Identifique os computadores nos quais implantar o build e executar os testes. | Crie um ambiente de laboratório padrão no Microsoft Test Manager com esses computadores. | n/d |
+| Identifique os computadores nos quais implantar o build e executar os testes. | Crie um ambiente de laboratório padrão no Microsoft Test Manager com esses computadores. | N/D |
 | Identifique os testes a serem executados. | Crie um conjunto de testes no Microsoft Test Manager, crie casos de teste e associe a automação a cada caso de teste. Crie configurações do teste no Microsoft Test Manager identificando a função dos computadores no ambiente de laboratório em que os testes devem ser executados. | Crie um conjunto de testes automatizados no Microsoft Test Manager da mesma maneira se você planeja gerenciar seus testes por meio de planos de teste. Como alternativa, você poderá ignorar isso se desejar executar testes diretamente dos binários de teste produzidos por seus builds. Não é necessário criar as configurações de teste em nenhum dos casos. |
 | Automatize a implantação e o teste. | Crie uma definição de build XAML usando LabDefaultTemplate.*.xaml. Especifique o build, os conjuntos de teste e o ambiente de laboratório na definição de build. | Crie um [pipeline de lançamento ou de build](/azure/devops/pipelines/index?view=vsts) com um único ambiente. Execute o mesmo script de implantação (da definição de build XAML) usando a tarefa de linha de comando e execute testes automatizados usando as tarefas de Implantação do Agente de Teste e Executar Testes Funcionais. Especifique a lista de computadores e suas credenciais como entradas para essas tarefas. |
 

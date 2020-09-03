@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6b35fe7f1b55dde25ec896f230f66cef00d24eed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659064"
 ---
 # <a name="if-activity-designer"></a>Se designer de atividades
@@ -24,11 +24,11 @@ A atividade de <xref:System.Activities.Statements.If> avalia uma condição e ex
 ## <a name="if-properties-in-the-workflow-designer"></a>Se as propriedades em Designer de Fluxo de Trabalho
  A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:System.Activities.Statements.If> e descreve como usá-los no designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da propriedade|Obrigatório|Uso|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.If.Condition%2A>|verdadeiro|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A>, digite uma expressão de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] na caixa **condição** no designer de atividade **If** ou na grade de propriedades.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|A atividade a ser executada se a <xref:System.Activities.Statements.If.Condition%2A> for **falsa**. Para adicionar uma atividade que é executada pela ramificação de <xref:System.Activities.Statements.If.Else%2A>, descarte uma atividade da caixa de **ferramentas** no **else** , no **If** Activity Designer, com texto de dica "soltar atividade aqui".|
-|<xref:System.Activities.Statements.If.Then%2A>|False|A atividade a ser executada se a <xref:System.Activities.Statements.If.Condition%2A> for **verdadeira**. Para adicionar uma atividade que é executada pela ramificação <xref:System.Activities.Statements.If.Then%2A>, descarte uma atividade da caixa de **ferramentas** em **seguida** no designer de atividade **If** com texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.If.Condition%2A>|Verdadeiro|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A> , digite uma [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] expressão na caixa **condição** no designer de atividade **If** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.If.Else%2A>|Falso|A atividade a ser executada se o <xref:System.Activities.Statements.If.Condition%2A> for **falso**. Para adicionar uma atividade que é executada pela <xref:System.Activities.Statements.If.Else%2A> ramificação, descarte uma atividade da caixa de **ferramentas** no **Else** **caso** do designer de atividade, com texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.If.Then%2A>|Falso|A atividade a ser executada se o <xref:System.Activities.Statements.If.Condition%2A> for **verdadeiro**. Para adicionar uma atividade que é executada pela <xref:System.Activities.Statements.If.Then%2A> ramificação, descarte uma atividade da caixa de **ferramentas** no **em seguida** , no, **se** o designer de atividade com texto de dica "soltar atividade aqui".|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Fluxo de controle](../workflow-designer/control-flow-activity-designers.md) [paralelo](../workflow-designer/parallel-activity-designer.md) de [sequência](../workflow-designer/sequence-activity-designer.md)

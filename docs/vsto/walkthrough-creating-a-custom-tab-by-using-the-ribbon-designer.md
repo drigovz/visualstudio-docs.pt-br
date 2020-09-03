@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas'
+title: 'Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255519"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas
   Usando o designer de faixa de faixas, você pode criar uma guia personalizada e, em seguida, adicionar e posicionar controles nela.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Esta explicação passo a passo ilustra as seguintes tarefas:
+ Este passo a passo ilustra as seguintes tarefas:
 
 - [Criar painéis de ações](#BKMK_CreateActionsPanes).
 
@@ -38,10 +38,10 @@ ms.locfileid: "71255519"
 - [Oculte e mostre painéis de ações usando botões na guia personalizado](#BKMK_HideShowActionsPane).
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
- Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
+## <a name="prerequisites"></a>Pré-requisitos
+ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "71255519"
 
 ### <a name="to-create-an-excel-workbook-project"></a>Para criar um projeto de pasta de trabalho do Excel
 
-- Crie um projeto de pasta de trabalho do Excel com o nome **MyExcelRibbon**. Para obter mais informações, confira [Como: Crie projetos do Office no Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+- Crie um projeto de pasta de trabalho do Excel com o nome **MyExcelRibbon**. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      O Visual Studio abre a nova pasta de trabalho no designer e adiciona o projeto **MyExcelRibbon** ao **Gerenciador de soluções**.
 
-## <a name="BKMK_CreateActionsPanes"></a>Criar painéis de ações
+## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> Criar painéis de ações
  Adicione dois painéis de ações personalizadas ao projeto. Posteriormente, você adicionará botões que mostram e ocultarão esses painéis de ações na guia personalizado.
 
 ### <a name="to-create-actions-panes"></a>Para criar painéis de ações
@@ -73,14 +73,14 @@ ms.locfileid: "71255519"
 
 5. Repita as etapas 1 a 5 para criar um segundo painel e rótulo de ações. Defina a propriedade **texto** do segundo rótulo para o **painel Ações 2**.
 
-## <a name="BKMK_CreateCustomTab"></a>Criar uma guia personalizada
+## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> Criar uma guia personalizada
  Uma das diretrizes de design de aplicativos do Office é que os usuários sempre devem ter o controle da interface do usuário do aplicativo do Office. Para adicionar esse recurso aos painéis de ações, você pode adicionar botões que mostram e ocultam cada painel de ações de uma guia personalizada na faixa de faixas. Para criar uma guia personalizada, adicione um item **da faixa de Ribbon (designer visual)** ao projeto. O designer ajuda você a adicionar e posicionar controles, definir propriedades de controle e manipular eventos de controle.
 
 ### <a name="to-create-a-custom-tab"></a>Para criar uma guia personalizada
 
 1. No menu **Projeto**, escolha **Adicionar Novo Item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)** .
+2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)**.
 
 3. Altere o nome da nova faixa de forma para **MyRibbon**e escolha **Adicionar**.
 
@@ -108,8 +108,8 @@ ms.locfileid: "71255519"
 
 14. Defina a propriedade **rótulo** para **ocultar o painel Ações**.
 
-## <a name="BKMK_HideShowActionsPane"></a>Ocultar e mostrar painéis de ações usando botões na guia personalizada
- A última etapa é adicionar o código que responde ao usuário. Adicione manipuladores de eventos para <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> os eventos dos dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> evento do botão de alternância. Adicione código a esses manipuladores de eventos para habilitar a ocultação e a exibição dos painéis de ações.
+## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> Ocultar e mostrar painéis de ações usando botões na guia personalizada
+ A última etapa é adicionar o código que responde ao usuário. Adicione manipuladores de eventos para os <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos dos dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> evento do botão de alternância. Adicione código a esses manipuladores de eventos para habilitar a ocultação e a exibição dos painéis de ações.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Para ocultar e mostrar painéis de ações usando botões na guia personalizado
 
@@ -120,12 +120,12 @@ ms.locfileid: "71255519"
      [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
 
-3. Substitua o `MyRibbon_Load` método pelo código a seguir. Esse código adiciona os objetos do painel Ações à <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> coleção e oculta os objetos de exibição. O código C# Visual também anexa delegados a vários eventos de controle da faixa de faixas.
+3. Substitua o método `MyRibbon_Load` pelo seguinte código. Esse código adiciona os objetos do painel Ações à <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> coleção e oculta os objetos de exibição. O código do Visual C# também anexa delegados a vários eventos de controle da faixa de faixas.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
 
-4. Adicione os três métodos do manipulador de eventos a `MyRibbon` seguir à classe. Esses métodos manipulam <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> os eventos dos dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> evento do botão de alternância. Os manipuladores de eventos para button1 e Button2 mostram painéis de ações alternativas. O manipulador de eventos para toggleButton1 mostra e oculta o painel Ações ativas.
+4. Adicione os três métodos do manipulador de eventos a seguir à `MyRibbon` classe. Esses métodos manipulam os <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos dos dois botões e o <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> evento do botão de alternância. Os manipuladores de eventos para button1 e Button2 mostram painéis de ações alternativas. O manipulador de eventos para toggleButton1 mostra e oculta o painel Ações ativas.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
@@ -156,15 +156,15 @@ ms.locfileid: "71255519"
 
 - Adicione a interface do usuário baseada em contexto a qualquer personalização no nível do documento. Para obter mais informações, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md).
 
-- Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulário do Outlook.
+- Estenda um formulário padrão ou personalizado do Microsoft Office Outlook. Para obter mais informações, consulte [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 - [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
-- [Designer da faixa de opções](../vsto/ribbon-designer.md)
+- [Designer de faixa de das](../vsto/ribbon-designer.md)
 - [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Como: Introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Como: Alterar a posição de uma guia na faixa de posições](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
-- [Como: Adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Como alterar a posição de uma guia na faixa de forma](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Como: personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
+- [Como: adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)

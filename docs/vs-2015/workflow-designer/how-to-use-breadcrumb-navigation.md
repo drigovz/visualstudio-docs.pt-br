@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659151"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Como: Use a navegação de rastreamento
@@ -47,7 +47,7 @@ Existem três maneiras principais de alterar o conjunto de atividades que são e
 2. Depois de aplicar um estado expandir tudo ou recolher tudo, você pode clicar no botão **restaurar** que aparece para voltar ao exame do estado aplicado anteriormente a cada atividade.
 
     > [!WARNING]
-    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, tiver optado por expansão em vigor, a funcionalidade associada aos botões **expandir tudo** e **recolher tudo** será desabilitada no designer de **fluxograma** . [!INCLUDE[crabout](../includes/crabout-md.md)] o designer de **fluxograma** , consulte o tópico [fluxograma](../workflow-designer/flowchart-activity-designer.md) .
+    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart> , tiver optado por uma expansão em vigor, a funcionalidade associada aos botões **expandir tudo** e **recolher tudo** estará desabilitada no designer de **fluxograma** . [!INCLUDE[crabout](../includes/crabout-md.md)] o designer de **fluxogramas** , consulte o tópico [fluxograma](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > Expandir tudo também tem um efeito especial nos designers de atividade **switch** e **TryCatch** . Quando você clica em **expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicar em **restaurar** ou **recolher todos** retorna esses designers ao seu estado padrão, no qual você pode clicar em um caso/bloco individual para exibir seu conteúdo.

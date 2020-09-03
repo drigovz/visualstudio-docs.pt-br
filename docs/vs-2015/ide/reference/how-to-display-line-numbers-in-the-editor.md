@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602347"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
@@ -32,14 +32,14 @@ Você pode exibir ou ocultar a numeração de linhas em seu código.
 ## <a name="display-line-numbers-in-code"></a>Exibir números de linhas no código
  Os números de linha não são adicionados ao seu código, eles são apenas para referência. Se desejar que os números de linha sejam impressos, na caixa de diálogo **Imprimir**, marque a caixa de seleção **Incluir números de linha**.
 
-#### <a name="to-display-line-numbers-in-code"></a>Para exibir números de linhas no código
+#### <a name="to-display-line-numbers-in-code"></a>Para exibir números de linha em código
 
-1. Na barra de menus, escolha **Ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.
+1. Na barra de menus, escolha **ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.
 
-2. ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "|::ref1::|")
+2. ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")
 
 > [!NOTE]
 > Dependendo do seu idioma ou configurações, você pode precisar marcar a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções** para revelar o subnó **Todos os Idiomas**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizando a caixa de](../../ide/customizing-the-editor.md) [diálogo opções do editor de texto](../../ide/reference/text-editor-options-dialog-box.md) de editor [escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)

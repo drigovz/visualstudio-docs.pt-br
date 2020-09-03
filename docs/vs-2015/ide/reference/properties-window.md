@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662079"
 ---
 # <a name="properties-window"></a>Janela Propriedades
@@ -33,12 +33,12 @@ ms.locfileid: "72662079"
 
 Use esta janela para exibir e alterar as propriedades de tempo de design e os eventos dos objetos selecionados localizados em editores e designers. Você também pode usar a janela **Propriedades** para editar e exibir as propriedades do arquivo, do projeto e da solução. Você pode encontrar a janela **Propriedades** no menu **Exibir**. Também pode abri-la pressionando F4 ou digitando **Propriedades** na janela **Início Rápido**.
 
- A janela **Propriedades** exibe os diferentes tipos de campos de edição, dependendo das necessidades de uma determinada propriedade. Esses campos de edição incluem caixas de edição, listas suspensas e links a caixas de diálogo do editor personalizado. As propriedades mostradas em cinza são somente leitura.
+ A janela **Propriedades** exibe tipos diferentes de campos de edição, dependendo das necessidades de uma propriedade em particular. Esses campos de edição incluem caixas de edição, listas suspensas e links a caixas de diálogo do editor personalizado. As propriedades mostradas em cinza são somente leitura.
 
-## <a name="uielement-list"></a>Lista UIElement
- Nome do objeto lista o objeto ou objetos selecionados no momento. Somente objetos do editor ou do designer ativo estão visíveis. Quando você seleciona vários objetos, somente as propriedades comuns a todos os objetos selecionados são exibidas.
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário
+ Nome do objeto lista o objeto ou objetos selecionados no momento. Somente objetos do editor ou designer ativo ficam visíveis. Quando você seleciona vários objetos, somente as propriedades comuns a todos os objetos selecionados são exibidas.
 
- Categorizado lista todas as propriedades e valores de Propriedade do objeto selecionado, por categoria. Você pode recolher uma categoria para reduzir várias propriedades visíveis. Ao expandir ou recolher uma categoria, você vê um sinal de mais (+) ou menos (-) à esquerda do nome da categoria. As categorias são listadas em ordem alfabética.
+ Categorizado lista todas as propriedades e valores de Propriedade do objeto selecionado, por categoria. Você pode recolher uma categoria para reduzir o número de propriedades visíveis. Ao expandir ou recolher uma categoria, você vê um sinal de mais (+) ou de menos (-) à esquerda do nome da categoria. As categorias são listadas em ordem alfabética.
 
  Alfabeticamente classifica todas as propriedades e eventos de tempo de design de objetos selecionados. Para editar uma propriedade não esmaecida, clique na célula à direita e insira as alterações.
 
@@ -72,5 +72,5 @@ Use esta janela para exibir e alterar as propriedades de tempo de design e os ev
 
  A pesquisa fornece uma função de pesquisa para propriedades e eventos ao editar arquivos XAML no designer. A caixa de pesquisa responde a pesquisas de palavras parciais e atualiza os resultados da pesquisa à medida que você digita.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md) [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

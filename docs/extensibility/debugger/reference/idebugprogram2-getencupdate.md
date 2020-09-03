@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetENCUpdate | Microsoft Docs
+title: 'IDebugProgram2:: GetENCUpdate | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722840"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
-Este método recebe a atualização Editar e Continuar (ENC) para este programa. Um motor de depuração personalizado sempre retorna `E_NOTIMPL`.
+Esse método obtém a atualização do ENC (editar e continuar) para este programa. Um mecanismo de depuração personalizado sempre retorna `E_NOTIMPL` .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,15 +39,15 @@ int GetENCUpdate(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppUpdate`\
-[fora] Retorna uma interface interna que pode ser usada para atualizar este programa.
+fora Retorna uma interface interna que pode ser usada para atualizar este programa.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 > [!NOTE]
-> Um motor de depuração personalizado deve sempre retornar `E_NOTIMPL`.
+> Um mecanismo de depuração personalizado sempre deve retornar `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736890"
 ---
 # <a name="field_info"></a>FIELD_INFO
-Esta estrutura descreve uma variável local, parâmetro ou outro campo.
+Esta estrutura descreve uma variável local, um parâmetro ou outro campo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Membros
 `dwFields`\
-Uma combinação de bandeiras da enumeração [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica quais membros estão preenchidos.
+Uma combinação de sinalizadores da enumeração [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) que especifica quais membros são preenchidos.
 
 `bstrFullName`\
 O nome completo do campo.
@@ -61,17 +61,17 @@ O nome curto do campo.
 O tipo do campo.
 
 `dwModifiers`\
-Uma combinação de bandeiras da [enumeração FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que descreve o campo.
+Uma combinação de sinalizadores da enumeração [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) que descreve o campo.
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) onde é preenchida.
+Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) onde está preenchida.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: sh.h
+Cabeçalho: sh. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Namespace: Microsoft. VisualStudio. Debugger. Interop
 
-Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)

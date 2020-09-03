@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59f9fb1f628da6bc4d958fdca3843adebe61b798
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662138"
 ---
 # <a name="project-and-solution-file-types"></a>Projeto e tipos de arquivo de solução
@@ -45,12 +45,12 @@ ms.locfileid: "72662138"
 ## <a name="solution-files-sln-and-suo"></a>Os arquivos de solução (.sln e .suo)
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usam dois tipos de arquivos (.sln e .suo) para armazenar configurações específicas para soluções. Esses arquivos, conhecidos coletivamente como arquivos de solução, fornecem ao Solution Explorer as informações necessárias para exibir uma interface gráfica para gerenciar seus arquivos. Eles permitem que você se concentre em seus projetos e metas finais em vez de no próprio ambiente cada vez que você retornar para suas tarefas de desenvolvimento.
 
-|Extensão|Nome|DESCRIÇÃO|
+|Extensão|Name|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Mantém o controle de personalizações no nível de usuário feito no Visual Studio, como pontos de interrupção.|
 
-## <a name="project-files"></a>Os arquivos de projeto
+## <a name="project-files"></a>Arquivos de projeto
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usam uma diversidade de formatos de arquivos para armazenar informações específicas para projetos. Para obter mais informações, consulte os seguintes tópicos de Ajuda:
 
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
@@ -60,5 +60,5 @@ ms.locfileid: "72662138"
 
  [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)

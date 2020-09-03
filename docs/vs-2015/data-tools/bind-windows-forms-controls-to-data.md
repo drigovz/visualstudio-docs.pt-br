@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf93d96594b65b06670567e8c23cd83ccb7f1ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672972"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associar controles do Windows Forms a dados
@@ -36,7 +36,7 @@ Você pode associar fontes de dados a controles arrastando objetos da janela **f
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Associar a dados em um controle DataGridView
- Para DataGridView, a tabela inteira é associada a esse controle único. Quando você arrasta um DataGridView para o formulário, uma faixa de ferramenta para registros de navegação (<xref:System.Windows.Forms.BindingNavigator>) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes. Na ilustração a seguir, um TableAdaptermanager também é adicionado porque a tabela Customers tem uma relação com a tabela Orders. Essas variáveis são todas declaradas no código gerado automaticamente como membros privados na classe Form. O código gerado automaticamente para preencher o DataGridView está localizado no manipulador de eventos Form_Load. O código para salvar os dados para atualizar o banco de dado está localizado no manipulador de eventos Save do BindingNavigator. Você pode mover ou modificar esse código conforme necessário.
+ Para DataGridView, a tabela inteira é associada a esse controle único. Quando você arrasta um DataGridView para o formulário, uma faixa de ferramenta para os registros de navegação ( <xref:System.Windows.Forms.BindingNavigator> ) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), o TableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparece na bandeja do componente. Na ilustração a seguir, um TableAdaptermanager também é adicionado porque a tabela Customers tem uma relação com a tabela Orders. Essas variáveis são todas declaradas no código gerado automaticamente como membros privados na classe Form. O código gerado automaticamente para preencher o DataGridView está localizado no manipulador de eventos form_load. O código para salvar os dados para atualizar o banco de dado está localizado no manipulador de eventos Save do BindingNavigator. Você pode mover ou modificar esse código conforme necessário.
 
  ![GridView com BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView com BindingNavigator")
 
@@ -46,7 +46,7 @@ Você pode associar fontes de dados a controles arrastando objetos da janela **f
 
  Se os controles de que seu aplicativo precisa não estiverem disponíveis na janela **fontes de dados** , você poderá adicionar controles. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
- Você também pode arrastar itens da janela **fontes de dados** para controles que já estão em um formulário para associar o controle aos dados. Um controle que já está associado a dados tem suas associações de dados redefinidas para o item arrastado mais recentemente para ele. Para serem destinos de destino válidos, os controles devem ser capazes de exibir o tipo de dados subjacente do item arrastado para ele na janela **fontes de dados** . Por exemplo, não é válido arrastar um item que tem um tipo de dados de <xref:System.DateTime> para um <xref:System.Windows.Forms.CheckBox>, porque o <xref:System.Windows.Forms.CheckBox> não é capaz de exibir uma data.
+ Você também pode arrastar itens da janela **fontes de dados** para controles que já estão em um formulário para associar o controle aos dados. Um controle que já está associado a dados tem suas associações de dados redefinidas para o item arrastado mais recentemente para ele. Para serem destinos de destino válidos, os controles devem ser capazes de exibir o tipo de dados subjacente do item arrastado para ele na janela **fontes de dados** . Por exemplo, não é válido arrastar um item que tenha um tipo de dados <xref:System.DateTime> para um <xref:System.Windows.Forms.CheckBox> , porque o <xref:System.Windows.Forms.CheckBox> não é capaz de exibir uma data.
 
 ## <a name="bind-to--data-in-individual-controls"></a>Associar a dados em controles individuais
  Quando você associa uma fonte de dados a "detalhes", cada coluna no conjunto é associada a um controle separado.
@@ -62,5 +62,5 @@ Você pode associar fontes de dados a controles arrastando objetos da janela **f
 
  Observe também que cada controle tem uma marca inteligente. Essa marca permite personalizações que se aplicam somente ao controle.
 
-## <a name="see-also"></a>Consulte também
- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

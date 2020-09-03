@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 245b453a3020e79b924cb8058ff392bd59673402
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662127"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Soluções e Projetos, caixa de diálogo Opções
@@ -30,9 +30,9 @@ Define o caminho padrão das pastas do projeto [!INCLUDE[vsprvs](../../includes/
 ## <a name="settings"></a>Configurações
  **Local dos projetos** Define o local padrão onde novos projetos e pastas de solução e diretórios são criados. Várias caixas de diálogo também usam o local definido nessa opção para os pontos iniciais da pasta. Por exemplo, a caixa de diálogo Abrir Projeto usa esse local para o atalho Meus Projetos.
 
- **Local dos modelos de projeto do usuário** Define o local padrão que é usado pela caixa de diálogo **novo projeto** para criar a lista de **meus modelos**. Para obter mais informações, consulte [Como localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Local dos modelos de projeto do usuário** Define o local padrão que é usado pela caixa de diálogo **novo projeto** para criar a lista de **meus modelos**. Para obter mais informações, consulte [como localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
- **Local dos modelos de item de usuário** Define o local padrão que é usado pela caixa de diálogo **Adicionar novo item** para criar a lista de **meus modelos**. Para obter mais informações, consulte [Como localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+ **Local dos modelos de item de usuário** Define o local padrão que é usado pela caixa de diálogo **Adicionar novo item** para criar a lista de **meus modelos**. Para obter mais informações, consulte [como localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
  **Sempre mostrar lista de erros se a compilação for concluída com erros** Abre a janela **lista de erros** na conclusão da compilação, somente se um projeto não for compilado. Os erros que ocorrem durante o processo de build são exibidos. Quando essa opção estiver desmarcada, os erros ainda ocorrerão, mas a janela não será aberta quando o build for concluído. Essa opção é habilitada por padrão.
 
@@ -52,5 +52,5 @@ Define o caminho padrão das pastas do projeto [!INCLUDE[vsprvs](../../includes/
 
  **Solicitar renomeação simbólica ao renomear arquivos** Quando selecionado, exibe uma caixa de mensagem perguntando se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] também deve renomear todas as referências no projeto para o elemento de código.
 
-## <a name="see-also"></a>Consulte também
- [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+## <a name="see-also"></a>Consulte Também
+ [Caixa de diálogo opções, projetos e soluções, compilar e executar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

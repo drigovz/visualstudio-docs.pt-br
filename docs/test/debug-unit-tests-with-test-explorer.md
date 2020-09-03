@@ -1,5 +1,5 @@
 ---
-title: Depurar testes de unidade com o Gerenciador de testes
+title: Depurar testes de unidade com o Gerenciador de Testes
 description: Saiba como depurar testes de unidade com o Gerenciador de testes no Visual Studio.
 ms.date: 07/14/2020
 ms.topic: how-to
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86393444"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Depurar e analisar testes de unidade com o Gerenciador de testes

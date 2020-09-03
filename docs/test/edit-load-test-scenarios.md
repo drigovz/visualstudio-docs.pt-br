@@ -11,10 +11,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593233"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
@@ -55,7 +55,7 @@ Um cenário tem várias outras propriedades que você pode editar usando o **Edi
 |**Selecionar a combinação de navegadores da Web apropriada para seu cenário:** usando a combinação de navegadores, é possível simular a carga da Web de modo mais realista em um cenário de teste de carga. A carga é gerada usando uma combinação heterogênea de navegadores em vez de um único navegador. Você cria uma melhor aproximação dos navegadores que serão usados com seus aplicativos.|-   [Especificar tipos de navegadores da Web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Configurar as configurações de iteração de teste para seu cenário:** é possível editar um cenário de teste de carga para definir as configurações de iteração de teste usando o Editor de Teste de Carga e a janela Propriedades. Por padrão, um cenário é definido sem iterações máximas de teste. Você tem a opção de configurar o número máximo de iterações no cenário e duração da pausa entre elas.|-   [Configurar iterações de teste para cenários](../test/configure-test-iterations-in-a-load-test-scenario.md)|
 |**Configurar as configurações de atraso para seu cenário:** usando o **Editor de Teste de Carga** e a janela **Propriedades**, é possível especificar um atraso antes de iniciar um cenário em um teste de carga. Um exemplo de quando você talvez queira usar a propriedade **Atrasar tempo de início** é se precisar de um cenário para começar a produzir itens consumidos por outro cenário. Você pode atrasar o cenário de consumo para habilitar o cenário de produção a fim de popular alguns dados.|-   [Configurar atrasos de início do cenário](../test/configure-scenario-start-delays.md)|
-|**Especificar computadores remotos para usar em um cenário de teste de carga:** depois de criar um teste de carga, você pode editar as propriedades do seu cenário de teste de carga para indicar que agentes de teste você deseja incluir. Para obter mais informações, consulte [controladores de teste e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).|-   [Como especificar agentes de teste para usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
+|**Especificar computadores remotos para usar em um cenário de teste de carga:** depois de criar um teste de carga, você pode editar as propriedades do seu cenário de teste de carga para indicar que agentes de teste você deseja incluir. Para obter mais informações, consulte [Test Controllers and Test Agents](configure-test-agents-and-controllers-for-load-tests.md).|-   [Como especificar agentes de teste para usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
 ## <a name="see-also"></a>Confira também
 

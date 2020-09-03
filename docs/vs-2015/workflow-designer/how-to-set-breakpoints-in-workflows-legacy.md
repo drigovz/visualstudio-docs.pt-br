@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603589"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Como: Definir pontos de interrupção em fluxos de trabalho (o legados)
@@ -49,10 +49,10 @@ Este tópico descreve como definir pontos de interrupção na construção de ap
 
      A caixa de diálogo **novo ponto de interrupção** é aberta.
 
-3. Especifique o nome de uma atividade na caixa de texto de **função** usando esta sintaxe: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. Especifique o nome de uma atividade na caixa de texto de **função** usando esta sintaxe: `QualifiedActivityId[:[FullClassName][:InstanceId]]` .
 
     > [!NOTE]
-    > Opcionalmente, em vez de usar o nome da atividade na caixa de texto de **função** , você pode definir um ponto de interrupção especificando o caminho absoluto da atividade de fluxo de trabalho. Por exemplo, suponha que você tenha uma solução de fluxo de trabalho denominada **WorkflowConsoleApplication1** e um fluxo de trabalho na solução denominada **Workflow1** que usa uma atividade chamada **Delay1**. Você pode usar o nome da atividade **Delay1** ou especificar o caminho como **Delay1: WorkflowConsoleApplication1. Workflow1** ou **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}** .
+    > Opcionalmente, em vez de usar o nome da atividade na caixa de texto de **função** , você pode definir um ponto de interrupção especificando o caminho absoluto da atividade de fluxo de trabalho. Por exemplo, suponha que você tenha uma solução de fluxo de trabalho denominada **WorkflowConsoleApplication1** e um fluxo de trabalho na solução denominada **Workflow1** que usa uma atividade chamada **Delay1**. Você pode usar o nome da atividade **Delay1** ou especificar o caminho como **Delay1: WorkflowConsoleApplication1. Workflow1** ou **Delay1: WorkflowConsoleApplication1. Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**.
 
 4. Marque a caixa de seleção **usar IntelliSense** para verificar o nome da função.
 
@@ -62,5 +62,5 @@ Este tópico descreve como definir pontos de interrupção na construção de ap
 
 6. Clique em **OK**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Depuração de fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md) [que invocam o depurador do Visual Studio para Windows Workflow Foundation (Herdado)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)

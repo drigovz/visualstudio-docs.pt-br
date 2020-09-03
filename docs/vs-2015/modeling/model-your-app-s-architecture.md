@@ -1,5 +1,5 @@
 ---
-title: Modele a&#39;arquitetura do seu aplicativo | Microsoft Docs
+title: Modele a arquitetura de seu aplicativo&#39;s | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41dbb7b996c32af10010694935cbd3660b462f73
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609645"
 ---
-# <a name="model-your-app39s-architecture"></a>Modele a&#39;arquitetura do seu aplicativo
+# <a name="model-your-app39s-architecture"></a>Modele a arquitetura de seu aplicativo&#39;s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às necessidades de seus usuários, você pode criar modelos no Visual Studio como parte da sua descrição da estrutura geral e do comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos ajudam você a entender a arquitetura existente, a discutir alterações e a comunicar suas intenções claramente.
@@ -36,7 +36,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - [Padrões de design](#Patterns) e convenções usadas em todos os designs dos componentes. Um padrão descreve uma abordagem específica para atingir uma meta de programação. Usando os mesmos padrões em um design, sua equipe pode reduzir o custo de fazer alterações e desenvolver novos softwares.
 
-## <a name="Structure"></a>Design de alto nível
+## <a name="high-level-design"></a><a name="Structure"></a> Design de alto nível
  Um design de alto nível descreve os principais componentes do seu sistema e como eles interagem entre si para atingir as metas do design. As atividades na lista a seguir estão envolvidas no desenvolvimento do design de alto nível, embora não necessariamente em uma sequência específica.
 
  Se você estiver atualizando o código existente, poderá começar descrevendo os principais componentes. Verifique se você entendeu as alterações nos requisitos do usuário e depois adicione ou modifique as interações entre os componentes. Se você estiver desenvolvendo um novo sistema, comece compreendendo os principais recursos das necessidades dos usuários. Você pode explorar sequências de interações para os principais casos de uso e, em seguida, consolidar as sequências em um design de componente.
@@ -53,7 +53,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - [Modelo de dados dos componentes e interfaces](#Data). Você pode desenhar diagramas de classe para descrever as informações que são passadas entre componentes e armazenadas dentro dos componentes.
 
-## <a name="Requirements"></a>Noções básicas sobre os requisitos
+## <a name="understanding-the-requirements"></a><a name="Requirements"></a> Noções básicas sobre os requisitos
  O design de alto nível de um aplicativo completo é desenvolvido com mais eficiência junto com um modelo de requisitos ou outra descrição das necessidades dos usuários. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário de modelo](../modeling/model-user-requirements.md).
 
  Se o sistema que você está desenvolvendo for um componente em um sistema maior, parte ou todos os seus requisitos poderão ser incorporados em interfaces programáticas.
@@ -78,7 +78,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
   A quantidade de detalhes que você deve colocar em requisitos ou em um modelo de arquitetura depende da escala do projeto e do tamanho e da distribuição da equipe. Uma pequena equipe em um pequeno projeto pode não ultrapassar o esboço de um diagrama de classe dos conceitos de negócios e de alguns padrões de design; um projeto grande distribuído em mais de uma região precisaria de maneira muito mais detalhada.
 
-## <a name="BigDecisions"></a>Padrões de arquitetura
+## <a name="architectural-patterns"></a><a name="BigDecisions"></a> Padrões de arquitetura
  No início de um desenvolvimento, você precisa escolher as principais tecnologias e elementos dos quais o design depende. As áreas nas quais essas opções devem ser feitas incluem o seguinte:
 
 - Opções de tecnologia base, como a escolha entre um banco de dados e um sistema de arquivos, e a escolha entre um aplicativo em rede e um cliente Web, e assim por diante.
@@ -91,7 +91,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
   As seleções que você faz afetam a maneira como você usa e interpreta o modelo de arquitetura. Por exemplo, em um sistema que usa um banco de dados, as associações em um diagrama de classe podem representar relações ou chaves estrangeiras no banco de dados, enquanto em um sistema baseado em arquivos XML, as associações podem indicar referências cruzadas que usam XPath. Em um sistema distribuído, as mensagens em um diagrama de sequência podem representar mensagens em uma conexão; em um aplicativo independente, eles podem representar chamadas de função.
 
-## <a name="Components"></a>Componentes e suas interfaces
+## <a name="components-and-their-interfaces"></a><a name="Components"></a> Componentes e suas interfaces
  As principais recomendações desta seção são as seguintes:
 
 - Crie diagramas de componentes para mostrar as partes principais do seu sistema.
@@ -119,7 +119,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - Núcleo de negócios. Contém classes baseadas em classes no modelo de requisitos, implementa as principais operações e impõe restrições de negócios.
 
-- Banco. Armazena os objetos comerciais.
+- Banco de dados. Armazena os objetos comerciais.
 
 - Log e tratamento de erros de componentes.
 
@@ -178,7 +178,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
   O uso de interfaces necessárias geralmente é preferível ao uso de partes. Embora o design possa levar mais tempo, o sistema resultante é mais flexível. Também é mais fácil testar os componentes separadamente. Isso permite menos acoplamento em seus planos de desenvolvimento.
 
-## <a name="Interactions"></a>Interações entre componentes
+## <a name="interactions-between-components"></a><a name="Interactions"></a> Interações entre componentes
  As principais recomendações desta seção são as seguintes:
 
 - Identifique os casos de uso do seu sistema.
@@ -218,14 +218,14 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
  É útil adicionar comentários aos diagramas de atividade ou de sequência para observar o que foi obtido após cada operação. Você também pode escrever o efeito de cada operação em sua propriedade de **condição local** .
 
-### <a name="Data"></a>Modelo de dados dos componentes e interfaces
+### <a name="data-model-of-the-components-and-interfaces"></a><a name="Data"></a> Modelo de dados dos componentes e interfaces
  Defina os parâmetros e os valores de retorno de cada operação nas interfaces de componente. Onde as operações representam invocações, como solicitações de serviço Web, os parâmetros são aquelas que são enviadas como parte da solicitação. Onde vários valores são retornados de uma operação, você pode usar parâmetros com a propriedade **Direction** definida como **out**.
 
  Cada parâmetro e valor de retorno têm um tipo. Você pode definir esses tipos usando diagramas de classe UML. Você não precisa representar detalhes de implementação nesses diagramas. Por exemplo, se você estiver descrevendo os dados transmitidos como XML, poderá usar uma associação para representar qualquer tipo de referência cruzada entre os nós do XML e usar classes para representar nós.
 
  Use comentários para descrever as restrições de negócios nas associações e atributos. Por exemplo, se todos os itens na ordem de um cliente devem vir do mesmo fornecedor, você pode descrever isso por referência às associações entre os itens do pedido e os itens no catálogo de produtos e entre o item de catálogo e seu fornecedor.
 
-## <a name="Patterns"></a>Padrões de design
+## <a name="design-patterns"></a><a name="Patterns"></a> Padrões de design
  Um padrão de design é uma estrutura de tópicos de como criar um aspecto específico do software, especialmente um que se repete em diferentes partes do sistema. Ao adotar uma abordagem uniforme em todo o projeto, você pode reduzir o custo de design, garantir a consistência na interface do usuário e reduzir o custo de entender e alterar o código.
 
  Alguns padrões de design gerais, como o observador, são bem conhecidos e amplamente aplicáveis. Além disso, há padrões que são aplicáveis apenas ao seu projeto. Por exemplo, em um sistema de vendas na Web, haverá várias operações no código em que as alterações são feitas no pedido de um cliente. Para garantir que o estado do pedido seja exibido com precisão em cada estágio, todas essas operações devem seguir um protocolo específico para atualizar o banco de dados.
@@ -236,7 +236,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
  Um padrão de design é descrito em um documento e normalmente inclui estas partes:
 
-- nomes.
+- Nome.
 
 - Descrição do contexto no qual ele é aplicável. Quais critérios devem fazer um desenvolvedor considerar a aplicação desse padrão?
 
@@ -256,5 +256,5 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - Descrição das variações que os desenvolvedores podem adotar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [Visualizar](../modeling/visualize-code.md) [requisitos de usuário do modelo](../modeling/model-user-requirements.md) de código [desenvolver testes de modelos de](../modeling/develop-tests-from-a-model.md) uso de modelo [em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

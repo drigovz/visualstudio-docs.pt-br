@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911403"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
@@ -99,7 +99,7 @@ Para os conjuntos de dimensionamento de máquinas virtuais/máquina virtual, rem
          - Desinstalar a extensão Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
 
          > [!NOTE]
-         > Conjuntos de dimensionamento de máquinas virtuais-o portal não permite remover as portas DebuggerListener. Você precisará usar Azure PowerShell. Veja mais detalhes a seguir.
+         > Conjuntos de dimensionamento de máquinas virtuais-o portal não permite remover as portas DebuggerListener. Você precisará usar Azure PowerShell. Confira os detalhes abaixo.
 
 2. Remover certificados e o cofre de chaves do Azure
 
@@ -125,7 +125,7 @@ Para os conjuntos de dimensionamento de máquinas virtuais/máquina virtual, rem
 
    - O certificado do servidor
       - A impressão digital do certificado de servidor correspondente é implantada como um segredo para o Azure keyvault. O VS tentará localizar ou criar um keyvault com o prefixo MSVSAZ * na região correspondente à máquina virtual ou ao recurso de conjuntos de dimensionamento de máquinas virtuais. Todos os recursos de máquina virtual ou de conjuntos de dimensionamento de máquinas virtuais implantados nessa região compartilharão o mesmo keyvault.
-      - Para excluir o segredo de impressão digital do certificado do servidor, acesse o portal do Azure e localize o MSVSAZ * keyvault na mesma região que está hospedando seu recurso. Exclua o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`
+      - Para excluir o segredo de impressão digital do certificado do servidor, acesse o portal do Azure e localize o MSVSAZ * keyvault na mesma região que está hospedando seu recurso. Excluir o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`
       - Você também precisará excluir o segredo do servidor do seu recurso por meio do PowerShell.
 
       Para máquinas virtuais:
@@ -196,10 +196,10 @@ Há várias maneiras de desabilitar o Depurador de Instantâneos:
       Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
    ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)
-- [Depurar aplicativos ASP.NET ao vivo usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)
+- [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md)
 - [Depurar conjuntos de dimensionamento de máquinas Machines\Virtual virtuais do ASP.NET do Azure em tempo real usando o Depurador de Instantâneos](../debugger/debug-live-azure-virtual-machines.md)
-- [Debug Live ASP.NET Azure kubernetes usando o Depurador de Instantâneos](../debugger/debug-live-azure-kubernetes.md)
-- [Problemas conhecidos e solução de problemas de depuração de instantâneo](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Depurar Kubernetes ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-kubernetes.md)
+- [Solução de problemas e problemas conhecidos da depuração de instantâneos](../debugger/debug-live-azure-apps-troubleshooting.md)

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9b02bbad4fa897404f6c20e12b1705a3ae9ac8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661711"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagramas de sequência UML: referência
@@ -40,7 +40,7 @@ No Visual Studio, um *diagrama de sequência* mostra uma interação, que repres
 
  ![Partes de um diagrama de sequência](../modeling/media/uml-sequence.png "UML_Sequence")
 
-|**La**|**Elemento**|**Descrição**|
+|**Forma**|**Element**|**Descrição**|
 |---------------|-----------------|---------------------|
 |1|**Vital**|Uma linha vertical que representa a sequência de eventos que ocorrem em um participante durante uma interação, enquanto o tempo avança na linha. Esse participante pode ser uma instância de uma classe, componente ou ator.|
 |2|**Ator**|Um participante que é externo ao sistema que você está desenvolvendo.<br /><br /> Você pode fazer com que um símbolo de ator apareça na parte superior de uma linha da vida definindo sua propriedade de **ator** .|
@@ -57,8 +57,8 @@ No Visual Studio, um *diagrama de sequência* mostra uma interação, que repres
 |13|**Fragmento combinado**|Uma coleção de fragmentos. Cada fragmento pode incluir uma ou mais mensagens. Há diferentes tipos de fragmentos combinados. Para obter mais informações, consulte [descrever o fluxo de controle com fragmentos em diagramas de sequência UML](../modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams.md).<br /><br /> Para criar um fragmento, clique com o botão direito do mouse em uma mensagem, aponte para **surround com**e clique em um tipo de fragmento.|
 |14|**Proteção de fragmento**|Pode ser usado para declarar uma condição relevante para se o fragmento ocorrerá.<br /><br /> Para definir a proteção, selecione um fragmento e, em seguida, selecione o protetor e digite um valor.|
 |**X**|**Evento de destruição**|Representa o ponto no qual o objeto é excluído ou não pode mais ser acessado. Aparece na parte inferior de cada linha da vida.|
-||**Inter**|A coleção de mensagens e linhas de vida que são exibidas no diagrama de sequência. Para exibir as propriedades de uma interação, você deve selecioná-la no **Gerenciador de modelos UML**.|
-||**Diagrama de Sequência**|O diagrama que exibe uma interação. Para exibir suas propriedades, clique em uma parte vazia do diagrama. **Observação:**  Os nomes do diagrama de sequência, a interação que ele exibe e o arquivo que contém o diagrama podem ser diferentes.|
+||**Interação**|A coleção de mensagens e linhas de vida que são exibidas no diagrama de sequência. Para exibir as propriedades de uma interação, você deve selecioná-la no **Gerenciador de modelos UML**.|
+||**Diagrama de sequências**|O diagrama que exibe uma interação. Para exibir suas propriedades, clique em uma parte vazia do diagrama. **Observação:**  Os nomes do diagrama de sequência, a interação que ele exibe e o arquivo que contém o diagrama podem ser diferentes.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classe UML: referenciar](../modeling/uml-class-diagrams-reference.md) diagramas de [componentes UML: referência](../modeling/uml-component-diagrams-reference.md) a [diagramas de componentes UML: referência](../modeling/uml-component-diagrams-reference.md)

@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287032"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
@@ -128,7 +128,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
        |Diretório|Propriedade|
        |-|-|
-       |**Incluir Diretórios** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Diretórios de inclusão** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
        |**Diretórios de Biblioteca** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
 2. Adicione um arquivo de teste de unidade C++:
@@ -169,7 +169,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 1. No **Gerenciador de testes**, escolha **executar tudo**ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 - [Referência da API Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)

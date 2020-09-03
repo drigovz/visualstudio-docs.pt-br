@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 808fb54ea97c27af912ad02ab458bb2fd3e74ff6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605110"
 ---
-# <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>Walkthrough: Personalizando a definição de linguagem específica de domínio
+# <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>Passo a passo: personalizando a definição de linguagem específica de domínio
 Este conteúdo é obsoleto. Consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
