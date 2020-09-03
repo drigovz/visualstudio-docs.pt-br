@@ -9,16 +9,16 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672178"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Extensão de exemplo do Excel: classe ActionFilter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa classe interna estende a classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) e representa um filtro para ações de teste em um elemento [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
+Essa classe interna estende a classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) e representa um filtro para ações de teste em um [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] elemento.
 
 ## <a name="simple-properties"></a>Propriedades Simples
  Essas propriedades somente leitura permitem ao desenvolvedor especificar como esse filtro de ação de teste deve ser executado pelo framework de teste de IU codificado. Por exemplo, a propriedade `UITestActionFilter.Name` fornece o nome do filtro de ação. Outras propriedades obtém a `UITestActionFilter.Category` do filtro de ação, o `UITestActionFilter.FilterType`, o nome do `UITestActionFilter.Group` das ações de teste que são filtradas por esse filtro de ação de teste. Outras indicam se deseja `UITestActionFilter.ApplyTimeout` e também se a ação de teste é `UITestActionFilter.Enabled`.
@@ -29,6 +29,6 @@ Essa classe interna estende a classe [UITestActionFilter](/previous-versions/vis
 ## <a name="private-methods"></a>Métodos privados
  O método `IsLeftClick` determina se a ação fornecida representa um clique com o botão esquerdo do mouse. O método `AreActionsOnSameExcelCell` determina se duas fornecidas ações são executadas na mesma célula do Excel.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

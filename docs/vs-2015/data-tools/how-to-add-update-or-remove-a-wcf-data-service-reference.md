@@ -16,16 +16,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89a667e3254be8161d4defb54d524756a5eb02fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670013"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como adicionar, atualizar ou remover uma referência de WCF Data Services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Use a caixa de diálogo **Adicionar referência de serviço** para procurar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] na solução atual, localmente, em uma rede local ou na Internet.
+Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] . Use a caixa de diálogo **Adicionar referência de serviço** para procurar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] na solução atual, localmente, em uma rede local ou na Internet.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
@@ -35,7 +35,7 @@ Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE
 
 1. No **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto ao qual você deseja adicionar o serviço e, em seguida, clique em **Adicionar referência de serviço**.
 
-     A caixa de diálogo **Adicionar referência de serviço** é exibida.
+     A caixa de diálogo **Adicionar Referência de Serviço** é exibida.
 
 2. Na caixa **endereço** , insira a URL para o serviço e clique em **ir** para pesquisar o serviço. Se o serviço implementa a segurança de nome de usuário e senha, você pode ser solicitado a fornecer um nome de usuário e senha.
 
@@ -48,29 +48,29 @@ Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE
 
 3. Na lista de **Serviços** , expanda o nó do serviço que você deseja usar e selecione um conjunto de entidades.
 
-4. Na caixa **namespace** , digite o namespace que você deseja usar para a referência.
+4. Na caixa **Namespace**, digite o namespace que deseja usar para a referência.
 
 5. Clique em **OK** para adicionar a referência ao projeto.
 
-     Um cliente de serviço (proxy) é gerado e os metadados que descrevem o serviço são adicionados ao arquivo app. config.
+     Um cliente de serviço (proxy) é gerado e os metadados que descrevem o serviço são adicionados ao arquivo de app.config.
 
 #### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Para adicionar uma referência a um serviço na solução atual
 
 1. No **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto ao qual você deseja adicionar o serviço e, em seguida, clique em **Adicionar referência de serviço**.
 
-     A caixa de diálogo **Adicionar referência de serviço** é exibida.
+     A caixa de diálogo **Adicionar Referência de Serviço** é exibida.
 
 2. Clique em **descobrir**.
 
-     Todos os serviços ([!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] e serviços WCF) na solução atual são adicionados à lista de **Serviços** .
+     Todos os serviços ( [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] e serviços WCF) na solução atual são adicionados à lista de **Serviços** .
 
 3. Na lista de **Serviços** , expanda o nó do serviço que você deseja usar e selecione um conjunto de entidades.
 
-4. Na caixa **namespace** , digite o namespace que você deseja usar para a referência.
+4. Na caixa **Namespace**, digite o namespace que deseja usar para a referência.
 
 5. Clique em **OK** para adicionar a referência ao projeto.
 
-     Um cliente de serviço (proxy) é gerado e os metadados que descrevem o serviço são adicionados ao arquivo app. config.
+     Um cliente de serviço (proxy) é gerado e os metadados que descrevem o serviço são adicionados ao arquivo de app.config.
 
 ## <a name="updating-a-service-reference"></a>Atualizando uma referência de serviço
  Às vezes, o Modelo de Dados de Entidade para um [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] será alterado. Quando isso acontece, a referência de serviço deve ser atualizada.
@@ -88,10 +88,10 @@ Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE
 
 - Em **Gerenciador de soluções**, clique com o botão direito do mouse na referência de serviço e clique em **excluir**.
 
-     O cliente de serviço será removido da solução e os metadados que descrevem o serviço serão removidos do arquivo app. config.
+     O cliente de serviço será removido da solução e os metadados que descrevem o serviço serão removidos do arquivo de app.config.
 
     > [!NOTE]
     > Qualquer código que referencie a referência de serviço precisará ser removido manualmente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

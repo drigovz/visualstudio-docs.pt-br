@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521297"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Capturar exceções não CLSCompliant em manipuladores gerais
@@ -37,9 +37,9 @@ ms.locfileid: "85521297"
 ## <a name="rule-description"></a>Descrição da Regra
  Um bloco catch que trata de <xref:System.Exception> todas as exceções compatíveis com Common Language Specification (CLS). No entanto, ele não captura exceções não compatíveis com CLS. Exceções não compatíveis com CLS podem ser geradas de código nativo ou de código gerenciado que foi gerado pelo Microsoft Intermediate Language (MSIL) Assembler. Observe que o C# e os [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compiladores não permitem que exceções não compatíveis com CLS sejam geradas e não [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] capturam exceções não compatíveis com CLS. Se a intenção do bloco catch é manipular todas as exceções, use a seguinte sintaxe de bloco catch geral.
 
-- C#`catch {}`
+- C# `catch {}`
 
-- C++: `catch(...) {}` ou`catch(Object^) {}`
+- C++: `catch(...) {}` ou `catch(Object^) {}`
 
   Uma exceção não tratada em conformidade com CLS se torna um problema de segurança quando as permissões anteriormente permitidas são removidas no bloco catch. Como as exceções não compatíveis com CLS não são detectadas, um método mal-intencionado que gera uma exceção não compatível com CLS pode ser executado com permissões elevadas.
 

@@ -14,38 +14,38 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e3f81168d9af7fbbb93b5c59f3ab19a17107b56b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734193"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-Estende a interface [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) para permitir a recuperação de interfaces de módulo e processo.
+Estende a interface [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) para habilitar a recuperação de interfaces de módulo e de processo.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCodeContext3 : IDebugCodeContext2
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- Implementado por motores de depuração e consumido pelo pacote [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debug.
+ Implementado por mecanismos de depuração e consumido pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] pacote de depuração.
 
 ## <a name="methods"></a>Métodos
- Além dos métodos na `IDebugCodeContext2` interface, esta interface implementa os seguintes métodos:
+ Além dos métodos na `IDebugCodeContext2` interface, essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[Getmodule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Recupera uma referência à interface do módulo de depuração.|
+|[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Recupera uma referência à interface do módulo de depuração.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Recupera uma referência à interface do processo de depuração.|
 
 ## <a name="remarks"></a>Comentários
- Esta é uma interface opcional que geralmente não precisa ser implementada.
+ Essa é uma interface opcional que geralmente não precisa ser implementada.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Msdbg.h
+ Cabeçalho: Msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

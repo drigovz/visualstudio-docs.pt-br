@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670056"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
@@ -52,7 +52,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
 - Inserindo parâmetros no formulário e executando a consulta parametrizada.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para concluir este passo a passo, você precisará de:
 
 - Acesso ao banco de dados de exemplo Northwind.
@@ -64,7 +64,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
 1. No menu **arquivo** , crie um novo projeto.
 
-2. Nomeie o projeto `WindowsSearchForm`.
+2. Dê ao projeto o nome de `WindowsSearchForm`.
 
 3. Selecione **aplicativo do Windows** e clique em **OK**.
 
@@ -81,7 +81,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **escolher sua conexão de dados** , siga um destes procedimentos:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -97,8 +97,8 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
      O **NorthwindDataSet** é adicionado ao seu projeto e a tabela **Clientes** aparece na janela **Fontes de Dados**.
 
-## <a name="create-the-form"></a>Criar o formulário
- Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.
+## <a name="create-the-form"></a> Criar o formulário
+ Você pode criar os controles associados a dados arrastando itens da janela **fontes de dados** para o formulário.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário
 
@@ -115,7 +115,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
 1. Selecione o controle <xref:System.Windows.Forms.DataGridView> e escolha **Adicionar Consulta** no menu **Dados**.
 
-2. Digite `FillByCity` na área **nome da nova consulta** na caixa de diálogo **Construtor de critérios de pesquisa** .
+2. Digite `FillByCity` a **nova área nome da consulta** na caixa de diálogo Construtor de critérios de **pesquisa** .
 
 3. Adicione `WHERE City = @City` à consulta na área **Texto da Consulta**.
 
@@ -128,7 +128,7 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
      `WHERE City = @City`
 
     > [!NOTE]
-    > As fontes de dados Access e OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE ficaria assim: `WHERE City = ?`.
+    > As fontes de dados Access e OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE ficaria assim: `WHERE City = ?` .
 
 4. Clique em **OK** para fechar a caixa de diálogo **Construtor de Critérios de Pesquisa**.
 
@@ -152,5 +152,5 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
 
 - Editando o conjunto de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
- [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>Consulte Também
+ [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585672"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Caixa de diálogo Configurações Avançadas para Serviços
@@ -32,7 +32,7 @@ Para acessar a caixa de diálogo **Configurações Avançadas para Serviços**, 
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
- **Salvar hash de senha localmente para habilitar logon offline** Especifica se um formato criptografado da senha do usuário será armazenado em cache localmente para permitir que o usuário faça logon quando o aplicativo estiver no modo offline. Esta opção é selecionada por padrão.
+ **Salvar hash de senha localmente para habilitar logon offline** Especifica se um formato criptografado da senha do usuário será armazenado em cache localmente para permitir que o usuário faça logon quando o aplicativo estiver no modo offline. Essa opção é habilitada por padrão.
 
  **Exigir que os usuários façam logon novamente sempre que o cookie do servidor expirar** Especifica se os usuários já autenticados serão reautenticados automaticamente quando o aplicativo acessar as funções ou o serviço de perfil e o cookie de autenticação do servidor tiver expirado. Selecione essa opção para negar acesso aos serviços de aplicativo e exigir a reautenticação explícita depois que o cookie expirar. Isso é útil para aplicativos implantados em locais públicos, para garantir que os usuários que deixam o aplicativo em execução após o uso não permanecerão autenticados por tempo indefinido. Essa opção é desmarcada por padrão.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 556fd56f10ea39e5eff3abe700492212983473de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671943"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Caixa de diálogo notificações, ambiente e opções
@@ -23,5 +23,5 @@ ms.locfileid: "72671943"
 
 Use essa opção para parar de ignorar qualquer notificação que você tenha escolhido ignorar anteriormente por meio da caixa de diálogo Notificações. Para obter mais informações, consulte [Notificações](../../ide/visual-studio-notifications.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
