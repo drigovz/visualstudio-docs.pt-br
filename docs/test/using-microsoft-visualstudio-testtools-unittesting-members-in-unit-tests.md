@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585555"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
@@ -31,7 +31,7 @@ Para ajudar a fornecer uma visão geral mais clara da estrutura de teste de Unid
 
 ### <a name="members-used-for-data-driven-testing"></a>Membros usados para teste controlado por dados
 
-Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [Criar um teste de unidade orientado por dados](../test/how-to-create-a-data-driven-unit-test.md) e usar um arquivo de [configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md) e [usar um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -77,7 +77,7 @@ Cada classe de teste deve ter o atributo `TestClass` e cada método de teste dev
 
 ## <a name="assert-classes-and-related-exceptions"></a>Classes Assert e exceções relacionadas
 
-Testes de unidade podem verificar comportamentos específicos do aplicativo pelo uso de vários tipos de asserções, exceções e atributos. Para obter mais informações, consulte [Usando as classes de afirmação](../test/using-the-assert-classes.md).
+Testes de unidade podem verificar comportamentos específicos do aplicativo pelo uso de vários tipos de asserções, exceções e atributos. Para obter mais informações, consulte [usando as classes Assert](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

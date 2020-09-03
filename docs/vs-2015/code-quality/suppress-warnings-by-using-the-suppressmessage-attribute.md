@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a5d64a27759cf844550297beb19b026bbeaa0e40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546816"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Suprimir avisos usando o atributo SuppressMessage
@@ -33,7 +33,7 @@ Geralmente, é útil indicar que o aviso não é aplicável para permitir que os
 
 ## <a name="in-this-section"></a>Nesta seção
 
-|Title|Descrição|
+|Título|Descrição|
 |-|-|
 |[Visão geral de supressão na origem](../code-quality/in-source-suppression-overview.md)|Saiba mais sobre o ISS e como usá-lo em seu código.|
 |[Como suprimir avisos usando o item de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Saiba como suprimir avisos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE usando o menu de atalho.|

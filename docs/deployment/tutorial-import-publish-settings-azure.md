@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801705"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publicar um aplicativo no Serviço de Aplicativo do Azure com a importação de configurações de publicação no Visual Studio
@@ -35,7 +35,7 @@ Um arquivo de configurações de publicação (* \* . publishsettings*) é difer
 > [!NOTE]
 > Se você só precisar copiar um perfil de publicação do Visual Studio (arquivo* \* . pubxml* ) de uma instalação do Visual Studio para outra, poderá encontrar o perfil de publicação, * \<profilename\> . pubxml*, na pasta * \\<ProjectName \> \Properties\PublishProfiles* para tipos de projeto gerenciado. Para sites, examine embaixo da pasta *\App_Data*. Os perfis de publicação são arquivos XML do MSBuild.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 ::: moniker range=">=vs-2019"
 

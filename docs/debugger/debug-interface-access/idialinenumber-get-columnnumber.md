@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e69a3ca233b739b32acaa769270b5253cc7232d
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466983"
 ---
 # <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
@@ -41,5 +41,5 @@ fora Retorna o número da coluna na qual a expressão ou instrução começa. Se
 ## <a name="remarks"></a>Comentários
  O valor da coluna retornado por esse método é um deslocamento de byte na linha para o primeiro caractere da instrução na linha.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

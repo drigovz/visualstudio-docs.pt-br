@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585620"
 ---
 # <a name="replace-in-files"></a>Substituir em Arquivos
 
-**Substituir nos Arquivos** permite pesquisar o código de um conjunto especificado de arquivos para uma cadeia de caracteres ou expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações tomadas estão listadas na janela **Encontrar resultados** selecionados nas **opções de resultado**.
+**Substituir nos Arquivos** permite pesquisar o código de um conjunto especificado de arquivos para uma cadeia de caracteres ou expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações executadas são listadas na janela **Localizar resultados** selecionada em **Opções de resultado**.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem diferir daqueles descritos em **Ajuda,** dependendo das configurações ativas ou edição. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes daqueles descritos na **ajuda** , dependendo de suas configurações ativas ou edição. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 É possível usar qualquer um dos métodos a seguir para exibir **Substituir nos Arquivos** na janela **Localizar e Substituir**.
 
@@ -60,9 +60,9 @@ A opção escolhida na lista suspensa **Examinar** determina se a opção **Subs
 
 ## <a name="find-options"></a>Opções de busca
 
-Você pode expandir ou colapsar a seção **Encontrar opções.** As opções a seguir podem ser marcadas ou desmarcadas:
+Você pode expandir ou recolher a seção de **Opções de localização** . As opções a seguir podem ser marcadas ou desmarcadas:
 
-**Caso de correspondência**
+**Diferenciar maiúsculas de minúsculas**
 
 Quando selecionada, as janelas **Localizar Resultados** só exibem instâncias da cadeia de caracteres **Localizar** que coincidam tanto em termos de conteúdo quanto de maiúsculas e minúsculas. Por exemplo, uma pesquisa por "MyObject" com **Coincidir com maiúsculas e minúsculas** selecionado retornará "MyObject", mas não "myobject" nem "MYOBJECT".
 
@@ -70,7 +70,7 @@ Quando selecionada, as janelas **Localizar Resultados** só exibem instâncias d
 
 Quando selecionada, as janelas **Localizar Resultados** só exibirão instâncias da cadeia de caracteres **O que localizar** que coincidam em palavras inteiras. Por exemplo, uma pesquisa por "MyObject" retornará "MyObject", mas não "CMyObject" nem "MyObjectC".
 
-**Use expressões regulares**
+**Usar expressões regulares**
 
 Quando essa caixa de seleção está marcada, é possível usar notações especiais para definir padrões de texto nas caixas de texto **Localizar** ou **Substituir por**. Para obter uma lista dessas notações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -80,13 +80,13 @@ Essa lista indica os tipos de arquivos a serem pesquisados nos diretórios **Exa
 
 ## <a name="result-options"></a>Opções de resultado
 
-Você pode expandir ou colapsar a seção **Desembaracamento de opções.** As opções a seguir podem ser marcadas ou desmarcadas:
+Você pode expandir ou recolher a seção de **Opções de resultado** . As opções a seguir podem ser marcadas ou desmarcadas:
 
-**Encontrar a** janela resultados 1
+Janela **Localizar resultados 1**
 
 Quando selecionada, os resultados da pesquisa atual substituirão o conteúdo da janela **Localizar Resultados 1**. Essa janela será aberta automaticamente para exibir seus resultados de pesquisa. Para abrir essa janela manualmente, selecione **Outras Janelas** no menu **Exibir** e escolha **Localizar Resultados 1**.
 
-**Encontrar a** janela Resultados 2
+Janela **Localizar resultados 2**
 
 Quando selecionada, os resultados da pesquisa atual substituirão o conteúdo da janela **Localizar Resultados 2**. Essa janela será aberta automaticamente para exibir seus resultados de pesquisa. Para abrir essa janela manualmente, selecione **Outras Janelas** no menu **Exibir** e escolha **Localizar Resultados 2**.
 
@@ -103,6 +103,6 @@ Quando selecionada, essa opção deixa abertos todos os arquivos em que foram fe
 
 ## <a name="see-also"></a>Confira também
 
-- [Encontrar e substituir texto](../ide/finding-and-replacing-text.md)
-- [Encontrar em arquivos](../ide/find-in-files.md)
+- [Localizar e substituir texto](../ide/finding-and-replacing-text.md)
+- [Localizar nos arquivos](../ide/find-in-files.md)
 - [Comandos do Visual Studio](../ide/reference/visual-studio-commands.md)

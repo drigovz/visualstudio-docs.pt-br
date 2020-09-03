@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585685"
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
@@ -33,7 +33,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 `filename`\
 Opcional. O nome de arquivo e o caminho do item a ser adicionado à solução.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /t: `templatename`\
 Opcional. Especifica o tipo de arquivo a ser criado. Se nenhum nome de modelo for fornecido, um arquivo de texto será criado por padrão.
 
@@ -66,6 +66,6 @@ Esse exemplo adiciona um novo item de solução, MyHTMLpg, à solução atual.
 ## <a name="see-also"></a>Confira também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Janela Comando](../../ide/reference/command-window.md)
-- [Caixa Localizar/Comando](../../ide/find-command-box.md)
+- [Janela de comando](../../ide/reference/command-window.md)
+- [Caixa Localizar/comando](../../ide/find-command-box.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

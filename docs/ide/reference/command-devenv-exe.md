@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570395"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -45,7 +45,7 @@ Se você usar essa opção, o IDE não exibirá a Página Inicial na inicializa�
 
 ::: moniker-end
 
-Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [Como: Controlar os complementos usando o gerenciador de complementos](/previous-versions/xwdatdwh(v=vs.140)).
+Se um suplemento expor um comando, será possível usar essa opção para iniciar o suplemento por meio da linha de comando. Para obter mais informações, consulte [como: controlar suplementos usando o Gerenciador de suplementos](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Exemplo
 
@@ -67,4 +67,4 @@ devenv /command "nf some_file.cs"
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
-- [Janela de comando](command-window.md)
+- [Janela Comando](command-window.md)

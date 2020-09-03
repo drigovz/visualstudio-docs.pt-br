@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570551"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher itens da Caixa de Ferramentas, Componentes do WPF
 
-Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe uma lista de controles do WPF (Windows Presentation Foundation) disponíveis no computador local. Para exibir esta lista, **selecione Selecionar itens** da caixa de ferramentas no menu **Ferramentas** para exibir a caixa de diálogo Escolher itens **da caixa** de ferramentas e, em seguida, selecione a guia **Componentes Do WPF.** Para classificar os componentes listados, selecione qualquer título de coluna.
+Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe uma lista de controles do WPF (Windows Presentation Foundation) disponíveis no computador local. Para exibir essa lista, selecione **escolher itens de caixa de ferramentas** no menu **ferramentas** para exibir a caixa de diálogo **escolher itens de caixa de ferramentas** e, em seguida, selecione sua guia **componentes do WPF** . Para classificar os componentes listados, selecione qualquer título de coluna.
 
 - Quando a caixa de seleção ao lado de um componente for selecionada, um ícone desse componente será exibido na **Caixa de ferramentas**.
 
@@ -43,7 +43,7 @@ Lista os nomes dos controles WPF para os quais existem entradas no Registro do c
 
 Exibe a hierarquia do namespace [API .NET](/dotnet/api/?view=netframework-4.7) que define a estrutura do componente. Classifique essa coluna para listar os componentes disponíveis em cada namespace .NET instalado no computador.
 
-**Nome da montagem**
+**Nome do assembly**
 
 Exibe o nome do assembly .NET que inclui o namespace de cada componente. Classifique essa coluna para listar os namespaces contidos em cada assembly .NET instalado no computador.
 
@@ -57,7 +57,7 @@ Exibe a localização do assembly .NET. O local padrão para todos os assemblies
 
 Filtra a lista de controles WPF com base na cadeia de caracteres fornecida na caixa de texto. Todas as correspondências de uma das quatro colunas são mostradas.
 
-**Claro**
+**Limpar**
 
 Limpa a cadeia de caracteres de filtro.
 
@@ -65,7 +65,7 @@ Limpa a cadeia de caracteres de filtro.
 
 Abre a caixa de diálogo **Abrir**, que permite navegar para assemblies que contêm controles WPF. Use isso para carregar assemblies que não estão localizados no Cache de Assembly Global.
 
-**Língua**
+**Idioma**
 
 Mostra o idioma localizado do assembly que contém o controle WPF selecionado.
 
@@ -83,5 +83,5 @@ Além disso, se os metadados em tempo de design são aplicados ao controle perso
 
 ## <a name="see-also"></a>Confira também
 
-- [Ferramentas](../../ide/reference/toolbox.md)
+- [Caixa de Ferramentas](../../ide/reference/toolbox.md)
 - [Introdução ao WPF](../../designers/getting-started-with-wpf.md)

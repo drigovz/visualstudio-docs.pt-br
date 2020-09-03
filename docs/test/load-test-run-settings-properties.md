@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584459"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
@@ -51,7 +51,7 @@ Para obter mais informações, confira [Modificar as configurações de log de t
 
 |Propriedade|Definição|
 |-|----------------|
-|**Tipo de armazenamento**|A forma de armazenar os contadores de desempenho que são obtidos em um teste de carga. As opções são as descritas a seguir:<br /><br /> -   **Banco de dados** – Requer um banco de dados SQL que tenha um **Repositório de Resultados de Teste de Carga**.<br />-   **Nenhum.**|
+|**Tipo de armazenamento**|A forma de armazenar os contadores de desempenho que são obtidos em um teste de carga. As opções são as descritas a seguir:<br /><br /> -   **Banco de dados** – Requer um banco de dados SQL que tenha um **Repositório de Resultados de Teste de Carga**.<br />-   **Nenhum**.|
 |**Armazenamento de detalhes de tempo**|Usado para determinar quais detalhes serão armazenados no **Repositório de Resultados de Teste de Carga**. Três valores estão disponíveis:<br /><br /> -   **AllIndividualDetails** – Coleta e armazena valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**. É necessário quando você pretende usar o **Gráfico de Atividade de Usuário Virtual** no **Analisador de Teste de Carga**.<br />     Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Nenhum** – Não coleta valores de medição de tempo individuais. É o valor padrão para a Atualização 4 do Visual Studio 2013 e versões posteriores.<br />-   **StatisticsOnly** – Coleta e armazena somente as estatísticas em vez de armazenar os valores de medição de tempo individuais para cada teste, transação e página executados ou emitidos durante o teste de carga no **Repositório de Resultados de Teste de Carga**.<br /><br /> Para saber mais, confira [Como especificar a propriedade de armazenamento dos detalhes de medição de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propriedades do rastreamento do SQL
@@ -70,27 +70,27 @@ Para obter mais informações, confira [Modificar as configurações de log de t
 |**Iterações de teste**|Especifica o número total de teste individuais para executar antes que o teste de carga seja concluído. Essa propriedade só se aplica quando a propriedade “Usar iterações de teste” é `True`.|
 |**Usar iterações de teste**|Se Usar iterações de teste for `True`, o teste de carga será executado até que o número de testes individuais concluídos no teste de carga atinja o número especificado de pela propriedade “Iterações de teste”. Nesse caso, as configurações baseadas em tempo, que são Duração do aquecimento, Duração da execução e Duração do desaquecimento, são ignoradas. Se “Usar iterações de teste” for `False`, todas as configurações de tempo se aplicarão, e "Iterações teste” é ignorada.|
 
-Para obter mais informações, [consulte Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Para obter mais informações, consulte [como especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propriedades de tempo
 
 |Propriedade|Definição|
 |-|----------------|
 |**Duração do desaquecimento**|A duração do período de desaquecimento do teste, expressa no formato hh:mm:ss. Os testes individuais em um teste de carga podem ainda estar em execução quando o teste de carga é concluído. Durante o período de desaquecimento, esses testes podem continuar até que sejam concluídos ou o até o término do período de desaquecimento ser atingido. Por padrão, não existe período de desaquecimento, e os testes individuais são encerrados quando o teste de carga termina com base na configuração de Duração da execução.|
-|**Duração da execução**|A duração do teste, no formato hh:mm:ss.|
-|**Taxa de Amostra**|O intervalo no qual capturar valores do contador de desempenho, no formato hh:mm:ss.<br /><br /> Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
+|**Duração da Execução**|A duração do teste, no formato hh:mm:ss.|
+|**Taxa de amostra**|O intervalo no qual capturar valores do contador de desempenho, no formato hh:mm:ss.<br /><br /> Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).|
 |**Duração do aquecimento**|O período entre o início do teste e quando amostras de dados começam a ser gravadas, no formato hh:mm:ss. Isso é frequentemente usado para carregar usuários virtuais em incrementos para atingir determinado nível de carga antes de gravar valores de exemplo. Os valores de exemplo que são capturados antes do término do período de aquecimento sejam mostrados no **Analisador de Teste de Carga**.|
 
 ## <a name="webtest-connections-properties"></a>Propriedades de conexões WebTest
 
 |Propriedade|Definição|
 |-|----------------|
-|**Modelo de conexão do WebTest**|Controla o uso de conexões do agente de teste de carga ao servidor Web para testes de desempenho na Web que são executados em um teste de carga. Três opções de modelo de conexão de teste de desempenho na Web estão disponíveis:<br /><br /> – O modelo **Conexões por usuário** simula o comportamento de um usuário que está usando um navegador real. Quando o Internet Explorer 6 ou o Internet Explorer 7 é simulado, cada usuário virtual que está executando um teste de desempenho na Web usa uma ou duas conexões dedicadas ao servidor Web. A primeira conexão é estabelecida quando a primeira solicitação no teste de desempenho na Web é emitida. Uma segunda conexão pode ser usada quando uma página contiver mais de uma solicitação dependente. Essas solicitações são emitidas em paralelo usando as duas conexões. Essas conexões são reutilizadas para solicitações subsequentes no teste de desempenho na Web. As conexões são fechadas quando o teste de desempenho na Web é concluído. Uma desvantagem desse modelo é que o número de conexões que é mantido aberto no computador do agente pode ser alto (até duas vezes a carga do usuário). Consequentemente, os recursos que são necessários para oferecer suporte a essa contagem alta de conexão podem limitar a carga do usuário que pode ser gerada por um único agente de teste de carga. Quando o Internet Explorer 8 é simulado, seis conexões simultâneas são aceitas.<br />- O modelo **Connection Pool** conserva os recursos no agente de teste de carga, compartilhando conexões com o servidor web entre vários usuários de teste de desempenho virtual da Web. Se a carga do usuário for maior que o tamanho do pool de conexões, os testes de desempenho na Web que são executados por usuários virtuais diferentes compartilharão uma conexão. Isso poderia significar que um teste de desempenho na Web pode ter de esperar antes de emitir uma solicitação quando outro teste de desempenho na Web estiver usando a conexão. O tempo médio que um teste de desempenho na Web espera antes de enviar uma solicitação é acompanhado pelo contador de desempenho de teste de carga Tempo Médio de Espera por Conexão. Esse número deve ser menor que o tempo médio de resposta para uma página. Se não for, o tamanho do pool de conexões provavelmente é muito pequeno.<br />– O modelo **Conexões por iteração do teste** especifica o uso de conexões dedicadas para cada iteração de teste.|
+|**Modelo de conexão do WebTest**|Controla o uso de conexões do agente de teste de carga ao servidor Web para testes de desempenho na Web que são executados em um teste de carga. Três opções de modelo de conexão de teste de desempenho na Web estão disponíveis:<br /><br /> – O modelo **Conexões por usuário** simula o comportamento de um usuário que está usando um navegador real. Quando o Internet Explorer 6 ou o Internet Explorer 7 é simulado, cada usuário virtual que está executando um teste de desempenho na Web usa uma ou duas conexões dedicadas ao servidor Web. A primeira conexão é estabelecida quando a primeira solicitação no teste de desempenho na Web é emitida. Uma segunda conexão pode ser usada quando uma página contiver mais de uma solicitação dependente. Essas solicitações são emitidas em paralelo usando as duas conexões. Essas conexões são reutilizadas para solicitações subsequentes no teste de desempenho na Web. As conexões são fechadas quando o teste de desempenho na Web é concluído. Uma desvantagem desse modelo é que o número de conexões que é mantido aberto no computador do agente pode ser alto (até duas vezes a carga do usuário). Consequentemente, os recursos que são necessários para oferecer suporte a essa contagem alta de conexão podem limitar a carga do usuário que pode ser gerada por um único agente de teste de carga. Quando o Internet Explorer 8 é simulado, seis conexões simultâneas são aceitas.<br />-O modelo do **pool de conexões** conserva os recursos no agente de teste de carga, compartilhando conexões com o servidor Web entre vários usuários de teste de desempenho da Web virtual. Se a carga do usuário for maior que o tamanho do pool de conexões, os testes de desempenho na Web que são executados por usuários virtuais diferentes compartilharão uma conexão. Isso poderia significar que um teste de desempenho na Web pode ter de esperar antes de emitir uma solicitação quando outro teste de desempenho na Web estiver usando a conexão. O tempo médio que um teste de desempenho na Web espera antes de enviar uma solicitação é acompanhado pelo contador de desempenho de teste de carga Tempo Médio de Espera por Conexão. Esse número deve ser menor que o tempo médio de resposta para uma página. Se não for, o tamanho do pool de conexões provavelmente é muito pequeno.<br />– O modelo **Conexões por iteração do teste** especifica o uso de conexões dedicadas para cada iteração de teste.|
 |**Tamanho do pool de conexão do WebTest**|Especifica o número máximo de conexões para fazer entre o agente de teste de carga e o servidor Web. Isso se aplica apenas ao modelo **Pool de conexões**.|
 
 ## <a name="change-run-setting-properties"></a>Alterar as propriedades da configuração de execução
 
-Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para um exemplo, [veja Como: Selecione a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, consulte [como: selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 Para alterar as configurações de execução:
 
@@ -107,7 +107,7 @@ Para alterar as configurações de execução:
 5. Use a **Janela de Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
 
     > [!NOTE]
-    > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, consulte [Propriedades de configuração de execução de teste de carga](../test/load-test-run-settings-properties.md).
+    > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, consulte Configurações de [execução de teste de carga Propriedades](../test/load-test-run-settings-properties.md).
 
 6. Quando terminar de alterar as propriedades, salve o teste de carga. No menu **Arquivo**, clique em **Salvar**.
 
@@ -116,4 +116,4 @@ Para alterar as configurações de execução:
 
 ## <a name="see-also"></a>Confira também
 
-- [Configure as configurações de execução do teste de carga](../test/configure-load-test-run-settings.md)
+- [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
