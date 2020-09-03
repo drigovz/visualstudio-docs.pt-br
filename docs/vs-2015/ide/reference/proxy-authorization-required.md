@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297811"
 ---
 # <a name="proxy-authorization-required"></a>Autorização de proxy necessária
@@ -37,7 +37,7 @@ Para corrigir esse erro, tente uma ou mais das seguintes etapas:
 
   - *.live.com
 
-- Você pode remover o endereço https://go.microsoft.com da lista de permissões para que a caixa de diálogo autenticação de proxy apareça para o endereço https://go.microsoft.com e os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
+- Você pode remover o https://go.microsoft.com endereço da lista de permissões para que a caixa de diálogo de autenticação de proxy apareça para o https://go.microsoft.com endereço e os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
 
 - Se você quiser usar suas credenciais padrão com o proxy, faça o seguinte:
 
@@ -51,6 +51,6 @@ Para corrigir esse erro, tente uma ou mais das seguintes etapas:
       </defaultProxy>
       ```
 
-      Insira o endereço de proxy correto para sua rede em `proxyaddress="<http://<yourproxy:port#>`.
+      Insira o endereço de proxy correto para sua rede no `proxyaddress="<http://<yourproxy:port#>` .
 
 - Siga as instruções nesta [postagem de blog](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) para adicionar código que permite que você use o proxy.

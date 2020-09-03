@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851630"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
@@ -29,7 +29,7 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 
  O **Início Rápido** é habilitado por padrão quando você instala o Visual Studio. Na barra de menus, você pode mostrar ou ocultar o **Início Rápido** escolhendo **Ferramentas**, **Opções**. Expanda o nó **Ambientes** e escolha **Início Rápido**. Marque ou desmarque a caixa de seleção **Habilitar Início Rápido**. Também é possível habilitar ou desabilitar categorias de pesquisa nesta página.
 
-## <a name="category-list"></a>Lista de Categorias
+## <a name="category-list"></a>Lista de categorias
  Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, em conjunto com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, pressione as teclas Ctrl + Q para mostrar todos os resultados da categoria seguinte. Após a última categoria apareces, Ctrl + Q mostra alguns resultados de cada categoria. Você pode usar Ctrl + Shift + Q para navegar pelas categorias em ordem inversa. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
 
  É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
@@ -37,9 +37,9 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 |Categoria|Atalho|Descrição do atalho|
 |--------------|--------------|--------------------------|
 |Usados Recentemente|@mru<br /><br /> Por exemplo, `@mru font`|Exibe até cinco dos itens que foram **Usados Recentemente**.|
-|{1&gt;Menus&lt;1}|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
+|Menus|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
 |Opções|@opt<br /><br /> Por exemplo, `@opt font`|Limita a pesquisa a configurações na caixa de diálogo **Opções**.|
-|{1&gt;Documentos&lt;1}|@doc<br /><br /> Por exemplo, `@doc font`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
+|Documentos|@doc<br /><br /> Por exemplo, `@doc font`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
 > [!NOTE]
 > Você pode alterar as teclas de atalho na página **Geral**, **Teclado** na caixa de diálogo **Opções**.
@@ -49,5 +49,5 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 
  Para ver as dicas e truques mais recentes sobre o uso do **Início Rápido**, consulte [O Blog do Visual Studio](https://blogs.msdn.com/b/visualstudio/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo opções](../../ide/reference/environment-options-dialog-box.md) [gerais de ambiente de elementos da interface do usuário (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)

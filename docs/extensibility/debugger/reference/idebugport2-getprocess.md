@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetProcess | Microsoft Docs
+title: 'IDebugPort2:: GetProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4496187fd2e8f86a64e85afc8a4cb00eb589696a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725260"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
-O processo especificado é executado em uma porta.
+Obtém o processo especificado em execução em uma porta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int GetProcess( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ProcessId`\
-[em] Uma estrutura [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que especifica o identificador de processo.
+no Uma estrutura de [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) que especifica o identificador do processo.
 
 `ppProcess`\
-[fora] Retorna um objeto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) representando o processo.
+fora Retorna um objeto [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) que representa o processo.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

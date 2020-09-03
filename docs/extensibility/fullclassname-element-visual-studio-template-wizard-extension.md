@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769598"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (extensão do assistente de modelo do Visual Studio)
@@ -53,7 +53,7 @@ O nome totalmente qualificado da classe que implementa a `IWizard` interface.
  Esse texto especifica a classe que implementa a `IWizard` interface. A classe especificada deve existir no assembly especificado pelo elemento [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
 ## <a name="remarks"></a>Comentários
- `FullClassName`é um elemento filho obrigatório de `WizardExtension` .
+ `FullClassName` é um elemento filho obrigatório de `WizardExtension` .
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.

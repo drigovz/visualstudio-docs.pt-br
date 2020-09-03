@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851699"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
@@ -41,7 +41,7 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Habilitar a assinatura de alteração** Adicionar, reordenar e excluir parâmetros de uma função e propagar as alterações para todos os sites de chamada. Para acessar esse recurso, clique com botão direito do mouse em qualquer uso da função e selecione **Ações Rápidas** ou simplesmente pressione o atalho padrão Ctrl+Ponto [Ctrl+.].
 
-## <a name="text-editor"></a>{1&gt;Editor de Texto&lt;1}
+## <a name="text-editor"></a>Editor de Texto
  **Habilitar escopos de expansão** Se habilitada, você pode colocar o texto selecionado entre chaves digitando ' {' no editor de texto.
 
  **Habilitar precedência de expansão** Se habilitada, você pode colocar o texto selecionado entre parênteses digitando ' (' no editor de texto.
@@ -58,5 +58,5 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
   Você pode passar o mouse sobre um rabisco para obter uma lâmpada ou usar o atalho de teclado padrão Ctrl+Ponto (Ctrl+.). Observe que para o atalho de teclado, o cursor do sistema não precisa ser posicionado sobre o erro específico ou o token, você pode simplesmente estar na mesma linha do erro para invocar sugestões para qualquer item nessa linha.
 
-## <a name="see-also"></a>Veja também
- [Configurando a](../../ide/reference/setting-language-specific-editor-options.md) [refatoração de opções do C++ editor específico de idioma (blog do vc)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+## <a name="see-also"></a>Consulte Também
+ [Configurando a](../../ide/reference/setting-language-specific-editor-options.md) [refatoração de opções do editor de idioma específico no C++ (blog do vc)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

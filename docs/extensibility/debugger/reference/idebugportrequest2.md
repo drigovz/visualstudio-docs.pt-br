@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724790"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
-Esta interface descreve uma porta. Esta descrição é usada para adicionar a porta a um fornecedor de porta.
+Esta interface descreve uma porta. Essa descrição é usada para adicionar a porta a um fornecedor de porta.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortRequest2 : IUnknown
@@ -32,24 +32,24 @@ IDebugPortRequest2 : IUnknown
  O Visual Studio normalmente implementa essa interface no processo de obter uma porta de depuração de um fornecedor de porta.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Essa interface é passada para [o AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) para criar uma porta de depuração. Uma chamada para [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) retorna esta interface, representando a solicitação usada para criar a porta em primeiro lugar.
+ Essa interface é passada em [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) para criar uma porta de depuração. Uma chamada para [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) retorna essa interface, representando a solicitação usada para criar a porta em primeiro lugar.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugPortRequest2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugPortRequest2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Recebe o nome da porta para criar.|
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtém o nome da porta a ser criada.|
 
 ## <a name="remarks"></a>Comentários
- Um mecanismo de depuração normalmente não interage com um fornecedor de porta e não terá uso para esta interface.
+ Um mecanismo de depuração normalmente não interage com um fornecedor de porta e não terá uso para essa interface.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

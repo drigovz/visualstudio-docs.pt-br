@@ -38,16 +38,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852015"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos do usuário aos quais seu sistema de software deve dar suporte. Por exemplo, para descrever e comunicar os requisitos do usuário, você pode usar os diagramas de caso de uso, atividade, classe e sequência do Unified Modeling Language (UML). Para descrever e comunicar a funcionalidade de seu sistema, é possível usar o componente, a classe, a atividade e os diagramas de sequência UML.
+Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário para os quais seu sistema de software deve dar suporte. Por exemplo, para descrever e comunicar os requisitos do usuário, você pode usar os diagramas de caso de uso, atividade, classe e sequência do Unified Modeling Language (UML). Para descrever e comunicar a funcionalidade do seu sistema, você pode usar os diagramas de componente, classe, atividade e Sequência UML.
 
  Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
@@ -78,12 +78,12 @@ Diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias so
 |[Criar projetos e diagramas de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Crie modelos** e adicione diagramas.|
 |[Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Desenhe diagramas** para editar o modelo.|
 |[Definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md)|**Crie pacotes** para dividir um modelo em unidades em que diferentes membros da equipe podem trabalhar.|
-|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gere C# código de diagramas de classe** para iniciar sua implementação.|
+|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gere código C# de diagramas de classe** para iniciar sua implementação.|
 |[Personalizar o modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalize elementos de modelo** usando estereótipos para estender os elementos de modelo UML padrão para fins específicos.|
 |[Vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md)|**Crie links entre elementos de modelo e itens de trabalho** para ajudá-lo a acompanhar tarefas, casos de teste, bugs, requisitos, problemas ou outros tipos de trabalho associados a partes específicas do seu modelo.|
-|[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|**Salve seu modelo e diagramas** para que você possa compartilhá-los com outros usuários, incluindo aqueles que não usam [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
+|[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|**Salve seu modelo e diagramas** para que você possa compartilhá-los com outros usuários, incluindo aqueles que não usam [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] .|
 
-## <a name="related-tasks"></a>Tarefas relacionadas
+## <a name="related-tasks"></a>Related Tasks
 
 |**Tópico**|**Tarefa**|
 |---------------|--------------|
@@ -94,8 +94,8 @@ Diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias so
 |[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar seu sistema durante seu desenvolvimento.|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto grande ou médio.|
 
-## <a name="external-resources"></a>Recursos Externos
+## <a name="external-resources"></a>Recursos externos
 
 |**Categoria**|**Links**|
 |------------------|---------------|
-|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
+|**Fóruns**|-   [Ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [SDK de modelagem de & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

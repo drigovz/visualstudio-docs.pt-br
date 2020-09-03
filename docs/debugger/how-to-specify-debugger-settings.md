@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349101"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
@@ -41,7 +41,7 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especif
 
 4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

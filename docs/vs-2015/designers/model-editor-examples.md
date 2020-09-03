@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c382813d1f6fb2372ccc78ade6d14404fb1751c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664218"
 ---
 # <a name="model-editor-examples"></a>Exemplos do Editor de Modelo
@@ -25,7 +25,7 @@ Os artigos desta seção da documentação contêm exemplos que demonstram como 
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)|Descreve como criar um modelo 3D básico.|
+|[Como: criar um modelo básico 3D](../designers/how-to-create-a-basic-3-d-model.md)|Descreve como criar um modelo 3D básico.|
 |[Como modificar o ponto dinâmico de um modelo 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Descreve como modificar o ponto dinâmico e a escala de um modelo 3D.|
 |[Como modelar terreno 3D](../designers/how-to-model-3-d-terrain.md)|Descreve como criar uma cena de um cenário básico.|
-|[Como aplicar um sombreador a um modelo 3-D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Descreve como aplicar um sombreador a um modelo 3D.|
+|[Como: aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Descreve como aplicar um sombreador a um modelo 3D.|

@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dc13bb3c27507070d829ce9a9600de983e273f43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656677"
 ---
 # <a name="flowchart-activity-designers"></a>Designer de atividade do fluxograma
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número o sistema forneceu as atividades que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para gerenciar fluxogramas em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui uma série de atividades fornecidas pelo sistema que você pode usar ao construir seus fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para gerenciar fluxogramas em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
 
 ## <a name="in-this-section"></a>Nesta seção
  [Fluxograma](../workflow-designer/flowchart-activity-designer.md) **usado para criar fluxos de trabalho que definem e gerenciam controles de fluxo complexos.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md) Fornece uma ramificação para o fluxo de controle em uma das duas alternativas com base em se uma condição especificada é satisfeita.
 
- [FlowSwitch \<T >](../workflow-designer/flowswitch-t-activity-designer.md) Fornece ramificação para o fluxo de controle com base no critério de correspondência quando mais de dois branches alternativos são necessários.
+ [FlowSwitch \<T> ](../workflow-designer/flowswitch-t-activity-designer.md) Fornece ramificação para o fluxo de controle com base no critério de correspondência quando mais de dois branches alternativos são necessários.
 
 ## <a name="reference"></a>Referência
  <xref:System.Activities.Activity>
@@ -42,9 +42,9 @@ ms.locfileid: "72656677"
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+ [Runtime](../workflow-designer/runtime-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+ [Primitivos](../workflow-designer/primitives-activity-designers.md)
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 

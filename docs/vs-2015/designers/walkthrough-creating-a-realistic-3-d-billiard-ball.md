@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando uma bola de Billiard 3-D realista | Microsoft Docs'
+title: 'Passo a passo: criando uma bola de bilhar realística em 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf039695f342d58cd70a9859d73932e3a0100e01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664102"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Passo a passo: Criar uma bola de bilhar realística em 3D
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Explicação passo a passo: Criando uma bola de bilhar realística em 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usando o Designer de Sombreador e o Editor de Imagens em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A aparência 3D da bola de bilhar é obtida pela combinação de várias técnicas de sombreador com recursos de textura adequados.
@@ -31,7 +31,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
 - Criando um senso de espaço refletindo o ambiente.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes e habilidades para concluir este passo a passo:
 
 - Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.
@@ -65,11 +65,11 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
     A textura deverá ser parecida com esta:
 
-    ![Textura da bola de Billiard](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")
+    ![Textura para a bola de bilhar](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")
 
 4. Opcionalmente, você talvez queira diminuir os requisitos de armazenamento dessa textura. Você pode fazer isso reduzindo a largura da textura para corresponder a sua altura. Isso compacta a textura ao longo de sua largura, mas devido à maneira que a textura é mapeada para a esfera, ela será expandida quando a bola de bilhar for renderizada. Após o redimensionamento, a textura deverá ser parecida com esta:
 
-    ![Textura Billiard compactada em um quadrado](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")
+    ![Textura de bilhar compactada em um quadrado](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")
 
    Agora você pode criar um sombreador que se aplica a esse tipo de textura para o modelo.
 
@@ -79,19 +79,19 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
     Por padrão, um grafo de sombreador tem esta aparência:
 
-    ![O grafo do sombreador padrão](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")
+    ![O grafo de sombreador padrão](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")
 
 2. Modifique o sombreador padrão para que ele seja aplicado ao valor de uma amostra de textura ao pixel atual. O gráfico de sombreador deve ter esta aparência:
 
-    ![Um grafo de sombreador que aplica textura a um objeto](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")
+    ![Um grafo sombreador que aplica textura a um objeto](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")
 
 3. Aplique a textura que você criou no procedimento anterior ao configurar as propriedades de textura. Defina o valor da propriedade **Textura** do nó **Amostra de Textura** em **Texture1** e, em seguida, especifique o arquivo de textura usando a propriedade **Filename** do grupo de propriedades **Texture1** na mesma janela de propriedade.
 
-   Para obter mais informações sobre como aplicar uma textura no sombreador, confira [Como: Crie um sombreador de textura básico ](../designers/how-to-create-a-basic-texture-shader.md).
+   Para obter mais informações sobre como aplicar uma textura em seu sombreador, consulte [como: criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).
 
    Sua bola de bilhar agora deve ser semelhante a esta:
 
-   ![Uma closeup da bola de Billiard texturizada](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")
+   ![Uma vista de perto da bola de bilhar texturizada](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")
 
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>Criando profundidade com o modelo de iluminação Lambert
  Até agora, você criou uma bola de bilhar facilmente reconhecível. No entanto, ela é plana e desinteressante — mais como uma imagem de desenho de uma bola de bilhar do que uma réplica convincente. A aparência plana é resultado do sombreador simplista, que se comporta como se cada pixel na superfície da bola de bilhar recebesse a mesma quantidade de luz.
@@ -104,15 +104,15 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
 - Modifique seu sombreador para variar o valor da amostra de textura pelo valor de iluminação Lambert. Seu gráfico de sombreador deve ter esta aparência:
 
-   ![O grafo do sombreador com iluminação Lambert adicionada](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")
+   ![O grafo de sombreador com iluminação Lambert adicionada](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")
 
 - Opcionalmente, você pode ajustar o comportamento da iluminação configurando a propriedade **MaterialDiffuse** do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
-  Para obter mais informações sobre como aplicar a iluminação Lambert no sombreador, confira [Como: Crie um ](../designers/how-to-create-a-basic-lambert-shader.md) de sombreador Lambert básico.
+  Para obter mais informações sobre como aplicar a iluminação Lambert em seu sombreador, consulte [como: criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
   Com a iluminação Lambert aplicada, a bola de bilhar deve ser semelhante a esta:
 
-  ![Uma closeup da bola de Billiard texturizada e acesa](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")
+  ![Uma vista de perto da bola de bilhar acesa e texturizada](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")
 
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Aprimorando a aparência básica com realces especulares
  O modelo de iluminação Lambert fornece o senso de forma e dimensão que estava ausente no sombreador somente textura. No entanto, a bola de bilhar ainda tem uma aparência um pouco fosca.
@@ -125,15 +125,15 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
 1. Modifique seu sombreador para incluir a contribuição especular usando combinação aditiva. Seu gráfico de sombreador deve ter esta aparência:
 
-    ![O grafo do sombreador com iluminação especular adicionado](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")
+    ![O grafo de sombreador com iluminação especular adicionada](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")
 
 2. Opcionalmente, você pode ajustar a maneira que o realce especular se comporta ao configurar as propriedades especulares (**MaterialSpecular** e **MaterialSpecularPower**) do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.
 
-   Para obter mais informações sobre como aplicar realces especulares no sombreador, confira [Como: Crie um ](../designers/how-to-create-a-basic-phong-shader.md) de sombreador Phong básico.
+   Para obter mais informações sobre como aplicar realces especulares em seu sombreador, consulte [como: criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).
 
    Com a iluminação especular aplicada, sua bola de bilhar deve ser semelhante a esta:
 
-   ![Uma closeup da bola Billiard com especulação adicionada](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")
+   ![Uma vista de perto da bola de bilhar com especular adicionado](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")
 
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Criando um senso de espaço ao refletir o ambiente
  Com os realces especulares aplicados, a bola de bilhar parece muito convincente. Ela tem a forma, o trabalho de pintura e o acabamento corretos. No entanto, ainda há uma técnica que fará com que a bola de bilhar pareça fazer parte de seu ambiente.
@@ -186,7 +186,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
    Você pode imaginar o layout do mapa de cubo como este:
 
-   ![Layout do mapa do cubo do ambiente](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")
+   ![Layout do mapa de cubo do ambiente](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")
 
    A imagem na parte superior é a face do cubo Y positivo (+ Y); no meio, da esquerda para a direita, é – X, + Z, +X e –Z; na parte inferior, é – Y.
 
@@ -196,13 +196,13 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
 1. Modifique seu sombreador para incluir a contribuição do mapeamento de ambiente usando combinação aditiva. Seu gráfico de sombreador deve ter esta aparência:
 
-    ![Um closeup dos dois tipos de nós de sombreador reflexivo](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")
+    ![Uma vista de perto dos dois tipos de nós do sombreador reflexivo](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")
 
     Observe que você pode usar um nó de **Adição Múltipla** nó para simplificar o gráfico do sombreador.
 
     Aqui está uma visão mais detalhada dos nós do sombreador que implementam o mapeamento de ambiente:
 
-    ![O grafo do sombreador com o mapeamento de ambiente adicionado](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")
+    ![O grafo de sombreador com o mapeamento de ambiente adicionado](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")
 
 2. Aplique a textura que você criou no procedimento anterior ao configurar as propriedades de textura do mapa de cubo. Defina o valor da propriedade **Textura** do nó **Amostra do Mapa de Cubo** em **Texture2** e, em seguida, especifique o arquivo de textura usando a propriedade **Filename** do grupo de propriedades **Texture2**.
 
@@ -210,9 +210,9 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
 
    Com o mapeamento de ambiente aplicado, a bola de bilhar deve ser semelhante a esta:
 
-   ![Uma closeup do ambiente Billiard Ball mapeado](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")
+   ![Uma vista de perto da bola de bilhar de ambiente mapeada](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")
 
    Nesta imagem final, observe como os efeitos que você adicionou se unem para criar uma bola de bilhar muito convincente. A forma, a textura e a iluminação criam a aparência básica de um objeto 3D e os realces especulares e os reflexos tornam a bola de bilhar mais interessante e fazem com que ela pareça fazer parte do ambiente.
 
-## <a name="see-also"></a>Consulte também
- [Como: Exportar um sombreador ](../designers/how-to-export-a-shader.md) [How para: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) os [nós designer de sombreador](../designers/shader-designer-nodes.md) do [Editor de imagem](../designers/image-editor.md) do [sombreador de designer](../designers/shader-designer.md)
+## <a name="see-also"></a>Consulte Também
+ [Como exportar um sombreador](../designers/how-to-export-a-shader.md) [como aplicar um sombreador a um](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Shader Designer](../designers/shader-designer.md) [Editor de imagem](../designers/image-editor.md) do designer [de sombreador](../designers/shader-designer-nodes.md) de modelo de 3D.

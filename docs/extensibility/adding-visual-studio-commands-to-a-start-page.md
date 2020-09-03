@@ -13,34 +13,34 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 13dd40006039209b06cc6a71760fdbaa240db4fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740116"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>Adicionar comandos do Visual Studio a uma página inicial
 
-Quando você cria uma página inicial personalizada, você pode adicionar comandos do Visual Studio a ela. Este documento discute as diferentes maneiras de vincular comandos do Visual Studio a objetos XAML em uma página inicial.
+Ao criar uma página inicial personalizada, você pode adicionar comandos do Visual Studio a ela. Este documento discute as diferentes maneiras de associar comandos do Visual Studio a objetos XAML em uma página inicial.
 
-Para obter mais informações sobre comandos no XAML, consulte [Visão geral do Comando](/dotnet/framework/wpf/advanced/commanding-overview)
+Para obter mais informações sobre comandos em XAML, consulte [visão geral](/dotnet/framework/wpf/advanced/commanding-overview) de comandos
 
-## <a name="add-commands-from-the-command-well"></a>Adicionar comandos do comando bem
+## <a name="add-commands-from-the-command-well"></a>Adicionar comandos do bem-sucommand
 
-A página inicial criada em Criar uma <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> página [inicial personalizada](../extensibility/creating-a-custom-start-page.md) adicionou os espaços de nome e nomes, da seguinte forma.
+A página inicial criada em [criar uma página inicial personalizada](../extensibility/creating-a-custom-start-page.md) adicionou os <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> namespaces e, da seguinte maneira.
 
 ```xml
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-Adicione outro namespace para Microsoft.VisualStudio.Shell a partir do conjunto *Microsoft.VisualStudio.Shell.Immutável.11.0.dll*. (Você pode precisar adicionar uma referência a esta montagem em seu projeto.)
+Adicione outro namespace para Microsoft. VisualStudio. Shell a partir do assembly *Microsoft.VisualStudio.Shell.Immutable.11.0.dll*. (Talvez seja necessário adicionar uma referência a esse assembly em seu projeto.)
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-Você pode `vscom:` usar o alias para vincular os comandos do Visual <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> Studio aos controles `vscom:VSCommands.ExecuteCommand`XAML na página, definindo a propriedade do controle para . Em seguida, <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> você pode definir a propriedade para o nome do comando para executar, como mostrado no exemplo a seguir.
+Você pode usar o `vscom:` alias para associar comandos do Visual Studio a controles XAML na página definindo a <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> Propriedade do controle como `vscom:VSCommands.ExecuteCommand` . Em seguida, você pode definir a <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> propriedade como o nome do comando a ser executado, conforme mostrado no exemplo a seguir.
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -52,9 +52,9 @@ Você pode `vscom:` usar o alias para vincular os comandos do Visual <xref:Syste
 > [!NOTE]
 > O `x:` alias, que se refere ao esquema XAML, é necessário no início de todos os comandos.
 
- Você pode definir o `Command` valor da propriedade para qualquer comando que possa ser acessado a partir da janela **comando.** Para obter uma lista de comandos disponíveis, consulte [aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+ Você pode definir o valor da `Command` propriedade para qualquer comando que possa ser acessado na janela de **comando** . Para obter uma lista de comandos disponíveis, consulte [aliases de comando do Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
- Se o comando para adicionar exigir um parâmetro adicional, você `CommandParameter` pode adicioná-lo ao valor da propriedade. Separe parâmetros dos comandos usando espaços, como mostrado no exemplo a seguir.
+ Se o comando a ser adicionado exigir um parâmetro adicional, você poderá adicioná-lo ao valor da `CommandParameter` propriedade. Separe os parâmetros dos comandos usando espaços, conforme mostrado no exemplo a seguir.
 
 ```xml
 <Button Content="Web Search"
@@ -62,40 +62,40 @@ Você pode `vscom:` usar o alias para vincular os comandos do Visual <xref:Syste
         CommandParameter="View.WebBrowser www.bing.com" />
 ```
 
-### <a name="call-extensions-from-the-command-well"></a>Chamada extensões do comando bem
- Você pode chamar comandos de VSPackages registrados usando a mesma sintaxe que é usada para chamar outros comandos do Visual Studio. Por exemplo, se um VSPackage instalado adicionar um comando **Home Page** ao menu `View.HomePage` **Exibir,** você poderá chamar esse comando configurando `CommandParameter` para .
+### <a name="call-extensions-from-the-command-well"></a>Chamar extensões do comando
+ Você pode chamar comandos de VSPackages registrados usando a mesma sintaxe usada para chamar outros comandos do Visual Studio. Por exemplo, se um VSPackage instalado Adicionar um comando **Home Page** ao menu **Exibir** , você poderá chamar esse comando definindo `CommandParameter` como `View.HomePage` .
 
 > [!NOTE]
-> Se você chamar um comando associado a um VSPackage, o pacote deve ser carregado quando o comando é invocado.
+> Se você chamar um comando associado a um VSPackage, o pacote deverá ser carregado quando o comando for invocado.
 
-## <a name="add-commands-from-assemblies"></a>Adicionar comandos de assembléias
- Para chamar um comando de um conjunto ou para acessar o código em um VSPackage que não esteja associado a um comando de menu, você deve criar um alias para o conjunto e, em seguida, chamar o alias.
+## <a name="add-commands-from-assemblies"></a>Adicionar comandos de assemblies
+ Para chamar um comando de um assembly ou para acessar o código em um VSPackage que não está associado a um comando de menu, você deve criar um alias para o assembly e, em seguida, chamar o alias.
 
-### <a name="to-call-a-command-from-an-assembly"></a>Para chamar um comando de uma assembléia
+### <a name="to-call-a-command-from-an-assembly"></a>Para chamar um comando de um assembly
 
-1. Na sua solução, adicione uma referência à montagem.
+1. Em sua solução, adicione uma referência ao assembly.
 
-2. Na parte superior do arquivo *StartPage.xaml,* adicione uma diretiva namespace para o conjunto, conforme mostrado no exemplo a seguir.
+2. Na parte superior do arquivo *Startpage. XAML* , adicione uma diretiva de namespace para o assembly, conforme mostrado no exemplo a seguir.
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3. Invoque o `Command` comando definindo a propriedade de um objeto XAML, como mostrado no exemplo a seguir.
+3. Invoque o comando definindo a `Command` propriedade de um objeto XAML, conforme mostrado no exemplo a seguir.
 
-     Xaml
+     XAML
 
     ```
     <vs:Button Text="Hide me" Command="{x:Static vsc:HideControl}" .../>
     ```
 
 > [!NOTE]
-> Você deve copiar sua montagem e depois colá-la em *.. \\{Pasta de instalação do Visual Studio}\Common7\IDE\PrivateAssemblies\* para ter certeza de que está carregada antes de ser chamada.
+> Você deve copiar seu assembly e, em seguida, colá-lo em *.. \\ {Pasta de instalação do Visual Studio} \Common7\IDE\PrivateAssemblies \* para certificar-se de que ela está carregada antes de ser chamada.
 
 ## <a name="add-commands-with-the-dte-object"></a>Adicionar comandos com o objeto DTE
- Você pode acessar o objeto DTE a partir de uma Página inicial, tanto na marcação quanto no código.
+ Você pode acessar o objeto DTE a partir de uma página inicial, tanto na marcação quanto no código.
 
- Na marcação, você pode acessá-lo usando a <xref:EnvDTE.DTE> sintaxe [de extensão de marcação vinculante](/dotnet/framework/wpf/advanced/binding-markup-extension) para chamar o objeto. Você pode usar essa abordagem para vincular-se a propriedades simples, como aquelas que retornam coleções, mas você não pode se vincular a métodos ou serviços. O exemplo a <xref:System.Windows.Controls.TextBlock> seguir mostra um <xref:EnvDTE._DTE.Name%2A> controle que <xref:System.Windows.Controls.ListBox> se liga ao <xref:EnvDTE.Window.Caption%2A> imóvel, e um controle que <xref:EnvDTE._DTE.Windows%2A> enumera as propriedades do acervo que é devolvido pelo imóvel.
+ Na marcação, você pode acessá-lo usando a sintaxe de [extensão de marcação de associação](/dotnet/framework/wpf/advanced/binding-markup-extension) para chamar o <xref:EnvDTE.DTE> objeto. Você pode usar essa abordagem para associar propriedades simples, como aquelas que retornam coleções, mas não é possível associar a métodos ou serviços. O exemplo a seguir mostra um <xref:System.Windows.Controls.TextBlock> controle que é associado à <xref:EnvDTE._DTE.Name%2A> propriedade e um <xref:System.Windows.Controls.ListBox> controle que enumera as <xref:EnvDTE.Window.Caption%2A> Propriedades da coleção que é retornada pela <xref:EnvDTE._DTE.Windows%2A> propriedade.
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>
@@ -108,7 +108,7 @@ Você pode `vscom:` usar o alias para vincular os comandos do Visual <xref:Syste
 </ListBox
 ```
 
- Por exemplo, consulte [Passo a Passo: Salvando as configurações](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)do usuário em uma página inicial .
+ Para obter um exemplo, consulte [Walkthrough: salvar as configurações do usuário em uma página inicial](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).
 
 ## <a name="see-also"></a>Confira também
 

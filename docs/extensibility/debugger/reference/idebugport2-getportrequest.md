@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortRequest | Microsoft Docs
+title: 'IDebugPort2:: GetPortRequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48d39ea10e8425d5449444514489ac4b73c0a3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725339"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
@@ -39,12 +39,12 @@ int GetPortRequest( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `ppRequest`\
-[fora] Retorna um objeto [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) representando a solicitação usada para criar a porta.
+fora Retorna um objeto [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) que representa a solicitação que foi usada para criar a porta.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.  Retorna `E_PORT_NO_REQUEST` se uma porta não foi criada usando uma solicitação de porta [IDebugPortRequest2.](../../../extensibility/debugger/reference/idebugportrequest2.md)
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  Retorna `E_PORT_NO_REQUEST` se uma porta não foi criada usando uma solicitação de porta [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) .
 
 ## <a name="see-also"></a>Confira também
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

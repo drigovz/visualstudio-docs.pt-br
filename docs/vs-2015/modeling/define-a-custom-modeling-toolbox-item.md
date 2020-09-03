@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851512"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
@@ -34,7 +34,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 > [!NOTE]
 > Você pode usar esse método para criar ferramentas de elemento. Ou seja, você pode criar ferramentas que você arrasta da caixa de ferramentas para um diagrama. Você não pode criar ferramentas de conector.
 
-## <a name="DefineTool"></a>Definindo uma ferramenta de modelagem personalizada
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> Definindo uma ferramenta de modelagem personalizada
 
 #### <a name="to-define-a-custom-modeling-tool"></a>Para definir uma ferramenta de modelagem personalizada
 
@@ -83,8 +83,8 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 - Roteamento de conector. Se você rotear conectores manualmente, o roteamento não será preservado quando sua ferramenta for usada. As posições de algumas formas aninhadas, como portas, não são preservadas em relação aos seus proprietários.
 
-## <a name="tbxinfo"></a>Como definir as propriedades de ferramentas personalizadas
- Um arquivo de informações da caixa de ferramentas ( **. tbxinfo**) permite que você especifique um nome de caixa de ferramentas, ícone, dica de ferramenta, guia e palavra-chave de ajuda para uma ou mais ferramentas personalizadas. Dê a ele qualquer nome, como **MyTools. tbxinfo**.
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> Como definir as propriedades de ferramentas personalizadas
+ Um arquivo de informações da caixa de ferramentas (**. tbxinfo**) permite que você especifique um nome de caixa de ferramentas, ícone, dica de ferramenta, guia e palavra-chave de ajuda para uma ou mais ferramentas personalizadas. Dê a ele qualquer nome, como **MyTools. tbxinfo**.
 
  A forma geral do arquivo é a seguinte:
 
@@ -111,9 +111,9 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
  O valor de cada item pode ser:
 
-- Conforme mostrado no exemplo, `<bmp fileName="…"/>` para o ícone caixa de ferramentas e `<value>string</value>` para os outros itens.
+- Conforme mostrado no exemplo, `<bmp fileName="…"/>` para o ícone da caixa de ferramentas e `<value>string</value>` para os outros itens.
 
-  \- ou -
+  \- ou –
 
 - `<resource fileName="Resources.dll"`
 
@@ -121,7 +121,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
    Nesse caso, você fornece um assembly compilado no qual os valores da cadeia de caracteres foram compilados como recursos.
 
-  Adicione um nó `<customToolboxItem>` para cada item da caixa de ferramentas que você deseja definir.
+  Adicione um `<customToolboxItem>` nó para cada item da caixa de ferramentas que você deseja definir.
 
   Os nós no arquivo **. tbxinfo** são os seguintes. Há um valor padrão para cada nó.
 
@@ -129,19 +129,19 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 |---------------|-------------|
 |displayName|O nome do item da caixa de ferramentas.|
 |tabName|A guia caixa de ferramentas na qual o item deve aparecer. Você pode especificar o nome da guia regular para este tipo de diagrama ou um nome separado.|
-|imagem|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
+|image|O local do arquivo de bitmap (**. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
 |f1Keyword|A palavra-chave que localiza um tópico da ajuda.|
-|tooltip|Uma dica de ferramentas para esta ferramenta.|
+|dessa|Uma dica de ferramentas para esta ferramenta.|
 
  Você pode editar o arquivo de bitmap no Visual Studio e definir sua altura e largura como 16 no janela Propriedades.
 
 > [!NOTE]
 > Se você começar a usar um arquivo. tbxinfo depois de experimentar usando arquivos de diagrama por conta própria, talvez descubra que a caixa de ferramentas contém as versões antiga e nova de um item da caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama tiver sido digitado no arquivo. tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas, escolha **Redefinir caixa de ferramentas**. Os itens da caixa de ferramentas personalizada desaparecerão. Reinicie o Visual Studio e os itens personalizados corretos serão exibidos.
 
-## <a name="Extension"></a>Como distribuir itens da caixa de ferramentas em uma extensão do Visual Studio
- Você pode distribuir itens da caixa de ferramentas para outros usuários [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Como distribuir itens da caixa de ferramentas em uma extensão do Visual Studio
+ Você pode distribuir itens da caixa de ferramentas para outros [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usuários, empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
- A maneira usual de criar uma extensão do Visual Studio é usar o modelo de projeto VSIX. Para fazer isso, você deve ter o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]instalado.
+ A maneira usual de criar uma extensão do Visual Studio é usar o modelo de projeto VSIX. Para fazer isso, você deve ter o instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] .
 
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Para adicionar um item da caixa de ferramentas a uma extensão do Visual Studio
 
@@ -151,13 +151,13 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 3. Abra um projeto de extensão existente do Visual Studio.
 
-     \- ou -
+     \- ou –
 
      Defina um novo projeto de extensão do Visual Studio.
 
     1. No menu **Arquivo**, escolha **Novo**, **Projeto**.
 
-    2. Na caixa de diálogo **novo projeto** , em **modelos instalados**, escolha **Visual C#** , **extensibilidade**e **projeto VSIX**.
+    2. Na caixa de diálogo **novo projeto** , em **modelos instalados**, escolha **Visual C#**, **extensibilidade**, **projeto VSIX**.
 
 4. Adicione suas definições de caixa de ferramentas ao projeto. Inclua o arquivo **. tbxinfo** , os arquivos de diagrama, os arquivos de bitmap e os arquivos de recurso e verifique se eles estão incluídos no VSIX.
 
@@ -168,11 +168,11 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 5. Defina as propriedades a seguir de todos os arquivos que você acabou de adicionar. Você pode definir suas propriedades ao mesmo tempo selecionando-as em Gerenciador de Soluções. Tenha cuidado para não alterar as propriedades dos outros arquivos no projeto.
 
-     **Copiar para o diretório de saída** = **copiar sempre**
+     **Copiar para diretório**  =  de saída **Copiar sempre**
 
-     **Ação de Compilação** = **Conteúdo**
+     **Ação**  =  de Build **Conteúdo** do
 
-     **Incluir no VSIX** = **verdadeiro**
+     **Incluir no VSIX**  =  **verdadeiro**
 
 6. Open **Source. Extension. vsixmanifest**. Ele é aberto no editor de manifesto de extensão.
 
@@ -180,28 +180,28 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
      Em **ativos**, escolha **novo** e, em seguida, defina os campos na caixa de diálogo da seguinte maneira:
 
-    - **Tipo** = **tipo de extensão personalizada**
+    - **Tipo**  =  de **Tipo de extensão personalizada**
 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Essa não é uma das opções na lista suspensa. Você precisa inseri-lo usando o teclado.
 
-    - **Arquivo de = de origem no sistema de arquivos**.
+    - **Origem**  =  do **Arquivo no sistema de arquivos**.
 
     - **Caminho** = seu arquivo **. tbxinfo** , por exemplo, **MyTools. tbxinfo**
 
-8. Crie o projeto.
+8. Compile o projeto.
 
 9. **Para verificar se a extensão funciona**, pressione F5. A instância experimental do Visual Studio é iniciada.
 
      Na instância experimental, crie ou abra um diagrama UML do tipo relevante. Verifique se a nova ferramenta aparece na caixa de ferramentas e se ela cria elementos corretamente.
 
-10. **Para obter um arquivo VSIX para implantação:** No Windows Explorer, abra a pasta **.\bin\Debug** ou **.\bin\Release** para localizar o arquivo **. vsix** . Este é um arquivo de extensão [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Ele pode ser instalado em seu computador e também enviado para outros usuários do Visual Studio.
+10. **Para obter um arquivo VSIX para implantação:** No Windows Explorer, abra a pasta **.\bin\Debug** ou **.\bin\Release** para localizar o arquivo **. vsix** . Este é um [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] arquivo de extensão. Ele pode ser instalado em seu computador e também enviado para outros usuários do Visual Studio.
 
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Para instalar ferramentas personalizadas de uma extensão do Visual Studio
 
-1. Abra o arquivo `.vsix` no Windows Explorer ou no Visual Studio.
+1. Abra o `.vsix` arquivo no Windows Explorer ou no Visual Studio.
 
 2. Escolha **instalar** na caixa de diálogo exibida.
 
@@ -214,13 +214,13 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 1. Crie um projeto de extensão do Visual Studio que contenha uma ou mais ferramentas personalizadas.
 
-    No arquivo **. tbxinfo** , use o método do arquivo de recurso para definir o `displayName`, a caixa de ferramentas `tabName`e a dica de ferramenta da ferramentas. Crie um arquivo de recurso no qual essas cadeias de caracteres são definidas, compile-o em um assembly e consulte-o no arquivo tbxinfo.
+    No arquivo **. tbxinfo** , use o método de arquivo de recurso para definir as ferramentas `displayName` , a caixa de ferramentas `tabName` e a dica de ferramenta. Crie um arquivo de recurso no qual essas cadeias de caracteres são definidas, compile-o em um assembly e consulte-o no arquivo tbxinfo.
 
 2. Crie assemblies adicionais que contenham arquivos de recursos com cadeias de caracteres em outras linguagens.
 
 3. Coloque cada assembly adicional em uma pasta cujo nome é o código de cultura do idioma. Por exemplo, coloque uma versão em francês do assembly dentro de uma pasta chamada **fr**.
 
-4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que fornece uma lista completa de códigos de cultura.
+4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA` . Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que fornece uma lista completa de códigos de cultura.
 
 5. Crie a extensão do Visual Studio e distribua-a.
 
@@ -229,9 +229,9 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
    Você não pode usar esse método para instalar versões diferentes do diagrama de protótipo. Os nomes de elementos e conectores serão os mesmos em todas as instalações.
 
 ## <a name="other-toolbox-operations"></a>Outras operações da caixa de ferramentas
- Normalmente, no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode personalizar a caixa de ferramentas renomeando as ferramentas, movendo-as para diferentes guias da caixa de ferramentas e excluindo-as. Mas essas alterações não persistem para ferramentas de modelagem personalizadas criadas com os procedimentos descritos neste tópico. Quando você reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], as ferramentas personalizadas reaparecerão com seus nomes definidos e locais da caixa de ferramentas.
+ Normalmente, no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , você pode personalizar a caixa de ferramentas renomeando as ferramentas, movendo-as para diferentes guias da caixa de ferramentas e excluindo-as. Mas essas alterações não persistem para ferramentas de modelagem personalizadas criadas com os procedimentos descritos neste tópico. Quando você reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , as ferramentas personalizadas reaparecerão com seus nomes definidos e locais da caixa de ferramentas.
 
- Além disso, suas ferramentas personalizadas desaparecerão se você executar o comando **Redefinir caixa de ferramentas** . No entanto, eles serão reexibidos quando você reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ Além disso, suas ferramentas personalizadas desaparecerão se você executar o comando **Redefinir caixa de ferramentas** . No entanto, eles serão reexibidos quando você reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)

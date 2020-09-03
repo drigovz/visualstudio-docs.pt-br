@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9a31b4c4182ed67a3e67d3c25c2c5ccf50e083f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664056"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Valor (propriedade dinâmica de XAttribute)
@@ -25,13 +25,13 @@ ms.locfileid: "72664056"
 
 Obtém ou define o valor de atributo XML.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 attrib.Value
 ```
 
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno
+## <a name="property-valuereturn-value"></a>Valor da propriedade/Valor do retorno
  <xref:System.String> que contém o valor deste atributo.
 
 ## <a name="exceptions"></a>Exceções
@@ -43,5 +43,5 @@ attrib.Value
 ## <a name="remarks"></a>Comentários
  Esta propriedade é equivalente à propriedade de <xref:System.Xml.Linq.XAttribute.Value%2A> da classe de <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> , mas suporta essa propriedade dinâmica também alterar notificações.
 
-## <a name="see-also"></a>Consulte também
- <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName> [atributo](../designers/attribute-xelement-dynamic-property.md) de [propriedades dinâmicas da classe XAttribute](../designers/xattribute-class-dynamic-properties.md)
+## <a name="see-also"></a>Consulte Também
+ <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>[Atributo](../designers/attribute-xelement-dynamic-property.md) de [propriedades dinâmicas da classe XAttribute](../designers/xattribute-class-dynamic-properties.md)

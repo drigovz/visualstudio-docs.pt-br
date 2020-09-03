@@ -14,10 +14,10 @@ caps.latest.revision: 23
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f5e62fe83d644b577d7d0a5f87312642f438c490
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851180"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Explicação passo a passo: Criando e executando testes de unidade de aplicativos da Windows Store
@@ -40,10 +40,10 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
   Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .
 
-## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
- {1&gt;Visual Studio&lt;1}
+## <a name="prerequisites"></a>Pré-requisitos
+ Visual Studio
 
-## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Criar projetos de teste de unidade
+## <a name="create-unit-test-projects"></a><a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Criar projetos de teste de unidade
 
 #### <a name="to-create-a-unit-test-project-for-a-windows-store-app"></a>Para criar um projeto de teste de unidade para um aplicativo da Windows Store
 
@@ -51,7 +51,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      A caixa de diálogo Novo Projeto é exibida.
 
-2. Em Modelos, escolha a linguagem de programação com a qual você quer criar o teste de unidade e escolha a biblioteca de teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associada. Por exemplo, escolha **Visual C#** , depois escolha **Windows Store** e escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)** .
+2. Em Modelos, escolha a linguagem de programação com a qual você quer criar o teste de unidade e escolha a biblioteca de teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associada. Por exemplo, escolha **Visual C#**, depois escolha **Windows Store** e escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)**.
 
     > [!NOTE]
     > O Visual Studio inclui modelos de biblioteca de teste de unidade para Visual C#, Visual Basic e Visual C++.
@@ -64,13 +64,13 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
 6. Deixe a opção **Criar diretório para solução** selecionada e escolha o botão **OK**.
 
-     ![Biblioteca de teste de unidade personalizada](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
+     ![Biblioteca de teste de unidade adaptada](../test/media/unit-test-win8-1.png "Unit_Test_Win8_1")
 
      O Gerenciador de soluções é preenchido com seu novo projeto de teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e o editor de códigos exibe o teste de unidade padrão intitulado UnitTest1.
 
-     ![Novo projeto de teste de unidade personalizado](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+     ![Novo projeto de teste de unidade adaptado](../test/media/unit-test-win8-unittestexplorer-newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
 
-## <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Editar o manifesto para o projeto de teste de unidade
+## <a name="edit-the-manifest-for-the-unit-test-project"></a><a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a> Editar o manifesto para o projeto de teste de unidade
  Talvez seja necessário editar o manifesto do projeto de teste de unidade a fim de fornecer os recursos necessários para executar o aplicativo.
 
 #### <a name="to-edit-the-unit-test-projects-windows-store-application-manifest-file"></a>Para editar o arquivo manifesto do aplicativo da Windows Store do projeto de teste de unidade
@@ -79,7 +79,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      O Designer de Manifesto é exibido para edição.
 
-2. No Designer de Manifesto, escolha a guia **Funcionalidades**.
+2. No designer de manifesto, escolha a guia **recursos** .
 
 3. Na lista em **Funcionalidades**, selecione as funcionalidades que seu teste de unidade e o código testado precisam. Por exemplo, marque a caixa de seleção **Internet** se o teste de unidade precisar e se o código testado precisar ter a capacidade de acessar a internet.
 
@@ -88,9 +88,9 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      Para saber mais sobre o Designer de Manifesto, consulte [Configurar um pacote do aplicativo do Windows 8.1 usando o designer de manifesto](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).
 
-     ![Manifesto de teste de unidade](../test/media/unit-test-win8.png "Unit_Test_Win8_")
+     ![Manifesto do teste de unidade](../test/media/unit-test-win8.png "Unit_Test_Win8_")
 
-## <a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Codificar o Teste de Unidade
+## <a name="code-the-unit-test"></a><a name="CreateAndRunUnitTestWin8Tailored_Code"></a> Codificar o teste de unidade
 
 #### <a name="to-code-the-unit-test-for-a-windows-store-app"></a>Para codificar o teste de unidade para um aplicativo da Windows Store
 
@@ -98,7 +98,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      Para saber mais, consulte [Usar as classes Assert](https://msdn.microsoft.com/library/ms182530.aspx) na biblioteca da MSDN.
 
-## <a name="CreateAndRunUnitTestWin8Tailored_Run"></a> Executar testes de unidade
+## <a name="run-unit-tests"></a><a name="CreateAndRunUnitTestWin8Tailored_Run"></a> Executar testes de unidade
 
 #### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Para compilar a solução e executar o teste de unidade usando o Gerenciador de Testes
 
@@ -106,7 +106,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      O Gerenciador de Testes aparecerá sem o seu teste listado.
 
-2. No menu **Compilação**, escolha **Compilar Solução**.
+2. No menu **Compilar** , escolha **Compilar solução**.
 
      Agora seu teste de unidade está listado.
 
@@ -119,33 +119,33 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 3. No Gerenciador de Testes, escolha o teste de unidade que você criou.
 
     > [!TIP]
-    > O Gerenciador de Testes fornece um link para o código-fonte ao lado de **Fonte:** .
+    > O Gerenciador de Testes fornece um link para o código-fonte ao lado de **Fonte:**.
 
 4. Escolha **Executar Todos**.
 
-     ![Teste de unidade &#45; de execução do Gerenciador de testes de unidade](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
+     ![Gerenciador de testes de unidade &#45; executar teste de unidade](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")
 
     > [!TIP]
     > Selecione um ou mais testes de unidade listados no Gerenciador, clique com botão direito e escolha **Executar Testes Selecionados**.
     >
     >  Além disso, você pode optar por **Depurar os Testes Selecionados**, **Abrir Teste**e usar a opção **Propriedades**.
     >
-    >  ![Menu de contexto &#45; de teste uni do Gerenciador de teste de unidade](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    >  ![Gerenciador de teste de unidade &#45; menu de contexto de teste uni](../test/media/unit-test-win8-unittestexplorer-contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
      O teste de unidade é executado. Após a conclusão, o Gerenciador de Testes exibirá o status do teste, o tempo decorrido e fornecerá um link para a fonte.
 
-     ![Teste do Gerenciador &#45; de testes de unidade concluído](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
+     ![Teste de &#45; do Gerenciador de testes de unidade concluído](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
 
-## <a name="external-resources"></a>Recursos Externos
+## <a name="external-resources"></a>Recursos externos
 
-### <a name="videos"></a>Vídeos
+### <a name="videos"></a>vídeos
  [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Fóruns
  [Teste de unidade do Visual Studio](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
 ### <a name="msdn-library"></a>Biblioteca MSDN
- [Biblioteca MSDN – Criar e executar testes de unidade para o código existente (Visual Studio 2010)](https://msdn.microsoft.com/library/hh270865(v=vs.110).aspx)
+ [Biblioteca MSDN – criando e executando testes de unidade para o código existente (Visual Studio 2010)](https://msdn.microsoft.com/library/hh270865(v=vs.110).aspx)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Testando aplicativos da loja com o Visual Studio](../test/testing-store-apps-with-visual-studio.md) [Compilar e testar um aplicativo da Windows Store usando o Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7537c3007f54480874047f52f186996cf663508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656405"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
@@ -30,7 +30,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
  Neste tópico:
 
-- [A janela Lista de Tarefas](../ide/using-the-task-list.md#taskListWindow)
+- [A janela de Lista de Tarefas](../ide/using-the-task-list.md#taskListWindow)
 
 - [Tarefas do usuário](../ide/using-the-task-list.md#userTasks)
 
@@ -40,16 +40,16 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 - [Comentários TODO em C++](../ide/using-the-task-list.md#cppComments)
 
-- [Atalhos](../ide/using-the-task-list.md#shortcuts)
+- [Teclado](../ide/using-the-task-list.md#shortcuts)
 
-## <a name="taskListWindow"></a> A janela Lista de Tarefas
+## <a name="the-task-list-window"></a><a name="taskListWindow"></a> A janela Lista de Tarefas
  Quando a **Lista de Tarefas** é aberta, ela aparece na parte inferior da janela do aplicativo.
 
 #### <a name="to-open-the-task-list"></a>Para abrir a Lista de Tarefas
 
 - No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).
 
-     ![Janela Lista de Tarefas](../ide/media/vs2015-task-list.png "|::ref1::|")
+     ![Janela de Lista de Tarefas](../ide/media/vs2015-task-list.png "vs2015_task_list")
 
 #### <a name="to-change-the-sort-order-of-the-list"></a>Para alterar a ordem de classificação da lista
 
@@ -65,12 +65,12 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 - Arraste o cabeçalho de qualquer coluna para o local desejado.
 
-## <a name="userTasks"></a> Tarefas do usuário
+## <a name="user-tasks"></a><a name="userTasks"></a> Tarefas do usuário
  O recurso de tarefa de usuário foi removido no Visual Studio 2015. Quando você abre uma solução que tem dados de tarefa de usuário do Visual Studio 2013 e anteriores no Visual Studio 2015, os dados de tarefa do usuário em seu arquivo .suo não serão afetados, mas as tarefas do usuário não serão exibidas na lista de tarefas.
 
  Se você quiser continuar a acessar e atualizar os dados de tarefa do usuário, abra o projeto no Visual Studio 2013 e copie o conteúdo de quaisquer tarefas do usuário para sua ferramenta de gerenciamento de projeto preferida (como o Team Foundation Server).
 
-## <a name="tokensComments"></a> Tokens e comentários
+## <a name="tokens-and-comments"></a><a name="tokensComments"></a> Tokens e comentários
  Um comentário no código precedido por um marcador de comentário e um token predefinido também será exibido na janela **Lista de Tarefas**. Por exemplo, o seguinte comentário do C# tem três partes distintas:
 
 - O marcador de comentário (`//`)
@@ -85,7 +85,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
  Uma vez que `TODO` é um token, esse comentário aparece como uma tarefa `TODO` na lista.
 
-### <a name="customTokens"></a> Tokens personalizados
+### <a name="custom-tokens"></a><a name="customTokens"></a> Tokens personalizados
  Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, UNDONE, NOTE. Eles não diferenciam maiúsculas de minúsculas.
 
  Também é possível criar seus próprios tokens personalizados.
@@ -98,14 +98,14 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
      A [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md) é exibida.
 
-     ![Lista de Tarefas do Visual Studio](../ide/media/vs2015-task-list-options.png "|::ref2::|")
+     ![Lista de Tarefas do Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")
 
 3. Na categoria **Tokens**, na caixa de texto **Nome**, insira o nome do seu token, por exemplo, “BUG”.
 
-4. Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token. Escolha o botão **Adicionar**.
+4. Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token. Clique no botão **Adicionar**.
 
-### <a name="cppComments"></a> Comentários TODO em C++
- Por padrão, os comentários TODO em C++ são exibidos na janela **Lista de Tarefas**. Você pode alterar esse comportamento.
+### <a name="c-todo-comments"></a><a name="cppComments"></a> Comentários sobre TODO o C++
+ Por padrão, os comentários TODO em C++ são exibidos na janela **Lista de Tarefas**. É possível alterar esse comportamento.
 
 ##### <a name="to-turn-off-c-todo-comments"></a>Para desligar os comentários TODO em C++
 
@@ -113,12 +113,12 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 2. Na caixa de diálogo **Opções**, abra **Editor de Texto**.
 
-3. Em **C/C++** , escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.
+3. Em **C/C++**, escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.
 
-## <a name="shortcuts"></a> Atalhos
+## <a name="shortcuts"></a><a name="shortcuts"></a> Teclado
  Um *atalho* é um indicador no código que é controlado na **Lista de Tarefas**; ele tem um ícone diferente de um indicador normal. Clique duas vezes no atalho na **Lista de Tarefas** para ir até o local correspondente no código.
 
- ![Ícone de atalho da Lista de Tarefas do Visual Studio](../ide/media/vs2015-task-list-bookmark.png "|::ref3::|")
+ ![Ícone de atalho da Lista de Tarefas do Visual Studio](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")
 
 #### <a name="to-create-a-shortcut"></a>Para criar um atalho
 
@@ -126,5 +126,5 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
      Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
