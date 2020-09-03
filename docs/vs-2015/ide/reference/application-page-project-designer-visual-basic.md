@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850845"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
@@ -41,7 +41,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
  Se você desmarcar **Namespace raiz**, será possível especificar a estrutura do namespace do seu projeto no código.
 
 > [!NOTE]
-> Se você usar a palavra-chave global em uma [Instrução Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), será possível definir um namespace fora do namespace raiz do seu projeto. Se você desmarcar a **Namespace raiz**, `Global` se tornará o namespace de nível superior, que acaba com a necessidade da palavra-chave `Global` em uma instrução `Namespace`. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
+> Se você usar a palavra-chave global em uma [Instrução Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), será possível definir um namespace fora do namespace raiz do seu projeto. Se você limpar o **namespace raiz**, ele `Global` se tornará o namespace de nível superior, o que elimina a necessidade da `Global` palavra-chave em uma `Namespace` instrução. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
 
  Para obter informações sobre como criar namespaces no seu código, consulte [Instrução Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).
 
@@ -56,7 +56,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.
 
- Para obter mais informações, confira [Como: Destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Tipo de aplicativo** Especifica o tipo de aplicativo a ser compilado. Para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], é possível especificar **aplicativo da Windows Store**, **Biblioteca de Classes** ou **Arquivo WinMD**. Para a maioria dos outros tipos de aplicativo, é possível especificar **aplicativos do Windows**, **aplicativo de Console**, **Biblioteca de Classes**, **Serviço Windows** ou **Biblioteca de Controles da Web**.
 
@@ -69,7 +69,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  Para obter mais informações sobre a propriedade **Tipo de aplicativo**, consulte [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Para obter informações sobre como acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Ícone** Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Procurar.. &amp;gt;** para procurar um gráfico existente. Consulte [-win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (ou [-win32icon (opções do compilador C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Ícone** Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Browse...>** para procurar um gráfico existente. Consulte [-win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (ou [-win32icon (opções do compilador C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Formulário de inicialização/objeto de inicialização/URI de inicialização** Especifica o formulário de inicialização ou o ponto de entrada do aplicativo.
 
@@ -79,11 +79,11 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  Se **Habilitar estrutura de aplicativo** estiver desmarcado, essa lista se tornará **Objeto de inicialização** e mostrará os formulários e classes ou módulos com um `Sub Main`.
 
- **Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)** . Para obter mais informações, consulte [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+ **Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)**. Para obter mais informações, consulte [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
  **Informações do assembly** Clique nesse botão para exibir a [caixa de diálogo informações do assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Habilitar estrutura de aplicativo** Especifica se um projeto usará a estrutura do aplicativo. A configuração dessa opção afeta as opções disponíveis em **Formulário de inicialização**/**Objeto de inicialização**.
+ **Habilitar estrutura de aplicativo** Especifica se um projeto usará a estrutura do aplicativo. A configuração dessa opção afeta as opções disponíveis no objeto de inicialização do **formulário de inicialização** / **Startup object**.
 
  Se essa caixa de seleção estiver selecionada, seu aplicativo usará o padrão `Sub Main`. Marcar essa caixa de seleção habilita os recursos na seção **Propriedades da estrutura dos aplicativos do Windows** e também exige que você selecione um formulário de inicialização.
 
@@ -104,7 +104,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  **Criar aplicativo de instância única** Marque essa caixa de seleção para impedir que os usuários executem várias instâncias do aplicativo. A configuração padrão para essa caixa de seleção é desmarcada. Essa configuração permite que várias instâncias do aplicativo sejam executadas.
 
- **Salvar My. Settings no desligamento** Marque essa caixa de seleção para especificar que as configurações de `My.Settings` do aplicativo sejam salvas quando os usuários desligarem seus computadores. A configuração padrão é habilitado. Se essa opção estiver desabilitada, será possível salvar as configurações do aplicativo manualmente chamando `My.Settings.Save`.
+ **Salvar My. Settings no desligamento** Marque essa caixa de seleção para especificar que as configurações do aplicativo `My.Settings` sejam salvas quando os usuários desligarem seus computadores. A configuração padrão é habilitado. Se essa opção estiver desabilitada, será possível salvar as configurações do aplicativo manualmente chamando `My.Settings.Save`.
 
  **Modo de autenticação** Selecione **Windows** (o padrão) para especificar o uso da autenticação do Windows para identificar o usuário conectado no momento. É possível recuperar essas informações no tempo de execução usando o objeto `My.User`. Selecione **Definido pelo aplicativo** se você for fornecer seu próprio código para autenticar usuários em vez de usar os métodos de autenticação padrão do Windows.
 
@@ -116,9 +116,9 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  Selecione **No fechamento da janela principal** para especificar que o aplicativo saia quando a janela principal for fechada ou quando você chamar explicitamente `Shutdown`.
 
- **Tela inicial** Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(Nenhum)** .
+ **Tela inicial** Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(nenhum)**.
 
- **Exibir eventos de aplicativo** Clique neste botão para exibir um arquivo de código de eventos no qual você pode gravar eventos para os eventos de estrutura do aplicativo `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` e `NetworkAvailabilityChanged`. Também é possível substituir determinados métodos de estrutura do aplicativo. Por exemplo, é possível alterar o comportamento de exibição da tela inicial substituindo `OnInitialize`.
+ **Exibir eventos de aplicativo** Clique neste botão para exibir um arquivo de código de eventos no qual você pode gravar eventos para os eventos de estrutura do aplicativo `Startup` , `Shutdown` , `UnhandledException` `StartupNextInstance` e `NetworkAvailabilityChanged` . Também é possível substituir determinados métodos de estrutura do aplicativo. Por exemplo, é possível alterar o comportamento de exibição da tela inicial substituindo `OnInitialize`.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Propriedades do Windows Presentation Foundation para aplicativos WPF (Windows Presentation Foundation)
  As seguintes configurações estão disponíveis na seção **Propriedades da estrutura dos aplicativos do Windows** quando o projeto é um aplicativo Windows Presentation Foundation. Essas opções estarão disponíveis somente se a caixa de seleção **Habilitar estrutura de aplicativo** estiver selecionada. As opções listadas nesta tabela estão disponíveis somente para aplicativos WPF ou aplicativos de navegador WPF. Elas não estão disponíveis para bibliotecas de controle de usuário ou de controle personalizado WPF.
@@ -139,5 +139,5 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  O objeto <xref:System.Windows.Application> gera eventos quando ocorrem determinadas alterações no estado do aplicativo (por exemplo, na inicialização ou no desligamento do aplicativo). Para obter uma lista completa dos eventos que essa classe expõe, consulte <xref:System.Windows.Application>. Esses eventos são manipulados na seção de código do usuário da classe parcial `Application`.
 
-## <a name="see-also"></a>Consulte também
-[Gerenciando Propriedades do aplicativo](../../ide/application-properties.md) [escrevendo código em soluções do Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+## <a name="see-also"></a>Consulte Também
+[Gerenciando propriedades do aplicativo](../../ide/application-properties.md) [Escrevendo código em soluções do Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

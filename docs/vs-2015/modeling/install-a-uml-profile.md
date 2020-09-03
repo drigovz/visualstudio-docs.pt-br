@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 89531fe0f2e912a6aabd962ab56ca7a24a7f3e20
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850660"
 ---
 # <a name="install-a-uml-profile"></a>Instalar um perfil UML
@@ -29,11 +29,11 @@ Você pode estender o Visual Studio com um perfil UML. Um perfil permite adicion
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Para instalar um perfil UML em seu computador
 
-1. O perfil deve ter sido fornecido a você na forma de um arquivo de extensão (`.vsix`) do Visual Studio. Pode haver outros recursos no mesmo arquivo.
+1. O perfil deve ter sido fornecido a você na forma de um arquivo de extensão () do Visual Studio `.vsix` . Pode haver outros recursos no mesmo arquivo.
 
-     Mova o arquivo de `.vsix` para um local conveniente no computador.
+     Mova o `.vsix` arquivo para um local conveniente no seu computador.
 
-2. Clique duas vezes no arquivo de `.vsix` no Windows Explorer (ou explorador de arquivos) ou abra-o em [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+2. Clique duas vezes no `.vsix` arquivo no Windows Explorer (ou no explorador de arquivos) ou abra-o no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] .
 
 3. Clique em **instalar** na caixa de diálogo que aparece.
 
@@ -45,5 +45,5 @@ Você pode estender o Visual Studio com um perfil UML. Um perfil permite adicion
 
 2. Clique na extensão que você deseja remover e, em seguida, clique em **desabilitar** ou **desinstalar**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Personalizar seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [defina um perfil para estender o UML](../modeling/define-a-profile-to-extend-uml.md)

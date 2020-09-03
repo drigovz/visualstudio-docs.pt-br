@@ -1,13 +1,13 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 47c390fbc7a6f84c25d4bde0317985bd149cae2f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "68159596"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89325034"
 ---
-1. Inicie o Visual Studio e selecione **File** > **New** > **Project**.
+1. Inicie o Visual Studio e selecione **arquivo**  >  **novo**  >  **projeto**.
 
 1. Na caixa de diálogo **Novo Projeto**, pesquise "Python", selecione o modelo **Com base no Código Python Existente**, forneça um nome e um local para o projeto e selecione **OK**.
 
@@ -15,7 +15,7 @@ ms.locfileid: "68159596"
 
     ![Novo Projeto com base em um Código Existente, etapa 1](../media/projects-from-existing-1.png)
 
-1. Na próxima caixa de diálogo, escolha o arquivo de inicialização do projeto e selecione **Avançar**. (Se desejar, selecione um ambiente; caso contrário, aceite os padrões.) Observe que a caixa de diálogo mostra apenas arquivos na pasta raiz; se o arquivo que você deseja estiver em uma subpasta, deixe o arquivo de inicialização em branco e defina-o mais tarde no **Solution Explorer** (descrito abaixo).
+1. Na próxima caixa de diálogo, escolha o arquivo de inicialização do projeto e selecione **Avançar**. (Se desejar, selecione um ambiente; caso contrário, aceite os padrões.) Observe que a caixa de diálogo mostra apenas os arquivos na pasta raiz; Se o arquivo desejado estiver em uma subpasta, deixe o arquivo de inicialização em branco e defina-o mais tarde no **Gerenciador de soluções** (descrito abaixo).
 
     ![Novo Projeto com base em um Código Existente, etapa 2](../media/projects-from-existing-2.png)
 

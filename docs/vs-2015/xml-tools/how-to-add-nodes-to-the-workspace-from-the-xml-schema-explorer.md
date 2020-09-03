@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c8fe9d5ba8c096a03de7a9df85945f4aeb4a0a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656337"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: Adicionar nós ao workspace XML Schema Explorer
@@ -38,7 +38,7 @@ Este tópico explica como adicionar nós ao espaço de [trabalho do designer de 
 
      O nó é realçado em XML Schema Explorer.
 
-2. Clique com o botão direito do mouse no nó `PurchaseOrderType` no XML Schema Explorer e selecione **Mostrar todas as referências**.
+2. Clique com o botão direito do mouse no `PurchaseOrderType` nó no XML Schema Explorer e selecione **Mostrar todas as referências**.
 
      O nó de `purchaseOrder` é realçado.
 
@@ -50,7 +50,7 @@ Este tópico explica como adicionar nós ao espaço de [trabalho do designer de 
 
 1. Digite "purchaseOrder" na caixa de texto Pesquisar da barra de ferramentas do [Gerenciador de XML](../xml-tools/xml-schema-explorer.md) e clique no botão Pesquisar.
 
-     ![Pesquisa de palavra-chave do Gerenciador de esquema XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
      Os resultados de pesquisa são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical.
 
@@ -58,7 +58,7 @@ Este tópico explica como adicionar nós ao espaço de [trabalho do designer de 
 
      ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
-     O nó `purchaseOrder` e o nó `PurchaseOrderType` aparecem ao lado um do outro na superfície de design do [modo de exibição de gráfico](../xml-tools/graph-view.md). Porque os dois nós são relacionados (o elemento de `purchaseOrder` é do tipo de `PurchaseOrderType` ), uma seta é desenhada entre eles.
+     O `purchaseOrder` nó e o `PurchaseOrderType` nó aparecem ao lado um do outro na superfície de design do [modo de exibição de gráfico](../xml-tools/graph-view.md). Porque os dois nós são relacionados (o elemento de `purchaseOrder` é do tipo de `PurchaseOrderType` ), uma seta é desenhada entre eles.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

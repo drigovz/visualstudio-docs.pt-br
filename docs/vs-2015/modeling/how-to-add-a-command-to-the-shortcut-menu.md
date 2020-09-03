@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850410"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
@@ -52,7 +52,7 @@ ms.locfileid: "75850410"
 
    Caso contrário, considere o uso do método MEF para definir os comandos. Para obter mais informações, consulte [estender sua DSL usando o MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="VSCT"></a>Declare o comando em Commands. vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Declare o comando em Commands. vsct
  Os comandos de menu são declarados em DslPackage\Commands.vsct. Essas definições especificam os rótulos dos itens de menu e onde eles aparecem nos menus.
 
  O arquivo que você edita, Commands. vsct, importa definições de vários arquivos. h, que estão localizados no diretório *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc. Ele também inclui GeneratedVsct. vsct, que é gerado a partir de sua definição de DSL.
@@ -90,7 +90,7 @@ ms.locfileid: "75850410"
     ```
 
     > [!NOTE]
-    > Cada botão ou grupo é identificado por um GUID e um ID do número inteiro. Você pode criar vários grupos e botões com o mesmo GUID. No entanto, eles devem ter IDs diferentes. Os nomes de GUID e nomes de ID são convertidos em GUIDs reais e em IDs numéricas no nó de `<Symbols>`.
+    > Cada botão ou grupo é identificado por um GUID e um ID do número inteiro. Você pode criar vários grupos e botões com o mesmo GUID. No entanto, eles devem ter IDs diferentes. Os nomes de GUID e nomes de ID são convertidos em GUIDs reais e em IDs numéricas no `<Symbols>` nó.
 
 3. Adicione uma restrição de visibilidade ao comando para que ele seja carregado apenas no contexto de sua linguagem específica do domínio. Para obter mais informações, consulte [elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md).
 
@@ -132,7 +132,7 @@ ms.locfileid: "75850410"
 
     - `My Context Menu Command`
 
-## <a name="version"></a>Atualize a versão do pacote no Package.tt
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a> Atualize a versão do pacote no Package.tt
  Sempre que você adicionar ou alterar um comando, atualize o parâmetro `version` de <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> que é aplicado à classe de pacotes antes de liberar a nova versão de sua linguagem específica do domínio.
 
  Como a classe de pacotes é definida em um arquivo gerado, atualize o atributo no arquivo de modelo de texto que gera o arquivo Package.cs.
@@ -147,8 +147,8 @@ ms.locfileid: "75850410"
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="CommandSet"></a>Definir o comportamento do comando
- Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe geralmente é *\<YourDslName >* `CommandSet`. O mais prático é começar ao verificar o nome da classe e inspecionar o seu conteúdo.
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> Definir o comportamento do comando
+ Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe geralmente é *\<YourDslName>* `CommandSet` . O mais prático é começar ao verificar o nome da classe e inspecionar o seu conteúdo.
 
  A classe do conjunto de comandos é derivada de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
@@ -160,7 +160,7 @@ ms.locfileid: "75850410"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. No **DslPackage**, crie uma pasta chamada **código personalizado**. Nessa pasta, crie um novo arquivo de classe chamado `CommandSet.cs`.
+2. No **DslPackage**, crie uma pasta chamada **código personalizado**. Nessa pasta, crie um novo arquivo de classe chamado `CommandSet.cs` .
 
 3. No novo arquivo, grave uma declaração parcial que contenha o mesmo namespace e o nome que a classe parcial gerada. Por exemplo:
 
@@ -196,7 +196,7 @@ namespace Company.Language1 /* Make sure this is correct */
  Você precisa definir dois métodos, um para determinar quando o comando ficará visível no menu de contexto e outro para executar o comando. Esses métodos não são substituições, uma vez que você os registra em uma lista de comandos.
 
 ### <a name="define-when-the-command-will-be-visible"></a>Defina quando o comando estará visível
- Para cada comando, defina um método de `OnStatus...` que determina se o comando será exibido no menu e se ele será habilitado ou esmaecido. Defina as propriedades `Visible` e `Enabled` da `MenuCommand`, conforme mostrado no exemplo a seguir. Este método é chamado para construir o menu de atalho sempre que o usuário clicar com o botão direito do mouse no diagrama, portanto, é preciso que ele funcione com rapidez.
+ Para cada comando, defina um `OnStatus...` método que determina se o comando será exibido no menu e se ele será habilitado ou esmaecido. Defina as `Visible` `Enabled` Propriedades e do `MenuCommand` , conforme mostrado no exemplo a seguir. Este método é chamado para construir o menu de atalho sempre que o usuário clicar com o botão direito do mouse no diagrama, portanto, é preciso que ele funcione com rapidez.
 
  Neste exemplo, o comando estará visível apenas quando o usuário tiver selecionado um tipo específico de formato e estará habilitado apenas quando pelo menos um dos elementos selecionados estiver em um estado específico. O exemplo se baseia no modelo DSL do Diagrama de Classe, e ClassShape e ModelClass são tipos que são definidos na DSL:
 
@@ -225,15 +225,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 - `this.CurrentSelection`. O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()` - `true` se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` Se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-o usuário não selecionou vários objetos
+- `this.IsSingleSelection()` -o usuário não selecionou vários objetos
 
-- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
+- `this.SingleSelection` -a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement` -o elemento de modelo representado por uma forma.
 
   Como diretriz geral, faça com que a propriedade `Visible` dependa do que foi selecionado e faça com que a propriedade `Enabled` dependa do estado dos elementos selecionados.
 
@@ -359,5 +359,5 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)

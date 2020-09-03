@@ -1,5 +1,5 @@
 ---
-title: 'Como: Iniciar Depuração XSLT | Microsoft Docs'
+title: Como iniciar a depuração XSLT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 09471b9e62b758e4e02e054494ed108532bbd301
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656327"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Como: Iniciar a depuração XSLT
@@ -54,7 +54,7 @@ O depurador XSLT pode ser usado para depurar uma folha de estilos XSLT ou um apl
 
      Como alternativa, você pode adicionar um ponto de quebra a folha de estilos e executar o aplicativo.
 
-### <a name="example"></a>{1&gt;Exemplo&lt;1}
+### <a name="example"></a>Exemplo
  O código a seguir é um exemplo de um programa C# XSLT. Mostra como ativar depuração XSLT.
 
 ```
@@ -87,5 +87,5 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="see-also"></a>Consulte também
- [Passo a passo: Depurar uma folha de estilos XSLT ](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) [visão geral da revisão de código](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+## <a name="see-also"></a>Consulte Também
+ [Walkthrough: Depurar uma visão geral de código de folha de estilo XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) [Code Stepping Overview](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

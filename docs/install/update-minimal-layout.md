@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168743"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Atualizar o Visual Studio usando um layout offline mínimo
@@ -49,7 +49,7 @@ Essa ferramenta cria layouts de atualização para o Visual Studio 2017 (15,9) e
 
 ### <a name="how-to-use-the-minimal-layout-tool"></a>Como usar a ferramenta de layout mínimo
 
-`MinimalLayout.exe`usa os comandos e opções a seguir para gerar o layout. Pelo menos um comando é necessário para executar a ferramenta. Veja como você executará a ferramenta:
+`MinimalLayout.exe` usa os comandos e opções a seguir para gerar o layout. Pelo menos um comando é necessário para executar a ferramenta. Veja como você executará a ferramenta:
 
 ```MinimalLayout.exe [command] <options>...```
 
@@ -160,7 +160,7 @@ A atualização é aplicada a uma instância do Visual Studio em duas etapas. Co
 
 1. **Atualizar o Instalador do Visual Studio** 
 
-    Execute o comando a seguir, substituindo `vs_enterprise.exe` pelo nome do aplicativo bootstrapper correto, se necessário. 
+    Execute o comando a seguir, substituindo `vs_enterprise.exe`  pelo nome do aplicativo bootstrapper correto, se necessário. 
 
     ```cmd
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc

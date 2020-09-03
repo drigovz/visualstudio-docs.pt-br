@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850625"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: referência
@@ -55,15 +55,15 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 
  A tabela a seguir descreve os elementos que você pode usar em um diagrama de camada.
 
-|**La**|**Elemento**|**Descrição**|
+|**Forma**|**Element**|**Descrição**|
 |---------------|-----------------|---------------------|
-|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> **dependências de namespace proibidas** -   -especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-   de **namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
-|2|**Dependência**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
-|3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
+|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> -   **Dependências de namespace proibidos** – especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-   **Namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **Namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
+|2|**Dependência**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> -   **Direction** -especifica a direção da dependência.|
+|3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> -   **Direction** -especifica a direção da dependência.|
 |4|**Comentário**|Use para adicionar notas gerais ao diagrama ou aos elementos no diagrama.|
 |5|**Link de comentário**|Use para vincular comentários a elementos no diagrama.|
 
-## <a name="Explorer"></a>Gerenciador de camadas
+## <a name="layer-explorer"></a><a name="Explorer"></a> Gerenciador de camadas
  Você pode vincular cada camada a artefatos em sua solução, como projetos, classes, namespaces, arquivos de projeto e outras partes do seu software. O número em uma camada mostra o número de artefatos vinculados à camada. No entanto, ao ler o número de artefatos em uma camada, lembre-se do seguinte:
 
 - Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
@@ -94,5 +94,5 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
     |**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).|
     |**Identificador**|A referência ao artefato vinculado|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

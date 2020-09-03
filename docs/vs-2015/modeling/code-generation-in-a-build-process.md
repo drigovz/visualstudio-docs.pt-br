@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850708"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
@@ -27,7 +27,7 @@ Há algumas diferenças em termos do que as tarefas de compilação podem fazer,
 
 Isso significa que você não pode acessar itens como nomes de arquivo do projeto da mesma forma quando você cria um modelo de texto no MSBuild. No entanto, você pode [passar informações de ambiente em modelos de texto e processadores de diretiva usando parâmetros de compilação](#parameters).
 
-## <a name="buildserver"></a>Configurar seus computadores
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurar seus computadores
 
 Para habilitar tarefas de compilação em seu computador de desenvolvimento, instale o [SDK de modelagem para Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -67,7 +67,7 @@ No arquivo .vbproj ou .csproj, localize uma linha como esta:
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- ou -
+\- ou –
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -128,7 +128,7 @@ Você pode usar curingas em TransformFile:
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
-## <a name="source-control"></a>Controle do Código-Fonte
+## <a name="source-control"></a>Controle do código-Fonte
 
 Não há integração interna específica com um sistema de controle do código-fonte. No entanto, você pode adicionar suas próprias extensões, por exemplo, para fazer check-out e check-in de um arquivo gerado. Por padrão, a tarefa de transformação de texto impede que um arquivo seja marcado como somente leitura e, quando esse arquivo é localizado, um erro é registrado na lista de erros do Visual Studio e a tarefa falha.
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Passar dados de contexto de compilação para os modelos
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Passar dados de contexto de compilação para os modelos
 
 Você pode definir valores de parâmetros no arquivo do projeto. Por exemplo, você pode passar Propriedades de compilação e [variáveis de ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Em um modelo de texto, defina `hostspecific` na diretiva do modelo. Use a direti
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Usando as propriedades do projeto no assembly e as diretivas include
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Usando as propriedades do projeto no assembly e as diretivas include
 
 Macros do Visual Studio como $(SolutionDir) não funcionam no MSBuild. Você pode usar as propriedades do projeto como alternativa.
 
@@ -263,13 +263,13 @@ Agora você pode usar sua propriedade de projeto no assembly e diretivas de incl
 
  Essas diretivas obtêm valores de T4parameterValues nos hosts do MSBuild e do Visual Studio.
 
-## <a name="q--a"></a>Perguntas e respostas
+## <a name="q--a"></a>Perguntas e Respostas
 
 **Por que desejo transformar modelos no servidor de compilação? Já transformamos modelos no Visual Studio antes de fazer check-in do meu código.**
 
 Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Visual Studio não transformará o arquivo automaticamente. Transformar modelos como parte da compilação assegura que tudo seja atualizado.
 
-**Quais são as outras opções para transformar modelos de texto?**
+**Quais são as outras opções disponíveis para transformar modelos de texto?**
 
 - O [utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) pode ser usado em scripts de comando. Na maioria dos casos, é mais fácil usar o MSBuild.
 
@@ -284,5 +284,5 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 Há uma boa orientação no modelo T4 do MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)
-- [SDK de visualização e modelagem do Visual Studio](https://www.visualstudio.com/)
+- [SDK de Visualização e Modelagem do Visual Studio](https://www.visualstudio.com/)
 - [Oleg sych: entendendo o T4: integração com o MSBuild](https://github.com/olegsych/T4Toolbox)

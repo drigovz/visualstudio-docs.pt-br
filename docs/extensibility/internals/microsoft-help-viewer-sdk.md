@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168730"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
@@ -131,17 +131,17 @@ Exemplo de seção de metadados:
 
 O corpo (sem incluir o cabeçalho e o rodapé) do tópico conterá links de página, uma seção de observação, uma área recolhível, um trecho de código e uma seção de texto específico do idioma.  Consulte a seção identidade visual para obter informações sobre essas áreas do tópico apresentado.
 
-1. Adicione uma marca de título de tópico:`<div class="title">Contoso Topic 4</div>`
+1. Adicione uma marca de título de tópico:  `<div class="title">Contoso Topic 4</div>`
 
-2. Adicionar uma seção de observação:`<div class="alert"> add your table tag and text </div>`
+2. Adicionar uma seção de observação: `<div class="alert"> add your table tag and text </div>`
 
-3. Adicione uma área recolhível:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Adicione uma área recolhível:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Adicione um trecho de código:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Adicione um trecho de código:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Adicionar texto específico à linguagem de código: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outros idiomas. Por exemplo, `devLangnu="Fortran"` exibe o Fortran quando o trecho de código DisplayLanguage = Fortran
+5. Adicionar texto específico à linguagem de código:  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Observe que `devLangnu=` permite que você insira outros idiomas. Por exemplo, `devLangnu="Fortran"` exibe o Fortran quando o trecho de código DisplayLanguage = Fortran
 
-6. Adicionar links de página:`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Adicionar links de página: `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Observação: para uma nova colorização de código "idioma de vídeo" (exemplo, F #, COBOL, Fortran) sem suporte no trecho de código será monocromático.
@@ -534,7 +534,7 @@ O arquivo de branding.js contém o JavaScript usado pelos elementos de identidad
 |Definir e obter valores de cookie|GetCookie, SetCookie||
 |Membro herdado|changeMembersLabel|Expandir/recolher membro herdado|
 |Quando SelfBranded = false|Carregamento|Leia a cadeia de caracteres de consulta para verificar se é uma solicitação de impressão.  Defina todos os trechos para focalizar a guia preferencial do usuário.  Se for uma solicitação de impressão, defina isPrinterFriendly como true. Verifique o modo de alto contraste.|
-|Trecho de código|addSpecificTextLanguageTagSet||
+|Snippet de código|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
 ||setCodesnippetLang||
@@ -566,22 +566,22 @@ O pacote de identidade visual contém um conjunto de arquivos HTM que dão supor
 |**Arquivo**|**Uso**|**Fonte de conteúdo exibida**|
 |-|-|-|
 |homepage.htm|Esta é uma página que exibe o conteúdo atualmente instalado e qualquer outra mensagem apropriada para apresentar ao usuário sobre seu conteúdo.  Esse arquivo tem o atributo de metadados adicional "Microsoft.Help.Id" content = "-1", que coloca esse conteúdo na parte superior do Sumário de conteúdo local.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, marca\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, marca\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, marca\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|A seção de título Branding.xml marca \<HomePageInstalledBooks> , os dados gerados do aplicativo, \<HomePageNoBooksInstalled> quando nenhum livro é instalado.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, marca \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, marca \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, marca \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|A seção de título Branding.xml marca \<HomePageInstalledBooks> , os dados gerados do aplicativo,  \<HomePageNoBooksInstalled> quando nenhum livro é instalado.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Seção de título Branding.xml marca \<HomePageHelpSettings> , texto da seção \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Quando um tópico existe no conjunto local, mas por algum motivo não pode ser exibido (conteúdo corrompido).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, marca\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, marca\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, marca \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, marca \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Quando um tópico não é encontrado no conjunto de conteúdo local, nem está disponível online||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, marca\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, marca\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, marca\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, marca \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, marca \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, marca \<TopicNotFoundText>|
 |contentnotinstalled.htm|Quando não há nenhum conteúdo local instalado para o produto.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, marca\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, marca\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, marca\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, marca \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, marca \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, marca \<ContentNotInstalledText>|
 
 **Arquivos CSS**
 
@@ -741,9 +741,9 @@ Defina o repositório de conteúdo no registro. Para o Shell integrado, altere V
 
 Para criar uma extensão de shell isolada:
 
-1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade**e, em seguida, escolha **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
+1. No Visual Studio, em **arquivo**, escolha **novo projeto**, em **outros tipos de projeto** , escolha **extensibilidade**e, em seguida, escolha  **shell do Visual Studio isolado**. Nomeie o projeto `ContosoHelpShell` para criar um projeto de extensibilidade com base no modelo de shell isolado do Visual Studio.
 
-2. No Gerenciador de Soluções, no projeto ContosoHelpShellUI, na pasta arquivos de recursos, abra ApplicationCommands. vsct. Verifique se essa linha foi comentada (pesquise por "No_Help"):`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. No Gerenciador de Soluções, no projeto ContosoHelpShellUI, na pasta arquivos de recursos, abra ApplicationCommands. vsct. Verifique se essa linha foi comentada (pesquise por "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
 3. Escolha a tecla F5 para compilar e executar a **depuração**. Na instância experimental do IDE do Shell isolado, escolha o menu **ajuda** . Verifique se a **exibição ajuda**, **adicione e remova o conteúdo da ajuda**e **defina** os comandos de preferência da ajuda.
 
@@ -785,7 +785,7 @@ Para testar isso como se fosse implantado:
 
 3. Copie o conteúdo da pasta ContosoHelpShell Release para \\ \Program Files (x86) \Contoso\ Folder.
 
-4. Inicie o editor do registro escolhendo **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo**e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
+4. Inicie o editor do registro escolhendo  **executar** no menu **Iniciar** e inserindo `Regedit` . No editor do registro, escolha **arquivo**e **importar**. Navegue até a pasta do projeto ContosoHelpShell. Na subpasta ContosoHelpShell, escolha ContosoHelpShell. reg.
 
 5. Criar um repositório de conteúdo:
 
@@ -808,7 +808,7 @@ Para testar isso como se fosse implantado:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Shell integrado:
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell integrado:
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 

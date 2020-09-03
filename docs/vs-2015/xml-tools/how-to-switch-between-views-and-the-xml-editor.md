@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656312"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Como: Alternar entre modos de exibição e o editor XML
@@ -29,7 +29,7 @@ Este tópico mostra como alternar entre os modos de exibição do designer de es
 
 3. Para alternar para o modo de exibição de gráfico usando a marca d' água, clique na **exibição usar o gráfico para ver a relação entre o link nós** na exibição iniciar.
 
-4. Arraste o nó de `USAddress` XML Schema Explorer no modo de gráfico. Clique com o botão direito do mouse no nó `USAddress` no modo de exibição de gráfico e selecione **Mostrar no modo de exibição de modelo de conteúdo** no menu de contexto.
+4. Arraste o nó de `USAddress` XML Schema Explorer no modo de gráfico. Clique com o botão direito do mouse no `USAddress` nó no modo de exibição de gráfico e selecione **Mostrar no modo de exibição de modelo de conteúdo** no menu de contexto.
 
      A exibição do modelo de conteúdo com os detalhes de nó de `USAddress` aparece.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850787"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
@@ -34,7 +34,7 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
 ## <a name="compileroptions-attribute"></a>Atributo compilerOptions
  Exemplo: `compilerOptions="optimize+"`
 
- Valores válidos: quaisquer opções de compilador válidas. Para obter mais informações, consulte [ C# opções de compilador listadas por categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opções de compilador listadas por categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valores válidos: quaisquer opções de compilador válidas. Para obter mais informações, consulte [Opções do compilador C# listadas por categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opções do compilador listadas por categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignorada para modelos de tempo de execução (pré-processados).
 
@@ -56,7 +56,7 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
 debug="true"
 ```
 
- Valores válidos: `true, false`. O padrão é false.
+ Valores válidos: `true, false` . O padrão é false.
 
  Se o atributo `debug` for `true`, o arquivo de código intermediário conterá informações que permitem que o depurador identifique mais especificamente a posição em seu modelo onde ocorreu uma quebra ou uma exceção.
 
@@ -71,7 +71,7 @@ debug="true"
 hostspecific="true"
 ```
 
- Valores válidos: `true, false, trueFromBase`. O padrão é false.
+ Valores válidos: `true, false, trueFromBase` . O padrão é false.
 
  Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.
 
@@ -108,7 +108,7 @@ Content of myFile is:
 
  `VB`
 
- O atributo language especifica o idioma ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)]) a ser usado para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
+ O atributo language especifica o idioma ( [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)] ) a ser usado para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
 
  Por exemplo:
 

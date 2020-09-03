@@ -8,10 +8,10 @@ ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88186275"
 ---
 Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicativos em contêineres .NET, ASP.NET e ASP.NET Core e publicá-los no ACR (registro de contêiner do Azure), no Hub do Docker, no serviço de Azure App ou no seu próprio registro de contêiner. Neste artigo, publicaremos um aplicativo ASP.NET Core no ACR.
@@ -21,7 +21,7 @@ Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicati
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
 * [Ferramentas de desenvolvimento do .NET Core](https://dotnet.microsoft.com/download/dotnet-core/) para desenvolvimento com o .NET Core
-* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se para uma avaliação gratuita](https://azure.microsoft.com/free/dotnet/).
+* Para publicar no Registro de Contêiner do Azure, uma assinatura do Azure. [Inscreva-se em uma avaliação gratuita](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Instalação e configuração
 
