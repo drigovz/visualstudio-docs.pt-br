@@ -225,17 +225,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75587037"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solucionar erros de acesso a dados nos fóruns
 
 Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Aqui estão alguns fóruns relacionados a dados disponíveis no MSDN:
 
-- [Controles de dados e vinculação de dados do Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Controles de dados Windows Forms e DataBinding](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Fórum do conjunto de ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -243,7 +243,7 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 - [Fórum do WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [Fórum do Acesso a dados no SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Fórum de acesso a dados SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
 - [Fórum de LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
@@ -251,6 +251,6 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 Para obter informações sobre como solucionar problemas de conectividade para SQL Server, consulte [solucionar problemas de conexão com o mecanismo de banco de dados SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

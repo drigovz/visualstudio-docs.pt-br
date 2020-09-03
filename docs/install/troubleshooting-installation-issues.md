@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350804"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
@@ -122,7 +122,7 @@ Aqui está uma tabela de problemas conhecidos e algumas soluções alternativas 
 
 | Problema       | Item                   | Solução |
 | ----------- | ---------------------- | -------- |
-| Os usuários não têm acesso aos arquivos. | permissões (ACLs) | Certifique-se de ajustar as permissões (ACLs) para que elas concedam acesso de leitura a outros usuários *antes* de compartilhar a instalação offline. |
+| Os usuários não têm acesso aos arquivos. | permissões (ACLs) | Certifique-se de ajustar as permissões (ACLs) para que elas concedam acesso de leitura a outros usuários  *antes* de compartilhar a instalação offline. |
 | Falha na instalação de novas cargas de trabalho, novos componentes ou idiomas.  | `--layout`  | Verifique se você tem acesso à Internet se estiver instalando com base em um layout parcial e selecione as cargas de trabalho, os componentes ou idiomas que não foram baixado anteriormente nesse layout parcial. |
 
 Para obter mais informações sobre como resolver problemas com uma [instalação de rede](create-a-network-installation-of-visual-studio.md), consulte [solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
@@ -147,7 +147,7 @@ Para coletar os logs:
 
 Se as soluções listadas neste guia de solução de problemas não ajudarem a instalar ou atualizar o Visual Studio, use a nossa opção de suporte por [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) (somente em inglês) para obter mais assistência.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Reparar o Visual Studio](repair-visual-studio.md)
 * [Remover o Visual Studio](remove-visual-studio.md)
