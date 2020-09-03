@@ -21,18 +21,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745835"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Ocorreu um erro de DCOM durante a tentativa de contatar o computador remoto. O acesso foi negado.
 A depuração remota usa DCOM para se comunicar entre os computadores locais e remotos nas seguintes situações:
 
-- O depurador é definido como **modo de compatibilidade nativo** ou o **modo de compatibilidade gerenciado** é verificado na página **Ferramentas > Opções > depuração**
+- O depurador é definido como **modo de compatibilidade nativo** ou o **modo de compatibilidade gerenciado** é verificado na página **ferramentas > opções > depuração**
 
-- Você está depurando o código gerenciado C++ (C++/CLI).
+- Você está depurando o código C++ (C++/CLI) gerenciado.
 
 - No Visual Studio 2013, quando **habilitar a opção Editar e continuar nativo** é verificado na página **ferramentas > opções > depuração**
 
@@ -40,7 +40,7 @@ A depuração remota usa DCOM para se comunicar entre os computadores locais e r
 
   Esse erro ocorre quando o processo do Visual Studio não puder se autenticar (ou as credenciais fornecidas forem julgadas insuficientes) para o processo remoto do depurador sobre DCOM. Uma ou mais das seguintes alternativas podem resolver o problema:
 
-- Desative o modo de **compatibilidade nativa** e o **modo de compatibilidade gerenciado**.
+- Desative o modo de  **compatibilidade nativa** e o **modo de compatibilidade gerenciado**.
 
 - Em Visual Studio 2013, desative **Habilitar edição e continuar nativo**.
 
@@ -48,7 +48,7 @@ A depuração remota usa DCOM para se comunicar entre os computadores locais e r
 
 - Se a depuração remota exigir a inserção de credenciais, verifique a opção para salvar as credenciais.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
-- [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Erros de depuração remota e solução de problemas](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Depuração remota](../debugger/remote-debugging.md)

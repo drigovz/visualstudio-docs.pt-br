@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663953"
 ---
 # <a name="working-with-shaders"></a>Trabalhando com sombreadores
@@ -37,6 +37,6 @@ Você pode usar o Designer de Sombreadores baseado em gráfico em [!INCLUDE[vspr
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Designer de Sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com sombreadores.|
-|[Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)|Discute os tipos de nós de Designer de Sombreadores que você pode usar para obter efeitos gráficos.|
-|[Exemplos do Designer de Sombreador](../designers/shader-designer-examples.md)|Fornece links para tópicos que demonstram como usar o Designer do sombreador para atingir efeitos gráficos comuns.|
+|[Designer de sombreador](../designers/shader-designer.md)|Descreve como usar o Designer de Sombreador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabalhar com sombreadores.|
+|[Nós do designer do sombreador](../designers/shader-designer-nodes.md)|Discute os tipos de nós de Designer de Sombreadores que você pode usar para obter efeitos gráficos.|
+|[Exemplos do designer de sombreador](../designers/shader-designer-examples.md)|Fornece links para tópicos que demonstram como usar o Designer do sombreador para atingir efeitos gráficos comuns.|

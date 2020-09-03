@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543917"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -146,7 +146,7 @@ Você pode gastar menos tempo Depurando seu aplicativo ao usar o IntelliTrace pa
   
   - [Usando os dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Instruções passo a passo: depurando um aplicativo do SharePoint usando o IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Passo a passo: depurar um aplicativo do SharePoint usando o IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Coletando informações de chamadas de funções**  
   
@@ -169,7 +169,7 @@ Você pode gastar menos tempo Depurando seu aplicativo ao usar o IntelliTrace pa
   
  Para controlar a quantidade de informações de chamadas que o IntelliTrace coleta, especifique somente os módulos que interessem a você. Isso pode ajudar a melhorar o desempenho do seu aplicativo durante a coleta. Consulte [Configurar IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a>O IntelliTrace reduzirá o meu aplicativo?  
+## <a name="will-intellitrace-slow-down-my-application"></a><a name="AffectPerformance"></a> O IntelliTrace reduzirá o meu aplicativo?  
  Por padrão, o IntelliTrace coleta dados somente para eventos do IntelliTrace selecionados. Isso pode ou não retardar o seu aplicativo, dependendo da estrutura e da organização do seu código. Por exemplo, se o IntelliTrace registra um evento com frequência, isso pode tornar o aplicativo mais lento. Isso também pode fazer com que você considere refatorar seu aplicativo.  
   
  Coletar informações de chamada pode retardar significativamente seu aplicativo. Ela também pode aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos .iTrace) que você possa estar salvando em disco. Para minimizar esses efeitos, colete informações de chamada somente para os módulos desejados.  Para alterar o tamanho máximo de seus arquivos de .iTrace, vá para **Ferramentas**, **Opções**, **IntelliTrace**, **Avançado**. Consulte [Configurar IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

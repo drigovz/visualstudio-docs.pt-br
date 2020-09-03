@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetExpression | Microsoft Docs
+title: 'IDebugExpressionEvaluationCompleteEvent2:: GetExpression | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f33c374d8aa4087ca90d7c2a4fa1d26f9a0842b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148752"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
@@ -40,15 +40,15 @@ int GetExpression( 
   
 #### <a name="parameters"></a>Parâmetros  
  `ppExpr`  
- [out] Retorna um [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa a expressão que foi analisada.  
+ fora Retorna um objeto [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) que representa a expressão que foi analisada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o objeto que foi criado em uma chamada para o [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) método.  
+ Esse método retorna o objeto que foi criado em uma chamada para o método [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

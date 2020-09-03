@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Seek | Microsoft Docs
+title: 'IDebugDocumentContext2:: Seek | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 435bb2d5402be06a5fcb3ff9fc99a5c5cb8cb3ab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731741"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Move o contexto do documento por um determinado número de declarações ou linhas.
+Move o contexto do documento por um determinado número de instruções ou linhas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ int Seek( 
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `nCount`\
-[em] O número de declarações ou linhas para avançar, dependendo do contexto do documento.
+no O número de instruções ou linhas a serem passadas em frente, dependendo do contexto do documento.
 
 `ppDocContext`\
-[fora] Retorna um novo objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) com a nova posição.
+fora Retorna um novo objeto [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) com a nova posição.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

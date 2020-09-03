@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663551"
 ---
 # <a name="shell-command"></a>Comando Shell
@@ -37,12 +37,12 @@ Inicia programas executáveis de dentro do [!INCLUDE[vsprvs](../../includes/vspr
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
  `path` Necessário. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
 
  `args` Opcional. Quaisquer argumentos a serem passados para o programa invocado.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
  /CommandWindow [ou]/Command [ou]/c [ou]/cmd opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
 
  /Dir: `folder` [ou]/d: `folder` opcional. Especifica o diretório de trabalho a ser definido quando o programa é executado.
@@ -77,5 +77,5 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Janela de comando](../../ide/reference/command-window.md) de [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela de saída](../../ide/reference/output-window.md) aliases de [comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md) de [caixa de comando/Localizar](../../ide/find-command-box.md)

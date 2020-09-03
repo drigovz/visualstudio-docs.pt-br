@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy | Microsoft Docs
+title: 'IEEVisualizerService:: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f499b816b012c3b3a71e3e8ecafaa2c0f34586d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718008"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
-Este método retorna um proxy para um objeto de propriedade.
+Esse método retorna um proxy para um objeto de propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int GetPropertyProxy(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `dwID`\
-[em] ID de proxy de propriedade para recuperar.
+no ID do proxy de propriedade a recuperar.
 
 `proxy`\
-[fora] Proxy desejado implementado em uma interface [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+fora Proxy desejado implementado em uma interface [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) passa a solicitação para este método como parte de seu suporte para visualizadores de tipo.
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) passa a solicitação para esse método como parte de seu suporte para visualizadores de tipo.
 
 ## <a name="see-also"></a>Confira também
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

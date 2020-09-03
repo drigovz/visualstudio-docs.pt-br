@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa4097280ae388a9a941c017697e0a5e3daa44cd
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349114"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Como intervir em serviços WCF
@@ -40,7 +40,7 @@ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você 
 
 5. Execute o ponto de interrupção e inicie a entrada. O depurador entrará no serviço automaticamente.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
 - [Limitações da depuração WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

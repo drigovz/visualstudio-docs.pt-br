@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
+title: 'IDebugTypeFieldBuilder2:: CreateArrayOfType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b02b7c6ef29e1b6c00b5d5a0b7fbfa93c03f132b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152888"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cria uma matriz do tipo especificado e tamanho.  
+Cria uma matriz do tipo e do tamanho especificados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -43,16 +43,16 @@ int CreateArrayOfType (
   
 #### <a name="parameters"></a>Parâmetros  
  `pTypeField`  
- [in] Tipo dos elementos que conterá a matriz.  
+ no Tipo de elementos que a matriz irá manter.  
   
  `rank`  
- [in] Número de elementos na matriz.  
+ no Número de elementos na matriz.  
   
  `pArrayOfTypeField`  
- [out] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objetos que representam a nova matriz.  
+ fora Retorna os objetos [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representam a nova matriz.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

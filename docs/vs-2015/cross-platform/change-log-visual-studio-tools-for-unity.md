@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825968"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Log de alterações (Ferramentas do Visual Studio para Unity)
@@ -27,29 +27,29 @@ Lançado em 14/07/2016
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Geral:**
+- **Genéricos**
 
   - Adicionada uma opção para desabilitar os logs de console do Unity na lista de erros do Visual Studio.
 
   - Adicionada uma opção para permitir a modificação de propriedades de projeto geradas.
 
-- **Depurador:**
+- **Depurador**
 
   - Adicionados visualizadores de cadeia de caracteres de texto, XML, HTML e JSON.
 
-- **Assistentes:**
+- **Assistentes**
 
   - Adicionados MonoBehaviors ausentes.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Geral:**
+- **Genéricos**
 
   - Corrigido um conflito com ReSharper que impedia a exibição de controles dentro de configurações do Visual Studio.
 
   - Corrigido um conflito com o Xamarin que impedia a depuração em alguns casos.
 
-- **Depurador:**
+- **Depurador**
 
   - Corrigido um problema que fazia o Visual Studio congelar durante a depuração.
 
@@ -63,7 +63,7 @@ Lançado em 04/02/2016
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Assistentes:**
+- **Assistentes**
 
   - Adicionada pesquisa inteligente ao assistente **Implementar MonoBehavior**.
 
@@ -71,7 +71,7 @@ Lançado em 04/02/2016
 
   - Adicionado suporte para mensagens de NetworkBehavior nos assistentes.
 
-- **Interface do Usuário:**
+- **CONECTÁVEL**
 
   - Adicionada uma opção para configurar a visibilidade das mensagens MonoBehavior.
 
@@ -89,13 +89,13 @@ Lançado em 04/02/2016
 
   - Restringidos projetos gerados a 4 C#.
 
-- **Depurador:**
+- **Depurador**
 
   - Corrigido um problema com a avaliação da expressão ao depurar dentro de uma co-rotina do Unity.
 
   - Corrigido um problema que fazia o Visual Studio congelar durante a depuração.
 
-- **Interface do Usuário:**
+- **CONECTÁVEL**
 
   - Corrigida uma incompatibilidade com a extensão [Tabs Studio](https://tabsstudio.com/) do Visual Studio.
 
@@ -119,15 +119,15 @@ Lançado em 08/09/2015
 
 - Uma mensagem de erro não é mais exibida quando o Visual Studio bloqueia arquivos IntelliSense XML.
 
-- Processe pontos de interrupção <\<When Changed>> condicionais quando o argumento condicional não for um valor booliano.
+- Manipule <\<When Changed>> pontos de interrupção condicionais quando o argumento condicional não é um valor booliano.
 
 - Corrigidas referências aos assemblies UnityEngine e UnityEditor para aplicativos da Windows Store.
 
-- Correção de erro ao entrar no depurador: Entrada não permitida, exceção geral.
+- Corrigido erro ao executar em etapas no depurador: não é possível executar em etapas, exceção geral.
 
 - Corrigidos pontos de interrupção de contagem de ocorrências no Visual Studio 2015.
 
-## <a name="20"></a>2.0
+## <a name="20"></a>2,0
 
 Lançado em 20/07/2015
 
@@ -149,13 +149,13 @@ Lançado em 20/07/2015
 
   - Adicionado suporte para curingas * no filtro de extensão de arquivo ao especificar os arquivos a serem incluídos no projeto C#.
 
-- **Integração com o Visual Studio:**
+- **Integração do Visual Studio:**
 
   - Corrigido um problema de compatibilidade com Productivity Power Tools.
 
   - Corrigida a geração de MonoBehaviors em torno de declarações de representantes e eventos.
 
-- **Depurador:**
+- **Depurador**
 
   - Corrigido um congelamento potencial durante a depuração.
 
@@ -168,7 +168,7 @@ Lançado em 02/04/2015
 
 ### <a name="new-features"></a>Novos recursos
 
-- **Explorador de Projeto do Unity:**
+- **Explorador de projetos de Unity:**
 
   - renomeie a classe automaticamente ao renomear um arquivo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções**).
 
@@ -180,7 +180,7 @@ Lançado em 02/04/2015
 
   - Adote ícones do Visual Studio no Explorador de Projeto do Unity.
 
-- **Depurador:**
+- **Depurador**
 
   - selecione o destino de depuração ativo em uma lista de destinos de depuração salvos ou usados recentemente (consulte a caixa de diálogo **Opções**).
 
@@ -204,17 +204,17 @@ Lançado em 02/04/2015
 
   - Instale as Ferramentas do Visual Studio para o pacote do Unity para Unity 5.
 
-- **Documentação:** Melhore o desempenho da geração de documentação.
+- **Documentação:** melhore o desempenho da geração de documentação.
 
-- **Assistentes:** Dê suporte a novos métodos do MonoBehavior para Unity 4.6 e Unity 5.
+- **Assistentes:** dê suporte a novos métodos MonoBehavior para Unity 4.6 e Unity 5.
 
-- **Unity:** Pesquise sinalizadores não seguros e definições personalizadas em arquivos .rsp durante a geração do arquivo de projeto.
+- **Unity:** pesquise sinalizadores não seguros e definições personalizadas em arquivos .rsp durante a geração do arquivo de projeto.
 
-- **Interface do Usuário:** Adição da caixa de diálogo **Opções** das Ferramentas do Visual Studio para Unity no Visual Studio.
+- **Interface do usuário:** adicionada a caixa de diálogo **Opções** das Ferramentas do Visual Studio para Unity no Visual Studio.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- **Explorador de Projeto do Unity:**
+- **Explorador de projetos de Unity:**
 
   - Atualize o Explorador de Projeto do Unity depois que os arquivos forem movidos ou renomeados do Gerenciador de Soluções do Visual Studio.
 
@@ -224,13 +224,13 @@ Lançado em 02/04/2015
 
   - Certifique-se de que arquivos recém-selecionados estejam visíveis no Explorador de Projeto do Unity.
 
-- **Depurador:**
+- **Depurador**
 
   - Previna um possível congelamento do Visual Studio ao avaliar expressões no depurador.
 
   - Certifique-se de que as invocações de método ocorram no domínio adequado no depurador.
 
-- **Unity:**
+- **Unity**
 
   - Corrija o local do UnityVS.OpenFile com o Unity 5.
 
@@ -244,13 +244,13 @@ Lançado em 02/04/2015
 
   - Envie logs do console do Unity para a lista de erros do VS.
 
-- **Documentação:** Corrija a geração de documentação para a nova documentação do Unity.
+- **Documentação:** corrigir a geração de documentação a nova documentação do Unity.
 
-- **Projeto:** Mova e renomeie arquivos .meta do Unity quando necessário, até mesmo em pastas.
+- **Projeto:** mova e renomeie arquivos .meta do Unity quando necessário, até mesmo em pastas.
 
-- **Assistentes:** Corrija a ordem dos parâmetros do método do MonoBehavior ao gerar o código.
+- **Assistentes:** corrigem a ordem dos parâmetros do método MonoBehavior ao gerar o código.
 
-- **Interface do Usuário:** Dê suporte a temas do Visual Studio para ícones e menu de contexto.
+- **Interface do Usuário:** dá suporte a temas do Visual Studio para ícones e menu de contexto.
 
 ## <a name="20-preview"></a>2.0 Versão Prévia
 Lançado em 12/11/2014
@@ -361,7 +361,7 @@ Lançado em 22/09/2014
 
 - Corrija scripts de abertura com VSTU em versões de 64 bits do Unity.
 
-## <a name="19"></a>1.9
+## <a name="19"></a>1,9
 
 Lançado em 29/07/2014
 
@@ -552,7 +552,7 @@ Lançado em 09/04/2013
 
 - Corrigida a associação de pontos de interrupção em algumas DLLs externas.
 
-## <a name="12"></a>1.2
+## <a name="12"></a>1,2
 
 Lançado em 25/03/2013
 
@@ -604,21 +604,21 @@ Lançado em 25/03/2013
 
 - Corrigido o bug UVS-48: digitar aspas duplas às vezes produz um erro e interrompe toda a função (conclusão de código, realce de sintaxe etc).
 
-- Correção do bug UVS-46: Correção do arquivo de script aberto (UnityScript) duplicado ao clicar na Lista de Erros do Visual Studio.
+- Corrigido o bug UVS-46: arquivo de script aberto (UnityScript) duplicado ao clicar na Lista de Erros do Visual Studio.
 
-- Correção do bug UVS-42: O logotipo de conectividade do Unity na barra de status não manipula eventos de mouse no VS 2012.
+- Corrigido o bug UVS-42: o logotipo de conectividade do Unity na barra de status não trata eventos de mouse no VS 2012.
 
-- Correção do bug UVS-44: A tecla de atalho CTRL+SHIFT+Q não está disponível no VS 2012 para MonoBehaviours Rápidos.
+- Corrigido o bug UVS-44: CTRL+SHIFT+Q não está disponível no VS 2012 para MonoBehaviours Rápidos.
 
-- Correção do bug UVS-40: Os itens selecionados no Explorador de Projeto do Unity são ilegíveis quando a janela está inativa no tema "escuro" do VS2012.
+- Corrigido o bug UVS-40: itens selecionados no Explorador de Projeto do Unity são ilegíveis quando a janela está inativa no tema "escuro" do VS2012.
 
-- Correção do bug UVS-39: Problema ao criar tokens de cadeias de caracteres de escape.
+- Corrigido o bug UVS-39: problema ao criar tokens de cadeias de caracteres de escape.
 
-- Correção do bug UVS-35: Invocação de ToString em objetos ao inspecionar variáveis.
+- Corrigido o bug UVS-35: invocar ToString em objetos ao inspecionar variáveis.
 
-- Correção do bug UVS-27: Inconsistência da janela Ir Para Símbolo com tema "escuro" no VS2012.
+- Corrigido o bug UVS-27: inconsistência da janela Ir Para Símbolo com tema "escuro" no VS2012.
 
-- Correção do bug UVS-11: Locais em corrotinas.
+- Corrigido o bug UVS-11: locais em co-rotinas.
 
 ## <a name="11--beta-release"></a>1.1 – versão Beta
 Lançado em 09/10/2014
@@ -699,7 +699,7 @@ Lançado em 28/11/2012
 ## <a name="1010"></a>1.0.10
 Lançado em 09/10/2012
 
-### <a name="bug-fixes"></a>Correções de Bug
+### <a name="bug-fixes"></a>Correções de bugs
 
 - Corrigida a tela de fundo do Explorador de Projeto do Unity no Visual Studio 2010.
 
@@ -725,9 +725,9 @@ Lançado em 03/10/2012
 
 - Corrigido o modo como os tipos são pesquisados em assemblies carregados para a avaliação da expressão.
 
-- Correção do bug UVS-21: A avaliação de atribuição em objetos do Unity não tem nenhum efeito.
+- Corrigido o bug UVS-21: avaliação de atribuição em objetos do Unity não tem efeito.
 
-- Correção do bug UVS-21: Ponteiro inválido ao avaliar uma invocação de método para a API de Matemática do Unity.
+- Corrigido o bug UVS-21: ponteiro inválido ao avaliar uma invocação de método para a API de Matemática do Unity.
 
 ## <a name="108"></a>1.0.8
 

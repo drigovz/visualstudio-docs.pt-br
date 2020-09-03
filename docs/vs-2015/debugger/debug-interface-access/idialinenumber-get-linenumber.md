@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0926c7805ac2deee5851627a764acfdea2f65cdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152058"
 ---
-# <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
+# <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o número de linha no arquivo de origem.  
@@ -35,9 +35,9 @@ HRESULT get_lineNumber ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o número de linha no arquivo de origem.  
+ fora Retorna o número de linha no arquivo de origem.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="example"></a>Exemplo  
@@ -48,5 +48,5 @@ DWORD linenum;
 pLine->get_lineNumber( &linenum );  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

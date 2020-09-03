@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904935"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Walkthrough: personalizar a exibição de texto
@@ -54,9 +54,9 @@ Você pode personalizar uma exibição de texto modificando qualquer uma das seg
 
 3. Declare uma classe denominada `TestViewCreationListener` herdada de <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> . Exporte esta classe com os seguintes atributos:
 
-   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>para especificar o tipo de conteúdo ao qual este ouvinte se aplica.
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> para especificar o tipo de conteúdo ao qual este ouvinte se aplica.
 
-   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>para especificar a função deste ouvinte.
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> para especificar a função deste ouvinte.
 
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]

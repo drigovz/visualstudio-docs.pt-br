@@ -1,5 +1,5 @@
 ---
-title: 'Idiasegment:: Get_virtualaddress | Microsoft Docs'
+title: 'IDiaSegment:: get_virtualAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bce453d23bcbdc8c4ac771d4af829d7f7dfa7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151739"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o endereço virtual (VA) do início da seção.  
@@ -35,10 +35,10 @@ HRESULT get_virtualAddress ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna a VA do início da seção.  
+ fora Retorna o VA do início da seção.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

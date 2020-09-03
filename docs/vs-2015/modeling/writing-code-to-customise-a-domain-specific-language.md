@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4448e9a1c65ccba4a9ae48d0271f9fd91fc011b6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662968"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Escrevendo código para personalizar uma linguagem específica do domínio
@@ -27,7 +27,7 @@ Esta seção mostra como usar o código personalizado para acessar, modificar ou
 
 - **Comandos personalizados.** Você pode criar um comando que os usuários podem invocar clicando com o botão direito do mouse no diagrama e que podem modificar o modelo. Para obter mais informações, consulte [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Validação.** Você pode escrever código que verifica se o modelo está em um estado correto. Para obter mais informações, consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
+- **Confirmação.** Você pode escrever código que verifica se o modelo está em um estado correto. Para obter mais informações, consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Substituindo o comportamento padrão.** Você pode modificar muitos aspectos do código que é gerado a partir de DslDefinition. DSL. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
 
@@ -75,5 +75,5 @@ Esta seção mostra como usar o código personalizado para acessar, modificar ou
 
 - **Serialização**. O repositório fornece uma maneira padrão de serializar os objetos que ele contém em um arquivo. Você pode personalizar as regras para serialização e desserialização. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização de XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)

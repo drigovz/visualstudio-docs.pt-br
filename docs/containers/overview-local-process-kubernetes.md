@@ -10,10 +10,10 @@ manager: jillfra
 author: ghogen
 ms.author: ghogen
 ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913260"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Como o processo local com Kubernetes funciona
@@ -67,7 +67,7 @@ Quando você habilita o trabalho em isolamento, o processo local com kubernetes 
 
 * Verifica se o cluster kubernetes não tem Azure Dev Spaces habilitado.
 * Replica o serviço escolhido no cluster no mesmo namespace e adiciona um rótulo *Routing.VisualStudio.Io/Route-from=service_name* e *Routing.VisualStudio.Io/Route-on-header=kubernetes-Route-as: GENERATED_NAME* anotação.
-* Configura e inicia o Gerenciador de roteamento no mesmo namespace no cluster kubernetes. O Gerenciador de roteamento usa um seletor de rótulo para procurar o rótulo *Routing.VisualStudio.Io/Route-from=service_name* e *Routing.VisualStudio.Io/Route-on-header=kubernetes-Route-as: GENERATED_NAME* anotação ao configurar o roteamento em seu namespace.
+* Configura e inicia o Gerenciador de roteamento no mesmo namespace no cluster kubernetes. O Gerenciador de roteamento usa um seletor de rótulo para procurar o rótulo *Routing.VisualStudio.Io/Route-from=service_name* e  *Routing.VisualStudio.Io/Route-on-header=kubernetes-Route-as: GENERATED_NAME* anotação ao configurar o roteamento em seu namespace.
 
 Se o processo local com kubernetes detectar que Azure Dev Spaces está habilitado no cluster do kubernetes, será solicitado que você desabilite Azure Dev Spaces antes de poder usar o processo local com o kubernetes.
 

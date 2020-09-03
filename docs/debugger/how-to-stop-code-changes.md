@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348945"
 ---
 # <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
@@ -38,6 +38,6 @@ Quando Editar e Continuar estiver no processo de aplicar alterações de código
 
   Se você escolher esta opção, nenhuma das alterações de código serão confirmadas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Editar e continuar](../debugger/edit-and-continue.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)

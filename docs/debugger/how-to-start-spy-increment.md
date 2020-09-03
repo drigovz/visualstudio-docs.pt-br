@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b659350adc39fd1088964976b8bcdef629bad44b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348998"
 ---
 # <a name="how-to-start-spy"></a>Como iniciar Spy++
@@ -50,7 +50,7 @@ Como o Spy + + é executado de forma independente, depois de iniciá-lo, você p
 
 2. Insira **spyxx.exe**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Usando Spy++](../debugger/using-spy-increment.md)
 - [Exibições do Spy++](../debugger/spy-increment-views.md)
 - [Referência de Spy++](../debugger/spy-increment-reference.md)

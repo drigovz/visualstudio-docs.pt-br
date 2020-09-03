@@ -21,16 +21,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196572"
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Exclui os arquivos temporários criados pelo MSBuild quando projeto do Visual C++ é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.  
+Exclui os arquivos temporários que o MSBuild cria quando um projeto Visual C++ é criado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.  
 
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa **CPPClean**.  
@@ -38,12 +38,12 @@ Exclui os arquivos temporários criados pelo MSBuild quando projeto do Visual C+
 |            Parâmetro            |                                                                                                Descrição                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        **DeletedFiles**         |                               Parâmetro de saída `ITaskItem[]` opcional.<br /><br /> Define uma matriz de itens de arquivo de saída do MSBuild que pode ser consumida e emitida por tarefas.                                |
-|          **DoDelete**           |                                                            Parâmetro **Boolean** opcional.<br /><br /> Se `true`, limpará arquivos de build temporários.                                                             |
+|          **DoDelete**           |                                                            Parâmetro **booliano** opcional.<br /><br /> Se `true`, limpará arquivos de build temporários.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de extensões de arquivo dos arquivos a serem limpos.                                             |
 |   **FilesExcludedFromClean**    |                                                    Parâmetro `String` opcional.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de arquivos que não serão limpos.                                                    |
-|       **FoldersToClean**        | Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. Especifique um caminho completo ou relativo. Esse caminho pode conter o símbolo curinga ( **\\** \*). |
+|       **FoldersToClean**        | Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. Você pode especificar um caminho completo ou relativo, e o caminho pode conter o símbolo curinga ( **\\** \* ). |
 
 ## <a name="remarks"></a>Comentários  
 
-## <a name="see-also"></a>Consulte também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

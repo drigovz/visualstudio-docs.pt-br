@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663509"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
@@ -64,9 +64,9 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
 
  Essa opção usa a ferramenta Al.exe fornecida pelo [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para assinar o assembly. Para obter mais informações sobre o Al.exe, consulte [Como assinar um assembly com um nome forte](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- **Escolha uma lista de arquivos de chave de nome forte** permite que você especifique um arquivo de chave nomeado novo ou existente que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.
+ **Escolha uma lista de arquivos de chave de nome forte** permite que você especifique um arquivo de chave nomeado novo ou existente que é usado para assinar o assembly. Selecione **\<Browse...>** para selecionar um arquivo de chave existente.
 
- Selecione **\<Novo...>** para criar um novo arquivo de chave com o qual assinar o assembly. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
+ Selecione **\<New...>** para criar um novo arquivo de chave com o qual assinar o assembly. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
 
  Botão **alterar senha** altera a senha para o arquivo de chave de troca de informações pessoais (. pfx) que é usado para assinar o assembly.
 
@@ -79,5 +79,5 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.
 
-## <a name="see-also"></a>Consulte também
- [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md) [Gerenciando assembly e manifesto](../../ide/managing-assembly-and-manifest-signing.md) assinando [assinatura de nome forte para aplicativos gerenciados](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md) [como assinar um assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Como assinar um assembly com um nome forte](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [assemblies](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) com nome forte
+## <a name="see-also"></a>Consulte Também
+ [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md) [Gerenciando assembly e manifesto](../../ide/managing-assembly-and-manifest-signing.md) assinando [assinatura de nome forte para aplicativos gerenciados](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md) [como assinar um assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [como assinar um assembly com um nome forte](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [assemblies](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b) com nomes fortes

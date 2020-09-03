@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount | Microsoft Docs
+title: 'IEEVisualizerService:: GetValueDisplayStringCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5c1a664594e55b8db21562a650c2c750668c2584
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717992"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-Recupera o número de strings de valor a serem exibidas para a propriedade ou campo especificado.
+Recupera o número de cadeias de caracteres de valor a serem exibidas para a propriedade ou o campo especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ int GetValueDisplayStringCount (
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `displayKind`\
-[em] Valor da enumeração [DisplayKind.](../../../extensibility/debugger/reference/displaykind.md)
+no Valor da enumeração [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) .
 
 `propertyOrField`\
-[em] Uma interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa uma propriedade ou campo.
+no Uma interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa uma propriedade ou um campo.
 
 `pcelt`\
-[fora] Retorna o número de strings de valor para exibir.
+fora Retorna o número de cadeias de caracteres de valor a serem exibidas.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Confira também
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

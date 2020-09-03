@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662999"
 ---
 # <a name="writing-user-commands-and-actions"></a>Escrevendo comandos e ações do usuário
@@ -35,7 +35,7 @@ Você pode personalizar uma linguagem específica do domínio ao adicionar coman
 
 - [Como acessar e restringir a seleção atual](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
-- [Personalizando ferramentas de elemento](../modeling/customizing-element-tools.md)
+- [Ferramentas de elemento personalizadas](../modeling/customizing-element-tools.md)
 
-## <a name="see-also"></a>Consulte também
- [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)
+## <a name="see-also"></a>Consulte Também
+ [Implantando soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md)

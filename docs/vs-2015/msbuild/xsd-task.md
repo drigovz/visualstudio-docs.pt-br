@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826241"
 ---
 # <a name="xsd-task"></a>Tarefa XSD
@@ -38,25 +38,25 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
 - **AdditionalOptions**  
   
-     Parâmetro **String** opcional.  
+     Parâmetro de **cadeia de caracteres** opcional.  
   
-     Uma lista de opções, conforme especificado na linha de comando. Por exemplo, " */option1 /option2 /option#* ". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.  
+     Uma lista de opções, conforme especificado na linha de comando. Por exemplo, "*/option1 /option2 /option#*". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.  
   
 - **GenerateFromSchema**  
   
-  Parâmetro **String** opcional.  
+  Parâmetro de **cadeia de caracteres** opcional.  
 
   Especifica os tipos gerados com base no esquema especificado.  
 
   Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.  
 
-  - **classes** -  **/classes**  
+  - **classes**  -  do **/classes**  
 
-  - **dataset** -  **/dataset**  
+  - **conjunto**  -  de **/DataSet**  
   
-- **Linguagem**  
+- **Idioma**  
   
-     Parâmetro **String** opcional.  
+     Parâmetro de **cadeia de caracteres** opcional.  
   
      Especifica a linguagem de programação a ser usada para o código gerado.  
   
@@ -64,11 +64,11 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
 - **Namespace**  
   
-     Parâmetro **String** opcional.  
+     Parâmetro de **cadeia de caracteres** opcional.  
   
-     Especifica o namespace de tempo de execução para os tipos gerados.  
+     Especifica o namespace de runtime para os tipos gerados.  
   
-- **Sources**  
+- **Fontes**  
   
      Parâmetro `ITaskItem[]` obrigatório.  
   
@@ -76,15 +76,15 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
 - **SuppressStartupBanner**  
   
-     Parâmetro **Boolean** opcional.  
+     Parâmetro **booliano** opcional.  
   
      Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.  
   
 - **TrackerLogDirectory**  
   
-     Parâmetro **String** opcional.  
+     Parâmetro de **cadeia de caracteres** opcional.  
   
      Especifica o diretório do log de rastreamento.  
   
-## <a name="see-also"></a>Veja também  
- [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Referência de tarefa](../msbuild/msbuild-task-reference.md)

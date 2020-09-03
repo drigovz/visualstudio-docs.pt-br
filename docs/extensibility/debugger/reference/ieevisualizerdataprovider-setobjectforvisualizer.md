@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::SetObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider:: SetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718083"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
-Este método altera o objeto que o visualizador representa.
+Esse método altera o objeto que o visualizador representa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ int SetObjectForVisualizer(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pNewObject`\
-[em] O objeto a definir.
+no O objeto a ser definido.
 
 `error`\
-[fora] Se houve um erro na configuração do objeto, esta seqüência segura a mensagem de erro.
+fora Se houvesse um erro ao definir o objeto, essa cadeia de caracteres conterá a mensagem de erro.
 
 `pException`\
-[fora] Se houve um erro, este objeto contém as informações de exceção.
+fora Se houver um erro, esse objeto conterá as informações de exceção.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Cabe ao implementador determinar como as informações de erro são devolvidas. No entanto, é possível que alguns chamadores só possam olhar para ver se um objeto de exceção foi devolvido para saber que houve um erro, então este método deve sempre retornar um objeto de exceção se houve um erro. A seqüência de erro também deve ser fornecida no caso de o chamador querer usá-la.
+ Cabe ao implementador determinar como as informações de erro são retornadas. No entanto, é possível que alguns chamadores só procurem ver se um objeto de exceção foi retornado para saber que houve um erro, portanto, esse método sempre deve retornar um objeto de exceção se houvesse um erro. A cadeia de caracteres de erro também deve ser fornecida caso o chamador queira usá-la.
 
 ## <a name="see-also"></a>Confira também
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

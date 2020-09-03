@@ -1,5 +1,5 @@
 ---
-title: 'Depurando aplicativos Web: Solução de problemas | Microsoft Docs'
+title: 'Depuração de aplicativos Web: solução de problemas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,19 +19,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac45b72b97a759e79a984f62421997125c5f1a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152855"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: Solução de problemas
+# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: Verificar as configurações de propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md)  
+ [Como verificar as configurações de Propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md)  
  Explica como definir corretamente as propriedades no IIS para ativar a depuração.  
   
 ## <a name="related-sections"></a>Seções relacionadas  

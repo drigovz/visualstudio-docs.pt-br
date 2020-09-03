@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1beeef572282a642e4a989086ac0fd228409fec
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586276"
 ---
 # <a name="validate-your-system-during-development"></a>Validar o sistema durante o desenvolvimento
@@ -30,7 +30,7 @@ O Visual Studio pode ajudar a manter seu software consistente com os requisitos 
 
 |**Tarefas**|**Tópicos associados**|
 |---------------|---------------------------|
-|**Verifique se seu modelo é consistente:**<br /><br /> Dependendo da maneira como seu projeto usa e interpreta modelos, pode ser útil não permitir algumas combinações de elementos. Por exemplo, você pode restringir as classes UML para que elas sempre [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)]tenham nomes em conformidade. Você pode definir restrições como essas em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões.|-   [Validar seu modelo UML](../modeling/validate-your-uml-model.md)<br />-   [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|
+|**Verifique se seu modelo é consistente:**<br /><br /> Dependendo da maneira como seu projeto usa e interpreta modelos, pode ser útil não permitir algumas combinações de elementos. Por exemplo, você pode restringir as classes UML para que elas sempre tenham [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] nomes em conformidade. Você pode definir restrições como essas em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensões.|-   [Validar seu modelo UML](../modeling/validate-your-uml-model.md)<br />-   [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|
 |**Verifique se o software atende aos requisitos dos usuários**:<br /><br /> Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam.|-   [Desenvolver testes de um modelo](../modeling/develop-tests-from-a-model.md)|
 |**Certifique-se de que seu software permaneça consistente com o design pretendido do seu sistema:**<br /><br /> Os diagramas de camada descrevem as dependências pretendidas entre os componentes do seu aplicativo. Durante o desenvolvimento, você pode verificar se as dependências reais no código estão em conformidade com o design pretendido.|-   [Crie diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|
 

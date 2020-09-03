@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905011"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Walkthrough: criar um SDK usando C++
@@ -27,7 +27,7 @@ Este tutorial mostra como criar um SDK de biblioteca matemática C++ nativo, emp
 ## <a name="prerequisites"></a>Pré-requisitos
  Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>Para criar as bibliotecas de Windows Runtime e nativas
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> Para criar as bibliotecas de Windows Runtime e nativas
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 
@@ -55,7 +55,7 @@ Este tutorial mostra como criar um SDK de biblioteca matemática C++ nativo, emp
 
 9. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
 
-## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>Para criar o projeto de extensão NativeMathVSIX
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Para criar o projeto de extensão NativeMathVSIX
 
 1. No **Gerenciador de soluções**, abra o menu de atalho da **solução ' NativeMath '** e escolha **Adicionar**  >  **novo projeto**.
 
@@ -137,7 +137,7 @@ Este tutorial mostra como criar um SDK de biblioteca matemática C++ nativo, emp
 
 18. Escolha o botão **instalar** , aguarde a conclusão da instalação e, em seguida, abra o Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Para criar um aplicativo de exemplo que usa a biblioteca de classes
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 

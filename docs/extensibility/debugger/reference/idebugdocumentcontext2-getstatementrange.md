@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+title: 'IDebugDocumentContext2:: GetStatementRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731776"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
-Obtém o intervalo de declaração de arquivo do contexto do documento.
+Obtém o intervalo de instruções do arquivo do contexto do documento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ int GetStatementRange(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pBegPosition`\
-[dentro, fora] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição inicial. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
+[entrada, saída] Uma estrutura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição inicial. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
 
 `pEndPosition`\
-[dentro, fora] Uma [estrutura TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição final. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
+[entrada, saída] Uma estrutura de [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) que é preenchida com a posição final. Defina esse argumento como um valor nulo se essas informações não forem necessárias.
 
-## <a name="return-value"></a>Valor retornado
-Se for `S_OK`bem sucedido, retorna; caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor Retornado
+Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
-Um intervalo de declaração é o intervalo das linhas que contribuíram com o código a que este contexto do documento se refere.
+Um intervalo de instruções é o intervalo das linhas que contribuíram com o código ao qual este contexto de documento se refere.
 
-Para obter a gama de código-fonte (incluindo comentários) neste contexto de documento, ligue para o método [GetSourceRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)
+Para obter o intervalo do código-fonte (incluindo comentários) dentro deste contexto de documento, chame o método [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) .
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como `CDebugContext` implementar esse método para um objeto simples que expõe a interface [IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Este exemplo preenche a posição final somente se a posição inicial não for um valor nulo.
+O exemplo a seguir mostra como implementar esse método para um `CDebugContext` objeto simples que expõe a interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) . Este exemplo preenche a posição final somente se a posição inicial não for um valor nulo.
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663025"
 ---
 # <a name="visual-basic-specific-intellisense"></a>IntelliSense específico do Visual Basic
@@ -49,7 +49,7 @@ O editor de código-fonte do Visual Basic oferece os seguintes recursos de Intel
 
 - Exibe APIs na Zona escolhida como disponíveis em Listar Membros e exibe APIs que requerem permissões adicionais como não disponíveis.
 
-  Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
+  Para obter mais informações, consulte [segurança de acesso de código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte Também
  [Usando o IntelliSense](../ide/using-intellisense.md)

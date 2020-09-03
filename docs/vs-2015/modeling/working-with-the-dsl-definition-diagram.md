@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14e365d6bbe99634135bfad133d840b98e22e3b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663034"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O diagrama de uma definição de [!INCLUDE[dsl](../includes/dsl-md.md)] é uma ferramenta importante para definir a linguagem específica do domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.
+O diagrama de uma [!INCLUDE[dsl](../includes/dsl-md.md)] definição é uma ferramenta importante para definir a linguagem específica do domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.
 
 ## <a name="the-layout-of-the-diagram"></a>O layout do diagrama
- O diagrama de definição de [!INCLUDE[dsl](../includes/dsl-md.md)] tem duas partições, a partição de **classes e relações** e a partição de **elementos de diagrama** . A partição **classes e relações** exibe classes de domínio, relações de domínio e herança. A partição de **elementos de diagrama** exibe classes de forma, classes de conector, classes de raia e o diagrama de designer gerado.
+ O [!INCLUDE[dsl](../includes/dsl-md.md)] diagrama de definição tem duas partições, a partição de **classes e relações** e a partição de **elementos de diagrama** . A partição **classes e relações** exibe classes de domínio, relações de domínio e herança. A partição de **elementos de diagrama** exibe classes de forma, classes de conector, classes de raia e o diagrama de designer gerado.
 
  As classes de domínio podem aparecer em vários locais nas partições **classes e relações** . Uma definição de classe de domínio exibe uma árvore de herança se esta for a classe base para outras classes de domínio e uma árvore de relações se for a fonte de relações de incorporação ou de referência. Espaços reservados de classe de domínio aparecem como alvos de relações de incorporação ou de referência. Por padrão, os elementos de espaço reservado são exibidos com o compartimento de **Propriedades de domínio** recolhido. Eles não mostram a herança ou as relações de incorporação ou referência.
 
@@ -74,5 +74,5 @@ O diagrama de uma definição de [!INCLUDE[dsl](../includes/dsl-md.md)] é uma f
 ### <a name="show-as-class"></a>Show As Class
  Se uma relação de domínio tiver relações derivadas, ou se tiver uma incorporação ou relações de referência com outras relações de domínio, você poderá exibir a relação como uma classe clicando com o botão direito do mouse na relação e, em seguida, clicando em **mostrar como classe**. A relação será exibida com um compartimento de **Propriedades de domínio** e mostrará as árvores de herança e relações.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

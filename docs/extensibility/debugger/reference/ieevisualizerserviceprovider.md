@@ -13,47 +13,47 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717890"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar avaliadores de expressão é preterida. Para obter informações sobre a implementação de avaliadores de expressão CLR, consulte [Avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [Amostra avaliadora de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Esta interface dá acesso a um método que pode criar um serviço de visualizador, que é usado para lidar com tarefas de visualizadores de tipo para o IDE.
+ Essa interface fornece acesso a um método que pode criar um serviço visualizador, que é usado para tratar tarefas de visualizador de tipo para o IDE.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IEEVisualizerServiceProvider : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O Visual Studio implementa esta interface para criar um objeto de serviço visualizador, que por sua vez é usado para fornecer iDs de classe (s)`CLSID`de visualizadores de tipo para o Visual Studio IDE.
+ O Visual Studio implementa essa interface para criar um objeto de serviço do visualizador que, por sua vez, é usado para fornecer IDs `CLSID` de classe dos visualizadores de tipo para o IDE do Visual Studio.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O avaliador de expressão (EE) chama [o GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) para obter essa interface.
+ O avaliador de expressão (EE) chama [GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md) para obter essa interface.
 
-## <a name="methods-in-vtable-order"></a>Métodos em ordem Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 
 |Método|Descrição|
 |------------|-----------------|
-|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Cria o serviço de visualização|
+|[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|Cria o serviço Visualizador|
 
 ## <a name="remarks"></a>Comentários
- A `IEEVisualizerServiceProvider` interface é obtida durante a implementação do [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). O serviço de visualização que essa interface cria é usado para fornecer funcionalidade a uma interface [IDebugProperty3,](../../../extensibility/debugger/reference/idebugproperty3.md) que o EE é responsável pela implementação. O EE também é responsável pela implementação de uma interface [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) que permite que visualizadores de tipo visualizem e modifiquem o valor de uma propriedade.
+ A `IEEVisualizerServiceProvider` interface é obtida durante a implementação de [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). O serviço visualizador que essa interface cria é usado para fornecer funcionalidade a uma interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) , que o EE é responsável por implementar. O EE também é responsável pela implementação de uma interface [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) que permite que os visualizadores de tipos exibam e modifiquem o valor de uma propriedade.
 
- Consulte [Visualização e Visualização de Dados](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obter detalhes sobre como essas interfaces interagem.
+ Consulte [visualizando e exibindo dados](../../../extensibility/debugger/visualizing-and-viewing-data.md) para obter detalhes sobre como essas interfaces interagem.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: ee.h
+ Cabeçalho: EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Interfaces de avaliação de expressão](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)

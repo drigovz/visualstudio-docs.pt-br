@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cae8159c893229f02e9598e932d7bc19efc2f4a
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468675"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Descreve uma entrada em um mapa de endereços.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```C++
 struct DiaAddressMapEntry {
@@ -32,9 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementos
-`rva`Um RVA (endereço virtual relativo) na imagem A.
+`rva` Um RVA (endereço virtual relativo) na imagem A.
 
-`rvaTo`O endereço virtual relativo `rva` é mapeado para a imagem B.
+`rvaTo` O endereço virtual relativo `rva` é mapeado para a imagem B.
 
 ## <a name="remarks"></a>Comentários
 Um mapa de endereços fornece uma tradução de um layout de imagem (A) para outro (B). Uma matriz de `DiaAddressMapEntry` estruturas classificada por `rva` define um mapa de endereços.
@@ -52,6 +52,6 @@ Para converter um endereço, `addrA` , na imagem a para um endereço, `addrB` , 
 ## <a name="requirements"></a>Requisitos
 Cabeçalho: dia2. h
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

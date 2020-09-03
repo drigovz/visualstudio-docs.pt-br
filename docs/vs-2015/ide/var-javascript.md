@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663068"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -60,7 +60,7 @@ Especifica informações sobre a documentação para uma variável.
 
   `helpKeyword` Opcional. A palavra-chave para Ajuda com F1.
 
-  `locid` Opcional. O identificador de informações de localização sobre a variável. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo do identificador depende do formato especificado na marca [\<loc>](../ide/loc-javascript.md).
+  `locid` Opcional. O identificador de informações de localização sobre a variável. O identificador é uma ID de membro ou ele corresponde ao valor do atributo `name` em um pacote de mensagens definido pelos metadados OpenAjax. O tipo de identificador depende do formato especificado na [\<loc>](../ide/loc-javascript.md) marca.
 
   `description` Opcional. Uma descrição da variável.
 
@@ -81,5 +81,5 @@ var Rectangle = {
 }
 ```
 
-## <a name="see-also"></a>Veja também
- [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
+## <a name="see-also"></a>Consulte Também
+ [Comentários de documentação XML](../ide/xml-documentation-comments-javascript.md)

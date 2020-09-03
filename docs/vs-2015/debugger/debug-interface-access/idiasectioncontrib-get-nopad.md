@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3044deb31214aae9c37ef7bb1f84324857ffb7d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151899"
 ---
-# <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
+# <a name="idiasectioncontribget_nopad"></a>IDiaSectionContrib::get_nopad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera um sinalizador que indica se a seção não deve ser preenchida para o próximo limite de memória.  
@@ -35,13 +35,13 @@ HRESULT get_nopad(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se a seção não deve ser preenchida até próximo limite de memória; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se a seção não deve ser preenchida para o próximo limite de memória; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor Retornado  
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Essa é uma propriedade geralmente Vista somente em arquivos mais antigos.  
+ Essa é uma propriedade normalmente vista apenas em arquivos mais antigos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
