@@ -13,45 +13,45 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a74825a955afdde03e63673c4b1b6afda5904953
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729888"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
-Esta interface é usada pelo mecanismo de depuração (DE) para enviar eventos de depuração para o Gerenciador de depuração de sessão (SDM).
+Essa interface é usada pelo mecanismo de depuração (DE) para enviar eventos de depuração para o SDM (Gerenciador de depuração de sessão).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEventCallback2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]implementa esta interface para receber eventos de um mecanismo de depuração.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] implementa essa interface para receber eventos de um mecanismo de depuração.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Um mecanismo de depuração normalmente recebe essa interface quando o SDM chama [Attach,](../../../extensibility/debugger/reference/idebugprogram2-attach.md) [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)ou [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Um mecanismo de depuração envia eventos para o SDM chamando [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
+ Um mecanismo de depuração normalmente recebe essa interface quando o SDM chama [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)ou [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md). Um mecanismo de depuração envia eventos para o SDM chamando [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugEventCallback2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugEventCallback2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Envia notificação de eventos de depuração para o SDM.|
+|[Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|Envia a notificação de eventos de depuração para o SDM.|
 
 ## <a name="remarks"></a>Comentários
- Embora [o AssessSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [o AssessAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) especifiquem que eles tomam uma `IDebugEventCallback2` interface, este não é o caso, e o ponteiro de interface sempre será um valor nulo. Em vez disso, o `IDebugEventCallback2` mecanismo de depuração deve usar a interface recebida na chamada para [Anexar,](../../../extensibility/debugger/reference/idebugprogram2-attach.md) [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)ou [IniciarSuspenso](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
+ Embora [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) e [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) especifiquem que eles usam uma `IDebugEventCallback2` interface, esse não é o caso e o ponteiro de interface sempre será um valor nulo. Em vez disso, o mecanismo de depuração deve usar a `IDebugEventCallback2` interface recebida na chamada para [anexar](../../../extensibility/debugger/reference/idebugprogram2-attach.md), [anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)ou [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
 
- Se um pacote implementar [iDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) em código gerenciado, <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> é fortemente aconselhável que seja invocado nas várias interfaces que são passadas para [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
+ Se um pacote implementa [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) em código gerenciado, é altamente recomendável que <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> seja chamado nas várias interfaces que são passadas para o [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

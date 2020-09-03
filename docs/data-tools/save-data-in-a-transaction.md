@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281624"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
@@ -74,7 +74,7 @@ Esta etapa usa o **Assistente de configuração de fonte de dados** para criar u
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         -ou-
+         - ou -
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão** e criar uma conexão com o banco de dados Northwind.
 
@@ -169,7 +169,7 @@ A ordem para reconciliar as alterações aos dados relacionados é a seguinte:
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

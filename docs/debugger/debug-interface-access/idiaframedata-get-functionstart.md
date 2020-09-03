@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e4ee5de3c27d1ba16aed25c59555880901c010b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467368"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
@@ -41,5 +41,5 @@ fora Retorna `TRUE` se o bloco contém o ponto de entrada; caso contrário, reto
 ## <a name="remarks"></a>Comentários
  É possível que um registro de ativação não seja o início de uma função porque o quadro representa um método embutido ou função inserida em uma função.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

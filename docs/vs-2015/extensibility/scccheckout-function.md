@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f23290ebfadd1b6e3d34f808d5ea0ccccbb3c319
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200157"
 ---
 # <a name="scccheckout-function"></a>Função SccCheckout
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dada uma lista de nomes de arquivo totalmente qualificado, essa função verifica-los para a unidade local. O comentário se aplica a todos os arquivos que está sendo extraídos. O argumento de comentário pode ser um `null` cadeia de caracteres.  
+Dada uma lista de nomes de arquivo totalmente qualificados, essa função os verifica na unidade local. O comentário se aplica a todos os arquivos cujo check-out está sendo feito. O argumento comment pode ser uma `null` cadeia de caracteres.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,41 +40,41 @@ SCCRTN SccCheckout (
   
 #### <a name="parameters"></a>Parâmetros  
  pvContext  
- [in] A estrutura de contexto de plug-in de controle de origem.  
+ no A estrutura de contexto do plug-in de controle do código-fonte.  
   
  hWnd  
- [in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.  
+ no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.  
   
  nFiles  
- [in] Número de arquivos selecionados para fazer check-out.  
+ no Número de arquivos selecionados para check-out.  
   
  lpFileNames  
- [in] Matriz de nomes de caminho local totalmente qualificado dos arquivos para fazer check-out.  
+ no Matriz de nomes de caminho locais totalmente qualificados dos arquivos cujo check-out será feito.  
   
  lpComment  
- [in] Comentário a ser aplicado a cada um dos arquivos selecionados que está sendo extraídos.  
+ no Comentário a ser aplicado a cada um dos arquivos selecionados cujo check-out está sendo feito.  
   
  fOptions  
- [in] Sinalizadores de comando (consulte [sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)).  
+ no Sinalizadores de comando (consulte [Bitflags usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  
- [in] Opções de plug-in específico de controle de origem.  
+ no Opções específicas de plug-ins de controle do código-fonte.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|SCC_OK|Check-out foi bem-sucedida.|  
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle do código-fonte.|  
-|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. É recomendável uma nova tentativa.|  
+|SCC_OK|O check-out foi bem-sucedido.|  
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|  
+|SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. Uma nova tentativa é recomendada.|  
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|  
-|SCC_E_NONSPECIFICERROR|Falha não específica. O arquivo não foi extraído.|  
-|SCC_E_ALREADYCHECKEDOUT|O usuário já tiver o arquivo de check-out.|  
+|SCC_E_NONSPECIFICERROR|Falha não específica. Não foi feito o check-out do arquivo.|  
+|SCC_E_ALREADYCHECKEDOUT|O usuário já tem o arquivo extraído.|  
 |SCC_E_FILEISLOCKED|O arquivo está bloqueado, proibindo a criação de novas versões.|  
-|SCC_E_FILEOUTEXCLUSIVE|Outro usuário tenha feito um check-out exclusivo nesse arquivo.|  
+|SCC_E_FILEOUTEXCLUSIVE|Outro usuário fez um check-out exclusivo nesse arquivo.|  
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [Sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)

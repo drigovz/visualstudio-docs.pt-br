@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667952"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Como excluir projetos de um Build
@@ -43,7 +43,7 @@ ms.locfileid: "72667952"
 
 1. Na barra de menus, escolha **Build**, **Configuration Manager**.
 
-2. Na lista **Configuração da solução ativa**, escolha **\<Nova>** .
+2. Na lista **configuração de solução ativa** , escolha **\<New>** .
 
 3. Na caixa **Nome**, insira um nome para a configuração da solução.
 
@@ -55,5 +55,5 @@ ms.locfileid: "72667952"
 
 7. Na barra de menus, escolha **Compilar**, **Recompilar Solução**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Noções básicas sobre configurações de compilação](../ide/understanding-build-configurations.md) [como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md) [como: criar várias configurações simultaneamente](../ide/how-to-build-multiple-configurations-simultaneously.md)

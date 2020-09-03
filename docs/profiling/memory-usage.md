@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: ee12b14f306ad8f49b77b08d3a16d9f54426e7ca
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80256186"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
@@ -22,14 +22,14 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
 
 O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** (disponível no Visual Studio 2015 Atualização 1 e versões posteriores):
 
-![Atualização de&#45;de ferramentas de diagnóstico1](../profiling/media/diagnostictools-update1.png "Atualização de ferramentas de diagnóstico1")
+![DiagnosticTools&#45;Atualização1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Atualização1")
 
 Embora você possa coletar instantâneos de memória a qualquer momento na ferramenta **Uso de Memória**, pode usar o depurador do Visual Studio para controlar como o seu aplicativo é executado ao investigar problemas de desempenho. A definição de pontos de interrupção, passo a passo, Interromper Tudo e outras ações de depurador podem ajudá-lo a concentrar as investigações de desempenho nos caminhos de código mais relevantes. A execução dessas ações enquanto o aplicativo é executado pode eliminar o ruído do código que não lhe interessa e reduzir significativamente a quantidade de tempo necessário para diagnosticar um problema.
 
-Você também pode usar a ferramenta de memória fora do depurador. Consulte [o uso da memória sem depuração](../profiling/memory-usage-without-debugging2.md). Você pode usar as ferramentas de criação de perfil sem nenhum depurador anexado, com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
+Você também pode usar a ferramenta de memória fora do depurador. Consulte [uso de memória sem depuração](../profiling/memory-usage-without-debugging2.md). Você pode usar as ferramentas de criação de perfil sem nenhum depurador anexado, com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
 > [!NOTE]
-> **Suporte allolocalizador personalizado** O profiler de memória nativa funciona coletando dados de eventos [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados. Se você estiver escrevendo seus próprios alocadores, todas as funções que retornarem um ponteiro para uma memória heap recém-alocada poderão ser decoradas com [__declspec](/cpp/cpp/declspec)(allocator), como visto neste exemplo de myMalloc:
+> **Suporte a alocador personalizado** O criador de perfil de memória nativa funciona coletando dados de eventos [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados. Se você estiver escrevendo seus próprios alocadores, todas as funções que retornarem um ponteiro para uma memória heap recém-alocada poderão ser decoradas com [__declspec](/cpp/cpp/declspec)(allocator), como visto neste exemplo de myMalloc:
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -50,7 +50,7 @@ Neste tutorial, você irá:
 
 2. Defina um segundo ponto de interrupção ao fim da função ou região de código que você deseja analisar (ou após a ocorrência de um problema de memória suspeito).
 
-3. A janela **Ferramentas de Diagnóstico** aparece automaticamente, a menos que você a tenha desligado. Para trazer a janela novamente, clique em **Depurar** > **ferramentas de diagnóstico do****Windows** > Show .
+3. A janela de **ferramentas de diagnóstico** aparece automaticamente, a menos que você a tenha desativado. Para exibir a janela novamente, clique em **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico**.
 
 4. Escolha **Uso de Memória** com a configuração **Selecionar Ferramentas** na barra de ferramentas.
 
@@ -60,14 +60,14 @@ Neste tutorial, você irá:
 
      Quando o aplicativo terminar de ser carregado, a exibição Resumo das Ferramentas de Diagnóstico será exibida.
 
-     ![Guia de resumo das ferramentas de diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Guia Resumo das ferramentas de diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      > Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos de aplicativos mistos ou nativos, inicie uma sessão de depuração (Tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** for exibida, escolha a guia **Uso de Memória** e, em seguida, **Criação de Perfil de Heap**.
      >
      >  ![Habilitar instantâneos](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
-     >  Pare (tecla atalho: **Shift**+**F5**) e reinicie a depuração.
+     >  Pare (tecla de atalho: **Shift** + **F5**) e reinicie a depuração.
 
 6. Para obter um instantâneo no início da sessão de depuração, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**. (Talvez seja útil definir um ponto de interrupção aqui também.)
 
@@ -89,7 +89,7 @@ Neste tutorial, você irá:
 ## <a name="analyze-memory-usage-data"></a>Analisar dados de uso de memória
 As linhas da tabela de resumo de Uso de Memória listam os instantâneos que você criou durante a sessão de depuração e fornecem links para modos de exibição mais detalhados.
 
-![Tabela de resumo de memória](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Tabela de Resumo de memória](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  O nome das colunas depende do modo de depuração escolhido nas propriedades do projeto: .NET, nativo ou misto (.NET e nativo).
 
@@ -101,7 +101,7 @@ Quando você tira vários instantâneos, as células da tabela de resumo incluem
 
 Para analisar o uso da memória, clique em um dos links que abre um relatório detalhado do uso de memória:
 
-- Para visualizar detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração à esquerda da seta![(Memory Use Increase).](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento do uso da memória") Uma seta vermelha indica um aumento no uso de memória e uma seta verde indica uma diminuição.
+- Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link alterar à esquerda da seta (![aumento de uso de memória](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento de uso de memória")). Uma seta vermelha indica um aumento no uso de memória e uma seta verde indica uma diminuição.
 
 > [!TIP]
 > Para ajudar a identificar problemas de memória mais rapidamente, os relatórios de comparação são classificados pelos tipos de objeto que mais aumentaram no número geral (clique no link de alteração na coluna **Objetos (Comparação)**) ou que mais aumentaram quanto ao tamanho geral do heap (clique no link de alteração na coluna **Tamanho do Heap (Comparação)**).
@@ -113,17 +113,17 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 ### <a name="managed-types-reports"></a>Relatórios de tipos gerenciados
  Escolha o link atual de uma célula **Objetos (Diff)** ou **Alocações (Diff)** da tabela de resumo de Uso de Memória.
 
- ![Relatório de tipo gerenciado pelo Debugger &#45; Caminhos para Raiz](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Relatório de tipo gerenciado do depurador &#45; caminhos para raiz](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  O painel superior mostra a contagem e o tamanho dos tipos no instantâneo, incluindo o tamanho de todos os objetos referenciados pelo tipo (**inclusive tamanho**).
 
- A árvore **Caminhos para a Raiz** no painel inferior exibe os objetos que referenciam o tipo selecionado no painel superior. O coletor de lixo .NET limpa a memória de um objeto somente quando o último tipo que faz referência a ele foi liberado.
+ A árvore **Caminhos para a Raiz** no painel inferior exibe os objetos que referenciam o tipo selecionado no painel superior. O coletor de lixo do .NET limpa a memória de um objeto somente quando o último tipo que faz referência a ele foi liberado.
 
- A **árvore Objetos Referenciados** exibe as referências que são mantidas pelo tipo selecionado no painel superior.
+ A árvore **objetos referenciados** exibe as referências que são mantidas pelo tipo selecionado no painel superior.
 
- ![Exibição gerenciada de relatório de objetos referenciados](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Exibição de relatório de objetos referenciados gerenciados](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Para exibir as instâncias de um tipo selecionado no painel superior, escolha o ![ícone 'Ocorrência'.](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon")
+ Para exibir as instâncias de um tipo selecionado no painel superior, escolha o ícone do ![ícone de instância](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
 
  ![O modo de instâncias](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
@@ -136,7 +136,7 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
  O **Modo de exibição de tipos** exibe o número e tamanho dos tipos no instantâneo.
 
-- Escolha o ícone de ocorrências![(O ícone de ocorrência na coluna Tipo de objeto)](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.
+- Escolha o ícone instâncias (![o ícone de instância na coluna tipo de objeto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.
 
      O modo de exibição **Instâncias** mostra cada instância do tipo selecionado. A seleção de uma instância exibe a pilha de chamadas resultou na criação da instância no painel **Pilha de Chamadas de Alocação**.
 
@@ -150,15 +150,15 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
 - Escolha o link de alteração em uma célula da tabela de resumo da guia **Uso de Memória** na janela **Ferramentas de Diagnóstico**.
 
-   ![Escolha uma mudança &#40;difundir&#41; relatório](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Escolha uma alteração &#40;relatório de&#41; diff](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Escolha um instantâneo na lista **Comparar com** de um relatório gerenciado ou nativo.
 
-   ![Escolha um instantâneo na lista Comparar Para](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![Escolha um instantâneo da lista comparar com](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como pode ser a aparência de um relatório de comparação Exibição de Tipo Nativo:
 
-![Visão de difusa de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blogs e vídeos
 

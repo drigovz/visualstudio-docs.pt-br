@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a44b551e5b2a0b145040dc13cb0e624134f56cf6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668163"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Como copiar elementos de diagrama de classe para um documento do Microsoft Office (Designer de Classe)
@@ -42,5 +42,5 @@ Você pode copiar formas de um diagrama de classe do .NET (arquivo .cd) para out
 
    Você também pode escolher **Copiar** em vez de **Copiar Imagem**. **Copiar** copia a imagem como um bitmap regular. **Copiar Imagem** copia a imagem como uma imagem baseada em vetor, o que é melhor para a maioria dos aplicativos do Office.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Como: imprimir diagramas de classe (Designer de classe)](../ide/how-to-print-class-diagrams-class-designer.md) [como: exportar diagramas de classe como imagens (Designer de classe)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

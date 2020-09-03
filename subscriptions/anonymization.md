@@ -8,10 +8,10 @@ ms.date: 02/20/2020
 ms.topic: conceptual
 description: Saiba como os dados de assinante são anonimizados quando o acesso às assinaturas é perdido.
 ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232735"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimização de informações de assinante do Visual Studio
@@ -37,8 +37,8 @@ R: Não.  A anonimização é em resposta a um evento que ocasiona a perda de ac
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>P: Sou um administrador das assinaturas da minha organização.  Se uma das informações do meu assinante for anonimizada, essa assinatura poderá ser atribuída novamente a outro usuário?
 R: Sim. Desde que a assinatura não tenha expirado, ela poderá ser reatribuída a outro assinante.
 
-### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: Como posso evitar a anonimização causada pela exclusão de um endereço de e-mail de login?
-R: Existem duas maneiras de prevenir o problema:
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>P: como evitar a anonimato causada pela exclusão de um endereço de email de entrada?
+R: há duas maneiras de evitar o problema:
 - Implante um sistema de gerenciamento de identidades único, MSA ou AAD, mas não ambos.  
 - Associe as identidades do AAD e MSA por meio do locatário. 
 
@@ -49,6 +49,6 @@ R: Existem duas maneiras de prevenir o problema:
 - [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Saiba como prevenir a anonimização [associando identidades MSA e AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Saiba como impedir a anonimato ao [associar as identidades do MSA e do AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 

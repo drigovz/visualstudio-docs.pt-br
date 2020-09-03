@@ -13,50 +13,50 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727366"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
-Esta interface é usada pelo mecanismo de depuração (DE) para enviar uma mensagem ao Visual Studio que requer uma resposta do usuário.
+Essa interface é usada pelo mecanismo de depuração (DE) para enviar uma mensagem para o Visual Studio que requer uma resposta do usuário.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMessageEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notas para implementadores
- O DE implementa esta interface para enviar uma mensagem ao Visual Studio que requer uma resposta do usuário. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que esta interface. O SDM usa [queryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
+ O DE implementa essa interface para enviar uma mensagem ao Visual Studio que requer uma resposta do usuário. A interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) deve ser implementada no mesmo objeto que essa interface. O SDM usa [QueryInterface](/cpp/atl/queryinterface) para acessar a `IDebugEvent2` interface.
 
- A implementação desta interface deve comunicar a chamada do Visual Studio de [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) para o DE. Por exemplo, isso pode ser feito com uma mensagem postada no segmento de manipulação de mensagens do DE, ou o objeto `IDebugMessageEvent2::SetResponse`que implementa essa interface pode conter uma referência ao DE e chamar de volta para o DE com a resposta transmitida para .
+ A implementação dessa interface deve comunicar a chamada de [Setresponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) do Visual Studio para o de. Por exemplo, isso pode ser feito com uma mensagem postada no thread DE manipulação DE mensagens DE DE, ou o objeto que implementa essa interface pode conter uma referência para a DE e retornar para o DE com a resposta passada para `IDebugMessageEvent2::SetResponse` .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- O DE cria e envia este objeto de evento para exibir uma mensagem ao usuário que requer uma resposta. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando é anexada ao programa que está sendo depurado.
+ O DE cria e envia este objeto de evento para exibir uma mensagem para o usuário que requer uma resposta. O evento é enviado usando a função de retorno de chamada [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) que é fornecida pelo SDM quando ele é anexado ao programa que está sendo depurado.
 
-## <a name="methods-in-vtable-order"></a>Métodos em Ordem Vtable
- A tabela a seguir `IDebugMessageEvent2`mostra os métodos de .
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ A tabela a seguir mostra os métodos de `IDebugMessageEvent2` .
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Faz com que a mensagem seja exibida.|
-|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Define a resposta, se houver, da caixa de mensagens.|
+|[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|Obtém a mensagem a ser exibida.|
+|[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|Define a resposta, se houver, da caixa de mensagem.|
 
 ## <a name="remarks"></a>Comentários
- O DE usará esta interface se exigir uma resposta específica do usuário para uma mensagem específica. Por exemplo, se o DE receber uma mensagem "Acesso negado" após uma tentativa de anexar remotamente a um programa, o DE envia esta mensagem específica para o Visual Studio em um `IDebugMessageEvent2` evento com o estilo `MB_RETRYCANCEL`caixa de mensagem . Isso permite que o usuário tente novamente ou cancele a operação de conexão.
+ O DE usará essa interface se exigir uma resposta específica do usuário para uma mensagem específica. Por exemplo, se o DE receber uma mensagem DE "acesso negado" após uma tentativa de anexar remotamente a um programa, o DE enviará essa mensagem específica para o Visual Studio em um `IDebugMessageEvent2` evento com o estilo da caixa de mensagem `MB_RETRYCANCEL` . Isso permite que o usuário tente novamente ou cancele a operação de anexação.
 
- O DE especifica como essa mensagem deve ser tratada seguindo as `MessageBox` convenções da função Win32 (consulte [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obter detalhes).
+ O DE especifica como essa mensagem deve ser tratada seguindo as convenções da função do Win32 `MessageBox` (consulte [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) para obter detalhes).
 
- Use a interface [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) para enviar mensagens ao Visual Studio que não exijam uma resposta do usuário.
+ Use a interface [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) para enviar mensagens para o Visual Studio que não exigem uma resposta do usuário.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Confira também
 - [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)

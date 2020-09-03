@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668087"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivo
@@ -53,9 +53,9 @@ Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item 
 
      Quando um item derivado deste modelo for adicionado a um projeto, os nomes de arquivo serão baseados no nome que o usuário digitou na caixa de diálogo **Adicionar Novo Item**.
 
-3. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)** . Os arquivos selecionados são compactados em um arquivo .zip.
+3. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Os arquivos selecionados são compactados em um arquivo .zip.
 
-4. Coloque o arquivo .zip no local do modelo de item do usuário. Por padrão, o diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ItemTemplates\\. Para obter mais informações, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+4. Coloque o arquivo .zip no local do modelo de item do usuário. Por padrão, o diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ItemTemplates\\. Para obter mais informações, consulte [como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um modelo do Windows Forms [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quando um item é criado com base nesse modelo, os nomes dos três arquivos criados corresponderá ao nome inserido na caixa de diálogo **Adicionar Novo Item**.
@@ -83,5 +83,5 @@ Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md) [como: criar modelos](../ide/how-to-create-item-templates.md) de item [parâmetros de modelo](../ide/template-parameters.md) [como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md)

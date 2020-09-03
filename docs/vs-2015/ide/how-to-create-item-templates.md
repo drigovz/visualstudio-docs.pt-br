@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668071"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) deste tópico mostram como criar um modelo de item usando o assistente **Exportar Modelo**. Se seu modelo for consistir em vários arquivos, consulte [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
+As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) deste tópico mostram como criar um modelo de item usando o assistente **Exportar Modelo**. Se o modelo consistir em vários arquivos, consulte [como: criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
 
  O assistente faz grande parte do trabalho para você para criar o modelo básico, mas, em muitos casos, será necessário modificar manualmente o arquivo .vstemplate depois de exportar o modelo. Por exemplo, se você desejar que o item apareça na caixa de diálogo **Adicionar Novo Item** para um projeto do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], precisará executar algumas etapas adicionais. O [segundo procedimento](#to-enable-the-item-template-to-be-used-in-a-store-project) neste tópico o ajudará a realizar essa tarefa.
 
@@ -38,7 +38,7 @@ As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-t
 
 2. Adicionar um item ao projeto e modifique-o, se desejar.
 
-3. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, consulte [como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. No menu **Arquivo**, clique em **Exportar Modelo**.
 
@@ -50,10 +50,10 @@ As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-t
 
 8. Digite o nome do arquivo de ícone, imagem de visualização, nome do modelo e descrição do modelo, então clique em **Concluir**.
 
-     Os arquivos para o modelo são adicionados a um arquivo .zip e copiados de qualquer diretório que você especificar na caixa de diálogo. O local padrão é a pasta **..\Users\\<nome de usuário\>\Documents\Visual Studio \<Versão>\My Exported Templates\\** .
+     Os arquivos para o modelo são adicionados a um arquivo .zip e copiados de qualquer diretório que você especificar na caixa de diálogo. O local padrão é **.. \Users \\<nome de usuário \> \Documents\Visual Studio \<Version> \Meus \\ modelo exportado pasta modelos** .
 
     > [!WARNING]
-    > Em versões anteriores do Visual Studio, o local padrão é **..\Users\\<nome de usuário\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**.
+    > Em versões anteriores do Visual Studio, o local padrão é **.. \Users \\<username \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Para habilitar o modelo de item a ser usado em um projeto de repositório
 
@@ -67,7 +67,7 @@ As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-t
 
     Um projeto de repositório C++ Windows 8.1 usa um valor de `WinRT-Native-6.3`. Para Windows 10 e outros tipos de projeto, consulte [Elemento TemplateGroupID (modelos do Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    O exemplo a seguir mostra todo o conteúdo de um arquivo .vstemplate após a linha de XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` ter sido adicionada a ele. Este exemplo é específico para projetos C#. Você pode modificar o > de \<ProjectType e \< elementos de > de [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)para especificar outros tipos de projeto e idioma.
+    O exemplo a seguir mostra todo o conteúdo de um arquivo .vstemplate após a linha de XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` ter sido adicionada a ele. Este exemplo é específico para projetos C#. Você pode modificar os \<ProjectType> \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> elementos e para especificar outros tipos de projeto e idioma.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -114,7 +114,7 @@ As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-t
 
    2. Office
 
-   3. Banco de Dados
+   3. Banco de dados
 
    4. Web
 
@@ -157,5 +157,5 @@ As etapas no [primeiro procedimento](#to-add-a-custom-project-item-template-to-t
 
 8. Copie o arquivo .zip e cole-o no local do modelo de item do usuário. No Visual Studio 2015, o diretório padrão é ..\Users\\<nomedeusuário\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Para obter mais informações, consulte Como localizar e organizar modelos de projeto e item.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md) [como: criar modelos de item de vários arquivos referência de](../ide/how-to-create-multi-file-item-templates.md) [esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

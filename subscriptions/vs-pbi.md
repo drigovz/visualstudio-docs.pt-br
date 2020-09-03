@@ -8,10 +8,10 @@ ms.date: 03/26/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Power BI Pro incluída na assinatura do Visual Studio.
 ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801679"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
@@ -63,12 +63,12 @@ Para usar o Power BI Pro, você precisará configurar uma conta ou entrar usando
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Yes|
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Yes|
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim|
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Sim|
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Não disponível                                                            |NA         |
 | Visual Studio Professional com GitHub Enterprise | VL                                      | Não disponível                                                            |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                            |NA         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível       |  Yes|
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível       |  Sim|
 | Visual Studio Enterprise (nuvem mensal) | Azure                                       | Não disponível                                  |NA|
 ||
 
@@ -113,7 +113,7 @@ R: Não.  O benefício do Power BI Pro não pode ser adicionado a locatários do
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

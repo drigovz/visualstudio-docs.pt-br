@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d975570334aeab7c6709db92f3240a8e8d06b131
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200118"
 ---
 # <a name="sccgetevents-function"></a>Função SccGetEvents
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa função recupera um evento de status na fila.  
+Essa função recupera um evento de status enfileirado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,31 +37,31 @@ SCCRTN SccGetEvents (
   
 #### <a name="parameters"></a>Parâmetros  
  pvContext  
- [in] A estrutura de contexto de plug-in de controle de origem.  
+ no A estrutura de contexto do plug-in de controle do código-fonte.  
   
  lpFileName  
- [no, out] Buffer em que o plug-in de controle do código-fonte coloca o nome de arquivo retornado (até caracteres MAX_PATH).  
+ [entrada, saída] Buffer em que o plug-in de controle do código-fonte coloca o nome do arquivo retornado (até _MAX_PATH caracteres).  
   
  lpStatus  
- [no, out] Retorna o código de status (consulte [código de Status do arquivo](../extensibility/file-status-code-enumerator.md) para possíveis valores).  
+ [entrada, saída] Retorna o código de status (consulte o [código de status do arquivo](../extensibility/file-status-code-enumerator.md) para obter os valores possíveis).  
   
  pnEventsRemaining  
- [no, out] Retorna o número de entradas deixada na fila após esta chamada. Se esse número for grande, o chamador poderá optar por chamar o [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obter as informações ao mesmo tempo.  
+ [entrada, saída] Retorna o número de entradas deixadas na fila após essa chamada. Se esse número for grande, o chamador poderá decidir chamar o [SccQueryInfo](../extensibility/sccqueryinfo-function.md) para obter todas as informações ao mesmo tempo.  
   
-## <a name="return-value"></a>Valor de retorno  
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:  
+## <a name="return-value"></a>Valor Retornado  
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|SCC_OK|Obter eventos com êxito.|  
+|SCC_OK|Êxito ao obter eventos.|  
 |SCC_E_OPNOTSUPPORTED|Não há suporte para essa função.|  
 |SCC_E_NONSPECIFICERROR|Falha não específica.|  
   
 ## <a name="remarks"></a>Comentários  
- Essa função é chamada durante o processamento ocioso para ver se houve quaisquer atualizações de status para arquivos sob controle do código-fonte. O plug-in de controle do código-fonte mantém o status de todos os arquivos que ele conhece e sempre que uma alteração de status é observada pelo plug-in, o status e o arquivo associado são armazenados em uma fila. Quando `SccGetEvents` é chamado, a parte superior elemento da fila é recuperado e retornado. Essa função é restrito para retornar somente informações armazenadas em cache anteriormente e deve ter um retorno muito rápido (ou seja, nenhuma leitura do disco ou solicitando que o sistema de controle do código-fonte para o status); Caso contrário, o desempenho do IDE pode começar a ser degradada.  
+ Essa função é chamada durante o processamento de ociosidade para ver se houve alguma atualização de status para arquivos sob controle do código-fonte. O plug-in de controle do código-fonte mantém o status de todos os arquivos que ele conhece e sempre que uma alteração de status é observada pelo plug-in, o status e o arquivo associado são armazenados em uma fila. Quando `SccGetEvents` é chamado, o elemento superior da fila é recuperado e retornado. Essa função é restrita para retornar somente informações armazenadas anteriormente em cache e deve ter um retorno muito rápido (ou seja, nenhuma leitura do disco ou pedir o status do sistema de controle do código-fonte); caso contrário, o desempenho do IDE pode começar a degradar.  
   
- Se não houver nenhuma atualização de status do relatório, o plug-in de controle do código-fonte armazena uma cadeia de caracteres no buffer apontado por `lpFileName`. Caso contrário, o plug-in armazena o nome de caminho completo do arquivo para o qual as informações de status foi alterado e retorna o código de status apropriado (um dos valores detalhados em [código de Status do arquivo](../extensibility/file-status-code-enumerator.md)).  
+ Se não houver nenhuma atualização de status para relatar, o plug-in de controle do código-fonte armazenará uma cadeia de caracteres vazia no buffer apontado por `lpFileName` . Caso contrário, o plug-in armazena o nome do caminho completo do arquivo para o qual as informações de status foram alteradas e retorna o código de status apropriado (um dos valores detalhados no [código de status do arquivo](../extensibility/file-status-code-enumerator.md)).  
   
-## <a name="see-also"></a>Consulte também  
- [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Funções da API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [Código de status do arquivo](../extensibility/file-status-code-enumerator.md)

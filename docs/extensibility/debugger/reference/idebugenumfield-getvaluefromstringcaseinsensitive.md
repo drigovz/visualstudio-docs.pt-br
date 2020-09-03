@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromStringCaseInsensitive | Microsoft Docs
+title: 'IDebugEnumField:: GetValueFromStringCaseInsensitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 551945ded9d1ba3e973f18c21463a896cbd478c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730243"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-Este método usa uma pesquisa insensível a casos para devolver o valor associado ao nome de uma constante de enumeração.
+Esse método usa uma pesquisa que não diferencia maiúsculas de minúsculas para retornar o valor associado ao nome de uma constante de enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,18 +41,18 @@ int GetValueFromStringCaseInsensitive(
 );
 ```
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 `pszValue`\
-[em] Uma seqüência especificando o nome para qual obter o valor. Note que para C++, esta é uma seqüência de caracteres ampla.
+no Uma cadeia de caracteres que especifica o nome para o qual obter o valor. Observe que para C++, essa é uma cadeia de caracteres larga.
 
 `pValue`\
-[fora] Retorna o valor numérico associado.
+fora Retorna o valor numérico associado.
 
-## <a name="return-value"></a>Valor retornado
- Se for `S_OK`bem sucedido, retorna; caso contrário, `S_FALSE`retorna, se o nome não faz parte da enumeração, ou um código de erro.
+## <a name="return-value"></a>Valor Retornado
+ Se for bem-sucedido, retornará `S_OK` ; caso contrário, retornará `S_FALSE` , se o nome não fizer parte da enumeração ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Este método é insensível a casos. Se for necessária uma pesquisa sensível a maiúsculas e minúsculas (por exemplo, em um idioma como C++ onde os nomes são sensíveis a maiúsculas e minúsculas), use [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
+ Esse método não diferencia maiúsculas de minúsculas. Se uma pesquisa com diferenciação de maiúsculas e minúsculas for necessária (por exemplo, em uma linguagem como C++, em que os nomes diferenciam maiúsculas de minúsculas), use [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).
 
 ## <a name="see-also"></a>Confira também
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

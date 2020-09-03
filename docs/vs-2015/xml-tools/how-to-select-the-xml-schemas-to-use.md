@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f607d500bfcb8a745bfb129490d2c2b09c6b105c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666515"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecione os esquemas XML para usar
@@ -34,13 +34,13 @@ O editor XML fornece um cache de esquema %InstallDir% localizado no diretório \
 
 2. Na janela Propriedades do documento, clique no botão no campo **esquemas** .
 
-    A caixa de diálogo **esquemas XML** é exibida. A caixa de diálogo lista todos os esquemas com uma extensão. xsd no cache de esquema (incluindo esquemas referenciados no arquivo catalog. xml) e também qualquer esquema que esteja na solução atual, aberto no Visual Studio, referenciado em um atributo `xsd:schemaLocation` ou referenciado no Propriedade **schemas** .
+    A caixa de diálogo **esquemas XML** é exibida. A caixa de diálogo lista todos os esquemas com uma extensão. xsd no cache de esquema (incluindo esquemas referenciados no arquivo de catalog.xml) e também qualquer esquema que esteja na solução atual, aberto no Visual Studio, referenciado em um `xsd:schemaLocation` atributo ou referenciado na propriedade **esquemas** .
 
 3. Selecione os esquemas para usar a validação seguindo um destes procedimentos:
 
    - Selecione um esquema listado na caixa de diálogo **esquemas XML** , clique na coluna **usar** e, em seguida, selecione **usar este esquema**.
 
-     \- ou -
+     - ou -
 
    - Selecione vários esquemas listados na caixa de diálogo **esquemas XML** , clique com o botão direito do mouse e selecione **usar este esquema**.
 
@@ -71,7 +71,7 @@ O editor XML fornece um cache de esquema %InstallDir% localizado no diretório \
      O esquema é removido do cache de memória do esquema, mas não é removido do sistema de arquivos.
 
     > [!NOTE]
-    > Se você ainda tiver uma referência ao esquema por meio de um atributo `schemaLocation` ou se uma `targetNamespace` correspondente, a **remoção** não funcionará nessa situação devido à associação automática. Nesse caso, é recomendável que você marque o esquema como **não usar esquemas selecionados** na coluna **usar** .
+    > Se você ainda tiver uma referência ao esquema por meio de um `schemaLocation` atributo ou se uma correspondência for `targetNamespace` **removida** , isso não funcionará nessa situação devido à associação automática. Nesse caso, é recomendável que você marque o esquema como **não usar esquemas selecionados** na coluna **usar** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Editor XML](../xml-tools/xml-editor.md) da [caixa de diálogo esquemas XML](../xml-tools/xml-schemas-dialog-box.md) do [cache de esquema](../xml-tools/schema-cache.md)

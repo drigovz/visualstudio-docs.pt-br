@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569433"
 ---
-# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo \> opções: Meio Ambiente Geral
+# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo opções: ambiente \> geral
 
 Use esta página para alterar temas de cores, configurações de barra de status e associações de extensões de arquivo, entre outras coisas, para o IDE (ambiente de desenvolvimento integrado). Você pode acessar a caixa de diálogo **Opções** abrindo o menu **Ferramentas**, escolhendo **Opções**, abrindo a pasta **Ambiente** e, em seguida, escolhendo a página **Geral**. Se essa página não aparecer na lista, marque a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
@@ -74,7 +74,7 @@ Habilita a experiência visual completa do Visual Studio, incluindo animações 
 
 Usa aceleração de elementos gráficos de hardware se estiver disponível, em vez de aceleração de software.
 
-## <a name="other"></a>Outros
+## <a name="other"></a>Outro
 
 **Itens a serem mostrados no menu Janela**
 

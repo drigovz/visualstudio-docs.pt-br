@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3eebefeab6b78955b03d4546a60dd811f5e9ae4e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547648"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Visual Studio Editions para SDK de modelagem de visualização com suporte &amp;
@@ -32,7 +32,7 @@ Veja a seguir as listas das edições do Visual Studio com suporte [!INCLUDE[dsl
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK do Visual Studio](../extensibility/visual-studio-sdk.md)|
 |SDK de Visualização e Modelagem do Visual Studio|[Download do SDK de modelagem](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Edições de Implantação
- [!INCLUDE[dsl](../includes/dsl-md.md)]o oferece suporte às seguintes configurações para implantar as linguagens específicas de domínio que você cria:
+ [!INCLUDE[dsl](../includes/dsl-md.md)] o oferece suporte às seguintes configurações para implantar as linguagens específicas de domínio que você cria:
 
 - Visual Studio Enterprise
 

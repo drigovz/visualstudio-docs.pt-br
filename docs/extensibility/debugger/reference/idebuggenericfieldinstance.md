@@ -11,32 +11,32 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728119"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 Representa uma instância de um campo para um tipo genérico de código gerenciado.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugGenericFieldInstance : IUnknown
 ```
 
 ## <a name="methods"></a>Métodos
- Esta interface implementa os seguintes métodos:
+ Essa interface implementa os seguintes métodos:
 
 |Método|Descrição|
 |------------|-----------------|
-|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Recupera os argumentos do parâmetro de tipo para este caso.|
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retorna o número de argumentos de parâmetro de tipo para este caso.|
+|[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Recupera os argumentos de parâmetro de tipo para esta instância.|
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retorna o número de argumentos de parâmetro de tipo para esta instância.|
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Sh.h
+ Cabeçalho: sh. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Montagem: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

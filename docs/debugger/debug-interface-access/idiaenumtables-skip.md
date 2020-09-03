@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 27daf70a3cc5f155bfbe6b2678cce42b50801153
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467459"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
@@ -38,5 +38,5 @@ no O número de tabelas na sequência de enumeração a serem ignoradas.
 ## <a name="return-value"></a>Valor Retornado
  Se for bem-sucedido, retornará `S_OK` ; caso contrário, retornará `S_FALSE` se não houver mais tabelas a serem ignoradas.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

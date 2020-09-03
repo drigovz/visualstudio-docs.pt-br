@@ -1,5 +1,5 @@
 ---
-title: Projeto arquivos diversos | Microsoft Docs
+title: Projeto de arquivos diversos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,26 +14,26 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707092"
 ---
 # <a name="miscellaneous-files-project"></a>Projeto arquivos diversos
-Quando um usuário abre itens de projeto, o IDE atribui ao projeto Arquivos Diversos quaisquer itens que não sejam membros de nenhum projeto em uma solução.
+Quando um usuário abre itens de projeto, o IDE é atribuído ao projeto de arquivos diversos quaisquer itens que não sejam membros de nenhum projeto em uma solução.
 
- Os projetos desempenham um papel significativo na determinação de qual editor é usado quando um usuário abre um item do projeto. Um projeto pode ser projetado para abrir certos arquivos usando um editor específico de projeto ou um editor padrão.
+ Os projetos desempenham uma função significativa para determinar qual editor é usado quando um usuário abre um item de projeto. Um projeto pode ser criado para abrir determinados arquivos usando um editor específico do projeto ou um editor padrão.
 
- Um editor específico de projeto normalmente exige que o usuário tenha conhecimento especial ou use interfaces especiais do projeto. Para obter mais informações, consulte [Como: Abrir editores específicos de projetos.](../../extensibility/how-to-open-project-specific-editors.md)
+ Um editor específico de projeto normalmente requer que o usuário tenha conhecimento especial ou use interfaces especiais do projeto. Para obter mais informações, consulte [como: abrir editores específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md).
 
- Um editor padrão pode abrir qualquer arquivo de uma extensão específica em qualquer projeto. O usuário pode personalizar alguns editores padrão, como o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor de texto, para projetos, mas ainda manter seu caráter público. Os editores padrão são <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> criados usando o método.
+ Um editor padrão pode abrir qualquer arquivo de uma extensão específica em qualquer projeto. O usuário pode personalizar alguns editores padrão, como o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editor de texto, para projetos, mas ainda manter seu caractere público. Os editores padrão são criados usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método.
 
- Se nenhum projeto na solução responder que pode abrir um item do projeto, o IDE fornece um projeto especial chamado projeto Arquivos Diversos que abre qualquer arquivo.
+ Se nenhum projeto na solução responder que pode abrir um item de projeto, o IDE fornece um projeto especial chamado projeto de arquivos diversos que abre qualquer arquivo.
 
- Este projeto especial prevê a abertura de um arquivo fora do contexto de um projeto. Durante o processamento <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> do método, o projeto Arquivos Diversos sempre responde com uma prioridade muito baixa. Portanto, o projeto Arquivos Diversos sempre cede a qualquer projeto de maior prioridade que possa abrir arquivos.
+ Esse projeto especial fornece a abertura de um arquivo fora do contexto de um projeto. Durante o processamento do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> método, o projeto de arquivos diversos sempre responde com uma prioridade muito baixa. Portanto, o projeto de arquivos diversos sempre gera qualquer projeto de prioridade mais alta que pode abrir arquivos.
 
- O projeto Arquivos Diversos não exige que o usuário o crie explicitamente com a caixa de diálogo **Novo Projeto.** Além disso, o projeto Arquivos Diversos não gerencia permanentemente uma lista de membros do projeto. Ele usa um recurso opcional para gravar uma lista dos arquivos mais usados recentemente para cada usuário.
+ O projeto de arquivos diversos não exige que o usuário o crie explicitamente com a caixa de diálogo **novo projeto** . Além disso, o projeto de arquivos diversos não gerencia permanentemente uma lista de membros do projeto. Ele usa um recurso opcional para registrar uma lista de arquivos usados mais recentemente para cada usuário.
 
 ## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>

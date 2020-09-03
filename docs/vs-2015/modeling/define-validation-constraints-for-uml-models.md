@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547583"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
@@ -89,7 +89,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 2. A menos que sua solução já contenha uma, crie um projeto VSIX:
 
-    1. No **Gerenciador de soluções**, no menu de atalho da solução, escolha **Adicionar**, **novo projeto**.
+    1. No **Gerenciador de soluções**, no menu de atalho da solução, escolha  **Adicionar**, **novo projeto**.
 
     2. Em **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, escolha **extensibilidade**. Na coluna do meio, clique em **projeto VSIX**.
 
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Executando uma restrição de validação
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Executando uma restrição de validação
  Para fins de teste, execute seus métodos de validação no modo de depuração.
 
 #### <a name="to-test-the-validation-constraint"></a>Para testar a restrição de validação
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - Os atributos corretos `Export` e `ValidationMethod` são anexados aos métodos de validação.
 
-    - `ValidationCategories.Menu`é incluído no argumento para o `ValidationMethod` atributo e é composto com outros valores usando OR lógico (&#124;).
+    - `ValidationCategories.Menu` é incluído no argumento para o `ValidationMethod` atributo e é composto com outros valores usando OR lógico (&#124;).
 
     - Os parâmetros de todos os `Import` `Export` atributos e são válidos.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Avaliando a restrição
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Avaliando a restrição
  O método de validação deve determinar se a restrição de validação que você deseja aplicar é true ou false. Se for true, ele não deverá fazer nada. Se for false, ele deverá relatar um erro usando os métodos fornecidos pelo `ValidationContext` parâmetro.
 
 > [!NOTE]
@@ -259,7 +259,7 @@ public void ValidateSomething
 |Assinatura|Descrição|
 |-|-|
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Define o método como uma restrição de validação usando Managed Extensibility Framework (MEF).|
-|`[ValidationMethod (ValidationCategories.Menu)]`|Especifica quando a validação será executada. Use OR-bit ou (&#124;) se desejar combinar mais de uma opção.<br /><br /> `Menu`= invocado pelo menu validar.<br /><br /> `Save`= invocado ao salvar o modelo.<br /><br /> `Open`= invocado ao abrir o modelo. `Load`= invocado ao salvar o modelo, mas para um contravention avisa ao usuário que talvez não seja possível reabrir o modelo. Também chamado no carregamento, antes de o modelo ser analisado.|
+|`[ValidationMethod (ValidationCategories.Menu)]`|Especifica quando a validação será executada. Use OR-bit ou (&#124;) se desejar combinar mais de uma opção.<br /><br /> `Menu` = invocado pelo menu validar.<br /><br /> `Save` = invocado ao salvar o modelo.<br /><br /> `Open` = invocado ao abrir o modelo. `Load` = invocado ao salvar o modelo, mas para um contravention avisa ao usuário que talvez não seja possível reabrir o modelo. Também chamado no carregamento, antes de o modelo ser analisado.|
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Substitua o segundo parâmetro `IElement` pelo tipo de elemento ao qual você deseja aplicar a restrição. O método de restrição será invocado em todos os elementos no tipo especificado.<br /><br /> O nome do método não é importante.|
 
  Você pode definir quantos métodos de validação desejar, com tipos diferentes no segundo parâmetro. Quando a validação é invocada, cada método de validação será chamado em cada elemento de modelo que esteja de acordo com o tipo de parâmetro.
@@ -269,11 +269,11 @@ public void ValidateSomething
 
  `context.LogError("error string", errorCode, elementsWithError);`
 
-- `"error string"`aparece na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros
+- `"error string"` aparece na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista de erros
 
-- `errorCode`é uma cadeia de caracteres que deve ser um identificador exclusivo do erro
+- `errorCode` é uma cadeia de caracteres que deve ser um identificador exclusivo do erro
 
-- `elementsWithError`identifica elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.
+- `elementsWithError` identifica elementos no modelo. Quando o usuário clica duas vezes no relatório de erros, a forma que representa esse elemento será selecionada.
 
   `LogError(),``LogWarning()`e `LogMessage()` Coloque as mensagens em seções diferentes da lista de erros.
 
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Coordenação de várias validações
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Coordenação de várias validações
  Quando a validação é invocada, por exemplo, pelo usuário de um menu de diagrama, cada método de validação é aplicado a cada elemento de modelo. Isso significa que, em uma única invocação da estrutura de validação, o mesmo método pode ser aplicado muitas vezes a elementos diferentes.
 
  Isso apresenta um problema para validações que lidam com as relações entre os elementos. Por exemplo, você pode escrever uma validação que começa em, digamos, um caso de uso e percorre as relações de **inclusão** para verificar se não há loops. Mas quando o método é aplicado a cada caso de uso em um modelo que tem muitos links **include** , é provável que ele processe repetidamente as mesmas áreas do modelo.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Obter um valor.|
 |`Context.GetValue<T>()`|Obtém um valor do tipo especificado.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Instalando e desinstalando uma extensão
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Instalando e desinstalando uma extensão
  Você pode instalar uma [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão no seu próprio computador e em outros computadores.
 
 #### <a name="to-install-an-extension"></a>Para instalar uma extensão
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
 
    *% LocalAppData%* **\Microsoft\VisualStudio \\ [versão] \Extensions**
 
-## <a name="example"></a><a name="Example"></a>Exemplo
+## <a name="example"></a><a name="Example"></a> Exemplo
  Este exemplo localiza loops na relação de dependência entre elementos.
 
  Ele será validado em salvar e no comando de menu validar.

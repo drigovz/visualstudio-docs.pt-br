@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547752"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Métodos APTCA devem chamar somente métodos APTCA
@@ -40,9 +40,9 @@ ms.locfileid: "85547752"
 
  Quando o atributo APTCA está presente em um assembly totalmente confiável e o assembly executa o código em outro assembly que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois métodos `M1` e `M2` atenderem às condições a seguir, os chamadores mal-intencionados poderão usar o método `M1` para ignorar a demanda de link de confiança total implícita que protege `M2` :
 
-- `M1`é um método público declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `M1` é um método público declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
-- `M1`chama um método `M2` fora `M1` do assembly.
+- `M1` chama um método `M2` fora `M1` do assembly.
 
 - `M2`o assembly do não tem o atributo APTCA e, portanto, não deve ser executado por ou em nome de chamadores que são parcialmente confiáveis.
 

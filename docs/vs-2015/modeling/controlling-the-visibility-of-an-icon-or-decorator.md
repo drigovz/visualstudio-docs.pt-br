@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 49cecff999e0155209ba58c20c0d623b15d63698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667825"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
@@ -62,13 +62,13 @@ Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DS
 
 1. Adicione uma propriedade de domínio calculada à classe de domínio. Na janela **Propriedades** , defina os seguintes valores:
 
-     **Isnavegável =** `False` **-isso oculta a propriedade do usuário**
+     **Isnavegável =** `False` **-isso oculta a propriedade do usuário**    
 
-     **Kind =** `Calculated` **-isso significa que você fornecerá um código que calcula seu valor**
+     **Tipo =** `Calculated` **-isso significa que você fornecerá um código que calcula seu valor**    
 
      **Nome** , por exemplo **DecoratorControl**
 
-     **Tipo**  =  `Boolean`
+     **Escreva** = `Boolean`
 
      Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).
 
@@ -80,7 +80,7 @@ Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DS
 
     3. Na **propriedade de filtro**, selecione a propriedade de controle **DecoratorControl**.
 
-    4. Em **entradas de visibilidade**, insira `True`.
+    4. Em **entradas de visibilidade**, insira `True` .
 
 3. Clique em **transformar todos os modelos** na barra de ferramentas Gerenciador de soluções.
 
@@ -107,5 +107,5 @@ Um *decorador* é um ícone ou linha de texto que aparece em uma forma em uma DS
 
 8. Recompile e execute a solução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Definindo formas e conectores](../modeling/defining-shapes-and-connectors.md) [definindo uma imagem de plano de fundo em um diagrama](../modeling/setting-a-background-image-on-a-diagram.md) [navegando e atualizando um modelo no código de código de programação](../modeling/navigating-and-updating-a-model-in-program-code.md) [para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

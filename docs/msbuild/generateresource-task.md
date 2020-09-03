@@ -19,33 +19,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634052"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
 
 Converte entre arquivos *.txt* e *.resx* (formato de recurso baseado em XML) e arquivos *.resources* binários do Common Language Runtime que podem ser inseridos em um executável binário do tempo de execução ou compilados em assemblies satélite. Essa tarefa geralmente é usada para converter arquivos *.txt* ou *.resx* em arquivos *.resources*. A tarefa `GenerateResource` é funcionalmente semelhante a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).
 
-## <a name="parameters"></a>parâmetros
+## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`AdditionalInputs`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém entradas adicionais para a verificação de dependência realizada por tarefa. Por exemplo, os arquivos de projeto e de destino normalmente devem ser entradas, de modo que se eles forem atualizados, todos os recursos serão regenerados.|
-|`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma matriz de pares de valor de nome de variáveis de ambiente que devem ser passadas para o *resgen.exe*desovado, além de (ou substituindo seletivamente) o bloco de ambiente regular.|
+|`EnvironmentVariables`|Parâmetro `String[]` opcional.<br /><br /> Especifica uma matriz de pares de nome-valor de variáveis de ambiente que devem ser passadas para o *resgen.exe*gerado, além de (ou substituindo seletivamente) o bloco de ambiente regular.|
 |`ExcludedInputPaths`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma matriz de itens que especificam os caminhos dos quais entradas controladas serão ignoradas durante a verificação de atualização.|
-|`ExecuteAsTool`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, executa *tlbimp.exe* e *aximp.exe* a partir da estrutura de destino apropriada fora-de-proc para gerar os conjuntos de invólucros necessários. Esse parâmetro habilita multi-targeting de `ResolveComReferences`.|
+|`ExecuteAsTool`|Parâmetro `Boolean` opcional.<br /><br /> Se `true` , o executará *tlbimp.exe* e *aximp.exe* da estrutura de destino apropriada fora do processo para gerar os assemblies de wrapper necessários. Esse parâmetro habilita multi-targeting de `ResolveComReferences`.|
 |`FilesWritten`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém os nomes de todos os arquivos gravados em disco. Isso inclui o arquivo de cache, se houver. Esse parâmetro é útil para implementações do Clean.|
 |`MinimalRebuildFromTracking`|Parâmetro `Boolean` opcional.<br /><br /> Obtém ou define uma opção que especifica se o build incremental controlado será usado. Se `true`, o build incremental é ativado; caso contrário, será forçada uma recompilação.|
-|`NeverLockTypeAssemblies`|Parâmetro `Boolean` opcional.<br /><br /> Obtém ou define um valor booleano que especifica se deve criar um novo [AppDomain](/dotnet/api/system.appdomain) para avaliar os recursos *(.resx)* arquivos (verdadeiros) ou para criar um novo [AppDomain](/dotnet/api/system.appdomain) somente quando os arquivos de recursos fazem referência ao conjunto de um usuário (falso).|
-|`OutputResources`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica o nome dos arquivos gerados, como arquivos *.resources*. Se você não especificar um nome, o nome do arquivo de entrada correspondente será usado e o arquivo *.resources* criado será colocado no diretório que contém o arquivo de entrada.|
+|`NeverLockTypeAssemblies`|Parâmetro `Boolean` opcional.<br /><br /> Obtém ou define um valor booliano que especifica se um novo [AppDomain](/dotnet/api/system.appdomain) deve ser criado para avaliar os arquivos de recursos (*. resx*) ou para criar um novo [AppDomain](/dotnet/api/system.appdomain) somente quando os arquivos de recursos fazem referência a um assembly de usuário (falso).|
+|`OutputResources`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica o nome dos arquivos gerados, como arquivos *.resources*. Se você não especificar um nome, o nome do arquivo de entrada correspondente será usado e o arquivo *. Resources* criado será colocado no diretório que contém o arquivo de entrada.|
 |`PublicClass`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, cria uma classe de recurso fortemente tipada como uma classe pública.|
-|`References`|Parâmetro `String[]` opcional.<br /><br /> Referências das quais carregar tipos em arquivos *.resx*. Elementos de dados de arquivo *.resx* podem ter um tipo .NET. Quando o arquivo *.resx* é lido, isso deve ser resolvido. Normalmente, ele é resolvido com êxito usando o tipo padrão ao carregar regras. Se você fornecer assemblies em `References`, eles terão prioridade.<br /><br /> Esse parâmetro não é necessário para recursos fortemente tipados.|
-|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas SDK, como *resgen.exe*.|
+|`References`|Parâmetro `String[]` opcional.<br /><br /> Referências das quais carregar tipos em arquivos *.resx*. Elementos de dados de arquivo *.resx* podem ter um tipo .NET. Quando o arquivo *. resx* é lido, ele deve ser resolvido. Normalmente, ele é resolvido com êxito usando o tipo padrão ao carregar regras. Se você fornecer assemblies em `References`, eles terão prioridade.<br /><br /> Esse parâmetro não é necessário para recursos fortemente tipados.|
+|`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas do SDK, como *resgen.exe*.|
 |`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens a converter. Itens passados para esse parâmetro devem ter uma das seguintes extensões de arquivo:<br /><br /> -   *.txt*: especifica a extensão a ser convertida para um arquivo de texto. Os arquivos de texto só podem conter recursos de cadeia de caracteres.<br />-   *.resx*: especifica a extensão a ser convertida para um arquivo de recurso baseado em XML.<br />-   *.restext*: especifica o mesmo formato como *.txt*. Essa extensão diferente é útil se você quiser distinguir claramente os arquivos de origem que contêm recursos de outros arquivos de origem no processo de build.<br />-   *.resources*: especifica a extensão a ser convertida para um arquivo de recurso.|
 |`StateFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o caminho para um arquivo de cache opcional usado para acelerar a verificação de dependência de links em arquivos de entrada *.resx*.|
 |`StronglyTypedClassName`|Parâmetro `String` opcional.<br /><br /> Especifica o nome de classe para a classe de recurso fortemente tipada. Se esse parâmetro não for especificado, o nome base do arquivo de recurso será usado.|
@@ -55,10 +55,10 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 |`StronglyTypedNamespace`|Parâmetro `String` opcional.<br /><br /> Especifica o namespace para usar na origem de classe gerada para o recurso fortemente tipado. Se esse parâmetro não for especificado, todos os recursos fortemente tipados estarão no namespace global.|
 |`TLogReadFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` somente leitura opcional.<br /><br /> Obtém uma matriz de itens que representam os logs de acompanhamento de leitura.|
 |`TLogWriteFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` somente leitura opcional.<br /><br /> Obtém uma matriz de itens que representam os logs de acompanhamento de gravação.|
-|`ToolArchitecture`|Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Usado para determinar se *o Tracker.exe* precisa ou não ser usado para desovar *ResGen.exe*.<br /><br /> Deve ser analisável para um membro da enumeração <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, usa uma heurística para determinar uma arquitetura padrão. Deve ser analisável para um membro da enumeração Microsoft.Build.Utilities.ExecutableType.|
-|`TrackerFrameworkPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o local de framework .NET apropriado que contém *FileTracker.dll*.<br /><br /> Se ele for definido, o usuário assumirá a responsabilidade por garantir que o número de bit de *FileTracker.dll* passado corresponda ao número de bit de *ResGen.exe* que ele pretende usar. Se não for definido, a tarefa decide o local apropriado com base na versão atual do .NET Framework.|
+|`ToolArchitecture`|Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Usado para determinar se *Tracker.exe* deve ou não ser usado para gerar *ResGen.exe*.<br /><br /> Deve ser analisável para um membro da enumeração <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, usa uma heurística para determinar uma arquitetura padrão. Deve ser analisável para um membro da enumeração Microsoft.Build.Utilities.ExecutableType.|
+|`TrackerFrameworkPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o local de .NET Framework apropriado que contém *FileTracker.dll*.<br /><br /> Se definido, o usuário assume a responsabilidade por garantir que o bit de bits do *FileTracker.dll* que eles passam corresponde ao bit de bits do *ResGen.exe* que pretendem usar. Se não for definido, a tarefa decide o local apropriado com base na versão atual do .NET Framework.|
 |`TrackerLogDirectory`|Parâmetro `String` opcional.<br /><br /> Especifica o diretório intermediário no qual os logs de acompanhamento da execução dessa tarefa serão colocados.|
-|`TrackerSdkPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o local apropriado do SDK do Windows que contém *Tracker.exe*.<br /><br /> Se ele for definido, o usuário assumirá a responsabilidade por garantir que o número de bit de *Tracker.exe* passado corresponda ao número de bit de *ResGen.exe* que ele pretende usar. Se não for definido, a tarefa decide o local apropriado com base no SDK do Windows atual.|
+|`TrackerSdkPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para o local apropriado do SDK do Windows que contém *Tracker.exe*.<br /><br /> Se definido, o usuário assume a responsabilidade por garantir que o bit de bits do *Tracker.exe* que eles passam corresponde ao bit de bits do *ResGen.exe* que pretendem usar. Se não for definido, a tarefa decide o local apropriado com base no SDK do Windows atual.|
 |`TrackFileAccess`|Parâmetro <xref:System.Boolean> opcional.<br /><br /> Se é true, o diretório do arquivo de entrada é usado para resolver caminhos de arquivo relativos.|
 |`UseSourcePath`|Parâmetro `Boolean` opcional.<br /><br /> Se é `true`, especifica que o diretório do arquivo de entrada deve ser usado para resolver caminhos de arquivo relativos.|
 
@@ -84,7 +84,7 @@ O exemplo a seguir usa a tarefa `GenerateResource` para gerar arquivos *.resourc
 </GenerateResource>
 ```
 
-A tarefa `GenerateResource` usa os metadados \<LogicalName> de um item \<EmbeddedResource> para nomear os recursos que são inseridos em um assembly.
+A `GenerateResource` tarefa usa os \<LogicalName> metadados de um \<EmbeddedResource> item para nomear o recurso que é inserido em um assembly.
 
 Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recurso inserido chamado *someQualifier.someResource.resources*:
 
@@ -96,7 +96,7 @@ Supondo que o assembly seja nomeado myAssembly, o seguinte código gera um recur
 </ItemGroup>
 ```
 
-Sem os metadados de \<LogicalName>, o recurso é nomeado *myAssembly.myResource.resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.
+Sem os \<LogicalName> metadados, o recurso seria nomeado *myAssembly. MyResource. Resources*.  Este exemplo aplica-se somente ao processo de build do Visual Basic e Visual C#.
 
 ## <a name="see-also"></a>Confira também
 
