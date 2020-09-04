@@ -32,7 +32,7 @@
           href: work-with-datasets-in-n-tier-applications.md
     - name: Projetos de banco de dados e aplicativos da camada de dados (DAC)
       href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-    - name: Visão geral de aplicativos de dados de n camadas
+    - name: Visão geral de aplicativos de dados de N camadas
       href: n-tier-data-applications-overview.md
 - name: Guias de instruções
   items:
@@ -132,7 +132,7 @@
               href: save-a-dataset-as-xml.md
         - name: Consultar um conjuntos de dados
           href: query-datasets.md
-        - name: aplicativos de n camadas
+        - name: Aplicativos de N camadas
           items:
             - name: Adicionar validação a um conjunto de dados de n camadas
               href: add-validation-to-an-n-tier-dataset.md
