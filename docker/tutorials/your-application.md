@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: b8470c8d7708bc51916a6f57f5aa135c3267e355
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178175"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485435"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilar e executar o aplicativo de exemplo todo
 
@@ -55,6 +55,8 @@ Para criar o aplicativo, você precisa usar um `Dockerfile` . Um Dockerfile é s
     ```bash
     docker build -t getting-started .
     ```
+
+    Como alternativa, você também pode clicar com o botão direito do mouse no Dockerfile e escolher **Compilar imagem...** e, em seguida, especificar a marca no prompt.
 
     Esse comando usou o Dockerfile para criar uma nova imagem de contêiner. Talvez você tenha notado que muitas "camadas" foram baixadas. Isso ocorre porque você instruiu o construtor que desejava iniciar a partir da `node:12-alpine` imagem. Mas, como você não tinha isso em seu computador, essa imagem precisava ser baixada.
 

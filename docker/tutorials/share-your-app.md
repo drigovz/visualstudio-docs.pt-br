@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d5bd7a2d79bf6da710fd0f5803c2415781160143
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178177"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485528"
 ---
 # <a name="share-your-app"></a>Compartilhar seu aplicativo
 
@@ -63,6 +63,8 @@ Se você olhar o lado direito da página, verá uma seção chamada **comandos d
     ```bash
     docker push <username>/getting-started
     ```
+
+    Em vez da linha de comando, você também pode clicar com o botão direito do mouse na marca da imagem na seção **imagens** do modo de exibição do Docker e escolher **enviar por push...** e, em seguida, escolher **conectar registro...** e Hub do **Docker**.
 
 ## <a name="run-the-image-on-a-new-instance"></a>Executar a imagem em uma nova instância
 

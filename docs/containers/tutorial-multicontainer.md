@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: f20c3580d3082c69bbadb3b866d08e2c260a6827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cdb8fa2f2a2c3a6a41cab4218b06ce4786d33b4
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711658"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490307"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: criar um aplicativo de vários contêineres com Docker Compose
 
@@ -86,7 +86,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
    ```
    
     > [!NOTE]
-    > No código do mundo real, você não deve descartar `HttpClient` após cada solicitação. Para obter as práticas recomendadas, consulte [usar HttpClientFactory para implementar solicitações HTTP resilientes](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > No código do mundo real, você não deve descartar `HttpClient` após cada solicitação. Para obter as práticas recomendadas, consulte [usar HttpClientFactory para implementar solicitações HTTP resilientes](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    Para o .NET Core 3,1 no Visual Studio 2019 ou posterior, o modelo de API da Web usa uma API WeatherForecast, portanto, remova a marca de comentário dessa linha e comente a linha para ASP.NET 2. x.
 
@@ -192,7 +192,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
 
 Examine as opções para implantar seus [contêineres no Azure](/azure/containers).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
   
 [Docker Compose](https://docs.docker.com/compose/)  
-[Ferramentas de contêiner](/visualstudio/containers/)
+[Ferramentas de contêiner](./index.yml)

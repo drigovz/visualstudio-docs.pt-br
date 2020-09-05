@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178160"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485580"
 ---
 # <a name="persist-your-data"></a> Manter seus dados
 
@@ -86,7 +86,7 @@ Conforme mencionado, você vai usar um **volume nomeado**. Imagine um volume nom
     docker volume create todo-db
     ```
 
-1. Pare o contêiner de aplicativo todo novamente no painel (ou com `docker rm -f <id>` ), pois ele ainda está em execução sem usar o volume persistente.
+1. Pare o contêiner de aplicativo todo novamente no modo de exibição do Docker (ou com `docker rm -f <id>` ), pois ele ainda está em execução sem usar o volume persistente.
 
 1. Inicie o contêiner de aplicativo todo, mas adicione o `-v` sinalizador para especificar uma montagem de volume. Você usará o volume nomeado e o montará para `/etc/todos` o, que capturará todos os arquivos criados no caminho.
 
@@ -98,7 +98,7 @@ Conforme mencionado, você vai usar um **volume nomeado**. Imagine um volume nom
 
     ![Itens adicionados à lista de tarefas pendentes](media/items-added.png)
 
-1. Remova o contêiner do aplicativo de tarefas pendentes. Use o painel ou `docker ps` para obter a ID e, em seguida, `docker rm -f <id>` removê-la.
+1. Remova o contêiner do aplicativo de tarefas pendentes. Use a exibição do Docker ou `docker ps` para obter a ID e, em seguida, `docker rm -f <id>` removê-la.
 
 1. Inicie um novo contêiner usando o mesmo comando acima.
 

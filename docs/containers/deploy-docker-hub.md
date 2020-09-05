@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: cd17726d5ba09dcb901fd529e6bdfd97dee52f31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168613"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485132"
 ---
 # <a name="deploy-to-docker-hub"></a>Implantar no Docker Hub
 
@@ -54,7 +54,7 @@ Publique no [registro de contêiner do Azure](/azure/container-registry/) seguin
 
 Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [Implantar no serviço Azure app](deploy-app-service.md) 
- [Ferramentas de contêiner do Visual Studio](/visualstudio/containers/).
+ [Ferramentas de contêiner do Visual Studio](./index.yml).
