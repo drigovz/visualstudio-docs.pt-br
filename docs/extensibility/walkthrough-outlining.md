@@ -10,12 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906179"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508919"
 ---
 # <a name="walkthrough-outlining"></a>Passo a passo: estrutura de tópicos
 Configure recursos baseados em idioma, como estrutura de tópicos, definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de idioma ou definir sua própria extensão de nome de arquivo e tipo de conteúdo e aplicar a definição de região somente a esse tipo, ou aplicar as definições de região a um tipo de conteúdo existente (como "texto"). Este tutorial mostra como definir e exibir regiões de estrutura de tópicos.

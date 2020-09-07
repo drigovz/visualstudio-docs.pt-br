@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911774"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508425"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
 ## <a name="overview"></a>Visão geral
@@ -54,7 +54,7 @@ Você geralmente simula uma carga para testar serviços de nuvem em condições 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Criando um perfil de serviço de nuvem no Azure
 Ao publicar seu serviço de nuvem do Visual Studio, você poderá analisar o serviço e especificar as configurações de criação de perfil que fornecem as informações desejadas. Uma sessão de criação de perfil é iniciada para cada instância de uma função. Para obter mais informações sobre como publicar seu serviço do Visual Studio, consulte [Publicando em um Serviço de Nuvem do Azure do Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Para saber mais sobre o perfil de desempenho no Visual Studio, consulte [Guia de criação de perfis de desempenho para iniciantes](https://msdn.microsoft.com/library/azure/ms182372.aspx) e [Analisando o desempenho do aplicativo usando ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Para saber mais sobre o perfil de desempenho no Visual Studio, consulte [Guia de criação de perfis de desempenho para iniciantes](../profiling/beginners-guide-to-performance-profiling.md) e [Analisando o desempenho do aplicativo usando ferramentas de criação de perfil](../profiling/performance-explorer.md).
 
 > [!NOTE]
 > Você pode habilitar o IntelliTrace ou a criação de perfis quando publicar seu serviço de nuvem. Não é possível habilitar ambos.
@@ -68,7 +68,7 @@ Você pode usar diferentes métodos de coleção para a criação de perfil com 
 * **Instrumentação** - esse método coleta dados detalhados de tempo úteis para a análise concentrada e para analisar problemas de desempenho de entrada/saída. O método de instrumentação registra cada entrada, saída e a chamada de função das funções em um módulo durante uma execução da criação de perfil. Este método é útil para coletar informações detalhadas de tempo sobre uma seção de seu código e para compreender o impacto das operações de entrada e de saída no desempenho do aplicativo. Este método está desabilitado para um computador que esteja executando um sistema operacional de 32 bits. Esta opção só estará disponível quando você executar o serviço de nuvem no Azure, e não localmente no emulador de computação.
 * **Alocação de memória do .NET** -esse método coleta dados de alocação de memória do .NET Framework usando o método de criação de perfil de amostragem. Os dados coletados incluem o número e o tamanho dos objetos alocados.
 * **Simultaneidade** - esse método coleta dados de contenção de recursos e dados de execução de thread e processo úteis na análise de aplicativos multi-threaded e multiprocessados. O método de simultaneidade coleta dados para cada evento que bloqueia a execução de seu código, como quando um thread aguarda que o acesso bloqueado a um recurso de aplicativo seja liberado. Este método é útil para analisar aplicativos multi-threaded.
-* Você também pode habilitar **Criação de Perfil de Interação de Camadas**, que oferece informações adicionais sobre os tempos de execução de chamadas ADO.NET síncronas em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados. Você pode coletar dados de interação de camadas com qualquer um dos métodos de criação de perfil. Para saber mais sobre a criação de perfil de interação de camadas, consulte [Exibição de interações de camada](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* Você também pode habilitar **Criação de Perfil de Interação de Camadas**, que oferece informações adicionais sobre os tempos de execução de chamadas ADO.NET síncronas em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados. Você pode coletar dados de interação de camadas com qualquer um dos métodos de criação de perfil. Para saber mais sobre a criação de perfil de interação de camadas, consulte [Exibição de interações de camada](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Definindo configurações de criação de perfil
 A seguinte ilustração mostra como definir as configurações de criação de perfil na caixa de diálogo Publicar Aplicativo do Azure.
@@ -102,7 +102,7 @@ Uma sessão de criação de perfil é gerada para cada instância de uma funçã
 3. Para exibir relatórios de criação de perfil para uma instância, escolha a função no serviço, abra o menu de atalho para uma instância específica e selecione **Exibir Relatório de Criação de Perfil**.
 
     O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Nome da função\>*<Número da instância\>*<identificador\>.vsp. Serão exibidos dados de resumo para o relatório.
-4. Para mostrar diferentes modos de exibição do relatório, na lista Modo de Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Para mostrar diferentes modos de exibição do relatório, na lista Modo de Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](../profiling/performance-report-views.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 [Depurando serviços de nuvem](vs-azure-tools-debug-cloud-services-virtual-machines.md)

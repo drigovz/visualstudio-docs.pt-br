@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815130"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508971"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
@@ -233,7 +233,7 @@ Estas dicas podem ajudar você a começar a usar o TAP no Unity:
 * Funções assíncronas que retornam uma tarefa devem ter o sufixo **"Async"** acrescentado aos seus nomes. O sufixo "Async" ajuda a indicar que uma função deve sempre ser aguardada.
 * Use somente o tipo de retorno `async void` para funções que disparam funções assíncronas do código síncrono tradicional. Essas funções em si não podem ser esperadas e não devem ter o sufixo "Async" em seus nomes.
 * O Unity usa o UnitySynchronizationContext para garantir que funções assíncronas sejam executadas no thread principal por padrão. A API do Unity não está acessível fora do thread principal.
-* É possível executar tarefas em threads em segundo plano com métodos como [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) e [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) . Essa técnica é útil para o descarregamento de operações onerosas do thread principal para aprimorar o desempenho. No entanto, o uso de threads em segundo plano pode levar a problemas difíceis de depurar, tais como [condições de corrida](https://wikipedia.org/wiki/Race_condition).
+* É possível executar tarefas em threads em segundo plano com métodos como [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) e [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) . Essa técnica é útil para o descarregamento de operações onerosas do thread principal para aprimorar o desempenho. No entanto, o uso de threads em segundo plano pode levar a problemas difíceis de depurar, tais como [condições de corrida](https://wikipedia.org/wiki/Race_condition).
 * A API do Unity não está acessível fora do thread principal.
 * Tarefas que usam threads não são compatíveis com builds WebGL do Unity.
 

@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800483"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508477"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
 
@@ -75,7 +75,7 @@ Se você habilitar a depuração remota para um serviço de nuvem, ela não most
 
     ![Anexar Depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. Depois que o depurador é anexado a uma instância, a depuração ocorre como de costume. O depurador é anexado automaticamente ao processo de host apropriado para sua função. Dependo da função, o depurador será anexado a w3wp.exe, a WaWorkerHost.exe ou a WaIISHost.exe. Para verificar o processo ao qual o depurador é anexado, expanda o nó da instância no Gerenciador de Servidores. Consulte [Arquitetura de função do Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) para obter mais informações sobre os processos do Azure.
+3. Depois que o depurador é anexado a uma instância, a depuração ocorre como de costume. O depurador é anexado automaticamente ao processo de host apropriado para sua função. Dependo da função, o depurador será anexado a w3wp.exe, a WaWorkerHost.exe ou a WaIISHost.exe. Para verificar o processo ao qual o depurador é anexado, expanda o nó da instância no Gerenciador de Servidores. Consulte [Arquitetura de função do Azure](/archive/blogs/kwill/windows-azure-role-architecture) para obter mais informações sobre os processos do Azure.
 
     ![Caixa de diálogo Selecionar tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Você pode depurar programas que são executados em máquinas virtuais do Azure 
 
     ![Caixa de diálogo Selecionar tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Escolha os processos que você deseja depurar na máquina virtual e, em seguida, selecione **anexar**. Por exemplo, você pode escolher o processo w3wp.exe se quiser depurar um aplicativo Web na máquina virtual. Consulte [Depurar um ou mais processos no Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) e [Arquitetura de função do Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) para obter mais informações.
+5. Escolha os processos que você deseja depurar na máquina virtual e, em seguida, selecione **anexar**. Por exemplo, você pode escolher o processo w3wp.exe se quiser depurar um aplicativo Web na máquina virtual. Consulte [Depurar um ou mais processos no Visual Studio](../debugger/debug-multiple-processes.md) e [Arquitetura de função do Azure](/archive/blogs/kwill/windows-azure-role-architecture) para obter mais informações.
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Criar um projeto da Web e uma máquina virtual para depuração
 
@@ -167,7 +167,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publique seu projeto, como descrito em [Como implantar um projeto Web usando a publicação de um clique no Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Como você deseja depurar na máquina virtual, na página **Configurações** do assistente **Publicar Web**, selecione **Depurar** como a configuração. Isso garante que os símbolos de código estejam disponíveis durante a depuração.
+6. Publique seu projeto, como descrito em [Como implantar um projeto Web usando a publicação de um clique no Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Como você deseja depurar na máquina virtual, na página **Configurações** do assistente **Publicar Web**, selecione **Depurar** como a configuração. Isso garante que os símbolos de código estejam disponíveis durante a depuração.
 
     ![Configurações de publicação](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     ![Caixa de diálogo Selecionar tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Escolha os processos que você deseja depurar na máquina virtual e, em seguida, selecione **anexar**. Por exemplo, você pode escolher o processo w3wp.exe se quiser depurar um aplicativo Web na máquina virtual. Consulte [Depurar um o mais processos no Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) para obter mais informações.
+10. Escolha os processos que você deseja depurar na máquina virtual e, em seguida, selecione **anexar**. Por exemplo, você pode escolher o processo w3wp.exe se quiser depurar um aplicativo Web na máquina virtual. Consulte [Depurar um o mais processos no Visual Studio](../debugger/debug-multiple-processes.md) para obter mais informações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

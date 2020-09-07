@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Exibir sugestões de lâmpada | Microsoft Docs'
+title: 'Walkthrough: exibindo sugestões de lâmpada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,52 +8,52 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e95466094f15b4fa166bfdb20c85836da32df96
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438152"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508581"
 ---
-# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: Exibindo sugestões de lâmpada
+# <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: exibindo sugestões de lâmpada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As lâmpadas são ícones usados no editor do Visual Studio que expanda para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelo analisadores de código internos ou refatoração de código.  
+Lâmpadas são ícones usados no editor do Visual Studio que se expandem para exibir um conjunto de ações, por exemplo, correções para problemas identificados pelos analisadores de código internos ou refatoração de código.  
   
- Nos editores do Visual c# e Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com as ações que exibem as lâmpadas automaticamente. Para obter mais informações, consulte:  
+ Nos editores do Visual C# e do Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com ações que exibem lâmpadas claras automaticamente. Para obter mais informações, consulte:  
   
-- [Como: Gravar um c# diagnóstico e a correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Como: escrever um diagnóstico e uma correção de código em C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)  
   
-- [Como: Gravar um diagnóstico do Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Como: escrever um diagnóstico de Visual Basic e correção de código](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)  
   
-  Outras linguagens como C++ também fornecem as lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
+  Outras linguagens, como C++, também fornecem lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.  
   
-  Uma lâmpada é semelhante ao seguinte. Em um projeto do Visual Basic ou Visual c#, uma linha ondulada vermelha aparece sob um nome de variável quando ela é inválida. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
+  Esta é a aparência de uma lâmpada. Em um projeto Visual Basic ou Visual C#, um ondulado vermelho aparece sob um nome de variável quando é inválido. Quando você passa o mouse sobre o identificador inválido, uma lâmpada é exibida perto do cursor.  
   
-  ![lâmpada](../extensibility/media/lightbulb.png "lâmpada")  
+  ![lâmpada](../extensibility/media/lightbulb.png "Lâmpadas")  
   
-  Se você clicar na seta para baixo, a lâmpada, um conjunto de ações sugeridas que é exibido, juntamente com uma visualização da ação selecionada. Nesse caso, ele mostra as alterações que serão feitas ao seu código se você executar a ação.  
+  Se você clicar na seta para baixo pela lâmpada, um conjunto de ações sugeridas será exibido, juntamente com uma visualização da ação selecionada. Nesse caso, ele mostra as alterações que serão feitas no seu código se você executar a ação.  
   
-  ![visualização da lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![visualização de lâmpada](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  Você pode usar as lâmpadas para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover as chaves para uma nova linha de abertura ou movê-los ao final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **Converter em maiusculas** e **converter em letras minúsculas**.  
+  Você pode usar lâmpadas leves para fornecer suas próprias ações sugeridas. Por exemplo, você pode fornecer ações para mover chaves de abertura para uma nova linha ou movê-las para o final da linha anterior. A instrução a seguir mostra como criar uma lâmpada que aparece na palavra atual e tem duas ações sugeridas: **converter em maiúsculas** e **converter em**minúsculas.  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Criando um projeto do Managed Extensibility Framework (MEF)  
+## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Criando um projeto Managed Extensibility Framework (MEF)  
   
-1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest`.  
+1. Crie um projeto VSIX em C#. (Na caixa de diálogo **novo projeto** , selecione **Visual C#/extensibilidade**e, em seguida, **projeto VSIX**.) Nomeie a solução `LightBulbTest` .  
   
-2. Adicionar um **classificador de Editor** modelo de item ao projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de Item Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Adicione um modelo de item de **classificação do editor** ao projeto. Para obter mais informações, consulte [criando uma extensão com um modelo de item do editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3. Exclua os arquivos de classe existentes.  
   
-4. Adicione a seguinte referência ao projeto e defina **Copy Local** para `False`:  
+4. Adicione a seguinte referência ao projeto e defina **Copy local** como `False` :  
   
-     Microsoft.VisualStudio.Language.Intellisense  
+     Microsoft. VisualStudio. Language. IntelliSense  
   
-5. Adicione um novo arquivo de classe e denomine **LightBulbTest**.  
+5. Adicione um novo arquivo de classe e nomeie-o **LightBulbTest**.  
   
 6. Adicione as seguintes instruções using:  
   
@@ -72,9 +72,9 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
   
     ```  
   
-## <a name="implementing-the-light-bulb-source-provider"></a>Implementando o provedor de fonte de lâmpada  
+## <a name="implementing-the-light-bulb-source-provider"></a>Implementando o provedor de origem de lâmpada  
   
-1. No arquivo de classe LightBulbTest.cs, exclua a classe LightBulbTest. Adicione uma classe chamada **TestSuggestedActionsSourceProvider** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Exportá-lo com um nome de **ações sugeridas de teste** e um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text".  
+1. No arquivo da classe LightBulbTest.cs, exclua a classe LightBulbTest. Adicione uma classe chamada **TestSuggestedActionsSourceProvider** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> . Exporte-o com um nome de **ações sugeridas de teste** e um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "texto".  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -83,14 +83,14 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2. Dentro da classe de provedor de código-fonte, importe o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> e adicioná-lo como uma propriedade.  
+2. Dentro da classe do provedor de origem, importe o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> e adicione-o como uma propriedade.  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3. Implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> método para retornar um <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> objeto. Vamos discutir o código-fonte na próxima seção.  
+3. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> método para retornar um <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> objeto. Discutiremos a fonte na próxima seção.  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
@@ -104,15 +104,15 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     ```  
   
 ## <a name="implementing-the-isuggestedactionsource"></a>Implementando o ISuggestedActionSource  
- A origem da ação sugerida é responsável por coletar o conjunto de ações sugeridas e adicioná-los no contexto certo. Nesse caso, o contexto é a palavra atual e são as ações sugeridas **UpperCaseSuggestedAction** e **LowerCaseSuggestedAction**, que discutiremos na seção a seguir.  
+ A origem da ação sugerida é responsável por coletar o conjunto de ações sugeridas e adicioná-las no contexto certo. Nesse caso, o contexto é a palavra atual e as ações sugeridas são **UpperCaseSuggestedAction** e **LowerCaseSuggestedAction**, que discutiremos na seção a seguir.  
   
-1. Adicione uma classe **TestSuggestedActionsSource** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+1. Adicione uma classe **TestSuggestedActionsSource** que implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> .  
   
     ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2. Adicione campos particulares de somente leitura para o provedor de origem da ação sugerida, o buffer de texto e a exibição de texto.  
+2. Adicione campos somente leitura privados para o provedor de origem de ação sugerido, o buffer de texto e a exibição de texto.  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -131,7 +131,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-4. Adicione um método particular que retorna a palavra que está atualmente sob o cursor. O método a seguir examina o local atual do cursor e solicita que o navegador de estrutura de texto para a extensão da palavra. Se o cursor estiver sobre uma palavra, o <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> é retornado no parâmetro de saída; caso contrário, o `out` parâmetro é `null` e o método retornará `false`.  
+4. Adicione um método particular que retorne a palavra que está no cursor no momento. O método a seguir examina o local atual do cursor e solicita ao navegador de estrutura de texto a extensão da palavra. Se o cursor estiver em uma palavra, o <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> será retornado no parâmetro out; caso contrário, o `out` parâmetro será `null` e o método retornará `false` .  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -156,9 +156,9 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-5. Implementar o método de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> . O editor chama esse método para descobrir se deve exibir a lâmpada. Essa chamada é feita com muita frequência, por exemplo, sempre que o cursor se move de uma linha para outra, ou quando o mouse passa sobre um rabisco de erro. Ele é assíncrono para permitir que outras operações de interface do usuário executar enquanto esse método está funcionando. Na maioria dos casos que esse método precisa para executar alguma análise e a análise da linha atual, portanto, o processamento pode levar algum tempo.  
+5. Implementar o método de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> . O editor chama esse método para descobrir se deseja exibir a lâmpada. Essa chamada é feita com muita frequência, por exemplo, sempre que o cursor se move de uma linha para outra ou quando o mouse passa sobre um erro rabiscado. Ele é assíncrono para permitir que outras operações de interface do usuário sejam executadas enquanto esse método está funcionando. Na maioria dos casos, esse método precisa executar alguma análise e análise da linha atual, para que o processamento possa levar algum tempo.  
   
-     Em nossa implementação ele obtém de maneira assíncrona o <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> e determina se a extensão é significativa, ou seja, se ele tem algum texto que não seja espaço em branco.  
+     Em nossa implementação, ele obtém de forma assíncrona o <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> e determina se a extensão é significativa, ou seja, se ela tem algum texto diferente de espaço em branco.  
   
     ```csharp  
     public Task<bool> HasSuggestedActionsAsync(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -176,10 +176,10 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-6. Implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> método, que retorna uma matriz de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objetos que contêm diferentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objetos. Esse método é chamado quando a lâmpada é expandida.  
+6. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> método, que retorna uma matriz de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objetos que contêm os diferentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objetos. Esse método é chamado quando a lâmpada é expandida.  
   
     > [!WARNING]
-    > Assegure-se de que as implementações de `HasSuggestedActionsAsync()` e `GetSuggestedActions()` are consistente; que é, se `HasSuggestedActionsAsync()` retorna `true`, em seguida, `GetSuggestedActions()` deve ter algumas ações para exibir. Em muitos casos `HasSuggestedActionsAsync()` é chamado antes `GetSuggestedActions()`, mas isso não é sempre o caso. Por exemplo, se o usuário invoca as ações de lâmpada pressionando (CTRL +.) só `GetSuggestedActions()` é chamado.  
+    > Você deve certificar-se de que as implementações do `HasSuggestedActionsAsync()` e `GetSuggestedActions()` são consistentes; ou seja, se `HasSuggestedActionsAsync()` retorna `true` , `GetSuggestedActions()` deve ter algumas ações para exibir. Em muitos casos `HasSuggestedActionsAsync()` , é chamado pouco antes `GetSuggestedActions()` , mas esse não é sempre o caso. Por exemplo, se o usuário invocar as ações de lâmpada, pressionar (CTRL +.) somente `GetSuggestedActions()` é chamado.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -196,13 +196,13 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }   
     ```  
   
-7. Definir um `SuggestedActionsChanged` eventos.  
+7. Defina um `SuggestedActionsChanged` evento.  
   
     ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8. Para concluir a implementação, adicione as implementações para o `Dispose()` e `TryGetTelemetryId()` métodos. Não queremos fazer telemetria, portanto, basta retornar false e o GUID do conjunto para vazio.  
+8. Para concluir a implementação, adicione implementações para `Dispose()` os `TryGetTelemetryId()` métodos e. Não queremos fazer telemetria, portanto, basta retornar false e definir o GUID como vazio.  
   
     ```csharp  
     public void Dispose()  
@@ -217,20 +217,20 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-## <a name="implementing-light-bulb-actions"></a>Implementando a lâmpada ações  
+## <a name="implementing-light-bulb-actions"></a>Implementando ações de lâmpada  
   
-1. No projeto, adicione uma referência ao Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll e defina **Copy Local** para `False`.  
+1. No projeto, adicione uma referência a Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll e defina **Copiar local** como `False` .  
   
-2. Crie duas classes, a primeira chamada `UpperCaseSuggestedAction` e a segunda chamada `LowerCaseSuggestedAction`. Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2. Crie duas classes, o primeiro nome `UpperCaseSuggestedAction` e o segundo nomeado `LowerCaseSuggestedAction` . Ambas as classes implementam <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> .  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Ambas as classes são semelhantes, exceto que um chama <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A>. As etapas a seguir abrangem apenas a classe de ação em maiusculas, mas você deve implementar as duas classes. Use as etapas para implementar a ação de letras maiusculas como um padrão para implementar a ação em minúsculas.  
+     Ambas as classes são semelhantes, exceto que uma chamada <xref:System.String.ToUpper%2A> e as outras chamadas <xref:System.String.ToLower%2A> . As etapas a seguir abrangem apenas a classe de ação de letras maiúsculas, mas você deve implementar ambas as classes. Use as etapas para implementar a ação em maiúsculas como um padrão para implementar a ação em minúsculas.  
   
-3. Adicione o seguinte usando instruções para essas classes:  
+3. Adicione as seguintes instruções using para essas classes:  
   
     ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
@@ -241,7 +241,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
   
     ```  
   
-4. Declare um conjunto de campos particulares.  
+4. Declare um conjunto de campos privados.  
   
     ```csharp  
     private ITrackingSpan m_span;  
@@ -250,7 +250,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     private ITextSnapshot m_snapshot;  
     ```  
   
-5. Adicione um construtor que define os campos.  
+5. Adicione um construtor que defina os campos.  
   
     ```csharp  
     public UpperCaseSuggestedAction(ITrackingSpan span)  
@@ -262,7 +262,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-6. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> , de modo que ele exibe a visualização de ação.  
+6. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> método para que ele exiba a visualização da ação.  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -274,7 +274,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-7. Implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> método para que ele retorne um vazio <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> enumeração.  
+7. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> método para que ele retorne uma <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> Enumeração vazia.  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -318,7 +318,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-9. Implementar o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método, substituindo o texto no trecho com seu equivalente em maiusculas.  
+9. Implemente o <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> método substituindo o texto no span por seu equivalente em maiúsculas.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  
@@ -328,9 +328,9 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     ```  
   
     > [!WARNING]
-    > A ação de lâmpada **Invoke** método não é esperado para mostrar a interface do usuário.  Se a ação de abrir nova interface do usuário (por exemplo, um diálogo Visualização ou a seleção), não exibem a interface do usuário diretamente de dentro do **Invoke** método, mas em vez disso, agendar para exibir sua interface do usuário depois de retornar do **Invoke**.  
+    > O método **Invoke** da ação de lâmpada não é esperado para mostrar a interface do usuário.  Se a ação abrir a nova interface do usuário (por exemplo, uma caixa de diálogo de visualização ou seleção), não exiba a interface do usuário diretamente de dentro do método **Invoke** , mas, em vez disso, agende para exibir a interface do usuário depois de retornar de **Invoke**.  
   
-10. Para concluir a implementação, adicione a `Dispose()` e `TryGetTelemetryId()` métodos.  
+10. Para concluir a implementação, adicione os `Dispose()` `TryGetTelemetryId()` métodos e.  
   
     ```csharp  
     public void Dispose()  
@@ -345,23 +345,23 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     }  
     ```  
   
-11. Não se esqueça de fazer a mesma coisa `LowerCaseSuggestedAction` alterando o texto de exibição para "converter '{0}' para letras minúsculas" e a chamada <xref:System.String.ToUpper%2A> para <xref:System.String.ToLower%2A>.  
+11. Não se esqueça de fazer a mesma coisa para `LowerCaseSuggestedAction` alterar o texto de exibição para "converter" {0} em letras minúsculas "e a chamada <xref:System.String.ToUpper%2A> para <xref:System.String.ToLower%2A> .  
   
-## <a name="building-and-testing-the-code"></a>Compilar e testar o código  
- Para testar esse código, compile a solução LightBulbTest e executá-lo na instância Experimental.  
+## <a name="building-and-testing-the-code"></a>Criando e testando o código  
+ Para testar esse código, crie a solução LightBulbTest e execute-a na instância experimental.  
   
 1. Compile a solução.  
   
-2. Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é instanciada.  
+2. Quando você executa esse projeto no depurador, uma segunda instância do Visual Studio é instanciada.  
   
 3. Crie um arquivo de texto e digite algum texto. Você deve ver uma lâmpada à esquerda do texto.  
   
      ![testar a lâmpada](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4. Apontar para a lâmpada. Você deve ver uma seta para baixo.  
+4. Aponte para a lâmpada. Você deve ver uma seta para baixo.  
   
-5. Quando você clicar na lâmpada, duas ações sugeridas devem ser exibidas, juntamente com a visualização da ação selecionada.  
+5. Quando você clica na lâmpada, duas ações sugeridas devem ser exibidas, juntamente com a visualização da ação selecionada.  
   
-     ![testar a lâmpada expandida](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
+     ![lâmpada de teste, expandida](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
-6. Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em letras minúsculas.
+6. Se você clicar na primeira ação, todo o texto na palavra atual deverá ser convertido em letras maiúsculas. Se você clicar na segunda ação, todo o texto deverá ser convertido em letras minúsculas.

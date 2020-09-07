@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219602"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508529"
 ---
 # <a name="reliability-warnings"></a>Avisos de confiabilidade
 
@@ -28,11 +28,7 @@ Os avisos de confiabilidade dão suporte à biblioteca e confiabilidade do aplic
 |Regra|Descrição|
 |----------|-----------------|
 |[CA2000: Descartar objetos antes de perder o escopo](../code-quality/ca2000.md)|Como pode ocorrer um evento excepcional que impedirá a execução do finalizador de um objeto, o objeto deve ser explicitamente descartado antes que todas as referências a ele estejam fora do escopo.|
-|[CA2001: Evitar chamar métodos problemáticos](../code-quality/ca2001.md)|Um membro chama um método potencialmente perigoso ou problemático.|
 |[CA2002: Não bloquear objetos com identidade fraca](../code-quality/ca2002.md)|Diz-se que um objeto tem uma identidade fraca quando puder ser acessado diretamente em todos os limites de domínio do aplicativo. Um thread que tente adquirir um bloqueio em um objeto com uma identidade fraca pode ser bloqueado por um segundo thread em um domínio de aplicativo diferente com um bloqueio no mesmo objeto.|
-|[CA2003: Não tratar fibras como threads](../code-quality/ca2003.md)|Um thread gerenciado está sendo tratado como um Thread Win32.|
-|[CA2004: Remover as chamadas a GC.KeepAlive](../code-quality/ca2004.md)|Se você estiver convertendo para uso de SafeHandle, remova todas as chamadas para GC. KeepAlive (objeto). Nesse caso, as classes não devem ter que chamar GC. KeepAlive, supondo que eles não tenham um finalizador, mas dependem de SafeHandle para finalizar o identificador do sistema operacional para eles.|
-|[CA2006: Usar SafeHandle para encapsular recursos nativos](../code-quality/ca2006.md)|O uso de IntPtr em código gerenciado pode indicar um problema de segurança e confiabilidade em potencial. Todos os usos de IntPtr devem ser examinados para determinar se o uso de um SafeHandle, ou tecnologia semelhante, é necessário em seu lugar.|
 |[CA2007: não aguardar diretamente uma tarefa](../code-quality/ca2007.md)|Um método assíncrono [aguarda](/dotnet/csharp/language-reference/keywords/await) um <xref:System.Threading.Tasks.Task> diretamente.|
 |[CA2008: Não criar tarefas sem passar um TaskScheduler](../code-quality/ca2008.md)|Uma operação de criação ou de continuação de tarefa usa uma sobrecarga de método que não especifica um <xref:System.Threading.Tasks.TaskScheduler> parâmetro.|
 |[CA2009: Não chamar ToImmutableCollection em um valor ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable` o método não era necessariamente chamado em uma coleção imutável do <xref:System.Collections.Immutable> namespace.|

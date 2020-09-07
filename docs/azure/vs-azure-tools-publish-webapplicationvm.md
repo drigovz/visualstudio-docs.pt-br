@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62572279"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508412"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script do Windows PowerShell)
 Implanta um aplicativo Web em uma máquina virtual. Se os recursos necessários não existirem, o script criará tais recursos em sua assinatura do Azure.
@@ -53,7 +53,7 @@ O nome da assinatura do Azure no qual você deseja criar a máquina virtual.
 | Aceitar caracteres curinga? |false |
 
 ### <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação da web para publicar na máquina virtual. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Consulte [Como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx).
+O caminho para o pacote de implantação da web para publicar na máquina virtual. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Consulte [Como: criar um pacote de implantação da Web no Visual Studio](/previous-versions/aspnet/dd465323(v=vs.110)).
 
 | Aliases | nenhum |
 | --- | --- |

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769486"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508373"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
@@ -40,7 +40,7 @@ Em uma condição de memória insuficiente, ocorrem as seguintes ações:
 
 ## <a name="improve-visual-studio-performance"></a>Melhorar o desempenho do Visual Studio
 
-Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com soluções grandes ou condições de memória insuficiente, consulte [considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com soluções grandes ou condições de memória insuficiente, consulte [considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>A análise de código ao vivo é reduzida para o escopo mínimo
 
@@ -69,4 +69,4 @@ Além disso, os caches usados para operações internas do Visual Studio também
 
 - [Como: configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md)
 - [Noções básicas sobre a coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)
-- [Considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

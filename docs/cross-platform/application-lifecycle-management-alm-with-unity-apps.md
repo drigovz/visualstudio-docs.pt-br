@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232940"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509036"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
 
@@ -73,7 +73,7 @@ Considerações especiais para controle de versão com o Unity:
 
 3. Ativos binários em um projeto do Unity, como texturas ou arquivos de áudio, podem ocupar uma grande quantidade de armazenamento. Vários sistemas de controle do código-fonte, como Git, armazenam uma cópia única de um arquivo para cada alteração feita, mesmo que a alteração afete apenas uma pequena parte do arquivo. Isso pode fazer o repositório Git ficar inflado. Para resolver isso, os desenvolvedores do Unity geralmente optam por adicionar somente ativos finais ao repositório e usar uma maneira diferente de manter um histórico de trabalho de seus ativos, como OneDrive, DropBox ou git-annex. Essa abordagem funciona porque esses ativos geralmente não precisam ter controle de versão ao longo das alterações do código-fonte. Os desenvolvedores normalmente também definem o Modo de Serialização de Ativo como Forçar Texto no editor do projeto para armazenar arquivos de cena no texto e não no formato binário, o que permite mesclagens no controle do código-fonte. Para obter detalhes, consulte [Configurações do Editor](https://docs.unity3d.com/Manual/class-EditorManager.html) (documentação do Unity).
 
-## <a name="build"></a>Build
+## <a name="build"></a>Compilação
 
 Link de referência: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
@@ -103,10 +103,10 @@ Link de referência: ** [melhorar a qualidade do código](../test/improve-code-q
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|
 |-------------|--------------------------|-------------------------|
 |[Analisar a qualidade do código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
-|[Localizar código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/hh205279.aspx)|Sim|Pode analisar o código de script C# no Visual Studio.|
+|[Localizar código duplicado usando detecção de clone de código](/previous-versions/hh205279(v=vs.140))|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Medir complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)|Sim|Pode analisar o código de script C# no Visual Studio.|
 |[Ferramentas de desempenho](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|
-|[Analisar problemas de memória .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|
+|[Analisar problemas de memória .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|
 
 ## <a name="release-management"></a>Gerenciamento de liberações
 

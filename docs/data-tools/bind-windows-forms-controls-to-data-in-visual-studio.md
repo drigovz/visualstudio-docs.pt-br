@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6a1d240c865ecc6abddd399c94122a757ee0983
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283002"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508542"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associar controles do Windows Forms a dados no Visual Studio
 
@@ -53,7 +53,7 @@ O [controle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigat
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Associar a dados em um controle DataGridView
 
-Para um [controle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), a tabela inteira é associada a esse controle único. Quando você arrasta um **DataGridView** para o formulário, uma faixa de ferramenta para os registros de navegação ( <xref:System.Windows.Forms.BindingNavigator> ) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), o [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparece na bandeja do componente. Na ilustração a seguir, um [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) também é adicionado porque a tabela Customers tem uma relação com a tabela Orders. Essas variáveis são todas declaradas no código gerado automaticamente como membros privados na classe Form. O código gerado automaticamente para preencher o **DataGridView** está localizado no manipulador de `Form_Load` eventos. O código para salvar os dados para atualizar o banco de dado está localizado no `Save` manipulador de eventos do **BindingNavigator**. Você pode mover ou modificar esse código conforme necessário.
+Para um [controle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), a tabela inteira é associada a esse controle único. Quando você arrasta um **DataGridView** para o formulário, uma faixa de ferramenta para os registros de navegação ( <xref:System.Windows.Forms.BindingNavigator> ) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), o [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparece na bandeja do componente. Na ilustração a seguir, um [TableAdapterManager](/previous-versions/bb384426(v=vs.140)) também é adicionado porque a tabela Customers tem uma relação com a tabela Orders. Essas variáveis são todas declaradas no código gerado automaticamente como membros privados na classe Form. O código gerado automaticamente para preencher o **DataGridView** está localizado no manipulador de `Form_Load` eventos. O código para salvar os dados para atualizar o banco de dado está localizado no `Save` manipulador de eventos do **BindingNavigator**. Você pode mover ou modificar esse código conforme necessário.
 
 ![GridView com BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

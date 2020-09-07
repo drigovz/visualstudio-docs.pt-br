@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426727"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508490"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
 Quando você precisa solucionar problemas de uma máquina virtual ou serviço de nuvem do Azure, pode usar o Visual Studio para configurar mais facilmente o Diagnóstico do Azure. O diagnóstico captura dados do sistema e dados de log em máquinas virtuais e instâncias de máquinas virtuais que executam o serviço de nuvem. Dados de diagnóstico são transferidos para uma conta de armazenamento que você escolhe. Para obter mais informações sobre o registro em log de diagnóstico no Azure, consulte [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -156,18 +156,18 @@ Se você estiver usando o SDK do Azure 2.5 e quiser especificar uma fonte de dad
 ```
 
 ### <a name="performance-counters"></a>Contadores de desempenho
-As informações do contador de desempenho podem ajudá-lo a localizar gargalos do sistema e ajustar o sistema e desempenho do aplicativo. Para obter mais informações, consulte [Criar e usar contadores de desempenho em um aplicativo do Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Para capturar contadores de desempenho, marque a caixa de seleção **Habilitar a transferência de contadores de desempenho**. Para aumentar ou diminuir o intervalo entre a transferência de logs de evento para sua conta de armazenamento, altere o valor do **Período de Transferência (min)**. Selecione as caixas de seleção para os contadores de desempenho que você deseja controlar.
+As informações do contador de desempenho podem ajudá-lo a localizar gargalos do sistema e ajustar o sistema e desempenho do aplicativo. Para obter mais informações, consulte [Criar e usar contadores de desempenho em um aplicativo do Azure](/azure/cloud-services/diagnostics-performance-counters). Para capturar contadores de desempenho, marque a caixa de seleção **Habilitar a transferência de contadores de desempenho**. Para aumentar ou diminuir o intervalo entre a transferência de logs de evento para sua conta de armazenamento, altere o valor do **Período de Transferência (min)**. Selecione as caixas de seleção para os contadores de desempenho que você deseja controlar.
 
 ![Contadores de desempenho](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Para rastrear um contador de desempenho que não esteja listado, insira o contador de desempenho usando a sintaxe sugerida. Então selecione **Adicionar**. O sistema operacional na máquina virtual determina quais contadores de desempenho você pode controlar. Para obter mais informações sobre a sintaxe, consulte [especificar um caminho de contador](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Para rastrear um contador de desempenho que não esteja listado, insira o contador de desempenho usando a sintaxe sugerida. Então selecione **Adicionar**. O sistema operacional na máquina virtual determina quais contadores de desempenho você pode controlar. Para obter mais informações sobre a sintaxe, consulte [especificar um caminho de contador](/windows/win32/perfctrs/specifying-a-counter-path).
 
 ### <a name="infrastructure-logs"></a>Logs de infraestrutura
 Logs de infraestrutura têm informações sobre a infraestrutura de diagnóstico do Azure, o módulo RemoteAccess e o módulo RemoteForwarder. Para coletar informações sobre logs de infraestrutura, marque a caixa de seleção **Habilitar transferência de Logs de Infraestrutura**. Para aumentar ou diminuir o intervalo entre a transferência de logs de infraestrutura para sua conta de armazenamento, altere o valor do **Período de Transferência (min)**.
 
 ![Logs de infraestrutura de diagnóstico](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-Para obter mais informações, consulte [coletar dados de log usando diagnóstico do Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Para obter mais informações, consulte [coletar dados de log usando diagnóstico do Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="log-directories"></a>Diretórios de log
 Diretórios de log têm dados coletados de diretórios de log para solicitações de IIS (Serviços de Informações da Internet), solicitações com falha ou pastas que você escolher. Para capturar os diretórios de log, marque a caixa de seleção **Habilitar transferência de Diretórios de Log**. Para aumentar ou diminuir o intervalo entre a transferência de logs para sua conta de armazenamento, altere o valor do **Período de Transferência (min)**.
@@ -185,7 +185,7 @@ Os eventos são capturados das origens de eventos e manifestos de evento que voc
 
 ![Logs do ETW](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-O framework do ETW tem suporte no ASP.NET por meio de classes no namespace [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). O namespace Microsoft.WindowsAzure.Diagnostics, que herda e estende classes [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) padrão, permite o uso de [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) como um registro em log estrutura no ambiente do Azure. Para obter mais informações, consulte [Assumir controle do registro em log e do rastreamento no Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Habilitar o diagnóstico em máquinas virtuais e Serviços de Nuvem do Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+O framework do ETW tem suporte no ASP.NET por meio de classes no namespace [System.Diagnostics.aspx](/dotnet/api/system.diagnostics). O namespace Microsoft.WindowsAzure.Diagnostics, que herda e estende classes [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) padrão, permite o uso de [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) como um registro em log estrutura no ambiente do Azure. Para obter mais informações, consulte [Assumir controle do registro em log e do rastreamento no Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) e [Habilitar o diagnóstico em máquinas virtuais e Serviços de Nuvem do Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Despejos de memória
 Para capturar informações sobre quando uma instância de função falha, marque a caixa de seleção **Habilitar transferência de despejos**. (Como o ASP.NET lida com a maioria das exceções, isso geralmente é útil apenas para funções de trabalho.) Para aumentar ou diminuir o percentual de espaço de armazenamento dedicado aos despejos de memória, altere o valor da **cota de diretório (%)** . Você pode alterar o contêiner de armazenamento no qual os despejos de memória são armazenados e selecionar se deseja capturar um despejo **Completo** ou **Mini**.
@@ -194,7 +194,7 @@ Os processos que estão sendo rastreados no momento são listados na seguinte ca
 
 ![Despejos de memória](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Para obter mais informações, consulte [Tomar controle do registro em log e rastreamento no Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Diagnóstico do Microsoft Azure parte 4: componentes de registro de log personalizados e alterações do Diagnóstico do Azure 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Para obter mais informações, consulte [Tomar controle do registro em log e rastreamento no Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) e [Diagnóstico do Microsoft Azure parte 4: componentes de registro de log personalizados e alterações do Diagnóstico do Azure 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Exibir os dados de diagnóstico
 Depois de coletar os dados de diagnóstico para um serviço de nuvem ou uma máquina virtual, você poderá exibi-los.
@@ -256,7 +256,7 @@ Se você estiver investigando um problema com um serviço de nuvem que já estej
     Se você alterar a coleta de dados no Gerenciador de Servidores, essas alterações permanecerão em vigor até que você reimplante seu serviço de nuvem. Se você usar as configurações de publicação padrão, as alterações não serão substituídas. A configuração de publicação padrão é atualizar a implantação existente, em vez de fazer uma reimplantação completa. Para garantir que as configurações estão limpas no momento da implantação, vá para a guia **Configurações avançadas** no Assistente de publicação e limpe a caixa de seleção **Atualização de implantação**. Quando você reimplanta com essa caixa de seleção desmarcada, as configurações revertem aquelas no arquivo .wadcfgx (ou wadcfg) conforme definido no editor de **Propriedades** da função. Se você atualizar a implantação, o Azure manterá as configurações mais antigas.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Solucionar problemas do serviço de nuvem do Azure
-Se você tiver problemas com seus projetos de serviço de nuvem, como uma função travar no status "ocupado", repetidamente reciclar ou lançar um erro interno do servidor, existem ferramentas e técnicas que você poderá usar para diagnosticar e corrigir esses problemas. Para obter exemplos específicos de problemas e soluções comuns e para uma visão geral dos conceitos e ferramentas que você pode usar para diagnosticar e corrigir esses erros, consulte [Dados de diagnóstico de computação de PaaS do Azure](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
+Se você tiver problemas com seus projetos de serviço de nuvem, como uma função travar no status "ocupado", repetidamente reciclar ou lançar um erro interno do servidor, existem ferramentas e técnicas que você poderá usar para diagnosticar e corrigir esses problemas. Para obter exemplos específicos de problemas e soluções comuns e para uma visão geral dos conceitos e ferramentas que você pode usar para diagnosticar e corrigir esses erros, consulte [Dados de diagnóstico de computação de PaaS do Azure](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).
 
 ## <a name="q--a"></a>Perguntas e Respostas
 **Qual é o tamanho do buffer e que tamanho o buffer deve ter?**

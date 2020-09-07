@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905001"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508945"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Walkthrough: Exibir sugestões de lâmpada
 Lâmpadas são ícones no editor do Visual Studio que se expandem para exibir um conjunto de ações, por exemplo, correções de problemas identificados pelos analisadores de código internos ou refatoração de código.
 
  Nos editores do Visual C# e do Visual Basic, você também pode usar o .NET Compiler Platform ("Roslyn") para gravar e empacotar seus próprios analisadores de código com ações que exibem lâmpadas claras automaticamente. Para obter mais informações, consulte:
 
-- [Como: escrever um diagnóstico e uma correção de código em C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [Como: escrever um diagnóstico e uma correção de código em C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [Como: escrever um diagnóstico de Visual Basic e correção de código](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [Como: escrever um diagnóstico de Visual Basic e correção de código](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   Outras linguagens, como C++, também fornecem lâmpadas para algumas ações rápidas, como uma sugestão para criar uma implementação de stub dessa função.
 

@@ -9,12 +9,12 @@ ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81489630"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508451"
 ---
 # <a name="optimizing-your-azure-code"></a>Otimizando o código do Azure
 Quando você está programando aplicativos que usam o Microsoft Azure, existem algumas práticas de codificação que você deve seguir para ajudar a evitar problemas de escalabilidade, comportamento e desempenho do aplicativo em um ambiente de nuvem. A Microsoft fornece uma ferramenta de análise de código do Azure que reconhece e identifica vários desses problemas comumente encontrados e ajuda a resolvê-los. Você pode baixar a ferramenta no Visual Studio, via NuGet.
@@ -37,22 +37,22 @@ Por padrão, o modo de estado de sessão especificado no arquivo web.config est�
 O estado da sessão ASP.NET dá suporte a várias opções diferentes de armazenamento para dados de estado de sessão: InProc, StateServer, SQLServer, Personalizado e Desativado. É recomendável que você use o modo Personalizado para hospedar dados em um armazenamento de estado da sessão externo, como [Provedor de estado de sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/).
 
 ### <a name="solution"></a>Solução
-É uma solução recomendada armazenar o estado de sessão em um serviço de cache gerenciado. Saiba como usar [provedor de Estado de Sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) para armazenar o estado de sessão. Você também pode armazenar o estado de sessão em outros locais para garantir que seu aplicativo seja escalonável na nuvem. Para saber mais sobre as soluções alternativas, leia [Modos de estado de sessão](https://msdn.microsoft.com/library/ms178586).
+É uma solução recomendada armazenar o estado de sessão em um serviço de cache gerenciado. Saiba como usar [provedor de Estado de Sessão do Azure para Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) para armazenar o estado de sessão. Você também pode armazenar o estado de sessão em outros locais para garantir que seu aplicativo seja escalonável na nuvem. Para saber mais sobre as soluções alternativas, leia [Modos de estado de sessão](/previous-versions/ms178586(v=vs.140)).
 
 ## <a name="run-method-should-not-be-async"></a>O método de execução não deve ser assíncrono
 ### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Descrição
-Crie métodos assíncronos (como [await](https://msdn.microsoft.com/library/hh156528.aspx)) fora do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e, em seguida, chamar os métodos assíncronos de [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). A declaração do método [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) como assíncrono faz com que a função de trabalho insira um loop de reinicialização.
+Crie métodos assíncronos (como [await](/dotnet/csharp/language-reference/operators/await)) fora do método [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) e, em seguida, chamar os métodos assíncronos de [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)). A declaração do método [[Run ()](/previous-versions/azure/reference/ee772746(v=azure.100))](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) como assíncrono faz com que a função de trabalho insira um loop de reinicialização.
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-A chamada de métodos assíncronos dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) método faz com que o runtime do serviço de nuvem recicle a função de trabalho. Quando uma função de trabalho é iniciada, todas as execuções do programa ocorrem dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Sair do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) faz com que a função de trabalho reinicie. Quando o runtime da função de trabalho atinge o método assíncrono, ele envia todas as operações posteriores ao método assíncrono e retorna. Isso faz com que a função de trabalho saia do método [[[[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e reinicialize. Na próxima iteração da execução, a função de trabalho atinge o método assíncrono novamente e reinicia, fazendo com que a função de trabalho seja reciclada novamente.
+A chamada de métodos assíncronos dentro do método [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) método faz com que o runtime do serviço de nuvem recicle a função de trabalho. Quando uma função de trabalho é iniciada, todas as execuções do programa ocorrem dentro do método [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) . Sair do método Run faz com que a função de trabalho seja reiniciada. Quando o runtime da função de trabalho atinge o método assíncrono, ele envia todas as operações posteriores ao método assíncrono e retorna. Isso faz com que a função de trabalho saia do método Run e reinicie. Na próxima iteração da execução, a função de trabalho atinge o método assíncrono novamente e reinicia, fazendo com que a função de trabalho seja reciclada novamente.
 
 ### <a name="solution"></a>Solução
-Coloque todas as operações assíncronas fora do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Chame o método async refatorado de dentro do método [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , como RunAsync().wait. A ferramenta de análise de código do Azure pode ajudá-lo a corrigir esse problema.
+Coloque todas as operações assíncronas fora do método [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) . Em seguida, chame o método Async refatorado de dentro do método Run, como RunAsync (). Wait. A ferramenta de análise de código do Azure pode ajudá-lo a corrigir esse problema.
 
 O snippet de código a seguir demonstra a correção de código para esse problema:
 
@@ -107,9 +107,8 @@ BrokeredMessage receivedMessage = sc.Receive();
 
 Para obter mais informações, consulte os tópicos a seguir.
 
-* Para uma visão geral, consulte [Autenticação de assinatura de acesso compartilhado com barramento de serviço](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Como usar a autenticação de assinatura de acesso compartilhado com barramento de serviço](https://msdn.microsoft.com/library/dn205161.aspx)
-* Para um projeto de exemplo, consulte [Usando SAS (Assinatura de Acesso Compartilhado) com assinaturas do barramento de serviço](https://code.msdn.microsoft.com/windowsapps/Shared-Access-Signature-0a88adf8)
+* Para uma visão geral, consulte [Autenticação de assinatura de acesso compartilhado com barramento de serviço](/azure/service-bus-messaging/service-bus-sas)
+* [Como usar a autenticação de assinatura de acesso compartilhado com barramento de serviço](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Considerar o uso do método OnMessage para evitar "loop de recebimento"
 ### <a name="id"></a>ID
@@ -121,16 +120,16 @@ Para evitar o início de um "loop de recebimento" a chamada ao método **OnMessa
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Ao chamar **OnMessage**, o cliente inicia uma bomba de mensagens internas que monitora constantemente a fila ou assinatura. Essa bomba de mensagens contém um loop infinito que emite uma chamada para receber mensagens. Se a chamada alcançar o tempo limite, ele emitirá uma nova chamada. O intervalo de tempo limite é determinado pelo valor da propriedade [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) do [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) que está sendo usado.
+Ao chamar **OnMessage**, o cliente inicia uma bomba de mensagens internas que monitora constantemente a fila ou assinatura. Essa bomba de mensagens contém um loop infinito que emite uma chamada para receber mensagens. Se a chamada alcançar o tempo limite, ele emitirá uma nova chamada. O intervalo de tempo limite é determinado pelo valor da propriedade [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) do [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que está sendo usado.
 
 A vantagem de usar o **OnMessage** em comparação com **Receive** é que os usuários não precisarão manualmente pesquisar mensagens, manipular exceções, processar várias mensagens em paralelo e concluir mensagens.
 
 Se você chamar **Receive** sem usar o valor padrão, não se esqueça que o valor de *ServerWaitTime* é a mais de um minuto. A definição de *ServerWaitTime* para mais de um minuto impede que o servidor alcance o tempo limite antes que a mensagem seja recebida totalmente.
 
 ### <a name="solution"></a>Solução
-Consulte exemplos de código a seguir para usos recomendados. Para saber mais, confira o método [QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) e o método [QueueClient.Receive (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+Consulte exemplos de código a seguir para usos recomendados. Para saber mais, confira o método [QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient) e o método [QueueClient.Receive (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient).
 
-Para melhorar o desempenho da infraestrutura de mensagens do Azure, consulte o padrão de design [Prévia de mensagens assíncronas](https://msdn.microsoft.com/library/dn589781.aspx).
+Para melhorar o desempenho da infraestrutura de mensagens do Azure, consulte o padrão de design [Prévia de mensagens assíncronas](/previous-versions/msp-n-p/dn589781(v=pandp.10)).
 
 A seguir, um exemplo de uso de **OnMessage** para receber mensagens.
 
@@ -225,12 +224,12 @@ Use os métodos assíncronos do barramento de serviço para melhorar o desempenh
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-O uso de métodos assíncronos permite a simultaneidade do programa aplicativo porque a execução de cada chamada não bloqueia o thread principal. Ao usar os métodos de mensagens do Barramento de Serviço, a execução de uma operação (enviar, receber, excluir, etc.) leva tempo. Esse tempo inclui o processamento da operação pelo serviço do barramento de serviço, além da latência da solicitação e resposta. Para aumentar o número de operações por hora, elas devem ser executadas simultaneamente. Para obter mais informações, consulte [Práticas recomendadas para melhorias de desempenho usando o sistema de mensagens agenciado do Barramento de Serviço](https://msdn.microsoft.com/library/azure/hh528527.aspx).
+O uso de métodos assíncronos permite a simultaneidade do programa aplicativo porque a execução de cada chamada não bloqueia o thread principal. Ao usar os métodos de mensagens do Barramento de Serviço, a execução de uma operação (enviar, receber, excluir, etc.) leva tempo. Esse tempo inclui o processamento da operação pelo serviço do barramento de serviço, além da latência da solicitação e resposta. Para aumentar o número de operações por hora, elas devem ser executadas simultaneamente. Para obter mais informações, consulte [Práticas recomendadas para melhorias de desempenho usando o sistema de mensagens agenciado do Barramento de Serviço](/previous-versions/azure/hh528527(v=azure.100)).
 
 ### <a name="solution"></a>Solução
-Consulte [QueueClient Class (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) para obter informações sobre como usar o método assíncrono recomendado.
+Consulte [QueueClient Class (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient) para obter informações sobre como usar o método assíncrono recomendado.
 
-Para melhorar o desempenho da infraestrutura de mensagens do Azure, consulte o padrão de design [Prévia de mensagens assíncronas](https://msdn.microsoft.com/library/dn589781.aspx).
+Para melhorar o desempenho da infraestrutura de mensagens do Azure, consulte o padrão de design [Prévia de mensagens assíncronas](/previous-versions/msp-n-p/dn589781(v=pandp.10)).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Considerar o particionamento de tópicos e filas do barramento de serviço
 ### <a name="id"></a>ID
@@ -242,7 +241,7 @@ Particione filas e tópicos do barramento de serviço para um melhor desempenho 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-O particionamento de tópicos e filas do barramento de serviço aumenta a taxa de transferência do desempenho e a disponibilidade do serviço porque a taxa de transferência geral de uma fila ou tópico particionado não é mais limitada pelo desempenho de um único agente ou repositório de mensagens. Além disso, uma falha temporária de um repositório de mensagens não torna uma fila ou tópico particionado indisponível. Para saber mais, confira [Particionamento de entidades de mensagens](https://msdn.microsoft.com/library/azure/dn520246.aspx).
+O particionamento de tópicos e filas do barramento de serviço aumenta a taxa de transferência do desempenho e a disponibilidade do serviço porque a taxa de transferência geral de uma fila ou tópico particionado não é mais limitada pelo desempenho de um único agente ou repositório de mensagens. Além disso, uma falha temporária de um repositório de mensagens não torna uma fila ou tópico particionado indisponível. Para saber mais, confira [Particionamento de entidades de mensagens](/previous-versions/azure/dn520246(v=azure.100)).
 
 ### <a name="solution"></a>Solução
 O snippet de código a seguir mostra como particionar entidades de mensagens.
@@ -272,7 +271,7 @@ A sincronização do relógio causa uma pequena diferença de hora entre os data
 Para orientação de como usar a assinatura de acesso compartilhado no armazenamento do Azure, consulte [Apresentando SAS (Assinatura de Acesso Compartilhado) de tabela, SAS de fila e atualização de SAS de blob - Blog da equipe de Armazenamento do Microsoft Azure - Home page do site - Blogs MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
 ### <a name="solution"></a>Solução
-Remova a instrução que define a hora de início da política de acesso compartilhado. A ferramenta de análise de código do Azure fornece uma correção para esse problema. Para obter mais informações sobre gerenciamento de segurança, consulte o padrão de design [Padrão de chave de manobrista](https://msdn.microsoft.com/library/dn568102.aspx).
+Remova a instrução que define a hora de início da política de acesso compartilhado. A ferramenta de análise de código do Azure fornece uma correção para esse problema. Para obter mais informações sobre gerenciamento de segurança, consulte o padrão de design [Padrão de chave de manobrista](/previous-versions/msp-n-p/dn568102(v=pandp.10)).
 
 O snippet de código a seguir demonstra a correção de código para esse problema.
 
@@ -304,7 +303,7 @@ Data centers em locais diferentes no mundo sincronizam por um sinal de relógio.
 Para obter instruções sobre como usar assinatura de acesso compartilhado no armazenamento do Azure, consulte [Apresentando SAS (Assinatura de Acesso Compartilhado) de tabela, SAS de fila e atualização de SAS de blob - Blog da equipe de Armazenamento do Microsoft Azure - Home page do site - Blogs MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
 ### <a name="solution"></a>Solução
-Para obter mais informações sobre gerenciamento de segurança, consulte o padrão de design [Padrão de chave de manobrista](https://msdn.microsoft.com/library/dn568102.aspx).
+Para obter mais informações sobre gerenciamento de segurança, consulte o padrão de design [Padrão de chave de manobrista](/previous-versions/msp-n-p/dn568102(v=pandp.10)).
 
 Este é um exemplo de não especificar uma hora de início da política de acesso compartilhado.
 
@@ -337,7 +336,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-Para obter mais informações, consulte [Criar e usar uma assinatura de acesso compartilhado](https://msdn.microsoft.com/library/azure/jj721951.aspx).
+Para obter mais informações, consulte [Configurar acesso de leitura público anônimo para contêineres e blobs](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal).
 
 ## <a name="use-cloudconfigurationmanager"></a>Use CloudConfigurationManager
 ### <a name="id"></a>ID
@@ -351,10 +350,10 @@ Compartilhe suas ideias e comentários em [Comentários de análise de código d
 ### <a name="reason"></a>Motivo
 CloudConfigurationManager lê o arquivo de configuração apropriado para o ambiente do aplicativo.
 
-[CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
+[CloudConfigurationManager](/previous-versions/azure/)
 
 ### <a name="solution"></a>Solução
-Refatore seu código para usar a classe [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Uma correção de código para esse problema é fornecida pela ferramenta de análise de código do Azure.
+Refatore seu código para usar a classe [CloudConfigurationManager](/previous-versions/azure/reference/mt634650(v=azure.100)). Uma correção de código para esse problema é fornecida pela ferramenta de análise de código do Azure.
 
 O snippet de código a seguir demonstra a correção de código para esse problema. Substitua
 
@@ -407,7 +406,7 @@ Em vez de definir as configurações de diagnóstico em seu código usando a API
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Antes do SDK 2.5 do Azure (que usa o diagnóstico do Azure 1.3), o diagnóstico do Azure (WAD) podia ser configurado usando vários métodos diferentes: adicionando-o ao blob de configuração no armazenamento, usando código obrigatório, configuração declarativa ou a configuração padrão. No entanto, a maneira preferencial de configurar diagnósticos é usar um arquivo de configuração XML (diagnostics.wadcfg ou diagnostics.wadcfgx para o SDK 2.5 e posterior) no projeto de aplicativo. Nessa abordagem, o arquivo diagnostics.wadcfg define completamente a configuração e pode ser atualizado e reimplantado à vontade. A combinação do uso do arquivo de configuração diagnostics.wadcfg com os métodos de programação de definir configurações usando as classes [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx) ou [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) pode gerar confusão. Consulte [Inicializar ou alterar configuração de diagnóstico do Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) para obter mais informações.
+Antes do SDK 2.5 do Azure (que usa o diagnóstico do Azure 1.3), o diagnóstico do Azure (WAD) podia ser configurado usando vários métodos diferentes: adicionando-o ao blob de configuração no armazenamento, usando código obrigatório, configuração declarativa ou a configuração padrão. No entanto, a maneira preferencial de configurar diagnósticos é usar um arquivo de configuração XML (diagnostics.wadcfg ou diagnostics.wadcfgx para o SDK 2.5 e posterior) no projeto de aplicativo. Nessa abordagem, o arquivo diagnostics.wadcfg define completamente a configuração e pode ser atualizado e reimplantado à vontade. A combinação do uso do arquivo de configuração diagnostics.wadcfg com os métodos de programação de definir configurações usando as classes [DiagnosticMonitor](/previous-versions/azure/reference/ee758597(v=azure.100)) ou [RoleInstanceDiagnosticManager](/previous-versions/azure/reference/ee773157(v=azure.100)) pode gerar confusão. Consulte [Inicializar ou alterar configuração de diagnóstico do Azure](/previous-versions/azure/hh411537(v=azure.100)) para obter mais informações.
 
 A partir do WAD 1.3 (incluído com o SDK 2.5 do Azure), não é possível usar o código para configurar diagnóstico. Como resultado, você só pode fornecer a configuração ao aplicar ou atualizar a extensão de diagnóstico.
 

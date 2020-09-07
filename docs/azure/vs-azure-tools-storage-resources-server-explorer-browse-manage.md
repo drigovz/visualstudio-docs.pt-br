@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800470"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508438"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
@@ -126,7 +126,7 @@ Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos d
 
 Se você estiver usando o Diagnóstico do Azure para registrar dados de seu aplicativo do Azure e tiver transferido logs para sua conta de armazenamento, verá os contêineres que foram criados pelo Azure para esses logs. Exibir esses logs no Gerenciador de Servidores é uma maneira fácil de identificar problemas com seu aplicativo, especialmente se foi implantado no Azure.
 
-Para saber mais sobre o Diagnóstico do Azure, consulte [Coletar dados do log usando o Diagnóstico do Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Para saber mais sobre o Diagnóstico do Azure, consulte [Coletar dados do log usando o Diagnóstico do Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>Para obter a URL para um blob
 
@@ -275,7 +275,7 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 
    * O nome da conta de armazenamento existente que você deseja anexar.
    * A chave para a conta de armazenamento selecionado. Esse valor geralmente é fornecido para você quando seleciona uma conta de armazenamento. Se desejar que o Visual Studio se lembre da chave de conta de armazenamento, marque a caixa de seleção **Lembrar chave de conta**.
-   * O protocolo a ser usado para se conectar à conta de armazenamento, como HTTP, HTTPS ou um ponto de extremidade personalizado. Para obter mais informações sobre pontos de extremidade personalizados, consulte [Como configurar cadeias de conexão](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * O protocolo a ser usado para se conectar à conta de armazenamento, como HTTP, HTTPS ou um ponto de extremidade personalizado. Para obter mais informações sobre pontos de extremidade personalizados, consulte [Como configurar cadeias de conexão](/azure/storage/common/storage-configure-connection-string).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para exibir os pontos de extremidade secundários
 
