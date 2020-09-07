@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250517"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509920"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -171,7 +171,7 @@ Não anexe diretamente rastreamentos de desempenho a itens de comentários exist
 
 **Rastreamentos de desempenho avançados**
 
-Os recursos de coleta de rastreamento no relatório-uma ferramenta de problema são suficientes para a maioria dos cenários. Mas há ocasiões em que mais controle sobre a coleta de rastreamento é necessário (por exemplo, Trace com um tamanho de buffer maior), caso em que PerfView é uma ótima ferramenta a ser usada. As etapas para registrar manualmente o rastreamento de desempenho usando a ferramenta PerfView podem ser encontradas na página [gravando rastreamentos de desempenho com Perfview](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Os recursos de coleta de rastreamento no relatório-uma ferramenta de problema são suficientes para a maioria dos cenários. Mas há ocasiões em que mais controle sobre a coleta de rastreamento é necessário (por exemplo, Trace com um tamanho de buffer maior), caso em que PerfView é uma ótima ferramenta a ser usada. As etapas para registrar manualmente o rastreamento de desempenho usando a ferramenta PerfView podem ser encontradas na página [gravando rastreamentos de desempenho com Perfview](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md) .
 
 ## <a name="out-of-process-issues"></a>Problemas fora do processo
 

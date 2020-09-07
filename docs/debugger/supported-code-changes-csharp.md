@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729082"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509413"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código com suporte (C# e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -32,15 +32,15 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 
 |Recurso/elemento de linguagem|Operação de edição com suporte|Limitações|
 |-|-|-|
-|Tipos|Adicionar métodos, campos, construtores, et al|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Tipos|Adicionar métodos, campos, construtores, et al|[Sim](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iterators|Adicionar ou modificar|Não|
-|expressões Async/Await|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|expressões Async/Await|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Objetos dinâmicos|Adicionar ou modificar|Não|
-|expressões lambda|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Expressões LINQ|Adicionar ou modificar|[O mesmo que expressões lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|expressões lambda|Adicionar ou modificar|[Sim](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|Expressões LINQ|Adicionar ou modificar|[O mesmo que expressões lambda](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> Recursos de idioma mais novos, como interpolação de cadeia de caracteres e operadores condicionais nulos, geralmente são suportados por editar e continuar. Para obter as informações mais atuais, consulte a página [edições com suporte do ENC](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) .
+> Recursos de idioma mais novos, como interpolação de cadeia de caracteres e operadores condicionais nulos, geralmente são suportados por editar e continuar. Para obter as informações mais atuais, consulte a página [edições com suporte do ENC](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md) .
 
 ## <a name="unsupported-changes-to-code"></a>Alterações sem suporte no código
  As seguintes alterações não podem ser aplicadas a código C# e Visual Basic durante uma sessão de depuração:
@@ -60,7 +60,7 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |Namespaces, tipos, membros|Excluir|
 |Genéricos|Adicionar ou modificar|
 |Interfaces|Modificar|
-|Tipos|Adicionar membro abstrato ou virtual, adicionar substituição (consulte os [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Tipos|Adicionar membro abstrato ou virtual, adicionar substituição (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Tipos|Adicionar destruidor|
 |Membros|Modificar um membro referenciando um tipo de interoperabilidade inserido|
 |Membros|Modificar um membro estático depois que ele já tiver sido acessado executando o código|
@@ -75,8 +75,8 @@ A tabela a seguir mostra as alterações que podem ser feitas em C# e Visual Bas
 |blocos catch|Modificar quando ele contém uma instrução ativa|
 |blocos try – catch-finally|Modificar quando ele contém uma instrução ativa|
 |usando instruções|Adicionar|
-|métodos/lambdas assíncronos|Modificar um método/Lambda assíncrono em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|métodos/lambdas assíncronos|Modificar um método/Lambda assíncrono em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
 ## <a name="unsafe-code"></a>Código não seguro
  As alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não oferece suporte a alterações em código não seguro que sai dentro de um método que contém o `stackalloc` operador.

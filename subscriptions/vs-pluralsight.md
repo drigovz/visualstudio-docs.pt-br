@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365856"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509751"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -27,6 +27,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
    > [!div class="mx-imgBorder"]
    > ![Bloco do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Clique em ativar para solicitar seu benefício")
 
+(O bloco acima é um exemplo do que um assinante Visual Studio Enterprise verá.  Se você estiver usando uma assinatura diferente do Visual Studio, a duração do seu benefício da Pluralsight variará.  Consulte a tabela de qualificação para obter detalhes.)
 1. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.
    - Forneça as informações de contato solicitadas no formulário
    - Clique na caixa de seleção para aceitar os termos de uso

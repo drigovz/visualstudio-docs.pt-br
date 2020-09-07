@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dadfeea4108f12e24864017b6e1752ece25a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738198"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509764"
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dá suporte à depuração de código de consulta integrada à linguagem (LINQ), com algumas restrições. A maioria dos recursos de depuração funcionam com instruções LINQ, incluindo a depuração, definição de pontos de interrupção e exibição de resultados em janelas de depuração. Este tópico descreve as principais limitações da depuração LINQ.
@@ -105,7 +105,7 @@ End Function
  A consulta revisada chama a função `IsEven` em cada passo por meio de `items`. É possível usar as janelas de depuração para ver se cada item está de acordo com a condição especificada, e você pode percorrer o código em `IsEven`. O predicado neste exemplo é bastante simples. No entanto, se você tem um predicado mais difícil que precisa depurar, essa técnica pode ser muito útil.
 
 ## <a name="edit-and-continue-not-supported-for-linq"></a><a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Editar e continuar não compatível com LINQ
- Editar e continuar dá suporte a alterações em consultas LINQ com limitações. Para obter detalhes, consulte enc. de [alterações com suporte](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
+ Editar e continuar dá suporte a alterações em consultas LINQ com limitações. Para obter detalhes, consulte [alterações com suporte do ENC](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)
 
 ## <a name="see-also"></a>Confira também
 

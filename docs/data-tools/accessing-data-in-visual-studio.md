@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272081"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509829"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Trabalhar com dados no Visual Studio
 
@@ -89,7 +89,7 @@ Todo o acesso a dados do .NET, incluindo o .NET Core, é baseado em ADO.NET, um 
 
 Para obter a documentação de acesso a dados relacionada ao ASP.NET, consulte [trabalhando com dados](https://www.asp.net/web-forms/overview/presenting-and-managing-data) no site do ASP.net. Para obter um tutorial sobre como usar Entity Framework com o ASP.NET MVC, confira [introdução com Entity Framework 6 Code First usando o MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Os aplicativos Plataforma Universal do Windows (UWP) em C# ou Visual Basic podem usar o SDK do Microsoft Azure para .NET para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows. Web. HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor http usando Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Os aplicativos Plataforma Universal do Windows (UWP) em C# ou Visual Basic podem usar o SDK do Microsoft Azure para .NET para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows. Web. HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor http usando Windows. Web. http](/previous-versions/windows/apps/dn469430(v=win.10)).
 
 Para o armazenamento de dados no computador local, a abordagem recomendada é usar o SQLite, que é executado no mesmo processo que o aplicativo. Se uma camada de ORM (mapeamento relacional de objeto) for necessária, você poderá usar Entity Framework. Para obter mais informações, consulte [acesso a dados](/windows/uwp/data-access/index) no Windows Developer Center.
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb1165ea00d407f5b4840358cc270eb299ba198
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82586219"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509894"
 ---
 # <a name="maintainability-warnings"></a>Avisos de facilidade de manutenção
 
@@ -29,10 +29,8 @@ Os avisos de manutenção dão suporte à biblioteca e manutenção de aplicativ
 
 | Regra | Descrição |
 |-----------|-----------------------------------|
-| [CA1500: Nomes de variável não devem corresponder a nomes de campo](../code-quality/ca1500.md) | Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo de instância do tipo declarativo, o que leva a erros. |
 | [CA1501: Evitar herança excessiva](../code-quality/ca1501.md) | Um tipo está mais de quatro níveis abaixo na hierarquia de herança. As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. |
 | [CA1502: Evitar complexidade excessiva](../code-quality/ca1502.md) | Esta regra mede o número de caminhos linearmente independentes por meio do método, o que é determinado pelo número e pela complexidade das ramificações condicionais. |
-| [CA1504: Examinar nomes de campo confusos](../code-quality/ca1504.md) | O nome de um campo de instância começa com "s_" ou o nome de um campo estático (compartilhado em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ) começa com "M_". |
 | [CA1505: Evitar código de difícil manutenção](../code-quality/ca1505.md) | Um tipo ou um método tem um baixo valor de índice de facilidade de manutenção. Um baixo índice de facilidade de manutenção indica que um tipo ou um método é provavelmente difícil de manter e seria um bom candidato para um novo design. |
 | [CA1506: Evitar acoplamento de classes excessivo](../code-quality/ca1506.md) | Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém. |
 | [CA1507: Usar nameof no lugar da cadeia de caracteres](../code-quality/ca1507.md) | Um literal de cadeia de caracteres é usado como um argumento em que uma `nameof` expressão pode ser usada. |

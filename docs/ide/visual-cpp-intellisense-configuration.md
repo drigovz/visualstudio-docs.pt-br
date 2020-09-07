@@ -7,12 +7,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77279320"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509881"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
@@ -118,7 +118,7 @@ Visual Studio to investigate.
 
 Se você definir a variável de ambiente TRACEDESIGNTIME como true e reiniciar o Visual Studio, verá um arquivo de log no diretório %TEMP%, que pode ajudar a diagnosticar a falha de compilação.
 
-Saiba mais sobre a variável de ambiente TRACEDESIGNTIME em [Roslyn](https://github.com/dotnet/roslyn/wiki/Diagnosing-Project-System-Build-Errors) e [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). As informações neste artigo são relevantes para projetos do C++.
+Saiba mais sobre a variável de ambiente TRACEDESIGNTIME em [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) e [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). As informações neste artigo são relevantes para projetos do C++.
 
 ## <a name="see-also"></a>Confira também
 

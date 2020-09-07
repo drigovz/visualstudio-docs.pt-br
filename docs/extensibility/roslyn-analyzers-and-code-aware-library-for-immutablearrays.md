@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076bc9fe3cabbfef8d3f3fb0248724835fa83f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444564"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509400"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca com reconhecimento de código para ImmutableArrays
 
@@ -25,7 +25,7 @@ Você precisa do seguinte para compilar este exemplo:
 
 * Visual Studio 2015 (não é uma edição Express) ou uma versão posterior. Você pode usar o [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/) gratuito
 * [SDK do Visual Studio](../extensibility/visual-studio-sdk.md). Você também pode, ao instalar o Visual Studio, verificar **ferramentas de extensibilidade do Visual Studio** em **ferramentas comuns** para instalar o SDK ao mesmo tempo. Se você já tiver instalado o Visual Studio, também poderá instalar esse SDK indo até o **arquivo**de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação à esquerda e escolhendo **extensibilidade**. Quando você escolhe o modelo de projeto de navegação estrutural "**instalar o ferramentas de extensibilidade do Visual Studio**", ele solicita que você baixe e instale o SDK.
-* [SDK do .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Você também pode instalar esse SDK indo até o **arquivo**de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação esquerdo e, em seguida, escolhendo **extensibilidade**. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Essa ferramenta útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
+* [SDK do .net Compiler Platform ("Roslyn")](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Você também pode instalar esse SDK indo até o **arquivo**de menu principal  >  **novo**  >  **projeto**, escolhendo **C#** no painel de navegação esquerdo e, em seguida, escolhendo **extensibilidade**. Quando você escolhe "**baixar o modelo de projeto breadcrumb do SDK do .net Compiler Platform**", ele solicita que você baixe e instale o SDK. Este SDK inclui o [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Syntax-Visualizer.md). Essa ferramenta útil ajuda a descobrir quais tipos de modelo de código você deve procurar em seu analisador. A infraestrutura do analisador chama seu código para tipos de modelo de código específicos, para que seu código seja executado somente quando necessário e possa se concentrar apenas na análise de código relevante.
 
 ## <a name="whats-the-problem"></a>Qual é o problema?
 

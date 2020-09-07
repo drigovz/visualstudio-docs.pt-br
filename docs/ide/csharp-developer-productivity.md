@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567496"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509933"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -139,7 +139,7 @@ As correções rápidas e refatorações comuns incluem:
 
 Para obter mais informações, consulte [recursos de geração de código](code-generation-in-visual-studio.md).
 
-Você pode [instalar analisadores FxCop](../code-quality/install-fxcop-analyzers.md) para sinalizar problemas de códigos. Ou escrever sua própria refatoração ou correção de código com [analisadores Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+Você pode [instalar analisadores FxCop](../code-quality/install-fxcop-analyzers.md) para sinalizar problemas de códigos. Ou escrever sua própria refatoração ou correção de código com [analisadores Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md).
 
 Vários membros da comunidade escreveram extensões gratuitas que adicionam outras inspeções de código:
 
