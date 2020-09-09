@@ -1,18 +1,18 @@
 ---
-title: Aprimore suas habilidades de ciência de dados hoje mesmo com o benefício DataCamp em assinaturas selecionadas do Visual Studio. | Microsoft Docs
+title: Aumente as habilidades de ciência de dados com o datacamp em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904514"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561488"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.

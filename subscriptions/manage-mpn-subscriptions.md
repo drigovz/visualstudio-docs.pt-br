@@ -1,18 +1,18 @@
 ---
-title: Gerenciar as assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network) | Microsoft Docs
+title: Gerenciar assinaturas do Visual Studio de Microsoft Partner Network | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250725"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561371"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciar assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.

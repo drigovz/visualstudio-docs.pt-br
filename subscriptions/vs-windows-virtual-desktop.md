@@ -1,18 +1,18 @@
 ---
-title: Benefício de área de trabalho virtual do Microsoft Windows em assinaturas do Visual Studio | Microsoft Docs
+title: Área de trabalho virtual do Microsoft Windows em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Saiba como você pode tirar proveito da área de trabalho virtual do Microsoft Windows por meio de sua assinatura do Visual Studio
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800600"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561358"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acessar a área de trabalho virtual do Windows em assinaturas 
 Os assinantes do Visual Studio agora podem usar seus créditos individuais de desenvolvimento/teste do Azure para os serviços de área de trabalho virtual do Microsoft Windows.  

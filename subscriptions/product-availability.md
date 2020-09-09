@@ -1,18 +1,18 @@
 ---
-title: Disponibilidade de produtos para downloads de software em assinaturas do Visual Studio | Microsoft Docs
+title: Disponibilidade do produto para downloads em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba mais sobre a disponibilidade de produtos em downloads de software para assinaturas do Visual Studio
-ms.openlocfilehash: 27950fa2a4589ee5068e7d5f294f651132c229ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387207"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561475"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidade de produtos para downloads de software em assinaturas do Visual Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.

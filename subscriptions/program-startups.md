@@ -1,18 +1,18 @@
 ---
-title: Assinaturas do Visual Studio oferecidas para startups por meio do programa Microsoft para Startups
+title: Assinaturas do Visual Studio oferecidas às inicializações por meio do programa Microsoft for startups | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Detalhes sobre as assinaturas são fornecidos por meio do programa Microsoft para Startups.
-ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233251"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561449"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Assinaturas do Visual Studio oferecidas para startups
 As inicializações qualificadas que ingressam no programa Microsoft for startups podem ganhar 5 Visual Studio Enterprise [assinaturas de nuvem mensais](https://visualstudio.microsoft.com/vs/pricing/). 

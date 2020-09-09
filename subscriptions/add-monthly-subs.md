@@ -1,5 +1,5 @@
 ---
-title: Adicionar novas assinaturas mensais do Visual Studio ao portal de administração de assinaturas | Microsoft Docs
+title: Adicionar novas assinaturas mensais ao portal de administração de assinaturas | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Saiba como comprar recentemente as assinaturas mensais do Visual Studio para o portal de administração de assinaturas
-ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426818"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561397"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Adicionar novas assinaturas mensais do Visual Studio ao portal de administração de assinaturas
 Quando você adquire novas assinaturas mensais do Visual Studio usando uma assinatura do Azure, talvez seja necessário adicioná-las ao portal de administração de assinaturas para atribuí-las aos usuários.  
@@ -28,14 +28,14 @@ As etapas para adicionar assinaturas mensais dependem de quais tipos de assinatu
 1. Na guia **gerenciar assinantes** , escolha a lista suspensa **Adicionar contrato** 
 1. Escolha **novas assinaturas mensais** na lista suspensa
    > [!div class="mx-imgBorder"]
-   > ![Menu suspenso adicionar novas assinaturas mensais](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Menu suspenso adicionar novas assinaturas mensais](_img/add-monthly-subs/add-subs-drop-down.png "Escolha ' Adicionar contrato ' e ' novas assinaturas mensais.")
 1. O sistema pesquisará todas as assinaturas do Azure nas quais você tem direitos de administrador de acesso de usuário e importará todas as assinaturas do Visual Studio adquiridas com essas assinaturas do Azure.
 1. Se não forem encontradas assinaturas do Azure nas quais você tem direitos de administrador de acesso do usuário ou se as assinaturas do Azure qualificadas forem encontradas, mas nenhuma assinatura do Visual Studio for encontrada, você receberá a seguinte mensagem:
    > [!div class="mx-imgBorder"]
-   > ![Nenhuma assinatura mensal nova encontrada](_img/add-monthly-subs/no-subs-found.png)
+   > ![Nenhuma assinatura mensal nova encontrada](_img/add-monthly-subs/no-subs-found.png "Mensagem de erro indicando que não há nenhuma assinatura do Azure ou assinaturas do Visual Studio disponíveis para você.")
 1. Se novas assinaturas mensais forem encontradas, você receberá uma mensagem de confirmação
    > [!div class="mx-imgBorder"]
-   > ![Mensagem de confirmação de assinaturas adicionadas](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Mensagem de confirmação de assinaturas adicionadas](_img/add-monthly-subs/subs-added-confirmation.png "Uma mensagem de confirmação exibirá as assinaturas que você adicionou.")
 
 ## <a name="things-to-keep-in-mind"></a>Algumas coisas que se deve manter em mente
 - A opção de adicionar novas assinaturas mensais só estará disponível na primeira vez em que você as comprar.  Depois de adicionar assinaturas mensais, verificaremos se há novas assinaturas cada vez que você entrar no Portal. 
@@ -47,7 +47,7 @@ Agora que você adicionou assinaturas, você está pronto para atribuí-las aos 
 - [Atribuir assinaturas a vários usuários](assign-license-bulk.md)
 - [Atribuir assinaturas específicas a usuários específicos](assign-guid.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508074"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561582"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
-O Visual Studio oferece uma opção de medida de desempenho e ferramentas de criação de perfil. Algumas ferramentas, como uso de CPU e uso de memória, podem ser executadas com ou sem o depurador e no lançamento ou depuração de configurações de compilação. As ferramentas do criador de perfil de desempenho como Linha do Tempo do Aplicativo podem ser executadas em compilações de depuração ou versão. Ferramentas integradas ao depurador, como a janela Ferramentas de Diagnóstico e a guia eventos, são executadas somente durante sessões de depuração.
+O Visual Studio oferece uma opção de medida de desempenho e ferramentas de criação de perfil. Algumas ferramentas, como uso de CPU e uso de memória, podem ser executadas com ou sem o depurador e no lançamento ou depuração de configurações de compilação. As ferramentas que aparecem na [janela ferramentas de diagnóstico](../profiling/profiling-feature-tour.md#view-performance-while-debugging) são executadas somente durante uma sessão de depuração. As ferramentas que aparecem no [criador de perfil de desempenho](../profiling/profiling-feature-tour.md#post_mortem) são executadas sem o depurador e você analisa os resultados depois de optar por parar e coletar dados (para análise pós-mortem).
 
 >[!NOTE]
 >É possível usar as ferramentas de desempenho de não depurador com o Windows 7 e posterior. O Windows 8 ou posterior é necessário para executar as ferramentas de criação de perfil integradas ao depurador.
@@ -46,6 +46,11 @@ Quando você inicia a depuração no Visual Studio selecionando **depurar**  >  
 - Se estiver executando Visual Studio Enterprise, você poderá habilitar ou desabilitar o IntelliTrace acessando **ferramentas**  >  **Opções**  >  **IntelliTrace**.
 
 A sessão de diagnóstico termina quando você interrompe a depuração.
+
+Para obter mais informações, consulte:
+
+- [Medir o desempenho do aplicativo analisando o uso da CPU](../profiling/beginners-guide-to-performance-profiling.md)
+- [Medir o uso de memória no Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>A guia Eventos
 
@@ -86,6 +91,15 @@ Para coletar dados de desempenho sem depuração, é possível executar as ferra
 Você pode salvar os relatórios e abri-los na lista de **sessões abertas recentemente** na página de inicialização ferramentas de diagnóstico.
 
 ![Captura de tela de Ferramentas de Diagnóstico lista de sessões abertas recentemente](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+Para obter mais informações, consulte:
+
+- [Analisar o uso da CPU](../profiling/cpu-usage.md)
+- [Analisar o uso de memória para código .NET](../profiling/dotnet-alloc-tool.md)
+- [Analisar o uso de memória](../profiling/analyze-memory-usage.md)
+- [Analisar o desempenho do código assíncrono do .NET](../profiling/analyze-async.md)
+- [Analisar o desempenho do banco de dados](../profiling/analyze-database.md)
+- [Analisar o uso da GPU](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Coletar dados de criação de perfil da linha de comando
 

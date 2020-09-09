@@ -1,18 +1,18 @@
 ---
-title: Excluir atribuições de assinatura no portal de administração de assinaturas do Visual Studio | Microsoft Docs
+title: Excluir atribuições no portal de administração de assinaturas | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
-description: Saiba como os administradores podem excluir atribuições de assinatura
-ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+description: Saiba como os administradores podem excluir atribuições de assinatura no portal de administração de assinaturas do Visual Studio
+ms.openlocfilehash: c4e55a18bb172588bf1daf777aeee8fee1dca02b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434263"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561345"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Excluir atribuições em assinaturas do Visual Studio
 Quando um assinante não precisar mais de uma assinatura do Visual Studio, por exemplo, ao deixar a empresa, ao concluir um projeto ou ao mudar para um novo cargo de trabalho, será possível remover essa assinatura e atribuí-la a outra pessoa. Observe que quando você reatribui uma assinatura, nem todos os benefícios do Assinante serão redefinidos.  O novo usuário poderá solicitar todas as chaves não solicitadas e exibir as chaves anteriormente solicitadas, mas os limites de solicitação **não** serão redefinidos.  Para organizações que têm contratos EA (Contrato Enterprise), todos os benefícios que já tiverem sido usados pelo usuário original, como treinamentos do Pluralsight, serão redefinidos. 

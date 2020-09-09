@@ -1,18 +1,18 @@
 ---
-title: Usar chaves do produto (Product Keys) para dar suporte a demonstrações da Internet por meio dos Serviços de Terminal | Microsoft Docs
+title: Usando chaves do produto para dar suporte a demonstrações da Internet por meio dos serviços de terminal | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Saiba como usar as chaves do produto (Product Keys) para dar suporte a demonstrações da Internet por meio dos Serviços de Terminal e habilitar o acesso ao RDS
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232436"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561306"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Demonstrações da Internet por meio dos Serviços de Terminal
 Com uma assinatura do Visual Studio, você pode fornecer aos usuários finais acesso a demonstrações de seus programas na Internet via Serviços de Terminal (Windows Server 2003 ou Windows Server 2008) ou Serviços de Área de Trabalho Remota (Windows Server 2008 R2 e posterior). Dessa forma, até 200 usuários anônimos poderão acessar simultaneamente a demonstração. A demonstração não deverá usar dados de produção. Os assinantes do Visual Studio são licenciados para demonstrar aplicativos aos usuários finais. Essa demonstração de Internet usando o TS (Serviços de Terminal) ou o RDS (Serviços de Área de Trabalho Remota) é o único cenário em que os usuários finais sem uma assinatura do Visual Studio podem interagir com o aplicativo de demonstração enquanto o software é licenciado por meio das assinaturas do Visual Studio.

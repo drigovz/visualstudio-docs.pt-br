@@ -1,18 +1,18 @@
 ---
-title: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft) | Microsoft Docs
+title: Assinaturas do Visual Studio no MPSA | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
-description: Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
-ms.openlocfilehash: c5ba75038c1e87415eecdcb669698cfe5bbcacd2
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+description: Saiba mais sobre como gerenciar assinaturas do Visual Studio em um contrato de produtos e serviços da Microsoft (MPSA)
+ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426740"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561384"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Assinaturas do Visual Studio em um MPSA (Contrato de Produtos e Serviços da Microsoft)
 Quando você compra as assinaturas do Visual Studio por meio do programa MPSA, há algumas coisas a serem consideradas antes que você possa se tornar um administrador de assinaturas do Visual Studio e atribuir assinaturas a seus usuários. Se você já tiver sido configurado como administrador, acesse diretamente o [portal de administração](https://manage.visualstudio.com/) de assinaturas do Visual Studio.
@@ -62,7 +62,7 @@ Para obter uma explicação mais detalhada desse processo, use os [guias de Iní
 > [!NOTE]
 > Depois de concluir o processo de tomada de controle de domínio, você precisará atender aos critérios das cinco etapas na seção Pré-associação do locatário (gerenciado). Quando os critérios forem atendidos, bastará contatar o suporte do MPSA para provisionar outros administradores de assinaturas do Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentação do Azure](https://docs.microsoft.com/azure/)

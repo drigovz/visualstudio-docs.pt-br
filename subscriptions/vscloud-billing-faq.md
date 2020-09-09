@@ -1,18 +1,18 @@
 ---
-title: Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional
+title: Perguntas frequentes de cobrança para assinaturas do Visual Studio Visual Cloud | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 03/24/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249379"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561319"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
