@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350388"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599886"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Como depurar funções de API do Windows?
 Se você desejar depurar uma função de API do Windows que tenha os símbolos do NT carregados, deverá fazer o seguinte.
@@ -40,7 +40,7 @@ Se você desejar depurar uma função de API do Windows que tenha os símbolos d
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Para obter o nome decorado, consulte [exibindo nomes decorados](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Para obter o nome decorado, consulte [exibindo nomes decorados](/previous-versions/5x49w699(v=vs.140)).
 
      Você pode testar o nome decorado e exibi-lo no código de desmontagem. Enquanto estiver em pausa na função no depurador do Visual Studio, clique com o botão direito do mouse na função no editor de código ou na janela pilha de chamadas e escolha **ir para desmontagem**.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509452"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599966"
 ---
 # <a name="security-warnings"></a>Avisos de segurança
 
@@ -33,7 +33,7 @@ Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguro
 |[CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança](../code-quality/ca2100.md)|Um método define a propriedade System.Data.IDbCommand.CommandText usando uma cadeia de caracteres criada com base em um argumento da cadeia de caracteres para o método. Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL.|
 |[CA2109: Examinar manipuladores de eventos visíveis](../code-quality/ca2109.md)|Um método público ou protegido de tratamento de eventos foi detectado. Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário.|
 |[CA2119: Selar métodos que atendem a interfaces particulares](../code-quality/ca2119.md)|Um tipo público herdável fornece uma implementação de método substituível de uma interface (Friend no Visual Basic) interna. Para corrigir uma violação dessa regra, evite que o método seja substituído fora do assembly.|
-|[CA2153: Evitar tratamento de exceções de estado corrompido](../code-quality/ca2153.md)|As [exceções de estado corrompidas (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicam que há corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida.|
+|[CA2153: Evitar tratamento de exceções de estado corrompido](../code-quality/ca2153.md)|As [exceções de estado corrompidas (CSE)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indicam que há corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida.|
 |[CA2300: Não usar o desserializador BinaryFormatter não seguro](../code-quality/ca2300.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2301: Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder](../code-quality/ca2301.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|
 |[CA2302: Verificar se o BinaryFormatter.Binder está definido antes de chamar BinaryFormatter.Deserialize](../code-quality/ca2302.md)|Desserializadores inseguros são vulneráveis ao desserializar dados não confiáveis. Um invasor pode modificar os dados serializados para incluir tipos inesperados para injetar objetos com efeitos colaterais mal-intencionados.|

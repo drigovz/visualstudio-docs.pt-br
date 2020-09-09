@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72431813"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600335"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multi-threaded no Visual Studio
 Um thread é uma sequência de instruções para as quais o sistema operacional concede o tempo do processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.
@@ -102,7 +102,7 @@ Atribua ao thread um nome que aparecerá na janela **Threads**.
 
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)
-- [Multithreading em componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [Multithreading em componentes](/previous-versions/3es4b6yy(v=vs.140))
 - [Suporte multithread para código mais antigo](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Depurar threads e processos](../debugger/debug-threads-and-processes.md)
 - [Depuração remota](../debugger/remote-debugging.md)

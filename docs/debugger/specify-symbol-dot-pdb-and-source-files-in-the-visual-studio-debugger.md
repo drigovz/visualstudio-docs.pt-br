@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183753"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599591"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. pdb) e os arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -46,7 +46,7 @@ Para obter uma explicação detalhada dos arquivos de símbolo, consulte o segui
 
 - [Entender os arquivos de símbolo e as configurações de símbolo do Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Por que o Visual Studio exige arquivos de símbolo do depurador para corresponder exatamente aos arquivos binários com os quais foram criados?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Por que o Visual Studio exige arquivos de símbolo do depurador para corresponder exatamente aos arquivos binários com os quais foram criados?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Como funcionam os arquivos de símbolo
 
@@ -57,7 +57,7 @@ O arquivo *. pdb* contém informações de depuração e estado do projeto que p
 
 Os arquivos de símbolo também mostram o local dos arquivos de origem e, opcionalmente, o servidor do qual recuperá-los.
 
-O depurador só carrega arquivos *. pdb* que correspondem exatamente aos arquivos *. pdb* criados quando um aplicativo foi compilado (ou seja, os arquivos *. pdb* originais ou cópias). Essa [duplicação exata](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) é necessária porque o layout dos aplicativos pode ser alterado mesmo que o próprio código não tenha sido alterado.
+O depurador só carrega arquivos *. pdb* que correspondem exatamente aos arquivos *. pdb* criados quando um aplicativo foi compilado (ou seja, os arquivos *. pdb* originais ou cópias). Essa [duplicação exata](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) é necessária porque o layout dos aplicativos pode ser alterado mesmo que o próprio código não tenha sido alterado.
 
 > [!TIP]
 > Para depurar código fora do código-fonte do projeto, como código do Windows ou código de terceiros que seu projeto chama, você deve especificar o local dos arquivos *. pdb* do código externo (e, opcionalmente, os arquivos de origem), que devem corresponder exatamente às compilações em seu aplicativo.

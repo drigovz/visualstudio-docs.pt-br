@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460241"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599922"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: execução de Transact-SQL encerrada sem depuração
 
@@ -40,7 +40,7 @@ Há duas contas envolvidas:
 
   Para corrigir esse erro, talvez seja necessário:
 
-  - Verificar suas configurações de permissões. Para obter mais informações, consulte [How to: Set SQL Server Permissions for Debugging](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Verificar suas configurações de permissões. Para obter mais informações, consulte [How to: Set SQL Server Permissions for Debugging](/previous-versions/w1bhybwz(v=vs.100)).
 
   - Verifique se a depuração do SQL está configurada corretamente.
 
@@ -49,6 +49,6 @@ Há duas contas envolvidas:
 ## <a name="see-also"></a>Confira também
 
 - [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Como configurar permissões para depuração no SQL Server](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Como configurar permissões para depuração no SQL Server](/previous-versions/w1bhybwz(v=vs.100))
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Depuração remota](../debugger/remote-debugging.md)

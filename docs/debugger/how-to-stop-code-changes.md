@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348945"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599853"
 ---
 # <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.
@@ -40,4 +40,4 @@ Quando Editar e Continuar estiver no processo de aplicar alterações de código
 
 ## <a name="see-also"></a>Confira também
 - [Editar e continuar](../debugger/edit-and-continue.md)
-- [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Caixa de diálogo Editar e Continuar, Depuração, Opções](./edit-and-continue.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350492"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600308"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspecionar uma exceção usando o auxiliar de exceção 
 
@@ -50,7 +50,7 @@ A partir do Visual Studio 2017, para o código .net e C/C++, quando você pressi
 Você pode configurar o depurador para interromper quando uma exceção do tipo atual for gerada na seção de **configurações de exceção** do auxiliar de exceção. Se o depurador for pausado em uma exceção gerada, você poderá usar a caixa de seleção para desabilitar a interrupção desse tipo de exceção quando for lançado no futuro. Se você não quiser interromper essa exceção em particular quando for gerada neste módulo específico, marque a caixa de seleção pelo nome do módulo em **exceto quando gerada de:** na janela **configurações de exceção** . 
 
 ## <a name="inspect-inner-exceptions"></a>Inspecionar exceções internas 
-Se a exceção tiver quaisquer exceções internas ([InnerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception), você poderá exibi-las no auxiliar de exceção. Se houver várias exceções presentes, você poderá navegar entre elas usando as setas para a esquerda e para a direita mostradas acima da pilha de chamadas.
+Se a exceção tiver quaisquer exceções internas ([InnerException](/dotnet/api/system.exception.innerexception), você poderá exibi-las no auxiliar de exceção. Se houver várias exceções presentes, você poderá navegar entre elas usando as setas para a esquerda e para a direita mostradas acima da pilha de chamadas.
 
 ![Auxiliar de exceção com exceção interna](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Nos casos em que uma exceção foi `thrown` o auxiliar de exceção, mostra a pi
 ![Exceção auxiliar com exceções relançadas](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Compartilhar uma sessão de depuração com Live Share
-No auxiliar de exceção, você pode iniciar uma sessão de [Live share](https://docs.microsoft.com/visualstudio/liveshare/) usando o link **Iniciar Live share sessão...**. Qualquer pessoa que ingresse na sessão de Live Share pode ver o auxiliar de exceção junto com outras informações de depuração.
+No auxiliar de exceção, você pode iniciar uma sessão de [Live share](/visualstudio/liveshare/) usando o link **Iniciar Live share sessão...**. Qualquer pessoa que ingresse na sessão de Live Share pode ver o auxiliar de exceção junto com outras informações de depuração.

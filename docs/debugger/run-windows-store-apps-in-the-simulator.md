@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348135"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599528"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Executar aplicativos UWP no simulador
 
@@ -115,7 +115,7 @@ O botão **girar emulação de toque** define o modo de interação com gestos d
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede
 
-Você pode ajudar os usuários de seu aplicativo a gerenciar os custos de conexões de rede limitadas mantendo a percepção desses custos da conexão de rede ou das alterações de status do plano de dados e habilitando o seu aplicativo para usar essas informações a fim de evitar a cobrança de custos adicionais por roaming ou exceder um limite especificado de transferência de dados. As APIs [Windows. Networking. Connectivity](/uwp/api/windows.networking.connectivity) permitem responder a eventos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) que assinam. Consulte [início rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Você pode ajudar os usuários de seu aplicativo a gerenciar os custos de conexões de rede limitadas mantendo a percepção desses custos da conexão de rede ou das alterações de status do plano de dados e habilitando o seu aplicativo para usar essas informações a fim de evitar a cobrança de custos adicionais por roaming ou exceder um limite especificado de transferência de dados. As APIs [Windows. Networking. Connectivity](/uwp/api/windows.networking.connectivity) permitem responder a eventos [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) que assinam. Consulte [início rápido: Gerenciando restrições de custo de rede limitada](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Para depurar ou testar seu código de reconhecimento de custos de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio do objeto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) retornado por [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,7 +139,7 @@ Para simular propriedades de rede:
 
 Para obter mais informações sobre como gerenciar conexões de rede, consulte:
 
-[Início rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Início rápido: Gerenciando restrições de custo de rede limitada](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [Exemplo de informações de rede](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

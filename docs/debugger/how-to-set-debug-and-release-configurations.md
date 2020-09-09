@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349153"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599898"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Definir configurações de depuração e versão no Visual Studio
 
@@ -67,7 +67,7 @@ ou
 Você pode optar por gerar arquivos de símbolo (. pdb) e quais informações de depuração incluir. Para a maioria dos tipos de projeto, o compilador gera arquivos de símbolo por padrão para compilações de depuração e versão, enquanto outras configurações padrão diferem por tipo de projeto e versão do Visual Studio.
 
 > [!IMPORTANT]
-> O depurador carregará apenas um arquivo .pdb para um arquivo executável que corresponde exatamente ao arquivo .pdb criado quando o executável foi compilado (isto é, o .pdb deve ser o original ou uma cópia do arquivo .pdb original). Para obter mais informações, consulte [por que o Visual Studio exige arquivos de símbolo do depurador para corresponder exatamente aos arquivos binários com os quais eles foram criados?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
+> O depurador carregará apenas um arquivo .pdb para um arquivo executável que corresponde exatamente ao arquivo .pdb criado quando o executável foi compilado (isto é, o .pdb deve ser o original ou uma cópia do arquivo .pdb original). Para obter mais informações, consulte [por que o Visual Studio exige arquivos de símbolo do depurador para corresponder exatamente aos arquivos binários com os quais eles foram criados?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with).
 
 Cada tipo de projeto pode ter uma maneira diferente de definir essas opções.
 
@@ -117,7 +117,7 @@ Para obter informações detalhadas sobre configurações de projeto para config
 
    O compilador cria os arquivos de símbolo na mesma pasta que o executável ou o arquivo de saída principal.
 
-## <a name="see-also"></a><a name="see-also"></a>Consulte também
+## <a name="see-also"></a><a name="see-also"></a>Confira também
 
 - [Especificar arquivos de símbolo (. pdb) e arquivos de origem no depurador do Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
 - [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md)<br/>

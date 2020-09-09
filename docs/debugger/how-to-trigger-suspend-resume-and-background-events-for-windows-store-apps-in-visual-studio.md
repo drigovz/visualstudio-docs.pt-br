@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348932"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600156"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano durante a depuração de aplicativos UWP no Visual Studio
 
@@ -48,7 +48,7 @@ Para obter mais informações sobre o gerenciamento de tempo de vida de processo
      **Suspender e encerrar** fecha o aplicativo e encerra a sessão de depuração.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Disparar tarefas em segundo plano
- Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [dando suporte ao seu aplicativo com tarefas em segundo plano](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [dando suporte ao seu aplicativo com tarefas em segundo plano](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Você pode disparar os eventos que iniciam as tarefas em segundo plano do aplicativo por meio do depurador.
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre o gerenciamento de tempo de vida de processo
 4. Escolha o log **Diagnóstico**.
 
 ## <a name="see-also"></a>Confira também
-- [Testando aplicativos UWP com o Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Testando aplicativos UWP com o Visual Studio](../test/unit-test-your-code.md)
 - [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo de vida do aplicativo](/windows/uwp/launch-resume/app-lifecycle)
 - [Inicialização, continuação e multitarefa](/windows/uwp/launch-resume/index)

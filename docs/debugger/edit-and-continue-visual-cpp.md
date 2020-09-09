@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737906"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599656"
 ---
 # <a name="edit-and-continue-c"></a>Editar e continuar (C++)
 Você pode usar editar e continuar em projetos C++. Consulte [alterações de código com suporte (C++)](../debugger/supported-code-changes-cpp.md) para obter informações sobre as limitações de editar e continuar.
 
 Para obter mais informações sobre os aprimoramentos do Visual Studio 2015 atualização 3, consulte [C++ Edit and Continue no Visual Studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
- A opção de compilador [/zo (aprimorar a depuração otimizada)](/cpp/build/reference/zo-enhance-optimized-debugging) que foi introduzida no Visual Studio 2013 atualização 3 adiciona informações adicionais aos arquivos. PDB (símbolo) para binários compilados sem a opção [/OD (Disable (debug))](https://msdn.microsoft.com/library/aafb762y.aspx) .
+ A opção de compilador [/zo (aprimorar a depuração otimizada)](/cpp/build/reference/zo-enhance-optimized-debugging) que foi introduzida no Visual Studio 2013 atualização 3 adiciona informações adicionais aos arquivos. PDB (símbolo) para binários compilados sem a opção [/OD (Disable (debug))](/cpp/build/reference/od-disable-debug) .
 
  **/Zo** desabilita editar e continuar. Consulte [como: depurar código otimizado](../debugger/how-to-debug-optimized-code.md).
 
@@ -72,7 +72,7 @@ Para obter mais informações sobre os aprimoramentos do Visual Studio 2015 atua
 ## <a name="how-to-reset-the-point-of-execution"></a><a name="BKMK_How_to_reset_the_point_of_execution"></a> Como redefinir o ponto de execução
  Algumas alterações de código podem fazer o ponto de execução ser movido para um novo local quando Editar e Continuar aplicar as alterações. Editar e Continuar coloca o ponto de execução o mais exatamente possível, mas os resultados podem não estar corretos em todos os casos.
 
- No C++, uma caixa de diálogo informa quando o ponto de execução é alterado. Você deve verificar se o local está correto antes de continuar a depuração. Se não estiver correta, use o comando **Definir Próxima Instrução**. Para obter mais informações, consulte [definir a próxima instrução a ser executada](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
+ No C++, uma caixa de diálogo informa quando o ponto de execução é alterado. Você deve verificar se o local está correto antes de continuar a depuração. Se não estiver correta, use o comando **Definir Próxima Instrução**. Para obter mais informações, consulte [definir a próxima instrução a ser executada](./navigating-through-code-with-the-debugger.md#BKMK_Set_the_next_statement_to_execute).
 
 ## <a name="how-to-work-with-stale-code"></a><a name="BKMK_How_to_work_with_stale_code"></a> Como trabalhar com código obsoleto
  Em alguns casos, Editar e Continuar não pode aplicar imediatamente alterações de código ao executável, mas talvez consiga aplicá-las posteriormente se você continuar a depuração. Isso ocorre se você editar uma função que chama a função atual ou se adicionar mais de 64 bytes de novas variáveis a uma função na pilha de chamadas

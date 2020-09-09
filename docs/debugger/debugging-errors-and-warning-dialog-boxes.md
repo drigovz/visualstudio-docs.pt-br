@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916446"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599934"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
@@ -48,7 +48,7 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Caixa de diálogo Não Há Nenhum Código-Fonte Disponível para a Localização Atual](../debugger/no-source-available.md)
 
- [Caixa de diálogo Não há Informações Simbólicas](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [Caixa de diálogo Não há Informações Simbólicas](/previous-versions/d493t3ew(v=vs.100))
 
  [Caixa de diálogo Resolver Ambiguidade](../debugger/resolve-ambiguity-dialog-box.md)
 

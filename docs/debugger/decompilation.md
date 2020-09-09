@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350557"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600112"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Gerar código-fonte de assemblies do .NET durante a depuração
 
@@ -27,7 +27,7 @@ Ao depurar um aplicativo .NET, você pode achar que deseja exibir o código-font
 > [!NOTE]
 > * A geração de código-fonte (descompilação) só está disponível para aplicativos .NET e é baseada no projeto [ILSpy](https://github.com/icsharpcode/ILSpy) de código-fonte aberto.
 > * A descompilação só está disponível no Visual Studio 2019 16,5 e posterior.
-> * Aplicar o atributo [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a um assembly ou módulo impede que o Visual Studio tente a descompilação.
+> * Aplicar o atributo [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a um assembly ou módulo impede que o Visual Studio tente a descompilação.
 
 ## <a name="generate-source-code"></a>Gerar código-fonte
 
@@ -99,7 +99,7 @@ Mais detalhes podem ser encontrados no problema do GitHub: [status do gerador de
 
 ### <a name="just-my-code"></a>Apenas Meu Código
 
-As configurações de [apenas meu código (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permitem que o Visual Studio Percorra o sistema, a estrutura, a biblioteca e outras chamadas que não são de usuário. Durante uma sessão de depuração, a janela **módulos** mostra quais módulos de código o depurador está tratando como meu código (código do usuário).
+As configurações de [apenas meu código (JMC)](./just-my-code.md) permitem que o Visual Studio Percorra o sistema, a estrutura, a biblioteca e outras chamadas que não são de usuário. Durante uma sessão de depuração, a janela **módulos** mostra quais módulos de código o depurador está tratando como meu código (código do usuário).
 
 A descompilação de módulos otimizados ou de versão produz código que não é de usuário. Se o depurador interromper o código de não-usuário descompilado, por exemplo, a janela **nenhuma fonte** será exibida. Para desabilitar apenas meu código, navegue até **ferramentas**  >  **Opções** (ou **Debug**  >  **Opções**de depuração) > **depuração**  >  **geral**e, em seguida, desmarque **habilitar apenas meu código**.
 
