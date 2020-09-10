@@ -1,5 +1,6 @@
 ---
-title: Confirmar edições em processo em controles ligados a dados antes de salvar
+title: Edições não confirmadas
+description: Confirmar edições em processo em controles ligados a dados antes de salvar
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0369f4410c1eaf5a168a5291feebf64dbc9ee65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: accf31187318c70ded0cc347763664b8fd51d479
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282703"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739268"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Confirmar edições no processo em controles associados a dados antes de salvar os dados
 
@@ -50,7 +51,7 @@ O código a seguir usa uma consulta [LINQ (consulta integrada à linguagem)](/do
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)

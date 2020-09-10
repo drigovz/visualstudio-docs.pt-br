@@ -1,17 +1,18 @@
 ---
 title: Ferramentas de contêiner do Visual Studio com ASP.NET Core e React.js
+titleSuffix: ''
 author: ghogen
 description: Saiba como usar as Ferramentas do Visual Studio para Contêineres e o Docker for Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485392"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741884"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Início rápido: usar o Docker com um aplicativo de página única reagir no Visual Studio
 

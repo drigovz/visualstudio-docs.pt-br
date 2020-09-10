@@ -1,5 +1,5 @@
 ---
-title: Como adicionar, atualizar ou remover uma referência de WCF Data Services
+title: Adicionar, atualizar ou remover uma referência do WCF Data Service
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5f5a1e14a6eab7537c8ce64636f0f34378ad7f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c09b2d487e58e6da2b4aaf62179784d96bdfe783
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282365"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741381"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como adicionar, atualizar ou remover uma referência de serviço de dados do WCF
 
@@ -156,6 +156,6 @@ Se uma referência de serviço não estiver mais sendo usada, você poderá remo
     > [!NOTE]
     > Qualquer código que referencie a referência de serviço deve ser removido manualmente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Serviços de Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
-title: Elemento EnableLocationBrowseButton (modelos do Visual Studio) | Microsoft Docs
+title: Elemento EnableLocationBrowseButton (modelos do Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711982"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742997"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 Especifica se o botão **procurar** está disponível na caixa de diálogo **novo projeto** , para que os usuários possam modificar facilmente o diretório padrão em que um novo projeto é salvo.
@@ -26,9 +27,9 @@ Especifica se o botão **procurar** está disponível na caixa de diálogo **nov
  \<VSTemplate> \<TemplateData>
  \<EnableLocationBrowseButton>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -36,10 +37,10 @@ Especifica se o botão **procurar** está disponível na caixa de diálogo **nov
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -60,7 +61,7 @@ Especifica se o botão **procurar** está disponível na caixa de diálogo **nov
 ## <a name="example"></a>Exemplo
  O exemplo a seguir ilustra os metadados de um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,6 +86,6 @@ Especifica se o botão **procurar** está disponível na caixa de diálogo **nov
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

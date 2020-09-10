@@ -1,5 +1,6 @@
 ---
-title: Usar o processo local com o kubernetes com o Visual Studio (visualização)
+title: Usar o Local Process with Kubernetes com o Visual Studio
+titleSuffix: ''
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: how-to
@@ -9,12 +10,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: 191fd1df377bd15d78c329b88d20f1fed8669663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58222eca51fcf14f7746ad2120acd5a300a39519
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87913273"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741940"
 ---
 # <a name="use-local-process-with-kubernetes-preview"></a>Usar processo local com kubernetes (versão prévia)
 

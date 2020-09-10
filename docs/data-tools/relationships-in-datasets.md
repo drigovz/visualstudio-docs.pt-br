@@ -1,5 +1,5 @@
 ---
-title: Usar DataRelation para criar relações entre conjuntos de os
+title: Criar relações entre conjuntos de dados
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281754"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739224"
 ---
 # <a name="create-relationships-between-datasets"></a>Criar relações entre conjuntos de dados
 DataSets que contêm tabelas de dados relacionadas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e para retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Assistente de configuração de fonte de dados**ou o **Designer de conjunto de dados**, cria e configura o <xref:System.Data.DataRelation> objeto para você.
@@ -104,6 +104,6 @@ As relações entre tabelas de dados aparecem como linhas na **Designer de conju
 
 2. No menu **dados** , selecione o comando **Mostrar rótulos de relação** para exibir o nome da relação. Limpe esse comando para ocultar o nome da relação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um arquivo de projeto do MSBuild do zero | Microsoft Docs'
+title: Criar um arquivo de projeto do MSBuild do zero
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edd5f3a01cc96a80403d1b030541e08e19d51eef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184270"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741728"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Passo a passo: Criar um arquivo de projeto do MSBuild do zero
 
@@ -213,7 +213,7 @@ As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tare
 
      Isso instrui o compilador do Visual C# a produzir um assembly que é chamado pela propriedade `AssemblyName` e para colocá-lo na pasta que é chamada pela propriedade `OutputPath`.
 
-5. Salve suas alterações.
+5. Salve as alterações.
 
 O seu arquivo de projeto deve agora se assemelhar ao seguinte código:
 
@@ -470,7 +470,7 @@ O exemplo a seguir mostra um arquivo de projeto que compila um aplicativo Visual
 
  O Visual Studio pode fazer automaticamente muito do trabalho que é mostrado neste passo a passo. Para saber como usar o Visual Studio para criar, editar, compilar e testar arquivos de projeto MSBuild, confira [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

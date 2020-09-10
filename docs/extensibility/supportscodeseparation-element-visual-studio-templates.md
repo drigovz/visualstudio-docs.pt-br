@@ -1,5 +1,6 @@
 ---
-title: Elemento SupportsCodeSeparation (modelos do Visual Studio) | Microsoft Docs
+title: Elemento SupportsCodeSeparation (modelos do Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b5e03e7ea01b6e6f75c18da44c0233660c17f8e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699510"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741760"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelos do Visual Studio)
 Especifica se a caixa de seleção **código local em arquivo separado** está habilitada na caixa de diálogo **Adicionar novo item** .
@@ -37,10 +38,10 @@ Especifica se a caixa de seleção **código local em arquivo separado** está h
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -85,6 +86,6 @@ Especifica se a caixa de seleção **código local em arquivo separado** está h
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

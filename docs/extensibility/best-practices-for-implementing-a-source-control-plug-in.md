@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para implementar um plug-in de controle do código-fonte | Microsoft Docs
+title: Implementando um plug-in de controle do código-fonte-práticas recomendadas
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68491f22d63ae3ebb664b7c22188a661dccbf39a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1576717ceda110820b487a324f56f18486c5d95a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740047"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739156"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Práticas recomendadas para implementar um plug-in de controle do código-fonte
 Os detalhes técnicos a seguir podem ajudá-lo a implementar de maneira confiável um plug-in de controle do código-fonte no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -57,6 +57,6 @@ Os detalhes técnicos a seguir podem ajudá-lo a implementar de maneira confiáv
 
  A maioria das opções de configuração configuráveis pelo usuário não são definidas dessa maneira, pois elas variam muito entre os plug-ins de controle do código-fonte. Portanto, o mecanismo recomendado é um botão **avançado** . Por exemplo, na caixa de diálogo **obter** , o IDE exibe apenas as informações que ele entende, mas também exibe um botão **avançado** se o plug-in tiver opções para esse comando. Quando o usuário clica no botão **avançado** , o IDE chama o [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) para habilitar o plug-in de controle do código-fonte para solicitar informações ao usuário, como bitflags ou uma data/hora. O plug-in retorna essas informações em uma estrutura que é passada de volta durante o `SccGet` comando.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [Criar um plug-in de controle do código-fonte](../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,5 +1,6 @@
 ---
-title: A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
+title: A cadeia de conexão contém senha
+description: A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a928a5a223ca4f9599bf174bedff4ebc754b9619
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281468"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739212"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
 
@@ -34,6 +35,6 @@ Ao trabalhar com conexões de dados que incluem informações confidenciais (sen
 
    A cadeia de conexão é armazenada como uma configuração de aplicativo, mas a senha não é incluído.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

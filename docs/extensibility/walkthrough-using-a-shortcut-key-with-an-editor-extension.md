@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: usando uma tecla de atalho com uma extensão de editor | Microsoft Docs'
+title: Usar uma tecla de atalho com uma extensão do editor
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094cb590d5b2a3bf062916985bfc61b1cf76d365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dcbf5c22af9cabeca0b89ffa98d4ddf86173a4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904400"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89735150"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Walkthrough: usar uma tecla de atalho com uma extensão do editor
 Você pode responder às teclas de atalho na extensão do editor. A instrução a seguir mostra como adicionar uma exibição Adornment a uma exibição de texto usando uma tecla de atalho. Este passo a passos é baseado no modelo do editor de Adornment do visor e permite que você adicione o Adornment usando o caractere +.

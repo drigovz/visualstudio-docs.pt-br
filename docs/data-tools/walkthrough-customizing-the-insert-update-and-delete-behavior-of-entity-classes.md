@@ -1,5 +1,5 @@
 ---
-title: Personalizar o comportamento de inserir/atualizar/excluir das classes de entidade
+title: Personalizar comportamento de inserção/atualização/exclusão
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585945"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741826"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Walkthrough: personalizar o comportamento de inserção, atualização e exclusão de classes de entidade
 
@@ -269,9 +269,9 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você pode quere
 
 - Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [introdução às consultas LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [Como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

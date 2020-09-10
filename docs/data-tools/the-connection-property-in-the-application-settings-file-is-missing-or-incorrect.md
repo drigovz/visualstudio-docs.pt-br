@@ -1,5 +1,6 @@
 ---
-title: A propriedade de conexão no arquivo de configurações do aplicativo está ausente ou incorreta
+title: Propriedade de conexão ausente
+description: A propriedade de conexão no arquivo de configurações do aplicativo está ausente ou incorreta
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afbe2f813f0bba881f85463777c704c30a45d9ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78732eded3936a31099c871120406fff3929880c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281494"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737018"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>A propriedade de conexão no arquivo de configurações do aplicativo está ausente ou incorreta
 
@@ -23,6 +24,6 @@ O arquivo *.dbml* contém uma referência a uma cadeia de conexão nas configura
 
 Para responder a essa mensagem, selecione **OK**. As informações de conexão contidas no arquivo *. dbml* são adicionadas às configurações do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

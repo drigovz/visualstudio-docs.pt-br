@@ -1,5 +1,5 @@
 ---
-title: Usar procedimentos armazenados em LINQ to SQL para atualizar dados (O/R Designer)
+title: Usar procedimentos armazenados no LINQ to SQL para atualizar dados
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282313"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743005"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 
@@ -63,9 +63,9 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 
 Para voltar a usar a lógica padrão em runtime para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar runtime** na caixa de diálogo **Configurar Comportamento**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Operações de inserção, atualização e exclusão (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

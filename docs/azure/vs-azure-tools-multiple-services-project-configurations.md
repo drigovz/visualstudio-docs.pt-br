@@ -1,5 +1,5 @@
 ---
-title: Configurar um projeto do Azure com várias configurações de serviço
+title: Configurar o serviço de nuvem com várias configurações
 description: Saiba como configurar um projeto de serviço de nuvem do Azure alterando os arquivos ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg e ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280538"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739958"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 

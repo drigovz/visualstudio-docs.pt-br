@@ -1,5 +1,5 @@
 ---
-title: Relações entre classes de LINQ to SQL (O/R Designer)
+title: Relações entre LINQ to SQL classes
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b081e989932ea03a3aaf3203bdc7383f90b9b7ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282144"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742941"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Como: criar uma associação entre classes de LINQ to SQL (O/R Designer)
 As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] são análogas às relações entre tabelas em um banco de dados. Você pode criar associações entre classes de entidade usando a caixa de diálogo **Editor de Associação**.
@@ -46,10 +46,10 @@ Depois de criar uma associação, quando você seleciona a associação no **Des
 
 5. Clique em **OK** para criar a associação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Walkthrough: Criando classes de LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Como: representar chaves primárias](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

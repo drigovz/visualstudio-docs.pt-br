@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f383b173e012a7836d67a916ad9c16132e984602
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402277"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741773"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
@@ -43,6 +43,14 @@ Há três categorias de convenção de codificação .NET com suporte:
 - [Convenções de nomenclatura](../ide/editorconfig-naming-conventions.md)
 
    Regras relacionadas a nomenclatura dos elementos de código. Por exemplo, você pode especificar que os métodos `async` devem terminar com "Async".
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-coding-conventions-on-build"></a>Impor convenções de codificação na compilação
+
+A partir do Visual Studio 2019 versão 16,8, que inclui o SDK do .NET 5,0 RC2, você pode [impor as convenções de codificação do .net na compilação](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos os projetos .net. No momento da compilação, as violações de estilo de código .NET serão exibidas como avisos ou erros com um prefixo "IDE". Isso permite que você aplique estritamente estilos de código consistentes em sua codebase.
+
+::: moniker-end
 
 ## <a name="example-editorconfig-file"></a>Exemplo de arquivo EditorConfig
 
@@ -261,7 +269,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 > [!NOTE]
 > Para obter mais informações sobre as categorias de Convenção de codificação .NET com suporte, consulte as páginas [convenções de linguagem](../ide/editorconfig-language-conventions.md), [convenções de formatação](../ide/editorconfig-formatting-conventions.md)e convenções de [nomenclatura](../ide/editorconfig-naming-conventions.md) .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Ações Rápidas](../ide/quick-actions.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)

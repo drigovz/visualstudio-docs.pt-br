@@ -1,5 +1,5 @@
 ---
-title: Usando a estrutura de pacote gerenciado para um tipo de projeto (C#) | Microsoft Docs
+title: Usar estrutura de pacote gerenciado para um tipo de projeto (C#)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca9dda0b699e0f70b0c945ab9ecfe9f9f4dcda6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 496a2528ae70d06696ef25b1adc6255622be3b2f
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704116"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741360"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#)
 A MPF (estrutura de pacote gerenciada) fornece classes C# que você pode usar ou herdar de para implementar seus próprios tipos de projeto. O MPF implementa muitas das interfaces que o Visual Studio espera que um tipo de projeto forneça, deixando você livre para se concentrar em implementar as particularidades do seu tipo de projeto.

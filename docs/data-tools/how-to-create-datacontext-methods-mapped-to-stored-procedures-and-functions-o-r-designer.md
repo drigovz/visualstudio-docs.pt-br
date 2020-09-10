@@ -1,5 +1,5 @@
 ---
-title: Mapear métodos DataContext para sprocs e Functions (O-R Designer)
+title: Mapear métodos DataContext para sprocs e funções
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c1545313ba6852765bc86d57f2149b4481e5f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21ea455e6cc29d17f9050e54dd2f8d11033320ac
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282131"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742899"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
 
@@ -50,10 +50,10 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 > [!NOTE]
 > Para obter informações sobre como alterar o tipo de retorno de existentes <xref:System.Data.Linq.DataContext> métodos, consulte [como: Alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Walkthrough: Criando classes de LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Introdução a LINQ no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

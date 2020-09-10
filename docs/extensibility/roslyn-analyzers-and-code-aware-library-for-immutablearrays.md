@@ -1,5 +1,6 @@
 ---
-title: Analisadores de Roslyn e biblioteca com reconhecimento de código para ImmutableArrays | Microsoft Docs
+title: Analisadores de Roslyn e bibliotecas com reconhecimento de código para ImmutableArrays
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d66ed0ab2d93bb46983becd191b1dcc2de648659
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6fc40d229b911500cb6c196dba34546ed9ede206
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509400"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741661"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca com reconhecimento de código para ImmutableArrays
 
@@ -306,7 +307,7 @@ Você pode ver este exemplo desenvolvido e abordado mais adiante nesta [conversa
 
 Você pode ver todo o código concluído [aqui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). As subpastas *DoNotUseImmutableArrayCollectionInitializer* e *DoNotUseImmutableArrayCtor* têm um arquivo c# para encontrar problemas e um arquivo c# que implementa as correções de código que aparecem na interface do usuário da lâmpada do Visual Studio. Observe que o código concluído tem um pouco mais de abstração para evitar buscar o \<T> objeto do tipo ImmutableArray repetidamente. Ele usa ações registradas aninhadas para salvar o objeto de tipo em um contexto que está disponível sempre que as subações (analisar criação de objeto e as inicializações de coleção de análise) são executadas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Código concluído no GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

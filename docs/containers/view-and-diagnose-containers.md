@@ -1,5 +1,5 @@
 ---
-title: Logs de contêiner do Docker, variáveis de ambiente e acesso ao sistema de arquivos
+title: Exibir e diagnosticar contêineres e imagens do Docker
 description: Descreve como melhorar sua capacidade de depurar e diagnosticar seus aplicativos baseados em contêiner no Visual Studio usando uma janela de ferramentas para ver o que está acontecendo dentro dos contêineres que hospedam seu aplicativo.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490294"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742790"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Como exibir e diagnosticar contêineres e imagens no Visual Studio
 

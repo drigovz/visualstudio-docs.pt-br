@@ -1,5 +1,5 @@
 ---
-title: Propriedades de documento personalizadas em um serviço de idioma herdado | Microsoft Docs
+title: Propriedades de documento personalizadas em serviços de idioma herdados
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708962"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741809"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriedades de documento personalizadas em um serviço de idioma herdado
 As propriedades do documento podem ser exibidas na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] janela **Propriedades** . Linguagens de programação geralmente não têm propriedades associadas a arquivos de origem individuais. No entanto, o XML dá suporte a propriedades de documento que afetam a codificação, o esquema e a folha de estilos.
@@ -397,5 +397,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Recursos do serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-features1.md)

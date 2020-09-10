@@ -1,5 +1,5 @@
 ---
-title: Aplicativo de configurações em várias conexões de projeto | Microsoft Docs
+title: Aplicar configurações em várias conexões de projeto
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c88a5140bf72f6801d4c7a92ebd910f410aabfb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710056"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741524"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicação de configurações em várias conexões de projeto
 Um plug-in de controle do código-fonte criado usando a API de plug-in de controle do código-fonte versão 1,2 pode usar uma operação em lote para executar a mesma operação de controle do código-fonte em vários projetos ou em vários contextos de conexão. Os lotes podem ser usados para eliminar caixas de diálogo redundantes por projeto da experiência do usuário.
@@ -34,5 +34,5 @@ As novas funções a seguir dão suporte à operação em lote:
 
 A `SCCBeginBatch` função inicia um grupo de operações de controle do código-fonte. A `SccEndBatch` função fecha o grupo. Os grupos não podem ser aninhados.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [O que há de novo na API de plug-in de controle do código-fonte versão 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

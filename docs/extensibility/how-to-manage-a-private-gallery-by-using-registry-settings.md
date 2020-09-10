@@ -1,5 +1,5 @@
 ---
-title: 'Como: gerenciar uma galeria privada usando configurações do registro | Microsoft Docs'
+title: Gerenciar uma galeria privada usando configurações do registro
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2630fc71bea40a4d05e616ae336759ba62431a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 989426feaab04c62c31bf09ddb0431f18222e115
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710927"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742865"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Como: gerenciar uma galeria privada usando configurações do registro
 Se você for um administrador ou o desenvolvedor de uma extensão de shell isolada, poderá controlar o acesso aos controles, modelos e ferramentas na galeria do Visual Studio, na Galeria de exemplos ou nas galerias particulares. Para tornar uma galeria disponível ou indisponível, crie um arquivo *. pkgdef* que descreva as chaves de registro modificadas e seus valores.
@@ -67,5 +67,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>Confira também
-- [Galerias particulares](../extensibility/private-galleries.md)
+## <a name="see-also"></a>Veja também
+- [Galerias privadas](../extensibility/private-galleries.md)

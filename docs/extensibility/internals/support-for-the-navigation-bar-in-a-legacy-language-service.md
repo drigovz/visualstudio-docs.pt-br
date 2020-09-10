@@ -1,5 +1,5 @@
 ---
-title: Suporte para a barra de navegação em um serviço de linguagem herdada | Microsoft Docs
+title: Barra de navegação de suporte em um serviço de linguagem herdada
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704858"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741898"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 A barra de navegação na parte superior da exibição do editor exibe os tipos e membros no arquivo. Os tipos são mostrados na lista suspensa à esquerda e os membros são mostrados no menu suspenso à direita. Quando o usuário seleciona um tipo, o cursor é colocado na primeira linha do tipo. Quando o usuário seleciona um membro, o cursor é colocado na definição do membro. As caixas suspensas são atualizadas para refletir o local atual do cursor.

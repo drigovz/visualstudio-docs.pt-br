@@ -1,5 +1,5 @@
 ---
-title: Suporte para a janela de automóveis em um serviço de linguagem herdada | Microsoft Docs
+title: Dar suporte à janela Autos em um serviço de linguagem herdada
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704891"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741457"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Suporte para a janela de automáticos em um serviço de linguagem herdado
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Suporte para a janela de automóveis em um serviço de linguagem herdado
+
 A janela **automáticos** exibe expressões como variáveis e parâmetros que estão no escopo quando o programa que está sendo depurado é pausado (devido a um ponto de interrupção ou uma exceção). As expressões podem incluir variáveis, locais ou globais, e parâmetros que foram alterados no escopo local. A janela **autos** também pode incluir instanciações de uma classe, estrutura ou algum outro tipo. Tudo o que um avaliador de expressão pode avaliar pode ser mostrado na janela **autos** .
 
  A MPF (estrutura de pacote gerenciada) não fornece suporte direto para a janela de **automóveis** . No entanto, se você substituir o <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método, poderá retornar uma lista de expressões a serem apresentadas na janela **autos** .
 
 ## <a name="implementing-support-for-the-autos-window"></a>Implementando o suporte para a janela de automóveis
+
  Tudo o que você precisa fazer para dar suporte à janela **autos** é implementar o <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> método na <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Sua implementação deve decidir, dado um local no arquivo de origem, quais expressões devem aparecer na janela **autos** . O método retorna uma lista de cadeias de caracteres nas quais cada cadeia representa uma única expressão. Um valor de retorno <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica que a lista contém expressões, enquanto <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indica que não há expressões a serem mostradas.
 
  As expressões reais retornadas são os nomes das variáveis ou parâmetros que aparecem nesse local no código. Esses nomes são passados para o avaliador de expressão para obter valores e tipos que são exibidos na janela **automáticos** .
