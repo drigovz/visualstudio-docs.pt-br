@@ -1,5 +1,6 @@
 ---
-title: Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
+title: Não é possível excluir o método de backup
+description: Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 252303c4933501dd3a4672329d66ef4910238a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad7c66c6d110d09940a93e694a897a7dafd92e17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535246"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743085"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 
@@ -31,6 +32,6 @@ O `DataContext` método selecionado é usado atualmente como um dos `Insert` mé
 
    A caixa de mensagem fecha e nenhuma alteração é feita.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

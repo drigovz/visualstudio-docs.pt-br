@@ -1,16 +1,16 @@
 ---
-title: Como você pode aumentar as chances de um problema de desempenho ser corrigido
+title: Aumentar a chance de um problema de desempenho ser corrigido
 description: Informações adicionais e práticas recomendadas para o envio de problemas de desempenho no Visual Studio
 author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: fac6dd284abc04e8018ba7c36ae3a22022890f95
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509920"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743041"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -190,7 +190,7 @@ O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionai
 2. Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
 3. Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)

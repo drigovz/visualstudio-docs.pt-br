@@ -1,5 +1,5 @@
 ---
-title: Como referenciar o nome ou local do arquivo de projeto | Microsoft Docs
+title: Referenciar o nome ou o local do arquivo de projeto
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44168acda7becee1dc071b4cc94237a4f1ff2c72
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633831"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743413"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como referenciar o nome ou o local do arquivo de projeto
 
@@ -93,7 +93,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
 
 O exemplo usa a sintaxe da [função de propriedade](property-functions.md) para chamar o método de .NET Framework estático <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

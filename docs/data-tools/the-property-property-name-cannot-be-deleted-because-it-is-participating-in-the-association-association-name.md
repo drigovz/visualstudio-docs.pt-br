@@ -1,5 +1,6 @@
 ---
-title: A propriedade não pode ser excluída porque participa da associação
+title: A propriedade participa da Associação
+description: A propriedade não pode ser excluída porque participa da associação
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aab2d2e3151786b45889262680d2f0815f684b6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead87955056ec3c6246df6fc9050eedd867dd3ef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535376"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743280"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>A propriedade &lt;nome da propriedade&gt; não pode ser excluída porque está participando da associação &lt;nome da associação&gt;
 
@@ -31,6 +32,6 @@ Defina **Propriedade de Associação** para uma propriedade diferente da classe 
 
 4. Tente excluir novamente a propriedade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

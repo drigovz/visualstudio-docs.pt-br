@@ -1,5 +1,6 @@
 ---
-title: A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
+title: A classe selecionada não pode ser excluída
+description: A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: faea45cc7198be91a45d0bb57a62ce2730011ee2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84fabc7f0f1efdf06006597aec9bb813578589a8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281325"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743253"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 
@@ -27,6 +28,6 @@ Para reverter os tipos de retorno de métodos de <xref:System.Data.Linq.DataCont
 
 2. Definir **Tipo de Retorno** a uma classe diferente de entidade ou exclui o método de <xref:System.Data.Linq.DataContext> do painel métodos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

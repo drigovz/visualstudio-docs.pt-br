@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312581"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743326"
 ---
 # <a name="code-style-preferences"></a>Preferências de estilo de código
 
@@ -60,6 +60,14 @@ As opções definidas nessa janela são aplicáveis à sua conta de personaliza�
 
 Em cada configuração de estilo de código nessa página, é possível definir os valores de **Preferência** e **Gravidade** usando as listas suspensas de cada linha. A gravidade pode ser definida como **Somente Refatoração**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Gravidade** está definida como algo diferente de **Somente Refatoração**. O ícone de lâmpada de lâmpada de **ações rápidas** , lâmpada de erro de lâmpada de erro ou sinal de chave de fenda ![ ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) ![ ](media/screwdriver.png) é exibido quando um estilo não preferencial é usado e você pode escolher uma opção na lista **ações rápidas** para reescrever automaticamente o código para o estilo preferencial.
 
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Impor estilos de código na compilação
+
+A partir do Visual Studio 2019 versão 16,8, que inclui o SDK do .NET 5,0 RC2, você pode [impor as convenções de codificação do .net na compilação](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) para todos os projetos .net. No momento da compilação, as violações de estilo de código .NET serão exibidas como avisos ou erros com um prefixo "IDE". Isso permite que você aplique estritamente estilos de código consistentes em sua codebase.
+
+::: moniker-end
+
 ## <a name="apply-code-styles"></a>Aplicar estilos de código
 
 ::: moniker range="vs-2017"
@@ -101,7 +109,7 @@ Se quiser que as configurações de estilo de código sejam aplicadas sempre que
 
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Ações Rápidas](../ide/quick-actions.md)
 - [Configurações da Convenção de codificação .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

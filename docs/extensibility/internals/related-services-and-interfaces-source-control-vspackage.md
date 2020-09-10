@@ -1,5 +1,6 @@
 ---
-title: Serviços e interfaces relacionados (controle do código-fonte VSPackage) | Microsoft Docs
+title: Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 533f1bf4fcfbaebb25ec10908abf4a46ddacd521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705621"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743066"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
+
 Esta seção lista todas as interfaces relacionadas a VSPackage de controle do código-fonte no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . O VSPackage de controle do código-fonte implementa algumas dessas interfaces e usa outras para realizar tarefas de controle do código-fonte.
 
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas pelo e para o controle do código-fonte VSPackages
+
  As interfaces a seguir são descritas no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , e o controle do código-fonte VSPackage implementa um subconjunto deles dependendo de seu conjunto de recursos desejado. Algumas interfaces são marcadas como obrigatórias e devem ser implementadas por cada VSPackage de controle do código-fonte.
 
  Para as interfaces que um pacote não implementa, o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece uma implementação padrão. Observe que a implementação padrão é projetada para o caso quando nenhum VSPackage é registrado e nenhum projeto é controlado. Um controle de código-fonte gravado corretamente implementa todas as interfaces necessárias em vez de deixá-la para a implementação padrão dessas interfaces.
@@ -40,7 +43,7 @@ Esta seção lista todas as interfaces relacionadas a VSPackage de controle do c
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Os editores chamam essa interface antes de modificar ou salvar um arquivo. O VSPackage de controle do código-fonte pode fazer check-out no arquivo ou negar a operação se o check-out falhar. | VSPackage de controle do código-fonte | Recomendadas |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Essa interface fornece funcionalidade básica de controle do código-fonte para projetos, como registro e cancelamento de registro de projetos com controle do código-fonte e fornecimento de suporte para glifos de controle do código-fonte básico. | VSPackage de controle do código-fonte | Obrigatório |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Essa interface é obtida do <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> usando a <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> função ou simplesmente convertendo o objeto que está implementando `IVsHierarchy` para o `IVsSccProject2` . Ele é usado para obter os arquivos sob controle do código-fonte em um projeto ou para informar o projeto do status ou do local do controle do código-fonte atual. | Projeto | Obrigatório |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Essa interface é obtida do <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> usando a <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> função ou simplesmente convertendo o objeto que está implementando `IVsHierarchy` para o `IVsSccProject2` . Ele é usado para obter os arquivos sob controle do código-fonte em um projeto ou para informar o projeto do status ou do local do controle do código-fonte atual. | Project | Obrigatório |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | O módulo de integração usa essa interface para definir o VSPackage ativo atual. | VSPackage de controle do código-fonte | Obrigatório |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | Essa interface é baseada em um modelo de assinatura. Qualquer VSPackage pode sinalizar que deseja receber eventos de documento e ser avisado pelo shell sobre eventos que estão prestes a acontecer. Ele é implementado e manipulado pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , que, por sua vez, passa eventos que implementam o `IVsTrackProjectDocumentsEvents2` para o VSPackage. | Stub de controle do código-fonte | Obrigatório |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Essa interface fornece processamento em lotes, operações sincronizadas de leitura/gravação e um `OnQueryAddFiles` método avançado. | Stub de controle do código-fonte | Obrigatório |
@@ -53,7 +56,7 @@ Esta seção lista todas as interfaces relacionadas a VSPackage de controle do c
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | O VSPackage usa essa interface para definir glifos adicionais como glifos de controle do código-fonte para nós no **Gerenciador de soluções**. | VSPackage de controle do código-fonte | Opcional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | A caixa de diálogo **Adicionar** para projetos Web usa essa interface. Ele fornece métodos para procurar um local de controle do código-fonte e para abrir um projeto Web adicionado anteriormente no repositório do controle do código-fonte nesse local. | VSPackage de controle do código-fonte | Recomendadas |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Essa interface dá suporte ao carregamento assíncrono (em segundo plano) de projetos do controle do código-fonte. | VSPackage de controle do código-fonte | Opcional |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Essa interface permite que os projetos assistam ao progresso do carregamento assíncrono iniciado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Projeto | Opcional |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Essa interface permite que os projetos assistam ao progresso do carregamento assíncrono iniciado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Opcional |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Essa interface permite que o IDE consulte o controle do código-fonte ativo VSPackage. O IDE consulta o valor das configurações de controle do código-fonte que têm significado, mesmo quando não há nenhum VSPackage de controle do código-fonte ativo registrado. Essa interface é implementada e manipulada pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . | Stub de controle do código-fonte | Obrigatório |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Essa interface é usada para registrar o VSPackage de controle do código-fonte. | Stub de controle do código-fonte | Obrigatório |
 | <xref:EnvDTE.SourceControl> | Essa interface é usada na automação. Assim, ele expõe apenas funções que podem ser executadas sem exibir nenhuma interface do usuário. | VSPackage de controle do código-fonte | Opcional |
@@ -61,5 +64,5 @@ Esta seção lista todas as interfaces relacionadas a VSPackage de controle do c
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Essa interface é usada para salvar as configurações de controle do código-fonte no arquivo de opções de solução (. suo). Isso pode incluir configurações de controle do código-fonte específicas do usuário, como o local de inscrição do usuário atual. | VSPackage de controle do código-fonte | Recomendadas |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Essa interface é usada para monitorar eventos a fim de executar operações, como verificação de arquivos de projeto antes de fechar soluções ou obter novos arquivos do controle do código-fonte ao abrir um projeto. | VSPackage de controle do código-fonte | Recomendadas |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)

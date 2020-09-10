@@ -1,5 +1,6 @@
 ---
-title: Conjuntos de dados e TableAdapters separados m diferentes projetos
+title: Erro de uso de projetos separados
+description: Conjuntos de dados e TableAdapters separados m diferentes projetos
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281546"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743109"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 Os conjuntos de linhas tipados foram aprimorados para que as classes [TableAdapters](create-and-configure-tableadapters.md) e DataSet possam ser geradas em projetos separados. Isso permite que você separe rapidamente as camadas do aplicativo e gere aplicativos de dados de n camadas.
@@ -57,7 +58,7 @@ Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultad
 > [!NOTE]
 > Para exibir o arquivo de classe gerado, selecione o conjunto de DataSet ou o projeto do TableAdapter. Em seguida, em **Gerenciador de soluções**, selecione **Mostrar todos os arquivos**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Walkthrough: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

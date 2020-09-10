@@ -1,5 +1,5 @@
 ---
-title: Usando tabelas de pesquisa na vinculação de dados – controles de Windows Forms | Microsoft Docs
+title: Usando tabelas de pesquisa na associação de dados-Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68121cc98a1bdbc1f7f1bfa69ce8ee0d1d797bb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586790"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743356"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Criar um controle de usuário do Windows Forms compatível com associação de dados de consulta
 
@@ -177,6 +177,6 @@ Isso configura a associação de dados para exibir o `CompanyName` da tabela `Cu
 
 - Navegue por alguns registros e verifique se `CompanyName` aparece no controle `LookupBox`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
