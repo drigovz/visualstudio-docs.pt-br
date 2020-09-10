@@ -21,11 +21,11 @@
 - name: Tutoriais
   items:
     - name: Aprender a depurar C#
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Aprender a depurar C++
       href: getting-started-with-the-debugger-cpp.md
     - name: Aprender a depurar Visual Basic
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Executando o código Python no depurador...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Depurar um aplicativo do Azure em tempo real
@@ -313,7 +313,7 @@
             - name: Verifique se o DNS está configurado corretamente no computador de destino
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Não é possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: Não é possível iniciar a comunicação DCOM
@@ -445,7 +445,7 @@
             - name: Depurar um pacote do aplicativo instalado
               href: debug-installed-app-package.md
             - name: Inspecione as propriedades XAML durante a depuração
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: Gravar e depurar executando código XAML
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Depurar XAML no Blend
@@ -505,7 +505,7 @@
                 - name: Depurar o WPF
                   href: debugging-wpf.md
                 - name: Inspecione as propriedades XAML durante a depuração
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: Gravar e depurar executando código XAML
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: Usar o visualizador de árvore do WPF
