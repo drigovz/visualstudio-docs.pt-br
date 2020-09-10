@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b0e22f56ab68be521eda7a765a2be7e23bbf92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed7945dac94527df51dcdd601113f8874cd36142
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093956"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641635"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 O *Authenticode* é uma tecnologia da Microsoft que usa a criptografia padrão da indústria para assinar o código do aplicativo com certificados digitais que verificam a autenticidade do editor do aplicativo. Ao usar o Authenticode para a implantação de aplicativos, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o reduz o risco de um cavalo de Troia. Um cavalo de Troia é um vírus ou outro programa prejudicial que uma terceira parte mal-intencionada representa indefinidamente como um programa legítimo proveniente de uma fonte confiável e estabelecida. A assinatura de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações com um certificado digital é uma etapa opcional para verificar se os assemblies e arquivos não foram violados.
@@ -48,7 +48,7 @@ O *Authenticode* é uma tecnologia da Microsoft que usa a criptografia padrão d
 
  Por outro lado, se você receber um certificado de uma autoridade de certificação, como um fornecedor de certificado ou um departamento dentro de sua empresa, o certificado oferecerá mais segurança para seus usuários. Ele não apenas identifica o editor do software assinado, mas verifica essa identidade verificando a autoridade de certificação que a assinou. Se a autoridade de certificação não for a autoridade raiz, o Authenticode também "encadeará" à autoridade raiz para verificar se a autoridade de certificação está autorizada a emitir certificados. Para maior segurança, você deve usar um certificado emitido por uma autoridade de certificação sempre que possível.
 
- Para obter mais informações sobre como gerar certificados automáticos, consulte [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) ou [MakeCert](/windows/desktop/SecCrypto/makecert).
+ Para obter mais informações sobre como gerar certificados automáticos, consulte [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) ou [MakeCert](/windows/desktop/SecCrypto/makecert).
 
 ### <a name="timestamps"></a>Carimbos de data/hora
  Os certificados usados para assinar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos expiram após um determinado período de tempo, normalmente de doze meses. Para remover a necessidade de assinar constantemente os aplicativos com novos certificados, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte a carimbo de data/hora. Quando um aplicativo é assinado com um carimbo de data/hora, seu certificado continuará a ser aceito mesmo após a expiração, desde que o carimbo de data/hora seja válido. Isso permite que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos com certificados expirados, mas carimbos de data/hora válidos, sejam baixados e executados. Ele também permite que aplicativos instalados com certificados expirados continuem a baixar e instalar atualizações.

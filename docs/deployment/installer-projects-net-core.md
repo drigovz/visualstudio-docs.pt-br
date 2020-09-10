@@ -11,12 +11,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88714414"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641578"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Extensão de Projetos do Instalador do Visual Studio e .NET Core 3.1
 
@@ -31,7 +31,7 @@ O .NET Core tem dois modelos diferentes para publicação.
 
 - Os aplicativos independentes incluem o tempo de execução.
 
-Para saber mais sobre essas estratégias de implantação, consulte [visão geral da publicação de aplicativos do .NET Core](https://docs.microsoft.com/dotnet/core/deploying/).
+Para saber mais sobre essas estratégias de implantação, consulte [visão geral da publicação de aplicativos do .NET Core](/dotnet/core/deploying/).
 
 ### <a name="workflow-changes-for-net-core-31"></a>Alterações de fluxo de trabalho para o .NET Core 3,1
 

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561319"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641442"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
@@ -31,7 +31,7 @@ R: Não. Se você quiser comprar somente assinaturas de nuvem do Visual Studio p
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clientes do EA (Contrato Enterprise)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar um Contrato Enterprise para comprar assinaturas de nuvem do Visual Studio?
-R: Sim, você pode. Você precisará ser proprietário ou colaborador de uma assinatura do Azure criada para o EA. Faça suas compras de assinaturas de nuvem do Visual Studio diretamente no Visual Studio Marketplace. Não é possível comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra.
+R: Sim, você pode. Você precisará ser um colaborador ou uma função mais alta para uma assinatura do Azure que foi criada para seu EA. Faça suas compras de assinaturas de nuvem do Visual Studio diretamente no Visual Studio Marketplace. Não é possível comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: Como posso saber se tenho os privilégios necessários para comprar serviços no Visual Studio Marketplace por meio Contrato Enterprise da minha organização?
 R: a abordagem mais fácil para determinar se você tem os privilégios certos é selecionar o botão **comprar** para um serviço oferecido na Visual Studio Marketplace.

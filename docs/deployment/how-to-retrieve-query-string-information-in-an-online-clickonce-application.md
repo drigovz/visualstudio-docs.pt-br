@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e177f1d41655ffa6fb6b6bbfa52cfc29d15fd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382179"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641592"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online
 A *cadeia de caracteres de consulta* é a parte de uma URL que começa com um ponto de interrogação (?) que contém informações arbitrárias no formato *nome = valor*. Suponha que você tenha um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo chamado `WindowsApp1` que você hospede em `servername` e queira passar um valor para a variável `username` quando o aplicativo for iniciado. Sua URL pode ser semelhante ao seguinte:
@@ -76,7 +76,7 @@ A *cadeia de caracteres de consulta* é a parte de uma URL que começa com um po
  Se seu aplicativo estiver somente online, ele sempre será ativado por meio de uma URL. No entanto, mesmo nesse caso, seu aplicativo deve ser escrito para funcionar corretamente se os parâmetros da cadeia de caracteres de consulta estiverem ausentes ou corrompidos.
 
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
- Permita passar parâmetros de URL para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo somente se você planeja limpar a entrada de qualquer caractere mal-intencionado antes de usá-lo. Uma cadeia de caracteres inserida com aspas, barras ou pontos-e-vírgulas, por exemplo, pode executar operações de dados arbitrárias se usadas não filtradas em uma consulta SQL em um banco de dados. Para obter mais informações sobre a segurança de cadeia de caracteres de consulta, consulte [visão geral de explorações de script](https://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
+ Permita passar parâmetros de URL para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo somente se você planeja limpar a entrada de qualquer caractere mal-intencionado antes de usá-lo. Uma cadeia de caracteres inserida com aspas, barras ou pontos-e-vírgulas, por exemplo, pode executar operações de dados arbitrárias se usadas não filtradas em uma consulta SQL em um banco de dados. Para obter mais informações sobre a segurança de cadeia de caracteres de consulta, consulte [visão geral de explorações de script](/previous-versions/w1sw53ds(v=vs.140)).
 
 ## <a name="see-also"></a>Confira também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

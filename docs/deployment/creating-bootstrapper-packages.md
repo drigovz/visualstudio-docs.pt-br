@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314856"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641661"
 ---
 # <a name="create-bootstrapper-packages"></a>Criar pacotes de bootstrapper
 O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis como arquivos do Windows Installer (*.msi*) e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível, ou pré-requisito, que aparece na caixa de diálogo **pré-requisitos** do ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado.
@@ -122,4 +122,4 @@ A lista redistribuível é um arquivo XML que você deve nomear usando o seguint
 - [Como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
-- [Use o Bootstrapper do Visual Studio 2005 para iniciar sua instalação](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Use o Bootstrapper do Visual Studio 2005 para iniciar sua instalação](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

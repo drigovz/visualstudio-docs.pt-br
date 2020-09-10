@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382192"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641601"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e implantação novamente
 Depois de fazer alterações nas propriedades de implantação no manifesto do aplicativo para Windows Forms aplicativos, XBAP (aplicativos Windows Presentation Foundation) ou soluções do Office, você deve assinar novamente os manifestos de aplicativo e de implantação com um certificado. Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.
@@ -31,7 +31,7 @@ Depois de fazer alterações nas propriedades de implantação no manifesto do a
  Outro cenário em que você pode assinar novamente os manifestos é quando seus clientes desejam assinar o aplicativo e os manifestos de implantação com seu próprio certificado.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Assinar novamente os manifestos de aplicativo e de implantação
- Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo (*. manifest*). Para obter mais informações, consulte [como alterar propriedades de implantação](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ Este procedimento pressupõe que você já fez alterações no arquivo de manifesto do aplicativo (*. manifest*). Para obter mais informações, consulte [como alterar propriedades de implantação](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para assinar novamente o aplicativo e os manifestos de implantação com o Mage.exe
 

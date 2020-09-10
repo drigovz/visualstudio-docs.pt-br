@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800821"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641648"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
@@ -84,7 +84,7 @@ As [Máquinas Virtuais (VMs) do Azure](https://azure.microsoft.com/documentation
 
 O dimensionamento de um aplicativo hospedado em máquinas virtuais envolve a criação VMs adicionais de acordo com a demanda e, em seguida, a implantação do software necessário. Esse nível adicional de controle permite você escalonar de maneira diferente em diferentes regiões globais. Por exemplo, se seu aplicativo estiver atendendo a funcionários em uma diversos escritórios regionais, será possível escalonar suas VMs de acordo com o número de funcionários nessas regiões, potencialmente reduzindo os custos.
 
-Para obter informações adicionais, consulte a [comparação detalhada](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) entre o Serviço de Aplicativo do Azure, as Máquinas Virtuais do Azure e outros serviços do Azure que podem ser usados como destinos de implantação, usando a opção Personalizar no Visual Studio.
+Para obter informações adicionais, consulte a [comparação detalhada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre o Serviço de Aplicativo do Azure, as Máquinas Virtuais do Azure e outros serviços do Azure que podem ser usados como destinos de implantação, usando a opção Personalizar no Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quando escolher máquinas virtuais do Azure
 
