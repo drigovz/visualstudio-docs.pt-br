@@ -1,5 +1,5 @@
 ---
-title: Operadores lógicos/avançados em expressões de pesquisa (Help Viewer)
+title: Operadores lógicos em expressões de pesquisa (Visualizador da ajuda)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824906"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741653"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos e avançados em expressões de pesquisa
 
@@ -66,7 +66,7 @@ Você pode usar o operador `code:` para localizar conteúdo sobre qualquer uma d
 > [!NOTE]
 > O operador `code:` localiza apenas o conteúdo que está marcado com um rótulo de linguagem de programação e não um conteúdo marcado genericamente como código.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

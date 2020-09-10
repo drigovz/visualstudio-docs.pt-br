@@ -1,5 +1,6 @@
 ---
-title: Elemento RequiredFrameworkVersion (modelos do Visual Studio) | Microsoft Docs
+title: Elemento RequiredFrameworkVersion (modelos do Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 060ebc0633de67d93257e24c2dff24d2aa0970da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701505"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741690"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 
@@ -29,7 +30,7 @@ Especifica a versão mínima do .NET Framework exigido pelo modelo. Ele faz com 
  \<VSTemplate> \<TemplateData>
  \<RequiredFrameworkVersion>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <RequiredFrameworkVersion> .... </RequiredFrameworkVersion>
@@ -39,10 +40,10 @@ Especifica a versão mínima do .NET Framework exigido pelo modelo. Ele faz com 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -83,7 +84,7 @@ O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/
 
 Neste exemplo, a versão mínima do .NET Framework exigido pelo modelo, representada por `RequiredFrameworkVersion` , é 3,0. Um projeto criado com este modelo pode se destinar a versões .NET Framework a partir de 3,0.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
