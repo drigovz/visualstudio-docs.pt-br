@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144708"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011873"
 ---
 # <a name="work-with-sql-server-and-r"></a>Trabalhar com o SQL Server e R
 
@@ -50,7 +50,7 @@ Quando uma conexão é estabelecida, você pode executar consultas e ver os resu
 ![Resultados da consulta da janela SQL](media/sql-query-results.png)
 
 O editor Transact-SQL dá suporte a uma variedade de outros recursos, como exibir o plano de execução da consulta e um depurador de consulta.
-Para saber mais, confira [Usar o Editor Transact-SQL para editar e executar scripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Para saber mais, confira [Usar o Editor Transact-SQL para editar e executar scripts](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103)).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Trabalhar com procedimentos armazenados do SQL Server
 

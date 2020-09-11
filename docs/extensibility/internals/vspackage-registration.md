@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05dec8fbef40143f31f2c0ac484824717ea2e32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703929"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012120"
 ---
 # <a name="vspackage-registration"></a>Registro do VSPackage
 VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que eles estão instalados e devem ser carregados. Esse processo é realizado com a gravação de informações no registro. Esse é um trabalho típico de um instalador.
@@ -55,6 +55,6 @@ VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md
 
 - O código de Autoregistro pode ter o acesso negado aos recursos de rede, como bibliotecas de tipos, se um componente for especificado como execução da fonte e estiver listado na tabela SelfReg. Isso pode fazer com que a instalação do componente falhe durante uma instalação administrativa.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
-- [Registro de pacote gerenciado](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Registro de pacote gerenciado](/previous-versions/bb166783(v=vs.100))

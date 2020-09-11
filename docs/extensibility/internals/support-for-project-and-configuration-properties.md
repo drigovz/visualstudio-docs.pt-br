@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704897"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012016"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 A janela **Propriedades** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) pode exibir o projeto e as propriedades de configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário possa definir propriedades para seu aplicativo.
 
- Ao selecionar um nó de projeto no **Gerenciador de soluções** e, em seguida, clicar em **Propriedades** no menu **projeto** , você pode abrir uma caixa de diálogo que inclui propriedades de projeto e configuração. No [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e no [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , e os tipos de projeto derivados desses idiomas, essa caixa de diálogo aparece como uma página com guias na [caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não em Build: passo a passos: expondo o projeto e as propriedades de configuração (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).
+ Ao selecionar um nó de projeto no **Gerenciador de soluções** e, em seguida, clicar em **Propriedades** no menu **projeto** , você pode abrir uma caixa de diálogo que inclui propriedades de projeto e configuração. No [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e no [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , e os tipos de projeto derivados desses idiomas, essa caixa de diálogo aparece como uma página com guias na [caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não em Build: passo a passos: expondo o projeto e as propriedades de configuração (C#)](/previous-versions/bb166517(v=vs.100)).
 
  A estrutura de pacote gerenciada para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar o código-fonte e as instruções de compilação em [MPF for projects-Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
@@ -90,7 +90,7 @@ A janela **Propriedades** no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 
  A `MyConfigProp` propriedade de configuração é exibida na página de propriedades de configuração como **minha propriedade** de configuração na categoria, **minha categoria**. Se a opção for selecionada, a descrição, **minha descrição**, aparecerá no painel Descrição.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Adicionar e remover páginas de propriedade](../../extensibility/adding-and-removing-property-pages.md)
 - [Projetos](../../extensibility/internals/projects.md)
 - [Arquivos de descrição do diretório de modelo (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

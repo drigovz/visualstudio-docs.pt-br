@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711266"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012237"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introdução aos analisadores do Roslyn
 
@@ -25,13 +25,13 @@ Com o Live, analisadores de código baseados em projeto no Visual Studio, os aut
 
 [Tutorial: escrever seu primeiro analisador e correção de código](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[Adicionar o Code fixes Walkthrough: fornecer correções de usuários para problemas do Analyzer](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Adicionar o Code fixes Walkthrough: fornecer correções de usuários para problemas do Analyzer](/archive/msdn-magazine/2015/february/csharp-adding-a-code-fix-to-your-roslyn-analyzer)
 
 O [Real World Roslyn Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , que você também pode assistir como uma [palestra](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Vários exemplos no GitHub, agrupados em três tipos de analisadores](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de versão do pacote da plataforma de compilador .NET](roslyn-version-support.md)
 - [Mais documentos no site de OSS do GitHub](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

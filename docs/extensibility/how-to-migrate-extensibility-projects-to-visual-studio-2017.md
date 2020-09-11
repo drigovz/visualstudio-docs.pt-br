@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3cd21242bd4b5a3bdb0da9691d6efb32288d3444
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742881"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012276"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Como migrar projetos de extensibilidade para o Visual Studio 2017
 
@@ -180,7 +180,7 @@ Depurador | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.J
 
 ## <a name="find-component-ids"></a>Localizar IDs de componente
 
-A lista de componentes classificados pelo produto Visual Studio é a [carga de trabalho do visual studio 2017 e as IDs de componentes](/visualstudio/install/workload-and-component-ids?view=vs-2019). Use essas IDs de componente para suas IDs de pré-requisito em seu manifesto.
+A lista de componentes classificados pelo produto Visual Studio é a [carga de trabalho do visual studio 2017 e as IDs de componentes](../install/workload-and-component-ids.md?view=vs-2019). Use essas IDs de componente para suas IDs de pré-requisito em seu manifesto.
 
 Se você não tiver certeza de qual componente contém um binário específico, baixe o [componente > planilha de mapeamento binário](https://aka.ms/vs2017componentid-binaries).
 

@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f65973f0f3edc1dd6264c32d165503dca78681
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706531"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012406"
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 As tabelas a seguir expandem o modelo de projeto. As tabelas apresentam breves descrições das interfaces e dos serviços identificados no modelo, bem como as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas detalham outras interfaces que são opcionais na criação e manutenção do projeto, dependendo dos requisitos de seu tipo de projeto específico.
@@ -99,9 +99,9 @@ As tabelas a seguir expandem o modelo de projeto. As tabelas apresentam breves d
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Usado para implementar o modelo de automação. No modelo de projeto, você retornará um objeto de propriedades que permite criar uma instância desse objeto.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Usado para implementar eventos da área de transferência no objeto Project na hierarquia. `SVsUIHierWinClipboardHelper` permite que você manipule corretamente as operações de recortar, copiar e colar.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Lista de verificação: Criando tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Não está no Build: usando classes de projeto HierUtil7 para implementar um tipo de projeto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Não está no Build: usando classes de projeto HierUtil7 para implementar um tipo de projeto (C++)](/previous-versions/bb166212(v=vs.100))
 - [Suporte a ferramentas de navegação de símbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)

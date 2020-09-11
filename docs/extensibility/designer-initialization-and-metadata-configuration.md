@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712221"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011703"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configuração de metadados e inicialização do designer
 
@@ -97,9 +97,9 @@ Se o sinalizador global tiver sido definido como `false` , a alteração de meta
 > [!NOTE]
 > A superfície de design só dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, estávamos tentando modificar uma propriedade, como a `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca apareceria porque o designer nunca cria uma instância do `Color` . Definir o sinalizador global como `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Estender o suporte ao tempo de design](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Estender o suporte ao tempo de design](/previous-versions/37899azc(v=vs.140))

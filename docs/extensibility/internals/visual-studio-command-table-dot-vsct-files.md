@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704033"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012341"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Arquivos .Vsct (Visual Studio Command Table)
 Um arquivo de configuração de tabela de comando é um arquivo de texto que descreve o conjunto de comandos que um VSPackage contém. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] compilador de tabela de comando (vsct) compila arquivos de configuração baseados em XML (arquivos. vsct) em arquivos binários de saída de tabela de comando (. CTO). Os arquivos. CTO resultantes são os mesmos que os que são criados usando o compilador de tabela de comando (CTC) para compilar arquivos de configuração. CTC. No entanto, os arquivos. vsct baseados em XML têm algumas vantagens, como um editor de XML e o XML IntelliSense.
@@ -37,7 +37,7 @@ Um arquivo de configuração de tabela de comando é um arquivo de texto que des
 
  Fornece detalhes sobre cada seção do arquivo de configuração XML da tabela de comandos.
 
- [Configuração de tabela de comando (. CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) apresenta uma visão geral do formato de arquivo. CTC preterido.
+ [Configuração de tabela de comando (. CTC)](/previous-versions/bb165153(v=vs.100)) apresenta uma visão geral do formato de arquivo. CTC preterido.
 
  [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 

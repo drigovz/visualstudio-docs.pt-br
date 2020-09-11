@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903737"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012263"
 ---
 # <a name="create-custom-editors-and-designers"></a>Criar editores e designers personalizados
 
@@ -59,7 +59,7 @@ Para obter informações sobre o editor de núcleo do Visual Studio, consulte [e
 
 - Seu editor precisa hospedar controles ActiveX?
 
-   Se o editor hospedar controles ActiveX, implemente um editor de ativação in-loco, conforme descrito na [ativação](/visualstudio/misc/in-place-activation?view=vs-2015)in-loco. Se não hospedar controles ActiveX, use um editor de incorporação simplificado ou personalize o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor padrão.
+   Se o editor hospedar controles ActiveX, implemente um editor de ativação in-loco, conforme descrito na [ativação](../vs-2015/misc/in-place-activation.md?view=vs-2015)in-loco. Se não hospedar controles ActiveX, use um editor de incorporação simplificado ou personalize o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor padrão.
 
 - Seu editor dará suporte a várias exibições? Você deve dar suporte a várias exibições se quiser que as exibições do seu editor fiquem visíveis ao mesmo tempo que o editor padrão.
 
@@ -93,7 +93,7 @@ Explica como implementar dados de documentos e exibições de documentos em edit
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-[Interfaces herdadas no editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[Interfaces herdadas no editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 Explica como acessar o editor principal por meio da API herdada.
 
 [Desenvolver um serviço de linguagem herdado](../extensibility/internals/developing-a-legacy-language-service.md)\

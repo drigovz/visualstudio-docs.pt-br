@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739877"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011925"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Escolha entre VSPackages compartilhadas e com controle de versão
 Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versões.
@@ -35,7 +35,7 @@ Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPa
 
   - Programe seu VSPackage para adaptar-se à versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] em que está em execução. Em seguida, se as consultas para serviços mais recentes falharem, seu VSPackage poderá oferecer outros serviços com suporte em versões mais antigas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Registre seu VSPackage adequadamente. Para obter mais informações, consulte [registro de VSPackage](../extensibility/internals/vspackage-registration.md) e [registro VSPackage gerenciado](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Registre seu VSPackage adequadamente. Para obter mais informações, consulte [registro de VSPackage](../extensibility/internals/vspackage-registration.md) e [registro VSPackage gerenciado](/previous-versions/bb166783(v=vs.100)).
 
 - Registre as extensões de arquivo adequadamente. Para obter mais informações, consulte [registrando extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
@@ -61,6 +61,6 @@ Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPa
 
   Além de planejar a compatibilidade binária para seus binários do VSPackage, você também deve considerar os formatos de arquivo da solução e do projeto. Se o seu VSPackage cria um novo tipo de projeto, você deve decidir se ele pode ser executado em apenas uma versão ou em várias versões do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Para obter mais informações, consulte [upgrading Custom Projects](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Instalando o VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [Gerenciamento de componentes](../extensibility/internals/component-management.md)

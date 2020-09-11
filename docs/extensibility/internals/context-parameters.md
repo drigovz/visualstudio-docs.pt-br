@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6673ad8f26c94165635b5f1bc652b91dcbbfd24f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709303"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012445"
 ---
 # <a name="context-parameters"></a>Parâmetros de contexto
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado), você pode adicionar assistentes às caixas de diálogo **novo projeto**, **Adicionar novo item**ou **Adicionar subprojeto** . Os assistentes adicionados estão disponíveis no menu **arquivo** ou clicando com o botão direito do mouse em um projeto no **Gerenciador de soluções**. O IDE passa parâmetros de contexto para a implementação do assistente. Os parâmetros de contexto definem o estado do projeto quando o IDE chama o assistente.
@@ -58,10 +58,10 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de
 | `InstallationDirectory` | Caminho do diretório da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] instalação. |
 | `Silent` | Booliano que indica se o assistente deve ser executado silenciosamente como se o **término** fosse clicado ( `TRUE` ). |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parâmetros personalizados](../../extensibility/internals/custom-parameters.md)
 - [Assistentes](../../extensibility/internals/wizards.md)
 - [Arquivo do assistente (. vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-- [Parâmetros de contexto para iniciar assistentes](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+- [Parâmetros de contexto para iniciar assistentes](/previous-versions/tz690efs(v=vs.140))

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708431"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012524"
 ---
 # <a name="expose-types-to-visual-designers"></a>Expor tipos a designers visuais
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ter acesso às definições de classe e tipo em tempo de design para exibir um designer visual. As classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto de dependências completo do projeto atual (referências mais suas dependências). Também pode ser necessário que os designers visuais acessem classes e tipos definidos em arquivos gerados por ferramentas personalizadas.
@@ -43,7 +43,7 @@ ms.locfileid: "80708431"
 
      Quando um PE temporário é compilado, o único arquivo de origem fornecido ao compilador é a saída da ferramenta personalizada. Portanto, uma ferramenta personalizada que usa um PE temporário deve gerar arquivos de saída que podem ser compilados independentemente de outros arquivos no projeto.
 
-## <a name="see-also"></a>Confira também
-- [Introdução ao objeto BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+## <a name="see-also"></a>Veja também
+- [Introdução ao objeto BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementar geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registrar geradores de arquivo único](../../extensibility/internals/registering-single-file-generators.md)

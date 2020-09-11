@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705855"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012042"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrando manipuladores de comando de assembly de interoperabilidade
 Um VSPackage deve se registrar no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que o IDE (ambiente de desenvolvimento integrado) roteia seus comandos corretamente.
@@ -25,7 +25,7 @@ Um VSPackage deve se registrar no [!INCLUDE[vsprvs](../../code-quality/includes/
 
  A MPF (estrutura de pacote gerenciada) fornece essa funcionalidade por meio da <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.
 
-- Os recursos de [referência de formato de tabela de comando](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) estão localizados em DLLs de interface do usuário satélite não gerenciadas.
+- Os recursos de [referência de formato de tabela de comando](/previous-versions/bb164647(v=vs.100)) estão localizados em DLLs de interface do usuário satélite não gerenciadas.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registro de manipulador de comando de um VSPackage
  Um VSPackage atuando como um manipulador para comandos baseados na interface do usuário requer uma entrada de registro nomeada após o VSPackage `GUID` . Essa entrada de registro especifica o local do arquivo de recurso de interface do usuário do VSPackage e o recurso de menu dentro desse arquivo. A própria entrada do registro está localizada em HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, em que *\<Version>* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , por exemplo, 9,0.
@@ -66,6 +66,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos e menus que usam assemblies de interoperabilidade](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

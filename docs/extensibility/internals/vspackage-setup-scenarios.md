@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703982"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012107"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 
@@ -74,9 +74,9 @@ Nesse caso, o VSPackage é um VSPackage gerenciado instalado no GAC (cache de as
 
 ![Instalador de atualização de pacote vs lado a lado](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo a dll inferno com o .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Para obter mais informações sobre a implantação de assemblies lado a lado, consulte [simplificando a implantação e resolvendo a dll inferno com o .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Fornecer suporte à várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

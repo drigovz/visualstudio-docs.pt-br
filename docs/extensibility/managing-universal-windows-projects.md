@@ -8,16 +8,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744944"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012302"
 ---
 # <a name="manage-universal-windows-projects"></a>Gerenciar projetos universais do Windows
 
-Aplicativos universais do Windows são aplicativos direcionados Windows 8.1 e Windows Phone 8,1, permitindo que os desenvolvedores usem código e outros ativos em ambas as plataformas. O código compartilhado e os recursos são mantidos em um projeto compartilhado, enquanto o código e os recursos específicos da plataforma são mantidos em projetos separados, um para o Windows e outro para Windows Phone. Para obter mais informações sobre aplicativos universais do Windows, consulte [aplicativos universais do Windows](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). As extensões do Visual Studio que gerenciam projetos devem estar cientes de que os projetos de aplicativos universais do Windows têm uma estrutura que difere dos aplicativos de plataforma única. Este tutorial mostra como navegar no projeto compartilhado e gerenciar os itens compartilhados.
+Aplicativos universais do Windows são aplicativos direcionados Windows 8.1 e Windows Phone 8,1, permitindo que os desenvolvedores usem código e outros ativos em ambas as plataformas. O código compartilhado e os recursos são mantidos em um projeto compartilhado, enquanto o código e os recursos específicos da plataforma são mantidos em projetos separados, um para o Windows e outro para Windows Phone. Para obter mais informações sobre aplicativos universais do Windows, consulte [aplicativos universais do Windows](/windows/uwp/get-started/create-uwp-apps). As extensões do Visual Studio que gerenciam projetos devem estar cientes de que os projetos de aplicativos universais do Windows têm uma estrutura que difere dos aplicativos de plataforma única. Este tutorial mostra como navegar no projeto compartilhado e gerenciar os itens compartilhados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

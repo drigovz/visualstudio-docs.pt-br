@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903389"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011990"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Adicionar controle de usuário à página inicial
 
@@ -189,7 +189,7 @@ Para disponibilizar esse controle para o projeto de página inicial, no arquivo 
 
     Sua página inicial personalizada deve ser exibida. Se você quiser alterar todos os arquivos, deverá fechar a instância experimental, fazer as alterações, copiar e colar os arquivos alterados e, em seguida, abrir novamente a instância experimental para exibir as alterações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Controles de contêiner do WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Controles de contêiner do WPF](/previous-versions/bb675291(v=vs.110))
 - [Walkthrough: Adicionar XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

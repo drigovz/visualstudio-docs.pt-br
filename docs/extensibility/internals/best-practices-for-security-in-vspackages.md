@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709904"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012133"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Práticas recomendadas de segurança no VSPackages
 Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] em seu computador, você deve estar executando o em um contexto com credenciais administrativas. A unidade básica de segurança e implantação de um [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aplicativo é a [VSPackage](../../extensibility/internals/vspackages.md). Um VSPackage deve ser registrado usando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , que também requer credenciais administrativas.
@@ -30,6 +30,6 @@ Para instalar o [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 
 
  Para obter mais informações, consulte [diretrizes de codificação segura para o .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
-## <a name="see-also"></a>Confira também
-- [Segurança do suplemento](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [Segurança do DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+## <a name="see-also"></a>Veja também
+- [Segurança do suplemento](/previous-versions/1326zbk3(v=vs.140))
+- [Segurança do DDEX](/previous-versions/bb163703(v=vs.140))

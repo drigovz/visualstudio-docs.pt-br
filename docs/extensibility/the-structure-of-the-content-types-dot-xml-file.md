@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699018"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012511"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>A estrutura do arquivo [Content_types].xml
 Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual Studio usa o arquivo [Content_Types]. xml para instalar o pacote, mas ele não instala o próprio arquivo.
 
 > [!NOTE]
-> Embora este tópico se aplique somente a arquivos [Content_Type]. XML que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do padrão *OPC (Open Packaging Conventions)* . Para obter mais informações, consulte [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx) no site do MSDN.
+> Embora este tópico se aplique somente a arquivos [Content_Type]. XML que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do padrão *OPC (Open Packaging Conventions)* . Para obter mais informações, consulte [OPC: um novo padrão para empacotar seus dados](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) no site do MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
  As seções a seguir descrevem o elemento raiz e seus atributos e elementos filho.
@@ -99,7 +99,7 @@ Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual St
 </Types>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110))
+- [OPC: um novo padrão para empacotar seus dados](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

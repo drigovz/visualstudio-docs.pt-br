@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739975"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011782"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -97,7 +97,7 @@ A maioria dos assemblies do Visual Studio Core não são mais instalados no GAC.
 
 ### <a name="global-com-registration"></a>Registro COM global
 
-* Anteriormente, o Visual Studio instalou várias chaves do registro no HKEY_CLASSES_ROOT e HKEY_LOCAL_MACHINE Hives para dar suporte ao registro COM nativo. Para eliminar esse impacto, o Visual Studio agora usa [a ativação sem registro para componentes com](https://msdn.microsoft.com/library/ms973913.aspx).
+* Anteriormente, o Visual Studio instalou várias chaves do registro no HKEY_CLASSES_ROOT e HKEY_LOCAL_MACHINE Hives para dar suporte ao registro COM nativo. Para eliminar esse impacto, o Visual Studio agora usa [a ativação sem registro para componentes com](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
 * Como resultado, a maioria dos arquivos TLB/OLB/DLL em% ProgramFiles (x86)% \ Shared\MSEnv de Programas\microsoft comum não são mais instalados por padrão pelo Visual Studio. Esses arquivos agora estão instalados em [INSTALLDIR] com manifestos COM sem registro correspondentes usados pelo processo de host do Visual Studio.
 * Como resultado, o código externo que depende do registro de COM global para interfaces COM do Visual Studio não encontrará mais esses registros. O código em execução dentro do processo do Visual Studio não verá uma diferença.
 

@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713219"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011834"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrar um mecanismo de depuração personalizado
 O mecanismo de depuração deve se registrar como uma fábrica de classes, seguindo as convenções COM, bem como registrar com o Visual Studio por meio da subchave do registro do Visual Studio.
 
 > [!NOTE]
-> Você pode encontrar um exemplo de como registrar um mecanismo de depuração no exemplo do textintérprete, que é criado como parte do [tutorial: Criando um mecanismo de depuração usando com ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Você pode encontrar um exemplo de como registrar um mecanismo de depuração no exemplo do textintérprete, que é criado como parte do [tutorial: Criando um mecanismo de depuração usando com ATL](/previous-versions/bb147024(v=vs.90)).
 
 ## <a name="dll-server-process"></a>Processo do servidor DLL
  Um mecanismo de depuração normalmente é configurado em sua própria DLL como um servidor COM. Como tal, o mecanismo de depuração deve registrar o CLSID de sua fábrica de classes com com, antes que o Visual Studio possa acessá-lo. Em seguida, o mecanismo de depuração deve se registrar com o Visual Studio para estabelecer quaisquer propriedades (também conhecidas como métricas) que o mecanismo de depuração suporta. A escolha das métricas gravadas na subchave do registro do Visual Studio depende dos recursos aos quais o mecanismo de depuração dá suporte.
@@ -48,7 +48,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Criando um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Tutorial: Criando um mecanismo de depuração usando o COM ATL](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [Tutorial: Criando um mecanismo de depuração usando o COM ATL](/previous-versions/bb147024(v=vs.90))

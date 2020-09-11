@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699861"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012094"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilo para Visual Studio
 
@@ -283,7 +283,7 @@ Apenas algumas cores do sistema podem ser usadas para Alto Contraste temas. Ao e
 
 ### <a name="system-color-set"></a>Conjunto de cores do sistema
 
-A tabela no [blog da equipe do WPF: referência de SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica o conjunto completo de nomes de cores do sistema e o matiz correspondente exibido em cada tema.
+A tabela no [blog da equipe do WPF: referência de SystemColors](/archive/blogs/wpf/systemcolors-reference) indica o conjunto completo de nomes de cores do sistema e o matiz correspondente exibido em cada tema.
 
 Ao aplicar esse conjunto limitado de cores à sua interface do usuário, *espera-se que você perca detalhes sutis que estavam presentes nos temas "normais"*. Aqui está um exemplo de interface do usuário com cores de cinza sutis que são usadas para distinguir áreas dentro de uma janela de ferramentas. Quando emparelhado com a mesma janela exibida no modo de Alto Contraste, você pode ver que todos os planos de fundo são o mesmo matiz e as bordas dessas áreas são indicadas por borda sozinha:
 
@@ -340,7 +340,7 @@ Muitos elementos comuns da interface do usuário já têm Alto Contraste cores d
 
 Um VSPackage pode controlar as fontes e cores por meio de categorias personalizadas e exibir itens na página de propriedades fontes e cores. Ao usar esse mecanismo, o VSPackages deve implementar a interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e suas interfaces associadas.
 
-Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
+Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015).
 
 Para implementar categorias personalizadas ou itens de exibição, um VSPackage deve:
 
@@ -423,7 +423,7 @@ Para fazer isso, um VSPackage deve:
 
   **OR**
 
-- **sondar o IDE em busca de alterações**. Isso pode ser feito por meio da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada pelo sistema. Embora principalmente o suporte à persistência, o método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) pode obter informações de fonte e cor para itens de exibição. Para obter mais informações sobre as configurações de fonte e cor, consulte o artigo do MSDN [acessando configurações de fonte e cor armazenadas](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
+- **sondar o IDE em busca de alterações**. Isso pode ser feito por meio da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada pelo sistema. Embora principalmente o suporte à persistência, o método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) pode obter informações de fonte e cor para itens de exibição. Para obter mais informações sobre as configurações de fonte e cor, consulte o artigo do MSDN [acessando configurações de fonte e cor armazenadas](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015).
 
 > [!NOTE]
 > Para garantir que os resultados de sondagem estejam corretos, use a interface [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) para determinar se uma liberação e atualização de cache são necessárias antes de chamar os métodos de recuperação da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

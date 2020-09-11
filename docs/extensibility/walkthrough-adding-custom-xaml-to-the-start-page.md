@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905963"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012068"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Walkthrough: Adicionar XAML personalizado à página inicial
 
@@ -87,7 +87,7 @@ Para aplicar a página inicial personalizada, em **ferramentas**  >  **Opções*
 
 A página inicial do Visual Studio agora contém uma guia que exibe uma guia de navegador da Web e uma guia MyButton. Você pode criar páginas iniciais personalizadas que têm outras funcionalidades usando o modelo *code-behind* para adicionar um. dll personalizado, conforme mostrado em [adicionando controle de usuário à página inicial](../extensibility/adding-user-control-to-the-start-page.md). Você pode compartilhar páginas iniciais personalizadas com outros usuários publicando o arquivo. vsix resultante no site da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou em outro compartilhamento de rede ou site da Web. Para obter mais informações, consulte [implantando páginas iniciais personalizadas](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)
-- [Controles de contêiner do WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Controles de contêiner do WPF](/previous-versions/bb675291(v=vs.110))

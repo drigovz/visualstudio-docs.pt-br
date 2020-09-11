@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706392"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011847"
 ---
 # <a name="project-property-user-interface"></a>Interface do usuário de propriedades do projeto
 
@@ -55,9 +55,9 @@ Para determinar os CATIDs para o escopo do projeto, o subtipo do projeto recuper
 
 Como o subtipo de projeto agrega o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto, ele pode substituir a definição dessas propriedades para controlar quais caixas de diálogo de **páginas de propriedades** são exibidas. O subtipo do projeto pode recuperar essas propriedades do projeto base interno e, em seguida, adicionar ou remover CLSIDs conforme necessário.
 
-Novas páginas de propriedades adicionadas por um subtipo de projeto são enviadas por um objeto de navegação de configuração de projeto da implementação do projeto base. Este objeto de procura de configuração de projeto dá suporte a extensores de automação. Para obter mais informações sobre o AutomationExtenders, consulte [implementando e usando extensores de automação](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). As páginas de propriedades implementadas pela chamada de subtipo de projeto <xref:EnvDTE.Project.Extender%2A> para recuperar seu próprio projeto de pesquisa de configuração de subtipo, que estende o objeto de procura de configuração do projeto base.
+Novas páginas de propriedades adicionadas por um subtipo de projeto são enviadas por um objeto de navegação de configuração de projeto da implementação do projeto base. Este objeto de procura de configuração de projeto dá suporte a extensores de automação. Para obter mais informações sobre o AutomationExtenders, consulte [implementando e usando extensores de automação](/previous-versions/0y92k2w2(v=vs.140)). As páginas de propriedades implementadas pela chamada de subtipo de projeto <xref:EnvDTE.Project.Extender%2A> para recuperar seu próprio projeto de pesquisa de configuração de subtipo, que estende o objeto de procura de configuração do projeto base.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:EnvDTE.IFilterProperties>
 - [Caixa de diálogo páginas de propriedades](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

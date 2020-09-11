@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536325"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011951"
 ---
 # <a name="image-service-and-catalog"></a>Serviço de imagem e catálogo
 Este manual contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagens introduzidos no Visual Studio 2015.
@@ -160,7 +160,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |**Atributo**|**Definição**|
 |-|-|
 |Uri|Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) usando a autoridade Application:///<br />-Uma referência de recurso de componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo|
-|Segundo plano|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> *Escuro:* A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
+|Tela de fundo|Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> *Escuro:* A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem.|
 
 Um \<Source> elemento pode ter exatamente um dos seguintes subelementos opcionais:
 
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Atualize seu código para usar o serviço de imagem para solicitar monikers por meio do mapeamento atualizado. (Isso pode significar a atualização para **CrispImages** para código gerenciado, ou solicitar HBITMAPs ou HICONs do serviço de imagem e passá-los para código nativo.)
 
 ## <a name="testing-your-images"></a>Testando suas imagens
- Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](./internals/vssdk-utilities.md?view=vs-2015).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
@@ -819,7 +819,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
   - Estou atualizando meu provedor de lista de conclusão. Que **KnownMonikers** corresponde aos valores antigos de **StandardGlyphGroup** e **StandardGlyph** ?
 
-    |Name|Name|Name|
+    |Nome|Nome|Nome|
     |-|-|-|
     |GlyphGroupClass|GlyphItemPublic|ClassPublic|
     |GlyphGroupClass|GlyphItemInternal|ClassInternal|
@@ -1026,7 +1026,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||Recursão|
     |GlyphXmlItem||Marca|
     |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||Document|
+    |GlyphJSharpDocument||Documento|
     |GlyphForwardType||GoToNext|
     |GlyphCallersGraph||Chamar|
     |GlyphCallGraph||CallFrom|
