@@ -1,5 +1,6 @@
 ---
 title: Caixa de diálogo opções, projetos e soluções, compilar e executar
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ff1ec236c85aeaeed655c611a88cead4380258f0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742757"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037706"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Caixa de diálogo opções: \> compilação e execução de projetos e soluções
 
@@ -60,7 +61,7 @@ Determina a quantidade de informações do processo de build que é exibida na j
 
 Determina a quantidade de informações gravada no arquivo de log de compilação, localizado em * \\ \<ProjectName> \debug \\ \<ProjectName> . log*.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)
 - [Caixa de diálogo Opções, Projetos e Soluções](projects-and-solutions-options-dialog-box.md)

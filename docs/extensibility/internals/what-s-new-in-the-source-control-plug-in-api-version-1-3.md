@@ -1,5 +1,6 @@
 ---
 title: Quais &apos; s novidades na API de plug-in de controle do código-fonte 1,3
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741533"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037602"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>O que&#39;s New na API de plug-in de controle do código-fonte versão 1,3
 A API de plug-in de controle do código-fonte versão 1,3 apresenta as novas funções a seguir para fornecer controle mais avançado.
@@ -34,6 +35,6 @@ A API de plug-in de controle do código-fonte versão 1,3 apresenta as novas fun
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Executa um "Get" silencioso dos arquivos especificados (nenhuma interface do usuário é mostrada)|
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Permite o acesso a opções específicas do usuário|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [Novidades na API do plug-in de controle do código-fonte versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

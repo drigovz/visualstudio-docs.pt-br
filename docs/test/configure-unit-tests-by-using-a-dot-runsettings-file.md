@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972290"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038433"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
 
@@ -107,7 +107,7 @@ Adicione uma propriedade de compilação a um projeto por meio do arquivo de pro
 
 - Atualmente, há suporte para configurações de execução de nível de projeto em projetos C#, VB, C++ e F #.
 - Um arquivo especificado para um projeto substitui qualquer outro arquivo de configurações de execução especificado na solução.
-- [Essas propriedades do MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) podem ser usadas para especificar o caminho para o arquivo RunSettings. 
+- [Essas propriedades do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) podem ser usadas para especificar o caminho para o arquivo RunSettings. 
 
 Exemplo de especificação de um arquivo *. RunSettings* para um projeto:
     
@@ -307,7 +307,7 @@ Essas configurações são específicas para o adaptador de teste que executa os
 |Configuração|Padrão|Valores|
 |-|-|-|
 |**ForcedLegacyMode**|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como **true** para usar o adaptador de teste mais antigo.<br /><br />Por exemplo, você poderá usar essa configuração se tiver um arquivo *app.config* especificado para um teste de unidade.<br /><br />Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|
-|**IgnoreTestImpact**|false|O recurso de impacto de teste prioriza os testes que são afetados por alterações recentes, quando executado em MSTest ou de Microsoft Test Manager (preterido no Visual Studio 2017). Essa configuração desativa o recurso. Para obter mais informações, confira [Quais testes devem ser executados desde um build anterior](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|false|O recurso de impacto de teste prioriza os testes que são afetados por alterações recentes, quando executado em MSTest ou de Microsoft Test Manager (preterido no Visual Studio 2017). Essa configuração desativa o recurso. Para obter mais informações, confira [Quais testes devem ser executados desde um build anterior](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||Especifique um arquivo de configurações do teste para usar com o adaptador MSTest aqui. Você também pode especificar um arquivo de configurações do teste [no menu de configurações](#specify-a-run-settings-file-in-the-ide).<br /><br />Se você especificar esse valor, também será necessário definir o **ForcedlegacyMode** como **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Após a execução do teste ser concluída, o MSTest será fechado. Qualquer processo iniciado como parte do teste também será eliminado. Caso deseje manter o executor de teste ativo, defina o valor como **true**. Por exemplo, você pode usar essa configuração para manter o navegador em execução entre os testes de IU codificados.|
 |**DeploymentEnabled**|true|Se você definir esse valor como **false**, os itens de implantação especificados no método de teste não serão copiados para o diretório de implantação.|
@@ -463,4 +463,3 @@ O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma var
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Tarefa de teste do Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

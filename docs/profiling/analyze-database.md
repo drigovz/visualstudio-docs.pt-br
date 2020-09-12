@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290065"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037524"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analisar o desempenho do banco de dados usando a ferramenta de banco de dados
 
 Use a ferramenta de banco de dados para registrar as consultas de banco de dados que seu aplicativo faz durante uma sessão de diagnóstico. Em seguida, você pode analisar informações sobre consultas individuais para encontrar locais para melhorar o desempenho do aplicativo.
 
 > [!NOTE]
-> A ferramenta de banco de dados requer o Visual Studio 2019 versão 16,3 ou posterior e um projeto do .NET Core no Windows usando o [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou o [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> A ferramenta de banco de dados requer o Visual Studio 2019 versão 16,3 ou posterior e um projeto do .NET Core no Windows usando o [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou o [Entity Framework Core](/ef/core/).
 
 ## <a name="setup"></a>Instalação
 
@@ -50,7 +50,7 @@ Depois de encontrar uma consulta que você deseja investigar, clique com o botã
 
 ![Ir para o arquivo de origem selecionado](./media/db-gotosource.png "Ir para o arquivo de origem selecionado")
 
-Se você selecionar um intervalo de tempo em um grafo, a tabela de consulta mostrará somente as consultas que ocorreram durante esse intervalo de tempo. Esse comportamento é especialmente útil quando você também executa a [ferramenta de uso da CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
+Se você selecionar um intervalo de tempo em um grafo, a tabela de consulta mostrará somente as consultas que ocorreram durante esse intervalo de tempo. Esse comportamento é especialmente útil quando você também executa a [ferramenta de uso da CPU](./cpu-usage.md?view=vs-2019).
 
 ## <a name="see-also"></a>Confira também
 

@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86869588"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037010"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -43,7 +43,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitetura da plataforma de destino a ser usada para a execução de teste.<br />Os valores válidos são x86, x64 e ARM.|
-|**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Exemplos de valores são `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` e `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute é usado para detectar automaticamente essa opção a partir de seu assembly e o padrão `Framework40` é quando o atributo não está presente. Você deve especificar essa opção explicitamente se remover o [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) de seus assemblies do .NET Core.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no CLR 4,0 "modo de compatibilidade".<br />Exemplo: `/Framework:framework40`|
+|**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Exemplos de valores são `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` e `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute é usado para detectar automaticamente essa opção a partir de seu assembly e o padrão `Framework40` é quando o atributo não está presente. Você deve especificar essa opção explicitamente se remover o [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) de seus assemblies do .NET Core.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no CLR 4,0 "modo de compatibilidade".<br />Exemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
 |**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste. Especifique o parâmetro várias vezes para habilitar vários agentes.<br />Exemplo: para registrar os resultados em um arquivo de Resultados de Teste do Visual Studio (TRX), use<br />**/Logger: TRX**<br />**[; LogFilename = \<Defaults to unique file name> ]**|

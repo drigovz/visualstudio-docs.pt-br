@@ -1,8 +1,8 @@
 ---
-title: Criação de um aplicativo da UWP (Plataforma Universal do Windows) com Visual Studio e C#
+title: 'Criar um aplicativo UWP com o Visual Studio e o C #'
 description: Criar um aplicativo UWP no Visual Studio com XAML e C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249252"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037270"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutorial: criar seu primeiro aplicativo Plataforma Universal do Windows no Visual Studio com XAML e C&#35;
 
@@ -72,7 +72,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
 1. Aceite as configurações padrão de **Versão de destino** e de **Versão mínima** na caixa de diálogo **Novo Projeto da Plataforma Universal do Windows**.
 
-   ![Aceite as configurações padrão de Destino e de Versão mínima na caixa de diálogo Novo Projeto da Plataforma Universal do Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Aceite as configurações de versão de destino padrão e de versão mínima na caixa de diálogo novo projeto de Plataforma Universal do Windows](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ Primeiro, crie um projeto da Plataforma Universal do Windows. O tipo de projeto 
 
    Se você olhar o código no **editor XAML**, verá que o botão também foi adicionado lá:
 
-   ![Clique no controle de Botão e arraste-o para a tela de Design](media/uwp-xaml-control-code-window.png)
+   ![Mostrar botão no editor XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Adicionar um rótulo para o botão
 
@@ -192,7 +192,7 @@ O código usa algumas APIs do Windows para criar um objeto de sintetização de 
 
 1. Veja o aplicativo, que aparece logo depois que uma tela inicial desaparece. O aplicativo deve ser semelhante a este:
 
-   ![Um aplicativo UWP "Olá, Mundo"](media/vs-2019/uwp-hello-world-app.png)
+   ![Aplicativo "Olá, Mundo" UWP](media/vs-2019/uwp-hello-world-app.png)
 
 1. Clique no botão **Olá, Mundo**.
 

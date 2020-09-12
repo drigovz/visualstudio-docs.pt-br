@@ -1,6 +1,7 @@
 ---
 title: Criar um pacote de extensões
 description: Saiba como criar um pacote de extensão com o modelo de item do pacote de extensão
+ms.custom: SEO-VS-2020
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742910"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037654"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Passo a passo: criar um pacote de extensão
 

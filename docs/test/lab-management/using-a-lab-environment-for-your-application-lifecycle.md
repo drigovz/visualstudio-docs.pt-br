@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7ec0e4eed9036a0548c4f8f162331e92a416c0cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144682"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037218"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -98,7 +98,7 @@ Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipeli
 
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
-|Recurso|Ambiente SCVMM|Ambientes padrão|
+|Funcionalidade|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
 |**Teste**|||
 |Executar testes manuais|Com suporte|Com suporte|
@@ -129,23 +129,23 @@ Aqui estão alguns dos conceitos adicionais com que deve familiarizar-se antes d
 
 Para saber mais sobre o Lab Management, veja:
 
-* [Planejar seu laboratório](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx)
-* [Administrar seu laboratório](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx)
-* [Configurar para ambientes SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx)
-* [Gerenciar permissões](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx)
-* [Alterar a configuração](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-* [Solução de problemas](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [Planejar seu laboratório](/previous-versions/ff756575(v=vs.140))
+* [Administrar seu laboratório](/previous-versions/dd936084(v=vs.140))
+* [Configurar para ambientes SCVMM](/previous-versions/dd380687(v=vs.140))
+* [Gerenciar permissões](/previous-versions/dd380760(v=vs.140))
+* [Alterar a configuração](/previous-versions/ee704508(v=vs.140))
+* [Solução de problemas](/previous-versions/ee853230(v=vs.140))
 
 Para saber mais sobre como configurar ambientes, veja:
 
 * [Ambientes de nuvem de build e de lançamento](use-build-or-rm-instead-of-lab-management.md)
-* [Ambientes de laboratório padrão](https://msdn.microsoft.com/library/ee390842.aspx)
-* [Ambientes SCVMM (virtuais)](https://msdn.microsoft.com/library/ee943322.aspx)
-* [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)
+* [Ambientes de laboratório padrão](/previous-versions/ee390842(v=vs.140))
+* [Ambientes SCVMM (virtuais)](/previous-versions/ee943322(v=vs.140))
+* [Criando e usando um ambiente de rede isolado](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
 ## <a name="see-also"></a>Confira também
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
-* [Guia do Lab Management do Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/04/22/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions/)
+* [Guia do Lab Management do Visual Studio](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)
 * [Blog do Microsoft DevOps](https://devblogs.microsoft.com/devops/)

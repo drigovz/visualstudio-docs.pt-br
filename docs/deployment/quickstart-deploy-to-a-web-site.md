@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173665"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036399"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publique um aplicativo Web em um site usando o Visual Studio
 
@@ -32,9 +32,9 @@ ms.locfileid: "84173665"
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
-1. Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Selecione **Criar novo perfil**.
+1. Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publicar** será exibido. Selecione **Novo**.
 
-1. Na caixa de diálogo **publicar** , escolha **servidor Web (IIS)**.
+1. Na janela **publicar** , escolha **servidor Web (IIS)**.
 
     ![Escolher destino de publicação](../deployment/media/quickstart-publish-iis.png "Escolha IIS, FTP, etc.")
 
@@ -47,6 +47,8 @@ ms.locfileid: "84173665"
     ![Detalhes da conexão do Implantação da Web](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. Para publicar, selecione **publicar** na página Resumo. A janela de Saída mostra o progresso da implantação e os resultados.
+
+   Se precisar de ajuda para solucionar problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="next-steps"></a>Próximas etapas
 

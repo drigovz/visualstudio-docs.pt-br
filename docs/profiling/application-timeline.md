@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537274"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038342"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 
@@ -100,13 +100,13 @@ A exibição de detalhes é o ponto em que você passa a maior parte do tempo an
 
 Há suporte para os seguintes eventos:
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Análise**|Tempo gasto analisando arquivos XAML e criando objetos.<br /><br /> Expandir um nó de **Análise** em **Detalhes da linha do tempo** exibe a cadeia de dependências de todos os arquivos XAML analisados devido ao evento raiz. Essa dica permite identificar a criação de objeto e a análise de arquivos desnecessárias em cenários sensíveis a desempenho e otimizá-los.|
 |**Layout**|Em aplicativos grandes, milhares de elementos podem ser mostrados na tela ao mesmo tempo. Essa exibição pode resultar em uma baixa taxa de quadros de interface do usuário e a capacidade de resposta do aplicativo correspondentemente baixa. O evento Layout determina com precisão o custo de estabelecer cada elemento (ou seja, o tempo gasto em Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride). Ele também cria as árvores visuais que participaram de uma passagem de layout. É possível usar essa visualização para determinar quais árvores lógicas serão removidas ou para avaliar outros mecanismos de adiamento para otimizar sua passagem de layout.|
 |**Render**|Tempo gasto desenhando elementos XAML na tela.|
 |**I/0**|Tempo gasto na recuperação de dados do disco local ou de recursos de rede acessados por meio da [API WinINet (Microsoft Windows Internet)](/windows/desktop/WinInet/portal).|
-|**Código do Aplicativo**|Tempo gasto executando código do aplicativo (usuário) que não está relacionado à análise ou ao layout.|
+|**Código do aplicativo**|Tempo gasto executando código do aplicativo (usuário) que não está relacionado à análise ou ao layout.|
 |**Xaml Other**|Tempo gasto executando o código XAML no runtime.|
 
 > [!TIP]
@@ -116,7 +116,7 @@ Há suporte para os seguintes eventos:
 
 Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filtrar e especificar as anotações das entradas da exibição **Detalhes da linha do tempo**.
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Classificar por**|Classifique por hora de início ou o duração de eventos.|
 |![Agrupar eventos por quadro](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Adiciona ou remove a categoria de **Quadro** de nível superior que agrupa eventos por quadro.|
@@ -125,7 +125,7 @@ Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filt
 
 ## <a name="see-also"></a>Confira também
 
-- [Blog da equipe do WPF: nova ferramenta de análise de desempenho da interface do usuário para aplicativos do WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog da equipe do WPF: nova ferramenta de análise de desempenho da interface do usuário para aplicativos do WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Melhores práticas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Otimizar o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)

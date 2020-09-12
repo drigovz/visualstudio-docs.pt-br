@@ -1,6 +1,7 @@
 ---
 title: Gerenciar configurações de build com as definições do desenvolvedor do Visual Basic
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3feaf36cb250339bd94e0d80a152a8104e75680
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743224"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038563"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como gerenciar configurações de build com configurações de desenvolvedor do Visual Basic aplicadas
 
@@ -43,7 +44,7 @@ Por padrão, as configurações de desenvolvedor do Visual Basic ocultam a opç�
 
      O **Configuration Manager** agora está disponível no menu **Build** e as listas **Configuração** e **Plataforma** estão visíveis no **Designer de Projeto**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Noções sobre configurações de build](../ide/understanding-build-configurations.md)
 - [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)

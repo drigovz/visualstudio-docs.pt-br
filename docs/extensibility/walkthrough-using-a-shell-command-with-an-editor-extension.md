@@ -1,5 +1,6 @@
 ---
 title: Usar um comando do shell com uma extensão do editor
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ebec1b2c58f5a2ae79e6f361d74e57cd935c177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 33886b170a8e0138a199f5d7cb51467875c8c3c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742030"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037465"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Walkthrough: usar um comando do shell com uma extensão do editor
 Em um VSPackage, você pode adicionar recursos como comandos de menu ao editor. Este tutorial mostra como adicionar um Adornment a uma exibição de texto no editor invocando um comando de menu.
@@ -691,5 +692,5 @@ Em um VSPackage, você pode adicionar recursos como comandos de menu ao editor. 
 
      Fourscore...
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

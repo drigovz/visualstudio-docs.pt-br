@@ -1,5 +1,6 @@
 ---
 title: Configurar a herança usando o Designer Relacional de Objetos
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a0f56d7b123571e9a65d5bb2baa99a8d7dac2461
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742949"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037049"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como configurar a herança usando o Designer Relacional de Objetos
 O **Object Relational Designer** (**o/R Designer**) dá suporte ao conceito de herança de tabela única, pois ela geralmente é implementada em sistemas relacionais. Na herança de tabela única, há uma única tabela de banco de dados que contém campos para informações pai e informações filho. Com os dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer registro pertence.
@@ -50,7 +51,7 @@ Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) 
 
 10. Opcionalmente, você pode também definir a propriedade de **Padrão de Herança** para designar um tipo em uma hierarquia de herança que é usada para carregar as linhas que não correspondem nenhum código de herança definido. Em outras palavras, se um registro tiver um valor em sua coluna discriminadora que não corresponda ao valor no **valor discriminador da classe derivada** ou nas propriedades do **valor discriminador da classe base** , o registro será carregado no tipo designado como **padrão de herança**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

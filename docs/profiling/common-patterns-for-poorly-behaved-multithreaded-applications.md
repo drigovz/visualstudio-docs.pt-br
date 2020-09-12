@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62788825"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038498"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multi-threaded com mau comportamento
 
@@ -30,7 +30,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
 
 Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.
 
-Para obter mais informações, veja a seção "Começar com o problema" no artigo da MSDN Magazine [Desempenho do Thread – criação de perfil de simultaneidade de contenção de recursos no Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
+Para obter mais informações, veja a seção "Começar com o problema" no artigo da MSDN Magazine [Desempenho do Thread – criação de perfil de simultaneidade de contenção de recursos no Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010).
 
 ![Contenção de bloqueio](../profiling/media/lockcontention_2.png "LockContention_2")
 

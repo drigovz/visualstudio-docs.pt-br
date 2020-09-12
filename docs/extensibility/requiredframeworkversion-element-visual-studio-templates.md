@@ -1,6 +1,7 @@
 ---
 title: Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741690"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037719"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 
@@ -84,7 +85,7 @@ O exemplo a seguir ilustra os metadados para um [!INCLUDE[csprcs](../data-tools/
 
 Neste exemplo, a versão mínima do .NET Framework exigido pelo modelo, representada por `RequiredFrameworkVersion` , é 3,0. Um projeto criado com este modelo pode se destinar a versões .NET Framework a partir de 3,0.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

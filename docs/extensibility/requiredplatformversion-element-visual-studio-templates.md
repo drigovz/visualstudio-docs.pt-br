@@ -1,6 +1,7 @@
 ---
 title: Elemento RequiredPlatformVersion (Modelos do Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a3873a8107c60802edd07b567d65205a37dc213
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 811cf013c7337e032f9ee5a37f9bc38329dff240
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741677"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037732"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>Elemento RequiredPlatformVersion (modelos do Visual Studio)
 
@@ -76,7 +77,7 @@ Especifica a versão mínima do sistema operacional que o modelo de projeto requ
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Elemento TargetPlatformName (modelos do Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

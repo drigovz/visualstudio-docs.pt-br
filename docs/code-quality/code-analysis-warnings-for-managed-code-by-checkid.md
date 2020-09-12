@@ -1,6 +1,6 @@
 ---
 title: Visão geral das regras de qualidade de código
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509439"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037231"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos de análise de código para código gerenciado por CheckId
+# <a name="code-quality-analysis-rules-by-rule-id"></a>Regras de análise de qualidade de código por ID de regra
 
-A tabela a seguir lista avisos de análise de código para código gerenciado pelo identificador CheckId do aviso.
+A tabela a seguir lista as regras de análise de qualidade de código por identificador de regra.
 
 | CheckId | Aviso | Descrição |
 |---------| - | - |
@@ -372,7 +372,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA1831 |[CA1831: Usar AsSpan em vez de indexadores baseados em intervalo na cadeia de caracteres quando apropriado](../code-quality/ca1831.md) | Ao usar um indexador de intervalo em uma cadeia de caracteres e atribuir implicitamente o valor ao &lt; tipo de Char ReadOnlySpan &gt; , o método <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> será usado em vez de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , que produz uma cópia da parte solicitada da cadeia de caracteres. |
 | CA1832 |[CA1832: Usar AsSpan ou AsMemory em vez de indexadores baseados em intervalo para obter a parte ReadOnlySpan ou ReadOnlyMemory de uma matriz](../code-quality/ca1832.md) | Ao usar um indexador de intervalo em uma matriz e atribuir implicitamente o valor a um <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo ou, o método <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> será usado em vez de, o <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> que produzirá uma cópia da parte solicitada da matriz. |
 | CA1833 |[CA1833: Usar AsSpan ou AsMemory em vez de indexadores baseados em intervalo para obter a parte Span ou Memory de uma matriz](../code-quality/ca1833.md) | Ao usar um indexador de intervalo em uma matriz e atribuir implicitamente o valor a um <xref:System.Span%601> <xref:System.Memory%601> tipo ou, o método <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> será usado em vez de, o <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> que produzirá uma cópia da parte solicitada da matriz. |
-| CA1834 |[CA1834: Use StringBuilder. Append (Char) para cadeias de caracteres únicas](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> tem uma `Append` sobrecarga que usa `char` como argumento. Prefira chamar a `char` sobrecarga por motivos de desempenho. |
+| CA1834 |[CA1834: usar StringBuilder.Append (char) para cadeias de caracteres únicas](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> tem uma `Append` sobrecarga que usa `char` como argumento. Prefira chamar a `char` sobrecarga por motivos de desempenho. |
 | CA1835 |[CA1835: prefira as sobrecargas baseadas em Memory' para ' ReadAsync ' e ' WriteAsync '](../code-quality/ca1835.md) | ' Stream ' tem uma sobrecarga ' ReadAsync ' que usa um ' byte de memória &lt; &gt; ' como o primeiro argumento e uma sobrecarga ' WriteAsync ' que usa um ' ReadOnlyMemory &lt; byte &gt; ' como o primeiro argumento. Prefira chamar as sobrecargas com base na memória, que são mais eficientes. |
 | CA1836 |[CA1836: preferir `IsEmpty` `Count` quando disponível](../code-quality/ca1836.md) | Prefira `IsEmpty` a propriedade que seja mais eficiente do que `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> ou <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> para determinar se o objeto contém ou não itens. |
 | CA1837 | [CA1837: usar `Environment.ProcessId` em vez de `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` é mais simples e mais rápido do que `Process.GetCurrentProcess().Id` . |
@@ -466,7 +466,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 | CA5358 | [CA5358: Não usar modos de criptografia não seguros](../code-quality/ca5358.md) | Não usar modos de criptografia não seguros |
 | CA5359 | [CA5359 não desabilitar a validação de certificado](../code-quality/ca5359.md) | Um certificado pode ajudar a autenticar a identidade do servidor. Os clientes devem validar o certificado do servidor para garantir que as solicitações sejam enviadas ao servidor pretendido. Se o ServerCertificateValidationCallback sempre retornar `true` , qualquer certificado passará na validação. |
 | CA5360 | [CA5360 não chamar métodos perigosos na desserialização](../code-quality/ca5360.md) | A desserialização insegura é uma vulnerabilidade que ocorre quando dados não confiáveis são usados para proutilizar a lógica de um aplicativo, causarem um ataque de negação de serviço (DoS) ou até mesmo executar um código arbitrário quando ele estiver desserializado. Frequentemente, é possível que usuários mal-intencionados abusam esses recursos de desserialização quando o aplicativo estiver desserializando dados não confiáveis que estão sob seu controle. Especificamente, invoque métodos perigosos no processo de desserialização. Ataques de desserialização inseguros com êxito podem permitir que um invasor execute ataques, como ataques de DoS, desvios de autenticação e execução remota de código. |
-| CA5361 | [CA5361: Não desabilite o uso de criptografia forte do SChannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`A configuração para `true` enfraquece a criptografia usada em conexões TLS (segurança da camada de transporte) de saída. A criptografia mais fraca pode comprometer a confidencialidade da comunicação entre o aplicativo e o servidor, tornando mais fácil para os invasores bisbilhotarem dados confidenciais. |
+| CA5361 | [CA5361: não desabilitar o uso do Schannel de criptografia forte](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`A configuração para `true` enfraquece a criptografia usada em conexões TLS (segurança da camada de transporte) de saída. A criptografia mais fraca pode comprometer a confidencialidade da comunicação entre o aplicativo e o servidor, tornando mais fácil para os invasores bisbilhotarem dados confidenciais. |
 | CA5362 | [Ciclo de referência potencial do CA5362 no grafo de objeto desserializado](../code-quality/ca5362.md) | Se estiver desserializando dados não confiáveis, qualquer código que processe o grafo de objeto desserializado precisará manipular os ciclos de referência sem entrar em loops infinitos. Isso inclui o código que faz parte de um retorno de chamada de desserialização e o código que processa o grafo de objeto após a desserialização ser concluída. Caso contrário, um invasor pode executar um ataque de negação de serviço com dados mal-intencionados que contenham um ciclo de referência. |
 | CA5363 | [CA5363: Não desabilitar a validação de solicitação](../code-quality/ca5363.md) | A validação de solicitação é um recurso no ASP.NET que examina as solicitações HTTP e determina se elas contêm conteúdo potencialmente perigoso que pode levar a ataques de injeção, incluindo scripts entre sites. |
 | CA5364 | [CA5364: Não use protocolos de segurança preteridos](../code-quality/ca5364.md) | A segurança de camada de transporte (TLS) protege a comunicação entre computadores, mais comumente com HTTPS (Hypertext Transfer Protocol Secure). Versões de protocolo mais antigas do TLS são menos seguras do que o TLS 1,2 e o TLS 1,3 e têm mais probabilidade de ter novas vulnerabilidades. Evite versões de protocolo mais antigas para minimizar o risco. |

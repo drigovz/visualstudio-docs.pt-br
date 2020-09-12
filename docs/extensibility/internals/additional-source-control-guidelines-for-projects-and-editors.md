@@ -1,5 +1,6 @@
 ---
 title: Diretrizes de controle do código-fonte para projetos e editores
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743397"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037628"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Diretrizes adicionais de controle do código-fonte para projetos e editores
 Há várias diretrizes que os projetos e editores devem seguir para dar suporte ao controle do código-fonte.
@@ -33,5 +34,5 @@ Há várias diretrizes que os projetos e editores devem seguir para dar suporte 
 |Manter objetos e propriedades em ordem previsível|X|X|Mantenha seus arquivos em uma ordem previsível, como ordem alfabética, para facilitar a mesclagem.|
 |Recarregar|X|X|Quando um arquivo é alterado no disco, seu editor deve ser capaz de recarregá-lo. Quando você participa do controle do código-fonte, o ambiente recarregará os dados para você chamando sua <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementação. O caso de recarga mais difícil é quando ocorre um check-out quando você chamou IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e está processando informações. No entanto, seu código de recarga deve ser capaz de executar nessa situação.<br /><br /> O ambiente recarrega automaticamente os arquivos de projeto. No entanto, um projeto deve implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> se tiver hierarquias aninhadas a fim de dar suporte ao recarregamento de arquivos de projeto aninhados.|
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Suporte ao controle do código-fonte](../../extensibility/internals/supporting-source-control.md)
