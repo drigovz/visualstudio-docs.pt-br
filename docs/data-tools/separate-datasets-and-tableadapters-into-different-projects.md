@@ -3,6 +3,7 @@ title: Erro de uso de projetos separados
 description: Conjuntos de dados e TableAdapters separados m diferentes projetos
 ms.date: 11/04/2016
 ms.topic: how-to
+ms.custom: SEO-VS-2020
 helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, separating Datasets and TableAdapters
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4ed815b73cade73c38b52528d918b4af4de2a618
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743109"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036269"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 Os conjuntos de linhas tipados foram aprimorados para que as classes [TableAdapters](create-and-configure-tableadapters.md) e DataSet possam ser geradas em projetos separados. Isso permite que você separe rapidamente as camadas do aplicativo e gere aplicativos de dados de n camadas.
@@ -58,7 +59,7 @@ Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultad
 > [!NOTE]
 > Para exibir o arquivo de classe gerado, selecione o conjunto de DataSet ou o projeto do TableAdapter. Em seguida, em **Gerenciador de soluções**, selecione **Mostrar todos os arquivos**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Walkthrough: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

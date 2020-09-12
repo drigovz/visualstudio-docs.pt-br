@@ -1,5 +1,6 @@
 ---
 title: Criar um conjunto de uma com o Designer de Conjunto de Dados
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742926"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036776"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Walkthrough: criar um conjunto de um DataSet com o Designer de Conjunto de Dados
 
@@ -108,7 +109,7 @@ Esta seção explica como adicionar tabelas ao conjunto de os.
 
 - Adicione a lógica de validação para os <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> eventos ou das tabelas de dados no DataSet. Para obter mais informações, consulte [Validate data in DataSets](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

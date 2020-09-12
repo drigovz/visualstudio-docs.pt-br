@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800301"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036412"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio
 
@@ -23,7 +23,7 @@ Para aplicativos ASP.NET, ASP.NET Core, Node.js e .NET Core, publique no Serviç
 
 * Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* Para implantação única (ou manual) de aplicativos, use a ferramenta **Publicar** no Visual Studio para implantar aplicativos ASP.NET, ASP.NET Core, Node.js e .NET Core no Serviço de Aplicativo do Azure ou Serviço de Aplicativo para Linux (usando contêineres). Para aplicativos Python, siga as etapas em [Python – Publicar no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* Para implantação única (ou manual) de aplicativos, use a ferramenta de **publicação** no Visual Studio para implantar aplicativos ASP.NET, ASP.NET Core, Node.js e .NET Core para Azure app serviço ou [serviço de aplicativo para Linux](../deployment/quickstart-deploy-to-linux.md) (usando contêineres). Para aplicativos Python, siga as etapas em [Python – Publicar no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 Este artigo descreve como usar a ferramenta **Publicar** para uma implantação única.
 
@@ -35,7 +35,9 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
-1. Na caixa de diálogo **publicar** , selecione **Azure**.
+1. Se você tiver configurado anteriormente todos os perfis de publicação, a janela **publicar** será exibida. Selecione **Novo**.
+
+1. Na janela **publicar** , selecione **Azure**.
 
     ![Escolher destino de publicação](../deployment/media/quickstart-publish-azure-new.png)
 

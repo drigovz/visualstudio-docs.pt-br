@@ -1,5 +1,6 @@
 ---
 title: Definir o controle a ser criado ao arrastar
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7203cc5017763a6ba0b76855f010f114ca879a6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743097"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036256"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 
@@ -69,6 +70,6 @@ Antes de arrastar um item que representa uma coluna ou uma propriedade de um obj
 
      Se você não quiser criar um controle para a coluna ou propriedade, selecione **nenhum** no menu suspenso. Isso será útil se você quiser arrastar a tabela ou o objeto pai para o designer, mas não desejar incluir a coluna ou propriedade específica.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,6 +1,7 @@
 ---
 title: Objeto de provedor sem suporte
 description: Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4867ab2e7d8f269961c7d1a783a3b31d70da05d
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 84841c5e0759618430f9c2e4f0146cbc2d21fae9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743166"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036711"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
 
@@ -29,6 +30,6 @@ O o **/R Designer** dá suporte apenas ao .NET Framework Provedor de Dados para 
 
 - Clique em **Cancelar** para interromper a ação. Crie ou use uma conexão de dados diferente que use o provedor de .NET Framework para SQL Server.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

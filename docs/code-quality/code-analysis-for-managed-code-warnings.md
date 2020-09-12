@@ -15,17 +15,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509010"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034098"
 ---
 # <a name="net-code-analysis-rules"></a>Regras de análise de código .NET
-A ferramenta de análise de código gerenciado fornece avisos que indicam violações de regra em bibliotecas de código gerenciado. Os avisos são organizados em áreas de regras, como design, localização, desempenho e segurança. Cada aviso significa uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos para cada aviso de análise de código gerenciado.
+A análise de código .NET fornece regras que indicam violações de qualidade de código ou sugestões para melhorar a qualidade do código. As regras são organizadas em áreas de regras, como design, localização, desempenho e segurança. Determinadas regras são específicas para o uso da API do .NET, enquanto as regras restantes são sobre a qualidade de código genérica. Esta seção fornece discussões e exemplos detalhados para cada regra.
 
- A tabela a seguir mostra o tipo de informações que são fornecidas para cada aviso.
+ A tabela a seguir mostra o tipo de informações que são fornecidas para cada diagnóstico.
 
 |Item|Descrição|
 |----------|-----------------|

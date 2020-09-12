@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL classes com herança de tabela única
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741832"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036750"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
 As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este tutorial se expande sobre as etapas genéricas fornecidas em [como configurar a herança usando o tópico o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -184,7 +185,7 @@ Execute o aplicativo e verifique se os registros exibidos na caixa de listagem s
 
 3. Feche o formulário. (No menu **depurar** , clique em **parar depuração**.)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

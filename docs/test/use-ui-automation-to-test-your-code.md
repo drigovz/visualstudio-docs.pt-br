@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80880358"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035736"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Use o teste de IU codificado para testar seu código
 
@@ -433,7 +433,7 @@ myWinCheckBox.Checked = true;
 
 Você pode analisar testes de IU codificados usando logs de teste de IU codificado. Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado. O formato dos logs permite depurar rapidamente os problemas. Para obter mais informações, confira [Analisar testes de IU codificados usando logs de teste de IU codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="whats-next"></a>O que vem a seguir?
+## <a name="whats-next"></a>E agora?
 
 ::: moniker range="vs-2017"
 **Opções adicionais para executar testes de IU codificados:** Você pode executar testes de interface do usuário codificados diretamente do Visual Studio, conforme descrito anteriormente neste tópico. Além disso, você pode executar testes automatizados de interface do usuário no Microsoft Test Manager ou usando o Azure Pipelines. Quando são automatizados, os testes de IU codificados precisam interagir com a área de trabalho quando executados, diferentemente de outros testes automatizados.
@@ -446,7 +446,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 - [Executar Testes no Processo de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Como configurar o agente de teste para executar testes que interagem com a área de trabalho](/previous-versions/ee291332(v=vs.140))
 
 **Adicionando suporte para controles personalizados:**  A estrutura de teste de interface do usuário codificada não oferece suporte a todas as interfaces do usuário possíveis e pode não dar suporte à interface do usuário que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado para a IU do Microsoft Excel. Porém, você pode criar uma extensão para o framework de teste de IU codificado que é compatível com um controle personalizado.
 

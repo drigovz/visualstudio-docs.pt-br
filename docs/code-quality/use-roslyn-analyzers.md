@@ -1,54 +1,34 @@
 ---
-title: Gravidade e supressão da regra do analisador
-ms.date: 03/04/2020
+title: Análise de qualidade de código
+ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599975"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036349"
 ---
-# <a name="use-code-analyzers"></a>Usar analisadores de código
+# <a name="configure-code-quality-analysis"></a>Configurar análise de qualidade de código
 
-.NET Compiler Platform ("Roslyn") analisadores de código analisam seu código C# ou Visual Basic à medida que você digita. Cada *diagnóstico* ou regra tem um estado de gravidade e supressão padrão que pode ser substituído para seu projeto. Este artigo aborda a definição da severidade da regra, o uso de conjuntos de regras e a supressão de violações.
+A partir do .NET 5,0, os analisadores de qualidade de código estão incluídos no SDK do .NET. (Anteriormente, você instalou esses analisadores como um pacote NuGet.) A análise de código é habilitada, por padrão, para projetos direcionados ao .NET 5,0 ou posterior. Você pode habilitar a análise de código em projetos direcionados a versões anteriores do .NET definindo a propriedade [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) como `true` . Você também pode desabilitar a análise de código para seu projeto definindo `EnableNETAnalyzers` como `false` .
 
-## <a name="analyzers-in-solution-explorer"></a>Analisadores no Gerenciador de Soluções
+Cada regra ou *diagnóstico* do analisador de qualidade de código tem um estado de gravidade e supressão padrão que pode ser substituído e personalizado para seu projeto. Este artigo aborda a definição de severidades do analisador de qualidade de código e a supressão de violações do analisador.
 
-Você pode fazer grande parte da personalização do diagnóstico do Analyzer do **Gerenciador de soluções**. Se você [instalar os analisadores](../code-quality/install-roslyn-analyzers.md) como um pacote NuGet, um nó **analisadores** será exibido no nó **referências** ou **dependências** em **Gerenciador de soluções**. Se você expandir os **analisadores**e, em seguida, expandir um dos assemblies do analisador, verá todos os diagnósticos no assembly.
-
-![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
-
-Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** + **Enter**.
-
-![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
-
-Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse no diagnóstico e selecione **Exibir ajuda**.
-
-Os ícones ao lado de cada diagnóstico no **Gerenciador de soluções** correspondem aos ícones que você vê no conjunto de regras ao abri-lo no editor:
-
-- o "x" em um círculo indica uma [severidade](#rule-severity) de **erro**
-- o "!" em um triângulo indica uma [severidade](#rule-severity) de **aviso**
-- o "i" em um círculo indica uma [severidade](#rule-severity) de **informações**
-- o "i" em um círculo em um plano de fundo com cor clara indica uma [severidade](#rule-severity) de **oculto**
-- a seta apontando para baixo em um círculo indica que o diagnóstico foi suprimido
-
-![Ícones de diagnóstico no Gerenciador de Soluções](media/diagnostics-icons-solution-explorer.png)
-
-## <a name="rule-severity"></a>Gravidade da regra
+## <a name="configure-severity-levels"></a>Configurar níveis de severidade
 
 ::: moniker range=">=vs-2019"
 
-Você pode configurar a severidade de regras do analisador ou *diagnóstico*, se [instalar os analisadores](../code-quality/install-roslyn-analyzers.md) como um pacote NuGet. A partir do Visual Studio 2019 versão 16,3, você pode configurar a severidade de uma regra [em um arquivo EditorConfig](#set-rule-severity-in-an-editorconfig-file). Você também pode alterar a severidade de uma regra [de Gerenciador de soluções](#set-rule-severity-from-solution-explorer) ou [em um arquivo de conjunto de regras](#set-rule-severity-in-the-rule-set-file).
+A partir do Visual Studio 2019 versão 16,3, você pode configurar a severidade de regras do analisador, ou *diagnósticos*, em um [arquivo EditorConfig](#set-rule-severity-in-an-editorconfig-file), no [menu de lâmpada](#set-rule-severity-from-the-light-bulb-menu)e na lista de erros.
 
 ::: moniker-end
 
@@ -62,20 +42,26 @@ A tabela a seguir mostra as diferentes opções de gravidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Informações | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
 | Nenhum | `none` | Suprimido completamente. | Suprimido completamente. |
 | Padrão | `default` | Corresponde à severidade padrão da regra. Para determinar qual é o valor padrão de uma regra, procure na janela Propriedades. | Corresponde à severidade padrão da regra. |
 
-A captura de tela a seguir do editor de código mostra três violações diferentes com severidades diferentes. Observe a cor do Rabisco e o pequeno quadrado colorido na barra de rolagem à direita.
+Se violações de regra forem encontradas por um analisador, elas serão relatadas no editor de códigos (como um *rabisco* no código incorreto) e na janela de lista de erros.
 
-![Violação de erro, aviso e informação no editor de código](media/diagnostics-severity-colors.png)
+As violações do analisador relatadas na lista de erros correspondem à [configuração de nível de severidade](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) da regra. As violações do analisador também aparecem no editor de códigos como ondulado no código incorreto. A imagem a seguir mostra três violações &mdash; um erro (ondulado vermelho), um aviso (ondulado verde) e uma sugestão (três pontos cinzas):
+
+![Rabiscos no editor de códigos do Visual Studio](media/diagnostics-severity-colors.png)
 
 A captura de tela a seguir mostra as mesmas três violações que aparecem no Lista de Erros:
 
 ![Violação de erro, aviso e informações no Lista de Erros](media/diagnostics-severities-in-error-list.png)
+
+Muitas regras de analisador ou *diagnósticos*têm uma ou mais *correções de código* associadas que você pode aplicar para corrigir a violação de regra. As correções de código são mostradas no menu do ícone de lâmpada, juntamente com outros tipos de [Ações rápidas](../ide/quick-actions.md). Para saber mais sobre essas correções de código, confira [Ações rápidas comuns](../ide/quick-actions.md).
+
+![Violação do analisador e correção de código de Ação Rápida](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ### <a name="hidden-severity-versus-none-severity"></a>Severidade ' Hidden ' versus severidade ' none '
 
@@ -94,7 +80,7 @@ Você pode definir a severidade para avisos do compilador ou regras do analisado
 
 `dotnet_diagnostic.<rule ID>.severity = <severity>`
 
-Definir a severidade de uma regra em um arquivo EditorConfig tem precedência sobre qualquer severidade definida em um conjunto de regras ou em Gerenciador de Soluções. Você pode configurar [manualmente](#manually-configure-rule-severity) a gravidade em um arquivo EditorConfig ou [automaticamente](#automatically-configure-rule-severity) por meio da lâmpada que aparece ao lado de uma violação.
+Definir a severidade de uma regra em um arquivo EditorConfig tem precedência sobre qualquer severidade definida em um conjunto de regras ou em Gerenciador de Soluções. Você pode configurar [manualmente](#manually-configure-rule-severity-in-an-editorconfig-file) a gravidade em um arquivo EditorConfig ou [automaticamente](#set-rule-severity-from-the-light-bulb-menu) por meio da lâmpada que aparece ao lado de uma violação.
 
 ### <a name="set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file"></a>Definir a severidade da regra de várias regras do analisador de uma só vez em um arquivo EditorConfig
 
@@ -129,7 +115,7 @@ Considere o seguinte exemplo de EditorConfig, em que [CA1822](./ca1822.md) tem a
 
 No exemplo anterior, todas as três entradas são aplicáveis a CA1822. No entanto, usando as regras de precedência especificadas, a primeira entrada de severidade com base na ID da regra vence nas próximas entradas. Neste exemplo, o CA1822 terá uma severidade efetiva de "Error". Todas as regras restantes com a categoria "desempenho" terão a severidade "aviso". Todas as demais regras do analisador, que não têm a categoria "desempenho", terão a severidade "sugestão".
 
-#### <a name="manually-configure-rule-severity"></a>Configurar manualmente a severidade da regra
+#### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>Configurar manualmente a severidade da regra em um arquivo EditorConfig
 
 1. Se você ainda não tiver um arquivo EditorConfig para seu projeto, [adicione um](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
@@ -142,6 +128,68 @@ No exemplo anterior, todas as três entradas são aplicáveis a CA1822. No entan
 
 > [!NOTE]
 > Para analisadores de estilo de código IDE, você também pode configurá-los em um arquivo EditorConfig usando uma sintaxe diferente, por exemplo, `dotnet_style_qualification_for_field = false:suggestion` . No entanto, se você definir uma severidade usando a `dotnet_diagnostic` sintaxe, ela terá precedência. Para obter mais informações, consulte [convenções de linguagem para EditorConfig](../ide/editorconfig-language-conventions.md).
+
+### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Definir a severidade da regra no menu de lâmpada
+
+O Visual Studio fornece uma maneira conveniente de configurar a severidade de uma regra no menu de lâmpada de [ações rápidas](../ide/quick-actions.md) .
+
+1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl** + **.** (ponto).
+
+2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **Configurar \<rule ID> severidade**.
+
+   ![Configurar a severidade da regra no menu de lâmpada no Visual Studio](media/configure-rule-severity.png)
+
+3. A partir daí, escolha uma das opções de severidade.
+
+   ![Configurar a severidade da regra como sugestão](media/configure-rule-severity-suggestion.png)
+
+   O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado, conforme mostrado na caixa de visualização.
+
+   > [!TIP]
+   > Se você ainda não tiver um arquivo EditorConfig no projeto, o Visual Studio criará um para você.
+
+### <a name="set-rule-severity-from-the-error-list-window"></a>Definir a severidade da regra na janela de Lista de Erros
+
+O Visual Studio também fornece uma maneira conveniente de configurar a severidade de uma regra no menu de contexto da lista de erros.
+
+1. Após a ocorrência de uma violação, clique com o botão direito do mouse na entrada de diagnóstico na lista de erros.
+
+2. No menu de contexto, selecione **definir severidade**.
+
+   ![Configurar a severidade da regra na lista de erros no Visual Studio](media/configure-rule-severity-error-list.png)
+
+3. A partir daí, escolha uma das opções de severidade.
+
+   O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado.
+
+   > [!TIP]
+   > Se você ainda não tiver um arquivo EditorConfig no projeto, o Visual Studio criará um para você.
+
+::: moniker-end
+
+### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
+
+Você pode fazer grande parte da personalização do diagnóstico do Analyzer do **Gerenciador de soluções**. Se você [instalar os analisadores](../code-quality/install-roslyn-analyzers.md) como um pacote NuGet, um nó **analisadores** será exibido no nó **referências** ou **dependências** em **Gerenciador de soluções**. Se você expandir os **analisadores**e, em seguida, expandir um dos assemblies do analisador, verá todos os diagnósticos no assembly.
+
+![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
+
+Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** + **Enter**.
+
+![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
+
+Para ver a documentação online de um diagnóstico, clique com o botão direito do mouse no diagnóstico e selecione **Exibir ajuda**.
+
+Os ícones ao lado de cada diagnóstico no **Gerenciador de soluções** correspondem aos ícones que você vê no conjunto de regras ao abri-lo no editor:
+
+- o "x" em um círculo indica uma [severidade](#configure-severity-levels) de **erro**
+- o "!" em um triângulo indica uma [severidade](#configure-severity-levels) de **aviso**
+- o "i" em um círculo indica uma [severidade](#configure-severity-levels) de **informações**
+- o "i" em um círculo em um plano de fundo com cor clara indica uma [severidade](#configure-severity-levels) de **oculto**
+- a seta apontando para baixo em um círculo indica que o diagnóstico foi suprimido
+
+![Ícones de diagnóstico no Gerenciador de Soluções](media/diagnostics-icons-solution-explorer.png)
+
+::: moniker range=">=vs-2019"
 
 #### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>Converter um arquivo RuleSet existente no arquivo EditorConfig
 
@@ -209,45 +257,6 @@ dotnet_diagnostic.CA2213.severity = warning
 
 dotnet_diagnostic.CA2231.severity = warning
 ```
-
-#### <a name="automatically-configure-rule-severity"></a>Configurar automaticamente a severidade da regra
-
-##### <a name="configure-from-light-bulb-menu"></a>Configurar no menu de lâmpada
-
-O Visual Studio fornece uma maneira conveniente de configurar a severidade de uma regra no menu de lâmpada de [ações rápidas](../ide/quick-actions.md) .
-
-1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl** + **.** (ponto).
-
-2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **Configurar \<rule ID> severidade**.
-
-   ![Configurar a severidade da regra no menu de lâmpada no Visual Studio](media/configure-rule-severity.png)
-
-3. A partir daí, escolha uma das opções de severidade.
-
-   ![Configurar a severidade da regra como sugestão](media/configure-rule-severity-suggestion.png)
-
-   O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado, conforme mostrado na caixa de visualização.
-
-   > [!TIP]
-   > Se você ainda não tiver um arquivo EditorConfig no projeto, o Visual Studio criará um para você.
-
-##### <a name="configure-from-error-list"></a>Configurar na lista de erros
-
-O Visual Studio também fornece uma maneira conveniente de configurar a severidade de uma regra no menu de contexto da lista de erros.
-
-1. Após a ocorrência de uma violação, clique com o botão direito do mouse na entrada de diagnóstico na lista de erros.
-
-2. No menu de contexto, selecione **definir severidade**.
-
-   ![Configurar a severidade da regra na lista de erros no Visual Studio](media/configure-rule-severity-error-list.png)
-
-3. A partir daí, escolha uma das opções de severidade.
-
-   O Visual Studio adiciona uma entrada ao arquivo EditorConfig para configurar a regra para o nível solicitado.
-
-   > [!TIP]
-   > Se você ainda não tiver um arquivo EditorConfig no projeto, o Visual Studio criará um para você.
-
 ::: moniker-end
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
@@ -377,7 +386,7 @@ Quando você cria seu projeto na linha de comando, violações de regra aparecem
 
 - Uma ou mais regras são violadas no código do projeto.
 
-- A [severidade](#rule-severity) de uma regra violada é definida como **aviso**; nesse caso, as violações não causam a falha da compilação ou **erros**, caso em que as violações causam a falha da compilação.
+- A [severidade](#configure-severity-levels) de uma regra violada é definida como **aviso**; nesse caso, as violações não causam a falha da compilação ou **erros**, caso em que as violações causam a falha da compilação.
 
 O detalhamento da saída da compilação não afeta se as violações de regra são mostradas. Mesmo com detalhes **silenciosos** , violações de regra aparecem na saída da compilação.
 

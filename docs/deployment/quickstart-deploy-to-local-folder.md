@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285394"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036386"
 ---
-# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta local usando o Visual Studio
+# <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta usando o Visual Studio
 
-É possível usar a ferramenta **Publicar** para publicar aplicativos ASP.NET, ASP.NET Core, .NET Core e Python em uma pasta local do Visual Studio. Para Node.js, há suporte para as etapas, mas a interface do usuário é diferente.
+Você pode usar a ferramenta de **publicação** para publicar aplicativos ASP.NET, ASP.NET Core, .NET Core e Python em uma pasta do Visual Studio. Para Node.js, há suporte para as etapas, mas a interface do usuário é diferente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Se você precisar publicar um aplicativo da área de trabalho do Windows em uma pasta local, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Se você precisar publicar um aplicativo de área de trabalho do Windows em uma pasta, consulte [implantar um aplicativo de área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Implantar em uma pasta local
 
@@ -32,7 +32,9 @@ ms.locfileid: "85285394"
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
-1. Na caixa de diálogo **publicar** , selecione **pasta**.
+1. Se você tiver configurado anteriormente todos os perfis de publicação, a janela **publicar** será exibida. Selecione **Novo**.
+
+1. Na janela **publicar** , selecione **pasta**.
 
     ![Escolher pasta como um destino de publicação](../deployment/media/quickstart-publish-folder-new.png "Escolher pasta")
 
@@ -46,7 +48,15 @@ ms.locfileid: "85285394"
 
 1. Para definir as configurações de implantação, selecione **Editar** no resumo do perfil de publicação e selecione a guia **configurações** .
 
+   As configurações que você vê dependem do seu tipo de aplicativo. A ilustração a seguir mostra as configurações de exemplo para um aplicativo ASP.NET Core.
+
     ![Configurações de perfil](../deployment/media/quickstart-profile-settings.png "Configurações de perfil")
+
+    Para obter ajuda adicional para escolher as configurações no .NET, consulte o seguinte:
+
+    - [Implantação dependente da estrutura vs. autônoma](/dotnet/core/deploying/)
+    - [Identificadores de tempo de execução de destino (RID portátil, et al)](/dotnet/core/rid-catalog)
+    - [Configurações de depuração e versão](../ide/understanding-build-configurations.md)
 
 1. Configure opções como se deseja implantar uma configuração de depuração ou de versão e, em seguida, selecione **Salvar**.
 
@@ -56,6 +66,8 @@ Implante os arquivos publicados na maneira que desejar. Por exemplo, é possíve
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Implantar um aplicativo .NET Core com a ferramenta de publicação](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Implantar o .NET Framework e aplicativos](/dotnet/framework/deployment/)
+Para aplicativos .NET:
+
+- [Implantar um aplicativo .NET Core com a ferramenta de publicação](/dotnet/core/deploying/deploy-with-vs)
+- [Publicação de aplicativos do .NET Core (implantações dependentes da estrutura vs. independentes)](/dotnet/core/deploying/)
+- [Implantar o .NET Framework e os aplicativos](/dotnet/framework/deployment/)

@@ -1,5 +1,6 @@
 ---
 title: Usar procedimentos armazenados no LINQ to SQL para atualizar dados
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743005"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036308"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 
@@ -63,7 +64,7 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 
 Para voltar a usar a lógica padrão em runtime para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar runtime** na caixa de diálogo **Configurar Comportamento**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md)

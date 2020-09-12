@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937577"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036568"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migrar da análise herdada (FxCop) para a análise de origem (analisadores do FxCop)
 
@@ -27,11 +27,11 @@ Muitas das regras de análise herdada (FxCop) já foram reescritas para analisad
 
 Para obter mais informações sobre as diferenças entre análise herdada e análise de origem, consulte o seguinte:
 
-- [Análise de código-fonte versus análise herdada](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Análise de código-fonte versus análise herdada](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [Perguntas frequentes sobre analisadores do FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Para migrar para a análise de origem, [Instale os analisadores do FxCop](../code-quality/install-fxcop-analyzers.md). Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. Para ver o status das regras portadas para os novos analisadores do FxCop, consulte [regras portadas e não portadas](../code-quality/fxcop-rule-port-status.md).
+Para migrar para a análise de origem, [Instale os analisadores do FxCop](../code-quality/install-fxcop-analyzers.md). Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) da regra. Para ver o status das regras portadas para os novos analisadores do FxCop, consulte [regras portadas e não portadas](../code-quality/fxcop-rule-port-status.md).
 
 Para saber mais sobre como configurar os analisadores do FxCop:
 

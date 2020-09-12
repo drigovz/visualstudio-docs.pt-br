@@ -1,6 +1,7 @@
 ---
 title: Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743066"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034787"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 
@@ -64,5 +65,5 @@ Esta seção lista todas as interfaces relacionadas a VSPackage de controle do c
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Essa interface é usada para salvar as configurações de controle do código-fonte no arquivo de opções de solução (. suo). Isso pode incluir configurações de controle do código-fonte específicas do usuário, como o local de inscrição do usuário atual. | VSPackage de controle do código-fonte | Recomendadas |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Essa interface é usada para monitorar eventos a fim de executar operações, como verificação de arquivos de projeto antes de fechar soluções ou obter novos arquivos do controle do código-fonte ao abrir um projeto. | VSPackage de controle do código-fonte | Recomendadas |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)

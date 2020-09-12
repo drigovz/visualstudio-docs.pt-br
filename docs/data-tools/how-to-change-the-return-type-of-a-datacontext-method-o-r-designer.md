@@ -1,5 +1,6 @@
 ---
 title: Alterar tipo de retorno do método DataContext
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737046"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036659"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Como alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)
 O tipo de retorno de um <xref:System.Data.Linq.DataContext> método (criado com base em um procedimento armazenado ou função) difere dependendo de onde você solta o procedimento armazenado ou a função no o **/R Designer**. Se você soltar um item diretamente em uma classe existente de entidade, um método de <xref:System.Data.Linq.DataContext> que tem o tipo de retorno de classe de entidade é criado (se o esquema dos dados retornados por correspondências armazenadas do procedimento ou função a forma de classe de entidade). Se você soltar um item em uma área vazia do o **/R Designer**, um <xref:System.Data.Linq.DataContext> método que retorna um tipo gerado automaticamente será criado. Você pode alterar o tipo de retorno de um método de <xref:System.Data.Linq.DataContext> depois de adicioná-lo ao painel de métodos. Verificar ou altere o tipo de retorno de um método de <xref:System.Data.Linq.DataContext>, selecione-o e clique na propriedade de **Tipo de Retorno** na janela **Propriedades**.
@@ -39,7 +40,7 @@ O tipo de retorno de um <xref:System.Data.Linq.DataContext> método (criado com 
 
 3. Salve o arquivo *. dbml* .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

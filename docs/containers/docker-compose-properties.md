@@ -2,16 +2,17 @@
 title: Docker Compose configurações de Build
 author: ghogen
 description: Visão geral do processo de Build das ferramentas de contêiner
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: deed01e2aa719df7ffeb038f022ef9d6d4b8cc71
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741863"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036295"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose Propriedades de compilação
 
@@ -129,7 +130,7 @@ Se você omitir *Docker-Compose. vs. Release. yml* ou *Docker-Compose. vs. Debug
 
 Para obter informações sobre propriedades do MSBuild em geral, consulte [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Propriedades de compilação das ferramentas de contêiner](container-msbuild-properties.md)
 

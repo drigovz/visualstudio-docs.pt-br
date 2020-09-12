@@ -1,6 +1,7 @@
 ---
 title: Implantar um contêiner de ASP.NET Core no serviço Azure App
 description: Saiba como usar as ferramentas de contêiner do Visual Studio para implantar um aplicativo Web ASP.NET Core em um contêiner do Docker para Azure App serviço
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
@@ -8,12 +9,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: e3a0742daa1f5e6e6510f5fa5d7f56d76c1eb4da
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741876"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036334"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -133,7 +134,7 @@ Você pode exibir as configurações do serviço de aplicativo implantado abrind
 
 A partir daí, você pode exibir as informações do contêiner, exibir ou baixar logs ou configurar a implantação contínua. Confira [Azure app CI/CD de implantação contínua do serviço](/azure/app-service/containers/app-service-linux-ci-cd).
 
-## <a name="clean-up-resources"></a>Limpar os recursos
+## <a name="clean-up-resources"></a>Limpar recursos
 
 Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **Exibir**  >  **outra**  >  **atividade de publicação na Web**do Windows e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
 
@@ -143,6 +144,6 @@ No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recurso
 
 Saiba mais sobre o [serviço de Azure app](/azure/app-service/overview).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Implantar no Registro de Contêiner do Azure](hosting-web-apps-in-docker.md)

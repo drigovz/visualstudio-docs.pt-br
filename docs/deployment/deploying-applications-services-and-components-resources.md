@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641648"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036672"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
 Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja.
 
-Para muitos tipos comuns de aplicativo, é possível implantar seu aplicativo diretamente do Gerenciador de Soluções no Visual Studio. Para fazer um tour rápido sobre essa funcionalidade, confira [First look at deployment](../deployment/deploying-applications-services-and-components.md) (Introdução à implantação).
+Obtenha ajuda para sua tarefa de implantação:
 
-![Selecione uma opção de publicação](../deployment/media/quickstart-publish-dialog.png)
+- Não tem certeza de qual opção de implantação escolher? Veja [quais são as opções de publicação corretas para mim?](#what-publishing-options-are-right-for-me)
+- Para obter ajuda com problemas de implantação para Azure App serviço ou IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Para obter ajuda para definir configurações de implantação do .NET, consulte [definir configurações de implantação do .net](#configure-net-deployment-settings).
+- Para implantar em um novo destino, se você tiver criado anteriormente um perfil de publicação, selecione **novo** na janela **publicar** para um perfil configurado.
+
+   ![Criar um novo perfil de publicação](../deployment/media/create-a-new-publish-profile.png)
+
+   Em seguida, escolha uma opção de implantação na janela publicar. Para obter informações sobre suas opções de publicação, consulte as seções a seguir.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Quais opções de publicação são adequadas para mim?
 
 De dentro do Visual Studio, os aplicativos podem ser publicados diretamente nos seguintes destinos:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Registro de contêiner do Docker](#docker-container-registry)
 - [Pasta](#folder)
 - [Servidor FTP/FTPS](#ftpftps-server)
 - [Servidor Web (IIS)](#web-server-iis)
 - [Importar perfil](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [Serviço de Aplicativo](#azure-app-service)
+- [Serviço de Aplicativo Linux](#azure-app-service)
+- [IIS (escolha IIS, FTP, etc.)](#web-server-iis)
+- [FTP/FTPS (escolha IIS, FTP, etc.)](#ftpftps-server)
+- [Pasta](#folder)
+- [Importar perfil](#import-profile)
+::: moniker-end
+
+As opções anteriores aparecem conforme mostrado na ilustração a seguir quando você cria um novo perfil de publicação.
+
+::: moniker range=">=vs-2019"
+![Selecione uma opção de publicação](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Selecione uma opção de publicação](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Para um tour rápido por opções de implantação de aplicativo mais gerais, consulte [primeira olhada na implantação](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Ao escolher o Azure, você pode escolher entre:
 
-- Azure App serviço em execução no Windows, Linux ou como uma imagem do Docker
-- Uma imagem do Docker implantada no registro de contêiner do Azure
-- Uma Máquina Virtual do Azure
+- [Azure app serviço](#azure-app-service) em execução no Windows, Linux ou como uma imagem do Docker
+- Uma imagem do Docker implantada no [registro de contêiner do Azure](#azure-container-registry)
+- Uma [máquina virtual do Azure](#azure-virtual-machine)
 
 ![Escolher um serviço do Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ Você determina a capacidade de computação que um Serviço de Aplicativo tem e
 > Se quiser usar o Serviço de Aplicativo do Azure em seu próprio datacenter ou em outros computadores locais, você poderá fazer isso usando o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Para obter mais informações sobre a publicação no serviço de aplicativo, consulte:
-- [Início rápido-publicar no serviço Azure app](quickstart-deploy-to-azure.md) e [no guia de início rápido-publicar ASP.NET Core no Linux](quickstart-deploy-to-linux.md).
+- [Início rápido-publicar no serviço Azure App](quickstart-deploy-to-azure.md)
+- [Início rápido-publicar ASP.NET Core no Linux](quickstart-deploy-to-linux.md).
+- [Publicar um aplicativo de ASP.NET Core no serviço Azure App](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Registro de Contêiner do Azure
@@ -78,7 +108,11 @@ O [registro de contêiner do Azure](/azure/container-registry/) permite criar, a
 - Quando você tiver um pipeline de desenvolvimento e implantação de contêiner do Docker existente.
 - Quando você quiser criar imagens de contêiner do Docker no Azure.
 
-### <a name="azure-virtual-machines"></a>Máquinas Virtuais do Azure
+Para obter mais informações:
+
+- [Implantar um contêiner ASP.NET em um registro de contêiner](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Máquina Virtual do Azure
 
 As [Máquinas Virtuais (VMs) do Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) permitem criar e gerenciar qualquer número de recursos de computação na nuvem. Ao assumir a responsabilidade por todos os softwares e atualizações nas VMs, é possível personalizá-los tanto quanto desejar conforme exigido pelo seu aplicativo. Você pode acessar as máquinas virtuais diretamente por meio da Área de Trabalho Remota e cada uma delas manterá seu endereço IP atribuído por quanto tempo for desejado.
 
@@ -103,6 +137,11 @@ Se seu aplicativo estiver usando o Docker, você poderá publicar seu aplicativo
 
 - Você deseja implantar um aplicativo em contêineres
 
+Para saber mais, consulte o seguinte:
+
+- [Implantar um contêiner ASP.NET em um registro de contêiner](../containers/hosting-web-apps-in-docker.md)
+- [Implantar no Docker Hub](../containers/deploy-docker-hub.md)
+
 ## <a name="folder"></a>Pasta
 
 A implantação no sistema de arquivos significa simplesmente copiar os arquivos do seu aplicativo para uma pasta específica em seu próprio computador. Isso geralmente é usado para fins de teste ou para implantar o aplicativo para uso por um número limitado de pessoas, caso o computador também esteja executando um servidor. Se a pasta de destino for compartilhada em uma rede, a implantação no sistema de arquivos poderá disponibilizar os arquivos do aplicativo Web para outras pessoas que poderão, por sua vez, implantá-la em servidores específicos.
@@ -117,7 +156,13 @@ Observe que se, por algum motivo (como acesso ao computador), não for possível
 - Você precisa apenas de uma implantação de teste local.
 - Você deseja examinar e potencialmente modificar os arquivos do aplicativo independentemente, antes de enviá-los a outro destino de implantação.
 
-Para saber mais, confira [Início Rápido – Implantar em uma pasta local](quickstart-deploy-to-local-folder.md)
+Para obter mais informações, consulte [início rápido – implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+
+Para obter ajuda adicional para escolher suas configurações, consulte o seguinte:
+
+- [Implantação dependente da estrutura vs. autônoma](/dotnet/core/deploying/)
+- [Identificadores de tempo de execução de destino (RID portátil, et al)](/dotnet/core/rid-catalog)
+- [Configurações de depuração e versão](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Servidor FTP/FTPS
 
@@ -157,7 +202,9 @@ Você pode criar qualquer número de perfis de implantação do servidor Web do 
 - Você deseja implantar usando credenciais diferentes das que você usa no Visual Studio ou daquelas diretamente ligadas às suas contas do Azure.
 - Você deseja excluir os arquivos do destino a cada vez que implantar.
 
-Para obter mais informações, consulte [início rápido – implantar em um site da Web](quickstart-deploy-to-a-web-site.md). Para obter ajuda para solução de problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Para obter mais informações, consulte [início rápido – implantar em um site da Web](quickstart-deploy-to-a-web-site.md).
+
+Para obter ajuda para solução de problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Importar Perfil
 
@@ -174,6 +221,14 @@ Para saber mais, consulte o seguinte:
 
 - [Importar configurações de publicação e implantar no IIS](tutorial-import-publish-settings-iis.md)
 - [Importar configurações de publicação e implantar no Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Definir configurações de implantação do .NET
+
+Para obter ajuda adicional para escolher suas configurações, consulte o seguinte:
+
+- [Implantação dependente da estrutura vs. autônoma](/dotnet/core/deploying/)
+- [Identificadores de tempo de execução de destino (RID portátil, et al)](/dotnet/core/rid-catalog)
+- [Configurações de depuração e versão](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Próximas etapas
 

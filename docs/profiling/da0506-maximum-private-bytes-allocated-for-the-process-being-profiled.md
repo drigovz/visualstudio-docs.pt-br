@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5447c21e3a1049bcb2cb86e3e0419e43fc4e953
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532087"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036802"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506: Máximo de Bytes Privados alocados para o Processo cujo perfil está sendo criado
 
@@ -26,7 +26,7 @@ ms.locfileid: "85532087"
 |-|-|
 |ID de regra|DA0506|
 |Categoria|Monitoramento de recursos|
-|Método de criação de perfil|Tudo|
+|Método de criação de perfil|Todos|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Bytes privados do processo mede a memória virtual alocada pelo processo do qual o perfil está sendo criado. O valor relatado é o máximo observado em todos os intervalos de medição.|
 |Tipo de regra|Informações|
 
@@ -46,4 +46,4 @@ ms.locfileid: "85532087"
 ## <a name="how-to-use-rule-data"></a>Como usar dados de regra
  Use o valor relatado para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de criação de perfil.
 
- Um valor máximo de bytes privados do processo que está se aproximando do limite arquitetônico do crescimento máximo de um espaço de endereço do processo pode levar a exceções de memória insuficiente. Para obter mais informações, consulte [Investigando problemas de memória](https://msdn.microsoft.com/magazine/cc163528.aspx) na Revista do MSDN.
+ Um valor máximo de bytes privados do processo que está se aproximando do limite arquitetônico do crescimento máximo de um espaço de endereço do processo pode levar a exceções de memória insuficiente. Para obter mais informações, consulte [Investigando problemas de memória](/archive/msdn-magazine/2006/november/clr-inside-out-investigating-memory-issues) na Revista do MSDN.

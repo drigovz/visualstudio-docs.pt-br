@@ -1,5 +1,6 @@
 ---
 title: Vincular um tipo de conteúdo a uma extensão de nome de arquivo
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743217"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034657"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo
 Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de nome de arquivo a ele usando as extensões de Managed Extensibility Framework do editor (MEF). Em alguns casos, a extensão de nome de arquivo já está definida por um serviço de idioma. Mas, para usá-lo com o MEF, você ainda deve vinculá-lo a um tipo de conteúdo.
@@ -101,5 +102,5 @@ Você pode definir seu próprio tipo de conteúdo e vincular uma extensão de no
     [ContentType("hid")]
     ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)

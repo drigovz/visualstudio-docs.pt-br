@@ -1,5 +1,6 @@
 ---
 title: Descarregando e recarregando projetos aninhados
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86f8f2f02258bc55f3221635fddab8ecdaaa3cf7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 154eb51014d9719b601cf87d53383f57941403a8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743246"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036815"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considerações para descarregar e recarregar projetos aninhados
 
@@ -34,7 +35,7 @@ Normalmente, quando um projeto é recarregado, o IDE gera os <xref:Microsoft.Vis
 
 Para lidar com esse processo, o projeto pai chama `QueryInterface` a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interface. `IVsFireSolutionEvents` tem funções que instruem o IDE a gerar o `OnBeforeUnloadProject` evento para descarregar o projeto aninhado e, em seguida, gerar o `OnAfterLoadProject` evento para recarregar o mesmo projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [Aninhar projetos](../../extensibility/internals/nesting-projects.md)
