@@ -1,6 +1,8 @@
 ---
-title: 'Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel'
+title: Definir o layout do formulário com um controle TableLayoutPanel
+description: Deite seu formulário com um controle TableLayoutPanel no tutorial criar um visualizador de imagem.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a0035040c3cce0c40b8462225c48aa5225b40d1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579387"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036971"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 

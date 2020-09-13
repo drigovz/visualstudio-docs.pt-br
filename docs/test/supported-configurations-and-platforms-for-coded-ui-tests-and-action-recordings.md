@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75845806"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036893"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis com testes de IU codificados e gravações de ação
 
@@ -59,11 +59,11 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 | Windows Forms 2.0 e posterior | Suporte total. **Observação:** os controles NetFx têm suporte completo, mas nem todos os controles de terceiros têm suporte. |
 | WPF 3.5 e posterior | Suporte total.<br /><br /> **Observação** Os controles NetFx têm suporte total, mas nem todos os controles de terceiros têm suporte. |
 | Windows Win32 | Pode funcionar com alguns problemas conhecidos, mas sem suporte oficial. |
-| MFC | Suporte parcial. Consulte a [estrutura de UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) para obter detalhes sobre quais recursos têm suporte. |
+| MFC | Suporte parcial. Consulte a [estrutura de UITest](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) para obter detalhes sobre quais recursos têm suporte. |
 | SharePoint | Suporte total. |
 | Aplicativos clientes do Office | Não há suporte. |
 | Cliente Web do Dynamics CRM | Suporte total. |
-| Cliente do Dynamics (Ax) 2012 | A gravação e reprodução de ações têm suporte parcial. Consulte [suporte a gravações de IU/ações codificadas do Visual Studio 10 para o Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) para obter detalhes. |
+| Cliente do Dynamics (Ax) 2012 | A gravação e reprodução de ações têm suporte parcial. Consulte [suporte a gravações de IU/ações codificadas do Visual Studio 10 para o Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012) para obter detalhes. |
 | SAP | Não há suporte. |
 | Citrix/Serviços de Terminal | Não recomendamos ações de gravação em um servidor Host da Sessão da Área de Trabalho Remota. O gravador não dá suporte à execução de várias instâncias ao mesmo tempo. |
 | PowerBuilder | Suporte parcial.<br /><br /> O suporte é habilitado na acessibilidade de extensões para controles PowerBuilder. |

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268273b39db83a831a65805a8cc1cafc28a103ec
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507983"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036919"
 ---
 # <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
@@ -147,7 +147,7 @@ Em seus aplicativos UWP, você pode habilitar a **análise da interface do usuá
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analisar o uso da GPU (Direct3D)
 
-Em aplicativos Direct3D (os componentes Direct3D devem estar no C++), é possível examinar a atividade na GPU e analisar problemas de desempenho. Para obter mais informações, consulte [Uso da GPU](/visualstudio/debugger/graphics/gpu-usage). Para usar a ferramenta, escolha **Uso da GPU** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário de interesse na criação de perfil e, em seguida, escolha **Parar coleta** para gerar um relatório.
+Em aplicativos Direct3D (os componentes Direct3D devem estar no C++), é possível examinar a atividade na GPU e analisar problemas de desempenho. Para obter mais informações, consulte [Uso da GPU](./gpu-usage.md). Para usar a ferramenta, escolha **Uso da GPU** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário de interesse na criação de perfil e, em seguida, escolha **Parar coleta** para gerar um relatório.
 
 Ao selecionar um período nos gráficos e escolher **Exibir detalhes**, uma exibição detalhada será exibida no painel inferior. Na exibição detalhada, é possível examinar as atividades que estão ocorrendo em cada CPU e GPU. Selecione eventos no painel inferior para obter pop-ups na linha do tempo. Por exemplo, selecione o eventos **Presente** para exibir pop-ups da chamada **Presente**. (As linhas verticais Vsync cinza-claras podem ser usadas como referência para entender se algumas chamadas **Presente** não têm Vsync. Deve haver uma chamada **Presente** entre cada dois Vsyncs para que o aplicativo atinja progressivamente 60 FPS.)
 
@@ -206,11 +206,11 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
 |[Alocação de objeto .NET](../profiling/dotnet-alloc-tool.md)|Sim (somente .NET)|sim|sim|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[Visualizador de eventos](../profiling/events-viewer.md)|sim|sim|sim|
 |[.NET Async](../profiling/analyze-async.md)|Sim (somente .NET)|sim|sim|
-|[Banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|no|Sim (somente ASP.NET Core)|
+|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|no|Sim (somente ASP.NET Core)|
 |[Performance Explorer](../profiling/performance-explorer.md)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 ::: moniker-end
@@ -220,7 +220,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Performance Explorer](../profiling/performance-explorer.md)|sim|no|sim|

@@ -1,5 +1,6 @@
 ---
 title: Criar controles de usuário que dão suporte à vinculação de dados simples
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1e8540a33dc5ddbead5debcbfb2cd4ddc8d9de
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: f5126c6f4c06bc52e98b952a7809ccae9c20e633
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742828"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037361"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples
 
@@ -180,7 +181,7 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 - Criando controles que suportam cenários de associação de dados mais complexos. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [criar um controle de usuário de Windows Forms que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

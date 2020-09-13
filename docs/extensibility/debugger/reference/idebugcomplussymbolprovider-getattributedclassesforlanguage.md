@@ -1,6 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c82357a79a1921986b6d7acc2cb1fcde208d9c0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 18f91e8df525cb861c9d1053b1f944352944a355
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741493"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037370"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 Recupera as classes com o atributo especificado que são implementados na linguagem de programação especificada.
@@ -53,7 +54,7 @@ no A cadeia de caracteres do atributo.
 `ppEnum`\
 fora Retorna uma enumeração das classes de atributo.
 
-## <a name="return-value"></a>Valor Retornado
+## <a name="return-value"></a>Valor de retorno
 Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
@@ -187,5 +188,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

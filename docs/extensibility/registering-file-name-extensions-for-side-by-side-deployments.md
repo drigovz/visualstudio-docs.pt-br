@@ -1,5 +1,6 @@
 ---
 title: Registrar extensões de nome de arquivo para IDEs lado a lado
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: c5ebedd2861ca96d1ad96c74a54da06578d33960
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741706"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036945"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Registrar extensões de nome de arquivo para implantações lado a lado
 Para o VSPackages implantado em um ambiente lado a lado, você deve registrar extensões de nome de arquivo para associar os arquivos com a versão correta do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . A menos que você use uma extensão de nome de arquivo específica de versão, o registro permite que os usuários abram o projeto e os arquivos de item de projeto na versão apropriada do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
