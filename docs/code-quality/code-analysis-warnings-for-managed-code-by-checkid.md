@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037231"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094220"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>Regras de análise de qualidade de código por ID de regra
 
 A tabela a seguir lista as regras de análise de qualidade de código por identificador de regra.
 
-| CheckId | Aviso | Descrição |
+| RuleId | Aviso | Descrição |
 |---------| - | - |
 | CA1000 | [CA1000: Não declarar membros estáticos em tipos genéricos](../code-quality/ca1000.md) | Quando um membro estático de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. Nesses dois casos, a sintaxe para especificar o argumento de tipo é diferente e facilmente confundida. |
 | CA1001 | [CA1001: Tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001.md) | Uma classe declara e implementa um campo de instância que é um tipo System.IDisposable, e a classe não implementa IDisposable. Uma classe que declara um campo IDisposable indiretamente possui um recurso não gerenciado e deve implementar a interface IDisposable. |
@@ -324,6 +325,7 @@ A tabela a seguir lista as regras de análise de qualidade de código por identi
 | CA1309 | [CA1309: Usar StringComparison ordinal](../code-quality/ca1309.md) | Uma operação de comparação de cadeia de caracteres não linguística não define o parâmetro StringComparison como Ordinal ou OrdinalIgnoreCase. Definindo-se explicitamente o parâmetro como StringComparison.Ordinal ou StringComparison.OrdinalIgnoreCase, o código normalmente ganha velocidade, fica mais correto e se torna mais confiável. |
 | CA1310 | [CA1310: Especificar StringComparison para garantir a exatidão](../code-quality/ca1310.md) | Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro StringComparison e usa a comparação de cadeia de caracteres específica de cultura por padrão. |
 | CA1401 | [CA1401: P/Invokes não devem estar visíveis](../code-quality/ca1401.md) | Um método público ou protegido em um tipo público tem o atributo System.Runtime.InteropServices.DllImportAttribute (também implementado pela palavra-chave Declare em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Esses métodos não devem ser expostos. |
+| CA1416 | [CA1416: validar a compatibilidade da plataforma](../code-quality/ca1416.md) | O uso de APIs dependentes de plataforma em um componente faz com que o código não funcione mais em todas as plataformas. |
 | CA1417 | [CA1417: não usar `OutAttribute` em parâmetros de cadeia de caracteres para P/Invokes](../code-quality/ca1417.md) | Parâmetros de cadeia de caracteres passados por valor com o `OutAttribute` podem desestabilizar o tempo de execução se a cadeia de caracteres for uma cadeia de caracteres interna. |
 | CA1501 | [CA1501: Evitar herança excessiva](../code-quality/ca1501.md) | Um tipo está mais de quatro níveis abaixo na hierarquia de herança. As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. |
 | CA1502 | [CA1502: Evitar complexidade excessiva](../code-quality/ca1502.md) | Esta regra mede o número de caminhos linearmente independentes por meio do método, o que é determinado pelo número e pela complexidade das ramificações condicionais. |
@@ -392,7 +394,7 @@ A tabela a seguir lista as regras de análise de qualidade de código por identi
 | CA2101 |[CA2101: especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101.md) | Um membro de invocação da plataforma permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não realiza marshaling da cadeia de caracteres explicitamente. Isso pode causar uma vulnerabilidade de segurança em potencial. |
 | CA2109 | [CA2109: Examinar manipuladores de eventos visíveis](../code-quality/ca2109.md) | Um método público ou protegido de tratamento de eventos foi detectado. Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário. |
 | CA2119 | [CA2119: Selar métodos que atendem a interfaces particulares](../code-quality/ca2119.md) | Um tipo público herdável fornece uma implementação de método substituível de uma interface (Friend no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) interna. Para corrigir uma violação dessa regra, evite que o método seja substituído fora do assembly. |
-| CA2153 |[CA2153: Evite lidar com exceções de estado corrompido](../code-quality/ca2153.md) | Exceções de estado corrompidas (CSEs) indicam que existe corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida. |
+| CA2153 |[CA2153: Evitar tratamento de Exceções de Estado Corrompido](../code-quality/ca2153.md) | Exceções de estado corrompidas (CSEs) indicam que existe corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida. |
 | CA2200 | [CA2200: Relançar para preservar detalhes da pilha](../code-quality/ca2200.md) | Uma exceção é lançada novamente e a exceção é especificada explicitamente na instrução throw. Se uma exceção for lançada novamente pela especificação da exceção na instrução throw, a lista de chamadas de método entre o método original que lançou a exceção e o método atual será perdida. |
 | CA2201 | [CA2201: Não acionar tipos de exceção reservados](../code-quality/ca2201.md) | Isso torna o erro original difícil de detectar e depurar. |
 | CA2207 | [CA2207: Inicializar campos estáticos de tipo de valor em linha](../code-quality/ca2207.md) | Um tipo de valor declara um construtor estático explícito. Para corrigir uma violação dessa regra, inicialize todos os dados estáticos quando declarados e remova o construtor estático. |
@@ -466,7 +468,7 @@ A tabela a seguir lista as regras de análise de qualidade de código por identi
 | CA5358 | [CA5358: Não usar modos de criptografia não seguros](../code-quality/ca5358.md) | Não usar modos de criptografia não seguros |
 | CA5359 | [CA5359 não desabilitar a validação de certificado](../code-quality/ca5359.md) | Um certificado pode ajudar a autenticar a identidade do servidor. Os clientes devem validar o certificado do servidor para garantir que as solicitações sejam enviadas ao servidor pretendido. Se o ServerCertificateValidationCallback sempre retornar `true` , qualquer certificado passará na validação. |
 | CA5360 | [CA5360 não chamar métodos perigosos na desserialização](../code-quality/ca5360.md) | A desserialização insegura é uma vulnerabilidade que ocorre quando dados não confiáveis são usados para proutilizar a lógica de um aplicativo, causarem um ataque de negação de serviço (DoS) ou até mesmo executar um código arbitrário quando ele estiver desserializado. Frequentemente, é possível que usuários mal-intencionados abusam esses recursos de desserialização quando o aplicativo estiver desserializando dados não confiáveis que estão sob seu controle. Especificamente, invoque métodos perigosos no processo de desserialização. Ataques de desserialização inseguros com êxito podem permitir que um invasor execute ataques, como ataques de DoS, desvios de autenticação e execução remota de código. |
-| CA5361 | [CA5361: não desabilitar o uso do Schannel de criptografia forte](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`A configuração para `true` enfraquece a criptografia usada em conexões TLS (segurança da camada de transporte) de saída. A criptografia mais fraca pode comprometer a confidencialidade da comunicação entre o aplicativo e o servidor, tornando mais fácil para os invasores bisbilhotarem dados confidenciais. |
+| CA5361 | [CA5361: Não desabilite o uso de criptografia forte do Schannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`A configuração para `true` enfraquece a criptografia usada em conexões TLS (segurança da camada de transporte) de saída. A criptografia mais fraca pode comprometer a confidencialidade da comunicação entre o aplicativo e o servidor, tornando mais fácil para os invasores bisbilhotarem dados confidenciais. |
 | CA5362 | [Ciclo de referência potencial do CA5362 no grafo de objeto desserializado](../code-quality/ca5362.md) | Se estiver desserializando dados não confiáveis, qualquer código que processe o grafo de objeto desserializado precisará manipular os ciclos de referência sem entrar em loops infinitos. Isso inclui o código que faz parte de um retorno de chamada de desserialização e o código que processa o grafo de objeto após a desserialização ser concluída. Caso contrário, um invasor pode executar um ataque de negação de serviço com dados mal-intencionados que contenham um ciclo de referência. |
 | CA5363 | [CA5363: Não desabilitar a validação de solicitação](../code-quality/ca5363.md) | A validação de solicitação é um recurso no ASP.NET que examina as solicitações HTTP e determina se elas contêm conteúdo potencialmente perigoso que pode levar a ataques de injeção, incluindo scripts entre sites. |
 | CA5364 | [CA5364: Não use protocolos de segurança preteridos](../code-quality/ca5364.md) | A segurança de camada de transporte (TLS) protege a comunicação entre computadores, mais comumente com HTTPS (Hypertext Transfer Protocol Secure). Versões de protocolo mais antigas do TLS são menos seguras do que o TLS 1,2 e o TLS 1,3 e têm mais probabilidade de ter novas vulnerabilidades. Evite versões de protocolo mais antigas para minimizar o risco. |

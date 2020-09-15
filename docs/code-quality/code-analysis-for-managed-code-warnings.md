@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034098"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094324"
 ---
 # <a name="net-code-analysis-rules"></a>Regras de análise de código .NET
 A análise de código .NET fornece regras que indicam violações de qualidade de código ou sugestões para melhorar a qualidade do código. As regras são organizadas em áreas de regras, como design, localização, desempenho e segurança. Determinadas regras são específicas para o uso da API do .NET, enquanto as regras restantes são sobre a qualidade de código genérica. Esta seção fornece discussões e exemplos detalhados para cada regra.
@@ -30,7 +30,7 @@ A análise de código .NET fornece regras que indicam violações de qualidade d
 |Item|Descrição|
 |----------|-----------------|
 |Type|O TypeName da regra.|
-|CheckId|O identificador exclusivo da regra. O CheckId e a categoria são usados para a supressão na origem de um aviso.|
+|RuleId|O identificador exclusivo da regra. RuleId e Category são usados para a supressão na origem de um aviso.|
 |Categoria|A categoria do aviso.|
 |Alteração significativa|Se a correção de uma violação da regra é uma alteração significativa. Alteração significativa significa que um assembly que tem uma dependência no destino que causou a violação não será recompilado com a nova versão fixa ou pode falhar em tempo de execução devido à alteração. Quando há várias correções disponíveis e pelo menos uma correção é uma alteração significativa e uma correção não é especificada, tanto ' quebra ' quanto ' não separável ' são especificados.|
 |Causa|O código gerenciado específico que faz com que a regra gere um aviso.|
