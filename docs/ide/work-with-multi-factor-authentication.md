@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 914acae2f5fbb9bd3f47669eea699935fcfa5e4d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038381"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093336"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Como usar o Visual Studio com contas que exigem autenticação multifator
 
@@ -50,10 +50,11 @@ Depois que o fluxo de trabalho do navegador da Web do sistema estiver habilitado
 
 Essa ação abrirá o navegador da Web padrão do sistema, solicitará que você entre em sua conta e validará qualquer política de MFA necessária.
 
-Com base em suas atividades de desenvolvimento e configuração de recursos, você pode ser solicitado a inserir novamente suas credenciais durante a sessão. Isso pode ocorrer quando você adiciona um novo recurso ou tenta acessar um recurso sem ter atendido anteriormente seus requisitos de autorização de autoridade de certificação/MFA.
+Durante o processo de entrada, você pode receber um aviso adicional solicitando que você permaneça conectado. Esse aviso provavelmente aparecerá na segunda vez que uma conta for usada para entrar. Para minimizar a necessidade de inserir novamente suas credenciais, recomendamos que você selecione **Sim**, pois isso garante que suas credenciais sejam preservadas entre as sessões do navegador.
 
-> [!NOTE] 
-> Para obter a melhor experiência, mantenha seu navegador aberto até que todas as políticas de CA/MFA sejam validadas para seus recursos. Fechar o navegador pode resultar na perda do estado de MFA criado anteriormente e pode solicitar prompts de autorização adicionais.
+:::image type="content" source="media/kmsi.png" alt-text="Continuar conectado?":::
+
+Com base em suas atividades de desenvolvimento e configuração de recursos, você ainda pode ser solicitado a inserir novamente suas credenciais durante a sessão. Isso pode ocorrer quando você adiciona um novo recurso ou tenta acessar um recurso sem ter atendido anteriormente seus requisitos de autorização de autoridade de certificação/MFA.
 
 ## <a name="reauthenticating-an-account"></a>Reautenticando uma conta  
 Se houver um problema com sua conta, o Visual Studio poderá solicitar que você insira novamente suas credenciais de conta.  
