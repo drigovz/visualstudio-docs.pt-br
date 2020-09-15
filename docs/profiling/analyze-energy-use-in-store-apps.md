@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537235"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075451"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. No menu **Depurar**, escolha **Iniciar Diagnóstico Sem Depurar**.
 
-     ![Escolha consumo de energia no Hub de diagnóstico](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Escolha consumo de energia no criador de perfil de desempenho](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Selecione **Consumo de Energia** e então **Iniciar**.
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. Na lista **Selecionar Pacote do Aplicativo Instalado**, escolha o destino.
 
-3. Escolha **Consumo de Energia** na página de hub de diagnóstico.
+3. Escolha **consumo de energia** na página criador de perfil de desempenho.
 
 4. Escolha **Iniciar** para iniciar a criação de perfil.
 

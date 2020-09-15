@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285940"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075438"
 ---
 # <a name="analyze-memory-usage"></a>Analisar o uso de memória
 
@@ -35,6 +35,6 @@ Você pode usar as ferramentas de criação de perfil sem o depurador com o Wind
 
 ## <a name="see-also"></a>Confira também
 
+- [Analisar o uso de memória sem o depurador](../profiling/memory-usage-without-debugging2.md)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
-- [Analisar o uso de memória sem o depurador](../profiling/memory-usage-without-debugging2.md)

@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Implantar um site
       href: quickstart-deploy-to-a-web-site.md
-    - name: Implantar em uma pasta local
+    - name: Fazer implantação em uma pasta
       href: quickstart-deploy-to-local-folder.md
 - name: Tutoriais
   items:

@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561582"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074950"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
-O Visual Studio oferece uma opção de medida de desempenho e ferramentas de criação de perfil. Algumas ferramentas, como uso de CPU e uso de memória, podem ser executadas com ou sem o depurador e no lançamento ou depuração de configurações de compilação. As ferramentas que aparecem na [janela ferramentas de diagnóstico](../profiling/profiling-feature-tour.md#view-performance-while-debugging) são executadas somente durante uma sessão de depuração. As ferramentas que aparecem no [criador de perfil de desempenho](../profiling/profiling-feature-tour.md#post_mortem) são executadas sem o depurador e você analisa os resultados depois de optar por parar e coletar dados (para análise pós-mortem).
+O Visual Studio oferece uma opção de medida de desempenho e ferramentas de criação de perfil. Algumas ferramentas, como uso de CPU e uso de memória, podem ser executadas com ou sem o depurador e no lançamento ou depuração de configurações de compilação. As ferramentas que aparecem na [janela ferramentas de diagnóstico](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) são executadas somente durante uma sessão de depuração. As ferramentas que aparecem no [criador de perfil de desempenho](../profiling/profiling-feature-tour.md#post_mortem) são executadas sem o depurador e você analisa os resultados depois de optar por parar e coletar dados (para análise pós-mortem).
 
 >[!NOTE]
 >É possível usar as ferramentas de desempenho de não depurador com o Windows 7 e posterior. O Windows 8 ou posterior é necessário para executar as ferramentas de criação de perfil integradas ao depurador.
 
-O Criador de Perfil de Desempenho do não depurador e as Ferramentas de Diagnóstico integradas ao depurador fornecem diferentes informações e experiências. Ferramentas integradas ao depurador mostram pontos de interrupção e valores de variável. Ferramentas de não depurador oferecem resultados mais próximos à experiência do usuário final.
+O Criador de Perfil de Desempenho do não depurador e as Ferramentas de Diagnóstico integradas ao depurador fornecem diferentes informações e experiências. As ferramentas integradas ao depurador mostram valores variáveis e permitem que você use pontos de interrupção. Ferramentas de não depurador oferecem resultados mais próximos à experiência do usuário final.
 
 Para ajudar a decidir quais ferramentas e os resultados usar, considere o seguinte:
 
-- Problemas de desempenho externos, como E/S de arquivo ou problemas na capacidade de resposta da rede, não terão uma aparência muito diferente nas ferramentas do depurador ou de não depurador.
-- Para problemas causados por chamadas com uso intensivo de CPU, pode haver diferenças consideráveis de desempenho entre compilações de versão e depuração. Verifique se o problema existe nas compilações de versão.
-- Se o problema ocorrer somente durante compilações de depuração, você provavelmente não precisará executar as ferramentas de não depurador. Para problemas de compilação de versão, decida se as ferramentas do depurador ajudarão a investigar ainda mais.
-- Os builds de versão fornecem otimizações como embutimento de constantes e de chamadas de função, remoção de caminhos de código não utilizados e armazenamento de variáveis de maneiras que não possam ser usadas pelo depurador. Os números de desempenho nas ferramentas integradas ao depurador são menos precisos, pois as compilações de depuração não têm essas otimizações.
-- O próprio depurador altera os tempos de desempenho, pois ele precisa de operações do depurador, como interceptar eventos de carregamento de exceção e módulo.
-- Os números de desempenho do build de versão nas ferramentas do Criador de Perfil de Desempenho são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração.
+- Ferramenta integrada do depurador versus ferramenta não depurador
+  - Problemas de desempenho externos, como E/S de arquivo ou problemas na capacidade de resposta da rede, não terão uma aparência muito diferente nas ferramentas do depurador ou de não depurador.
+  - O próprio depurador altera os tempos de desempenho, pois ele precisa de operações do depurador, como interceptar eventos de carregamento de exceção e módulo.
+  - Os números de desempenho do build de versão nas ferramentas do Criador de Perfil de Desempenho são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração ou para usar os recursos do depurador.
+- Depurar vs. Build de versão
+  - Para problemas causados por chamadas com uso intensivo de CPU, pode haver diferenças consideráveis de desempenho entre compilações de versão e depuração. Verifique se o problema existe nas compilações de versão.
+  - Se o problema ocorrer somente durante compilações de depuração, você provavelmente não precisará executar as ferramentas de não depurador. Para problemas de compilação de versão, decida se os recursos fornecidos pelas ferramentas integradas ao depurador ajudarão a identificar o problema.
+  - Os builds de versão fornecem otimizações como embutimento de constantes e de chamadas de função, remoção de caminhos de código não utilizados e armazenamento de variáveis de maneiras que não possam ser usadas pelo depurador. Os números de desempenho nas compilações de depuração são menos precisos, pois as compilações de depuração não têm essas otimizações.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
 
@@ -82,7 +84,7 @@ Para coletar dados de desempenho sem depuração, é possível executar as ferra
 
    Enquanto a sessão está em execução, algumas ferramentas mostram grafos de dados em tempo real na página ferramentas de diagnóstico, bem como controles para pausar e retomar a coleta de dados.
 
-    ![Captura de tela da coleta de dados no Hub de desempenho e diagnóstico](../profiling/media/diaghubcollectdata.png "Coletar dados do Hub")
+    ![Captura de tela da coleta de dados no criador de perfil de desempenho](../profiling/media/diaghubcollectdata.png "Coletar dados do Hub")
 
 1. Para encerrar a sessão de diagnóstico, selecione **Interromper coleta**.
 

@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85279868"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074963"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 
-Use a ferramenta uso de GPU no Hub de desempenho e diagnóstico do Visual Studio para entender melhor o uso de hardware de alto nível de seu aplicativo do Direct3D. Ele ajuda você a ver se o desempenho do seu aplicativo é associado à CPU ou à GPU e a obter informações sobre como você pode usar o hardware da plataforma com mais eficiência. O uso de GPU dá suporte a aplicativos que usam o Direct3D 12, o Direct3D 11 e o Direct3D 10. Ele não dá suporte a outras APIs de gráficos, como Direct2D ou OpenGL.
+Use a ferramenta uso de GPU no criador de perfil de desempenho para entender melhor o uso de hardware de alto nível do seu aplicativo do Direct3D. Ele ajuda você a ver se o desempenho do seu aplicativo é associado à CPU ou à GPU e a obter informações sobre como você pode usar o hardware da plataforma com mais eficiência. O uso de GPU dá suporte a aplicativos que usam o Direct3D 12, o Direct3D 11 e o Direct3D 10. Ele não dá suporte a outras APIs de gráficos, como Direct2D ou OpenGL.
 
 Esta é a aparência da janela de **relatório uso da GPU** :
 
@@ -43,7 +43,7 @@ Para iniciar a ferramenta Uso de GPU:
 
 2. No Hub **desempenho e diagnóstico** , marque a caixa ao lado de **uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas nas quais você esteja interessado. Você pode executar várias ferramentas de desempenho e diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.
 
-    ![Captura de tela do hub de desempenho e diagnóstico, com uso de GPU selecionado](media/gpuusageselected.png "Uso de GPU selecionado")
+    ![Captura de tela do criador de perfil de desempenho, com uso de GPU selecionado](media/gpuusageselected.png "Uso de GPU selecionado")
 
    > [!NOTE]
    > Nem todas as ferramentas de diagnóstico e desempenho podem ser usadas ao mesmo tempo.

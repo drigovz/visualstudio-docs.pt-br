@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537365"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075425"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 
-Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este artigo mostra como usar a guia **uso da CPU** das ferramentas de diagnóstico para obter dados de desempenho para seu aplicativo.
+Encontre problemas de desempenho enquanto estiver Depurando com a ferramenta de diagnóstico de **uso de CPU** integrada ao depurador.  Você também pode analisar o uso da CPU sem um depurador anexado ou direcionando a um aplicativo em execução. Para obter mais informações, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Quando o depurador pausa, a ferramenta **Uso de CPU** coleta informações sobre as funções que estão em execução no aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
-
-O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se **Uso de CPU** não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
+Quando o depurador pausa, a ferramenta de **uso da CPU** na janela de ferramentas de diagnóstico coleta informações sobre as funções que estão sendo executadas em seu aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
 
 > [!Important]
-> As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
-
-Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador anexado ou direcionando a um aplicativo em execução. Para obter mais informações, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Você também pode usar outra ferramenta de criação de perfil, [PerfTips](../profiling/perftips.md), para percorrer o código e identificar quanto tempo as funções específicas ou os blocos de código são concluídos.
-
-Você pode usar as ferramentas de criação de perfil sem o depurador com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
+> As ferramentas de diagnóstico integradas ao depurador têm suporte para o desenvolvimento do .NET no Visual Studio, incluindo ASP.NET, ASP.NET Core e para desenvolvimento nativo/C++. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
 Neste tutorial, você irá:
 
 > [!div class="checklist"]
 > * Coletar dados de uso da CPU
 > * Analisar os dados de uso da CPU
+
+Se o **uso da CPU** não fornecer os dados de que você precisa, outras ferramentas de criação de perfil no [criador de perfil de desempenho](../profiling/profiling-feature-tour.md#post_mortem) fornecerão diferentes tipos de informações que podem ser úteis para você. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede.
 
 ## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 
