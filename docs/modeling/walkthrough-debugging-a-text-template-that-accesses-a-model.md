@@ -1,18 +1,20 @@
 ---
-title: 'Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo'
+title: 'Walkthrough: Depurar modelos de texto que acessam um modelo'
+description: Fornece informações sobre como depurar um modelo de texto que acessa um modelo.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546894"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100781"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 Quando você modifica ou adiciona modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo no código-fonte ou quando compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.

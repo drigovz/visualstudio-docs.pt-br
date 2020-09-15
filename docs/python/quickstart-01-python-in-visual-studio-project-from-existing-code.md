@@ -1,21 +1,21 @@
 ---
-title: Início Rápido – Criar um projeto do Python com base em código existente
+title: Início rápido-criar um projeto Python por meio do código
 description: Neste início rápido, crie um projeto do Visual Studio para Python a partir de uma pasta existente usando um modelo adequado.
 ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39be066e63a04c08eecd92395757d09b88333965
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62429039"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100742"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Início Rápido: Criar um projeto do Python com base em código existente
 

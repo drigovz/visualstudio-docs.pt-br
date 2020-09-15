@@ -1,5 +1,6 @@
 ---
-title: 'Início rápido: usar o Visual Studio para criar um aplicativo Web Python'
+title: 'Início rápido: criar um aplicativo Web Python com o Visual Studio'
+titleSuffix: ''
 description: Neste início rápido, você usa o Visual Studio e a estrutura do Flask para criar um aplicativo Web simples em Python.
 ms.date: 03/07/2019
 ms.technology: vs-python
@@ -7,15 +8,16 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 649f933c3d0fc2962ed0f7efc2ab09449bdd72ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4318cd98de166210a8e8744840967942006b8ea6
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444941"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100507"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início rápido: crie seu primeiro aplicativo Web Python usando o Visual Studio
 
@@ -201,7 +203,7 @@ Agora você está pronto para adicionar um pouco de código Python para implemen
 Parabéns por executar seu primeiro aplicativo do Python no Visual Studio. Você aprendeu um pouco sobre como usar o Visual Studio como um IDE do Python!
 
 > [!div class="nextstepaction"]
-> [Implantar o aplicativo no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
+> [Implantar o aplicativo no serviço Azure App](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
 Como as etapas seguidas neste Início Rápido são razoavelmente genéricas, você provavelmente percebeu que elas podem e devem ser automatizadas. Essa automação é a função dos modelos de projeto do Visual Studio. Acompanhe o [Início Rápido – Criar um projeto Python usando um modelo](../python/quickstart-02-python-in-visual-studio-project-from-template.md) para obter uma demonstração que cria um aplicativo Web semelhante ao que você criou neste artigo, mas com menos etapas.
 

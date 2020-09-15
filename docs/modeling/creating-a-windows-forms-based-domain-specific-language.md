@@ -1,18 +1,20 @@
 ---
-title: Criando uma linguagem específica do domínio baseada no Windows Forms
+title: Criar uma Linguagem Específica de Domínio baseada no Windows Forms
+description: Fornece informações sobre como usar Windows Forms para exibir o estado de um modelo de linguagem específico de domínio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238355"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100447"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Criar uma linguagem específica de domínio baseada em Windows Forms
 
@@ -67,9 +69,9 @@ Ao atualizar o arquivo de definição de DSL para definir sua própria DSL, voc�
 
 ## <a name="update-the-dsl-definition"></a>Atualizar a definição de DSL
 
-A definição de DSL a seguir é usada neste passo a passos.
+A imagem a seguir é a definição de DSL usada neste passo a passos.
 
-![DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
+![Definição de DSL](../modeling/media/dsl-wpf-1.png)
 
 1. Abra DslDefinition. DSL no designer de DSL.
 
@@ -127,7 +129,7 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
      As propriedades e relações de sua classe de modelo aparecem na janela fontes de dados.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![Janela fontes de dados](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>Conectar seu modelo a um formulário
 
@@ -172,7 +174,9 @@ Agora você pode criar um novo controle de usuário que exibirá as informaçõe
 
 - Isso garante que, quando o usuário selecionar uma linha, a janela Propriedades exibirá as propriedades do elemento de modelo correspondente, em vez da linha de grade de dados.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) esquema de links entre fontes de dados e exibições.
+  ![Esquema da Associação DSL](../modeling/media/dslwpf4.png)
+  
+  Esquema de links entre fontes de dados e exibições.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Concluir as associações para a DSL
 
@@ -298,7 +302,7 @@ A solução DSL agora pode ser criada e executada, embora você queira adicionar
 
     Você deve ser capaz de editar o nome do elemento no modo de exibição de grade de dados. Você também pode excluí-lo de lá.
 
-   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Exibição de grade de dados de exemplo](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sobre o código para adicionar um elemento
 

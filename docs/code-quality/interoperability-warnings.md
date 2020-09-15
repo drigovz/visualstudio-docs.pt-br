@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 306c2477e6e5f731ed6dbf20b2cf4d03d4556467
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 9f09ccafb79a87dff5c18bb4af11a12e1b1729a4
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509907"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100494"
 ---
 # <a name="portability-and-interoperability-warnings"></a>Avisos de portabilidade e interoperabilidade
 
@@ -33,4 +33,5 @@ Os avisos de portabilidade dão suporte à portabilidade em diferentes plataform
 | Regra | Descrição |
 | - | - |
 | [CA1401: P/Invokes não devem estar visíveis](../code-quality/ca1401.md) | Um método público ou protegido em um tipo público tem o atributo System.Runtime.InteropServices.DllImportAttribute (também implementado pela palavra-chave declare em Visual Basic). Esses métodos não devem ser expostos. |
+| [CA1416: validar a compatibilidade da plataforma](../code-quality/ca1416.md) | O uso de APIs dependentes de plataforma em um componente faz com que o código não funcione mais em todas as plataformas. |
 | [CA1417: não usar `OutAttribute` em parâmetros de cadeia de caracteres para P/Invokes](../code-quality/ca1417.md) | Parâmetros de cadeia de caracteres passados por valor com o `OutAttribute` podem desestabilizar o tempo de execução se a cadeia de caracteres for uma cadeia de caracteres interna. |

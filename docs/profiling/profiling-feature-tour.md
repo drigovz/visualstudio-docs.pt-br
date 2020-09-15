@@ -1,5 +1,5 @@
 ---
-title: Medir o desempenho com ferramentas de criação de perfil
+title: Introdução às ferramentas de criação de perfil
 description: Dê uma olhada rápida em diferentes ferramentas de diagnóstico disponíveis no Visual Studio.
 ms.custom: ''
 ms.date: 09/08/2020
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebc2a2e7c4b10d835a20abcdd8392fb1851596a
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074899"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100768"
 ---
 # <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
@@ -57,7 +57,7 @@ Abra o criador de perfil de desempenho escolhendo **debug**  >  **Performance Pr
 
 ![Criador de Perfil de Desempenho](../profiling/media/prof-tour-performance-profiler.png "Criador de Perfil de Desempenho")
 
-Em alguns cenários, a janela permite que você selecione [várias ferramentas de criação de perfil](../profiling/use-multiple-profiler-tools-simultaneously.md). Ferramentas como Uso da CPU podem fornecer dados complementares que podem ser usados para ajudar na análise. Você também pode usar o [criador de perfil de linha de comando](../profiling/profile-apps-from-command-line.md) para habilitar cenários que envolvem várias ferramentas de criação de perfil.
+Para obter mais informações sobre como usar a ferramenta uso de CPU ou uso de memória no criador de perfil de desempenho vs. as ferramentas integradas ao depurador, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
 As ferramentas disponíveis no criador de perfil de desempenho incluem:
 
@@ -70,7 +70,7 @@ As ferramentas disponíveis no criador de perfil de desempenho incluem:
 
 Para ver o suporte da ferramenta de criação de perfil para diferentes tipos de aplicativo, consulte [qual ferramenta devo usar?](#which-tool-should-i-use)
 
-Para obter mais informações sobre como usar a ferramenta uso de CPU ou uso de memória no criador de perfil de desempenho vs. as ferramentas integradas ao depurador, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+Em alguns cenários, a janela permite que você selecione [várias ferramentas de criação de perfil](../profiling/use-multiple-profiler-tools-simultaneously.md). Ferramentas como Uso da CPU podem fornecer dados complementares que podem ser usados para ajudar na análise. Você também pode usar o [criador de perfil de linha de comando](../profiling/profile-apps-from-command-line.md) para habilitar cenários que envolvem várias ferramentas de criação de perfil.
 
 ## <a name="examine-performance-using-perftips"></a>Examinar o desempenho usando o PerfTips
 
