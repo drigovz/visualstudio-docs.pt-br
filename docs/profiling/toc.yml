@@ -6,7 +6,7 @@
       href: profiling-feature-tour.md
     - name: Executar ferramentas de criação de perfil com ou sem o depurador
       href: running-profiling-tools-with-or-without-the-debugger.md
-- name: Guias de Início Rápido
+- name: Inícios rápidos
   items:
     - name: Analisar o uso da CPU (gerenciado)
       href: quickstart-cpu-usage-managed.md
@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Tutoriais
   items:
-    - name: Analisar desempenho de aplicativos no Visual Studio
+    - name: Medir desempenho de aplicativos no Visual Studio
       href: beginners-guide-to-performance-profiling.md
-    - name: Uso de memória de perfil no Visual Studio
+    - name: Medir o uso de memória no Visual Studio
       href: memory-usage.md
 - name: Conceitos
   items:
