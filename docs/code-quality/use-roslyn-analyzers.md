@@ -1,5 +1,5 @@
 ---
-title: Análise de qualidade de código
+title: Configuração do analisador
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036349"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560743"
 ---
-# <a name="configure-code-quality-analysis"></a>Configurar análise de qualidade de código
+# <a name="overview"></a>Visão geral
 
-A partir do .NET 5,0, os analisadores de qualidade de código estão incluídos no SDK do .NET. (Anteriormente, você instalou esses analisadores como um pacote NuGet.) A análise de código é habilitada, por padrão, para projetos direcionados ao .NET 5,0 ou posterior. Você pode habilitar a análise de código em projetos direcionados a versões anteriores do .NET definindo a propriedade [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) como `true` . Você também pode desabilitar a análise de código para seu projeto definindo `EnableNETAnalyzers` como `false` .
-
-Cada regra ou *diagnóstico* do analisador de qualidade de código tem um estado de gravidade e supressão padrão que pode ser substituído e personalizado para seu projeto. Este artigo aborda a definição de severidades do analisador de qualidade de código e a supressão de violações do analisador.
+Cada regra ou *diagnóstico* do Roslyn Analyzer tem um estado de gravidade e supressão padrão que pode ser substituído e personalizado para seu projeto. Este artigo aborda a definição de severidades do analisador e a supressão de violações do analisador.
 
 ## <a name="configure-severity-levels"></a>Configurar níveis de severidade
 
