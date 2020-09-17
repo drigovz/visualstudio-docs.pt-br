@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114813"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713471"
 ---
 # <a name="transactionscope-activity-designer"></a>Designer de atividade de TransactionScope
 
@@ -39,7 +39,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Verdadeiro|Especifica a atividade para executar em uma única transação. Para adicionar a <xref:System.Activities.Statements.TransactionScope.Body%2A> atividade, remova uma atividade da caixa de **ferramentas** para o **corpo** de atividade no **TransactionScope** Activity Designer com dica de texto "soltar atividade aqui".|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Verdadeiro|Especifica <xref:System.Transactions.IsolationLevel> para este <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Especifica o intervalo de tempo (formatados como o 00:00: 00, que indica horas: minutos: segundos) que a transação precisará concluir. O valor padrão é 1 (00:01 minuto: 00).|
-|[System. Activities. Statements. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Verdadeiro|Especifica o valor que indica se o fluxo de trabalho deve ser anuladas se a transação nulos.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Verdadeiro|Especifica o valor que indica se o fluxo de trabalho deve ser anuladas se a transação nulos.|
 
 ## <a name="see-also"></a>Confira também
 

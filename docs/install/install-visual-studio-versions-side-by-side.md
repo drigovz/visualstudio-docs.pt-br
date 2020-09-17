@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250256"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713458"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
 
@@ -50,7 +50,7 @@ Antes de instalar as versões lado a lado, revise as seguintes condições:
 
 Ao atualizar de uma versão secundária do Visual Studio para a próxima, o instalador do Visual Studio atualizará sua instalação atual para a próxima versão nesse canal por padrão. Por exemplo, ao instalar a versão prévia do 16.6.4, o instalador tentará substituir a instalação atual do 16.6.3 preview, já que ambas as versões estão no canal de visualização 16,6. Isso ajuda a garantir que as versões mais antigas do Visual Studio não estejam ocupando espaço no seu computador. Em alguns casos específicos, pode ser útil instalar versões secundárias lado a lado. Em nosso exemplo, isso significa ter 16.6.3 e 16.6.4 no mesmo computador.
 
-1. Baixe o [arquivo bootstrapper do Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) para a versão secundária que você deseja instalar lado a lado com suas versões existentes do Visual Studio.
+1. Baixe o [arquivo bootstrapper do Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) para a versão secundária que você deseja instalar lado a lado com suas versões existentes do Visual Studio.
 2. Abra o prompt de comando no modo de administrador. Para fazer isso, abra o menu Iniciar do Windows, digite "cmd", clique com o botão direito do mouse no resultado da pesquisa do prompt de comando e selecione **Executar como administrador**. No prompt de comando, altere o diretório para a pasta onde o arquivo de bootstrapper do Visual Studio está localizado.
 3. Execute o comando a seguir, especificando um novo caminho de pasta para o local de instalação e substituindo o nome do arquivo. exe pelo nome de bootstrapper apropriado para a versão do Visual Studio que você está instalando. O nome do arquivo. exe deve corresponder ou ser semelhante a um dos seguintes arquivos:
    * vs_community.exe para Visual Studio Community
