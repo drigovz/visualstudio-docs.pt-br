@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015824"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740052"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: criar uma lista externa no SharePoint usando dados corporativos
 
@@ -68,7 +68,7 @@ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 7. Na barra de menus, escolha **projeto**  >  **Adicionar novo item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é aberta.
+     A caixa de diálogo **Adicionar novo item** é aberta.
 
 8. No painel **modelos** , escolha **modelo de conectividade de dados corporativos (somente solução de farm)**, nomeie o projeto **AdventureWorksContacts**e, em seguida, escolha o botão **Adicionar** .
 
@@ -80,7 +80,7 @@ Você precisará dos seguintes componentes para concluir este passo a passo:
 
 2. Adicione uma conexão ao banco de dados de exemplo SQL Server AdventureWorks.
 
-     Para obter mais informações, consulte [Adicionar/Modificar conexão (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Para obter mais informações, consulte [Adicionar/Modificar conexão (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140)).
 
 3. Em **Gerenciador de soluções**, escolha o nó do projeto.
 
@@ -182,9 +182,9 @@ Adicione um método localizador específico à entidade Contact usando a janela 
 
 10. Repita a etapa 6 para criar um descritor de tipo para cada um dos campos a seguir.
 
-    |Name|Nome do Tipo|
+    |Nome|Nome do Tipo|
     |----------|---------------|
-    |Nome|System.String|
+    |FirstName|System.String|
     |LastName|System.String|
     |Telefone|System.String|
     |EmailAddress|System.String|

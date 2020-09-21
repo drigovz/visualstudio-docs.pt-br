@@ -1,5 +1,6 @@
 ---
-title: Problemas de configuração de servidor/cliente em implantações do ClickOnce
+title: Problemas de configuração do servidor/cliente (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af8b864092f56150ff71d0e23b0bf59280aeb6c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250007"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811228"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e sua implantação contiver um tipo de arquivo que o Windows não reconhece, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá sucesso.

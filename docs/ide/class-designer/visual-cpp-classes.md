@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590729"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808123"
 ---
 # <a name="c-classes-in-class-designer"></a>Classes C++ no Designer de Classe
 
@@ -54,7 +54,7 @@ Clicar com o botão direito do mouse em uma forma de classe e, depois, clicar em
 > [!NOTE]
 > O comando **Mostrar Classes Derivadas** não tem suporte para código C++. Você pode exibir classes derivadas acessando **modo de exibição de classe**, expandindo o nó de tipo, expandindo a subpasta **tipos derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.
 
-Para obter mais informações sobre a herança de classes múltiplas, consulte [Herança múltipla](https://msdn.microsoft.com/library/6td5yws2.aspx) e [Classes Base Múltiplas](/cpp/cpp/multiple-base-classes).
+Para obter mais informações sobre a herança de classes múltiplas, consulte [Herança múltipla](/previous-versions/6td5yws2(v=vs.140)) e [Classes Base Múltiplas](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Classes abstratas
 
@@ -177,6 +177,6 @@ A tabela a seguir mostra alguns exemplos de conexões de classe especializada ca
 - [Trabalhando com código C++](working-with-visual-cpp-code.md)
 - [Classes e structs](/cpp/cpp/classes-and-structs-cpp)
 - [Tipos de classe anônima](/cpp/cpp/anonymous-class-types)
-- [Várias heranças](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Várias heranças](/previous-versions/6td5yws2(v=vs.140))
 - [Várias classes base](/cpp/cpp/multiple-base-classes)
 - [Modelos](/cpp/cpp/templates-cpp)

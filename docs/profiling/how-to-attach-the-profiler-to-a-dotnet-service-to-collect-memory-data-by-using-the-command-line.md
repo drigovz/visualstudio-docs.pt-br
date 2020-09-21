@@ -1,6 +1,6 @@
 ---
-title: Anexar o criador de perfil a um serviço do .NET para coletar dados de memória
-ms.custom: seodec18
+title: Anexar o criador de perfil ao serviço .NET para coletar dados de memória
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
@@ -10,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6552ca62be6de2e99b4e650daaa117e4025746cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a77d3cc8d2bb3df73542b273ec3697e0a9ccd9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328681"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811065"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar dados da memória usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-net-framework-service-to-collect-memory-data-by-using-the-command-line"></a>Como: anexar o criador de perfil a um serviço de .NET Framework para coletar dados de memória usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço .NET Framework e coletar dados de memória. É possível coletar dados sobre o número e tamanho das alocações de memória, bem como sobre o tempo de vida de objetos de memória.
 
 > [!NOTE]

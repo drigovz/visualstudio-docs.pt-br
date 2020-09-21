@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87972467"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810113"
 ---
 # <a name="developer-community-guidelines"></a>Diretrizes do Developer Community
 
@@ -57,7 +57,7 @@ Mesmo com problemas que incluem detalhes avançados, talvez não seja possível 
 
 A separação de um problema é um processo de várias etapas que é feito de forma colaborativa na equipe de recursos. A triagem geralmente leva uma semana, mas pode levar mais tempo. O objetivo da separação é fornecer uma compreensão clara do que acontecerá com o seu problema. Por exemplo, após a triagem, você saberá se planejamos corrigir seu problema ou aguardar mais comentários da Comunidade.
 
-Depois de relatar um problema, os estados indicam onde seus envios estão no seu ciclo de vida. À medida que as equipes de produtos do Visual Studio revisam seus comentários, elas as definem com um estado apropriado. Acompanhe o progresso dos relatórios de problemas referenciando os [Estados e as perguntas frequentes do problema](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Depois de relatar um problema, os estados indicam onde seus envios estão no seu ciclo de vida. À medida que as equipes de produtos do Visual Studio revisam seus comentários, elas as definem com um estado apropriado. Acompanhe o progresso dos relatórios de problemas referenciando os [Estados e as perguntas frequentes do problema](./report-a-problem.md).
 
 Quando faltam informações importantes no problema, atribuímos o estado de _mais informações_ . Comentamos o problema com as informações específicas de que precisamos e você receberá uma notificação por email. Se não recebermos as informações dentro de sete dias, enviaremos um lembrete. Depois disso, fechamos o tíquete após 14 dias de inatividade.
 
@@ -78,8 +78,8 @@ Quando isso acontecer, fecharemos o problema e solicitaremos que você o abra co
 
 #### <a name="additional-information"></a>Informações adicionais
 
-- [Como aumentar as chances de um problema de desempenho ser corrigido](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Solucionar problemas e criar logs para problemas do MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Como aumentar as chances de um problema de desempenho ser corrigido](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Solucionar problemas e criar logs para problemas do MSBuild](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Gerenciando sugestões de recursos
 
@@ -91,7 +91,7 @@ Em nosso processo de tomada de decisão, examinamos as seguintes característica
 
 - Ele corresponde à nossa direção geral do produto?
 - Podemos criar e mantê-lo?
-- Ele se alinha com nossa estratégia geral de [roteiro](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
+- Ele se alinha com nossa estratégia geral de [roteiro](/visualstudio/productinfo/vs-roadmap) ?
 - Ele tem suporte da Comunidade, conforme indicado por votos e comentários?
 - Nós adoramos isso, mesmo com baixo suporte da Comunidade?
 
@@ -99,7 +99,7 @@ Quando não for possível responder "Sim" a qualquer uma dessas perguntas, vamos
 
 Se uma sugestão não corresponder à nossa direção geral do produto, nós a fecharemos como *fora do escopo*. Por exemplo, poderemos ter investimentos semelhantes em outros membros da família de produtos Visual Studio. Ou o recurso sugerido pode ser relevante apenas para algumas pessoas, tornando uma extensão mais adequada para fornecê-la.
 
-Acompanhe o progresso de sua sugestão de recurso referenciando os [Estados de sugestão e as perguntas frequentes](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Acompanhe o progresso de sua sugestão de recurso referenciando os [Estados de sugestão e as perguntas frequentes](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Etiqueta de discussão
 
@@ -111,7 +111,7 @@ Quaisquer violações no etiqueta de discussão podem levar à remoção do come
 
 ## <a name="data-privacy"></a>Privacidade dos dados
 
-Comentários e respostas são visíveis publicamente, mas todos os arquivos anexados são compartilhados de forma privada somente com a Microsoft. Essa visibilidade é benéfica porque permite que toda a Comunidade Veja os problemas e soluções encontrados por outros usuários. Se você estiver preocupado com a privacidade de seus dados ou identidade, terá opções. Leia mais sobre a [privacidade de dados da comunidade de desenvolvedores](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+Comentários e respostas são visíveis publicamente, mas todos os arquivos anexados são compartilhados de forma privada somente com a Microsoft. Essa visibilidade é benéfica porque permite que toda a Comunidade Veja os problemas e soluções encontrados por outros usuários. Se você estiver preocupado com a privacidade de seus dados ou identidade, terá opções. Leia mais sobre a [privacidade de dados da comunidade de desenvolvedores](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

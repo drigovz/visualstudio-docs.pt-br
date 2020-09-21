@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238238"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810816"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionar uma propriedade de controle a uma definição de Linguagem Específica de Domínio
 
@@ -26,7 +26,7 @@ Uma propriedade de *domínio de rastreamento* é uma propriedade que pode ser at
 
 Por exemplo, no Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), a propriedade nome de exibição de uma classe de domínio tem um valor padrão que é calculado usando o nome da classe de domínio, mas um usuário pode alterar o valor em tempo de design ou redefini-lo para o valor calculado.
 
-Neste tutorial, você cria uma DSL (linguagem específica de domínio) que tem uma propriedade de rastreamento de namespace que tem um valor padrão baseado na propriedade de namespace padrão do modelo. Para obter mais informações sobre propriedades de rastreamento, consulte [definindo propriedades de rastreamento](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+Neste tutorial, você cria uma DSL (linguagem específica de domínio) que tem uma propriedade de rastreamento de namespace que tem um valor padrão baseado na propriedade de namespace padrão do modelo. Para obter mais informações sobre propriedades de rastreamento, consulte [definindo propriedades de rastreamento](/previous-versions/cc825929(v=vs.100)).
 
 - As ferramentas DSL dão suporte ao rastreamento de descritores de propriedade. No entanto, o designer de DSL não pode ser usado para adicionar uma propriedade de controle a um idioma. Portanto, você deve adicionar um código personalizado para definir e implementar a propriedade de controle.
 

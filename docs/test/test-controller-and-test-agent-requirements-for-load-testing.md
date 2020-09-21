@@ -1,5 +1,6 @@
 ---
-title: Test Controller e requisitos de Test Agent para testes de carga
+title: Requisitos do Test Controller/Test Agent (teste de carga)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588636"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810543"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos do controlador de teste e do agente de teste para teste de carga
 
@@ -30,7 +31,7 @@ Os computadores do agente de teste e do controlador de teste têm requisitos de 
 
 A tabela a seguir mostra os requisitos de hardware recomendados para a implantação de um controlador de teste e de agentes de teste.
 
-|**Configuração**|**Componente**|**CPU**|**HD**|**Memória**|
+|**Configuration**|**Componente**|**CPU**|**HD**|**Memória**|
 |-|-------------------|-|------------|-|
 |< 500 usuários virtuais|Agente de teste|2,6 GHz|10 GB|2 GB|
 |< 1000 usuários virtuais|Agente de teste|Processador duplo de 2,6 GHz|10 GB|2 GB|

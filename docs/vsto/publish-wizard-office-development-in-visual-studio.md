@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558180"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810974"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.
@@ -49,7 +49,7 @@ ms.locfileid: "77558180"
 > Há mais considerações se o computador de destino estiver executando o Windows Vista. Você deve ser um administrador no computador com Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o diretório de *publicação \\ * , independentemente de você ter o IIS instalado.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual é o caminho de instalação padrão nos computadores dos usuários finais?
- O caminho de instalação é opcional. Você pode definir o caminho de instalação mais tarde, se preferir. Para obter detalhes, consulte [como alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ O caminho de instalação é opcional. Você pode definir o caminho de instalação mais tarde, se preferir. Para obter detalhes, consulte [como alterar o caminho de instalação de uma solução do Office](/previous-versions/bb608626(v=vs.110)).
 
  O caminho de instalação é o diretório do qual o usuário final irá instalar a personalização. Ele também é o caminho que será usado pela solução para verificar se há atualizações. O **Assistente de publicação** não implantará a solução nesse local, a menos que o caminho seja o mesmo que você inseriu na caixa **especificar o local para publicar este aplicativo** na página anterior.
 

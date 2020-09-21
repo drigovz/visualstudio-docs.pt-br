@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801562"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811039"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801562"
 A janela **interativa** do Visual Studio para Python fornece uma experiência de repl (Read-Evaluate-Print-loop) rica que reduz muito o ciclo de edição de compilação e depuração usual. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
 > [!NOTE]
-> Para problemas com REPL, verifique se os pacotes `ipython` e `ipykernel` estão instalados e, para obter ajuda na instalação dos pacotes, confira a [guia de pacotes de ambientes Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Para problemas com REPL, verifique se os pacotes `ipython` e `ipykernel` estão instalados e, para obter ajuda na instalação dos pacotes, confira a [guia de pacotes de ambientes Python](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Abra a janela **Interativa** clicando com o botão direito do mouse no ambiente de projeto do Python no **Gerenciador de Soluções** (como **Python 3.6 (32 bits)**, mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir**  >  **outras**  >  **janelas interativas do Python** do Windows no menu principal do Visual Studio.
 

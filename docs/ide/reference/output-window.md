@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567977"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810357"
 ---
 # <a name="output-window"></a>janela Saída
 
@@ -76,7 +76,7 @@ Se você usar a rolagem automática na Janela de **Saída** e, em seguida, naveg
 ## <a name="see-also"></a>Confira também
 
 - [Mensagens de diagnóstico na janela de saída](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Como controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Como controlar a Janela de Saída](/previous-versions/ht6z4e28(v=vs.140))
 - [Compilar e criar](../../ide/compiling-and-building-in-visual-studio.md)
 - [Noções sobre configurações de build](../../ide/understanding-build-configurations.md)
 - [Visão geral da biblioteca de classes](/dotnet/standard/class-library-overview)

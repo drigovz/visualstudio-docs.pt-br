@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290049"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810344"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Simplificar a refatoração de expressão condicional
 
@@ -22,13 +22,13 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O que:** Permite simplificar uma [expressão condicional](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+**O que:** Permite simplificar uma [expressão condicional](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 **Quando:** Você deseja remover o código desnecessário para fornecer mais clareza.
 
 **Por que:** Simplificar uma expressão condicional pode fornecer mais clareza e sintaxe concisa. Essa ferramenta de refatoração executará a tarefa automaticamente em vez de fazer isso manualmente.
 
-## <a name="how-to"></a>Como fazer
+## <a name="how-to"></a>Instruções
 
 1. Coloque o cursor na expressão condicional:
 

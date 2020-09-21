@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386843"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809512"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -131,7 +131,7 @@ Para obter mais informações, veja [Introducing Live Unit Testing](../test/live
 
 Testes automatizados são uma parte importante de qualquer pipeline de DevOps. Ele permite que você teste e libere sua solução de modo consistente e confiável em ciclos muito mais curtos. Fluxos de CI/CD (integração contínua e entrega contínua) podem ajudar a tornar o processo mais eficiente.
 
-Para saber mais sobre testes automatizados, confira a postagem no blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Pipeline de CI/CD para testes automatizados no DevOps).
+Para saber mais sobre testes automatizados, confira a postagem no blog [CI/CD pipeline for automated tests in DevOps](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently) (Pipeline de CI/CD para testes automatizados no DevOps).
 
 E, para obter mais informações sobre as novidades na extensão de DevLabs [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), confira a postagem no blog [Committing with Confidence: Commit Time Code Quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/) (Confirmação com segurança: qualidade do código da hora de confirmação).
 

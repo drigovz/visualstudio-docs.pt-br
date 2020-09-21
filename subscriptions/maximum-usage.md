@@ -1,18 +1,18 @@
 ---
 title: Usar o recurso de Uso Máximo no Portal de Administração
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 04/07/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80808354"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807931"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usar o recurso de uso máximo para controlar o número de assinaturas atribuídas
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 
@@ -24,15 +24,17 @@ Um novo recurso no portal de administração de assinaturas do Visual Studio aju
 Para ver o número máximo de assinaturas atribuídas para qualquer nível de assinatura e de contrato:
 1. Selecione o contrato que você deseja exibir na lista suspensa na parte superior esquerda do portal. (Se você tiver apenas um único contrato, ele já estará selecionado.)
 2. Clique no ícone de **uso máximo** que é o terceiro ícone na parte superior no lado esquerdo da grade do Assinante.  
+
     > [!div class="mx-imgBorder"]
-    > ![Menu Uso Máximo](_img/maximum-usage/maximum-usage-menu.png)
+    > ![Retirada máxima de uso](_img/maximum-usage/maximum-usage-menu.png "Clique no botão uso máximo para ver o número máximo de cada tipo de assinatura que você atribuiu.")
+
 3. O "uso máximo de 12 meses" será exibido e o número máximo de assinaturas atribuídas no ano passado para cada nível será exibido, junto com o mês em que você atingiu o pico.    
 
 ## <a name="view-your-assignment-history"></a>Exibir o histórico de atribuições
 Além de ver o pico de atribuições para cada nível de assinatura, você pode ver uma conta em execução da atividade no contrato, incluindo compras e atribuições, clicando no botão **Exportar o relatório completo**.  (Talvez seja necessário rolar para baixo para ver o botão.)  
 
 > [!div class="mx-imgBorder"]
-> ![Relatório Completo do Uso Máximo](_img/maximum-usage/maximum-usage-full-report.png)
+> ![Relatório Completo do Uso Máximo](_img/maximum-usage/maximum-usage-full-report.png "O relatório completo inclui um registro de todas as suas compras e atribuições de assinatura.")
 
 Para cada nível de assinatura, o relatório mostra a data em que você atingiu um novo nível de atribuição máxima e o número de assinaturas que você comprou a partir dessa data, permitindo que você veja facilmente qualquer uma das datas em que você tinha superalocações.  
 

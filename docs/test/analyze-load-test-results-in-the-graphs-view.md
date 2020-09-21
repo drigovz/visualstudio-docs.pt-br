@@ -1,5 +1,6 @@
 ---
-title: Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
+title: Analisar resultados de teste de carga – exibição de gráficos (analisador de testes de carga)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591262"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810647"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -67,11 +68,11 @@ A legenda contém as seguintes colunas:
 |Instância|O nome da instância do contador.|
 |Categoria|O nome da categoria do contador.|
 |Computador|O nome do computador para o qual o contador é coletado.|
-|Cor|A cor da linha no gráfico.|
+|Color|A cor da linha no gráfico.|
 |Intervalo|Indica o número que é representado por 100 no gráfico desse contador. Por exemplo, para um intervalo cujo valor superior é 10.000, o rótulo 100 na parte superior do gráfico representa 10.000.|
 |Mín|Indica o valor mínimo do contador em milissegundos.|
-|Max|Indica o valor máximo do contador em milissegundos.|
-|Avg|Indica o valor médio do contador em milissegundos.|
+|Máx|Indica o valor máximo do contador em milissegundos.|
+|Méd|Indica o valor médio do contador em milissegundos.|
 |Último|Mostra o valor do contador durante o intervalo de amostragem mais recente em milissegundos.|
 
 ## <a name="tasks"></a>Tarefas

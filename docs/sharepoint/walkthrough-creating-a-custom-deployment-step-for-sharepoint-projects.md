@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015889"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740013"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Walkthrough: criar uma etapa de implantação personalizada para projetos do SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui muitas etapas de implantação internas, mas você também pode criar as suas próprias.
@@ -190,7 +190,7 @@ ms.locfileid: "86015889"
 
 1. No **Gerenciador de soluções**, no projeto **UpgradeDeploymentStep** , abra o menu de atalho para o arquivo **Source. Extension. vsixmanifest** e, em seguida, escolha **abrir**.
 
-     O Visual Studio abre o arquivo no editor de manifesto. O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     O Visual Studio abre o arquivo no editor de manifesto. O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Na caixa **nome do produto** , digite **etapa de implantação de atualização para projetos do SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015889"
 10. Na lista **tipo** , digite **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [elemento Asset (esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [elemento Asset (esquema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Na lista **origem** , escolha **um projeto na solução atual**.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46b0e7ea6cad5cb96117dedaa28ba6c4505a90b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 334344a2ffec5e084cb2e199a128b4583266af9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189651"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810504"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Alterações no design de projetos do Office direcionados para o .NET Framework 4 ou o .NET Framework 4,5
   A partir do [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , o Visual Studio introduziu algumas alterações no design de projetos do Office direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior. Se você estiver familiarizado com projetos do Office em versões anteriores do Visual Studio, deve estar ciente dessas alterações antes de desenvolver projetos do Office direcionados a essas versões do .NET Framework 4,0 ou posterior. Por padrão, todos os projetos que você cria usando o Visual Studio 2013 ou posterior direcionam o .NET Framework 4,0 ou posterior.
@@ -58,5 +58,5 @@ ms.locfileid: "73189651"
 
 ## <a name="see-also"></a>Confira também
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [O que há de novo no desenvolvimento do Office](https://msdn.microsoft.com/library/bf054af2-c896-4723-aa15-6381145b14bb)
+- [O que há de novo no desenvolvimento do Office](/previous-versions/86bkz018(v=vs.110))
 - [Visão geral do Ferramentas do Visual Studio para Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)

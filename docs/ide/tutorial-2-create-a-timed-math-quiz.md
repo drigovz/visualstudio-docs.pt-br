@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579309"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810842"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Criar um teste de matemática temporizado
 
@@ -58,6 +58,6 @@ Para iniciar o tutorial, comece com a **[etapa 1: criar um projeto e adicionar r
 
 ## <a name="see-also"></a>Confira também
 
-* [Mais tutoriais sobre C#](/visualstudio/get-started/csharp/)
-* [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Mais tutoriais sobre C#](../get-started/csharp/index.yml)
+* [Tutoriais de Visual Basic](../get-started/visual-basic/index.yml)
 * [Tutoriais do C++](/cpp/get-started/tutorial-console-cpp)

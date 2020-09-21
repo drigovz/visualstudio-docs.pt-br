@@ -51,7 +51,7 @@
                 - name: Atualizando projetos do Excel e do Word
                   href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Atualizando as personalizações da Faixa de Opções em projetos do Office
-                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                  href: ./update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md
                 - name: Atualizando as regiões do formulário em projetos do Outlook
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Arquitetura de soluções do Office no Visual Studio

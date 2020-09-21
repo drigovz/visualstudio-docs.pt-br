@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f0b35b54ddb383111ee060225528d5942b1058
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520850"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811143"
 ---
 # <a name="properties-of-port-shapes"></a>Propriedades de formas de porta
 Você pode usar formas de porta para representar classes de domínio no designer gerado.
@@ -27,7 +27,7 @@ Você pode usar formas de porta para representar classes de domínio no designer
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
 |Geometria|A geometria desta forma (retângulo, retângulo arredondado, elipse ou círculo).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
@@ -41,7 +41,7 @@ Você pode usar formas de porta para representar classes de domínio no designer
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte que é gerada a partir da porta ( `none` , `abstract` ou `sealed` ).|nenhum|
 |Porta base|A classe base dessa forma.|(nenhum)|
-|Name|O nome desta forma.|Nome atual|
+|Nome|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -55,4 +55,4 @@ Você pode usar formas de porta para representar classes de domínio no designer
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

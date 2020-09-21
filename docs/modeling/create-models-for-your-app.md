@@ -21,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452832785db879e75825b1c862e8e9b1b6e69f1d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590521"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810803"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
@@ -50,7 +50,7 @@ Para visualizar a arquitetura de um sistema ou de um código existente, crie os 
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e comunicar as necessidades dos usuários.|
 |[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|Use modelos para descrever a estrutura geral e o comportamento do seu sistema e garantir que ele atenda às necessidades dos usuários.|
 |[Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)|Certifique-se de que seu software permaneça consistente com as necessidades de seus usuários e a arquitetura geral do seu sistema.|
-|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar seu sistema durante seu desenvolvimento.|
+|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento ágil](/previous-versions/ff398061(v=vs.140))|Use modelos para ajudá-lo a entender e alterar seu sistema durante seu desenvolvimento.|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto grande ou médio.|
 
 ## <a name="resources"></a>Recursos

@@ -1,5 +1,6 @@
 ---
-title: Linha de comando do profiler-instrumento para obter detalhes de tempo do serviço
+title: Linha de comando do profiler – obter dados de tempo para um serviço
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331789"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810751"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Coletar dados de tempo detalhados para serviços usando o método de instrumentação por meio da linha de comando do criador de perfil
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para serviços do Windows usando o método de instrumentação da linha de comando.

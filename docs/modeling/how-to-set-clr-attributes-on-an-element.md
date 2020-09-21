@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebda963bf1afa55fa8d7f98774c72a75d242ceef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49551a5e96e3c354b54b6b2ba7cedf1ba2ab4470
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532451"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811195"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Como definir atributos CLR em um elemento
 Atributos personalizados são atributos especiais que podem ser adicionados a elementos de domínio, formas, conectores e diagramas. Você pode adicionar qualquer atributo que herda da `System.Attribute` classe.
@@ -43,4 +43,4 @@ Atributos personalizados são atributos especiais que podem ser adicionados a el
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

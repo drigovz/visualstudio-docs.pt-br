@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27263e596c1e0e6e34f62e5125ffb070fc0f2fbb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532283"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810074"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriedades de formas de compartimento
 As formas de compartimento são uma das formas que você pode usar para exibir uma classe de domínio em uma linguagem específica de domínio. Você pode expandir e recolher os compartimentos.
@@ -28,7 +28,7 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 |Propriedade|Descrição|Padrão|
 |-|-|-|
 |Padrão expandir estado de recolhimento|Se `Expanded` , os compartimentos são mostrados na criação. Se `Collapsed` não forem.|Expanded|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
 |Geometria|A geometria dessa forma (retângulo ou retângulo arredondado).|Retângulo|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
@@ -43,7 +43,7 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de compartimento `none` ( `abstract` ou `sealed` ).|Nenhum|
 |Forma do compartimento de base|A classe base dessa forma.|(nenhum)|
-|Name|O nome desta forma.|Nome atual|
+|Nome|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -57,4 +57,4 @@ As formas de compartimento são uma das formas que você pode usar para exibir u
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

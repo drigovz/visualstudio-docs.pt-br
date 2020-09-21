@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801315"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810370"
 ---
 # <a name="add-file-header"></a>Adicionar cabeçalho de arquivo
 
@@ -22,15 +22,15 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O que:** Adicione cabeçalhos de arquivo a arquivos, projetos e soluções existentes usando um [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+**O que:** Adicione cabeçalhos de arquivo a arquivos, projetos e soluções existentes usando um [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 **Quando:** Você deseja adicionar facilmente um cabeçalho de arquivo a arquivos, projetos e soluções.
 
 **Por que:** Sua equipe exige que você inclua um cabeçalho de arquivo para fins de direitos autorais. 
 
-## <a name="how-to"></a>Como fazer
+## <a name="how-to"></a>Instruções
 
-1. Adicione um [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) a um projeto ou solução se você ainda não tiver um.
+1. Adicione um [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) a um projeto ou solução se você ainda não tiver um.
 
 2. Adicione a seguinte regra ao arquivo EditorConfig: *file_header_template*.
 

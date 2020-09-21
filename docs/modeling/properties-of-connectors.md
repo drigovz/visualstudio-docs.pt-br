@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532269"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810061"
 ---
 # <a name="properties-of-connectors"></a>Propriedades de conectores
 Os conectores representam relações de domínio em um designer gerado.
@@ -25,7 +25,7 @@ Os conectores representam relações de domínio em um designer gerado.
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor|A cor deste conector.|Preto|
+|Color|A cor deste conector.|Preto|
 |Estilo do tracejado|O estilo de tracejado da linha para este conector (sólido, traço, ponto, travessão ponto, travessão ponto ponto ou personalizado).|Sólido|
 |Estilo de extremidade de origem|O estilo de extremidade de origem deste conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Nenhum|
 |Estilo final de destino|O estilo final de destino para esse conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Nenhum|
@@ -37,7 +37,7 @@ Os conectores representam relações de domínio em um designer gerado.
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir do conector ( `none` `abstract` ou `sealed` ).|nenhum|
 |Conector base|A classe base deste conector.|(nenhum)|
-|Name|O nome deste conector.|Nome atual|
+|Nome|O nome deste conector.|Nome atual|
 |Namespace|O namespace que é afiliado a esse conector.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|\<none>|
 |Observações|Observações informais que estão associadas a este conector.|\<none>|
@@ -50,4 +50,4 @@ Os conectores representam relações de domínio em um designer gerado.
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014635"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740091"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Walkthrough: chamando o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores
   Este tutorial demonstra como chamar o modelo de objeto do cliente do SharePoint de uma extensão para o nó **conexões do SharePoint** no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -192,7 +192,7 @@ O conhecimento dos seguintes conceitos é útil, mas não é necessário, para c
 
 1. No **Gerenciador de soluções**, no projeto **WebPartNode** , abra o arquivo **Source. Extension. vsixmanifest** no editor de manifesto.
 
-     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Na caixa **nome do produto** , insira o **nó Galeria de Web parts para Gerenciador de servidores**.
 

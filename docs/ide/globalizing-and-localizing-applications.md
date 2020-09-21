@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eebdccf44580442b87e3d31e33ddcd7052838306
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565117"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810895"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desenvolver aplicativos localizados e globalizados
 
@@ -43,7 +43,7 @@ Por exemplo, o sistema do projeto dos aplicativos Windows Forms pode gerar arqui
 
 - Aplicativos Web
 
-   Os serviços Web dão suporte ao recebimento e ao envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a essas funcionalidades bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para obter mais informações, consulte [suporte bidirecional para aplicativos web ASP.net](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+   Os serviços Web dão suporte ao recebimento e ao envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a essas funcionalidades bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para obter mais informações, consulte [suporte bidirecional para aplicativos web ASP.net](/previous-versions/6eedwbtt(v=vs.140)).
 
 > [!NOTE]
 > Os aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.

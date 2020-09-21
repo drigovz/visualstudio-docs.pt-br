@@ -1,5 +1,6 @@
 ---
-title: VSPerfCmd-anexar o criador de perfil ao serviço nativo para obter as estatísticas do aplicativo
+title: Anexar criador de perfil ao serviço nativo para obter estatísticas do aplicativo
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
@@ -9,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f45d08a82bdc3f6807f9a4d5a0cb31dc157e4c9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328655"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808009"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>Como: anexar o criador de perfil a um serviço nativo para coletar estatísticas de aplicativo usando a linha de comando (VSPerfCmd)
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço nativo e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]

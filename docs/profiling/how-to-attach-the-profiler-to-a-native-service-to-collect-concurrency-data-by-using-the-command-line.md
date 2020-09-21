@@ -1,5 +1,6 @@
 ---
-title: VSPerfCmd-anexar o criador de perfil ao serviço nativo para obter dados de simultaneidade
+title: Anexar criador de perfil ao serviço nativo para obter dados de simultaneidade
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
@@ -9,14 +10,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 202b7e3f51ff16af15e755ad070813c7c2777744
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329465"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807996"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>Como: anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando (VSPerfCmd)
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço nativo (C/C++) e coletar dados de simultaneidade de thread e do processo usando o método de amostragem.
 
 > [!NOTE]
