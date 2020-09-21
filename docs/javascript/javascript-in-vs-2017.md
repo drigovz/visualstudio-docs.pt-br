@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649624"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739883"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -35,7 +35,7 @@ O Visual Studio agora dá suporte à sintaxe para atualizações da linguagem EC
 O JavaScript ainda está em evolução enquanto uma linguagem de programação e [TC39](https://www.ecma-international.org/memento/tc39-m.htm) é o comitê responsável por fazer atualizações.
 ECMAScript 2015 é uma atualização para a linguagem JavaScript que traz novas sintaxes e funcionalidades úteis. Para um mergulho profundo nos recursos da ES6, confira [este](http://es6-features.org/#Constants) site de referência.
 
-Além de suporte para ECMAScript 2015, o Visual Studio também dá suporte a ECMAScript 2016 e terá suporte para versões futuras do ECMAScript conforme elas forem lançadas. Para se manter atualizado com TC39 e as alterações mais recentes no ECMAScript, execute o trabalho no [GitHub](https://github.com/tc39).
+Além de suporte para ECMAScript 2015, o Visual Studio também dá suporte a ECMAScript 2016 e terá suporte para versões futuras do ECMAScript conforme elas forem lançadas. Para acompanhar o TC39 e as últimas alterações no ECMAScript, siga seu trabalho no [GitHub](https://github.com/tc39).
 
 ### <a name="transpile-javascript"></a>Transcompilar JavaScript
 
@@ -116,7 +116,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>IntelliSense aprimorado
 
-O JavaScript IntelliSense em [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] agora exibirá muito mais informações sobre listas de parâmetros e de membros. Essas novas informações são fornecidas pelo serviço de linguagem TypeScript, que usa a análise estática nos bastidores para entender melhor o código. Você pode ler mais sobre a nova experiência de IntelliSense e sobre como ele funciona [aqui](/visualstudio/ide/javascript-intellisense/).
+O JavaScript IntelliSense em [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] agora exibirá muito mais informações sobre listas de parâmetros e de membros. Essas novas informações são fornecidas pelo serviço de linguagem TypeScript, que usa a análise estática nos bastidores para entender melhor o código. Você pode ler mais sobre a nova experiência de IntelliSense e sobre como ele funciona [aqui](../ide/javascript-intellisense.md).
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> Suporte à sintaxe JSX
 
@@ -241,7 +241,7 @@ As alterações mais importantes são a substituição de VSDoc com JSDoc, a rem
 
 Anteriormente era muito difícil compreender, a qualquer momento, quais arquivos que estavam no seu escopo do IntelliSense. Às vezes era desejável ter todos os arquivos no escopo, outras vezes não era, e isso levava a configurações complexas envolvendo o gerenciamento manual de referências. No futuro, você não precisará pensar sobre gerenciamento de referência e, portanto, não precisará de comentários, referências ou arquivos `_references.js` com barras triplas.
 
-Consulte a página [JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/) para obter mais informações sobre o funcionamento do IntelliSense.
+Consulte a página [JavaScript IntelliSense](../ide/javascript-intellisense.md) para obter mais informações sobre o funcionamento do IntelliSense.
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +250,7 @@ Não há mais suporte para o VSDoc em favor do [JSDoc](https://jsdoc.app/about-g
 
 ### <a name="intellisensejs-extensions"></a>Extensões `.intellisense.js`
 
-Anteriormente, você podia criar [extensões do IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) que permitiam que você adicionasse resultados de conclusão personalizados para bibliotecas de terceiros.
+Anteriormente, você podia criar [extensões do IntelliSense](../vs-2015/ide/extending-javascript-intellisense.md) que permitiam que você adicionasse resultados de conclusão personalizados para bibliotecas de terceiros.
 Essas extensões eram bastante difíceis de gravar e instalar e referenciá-las era trabalhoso, então com a atualização, o novo serviço de linguagem não dará suporte a esses arquivos.
 Como uma alternativa mais fácil, você pode escrever um arquivo de definição de TypeScript para fornecer os mesmos benefícios do IntelliSense que as antigas extensões `.intellisense.js`.
 Você pode aprender mais sobre a criação de arquivos de declaração (`.d.ts`) [aqui](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

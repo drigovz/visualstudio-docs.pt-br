@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5963faa5acb72ab0c94ca6b346456d83276e361
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445236"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90838704"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Registrando extensões do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Você pode desenvolver um assembly que estende uma versão específica do .NET F
   
  Por exemplo, suponha que a empresa Trey Research desenvolveu uma biblioteca que estende o .NET Framework 4 e deseja que os assemblies de biblioteca apareçam na caixa de diálogo **Adicionar Referências** quando um projeto for voltado para o .NET Framework 4. Suponha também que os assemblies são de 32 bits em execução em um computador de 32 bits ou assemblies de 64 bits que são executados em um computador de 64 bits e que eles serão instalados na pasta C:\TreyResearch\Extensions4\.  
   
- Registre essa pasta usando esta chave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Forneça esse valor padrão à chave: C:\TreyResearch\Extensions4.  
+ Registre essa pasta usando essa chave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Forneça o seguinte valor padrão para a chave: C:\TreyResearch\Extensions4.  
   
 > [!NOTE]
 > O número de build da versão do .NET Framework pode ser diferente.  
   
  Para registrar um assembly de 32 bits em um computador de 64 bits, use o nó Wow6432, por exemplo: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\.  
   
-## <a name="see-also"></a>Consulte também  
- [Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+## <a name="see-also"></a>Consulte Também  
+ [Integração do Visual Studio](../msbuild/visual-studio-integration-msbuild.md)

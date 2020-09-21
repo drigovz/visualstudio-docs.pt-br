@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar clientes e servidores usando a depuração RPC COM | Microsoft Docs'
+title: Como depurar clientes e servidores COM usando a depuração RPC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,20 +27,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384031"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838750"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como: Depurar clientes e servidores COM usando a depuração RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como depurar clientes e servidores COM usando a depuração RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar a depuração de chamada de procedimento remoto (RPC) para depurar aplicativos cliente/servidor COM. Você deve habilitar a depuração de RPC para usá-lo. Com a depuração de RPC habilitada, quando você entrar na chamada do servidor do cliente, o depurador anexará ao servidor e permitirá depurar o código. Quando o depurador for anexado, você poderá usar todos os recursos do depurador com o cliente e os processos do servidor.  
   
 ### <a name="to-enable-rpc-debugging"></a>Para habilitar a depuração de RPC  
   
-1. No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas** , clique em **Opções**.  
   
 2. Na caixa de diálogo **Opções**, clique na pasta **Depuração**.  
   
@@ -54,6 +54,6 @@ Você pode usar a depuração de chamada de procedimento remoto (RPC) para depur
     > [!NOTE]
     > A entrada de RPC em um servidor remoto que executa o Microsoft Windows Vista só funcionará se um depurador nativo for anexado ao servidor remoto. Caso contrário, a chamada de RPC apresentará falha sem uma mensagem de erro. De outro modo, a chamada de RPC será concluída, mas a depuração da chamada de RPC não funcionará.  
   
-## <a name="see-also"></a>Consulte também  
- [Depuração de servidor e contêiner COM](../debugger/com-server-and-container-debugging.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Depuração de contêiner e servidor COM](../debugger/com-server-and-container-debugging.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)

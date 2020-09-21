@@ -11,32 +11,32 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447195"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838283"
 ---
 # <a name="simplified-embedding"></a>Incorporação simplificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Incorporação simplificada é habilitado em um editor, quando seu objeto de exibição de documento tiver um pai (ou seja, feitas de um filho) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface é implementada para lidar com seus comandos de janela. Editores de incorporação simplificadas não é possível hospedar controles Active Directory. Os objetos usados para criar um editor com a incorporação simplificada são mostrados na ilustração a seguir.  
+A incorporação simplificada é habilitada em um editor quando seu objeto de exibição de documento é pai de (ou seja, tornou-se um filho de) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interface é implementada para manipular seus comandos de janela. Editores de inserção simplificados não podem hospedar controles ativos. Os objetos usados para criar um editor com inserção simplificada são mostrados na ilustração a seguir.  
   
- ![Gráfico de Editor de incorporação simplificado](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-Editor com a incorporação simplificada  
+ ![Gráfico do editor de inserção simplificado](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+Editor com incorporação simplificada  
   
 > [!NOTE]
-> Os objetos nesta ilustração, somente o `CYourEditorFactory` objeto é necessária para criar um editor padrão baseado em arquivo. Se você estiver criando um editor personalizado, não é necessário implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. Para editores não personalizado, no entanto, você deve fazer isso.  
+> Dos objetos nesta ilustração, somente o `CYourEditorFactory` objeto é necessário para criar um editor padrão baseado em arquivo. Se você estiver criando um editor personalizado, não precisará implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. No entanto, para editores não personalizados, você deve fazer isso.  
   
- Todas as interfaces implementadas para criar um editor com a incorporação simplificada estão contidas no `CYourEditorDocument` objeto. No entanto, para dar suporte a vários modos de exibição de dados de documentos, divida as interfaces em objetos separados de dados e exibição conforme indicado na tabela a seguir.  
+ Todas as interfaces implementadas para criar um editor com incorporação simplificada estão contidas no `CYourEditorDocument` objeto. No entanto, para dar suporte a várias exibições de dados de documento, divida as interfaces em dados separados e exiba objetos conforme indicado na tabela a seguir.  
   
-|Interface|Localização da interface|Use|  
+|Interface|Local da interface|Uso|  
 |---------------|---------------------------|---------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Exibir|Fornece a conexão para a janela pai.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Exibir|Lida com comandos.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Exibir|Permite atualizações da barra de status.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Exibir|Habilita **caixa de ferramentas** itens.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Exibir|Fornece conexão com a janela pai.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Exibir|Manipula comandos.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Exibir|Habilita atualizações da barra de status.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Exibir|Habilita itens da **caixa de ferramentas** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|Dados|Envia notificações quando o arquivo é alterado.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Dados|Habilita o recurso Salvar como para um tipo de arquivo.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Dados|Habilita o recurso salvar como para um tipo de arquivo.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Dados|Habilita a persistência para o documento.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Dados|Permite a supressão de eventos de alteração de arquivo, como recarregar disparando.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Dados|Permite a supressão de eventos de alteração de arquivo, como o disparo de recarregamento.|

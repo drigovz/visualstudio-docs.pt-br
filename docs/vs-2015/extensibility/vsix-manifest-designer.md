@@ -15,30 +15,30 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387565"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838496"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instalação para uma extensão do Visual Studio.  
+Modifica um arquivo de manifesto do pacote VSIX, que define o comportamento da instalação para uma extensão do Visual Studio.  
   
- O **Designer de manifesto do VSIX** mapeia para o esquema subjacente do VSIX. Cada elemento no esquema pode ser definido usando um controle correspondente no designer. Para obter mais informações sobre o esquema, consulte [2.0 referência do esquema de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+ O **Designer de manifesto do VSIX** é mapeado para o esquema VSIX subjacente. Cada elemento no esquema pode ser definido usando um controle correspondente no designer. Para obter mais informações sobre o esquema, consulte [referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
- Para abrir o **Designer de manifesto do VSIX**, localize um arquivo vsixmanifest no **Gerenciador de soluções**e abra o arquivo. Se o arquivo não contém XML válido, o designer de manifesto não será aberto.  
+ Para abrir o **Designer de manifesto VSIX**, localize um arquivo Source. Extension. vsixmanifest em **Gerenciador de soluções**e abra o arquivo. Se o arquivo não contiver um XML válido, o designer de manifesto não será aberto.  
   
 > [!NOTE]
-> Vsixmanifest é a saída para vsixmanifest quando o pacote é compilado.  
+> Source. Extension. vsixmanifest é a saída para Extension. vsixmanifest quando o pacote é compilado.  
   
-## <a name="uielement-list"></a>Lista UIElement  
+## <a name="uielement-list"></a>Lista de elementos de interface do usuário  
  O **Designer de manifesto do VSIX** contém quatro seções que correspondem a esses elementos de nível superior do esquema:  
   
 - Metadados  
   
-- Destinos de instalação  
+- Instalar destinos  
   
 - Ativos  
   
@@ -49,107 +49,107 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   **Nome do produto**  
   Descreve o nome da extensão.  
   
-  **ID do produto**  
-  Especifica as informações de identificação exclusivo para este pacote.  
+  **ID do Produto**  
+  Especifica as informações de identificação exclusivas para este pacote.  
   
-  **Autor**  
+  **Author**  
   Especifica o nome do autor da extensão.  
   
   **Versão**  
   Especifica o número de versão da extensão.  
   
-  O **metadados** guia contém os seguintes controles.  
+  A guia **metadados** contém os seguintes controles.  
   
   **Descrição**  
-  Fornece uma descrição de texto da extensão, a ser exibido no **Extension Manager**.  
+  Fornece uma descrição de texto da extensão a ser exibida no **Gerenciador de extensões**.  
   
-  **Linguagem**  
-  Especifica o idioma padrão para o pacote, que corresponde aos dados textuais no manifesto. O `Language` atributo segue a convenção de código localidade common language runtime (CLR) para assemblies de recursos, por exemplo, en-us, en, fr-fr. Por padrão, o valor é neutro; Isso significa que o pacote será executado em qualquer versão de idioma do Visual Studio.  
+  **Idioma**  
+  Especifica o idioma padrão para o pacote, que corresponde aos dados textuais no manifesto. O `Language` atributo segue a Convenção de código de localidade Common Language Runtime (CLR) para assemblies de recursos, por exemplo, en-US, en, fr-fr. Por padrão, o valor é neutro; Isso significa que o pacote será executado em qualquer versão de idioma do Visual Studio.  
   
-  **License**  
-  Especifica o arquivo de texto que contém a licença de usuário, caso haja algum.  
+  **Licença**  
+  Especifica o arquivo de texto que contém a licença de usuário, se houver uma.  
   
   **Ícone**  
-  Especifica o arquivo de gráfico (. png,. bmp,. JPEG,. ico) que contém o ícone a ser exibido no **Extension Manager**, se houver um ícone. A imagem de ícone deve ter 32 x 32 pixels ou será redimensionada para essas dimensões. Se nenhum ícone for especificado, **Extension Manager** usa um ícone padrão.  
+  Especifica o arquivo de gráficos (. png,. bmp,. jpeg,. ico) que contém o ícone a ser exibido no **Gerenciador de extensões**, se um ícone estiver presente. A imagem do ícone deve ter 32x32 pixels ou será redimensionada para essas dimensões. Se nenhum ícone for especificado, o **Gerenciador de extensões** usará um ícone padrão.  
   
   **Imagem de visualização**  
-  Especifica o arquivo de gráficos (. png,. bmp,. JPEG,. ico) que contém a imagem de visualização a ser exibido no **Extension Manager**, se houver uma imagem de visualização. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, **Extension Manager** usa uma imagem padrão.  
+  Especifica o arquivo de gráficos (. png,. bmp,. jpeg,. ico) que contém a imagem de visualização a ser exibida no **Gerenciador de extensões**, se uma imagem de visualização estiver presente. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, o **Gerenciador de extensões** usará uma imagem padrão.  
   
-  **Tags**  
-  Adiciona as marcas de texto a ser usado para dicas de pesquisa.  
+  **Marcas**  
+  Adiciona marcas de texto a serem usadas para dicas de pesquisa.  
   
   **Notas de Versão**  
-  Especifica um arquivo (. txt,. rtf) que contém as notas de versão. Também usa a URL de um site da Web que exibe as notas de versão.  
+  Especifica um arquivo (. txt,. rtf) que contém notas de versão. Também usa a URL de um site que exibe as notas de versão.  
   
   **Guia de Introdução**  
-  Especifica um arquivo (. txt,. rtf) que contém informações sobre como usar a extensão ou o conteúdo no pacote VSIX. Este guia é exibida quando a instalação da extensão estiver concluída. Também usa a URL de um site da Web que exibe o guia.  
+  Especifica um arquivo (. txt,. rtf) que contém informações sobre como usar a extensão ou o conteúdo no pacote VSIX. Este guia é exibido quando a instalação da extensão é concluída. Também usa a URL de um site que exibe o guia.  
   
-  **URL de informações adicionais**  
+  **URL de mais informações**  
   Especifica a URL de um site que contém informações adicionais sobre o produto.  
   
-  O **instalar destinos** guia contém os seguintes controles.  
+  A guia **instalar destinos** contém os seguintes controles.  
   
   **Tipo de instalação**  
-  Lista **extensão do Visual Studio** e **SDK de extensão** como tipos de instalação de destino. As opções diferem, dependendo do tipo que você escolher.  
+  Lista o **SDK** de extensão e extensão do **Visual Studio** como tipos de instalação de destino. As opções são diferentes, dependendo do tipo que você escolher.  
   
   **Extensão do Visual Studio**  
-  Lista os **InstallationTarget** elementos que descrevem como o pacote pode ser instalado e em quais produtos do Visual Studio esta extensão pode ser instalada. Cada produto é identificado separadamente por nome e uma versão ou intervalo.  Produtos podem ser adicionados à lista, modificados e excluídos. O nome e a versão de um produto correspondem à **identificação** e **versão** atributos do associado **InstallationTarget** elemento.  
+  Lista os elementos **InstallationTarget** que descrevem como o pacote pode ser instalado e em quais produtos do Visual Studio essa extensão pode ser instalada. Cada produto é identificado separadamente pelo nome e uma versão ou intervalo de versão.  Os produtos podem ser adicionados à lista, modificados e excluídos. O nome e a versão de um produto correspondem aos atributos **ID** e **version** do elemento **InstallationTarget** associado.  
   
-  **Intervalo de versão** é [12.0, 14.0] e usa a notação a seguir:  
+  O **intervalo de versão** é [12,0, 14,0] e usa a seguinte notação:  
   
-- [– versão mínima inclusivo  
+- [– versão mínima inclusiva  
   
-- ] – versão máximo inclusivo  
+- ] – versão máxima inclusiva  
   
-- (-versão mínima exclusivo  
+- (-versão mínima exclusiva  
   
-- ) – a versão máxima exclusivo  
+- ) – versão máxima exclusiva  
   
-- Única versão # - somente a versão especificada  
+- Única versão #-somente a versão especificada  
   
   **SDK de extensão**  
-  Especifica uma instalação global que não está no escopo para um produto específico e uma versão. **Identificador de plataforma de destino** é a plataforma, como "Windows", que você está definido. **Versão da plataforma de destino** é a versão, como versão 8.0, sua plataforma de destino. **Nome do SDK** e **SDK versão** é o nome e o número de versão do SDK, respectivamente.  
+  Especifica uma instalação global que não tem como escopo um produto e uma versão específicos. O **identificador de plataforma de destino** é a plataforma, como "Windows", à qual você está se concentrando. A **versão da plataforma de destino** é a versão, como 8,0, da sua plataforma de destino. O **nome do SDK** e a versão do **SDK** são o nome e o número da versão do SDK, respectivamente.  
   
-  **Este VSIX está instalado para todos os usuários (exige a elevação de instalação)** caixa de seleção  
-  Se essa caixa de seleção for selecionada, esta extensão está instalada para todos os usuários; Caso contrário, ele é instalado apenas para o usuário atual.  
+  **Este VSIX é instalado para todos os usuários (requer elevação na instalação)** caixa de seleção  
+  Se essa caixa de seleção estiver marcada, essa extensão será instalada para todos os usuários; caso contrário, ele será instalado somente para o usuário atual.  
   
-  **Este VSIX é instalado pelo instalador do Windows** caixa de seleção  
-  Se essa caixa de seleção for selecionada, esta extensão é instalada pelo instalador do Windows (arquivo. msi); Caso contrário, ele é instalado como um pacote VSIX típico (arquivo. VSIX).  
+  **Este VSIX é instalado pelo Windows Installer caixa de** seleção  
+  Se essa caixa de seleção estiver marcada, essa extensão será instalada pelo Windows Installer (arquivo. msi); caso contrário, ele é instalado como um pacote VSIX típico (arquivo. VSIX).  
   
-  O **ativos** guia contém os seguintes controles.  
+  A guia **ativos** contém os seguintes controles.  
   
   **Lista de ativos**  
-  Lista os elementos de ativo que descrevem os elementos de extensão ou conteúdo que esse pacote superfícies. Cada extensão ou um elemento de conteúdo é listado separadamente por origem, o tipo e o caminho. Elementos de conteúdo e as extensões podem ser adicionados à lista de, modificados e excluídos. O tipo e o caminho de um elemento de conteúdo ou extensão corresponde do `Type` e `Path` atributos do associado `Asset` elemento. Os seguintes tipos são conhecidos:  
+  Lista os elementos de ativo que descrevem os elementos de extensão ou conteúdo que este pacote superfícies. Cada elemento de extensão ou de conteúdo é listado separadamente por origem, tipo e caminho. Extensões e elementos de conteúdo podem ser adicionados à lista, modificados e excluídos. O tipo e o caminho de uma extensão ou elemento de conteúdo correspondem `Type` aos `Path` atributos e do `Asset` elemento associado. Os seguintes tipos são conhecidos:  
   
-- Microsoft.VisualStudio.Package  
+- Microsoft. VisualStudio. Package  
   
-- Microsoft.VisualStudio.MefComponent  
+- Microsoft. VisualStudio. MefComponent  
   
-- Microsoft.VisualStudio.ToolboxControl  
+- Microsoft. VisualStudio. ToolboxControl  
   
-- Microsoft.VisualStudio.Samples  
+- Microsoft. VisualStudio. Samples  
   
-- Microsoft.VisualStudio.ProjectTemplate  
+- Microsoft. VisualStudio. ProjectTemplate  
   
-- Microsoft.VisualStudio.ItemTemplate  
+- Microsoft. VisualStudio. ItemTemplate  
   
-- Microsoft.VisualStudio.Assembly  
+- Microsoft. VisualStudio. assembly  
   
-- Microsoft.ExtensionSDK  
+- Microsoft. ExtensionSDK  
   
-  Para adicionar ou editar um ativo, você deve especificar o tipo de ativo, se o ativo é um projeto na solução atual ou um arquivo no sistema de arquivos e o nome do projeto. Você também pode especificar o nome da pasta na qual a ser inserido.  
+  Para adicionar ou editar um ativo, você deve especificar o tipo de ativo, se o ativo é um projeto na solução atual ou um arquivo no sistema de arquivos e o nome do projeto. Você também pode especificar o nome da pasta na qual será inserida.  
   
-  Você também pode criar seus próprios tipos e dar-lhes nomes exclusivos.  
+  Você também pode criar seus próprios tipos e dar a eles nomes exclusivos.  
   
-  O **dependências** guia contém os seguintes controles.  
+  A guia **dependências** contém os seguintes controles.  
   
-  **Nome, origem e o intervalo de versão**  
-  Lista os elementos de dependência desse pacote, que são outros pacotes que este pacote depende. Se um pacote de dependência for especificado, ele deve ser instalado antes que este pacote seja instalado; Caso contrário, esse pacote deve instalá-lo.  
+  **Nome, origem e intervalo de versão**  
+  Lista os elementos de dependência deste pacote, que são outros pacotes dos quais este pacote depende. Se um pacote de dependência for especificado, ele deverá ser instalado antes que este pacote seja instalado; caso contrário, esse pacote deve instalá-lo.  
   
-  Os pacotes de dependência são especificados pelo identificador de nome, intervalo de versão, fonte e como a dependência deve ser resolvido. Cada pacote de dependência é listada separadamente por nome, versão e código-fonte. Pacotes de dependência podem ser adicionados à lista, modificados e excluídos.  
+  Os pacotes de dependência são especificados por identificador, nome, intervalo de versão, origem e como a dependência deve ser resolvida. Cada pacote de dependência é listado separadamente por nome, versão e origem. Os pacotes de dependência podem ser adicionados à lista, modificados e excluídos.  
   
-  O identificador deve corresponder a `ID` atributo dos metadados do pacote de dependência. A origem pode ser um projeto na solução atual, uma extensão instalada no momento ou um arquivo. O **como é a dependência foi resolvida** configuração pode ser o caminho relativo de um pacote aninhado ou a URL do local de download para a dependência. A ID, a versão e a resolução do pacote de dependência correspondem do `Id`, `Version`, e `Location` atributos do associado `Dependency` elemento.  
+  O identificador deve corresponder ao `ID` atributo dos metadados do pacote de dependência. A origem pode ser um projeto na solução atual, uma extensão atualmente instalada ou um arquivo. A configuração **como a dependência é resolvida** pode ser o caminho relativo de um pacote aninhado ou a URL do local de download para a dependência. A ID, a versão e a resolução do pacote de dependência correspondem aos `Id` `Version` atributos, e `Location` do `Dependency` elemento associado.  
   
-## <a name="see-also"></a>Consulte também  
- [Referência de esquema 2.0 de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência do esquema de extensão do VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)

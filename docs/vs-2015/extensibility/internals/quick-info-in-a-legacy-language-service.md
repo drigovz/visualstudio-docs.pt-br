@@ -1,5 +1,5 @@
 ---
-title: Informações rápidas em um serviço de linguagem herdado | Microsoft Docs
+title: Informações rápidas em um serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,34 +13,34 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436649"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838287"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informações rápidas em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Informações rápidas do IntelliSense mostra informações sobre um identificador na fonte quando o usuário coloca o cursor no identificador e seleciona **informações rápidas** da **IntelliSense** menu ou se mantém o mouse cursor sobre o identificador. Isso faz com que uma dica de ferramenta seja exibida com informações sobre o identificador. Essas informações normalmente consistem no tipo de identificador. Quando o mecanismo de depuração está ativo, essas informações podem incluir o valor atual. O mecanismo de depuração fornece valores de expressão, enquanto o serviço de linguagem manipula somente identificadores.  
+As informações rápidas do IntelliSense mostram informações sobre um identificador na origem quando o usuário posiciona o cursor no identificador e seleciona **informações rápidas** no menu do **IntelliSense** ou mantém o cursor do mouse sobre o identificador. Isso faz com que uma dica de ferramenta apareça com informações sobre o identificador. Normalmente, essas informações consistem no tipo de identificador. Quando o mecanismo de depuração está ativo, essas informações podem incluir o valor atual. O mecanismo de depuração fornece valores de expressão, enquanto o serviço de linguagem manipula somente identificadores.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [passo a passo: Exibindo dicas de ferramenta de QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para obter mais informações, consulte [Walkthrough: exibindo dicas de ferramenta QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.  
   
- As classes de serviço de idioma do pacote gerenciado framework (MPF) oferecem suporte completo para exibir a dica de ferramenta informações rápidas do IntelliSense. Tudo o que você precisa fazer é fornecer o texto para ser exibido e habilitar o recurso de informações rápidas.  
+ As classes de serviço de linguagem MPF (Managed Package Framework) fornecem suporte completo para exibir a dica de ferramenta de informações rápidas do IntelliSense. Tudo o que você precisa fazer é fornecer o texto a ser exibido e habilitar o recurso de informações rápidas.  
   
- O texto a ser exibido é obtido chamando o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com um valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Esse motivo informa ao analisador para obter as informações de tipo (ou o que for apropriado a ser exibido na dica de ferramenta informações rápidas) para o identificador no local especificado no <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto. O <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é o que foi passado para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método.  
+ O texto a ser exibido é obtido chamando-se o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com um valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> . Esse motivo informa o analisador para obter as informações de tipo (ou qualquer que seja apropriado para ser exibido na dica de ferramenta de informações rápidas) para o identificador no local especificado no <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto. O <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é o que foi passado para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método.  
   
- O analisador deve analisar tudo até a posição no <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto para determinar os tipos de todos os identificadores. Em seguida, o analisador deve obter o identificador no local de solicitação de análise. Por fim, o analisador deve passar os dados de dica de ferramenta associados com esse identificador para o <xref:Microsoft.VisualStudio.Package.AuthoringScope> para esse objeto possa retornar o texto a partir do objeto a <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> método.  
+ O analisador deve analisar tudo até a posição no objeto a <xref:Microsoft.VisualStudio.Package.ParseRequest> fim de determinar os tipos de todos os identificadores. Em seguida, o analisador deve obter o identificador no local da solicitação de análise. Por fim, o analisador deve passar os dados da dica de ferramenta associados a esse identificador para o <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto para que o objeto possa retornar o texto do <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> método.  
   
-## <a name="enabling-the-quick-info-feature"></a>Habilitar o recurso de informações rápidas  
- Para habilitar o recurso de informações rápidas, você deve definir a `CodeSense` e `QuickInfo` parâmetros de nomeados a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Esses atributos definidos os <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> e <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> propriedades.  
+## <a name="enabling-the-quick-info-feature"></a>Habilitando o recurso de informações rápidas  
+ Para habilitar o recurso de informações rápidas, você deve definir `CodeSense` os `QuickInfo` parâmetros nomeados e do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Esses atributos definem <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> as <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> Propriedades e.  
   
-## <a name="implementing-the-quick-info-feature"></a>Implementar o recurso de informações rápidas  
- O <xref:Microsoft.VisualStudio.Package.ViewFilter> classe manipula a operação de informações rápidas do IntelliSense. Quando o <xref:Microsoft.VisualStudio.Package.ViewFilter> classe recebe o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando, as chamadas de classe a <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método com a razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> e o local do cursor no momento o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando foi enviado. O <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador do método deve, em seguida, analisar o código-fonte até o local em questão e, em seguida, analisar o identificador no local especificado para determinar o que é exibido na dica de ferramenta informações rápidas.  
+## <a name="implementing-the-quick-info-feature"></a>Implementando o recurso de informações rápidas  
+ A <xref:Microsoft.VisualStudio.Package.ViewFilter> classe manipula a operação de informações rápidas do IntelliSense. Quando a <xref:Microsoft.VisualStudio.Package.ViewFilter> classe recebe o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando, a classe chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método com o motivo da análise de <xref:Microsoft.VisualStudio.Package.ParseReason> e o local do cursor no momento em que o <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando foi enviado. O <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método deve analisar a origem até o local fornecido e, em seguida, analisar o identificador no local especificado para determinar o que será exibido na dica de ferramenta de informações rápidas.  
   
- A maioria dos analisadores fazer uma análise inicial do arquivo de origem inteira e armazenam os resultados em uma árvore de análise. A análise completa é executada quando <xref:Microsoft.VisualStudio.Package.ParseReason> é passado para <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método. Outros tipos de análise, em seguida, podem usar a árvore de análise para obter as informações desejadas.  
+ A maioria dos analisadores realiza uma análise inicial de todo o arquivo de origem e armazena os resultados em uma árvore de análise. A análise completa é realizada quando <xref:Microsoft.VisualStudio.Package.ParseReason> é passada para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método. Outros tipos de análise podem usar a árvore de análise para obter as informações desejadas.  
   
- Por exemplo, o valor do motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> pode localizar o identificador no local de origem e procurá-lo na árvore de análise para obter as informações de tipo. Essas informações de tipo é então passadas para o <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe e é retornado pelo <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> método.
+ Por exemplo, o valor do motivo da análise de <xref:Microsoft.VisualStudio.Package.ParseReason> pode encontrar o identificador no local de origem e procurar na árvore de análise para obter as informações de tipo. Essas informações de tipo são passadas para a <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe e retornadas pelo <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> método.

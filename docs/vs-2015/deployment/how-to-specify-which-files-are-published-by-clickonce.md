@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar quais arquivos são publicados pelo ClickOnce | Microsoft Docs'
+title: Como especificar quais arquivos são publicados pelo ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,103 +19,103 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441582"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838542"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como: Especificar quais arquivos são publicados pelo ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como especificar os arquivos a serem publicados pelo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos de aplicativo, tudo sem código no projeto são implantados juntamente com o aplicativo. Em alguns casos, você talvez não queira ou precise publicar certos arquivos, ou você talvez queira instalar determinados arquivos com base em condições. Visual Studio fornece os recursos para excluir arquivos, marcar arquivos como arquivos de dados ou pré-requisitos e criar grupos de arquivos para instalação condicional.  
+Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, todos os arquivos que não são de código no projeto são implantados junto com o aplicativo. Em alguns casos, talvez você não queira ou precise publicar determinados arquivos, ou talvez queira instalar determinados arquivos com base em condições. O Visual Studio fornece os recursos para excluir arquivos, marcar arquivos como arquivos de dados ou pré-requisitos e criar grupos de arquivos para instalação condicional.  
   
- Arquivos para um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo são gerenciadas na **arquivos de aplicativo** caixa de diálogo, acessível a partir o **publicar** página do **Designer de projeto**.  
+ Os arquivos de um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo são gerenciados na caixa de diálogo **arquivos de aplicativo** , acessíveis na página **publicar** do **Designer de projeto**.  
   
- Inicialmente, há um grupo de arquivo único chamado **(obrigatório)** . Você pode criar grupos de arquivos adicionais e atribuir arquivos neles. Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo. Por exemplo, o aplicativo .exe ou arquivos marcado como arquivos de dados devem pertencer à **(obrigatório)** grupo.  
+ Inicialmente, há um único grupo de arquivos chamado **(obrigatório)**. Você pode criar grupos de arquivos adicionais e atribuir arquivos a eles. Você não pode alterar o **grupo de download** para arquivos que são necessários para a execução do aplicativo. Por exemplo, o. exe do aplicativo ou os arquivos marcados como arquivos de dados devem pertencer ao grupo **(obrigatório)** .  
   
- Status de publicação padrão valor de um arquivo é marcada com **(automática)** . Por exemplo, .exe do aplicativo tem um status de publicação dos **incluir (Auto)** por padrão.  
+ O valor de status de publicação padrão de um arquivo é marcado com **(automático)**. Por exemplo, o. exe do aplicativo tem um status de publicação de **include (auto)** por padrão.  
   
- Arquivos com o **ação de compilação** propriedade definida como **conteúdo** são designados como arquivos de aplicativo e será marcado como incluído por padrão. Eles podem ser incluídos, excluídos ou marcados como arquivos de dados. As exceções são da seguinte maneira:  
+ Os arquivos com a propriedade de **ação de compilação** definida como **conteúdo** são designados como arquivos de aplicativo e serão marcados como incluídos por padrão. Eles podem ser incluídos, excluídos ou marcados como arquivos de dados. As exceções são as seguintes:  
   
-- Arquivos de dados como arquivos de banco de dados SQL (. mdf e. mdb) e arquivos XML serão marcados como arquivos de dados por padrão.  
+- Os arquivos de dados, como os arquivos do SQL Database (. MDF e. mdb) e os arquivos XML serão marcados como arquivos de dados por padrão.  
   
-- Referências aos assemblies (arquivos. dll) são designadas como a seguir quando você adiciona a referência: Se **Copy Local** é **falso**, ele é marcado por padrão como um assembly de pré-requisito (**pré-requisito (Auto)** ) que devem estar presentes no GAC, antes do aplicativo está instalado. Se **Copy Local** é **verdadeiro**, o assembly é marcado por padrão como um assembly de aplicativo (**incluir (Auto)** ) e será copiada para a pasta do aplicativo durante a instalação. Uma referência COM aparecerá na **arquivos de aplicativo** diálogo caixa (como um arquivo. ocx) somente se seu **isolado** estiver definida como **verdadeiro**. Por padrão, ele será incluído.  
+- Referências a assemblies (arquivos. dll) são designadas da seguinte maneira quando você adiciona a referência: se **Copy local** for **false**, ele será marcado por padrão como um assembly de pré-requisito (**pré-requisito (auto)**) que deve estar presente no GAC antes que o aplicativo seja instalado. Se **Copy local** for **true**, o assembly será marcado por padrão como um assembly de aplicativo (**include (auto)**) e será copiado para a pasta do aplicativo na instalação. Uma referência COM será exibida na caixa de diálogo **arquivos de aplicativo** (como um arquivo. ocx) somente se sua propriedade **isolada** estiver definida como **true**. Por padrão, ele será incluído.  
   
-### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para adicionar arquivos à caixa de diálogo de arquivos do aplicativo  
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para adicionar arquivos à caixa de diálogo arquivos de aplicativo  
   
-1. Selecione um arquivo de dados no **Gerenciador de soluções**.  
+1. Selecione um arquivo de dados em **Gerenciador de soluções**.  
   
-2. Na janela Propriedades, altere o **ação de compilação** propriedade para o **conteúdo** valor.  
+2. No janela Propriedades, altere a propriedade de **ação de compilação** para o valor de **conteúdo** .  
   
-### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir arquivos de publicação do ClickOnce  
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir arquivos da publicação do ClickOnce  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.  
+3. Clique no botão **arquivos de aplicativo** para abrir a caixa de diálogo arquivos de **aplicativo** .  
   
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o arquivo que você deseja excluir.  
+4. Na caixa de diálogo **arquivos de aplicativo** , selecione o arquivo que você deseja excluir.  
   
-5. No **Status da publicação** campo, selecione **excluir** na lista suspensa.  
+5. No campo **status da publicação** , selecione **excluir** na lista suspensa.  
   
-### <a name="to-mark-files-as-data-files"></a>Para marcar os arquivos como arquivos de dados  
+### <a name="to-mark-files-as-data-files"></a>Para marcar arquivos como arquivos de dados  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.  
+3. Clique no botão **arquivos de aplicativo** para abrir a caixa de diálogo arquivos de **aplicativo** .  
   
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o arquivo que você deseja marcar como dados.  
+4. Na caixa de diálogo **arquivos de aplicativo** , selecione o arquivo que você deseja marcar como dados.  
   
-5. No **Status da publicação** campo, selecione **arquivo de dados** na lista suspensa.  
+5. No campo **status da publicação** , selecione **arquivo de dados** na lista suspensa.  
   
-### <a name="to-mark-files-as-prerequisites"></a>Para marcar os arquivos como pré-requisitos  
+### <a name="to-mark-files-as-prerequisites"></a>Para marcar arquivos como pré-requisitos  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.  
+3. Clique no botão **arquivos de aplicativo** para abrir a caixa de diálogo arquivos de **aplicativo** .  
   
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o assembly de aplicativo (arquivo. dll) que você deseja marcar como um pré-requisito. Observe que o seu aplicativo deve ter uma referência ao assembly do aplicativo para que ele apareça na lista.  
+4. Na caixa de diálogo **arquivos de aplicativo** , selecione o assembly de aplicativo (arquivo. dll) que você deseja marcar como um pré-requisito. Observe que seu aplicativo deve ter uma referência ao assembly de aplicativo para que ele apareça na lista.  
   
-5. No **Status da publicação** campo, selecione **pré-requisito** na lista suspensa.  
+5. No campo **status da publicação** , selecione **pré-requisito** na lista suspensa.  
   
 ### <a name="to-add-a-new-file-group"></a>Para adicionar um novo grupo de arquivos  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.  
+3. Clique no botão **arquivos de aplicativo** para abrir a caixa de diálogo arquivos de **aplicativo** .  
   
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o **grupo** field para um arquivo que você deseja incluir no novo grupo.  
+4. Na caixa de diálogo **arquivos de aplicativo** , selecione o campo de **grupo** para um arquivo que você deseja incluir no novo grupo.  
   
     > [!NOTE]
-    > Os arquivos devem ter o **ação de compilação** propriedade definida como **conteúdo** antes que os nomes de arquivo são exibidos no **arquivos de aplicativo** caixa de diálogo.  
+    > Os arquivos devem ter a propriedade de **ação de compilação** definida como **conteúdo** antes que os nomes de arquivo apareçam na caixa de diálogo **arquivos de aplicativo** .  
   
-5. No **grupo de Download** campo, selecione  **\<novo... >** na lista suspensa.  
+5. No campo **baixar grupo** , selecione **\<New...>** na lista suspensa.  
   
-6. No **novo grupo** caixa de diálogo, insira um nome para o grupo e, em seguida, clique em **Okey**.  
+6. Na caixa de diálogo **novo grupo** , insira um nome para o grupo e clique em **OK**.  
   
 ### <a name="to-add-a-file-to-a-group"></a>Para adicionar um arquivo a um grupo  
   
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.  
+3. Clique no botão **arquivos de aplicativo** para abrir a caixa de diálogo arquivos de **aplicativo** .  
   
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o **grupo** field para um arquivo que você deseja incluir no novo grupo.  
+4. Na caixa de diálogo **arquivos de aplicativo** , selecione o campo de **grupo** para um arquivo que você deseja incluir no novo grupo.  
   
-5. No **grupo de Download** , selecione um grupo na lista suspensa.  
+5. No campo **baixar grupo** , selecione um grupo na lista suspensa.  
   
     > [!NOTE]
-    > Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo.  
+    > Você não pode alterar o **grupo de download** para arquivos que são necessários para a execução do aplicativo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Como publicar um Aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

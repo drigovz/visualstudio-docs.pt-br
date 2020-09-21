@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438460"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838261"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos.  
+Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos neste repositório de símbolos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,13 +35,13 @@ HRESULT put_loadAddress ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `NewVal`  
- [in] Carregar o endereço para o arquivo executável.  
+ no Carregue o endereço para o arquivo executável.  
   
 ## <a name="remarks"></a>Comentários  
- Propriedades de endereço virtual (VA) de símbolo são calculadas usando o valor desse método. Endereços virtuais não são calculados, a menos que essa propriedade é definida como diferente de zero.  
+ As propriedades de endereço virtual de símbolo (VA) são computadas usando o valor desse método. Os endereços virtuais não são calculados, a menos que essa propriedade seja definida como diferente de zero.  
   
 > [!NOTE]
-> Você deve chamar esse método quando você receber o [IDiaSession](../../debugger/debug-interface-access/idiasession.md) do objeto e antes de começar a usar o objeto se você precisar usar quaisquer propriedades virtuais nos símbolos.  
+> Você deve chamar esse método quando obter o objeto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e antes de começar a usar o objeto se precisar usar qualquer propriedade virtual em símbolos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

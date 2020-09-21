@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+title: 'IDebugProgramNode2:: GetHostMachineName_V7 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63e4f1a3621dde3fba5e8a2dabf45eaceb5d8ea4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418051"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838502"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-PRETERIDO. NÃO USE.  
+Preterido. NÃO USE.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -41,15 +41,15 @@ int GetHostMachineName_V7 ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrHostMachineName`  
- [out] Retorna o nome do computador no qual o programa está em execução.  
+ fora Retorna o nome do computador no qual o programa está em execução.  
   
-## <a name="return-value"></a>Valor de retorno  
- Uma implementação deve retornar sempre `E_NOTIMPL`.  
+## <a name="return-value"></a>Valor Retornado  
+ Uma implementação sempre deve retornar `E_NOTIMPL` .  
   
 ## <a name="remarks"></a>Comentários  
   
 > [!WARNING]
-> Desde [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], esse método não é mais usado e deve retornar sempre `E_NOTIMPL`.  
+> A partir do [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , esse método não é mais usado e sempre deve retornar `E_NOTIMPL` .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

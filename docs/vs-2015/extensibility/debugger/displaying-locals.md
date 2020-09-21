@@ -1,5 +1,5 @@
 ---
-title: Exibir Locals | Microsoft Docs
+title: Exibindo locais | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409376"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838377"
 ---
 # <a name="displaying-locals"></a>Exibindo locais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Execução sempre ocorre dentro do contexto de um método, também conhecido como método de inclusão ou o método atual. Quando a execução pausa, o Visual Studio chama o mecanismo de depuração (DE) para obter uma lista de variáveis locais e os argumentos, coletivamente chamados de locais do método. Esses locais e seus valores no Visual Studio exibe a **Locals** janela.  
+ A execução sempre ocorre no contexto de um método, também conhecido como o método recipiente ou o método atual. Quando a execução é pausada, o Visual Studio chama o mecanismo de depuração (DE) para obter uma lista de variáveis e argumentos locais, coletivamente chamados de locais do método. O Visual Studio exibe esses locais e seus valores na janela **locais** .  
   
- Para exibir locais, o DE chama o [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) método pertencente ao EE e concede a ele um contexto de avaliação, que é, um provedor de símbolo (SP), o endereço de execução atual e um objeto de associador. Para obter mais informações, consulte [contexto de avaliação](../../extensibility/debugger/evaluation-context.md). Se a chamada for bem-sucedida, o `IDebugExpressionEvaluator::GetMethodProperty` método retorna um [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o método que contém o endereço de execução atual.  
+ Para exibir locais, o DE chama o método [Getmethodproperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) que pertence ao EE e fornece a ele um contexto de avaliação, ou seja, um provedor de símbolos (SP), o endereço de execução atual e um objeto de fichário. Para obter mais informações, consulte [contexto de avaliação](../../extensibility/debugger/evaluation-context.md). Se a chamada for realizada com sucesso, o `IDebugExpressionEvaluator::GetMethodProperty` método retornará um objeto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , que representa o método que contém o endereço de execução atual.  
   
- As chamadas DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) para obter uma [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) object, que é filtrada para retornar somente locais e enumerado para produzir uma lista de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)estruturas. Cada estrutura contém o nome, tipo e valor de um local. O tipo e valor são armazenados como cadeias de caracteres formatadas, adequadas para exibição. O nome, tipo e valor normalmente são exibidos juntos em uma linha do **Locals** janela.  
+ O DE chama [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) para obter um objeto [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , que é filtrado para retornar somente locais e enumerados para produzir uma lista de estruturas de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) . Cada estrutura contém o nome, o tipo e o valor de um local. O tipo e o valor são armazenados como cadeias de caracteres formatadas, adequadas para exibição. O nome, o tipo e o valor normalmente são exibidos juntos em uma linha da janela **locais** .  
   
 > [!NOTE]
-> O **QuickWatch** e **inspeção** janelas também exibem as variáveis com o mesmo formato de nome, valor e tipo. No entanto, esses valores são obtidos chamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) em vez de `IDebugProperty2::EnumChildren`.  
+> As janelas **QuickWatch** e **Watch** também exibem variáveis com o mesmo formato de nome, valor e tipo. No entanto, esses valores são obtidos chamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) em vez de `IDebugProperty2::EnumChildren` .  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Exemplo de implementação de Locals](../../extensibility/debugger/sample-implementation-of-locals.md)  
- Usa exemplos para percorrer o processo de implementação de locals.  
+ [Implementação de exemplo de locais](../../extensibility/debugger/sample-implementation-of-locals.md)  
+ Usa exemplos para percorrer o processo de implementação de locais.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Contexto da avaliação](../../extensibility/debugger/evaluation-context.md)  
- Explica que, quando o mecanismo de depuração (DES) chama o avaliador de expressão (EE), ele passa três argumentos.  
+ [Contexto de avaliação](../../extensibility/debugger/evaluation-context.md)  
+ Explica que quando o mecanismo de depuração (DE) chama o avaliador de expressão (EE), ele passa três argumentos.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Escrevendo um avaliador de expressão do CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

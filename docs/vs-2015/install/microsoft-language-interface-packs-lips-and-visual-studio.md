@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433005"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838550"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
 
 - Caracteres Definidos pelo Usuário Final (zona de uso particular) não podem ser usados como tokens/identificadores.
 
-- Os caracteres Latinos Estendidos-B não podem ser exibidos em algumas janelas de ferramentas do Visual Studio quando a página de código do Windows estiver definida para um idioma do leste asiático.
+- Os caracteres Latinos Estendidos-B não podem ser exibidos em algumas janelas de ferramentas do Visual Studio quando a página de código do Windows estiver definida para um idioma do Leste da Ásia.
 
 - As execuções de texto que consistem em caracteres de scripts de vários idiomas podem exibir o glifo padrão para alguns caracteres.
 
@@ -78,7 +78,7 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
     > [!NOTE]
     > Você deve ser um administrador no computador para seguir estas etapas.
 
-2. Clique na aba **Avançado**.
+2. Clique na guia **Avançado**.
 
 3. Na lista **Selecionar um idioma para corresponder à versão do idioma dos programas não Unicode que você deseja usar**, selecione o idioma que você está usando atualmente.
 
@@ -92,7 +92,7 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Para definir o idioma usado para o texto da interface do usuário no Visual Studio
 
-1. No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas** , clique em **Opções**.
 
 2. Na caixa de diálogo **Opções**, expanda **Ambiente** e depois clique em **Configurações Internacionais**.
 
@@ -102,5 +102,5 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
 
    Você também pode usar o comando devenv para definir o idioma usado para interface do usuário. Para saber mais, confira [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Caixa de diálogo Configurações Internacionais, Ambiente, Opções](../ide/reference/international-settings-environment-options-dialog-box.md)

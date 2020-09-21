@@ -1,5 +1,5 @@
 ---
-title: Correspondência de chave em um serviço de linguagem herdado | Microsoft Docs
+title: Correspondência de chaves em um serviço de idioma herdado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437642"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838324"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Correspondência de chaves em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Correspondência de chaves ajuda o desenvolvedor a acompanhar os elementos de linguagem que precisam ocorrer em conjunto, como parênteses e as chaves. Quando um desenvolvedor entra em uma chave de fechamento, a chave de abertura é realçada.  
+Correspondência de chaves ajuda o desenvolvedor a acompanhar elementos de linguagem que precisam ocorrer juntos, como parênteses e chaves. Quando um desenvolvedor entra em uma chave de fechamento, a chave de abertura é realçada.  
   
- Você pode combinar duas ou três elementos com ocorrência concomitante, chamados de pares e triplos. Triplos são conjuntos de três elementos com ocorrência concomitante. Por exemplo, no c#, o `foreach` um triplo de formulários de instrução: "`foreach()`","`{`", e "`}`". Todos os três elementos são realçados quando a chave de fechamento é digitada.  
+ Você pode corresponder a dois ou três elementos coincidentes, chamados pares e corridas. As corridas são conjuntos de três elementos coexistentes. Por exemplo, em C#, a `foreach` instrução forma um triplo: " `foreach()` ", " `{` " e " `}` ". Todos os três elementos são realçados quando a chave de fechamento é digitada.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar correspondência de chaves, consulte [passo a passo: Exibindo chaves correspondentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar a correspondência de chaves, consulte [passo a passos: exibindo chaves correspondentes](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.  
   
- O <xref:Microsoft.VisualStudio.Package.AuthoringSink> dá suporte a ambos os pares de classe e triplica com o <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> e <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos.  
+ A <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe dá suporte a pares e corridas com os <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos e.  
   
 ## <a name="implementation"></a>Implementação  
- O serviço de linguagem precisa identificar todos os elementos correspondentes no idioma e, em seguida, localizar todos os pares correspondentes. Normalmente, isso é realizado pela implementação <xref:Microsoft.VisualStudio.Package.IScanner> para detectar um idioma correspondente e, em seguida, usando o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método corresponder os elementos.  
+ O serviço de linguagem precisa identificar todos os elementos correspondentes no idioma e, em seguida, localizar todos os pares correspondentes. Isso normalmente é feito pela implementação do <xref:Microsoft.VisualStudio.Package.IScanner> para detectar um idioma correspondente e, em seguida, usar o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método para corresponder os elementos.  
   
- O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método chama o scanner para indexar a linha e retornar o token antes do cursor. O mecanismo de varredura indica que foi encontrado um par de elementos de linguagem, definindo um valor de token de gatilho de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token atual. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método por sua vez chama o <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> método com o valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> para localizar o elemento de linguagem correspondente. Quando o elemento de linguagem correspondente for encontrado, ambos os elementos são realçados.  
+ O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método chama o scanner para indexar a linha e retornar o token logo antes do cursor. O verificador indica que um par de elementos de linguagem foi encontrado definindo um valor de gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token atual. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método chama o <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método que, por sua vez, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> método com o valor da razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> para localizar o elemento de linguagem correspondente. Quando o elemento de idioma correspondente é encontrado, ambos os elementos são realçados.  
   
- Para obter uma descrição completa de como a digitação de uma chave dispara o realce de chave, consulte a seção "Exemplo analisar operação" no tópico [analisador de serviço de linguagem herdado e o Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
+ Para obter uma descrição completa de como digitar uma chave dispara o realce de chaves, consulte a seção "operação de análise de exemplo" no tópico [analisador de serviço de idioma herdado e verificador](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
   
 ## <a name="enabling-support-for-brace-matching"></a>Habilitando o suporte para correspondência de chaves  
- O <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo pode definir o `MatchBraces`, `MatchBracesAtCaret`, e `ShowMatchingBrace` parâmetros nomeados que defina as propriedades correspondentes do <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Propriedades de preferência de idioma também podem ser definidas pelo usuário.  
+ O <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo pode definir os `MatchBraces` `MatchBracesAtCaret` `ShowMatchingBrace` parâmetros nomeados, e que definem as propriedades correspondentes da <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. As propriedades de preferência de idioma também podem ser definidas pelo usuário.  
   
-|Entrada de registro|Propriedade|Descrição|  
+|Entrada de Registro|Propriedade|Descrição|  
 |--------------------|--------------|-----------------|  
 |`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Habilita a correspondência de chaves|  
-|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Correspondência de chaves permite que o cursor se move.|  
+|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Habilita a correspondência de chaves conforme o cursor se move.|  
 |`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Realça a chave correspondente.|  
   
-## <a name="matching-conditional-statements"></a>Instruções condicionais de correspondência  
- Você pode corresponder instruções condicionais, como `if`, `else if`, e `else`, ou `#if`, `#elif`, `#else`, `#endif`, da mesma forma como a correspondência de delimitadores. Você pode organizar em subclasses a <xref:Microsoft.VisualStudio.Package.AuthoringSink> de classe e fornecem um método que pode adicionar texto abrange, bem como delimitadores para a matriz interna de elementos correspondentes.  
+## <a name="matching-conditional-statements"></a>Correspondência de instruções condicionais  
+ Você pode fazer a correspondência de instruções condicionais, como,, `if` `else if` e `else` , ou `#if` , `#elif` ,, `#else` `#endif` da mesma forma que os delimitadores correspondentes. Você pode subclassear a <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe e fornecer um método que possa adicionar intervalos de texto, bem como delimitadores, à matriz interna de elementos correspondentes.  
   
-## <a name="setting-the-trigger"></a>Definir o gatilho  
- O exemplo a seguir mostra como detectar a correspondência de parênteses, chaves e entre colchetes e definindo o gatilho para ele no scanner. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe detecta o gatilho e chama o analisador para localizar o par correspondente (consulte a seção "Encontrando a correspondência" neste tópico). Este exemplo é apenas para fins ilustrativos. Ele pressupõe que o scanner contém um método `GetNextToken` que identifica e retorna os tokens de uma linha de texto.  
+## <a name="setting-the-trigger"></a>Configurando o gatilho  
+ O exemplo a seguir mostra como detectar parênteses correspondentes, chaves e chaves quadradas e definir o gatilho para ele no scanner. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe detecta o gatilho e chama o analisador para localizar o par correspondente (consulte a seção "localizando a correspondência" neste tópico). Este exemplo é apenas para fins ilustrativos. Ele pressupõe que o scanner contém um método `GetNextToken` que identifica e retorna tokens de uma linha de texto.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -86,8 +86,8 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## <a name="matching-the-braces"></a>Correspondência de chaves  
- Aqui está um exemplo simplificado para correspondência de {} elementos de linguagem, () e [] e adicionar seus abrangentes para o <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto. Essa abordagem não é uma abordagem recomendada para a análise de código-fonte; ele é somente para fins ilustrativos.  
+## <a name="matching-the-braces"></a>Correspondendo às chaves  
+ Este é um exemplo simplificado para corresponder os elementos de linguagem {}, () e [], e adicionar seus intervalos ao <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto. Essa abordagem não é uma abordagem recomendada para a análise do código-fonte; Ele é apenas para fins ilustrativos.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -137,6 +137,6 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Recursos do serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-features1.md)   
  [Analisador e scanner do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

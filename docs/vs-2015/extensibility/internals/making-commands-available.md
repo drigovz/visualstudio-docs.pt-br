@@ -1,5 +1,5 @@
 ---
-title: Disponibilizar comandos | Microsoft Docs
+title: Disponibilizando comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,25 +14,25 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436257"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838280"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Quando vários VSPackages são adicionados ao Visual Studio, a interface do usuário (IU) pode ficar sobrecarregada com comandos. Você pode programar seu pacote para ajudar a reduzir esse problema, da seguinte maneira:  
+Quando várias VSPackages são adicionadas ao Visual Studio, a interface do usuário pode se tornar supertorcida com comandos. Você pode programar seu pacote para ajudar a reduzir esse problema, da seguinte maneira:  
   
-- O pacote do programa para que ele seja carregado apenas quando um usuário requer que ela.  
+- Programe o pacote para que ele seja carregado somente quando um usuário o exigir.  
   
-- O pacote do programa para que seus comandos são exibidos somente quando elas podem ser necessárias no contexto do estado atual do ambiente de desenvolvimento integrado (IDE).  
+- Programe o pacote de forma que seus comandos sejam exibidos somente quando eles puderem ser necessários no contexto do estado atual do IDE (ambiente de desenvolvimento integrado).  
   
 ## <a name="delayed-loading"></a>Carregamento atrasado  
- Habilitar uma forma comum de carregamento com atraso é projetar o VSPackage, de forma que seus comandos são exibidos na interface do usuário, mas o próprio pacote não será carregado até que um usuário clica em um dos comandos. Para fazer isso, no arquivo. VSCT, crie comandos que não têm nenhum sinalizador de comando.  
+ A maneira típica de habilitar o carregamento atrasado é criar o VSPackage para que seus comandos sejam exibidos na interface do usuário, mas o pacote em si não é carregado até que um usuário clique em um dos comandos. Para fazer isso, no arquivo. vsct, crie comandos que não têm nenhum sinalizador de comando.  
   
- O exemplo a seguir mostra a definição de um comando de menu de um arquivo. VSCT. Esse é o comando que é gerado pelo modelo de pacote do Visual Studio quando o **comando de Menu** está selecionada no modelo.  
+ O exemplo a seguir mostra a definição de um comando de menu de um arquivo. vsct. Esse é o comando que é gerado pelo modelo de pacote do Visual Studio quando a opção de **comando de menu** no modelo é selecionada.  
   
 ```xml  
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">  
@@ -46,23 +46,23 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
 ```  
   
- No exemplo, se o grupo pai, `MyMenuGroup`, é um filho de um menu de nível superior, como o **ferramentas** menu, o comando estará visível nesse menu, mas o pacote que executa o comando não será carregado até que o comando é clicado por um usuário. No entanto, por programação o comando para implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface, você pode permitir que o pacote a ser carregado quando o menu que contém o comando pela primeira vez é expandido.  
+ No exemplo, se o grupo pai, `MyMenuGroup` , for um filho de um menu de nível superior, como o menu **ferramentas** , o comando ficará visível nesse menu, mas o pacote que executa o comando não será carregado até que o comando seja clicado por um usuário. No entanto, ao programar o comando para implementar a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface, você pode habilitar o pacote a ser carregado quando o menu que contém o comando for primeiro expandido.  
   
  Observe que o carregamento atrasado também pode melhorar o desempenho de inicialização.  
   
-## <a name="current-context-and-the-visibility-of-commands"></a>Contexto atual e a visibilidade de comandos  
- Você pode programar comandos de VSPackage para ser visível ou oculto, dependendo do estado atual dos dados VSPackage ou as ações que são relevantes no momento. Você pode habilitar o VSPackage definir o estado de seus comandos, normalmente por meio de uma implementação do <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método a partir de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface, mas isso requer o VSPackage a ser carregado antes de poder executar o código. Em vez disso, é recomendável que você habilite o IDE gerenciar a visibilidade dos comandos sem carregar o pacote. Para fazer isso, no arquivo. VSCT, associar comandos com um ou mais contextos de interface do usuário especiais. Esses contextos de interface do usuário são identificados por um GUID conhecido como um *GUID de contexto do comando*.  
+## <a name="current-context-and-the-visibility-of-commands"></a>Contexto atual e a visibilidade dos comandos  
+ Você pode programar comandos VSPackage para que fiquem visíveis ou ocultos, dependendo do estado atual dos dados do VSPackage ou das ações que são relevantes no momento. Você pode habilitar o VSPackage para definir o estado de seus comandos, normalmente usando uma implementação do <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método da <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface, mas isso requer que o VSPackage seja carregado antes de poder executar o código. Em vez disso, recomendamos que você habilite o IDE para gerenciar a visibilidade dos comandos sem carregar o pacote. Para fazer isso, no arquivo. vsct, associe os comandos a um ou mais contextos de interface do usuário especiais. Esses contextos de interface do usuário são identificados por um GUID conhecido como um *GUID de contexto de comando*.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] monitora as alterações que resultam de ações do usuário como carregar um projeto ou vai da edição de construção. Quando ocorrem alterações, a aparência do IDE automaticamente será modificada. A tabela a seguir mostra quatro principais contextos do IDE alteração-la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] monitores.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] monitora alterações que resultam de ações do usuário, como carregar um projeto ou ir da edição para a compilação. À medida que ocorrem alterações, a aparência do IDE é modificada automaticamente. A tabela a seguir mostra quatro contextos principais de alteração do IDE que o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] monitora.  
   
 |Tipo de contexto|Descrição|  
 |---------------------|-----------------|  
-|Tipo de projeto ativo|Para a maioria dos tipos de projeto, isso `GUID` valor é igual ao GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projetos usam o tipo de projeto `GUID` como o valor.|  
-|Janela ativa|Normalmente, isso é a última janela do documento ativo que estabelece o contexto de interface do usuário atual para associações de teclas. No entanto, ele também pode ser uma janela de ferramenta que tem uma tabela de associação de teclas que se parece com o navegador da Web interno. Para janelas de documento com várias guias, como o editor de HTML, cada guia tem um contexto diferente do comando `GUID`.|  
-|Serviço de linguagem do Active Directory|O serviço de linguagem que está associado com o arquivo que está sendo exibido em um editor de texto.|  
-|Janela da ferramenta ativa|Uma janela de ferramenta que está aberto e tem o foco.|  
+|Tipo de projeto ativo|Para a maioria dos tipos de projeto, esse `GUID` valor é o mesmo que o GUID do VSPackage que implementa o projeto. No entanto, [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] os projetos usam o tipo de projeto `GUID` como o valor.|  
+|Janela ativa|Normalmente, esta é a última janela do documento ativo que estabelece o contexto da interface do usuário atual para associações de chave. No entanto, também pode ser uma janela de ferramentas que tem uma tabela de associação de chave que se assemelha ao navegador da Web interno. Para janelas de documentos com várias guias, como o editor de HTML, cada guia tem um contexto de comando diferente `GUID` .|  
+|Serviço de linguagem ativa|O serviço de idioma que está associado ao arquivo que é exibido atualmente em um editor de texto.|  
+|Janela de ferramentas ativas|Uma janela de ferramentas aberta e tem foco.|  
   
- Uma área principal de contexto quinta é o estado da interface do usuário do IDE. Contextos de interface do usuário são identificados pelo contexto do comando ativo `GUID`s, da seguinte maneira:  
+ Uma quinta área de contexto principal é o estado da interface do usuário do IDE. Os contextos da interface do usuário são identificados por s do contexto de comando ativo `GUID` , da seguinte maneira:  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
@@ -86,27 +86,27 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
-  Esses GUIDs são marcadas como ativas ou inativas, dependendo do estado atual do IDE. Vários contextos de interface do usuário podem estar ativos ao mesmo tempo.  
+  Essas GUIDs são marcadas como ativas ou inativas, dependendo do estado atual do IDE. Vários contextos de interface do usuário podem estar ativos ao mesmo tempo.  
   
-### <a name="hiding-and-displaying-commands-based-on-context"></a>Ocultando e comandos com base no contexto de exibição  
- Você pode exibir ou ocultar um comando de pacote no IDE sem carregar o pacote propriamente dito. Para fazer isso, defina o comando no arquivo. VSCT do pacote usando o `DefaultDisabled`, `DefaultInvisible`, e `DynamicVisibility` comando sinalizadores e adicionando um ou mais [VisibilityItem](../../extensibility/visibilityitem-element.md) elementos para o [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) seção. Quando um contexto do comando especificado `GUID` se torna ativo, o comando é exibido sem carregar o pacote.  
+### <a name="hiding-and-displaying-commands-based-on-context"></a>Ocultando e exibindo comandos com base no contexto  
+ Você pode exibir ou ocultar um comando de pacote no IDE sem carregar o pacote em si. Para fazer isso, defina o comando no arquivo. vsct do pacote usando os `DefaultDisabled` sinalizadores de comando, `DefaultInvisible` , e `DynamicVisibility` e adicionando um ou mais elementos [VisibilityItem](../../extensibility/visibilityitem-element.md) à seção [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) . Quando um contexto de comando especificado `GUID` se torna ativo, o comando é exibido sem carregar o pacote.  
   
 ### <a name="custom-context-guids"></a>GUIDs de contexto personalizado  
- Se um contexto de comando apropriado que GUID já não está definido, você pode definir um em seu VSPackage e, em seguida, programá-lo para ser ativos ou inativos conforme necessário para controlar a visibilidade de seus comandos. Use o <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> serviço para:  
+ Se um GUID de contexto de comando apropriado ainda não estiver definido, você poderá definir um em seu VSPackage e, em seguida, programá-lo para estar ativo ou inativo conforme necessário para controlar a visibilidade de seus comandos. Use o <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> serviço para:  
   
-- Registrar os GUIDs de contexto (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
+- Registre GUIDs de contexto (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
   
 - Obter o estado de um contexto `GUID` (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método).  
   
-- Ativar o contexto `GUID`s e desativar (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
+- Ativar `GUID` e desativar os s de contexto (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
   
     > [!CAUTION]
-    > Certifique-se de que o VSPackage não afeta o estado de qualquer contexto existente GUID porque pode depender de outros VSPackages neles.  
+    > Certifique-se de que o VSPackage não afeta o estado de qualquer GUID de contexto existente porque outros VSPackages podem depender deles.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir de um comando de VSPackage demonstra a visibilidade dinâmica de um comando que é gerenciado pelo contextos de comando sem carregar o VSPackage.  
+ O exemplo a seguir de um comando VSPackage demonstra a visibilidade dinâmica de um comando que é gerenciado por contextos de comando sem carregar o VSPackage.  
   
- O comando é definido como habilitado e exibido sempre que existe uma solução; ou seja, sempre que um contexto do seguinte comando GUIDs está ativo:  
+ O comando é definido para ser habilitado e exibido sempre que existir uma solução; ou seja, sempre que um dos seguintes GUIDs de contexto de comando estiver ativo:  
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
@@ -114,7 +114,7 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
-  No exemplo, observe que o sinalizador de cada comando é um separado [sinalizador de comando](../../extensibility/command-flag-element.md) elemento.  
+  No exemplo, observe que cada sinalizador de comando é um elemento de [sinalizador de comando](../../extensibility/command-flag-element.md) separado.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   
@@ -132,7 +132,7 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
 ```  
   
- Além disso, observe que cada contexto de interface do usuário deve ser fornecido em um separado `VisibilityItem` elemento, da seguinte maneira.  
+ Observe também que cada contexto de interface do usuário deve ser fornecido em um `VisibilityItem` elemento separado, da seguinte maneira.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -146,8 +146,8 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
- [Como os VSPackages adicionam elementos da Interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Roteamento de comando em VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
+## <a name="see-also"></a>Consulte Também  
+ [MenuCommands vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)   
+ [Como VSPackages adicionar elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Roteamento de comandos em VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Adicionar itens de menu dinamicamente](../../extensibility/dynamically-adding-menu-items.md)

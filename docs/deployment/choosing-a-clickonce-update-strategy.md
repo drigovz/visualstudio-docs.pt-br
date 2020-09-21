@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406839"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838426"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Escolher uma estratégia de atualização do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode fornecer atualizações automáticas para o aplicativo. Um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lê periodicamente o arquivo de manifesto de implantação para verificar se há atualizações disponíveis para ele. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.
@@ -34,9 +34,9 @@ ms.locfileid: "63406839"
 > Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.
 
 > [!NOTE]
-> No .NET Framework 2.0 e no .NET Framework 3.0, sempre que seu aplicativo verificar se as atualizações, antes ou após a inicialização ou por meio de \<xref:System.Deployment.Application > APIs, você deve definir `deploymentProvider` no manifesto de implantação. O elemento `deploymentProvider` corresponde no Visual Studio ao campo **Localização de atualização** na caixa de diálogo **Atualizações** da guia **Publicar**. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação de ClickOnce aplicativos para teste e servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> No .NET Framework 2.0 e .NET Framework 3.0, quando seu aplicativo verificar se há atualizações, antes ou após a inicialização, ou ao usar as APIs \<xref:System.Deployment.Application>, você deverá definir `deploymentProvider` no manifesto de implantação. O `deploymentProvider` elemento corresponde ao Visual Studio para o campo **local de atualização** na caixa de diálogo **atualizações** da guia **publicar** . Essa regra é relaxada no .NET Framework 3,5. Para obter mais informações, consulte [Implantando aplicativos ClickOnce para servidores de teste e produção sem assinatura](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
-## <a name="check-for-updates-after-application-startup"></a>Verifique se há atualizações após a inicialização do aplicativo
+## <a name="check-for-updates-after-application-startup"></a>Verificar se há atualizações após a inicialização do aplicativo
  Ao usar esta estratégia, o aplicativo tentará localizar e ler o arquivo de manifesto de implantação em segundo plano enquanto estiver em execução. Se uma atualização estiver disponível, na próxima vez que o usuário executar o aplicativo, o download e a instalação da atualização serão solicitados.
 
  Essa estratégia funciona melhor para conexões de rede com largura da banda baixa ou aplicativos maiores que podem exigir downloads longos.
@@ -72,7 +72,7 @@ ms.locfileid: "63406839"
 </subscription>
 ```
 
-## <a name="make-updates-required"></a>Fazer as atualizações necessárias
+## <a name="make-updates-required"></a>Fazer atualizações necessárias
  Talvez haja ocasiões em que você deseje exigir que usuários executem uma versão atualizada de seu aplicativo. Por exemplo, você pode fazer uma alteração em um recurso externo como um serviço Web que impeça o funcionamento correto da versão anterior de seu aplicativo. Nesse caso, talvez você deseje marcar sua atualização como obrigatória e evitar que os usuários executem a versão anterior.
 
 > [!NOTE]
@@ -86,7 +86,7 @@ ms.locfileid: "63406839"
 <deployment install="true" minimumRequiredVersion="1.0.0.0">
 ```
 
-## <a name="specify-update-intervals"></a>Especifique os intervalos de atualização
+## <a name="specify-update-intervals"></a>Especificar intervalos de atualização
  Você também pode especificar a frequência com que o aplicativo verificará se há atualizações. Para fazer isso, especifique a verificação de atualizações pelo aplicativo após a inicialização como descrito em "Verificando se há atualizações após a inicialização do aplicativo" anteriormente neste tópico.
 
  Para especificar o intervalo de atualização, defina as propriedades de **Especifique com que frequência o aplicativo deve verificar por atualizações** na caixa de diálogo **Atualizações do Aplicativo**.
@@ -102,10 +102,10 @@ ms.locfileid: "63406839"
 
  Essa estratégia funciona melhor quando você necessita de estratégias de atualização diferentes para usuários diferentes.
 
-## <a name="block-update-checking"></a>Bloquear a verificação de atualização
+## <a name="block-update-checking"></a>Bloquear verificação de atualização
  Também é possível evitar que seu aplicativo verifique se há atualizações. Por exemplo, você pode ter um aplicativo simples que nunca será atualizado, mas deseje usufruir dessa facilidade de instalação fornecida pela implantação de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 
- Você também deve bloquear a atualização verificando se seu aplicativo usa APIs de implantação para executar suas próprias atualizações; consulte "Fornecer uma interface do usuário para atualizações" no início deste tópico.
+ Você também deve bloquear a verificação de atualização se seu aplicativo usar APIs de implantação para executar suas próprias atualizações; consulte "fornecer uma interface do usuário para atualizações" anteriormente neste tópico.
 
  Para bloquear a verificação de atualizações, desmarque a caixa de seleção **O aplicativo deve verificar por atualizações** na caixa de diálogo Atualizações do Aplicativo.
 
@@ -116,10 +116,10 @@ ms.locfileid: "63406839"
 
  Nenhum aviso sobre níveis de confiança ocorrerá se você usar a Implantação de Aplicativo de Confiança. Para obter mais informações, consulte [visão geral da implantação de aplicativo confiável](../deployment/trusted-application-deployment-overview.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
  \<xref:System.Deployment.Application>
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Como o ClickOnce executa atualizações de aplicativos](../deployment/how-clickonce-performs-application-updates.md)
-- [Como: Gerenciar atualizações para um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Como gerenciar atualizações em um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

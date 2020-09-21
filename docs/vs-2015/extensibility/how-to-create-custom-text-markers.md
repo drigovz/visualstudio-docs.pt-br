@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar marcadores de texto personalizado | Microsoft Docs'
+title: Como criar marcadores de texto personalizados | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,41 +11,41 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435976"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838284"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Como: Criar marcadores de texto personalizado
+# <a name="how-to-create-custom-text-markers"></a>Como criar marcadores de texto personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se você quiser criar um marcador de texto personalizado para enfatizar ou organizar o código, você deve executar as seguintes etapas:  
+Se você quiser criar um marcador de texto personalizado para enfatizar ou organizar o código, deverá executar as seguintes etapas:  
   
-- Registrar o novo marcador de texto, de modo que outras ferramentas podem acessá-lo  
+- Registrar o novo marcador de texto, para que outras ferramentas possam acessá-lo  
   
-- Fornecer uma implementação padrão e a configuração do marcador de texto  
+- Fornecer uma implementação e configuração padrão do marcador de texto  
   
 - Criar um serviço que pode ser usado por outros processos para fazer uso do marcador de texto  
   
-  Para obter detalhes sobre como aplicar um marcador de texto em uma região de código, consulte [como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
+  Para obter detalhes sobre como aplicar um marcador de texto a uma região de código, consulte [como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Para registrar um marcador personalizado  
   
 1. Crie uma entrada de registro da seguinte maneira:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* \Text Editor\External\\*\<MarkerGUID>*  
   
-    <em>\<MarkerGUID ></em>é um `GUID` usado para identificar o marcador que está sendo adicionado  
+    <em>\<MarkerGUID></em>é `GUID` usado para identificar o marcador que está sendo adicionado  
   
-    *\<Versão >* é a versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], por exemplo 8.0  
+    *\<Version>* é a versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , por exemplo, 8,0  
   
-    *\<PackageGUID >* é o GUID do VSPackage implementa o objeto de automação.  
+    *\<PackageGUID>* é o GUID do VSPackage que implementa o objeto Automation.  
   
    > [!NOTE]
-   > O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versão >* pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > O caminho raiz de HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* pode ser substituído por uma raiz alternativa quando o Shell do Visual Studio é inicializado, para obter mais informações, consulte [Opções de linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Crie quatro valores em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versão >* \Text Editor\External marcadores\\ *\<MarkerGUID >*  
+2. Criar quatro valores em HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* \Text Editor\External marcadores\\*\<MarkerGUID>*  
   
    - (Padrão)  
   
@@ -55,9 +55,9 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
   
    - Pacote  
   
-   - `Default` é uma entrada opcional do tipo REG_SZ. Quando definido, o valor da entrada é uma cadeia de caracteres que contém algumas informações úteis de identifica, por exemplo "marcador de texto personalizada".  
+   - `Default` é uma entrada opcional do tipo REG_SZ. Quando definido, o valor da entrada é uma cadeia de caracteres que contém algumas informações de identificação úteis, por exemplo, "marcador de texto personalizado".  
   
-   - `Service` é uma entrada do tipo REG_SZ que contém a cadeia de caracteres do GUID do serviço que fornece o marcador de texto personalizado por proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Service` é uma entrada do tipo REG_SZ que contém a cadeia de caracteres GUID do serviço que fornece o marcador de texto personalizado por Proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> . O formato é {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
    - `DisplayName` é uma entrada do tipo REG_SZ que contém a ID de recurso do nome do marcador de texto personalizado. O formato é #YYYY.  
   
@@ -65,32 +65,32 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
   
 ### <a name="to-create-a-custom-text-marker"></a>Para criar um marcador de texto personalizado  
   
-1. Implementar a interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
+1. Implemente a interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>.  
   
-     A implementação dessa interface define o comportamento e aparência do seu tipo de marcador personalizado.  
+     Sua implementação dessa interface define o comportamento e a aparência do seu tipo de marcador personalizado.  
   
      Essa interface é chamada quando  
   
     1. Um usuário inicia o IDE pela primeira vez.  
   
-    2. Um usuário seleciona o **Redefinir padrões** botão sob o **fontes e cores** página de propriedades no **ambiente** pasta, localizada no painel esquerdo do  **Opções** caixa de diálogo obtido o **ferramentas** menu do IDE.  
+    2. Um usuário seleciona o **botão Redefinir padrões** na página de **Propriedades fontes e cores** na pasta **ambiente** , localizada no painel esquerdo da caixa de diálogo **Opções** , obtida no menu **ferramentas** do IDE.  
   
-2. Implemente a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> método, especificando qual `IVsPackageDefinedTextMarkerType` implementação deve ser retornada com base no tipo de marcador GUID especificado na chamada do método.  
+2. Implemente o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> método, especificando qual `IVsPackageDefinedTextMarkerType` implementação deve ser retornada com base no GUID do tipo de marcador especificado na chamada do método.  
   
-     O ambiente chama desta vez o método primeiro seu tipo de marcador personalizada é criado e especifica um GUID que identifica o tipo de marcador personalizado.  
+     O ambiente chama esse método na primeira vez que o tipo de marcador personalizado é criado e especifica um GUID que identifica o tipo de marcador personalizado.  
   
-### <a name="to-proffer-your-marker-type-as-a-service"></a>Ao oferecer o seu tipo de marcador como um serviço  
+### <a name="to-proffer-your-marker-type-as-a-service"></a>Para oferecer o tipo de marcador como um serviço  
   
-1. Chame o <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> método para <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
+1. Chame o <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> método para <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> .  
   
      Um ponteiro para <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> é retornado.  
   
-2. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> método, especificando o GUID que identifica o serviço do tipo de marcador personalizado e fornecendo um ponteiro para sua implementação do <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface. Sua <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementação deve retornar um ponteiro para sua implementação de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interface.  
+2. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> método, especificando o GUID que identifica o serviço de tipo de marcador personalizado e fornecendo um ponteiro para a implementação da <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface. Sua <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementação deve retornar um ponteiro para a implementação da <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interface.  
   
-     Um cookie exclusivo de identificação que seu serviço será retornado. Mais tarde você pode usar esse cookie revogar seu serviço do tipo de marcador personalizadas por meio da chamada a <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método da <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface especificar esse valor de cookie.  
+     Um cookie exclusivo que identifica que seu serviço é retornado. Posteriormente, você pode usar esse cookie para revogar o serviço de tipo de marcador personalizado chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> método da <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface que especifica esse valor de cookie.  
   
-## <a name="see-also"></a>Consulte também  
- [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
- [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
- [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>Consulte Também  
+ [Usando marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Como adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
+ [Como: implementar marcadores de erro](../extensibility/how-to-implement-error-markers.md)   
+ [Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

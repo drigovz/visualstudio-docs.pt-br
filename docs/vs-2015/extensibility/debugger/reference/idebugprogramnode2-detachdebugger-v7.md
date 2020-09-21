@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
+title: IDebugProgramNode2::D etachDebugger_V7 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 25c60bc42895a0527f1638dada5a28a1631314e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417880"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838485"
 ---
-# <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
+# <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-PRETERIDO. NÃO USE.  
+Preterido. NÃO USE.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,15 +37,15 @@ HRESULT DetachDebugger_V7 ( 
 int DetachDebugger_V7 ();  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Uma implementação deve retornar sempre `E_NOTIMPL`.  
+## <a name="return-value"></a>Valor retornado  
+ Uma implementação sempre deve retornar `E_NOTIMPL` .  
   
 ## <a name="remarks"></a>Comentários  
   
 > [!WARNING]
-> Desde [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], esse método não é mais usado e deve retornar sempre `E_NOTIMPL`.  
+> A partir do [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , esse método não é mais usado e sempre deve retornar `E_NOTIMPL` .  
   
- Esse método é chamado quando o depurador fecha inesperadamente. Quando este método é chamado, o DE deve retomar o programa como se o usuário desanexado dele. Não há mais eventos de depuração devem ser enviados. O programa deve estar em um estado onde é anexável de outra instância do depurador.  
+ Esse método é chamado quando o depurador é encerrado inesperadamente. Quando esse método é chamado, o DE deve retomar o programa como se o usuário fosse desanexado dele. Não devem ser enviados mais eventos de depuração. O programa deve estar em um estado no qual é possível anexá-lo de outra instância do depurador.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

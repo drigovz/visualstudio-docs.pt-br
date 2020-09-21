@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433045"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838721"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Como criar e executar uma instalação autônoma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
     > [!NOTE]
     > A instalação pode falhar se qualquer combinação de caminho e nome de arquivo exceder 260 caracteres. O comprimento máximo de um caminho no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é de 221 caracteres.  O nome do caminho local deve ter no máximo 70 caracteres, e o nome do caminho de rede deve ter no máximo 39 caracteres.
 
-     A instalação também pode falhar se os nomes de pastas no caminho incluírem espaços inseridos (por exemplo, "\\\\*NomeDoServidor*\IDE install" ou \\\\*NomeDoServidor*\Visual Studio\\).
+     A instalação também poderá falhar se os nomes de pastas no caminho incluírem espaços inseridos (por exemplo, " \\ \\ *ServerName*\IDE install" ou \\ \\ *ServerName*\Visual Studio \\ ).
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Implantando o Visual Studio no modo autônomo
- Para implantar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo, é necessário modificar o arquivo AdminDeployment.xml. Para fazer isso, primeiro crie o arquivo AdminDeployment.xml usando o parâmetro de linha de comando `/CreateAdminFile` *\<local do arquivo>*. Em seguida, você poderá usar esse arquivo a fim de enviar uma implantação do Visual Studio para sua rede ou receber em uma instalação, caso tenha colocado esse arquivo no diretório *Unidade*:\IDEinstall\packages. O arquivo AdminDeployment.xml não é exclusivo de um sistema operacional, uma arquitetura, uma edição Visual Studio ou de um idioma de sistema operacional.
+ Para implantar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo, é necessário modificar o arquivo AdminDeployment.xml. Para fazer isso, você deve primeiro criar o arquivo de AdminDeployment.xml usando o `/CreateAdminFile` *\<file location>* parâmetro de linha de comando. Em seguida, você poderá usar esse arquivo a fim de enviar uma implantação do Visual Studio para sua rede ou receber em uma instalação, caso tenha colocado esse arquivo no diretório *Unidade*:\IDEinstall\packages. O arquivo AdminDeployment.xml não é exclusivo de um sistema operacional, uma arquitetura, uma edição Visual Studio ou de um idioma de sistema operacional.
 
 > [!CAUTION]
 > Às vezes, os itens listados como selecionados no arquivo AdminDeployment.xml não são instalados. Para resolver esse problema, coloque os itens marcados como "Selected="yes"" no **final** do arquivo AdminDeployment.xml.
 >
 > Se preferir não instalar as dependências opcionais de um item, primeiro selecione o pai e, em seguida, desmarque as dependências opcionais após o pai, conforme mostrado na captura de tela a seguir:
 >
-> ![Itens de instalação no final do arquivo AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Itens de instalação no final do arquivo de AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
 > Como alternativa, basta omitir os filhos opcionais de um pai, ou seja, não incluir itens marcados como "Selected="no"". No entanto, continua sendo necessário colocar todos os itens marcados como "Selected="yes"" no final do arquivo AdminDeployment.xml.
 
@@ -61,7 +61,7 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 
 |Elemento|Atributo|Valores|Descrição|
 |-------------|---------------|------------|-----------------|
-|BundleCustomizations|TargetDir|*Path*|Comporta-se da mesma forma que a substituição do caminho na interface do usuário do aplicativo de instalação. Este elemento será ignorado se o Visual Studio já estiver instalado.|
+|BundleCustomizations|TargetDir|*Caminho*|Comporta-se da mesma forma que a substituição do caminho na interface do usuário do aplicativo de instalação. Este elemento será ignorado se o Visual Studio já estiver instalado.|
 |BundleCustomizations|NoWeb|sim&#124;padrão|Se o valor desse elemento for sim, o aplicativo de instalação nunca tentará ir para a Web durante a ação de instalação.|
 |SelectableItemCustomization|Hidden|Sim&#124;Não|Se o valor desse elemento for Sim, oculta um item Selecionável na árvore de personalização.|
 |SelectableItemCustomization|Selecionado|Sim&#124;Não|Marca ou desmarca um item selecionável na árvore de personalização.|
@@ -131,14 +131,14 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 
 2. Clique na guia **Detalhes** e anote a propriedade da **versão do produto**.
 
-    ![Exemplo da caixa de diálogo Propriedades em uma instalação autônoma do Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Instalação autônoma – caixa de diálogo Propriedades")
+    ![Exemplo da caixa de diálogo Propriedades em uma instalação autônoma do Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Caixa de diálogo instalação autônoma – Propriedades")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Se a versão do produto for 14.0.24720.0 ou 14.0.24720.1, faça o seguinte:
    1. Execute *Product.exe* /Layout *Unidade:* \IDEinstall em um computador com acesso à Internet. (Por exemplo, execute: `vs_enterprise.exe /Layout d:\IDEinstall`.)
 
    2. Quando concluir o /Layout, copie a nova imagem em um novo local.
 
-   3. Crie e modifique o arquivo AdminDeployment.xml. Para fazer isso, use o parâmetro de linha de comando `/CreateAdminFile`*\<local do arquivo>*. Para saber mais, confira a seção "Como implantar o Visual Studio no modo autônomo" deste artigo.
+   3. Crie e modifique o arquivo AdminDeployment.xml. Para fazer isso, use o `/CreateAdminFile` *\<file location>* parâmetro de linha de comando. Para saber mais, confira a seção "Como implantar o Visual Studio no modo autônomo" deste artigo.
 
    4. Execute o comando a seguir para atualizar a cópia do Visual Studio instalada no computador cliente: "\\\\*servidor1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\servidor1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -148,7 +148,7 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 
    2. Quando concluir o /Layout, copie a nova imagem em um novo local. Se preferir, você pode substituir a imagem da rede existente.
 
-   3. Crie e, em seguida, modifique o arquivo AdminDeployment.xml. Para fazer isso, use o parâmetro de linha de comando `/CreateAdminFile`*\<local do arquivo>*. Para saber mais, confira a seção "Como implantar o Visual Studio no modo autônomo" deste artigo.
+   3. Crie e, em seguida, modifique o arquivo AdminDeployment.xml. Para fazer isso, use o `/CreateAdminFile` *\<file location>* parâmetro de linha de comando. Para saber mais, confira a seção "Como implantar o Visual Studio no modo autônomo" deste artigo.
 
    4. Caso copie a imagem para um novo local, execute o comando a seguir para atualizar a cópia do Visual Studio instalada no computador cliente: "\\\\*servidor1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\servidor1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -174,5 +174,5 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 
      Para saber mais, confira os tópicos [Como localizar a chave do produto (Product Key) do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e [Aplicar chaves do produto (Product Keys) automaticamente durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Instalar o Visual Studio](../install/install-visual-studio-2015.md)

@@ -20,20 +20,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433166"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838370"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface do usuário (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para aplicativos universais do Windows e os aplicativos da Windows Store usando JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Criando e executando o aplicativo de teste de desempenho  
   
-1. No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo/Novo/Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
+1. No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **arquivo/novo/projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
   
 2. > [!IMPORTANT]
     > Os resultados do diagnóstico mostrados neste tópico são mostrados para um aplicativo do Windows 8.  
@@ -42,7 +42,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 4. Na caixa **Nome**, especifique um nome como `JS_Perf_Tester` e escolha **OK**.  
   
-5. No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
+5. Em **Gerenciador de soluções**, abra default.html e cole o seguinte código entre as \<body> marcas:  
   
     ```html  
     <div class="wrapper">  
@@ -150,7 +150,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 8. Pressione a tecla F5 para iniciar a depuração. Verifique se o botão **Aguardando valores** aparece na página.  
   
-9. Escolha **Aguardando valores** e verifique se o texto e a cor do botão são atualizados aproximadamente a cada segundo. Esse comportamento é esperado.  
+9. Escolha **Aguardando valores** e verifique se o texto e a cor do botão são atualizados aproximadamente a cada segundo. Isso ocorre por design.  
   
 10. Volte para o Visual Studio (Alt+Tab) e pressione Shift+F5 para parar a depuração.  
   
@@ -184,13 +184,13 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 7. Selecione uma parte de um a dois segundos no meio do gráfico de utilização da CPU (ou clique e arraste, ou use as teclas Tab e de direção). A ilustração a seguir mostra o gráfico de utilização da CPU depois de ser feita uma seleção. A área não sombreada é a seleção.  
   
-    ![Gráfico de utilização de CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Grafo de utilização da CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Escolha **Ampliar**.  
   
     O gráfico muda para mostrar mais detalhadamente o período selecionado. A ilustração a seguir mostra o gráfico de utilização da CPU após a ampliação. (Os dados específicos podem variar, mas o padrão geral será aparente.)  
   
-    ![Exibição ampliada](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Ampliado na exibição](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
     Os Detalhes da linha do tempo no painel inferior mostram um exemplo de detalhes para o período selecionado.  
   
@@ -242,5 +242,5 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 2. Execute o criador de perfil de capacidade de resposta de IU em HTML novamente e verifique o gráfico de utilização da CPU. Você descobrirá que os eventos excessivos acabaram, e a utilização da CPU caiu para perto de zero. Corrigido!  
   
-## <a name="see-also"></a>Consulte também  
- [Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)
+## <a name="see-also"></a>Consulte Também  
+ [Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)

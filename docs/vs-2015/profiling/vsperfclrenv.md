@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446692"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838690"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ VSPerfCmd /Attach:MyService.exe
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|**Off**|Exclui as variáveis de ambiente para criação de perfil de .NET padrão. Use essa opção quando as opções de VSPerfClrEnv não globais foram usadas para definir as variáveis de ambiente do criador de perfil.|  
+|**Desativado**|Exclui as variáveis de ambiente para criação de perfil de .NET padrão. Use essa opção quando as opções de VSPerfClrEnv não globais foram usadas para definir as variáveis de ambiente do criador de perfil.|  
 |**GlobalOff**|Exclui as variáveis de ambiente para criação de perfil do .NET global. Use essa opção quando o aplicativo foi iniciado pelo sistema operacional e não pelo criador de perfil.|  
   
 ## <a name="remarks"></a>Comentários  
@@ -111,5 +111,5 @@ VSPerfCmd /Attach:MyService.exe
   
  Se o ambiente certo não foi definido durante a criação de perfil, um aviso será dado durante a análise e os nomes da função gerenciada não serão resolvidos corretamente.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

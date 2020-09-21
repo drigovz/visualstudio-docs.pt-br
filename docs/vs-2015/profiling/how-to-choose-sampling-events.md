@@ -1,5 +1,5 @@
 ---
-title: 'Como: Escolher eventos de amostragem | Microsoft Docs'
+title: Como escolher eventos de amostragem | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432829"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838266"
 ---
-# <a name="how-to-choose-sampling-events"></a>Como: Escolher eventos de amostragem
+# <a name="how-to-choose-sampling-events"></a>Como escolher eventos de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] coletam dados de desempenho em um intervalo especificado como um número de ciclos de processador que são usados pelo processo analisado. O número padrão de ciclos em um intervalo é de 10.000.000, que é aproximadamente 0,01 segundos em um computador de 1 GH. Você pode alterar o número de ciclos em um intervalo e também pode alterar o evento de amostragem. Os eventos de amostragem a seguir estão disponíveis:  
@@ -44,7 +44,7 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../inclu
   
 ### <a name="to-select-a-sample-event"></a>Para selecionar um evento de amostragem  
   
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+1. Em **Gerenciador de desempenho**, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
   
 2. Nas **Páginas de Propriedades**, clique nas propriedades de **Amostragem**.  
   
@@ -61,9 +61,9 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../inclu
   
 5. Ao selecionar um evento de amostra, um valor de intervalo de amostragem padrão é exibido na caixa de texto **Intervalo de Amostragem**. Se necessário, insira o valor desejado na caixa de texto.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)   
- [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)   
- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
+ [Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)   
+ [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)   
+ [Compreendendo os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

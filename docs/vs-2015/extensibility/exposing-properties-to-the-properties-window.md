@@ -1,5 +1,5 @@
 ---
-title: Expondo propriedades na janela Propriedades | Microsoft Docs
+title: Expondo Propriedades à janela Propriedades | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,30 +13,30 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432111"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838325"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Expondo propriedades na janela Propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este passo a passo expõe as propriedades públicas de um objeto para o **propriedades** janela. As alterações feitas a essas propriedades são refletidas na **propriedades** janela.  
+Este passo a passos expõe as propriedades públicas de um objeto para a janela **Propriedades** . As alterações feitas nessas propriedades são refletidas na janela **Propriedades** .  
   
-## <a name="prerequisites"></a>Prerequisites  
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Pré-requisitos  
+ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="exposing-properties-to-the-properties-window"></a>Expondo propriedades na janela Propriedades  
- Nesta seção, você cria uma janela de ferramenta personalizada e exibir as propriedades públicas do objeto no painel janela associada a **propriedades** janela.  
+ Nesta seção, você cria uma janela de ferramentas personalizada e exibe as propriedades públicas do objeto painel de janela associado na janela **Propriedades** .  
   
-#### <a name="to-expose-properties-to-the-properties-window"></a>Para expor propriedades à janela de propriedades  
+#### <a name="to-expose-properties-to-the-properties-window"></a>Para expor propriedades para o janela Propriedades  
   
-1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto do VSIX chamado `MyObjectPropertiesExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Cada extensão do Visual Studio começa com um projeto de implantação VSIX que conterá os ativos de extensão. Crie um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto VSIX denominado `MyObjectPropertiesExtension` . Você pode encontrar o modelo de projeto VSIX na caixa de diálogo **novo projeto** em **Visual C#/extensibilidade**.  
   
-2. Adicionar uma janela de ferramentas, adicionando um modelo de item da janela de ferramenta personalizada denominado `MyToolWindow`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **caixa de diálogo Adicionar Novo Item**, acesse **itens do Visual c# / extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da caixa de diálogo, altere o nome de arquivo para `MyToolWindow.cs`. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Adicione uma janela de ferramentas adicionando um modelo de item de janela de ferramenta personalizada chamado `MyToolWindow` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar/novo item**. Na **caixa de diálogo Adicionar novo item**, vá para **itens/extensibilidade do Visual C#** e selecione **janela de ferramenta personalizada**. No campo **nome** na parte inferior da caixa de diálogo, altere o nome do arquivo para `MyToolWindow.cs` . Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criando uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3. Abra MyToolWindow.cs e adicione a seguinte instrução using:  
+3. Abra MyToolWindow.cs e adicione a seguinte instrução Using:  
   
     ```  
     using System.Collections;  
@@ -44,7 +44,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-4. Agora, adicione os campos a seguir para o `MyToolWindow` classe.  
+4. Agora, adicione os campos a seguir à `MyToolWindow` classe.  
   
     ```csharp  
     private ITrackSelection trackSel;  
@@ -52,7 +52,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
   
     ```  
   
-5. Adicione o seguinte código à classe MyToolWindow.  
+5. Adicione o código a seguir à classe MyToolWindow.  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -89,26 +89,26 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     }  
     ```  
   
-     O `TrackSelection` usos de propriedade `GetService` para obter uma `STrackSelection` serviço, que fornece um <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. O `OnToolWindowCreated` manipulador de eventos e `SelectList` método juntos, criam uma lista de objetos selecionados que contém somente o ferramenta Painel objeto de janela em si. O `UpdateSelection` método informa o **propriedades** janela para exibir as propriedades públicas do painel de janela de ferramentas.  
+     A `TrackSelection` propriedade usa `GetService` para obter um `STrackSelection` serviço, que fornece uma <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. O `OnToolWindowCreated` manipulador de eventos e o `SelectList` método juntos criam uma lista de objetos selecionados que contém apenas o próprio objeto de painel da janela de ferramentas. O `UpdateSelection` método informa à janela **Propriedades** para exibir as propriedades públicas do painel janela da ferramenta.  
   
 6. Compile o projeto e comece a depuração. A instância experimental do Visual Studio deve aparecer.  
   
-7. Se o **propriedades** janela não estiver visível, abra-o pressionando F4.  
+7. Se a janela **Propriedades** não estiver visível, abra-a pressionando F4.  
   
-8. Abra o **MyToolWindow** janela. Você pode encontrá-lo no **exibição / Other Windows**.  
+8. Abra a janela **MyToolWindow** . Você pode encontrá-lo em **modo de exibição/outras janelas**.  
   
-     A janela é aberta e as propriedades públicas do painel da janela aparecem na **propriedades** janela.  
+     A janela é aberta e as propriedades públicas do painel janela são exibidas na janela **Propriedades** .  
   
-9. Alterar o **legenda** propriedade no **propriedades** janela para **propriedades do meu objeto**.  
+9. Altere a propriedade **legenda** na janela **Propriedades** para **minhas propriedades de objeto**.  
   
-     A legenda da janela MyToolWindow muda de acordo.  
+     A legenda da janela MyToolWindow é alterada de acordo.  
   
-## <a name="exposing-tool-window-properties"></a>Expondo propriedades da janela de ferramenta  
- Nesta seção, você adiciona uma janela de ferramentas e expor suas propriedades. As alterações feitas às propriedades são refletidas na **propriedades** janela.  
+## <a name="exposing-tool-window-properties"></a>Expondo Propriedades da janela de ferramentas  
+ Nesta seção, você adiciona uma janela de ferramentas e expõe suas propriedades. As alterações feitas nas propriedades são refletidas na janela **Propriedades** .  
   
-#### <a name="to-expose-tool-window-properties"></a>Para expor as propriedades da janela de ferramenta  
+#### <a name="to-expose-tool-window-properties"></a>Para expor propriedades da janela de ferramentas  
   
-1. Abra MyToolWindow.cs e adicione a propriedade booliana pública IsChecked à classe MyToolWindow.  
+1. Abra MyToolWindow.cs e adicione a propriedade booliana pública isverificed à classe MyToolWindow.  
   
     ```csharp  
     [Category("My Properties")]  
@@ -125,9 +125,9 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     }  
     ```  
   
-     Essa propriedade obtém seu estado da caixa de seleção WPF, que você aprenderá a criar mais tarde.  
+     Essa propriedade obtém seu estado na caixa de seleção do WPF que você criará posteriormente.  
   
-2. Abra MyToolWindowControl.xaml.cs e substitua o construtor MyToolWindowControl com o código a seguir.  
+2. Abra MyToolWindowControl.xaml.cs e substitua o Construtor MyToolWindowControl pelo código a seguir.  
   
     ```vb  
     private MyToolWindow pane;  
@@ -139,21 +139,21 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     }  
     ```  
   
-     Isso proporciona `MyToolWindowControl` de acesso para o `MyToolWindow` painel.  
+     Isso dá `MyToolWindowControl` acesso ao `MyToolWindow` painel.  
   
-3. No MyToolWindow.cs, altere o `MyToolWindow` construtor da seguinte maneira:  
+3. No MyToolWindow.cs, altere o `MyToolWindow` Construtor da seguinte maneira:  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4. Altere para o modo de design de MyToolWindowControl.  
+4. Altere para o modo de exibição de design de MyToolWindowControl.  
   
-5. Exclua o botão e adicione uma caixa de seleção do **caixa de ferramentas** para o canto superior esquerdo.  
+5. Exclua o botão e adicione uma caixa de seleção do **Toolbox** no canto superior esquerdo.  
   
-6. Adicione os eventos verificado e não verificado. Selecione a caixa de seleção na exibição de design. No **propriedades** janela, clique no botão de manipuladores de eventos (na parte superior direita do **propriedades** janela). Encontrar **Checked** e digite **checkbox_Checked** na caixa de texto, em seguida, localize **desmarcado** e digite **checkbox_Unchecked** na caixa de texto.  
+6. Adicione os eventos marcados e desmarcados. Marque a caixa de seleção na exibição Design. Na janela **Propriedades** , clique no botão manipuladores de eventos (no canto superior direito da janela **Propriedades** ). Localize **selecionado** e digite **checkbox_Checked** na caixa de texto e, em seguida, localize **desmarcado** e digite **checkbox_Unchecked** na caixa de texto.  
   
-7. Adicione os manipuladores de eventos de caixa de seleção:  
+7. Adicione os manipuladores de eventos da caixa de seleção:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -170,21 +170,21 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
   
 8. Compile o projeto e comece a depuração.  
   
-9. Na instância experimental, abra o **MyToolWindow** janela.  
+9. Na instância experimental, abra a janela **MyToolWindow** .  
   
-     Procurar propriedades da janela na **propriedades** janela. O **IsChecked** propriedade aparece na parte inferior da janela, sob o **propriedades do meu** categoria.  
+     Procure as propriedades da janela na janela **Propriedades** . A propriedade **IsChecked** aparece na parte inferior da janela, na categoria **minhas propriedades** .  
   
-10. A caixa de seleção fazer check-in a **MyToolWindow** janela. **IsChecked** no **Properties** janela é alterado para **True**. Desmarque a caixa de seleção de **MyToolWindow** janela. **IsChecked** no **Properties** janela é alterado para **False**. Altere o valor de **IsChecked** na **propriedades** janela. A caixa de seleção de **MyToolWindow** alterações de janela para coincidir com o novo valor.  
+10. Marque a caixa de seleção na janela **MyToolWindow** . **IsChecked** na janela **Propriedades** muda para **true**. Desmarque a caixa de seleção na janela **MyToolWindow** . **IsChecked** na janela **Propriedades** é alterado para **false**. Altere o valor de **IsChecked** na janela **Propriedades** . A caixa de seleção na janela **MyToolWindow** é alterada para corresponder ao novo valor.  
   
     > [!NOTE]
-    > Se você deve descartar um objeto que é exibido na **propriedades** janela, chame `OnSelectChange` com um `null` contêiner de seleção primeiro. Depois de descartar a propriedade ou o objeto, você pode alterar para um contêiner de seleção que atualizou <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> lista.  
+    > Se for necessário descartar um objeto que é exibido na janela **Propriedades** , chame `OnSelectChange` primeiro um `null` contêiner de seleção. Depois de descartar a propriedade ou o objeto, você pode alterar para um contêiner de seleção que tenha atualizado <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> listas.  
   
-## <a name="changing-selection-lists"></a>Alterar listas de seleção  
- Nesta seção, você adiciona uma lista de seleção para uma classe de propriedade básico e usa a interface de janela de ferramenta para escolher em qual lista de seleção para exibir.  
+## <a name="changing-selection-lists"></a>Alterando listas de seleção  
+ Nesta seção, você adiciona uma lista de seleção para uma classe de propriedade básica e usa a interface da janela de ferramentas para escolher a lista de seleção a ser exibida.  
   
-#### <a name="to-change-selection-lists"></a>Para alterar a seleção de lista  
+#### <a name="to-change-selection-lists"></a>Para alterar as listas de seleção  
   
-1. Abra MyToolWindow.cs e adicione uma classe pública denominada `Simple`.  
+1. Abra MyToolWindow.cs e adicione uma classe pública chamada `Simple` .  
   
     ```csharp  
     public class Simple  
@@ -209,7 +209,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     }  
     ```  
   
-2. Adicionar uma propriedade de SimpleObject para a classe MyToolWindow, além de dois métodos para alternar a **propriedades** seleção de janela entre o painel da janela e o `Simple` objeto.  
+2. Adicione uma propriedade Simpleobject à classe MyToolWindow, além de dois métodos para alternar a seleção da janela **Propriedades** entre o painel janela e o `Simple` objeto.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -237,7 +237,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
     }  
     ```  
   
-3. No MyToolWindowControl.cs, substitua os manipuladores de caixa de seleção com estas linhas de código:  
+3. No MyToolWindowControl.cs, substitua os manipuladores de caixa de seleção por estas linhas de código:  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -256,17 +256,17 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
   
 4. Compile o projeto e comece a depuração.  
   
-5. Na instância experimental, abra o **MyToolWindow** janela.  
+5. Na instância experimental, abra a janela **MyToolWindow** .  
   
-6. Selecione a caixa de seleção de **MyToolWindow** janela. O **propriedades** janela exibe o `Simple` propriedades do objeto **SomeText** e **ReadOnly**. Desmarque a caixa de seleção. As propriedades públicas da janela aparecem na **propriedades** janela.  
+6. Marque a caixa de seleção na janela **MyToolWindow** . A janela **Propriedades** exibe as `Simple` Propriedades do objeto, **SomeText** e **ReadOnly**. Desmarque a caixa de seleção. As propriedades públicas da janela são exibidas na janela **Propriedades** .  
   
     > [!NOTE]
-    > O nome de exibição **SomeText** é **meu texto**.  
+    > O nome de exibição de **SomeText** é o **meu texto**.  
   
-## <a name="best-practice"></a>Prática recomendada  
- Neste passo a passo, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é implementada de modo que a coleção do objeto selecionável e a coleção de objetos selecionados são a mesma coleção. Apenas o objeto selecionado é exibida na lista de navegador de propriedade. Para uma implementação de ISelectionContainer mais completa, consulte os exemplos de Reference.ToolWindow.  
+## <a name="best-practice"></a>Melhor prática  
+ Neste passo a passo, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é implementado para que a coleção de objetos selecionáveis e a coleção de objetos selecionada sejam a mesma coleção. Somente o objeto selecionado aparece na lista navegador de propriedades. Para obter uma implementação ISelectionContainer mais completa, consulte os exemplos Reference. ToolWindow.  
   
- Janelas de ferramentas do Visual Studio persistem entre sessões do Visual Studio. Para obter mais informações sobre como manter o estado da janela de ferramenta, consulte <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+ As janelas de ferramentas do Visual Studio persistem entre as sessões do Visual Studio. Para obter mais informações sobre como persistir o estado da janela de ferramentas, consulte <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Estender propriedades e a janela de propriedades](../extensibility/extending-properties-and-the-property-window.md)

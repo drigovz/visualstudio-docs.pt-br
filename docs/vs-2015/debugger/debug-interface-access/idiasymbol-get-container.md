@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b759c8fc65130c37f24e8ec03bbcebf3a52241d0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810676"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838526"
 ---
-# <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
+# <a name="idiasymbolget_container"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Essa função recupera um ponteiro para um símbolo que representa o recipiente/pai desse símbolo.  
+Essa função recupera um ponteiro para um símbolo que representa o pai/contêiner deste símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_container(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna um ponteiro para um `IDiaSymbol` que contém informações sobre o contêiner desse símbolo.  
+ fora Retorna um ponteiro para um `IDiaSymbol` que contém informações sobre o contêiner deste símbolo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará S_FALSE ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna S_FALSE ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno de S_FALSE significa que a propriedade não está disponível para o símbolo.  
@@ -48,7 +48,7 @@ HRESULT get_container(
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V DIA SDK 8.0|  
+|Versão:|DIA SDK v 8.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

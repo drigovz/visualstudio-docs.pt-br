@@ -1,5 +1,5 @@
 ---
-title: 'Como: Limitar a instrumentação a DLLs específicas | Microsoft Docs'
+title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432672"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838499"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como: Limite de instrumentação a DLLs específicas
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para analisar uma ou mais DLLs em um aplicativo, você deve criar uma sessão de desempenho que inclui os arquivos .dll como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou como arquivos binários independentes.  
@@ -45,7 +45,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
   
 ### <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Para determinar DLLs específicas a serem analisadas como binários independentes  
   
-1. Abra [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+1. Abra o [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
 2. No menu **Analisar**, selecione **Iniciar o Assistente de Desempenho**.  
   
@@ -70,6 +70,6 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
     > [!NOTE]
     > Não especifique o arquivo executável (.exe) que exerce as DLLs.  
   
-## <a name="see-also"></a>Consulte também  
- [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
- [Como: Limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+## <a name="see-also"></a>Consulte Também  
+ [Controlando a coleta de dados](../profiling/controlling-data-collection.md)   
+ [Como limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

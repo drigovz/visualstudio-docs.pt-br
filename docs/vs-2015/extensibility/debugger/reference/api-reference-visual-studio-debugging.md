@@ -1,5 +1,5 @@
 ---
-title: Referência da API (depuração do Visual Studio) | Microsoft Docs
+title: Referência de API (depuração do Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424512"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838389"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referência de API (depuração no Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e uso para todos os elementos de API e uma variedade de exemplos de código. Todas as referências são listadas em ordem alfabética por categoria.  
+A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e o uso de todos os elementos da API e uma variedade de exemplos de código. Todas as referências são listadas alfabeticamente por categoria.  
   
- A tabela a seguir mostra o comum `HRESULT` valores retornados pelos métodos.  
+ A tabela a seguir mostra os `HRESULT` valores comuns retornados pelos métodos.  
   
-|Nome|Descrição|Valor|  
+|Name|Descrição|Valor|  
 |----------|-----------------|-----------|  
 |S_OK|Êxito.|0x00000000|  
 |E_UNEXPECTED|Falha inesperada.|0x8000FFFF|  
@@ -36,16 +36,16 @@ A seção de referência inclui uma visão geral conceitual da API, um guia que 
 |E_HANDLE|Identificador inválido.|0x80070006|  
 |E_ABORT|Operação anulada.|0x80004004|  
 |E_FAIL|Falha inesperada.|0x80004005|  
-|E_ACCESSDENIED|Erro de acesso geral negado.|0x80070005|  
+|E_ACCESSDENIED|Erro geral de acesso negado.|0x80070005|  
   
 > [!NOTE]
-> Quando um [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depuração método retorna `S_OK`, supõe-se que todos os ponteiros de parâmetro são válidos, ou seja, nenhuma validação é realizada em out ponteiros de parâmetro quando `S_OK` é retornado.  
+> Quando um [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] método de depuração retorna `S_OK` , supõe-se que todos os ponteiros de parâmetro out sejam válidos, ou seja, nenhuma validação é conduzida nos ponteiros de parâmetro out quando `S_OK` é retornada.  
   
 > [!NOTE]
-> Inválido ou `NULL` [parâmetros out] pode causar falhas no IDE.  
+> Parâmetros inválidos ou `NULL` [out] podem fazer com que o IDE falhe.  
   
-## <a name="see-also"></a>Consulte também  
- [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Interface](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Estruturas e uniões](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [Auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   

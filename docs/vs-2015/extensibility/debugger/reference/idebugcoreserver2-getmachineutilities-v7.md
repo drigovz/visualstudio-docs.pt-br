@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 | Microsoft Docs
+title: 'IDebugCoreServer2:: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 131f5a5f276b3f93d2ede3d088556b6832cc3651
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445280"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838702"
 ---
-# <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
+# <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Esse método obtém os utilitários de máquina para um servidor.  
   
 > [!NOTE]
-> Este método é obsoleto: não use ([!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] sempre retorna `E_NOTIMPL` se esse método é chamado). Ele é retido por razões históricas.  
+> Este método é obsoleto: não use ( [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] sempre retorna `E_NOTIMPL` se esse método for chamado). Ele é retido por motivos históricos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -43,13 +43,13 @@ int GetMachineUtilities_V7(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppUtil`  
- [out] Retorna um `IDebugMDMUtil2_V7` interface que representa as informações de utilitários do computador.  
+ fora Retorna uma `IDebugMDMUtil2_V7` interface que representa as informações de utilitários de computador.  
   
-## <a name="return-value"></a>Valor de retorno  
- Sempre retorna `E_NOTIMPL`, indicando que o método não está implementado.  
+## <a name="return-value"></a>Valor Retornado  
+ Sempre retorna `E_NOTIMPL` , indicando que o método não está implementado.  
   
 ## <a name="remarks"></a>Comentários  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] sempre retorna `E_NOTIMPL` se esse método é chamado.  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] sempre retorna `E_NOTIMPL` se esse método for chamado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

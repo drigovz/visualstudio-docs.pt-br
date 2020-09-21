@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434279"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838314"
 ---
 # <a name="performance-report-overview"></a>Visão geral de Relatório de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
  A exibição Ponteiro de Instrução permite exibir as instruções específicas que foram executadas durante a criação de perfil de amostragem. Para obter mais informações, consulte [Exibição de IPs (Ponteiros de Instrução)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Exibição de alocação  
- A exibição Alocação estará disponível se **Coletar alocação de objeto .NET** tiver sido selecionado na página **Geral** da caixa de diálogo de propriedades da **Sessão de Desempenho**. Consulte [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md). A exibição Alocação lista os objetos do .NET que foram alocados pelo aplicativo ou componente. Quando uma linha de objeto é expandida, uma árvore de chamadas é exibida. A árvore de chamadas exibe os caminhos de execução que resultaram na criação do objeto. Informações também são exibidas sobre o número de alocações inclusivas e exclusivas para cada função na árvore de chamadas. A exibição Alocação também pode expandir e realçar o caminho de execução de uma função que alocou o número máximo de objetos. Para exibir o caminho mais ativo, clique com o botão direito do mouse na função de atalho e, em seguida, clique em **Expandir Afunilamento**. Para obter mais informações, consulte [Coletando alocação de memória e dados de tempo de vida do .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Exibição Alocações](../profiling/dotnet-memory-allocations-view.md).  
+ A exibição Alocação estará disponível se **Coletar alocação de objeto .NET** tiver sido selecionado na página **Geral** da caixa de diálogo de propriedades da **Sessão de Desempenho**. Consulte [visão geral da sessão de desempenho](../profiling/performance-session-overview.md). A exibição Alocação lista os objetos do .NET que foram alocados pelo aplicativo ou componente. Quando uma linha de objeto é expandida, uma árvore de chamadas é exibida. A árvore de chamadas exibe os caminhos de execução que resultaram na criação do objeto. Informações também são exibidas sobre o número de alocações inclusivas e exclusivas para cada função na árvore de chamadas. A exibição Alocação também pode expandir e realçar o caminho de execução de uma função que alocou o número máximo de objetos. Para exibir o caminho mais ativo, clique com o botão direito do mouse na função de atalho e, em seguida, clique em **Expandir Afunilamento**. Para obter mais informações, consulte [Coletando alocação de memória e dados de tempo de vida do .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Exibição Alocações](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Exibição Tempo de Vida de Objetos  
  A exibição Tempo de Vida do Objeto estará disponível se **Coletar informações de alocação de objeto do .NET** e **Coletar também as informações de tempo de vida do objeto .NET** forem marcados na página **Geral** a caixa de diálogo de propriedades **Sessão de Desempenho**.  
@@ -96,6 +96,6 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
   
 - **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
- [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
+ [Exibições do relatório de desempenho](../profiling/performance-report-views.md)

@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445626"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838686"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Instruções passo a passo: criando uma tarefa embutida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   
 #### <a name="to-create-and-modify-a-project-file"></a>Para criar e modificar um arquivo de projeto  
   
-1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No Visual Studio, no menu **arquivo** , clique em **novo** e em **projeto**.  
   
 2. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, `D:\`. Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é `InlineTasks`.  
   
@@ -241,7 +241,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   Os valores dos parâmetros de entrada são definidos quando o destino TestBuild invoca a tarefa RegX. A tarefa RegX lê todos os arquivos e retorna a lista de arquivos que correspondem à expressão regular. Essa lista é retornada como o parâmetro de saída `Result`, que é emitido como o item `MatchedFiles` do MSBuild.  
   
 ### <a name="handling-reserved-characters"></a>Manipulação de caracteres reservados  
- O analisador de MSBuild processa tarefas embutidas como XML. Caracteres que têm significado reservado em XML, por exemplo, "\<" e ">", são detectados e manipulados como se fossem XML e não código-fonte .NET. Para incluir os caracteres reservados em expressões de código como `Files.Length > 0`, escreva o elemento `Code` para que seu conteúdo fique contido em uma expressão CDATA, da seguinte maneira:  
+ O analisador de MSBuild processa tarefas embutidas como XML. Os caracteres que têm significado reservado em XML, por exemplo, " \<" and "> ", são detectados e manipulados como se fossem XML, e não o código-fonte do .net. Para incluir os caracteres reservados em expressões de código como `Files.Length > 0`, escreva o elemento `Code` para que seu conteúdo fique contido em uma expressão CDATA, da seguinte maneira:  
   
  `<Code Type="Fragment" Language="cs">`  
   
@@ -253,7 +253,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   
  `</Code>`  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)   
- [Tarefas](../msbuild/msbuild-tasks.md)   
+ [Tarefa](../msbuild/msbuild-tasks.md)   
  [Destinos](../msbuild/msbuild-targets.md)

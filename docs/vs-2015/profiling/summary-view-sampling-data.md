@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c759922fcd28ce0b686745fc917c02f41762cae4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447173"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838589"
 ---
 # <a name="summary-view---sampling-data"></a>Exibição Resumo – Dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,6 +53,6 @@ A exibição Resumo exibe informações sobre as funções mais caras de desempe
 |**Nome**|O nome da função.|  
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil coletadas durante a execução de código pela função em seu corpo. O percentual exclui as amostras que foram coletadas quando as funções chamadas por essa função estavam em execução.|  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição Resumo](../profiling/summary-view-dotnet-memory-data.md)   
- [Exibição de Resumo](../profiling/summary-view-instrumentation-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de resumo](../profiling/summary-view-dotnet-memory-data.md)   
+ [Exibição do Resumo](../profiling/summary-view-instrumentation-data.md)

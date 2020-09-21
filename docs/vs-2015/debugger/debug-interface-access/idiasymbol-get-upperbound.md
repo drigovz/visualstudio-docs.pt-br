@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f965cddfa9d5d071bd08e4473cff49c82703d7ec
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803279"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838451"
 ---
-# <a name="idiasymbolgetupperbound"></a>IDiaSymbol::get_upperBound
+# <a name="idiasymbolget_upperbound"></a>IDiaSymbol::get_upperBound
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera um símbolo que representa o limite superior de uma dimensão de matriz FORTRAN.  
@@ -35,13 +35,13 @@ HRESULT get_upperBound ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o limite superior de uma dimensão de matriz FORTRAN.  
+ fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o limite superior de uma dimensão de matriz Fortran.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

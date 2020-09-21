@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9743fa7defbbf3321636d2ba4799454713a647db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432780"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838746"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise para um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e, em seguida, selecione **Filtrar por** ->  **Marcas** no menu de atalho.  
+Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise a um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e selecione **Filtrar por**  ->   **marcas** no menu de atalho.  
   
  **Requisitos**  
   
@@ -51,9 +51,9 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
   
 7. Selecione os contadores que você deseja usar ao analisar seu aplicativo.  
   
-8. Clique em **Aplicar.**  
+8. Clique em **aplicar.**  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)   
- [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)
+ [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)

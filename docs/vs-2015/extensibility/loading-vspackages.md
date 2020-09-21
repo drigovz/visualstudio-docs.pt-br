@@ -1,5 +1,5 @@
 ---
-title: Carregar VSPackages | Microsoft Docs
+title: Carregando VSPackages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439772"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838442"
 ---
 # <a name="loading-vspackages"></a>Carregando VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projeto ou um serviço que implementa o VSPackage. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.  
+VSPackages são carregados no Visual Studio somente quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projetos ou um serviço que o VSPackage implementa. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.  
   
 > [!NOTE]
-> Visual Studio pode determinar determinadas informações de VSPackage, como os comandos que oferece um VSPackage, sem carregar o VSPackage.  
+> O Visual Studio pode determinar determinadas informações de VSPackage, como os comandos que um VSPackage oferece, sem carregar o VSPackage.  
   
- Os VSPackages pode ser definidos como autoload em um contexto de (UI) de interface de usuário específico, por exemplo, quando uma solução é aberta. O <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo define neste contexto.  
+ VSPackages pode ser definido como AutoLoad em um contexto de interface do usuário específico (IU), por exemplo, quando uma solução é aberta. O <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo define esse contexto.  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Realiza o carregamento automático um VSPackage em um contexto específico  
+### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Carregamento automático de um VSPackage em um contexto específico  
   
-- Adicionar o `ProvideAutoLoad` de atributo para os atributos de VSPackage:  
+- Adicione o `ProvideAutoLoad` atributo aos atributos VSPackage:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -41,22 +41,22 @@ Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade 
     {. . .}  
     ```  
   
-     Ver os campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obter uma lista de contextos de interface do usuário e seus valores GUID.  
+     Consulte os campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obter uma lista dos contextos da interface do usuário e seus valores GUID.  
   
 - Defina um ponto de interrupção no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
   
-- Compile o VSPackage e iniciar a depuração.  
+- Compile o VSPackage e inicie a depuração.  
   
-- Carregue uma solução ou crie um.  
+- Carregue uma solução ou crie uma.  
   
-     O VSPackage carrega e para no ponto de interrupção.  
+     O VSPackage é carregado e interrompido no ponto de interrupção.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Forçar para carregar um VSPackage  
- Em algumas circunstâncias, um VSPackage talvez precise forçar outro VSPackage a ser carregado. Por exemplo, um VSPackage leve pode carregar um VSPackage maior em um contexto que não está disponível como um CMDUIContext.  
+## <a name="forcing-a-vspackage-to-load"></a>Forçando a carga de um VSPackage  
+ Em algumas circunstâncias, um VSPackage pode ter que forçar outro VSPackage a ser carregado. Por exemplo, um VSPackage leve pode carregar um VSPackage maior em um contexto que não está disponível como um CMDUIContext.  
   
- Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forçar um VSPackage ao carregar.  
+ Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forçar o carregamento de um VSPackage.  
   
-- Inserir este código para o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método do VSPackage que força o VSPackage outro ao carregar:  
+- Insira esse código no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método do VSPackage que força a carga de outro VSPackage:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -69,15 +69,15 @@ Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade 
   
     ```  
   
-     Quando o VSPackage é inicializado, ele forçará `PackageToBeLoaded` para carregar.  
+     Quando o VSPackage for inicializado, ele forçará `PackageToBeLoaded` a carga.  
   
-     Carregamento de força não deve ser usado para comunicação de VSPackage. Use [Using e fornecendo serviços](../extensibility/using-and-providing-services.md) em vez disso.  
+     O carregamento forçado não deve ser usado para comunicação VSPackage. Use o [usando e fornecendo serviços](../extensibility/using-and-providing-services.md) em vez disso.  
   
 ## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Usando um atributo personalizado para registrar um VSPackage  
- Em alguns casos, você talvez precise criar um novo atributo de registro para a sua extensão. Você pode usar atributos de registro para adicionar novas chaves de registro ou para adicionar novos valores para as chaves existentes. O novo atributo deve derivar de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, e ele deve substituir o <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> métodos.  
+ Em alguns casos, talvez seja necessário criar um novo atributo de registro para sua extensão. Você pode usar atributos de registro para adicionar novas chaves do registro ou para adicionar novos valores às chaves existentes. O novo atributo deve derivar de e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> deve substituir os <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> métodos e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> .  
   
 ## <a name="creating-a-registry-key"></a>Criando uma chave do registro  
- No código a seguir, o atributo personalizado cria uma **personalizado** subchave sob a chave para o VSPackage que está sendo registrado.  
+ No código a seguir, o atributo personalizado cria uma subchave **personalizada** sob a chave para o VSPackage que está sendo registrado.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -102,8 +102,8 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Criando um novo valor em uma chave do registro existente  
- Você pode adicionar valores personalizados para uma chave existente. O código a seguir mostra como adicionar um novo valor a uma chave de registro de VSPackage.  
+## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Criando um novo valor em uma chave de registro existente  
+ Você pode adicionar valores personalizados a uma chave existente. O código a seguir mostra como adicionar um novo valor a uma chave de registro do VSPackage.  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -127,5 +127,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [VSPackages](../extensibility/internals/vspackages.md)

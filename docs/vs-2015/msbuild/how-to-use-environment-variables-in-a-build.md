@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar variáveis de ambiente em um build | Microsoft Docs'
+title: Como usar variáveis de ambiente em um build | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437884"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838376"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Como: Usar variáveis de ambiente em um build
+# <a name="how-to-use-environment-variables-in-a-build"></a>Como usar variáveis de ambiente em um build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.  
@@ -65,10 +65,10 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
 
 [MSBuild](msbuild.md)
 
-[Propriedades MSBuild](../msbuild/msbuild-properties1.md)
+[Propriedades do MSBuild](../msbuild/msbuild-properties1.md)
 
-[Como: compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

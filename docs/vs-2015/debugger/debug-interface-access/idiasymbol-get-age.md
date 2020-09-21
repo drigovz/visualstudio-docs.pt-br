@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806674"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838486"
 ---
-# <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
+# <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera o valor de idade de um arquivo. PDB.  
+Recupera o valor de idade de um arquivo. pdb.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,23 +35,23 @@ HRESULT get_age ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o valor de idade de um arquivo. PDB.  
+ fora Retorna o valor de idade de um arquivo. pdb.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="remarks"></a>Comentários  
- A idade não necessariamente corresponde a qualquer valor de tempo conhecido; ele é normalmente usado para determinar se um arquivo. PDB está fora de sincronia com um arquivo .exe correspondente.  
+ A idade não corresponde necessariamente a nenhum valor de tempo conhecido; Normalmente, ele é usado para determinar se um arquivo. pdb está fora de sincronia com um arquivo. exe correspondente.  
   
 ## <a name="requirements"></a>Requisitos  
   
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
+|Versão:|DIA SDK v 7.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

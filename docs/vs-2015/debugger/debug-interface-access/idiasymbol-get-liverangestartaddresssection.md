@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df3faba1309b5a26316b615042492f96b9401a01
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791456"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838363"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Retorna a parte da seção do endereço inicial do intervalo no qual o símbolo local é válido.  
@@ -35,25 +35,25 @@ HRESULT get_liveRangeStartAddressSection ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `section`  
- [out] Retorna a parte da seção do intervalo de endereços inicial.  
+ fora Retorna a parte da seção do intervalo de endereços inicial.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 > [!NOTE]
-> Um código de erro retornado significa que o símbolo não tem informações de intervalo em tempo real.  
+> Um código de erro retornado significa que o símbolo não tem informações de intervalo dinâmico.  
   
 ## <a name="remarks"></a>Comentários  
  O endereço formado pela seção e deslocamento é o início do intervalo no qual o símbolo é válido.  
   
- Para obter a parte do deslocamento do endereço, use [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
+ Para obter a parte de deslocamento do endereço, use [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: Dia2.h  
+ Cabeçalho: dia2. h  
   
- Biblioteca: diaguids.lib  
+ Biblioteca: diaguids. lib  
   
  DLL: msdia100.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

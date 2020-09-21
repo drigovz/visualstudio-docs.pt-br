@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4d11a16bbb4e411a95a96d63fed59fc33a7ed0af
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798114"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838411"
 ---
-# <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
+# <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera a seção de deslocamento de um destino da conversão.  
+Recupera a seção de deslocamento de um destino de conversão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_targetOffset ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna a parte do deslocamento de um endereço de destino da conversão.  
+ fora Retorna a parte de deslocamento de um endereço de destino de conversão.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

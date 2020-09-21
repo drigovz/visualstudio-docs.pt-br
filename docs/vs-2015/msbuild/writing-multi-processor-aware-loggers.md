@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425875"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838444"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escrevendo agentes de log com reconhecimento de multiprocessador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ public interface INodeLogger: ILogger
 ### <a name="distributed-logging-model"></a>Modelo de Registro em Log Distribuído  
  No modelo de registro em log central, muito tráfego de mensagens de entrada pode sobrecarregar o nó central, por exemplo, ao criar vários projetos ao mesmo tempo. Isso pode enfatizar os recursos do sistema e diminuir o desempenho do build. Para facilitar esse problema, o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] dá suporte a um modelo de registro em log distribuído.  
   
- ![Modelo de registro em log distribuído](../msbuild/media/distnode.png "DistNode")  
+ ![Modelo de log distribuído](../msbuild/media/distnode.png "DistNode")  
   
  O modelo de registro em log distribuído estende o modelo de registro em log central, permitindo que você crie um agente de encaminhamento.  
   
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   Você pode modificar o ConfigurableForwardingLogger para atender às suas necessidades. Para fazer isso, chame o agente na linha de comando usando MSBuild.exe e liste os eventos de build que você deseja que o agente encaminhe para o nó central.  
   
-  Como alternativa, você pode criar um agente de encaminhamento personalizado. Ao criar um agente de encaminhamento personalizado, você pode ajustar o comportamento do agente. No entanto, criar um agente de encaminhamento personalizado é mais complexo do que apenas personalizar o ConfigurableForwardingLogger. Para obter mais informações, consulte [Criando Agentes de Encaminhamento](../msbuild/creating-forwarding-loggers.md).  
+  Como alternativa, você pode criar um agente de encaminhamento personalizado. Ao criar um agente de encaminhamento personalizado, você pode ajustar o comportamento do agente. No entanto, criar um agente de encaminhamento personalizado é mais complexo do que apenas personalizar o ConfigurableForwardingLogger. Para obter mais informações, consulte [criando agente de log de encaminhamento](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Usando o ConfigurableForwardingLogger para registro em log distribuído simples  
  Para anexar um ConfigurableForwardingLogger ou um agente de encaminhamento personalizado, use a opção `/distributedlogger` (`/dl` para a forma abreviada) em um build de linha de comando MSBuild.exe. O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `/logger`, exceto em casos em que um agente distribuído tenha sempre duas classes de registro em log em vez de uma, o agente de encaminhamento e o agente central. Este é um exemplo de como anexar um agente de encaminhamento personalizado chamado XMLForwardingLogger.  
@@ -83,7 +83,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 > [!NOTE]
 > Um asterisco (*) deve separar os dois nomes de agentes na opção `/dl`.  
   
- Usar o ConfigurableForwardingLogger é como usar qualquer outro agente (conforme descrito Em [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)), exceto se você anexar o agente ConfigurableForwardingLogger em vez do agente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] típico e especificar como parâmetros os eventos que você deseja que o ConfigurableForwardingLogger passe para o nó central.  
+ Usar o ConfigurableForwardingLogger é como usar qualquer outro agente (como descrito em [obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md)), exceto que você anexa o agente de log do ConfigurableForwardingLogger em vez do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] agente de log típico e especifica como parâmetros os eventos que você deseja que o ConfigurableForwardingLogger passe para o nó central.  
   
  Por exemplo, se você quiser ser notificado somente quando um build começar e terminar, e quando ocorrer um erro, você terá que passar `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT` como parâmetros. Vários parâmetros podem ser passados, separando-os com ponto e vírgula. A seguir está um exemplo de como usar o ConfigurableForwardingLogger para encaminhar apenas os eventos `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT`.  
   
@@ -114,5 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## <a name="see-also"></a>Consulte também  
- [Criando agentes de log de encaminhamento](../msbuild/creating-forwarding-loggers.md)
+## <a name="see-also"></a>Consulte Também  
+ [Criando agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

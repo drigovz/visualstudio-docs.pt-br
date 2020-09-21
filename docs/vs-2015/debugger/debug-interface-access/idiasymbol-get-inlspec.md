@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 99a92f134390e5d3215b1609234e643b71d93d3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793668"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838374"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Essa função recupera um sinalizador que indica se a função foi marcada como embutido (usando um dos [inline, inline, \__forceinline](../../misc/inline-inline-forceinline.md) atributos).  
+Essa função recupera um sinalizador que indica se a função foi marcada como embutida (usando um dos atributos [inline, __inline \_ _forceinline](../../misc/inline-inline-forceinline.md) ).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se a função foi marcada como embutido; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se a função foi marcada como embutida; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
@@ -48,8 +48,8 @@ HRESULT get_inlSpec(
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V DIA SDK 8.0|  
+|Versão:|DIA SDK v 8.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md)
+ [inline, __inline, \_ _forceinline](../../misc/inline-inline-forceinline.md)

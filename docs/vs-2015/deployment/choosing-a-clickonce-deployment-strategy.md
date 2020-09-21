@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cce51860b335e16fe507b20e41a5adba0b3fa278
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418204"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838476"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Escolhendo uma estratégia de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
   
  Como essa estratégia depende de conectividade de rede, ela funcionará melhor para aplicativos que serão implantados para usuários com acesso a uma rede local ou a uma conexão com a Internet de alta velocidade.  
   
- Se você implantar o aplicativo da Web, poderá passar argumentos para o aplicativo quando ele for ativado por meio de uma URL. Para obter mais informações, confira [Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Você não poderá passar argumentos para um aplicativo ativado ao usar qualquer um dos outros métodos descritos neste documento.  
+ Se você implantar o aplicativo da Web, poderá passar argumentos para o aplicativo quando ele for ativado por meio de uma URL. Para obter mais informações, consulte [como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Você não poderá passar argumentos para um aplicativo ativado ao usar qualquer um dos outros métodos descritos neste documento.  
   
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], clique em **Da Web** ou **De um caminho UNC ou compartilhamento de arquivos** na página **Como Instalado** do Assistente de Publicação.  
   
@@ -55,7 +55,7 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
   
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], clique em **De um CD-ROM ou DVD-ROM** na página **Como Instalado** do Assistente de Publicação.  
   
- Para habilitar essa estratégia de implantação manualmente, altere a tag **deploymentProvider** no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de Instalação** na página **Publicar** do Designer de Projeto. É no Mage.exe **local inicial**.)  
+ Para habilitar essa estratégia de implantação manualmente, altere a tag **deploymentProvider** no manifesto de implantação. (No Visual Studio, essa propriedade é exposta como **URL de Instalação** na página **Publicar** do Designer de Projeto. Em Mage.exe, ela é **Localização Inicial**.)  
   
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Iniciação do aplicativo da Web ou de um compartilhamento de rede  
  Esta estratégia é como a primeira, exceto que o aplicativo se comporta como um aplicativo Web. Quando o usuário clica em um link em uma página da Web (ou clica duas vezes em um ícone no compartilhamento de arquivos), o aplicativo é iniciado. Quando os usuários fecharem o aplicativo, ele não estará mais disponível em seus computadores locais; nada será adicionado ao menu **Iniciar** ou **Adicionar ou Remover Programas** no **Painel de Controle**.  
@@ -67,15 +67,15 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
   
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], clique em **Não instalar o aplicativo** na página **Instalar ou Executar da Web** do Assistente de Publicação.  
   
- Para habilitar essa estratégia de implantação, manualmente, altere a tag **install** no manifesto de implantação. (Seu valor pode ser **true** ou **false**. No Mage.exe, use o **somente Online** opção a **tipo de aplicativo** lista.)  
+ Para habilitar essa estratégia de implantação, manualmente, altere a tag **install** no manifesto de implantação. (Seu valor pode ser **true** ou **false**. Em Mage.exe, use a opção **somente online** na lista **tipo de aplicativo** .)  
   
 ## <a name="web-browser-support"></a>Suporte a navegadores da Web  
  Os aplicativos destinados ao .NET Framework 3.5 podem ser instalados usando qualquer navegador.  
   
  Os aplicativos destinados ao .NET Framework 2.0 exigem o Internet Explorer.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444016"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838387"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Relatório de Rastreamento de Eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ O Relatório de ETW (Rastreamento de Eventos para Windows) lista os eventos ETW 
 > [!NOTE]
 > Não é possível exibir relatórios ETW na interface [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Para obter informações sobre como coletar dados do ETW usando as Ferramentas de Criação de Perfil na interface do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], veja [Como: Coletar o rastreamento de eventos para Windows (ETW) dados](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Para obter informações sobre como coletar o ETW usando o Ferramentas de Criação de Perfil da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interface, consulte [como coletar dados do ETW (rastreamento de eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Para obter informações sobre como coletar dados ETW usando as ferramentas de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), consulte [Eventos](../profiling/events-vsperfcmd.md).  
   
-- O relatório de ETW é gerado usando o comando **VSReport/Summary:ETW**. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).  
+- Você gera o relatório ETW usando o comando **VSReport/summary: ETW** . Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Column|Descrição|  
 |------------|-----------------|  
-|**Carimbo de data/hora**|Identifica quando o evento ocorreu.|  
+|**Timestamp**|Identifica quando o evento ocorreu.|  
 |**ID do Processo**|Identifica o processo que gerou o evento.|  
-|**ID do Thread**|Identifica o thread que gerou o evento.|  
+|**ID do thread**|Identifica o thread que gerou o evento.|  
 |**Descrição**|Identifica o provedor de eventos.|  
 |**Tipo**|Identifica o tipo de evento.|  
 |**Propriedades**|As propriedades do evento. Cada evento é um par nome-valor separado por vírgulas e limitado entre colchetes.|

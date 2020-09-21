@@ -1,5 +1,5 @@
 ---
-title: 'Como: Coletar dados do contador de CPU | Microsoft Docs'
+title: Como coletar dados do contador de CPU | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432804"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838636"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Como: Coletar dados do contador de CPU
+# <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um contador de evento de CPU é usado para coletar dados de desempenho específicos de hardware. Este tópico mostra como coletar dados do contador de eventos quando você usa a método de criação de perfil de instrumentação.  
@@ -50,7 +50,7 @@ Um contador de evento de CPU é usado para coletar dados de desempenho específi
   
 - Colete dados de um ou mais contadores ao analisar por instrumentação.  
   
-- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, confira [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md).  
+- Especifique um evento de contador como o intervalo de amostragem, quando você analisar por amostragem. Para obter mais informações, consulte [como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Para coletar dados de contador de desempenho de CPU ao analisar por instrumentação  
   
@@ -65,8 +65,8 @@ Um contador de evento de CPU é usado para coletar dados de desempenho específi
     > [!NOTE]
     > **Contadores de desempenho disponíveis** estará habilitada somente se você selecionar a caixa de seleção **Coletar Contadores de CPU**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Propriedades da sessão de desempenho](../profiling/performance-session-properties.md)   
- [Contadores da CPU e do Windows](../profiling/cpu-and-windows-counters.md)   
- [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+ [Contadores de CPU e do Windows](../profiling/cpu-and-windows-counters.md)   
+ [Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445016"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838345"
 ---
-# <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
+# <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Descreve vários atributos para um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Membro de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura.  
+Descreve vários atributos para uma interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Membro da estrutura de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -169,16 +169,16 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica nenhum atributo.  
   
  DBG_ATTRIB_ALL  
- Indica que todos os atributos.  
+ Indica todos os atributos.  
   
  DBG_ATTRIB_OBJ_IS_EXPANDABLE  
  Indica que a propriedade ou referência tem filhos.  
   
  DBG_ATTRIB_OBJ_HAS_ID  
- Indica que uma ID para esse objeto foi criada.  
+ Indica que uma ID para este objeto foi criada.  
   
  DBG_ATTRIB_OBJ_CAN_HAVE_ID  
- Indica que uma ID para esse objeto pode ser criada.  
+ Indica que uma ID para este objeto pode ser criada.  
   
  DBG_ATTRIB_VALUE_READONLY  
  Indica que o valor é somente leitura.  
@@ -196,28 +196,28 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano.  
   
  DBG_ATTRIB_VALUE_BOOLEAN_TRUE  
- Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano e `TRUE`.  
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano e `TRUE` .  
   
  DBG_ATTRIB_VALUE_INVALID  
  Indica que o valor no `DEBUG_PROPERTY_INFO::bstrValue` não é válido.  
   
  DBG_ATTRIB_VALUE_NAT  
- Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é "*nada*" (NAT). NAT descreve um sinalizador de registro em processadores Intel de 64 bits que indica exceções especulativas adiadas.  
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é "*não é algo*" (NAT). O NAT descreve um sinalizador de registro nos processadores Intel de 64 bits que indicam exceções especulativas adiadas.  
   
  DBG_ATTRIB_VALUE_AUTOEXPANDED  
- Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` possivelmente foi expandido para automático.  
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` já foi expandido automaticamente.  
   
  DBG_ATTRIB_VALUE_TIMEOUT  
- Indica que uma avaliação foi excedido.  
+ Indica que uma avaliação atingiu o tempo limite.  
   
  DBG_ATTRIB_VALUE_RAW_STRING  
  Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` pode ser representado por uma cadeia de caracteres bruta.  
   
  DBG_ATTRIB_VALUE_CUSTOM_VIEWER  
- Indica que essa propriedade tem pelo menos um visualizador personalizado associado a ele.  
+ Indica que essa propriedade tem pelo menos um visualizador personalizado associado a ela.  
   
  DBG_ATTRIB_ACCESS_NONE  
- Indica um objeto que não possui `public`, `private`, nem `protected` tipo de acesso.  
+ Indica um objeto que não tem nenhum `public` , `private` , nem o acesso de `protected` tipo.  
   
  DBG_ATTRIB_ACCESS_PUBLIC  
  Indica um objeto que tem acesso público.  
@@ -232,7 +232,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica um objeto que tem acesso final.  
   
  DBG_ATTRIB_ACCESS_ALL  
- Máscara para extrair os atributos de acesso de `DBG_ATTRIB_FLAGS`.  
+ Máscara para extrair os atributos de acesso `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_STORAGE_NONE  
  Indica que não há nenhum tipo de armazenamento especificado.  
@@ -247,7 +247,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica o armazenamento no registro.  
   
  DBG_ATTRIB_STORAGE_ALL  
- Máscara para extrair os atributos de armazenamento do `DBG_ATTRIB_FLAGS`.  
+ Máscara da qual extrair os atributos de armazenamento `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_TYPE_NONE  
  Indica que não há nenhum modificador de tipo.  
@@ -259,13 +259,13 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica que o tipo de objeto é constante.  
   
  DBG_ATTRIB_TYPE_SYNCHRONIZED  
- Indica que o tipo de objeto é sincronizado.  
+ Indica que o tipo de objeto está sincronizado.  
   
  DBG_ATTRIB_TYPE_VOLATILE  
  Indica que o tipo de objeto é volátil.  
   
  DBG_ATTRIB_TYPE_ALL  
- Máscara para extrair os atributos de tipo de `DBG_ATTRIB_FLAGS`.  
+ Máscara da qual extrair os atributos de tipo `DBG_ATTRIB_FLAGS` .  
   
  DBG_ATTRIB_DATA  
  Indica que esse objeto é um campo de dados.  
@@ -289,10 +289,10 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  Indica que esse objeto é uma classe interna.  
   
  DBG_ATTRIB_MOSTDERIVED  
- Indica que esse objeto é '*mais derivado*'. O termo "*mais derivado*" significa que o tipo real do objeto e não o tipo de sua referência.  
+ Indica que este objeto é '*mais derivado*'. O termo "*mais derivado*" significa o tipo real do objeto, e não o tipo de referência.  
   
  DBG_ATTRIB_CHILD_ALL  
- Indica uma máscara de `DBG_ATTRIB_DATA` por meio de `DBG_ATTRIB_MOSTDERIVED`.  
+ Indica uma máscara de `DBG_ATTRIB_DATA` até `DBG_ATTRIB_MOSTDERIVED` .  
   
  DBG_ATTRIB_MULTI_CUSTOM_VIEWERS  
  Indica que o objeto tem vários visualizadores personalizados associados a ele.  
@@ -300,20 +300,20 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Comentários  
   
 > [!NOTE]
-> Os valores nesta enumeração, na verdade, não são definidos no assembly para c#. Em vez disso, você deve copiar as definições para seu arquivo de origem.  
+> Os valores nessa enumeração não são realmente definidos no assembly para C#. Em vez disso, você deve copiar as definições para o arquivo de origem.  
   
- Esses sinalizadores também são usados para filtrar o filho de um objeto, por exemplo, quando passado como um argumento para [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Os valores podem ser combinados com um bit a bit `OR`.  
+ Esses sinalizadores também são usados para filtrar os filhos de um objeto, por exemplo, quando passados como um argumento para [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Os valores podem ser combinados com um bit a bit `OR` .  
   
- O `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` sinalizador é uma indicação ao [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] para obter o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) da interface do [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface e chamada [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obter uma lista de visualizadores personalizados.  
+ O `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` sinalizador é uma indicação para [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] obter a interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) da interface [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) e chamar [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obter uma lista de visualizadores personalizados.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

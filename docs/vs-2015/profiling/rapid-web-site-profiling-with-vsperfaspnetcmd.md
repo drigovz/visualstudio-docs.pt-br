@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438901"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838738"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação de perfil do site rápida com VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, confira [Como: Instalar o Profiler autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
+A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter informações, consulte [Como instalar o criador de perfil autônomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
 > Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -61,14 +61,14 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
   
  Você também pode usar a opção **/Trace** para incluir informações detalhadas de tempo com os dados de memória do .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Para coletar dados de interação entre camadas  
   
 > [!WARNING]
 > Os dados TIP (criação de perfil de interação entre camadas) podem ser coletados usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação ( **/trace**).  
+> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
   
  Para coletar dados de interação entre camadas com os dados de amostragem:  
   
@@ -80,23 +80,23 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
   
  Para coletar dados de interação entre camadas com os dados de memória de .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-## <a name="UsingNoWait"></a> Usando a opção /NoWait  
+## <a name="using-the-nowait-option"></a><a name="UsingNoWait"></a> Usando a opção /NoWait  
  Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd**. Você pode usar a opção de sintaxe a seguir para forçar o prompt de comando a retornar. Em seguida, você pode executar outras operações na janela do prompt de comando. Para finalizar a criação de perfil, use a opção **/shutdown** em um comando **vsperfaspnetcmd**.  
   
  Para iniciar a criação de perfil:  
   
- **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
   
  Para encerrar a criação de perfil:  
   
  **vsperfaspnetcmd /shutdown** *websiteUrl*  
   
-## <a name="additional-options"></a>Opções Adicionais  
+## <a name="additional-options"></a>Opções adicionais  
  Você pode adicionar qualquer uma das seguintes opções aos comandos listados anteriormente nesta seção, exceto o **vsperfaspnetcmd /shutdown**.  
   
 |Opção|Descrição|  
 |------------|-----------------|  
-|**/Output:** `VspFile`|Por padrão, o arquivo de dados de criação de perfil (.vsp) é criado no diretório atual com o nome de arquivo **PerformanceReport.vsp**. Use a opção /output para especificar um local diferente, nome do arquivo diferente ou ambos.|  
+|**/Output:**`VspFile`|Por padrão, o arquivo de dados de criação de perfil (.vsp) é criado no diretório atual com o nome de arquivo **PerformanceReport.vsp**. Use a opção /output para especificar um local diferente, nome do arquivo diferente ou ambos.|  
 |**/PackSymbols:Off**|Por padrão, VsPerfASPNETCmd insere símbolos (nomes de função e de parâmetro, etc.) no arquivo .vsp. Inserir os símbolos pode tornar o arquivo de dados de criação de perfil muito grande. Se você tem acesso aos arquivos .pdb que contêm os símbolos ao analisar os dados, use a opção /packsymbols:off para desabilitar a inserção dos símbolos.|
