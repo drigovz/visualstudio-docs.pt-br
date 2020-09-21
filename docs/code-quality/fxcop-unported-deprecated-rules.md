@@ -10,17 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a79b4a3b91f087c5f238afd3627a1393c558daa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 33f935158077e566a5a9bc14645acaae79201347
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511073"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832171"
 ---
 # <a name="deprecated-rules"></a>Regras preteridas
 
 As seguintes regras de análise herdada do FxCop foram preteridas e não serão implementadas como analisadores. Para obter mais informações, você pode pesquisar por ID de regra (por exemplo, **CA1009**) na [página de problemas do GitHub Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
+- [CA1006](ca1006.md)
 - [CA1009](ca1009.md)
 - [CA1020](ca1020.md)
 - [CA1025](ca1025.md)

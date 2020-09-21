@@ -1,6 +1,6 @@
 ---
-title: Anexar o criador de perfil para o aplicativo autônomo do .NET Framework; obter estatísticas de aplicativo
-ms.custom: seodec18
+title: Anexar o criador de perfil ao aplicativo autônomo do .NET; obter estatísticas do aplicativo
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68450129d9bb3e9e67793c0a4155e953abbccc3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531801"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808045"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo autônomo do .NET Framework e coletar estatísticas de aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar estatísticas de desempenho usando o método de amostragem.

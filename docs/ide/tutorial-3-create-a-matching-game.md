@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579711"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810829"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Criar um jogo da memória
 
@@ -61,6 +61,6 @@ Para iniciar o tutorial, comece com a **[etapa 1: criar um projeto e adicionar u
 
 ## <a name="see-also"></a>Confira também
 
-* [Mais tutoriais sobre C#](/visualstudio/get-started/csharp/)
-* [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Mais tutoriais sobre C#](../get-started/csharp/index.yml)
+* [Tutoriais de Visual Basic](../get-started/visual-basic/index.yml)
 * [Tutoriais do C++](/cpp/get-started/tutorial-console-cpp)

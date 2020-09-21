@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70107845"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808988"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
@@ -48,9 +48,9 @@ Saiba mais sobre as tecnologias compatíveis com o design acessível. Também in
 
 ## <a name="websites"></a>Sites
 
-- [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
+- [Passo a passo: diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](/previous-versions/3has1x30(v=vs.140)) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
-- **Criando páginas da Web acessíveis com DHTML** Este artigo técnico lista os elementos HTML 4,0 que são acessíveis, bem como dicas de design da Web acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
+- **Criando páginas da Web acessíveis com DHTML** Este artigo técnico lista os elementos HTML 4,0 que são acessíveis, bem como dicas de design da Web acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](/previous-versions//ms528445(v=vs.85)) (Criar páginas da Web acessíveis com DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 

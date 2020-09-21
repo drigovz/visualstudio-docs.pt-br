@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c29a8ddf3cf2f5a48f08c8baef4f41d59ad632e5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64797996"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90829670"
 ---
-# <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
+# <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem os operadores de conversão definidos.  
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem qualquer operador de conversão definido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_hasCastOperator ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna um `TRUE` se o tipo de dados definido pelo usuário não tiver os operadores de conversão definidos; caso contrário, retornará `FALSE`.  
+ fora Retorna um `TRUE` se o tipo de dados definido pelo usuário tiver qualquer operador de conversão definido; caso contrário, retornará `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
@@ -48,7 +48,7 @@ HRESULT get_hasCastOperator ( 
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
+|Versão:|DIA SDK v 7.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

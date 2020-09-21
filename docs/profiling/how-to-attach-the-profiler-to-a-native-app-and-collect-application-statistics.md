@@ -1,6 +1,6 @@
 ---
-title: Anexar o criador de perfil a um aplicativo nativo e coletar estatísticas do aplicativo
-ms.custom: seodec18
+title: Anexar o criador de perfil ao aplicativo nativo & coletar estatísticas do aplicativo
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: df44fe42-281b-4398-b3fc-277b62ae41f1
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d463413833ad476b8d6ad90369f53267e3f7cff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328675"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811078"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo independente nativo e coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) independente nativo em execução e coletar estatísticas de desempenho usando o método de amostragem.

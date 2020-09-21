@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595417"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810035"
 ---
 # <a name="properties-of-diagrams"></a>Propriedades de diagramas
 Você pode definir propriedades que especificam como os diagramas serão exibidos no designer gerado. Por exemplo, você pode especificar uma cor padrão para texto no diagrama.
@@ -27,7 +27,7 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento do diagrama.|Branco|
+|Cor de Preenchimento|A cor de preenchimento do diagrama.|Branca|
 |Cor do texto|A cor do texto que é exibido no diagrama.|Preto|
 |Modificador de acesso|O modificador de acesso da classe (público ou interno).|Público|
 |Atributos personalizados|Usado para adicionar atributos à classe de código gerada.|\<none>|
@@ -35,7 +35,7 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituir e estender as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir do diagrama ( `none` , `abstract` ou `sealed` ).|Nenhum|
 |Diagrama base|A classe base deste diagrama.|(nenhum)|
-|Name|O nome deste diagrama.|Nome atual|
+|Nome|O nome deste diagrama.|Nome atual|
 |Namespace|O namespace afiliado a este diagrama.|Namespace atual|
 |Classe representada|A classe de domínio raiz que este diagrama representa.|Classe raiz atual, se aplicável|
 |Observações|Observações informais que estão associadas a este elemento.|\<none>|
@@ -47,4 +47,4 @@ Você pode definir propriedades que especificam como os diagramas serão exibido
 
 ## <a name="see-also"></a>Confira também
 
-[Glossário de ferramentas de linguagem específica de domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossário de ferramentas de linguagem específica de domínio](/previous-versions/bb126564(v=vs.100))

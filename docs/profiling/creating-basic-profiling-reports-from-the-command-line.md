@@ -1,5 +1,6 @@
 ---
-title: Criando relatórios básicos de criação de perfil por meio da linha de comando | Microsoft Docs
+title: Linha de comando de criação de perfil – criar relatórios básicos
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bca944b67b19fdbb4138c479acf5693994d1c717
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329048"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808845"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Criar relatórios básicos de criação de perfil por meio da linha de comando
 Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios de valores separados por vírgula (.*csv*) com base em um arquivo de dados de criação de perfil .*vsp* ou .*vsps*. Para obter uma descrição de todas as opções de relatório, consulte [VSPerfReport](../profiling/vsperfreport.md).

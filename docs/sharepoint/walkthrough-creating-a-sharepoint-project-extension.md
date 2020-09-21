@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015080"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739922"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Walkthrough: criar uma extensão de projeto do SharePoint
   Este tutorial ilustra como criar uma extensão para projetos do SharePoint. Você pode usar uma extensão de projeto para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado. Você também pode adicionar propriedades personalizadas ou responder quando um valor de propriedade for alterado. Ao contrário das extensões de item de projeto, as extensões de projeto não podem ser associadas a um tipo de projeto do SharePoint específico. Quando você cria uma extensão de projeto, a extensão é carregada quando qualquer tipo de projeto do SharePoint é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -128,7 +128,7 @@ ms.locfileid: "86015080"
 
 1. No **Gerenciador de soluções**, abra o menu de atalho para o arquivo Source. Extension. vsixmanifest e, em seguida, escolha o botão **abrir** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo no designer de manifesto. As informações exibidas na guia **metadados** também aparecem nas **extensões e atualizações**. Todos os pacotes VSIX exigem o arquivo extension. vsixmanifest. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Abre o arquivo no designer de manifesto. As informações exibidas na guia **metadados** também aparecem nas **extensões e atualizações**. Todos os pacotes VSIX exigem o arquivo extension. vsixmanifest. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Na caixa **nome do produto** , digite **propriedade personalizada do projeto**.
 

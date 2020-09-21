@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896614"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832314"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido nas janelas de **inspeção**, **automáticos**e **locais** usando especificadores de formato.
@@ -78,7 +78,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 |bb|inteiro não assinado de binário (sem 0b à esquerda)|25|00000000000000000000000000011001|
 |e|notação científica|25000000|2.500000 e + 07|
 |g|mais curto do ponto flutuante ou científico|25000000|2,5 e + 07|
-|c|caractere único|0x0065, c|101 'e'|
+|c|caractere único|0x0065|101 'e'|
 |s|const char * cadeia de caracteres (com aspas)|\<location> "Olá, mundo"|“Olá Mundo”|
 |**SB**|cadeia de caracteres const char* (sem aspas)|\<location> "Olá, mundo"|hello world|
 |s8|Cadeia de caracteres UTF-8|\<location> "Este é um UTF-8 Coffee Cup â ̃ •"|"Esta é uma xícara de café UTF-8 ☕"|
@@ -153,10 +153,10 @@ Não há suporte para especificadores em **negrito** apenas para depuração de 
 |**u**|inteiro decimal não assinado|0x0065|101|
 |o|inteiro octal não assinado|0xF065|0170145|
 |x<br /><br />X|Inteiro hexadecimal|61541|0x0000f065|
-|**debug**<br /><br />**h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|
-|**fixo**|ponto flutuante assinado|(3./2.), f|1.500000|
+|**l**<br /><br />**h**|prefixo longo ou curto para: d, i, u, o, x, X|00406042|0x0c22|
+|**f**|ponto flutuante assinado|(3./2.), f|1.500000|
 |**Oriental**|notação científica assinada|(3.0/2.0)|1.500000e+000|
-|**m**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|(3.0/2.0)|1.5|
+|**g**|ponto flutuante assinado ou notação científica assinada,<br/> o que for menor|(3.0/2.0)|1.5|
 |c|caractere único|\<location>|101 'e'|
 |s|const char * (com aspas)|\<location>|“Olá Mundo”|
 |su|const wchar_t*<br /><br /> const char16_t \* (entre aspas)|\<location>|L"hello world"|
@@ -173,7 +173,7 @@ A tabela a seguir descreve os símbolos de formatação usados para locais de me
 |Símbolo|Formatar|Valor de inspeção original|Valor exibido|
 |------------|------------|--------------------------|---------------------|
 |**Massachusetts**|Caracteres ASCII na base 64|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|
-|**d**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
+|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
 |**MBS**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
 |**MW**|8 palavras|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
 |**md**|4 palavra duplas|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|

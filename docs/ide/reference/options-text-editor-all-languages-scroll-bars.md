@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588792"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808084"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem
 Essa caixa de diálogo permite alterar o comportamento padrão da barra de rolagem do editor de código. Para exibir essas opções, selecione **Opções** do menu **Ferramentas**. Na pasta **Editor de Texto**, expanda a subpasta **Todas as Linguagens** e, em seguida, escolha **Barras de Rolagem**.
@@ -69,7 +69,7 @@ Selecione se a barra de rolagem vertical mostra as anotações a seguir:
 
 Experimente abrir um arquivo de código grande e substituir algumas partes do texto que ocorrem em vários locais no arquivo. A barra de rolagem mostra o efeito das substituições, de modo que você pode desfazer suas alterações se tiver substituído algo que não deveria.
 
-Veja a postagem no blog da [Barra de rolagem avançada](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) sobre o que as várias cores e símbolos significam ao editar código.
+Veja a postagem no blog da [Barra de rolagem avançada](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) sobre o que as várias cores e símbolos significam ao editar código.
 
 ## <a name="behavior"></a>Comportamento
 

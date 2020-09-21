@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b21268b488eb0061c5c329e0afcb57ef1ec6e3a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62962087"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809918"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Introdução à estrutura da Web do Django no Visual Studio
 
@@ -111,7 +111,7 @@ Como você marcou a opção **Criar novo repositório Git** na caixa de diálogo
 
 Resposta: Em primeiro lugar, se você usar o controle do código-fonte desde o início, especialmente se também usar um repositório remoto, terá um backup regular em um local fora do projeto. Em vez de manter um projeto apenas em um sistema de arquivos local, o controle do código-fonte também oferece um histórico de alterações completo e facilita a reversão de um único arquivo ou todo o projeto para um estado anterior. O histórico de alterações ajuda a determinar a causa das regressões (falhas de teste). Além disso, o controle do código-fonte é essencial se várias pessoas estiverem trabalhando em um projeto, pois ele gerencia substituições e fornece a resolução de conflitos. Por fim, o controle do código-fonte, que é basicamente uma forma de automação, deixa você preparado para automatizar o gerenciamento de compilações, testes e versões. Esse recurso realmente representa o primeiro passo no uso de DevOps em um projeto e, como os obstáculos para entrar são muito baixos, realmente não há motivos para não usar o controle do código-fonte desde o início.
 
-Para uma discussão mais aprofundada sobre o controle do código-fonte usado como automação, confira [A origem da verdade: a função dos repositórios no DevOps](https://msdn.microsoft.com/magazine/mt763232), um artigo da MSDN Magazine destinado a aplicativos móveis, mas que também se aplica a aplicativos Web.
+Para uma discussão mais aprofundada sobre o controle do código-fonte usado como automação, confira [A origem da verdade: a função dos repositórios no DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops), um artigo da MSDN Magazine destinado a aplicativos móveis, mas que também se aplica a aplicativos Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Pergunta: É possível evitar que o Visual Studio confirme automaticamente um novo projeto?
 

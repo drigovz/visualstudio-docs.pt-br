@@ -1,5 +1,6 @@
 ---
-title: Código misto e informações ausentes na janela pilha de chamadas | Microsoft Docs
+title: Código misto & informações ausentes na janela pilha de chamadas
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb7bc54899d8c9a079d3f2706065d690904540
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b32fe52b31daa384718eae629d3051bade93959d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187542"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808149"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código misto e informações ausentes na janela Pilha de Chamadas
 Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando o código nativo chama o código gerenciado, você pode observar as seguintes discrepâncias na janela **Pilha de Chamadas**:

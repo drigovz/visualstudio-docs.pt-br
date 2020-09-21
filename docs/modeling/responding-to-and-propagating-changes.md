@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe09c242fce137d90b90ff2d6c547cee1ed2dc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595391"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809983"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Responder e propagar alterações
 
@@ -32,7 +32,7 @@ Como diretriz, considere estas técnicas na seguinte ordem:
 |Regras|Você pode definir regras que são enfileiradas para execução logo antes do final de uma transação na qual ocorreu uma alteração. Eles não são executados em desfazer ou refazer. Use-os para manter uma parte da loja em sincronia com outra.|[Regras propagam alterações dentro do modelo](../modeling/rules-propagate-changes-within-the-model.md)|
 |Armazenar eventos|O repositório de modelagem fornece notificações de eventos como adicionar ou excluir um elemento ou link ou alterar o valor de uma propriedade. O evento também é executado em desfazer e refazer. Use armazenar eventos para atualizar valores que não estão no repositório.|[Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Eventos .NET|As formas têm manipuladores de eventos que respondem a cliques do mouse e a outros gestos. Você precisa se registrar para esses eventos para cada objeto. Normalmente, o registro é feito em uma substituição de InitializeInstanceResources e deve ser feito para cada elemento.<br /><br /> Esses eventos geralmente ocorrem fora de uma transação.|[Como interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Regras de limites|Uma regra de limites é usada especificamente para restringir os limites de uma forma.|[BoundsRules restringem o local e o tamanho de uma forma](/visualstudio/modeling/boundsrules-constrain-shape-location-and-size?view=vs-2015)|
+|Regras de limites|Uma regra de limites é usada especificamente para restringir os limites de uma forma.|[BoundsRules restringem o local e o tamanho de uma forma](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
 |Regras de seleção|As regras de seleção restringem especificamente o que o usuário pode selecionar.|[Como acessar e restringir a seleção atual](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indique os Estados dos elementos do modelo usando recursos de formas e conectores, como sombra, pontas de seta, cor e larguras de linha e estilo.|[Atualizando formas e conectores para refletir o modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533751"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809066"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -73,7 +73,7 @@ No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenc
 - TypeScript
 - YAML
 
-Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
+Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](/archive/blogs/benwilli/visual-studio-tip-3-use-navigate-to). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
 
 - C#
 

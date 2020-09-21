@@ -1,6 +1,6 @@
 ---
-title: Anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de memória
-ms.custom: seodec18
+title: Anexar o profiler ao ASP.NET para coletar dados de memória
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: edf9fec93b8fed4e89e5e7cf0525d4f11ed326fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22a3f7d20b02839ae677b12e5ce8454e63358914
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329341"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807970"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados da memória usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e coletar dados sobre o número e o tamanho das alocações de memória do .NET Framework. Também é possível coletar dados sobre o tempo de vida de objetos de memória do .NET Framework.

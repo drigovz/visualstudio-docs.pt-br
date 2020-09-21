@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115359"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807840"
 ---
 # <a name="properties-of-swimlanes"></a>Propriedades de swimlanes
 Você pode adicionar raias a um diagrama. As raias dividem um diagrama em áreas verticais ou horizontais. Você pode definir outras formas a serem exibidas dentro de raias. Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -25,7 +25,7 @@ Você pode adicionar raias a um diagrama. As raias dividem um diagrama em áreas
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de preenchimento do corpo|A cor de preenchimento do corpo da raia.|Branco|
+|Cor de preenchimento do corpo|A cor de preenchimento do corpo da raia.|Branca|
 |Cor de preenchimento do cabeçalho|A cor de preenchimento do cabeçalho da raia.|DarkGray|
 |Cor do separador|A cor da linha do separador.|LightGray|
 |Estilo da linha separadora|O estilo da linha do separador (,,,, `Solid` `Dash` `Dot` `DashDot` `DashDotDot` ou `Custom` ).|`Dash`|
@@ -37,7 +37,7 @@ Você pode adicionar raias a um diagrama. As raias dividem um diagrama em áreas
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte que é gerada a partir da raia ( `none` `abstract` ou `sealed` ).|nenhum|
 |Raia base|A classe base dessa raia.|(nenhum)|
-|Name|O nome desta raia.|Nome atual|
+|Nome|O nome desta raia.|Nome atual|
 |Namespace|O namespace que é afiliado a esta raia.|Namespace atual|
 |Tipo de dica de ferramenta|Como a dica de ferramenta é definida ( `fixed` , `variable` ou `none` ). Se `fixed` , em seguida, o valor da `Fixed Tooltip Text` propriedade será usado; se `variable` , em seguida, a dica de ferramenta será definida no código personalizado.|\<none>|
 |Observações|Observações informais que estão associadas a esta raia.|\<none>|
@@ -52,4 +52,4 @@ Você pode adicionar raias a um diagrama. As raias dividem um diagrama em áreas
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

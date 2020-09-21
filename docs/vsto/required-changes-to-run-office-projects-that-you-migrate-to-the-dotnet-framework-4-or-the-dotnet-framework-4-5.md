@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836065"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810961"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Alterações necessárias para executar projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5
   Se a estrutura de destino de um projeto do Office for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, você deverá executar as seguintes tarefas para garantir que a solução possa ser executada no computador de desenvolvimento e nos computadores dos usuários finais:
@@ -64,7 +64,7 @@ ms.locfileid: "66836065"
 ## <a name="update-the-prerequisites-for-deployment"></a>Atualizar os pré-requisitos para implantação
  Ao redirecionar um projeto do Office para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você também deve atualizar o pré-requisito de .NET Framework correspondente na caixa de diálogo **pré-requisitos** . Caso contrário, a implantação do ClickOnce ou o projeto do InstallShield Limited Edition verificará e instalará uma versão anterior do .NET Framework.
 
- Para obter mais informações sobre como atualizar os pré-requisitos para implantação em computadores de usuários finais, consulte [como instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Para obter mais informações sobre como atualizar os pré-requisitos para implantação em computadores de usuários finais, consulte [como instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](/previous-versions/bb608608(v=vs.110)).
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstalar soluções nos computadores dos usuários finais
  Se você usar o ClickOnce para implantar uma solução do Office que tenha como destino o .NET Framework 3,5 e, em seguida, redirecionar o projeto para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, os usuários finais deverão desinstalar a solução e reinstalá-la depois de republicá-la. Se você republicar a solução redirecionada e a solução for atualizada nos computadores dos usuários finais, os usuários finais receberão um <xref:System.Runtime.InteropServices.COMException> quando executarem a solução atualizada.

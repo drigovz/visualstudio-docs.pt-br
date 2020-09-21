@@ -12,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a9fc3c2d9c7f3f30f035eed036d2a9fb63d667
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d05b82a74fba4273838d378bc52822653bb6bfa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520842"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811169"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 
@@ -45,7 +45,7 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 
 |Propriedade|Descrição|Padrão|
 |-|-|-|
-|Cor de Preenchimento|A cor de preenchimento desta forma.|Branco|
+|Cor de Preenchimento|A cor de preenchimento desta forma.|Branca|
 |Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
 |Tem pontos de conexão padrão|Se `True` , a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|Falso|
 |Cor do contorno|A cor da estrutura de tópicos desta forma.|Preto|
@@ -58,7 +58,7 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de imagem `none` ( `abstract` ou `sealed` ).|nenhum|
 |Forma da imagem base|A classe base dessa forma.|(nenhum)|
-|Name|O nome desta forma.|Nome atual|
+|Nome|O nome desta forma.|Nome atual|
 |Namespace|O namespace que é afiliado a esta forma.|Namespace atual|
 |Tipo de dica de ferramenta|O local em que a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da `Fixed Tooltip Text` propriedade será usado como dica de ferramenta; se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
 |Observações|Observações informais associadas a esta forma.|\<none>|
@@ -69,8 +69,8 @@ As formas de imagem têm as propriedades listadas na tabela a seguir.
 |Nome de exibição|O nome que será exibido no designer gerado para essa forma.|\<none>|
 |Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<none>|
 |Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este elemento.|\<none>|
-|Image|O caminho para o arquivo de imagem usado para esta forma.|\<none>|
+|Imagem|O caminho para o arquivo de imagem usado para esta forma.|\<none>|
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

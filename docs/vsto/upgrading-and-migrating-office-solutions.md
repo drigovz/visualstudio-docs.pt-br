@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416530"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808783"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Atualizar e migrar soluções do Office
   Se você tiver um projeto Microsoft Office que foi criado em uma versão anterior do Visual Studio, deverá atualizar o projeto para usá-lo em versões atuais do Visual Studio. Para atualizar um projeto Microsoft Office, abra-o em uma versão do Visual Studio que inclua as ferramentas de desenvolvedor de Microsoft Office. Para obter mais informações sobre as versões do Visual Studio que incluem as ferramentas de desenvolvedor Microsoft Office, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -84,6 +84,6 @@ ms.locfileid: "79416530"
  Se você quiser usar o ClickOnce para implantar o suplemento do VSTO, poderá excluir totalmente o projeto de instalação ou do InstallShield Limited Edition. Para obter mais informações sobre como implantar suplementos do VSTO usando o ClickOnce, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Confira também
-- [Como: atualizar soluções do Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Como: atualizar soluções do Office](/previous-versions/4bez6837(v=vs.140))
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Atualização do projeto, caixa de diálogo opções](../vsto/project-upgrade-options-dialog-box.md)

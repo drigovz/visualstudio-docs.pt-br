@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348698"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808162"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Exibir o código de desmontagem no depurador do Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -58,7 +58,7 @@ Para exibir as instruções de código do computador em sua forma numérica brut
 
 ## <a name="use-the-disassembly-window"></a>Usar a janela Desmontagem
 
-Para habilitar a janela de **desmontagem** , em **ferramentas**  >  **Opções** (ou **ferramentas**  >  **Opções**) > **depuração**, selecione **Habilitar depuração no nível de endereço**.
+Para habilitar a janela de **desmontagem** , em **ferramentas**  >  **Opções**  >  **depuração**, selecione **Habilitar depuração no nível de endereço**.
 
 Para abrir a janela de **desmontagem** durante a depuração **Windows**, selecione  >  **desmontagem** do Windows ou pressione **ALT** + **8**.
 

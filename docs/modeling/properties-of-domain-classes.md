@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544177"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810022"
 ---
 # <a name="properties-of-domain-classes"></a>Propriedades de classes de domínio
 As classes de domínio têm as propriedades na tabela a seguir. Para obter informações sobre classes de domínio, consulte [noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ As classes de domínio têm as propriedades na tabela a seguir. Para obter infor
 |Tem Construtor personalizado|Se `True` , um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Modificador de herança|Descreve o tipo de herança da classe de código-fonte que é gerada a partir da classe de domínio ( `none` `abstract` ou `sealed` ).|`none`|
 |Classe base|Se essa classe de domínio for derivada, o nome da classe base.|\<none>|
-|Name|O nome desta classe de domínio.|Nome atual|
+|Nome|O nome desta classe de domínio.|Nome atual|
 |Namespace|O namespace desta classe de domínio.|Namespace atual|
 |Observações|Observações informais que estão associadas a esta classe de domínio.|\<none>|
 |Descrição|A descrição usada para documentar a interface do usuário do designer gerado.|\<none>|
@@ -36,4 +36,4 @@ As classes de domínio têm as propriedades na tabela a seguir. Para obter infor
 
 ## <a name="see-also"></a>Confira também
 
-- [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossário das Ferramentas de Linguagem Específica de Domínio](/previous-versions/bb126564(v=vs.100))

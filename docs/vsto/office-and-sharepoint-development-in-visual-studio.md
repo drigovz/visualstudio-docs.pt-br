@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800938"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811026"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e do SharePoint no Visual Studio
   Você pode estender Microsoft Office e SharePoint criando um aplicativo leve ou suplemento que os usuários baixam da [Office Store](https://store.office.com/) ou de um catálogo organizacional ou criando uma solução baseada em .NET Framework que os usuários instalam em um computador.
@@ -62,7 +62,7 @@ ms.locfileid: "88800938"
 |Para|Consulte|
 |--------|---------|
 |Saiba mais sobre os suplementos do Office e crie um.|[Suplementos do Office](/office/dev/add-ins/publish/publish)|
-|Compare as diferentes maneiras pelas quais você pode estender o Office e decida se deve usar um aplicativo ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Compare as diferentes maneiras pelas quais você pode estender o Office e decida se deve usar um aplicativo ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Criar um suplemento do SharePoint
  Para estender o SharePoint para seus usuários, crie um suplemento do SharePoint. Basicamente, ele é um aplicativo autônomo pequeno e fácil de usar que resolve a necessidade de seus usuários ou negócios.
@@ -92,7 +92,7 @@ ms.locfileid: "88800938"
 
 |Para|Ler|
 |--------|----------|
-|Compare as diferentes maneiras pelas quais você pode estender o Office e decida se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Compare as diferentes maneiras pelas quais você pode estender o Office e decida se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Crie um suplemento do VSTO.|[Suplementos do VSTO criados com o Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Criar uma solução do SharePoint

@@ -1,5 +1,6 @@
 ---
-title: Coletando a alocação de memória do .NET e os dados de tempo de vida | Microsoft Docs
+title: Coletar alocação de memória do .NET & dados de tempo de vida
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331710"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809421"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Coletar dados de tempo de vida e de alocação de memória do .NET
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Coletar .NET Framework alocação de memória e dados de tempo de vida
 
-As Ferramentas de Criação de Perfil do Visual Studio dão suporte à coleta de alocação de memória e dados de tempo de vida do objeto do .NET, que ajuda a detectar problemas de desempenho relacionados à memória em seu aplicativo.
+O Visual Studio Ferramentas de Criação de Perfil dá suporte à coleta de .NET Framework alocação de memória e dados de tempo de vida do objeto, o que ajuda a detectar problemas de desempenho relacionados à memória em seu aplicativo.
 
 - Os Dados sobre alocação de memória do .NET incluem o tamanho e o número de objetos de memória do .NET Framework alocados.
 

@@ -1,5 +1,6 @@
 ---
-title: Como especificar uma página de publicação para um aplicativo ClickOnce | Microsoft Docs
+title: Especificar uma página de publicação (aplicativo ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381958"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808770"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Como especificar uma página de publicação para um aplicativo ClickOnce
 Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, uma página da Web padrão (publish.htm) é gerada e publicada junto com o aplicativo. Esta página contém o nome do aplicativo, um link para instalar o aplicativo e/ou quaisquer pré-requisitos e um link para um tópico da ajuda que descreve [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . A propriedade **Publicar página** para seu projeto permite que você especifique um nome para a página da Web para seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.

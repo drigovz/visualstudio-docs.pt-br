@@ -1,28 +1,28 @@
 ---
-title: Avisos de documentação
+title: Regras de documentação
 ms.date: 09/16/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.documentationrules
 helpviewer_keywords:
-- documentation warnings
-- managed code analysis warnings, documentation warnings
-- warnings, documentation
+- documentation rules
+- managed code analysis rules, documentation rules
+- rules, documentation
 author: mavasani
 ms.author: mavasani
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4946c69bbbe4bf1c240967ebd93ef58cfa79e333
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4ec6a0dd154dae89145add26c60a8b1322a444
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72807103"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808646"
 ---
-# <a name="documentation-warnings"></a>Avisos de documentação
+# <a name="documentation-rules"></a>Regras de documentação
 
-Os avisos de documentação dão suporte à criação de bibliotecas bem documentadas por meio do uso correto de [comentários de documentação XML](/dotnet/csharp/codedoc) para APIs visíveis externamente.
+As regras de documentação dão suporte à gravação de bibliotecas bem documentadas por meio do uso correto de [comentários de documentação XML](/dotnet/csharp/codedoc) para APIs visíveis externamente.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -32,4 +32,4 @@ Os avisos de documentação dão suporte à criação de bibliotecas bem documen
 
 ## <a name="see-also"></a>Confira também
 
-- [Avisos de análise de código](../code-quality/code-analysis-for-managed-code-warnings.md)
+- [Regras de análise de código](../code-quality/code-analysis-for-managed-code-warnings.md)

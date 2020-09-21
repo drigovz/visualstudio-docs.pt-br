@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038589"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810855"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
-A ferramenta "[relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
+A ferramenta "[relatar um problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
 
 ## <a name="general-best-practices"></a>Práticas recomendadas gerais
 
@@ -56,7 +56,7 @@ Falhas que podem ser reproduzidas diretamente são casos que têm todas as segui
 
 - Pode ser reproduzido no código de exemplo ou em um projeto que possa ser vinculado ou fornecido como parte dos comentários (se as etapas envolvem a abertura de um projeto ou documento)
 
-Para esses problemas, siga as etapas em "[como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e certifique-se de incluir:
+Para esses problemas, siga as etapas em "[como relatar um problema](./how-to-report-a-problem-with-visual-studio.md)" e certifique-se de incluir:
 
 - As etapas para reproduzir o problema
 
@@ -103,7 +103,7 @@ Em seguida, use o Visual Studio "relatar um problema..." recurso. Ele permitirá
 
 2. Se possível, compacte o arquivo ( \* . zip) para reduzir seu tamanho antes de enviar comentários
 
-3. Siga as etapas em "[como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e anexe o despejo de heap a um novo item de comentário.
+3. Siga as etapas em "[como relatar um problema](./how-to-report-a-problem-with-visual-studio.md)" e anexe o despejo de heap a um novo item de comentário.
 
 > [!NOTE] 
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o despejo de heap capturado no momento da falha.
@@ -118,7 +118,7 @@ Conforme descrito na seção correspondente sobre falhas, para problemas que pod
 **Falta de resposta desconhecida**
 
 Se uma falta de resposta se manifestar de maneira imprevisível, na próxima ocorrência, inicie uma nova instância do Visual Studio e relate um problema dessa instância.
-Na [tela "registro"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), certifique-se de selecionar a sessão do Visual Studio que não está respondendo.
+Na [tela "registro"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro), certifique-se de selecionar a sessão do Visual Studio que não está respondendo.
 
 Se a instância do Visual Studio que não está respondendo foi iniciada no modo de administrador, a segunda instância também precisaria ser iniciada no modo de administrador.
 
@@ -145,7 +145,7 @@ Para obter melhores resultados na captura do desempenho, siga estas etapas:
 
 3. Na nova cópia do Visual Studio, abra o **relatório uma ferramenta de problema**
 
-4. Siga as etapas em [como relatar um problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) até chegar à etapa "fornecer um rastreamento e despejo de heap (opcional)".
+4. Siga as etapas em [como relatar um problema](./how-to-report-a-problem-with-visual-studio.md) até chegar à etapa "fornecer um rastreamento e despejo de heap (opcional)".
 
 5. Opte por registrar a primeira cópia do Visual Studio (a ocorrência de um problema de desempenho) e iniciar a gravação.
 
@@ -165,7 +165,7 @@ Para obter melhores resultados na captura do desempenho, siga estas etapas:
 
 Durante a gravação de um rastreamento de desempenho, se a operação lenta ou a alta CPU que você está relatando chegar a um fim, pare imediatamente a gravação. Se muitas informações forem coletadas, as informações mais antigas serão substituídas. Se o rastreamento não for interrompido em breve (dentro de alguns segundos) após a operação interessante, os dados de rastreamento úteis serão substituídos.
 
-Não anexe diretamente rastreamentos de desempenho a itens de comentários existentes no site da comunidade de desenvolvedores. A solicitação/fornecimento de informações adicionais é um fluxo de trabalho com suporte no relatório interno de uma ferramenta problemática do Visual Studio. Se um rastreamento de desempenho for necessário para resolver um item de comentário anterior, definiremos o estado do item de comentário como "precisa de mais informações", que pode ser respondida da mesma maneira que relatar um novo problema. Para obter instruções detalhadas, consulte a [seção "precisar de mais informações"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) em relatar um documento da ferramenta de problema.
+Não anexe diretamente rastreamentos de desempenho a itens de comentários existentes no site da comunidade de desenvolvedores. A solicitação/fornecimento de informações adicionais é um fluxo de trabalho com suporte no relatório interno de uma ferramenta problemática do Visual Studio. Se um rastreamento de desempenho for necessário para resolver um item de comentário anterior, definiremos o estado do item de comentário como "precisa de mais informações", que pode ser respondida da mesma maneira que relatar um novo problema. Para obter instruções detalhadas, consulte a [seção "precisar de mais informações"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) em relatar um documento da ferramenta de problema.
 
 > [!NOTE] 
 > **Comentários mais valiosos:** Para quase todos os problemas de CPU lentidão/alta, os comentários mais valiosos são uma descrição de alto nível do que você estava tentando fazer, juntamente com o rastreamento de desempenho ( \*.etl.zip) que captura o comportamento durante esse tempo.

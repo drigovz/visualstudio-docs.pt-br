@@ -1,5 +1,5 @@
 ---
-title: Não é possível conectar-se ao Microsoft Visual Studio Monitor de Depuração Remota | Microsoft Docs
+title: Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63bd6fba7305c8dd266ecc935ea00d04633c6aec
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81397370"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809330"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está configurado corretamente no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou à presença de um firewall.

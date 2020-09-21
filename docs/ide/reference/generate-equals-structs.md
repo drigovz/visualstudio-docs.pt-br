@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290015"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808110"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Gerar operadores IEquatable ao gerar Equals para structs
 
@@ -20,7 +20,7 @@ Esta geração de código aplica-se a:
 
 - C#
 
-**O que:** Permite gerar operadores **Equals** e **IEquatable** para [structs](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct).
+**O que:** Permite gerar operadores **Equals** e **IEquatable** para [structs](/dotnet/csharp/language-reference/builtin-types/struct).
 
 **Quando:** Você tem uma estrutura que adicionaremos automaticamente o IEquatable, bem como os operadores Equals e not Equals para você.
 
@@ -30,7 +30,7 @@ Esta geração de código aplica-se a:
 
 - Implementar a interface IEquatable implementa um método Equals () específico do tipo.
 
-## <a name="how-to"></a>Como fazer
+## <a name="how-to"></a>Instruções
 
 1. Coloque o cursor em algum lugar na linha da sua declaração de struct.
 

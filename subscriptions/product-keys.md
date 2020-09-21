@@ -1,18 +1,18 @@
 ---
 title: Usar as chaves de produto | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183919"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809153"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -52,12 +52,12 @@ Você deve estar conectado à sua assinatura do Visual Studio para exibir as cha
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
 > [!div class="mx-imgBorder"]
-> ![Obter chave da página de downloads](_img/product-keys/download-get-key.png)
+> ![Obter chave da página de downloads](_img/product-keys/download-get-key.png "Clique em obter chave para declarar uma chave para o produto que você está baixando.")
 
 Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Nessa página, é possível encontrar chaves estáticas que funcionam para todos os usuários de um produto, obter chaves personalizadas apenas para seu uso, ver o status de seus limites de reivindicação de chaves e exportar todas as suas chaves do produto (Product Keys). 
 
 > [!div class="mx-imgBorder"]
-> ![Página de Chaves do Produto (Product Keys)](_img/product-keys/product-keys-page.png)
+> ![Página de Chaves do Produto (Product Keys)](_img/product-keys/product-keys-page.png "A página chaves do produto fornece informações completas de chave do produto para sua assinatura específica.")
 
 Vários tipos de chave estão disponíveis, de acordo com o produto.
 
@@ -66,7 +66,7 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 |    Tipo de Chave           |    Descrição                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Não Aplicável                    |    Nenhuma chave é necessária para instalar este produto.                                                       |
-|    Retail                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
+|    Varejo                     |    As chaves comerciais permitem várias ativações e são usadas para builds comerciais do produto. Em muitos casos, são permitidas 10 ativações por chave, embora normalmente sejam permitidas mais no mesmo computador.                                                       |
 |    Ativação múltipla        |    Uma MAK (Chave de Ativação Múltipla) permite ativar várias instalações de um produto com a mesma chave. Normalmente, as MAKs são usadas com as versões de licenciamento por volume dos produtos. Geralmente, é fornecida somente uma chave MAK por assinatura.    |
 |    Chave de ativação estática    |    As chaves de ativação estática são fornecidas para produtos que não exigem ativação. Elas podem ser usadas para um número ilimitado de instalações.                                                                                                                  |
 |    Chave personalizada                 |    As chaves personalizadas permitem ações especiais ou fornecem informações para ativar ou instalar o produto.                                                                                                                                                                |

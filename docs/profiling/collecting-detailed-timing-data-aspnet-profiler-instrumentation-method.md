@@ -1,5 +1,6 @@
 ---
-title: VSPerfCmd-obter dados de tempo para o aplicativo Web ASP.NET usando a instrumentação
+title: Coletar dados de tempo para ASP.NET usando instrumentação
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 55f682152731391bdb0d4c0de0a307c00c16e2c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a73d81eaaef45a9ae97e733a8ae94805106a9ef8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331840"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809629"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Coletar dados de tempo detalhados para um aplicativo Web ASP.NET usando o método de instrumentação do criador de perfil por meio da linha de comando
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando a ferramenta **VSPerfCmd** da linha de comando e o método de instrumentação.

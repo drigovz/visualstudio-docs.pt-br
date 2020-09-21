@@ -1,5 +1,6 @@
 ---
-title: Como especificar arquivos de log detalhados para implantações do ClickOnce | Microsoft Docs
+title: Especificar arquivos de log detalhados (implantações ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381763"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808705"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como especificar arquivos de log detalhados para implantações do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém arquivos de log de atividades para todas as implantações. Esses logs documentam detalhes referentes à instalação, inicialização, atualização e desinstalação de uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar os detalhes que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravam nesses arquivos de log, use o editor do registro (*regedit.exe*) para especificar o nível de verbosidade.

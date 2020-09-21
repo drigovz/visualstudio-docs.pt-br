@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016505"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739909"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associando-os a um modelo de projeto. Neste tutorial, você definirá um tipo de item de projeto para criar uma coluna de site e, em seguida, criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto de coluna de site.
@@ -639,7 +639,7 @@ ms.locfileid: "86016505"
 
 1. No **Gerenciador de soluções**, no projeto **SiteColumnProjectItem** , abra o arquivo Source. Extension. vsixmanifest no editor de manifesto.
 
-     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Na caixa **nome do produto** , insira a **coluna site**.
 

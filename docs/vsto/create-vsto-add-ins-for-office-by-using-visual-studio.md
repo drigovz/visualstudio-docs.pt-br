@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986154"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809356"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Criar suplementos do VSTO para o Office usando o Visual Studio
   Você pode usar as ferramentas de desenvolvedor de Microsoft Office no Visual Studio para criar .NET Framework aplicativos que estendam o Office. Esses aplicativos também são chamados de *soluções do Office*.
@@ -116,6 +116,6 @@ ms.locfileid: "72986154"
 
 - [Microsoft Office seção de desenvolvimento da biblioteca MSDN](/previous-versions/office/office-12/bb726434(v=office.12)) A área da biblioteca MSDN, na qual você pode encontrar artigos e documentação de referência sobre o desenvolvimento de soluções para várias versões do Office (não específicas do desenvolvimento do Office usando o Visual Studio).
 
-- [Desenvolvimento de aplicativos no Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contém links para tópicos que explicam como você pode usar o Visual Studio para projetar, desenvolver, depurar e implantar aplicativos Web, Web Services XML e aplicativos cliente tradicionais.
+- [Desenvolvimento de aplicativos no Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Contém links para tópicos que explicam como você pode usar o Visual Studio para projetar, desenvolver, depurar e implantar aplicativos Web, Web Services XML e aplicativos cliente tradicionais.
 
 - [Programação de .NET Framework no Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Discute o desenvolvimento de aplicativos com o .NET Framework no Visual Basic e no Visual C#.

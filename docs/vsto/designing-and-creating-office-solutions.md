@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189720"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808214"
 ---
 # <a name="design-and-create-office-solutions"></a>Projetar e criar soluções do Office
 
@@ -50,7 +50,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 
   No entanto, depois que o Visual Studio alterar a estrutura de destino, talvez seja necessário modificar parte do código em seu projeto se ele usar determinados recursos. Para obter mais informações sobre como alterar a estrutura de destino, consulte [como: direcionar uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Para obter mais informações sobre as alterações que talvez você precise fazer em seu projeto, consulte [migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-  Se o Visual Studio alterar o .NET Framework de destino para seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de selecionar também a versão correspondente do .NET Framework na caixa de diálogo **pré-requisitos** . Essa seleção não é alterada automaticamente quando você altera a estrutura de destino do seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+  Se o Visual Studio alterar o .NET Framework de destino para seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de selecionar também a versão correspondente do .NET Framework na caixa de diálogo **pré-requisitos** . Essa seleção não é alterada automaticamente quando você altera a estrutura de destino do seu projeto. Para obter mais informações, consulte [como: instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](/previous-versions/bb608608(v=vs.110)).
 
 > [!NOTE]
 > Não é possível direcionar o .NET Framework 3,5 ou anterior em projetos do Office que você cria usando o [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] . Os projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos pela primeira vez no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
@@ -58,7 +58,7 @@ O Visual Studio fornece modelos de projeto que você pode usar para criar vário
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Entenda quando os PIAs do Office são necessários nos computadores dos usuários finais
  Por padrão, os assemblies de interoperabilidade primária do Office (PIAs) não precisam ser instalados nos computadores dos usuários finais se a propriedade **inserir tipos de interoperabilidade** de cada referência do pia do Office no projeto estiver definida como **true**, que é o valor padrão. Nesse cenário, as informações de tipo para os tipos de PIA usados pela sua solução são inseridas no assembly da solução quando você cria o projeto. Em tempo de execução, as informações de tipo inserido são usadas em vez dos PIAs para chamar o modelo de objeto baseado em COM do aplicativo do Office. Para obter mais informações sobre como os tipos de PIAs são inseridos em sua solução, consulte [equivalência e tipos de interoperabilidade inseridos](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
- Se a propriedade **inserir tipos de interoperabilidade** de cada referência do pia do Office no projeto estiver definida como **false**, os pias do Office deverão ser instalados e registrados no cache de assembly global em cada computador do usuário final que executa a solução. Na maioria dos casos, os PIAs são instalados por padrão com o Office, mas você também pode incluir o PIA redistribuível como um pré-requisito para sua solução. Para obter mais informações, consulte [pré-requisitos da solução do Office para implantação](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
+ Se a propriedade **inserir tipos de interoperabilidade** de cada referência do pia do Office no projeto estiver definida como **false**, os pias do Office deverão ser instalados e registrados no cache de assembly global em cada computador do usuário final que executa a solução. Na maioria dos casos, os PIAs são instalados por padrão com o Office, mas você também pode incluir o PIA redistribuível como um pré-requisito para sua solução. Para obter mais informações, consulte [pré-requisitos da solução do Office para implantação](/previous-versions/bb608617(v=vs.110)).
 
 ### <a name="understand-the-client-profile"></a>Entender o perfil do cliente
  O perfil de cliente do .NET Framework é um subconjunto do .NET Framework completo. Você pode direcionar o perfil de cliente do .NET Framework se precisar usar apenas os recursos do cliente no .NET Framework e desejar fornecer a experiência de implantação mais rápida possível para sua solução do Office. Para obter mais informações, consulte [.NET Framework perfil do cliente](/dotnet/framework/deployment/client-profile).
