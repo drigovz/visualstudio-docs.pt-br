@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b958580eefb56eeb4b5341d7c484bb1f04e25ca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787492"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838330"
 ---
-# <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
+# <a name="idiasymbolget_scoped"></a>IDiaSymbol::get_scoped
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é exibida em um escopo léxico não global.  
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário aparece em um escopo léxico não global.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_scoped ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se o tipo de dados definido pelo usuário é exibido em um escopo léxico não globais; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se o tipo de dados definido pelo usuário aparece em um escopo léxico não global; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

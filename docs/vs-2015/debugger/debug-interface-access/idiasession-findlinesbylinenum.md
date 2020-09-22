@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7ef4ab516bffbc13f47616c2f20fdd71cac38b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418331"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838480"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Determina os números de linha de compiland que o número de linha especificada em um arquivo de origem está em ou próximo.  
+Determina os números de linha do compiland que o número de linha especificado em um arquivo de origem está dentro ou próximo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,28 +39,28 @@ HRESULT findLinesByLinenum ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `compiland`  
- [in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland no qual pesquisar os números de linha. O parâmetro não pode ser `NULL`.  
+ no Um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o compiland no qual Pesquisar os números de linha. O parâmetro não pode ser `NULL`.  
   
  `file`  
- [in] Uma [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem para pesquisar no. O parâmetro não pode ser `NULL`.  
+ no Um objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa o arquivo de origem para pesquisar. O parâmetro não pode ser `NULL`.  
   
  `linenum`  
- [in] Especifica um número de linha de base um.  
+ no Especifica um número de linha baseado em um.  
   
 > [!NOTE]
-> Você não pode usar zero para especificar todas as linhas (usar o [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para localizar todas as linhas).  
+> Não é possível usar zero para especificar todas as linhas (use o método [IDiaSession:: findLines](../../debugger/debug-interface-access/idiasession-findlines.md) para localizar todas as linhas).  
   
  `column`  
- [in] Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de bytes em uma linha.  
+ no Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de byte em uma linha.  
   
  `ppResult`  
- [out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta que contém uma lista dos números de linha recuperados.  
+ fora Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta que contém uma lista dos números de linha recuperados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como abrir um arquivo de origem, enumerar os compilandos contribuídos por este arquivo e localizar os números de linha no arquivo de origem em que cada compiland começa.  
+ O exemplo a seguir mostra como abrir um arquivo de origem, enumerar o compilandos contribuído por esse arquivo e localizar os números de linha no arquivo de origem onde cada compiland é iniciado.  
   
 ```cpp#  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
@@ -99,7 +99,7 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   

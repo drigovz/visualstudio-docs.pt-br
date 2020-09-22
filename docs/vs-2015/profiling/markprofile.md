@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434959"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838368"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
   
  O marcador a inserir. O marcador deve ser maior ou igual a 0 (zero).  
   
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
+## <a name="property-valuereturn-value"></a>Valor da propriedade/Valor do retorno  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
 |Enumerador|Descrição|  
@@ -50,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="remarks"></a>Comentários  
  O valor de marca é inserido no arquivo .vsp cada vez que o código é executado se o perfil do thread que contém a função MarkProfile está sendo criado. Você pode chamar MarkProfile várias vezes.  
   
- Marcas de perfis são globais em termos de escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em qualquer thread no arquivo .vsp.  
+ Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .vsp.  
   
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ativo quando marcas e comentários são inseridos com o comando Mark ou com funções API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).  
   
@@ -100,5 +100,5 @@ void ExerciseMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

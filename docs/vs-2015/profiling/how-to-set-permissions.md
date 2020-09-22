@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir permissões | Microsoft Docs'
+title: Como definir permissões | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440586"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839254"
 ---
-# <a name="how-to-set-permissions"></a>Como: Definir permissões
+# <a name="how-to-set-permissions"></a>Como definir permissões
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.  
@@ -42,7 +42,7 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Para criar uma conta de usuário que tenha permissões de Usuário  
   
-1. Clique com botão direito do mouse em **Meu Computador** e, em seguida, clique em **Gerenciar**.  
+1. Clique com o botão direito do mouse em **meu computador** e clique em **gerenciar**.  
   
      A janela **Gerenciamento do Computador** é aberta.  
   
@@ -54,7 +54,7 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
 4. Preencha os campos nessa caixa de diálogo com as informações da conta de usuário que você está criando. Especifique uma senha. Opcionalmente, marque a caixa de seleção que exige que o usuário altere a senha no próximo logon.  
   
-5. Clique em **Criar** e, em seguida, clique em **Fechar**.  
+5. Clique em **criar** e em **fechar**.  
   
      O novo usuário aparecerá no grupo Usuários, um grupo de usuários que não têm permissões de Administrador.  
   
@@ -70,13 +70,13 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
 2. Clique com botão direito do mouse na pasta e, em seguida, clique em **Propriedades**.  
   
-     A caixa de diálogo **\<nome da pasta> Propriedades** é exibida.  
+     A caixa de diálogo ** \<folder name> Propriedades** é exibida.  
   
-3. Clique na guia **Segurança**.  
+3. Clique na guia **Segurança** .  
   
 4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.  
   
-5. Na caixa **Permissões para \<nome de usuário>**, marque a caixa de seleção **Controle Total**.  
+5. Na caixa **permissões para \<user name> ** , marque a caixa de seleção para **controle total**.  
   
 6. Clique em **OK**.  
   
@@ -92,7 +92,7 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
    ```  
   
-3. Execute o seguinte comando:  
+3. Execute o comando a seguir:  
   
    ```  
    vsperfcmd /admin:driver,start /admin:service,start  
@@ -110,7 +110,7 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
+    Esse comando concede o \<user name> \<group name> acesso à conta do ou às ferramentas de criação de perfil. A \<right> opção determina a funcionalidade de criação de perfil que o usuário pode acessar. A \<right> opção pode ser um ou mais dos seguintes valores:  
   
    - FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
   
@@ -126,7 +126,7 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
    Os usuários especificados, após o logon, agora poderão usar as ferramentas de criação de perfil sem permissões de Administrador.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)

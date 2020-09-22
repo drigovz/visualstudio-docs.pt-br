@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439355"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838677"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,14 +82,14 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   
 - Se o valor de `Type` é `Fragment`, o código define o conteúdo do método `Execute`, mas não a assinatura ou a instrução `return`.  
   
-  O próprio código normalmente aparece entre um marcador `<![CDATA[` e um marcador `]]>`. Como o código está em uma seção CDATA, você não precisa se preocupar com o escape de caracteres reservados, por exemplo, "\<" ou ">".  
+  O próprio código normalmente aparece entre um marcador `<![CDATA[` e um marcador `]]>`. Como o código está em uma seção CDATA, você não precisa se preocupar com a saída de caracteres reservados, por exemplo, " \<" or "> ".  
   
   Como alternativa, você pode usar o atributo `Source` do elemento `Code` para especificar o local de um arquivo que contém o código da sua tarefa. O código no arquivo de origem deve ser do tipo especificado pelo atributo `Type`. Se o atributo `Source` estiver presente, o valor padrão de `Type` será `Class`. Se `Source` é não estiver presente, o valor padrão será `Fragment`.  
   
 > [!NOTE]
 > Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="hello-world"></a>Olá, Mundo  
  Vejamos uma tarefa em linha mais robusta. A tarefa HelloWorld exibe "Hello, world!" no dispositivo de registro de erros em log padrão, que é normalmente o console do sistema ou a janela **Saída** do Visual Studio. O elemento `Reference` no exemplo é incluído apenas para ilustração.  
   
 ```  
@@ -191,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Tarefas](../msbuild/msbuild-tasks.md)   
- [Passo a passo: criar uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)
+## <a name="see-also"></a>Consulte Também  
+ [Tarefa](../msbuild/msbuild-tasks.md)   
+ [Walkthrough: criando uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)

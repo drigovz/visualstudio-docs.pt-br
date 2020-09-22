@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439371"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838419"
 ---
 # <a name="msbuild-batching"></a>Separação em lotes no MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "63439371"
 ## <a name="task-batching"></a>Lote de tarefas  
  O lote de tarefas permite que você simplifique os arquivos de projeto ao fornecer uma maneira de dividir as listas de itens em lotes diferentes e passar cada um desses lotes para uma tarefa separadamente. Isso significa que um arquivo de projeto só precisa ter a tarefa e seus atributos declarados uma vez, mesmo que seja executado várias vezes.  
   
- Especifique que você deseja que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] execute o processamento em lote com uma tarefa usando a notação %(*ItemMetaDataName*) em um dos atributos da tarefa. O exemplo a seguir divide a lista de itens `Example` em lotes com base no valor do item de metadados `Color` e passa cada um dos lotes para a tarefa `MyTask` separadamente.  
+ Você especifica que deseja [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] executar o envio em lote com uma tarefa usando a notação%(de*mymetadataname*) em um dos atributos da tarefa. O exemplo a seguir divide a lista de itens `Example` em lotes com base no valor do item de metadados `Color` e passa cada um dos lotes para a tarefa `MyTask` separadamente.  
   
 > [!NOTE]
-> Se não houver referência à lista de itens em outro lugar nos atributos de tarefa ou se o nome dos metadados for ambíguo, você pode usar a notação %(*ItemCollection.ItemMetaDataName*) para qualificar totalmente o valor de metadados do item a ser usado para processamento em lotes.  
+> Se você não fizer referência à lista de itens em outro lugar nos atributos da tarefa, ou se o nome dos metadados puder ser ambíguo, você poderá usar a notação%(*ItemCollection. Item de metadadosname*para qualificar totalmente o valor de metadados do item a ser usado para envio em lote.  
   
 ```  
 <Project  
@@ -54,12 +54,12 @@ ms.locfileid: "63439371"
 </Project>  
 ```  
   
- Para obter exemplos mais específicos de envio em lote, consulte [Metadados de item em lote de tarefas](../msbuild/item-metadata-in-task-batching.md).  
+ Para obter exemplos de envio em lote mais específicos, consulte [metadados do item em lote de tarefas](../msbuild/item-metadata-in-task-batching.md).  
   
 ## <a name="target-batching"></a>Lote de destino  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verifica se as entradas e saídas de um destino estão atualizadas antes de executar o destino. Se as entradas e saídas estiverem atualizadas, o destino será ignorado. Se uma tarefa dentro de um destino usar processamento em lote, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] precisa determinar se as entradas e saídas para cada lote de itens estão atualizadas. Caso contrário, o destino será executado sempre que for atingido.  
   
- O exemplo a seguir mostra um elemento `Target` que contém um atributo `Outputs` com a notação %(*ItemMetaDataName*). [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] vai dividir a lista de itens `Example` em lotes com base nos metadados do item `Color` e analisar os carimbos de data/hora dos arquivos de saída para cada lote. Se as saídas de um lote não estiverem atualizadas, o destino é executado. Caso contrário, o destino será ignorado.  
+ O exemplo a seguir mostra um `Target` elemento que contém um `Outputs` atributo com a notação%(de itens de*metadados*. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] vai dividir a lista de itens `Example` em lotes com base nos metadados do item `Color` e analisar os carimbos de data/hora dos arquivos de saída para cada lote. Se as saídas de um lote não estiverem atualizadas, o destino é executado. Caso contrário, o destino será ignorado.  
   
 ```  
 <Project  
@@ -85,7 +85,7 @@ ms.locfileid: "63439371"
 </Project>  
 ```  
   
- Para obter outro exemplo de lote de destino, consulte [Metadados do item no lote de destino](../msbuild/item-metadata-in-target-batching.md).  
+ Para obter outro exemplo de envio em lote de destino, consulte [metadados de item no envio em lote de destino](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Funções de propriedade usando metadados  
  O envio em lote pode ser controlado por funções de propriedade que incluem metadados. Por exemplo,  
@@ -100,9 +100,9 @@ ms.locfileid: "63439371"
   
  não é permitido.  
   
- Para obter mais informações sobre funções de propriedade, consulte [Funções de propriedade](../msbuild/property-functions.md).  
+ Para obter mais informações sobre funções de propriedade, consulte [funções de propriedade](../msbuild/property-functions.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   

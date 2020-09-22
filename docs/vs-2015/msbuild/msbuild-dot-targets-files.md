@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439378"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838530"
 ---
 # <a name="msbuild-targets-files"></a>Arquivos .targets do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclui vários arquiv
  O valor `$(MSBuildToolsPath)` especifica o caminho desses arquivos .targets comuns. Se o `ToolsVersion` for 4.0, os arquivos estarão no seguinte local: `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
-> Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o `Import` elemento para inserir um arquivo de projeto em outro arquivo de projeto, consulte [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+> Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o `Import` elemento para inserir um arquivo de projeto em outro arquivo de projeto, consulte [importar elemento (MSBuild)](../msbuild/import-element-msbuild.md) e [como: usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
   
 ## <a name="common-targets-files"></a>Arquivos .targets comuns  
   
@@ -44,7 +44,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclui vários arquiv
 |Microsoft.CSharp.targets|Define as etapas no processo de build padrão de projetos do Visual C#.<br /><br /> Importado pelos arquivos de projeto do Visual C# (.csproj), que incluem a seguinte instrução: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
 |Microsoft.VisualBasic.targets|Define as etapas no processo de build padrão de projetos do Visual Basic.<br /><br /> Importado pelos arquivos de projeto do Visual Basic (.vbproj), que incluem a seguinte instrução: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

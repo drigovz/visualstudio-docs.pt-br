@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433074"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838552"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Como: instalar uma versão específica do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Atualizamos a instalação do Visual Studio com frequência para que você obten
 |Edição do Visual Studio 2015|O que executar|Linha de comando a usar|O que a instalação faz|
 |--------------------------------|-----------------|--------------------------|---------------------|
 |Visual Studio Enterprise (o lançamento público mais recente)|Visual Studio Enterprise com atualizações (disponível em [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **Observação:** o comportamento padrão dessa instalação oferece os recursos opcionais mais recentes, portanto, ela não exige parâmetros de linha de comando.|A instalação do Visual Studio usará o arquivo feed.xml mais recente e instalará os arquivos mais recentes|
-|Visual Studio Enterprise com a Atualização 3 (a Atualização 3 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 3|
-|Visual Studio Enterprise com a Atualização 2 (a Atualização 2 original, mas com atualizações que precederam a Atualização 3)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado antes do lançamento da Atualização 3|
-|Visual Studio Enterprise (a Atualização 2 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 2|
-|Visual Studio Enterprise com a Atualização 1 (a Atualização 1 original, mas com atualizações que precederam a Atualização 2)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado antes do lançamento da Atualização 2|
-|Visual Studio Enterprise com a Atualização 1 (a Atualização 1 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 1|
+|Visual Studio Enterprise com a Atualização 3 (a Atualização 3 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 3|
+|Visual Studio Enterprise com a Atualização 2 (a Atualização 2 original, mas com atualizações que precederam a Atualização 3)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado antes do lançamento da Atualização 3|
+|Visual Studio Enterprise (a Atualização 2 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 2|
+|Visual Studio Enterprise com a Atualização 1 (a Atualização 1 original, mas com atualizações que precederam a Atualização 2)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado antes do lançamento da Atualização 2|
+|Visual Studio Enterprise com a Atualização 1 (a Atualização 1 original, sem outras atualizações lançadas na mesma época)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento da Atualização 1|
 |Visual Studio Enterprise (o RTM original, mas com atualizações que precederam a Atualização 1)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado antes do lançamento da Atualização 1|
-|Visual Studio Enterprise (o RTM original sem atualizações)|Visual Studio Enterprise RTM (disponível na [página de downloads de Assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento do RTM|
+|Visual Studio Enterprise (o RTM original sem atualizações)|Visual Studio Enterprise RTM (disponível na [página de download de assinaturas do MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|A instalação do Visual Studio usará o arquivo feed.xml disponibilizado no lançamento do RTM|
 
 > [!IMPORTANT]
 > Dependendo do idioma que você deseja usar, substitua "enu" (para inglês) por um dos seguintes valores:
@@ -59,5 +59,5 @@ Atualizamos a instalação do Visual Studio com frequência para que você obten
 >   - rus (para russo)
 >   - trk (para turco)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
  [Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md)

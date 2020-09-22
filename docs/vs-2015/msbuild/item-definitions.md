@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433583"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838262"
 ---
 # <a name="item-definitions"></a>Definições de itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
   
 - Metadados conhecidos em um Item de um ItemDefinitionGroup  
   
-- Seção CDATA \<\!\[CDATA\[qualquer conteúdo presente aqui não será analisado\]\]\>  
+- Seção CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > Metadados de item de um ItemGroup não são úteis em uma declaração de metadados de ItemDefinitionGroup porque elementos de ItemDefinitionGroup são processados antes de elementos de ItemGroup.  
@@ -239,5 +239,5 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Envio em lote](../msbuild/msbuild-batching.md)
