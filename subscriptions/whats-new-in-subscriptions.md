@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649690"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005284"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -33,7 +33,7 @@ Também combinamos as opções para adicionar assinantes do invididual e executa
 Facilitamos a correspondência de assinantes que usam o MSA (contas da Microsoft) para seu Azure Active Directory (Azure AD), para que você possa vincular rapidamente as duas identidades.  O uso de identidades do Azure AD fornece maior segurança e gerenciamento de assinatura mais fácil.  Confira nosso [artigo de entradas pessoais](personal-email-sign-ins.md) para obter mais detalhes. 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Adicionar assinantes usando grupos de Azure Active Directory
-Se sua organização usa o Azure Active Directory (AD do Azure), agora você pode gerenciar assinaturas usando grupos do Azure AD.  A atribuição de assinaturas a grupos oferece a capacidade de fornecer com muita rapidez as assinaturas do mesmo tipo a vários usuários.  Quando novos usuários são adicionados ao grupo do Azure AD, eles são automaticamente atribuídos a uma assinatura.  Se um usuário for removido do grupo do Azure AD, sua assinatura também será removida.  Isso ajuda sua organização a automatizar seu gerenciamento de assinaturas, economizando tempo e esforço dos administradores.  Confira o artigo [adicionar vários usuários](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) em nossa documentação para obter os detalhes. 
+Se sua organização usa o Azure Active Directory (AD do Azure), agora você pode gerenciar assinaturas usando grupos do Azure AD.  A atribuição de assinaturas a grupos oferece a capacidade de fornecer com muita rapidez as assinaturas do mesmo tipo a vários usuários.  Quando novos usuários são adicionados ao grupo do Azure AD, eles são automaticamente atribuídos a uma assinatura.  Se um usuário for removido do grupo do Azure AD, sua assinatura também será removida.  Isso ajuda sua organização a automatizar seu gerenciamento de assinaturas, economizando tempo e esforço dos administradores.  Confira o artigo [adicionar vários usuários](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) em nossa documentação para obter os detalhes. 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Temos o prazer de anunciar uma expansão dos benefícios oferecidos por nosso parceiro, o realce do elenco. 

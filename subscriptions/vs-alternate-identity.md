@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Como adicionar uma identidade alternativa à sua Assinatura do Visual Studio para ser usada com o Azure DevOps e o Azure
-ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800769"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005708"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades para assinantes do Visual Studio
 Quando você ativar sua assinatura do Visual Studio, será vinculada a identidade (ou o logon) que você usou durante a ativação com a assinatura do Visual Studio. Dessa forma, você poderá ser reconhecido no [portal do assinante do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), no Azure DevOps e no Azure.
@@ -58,10 +58,10 @@ R: O Azure DevOps deverá reconhecer sua assinatura automaticamente quando você
 Se o Azure DevOps ainda não reconhecer sua assinatura, contate o [suporte do Azure DevOps](https://azure.microsoft.com/support/devops/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas 
 Para obter mais informações sobre como usar o Azure, o Azure DevOps ou o IDE do Visual Studio, confira estes recursos:

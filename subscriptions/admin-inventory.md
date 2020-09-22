@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232766"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004151"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
 As assinaturas do Visual Studio simplificam o gerenciamento de ativos ao contar usuários em vez de dispositivos.
@@ -31,10 +31,10 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
@@ -42,6 +42,3 @@ Saiba mais as políticas dos administradores:
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
-
-
-

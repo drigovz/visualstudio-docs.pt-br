@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Saiba como os dados de assinante são anonimizados quando o acesso às assinaturas é perdido.
-ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232735"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006183"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimização de informações de assinante do Visual Studio
 Quando ocorre um evento que bloqueia o uso de uma assinatura pelo assinante, como o término de uma assinatura ou a exclusão da conta de logon de um assinante, as informações pessoais do usuário, como nome e a conta de logon, são essencialmente embaralhadas para torná-las inutilizáveis.  Isso é feito para proteger as informações pessoais do assinante.
@@ -43,12 +43,10 @@ R: há duas maneiras de evitar o problema:
 - Associe as identidades do AAD e MSA por meio do locatário. 
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Saiba como impedir a anonimato ao [associar as identidades do MSA e do AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
-
+Saiba como impedir a anonimato ao [associar as identidades do MSA e do AAD](/azure/active-directory/b2b/add-users-administrator).

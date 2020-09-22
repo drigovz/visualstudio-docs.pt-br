@@ -1,9 +1,9 @@
 ---
-title: azurecli-logon
+title: azurecli-login
 description: devinit Tool azurecli-login.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e95bc70540ae73c73a17a94b4cadfc399c8557e5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810168"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006039"
 ---
-# <a name="azurecli-login"></a>azurecli-logon
+# <a name="azurecli-login"></a>azurecli-login
 
 A `azurecli-login` ferramenta é usada para entrar Azure Active Directory via [CLI do Azure](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true). Essa ferramenta usa o comando CLI do Azure: `az login --use-device-code` , para concluir o logon, você precisará seguir as instruções impressas no console.
 
@@ -26,7 +26,7 @@ A `azurecli-login` ferramenta é usada para entrar Azure Active Directory via [C
 
 Se ambas as propriedades forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                          |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                               |

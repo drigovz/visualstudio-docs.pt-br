@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509751"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005336"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -47,7 +47,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 1. Insira a senha desejada no campo **nova senha** , insira-a novamente no campo **Confirmar senha** e clique em **salvar**.
 
-1. Pronto!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
+1. É isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
 ## <a name="status-of-your-pluralsight-subscription"></a>Status da sua assinatura do pluralsight
 Depois de ativar o benefício da Pluralsight, a aparência do bloco no portal de assinaturas do Visual Studio será alterada para ajudá-lo a acompanhar o status da sua assinatura.  
@@ -111,12 +111,12 @@ R: ao final da sua assinatura gratuita do Pluralsight, você poderá optar por c
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Depois de criar sua conta, você estará pronto para começar o treinamento.  Visite [https://www.pluralsight.com](https://www.pluralsight.com) e toque em **fazer logon** no canto superior direito da página para iniciar um novo curso ou retorne a um curso já em andamento.
 
-Aproveite sua própria área restrita de desenvolvimento ativando seu [crédito individual do Azure DevTest](vs-azure.md). 
+Aproveite sua própria área restrita de desenvolvimento ativando seu [crédito individual do Azure DevTest](vs-azure.md).

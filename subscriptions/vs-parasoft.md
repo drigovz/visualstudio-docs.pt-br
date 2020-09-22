@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Saiba como ativar a assinatura do Parasoft Virtualize/SOA Test Professional incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904391"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006261"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop em assinaturas do Visual Studio
 
@@ -47,7 +47,7 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 
 9. Escolha o idioma desejado e, em seguida, clique em **OK**.
 
-10. O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Avançar**.
+10. O Assistente para Instalação do Parasoft SOAtest & Virtualize será iniciado.  Clique em **Próximo**.
     > [!div class="mx-imgBorder"]
     > ![Iniciar instalação do benefício Parasoft](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -95,10 +95,10 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Aproveite sua própria área restrita de desenvolvimento ativando seu [crédito individual do Azure DevTest](vs-azure.md). 
+Aproveite sua própria área restrita de desenvolvimento ativando seu [crédito individual do Azure DevTest](vs-azure.md).

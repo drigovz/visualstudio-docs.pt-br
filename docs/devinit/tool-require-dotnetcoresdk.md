@@ -1,9 +1,9 @@
 ---
-title: exigir-dotnetcoresdk
+title: require-dotnetcoresdk
 description: a ferramenta devinit requer-dotnetcoresdk.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cf68889b9dbac39031a4a79fbe799dc02fc8e419
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809689"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005780"
 ---
-# <a name="require-dotnetcoresdk"></a>exigir-dotnetcoresdk
+# <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
 A `require-dotnetcoresdk` ferramenta é usada para instalar o [SDK do .NET Core](https://dotnet.microsoft.com/) e o tempo de execução compartilhado por meio do script [dotnet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) .
 
@@ -26,7 +26,7 @@ A `require-dotnetcoresdk` ferramenta é usada para instalar o [SDK do .NET Core]
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                               |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | A versão do SDK do .NET Core a ser instalada. Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -70,7 +70,7 @@ O comportamento padrão da `require-dotnetcoresdk` ferramenta é instalar a vers
         {
             "comments": "Example that will install in a specific directory.",
             "tool": "require-dotnetcoresdk",
-            "additionalOptions": "-InstallDir \"C:\Program Files\dotnet\""
+            "additionalOptions": "-InstallDir \"C:\\Program Files\\dotnet\""
         }
     ]
 }

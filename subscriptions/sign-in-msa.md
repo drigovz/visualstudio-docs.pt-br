@@ -7,12 +7,12 @@ ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Como entrar em sua Assinatura do Visual Studio com sua MSA (Conta Microsoft)
-ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005931"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Entrar em suas assinaturas do Visual Studio com sua MSA (Conta Microsoft)
 
@@ -43,10 +43,10 @@ R: muitos usuários têm mais de uma assinatura.  Se você conseguir entrar no p
 Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Depois de entrar com êxito no portal de assinaturas, é recomendável visitar a página de benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  
+Depois de entrar com êxito no portal de assinaturas, é recomendável visitar a página de benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.

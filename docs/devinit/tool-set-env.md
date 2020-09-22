@@ -1,9 +1,9 @@
 ---
-title: Set-env
+title: set-env
 description: ferramenta devinit require-Set-env.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e7c327fb3f8492af8c1c740044f852d826fffad0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810417"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005991"
 ---
-# <a name="set-env"></a>Set-env
+# <a name="set-env"></a>set-env
 
 A `set-env` ferramenta pode ser usada para definir variáveis de ambiente para uso no processo atual. As variáveis de ambiente são definidas somente no processo atual e serão usadas por outras `devinit` ferramentas se elas forem executadas nesse processo.
 
@@ -26,7 +26,7 @@ Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as
 
 ## <a name="usage"></a>Uso
 
-| Nome                                         | Type   | Obrigatório | Valor                                                                       |
+| Nome                                         | Tipo   | Obrigatório | Valor                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                       |
 | [**entrada**](#input)                          | Cadeia de caracteres | No       | A entrada para a ferramenta. Consulte a [entrada](#input) abaixo para obter detalhes.               |
@@ -48,6 +48,10 @@ Uma `input` cadeia de caracteres pode conter uma expansão de variável de ambie
 ### <a name="additional-options"></a>Opções adicionais
 
 Não usado.
+
+## <a name="usage-in-a-codespace"></a>Uso em um codespace
+
+Se você estiver usando um codespace, poderá definir as variáveis de ambiente usadas no codespace até Customizating a `remoteEnv` propriedade no [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) arquivo.
 
 ## <a name="example-usage"></a>Exemplo de uso
 

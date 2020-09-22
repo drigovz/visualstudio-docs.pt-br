@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Suporte da Comunidade Azure incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238615"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006235"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Fórum do Suporte da Comunidade do Azure em assinaturas do Visual Studio
 Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados por meio da Comunidade Azure.  O benefício da Comunidade Azure fornece acesso a um conjunto de fóruns voltados para tópicos relacionados ao Azure.
@@ -40,9 +40,9 @@ Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados 
     :::column-end:::
     :::column:::
         - [Banco de Dados SQL do Azure](https://social.msdn.microsoft.com/Forums/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)  
-        - [Azure Stack Hub](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
+        - [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)  
         - [Armazenamento do Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)  
-        - [Máquinas virtuais do Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
+        - [Máquinas Virtuais do Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)  
         - [Sites do Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)  
         - [Serviços de Nuvem (Funções de Trabalho e da Web)](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)  
         - [Preços e cobrança](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)  
@@ -76,7 +76,7 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |                          Visual Studio Professional com GitHub Enterprise                          | VL, Azure, Retail |   Um ano    |    Sim     |
 |                              Visual Studio Test Professional (Padrão)                               |    VL, Retail     |   Um ano    |    Sim     |
 |                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Um ano    |    Sim     |
-| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Tudo        | Não disponível |     Não     |
+| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Tudo        | Não disponível |     No     |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), Microsoft FTE, profissional mais valioso (MVP), diretor regional (RD), parceiro do setor do Visual Studio (VSIP), BizSpark, imagine, Microsoft Certified Trainer (MCT)*
 
@@ -92,10 +92,10 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Você sabia que muitas assinaturas do Visual Studio vêm com o crédito individual do Azure DevTest?  Saiba como [ativar](vs-azure.md) os seus.

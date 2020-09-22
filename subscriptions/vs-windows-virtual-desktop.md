@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Saiba como você pode tirar proveito da área de trabalho virtual do Microsoft Windows por meio de sua assinatura do Visual Studio
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561358"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005040"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acessar a área de trabalho virtual do Windows em assinaturas 
 Os assinantes do Visual Studio agora podem usar seus créditos individuais de desenvolvimento/teste do Azure para os serviços de área de trabalho virtual do Microsoft Windows.  
@@ -23,7 +23,7 @@ Veja o que você pode fazer ao executar a Área de Trabalho Virtual do Windows n
 - Fornecer áreas de trabalho virtuais do Windows 7 com Atualizações de Segurança Estendida gratuitas
 - Trazer seu RDS (Serviços de Área de Trabalho Remota) existente, além de aplicativos e áreas de trabalho do Windows Server para qualquer computador
 - Virtualizar aplicativos e áreas de trabalho
-- Gerencie aplicativos e desktops Windows 10, Windows Server e Windows 7 com uma experiência de gerenciamento unificada para obter mais informações sobre o que você pode fazer com a área de trabalho virtual do Windows, Assista ao [vídeo introdutório](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- Gerencie aplicativos e desktops Windows 10, Windows Server e Windows 7 com uma experiência de gerenciamento unificada para obter mais informações sobre o que você pode fazer com a área de trabalho virtual do Windows, Assista ao [vídeo introdutório](/azure/virtual-desktop/overview).
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Usar a área de trabalho virtual do Windows com o Azure 
 Os assinantes do Visual Studio agora têm várias maneiras de usar as assinaturas do Azure para pagar pelos serviços de área de trabalho virtual do Windows:
@@ -35,13 +35,13 @@ Os assinantes do Visual Studio agora têm várias maneiras de usar as assinatura
 A área de trabalho virtual do Windows requer um Azure Active Directory (Azure AD) para o qual as VMs serão Unidas.  Os usuários devem ser membros deste Azure AD.  Há duas opções para implementar o Azure AD:
 - Serviços de diretório do Azure AD.  Para a maioria dos usuários, essa é a opção mais fácil de implementar.
 - Uma máquina virtual que executa uma promoção de controlador de domínio.  Essa opção requer mais trabalho para configurar, mas oferece aos usuários um custo operacional mais baixo.
-Para ver uma lista completa de pré-requisitos para usar a área de trabalho virtual do Windows, visite a [página Visão geral](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)da área de trabalho virtual do Windows. 
+Para ver uma lista completa de pré-requisitos para usar a área de trabalho virtual do Windows, visite a [página Visão geral](/azure/virtual-desktop/overview#requirements)da área de trabalho virtual do Windows. 
 
 ## <a name="get-started"></a>Introdução 
 Quando todos os seus pré-requisitos estiverem em vigor, você desejará concluir várias ações para colocar sua implementação em vigor.  Confira estes tutoriais para começar:
-- [Criar um locatário da Área de Trabalho Virtual do Windows](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- [Criar um pool de hosts](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) usando o portal do Azure
-- [Gerenciar grupos de aplicativos](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) para área de trabalho virtual do Windows
+- [Criar um locatário da Área de Trabalho Virtual do Windows](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- [Criar um pool de hosts](/azure/virtual-desktop/create-host-pools-azure-marketplace) usando o portal do Azure
+- [Gerenciar grupos de aplicativos](/azure/virtual-desktop/manage-app-groups) para área de trabalho virtual do Windows
 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
@@ -63,11 +63,11 @@ Quando todos os seus pré-requisitos estiverem em vigor, você desejará conclui
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação da Área de Trabalho Virtual do Windows](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Documentação do Azure](/azure/)
+- [Documentação da Área de Trabalho Virtual do Windows](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Próximas etapas
 -   Se você precisar comprar assinaturas do Visual Studio, confira:
      - [Preços para compras de varejo](https://visualstudio.microsoft.com/vs/pricing/) por meio do Microsoft Store
      - [Programas de licenciamento por volume](https://www.microsoft.com/licensing/default)
--   Saiba mais sobre a [área de trabalho virtual do Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   Saiba mais sobre a [área de trabalho virtual do Windows](/azure/virtual-desktop/overview)

@@ -1,9 +1,9 @@
 ---
-title: WSL-instalar
+title: wsl-install
 description: devinit ferramenta WSL-install.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d0b70c05fd4b8b3681274838d6ae8df67f68dbca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a52027c060917e8c5f692f472427ba5d980b3bb
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811221"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005053"
 ---
-# <a name="wsl-install"></a>WSL-instalar
+# <a name="wsl-install"></a>wsl-install
 
 A `wsl-install` ferramenta é usada para instalar o Linux distribuições para o [subsistema do Windows para Linux](https://docs.microsoft.com/windows/wsl/) (WSL).
 
@@ -28,7 +28,7 @@ A `wsl-install` ferramenta requer que o WSL 2 já esteja habilitado no Windows. 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                             |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                             |
 | [**entrada**](#input)                              | string | Sim      | O distribuição a ser instalado. Consulte a [entrada](#input) abaixo para obter detalhes.     |
@@ -55,7 +55,7 @@ O URI para o pacote de distribuição de aplicativo AppX ( `.appx` ) que contém
 
 Há suporte para várias opções adicionais:
 
-| Nome                      | Type      | Obrigatório | Valor                                                                                                                                                                                    |
+| Nome                      | Tipo      | Obrigatório | Valor                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | --WSL-versão             | Cadeia de caracteres    | No       | Versão do WSL a ser usada. O valor padrão é 2.                                                                                                                                  |
 | --pós-criação-comando     | Cadeia de caracteres    | No       | O comando a ser executado dentro do distribuição do Linux quando a instalação for concluída. O comando deve ser formatado como uma única palavra ou encapsulado entre aspas. O padrão é nenhum comando.  |

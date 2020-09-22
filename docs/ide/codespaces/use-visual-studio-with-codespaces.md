@@ -11,16 +11,16 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c6eef7a63ea69611c6df1f6d2b425ed56437f68c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862075"
+ms.locfileid: "91006248"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Como usar o Visual Studio com um codespace (visualização)
 
-O Visual Studio tem excelente suporte para o desenvolvimento no GitHub Codespaces. Você pode criar e se conectar a um codespace e ter todo o poder do Visual Studio para trabalhar em seus projetos em um ambiente remoto e hospedado. Embora o código-fonte e as ferramentas estejam em um codespace e sua compilação e depuração estejam acontecendo na nuvem, sua experiência de desenvolvimento se sentirá tão rápida e sem interrupções como se você estivesse trabalhando localmente. Você pode trabalhar com um codespace de dentro do Visual Studio 2019 Preview ([Inscreva-se no beta público limitado](https://github.com/features/codespaces/signup)).
+O Visual Studio tem excelente suporte para o desenvolvimento no GitHub Codespaces. Você pode criar e se conectar a um codespace e ter todo o poder do Visual Studio para trabalhar em seus projetos em um ambiente remoto e hospedado. Embora o código-fonte e as ferramentas estejam em um codespace e sua compilação e depuração estejam acontecendo na nuvem, sua experiência de desenvolvimento se sentirá tão rápida e sem interrupções como se você estivesse trabalhando localmente. Você pode trabalhar com um codespace de dentro do Visual Studio 2019 Preview ([Inscreva-se no beta público limitado](https://github.com/features/codespaces/signup-vs)).
 
 > [!NOTE]
 > Este artigo descreve especificamente o uso do Visual Studio para se conectar ao GitHub Codespaces. Você pode aprender sobre como se conectar a um codespace com outros clientes na documentação do [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) ou do [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) .

@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 04/28/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 276475393de374970685202079831bb06bedea6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247331"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91003840"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -48,21 +48,21 @@ Se sua assinatura do Visual Studio expirar ou for removida, todos os benefícios
 > [!IMPORTANT]
 > Você deve transferir seus recursos para outra assinatura do Azure antes que sua assinatura atual do Azure seja desabilitada ou você perderá o acesso aos seus dados.  
 
-Há várias maneiras de continuar usando um crédito mensal para o Azure.  Para salvar os recursos do Azure, você precisará [transferir seus recursos](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) para outra assinatura do Azure, independentemente da ação escolhida abaixo. 
+Há várias maneiras de continuar usando um crédito mensal para o Azure.  Para salvar os recursos do Azure, você precisará [transferir seus recursos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) para outra assinatura do Azure, independentemente da ação escolhida abaixo. 
 
 - **Se você comprar sua assinatura do Visual Studio diretamente**, adquira uma nova assinatura ou renove sua assinatura por meio de Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Se alguém em sua organização comprar assinaturas para sua organização**, [entre em contato com o administrador da assinatura do Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin) e solicite uma assinatura que forneça o crédito mensal de que você precisa.  
-- **Se você tiver outra assinatura ativa do Visual Studio** no mesmo nível de assinatura associado a outro conta Microsoft, você poderá transferir o benefício do Azure para outra assinatura ativa do Visual Studio [adicionando uma conta alternativa](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions#managing-my-profile) no [portal de assinaturas](https://my.visualstudio.com/subscriptions)do Visual Studio.  
+- **Se alguém em sua organização comprar assinaturas para sua organização**, [entre em contato com o administrador da assinatura do Visual Studio](./contact-my-admin.md) e solicite uma assinatura que forneça o crédito mensal de que você precisa.  
+- **Se você tiver outra assinatura ativa do Visual Studio** no mesmo nível de assinatura associado a outro conta Microsoft, você poderá transferir o benefício do Azure para outra assinatura ativa do Visual Studio [adicionando uma conta alternativa](./manage-vs-subscriptions.md#managing-my-profile) no [portal de assinaturas](https://my.visualstudio.com/subscriptions)do Visual Studio.  
 
 Use a tabela de qualificação abaixo para determinar quantos créditos estão incluídos em cada tipo de assinatura.  
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>Converta sua assinatura do Azure para pré-paga
 
-Se você não precisar mais de uma assinatura ou crédito do Visual Studio, mas quiser continuar usando os recursos do Azure, [transfira seus recursos](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription) para outra assinatura do Azure ou converta sua assinatura do Azure para preço pago conforme o uso, [removendo seu limite de gastos](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
+Se você não precisar mais de uma assinatura ou crédito do Visual Studio, mas quiser continuar usando os recursos do Azure, [transfira seus recursos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) para outra assinatura do Azure ou converta sua assinatura do Azure para preço pago conforme o uso, [removendo seu limite de gastos](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal). 
 
 Se você não executar uma dessas ações, sua assinatura do Azure será desabilitada e excluída 30 dias após o recebimento da notificação por email.  
 
@@ -117,10 +117,10 @@ R: a propriedade intelectual produzida por um funcionário criado nos recursos f
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Para obter mais informações sobre ferramentas e serviços da Microsoft, confira a documentação do:

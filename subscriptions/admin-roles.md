@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Saiba mais sobre as funções Superadministrador e Administrador e como atribuir administradores.
-ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b6c6abc920ff68b6439fe4bff6f813366888a912
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426753"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006144"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Superadministradores e administradores para contratos de assinatura do Visual Studio
 
@@ -44,16 +44,14 @@ Para atribuir novos administradores:
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Veja também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Próximas etapas
 - Saiba como [atribuir assinaturas](assign-license.md)
 - Saiba mais sobre a gama completa de [benefícios da assinatura](https://visualstudio.microsoft.com/vs/benefits/)
-- [Definir preferências de contrato](admin-prefs.md) 
-
-
+- [Definir preferências de contrato](admin-prefs.md)

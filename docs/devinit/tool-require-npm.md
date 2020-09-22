@@ -1,9 +1,9 @@
 ---
-title: exigir-NPM
+title: require-npm
 description: a ferramenta devinit requer-NPM.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56c8bc0d277427d235396671f446a44125aa0165
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0af1e0561edfc4cf12ccd19f17bab2a386d0afe9
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809675"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005179"
 ---
-# <a name="require-npm"></a>exigir-NPM
+# <a name="require-npm"></a>require-npm
 
 A `require-npm` ferramenta é usada para instalar o [NPM](https://www.npmjs.com/).
 
@@ -26,7 +26,7 @@ A `require-npm` ferramenta é usada para instalar o [NPM](https://www.npmjs.com/
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                       |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                       |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                       |
 | [**entrada**](#input)                              | string | Sim      | Especifica a versão do NPM. Consulte a [entrada](#input) abaixo para obter detalhes.                           |

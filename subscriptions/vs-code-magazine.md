@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387168"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005905"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
 
@@ -49,12 +49,12 @@ Depois de concluir sua ordem de assinatura, você verá uma página de confirma�
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Não          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL| Disponível       |  Não          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  Não          |
-| Visual Studio Professional com GitHub Enterprise | VL                                      | Disponível                                                            |  Não          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Não          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Não          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  No          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL| Disponível       |  No          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  No          |
+| Visual Studio Professional com GitHub Enterprise | VL                                      | Disponível                                                            |  No          |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  No          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  No          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, BizSpark, imagine Premium.  Exclui: Microsoft Partner Network (MPN), profissional mais valioso (MVP), diretor regional (RD), MCT software & Developer Services, MCT software & Services, imagine.*
@@ -77,10 +77,10 @@ R: a revista de código coleta seu endereço, independentemente de a assinatura 
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Confira o restante dos ótimos benefícios incluídos na sua assinatura. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .

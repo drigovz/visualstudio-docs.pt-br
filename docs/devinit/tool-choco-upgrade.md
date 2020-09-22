@@ -1,9 +1,9 @@
 ---
-title: Choco-atualizar
+title: choco-upgrade
 description: devinit Tool choco-upgrade.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7b7c2d3dd005c54edb882e059679d45e77e539be
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5a735b60fd318d86e97dc4db7570e952a0fcdfd8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810154"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006032"
 ---
-# <a name="choco-upgrade"></a>Choco-atualizar
+# <a name="choco-upgrade"></a>choco-upgrade
 
 A `choco-upgrade` ferramenta pode ser usada para instalar e atualizar pacotes de [Chocolatey](https://chocolatey.org/docs/commandsupgrade) .
 
@@ -26,7 +26,7 @@ A `choco-upgrade` ferramenta pode ser usada para instalar e atualizar pacotes de
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta não fará nada.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                                          |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | O pacote a ser atualizado. Consulte a [entrada](#input) abaixo para obter detalhes.                                                 |
@@ -44,7 +44,7 @@ Opções de configuração adicionais podem ser passadas como um valor de `addit
 
 A `choco-upgrade` ferramenta define um número de `choco` argumentos de linha de comando para garantir que o `choco` possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na [documentação do Chocolatey](https://chocolatey.org/docs/).
 
-| Nome                  | Descrição                                                                                        |
+| Name                  | Descrição                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--Sim**             | Confirmar todos os prompts – escolha a resposta afirmativo em vez de solicitar. Implica `--accept-license` . |
 | **--sem progresso**     | Não mostrar o progresso-as porcentagens de progresso não serão mostradas.                                         |

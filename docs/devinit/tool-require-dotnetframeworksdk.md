@@ -1,9 +1,9 @@
 ---
-title: exigir-dotnetframeworksdk
+title: require-dotnetframeworksdk
 description: a ferramenta devinit requer-dotnetframeworksdk.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c9e27883bda455794429221af436af1fe39229fc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4de8daf4b57d4775e4f1ede57392bb594bae53ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809682"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005106"
 ---
-# <a name="require-dotnetframeworksdk"></a>exigir-dotnetframeworksdk
+# <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
 A `require-dotnetframeworksdk` ferramenta é usada para instalar o [SDK do .NET Framework](https://dotnet.microsoft.com/) por meio dos [instaladores fornecidos](https://dotnet.microsoft.com/download/visual-studio-sdks).
 
@@ -26,7 +26,7 @@ A `require-dotnetframeworksdk` ferramenta é usada para instalar o [SDK do .NET 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório  | Valor                                                                                    |
+| Nome                                             | Tipo   | Obrigatório  | Valor                                                                                    |
 |--------------------------------------------------|--------|-----------|------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No        | Propriedade de comentários opcional. Não usado.                                                    |
 | [**entrada**](#input)                              | Cadeia de caracteres | No        | A versão do SDK do .NET Framework para instalar. Consulte a [entrada](#input) abaixo para obter detalhes. |

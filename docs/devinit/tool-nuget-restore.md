@@ -1,9 +1,9 @@
 ---
-title: NuGet-restaurar
+title: nuget-restore
 description: ferramenta devinit NuGet-Restore.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 446498f77d7f9a26c9876f6a163d819a97df1ff9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7671d336e3c4f86cae8b6bba7fe1b35443aa0632
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810915"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005113"
 ---
-# <a name="nuget-restore"></a>NuGet-restaurar
+# <a name="nuget-restore"></a>nuget-restore
 
 A `nuget-restore` ferramenta restaura dependências e ferramentas específicas do projeto que são especificadas no arquivo de projeto. Leia mais sobre a restauração do NuGet [aqui](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-restore).
 
@@ -26,7 +26,7 @@ A `nuget-restore` ferramenta restaura dependências e ferramentas específicas d
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Caminho para o arquivo de projeto/solução a ser restaurado. Consulte a [entrada](#input) abaixo para obter detalhes. |

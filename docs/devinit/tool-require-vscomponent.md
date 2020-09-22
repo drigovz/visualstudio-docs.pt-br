@@ -1,9 +1,9 @@
 ---
-title: exigir-vscomponent
+title: require-vscomponent
 description: a ferramenta devinit requer-vscomponent.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d53e6d35a7c0d78505192f7c8863c34f9e1ca874
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810424"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005033"
 ---
-# <a name="require-vscomponent"></a>exigir-vscomponent
+# <a name="require-vscomponent"></a>require-vscomponent
 
 A `require-vscomponent` ferramenta é usada para importar configurações do Visual Studio para o Visual Studio existente. Leia mais sobre `.vsconfig` [aqui](https://docs.microsoft.com/visualstudio/install/import-export-installation-configurations).
 
@@ -26,7 +26,7 @@ A `require-vscomponent` ferramenta é usada para importar configurações do Vis
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                     | Type   | Obrigatório | Valor                                                                |
+| Nome                                     | Tipo   | Obrigatório | Valor                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
 | **feitos**                             | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                |
 | [**entrada**](#input)                      | Cadeia de caracteres | No       | O caminho completo de `.vsconfig` . Consulte a [entrada](#input) abaixo para obter detalhes. |

@@ -48,9 +48,9 @@
   items:
     - name: Kubernetes no Visual Studio
       href: tutorial-kubernetes-tools.md
-    - name: Processo Local com o Kubernetes (Versão Prévia)
-      href: local-process-kubernetes.md
-    - name: Como o Processo Local com Kubernetes funciona (Versão Prévia)
-      href: overview-local-process-kubernetes.md
-    - name: Configurar o processo local com o Kubernetes
-      href: configure-local-process-with-kubernetes.md
+    - name: Ponte para Kubernetes
+      href: bridge-to-kubernetes.md
+    - name: Como funciona a Ponte para Kubernetes
+      href: overview-bridge-to-kubernetes.md
+    - name: Configurar a Ponte para Kubernetes
+      href: configure-bridge-to-kubernetes.md

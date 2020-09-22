@@ -3,7 +3,7 @@ title: Runtime do .NET Core
 description: Exemplo de personalização usando devinit para o repositório dotnet/tempo de execução.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 477a498059be6d1ee5637a704512fd49b62e11b6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809107"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005648"
 ---
 # <a name="net-core-runtime"></a>runtime do .NET Core
 
@@ -26,7 +26,7 @@ Este exemplo ilustra como personalizar o [dotnet/tempo](https://github.com/dotne
 
 Esse script é chamado de _PostCloneSetup.ps1_ e também pode ser executado localmente para configurar o repositório. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_.
 
-```batch
+```console
 devinit init
 git config --system core.longpaths true
 ```
@@ -43,7 +43,7 @@ O arquivo de _packages.config_ é um arquivo de [chocolate](https://chocolatey.o
 </packages>
 ```
 
-## <a name="devinitjson"></a>.devinit.jsem
+## <a name="devinitjson"></a>.devinit.json
 
 Conteúdo do [_.devinit.jsno_](devinit-json.md) arquivo. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsno_ arquivo.
 

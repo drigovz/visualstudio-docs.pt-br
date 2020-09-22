@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Saiba como encontrar, reivindicar e exportar chaves do produto (Product Keys) em assinaturas do Visual Studio
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004961"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Encontrar e reivindicar chaves do produto (Product Keys) em assinaturas do Visual Studio
 Este artigo explica como localizar, reivindicar e exportar chaves do produto (Product Keys) do https://my.visualstudio.com/productkeys.  Para saber mais sobre como ativar um produto com uma chave, versões de varejo e de licença de volume de chaves e limites diários de reivindicação de chaves do produto (Product Keys), acesse [visão geral das chaves do produto (Product Keys)](product-keys.md).
@@ -67,10 +67,10 @@ Você pode exportar uma lista de todas as chaves já solicitadas, juntamente com
 Para exportar suas chaves, basta selecionar o link **exportar todas as chaves** na extrema direita da página chaves do produto (Product Keys).  Um arquivo .xml intitulado KeysExport.xml será criado e você terá a opção de abri-lo ou de salvá-lo.  Você precisará abrir o arquivo com um aplicativo compatível com arquivos .xml.  Por exemplo, você poderá abrir o arquivo como uma pasta de trabalho somente leitura no Excel.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Quando estiver pronto para baixar o software e usar as chaves, acesse https://my.visualstudio.com/downloads.  Para saber mais sobre como baixar software, confira a [visão geral de download](download-software.md).

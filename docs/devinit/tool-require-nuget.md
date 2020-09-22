@@ -1,9 +1,9 @@
 ---
-title: exigir-NuGet
+title: require-nuget
 description: ferramenta devinit require-NuGet.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c926bc146a7d85d67c49281effe88958f2031695
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef5de2d8358dae0f5f29b815cfa2dca26a3f1cef
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810445"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005172"
 ---
-# <a name="require-nuget"></a>exigir-NuGet
+# <a name="require-nuget"></a>require-nuget
 
 A `require-nuget` ferramenta para baixar a CLI do NuGet e adiciona à variável path. A CLI do NuGet fornece a extensão completa da funcionalidade do NuGet para instalar, criar, publicar e gerenciar pacotes sem fazer alterações nos arquivos do projeto. Leia mais sobre a CLI do NuGet [aqui](https://docs.microsoft.com/nuget/reference/nuget-exe-cli-reference).
 
@@ -26,7 +26,7 @@ A `require-nuget` ferramenta para baixar a CLI do NuGet e adiciona à variável 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Versão da CLI do NuGet para instalar. Consulte a [entrada](#input) abaixo para obter detalhes. |

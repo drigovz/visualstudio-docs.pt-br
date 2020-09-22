@@ -7,12 +7,12 @@ ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Conheça a responsabilidade dos administradores de rastrear atribuições de usuário e processar pedidos.
-ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfb45b7beae45a0c90bf0a860c84a5b1b6f5830a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232694"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005747"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Rastrear atribuição de usuário e processar pedidos
 Os administradores de assinaturas do Visual Studio devem controlar o uso do Visual Studio e processar pedidos de qualquer aumento no uso conforme o prazo descrito no contrato de Licenciamento por Volume ou no Contrato de produtos e serviços da Microsoft. O novo Portal de administração de assinaturas do Visual Studio tornou isso mais simples com um rastreador útil que mostra as licenças usadas e disponíveis.
@@ -38,10 +38,10 @@ Você pode estar atribuindo assinaturas por meio de programas como Open License 
 Os Microsoft EAs (Contratos Enterprise), o MPSA e os Select Plus Agreements oferecem flexibilidade em como usar e licenciar software do Visual Studio ao longo do tempo. Os administradores do Visual Studio devem fazer uma ordem anual de verdadeiro para trazer suas licenças de software para o uso máximo estabelecido durante o período do contrato.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais as políticas dos administradores:
@@ -49,4 +49,3 @@ Saiba mais as políticas dos administradores:
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
-

@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/14/2020
+ms.date: 09/22/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 9c3fda67d55d6e6192da209d129582b34d420fa8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 6e7298a920a970205d336e1db792c7becbf89aec
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713445"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005245"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,8 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Channel** | **Data de lançamento** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.0 | Versão prévia 3,1 | 22 de setembro de 2020 | 16.8.30516.212 |
+| 16.7.4 | Versão | 21 de setembro de 2020 | 16.7.30517.126 |
 | 16.8.0 | Versão Prévia 3 | 14 de setembro de 2020 | 16.8.30509.190 |
 | 16.7.3 | Versão | 08 de setembro de 2020 | 16.7.30503.244 |
 | 16.4.13 | Versão | 08 de setembro de 2020 | 16.4.30427.197 |

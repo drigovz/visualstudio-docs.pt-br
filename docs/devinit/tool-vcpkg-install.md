@@ -1,9 +1,9 @@
 ---
-title: vcpkg-instalar
+title: vcpkg-install
 description: devinit ferramenta vcpkg-install.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2e6dcad778e89b112a8c851f2f27ac46330466af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810410"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005984"
 ---
-# <a name="vcpkg-install"></a>vcpkg-instalar
+# <a name="vcpkg-install"></a>vcpkg-install
 
 A `vcpkg-install` ferramenta é usada para adquirir bibliotecas C/C++ (chamadas de portas) usando [vcpkg](https://github.com/microsoft/vcpkg).
 
@@ -26,7 +26,7 @@ A `vcpkg-install` ferramenta é usada para adquirir bibliotecas C/C++ (chamadas 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                   |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                   |
 | [**entrada**](#input)                              | string | Sim      | Os pacotes a serem instalados. Consulte a [entrada](#input) abaixo para obter detalhes.                       |

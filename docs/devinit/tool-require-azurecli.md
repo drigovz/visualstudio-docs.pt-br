@@ -1,9 +1,9 @@
 ---
-title: exigir-azurecli
+title: require-azurecli
 description: a ferramenta devinit requer-azurecli.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e730807cd4658a23c4e39e06ed837f622e0f0e39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ad76f82a69356f4bbd40d189fb2d8e77a839b31f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810888"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005794"
 ---
-# <a name="require-azurecli"></a>exigir-azurecli
+# <a name="require-azurecli"></a>require-azurecli
 
 A `require-azurecli` ferramenta é usada para instalar o [CLI do Azure](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true) por meio do MSI CLI do Azure.
 
@@ -26,7 +26,7 @@ A `require-azurecli` ferramenta é usada para instalar o [CLI do Azure](https://
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                          |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                               |

@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: Saiba como aproveitar os preços especiais do Azure DevTest disponíveis para clientes com Enterprise Agreements
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903141"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005734"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Oferta do Azure Enterprise Agreement DevTest
 
@@ -32,7 +32,7 @@ Para habilitar as ofertas:
 0. Passe o mouse sobre o nome da conta. 
 0. Clique no ícone de **edição** (lápis) na extrema direita. 
 0. Clique na caixa de seleção **desenvolvimento/teste** .
-0. Clique em **Salvar**.
+0. Clique em **Save** (Salvar).
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Criar assinaturas individuais dentro da conta
 Cada Assinante na conta pode criar uma assinatura seguindo estas etapas:
@@ -42,10 +42,10 @@ Cada Assinante na conta pode criar uma assinatura seguindo estas etapas:
 0. Clique em **Comprar**.  (Com essa oferta, você não está realmente comprando nada.)
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 Saiba mais sobre como gerenciar assinaturas do Visual Studio.
@@ -54,6 +54,3 @@ Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Editar assinaturas](edit-license.md)
 - [Excluir assinaturas](delete-license.md)
 - [Determinar o uso máximo](maximum-usage.md)
-
-
-

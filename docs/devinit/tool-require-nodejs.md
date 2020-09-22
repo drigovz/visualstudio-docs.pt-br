@@ -1,9 +1,9 @@
 ---
-title: exigir-NodeJS
+title: require-nodejs
 description: a ferramenta devinit requer-NodeJS.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6bc2de2e497bd58cfc036e74af3968a2f70d1f52
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce4a156a313e3d8d0afc82ababd49d0528b315f5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808292"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005773"
 ---
-# <a name="require-nodejs"></a>exigir-NodeJS
+# <a name="require-nodejs"></a>require-nodejs
 
 A `require-nodejs` ferramenta é usada para instalar o [Node.js](https://nodejs.org/) por meio de um MSI distribuído pela organização do Node.js.
 
@@ -26,7 +26,7 @@ A `require-nodejs` ferramenta é usada para instalar o [Node.js](https://nodejs.
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                     |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                     |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                     |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | A versão do Node.JS a ser instalada. Consulte a [entrada](#input) abaixo para obter detalhes. |

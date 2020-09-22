@@ -1,9 +1,9 @@
 ---
-title: exigir-azureartifactscredentialprovider
+title: require-azureartifactscredentialprovider
 description: a ferramenta devinit requer-azureartifactscredentialprovider.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 74e8775fb9dc864e8026f73e3bc75604dbf32e10
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4109ad5fcd0e77947552608ceab7b456a3ac1a6
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005060"
 ---
-# <a name="require-azureartifactscredentialprovider"></a>exigir-azureartifactscredentialprovider
+# <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
 A `require-azureartifactscredentialprovider` ferramenta instala o provedor de credenciais Azure Artifacts. O provedor de credenciais Azure Artifacts automatiza a aquisição de credenciais necessárias para restaurar os pacotes NuGet como parte do seu fluxo de trabalho de desenvolvimento do .NET. Leia mais sobre Azure Artifacts provedor de credenciais [aqui](https://github.com/microsoft/artifacts-credprovider/blob/master/README.md).
 
@@ -26,7 +26,7 @@ A `require-azureartifactscredentialprovider` ferramenta instala o provedor de cr
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                                |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes. |

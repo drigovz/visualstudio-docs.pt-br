@@ -7,12 +7,12 @@ ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta corporativa ou de estudante.
-ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561423"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005801"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Entrar em assinaturas do Visual Studio com sua conta corporativa ou de estudante 
 
@@ -72,10 +72,10 @@ R: muitos usuários têm mais de uma assinatura.  Se você conseguir entrar no p
 Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Depois de entrar com êxito no portal de assinaturas, é recomendável visitar a página de benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  
+Depois de entrar com êxito no portal de assinaturas, é recomendável visitar a página de benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.

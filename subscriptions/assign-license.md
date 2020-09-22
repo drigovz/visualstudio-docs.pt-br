@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006196"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -20,7 +20,7 @@ Como administrador de assinaturas do Visual Studio, você pode usar o portal de 
 Para grupos de usuários, você tem opções de como atribuir assinaturas.  
 - Você pode atribuir assinaturas uma de cada vez.
 - Você também pode carregar rapidamente e facilmente listas de assinantes e suas informações de assinatura usando o recurso de [adição em massa](assign-license-bulk.md) .
-- Se sua organização usa o Microsoft Azure Active Directory (AD do Azure), você pode [usar os grupos do Azure ad para atribuir assinaturas](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) a grupos de usuários.  
+- Se sua organização usa o Microsoft Azure Active Directory (AD do Azure), você pode [usar os grupos do Azure ad para atribuir assinaturas](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) a grupos de usuários.  
 
 
 ## <a name="add-a-single-subscriber"></a>Adicionar um único assinante
@@ -59,14 +59,12 @@ Veja como atribuir uma assinatura do Visual Studio a um novo usuário para que e
 Depois de adicionar um assinante, um email de atribuição será enviado automaticamente para o novo assinante com mais instruções. Você pode enviar o email de atribuição novamente a qualquer momento selecionando o Assinante e, em seguida, selecionando o botão **reenviar** no menu superior.  Para reenviar emails a vários usuários, mantenha pressionada a tecla **Ctrl** enquanto seleciona os assinantes.  Ao selecionar o botão **reenviar** , você verá uma caixa de diálogo solicitando que você confirme se deseja reenviar para esses assinantes.  
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Próximas etapas
 - Tem muitos usuários para adicionar?  Saiba como atribuir assinaturas a [vários assinantes](assign-license-bulk.md).
 - Precisa de ajuda?  Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

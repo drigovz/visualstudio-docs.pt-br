@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234634"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006209"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Entrar em assinaturas do Visual Studio pode falhar ao usar aliases
 Dependendo do tipo de conta usado para entrar, as assinaturas disponíveis podem não ser exibidas corretamente ao entrar no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
@@ -86,16 +86,16 @@ Ambas as opções são configuradas no portal de administração ao concluir as 
 
 0. Se você estiver alterando um único usuário, selecione esse usuário na tabela e clique com o botão direito do mouse para editar. Isso abrirá um painel em que você pode modificar o endereço de email de entrada. Faça as atualizações necessárias no campo endereço de email de entrada. Clique em salvar e as alterações entrarão em vigor.  
 
-0. Se você precisar fazer essas alterações em uma grande quantidade de usuários, poderá utilizar o recurso de edição em massa. Leia o artigo [Editar vários assinantes usando a edição em massa](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) para obter mais informações.
+0. Se você precisar fazer essas alterações em uma grande quantidade de usuários, poderá utilizar o recurso de edição em massa. Leia o artigo [Editar vários assinantes usando a edição em massa](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) para obter mais informações.
 
 > [!NOTE]
 > Para alterações individuais e em massa, os Assinantes receberão um email com instruções de que seu endereço de email de entrada foi alterado e precisarão entrar usando o endereço de email atualizado. Também é importante observar que, se o assinante ativou anteriormente os benefícios do outro endereço de entrada, eles precisarão continuar usando o outro endereço de entrada para acessá-los.  
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Próximas etapas
@@ -104,5 +104,3 @@ Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Atribuir várias assinaturas](assign-license-bulk.md)
 - [Editar assinaturas](edit-license.md)
 - [Determinar o uso máximo](maximum-usage.md)
-
-

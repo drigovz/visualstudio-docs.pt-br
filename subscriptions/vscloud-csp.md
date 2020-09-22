@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
-ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80273862"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006222"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partner.microsoft.com/cloud-solution-provider) podem comprar assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional para seus clientes.
@@ -107,10 +107,10 @@ R: Não, os preços para assinaturas do Visual Studio são fixos. O mesmo preço
  R: Não no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
 
 ## <a name="see-also"></a>Confira também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Consulte as [perguntas frequentes sobre cobrança na nuvem](vscloud-billing-faq.md) para obter respostas para perguntas de cobrança comuns.  
+Consulte as [perguntas frequentes sobre cobrança na nuvem](vscloud-billing-faq.md) para obter respostas para perguntas de cobrança comuns.

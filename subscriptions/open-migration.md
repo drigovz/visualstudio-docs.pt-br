@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Saiba como os parceiros gerenciam as assinaturas do Visual Studio para seus clientes.
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426545"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006053"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Parceiros que gerenciam assinaturas em nome dos clientes
 Para gerenciar assinaturas no [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio, há algumas etapas que os parceiros precisam seguir. 
@@ -64,11 +64,11 @@ Etapas para que os parceiros adicionem uma nova licença:
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Veja também
-- [Documentação do Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentação do Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentação do Azure](https://docs.microsoft.com/azure/)
-- [Documentação do Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+## <a name="see-also"></a>Confira também
+- [Documentação do Visual Studio](/visualstudio/)
+- [Documentação do Azure DevOps](/azure/devops/)
+- [Documentação do Azure](/azure/)
+- [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
 - Visite o [portal de administração de assinaturas](https://manage.visualstudio.com) do Visual Studio para gerenciar as assinaturas.
