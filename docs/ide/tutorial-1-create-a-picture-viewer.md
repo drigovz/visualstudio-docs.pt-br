@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579717"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811208"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -68,6 +68,6 @@ Para iniciar o tutorial, comece com a **[etapa 1: criar um projeto de aplicativo
 
 ## <a name="see-also"></a>Confira também
 
-* [Mais tutoriais sobre C#](/visualstudio/get-started/csharp/)
-* [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Mais tutoriais sobre C#](../get-started/csharp/index.yml)
+* [Tutoriais de Visual Basic](../get-started/visual-basic/index.yml)
 * [Tutoriais do C++](/cpp/get-started/tutorial-console-cpp)

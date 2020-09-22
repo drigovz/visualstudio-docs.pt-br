@@ -1,5 +1,5 @@
 ---
-title: Como gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs
+title: Gerenciar atualizações para um aplicativo ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851600"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como gerenciar atualizações em um aplicativo ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como as verificações de atualização são executadas, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1325ebb49e500c3afa40ee074be1f9b859100e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978426"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810935"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Orientações de segurança e implantação
   Os tópicos a seguir demonstram como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução do Office.
@@ -31,19 +31,19 @@ ms.locfileid: "62978426"
 - [Como: configurar a segurança da lista de inclusão](../vsto/how-to-configure-inclusion-list-security.md) Explica como configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt de confiança para controlar se os usuários finais recebem a opção de instalação das soluções do Office.
 
 ## <a name="deployment-topics"></a>Tópicos de implantação
-- [Como publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8) Fornece informações sobre como usar o **Assistente de publicação** ou a página de **publicação** do designer de projeto para publicar soluções do Office.
+- [Como publicar uma solução do Office usando o ClickOnce](/previous-versions/bb386095(v=vs.110)) Fornece informações sobre como usar o **Assistente de publicação** ou a página de **publicação** do designer de projeto para publicar soluções do Office.
 
-- [Como publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58) Descreve as etapas para implantar o em um servidor do SharePoint.
+- [Como publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](/previous-versions/bb608595(v=vs.110)) Descreve as etapas para implantar o em um servidor do SharePoint.
 
-- [Como instalar uma solução do ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065) Fornece etapas para instalar soluções do Office executando o programa de instalação que é gerado durante o processo de publicação; abrindo o arquivo de manifesto de implantação; ou abrir um documento ou pasta de trabalho personalizada.
+- [Como instalar uma solução do ClickOnce Office](/previous-versions/bb608592(v=vs.110)) Fornece etapas para instalar soluções do Office executando o programa de instalação que é gerado durante o processo de publicação; abrindo o arquivo de manifesto de implantação; ou abrir um documento ou pasta de trabalho personalizada.
 
-- [Como instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98) Descreve como você pode criar um programa de instalação que verifica os pré-requisitos antes de instalar os componentes da solução.
+- [Como instalar pré-requisitos em computadores de usuários finais para executar soluções do Office](/previous-versions/bb608608(v=vs.110)) Descreve como você pode criar um programa de instalação que verifica os pré-requisitos antes de instalar os componentes da solução.
 
-- [Como preparar o IIS para implantação de soluções do Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4) Descreve como configurar o tipo MIME no Microsoft Serviços de Informações da Internet (IIS) para o manifesto de implantação.
+- [Como preparar o IIS para implantação de soluções do Office](/previous-versions/bb608629(v=vs.110)) Descreve como configurar o tipo MIME no Microsoft Serviços de Informações da Internet (IIS) para o manifesto de implantação.
 
-- [Como: atualizar soluções implantadas do Office](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13) Fornece informações sobre como atualizar uma solução do Office usando o **Assistente de publicação**.
+- [Como: atualizar soluções implantadas do Office](/previous-versions/bb157871(v=vs.110)) Fornece informações sobre como atualizar uma solução do Office usando o **Assistente de publicação**.
 
-- [Como alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd) Fornece informações sobre como alterar o caminho de instalação de uma solução do Office.
+- [Como alterar o caminho de instalação de uma solução do Office](/previous-versions/bb608626(v=vs.110)) Fornece informações sobre como alterar o caminho de instalação de uma solução do Office.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Passo a passos usando o Word](../vsto/walkthroughs-using-word.md) Lista guias passo a passo que fornecem uma introdução às soluções do Office no Visual Studio e ajudam a ilustrar como você pode criar aplicativos que tiram proveito do Word.

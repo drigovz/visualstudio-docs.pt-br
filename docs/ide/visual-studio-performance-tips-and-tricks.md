@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426996"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810318"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -63,7 +63,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **depurar**  >  **Windows**  >  **Módulos**.)
 
-    Para obter mais informações, consulte [Noções básicas sobre arquivos de símbolo](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
+    Para obter mais informações, consulte [Noções básicas sobre arquivos de símbolo](?view=vs-2019).
 
 - **Desabilitar Ferramentas de Diagnóstico**
 
@@ -151,7 +151,7 @@ Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, rela
 
 Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções básicas da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Otimizar o desempenho do Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Carregar soluções mais rapidamente) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

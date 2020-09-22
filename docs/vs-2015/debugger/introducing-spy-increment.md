@@ -1,5 +1,5 @@
 ---
-title: Introdução ao Spy + + | Microsoft Docs
+title: Apresentando o Spy + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,49 +12,49 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35e9fa2d75528549f8c55f5b52dbd4c4aa2271a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431449"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838752"
 ---
 # <a name="introducing-spy"></a>Introdução a Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spy + + permite que você execute as seguintes tarefas:  
+O Spy + + permite que você execute as seguintes tarefas:  
   
-- Exiba um gráfico de árvore de relações entre os objetos do sistema. Eles incluem [processos](../debugger/processes-view.md), [threads](../debugger/threads-view.md), e [windows](../debugger/windows-view.md).  
+- Exibir uma árvore gráfica de relações entre objetos do sistema. Isso inclui [processos](../debugger/processes-view.md), [threads](../debugger/threads-view.md)e [janelas](../debugger/windows-view.md).  
   
-- Pesquisar para especificado [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [threads](../debugger/how-to-search-for-a-thread-in-threads-view.md), [processos](../debugger/how-to-search-for-a-process-in-processes-view.md), ou [mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Procurar por [Windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [threads](../debugger/how-to-search-for-a-thread-in-threads-view.md), [processos](../debugger/how-to-search-for-a-process-in-processes-view.md)ou [mensagens](../debugger/how-to-search-for-a-message-in-messages-view.md)especificados.  
   
-- Exibir as propriedades de selecionado [windows](../debugger/how-to-display-window-properties.md), [threads](../debugger/how-to-display-thread-properties.md), [processos](../debugger/how-to-display-process-properties.md), ou [mensagens](../debugger/how-to-display-message-properties.md).  
+- Exiba as propriedades de [janelas](../debugger/how-to-display-window-properties.md), [threads](../debugger/how-to-display-thread-properties.md), [processos](../debugger/how-to-display-process-properties.md)ou [mensagens](../debugger/how-to-display-message-properties.md)selecionadas.  
   
-- Selecione uma janela, o thread, o processo ou a mensagem diretamente no modo de exibição.  
+- Selecione uma janela, thread, processo ou mensagem diretamente na exibição.  
   
-- Use o [ferramenta Descobridora](../debugger/how-to-use-the-finder-tool.md) para selecionar uma janela, o posicionamento do ponteiro do mouse.  
+- Use a [ferramenta Finder](../debugger/how-to-use-the-finder-tool.md) para selecionar uma janela pelo posicionamento do ponteiro do mouse.  
   
-- Definir **opções de mensagem** usando parâmetros de seleção de log de mensagens complexos.  
+- Defina **as opções de mensagem** usando parâmetros de seleção de log de mensagens complexos.  
   
-  Spy + + tem uma barra de ferramentas e hiperlinks para ajudar você a trabalhar com mais rapidez. Também fornece um **Refresh** comando para atualizar a exibição ativa, um **ferramenta Descobridora de janelas** para tornar a espionagem e um **fonte** caixa de diálogo para personalizar o windows de modo de exibição. Além disso, Spy + + permite salvar e restaurar as preferências do usuário.  
+  O Spy + + tem uma barra de ferramentas e hiperlinks para ajudá-lo a trabalhar mais rapidamente. Ele também fornece um comando **Atualizar** para atualizar o modo de exibição ativo, uma **ferramenta de localizador de janelas** para tornar o espionagem mais fácil e uma caixa de diálogo **fonte** para personalizar as janelas de exibição. Além disso, o Spy + + permite salvar e restaurar as preferências do usuário.  
   
-  Em várias janelas Spy + +, você pode clique com botão direito para exibir um menu de atalho de comandos usados com frequência. Quais comandos são exibidos depende de onde é o ponteiro. Por exemplo, se o botão direito do mouse uma entrada na exibição da janela e a janela selecionada estiver visível, clique em **realçar** no atalho do menu faz com que a borda da janela selecionada para flash para que possa ser localizado com mais facilidade.  
+  Em várias janelas do Spy + +, você pode clicar com o botão direito do mouse para exibir um menu de atalho de comandos usados com frequência. Quais comandos são exibidos depende de onde está o ponteiro. Por exemplo, se você clicar com o botão direito do mouse em uma entrada na exibição de janela e a janela selecionada estiver visível, clicar em **realçar** no menu de atalho fará com que a borda da janela selecionada seja atualizada para que possa ser localizada com mais facilidade.  
   
 > [!NOTE]
-> Há dois outros utilitários que se assemelhem a Spy + +: PView, que mostra detalhes sobre processos e threads e DDESPY. EXE, que permite que você monitore as mensagens de troca dinâmica de dados (DDE).  
+> Há dois outros utilitários que se assemelham ao Spy + +: PView, que mostra detalhes sobre processos e threads, e DDESPY.EXE, que permite monitorar mensagens de troca dinâmica de dados (DDE).  
   
 ## <a name="64-bit-operating-systems"></a>Sistemas operacionais de 64 bits  
- Há duas versões do Spy + +. A primeira versão, chamada Spy + + (spyxx.exe) é projetada para exibir as mensagens enviadas para uma janela que está em execução em um processo de 32 bits. Por exemplo, o Visual Studio é executado em um processo de 32 bits. Portanto, você pode usar Spy + + para exibir as mensagens enviadas ao **Gerenciador de soluções**. Como a configuração padrão para a maioria das compilações no Visual Studio é executado em um processo de 32 bits, essa primeira versão do Spy + + é aquele que está disponível na **ferramentas** menu do Visual Studio.  
+ Há duas versões do Spy + +. A primeira versão, chamada Spy + + (spyxx.exe), foi projetada para exibir as mensagens enviadas para uma janela que está sendo executada em um processo de 32 bits. Por exemplo, o Visual Studio é executado em um processo de 32 bits. Portanto, você pode usar o Spy + + para exibir mensagens enviadas para **Gerenciador de soluções**. Como a configuração padrão para a maioria das compilações no Visual Studio é executar em um processo de 32 bits, essa primeira versão do Spy + + é aquela que está disponível no menu **ferramentas** do Visual Studio.  
   
- A segunda versão, chamada Spy + + (64-bit) (spyxx_amd64.exe) é projetada para exibir as mensagens enviadas para uma janela que está em execução em um processo de 64 bits. Por exemplo, em um sistema operacional de 64 bits, o bloco de notas é executado em um processo de 64 bits. Portanto, você pode usar Spy + + (64 bits) para exibir as mensagens enviadas para o bloco de notas. Spy + + (64 bits) geralmente está localizado em  
+ A segunda versão, chamada Spy + + (64 bits) (spyxx_amd64.exe), foi projetada para exibir as mensagens enviadas a uma janela que está sendo executada em um processo de 64 bits. Por exemplo, em um sistema operacional de 64 bits, o bloco de notas é executado em um processo de 64 bits. Portanto, você pode usar o Spy + + (64 bits) para exibir as mensagens enviadas ao bloco de notas. O Spy + + (64 bits) normalmente está localizado em  
   
- .. \\ *Pasta de instalação do visual Studio*\Common7\Tools\spyxx_amd64.exe.  
+ ..\\\Common7\Tools\spyxx_amd64.exe de *pasta de instalação do Visual Studio* .  
   
- Você pode executar qualquer versão do Spy + + diretamente da linha de comando.  
+ Você pode executar qualquer versão do Spy + + diretamente na linha de comando.  
   
 > [!NOTE]
-> Embora o nome de arquivo (64 bits) do Spy + + contiver "amd", ele é executado em qualquer x64 sistema de operacional Windows.  
+> Embora o nome do arquivo Spy + + (64 bits) contenha "AMD", ele é executado em qualquer sistema operacional Windows x64.  
   
-## <a name="see-also"></a>Consulte também  
- [Usando o Spy++](../debugger/using-spy-increment.md)   
- [Exibições do Spy++](../debugger/spy-increment-views.md)   
- [Referência a Spy++](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Consulte Também  
+ [Usando o Spy + +](../debugger/using-spy-increment.md)   
+ [Modos de exibição do Spy + +](../debugger/spy-increment-views.md)   
+ [Referência de Spy++](../debugger/spy-increment-reference.md)

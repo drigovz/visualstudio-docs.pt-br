@@ -1,5 +1,5 @@
 ---
-title: Como pesquisar uma mensagem no modo de exibição de mensagens | Microsoft Docs
+title: Pesquisar uma mensagem no modo de exibição de mensagens | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349309"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852003"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Como procurar uma mensagem na exibição de mensagens
 Você pode pesquisar uma mensagem específica no modo de exibição de mensagens usando seu identificador, tipo ou ID de mensagem como critério de pesquisa. Qualquer um desses — ou uma combinação — será um critério de pesquisa válido. A direção inicial da pesquisa também pode ser especificada. Os campos na caixa de diálogo são pré-carregados com os atributos da mensagem selecionada no momento.

@@ -1,5 +1,5 @@
 ---
-title: Como coletar dados do contador de CPU | Microsoft Docs
+title: Coletar dados do contador de CPU | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c500316bd53ddce8bf731876e5963e6ef253bb27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851275"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Como coletar dados do contador de CPU
 

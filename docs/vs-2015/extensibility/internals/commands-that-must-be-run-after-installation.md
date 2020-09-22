@@ -11,33 +11,33 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441535"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838662"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que precisam ser executados após a instalação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Se você implantar sua extensão por meio de um arquivo. msi, você deve executar `devenv /setup` como parte de sua instalação para Visual Studio descobrir suas extensões.  
+Se você implantar sua extensão por meio de um arquivo. msi, deverá executar `devenv /setup` como parte da instalação para que o Visual Studio descubra suas extensões.  
   
 > [!NOTE]
-> As informações neste tópico se aplica a Localizando DevEnv com o Visual Studio 2008 e versões anteriores. Para obter informações sobre como descobrir DevEnv com versões posteriores do Visual Studio, consulte [requisitos do sistema detectando](../../extensibility/internals/detecting-system-requirements.md).  
+> As informações neste tópico se aplicam à localização do DevEnv com o Visual Studio 2008 e anterior. Para obter informações sobre como descobrir o DevEnv com versões posteriores do Visual Studio, consulte [detectando requisitos do sistema](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Localizando devenv.exe  
- Você pode localizar cada versão devenv.exe do registro de valores que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gravam instaladores, usando a tabela de RegLocator e a tabela de AppSearch para armazenar os valores do registro como propriedades. Para obter mais informações, consulte [requisitos do sistema detectando](../../extensibility/internals/detecting-system-requirements.md).  
+ Você pode localizar as devenv.exe de cada versão de valores de registro que os [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] instaladores gravam, usando a tabela RegLocator e a tabela AppSearch para armazenar os valores do registro como propriedades. Para obter mais informações, consulte [detectando requisitos do sistema](../../extensibility/internals/detecting-system-requirements.md).  
   
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Linhas da tabela RegLocator localizar devenv.exe de diferentes versões do Visual Studio  
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator linhas da tabela para localizar devenv.exe de diferentes versões do Visual Studio  
   
-|Signature_|Raiz|Chave|Nome|Tipo|  
+|Signature_|Root|Chave|Nome|Tipo|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|  
   
-### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Linhas da tabela AppSearch para linhas correspondentes da tabela RegLocator  
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>Linhas da tabela AppSearch para linhas da tabela RegLocator correspondentes  
   
 |Propriedade|Signature_|  
 |--------------|-----------------|  
@@ -46,32 +46,32 @@ Se você implantar sua extensão por meio de um arquivo. msi, você deve executa
 |DEVENV_EXE_2005|RL_DevenvExe_2005|  
 |DEVENV_EXE_2008|RL_DevenvExe_2008|  
   
- Por exemplo, o instalador do Visual Studio grava o valor do registro do **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** como **C:\VS2008\Common7\IDE\devenv.exe**, um caminho completo para o executável que o instalador deve ser executado.  
+ Por exemplo, o instalador do Visual Studio grava o valor do registro de **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** como **C:\VS2008\Common7\IDE\devenv.exe**, um caminho completo para o executável que o instalador deve executar.  
   
- **Observação** porque a coluna de tipo RegLocator for 2, não é necessário especificar informações adicionais de versão na tabela de assinatura.  
+ **Observação** Como a coluna de tipo RegLocator é 2, não é necessário especificar informações de versão adicionais na tabela de assinatura.  
   
 ## <a name="running-devenvexe"></a>Executando devenv.exe  
- Após o AppSearch ação padrão é executada no instalador, cada propriedade na tabela AppSearch tem um valor que apontam para o arquivo devenv.exe para a versão correspondente do Visual Studio. Se qualquer um dos valores do Registro especificada não estão presentes — porque essa versão do Visual Studio não está instalado, a propriedade especificada está definida como null.  
+ Depois que a ação AppSearch padrão for executada no instalador, cada propriedade na tabela AppSearch terá um valor que aponta para o arquivo de devenv.exe para a versão correspondente do Visual Studio. Se qualquer um dos valores de registro especificados não estiver presente — porque essa versão do Visual Studio não está instalada — a propriedade especificada será definida como NULL.  
   
- Windows Installer o dá suporte à execução de um executável para o qual aponta uma propriedade por meio da ação personalizada digite 50. A ação personalizada deve incluir as opções de execução no script, msidbCustomActionTypeInScript (1024) e msidbCustomActionTypeCommit (512), para garantir que o VSPackage foi instalado com êxito antes da integração-o na [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte a tabela CustomAction e opções de execução de no Script de ação personalizada.  
+ O Windows Installer dá suporte à execução de um executável no qual uma propriedade aponta por meio do tipo de ação personalizada 50. A ação personalizada deve incluir as opções de execução em script, msidbCustomActionTypeInScript (1024) e msidbCustomActionTypeCommit (512), para garantir que o VSPackage tenha sido instalado com êxito antes de integrá-lo ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Para obter mais informações, consulte tabela de CustomAction e opções de execução em script de ação personalizada.  
   
- Ações personalizadas de tipo 50 especificam a propriedade que contém o executável como o valor da coluna de origem e argumentos de linha de comando na coluna de destino.  
+ Ações personalizadas do tipo 50 especificam a propriedade que contém o executável como o valor da coluna de origem e os argumentos de linha de comando na coluna de destino.  
   
-### <a name="customaction-table-rows-to-run-devenvexe"></a>Linhas da tabela CustomAction executar devenv.exe  
+### <a name="customaction-table-rows-to-run-devenvexe"></a>Linhas da tabela CustomAction a serem executadas devenv.exe  
   
-|Ação|Tipo|Source|Destino|  
+|Ação|Tipo|Fonte|Destino|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
 |CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
 |CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
- Ações personalizadas devem ser criadas na tabela InstallExecuteSequence agendá-los para execução durante a instalação. Use a propriedade correspondente em cada linha da coluna da condição para impedir que a ação personalizada de ser executado se essa versão do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não está instalado no sistema.  
+ As ações personalizadas devem ser criadas na tabela InstallExecuteSequence para agendá-las para execução durante a instalação. Use a propriedade correspondente em cada linha da coluna condição para impedir que a ação personalizada seja executada se essa versão do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não estiver instalada no sistema.  
   
 > [!NOTE]
-> `Null` propriedades são avaliadas como `False` quando usado em condições.  
+> `Null` as propriedades são avaliadas como `False` quando usadas em condições.  
   
- O valor da coluna de sequência para cada ação personalizada depende de outros valores de sequência em seu pacote do Windows Installer. Valores de sequência devem ser, de modo que as ações personalizadas de devenv.exe executar como próximo possível imediatamente antes da ação padrão de InstallFinalize.  
+ O valor da coluna de sequência para cada ação personalizada depende de outros valores de sequência em seu pacote de Windows Installer. Os valores de sequência devem ser de modo que o devenv.exe ações personalizadas sejam executadas o mais próximo possível imediatamente antes da ação InstallFinalize padrão.  
   
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabela InstallExecuteSequence para agendar as ações personalizadas de devenv.exe  
   
@@ -82,5 +82,5 @@ Se você implantar sua extensão por meio de um arquivo. msi, você deve executa
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## <a name="see-also"></a>Consulte também  
- [Instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>Consulte Também  
+ [Instalando VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

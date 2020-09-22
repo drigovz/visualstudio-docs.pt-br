@@ -1,18 +1,18 @@
 ---
 title: Emails pessoais exibidos no VLSC
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/10/2020
+ms.date: 09/17/2020
 ms.topic: conceptual
 description: 'As assinaturas do Visual Studio: por que estou vendo endereços do Hotmail ou do Gmail para os assinantes?'
-ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223678"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810491"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Assinaturas do Visual Studio – por que vejo contas pessoais para meus assinantes?
 Depois que as empresas migraram do VLSC (Volume Licensing Service Center) para o novo [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio, os administradores ficaram surpresos em descobrir que o "endereço de email de entrada" para alguns assinantes mostra um endereço de email pessoal como o hotmail ou o Outlook.  
@@ -34,17 +34,17 @@ Durante o processo de ativação do assinante: uma Conta da Microsoft (MSA) foi 
 Para corrigir o problema, basta selecionar o botão **conectar emails** e o sistema tentará corresponder as contas com MSAS aos usuários existentes no Azure Active Directory da sua organização (AD do Azure) com base na correspondência do nome e sobrenome. Se houver um erro, você poderá remover qualquer correspondência clicando no **X** à direita da correspondência.  
 
 > [!div class="mx-imgBorder"]
-> ![Botão conectar emails](_img/connect-emails/connect-emails-button.png)
+> ![Botão conectar emails](_img/connect-emails/connect-emails-button.png "Clique em conectar emails para corresponder aos usuários com contas da Microsoft ao seu Azure Active Directory")
 
 Você também pode usar o **diretório de pesquisa** para corrigir os erros ou preencher as informações ausentes do seu Azure AD. Se todas as correspondências estiverem corretas, você poderá optar por "selecionar todos os assinantes correspondentes", em vez de selecioná-los um de cada vez.  
 
 > [!div class="mx-imgBorder"]
-> ![Sair do Connect de emails](_img/connect-emails/connect-emails-flyout.png)
+> ![Sair do Connect de emails](_img/connect-emails/connect-emails-flyout.png "Selecione os assinantes que você deseja corresponder às suas identidades do Azure AD e clique em continuar.")
 
-Em seguida, clique em "continuar", que levará você para uma tela que descreve as alterações a serem realizadas. Se você concordar, clique em "salvar" e as alterações serão feitas. Seu assinante também receberá uma mensagem informando a alteração na próxima vez que entrar em sua assinatura.   
+Em seguida, clique em "continuar", que o levará para uma lista das alterações a serem realizadas. Se você concordar, clique em "salvar" e as alterações serão feitas. Seu assinante também receberá uma mensagem informando a alteração na próxima vez que entrar em sua assinatura.   
 
 > [!div class="mx-imgBorder"]
-> ![Confirmação de conexão de emails](_img/connect-emails/connect-emails-confirm.png) 
+> ![Confirmação de conexão de emails](_img/connect-emails/connect-emails-confirm.png "Clique em continuar para implementar as alterações propostas e, em seguida, clique em salvar.") 
 
 > [!NOTE]
 > Quando você edita o endereço de email de entrada, isso atualiza apenas o email usado pelo assinante para entrar em sua assinatura no https://my.visualstudio.com . Se o Assinante já tiver ativado os benefícios como o Azure ou o Pluralsight usando o outro endereço de email, eles precisarão continuar a usar esses endereços de email para acessá-los. Para quaisquer benefícios novos que eles acessam, eles devem usar o novo endereço de email. 

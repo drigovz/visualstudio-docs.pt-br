@@ -1,5 +1,5 @@
 ---
-title: Erro-o serviço de Depurador Remoto do Visual Studio no computador de destino não pode se conectar de volta a este computador
+title: O serviço do Depurador Remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536663"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851067"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador
 Esse erro significa que o serviço de depurador remoto está sendo executado sob uma conta de usuário que não pode se autenticar quando tenta se conectar ao computador do qual você está depurando. Esse erro pode ocorrer quando a depuração remota está usando o mecanismo de depuração herdado e o depurador remoto está sendo executado como um serviço.

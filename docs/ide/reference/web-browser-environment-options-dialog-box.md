@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596496"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808672"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo opções: \> navegador da Web do ambiente
 
@@ -52,7 +52,7 @@ Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte**
 
 - **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor de HTML** Selecione para exibir a origem no [Designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
+- **Editor de HTML** Selecione para exibir a origem no [Designer de HTML](/previous-versions/ex0hkwbx(v=vs.140)). Use essa seleção para editar a página da Web em uma das duas exibições: modo de exibição de Design ou a exibição de Fonte padrão baseada em texto.
 
 - **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 
@@ -66,4 +66,4 @@ Clique para alterar as opções do Internet Explorer na caixa de diálogo **Prop
 ## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
-- [Designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Designer de HTML](/previous-versions/ex0hkwbx(v=vs.140))

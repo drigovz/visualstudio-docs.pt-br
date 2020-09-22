@@ -1,5 +1,5 @@
 ---
-title: 'Como: Fazer referência a informações de símbolo do Windows | Microsoft Docs'
+title: Como fazer referência a informações de símbolo do Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443447"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838634"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Como: Informações de símbolo do Windows de referência
+# <a name="how-to-reference-windows-symbol-information"></a>Como fazer referência a informações de símbolo do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo (.pdb) para resolver nomes simbólicos como nomes de função em binários de programa. Siga estas etapas para baixar automaticamente e atualizar os arquivos .pdb corretos para a versão do Windows no computador local.  
@@ -29,13 +29,13 @@ As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo
 > [!NOTE]
 > Essa configuração não afeta os relatórios existentes. Somente os relatórios criados após especificar o servidor de símbolo terão as informações de símbolo.  
   
- Para obter mais informações, consulte [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Para obter mais informações, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Para usar o servidor de símbolos da Microsoft  
   
 1. Crie uma pasta para conter as informações de arquivo de símbolo, como C:\SymbolCache.  
   
-2. No menu **Ferramentas**, clique em **Opções**.  
+2. No menu **Ferramentas** , clique em **Opções**.  
   
      A caixa de diálogo **Opções** é exibida.  
   
@@ -47,8 +47,8 @@ As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo
   
      **C:\SymbolCache**  
   
-     Você também pode clicar no botão de reticências (**...** ) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.  
+     Você também pode clicar no botão de reticências (**... **) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Como: Serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)
+ [Como serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)

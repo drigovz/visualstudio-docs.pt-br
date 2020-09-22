@@ -1,5 +1,5 @@
 ---
-title: Como criar um manifesto de pacote | Microsoft Docs
+title: Criar um manifesto de pacote | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382517"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851704"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
 Para implantar os pré-requisitos para seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um único arquivo de manifesto de produto, mas um manifesto de pacote para cada localidade. A funcionalidade compartilhada entre diferentes versões localizadas deve entrar no manifesto do produto.

@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433550"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838723"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 > [!NOTE]
 > Embora instruções de importação condicional funcionam na linha de comando MSBuilds, elas não funcionam com o MSBuild no ambiente de desenvolvimento integrado (IDE) do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Importações condicionais são avaliadas usando os valores de configuração e plataforma que são definidos quando o projeto é carregado. Se forem feitas alterações subsequentes que exigem uma reavaliação das condições no arquivo de projeto, por exemplo, alterando a plataforma, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] reavalia as condições em itens e propriedades, mas não em importações. Como a condicional de importação não é reavaliada, a importação é ignorada.  
 >   
-> Para solucionar esse problema, coloque importações condicionais nos arquivos .targets ou coloque o código em um bloco condicional, como um bloco [Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md).  
+> Para contornar isso, coloque as importações condicionais nos arquivos. targets ou coloque o código em um bloco condicional, como um bloco de [elemento de escolha (MSBuild)](../msbuild/choose-element-msbuild.md) .  
   
 ## <a name="wildcards"></a>Curingas  
  No .NET Framework 4, o MSBuild permite caracteres curinga no atributo Projeto. Quando houver caracteres curinga, todas as correspondências encontradas são classificadas (para capacidade de reprodução) e, em seguida, elas são importadas na ordem como se a ordem tivesse sido definida explicitamente.  
@@ -114,6 +114,6 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Como: usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
