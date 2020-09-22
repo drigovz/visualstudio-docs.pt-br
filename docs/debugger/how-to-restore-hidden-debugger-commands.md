@@ -62,7 +62,7 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
 
 4. Na página **Escolha uma coleção de configurações a importar**, na pasta **Configurações padrão**, escolha uma coleção de configurações de desenvolvimento que tenha os comandos que você deseja usar. Se você não souber qual coleção escolher, experimente **Configurações de desenvolvimento gerais** ou **Configurações de desenvolvimento do Visual C++**, que fornecem a maioria dos comandos do depurador.
 
-5. Clique em **Avançar**.
+5. Clique em **Próximo**.
 
 6. Na página **Escolha as configurações a importar**, em **Opções**, verifique se **Depurando** está selecionado. Desmarque as outras caixas de seleção, a menos que você também queira importar essas configurações.
 
