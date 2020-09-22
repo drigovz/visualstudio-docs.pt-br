@@ -1,5 +1,5 @@
 ---
-title: Desenvolver um serviço de linguagem herdado | Microsoft Docs
+title: Desenvolvendo um serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -17,53 +17,53 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440109"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838473"
 ---
 # <a name="developing-a-legacy-language-service"></a>Desenvolvendo um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Links essas seção para tópicos que ajudam você a criar um serviço de linguagem herdada.  
+Esta seção contém links para tópicos que ajudam a criar um serviço de idioma herdado.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar um serviço de linguagem, consulte [extensões de serviço de editor e linguagem](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Modelar um serviço de linguagem herdado](../../extensibility/internals/model-of-a-legacy-language-service.md)  
- Fornece um modelo de um serviço de linguagem mínima para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. Você pode usar esse modelo como um guia para criar seu próprio serviço de linguagem.  
+ [Modelo de um serviço de linguagem herdado](../../extensibility/internals/model-of-a-legacy-language-service.md)  
+ Fornece um modelo de um serviço de linguagem mínimo para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor principal. Você pode usar esse modelo como um guia para criar seu próprio serviço de linguagem.  
   
- [Interfaces do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-interfaces.md)  
- Discute os objetos necessários para implementar um serviço de linguagem e fornece uma lista de objetos adicionais que você pode usar para fornecer realce de sintaxe, os dados de método e outros recursos.  
+ [Interfaces de serviço de linguagem herdada](../../extensibility/internals/legacy-language-service-interfaces.md)  
+ Discute os objetos necessários para implementar um serviço de linguagem e fornece uma lista de objetos adicionais que você pode usar para fornecer realce de sintaxe, dados de método e outros recursos.  
   
- [Interceptar comandos do serviço de linguagem herdado](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
- Descreve como inserir um filtro de comando em seu serviço de linguagem para comandos de interceptação que trataria a exibição de texto.  
+ [Interceptando comandos do serviço de linguagem herdado](../../extensibility/internals/intercepting-legacy-language-service-commands.md)  
+ Descreve como inserir um filtro de comando em seu serviço de linguagem para interceptar comandos que o modo de exibição de texto trataria de outra forma.  
   
  [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service2.md)  
- Fornece informações sobre como registrar seu serviço de linguagem usando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ Fornece informações sobre como registrar seu serviço de idioma usando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
  [Suporte do serviço de linguagem para depuração](../../extensibility/internals/language-service-support-for-debugging.md)  
  Descreve como um serviço de linguagem pode fornecer recursos para dar suporte a um depurador.  
   
- [Lista de verificação: criação de um serviço de linguagem herdado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
- Fornece instruções passo a passo para criar e integrar um serviço de linguagem para o editor de núcleo.  
+ [Lista de verificação: Criando um serviço de linguagem herdado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ Fornece instruções passo a passo para criar e integrar um serviço de linguagem para o editor principal.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
  Discute como implementar o realce de sintaxe em seu serviço de linguagem.  
   
  [Preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- Discute o preenchimento de declaração, o processo pelo qual um serviço de linguagem ajuda os usuários a concluir um elemento que eles começaram a digitação ou a palavra-chave language.  
+ Discute a conclusão da instrução, o processo pelo qual um serviço de linguagem ajuda os usuários a concluir uma palavra-chave ou um elemento de idioma que eles começaram a digitar.  
   
  [Informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
- Descreve como fornecer dicas de método para métodos e funções sobrecarregadas.  
+ Descreve como fornecer dicas de método para funções e métodos sobrecarregados.  
   
- [Como: fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
- Explica a finalidade de uma região de texto oculto e fornece instruções sobre como implementar uma região de texto oculto.  
+ [Como fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ Explica a finalidade de uma região de texto oculta e fornece instruções sobre como implementar uma região de texto oculta.  
   
- [Como: fornecer suporte expandido a estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Explica as duas opções que estendem o suporte de estrutura de tópicos para seu idioma além do suporte a *recolher para definições de* comando.
+ [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Explica as duas opções que estendem o suporte de estrutura de tópicos para sua linguagem além de dar suporte ao comando *recolher para definições* .

@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439657"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838316"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Passo a passo: Localizar uma perda de memória (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Instruções passo a passo: localizar uma perda de memória (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
  Este passo a passo o orienta pelo processo de identificar e corrigir um problema simples de memória usando o analisador de memória de JavaScript. O analisador de memória de JavaScript está disponível no Visual Studio para aplicativos da Windows Store criados para o Windows usando JavaScript. Neste cenário, você cria um aplicativo que retém incorretamente elementos DOM na memória, em vez de descartar os elementos na mesma proporção em que eles são criados.  
   
@@ -34,7 +34,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Executando o aplicativo de teste do analisador de memória de JavaScript  
   
-1. No Visual Studio, escolha **Arquivo**, **Novo** e **Projeto**.  
+1. No Visual Studio, escolha **Arquivo**, **Novo**, **Projeto**.  
   
 2. Escolha **JavaScript** no painel esquerdo e escolha **Windows**, **Windows 8** e, em seguida, **aplicativos Universal** ou **Windows Phone**.  
   
@@ -45,7 +45,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 4. Na caixa **Nome**, especifique um nome como `JS_Mem_Tester` e escolha **OK**.  
   
-5. No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
+5. Em **Gerenciador de soluções**, abra default.html e cole o seguinte código entre as \<body> marcas:  
   
     ```html  
     <div class="wrapper">  
@@ -139,7 +139,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
    > [!TIP]
    > Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **depurar** , escolha **criador de perfil de desempenho...**.  
   
 3. Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
   
@@ -168,7 +168,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
     Esta ilustração mostra o instantâneo da linha de base (1) e o Instantâneo 2.  
   
-    ![A linha de base do instantâneo e o instantâneo 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![Instantâneo de linha de base e instantâneo 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
    > O Emulador do Windows Phone não mostra a captura de tela do aplicativo na hora em que o instantâneo é capturado.  
@@ -203,7 +203,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 13. No Instantâneo 3, escolha o texto do link à direita, que mostra um valor de +1 / -0 ao lado da seta vermelha para cima.  
   
-     ![Link para uma exibição diferente de objetos de heap](../profiling/media/js-mem-app-link.png "JS_Mem_App_Link")  
+     ![Vincular a uma exibição diferente de objetos de heap](../profiling/media/js-mem-app-link.png "JS_Mem_App_Link")  
   
      Isso abre uma exibição diferencial dos objetos no heap, denominada **Instantâneo 3 – Instantâneo 2**, com a exibição Tipos sendo mostrada por padrão. Por padrão, você verá uma lista de objetos adicionados ao heap entre Instantâneo 2 e Instantâneo 3.  
   
@@ -211,7 +211,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 15. Abra o objeto HTMLDivElement na parte superior da árvore de objetos como é mostrado aqui.  
   
-     ![Exibição diferente da contagem de objetos no heap](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Exibição de comparação da contagem de objetos no heap](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Essa exibição mostra informações úteis sobre o vazamento de memória, como as seguintes:  
   
@@ -219,12 +219,12 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
     - Esse objeto é uma sobra do objeto de Instantâneo 2 e representa um vazamento de memória em potencial.  
   
-      Algum conhecimento dos aplicativos ajuda neste ponto: Escolhendo a **vazamento de memória** botão deve remover um elemento DIV e adicionar um elemento, portanto, o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
+      Algum conhecimento dos aplicativos ajuda neste ponto; a escolha do botão **Provocar perda de memória** deve remover um elemento DIV e adicionar um elemento, portanto o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
   
     > [!TIP]
     > Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
   
-## <a name="FixingMemory"></a> Corrigindo o problema de memória  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> Corrigindo o problema de memória  
   
 1. Usando os dados revelados pelo criador de perfis, você examina o código que é responsável por remover elementos DOM com ID de "item". Isso ocorre na função `initialize()`.  
   
@@ -266,7 +266,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 4. Em **Ferramentas Disponíveis**, escolha **Memória JavaScript** e, em seguida, **Iniciar**.  
   
-5. Siga o mesmo procedimento anterior para obter três instantâneos. As etapas são resumidas aqui:  
+5. Siga o mesmo procedimento anterior para obter três instantâneos. As etapas estão resumidas aqui:  
   
    1. No aplicativo, escolha o botão **Provocar perda de memória** quatro vezes consecutivas.  
   
@@ -284,7 +284,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
       A ilustração a seguir mostra o Instantâneo 2 e o Instantâneo 3.  
   
-      ![Instantâneos mostrando a perda de memória fixa](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Instantâneos mostrando o vazamento de memória fixa](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Memória JavaScript](../profiling/javascript-memory.md)

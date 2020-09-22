@@ -1,5 +1,5 @@
 ---
-title: Erro-o processo de destino saiu com &apos; código &apos; de código ao avaliar a &apos; função function &apos; | Microsoft Docs
+title: O processo de destino saiu com &apos; código &apos; de código ao avaliar a &apos; função function &apos; | Microsoft Docs
 ms.date: 4/06/2018
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94effc8a5f75e7b38fb7275d175eb324c479a7a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711632"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852726"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Erro: o processo de destino saiu com o código &#39;código&#39; ao avaliar a função &#39;function&#39;
 

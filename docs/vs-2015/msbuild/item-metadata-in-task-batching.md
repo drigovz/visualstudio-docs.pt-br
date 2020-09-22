@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436802"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838657"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de itens na separação de tarefas em lotes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436802"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>Envio em lote, um item por vez  
- O envio em lote também pode ser executado nos metadados de itens conhecidos que são atribuídos a cada item no momento da criação. Isso assegura que cada item em uma coleção tenha alguns metadados para usar para o envio em lote. O valor de metadados `Identity` é exclusivo para cada item e é útil para dividir cada item em uma lista de itens em um lote separado. Para obter uma lista completa dos metadados de itens conhecidos, consulte [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
+ O envio em lote também pode ser executado nos metadados de itens conhecidos que são atribuídos a cada item no momento da criação. Isso assegura que cada item em uma coleção tenha alguns metadados para usar para o envio em lote. O valor de metadados `Identity` é exclusivo para cada item e é útil para dividir cada item em uma lista de itens em um lote separado. Para obter uma lista completa de metadados de itens bem conhecidos, consulte [metadados de item conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
   
  O exemplo a seguir mostra como enviar em lote cada item em uma lista de itens, um por vez. Já que o valor `Identity` dos metadados de cada item é exclusivo, a lista de itens `ExampColl` é dividida em seis lotes, cada lote contendo um item da lista de itens. A presença de `%(Identity)` no atributo `Text` notifica o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de que o envio em lote deve ser realizado.  
   
@@ -220,9 +220,9 @@ Identity: "Item6" -- Items in ExampColl: Item6
 Items in ExampColl: Item2;Item5  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md)   
- [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Metadados de item conhecido](../msbuild/msbuild-well-known-item-metadata.md)   
+ [Elemento item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Envio em lote](../msbuild/msbuild-batching.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   

@@ -1,5 +1,5 @@
 ---
-title: Como exibir propriedades de thread | Microsoft Docs
+title: Exibir Propriedades do thread | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3f98b5a47c6d950f2d95e732e05e5734c783b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc57df5258675be42473c502a8d31d1a73e8c00
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349868"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852303"
 ---
 # <a name="how-to-display-thread-properties"></a>Como exibir Propriedades do Thread
 Para saber mais sobre um thread listado na [exibição threads](../debugger/threads-view.md), use a [caixa de diálogo Propriedades do thread](../debugger/thread-properties-dialog-box.md).

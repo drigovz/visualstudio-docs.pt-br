@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589377"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808685"
 ---
 # <a name="symbol-path-command"></a>Comando demarcador do Símbolo
 Define a lista de diretórios para o depurador pesquisar símbolos.
@@ -38,14 +38,14 @@ Opcional. Uma lista de caminhos delimitada por ponto-e-vírgula para que o depur
 ## <a name="remarks"></a>Comentários
 Se nenhum `pathname` for especificado, o comando listará os caminhos de símbolo atual.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 Este exemplo adiciona dois caminhos à lista de diretórios de símbolo.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 Este exemplo exibe uma lista delimitada por ponto-e-vírgula dos caminhos de símbolo atuais.
 
 ```

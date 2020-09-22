@@ -1,5 +1,5 @@
 ---
-title: Erro-a avaliação da &apos; função de função &apos; atingiu o tempo limite e precisava ser anulada de forma não segura | Microsoft Docs
+title: A avaliação da &apos; função de função &apos; atingiu o tempo limite e precisava ser anulada de forma não segura | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1b5860729b55f1c4ede253cd0f881e0ab56fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706549"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852739"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Erro: avaliar a função &#39;função&#39; atingiu o tempo limite e precisava ser anulado de forma não segura
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir um local de arquivo de Log personalizado para erros de implantação do ClickOnce | Microsoft Docs'
+title: 'Como: definir um local de arquivo de log personalizado para erros de implantação do ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,24 +18,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403543"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838393"
 ---
-# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Como: Definir um local de arquivo de log personalizado para erros de implantação do ClickOnce
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Como definir o local de um arquivo de log personalizado para erros de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mantém os arquivos de log de ativação para todas as implantações. Esses logs documente todos os erros relacionados à instalação e inicializando uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Por padrão, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cria um arquivo de log para cada ativação de implantação. Ele armazena esses arquivos de log na pasta Temporary Internet Files. O arquivo de log para uma implantação é exibido ao usuário quando ocorrer uma falha de ativação, e o usuário clica **detalhes** na caixa de diálogo de erro resultante.  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mantém arquivos de log de ativação para todas as implantações. Esses logs documentam os erros que pertencem à instalação e inicialização de uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Por padrão, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cria um arquivo de log para cada ativação de implantação. Ele armazena esses arquivos de log na pasta Temporary Internet Files. O arquivo de log para uma implantação é exibido para o usuário quando ocorre uma falha de ativação e o usuário clica em **detalhes** na caixa de diálogo de erro resultante.  
   
- Você pode alterar esse comportamento para um cliente específico usando o Editor do registro (**regedit.exe**) para definir um caminho de arquivo de log personalizado. Nesse caso, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] registra êxitos de ativação e falhas para todas as implantações em um único arquivo.  
+ Você pode alterar esse comportamento para um cliente específico usando o editor do registro (**regedit.exe**) para definir um caminho de arquivo de log personalizado. Nesse caso, o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] registra os êxitos e as falhas de ativação de todas as implantações em um único arquivo.  
   
 > [!CAUTION]
-> Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
+> Se o Editor do Registro for usado incorretamente, você pode causar sérios problemas que podem exigir que você reinstale o sistema operacional. Use o Editor do Registro por sua conta e risco.  
   
 > [!NOTE]
-> Você precisará Trunque ou exclua o arquivo de log, ocasionalmente, para impedir que ele fique muito grande.  
+> Você precisará truncar ou excluir o arquivo de log ocasionalmente para impedir que ele fique muito grande.  
   
  O procedimento a seguir descreve como definir um local de arquivo de log personalizado para um único cliente.  
   
@@ -43,11 +43,11 @@ ms.locfileid: "63403543"
   
 1. Abra **Regedit.exe**.  
   
-2. Navegue até o nó `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Navegue até o nó `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment` .  
   
-3. Defina o valor de cadeia de caracteres `LogFilePath` para o caminho completo e nome de arquivo do seu local preferido de log personalizado.  
+3. Defina o valor da cadeia de caracteres `LogFilePath` para o caminho completo e o nome do arquivo de seu local de log personalizado preferencial.  
   
-     Esse local deve estar em um diretório ao qual o usuário tem acesso de gravação. Por exemplo, no Windows Vista, crie a seguinte estrutura de pasta e defina `LogFilePath` até C:\Users\\< nome de usuário\>\Documents\Logs\ClickOnce\installation.log.  
+     Esse local deve estar em um diretório ao qual o usuário tenha acesso de gravação. Por exemplo, no Windows Vista, crie a seguinte estrutura de pastas e defina `LogFilePath` como C:\Users \\<nome de usuário \> \Documents\Logs\ClickOnce\installation.log.  
   
-## <a name="see-also"></a>Consulte também  
- [Solução de problemas de implantações ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+## <a name="see-also"></a>Consulte Também  
+ [Solução de problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

@@ -1,5 +1,5 @@
 ---
-title: Erro-falha na autenticação Kerberos | Microsoft Docs
+title: Falha na autenticação Kerberos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852687"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Erro: falha na autenticação Kerberos
 Ao tentar fazer a depuração remota, você poderá receber a seguinte mensagem de erro:

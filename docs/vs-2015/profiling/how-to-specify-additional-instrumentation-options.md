@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar opções de instrumentação adicionais | Microsoft Docs'
+title: Como especificar opções de instrumentação adicionais | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d4bc6eeb208ab6d80168431f110f0f6169abbc82
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442144"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838383"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Como: Especificar opções de instrumentação adicionais
+# <a name="how-to-specify-additional-instrumentation-options"></a>Como especificar opções de instrumentação adicionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode instrumentar binários do IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ou usando as ferramentas de linha de comando. Se você instrumentar um binário do IDE, será possível controlar o volume de dados coletados durante a instrumentação, especificando opções de instrumentação adicionais para a ferramenta [VSInstr](../profiling/vsinstr.md). Essas opções estão disponíveis no nível de sessão ou de destino. Por exemplo, para incluir ou excluir funções específicas durante o processo de instrumentação, use a opção adicional de instrumentação no nível de destino.  
@@ -46,6 +46,6 @@ Você pode instrumentar binários do IDE (ambiente de desenvolvimento integrado)
   
 4. Clique em **OK**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

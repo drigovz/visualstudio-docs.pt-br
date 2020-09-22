@@ -1,5 +1,5 @@
 ---
-title: Como configurar o comportamento do prompt de confiança do ClickOnce | Microsoft Docs
+title: Configurar o comportamento do prompt de confiança do ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382543"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852225"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como configurar o comportamento do prompt confiável do ClickOnce
 Você pode configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalar aplicativos ClickOnce, como Windows Forms aplicativos, Windows Presentation Foundation aplicativos, aplicativos de console, aplicativos de navegador WPF e soluções do Office. Configure o prompt de confiança definindo chaves do registro no computador de cada usuário final.

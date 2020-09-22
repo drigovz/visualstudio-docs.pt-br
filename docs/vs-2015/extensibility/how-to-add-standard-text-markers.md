@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar marcadores de texto padrão | Microsoft Docs'
+title: Como adicionar marcadores de texto padrão | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436016"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838278"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Como: Adicionar marcadores de texto padrão
+# <a name="how-to-add-standard-text-markers"></a>Como adicionar marcadores de texto padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão fornecidos com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.  
+Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão fornecidos com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editor de núcleo.  
   
 ### <a name="to-create-a-text-marker"></a>Para criar um marcador de texto  
   
-1. Dependendo se você estiver usando uma ou duas - sistema de coordenadas tridimensional, chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para criar um marcador de texto novo.  
+1. Dependendo se você estiver usando um sistema de coordenadas de um ou dois dimensional, chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para criar um novo marcador de texto.  
   
-     Nessa chamada de método, especifique um tipo de marcador, um intervalo de texto para criar o marcador de failover e um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Esse método, em seguida, retorna um ponteiro para o marcador de texto criado recentemente. Tipos de marcador são tirados o <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumeração. Especifique um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface se você quiser ser informado sobre eventos de marcador.  
+     Nessa chamada de método, especifique um tipo de marcador, um intervalo de texto para o qual criar o marcador e uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Esse método retorna um ponteiro para o marcador de texto recém-criado. Os tipos de marcador são extraídos da <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumeração. Especifique uma <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface se desejar ser informado de eventos de marcador.  
   
     > [!NOTE]
-    > Crie marcadores de texto no thread da interface do usuário principal somente. O editor de núcleo depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.  
+    > Crie marcadores de texto somente no thread da interface do usuário principal. O editor principal depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.  
   
 ## <a name="adding-a-custom-command"></a>Adicionando um comando personalizado  
- Implementando o `IVsTextMarkerClient` aprimora a interface e fornecer um ponteiro para ele de um marcador de comportamento de marcador de várias maneiras. Em primeiro lugar, isso permite que você forneça dicas para o marcador e executar comandos. Isso também permite que você deseja receber notificações de evento de marcadores individuais e para criar um menu de contexto sobre o marcador. Use o procedimento a seguir para adicionar um comando personalizado para o menu de contexto do marcador.  
+ A implementação da `IVsTextMarkerClient` interface e o fornecimento de um ponteiro para ela de um marcador aprimora o comportamento do marcador de várias maneiras. Primeiro, isso permite que você forneça dicas para o marcador e execute comandos. Isso também permite que você receba notificações de eventos para marcadores individuais e crie um menu de contexto personalizado sobre o marcador. Use o procedimento a seguir para adicionar um comando personalizado ao menu de contexto do marcador.  
   
 #### <a name="to-add-a-custom-command-to-the-context-menu"></a>Para adicionar um comando personalizado ao menu de contexto  
   
-1. Antes do menu de contexto é exibido, o ambiente chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> método e passa a você um ponteiro para o marcador de texto afetado e o número do item de comando no menu de contexto.  
+1. Antes de o menu de contexto ser exibido, o ambiente chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> método e passa um ponteiro para o marcador de texto afetado e o número do item de comando no menu de contexto.  
   
-     Por exemplo, os comandos de ponto de interrupção específico no menu de contexto incluem **remover o ponto de interrupção** por meio **novo ponto de interrupção**, conforme mostrado na seguinte captura de tela.  
+     Por exemplo, os comandos específicos de ponto de interrupção no menu de contexto incluem **remover o ponto** de interrupção por meio do **novo ponto de interrupção**, conforme exibido na captura de tela a seguir.  
   
-     ![Menu de contexto de marcador](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
+     ![Menu de contexto do marcador](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2. Devolver um texto que identifica o nome do comando personalizado. Por exemplo, **remover o ponto de interrupção** pode ser um comando personalizado se o ambiente não já forneceu-lo. Você também passa novamente se o comando está com suporte, disponível e habilitado, e/ou uma alternância de ligado / desligado. O ambiente usa essas informações para exibir o comando personalizado no menu de contexto da forma correta.  
+2. Retorne algum texto identificando o nome do comando personalizado. Por exemplo, **remover ponto de interrupção** pode ser um comando personalizado se o ambiente ainda não o forneceu. Você também retorna se o comando tem suporte, está disponível e habilitado e/ou uma alternância de desligamento. O ambiente usa essas informações para exibir o comando personalizado no menu de contexto da maneira correta.  
   
-3. Para executar o comando, o ambiente chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método, passando um ponteiro para o marcador de texto e o número do comando selecionado do menu de contexto.  
+3. Para executar o comando, o ambiente chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> método, passando um ponteiro para o marcador de texto e o número do comando selecionado no menu de contexto.  
   
-     Use essas informações desta chamada para executar qualquer ação que o marcador de texto determina de seu comando personalizado.  
+     Use essas informações desta chamada para executar quaisquer ações do marcador de texto que o comando personalizado determinar.  
   
-## <a name="see-also"></a>Consulte também  
- [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
- [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>Consulte Também  
+ [Usando marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Como: implementar marcadores de erro](../extensibility/how-to-implement-error-markers.md)   
+ [Como criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)   
+ [Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

@@ -1,5 +1,5 @@
 ---
-title: Erro-a execução do Transact-SQL foi encerrada sem depuração | Microsoft Docs
+title: A execução do Transact-SQL foi finalizada sem depuração | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 66a1f60673d1bdfb58b1a101bd1571637c41f556
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851522"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: execução de Transact-SQL encerrada sem depuração
 

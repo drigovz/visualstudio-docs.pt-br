@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426034"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838378"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63426034"
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] as utiliza na criação de projetos com mais eficiência.  
   
 ## <a name="transform-modifiers"></a>Modificadores de transformação  
- As transformações não são arbitrárias, mas são limitadas pela sintaxe especial na qual todos os modificadores de transformação devem estar no formato %(*ItemMetaDataName*). Quaisquer metadados de item podem ser usados como um modificador de transformação. Isso inclui os metadados de item bem conhecidos atribuídos a cada item criado. Para obter uma lista de metadados de item conhecidos, veja [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md).  
+ As transformações não são arbitrárias, mas são limitadas por sintaxe especial em que todos os modificadores de transformação devem estar no formato%(do tipo de*metadados*. Quaisquer metadados de item podem ser usados como um modificador de transformação. Isso inclui os metadados de item bem conhecidos atribuídos a cada item criado. Para obter uma lista de metadados de item conhecidos, consulte [metadados de item conhecido](../msbuild/msbuild-well-known-item-metadata.md).  
   
  No exemplo a seguir, uma lista de arquivos .resx é transformada em uma lista de arquivos .resources. O modificador de transformação %(filename) especifica que cada arquivo .resources tem o mesmo nome de arquivo do que o arquivo .resx correspondente.  
   
@@ -54,7 +54,7 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 ## <a name="dependency-analysis"></a>Análise de dependência  
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino cria saídas que são transformações das entradas, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode analisar os carimbos de hora das entradas e saídas e decida se deseja ignorar, compilar ou recompilar parcialmente um destino.  
   
- No [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos a `BuiltAssemblies` lista de itens é mapeado para um arquivo na pasta de destino da tarefa especificada com uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
+ Na [tarefa de cópia](../msbuild/copy-task.md) no exemplo a seguir, cada arquivo na lista de `BuiltAssemblies` itens é mapeado para um arquivo na pasta de destino da tarefa, especificada usando uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre como usar transformações e análise de dependência, veja [como: compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -108,7 +108,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Como: compilar de forma incremental](../msbuild/how-to-build-incrementally.md)
+ [Como: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)

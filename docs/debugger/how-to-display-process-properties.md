@@ -1,5 +1,5 @@
 ---
-title: Como exibir propriedades do processo | Microsoft Docs
+title: Exibir Propriedades do processo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e36baf8d44aab6904362e25ba4706fc7fb1417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dee3bf419470a41ce31b1f1a1ea9164acdbe5bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349828"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852329"
 ---
 # <a name="how-to-display-process-properties"></a>Como exibir Propriedades do Processo
 Para saber mais sobre um processo listado na [exibição de processos](../debugger/processes-view.md), use a [caixa de diálogo Propriedades do processo](../debugger/process-properties-dialog-box.md).

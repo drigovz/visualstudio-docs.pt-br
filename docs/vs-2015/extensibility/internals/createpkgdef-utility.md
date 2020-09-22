@@ -14,19 +14,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441486"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838299"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um arquivo. pkgdef para acompanhar o arquivo. dll. O arquivo. pkgdef contém todas as informações que, caso contrário, seriam gravadas no registro do sistema quando a extensão está instalada.  
+Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um arquivo. pkgdef para acompanhar o. dll. O arquivo. pkgdef contém todas as informações que, de outra forma, seriam gravadas no registro do sistema quando a extensão é instalada.  
   
 > [!NOTE]
-> A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria arquivos. pkgdef como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar a implantação. pkgdef.  
+> A maioria dos modelos de projeto incluídos no SDK do Visual Studio criam automaticamente arquivos. pkgdef como parte do processo de compilação. Este documento destina-se a aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar a implantação do. pkgdef.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,26 +34,26 @@ Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cri
 CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
 ```  
   
-## <a name="arguments"></a>Arguments  
- /out=`FileName`  
- Necessário. Define o nome do arquivo de saída. pkgdef para`FileName`.  
+## <a name="arguments"></a>Argumentos  
+ /out =`FileName`  
+ Necessário. Define o nome do arquivo de saída. pkgdef como `FileName` .  
   
  /codebase  
- Opcional. Registro de forças com o utilitário de base de código.  
+ Opcional. Força o registro com o utilitário CodeBase.  
   
  /assembly  
- Registro de forças com o utilitário de Assembly.  
+ Força o registro com o utilitário assembly.  
   
  `AssemblyPath`  
  O caminho do arquivo. dll do qual você deseja gerar o. pkgdef.  
   
 ## <a name="remarks"></a>Comentários  
- Implantação de extensão por meio de arquivos. pkgdef substituirá os requisitos de registro de versões anteriores do Visual Studio.  
+ A implantação de extensão usando arquivos. pkgdef substitui os requisitos de registro de versões anteriores do Visual Studio.  
   
- Os arquivos. pkgdef devem ser instalados em um dos seguintes locais: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ ou %vsinstalldir%\Common7\IDE\Extensions\\. Se a pasta de instalação é %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, a extensão será reconhecida pelo Visual Studio, mas será desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**. Se a pasta de instalação é %vsinstalldir%\Common7\IDE\Extensions\\, a extensão está habilitada por padrão.  
+ Os arquivos. pkgdef devem ser instalados em um dos seguintes locais:%localappdata%\Microsoft\Visual Studio\14.0\Extensions\ ou%vsinstalldir%\Common7\IDE\Extensions \\ . Se a pasta de instalação for%localappdata%\Microsoft\Visual Studio\14.0\Extensions \\ , a extensão será reconhecida pelo Visual Studio, mas será desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**. Se a pasta de instalação for%vsinstalldir%\Common7\IDE\Extensions \\ , a extensão será habilitada por padrão.  
   
 > [!NOTE]
-> O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.  
+> A ferramenta **extensões e atualizações** não pode ser usada para acessar uma extensão, a menos que ela seja instalada como parte de um pacote VSIX.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

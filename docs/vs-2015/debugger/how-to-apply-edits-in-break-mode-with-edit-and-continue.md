@@ -1,5 +1,5 @@
 ---
-title: 'Como: Aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs'
+title: 'Como: aplicar edições no modo de interrupção com editar e continuar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437355"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838390"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Como: Aplicar edições no modo de interrupção com editar e continuar
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Como aplicar edições no modo de interrupção com editar e continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar Editar e Continuar para editar o código no modo de interrupção e, depois, continuar sem interromper e reiniciar a execução.  
@@ -42,17 +42,17 @@ Você pode usar Editar e Continuar para editar o código no modo de interrupçã
   
 - Depuração de SQL.  
   
-- Depurando um despejo do Dr. Watson.  
+- Depurando um despejo de Dr. Watson.  
   
 - Editando o código após uma exceção sem tratamento quando a opção **Desenrolar a pilha de chamadas em exceções não tratadas** não está selecionada.  
   
-- Depurando um aplicativo inserido de tempo de execução.  
+- Depurando um aplicativo inserido de runtime.  
   
-- Depurando um aplicativo com **anexar** em vez de executar o aplicativo com **iniciar** do **depurar** menu.  
+- Depuração de um aplicativo com **Attach to** em vez de executar o aplicativo com **Start** no menu **debug** .  
   
 - Depurando código otimizado.  
   
-- Depurando código gerenciado quando o destino é um aplicativo de 64 bits. Se você desejar usar Editar e Continuar, deve definir o destino como x86. (_Projeto_**Properties**, **compilar** guia **avançado compilador** configuração.).  
+- Depurando código gerenciado quando o destino é um aplicativo de 64 bits. Se você desejar usar Editar e Continuar, deve definir o destino como x86. (_Project_**Propriedades**do projeto, guia **Compilar** , configuração **avançada do compilador** .).  
   
 - Depurando uma versão antiga do código depois que uma nova versão não é compilada devido a erros de compilação.  
   
@@ -62,17 +62,17 @@ Você pode usar Editar e Continuar para editar o código no modo de interrupçã
   
     - Defina um ponto de interrupção no código e escolha **Iniciar Depuração** no menu **Depurar** e aguarde até que o aplicativo atinja o ponto de interrupção.  
   
-         – ou –  
+         –ou–  
   
     - Inicie a depuração e, em seguida, selecione **Interromper Tudo** no menu **Depurar**.  
   
-         – ou –  
+         –ou–  
   
-    - Quando ocorre uma exceção, escolha **habilitar edição** sobre o**Assistente de exceção**.  
+    - Quando ocorrer uma exceção, escolha **Habilitar edição** no**Assistente de exceção**.  
   
 2. Faça as alterações de código desejadas e legais.  
   
-     Para obter mais informações, consulte [edições sem suporte no Visual Basic Edit and Continue](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
+     Para obter mais informações, consulte [edições sem suporte no Visual Basic editar e continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     > Se você tentar fazer uma alteração de código que não seja permitida por Editar e Continuar, sua edição será sublinhada por uma linha ondulada roxa e uma tarefa será exibida na Lista de Tarefas. Você não poderá continuar a execução do código a menos que desfaça a alteração de código ilegal.  
@@ -81,6 +81,6 @@ Você pode usar Editar e Continuar para editar o código no modo de interrupçã
   
      O código agora é executado com as edições aplicadas incorporadas ao projeto.  
   
-## <a name="see-also"></a>Consulte também  
- [Edições sem suporte no Visual Basic, editar e continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Edições sem suporte no Visual Basic editar e continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Editar e Continuar (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

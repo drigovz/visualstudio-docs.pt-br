@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_constructor | Microsoft Docs'
+title: 'IDiaSymbol:: get_constructor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 93bc8d67d31103fb340e0417b4a4335b6a37bb63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64780416"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838274"
 ---
-# <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
+# <a name="idiasymbolget_constructor"></a>IDiaSymbol::get_constructor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem um construtor ou destruidor.  
@@ -35,10 +35,10 @@ HRESULT get_constructor ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se o tipo de dados definido pelo usuário tem um construtor ou destruidor; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se o tipo de dados definido pelo usuário tem um construtor ou destruidor; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
@@ -48,7 +48,7 @@ HRESULT get_constructor ( 
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
+|Versão:|DIA SDK v 7.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
