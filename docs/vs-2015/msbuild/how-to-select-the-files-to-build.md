@@ -1,5 +1,5 @@
 ---
-title: 'Como: Selecionar os arquivos para compilar | Microsoft Docs'
+title: Como selecionar os arquivos para compilar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437900"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838273"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
+# <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.  
@@ -172,6 +172,6 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md)   
+## <a name="see-also"></a>Consulte Também  
+ [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Itens](../msbuild/msbuild-items.md)

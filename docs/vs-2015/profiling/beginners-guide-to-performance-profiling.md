@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433814"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839252"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante à criação de perfil do desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
   
  Em intervalos especificados, o método de **Amostragem** coleta informações sobre as funções que estão em execução em seu aplicativo. Depois de concluir uma execução de criação de perfil, a exibição **Resumo** dos dados de criação de perfil mostra a árvore de chamadas de função mais ativa, chamada de **Afunilamento**, em que foi executada a maior parte do trabalho no aplicativo. A exibição também lista as funções que executaram o trabalho mais individual e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.  
   
- Se a **Amostragem** não fornecer os dados que você precisa, outros métodos de coleção das ferramentas de criação de perfil fornecem diferentes tipos de informações que poderão ser úteis. Para obter mais informações sobre esses métodos, confira [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md).  
+ Se a **Amostragem** não fornecer os dados que você precisa, outros métodos de coleção das ferramentas de criação de perfil fornecem diferentes tipos de informações que poderão ser úteis. Para obter mais informações sobre esses outros métodos, consulte [How to: Choose Collection Method](../profiling/how-to-choose-collection-methods.md) (Instruções: escolher métodos de coleta).  
   
 > [!TIP]
-> Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações sobre como verificar se você tem os arquivos necessários, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações de como verificar se você tem os arquivos necessários, consulte [How to: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md) (Instruções: informações sobre símbolos do Windows de referência).  
   
-## <a name="Step1"></a> Criar e executar uma sessão de desempenho  
+## <a name="create-and-run-a-performance-session"></a><a name="Step1"></a> Criar e executar uma sessão de desempenho  
  Para obter os dados que precisa analisar, você deve primeiro criar uma sessão de desempenho e, em seguida, executar a sessão. O **Assistente de Desempenho** permite executar esses dois procedimentos.  
   
  Se não estiver criando perfil de um aplicativo da área de trabalho do Windows ou de um aplicativo ASP.NET, você deverá usar uma das outras ferramentas de criação de perfil. Consulte [Profiling Tools](../profiling/profiling-tools.md) (Ferramentas de criação de perfil).  
@@ -62,22 +62,22 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
   
      Depois de concluir a execução do aplicativo, a exibição **Resumo** dos dados de criação de perfil aparecerá na janela principal do Visual Studio e um ícone para a nova sessão aparecerá na janela **Gerenciador de Desempenho**.  
   
-## <a name="Step2"></a> Etapa 2: Analisar dados de amostragem  
+## <a name="step-2-analyze-sampling-data"></a><a name="Step2"></a> Etapa 2: analisar dados de amostragem  
  Quando você concluir a execução de uma sessão de desempenho, a exibição **Resumo** do relatório de criação de perfil aparecerá na janela principal do Visual Studio.  
   
  Recomendamos que você comece a analisar os dados examinando o **Afunilamento** e, em seguida, a lista de funções que estão fazendo a maior parte do trabalho e, finalmente, se concentrando em outras funções usando o **Linha do Tempo de Resumo**. Você também pode exibir sugestões e avisos de criação de perfil na janela **Lista de Erros**.  
   
- Lembre-se de que o método de amostragem pode não oferecer as informações que você precisa. Por exemplo, as amostras somente são coletadas quando o aplicativo está executando o código de modo de usuário. Portanto, algumas funcionalidades, como operações de entrada e saída, não são capturadas pela amostragem. As Ferramentas de Criação de Perfil fornecem vários métodos de coleta que podem permitir que você se concentre nos dados mais importantes. Para obter mais informações sobre os outros métodos, confira [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md).  
+ Lembre-se de que o método de amostragem pode não oferecer as informações que você precisa. Por exemplo, as amostras somente são coletadas quando o aplicativo está executando o código de modo de usuário. Portanto, algumas funcionalidades, como operações de entrada e saída, não são capturadas pela amostragem. As Ferramentas de Criação de Perfil fornecem vários métodos de coleta que podem permitir que você se concentre nos dados mais importantes. Para obter mais informações sobre os outros métodos, consulte [How to: Choose Collection Methods](../profiling/how-to-choose-collection-methods.md) (Instruções: escolher métodos de coleta).  
   
  Cada área enumerada na figura está relacionada a uma etapa do procedimento.  
   
- ![Exibição de relatório de resumo de amostragem](../profiling/media/summary-sampling.png "Summary_Sampling")  
+ ![Exibição de relatório de resumo para amostragem](../profiling/media/summary-sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>Para analisar os dados de amostragem  
   
 1. Na exibição **Resumo**, o **Afunilamento** mostra a ramificação da árvore de chamadas do aplicativo com as amostras mais inclusivas. Este é o caminho de execução que estava mais ativo quando os dados foram coletados. Valores inclusivos altos podem indicar que o algoritmo que gera a árvore de chamadas pode ser otimizado. Localize a função no código que está mais inferior no caminho. Observe que o caminho também pode incluir funções do sistema ou funções em módulos externos.  
   
-     ![Afunilamento do Criador de Perfil](../profiling/media/profiler-hotpath.png "Profiler_HotPath")  
+     ![Hot Path do profiler](../profiling/media/profiler-hotpath.png "Profiler_HotPath")  
   
     1. **Amostras Inclusivas** indicam quanto trabalho foi feito pela função e todas as funções chamadas por ela. Contagens inclusivas altas apontam para as funções que são mais dispendiosas em geral.  
   
@@ -93,13 +93,13 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
   
 3. Para continuar sua análise, retorne à exibição **Resumo**, selecionando **Resumo** na lista suspensa Exibir. Examine as funções em **Funções que Fazem o Trabalho Mais Individual**. Esta lista exibe as funções com as amostras mais exclusivas. O código no corpo da função dessas funções executou um trabalho significativo e talvez seja possível otimizá-lo. Para analisar melhor uma função específica, clique no nome da função para mostrá-la na exibição **Detalhes da Função**.  
   
-     ![Lista de funções que fazem a maior parte do trabalho](../profiling/media/functions-mostwork.png "Functions_MostWork")  
+     ![Lista de funções que fazem mais trabalho](../profiling/media/functions-mostwork.png "Functions_MostWork")  
   
      Para continuar a investigação sobre a execução de criação de perfil, você pode analisar novamente um segmento dos dados de criação de perfil usando a linha do tempo na exibição **Resumo** para mostrar o **Afunilamento** e as **Funções que fazem a maior parte do trabalho individual** de um segmento selecionado. Por exemplo, focar um pico menor na linha do tempo pode revelar árvores de chamadas e funções dispendiosas que não foram mostradas na análise da execução inteira da criação de perfil.  
   
      Para analisar um segmento novamente, selecione um segmento dentro da caixa de Linha do Tempo de Resumo e, em seguida, clique em **Filtrar por Seleção**.  
   
-     ![Linha do tempo de exibição de Resumo de Desempenho](../profiling/media/performancesummary.png "PerformanceSummary")  
+     ![Linha do tempo de exibição de Resumo de desempenho](../profiling/media/performancesummary.png "PerformanceSummary")  
   
 4. O criador de perfil também usa um conjunto de regras para sugerir maneiras de melhorar a execução de criação de perfil e identificar possíveis problemas de desempenho. Quando um problema é encontrado, um aviso é exibido na **Lista de Erros**. Para abrir a janela **Lista de Erros**, no menu **Exibição**, clique em **Lista de Erros**.  
   
@@ -107,7 +107,7 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
   
     - Para exibir informações detalhadas sobre o aviso, clique com o botão direito do mouse no erro e, em seguida, clique em **Mostrar Ajuda para Erros**  
   
-## <a name="Step3"></a> Etapa 3: Revisar o código e executar uma sessão novamente  
+## <a name="step-3-revise-code-and-rerun-a-session"></a><a name="Step3"></a> Etapa 3: Revisar o código e executar uma sessão novamente  
  Depois de localizar e otimizar uma ou mais funções, você poderá repetir a execução de criação de perfil e comparar os dados para ver a diferença que as alterações acarretaram no desempenho do aplicativo.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Para revisar o código e executar novamente o criador de perfil  
@@ -120,9 +120,9 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
   
 4. Depois que você executar novamente a sessão, outro arquivo de dados será adicionado à pasta **Relatórios** da sessão no **Gerenciador de Desempenho**. Selecione tanto os dados de criação perfil originais quanto os novos, clique com o botão direito do mouse na seleção e, em seguida, clique em **Comparar Relatórios de Desempenho**.  
   
-     Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para obter mais informações sobre como usar o modo de exibição de comparação, confira [Como: Comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md).  
+     Uma nova janela de relatório é aberta, exibindo os resultados da comparação. Para obter mais informações sobre como usar o modo de exibição de comparação, consulte [como comparar arquivos de dados de desempenho](../profiling/how-to-compare-performance-data-files.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Introdução](../profiling/getting-started-with-performance-tools.md)   
  [Visões gerais](../profiling/overviews-performance-tools.md)

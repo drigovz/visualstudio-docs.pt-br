@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c3aa55bfc521521e28686ebb248053350ae14a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438910"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838628"
 ---
 # <a name="modules-view---sampling-data"></a>Exibição Módulos – dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ A exibição Módulos dos dados de amostragem mostra dados de desempenho agrupad
 |------------|-----------------|  
 |**Nome**|O nome do módulo, função, número de linha ou endereço de ponteiro de instrução.|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém a função, linha ou ponteiro de instrução.|  
+|**Nome do processo**|O nome do processo.|  
+|**Nome do módulo**|O nome do módulo que contém a função, linha ou ponteiro de instrução.|  
 |**Caminho do Módulo**|O caminho do módulo que contém o módulo, função, linha ou ponteiro de instrução.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
@@ -43,7 +43,7 @@ A exibição Módulos dos dados de amostragem mostra dados de desempenho agrupad
 |**Amostras Exclusivas**|– Para uma função, o número de amostras da pilha de chamadas em que essa função estava diretamente em execução, isto é, o número de amostras em que essa função estava na parte superior da pilha de chamadas.<br />– Para um módulo, a soma das amostras exclusivas das funções no módulo.<br />– Para uma linha ou instrução, o número de amostras no qual essa linha ou instrução estava sendo executada.|  
 |**% de Amostras Exclusivas**|– Para uma função ou módulo, o percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função ou módulo.<br />– Para uma linha ou instrução, o percentual de todas as amostras na execução de criação de perfil em que essa linha ou instrução estava em execução.|  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Exibição Módulos](../profiling/modules-view-instrumentation-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de módulos-amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Exibição de módulos-instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Exibição de módulos](../profiling/modules-view-instrumentation-data.md)

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ddfda1e46dc1c5918a4ee1095f39db027bd3fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431591"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838538"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Usando regras de desempenho para analisar dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ Os avisos de desempenho das Ferramentas de Criação de Perfil do [!INCLUDE[vspr
 > Os avisos de desempenho do criador de perfil são gerados pela análise dinâmica da execução do programa e são independentes dos avisos de Análise de Código. A Análise de Código também pode gerar avisos de desempenho para código gerenciado com base na análise estática do código-fonte. Para obter mais informações, consulte [Analisando a Qualidade do Código Gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) e [Avisos de Desempenho](../code-quality/performance-warnings.md).  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como: Exibir avisos de desempenho](../profiling/how-to-view-performance-warnings.md)  
+ [Como exibir avisos de desempenho](../profiling/how-to-view-performance-warnings.md)  
  Fornece informações sobre como abrir a janela **Lista de Erros** para exibir avisos de desempenho do criador de perfil.  
   
- [Como: Configurar regras de desempenho](../profiling/how-to-configure-performance-rules.md)  
+ [Como configurar regras de desempenho](../profiling/how-to-configure-performance-rules.md)  
  Fornece informações sobre como ativar ou desativar avisos de desempenho individuais.  
   
  [Referência de regras de desempenho](../profiling/performance-rules-reference.md)  

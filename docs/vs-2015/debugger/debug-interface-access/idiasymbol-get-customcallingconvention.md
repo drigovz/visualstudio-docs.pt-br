@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b56203f2d0bfb2e7c20720b595cdde6b92aa987
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64834381"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838729"
 ---
-# <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
+# <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se a função tem uma convenção de chamada personalizada.  
+Recupera um sinalizador que especifica se a função tem uma Convenção de chamada personalizada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_customCallingConvention(
   
 #### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- [out] Retorna `TRUE` se a função tem uma convenção de chamada personalizada; caso contrário, retornará `FALSE`, a função tem uma convenção de chamada conhecida.  
+ fora Retorna `TRUE` se a função tem uma Convenção de chamada personalizada; caso contrário, retorna `FALSE` , a função tem uma Convenção de chamada conhecida.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
@@ -48,7 +48,7 @@ HRESULT get_customCallingConvention(
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|V DIA SDK 8.0|  
+|Versão:|DIA SDK v 8.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

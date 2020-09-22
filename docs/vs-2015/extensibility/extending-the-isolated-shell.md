@@ -1,5 +1,5 @@
 ---
-title: Estender o Shell isolado | Microsoft Docs
+title: Estendendo o Shell isolado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,86 +11,86 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443925"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838416"
 ---
 # <a name="extending-the-isolated-shell"></a>Estender o Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode estender o shell isolado do Visual Studio com a adição de um VSPackage, uma parte do componente de Managed Extensibility Framework (MEF) ou um projeto VSIX genérico para seu aplicativo de shell isolado.  
+Você pode estender o Shell isolado do Visual Studio adicionando um VSPackage, uma parte de componente Managed Extensibility Framework (MEF) ou um projeto VSIX genérico ao seu aplicativo de shell isolado.  
   
 > [!NOTE]
-> As etapas a seguir pressupõem que você tenha criado um aplicativo básico de shell isolado usando o modelo de projeto do Visual Studio Shell isolado. Para obter mais informações sobre este modelo de projeto, consulte [passo a passo: Criando um Basic o aplicativo de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> As etapas a seguir pressupõem que você criou um aplicativo de shell isolado básico usando o modelo de projeto isolado do shell do Visual Studio. Para obter mais informações sobre este modelo de projeto, consulte [passo a passos: Criando um aplicativo de shell isolado básico](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto de pacote do Visual Studio  
- O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes nos **novo projeto** caixa de diálogo:  
+ O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes na caixa de diálogo **novo projeto** :  
   
-1. Sob **Visual Basic**, **extensibilidade**. O idioma padrão do projeto é o Visual Basic.  
+1. Em **Visual Basic**, **extensibilidade**. O idioma padrão do projeto é Visual Basic.  
   
-2. Sob **Visual c#**, **extensibilidade**. O idioma padrão do projeto é c#.  
+2. Em **Visual C#**, **extensibilidade**. O idioma padrão do projeto é C#.  
   
-3. Sob **outros tipos de projeto**, **extensibilidade**. O idioma padrão do projeto é C++.  
+3. Em **outros tipos de projeto**, **extensibilidade**. O idioma padrão do projeto é C++.  
   
 ## <a name="adding-a-vspackage"></a>Adicionando um VSPackage  
- Você pode adicionar um VSPackage ao seu aplicativo de shell isolado. As etapas a seguir mostram como criar uma que adiciona os comandos de menu.  
+ Você pode adicionar um VSPackage ao seu aplicativo de shell isolado. As etapas a seguir mostram como criar um que adiciona comandos de menu.  
   
 #### <a name="to-add-a-new-vspackage"></a>Para adicionar um novo VSPackage  
   
-1. Adicione um projeto de pacote do Visual Studio chamado `MenuCommandsPackage`.  
+1. Adicione um projeto de pacote do Visual Studio chamado `MenuCommandsPackage` .  
   
-2. No **informações básicas de VSPackage** página do assistente, defina **nome da empresa** para `Fabrikam` e **nome VSPackage** para `FabrikamMenuCommands`. Escolha o botão **Avançar**.  
+2. Na página **informações básicas do VSPackage** do assistente, defina **nome da empresa** como `Fabrikam` e **nome do VSPackage** como `FabrikamMenuCommands` . Escolha o botão **Avançar**.  
   
-3. Na próxima página, selecione **comando de Menu** e, em seguida, escolha **próxima**.  
+3. Na próxima página, selecione **comando de menu** e, em seguida, escolha **Avançar**.  
   
-4. Na próxima página, defina **nome do comando** à `Fabrikam Command` e **ID do comando** para `cmdidFabrikamCommand`e, em seguida, escolha **Avançar**.  
+4. Na página seguinte, defina o **nome do comando** como `Fabrikam Command` e a **ID de comando** para e `cmdidFabrikamCommand` escolha **Avançar**.  
   
-5. Sobre o **selecionar opções de projeto de teste** página, desmarque as opções de teste e, em seguida, escolha o **concluir** botão.  
+5. Na página **selecionar opções do projeto de teste** , desmarque as opções de teste e, em seguida, escolha o botão **concluir** .  
   
-6. No projeto ShellExtensionsVSIX, abra o arquivo de vsixmanifest.  
+6. No projeto ShellExtensionsVSIX, abra o arquivo Source. Extension. vsixmanifest.  
   
-     O **ativos** seção deve conter uma entrada para o projeto VSShellStub.AboutBoxPackage.  
+     A seção de **ativos** deve conter uma entrada para o projeto VSShellStub. AboutBoxPackage.  
   
-7. Escolha o **New** botão.  
+7. Escolha o botão **novo** .  
   
-8. No **adicionar novo ativo** janela, no **tipo** lista, selecione **VSPackage**.  
+8. Na janela **Adicionar novo ativo** , na lista **tipo** , selecione **Microsoft. VisualStudio. VSPackage**.  
   
-9. No **fonte** lista, certifique-se de que **um projeto na solução atual** está selecionado. No **Project** caixa de listagem, selecione **MenuCommandsPackage**.  
+9. Na lista **origem** , verifique se **um projeto na solução atual** está selecionado. Na caixa de listagem **projeto** , selecione **MenuCommandsPackage**.  
   
 10. Salve e feche o arquivo.  
   
-11. Recompile a solução e iniciar a depuração o shell isolado.  
+11. Recompile a solução e inicie a depuração do Shell isolado.  
   
-12. Na barra de menus, escolha **ferramentas** menu, em seguida, **comando Fabrikam**.  
+12. Na barra de menus, escolha o menu **ferramentas** e, em seguida, o **comando Fabrikam**.  
   
-     Deve aparecer uma caixa de mensagem.  
+     Uma caixa de mensagem deve aparecer.  
   
 13. Pare a depuração do aplicativo.  
   
-## <a name="adding-a-mef-component-part"></a>Adicionando uma parte do componente MEF  
- As etapas a seguir mostram como adicionar uma parte do componente de MEF para seu aplicativo de shell isolado.  
+## <a name="adding-a-mef-component-part"></a>Adicionando uma parte do componente do MEF  
+ As etapas a seguir mostram como adicionar uma parte de componente do MEF ao seu aplicativo de shell isolado.  
   
 #### <a name="to-add-a-mef-component"></a>Para adicionar um componente MEF  
   
-1. No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **margem do Editor** modelo para adicionar um projeto. Nomeie-o como `ShellEditorMargin`.  
+1. Na caixa de diálogo **Adicionar novo projeto** , em **Visual C#**, **extensibilidade**, use o modelo de **margem do editor** para adicionar um projeto. Nomeie-o `ShellEditorMargin`.  
   
-2. No projeto ShellExtensionsVSIX, abra o arquivo de vsixmanifest no modo Design, não o modo de exibição de código.  
+2. No projeto ShellExtensionsVSIX, abra o arquivo Source. Extension. vsixmanifest no modo de exibição de Design, não o modo de exibição de código.  
   
-3. No `Asset` , escolha **adicionar conteúdo**.  
+3. Na `Asset` seção, escolha **adicionar conteúdo**.  
   
-4. No **adicionar novo ativo** janela, no **tipo** lista, selecione **mefcomponent**.  
+4. Na janela **Adicionar novo ativo** , na lista **tipo** , selecione **Microsoft. VisualStudio. MefComponent**.  
   
-5. No **fonte** lista, certifique-se de que **um projeto na solução atual** está selecionado. No **Project** caixa de listagem, selecione **ShellEditorMargin**.  
+5. Na lista **origem** , verifique se **um projeto na solução atual** está selecionado. Na caixa de listagem **projeto** , selecione **ShellEditorMargin**.  
   
 6. Salve e feche o arquivo.  
   
-7. Recompile a solução e iniciar a depuração o shell isolado.  
+7. Recompile a solução e inicie a depuração do Shell isolado.  
   
 8. Abra um arquivo de texto.  
   
-     Uma margem verde que contém as palavras "Hello world!" deve ser exibida na parte inferior da janela de arquivo de texto.  
+     Uma margem verde que contém as palavras "Olá, mundo!" deve ser exibido na parte inferior da janela de arquivo de texto.  
   
 9. Pare a depuração do aplicativo.  
   
@@ -98,27 +98,27 @@ Você pode estender o shell isolado do Visual Studio com a adição de um VSPack
   
 #### <a name="to-add-a-generic-vsix-project"></a>Para adicionar um projeto VSIX genérico  
   
-1. No **adicionar novo projeto** caixa de diálogo **Visual c#**, **extensibilidade**, use o **VSIXProject** modelo para adicionar um projeto. Nomeie-o como `EmptyVSIX`.  
+1. Na caixa de diálogo **Adicionar novo projeto** , em **Visual C#**, **extensibilidade**, use o modelo **VSIXProject** para adicionar um projeto. Nomeie-o `EmptyVSIX`.  
   
-2. No projeto ShellExtensionsVSIX, abra o arquivo de Source.extensions.vsixmanifest na exibição de Design, não o modo de exibição de código.  
+2. No projeto ShellExtensionsVSIX, abra o arquivo Source. Extensions. vsixmanifest no modo de exibição de Design, não o modo de exibição de código.  
   
-3. No `Assets` , escolha **New**.  
+3. Na `Assets` seção, escolha **novo**.  
   
-4. No **adicionar novo ativo** janela, no **tipo** , selecione o tipo de conteúdo que você deseja adicionar.  
+4. Na janela **Adicionar novo ativo** , na lista **tipo** , selecione o tipo de conteúdo que você deseja adicionar.  
   
-5. Na **fonte**, certifique-se de que o **um projeto na solução atual** opção está selecionada. Na caixa de listagem, selecione o nome do seu projeto VSIX.  
+5. Em **origem**, verifique se a opção **um projeto na solução atual** está selecionada. Na caixa de listagem, selecione o nome do seu projeto VSIX.  
   
 6. Salve e feche o arquivo.  
   
-7. Se esse projeto inclui o código compilado, você deve editar o projeto para que o assembly seja incluído na saída.  
+7. Se esse projeto incluir código compilado, você deverá editar o projeto para que o assembly seja incluído na saída.  
   
     1. Descarregue o projeto VSIX e abra o arquivo de projeto.  
   
-    2. No primeiro `<PropertyGroup>` bloco, altere o valor da `<CopyBuildOutputToOutputDirectory>` para `true`.  
+    2. No primeiro `<PropertyGroup>` bloco, altere o valor de `<CopyBuildOutputToOutputDirectory>` para `true` .  
   
     3. Salve e recarregue o projeto.  
   
-8. Criar e executar a solução.  
+8. Compile e execute a solução.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

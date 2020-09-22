@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um pacote de Bootstrapper localizado | Microsoft Docs'
+title: 'Como: criar um pacote de bootstrapper localizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440661"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838737"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Como: Criar um pacote de Bootstrapper localizado
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Como criar um pacote de bootstrapper localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um eula.rtf) e um manifesto do pacote (package.xml).  
   
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.  
   
-1. Crie uma pasta que é nomeada após o nome da localidade em \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*.  
+1. Crie uma pasta nomeada após o nome da localidade em \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*.  
   
 2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
@@ -42,16 +42,16 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 1. Crie uma pasta com o nome da localidade.  
   
-     Em computadores de 32 bits, crie a pasta no \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*\ pasta.  
+     Em computadores de 32 bits, crie a pasta na pasta \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\.  
   
-     Em computadores de 64 bits, crie a pasta na \Program arquivos (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*\ pasta.  
+     Em computadores de 64 bits, crie a pasta na pasta \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\.  
   
      A tabela a seguir mostra os nomes das pastas que você pode usar para estabelecer uma localidade correspondente.  
   
     |Localidade|Nome da pasta|  
     |------------|-----------------|  
-    |Chinês (simplificado)|zh-Hans|  
-    |Chinês (tradicional)|zh-Hant|  
+    |Chinês (Simplificado)|zh-Hans|  
+    |Chinês (Tradicional)|zh-Hans|  
     |Tcheco|cs|  
     |Alemão|de|  
     |Inglês|en|  
@@ -67,7 +67,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
-3. Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+3. Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
 4. Atualize a seção `<Strings>` do manifesto do pacote, para que as cadeias de caracteres fiquem no idioma correto para a localidade.  
   
@@ -93,7 +93,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 6. Salve o arquivo package.xml.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
- [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)   
- [Como: Criar um manifesto do pacote](../deployment/how-to-create-a-package-manifest.md)
+ [Pré-requisitos de implantação de aplicativo](../deployment/application-deployment-prerequisites.md)   
+ [Como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439677"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838610"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil usando amostragem de linha de comando
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Instruções passo a passo: criação de perfil de linha de comando usando amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como criar um perfil de um aplicativo usando ferramentas de linha de comando e amostragem para identificar problemas de desempenho.  
@@ -33,7 +33,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo usando ferram
   
 - Analise os resultados da criação de perfil amostrada para localizar e corrigir problemas de desempenho.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Pré-requisitos  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ou [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -41,7 +41,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo usando ferram
   
 - Compreensão intermediária para trabalhar com ferramentas de linha de comando  
   
-- Uma cópia de [amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Uma cópia do [exemplo de PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
 - Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis.  
   
@@ -97,7 +97,7 @@ Este passo a passo demonstra como criar um perfil de um aplicativo usando ferram
   
     - Abra o arquivo the.vsp no IDE do Visual Studio.  
   
-         – ou —  
+         — ou —  
   
     - Gere um arquivo de valores separados por vírgulas (.csv) usando a ferramenta de linha de comando VSPerfReport.exe. Para gerar relatórios de uso fora do IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], use o seguinte comando:  
   
@@ -105,9 +105,9 @@ Este passo a passo demonstra como criar um perfil de um aplicativo usando ferram
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [Criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
- [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
+ [Compreendendo os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
+ [Exibições do relatório de desempenho](../profiling/performance-report-views.md)

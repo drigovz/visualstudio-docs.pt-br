@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 502ab8dbafd12f3b00949b5b52609c4c8c8ddce9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433924"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838604"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>Exibição de IPs (ponteiros de instrução) – Dados de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |Column|Descrição|  
 |------------|-----------------|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém a instrução.|  
+|**Nome do processo**|O nome do processo.|  
+|**Nome do módulo**|O nome do módulo que contém a instrução.|  
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a instrução.|  
-|**Nome da Função**|O nome da função que contém a instrução.|  
+|**Nome da função**|O nome da função que contém a instrução.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Endereço da Função**|O endereço de memória inicial da função no binário carregado.|  
+|**Endereço da função**|O endereço de memória inicial da função no binário carregado.|  
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que esse exemplo foi coletado.|  
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que esse exemplo foi coletado.|  
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que esse exemplo foi coletado.|  
@@ -44,5 +44,5 @@ A exibição de IPs dos dados de amostragem lista os dados de desempenho das ins
 |**Amostras Exclusivas**|O número total de amostras coletadas durante a execução da instrução.|  
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da instrução.|  
   
-## <a name="see-also"></a>Consulte também  
- [Exibição de IPs (ponteiros de instrução) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+## <a name="see-also"></a>Consulte Também  
+ [Exibição de ponteiros de instrução (IPs) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

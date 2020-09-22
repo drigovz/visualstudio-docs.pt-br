@@ -1,5 +1,5 @@
 ---
-title: 'Como: Editar um valor de registro | Microsoft Docs'
+title: 'Como: editar um valor de registro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438310"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838535"
 ---
-# <a name="how-to-edit-a-register-value"></a>Como: Editar um valor de registro
+# <a name="how-to-edit-a-register-value"></a>Como editar um valor de registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A janela Registros só ficará disponível se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**.  
@@ -47,5 +47,5 @@ A janela Registros só ficará disponível se a depuração do nível de endere�
     > [!CAUTION]
     > Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inócua pode resultar em alterações em alguns bits menos significativos no registro de um ponto flutuante.  
   
-## <a name="see-also"></a>Consulte também  
- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+## <a name="see-also"></a>Consulte Também  
+ [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)

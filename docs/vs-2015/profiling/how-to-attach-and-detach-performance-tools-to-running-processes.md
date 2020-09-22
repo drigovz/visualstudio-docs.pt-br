@@ -1,5 +1,5 @@
 ---
-title: 'Como: Anexar e desanexar ferramentas de desempenho para processos em execução | Microsoft Docs'
+title: Como anexar e desanexar ferramentas de desempenho de processos em execução | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443716"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838472"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como: Anexar e desanexar ferramentas de desempenho para processos em execução
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O criador de perfil pode ser usado para anexar ou desanexar de um processo em execução para facilitar a amostragem e a coleta de dados de desempenho. É possível usar esse método para criar o perfil de um processo quando você deseja evitar a coleta de dados sobre o tempo de carregamento do aplicativo ou para monitorar o desempenho de um processo após ele atingir um estado específico.  
@@ -46,7 +46,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
 1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
-     \- ou -  
+     \- ou –  
   
      No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Anexar/Desanexar**.  
   
@@ -60,7 +60,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
 1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
-     \- ou -  
+     \- ou –  
   
      No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Anexar/Desanexar**.  
   
@@ -70,9 +70,9 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
 3. Clique em **Desanexar**.  
   
-## <a name="see-also"></a>Consulte também  
- [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
+## <a name="see-also"></a>Consulte Também  
+ [Controlando a coleta de dados](../profiling/controlling-data-collection.md)   
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Como: Iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Como: Iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

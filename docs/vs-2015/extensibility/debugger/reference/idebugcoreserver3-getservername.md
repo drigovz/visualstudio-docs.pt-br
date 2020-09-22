@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName | Microsoft Docs
+title: 'IDebugCoreServer3:: getServerName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 886cfbf95216064764e9f5b3e48d092d3fecc047
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445255"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839256"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ int GetServerName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrName`  
- [out] Retorna o nome do servidor.  
+ fora Retorna o nome do servidor.  
   
 > [!NOTE]
 > O chamador é responsável por liberar a cadeia de caracteres.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se bem-sucedido, retorna `S_OK` ; caso contrário, retorna o código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Para um nome amigável do servidor, chame o [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) método.  
+ Para obter um nome de servidor amigável, chame o método [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) .  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)
