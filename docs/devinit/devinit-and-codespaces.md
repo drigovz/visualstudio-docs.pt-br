@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a622bf3a10b47ab535a02deac35e3ed2c2b8aa4c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b42ce84bcb2a336e37d0ffafb2bab6c2dba9ba9d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808698"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852205"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit e GitHub Codespaces
 
 devinit é um ótimo complemento para o [GitHub Codespaces](https://github.com/features/codespaces) e o devinit pode ser usado para obter uma configuração de codespace para que os colaboradores possam criar, executar e depurar imediatamente.
 
-Para integrar com o GitHub Codespaces, `devinit` é necessário chamar a partir do `postCreateCommand` definido em um `.devcontainer.json` arquivo colocado na raiz do repositório. As cadeias de caracteres em `postCreateCommand` são executadas no shell padrão, depois que o repositório é clonado no codespace. Você pode ler mais sobre `postCreateCommand` na [documentação de personalização](https://docs.GitHub.com/en/GitHub/developing-online-with-codespaces/configuring-codespaces-for-your-project)do GitHub Codespaces. Para adicionar o `devinit` comando, você pode adicionar `devinit init` ao `postCreateCommand` conforme mostrado nos exemplos abaixo.
+Para integrar com o GitHub Codespaces, `devinit` é necessário chamar a partir do `postCreateCommand` definido em um `.devcontainer.json` arquivo colocado na raiz do repositório. As cadeias de caracteres em `postCreateCommand` são executadas no shell padrão, depois que o repositório é clonado no codespace. Você pode ler mais sobre `postCreateCommand` na [documentação de personalização](https://docs.github.com/github/developing-online-with-codespaces/configuring-codespaces-for-your-project)do GitHub Codespaces. Para adicionar o `devinit` comando, você pode adicionar `devinit init` ao `postCreateCommand` conforme mostrado nos exemplos abaixo.
 
 Você também pode executar `devinit init -f <path to .devinit.json>` a partir do terminal integrado do Visual Studio uma vez conectado ao seu codespace.
 

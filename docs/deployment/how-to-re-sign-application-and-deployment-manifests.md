@@ -1,5 +1,5 @@
 ---
-title: Como assinar novamente os manifestos de aplicativo e implantação | Microsoft Docs
+title: Assinar novamente manifestos de aplicativo e implantação | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641601"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851678"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como assinar manifestos de aplicativo e implantação novamente
 Depois de fazer alterações nas propriedades de implantação no manifesto do aplicativo para Windows Forms aplicativos, XBAP (aplicativos Windows Presentation Foundation) ou soluções do Office, você deve assinar novamente os manifestos de aplicativo e de implantação com um certificado. Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.

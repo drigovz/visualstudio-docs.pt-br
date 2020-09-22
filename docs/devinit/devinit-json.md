@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3d7df98dc6ebfb59aa78e6f0c546632bf84596f5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5ba7299f90ce5f3f253a7210456053faa6bd22c0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809696"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852198"
 ---
 # <a name="devinit-configuration-file"></a>arquivo de configuração devinit
 
@@ -55,14 +55,14 @@ Os caminhos são relativos ao local onde devinit está em execução. Normalment
 
 ### <a name="property-values"></a>Valores de propriedade
 
-| Nome         | Type   | Obrigatório | Valor                              |
+| Nome         | Tipo   | Obrigatório | Valor                              |
 |--------------|--------|----------|------------------------------------|
 | **feitos** | Cadeia de caracteres | No       | Comentários para o arquivo.             |
 | **funcionam**      | matriz  | Sim      | [Objeto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Executar objeto de ferramenta
 
-| Nome                  | Type   | Obrigatório | Valor                                                                                                      |
+| Nome                  | Tipo   | Obrigatório | Valor                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **feitos**          | Cadeia de caracteres | No       | Comentários para a entrada da ferramenta.                                                                               |
 | **'**              | string | Sim      | O nome da ferramenta. Consulte o `devinit list` comando para obter uma lista de ferramentas disponíveis.                            |
@@ -71,4 +71,4 @@ Os caminhos são relativos ao local onde devinit está em execução. Normalment
 
 ## <a name="examples"></a>Exemplos
 
-Para obter mais exemplos de como usar o devinit, consulte a [seção de exemplos](/samples).
+Para obter mais exemplos de como usar o devinit, consulte a [seção de exemplos](sample-readme.md).

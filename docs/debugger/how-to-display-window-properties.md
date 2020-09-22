@@ -1,5 +1,5 @@
 ---
-title: Como exibir propriedades da janela | Microsoft Docs
+title: Exibir Propriedades da janela | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349764"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852277"
 ---
 # <a name="how-to-display-window-properties"></a>Como exibir Propriedades da Janela
 Para saber mais sobre uma janela listada no [modo de exibição do Windows](../debugger/windows-view.md), use a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md).

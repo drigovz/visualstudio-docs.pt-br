@@ -1,5 +1,5 @@
 ---
-title: Ganchos de alocação e alocações de memória de tempo de execução C | Microsoft Docs
+title: Ganchos de alocação e alocações de memória de tempo de execução do C
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851613"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Ganchos de alocação e alocações de memória de tempo de execução do C
 Uma restrição muito importante nas funções de gancho de alocação é que elas devem ignorar `_CRT_BLOCK` blocos explicitamente. Esses blocos são as alocações de memória feitas internamente pelas funções de biblioteca de tempo de execução do C se fizerem chamadas para as funções de biblioteca de tempo de execução C que alocam memória interna. Você pode ignorar `_CRT_BLOCK` blocos incluindo o seguinte código no início da função de seu gancho de alocação:
