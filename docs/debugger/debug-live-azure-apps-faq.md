@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911403"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851093"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
@@ -103,7 +103,7 @@ Para os conjuntos de dimensionamento de máquinas virtuais/máquina virtual, rem
 
 2. Remover certificados e o cofre de chaves do Azure
 
-   Ao instalar a extensão do depurador remoto para máquinas virtuais ou conjuntos de dimensionamento de máquinas virtuais, os certificados de cliente e de servidor são criados para autenticar o VS Client com os recursos de máquina virtual do Azure/conjuntos de dimensionamento de máquinas virtuais.
+   Ao instalar a extensão do depurador remoto para a máquina virtual ou conjuntos de dimensionamento de máquinas virtuais, os certificados de cliente e de servidor são criados para autenticar o cliente do Visual Studio com os recursos de máquina virtual/conjuntos de dimensionamento de máquinas virtuais do Azure.
 
    - O certificado do cliente
 
@@ -124,7 +124,7 @@ Para os conjuntos de dimensionamento de máquinas virtuais/máquina virtual, rem
       ```
 
    - O certificado do servidor
-      - A impressão digital do certificado de servidor correspondente é implantada como um segredo para o Azure keyvault. O VS tentará localizar ou criar um keyvault com o prefixo MSVSAZ * na região correspondente à máquina virtual ou ao recurso de conjuntos de dimensionamento de máquinas virtuais. Todos os recursos de máquina virtual ou de conjuntos de dimensionamento de máquinas virtuais implantados nessa região compartilharão o mesmo keyvault.
+      - A impressão digital do certificado de servidor correspondente é implantada como um segredo para o Azure keyvault. O Visual Studio tentará localizar ou criar um keyvault com o prefixo MSVSAZ * na região correspondente à máquina virtual ou ao recurso de conjuntos de dimensionamento de máquinas virtuais. Todos os recursos de máquina virtual ou de conjuntos de dimensionamento de máquinas virtuais implantados nessa região compartilharão o mesmo keyvault.
       - Para excluir o segredo de impressão digital do certificado do servidor, acesse o portal do Azure e localize o MSVSAZ * keyvault na mesma região que está hospedando seu recurso. Excluir o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`
       - Você também precisará excluir o segredo do servidor do seu recurso por meio do PowerShell.
 
