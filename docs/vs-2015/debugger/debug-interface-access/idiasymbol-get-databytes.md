@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858504"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838669"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera os bytes de dados de um símbolo de OEM.  
+Recupera os bytes de dados de um símbolo OEM.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,16 +37,16 @@ HRESULT get_dataBytes ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `cbData`  
- [in] Tamanho do buffer para manter os dados.  
+ no Tamanho do buffer para armazenar os dados.  
   
  `pcbData`  
- [out] Retorna o número de bytes gravados, ou, se o `data` parâmetro é `NULL`, retorna o número de bytes disponíveis.  
+ fora Retorna o número de bytes gravados ou, se o `data` parâmetro for `NULL` , retorna o número de bytes disponíveis.  
   
  `data[]`  
- [out] Um buffer que será preenchido com os bytes de dados.  
+ [fora,] Um buffer que é preenchido com os bytes de dados.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
@@ -56,7 +56,7 @@ HRESULT get_dataBytes ( 
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
+|Versão:|DIA SDK v 7.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

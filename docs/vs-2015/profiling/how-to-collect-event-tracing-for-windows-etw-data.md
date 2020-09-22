@@ -1,5 +1,5 @@
 ---
-title: 'Como: Coletar dados de ETW (Rastreamento de Eventos para Windows) | Microsoft Docs'
+title: Como coletar dados de ETW (Rastreamento de Eventos para Windows) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d113a32622c40c68a030fdbc670ec19c6038de2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432813"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838522"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Como: Coletar o rastreamento de eventos para Windows (ETW) de dados
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Como coletar dados de Rastreamento de Eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O ETW (Rastreamento de Eventos para Windows) é um recurso de rastreamento eficiente em nível de kernel que permite que o criador de perfil registre log de eventos de kernel ou de eventos definidos pelo aplicativo. Os dados coletados pelo provedor de eventos podem ser exibidos somente usando a opção /**Summary:ETW** da ferramenta de linha de comando [VSPerfReport](../profiling/vsperfreport.md). Você pode usar esse relatório para determinar o local em que ocorrem problemas de desempenho no aplicativo.  
@@ -36,11 +36,11 @@ O ETW (Rastreamento de Eventos para Windows) é um recurso de rastreamento efici
   
 ### <a name="to-enable-event-trace-providers"></a>Para habilitar provedores de rastreamento de eventos  
   
-1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+1. Em **Gerenciador de desempenho**, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
   
 2. Nas **Páginas de Propriedades**, clique nas propriedades de **Eventos do Windows**.  
   
 3. Na lista **Selecionar provedor de rastreamento de eventos do qual coletar dados**, selecione os provedores de eventos que você deseja usar para analisar seu aplicativo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)
