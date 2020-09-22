@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2e5511e9e2e1c863db8f696a70195573d75429f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433868"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838714"
 ---
 # <a name="lines-view---sampling-data"></a>Exibição de linhas – Dados de Amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,20 +47,20 @@ A visualização Linhas de dados de amostragem lista os dados de desempenho das 
 |Column|Descrição|  
 |------------|-----------------|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
-|**Nome do Processo**|O nome do processo.|  
-|**Nome do Módulo**|O nome do módulo que contém a linha de função.|  
+|**Nome do processo**|O nome do processo.|  
+|**Nome do módulo**|O nome do módulo que contém a linha de função.|  
 |**Caminho do Módulo**|O caminho do módulo que contém a linha de função.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a linha de função.|  
-|**Nome da Função**|O nome da função.|  
+|**Nome da função**|O nome da função.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
-|**Endereço da Função**|O endereço inicial da função.|  
+|**Endereço da função**|O endereço inicial da função.|  
 |**Início da Linha de Origem**|O número de linha inicial no arquivo de origem em que esse exemplo foi coletado.|  
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que esse exemplo foi coletado.|  
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que esse exemplo foi coletado.|  
 |**Final do Caractere de Origem**|O deslocamento do caractere final na linha do arquivo de origem em que esse exemplo foi coletado.|  
-|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha com a seguinte sintaxe: `Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|  
+|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha com a seguinte sintaxe: `Source File` **; [** `Line Number Start` **,**`Character Start` **]->; [**`Line Number End`**,**`Character End`**]**|  
 |**Amostras Exclusivas**|O número total de amostras coletadas durante a execução da linha de função.|  
 |**% de Amostras Exclusivas**|O percentual de todas as amostras coletadas na criação de perfil durante a execução da linha de função.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Exibição de Linhas – Amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)

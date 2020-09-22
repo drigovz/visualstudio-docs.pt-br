@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03e27d021b8b3c5ec29a8646a1bbe7bc6ebdecc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441292"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838594"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Coletando estatísticas de aplicativo para aplicativos autônomos usando a linha de comando do criador de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Start an application by using profiling (Iniciar um aplicativo usando a criação de perfil)**|-   [Como: Iniciar um aplicativo autônomo e coletar estatísticas do aplicativo](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Attach the profiler to a running .NET Framework application (Anexar o criador de perfil a um aplicativo do .NET Framework em execução)**|-   [Como: Anexar o criador de perfil a um aplicativo .NET Framework e coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Attach the profiler to a running C/C++ application (Anexar o criador de perfil a um aplicativo C/C++ em execução)**|-   [Como: Anexar o criador de perfil a um aplicativo nativo e coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
+|**Start an application by using profiling (Iniciar um aplicativo usando a criação de perfil)**|-   [How to: Launch a Stand-Alone Application and Collect Application Statistics (Como iniciar um aplicativo autônomo e coletar estatísticas do aplicativo)](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Attach the profiler to a running .NET Framework application (Anexar o criador de perfil a um aplicativo do .NET Framework em execução)**|-   [How to: Attach the Profiler to a .NET Framework Application and Collect Application Statistics (Como anexar o criador de perfil a um aplicativo do .NET Framework e coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Attach the profiler to a running C/C++ application (Anexar o criador de perfil a um aplicativo C/C++ em execução)**|-   [How to: Attach the Profiler to a Native Application and Collect Application Statistics (Como anexar o criador de perfil a um aplicativo nativo e coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)|  
+|**Adicionar dados de interação de camada**|-   [Coletando dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Tarefas relacionadas  
+## <a name="related-tasks"></a>Related Tasks  
   
 ### <a name="profiling-stand-alone-applications"></a>Criando perfil de aplicativos autônomos  
   
@@ -50,8 +50,8 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Criar o perfil de aplicativos Web ASP.NET**|-   [Coletando estatísticas do aplicativo usando amostragem](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
-|**Profile services (Serviços de perfil)**|-   [Coletando estatísticas do aplicativo usando amostragem](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Descreve como coletar estatísticas de desempenho de serviços Windows usando o método de amostragem.|  
+|**Perfis de aplicativos Web ASP.NET**|-   [Coletando estatísticas de aplicativo usando amostragem](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
+|**Profile services (Serviços de perfil)**|-   [Coletando estatísticas de aplicativo usando amostragem](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Descreve como coletar estatísticas de desempenho de serviços Windows usando o método de amostragem.|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>Analisando exibições e relatórios dos dados de amostragem  
  [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)

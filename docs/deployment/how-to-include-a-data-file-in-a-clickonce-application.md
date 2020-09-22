@@ -1,5 +1,6 @@
 ---
-title: Como incluir um arquivo de dados em um aplicativo ClickOnce | Microsoft Docs
+title: Incluir um arquivo de dados em um aplicativo ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630d1b363afa7caeae361f607f4b73929fbba1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdc2154876724feb5c6a0329a2acc5df7ac80fbc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382400"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809140"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Como incluir um arquivo de dados em um aplicativo ClickOnce
 Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que você instala recebe um diretório de dados no disco local do computador de destino onde o aplicativo pode gerenciar seus próprios dados. Os arquivos de dados podem incluir arquivos de qualquer tipo: Arquivos de texto, arquivos XML ou até mesmo arquivos de banco de dados do Microsoft Access (*. mdb*). Os procedimentos a seguir mostram como adicionar um arquivo de dados de qualquer tipo em seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.

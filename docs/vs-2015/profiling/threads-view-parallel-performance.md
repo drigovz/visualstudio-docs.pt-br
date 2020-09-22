@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441665"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838621"
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,14 +69,14 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
   
   Esta é uma ilustração da Exibição de Threads:  
   
-  ![Exibição de threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  ![Modo de Exibição de Threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
   Modo de Exibição de Threads  
   
   Inicialmente, os threads são classificados na ordem em que são criados, para que o thread do aplicativo principal seja o primeiro. É possível usar a opção de classificação no canto superior esquerdo da exibição para classificar threads por outro critério (por exemplo, pela maioria dos trabalhos de execução executada).  
   
   É possível ocultar threads que não estão executando o trabalho selecionando seus nomes na coluna à esquerda e, em seguida, escolhendo o botão **Ocultar Threads Selecionados** na barra de ferramentas. Recomendamos ocultar os threads completamente bloqueados, pois suas estatísticas são irrelevantes e podem obstruir os relatórios.  
   
-  Para identificar threads adicionais a serem ocultados, na legenda ativa, escolha o relatório **Resumo Por Thread** na guia **Relatório de Perfil**. Isso exibe o gráfico de Detalhamento da Execução, que mostra o estado de threads para o intervalo de tempo selecionado. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita.  
+  Para identificar os threads adicionais a serem ocultados, na legenda ativa, escolha o relatório de **Resumo por thread** na guia **relatório de perfil** . Isso exibe o grafo de divisão de execução, que mostra o estado dos threads para o intervalo de tempo selecionado no momento. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita.  
   
   Depois de selecionar um intervalo de tempo e alguns threads nele, é possível iniciar a análise de desempenho.  
   
@@ -94,7 +94,7 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
 ### <a name="thread-execution-details"></a>Detalhes de execução de thread  
  No gráfico de linha do tempo de um thread, os segmentos verdes mostram quando ele estava executando o código. É possível obter informações mais detalhadas sobre um segmento de execução.  
   
- Ao selecionar um ponto em um segmento de execução, a Visualização Simultânea procura esse ponto no tempo na pilha de chamadas relevante e, em seguida, exibe um cursor preto acima do ponto selecionado no segmento de execução e exibe a própria pilha de chamadas na guia **Pilha atual**. É possível selecionar vários pontos no segmento de execução.  
+ Quando você seleciona um ponto em um segmento de execução, o Visualizador de simultaneidade procura esse ponto no tempo na pilha de chamadas relevante e, em seguida, exibe um cursor preto acima do ponto selecionado no segmento de execução e exibe a pilha de chamadas em si na guia de **pilha atual** . Você pode selecionar vários pontos no segmento de execução.  
   
 > [!NOTE]
 > A Visualização Simultânea pode não conseguir resolver uma seleção em um segmento de execução. Normalmente, isso ocorre quando a duração do segmento é inferior a um milissegundo.  
@@ -123,15 +123,15 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
 #### <a name="execution"></a>Execução  
  O Relatório de Execução mostra o detalhamento do tempo gasto pelo aplicativo na execução.  
   
- Para localizar a linha de código em que o tempo de execução é gasto, expanda a árvore de chamadas e, no menu de atalho da entrada da árvore de chamadas, escolha **Exibir Fonte** ou **Exibir Sites de Chamada**. **Exibir Fonte** localiza a linha de código executada. **Exibir Sites de Chamada** localiza a linha de código que chamou a linha de código executada. Se houver apenas um único site de chamada, a linha de código será realçada. Se existirem vários sites de chamada, você poderá selecionar o site desejado na caixa de diálogo exibida e, em seguida, escolher o botão **Ir para fonte** para realçar o código do site de chamada. Geralmente, é mais útil localizar o site de chamada que tem a maioria das instâncias, mais tempo ou ambos. Para obter mais informações, consulte [Relatório de perfil de execução](../profiling/execution-profile-report.md).  
+ Para localizar a linha de código em que o tempo de execução é gasto, expanda a árvore de chamadas e, no menu de atalho da entrada da árvore de chamadas, escolha **Exibir Fonte** ou **Exibir Sites de Chamada**. **Exibir Fonte** localiza a linha de código executada. **Exibir Sites de Chamada** localiza a linha de código que chamou a linha de código executada. Se houver apenas um único site de chamada, a linha de código será realçada. Se existirem vários sites de chamada, você poderá selecionar o site desejado na caixa de diálogo exibida e, em seguida, escolher o botão **Ir para fonte** para realçar o código do site de chamada. Geralmente, é mais útil localizar o site de chamada que tem a maioria das instâncias, mais tempo ou ambos. Para obter mais informações, consulte [relatório de perfil de execução](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Sincronização  
- O relatório de sincronização mostra as chamadas responsáveis por blocos de sincronização, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de sincronização](../profiling/synchronization-time.md).  
+ O relatório de sincronização mostra as chamadas responsáveis por blocos de sincronização, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [tempo de sincronização](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>E/S  
- O relatório de E/S mostra as chamadas responsáveis por blocos de E/S, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de E/S (Exibição Threads)](../profiling/i-o-time-threads-view.md).  
+ O relatório de E/S mostra as chamadas responsáveis por blocos de E/S, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [hora de e/s (exibição de threads)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Sleep  
+#### <a name="sleep"></a>Modo de suspensão  
  O relatório de suspensão mostra as chamadas responsáveis por blocos de suspensão, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de suspensão](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Gerenciamento de memória  
@@ -144,10 +144,10 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
  O relatório de processamento de interface do usuário mostra as chamadas responsáveis por blocos de processamento de interface do usuário, junto com os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, consulte [Tempo de processamento de interface do usuário](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Por Resumo de Thread  
- Esta guia mostra uma exibição de coluna codificada por cores do tempo total gasto por cada thread no estado de execução, bloqueio, E/S e outros estados. As colunas são rotuladas na parte inferior. Ao ajustar o nível de zoom no gráfico de linha do tempo, essa guia é atualizada automaticamente. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita. Se o thread desejado não for exibido, será possível ocultar outros threads. Para obter mais informações, consulte [Relatório de resumo por thread](../profiling/per-thread-summary-report.md).  
+ Esta guia mostra uma exibição de coluna codificada por cores do tempo total gasto por cada thread no estado de execução, bloqueio, E/S e outros estados. As colunas são rotuladas na parte inferior. Ao ajustar o nível de zoom no gráfico de linha do tempo, essa guia é atualizada automaticamente. Em alguns níveis de zoom, alguns threads podem não ser exibidos. Quando isso ocorre, elipses são exibidas à direita. Se o thread desejado não for exibido, será possível ocultar outros threads. Para obter mais informações, consulte [relatório de resumo por thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Operações de disco  
- Esta guia mostra quais processos e threads estavam envolvidos na E/S de disco em nome do processo atual, quais arquivos foram cobertos (por exemplo, DLLs carregadas), quantos bytes foram lidos e outras informações. É possível usar esse relatório para avaliar o tempo gasto no acesso a arquivos durante a execução, especialmente quando o processo parece estar associado à E/S. Para obter mais informações, consulte [Relatório de operações de disco](../profiling/disk-operations-report-threads-view.md).  
+ Esta guia mostra quais processos e threads estavam envolvidos na E/S de disco em nome do processo atual, quais arquivos foram cobertos (por exemplo, DLLs carregadas), quantos bytes foram lidos e outras informações. É possível usar esse relatório para avaliar o tempo gasto no acesso a arquivos durante a execução, especialmente quando o processo parece estar associado à E/S. Para obter mais informações, consulte [relatório de operações de disco](../profiling/disk-operations-report-threads-view.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Visualização Simultânea](../profiling/concurrency-visualizer.md)
+## <a name="see-also"></a>Consulte Também  
+ [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)

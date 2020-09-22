@@ -1,5 +1,6 @@
 ---
-title: Utilitário de linha de comando Visualização Simultânea (CVCollectionCmd) | Microsoft Docs
+title: Utilitário de linha de comando do Visualizador de simultaneidade
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911205"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808897"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)
 É possível usar o utilitário de linha de comando do Visualização Simultânea (*CVCollectionCmd.exe*) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.
@@ -42,7 +43,7 @@ ms.locfileid: "72911205"
 |------------|-----------------|----------------|-------------------|
 |Consulta|Retorna se a coleta pode ser iniciada.|Nenhum|0 se a coleta estiver pronta para começar.<br /><br /> 1 se a coleta já estiver em andamento.<br /><br /> 2 se a coleta não estiver em andamento, mas uma ou mais sessões [ETW](/dotnet/framework/wcf/samples/etw-tracing) necessárias já estiverem habilitadas.|
 |Inicializar|Executa o processo especificado na Visualização Simultânea.|O caminho do executável.|0 se a execução foi bem-sucedida.<br /><br /> 1 se a execução falhou porque não foi possível iniciar o aplicativo de destino.<br /><br /> 13 se a execução falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|
-|Anexar|Começa coletando um rastreamento em todo o sistema. Do contrário, se conecta a um processo, se algum for especificado.|Nenhum.|0 se o anexo for bem-sucedido.<br /><br /> 1 se o anexo falhou porque o processo especificado é inválido ou ambíguo.<br /><br /> 13 se o anexo falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|
+|Attach|Começa coletando um rastreamento em todo o sistema. Do contrário, se conecta a um processo, se algum for especificado.|Nenhum.|0 se o anexo for bem-sucedido.<br /><br /> 1 se o anexo falhou porque o processo especificado é inválido ou ambíguo.<br /><br /> 13 se o anexo falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|
 |Detach|Para a coleta.|Nenhum.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|
 |Analisar|Analisa o rastreamento especificado.|O caminho completo do arquivo CVTrace.|0 se a análise for bem-sucedida.<br /><br /> 1 se a análise não puder ser iniciada porque o rastreamento especificado estava em todo o sistema, mas sem um processo de destino especificado.<br /><br /> 2 se a análise não puder ser iniciada porque o rastreamento não estava em todo o sistema e um processo foi especificado.<br /><br /> 3 se a análise falhou porque o processo especificado é inválido.<br /><br /> 4 se a análise falhou porque o arquivo CVTrace especificado é inválido.|
 |LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|Nenhum.|
@@ -73,7 +74,7 @@ ms.locfileid: "72911205"
 | MarkerProvider | Especifica um único provedor de marcadores. | Deve conter estes elementos:<br /><br /> –   Nível<br />–   GUID<br />–   Nome<br /><br /> Pode conter estes elementos:<br /><br /> –   Categories<br />–   IsEnabled |
 | Nível | Define o nível de importância de um MarkerProvider. | –   Baixa<br />–   Normal<br />–   Alta<br />–   Crítica<br />–   Todas |
 | Guid | O identificador global exclusivo do provedor de marcadores ETW. | Uma GUID. |
-| Name | Especifica a descrição do provedor de marcadores. | Uma cadeia de caracteres. |
+| Nome | Especifica a descrição do provedor de marcadores. | Uma cadeia de caracteres. |
 | Categorias | Especifica as categorias coletadas para o provedor de marcadores. | Uma cadeia de caracteres delimitada por vírgula de números ou intervalos de números. |
 | IsEnabled | Define um valor que determina se o provedor de marcadores está habilitado para a coleção. | -   Verdadeiro<br />-   Falso |
 | FilterConfig | Especifica a lista de opções de configuração dos eventos ETW filtrados da coleção. | Pode conter estes elementos:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |

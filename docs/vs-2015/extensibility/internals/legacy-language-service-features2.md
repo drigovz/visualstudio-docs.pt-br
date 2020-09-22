@@ -1,5 +1,5 @@
 ---
-title: Tem 2 serviço de linguagem herdado | Microsoft Docs
+title: Features2 do serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,25 +11,25 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 885940b90d24b471d1712670f53ea72fcd4d40e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434389"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839250"
 ---
 # <a name="legacy-language-service-features"></a>Recursos do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Os tópicos a seguir listam alguns dos recursos de serviço de linguagem herdada, que você pode fornecer.  
+Os tópicos a seguir listam alguns dos recursos de serviço herdado de linguagem que você pode fornecer.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar um serviço de linguagem, consulte [extensões de serviço de editor e linguagem](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- Explica como implementar a coloração de sintaxe.  
+ Explica como implementar a cor da sintaxe.  
   
  [Formatação automática em um serviço de linguagem herdado](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
  Explica como implementar a formatação automática.  
@@ -38,12 +38,12 @@ Os tópicos a seguir listam alguns dos recursos de serviço de linguagem herdada
  Explica como implementar a dica de ferramenta de informações de parâmetro do IntelliSense.  
   
  [Preenchimento de declaração em um serviço de linguagem herdado](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- Explica como implementar a lista de instrução do IntelliSense e a lista de preenchimento de membro.  
+ Explica como implementar a lista de instruções do IntelliSense e a lista de conclusão de membros.  
   
- [Estruturar em tópicos e texto oculto em um serviço de linguagem herdado](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
- Explica como implementar texto oculto ou estrutura de tópicos.  
+ [Estrutura de tópicos e texto oculto em um serviço de linguagem herdado](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
+ Explica como implementar a estrutura de tópicos ou texto oculto.  
   
- [Como: fornecer suporte expandido a estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- Explica algumas das etapas na implementação de suporte do depurador...  
+ [Como fornecer suporte estendido à estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ Explica algumas das etapas na implementação do suporte a depurador.  
   
 ## <a name="related-sections"></a>Seções relacionadas

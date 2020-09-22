@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Linha de comando de criação de perfil usando a instrumentação | Microsoft Docs'
+title: 'Passo a passo: Criação de perfil de linha de comando usando instrumentação | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439692"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838583"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Passo a passo: Linha de comando usando instrumentação de criação de perfil
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Instruções passo a passo: criação de perfil de linha de comando usando instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo leva você pela criação de perfil de um aplicativo autônomo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Para coletar dados detalhados de tempo e contagem de chamadas usando o método de instrumentação das ferramentas de criação de perfil. Nesta explicação passo a passo, você concluirá as seguintes tarefas:  
@@ -33,7 +33,7 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
 - Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para gerar relatórios com base em arquivo dos dados de criação de perfil.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Pré-requisitos  
   
 - [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
@@ -41,9 +41,9 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
 - Compreensão intermediária de como trabalhar com ferramentas de linha de comando  
   
-- Uma cópia de [amostra do PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Uma cópia do [exemplo de PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
-- Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis. Para obter mais informações, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+- Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis. Para obter mais informações, consulte [How to: Reference Windows Symbol Information](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Criação de perfil da linha de comando usando o método de instrumentação  
  A instrumentação é um método de criação de perfil pelo qual versões especialmente projetadas de binários com perfil contêm funções de teste que coletam informações de tempo na entrada e saída para funções em um módulo instrumentado. Como esse método de criação de perfil é mais invasivo do que a amostragem, resulta em maior quantidade de sobrecarga. Binários instrumentados também são maiores do que os binários de depuração ou liberação e não são destinados a implantação.  
@@ -55,7 +55,7 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
 1. Instale o aplicativo de exemplo PeopleTrax e compile a versão de lançamento.  
   
-2. Abra uma janela de prompt de comando e adicione o diretório **Ferramentas de criação de perfil** à variável de ambiente Path local.  
+2. Abra uma janela de prompt de comando e adicione o diretório **ferramentas de criação de perfil** à variável de ambiente caminho local.  
   
 3. Altere o diretório de trabalho para o diretório que contém os binários de PeopleTrax.  
   
@@ -123,9 +123,9 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
   
      Você pode analisar os relatórios gerados em um programa de planilha ou pode usar o IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para analisar os dados de criação de perfil no arquivo Report.vsp. Para obter mais informações, consulte [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [Criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
- [Exibições de relatório de desempenho](../profiling/performance-report-views.md)
+ [Compreendendo os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)   
+ [Exibições do relatório de desempenho](../profiling/performance-report-views.md)

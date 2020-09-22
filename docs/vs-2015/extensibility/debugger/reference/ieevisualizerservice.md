@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b3bb741aa25cf6695f1dd1d8d66fc0c1846413b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435508"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838415"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa maneira de implementar avaliadores de expressão é preterida. Para obter informações sobre como implementar avaliadores de expressão CLR, consulte os [avaliadores de expressão CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [exemplo de avaliador de expressão gerenciada](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Essa interface implementa métodos principais que fornecem funcionalidade para o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) e [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaces.  
+ Essa interface implementa os principais métodos que fornecem funcionalidade às interfaces [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) e [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -33,39 +33,39 @@ ms.locfileid: "63435508"
 IEEVisualizerService : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Observações para implementadores  
- Visual Studio implementa essa interface para permitir um avaliador de expressão (EE) para dar suporte a visualizadores de tipo.  
+## <a name="notes-for-implementers"></a>Notas para implementadores  
+ O Visual Studio implementa essa interface para permitir que um avaliador de expressão (EE) dê suporte a visualizadores de tipo.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- As chamadas EE [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) obter essa interface como parte de seu suporte para visualizadores de tipo.  
+ O EE chama [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md) para obter essa interface como parte de seu suporte para visualizadores de tipo.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|Recupera o número de visualizadores personalizados sobre os quais esse serviço sabe.|  
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|Recupera a lista de visualizadores personalizados.|  
-|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Retorna um objeto de proxy para uma propriedade.|  
-|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Recupera o número de cadeias de caracteres a ser exibida para a propriedade especificada ou o campo de valor.|  
+|[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|Retorna um objeto proxy para uma propriedade.|  
+|[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|Recupera o número de cadeias de caracteres de valor a serem exibidas para a propriedade ou o campo especificado.|  
   
 ## <a name="remarks"></a>Comentários  
- O IDE usa o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface para determinar se há qualquer visualizadores personalizados ou visualizadores para a propriedade de tipo. Criando um serviço de visualização simultânea (com [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), o EE pode fornecer a funcionalidade para o `IDebugProperty3` e [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (que dá suporte à exibindo e alterando um o valor da propriedade) interfaces e, portanto, dar suporte a visualizadores de tipo.  
+ O IDE usa a interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) para determinar se há algum visualizador personalizado ou Visualizar tipo para a propriedade. Ao criar um serviço visualizador (com [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)), o EE pode fornecer a funcionalidade para o `IDebugProperty3` e o [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (que dá suporte à exibição e alteração de interfaces de valor de uma propriedade) e, portanto, suporte a visualizadores de tipo.  
   
- Se um EE tem visualizadores personalizados que ele próprio implemente, o EE pode acrescentar a `CLSID`s desses visualizadores personalizados para o final da lista retornada por [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Isso permite que um EE dar suporte a visualizadores de tipo e seus próprios visualizadores personalizados. Basta ter certeza de que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflete a adição de quaisquer visualizadores personalizados.  
+ Se um EE tiver visualizadores personalizados implementados por si só, o EE poderá acrescentar os `CLSID` s desses visualizadores personalizados ao final da lista retornada por [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md). Isso permite que um EE ofereça suporte a visualizadores de tipo e seus próprios visualizadores personalizados. Apenas certifique-se de que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflete a adição de qualquer visualizador personalizado.  
   
- Ver [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) para uma discussão sobre a diferença entre os visualizadores e visualizadores.  
+ Consulte Visualizador de [tipos e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) para obter uma discussão sobre a diferença entre visualizadores e visualizadores.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: ee.h  
+ Cabeçalho: EE. h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Interfaces de avaliação de expressão](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)   
- [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Visualizador de tipo e visualizador personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

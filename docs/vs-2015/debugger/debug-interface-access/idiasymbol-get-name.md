@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6609ae23f12a9e85a82448119cb9d0c8ffeaef8e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800440"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838423"
 ---
-# <a name="idiasymbolgetname"></a>IDiaSymbol::get_name
+# <a name="idiasymbolget_name"></a>IDiaSymbol::get_name
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera o nome do símbolo.  
@@ -35,13 +35,13 @@ HRESULT get_name ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o nome do símbolo.  
+ fora Retorna o nome do símbolo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="example"></a>Exemplo  
   
@@ -51,5 +51,5 @@ BSTR        name;
 pType->get_name( &name );  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
