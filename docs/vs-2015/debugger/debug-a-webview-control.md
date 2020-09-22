@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422078"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838577"
 ---
 # <a name="debug-a-webview-control"></a>Depurar um controle do WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
- Para inspecionar e depurar os controles do `WebView` em um aplicativo do Tempo de Execução do Windows, você pode configurar o Visual Studio para anexar o Depurador de Scripts quando iniciar seu aplicativo. No Visual Studio 2013 Update 2, você tem duas formas de interagir com os controles do `WebView` usando o depurador:  
+ Para inspecionar e depurar os controles do `WebView` em um aplicativo do Windows Runtime, você pode configurar o Visual Studio para anexar o Depurador de Scripts quando iniciar seu aplicativo. No Visual Studio 2013 Update 2, você tem duas formas de interagir com os controles do `WebView` usando o depurador:  
   
 - Abra o [Explorador do DOM](../debugger/quickstart-debug-html-and-css.md) para uma instância do `WebView` e inspecione os elementos de DOM, investigue os problemas de estilo de CSS e teste dinamicamente as mudanças renderizadas nos estilos.  
   
@@ -34,7 +34,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Anexar o depurador (C#, Visual Basic, C++)  
   
-1. No Visual Studio, adicione um controle `WebView` ao seu aplicativo de Tempo de Execução do Windows.  
+1. No Visual Studio, adicione um controle `WebView` ao seu aplicativo de Windows Runtime.  
   
 2. No Gerenciador de Soluções, abra as propriedades do projeto, escolhendo **Propriedades** do menu de atalho do projeto.  
   
@@ -42,7 +42,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      ![Anexar o depurador de script](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
-4. (Opcional) Para versões de não Express do Visual Studio, desabilitar a depuração de just-in-time (JIT) escolhendo **ferramentas**, **opções**, **depuração**, **Just-In-Time**, e, em seguida, desabilite a depuração JIT para Script.  
+4. Adicional Para versões não Express do Visual Studio, desabilite a depuração Just-in-time (JIT) escolhendo **ferramentas**, **Opções**, **depuração**, **just-in-time**e, em seguida, desabilitando a depuração JIT para script.  
   
     > [!NOTE]
     > Desabilitando a depuração JIT, você pode ocultar caixas de diálogo para exceções não tratadas que ocorrem em algumas páginas da Web. No Visual Studio Express, a depuração JIT sempre fica desabilitada.  
@@ -59,11 +59,11 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 4. Abra a janela do Explorador do DOM do controle `WebView` escolhendo **Depuração**, **Windows**, **Explorador do DOM** e escolha a URL do `WebView` que deseja inspecionar.  
   
-     ![Abrir o Explorador do DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
+     ![Abrindo o explorador do DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
   
      O Explorador do DOM associado ao `WebView` aparece como uma nova guia no Visual Studio.  
   
-5. Exibir e modificar elementos de DOM ativos e estilos CSS, conforme descrito em [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+5. Exiba e modifique elementos DOM e estilos CSS em tempo real, conforme descrito em [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Usar a janela Console do JavaScript para inspecionar e depurar um controle WebView  
   
@@ -79,12 +79,12 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 5. Na janela Console, selecione a página da Web ou um `iFrame` exibido pelo controle `WebView` na lista **Destino**.  
   
-     ![Destino de seleção na janela do console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
+     ![Seleção de destino na janela do console do JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
     > Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.  
   
-6. Exibir e modificar variáveis no seu aplicativo ou usar comandos do console, conforme descrito em [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
+6. Exiba e modifique variáveis em seu aplicativo ou use comandos de console, conforme descrito em [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos de console JavaScript](../debugger/javascript-console-commands.md).  
   
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>Consulte Também  
+ [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

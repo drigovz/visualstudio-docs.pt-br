@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015639"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739987"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Walkthrough: estender Gerenciador de Servidores para exibir Web Parts
   No Visual Studio, você pode usar o nó **conexões do SharePoint** de **Gerenciador de servidores** para exibir componentes em sites do SharePoint. No entanto, o **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste tutorial, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada site do SharePoint conectado.
@@ -275,7 +275,7 @@ ms.locfileid: "86015639"
 
 1. No **Gerenciador de soluções**, no projeto WebPartNode, abra o arquivo **Source. Extension. vsixmanifest** no editor de manifesto.
 
-     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     O arquivo Source. Extension. vsixmanifest é a base para o arquivo extension. vsixmanifest que todos os pacotes VSIX exigem. Para obter mais informações sobre esse arquivo, consulte [referência do esquema de extensão do VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Na caixa **nome do produto** , insira o **nó Galeria de Web parts para Gerenciador de servidores**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015639"
 10. Na caixa **tipo** , digite **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [elemento Asset (esquema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [elemento Asset (esquema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Na lista **origem** , escolha o item **um projeto na lista de soluções atual** .
 

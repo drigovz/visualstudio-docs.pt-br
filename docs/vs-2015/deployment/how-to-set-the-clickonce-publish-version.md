@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir a publicação do ClickOnce versão | Microsoft Docs'
+title: 'Como: definir a versão de publicação do ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436210"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838427"
 ---
-# <a name="how-to-set-the-clickonce-publish-version"></a>Como: Definir a versão da publicação do ClickOnce
+# <a name="how-to-set-the-clickonce-publish-version"></a>Como definir a versão da publicação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propriedade determina se o aplicativo que você está publicando será tratado como uma atualização. É incrementado a cada versão do tempo, o aplicativo será publicado como uma atualização.  
+A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propriedade determina se o aplicativo que você está publicando será tratado como uma atualização. Cada versão de tempo é incrementada, o aplicativo será publicado como uma atualização.  
   
- O `Publish Version` propriedade pode ser definida na **Publish** página da **Designer de projeto**.  
+ A `Publish Version` propriedade pode ser definida na página **publicar** do designer de **projeto**.  
   
 > [!NOTE]
-> Há uma opção de projeto automaticamente incrementará o `Publish Version` propriedade cada vez que o aplicativo é publicado; essa opção é habilitada por padrão. Para obter mais informações, confira [Como: Incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+> Há uma opção de projeto que incrementará automaticamente a `Publish Version` Propriedade cada vez que o aplicativo for publicado; essa opção é habilitada por padrão. Para obter mais informações, consulte [como incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Para alterar a versão de publicação  
   
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2. Clique o **publicar** guia.  
+2. Clique na guia **Publicar**.  
   
-3. No **Publish Version** campo, incremente o **principais**, **secundárias**, **Build**, ou **revisão** versão números.  
+3. No **campo versão de publicação** , aumente os números de versão **principal**, **secundária**, de **compilação**ou de **revisão** .  
   
     > [!NOTE]
-    > Você nunca deve diminuir um número de versão; Isso pode gerar comportamento de atualização imprevisíveis.  
+    > Você nunca deve decrementar um número de versão; Isso pode causar um comportamento de atualização imprevisível.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Como: Automaticamente incrementar a publicação do ClickOnce versão](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Como: incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Como publicar um Aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

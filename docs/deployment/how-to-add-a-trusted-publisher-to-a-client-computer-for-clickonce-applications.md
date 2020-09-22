@@ -1,5 +1,6 @@
 ---
-title: Adicionar um fornecedor confiável ao computador cliente para aplicativos ClickOnce
+title: Caixa Adicionar fornecedor confiável ao cliente (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594c012aaa49a5b62e9f254f924a71f4934d1ebe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382608"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809801"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Como adicionar um fornecedor confiável a um computador cliente em aplicativos ClickOnce
 Com a implantação de aplicativo confiável, você pode configurar computadores cliente para que seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos sejam executados com um nível mais alto de confiança sem avisar o usuário. Os procedimentos a seguir mostram como usar a ferramenta de linha de comando CertMgr.exe para adicionar o certificado de um Publicador ao repositório de editores confiáveis em um computador cliente.

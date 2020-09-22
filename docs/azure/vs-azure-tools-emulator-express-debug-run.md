@@ -1,5 +1,6 @@
 ---
-title: Emulator Express para executar/depurar o serviço de nuvem do Azure em caixa local
+title: Emulador Express para executar/depurar o serviço de nuvem do Azure localmente
+ms.custom: SEO-VS-2020
 description: Usando o Emulator Express para executar e depurar um serviço de nuvem em um computador local
 author: mikejo5000
 manager: jillfra
@@ -8,12 +9,12 @@ ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 0a6bbf5c846007cb1fa8d8cad91aa252f3d06a72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800366"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809827"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso do Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local
 Ao usar o Emulator Express, você poderá testar e depurar um serviço de nuvem sem executar o Visual Studio como um administrador. É possível definir as configurações do projeto para usar o Emulator Express ou o emulador completo, dependendo dos requisitos do seu serviço de nuvem. Para saber mais sobre o emulador completo, consulte [Executar um aplicativo Azure no emulador de computação](/azure/storage/common/storage-use-emulator).

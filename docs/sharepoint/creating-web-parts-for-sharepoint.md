@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015048"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740151"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar Web Parts para SharePoint
   Usando Web Parts, você pode modificar o conteúdo, a aparência e o comportamento de páginas de um site do SharePoint usando um navegador. As Web Parts são controles do lado do servidor que são executados dentro de uma página de Web Part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -85,7 +85,7 @@ ms.locfileid: "86015048"
 
 - As Web Parts visuais não oferecem suporte direto a tokens do SharePoint Server, como $SPUrl. Para obter mais informações, consulte "restrições de token no Visual de área restrita Web Parts" no tópico [solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-- As Web Parts visuais em uma solução em área restrita eventualmente recebem o erro "a solicitação de execução de código em área restrita foi recusada porque o serviço de host de código em área restrita estava muito ocupado para lidar com a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem no [blog da equipe de desenvolvedores do SharePoint](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157).
+- As Web Parts visuais em uma solução em área restrita eventualmente recebem o erro "a solicitação de execução de código em área restrita foi recusada porque o serviço de host de código em área restrita estava muito ocupado para lidar com a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem no [blog da equipe de desenvolvedores do SharePoint](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157).
 
 - A depuração de JavaScript do lado do servidor não tem suporte no Visual Studio, mas há suporte para a depuração de JavaScript do lado do cliente.
 
@@ -108,7 +108,7 @@ ms.locfileid: "86015048"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar Web Parts para páginas do SharePoint.|
 |[Como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar Web Parts para o SharePoint usando uma superfície de Design Visual.|

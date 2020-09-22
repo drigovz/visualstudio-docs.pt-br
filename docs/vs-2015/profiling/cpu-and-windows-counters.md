@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434296"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838513"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores da CPU e do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
  **Eventos gerais**  
   
-|Nome do Evento|Descrição do evento|  
+|Nome do Evento|Descrição do Evento|  
 |----------------|-----------------------|  
 |Instruções Desativadas|Indica o número de instruções executadas até a conclusão do evento.|  
 |Ciclos Não Interrompidos|Indica apenas os ciclos nos quais o processador não foi interrompido, por exemplo, aguardando E/S.|  
   
  **Eventos de front-end**  
   
-|Nome do Evento|Descrição do evento|  
+|Nome do Evento|Descrição do Evento|  
 |----------------|-----------------------|  
 |Perdas de ITLB|Indica o número de pesquisas de Buffer à Parte de Translação de Instrução que resultaram em uma perda.|  
   
  **Eventos de ramificação**  
   
-|Nome do Evento|Descrição do evento|  
+|Nome do Evento|Descrição do Evento|  
 |----------------|-----------------------|  
 |Ramificações Desativadas|Indica o número de instruções de ramificação executadas até a conclusão do evento.|  
 |Ramificações Previstas Incorretamente|Indica ramificações previstas incorretamente que ocorrem devido ao fato de o processador ter previsto um caminho incorreto. Ramificações previstas incorretamente afetam o desempenho, pois o processador deve descartar todo o trabalho feito e começar novamente em um caminho correto.|  
   
  **Eventos de memória:**  
   
-|Nome do Evento|Descrição do evento|  
+|Nome do Evento|Descrição do Evento|  
 |----------------|-----------------------|  
 |Erros de Leitura de Cache L2|Indica o número de perdas de leitura do cache de segundo nível.|  
 |Referências de Leitura de Cache L2|Indica o número de referências de leitura do cache de segundo nível. Inclui perdas de carga e perdas e ocorrências de RFO (leitura de propriedade).|  
@@ -100,7 +100,7 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
    - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.  
   
-      **Observação** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.  
+      **Observação** Clique em **Cancelar** para retornar à configuração da coleção de contadores anterior.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de contadores do Windows com suporte na plataforma atual  
   
@@ -112,25 +112,25 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
 4. Na lista **Categoria de Contador**, selecione um grupo de contadores. O contador do Windows para o grupo é exibido na caixa de listagem.  
   
-     **Observação:** Clique em **Cancelar** para retornar à configuração anterior de coleta de contadores.  
+     **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.  
   
 ### <a name="command-line"></a>Linha de Comando  
  Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é possível listar os contadores da CPU disponíveis em um computador por meio da linha de comando.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Para listar os contadores da CPU com suporte na plataforma atual  
   
-1. Abra uma janela do prompt de comando.  
+1. Abra una janela de prompt de comando.  
   
 2. Tipo  
   
-     **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd/QueryCounters**  
   
-     em que **\<Visual Studio Performance Tools Directory>** é o caminho para o diretório das Ferramentas de Desempenho de sua instalação do Visual Studio, geralmente  
+     em que **\<Visual Studio Performance Tools Directory>** é o caminho para o diretório de ferramentas de desempenho da instalação do Visual Studio, geralmente  
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
- [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)   
- [Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
- [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)   
+ [Como: coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)

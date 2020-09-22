@@ -1,5 +1,6 @@
 ---
-title: Como instalar pré-requisitos com um aplicativo ClickOnce | Microsoft Docs
+title: Instalar pré-requisitos com um aplicativo ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382374"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809114"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como instalar pré-requisitos com um aplicativo ClickOnce
 Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos exigem que a versão correta do .NET Framework seja instalada em um computador antes que possam ser executadas; muitos aplicativos também têm outros pré-requisitos. Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, você pode escolher um conjunto de componentes de pré-requisito para ser empacotado junto com seu aplicativo. No momento da instalação, uma verificação será executada para cada pré-requisito para determinar se ele já existe; Se não for, ele será instalado antes da instalação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.

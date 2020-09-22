@@ -1,5 +1,5 @@
 ---
-title: 'Como: Coletar dados de desempenho de um site | Microsoft Docs'
+title: Como coletar dados de desempenho de um site da Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432792"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838323"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Como: Coletar dados de desempenho para um Site da Web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site da Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho para um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível criar o perfil de um aplicativo Web que esteja aberto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou criar um perfil de um site da Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que está localizado no computador local e não aberto no IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Você pode usar o **Assistente de desempenho** para coletar dados de desempenho para um [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativo Web. É possível criar o perfil de um aplicativo Web que esteja aberto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou criar um perfil de um site da Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que está localizado no computador local e não aberto no IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 > O **Assistente de Desempenho** permite que você adicione dados de interação de camadas (TIP), dados de desempenho de JScript ou ambos os dados de criação de perfil coletados. A opção TIP coleta dados de processos do servidor. A criação de perfil do JScript coleta dados de scripts que são executados em um site da Web local ou remoto. Na maioria dos casos, você deve escolher apenas uma das opções.  
@@ -58,7 +58,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
     - Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
   
-    - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
+    - Para coletar dados do JavaScript em execução nas páginas da Web, marque a caixa de seleção **perfil JavaScript** .  
   
 6. Clique em **Avançar**.  
   
@@ -80,11 +80,11 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
 5. Na caixa **Qual URL ou Caminho executará seu aplicativo Web** na terceira página do assistente, insira a URL para a home page do aplicativo e, em seguida, clique em **Avançar**.  
   
-   - Para um site baseado em servidor (IIS), digite uma URL como **http://localhost/MySite/default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.  
+   - Para um site baseado em servidor (IIS), digite uma URL como **http://localhost/MySite/default.aspx** . Isso faz com que o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] no computador local na raiz do aplicativo do MySite tenha seu perfil criado e a página default.aspx nesse site seja iniciada no Internet Explorer para iniciar a sessão.  
   
    - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página http://localhost:nnnn/MySite/default.aspx seja iniciada no Internet Explorer para iniciar a sessão.  
   
-   - Para sites externos que você deseja coletar dados de JavaScript, digite a URL, por exemplo, http:\//www.contoso.com.  
+   - Para sites externos em que você deseja coletar dados JavaScript, digite a URL, por exemplo, http: \/ /www.contoso.com.  
   
      Para obter mais informações, exiba as páginas de propriedades para um binário de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
@@ -92,7 +92,7 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
    - Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
   
-   - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
+   - Para coletar dados do JavaScript em execução nas páginas da Web, marque a caixa de seleção **perfil JavaScript** .  
   
 7. Clique em **Avançar**.  
   
@@ -102,8 +102,8 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
      O criador de perfil gera o arquivo de dados e demonstra a exibição dos dados de Resumo na janela principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
- [Noções Básicas sobre Valores de Dados de Instrumentação](../profiling/understanding-instrumentation-data-values.md)   
- [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)
+ [Noções básicas sobre valores de dados de instrumentação](../profiling/understanding-instrumentation-data-values.md)   
+ [Compreendendo os valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

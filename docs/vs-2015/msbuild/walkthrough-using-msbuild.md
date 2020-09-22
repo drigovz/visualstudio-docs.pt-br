@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usando o MSBuild | Microsoft Docs'
+title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445584"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838399"
 ---
 # <a name="walkthrough-using-msbuild"></a>Passo a passo: Usando o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 1. Abra o Visual Studio.  
   
-2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+2. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.  
   
 3. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, `D:\`. Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (`BuildApp`).  
   
@@ -73,7 +73,7 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 - Uma tarefa é a menor unidade de trabalho ou, em outras palavras, é o "átomo" de um build. As tarefas são componentes executáveis independentes que podem ter entradas e saídas. Não existem tarefas referenciadas ou definidas no arquivo de projeto no momento. Você adicionará tarefas ao arquivo de projeto nas seções a seguir. Para obter mais informações, consulte o tópico [Tarefas](../msbuild/msbuild-tasks.md).  
   
-- Um destino é uma sequência nomeada de tarefas. Há dois destinos ao final do arquivo de projeto que atualmente são incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
+- Um destino é uma sequência nomeada de tarefas. No momento, há dois destinos ao final do arquivo de projeto incluídos nos comentários HTML: BeforeBuild e AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -219,7 +219,7 @@ $(PropertyName)
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4. Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):  
+4. Examine a saída. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):  
   
     ```  
     Configuration is Debug  
@@ -241,10 +241,10 @@ $(PropertyName)
  Quase todos os elementos do MSBuild podem ter um atributo Condition. Para mais discussões sobre como usar o atributo Condition, consulte [Condições](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Propriedades Reservadas  
- O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para obter mais informações, confira [Como: O nome ou local do arquivo de projeto de referência](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [MSBuild propriedades reservadas e conhecidas](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para obter mais informações, consulte [como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Variáveis de ambiente  
- Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para obter mais informações, confira [Como: Usar variáveis de ambiente em um Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+ Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para obter mais informações, consulte [como: usar variáveis de ambiente em uma compilação](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
 ## <a name="setting-properties-from-the-command-line"></a>Definindo propriedades na linha de comando  
  As propriedades podem ser definidas na linha de comando usando a opção de linha de comando /property ou /p. Os valores das propriedades recebidos da linha de comando substituem os valores das propriedades definidos no arquivo de projeto e nas variáveis de ambiente.  
@@ -257,7 +257,7 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
    ```  
   
-2. Examine o resultado. Você deverá ver esta linha:  
+2. Examine a saída. Você deverá ver esta linha:  
   
    ```  
    Configuration is Release.  
@@ -265,7 +265,7 @@ $(PropertyName)
   
    O MSBuild cria a propriedade Configuration e atribui a ela o valor "Release".  
   
-## <a name="special-characters"></a>Caracteres especiais  
+## <a name="special-characters"></a>Caracteres Especiais  
  Determinados caracteres têm significado especial em arquivos de projeto do MSBuild. O ponto e vírgula (;) e o asterisco (*) são exemplos desses caracteres. Para usar esses caracteres especiais como literais em um arquivo de projeto, eles devem ser especificados usando a sintaxe %xx, em que xx representa o valor hexadecimal ASCII do caractere.  
   
  Altere a tarefa Message para mostrar o valor da propriedade Configuration com caracteres especiais para torná-la mais legível.  
@@ -286,13 +286,13 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld  
    ```  
   
-4. Examine o resultado. Você deverá ver esta linha:  
+4. Examine a saída. Você deverá ver esta linha:  
   
    ```  
    $(Configuration) is "Debug"  
    ```  
   
-   Para obter mais informações, consulte [Caracteres especiais no MSBuild](../msbuild/msbuild-special-characters.md).  
+   Para obter mais informações, consulte [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md).  
   
 ## <a name="build-items"></a>Compilar itens  
  Um item é uma informação, normalmente um nome de arquivo, que é usado como entrada no sistema de build. Por exemplo, uma coleção de itens que representam os arquivos de origem pode ser passada para uma tarefa chamada Compile para compilá-los em um assembly.  
@@ -348,7 +348,7 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld  
    ```  
   
-4. Examine o resultado. Você deverá ver esta linha longa:  
+4. Examine a saída. Você deverá ver esta linha longa:  
   
    ```  
    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
@@ -378,7 +378,7 @@ $(PropertyName)
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4. Examine o resultado. Você deverá ver estas linhas:  
+4. Examine a saída. Você deverá ver estas linhas:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -402,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- adiciona todos os arquivos com a extensão de arquivo ".jpeg" na pasta de imagens, juntamente com todas as subpastas, ao tipo de item Photos. Para ver mais exemplos, confira [Como: Selecione os arquivos a compilar](../msbuild/how-to-select-the-files-to-build.md).  
+ adiciona todos os arquivos com a extensão de arquivo ".jpeg" na pasta de imagens, juntamente com todas as subpastas, ao tipo de item Photos. Para obter mais exemplos, consulte [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
   
  Observe que, conforme os itens são declarados, eles são adicionados ao tipo de item. Por exemplo,  
   
@@ -423,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- adiciona todos os arquivos com a extensão de arquivo".cs" ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres "Designer". Para ver mais exemplos, confira [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md).  
+ adiciona todos os arquivos com a extensão de arquivo".cs" ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres "Designer". Para obter mais exemplos, consulte [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  O atributo Exclude afeta somente os itens adicionados pelo atributo Include no elemento do item que contém ambos. Por exemplo,  
   
@@ -458,7 +458,7 @@ $(PropertyName)
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5. Examine o resultado. Você deverá ver esta linha:  
+5. Examine a saída. Você deverá ver esta linha:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
@@ -499,7 +499,7 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld  
    ```  
   
-4. Examine o resultado. Você deverá ver estas linhas:  
+4. Examine a saída. Você deverá ver estas linhas:  
   
    ```  
    Compile.DependentUpon:  
@@ -529,7 +529,7 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld  
    ```  
   
-4. Examine o resultado. Você deverá ver estas linhas:  
+4. Examine a saída. Você deverá ver estas linhas:  
   
    ```  
    Compile Filename: Form1  
@@ -567,7 +567,7 @@ $(PropertyName)
    msbuild buildapp.csproj /t:HelloWorld  
    ```  
   
-4. Examine o resultado. Você deverá ver esta linha:  
+4. Examine a saída. Você deverá ver esta linha:  
   
    ```  
    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
@@ -576,8 +576,8 @@ $(PropertyName)
    Observe que os metadados expressados nesta sintaxe não causam o envio em lote.  
   
 ## <a name="whats-next"></a>O que vem a seguir?  
- Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+ Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte Também
 [Visão geral do MSBuild](msbuild.md)  
  [Referência do MSBuild](../msbuild/msbuild-reference.md)

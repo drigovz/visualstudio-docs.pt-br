@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db28ad7fda7224c81bbf5bf4bfa772f6eaaa9800
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64829207"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838691"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que indica se o outro símbolo faz referência ao endereço desse símbolo.  
+Recupera um sinalizador que indica se outro símbolo faz referência ao endereço deste símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,16 +35,16 @@ HRESULT get_addressTaken ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna `TRUE` se outro símbolo faz referência a esse endereço; caso contrário, retornará `FALSE`.  
+ fora Retorna `TRUE` se outro símbolo referencia esse endereço; caso contrário, retorna `FALSE` .  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
 > Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="example"></a>Exemplo  
- No exemplo a seguir `B` referências `A`. Portanto, o símbolo `A`do `get_addressTaken` retorno do método `TRUE`.  
+ No exemplo a seguir, `B` faz referência a `A` . Portanto, o `A` método do símbolo `get_addressTaken` retorna `TRUE` .  
   
 ```cpp#  
 int A  = 0;  
@@ -56,7 +56,7 @@ int* B = &A;
 |Requisito|Descrição|  
 |-----------------|-----------------|  
 |Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
+|Versão:|DIA SDK v 7.0|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

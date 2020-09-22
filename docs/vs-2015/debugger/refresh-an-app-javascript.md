@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446096"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90838504"
 ---
 # <a name="refresh-an-app-javascript"></a>Atualizar um aplicativo (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content.png "windows_and_phone_content")  
   
- Você pode fazer alterações ao seu código enquanto você está depurando e, em seguida, atualizar um aplicativo da Store usando JavaScript escolhendo o **atualizar o Windows app** botão a **depurar** barra de ferramentas. Dessa forma, o aplicativo é recarregado sem parar e reiniciar o depurador. A funcionalidade Atualizar permite que você modifique o código HTML, CSS e JavaScript e veja rapidamente o resultado. Esta funcionalidade tem suporte para os dois aplicativos da Windows Store e da Windows Phone Store.  
+ Você pode fazer alterações em seu código enquanto estiver Depurando e, em seguida, atualizar um aplicativo da loja usando JavaScript escolhendo o botão **Atualizar aplicativo do Windows** na barra de ferramentas **depurar** . Dessa forma, o aplicativo é recarregado sem parar e reiniciar o depurador. A funcionalidade Atualizar permite que você modifique o código HTML, CSS e JavaScript e veja rapidamente o resultado. Esta funcionalidade tem suporte para os dois aplicativos da Windows Store e da Windows Phone Store.  
   
  A atualização não mantém o estado do aplicativo nem reflete as seguintes alterações feitas no aplicativo:  
   
@@ -56,15 +56,15 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 2. Com o modelo aberto no Visual Studio, escolha um destino de depuração.  
   
-     Se um projeto do Windows Phone for seu projeto de inicialização atual, selecione o emulador do Windows Phone para o destino de depuração. Caso contrário, selecione **simulador** ou **Máquina Local**.  
+     Se um projeto do Windows Phone for seu projeto de inicialização atual, selecione o emulador do Windows Phone para o destino de depuração. Caso contrário, selecione **simulador** ou **computador local**.  
   
-     ![Lista de destino de depuração Select](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selecionar lista de destino de depuração](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 3. Pressione F5 para executar o aplicativo no modo de depuração.  
   
 4. Alterne para o Visual Studio. (Pressione F12.)  
   
-5. Na **Gerenciador de soluções**, no **páginas** > **doméstica** pasta, abra home. HTML.  
+5. No **Gerenciador de soluções**, na pasta **pages**  >  **base** páginas, abra home.html.  
   
 6. Altere o texto do título da página, de  
   
@@ -78,9 +78,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     Hello!  
     ```  
   
-7. Clique o **Refresh Windows app** botão, que se parece com isso: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
+7. Clique no botão **Atualizar aplicativo do Windows** , que se parece com este: ![atualizar o botão do aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
   
 8. Altere para o aplicativo. O aplicativo é recarregado sem que o depurador seja reiniciado, e o novo título da página é exibido.  
   
-## <a name="see-also"></a>Consulte também  
- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+## <a name="see-also"></a>Consulte Também  
+ [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986143"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807957"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implantar uma solução do Office usando o Windows Installer
 
@@ -333,7 +333,7 @@ As instalações por usuário exigem apenas um instalador independente do Office
 
 7. Repita esse processo para criar os seguintes valores.
 
-|Tipo do Valor<br /><br />|Name<br /><br />|
+|Tipo do Valor<br /><br />|Nome<br /><br />|
 |--------------|--------|
 |Valor da cadeia de caracteres<br /><br />|**FriendlyName**<br /><br />|
 |Valor DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -504,7 +504,7 @@ Para modificar propriedades personalizadas, você cria um programa que remove a 
 
 ## <a name="see-also"></a>Confira também
 
-- [Pré-requisitos da solução do Office para implantação](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Pré-requisitos da solução do Office para implantação](/previous-versions/bb608617(v=vs.110))
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)
 - [Entradas de registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 - [Visão geral das propriedades do documento personalizado](../vsto/custom-document-properties-overview.md)
