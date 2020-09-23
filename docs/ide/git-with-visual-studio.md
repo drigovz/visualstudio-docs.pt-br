@@ -149,11 +149,11 @@ Os conflitos podem ocorrer durante uma mesclagem se dois desenvolvedores modific
 
 O Visual Studio torna mais fácil identificar e resolver um conflito de mesclagem. Primeiro, a janela do **repositório git** mostra uma barra de informações Gold na parte superior da janela.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Captura de tela da mensagem "mesclagem concluída com conflitos" no Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Captura de tela da mensagem mesclagem concluída com conflitos no Visual Studio ":::
 
 A janela de **alterações do git** também exibe uma mensagem*de "mesclagem em andamento com conflitos*", com os arquivos não mesclados na seção separada abaixo dele.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Captura de tela da mensagem "Mesclar em andamento com conflitos" no Visual Studio ":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Captura de tela da mensagem Mesclar em andamento com conflitos no Visual Studio ":::
 
 Mas se você não tiver nenhuma dessas janelas abertas e, em vez disso, acessar o arquivo que tem conflitos de mesclagem, não precisará pesquisar o seguinte texto:
 
