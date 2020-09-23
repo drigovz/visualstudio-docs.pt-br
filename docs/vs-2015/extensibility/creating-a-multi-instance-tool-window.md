@@ -1,5 +1,5 @@
 ---
-title: Criação de uma janela de ferramentas de várias instâncias | Microsoft Docs
+title: Criando uma janela de ferramentas de várias instâncias | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,29 +12,29 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0dcdfe3f6e488514bb2ee1ca950e952b16039b42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433851"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91102530"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Criando uma janela de ferramentas de várias instâncias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode programar uma janela de ferramentas para que várias instâncias dele podem ser abertas simultaneamente. Por padrão, janelas de ferramenta podem ter apenas uma instância abertos.  
+Você pode programar uma janela de ferramentas para que várias instâncias dela possam ser abertas simultaneamente. Por padrão, as janelas de ferramentas podem ter apenas uma instância aberta.  
   
- Quando você usa uma janela de ferramentas de várias instâncias, você pode mostrar várias origens relacionadas de informações ao mesmo tempo. Por exemplo, você pode colocar uma multilinha <xref:System.Windows.Forms.TextBox> controle em uma janela de ferramenta com várias instâncias para que vários trechos de código estão disponíveis ao mesmo tempo durante uma sessão de programação. Também, por exemplo, você pode colocar um <xref:System.Windows.Forms.DataGrid> controle e uma lista suspensa caixa em uma janela de ferramenta com várias instâncias para que várias fontes de dados em tempo real podem ser rastreadas simultaneamente.  
+ Ao usar uma janela de ferramenta de várias instâncias, você pode mostrar várias fontes de informações relacionadas ao mesmo tempo. Por exemplo, você pode colocar um <xref:System.Windows.Forms.TextBox> controle de várias linhas em uma janela de ferramenta de várias instâncias para que vários trechos de código estejam simultaneamente disponíveis durante uma sessão de programação. Além disso, por exemplo, você pode colocar um <xref:System.Windows.Forms.DataGrid> controle e uma caixa de listagem suspensa em uma janela de ferramentas de várias instâncias para que várias fontes de dados em tempo real possam ser controladas simultaneamente.  
   
-## <a name="creating-a-basic-single-instance-tool-window"></a>Criação de uma janela de ferramentas do Basic (instância única)  
+## <a name="creating-a-basic-single-instance-tool-window"></a>Criando uma janela de ferramentas básica (instância única)  
   
-1. Crie um projeto chamado **MultiInstanceToolWindow** usando o modelo VSIX e adicionar um modelo de item da janela de ferramenta personalizada denominado **MIToolWindow**.  
+1. Crie um projeto chamado **MultiInstanceToolWindow** usando o modelo VSIX e adicione um modelo de item de janela de ferramenta personalizada chamado **MIToolWindow**.  
   
     > [!NOTE]
-    > Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criando uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="making-a-tool-window-multi-instance"></a>Fazendo uma instância múltipla da ferramenta  
+## <a name="making-a-tool-window-multi-instance"></a>Criando uma janela de ferramentas com várias instâncias  
   
-1. Abra o **MIToolWindowPackage.cs** do arquivo e encontre o `ProvideToolWindow` atributo. e o `MultiInstances=true` parâmetro, conforme mostrado no exemplo a seguir.  
+1. Abra o arquivo **MIToolWindowPackage.cs** e localize o `ProvideToolWindow` atributo. e o `MultiInstances=true` parâmetro, conforme mostrado no exemplo a seguir.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -46,15 +46,15 @@ Você pode programar uma janela de ferramentas para que várias instâncias dele
     {. . .}  
     ```  
   
-2. No arquivo MIToolWindowCommand.cs, localize o método ShowToolWindos(). Nesse método, chame o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método e defina seu `create` sinalizador como `false` , de modo que ele irá iterar através de instâncias existentes de janela de ferramenta até uma disponível `id` for encontrado.  
+2. No arquivo MIToolWindowCommand.cs, localize o método ShowToolWindos (). Nesse método, chame o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método e defina seu `create` sinalizador como para `false` que ele seja iterado por meio das instâncias da janela de ferramentas existentes até que uma disponível `id` seja encontrada.  
   
-3. Para criar uma instância de janela da ferramenta, chame o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método e defina seu `id` um valor disponível e seu `create` sinalizador como `true`.  
+3. Para criar uma instância de janela de ferramenta, chame o <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método e defina seu `id` como um valor disponível e seu `create` sinalizador como `true` .  
   
-     Por padrão, o valor da `id` parâmetro do <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método é `0`. Isso torna uma janela de ferramentas de instância única. Para mais de uma instância a ser hospedado, cada instância deve ter seu próprio exclusivo `id`.  
+     Por padrão, o valor do `id` parâmetro do <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> método é `0` . Isso faz uma janela de ferramenta de instância única. Para que mais de uma instância seja hospedada, cada instância deve ter seu próprio exclusivo `id` .  
   
-4. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método na <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é retornado pelo <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriedade da instância de janela de ferramenta.  
+4. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método no <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objeto que é retornado pela <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriedade da instância da janela de ferramentas.  
   
-5. Por padrão, o `ShowToolWindow` método que é criado pelo modelo de item da janela de ferramenta cria uma janela de ferramentas de instância única. O exemplo a seguir mostra como modificar o `ShowToolWindow` método para criar várias instâncias.  
+5. Por padrão, o `ShowToolWindow` método criado pelo modelo de item da janela de ferramentas cria uma janela de ferramenta de instância única. O exemplo a seguir mostra como modificar o `ShowToolWindow` método para criar várias instâncias.  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
