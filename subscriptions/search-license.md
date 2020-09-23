@@ -1,18 +1,18 @@
 ---
 title: Pesquisar e filtrar | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 08/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem localizar assinantes individuais ou grupos no portal de administração.
-ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005297"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022224"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Pesquisar e filtrar assinantes em assinaturas do Visual Studio
 O Portal de Administração de Assinaturas do Visual Studio permite encontrar um subconjunto específico de assinantes com base em vários critérios. Você pode filtrar a lista de assinantes por nome, endereço de email, nível de assinatura e outras informações.
@@ -30,7 +30,7 @@ O Portal de Administração de Assinaturas do Visual Studio permite encontrar um
    > [!NOTE]
    > O campo **Nome** é classificado pelo primeiro nome.
 
-   Observe que o ícone de **filtro** está realçado, indicando que um filtro é aplicado.  Uma opção de **filtro claro** também é exibida. 
+   Observe que o ícone de **filtro** está realçado, indicando que um filtro é aplicado.  Uma opção de **filtro claro** também é exibida. Neste exemplo, filtramos nossa lista de assinantes para encontrar aqueles que tinham @outlook.com endereços de email. 
 
 3. Para limpar o filtro e restaurar a lista não filtrada, clique na guia **Limpar filtro** no canto superior direito. 
    > [!div class="mx-imgBorder"]

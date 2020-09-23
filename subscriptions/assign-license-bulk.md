@@ -1,23 +1,23 @@
 ---
 title: Atribuir licenças a grupos de usuários para assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005760"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022380"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
 
-Para adicionar grandes grupos de usuários, você pode usar o recurso adição em massa ou, se sua organização estiver usando Microsoft Azure Active Directory (Azure AD), você poderá usar grupos do Azure AD. Este artigo explicará o processo para ambas as opções. 
+Para adicionar grandes grupos de usuários, você pode usar o recurso adição em massa ou, se sua organização estiver usando Microsoft Azure Active Directory (Azure AD), você poderá usar grupos do Azure AD. Este artigo explicará o processo para ambas as opções.  Assista a este vídeo ou Continue lendo para saber mais sobre o recurso de adição em massa. 
 
 <br>
 
@@ -64,7 +64,8 @@ Para adicionar grandes grupos de usuários, você pode usar o recurso adição e
 
    Se você encontrar uma falha, siga estas etapas:
    1. Abra o arquivo do Excel que você criou, corrija os problemas e salve o arquivo.
-   0. Retorne ao portal de administração e escolha **Adicionar**.
+   0. Retorne ao portal de administração e ignore a mensagem de erro.
+   0. Escolha **Adicionar**.
    0. Selecione **Adicionar em massa**.
    0. Como você já tem o arquivo do Excel salvo, não é necessário baixar o modelo.  Selecione **procurar**, localize o arquivo que você acabou de salvar e selecione **abrir**.
    0. Selecione **OK**.
@@ -89,6 +90,7 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > - Todos os membros do grupo devem ter um endereço de email associado à sua conta do Azure AD.
 > - Endereços de email separados para notificações não têm suporte para assinaturas adicionadas usando grupos do Azure AD.  
 
+Assista a este vídeo ou Continue lendo para saber mais sobre como adicionar assinantes usando o recurso grupo de Azure Active Directory. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]

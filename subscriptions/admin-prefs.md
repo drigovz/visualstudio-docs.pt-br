@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como definir preferências de idioma, contatos, nível de assinatura e outros no Portal de Administração
-ms.openlocfilehash: e9b5b861260e13b0882a5eabee01db102d63b2af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006157"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022599"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Definir preferências para os contratos no Portal de Administração
 Os superadministradores podem definir certas preferências no portal de administração (Portal do administrador) que serão aplicadas globalmente para cada contrato.  Essas preferências preencherão automaticamente os detalhes da assinatura para seus administradores quando eles estiverem adicionando assinantes e só poderão ser modificados globalmente por superadministradores.  
@@ -47,7 +47,7 @@ Essa preferência fornece uma maneira para seus assinantes acessarem os administ
 > O endereço de email listado aqui NÃO será fornecido aos assinantes.  Quando um assinante envia um **contato com minha** solicitação de administrador no portal do Assinante, a mensagem será encaminhada para o alias sem expô-lo ao Assinante. 
 
 ### <a name="default-subscription-level"></a>Nível de assinatura padrão
-Use essa configuração para determinar qual dos níveis de assinatura incluídos no contrato é selecionado por padrão quando uma assinatura é atribuída a um usuário.  Os administradores podem alterar a configuração para qualquer nível de assinatura no contrato – isso apenas impede que você precise repetidamente fazer a escolha mais comum. 
+Use essa configuração para determinar qual dos níveis de assinatura incluídos no contrato é selecionado por padrão quando uma assinatura é atribuída a um usuário.  Os administradores podem alterar a configuração para qualquer nível de assinatura em seu contrato--isso apenas impede que você tenha que fazer a escolha repetidamente mais comum. 
 
 ### <a name="default-communication-preferences"></a>Opções de comunicação padrão
 A definição de uma localidade e um idioma de comunicação padrão pode simplificar o processo de atribuição de assinaturas.  Por exemplo, caso sua equipe de desenvolvimento esteja localizada em um país diferente daquele da equipe de administração, você poderá definir as preferências mais adequadas à localização dos assinantes. Essas configurações ainda podem ser alteradas por todos os administradores para assinantes individuais. 

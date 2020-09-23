@@ -1,18 +1,18 @@
 ---
 title: Lidar com licenças superalocadas | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver assinaturas Superalocadas
-ms.openlocfilehash: d34f80e4d206e13219d5b9e33f72caddfeffb1b6
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 452363d09c6036d7edae5dab94e5d71ef87fb8b5
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004740"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022573"
 ---
 # <a name="over-allocated-subscriptions"></a>Assinaturas Superalocadas
 Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Isso é chamado de "sobrealocação".  
@@ -36,10 +36,6 @@ Há várias maneiras de resolver superalocações:
 ## <a name="billing-and-true-up"></a>Adequação ("true-up") e cobrança
 Se sua organização tiver um EA (Contrato Enterprise), os administradores poderão atribuir assinaturas sem comprá-las e pagar por elas mais tarde por meio de um processo de reconciliação, conhecido como adequação ("true-up").  Ao superalocar, sua organização será cobrada pelo número máximo de assinaturas atribuídas aos usuários durante a adequação ("true-up").  Isso acontecerá mesmo se você não tiver o número máximo de assinaturas atribuído no momento em que ocorrer a adequação ("true-up").  Para saber mais sobre como monitorar seu uso máximo, acesse o tópico [Uso máximo](maximum-usage.md).
 
-> [!Important]
-> Se as Assinaturas do Visual Studio com o GitHub Enterprise tiverem sido atribuídas por administradores de assinatura do Visual Studio e nunca houver acontecido uma compra dessas assinaturas, elas não estarão visíveis para administradores do GitHub Enterprise dentro da organização. Para garantir que as assinaturas do GitHub Enterprise estejam visíveis, uma compra incluindo **pelo menos um** Visual Studio Professional com o GitHub Enterprise ou o Visual Studio Enterprise com a assinatura do GitHub Enterprise deverá ser feita na primeira vez em que as assinaturas forem atribuídas.
->
-> É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja uma assinatura correspondente do Visual Studio com o GitHub atribuída no portal de gerenciamento para permanecer em conformidade com os requisitos de licenciamento para este assinatura.
 
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)

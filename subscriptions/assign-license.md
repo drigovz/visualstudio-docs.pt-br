@@ -1,18 +1,18 @@
 ---
 title: Atribuir licenças a assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006196"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022185"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -24,7 +24,7 @@ Para grupos de usuários, você tem opções de como atribuir assinaturas.
 
 
 ## <a name="add-a-single-subscriber"></a>Adicionar um único assinante
-Veja como atribuir uma assinatura do Visual Studio a um novo usuário para que eles possam acessar os benefícios da assinatura.
+Assista ao vídeo ou Continue lendo para saber como atribuir uma assinatura do Visual Studio a um novo usuário para que ele possa acessar os benefícios da assinatura.
 
 <br>
 

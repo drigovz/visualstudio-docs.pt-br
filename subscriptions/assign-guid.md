@@ -1,21 +1,23 @@
 ---
 title: Atribuir GUIDs específicos a assinantes do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem especificar uma GUID de assinatura para assinantes
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235180"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022469"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir assinaturas específicas no portal de administração de assinaturas do Visual Studio
 
 Agora, os administradores podem usar o portal de administração de assinaturas do Visual Studio para atribuir assinaturas específicas a assinantes individuais.  Isso pode ser útil em situações em que a organização tem equipes temporárias ou fornecedores que precisam de acesso a uma assinatura por um curto período.  Os administradores podem atribuir uma assinatura que já foi parcialmente usada, deixando suas novas assinaturas para uso de termo mais longo.  
+
+Assista ao vídeo ou Continue lendo para saber como atribuir GUIDs de assinaturas específicas a usuários. 
 
 <br>
 
@@ -57,7 +59,7 @@ A etapa final é baixar o modelo de **adição em massa** , preencher as informa
 > - O GUID ainda não foi atribuído a outro usuário na lista exportada. 
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:How altero qual assinatura está atualmente atribuída a um usuário individual?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>P: Como fazer alterar qual assinatura está atribuída atualmente a um usuário individual?
 R: se você quiser alterar qual GUID é atribuído a um usuário, primeiro você deve excluir a assinatura para esse usuário.  Para obter mais informações, consulte nosso artigo [excluir assinaturas](delete-license.md) para obter mais informações.  Depois de excluir a assinatura para esse usuário, use o processo descrito acima para exportar a lista e carregar as novas informações de assinatura.  
 
 ## <a name="see-also"></a>Confira também

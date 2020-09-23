@@ -1,18 +1,18 @@
 ---
 title: Editar assinaturas no portal do de administração | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem editar atribuições de assinatura.
-ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005581"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022521"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Editar atribuições de assinatura do Visual Studio
 Como administrador de assinaturas, você pode fazer alterações nas assinaturas atribuídas às pessoas na organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias.
@@ -34,6 +34,7 @@ Você pode atualizar o nome, sobrenome, nível de assinatura, endereço de email
 
 Você pode editar vários assinantes de uma vez usando o processo de edição em massa. Esse recurso é usado principalmente para organizações que estão passando por alterações de endereço de email corporativo ou quando uma organização decide restringir o acesso a downloads.
 
+Assista a este vídeo ou Continue lendo para saber como editar vários assinantes usando a edição em massa. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
