@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810868"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211169"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
@@ -51,11 +51,11 @@ Você pode relatar um problema a partir do Visual Studio ou de seu instalador. A
 
     Você pode até mesmo cortar a captura de tela diretamente no navegador para remover partes confidenciais ou não relacionadas.
 
-4. Uma das melhores maneiras de ajudar a equipe de engenharia do Visual Studio a resolver o problema é fornecer um rastreamento e arquivos de despejo de heap a serem examinados. Você pode fazer isso facilmente registrando as etapas que resultaram no bug. 
+4. Uma das melhores maneiras de ajudar a equipe de engenharia do Visual Studio a resolver o problema é fornecer um rastreamento e arquivos de despejo de heap a serem examinados. Você pode fazer isso facilmente registrando as etapas que resultaram no bug.
 
     ![Registrar suas ações ](../ide/media/feedback-recording.png) *somente engenheiros da Microsoft podem ver a gravação*
 
-5. Examine os arquivos anexados e carregue arquivos adicionais se você acreditar que ele ajudará a diagnosticar o problema.   
+5. Examine os arquivos anexados e carregue arquivos adicionais se você acreditar que ele ajudará a diagnosticar o problema.
 
     ![Arquivos anexados ](../ide/media/feedback-attachments.png) *somente engenheiros da Microsoft podem ver os arquivos anexados*
 
@@ -85,7 +85,7 @@ Se você não quiser ou não puder usar o Visual Studio para relatar um problema
 
 Se você não tiver um problema para relatar, mas desejar sugerir um recurso, há um lugar para fazer isso também. Para saber mais, confira a página [Sugerir um recurso](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Diretrizes da comunidade de desenvolvedores](./developer-community-guidelines.md)
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)

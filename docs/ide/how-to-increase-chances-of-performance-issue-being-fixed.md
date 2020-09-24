@@ -4,18 +4,19 @@ description: Informações adicionais e práticas recomendadas para o envio de p
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
+manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810855"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211182"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
-A ferramenta "[relatar um problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
+A ferramenta "[relatar um problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
 
 ## <a name="general-best-practices"></a>Práticas recomendadas gerais
 
@@ -92,7 +93,7 @@ Personalize a contagem de despejo e a pasta de despejo conforme apropriado. Enco
 > [!NOTE]
 > Despejos capturados usando o Gerenciador de tarefas provavelmente serão de um bit de bit incorreto, o que os torna menos utilizáveis. O procedimento descrito acima é a maneira preferida de capturar um despejo de heap. Se você quiser usar o Gerenciador de tarefas, feche aquele que está em execução no momento, inicie o Gerenciador de tarefas de 32 bits (% windir% \\ syswow64 \\taskmgr.exe) e colete um despejo de heap a partir daí.
 
-> [!NOTE] 
+> [!NOTE]
 > Cada arquivo de despejo produzido por esse método terá até 4 GB de tamanho. Certifique-se de definir DumpFolder como um local com espaço em disco adequado ou ajuste o DumpCount adequadamente.
 
 Cada vez que o Visual Studio falhar, ele criará um arquivo de despejo **devenv.exe. [ number] arquivo. dmp** no local configurado.
@@ -105,7 +106,7 @@ Em seguida, use o Visual Studio "relatar um problema..." recurso. Ele permitirá
 
 3. Siga as etapas em "[como relatar um problema](./how-to-report-a-problem-with-visual-studio.md)" e anexe o despejo de heap a um novo item de comentário.
 
-> [!NOTE] 
+> [!NOTE]
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o despejo de heap capturado no momento da falha.
 
 ## <a name="unresponsiveness"></a>Falta
@@ -118,18 +119,18 @@ Conforme descrito na seção correspondente sobre falhas, para problemas que pod
 **Falta de resposta desconhecida**
 
 Se uma falta de resposta se manifestar de maneira imprevisível, na próxima ocorrência, inicie uma nova instância do Visual Studio e relate um problema dessa instância.
-Na [tela "registro"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro), certifique-se de selecionar a sessão do Visual Studio que não está respondendo.
+Na tela "registro", certifique-se de selecionar a sessão do Visual Studio que não está respondendo. (Para obter mais informações sobre como registrar ações que podemos seguir para reproduzir o problema, consulte a etapa 8 na página [como relatar um problema](./how-to-report-a-problem-with-visual-studio.md) .)
 
 Se a instância do Visual Studio que não está respondendo foi iniciada no modo de administrador, a segunda instância também precisaria ser iniciada no modo de administrador.
 
->[!NOTE] 
+>[!NOTE]
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o despejo de heap capturado no momento da falta de resposta.
 
 ## <a name="slowness-and-high-cpu-issues"></a>Lentidão e problemas de CPU alta
 
 O que torna um problema de uso de CPU lentidão ou alto mais acionável é um rastreamento de desempenho capturado enquanto a operação lenta ou o evento de CPU alto está em andamento.
 
->[!NOTE] 
+>[!NOTE]
 > Quando possível, isole cada cenário em um relatório de comentários separado e específico.
 Por exemplo, se a digitação e a navegação forem lentas, siga as etapas abaixo uma vez por problema. Isso ajuda a equipe de produto a isolar a causa de problemas específicos.
 
@@ -165,9 +166,9 @@ Para obter melhores resultados na captura do desempenho, siga estas etapas:
 
 Durante a gravação de um rastreamento de desempenho, se a operação lenta ou a alta CPU que você está relatando chegar a um fim, pare imediatamente a gravação. Se muitas informações forem coletadas, as informações mais antigas serão substituídas. Se o rastreamento não for interrompido em breve (dentro de alguns segundos) após a operação interessante, os dados de rastreamento úteis serão substituídos.
 
-Não anexe diretamente rastreamentos de desempenho a itens de comentários existentes no site da comunidade de desenvolvedores. A solicitação/fornecimento de informações adicionais é um fluxo de trabalho com suporte no relatório interno de uma ferramenta problemática do Visual Studio. Se um rastreamento de desempenho for necessário para resolver um item de comentário anterior, definiremos o estado do item de comentário como "precisa de mais informações", que pode ser respondida da mesma maneira que relatar um novo problema. Para obter instruções detalhadas, consulte a [seção "precisar de mais informações"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) em relatar um documento da ferramenta de problema.
+Não anexe diretamente rastreamentos de desempenho a itens de comentários existentes no site da comunidade de desenvolvedores. A solicitação/fornecimento de informações adicionais é um fluxo de trabalho com suporte no relatório interno de uma ferramenta problemática do Visual Studio. Se um rastreamento de desempenho for necessário para resolver um item de comentário anterior, definiremos o estado do item de comentário como "precisa de mais informações", que pode ser respondida da mesma maneira que relatar um novo problema. Para obter instruções detalhadas, consulte a [seção "precisar de mais informações"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) em relatar um documento da ferramenta de problema.
 
-> [!NOTE] 
+> [!NOTE]
 > **Comentários mais valiosos:** Para quase todos os problemas de CPU lentidão/alta, os comentários mais valiosos são uma descrição de alto nível do que você estava tentando fazer, juntamente com o rastreamento de desempenho ( \*.etl.zip) que captura o comportamento durante esse tempo.
 
 **Rastreamentos de desempenho avançados**
@@ -177,7 +178,8 @@ Os recursos de coleta de rastreamento no relatório-uma ferramenta de problema s
 ## <a name="out-of-process-issues"></a>Problemas fora do processo
 
 > [!NOTE]
-> A partir do Visual Studio 2019 versão 16,3, os logs fora do processo são anexados automaticamente aos comentários enviados usando o relatório uma ferramenta problemática. No entanto, se o problema for reproduzido diretamente, seguir as etapas a seguir ainda poderá ajudar a adicionar informações adicionais para ajudar a diagnosticar melhor o problema.
+> A partir do Visual Studio 2019 versão 16,3, os logs fora do processo são anexados automaticamente aos comentários enviados usando o relatório uma ferramenta problemática.
+No entanto, se o problema for reproduzido diretamente, seguir as etapas a seguir ainda poderá ajudar a adicionar informações adicionais para ajudar a diagnosticar melhor o problema.
 
 Há vários processos de satélite que são executados paralelamente ao Visual Studio e fornecem diversos recursos de fora do processo principal do Visual Studio. Se ocorrer um erro em um desses processos de satélite, ele geralmente é visto no lado do Visual Studio como um ' StreamJsonRpc. RemoteInvocationException ' ou um ' StreamJsonRpc. ConnectionLostException '.
 
@@ -191,7 +193,7 @@ O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionai
 2. Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
 3. Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)

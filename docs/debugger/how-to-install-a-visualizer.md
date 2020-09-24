@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851405"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211359"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como instalar um visualizador
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar um visualizador é um processo simples.
@@ -32,7 +32,7 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Para instalar um visualizador para o Visual Studio 2019
-  
+
 1. Localize a DLL que contém o visualizador que você criou.
 
    Normalmente, é melhor se a DLL do lado do depurador e a DLL do lado do depurador especificarem **qualquer CPU** como a plataforma de destino. A DLL do lado do depurador deve ser **qualquer CPU** ou **32 bits**. A plataforma de destino para a DLL do lado do depurador deve corresponder ao processo do depurador.
@@ -42,7 +42,7 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Copie a dll [do lado depurador](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) para qualquer um dos seguintes locais:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Estrutura*
@@ -61,7 +61,7 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
 4. Reinicie a sessão de depuração.
 
 > [!NOTE]
-> O procedimento é diferente no Visual Studio 2017 e mais antigo. Consulte a [versão anterior](how-to-install-a-visualizer.md?view=vs-2017) deste artigo.
+> O procedimento é diferente no Visual Studio 2017 e mais antigo. Consulte a [versão anterior](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) deste artigo.
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -84,6 +84,6 @@ Após ter criado um visualizador, você deverá instalar o visualizador de modo 
 > Se você quiser usar um visualizador gerenciado para a depuração remota, copie a DLL no mesmo caminho no computador remoto.
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Como escrever um visualizador](create-custom-visualizers-of-data.md)

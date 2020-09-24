@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350635"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211109"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar um controle WebView em um aplicativo UWP
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350635"
 
 - Abra o [Explorador do DOM](../debugger/quickstart-debug-html-and-css.md) para uma instância do `WebView` e inspecione os elementos de DOM, investigue os problemas de estilo de CSS e teste dinamicamente as mudanças renderizadas nos estilos.
 
-- Selecione a página da Web ou o `iFrame` exibido na instância `WebView` como alvo na janela [Console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017), em seguida, interaja com a página da Web usando os comandos do console. O console dá acesso ao contexto de execução do script atual.
+- Selecione a página da Web ou o `iFrame` exibido na instância `WebView` como alvo na janela [Console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true), em seguida, interaja com a página da Web usando os comandos do console. O console dá acesso ao contexto de execução do script atual.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Anexar o depurador (C#, Visual Basic, C++)
 
@@ -81,8 +81,8 @@ ms.locfileid: "85350635"
     > [!NOTE]
     > Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.
 
-6. Exiba e modifique variáveis em seu aplicativo ou use comandos de console, conforme descrito em [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos de console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
+6. Exiba e modifique variáveis em seu aplicativo ou use comandos de console, conforme descrito em [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos de console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
