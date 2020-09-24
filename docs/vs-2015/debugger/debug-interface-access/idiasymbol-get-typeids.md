@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 410f8afdac24139791c19c3936049c855a51d4f9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798173"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91146912"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera uma matriz de valores de identificador de tipo de compilador específicos para esse símbolo.  
+Recupera uma matriz de valores de identificador de tipo específicos do compilador para este símbolo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,19 +37,19 @@ HRESULT get_typeIds ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `cTypeIds`  
- [in] Tamanho do buffer para manter os dados.  
+ no Tamanho do buffer para armazenar os dados.  
   
  `pcTypeIds`  
- [out] Retorna o número de `typeIds` escrita, ou, se `typeIds` é `NULL`, em seguida, o número total de identificadores de tipo disponíveis.  
+ fora Retorna o número de `typeIds` gravados ou, se `typeIds` for `NULL` , o número total de identificadores de tipo disponíveis.  
   
  `typeIds[]`  
- [out] Uma matriz que deve ser preenchida com os identificadores de tipo.  
+ fora Uma matriz que deve ser preenchida com os identificadores de tipo.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
+## <a name="return-value"></a>Valor Retornado  
+ Se for bem-sucedido, retorna `S_OK` ; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

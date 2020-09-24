@@ -1,5 +1,5 @@
 ---
-title: 'Como: Restaurar comandos ocultos do depurador | Microsoft Docs'
+title: 'Como: restaurar comandos do depurador ocultos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442072"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147234"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Como: Restaurar comandos ocultos do depurador
+# <a name="how-to-restore-hidden-debugger-commands"></a>Como restaurar comandos de depurador ocultos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de configurações padrão da IDE para a sua linguagem de programação principal. As configurações padrão da IDE para algumas linguagens podem ocultar alguns comandos do depurador.  
@@ -40,11 +40,11 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
   
 1. Com um projeto aberto, no menu **Ferramentas**, clique em **Personalizar**.  
   
-2. Na caixa de diálogo **Personalizar**, clique na guia **Comandos**.  
+2. Na caixa de diálogo **Personalizar** , clique na guia **Comandos** .  
   
 3. Na lista suspensa da **barra de menus**:, selecione o menu **Depurar** que você deseja que contenha o comando restaurado.  
   
-4. Clique o **adicionar comando...** .  
+4. Clique no **comando adicionar...** .  
   
 5. Na caixa **Adicionar Comando**, selecione o comando que você deseja adicionar, e clique em **OK**.  
   
@@ -72,12 +72,12 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
   
 6. Na página **Escolha as configurações a importar**, em **Opções**, verifique se **Depurando** está selecionado. Desmarque as outras caixas de seleção, a menos que você também queira importar essas configurações.  
   
-7. Clique em **Finalizar**.  
+7. Clique em **Concluir**.  
   
 8. Na página **Importação Concluída**, revise todos os erros associados à redefinição das configurações em **Detalhes**.  
   
-9. Clique em **Fechar**.  
+9. Clique em **fechar**  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)
