@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875608fbaa2e5c7532371fd95858fe87cdc81ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40da28cce9d2189b2f30ff6ea958926f3041836
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815884"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135073"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio
 
@@ -55,7 +55,7 @@ Veja a seguir as limitações conhecidas do Hot recarregamento XAML. Para soluci
 |Gerenciando pacotes NuGet (adicionando/removendo/atualizando pacotes)|Sem suporte|Sem suporte|Nenhum|
 |Alterando a associação de dados que usa a extensão de marcação {x:Bind}|N/D|Com suporte a partir do Visual Studio 2019|Isso requer o Windows 10 versão 1809 (Build 10.0.17763). Sem suporte no Visual Studio 2017 ou em versões anteriores.|
 |Não há suporte para a alteração de diretivas x:Uid|N/D|Sem suporte|Nenhum|
-|Vários processos | Sem suporte | Sem suporte | A recarga a quente só pode ser usada em um processo de cada vez. |
+|Vários processos | Com suporte | Com suporte | Com suporte no Visual Studio 2019 [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6) e posterior |
 
 ## <a name="error-messages"></a>Mensagens de erro
 

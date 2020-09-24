@@ -2,7 +2,7 @@
 title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
-ms.custom: contperfq1
+ms.custom: contperfq2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04344e361bea15c39b092c59e76d1853e3969e2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89738314"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91134812"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 
@@ -193,7 +193,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 
  define a propriedade chamada TargetFrameworkVersion, dando a ela o valor de cadeia de caracteres "v 4.5".
 
- As propriedades de build podem ser redefinidas a qualquer momento. Se
+ As propriedades de build podem ser redefinidas a qualquer momento. If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -612,7 +612,7 @@ Observe que os metadados expressados nesta sintaxe não causam o envio em lote.
 
  Para saber como criar um arquivo de projeto simples uma etapa de cada vez, experimente o [passo a passos: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
