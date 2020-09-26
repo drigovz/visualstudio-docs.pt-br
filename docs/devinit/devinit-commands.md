@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005527"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352323"
 ---
 # <a name="devinit-commands"></a>comandos devinit
 
@@ -34,10 +34,10 @@ Opções opcionais para o `devinit init` comando.
 
 | Argumento             | Obrigatório | Descrição                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file           | No       | Caminho para o _.devinit.jsno_ arquivo.                                         |
-| --ação de erro       | No       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
-| -v,--detalhado         | No       | Emitir saída detalhada.                                                      |
-| -n,--execução seca         | No       | Simulação de execução.                                                                  |
+| -f,--file           | Não       | Caminho para o _.devinit.jsno_ arquivo.                                         |
+| --ação de erro       | Não       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
+| -v,--detalhado         | Não       | Emitir saída detalhada.                                                      |
+| -n,--execução seca         | Não       | Simulação de execução.                                                                  |
 
 ## <a name="run"></a>Executar
 
@@ -53,12 +53,12 @@ Opções para o `devinit run` comando.
 
 | Argumento                                  | Obrigatório | Descrição                                                                          |
 |-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta                                 | Sim      | Necessário. O nome da ferramenta.                                                             |
-| -i,--entrada                                | No       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                           |
-| --ação de erro                            | No       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
-| -v,--detalhado                              | No       | Emitir saída detalhada.                                                                 |
-| -n,--execução seca                              | No       | Simulação de execução.                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | No       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
+| -t,--ferramenta                                 | Sim      | Obrigatórios. O nome da ferramenta.                                                             |
+| -i,--entrada                                | Não       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                           |
+| --ação de erro                            | Não       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
+| -v,--detalhado                              | Não       | Emitir saída detalhada.                                                                 |
+| -n,--execução seca                              | Não       | Simulação de execução.                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | Não       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
 
 #### <a name="--file-argument"></a>--argumento de arquivo
 
@@ -67,7 +67,7 @@ Especifica o caminho para o _devinit.jsno arquivo. Se – file não for especifi
 * {diretório atual} \\.devinit.jsem
 * {diretório atual} \\ . devinit \\.devinit.jsem
 
-Observação: caminhos sem a entrelinha `.` no diretório ou nome de arquivo também serão correspondentes.
+Os caminhos sem a entrelinha `.` no diretório ou no nome de arquivo também corresponderão.
 
 #### <a name="--error-action-argument"></a>--argumento de ação de erro
 
@@ -87,7 +87,7 @@ Comandos da ferramenta Echo que seriam executados, mas não executam nenhuma fer
 
 Emitir saída detalhada para a saída padrão. Se a ferramenta a ser executada oferecer suporte a uma opção detalhada, propague o comutador detalhado para a ferramenta.
 
-#### <a name="note-on-additional-command-line-arguments"></a>Observação sobre argumentos de linha de comando adicionais
+#### <a name="additional-command-line-arguments"></a>Argumentos de linha de comando adicionais
 
 Usar um `<arg>` que inclui um espaço em seu valor deve incluir um par adicional de aspas de escape.
 
@@ -117,7 +117,7 @@ Imprime uma lista de todas as ferramentas disponíveis.
 
 | Argumento       | Obrigatório | Descrição                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta      | Sim      | Necessário. O nome da ferramenta.                                                             |
+| -t,--ferramenta      | Sim      | Obrigatórios. O nome da ferramenta.                                                             |
 
 Imprime informações de ajuda para uma determinada ferramenta.
 

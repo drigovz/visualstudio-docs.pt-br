@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038550"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352277"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Como migrar projetos de extensibilidade para o Visual Studio 2017
 
@@ -172,7 +172,7 @@ Ao pesquisar suas dependências, você verá que uma dependência pode ser mapea
 
 Para fornecer mais orientações, identificamos alguns tipos de extensão comuns e seus pré-requisitos sugeridos:
 
-Tipo de extensão | Nome de exibição | ID
+Tipo de extensão | Nome de Exibição | ID
 --- | --- | ---
 Editor | Editor do Visual Studio Core | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# e Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,7 +181,7 @@ Depurador | Depurador Just-In-Time | Microsoft.VisualStudio.Component.Debugger.J
 
 ## <a name="find-component-ids"></a>Localizar IDs de componente
 
-A lista de componentes classificados pelo produto Visual Studio é a [carga de trabalho do visual studio 2017 e as IDs de componentes](../install/workload-and-component-ids.md?view=vs-2019). Use essas IDs de componente para suas IDs de pré-requisito em seu manifesto.
+A lista de componentes classificados pelo produto Visual Studio é a [carga de trabalho do visual studio 2017 e as IDs de componentes](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true). Use essas IDs de componente para suas IDs de pré-requisito em seu manifesto.
 
 Se você não tiver certeza de qual componente contém um binário específico, baixe o [componente > planilha de mapeamento binário](https://aka.ms/vs2017componentid-binaries).
 

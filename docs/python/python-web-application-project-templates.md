@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 246c23f2eb0cb92a2120db5071b6460ff0efb293
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809879"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352330"
 ---
 # <a name="python-web-application-project-templates"></a>Modelos de projeto de aplicativo Web Python
 
@@ -75,7 +75,7 @@ Ao criar um projeto com base em um modelo específico à estrutura, uma caixa de
 
 Se estiver usando o controle do código-fonte, normalmente, você omitirá a pasta de ambiente virtual, pois esse ambiente poderá ser recriado usando apenas o *requirements.txt*. A melhor maneira de excluir a pasta é primeiro selecionar **Eu os instalarei sozinho** no prompt mostrado acima. Em seguida, desabilite a confirmação automática antes de criar o ambiente virtual. Para obter detalhes, confira [Tutorial – Conheça o Django – Etapas 1-2 e 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) e [Tutorial – Conheça o Flask – Etapas 1-2 e 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Ao implantar o Serviço de Aplicativo do Microsoft Azure, selecione uma versão do Python como uma [extensão de site](./managing-python-on-azure-app-service.md?view=vs-2019) e instalar os pacotes manualmente. Além disso, como o Serviço de Aplicativo do Azure **não** instala pacotes automaticamente de um arquivo *requirements.txt* quando implantado por meio do Visual Studio, siga os detalhes de configuração em [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
+Ao implantar o Serviço de Aplicativo do Microsoft Azure, selecione uma versão do Python como uma [extensão de site](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true) e instalar os pacotes manualmente. Além disso, como o Serviço de Aplicativo do Azure **não** instala pacotes automaticamente de um arquivo *requirements.txt* quando implantado por meio do Visual Studio, siga os detalhes de configuração em [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
 Os Serviços de Nuvem do Microsoft Azure *dão* suporte ao arquivo *requirements.txt*. Consulte [Azure cloud service projects](python-azure-cloud-service-project-template.md) (Projetos do Serviço de Nuvem do Azure) para obter detalhes.
 

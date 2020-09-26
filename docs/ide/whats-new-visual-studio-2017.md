@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809512"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352171"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -104,7 +104,7 @@ Para ver uma lista de suas extensões no Visual Studio, clique em **ferramentas*
 
 O Roaming Extension Manager rastreia todas as extensões instaladas, mas você pode escolher quais você deseja adicionar à lista de Roaming.
 
-![Visual Studio 2017 – Caixa de diálogo Extensões e Atualizações](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017-Gerenciador de extensões de roaming](media/vs2017ide-RoamingExtensionManager.png)
 
 Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua lista:
 
@@ -222,7 +222,7 @@ Para obter mais informações, consulte a postagem de blog [Use the new Exceptio
 
 Você pode navegar e exibir instantâneos usando os botões **voltar** e **Avançar** na barra de ferramentas **depurar** . Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**. Voltar ou avançar para um evento ativa automaticamente a depuração histórica no evento selecionado.
 
-![A nova caixa de diálogo Auxiliar de Exceção no Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botões voltar e avançar da etapa")
+![Exemplo de retorno do IntelliTrace no Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Botões voltar e avançar da etapa")
 
 Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/view-historical-application-state.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
 

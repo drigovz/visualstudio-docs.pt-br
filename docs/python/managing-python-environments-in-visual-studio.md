@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809905"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352343"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -124,7 +124,7 @@ Por esse motivo, os desenvolvedores geralmente criam um *ambiente virtual* para 
 
 O Visual Studio dá suporte direto para a criação de um ambiente virtual para um projeto. Por exemplo, se você abrir um projeto que contenha um *requirements.txt* ou criar um projeto usando um modelo que inclua esse arquivo, o Visual Studio solicitará que você crie automaticamente um ambiente virtual e instale essas dependências.
 
-A qualquer momento dentro de um projeto aberto, você pode criar um ambiente virtual. No **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse no nó **Ambientes do Python** e selecione “Adicionar Ambiente Virtual”. Para obter mais informações, confira [Criar um ambiente virtual](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+A qualquer momento dentro de um projeto aberto, você pode criar um ambiente virtual. No **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse no nó **Ambientes do Python** e selecione “Adicionar Ambiente Virtual”. Para obter mais informações, confira [Criar um ambiente virtual](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 O Visual Studio também fornece um comando para gerar um arquivo *requirements.txt* de um ambiente virtual, facilitando a recriação do ambiente em outros computadores. Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -239,7 +239,7 @@ Use as seguintes etapas para identificar um ambiente instalado em um local não 
 
     ![Opção de ambiente personalizado na caixa de diálogo Adicionar ambiente](media/environments/environments-custom-2-2019.png)
 
-1. Nos campos fornecidos na caixa de diálogo, insira ou procure (usando **...**) o caminho do interpretador em **Caminho do prefixo**, que preenche a maioria dos outros campos. Depois de revisar esses valores e modificar conforme necessário, selecione **Adicionar**. 
+1. Nos campos fornecidos na caixa de diálogo, insira ou procure (usando **...**) o caminho do interpretador em **Caminho do prefixo**, que preenche a maioria dos outros campos. Depois de revisar esses valores e modificar conforme necessário, selecione **Adicionar**.
 
     ![Os campos para especificar detalhes para uma opção de ambiente personalizado na caixa de diálogo Adicionar ambiente](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Para corrigir um ambiente que não tem uma opção de reparo, ou para remover um
     - Se o ambiente ainda existir no computador, altere o valor de **ExecutablePath** para o local correto. Corrija também os valores **(Padrão)** e **WindowedExecutablePath**, conforme necessário.
     - Se o ambiente não existir mais no computador e você desejar removê-lo da janela **Ambientes do Python**, exclua o nó pai de **InstallPath**, como **3.6** na imagem acima.
     - Configurações inválidas no **HKEY_CURRENT_USER \software\python** substituir as configurações em **HKEY_LOCAL_MACHINE \software\python**
-    
+
 ## <a name="see-also"></a>Confira também
 
 - [Instalar interpretadores do Python](installing-python-interpreters.md)

@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810318"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352356"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -63,7 +63,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **depurar**  >  **Windows**  >  **Módulos**.)
 
-    Para obter mais informações, consulte [Noções básicas sobre arquivos de símbolo](?view=vs-2019).
+    Para obter mais informações, consulte [Noções básicas sobre arquivos de símbolo](?view=vs-2019&preserve-view=true).
 
 - **Desabilitar Ferramentas de Diagnóstico**
 

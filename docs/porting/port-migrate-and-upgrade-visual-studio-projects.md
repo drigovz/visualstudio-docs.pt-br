@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211320"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352297"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referência de migração e atualização de projeto do Visual Studio
 
@@ -43,7 +43,7 @@ Este artigo fornece detalhes somente para os tipos de projeto que o Visual Studi
 
 A lista a seguir descreve o suporte do Visual Studio 2017 a projetos que foram criados em versões anteriores.
 
-Se não estiver listado aqui um projeto ou um tipo de arquivo que deveria estar, consulte a [versão deste artigo para o Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015) e use o botão **Fornecer comentários sobre** > **Esta página** na parte inferior desta página para fornecer detalhes do seu projeto. (Se você usar o controle anônimo "Esta página é útil?", talvez não sejamos capazes de responder aos seus comentários.)
+Se não estiver listado aqui um projeto ou um tipo de arquivo que deveria estar, consulte a [versão deste artigo para o Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true) e use o botão **Fornecer comentários sobre** > **Esta página** na parte inferior desta página para fornecer detalhes do seu projeto. (Se você usar o controle anônimo "Esta página é útil?", talvez não sejamos capazes de responder aos seus comentários.)
 
 | Tipo de projeto | Suporte |
 | --- | --- |
@@ -104,9 +104,9 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end
@@ -198,7 +198,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Referência de atualização e de migração de projeto para o Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)

@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037524"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352310"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analisar o desempenho do banco de dados usando a ferramenta de banco de dados
 
@@ -50,7 +50,7 @@ Depois de encontrar uma consulta que você deseja investigar, clique com o botã
 
 ![Ir para o arquivo de origem selecionado](./media/db-gotosource.png "Ir para o arquivo de origem selecionado")
 
-Se você selecionar um intervalo de tempo em um grafo, a tabela de consulta mostrará somente as consultas que ocorreram durante esse intervalo de tempo. Esse comportamento é especialmente útil quando você também executa a [ferramenta de uso da CPU](./cpu-usage.md?view=vs-2019).
+Se você selecionar um intervalo de tempo em um grafo, a tabela de consulta mostrará somente as consultas que ocorreram durante esse intervalo de tempo. Esse comportamento é especialmente útil quando você também executa a [ferramenta de uso da CPU](./cpu-usage.md?view=vs-2019&preserve-view=true).
 
 ## <a name="see-also"></a>Confira também
 
