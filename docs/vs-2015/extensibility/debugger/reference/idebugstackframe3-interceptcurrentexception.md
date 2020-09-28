@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
+title: 'IDebugStackFrame3:: InterceptCurrentException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42472690431d48a9baafbb0abee27c1a07d24fcd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428696"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91403863"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Chamado pelo depurador no quadro de pilhas atual quando quer interceptar a exceção atual.  
+Chamado pelo depurador no quadro de pilha atual quando deseja interceptar a exceção atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -42,33 +42,33 @@ int InterceptCurrentException(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwFlags`  
- [in] Especifica as ações diferentes. Atualmente, apenas o [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valor `IEA_INTERCEPT` tem suporte e deve ser especificado.  
+ no Especifica ações diferentes. Atualmente, somente o valor de [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) tem `IEA_INTERCEPT` suporte e deve ser especificado.  
   
  `pqwCookie`  
- [out] Valor exclusivo que identifica uma exceção específica.  
+ fora Valor exclusivo que identifica uma exceção específica.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+## <a name="return-value"></a>Valor retornado  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
- A seguir estão os retornos de erro mais comuns.  
+ Veja a seguir os retornos de erro mais comuns.  
   
 |Erro|Descrição|  
 |-----------|-----------------|  
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|A exceção atual não pode ser interceptada.|  
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|O quadro atual da execução não tiver sido pesquisados à procura um manipulador ainda.|  
-|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Esse método não tem suporte para este quadro.|  
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|O quadro de execução atual ainda não foi procurado um manipulador.|  
+|`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Este método não tem suporte para este quadro.|  
   
 ## <a name="remarks"></a>Comentários  
- Quando uma exceção é lançada, o depurador assume o controle de tempo de execução nos pontos-chave durante o processo de tratamento de exceções. Durante esses momentos cruciais, o depurador pode pedir o quadro de pilhas atual se o quadro Quer interceptar a exceção. Dessa forma, uma exceção interceptada é essencialmente um manipulador de exceção do sistema em funcionamento para um quadro de pilha, mesmo que esse quadro de pilha não tem um manipulador de exceção (por exemplo, um bloco try/catch no código do programa).  
+ Quando uma exceção é lançada, o depurador obtém o controle do tempo de execução em pontos-chave durante o processo de tratamento de exceção. Durante esses momentos chave, o depurador poderá solicitar o registro de ativação atual se o quadro quiser interceptar a exceção. Dessa forma, uma exceção interceptada é essencialmente um manipulador de exceção em tempo real para um registro de ativação, mesmo que esse quadro de pilha não tenha um manipulador de exceção (por exemplo, um bloco try/catch no código do programa).  
   
- Quando o depurador quer saber se a exceção deve ser interceptada, ele chama esse método no objeto de quadro de pilha atual. Esse método é responsável por gerenciar todos os detalhes da exceção. Se o [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interface não está implementada ou a `InterceptStackException` método retorna qualquer erro e, em seguida, o depurador continua o processamento de exceção normalmente.  
+ Quando o depurador quiser saber se a exceção deve ser interceptada, ela chamará esse método no objeto de quadro de pilha atual. Esse método é responsável por lidar com todos os detalhes da exceção. Se a interface [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) não for implementada ou o `InterceptStackException` método retornar qualquer erro, o depurador continuará processando a exceção normalmente.  
   
 > [!NOTE]
-> Exceções podem ser interceptadas apenas em código gerenciado, ou seja, quando o programa que está sendo depurado está em execução em tempo de execução .NET. Obviamente, os implementadores de linguagem de terceiros podem implementar `InterceptStackException` em seus próprios mecanismos de depuração se desejarem.  
+> As exceções só podem ser interceptadas em código gerenciado, ou seja, quando o programa que está sendo depurado está em execução no tempo de execução do .NET. É claro que os implementadores de linguagem de terceiros podem implementar `InterceptStackException` em seus próprios mecanismos de depuração se escolherem.  
   
- Depois que a interceptação for concluída, uma [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) é sinalizado.  
+ Depois que a interceptação for concluída, um [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) será sinalizado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Consulte Também  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)
