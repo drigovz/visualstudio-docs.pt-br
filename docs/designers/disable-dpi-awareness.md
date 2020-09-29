@@ -1,17 +1,17 @@
 ---
 title: Desabilitar o reconhecimento de DPI no Visual Studio
 description: Discute as limitações do Designer de Formulários do Windows em monitores de HDPI e como executar o Visual Studio como um processo sem reconhecimento de DPI.
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5444cdf8c82486f3669e82f7bb333607da2afc48
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249967"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421788"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Desabilitar o reconhecimento de DPI no Visual Studio
 
@@ -43,6 +43,9 @@ Há três opções para resolver o problema de exibição:
 - [Reiniciar o Visual Studio como um processo sem reconhecimento de DPI](#restart-visual-studio-as-a-dpi-unaware-process)
 - [Adicionar uma entrada de registro](#add-a-registry-entry)
 - [Definir a configuração de dimensionamento de exibição como 100%](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> Se você preferir gerenciar as configurações da linha de comando, o [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)  usa `/noscale` como um parâmetro de linha de comando para ser executado no modo de dimensionamento de 100%.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Reiniciar o Visual Studio como um processo sem reconhecimento de DPI
 
