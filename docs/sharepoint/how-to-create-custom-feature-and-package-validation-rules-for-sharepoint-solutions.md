@@ -1,5 +1,6 @@
 ---
-title: 'Soluções do SharePoint: criar recurso personalizado, regras de validação de pacote'
+title: Criar validações de recursos e pacotes para soluções do SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016908"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585817"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Como criar regras de validação de pacotes e recursos personalizados para soluções do SharePoint
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Criar validações de recursos e pacotes para soluções do SharePoint
+
   Você pode criar regras de validação personalizadas para verificar o pacote de solução gerado pelo Visual Studio. Você pode executar a validação completa em um recurso ou pacote inteiro selecionando **validar** no menu de contexto de um pacote ou recurso no **PackagingExplorer**. A validação parcial é executada quando você adiciona novos itens de projeto do SharePoint ou recursos ao projeto para determinar se o pacote ou recurso estaria em um estado válido.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Para criar uma regra de validação de pacote personalizada
