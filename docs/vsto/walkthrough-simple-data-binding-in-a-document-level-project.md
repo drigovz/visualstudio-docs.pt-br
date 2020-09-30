@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: vinculação de dados simples em um projeto de nível de documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981056"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584918"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Walkthrough: vinculação de dados simples em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da vinculação de dados em um projeto de nível de documento. Um único campo de dados em um banco de dado SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. O Walkthrough também mostra como adicionar controles que permitem percorrer todos os registros na tabela.

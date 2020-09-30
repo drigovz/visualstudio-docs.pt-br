@@ -1,5 +1,6 @@
 ---
-title: 'Como: usar um arquivo de recurso para especificar nomes, propriedades e permissões localizadas | Microsoft Docs'
+title: Como usar um arquivo de recurso em um projeto do SharePoint | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,14 +20,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015396"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585739"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Como: usar um arquivo de recurso para especificar nomes, propriedades e permissões localizadas
+# <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Como usar um arquivo de recurso em um projeto do SharePoint
+
   Usando um arquivo de recurso, você pode fornecer nomes localizados, definir propriedades e aplicar permissões Tor objetos que são definidos em um modelo de BDC (conectividade de dados corporativos). Para especificar essas informações, você adiciona um item de **recurso de conectividade de dados corporativos** a um projeto que contém um item de **modelo de conectividade de dados corporativos** . Em seguida, especifique nomes, propriedades e permissões editando o XML para o arquivo de recurso.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Para adicionar um arquivo de recurso do BDC a um projeto do SharePoint

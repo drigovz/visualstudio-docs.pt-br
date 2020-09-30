@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950478"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583938"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar em uma pasta usando Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Você pode usar a ferramenta de publicação para publicar o console do .NET Cor
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - O [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado com o .NET Core está habilitado.
-- Um console do .NET Core ou ASP.NET Core projeto. Se você ainda não tiver um projeto, [crie um](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Um console do .NET Core ou ASP.NET Core projeto. Se você ainda não tiver um projeto, [crie um](./create-new-projects.md?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publicar na Pasta
 

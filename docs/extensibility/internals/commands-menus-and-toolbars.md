@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac0125586210164555b335644ce3dcc8128df17
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: eda858cc10bd07b1516b805360b5d7eb5e361b95
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011795"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584068"
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandos, menus e barras de ferramentas
 Menus e barras de ferramentas são a maneira como os usuários acessam comandos em seu VSPackage. Os comandos são funções que realizam tarefas, como imprimir um documento, atualizar uma exibição ou criar um novo arquivo. Menus e barras de ferramentas são maneiras gráficas convenientes de apresentar seus comandos aos usuários. Normalmente, os comandos relacionados são agrupados no mesmo menu ou barra de ferramentas.
@@ -26,7 +26,7 @@ Menus e barras de ferramentas são a maneira como os usuários acessam comandos 
 
 - Normalmente, as barras de ferramentas são linhas de botões e outros controles, como caixas de combinação, caixas de listagem, caixas de texto e controladores de menu. Todos os controles da barra de ferramentas estão associados a comandos. Quando você clica em um botão da barra de ferramentas, seu comando associado é ativado. Os botões da barra de ferramentas geralmente têm ícones que sugerem os comandos subjacentes, como uma impressora para um comando Print. Em um controle de lista suspensa, cada item da lista é associado a um comando diferente. Um controlador de menu é um híbrido no qual um lado do controle é um botão da barra de ferramentas e o outro lado é uma seta para baixo que exibe comandos adicionais quando clicado. Para obter mais informações, consulte [Adicionar um controlador de menu a uma barra de ferramentas](../../extensibility/adding-a-menu-controller-to-a-toolbar.md).
 
-- Ao criar um comando, você também deve criar um manipulador de eventos para ele. O manipulador de eventos determina quando o comando é visível ou habilitado, permite que você modifique seu texto e garante que o comando responda adequadamente ("rotas") quando ativado. Na maioria dos casos, o IDE manipula comandos usando a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Comandos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rota de maneira hierárquica, começando com o contexto de comando mais interno, com base na seleção local, e prosseguindo para o contexto mais externo, com base na seleção global. Os comandos adicionados ao menu principal estão imediatamente disponíveis para scripts. Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015) e [objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md).
+- Ao criar um comando, você também deve criar um manipulador de eventos para ele. O manipulador de eventos determina quando o comando é visível ou habilitado, permite que você modifique seu texto e garante que o comando responda adequadamente ("rotas") quando ativado. Na maioria dos casos, o IDE manipula comandos usando a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Comandos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rota de maneira hierárquica, começando com o contexto de comando mais interno, com base na seleção local, e prosseguindo para o contexto mais externo, com base na seleção global. Os comandos adicionados ao menu principal estão imediatamente disponíveis para scripts. Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true) e [objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md).
 
   Para definir novos menus e barras de ferramentas, você deve descrevê-los em um arquivo de tabela de comando do Visual Studio (*. vsct*). O modelo de pacote do Visual Studio cria esse arquivo para você, juntamente com os elementos necessários para dar suporte a quaisquer comandos, barras de ferramentas e editores selecionados no modelo. Como alternativa, você pode escrever seu próprio arquivo *. vsct* , usando o esquema XML descrito aqui: [referência de esquema XML vsct](../../extensibility/vsct-xml-schema-reference.md).
 

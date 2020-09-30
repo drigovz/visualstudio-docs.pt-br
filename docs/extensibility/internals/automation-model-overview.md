@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012159"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584562"
 ---
 # <a name="automation-model-overview"></a>Visão geral do modelo de automação
 O modelo de automação consiste em um conjunto de objetos em que é possível escrever um suplemento ou uma extensão do Visual Studio. Um suplemento é um aplicativo que pode manipular o ambiente do Visual Studio e automatizar tarefas comuns. Uma extensão do Visual Studio pode criar componentes personalizados do Visual Studio ou adicionar à funcionalidade de componentes padrão, como o editor de texto.
@@ -38,9 +38,9 @@ O modelo de automação consiste em um conjunto de objetos em que é possível e
 
 - Código
 
-- Build
+- Compilação
 
-Para obter mais informações sobre automação, consulte [automação e extensibilidade para o Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015). Este documento e os documentos aos quais ele fornece links, ajudam você a tomar decisões sobre como você deve fornecer automação para seu VSPackage.
+Para obter mais informações sobre automação, consulte [automação e extensibilidade para o Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true). Este documento e os documentos aos quais ele fornece links, ajudam você a tomar decisões sobre como você deve fornecer automação para seu VSPackage.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Como: criar um suplemento](/previous-versions/80493a3w(v=vs.140))

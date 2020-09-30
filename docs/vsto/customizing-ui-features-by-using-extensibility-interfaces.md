@@ -1,5 +1,6 @@
 ---
 title: Personalizar recursos de interface do usuário usando interfaces de extensibilidade
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838302"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583834"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidam com muitos detalhes de implementação ao usá-los para criar painéis de tarefas personalizados, personalizações da faixa de forma e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar a *interface de extensibilidade* para cada recurso se tiver requisitos especiais.

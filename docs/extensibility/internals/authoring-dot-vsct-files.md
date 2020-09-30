@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012146"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583678"
 ---
 # <a name="author-vsct-files"></a>Arquivos Author. vsct
 Este documento mostra como criar um arquivo *. vsct* para adicionar itens de menu, barras de ferramentas e outros elementos de interface do usuário ao IDE (ambiente de desenvolvimento integrado) do Visual Studio. Use estas etapas quando você adicionar elementos de interface do usuário a um pacote do Visual Studio (VSPackage) que ainda não tem um arquivo *. vsct* .
@@ -108,7 +108,7 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
        > [!NOTE]
        > Os botões da barra de ferramentas devem ter ícones.
 
-   Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+   Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
 4. Se qualquer um dos seus comandos exigir ícones, adicione um elemento [bitmaps](../../extensibility/bitmaps-element.md) ao `Commands` elemento. Em seguida, para cada ícone, adicione um elemento [bitmap](../../extensibility/bitmap-element.md) ao `Bitmaps` elemento. É aqui que você especifica o local do recurso de bitmap. Para obter mais informações, consulte [Adicionar ícones a comandos de menu](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
 
    - Controlador de menu: um controlador de menu é um botão que tem uma seta ao lado dele. Clicar na seta abre uma lista. Para adicionar um controlador de menu à interface do usuário, crie um `Menu` elemento e defina seu `type` atributo como `MenuController` ou `MenuControllerLatched` , dependendo do comportamento desejado. Para preencher um controlador de menu, defina-o como o pai de um `Group` elemento. O controlador de menu exibirá todos os filhos desse grupo em sua lista suspensa.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Estender menus e comandos](../../extensibility/extending-menus-and-commands.md)
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Referência de esquema XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

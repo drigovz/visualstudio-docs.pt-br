@@ -1,5 +1,6 @@
 ---
 title: Criar item de projeto de coluna de site com modelo de projeto, parte 1
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eceaa4db4bb31870ee66fbffae8882fc93d9abbb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739909"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585544"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: criar um item de projeto de coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associando-os a um modelo de projeto. Neste tutorial, você definirá um tipo de item de projeto para criar uma coluna de site e, em seguida, criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto de coluna de site.

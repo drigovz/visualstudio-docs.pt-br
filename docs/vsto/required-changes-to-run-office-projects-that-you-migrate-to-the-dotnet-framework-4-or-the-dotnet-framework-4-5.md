@@ -1,5 +1,6 @@
 ---
-title: Alterações necessárias para projetos do Office migrados para o .NET Framework 4, 4,5
+title: Alterações necessárias para projetos do Office migrados para o .NET 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810961"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584458"
 ---
-# <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Alterações necessárias para executar projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5
+# <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Alterações necessárias para projetos do Office migrados para o .NET 4,5
+
   Se a estrutura de destino de um projeto do Office for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, você deverá executar as seguintes tarefas para garantir que a solução possa ser executada no computador de desenvolvimento e nos computadores dos usuários finais:
 
 - Remova o <xref:System.Security.SecurityTransparentAttribute> do projeto se você o tiver atualizado do Visual Studio 2008.

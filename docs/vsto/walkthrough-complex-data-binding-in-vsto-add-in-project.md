@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: ligação de dados complexa no projeto de suplemento do VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0d65bd96a3860070addc6dc05a791d71959f5ea
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985491"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585035"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Walkthrough: ligação de dados complexa no projeto de suplemento do VSTO
   Você pode associar dados a controles de host e controles de Windows Forms em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a uma Microsoft Office planilha do Excel e associar os controles aos dados em tempo de execução.

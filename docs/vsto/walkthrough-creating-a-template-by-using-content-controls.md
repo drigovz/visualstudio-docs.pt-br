@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: criar um modelo usando controles de conteúdo'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffb7d7f9ad5453d38709802bf5e004c07bb09622
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255585"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585022"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Walkthrough: criar um modelo usando controles de conteúdo
   Este tutorial demonstra como criar uma personalização em nível de documento que usa controles de conteúdo para criar conteúdo estruturado e reutilizável em um modelo do Word Microsoft Office.
@@ -76,7 +77,7 @@ ms.locfileid: "71255585"
    |**Nome do funcionário**|
    |**Hire Date**|
    |**Título**|
-   |**Imagem**|
+   |**Picture**|
 
 4. Clique na primeira célula na segunda coluna (ao lado do **nome do funcionário**).
 

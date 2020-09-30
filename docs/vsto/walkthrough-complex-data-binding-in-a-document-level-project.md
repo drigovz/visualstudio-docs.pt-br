@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: ligação de dados complexa em um projeto de nível de documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692350"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584315"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: ligação de dados complexa em um projeto de nível de documento
   Este tutorial demonstra os conceitos básicos da ligação de dados complexa em um projeto de nível de documento. Você pode associar várias células em uma Microsoft Office planilha do Excel a campos no banco de dados Northwind SQL Server.

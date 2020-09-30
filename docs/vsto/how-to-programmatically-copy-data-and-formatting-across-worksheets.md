@@ -1,5 +1,6 @@
 ---
 title: Copiar dados e formatação entre planilhas programaticamente
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546101"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585256"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Como: copiar dados e formatação programaticamente em planilhas
   Você pode copiar dados de um intervalo em uma planilha para todas as outras planilhas em uma pasta de trabalho usando o <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método. Especifique um intervalo e se deseja copiar dados, formatação ou ambos.

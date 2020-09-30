@@ -1,5 +1,6 @@
 ---
 title: 'Como: anexar arquivos por meio de programação a itens de email do Outlook'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2427ffc634976462e27eb788259184ce69347769
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546127"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585321"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Como: anexar arquivos por meio de programação a itens de email do Outlook
   Este exemplo anexa um arquivo a um novo item de email e o envia para Armando fixar. O exemplo supõe que uma pessoa chamada Armando fixar existe como o destinatário.

@@ -1,5 +1,6 @@
 ---
 title: Limitações programáticas de itens de host e controles de host
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +31,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97b94291a3fd057e82bd79aa4f6c3220020bc24a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 098145ca901b1f16974058513d3781fc4621f217
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255810"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584471"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitações programáticas de itens de host e controles de host
   Cada item de host e controle de host é projetado para se comportar como uma palavra Microsoft Office nativa correspondente ou Microsoft Office objeto do Excel, com funcionalidade adicional. No entanto, há algumas diferenças fundamentais entre o comportamento de itens de host e controles de host e objetos nativos do Office em tempo de execução.

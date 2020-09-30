@@ -1,5 +1,6 @@
 ---
 title: Criar controle de usuário para página de aplicativo do SharePoint ou Web Part
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fbf1b646ae9e7fb697fcab93adfb8661a4372c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c8a99562d937d7b10c3539888c2dd62eb1d1da
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016978"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584094"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Como: criar um controle de usuário para uma página de aplicativo do SharePoint ou Web Part
   Você pode criar controles de usuário personalizados que fornecem funcionalidade personalizada para sua solução do SharePoint e pode reutilizar essa funcionalidade em seu projeto. Você pode incluir os controles de usuário em uma página da Web Part ou do aplicativo, adicionar outros controles ASP.NET e controles do SharePoint e definir propriedades e métodos para o controle. Para obter mais informações sobre controles de usuário, consulte [criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) e controles de [usuário e controles de servidor no SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -33,7 +34,7 @@ ms.locfileid: "86016978"
 
 3. Na barra de menus, escolha **projeto**  >  **Adicionar novo item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é aberta.
+     A caixa de diálogo **Adicionar novo item** é aberta.
 
 4. No painel **instalado** , escolha o nó **Office/SharePoint** .
 

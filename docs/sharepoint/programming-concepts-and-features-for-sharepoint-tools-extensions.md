@@ -1,5 +1,6 @@
 ---
 title: Conceitos de programação & recursos para extensões de ferramenta do SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 607f4841ea66a01d64a6c0c2b93b07e3cd0a5a43
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66401748"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585700"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Conceitos e recursos de programação para extensões de ferramentas do SharePoint
   Há vários conceitos e recursos de programação importantes relacionados às ferramentas do SharePoint no Visual Studio. Esses conceitos e recursos desempenham um papel importante na maioria das extensões das ferramentas do SharePoint.

@@ -1,5 +1,6 @@
 ---
 title: 'Convert: tipos de sistema de projeto do SharePoint de/para outros tipos'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b3e32114b10eae776f39e4c3d7337bba636f3f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835991"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584640"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>Converter entre os tipos do sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio
   Em alguns casos, você pode ter um objeto no sistema de projeto do SharePoint e deseja usar recursos de um objeto correspondente no modelo de objeto de automação ou no modelo de objeto de integração do Visual Studio ou vice-versa. Nesses casos, você pode usar o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> método do serviço de projeto do SharePoint para converter o objeto em um modelo de objeto diferente.

@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402490"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584029"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Criar Blazor aplicativos Web
 
 Este guia oferece uma introdução à criação do seu primeiro Blazor aplicativo Web. Para obter diretrizes mais detalhadas, consulte [introdução ao ASP.NET Core Blazor ](/aspnet/core/blazor/index).
 
-O ASP.NET Core Blazor dá suporte a duas opções de hospedagem diferentes; Blazor WebAssembly (WASM) ou Blazor servidor. O Visual Studio para Mac dá suporte a ambos os modelos de hospedagem. O Visual Studio para Mac 8.4 + dá suporte ao Blazor servidor e Visual Studio para Mac 8.6 + dá suporte a ambos. Para obter mais informações sobre Blazor modelos de hospedagem, consulte [ASP.NET Core modelos de Blazor hospedagem ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). O suporte para depuração de Blazor WebAssembly projetos no Visual Studio para Mac está disponível na versão de visualização do v 8.8 (disponível por meio do canal de atualização de visualização no **Visual Studio > verificar se há atualizações..** . menu).
+O ASP.NET Core Blazor dá suporte a duas opções de hospedagem diferentes; Blazor WebAssembly (WASM) ou Blazor servidor. O Visual Studio para Mac dá suporte a ambos os modelos de hospedagem. O Visual Studio para Mac 8.4 + dá suporte ao Blazor servidor e Visual Studio para Mac 8.6 + dá suporte a ambos. Para obter mais informações sobre Blazor modelos de hospedagem, consulte [ASP.NET Core modelos de Blazor hospedagem ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). O suporte para depuração de Blazor WebAssembly projetos no Visual Studio para Mac está disponível na versão de visualização do v 8.8 (disponível por meio do canal de atualização de visualização no **Visual Studio > verificar se há atualizações..** . menu).
 
 O que é Blazor ? Blazor é uma estrutura para a criação de interface do usuário da Web interativa do lado do cliente com o .NET, que oferece as seguintes vantagens para os desenvolvedores da Web:
 
@@ -101,7 +101,7 @@ Esta pasta contém as páginas da Web de um projeto, que usam uma extensão de a
 
 Essa pasta inclui componentes compartilhados, também usando a extensão *. Razor* . Você verá que isso inclui o *MainLayout. Razor*, que é usado para definir o layout comum em todo o aplicativo. Ele também inclui o componente *NavMenu. Razor* compartilhado, que é usado em todas as páginas. Se você estiver criando componentes reutilizáveis, eles irão para a pasta **compartilhada** .
 
-### <a name="app-settings"></a>Configurações do aplicativo
+### <a name="app-settings"></a>Configurações de aplicativo
 
 O *appSettings.jsno* arquivo contém dados de configuração, como cadeias de conexão.
 
@@ -116,7 +116,7 @@ Essa pasta contém arquivos estáticos, como HTML, JavaScript e arquivos CSS. Sa
 Esse arquivo contém o ponto de entrada para o programa. Saiba mais em [Host da Web do ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="no-locblazor-server-app-specific-files"></a>Blazor Arquivos específicos do aplicativo de servidor
-#### <a name="app-settings"></a>Configurações do aplicativo
+#### <a name="app-settings"></a>Configurações de aplicativo
 
 O *appSettings.jsno* arquivo contém dados de configuração, como cadeias de conexão.
 

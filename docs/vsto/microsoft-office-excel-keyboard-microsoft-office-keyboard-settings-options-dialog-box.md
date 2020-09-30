@@ -1,5 +1,6 @@
 ---
-title: Teclado do Office Excel, configurações de teclado, caixa de diálogo opções
+title: Teclado do Office Excel, configurações, caixa de diálogo opções
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836032"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584510"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office de teclado do Excel, Microsoft Office configurações de teclado, caixa de diálogo opções
+# <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office o teclado do Excel, configurações, caixa de diálogo opções
   Microsoft Office o Excel e o Visual Studio lidam com teclas de atalho. A mesma combinação de teclas de atalho pode representar comandos diferentes no Excel e no Visual Studio. Quando o Excel é aberto em um projeto de nível de documento no Visual Studio, somente um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel os receba quando o documento tiver foco, selecionando **esquema de teclado dinâmico**.
 
  Se você usar uma tecla de atalho que não esteja atribuída a um comando no aplicativo que está manipulando as teclas de atalho no momento, a tecla de atalho será passada para o outro aplicativo.

@@ -1,5 +1,5 @@
 ---
-title: Como associar programaticamente uma página da Web a uma pasta do Outlook
+title: Associar uma página da Web a uma pasta do Outlook
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546140"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585334"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Como associar programaticamente uma página da Web a uma pasta do Outlook
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>Associar uma página da Web a uma pasta do Outlook
+
   Este exemplo verifica uma pasta chamada `HtmlView` em Microsoft Office Outlook. Se a pasta não existir, o código criará a pasta e atribuirá uma página da Web a ela. Se a pasta existir, o código exibirá o conteúdo da pasta.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

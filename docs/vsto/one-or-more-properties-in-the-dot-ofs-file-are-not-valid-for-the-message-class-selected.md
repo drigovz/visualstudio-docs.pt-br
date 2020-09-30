@@ -1,5 +1,5 @@
 ---
-title: Uma ou mais propriedades no arquivo .ofs não são válidas para a classe de mensagem selecionada
+title: Propriedades inválidas no arquivo. OFS para a classe de mensagem "
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977855"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584653"
 ---
-# <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Uma ou mais propriedades no arquivo .ofs não são válidas para a classe de mensagem selecionada
-  Esse erro aparece quando você importa uma região de formulário projetada no Outlook, mas um ou mais campos na região de formulário não são compatíveis com as classes de mensagem que você seleciona na página final do assistente de **nova região de formulário** .
+# <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Propriedades inválidas no arquivo. OFS para a classe de mensagem
+
+  O erro "uma ou mais propriedades no arquivo. OFS não são válidas para a classe de mensagem selecionada" aparece quando você importa uma região de formulário projetada no Outlook, mas um ou mais campos na região de formulário não são compatíveis com as classes de mensagem que você seleciona na página final do assistente de **nova região de formulário** .
 
 Por exemplo, você pode selecionar **tarefa (IPM. Tarefa)** na página final do assistente de **nova região de formulário** . Se a região do formulário tiver um campo de **endereço comercial** , você receberá esse erro porque uma tarefa não tem um endereço comercial. Portanto, o campo de **endereço comercial** não é compatível com a `IPM.Task` classe Message.
 

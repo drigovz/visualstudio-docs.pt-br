@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402607"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584003"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
 
@@ -66,7 +66,7 @@ O Painel de Soluções organiza os projetos em uma solução:
 
 É aqui que os arquivos para o código-fonte, recursos, interface do usuário e dependências são organizados em Projetos específicos da plataforma.
 
-Para saber mais sobre como usar os Projetos e Soluções no Visual Studio para Mac, veja o artigo [Projetos e Soluções](/visualstudio/mac/projects-and-solutions).
+Para saber mais sobre como usar os Projetos e Soluções no Visual Studio para Mac, veja o artigo [Projetos e Soluções](./projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Referências de assembly
 
@@ -78,7 +78,7 @@ As referências adicionais são adicionadas usando a caixa de diálogo **Editar 
 
 ![Caixa de diálogo Editar Referências](media/ide-tour-image20.png)
 
-Para saber mais sobre como usar Referências no Visual Studio para Mac, veja o artigo [Gerenciando referências em um projeto](/visualstudio/mac/managing-references-in-a-project).
+Para saber mais sobre como usar Referências no Visual Studio para Mac, veja o artigo [Gerenciando referências em um projeto](./managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dependências/pacotes
 
@@ -90,7 +90,7 @@ Para adicionar uma dependência ao seu aplicativo, clique com botão direito do 
 
 ![Adicionar um pacote NuGet](media/ide-tour-image21.png)
 
-As informações sobre como usar um pacote do NuGet em um aplicativo podem ser encontradas no artigo [Incluindo um projeto NuGet em seu projeto](/visualstudio/mac/nuget-walkthrough).
+As informações sobre como usar um pacote do NuGet em um aplicativo podem ser encontradas no artigo [Incluindo um projeto NuGet em seu projeto](./nuget-walkthrough.md).
 
 ## <a name="source-editor"></a>Editor de Código-fonte
 
@@ -111,7 +111,7 @@ Isso traz alguns dos seguintes recursos:
 * Formatar seleção
 * Lâmpadas embutidas
 
-Para obter mais informações sobre como usar o editor de origem no Visual Studio para Mac, consulte a documentação do [Editor de origem](/visualstudio/mac/source-editor) .
+Para obter mais informações sobre como usar o editor de origem no Visual Studio para Mac, consulte a documentação do [Editor de origem](./source-editor.md) .
 
 Para manter as guias visíveis o tempo todo, você pode aproveitar a fixação delas. Isso garante que sempre que você iniciar um projeto, a guia necessária sempre será exibida. Para fixar uma guia, passe o mouse sobre a guia e clique no ícone de _pino_ :
 
@@ -119,15 +119,15 @@ Para manter as guias visíveis o tempo todo, você pode aproveitar a fixação d
 
 ## <a name="refactoring"></a>Refatoração
 
-O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: ações de contexto e análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](/visualstudio/mac/refactoring).
+O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: ações de contexto e análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](./refactoring.md).
 
 ## <a name="debugging"></a>Depuração
 
-Visual Studio para Mac tem depuradores que dão suporte a projetos .NET Core, .NET Framework, Unity e Xamarin. Visual Studio para Mac usa o depurador do .NET Core e o depurador soft mono, permitindo que o IDE depure o código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
+Visual Studio para Mac tem depuradores que dão suporte a projetos .NET Core, .NET Framework, Unity e Xamarin. Visual Studio para Mac usa o depurador do .NET Core e o depurador soft mono, permitindo que o IDE depure o código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](./debugging.md).
 
 O depurador contém visualizadores avançados para tipos especiais, como cadeias de caracteres, cores, URLs, bem como tamanhos, coordenadas e curvas Bézier.
 
-Para saber mais sobre visualizações de dados do depurador, visite o artigo [Visualizações de dados](/visualstudio/mac/data-visualizations).
+Para saber mais sobre visualizações de dados do depurador, visite o artigo [Visualizações de dados](./data-visualizations.md).
 
 ## <a name="version-control"></a>Controle de versão
 
@@ -139,7 +139,7 @@ Os arquivos com alterações não confirmadas têm uma anotação em seus ícone
 
 ![Arquivos não confirmados no painel de soluções](media/ide-tour-image23.png)
 
-Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](/visualstudio/mac/version-control).
+Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](./version-control.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bba8095c1e79b8ab8addfd69afc1e89a50e3fce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a50a47a813891151427707c371f1ebf3f75c336f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68871960"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584302"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Walkthrough: criar seu primeiro suplemento do VSTO para PowerPoint
   Este tutorial mostra como criar um suplemento do VSTO para Microsoft Office PowerPoint. Os recursos que você cria nesse tipo de solução estão disponíveis para o próprio aplicativo, independentemente de quais apresentações estão abertas. Para obter mais informações, consulte [visão geral do desenvolvimento de soluções do Office &#40;&#41;do VSTO ](../vsto/office-solutions-development-overview-vsto.md).

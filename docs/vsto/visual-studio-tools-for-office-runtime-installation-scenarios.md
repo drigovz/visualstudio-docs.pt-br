@@ -1,5 +1,6 @@
 ---
 title: Ferramentas do Visual Studio para cenários de instalação do Office Runtime
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810922"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584367"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Ferramentas do Visual Studio para cenários de instalação do Office Runtime
   Você pode instalar o tempo de execução das ferramentas do Visual Studio 2010 para Office de três maneiras:

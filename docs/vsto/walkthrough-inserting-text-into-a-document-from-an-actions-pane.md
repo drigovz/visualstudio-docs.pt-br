@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: inserir texto em um documento a partir de um painel Ações'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838745"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584957"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Walkthrough: inserir texto em um documento a partir de um painel Ações
   Este tutorial demonstra como criar um painel Ações em um Microsoft Office documento do Word. O painel Ações contém dois controles que coletam entrada e enviam o texto ao documento.
@@ -121,8 +122,8 @@ ms.locfileid: "90838745"
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**GetAddress**|
-    |**Aceita o retorno**|**True**|
-    |**Multilinha**|**True**|
+    |**Aceita o retorno**|**Verdadeiro**|
+    |**Multilinha**|**Verdadeiro**|
     |**Tamanho**|**130, 40**|
 
 7. Adicione um controle de **botão** ao controle do painel Ações e altere as propriedades a seguir.

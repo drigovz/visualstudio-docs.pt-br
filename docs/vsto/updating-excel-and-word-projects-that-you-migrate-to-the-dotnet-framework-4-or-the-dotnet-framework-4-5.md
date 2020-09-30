@@ -1,5 +1,6 @@
 ---
-title: Atualizar o Excel ou o projeto do Word migrado para o .NET Framework 4/4,5
+title: Atualizar o Excel ou o projeto do Word migrado para .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bc211f4d30359c885b22a45910363bbadca236f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06f4742317e3702273c5fe7c91ccc76a153c1b3e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253716"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584406"
 ---
-# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualize os projetos do Excel e do Word que você migra para o .NET Framework 4 ou o .NET Framework 4,5
+# <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Atualizar projetos do Excel e do Word que você migra para o .NET Framework 4,5
   Se você tiver um projeto do Excel ou do Word que usa qualquer um dos recursos a seguir, você deverá modificar seu código se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior:
 
 - [Métodos GetVstoObject e HasVstoObject](#GetVstoObject)
@@ -201,7 +202,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  A tabela a seguir lista os eventos de controle de conteúdo do Word e os delegados associados a eles em projetos direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
-|Evento|Delegar para usar no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
+|evento|Delegar para usar no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|

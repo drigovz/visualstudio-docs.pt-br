@@ -1,5 +1,6 @@
 ---
-title: A pasta de trabalho usada para criar este projeto contém controles ActiveX que o designer não pode carregar
+title: A pasta de trabalho contém controles ActiveX que não podem ser carregados
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537339"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584445"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>A pasta de trabalho usada para criar este projeto contém controles ActiveX que o designer não pode carregar
-  Esse erro aparece quando você adiciona um controle a um documento do Word ou a uma planilha do Excel de forma programática, salva o documento ou a pasta de trabalho e, em seguida, cria uma nova solução de nível de documento com base no documento ou na pasta de trabalho.
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>A pasta de trabalho contém controles ActiveX que não podem ser carregados
+
+  O erro "a pasta de trabalho usada para criar este projeto contém controles ActiveX que o designer não pode carregar" aparece quando você adiciona um controle a um documento do Word ou uma planilha do Excel de forma programática, salva o documento ou a pasta de trabalho e, em seguida, cria uma nova solução de nível de documento com base no documento ou na pasta de trabalho.
 
  As informações que descrevem o tipo gerenciado do controle não são salvas junto com o documento ou a pasta de trabalho. Quando você cria uma nova solução com base no documento ou pasta de trabalho, o Visual Studio não tem informações suficientes para carregar o controle no designer de item de host.
 

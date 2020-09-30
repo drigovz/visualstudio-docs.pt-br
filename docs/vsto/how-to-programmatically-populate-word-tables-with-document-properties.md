@@ -1,5 +1,6 @@
 ---
 title: Popular tabelas do Word com propriedades de documento programaticamente
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ce4fbdb69aae55bb5b79b6af17a0516a0b8786a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537807"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585478"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>Como: preencher programaticamente tabelas do Word com propriedades do documento
   O exemplo a seguir cria uma tabela do Word Microsoft Office na parte superior do documento e a popula com as propriedades do documento host.

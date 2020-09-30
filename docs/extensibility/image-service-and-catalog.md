@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011951"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584536"
 ---
 # <a name="image-service-and-catalog"></a>Serviço de imagem e catálogo
 Este manual contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagens introduzidos no Visual Studio 2015.
@@ -106,7 +106,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|
 |Guid|O símbolo representa um GUID e deve corresponder à formatação do GUID|
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|
-|String|O símbolo representa um valor de cadeia de caracteres arbitrária|
+|Cadeia de caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|
 
  Os símbolos diferenciam maiúsculas de minúsculas e são referenciados usando a sintaxe $ (Symbol-Name):
 
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Atualize seu código para usar o serviço de imagem para solicitar monikers por meio do mapeamento atualizado. (Isso pode significar a atualização para **CrispImages** para código gerenciado, ou solicitar HBITMAPs ou HICONs do serviço de imagem e passá-los para código nativo.)
 
 ## <a name="testing-your-images"></a>Testando suas imagens
- Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](./internals/vssdk-utilities.md?view=vs-2015).
+ Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](./internals/vssdk-utilities.md?view=vs-2015&preserve-view=true).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 

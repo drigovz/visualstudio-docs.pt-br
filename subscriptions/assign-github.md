@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 03/17/2020
+ms.date: 09/29/2020
 ms.topic: conceptual
 description: Gerenciando assinaturas na oferta Enterprise do GitHub do Visual Studio +
-ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006170"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584120"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gerenciar assinaturas do Visual Studio com o GitHub Enterprise
 Os clientes que têm o EA (Enterprise Agreements) com a Microsoft estão qualificados a comprar uma nova oferta de assinatura que reúne as assinaturas do Visual Studio Standard e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
@@ -20,9 +20,9 @@ Os clientes que têm o EA (Enterprise Agreements) com a Microsoft estão qualifi
 Quando sua organização compra as Assinaturas do Visual Studio com o GitHub Enterprise, elas são provisionadas e gerenciadas em duas partes.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Gerenciar assinaturas do Visual Studio
-Quando sua organização adquire assinaturas do Visual Studio com o GitHub Enterprise, a parte do Visual Studio das assinaturas é provisionada imediatamente e as assinaturas estão disponíveis para atribuição e gerenciamento no portal de [Administração de assinaturas](https://manage.visualstudio.com) do Visual Studio. 
+Quando sua organização adquire assinaturas do Visual Studio com o GitHub Enterprise, a parte do Visual Studio das assinaturas é provisionada imediatamente e as assinaturas estão disponíveis para atribuição e gerenciamento no portal de [Administração de assinaturas](https://manage.visualstudio.com) do Visual Studio. Depois de atribuir um Visual Studio com a assinatura do GitHub, o assinante receberá um email informando que ele pode acessar sua assinatura do Visual Studio em <https://my.visualstudio.com/subscriptions> .
 
-Para obter mais informações sobre como gerenciar assinaturas, confira estes tópicos:
+Para obter mais informações sobre como gerenciar assinaturas do Visual Studio, confira estes tópicos:
 - [Usando o portal de administração](using-admin-portal.md)
 - [Atribuir assinaturas](assign-license.md)
 - [Editar assinaturas](edit-license.md)
@@ -30,9 +30,14 @@ Para obter mais informações sobre como gerenciar assinaturas, confira estes t�
 - [Superalocações](handle-overclaimed-license.md)
 
 > [!Important]
-> Se as Assinaturas do Visual Studio com o GitHub Enterprise tiverem sido atribuídas por administradores de assinatura do Visual Studio e nunca houver acontecido uma compra dessas assinaturas, elas não estarão visíveis para administradores do GitHub Enterprise dentro da organização. Para garantir que as assinaturas do GitHub Enterprise estejam visíveis, uma compra incluindo **pelo menos um** Visual Studio Professional com o GitHub Enterprise ou o Visual Studio Enterprise com a assinatura do GitHub Enterprise deverá ser feita na primeira vez em que as assinaturas forem atribuídas.  
->
-> É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja um Visual Studio correspondente com a assinatura do GitHub atribuída no portal de administração das assinaturas do Visual Studio para permanecer em conformidade com os requisitos de licenciamento para essa assinatura.
+> Se as assinaturas do Visual Studio com o GitHub Enterprise forem atribuídas pelos administradores de assinatura do Visual Studio sem comprar primeiro, o GitHub não será notificado de que você deseja criar uma conta empresarial do GitHub.  **Uma compra de pelo menos uma** O Visual Studio com a assinatura do GitHub Enterprise deve ser feito antes que as assinaturas sejam atribuídas.
+
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o Visual Studio com o processo de configuração do GitHub Enterprise?
+O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do Visual Studio. Seguindo um Visual Studio com o GitHub Enterprise Purchase, um processo de configuração de conta empresarial do GitHub é iniciado em paralelo com (mas separado do) estabelecendo um contrato no [Manage.VisualStudio.com](https://manage.visualstudio.com). O estabelecimento dessa conta empresarial do GitHub pode levar algum tempo. 
+
+Depois que sua empresa tiver configurado uma conta empresarial do GitHub, os assinantes que receberam o Visual Studio com as assinaturas do GitHub Enterprise receberão um email do GitHub notificando-os de que suas assinaturas do Visual Studio foram vinculadas. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para receber um convite para a organização apropriada.
+
+Para obter detalhes adicionais sobre a configuração do GitHub Enterprise, consulte a [documentação do assinante](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Gerenciar assinaturas do GitHub Enterprise
 Quando as assinaturas do GitHub Enterprise são compradas, o GitHub faz parceria com os clientes para ajudar a criar e configurar as organizações que acessarão o GitHub e identificarão os administradores.  Esses administradores, em seguida, recebem uma notificação de que já foram configurados como administradores.  
@@ -41,37 +46,14 @@ Como esse processo é mais complexo, pode levar vários dias depois que as assin
 
 O GitHub está disponível no GitHub.com baseado em nuvem ou no GitHub Enterprise Server local.  Os processos para gerenciar as duas versões são diferentes.  A GitHub fornece uma variedade de tópicos de ajuda e guias de administrador para ajudar você a gerenciar assinaturas do GitHub Enterprise.  Fornecemos links para os tópicos selecionados abaixo.  
 
-### <a name="githubcom"></a>GitHub.com 
-Saiba mais sobre como gerenciar o GitHub.com nos tópicos a seguir da [Ajuda do GitHub](https://help.github.com/en).
-+ [Lista completa de tópicos de ajuda](https://help.github.com/en)
-+ [Como gerenciar associações em sua organização](https://help.github.com/en/articles/managing-membership-in-your-organization)
-+ [Como convidar usuários para ingressar em sua organização](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-  - [Como remover usuários de equipes/organizações](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-  - [Como reinstaurar um antigo membro da sua organização](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-+ [Como gerenciar o acesso usando funções](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-+ [Como organizar os usuários em equipes](https://help.github.com/en/articles/organizing-members-into-teams)
-+ [Gerenciar o acesso aos repositórios de sua organização](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
-
-### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-A Ajuda do GitHub fornece uma variedade de guias de administrador para responder perguntas e dar dicas sobre o gerenciamento da implementação de sua organização no GitHub Enterprise Server.
-
-+ [Exibir todos os guias de administrador](https://help.github.com/en/enterprise/2.16/admin)
-+ [Gerenciamento de usuários](https://help.github.com/en/enterprise/2.16/admin/user-management)
-  - [Organizações e equipes](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-    - [Como criar organizações](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-    - [Como criar equipes](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-    - [Como adicionar pessoas a equipes](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-    - [Como remover pessoas de equipes e organizações](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-  - [Segurança do usuário](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-+ [Como instalar e configurar o GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
-
 ## <a name="support-resources"></a>Recursos de suporte
 
-- Você pode encontrar respostas para perguntas sobre uma ampla variedade de tópicos do GitHub em [Ajuda do GitHub](https://help.github.com/en).
+- Saiba mais sobre a atribuição do GitHub em [documentos do GitHub](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
+- Encontre respostas para perguntas sobre uma ampla matriz de tópicos do GitHub na [ajuda do GitHub](https://help.github.com/en).
 - Obtenha ajuda de outros usuários do GitHub no [Fórum da comunidade do GitHub](https://github.community/).
-- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Para obter assistência com vendas, assinaturas, contas e cobrança para assinaturas do Visual Studio, entre em contato com o [suporte de assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
-- Obtenha [suporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
+- Obtenha [suporte técnico](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
 ## <a name="see-also"></a>Confira também
 

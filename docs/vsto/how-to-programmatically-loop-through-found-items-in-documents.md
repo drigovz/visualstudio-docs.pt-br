@@ -1,5 +1,6 @@
 ---
 title: Como fazer loops programaticamente por meio de itens encontrados em documentos
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e200f910e002bb9380bd5a1b556dc6f1cab08810
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e033b3d43f40736d7c77d11b489c0a6c2e91434e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544736"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585139"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Como fazer loops programaticamente por meio de itens encontrados em documentos
   A <xref:Microsoft.Office.Interop.Word.Find> classe tem uma <xref:Microsoft.Office.Interop.Word.Find.Found%2A> propriedade, que retorna **true** sempre que um item procurado for encontrado. Você pode executar um loop em todas as instâncias encontradas em um <xref:Microsoft.Office.Interop.Word.Range> usando o <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método.

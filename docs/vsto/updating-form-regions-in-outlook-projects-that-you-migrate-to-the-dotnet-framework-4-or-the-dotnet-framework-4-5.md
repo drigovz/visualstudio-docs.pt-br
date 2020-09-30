@@ -1,5 +1,6 @@
 ---
-title: Atualizar regiões de formulário do Outlook em projetos migrados para o .NET Framework 4, 4,5
+title: Atualizar as regiões de formulário do Outlook quando migradas para o .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836055"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584393"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualize as regiões de formulário nos projetos do Outlook que você migra para o .NET Framework 4 ou o .NET Framework 4,5
+# <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Atualizar as regiões de formulário do Outlook quando migradas para o .NET Framework 4,5
+
   Se a estrutura de destino de um projeto de suplemento do VSTO do Outlook com uma região de formulário for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deverá fazer algumas alterações no código de região de formulário gerado e em qualquer código que instancie determinadas classes de região de formulário em tempo de execução.
 
 ## <a name="update-the-generated-form-region-code"></a>Atualizar o código de região do formulário gerado

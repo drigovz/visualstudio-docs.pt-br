@@ -1,5 +1,6 @@
 ---
-title: Teclado do Office Word, configurações de teclado, caixa de diálogo opções
+title: Teclado do Office Word, configurações, caixa de diálogo opções
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835990"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584497"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office o teclado do Word, Microsoft Office configurações do teclado, caixa de diálogo opções
+# <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office palavra teclado, configurações, caixa de diálogo opções
   Microsoft Office o Word e o Visual Studio lidam com teclas de atalho. A mesma combinação de teclas de atalho pode representar comandos diferentes no Word e no Visual Studio. Quando o Word está aberto em um projeto de nível de documento no Visual Studio, somente um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Word os receba quando o documento tiver foco, selecionando **esquema de teclado dinâmico**.
 
  Se você usar uma tecla de atalho que não esteja atribuída a um comando no aplicativo que está manipulando as teclas de atalho no momento, a tecla de atalho será passada para o outro aplicativo.

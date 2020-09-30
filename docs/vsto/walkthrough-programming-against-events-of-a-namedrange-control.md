@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: programa em relação a eventos de um controle NamedRange'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838656"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584931"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Walkthrough: programa em relação a eventos de um controle NamedRange
   Este tutorial demonstra como adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle a uma Microsoft Office planilha e programa do Excel em relação a seus eventos usando as ferramentas de desenvolvimento do Office no Visual Studio.

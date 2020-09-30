@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128407"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584016"
 ---
 # <a name="understanding-build-configurations"></a>Noções sobre configurações de build
 
 Você pode armazenar diferentes configurações de propriedades da solução e do projeto para usar em diferentes tipos de builds durante o processo de desenvolvimento. Os projetos criados por Visual Studio para Mac usando um modelo normalmente incluirão configurações de depuração e versão que dão suporte à depuração de um aplicativo e à implantação de um aplicativo, respectivamente. 
 
-Se você quiser criar configurações personalizadas, consulte [criando e editando configurações de compilação](/visualstudio/mac/create-and-edit-configurations).
+Se você quiser criar configurações personalizadas, consulte [criando e editando configurações de compilação](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Este tópico se aplica ao Visual Studio para Mac. Para o Visual Studio no Windows, consulte [entender as configurações de Build](/visualstudio/ide/understanding-build-configurations).

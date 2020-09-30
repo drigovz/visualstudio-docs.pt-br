@@ -1,5 +1,6 @@
 ---
 title: 'Como: adicionar programaticamente novas planilhas a pastas de trabalho'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fc6706879bf1d567f6a0ae7127d06a2442b98e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c014d8ea1701dde4e83e6849cce337656579f5d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538094"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585399"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Como: adicionar programaticamente novas planilhas a pastas de trabalho
   Você pode criar programaticamente uma planilha e, em seguida, adicionar a planilha à coleção de planilhas na pasta de trabalho.

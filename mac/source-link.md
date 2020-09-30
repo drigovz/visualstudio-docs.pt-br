@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75451485"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583912"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>Depuração em pacotes NuGet com o link de origem
 
@@ -38,4 +38,4 @@ Por padrão, **Ask** está selecionado. Você receberá o seguinte prompt quando
 ## <a name="see-also"></a>Confira também
 
 - O [repositório GitHub do link de origem](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- [Documentação do .net](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) no link de origem e para obter mais informações sobre como adicionar suporte a links de origem a pacotes
+- [Documentação do .net](/dotnet/standard/library-guidance/sourcelink) no link de origem e para obter mais informações sobre como adicionar suporte a links de origem a pacotes

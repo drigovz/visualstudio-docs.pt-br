@@ -1,5 +1,6 @@
 ---
 title: Implantar, publicar, & atualizar pacotes de solução do SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8e55b01173e749395f60d189366a08907bdaccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444964"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583873"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar seu arquivo de pacote (. wsp) em um servidor do SharePoint local ou publicá-lo em um servidor do SharePoint remoto ou local. Se você implantar os arquivos, poderá personalizar como os arquivos de pacote (. wsp) são implantados.
