@@ -1,5 +1,6 @@
 ---
 title: Configurar informações de configuração para uma solução do Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545802"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91581033"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Como definir informações de configuração para uma solução do Office
   Você pode usar arquivos de configuração para definir configurações específicas para suas soluções do Office. Você pode especificar configurações como política de associação de assembly, objetos de comunicação remota, depuração e configurações de rastreamento.

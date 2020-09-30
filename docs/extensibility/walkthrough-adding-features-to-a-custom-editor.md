@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012081"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583587"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Walkthrough: adicionar recursos a um editor personalizado
 Depois de criar um editor personalizado, você pode adicionar mais recursos a ele.
@@ -34,11 +34,11 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
 3. Implemente uma fábrica de editor Configurando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.
 
-     Para obter mais informações, consulte [fábricas de editor](../vs-2015/extensibility/editor-factories.md?view=vs-2015).
+     Para obter mais informações, consulte [fábricas de editor](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true).
 
 4. Decida se deseja que seu editor use ativação in-loco ou incorporação simplificada para gerenciar a janela de objeto de exibição de documento.
 
-     Uma janela de editor de incorporação simplificada hospeda uma exibição de documento padrão, enquanto uma janela do editor de ativação in-loco hospeda um controle ActiveX ou outro objeto ativo como sua exibição de documento. Para obter mais informações, consulte [inserção simplificada](../extensibility/simplified-embedding.md) e [ativação in-loco](../vs-2015/misc/in-place-activation.md?view=vs-2015).
+     Uma janela de editor de incorporação simplificada hospeda uma exibição de documento padrão, enquanto uma janela do editor de ativação in-loco hospeda um controle ActiveX ou outro objeto ativo como sua exibição de documento. Para obter mais informações, consulte [inserção simplificada](../extensibility/simplified-embedding.md) e [ativação in-loco](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
 
 5. Implemente a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface para manipular comandos.
 
@@ -115,7 +115,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
 12. Implemente o suporte à ajuda contextual.
 
-     Esta etapa permite que você forneça ajuda F1 e suporte à janela de ajuda dinâmica para itens em seu editor. Para obter mais informações, consulte [como: fornecer contexto para editores](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
+     Esta etapa permite que você forneça ajuda F1 e suporte à janela de ajuda dinâmica para itens em seu editor. Para obter mais informações, consulte [como: fornecer contexto para editores](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
 
 13. Expor um modelo de objeto de automação do seu editor implementando a `IDispatch` interface.
 
@@ -152,6 +152,6 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
 
   - `Window.Object`
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Contribuir para o modelo de automação](../extensibility/internals/contributing-to-the-automation-model.md)
