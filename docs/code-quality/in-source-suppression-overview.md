@@ -1,5 +1,5 @@
 ---
-title: Suprimir violações de análise de código
+title: Suprimir violações da análise de código
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091432"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604633"
 ---
-# <a name="suppress-code-analysis-violations"></a>Suprimir violações de análise de código
+# <a name="suppress-code-analysis-violations"></a>Suprimir violações da análise de código
 
 Geralmente, é útil indicar que um aviso não é aplicável. Isso indica aos membros da equipe que o código foi revisado e que o aviso pode ser suprimido. A supressão na origem (ISS) usa o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo para suprimir um aviso. O atributo pode ser colocado próximo ao segmento de código que gerou o aviso. Você pode adicionar o <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo ao arquivo de origem digitando-o ou pode usar o menu de atalho em um aviso no **lista de erros** para adicioná-lo automaticamente.
 
@@ -183,12 +183,7 @@ Por exemplo, o seguinte atributo em seu arquivo de projeto _GlobalSuppressions_ 
 
 Compiladores de código gerenciado e algumas ferramentas de terceiros geram código para facilitar o desenvolvimento rápido de código. O código gerado pelo compilador que aparece em arquivos de origem geralmente é marcado com o `GeneratedCodeAttribute` atributo.
 
-Para análise de código-fonte, você pode suprimir mensagens no código gerado usando o arquivo [. editorconfig](../code-quality/configure-fxcop-analyzers.md) na raiz do seu projeto ou solução. Use um padrão de arquivo para corresponder ao código gerado. Por exemplo, para excluir avisos de CS1591 em arquivos **. designer.cs* , use-os no arquivo de configuração.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+Para análise de código-fonte, você pode suprimir mensagens no código gerado em um `.editorconfig` arquivo. Para obter mais informações, consulte [excluir código gerado](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code).
 
 Para a análise de código herdado, você pode escolher se deseja suprimir avisos de análise de código e erros de código gerado. Para obter informações sobre como suprimir esses avisos e erros, consulte [como suprimir avisos para código gerado](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
