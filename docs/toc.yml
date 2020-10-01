@@ -524,15 +524,7 @@
             - name: Convenções de formatação de EditorConfig do C++
               href: ide/cpp-editorconfig-properties.md
             - name: Convenções de codificação em .NET
-              items:
-                - name: Visão geral
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Convenções de linguagem
-                  href: ide/editorconfig-language-conventions.md
-                - name: Convenções de formatação
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Convenções de nomenclatura
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Personalizar a barra de rolagem
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Definir indicadores no código
