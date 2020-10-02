@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab1e0b890d6241742770ed38ff61fc1c2c0ed2f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535696"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659186"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Walkthrough: usar a análise de código estático para encontrar defeitos de código
 
@@ -93,15 +93,15 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
 1. Use as seguintes dicas para corrigir os avisos:
 
-   [CA1014: Marcar assemblies com o CLSCompliantAttribute](../code-quality/ca1014.md): Adicione o código `[assembly: CLSCompliant(true)]` ao final do arquivo AssemblyInfo.cs.
+   [CA1014: Marcar assemblies com o CLSCompliantAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca1014): Adicione o código `[assembly: CLSCompliant(true)]` ao final do arquivo AssemblyInfo.cs.
 
-   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032.md): Adicione o construtor `public demo (String s) : base(s) { }` à classe `demo` .
+   [CA1032: Implementar construtores de exceção padrão](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Adicione o construtor `public demo (String s) : base(s) { }` à classe `demo` .
 
-   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032.md): Adicione o construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo` .
+   [CA1032: Implementar construtores de exceção padrão](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Adicione o construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo` .
 
-   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032.md): Adicione o construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à demonstração da classe. Você também precisará adicionar uma `using` instrução para <xref:System.Runtime.Serialization?displayProperty=fullName> .
+   [CA1032: Implementar construtores de exceção padrão](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Adicione o construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à demonstração da classe. Você também precisará adicionar uma `using` instrução para <xref:System.Runtime.Serialization?displayProperty=fullName> .
 
-   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032.md): Adicione o construtor `public demo () : base() { }` à classe `demo` .
+   [CA1032: Implementar construtores de exceção padrão](/dotnet/fundamentals/code-analysis/quality-rules/ca1032): Adicione o construtor `public demo () : base() { }` à classe `demo` .
 
    [CA1709: os identificadores devem estar em maiúsculas](../code-quality/ca1709.md)/minúsculas: altere a capitalização do namespace `testCode` para `TestCode` .
 
@@ -109,9 +109,9 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
    [CA1709: os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709.md): altere o nome do membro para `Item` .
 
-   [CA1710: os identificadores devem ter o sufixo correto](../code-quality/ca1710.md): altere o nome da classe e seus construtores para `DemoException` .
+   [CA1710: os identificadores devem ter o sufixo correto](/dotnet/fundamentals/code-analysis/quality-rules/ca1710): altere o nome da classe e seus construtores para `DemoException` .
 
-   [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237.md): Adicione o `[Serializable ()]` atributo à classe `demo` .
+   [CA2237: marcar tipos ISerializable com SerializableAttribute](/dotnet/fundamentals/code-analysis/quality-rules/ca2237): Adicione o `[Serializable ()]` atributo à classe `demo` .
 
    [CA2210: assemblies devem ter nomes fortes válidos](../code-quality/ca2210.md): assinar ' CodeAnalysisManagedDemo ' com uma chave de nome forte:
 
@@ -170,6 +170,6 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
      O projeto é compilado sem avisos ou erros.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 [Análise de código para código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)

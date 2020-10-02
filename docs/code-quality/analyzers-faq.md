@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604590"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659160"
 ---
 # <a name="code-analysis-faq"></a>Perguntas frequentes sobre análise de código
 
@@ -24,7 +24,7 @@ Esta página contém respostas para algumas perguntas frequentes sobre a anális
 
 **P**: devo usar a análise de código ou EditorConfig para verificar o estilo de código?
 
-**R: A**análise de código e os arquivos EditorConfig funcionam lado a lado. Quando você define estilos [de código em um arquivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig podem ser usados para habilitar ou desabilitar as regras do analisador e também para configurar pacotes do NuGet Analyzer.
+**R: A**análise de código e os arquivos EditorConfig funcionam lado a lado. Quando você define estilos [de código em um arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig podem ser usados para habilitar ou desabilitar as regras do analisador e também para configurar pacotes do NuGet Analyzer.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig versus conjuntos de regras
 
@@ -35,7 +35,7 @@ Esta página contém respostas para algumas perguntas frequentes sobre a anális
 No entanto, os arquivos EditorConfig oferecem maneiras adicionais de configurar regras também:
 
 - Para os analisadores de qualidade de código .NET, os arquivos EditorConfig permitem que você [Defina quais tipos de código analisar](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
-- Para os analisadores de estilo de código .NET criados no Visual Studio, os arquivos EditorConfig permitem que você [defina os estilos de código preferenciais](../ide/editorconfig-code-style-settings-reference.md) para uma codebase.
+- Para os analisadores de estilo de código .NET criados no Visual Studio, os arquivos EditorConfig permitem que você [defina os estilos de código preferenciais](/dotnet/fundamentals/code-analysis/code-style-rule-options) para uma codebase.
 
 Além dos conjuntos de regras e arquivos EditorConfig, alguns analisadores são configurados por meio do uso de arquivos de texto marcados como [arquivos adicionais](../ide/build-actions.md#build-action-values) para os compiladores C# e VB.
 
@@ -94,7 +94,7 @@ Além dos conjuntos de regras e arquivos EditorConfig, alguns analisadores são 
 
 **R**: a página de propriedades de análise de código no nível da solução foi removida em favor do grupo de propriedades compartilhada mais confiável. Para gerenciar a análise de código no nível do projeto, a página de propriedades de análise de código ainda está disponível. (Para projetos gerenciados, também recomendamos migrar de RuleSets para EditorConfig para a configuração de regra.)  Para compartilhar conjuntos de regras em vários/todos os projetos em uma solução ou um repositório, é recomendável definir um grupo de propriedades com a propriedade CodeAnalysisRuleSet em um arquivo de propriedades/destinos compartilhado ou diretório. props/Directory. targets. Se você não tiver nenhuma Props ou destinos comuns que todos os seus projetos importam, considere [adicionar esse grupo de propriedades a um diretório. props ou a um diretório. targets em um diretório de solução de nível superior, que é importado automaticamente em todos os arquivos de projeto definidos no diretório ou em suas](../msbuild/customize-your-build.md)subpastas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral dos analisadores](roslyn-analyzers-overview.md)
-- [Configurações da Convenção de codificação .NET para EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Configurações da Convenção de codificação .NET para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

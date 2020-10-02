@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893262"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658549"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -51,7 +51,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 
 > [!NOTE]
-> Se você tiver um projeto .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . Siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativo](analyzer-rule-sets.md). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
+> Se você tiver um projeto .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . Siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativo](/dotnet/fundamentals/code-analysis/code-quality-rule-options). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
 
 ## <a name="create-a-new-rule-set"></a>Criar um novo conjunto de regras
 
@@ -145,7 +145,7 @@ Agora que você tem um conjunto de regras, a próxima etapa é personalizar as r
 > [!div class="nextstepaction"]
 > [Modificar regras no editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

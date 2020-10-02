@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2109d7cbcaaf56600812e27c3055fb3198848228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ce3c8feb3d3bbd458c14ee702d6e8a1668078f3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810201"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658471"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migrar da análise herdada (FxCop) para a análise de origem (analisadores do FxCop)
 
@@ -36,6 +36,6 @@ Para migrar para a análise de origem, [Instale os analisadores do FxCop](../cod
 
 Para saber mais sobre como configurar os analisadores do FxCop:
 
-- Para configurar os analisadores do FxCop, consulte [Configurar analisadores de FxCop](../code-quality/configure-fxcop-analyzers.md).
+- Para configurar os analisadores do FxCop, consulte [Configurar analisadores de FxCop](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
-- Para descobrir sobre a configuração de analisadores usando regras predefinidas com EditorConfig ou um arquivo de conjunto de regras, consulte [habilitar uma categoria de regras](../code-quality/analyzer-rule-sets.md).
+- Para descobrir sobre a configuração de analisadores usando regras predefinidas com EditorConfig ou um arquivo de conjunto de regras, consulte [habilitar uma categoria de regras](/dotnet/fundamentals/code-analysis/code-quality-rule-options).

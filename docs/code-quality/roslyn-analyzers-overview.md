@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352197"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658432"
 ---
 # <a name="overview-of-source-code-analysis"></a>Visão geral da análise de código-fonte
 
@@ -25,9 +25,9 @@ Os analisadores de .NET Compiler Platform (Roslyn) inspecionam seu código em C#
 
 Os analisadores podem ser divididos nos seguintes grupos:
 
-- Os analisadores de [estilo de código](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para saber mais, clique [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Os analisadores de [estilo de código](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para saber mais, clique [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Analisadores de [qualidade de código](code-analysis-warnings-for-managed-code-by-checkid.md) agora estão incluídos no SDK do .NET 5 e habilitados por padrão. A ID de diagnóstico ou o código para esses analisadores é do formato CAxxxx, por exemplo, CA1822. Para obter mais informações, consulte [visão geral da análise de qualidade de código do .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
+- Analisadores de [qualidade de código](/dotnet/fundamentals/code-analysis/quality-rules/index) agora estão incluídos no SDK do .NET 5 e habilitados por padrão. A ID de diagnóstico ou o código para esses analisadores é do formato CAxxxx, por exemplo, CA1822. Para obter mais informações, consulte [visão geral da análise de qualidade de código do .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Analisadores de terceiros podem ser instalados como um pacote NuGet ou uma extensão do Visual Studio. Analisadores de terceiros, como [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [analisadores de xUnit](https://www.nuget.org/packages/xunit.analyzers/)e [analisador de sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -97,7 +97,7 @@ Você não pode configurar a severidade de regras de analisadores que foram inst
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)

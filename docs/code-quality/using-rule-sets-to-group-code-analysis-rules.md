@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47019ecd01a4ad432a853a7f1a4f7d7112be163c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77506460"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659199"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de regras para agrupar regras de análise de código
 
@@ -24,7 +24,7 @@ Ao configurar a análise de código no Visual Studio, você pode escolher em uma
 
 Você pode personalizar um conjunto de regras adicionando ou excluindo regras ou alterando severidades de regra para que apareçam como avisos ou erros no **lista de erros**. Conjuntos de regras personalizados podem atender a uma necessidade de seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, o editor de conjunto de regras fornece ferramentas de pesquisa e filtragem para ajudá-lo no processo.
 
-Os conjuntos de regras estão disponíveis para [análise de código gerenciado](analyzer-rule-sets.md), [análise herdada de código gerenciado](how-to-configure-code-analysis-for-a-managed-code-project.md)e [análise de código C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+Os conjuntos de regras estão disponíveis para [análise de código gerenciado](/dotnet/fundamentals/code-analysis/code-quality-rule-options), [análise herdada de código gerenciado](how-to-configure-code-analysis-for-a-managed-code-project.md)e [análise de código C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Formato do conjunto de regras
 

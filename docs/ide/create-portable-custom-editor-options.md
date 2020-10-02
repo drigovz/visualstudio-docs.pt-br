@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402251"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659245"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -68,7 +68,7 @@ O editor no Visual Studio é compatível com o conjunto principal de [propriedad
 - insert\_final_newline
 - root
 
-Há suporte para as configurações de editor do EditorConfig em todas as linguagens compatíveis com o Visual Studio, exceto para XML. Além disso, o EditorConfig dá suporte a convenções de [estilo de código](../ide/editorconfig-code-style-settings-reference.md) incluindo [linguagem](../ide/editorconfig-language-conventions.md), [formatação](../ide/editorconfig-formatting-conventions.md) e convenções de [nomenclatura](../ide/editorconfig-naming-conventions.md) para C# e Visual Basic.
+Há suporte para as configurações de editor do EditorConfig em todas as linguagens compatíveis com o Visual Studio, exceto para XML. Além disso, o EditorConfig dá suporte a convenções de [estilo de código](/dotnet/fundamentals/code-analysis/code-style-rule-options) incluindo [linguagem](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [formatação](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules) e convenções de [nomenclatura](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) para C# e Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Adicionar e remover arquivos EditorConfig
 
@@ -82,7 +82,7 @@ Se você remover um arquivo EditorConfig de seu projeto ou base de códigos e de
 
 1. Na barra de menus, escolha **projeto**  >  **Adicionar novo item**ou pressione **Ctrl** + **Shift** + **A**.
 
-   A caixa de diálogo **Adicionar Novo Item** é aberta.
+   A caixa de diálogo **Adicionar novo item** é aberta.
 
 1. Na caixa de pesquisa, pesquise **editorconfig**.
 
@@ -90,7 +90,7 @@ Se você remover um arquivo EditorConfig de seu projeto ou base de códigos e de
 
    ![Modelos de item do arquivo EditorConfig no Visual Studio](media/editorconfig-item-templates.png)
 
-1. Selecione o modelo **Arquivo editorconfig (padrão)** para adicionar um arquivo EditorConfig pré-preenchido com duas opções principais do EditorConfig para tamanho e estilo de recuo. Ou selecione o modelo **Arquivo editorconfig (.NET)** para adicionar um arquivo EditorConfig pré-preenchido com [convenções de nomenclatura, formatação e estilo de código .NET](../ide/editorconfig-code-style-settings-reference.md).
+1. Selecione o modelo **Arquivo editorconfig (padrão)** para adicionar um arquivo EditorConfig pré-preenchido com duas opções principais do EditorConfig para tamanho e estilo de recuo. Ou selecione o modelo **Arquivo editorconfig (.NET)** para adicionar um arquivo EditorConfig pré-preenchido com [convenções de nomenclatura, formatação e estilo de código .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options).
 
    Um arquivo *. editorconfig* aparece em Gerenciador de soluções e é aberto no editor.
 
@@ -178,9 +178,9 @@ dir .editorconfig /s
 
 Você pode controlar o escopo de suas convenções EditorConfig definindo a ```root=true``` propriedade no arquivo *. EditorConfig* na raiz do seu repositório ou no diretório em que seu projeto reside. O Visual Studio procura um arquivo chamado *. editorconfig* no diretório do arquivo aberto e em cada diretório pai. A pesquisa termina quando atinge o filePath raiz ou se um arquivo *. editorconfig* com ```root=true``` é encontrado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
-- [Convenções de estilo de código do .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenções de estilo de código do .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Dando suporte ao EditorConfig para um serviço de linguagem](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Recursos do editor de código](writing-code-in-the-code-and-text-editor.md)

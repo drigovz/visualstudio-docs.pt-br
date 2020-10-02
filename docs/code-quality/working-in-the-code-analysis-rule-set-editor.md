@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893301"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659173"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
 
@@ -70,7 +70,7 @@ A tabela a seguir descreve os campos de um conjunto de regras:
 |Campo|Descrição|
 |-----------|-----------------|
 |**ID**|O identificador da regra.|
-|**Categoria**|Além de sua associação em conjuntos de regras, as regras de análise de código também são agrupadas por categoria. Para obter mais informações, consulte [avisos de análise de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Categoria**|Além de sua associação em conjuntos de regras, as regras de análise de código também são agrupadas por categoria. Para obter mais informações, consulte [avisos de análise de código](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nome**|O título da regra.|
 |**Namespace**|O namespace da regra.|
 |**Tipo de destino**|Indica se a regra é para código nativo, gerenciado ou de banco de dados.|
@@ -85,6 +85,6 @@ Nos cabeçalhos de coluna da grade de conjunto de regras, você pode classificar
 
 - Para filtrar os conjuntos de regras pelo valor de um campo, selecione o botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Criar um conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md)

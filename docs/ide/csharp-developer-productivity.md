@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509933"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658406"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -52,7 +52,7 @@ Estes são os atalhos populares do Visual Studio:
 | **Ctrl** + **D** | Duplicar linha | Duplica a linha de código onde o cursor está posicionado (disponível no **Visual Studio 2017 versão 15.6** e posterior) |
 | **Shift** + **ALT**+**+**/**-** | Expandir/Reduzir seleção | Expande ou reduz a seleção atual no editor (disponível no **Visual Studio 2017 versão 15.5** e posteriores) |
 | **Shift**  +  **ALT**  +  **.** | Inserir próximo sinal de interpolação correspondente | Adiciona uma seleção e um sinal de interpolação no próximo local que corresponde à seleção atual (disponível no **Visual Studio 2017 versão 15.8** e posterior) |
-| **Ctrl** + **P** | Search | Pesquise todas as configurações do Visual Studio |
+| **Ctrl** + **P** | Pesquisar | Pesquise todas as configurações do Visual Studio |
 | **F5** | Iniciar Depuração | Inicie a depuração do aplicativo |
 | **Ctrl** + **F5** | Executar sem Depurar | Execute o aplicativo localmente sem depuração |
 | **Ctrl** + **K**,**D** (perfil padrão) ou **Ctrl** + **E**,**d** (perfil C#) | Formatar Documento | Limpe as violações de formatação de um arquivo com base nas configurações de nova linha, de espaçamento e de recuo |
@@ -101,7 +101,7 @@ Use um arquivo EditorConfig para codificar as convenções de codificação e ap
 
    ![Configurar o nível de severidade de uma regra de estilo de código diretamente no editor](../ide/media/configure-severity-level.png)
 
-Confira a documentação de [opções de convenção de codificação .NET](editorconfig-code-style-settings-reference.md) que também contém um exemplo de um arquivo EditorConfig completo.
+Confira a documentação de [opções de convenção de codificação .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options) que também contém um exemplo de um arquivo EditorConfig completo.
 
 ::: moniker range=">=vs-2019"
 

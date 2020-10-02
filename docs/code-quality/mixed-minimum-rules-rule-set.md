@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599574"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658458"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 
@@ -153,7 +153,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28305](/cpp/code-quality/c28305)|Foi encontrado um erro durante a análise de um token.|
 |[C28350](/cpp/code-quality/c28350)|A anotação descreve uma situação que não é aplicável condicionalmente.|
 |[C28351](/cpp/code-quality/c28351)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
-|[CA1001](../code-quality/ca1001.md)|Tipos com campos descartáveis devem ser descartáveis|
-|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
-|[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
-|[CA2231](../code-quality/ca2231.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Tipos com campos descartáveis devem ser descartáveis|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Remover finalizadores vazios|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Campos descartáveis devem ser descartados|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Sobrecarregar operador equals ao substituir ValueType.Equals|

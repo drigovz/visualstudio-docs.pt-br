@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1176232eb3354a9b425e9432eb83037367ee7706
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312529"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659271"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Caixa de diálogo opções: \> formatação de \> estilo de código C# do editor de texto \>
 
@@ -62,19 +62,19 @@ Essas configurações definem o comando **Formatar Documento** para executar a l
 
 |Rótulo|Descrição|EditorConfig e ferramentas correspondentes > Regras de opções|
 |-----------|-----------------|-----------------|-----------------|
-|**Aplicar todas as regras de formatação de C# (recuo, quebra automática, espaçamento)**|O comando **Formatar Documento** sempre corrige os problemas de formatação. Essa configuração não pode ser alterada.| [Principais opções do EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opções de formatação do EditorConfig do .NET](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Formatando** > [**recuo** ou **novas linhas** ou **espaçamento** ou **disposição**]|
+|**Aplicar todas as regras de formatação de C# (recuo, quebra automática, espaçamento)**|O comando **Formatar Documento** sempre corrige os problemas de formatação. Essa configuração não pode ser alterada.| [Principais opções do EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opções de formatação do EditorConfig do .NET](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Formatando** > [**recuo** ou **novas linhas** ou **espaçamento** ou **disposição**]|
 |**Executar limpeza de código de adição durante a formatação**|Quando selecionada, aplica correções para as regras especificadas abaixo no comando **Edit.FormatDocument**.| N/D |
 |**Remover using desnecessários**|Quando selecionada, remove as diretivas `using` desnecessários quando **Edit.FormatDocument** é disparado.| N/D |
-|**Classificar usando**|Quando selecionada, classifica as diretivas `using` quando **Edit.FormatDocument** é disparado.| dotnet_sort_system_directives_first<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Avançado**  >  **Coloque as diretivas ' System ' primeiro ao classificar usando** |
+|**Classificar usos**|Quando selecionada, classifica as diretivas `using` quando **Edit.FormatDocument** é disparado.| dotnet_sort_system_directives_first<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Avançado**  >  **Coloque as diretivas ' System ' primeiro ao classificar usando** |
 |**Adicionar/remover chaves de instruções de controle de única linha**|Quando selecionado, adiciona ou remove as chaves das instruções de controle de única linha quando **Edit.FormatDocument** é disparado.| csharp_prefer_braces<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código Preferências de bloco de **código**  >  **Preferir chaves** |
 |**Adicionar modificadores de acessibilidade**|Quando selecionada, adiciona os modificadores de acessibilidade ausentes quando **Edit.FormatDocument** é disparado.| dotnet_style_require_accessibility_modifiers |
 |**Classificar modificadores de acessibilidade**|Quando selecionada, classifica os modificadores de acessibilidade quando **Edit.FormatDocument** é disparado.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Aplicar preferências de corpo de expressão/bloco**|Quando selecionada, converte os membros no corpo da expressão em corpos de bloco, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para membro no corpo da expressão](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências**  >  de expressão **Use o corpo da expressão para métodos, construtores, etc.** |
-|**Aplicar preferências de tipo implícitas/explícitas**|Quando selecionada, converte `var` no tipo explícito, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para tipo explícito](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **preferências de ' var '** |
+|**Aplicar preferências de corpo de expressão/bloco**|Quando selecionada, converte os membros no corpo da expressão em corpos de bloco, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para membro no corpo da expressão](/dotnet/fundamentals/code-analysis/style-rules/language-rules#expression-bodied-members)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências**  >  de expressão **Use o corpo da expressão para métodos, construtores, etc.** |
+|**Aplicar preferências de tipo implícitas/explícitas**|Quando selecionada, converte `var` no tipo explícito, ou vice-versa, quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para tipo explícito](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **preferências de ' var '** |
 |**Aplicar preferências de variáveis 'out' embutidas**|Quando selecionada, embute as variáveis `out` onde possível quando **Edit.FormatDocument** é disparado.| csharp_style_inlined_variable_declaration<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências**  >  de variáveis **Preferir declaração de variável embutida** |
 |**Aplicar preferências de tipo de linguagem/estrutura**|Quando selecionada, converte tipos de linguagem em tipos de estrutura, ou vice-versa, quando **Edit.FormatDocument** é disparado.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **preferências de tipo predefinidas** |
 |**Aplicar preferências de inicialização de objeto/coleção**|Quando selecionada, usa os inicializadores de objeto e de coleção sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências**  >  de expressão **Preferir inicializador de objeto** ou o **inicializador de coleção preferir** |
-|**Aplicar preferências de qualificação 'this.'**|Quando marcada, aplica as preferências de `this.` quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para a qualificação this.](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências ' this. '** |
+|**Aplicar preferências de qualificação 'this.'**|Quando marcada, aplica as preferências de `this.` quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para a qualificação this.](/dotnet/fundamentals/code-analysis/style-rules/language-rules#this-and-me)<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências ' this. '** |
 |**Tornar campos particulares readonly quando possível**|Quando selecionada, torna os campos particulares `readonly` sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_readonly_field<br/><br/>**Ferramentas**  >  do **Opções**  >  do **Editor**  >  de texto **C#**  >  **Estilo**  >  do código **Preferências**  >  de campo **Preferir ReadOnly** |
 |**Remover conversões desnecessárias**|Quando selecionada, remove as conversões desnecessárias sempre que possível quando **Edit.FormatDocument** é disparado.| N/D |
 |**Remover variáveis não usadas**|Quando selecionada, remove as variáveis que não são usadas quando **Edit.FormatDocument** é disparado.| N/D |
@@ -94,6 +94,6 @@ As opções de recuo nessa página se aplicam quando o código é formatado auto
 >
 > ![Opções de guias do editor de texto em C# no Visual Studio](media/csharp-tabs-options.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md)

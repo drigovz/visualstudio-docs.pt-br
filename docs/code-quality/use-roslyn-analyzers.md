@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560743"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659212"
 ---
 # <a name="overview"></a>Visão geral
 
@@ -102,7 +102,7 @@ Se você tiver várias entradas que são aplicáveis a uma ID de regra específi
 - A entrada de severidade para uma regra individual por ID tem precedência sobre a entrada de severidade de uma categoria.
 - A entrada de severidade para uma categoria tem precedência sobre a entrada de severidade para todas as regras do analisador.
 
-Considere o seguinte exemplo de EditorConfig, em que [CA1822](./ca1822.md) tem a categoria "performance":
+Considere o seguinte exemplo de EditorConfig, em que [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) tem a categoria "performance":
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ No exemplo anterior, todas as três entradas são aplicáveis a CA1822. No entan
 
 1. Se você ainda não tiver um arquivo EditorConfig para seu projeto, [adicione um](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](ca1822.md) como `error` para arquivos C#, a entrada tem a seguinte aparência:
+2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) como `error` para arquivos C#, a entrada tem a seguinte aparência:
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ No exemplo anterior, todas as três entradas são aplicáveis a CA1822. No entan
    ```
 
 > [!NOTE]
-> Para analisadores de estilo de código IDE, você também pode configurá-los em um arquivo EditorConfig usando uma sintaxe diferente, por exemplo, `dotnet_style_qualification_for_field = false:suggestion` . No entanto, se você definir uma severidade usando a `dotnet_diagnostic` sintaxe, ela terá precedência. Para obter mais informações, consulte [convenções de linguagem para EditorConfig](../ide/editorconfig-language-conventions.md).
+> Para analisadores de estilo de código IDE, você também pode configurá-los em um arquivo EditorConfig usando uma sintaxe diferente, por exemplo, `dotnet_style_qualification_for_field = false:suggestion` . No entanto, se você definir uma severidade usando a `dotnet_diagnostic` sintaxe, ela terá precedência. Para obter mais informações, consulte [convenções de linguagem para EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Definir a severidade da regra no menu de lâmpada
 
@@ -409,7 +409,7 @@ Em um projeto do .NET Core, se você adicionar uma referência a um projeto que 
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar um bug do analisador de código](https://github.com/dotnet/roslyn-analyzers/issues)
