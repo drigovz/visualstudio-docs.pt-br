@@ -1,5 +1,6 @@
 ---
 title: Visão geral do diagnóstico de gráficos | Microsoft Docs
+description: Uma visão geral de alto nível do Visual Studio Diagnóstico de Gráficos
 ms.custom: seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
+ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187919"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91671400"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visão geral do diagnóstico de gráficos do Visual Studio
 O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para gravar e analisar problemas de desempenho e renderização em aplicativos Direct3D. Diagnóstico de Gráficos pode ser usado em aplicativos que estão sendo executados localmente no seu computador Windows ou em um computador ou dispositivo remoto.
@@ -27,6 +28,10 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
  O Diagnóstico de Gráficos dá suporte a aplicativos que usam o Direct3D 10 ou superior e fornece suporte limitado para aplicativos que usam o Direct2D. Ele não oferece suporte a aplicativos que usam versões anteriores do Direct3D, DirectDraw ou outras APIs gráficas.
 
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 e Direct3D 12
+> [!NOTE]
+> O Visual Studio recomenda o PIX no Windows para jogos DirectX 12. O [PIX no Windows](https://aka.ms/PIXonWindows) é uma ferramenta de ajuste e depuração de desempenho que dá suporte total ao DirectX 12. [Saiba mais informações](visual-studio-graphics-diagnostics-directx-12.md) ou [Baixe aqui](https://aka.ms/downloadPIX).
+
+
  O Windows 10 introduziu o *Direct3D 12*, que é substancialmente diferente do Direct3D 10 e do Direct3D 11. Essas diferenças trazem o DirectX de volta ao alinhamento com o hardware de gráficos moderno e liberando seu potencial completo, mas também trazem grandes alterações de API e colocam maior responsabilidade no programador para gerenciar tempos de vida e contenção de recursos. Apesar das diferenças, Diagnóstico de Gráficos com o Direct3D 12 mantém a paridade de recursos com Diagnóstico de Gráficos com o Direct3D 11,2.
 
  O Windows 10 também mantém o suporte para versões anteriores do Direct3D e os jogos e aplicativos que dependem deles. Diagnóstico de Gráficos no Visual Studio continua a dar suporte ao Direct3D 10 e ao Direct3D 11 no Windows 10.
@@ -117,6 +122,6 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
 
  Mas a análise de quadros não está prestes a ficar rápido. é sobre obter a maior parte do desempenho que você pode, ao mesmo tempo, fornecer a menor quantidade de qualidade visual. Às vezes, um efeito caro que parece ótimo em uma exibição grande não faz o mesmo impacto quando exibido na tela pequena de um telefone, em que um efeito mais simples pode parecer muito bom sem descarregar a bateria. As alterações automáticas e os parâmetros de comparação que a análise gráfica fornece podem ajudá-lo a encontrar o equilíbrio certo para seu aplicativo em uma variedade de dispositivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Ferramenta de captura de linha de comando](command-line-capture-tool.md)
 - [Depurador HLSL](hlsl-shader-debugger.md)
