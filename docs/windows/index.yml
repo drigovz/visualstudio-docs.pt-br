@@ -7,15 +7,16 @@ metadata:
   titleSuffix: ''
   description: Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha, para qualquer plataforma ou dispositivo.
   ms.topic: hub-page
+  ms.custom: contperfq1
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: b1fad4d2bf07ef8c7623dfe20ff2f20b3f154883
-  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+  ms.openlocfilehash: 3b2bab0fd939f35622d040c7f986bcdddf68c408
+  ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91211195"
+  ms.lasthandoff: 10/01/2020
+  ms.locfileid: "91621757"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -24,23 +25,17 @@ highlightedContent:
   - title: Bem-vindo ao IDE do Visual Studio
     itemType: overview
     url: ../get-started/visual-studio-ide.md
-  - title: Novidades no Visual Studio 2019
-    itemType: get-started
-    url: ../ide/whats-new-visual-studio-2019.md
-  - title: Aprimore suas habilidades de desenvolvimento
+  - title: Notas sobre a versão do Visual Studio 2019
+    itemType: whats-new
+    url: /visualstudio/releases/2019/release-notes/
+  - title: Aprimore suas habilidades do Visual Studio
     itemType: learn
-    url: /learn/
+    url: /learn/browse/?products=vs
 conceptualContent:
   title: Introdução
   items:
   - title: Saiba como usar o Visual Studio
     links:
-    - text: Iniciar um tour guiado
-      url: ../get-started/visual-studio-ide.md
-      itemType: overview
-    - text: Abrir código de um repositório
-      url: ../get-started/tutorial-open-project-from-repo.md
-      itemType: tutorial
     - text: Escrever e editar o código
       url: ../ide/index-writing-code.yml
       itemType: tutorial
@@ -53,48 +48,51 @@ conceptualContent:
     - text: Testar seu código
       itemType: tutorial
       url: ../test/getting-started-with-unit-testing.md
-    - text: Acessar dados localmente ou na nuvem
+    - text: Abrir código de um repositório
+      url: ../get-started/tutorial-open-project-from-repo.md
       itemType: tutorial
-      url: ../data-tools/create-a-sql-database-by-using-a-designer.md
   - title: Seguir um tutorial
     links:
-    - text: C#
-      url: ../get-started/csharp/index.yml
+    - text: criar um aplicativo de console simples em C#
+      url: ../get-started/csharp/tutorial-console.md
       itemType: get-started
-    - text: F#
-      url: ../ide/quickstart-fsharp.md
-      itemType: get-started
-    - text: Visual Basic
-      url: ../get-started/visual-basic/index.yml
-      itemType: get-started
-    - text: C++
+    - text: Criar uma calculadora de console em C++
       url: /cpp/get-started/tutorial-console-cpp
       itemType: get-started
-    - text: Python
-      url: ../python/index.yml
+    - text: Criar um aplicativo de console do Visual Basic
+      url: ../get-started/visual-basic//tutorial-console.md
       itemType: get-started
+    - text: Introdução ao Python
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+      itemType: get-started
+    - text: Criar um aplicativo Node.js e Express
+      url: ../javascript/tutorial-nodejs.md
+      itemType: get-started
+    - text: Criar um serviço Web em F#
+      url: ../ide/quickstart-fsharp.md
+      itemType: get-started
+  - title: Diretrizes de linguagem do Visual Studio
+    links:
+    - text: C#
+      itemType: get-started
+      url: ../get-started/csharp/index.yml
+    - text: C++
+      itemType: get-started
+      url: /cpp/overview/visual-cpp-in-visual-studio
+    - text: Visual Basic
+      itemType: get-started
+      url: ../get-started/visual-basic/index.yml
+    - text: Python
+      itemType: get-started
+      url: ../python/index.yml
     - text: JavaScript
       url: ../javascript/index.yml
       itemType: get-started
-  - title: Criar um aplicativo
-    links:
-    - text: Aplicativo da área de trabalho do Windows
-      itemType: tutorial
-      url: ../get-started/csharp/tutorial-wpf.md
-    - text: Aplicativo universal do Windows
-      itemType: tutorial
-      url: ../get-started/csharp/tutorial-uwp.md
-    - text: Aplicativo móvel
-      itemType: overview
-      url: ../cross-platform/cross-platform-mobile-development-in-visual-studio.md
-    - text: Jogo do Unity
-      itemType: tutorial
-      url: ../cross-platform/getting-started-with-visual-studio-tools-for-unity.md
-    - text: Aplicativo Web com ASP.NET Core
-      itemType: quickstart
-      url: /aspnet/core/tutorials/razor-pages/razor-pages-start
+    - text: F#
+      itemType: get-started
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
 tools:
-  title: Linguagens
+  title: Documentação da linguagem
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -122,6 +120,53 @@ tools:
     url: ../rtvs/index.md?view=vs-2017&preserve-view=true
 additionalContent:
   sections:
+  - title: Desenvolvimento com o Visual Studio
+    items:
+    - title: Web e nuvem
+      links:
+      - text: Desenvolvimento para a Web
+        url: /aspnet/
+      - text: Gerenciamento e desenvolvimento do Azure
+        url: ../azure/index.yml
+      - text: Python
+        url: ../python/index.yml
+      - text: Node.js
+        url: ../javascript/index.yml
+      - text: Armazenamento de dados e processamento
+        url: ../data-tools/index.yml
+      - text: Ciência de dados
+        url: ../python/data-science-and-analytical-applications-workload.md
+      - text: Desenvolvimento para Office/Sharepoint
+        url: https://developer.microsoft.com/office/docs
+    - title: Desktop e móvel
+      links:
+      - text: Desenvolvimento de aplicativos para Windows
+        url: /windows/apps/
+      - text: Desenvolvimento de área de trabalho do .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Desenvolvimento para Windows com C++
+        url: /cpp/windows/desktop-applications-visual-cpp
+      - text: Desenvolvimento mobile com .NET (Xamarin)
+        url: /xamarin/
+      - text: Desenvolvimento móvel com C++
+        url: /visualstudio/cross-platform/
+      - text: Desenvolvimento móvel com JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (apenas Visual Studio 2017 e 2015)
+    - title: Jogos
+      links:
+      - text: Desenvolvimento de jogos com Unity
+        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: Desenvolvimento de jogos com C++
+        url: /windows/uwp/gaming/e2e
+    - title: Outros conjuntos de ferramentas
+      links:
+      - text: Desenvolvimento de extensões do Visual Studio
+        url: ../extensibility/index.yml
+      - text: Desenvolvimento de Linux com C++
+        url: /cpp/linux/
+      - text: Desenvolvimento de plataforma cruzada do .NET Core
+        url: /dotnet/core/
   - title: Tarefas
     items:
     - title: Desenvolver
@@ -160,51 +205,4 @@ additionalContent:
     - title: Desenvolver com contêineres do Docker
       summary: Use contêineres do Docker para isolar componentes modulares e melhorar a escalabilidade.
       url: ../containers/index.yml
-  - title: Cargas de trabalho
-    items:
-    - title: Web e nuvem
-      links:
-      - text: Desenvolvimento para a Web
-        url: /aspnet/
-      - text: Gerenciamento e desenvolvimento do Azure
-        url: ../azure/index.yml
-      - text: Python
-        url: ../python/index.yml
-      - text: Node.js
-        url: ../javascript/index.yml
-      - text: Armazenamento de dados e processamento
-        url: ../data-tools/index.yml
-      - text: Ciência de dados
-        url: ../python/data-science-and-analytical-applications-workload.md
-      - text: Desenvolvimento para Office/Sharepoint
-        url: https://developer.microsoft.com/office/docs
-    - title: Desktop e móvel
-      links:
-      - text: Desenvolvimento de área de trabalho do .NET
-        url: /dotnet/framework/develop-client-apps
-      - text: Desenvolvimento na plataforma universal do Windows
-        url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
-      - text: Desenvolvimento para Windows com C++
-        url: /cpp/windows/desktop-applications-visual-cpp
-      - text: Desenvolvimento mobile com .NET (Xamarin)
-        url: /xamarin/
-      - text: Desenvolvimento móvel com C++
-        url: /visualstudio/cross-platform/
-      - text: Desenvolvimento móvel com JavaScript
-        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (apenas Visual Studio 2017 e 2015)
-    - title: Jogos
-      links:
-      - text: Desenvolvimento de jogos com Unity
-        url: ../cross-platform/visual-studio-tools-for-unity.md
-      - text: Desenvolvimento de jogos com C++
-        url: /windows/uwp/gaming/e2e
-    - title: Outros conjuntos de ferramentas
-      links:
-      - text: Desenvolvimento de extensões do Visual Studio
-        url: ../extensibility/index.yml
-      - text: Desenvolvimento de Linux com C++
-        url: /cpp/linux/
-      - text: Desenvolvimento de plataforma cruzada do .NET Core
-        url: /dotnet/core/
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](../ide/feedback-options.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) - [Solução de Problemas](/troubleshoot/visualstudio/welcome-visual-studio)'
