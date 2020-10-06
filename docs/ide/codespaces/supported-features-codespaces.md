@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862080"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749499"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Recursos do Visual Studio com suporte (versão prévia)
 
@@ -42,15 +42,15 @@ Você deve notar pouca diferença no código-fonte de edição em um codespace �
 * Realce de sintaxe
 * Informações rápidas *
 * HTML, CSS, editores do Razor *-suporte parcial.
-* Editor de JavaScript *-suporte parcial.
+* Editor de JavaScript e TypeScript *-suporte parcial.
 
 Ainda não disponível:
 
 * IntelliSense *-alguns dos filtros de AutoCompletar/lista de membros não estão disponíveis. A conclusão para tipos não importados e o IntelliSense na janela de observação ainda não está disponível.
-* Navegação de código *-a maioria dos comandos com suporte, especificamente vá para base e encontre em arquivos com especificação de caminho ainda sem suporte.
+* Navegação de código *-a maioria dos comandos com suporte. Ir para base e localizar em arquivos com especificação de caminho ainda não tem suporte.
 * Informações rápidas *-a colorização em informações rápidas não é suportada.
 * HTML, CSS, editores do Razor *-diagnóstico, conclusão do IntelliSense, informações rápidas, recuo inteligente. Atualmente não há suporte para colorização semântica, comandos de navegação, etc.
-* Editor de JavaScript *-blocos de script (por exemplo, conteúdo JavaScript em arquivos HTML e CSHTML) e realce semântico ainda não têm suporte. Problemas conhecidos com recursos de lâmpada e refiapoing.
+* Editor de JavaScript e TypeScript *-blocos de script (por exemplo, conteúdo JavaScript em arquivos HTML e CSHTML) e realce semântico ainda não têm suporte. Problemas conhecidos com recursos de lâmpada e refiapoing.
 * Exibição de destinos de CMake
 * Editor de configurações do projeto CMake
 * CTRL + F7 (arquivo de compilação)
@@ -72,7 +72,7 @@ Há suporte para a maioria dos tipos de aplicativos e configurações de projeto
 
 Ainda não disponível:
 
-* Designers de interface do usuário-designers WinForms e WPF
+* Designers de interface do usuário – WinForms, WPF e designers de recursos
 * Projetos Visual Basic e F #
 * Projetos de .NET Framework de destino
 * Projetos de Docker Compose
