@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250802"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780964"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: trabalhar com dados usando Entity Framework
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 Você também descobrirá que a cadeia de conexão `AppDbContext` foi adicionada ao arquivo *appsettings.json* do projeto.
 
-Se você executar o aplicativo agora, ele poderá falhar porque nenhum banco de dados foi criado ainda. Você pode configurar o aplicativo para criar automaticamente o banco de dados, se for necessário ao [adicionar código a Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main):
+Se você executar o aplicativo agora, ele poderá falhar porque nenhum banco de dados foi criado ainda. Você pode configurar o aplicativo para criar automaticamente o banco de dados, se for necessário ao [adicionar código a Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main):
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ No próximo vídeo, você aprenderá como adicionar suporte à API Web em seu ap
 
 ## <a name="see-also"></a>Confira também
 
-- [Razor Pages com o Entity Framework Core no ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Razor Pages do ASP.NET Core com EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages com o Entity Framework Core no ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [Razor Pages do ASP.NET Core com EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

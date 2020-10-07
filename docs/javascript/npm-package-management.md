@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739896"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781033"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -126,7 +126,7 @@ Para projetos como ASP.NET Core projetos, você pode integrar o suporte do NPM e
 * [Instalar pacotes usando package.jsem](#npmInstallPackage)
 
 >[!NOTE]
-> Para projetos ASP.NET Core, você também pode usar o [Gerenciador de biblioteca](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou yarn em vez de NPM para instalar arquivos JavaScript e CSS do lado do cliente.
+> Para projetos ASP.NET Core, você também pode usar o [Gerenciador de biblioteca](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) ou yarn em vez de NPM para instalar arquivos JavaScript e CSS do lado do cliente.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Adicionar suporte a NPM a um projeto (ASP.NET Core)
 
@@ -164,7 +164,7 @@ Para projetos com NPM incluídos, você pode configurar pacotes do NPM usando o 
 
 O IntelliSense no *package.jsno* ajuda a selecionar uma versão específica de um pacote NPM.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selecione a versão do pacote NPM" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Instalar o novo pacote do npm usando o Gerenciador de Soluções" border="true":::
 
 Quando você salva o arquivo, o Visual Studio adiciona o pacote no nó **Dependencies/NPM** em Gerenciador de soluções. Se você não vir o nó, clique com o botão direito do mouse em **package.js** e escolha **restaurar pacotes**.
 

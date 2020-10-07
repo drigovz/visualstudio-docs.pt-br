@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580056"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780980"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
@@ -139,7 +139,7 @@ Se o modelo de projeto **Aplicativo Web do ASP.NET Core** não for exibido, voc�
 
 ### <a name="about-your-solution"></a>Sobre sua solução
 
-Esta solução segue o padrão de design da **Página do Razor**. Ele é diferente do padrão de design [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) que é simplificado para incluir o código do modelo e do controlador na própria página do Razor.
+Esta solução segue o padrão de design da **Página do Razor**. Ele é diferente do padrão de design [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) que é simplificado para incluir o código do modelo e do controlador na própria página do Razor.
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Fazer tour da sua solução
@@ -366,7 +366,7 @@ Visual Studio é um pacote de desenvolvimento integrado de ferramentas de produt
 Parabéns por concluir este tutorial. Esperamos que você tenha aprendido um pouco sobre o C#, o ASP.NET Core e o IDE do Visual Studio. Para saber mais sobre como criar um aplicativo Web ou site em C# com o ASP.NET, continue com os tutoriais a seguir:
 
 > [!div class="nextstepaction"]
-> [Criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>Confira também
 

@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453690"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781049"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Tutorial: criar um aplicativo ASP.NET Core com TypeScript no Visual Studio
 
-Neste tutorial para o desenvolvimento do Visual Studio ASP.NET Core e TypeScript, você cria um aplicativo Web simples, adiciona um código TypeScript e, em seguida, executa o aplicativo. 
+Neste tutorial para o desenvolvimento do Visual Studio ASP.NET Core e TypeScript, você cria um aplicativo Web simples, adiciona um código TypeScript e, em seguida, executa o aplicativo.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ Neste tutorial, você começa com um projeto simples contendo código para um ap
 1. Siga as instruções em [Gerenciamento de pacotes NPM](../javascript/npm-package-management.md#aspnet-core-projects) para adicionar um `package.json` arquivo ao seu projeto. Isso adiciona suporte a NPM ao seu projeto.
 
    >[!NOTE]
-   > Para projetos ASP.NET Core, você também pode usar o [Gerenciador de biblioteca](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou yarn em vez de NPM para instalar arquivos JavaScript e CSS do lado do cliente.
+   > Para projetos ASP.NET Core, você também pode usar o [Gerenciador de biblioteca](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) ou yarn em vez de NPM para instalar arquivos JavaScript e CSS do lado do cliente.
 
 1. Neste exemplo, adicione um arquivo de definição do TypeScript para o jQuery ao seu projeto. Inclua o seguinte em seu *package.jsno* arquivo.
 

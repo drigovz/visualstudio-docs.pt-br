@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247983"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780870"
 ---
 # <a name="container-tools-launch-settings"></a>Configurações de inicialização das ferramentas de contêiner
 
-Na pasta *Propriedades* em um projeto ASP.NET Core, você pode encontrar o launchSettings.jsno arquivo, que contém configurações que controlam como seu aplicativo Web é iniciado em seu computador de desenvolvimento. Para obter informações detalhadas sobre como esse arquivo é usado no desenvolvimento do ASP.NET, consulte [usar vários ambientes no ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). No *launchSettings.jsno*, as configurações na seção **Docker** estão relacionadas ao modo como o Visual Studio lida com aplicativos em contêineres.
+Na pasta *Propriedades* em um projeto ASP.NET Core, você pode encontrar o launchSettings.jsno arquivo, que contém configurações que controlam como seu aplicativo Web é iniciado em seu computador de desenvolvimento. Para obter informações detalhadas sobre como esse arquivo é usado no desenvolvimento do ASP.NET, consulte [usar vários ambientes no ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). No *launchSettings.jsno*, as configurações na seção **Docker** estão relacionadas ao modo como o Visual Studio lida com aplicativos em contêineres.
 
 ::: moniker range="vs-2017"
 

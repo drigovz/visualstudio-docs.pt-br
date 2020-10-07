@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768621"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781007"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
@@ -65,7 +65,7 @@ Um comentário no código precedido por um marcador de comentário e um token pr
 Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma tarefa `TODO` na lista.
 
 > [!NOTE]
-> Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB. Para outras linguagens, confira a seção **Tokens personalizados**.
+> Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB.
 
 ### <a name="custom-tokens"></a>Tokens personalizados
 

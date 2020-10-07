@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580079"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780994"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -100,7 +100,7 @@ Execute o aplicativo novamente. Você deve ver a página agora exibindo a hora a
 
 Adicione um ponto de interrupção para o método `OnGet` no local em que estamos atribuindo um valor para `Time` e, dessa vez, comece a depurar o aplicativo.
 
-A execução é interrompida na linha e você pode ver que `DateTime.Today` inclui a data, mas a hora sempre é meia-noite, porque ele não inclui dados de horário. 
+A execução é interrompida na linha e você pode ver que `DateTime.Today` inclui a data, mas a hora sempre é meia-noite, porque ele não inclui dados de horário.
 
 ![Projeto do ASP.NET Core no Visual Studio 2019 no navegador](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplic
 
 ## <a name="see-also"></a>Confira também
 
-- [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
