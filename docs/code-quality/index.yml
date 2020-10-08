@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Análise de código no Visual Studio
+title: Analisar código no Visual Studio
 summary: O Visual Studio fornece várias ferramentas diferentes para analisar e melhorar a qualidade do código.
 metadata:
   title: Analisadores de código
@@ -10,50 +10,62 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: 1da6ea6d88e15aaa400eb61509dc26a2a6355b58
-  ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+  ms.openlocfilehash: 149019a9eea62c9f88acee61e7ace997cdc179da
+  ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "91604605"
+  ms.lasthandoff: 10/07/2020
+  ms.locfileid: "91780901"
 landingContent:
-- title: Análise de código .NET
+- title: Configurar análise de código .NET
   linkLists:
   - linkListType: overview
     links:
     - text: Analisar código .NET
       url: roslyn-analyzers-overview.md
-    - text: Análise de qualidade de código .NET
-      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
-    - text: Análise de estilo de código .NET
-      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
   - linkListType: concept
     links:
     - text: Perguntas frequentes
       url: analyzers-faq.md
   - linkListType: how-to-guide
     links:
-    - text: Configurar análise de código
+    - text: Análise de código .NET
       url: use-roslyn-analyzers.md
+    - text: Análise de qualidade de código .NET
+      url: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+    - text: Análise de estilo de código .NET
+      url: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+- title: Análise de código .NET
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Análise de código-fonte .NET
+      url: /dotnet/fundamentals/code-analysis/overview
+    - text: Análise de qualidade de código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: Análise de estilo de código .NET
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
   - linkListType: reference
     links:
     - text: Regras de qualidade de código .NET
       url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
     - text: Regras de estilo de código .NET
       url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
-- title: Medir a complexidade do código
-  linkLists:
-  - linkListType: concept
-    links:
-    - text: Métricas de código
-      url: code-metrics-values.md
-- title: Analisar código C e C++
+- title: Análise de código C++
   linkLists:
   - linkListType: overview
     links:
     - text: Analisar código C e C++
       url: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - text: Convenções de formatação de EditorConfig
+      url: ../ide/cpp-editorconfig-properties.md
   - linkListType: reference
     links:
     - text: Avisos da análise de código C++
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
+- title: Medir a complexidade do código (.NET)
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Métricas de código
+      url: code-metrics-values.md

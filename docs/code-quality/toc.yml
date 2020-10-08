@@ -14,7 +14,20 @@
             - name: Visão geral
               href: use-roslyn-analyzers.md
             - name: Qualidade do código
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: Opções de qualidade do código
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Usar arquivos de EditorConfig para a qualidade do código
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: Estilo de código
+              items:
+                - name: Preferências de estilo de código
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Usar arquivos de EditorConfig para o estilo de código
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Opções de regra
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: Configurar análise de código dinâmica
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Executar análise de código manualmente
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: Trabalhar com os dados de métricas de código
           href: working-with-code-metrics-data.md
+- name: Análise de código C++
+  items:
+    - name: Analisar código C e C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: Convenções de formatação de EditorConfig
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: Avisos da análise de código C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings
