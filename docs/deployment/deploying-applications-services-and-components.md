@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641667"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830766"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -50,7 +50,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
 - **ASP.net**, **ASP.NET Core**, **Python**e **Node.js**: publicar no serviço Azure app ou Azure app serviço Linux (usando contêineres) usando um dos métodos a seguir.
 
-  - Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
   - Para implantação única (ou manual) de aplicativos, use a ferramenta **Publicar** no Visual Studio.
 
@@ -107,7 +107,7 @@ Se precisa de uma instalação mais complexa de um aplicativo da área de trabal
 
 - Um pacote de instalador baseado em MSI pode ser criado usando a [Extensão WiX Toolset do Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Este é um conjunto de ferramentas de linha de comando.
 
-- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 e versões posteriores (não compatível com a Community Edition). 
+- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 e versões posteriores (não compatível com a Community Edition).
 
   > [!NOTE]
   > O InstallShield Limited Edition não está mais incluído no Visual Studio e não tem suporte no Visual Studio 2017 e versões posteriores; Verifique com o [Flexera software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) sobre disponibilidade futura.
@@ -122,7 +122,7 @@ Você pode permitir desenvolvimento e testes mais sofisticados implantando seus 
 
 ## <a name="continuous-deployment"></a>Implantação contínua
 
-Você pode usar Azure Pipelines para permitir a implantação contínua do seu aplicativo. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) e [Implantar no Azure](/azure/devops/deploy-azure/index?view=vsts).
+Você pode usar Azure Pipelines para permitir a implantação contínua do seu aplicativo. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) e [Implantar no Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true).
 
 ## <a name="deploy-a-sql-database"></a>Implantar um banco de dados SQL
 
