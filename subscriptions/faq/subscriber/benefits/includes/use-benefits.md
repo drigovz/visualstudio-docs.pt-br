@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91642050"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838433"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Como fazer para usar meus benefícios?
 
@@ -20,7 +20,7 @@ Assim como os tipos de benefícios, os métodos usados para ativá-los e usá-lo
 
 Para cada benefício disponível no Portal do Assinante, fornecemos artigos que incluem informações como quais assinaturas incluem esses benefícios, além das etapas usadas para ativá-los.
 
-Confira nossa documentação para [saber mais](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (clique em 'Assinaturas' no painel de navegação à esquerda e escolha 'Benefícios').
+Confira nossa documentação para [saber mais](../../../../whats-new-in-subscriptions.md) (clique em 'Assinaturas' no painel de navegação à esquerda e escolha 'Benefícios').
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o processo de configuração do Visual Studio com o GitHub Enterprise? 
 
@@ -36,4 +36,4 @@ Quando um convite for enviado pelo administrador da organização do GitHub, voc
 
 Depois de aceitar o convite da organização do GitHub, a aparência do bloco de benefícios em <https://my.visualstudio.com/benefits> será alterada de "Pendente" para "Ativado" e você poderá começar a usar o GitHub Enterprise. 
 
-[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) detalhes sobre o processo de configuração do GitHub Enterprise. 
+[Leia mais](../../../../access-github.md) detalhes sobre o processo de configuração do GitHub Enterprise. 

@@ -86,7 +86,7 @@
         - name: Modelo de serviço de nuvem do Azure
           href: python-azure-cloud-service-project-template.md
     - name: SDK do Azure para Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: Guias de instruções
   items:
     - name: Gerenciar ambientes do Python

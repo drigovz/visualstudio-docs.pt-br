@@ -7,13 +7,13 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q1_3
-ms.openlocfilehash: 2b2a45f31cad9ff131aa41bb5979c3e566f20b88
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 884152b487c364dd14b3f59eae603f25e619f430
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385995"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838356"
 ---
 ## <a name="how-do-i-find-my-admin-if-i-have-a-question"></a>Como fazer para encontrar meu administrador em caso de dúvidas?
 
-Caso sua assinatura tenha sido fornecida pela sua organização ou sua escola, entre em contato com os administradores do contrato para obter assistência. Use o formulário ['Entrar em contato com meu administrador'](https://my.visualstudio.com/Subscriptions?DisplayContactMyAdminForm=true) diretamente no [Portal de Assinaturas](https://my.visualstudio.com/benefits). Para obter mais informações, confira nosso artigo [Entrar em contato com o administrador de assinaturas](https://docs.microsoft.com/visualstudio/subscriptions/contact-my-admin).
+Caso sua assinatura tenha sido fornecida pela sua organização ou sua escola, entre em contato com os administradores do contrato para obter assistência. Use o formulário ['Entrar em contato com meu administrador'](https://my.visualstudio.com/Subscriptions?DisplayContactMyAdminForm=true) diretamente no [Portal de Assinaturas](https://my.visualstudio.com/benefits). Para obter mais informações, confira nosso artigo [Entrar em contato com o administrador de assinaturas](../../../../contact-my-admin.md).

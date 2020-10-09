@@ -12,12 +12,12 @@ manager: ''
 robots: ''
 ms.date: 4/3/2020
 ms.faqid: q1_5
-ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: d50798fcc04baca95d6ee4843f5ecd79d5e892c3
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386015"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838272"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>Como fazer para adicionar identidades alternativas à minha assinatura e como isso afeta meus créditos Azure e o Azure DevOps?
 
@@ -27,4 +27,4 @@ Isso não fornece uma cópia da assinatura para a outra conta; apenas possibilit
 
 Em todas as assinaturas, você pode adicionar uma 'conta corporativa ou de estudante' para usar essa conta com os benefícios que exigem um logon (IDE do VS, Azure DevOps e Azure).
 
-É fácil adicionar uma ID alternativa. Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions), clique em 'Adicionar conta alternativa', insira o endereço de email e clique em 'Adicionar'. Para obter mais informações sobre como usar identidades alternativas, confira nosso artigo [Identidades alternativas](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity).
+É fácil adicionar uma ID alternativa. Conecte-se a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions), clique em 'Adicionar conta alternativa', insira o endereço de email e clique em 'Adicionar'. Para obter mais informações sobre como usar identidades alternativas, confira nosso artigo [Identidades alternativas](../../../../vs-alternate-identity.md).
