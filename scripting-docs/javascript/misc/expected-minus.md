@@ -14,14 +14,14 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1800fa9b07c71c885fcba03f233a147efad14ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bb965a4807a31df106102318cf6618680a97adb
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814493"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862604"
 ---
-# <a name="expected--"></a>Esperado '-'
+# <a name="expected--"></a>'-' esperado
 Você tentou criar um literal de expressão regular, mas não incluiu uma das barras (/). Assim como os literais de cadeia de caracteres são gravados como caracteres dentro de um par de aspas, os literais de expressão regular são expressos como caracteres dentro de um par de caracteres de barra (/).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
@@ -29,5 +29,5 @@ Você tentou criar um literal de expressão regular, mas não incluiu uma das ba
 - Insira uma barra de terminação para marcar o final da expressão regular.  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Objeto de expressão regular](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Sintaxe de expressão regular (JavaScript)](/previous-versions/1400241x(v=vs.100))

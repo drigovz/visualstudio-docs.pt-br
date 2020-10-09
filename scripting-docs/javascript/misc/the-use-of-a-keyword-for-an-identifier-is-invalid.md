@@ -14,16 +14,16 @@ ms.assetid: 04951b3b-a8b5-4d36-94f8-d2daee1ce0f8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5518c865ba1d0c7b1d1f4938983dd9b3278e6557
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ae4fd36d78ee2d9e17d3fe22c6013a338e85a21
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816031"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862726"
 ---
 # <a name="the-use-of-a-keyword-for-an-identifier-is-invalid"></a>O uso de uma palavra-chave para um identificador é inválido
 1048: o uso de uma palavra-chave para um identificador é inválido  
   
  Você não pode usar uma palavra-chave como o nome de uma variável, função ou outro identificador definido pelo usuário.  
   
- Para obter mais informações sobre palavras-chave, consulte [palavras reservadas do JavaScript](../../javascript/reference/javascript-reserved-words.md) e [palavras reservadas futuras do JavaScript](../../javascript/reference/javascript-future-reserved-words.md).
+ Para obter mais informações sobre palavras-chave, consulte [palavras reservadas do JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar) e [palavras reservadas futuras do JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar).

@@ -14,12 +14,12 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96c08b8b50b64ccfb7d770ade41510897ad0ff5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c56acfd14ceebf2cb4ff582363ece558b189e14
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817535"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862748"
 ---
 # <a name="string-expected"></a>Cadeia de caracteres esperada
 Você tentou invocar o método **String. prototype. ToString** ou **String. prototype. valueOf** em um objeto de um tipo diferente de `String` . O objeto deste tipo de invocação deve ser do tipo `String` .  
@@ -29,5 +29,5 @@ Você tentou invocar o método **String. prototype. ToString** ou **String. prot
 - Invocar somente os métodos **String. prototype. ToString** ou **String. prototype. valueOf** em objetos do tipo `String` .  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto String](../../javascript/reference/string-object-javascript.md)   
- [Método toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)
+ [Objeto String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
+ [Método toString (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817665"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862659"
 ---
 # <a name="boolean-expected"></a>Booliano esperado
 Você tentou invocar o método **booliano. prototype. ToString** ou **booliano. prototype. valueOf** em um objeto de um tipo diferente de `Boolean` . O objeto deste tipo de invocação deve ser do tipo `Boolean` . Por exemplo:
@@ -36,7 +36,7 @@ o.f();
 
 ## <a name="see-also"></a>Confira também
 
-- [Objeto Boolean](../../javascript/reference/boolean-object-javascript.md)
-- [Data Types](../../javascript/data-types-javascript.md)
-- [Controlar o fluxo de programas](../../javascript/controlling-program-flow-javascript.md)
-- [Copiar, passar e comparar dados](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Objeto Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [Data Types](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [Controlar o fluxo de programas](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [Copiar, passar e comparar dados](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

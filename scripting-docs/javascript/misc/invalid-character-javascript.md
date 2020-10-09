@@ -14,12 +14,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816937"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862619"
 ---
 # <a name="invalid-character-javascript"></a>Caractere inválido (JavaScript)
 Você compostou um identificador usando um caractere (ou caracteres) não reconhecido como válido pelo [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador. Os caracteres válidos usam as seguintes regras:  
@@ -35,6 +35,6 @@ Você compostou um identificador usando um caractere (ou caracteres) não reconh
 - Evite usar caracteres que não fazem parte da [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definição de linguagem.  
   
 ## <a name="see-also"></a>Confira também  
- [As](../../javascript/variables-javascript.md)   
- [Caracteres especiais](../../javascript/advanced/special-characters-javascript.md)   
- [Data Types](../../javascript/data-types-javascript.md)
+ [As](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Caracteres especiais](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types)   
+ [Data Types](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

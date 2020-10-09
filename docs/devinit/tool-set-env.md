@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005991"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862842"
 ---
 # <a name="set-env"></a>set-env
 
 A `set-env` ferramenta pode ser usada para definir variáveis de ambiente para uso no processo atual. As variáveis de ambiente são definidas somente no processo atual e serão usadas por outras `devinit` ferramentas se elas forem executadas nesse processo.
 
-Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as mesmas limitações que essa API. Para obter mais informações, consulte a [documentação](https://docs.microsoft.com/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) do `Environment.SetEnvironment` .
+Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as mesmas limitações que essa API. Para obter mais informações, consulte a [documentação](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) do `Environment.SetEnvironment` .
 
 ## <a name="usage"></a>Uso
 
-| Nome                                         | Tipo   | Obrigatório | Valor                                                                       |
+| Nome                                         | Type   | Obrigatório | Valor                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                       |
 | [**entrada**](#input)                          | Cadeia de caracteres | No       | A entrada para a ferramenta. Consulte a [entrada](#input) abaixo para obter detalhes.               |
@@ -51,7 +51,7 @@ Não usado.
 
 ## <a name="usage-in-a-codespace"></a>Uso em um codespace
 
-Se você estiver usando um codespace, poderá definir as variáveis de ambiente usadas no codespace até Customizating a `remoteEnv` propriedade no [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) arquivo.
+Se você estiver usando um codespace, poderá definir as variáveis de ambiente usadas no codespace até Customizating a `remoteEnv` propriedade no [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) arquivo.
 
 ## <a name="example-usage"></a>Exemplo de uso
 

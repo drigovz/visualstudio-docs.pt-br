@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7671d336e3c4f86cae8b6bba7fe1b35443aa0632
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 102b6d4284958b80607e991c998f274c6e0e46bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005113"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862852"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
-A `nuget-restore` ferramenta restaura dependências e ferramentas específicas do projeto que são especificadas no arquivo de projeto. Leia mais sobre a restauração do NuGet [aqui](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-restore).
+A `nuget-restore` ferramenta restaura dependências e ferramentas específicas do projeto que são especificadas no arquivo de projeto. Leia mais sobre a restauração do NuGet [aqui](/nuget/reference/cli-reference/cli-ref-restore).
 
 ## <a name="usage"></a>Uso
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Caminho para o arquivo de projeto/solução a ser restaurado. Consulte a [entrada](#input) abaixo para obter detalhes. |

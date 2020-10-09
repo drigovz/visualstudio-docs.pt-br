@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: e88f1b58308d0c81d17f9337f0a1a1d5e253c6ba
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005033"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862821"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
-A `require-vscomponent` ferramenta é usada para importar configurações do Visual Studio para o Visual Studio existente. Leia mais sobre `.vsconfig` [aqui](https://docs.microsoft.com/visualstudio/install/import-export-installation-configurations).
+A `require-vscomponent` ferramenta é usada para importar configurações do Visual Studio para o Visual Studio existente. Leia mais sobre `.vsconfig` [aqui](../install/import-export-installation-configurations.md).
 
 ## <a name="usage"></a>Uso
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                     | Tipo   | Obrigatório | Valor                                                                |
+| Nome                                     | Type   | Obrigatório | Valor                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
 | **feitos**                             | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                |
 | [**entrada**](#input)                      | Cadeia de caracteres | No       | O caminho completo de `.vsconfig` . Consulte a [entrada](#input) abaixo para obter detalhes. |

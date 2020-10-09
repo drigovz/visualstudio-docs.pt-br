@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0959bad452d3b24ca1475b66e37fbdab1e9c3e7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817652"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862794"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Não é possível ter 'break' fora do loop
 Você tentou usar a palavra-chave **Break** fora de um loop. A palavra-chave **Break** é usada para encerrar um loop ou uma `switch` instrução. Ele deve ser inserido no corpo de um loop ou `switch` instrução. No entanto, um **rótulo** pode seguir a palavra-chave break.  
@@ -35,6 +35,6 @@ break labelname;
 - Verifique se a palavra-chave **Break** aparece dentro de um loop delimitador ou instrução switch.  
   
 ## <a name="see-also"></a>Confira também  
- [Instrução break](../../javascript/reference/break-statement-javascript.md)   
- [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)   
- [Solucionar problemas com scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+ [Instrução break](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Controlando o fluxo do programa](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Solucionar problemas com scripts](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

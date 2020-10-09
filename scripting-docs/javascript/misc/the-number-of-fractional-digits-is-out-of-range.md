@@ -14,12 +14,12 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ede65345bdaab22b26274323ad08779313d186e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816170"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862739"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>O número de dígitos fracionários está fora do intervalo
 Você tentou passar um argumento inválido para o número da função **. prototype. toexponencial**. O argumento para a função **toexponencial ()** deve estar entre 0 e 20 (inclusivo).  
@@ -29,4 +29,4 @@ Você tentou passar um argumento inválido para o número da função **. protot
 - Verifique se o argumento para **toexponencial ()** não é muito grande ou muito pequeno.  
   
 ## <a name="see-also"></a>Confira também  
- [Método toExponential (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
+ [Método toExponential (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toexponential)

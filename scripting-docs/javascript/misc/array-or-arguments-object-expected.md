@@ -14,12 +14,12 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4b3eaee0a244f9d14d88d1393742ab6d31a509
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815767"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862664"
 ---
 # <a name="array-or-arguments-object-expected"></a>Objeto de matriz ou argumentos esperado
 Você não forneceu uma matriz como um argumento. Esse erro se aplica somente ao método **Function. prototype. Apply** . Se especificado, o segundo argumento para essa função deve ser um objeto de `Array` objeto ou de **argumentos** .  
@@ -29,6 +29,6 @@ Você não forneceu uma matriz como um argumento. Esse erro se aplica somente ao
 - Especifique um `Array` objeto de **argumentos** ou como o segundo argumento.  
   
 ## <a name="see-also"></a>Confira também  
- [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)   
- [Método Apply (função)](../../javascript/reference/apply-method-function-javascript.md)   
- [Funções](../../javascript/functions-javascript.md)
+ [Usando matrizes](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [Método Apply (função)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)   
+ [Funções](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

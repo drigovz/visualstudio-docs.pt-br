@@ -14,12 +14,12 @@ ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44f207d2e32a7ca79ee0d5851a80261c5da9743d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a0e3eb6d1275e5598ad44ea553e22f0b53eeb45
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814584"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862755"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Exceção lançada, mas não capturada
 Você incluiu uma `throw` instrução em seu código, mas ela não estava colocada dentro de um bloco **try** ou não havia nenhum bloco **Catch** associado para interceptar o erro. As exceções são geradas de dentro do bloco **try** usando a instrução **throw** e detectadas fora do bloco **try** com uma instrução **Catch** .  
@@ -33,6 +33,6 @@ Você incluiu uma `throw` instrução em seu código, mas ela não estava coloca
 - Se a exceção for relançada, verifique se há outra instrução Catch correspondente.  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto de erro](../../javascript/reference/error-object-javascript.md)   
- [Instrução Throw](../../javascript/reference/throw-statement-javascript.md)   
- [tentar... capturar... Instrução Finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Objeto de erro](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)   
+ [Instrução Throw](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/throw)   
+ [tentar... capturar... Instrução Finally](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)

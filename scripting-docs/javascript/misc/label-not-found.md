@@ -14,12 +14,12 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3af2451efdea5ac3f71ae17fc5919e9f443e86db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43181affb8048bc9c39c0ee3e844193cd2247c8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815754"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862540"
 ---
 # <a name="label-not-found"></a>Rótulo não encontrado
 Você fez uma referência a um rótulo que não existe. Os rótulos podem ser usados para marcar blocos de código, mas dentro de um escopo especificado, devem ser exclusivos.  
@@ -31,7 +31,7 @@ Você fez uma referência a um rótulo que não existe. Os rótulos podem ser us
 - Verifique se todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (isso inclui as definições de encaminhamento).  
   
 ## <a name="see-also"></a>Confira também  
- [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   
- [Instrução switch](../../javascript/reference/switch-statement-javascript.md)   
- [Instrução break](../../javascript/reference/break-statement-javascript.md)   
- [Instrução Continue](../../javascript/reference/continue-statement-javascript.md)
+ [Instrução rotulada](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Instrução switch](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Instrução break](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Instrução Continue](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)
