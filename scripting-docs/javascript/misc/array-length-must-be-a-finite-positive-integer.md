@@ -14,12 +14,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817080"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862215"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>O tamanho da matriz deve ser um número inteiro finito e positivo
 Você está chamando o construtor de **matriz** com um argumento que não é um número inteiro (números inteiros consistem em zero mais o conjunto de inteiros positivos).  
@@ -42,4 +42,4 @@ Você está chamando o construtor de **matriz** com um argumento que não é um 
      Não há nenhum limite superior para o tamanho de uma matriz, a não ser o valor inteiro máximo (aproximadamente 4.000.000.000).  
   
 ## <a name="see-also"></a>Confira também  
- [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)
+ [Usando matrizes](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658432"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860491"
 ---
 # <a name="overview-of-source-code-analysis"></a>Visão geral da análise de código-fonte
 
@@ -37,9 +37,9 @@ Cada analisador tem um dos seguintes níveis de severidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
-| Informações | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
+| Info | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
 | Nenhum | `none` | Suprimido completamente. | Suprimido completamente. |
 | Padrão | `default` | Corresponde à severidade padrão da regra. Para determinar qual é o valor padrão de uma regra, procure na janela Propriedades. | Corresponde à severidade padrão da regra. |
@@ -77,7 +77,7 @@ Se você instalar analisadores como uma extensão do Visual Studio, eles serão 
 
 Para que as regras sejam impostas no momento da compilação, incluindo por meio da linha de comando ou como parte de uma compilação de CI (integração contínua), você pode escolher uma das seguintes opções:
 
-- Crie um projeto .NET 5,0 que inclui analisadores por padrão no SDK do .NET. A análise de código está habilitada, por padrão, para projetos direcionados ao .NET 5.0 ou posterior. Você pode habilitar a análise de código em projetos direcionados a versões anteriores do .NET definindo a propriedade [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) como true.
+- Crie um projeto .NET 5,0 que inclui analisadores por padrão no SDK do .NET. A análise de código está habilitada, por padrão, para projetos direcionados ao .NET 5.0 ou posterior. Você pode habilitar a análise de código em projetos direcionados a versões anteriores do .NET definindo a propriedade [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) como true.
 
 - Instale os analisadores como um pacote NuGet. Os erros e avisos do analisador não serão exibidos no relatório de build se você instalar os analisadores como uma extensão.
 
@@ -97,7 +97,7 @@ Você não pode configurar a severidade de regras de analisadores que foram inst
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)

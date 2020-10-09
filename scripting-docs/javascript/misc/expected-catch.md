@@ -14,12 +14,12 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47411a6376cd843b3a12cf74ed1800775b98cd83
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816677"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861956"
 ---
 # <a name="expected-catch"></a>'catch' esperado
 Você usou o bloco **try** de tratamento de exceção, mas não gravou a instrução **Catch** associada. O mecanismo de tratamento de exceção requer que o código que pode falhar, juntamente com o código que não deve ser executado se ocorrer uma exceção, seja encapsulado dentro de um bloco **try** . As exceções são geradas de dentro do bloco **try** usando a instrução **throw** e capturadas fora do bloco **try** com uma ou mais instruções **Catch** .  
@@ -31,5 +31,5 @@ Você usou o bloco **try** de tratamento de exceção, mas não gravou a instru�
 - Tente usar um bloco **finally** em vez de um bloco **Catch** .  
   
 ## <a name="see-also"></a>Confira também  
- [tentar... capturar... Instrução Finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Objeto Error](../../javascript/reference/error-object-javascript.md)
+ [tentar... capturar... Instrução Finally](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)   
+ [Objeto de erro](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)

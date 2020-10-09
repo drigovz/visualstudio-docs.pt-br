@@ -14,12 +14,12 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a63b73e27de4e33aaa5c833c79f339da66954d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4afa6e3a9dc26b40ddbc8fbd2dbcedb92a74c3
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815728"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861443"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>O objeto não dá suporte a essa propriedade ou método
 Você especificou uma propriedade ou um método que não existe para esse objeto. Nem todos os objetos são compatíveis com todas as propriedades e todos os métodos.  
@@ -33,5 +33,5 @@ Você especificou uma propriedade ou um método que não existe para esse objeto
 - Confira a documentação do objeto para saber mais.  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto Object](../../javascript/reference/object-object-javascript.md)   
- [Objetos JavaScript](../../javascript/reference/javascript-objects.md)
+ [Objeto Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objetos JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)

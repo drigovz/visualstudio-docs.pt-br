@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862433"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalar o Visual Studio 2017 para Mac
 
@@ -68,7 +68,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
       - Aplicativos Xamarin totalmente plataforma cruzada: selecione as plataformas **Android**, **iOS** e **macOS**.
    * **Aplicativos .NET Core**: selecione a plataforma **.NET Core**.
    * **Aplicativos Web ASP.NET Core**: selecione a plataforma **.NET Core**.
-   * **Desenvolvimento de jogos em Unity em plataforma cruzada**: nenhuma plataforma adicional precisa ser instalada além do Visual Studio para Mac. Confira o [Guia de instalação do Unity](/visualstudio/mac/setup-vsmac-tools-unity) para saber mais sobre como instalar a extensão do Unity.
+   * **Desenvolvimento de jogos em Unity em plataforma cruzada**: nenhuma plataforma adicional precisa ser instalada além do Visual Studio para Mac. Confira o [Guia de instalação do Unity](./setup-vsmac-tools-unity.md) para saber mais sobre como instalar a extensão do Unity.
 
    Esta tela de instalação exibe a versão e o tamanho de cada componente individual. Você pode clicar em cada componente para exibir uma lista de dependências desse componente (para Android), consultar pacotes adicionais que ele baixa (para .NET Core) ou exibir os aplicativos adicionais necessários (iOS e macOS):
 
@@ -90,7 +90,7 @@ Para trabalhar com iOS no Visual Studio você precisará do seguinte:
 
 10. Depois que a instalação for bem-sucedida, você poderá começar a desenvolver aplicativos no Visual Studio pressionando **Iniciar**:
 
-    ![Abra o Visual Studio](media/installer-image11.png)
+    ![Abrir o Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 > Se você optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), deverá executar o [instalador](https://visualstudio.microsoft.com/vs/) novamente se desejar adicionar os componentes mais tarde.
@@ -120,7 +120,7 @@ A instalação do Visual Studio para Mac permite que você comece a escrever có
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicativos .NET Core, aplicativos Web do ASP.NET Core, desenvolvimento de jogos em Unity
 
-Para outras cargas de trabalho, confira a página [Cargas de trabalho](/visualstudio/mac/workloads).
+Para outras cargas de trabalho, confira a página [Cargas de trabalho](./workloads.md).
 
 ## <a name="related-video"></a>Vídeo relacionados
 

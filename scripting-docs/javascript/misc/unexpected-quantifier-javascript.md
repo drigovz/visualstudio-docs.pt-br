@@ -14,12 +14,12 @@ ms.assetid: ba6d34f9-2d6f-486c-a929-6cd9818be322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da4ff08ae667b868670364c7ad6b9a6b69ae6ad3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f67f9a2fc81b0bd950e171e4274eb09eacd88bbc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815325"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861853"
 ---
 # <a name="unexpected-quantifier-javascript"></a>Quantificador inesperado (JavaScript)
 Ao compor seu padrão de pesquisa de expressão regular, você criou um elemento pattern com um fator de repetição ilegal. Por exemplo, o padrão  
@@ -48,5 +48,5 @@ Ao compor seu padrão de pesquisa de expressão regular, você criou um elemento
 - Verifique se o seu elemento de padrão de pesquisa contém apenas fatores de repetição legal.  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
- [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ [Objeto de expressão regular](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Sintaxe de expressão regular (JavaScript)](/previous-versions/1400241x(v=vs.100))

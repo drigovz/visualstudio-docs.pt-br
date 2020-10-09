@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825561"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862467"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Integração de extensibilidade e conjunto de ferramentas do sistema de projeto do Visual Studio C++
 
@@ -435,7 +435,7 @@ Por exemplo, para gerar automaticamente arquivos. cpp ou. h de arquivos. XAML, o
 </Target>
 ```
 
-Para usar `Task.HostObject` o para obter o conteúdo não salvo de arquivos de origem, os destinos e a tarefa devem ser registrados como [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) para os projetos fornecidos em um pkgdef:
+Para usar `Task.HostObject` o para obter o conteúdo não salvo de arquivos de origem, os destinos e a tarefa devem ser registrados como [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017&preserve-view=true) para os projetos fornecidos em um pkgdef:
 
 ```reg
 \[$RootKey$\\Projects\\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\\MSBuildHostObjects\]

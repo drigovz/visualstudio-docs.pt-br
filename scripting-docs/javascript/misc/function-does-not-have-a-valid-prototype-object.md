@@ -14,12 +14,12 @@ ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6f13620bb486cf1663bd5bef9a9a93b2c8a480
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15b00087cd66b873044b7bafb1bfecf4fc91f8d9
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817353"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862395"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>A função não tem um objeto de protótipo válido
 Você tentou usar o **instanceof** para determinar se um objeto foi derivado de uma classe de função específica, mas redefiniu a propriedade do objeto `prototype` como `null` ou um tipo de objeto externo (não objetos válidos [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ). Um objeto externo pode ser um objeto do modelo de objeto de host (por exemplo, o documento ou o objeto de janela do Internet Explorer) ou um objeto COM externo.  
@@ -29,5 +29,5 @@ Você tentou usar o **instanceof** para determinar se um objeto foi derivado de 
 - Verifique se a propriedade da função `prototype` se refere a um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objeto válido.  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto de função](../../javascript/reference/function-object-javascript.md)   
- [Propriedade prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)
+ [Objeto de função](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Propriedade prototype (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)

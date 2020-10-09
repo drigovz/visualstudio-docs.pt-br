@@ -14,12 +14,12 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9381f990c8a43e848370e1251e163dad81a10e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f2dfdaecc0e41e1c4d267a466f47ff26b76a720
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817340"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862183"
 ---
 # <a name="expected-while"></a>'while' esperado
 Você não incluiu a `while` condição em um `do...while` loop. Uma instrução **do** deve ter um `while` teste correspondente no final do bloco de código.  
@@ -29,5 +29,5 @@ Você não incluiu a `while` condição em um `do...while` loop. Uma instrução
 - Inclua a `while` instrução Test após a chave de fechamento.  
   
 ## <a name="see-also"></a>Confira também  
- [Instrução while](../../javascript/reference/while-statement-javascript.md)   
- [Controlar o fluxo de programas](../../javascript/controlling-program-flow-javascript.md)
+ [Instrução while](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/while)   
+ [Controlar o fluxo de programas](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

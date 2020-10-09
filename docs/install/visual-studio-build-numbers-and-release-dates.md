@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
-ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
+ms.openlocfilehash: 6ea81aab75b0499abb427d98e230b1f3909cef02
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91544794"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862255"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -352,13 +352,13 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.0.0 | Versão | 7 de março de 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Obtenha mais informações sobre números de build e datas de lançamento da próxima versão do Visual Studio na página [Números de build e datas de lançamento do Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
+> Obtenha mais informações sobre números de build e datas de lançamento da próxima versão do Visual Studio na página [Números de build e datas de lançamento do Visual Studio 2019](?preserve-view=true&view=vs-2019).
 
 ::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 * [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap)
 * [Ritmo de lançamento do Visual Studio](/visualstudio/productinfo/release-rhythm)

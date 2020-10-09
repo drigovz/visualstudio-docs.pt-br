@@ -12,12 +12,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816781"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862083"
 ---
 # <a name="operator-summary-javascript"></a>Resumo de operador (JavaScript)
 As tabelas a seguir listam os [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] operadores em suas respectivas categorias.  
@@ -26,60 +26,60 @@ As tabelas a seguir listam os [!INCLUDE[javascript](../../javascript/includes/ja
   
 |Operador|Símbolo|  
 |--------------|------------|  
-|[Além](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Decremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[Divisão](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Incremento](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Resto](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[Multiplicação](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[Subtração](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
-|[Negação unária](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[Além](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[Decremento](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
+|[Divisão](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
+|[Incremento](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
+|[Resto](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
+|[Multiplicação](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[Subtração](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
+|[Negação unária](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   
 ## <a name="logical-operators"></a>Operadores lógicos  
   
 |Operador|Símbolo|  
 |--------------|------------|  
-|[Pontos](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[Condicional (Ternário)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[Igualitário](../../javascript/reference/comparison-operators-javascript.md)|==|  
-|[Maior que](../../javascript/reference/comparison-operators-javascript.md)|>|  
-|[Maior ou igual a](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[Identidade](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[Desigualdade](../../javascript/reference/comparison-operators-javascript.md)|!=|  
-|[Menor que](../../javascript/reference/comparison-operators-javascript.md)|<|  
-|[Menor ou igual a](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[AND lógico](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[NOT lógico](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[OR lógico](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[Não identidade](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[Vírgula](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
+|[Condicional (Ternário)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
+|[Igualitário](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
+|[Maior que](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>|  
+|[Maior ou igual a](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
+|[Identidade](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|===|  
+|[Desigualdade](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
+|[Menor que](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
+|[Menor ou igual a](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
+|[AND lógico](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&&|  
+|[NOT lógico](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!|  
+|[OR lógico](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&#124;&#124;|  
+|[Não identidade](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!==|  
   
 ## <a name="bitwise-operators"></a>Operadores bit a bit  
   
 |Operador|Símbolo|  
 |--------------|------------|  
-|[AND bit a bit](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[Bit a bit de deslocamento para a esquerda](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
-|[NOT bit a bit](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[OR-bit](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
-|[Bit a bit de deslocamento para a direita](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[XOR bits](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
-|[Deslocamento para a direita sem sinal](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
+|[AND bit a bit](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_AND)|&|  
+|[Bit a bit de deslocamento para a esquerda](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Left_shift)|<\<|  
+|[NOT bit a bit](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_NOT)|~|  
+|[OR-bit](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_OR)|&#124;|  
+|[Bit a bit de deslocamento para a direita](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Right_shift)|>>|  
+|[XOR bits](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_XOR)|^|  
+|[Deslocamento para a direita sem sinal](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Unsigned_right_shift)|>>>|  
   
 ## <a name="assignment-operators"></a>Operadores de atribuição  
- [Operadores de atribuição](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)  
+ [Operadores de atribuição](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment)  
   
- [Operadores de atribuição composta](../../javascript/reference/compound-assignment-operators-javascript.md)  
+ [Operadores de atribuição composta](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment_operators)  
   
 ## <a name="miscellaneous-operators"></a>Operadores diversos  
- [delete](../../javascript/reference/delete-operator-decrementjavascript.md)  
+ [delete](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/delete)  
   
- [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
+ [instanceof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof)  
   
- [Novo](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [Novo](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
   
- [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
+ [typeof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof)  
   
- [void](../../javascript/reference/void-operator-decrementjavascript.md)  
+ [void](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/void)  
   
 ## <a name="requirements"></a>Requisitos  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 39324f3a14b631328f3f1189da7806e02fd1e076
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2febd8a62e041384c8acf5b7b0b5e1c974597c0a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006025"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862250"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
-A `dotnet-restore` ferramenta restaura dependências e ferramentas específicas do projeto que são especificadas no arquivo de projeto. Leia mais sobre dotnet restore [aqui](https://docs.microsoft.com/dotnet/core/tools/dotnet-restore).
+A `dotnet-restore` ferramenta restaura dependências e ferramentas específicas do projeto que são especificadas no arquivo de projeto. Leia mais sobre dotnet restore [aqui](/dotnet/core/tools/dotnet-restore).
 
 ## <a name="usage"></a>Uso
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Caminho para o arquivo de projeto/solução a ser restaurado. Consulte a [entrada](#input) abaixo para obter detalhes. |

@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eb83c6a1a2944518fbfa541b03bc14f701f164dc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006039"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862268"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
-A `azurecli-login` ferramenta é usada para entrar Azure Active Directory via [CLI do Azure](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true). Essa ferramenta usa o comando CLI do Azure: `az login --use-device-code` , para concluir o logon, você precisará seguir as instruções impressas no console.
+A `azurecli-login` ferramenta é usada para entrar Azure Active Directory via [CLI do Azure](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest). Essa ferramenta usa o comando CLI do Azure: `az login --use-device-code` , para concluir o logon, você precisará seguir as instruções impressas no console.
 
 ## <a name="usage"></a>Uso
 
 Se ambas as propriedades forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                          |
+| Nome                                             | Type   | Obrigatório | Valor                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                               |

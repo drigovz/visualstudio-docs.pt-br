@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100768"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861810"
 ---
 # <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
@@ -226,12 +226,12 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[Uso da CPU](../profiling/beginners-guide-to-performance-profiling.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
 |[Alocação de objeto .NET](../profiling/dotnet-alloc-tool.md)|Sim (somente .NET)|sim|sim|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
-|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|no|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|não|
+|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|não|
 |[Visualizador de eventos](../profiling/events-viewer.md)|sim|sim|sim|
 |[.NET Async](../profiling/analyze-async.md)|Sim (somente .NET)|sim|sim|
-|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|no|Sim (somente ASP.NET Core)|
-|[Performance Explorer](#analyze-performance-legacy-tools)|no|no|no|
+|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|não|Sim (somente ASP.NET Core)|
+|[Performance Explorer](#analyze-performance-legacy-tools)|não|não|não|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 ::: moniker-end
 
@@ -240,14 +240,14 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/beginners-guide-to-performance-profiling.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
-|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
-|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|no|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|não|
+|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|não|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
-|[Performance Explorer](../profiling/performance-explorer.md)|sim|no|sim|
+|[Performance Explorer](../profiling/performance-explorer.md)|sim|não|sim|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
-|[Uso da rede](../profiling/network-usage.md)|no|sim|no|
-|[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|
-|[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|
+|[Uso da rede](../profiling/network-usage.md)|não|sim|não|
+|[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|não|sim para HTML, não para XAML|não|
+|[Memória JavaScript](../profiling/javascript-memory.md)|não|sim para HTML, não para XAML|não|
 ::: moniker-end
 
 

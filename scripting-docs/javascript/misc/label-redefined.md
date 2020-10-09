@@ -14,12 +14,12 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cba6c63323775bbe7b0bcb49bfffd44d7be065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d68cfc2d23dc4cfe207793d0b4c4004856b04303
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817288"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862529"
 ---
 # <a name="label-redefined"></a>Rótulo redefinido
 Você criou um novo rótulo, mas deu a ele o nome de um rótulo existente. Os rótulos podem ser usados para marcar blocos de código, mas dentro de um escopo especificado, eles devem ser exclusivos.  
@@ -29,7 +29,7 @@ Você criou um novo rótulo, mas deu a ele o nome de um rótulo existente. Os r�
 - Verifique se todos os rótulos que você usa em seus programas são exclusivos em seus respectivos escopos.  
   
 ## <a name="see-also"></a>Confira também  
- [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   
- [Instrução switch](../../javascript/reference/switch-statement-javascript.md)   
- [Instrução break](../../javascript/reference/break-statement-javascript.md)   
- [Instrução Continue](../../javascript/reference/continue-statement-javascript.md)
+ [Instrução rotulada](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Instrução switch](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Instrução break](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [Instrução Continue](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

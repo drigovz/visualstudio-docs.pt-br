@@ -14,12 +14,12 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3de7f224b6ff40f1606f9593704f799cd64d32da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fb3fe5bc4bdd39863409d963904ead3df3bcf0
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816053"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862161"
 ---
 # <a name="undefined-identifier"></a>Identificador indefinido
 Você tentou usar um identificador que o compilador não [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] reconhece. O valor indefinido é retornado sempre que você usa:  
@@ -35,5 +35,5 @@ Você tentou usar um identificador que o compilador não [!INCLUDE[javascript](.
 - Declare a variável com uma instrução **var** (como em `var` x;).  
   
 ## <a name="see-also"></a>Confira também  
- [As](../../javascript/variables-javascript.md)   
- [Escopo de variáveis](../../javascript/advanced/variable-scope-javascript.md)
+ [As](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [Escopo de variáveis](https://developer.mozilla.org/docs/Web/JavaScript/Closures)

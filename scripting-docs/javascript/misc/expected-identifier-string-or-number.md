@@ -14,12 +14,12 @@ ms.assetid: f6bb8398-4fd6-4312-b4be-9617a2834cc4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c0e1ee1cdb2c135d3a76316d56e279de963b156
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06ad8497bfc561a5222eef6975a7336f4599c59d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814571"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861903"
 ---
 # <a name="expected-identifier-string-or-number"></a>Identificador, cadeia de caracteres ou número esperado
 Você usou sintaxe literal incorreta para declarar um literal de objeto. As propriedades de um literal de objeto devem ser um identificador, uma cadeia de caracteres ou um número. Um literal de objeto (também chamado de "inicializador de objeto") consiste em uma lista separada por vírgulas de pares Propriedade: valor, todos incluídos entre colchetes. Por exemplo:  
@@ -33,4 +33,4 @@ var point = {x:1.2, y:-3.4};
 - Certifique-se de usar a sintaxe literal apropriada.  
   
 ## <a name="see-also"></a>Confira também  
- [Operador de vírgula (,)](../../javascript/reference/comma-operator-decrement-javascript.md)
+ [Operador de vírgula (,)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)

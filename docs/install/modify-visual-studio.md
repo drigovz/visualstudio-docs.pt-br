@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419179"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862284"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -148,7 +148,7 @@ Veja como.
 Se você não quiser usar cargas de trabalho para personalizar a instalação do Visual Studio, escolha a guia **componentes individuais** na instalador do Visual Studio, selecione os componentes desejados e siga os prompts.
 
 >[!TIP]
-> Para obter informações sobre o componente SQL Server Data Tools (SSDT), consulte [baixar e instalar o SSDT para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15).
+> Para obter informações sobre o componente SQL Server Data Tools (SSDT), consulte [baixar e instalar o SSDT para Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="modify-language-packs"></a>Modificar pacotes de idiomas
 

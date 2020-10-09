@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2ad02a29b8ea8b59abd4f246c5cc1d206451d3fc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a14830e39cf39f0228fcb0e468df779f35f08ebe
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005186"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860715"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -26,7 +26,7 @@ A `require-mssql` ferramenta é usada para instalar o [Microsoft SQL Server 2019
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                   |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                   |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Consulte a [entrada](#input) abaixo para obter detalhes.                                                  |
@@ -51,9 +51,9 @@ O comportamento padrão da `require-mssql` ferramenta é instalar o SQL Server.
 
 ### <a name="builtin-options"></a>Opções internas
 
-A `require-mssql` ferramenta define um número de argumentos de linha de comando do instalador para garantir que o instalador possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na [documentação de instalação do SQL](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
+A `require-mssql` ferramenta define um número de argumentos de linha de comando do instalador para garantir que o instalador possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na [documentação de instalação do SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?preserve-view=true&view=sql-server-ver15).
 
-| Name                                                               | Descrição |
+| Nome                                                               | Descrição |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = instalar                                                    |             |

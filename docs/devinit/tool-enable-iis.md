@@ -1,5 +1,5 @@
 ---
-title: Habilitar-IIS
+title: enable-iis
 description: ferramenta devinit Enable-IIS.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 245ea76f988b9a9e320a51ba6b2df01382668cc0
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 3324cf5faa1d9385adbbdf24a8125970c5db2c40
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91127821"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862238"
 ---
-# <a name="enable-iis"></a>Habilitar-IIS
+# <a name="enable-iis"></a>enable-iis
 
-A `enable-iis` ferramenta é usada para habilitar recursos do IIS e instalar o [módulo ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) para desenvolvimento ASP.NET com o IIS.
+A `enable-iis` ferramenta é usada para habilitar recursos do IIS e instalar o [módulo ASP.NET Core](/aspnet/core/host-and-deploy/aspnet-core-module) para desenvolvimento ASP.NET com o IIS.
 
 ## <a name="usage"></a>Uso
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
+| Nome                                             | Type   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado.                                                                           |

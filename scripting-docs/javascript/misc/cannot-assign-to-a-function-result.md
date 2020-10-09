@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ec3426c80da0578dda7cb99e9160b81e31ab87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817626"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862343"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Não é possível designar a um resultado de função
 Você tentou atribuir um valor a um resultado de função. O resultado de uma função pode ser atribuído a uma variável, mas não pode ser usado como uma variável. Se você quiser atribuir um novo valor à função em si, omita os parênteses (o operador de chamada de função). O exemplo a seguir demonstra uma situação em que esse erro é gerado.  
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Confira também  
- [Objeto de função](../../javascript/reference/function-object-javascript.md)   
- [Escrevendo código JavaScript](../../javascript/writing-javascript-code.md)   
- [Funções](../../javascript/functions-javascript.md)
+ [Objeto de função](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Escrevendo código JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)   
+ [Funções](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f63dc4989a59256a0a3ad59491b2290912ffd2f8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862051"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862228"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Como personalizar um codespace (visualização)
 
@@ -92,7 +92,7 @@ o [devinit](../../devinit/getting-started-with-devinit.md) é uma ferramenta de 
 
 Embora você possa executar a `devinit` linha de comando diretamente, é recomendável criar [*devinit.jsem*](../../devinit/devinit-json.md) arquivos de configuração, que descrevem o conjunto de `devinit` ferramentas a serem executadas. 
 
-Por exemplo, para instalar o [SDK do .NET Core](https://docs.microsoft.com/dotnet/core/sdk), um *.devinit.js* deve ser semelhante a:
+Por exemplo, para instalar o [SDK do .NET Core](/dotnet/core/sdk), um *.devinit.js* deve ser semelhante a:
 
 ```json
 {

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254390"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862358"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Os painéis de tarefas são painéis de interface do usuário que normalmente são encaixados em um lado de uma janela em um aplicativo Microsoft Office. Os painéis de tarefas personalizados fornecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar os recursos da solução. Por exemplo, a interface pode conter controles que executam código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -122,7 +122,7 @@ ms.locfileid: "71254390"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Limpar os recursos usados pelo painel de tarefas
  Depois de criar um painel de tarefas personalizado, o <xref:Microsoft.Office.Tools.CustomTaskPane> objeto permanece na memória, contanto que seu suplemento do VSTO esteja em execução. O objeto permanece na memória mesmo depois que o usuário clica no botão **fechar** (X) no canto do painel de tarefas.
 
- Para limpar os recursos usados pelo painel de tarefas enquanto o suplemento do VSTO ainda está em execução, use os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos ou. Esses métodos removem o <xref:Microsoft.Office.Tools.CustomTaskPane> objeto especificado da `CustomTaskPanes` coleção e chamam o <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> método do objeto.
+ Para limpar os recursos usados pelo painel de tarefas enquanto o suplemento do VSTO ainda está em execução, use os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos ou. Esses métodos removem o <xref:Microsoft.Office.Tools.CustomTaskPane> objeto especificado da `CustomTaskPanes` coleção e chamam o `Dispose` método do objeto.
 
  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa automaticamente os recursos usados pelo painel de tarefas personalizado quando o suplemento do VSTO é descarregado. Não chame os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> no manipulador de `ThisAddIn_Shutdown` eventos em seu projeto. Esses métodos gerarão um <xref:System.ObjectDisposedException> , pois o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa os recursos usados pelo <xref:Microsoft.Office.Tools.CustomTaskPane> objeto antes de `ThisAddIn_Shutdown` ser chamado. Para obter mais informações sobre o `ThisAddIn_Shutdown` , consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
@@ -203,17 +203,17 @@ ms.locfileid: "71254390"
 ### <a name="powerpoint-events"></a>Eventos do PowerPoint
  Para monitorar o estado das janelas de documentos no PowerPoint, você pode manipular os seguintes eventos:
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Confira também
 - [Como: adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

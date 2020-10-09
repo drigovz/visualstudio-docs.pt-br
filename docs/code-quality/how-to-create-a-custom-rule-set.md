@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658549"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860511"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -145,7 +145,7 @@ Agora que você tem um conjunto de regras, a próxima etapa é personalizar as r
 > [!div class="nextstepaction"]
 > [Modificar regras no editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

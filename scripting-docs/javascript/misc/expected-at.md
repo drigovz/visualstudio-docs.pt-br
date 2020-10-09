@@ -14,14 +14,14 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98a35421054e4d2236fe509224ed146063b61a79
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814818"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862308"
 ---
-# <a name="expected-"></a>Esperado ' \@ '
+# <a name="expected-"></a>\@ esperado
 Você tentou criar uma variável a ser usada com instruções de compilação condicional usando a `@set` instrução, mas não localizou um sinal de arroba " **@** " antes do nome da variável.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
@@ -33,6 +33,6 @@ Você tentou criar uma variável a ser usada com instruções de compilação co
     ```  
   
 ## <a name="see-also"></a>Confira também  
- [@set Privacidade](../../javascript/reference/at-set-statement-javascript.md)   
- [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [@set Privacidade](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/at-set)   
+ [Compilação condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variáveis de compilação condicional](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

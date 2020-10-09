@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ad76f82a69356f4bbd40d189fb2d8e77a839b31f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 22029dc101cd73fee3933c5c63587f2f7222e640
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005794"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860852"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
-A `require-azurecli` ferramenta é usada para instalar o [CLI do Azure](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&preserve-view=true) por meio do MSI CLI do Azure.
+A `require-azurecli` ferramenta é usada para instalar o [CLI do Azure](/cli/azure/?preserve-view=true&view=azure-cli-latest) por meio do MSI CLI do Azure.
 
 ## <a name="usage"></a>Uso
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                          |
+| Nome                                             | Type   | Obrigatório | Valor                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                               |
