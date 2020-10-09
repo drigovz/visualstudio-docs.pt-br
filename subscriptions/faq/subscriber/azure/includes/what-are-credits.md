@@ -5,15 +5,23 @@ ms.topic: include
 ms.assetid: 5de7f746-1856-457a-8241-8ac3a4540490
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 10/07/2020
 ms.faqid: q5_1
-ms.openlocfilehash: de7b21e66dcc3328398c91184bfbcbec84448f50
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3c08eb06541484342410c1c8830bbebaee978bb1
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386175"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91829268"
 ---
 ## <a name="what-are-the-monthly-azure-credits"></a>O que são créditos Azure mensais?
 
-As assinaturas de nuvem mensais e anuais são renovadas automaticamente até que você as cancele, não sendo, portanto, necessário realizar nenhuma ação para renová-las.
+Os créditos mensais do Azure fornecem a capacidade de explorar e experimentar vários serviços do Azure sem custos.  Os exemplos incluem: 
+- Alojar um site estático
+- Publicar um site ASP.NET no Azure
+- Implantar um site em contêineres
+- Implantar um site em uma máquina virtual
+- Integrar seus dados e serviços usando back-end sem servidor
+- Implantar um aplicativo Web Python
+
+Para obter mais informações sobre como usar os créditos Azure, visite [Créditos Azure mensais para assinantes do Visual Studio](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)
