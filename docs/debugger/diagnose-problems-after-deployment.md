@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599566"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928050"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnosticar problemas após a implantação usando o IntelliTrace (C#, Visual Basic)
 
@@ -49,7 +49,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  Configure seu pipeline de build para adicionar os locais de seu código-fonte, compilação e símbolos ao manifesto de compilação (arquivo BuildInfo.config). O Team Foundation Build automaticamente cria esse arquivo e coloca-o em sua pasta de saída do projeto.
 
-1. [Edite seu pipeline de build ou crie um novo pipeline de build.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [Edite seu pipeline de build ou crie um novo pipeline de build.](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![Exibir pipeline de compilação no TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +63,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
 
      ![Configurar o caminho de símbolos no pipeline de compilação TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     Para obter mais informações sobre símbolos, confira [Publicar dados de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
+     Para obter mais informações sobre símbolos, confira [Publicar dados de símbolos](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true).
 
 4. Adicione este argumento de MSBuild para incluir os locais do TFS e de símbolos ao arquivo de manifesto da compilação:
 
@@ -319,7 +319,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
 
    Informações sobre seu sistema de compilação, `"TeamBuild"` ou `"MSBuild"` e as seguintes propriedades necessárias:
 
-  - **BuildLabel** (para TeamBuild): o nome e o número do build. Esse rótulo também é usado como o nome do evento de implantação. Para saber mais sobre números de build, veja [Usar números de build para dar nomes significativos a buils concluídos](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (para TeamBuild): o nome e o número do build. Esse rótulo também é usado como o nome do evento de implantação. Para saber mais sobre números de build, veja [Usar números de build para dar nomes significativos a buils concluídos](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true).
 
   - **SymbolPath** (Recomendado): a lista dos URIs dos locais de seus símbolos (arquivo PDB) separados por ponto-e-vírgula. Esses URIs podem ser URLs ou UNCs (caminhos de rede). Isso facilita para o Visual Studio encontrar os símbolos correspondentes para ajudar com sua depuração.
 
@@ -379,7 +379,7 @@ O Visual Studio 2017 e versões posteriores não incluem o arquivo *Buildinfo*, 
      ![Abrir do controle do código-fonte &#45; migrado](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> P: O que é um workspace?
- **R:** Seu [workspace armazena uma cópia do código-fonte](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts), de modo que você possa desenvolvê-lo e testá-lo separadamente antes de fazer check-in do trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
+ **R:** Seu [workspace armazena uma cópia do código-fonte](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true), de modo que você possa desenvolvê-lo e testá-lo separadamente antes de fazer check-in do trabalho. Se você ainda não tem um workspace mapeado especificamente para a solução ou o projeto encontrado, o Visual Studio solicitará a escolha de um workspace disponível ou a criação de um novo workspace com o nome do computador como o nome padrão do workspace.
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> P: Por que recebo esta mensagem sobre símbolos não confiáveis?
  ![Depurar com caminho de símbolos não confiáveis?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

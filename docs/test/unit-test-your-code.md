@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565988"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927946"
 ---
 # <a name="unit-test-your-code"></a>Efetue testes de unidade em seu código
 
@@ -47,8 +47,8 @@ Use os artigos a seguir para ajudar com o entendimento e a criação dos testes 
 |**Código C++ do teste de unidade**|- [Gravar testes de unidade para C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolamento de testes de unidade**|- [Isolar código em teste com falsificações da Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Uso da cobertura de código para identificar qual proporção do código do projeto é testada:** saiba mais sobre o recurso de cobertura de código das ferramentas de teste do Visual Studio.|- [Use a cobertura de código para determinar a quantidade de código que está sendo testada](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Executar análise de estresse e desempenho usando testes de carga:** Saiba como criar testes de carga para ajudar a isolar problemas de desempenho e estresse em seu aplicativo.|- [Início rápido: criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md)<br />- [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Definir Gates de qualidade:** Saiba como criar Gates de qualidade para impor que os testes sejam executados antes do check-in ou mesclagem do código.|- [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Executar análise de estresse e desempenho usando testes de carga:** Saiba como criar testes de carga para ajudar a isolar problemas de desempenho e estresse em seu aplicativo.|- [Início rápido: criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md)<br />- [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**Definir Gates de qualidade:** Saiba como criar Gates de qualidade para impor que os testes sejam executados antes do check-in ou mesclagem do código.|- [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Definir opções de teste:** Saiba como configurar opções de teste, por exemplo, onde os resultados de teste são armazenados.|[Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentação da referência de API
@@ -56,6 +56,6 @@ Use os artigos a seguir para ajudar com o entendimento e a criação dos testes 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> descreve o namespace UnitTesting, que fornece atributos, exceções, asserções e outras classes que oferecem suporte a testes de unidade.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> descreve o namespace UnitTesting.Web, que estende o namespace UnitTesting dando suporte para o ASP.NET e a testes de unidade do serviço Web.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Melhorar a qualidade do código](../test/improve-code-quality.md)

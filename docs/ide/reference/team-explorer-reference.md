@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74538571"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928076"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
 
@@ -26,7 +26,7 @@ Depois que você se [conectar a um projeto](../connect-team-project.md) no **Tea
 - [Portal da Web](/azure/devops/project/navigation/index)
 - [Painel de tarefas](/azure/devops/boards/sprints/task-board)
 
-A página **Página Inicial** tem funções diferentes dependendo se você está conectado a um repositório [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) ou [TFVC (Controle de Versão do Team Foundation)](/azure/devops/repos/tfvc/overview).
+A página **Página Inicial** tem funções diferentes dependendo se você está conectado a um repositório [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) ou [TFVC (Controle de Versão do Team Foundation)](/azure/devops/repos/tfvc/overview).
 
 > [!TIP]
 > Para obter uma comparação dos dois sistemas de controle de versão, confira [Escolher o controle de versão certo para seu projeto (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc).
@@ -100,12 +100,12 @@ Consulte:
 
 ## <a name="settings-page"></a>Página de configurações
 
-A página **Configurações** permite configurar funcionalidades administrativas para um projeto ou uma coleção de projetos. Veja os artigos a seguir:
+A página **Configurações** permite configurar funcionalidades administrativas para um projeto ou uma coleção de projetos. Confira os seguintes artigos:
 
-| Projeto | Coleção de projetos | Outro |
+| Projeto | Coleção de projetos | Outros |
 | - | - | - |
 | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Segurança, controle do código-fonte (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Áreas de itens de trabalho](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterações de item de trabalho](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Configurações do portal](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertas do projeto](/azure/devops/notifications/howto-manage-team-notifications) | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controle do código-fonte (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gerenciador de Modelos de Processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Configurações globais do Git](/azure/devops/repos/git/git-config)<br/>[Configurações do repositório Git](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conectar-se a projetos no Team Explorer](../../ide/connect-team-project.md)

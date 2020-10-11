@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588649"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928496"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -172,7 +172,7 @@ Compare uma alteração de entrada com sua versão local pressionando **Shift** 
 
 O ícone na coluna **Branch** indica como o branch está relacionado ao branch no qual você está trabalhando.
 
-|**Cone**|**A alteração foi proveniente de:**|
+|**Ícone**|**A alteração foi proveniente de:**|
 |--------------| - |
 |![CodeLens: alteração de ícone do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
 |![CodeLens: alteração de ícone do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
@@ -217,7 +217,7 @@ Descubra testes de unidade existentes para o código C# ou Visual Basic sem abri
 
 1. Acesse o código do aplicativo que tem o [código de teste de unidade](../test/unit-test-your-code.md) associado.
 
-2. Se você ainda não tiver feito isso, crie seu aplicativo para carregar os indicadores de teste do CodeLens. 
+2. Se você ainda não tiver feito isso, crie seu aplicativo para carregar os indicadores de teste do CodeLens.
 
 3. Examine os testes do código pressionando **ALT** + **3**.
 
@@ -268,7 +268,7 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 
 - Se seu código estiver armazenado no TFS, certifique-se de que a indexação do código está ativada usando o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Os indicadores relacionados a DevOps são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme que você tem [permissões de membro da equipe](/azure/devops/organizations/security/view-permissions?view=vsts).
+- Os indicadores relacionados a DevOps são exibidos apenas quando os itens de trabalho são vinculados ao código e quando você tem permissão para abrir itens de trabalho vinculados. Confirme que você tem [permissões de membro da equipe](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true).
 
 - Os indicadores de teste de unidade não são exibidos quando o código do aplicativo não tem testes de unidade. Os indicadores de status do teste aparecem automaticamente em projetos de teste. Se você souber que o código do aplicativo tem testes de unidade, mas os indicadores de teste não aparecerem, tente criar a solução (**Ctrl** + **Shift** + **B**).
 
@@ -354,6 +354,6 @@ Para usar o teclado:
 
 **R:** Recompile seu projeto para obter os indicadores de teste do CodeLens para carregar no seu arquivo. Para melhorar o desempenho, o Visual Studio não busca mais informações de origem para os indicadores de teste quando os arquivos de código são carregados. Os indicadores de teste são carregados após um build ou quando você navega até um teste clicando duas vezes nele no **Gerenciador de Testes**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

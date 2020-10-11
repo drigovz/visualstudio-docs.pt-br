@@ -1,5 +1,6 @@
 ---
 title: Pesquisar tópicos (Help Viewer)
+description: Saiba como Pesquisar tópicos no Microsoft Help Viewer. Personalizar pesquisas usando expressões curinga, operadores lógicos e operadores de pesquisa avançada.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284913"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878989"
 ---
 # <a name="how-to-search-for-topics"></a>Como pesquisar tópicos
 
@@ -76,7 +77,7 @@ O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a cl
 
 Palavras ou números que ocorrem com frequência, chamados de palavras irrelevantes, são automaticamente ignorados durante uma pesquisa de texto completo. Por exemplo, se você pesquisar a frase "passar por", os resultados da pesquisa exibirão tópicos que contêm a palavra "passar", mas não "por".
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Operadores lógicos e avançados](../help-viewer/logical-operators-search-expressions.md)
 - [Como localizar tópicos no índice](../help-viewer/find-topics-index.md)

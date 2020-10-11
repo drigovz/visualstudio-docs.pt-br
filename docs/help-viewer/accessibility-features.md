@@ -1,5 +1,6 @@
 ---
 title: Acessibilidade do Help Viewer
+description: Examine a lista de recursos de acessibilidade na Microsoft Help Viewer, cobrindo o acesso ao teclado, o tamanho da fonte, o tamanho da janela e a posição do Visualizador da ajuda.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825140"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879067"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funcionalidades de acessibilidade do Help Viewer
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todos. Este tópico inclui informações sobre recursos, produtos e serviços que ajudam a tornar o Microsoft Help Viewer acessível a pessoas com uma ampla variedade de capacidades.
@@ -33,7 +34,7 @@ Você pode alterar a largura das janelas de navegação ou documento apontando p
 ## <a name="help-viewer-position"></a>Posição do Help Viewer
 É possível reposicionar o Help Viewer arrastando sua barra de título para uma posição diferente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Teclas de atalho (Visualizador da ajuda)](../help-viewer/shortcut-keys.md)

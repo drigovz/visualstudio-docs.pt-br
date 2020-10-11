@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2366e77b0b66e2a31ce17e1aefb9240e4f45df2d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287760"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928639"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como incluir gravações da tela e de voz durante testes usando as configurações de teste
 
@@ -28,7 +28,7 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar a gravação de voz e tela para suas configurações de teste
 
-1. Abra as configurações de teste que você deseja definir para registrar a tela e a voz. Para obter mais informações, confira [Coletar dados de diagnóstico durante o teste (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+1. Abra as configurações de teste que você deseja definir para registrar a tela e a voz. Para obter mais informações, confira [Coletar dados de diagnóstico durante o teste (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true) ou [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
 2. Nas configurações de teste, selecione a **Função** a ser usada para gravar a tela e a voz.
 
@@ -56,7 +56,7 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
     3. **Qualidade (1-100):** você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
 
-7. Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
+7. Selecione **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
 
     ::: moniker range="vs-2017"
     > [!TIP]
@@ -67,9 +67,9 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
     > Para redefinir a configuração para este adaptador de dados de diagnóstico, escolha **Redefinir para a configuração padrão** no Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)
-- [Executar testes manuais (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [Executar testes manuais (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

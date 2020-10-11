@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288072"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928613"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como criar um adaptador de dados de diagnóstico
 
@@ -58,7 +58,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
    2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3. Escolha **OK**.
+   3. Selecione **OK**.
 
 3. Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
@@ -66,7 +66,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
    2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3. Escolha **OK**.
+   3. Selecione **OK**.
 
 4. Adicione as seguintes `using` diretivas ao seu arquivo de classe:
 
@@ -245,7 +245,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
     >
     > Existem outros exemplos dos arquivos de configuração no seguinte caminho baseado no diretório de instalação: *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+     Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
      Para obter mais informações sobre como instalar o arquivo de configuração, consulte [como instalar um adaptador de dados de diagnóstico personalizado](../test/quickstart-create-a-load-test-project.md)
 
@@ -253,7 +253,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
 13. Para obter informações sobre como instalar o editor personalizado, consulte [como instalar um adaptador de dados de diagnóstico personalizado](../test/quickstart-create-a-load-test-project.md).
 
-14. Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+14. Para obter mais informações sobre como definir suas configurações de teste para usar um ambiente ao executar testes, confira [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
 15. Para selecionar o adaptador de dados de diagnóstico, você deve primeiro selecionar uma configuração de teste existente ou criar uma nova no Visual Studio ou Microsoft Test Manager (preterido no Visual Studio 2017). O adaptador é exibido na guia **Dados e Diagnósticos** das configurações de teste com o nome amigável que você atribuiu à classe.
 
@@ -263,7 +263,7 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
     O arquivo de dados que você especificou está anexado aos resultados do teste.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents>
@@ -273,6 +273,6 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)
-- [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Como: criar um editor personalizado para dados para o adaptador de dados de diagnóstico](../test/quickstart-create-a-load-test-project.md)

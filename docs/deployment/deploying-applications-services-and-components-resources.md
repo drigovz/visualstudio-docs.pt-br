@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Saiba mais sobre as opções de publicação para seu aplicativo usando o assistente de publicação
 ms.custom: contperfq1
 ms.date: 08/21/2020
-ms.topic: overview
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f88f6c789afa112837fe67bc299915da85e42f3e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6bc551a6e9bf4e05db61ddeb2480e218ebb3c925
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851717"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928522"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
@@ -79,7 +79,7 @@ Ao escolher o Azure, você pode escolher entre:
 
 ![Escolher um serviço do Azure](../deployment/media/quickstart-choose-azure-service.png)
 
-### <a name="azure-app-service"></a>Serviço de Aplicativo do Azure
+### <a name="azure-app-service"></a>Serviço de aplicativo do Azure
 
 [Azure app serviço](/azure/app-service/app-service-web-overview) ajuda os desenvolvedores a criarem rapidamente serviços e aplicativos Web escalonáveis sem manter a infraestrutura. Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem no Azure, mas essas máquinas virtuais são gerenciadas para você. Cada aplicativo em um Serviço de Aplicativo receberá uma URL \*.azurewebsites.net exclusiva; todos os tipos de preço diferentes de Gratuito também permitem a atribuição de nomes de domínio personalizados ao site.
 

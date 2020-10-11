@@ -1,5 +1,6 @@
 ---
 title: Usar o sumário do Help Viewer
+description: Use Microsoft Help Viewer para localizar tópicos no Sumário (TOC). O Sumário é uma lista expansível que contém todos os tópicos nos livros instalados.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284926"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879002"
 ---
 # Como localizar tópicos no sumário
 
@@ -50,7 +51,7 @@ Se tiver aberto um tópico usando os recursos de pesquisa de texto completo ou o
 
      A guia **Sumário** é aberta e exibe o local do tópico no Sumário.
 
-## Confira também
+## Veja também
 
 - [Como localizar tópicos no índice](../help-viewer/find-topics-index.md)
 - [Como pesquisar tópicos](../help-viewer/find-topics.md)

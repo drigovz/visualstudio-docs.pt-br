@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038433"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928665"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
 
 Os testes de unidade no Visual Studio podem ser configurados usando um arquivo *. RunSettings* . Por exemplo, é possível alterar a versão do .NET na qual os testes são executados, o diretório para os resultados de teste ou os dados coletados durante uma execução de teste. Um uso comum de um arquivo *.runsettings* é personalizar a [análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
-Arquivos de configurações de execução podem ser usados para configurar testes que são executados a partir da [linha de comando](vstest-console-options.md), do IDE ou em um fluxo de [trabalho de compilação](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Azure Test Plans ou Team Foundation Server (TFS).
+Arquivos de configurações de execução podem ser usados para configurar testes que são executados a partir da [linha de comando](vstest-console-options.md), do IDE ou em um fluxo de [trabalho de compilação](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) usando Azure Test Plans ou Team Foundation Server (TFS).
 
 Arquivos de configurações de execução são opcionais. Se você não precisar de nenhuma configuração especial, não precisará de um arquivo *. RunSettings* .
 
@@ -35,7 +35,7 @@ Arquivos de configurações de execução são opcionais. Se você não precisar
 
    - [Visual Studio IDE](#specify-a-run-settings-file-in-the-ide)
    - [Linha de comando](#specify-a-run-settings-file-from-the-command-line)
-   - [Crie um fluxo de trabalho](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Azure Test Plans ou Team Foundation Server (TFS).
+   - [Crie um fluxo de trabalho](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) usando Azure Test Plans ou Team Foundation Server (TFS).
 
 4. Execute os testes de unidade para usar as configurações de execução personalizadas.
 
@@ -83,20 +83,20 @@ Há três maneiras de especificar um arquivo de configurações de execução no
 Para detectar automaticamente o arquivo de configurações de execução, coloque-o na raiz da sua solução.
 
 Se a detecção automática de arquivos de configurações de execução estiver habilitada, as configurações nesse arquivo serão aplicadas em todos os testes executados. Você pode ativar a detecção automática de arquivos RunSettings usando dois métodos:
-  
+
 - Selecione **ferramentas** > **Opções** > **testar** > **detectar automaticamente arquivos RunSettings**
 
    ![Opção de detecção automática de arquivo RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
-      
+
 - Selecione **testar** > **definir configurações de execução** > **detectar automaticamente arquivos RunSettings**
-    
+
    ![Menu de detecção automática de arquivos do RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
 
 #### <a name="manually-select-the-run-settings-file"></a>Selecionar manualmente o arquivo de configurações de execução
 
 No IDE, selecione **testar** > **definir configurações de execução** > **Selecione arquivo de RunSettings de toda a solução**e, em seguida, selecione o arquivo *. RunSettings* .
 
-   - Esse arquivo substitui o arquivo *. RunSettings* na raiz da solução, se houver um, e é aplicado em todos os testes executados.  
+   - Esse arquivo substitui o arquivo *. RunSettings* na raiz da solução, se houver um, e é aplicado em todos os testes executados.
    - Esta seleção de arquivo só persiste localmente.
 
 ![Selecione testar o menu arquivo de RunSettings de toda a solução no Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
@@ -107,10 +107,10 @@ Adicione uma propriedade de compilação a um projeto por meio do arquivo de pro
 
 - Atualmente, há suporte para configurações de execução de nível de projeto em projetos C#, VB, C++ e F #.
 - Um arquivo especificado para um projeto substitui qualquer outro arquivo de configurações de execução especificado na solução.
-- [Essas propriedades do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) podem ser usadas para especificar o caminho para o arquivo RunSettings. 
+- [Essas propriedades do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) podem ser usadas para especificar o caminho para o arquivo RunSettings.
 
 Exemplo de especificação de um arquivo *. RunSettings* para um projeto:
-    
+
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -186,7 +186,7 @@ O elemento **RunConfiguration** pode incluir os seguintes elementos:
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Um ou mais caminhos para o diretório no qual os TestAdapters estão localizados|
 |**TestSessionTimeout**||Permite que os usuários finalizem uma sessão de teste quando ele exceder o tempo limite determinado. Definir um tempo limite assegura que os recursos serão restritos e as sessões de teste serão restritas a um período de tempo. Essa configuração está disponível no **Visual Studio 2017 versão 15.5** e posterior.|
-|**DotnetHostPath**||Especifique um caminho personalizado para o host dotnet que é usado para executar o testhost. Isso é útil quando você está criando seu próprio dotnet, por exemplo, ao criar o repositório dotnet/tempo de execução. A especificação dessa opção irá ignorar a procura de testhost.exe e sempre usará o testhost.dll. 
+|**DotnetHostPath**||Especifique um caminho personalizado para o host dotnet que é usado para executar o testhost. Isso é útil quando você está criando seu próprio dotnet, por exemplo, ao criar o repositório dotnet/tempo de execução. A especificação dessa opção irá ignorar a procura de testhost.exe e sempre usará o testhost.dll.
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elemento datacoletores (adaptadores de dados de diagnóstico)
 
@@ -231,7 +231,7 @@ Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, use
 
 ### <a name="blame-data-collector"></a>Coletor de dados de culpa
 
-Essa opção pode ajudá-lo a isolar um teste problemático que causa uma falha no host de teste. A execução do coletor cria um arquivo de saída (*Sequence.xml*) em *TestResults*, que captura a ordem de execução do teste antes da falha. 
+Essa opção pode ajudá-lo a isolar um teste problemático que causa uma falha no host de teste. A execução do coletor cria um arquivo de saída (*Sequence.xml*) em *TestResults*, que captura a ordem de execução do teste antes da falha.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -268,7 +268,7 @@ A `LoggerRunSettings` seção define um ou mais agentes de log a serem usados pa
 
 ```xml
 <LoggerRunSettings>
-    <Loggers>        
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -392,10 +392,10 @@ Cada elemento do arquivo é opcional, porque tem um valor padrão.
     <Parameter name="webAppUserName" value="Admin" />
     <Parameter name="webAppPassword" value="Password" />
   </TestRunParameters>
-  
+
   <!-- Configuration for loggers -->
   <LoggerRunSettings>
-    <Loggers>      
+    <Loggers>
       <Logger friendlyName="console" enabled="True">
         <Configuration>
             <Verbosity>quiet</Verbosity>
@@ -458,8 +458,8 @@ O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma var
 > [!NOTE]
 > Como essas variáveis de ambiente sempre devem ser definidas quando o host de teste é iniciado, os testes sempre devem ser executados em um processo separado. Para isso, o sinalizador */InIsolation* será definido quando houver variáveis de ambiente para que o host de teste sempre seja invocado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
-- [Tarefa de teste do Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
+- [Tarefa de teste do Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts&preserve-view=true)

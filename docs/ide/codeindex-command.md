@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591158"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928483"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -25,7 +25,7 @@ Use o comando **CodeIndex** para gerenciar a indexação de código no Team Foun
 
 ## <a name="required-permissions"></a>Permissões necessárias
 
-Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segurança **Team Foundation Administrators**. Consulte [Permissões e grupos definidos para o Azure DevOps Services e o TFS](/azure/devops/organizations/security/permissions?view=vsts).
+Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segurança **Team Foundation Administrators**. Consulte [Permissões e grupos definidos para o Azure DevOps Services e o TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true).
 
 > [!NOTE]
 > Mesmo que use credenciais administrativas para entrar, você deve abrir uma janela de prompt de comandos com privilégios elevados para executar esse comando. Você também deve executar esse comando a partir do nível de aplicativo para o Team Foundation.
@@ -122,7 +122,7 @@ Para excluir o índice de código com confirmação:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Localizar alterações de código e outro histórico com o CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Gerenciando a configuração do servidor com TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

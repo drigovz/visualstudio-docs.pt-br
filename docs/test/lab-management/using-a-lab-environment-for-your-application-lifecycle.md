@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037218"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928102"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -45,7 +45,7 @@ Aqui estão exemplos de topologias comuns de ambientes de laboratório:
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usar a nuvem com o Azure Pipelines ou o Team Foundation Server Build and Release
 
-Você pode executar testes automatizados e a automação de compilar-implantar-testar usando as funcionalidades de [compilação e lançamento](/azure/devops/pipelines/index?view=vsts) do TFS (Team Foundation Server) e do Azure Test Plans. Alguns dos benefícios são:
+Você pode executar testes automatizados e a automação de compilar-implantar-testar usando as funcionalidades de [compilação e lançamento](/azure/devops/pipelines/index?view=vsts&preserve-view=true) do TFS (Team Foundation Server) e do Azure Test Plans. Alguns dos benefícios são:
 
 * Não é necessário ter um Controlador de Build ou um Controlador de Teste.
 * O Agente de Teste é instalado por meio de uma tarefa como parte do build ou da versão.
@@ -94,13 +94,13 @@ Há dois tipos de ambientes de laboratório que você pode criar com o Lab Manag
 > [!NOTE]
 > O Lab Management não dá suporte ao SCVMM 2016.
 
-Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
 |Funcionalidade|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
-|**Teste**|||
+|Testes.|||
 |Executar testes manuais|Com suporte|Com suporte|
 |Executar IU codificado e outros testes automáticos|Com suporte|Com suporte|
 |Arquivo com muitos bugs usando adaptadores de diagnóstico|Com suporte|Com suporte|
@@ -144,7 +144,7 @@ Para saber mais sobre como configurar ambientes, veja:
 * [Criando e usando um ambiente de rede isolado](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
 * [Guia do Lab Management do Visual Studio](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions)

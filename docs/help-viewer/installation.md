@@ -1,5 +1,6 @@
 ---
 title: Instalar a Ajuda offline
+description: Consulte Como instalar o Microsoft Help Viewer para ler a ajuda offline. Vários produtos, como o Visual Studio e o SQL Server, usam o Help Viewer para fornecer conteúdo da ajuda.
 ms.date: 11/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ec23d81310628c2bb369cc0cea3ba121088634
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0161cafe9f9c09f11774da7d6e3e449a9ac4d068
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284939"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878976"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalação do Microsoft Help Viewer
 
@@ -43,7 +44,7 @@ Outra maneira de instalar o Microsoft Help Viewer facilmente é por meio da caix
 
    ![Botão Instalar](media/installation/install.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Visualizador da ajuda e conteúdo offline para SQL Server](/sql/sql-server/sql-server-help-installation)

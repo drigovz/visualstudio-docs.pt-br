@@ -1,5 +1,6 @@
 ---
 title: Instalar a documentação de Ajuda local
+description: Instale e gerencie a documentação de ajuda local usando o Microsoft Help Viewer. Adicione, remova, atualize e mova o conteúdo da ajuda que está instalado no seu computador.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284900"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879093"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 
@@ -129,6 +130,6 @@ Você pode economizar espaço em disco movendo conteúdo instalado do computador
 
 3. Escolha o botão **Fechar** quando o conteúdo tiver sido movido.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)

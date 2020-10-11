@@ -1,5 +1,6 @@
 ---
 title: Teclas de atalho (Help Viewer)
+description: Consulte a lista de teclas de atalho no Microsoft Help Viewer. Use teclas de atalho para navegação, gerenciamento de janelas e gerenciamento de conteúdo.
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533726"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878950"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de atalho no Help Viewer
 
@@ -74,7 +75,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **P**|Imprima o tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **F2**|Exiba uma visualização de impressão do tópico especificado.|
 |Sumário, Índice, Pesquisa e Favoritos|**Ctrl** + **Clique em**|Abra o tópico em uma nova guia.|
-|Search|**Esc**|Limpe a caixa de texto de pesquisa.|
+|Search|**ESC**|Limpe a caixa de texto de pesquisa.|
 |Opções do Visualizador|**ALT** + **T**|Altere o foco para a lista **Tamanho do Texto**.|
 |Opções do Visualizador|**ALT** + **S**|Altere o foco para a lista **Máximo de Resultados da Pesquisa**.|
 |Opções do Visualizador|**ALT** + **H**|Altere o foco para a lista **Máximo de entradas do Histórico salvas**.|
@@ -82,7 +83,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Opções do Visualizador|**ALT** + **O**|Marque ou desmarque a caixa de seleção **Ficar online para procurar atualizações de conteúdo**.|
 |Localizar|**Digita**|Altere o foco para o próximo item.|
 |Localizar|**Shift** + **Insira**|Altere o foco para o item anterior.|
-|Localizar|**Esc**|Oculta a caixa de texto **Localizar**.|
+|Localizar|**ESC**|Oculta a caixa de texto **Localizar**.|
 |Barra de Status|**ALT** + **E**|Abra a caixa de diálogo **Erro** se a barra de status mostrar que um erro ocorreu.|
 |Barra de Status|**ALT** + **U**|Baixe conteúdo se a barra de status mostrar que atualizações estão disponíveis|
 
@@ -113,6 +114,6 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |**Disco**|Remova um item da lista **Alterações pendentes**.|
 |**ALT** + **T**|Aplique todas as alterações pendentes.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Recursos de acessibilidade do Visualizador da ajuda](accessibility-features.md)

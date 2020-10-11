@@ -1,5 +1,6 @@
 ---
 title: Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
+description: Use argumentos de linha de comando para o Gerenciador de conteúdo da ajuda (HlpCtntMgr.exe) para especificar como implantar e gerenciar o conteúdo da ajuda local.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631974"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879041"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 A tabela a seguir define as opções e os argumentos que você pode usar a ferramenta de linha de comando para o Gerenciador de Conteúdo da Ajuda:
 
-|Comutador|Necessário?|Argumentos|
+|Opção|Necessário?|Argumentos|
 |------------|---------------|---------------|
 |/operation|Sim|-   **Instalar** – adiciona livros de fonte de instalação especificada ao repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI, ou ambos. Se você não especificar o argumento /sourceURI, o URI do Visual Studio padrão será usado como a origem da instalação. Se você não especificar o argumento /booklist, todos os livros em /sourceUri serão instalados.<br />-   **Desinstalar** – remove os livros especificado do repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI.  Se você especificar o argumento /sourceURI, todos os livros serão removidos e o argumento /booklist será ignorado.<br />-   **Mover** – move o repositório local para o caminho que você especificar. O caminho de repositório local padrão é definido como um diretório em *% ProgramData%*<br />     Esta opção requer os argumentos /locationPath e /catalogName. As mensagens de erro serão registradas no log de eventos se você especificar um caminho que não for válido ou se não houver espaço livre na unidade para manter o conteúdo.<br />-   **Atualizar** – atualiza os tópicos alterados desde que foram instalados ou atualizados mais recentemente.<br />     Esta opção requer o argumento /sourceURI.|
 |/catalogName|Sim|Especifica o nome do catálogo de conteúdo. Para o Visual Studio 2017 e o Visual Studio 2019, isso é VisualStudio15.|
@@ -90,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Guia do administrador do Help Viewer](../help-viewer/administrator-guide.md)
 - [Substituições do Gerenciador de conteúdo da ajuda](../help-viewer/behavior-overrides.md)

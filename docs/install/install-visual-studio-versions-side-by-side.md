@@ -1,5 +1,7 @@
 ---
 title: Instalar versões do Visual Studio lado a lado
+description: Saiba como instalar o Visual Studio em um computador que tenha uma versão anterior ou posterior do Visual Studio já instalada.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211307"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928626"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
 
@@ -73,7 +75,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 ::: moniker range="vs-2017"
 
-| Idioma | Tópico |
+| Language | Tópico |
 |--------------|-----------|
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
 | Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
@@ -92,7 +94,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 ::: moniker range=">= vs-2019"
 
-| Idioma | Tópico |
+| Language | Tópico |
 |--------------|-----------|
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md) |

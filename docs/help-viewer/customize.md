@@ -1,5 +1,6 @@
 ---
 title: Personalizar o Visualizador da Ajuda
+description: Entenda como personalizar o Help Viewer. Configure o layout, o tamanho da fonte, o número máximo de resultados e se deseja incluir o conteúdo em inglês.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284966"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879028"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizar o Help Viewer
 Você pode personalizar o layout das janelas do Help Viewer, bem como outras opções, como tamanho da fonte, número máximo de resultados e se deseja incluir conteúdo em inglês.
@@ -45,6 +46,6 @@ Abra a caixa de diálogo **Opções do Visualizador** escolhendo o botão **Opç
 |Alterar o número máximo de entradas de histórico que aparecem na janela **Favoritos**|Escolha um valor na lista **Máximo de entradas do Histórico salvas**.|
 |Incluir ou excluir conteúdo em inglês quando você exibir conteúdo de uma versão diferente do inglês de um produto.|Marque ou desmarque a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**. **Cuidado:** esse recurso também controla se você pode baixar o conteúdo em inglês na guia **Gerenciar Conteúdo**.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
