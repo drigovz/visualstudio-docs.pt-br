@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, IntelliSense
+description: Saiba como usar a página IntelliSense da caixa de diálogo opções para modificar as configurações que afetam o comportamento do IntelliSense para JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605973"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947720"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Caixa de diálogo opções: \> IntelliSense do JavaScript do editor de texto \>
 
@@ -76,6 +78,6 @@ Quando essa caixa de seleção for marcada e se você tiver um arquivo JavaScrip
 > [!NOTE]
 > Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

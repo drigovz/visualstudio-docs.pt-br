@@ -1,5 +1,7 @@
 ---
 title: Páginas de Propriedade, JavaScript
+description: Saiba como as páginas de propriedades fornecem acesso às configurações do projeto e como usar as páginas que aparecem nas páginas de propriedades para alterar as propriedades do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926194"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947798"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedades, JavaScript
 
@@ -38,7 +40,7 @@ As opções e páginas a seguir aparecem nas **Páginas de Propriedade**.
 
 Use as seguintes opções para selecionar a configuração e a plataforma a exibir ou modificar.
 
- **Configuração**
+ **Configuration**
 
 Especifica as definições de configuração a exibir ou modificar. As configurações são **Depurar** (padrão), **Versão**, **Todas as Configurações de** ou uma configuração definida pelo usuário. Para obter mais informações, consulte [How to: Set debug and release configurations in Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md) (Como definir configurações de depuração e versão no Visual Studio).
 

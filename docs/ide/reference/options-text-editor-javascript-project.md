@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, Projeto
+description: Saiba como usar a página projeto da caixa de diálogo opções para especificar opções de projeto de JavaScript e TypeScript no editor de código.
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2020
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e4f5ff4e1081bbbe6aced4465afb40318048a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285355"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947694"
 ---
 # <a name="options-text-editor-javascript-project"></a>Opções, Editor de Texto, JavaScript, Projeto
 
@@ -67,6 +69,6 @@ Essas opções determinam como o editor trata arquivos TypeScript que não fazem
 |**React Framework**|Quando essa opção estiver selecionada, o Editor de Códigos emitirá uma extensão de arquivo *.js*.|
 |**Guardar**|Quando essa opção estiver selecionada, o Editor de Códigos manterá o JSX como parte da saída e emitirá uma extensão de arquivo *.jsx*.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

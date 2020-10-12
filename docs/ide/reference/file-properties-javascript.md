@@ -1,5 +1,7 @@
 ---
 title: Propriedades de arquivo, JavaScript
+description: Saiba como você pode usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926229"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947785"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 
@@ -94,6 +96,6 @@ Exibe o URI que deve ser incluído nos arquivos HTML ou JavaScript do projeto pa
 ### <a name="version"></a>Versão
 Exibe a versão da referência.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciando propriedades de solução e de projeto](../../ide/managing-project-and-solution-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de texto, JavaScript, Validação de código
+description: Saiba como usar a página validação de código da caixa de diálogo opções para modificar as configurações que afetam a maneira como o JavaScript trata erros.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3335f4bc5d59b7b4aab3e7341d9f1574d095eeb
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605999"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947746"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Caixa de diálogo opções: \> validação de código JavaScript/TypeScript do editor de texto \>
 
@@ -39,6 +41,6 @@ Quando definido como **True**, o editor de código JavaScript mostra erros para 
 
 Quando definido como **True**, os erros JavaScript são mostrados como avisos, em vez de erros na **Lista de Erros**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [JavaScript IntelliSense](../../ide/javascript-intellisense.md)

@@ -1,5 +1,7 @@
 ---
 title: JavaScript IntelliSense
+description: Saiba como o Visual Studio oferece um IntelliSense mais rico, suporte para recursos modernos de JavaScript e recursos de produtividade aprimorados.
+ms.custom: SEO-VS-2020
 ms.date: 06/28/2017
 ms.topic: conceptual
 ms.technology: vs-javascript
@@ -25,12 +27,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b4f86d904d98235ee98c54045789751c829b28c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593714"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947824"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -141,7 +143,7 @@ Atualmente, a detecção automática funciona para dependências baixadas do npm
 
 Se você não desejar usar a aquisição automática, desabilite-a adicionando um arquivo de configuração, conforme descrito abaixo. Ainda é possível colocar arquivos de definição para uso diretamente no projeto manualmente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usando o IntelliSense](../ide/using-intellisense.md)
 - [Suporte a JavaScript (Visual Studio para Mac)](/visualstudio/mac/javascript)

@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, Linting
+description: Saiba como usar a página de refiapoing da caixa de diálogo opções para definir opções para analisar o código no editor de códigos.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68605959"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947707"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Caixa de diálogo opções: editor de texto \> JavaScript/ \> refiapoing do TypeScript
 
@@ -39,6 +41,6 @@ Essas opções permitem que você habilite a análise de código JavaScript e Ty
 
 Essa opção permite copiar o local do arquivo de configuração global ESLint. Além disso, se você tiver alterado o local anteriormente, redefina o arquivo para seu local padrão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

@@ -1,5 +1,7 @@
 ---
 title: Introdução ao IDE do Visual Studio
+description: Saiba mais sobre o IDE (ambiente de desenvolvimento integrado) do Visual Studio, incluindo as janelas, os menus e outros recursos de interface do usuário usados com mais frequência.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/05/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41d5d40cc7951f09a8106426f603d42628c61846
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f80dd85e1cc8f93784ed938ef1788730b3c926e8
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238862"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947811"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -156,7 +158,7 @@ Examinamos apenas alguns dos recursos do Visual Studio para nos familiarizarmos 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Mais recursos do Visual Studio 2017](../ide/advanced-feature-overview.md)
