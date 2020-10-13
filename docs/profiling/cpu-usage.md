@@ -1,6 +1,5 @@
 ---
-title: Analisar o uso da CPU | Microsoft Docs
-ms.custom: seodec18
+title: Analisar o uso da CPU no criador de perfil de desempenho
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,24 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543384"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007096"
 ---
-# <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analisar o uso da CPU sem depuração no criador de perfil de desempenho
 
 Uma boa maneira para começar a investigar problemas de desempenho em seu aplicativo é compreender o uso da CPU. A ferramenta de desempenho **Uso da CPU** mostra o tempo de CPU e percentual gasto executando código em C++, C#/Visual Basic e aplicativos JavaScript.
 
-A ferramenta **Uso da CPU** pode ser executada em um projeto aberto do Visual Studio, em um aplicativo instalado da Microsoft Store ou anexada a um aplicativo ou a um processo em execução. Para obter mais informações, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+A ferramenta Uso da CPU pode ser executada em um projeto aberto do Visual Studio, em um aplicativo instalado da Microsoft Store ou anexada a um aplicativo ou a um processo em execução. É possível executar a ferramenta Uso da CPU com ou sem depuração. Para obter mais informações, consulte [executar ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-É possível executar a ferramenta **Uso da CPU** com ou sem depuração. No depurador, é possível ativar e desativar a criação de perfil da CPU e ver um detalhamento por função do uso da CPU. Será possível exibir os resultados de uso da CPU quando a execução estiver em pausa, por exemplo, em um ponto de interrupção.
+As instruções a seguir mostram como usar a ferramenta Uso da CPU sem o depurador, usando o Criador de Perfil de Desempenho do Visual Studio. Os exemplos usam um build de versão em um computador local. Builds de versão fornecem a melhor exibição do desempenho real do aplicativo. Para analisar o uso da CPU com compilações de depuração (depurador anexado), consulte [guia para iniciantes para criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md).
 
-As instruções a seguir mostram como usar a ferramenta **Uso da CPU** sem o depurador, usando o **Criador de Perfil de Desempenho** do Visual Studio. Os exemplos usam um build de versão em um computador local. Builds de versão fornecem a melhor exibição do desempenho real do aplicativo. Para analisar o uso da CPU com Depurar builds, confira [Guia do iniciante para a criação de perfil do desempenho](../profiling/beginners-guide-to-performance-profiling.md).
-
-Geralmente, o computador local replica melhor a execução do aplicativo instalado. Para aplicativos Windows Phone, a coleta de dados diretamente do dispositivo fornece os dados mais precisos. Para coletar dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo, não por meio de uma Conexão de Área de Trabalho Remota.
+Geralmente, o computador local replica melhor a execução do aplicativo instalado. Para coletar dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo, não por meio de uma Conexão de Área de Trabalho Remota.
 
 >[!NOTE]
 >O Windows 7 ou posterior é necessário para usar o [Criador de Perfil de Desempenho](../profiling/profiling-feature-tour.md).
@@ -80,7 +77,7 @@ Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página 
 ![Estrutura de árvore de chamada](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Estrutura da árvore de chamadas")
 ::: moniker-end
 
-|Image|Descrição|
+|Imagem|Descrição|
 |-|-|
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamadas de Uso da CPU é um pseudonó.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção **Mostrar Código Externo** está desabilitada, o nó de segundo nível é um **[Código Externo]**. O nó contém o código do sistema e do framework que inicia e interrompe o aplicativo, elabora a interface do usuário, controla o agendamento de threads e fornece ao aplicativo outros serviços de nível baixo.|

@@ -2,8 +2,9 @@
 title: Modificar o Visual Studio
 titleSuffix: ''
 description: Saiba como modificar o Visual Studio, passo a passo.
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d4593ed516e308a5e55a93f83fd5345028dc95dc
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862284"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007133"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -74,11 +75,11 @@ Veja como.
 
 ::: moniker range="vs-2019"
 
-1. Localize o Instalador do Visual Studio no computador.
+1. Localize o **Instalador do Visual Studio** no computador.
 
-     Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
+     No Menu Iniciar do Windows, você pode pesquisar "instalador".
 
-     ![Abra o Instalador do Visual Studio no Windows](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
+     ![Instalador do Visual Studio](media/vs-2019/visual-studio-installer.png "Pesquisar o Instalador do Visual Studio")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:
@@ -89,7 +90,7 @@ Veja como.
 
 1. No instalador, procure a edição do Visual Studio instalada por você e escolha **Modificar**.
 
-     ![Atualizar ou modificar o Visual Studio](media/vs-2019/vs-installer-modify.png "Atualizar ou modificar o Visual Studio 2019")
+     ![Escolha a edição do Visual Studio e modifique](media/vs-2019/vs-installer-modify.png "Escolha a edição do Visual Studio 2019 e modifique")
 
      > [!IMPORTANT]
      > Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queira. Escolha **mais**e, em seguida, escolha **Modificar**.
@@ -156,7 +157,7 @@ Por padrão, o instalador corresponde ao idioma do sistema operacional quando el
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Lista de IDs de componente e carga de trabalho do Visual Studio](workload-and-component-ids.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

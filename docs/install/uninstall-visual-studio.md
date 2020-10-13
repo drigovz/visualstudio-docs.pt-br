@@ -2,7 +2,7 @@
 title: Desinstalar o Visual Studio
 titleSuffix: ''
 description: Saiba como desinstalar o Visual Studio, passo a passo.
-ms.date: 05/06/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419088"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007150"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
 
@@ -70,11 +70,11 @@ Para remover completamente todas as instalações do Visual Studio 2017 e o Inst
 
 ::: moniker range="vs-2019"
 
-1. Localize o Instalador do Visual Studio no computador.
+1. Localize o **Instalador do Visual Studio** no computador.
 
-     Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
+     No Menu Iniciar do Windows, você pode pesquisar "instalador".
 
-     ![Abra o Instalador do Visual Studio](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
+     ![Instalador do Visual Studio](media/vs-2019/visual-studio-installer.png "Pesquisar o Instalador do Visual Studio")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:
@@ -111,7 +111,7 @@ Se você tiver um erro catastrófico e não puder desinstalar o Visual Studio us
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Modificar o Visual Studio](modify-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

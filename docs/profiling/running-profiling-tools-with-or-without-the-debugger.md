@@ -1,5 +1,6 @@
 ---
 title: Executar ferramentas de criação de perfil com ou sem o depurador | Microsoft Docs
+description: Saiba mais sobre as diferenças entre os diferentes modos disponíveis para as ferramentas de criação de perfil
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007166"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -29,7 +30,7 @@ Para ajudar a decidir quais ferramentas e os resultados usar, considere o seguin
 - Ferramenta integrada do depurador versus ferramenta não depurador
   - Problemas de desempenho externos, como E/S de arquivo ou problemas na capacidade de resposta da rede, não terão uma aparência muito diferente nas ferramentas do depurador ou de não depurador.
   - O próprio depurador altera os tempos de desempenho, pois ele precisa de operações do depurador, como interceptar eventos de carregamento de exceção e módulo.
-  - Os números de desempenho do build de versão nas ferramentas do Criador de Perfil de Desempenho são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração ou para usar os recursos do depurador.
+  - Os números de desempenho da compilação de versão no criador de perfil de desempenho são os mais precisos e precisos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração ou para usar os recursos do depurador.
 - Depurar vs. Build de versão
   - Para problemas causados por chamadas com uso intensivo de CPU, pode haver diferenças consideráveis de desempenho entre compilações de versão e depuração. Verifique se o problema existe nas compilações de versão.
   - Se o problema ocorrer somente durante compilações de depuração, você provavelmente não precisará executar as ferramentas de não depurador. Para problemas de compilação de versão, decida se os recursos fornecidos pelas ferramentas integradas ao depurador ajudarão a identificar o problema.
@@ -98,7 +99,7 @@ Para obter mais informações, consulte:
 
 - [Analisar o uso da CPU](../profiling/cpu-usage.md)
 - [Analisar o uso de memória para código .NET](../profiling/dotnet-alloc-tool.md)
-- [Analisar o uso de memória](../profiling/analyze-memory-usage.md)
+- [Analisar o uso de memória](../profiling/memory-usage-without-debugging2.md)
 - [Analisar o desempenho do código assíncrono do .NET](../profiling/analyze-async.md)
 - [Analisar o desempenho do banco de dados](../profiling/analyze-database.md)
 - [Analisar o uso da GPU](../profiling/gpu-usage.md)

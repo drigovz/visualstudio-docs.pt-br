@@ -2,7 +2,7 @@
 title: Atualizar o Visual Studio
 titleSuffix: ''
 description: Saiba como atualizar o Visual Studio para a versão mais recente, passo a passo.
-ms.date: 07/31/2019
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d101ee2a4ce3d7a97382d829188a9902ccbd0c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419140"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007180"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Atualizar o Visual Studio para a versão mais recente
 
@@ -112,22 +112,22 @@ Se você estiver usando uma versão anterior, veja como aplicar uma atualizaçã
 
 1. Quando houver atualizações, haverá um sinalizador de notificação correspondente no Visual Studio.
 
-   ![Atualizar o Visual Studio 2017 usando o Hub de notificação](media/notification-flag.png "O sinalizador de notificação de atualização no Visual Studio")
+   ![Atualizar sinalizador de notificação do Visual Studio 2017](media/notification-flag.png "O sinalizador de notificação de atualização no Visual Studio")
 
    Escolha o sinalizador de notificação para abrir o Hub de **Notificações**.
 
-   ![Atualizar o Visual Studio 2017 usando o Hub de notificação](media/notifications-hub.png "O Hub de notificações no Visual Studio")
+   ![Atualização do Visual Studio 2017 no Hub de notificação](media/notifications-hub.png "Atualização do Visual Studio 2017 no Hub de notificação")
 
       > [!TIP]
       > Qualquer atualização para uma edição do Visual Studio 2017 é cumulativa, portanto, sempre escolha instalar a versão com o número de versão mais recente.
 
 1. Escolha **“Atualização do Visual Studio” está disponível**, que abre a caixa de diálogo **Extensões e Atualizações**.
 
-   ![Atualizar o Visual Studio 2017 usando o Hub de notificações](media/notifications-hub-select.png "O Hub de notificações no Visual Studio")
+   ![Escolha a atualização do Visual Studio](media/notifications-hub-select.png "Escolha a atualização do Visual Studio")
 
 1. Na caixa de diálogo **Extensões e Atualizações**, escolha o botão **Atualizar**.
 
-   ![Atualizar o Visual Studio 2017 usando o Hub de notificações](media/notifications-extensions-and-updates.png "A caixa de diálogo extensões e atualizações no Visual Studio")
+   ![Escolha Atualizar na caixa de diálogo extensões e atualizações](media/notifications-extensions-and-updates.png "A caixa de diálogo extensões e atualizações no Visual Studio")
 
 #### <a name="more-about-visual-studio-notifications"></a>Mais informações sobre as notificações do Visual Studio
 
@@ -178,9 +178,11 @@ Veja como atualizar o Visual&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Usar o instalador do Visual Studio
 
-1. Abra o instalador.
+1. Localize o **Instalador do Visual Studio** no computador.
 
-     ![Abra o Instalador do Visual Studio no Windows](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
+   No Menu Iniciar do Windows, você pode pesquisar "instalador".
+
+   ![Instalador do Visual Studio](media/vs-2019/visual-studio-installer.png "Pesquisar o Instalador do Visual Studio")
 
    Talvez você precise atualizar o instalador antes de continuar. Nesse caso, siga os prompts.
 
@@ -204,7 +206,7 @@ Veja como atualizar o Visual&nbsp;Studio&nbsp;2019.
 
 Você pode verificar se há uma atualização e, em seguida, instalá-la usando a barra de menus ou a caixa de pesquisa no Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Abra o Visual Studio
+### <a name="open-visual-studio"></a>Abrir o Visual Studio
 
 1. No menu **Iniciar** do Windows, abra o **Visual Studio 2019**.
 
@@ -239,7 +241,7 @@ Você pode verificar se há uma atualização e, em seguida, instalá-la usando 
 
 1. Na caixa de diálogo **Atualização disponível**, escolha **Atualizar**.
 
-     ![Escolha o botão atualizar na caixa de diálogo ' atualização baixada e pronta para instalar '](media/vs-2019/update-visual-studio-community-from-ide.png "Escolha o botão atualizar na caixa de diálogo ' atualização baixada e pronta para instalar '")
+     ![Escolha o botão atualizar na caixa de diálogo ' atualizar disponível '](media/vs-2019/update-visual-studio-community-from-ide.png "Escolha o botão atualizar na caixa de diálogo ' atualizar disponível '")
 
    O Visual Studio atualiza, fecha e abre novamente.
 
@@ -287,7 +289,7 @@ Este é o procedimento:
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Instalar versões do Visual Studio lado a lado](install-visual-studio-versions-side-by-side.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)

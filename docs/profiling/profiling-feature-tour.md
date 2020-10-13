@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861810"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007187"
 ---
 # <a name="first-look-at-profiling-tools"></a>Introdução às ferramentas de criação de perfil
 
@@ -107,9 +107,9 @@ Clique duas vezes em uma função de interesse e você verá uma exibição "bor
 
 ## <a name="analyze-memory-usage"></a>Analisar o uso de memória
 
-A janela de **ferramentas de diagnóstico** também permite que você avalie o uso de memória em seu aplicativo usando a ferramenta de **uso de memória** . Por exemplo, é possível examinar o número e tamanho dos objetos no heap. Você pode usar a [ferramenta de uso de memória integrada ao depurador](../profiling/memory-usage.md) ou a ferramenta de uso de memória do post-morte no [criador de perfil de desempenho](#post_mortem). Outra ferramenta de análise de memória, a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md), ajuda a identificar padrões de alocação e anomalias em seu código .net.
+A janela de **ferramentas de diagnóstico** também permite que você avalie o uso de memória em seu aplicativo usando a ferramenta de **uso de memória** . Por exemplo, é possível examinar o número e tamanho dos objetos no heap. Você pode usar a [ferramenta de uso de memória integrada ao depurador](../profiling/memory-usage.md) ou a [ferramenta de uso de memória do post-morte](../profiling/memory-usage-without-debugging2.md) no criador de perfil de desempenho. Outra ferramenta de análise de memória, a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md), ajuda a identificar padrões de alocação e anomalias em seu código .net.
 
-Para analisar o uso de memória, você precisa levar pelo menos um instantâneo de memória. Em geral, a melhor maneira de analisar a memória é usar dois instantâneos: o primeiro, logo antes de um problema de memória suspeito e o segundo instantâneo, logo após a ocorrência de um problema de memória suspeito. Depois, é possível exibir uma comparação dos dois instantâneos e ver exatamente o que mudou. A ilustração a seguir mostra como usar um instantâneo com a ferramenta integrada ao depurador.
+Para analisar o uso de memória com a ferramenta de **uso de memória** , você precisa levar pelo menos um instantâneo de memória. Em geral, a melhor maneira de analisar a memória é usar dois instantâneos: o primeiro, logo antes de um problema de memória suspeito e o segundo instantâneo, logo após a ocorrência de um problema de memória suspeito. Depois, é possível exibir uma comparação dos dois instantâneos e ver exatamente o que mudou. A ilustração a seguir mostra como usar um instantâneo com a ferramenta integrada ao depurador.
 
 ![Tirar um instantâneo no Ferramentas de Diagnóstico](../profiling/media/prof-tour-take-snapshots.gif "Ferramentas de Diagnóstico tirar instantâneos")
 
@@ -226,12 +226,12 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |[Uso da CPU](../profiling/beginners-guide-to-performance-profiling.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
 |[Alocação de objeto .NET](../profiling/dotnet-alloc-tool.md)|Sim (somente .NET)|sim|sim|
-|[Uso de GPU](./gpu-usage.md)|sim|sim|não|
-|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|não|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|no|
+|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|no|
 |[Visualizador de eventos](../profiling/events-viewer.md)|sim|sim|sim|
 |[.NET Async](../profiling/analyze-async.md)|Sim (somente .NET)|sim|sim|
-|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|não|Sim (somente ASP.NET Core)|
-|[Performance Explorer](#analyze-performance-legacy-tools)|não|não|não|
+|[Backup de banco de dados](../profiling/analyze-database.md)|Sim (somente no .NET Core)|no|Sim (somente ASP.NET Core)|
+|[Performance Explorer](#analyze-performance-legacy-tools)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
 ::: moniker-end
 
@@ -240,16 +240,16 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/beginners-guide-to-performance-profiling.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
-|[Uso de GPU](./gpu-usage.md)|sim|sim|não|
-|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|não|
+|[Uso de GPU](./gpu-usage.md)|sim|sim|no|
+|[Linha do tempo do aplicativo](../profiling/application-timeline.md)|Sim (XAML)|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
-|[Performance Explorer](../profiling/performance-explorer.md)|sim|não|sim|
+|[Performance Explorer](../profiling/performance-explorer.md)|sim|no|sim|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|.NET com Visual Studio Enterprise somente|
-|[Uso da rede](../profiling/network-usage.md)|não|sim|não|
-|[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|não|sim para HTML, não para XAML|não|
-|[Memória JavaScript](../profiling/javascript-memory.md)|não|sim para HTML, não para XAML|não|
+|[Uso da rede](../profiling/network-usage.md)|no|sim|no|
+|[Capacidade de resposta da interface do usuário HTML](../profiling/html-ui-responsiveness.md)|no|sim para HTML, não para XAML|no|
+|[Memória JavaScript](../profiling/javascript-memory.md)|no|sim para HTML, não para XAML|no|
 ::: moniker-end
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurando no Visual Studio](../debugger/debugger-feature-tour.md)

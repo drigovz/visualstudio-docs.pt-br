@@ -1,5 +1,5 @@
 ---
-title: Analisar o uso de memória sem depurar | Microsoft Docs
+title: Analisar o uso de memória no criador de perfil de desempenho
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007199"
 ---
-# <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analisar o uso de memória sem depuração no criador de perfil de desempenho
 
-A ferramenta **Uso de Memória** monitora o uso de memória do seu aplicativo. É possível usar a ferramenta para estudar os efeitos de memória em tempo real de cenários que você está desenvolvendo ativamente no Visual Studio. É possível tirar instantâneos detalhados dos estados de memória do aplicativo e compará-los para encontrar as causas raiz de problemas de memória.
+A ferramenta **Uso de Memória** monitora o uso de memória do seu aplicativo. É possível usar a ferramenta para estudar os efeitos de memória em tempo real de cenários que você está desenvolvendo ativamente no Visual Studio. É possível tirar instantâneos detalhados dos estados de memória do aplicativo e compará-los para encontrar as causas raiz de problemas de memória. A ferramenta de uso de memória tem suporte em aplicativos .NET, ASP.NET, C++ ou modo misto (.NET e nativo).
 
-A ferramenta de **uso de memória** pode ser executada [com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Neste artigo, mostramos como usar a ferramenta de **uso de memória** sem o depurador no **criador de perfil de desempenho**do Visual Studio.
+A ferramenta de uso de memória pode ser executada [com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Neste artigo, mostramos como usar a ferramenta de uso de memória sem o depurador no **criador de perfil de desempenho**do Visual Studio.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessões de diagnóstico de Uso de memória
 
@@ -32,7 +32,7 @@ A ferramenta de **uso de memória** pode ser executada [com ou sem o depurador](
 
 1. Abra um projeto no Visual Studio.
 
-   A ferramenta de uso de memória dá suporte a aplicativos de modo .NET, ASP.NET, nativo ou misto (.NET e nativo).
+   A ferramenta de uso de memória dá suporte aos aplicativos .NET, ASP.NET, C++ ou modo misto (.NET e nativo).
 
 1. No menu Depurar, defina a configuração da solução como **liberar** e selecione **depurador local do Windows** (ou **computador local**) como o destino de implantação.
 
@@ -76,7 +76,7 @@ Os números são links que abrem exibições do relatório **Uso de Memória** d
 
   ![Links de exibição do instantâneo](../profiling/media/memuse__snapshotview_numbered.png "Links de exibição do instantâneo")
 
-|Image|Descrição|
+|Imagem|Descrição|
 |-|-|
 |![Etapa 1](../profiling/media/procguid_1.png "ProcGuid_1")|O número total de bytes na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo classificado pelo tamanho total de instâncias do tipo.|
 |![Etapa 2](../profiling/media/procguid_2.png "ProcGuid_2")|O número total de objetos na memória quando o instantâneo foi tirado.<br /><br /> Selecione esse link para exibir um relatório de detalhes do instantâneo classificado pela contagem de instâncias dos tipos.|
@@ -214,7 +214,7 @@ Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâ
 |**Diferença de Tamanho Inclusivo (Bytes)**|No caso de um tipo, a diferença no tamanho de todas as instâncias do tipo entre o instantâneo primário e o instantâneo anterior, incluindo o tamanho dos objetos nos objetos.|
 |**Módulo**|O módulo que contém o objeto.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Memória JavaScript](../profiling/javascript-memory.md)
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

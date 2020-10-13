@@ -2,7 +2,7 @@
 title: Reparar o Visual Studio
 titleSuffix: ''
 description: Saiba como reparar uma instalação do Visual Studio 2017
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418958"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007104"
 ---
 # <a name="repair-visual-studio"></a>Reparar o Visual Studio
 
@@ -63,9 +63,9 @@ ms.locfileid: "85418958"
 
 1. Localize o **Instalador do Visual Studio** no computador.
 
-     Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
+     No Menu Iniciar do Windows, você pode pesquisar "instalador".
 
-     ![Abra o Instalador do Visual Studio](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
+     ![Instalador do Visual Studio](media/vs-2019/visual-studio-installer.png "Pesquisar o Instalador do Visual Studio")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:
@@ -89,7 +89,7 @@ ms.locfileid: "85418958"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
