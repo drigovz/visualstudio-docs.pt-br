@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585594"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959769"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -272,7 +272,7 @@ Você pode exercer mais controle sobre quais assemblies e elementos são selecio
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analisar a cobertura de código no Azure Pipelines
 
-Quando você faz check-in de seu código, os testes são executados no servidor de compilação, juntamente com os testes de outros membros da equipe. É útil analisar a cobertura de código no Azure Pipelines para obter o panorama mais recente e abrangente da cobertura no projeto inteiro. Isso também inclui os testes automatizados do sistema e outros testes codificados que normalmente não são executados nos computadores de desenvolvimento. Saiba mais em [Executar testes de unidade com builds](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Quando você faz check-in de seu código, os testes são executados no servidor de compilação, juntamente com os testes de outros membros da equipe. É útil analisar a cobertura de código no Azure Pipelines para obter o panorama mais recente e abrangente da cobertura no projeto inteiro. Isso também inclui os testes automatizados do sistema e outros testes codificados que normalmente não são executados nos computadores de desenvolvimento. Saiba mais em [Executar testes de unidade com builds](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analisar a cobertura de código na linha de comando
 
@@ -304,7 +304,7 @@ Para obter mais informações, consulte [Opções de linha de comando de VSTest.
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)

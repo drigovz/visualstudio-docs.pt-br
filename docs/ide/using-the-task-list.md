@@ -1,6 +1,7 @@
 ---
 title: Usar a Lista de Tarefas
-ms.date: 11/04/2016
+description: Saiba como o Lista de Tarefas no Visual Studio pode ajudá-lo a acompanhar e usar comentários de código com mais eficiência.
+ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
 - TaskListWindow
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781007"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959796"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
@@ -64,12 +65,12 @@ Um comentário no código precedido por um marcador de comentário e um token pr
 
 Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma tarefa `TODO` na lista.
 
-> [!NOTE]
-> Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB.
-
 ### <a name="custom-tokens"></a>Tokens personalizados
 
 Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Não diferenciam maiúsculas de minúsculas. Também é possível criar seus próprios tokens personalizados.
+
+> [!NOTE]
+> Os tokens padrão estão disponíveis apenas para as linguagens C/C++, C# e VB. Para criar seus próprios tokens para outras linguagens de programação, use as etapas a seguir.
 
 Para criar um token personalizado:
 
@@ -108,7 +109,7 @@ Para criar um atalho, insira o ponteiro no código no local em que deseja coloca
 
 Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Lista de Tarefas, ambiente, opções](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

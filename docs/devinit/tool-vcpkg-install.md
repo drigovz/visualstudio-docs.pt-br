@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 21dd482d100ce87ce942650e27a5dc5a232ddbbb
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6744e8fb3b42f81f6d0814646cab1f2388ebe577
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862835"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959755"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -29,7 +29,7 @@ Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a fer
 | Nome                                             | Type   | Obrigatório | Valor                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                   |
-| [**entrada**](#input)                              | string | Sim      | Os pacotes a serem instalados. Consulte a [entrada](#input) abaixo para obter detalhes.                       |
+| [**entrada**](#input)                              | cadeia de caracteres | Sim      | Os pacotes a serem instalados. Consulte a [entrada](#input) abaixo para obter detalhes.                       |
 | [**additionalOptions**](#additional-options)     | Cadeia de caracteres | No       | Consulte [as opções adicionais](#additional-options) abaixo para obter detalhes.                        |
 
 ### <a name="input"></a>Entrada
@@ -38,7 +38,7 @@ A `input` propriedade deve ser a `name` do a ser `vcpkg` instalada ou uma lista 
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Opções adicionais são passadas diretamente para o comando [vcpkg](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) e são documentadas no [repositório GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
+Opções adicionais são passadas diretamente para o comando [vcpkg](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) e são documentadas no [repositório GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
 
 ### <a name="default-behavior"></a>Comportamento padrão
 

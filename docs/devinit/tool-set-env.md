@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862842"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959762"
 ---
 # <a name="set-env"></a>set-env
 
 A `set-env` ferramenta pode ser usada para definir variáveis de ambiente para uso no processo atual. As variáveis de ambiente são definidas somente no processo atual e serão usadas por outras `devinit` ferramentas se elas forem executadas nesse processo.
 
-Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as mesmas limitações que essa API. Para obter mais informações, consulte a [documentação](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) do `Environment.SetEnvironment` .
+Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as mesmas limitações que essa API. Para obter mais informações, consulte a [documentação](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) do `Environment.SetEnvironment` .
 
 ## <a name="usage"></a>Uso
 
@@ -39,9 +39,9 @@ A `set-env` ferramenta usa uma única cadeia de caracteres como uma entrada na `
 | Ação       | Entrada            | Descrição                                                                                                                                                              | Exemplo             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | vazio ou omitido | Listar todas as variáveis de ambiente atuais.                                                                                                                              | `"input":""`        |
-| **listar um** | string           | Liste o valor de uma variável de ambiente específica por nome.                                                                                                               | `"input":"foo"`     |
-| **add**      | string           | Define o valor de uma variável de ambiente como par chave-valor. Adiciona uma nova variável de ambiente, se ainda não estiver presente, ou definir o valor de uma variável de ambiente existente | `"input":"foo=bar"` |
-| **delete**   | string           | Exclui uma variável de ambiente existente passando uma cadeia de caracteres de valor vazia.                                                                                            | `"input":"foo="`    |
+| **listar um** | cadeia de caracteres           | Liste o valor de uma variável de ambiente específica por nome.                                                                                                               | `"input":"foo"`     |
+| **add**      | cadeia de caracteres           | Define o valor de uma variável de ambiente como par chave-valor. Adiciona uma nova variável de ambiente, se ainda não estiver presente, ou definir o valor de uma variável de ambiente existente | `"input":"foo=bar"` |
+| **delete**   | cadeia de caracteres           | Exclui uma variável de ambiente existente passando uma cadeia de caracteres de valor vazia.                                                                                            | `"input":"foo="`    |
 
 Uma `input` cadeia de caracteres pode conter uma expansão de variável de ambiente, por exemplo `%userprofile%` , que é expandida quando o valor é lido.
 
