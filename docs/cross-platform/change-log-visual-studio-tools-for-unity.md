@@ -1,5 +1,6 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Windows) | Microsoft Docs
+description: Exiba o log de alterações para Ferramentas do Visual Studio para Unity, Windows. Confira as alterações da versão 1.0.0.0 a 4.7.0.0 e posteriores.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471513"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039432"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 
@@ -1668,7 +1669,7 @@ Lançado em 25 de março de 2013
 
 - Simplifique a depuração remota eliminando a necessidade de configurar uma pasta compartilhada para o Unity. Agora você apenas precisa ter acesso ao seu projeto do Unity do Windows.
 
-- Instale um perfil personalizado do Unity como um perfil de destino do .net padrão. Isso corrige todos os falsos positivos ReSharper poderia mostrar.
+- Instale um perfil de Unity personalizado como um perfil de destino padrão do .NET. Isso corrige todos os falsos positivos ReSharper poderia mostrar.
 
 - Aplique uma solução alternativa ao bug do mecanismo de script do Unity para que o depurador não quebre em threads não registrados corretamente.
 
@@ -1678,7 +1679,7 @@ Lançado em 25 de março de 2013
 
 ### <a name="bug-fixes"></a>Correções de bug
 
-- Corrigido nosso perfil .net personalizado
+- Corrigido nosso perfil personalizado do .NET
 
 - Corrigida a integração de temas, isso corrige os problemas com o tema escuro do VS 2012.
 
@@ -1751,7 +1752,7 @@ Lançado em 3 de janeiro de 2013
 
 - Corrigida uma exceção que poderia acontecer ao avaliar expressões Boo e UnityScript.
 
-- Corrigida uma regressão em que alterar o nível da API .net no Unity não dispararia uma atualização dos arquivos de projeto.
+- Correção de uma regressão em que a alteração do nível da API do .NET no Unity não dispararia uma atualização dos arquivos do projeto.
 
 - Corrigida uma falha de API em que o código do usuário não conseguia participar do manipulador de retorno de chamada de log.
 
@@ -1776,7 +1777,7 @@ Lançado em 28 de novembro de 2012
 
 - Corrigida regressão no segundo plano do Explorador de Projeto do Unity no Visual Studio 2012.
 
-- Corrigida a geração de projeto para usuários do perfil .net completo.
+- Correção da geração de projeto para usuários do perfil completo do .NET.
 
 - Corrigida a geração de projeto para usuários do destino da Web.
 

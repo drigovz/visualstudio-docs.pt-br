@@ -1,5 +1,6 @@
 ---
 title: Como personalizar os arquivos de projeto criados por VSTU | Microsoft Docs
+description: Saiba como personalizar arquivos de projeto criados pelo Ferramentas do Visual Studio para Unity (VSTU). Examine um exemplo de código C#.
 ms.custom: ''
 ms.date: 07/26/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2e4abb707f07e0a781460e5efe6996325e5ca00
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62819523"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039419"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizar arquivos de projeto criados pelo VSTU
 As ferramentas do Visual Studio para Unity fornecem um retorno de chamada de estilo Unity durante a geração do arquivo de projeto. Registre com o evento `VisualStudioIntegration.ProjectFileGeneration` para modificar o arquivo de projeto sempre que ele for gerado novamente.

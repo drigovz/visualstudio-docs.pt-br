@@ -1,5 +1,6 @@
 ---
 title: Solução de problemas e problemas conhecidos (Ferramentas do VS para Unity)
+description: Leia sobre solução de problemas no Ferramentas do Visual Studio para Unity. Consulte as descrições de problemas conhecidos e saiba mais sobre as soluções para esses problemas.
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 41ef89bbb7b3595c24de5a482eed805e75eb2cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d096a431b7a345d2218c46969dc1a1a21af1f45a
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235076"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039827"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
 
@@ -170,6 +171,6 @@ Tente atualizar o Visual Studio 2015 para atualização 3.
 
 Por fim, envie o despejo de thread para [vstusp@microsoft.com](mailto:vstusp@microsoft.com) , juntamente com uma descrição do que você estava fazendo quando o Visual Studio ficou congelado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

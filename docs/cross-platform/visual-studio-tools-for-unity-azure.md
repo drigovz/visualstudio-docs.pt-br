@@ -1,5 +1,6 @@
 ---
 title: Programar com as Ferramentas do Visual Studio para Unity| Microsoft Docs
+description: Programa com o Ferramentas do Visual Studio para Unity e o Azure. O Azure fornece uma solução escalonável para armazenar telemetria e outros dados de jogos na nuvem.
 ms.custom: ''
 ms.date: 12/18/2017
 ms.reviewer: crdun
@@ -12,12 +13,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be430b4a59dd4aa36945555f6553f321b9d50c0
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916820"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039814"
 ---
 # <a name="program-with-unity-and-azure"></a>Programar com o Unity e o Azure
 
