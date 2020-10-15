@@ -1,5 +1,7 @@
 ---
 title: Visão geral do Visual Studio Tools for AI
+description: Saiba como Visual Studio Tools for AI é um ambiente de desenvolvimento integrado (IDE) que você pode usar para criar, testar e implantar soluções de aprendizado profundo.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211044"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099161"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visão geral do Visual Studio Tools for AI
 

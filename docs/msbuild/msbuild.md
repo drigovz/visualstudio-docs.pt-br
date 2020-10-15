@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289190"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099265"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -47,7 +47,7 @@ A Microsoft Build Engine é uma plataforma para a criação de aplicativos. Esse
 Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode criar código no IDE em um computador de desenvolvimento, mas executar o MSBuild na linha de comando para compilar o código que é integrado a vários desenvolvedores. Você também pode usar a [CLI (interface de linha de comando) do .NET Core](/dotnet/core/tools/), que usa o MSBuild, para compilar projetos do .NET Core.
 
 > [!NOTE]
-> Você pode usar Azure Pipelines para compilar, testar e implantar automaticamente seu aplicativo. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). Azure Pipelines compila seu código usando o MSBuild. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+> Você pode usar Azure Pipelines para compilar, testar e implantar automaticamente seu aplicativo. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). Azure Pipelines compila seu código usando o MSBuild. Para obter mais informações, confira [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 Este artigo fornece uma visão geral do MSBuild. Para um tutorial de introdução, consulte [Instruções passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
@@ -176,7 +176,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Para obter mais informações, consulte [multidirecionamento](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 | Título | Descrição |
 | - | - |

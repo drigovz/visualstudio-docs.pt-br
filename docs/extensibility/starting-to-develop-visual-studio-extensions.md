@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286187"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099382"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Começar a desenvolver extensões do Visual Studio
 
@@ -91,9 +91,9 @@ Na prática, descobrimos que os recursos que a maioria das pessoas desejam esten
 ## <a name="how-can-i-distribute-my-extension"></a>Como posso distribuir minha extensão?
  Você pode instalar sua extensão em outro computador ou enviá-la para seus amigos como um arquivo. vsix, que você instala clicando duas vezes nele. Você pode saber mais sobre os pacotes VSIX no [envio de extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Você também pode publicar sua extensão na Visual Studio Marketplace, o que a torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão para o Marketplace, consulte [passo a passos: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts).
+ Você também pode publicar sua extensão na Visual Studio Marketplace, o que a torna visível para um grande número de clientes do Visual Studio. Para obter um exemplo de empacotamento de uma extensão para o Marketplace, consulte [passo a passos: publicando uma extensão do Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Para obter mais informações sobre o que você precisa fazer para publicar no Marketplace, consulte [produtos e extensões do Visual Studio](/azure/devops/extend/overview?view=vsts&preserve-view=true).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Estendendo o Visual Studio para Mac](/visualstudio/mac/extending-visual-studio-mac)
 - [Estendendo Visual Studio Code](https://code.visualstudio.com/api)

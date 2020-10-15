@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352297"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099434"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referência de migração e atualização de projeto do Visual Studio
 
@@ -104,7 +104,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de migração e atualização de projeto do Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)
@@ -141,7 +141,7 @@ Se você não vir um projeto ou tipo de arquivo listado aqui que deveria ser, co
 | LightSwitch | Não há mais suporte para o LightSwitch no Visual Studio 2019 nem no Visual Studio 2017. Os projetos criados com o Visual Studio 2012 e anteriores abertos no Visual Studio 2013 ou no Visual Studio 2015 serão atualizados e poderão ser abertos apenas no Visual Studio 2013 ou no Visual Studio 2015 e posteriores. |
 | Carregar Teste | As funcionalidades de teste de carga e desempenho Web foram preteridas no Visual Studio 2019. <br/><br/>O Visual Studio 2019 será a última versão do teste de carga. Use ferramentas de teste de carga alternativas como Apache JMeter, Akamai CloudTest e Blazemeter.  |
 | Ferramentas do Microsoft Azure para Visual Studio | Para abrir esses tipos de projetos, primeiro instale o [SDK do Azure para .NET](https://azure.microsoft.com/downloads/) e, em seguida, abra o projeto. Se necessário, o projeto será atualizado. |
-| Microsoft Test Manager | O Microsoft Test Manager e o Feedback Client não são mais fornecidos no Visual Studio, a partir do Visual Studio 2019. <br/><br/>Aproveite o Azure Test Plans (parte do Azure DevOps) para suas necessidades de testes manuais e exploratórios. Para obter mais informações, consulte a página [Orientações sobre o uso do Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) na documentação do Azure DevOps. |
+| Microsoft Test Manager | O Microsoft Test Manager e o Feedback Client não são mais fornecidos no Visual Studio, a partir do Visual Studio 2019. <br/><br/>Aproveite o Azure Test Plans (parte do Azure DevOps) para suas necessidades de testes manuais e exploratórios. Para obter mais informações, consulte a página [Orientações sobre o uso do Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops&preserve-view=true) na documentação do Azure DevOps. |
 | Estrutura Modelo-Exibição-Controlador (ASP.NET MVC) | Suporte para versões do MVC e para o Visual Studio:<ul><li>O Visual Studio 2010 SP1 dá suporte ao MVC 2 e MVC 3; o suporte MVC 4 é adicionado por meio do [download do ASP.NET 4 MVC 4 para Visual Studio 2010 SP1](https://www.microsoft.com/download/details.aspx?id=30683)</li><li>O Visual Studio 2012 dá suporte apenas ao MVC 3 e ao MVC 4</li><li>O Visual Studio 2013 dá suporte apenas ao MVC 4 e ao MVC 5</li><li>O Visual Studio 2019, o Visual Studio 2017 e o Visual Studio 2015 dão suporte ao MVC 4 (é possível abrir projetos existentes, mas não criar projetos) e ao MVC 5</li></ul><br/>Atualizando versões do MVC:<ul><li>Para obter informações sobre como atualizar automaticamente do MVC 2 para o MVC 3, consulte [Atualizador do aplicativo ASP.NET MVC 3](https://archive.codeplex.com/?p=aspnet).</li><li>Para obter informações sobre como atualizar manualmente do MVC 2 para o MVC 3, consulte [Atualizando um projeto ASP.NET MVC 2 para atualização de ferramentas do ASP.NET MVC 3](https://archive.codeplex.com/?p=aspnet).</li><li>Para obter informações sobre como atualizar manualmente do MVC 3 para o MVC 4, consulte [Atualizando um projeto ASP.NET MVC 3 para o ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes). Se o projeto se destinar ao .NET Framework 3.5 SP1, você deverá redirecioná-lo para usar o .NET Framework 4.</li><li>Para obter informações sobre como atualizar manualmente do MVC 4 para o MVC 5, consulte [como atualizar um projeto de API Web e MVC 4 do ASP.net para o ASP.NET MVC 5 e a API da Web 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
 | Modelagem | Se você permitir que o Visual Studio atualize o projeto automaticamente, será possível abri-lo no Visual Studio 2015, Visual Studio 2013 ou Visual Studio 2012.<br/><br/>O formato do projeto de modelagem não foi alterado desde o Visual Studio 2015 e o projeto pode ser aberto e modificado nessas versões. No entanto, há diferenças de comportamento do Visual Studio 2017 e do Visual Studio 2019:<ul><li>Os projetos de modelagem agora são chamados de projetos de “Validação de dependência” nos menus e modelos.</li><li>Não há mais suporte para diagramas UML no Visual Studio 2017 e no Visual Studio 2019. Os arquivos UML são listados no Gerenciador de Soluções como antes, mas são abertos como arquivos XML. Use o Visual Studio 2015 para exibir, criar ou editar diagramas UML.</li><li>No Visual Studio 2019, a validação de dependências de arquitetura não é mais executada quando o projeto de modelagem é criado. Em vez disso, a validação é executada durante a criação de cada projeto de código. Essa alteração não afeta o projeto de modelagem, mas exige alterações nos projetos de código que estão sendo validados. O Visual Studio 2019 pode fazer as alterações necessárias nos projetos de código automaticamente.</li></ul> |
 | Instalação MSI (vdproj) | Consulte Projetos do InstallShield. |
@@ -198,7 +198,7 @@ Consulte os seguintes artigos para uma discussão mais detalhada:
 - [Diretrizes de ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Diretrizes de direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de atualização e de migração de projeto para o Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo de vida do produto Visual Studio e manutenção](/visualstudio/releases/2019/servicing/)

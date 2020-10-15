@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570551"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099343"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher itens da Caixa de Ferramentas, Componentes do WPF
 
@@ -41,7 +41,7 @@ Lista os nomes dos controles WPF para os quais existem entradas no Registro do c
 
 **Namespace**
 
-Exibe a hierarquia do namespace [API .NET](/dotnet/api/?view=netframework-4.7) que define a estrutura do componente. Classifique essa coluna para listar os componentes disponíveis em cada namespace .NET instalado no computador.
+Exibe a hierarquia do namespace [API .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true) que define a estrutura do componente. Classifique essa coluna para listar os componentes disponíveis em cada namespace .NET instalado no computador.
 
 **Nome do assembly**
 
@@ -81,7 +81,7 @@ Além disso, se os metadados em tempo de design são aplicados ao controle perso
 
 É possível referenciar os controles diretamente no modo de exibição XAML, mapeando o namespace e o assembly do controle.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de Ferramentas](../../ide/reference/toolbox.md)
 - [Introdução ao WPF](../../designers/getting-started-with-wpf.md)

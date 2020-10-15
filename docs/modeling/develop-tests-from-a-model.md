@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596652"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099291"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] o, também poderá manter links entre os modelos e os testes.
@@ -59,7 +59,7 @@ Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar 
 
 1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] , crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Vincule o item de trabalho de requisito a um ou mais casos de uso em seu modelo.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] , crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] . Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Vincule o item de trabalho de requisito a um ou mais elementos em seu modelo.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Adicione ao conjunto de testes, casos de teste que verificam o requisito expresso no elemento de modelo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)
