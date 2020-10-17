@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo de Eventos de Build (Visual Basic)
+description: Saiba como você pode usar a caixa de diálogo compilar eventos para especificar instruções de configuração de compilação e as condições sob as quais os eventos de pré-compilação ou pós-compilação são executados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42b7837dd5253d29ecbd0085ae6159a981fcf15c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461443"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136635"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Caixa de diálogo de Eventos de Build (Visual Basic)
 
@@ -46,7 +48,7 @@ Especifica comandos a serem executados após o fim do build. Para digitar comand
 
 Especifica as condições para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.
 
-|Opção|Result|
+|Opção|Resultado|
 |------------|------------|
 |**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
 |**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. O evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido. Essa é a configuração padrão.|

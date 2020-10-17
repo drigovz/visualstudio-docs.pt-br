@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829884"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116097"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Como funciona a Ponte para Kubernetes
 
@@ -112,6 +112,8 @@ A ponte para o kubernetes tem as seguintes limitações:
 
 * Um serviço deve ser apoiado por um único pod para se conectar a esse serviço. Você não pode se conectar a um serviço com vários pods, como um serviço com réplicas.
 * Um pod pode ter apenas um único contêiner em execução nesse pod para que a ponte para kubernetes se conecte com êxito. A ponte para o kubernetes não pode se conectar a serviços com pods que têm contêineres adicionais, como contêineres sidecar injetados por malhas de serviços.
+* Atualmente, a ponte para kubernetes pods deve ser contêineres do Linux. Contêineres do Windows não têm suporte.
+* O isolamento não pode ser usado com HTTPS.
 * O Bridge para kubernetes precisa de permissões elevadas para ser executado em seu computador de desenvolvimento para editar o arquivo de hosts.
 * A ponte para kubernetes não pode ser usada em clusters com Azure Dev Spaces habilitado.
 

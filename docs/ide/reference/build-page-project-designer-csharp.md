@@ -1,5 +1,7 @@
 ---
 title: Página de Build, Designer de Projeto (C#)
+description: Saiba como usar a página de compilação do designer de projeto no Visual Studio para especificar as propriedades de configuração de compilação do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 06/20/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7da7414b9cf454e861c8407633de7851dcb86df3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419218"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136869"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 
@@ -36,7 +38,7 @@ As opções a seguir permitem selecionar a configuração e a plataforma a ser e
 > [!NOTE]
 > Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para saber mais, consulte [Como definir configurações de depuração e versão](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-**Configuração**
+**Configuration**
 
 Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.
 
@@ -148,4 +150,4 @@ Clique para exibir a caixa de diálogo [Configurações de Build Avançadas (C#)
 ## <a name="see-also"></a>Confira também
 
 - [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)
-- [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)

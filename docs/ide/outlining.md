@@ -1,6 +1,8 @@
 ---
 title: Recolher e expandir as regiões de código
-ms.date: 11/04/2016
+description: Saiba como você pode usar os comandos expandir e recolher para trabalhar no modo de estrutura de tópicos no Visual Studio
+ms.custom: SEO-VS-2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545438"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136661"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
@@ -36,14 +38,14 @@ Quando você trabalha no código de estrutura de tópicos, pode expandir as seç
 Os comandos **Desfazer** e **Refazer** no menu **Editar** afetam essas ações. As operações de **Copiar**, **Recortar**, **Colar** e do tipo "arrastar e soltar" retêm informações de estrutura de tópico, mas não o estado da região recolhível. Por exemplo, quando você copia uma região recolhida, a operação **Colar** colará o texto copiado como uma região expandida.
 
 > [!CAUTION]
-> Quando você altera uma região de estrutura de tópicos, a estrutura de tópicos pode ser perdida. Por exemplo, exclusões ou operações de Localizar e Substituir podem apagar o fim da região.
+> Quando você altera uma região de estrutura de tópicos, a estrutura de tópicos pode ser perdida. Por exemplo, as exclusões ou as operações de **localização e substituição** podem apagar o final da região.
 
 Os comandos a seguir podem ser encontrados no **Edit**  >  submenu editar**estrutura de tópicos** .
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |Ocultar Seleção|(**Ctrl** + **M**, **Ctrl** + **H**) – recolhe um bloco de código selecionado que normalmente não estaria disponível para a estrutura de tópicos, por exemplo, um `if` bloco. Para remover a região personalizada, use **Interromper Ocultação Atual** (ou **Ctrl**+**M**, **Ctrl**+**U**). Não disponível no Visual Basic.|
-|Ativar/Desativar Expansão da Estrutura de Tópicos|– Reverte o estado atual oculto ou expandido da seção de estrutura de tópicos mais interna quando o cursor está em uma seção recolhida aninhada.|
+|Ativar/Desativar Expansão da Estrutura de Tópicos| (**Ctrl** + **M**, **Ctrl** + **m**) – reverte o estado atual oculto ou expandido da seção de estrutura de tópicos mais interna quando o cursor está em uma seção aninhada contraída.|
 |Ativar/Desativar Estrutura de Tópicos para Tudo|(**Ctrl** + **M**, **Ctrl** + **L**) – define todas as regiões para o mesmo estado recolhido ou expandido. Se algumas regiões estiverem expandidas e algumas estiverem recolhidas, as regiões recolhidas serão expandidas.|
 |Interromper Estrutura de Tópicos|(**Ctrl** + **M**, **Ctrl** + **P**) – remove todas as informações de estrutura de tópicos de todo o documento.|
 |Interromper Ocultação Atual|(**Ctrl** + **M**, **Ctrl** + **U**) – remove as informações de estrutura de tópicos para a região definida pelo usuário selecionada no momento. Não disponível no Visual Basic.|

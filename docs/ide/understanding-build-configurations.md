@@ -1,5 +1,7 @@
 ---
 title: Noções sobre configurações de build
+description: Saiba como você precisa de configurações de compilação quando precisa criar seus projetos com configurações diferentes no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904159"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136674"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
@@ -48,7 +50,7 @@ Você pode criar suas próprias configurações de compilação no nível da sol
 
 Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **criar**  >  **Configuration Manager**ou apenas digite **configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
 
-![Gerenciador de Configurações](media/understanding-build-configurations/config-manager.png)
+![Configuration Manager](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Se você não encontrar as definições de configuração da solução na barra de ferramentas e não puder acessar o **Configuration Manager**, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] as configurações de desenvolvimento poderão ser aplicadas. Para obter mais informações, consulte [como: gerenciar configurações com Visual Basic configurações de desenvolvedor aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).

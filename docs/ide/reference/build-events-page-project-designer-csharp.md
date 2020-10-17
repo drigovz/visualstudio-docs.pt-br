@@ -1,5 +1,7 @@
 ---
 title: Página Eventos de Build, Designer de Projeto (C#)
+description: Saiba como especificar instruções de configuração de compilação. Você também pode especificar as condições sob as quais eventos pós-build são executados.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419049"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136843"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 
@@ -29,7 +31,7 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
-**Configuração**
+**Configuration**
 
 Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -55,7 +57,7 @@ Especifica comandos a serem executados após o fim do build. Para digitar comand
 
 Especifica as condições a seguir para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.
 
-|Opção|Result|
+|Opção|Resultado|
 |------------|------------|
 |**Always**|O evento de pós-build será executado independentemente de o build ser bem-sucedido.|
 |**Na compilação bem-sucedida**|O evento de pós-build será executado se o build for bem-sucedido. Assim, o evento será executado mesmo para um projeto atualizado, desde que o build seja bem-sucedido.|

@@ -1,5 +1,7 @@
 ---
 title: Ações de build para arquivos
+description: Saiba como todos os arquivos em um projeto do Visual Studio têm uma ação de compilação e a ação de compilação controla o que acontece com o arquivo quando o projeto é compilado.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315103"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136726"
 ---
 # <a name="build-actions"></a>Ações de Build
 
@@ -56,6 +58,6 @@ Algumas das ações de build mais comuns para arquivos de projeto do C# e Visual
 
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
+- [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Opções do compilador do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
 - [Ações de build (Visual Studio para Mac)](/visualstudio/mac/build-actions)

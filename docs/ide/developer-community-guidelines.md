@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810113"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116144"
 ---
 # <a name="developer-community-guidelines"></a>Diretrizes do Developer Community
 
@@ -59,11 +59,13 @@ A separação de um problema é um processo de várias etapas que é feito de fo
 
 Depois de relatar um problema, os estados indicam onde seus envios estão no seu ciclo de vida. À medida que as equipes de produtos do Visual Studio revisam seus comentários, elas as definem com um estado apropriado. Acompanhe o progresso dos relatórios de problemas referenciando os [Estados e as perguntas frequentes do problema](./report-a-problem.md).
 
+### <a name="prioritizing-which-issues-to-fix"></a>Priorizando quais problemas corrigir
+
+Não é possível corrigir todo o problema relatado. Alguns são muito caros de corrigir, alguns podem retornar outras áreas de recursos e alguns podem ter um impacto muito baixo. Entendemos que isso pode ser desapontador se você já levou algum tempo para nos enviar um relatório de problemas. Todos estamos lá, seja nesse projeto ou em outros que contribuímos. Se um problema foi fechado e você sentir que o motivo pelo qual não foi satisfatório, poderá esclarecer seu caso de uso e solicitar que o problema seja reativado para outro passo. Neste ponto, poderemos solicitar mais informações.
+
+### <a name="missing-important-information"></a>Informações importantes ausentes
+
 Quando faltam informações importantes no problema, atribuímos o estado de _mais informações_ . Comentamos o problema com as informações específicas de que precisamos e você receberá uma notificação por email. Se não recebermos as informações dentro de sete dias, enviaremos um lembrete. Depois disso, fechamos o tíquete após 14 dias de inatividade.
-
-### <a name="wont-fix-bugs"></a>Não corrigirá bugs
-
-Nós fechamos alguns bugs quando há um saldo negativo de custo-benefício. Por exemplo, se a correção for tão complexa regressão de riscos de ti para muitos usuários, a correção poderá não ser razoável. Quando fecharmos um bug como este, explicaremos por que fazemos isso.
 
 ### <a name="other-product"></a>Outro produto
 

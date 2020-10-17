@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290071"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136856"
 ---
 # <a name="how-msbuild-builds-projects"></a>Como o MSBuild compila projetos
 
@@ -50,7 +50,7 @@ Os projetos do .NET Core importam a versão do SDK do .NET apropriada para eles.
 
 Esta seção discute como esses arquivos de entrada são processados e analisados para produzir objetos na memória que determinam o que será criado.
 
-A finalidade da fase de avaliação é criar as estruturas de objeto na memória com base nos arquivos XML de entrada e no ambiente local. A fase de avaliação consiste em cinco passagens que processam os arquivos de entrada, como os arquivos XML do projeto ou, e os arquivos XML importados, geralmente chamados de arquivos *. props* ou *. targets* , dependendo se eles definem principalmente as propriedades ou definem destinos de compilação. Cada passagem cria uma parte dos objetos na memória que são usados posteriormente na fase de execução para compilar os projetos, mas nenhuma ação de compilação real ocorre durante a fase de avaliação. Em cada passagem, os elementos são processados na ordem em que aparecem.
+A finalidade da fase de avaliação é criar as estruturas de objeto na memória com base nos arquivos XML de entrada e no ambiente local. A fase de avaliação consiste em seis passagens que processam os arquivos de entrada, como os arquivos XML do projeto ou, e os arquivos XML importados, geralmente chamados de arquivos *. props* ou *. targets* , dependendo se eles definem principalmente as propriedades ou definem destinos de compilação. Cada passagem cria uma parte dos objetos na memória que são usados posteriormente na fase de execução para compilar os projetos, mas nenhuma ação de compilação real ocorre durante a fase de avaliação. Em cada passagem, os elementos são processados na ordem em que aparecem.
 
 Os passos na fase de avaliação são os seguintes:
 

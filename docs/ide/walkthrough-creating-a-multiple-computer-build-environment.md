@@ -1,5 +1,6 @@
 ---
 title: Criar um ambiente de build de vários computadores
+description: Crie um ambiente de compilação dentro da sua organização instalando o Visual Studio em um computador host e, em seguida, copiando vários arquivos e configurações para outro computador.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038420"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136947"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -25,7 +26,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 
 Este documento não confere direitos para redistribuir o software externamente nem para fornecer ambientes de build a terceiros.
 
-> Isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e opiniões expressadas neste documento, incluindo URLs e outras referências a sites da Internet, podem ser alteradas sem aviso prévio. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas. Você assume o risco de usá-las.<br /><br /> Este documento não fornece direitos legais e nenhuma propriedade intelectual sobre qualquer produto da Microsoft. Você pode copiar e usar este documento para fins de referência interna.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
+> Isenção de responsabilidade<br /><br /> Este documento é fornecido "no estado em que se encontra". Embora tenhamos testado as etapas descritas, não é possível testar exaustivamente cada configuração. Tentaremos manter o documento atualizado com quaisquer informações adicionais que obtivermos. As informações e opiniões expressadas neste documento, incluindo URLs e outras referências a sites da Internet, podem ser alteradas sem aviso prévio. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui. Você assume o risco de usá-las.<br /><br /> Este documento não fornece direitos legais e nenhuma propriedade intelectual sobre qualquer produto da Microsoft. Você pode copiar e usar este documento para fins de referência interna.<br /><br /> Você não tem obrigação de enviar à Microsoft nenhuma sugestão ou comentário ("Comentários") com relação a este documento. No entanto, qualquer Comentário que você forneça voluntariamente poderá ser usado em Produtos Microsoft e especificações relacionadas ou outra documentação (coletivamente, "Ofertas Microsoft"), que, por sua vez, poderão ser utilizados por terceiros para desenvolver seus próprios produtos. Portanto, ao fornecer Comentários sobre a Microsoft em qualquer versão deste documento ou das Ofertas da Microsoft aos quais elas se aplicam, você concorda que: (a) a Microsoft pode livremente usar, reproduzir, licenciar, distribuir e comercializar de outra forma seus Comentários em qualquer Oferta da Microsoft; (b) você também concede a terceiros, sem custos, somente os direitos de patente necessários para permitir que outros produtos usem ou interajam com quaisquer partes específicas de um Produto Microsoft que incorporem Seus Comentários; e (c) você não fornecerá à Microsoft nenhum Comentário (i) que você tenha motivo para acreditar que esteja sujeito a qualquer declaração ou direito de patente, direitos autorais ou outra propriedade intelectual de terceiros; ou (ii) sujeito a termos de licença que busquem exigir que qualquer Oferta da Microsoft que incorpore ou seja derivada desses Comentários, ou outra propriedade intelectual da Microsoft, seja licenciada ou compartilhada de outra forma com quaisquer terceiros.
 
 Este passo a passo foi validado nos seguintes sistemas operacionais:
 
@@ -193,7 +194,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
 Você deve criar entradas do Registro para definir configurações para MSBuild.
 
-1. Identifique a pasta pai para entradas do Registro. Todas as entradas de Registro são criadas sob a mesma chave pai. Em um computador x86, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Em um computador x64, a chave pai é **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Independentemente da arquitetura do sistema, este passo a passo refere-se à chave pai como %RegistryRoot%.
+1. Identifique a pasta pai para entradas do Registro. Todas as entradas de Registro são criadas sob a mesma chave pai. Em um computador x86, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Em um computador x64, a chave pai é **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Independentemente da arquitetura do sistema, este passo a passo refere-se à chave pai como %RegistryRoot%.
 
     > [!NOTE]
     > Se a arquitetura do computador host for diferente do computador de build, certifique-se de usar a chave pai apropriado em cada computador. Isso é especialmente importante se você estiver automatizando o processo de exportação.
@@ -340,7 +341,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         como
+         para
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -350,7 +351,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         como
+         para
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

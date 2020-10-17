@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdcfc9daf2e1e64d61e2f699e0295826894b1920
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76826465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136830"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Como usar SDKs de projeto do MSBuild
 
@@ -66,9 +66,6 @@ Há três maneiras de referenciar um SDK de projeto:
     </Project>
     ```
 
-    > [!NOTE]
-    > Isso atualmente é a única maneira com suporte para fazer referência a um projeto do SDK no Visual Studio para Mac.
-
 - Use o elemento `<Sdk/>` de nível superior:
 
     ```xml
@@ -107,7 +104,7 @@ Ao avaliar a importação, o MSBuild resolve dinamicamente o caminho para o SDK 
 
    Esse resolvedor só estará ativo se você tiver especificado uma versão opcional. Ele pode ser usado para qualquer SDK do projeto personalizado.
    
-- Um resolvedor de CLI do .NET que resolve SDKs instalados com a [CLI do .net](/dotnet/core/tools/).
+- Um resolvedor do SDK do .NET que resolve SDKs do MSBuild instalados com o [SDK do .net](/dotnet/core/sdk/).
 
    Esse resolvedor localiza SDKs de projeto como `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web` que fazem parte do produto.
    

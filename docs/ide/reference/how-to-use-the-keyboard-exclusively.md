@@ -2,7 +2,7 @@
 title: Usar o Visual Studio sem um mouse
 titleSuffix: ''
 description: Saiba como navegar e escrever código no IDE (ambiente de desenvolvimento integrado) do Visual Studio usando apenas o teclado.
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770224"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156555"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar exclusivamente o teclado
 
@@ -37,13 +37,13 @@ Para obter uma lista completa de teclas de atalho de comando no Visual Studio, c
 ::: moniker-end
 
 > [!NOTE]
-> Dependendo de suas configurações ou da edição do Visual Studio usada, as caixas de diálogo e os comandos de menu poderão diferir dos descritos na Ajuda. Para alterar suas configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas** . Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
+> Dependendo de suas configurações ou da edição do Visual Studio usada, as caixas de diálogo e os comandos de menu poderão diferir dos descritos na Ajuda. Para alterar as configurações, selecione **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controles da caixa de ferramentas
 
 Para adicionar um controle na Caixa de Ferramentas a um formulário ou designer sem usar o mouse:
 
-1. Na barra de menus, escolha **Exibir**  >  **caixa de ferramentas**.
+1. Na barra de menus, selecione **Exibir**  >  **caixa de ferramentas**.
 
 2. Use as teclas **Ctrl** + **seta para cima** ou **Ctrl** + **seta para baixo** para mover entre as seções na guia caixa de **ferramentas** .
 
@@ -71,9 +71,9 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
 ## <a name="navigate-between-windows-and-files"></a>Navegar entre janelas e arquivos
 
-- Para mover entre arquivos em um editor ou designer, escolha o atalho de teclado **Ctrl** + **Tab** para exibir o navegador IDE com os **arquivos ativos** selecionados. Escolha a tecla **Enter** para navegar até o arquivo realçado.
+- Para mover entre arquivos em um editor ou designer, use o atalho de teclado **Ctrl** + **Tab** para exibir o navegador IDE com os **arquivos ativos** selecionados. Escolha a tecla **Enter** para navegar até o arquivo realçado.
 
-- Para mover entre janelas de ferramentas encaixadas, escolha o atalho de teclado **ALT** + **F7** para exibir o navegador IDE com **janelas de ferramentas ativas** selecionadas. Escolha a tecla **Enter** para navegar até a janela realçada.
+- Para mover entre janelas de ferramentas encaixadas, use o atalho de teclado **ALT** + **F7** para exibir o navegador IDE com **janelas de ferramentas ativas** selecionadas. Escolha a tecla **Enter** para navegar até a janela realçada.
 
 ## <a name="move-and-dock-tool-windows"></a>Mover e encaixar janelas de ferramentas
 
@@ -81,7 +81,7 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
 2. No menu **Janela**, selecione a opção **Encaixável**.
 
-3. Pressione **Alt**a + **barra de espaços**Alt e escolha **mover**.
+3. Pressione **Alt**a + **barra de espaços**Alt e selecione **mover**.
 
    O losango guia de encaixe é exibido.
 
@@ -97,7 +97,7 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
    A janela de ferramentas é encaixada no novo local de encaixe.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)

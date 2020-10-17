@@ -1,5 +1,7 @@
 ---
 title: Como especificar eventos de build (Visual Basic)
+description: Saiba como os eventos de compilação no Visual Basic podem ser usados para executar scripts, macros ou outras ações como parte do processo de compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283964"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136921"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
 

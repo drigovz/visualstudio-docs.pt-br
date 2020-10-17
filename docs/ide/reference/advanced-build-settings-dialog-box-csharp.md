@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Configurações de Build Avançadas (C#)
+description: Saiba como você pode usar o Visual Studio para especificar as propriedades de configuração de compilação avançadas do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 917ef4ff685c243fa271a0966a931151cb12ed2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418841"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136739"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas de compilação (C#)
 
@@ -96,5 +98,5 @@ Especifica o endereço básico preferencial no qual uma DLL será carregada. O e
 
 ## <a name="see-also"></a>Confira também
 
-- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index)
 - [Página de compilação, designer de projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

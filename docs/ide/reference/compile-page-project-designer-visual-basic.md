@@ -1,5 +1,7 @@
 ---
 title: Página de Compilação, Designer de Projeto (Visual Basic)
+description: Saiba como especificar instruções de compilação no Visual Studio. Você também pode especificar opções avançadas do compilador e eventos de pré ou pós-build nessa página.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284311"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136622"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 
@@ -41,7 +43,7 @@ As configurações a seguir permitem selecionar a configuração e a plataforma 
 > [!NOTE]
 > Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, as listas **Configuração** e **Plataforma** não são exibidas.
 
-**Configuração**
+**Configuration**
 
 Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para saber mais, consulte [Noções básicas das configurações de build](../../ide/understanding-build-configurations.md) e [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 

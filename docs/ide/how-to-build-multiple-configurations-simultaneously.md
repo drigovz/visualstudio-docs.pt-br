@@ -1,5 +1,7 @@
 ---
 title: 'Como: Compilar várias configurações'
+description: Saiba como você pode criar a maioria dos tipos de projetos com várias ou até mesmo todas as suas configurações de compilação com uma ação do IDE.
+ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7820d56bcb266e8361f36cb5350475f31445800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cc5963ed3a16ffba16a52bfcde7425fb1f10cba
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284756"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136973"
 ---
 # <a name="how-to-build-multiple-configurations-in-a-single-build-request"></a>Como: Compilar várias configurações em uma única solicitação de compilação
 

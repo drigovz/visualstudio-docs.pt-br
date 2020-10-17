@@ -1,5 +1,7 @@
 ---
 title: Compilação e criação
+description: Saiba como usar o método de compilação do IDE do Visual Studio, o método de compilação de ferramentas de linha de comando do MSBuild ou o método de compilação Azure Pipelines para criar um aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ac65fa9eaaf8e318e99e134957b335141f07577c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928535"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136583"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -25,7 +27,7 @@ Para obter uma primeira introdução à criação dentro do IDE, consulte [Walkt
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 
-| Método de build | Vantagens |
+| Método de build | Benefícios |
 | --- |--- | --- |
 | IDE |– Criar compilações imediatamente e testá-las em um depurador.<br />– Executar builds em multiprocessador para projetos C++ e C#.<br />– Personalizar diferentes aspectos do sistema de build. |
 | CMake | -Compilar projetos usando a ferramenta CMake<br />-Use o mesmo sistema de compilação em plataformas Linux e Windows. |
@@ -53,7 +55,7 @@ A partir daí, você pode explorar uma variedade de outras tarefas:
 - [Definir opções de build](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Crie vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar (compilar) projetos de site](/previous-versions/hwxa5aha(v=vs.140))
 - [Compilar e criar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)
