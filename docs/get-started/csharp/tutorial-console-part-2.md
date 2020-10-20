@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507950"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197472"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Tutorial: estender um aplicativo de console C# simples
 
@@ -120,9 +120,10 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Bibliotecas .NET de referência: gravar em um log
 
-1. Suponha que agora você queira adicionar um log de todas as operações e gravá-la em um arquivo de texto. A `Trace` classe .NET fornece essa funcionalidade. (Também é útil para as técnicas básicas de depuração de impressão.)  A classe Trace está em System. Diagnostics, portanto, comece adicionando uma diretiva using:
+1. Suponha que agora você queira adicionar um log de todas as operações e gravá-la em um arquivo de texto. A `Trace` classe .NET fornece essa funcionalidade. (Também é útil para as técnicas básicas de depuração de impressão.)  A classe Trace está em System. Diagnostics e precisaremos de classes System.IO como `StreamWriter` , portanto, comece adicionando as diretivas using:
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -217,7 +218,7 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
 
    O pacote é baixado e adicionado ao seu projeto e uma nova entrada é exibida no nó referências em **Gerenciador de soluções**.
 
-1. Adicione uma diretiva using para o Newtonsoft.Jsno pacote no início do *CalculatorLibrary.cs*.
+1. Adicione uma diretiva using para o System.IO e Newtonsoft.Jsno pacote no início de *CalculatorLibrary.cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ O código do mundo real envolve muitos projetos trabalhando juntos em uma soluç
         }
    ```
 
-1. Compile e execute o aplicativo e, depois de terminar de inserir algumas operações, feche o aplicativo corretamente usando o comando ' n'.  Agora, abra o consolelog.jsno arquivo e você verá algo semelhante ao seguinte:
+1. Compile e execute o aplicativo e, depois de terminar de inserir algumas operações, feche o aplicativo corretamente usando o comando ' n'.  Agora, abra o calculatorlog.jsno arquivo e você verá algo semelhante ao seguinte:
 
    ```json
    {

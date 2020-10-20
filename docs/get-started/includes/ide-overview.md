@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91025159"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210814"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -91,12 +91,9 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Lista de membros do Visual Studio](../media/intellisense-list-members.png)
 
-- Caixa de pesquisa
+- [Pesquisa do Visual Studio](../../ide/visual-studio-search.md)
 
-   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, a caixa de pesquisa fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
-
-   > [!TIP]
-   > Pressione **Ctrl** + **Q** como um atalho para a caixa de pesquisa.
+   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. O Visual Studio Search (**Ctrl** + **Q**) é uma ótima maneira de localizar rapidamente os recursos e o código do IDE em um único lugar.
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
    ::: moniker range="vs-2019"
 
    ![Caixa de pesquisa no Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+
+    Para obter informações e dicas de produtividade, consulte [como usar a pesquisa do Visual Studio](../../ide/visual-studio-search.md).
 
    ::: moniker-end
 
