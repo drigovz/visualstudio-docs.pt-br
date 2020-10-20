@@ -157,7 +157,7 @@ Por padrão, o instalador corresponde ao idioma do sistema operacional quando el
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Lista de IDs de componente e carga de trabalho do Visual Studio](workload-and-component-ids.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
