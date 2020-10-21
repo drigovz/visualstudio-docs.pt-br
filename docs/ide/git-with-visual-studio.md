@@ -2,18 +2,18 @@
 title: Nova experiência do Git no Visual Studio (versão prévia)
 titleSuffix: ''
 description: Saiba mais sobre a nova experiência de git integrada no Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082051"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334201"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nova experiência do Git no Visual Studio (versão prévia)
 
@@ -95,7 +95,7 @@ Você também pode optar por não preparar os arquivos modificados ignorando a �
 
 O Visual Studio também facilita a confirmação e a sincronização com um clique usando os atalhos **confirmar tudo e enviar** e **confirmar todos e sincronizar** . Quando você clica duas vezes em qualquer arquivo nas seções **alterações** e **alterações em etapas** , você pode ver uma comparação linha por linha com a versão não modificada do arquivo.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio " se estiver conectado ao repositório DevOps do Azure. Você pode conectar seu repositório DevOps do Azure por meio de Team Explorer > gerenciar conexões
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio " se estiver conectado ao repositório DevOps do Azure. Você pode conectar seu repositório DevOps do Azure por meio de **Team Explorer**  >  **gerenciar conexões**.
 
 ### <a name="select-an-existing-branch"></a>Selecionar uma ramificação existente
 

@@ -1,7 +1,6 @@
 ---
 title: Localizar e substituir texto, e seleção de vários cursores
-description: Saiba como usar o recurso Localizar e substituir no editor de código do Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298560"
+ms.locfileid: "92334188"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
@@ -123,9 +122,9 @@ Use as seguintes teclas e ações para os comportamentos da seleção de vários
 |**Ctrl** + **ALT** + clique duas vezes|Adicionar uma seleção de palavra secundária|
 |**Ctrl** + **ALT** + Clique + arrastar|Adicionar uma seleção secundária|
 |**Shift** + **ALT** + **.**|Adicionar o próximo texto correspondente como uma seleção|
-|**Ctrl** + **Shift** + **ALT** + **,**|Adicionar todo o texto correspondente como seleções|
+|**Shift** + **ALT** + **;**|Adicionar todo o texto correspondente como seleções|
 |**Shift** + **ALT** + **,**|Remover a última ocorrência selecionada|
-|**Ctrl** + **Shift** + **ALT** + **.**|Ignorar a próxima ocorrência de correspondência|
+|**Shift** + **ALT**+**/**|Ignorar a próxima ocorrência de correspondência|
 |**Alt** e clique|Adicionar uma seleção de caixa|
 |**Esc** ou clique|Limpar todas as seleções|
 
@@ -133,7 +132,7 @@ Alguns dos comandos também estão disponíveis no menu **Editar**, em **Vários
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Captura de tela do menu suspenso de múltiplos Cursors no Visual Studio":::
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refatorar um código no Visual Studio](../ide/refactoring-in-visual-studio.md)
