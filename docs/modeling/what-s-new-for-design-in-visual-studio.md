@@ -14,52 +14,52 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 6f81cc32604abe6d90ac0d263574e97df35c63bd
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302948"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "92299517"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novidades no design no Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validação de dependência ao vivo
 
-Remover dependências indesejadas é uma parte importante da gestão de sua dívida técnica. O Visual Studio fornece validação ao vivo de dependências, incluindo informações precisas sobre problemas, como onde eles estão localizados. A validação de dependência ao vivo tira todas as vantagens dos novos recursos na Lista de Erros e no editor.
+A remoção de dependências indesejadas é uma parte importante do gerenciamento da dívida técnica. O Visual Studio fornece validação dinâmica de dependências, incluindo informações precisas sobre problemas, como onde estão localizadas. A validação de dependência ao vivo aproveita todas as vantagens dos novos recursos no Lista de Erros e no editor.
 
 ![Validação de dependência ao vivo em ação](media/dep-validation-whatsnew-01.png)
 
-A experiência de autoria mudou para tornar a validação da dependência mais descoberta e acessível. A terminologia mudou de "Diagrama de camada" para "Diagrama de dependência".
+A experiência de criação foi alterada para tornar a validação de dependência mais detectável e mais acessível. A terminologia mudou de "diagrama de camada" para "diagrama de dependência".
 
-O menu **Arquitetura** agora contém um comando para criar diretamente um diagrama de dependência:
+O menu **arquitetura** agora contém um comando para criar diretamente um diagrama de dependência:
 
-![Item de dependência ao vivo no menu Arquitetura](media/dep-validation-whatsnew-02.png)
+![Item de dependência dinâmica no menu arquitetura](media/dep-validation-whatsnew-02.png)
 
-Os nomes e descrições das propriedades de camada foram alterados para torná-los mais significativos:
+Descrições e nomes de propriedade de camada foram alterados para torná-los mais significativos:
 
-![Dependência ao vivo atualizou nomes de propriedades](media/dep-validation-whatsnew-03.png)
+![Nomes de propriedade atualizados de dependência ao vivo](media/dep-validation-whatsnew-03.png)
 
-Você vê imediatamente o impacto de suas alterações nos resultados de análise para o código atual na solução cada vez que você salvar o diagrama. Você não precisa esperar pela conclusão do comando **Valid dependências.**
+Você verá imediatamente o impacto de suas alterações nos resultados da análise para o código atual na solução sempre que salvar o diagrama. Você não precisa aguardar a conclusão do comando **validar dependências** .
 
 Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
-## <a name="uml-designers-have-been-removed"></a>Os designers da UML foram removidos
+## <a name="uml-designers-have-been-removed"></a>Os designers UML foram removidos
 
-Os designers da UML foram removidos do Visual Studio.
+Os designers UML foram removidos do Visual Studio.
 
-* Diagramas UML são agora apresentados como arquivos XML
-* O UML Model Explorer não existe mais
-* As referências do projeto de modelagem não são mais usadas para validação de dependência
-* O nó "Referências em camadas" no Solution Explorer não é mais exibido
-* A ação de compilação "Validar" em um diagrama de dependência (Camada) não é mais usada - a tarefa Construir foi removida
-* A estrutura do projeto é mantida para tropeços redondos entre versões
-* Você ainda pode abrir, criar, editar e salvar um diagrama de Dependência (Camada) como XML
-* Os itens de trabalho do TFS vinculados a um diagrama de Dependência (Camada) não estão acessíveis na superfície do projeto
-* A vinculação de volta a DSL ou uma camada não é mais suportada
-* A extensibilidade uml no Modeling SDK não é mais suportada
+* Os diagramas UML agora são apresentados como arquivos XML
+* O Gerenciador de modelos UML não existe mais
+* As referências de projeto de modelagem não são mais usadas para validação de dependência
+* O nó "referências de camada" no Gerenciador de Soluções não é mais exibido
+* A ação de compilação "validar" em um diagrama de dependência (camada) não é mais usada-a tarefa de compilação foi removida
+* A estrutura do projeto é mantida para ida e volta entre as versões
+* Você ainda pode abrir, criar, editar e salvar um diagrama de dependência (camada) como XML
+* Os itens de trabalho do TFS vinculados a um diagrama de dependência (camada) não estão acessíveis na superfície de design
+* Não há mais suporte para a vinculação de volta do para DSL ou uma camada
+* Não há mais suporte para a extensibilidade UML no SDK de modelagem
 
-O suporte para visualizar a arquitetura do código .NET e C++ está disponível através de [mapas de código](map-dependencies-across-your-solutions.md).
+O suporte para visualizar a arquitetura do código .NET e C++ está disponível por meio de [mapas de código](map-dependencies-across-your-solutions.md).
 
-Se você é um usuário significativo dos designers uml, você pode continuar a usar o Visual Studio 2015 ou versões anteriores enquanto você decide sobre uma ferramenta alternativa para suas necessidades UML.
+Se você for um usuário significativo dos designers UML, poderá continuar usando o Visual Studio 2015 ou versões anteriores enquanto decide em uma ferramenta alternativa para suas necessidades de UML.
 
 Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
@@ -67,11 +67,11 @@ Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.micr
 
 ## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Suporte de edição para ferramentas de arquitetura e modelagem
 
-Visual Studio está disponível em várias edições. Nem todas elas fornecem suporte para as ferramentas de arquitetura e modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
+O Visual Studio está disponível em várias edições. Nem todos eles oferecem suporte para as ferramentas de arquitetura e modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
 
-|**Recurso**|**Edição corporativa**|**Edição profissional**|**Edição comunitária**|
+|**Recurso**|**Enterprise Edition**|**Professional Edition**|**Community Edition**|
 |-|-|-|-|
-|**Mapas de código**|Sim|Apenas suporta a leitura de mapas de código, filtração de mapas de código, adição de novos nódulos genéricos e a criação de um novo Gráfico Direcionado a partir de uma seleção.|-|
-|**Diagramas de dependência**|Sim|Só suporta diagramas de dependência de leitura.|Só suporta diagramas de dependência de leitura.|
-|**Gráficos direcionados** (diagramas DGML)|Sim|Sim|Sim|
+|**Mapas de código**|Sim|Dá suporte apenas à leitura de mapas de código, filtragem de mapas de código, adição de novos nós genéricos e criação de um novo grafo direcionado a partir de uma seleção.|-|
+|**Diagramas de dependência**|Sim|Dá suporte apenas à leitura de diagramas de dependência.|Dá suporte apenas à leitura de diagramas de dependência.|
+|**Grafos direcionados** (diagramas dgml)|Sim|Sim|Sim|
 |**Clone de código**|Sim|-|-|

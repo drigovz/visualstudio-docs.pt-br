@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661894"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298389"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
-  Os seguintes problemas ou alertas podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [Depurando soluções de fluxo de trabalho do SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Os seguintes problemas ou alertas podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [Depurando soluções de fluxo de trabalho do SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrições de token em Web Parts visuais em área restrita
  As Web Parts visuais em soluções de área restrita não podem processar tokens padrão, como $SPUrl, que o tempo de execução do SharePoint dá suporte. Como resultado, a URL não será resolvida e você não poderá visualizar o conteúdo em modo de exibição de Design no designer de Web Part Visual se fizer referência a ele diretamente em um elemento de script, como no exemplo a seguir:

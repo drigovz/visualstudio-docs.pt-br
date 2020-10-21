@@ -1,5 +1,6 @@
 ---
 title: Criar coluna de site, tipo de conteúdo e lista para SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce76c72bad138a5c6c40afe717aadafec02c677
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015275"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298371"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Walkthrough: criar uma coluna de site, um tipo de conteúdo e uma lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint (ou *campos*) personalizados, bem como um tipo de conteúdo que usa as colunas do site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.

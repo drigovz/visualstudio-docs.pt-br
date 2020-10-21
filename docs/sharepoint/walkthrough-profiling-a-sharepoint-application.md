@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017105"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298629"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Walkthrough: criar perfil de um aplicativo do SharePoint
   Este tutorial mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que degrada o desempenho do receptor de evento de recurso. O criador de perfil do Visual Studio permite que você localize e elimine a parte mais cara (com desempenho mais lento) do projeto, também conhecida como o *caminho quente*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017105"
 ## <a name="see-also"></a>Confira também
 - [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
 - [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-performance-profiling.md)
-- [Encontrar afunilamentos de aplicativos com o Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Encontrar afunilamentos de aplicativos com o Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

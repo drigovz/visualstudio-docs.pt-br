@@ -1,6 +1,7 @@
 ---
-title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
-ms.date: 03/20/2019
+title: Usar o MSBuild
+description: Conheça as várias partes de um arquivo de projeto do MSBuild, incluindo itens, metadados do item, propriedades, destinos e tarefas.
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134812"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298531"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 
@@ -29,6 +30,24 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
 - Usar itens de build.
 
 Você pode executar o MSBuild no Visual Studio ou na **janela de comando**. Nestas instruções passo a passo, você criará um arquivo de projeto do MSBuild usando o Visual Studio. Você editará o arquivo de projeto no Visual Studio e usará a **janela Comando** para compilar o projeto e examinar os resultados.
+
+## <a name="install-msbuild"></a>Instalar o MSBuild
+
+::: moniker range="vs-2017"
+
+Se você tiver o Visual Studio, então você já tem o MSBuild instalado. Para instalar o MSBuild 15 em um sistema que não tem o Visual Studio, vá para [downloads mais antigos do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/), expanda **Visual Studio 2017** e escolha o botão **baixar** . Se você tiver uma assinatura do Visual Studio, entre e encontre o link para baixar a versão mais recente das **ferramentas de Build para o Visual Studio 2017**. Se você não tiver uma assinatura do Visual Studio, ainda poderá instalar a versão mais recente das ferramentas de Build. Nesta página, use o seletor de versão para alternar para a versão 2019 da página e siga as instruções de instalação.
+::: moniker-end
+
+::: moniker range="vs-2019"
+Se você tiver o Visual Studio, então você já tem o MSBuild instalado. Com o Visual Studio 2019, ele é instalado na pasta de instalação do Visual Studio. Para uma instalação padrão típica no Windows 10, MSBuild.exe está na pasta de instalação do *MSBuild\Current\Bin*.
+
+Para instalar o MSBuild em um sistema que não tem o Visual Studio, vá para [downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) e role para baixo até **todos os downloads**e, em seguida, expanda **ferramentas para Visual Studio 2019**. Instale as **ferramentas de Build para o Visual Studio 2019**, que inclui o MSBuild, ou instale o [SDK do .NET Core](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+
+No instalador, verifique se as ferramentas do MSBuild para as cargas de trabalho que você usa estão selecionadas e escolha **instalar**.
+
+![Instalando o MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>Criar um projeto do MSBuild
 
@@ -100,7 +119,7 @@ O destino padrão não está definido no arquivo de projeto. Em vez disso, ele s
 
 Os arquivos importados são efetivamente inseridos no arquivo de projeto sempre que são referenciados.
 
-No projcts do estilo SDK, você não vê esse elemento de importação, pois o atributo SDK faz com que esse arquivo seja importado implicitamente.
+Em projetos em estilo SDK, você não vê esse elemento de importação, pois o atributo SDK faz com que esse arquivo seja importado implicitamente.
 
 O MSBuild controla os destinos de um build e garante que cada destino seja compilado não mais de uma vez.
 
@@ -193,7 +212,7 @@ Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio
 
  define a propriedade chamada TargetFrameworkVersion, dando a ela o valor de cadeia de caracteres "v 4.5".
 
- As propriedades de build podem ser redefinidas a qualquer momento. If
+ As propriedades de build podem ser redefinidas a qualquer momento. Se
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>

@@ -1,5 +1,6 @@
 ---
-title: 'Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer para o Visual Studio | Microsoft Docs'
+title: 'Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015701"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298028"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer para o Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer
+
   Este tutorial demonstra como importar um fluxo de trabalho reutilizável criado no SharePoint Designer 2010 para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto de fluxo de trabalho do SharePoint.
 
  Os fluxos de trabalho criados no SharePoint Designer, ou *fluxos de trabalho declarativos*, consistem em [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instruções em vez de código. O SharePoint Designer 2010 apresenta fluxos de trabalho *reutilizáveis*, que são fluxos de trabalho portáteis e declarativos que podem ser usados por listas diferentes em sites do SharePoint.

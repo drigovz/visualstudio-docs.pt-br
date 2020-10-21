@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039905"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298472"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usar dados de tempo de design com o Designer XAML no Visual Studio
 
@@ -138,7 +138,7 @@ O benefício aqui é que você pode associar seus controles a uma versão estát
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usar dados de tempo de design com tipos e propriedades personalizados
 
-Por padrão, esse recurso funciona apenas com controles de plataforma e propriedades. Nesta seção, abordaremos as etapas necessárias para permitir que você use seus próprios controles personalizados como controles de tempo de design. Há três requisitos para habilitar isso:
+Por padrão, esse recurso funciona apenas com controles de plataforma e propriedades. Nesta seção, abordaremos as etapas necessárias para permitir que você use seus próprios controles personalizados como controles de tempo de design, um novo recurso disponível para os clientes que usam o Visual Studio 2019 Preview versão [16,8](/visualstudio/releases/2019/preview-notes) ou posterior. Há três requisitos para habilitar isso:
 
 - Um namespace xmlns personalizado 
 
@@ -189,7 +189,7 @@ Se você tiver um problema que não esteja listado nesta seção, informe-nos us
 
 Tente fechar e reabrir o arquivo XAML e limpar e recompilar seu projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Dados de tempo de design com o webviewer Xamarin. Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML em aplicativos WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

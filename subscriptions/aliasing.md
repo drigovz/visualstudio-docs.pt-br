@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006209"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298179"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Entrar em assinaturas do Visual Studio pode falhar ao usar aliases
 Dependendo do tipo de conta usado para entrar, as assinaturas disponíveis podem não ser exibidas corretamente ao entrar no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Uma possível causa é o uso de "alias" ou "nomes amigáveis" em vez da identidade à qual a assinatura foi atribuída. Isso é chamado de "alias".
@@ -33,10 +33,10 @@ Uma incompatibilidade de UPN pode ser encontrada quando uma empresa tem uma Acti
 
 1. Entre https://my.visualstudio.com/subscriptions usando o endereço de entrada mencionado em seu email de atribuição de assinatura.
 
-2. Verifique se o endereço de email de entrada listado no canto superior direito da página corresponde ao endereço usado para entrar.  Se não tiver, seu UPN não corresponde e você não poderá exibir sua assinatura. 
+2. Clique em seu nome no canto superior direito da página.  Isso abrirá seu perfil.  Verifique se o endereço de email de entrada listado em seu perfil corresponde ao endereço usado para entrar.  Se não tiver, seu UPN não corresponde e você não poderá exibir sua assinatura. 
 
 > [!div class="mx-imgBorder"]
-> ![Endereço de email de entrada](_img//aliasing/sign-in-email.png "Verifique se o endereço de email exibido na parte superior direita corresponde ao que você usa para entrar.")
+> ![Endereço de email de entrada](_img//aliasing/sign-in-email.png "Verifique se o endereço de email exibido no seu perfil corresponde ao que você usa para entrar.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Como corrigir uma incompatibilidade de UPN
 

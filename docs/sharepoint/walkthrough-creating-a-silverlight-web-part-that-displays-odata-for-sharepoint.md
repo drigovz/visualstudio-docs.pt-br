@@ -1,5 +1,6 @@
 ---
 title: Criar Web Part do Silverlight exibindo OData para SharePoint
+titleSuffix: ''
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017166"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298498"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Walkthrough: criar uma Web Part do Silverlight que exibe o OData para SharePoint
   O SharePoint 2010 expõe seus dados de lista por meio do OData. No SharePoint, o serviço OData é implementado pelo serviço RESTful ListData. svc. Este tutorial mostra como criar uma Web Part do SharePoint que hospeda um aplicativo do Silverlight. O aplicativo do Silverlight exibe informações da lista de anúncios do SharePoint usando ListData. svc. Para obter mais informações, consulte [interface REST do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [protocolo Open Data](https://www.odata.org/).
@@ -68,7 +69,7 @@ ms.locfileid: "86017166"
 
 #### <a name="to-customize-the-silverlight-application"></a>Para personalizar o aplicativo do Silverlight
 
-1. Adicione uma referência de assembly a System. Windows. Data no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Adicione uma referência de assembly a System. Windows. Data no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](/previous-versions/wkze6zky(v=vs.140)).
 
 2. Em **Gerenciador de soluções**, abra o menu de atalho para **referências**e, em seguida, escolha **Adicionar referência de serviço**.
 

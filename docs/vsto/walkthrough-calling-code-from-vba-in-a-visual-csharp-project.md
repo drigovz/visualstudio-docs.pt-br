@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838459"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297931"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Walkthrough: chamar código do VBA em um projeto do Visual C#
   Este tutorial demonstra como chamar um método em uma personalização em nível de documento para Microsoft Office o Excel do código Visual Basic for Applications (VBA) na pasta de trabalho. O procedimento envolve três etapas básicas: adicionar um método à `Sheet1` classe de item de host, expor o método ao código VBA na pasta de trabalho e, em seguida, chamar o método do código VBA na pasta de trabalho.
@@ -66,7 +66,7 @@ ms.locfileid: "90838459"
 
 1. Inicie o Excel.
 
-2. Salve o documento ativo como uma **pasta de trabalho habilitada para macro do Excel ( \* . xlsm)** com o nome **WorkbookWithVBA**. Salve-o em um local conveniente, como o desktop.
+2. Salve o documento ativo como uma **pasta de trabalho do Excel Macro-Enabled ( \* . xlsm)** com o nome **WorkbookWithVBA**. Salve-o em um local conveniente, como o desktop.
 
 3. Na faixa de faixas, clique na guia **desenvolvedor** .
 
@@ -161,7 +161,7 @@ ms.locfileid: "90838459"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Adicione o método a seguir à classe `Sheet1`. Esse método substitui o <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> método para retornar a instância atual da `Sheet1` classe.
+3. Adicione o método a seguir à classe `Sheet1`. Esse método substitui o <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> método para retornar a instância atual da `Sheet1` classe.
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 

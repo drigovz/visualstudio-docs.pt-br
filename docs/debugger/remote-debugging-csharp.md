@@ -24,7 +24,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311047"
+ms.locfileid: "92298716"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto em C# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que foi implantado em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, execute o aplicativo.

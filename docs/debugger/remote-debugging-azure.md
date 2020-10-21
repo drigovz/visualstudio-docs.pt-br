@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536780"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298742"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de depuração remota no IIS no Azure no Visual Studio
 
@@ -96,7 +96,7 @@ No Visual Studio, você pode publicar e depurar rapidamente seu aplicativo para 
 
     O ponto de interrupção deve ser atingido no Visual Studio.
 
-    Pronto! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
+    É isso! O restante das etapas neste tópico se aplica à depuração remota em uma VM do Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core de depuração remota em uma VM do Azure
 
@@ -255,7 +255,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 6. Digite a primeira letra do nome do processo para localizar rapidamente seu aplicativo.
 
-    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) no IIS, selecione o processo de **w3wp.exe** correto. A partir do .NET Core 3, esse é o padrão.
+    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) no IIS, selecione o processo de **w3wp.exe** correto. A partir do .NET Core 3, esse é o padrão.
 
     * Caso contrário, selecione o processo de **dotnet.exe** . (Esse é o modelo de hospedagem fora do processo.)
 

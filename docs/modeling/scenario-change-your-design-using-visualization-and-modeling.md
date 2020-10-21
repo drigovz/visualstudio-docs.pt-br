@@ -1,5 +1,6 @@
 ---
-title: 'Cenário: alterar o design usando visualização e modelagem'
+title: Alterar o design usando visualização e modelagem
+description: Visão geral das ferramentas de visualização e modelagem no Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238888"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298596"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -81,7 +83,7 @@ A tabela a seguir descreve as funções que essas ferramentas podem reproduzir d
 
 |Ferramenta/função|Modelagem de requisitos de usuário|Modelagem de processos de negócios|Arquitetura do sistema & design|Visualização de código & exploração|Verificação|
 |------|-|-|-|-|-|
-|Diagrama de DSL (linguagem específica do domínio)|Sim|Sim|Sim|||
+|Diagrama de idioma de Domain-Specific (DSL)|Sim|Sim|Sim|||
 |Diagrama de dependência, validação de camada|||Sim|Sim|Sim|
 |Mapa de códigos|||Sim|Sim|Sim|
 |Designer de Classe (baseado em código)||||Sim||
@@ -214,9 +216,9 @@ Os diagramas de modelagem do Visual Studio são integrados com Team Foundation S
 
 Consulte:
 
-- [Sobre as ferramentas Agile e o gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Sobre as ferramentas Agile e o gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [Gráficos, painéis e widgets (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [Gráficos, painéis e widgets (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Criar sua lista de pendências e tarefas usando o Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Para garantir que o código esteja de acordo com o design, as equipes configuram
 
 Consulte:
 
-- [Testando o aplicativo](/azure/devops/test/overview?view=vsts)
+- [Testando o aplicativo](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
 
-- [Usar controle de versão](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Usar controle de versão](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Atualizar o sistema usando a visualização e a modelagem
 
@@ -484,5 +486,5 @@ Os diagramas de dependência ajudam você a:
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
-- [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usar modelos no desenvolvimento ágil](/previous-versions/ff398061(v=vs.140))
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)

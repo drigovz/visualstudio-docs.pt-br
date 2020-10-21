@@ -1,5 +1,6 @@
 ---
 title: Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57918e8a51a3948a2c69eb0c8ab5438b147e44f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543462"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298434"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como exportar uma faixa de faixas do designer de faixa de das faixas para XML da faixa de modo
   O item **da faixa de tipos (Visual Designer)** não dá suporte a todos os tipos possíveis de personalização da faixa de medida. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa do designer para o XML da faixa e editar o XML diretamente.
@@ -66,7 +67,7 @@ ms.locfileid: "85543462"
 
 ## <a name="see-also"></a>Confira também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Walkthrough: criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

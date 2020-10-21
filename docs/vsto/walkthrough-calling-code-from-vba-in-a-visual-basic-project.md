@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: chamar o código do VBA em um projeto Visual Basic'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838692"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298269"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Walkthrough: chamar o código do VBA em um projeto Visual Basic
   Este tutorial demonstra como chamar um método em uma personalização em nível de documento para Microsoft Office o Word do código Visual Basic for Applications (VBA) no documento. O procedimento envolve três etapas básicas: adicionar um método à `ThisDocument` classe de item de host, expor o método ao código VBA e, em seguida, chamar o método do código VBA no documento.

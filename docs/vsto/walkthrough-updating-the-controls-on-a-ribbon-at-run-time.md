@@ -1,5 +1,6 @@
 ---
 title: 'Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255344"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298060"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Walkthrough: atualizar os controles em uma faixa de faixas em tempo de execução
 
@@ -175,7 +176,7 @@ Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
 
 2. Na caixa de diálogo **Adicionar referência** , clique na guia **.net** , selecione o assembly **System. Data. Linq** e clique em **OK**.
 
-    Esse assembly contém classes para usar consultas integradas à linguagem (LINQ). Você usará o LINQ para popular os controles no grupo personalizado com os dados do Northwind.
+    Esse assembly contém classes para usar consultas de Language-Integrated (LINQ). Você usará o LINQ para popular os controles no grupo personalizado com os dados do Northwind.
 
 3. Em **Gerenciador de soluções**, clique em **CustomerRibbon.cs** ou **CustomerRibbon. vb** para selecioná-lo.
 
@@ -301,7 +302,7 @@ Você pode aprender mais sobre como personalizar a interface do usuário do Offi
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [LINQ (Consulta Integrada à Linguagem)](/dotnet/csharp/linq/index)
 - [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)
 - [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)

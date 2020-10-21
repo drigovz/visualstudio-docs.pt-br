@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a631e8d8cffe6bfde925dfbae4a7350e6a0ef95a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986037"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "92298614"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança aos documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que os projetos de nível de aplicativo: assinando os manifestos com um certificado ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizado em um diretório designado como um local confiável.
@@ -41,7 +41,7 @@ ms.locfileid: "72986037"
 
 - Embora o documento em si seja confiável usando os locais confiáveis, permissões adicionais são necessárias para confiar na personalização. Você pode conceder confiança total à personalização usando assinar os manifestos com um certificado, clicando no prompt de confiança ou instalando a solução do Office no diretório *arquivos de programas* .
 
-- Você pode armazenar o documento ou a pasta de trabalho de uma solução em nível de documento no mesmo diretório que o assembly ou em um diretório diferente. Por exemplo, o documento pode estar localizado em um servidor do SharePoint e o assembly pode estar localizado em um compartilhamento de arquivos de rede. Para obter mais informações, consulte [como publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Você pode armazenar o documento ou a pasta de trabalho de uma solução em nível de documento no mesmo diretório que o assembly ou em um diretório diferente. Por exemplo, o documento pode estar localizado em um servidor do SharePoint e o assembly pode estar localizado em um compartilhamento de arquivos de rede. Para obter mais informações, consulte [como publicar uma solução do Office em nível de documento em um servidor do SharePoint usando o ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
 ## <a name="see-also"></a>Confira também
 - [Conceder confiança às soluções do Office](../vsto/granting-trust-to-office-solutions.md)

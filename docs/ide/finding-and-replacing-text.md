@@ -1,5 +1,6 @@
 ---
 title: Localizar e substituir texto, e seleção de vários cursores
+description: Saiba como usar o recurso Localizar e substituir no editor de código do Visual Studio.
 ms.date: 08/14/2018
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590339"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298560"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
@@ -130,7 +131,7 @@ Use as seguintes teclas e ações para os comportamentos da seleção de vários
 
 Alguns dos comandos também estão disponíveis no menu **Editar**, em **Vários Cursores**:
 
-![Submenu Vários Cursores no Visual Studio](media/edit-menu-multiple-carets.png)
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Captura de tela do menu suspenso de múltiplos Cursors no Visual Studio":::
 
 ## <a name="see-also"></a>Confira também
 

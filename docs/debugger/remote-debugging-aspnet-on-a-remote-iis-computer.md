@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173858"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298766"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core de depuração remota em um computador IIS remoto no Visual Studio
 
@@ -53,7 +53,7 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Criar o aplicativo ASP.NET Core no computador do Visual Studio
 
-1. Crie um novo Aplicativo Web ASP.NET Core. 
+1. Crie um novo Aplicativo Web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
     No Visual Studio 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **ASP.net**, escolha **modelos**e, em seguida, escolha **criar novo ASP.NET Core aplicativo Web**. Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp**e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
@@ -209,7 +209,7 @@ Para obter informações sobre como executar o depurador remoto como um serviço
 
 6. Digite a primeira letra do nome do processo para localizar rapidamente seu aplicativo.
 
-    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) no IIS, selecione o processo de **w3wp.exe** correto. A partir do .NET Core 3, esse é o padrão.
+    * Se você estiver usando o [modelo de hospedagem em processo](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) no IIS, selecione o processo de **w3wp.exe** correto. A partir do .NET Core 3, esse é o padrão.
 
     * Caso contrário, selecione o processo de **dotnet.exe** . (Esse é o modelo de hospedagem fora do processo.)
 

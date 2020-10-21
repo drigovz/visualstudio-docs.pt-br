@@ -1,5 +1,6 @@
 ---
-title: Atualizar personalizações da faixa de das de projetos do Office migradas para o .NET Framework 4, 4,5
+title: Atualizar personalizações da faixa de Ribbon migradas para o .NET Framework 4,5
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8024d6fba419dfe437ca8492010c7e4786861862
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254359"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298608"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualize as personalizações da faixa de na de projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5
+# <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>Atualizar personalizações da faixa de Ribbon migradas para o .NET Framework 4,5
+
   Se o seu projeto contiver uma personalização da faixa de opções que foi criada usando o item de projeto **da faixa de opções (Visual Designer)** , você deverá fazer as seguintes alterações no código do projeto se a estrutura de destino for alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
 - Modifique o código da faixa de Ribbon gerado.
@@ -148,7 +150,7 @@ ms.locfileid: "71254359"
 
  A tabela a seguir lista os eventos da faixa de opções e os delegados associados a eles em projetos direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
-|Evento|Delegar para usar no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
+|evento|Delegar para usar no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> evento em uma classe de faixa de Ribbon gerada|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
@@ -185,4 +187,4 @@ this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 
 ## <a name="see-also"></a>Confira também
 - [Migrar soluções do Office para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
-- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Designer da faixa de opções](../vsto/ribbon-designer.md)
