@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
 ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005892"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
@@ -113,7 +113,7 @@ R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durant
 > - Se optar por fechar sua conta Microsoft ou o Azure AD, seus dados pessoais serão tornados anônimos imediatamente.
 > - Não removeremos completamente todos os seus dados pessoais se você tiver assinaturas ativas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

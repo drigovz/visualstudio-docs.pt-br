@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "89561332"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Informações de log para a janela de saída usando tracepoints no Visual Studio
@@ -135,7 +135,7 @@ A maneira como as expressões são avaliadas na caixa de mensagem de **ação** 
 
 Se você estiver tentando depurar um aplicativo ao vivo e procurando um recurso semelhante, confira nosso recurso logpoint na Depurador de Instantâneos. O depurador de instantâneo é uma ferramenta usada para investigar problemas em aplicativos de produção. O Logpoints também permite que você envie mensagens para o Janela de Saída sem precisar modificar o código-fonte e não afete o aplicativo em execução. Para obter mais informações, consulte [Depurar aplicativo dinâmico do Azure](../debugger/debug-live-azure-applications.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Escreva um código C# melhor usando o Visual Studio](../debugger/write-better-code-with-visual-studio.md)

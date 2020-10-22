@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem localizar assinantes individuais ou grupos no portal de administração.
 ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022224"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Pesquisar e filtrar assinantes em assinaturas do Visual Studio
@@ -37,7 +37,7 @@ O Portal de Administração de Assinaturas do Visual Studio permite encontrar um
    > ![Limpar o filtro da lista de assinantes](_img/search-filter/clear-filter.png "Clique em Limpar filtro para remover o filtro e retomar a exibição de todas as suas assinaturas atribuídas.")
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
