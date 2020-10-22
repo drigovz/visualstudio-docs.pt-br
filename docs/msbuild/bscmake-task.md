@@ -1,5 +1,7 @@
 ---
 title: Tarefa BscMake | Microsoft Docs
+description: Saiba mais sobre o BscMake, que encapsula a ferramenta do utilitário de manutenção de informações do Microsoft Browse bscmake.exe. O IDE do Visual Studio não usa mais BscMake.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668d42cdb0bc5cfb8dd344aab51ad0c66a838cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7618d7e4e16de151c296d66a0c5798475f7ca43
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634507"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353272"
 ---
 # <a name="bscmake-task"></a>Tarefa BscMake
 
@@ -47,6 +49,6 @@ ms.locfileid: "77634507"
 |**SuppressStartupBanner**|Parâmetro **booliano** opcional.<br /><br /> Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.<br /><br /> Para obter mais informações, confira a opção **/NOLOGO** em [Opções do BSCMAKE](/cpp/build/reference/bscmake-options).|
 |**TrackerLogDirectory**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o diretório do log de rastreamento.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

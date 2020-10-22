@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006222"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353259"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partner.microsoft.com/cloud-solution-provider) podem comprar assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional para seus clientes.
@@ -47,7 +47,7 @@ Qualquer pessoa que tenha [acesso de proprietário ou colaborador](https://na01.
 >[!NOTE]
 > Você precisará seguir estas etapas sempre que comprar assinaturas do Visual Studio como CSP. Ainda não existe uma API para automatizar a compra.
 
-Depois de confirmar a compra, escolha **Gerenciar** para atribuir assinaturas aos usuários finais do cliente.  Você também pode acessar o portal de administração de assinatura do Partner Center escolhendo **Gerenciamento de serviço**.  A partir daí, veja as etapas ou o vídeo abaixo.
+Depois de confirmar a compra, escolha **Gerenciar** para atribuir assinaturas aos usuários finais do cliente.  Você também pode acessar o portal de administração da assinatura no Partner Center escolhendo **Gerenciamento de serviços**.  A partir daí, veja as etapas ou o vídeo abaixo.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Como gerenciar assinaturas de nuvem do Visual Studio para o cliente
 
@@ -69,7 +69,7 @@ Para exibir os preços do Visual Studio para parceiros CSP, faça logon no [Part
 
 Aqui está a maneira de interpretar os dados dessa planilha:
 
-| Categoria de medidor    |   Name                 |  Unidades                                |           O que é isso                          |
+| Categoria de medidor    |   Nome                 |  Unidades                                |           O que é isso                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Subscription                         | Assinatura mensal do Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Subscription                         | Assinatura mensal do Visual Studio Professional |
@@ -106,7 +106,7 @@ R: Não, os preços para assinaturas do Visual Studio são fixos. O mesmo preço
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: Há opções de preços de Desenvolvimento/Teste do Azure para os CSPs?
  R: Não no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

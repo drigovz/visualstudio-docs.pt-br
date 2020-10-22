@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/28/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 41d85c939c05a9d29c80c15d1702258ff5b7d5e5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91003840"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353090"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -22,23 +22,23 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 
 2. Localize o bloco do Azure na seção ferramentas na página benefícios e selecione **Ativar** link na parte inferior do bloco benefício.
    > [!div class="mx-imgBorder"]
-   > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png)
+   > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png "Clique no botão ' Ativar ' no bloco do Azure para começar.")
 
 3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e, em seguida, selecionar **Avançar**.
    > [!div class="mx-imgBorder"]
-   > ![Inscrição do Azure](_img/vs-azure/vs-azure-about-you.png)
+   > ![Inscrição do Azure](_img/vs-azure/vs-azure-about-you.png "Adicione suas informações de contato pessoal à sua assinatura do Azure.")
 
 4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e selecione **verificar código**.   
    > [!div class="mx-imgBorder"]
-   > ![Preparação do Azure](_img/vs-azure/vs-azure-identity.png)
+   > ![Preparação do Azure](_img/vs-azure/vs-azure-identity.png "Solicite um código de verificação e, em seguida, insira-o para continuar.")
 
 5. Para a etapa final, marque a caixa de seleção para aceitar os termos e, em seguida, selecione **inscrever-se**.  Isso é tudo!
    > [!div class="mx-imgBorder"]
-   > ![Preparação do Azure](_img/vs-azure/vs-azure-agreement.png)
+   > ![Inscrever-se no Azure](_img/vs-azure/vs-azure-agreement.png "Clique no botão "inscrever-se" para concluir a criação de sua assinatura do Azure.")
 
 0. O Centro de Início Rápido do Painel do Azure será carregado.  
    > [!div class="mx-imgBorder"]
-   > ![Painel do Azure](_img/vs-azure/vs-azure-quick-start.png) 
+   > ![Painel do Azure](_img/vs-azure/vs-azure-quick-start.png "Depois que sua assinatura do Azure for criada, você será redirecionado para a portal do Azure.") 
 
 0. Marque a [portal do Azure](https://portal.azure.com) para facilitar o acesso no futuro.
 
@@ -116,7 +116,7 @@ R: a propriedade intelectual produzida por um funcionário criado nos recursos f
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

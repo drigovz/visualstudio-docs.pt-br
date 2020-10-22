@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005944"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353363"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o realce de conversão, os assinantes do Visual Studio podem examinar rapidamente o código-fonte do aplicativo para identificar a preparação da nuvem de seus aplicativos para migração para o Azure e monitorar o progresso de seus aplicativo durante e após uma migração.
@@ -26,14 +26,14 @@ Os desenvolvedores precisam de insights críticos sobre seu software ao migrar p
 2. Localize o bloco do benefício CAST Highlight na categoria "Ferramentas" e clique em **Obter código**.
 
    > [!div class="mx-imgBorder"]
-   > ![Bloco do benefício CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Bloco do benefício CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Clique em ' obter código ' no bloco de benefício de realce de conversão para começar.")
 
 0. Você verá uma mensagem informando que seu código foi recuperado com êxito.  Clique em **Ativar**. (Se não optar por ativar agora, você poderá sempre voltar para o bloco do CAST Highlight no portal de assinatura.  O link "Obter código" será alterado para "Ativar", e clicar nele retomará o processo de ativação.)
 
 0. Você será redirecionado para a página do CAST Highlight, na qual poderá explorar os recursos de sua assinatura.  Quando você estiver pronto para criar sua conta, bastará fornecer suas informações de contato no formulário da Web e clicar em **Enviar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Página de aterrissagem do CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Página de aterrissagem do CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Forneça suas informações pessoais para ativar sua assinatura do CAST.")
 
    > [!NOTE]
    > As ativações do benefício do CAST Highlight são limitadas a dez por organização.  Se as dez ativações da sua organização já tiverem sido consumidas, não será possível ativar o benefício do CAST Highlight e você receberá um email com informações adicionais.
@@ -101,7 +101,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

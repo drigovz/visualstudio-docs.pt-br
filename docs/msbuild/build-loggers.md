@@ -1,5 +1,7 @@
 ---
 title: Agentes de Build | Microsoft Docs
+description: Use os agentes de log do MSBuild para gerenciar e personalizar a saída de sua compilação e exibir mensagens, erros ou avisos em resposta a eventos de compilação específicos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634520"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353194"
 ---
 # <a name="build-loggers"></a>Agentes de build
 
@@ -64,7 +66,7 @@ A linha de comando a seguir compila o projeto com o mesmo agente, mas com um ní
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
 ### <a name="description"></a>Descrição
 
@@ -74,7 +76,7 @@ O exemplo a seguir contém o código completo do agente.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
 ### <a name="description"></a>Descrição
 
@@ -84,7 +86,7 @@ O exemplo a seguir mostra como implementar um agente que grava o log de um arqui
 
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

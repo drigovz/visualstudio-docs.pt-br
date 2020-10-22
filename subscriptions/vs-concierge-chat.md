@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006313"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353376"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Atendimento via Chat em assinaturas do Visual Studio
 O serviço de Atendimento via Chat fornece assistência para a localização de informações sobre produtos e documentação técnica, bem como ajuda para usar os benefícios de assinatura do Visual Studio.
@@ -25,7 +25,7 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 
 2. Localize o bloco Chat de Atendimento na seção Suporte da página de benefícios e clique em **Iniciar chat agora**.
     > [!div class="mx-imgBorder"]
-    > ![Bloco de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Bloco de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Clique em ' bater papo agora ' para iniciar uma nova sessão de bate-papo.")
 
 3. Clique em **Continuar**.
 
@@ -33,7 +33,7 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 
 5. Quando um agente estiver disponível, o chat será iniciado.
     > [!div class="mx-imgBorder"]
-    > ![Sessão de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Sessão de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-session.png "A janela sessão de chat será exibida quando um agente ingressar na sessão.")
 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
@@ -61,7 +61,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

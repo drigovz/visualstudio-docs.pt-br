@@ -1,5 +1,7 @@
 ---
 title: Tarefa AssignCulture | Microsoft Docs
+description: Use a tarefa MSBuild AssignCulture para produzir um item que tenha um metadados denominado Culture que contenha o identificador de cultura correspondente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9f7bb47efefa3f7a1d4cf52cbfa5891602956f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634559"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353337"
 ---
 # <a name="assignculture-task"></a>Tarefa AssignCulture
 
@@ -81,7 +83,7 @@ A tabela a seguir descreve o valor dos itens de saída após a execução da tar
 |`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* (sem metadados adicionais)|
 |`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Cultura="fr")<br /><br /> *MyResource2.XX.resx* (sem metadados adicionais)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

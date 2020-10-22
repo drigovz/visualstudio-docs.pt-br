@@ -1,5 +1,7 @@
 ---
 title: Compilando vários projetos paralelamente com o MSBuild | Microsoft Docs
+description: Saiba mais sobre as configurações do MSBuild que você pode usar para criar vários projetos mais rapidamente, executando-os em paralelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634494"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353233"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Criar vários projetos em paralelo com o MSBuild
 
@@ -72,7 +74,7 @@ Veja a seguir um exemplo, retirado de *microsoft.common.targets*, sobre como def
 </MSBuild>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Usar vários processadores para criar projetos](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Escrever agentes com reconhecimento de multiprocessador](../msbuild/writing-multi-processor-aware-loggers.md)

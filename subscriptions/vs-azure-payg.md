@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 04/15/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
-ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005067"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353170"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Assinaturas pagas conforme o uso do Azure DevTest
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.
@@ -20,7 +20,7 @@ Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso
 ## <a name="set-up-a-subscription"></a>Configurar uma assinatura
 1. Para usar o benefício de assinatura pago conforme o uso do Azure, entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no link **Ativar** na parte inferior do bloco de benefícios.
    > [!div class="mx-imgBorder"]
-   > ![Bloco PAYG do Azure](_img/vs-azure-payg/vs-azure-payg-tile.png)
+   > ![Bloco PAYG do Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Clique em ' Ativar ' no bloco de assinatura pago conforme o uso do DevTest para começar.")
 
 2. Se você já tiver ativado uma conta do Azure como parte dos benefícios da sua assinatura (por exemplo, se tiver uma assinatura corporativa e ativado $150 seu crédito individual do Azure DevTest mensal), pule para a etapa 5.
 
@@ -44,7 +44,7 @@ R: para fazer alterações em qualquer uma das suas assinaturas do Azure:
 3. Você verá uma lista das suas assinaturas na caixa **Minhas assinaturas**. Clique na assinatura desejada.
 4. Agora você terá opções para gerenciar ou cancelar a assinatura, renomeá-la, alterar o diretório ou transferir a propriedade de cobrança.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
