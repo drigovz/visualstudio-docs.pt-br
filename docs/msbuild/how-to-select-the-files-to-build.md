@@ -1,5 +1,7 @@
 ---
 title: Como selecionar os arquivos para compilar | Microsoft Docs
+description: Saiba como selecionar os arquivos a serem compilados no arquivo de projeto do MSBuild, listando cada arquivo separadamente ou usando curingas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633805"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436198"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
 
@@ -105,7 +107,7 @@ Em um arquivo de projeto, você pode usar a notação @() em tarefas para especi
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
 O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de entrada separadamente.
 
@@ -140,7 +142,7 @@ O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de 
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
 O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs*.
 

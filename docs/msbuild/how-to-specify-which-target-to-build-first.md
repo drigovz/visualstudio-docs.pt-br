@@ -1,5 +1,7 @@
 ---
 title: Como especificar o destino a ser compilado primeiro | Microsoft Docs
+description: Saiba mais sobre como especificar destinos iniciais ou destinos padrão para compilar primeiro em arquivos de projeto do MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ce8f17e70344445f95e8b4742838e40a92fe88
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072522"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436184"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Como especificar o destino a ser compilado primeiro
 

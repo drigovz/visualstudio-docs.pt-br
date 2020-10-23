@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem excluir atribuições de assinatura no portal de administração de assinaturas do Visual Studio
-ms.openlocfilehash: 0ce0235d75946f46d39c78084121ce295067d74e
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e1c5395bc2cd2002d8eed62d69697ec61d9c0829
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022250"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436930"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Excluir atribuições em assinaturas do Visual Studio
 Quando um assinante não precisar mais de uma assinatura do Visual Studio, por exemplo, ao deixar a empresa, ao concluir um projeto ou ao mudar para um novo cargo de trabalho, será possível remover essa assinatura e atribuí-la a outra pessoa. Observe que quando você reatribui uma assinatura, nem todos os benefícios do Assinante serão redefinidos.  O novo usuário poderá solicitar todas as chaves não solicitadas e exibir as chaves anteriormente solicitadas, mas os limites de solicitação **não** serão redefinidos.  Para organizações que têm contratos EA (Contrato Enterprise), todos os benefícios que já tiverem sido usados pelo usuário original, como treinamentos do Pluralsight, serão redefinidos. 
@@ -29,7 +29,9 @@ Assista a este vídeo ou Continue lendo para saber como excluir atribuições.
    > ![Excluir assinantes](_img/delete-license/delete-subscribers.png "Escolha os usuários que você deseja excluir e clique em excluir. Você pode usar as teclas CTRL e Shift para selecionar vários assinantes.")
 
    > [!NOTE]
-   > A exclusão em massa usando um modelo não está disponível. Para organizações que gerenciam atribuições de assinatura por meio de Azure Active Directory grupos de segurança, consulte [nosso artigo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para obter mais informações sobre como as exclusões acontecem.  
+   > A exclusão em massa usando um modelo não está disponível. 
+   >
+   > Se você adicionou atribuições de assinatura por meio de Azure Active Directory grupos de segurança, pode levar até 24 horas para que a exclusão seja atualizada no portal de administração.  Consulte [nosso artigo](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) para obter mais informações sobre como usar grupos de Azure Active Directory para gerenciar assinaturas. 
 
 ## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)

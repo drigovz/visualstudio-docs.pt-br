@@ -1,5 +1,6 @@
 ---
 title: Referenciar o nome ou o local do arquivo de projeto
+description: Saiba como usar propriedades reservadas do MSBuild para referenciar o nome ou o local do arquivo de projeto sem precisar criar suas próprias propriedades.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036451"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436346"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como referenciar o nome ou o local do arquivo de projeto
 
@@ -49,7 +50,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
 > [!NOTE]
 > As propriedades reservadas não podem ser redefinidas no arquivo de projeto.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
  O arquivo de projeto de exemplo a seguir faz referência ao nome de projeto como uma propriedade reservada para especificar o nome para a saída.
 
@@ -78,7 +79,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
  O arquivo de projeto de exemplo a seguir usa a propriedade reservada `MSBuildProjectDirectory` para criar o caminho completo para um arquivo no local do arquivo de projeto.
 

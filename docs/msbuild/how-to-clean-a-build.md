@@ -1,5 +1,7 @@
 ---
 title: Como limpar um build | Microsoft Docs
+description: Saiba como usar o MSBuild para limpar uma compilação, excluir todos os arquivos intermediários e de saída e deixar apenas os arquivos de projeto e de componente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 989bcd560c2c5cd9a7d8c571208bfab84adbd493
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633909"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436723"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
 

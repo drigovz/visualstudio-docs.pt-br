@@ -1,5 +1,6 @@
 ---
 title: Compilar os mesmos arquivos de origem com opções diferentes
+description: Saiba como criar diferentes configurações de compilação do MSBuild para criar os mesmos arquivos de origem com opções diferentes.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037589"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436919"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Como criar os mesmos arquivos de origem com opções diferentes
 
@@ -88,7 +89,7 @@ Quando o arquivo de projeto é escrito para aceitar várias configurações, voc
 
   É possível alterar esse comportamento usando o atributo `TreatAsLocalProperty` em uma marca de projeto. Para nomes de propriedades listados com esse atributo, o valor da propriedade especificado na linha de comando não tem precedência sobre o valor no arquivo de projeto. Veja um exemplo mais adiante neste tópico.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
 O exemplo de código seguinte, o projeto "Hello World", contém dois novos grupos de propriedade que podem ser usados para criar um build de Depuração e um build de Versão.
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
 O exemplo a seguir mostra como usar o atributo `TreatAsLocalProperty`. A propriedade `Color` tem um valor de `Blue` no arquivo de projeto e `Green` na linha de comando. Com `TreatAsLocalProperty="Color"` na marca de projeto, a propriedade de linha de comando (`Green`) não substitui a propriedade definida no arquivo de projeto (`Blue`).
 

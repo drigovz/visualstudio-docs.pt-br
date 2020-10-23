@@ -1,5 +1,7 @@
 ---
 title: Tarefa GetReferenceAssemblyPaths | Microsoft Docs
+description: Use a tarefa MSBuild GetReferenceAssemblyPaths para retornar os caminhos do assembly de referência das várias estruturas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8bbe9366e9b4b2c795b21ba46bd8320599c9e572
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633974"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436792"
 ---
 # <a name="getreferenceassemblypaths-task"></a>Tarefa GetReferenceAssemblyPaths
 

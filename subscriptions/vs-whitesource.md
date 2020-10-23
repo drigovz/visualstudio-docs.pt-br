@@ -1,18 +1,18 @@
 ---
-title: Benefício WhiteSource Bolt | Microsoft Docs
+title: Rolo de branco nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Saiba como ativar a assinatura do WhiteSource Bolt incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005695"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435995"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt em assinaturas do Visual Studio
 
@@ -24,11 +24,11 @@ Encontre e corrija vulnerabilidades de software livre e gere relatórios de lice
 
 2. Localize o bloco WhiteSource Bolt na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.
    > [!div class="mx-imgBorder"]
-   > ![Bloco do benefício WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![Bloco do benefício WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Clique em ' obter código ' no bloco de parafuso do Whiteer para começar.")
 
 3. Você receberá uma notificação exibindo o código de ativação.  **Copie o código para a área de transferência** e, em seguida, clique em **Ativar**.
    > [!div class="mx-imgBorder"]
-   > ![Código do benefício WhiteSource](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![Código do benefício WhiteSource](_img/vs-whitesource/vs-whitesource-code.png "Copie o código para a área de transferência e clique em ' Ativar '.")
 
 4. Na página **Ativar sua conta**, clique no link **instalar** na etapa 1.
 5. Clique em **Obter gratuitamente** no Visual Studio Marketplace.

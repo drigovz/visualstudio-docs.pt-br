@@ -1,5 +1,7 @@
 ---
 title: Como compilar um projeto que tem recursos | Microsoft Docs
+description: Saiba mais sobre como criar um projeto com recursos e como compilar recursos usando o MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633948"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436685"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Como criar um projeto que tem recursos
 
@@ -38,7 +40,7 @@ A biblioteca de tarefas comuns que é fornecida com o MSBuild inclui uma `Genera
 
 4. Use o item criado do elemento `Output` como uma entrada em outra tarefa.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
 O exemplo de código a seguir mostra como o elemento `Output` especifica que o atributo `OutputResources` da tarefa `GenerateResource` conterá os arquivos de recurso compilados *alpha.resources* e *beta.resources* e que esses dois arquivos serão colocados na lista de itens `Resources`. Ao identificar os arquivos *. Resources* como uma coleção de itens de mesmo nome, você pode usá-los facilmente como entradas para outra tarefa, como a tarefa [CSC](../msbuild/csc-task.md) .
 
@@ -55,7 +57,7 @@ Essa tarefa é equivalente a usar o comutador **/compile** para [Resgen.exe](/do
 </GenerateResource>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
 O exemplo de projeto a seguir contém duas tarefas: a tarefa `GenerateResource` para compilar recursos e a tarefa `Csc` para compilar os arquivos de código-fonte e os arquivos de recurso compilados. Os arquivos de recurso compilados pela tarefa `GenerateResource` são armazenados no item `Resources` e passados para a tarefa `Csc`.
 

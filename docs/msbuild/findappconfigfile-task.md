@@ -1,5 +1,7 @@
 ---
 title: Tarefa FindAppConfigFile | Microsoft Docs
+description: Saiba como usar a tarefa MSBuild FindAppConfigFile para localizar o arquivo de app.config, se houver, nas listas fornecidas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c54f3c222588cd13711c832d12f7598f0cc5e223
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d186a72bcc7af18671c279ff392de066b6fd9fee
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634169"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435684"
 ---
 # <a name="findappconfigfile-task"></a>Tarefa FindAppConfigFile
 
-Localiza o arquivo *app.config*, caso haja algum, nas listas fornecidas.
+Localiza o arquivo de *app.config* , se houver, nas listas fornecidas.
 
 ## <a name="parameters"></a>Parâmetros
 

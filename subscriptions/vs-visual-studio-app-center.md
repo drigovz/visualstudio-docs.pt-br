@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
-ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005721"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435732"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -28,15 +28,15 @@ O App Center é o controle de missões para aplicativos.
 
 2. Localize o bloco do App Center do Visual Studio e clique em **Introdução**.
     > [!div class="mx-imgBorder"]
-    > ![Bloco App Center do VS](_img/vs-app-center/vs-app-center-tile.png)
+    > ![Bloco App Center do VS](_img/vs-app-center/vs-app-center-tile.png "Clique em ' Introdução ' no bloco Visual Studio App Center.")
 
 3. Em seguida, crie uma conta.  Você pode usar contas existentes da Microsoft, do Google, do GitHub ou do Facebook para fazer logon ou criar uma nova conta, fornecendo o nome de usuário, o email e a senha.  Clique em **Criar conta** para continuar.
     > [!div class="mx-imgBorder"]
-    > ![Criar conta do App Center do VS](_img/vs-app-center/vs-app-center-create-account.png)
+    > ![Criar conta do App Center do VS](_img/vs-app-center/vs-app-center-create-account.png "Escolha como você deseja entrar.")
 
 4. Isso é tudo para ela.  Basta clicar em **Adicionar nova organização** ou **Adicionar novo aplicativo** para começar!
     > [!div class="mx-imgBorder"]
-    > ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png)
+    > ![Portal do App Center do VS](_img/vs-app-center/vs-app-center-portal.png "Você está pronto para começar.  Clique em ' Adicionar nova organização ' ou ' Adicionar novo aplicativo ' para começar.")
 
 ## <a name="eligibility"></a>Qualificação
 

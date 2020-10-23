@@ -1,5 +1,7 @@
 ---
 title: Tarefa GenerateApplicationManifest | Microsoft Docs
+description: Use a tarefa MSBuild GenerateApplicationManifest para gerar um manifesto de aplicativo ClickOnce ou um manifesto nativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634091"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436555"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 
@@ -84,7 +86,7 @@ As entradas para as dependências e os arquivos podem ser mais decorados ainda c
 |`TargetPath`|Especifica como o caminho deve ser definido no manifesto gerado. Esse atributo é válido para todos os arquivos. Se esse atributo não for especificado, a especificação do item será usada. Esse atributo é válido para todos os arquivos e as dependências com um valor `DependencyType` de `Install`.|
 |`IsDataFile`|Um valor de metadados `Boolean` que indica se o arquivo é um arquivo de dados ou não. Um arquivo de dados é especial, pois ele é migrado entre as atualizações de aplicativos. Esses metadados só são válido para os arquivos. `False` é o valor padrão.|
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
 Este exemplo usa a `GenerateApplicationManifest` tarefa para gerar um manifesto do aplicativo ClickOnce e a `GenerateDeploymentManifest` tarefa para gerar um manifesto de implantação para um aplicativo com um único assembly. Em seguida, ele usa a tarefa `SignFile` para assinar os manifestos.
 
@@ -138,7 +140,7 @@ Isso ilustra o cenário de geração de manifesto mais simples possível, em que
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
 Este exemplo usa as `GenerateApplicationManifest` `GenerateDeploymentManifest` tarefas e para gerar manifestos de implantação e de aplicativo ClickOnce para um aplicativo com um único assembly, especificando o nome e a identidade dos manifestos.
 
@@ -199,7 +201,7 @@ Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-3"></a>Exemplo 3:
 
 Este exemplo usa as `GenerateApplicationManifest` `GenerateDeploymentManifest` tarefas e para gerar manifestos de implantação e de aplicativo ClickOnce para um aplicativo com vários arquivos e assemblies.
 
@@ -318,7 +320,7 @@ Este exemplo usa as `GenerateApplicationManifest` `GenerateDeploymentManifest` t
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-4"></a>Exemplo 4
 
 Este exemplo usa a tarefa `GenerateApplicationManifest` para gerar um manifesto nativo para o aplicativo *Test.exe*, referenciando o componente nativo *Alpha.dll* e um componente COM isolado *Bravo.dll*.
 

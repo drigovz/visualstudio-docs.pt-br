@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022380"
+ms.locfileid: "92435871"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -119,6 +119,8 @@ Assista a este vídeo ou Continue lendo para saber mais sobre como adicionar ass
 
 > [!NOTE]
 > Se você já tiver atribuído assinaturas individualmente a usuários que são adicionados subsequentemente como parte de um grupo do Azure AD, eles serão adicionados como parte do grupo e não serão mais listados individualmente. No entanto, se a assinatura individual for para um nível de assinatura diferente, ela terá duas assinaturas.  Exemplo: se um usuário tiver uma assinatura de Visual Studio Professional individual e for um membro de um grupo ao qual você atribui Visual Studio Enterprise assinaturas, eles terão ambos.  
+>
+> Se você remover um assinante de um grupo de Azure Active Directory que tenha assinaturas atribuídas a ele, pode levar até 24 horas para que a atualização seja refletida no portal de administração. 
 
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
@@ -131,7 +133,7 @@ R: não--para modificar as informações de um assinante individual, você preci
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>P: adicionei alguém ao meu grupo de segurança do Azure AD, mas não os vejo adicionados no portal de administração de assinaturas e eles não têm uma assinatura. Por que não?  
 R: dependendo de como sua organização tiver configurado o Azure AD, você poderá ver atrasos de até 24 horas antes que o usuário seja adicionado. Se tiver sido mais de 24 horas, [entre em contato com o suporte](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

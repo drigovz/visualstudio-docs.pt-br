@@ -1,5 +1,7 @@
 ---
 title: Tarefa GenerateResource | Microsoft Docs
+description: Use a tarefa MSBuild GenerateResource para converter entre arquivos. txt ou. resx e Common Language Runtime arquivos Binary. Resources.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634052"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436878"
 ---
 # <a name="generateresource-task"></a>Tarefa GenerateResource
 
@@ -44,7 +46,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateResource`.
 |`NeverLockTypeAssemblies`|Parâmetro `Boolean` opcional.<br /><br /> Obtém ou define um valor booliano que especifica se um novo [AppDomain](/dotnet/api/system.appdomain) deve ser criado para avaliar os arquivos de recursos (*. resx*) ou para criar um novo [AppDomain](/dotnet/api/system.appdomain) somente quando os arquivos de recursos fazem referência a um assembly de usuário (falso).|
 |`OutputResources`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica o nome dos arquivos gerados, como arquivos *.resources*. Se você não especificar um nome, o nome do arquivo de entrada correspondente será usado e o arquivo *. Resources* criado será colocado no diretório que contém o arquivo de entrada.|
 |`PublicClass`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, cria uma classe de recurso fortemente tipada como uma classe pública.|
-|`References`|Parâmetro `String[]` opcional.<br /><br /> Referências das quais carregar tipos em arquivos *.resx*. Elementos de dados de arquivo *.resx* podem ter um tipo .NET. Quando o arquivo *. resx* é lido, ele deve ser resolvido. Normalmente, ele é resolvido com êxito usando o tipo padrão ao carregar regras. Se você fornecer assemblies em `References`, eles terão prioridade.<br /><br /> Esse parâmetro não é necessário para recursos fortemente tipados.|
+|`References`|Parâmetro `String[]` opcional.<br /><br /> Referências das quais carregar tipos em arquivos *.resx*. os elementos de dados do arquivo *. resx* podem ter um tipo .net. Quando o arquivo *. resx* é lido, ele deve ser resolvido. Normalmente, ele é resolvido com êxito usando o tipo padrão ao carregar regras. Se você fornecer assemblies em `References`, eles terão prioridade.<br /><br /> Esse parâmetro não é necessário para recursos fortemente tipados.|
 |`SdkToolsPath`|Parâmetro `String` opcional.<br /><br /> Especifica o caminho para as ferramentas do SDK, como *resgen.exe*.|
 |`Sources`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os itens a converter. Itens passados para esse parâmetro devem ter uma das seguintes extensões de arquivo:<br /><br /> -   *.txt*: especifica a extensão a ser convertida para um arquivo de texto. Os arquivos de texto só podem conter recursos de cadeia de caracteres.<br />-   *.resx*: especifica a extensão a ser convertida para um arquivo de recurso baseado em XML.<br />-   *.restext*: especifica o mesmo formato como *.txt*. Essa extensão diferente é útil se você quiser distinguir claramente os arquivos de origem que contêm recursos de outros arquivos de origem no processo de build.<br />-   *.resources*: especifica a extensão a ser convertida para um arquivo de recurso.|
 |`StateFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o caminho para um arquivo de cache opcional usado para acelerar a verificação de dependência de links em arquivos de entrada *.resx*.|

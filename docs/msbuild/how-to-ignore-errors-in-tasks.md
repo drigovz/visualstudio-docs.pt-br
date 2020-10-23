@@ -1,5 +1,7 @@
 ---
 title: Como ignorar erros em tarefas | Microsoft Docs
+description: Saiba como ignorar erros em tarefas do MSBuild e controlar se uma compilação é interrompida ou continua quando ocorre uma falha de tarefa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 9899b7367e6ae9255755ae04fe06d8c8733043ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633818"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436251"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
 

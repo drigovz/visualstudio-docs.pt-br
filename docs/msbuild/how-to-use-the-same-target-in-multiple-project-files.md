@@ -1,5 +1,7 @@
 ---
 title: Como usar o mesmo destino em vários arquivos de projeto | Microsoft Docs
+description: Saiba como salvar um destino em um arquivo de projeto do MSBuild e importá-lo para qualquer outro projeto que precise usar o destino.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255577"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436060"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Como usar o mesmo destino em vários arquivos de projeto
 
@@ -83,7 +85,7 @@ O elemento `Import` é usado para inserir um arquivo de projeto em outro arquivo
 
 3. Defina, no arquivo de projeto, todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
  O exemplo de código a seguir mostra o arquivo *MyCommon. targets* que o segundo exemplo de código importa. O arquivo *. targets* avalia as propriedades do projeto de importação para configurar a compilação.
 
@@ -102,7 +104,7 @@ O elemento `Import` é usado para inserir um arquivo de projeto em outro arquivo
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
  O exemplo de código a seguir importa o arquivo *MyCommon. targets* .
 
