@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800236"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467629"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -93,7 +93,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | - | - | -: | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
 | Start Page | vsstartpage.blob.core.windows.net | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
-| Direcionado<br> Notificação <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
+| Direcionado<br> Notification <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Usada para fornecer informações no editor sobre quando um arquivo foi atualizado pela última, a linha do tempo de alterações, os itens de trabalho aos quais as alterações estão associadas, os autores e muito mais |
@@ -134,11 +134,11 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Comunidade de Desenvolvedores | sendvsfeedback2.azurewebsites.net/api | https/443 | Usado para chamar APIs da ferramenta de comentários da comunidade de desenvolvedores (meus problemas, Pesquisar, votar, comentar, enviar, carregar, retomar) |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Usado para chamar APIs Intellicode |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| https/443 | Usado para chamar Live Share APIs |
-| Codespaces do Visual Studio | \*. online.visualstudio.com | https/443 | Usado para chamar as APIs Codespaces do Visual Studio |
+| Codespaces do GitHub | \*. online.visualstudio.com | https/443 | Usado para chamar as APIs Codespaces do GitHub |
 | Aquisição de tipo automático de JavaScript | registry.npmjs.org | https/443 | Usado para instalar definições de tipo TypeScript para fornecer IntelliSense para bibliotecas JavaScript populares |
 | Serviço de licenciamento de assinaturas do Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licenciamento/ClientRights | https/443 | Licenciamento para ativação online |
 | Depurador | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon. \* . rápida<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Usado para baixar bits do depurador para depuração do .NET Core em UNIX/macOS por SSH <br><br>2. <br>Usado para baixar bits do depurador para depuração remota de contêiner do Docker do Windows<br><br> 3. usado para depuração de origem do .NET Framework <br><br> 4. <br>(Se o usuário optar por ele) Usado para baixar símbolos publicados no servidor de símbolos nuget.org.<br><br> 5. (se o usuário optar por usar) para baixar símbolos e binários do MS, também pode ser necessário para depurar código gerenciado em despejos |
-| Codespaces do Visual Studio| \*. online.visualstudio.com | https/443 | Usado para chamar as APIs Codespaces do Visual Studio |
+| Codespaces do GitHub| \*. online.visualstudio.com | https/443 | Usado para chamar as APIs Codespaces do GitHub |
 | Publicação de aplicativo do Xamarin Android | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Usado para interagir com Google Play Store serviço para publicar/carregar aplicativos do Xamarin Android diretamente do Visual Studio. |
 | Registro de Contêiner do Azure | *. azurecr.io | https/443 | Acessar registros de contêiner hospedados no Azure, para configuração de pipelines do CICD |
 | | | | |

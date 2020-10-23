@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Saiba como comprar recentemente as assinaturas mensais do Visual Studio para o portal de administração de assinaturas
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005093"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467590"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Adicionar novas assinaturas mensais do Visual Studio ao portal de administração de assinaturas
 Quando você adquire novas assinaturas mensais do Visual Studio usando uma assinatura do Azure, talvez seja necessário adicioná-las ao portal de administração de assinaturas para atribuí-las aos usuários.  
@@ -21,7 +21,7 @@ Quando você adquire novas assinaturas mensais do Visual Studio usando uma assin
 As etapas para adicionar assinaturas mensais dependem de quais tipos de assinaturas sua organização já tem e se você é um novo administrador.
 - Se você for um novo administrador, verificaremos as assinaturas do Azure nas quais você tem direitos de administrador de acesso de usuário ao entrar no portal de administração de assinaturas na primeira vez.  Se encontrarmos assinaturas mensais para você, vamos adicioná-las automaticamente. 
 - Se você tiver adicionado ou administrado assinaturas mensais anteriormente, verificaremos se há novas assinaturas mensais sempre que entrar. 
-- Se você já é um administrador de assinaturas adquiridas por meio do licenciamento por volume, mas ainda não adicionou ou gerenciau assinaturas mensais, será necessário adicioná-las usando as etapas fornecidas abaixo.
+- Se você já é um administrador para assinaturas adquiridas por meio do licenciamento por volume, mas ainda não adicionou ou gerenciau assinaturas mensais, será necessário adicioná-las usando as etapas fornecidas abaixo.
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Como adicionar assinaturas mensais
 1. Entre no portal de administração de assinaturas em <https://manage.visualstudio.com>
@@ -47,7 +47,7 @@ Agora que você adicionou assinaturas, você está pronto para atribuí-las aos 
 - [Atribuir assinaturas a vários usuários](assign-license-bulk.md)
 - [Atribuir assinaturas específicas a usuários específicos](assign-guid.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

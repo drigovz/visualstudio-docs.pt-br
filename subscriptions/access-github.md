@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 09/28/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Saiba como acessar o GitHub Enterprise como parte das assinaturas do Visual Studio
-ms.openlocfilehash: 4c3943c9a6229e865bf90a24d12ecbc8b91d2fd5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fc4c36e72affb94f0707389d219284cc2a652bfd
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584133"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467512"
 ---
 # <a name="visual-studio-with-github-enterprise-subscriptions"></a>Assinaturas Visual Studio com o GitHub Enterprise
 
@@ -33,18 +33,18 @@ Visual Studio Enterprise, Visual Studio Professional e GitHub Enterprise também
 
 Para saber mais sobre os benefícios e as opções, visite <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> . 
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o Visual Studio com o processo de configuração do GitHub Enterprise?
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o processo de configuração do Visual Studio com o GitHub Enterprise?
 
 O Visual Studio com as assinaturas do GitHub Enterprise é gerenciado em duas partes:
 1. A assinatura do Visual Studio (Enterprise ou Professional)
 2. GitHub Enterprise 
 
-Quando você for atribuído a um Visual Studio com assinatura do GitHub, receberá um email informando que seu administrador de assinaturas do Visual Studio atribuiu uma assinatura a você.  Nesse ponto, você poderá exibir os benefícios de assinatura disponíveis em <https://my.visualstudio.com/benefits> .  Isso inclui o benefício empresarial do GitHub, conforme mostrado abaixo.
+Quando você for atribuído a um Visual Studio com assinatura do GitHub, receberá um email informando que o administrador de assinaturas do Visual Studio atribuiu uma assinatura a você.  Nesse ponto, você poderá exibir os benefícios de assinatura disponíveis em <https://my.visualstudio.com/benefits> .  Isso inclui o benefício empresarial do GitHub, conforme mostrado abaixo.
 
    > [!div class="mx-imgBorder"]
    > ![Configuração de conta empresarial pendente do GitHub Enterprise](_img/access-github/pending-account-setup.png "Sua organização deve primeiro configurar uma conta empresarial.")  
 
-O GitHub Enterprise é gerenciado por um administrador do GitHub separadamente das assinaturas do Visual Studio.  Quando sua empresa tiver configurado uma conta empresarial do GitHub, você receberá um email do GitHub notificando que sua assinatura do Visual Studio foi vinculada e o bloco de benefícios será atualizado conforme mostrado abaixo.  A configuração dessa conta pode levar algum tempo e depende de sua empresa concluir o processo de instalação. Depois de receber o email, você pode entrar em contato com o administrador da organização do GitHub apropriado para solicitar um convite para sua organização e/ou repositório.  
+O GitHub Enterprise é gerenciado por um administrador do GitHub separadamente das assinaturas do Visual Studio.  Quando sua empresa tiver configurado uma conta empresarial do GitHub, você receberá um email do GitHub notificando que sua assinatura do Visual Studio foi vinculada e o bloco de benefícios será atualizado conforme mostrado abaixo.  A configuração dessa conta pode demorar um pouco e depende da conclusão do processo de instalação pela sua empresa. Depois de receber o email, você pode entrar em contato com o administrador da organização do GitHub apropriado para solicitar um convite para sua organização e/ou repositório.  
 
    > [!div class="mx-imgBorder"]
    > ![Convite GitHub pendente do GitHub Enterprise](_img/access-github/pending-invite.png "Contate o administrador do GitHub para solicitar o convite para uma organização do GitHub.")  
@@ -75,7 +75,7 @@ Se você for novo no GitHub, aqui estão alguns recursos úteis:
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 ### <a name="q--where-is-my-github-subscription"></a>P: onde está minha assinatura do GitHub?
-R: o processo para configurar uma conta empresarial do GitHub pode levar algum tempo.  Se você estiver esperando e nada tiver acontecido, entre em contato com seu administrador do GitHub.  É possível que o administrador ainda esteja trabalhando nele ou tenha optado por não criar uma conta empresarial do GitHub. 
+R: o processo para configurar uma conta empresarial do GitHub pode levar algum tempo.  Se você já esperava e não ouviu nada, talvez queira entrar em contato com o administrador do GitHub.  É possível que seu administrador ainda esteja trabalhando nele ou tenha optado por não criar uma conta empresarial do GitHub. 
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-benefits"></a>P: obtenho os benefícios completos da assinatura do Visual Studio?
 R: junto com o GitHub Enterprise, você recebe todos os benefícios de uma assinatura padrão do Visual Studio, incluindo downloads de software, serviços de nuvem, suporte técnico e benefícios de parceiros, assim como faria se a assinatura fosse adquirida separadamente.

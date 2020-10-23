@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Saiba como definir preferências de idioma, contatos, nível de assinatura e outros no Portal de Administração
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022599"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467434"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Definir preferências para os contratos no Portal de Administração
 Os superadministradores podem definir certas preferências no portal de administração (Portal do administrador) que serão aplicadas globalmente para cada contrato.  Essas preferências preencherão automaticamente os detalhes da assinatura para seus administradores quando eles estiverem adicionando assinantes e só poderão ser modificados globalmente por superadministradores.  
@@ -41,7 +41,7 @@ Se você tiver vários contratos para os quais você é um superadministrador, p
 Se houver apenas um contrato associado ao endereço de email que você usou para entrar, ele será exibido à direita do painel configurações expandidas e a lista suspensa será desabilitada. 
 
 ### <a name="contact-email-address"></a>Endereço de email de contato
-Essa preferência fornece uma maneira para seus assinantes acessarem os administradores por meio do uso do botão **contatar meu administrador** na [página assinaturas](https://my.visualstudio.com/subscriptions) do portal do Assinante.  Se essa preferência for deixada em branco, as mensagens do assinante serão encaminhadas para todos os administradores e os superadministradores do contrato.  Recomendamos o uso de um alias de email de grupo ou um grupo de segurança para adaptar o público-alvo a esse email de contato. Você também poderá optar por inserir o endereço de email de um indivíduo, se preferir.
+Essa preferência fornece uma maneira para seus assinantes acessarem os administradores por meio do uso do botão **contatar meu administrador** na [página assinaturas](https://my.visualstudio.com/subscriptions) do portal do Assinante.  Se essa preferência for deixada em branco, as mensagens do Assinante serão encaminhadas a todos os administradores e superadministradores do contrato.  Recomendamos o uso de um alias de email de grupo ou um grupo de segurança para adaptar o público-alvo a esse email de contato. Você também poderá optar por inserir o endereço de email de um indivíduo, se preferir.
 
 > [!NOTE]
 > O endereço de email listado aqui NÃO será fornecido aos assinantes.  Quando um assinante envia um **contato com minha** solicitação de administrador no portal do Assinante, a mensagem será encaminhada para o alias sem expô-lo ao Assinante. 
@@ -53,14 +53,14 @@ Use essa configuração para determinar qual dos níveis de assinatura incluído
 A definição de uma localidade e um idioma de comunicação padrão pode simplificar o processo de atribuição de assinaturas.  Por exemplo, caso sua equipe de desenvolvimento esteja localizada em um país diferente daquele da equipe de administração, você poderá definir as preferências mais adequadas à localização dos assinantes. Essas configurações ainda podem ser alteradas por todos os administradores para assinantes individuais. 
 
 ### <a name="default-external-subscribers-setting"></a>Configuração padrão de assinantes externos
-Essa preferência permite que você decida se os administradores podem adicionar assinantes de fora do diretório/locatário da organização.  Se você desligar essa opção, nenhum assinante externo será permitido.  Se você habilitá-la e um administrador tentar adicionar um assinante externo, ele deverá confirmar sua escolha e terá permissão para atribuir a assinatura. Os administradores não podem substituir essa configuração. 
+Essa preferência permite que você decida se os administradores podem adicionar assinantes de fora do diretório/locatário da sua organização.  Se você desligar essa opção, nenhum assinante externo será permitido.  Se você habilitá-la e um administrador tentar adicionar um assinante externo, ele deverá confirmar sua escolha e terá permissão para atribuir a assinatura. Os administradores não podem substituir essa configuração. 
 
 ### <a name="default-downloads-setting"></a>Configuração padrão de downloads
 A habilitação dessa configuração, que está ativada por padrão, permitirá que os assinantes acessem os downloads quando os administradores criarem assinaturas.  Os administradores ainda podem desabilitar os downloads para cada assinatura individual.  Desabilitar o acesso a downloads também desabilita o acesso às chaves do produto.  
 
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>P: posso desabilitar o **endereço de email de contato** para que os assinantes não possam contatar os administradores?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>P: posso desabilitar o **endereço de email de contato** para que os assinantes não possam contatar administradores?
 R: não, embora você possa determinar quais administradores são contatados usando um grupo de segurança, o alias de email do grupo ou um endereço de email individual, o recurso não pode ser desabilitado.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>P: se eu responder ao email de um assinante, ele terá meu endereço de email?

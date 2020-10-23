@@ -1,18 +1,18 @@
 ---
 title: Visual Studio + oferta empresarial do GitHub | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 09/29/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Gerenciando assinaturas na oferta Enterprise do GitHub do Visual Studio +
-ms.openlocfilehash: 79c1a2cfe8eaab9e275c6c53661f1667253ea4f5
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584120"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467577"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gerenciar assinaturas do Visual Studio com o GitHub Enterprise
 Os clientes que têm o EA (Enterprise Agreements) com a Microsoft estão qualificados a comprar uma nova oferta de assinatura que reúne as assinaturas do Visual Studio Standard e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
@@ -32,19 +32,19 @@ Para obter mais informações sobre como gerenciar assinaturas do Visual Studio,
 > [!Important]
 > Se as assinaturas do Visual Studio com o GitHub Enterprise forem atribuídas pelos administradores de assinatura do Visual Studio sem comprar primeiro, o GitHub não será notificado de que você deseja criar uma conta empresarial do GitHub.  **Uma compra de pelo menos uma** O Visual Studio com a assinatura do GitHub Enterprise deve ser feito antes que as assinaturas sejam atribuídas.
 
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o Visual Studio com o processo de configuração do GitHub Enterprise?
-O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do Visual Studio. Seguindo um Visual Studio com o GitHub Enterprise Purchase, um processo de configuração de conta empresarial do GitHub é iniciado em paralelo com (mas separado do) estabelecendo um contrato no [Manage.VisualStudio.com](https://manage.visualstudio.com). O estabelecimento dessa conta empresarial do GitHub pode levar algum tempo. 
+## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o processo de configuração do Visual Studio com o GitHub Enterprise?
+O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do Visual Studio. Seguindo um Visual Studio com o GitHub Enterprise Purchase, um processo de configuração de conta empresarial do GitHub é iniciado em paralelo com (mas separado do) estabelecendo um contrato no [Manage.VisualStudio.com](https://manage.visualstudio.com). O estabelecimento dessa conta do GitHub Enterprise pode demorar um pouco. 
 
-Depois que sua empresa tiver configurado uma conta empresarial do GitHub, os assinantes que receberam o Visual Studio com as assinaturas do GitHub Enterprise receberão um email do GitHub notificando-os de que suas assinaturas do Visual Studio foram vinculadas. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para receber um convite para a organização apropriada.
+Depois que sua empresa tiver configurado uma conta do GitHub Enterprise, os assinantes atribuídos pelo Visual Studio com as assinaturas do GitHub Enterprise receberão um email do GitHub notificando-os sobre a vinculação de suas assinaturas do Visual Studio. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para receber um convite para a organização apropriada.
 
 Para obter detalhes adicionais sobre a configuração do GitHub Enterprise, consulte a [documentação do assinante](access-github.md).   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>Gerenciar assinaturas do GitHub Enterprise
-Quando as assinaturas do GitHub Enterprise são compradas, o GitHub faz parceria com os clientes para ajudar a criar e configurar as organizações que acessarão o GitHub e identificarão os administradores.  Esses administradores, em seguida, recebem uma notificação de que já foram configurados como administradores.  
+Quando as assinaturas do GitHub Enterprise são adquiridas, os parceiros do GitHub com clientes ajudam a criar e configurar as organizações que acessarão o GitHub e identificarão os administradores.  Em seguida, esses administradores recebem uma notificação de que eles foram configurados como administradores.  
 
 Como esse processo é mais complexo, pode levar vários dias depois que as assinaturas são compradas para que as organizações e os administradores estejam totalmente configurados.
 
-O GitHub está disponível no GitHub.com baseado em nuvem ou no GitHub Enterprise Server local.  Os processos para gerenciar as duas versões são diferentes.  A GitHub fornece uma variedade de tópicos de ajuda e guias de administrador para ajudar você a gerenciar assinaturas do GitHub Enterprise.  Fornecemos links para os tópicos selecionados abaixo.  
+O GitHub está disponível no GitHub.com baseado em nuvem ou no GitHub Enterprise Server local.  Os processos para gerenciar as duas versões são diferentes.  O GitHub fornece uma variedade de tópicos de ajuda e guias de administração para ajudá-lo a gerenciar assinaturas corporativas do GitHub.  Fornecemos links para os tópicos selecionados abaixo.  
 
 ## <a name="support-resources"></a>Recursos de suporte
 

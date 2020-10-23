@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184400"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467642"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Padrões de interação para Visual Studio
 ## <a name="overview"></a>Visão geral
  Um padrão de design, em geral, é o núcleo de um design que pode ser aplicado em situações específicas para resolver problemas com conjuntos de restrições semelhantes. Os designers de recursos e sistemas usam esses padrões de design como pontos de partida, que podem ser adaptados para sua situação específica.
 
- O Visual Studio tem uma biblioteca de padrões comuns de interação que devem ser considerados ao criar novos recursos. Há dois contextos principais para nossos padrões de design: cliente do Visual Studio (devenv) e Visual Studio Codespaces (anteriormente conhecido como Visual Studio online). Para alguns problemas de design, há um padrão onipresente que funciona bem em todas as situações. Em muitos casos, no entanto, a solução pode ser diferente para a interface do usuário que está sendo apresentada em um navegador e que está hospedada em um aplicativo cliente.
+ O Visual Studio tem uma biblioteca de padrões comuns de interação que devem ser considerados ao criar novos recursos. Há dois contextos principais para nossos padrões de design: cliente do Visual Studio (devenv) e GitHub Codespaces (anteriormente conhecido como Visual Studio online). Para alguns problemas de design, há um padrão onipresente que funciona bem em todas as situações. Em muitos casos, no entanto, a solução pode ser diferente para a interface do usuário que está sendo apresentada em um navegador e que está hospedada em um aplicativo cliente.
 
 ### <a name="visual-studio-client-pattern-types"></a>Tipos de padrões de cliente do Visual Studio
 
@@ -40,7 +40,7 @@ ms.locfileid: "84184400"
 
   - [Interações com a janela](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_WindowInteractions)
 
-  - [Janelas da ferramenta](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
+  - [Janelas de ferramentas](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_ToolWindows)
 
   - [Convenções do editor de documento](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_DocumentEditorConventions)
 

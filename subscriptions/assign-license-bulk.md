@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/21/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Saiba como os administradores podem atribuir licenças a vários assinantes usando o recurso Adicionar em massa ou grupos de Microsoft Azure Active Directory
-ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435871"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467538"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Atribuir assinaturas a vários usuários
 O portal de administração de assinaturas permite que você adicione usuários individualmente ou em grupos grandes.  Para adicionar usuários únicos, confira [Adicionar usuários únicos](assign-license.md).
@@ -82,7 +82,7 @@ O uso desse recurso facilita a permanência de suas atribuições de assinatura.
 > [!IMPORTANT]
 >
 > As seguintes limitações se aplicam ao uso de grupos do Azure AD para adicionar assinantes:
-> - O administrador deve ser membro do locatário do AAD ao adicionar inicialmente um grupo ao portal de administração.  Depois que o grupo tiver sido adicionado, as alterações na associação dos grupos não exigirão o envolvimento do administrador. 
+> - O administrador deve ser um membro do locatário do AAD ao adicionar inicialmente um grupo ao portal de administração.  Depois que o grupo tiver sido adicionado, as alterações na associação dos grupos não exigirão o envolvimento do administrador. 
 > - Os grupos devem conter pelo menos um membro.  Não há suporte para grupos vazios.
 > - Os grupos devem ter menos de 1.000 usuários. 
 > - Todos os usuários devem estar no nível superior do grupo.  Não há suporte para grupos aninhados.

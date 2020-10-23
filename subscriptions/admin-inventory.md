@@ -1,23 +1,23 @@
 ---
-title: Inventário de ambientes de pré-produção | Visual Studio Marketplace
+title: Inventário de pré-produção na assinatura do Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de realizar inventários de pré-produção
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004151"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467421"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventário do ambiente de pré-produção
 As assinaturas do Visual Studio simplificam o gerenciamento de ativos ao contar usuários em vez de dispositivos.
 
-Os administradores do Visual Studio devem atribuir assinaturas do Visual Studio a **pessoas específicas e determinadas**. As convenções de nomenclatura como Dev1, Dev2 ou o uso de nomes de equipe, como “FeatureTeam”, **não são permitidos**.
+Os administradores do Visual Studio devem atribuir assinaturas do Visual Studio a **indivíduos específicos e nomeados**. As convenções de nomenclatura como Dev1, Dev2 ou o uso de nomes de equipe, como “FeatureTeam”, **não são permitidos**.
 
 Aqui estão algumas maneiras para simplificar a realização do inventário do ambiente de pré-produção:
 - Examine as atribuições de usuário. A Microsoft oferece um site chamado [Portal de administração do Visual Studio](https://manage.visualstudio.com/) para ajudá-lo a rastrear as atribuições de assinaturas do Visual Studio.
@@ -37,7 +37,7 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Saiba mais as políticas dos administradores:
+Saiba mais sobre as responsabilidades para administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
 - [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
