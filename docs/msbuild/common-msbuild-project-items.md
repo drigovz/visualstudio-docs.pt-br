@@ -1,5 +1,7 @@
 ---
 title: Itens de projeto comuns do MSBuild | Microsoft Docs
+description: Saiba mais sobre os itens de projeto do MSBuild comuns. Os itens são referências nomeadas a um ou mais arquivos e têm metadados como nomes de arquivo, caminhos e números de versão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136908"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796388"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
-No MSBuild, um item é uma referência nomeada para um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
+No MSBuild, um item é uma referência nomeada para um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto no Visual Studio têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd* .
 
 ## <a name="common-items"></a>Itens comuns
 
@@ -37,11 +39,11 @@ Representa uma referência de assembly (gerenciado) no projeto.
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|
-|Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
+|Name|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|
 |FusionName|Cadeia de caracteres opcional. Especifica o nome de fusão simples ou forte para o item.<br /><br /> Quando esse atributo estiver presente, é possível economizar tempo, pois o arquivo do assembly não precisa ser aberto para obter o nome de fusão.|
 |SpecificVersion|Booliano opcional. Especifica se apenas a versão no nome de fusão deve ser referenciada.|
 |Aliases|Cadeia de caracteres opcional. Quaisquer aliases da referência.|
-|Particular|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
+|Privados|Booliano opcional. Especifica se a referência deve ser copiada para a pasta de saída. Esse atributo corresponde à propriedade **Copiar Local** da referência que está no Visual Studio IDE.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -49,13 +51,13 @@ Representa uma referência a um componente COM (não gerenciado) no projeto. Est
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|
+|Name|Cadeia de caracteres opcional. O nome de exibição do componente.|
 |Guid|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Cadeia de caracteres obrigatória. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
-|Isolado|Booliano opcional. Especifica se o componente é um componente sem registro.|
+|Isolada|Booliano opcional. Especifica se o componente é um componente sem registro.|
 
 ### <a name="comfilereference"></a>COMFileReference
 
@@ -71,7 +73,7 @@ Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
+|Name|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|
 
 ### <a name="projectreference"></a>ProjectReference
@@ -80,7 +82,7 @@ Representa uma referência a outro projeto. `ProjectReference` os itens são tra
 
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
-|Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|
+|Name|Cadeia de caracteres opcional. O nome de exibição da referência.|
 |GlobalPropertiesToRemove|`string[]` opcional. Nomes das propriedades a serem removidas ao criar o projeto referenciado, por exemplo `RuntimeIdentifier;PackOnBuild` . O padrão é vazio.|
 |Project|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |OutputItemType|Cadeia de caracteres opcional. Tipo de item para o qual as saídas de destino são emitidas. O padrão está em branco. Se os metadados de referência forem definidos como "true" (padrão), as saídas de destino se tornarão referências para o compilador.|
@@ -172,7 +174,7 @@ Representa o projeto do FxCop a ser importado.
 
 Representa assemblies cujos namespaces devem ser importados pelo compilador Visual Basic.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propriedades do MSBuild para projetos SDK do .NET Core](/dotnet/core/project-sdk/msbuild-props)

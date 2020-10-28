@@ -1,5 +1,7 @@
 ---
 title: Propriedades de projeto comuns do MSBuild | Microsoft Docs
+description: Saiba mais sobre as propriedades comuns do projeto MSBuild que podem ser definidas ou usadas em arquivos de projeto ou incluídas em arquivos. targets fornecidos pelo MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 dev_langs:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c790af5504c902bf5fe37d2cddba9b9f63aa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 208bb463b99fd8835329e86a88d20aabb94a544d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425362"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796804"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídos nos arquivos *. targets* fornecidos pelo MSBuild.
 
- Os arquivos de projeto no Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado quando você cria um projeto usando o IDE. Normalmente, os projetos importam um ou mais arquivos *.targets* para definir o processo de build. Para obter mais informações, confira [Arquivos .targets do MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Os arquivos de projeto no Visual Studio ( *.csproj* , *.vbproj* , *.vcxproj* e outros) contêm o código XML do MSBuild que é executado quando você cria um projeto usando o IDE. Normalmente, os projetos importam um ou mais arquivos *.targets* para definir o processo de build. Para obter mais informações, confira [Arquivos .targets do MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propriedades e parâmetros comuns
 
@@ -40,7 +42,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | ALToolPath | .NET | O caminho onde *AL.exe* pode ser encontrado. Essa propriedade substitui a versão atual do *AL.exe* para habilitar o uso de uma versão diferente. |
 | ApplicationIcon | .NET | O arquivo de ícone *. ico* para passar para o compilador para inserção como um ícone do Win32. A propriedade é equivalente à opção do compilador `/win32icon`. |
 | ApplicationManifest | Tudo | Especifica o caminho do arquivo que é usado para gerar informações de manifesto de UAC (Controle de Conta de Usuário) externo. Aplica-se somente a projetos do Visual Studio destinados ao Windows Vista.<br /><br /> Na maioria dos casos, o manifesto é incorporado. No entanto, se você usar a implantação gratuita de COM ou ClickOnce, o manifesto poderá ser um arquivo externo que é instalado junto com seus assemblies de aplicativo. Para obter mais informações, consulte a propriedade NoWin32Manifest neste tópico. |
-| AssemblyOriginatorKeyFile | .NET | Especifica o arquivo que é usado para assinar o assembly (*. SNK* ou *. pfx*) e que é passado para a [tarefa ResolveKeySource](../msbuild/resolvekeysource-task.md) para gerar a chave real usada para assinar o assembly. |
+| AssemblyOriginatorKeyFile | .NET | Especifica o arquivo que é usado para assinar o assembly ( *. SNK* ou *. pfx* ) e que é passado para a [tarefa ResolveKeySource](../msbuild/resolvekeysource-task.md) para gerar a chave real usada para assinar o assembly. |
 | AssemblySearchPaths | .NET | Uma lista de locais para pesquisa durante a resolução de assembly da referência de tempo de build. A ordem na qual os caminhos aparecem nesta lista é significativa porque os caminhos listados anteriormente têm precedência sobre as entradas mais recentes. |
 | AssemblyName | .NET | O nome do assembly de saída final depois que o projeto é criado. |
 | BaseAddress | .NET | Especifica o endereço básico do assembly de saída principal. Essa propriedade é equivalente à opção do compilador `/baseaddress`. |
@@ -52,9 +54,9 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | CodePage | .NET | Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Essa propriedade é equivalente à opção do compilador `/codepage`. |
 | CompilerResponseFile | .NET | Um arquivo de resposta opcional que pode ser passado para as tarefas do compilador. |
 | Configuração | Tudo | A configuração que você está compilando, geralmente `Debug` ou `Release` , mas configurável nos níveis da solução e do projeto. |
-| CscToolPath | C# | O caminho do *csc.exe*, o compilador C#. |
+| CscToolPath | C# | O caminho do *csc.exe* , o compilador C#. |
 | CustomBeforeMicrosoftCommonTargets | Tudo | O nome de um arquivo de projeto ou arquivo de destino a ser importado automaticamente antes da importação de destinos comuns. |
-| DebugSymbols | Tudo | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração **-p:DebugSymbols = false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados do programa (*. pdb*). |
+| DebugSymbols | Tudo | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração **-p:DebugSymbols = false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados do programa ( *. pdb* ). |
 | DebugType | Tudo | Define o nível de informações de depuração que você deseja que seja gerado. Os valores válidos são "full", "pdbonly", "portable", "embedded" e "none". |
 | DefineConstants | .NET | Define as constantes de compilador condicional. Os pares de símbolo/valor são separados por ponto e vírgula e são especificados usando a sintaxe a seguir:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> A propriedade é equivalente à opção do compilador `/define`. |
 | DefineDebug | Tudo |  Um valor booliano que indica se você deseja que a constante DEBUG seja definida. |
@@ -66,35 +68,35 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | ErrorReport | .NET | Especifica como a tarefa de compilador deve relatar erros do compilador interno. Os valores válidos são "prompt," "send" ou "none". Essa propriedade é equivalente à opção do compilador `/errorreport`. |
 | ExcludeDeploymentUrl | .NET | A [tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md) adiciona uma marca deploymentProvider ao manifesto de implantação se o arquivo de projeto incluir qualquer um dos seguintes elementos:<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> Entretanto, ao usar ExcludeDeploymentUrl, você poderá impedir que a marca deploymentProvider seja adicionada ao manifesto de implantação, mesmo se qualquer uma das URLs acima for especificada. Para fazer isso, adicione a propriedade a seguir ao arquivo de projeto:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Observação:**  ExcludeDeploymentUrl não é exposto no IDE do Visual Studio e só pode ser definido pela edição manual do arquivo de projeto. Definir essa propriedade não afeta a publicação no Visual Studio; ou seja, a marca deploymentProvider ainda será adicionada à URL especificada por PublishUrl. |
 | FileAlignment | .NET | Especifica, em bytes, onde alinhar as seções do arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096, 8192. Essa propriedade é equivalente à opção do compilador `/filealignment`. |
-| FrameworkPathOverride | Visual Basic | Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll*. Esse parâmetro é equivalente ao `/sdkpath` switch do compilador de *vbc.exe* . |
+| FrameworkPathOverride | Visual Basic | Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll* . Esse parâmetro é equivalente ao `/sdkpath` switch do compilador de *vbc.exe* . |
 | GenerateDocumentation | .NET | Um parâmetro booliano que indica se a documentação é gerada pelo build. Se `true` , a compilação gerará informações de documentação e as colocará em um arquivo *. xml* junto com o nome do arquivo executável ou da biblioteca criada pela tarefa de compilação. |
 | GenerateFullPaths | C# | Gere caminhos completos para nomes de FileNames na saída usando a opção de compilador [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) . |
-| GenerateSerializationAssemblies | .NET | Indica se os assemblies de serialização XML devem ser gerados por *SGen.exe*, que pode ser definido como ativado, automático ou desativado. Essa propriedade é usada para assemblies destinados exclusivamente ao .NET Framework. Para gerar assemblies de serialização de XML para assemblies do .NET Standard ou .NET Core, faça referência ao pacote do NuGet *Microsoft.XmlSerializer.Generator*. |
-| IntermediateOutputPath | Tudo | O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, *\obj\debug \\ *. |
+| GenerateSerializationAssemblies | .NET | Indica se os assemblies de serialização XML devem ser gerados por *SGen.exe* , que pode ser definido como ativado, automático ou desativado. Essa propriedade é usada para assemblies destinados exclusivamente ao .NET Framework. Para gerar assemblies de serialização de XML para assemblies do .NET Standard ou .NET Core, faça referência ao pacote do NuGet *Microsoft.XmlSerializer.Generator* . |
+| IntermediateOutputPath | Tudo | O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, *\obj\debug \\* . |
 | KeyContainerName | Tudo | O nome do contêiner de chave de nome forte. |
 | KeyOriginatorFile | Tudo | O nome do arquivo de chave de nome forte. |
 | ModuleAssemblyName | .NET | O nome do assembly ao qual o módulo compilado será incorporado. A propriedade é equivalente à opção do compilador `/moduleassemblyname`. |
 | MSBuildProjectExtensionsPath | Tudo | Especifica o caminho em que se encontram as extensões de projeto. Por padrão, isso leva o mesmo valor que `BaseIntermediateOutputPath`. |
 | NoLogo | Tudo | Um valor booliano que indica se você deseja que o logotipo do compilador seja desligado. Essa propriedade é equivalente à opção do compilador `/nologo`. |
-| NoStdLib | .NET | Um valor booliano que indica se deve ser evitada a referência à biblioteca padrão (*mscorlib.dll*). O valor padrão é `false`. |
-| NoVBRuntimeReference | Visual Basic | Um valor booliano que indica se o tempo de execução de Visual Basic (*Microsoft.VisualBasic.dll*) deve ser incluído como uma referência no projeto. |
+| NoStdLib | .NET | Um valor booliano que indica se deve ser evitada a referência à biblioteca padrão ( *mscorlib.dll* ). O valor padrão é `false`. |
+| NoVBRuntimeReference | Visual Basic | Um valor booliano que indica se o tempo de execução de Visual Basic ( *Microsoft.VisualBasic.dll* ) deve ser incluído como uma referência no projeto. |
 | Nowarn | .NET | Suprime os avisos especificados. Somente a parte numérica do identificador de aviso deve ser especificada. Vários avisos são separados por ponto e vírgula. Esse parâmetro corresponde à `/nowarn` opção dos compiladores. |
-| NoWin32Manifest | .NET | Um valor booliano que indica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. Aplica-se somente a projetos do Visual Studio destinados ao Windows Vista. Em projetos implantados usando ClickOnce e COM livre de registro, esse elemento é ignorado. `False` (o valor padrão) especifica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. `True` especifica se as informações de manifesto de UAC não serão inseridas.<br /><br /> Essa propriedade só se aplica a projetos do Visual Studio destinados ao Windows Vista. Em projetos implantados usando ClickOnce e COM livre de registro, essa propriedade é ignorada.<br /><br /> Você deve adicionar NoWin32Manifest somente se não quiser que o Visual Studio incorpore qualquer informação de manifesto no executável do aplicativo; Esse processo é chamado de *virtualização*. Para usar a virtualização, defina `<ApplicationManifest>` em conjunto com `<NoWin32Manifest>` da seguinte maneira:<br /><br /> -Para projetos Visual Basic, remova o `<ApplicationManifest>` nó. (Em projetos Visual Basic, `<NoWin32Manifest>` é ignorado quando um `<ApplicationManifest>` nó existe.)<br />-Para projetos C#, defina `<ApplicationManifest>` como `False` e `<NoWin32Manifest>` como `True` . (Em projetos C#, `<ApplicationManifest>` substituições `<NoWin32Manifest>` .)<br /> Essa propriedade é equivalente à `/nowin32manifest` opção de compilador de *vbc.exe*. |
+| NoWin32Manifest | .NET | Um valor booliano que indica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. Aplica-se somente a projetos do Visual Studio destinados ao Windows Vista. Em projetos implantados usando o ClickOnce e o Registration-Free COM, esse elemento é ignorado. `False` (o valor padrão) especifica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. `True` especifica se as informações de manifesto de UAC não serão inseridas.<br /><br /> Essa propriedade só se aplica a projetos do Visual Studio destinados ao Windows Vista. Em projetos implantados usando o ClickOnce e o Registration-Free COM, essa propriedade é ignorada.<br /><br /> Você deve adicionar NoWin32Manifest somente se não quiser que o Visual Studio incorpore qualquer informação de manifesto no executável do aplicativo; Esse processo é chamado de *virtualização* . Para usar a virtualização, defina `<ApplicationManifest>` em conjunto com `<NoWin32Manifest>` da seguinte maneira:<br /><br /> -Para projetos Visual Basic, remova o `<ApplicationManifest>` nó. (Em projetos Visual Basic, `<NoWin32Manifest>` é ignorado quando um `<ApplicationManifest>` nó existe.)<br />-Para projetos C#, defina `<ApplicationManifest>` como `False` e `<NoWin32Manifest>` como `True` . (Em projetos C#, `<ApplicationManifest>` substituições `<NoWin32Manifest>` .)<br /> Essa propriedade é equivalente à `/nowin32manifest` opção de compilador de *vbc.exe* . |
 | Otimizar | .NET | Um valor booliano que, quando definido como `true`, permite otimizações do compilador. Essa propriedade é equivalente à opção do compilador `/optimize`. |
-| OptionCompare | VisualBasic | Especifica como são feitas comparações de cadeia de caracteres. Os valores válidos são "binary" ou "text". Essa propriedade é equivalente à `/optioncompare` opção de compilador de *vbc.exe*. |
+| OptionCompare | VisualBasic | Especifica como são feitas comparações de cadeia de caracteres. Os valores válidos são "binary" ou "text". Essa propriedade é equivalente à `/optioncompare` opção de compilador de *vbc.exe* . |
 | OptionExplicit | Visual Basic | Um valor booliano que, quando definido como `true`, exige a declaração explícita de variáveis no código-fonte. Essa propriedade é equivalente à opção do compilador `/optionexplicit`. |
 | OptionInfer | Visual Basic | Um valor booliano que, quando definido como `true`, habilita a inferência de tipos de variáveis. Essa propriedade é equivalente à opção do compilador `/optioninfer`. |
 | OptionStrict | Visual Basic | Um valor booliano que, quando definido como `true`, faz com que a tarefa de build para impor a semântica de tipo estrito restrinja conversões de tipo implícito. Essa propriedade é equivalente à `/optionstrict` opção do compilador de *vbc.exe* . |
-| OutDir | Tudo | Indica o local de saída final para o projeto ou solução. Ao criar uma solução, o OutDir pode ser usado para reunir várias saídas de projeto em um único local. Além disso, o OutDir está incluído em AssemblySearchPaths usado para resolver referências. Por exemplo, *bin\Debug*. |
-| OutputPath | Tudo | Especifica o caminho para o diretório de saída, relativo ao diretório do projeto, por exemplo, *bin\Debug*. |
+| OutDir | Tudo | Indica o local de saída final para o projeto ou solução. Ao criar uma solução, o OutDir pode ser usado para reunir várias saídas de projeto em um único local. Além disso, o OutDir está incluído em AssemblySearchPaths usado para resolver referências. Por exemplo, *bin\Debug* . |
+| OutputPath | Tudo | Especifica o caminho para o diretório de saída, relativo ao diretório do projeto, por exemplo, *bin\Debug* . |
 | OutputType | Tudo |  Especifica o formato do arquivo de saída. Esse parâmetro pode ter um dos seguintes valores:<br /><br /> -   Library. Cria uma biblioteca de códigos. (Valor padrão.)<br />-   Exe. Crie um aplicativo de console.<br />-   Module. Cria um módulo.<br />-   Winexe. Cria um programa baseado em Windows.<br /><br /> Para C# e Visual Basic, essa propriedade é equivalente à `/target` opção. |
 | OverwriteReadOnlyFiles | Tudo | Um valor booliano que indica se você deseja habilitar o build para substituir arquivos somente leitura ou disparar um erro. |
 | PathMap | .NET | Especifica como mapear caminhos físicos para nomes de caminho de origem emitidos pelo compilador. Essa propriedade é equivalente à `/pathmap` opção dos compiladores. |
 | PdbFile | .NET | O nome do arquivo *. pdb* que você está emitindo. Essa propriedade é equivalente à `/pdb` opção do compilador de *csc.exe* . |
 | Plataforma | Tudo | O sistema operacional que você está compilando. Exemplos de builds de .NET Framework são "qualquer CPU", "x86" e "x64". |
 | ProcessorArchitecture | .NET | A arquitetura do processador que é usada quando as referências de assembly são resolvidas. Os valores válidos são "msil," "x86," "amd64" ou "ia64". |
-| ProduceOnlyReferenceAssembly | .NET | Um valor booliano que instrui o compilador a emitir apenas um assembly de referência ao invés do código compilado. Não pode ser usado em conjunto com `ProduceReferenceAssembly`.  Essa propriedade corresponde à opção `/refonly` dos compiladores *vbc.exe* e *csc.exe*. |
-| ProduceReferenceAssembly | .NET | Um valor booliano que, quando definido como `true`, permite a produção de [assemblies de referência](/dotnet/standard/assembly/reference-assemblies) para o assembly atual. `Deterministic` deve ser `true` ao usar esse recurso. Essa propriedade corresponde à opção `/refout` dos compiladores *vbc.exe* e *csc.exe*. |
+| ProduceOnlyReferenceAssembly | .NET | Um valor booliano que instrui o compilador a emitir apenas um assembly de referência ao invés do código compilado. Não pode ser usado em conjunto com `ProduceReferenceAssembly`.  Essa propriedade corresponde à opção `/refonly` dos compiladores *vbc.exe* e *csc.exe* . |
+| ProduceReferenceAssembly | .NET | Um valor booliano que, quando definido como `true`, permite a produção de [assemblies de referência](/dotnet/standard/assembly/reference-assemblies) para o assembly atual. `Deterministic` deve ser `true` ao usar esse recurso. Essa propriedade corresponde à opção `/refout` dos compiladores *vbc.exe* e *csc.exe* . |
 | RemoveIntegerChecks | Visual Basic | Um valor booliano que indica se é necessário desabilitar a verificação de erro de estouro de inteiro. O valor padrão é `false`. Essa propriedade é equivalente à `/removeintchecks` opção do compilador de *vbc.exe* . |
 | RootNamespace | Tudo | O namespace raiz para usar ao nomear um recurso inserido. Este namespace é parte do nome do manifesto do recurso inserido. |
 | Satellite_AlgorithmId | .NET | A ID do *AL.exe* algoritmo de hash a ser usado quando os assemblies satélite são criados. |
@@ -117,7 +119,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Satellite_Win32Icon | .NET | Insere um arquivo de ícone *. ico* no assembly satélite. |
 | Satellite_Win32Resource | .NET | Insere um recurso do Win32 (arquivo *. res* ) no assembly satélite. |
 | SGenToolPath | .NET | Um caminho de ferramenta opcional que indica onde obter *SGen.exe* quando a versão atual do *SGen.exe* é substituída. |
-| SGenUseProxyTypes | .NET | Um valor booliano que indica se os tipos de proxy devem ser gerados pelo *SGen.exe*. Isso se aplica somente quando *GenerateSerializationAssemblies* está definido como on.<br /><br /> O destino SGen usa essa propriedade para definir o sinalizador UseProxyTypes. Essa propriedade assume true como padrão e não há nenhuma interface do usuário para alterar isso. Para gerar o assembly de serialização para tipos não WebService, adicione essa propriedade ao arquivo de projeto e defina-a como false antes de importar o *Microsoft. Common. targets* ou o *C#/vb.targets*. |
+| SGenUseProxyTypes | .NET | Um valor booliano que indica se os tipos de proxy devem ser gerados pelo *SGen.exe* . Isso se aplica somente quando *GenerateSerializationAssemblies* está definido como on.<br /><br /> O destino SGen usa essa propriedade para definir o sinalizador UseProxyTypes. Essa propriedade assume true como padrão e não há nenhuma interface do usuário para alterar isso. Para gerar o assembly de serialização para tipos não WebService, adicione essa propriedade ao arquivo de projeto e defina-a como false antes de importar o *Microsoft. Common. targets* ou o *C#/vb.targets* . |
 | SkipInvalidConfigurations | Tudo | Quando `true` , gere um aviso em combinações de plataforma e configuração inválidas, mas não falhe na compilação; quando `false` ou indefinido (o padrão), gere um erro. |
 | StartupObject | .NET | Especifica a classe ou o módulo que contém o método Main ou procedimento Sub Main. Essa propriedade é equivalente à opção do compilador `/main`. |
 | SubsystemVersion | .NET | Especifica a versão mínima do subsistema que o arquivo executável gerado pode usar. Essa propriedade é equivalente à opção do compilador `/subsystemversion`. Para obter informações sobre o valor padrão dessa propriedade, consulte [/SubSystemVersion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) ou [/SubSystemVersion (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
@@ -134,7 +136,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Win32Manifest | .NET | O nome do arquivo de manifesto deve ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32Manifest`. |
 | Win32Resource | .NET | O nome do arquivo do recurso do Win32 a ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32resource`. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Metadados de itens comuns do MSBuild](common-msbuild-item-metadata.md)

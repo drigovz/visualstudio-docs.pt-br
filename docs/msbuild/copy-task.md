@@ -1,5 +1,7 @@
 ---
 title: Copiar tarefa | Microsoft Docs
+description: Saiba como usar a tarefa de cópia do MSBuild para copiar arquivos para um novo local de arquivo ou pasta no sistema de arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508035"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796219"
 ---
 # <a name="copy-task"></a>tarefa Copy
 
 Copia os arquivos para um novo local no sistema de arquivos.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `Copy`.
 
@@ -74,9 +76,9 @@ O parâmetro `DestinationFolder` ou `DestinationFiles` deve ser especificado, ma
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
-O exemplo a seguir copia os itens na `MySourceFiles` coleção de itens para a pasta *c:\MyProject\Destination*.
+O exemplo a seguir copia os itens na `MySourceFiles` coleção de itens para a pasta *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,9 +97,9 @@ O exemplo a seguir copia os itens na `MySourceFiles` coleção de itens para a p
 </Project>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
-O exemplo a seguir demonstra como fazer uma cópia recursiva. Este projeto copia todos os arquivos recursivamente de *c:\MySourceTree* para *c:\MyDestinationTree*, mantendo a estrutura de diretórios.
+O exemplo a seguir demonstra como fazer uma cópia recursiva. Este projeto copia todos os arquivos recursivamente de *c:\MySourceTree* para *c:\MyDestinationTree* , mantendo a estrutura de diretórios.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -116,7 +118,7 @@ O exemplo a seguir demonstra como fazer uma cópia recursiva. Este projeto copia
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

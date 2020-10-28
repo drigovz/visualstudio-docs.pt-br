@@ -1,5 +1,7 @@
 ---
 title: Comparando propriedades e itens | Microsoft Docs
+description: Saiba como as propriedades e os itens do MSBuild passam informações para tarefas, avaliam condições e armazenam valores que o arquivo de projeto pode referenciar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634403"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796765"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 
@@ -27,7 +29,7 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
 
 ## <a name="scalars-and-vectors"></a>Escalares e vetores
 
-Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar*. Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor*. No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.
+Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar* . Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor* . No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.
 
 ### <a name="target-dependency-injection"></a>Injeção de dependência de destino
 
@@ -185,6 +187,6 @@ O valor de `KeyFileVersion` é definido como "1.0.0.3" e não como "\@(KeyFile->
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

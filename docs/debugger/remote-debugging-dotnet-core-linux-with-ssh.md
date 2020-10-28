@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bc0fa990a79b1855ec382f42248a0f847c3c9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d66181f5e6720348e18c34b735ef29e24c0111a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78200919"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796297"
 ---
 # <a name="remote-debug-net-core-on-linux-using-ssh"></a>Depuração remota do .NET Core no Linux usando SSH
 
@@ -34,23 +34,23 @@ sudo apt-get install openssh-server unzip curl
 
 Para preparar seu aplicativo para depuração:
 
-- Considere o uso de uma configuração de depuração ao compilar o aplicativo. É muito mais difícil depurar o código compilado de varejo (uma configuração de versão) do que o código compilado por depuração. Se você precisar usar uma configuração de versão, primeiro desabilite Apenas Meu Código. Para desabilitar essa configuração, escolha **ferramentas**  >  **Opções**  >  **depuração**e, em seguida, desmarque **habilitar apenas meu código**.
+- Considere o uso de uma configuração de depuração ao compilar o aplicativo. É muito mais difícil depurar o código compilado de varejo (uma configuração de versão) do que o código compilado por depuração. Se você precisar usar uma configuração de versão, primeiro desabilite Apenas Meu Código. Para desabilitar essa configuração, escolha **ferramentas**  >  **Opções**  >  **depuração** e, em seguida, desmarque **habilitar apenas meu código** .
 
-- Verifique se o projeto está configurado para produzir [PDBs portáteis](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (que é a configuração padrão) e verifique se os PBDs estão no mesmo local que o dll. Para configurar isso no Visual Studio, clique com o botão direito do mouse no projeto e escolha **Propriedades**  >  **criar**  >  informações**avançadas**de  >  **depuração**.
+- Verifique se o projeto está configurado para produzir [PDBs portáteis](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) (que é a configuração padrão) e verifique se os PBDs estão no mesmo local que o dll. Para configurar isso no Visual Studio, clique com o botão direito do mouse no projeto e escolha **Propriedades**  >  **criar**  >  informações **avançadas** de  >  **depuração** .
 
 Você pode usar vários métodos para implantar o aplicativo antes da depuração. Por exemplo, você pode:
 
 - Copie as fontes para o computador de destino e crie com ```dotnet build``` o no computador Linux.
 
-- Crie o aplicativo no Windows e transfira os artefatos de compilação para o computador Linux. (Os artefatos de compilação consistem no próprio aplicativo, em todas as bibliotecas de tempo de execução das quais ele pode depender e na *.deps.jsno* arquivo.)
+- Crie o aplicativo no Windows e, em seguida, transfira os artefatos de compilação para o computador Linux. (Os artefatos de compilação consistem no próprio aplicativo, em todas as bibliotecas de tempo de execução das quais ele pode depender e na *.deps.jsno* arquivo.)
 
 ## <a name="attach-the-debugger"></a>Anexar o depurador
 
 Depois que os computadores estiverem configurados, inicie o aplicativo no computador Linux e, em seguida, você estará pronto para anexar o depurador.
 
-1. No Visual Studio, escolha **depurar**  >  **anexar ao processo...**.
+1. No Visual Studio, escolha **depurar**  >  **anexar ao processo...** .
 
-1. Na lista **tipo de conexão** , selecione **SSH**.
+1. Na lista **tipo de conexão** , selecione **SSH** .
 
 1. Altere o **destino de conexão** para o endereço IP ou nome de host do computador de destino.
 
@@ -62,9 +62,9 @@ Depois que os computadores estiverem configurados, inicie o aplicativo no comput
 
    ![Anexar ao processo do Linux](media/remote-debug-linux-over-ssh-attach.png)
 
-1. Escolha **anexar**.
+1. Escolha **anexar** .
 
-1. Na caixa de diálogo que aparece, selecione o tipo de código que você deseja depurar. Escolha **gerenciado (.NET Core para UNIX)**.
+1. Na caixa de diálogo que aparece, selecione o tipo de código que você deseja depurar. Escolha **gerenciado (.NET Core para UNIX)** .
 
 1. Use os recursos de depuração do Visual Studio para depurar o aplicativo.
 

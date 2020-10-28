@@ -1,5 +1,7 @@
 ---
 title: Tarefa CreateItem | Microsoft Docs
+description: Use a tarefa do MSBuild CreateItem para popular as coleções de itens com itens de entrada, permitindo que os itens sejam copiados de uma lista para outra.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634325"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796752"
 ---
 # <a name="createitem-task"></a>Tarefa CreateItem
 
@@ -51,7 +53,7 @@ Popula as coleções de itens com os itens de entrada. Isso permite que os itens
 
  O exemplo de código a seguir cria um novo item denominado `MySourceItemsWithMetadata` da coleção de itens `MySourceItems`. A tarefa `CreateItem` popula a nova coleção de itens com os itens no item `MySourceItems`. Em seguida, ela adiciona uma entrada de metadados adicionais chamada `MyMetadata` com um valor de `Hello` para cada item na nova coleção.
 
- Depois que a tarefa for executada, a coleção de itens `MySourceItemsWithMetadata` conterá os itens *file1.resx* e *file2.resx*, ambos com entradas de metadados para `MyMetadata`. A coleta do item `MySourceItems` permanece inalterada.
+ Depois que a tarefa for executada, a coleção de itens `MySourceItemsWithMetadata` conterá os itens *file1.resx* e *file2.resx* , ambos com entradas de metadados para `MyMetadata`. A coleta do item `MySourceItems` permanece inalterada.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -80,7 +82,7 @@ Popula as coleções de itens com os itens de entrada. Isso permite que os itens
 |---------------------|--------------|
 |`MySourceItemsWithMetadata`|*file1. resx* ( `MyMetadata="Hello"` )<br /><br /> *arquivo2. resx* ( `MyMetadata="Hello"` )|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

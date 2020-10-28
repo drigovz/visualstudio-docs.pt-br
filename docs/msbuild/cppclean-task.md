@@ -1,5 +1,7 @@
 ---
 title: Tarefa CPPClean | Microsoft Docs
+description: Este artigo descreve a Tarefa CPPClean, que é usada para excluir os arquivos temporários que o MSBuild cria quando um projeto C++ é compilado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,20 +21,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a96c7cd67b933e521e3fe5f2d7a909ffa5d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f59b66ab1fc117a29d7ed8db2d380b4b11b437
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634338"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796102"
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
 
-Exclui os arquivos temporários que o MSBuild cria quando um projeto C++ é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.
+Exclui os arquivos temporários que o MSBuild cria quando um projeto C++ é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza* .
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
- A tabela a seguir descreve os parâmetros da tarefa **CPPClean**.
+ A tabela a seguir descreve os parâmetros da tarefa **CPPClean** .
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
@@ -42,6 +44,6 @@ Exclui os arquivos temporários que o MSBuild cria quando um projeto C++ é comp
 |**FilesExcludedFromClean**|Parâmetro `String` opcional.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de arquivos que não serão limpos.|
 |**FoldersToClean**|Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. É possível especificar um caminho completo ou relativo e esse caminho pode conter o símbolo curinga (*).|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

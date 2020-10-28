@@ -1,5 +1,7 @@
 ---
 title: Tarefa CreateVisualBasicManifestResourceName | Microsoft Docs
+description: Use a tarefa MSBuild CreateVisualBasicManifestResourceName para criar um nome de manifesto estilo Visual Basic de um determinado nome de arquivo. resx ou outro recurso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa419001d2e890c87873862f0575607b31d22c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba80c4d52491a70a7bb8e294c9dd6ca2c9664ec3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634286"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796726"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>Tarefa CreateVisualBasicManifestResourceName
 
 Cria um nome de manifesto estilo Visual Basic a partir de um determinado nome de arquivo *. resx* ou outro recurso.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
  A tabela a seguir descreve os parâmetros da [tarefa CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).
 
@@ -45,7 +47,7 @@ Cria um nome de manifesto estilo Visual Basic a partir de um determinado nome de
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

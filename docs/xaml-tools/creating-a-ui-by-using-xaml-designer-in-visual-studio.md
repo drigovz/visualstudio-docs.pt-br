@@ -1,5 +1,7 @@
 ---
 title: Visão geral do Designer XAML
+description: Saiba mais sobre a interface do usuário do espaço de trabalho e os recursos do Designer XAML no Blend para Visual Studio que fornece uma interface visual para ajudá-lo a criar aplicativos baseados em XAML.
+ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507957"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796778"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
@@ -31,9 +33,9 @@ Para usuários avançados, é possível até mesmo [personalizar o Designer XAML
 
 ## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML
 
-O workspace no Designer XAML consiste em vários elementos da interface visual. Isso inclui a *prancheta* (que é a superfície de design visual), o editor XAML, a janela Estrutura de Tópicos do Documento (janela Objetos e Linha do Tempo no Blend para Visual Studio) e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer**.
+O workspace no Designer XAML consiste em vários elementos da interface visual. Isso inclui a *prancheta* (que é a superfície de design visual), o editor XAML, a janela Estrutura de Tópicos do Documento (janela Objetos e Linha do Tempo no Blend para Visual Studio) e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer** .
 
-O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio ou no Blend para Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis**![botão Alternar Painéis no Designer XAML](media/swap-panes.PNG) para mudar qual janela é exibida na parte superior: a prancheta ou o Editor XAML.
+O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio ou no Blend para Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML** . Você pode usar o botão **Alternar Painéis**![botão Alternar Painéis no Designer XAML](media/swap-panes.PNG) para mudar qual janela é exibida na parte superior: a prancheta ou o Editor XAML.
 
 ### <a name="design-view"></a>Modo de exibição de Design
 
@@ -61,11 +63,11 @@ Os adornos de Grade são usados para controlar a largura e a altura de linhas e 
 
 **Alças de redimensionamentos**
 
-As alças de redimensionamento são exibidas em controles selecionados e permitem redimensionar o controle. Quando você redimensiona um controle, os valores de largura e altura geralmente são exibidos para ajudar a dimensionar o controle. Para obter mais informações sobre a manipulação de controles no modo de exibição de **Design**, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+As alças de redimensionamento são exibidas em controles selecionados e permitem redimensionar o controle. Quando você redimensiona um controle, os valores de largura e altura geralmente são exibidos para ajudar a dimensionar o controle. Para obter mais informações sobre a manipulação de controles no modo de exibição de **Design** , confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 **Margens**
 
-As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](xref:Windows.UI.Xaml.FrameworkElement.Margin) em **Layout** na janela **Propriedades**.
+As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](xref:Windows.UI.Xaml.FrameworkElement.Margin) em **Layout** na janela **Propriedades** .
 
 **Adornos de margem**
 
@@ -75,7 +77,7 @@ Use adornos de margem para alterar as margens de um elemento relativo ao respect
 
 Você pode modificar um elemento usando as alças do elemento que são exibidas no artboard ao mover o ponteiro sobre os cantos da caixa azul que circunda um elemento. Essas alças permitem girar, redimensionar, inverter, mover ou adicionar um radiano do canto ao elemento. O símbolo da alça do elemento varia de acordo com a função e é alterado dependendo do local exato do ponteiro. Se você não vir as alças do elemento, verifique se o elemento está selecionado.
 
-No modo de exibição de **Design**, os comandos adicionais da prancheta estão disponíveis na área inferior esquerda da janela, como mostrado aqui:
+No modo de exibição de **Design** , os comandos adicionais da prancheta estão disponíveis na área inferior esquerda da janela, como mostrado aqui:
 
 ![Comandos do modo de exibição de Design](media/xaml-design-view-controls.png)
 
@@ -83,7 +85,7 @@ Estes comandos estão disponíveis na barra de ferramentas:
 
 **Zoom**
 
-O zoom permite dimensionar a superfície de design. Você pode aplicar zoom de 12,5% a 800% ou selecionar opções como **Ajustar à seleção** e **Ajustar tudo**.
+O zoom permite dimensionar a superfície de design. Você pode aplicar zoom de 12,5% a 800% ou selecionar opções como **Ajustar à seleção** e **Ajustar tudo** .
 
 **Exibir/Ocultar grade de ajuste**
 
@@ -107,7 +109,7 @@ Desabilita o [código do projeto](debugging-or-disabling-project-code-in-xaml-de
 
 ### <a name="xaml-view"></a>Exibição XAML
 
-No modo de exibição **XAML**, a janela que contém o editor de XAML é a janela ativa, e o editor de XAML é a ferramenta de criação principal. A linguagem XAML fornece um vocabulário declarativo, com base em XML, para especificar a interface do usuário de um aplicativo. O modo de exibição XAML inclui o IntelliSense, formatação automática, realce de sintaxe e navegação de marcação. A imagem a seguir mostra o modo de exibição XAML com um menu IntelliSense aberto:
+No modo de exibição **XAML** , a janela que contém o editor de XAML é a janela ativa, e o editor de XAML é a ferramenta de criação principal. A linguagem XAML fornece um vocabulário declarativo, com base em XML, para especificar a interface do usuário de um aplicativo. O modo de exibição XAML inclui o IntelliSense, formatação automática, realce de sintaxe e navegação de marcação. A imagem a seguir mostra o modo de exibição XAML com um menu IntelliSense aberto:
 
 ![Exibição XAML](media/xaml-editor.png)
 
@@ -123,8 +125,8 @@ A janela Estrutura de Tópicos do Documento no Visual Studio é semelhante à ja
 
 - [Criar animações](animate-objects-in-xaml-designer.md) (somente no Blend para Visual Studio).
 
-Para exibir a janela de estrutura de tópicos do documento no Visual Studio, na barra de menus, selecione **Exibir**  >  **outra**  >  **estrutura de tópicos do documento**do Windows.
-Para exibir a janela de objetos e linha do tempo no Blend para Visual Studio, na barra de menus, selecione **Exibir**  >  **estrutura de tópicos do documento**.
+Para exibir a janela de estrutura de tópicos do documento no Visual Studio, na barra de menus, selecione **Exibir**  >  **outra**  >  **estrutura de tópicos do documento** do Windows.
+Para exibir a janela de objetos e linha do tempo no Blend para Visual Studio, na barra de menus, selecione **Exibir**  >  **estrutura de tópicos do documento** .
 
 ![Janela Estrutura de Tópicos do Documento no Visual Studio](media/document-outline-window.png)
 
@@ -148,12 +150,12 @@ A janela **Propriedades** permite definir valores de propriedade em controles. E
 
 ![Janela de Propriedades](media/xaml-designer-properties-window.png)
 
-Há várias opções na parte superior da janela **Propriedades**:
+Há várias opções na parte superior da janela **Propriedades** :
 
-- Altere o nome do elemento atualmente selecionado usando a caixa **Nome**.
+- Altere o nome do elemento atualmente selecionado usando a caixa **Nome** .
 - No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado.
-- Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**.
-- Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago.
+- Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria** , **Nome** ou **Fonte** na lista **Organizar por** .
+- Para ver a lista de eventos de um controle, clique no botão **Eventos** , que exibe um símbolo de relâmpago.
 - Para procurar uma propriedade, comece a digitar o nome da propriedade na caixa de pesquisa. A janela **Propriedades** exibe as propriedades que correspondem à pesquisa à medida que você digita.
 
 Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo.
@@ -162,7 +164,7 @@ Algumas propriedades permitem que você defina propriedades avançadas seleciona
 
 Para obter mais informações sobre como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)

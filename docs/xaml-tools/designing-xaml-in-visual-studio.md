@@ -1,18 +1,20 @@
 ---
 title: Criar XAML no Visual Studio e no Blend para Visual Studio
 titleSuffix: ''
+description: Saiba mais sobre os recursos das ferramentas de Design Visual no Visual Studio e Blend para Visual Studio para compilar a interface do usuário e experiências em XAML.
+ms.custom: SEO-VS-2020
 ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649820"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796700"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projetar XAML no Visual Studio e no Blend para Visual Studio
 
@@ -60,7 +62,7 @@ Para aumentar sua produtividade, considere o uso do Blend for Visual Studio para
 
 Para obter mais informações sobre design avançado de XAML, confira [Criar uma interface do usuário usando o Blend para Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do XAML](xaml-overview.md)
 - [Visão geral do Blend para Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

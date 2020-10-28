@@ -1,5 +1,7 @@
 ---
 title: Tarefa CombinePath | Microsoft Docs
+description: Saiba mais sobre como usar a tarefa MSBuild CombinePath para combinar os caminhos especificados em um único caminho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7e6a79198ad54d3432f30fe9b57b3133a94165e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc33c3a413d788bd9a5a30a7db69c4c7766a3392
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288956"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796609"
 ---
 # <a name="combinepath-task"></a>Tarefa CombinePath
 
@@ -62,12 +64,12 @@ Combina os caminhos especificados em um único caminho.
   </Target>
 ```
 
-A única propriedade que `CombinePath` permite ser uma lista é `Paths` , caso em que a saída também é uma lista. Portanto, se `$(PublishRoot)` for *C:\Site1 \\ *e `$(ReleaseDirectory)` for *Release \\ *e `@(LangDirectories)` for *en-US \; fr-fr \\ *, este exemplo criará as pastas:
+A única propriedade que `CombinePath` permite ser uma lista é `Paths` , caso em que a saída também é uma lista. Portanto, se `$(PublishRoot)` for *C:\Site1 \\* e `$(ReleaseDirectory)` for *Release \\* e `@(LangDirectories)` for *en-US \; fr-fr \\* , este exemplo criará as pastas:
 
 - C:\Site1\Release\en-us\
 - C:\Site1\Release\fr-fr\
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

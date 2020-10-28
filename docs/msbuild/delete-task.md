@@ -1,5 +1,7 @@
 ---
 title: Tarefa Delete | Microsoft Docs
+description: Saiba mais sobre parâmetros e considerações sobre como usar a tarefa de exclusão do MSBuild para excluir arquivos especificados.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288904"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796479"
 ---
 # <a name="delete-task"></a>tarefa Delete
 
 Exclui os arquivos especificados.
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `Delete`.
 
@@ -99,7 +101,7 @@ A `Delete` tarefa não fornece uma opção para excluir arquivos somente leitura
 
 Em geral, ao escrever scripts de Build, considere se a sua exclusão é logicamente parte de uma `Clean` operação. Se você precisar definir alguns arquivos a serem limpos como parte de uma operação normal `Clean` , poderá adicioná-los à `@(FileWrites)` lista e eles serão excluídos no próximo `Clean` . Se for necessário mais processamento personalizado, defina um destino e especifique para que ele seja executado definindo o atributo `BeforeTargets="Clean"` ou `AfterTargets="Clean"` , ou defina a versão personalizada dos `BeforeClean` destinos ou `AfterClean` . Consulte [personalizar sua compilação](customize-your-build.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefa RemoveDir](removedir-task.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

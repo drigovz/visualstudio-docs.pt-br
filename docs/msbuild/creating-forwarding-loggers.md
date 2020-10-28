@@ -1,5 +1,7 @@
 ---
 title: Criando agentes de log de encaminhamento | Microsoft Docs
+description: Crie agentes de encaminhamento do MSBuild para melhorar a eficiência do log, permitindo que você escolha os eventos que deseja monitorar ao compilar projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634299"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796570"
 ---
 # <a name="create-forwarding-loggers"></a>Criar agentes de encaminhamento
 
@@ -36,13 +38,13 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
 
 ## <a name="specify-a-forwarding-logger"></a>Especificar um agente de encaminhamento
 
- Depois que o agente de log de encaminhamento tiver sido compilado em um assembly, você deverá dizer ao MSBuild para usá-lo durante as compilações. Para fazer isso, use as `-FileLogger` `-FileLoggerParameters` Opções, e `-DistributedFileLogger` junto com *MSBuild.exe*. A `-FileLogger` opção informa *MSBuild.exe* que o agente de log está diretamente anexado. A opção `-DistributedFileLogger` significa que há um arquivo de log por nó. Para definir parâmetros no agente de encaminhamento, use a opção `-FileLoggerParameters`. Para obter mais informações sobre essas e outras opções de *MSBuild.exe* , consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
+ Depois que o agente de log de encaminhamento tiver sido compilado em um assembly, você deverá dizer ao MSBuild para usá-lo durante as compilações. Para fazer isso, use as `-FileLogger` `-FileLoggerParameters` Opções, e `-DistributedFileLogger` junto com *MSBuild.exe* . A `-FileLogger` opção informa *MSBuild.exe* que o agente de log está diretamente anexado. A opção `-DistributedFileLogger` significa que há um arquivo de log por nó. Para definir parâmetros no agente de encaminhamento, use a opção `-FileLoggerParameters`. Para obter mais informações sobre essas e outras opções de *MSBuild.exe* , consulte [referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="multi-processor-aware-loggers"></a>Agentes com reconhecimento de multiprocessador
 
  Quando você cria um projeto em um sistema com vários processadores, as mensagens de build de cada processador não são intercaladas automaticamente em uma sequência unificada. Em vez disso, você deve estabelecer uma prioridade de agrupamento de mensagens usando a classe <xref:Microsoft.Build.Framework.BuildEventContext> que está anexada a cada mensagem. Para obter mais informações sobre o build de multiprocessador, confira [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Agentes de build](../msbuild/build-loggers.md)

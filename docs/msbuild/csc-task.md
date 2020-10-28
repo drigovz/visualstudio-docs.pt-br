@@ -1,5 +1,7 @@
 ---
 title: Tarefa Csc | Microsoft Docs
+description: Este artigo descreve a tarefa do CSC do MSBuild, que encapsula o compilador C#, csc.exe e produz arquivos. exe,. dll ou. netmodule.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f77a2ab5bfa137ffbab13f92b15707f73c7869e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167417"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796557"
 ---
 # <a name="csc-task"></a>tarefa Csc
 
-Encapsula *csc.exe*e produz executáveis (arquivos *. exe* ), bibliotecas de vínculo dinâmico (arquivos *. dll* ) ou módulos de código (arquivos *. netmodule* ). Para obter mais informações sobre *csc.exe*, consulte [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).
+Encapsula *csc.exe* e produz executáveis (arquivos *. exe* ), bibliotecas de vínculo dinâmico (arquivos *. dll* ) ou módulos de código (arquivos *. netmodule* ). Para obter mais informações sobre *csc.exe* , consulte [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `Csc`.
 
@@ -60,12 +62,12 @@ A tabela a seguir descreve os parâmetros da tarefa `Csc`.
 | `ModuleAssemblyName` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do assembly do qual esse módulo fará parte. |
 | `NoConfig` | Parâmetro `Boolean` opcional.<br /><br /> Se `true` , diz ao compilador para não compilar com o arquivo *CSC. rsp* . Para obter mais informações, consulte [-noconfig (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option). |
 | `NoLogo` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, suprimirá a exibição de informações da barra de notificação do compilador. Para obter mais informações, consulte [-nologons (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option). |
-| `NoStandardLib` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, impedirá a importação de *mscorlib.dll*, que define todo o namespace System. Use esse parâmetro se desejar definir ou criar seus próprios objetos e namespace System. Para obter mais informações, consulte [-nostdlib (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
+| `NoStandardLib` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, impedirá a importação de *mscorlib.dll* , que define todo o namespace System. Use esse parâmetro se desejar definir ou criar seus próprios objetos e namespace System. Para obter mais informações, consulte [-nostdlib (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option). |
 | `NoWin32Manifest` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, não inclua o manifesto Win32 padrão. |
 | `Optimize` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, habilitará as otimizações. Se for `false`, desabilitará as otimizações. Para obter mais informações, consulte [-Optimize (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option). |
 | `OutputAssembly` | Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome do arquivo de saída. Para obter mais informações, consulte [-out (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). |
 | `OutputRefAssembly` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do arquivo do assembly de referência de saída. Para obter mais informações, confira [-refout (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option). |
-| `PdbFile` | Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo de informações de depuração. O nome padrão é o nome do arquivo de saída com uma extensão *.pdb*. |
+| `PdbFile` | Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo de informações de depuração. O nome padrão é o nome do arquivo de saída com uma extensão *.pdb* . |
 | `Platform` | Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64` ou `anycpu`. O padrão é `anycpu`. Para obter mais informações, consulte [-Platform (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
 | `References` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Para obter mais informações, confira [-reference (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Você pode especificar um alias de referência C# em um arquivo do MSBuild adicionando os metadados `Aliases` ao item de "referência" original. Por exemplo, para definir o alias "LS1" na seguinte linha de comando Csc:<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> você usará:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída.<br /><br /> Os itens passados para esse parâmetro podem ter entradas de metadados opcionais chamadas `LogicalName` e `Access`. `LogicalName` corresponde ao parâmetro `identifier` da opção `/resource` e `Access` corresponde ao parâmetro `accessibility-modifier`. Para obter mais informações, consulte [-Resource (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
@@ -78,9 +80,9 @@ A tabela a seguir descreve os parâmetros da tarefa `Csc`.
 | `WarningLevel` | Parâmetro `Int32` opcional.<br /><br /> Especifica o nível de aviso a ser exibido pelo compilador. Para obter mais informações, consulte [-WARN (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos a serem tratados como erros. Para obter mais informações, consulte [-warnaserror (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Esse parâmetro substitui o parâmetro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos que não são tratados como erros. Para obter mais informações, consulte [-warnaserror (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Esse parâmetro será útil apenas se o parâmetro `TreatWarningsAsErrors` for definido como `true`. |
-| `Win32Icon` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo *. ico* no assembly, que dá ao arquivo de saída a aparência desejada no **Explorador de arquivos**. Para obter mais informações, consulte [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
+| `Win32Icon` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo *. ico* no assembly, que dá ao arquivo de saída a aparência desejada no **Explorador de arquivos** . Para obter mais informações, consulte [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). |
 | `Win32Manifest` | Parâmetro `String` opcional.<br /><br /> Especifica o manifesto Win32 a ser incluído. |
-| `Win32Resource` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo de recurso do Win32 (*. res*) no arquivo de saída. Para obter mais informações, consulte [-win32res (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
+| `Win32Resource` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo de recurso do Win32 ( *. res* ) no arquivo de saída. Para obter mais informações, consulte [-win32res (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
@@ -95,7 +97,7 @@ O exemplo a seguir usa a tarefa `Csc` para compilar um executável com base nos 
     EmitDebugInformation="true" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

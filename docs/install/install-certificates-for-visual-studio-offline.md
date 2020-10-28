@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037296"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750172"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar os certificados necessários para instalação offline do Visual Studio
 
@@ -38,7 +38,7 @@ Há três opções para instalar ou atualizar certificados em um ambiente offlin
 
 Ao criar um layout de rede, os certificados necessários são baixados para a pasta Certificados. Depois, você pode instalar manualmente os certificados clicando duas vezes em cada um dos arquivos de certificado e clicando no assistente Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
 
-**Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, é possível instalar manualmente os certificados; para isso, basta clicar com o botão direito do mouse em cada um dos arquivos de certificado, selecionar Instalar Certificado e clicar no assistente do Gerenciador de Certificados.
+**Atualização** : no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, é possível instalar manualmente os certificados; para isso, basta clicar com o botão direito do mouse em cada um dos arquivos de certificado, selecionar Instalar Certificado e clicar no assistente do Gerenciador de Certificados.
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, crie o arquivo em lotes com os seguintes comandos:
+   **Atualização** : no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, crie o arquivo em lotes com os seguintes comandos:
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -117,9 +117,9 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
    Como alternativa, crie um arquivo em lotes que usa certutil.exe, que é fornecido com o Windows, com os seguintes comandos:
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -148,9 +148,9 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
   * Certificado intermediário: **ACP de Assinatura de Código da Microsoft**
     * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
   * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-    * Obrigatórios. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+    * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
-**Atualização**: no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema. Esses certificados são armazenados em arquivos .cer ao invés de arquivos .p12.
+**Atualização** : no caso do Visual Studio 2017 versão 15.8 versão prévia 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema. Esses certificados são armazenados em arquivos .cer ao invés de arquivos .p12.
 
 ::: moniker-end
 
@@ -164,7 +164,7 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
     * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **Vs_installer_opc.SignCertificates.cer** contém:
   * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-    * Obrigatórios. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+    * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
 O Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
@@ -178,24 +178,24 @@ Quando uma assinatura é verificada em um ambiente online, as APIs do Windows s�
 
 Uma maneira de verificar no sistema de instalação é seguir estas etapas:
 
-1. Execute **mmc.exe**.<br/>
-  a. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
-  b. Clique duas vezes em **Certificados**, selecione **Conta do computador** e clique em **Avançar**.<br/>
-  c. Selecione **Computador local**, clique em **Concluir** e depois em **OK**.<br/>
-  d. Expanda **Certificados (Computador Local)**.<br/>
-  e. Expanda **Autoridades de Certificação Confiáveis** e selecione **Certificados**.<br/>
+1. Execute **mmc.exe** .<br/>
+  a. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in** .<br/>
+  b. Clique duas vezes em **Certificados** , selecione **Conta do computador** e clique em **Avançar** .<br/>
+  c. Selecione **Computador local** , clique em **Concluir** e depois em **OK** .<br/>
+  d. Expanda **Certificados (Computador Local)** .<br/>
+  e. Expanda **Autoridades de Certificação Confiáveis** e selecione **Certificados** .<br/>
     * Verifique os certificados raiz necessários para esta lista.<br/>
 
-   f. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados**.<br/>
+   f. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados** .<br/>
     * Verifique os certificados intermediários necessários desta lista.<br/>
 
-2. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
-  a. Clique duas vezes em **Certificados**, selecione **Minha conta de usuário**, clique em **Concluir** e em **OK**.<br/>
-  b. Expandir **certificados – usuário atual**.<br/>
-  c. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados**.<br/>
+2. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in** .<br/>
+  a. Clique duas vezes em **Certificados** , selecione **Minha conta de usuário** , clique em **Concluir** e em **OK** .<br/>
+  b. Expandir **certificados – usuário atual** .<br/>
+  c. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados** .<br/>
     * Verifique os certificados intermediários necessários desta lista.<br/>
 
-Se os nomes dos certificados não estiverem na coluna **Emitido Para**, eles terão que ser instalados.  Se um certificado intermediário estiver apenas no repositório de certificados intermediários do **Usuário Atual**, ele só estará disponível para o usuário que estiver conectado. Talvez ele precise ser instalado para outros usuários.
+Se os nomes dos certificados não estiverem na coluna **Emitido Para** , eles terão que ser instalados.  Se um certificado intermediário estiver apenas no repositório de certificados intermediários do **Usuário Atual** , ele só estará disponível para o usuário que estiver conectado. Talvez ele precise ser instalado para outros usuários.
 
 ## <a name="install-visual-studio"></a>Instalar o Visual Studio
 
@@ -203,7 +203,7 @@ Depois de instalar os certificados, a implantação do Visual Studio pode contin
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -1,5 +1,7 @@
 ---
 title: Diagnosticando falhas de tarefas | Microsoft Docs
+description: Saiba como diagnosticar falhas de tarefas do MSBuild identificando a tarefa com falha, o nome da ferramenta e outras informações.
+ms.custom: SEO-VS-2020
 ms.date: 09/25/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf55cc529be8fc61e05d1a76096e26d965aa136
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593272"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796466"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnosticar falhas de tarefas
 

@@ -1,6 +1,8 @@
 ---
 title: Teclas modificadoras da ferramenta Seleção Direta
 titleSuffix: Blend for Visual Studio
+description: Saiba mais sobre atalhos de teclado na ferramenta Seleção Direta no Blend para Visual Studio que você pode usar para modificar a forma de um caminho existente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0931eef87bce1a942e9c8740d248d213f1b778a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfb98ae063824b29bc3bb8719a034defdeec5293
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332311"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796687"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend para Visual Studio
 
-A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um demarcador existente com a ferramenta **Seleção Direta**![ferramenta Seleção Direta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta**.
+A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um demarcador existente com a ferramenta **Seleção Direta**![ferramenta Seleção Direta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta** .
 
 |Para realizar esta ação|Faça isto|Ponteiro|
 | - |-------------|-------------|
@@ -33,7 +35,7 @@ A tabela a seguir lista os atalhos que podem ser usados para modificar a forma d
 |Pegue um segmento e dobre-o em uma curva para passar através da posição do ponteiro|Passe o mouse sobre um segmento em um demarcador, mantenha a tecla **Alt** pressionada e, em seguida, arraste o segmento|![Pegue um segmento e dobre-o em uma curva para passar através da posição do ponteiro](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> Converta ponteiro do segmento|
 |Ajustar uma extremidade de uma tangente independentemente do outro lado|Selecione diretamente um ponto ou um segmento, mantenha a tecla **Alt** pressionada e, em seguida, arraste um ponto final da tangente|![Ajustar uma extremidade de uma tangente independentemente do outro lado](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> Converta o ponteiro da tangente|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Teclas modificadoras da prancheta](../xaml-tools/artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras da ferramenta Caneta](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
