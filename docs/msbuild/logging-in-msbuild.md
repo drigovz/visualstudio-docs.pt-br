@@ -1,5 +1,7 @@
 ---
 title: Registrando em logs no MSBuild | Microsoft Docs
+description: Saiba como o log do MSBuild fornece uma maneira de monitorar o progresso da compilação capturando eventos de compilação, mensagens, avisos e erros em um arquivo de log.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de830003571f1f648cf06be634d9a773b95269f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633545"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904332"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
 
@@ -43,6 +45,6 @@ O registro em logs oferece uma maneira de monitorar o andamento de um build. O r
 
  Descreve como criar agentes personalizados de encaminhamento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Descreve como criar vários projetos mais rapidamente executando-os em paralelo.

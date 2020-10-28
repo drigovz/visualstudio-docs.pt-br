@@ -1,21 +1,21 @@
 ---
-title: Usar o recurso de Uso Máximo no Portal de Administração
+title: Usar o recurso de uso máximo nas assinaturas do Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022159"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904489"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usar o recurso de uso máximo para controlar o número de assinaturas atribuídas
-Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 
+Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você comprou e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, tanto dentro do ano passado quanto durante o período de seus contratos. 
 
 ## <a name="maximum-usage-overview"></a>Visão geral de uso máximo
 Assista ao vídeo ou Continue lendo para saber como usar o recurso de uso máximo. 
@@ -32,7 +32,7 @@ Para ver o número máximo de assinaturas atribuídas para qualquer nível de as
 3. O "uso máximo de 12 meses" será exibido e o número máximo de assinaturas atribuídas no ano passado para cada nível será exibido, junto com o mês em que você atingiu o pico.    
 
 ## <a name="view-your-assignment-history"></a>Exibir o histórico de atribuições
-Além de ver o pico de atribuições para cada nível de assinatura, você pode ver uma conta em execução da atividade no contrato, incluindo compras e atribuições, clicando no botão **Exportar o relatório completo**.  (Talvez seja necessário rolar para baixo para ver o botão.)  
+Além de ver o pico de atribuições para cada nível de assinatura, você pode ver uma conta em execução da atividade no contrato, incluindo compras e atribuições, clicando no botão **Exportar o relatório completo** .  (Talvez seja necessário rolar para baixo para ver o botão.)  
 
 > [!div class="mx-imgBorder"]
 > ![Relatório Completo do Uso Máximo](_img/maximum-usage/maximum-usage-full-report.png "O relatório completo inclui um registro de todas as suas compras e atribuições de assinatura.")
@@ -55,5 +55,5 @@ R: as informações na visão geral mostram as atribuições *atuais* e as assin
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-- Se você tiver alguma dúvida sobre atribuições de assinatura ou em outros aspectos do portal de administração, entre em contato com https://visualstudio.microsoft.com/subscriptions/support/ para obter assistência. 
+- Se você tiver alguma dúvida sobre as atribuições de assinatura ou outros aspectos do portal de administração, entre em contato com https://visualstudio.microsoft.com/subscriptions/support/ para obter assistência. 
 - Saiba mais sobre o que fazer se você atribuir mais assinaturas que comprou, chamadas de [superalocações](handle-overclaimed-license.md).

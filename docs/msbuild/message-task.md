@@ -1,5 +1,7 @@
 ---
 title: Tarefa de mensagem | Microsoft Docs
+description: Saiba mais sobre os parâmetros e as configurações da tarefa de mensagem do MSBuild, que registra as mensagens durante as compilações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b7a2854220a7ee85fd680cedd8c8e0c5c3ada89
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865356"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903837"
 ---
 # <a name="message-task"></a>tarefa de mensagem
 
@@ -62,7 +64,7 @@ Registra uma mensagem durante a compilação.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)

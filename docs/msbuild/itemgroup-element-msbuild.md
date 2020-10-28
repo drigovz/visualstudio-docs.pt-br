@@ -1,5 +1,7 @@
 ---
 title: Elemento ItemGroup (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento do grupo de itens do MSBuild, que contém um conjunto de elementos de item definidos pelo usuário. Cada item deve ser um filho de um rowgroup.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288969"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903613"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -93,7 +95,7 @@ Os RowGroups podem ter condições aplicadas usando o `Condition` atributo. Ness
 
 O `Label` atributo é usado em alguns sistemas de compilação como uma maneira de controlar os comportamentos de compilação. Você pode usá-lo somente em declarações, como uma maneira de criar scripts MSBuild mais compreensíveis ou como uma configuração de controle para afetar as ações de compilação.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

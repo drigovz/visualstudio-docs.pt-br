@@ -1,18 +1,18 @@
 ---
-title: Microsoft Azure benefício | Microsoft Docs
+title: Microsoft Azure benefício em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: de1bfa9591a0dae409ec526429fa0496f3408703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353090"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903644"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -24,15 +24,15 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
    > [!div class="mx-imgBorder"]
    > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png "Clique no botão ' Ativar ' no bloco do Azure para começar.")
 
-3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e, em seguida, selecionar **Avançar**.
+3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e, em seguida, selecionar **Avançar** .
    > [!div class="mx-imgBorder"]
    > ![Inscrição do Azure](_img/vs-azure/vs-azure-about-you.png "Adicione suas informações de contato pessoal à sua assinatura do Azure.")
 
-4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e selecione **verificar código**.   
+4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e selecione **verificar código** .   
    > [!div class="mx-imgBorder"]
    > ![Preparação do Azure](_img/vs-azure/vs-azure-identity.png "Solicite um código de verificação e, em seguida, insira-o para continuar.")
 
-5. Para a etapa final, marque a caixa de seleção para aceitar os termos e, em seguida, selecione **inscrever-se**.  Isso é tudo!
+5. Para a etapa final, marque a caixa de seleção para aceitar os termos e, em seguida, selecione **inscrever-se** .  Isso é tudo!
    > [!div class="mx-imgBorder"]
    > ![Inscrever-se no Azure](_img/vs-azure/vs-azure-agreement.png "Clique no botão "inscrever-se" para concluir a criação de sua assinatura do Azure.")
 
@@ -50,11 +50,11 @@ Se sua assinatura do Visual Studio expirar ou for removida, todos os benefícios
 
 Há várias maneiras de continuar usando um crédito mensal para o Azure.  Para salvar os recursos do Azure, você precisará [transferir seus recursos](/azure/azure-resource-manager/management/move-resource-group-and-subscription) para outra assinatura do Azure, independentemente da ação escolhida abaixo. 
 
-- **Se você comprar sua assinatura do Visual Studio diretamente**, adquira uma nova assinatura ou renove sua assinatura por meio de Microsoft Store.  
+- **Se você comprar sua assinatura do Visual Studio diretamente** , adquira uma nova assinatura ou renove sua assinatura por meio de Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Se alguém em sua organização comprar assinaturas para sua organização**, [entre em contato com o administrador da assinatura do Visual Studio](./contact-my-admin.md) e solicite uma assinatura que forneça o crédito mensal de que você precisa.  
+- **Se alguém em sua organização comprar assinaturas para sua organização** , [entre em contato com o administrador da assinatura do Visual Studio](./contact-my-admin.md) e solicite uma assinatura que forneça o crédito mensal de que você precisa.  
 - **Se você tiver outra assinatura ativa do Visual Studio** no mesmo nível de assinatura associado a outro conta Microsoft, você poderá transferir o benefício do Azure para outra assinatura ativa do Visual Studio [adicionando uma conta alternativa](./manage-vs-subscriptions.md#managing-my-profile) no [portal de assinaturas](https://my.visualstudio.com/subscriptions)do Visual Studio.  
 
 Use a tabela de qualificação abaixo para determinar quantos créditos estão incluídos em cada tipo de assinatura.  

@@ -1,5 +1,7 @@
 ---
 title: Elemento Item (MSBuild) | Microsoft Docs
+description: Saiba como o MSBuild usa o elemento item para conter um item definido pelo usuário e seus metadados. Cada item deve ser um filho de um elemento do grupo de itens.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289008"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904643"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
@@ -99,7 +101,7 @@ Os elementos `Item` definem entradas no sistema de compilação e são agrupados
 
 O uso de Notation @ ( \<myType> ) permite que uma coleção de itens do tipo \<myType> seja expandida em uma lista delimitada por ponto e vírgula de cadeias de caracteres e passada para um parâmetro. Se o parâmetro for do tipo `string`, então o valor do parâmetro será a lista de elementos, separados por ponto e vírgula. Se o parâmetro for uma matriz de cadeias de caracteres (`string[]`), então cada elemento será inserido na matriz com base na localização dos pontos e vírgulas. Se o parâmetro de tarefa for do tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, então o valor é o conteúdo da coleção de itens juntamente com quaisquer metadados anexados. Para delimitar cada item usando um caractere que não seja um ponto e vírgula, use a sintaxe @(\<myType>, '\<separator>').
 
-O mecanismo do MSBuild pode avaliar curingas como `*` e `?` e caracteres curinga recursivos, como * / \* \* / \* . cs*. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
+O mecanismo do MSBuild pode avaliar curingas como `*` e `?` e caracteres curinga recursivos, como */ \* \* / \* . cs* . Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Exemplos
 
@@ -124,7 +126,7 @@ O exemplo de código a seguir mostra como usar o atributo `Update` para modifica
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Itens](../msbuild/msbuild-items.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

@@ -1,5 +1,7 @@
 ---
 title: Definições de Itens | Microsoft Docs
+description: Saiba como o MSBuild usa o rowgroup e o ItemDefinitionGroup para declarar metadados para itens em arquivos de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d6a2a30af4fb29a8d9e924c44c1570ff1efe29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633701"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904655"
 ---
 # <a name="item-definitions"></a>Definições de item
 
@@ -74,7 +76,7 @@ Os valores dos metadados definidos em um ItemDefinitionGroup podem vir de vária
 
 - Variável de ambiente
 
-- Propriedade global (na linha de comando *MSBuild.exe*)
+- Propriedade global (na linha de comando *MSBuild.exe* )
 
 - Propriedade reservada
 

@@ -1,5 +1,7 @@
 ---
 title: Tarefa MergeLocalizationDirectives | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa MergeLocalizationDirectives para mesclar os atributos de localização e comentários de arquivos de formato binário XAML em um único arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633493"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903882"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Tarefa MergeLocalizationDirectives
 
@@ -38,7 +40,7 @@ A <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> tarefa mescla
 
 ## <a name="remarks"></a>Comentários
 
-Você pode adicionar atributos de localização e comentários ao conteúdo XAML. Com o suporte à localização do Windows Presentation Foundation (WPF), você pode distribuir atributos de localização e comentários e colocá-los em um arquivo *. loc* separado do assembly gerado. Você pode fazer isso usando o atributo **LocalizationPropertyStorage**. Para obter mais informações sobre atributos de localização e comentários, bem como sobre **LocalizationPropertyStorage**, confira [Atributos de localização e comentários](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+Você pode adicionar atributos de localização e comentários ao conteúdo XAML. Com o suporte à localização do Windows Presentation Foundation (WPF), você pode distribuir atributos de localização e comentários e colocá-los em um arquivo *. loc* separado do assembly gerado. Você pode fazer isso usando o atributo **LocalizationPropertyStorage** . Para obter mais informações sobre atributos de localização e comentários, bem como sobre **LocalizationPropertyStorage** , confira [Atributos de localização e comentários](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Exemplo
 
@@ -57,7 +59,7 @@ O exemplo a seguir mescla os comentários de localização de vários arquivos d
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas do WPF MSBuild](../msbuild/wpf-msbuild-task-reference.md)

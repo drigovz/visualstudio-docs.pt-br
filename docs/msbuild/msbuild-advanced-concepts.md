@@ -1,5 +1,7 @@
 ---
 title: Conceitos avançados do MSBuild | Microsoft Docs
+description: Confira links para artigos que descrevem como usar técnicas avançadas para melhorar as compilações que você executa usando o MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289281"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903473"
 ---
 # <a name="msbuild-advanced-concepts"></a>Conceitos avançados do MSBuild
 
@@ -32,7 +34,7 @@ Os documentos desta seção descrevem como usar técnicas avançadas para aprimo
 |[Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)|Descreve como compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework.|
 |[Práticas recomendadas](../msbuild/msbuild-best-practices.md)|Recomenda as melhores práticas para escrever scripts MSBuild.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Registrando em log no MSBuild](../msbuild/logging-in-msbuild.md)

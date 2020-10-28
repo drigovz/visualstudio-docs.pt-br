@@ -7,18 +7,18 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Configurando administradores para assinaturas mensais
-ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91006105"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904244"
 ---
-# <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
+# <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
 
 As assinaturas mensais do Visual Studio são gerenciadas por administradores. Essas pessoas podem atribuir assinaturas, editar atribuições, adicionar ou excluir assinaturas e executar outras tarefas de gerenciamento de assinatura.
 
-## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>O proprietário da assinatura do Azure é o primeiro administrador
+## <a name="the-azure-subscription-owner-is-the-first-admin"></a>O proprietário da assinatura do Azure é o primeiro administrador
 
 Quando você adquire assinaturas mensais do Visual Studio, como o proprietário da assinatura do Azure usada para fazer as compras, você é automaticamente configurado como um administrador para essas assinaturas.
 
@@ -28,24 +28,24 @@ Depois de comprar assinaturas, será possível acessar o [Portal de Administraç
 
 Como o proprietário da assinatura do Azure usado para comprar as assinaturas mensais, você também pode atribuir administradores adicionais.
 
-## <a name="add-administrators"></a>Adicionar administradores
+## <a name="add-admins"></a>Adicionar administradores
 
 Para adicionar administradores:
 
 1. Conecte-se ao portal do Azure em [Portal.Azure.com](https://portal.azure.com).
 2. Entre com a conta que você usou para comprar as assinaturas mensais do Visual Studio.
-3. Em **Serviços do Azure**, escolha **Gerenciamento de custos + cobrança**.
+3. Em **Serviços do Azure** , escolha **Gerenciamento de custos + cobrança** .
    > [!div class="mx-imgBorder"]
    > ![Escolha gerenciamento de custos + cobrança em serviços do Azure](_img/cloud-admin/azure-cost-billing.png "Escolha o gerenciamento de custos no grupo de serviços do Azure")
 4. Na lista **minhas assinaturas** , escolha a assinatura do Azure que você usou para fazer a compra.
    > [!div class="mx-imgBorder"]
    > ![Escolha uma assinatura](_img/cloud-admin/subscription-list.png "Escolha a assinatura do Azure que você deseja usar para fazer sua compra.")
-5. Clique em **controle de acesso (iam)**, que está localizado próximo à parte superior da lista no painel de navegação esquerdo.
+5. Clique em **controle de acesso (iam)** , que está localizado próximo à parte superior da lista no painel de navegação esquerdo.
 6. Clique na guia **Adicionar** na parte superior da página.
-7. Clique em **Adicionar atribuição de função**.
+7. Clique em **Adicionar atribuição de função** .
    > [!div class="mx-imgBorder"]
    > ![Escolher controle de acesso, adicionar, adicionar atribuição de função](_img/cloud-admin/access-control-add.png "Escolha controle de acesso na lista à esquerda e, em seguida, escolha Adicionar.")
-8. No painel de submenu à direita, clique na lista suspensa **Função** na parte superior do painel, role para baixo e selecione **Administrador de Acesso do Usuário**.
+8. No painel de submenu à direita, clique na lista suspensa **Função** na parte superior do painel, role para baixo e selecione **Administrador de Acesso do Usuário** .
 9. Na lista de usuários role para baixo até o usuário que você deseja tornar administrador e selecione-o. 
    > [!div class="mx-imgBorder"]
    > ![Escolher função, administrador de acesso do usuário](_img/cloud-admin/add-role-user-access-admin.png "Escolha função, selecione administrador de acesso do usuário e, em seguida, selecione o nome do usuário para torná-lo um administrador.")
@@ -55,7 +55,7 @@ Para adicionar administradores:
 Agora, o novo administrador pode entrar no [portal de administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas mensais da lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
 
 > [!NOTE]
-> Se você vir os usuários com acesso para editar suas assinaturas mensais que você não estabeleceu como administradores, eles podem ter funções na assinatura subjacente do Azure que permitem gerenciar assinaturas. Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador. Para obter mais informações, visite [Adicionar gerentes de cobrança](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
+> Se você vir os usuários com acesso para editar suas assinaturas mensais que você não estabeleceu como administradores, eles podem ter funções na assinatura subjacente do Azure que permitem gerenciar assinaturas. Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador. Para obter mais informações, visite [Adicionar gerentes de cobrança](/azure/devops/organizations/billing/add-backup-billing-managers).
 
 Para obter informações sobre assinaturas mensais do Visual Studio, consulte a [visão geral](vscloud-overview.md) em comprando assinaturas. Para comprar as assinaturas mensais do Visual Studio, visite a Visual Studio Marketplace em [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 

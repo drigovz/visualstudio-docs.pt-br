@@ -1,5 +1,7 @@
 ---
 title: Elemento Import (MSBuild) | Microsoft Docs
+description: Saiba como o MSBuild usa o elemento de importação para importar o conteúdo de um arquivo de projeto para outro arquivo de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094493"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903961"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 
@@ -32,7 +34,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 \<Project>
 \<Import>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Import Project="ProjectPath"
@@ -113,7 +115,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

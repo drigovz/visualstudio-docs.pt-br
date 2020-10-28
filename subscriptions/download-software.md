@@ -1,25 +1,25 @@
 ---
 title: Baixar títulos de software em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005594"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903627"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
 
 Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura Visual Studio Enterprise e uma assinatura de Visual Studio Professional associadas à mesma ID de entrada, os downloads mostrados serão aqueles incluídos na assinatura do Enterprise, mesmo que você esteja exibindo os benefícios de sua assinatura profissional no momento.  
 
-Se sua assinatura for fornecida por seu trabalho ou escola, o administrador de assinaturas controlará se você tem acesso aos downloads. Desabilitar o acesso a downloads também desabilita o acesso às chaves do produto. Se você não tiver acesso a downloads e chaves de produto e precisar deles, [contate o administrador](contact-my-admin.md).
+Se sua assinatura for fornecida por seu trabalho ou escola, o administrador de assinaturas controlará se você tem acesso aos downloads. Desabilitar o acesso a downloads também desabilita o acesso às chaves do produto. Se você não tiver acesso a downloads e chaves de produto e precisar deles, [entre em contato com seu administrador](contact-my-admin.md).
 
 > [!NOTE]
 > Estamos cientes de um problema em relação à disponibilidade de chaves do produto Microsoft 365.  Estamos investigando a causa e atualizaremos este artigo quando o problema for resolvido. 

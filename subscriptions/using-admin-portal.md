@@ -1,18 +1,18 @@
 ---
-title: Introdução ao portal de administração de assinaturas | Visual Studio Marketplace
+title: Introdução ao portal de administração de assinaturas do Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio da sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353298"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904552"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
 
@@ -25,7 +25,7 @@ Faça um tour pelo portal.
 ## <a name="important-considerations"></a>Considerações importantes
 Tenha esses pontos em mente ao usar o portal de administração de assinaturas do Visual Studio:
 - **As assinaturas do Visual Studio são licenciadas por usuário.** Cada assinante pode usar o software em quantos computadores forem necessários para desenvolvimento e teste.
-- **Atribua apenas um nível de assinatura para cada Assinante**, correspondente à assinatura do Visual Studio que sua organização adquiriu. Se houver assinantes com mais de um nível de assinatura atribuído, edite as configurações para que eles fiquem com apenas uma.
+- **Atribua apenas um nível de assinatura para cada Assinante** , correspondente à assinatura do Visual Studio que sua organização adquiriu. Se houver assinantes com mais de um nível de assinatura atribuído, edite as configurações para que eles fiquem com apenas uma.
 - **O nível de assinatura de um assinante precisará ser atualizado** quando a assinatura for atualizada (após a compra de um licença de “step-up”) ou renovada para um nível inferior.
 - **Não compartilhe assinaturas entre assinantes.** As assinaturas devem ser atribuídas a indivíduos nomeados.  A atribuição de assinaturas a equipes não é permitida.  Você deverá atribuir uma assinatura a qualquer pessoa que usar completa ou parcialmente os benefícios da assinatura (software para desenvolvimento e teste, Microsoft Azure, e-learning, etc.).
 
@@ -66,7 +66,7 @@ Para obter mais informações sobre o contrato que você está exibindo, selecio
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Saiba mais as políticas dos administradores:
+Saiba mais sobre as responsabilidades para administradores:
 - [Visão geral das responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)

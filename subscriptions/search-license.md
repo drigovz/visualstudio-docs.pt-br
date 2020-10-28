@@ -6,19 +6,19 @@ manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 09/21/2020
 ms.topic: how-to
-description: Saiba como os administradores podem localizar assinantes individuais ou grupos no portal de administração.
-ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: Saiba como os administradores podem localizar assinantes ou grupos individuais no portal de administração.
+ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022224"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904546"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Pesquisar e filtrar assinantes em assinaturas do Visual Studio
 O Portal de Administração de Assinaturas do Visual Studio permite encontrar um subconjunto específico de assinantes com base em vários critérios. Você pode filtrar a lista de assinantes por nome, endereço de email, nível de assinatura e outras informações.
 
 ## <a name="to-filter-the-subscriber-list"></a>Para filtrar a lista de assinantes
-1. Para pesquisar um grupo específico de assinantes, selecione a guia **Filtrar**.
+1. Para pesquisar um grupo específico de assinantes, selecione a guia **Filtrar** .
    > [!div class="mx-imgBorder"]
    > ![Selecione Filtrar para pesquisar uma lista de assinantes](_img/search-filter/filter-list.png "Clique em filtrar para inserir critérios para limitar as assinaturas exibidas.")
 

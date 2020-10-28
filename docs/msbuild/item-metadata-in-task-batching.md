@@ -1,5 +1,7 @@
 ---
 title: Metadados de itens no envio de tarefas em lote | Microsoft Docs
+description: Saiba como o MSBuild usa metadados de item no lote de tarefas para dividir listas de itens em diferentes categorias ou lotes e executar uma tarefa uma vez com cada lote.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6152b0e64286c3cadedfcafb0ac530616c4012a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1d67f740857dc93b997e206c43dd52d9887f3e9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288982"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903723"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de item no envio de tarefas em lote
 
@@ -222,7 +224,7 @@ A [tarefa Message](../msbuild/message-task.md) exibe as seguintes informações:
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Metadados de item conhecido](../msbuild/msbuild-well-known-item-metadata.md)
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

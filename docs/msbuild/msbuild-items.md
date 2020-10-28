@@ -1,6 +1,6 @@
 ---
 title: Itens do MSBuild | Microsoft Docs
-description: Usar o atributo Include do ItemGroup do MSBuild para especificar arquivos a serem incluídos em uma compilação
+description: Saiba como usar o atributo de inclusão do MSBuild do rowgroup para especificar os arquivos a serem incluídos em uma compilação.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 020983182706bd6d9382f4d0bd4885ffa0f86f52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247589"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904505"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 
@@ -35,7 +35,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 </ItemGroup>
 ```
 
- O item *file2.cs* não substitui o item *file1.cs*; em vez disso, o nome do arquivo é anexado à lista de valores para o `Compile` tipo de item.
+ O item *file2.cs* não substitui o item *file1.cs* ; em vez disso, o nome do arquivo é anexado à lista de valores para o `Compile` tipo de item.
 
  O XML a seguir cria o mesmo tipo de item declarando os dois arquivos em um atributo `Include`. Observe que os nomes de arquivo são separados por ponto e vírgula.
 
@@ -89,7 +89,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
 
 ## <a name="use-the-exclude-attribute"></a>Usar o atributo Exclude
 
- Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo *.cs* no diretório ao tipo de item CSFile, exceto o arquivo *DoNotBuild.cs*.
+ Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo *.cs* no diretório ao tipo de item CSFile, exceto o arquivo *DoNotBuild.cs* .
 
 ```xml
 <ItemGroup>
@@ -97,7 +97,7 @@ Para obter mais informações sobre caracteres curinga, confira [Como selecionar
 </ItemGroup>
 ```
 
- O atributo `Exclude` afeta somente os itens adicionados pelo atributo `Include` no elemento do item que contém ambos. O exemplo a seguir não excluiria o arquivo *Form1.cs*, que foi adicionado no elemento item anterior.
+ O atributo `Exclude` afeta somente os itens adicionados pelo atributo `Include` no elemento do item que contém ambos. O exemplo a seguir não excluiria o arquivo *Form1.cs* , que foi adicionado no elemento item anterior.
 
 ```xml
 <Compile Include="*.cs" />
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b578ed417d2d4ac03dd7472a9cb94958b8d3c7a3
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005879"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904113"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciar assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -21,7 +21,7 @@ Confira [Assinaturas do Visual Studio oferecidas aos parceiros do MPN (Microsoft
 
 ## <a name="microsoft-action-pack-subscribers"></a>Assinantes do Microsoft Action Pack
 Assinante do Microsoft Action Pack e assinaturas do Visual Studio
-1. O Administrador do Programa fará logon no Centro de Associação de Parceiro
+1. O administrador do programa fará logon no centro de associação do parceiro
 2. Associar pessoas por meio de **Requisitos e Ativos**
 3. Localizar indivíduos e **atribuir funções**
 4. Selecione o Primeiro, Segundo ou Terceiro **Contato Técnico** e **Salvar**
@@ -60,11 +60,11 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
   > A Função de Contato Técnico é necessária para assinaturas do Visual Studio
   - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Assinantes e Administradores de Programa devem trabalhar diretamente com a equipe de suporte do Microsoft Partner Network para resolver quaisquer problemas com o acesso a assinaturas pelos assinantes. Acesse a página [Suporte para Parceiros](https://partner.microsoft.com/support) para obter assistência. (Serão necessárias as credenciais de entrada do MPN).
+Os assinantes e administradores de programa devem trabalhar diretamente com a equipe de suporte do Microsoft Partner Network para resolver problemas com assinantes que acessam assinaturas. Acesse a página [Suporte para Parceiros](https://partner.microsoft.com/support) para obter assistência. (Serão necessárias as credenciais de entrada do MPN).

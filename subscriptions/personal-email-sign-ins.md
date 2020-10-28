@@ -1,25 +1,25 @@
 ---
-title: Emails pessoais exibidos no VLSC
+title: Emails pessoais para assinaturas do Visual Studio no VLSC
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/22/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: 'As assinaturas do Visual Studio: por que estou vendo endereços do Hotmail ou do Gmail para os assinantes?'
-ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022632"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904252"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Assinaturas do Visual Studio – por que vejo contas pessoais para meus assinantes?
 Depois que as empresas migraram do VLSC (Volume Licensing Service Center) para o novo [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio, os administradores ficaram surpresos em descobrir que o "endereço de email de entrada" para alguns assinantes mostra um endereço de email pessoal como o hotmail ou o Outlook.  
 
 ## <a name="cause"></a>Causa
-Esse cenário ocorre devido aos processos de entrada que estavam associados à experiência herdada de assinante do MSDN. Os usuários foram migrados do VLSC para o portal de administração de assinaturas do Visual Studio sem modificações. Os administradores talvez não soubessem que os usuários estavam usando contas pessoais para acessar os benefícios de assinatura. Antes das migrações de assinante do Visual Studio, que foram concluídas em 2016, havia duas ações necessárias para usar com êxito uma assinatura do Visual Studio:
-1. O administrador "atribuiu" a assinatura a um assinante individual, usando o endereço de email corporativo ou de estudante.
+Esse cenário ocorre devido aos processos de entrada que estavam associados à experiência herdada de assinante do MSDN. Os usuários foram migrados do VLSC para o portal de administração de assinaturas do Visual Studio sem modificações. Os administradores podem não ter consciência de que os usuários tinham usado contas pessoais para acessar seus benefícios de assinatura. Antes das migrações de assinante do Visual Studio, que foram concluídas em 2016, havia duas ações necessárias para usar com êxito uma assinatura do Visual Studio:
+1. O administrador "atribuído" à assinatura para um assinante individual, usando seu endereço de email corporativo ou de estudante.
 2. O assinante "ativou" a assinatura.
 
 Durante o processo de ativação do assinante: uma Conta da Microsoft (MSA) foi necessária para entrar. Se o assinante não tiver tentado tornar a conta corporativa ou de estudante (por exemplo, tasha@contoso.com) uma MSA, ele poderá criar uma nova MSA ou usar uma existente. Isso fez com que o "Endereço de Email de Entrada" fosse diferente do "Endereço de Email Atribuído".

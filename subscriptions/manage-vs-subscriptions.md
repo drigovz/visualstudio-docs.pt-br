@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005892"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904688"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -57,7 +57,7 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 
 ## <a name="transferring-subscriptions"></a>Transferindo assinaturas
 
-Se a sua assinatura tiver sido comprada por meio do Microsoft Volume Licensing e você precisar reatribuí-la para outra pessoa da organização, o administrador deverá fazer isso.
+Se sua assinatura foi adquirida por meio do licenciamento por volume da Microsoft e você precisa atribuí-la novamente a outra pessoa na organização, seu administrador precisará fazer isso para você.
 É possível transferir assinaturas de varejo para outro usuário contatando o Atendimento ao Cliente. Assinaturas gratuitas ou “Proibida a revenda” não podem ser transferidas.
 
 ## <a name="managing-my-profile"></a>Gerenciando meu perfil
@@ -70,8 +70,8 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 
 1. Selecione seu nome no canto superior direito do portal do Assinante.
 2. Selecione o botão **Editar perfil** .
-3. Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **preferências** , você pode selecionar o idioma preferencial, os padrões de data e hora, o fuso horário e o tema da interface do usuário.
-4. Quando você tiver finalizado as alterações, selecione **salvar**.
+3. Na guia **Sobre** , você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **preferências** , você pode selecionar o idioma preferencial, os padrões de data e hora, o fuso horário e o tema da interface do usuário.
+4. Quando você tiver finalizado as alterações, selecione **salvar** .
 5. Selecione o botão **voltar** do navegador para retornar à página de benefícios.
 
 ### <a name="setting-communications-preferences"></a>Definir preferências de comunicação
@@ -89,8 +89,8 @@ Para adicionar uma conta alternativa:
 
 1. Entre no [Portal do Assinante](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sua MSA (Conta da Microsoft).
 2. Selecione a guia **Assinaturas** .
-3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
-4. Insira seu endereço de email da conta corporativa/de estudante e selecione **Adicionar**.
+3. Em **Links Relacionados** , escolha **Adicionar conta alternativa** .
+4. Insira seu endereço de email da conta corporativa/de estudante e selecione **Adicionar** .
 
 Depois de adicionar uma conta alternativa, você pode atualizá-la ou removê-la a qualquer momento selecionando a guia **assinaturas** e escolhendo a opção apropriada na seção **links relacionados** .
 

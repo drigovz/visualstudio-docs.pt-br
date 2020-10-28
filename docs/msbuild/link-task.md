@@ -1,5 +1,7 @@
 ---
 title: Tarefa Link | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa de link para encapsular a ferramenta vinculador do Microsoft C++, link.exe, que vincula arquivos de objeto COFF e bibliotecas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,20 +32,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865342"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904058"
 ---
 # <a name="link-task"></a>tarefa de vinculação
 
-Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, consulte [Opções do vinculador](/cpp/build/reference/linker-options) e [usar o MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas do Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
+Encapsula a ferramenta vinculador do Microsoft C++, *link.exe* . A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, consulte [Opções do vinculador](/cpp/build/reference/linker-options) e [usar o MSBuild na linha de comando](/cpp/build/msbuild-visual-cpp) e [usar o conjunto de ferramentas do Microsoft C++ na linha de comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parâmetros
 
- Veja a seguir uma descrição dos parâmetros da tarefa **Link**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
+ Veja a seguir uma descrição dos parâmetros da tarefa **Link** . A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
 - **AdditionalDependencies**
 
@@ -73,7 +75,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro de **cadeia de caracteres** opcional.
 
-  Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link**.
+  Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link** .
 
   Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
 
@@ -97,7 +99,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se `true`, emitirá o atributo **DebuggableAttribute** junto com o acompanhamento de informações de depuração e desabilitará otimizações JIT. Se `false`, emitirá o atributo **DebuggableAttribute**, mas desabilitará o acompanhamento de informações de depuração e as otimizações JIT.
+  Se `true`, emitirá o atributo **DebuggableAttribute** junto com o acompanhamento de informações de depuração e desabilitará otimizações JIT. Se `false`, emitirá o atributo **DebuggableAttribute** , mas desabilitará o acompanhamento de informações de depuração e as otimizações JIT.
 
   Para obter mais informações, consulte [/ASSEMBLYDEBUG (Adicionar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
@@ -253,7 +255,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro opcional de **cadeia de caracteres []** .
 
-  Insere um arquivo de recurso em um assembly. Especifique o nome do arquivo de recurso necessário. Como opção, especifique o nome lógico, usado para carregar o recurso e a opção **PRIVADO**, que indica no manifesto do assembly que o arquivo de recurso é privado.
+  Insere um arquivo de recurso em um assembly. Especifique o nome do arquivo de recurso necessário. Como opção, especifique o nome lógico, usado para carregar o recurso e a opção **PRIVADO** , que indica no manifesto do assembly que o arquivo de recurso é privado.
 
   Para obter mais informações, confira [/ASSEMBLYRESOURCE (Inserir um recurso gerenciado)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
@@ -341,7 +343,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se `true`, criará um *arquivo de mapa*. A extensão de nome do arquivo de mapa é *.map*.
+  Se `true`, criará um *arquivo de mapa* . A extensão de nome do arquivo de mapa é *.map* .
 
   Para obter mais informações, confira [/MAP (Gerar arquivo de mapa)](/cpp/build/reference/map-generate-mapfile).
 
@@ -351,7 +353,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Especifica a quantidade de memória física no heap a se alocar por vez.
 
-  Para obter mais informações, confira o argumento `commit` em [/HEAP (Definir tamanho do heap)](/cpp/build/reference/heap-set-heap-size). Consulte também o parâmetro **HeapReserveSize**.
+  Para obter mais informações, confira o argumento `commit` em [/HEAP (Definir tamanho do heap)](/cpp/build/reference/heap-set-heap-size). Consulte também o parâmetro **HeapReserveSize** .
 
 - **HeapReserveSize**
 
@@ -373,7 +375,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se ele for `true`, especificará que qualquer atributo IDL no código-fonte não deve ser processado em um arquivo *.idl*.
+  Se ele for `true`, especificará que qualquer atributo IDL no código-fonte não deve ser processado em um arquivo *.idl* .
 
   Para obter mais informações, confira [/IGNOREIDL (Não processar atributos em MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
@@ -421,7 +423,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Especifica um arquivo que contém a chave para um assembly assinado.
 
-  Para obter mais informações, confira [/KEYFILE (Especificar chave ou par de chaves para assinar um assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte também o parâmetro **KeyContainer**.
+  Para obter mais informações, confira [/KEYFILE (Especificar chave ou par de chaves para assinar um assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte também o parâmetro **KeyContainer** .
 
 - **LargeAddressAware**
 
@@ -529,7 +531,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro de **cadeia de caracteres** opcional.
 
-  Especifica o nome e a extensão de nome do arquivo *.idl*.
+  Especifica o nome e a extensão de nome do arquivo *.idl* .
 
   Para obter mais informações, confira [/IDLOUT (Nomear arquivos de saída MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
@@ -581,7 +583,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
 - **ObjectFiles**
 
-  Parâmetro implícito **Cadeia de Caracteres[]**.
+  Parâmetro implícito **Cadeia de Caracteres[]** .
 
   Especifica os arquivos-objeto vinculados.
 
@@ -605,7 +607,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se `true` e Registrar Saída estiverem habilitados, forçará as gravações de Registro para **HKEY_CLASSES_ROOT** a serem redirecionadas para **HKEY_CURRENT_USER**.
+  Se `true` e Registrar Saída estiverem habilitados, forçará as gravações de Registro para **HKEY_CLASSES_ROOT** a serem redirecionadas para **HKEY_CURRENT_USER** .
 
 - **PreprocessOutput**
 
@@ -625,7 +627,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se `true`, produzirá um arquivo de saída que pode ser usado com o criador de perfil de **Ferramentas de Desempenho**.
+  Se `true`, produzirá um arquivo de saída que pode ser usado com o criador de perfil de **Ferramentas de Desempenho** .
 
   Para obter mais informações, confira [/PROFILE (Criador de perfil das ferramentas de desempenho)](/cpp/build/reference/profile-performance-tools-profiler).
 
@@ -661,7 +663,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
 - **SectionAlignment**
 
-  Parâmetro opcional de **Inteiro**.
+  Parâmetro opcional de **Inteiro** .
 
   Especifica o alinhamento de cada seção dentro do espaço de endereço linear do programa. O valor do parâmetro é um número de unidade de bytes e uma potência de dois.
 
@@ -671,7 +673,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro **booliano** opcional.
 
-  Se ele for `true`, definirá a soma de verificação no cabeçalho de um arquivo *.exe*.
+  Se ele for `true`, definirá a soma de verificação no cabeçalho de um arquivo *.exe* .
 
   Para obter mais informações, confira [/RELEASE (Definir a soma de verificação)](/cpp/build/reference/release-set-the-checksum).
 
@@ -797,7 +799,7 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Se `true`, instruirá o sistema operacional a copiar a saída do vinculador para um arquivo de permuta e, em seguida, executará a imagem por meio dele.
 
-  Para obter mais informações, confira o argumento `CD` de [/SWAPRUN (Carregar saída do vinculador no arquivo de permuta)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte também o parâmetro **SwapRunFromNET**.
+  Para obter mais informações, confira o argumento `CD` de [/SWAPRUN (Carregar saída do vinculador no arquivo de permuta)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte também o parâmetro **SwapRunFromNET** .
 
 - **SwapRunFromNET**
 
@@ -875,13 +877,13 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro de **cadeia de caracteres** opcional.
 
-  Especifica o nome e a extensão de nome do arquivo *.tlb*. Especifique um nome de arquivo ou um caminho e nome de arquivo.
+  Especifica o nome e a extensão de nome do arquivo *.tlb* . Especifique um nome de arquivo ou um caminho e nome de arquivo.
 
   Para obter mais informações, confira [/TLBOUT (Nomear arquivo .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
 - **TypeLibraryResourceID**
 
-  Parâmetro opcional de **Inteiro**.
+  Parâmetro opcional de **Inteiro** .
 
   Designa um valor especificado pelo usuário para uma biblioteca de tipos criada pelo vinculador. Especifique um valor de 1 a 65535.
 
@@ -921,10 +923,10 @@ Encapsula a ferramenta vinculador do Microsoft C++, *link.exe*. A ferramenta de 
 
   Parâmetro de **cadeia de caracteres** opcional.
 
-  Coloque um número de versão no cabeçalho do arquivo *.exe* ou *.dll*. Especifique “`major[.minor]`”. Os argumentos `major` e `minor` são números decimais de 0 a 65535.
+  Coloque um número de versão no cabeçalho do arquivo *.exe* ou *.dll* . Especifique “`major[.minor]`”. Os argumentos `major` e `minor` são números decimais de 0 a 65535.
 
   Para obter mais informações, confira [/VERSION (Informações de versão)](/cpp/build/reference/version-version-information).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -1,30 +1,30 @@
 ---
-title: Como usar as identidades de Azure Active Directory e conta Microsoft conectadas | Microsoft Docs
+title: Como usar identidades conectadas em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Saiba como trabalhar com contas da Microsoft conectadas e Azure Active Directory identidades
-ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005232"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904034"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Como usar identidades conectadas em assinaturas do Visual Studio
 Se você receber uma assinatura do Visual Studio por meio de seu trabalho ou escola e usar o conta Microsoft (MSA) para entrar, seu administrador de assinaturas poderá conectar seu MSA à sua identidade no Azure Active Directory do AD (Azure Active Directory) da sua organização.  Isso alterará o modo como você acessa alguns dos benefícios incluídos na sua assinatura. 
 
 ## <a name="overview-of-connected-ids"></a>Visão geral das IDs conectadas
-As organizações estão cada vez mais mudando para identidades baseadas no Azure AD para fornecer segurança e suporte aprimorados para o gerenciamento automatizado de assinaturas.  Se sua assinatura usar um MSA como um @outlook.com ou outro endereço de email pessoal, o administrador poderá alterar seu email de entrada para sua identidade do Azure AD.  Isso alterará como entrar no portal do assinante em https://my.visualstudio.com , mas pode não alterar o modo como você acessa todos os seus benefícios.  
+As organizações estão cada vez mais mudando para identidades baseadas no Azure AD para fornecer segurança e suporte aprimorados para o gerenciamento automatizado de assinaturas.  Se sua assinatura usar um MSA como um @outlook.com ou outro endereço de email pessoal, seu administrador poderá alterar seu email de entrada para sua identidade do Azure AD.  Isso alterará como entrar no portal do assinante em https://my.visualstudio.com , mas pode não alterar o modo como você acessa todos os seus benefícios.  
 
-Se o administrador conectar suas identidades MSA e Azure AD, você receberá um email informando que você deve saber como começar a acessar sua assinatura do Visual Studio com sua identidade do Azure AD, em vez de seu MSA. 
+Se seu administrador conectar suas identidades MSA e Azure AD, você receberá um email informando que você saberá como começar a acessar sua assinatura do Visual Studio com sua identidade do Azure AD, em vez de seu MSA. 
 
 ## <a name="how-to-access-benefits-using-azure-ad-identities"></a>Como acessar benefícios usando identidades do Azure AD
-Depois que o administrador conectar o MSA à sua identidade do Azure AD, você precisará entrar no portal do assinante em https://my.visualstudio.com com sua identidade do Azure ad para acessar os benefícios que dependem do Azure AD.  Eles incluem:
+Depois que o administrador conectar o MSA à sua identidade do Azure AD, você precisará entrar no portal do assinante em https://my.visualstudio.com com sua identidade do Azure ad para acessar os benefícios que dependem do Azure AD.  Estão incluídos:
 - Visual Studio IDE
 - Azure DevOps
 - Crédito individual do Azure DevTest
@@ -37,12 +37,12 @@ Adicionar uma conta alternativa à sua Assinatura do Visual Studio permite que v
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>P: como posso contatar meu administrador sobre isso?
-R: consulte nosso artigo sobre [o administrador de assinaturas em contato](contact-my-admin.md) para obter informações sobre como contatar seu administrador.  
+R: consulte nosso artigo de [administrador de assinaturas em contato](contact-my-admin.md) para obter informações sobre como contatar seu administrador.  
 
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>P: sou um administrador.  Como fazer usar isso?
 R: A implementação de identidades conectadas é simples.  Confira [este artigo](personal-email-sign-ins.md) para saber mais. 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

@@ -1,5 +1,5 @@
 ---
-title: Gerenciar equipes grandes e prestadores de serviço externos | Visual Studio Marketplace
+title: Gerenciando grandes equipes e prestadores de gerenciamento em assinaturas do Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: lank
 manager: lank
@@ -7,15 +7,15 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para equipes grandes, bem como para prestadores de gerenciamento externos.
-ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 55d2ac2eacaf523503c2593349abbcf561aed3b1
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005555"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904665"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
-Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com software licenciado do Visual Studio seja licenciado adequadamente com sua própria assinatura do Visual Studio.
+Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com o software licenciado do Visual Studio seja adequadamente licenciado com sua própria assinatura do Visual Studio.
 
 ## <a name="internal-teams"></a>Equipes internas
 Normalmente, as empresas de software modernas incluem stakeholders de vários grupos. Identifique os contatos de cada grupo que podem ajudá-lo a manter o controle sobre alterações e inventário de usuário.
@@ -34,14 +34,14 @@ Os prestadores de serviço externos podem trazer licenças para se relacionar co
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-Saiba mais as políticas dos administradores:
+Saiba mais sobre as responsabilidades para administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)

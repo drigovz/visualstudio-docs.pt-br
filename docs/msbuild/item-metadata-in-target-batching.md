@@ -1,5 +1,7 @@
 ---
 title: Metadados de itens na separação de destinos em lotes | Microsoft Docs
+description: Saiba como o MSBuild usa metadados de item no envio em lote de destino para executar a análise de dependência nas entradas e saídas de um destino de compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633662"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904601"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadados de item no envio de destinos em lote
 
@@ -67,7 +69,7 @@ O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em do
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)
 - [Envio em lote](../msbuild/msbuild-batching.md)

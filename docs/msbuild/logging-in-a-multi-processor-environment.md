@@ -1,5 +1,7 @@
 ---
 title: Registrando em logs em um ambiente multiprocessador | Microsoft Docs
+description: Saiba como o MSBuild fornece um agente de log com reconhecimento de vários processadores e permite a criação de "agentes de encaminhamento" personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c332fb67e96bdfea0059de11441da7c32871633
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633558"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904374"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em log em um ambiente multiprocessador
 
@@ -30,7 +32,7 @@ Você pode melhorar a eficiência de registro em log ainda mais criando um agent
 
 ### <a name="central-logging-model"></a>Modelo de log central
 
-Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de log central, uma instância do *MSBuild.exe* atua como o processo de compilação principal ou "nó central". As instâncias secundárias de *MSBuild.exe*, ou "nós secundários", são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
+Para builds para vários processadores, o MSBuild usa um "modelo de log central". No modelo de log central, uma instância do *MSBuild.exe* atua como o processo de compilação principal ou "nó central". As instâncias secundárias de *MSBuild.exe* , ou "nós secundários", são anexadas ao nó central. Qualquer agente de ILogger anexado ao nó central é conhecido como "agentes centrais" e agentes anexados a nós secundários são conhecidos como "agentes secundários".
 
 Quando ocorre um build, os agentes secundários encaminham o tráfego de eventos para os agentes centrais. Como eventos se originam em vários nós secundários, os dados chegam ao nó central simultaneamente, mas intercalados. Para resolver referências de evento para projeto e evento para destino, os argumentos do evento incluem informações adicionais de contexto do evento de build.
 
@@ -75,7 +77,7 @@ Culture=neutral
 
 Um asterisco (*) separa os dois nomes de agentes na opção `-dl`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Agentes de build](../msbuild/build-loggers.md)
 - [Criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

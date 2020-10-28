@@ -1,5 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
+description: Saiba mais sobre como a plataforma de Microsoft Build Engine (MSBuild) fornece um arquivo de projeto com um esquema XML para controlar as compilações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099265"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904509"
 ---
 # <a name="msbuild"></a>MSBuild
 
 A Microsoft Build Engine é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas o MSBuild não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
 
- O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
+ O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio ( *.csproj* , *.vbproj* , *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
 
  Para obter informações sobre o MSBuild para C++, consulte [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -53,7 +55,7 @@ Este artigo fornece uma visão geral do MSBuild. Para um tutorial de introduçã
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Usar MSBuild em um prompt de comando
 
- Para executar o MSBuild em um prompt de comando, passe um arquivo de projeto para *MSBuild.exe*, junto com as opções de linha de comando apropriadas. As opções de linha de comando permitem que você defina propriedades, execute destinos específicos e defina outras opções que controlam o processo de build. Por exemplo, você usaria a seguinte sintaxe de linha de comando para criar o arquivo *MyProj.proj* com a propriedade `Configuration` definida como `Debug`.
+ Para executar o MSBuild em um prompt de comando, passe um arquivo de projeto para *MSBuild.exe* , junto com as opções de linha de comando apropriadas. As opções de linha de comando permitem que você defina propriedades, execute destinos específicos e defina outras opções que controlam o processo de build. Por exemplo, você usaria a seguinte sintaxe de linha de comando para criar o arquivo *MyProj.proj* com a propriedade `Configuration` definida como `Debug`.
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -168,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Você pode direcionar estruturas diferentes de .NET Framework, por exemplo, Silverlight.
 
-- Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.
+- Você pode direcionar um *perfil de estrutura* , que é um subconjunto predefinido de uma estrutura de destino.
 
 - Se uma service pack para a versão atual do .NET Framework for lançada, você poderá direcioná-la.
 

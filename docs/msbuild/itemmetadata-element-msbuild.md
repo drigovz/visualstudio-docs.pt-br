@@ -1,5 +1,7 @@
 ---
 title: Elemento ItemMetadata (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento do MSBuild ItemMetadata, que contém uma chave de metadados de item definida pelo usuário que tem o valor de metadados.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633610"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903591"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
 
@@ -48,7 +50,7 @@ Contém uma chave de metadados de item definida pelo usuário, que contém o val
 
 ### <a name="child-elements"></a>Elementos filho
 
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -74,7 +76,7 @@ Contém uma chave de metadados de item definida pelo usuário, que contém o val
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

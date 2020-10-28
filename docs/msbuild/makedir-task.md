@@ -1,5 +1,7 @@
 ---
 title: Tarefa MakeDir | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa MakeDir para criar diretórios e, se necessário, quaisquer diretórios pai.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc2e97a3024d768861a1967705137415a0d3aa2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91be7dc2baf7df36d98cd725e8141cfa9cab773f
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633532"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904309"
 ---
 # <a name="makedir-task"></a>Tarefa MakeDir
 
@@ -61,7 +63,7 @@ O seguinte exemplo de código usa a tarefa `MakeDir` para criar o diretório esp
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

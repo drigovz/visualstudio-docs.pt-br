@@ -1,5 +1,7 @@
 ---
 title: Builds incrementais | Microsoft Docs
+description: Saiba mais sobre as compilações incrementais do MSBuild, que são otimizadas para que os arquivos de saída atualizados não sejam executados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633714"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904596"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 
@@ -24,7 +26,7 @@ Os builds incrementais são builds que são otimizados para que os destinos que 
 > [!NOTE]
 > Quando o MSBuild avalia os arquivos de entrada, somente o conteúdo da lista na execução atual é considerado. As alterações na lista da última compilação não tornam automaticamente um destino desatualizado.
 
-Se todos os itens de saída estiverem atualizados, o MSBuild ignorará o destino. Esse *build incremental* do destino pode melhorar significativamente a velocidade de build. Se apenas alguns arquivos estiverem atualizados, o MSBuild executará o destino, mas ignora os itens atualizados e, portanto, traz todos os itens atualizados. Esse processo é conhecido como um *build incremental parcial*.
+Se todos os itens de saída estiverem atualizados, o MSBuild ignorará o destino. Esse *build incremental* do destino pode melhorar significativamente a velocidade de build. Se apenas alguns arquivos estiverem atualizados, o MSBuild executará o destino, mas ignora os itens atualizados e, portanto, traz todos os itens atualizados. Esse processo é conhecido como um *build incremental parcial* .
 
 Mapeamentos de 1 para 1 em geral são produzidos por transformações de item. Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md).
 
@@ -42,7 +44,7 @@ O conjunto de arquivos representados pelo tipo de item `Compile` é copiado para
 
 ## <a name="output-inference"></a>Inferência de saída
 
-O MSBuild compara os atributos `Inputs` e `Outputs` de um destino para determinar se o destino deve executar. Idealmente, o conjunto de arquivos existente após a conclusão de um build incremental deve permanecer o mesmo independentemente de os destinos associados serem executados ou não. Como propriedades e itens que são criados ou alterados por tarefas podem afetar o build, o MSBuild deverá inferir seus valores, mesmo se o destino que os afeta for ignorado. Esse processo é conhecido como *inferência de saída*.
+O MSBuild compara os atributos `Inputs` e `Outputs` de um destino para determinar se o destino deve executar. Idealmente, o conjunto de arquivos existente após a conclusão de um build incremental deve permanecer o mesmo independentemente de os destinos associados serem executados ou não. Como propriedades e itens que são criados ou alterados por tarefas podem afetar o build, o MSBuild deverá inferir seus valores, mesmo se o destino que os afeta for ignorado. Esse processo é conhecido como *inferência de saída* .
 
 Há três casos:
 
@@ -78,6 +80,6 @@ Por causa da inferência de saída, é necessário adicionar uma tarefa `CreateP
 
 Esse código cria a propriedade CompileRan e atribui a ela o valor `true`, mas apenas se o destino é executado. Se o destino for ignorado, CompileRan não será criado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Destinos](../msbuild/msbuild-targets.md)
