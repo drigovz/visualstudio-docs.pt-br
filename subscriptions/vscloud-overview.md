@@ -2,20 +2,20 @@
 title: Como comprar assinaturas de nuvem do Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise mês a mês ou anualmente, sem nenhum contrato de longo prazo.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353441"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918078"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
-Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Elas são chamadas de **"assinaturas de nuvem"**.
+Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Elas são chamadas de **"assinaturas de nuvem"** .
 
 [Compare os benefícios e os preços da assinatura na nuvem](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ Você precisará ser um colaborador ou superior para uma assinatura do Azure que
     > [!div class="mx-imgBorder"]
     > ![Selecionar número de assinaturas](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Escolha o número de assinaturas a serem compradas")
 
-    Se não desejar assinaturas atribuídas a você, desmarque **Atribuir esta assinatura a mim**.
+    Se não desejar assinaturas atribuídas a você, desmarque **Atribuir esta assinatura a mim** .
 
 5. Confirme e conclua a compra. Se você tiver atribuído uma assinatura para si mesmo, visite o [Portal do assinante do Visual Studio](https://my.visualstudio.com) para iniciar o download do software e usar outros benefícios do assinante.
 
@@ -72,7 +72,7 @@ Para cancelar as assinaturas, você só precisa definir o número de assinaturas
 > [!div class="mx-imgBorder"]
 > ![Exibir visão geral da assinatura](_img/buy-vs-subscriptions/overview-button.png "Selecione o botão visão geral para exibir detalhes da assinatura")
 
-4. Localize a entrada para as assinaturas que você deseja cancelar e selecione **Alterar quantidade**.
+4. Localize a entrada para as assinaturas que você deseja cancelar e selecione **Alterar quantidade** .
 1. Defina a quantidade como zero (0). Suas assinaturas permanecerão em vigor até a data de cobrança agendada, mas não serão renovadas quando a data de cobrança for atingida.   
 
 > [!div class="mx-imgBorder"]
@@ -102,7 +102,7 @@ R: Não.  Suas assinaturas permanecerão em vigor e você poderá gerenciá-las 
 R: as assinaturas anuais que são adquiridas durante um determinado mês são cobradas imediatamente por um ano inteiro e são válidas por um ano inteiro. Por esse motivo, você poderá modificar o número de licenças apenas no mês atual de compra (elas serão cobradas por um ano e serão válidas pelo mesmo período). Fora do mês de compra, não será mais possível aumentar o número de assinaturas.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>P: e se eu quiser diminuir o número de assinaturas para meus clientes?
-R: o administrador ainda pode diminuir o número de assinaturas visitando https://manage.visualstudio.com e seguindo as instruções neste artigo para diminuir as contagens de assinaturas. O sistema *não* gerará um crédito proporcionalmente. Para obter um reembolso, você precisará entrar em contato com a equipe de cobrança do Azure.
+R: seu administrador ainda pode diminuir o número de assinaturas visitando https://manage.visualstudio.com e seguindo as instruções neste artigo para diminuir as contagens de assinaturas. O sistema *não* gerará um crédito proporcionalmente. Para obter um reembolso, você precisará entrar em contato com a equipe de cobrança do Azure.
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>P: se eu cancelar minha assinatura, serei capaz de comprar outra assinatura de nuvem anual mais tarde?
 R: embora você não consiga comprar outra assinatura anual de nuvem, há muitas opções para comprar assinaturas do Visual Studio.  Saiba mais em [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .
@@ -115,10 +115,10 @@ R: seus clientes não poderão comprar novas assinaturas anuais da nuvem do Visu
 R: os clientes existentes não serão afetados. Os novos clientes precisarão decidir se desejam comprar assinaturas Mensais do Visual Studio ou ir para outro canal, como o licenciamento por volume, para comprar Assinaturas do Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>P: e se eu quiser aumentar o número de assinaturas para meus clientes?
-R: as assinaturas anuais adquiridas durante um determinado mês são cobradas imediatamente por um ano inteiro e são válidas por um ano inteiro. Por esse motivo, o administrador pode modificar apenas o número de licenças no mês atual de aquisição (elas serão cobradas por um ano e serão válidas por um ano). Fora do mês da aquisição, não é possível aumentar o número de assinaturas.
+R: as assinaturas anuais adquiridas durante um determinado mês são cobradas imediatamente por um ano inteiro e são válidas por um ano inteiro. Por esse motivo, o administrador só pode modificar o número de licenças no mês atual de compra (elas serão válidas por 1 ano e cobradas por 1 ano). Fora do mês da aquisição, não é possível aumentar o número de assinaturas.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>P: e se eu quiser diminuir o número de assinaturas para meus clientes?
-R: o administrador ainda pode diminuir o número de assinaturas visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguindo as instruções neste artigo para diminuir as contagens de assinaturas. O sistema **não** gerará um crédito proporcionalmente. Para obter um reembolso, você precisará entrar em contato com a equipe de cobrança do Azure.
+R: seu administrador ainda pode diminuir o número de assinaturas visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguindo as instruções neste artigo para diminuir as contagens de assinaturas. O sistema **não** gerará um crédito proporcionalmente. Para obter um reembolso, você precisará entrar em contato com a equipe de cobrança do Azure.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>P: se meus clientes cancelarem suas assinaturas, eles poderão comprar mais assinaturas de nuvem anuais mais tarde?
 R: embora eles não possam comprar outra assinatura anual de nuvem, há muitas opções para comprar assinaturas do Visual Studio.  Saiba mais em [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) .

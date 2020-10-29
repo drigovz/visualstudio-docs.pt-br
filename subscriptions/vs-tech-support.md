@@ -1,18 +1,18 @@
 ---
-title: Benefício do suporte técnico
+title: Benefício de suporte técnico nas assinaturas do Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004540"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918117"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -30,7 +30,7 @@ Ferramentas para Desenvolvedores como o IDE do Visual Studio e o Azure DevOps Se
 
 Os produtos sem desenvolvedores (como SQL, Windows, SharePoint) baixados das assinaturas do Visual Studio são elegíveis apenas para suporte base. Esses produtos são licenciados apenas para ambientes de desenvolvimento para projetar, desenvolver, testar ou demonstrar aplicativos. Esses produtos não são licenciados para ambientes de produção.
 
-Descrições de nível de produto: expanda **planos de suporte indisponíveis**. Se você vir **o plano de suporte não pode ser usado para suporte no produto especificado (código: 8)**, o contrato de suporte não poderá ser usado para a versão do produto que você selecionou.
+Descrições de nível de produto: expanda **planos de suporte indisponíveis** . Se você vir **o plano de suporte não pode ser usado para suporte no produto especificado (código: 8)** , o contrato de suporte não poderá ser usado para a versão do produto que você selecionou.
 
 > [!IMPORTANT]
 > Os incidentes de suporte fornecidos são para suporte à correção de conserto.  Eles não podem ser usados para obter assistência com problemas de codificação/desenvolvimento que envolvem os seguintes produtos:
@@ -42,7 +42,7 @@ Descrições de nível de produto: expanda **planos de suporte indisponíveis**.
 > - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Como ativar o benefício
-1. Acesse <https://my.visualstudio.com/Benefits>, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar**.
+1. Acesse <https://my.visualstudio.com/Benefits>, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar** .
     > [!div class="mx-imgBorder"]
     > ![Bloco do benefício do Suporte Técnico](_img/vs-tech-support/vs-tech-support-tile.png)
 2. Isso iniciará uma sessão de chat com um representante que poderá criar a **ID do Contrato** e a **ID de Acesso** e fornecê-las para você por email, de modo a tê-los para seus registros.
@@ -75,29 +75,29 @@ Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta 
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Usando a ID do Contrato e a ID de Acesso ao enviar um incidente (uso inicial)
 
 #### <a name="submitting-an-incident-online"></a>Enviando um incidente online
-Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista suspensa, selecione o produto com o qual você precisa de ajuda. Por exemplo, para enviar um incidente ao Visual Studio Enterprise 2019, selecione a família **Ferramentas para Desenvolvedores**, selecione **Visual Studio 2019** como o produto e, em seguida, escolha **Visual Studio Enterprise 2019** como a versão.
+Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista suspensa, selecione o produto com o qual você precisa de ajuda. Por exemplo, para enviar um incidente ao Visual Studio Enterprise 2019, selecione a família **Ferramentas para Desenvolvedores** , selecione **Visual Studio 2019** como o produto e, em seguida, escolha **Visual Studio Enterprise 2019** como a versão.
 
-1. Depois de escolher o produto para o qual precisa de suporte, clique em **Avançar**.
+1. Depois de escolher o produto para o qual precisa de suporte, clique em **Avançar** .
 
    > [!div class="mx-imgBorder"]
    > ![Etapa 1 de Envio de Incidente do Benefício de Suporte Técnico – Produto](_img/vs-tech-support/vs-tech-support-step1.png)
 
-2. Descreva seu problema e clique em **Avançar**.
+2. Descreva seu problema e clique em **Avançar** .
 
    > [!div class="mx-imgBorder"]
    > ![Etapa 2 de Envio de Incidente do Benefício de Suporte Técnico – Problema](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. Na página “Plano de suporte”, role-a para baixo até **Adicionar ou comprar um plano de suporte**, expanda-a usando a seta à direita e clique em **Adicionar contrato**.
+3. Na página “Plano de suporte”, role-a para baixo até **Adicionar ou comprar um plano de suporte** , expanda-a usando a seta à direita e clique em **Adicionar contrato** .
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar Contrato](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Insira sua **ID de acesso** e a **ID do contrato**.  Clique em **Adicionar**.
+4. Insira sua **ID de acesso** e a **ID do contrato** .  Clique em **Adicionar** .
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar ID do Contrato](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. Depois que o contrato for adicionado, ele será exibido em **Selecionar um plano de suporte** na parte superior. Seu plano conterá o termo “MSDN” no título. Escolha-o, role a página para baixo e clique em **Avançar**.
+5. Depois que o contrato for adicionado, ele será exibido em **Selecionar um plano de suporte** na parte superior. Seu plano conterá o termo “MSDN” no título. Escolha-o, role a página para baixo e clique em **Avançar** .
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Escolher Plano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
@@ -136,7 +136,7 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
