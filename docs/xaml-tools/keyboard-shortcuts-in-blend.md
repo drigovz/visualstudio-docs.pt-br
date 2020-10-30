@@ -1,6 +1,8 @@
 ---
 title: Atalhos do teclado
 titleSuffix: Blend for Visual Studio
+description: Saiba mais sobre os atalhos de teclado no Blend para Visual Studio que acessam comandos para trabalhar com projetos, documentos, objetos, exibições e espaços de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -9,18 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332237"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049251"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Atalhos de teclado no Blend para Visual Studio
 
 ## <a name="project-shortcuts"></a>Atalhos de projeto
 
-|Para fazer isto|Faça isto|
+|Para fazer isso|Faça isto|
 |----------------|-------------|
 |Criar um novo projeto|**Ctrl** + **Shift** + **N**|
 |Abrir um projeto ou uma solução (e não um site)|**Ctrl** + **Shift** + **O**|
@@ -33,31 +35,31 @@ ms.locfileid: "85332237"
 
 ## <a name="document-shortcuts"></a>Atalhos de documento
 
-|Para fazer isto|Faça isto|
+|Para fazer isso|Faça isto|
 |----------------|-------------|
 |Alternar entre documentos abertos|**Ctrl** + **Guia**|
 |Salvar o documento ativo|**Ctrl** + **S**|
 |Salvar todos os documentos|**Ctrl** + **Shift** + **S**|
 |Fechar o documento ativo|**Ctrl** + **W**|
 |Fechar todos os documentos abertos|**Ctrl** + **Shift** + **W**|
-|Desfazer a última ação|**Ctrl**+ Z|
-|Refazer a última ação realizada|**Ctrl**+Y ou **Ctrl**+**Shift**+**Z**|
+|Desfazer a última ação|**Ctrl** + Z|
+|Refazer a última ação realizada|**Ctrl** +Y ou **Ctrl**+**Shift**+**Z**|
 |Criar uma anotação de tempo de design|**Ctrl** + **Shift** + **T**|
 |Recortar|**Ctrl** + **X**|
 |Copiar|**Ctrl** + **C**|
 |Colar|**Ctrl** + **V**|
-|Excluir|**Delete (excluir)**|
+|Excluir|**Excluir**|
 |Localizar texto (somente exibição de XAML ou editor de JavaScript)|**Ctrl** + **F**|
 |Localizar a próxima ocorrência do texto (somente exibição de XAML ou editor de JavaScript)|**F3** ou **Ctrl**+**H**|
 
 ## <a name="object-shortcuts"></a>Atalhos de objeto
 
-|Para fazer isto|Faça isto|
+|Para fazer isso|Faça isto|
 |----------------|-------------|
 |Criar um item|**Ctrl** + **N**|
 |Duplicar um objeto|Mantenha a tecla **Alt** pressionada e arraste o objeto|
 |Reassociar um objeto|Arrastar o objeto sobre um painel de layout e pressionar a tecla **Alt**|
-|Editar o texto em um controle|**F2** (**Esc** para sair)|
+|Editar o texto em um controle|**F2** ( **Esc** para sair)|
 |Editar um controle (WPF)|**Ctrl** + **E**|
 |Igualar a largura dos objetos selecionados|**Ctrl** + **Shift** + **1**|
 |Igualar a altura dos objetos selecionados|**Ctrl** + **Shift** + **2**|
@@ -93,9 +95,9 @@ ms.locfileid: "85332237"
 
 ## <a name="view-shortcuts"></a>Exibir atalhos
 
-|Para fazer isto|Faça isto|
+|Para fazer isso|Faça isto|
 |----------------|-------------|
-|Mudar entre os modos de exibição **Design**, **Código** e **Dividir**|**F11**|
+|Mudar entre os modos de exibição **Design** , **Código** e **Dividir**|**F11**|
 |Aumentar o zoom no artboard|**Ctrl** + **Sinal de igual** ( **=** )|
 |Reduzir o zoom no artboard|**Ctrl** + **Sinal de subtração** ( **-** )|
 |Aumentar ou diminuir o zoom no artboard|Girar o roda do mouse|
@@ -105,11 +107,11 @@ ms.locfileid: "85332237"
 |Exibir a prancheta no tamanho real|**Ctrl** + **1**|
 |Mostrar ou ocultar alças|**F9**|
 |Mostrar ou ocultar os limites do objeto|**Ctrl** + **Shift** + **H**|
-|Mudar entre os modos de exibição **Design**, **XAML** e **Dividir**|**F11**|
+|Mudar entre os modos de exibição **Design** , **XAML** e **Dividir**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Atalhos de workspace
 
-|Para fazer isto|Faça isto|
+|Para fazer isso|Faça isto|
 |----------------|-------------|
 |Mudar entre os workspaces **Animação** e **Design**|**Ctrl** + **F11**|
 |Exibir ou ocultar o painel **Ativos**|**Ctrl** + **Período**|

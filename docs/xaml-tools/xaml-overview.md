@@ -1,23 +1,25 @@
 ---
 title: Visão geral do XAML
+description: Aprenda informações básicas sobre XAML e o editor de código XAML e ferramentas de Designer XAML no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 997a35414f38af16d028770044c28652e13149be
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331942"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049189"
 ---
 # <a name="overview-of-xaml"></a>Visão geral do XAML
 
 XAML (Extensible Application Markup Language) é uma linguagem declarativa baseada em XML. O XAML é usado extensivamente nos seguintes tipos de aplicativos para criar interfaces do usuário:
 
 - [Aplicativos WPF (Windows Presentation Foundation)](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Aplicativos Plataforma Universal do Windows (UWP)](/windows/uwp/xaml-platform/xaml-overview)
+- [Aplicativos da Plataforma Universal do Windows (UWP)](/windows/uwp/xaml-platform/xaml-overview)
 - [Aplicativos do Xamarin.Forms](/xamarin/xamarin-forms/xaml/)
 
 O código XAML a seguir define um controle de botão simples.
@@ -44,7 +46,7 @@ Para obter as informações mais recentes, consulte os seguintes recursos:
 - A postagem **[novidades nas ferramentas de desenvolvedor XAML na publicação do blog do Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
 - Os **[novos recursos XAML no vídeo do Visual Studio](https://youtu.be/yI9OyA4ZM2E)** sobre o YouTube
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [XAML em aplicativos WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML em aplicativos UWP](/windows/uwp/xaml-platform/xaml-overview)

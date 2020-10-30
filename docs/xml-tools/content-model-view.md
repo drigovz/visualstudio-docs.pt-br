@@ -1,5 +1,7 @@
 ---
 title: Exibição do modelo de conteúdo do Designer de Esquema XML
+description: Saiba mais sobre a exibição de modelo de conteúdo no designer de esquema XAML que fornece uma representação gráfica de nós de esquema locais e globais e seus componentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3aee0129516b6c7d377fcfff454f949e199eb5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592907"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049208"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 
@@ -35,7 +37,7 @@ Quando um nó é selecionado no painel do **espaço de trabalho** , ele é adici
 
 O modelo de conteúdo de um nó é representado por uma árvore gráfico expansível com elementos e atributos que aparecem como nós de árvore. Por padrão, somente um nível é expandido. Outras informações, como compositores, nomes de tipo, grupos, e outros contêineres é colocada em uma barra vertical (quando expandido) ao longo de elementos e atributos que incluem. Quando você clica duas vezes em uma barra vertical, transformações horizontal e recolhe de árvore. Quando você clica duas vezes em uma barra horizontal e vertical, transformações a árvore expande. Selecionar a barra vertical seleciona todos os nós no contêiner. Os expansores aparecem à direita de um nó se um elemento pode ser expandido ou recolhido.
 
-Se a superfície de design estiver em branco, o editor de XML, o **XML Schema Explorer**e a marca d' água serão mostrados. A *marca d' água* é uma lista de links para todas as exibições do designer XSD. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
+Se a superfície de design estiver em branco, o editor de XML, o **XML Schema Explorer** e a marca d' água serão mostrados. A *marca d' água* é uma lista de links para todas as exibições do designer XSD. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”
 
 ## <a name="breadcrumb-bar"></a>Barra de navegação estrutural
 
@@ -81,9 +83,9 @@ Os seguintes botões da barra de ferramentas do designer XSD são ativados quand
 
 |Opção|Descrição|
 |-|-----------------|
-|**Mostrar Exibição Inicial**|Alterna para o [modo de exibição de início](../xml-tools/start-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **1**.|
-|**Mostrar Exibição de Modelo de Conteúdo**|Alterna para a [exibição do modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **2**.|
-|**Mostrar Exibição de Gráfico**|Alterna para o [modo de exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **3**.|
+|**Mostrar Exibição Inicial**|Alterna para o [modo de exibição de início](../xml-tools/start-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **1** .|
+|**Mostrar Exibição de Modelo de Conteúdo**|Alterna para a [exibição do modelo de conteúdo](../xml-tools/content-model-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **2** .|
+|**Mostrar Exibição de Gráfico**|Alterna para o [modo de exibição de gráfico](../xml-tools/graph-view.md). Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **3** .|
 |**O workspace claro**|Limpa o workspace e a superfície de design.|
 |**Remova de workspace**|Removes selecionou nós de workspace e da superfície de design.|
 |**Remova todos com exceção de seleção de workspace**|Remove os nós que não são selecionados de workspace e da superfície de design.|
@@ -123,6 +125,6 @@ Você pode alternar entre o **Designer XSD** e o editor de XML usando o menu de 
 
 Se você fizer alterações no conjunto de esquema no editor de XML, as alterações serão sincronizadas na exibição do modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)

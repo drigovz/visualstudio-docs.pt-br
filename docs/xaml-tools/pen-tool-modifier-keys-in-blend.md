@@ -1,6 +1,8 @@
 ---
 title: Teclas modificadoras da ferramenta Caneta
 titleSuffix: Blend for Visual Studio
+description: Saiba mais sobre as chaves modificadoras de ferramentas de caneta no Blend para Visual Studio que acessam comandos para modificar um caminho enquanto você o cria com a ferramenta caneta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3f025e31a36edebdd318435d233efd2aab4857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 104e52619a34f1f2fd5b7aedbac98eafd7fdc189
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328376"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049261"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Caneta no Blend para Visual Studio
 
@@ -32,11 +34,11 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um demarca
 |Remover um ponto de um caminho|Passe o mouse sobre um ponto existente e clique|![Remover um ponto do caminho](../designers/media/08a64b78-f3df-4730-8169-c56b5631b071.png)<br /><br /> Caneta ponteiro de exclusão|
 |Fechar um caminho com uma curva fechada|Clique no ponto inicial|![Fechar um caminho com uma curva fechada](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Caneta ponteiro de fechamento|
 |Fechar um caminho com uma curva suave no canto|Clique no ponto inicial e arraste para modificar a alça da tangente antes de soltar o botão do mouse|![Fechar um caminho com uma curva suave no canto](../designers/media/a12fd3b4-a553-4762-b01c-c35efa594362.png)<br /><br /> Caneta ponteiro de fechamento|
-|Criar uma curva fechada ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta**, clique em um ponto final de um dos demarcadores e clique em um ponto final do outro demarcador|![Criar uma curva fechada ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
-|Criar uma curva suave ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta**, clique em um ponto final de um dos demarcadores e arraste um ponto final do outro demarcador|![Criar uma curva suave ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
+|Criar uma curva fechada ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta** , clique em um ponto final de um dos demarcadores e clique em um ponto final do outro demarcador|![Criar uma curva fechada ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
+|Criar uma curva suave ao unir dois demarcadores|Selecione dois demarcadores, clique na ferramenta **Caneta** , clique em um ponto final de um dos demarcadores e arraste um ponto final do outro demarcador|![Criar uma curva suave ao unir dois demarcadores](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> Caneta ponteiro de união|
 |Criar um novo demarcador|Mantenha a tecla **Ctrl** pressionada e clique fora do demarcador anterior para parar de adicionar pontos ao demarcador anterior. Em seguida, clique no local ou arraste o ponto para o local em que deseja que o novo demarcador comece|![Criar um novo demarcador](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> Caneta ponteiro de inicialização|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Teclas modificadoras da prancheta](artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras da ferramenta Seleção Direta](direct-selection-tool-modifier-keys-in-blend.md)
