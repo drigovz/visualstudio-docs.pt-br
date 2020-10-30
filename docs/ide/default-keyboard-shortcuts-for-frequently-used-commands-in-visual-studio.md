@@ -1,5 +1,6 @@
 ---
-title: Atalhos de teclado padrão para comandos usados com frequência
+title: Atalhos de teclado para comandos usados com frequência
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596717"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045652"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado populares para o Visual Studio
 
@@ -21,9 +22,9 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 O contexto *Global* significa que o atalho é aplicável em qualquer janela de ferramenta no Visual Studio.
 
 > [!NOTE]
-> É possível [pesquisar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
+> É possível [pesquisar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) para qualquer comando abrindo a caixa de diálogo **Opções** , expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado** .
 
-## <a name="build"></a>Compilação
+## <a name="build"></a>Build
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -57,9 +58,9 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
 |Edit.BreakLine|**Enter** [Editor de Texto, Designer de Relatórios, Designer de Formulários do Windows]<br /><br />ou **Shift+Enter** [Editor de Texto]|
-|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Editor de Texto]|
-|Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Editor de Texto]|
-|Edit.CompleteWord|**Alt+Seta para a Direita** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+Barra de espaços** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+K**, **W** [Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+K, Ctrl+W** [Designer de Fluxo de Trabalho]|
+|Edit.CollapseToDefinitions|**Ctrl+M** , **Ctrl+O** [Editor de Texto]|
+|Edit.CommentSelection|**Ctrl+K** , **Ctrl+C** [Editor de Texto]|
+|Edit.CompleteWord|**Alt+Seta para a Direita** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+Barra de espaços** [Editor de Texto, Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+K** , **W** [Designer de Fluxo de Trabalho]<br /><br />ou **Ctrl+K, Ctrl+W** [Designer de Fluxo de Trabalho]|
 |Edit.Copy|**Ctrl+C** [Global]<br /><br />ou **Ctrl+Insert** [Global]|
 |Edit.Cut|**Ctrl+X** [Global]<br /><br />ou **Shift+Delete** [Global]|
 |Edit.Delete|**Delete** [Global, Team Explorer]<br /><br />ou **Shift+Delete** [Diagrama de Sequência, Diagrama de Atividades UML, Diagrama de Camada]<br /><br />ou **Ctrl+Delete** [Diagrama de Classes]|
@@ -75,7 +76,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**Ctrl+D** [Global]|
 |Edit.GoToNextLocation|**F8** [Global]|
-|Edit.InsertSnippet|**Ctrl+K**, **Ctrl+X** [Global]|
+|Edit.InsertSnippet|**Ctrl+K** , **Ctrl+X** [Global]|
 |Edit.InsertTab|**Tab** [Designer de Relatórios, Designer de Formulários do Windows, Editor de Texto]|
 |Edit.LineCut|**Ctrl+L** [Editor de Texto]|
 |Edit.LineDownExtendColumn|**Shift+Alt+Seta para Baixo** [Editor de Texto]|
@@ -119,7 +120,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |File.SaveSelectedItems|**Ctrl+S** [Global]|
 |File.ViewinBrowser|**Ctrl+Shift+W** [Global]|
 
-## <a name="project"></a>Projeto
+## <a name="project"></a>Project
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------| - |
@@ -169,7 +170,7 @@ O contexto *Global* significa que o atalho é aplicável em qualquer janela de f
 |Window.NextDocumentWindowNav|**Ctrl+Tab** [Global]|
 |Window.NextSplitPane|**F6** [Global]|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Identificar e personalizar atalhos de teclado no Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Todos os atalhos de teclado no Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

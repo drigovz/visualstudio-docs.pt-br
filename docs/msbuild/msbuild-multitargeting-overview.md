@@ -1,5 +1,7 @@
 ---
 title: Visão geral da multiplataforma do MSBuild | Microsoft Docs
+description: Saiba como usar o MSBuild para compilar um aplicativo a ser executado em qualquer uma das várias versões do .NET Framework e em qualquer uma das várias plataformas do sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c764192673e4d3f9fbd99a1bc572e9d78db7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183516"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046302"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma do MSBuild
 
@@ -28,7 +30,7 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
 
 - Você pode direcionar uma estrutura que não sejam o .NET Framework, por exemplo, o Silverlight Framework.
 
-- Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.
+- Você pode direcionar um *perfil de estrutura* , que é um subconjunto predefinido de uma estrutura de destino.
 
 - Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.
 
@@ -36,11 +38,11 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
 
 ## <a name="target-framework-and-platform"></a>Estrutura e plataforma de destino
 
- Uma *estrutura de destino* é a versão do .NET Framework sobre a qual um projeto é compilado para executar, e uma *plataforma de destino* é a plataforma do sistema em que o projeto é compilado para executar.  Por exemplo, talvez você queira direcionar um aplicativo .NET Framework 2,0 para ser executado em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 (x86). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*. Para obter mais informações, confira [Estrutura de destino e plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
+ Uma *estrutura de destino* é a versão do .NET Framework sobre a qual um projeto é compilado para executar, e uma *plataforma de destino* é a plataforma do sistema em que o projeto é compilado para executar.  Por exemplo, talvez você queira direcionar um aplicativo .NET Framework 2,0 para ser executado em uma plataforma de 32 bits que seja compatível com a família de processadores 80x86 (x86). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino* . Para obter mais informações, confira [Estrutura de destino e plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
 
 ## <a name="toolset-toolsversion"></a>Toolset (ToolsVersion)
 
- Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe*, o arquivo de destinos comuns (*Microsoft. Common. targets*) e o arquivo de tarefas comuns (*Microsoft. Common. Tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe* , o arquivo de destinos comuns ( *Microsoft. Common. targets* ) e o arquivo de tarefas comuns ( *Microsoft. Common. Tasks* ). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblies de referência
 

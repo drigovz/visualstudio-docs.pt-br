@@ -1,5 +1,7 @@
 ---
 title: Tarefa de aviso | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa de aviso para registrar um aviso durante uma compilação com base em uma instrução condicional avaliada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631088"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047813"
 ---
 # <a name="warning-task"></a>tarefa Warning
 
@@ -66,7 +68,7 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

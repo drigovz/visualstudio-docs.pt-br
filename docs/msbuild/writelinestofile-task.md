@@ -1,5 +1,7 @@
 ---
 title: Tarefa WriteLinesToFile | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa WriteLinesToFile para gravar os caminhos dos itens especificados no arquivo de texto especificado.
+ms.custom: SEO-VS-2020
 ms.date: 09/20/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a504f4329c9e7b15eb8fbe1b756d682f0de44907
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286096"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047368"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
 
@@ -95,7 +97,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

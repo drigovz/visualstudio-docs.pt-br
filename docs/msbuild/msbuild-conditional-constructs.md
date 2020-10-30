@@ -1,5 +1,7 @@
 ---
 title: Constructos condicionais do MSBuild | Microsoft Docs
+description: Saiba como o MSBuild fornece um mecanismo para processamento condicional com os elementos Choose, When e Otherwise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d6693a24d208cab6bd3b58ce16dcba8a32b190
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 614a59771ea63637ee7c0576f67bf4798cb90c1f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184283"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046414"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructos condicionais do MSBuild
 
@@ -91,7 +93,7 @@ Neste exemplo, é usada uma condição em uma constante de compilador `DEFINED_C
 </Choose>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Escolher elemento (MSBuild)](../msbuild/choose-element-msbuild.md)
 - [Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)

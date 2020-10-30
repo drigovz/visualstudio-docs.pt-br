@@ -1,5 +1,7 @@
 ---
 title: Resolvendo assemblies em tempo de design| Microsoft Docs
+description: Saiba como o MSBuild resolve referências a assemblies em tempo de design usando assemblies de referência no pacote de direcionamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632557"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048491"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Resolver assemblies em tempo de design
 
-Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência**, a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.net** lista os assemblies de referência que correspondem aos assemblies de tempo de execução no .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de runtime nas pastas AssemblyFoldersEx registradas que são usados por terceiros.
+Quando você adiciona uma referência a um assembly por meio da guia **.NET** da caixa de diálogo **Adicionar Referência** , a referência aponta para um assembly de referência intermediário ou seja, um assembly que contém todas as informações de tipo e a assinatura, mas que não necessariamente contém qualquer código. A guia **.net** lista os assemblies de referência que correspondem aos assemblies de tempo de execução no .NET Framework. Além disso, ela lista os assemblies de referência que correspondem aos assemblies de runtime nas pastas AssemblyFoldersEx registradas que são usados por terceiros.
 
 ## <a name="multi-targeting"></a>Multiplataforma
 
@@ -39,5 +41,5 @@ Quando você adiciona uma referência a um assembly por meio da guia **.NET** da
 
  O pacote de direcionamento que agora é fornecido com o SDK do .NET Framework inclui uma lista de todos os assemblies de runtime nessa versão do Framework, denominada lista de redistribuição (redist), impossibilitando ao sistema de build resolver tipos contra a versão errada do assembly.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

@@ -1,5 +1,7 @@
 ---
 title: Tarefa Vbc | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa Vbc para encapsular vbc.exe, que produz executáveis, bibliotecas de vínculo dinâmico ou módulos de código.
+ms.custom: SEO-VS-2020
 ms.date: 04/12/2018
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f1a45c384495ccd02c624ea42f91a4379226df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0177467677c9aef1f41b006bb9b1ddfaed408e40
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167443"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046759"
 ---
 # <a name="vbc-task"></a>tarefa Vbc
 
-Encapsula *vbc.exe*, que produz executáveis (*. exe*), bibliotecas de vínculo dinâmico (*. dll*) ou módulos de código (*. netmodule*). Para obter mais informações sobre *vbc.exe*, consulte [Visual Basic compilador de linha de comando](/dotnet/visual-basic/reference/command-line-compiler/index).
+Encapsula *vbc.exe* , que produz executáveis ( *. exe* ), bibliotecas de vínculo dinâmico ( *. dll* ) ou módulos de código ( *. netmodule* ). Para obter mais informações sobre *vbc.exe* , consulte [Visual Basic compilador de linha de comando](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -50,16 +52,16 @@ Encapsula *vbc.exe*, que produz executáveis (*. exe*), bibliotecas de vínculo 
 | `FileAlignment` | Parâmetro `Int32` opcional.<br /><br /> Especifica, em bytes, onde alinhar as seções do arquivo de saída. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> Esse parâmetro corresponde à opção [-filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) do compilador de *vbc.exe* . |
 | `GenerateDocumentation` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, serão geradas informações sobre a documentação, que serão colocadas em um arquivo XML com o nome do arquivo executável ou da biblioteca que a tarefa está criando. Para obter mais informações, consulte [-Doc](/dotnet/visual-basic/reference/command-line-compiler/doc). |
 | `Imports` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Importa namespaces de coleções do item especificado. Esse parâmetro corresponde à opção [-Imports](/dotnet/visual-basic/reference/command-line-compiler/imports) do compilador *vbc.exe* . |
-| `KeyContainer` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do contêiner da chave de criptografia. Esse parâmetro corresponde à opção [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) do compilador *vbc.exe*. |
+| `KeyContainer` | Parâmetro `String` opcional.<br /><br /> Especifica o nome do contêiner da chave de criptografia. Esse parâmetro corresponde à opção [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) do compilador *vbc.exe* . |
 | `KeyFile` | Parâmetro `String` opcional.<br /><br /> Especifica o nome de arquivo que contém a chave de criptografia. Para obter mais informações, consulte [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
 | `LangVersion` | Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a [versão da linguagem](/dotnet/visual-basic/language-reference/configure-language-version), como "15.5". |
 | `LinkResources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Cria um link para um recurso do .NET Framework no arquivo de saída; o arquivo de recurso não é colocado no arquivo de saída. Esse parâmetro corresponde à opção [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) do compilador *vbc.exe* . |
-| `MainEntryPoint` | Parâmetro `String` opcional.<br /><br /> Especifica a classe ou o módulo que contém o procedimento `Sub Main`. Esse parâmetro corresponde à opção [-main](/dotnet/visual-basic/reference/command-line-compiler/main) do compilador *vbc.exe*. |
+| `MainEntryPoint` | Parâmetro `String` opcional.<br /><br /> Especifica a classe ou o módulo que contém o procedimento `Sub Main`. Esse parâmetro corresponde à opção [-main](/dotnet/visual-basic/reference/command-line-compiler/main) do compilador *vbc.exe* . |
 | `ModuleAssemblyName` | Parâmetro `String` opcional.<br /><br /> Especifica o assembly do qual esse módulo faz parte. |
 | `NoConfig` | Parâmetro `Boolean` opcional.<br /><br /> Especifica que o compilador não deve usar o arquivo *Vbc. rsp* . Esse parâmetro corresponde ao parâmetro [-noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) do compilador *vbc.exe* . |
 | `NoLogo` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, suprimirá a exibição de informações da barra de notificação do compilador. Esse parâmetro corresponde à opção [-nologomarca](/dotnet/visual-basic/reference/command-line-compiler/nologo) do compilador *vbc.exe* . |
 | `NoStandardLib` | Parâmetro `Boolean` opcional.<br /><br /> Faz com que o compilador não referencie as bibliotecas padrão. Esse parâmetro corresponde à opção [-nostdlib](/dotnet/visual-basic/reference/command-line-compiler/nostdlib) do compilador *vbc.exe* . |
-| `NoVBRuntimeReference` | Parâmetro `Boolean` opcional.<br /><br /> Somente para uso interno. Se for true, impedirá a referência automática a *Microsoft.VisualBasic.dll*. |
+| `NoVBRuntimeReference` | Parâmetro `Boolean` opcional.<br /><br /> Somente para uso interno. Se for true, impedirá a referência automática a *Microsoft.VisualBasic.dll* . |
 | `NoWarnings` | Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, a tarefa suprimirá todos os avisos. Para obter mais informações, consulte [-nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn). |
 | `Optimize` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, habilita as otimizações do compilador. Esse parâmetro corresponde à opção [-Optimize](/dotnet/visual-basic/reference/command-line-compiler/optimize) do compilador de *vbc.exe* . |
 | `OptionCompare` | Parâmetro `String` opcional.<br /><br /> Especifica como são feitas comparações de cadeia de caracteres. Esse parâmetro pode ter os seguintes valores:<br /><br /> -   `binary`<br />-   `text`<br /><br /> O valor `binary` especifica que a tarefa usa comparações de cadeia de caracteres binária. O valor `text` especifica que a tarefa usa comparações de cadeia de caracteres de texto. O valor padrão desse parâmetro é `binary`. Esse parâmetro corresponde à opção [-optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) do compilador *vbc.exe* . |
@@ -68,26 +70,26 @@ Encapsula *vbc.exe*, que produz executáveis (*. exe*), bibliotecas de vínculo 
 | `OptionStrict` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa impõe semântica de tipo estrito para restringir conversões de tipo implícito. Esse parâmetro corresponde à opção [-optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) do compilador *vbc.exe* . |
 | `OptionStrictType` | Parâmetro `String` opcional.<br /><br /> Especifica qual semântica de tipo estrito gera um aviso. Atualmente, há suporte para apenas "custom". Esse parâmetro corresponde à opção [-optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) do compilador *vbc.exe* . |
 | `OutputAssembly` | Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome do arquivo de saída. Esse parâmetro corresponde à opção [-out](/dotnet/visual-basic/reference/command-line-compiler/out) do compilador *vbc.exe* . |
-| `Platform` | Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64``Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) do compilador *vbc.exe*. |
+| `Platform` | Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64``Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) do compilador *vbc.exe* . |
 | `References` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Esse parâmetro corresponde à opção [-Reference](/dotnet/visual-basic/reference/command-line-compiler/reference) do compilador *vbc.exe* . |
-| `RemoveIntegerChecks` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, desabilita a verificação de erro de estouro de inteiro. O valor padrão é `false`. Esse parâmetro corresponde à opção [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) do compilador *vbc.exe*. |
-| `Resources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída. Esse parâmetro corresponde à opção [-resource](/dotnet/visual-basic/reference/command-line-compiler/resource) do compilador *vbc.exe*. |
+| `RemoveIntegerChecks` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, desabilita a verificação de erro de estouro de inteiro. O valor padrão é `false`. Esse parâmetro corresponde à opção [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) do compilador *vbc.exe* . |
+| `Resources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída. Esse parâmetro corresponde à opção [-resource](/dotnet/visual-basic/reference/command-line-compiler/resource) do compilador *vbc.exe* . |
 | `ResponseFiles` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica o arquivo de resposta que contém comandos para essa tarefa. Esse parâmetro corresponde à opção [@ (especificar arquivo de resposta)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) do compilador *vbc.exe* . |
 | `RootNamespace` | Parâmetro `String` opcional.<br /><br /> Especifica o namespace raiz para todas as declarações de tipo. Esse parâmetro corresponde à opção [-RootNamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) do compilador *vbc.exe* . |
-| `SdkPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll*. Esse parâmetro corresponde à opção [-sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) do compilador *vbc.exe*. |
+| `SdkPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll* . Esse parâmetro corresponde à opção [-sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) do compilador *vbc.exe* . |
 | `Sources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um ou mais arquivos de origem do Visual Basic. |
 | `TargetCompactFramework` | Parâmetro `Boolean` opcional.<br /><br /> Se `true` , a tarefa se destina ao .NET Compact Framework. Essa opção corresponde à opção [-netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) do compilador *vbc.exe* . |
 | `TargetType` | Parâmetro `String` opcional.<br /><br /> Especifica o formato do arquivo de saída. Esse parâmetro pode ter um valor igual a `library`, que cria uma biblioteca de códigos, `exe`, que cria um aplicativo de console, `module`, que cria um módulo ou `winexe`, que cria um programa do Windows. O padrão é `library`. Esse parâmetro corresponde à opção [-target](/dotnet/visual-basic/reference/command-line-compiler/target) do compilador de *vbc.exe* . |
 | `Timeout` | Parâmetro `Int32` opcional.<br /><br /> Especifica a quantidade de tempo em milissegundos após o qual o executável da tarefa é encerrado. O valor padrão é `Int.MaxValue`, indicando que não há período de tempo limite. |
-| `ToolPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de onde a tarefa carregará o arquivo executável subjacente (*vbc.exe*). Se esse parâmetro não for especificado, a tarefa usará o caminho de instalação do SDK correspondente à versão do Framework que está executando o MSBuild. |
+| `ToolPath` | Parâmetro `String` opcional.<br /><br /> Especifica o local de onde a tarefa carregará o arquivo executável subjacente ( *vbc.exe* ). Se esse parâmetro não for especificado, a tarefa usará o caminho de instalação do SDK correspondente à versão do Framework que está executando o MSBuild. |
 | `TreatWarningsAsErrors` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, todos os avisos são tratados como erros. Para obter mais informações, consulte [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror). |
 | `UseHostCompilerIfAvailable` | Parâmetro `Boolean` opcional.<br /><br /> Instrui a tarefa a usar o objeto do compilador em processo, se disponível. Usado somente pelo Visual Studio. |
 | `Utf8Output` | Parâmetro `Boolean` opcional.<br /><br /> Registra a saída do compilador usando a codificação UTF-8. Esse parâmetro corresponde à opção [-utf8output](/dotnet/visual-basic/reference/command-line-compiler/utf8output) do compilador *vbc.exe* . |
 | `Verbosity` | Parâmetro `String` opcional.<br /><br /> Especifica o nível de detalhes da saída do compilador. Os detalhes podem ser `Quiet`, `Normal` (o padrão) ou `Verbose`. |
 | `WarningsAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos a serem tratados como erros. Para obter mais informações, consulte [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Esse parâmetro substitui o parâmetro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos que não são tratados como erros. Para obter mais informações, consulte [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Esse parâmetro será útil apenas se o parâmetro `TreatWarningsAsErrors` for definido como `true`. |
-| `Win32Icon` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo *. ico* no assembly, que dá ao arquivo de saída a aparência desejada no **Explorador de arquivos**. Esse parâmetro corresponde à opção [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) do compilador de *vbc.exe* . |
-| `Win32Resources` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo de recurso do Win32 (*. res*) no arquivo de saída. Esse parâmetro corresponde à opção [-Win32Resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) do compilador *vbc.exe* . |
+| `Win32Icon` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo *. ico* no assembly, que dá ao arquivo de saída a aparência desejada no **Explorador de arquivos** . Esse parâmetro corresponde à opção [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) do compilador de *vbc.exe* . |
+| `Win32Resources` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo de recurso do Win32 ( *. res* ) no arquivo de saída. Esse parâmetro corresponde à opção [-Win32Resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) do compilador *vbc.exe* . |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
@@ -103,7 +105,7 @@ Encapsula *vbc.exe*, que produz executáveis (*. exe*), bibliotecas de vínculo 
    OutputAssembly="out.exe"/>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Compilador de linha de comando Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Tarefas](../msbuild/msbuild-tasks.md)

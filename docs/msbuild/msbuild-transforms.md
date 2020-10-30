@@ -1,5 +1,7 @@
 ---
 title: Transformações do MSBuild | Microsoft Docs
+description: Saiba como o MSBuild usa transformações, conversões um-para-um de uma lista de itens para outro, para criar projetos com mais eficiência.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633103"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048993"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 
@@ -26,13 +28,13 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 
 As transformações não são arbitrárias, mas são limitadas por sintaxe especial em que todos os modificadores de transformação devem estar no formato%( \<ItemMetaDataName> ). Quaisquer metadados de item podem ser usados como um modificador de transformação. Isso inclui os metadados de item bem conhecidos atribuídos a cada item criado. Para obter uma lista de metadados de item conhecidos, confira [Metadados de itens conhecidos](../msbuild/msbuild-well-known-item-metadata.md).
 
-No exemplo a seguir, uma lista de arquivos *.resx* é transformada em uma lista de arquivos *.resources*. O modificador de transformação %(filename) especifica que cada arquivo *.resources* tem o mesmo nome de arquivo do que o arquivo *.resx* correspondente.
+No exemplo a seguir, uma lista de arquivos *.resx* é transformada em uma lista de arquivos *.resources* . O modificador de transformação %(filename) especifica que cada arquivo *.resources* tem o mesmo nome de arquivo do que o arquivo *.resx* correspondente.
 
 ```xml
 @(RESXFile->'%(filename).resources')
 ```
 
-Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form3.resx*, as saídas na lista transformada serão *Form1.resources*, *Form2.resources* e *Form3.resources*.
+Por exemplo, se os itens na lista @(RESXFile) *Form1.resx* , *Form2.resx* e *Form3.resx* , as saídas na lista transformada serão *Form1.resources* , *Form2.resources* e *Form3.resources* .
 
 > [!NOTE]
 > Você pode especificar um separador personalizado para uma lista de itens transformados da mesma maneira que especifica um separador para uma lista de itens padrão. Por exemplo, para separar uma lista de itens transformados usando uma vírgula (,) em vez do ponto-e-vírgula (;) padrão, use o seguinte XML: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -45,9 +47,9 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Por exemplo, se os itens contidos na lista de itens `RESXFile` forem *Project1\Form1.resx*, *Project1\Form2.resx* e *Project1\Form3.text*, as saídas na lista transformada serão *Toolset\Form1.resx*, *Toolset\Form2.resx* e *Toolset\Form3.text*.
+ Por exemplo, se os itens contidos na lista de itens `RESXFile` forem *Project1\Form1.resx* , *Project1\Form2.resx* e *Project1\Form3.text* , as saídas na lista transformada serão *Toolset\Form1.resx* , *Toolset\Form2.resx* e *Toolset\Form3.text* .
 
-## <a name="dependency-analysis"></a>Análise de dependência
+## <a name="dependency-analysis"></a>dependency analysis
 
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino criar saídas que são transformações das entradas, o MSBuild pode analisar os carimbos de data/hora das entradas e saídas e decidir se deseja ignorar, compilar ou recompilar parcialmente um destino.
 
@@ -69,7 +71,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ### <a name="description"></a>Descrição
 
- O exemplo a seguir mostra um arquivo de projeto do MSBuild que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0*.
+ O exemplo a seguir mostra um arquivo de projeto do MSBuild que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0* .
 
 ### <a name="code"></a>Código
 
@@ -107,7 +109,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

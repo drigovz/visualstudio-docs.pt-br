@@ -1,5 +1,7 @@
 ---
 title: Uso de memória com eficiência ao compilar projetos grandes | Microsoft Docs
+description: Saiba como o MSBuild gerencia a memória automaticamente, como descarregar versões mais antigas e recuperar caches ao criar projetos grandes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40f2713d93e4f1ad9755efaea2f8fba5f0bda94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61bfa09bf91b49c163e47bbf71c0d192b6950160
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631309"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047605"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>Usar memória com eficiência ao compilar projetos grandes
 
@@ -25,6 +27,6 @@ Projetos grandes geralmente contêm diversos subprojetos e outras dependências 
 
  A versão 4.0 manipula esse gerenciamento de memória automaticamente, evitando que projetos usem propriedades como `UnloadProjectsOnCompletion` e `UseResultsCache`.
 
-### <a name="see-also"></a>Confira também
+### <a name="see-also"></a>Veja também
 
 - [Crie vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

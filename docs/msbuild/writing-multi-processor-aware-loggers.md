@@ -1,5 +1,7 @@
 ---
 title: Escrevendo agentes com reconhecimento de multiprocessador | Microsoft Docs
+description: Saiba como o MSBuild fornece um modelo de log e registradores com reconhecimento de vários processadores e permite que você crie "agentes de encaminhamento" personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886e012b026ef17b512a7e134d080382744783ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630741"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047314"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Escrever agentes com reconhecimento de multiprocessador
 
@@ -78,7 +80,7 @@ Como alternativa, você pode criar um agente de encaminhamento personalizado. Ao
 
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Como usar o ConfigurableForwardingLogger para registro em log distribuído simples
 
- Para anexar um ConfigurableForwardingLogger ou um agente de encaminhamento personalizado, use a opção `-distributedlogger` (`-dl` para a forma abreviada) em um build de linha de comando *MSBuild.exe*. O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `-logger`, exceto em casos em que um agente distribuído tenha sempre duas classes de registro em log em vez de uma, o agente de encaminhamento e o agente central. Este é um exemplo de como anexar um agente de encaminhamento personalizado chamado XMLForwardingLogger.
+ Para anexar um ConfigurableForwardingLogger ou um agente de encaminhamento personalizado, use a opção `-distributedlogger` (`-dl` para a forma abreviada) em um build de linha de comando *MSBuild.exe* . O formato para especificar os nomes dos tipos de agente e classes é o mesmo que para a opção `-logger`, exceto em casos em que um agente distribuído tenha sempre duas classes de registro em log em vez de uma, o agente de encaminhamento e o agente central. Este é um exemplo de como anexar um agente de encaminhamento personalizado chamado XMLForwardingLogger.
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral
@@ -118,6 +120,6 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|
 |SHOWCOMMANDLINE|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como criar agentes de encaminhamento](../msbuild/creating-forwarding-loggers.md)

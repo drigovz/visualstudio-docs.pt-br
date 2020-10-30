@@ -1,5 +1,6 @@
 ---
-title: Converter entre cadeias de caracteres regulares e literais de cadeia de caracteres verbatim
+title: Converter entre literais de cadeia de caracteres regulares e textuais
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f411c0ac56adeb30370cbfc6f0f908ffd25bed05
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290016"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045909"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Converter entre cadeia de caracteres regular e refatoração de literais de cadeia de caracteres textual
 
@@ -32,18 +33,18 @@ Esta refatoração aplica-se a:
 
 1. Coloque o cursor sobre a cadeia de caracteres regular ou literal de cadeia de caracteres textual:
 
-2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas** .
 
-3. Selecione uma das seguintes opções: 
+3. Selecione uma das seguintes opções:
 
-    Selecione **Converter em cadeia de caracteres regular**.
+    Selecione **Converter em cadeia de caracteres regular** .
 
     ![Converter em cadeia de caracteres regular](media/convert-to-regular-string.png)
 
-    Selecione **Converter em cadeia de caracteres verbatim**.
+    Selecione **Converter em cadeia de caracteres verbatim** .
 
     ![Converter em cadeia de caracteres textual](media/convert-to-verbatim-string.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

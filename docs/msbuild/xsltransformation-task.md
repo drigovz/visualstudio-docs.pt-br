@@ -1,5 +1,7 @@
 ---
 title: Tarefa XslTransformation | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa de XslTransform para transformar uma entrada XML usando um XSLT e uma saída para um dispositivo ou arquivo de saída.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094545"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047188"
 ---
 # <a name="xsltransformation-task"></a>Tarefa XslTransformation
 
@@ -56,7 +58,7 @@ No exemplo a seguir, um arquivo de transformação XSL *Transform. XSLT* é usad
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Parâmetros XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Tarefas](../msbuild/msbuild-tasks.md)

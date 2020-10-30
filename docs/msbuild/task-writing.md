@@ -1,5 +1,7 @@
 ---
 title: Gravação de Tarefa| Microsoft Docs
+description: Saiba como você pode criar suas próprias tarefas para fornecer o código que é executado durante o processo de compilação do MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631829"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047924"
 ---
 # <a name="task-writing"></a>Produção de tarefas
 
@@ -25,7 +27,7 @@ Tarefas fornecem o código que é executado durante o processo de build. Tarefas
 
 ## <a name="tasks"></a>Tarefas
 
- Exemplos de tarefas incluem [cópia](../msbuild/copy-task.md), que copia um ou mais arquivos, [MakeDir](../msbuild/makedir-task.md), que cria um diretório e [CSC](../msbuild/csc-task.md), que compila arquivos de código-fonte C#. Cada tarefa é implementada como uma classe do .NET que implementa a interface <xref:Microsoft.Build.Framework.ITask>, a qual é definida no assembly *Microsoft.Build.Framework.dll*.
+ Exemplos de tarefas incluem [cópia](../msbuild/copy-task.md), que copia um ou mais arquivos, [MakeDir](../msbuild/makedir-task.md), que cria um diretório e [CSC](../msbuild/csc-task.md), que compila arquivos de código-fonte C#. Cada tarefa é implementada como uma classe do .NET que implementa a interface <xref:Microsoft.Build.Framework.ITask>, a qual é definida no assembly *Microsoft.Build.Framework.dll* .
 
  Há duas abordagens que você pode usar ao implementar uma tarefa:
 
@@ -100,7 +102,7 @@ namespace MyTasks
  O arquivo MSBuild *Microsoft. Common. Tasks* é um arquivo de projeto que contém uma lista de `UsingTask` elementos que registram todas as tarefas que são fornecidas com o MSBuild. Esse arquivo é incluído automaticamente na criação de cada projeto. Se uma tarefa registrada em *Microsoft. Common. Tasks* também estiver registrada no arquivo de projeto atual, o arquivo de projeto atual terá precedência; ou seja, você pode substituir uma tarefa padrão por sua própria tarefa que tem o mesmo nome.
 
 > [!TIP]
-> Você pode ver uma lista das tarefas que são fornecidas com o MSBuild exibindo o conteúdo de *Microsoft. Common. Tasks*.
+> Você pode ver uma lista das tarefas que são fornecidas com o MSBuild exibindo o conteúdo de *Microsoft. Common. Tasks* .
 
 ## <a name="raise-events-from-a-task"></a>Gerar eventos de uma tarefa
 
@@ -170,9 +172,9 @@ Uma tarefa não deve depender de nenhuma ordem relativa da invocação de setter
 
 O MSBuild controla nativamente as propriedades do tipo `string` , `bool` `ITaskItem` e `ITaskItem[]` . Se uma tarefa aceitar um parâmetro de um tipo diferente, o MSBuild invocará <xref:System.Convert.ChangeType%2A> a conversão de `string` (com todas as referências de item e Propriedade expandidas) para o tipo de destino. Se a conversão falhar para qualquer parâmetro de entrada, o MSBuild emitirá um erro e não chamará o `Execute()` método da tarefa.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 Essa classe C# a seguir demonstra uma tarefa derivada da <xref:Microsoft.Build.Utilities.Task> classe auxiliar. Esta tarefa retorna `true`, indicando que foi bem-sucedida.
 
@@ -195,9 +197,9 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 Essa classe C# a seguir demonstra uma tarefa que implementa a <xref:Microsoft.Build.Framework.ITask> interface. Esta tarefa retorna `true`, indicando que foi bem-sucedida.
 
@@ -231,9 +233,9 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-3"></a>Exemplo 3:
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 Essa classe C# demonstra uma tarefa derivada da <xref:Microsoft.Build.Utilities.Task> classe auxiliar. Tem uma propriedade de cadeia de caracteres obrigatória e gera um evento que é exibido por todos os agentes registrados.
 
@@ -241,9 +243,9 @@ Essa classe C# demonstra uma tarefa derivada da <xref:Microsoft.Build.Utilities.
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Exemplo
+## <a name="example-4"></a>Exemplo 4
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>Description
 
 O exemplo a seguir mostra um arquivo de projeto invocando a tarefa de exemplo anterior, SimpleTask3.
 
@@ -260,6 +262,6 @@ O exemplo a seguir mostra um arquivo de projeto invocando a tarefa de exemplo an
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

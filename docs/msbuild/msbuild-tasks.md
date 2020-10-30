@@ -1,5 +1,7 @@
 ---
 title: Tarefas do MSBuild | Microsoft Docs
+description: Saiba como o MSBuild usa tarefas ou unidades de código executável que executam operações de compilação atômicas, durante o processo de compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633129"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049045"
 ---
 # <a name="msbuild-tasks"></a>tarefas MSBuild
 
@@ -69,7 +71,7 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
 
  O MSBuild procura tarefas em vários locais. O primeiro local está em arquivos com a extensão *. OverrideTasks* armazenados nos diretórios .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão *.Tasks* nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

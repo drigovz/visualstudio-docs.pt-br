@@ -1,5 +1,7 @@
 ---
 title: Glossário do MSBuild
+description: Conheça os termos do glossário do Microsoft Build Engine (MSBuild) que descrevem o mecanismo de compilação e seus componentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42d7945656a3f0e3cfbe11f80db26b7e5c124d3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633337"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046315"
 ---
 # <a name="msbuild-glossary"></a>Glossário do MSBuild
 
@@ -25,19 +27,19 @@ AssemblyFoldersEx\
 Um local de Registro em que os fornecedores de terceiros armazenam caminhos para cada versão da estrutura que dão suporte ao local em que a resolução do tempo de design pode consultar para localizar assemblies de referência.
 
 envio em lote\
-O envio em lote significa dividir itens em categorias diferentes, conhecidas como *lotes*, com base nos metadados do item e, em seguida, executar um destino ou uma tarefa por vez usando cada lote. O envio em lote é o equivalente do MSBuild para o constructo --loop. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).
+O envio em lote significa dividir itens em categorias diferentes, conhecidas como *lotes* , com base nos metadados do item e, em seguida, executar um destino ou uma tarefa por vez usando cada lote. O envio em lote é o equivalente do MSBuild para o constructo --loop. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).
 
 escopo de build\
 O escopo de build descreve um objeto do MSBuild, por exemplo, uma propriedade global, que é potencialmente visível para um projeto e quaisquer projetos filho que são criados em um build de vários projetos.
 
 projeto filho\
-Consulte *projeto, filho*.
+Consulte *projeto, filho* .
 
 condição\
 Muitos elementos do MSBuild podem ser definidos condicionalmente; ou seja, o atributo `Condition` aparece no elemento. O conteúdo dos elementos condicionais é ignorado a menos que a condição seja avaliada como `true`. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).
 
 definição, item\
-Consulte *definição de item*.
+Consulte *definição de item* .
 
 item emit\
 Durante a fase de execução de um build, os itens podem ser criados ou modificados por tarefas que têm elementos `Output` filho que têm o atributo `ItemName`. Diz-se que a tarefa "emite" os novos itens.
@@ -52,7 +54,7 @@ fase de execução\
 A execução é a segunda fase de um build de projeto. Os destinos selecionados são criados e as tarefas são executadas. As propriedades e os itens podem ser criados ou modificados em comparação com seus valores de avaliação.
 
 função, propriedade\
-Consulte *função de propriedade*.
+Consulte *função de propriedade* .
 
 função, item\
 Consulte a função de item.
@@ -67,7 +69,7 @@ função de item\
 As funções de item obtêm informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens. Há funções para manipular cadeias de caracteres e caminhos de item. Para saber mais, confira [Funções de item](../msbuild/item-functions.md).
 
 metadados de item\
-Consulte *metadados, item*.
+Consulte *metadados, item* .
 
 tipo de item\
 Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
@@ -85,7 +87,7 @@ perfil\
 Um subconjunto da estrutura completa. Ele é usado para minimizar a quantidade que precisa ser baixado para um computador.
 
 arquivo de projeto\
-Um arquivo de projeto contém o script MSBuild que controla o build. Normalmente, os arquivos de projeto têm uma extensão de arquivo que termina com *proj*, como *.csproj* ou *.vbproj*. Os arquivos de projeto podem importar arquivos de propriedade e de destino.
+Um arquivo de projeto contém o script MSBuild que controla o build. Normalmente, os arquivos de projeto têm uma extensão de arquivo que termina com *proj* , como *.csproj* ou *.vbproj* . Os arquivos de projeto podem importar arquivos de propriedade e de destino.
 
 propriedade\
 Uma propriedade é um par chave-valor que é usado para controlar o processo de build. Para obter mais informações, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
@@ -94,7 +96,7 @@ propriedade, ambiente\
 Uma propriedade de ambiente é uma propriedade que é inicializada automaticamente para o valor de uma variável de ambiente do sistema que tem o mesmo nome. Para obter mais informações, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 arquivo de propriedade\
-Um arquivo de propriedade é um arquivo de projeto que contém principalmente grupos de propriedade e grupos de itens que orientam o build. Por convenção, ele tem a extensão de arquivo *.props*. Normalmente, os arquivos de propriedade são importados no início dos arquivos de projeto associados.
+Um arquivo de propriedade é um arquivo de projeto que contém principalmente grupos de propriedade e grupos de itens que orientam o build. Por convenção, ele tem a extensão de arquivo *.props* . Normalmente, os arquivos de propriedade são importados no início dos arquivos de projeto associados.
 
 propriedade, função\
 Uma função de propriedade é uma propriedade do sistema ou um método que pode ser usado para avaliar scripts do MSBuild. Os métodos de propriedade podem ser usados para ler a hora do sistema, comparar cadeias de caracteres, combinar expressões regulares e executar outras ações. Para obter mais informações, confira [Funções de propriedade](../msbuild/property-functions.md).
@@ -131,7 +133,7 @@ assembly de referência\
 Um assembly que é usado durante o tempo de design para criar um aplicativo. Um assembly de referência pode ter o código real e as interfaces privadas removidos dele, deixando apenas os metadados e as interfaces públicas.
 
 propriedade de registro\
-Consulte *propriedade, Registro*.
+Consulte *propriedade, Registro* .
 
 destino\
 Um destino agrupa tarefas em uma ordem específica e expõe seções do arquivo de projeto como pontos de entrada para o processo de build. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).
@@ -158,7 +160,7 @@ direcionamento de pacote\
 A lista de assemblies que são distribuídos com uma determinada estrutura e o conjunto de assemblies de referência para essa estrutura.
 
 arquivo de destino\
-Um arquivo de destino é um arquivo de projeto que contém, em grande parte, destinos e tarefas que orientam o build. Por convenção, ele tem a extensão de arquivo *.targets*. Normalmente, os arquivos de destino são importados no fim dos arquivos de projeto associados.
+Um arquivo de destino é um arquivo de projeto que contém, em grande parte, destinos e tarefas que orientam o build. Por convenção, ele tem a extensão de arquivo *.targets* . Normalmente, os arquivos de destino são importados no fim dos arquivos de projeto associados.
 
 tarefa\
 Tarefas são unidades de código executável que os projetos do MSBuild usam para executar operações de compilação. Por exemplo, uma tarefa pode compilar os arquivos de entrada ou executar uma ferramenta externa. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
@@ -167,8 +169,8 @@ transformação\
 Uma transformação é uma conversão individual de uma coleção de item para outra. Além de habilitar um projeto para converter as coleções de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md).
 
 metadados conhecidos\
-Consulte *metadados, conhecidos*.
+Consulte *metadados, conhecidos* .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [MSBuild](../msbuild/msbuild.md)

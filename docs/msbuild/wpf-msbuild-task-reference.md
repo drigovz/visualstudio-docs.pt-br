@@ -1,5 +1,7 @@
 ---
 title: Referência da Tarefa do WPF MSBuild | Microsoft Docs
+description: Consulte uma referência de tarefa para o processo de compilação Windows Presentation Foundation (WPF), que estende o MSBuild com tarefas adicionais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630841"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047512"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referência de tarefas do WPF MSBuild
 
@@ -57,7 +59,7 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Insere um ou mais recursos (*. jpg*, *. ico*, *. bmp*, XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
+ Insere um ou mais recursos ( *. jpg* , *. ico* , *. bmp* , XAML em formato binário e outros tipos de extensão) em um arquivo *. Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,8 +67,8 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Adiciona o **\<hostInBrowser />** elemento ao manifesto do aplicativo (* \<projectname> . exe. manifest*) quando um projeto do aplicativo de navegador XAML (XBAP) é compilado.
+ Adiciona o **\<hostInBrowser />** elemento ao manifesto do aplicativo ( *\<projectname> . exe. manifest* ) quando um projeto do aplicativo de navegador XAML (XBAP) é compilado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [MSBuild](../msbuild/msbuild.md)

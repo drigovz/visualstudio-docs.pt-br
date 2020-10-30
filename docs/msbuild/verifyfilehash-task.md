@@ -1,5 +1,7 @@
 ---
 title: Tarefa VerifyFileHash | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa VerifyFileHash para verificar se um arquivo corresponde ao hash de arquivo esperado e falha se ele não corresponder.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579526"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046105"
 ---
 # <a name="verifyfilehash-task"></a>Tarefa VerifyFileHash
 
@@ -37,7 +39,7 @@ Essa tarefa foi adicionada no 15.8, mas requer uma [solução alternativa](https
 |`File`|Parâmetro `String` obrigatório.<br /><br />O arquivo com hash e validação.|
 |`Hash`|Parâmetro `String` obrigatório.<br /><br />O hash esperado do arquivo.|
 |`Algorithm`|Parâmetro `String` opcional.<br /><br />O algoritmo. Valores permitidos: `SHA256`, `SHA384`, `SHA512`. Padrão = `SHA256`.|
-|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. O padrão é `hex`. Valores permitidos = `hex`, `base64`.|
+|`HashEncoding`|Parâmetro `String` opcional.<br /><br />A codificação usada para hashes gerados. Assume o padrão de `hex`. Valores permitidos = `hex`, `base64`.|
 
 ## <a name="example"></a>Exemplo
 
@@ -85,7 +87,7 @@ No MSBuild 16,5 e posterior, se você não quiser que a compilação falhe quand
   </Target>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

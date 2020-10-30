@@ -1,6 +1,8 @@
 ---
 title: Modificar o estilo de objetos
 titleSuffix: Blend for Visual Studio
+description: Saiba como modificar o estilo de objetos no Blend para Visual Studio aplicando pincéis, definindo estados visuais e aplicando estilos e modelos reutilizáveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592948"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046792"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificar o estilo de objetos no Blend para Visual Studio
 
-A maneira mais fácil de personalizar um objeto é definir as propriedades no painel **Propriedades**.
+A maneira mais fácil de personalizar um objeto é definir as propriedades no painel **Propriedades** .
 
-Se quiser reutilizar configurações ou grupos de configurações, crie um recurso reutilizável. Pode ser um *estilo*, *modelo*, ou algo simples como uma cor personalizada. Você também pode fazer um controle aparecer diferentemente com base em seu estado. Por exemplo, um botão muda para verde quando o usuário clica nele.
+Se quiser reutilizar configurações ou grupos de configurações, crie um recurso reutilizável. Pode ser um *estilo* , *modelo* , ou algo simples como uma cor personalizada. Você também pode fazer um controle aparecer diferentemente com base em seu estado. Por exemplo, um botão muda para verde quando o usuário clica nele.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pincéis: Modificar a aparência de um objeto
 
@@ -27,9 +29,9 @@ Aplique um pincel a um objeto se você quiser alterar sua aparência.
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Pinte uma imagem ou padrão de repetição em um objeto
 
-Pinte uma imagem ou padrão de repetição em um objeto usando um *pincel de bloco*.
+Pinte uma imagem ou padrão de repetição em um objeto usando um *pincel de bloco* .
 
-Para criar um pincel de bloco, comece criando um *pincel de imagem*, *pincel de desenho* ou *pincel visual*.
+Para criar um pincel de bloco, comece criando um *pincel de imagem* , *pincel de desenho* ou *pincel visual* .
 
 Crie um pincel de imagem usando uma imagem. As ilustrações a seguir mostram o pincel de imagem, o pincel de imagem lado a lado e o pincel de imagem invertido.
 
@@ -47,21 +49,21 @@ Crie um pincel visual a partir de um controle, como um botão. As ilustrações 
 
 Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.
 
-**Você deve usar um estilo? **: se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
+**Você deve usar um estilo?** : se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo* . É possível modificar um controle, mesmo após aplicar um estilo a ele.
 
-**Você deve usar um modelo?**: se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
+**Você deve usar um modelo?** : se você quiser alterar a estrutura de um controle, use um *modelo* . Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
 
 ### <a name="create-a-template-or-style"></a>Criar um modelo ou estilo
 
 Há duas maneiras de criar um modelo. Você pode converter qualquer objeto de sua prancheta em um controle, ou pode basear seu modelo em um controle existente.
 
-Para converter qualquer objeto em um modelo de controle, selecione o objeto e, em seguida, no menu **Ferramentas**, escolha **Transformar em Controle**.
+Para converter qualquer objeto em um modelo de controle, selecione o objeto e, em seguida, no menu **Ferramentas** , escolha **Transformar em Controle** .
 
-Se você quiser basear seu modelo em um controle existente, selecione um objeto na prancheta. Depois, na parte superior da prancheta, escolha o botão de navegação estrutural, escolha **Editar Modelo** e, em seguida, escolha **Editar uma Cópia** ou **Criar Vazio**.
+Se você quiser basear seu modelo em um controle existente, selecione um objeto na prancheta. Depois, na parte superior da prancheta, escolha o botão de navegação estrutural, escolha **Editar Modelo** e, em seguida, escolha **Editar uma Cópia** ou **Criar Vazio** .
 
 ![Menu Editar Modelo](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Para criar um estilo, selecione o objeto e, no menu **Objeto**, escolha **Editar Estilo**e escolha **Editar uma Cópia** ou **Criar Vazio**.
+Para criar um estilo, selecione o objeto e, no menu **Objeto** , escolha **Editar Estilo** e escolha **Editar uma Cópia** ou **Criar Vazio** .
 
 - Escolha **Editar uma Cópia** para iniciar com o estilo ou modelo padrão do controle.
 
@@ -69,7 +71,7 @@ Para criar um estilo, selecione o objeto e, no menu **Objeto**, escolha **Editar
 
 A opção **Editar Atual** só aparecerá se você editar um estilo ou modelo já criado. Ela não aparecerá para um controle que ainda esteja usando um modelo padrão do sistema.
 
-Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou modelo para que possa usá-lo posteriormente, ou pode aplicar o estilo ou modelo a todos os controles desse tipo.
+Na caixa de diálogo **Criar Recurso de Estilo** , você pode nomear o estilo ou modelo para que possa usá-lo posteriormente, ou pode aplicar o estilo ou modelo a todos os controles desse tipo.
 
 ![Caixa de diálogo Criar Recurso de Estilo](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png)
 
@@ -79,13 +81,13 @@ Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou 
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar um estilo ou modelo a um controle
 
-Clique com o botão direito do mouse em um objeto na janela [Objetos e Linha do Tempo](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), escolha **Editar Modelo** e escolha **Aplicar Recurso**.
+Clique com o botão direito do mouse em um objeto na janela [Objetos e Linha do Tempo](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), escolha **Editar Modelo** e escolha **Aplicar Recurso** .
 
 ![Menu Aplicar Recurso](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle
 
-Selecione o controle e, na janela * * Propriedades * * * *, localize o **estilo** ou a propriedade de **modelo** . Escolha **Opções avançadas**e clique em **Redefinir** no menu de atalho.
+Selecione o controle e, na janela * * Propriedades * * * *, localize o **estilo** ou a propriedade de **modelo** . Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
 
 ## <a name="visual-states"></a>Estados visuais
 
@@ -101,6 +103,6 @@ Converta qualquer coisa em seu projeto em um recurso. Um recurso é apenas um ob
 
 ![Botão Converter cores em recurso](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Caixa de diálogo Criar Recurso de Cor](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criando uma interface do usuário usando o Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

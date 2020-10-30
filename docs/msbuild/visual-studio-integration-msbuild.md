@@ -1,7 +1,8 @@
 ---
 title: Integração com o Visual Studio (MSBuild)
 titleSuffix: ''
-ms.custom: seodec18
+description: Saiba como o Visual Studio pode hospedar projetos no formato MSBuild, mesmo se eles foram criados por ferramentas diferentes e tinham processos de compilação personalizados.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3468ab5a6a185a759ab43229758c0ff4e9d00e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631192"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046679"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 
@@ -37,7 +38,7 @@ O Visual Studio hospeda o MSBuild para carregar e compilar projetos gerenciados.
 
 ## <a name="project-file-name-extensions"></a>Extensões de nome do arquivo de projeto
 
- O *MSBuild.exe* reconhece extensões de nome de arquivo de projeto que correspondem ao padrão *.\*proj*. No entanto, o Visual Studio reconhece apenas um subconjunto dessas extensões de nome de arquivo de projeto, que determinam o sistema de projeto específico do idioma que carregará o projeto. O Visual Studio não tem um sistema de projeto baseado em MSBuild com neutralidade de idioma.
+ O *MSBuild.exe* reconhece extensões de nome de arquivo de projeto que correspondem ao padrão *.\*proj* . No entanto, o Visual Studio reconhece apenas um subconjunto dessas extensões de nome de arquivo de projeto, que determinam o sistema de projeto específico do idioma que carregará o projeto. O Visual Studio não tem um sistema de projeto baseado em MSBuild com neutralidade de idioma.
 
  Por exemplo, o sistema de projeto C# carrega arquivos *. csproj* , mas o Visual Studio não é capaz de carregar um arquivo *. xxproj* . Um arquivo de projeto para arquivos de origem em um idioma arbitrário deve usar a mesma extensão que Visual Basic ou arquivos de projeto C# a serem carregados no Visual Studio.
 
@@ -51,7 +52,7 @@ O Visual Studio hospeda o MSBuild para carregar e compilar projetos gerenciados.
 
 ```xml
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "
-Condition=" '$(Configuration)' == 'Release' " 
+Condition=" '$(Configuration)' == 'Release' " 
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "
 ```
 
@@ -59,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>Ações de compilação adicionais
 
- O Visual Studio permite que você altere o nome do tipo de item de um arquivo em um projeto com a propriedade **criar ação** da janela **Propriedades do arquivo** . Os nomes de tipo de item **Compile**, **EmbeddedResource**, **Content** e **None** sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado **JScript** a esse menu para todos os projetos que o importarem:
+ O Visual Studio permite que você altere o nome do tipo de item de um arquivo em um projeto com a propriedade **criar ação** da janela **Propriedades do arquivo** . Os nomes de tipo de item **Compile** , **EmbeddedResource** , **Content** e **None** sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado **JScript** a esse menu para todos os projetos que o importarem:
 
 ```xml
 <ItemGroup>
@@ -92,13 +93,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>Compilar soluções
 
- No Visual Studio, o arquivo de solução e a ordem de compilação do projeto são controlados pelo próprio Visual Studio. Ao criar uma solução com *msbuild.exe* na linha de comando, o MSBuild analisa o arquivo da solução e ordena as compilações do projeto. Em ambos os casos, os projetos são compilados individualmente em ordem de dependência e as referências projeto a projeto não são percorridas. Por outro lado, quando projetos individuais são compilados com o *msbuild.exe*, as referências projeto a projeto são percorridas.
+ No Visual Studio, o arquivo de solução e a ordem de compilação do projeto são controlados pelo próprio Visual Studio. Ao criar uma solução com *msbuild.exe* na linha de comando, o MSBuild analisa o arquivo da solução e ordena as compilações do projeto. Em ambos os casos, os projetos são compilados individualmente em ordem de dependência e as referências projeto a projeto não são percorridas. Por outro lado, quando projetos individuais são compilados com o *msbuild.exe* , as referências projeto a projeto são percorridas.
 
  Ao compilar dentro do Visual Studio, a propriedade `$(BuildingInsideVisualStudio)` é definida como `true` . Isso pode ser usado no projeto ou em arquivos *.targets* para fazer com que o build se comporte de maneira diferente.
 
 ## <a name="display-properties-and-items"></a>Exibir propriedades e itens
 
- O Visual Studio reconhece determinados valores e nomes de propriedade. Por exemplo, a seguinte propriedade de um projeto fará com que **Aplicativos do Windows** apareçam na caixa **Tipo de Aplicativo** no **Designer de Projeto**.
+ O Visual Studio reconhece determinados valores e nomes de propriedade. Por exemplo, a seguinte propriedade de um projeto fará com que **Aplicativos do Windows** apareçam na caixa **Tipo de Aplicativo** no **Designer de Projeto** .
 
 ```xml
 <OutputType>WinExe</OutputType>
@@ -110,7 +111,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Propriedades com nomes arbitrários não são exibidas no Visual Studio. Para modificar propriedades arbitrárias no Visual Studio, você deve abrir o arquivo de projeto no editor de XML e editá-los manualmente. Para saber mais, confira a seção [Editar arquivos de projeto no Visual Studio](#edit-project-files-in-visual-studio) mais adiante neste tópico.
 
- Os itens definidos no projeto com nomes de tipo de item arbitrários são exibidos por padrão no **Gerenciador de Soluções**, em seus respectivos nós de projeto. Para ocultar um item da exibição, defina os metadados `Visible` como `false`. Por exemplo, o item a seguir participará do processo de build, mas não será exibido no **Gerenciador de Soluções**.
+ Os itens definidos no projeto com nomes de tipo de item arbitrários são exibidos por padrão no **Gerenciador de Soluções** , em seus respectivos nós de projeto. Para ocultar um item da exibição, defina os metadados `Visible` como `false`. Por exemplo, o item a seguir participará do processo de build, mas não será exibido no **Gerenciador de Soluções** .
 
 ```xml
 <ItemGroup>
@@ -123,7 +124,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > [!NOTE]
 > Os `Visible` metadados são ignorados por **Gerenciador de soluções** para projetos C++. Os itens sempre serão mostrados, mesmo se `Visible` estiver definido como false.
 
- Os itens declarados em arquivos importados para o projeto não serão exibidos por padrão. Os itens criados durante o processo de build nunca serão exibidos no **Gerenciador de Soluções**.
+ Os itens declarados em arquivos importados para o projeto não serão exibidos por padrão. Os itens criados durante o processo de build nunca serão exibidos no **Gerenciador de Soluções** .
 
 ## <a name="conditions-on-items-and-properties"></a>Condições em itens e propriedades
 
@@ -131,11 +132,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Ao determinar os valores de propriedade a serem exibidos, as propriedades que o Visual Studio considera dependente de configuração são avaliadas de forma diferente das propriedades que consideram independente de configuração. Para propriedades, ele considera dependente de configuração, o Visual Studio define as `Configuration` `Platform` Propriedades e adequadamente e instrui o MSBuild a reavaliar o projeto. Para as propriedades consideradas independentes da configuração, não é possível determinar como as condições serão avaliadas.
 
- As expressões condicionais de itens sempre serão ignoradas com a finalidade de decidir se o item deve ser exibido no **Gerenciador de Soluções**.
+ As expressões condicionais de itens sempre serão ignoradas com a finalidade de decidir se o item deve ser exibido no **Gerenciador de Soluções** .
 
 ## <a name="debugging"></a>Depuração
 
- Para localizar e iniciar o assembly de saída e anexar o depurador, o Visual Studio precisa das propriedades `OutputPath` , `AssemblyName` e `OutputType` corretamente definidas. Não será possível anexar o depurador se o processo de build não fizer com que o compilador gere um arquivo *.pdb*.
+ Para localizar e iniciar o assembly de saída e anexar o depurador, o Visual Studio precisa das propriedades `OutputPath` , `AssemblyName` e `OutputType` corretamente definidas. Não será possível anexar o depurador se o processo de build não fizer com que o compilador gere um arquivo *.pdb* .
 
 ## <a name="design-time-target-execution"></a>Execução de destino do tempo de design
 
@@ -147,23 +148,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descarregar e editar um arquivo de projeto no Visual Studio
 
-1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.
+1. No **Gerenciador de Soluções** , abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto** .
 
-     O projeto está marcado como **(indisponível)**.
+     O projeto está marcado como **(indisponível)** .
 
-2. No **Gerenciador de soluções**, abra o menu de atalho do projeto indisponível e escolha **Editar \<Project File> **.
+2. No **Gerenciador de soluções** , abra o menu de atalho do projeto indisponível e escolha **Editar \<Project File>** .
 
      O arquivo de projeto será aberto no Editor de XML do Visual Studio.
 
 3. Edite, salve e feche o arquivo de projeto.
 
-4. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Recarregar Projeto**.
+4. No **Gerenciador de Soluções** , abra o menu de atalho do projeto indisponível e, em seguida, escolha **Recarregar Projeto** .
 
 ## <a name="intellisense-and-validation"></a>IntelliSense e validação
 
- Ao usar o editor de XML para editar arquivos de projeto, o IntelliSense e a validação são controlados pelos arquivos de esquema do MSBuild. Eles são instalados no cache de esquema, que pode ser encontrado em * \<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild*.
+ Ao usar o editor de XML para editar arquivos de projeto, o IntelliSense e a validação são controlados pelos arquivos de esquema do MSBuild. Eles são instalados no cache de esquema, que pode ser encontrado em *\<Visual Studio installation directory> \Xml\Schemas\1033\MSBuild* .
 
- Os tipos principais do MSBuild são definidos em *Microsoft. Build. Core. xsd* e os tipos comuns usados pelo Visual Studio são definidos em *Microsoft. Build. CommonTypes. xsd*. Para personalizar os esquemas a fim de obter o IntelliSense e a validação para nomes, propriedades e tarefas de tipo de item personalizados, é possível editar o *Microsoft.Build.xsd* ou criar um esquema próprio que inclua CommonTypes ou esquemas de Núcleo. Ao criar um esquema próprio, será necessário direcionar o editor de XML a encontrá-lo por meio da janela **Propriedades**.
+ Os tipos principais do MSBuild são definidos em *Microsoft. Build. Core. xsd* e os tipos comuns usados pelo Visual Studio são definidos em *Microsoft. Build. CommonTypes. xsd* . Para personalizar os esquemas a fim de obter o IntelliSense e a validação para nomes, propriedades e tarefas de tipo de item personalizados, é possível editar o *Microsoft.Build.xsd* ou criar um esquema próprio que inclua CommonTypes ou esquemas de Núcleo. Ao criar um esquema próprio, será necessário direcionar o editor de XML a encontrá-lo por meio da janela **Propriedades** .
 
 ## <a name="edit-loaded-project-files"></a>Como editar arquivos de projeto carregados
 
@@ -197,11 +198,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="performance-shortcuts"></a>Atalhos de desempenho
 
- Se você usar o IDE do Visual Studio para iniciar a depuração (escolhendo a tecla F5 ou escolhendo **depurar**  >  **Iniciar Depuração** na barra de menus) ou para compilar seu projeto (por exemplo, **criar**  >  **solução de compilação**), o processo de compilação usará uma verificação de atualização rápida para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
+ Se você usar o IDE do Visual Studio para iniciar a depuração (escolhendo a tecla F5 ou escolhendo **depurar**  >  **Iniciar Depuração** na barra de menus) ou para compilar seu projeto (por exemplo, **criar**  >  **solução de compilação** ), o processo de compilação usará uma verificação de atualização rápida para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Iniciar um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)

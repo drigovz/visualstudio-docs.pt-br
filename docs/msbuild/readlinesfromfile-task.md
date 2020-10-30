@@ -1,5 +1,7 @@
 ---
 title: Tarefa ReadLinesFromFile | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa ReadLinesFromFile para ler uma lista de itens de um arquivo de texto. O arquivo deve ter um item em cada linha.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c926c131fab101563841bea3362e88e27674226
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2c43af40ea429714f0624db67c53fa46eb6427
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632895"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048776"
 ---
 # <a name="readlinesfromfile-task"></a>Tarefa ReadLinesFromFile
 
@@ -65,7 +67,7 @@ Lê uma lista de itens de um arquivo de texto.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

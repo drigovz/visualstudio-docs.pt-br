@@ -1,5 +1,7 @@
 ---
 title: Separação em lotes no MSBuild | Microsoft Docs
+description: Saiba como o MSBuild divide as listas de itens em diferentes categorias ou lotes, com base nos metadados do item, e executa um destino ou uma tarefa uma vez com cada lote.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289268"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047701"
 ---
 # <a name="msbuild-batching"></a>Envio em lote do MSBuild
 
@@ -219,7 +221,7 @@ não é permitido.
 
 Para obter mais informações sobre funções de propriedade, confira [Funções de propriedade](../msbuild/property-functions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

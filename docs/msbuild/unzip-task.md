@@ -1,5 +1,7 @@
 ---
 title: Tarefa de descompactação | Microsoft Docs
+description: Saiba mais sobre os parâmetros e o uso da tarefa de descompactação do MSBuild, que descompacta um arquivo. zip para um local especificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d331fda05e8655be0536a1e83d8309ae8c060b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d701f70950bb5a5cb2338007db129ca15d194b77
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631504"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046904"
 ---
 # <a name="unzip-task"></a>Tarefa de descompactação
 
@@ -43,8 +45,8 @@ Descompacta um arquivo *.zip* no local especificado.
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`DestinationFolder`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> Especifica a pasta de destino para descompactar o arquivo.|
-|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. O padrão é `false`.|
-|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. O padrão é `true`. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
+|`OverwriteReadOnlyFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, substitui os arquivos somente leitura. Assume o padrão de `false`.|
+|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará a descompactação de arquivos inalterados. Assume o padrão de `true`. A tarefa `Unzip` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação.|
 |`SourceFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica um ou mais arquivos a serem descompactados. Quando vários arquivos são especificados, eles são descompactados em ordem na mesma pasta.|
 
 ## <a name="remarks"></a>Comentários
@@ -69,7 +71,7 @@ Descompacta um arquivo *.zip* no local especificado.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

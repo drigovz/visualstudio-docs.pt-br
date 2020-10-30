@@ -1,5 +1,7 @@
 ---
 title: Tarefa RemoveDir | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa RemoveDir para remover o diretório especificado e todos os seus arquivos e subdiretórios.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26a6feeca7c89a67e7dd51bd0a1f99a182ffac59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 925e583582acad2492e9dbe9f4470924ac41d379
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632791"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048734"
 ---
 # <a name="removedir-task"></a>Tarefa RemoveDir
 
@@ -62,7 +64,7 @@ Remove os diretórios especificados e todos os seus arquivos e subdiretórios.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

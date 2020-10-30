@@ -1,5 +1,7 @@
 ---
 title: 'Passo a passo: criando uma tarefa embutida | Microsoft Docs'
+description: Percorra a criação de uma tarefa do MSBuild embutida no arquivo de projeto, sem precisar criar um assembly separado para hospedar a tarefa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289138"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046638"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
 
@@ -32,7 +34,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
 
 - Uma tarefa que tem dois parâmetros de entrada e um parâmetro de saída que retorna um item MSBuild.
 
-Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de comando do Visual Studio**, da seguinte maneira:
+Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de comando do Visual Studio** , da seguinte maneira:
 
 1. Criae um arquivo de projeto do MSBuild usando o Visual Studio.
 
@@ -46,13 +48,13 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 
 #### <a name="to-create-and-modify-a-project-file"></a>Para criar e modificar um arquivo de projeto
 
-1. No Visual Studio, crie um novo projeto usando o modelo de **aplicativo Windows Forms** C#. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\*. Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks**.
+1. No Visual Studio, crie um novo projeto usando o modelo de **aplicativo Windows Forms** C#. Na caixa **Nome** , digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\* . Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks** .
 
 3. Clique em **OK** para criar o arquivo de projeto.
 
-3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto **InlineTasks** e clique em **descarregar projeto**.
+3. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó do projeto **InlineTasks** e clique em **descarregar projeto** .
 
-4. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar InlineTasks.csproj**.
+4. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar InlineTasks.csproj** .
 
      O arquivo de projeto aparecerá no editor de códigos.
 
@@ -94,20 +96,20 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 
 ##### <a name="to-run-the-hello-task"></a>Para executar a tarefa Olá
 
-1. Clique em **Iniciar**, clique em **Todos os Programas** e, em seguida, localize a pasta **Ferramentas do Visual Studio** e clique em **Prompt de Comando do Visual Studio**.
+1. Clique em **Iniciar** , clique em **Todos os Programas** e, em seguida, localize a pasta **Ferramentas do Visual Studio** e clique em **Prompt de Comando do Visual Studio** .
 
-2. Na **janela do prompt de comando**, localize a pasta que contém o arquivo de projeto, neste caso, *D:\InlineTasks\InlineTasks \\ *.
+2. Na **janela do prompt de comando** , localize a pasta que contém o arquivo de projeto, neste caso, *D:\InlineTasks\InlineTasks \\* .
 
-3. Digite **MSBuild** sem opções de comando e pressione **Enter**. Por padrão, isso cria o arquivo *InlineTasks. csproj* e processa o TestBuild de destino padrão, que invoca a tarefa de saudação.
+3. Digite **MSBuild** sem opções de comando e pressione **Enter** . Por padrão, isso cria o arquivo *InlineTasks. csproj* e processa o TestBuild de destino padrão, que invoca a tarefa de saudação.
 
-4. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:
+4. Examine a saída na **janela do Prompt de Comando** . Você deverá ver esta linha:
 
     `Hello, world!`
 
    > [!NOTE]
    > Se você não vir a mensagem de saudação, tente salvar o arquivo de projeto novamente e, em seguida, execute a tarefa de Olá.
 
-   Ao alternar entre o editor de códigos e a **janela do Prompt de Comando**, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.
+   Ao alternar entre o editor de códigos e a **janela do Prompt de Comando** , você poderá alterar o arquivo de projeto e ver os resultados rapidamente.
 
 ## <a name="define-the-echo-task"></a>Definir a tarefa Echo
 
@@ -133,9 +135,9 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    </Target>
    ```
 
-2. Na **janela do prompt de comando**, digite **MSBuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.
+2. Na **janela do prompt de comando** , digite **MSBuild** sem opções de comando e pressione **Enter** . Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.
 
-3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:
+3. Examine a saída na **janela do Prompt de Comando** . Você deverá ver esta linha:
 
     `Greetings!`
 
@@ -170,9 +172,9 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    </Target>
    ```
 
-2. Na **janela do prompt de comando**, digite **MSBuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.
+2. Na **janela do prompt de comando** , digite **MSBuild** sem opções de comando e pressione **Enter** . Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa Echo.
 
-3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver esta linha:
+3. Examine a saída na **janela do Prompt de Comando** . Você deverá ver esta linha:
 
     `The sum is 9`
 
@@ -226,9 +228,9 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
    </Target>
    ```
 
-2. Na **janela do prompt de comando**, digite **MSBuild** sem opções de comando e pressione **Enter**. Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa RegX.
+2. Na **janela do prompt de comando** , digite **MSBuild** sem opções de comando e pressione **Enter** . Por padrão, isso processa o TestBuild de destino padrão, que invoca a tarefa RegX.
 
-3. Examine a saída na **janela do Prompt de Comando**. Você deverá ver estas linhas:
+3. Examine a saída na **janela do Prompt de Comando** . Você deverá ver estas linhas:
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -264,7 +266,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 </Code>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

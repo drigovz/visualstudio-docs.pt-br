@@ -1,5 +1,7 @@
 ---
 title: Maneiras de depurar código XSLT
+description: Saiba como depurar código XSLT no Visual Studio usando o depurador XSLT para percorrer o código, definir pontos de interrupção e exibir Estados de execução XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815611"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047754"
 ---
 # <a name="debugging-xslt"></a>Depuração do XSLT
 
@@ -33,7 +35,7 @@ Você pode iniciar o depurador quando tiver uma folha de estilos ou um arquivo X
 
 1. Abra a folha de estilos ou o arquivo XML no Visual Studio.
 
-1. Selecione **Iniciar Depuração XSLT** no menu **XML** ou pressione **ALT** + **F5**.
+1. Selecione **Iniciar Depuração XSLT** no menu **XML** ou pressione **ALT** + **F5** .
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Depurar de um aplicativo que usa XSLT
 
@@ -90,8 +92,8 @@ namespace ConsoleApplication
 
 O [XSLT Profiler](../xml-tools/xslt-profiler.md) é uma ferramenta que permite aos desenvolvedores medir, avaliar e direcionar problemas relacionados ao desempenho no código XSLT criando relatórios de desempenho XSLT detalhados. Para obter mais informações, consulte [XSLT Profiler](../xml-tools/xslt-profiler.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Walkthrough: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Primeiro, veja o depurador do Visual Studio](../debugger/debugger-feature-tour.md)
 - [Noções básicas de depuração: pontos de interrupção](../debugger/using-breakpoints.md)

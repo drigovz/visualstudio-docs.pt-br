@@ -1,5 +1,7 @@
 ---
 title: Tarefa ResolveComReference | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa ResolveComReference para obter uma lista de um ou mais nomes de biblioteca de tipos ou arquivos. tlb e resolvê-los para locais no disco.
+ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286174"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048619"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 
@@ -48,7 +50,7 @@ Usa uma lista de um ou mais nomes de biblioteca de tipos ou arquivos *. tlb* e r
 |`SdkToolsPath`|Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Se `ExecuteAsTool` for `true`, esse parâmetro deverá ser definido como o caminho de ferramentas do SDK para a versão da estrutura de destino.|
 |`StateFile`|Parâmetro `String` opcional.<br /><br /> Especifica o arquivo de cache dos carimbos de hora/hora de componente COM. Se não existir, cada execução regenerará todos os invólucros.|
 |`TargetFrameworkVersion`|Parâmetro `String` opcional.<br /><br /> Especifica a versão da estrutura de destino do projeto.<br /><br /> O padrão é `String.Empty`. o que significa que não há nenhuma filtragem para uma referência com base na estrutura de destino.|
-|`TargetProcessorArchitecture`|Parâmetro `String` opcional.<br /><br /> Especifica a arquitetura do processador de destino preferencial. Passado para o sinalizador de *tlbimp.exe*/machine após a tradução.<br /><br /> O valor do parâmetro deve ser um membro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
+|`TargetProcessorArchitecture`|Parâmetro `String` opcional.<br /><br /> Especifica a arquitetura do processador de destino preferencial. Passado para o sinalizador de *tlbimp.exe* /machine após a tradução.<br /><br /> O valor do parâmetro deve ser um membro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
 |`TypeLibFiles`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica o caminho do arquivo de biblioteca de tipo para referências COM. Itens incluídos nesse parâmetro podem conter metadados do item. Para saber mais, consulte a seção [Metadados do item TypeLibFiles](#typelibfiles-item-metadata) abaixo.|
 |`TypeLibNames`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os nomes da biblioteca de tipos a serem resolvidos. Itens incluídos nesse parâmetro devem conter alguns metadados do item. Para saber mais, consulte a seção [Metadados do item TypeLibNames](#typelibnames-item-metadata) abaixo.|
 |`WrapperOutputDirectory`|Parâmetro `String` opcional.<br /><br /> O local no disco no qual o assembly de interoperabilidade gerado é colocado. Se esses metadados de item não forem especificados, a tarefa usará o caminho absoluto do diretório em que o arquivo de projeto está localizado.|
@@ -57,7 +59,7 @@ Usa uma lista de um ou mais nomes de biblioteca de tipos ou arquivos *. tlb* e r
 
  A tabela a seguir descreve os metadados de item disponíveis para itens passados para o parâmetro `TypeLibNames`.
 
-|Metadados|Descrição|
+|Metadados|Description|
 |--------------|-----------------|
 |`GUID`|Metadados obrigatórios do item.<br /><br /> O GUID para a biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|
 |`VersionMajor`|Metadados obrigatórios do item.<br /><br /> A versão principal da biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|
@@ -70,7 +72,7 @@ Usa uma lista de um ou mais nomes de biblioteca de tipos ou arquivos *. tlb* e r
 
  A tabela a seguir descreve os metadados de item disponíveis para itens passados para o parâmetro `TypeLibFiles`.
 
-|Metadados|Descrição|
+|Metadados|Description|
 |--------------|-----------------|
 |`EmbedInteropTypes`|Parâmetro `Boolean` opcional.<br /><br />  Se `true`, incorpore os tipos de interoperabilidade dessa referência diretamente em seu assembly em vez de gerar uma DLL de interoperabilidade.|
 |`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|
@@ -94,7 +96,7 @@ MSB4803: The task "ResolveComReference" is not supported on the .NET Core versio
 
 Essa tarefa não tem suporte na versão do .NET Core do MSBuild, que é usada quando você executa o `dotnet build` comando na linha de comando. Tente compilar o projeto invocando [MSBuild.exe](msbuild-command-line-reference.md) da prompt de comando do desenvolvedor do Visual Studio, já que isso usa a versão .NET Framework do MSBuild.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

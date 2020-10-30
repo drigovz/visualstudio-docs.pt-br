@@ -1,5 +1,7 @@
 ---
 title: Elemento UsingTask (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento MSBuild UsingTask, que mapeia a tarefa referenciada em um elemento Task para o assembly que contém a implementação da tarefa.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289151"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046116"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -83,7 +85,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
 
 O assembly que contém a tarefa personalizada é carregado quando o `Task` é usado pela primeira vez.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
 
  O exemplo a seguir mostra como usar o elemento `UsingTask` com um atributo `AssemblyName`.
 
@@ -100,7 +102,7 @@ O assembly que contém a tarefa personalizada é carregado quando o `Task` é us
 </UsingTask>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
 
  O exemplo a seguir mostra como usar o elemento `UsingTask` com um atributo `AssemblyFile`.
 
@@ -109,7 +111,7 @@ O assembly que contém a tarefa personalizada é carregado quando o `Task` é us
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Como: configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md)   

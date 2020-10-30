@@ -1,5 +1,7 @@
 ---
 title: Tarefa XSD | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa XSD para encapsular a ferramenta de definição de esquema XML xsd.exe, que gera arquivos de esquema ou classe de uma origem.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,29 +22,29 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630776"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047205"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 
-Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), que gera arquivos de esquema ou classe de uma origem.
+Encapsula a ferramenta de definição de esquema XML ( *xsd.exe* ), que gera arquivos de esquema ou classe de uma origem.
 
 > [!NOTE]
 > A partir do Visual Studio 2017, o suporte a projetos em C++ para *xsd.exe* foi preterido. Você ainda pode usar as APIs **Microsoft.VisualC.CppCodeProvider** manualmente adicionando *CppCodeProvider.dll* ao cache de assembly global.
 
 ## <a name="parameters"></a>Parâmetros
 
- A tabela a seguir descreve os parâmetros da tarefa **XSD**.
+ A tabela a seguir descreve os parâmetros da tarefa **XSD** .
 
 - **AdditionalOptions**
 
      Parâmetro de **cadeia de caracteres** opcional.
 
-     Uma lista de opções, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.
+     Uma lista de opções, conforme especificado na linha de comando. Por exemplo,/ \<option1>  / \<option2>  / \<option#> . Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD** .
 
 - **GenerateFromSchema**
 
@@ -88,6 +90,6 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), que gera arqui
 
      Especifica o diretório do log de rastreamento.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

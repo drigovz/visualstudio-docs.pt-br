@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6448b553c1da9e697bca3860cb8507727c99cc08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588584"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045587"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
@@ -44,15 +44,20 @@ Ao abrir um arquivo que tem caracteres de quebra de linha diferentes, talvez voc
 
 ## <a name="advanced-save-options"></a>Opções avançadas de salvamento
 
-Você pode usar a **File**  >  caixa de diálogo**Opções de salvamento avançadas** do arquivo para determinar o tipo de caracteres de quebra de linha desejado. Também é possível alterar a codificação de um arquivo com as mesmas configurações.
+Você pode usar a **File**  >  caixa de diálogo **Opções de salvamento avançadas** do arquivo para determinar o tipo de caracteres de quebra de linha desejado. Também é possível alterar a codificação de um arquivo com as mesmas configurações.
 
 ![caixa de diálogo Opções avançadas de salvar](media/line_endings.png)
 
 > [!NOTE]
-> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Escolha **ferramentas**, **Personalizar**e, em seguida, escolha a guia **comandos** . Na lista suspensa **barra de menus** , escolha **arquivo**e, em seguida, escolha o botão de **comando adicionar** . Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento**. Escolha **OK** e, em seguida, escolha o botão **Mover para Baixo** para mover o comando para qualquer local no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo** , você poderá adicioná-la. 
+> 1. Escolha **ferramentas** , **Personalizar** , 
+> 1. Escolha a guia **comandos** , selecione o botão de opção **barra de menus** e, na lista suspensa correspondente, escolha **arquivo** . Escolha o botão **Adicionar comando** . 
+> 1. Na caixa de diálogo **Adicionar Comando** , em **Categorias** , escolha **Arquivo** e, em seguida, na lista **Comandos** , escolha **Opções Avançadas de Salvamento** . Escolha o botão **OK** .
+> 1. Use os botões **mover para cima** e mover para **baixo** para mover o comando para qualquer lugar no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar** . 
+> Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Como alternativa, você pode acessar a caixa de diálogo **Opções de salvamento avançadas** escolhendo **arquivo**  >  **Salvar \<file\> como**. Na caixa de diálogo **Salvar Arquivo Como**, escolha o triângulo suspenso ao lado do botão **Salvar** e clique em **Salvar com codificação**.
+> Como alternativa, você pode acessar a caixa de diálogo **Opções de salvamento avançadas** escolhendo **arquivo**  >  **Salvar \<file\> como** . Na caixa de diálogo **salvar arquivo como** , escolha o triângulo suspenso ao lado do botão **salvar** e, em seguida, escolha **salvar com codificação** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

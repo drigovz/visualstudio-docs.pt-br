@@ -1,5 +1,7 @@
 ---
 title: Solução de problemas com erros de direcionamento do .NET Framework | Microsoft Docs
+description: Saiba mais sobre os erros do MSBuild que podem ocorrer devido a problemas de referência e como você pode resolver esses erros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c496fd457e80220bb2ea4a2f032cef9508d9dcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631595"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046982"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Solução de problemas de erros de definição de destino do .NET Framework
 
@@ -36,7 +38,7 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 
  Se você alterar a versão de destino do .NET Framework de seu aplicativo, o Visual Studio alterará algumas das referências, mas você poderá precisar atualizar algumas referências manualmente. Por exemplo, um dos erros mencionados anteriormente pode ocorrer se você alterar um aplicativo para o .NET Framework 3,5 Service Pack 1 e esse aplicativo tiver recursos ou configurações que dependem do perfil do cliente para o .NET Framework 4.
 
- Para contornar as configurações do aplicativo, abra o **Gerenciador de Soluções**, escolha **Mostrar Todos os Arquivos** e edite o arquivo *app.config* no editor de XML do Visual Studio. Altere a versão nas configurações para coincidir com a versão apropriada do .NET Framework. Por exemplo, você pode alterar a configuração de versão de 4.0.0.0 para 2.0.0.0. Da mesma forma, para um aplicativo que tenha adicionado recursos, abra o **Gerenciador de Soluções**, escolha o botão **Mostrar Todos os Arquivos**, expanda **Meu Projeto** (Visual Basic) ou **Propriedades** (C#) e, em seguida, edite o arquivo *Resources.resx* no editor XML do Visual Studio. Altere a configuração de versão de 4.0.0.0 para 2.0.0.0.
+ Para contornar as configurações do aplicativo, abra o **Gerenciador de Soluções** , escolha **Mostrar Todos os Arquivos** e edite o arquivo *app.config* no editor de XML do Visual Studio. Altere a versão nas configurações para coincidir com a versão apropriada do .NET Framework. Por exemplo, você pode alterar a configuração de versão de 4.0.0.0 para 2.0.0.0. Da mesma forma, para um aplicativo que tenha adicionado recursos, abra o **Gerenciador de Soluções** , escolha o botão **Mostrar Todos os Arquivos** , expanda **Meu Projeto** (Visual Basic) ou **Propriedades** (C#) e, em seguida, edite o arquivo *Resources.resx* no editor XML do Visual Studio. Altere a configuração de versão de 4.0.0.0 para 2.0.0.0.
 
  Se seu aplicativo tiver recursos como ícones ou bitmaps ou configurações, como cadeias de conexão de dados, você também pode resolver o erro, removendo todos os itens na página **Configurações** do **Project Designer** e, em seguida, adicionando novamente as configurações necessárias.
 
@@ -57,7 +59,7 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 > [!NOTE]
 > Depois de fechar e reabrir o projeto, você também deve recompilá-lo para garantir que todas as referências resolver corretamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma versão do .NET Framework como destino](../ide/visual-studio-multi-targeting-overview.md)
 - [.NET Framework perfil do cliente](/dotnet/framework/deployment/client-profile)

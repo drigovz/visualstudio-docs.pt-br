@@ -1,5 +1,7 @@
 ---
 title: Tarefa UidManager | Microsoft Docs
+description: Saiba como a tarefa MSBuild UidManager verifica, atualiza ou remove identificadores exclusivos (UIDs) para localizar todos os elementos XAML nos arquivos XAML de origem.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631517"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046936"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 
@@ -36,7 +38,7 @@ A <xref:Microsoft.Build.Tasks.Windows.UidManager> tarefa verifica, atualiza ou r
 |-------------------------| - |
 | `IntermediateDirectory` | Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o diretório que é usado para fazer backup dos arquivos XAML de origem que são especificados pelo parâmetro **MarkupFiles** . |
 | `MarkupFiles` | Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica os arquivos XAML de origem a serem incluídos para verificação, atualização ou remoção de UID. |
-| `Task` | Parâmetro obrigatório **String**.<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar**, **Atualizar** ou **Remover**. |
+| `Task` | Parâmetro obrigatório **String** .<br /><br /> Especifica a tarefa de gerenciamento de UID que você deseja executar. As opções válidas são **Verificar** , **Atualizar** ou **Remover** . |
 
 ## <a name="example"></a>Exemplo
 
@@ -56,7 +58,7 @@ A <xref:Microsoft.Build.Tasks.Windows.UidManager> tarefa verifica, atualiza ou r
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)

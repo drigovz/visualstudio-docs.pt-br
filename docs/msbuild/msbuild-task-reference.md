@@ -1,5 +1,7 @@
 ---
 title: Referência da Tarefa do MSBuild | Microsoft Docs
+description: Saiba mais sobre as tarefas que estão incluídas com o MSBuild, que fornecem o código que é executado durante o processo de compilação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865317"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049071"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 
@@ -31,7 +33,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 | Parâmetro | Descrição |
 |-------------------| - |
 | `Condition` | Parâmetro `String` opcional.<br /><br /> Uma `Boolean` expressão que o mecanismo MSBuild usa para determinar se esta tarefa será executada. Para obter informações sobre as condições com suporte pelo MSBuild, consulte [condições](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [destino](../msbuild/target-element-msbuild.md) e a compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, consulte [como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true** . Quando uma tarefa falha, as tarefas subsequentes no elemento de [destino](../msbuild/target-element-msbuild.md) e a compilação continuam a ser executadas, e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue** . Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, consulte [como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -53,7 +55,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa AspNetCompiler](../msbuild/aspnetcompiler-task.md)
 
- Encapsula *aspnet_compiler.exe*, um utilitário para pré-compilar aplicativos ASP.NET.
+ Encapsula *aspnet_compiler.exe* , um utilitário para pré-compilar aplicativos ASP.NET.
 
 - [Tarefa AssignCulture](../msbuild/assignculture-task.md)
 
@@ -121,7 +123,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa FindAppConfigFile](../msbuild/findappconfigfile-task.md)
 
- Localiza o arquivo *app.config*, caso haja algum, nas listas fornecidas.
+ Localiza o arquivo de *app.config* , se houver, nas listas fornecidas.
 
 - [Tarefa FindInList](../msbuild/findinlist-task.md)
 
@@ -181,7 +183,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [tarefa LC](../msbuild/lc-task.md)
 
- Gera um arquivo *.license* de um arquivo *.licx*.
+ Gera um arquivo *.license* de um arquivo *.licx* .
 
 - [Tarefa MakeDir](../msbuild/makedir-task.md)
 
@@ -307,7 +309,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
  Cria um arquivo *.zip* do conteúdo de um diretório.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Produção de tarefas](../msbuild/task-writing.md)

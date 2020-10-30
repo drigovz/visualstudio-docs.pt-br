@@ -1,5 +1,7 @@
 ---
 title: Menus de contexto no XML Schema Explorer
+description: Saiba mais sobre os menus de contexto no Gerenciador de esquema XML que contêm itens para executar pesquisas específicas de esquema e outras operações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592887"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049170"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
@@ -112,7 +114,7 @@ Além das opções do nó globais descritos acima, o menu de contexto para nós 
 |**Mostrar todos os membros**|Localiza e realces todos os membros do grupo chamado.|
 |**Mostrar todas as referências**|Localiza e realça todas as referências (grupos que têm `ref="selectedGroup"`) para o grupo selecionado.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Pesquisando o conjunto de esquema](../xml-tools/searching-the-schema-set.md)

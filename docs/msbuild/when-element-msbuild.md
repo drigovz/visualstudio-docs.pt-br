@@ -1,5 +1,7 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento MSBuild When, que especifica um possível bloco de código para o elemento Choose a ser selecionado.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630919"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046029"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
@@ -36,7 +38,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
  \<Choose>
 ...
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <When Condition="'StringA'=='StringB'">
@@ -125,7 +127,7 @@ Especifica um possível bloco de códigos para o elemento `Choose` selecionar.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

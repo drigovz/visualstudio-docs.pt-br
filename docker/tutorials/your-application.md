@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739974"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046190"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilar e executar o aplicativo de exemplo todo
 
@@ -26,7 +26,9 @@ Neste ponto, sua equipe de desenvolvimento é bem pequena e você está simplesm
 
 ## <a name="get-the-app"></a>Obtenha o aplicativo
 
-Antes de executar o aplicativo, você precisa obter o código-fonte do aplicativo em seu computador. Para projetos reais, você normalmente clonará o repositório. Mas, para este tutorial, você criou um arquivo ZIP contendo o aplicativo.
+Antes de executar o aplicativo, você precisa obter o código-fonte do aplicativo em seu computador. Para projetos reais, você normalmente clonará o repositório. Mas, para este tutorial, criamos um arquivo ZIP que contém o aplicativo.
+
+1. Verifique se você tem o Docker for Windows ou a Community Edition do Docker instalado no computador local. Consulte [Docker for Windows documentação de instalação](https://docs.docker.com/docker-for-windows/install/). O processo de instalação torna o arquivo ZIP contendo o exemplo disponível no endereço localhost.
 
 1. [Baixe o zip](http://localhost/assets/app.zip). Abra o arquivo ZIP e certifique-se de extrair o conteúdo.
 

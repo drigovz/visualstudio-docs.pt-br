@@ -1,5 +1,7 @@
 ---
 title: Elemento Output (MSBuild) | Microsoft Docs
+description: Consulte atributos, elementos e um exemplo do elemento Output do MSBuild, que armazena os valores de saída da tarefa em itens e propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633025"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048915"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 
@@ -33,7 +35,7 @@ Armazena valores de saída da tarefa em itens e propriedades.
  \<Task>
  \<Output>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Output TaskParameter="Parameter"
@@ -56,7 +58,7 @@ Armazena valores de saída da tarefa em itens e propriedades.
 
 ### <a name="child-elements"></a>Elementos filho
 
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -85,7 +87,7 @@ Armazena valores de saída da tarefa em itens e propriedades.
 </Target>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

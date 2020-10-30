@@ -1,5 +1,7 @@
 ---
 title: Tarefa ZipDirectory | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa ZipDirectory para criar um arquivo. zip a partir do conteúdo de um diretório.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183061"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046621"
 ---
 # <a name="zipdirectory-task"></a>Tarefa ZipDirectory
 
@@ -43,8 +45,8 @@ Cria um arquivo *.zip* do conteúdo de um diretório.
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`DestinationFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> necessário<br /><br /> O caminho completo para o arquivo *.zip* a ser criado.|
-|`Overwrite`|Parâmetro `Boolean` opcional.<br /><br /> Se `true` o arquivo de destino for substituído, se ele existir. O padrão é `false`.|
-|`SourceDirectory`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o diretório no qual será criado um arquivo morto *.zip*.|
+|`Overwrite`|Parâmetro `Boolean` opcional.<br /><br /> Se `true` o arquivo de destino for substituído, se ele existir. Assume o padrão de `false`.|
+|`SourceDirectory`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> obrigatório.<br /><br /> Especifica o diretório no qual será criado um arquivo morto *.zip* .|
 
 ## <a name="remarks"></a>Comentários
 
@@ -66,7 +68,7 @@ Cria um arquivo *.zip* do conteúdo de um diretório.
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

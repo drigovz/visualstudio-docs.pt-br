@@ -1,5 +1,7 @@
 ---
 title: StartTrackingContextWithRoot | Microsoft Docs
+description: Aprenda a usar o MSBuild StartTrackingContextWithRoot para iniciar um contexto de rastreamento usando um arquivo de resposta especificando um marcador raiz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d585361b9797bf1df9c8b0b31f8a089e9de025
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ccca75a0fe525c4e1d9f421b2264070ebda9bdf3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632089"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048129"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
 
@@ -54,6 +56,6 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
 
  **Cabeçalho:** *FileTracker.h*
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

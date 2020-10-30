@@ -1,5 +1,7 @@
 ---
 title: Elemento PropertyGroup (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento MSBuild PropertyGroup, que contém um conjunto de elementos de propriedade definidos pelo usuário.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632921"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048800"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
@@ -31,7 +33,7 @@ Contém um conjunto de definidos elementos [Property](../msbuild/property-elemen
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <PropertyGroup Condition="'String A' == 'String B'">
@@ -74,7 +76,7 @@ Contém um conjunto de definidos elementos [Property](../msbuild/property-elemen
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [propriedades MSBuild](../msbuild/msbuild-properties.md)

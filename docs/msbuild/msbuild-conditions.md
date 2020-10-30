@@ -1,5 +1,7 @@
 ---
 title: Condições do MSBuild | Microsoft Docs
+description: Saiba como o MSBuild dá suporte a um conjunto específico de condições que podem ser aplicadas sempre que um atributo de condição for permitido.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5994e3f5b17f50d707c4c5a00666d60c2efd3184
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62031255daca971345b2dd3dbc7c37eb7f4003c9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711697"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046370"
 ---
 # <a name="msbuild-conditions"></a>Condições do MSBuild
 
@@ -64,7 +66,7 @@ A lógica booliana é avaliada apenas no contexto de condições, de modo que as
 
 O MSBuild implementa algumas regras de processamento especiais para facilitar o trabalho com propriedades de cadeia de caracteres que são usadas como valores Boolianos. Os literais boolianos são aceitos, portanto, `Condition="true"` e `Condition="false"` funcionam conforme o esperado. O MSBuild também inclui regras especiais para dar suporte ao operador de negação booliana. Portanto, se `$(Prop)` for ' true ', `!$(Prop)` expandirá para `!true` e isso será comparado igual a `false` , como você esperaria.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Construções condicionais](../msbuild/msbuild-conditional-constructs.md)

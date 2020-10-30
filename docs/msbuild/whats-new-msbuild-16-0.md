@@ -1,5 +1,7 @@
 ---
 title: O que há &apos; de novo no MSBuild 16,0 | Microsoft Docs
+description: Saiba mais sobre os recursos e as propriedades alterados e atualizados para MSBuild 16,0 e link para notas de versão.
+ms.custom: SEO-VS-2020
 ms.date: 03/11/2019
 ms.topic: conceptual
 author: ghogen
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 48fc1a02ad34a3d5229ead0da79c0f6fa781670e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711645"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047795"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novidades no MSBuild 16.0
 
@@ -35,6 +37,6 @@ Este artigo descreve os recursos e as propriedades atualizadas no MSBuild 16.0. 
 
 O MSBuild (e o Visual Studio) agora destina-se ao .NET Framework 4.7.2. Se você quiser usar os novos recursos de API do MSBuild, deverá atualizar também o seu assembly, mas o código existente continuará a funcionar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [MSBuild](../msbuild/msbuild.md)

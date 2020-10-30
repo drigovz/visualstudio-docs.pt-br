@@ -1,5 +1,7 @@
 ---
 title: Referência do esquema de arquivo de projeto MSBuild | Microsoft Docs
+description: Consulte uma tabela que lista todos os elementos de esquema XML do MSBuild com seus atributos disponíveis e elementos filho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824a6f562638edb04854431c437289f2741c46d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263068"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046163"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referência de esquema de arquivos de projeto do MSBuild
 
 Fornece uma tabela de todos os elementos de esquema XML do MSBuild com seus atributos disponíveis e elementos filho.
 
- O MSBuild usa arquivos de projeto para instruir o mecanismo de compilação sobre o que compilar e como compilá-lo. Arquivos de projeto do MSBuild são arquivos XML que aderem ao esquema XML do MSBuild. Esta seção documenta o arquivo de definição de esquema XML (*. xsd*) para o MSBuild.
+ O MSBuild usa arquivos de projeto para instruir o mecanismo de compilação sobre o que compilar e como compilá-lo. Arquivos de projeto do MSBuild são arquivos XML que aderem ao esquema XML do MSBuild. Esta seção documenta o arquivo de definição de esquema XML ( *. xsd* ) para o MSBuild.
 
 O link do esquema em um arquivo de projeto do MSBuild não é necessário no Visual Studio 2017 e posterior. Se presente, ele deve ser ` http://schemas.microsoft.com/developer/msbuild/2003` independente da versão do Visual Studio.
 
@@ -37,7 +39,7 @@ O link do esquema em um arquivo de projeto do MSBuild não é necessário no Vis
 |Elemento|Elementos filho|Atributos|
 |-------------|--------------------|----------------|
 |[Escolher elemento (MSBuild)](../msbuild/choose-element-msbuild.md)|Otherwise<br /><br /> Quando|--|
-|[Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)|--|Condição<br /><br /> Projeto|
+|[Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)|--|Condição<br /><br /> Project|
 |[Elemento ImportGroup](../msbuild/importgroup-element.md)|Importar|Condição|
 |[Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)|*ItemMetaData*|Condição<br /><br /> Excluir<br /><br /> Incluir<br /><br /> Remover|
 |[Elemento ItemDefinitionGroup (MSBuild)](../msbuild/itemdefinitiongroup-element-msbuild.md)|*Item*|Condição|
@@ -59,7 +61,7 @@ O link do esquema em um arquivo de projeto do MSBuild não é necessário no Vis
 |[Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> Tarefa|AssemblyFile<br /><br /> AssemblyName<br /><br /> Condição<br /><br /> TaskFactory<br /><br /> TaskName|
 |[Elemento When (MSBuild)](../msbuild/when-element-msbuild.md)|Choose<br /><br /> ItemGroup<br /><br /> PropertyGroup|Condição|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Condições](../msbuild/msbuild-conditions.md)

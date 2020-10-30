@@ -1,5 +1,7 @@
 ---
 title: Tarefa UnregisterAssembly | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa UnregisterAssembly para cancelar o registro de assemblies especificados para fins de interoperabilidade COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631491"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046923"
 ---
 # <a name="unregisterassembly-task"></a>Tarefa UnregisterAssembly
 
@@ -64,7 +66,7 @@ Cancela o registro os assemblies especificados para fins de interoperabilidade C
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Tarefa RegisterAssembly](../msbuild/registerassembly-task.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

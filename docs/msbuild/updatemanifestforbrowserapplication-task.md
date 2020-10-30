@@ -1,5 +1,7 @@
 ---
 title: Tarefa UpdateManifestForBrowserApplication | Microsoft Docs
+description: Saiba como o MSBuild executa a tarefa UpdateManifestForBrowserApplication para adicionar o elemento hostInBrowser ao manifesto do aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,23 +20,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 079eecd6751f168a7beba32eda6d15eda712bd7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8fc7b9b09af51ea3be73409e2dcde9a718cee
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631322"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046812"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Tarefa UpdateManifestForBrowserApplication
 
-A <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> tarefa é executada para adicionar o **\<hostInBrowser />** elemento ao manifesto do aplicativo (* \<projectname> . exe. manifest*) quando um projeto do aplicativo de navegador XAML (XBAP) é compilado.
+A <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> tarefa é executada para adicionar o **\<hostInBrowser />** elemento ao manifesto do aplicativo ( *\<projectname> . exe. manifest* ) quando um projeto do aplicativo de navegador XAML (XBAP) é compilado.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |`ApplicationManifest`|Parâmetro **ITaskItem []** necessário.<br /><br /> Especifica o caminho e o nome do arquivo de manifesto do aplicativo ao qual você deseja adicionar o elemento `<hostInBrowser />`.|
-|`HostInBrowser`|Parâmetro **Booliano** opcional.<br /><br /> Especifica se o manifesto do aplicativo deve ser modificado para incluir o **\<hostInBrowser />** elemento. Se for **true**, um novo **\<hostInBrowser />** elemento será incluído no **\<entryPoint />** elemento. A inclusão de elemento é cumulativa: se um **\<hostInBrowser />** elemento já existir, ele não será removido nem substituído. Em vez disso, um **\<hostInBrowser />** elemento adicional é criado. Se for **false**, o manifesto do aplicativo não será modificado.|
+|`HostInBrowser`|Parâmetro **Booliano** opcional.<br /><br /> Especifica se o manifesto do aplicativo deve ser modificado para incluir o **\<hostInBrowser />** elemento. Se for **true** , um novo **\<hostInBrowser />** elemento será incluído no **\<entryPoint />** elemento. A inclusão de elemento é cumulativa: se um **\<hostInBrowser />** elemento já existir, ele não será removido nem substituído. Em vez disso, um **\<hostInBrowser />** elemento adicional é criado. Se for **false** , o manifesto do aplicativo não será modificado.|
 
 ## <a name="remarks"></a>Comentários
 
@@ -75,7 +77,7 @@ A <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> taref
 </Project>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild do WPF](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)

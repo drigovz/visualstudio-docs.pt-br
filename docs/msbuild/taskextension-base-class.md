@@ -1,5 +1,7 @@
 ---
 title: Classe Base TaskExtension | Microsoft Docs
+description: Saiba mais sobre os parâmetros que a classe base Microsoft. Build. Tasks. TaskExtension adiciona às tarefas que herdam dela.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3dc771f16c7077549ba06d5cdda422319554d40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33808468653cf969719b6da5380da96cc53e490a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631699"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047855"
 ---
 # <a name="taskextension-base-class"></a>Classe base TaskExtension
 
@@ -39,7 +41,7 @@ Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.TaskExtension
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Parâmetro <xref:Microsoft.Build.Framework.ITaskHost> opcional.<br /><br /> Especifica a instância do objeto de host (pode ser nulo). O mecanismo de compilação define essa propriedade se o IDE do host associou um objeto de host com essa tarefa em particular.|
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|Parâmetro <xref:Microsoft.Build.Utilities.TaskLoggingHelper> somente leitura opcional.<br /><br /> Obtém um objeto `TaskLoggingHelperExtension` que contém os métodos de registro de tarefa.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

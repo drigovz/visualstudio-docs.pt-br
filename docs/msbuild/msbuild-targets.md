@@ -1,5 +1,7 @@
 ---
 title: Destinos do MSBuild | Microsoft Docs
+description: Saiba como o MSBuild usa destinos para agrupar tarefas em conjunto e permitir que o processo de compilação seja fatorado em unidades menores.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250671"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049085"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 
@@ -1012,7 +1014,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
         DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

@@ -1,5 +1,7 @@
 ---
 title: Elemento Property (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento de Propriedade do MSBuild, que contém um nome de propriedade definido pelo usuário e um valor que deve ser especificado como um filho de um elemento PropertyGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50a6dd66c2dca7fa4159c578ccd334ed1d26cae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c17906467579e8fc532372371df8be76b40e7f0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632947"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048830"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 
@@ -29,7 +31,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
  \<Project> \<PropertyGroup>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Property Condition="'String A' == 'String B'">
@@ -49,7 +51,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
 ### <a name="child-elements"></a>Elementos filho
 
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -65,7 +67,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 
 ## <a name="remarks"></a>Comentários
 
- Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes*, se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
+ Nomes de propriedade estão limitados a apenas a caracteres ASCII. Valores de propriedades são referenciados no projeto, colocando o nome da propriedade entre "`$(`" e "`)`". Por exemplo, `$(builddir)\classes` resolveria para *build\classes* , se a propriedade `builddir` tivesse o valor `build`. Para saber mais sobre as propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -78,7 +80,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [propriedades MSBuild](../msbuild/msbuild-properties.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

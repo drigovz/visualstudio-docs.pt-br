@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectExtensions (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento MSBuildProjectExtensions, que permite que os arquivos de projeto do MSBuild contenham informações não MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632960"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048844"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
@@ -31,7 +33,7 @@ Permite que os arquivos de projeto do MSBuild contenham informações não MSBui
 
  \<Project> \<ProjectExtensions>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectExtensions>
@@ -77,7 +79,7 @@ Permite que os arquivos de projeto do MSBuild contenham informações não MSBui
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

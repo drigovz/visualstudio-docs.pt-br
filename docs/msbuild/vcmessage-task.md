@@ -1,5 +1,7 @@
 ---
 title: Tarefa VCMessage | Microsoft Docs
+description: Saiba como o MSBuild usa a tarefa VCMessage para registrar mensagens de aviso e de erro durante uma compilação para projetos C++.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2247240ae0992c8275520ec5d7bf94d98ae1053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c01c86a5374c14ac27de1535020c5deed29a89f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631205"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046747"
 ---
 # <a name="vcmessage-task"></a>tarefa VCMessage
 
@@ -36,14 +38,14 @@ Registra mensagens de aviso e erro durante o build.
 
 ## <a name="parameters"></a>Parâmetros
 
- A tabela a seguir descreve os parâmetros da tarefa **VCMessage**.
+ A tabela a seguir descreve os parâmetros da tarefa **VCMessage** .
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |**Argumentos**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Uma lista delimitada por ponto e vírgula de mensagens a serem exibidas.|
-|**Código**|Parâmetro obrigatório **String**.<br /><br /> Um número de erro que qualifica a mensagem.|
+|**Código**|Parâmetro obrigatório **String** .<br /><br /> Um número de erro que qualifica a mensagem.|
 |**Tipo**|Parâmetro de **cadeia de caracteres** opcional.<br /><br /> Especifica o tipo de mensagem a ser emitida. Especifique "Warning" para emitir uma mensagem de aviso ou "Error" para emitir uma mensagem de erro.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

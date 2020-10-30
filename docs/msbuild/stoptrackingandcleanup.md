@@ -1,5 +1,7 @@
 ---
 title: StopTrackingAndCleanup | Microsoft Docs
+description: Saiba como o MSBuild usa StopTrackingAndCleanup para interromper todo o acompanhamento e liberar qualquer memória usada pela sessão de rastreamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee30bf031761fa7920dadad04d8f17a1bcc0b3a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05aec8bc85ac392670469da8073da02888b2f063
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631985"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048106"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 
@@ -40,6 +42,6 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 
  **Cabeçalho:** *FileTracker.h*
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

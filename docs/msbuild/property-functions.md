@@ -1,5 +1,7 @@
 ---
 title: Funções de propriedade | Microsoft Docs
+description: Saiba como usar funções de propriedade, que são chamadas para .NET Framework métodos que aparecem nas definições de Propriedade do MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183646"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048814"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
@@ -151,7 +153,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Aqui está uma lista de funções da propriedade MSBuild:
 
-|Assinatura de função|Descrição|
+|Assinatura de função|Description|
 |------------------------|-----------------|
 |double Add(double a, double b)|Adicionar dois duplos.|
 |long Add(long a, long b)|Adicionar dois longos.|
@@ -248,9 +250,9 @@ A função da propriedade `GetRegistryValue` do MSBuild retorna o valor de uma c
 Os exemplos a seguir mostram como a função é usada:
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -263,7 +265,7 @@ A sintaxe para essa função de propriedade é:
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-O sistema operacional Windows de 64 bits mantém uma chave de registro **HKEY_LOCAL_MACHINE \software\wow6432node** que apresenta uma exibição de registro de **HKEY_LOCAL_MACHINE \Software** para aplicativos de 32 bits.
+O sistema operacional Windows de 64 bits mantém uma chave de registro **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** que apresenta uma **HKEY_LOCAL_MACHINE\SOFTWARE** exibição do registro para aplicativos de 32 bits.
 
 Por padrão, um aplicativo de 32 bits em execução no WOW64 acessa a exibição do registro de 32 bits e um aplicativo de 64 bits acessa a exibição do registro de 64 bits.
 
@@ -344,7 +346,7 @@ Output:
 
 As funções `Exists` e `HasTrailingSlash` não são funções de propriedade. Eles estão disponíveis para uso com o `Condition` atributo. Consulte [condições do MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [propriedades MSBuild](../msbuild/msbuild-properties.md)
 

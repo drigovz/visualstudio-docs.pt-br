@@ -1,5 +1,7 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
+description: Saiba mais sobre o elemento de destino MSBuild, que contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375557"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048045"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -31,7 +33,7 @@ Contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
 
  \<Project> \<Target>
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Target Name="Target Name"
@@ -121,7 +123,7 @@ Contém um conjunto de tarefas para que o MSBuild seja executado em sequência.
 </Target>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Destinos](../msbuild/msbuild-targets.md)
 - [Referência de esquema de arquivo de projeto](../msbuild/msbuild-project-file-schema-reference.md)

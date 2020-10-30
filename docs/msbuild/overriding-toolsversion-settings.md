@@ -1,5 +1,7 @@
 ---
 title: Substituindo as configurações de ToolsVersion | Microsoft Docs
+description: Aprenda várias maneiras de alterar ou substituir o valor do conjunto de ferramentas do MSBuild para projetos e soluções.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c33f0ef43707390aa32d4c26c0380a8a32883e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fed063d4c223cf0b1862384612ea5aa84b52b0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633012"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048907"
 ---
 # <a name="override-toolsversion-settings"></a>Substituir as configurações de ToolsVersion
 
@@ -113,7 +115,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. O atributo `ToolsVersion` do elemento [Project](../msbuild/project-element-msbuild.md) do arquivo de projeto. Se esse atributo não existir, será considerado que se trata da versão atual.
 
-    2. A versão padrão das ferramentas no arquivo *MSBuild.exe.config*.
+    2. A versão padrão das ferramentas no arquivo *MSBuild.exe.config* .
 
     3. A versão das ferramentas padrão no Registro. Para obter mais informações, consulte [configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
 
@@ -121,13 +123,13 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     1. Se a variável de ambiente `MSBUILDDEFAULTTOOLSVERSION` estiver definida para um `ToolsVersion` que existe, use-a.
 
-    2. Se `DefaultOverrideToolsVersion` é definido em *MSBuild.exe.config*, use-o.
+    2. Se `DefaultOverrideToolsVersion` é definido em *MSBuild.exe.config* , use-o.
 
     3. Se `DefaultOverrideToolsVersion` estiver definida no Registro, use-a.
 
     4. Caso contrário, use a `ToolsVersion` atual.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Multidirecionamento](../msbuild/msbuild-multitargeting-overview.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

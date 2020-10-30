@@ -1,5 +1,7 @@
 ---
 title: Janelas do depurador XSLT
+description: Saiba mais sobre as partes da interface do usuário do depurador XSLT que controlam o comportamento de depuração específico de XSLT, incluindo locais, saída, pontos de interrupção, pilha de chamadas e janelas de inspeção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592874"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045798"
 ---
 # <a name="debugger-user-interface-xslt"></a>XSLT (interface do usuário do depurador)
 
@@ -56,7 +58,7 @@ O **lista de tarefas** lista todos os erros de compilação na folha de estilos.
 O **lista de tarefas** inclui todos os erros que ocorrem nos blocos de script no arquivo XSLT.
 
 > [!NOTE]
-> O depurador XSLT não tem avisos, então eles nunca aparecem na **lista de tarefas**.
+> O depurador XSLT não tem avisos, então eles nunca aparecem na **lista de tarefas** .
 
 ## <a name="breakpoints-window"></a>Janela Pontos de Interrupção
 
@@ -100,7 +102,7 @@ A janela de desmontagem mostra o código do assembly que é gerado pelo compilad
 
 Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
