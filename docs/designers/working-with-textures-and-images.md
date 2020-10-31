@@ -1,5 +1,7 @@
 ---
 title: Trabalhando com texturas e imagens
+description: Aprenda a usar o editor de imagem no Visual Studio para criar e modificar texturas e imagens em formatos como aqueles usados no desenvolvimento de aplicativos DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589858"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134714"
 ---
 # <a name="work-with-textures-and-images"></a>Trabalhar com texturas e imagens
 

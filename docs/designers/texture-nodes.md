@@ -1,5 +1,7 @@
 ---
 title: Nós de textura
+description: Saiba mais sobre os nós de textura que exemplificam vários tipos de textura e geometrias e, em seguida, produzem ou transforma coordenadas de textura no designer de sombreador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3393bb979b73694c4ac65120ae794ef1205b37c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3e45789358e49a0b224a6de3ea6e5dfea44bf01
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589807"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133956"
 ---
 # <a name="texture-nodes"></a>Nós de textura
 
@@ -27,7 +29,7 @@ No Designer de Sombreador, os nós de textura coletam amostram de vários tipos 
 |**Amostra de mapa normal**|Usa uma amostra normal de um mapa normal 2D nas coordenadas especificadas<br /><br /> É possível usar um mapa normal para simular a aparência de detalhes geométricos adicionais na superfície de um objeto. Mapas normais contêm dados compactados que representam um vetor de unidade em vez de dados de cor<br /><br /> **Entrada**<br /><br /> `UV`: `float2`<br /> As coordenadas nas quais a amostra é coletada.<br /><br /> **Saída:**<br /><br /> `Output`: `float3`<br /> A amostra normal.|**Ajuste de eixo**<br /> O fator usado para ajustar a direção da amostra do mapa normal.<br /><br /> **Textura**<br /> O registro de textura associado à amostra.|
 |**Pan UV**|Aplica a panorâmica às coordenadas de textura especificadas como uma função de tempo.<br /><br /> É possível usar essa opção para mover uma textura ou um mapa normal na superfície de um objeto.<br /><br /> **Entrada**<br /><br /> `UV`: `float2`<br /> As coordenadas às quais aplicar a panorâmica.<br /><br /> `Time`: `float`<br /> O tempo durante o qual será aplicada uma panorâmica, em segundos.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> As coordenadas com panorâmica aplicada.|**Velocidade X**<br /> O número de texels estendidos ao longo do eixo x, por segundo.<br /><br /> **Velocidade Y**<br /> O número de texels estendido ao longo do eixo y, por segundo.|
 |**Parallax UV**|Desloca as coordenadas de textura especificadas como uma função de altura e um ângulo de visão.<br /><br /> O efeito que isso cria é conhecido como *mapeamento parallax* ou mapeamento de deslocamento virtual. É possível usá-lo para criar a ilusão de profundidade em uma superfície plana.<br /><br /> **Entrada**<br /><br /> `UV`: `float2`<br /> As coordenadas a serem deslocadas.<br /><br /> `Height`: `float`<br /> O valor de heightmap associado às coordenadas `UV`.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> As coordenadas deslocadas.|**Plano de profundidade**<br /> A profundidade de referência do efeito parallax. Por padrão, o valor é 0,5. Valores menores elevam a textura; valores maiores a afundam na superfície.<br /><br /> **Escala de profundidade**<br /> A escala do efeito parallax. Isso torna a profundidade aparente mais ou menos acentuada. Os valores típicos variam de 0,02 a 0,1.|
-|**Girar UV**|Gira as coordenadas de textura especificadas em torno de um ponto central como uma função de tempo.<br /><br /> É possível usar essa opção para girar uma textura ou um mapa normal na superfície de um objeto.<br /><br /> **Entrada**<br /><br /> `UV`: `float2`<br /> As coordenadas a serem giradas.<br /><br /> `Time`: `float`<br /> O tempo durante o qual será aplicada uma panorâmica, em segundos.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> As coordenadas giradas.|**X central**<br /> A coordenada x que define o centro de rotação.<br /><br /> **Y central**<br /> A coordenada y que define o centro de rotação.<br /><br /> **Velocidade**<br /> O ângulo em radianos, pelo qual a textura gira por segundo.|
+|**Girar UV**|Gira as coordenadas de textura especificadas em torno de um ponto central como uma função de tempo.<br /><br /> É possível usar essa opção para girar uma textura ou um mapa normal na superfície de um objeto.<br /><br /> **Entrada**<br /><br /> `UV`: `float2`<br /> As coordenadas a serem giradas.<br /><br /> `Time`: `float`<br /> O tempo durante o qual será aplicada uma panorâmica, em segundos.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> As coordenadas giradas.|**X central**<br /> A coordenada x que define o centro de rotação.<br /><br /> **Y central**<br /> A coordenada y que define o centro de rotação.<br /><br /> **Rápida**<br /> O ângulo em radianos, pelo qual a textura gira por segundo.|
 |**Coordenada de textura**|As coordenadas de textura do pixel atual.<br /><br /> As coordenadas de textura são determinadas pela interpolação entre os atributos de coordenadas de textura de vértices próximos. É possível considerar isso como a posição do pixel atual no espaço de textura.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> As coordenadas de textura.|Nenhum|
 |**Dimensões de textura**|Gera a largura e a altura de um mapa de textura 2D.<br /><br /> É possível usar as dimensões de textura para considerar a largura e a altura da textura em um sombreador.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> A largura e a altura da textura, expressas como um vetor. A largura é armazenada no primeiro elemento do vetor. A altura é armazenada no segundo elemento.|**Textura**<br /> O registro de textura associado às dimensões de textura.|
 |**Texel Delta**|Gera o delta (distância) entre os texels de um mapa de textura 2D.<br /><br /> É possível usar o texel delta para coletar amostras de valores de texel vizinhos em um sombreador.<br /><br /> **Saída:**<br /><br /> `Output`: `float2`<br /> O delta (distância) de um texel até o próximo texel (movendo diagonalmente na direção positiva), expresso como um vetor no espaço de textura normalizado. É possível derivar as posições de todos os texels vizinhos ignorando ou negando seletivamente as coordenadas U ou V do delta.|**Textura**<br /> O registro de textura associado ao textel delta.|

@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039794"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134727"
 ---
 # <a name="devinit-commands"></a>comandos devinit
 
 ## <a name="init"></a>Init
 
 ```console
-> devinit init
+devinit init
 ```
 
 Inicialize o ambiente executando as ferramentas especificadas em um [_.devinit.jsno_](devinit-json.md) arquivo no diretório de trabalho atual.  
@@ -70,7 +70,7 @@ Veja [abaixo](#options-for-run).
 ## <a name="run"></a>Executar
 
 ```console
-> devinit run -t <toolname>
+devinit run -t <toolname>
 ```
 
 Executa a ferramenta específica, os parâmetros são listados abaixo. Consulte a [documentação](devinit-tool-list.md) para cada ferramenta para uso específico.
@@ -81,7 +81,7 @@ Opções para o `devinit run` comando.
 
 | Argumento                                      | Obrigatório | Descrição                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta                                     | Sim      | Obrigatórios. O nome da ferramenta.                                                             |
+| -t,--ferramenta                                     | Yes      | Necessário. O nome da ferramenta.                                                             |
 | -i,--entrada                                    | No       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                     |
 | --ação de erro                                | No       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
 | -v,--detalhado                                  | No       | Emitir saída detalhada.                                                                 |
@@ -111,19 +111,19 @@ Comandos da ferramenta Echo que seriam executados, mas não executam nenhuma fer
 Usar um `<arg>` que inclui um espaço em seu valor deve incluir um par adicional de aspas de escape.
 
 ```console
-> devinit run -t <toolname> -<somearg> "<some value>"
+devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Para instalar o dotnet em um diretório específico `C:\Program Files\dotnet` :
 
 ```console
-> devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
+devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>Lista
 
 ```console
-> devinit list
+devinit list
 ```
 
 Imprime uma lista de todas as ferramentas disponíveis.
@@ -131,19 +131,19 @@ Imprime uma lista de todas as ferramentas disponíveis.
 ## <a name="show"></a>Mostrar
 
 ```console
-> devinit show -t <toolname>
+devinit show -t <toolname>
 ```
 
 | Argumento       | Obrigatório | Descrição                                                                          |
 |----------------|----------|--------------------------------------------------------------------------------------|
-| -t,--ferramenta      | Sim      | Obrigatórios. O nome da ferramenta.                                                             |
+| -t,--ferramenta      | Yes      | Necessário. O nome da ferramenta.                                                             |
 
 Imprime informações de ajuda para uma determinada ferramenta.
 
 ## <a name="version"></a>Versão
 
 ```console
-> devinit version
+devinit version
 ```
 
 Imprime as informações de versão atuais para devinit.
@@ -151,8 +151,8 @@ Imprime as informações de versão atuais para devinit.
 ## <a name="help"></a>Ajuda
 
 ```console
-> devinit help
-> devinit help list
+devinit help
+devinit help list
 ```
 
 Imprime o texto de ajuda para devinit ou para um comando específico `devinit <command>` .

@@ -1,5 +1,7 @@
 ---
 title: Trabalhando com Ativos 3D para Jogos e Aplicativos
+description: Saiba mais sobre as ferramentas do Visual Studio que você pode usar para criar ou modificar modelos, texturas e sombreadores 3D para jogos e aplicativos baseados em DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589793"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134544"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Trabalhar com ativos 3D para jogos e aplicativos
 
@@ -23,7 +25,7 @@ Este artigo descreve as ferramentas do Visual Studio que você pode usar para cr
 
 ## <a name="directx-app-development-in-visual-studio"></a>Desenvolvimento de aplicativos em DirectX no Visual Studio
 
-Normalmente, um aplicativo DirectX combina a lógica de programação, a API do DirectX e programas HLSL (High Level Shading Language), junto com ativos visuais 3D e de áudio, para apresentar uma experiência multimídia interativa e sofisticada. O Visual Studio inclui ferramentas que você pode usar para trabalhar com imagens e texturas, modelos 3D e sombreadores sem sair do IDE para usar outra ferramenta. As ferramentas do Visual Studio são especialmente adequadas para a criação de ativos de *espaço reservado*, os quais você pode usar para testar o código ou compilar protótipos antes de comissão de ativos prontos para produção e para inspecionar e modificar ativos prontos para produção quando você estiver depurando seu aplicativo.
+Normalmente, um aplicativo DirectX combina a lógica de programação, a API do DirectX e programas HLSL (High Level Shading Language), junto com ativos visuais 3D e de áudio, para apresentar uma experiência multimídia interativa e sofisticada. O Visual Studio inclui ferramentas que você pode usar para trabalhar com imagens e texturas, modelos 3D e sombreadores sem sair do IDE para usar outra ferramenta. As ferramentas do Visual Studio são especialmente adequadas para a criação de ativos de *espaço reservado* , os quais você pode usar para testar o código ou compilar protótipos antes de comissão de ativos prontos para produção e para inspecionar e modificar ativos prontos para produção quando você estiver depurando seu aplicativo.
 
 Confira abaixo mais informações sobre os tipos de ativos com os quais você pode trabalhar no Visual Studio.
 
@@ -35,7 +37,7 @@ Use o Editor de Imagens do Visual Studio para trabalhar com imagens e texturas e
 
 ### <a name="3d-models"></a>Modelos 3D
 
-Os modelos 3D criam espaço e forma em jogos e aplicativos. Minimamente, os modelos codificam a posição de pontos no espaço 3D, que são conhecidos como *vértices*, junto com os dados de indexação para definir linhas ou triângulos que representam a forma do modelo. É possível associar dados adicionais a esses vértices — por exemplo, informações de cores, vetores normais ou atributos específicos ao aplicativo. Cada modelo também pode definir atributos de todo o objeto — por exemplo, qual sombreador é usado para calcular a aparência da superfície do objeto ou qual textura é aplicada a ele.
+Os modelos 3D criam espaço e forma em jogos e aplicativos. Minimamente, os modelos codificam a posição de pontos no espaço 3D, que são conhecidos como *vértices* , junto com os dados de indexação para definir linhas ou triângulos que representam a forma do modelo. É possível associar dados adicionais a esses vértices — por exemplo, informações de cores, vetores normais ou atributos específicos ao aplicativo. Cada modelo também pode definir atributos de todo o objeto — por exemplo, qual sombreador é usado para calcular a aparência da superfície do objeto ou qual textura é aplicada a ele.
 
 Use o Editor de Modelo do Visual Studio para trabalhar com modelos 3D em vários formatos comuns.
 

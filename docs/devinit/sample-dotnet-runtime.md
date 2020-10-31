@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 04ac5ba718e72085f8e050ecf0e2ce0cc1305629
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005648"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134263"
 ---
 # <a name="net-core-runtime"></a>runtime do .NET Core
 
@@ -24,7 +24,7 @@ Este exemplo ilustra como personalizar o [dotnet/tempo](https://github.com/dotne
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-Esse script é chamado de _PostCloneSetup.ps1_ e também pode ser executado localmente para configurar o repositório. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_.
+Esse script é chamado de _PostCloneSetup.ps1_ e também pode ser executado localmente para configurar o repositório. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_ .
 
 ```console
 devinit init
@@ -33,7 +33,7 @@ git config --system core.longpaths true
 
 ## <a name="packagesconfig"></a>packages.config
 
-O arquivo de _packages.config_ é um arquivo de [chocolate](https://chocolatey.org/) que define a lista de pacotes de chocolates a serem instalados. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_.
+O arquivo de _packages.config_ é um arquivo de [chocolate](https://chocolatey.org/) que define a lista de pacotes de chocolates a serem instalados. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_ .
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +70,6 @@ Conteúdo da _.devcontainer.jsno_ arquivo na raiz do repositório.
 
 ```json
 {
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File PostCloneSetup.ps1"
+  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\PostCloneSetup.ps1"
 }
 ```

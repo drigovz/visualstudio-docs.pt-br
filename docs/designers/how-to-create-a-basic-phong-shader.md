@@ -1,5 +1,7 @@
 ---
 title: Como criar um sombreador Phong básico
+description: Saiba como usar o shader designer e a linguagem direcionada do Graph Shader para criar um sombreador de iluminação que implementa o modelo de iluminação Phong clássico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718607d74be1a74a799f8de9f4883e1df9fb7ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769181"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134126"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
 
@@ -29,20 +31,20 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
 1. Criar um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2. Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
+2. Desconecte o nó **Lambert** do nó **Cor Final** . Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links** . Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
-3. Adicione um nó **Adicionar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Adicionar** e mova-a para a superfície de design.
+3. Adicione um nó **Adicionar** ao grafo. Na **Caixa de Ferramentas** , em **Matemática** , selecione **Adicionar** e mova-a para a superfície de design.
 
-4. Adicione um nó **Especular** ao gráfico. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Especular** e mova-o para a superfície de design.
+4. Adicione um nó **Especular** ao gráfico. Na **Caixa de Ferramentas** , em **Utilitário** , selecione **Especular** e mova-o para a superfície de design.
 
-5. Adicione a contribuição especular. Mova o terminal de **Saída** do nó **Especular** para o terminal **X** do nó **Adicionar** e, em seguida, mova o terminal de **Saída** do nó **Lambert** para o terminal **Y** do nó **Adicionar**. Essas conexões combinam as contribuições de cor difusa e especular totais para o pixel.
+5. Adicione a contribuição especular. Mova o terminal de **Saída** do nó **Especular** para o terminal **X** do nó **Adicionar** e, em seguida, mova o terminal de **Saída** do nó **Lambert** para o terminal **Y** do nó **Adicionar** . Essas conexões combinam as contribuições de cor difusa e especular totais para o pixel.
 
-6. Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Adicionar** para o terminal **RGB** do nó **Cor Final**.
+6. Conecte o valor de cor calculado à cor final. Mova o terminal de **Saída** do nó **Adicionar** para o terminal **RGB** do nó **Cor Final** .
 
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.
 
 > [!NOTE]
-> Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
+> Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower** . Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).
 
 ![Grafo de sombreador e uma versão prévia de seu efeito](../designers/media/digit-lighting-graph.png)
 
@@ -59,7 +61,7 @@ A ilustração a seguir mostra o sombreador que é descrito neste documento, apl
 
 Para obter mais informações de como aplicar um sombreador a um modelo 3D, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como: aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Como: exportar um sombreador](../designers/how-to-export-a-shader.md)

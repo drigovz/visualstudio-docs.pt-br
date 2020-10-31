@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 62c31dcb72735304f7b28e7dfd817f6647187bc9
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: ae274e460f4404efa92c4cf3785a3c2e41fd9691
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022625"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134073"
 ---
 # <a name="getting-started-with-devinit"></a>Introdução com devinit
 
@@ -28,14 +28,14 @@ Atualmente, o devinit só está disponível como parte do GitHub Codespaces ao u
 
 A etapa mais importante é definir o ambiente de ' desenvolvedor ' em um [ _.devinit.jsno_ arquivo](devinit-json.md). Esse arquivo será usado pelo devinit para criar seu ambiente quando você executar o `devinit init` .
 
-Para esta etapa, pense nas instruções que você daria para que alguém coloque em funcionamento com um repositório de projeto. Por exemplo, eles precisam ter o SQL instalado? Uma versão específica do .NET Core? diante. Em seguida, para cada uma dessas dependências, procure uma ferramenta devinit correspondente na [lista de ferramentas](devinit-tool-list.md) e adicione-a à.devinit.jsdo repositório _ no_ arquivo.
+Para esta etapa, pense nas instruções que você daria para que alguém coloque em funcionamento com um repositório de projeto. Por exemplo, eles precisam ter o SQL instalado? Uma versão específica do .NET Core? diante. Em seguida, para cada uma dessas dependências, procure uma ferramenta devinit correspondente na [lista de ferramentas](devinit-tool-list.md) e adicione-a à.devinit.jsdo repositório _no_ arquivo.
 
 ## <a name="step-3-enjoy"></a>Etapa 3: Aproveite!
 
 Agora, tudo o que alguém precisa fazer depois de clonar seu repositório é executado `devinit init` .
 
 ```console
-> devinit init
+devinit init
 ```
 
 Se você estiver usando o [GitHub Codespaces](https://github.com/features/codespaces), poderá configurar `devinit init` para ser executado automaticamente quando o codespace for provisionado. Para saber mais, confira a [documentação do devinit e do GitHub Codespaces](devinit-and-codespaces.md).

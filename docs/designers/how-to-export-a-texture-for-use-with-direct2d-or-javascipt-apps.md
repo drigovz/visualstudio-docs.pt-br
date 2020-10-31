@@ -1,5 +1,6 @@
 ---
 title: Exportar uma textura para aplicativos Direct2D e JavaScript
+description: O pipeline de conteúdo da imagem gera texturas compatíveis com a renderização interna do Direct2D para uso em aplicativos Direct2D e aplicativos UWP criados com JavaScript.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0433549f2a473da5f33eda6e264a46ea280e251
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 502dcaec9aeb8fdb2f4b7a72b801f19d2d08dbc4
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102617"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134388"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Como: exportar uma textura para uso com aplicativos Direct2D ou JavaScript
 

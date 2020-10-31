@@ -1,5 +1,7 @@
 ---
 title: O que é o WPF?
+description: Introdução ao Windows Presentation Foundation, uma estrutura para a criação de aplicativos cliente de desktop que dão suporte a um amplo conjunto de recursos de desenvolvimento.
+ms.custom: SEO-VS-2020
 ms.date: 04/16/2018
 ms.topic: overview
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8584ec76ce0779421f1151e53f562f66b8789c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328436"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134531"
 ---
 # <a name="get-started-with-wpf"></a>Introdução ao WPF
 
@@ -31,7 +33,7 @@ Esta seção apresenta tópicos que servem como introdução e lhe ajudarão a c
 |Quero saber mais sobre o WPF...|[Visão geral do WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Visão geral do XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Controles](/dotnet/framework/wpf/controls/)<br /><br />[Visão geral da vinculação de dados](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Associação de dados do WPF com LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Você é um desenvolvedor de Windows Forms?|[Controles de Windows Forms e controles WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Cenários compatíveis em interoperação entre o WPF e o Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Guia da área de trabalho para WPF](/dotnet/desktop-wpf/overview/index)
 - [Biblioteca de classes (WPF)](/dotnet/framework/wpf/class-library-wpf)

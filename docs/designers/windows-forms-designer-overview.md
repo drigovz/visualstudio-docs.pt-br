@@ -1,5 +1,7 @@
 ---
 title: Criar aplicativos do Windows Forms
+description: Saiba mais sobre o Designer de Formulários do Windows no Visual Studio, que fornece uma solução rápida de desenvolvimento para a criação de aplicativos baseados em Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: overview
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 03619582a30893c161c44c880a0d9cf6c9766d0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768758"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134649"
 ---
 # <a name="windows-forms-designer-overview"></a>Visão geral do Designer de Formulários do Windows
 
@@ -30,12 +32,12 @@ Usando o designer, é possível:
 
 - Ajustar o posicionamento do controle selecionado movendo-o com o mouse ou as teclas de direção. Da mesma forma, é possível ajustar o posicionamento com mais precisão usando as teclas Ctrl e de direção. Por fim, é possível ajustar o tamanho do controle usando as teclas Shift e de direção.
 
-- Selecionar vários controles usando as teclas **Shift** ou **Ctrl** enquanto clica. Ao usar **Shift**+clique, o primeiro controle selecionado é o controle dominante ao alinhar ou manipular o tamanho. Ao usar **Ctrl**+clique, o último controle selecionado é dominante, portanto, o controle dominante é alterado com cada novo controle adicionado. Como alternativa, você pode selecionar vários controles arrastando um retângulo de seleção ao redor dos controles que deseja selecionar.
+- Selecionar vários controles usando as teclas **Shift** ou **Ctrl** enquanto clica. Ao usar **Shift** +clique, o primeiro controle selecionado é o controle dominante ao alinhar ou manipular o tamanho. Ao usar **Ctrl** +clique, o último controle selecionado é dominante, portanto, o controle dominante é alterado com cada novo controle adicionado. Como alternativa, você pode selecionar vários controles arrastando um retângulo de seleção ao redor dos controles que deseja selecionar.
 
 > [!NOTE]
-> Use o Designer de Formulários do Windows, e não o Editor de Recursos, para fazer alterações no arquivo de recurso de um formulário (*.resx*). Se você editar um arquivo .resx baseado em formulário, verá um aviso de que poderá perder as alterações feitas no Editor de Recursos. Isso ocorre porque o Designer de Formulários do Windows gera o arquivo .resx.
+> Use o Designer de Formulários do Windows, e não o Editor de Recursos, para fazer alterações no arquivo de recurso de um formulário ( *.resx* ). Se você editar um arquivo .resx baseado em formulário, verá um aviso de que poderá perder as alterações feitas no Editor de Recursos. Isso ocorre porque o Designer de Formulários do Windows gera o arquivo .resx.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral de Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Controles de formulários do Windows](/dotnet/framework/winforms/controls/)

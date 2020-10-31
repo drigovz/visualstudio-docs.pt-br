@@ -1,5 +1,7 @@
 ---
 title: Nós de constante
+description: Saiba mais sobre os nós constantes, que representam valores literais e atributos de vértice interpolados em cálculos de sombreador de pixel, no designer de sombreador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769312"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134211"
 ---
 # <a name="constant-nodes"></a>Nós de constante
 
@@ -21,7 +23,7 @@ No Designer do Sombreador, nós constantes representam valores literais e atribu
 
 ## <a name="vertex-attribute-interpolation"></a>Interpolação de atributo de vértice
 
-A imagem de uma cena 3D em um jogo ou aplicativo é feita por meio da transformação matemática de inúmeros objetos — definido pelos vértices, atributos de vértice e definições de primitivas — em pixels na tela. Todas as informações necessárias para dar uma aparência exclusiva a um pixel são fornecidas por meio de atributos de vértice, combinados de acordo com a proximidade do pixel para os diferentes vértices que compõem seu *primitivo*. Um primitivo é um elemento básico de renderização; ou seja, uma forma simples como um ponto, uma linha ou um triângulo. Um pixel muito semelhante a um dos vértices recebe constantes quase idênticas a esse vértice, mas um pixel com espaçamento uniforme entre todos os vértices de um primitivo recebe constantes que são a média desses vértices. Na programação de gráficos, as constantes que os pixels recebem são consideradas *interpoladas*. Fornecer dados constantes a pixels dessa maneira produz qualidade visual muito boa e, ao mesmo tempo, reduz a superfície de memória e os requisitos de largura de banda.
+A imagem de uma cena 3D em um jogo ou aplicativo é feita por meio da transformação matemática de inúmeros objetos — definido pelos vértices, atributos de vértice e definições de primitivas — em pixels na tela. Todas as informações necessárias para dar uma aparência exclusiva a um pixel são fornecidas por meio de atributos de vértice, combinados de acordo com a proximidade do pixel para os diferentes vértices que compõem seu *primitivo* . Um primitivo é um elemento básico de renderização; ou seja, uma forma simples como um ponto, uma linha ou um triângulo. Um pixel muito semelhante a um dos vértices recebe constantes quase idênticas a esse vértice, mas um pixel com espaçamento uniforme entre todos os vértices de um primitivo recebe constantes que são a média desses vértices. Na programação de gráficos, as constantes que os pixels recebem são consideradas *interpoladas* . Fornecer dados constantes a pixels dessa maneira produz qualidade visual muito boa e, ao mesmo tempo, reduz a superfície de memória e os requisitos de largura de banda.
 
 Embora cada instância de sombreador de pixel receba apenas um conjunto de valores constantes e não possa alterar esses valores, instâncias diferentes de sombreador de pixel recebem diferentes conjuntos de dados constantes. Esse design permite que um programa sombreador produza uma saída de cor diferente para cada pixel no primitivo.
 
@@ -31,7 +33,7 @@ Embora cada instância de sombreador de pixel receba apenas um conjunto de valor
 |----------|-------------|----------------|
 |**Vetor de Câmera**|O vetor que se estende do pixel atual para a câmera no espaço de mundo.<br /><br /> É possível usar isso para calcular reflexões no espaço de mundo.<br /><br /> **Saída**<br /><br /> `Output`: `float3`<br /> O vetor do pixel atual da câmera.|Nenhum|
 |**Constante de Cor**|Um valor de cor constante.<br /><br /> **Saída**<br /><br /> `Output`: `float4`<br /> O valor da cor.|**Saída**<br /> O valor da cor.|
-|**Constante**|Um valor escalar constante.<br /><br /> **Saída**<br /><br /> `Output`: `float`<br /> O valor escalar.|**Saída**<br /> O valor escalar.|
+|**Amortiza**|Um valor escalar constante.<br /><br /> **Saída**<br /><br /> `Output`: `float`<br /> O valor escalar.|**Saída**<br /> O valor escalar.|
 |**Constante 2D**|Uma constante de vetor de dois componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float2`<br /> O valor do vetor.|**Saída**<br /> O valor do vetor.|
 |**Constante 3D**|Uma constante de vetor de três componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float3`<br /> O valor do vetor.|**Saída**<br /> O valor do vetor.|
 |**Constante 4D**|Uma constante de vetor de quatro componentes.<br /><br /> **Saída**<br /><br /> `Output`: `float4`<br /> O valor da cor.|**Saída**<br /> O valor do vetor.|

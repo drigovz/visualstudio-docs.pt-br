@@ -1,5 +1,7 @@
 ---
 title: Biblioteca de Imagens
+description: Saiba mais sobre a biblioteca de imagens do Visual Studio que contém imagens de aplicativos que aparecem no Visual Studio, no Windows, no Office e em outros softwares da Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dc33f4dcc8edf0b7793a726a0b626360b9edb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c37868558ec483b85b4480ba85a1eaa5fe23beb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768663"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134701"
 ---
 # <a name="the-visual-studio-image-library"></a>A biblioteca de imagens do Visual Studio
 
@@ -31,7 +33,7 @@ A Biblioteca de Imagens do Visual Studio contém imagens do aplicativo que apare
 
 A biblioteca de imagens é dividida em cinco categorias: Elementos Comuns, Ações, Anotações, Ícones e Objetos. Os arquivos Leiame são incluídos no formato PDF para os tipos Elementos Comuns e Ícone. Eles contêm informações sobre como usar adequadamente essas imagens em seus aplicativos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Instalar o Visual Studio](../install/install-visual-studio.md)
 - [Imagens, bitmaps e metaarquivos](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
