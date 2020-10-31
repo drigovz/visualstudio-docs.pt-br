@@ -1,5 +1,7 @@
 ---
-title: Gerar operadores de comparação para tipos que implementam IComparable
+title: Gerar operadores de comparação para o IComparable
+ms.custom: SEO-VS-2020
+description: Para aumentar o desempenho, gere operadores de comparação para tipos que implementam IComparable.
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290017"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102591"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Gerar operadores de comparação para tipos que implementam IComparable
 
@@ -32,9 +34,9 @@ Esta geração de código aplica-se a:
 
 2. Depois, siga um destes procedimentos:
 
-   - Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
+   - Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas** .
 
-   - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
+   - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações** .
 
    - Clique no ícone ![chave de fenda](../media/screwdriver-icon.png) ícone que aparece na margem esquerda.
 
@@ -42,7 +44,7 @@ Esta geração de código aplica-se a:
 
 3. Selecione **gerar Equals (Object)** no menu suspenso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar Alterações](../../ide/preview-changes.md)
