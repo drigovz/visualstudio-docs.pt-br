@@ -9,10 +9,10 @@ author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
 ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 10/31/2020
 ms.locfileid: "92334201"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nova experiência do Git no Visual Studio (versão prévia)
@@ -24,13 +24,13 @@ A partir da [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6), o V
 
 ## <a name="how-to-start-using-git-in-visual-studio"></a>Como começar a usar o Git no Visual Studio
 
-Para alternar a nova experiência de git, vá para **ferramentas**  >  **Opções**  >  visualização de**ambiente**  >  **recursos** e, em seguida, marque a caixa de seleção **nova experiência do usuário git** .
+Para alternar a nova experiência de git, vá para **ferramentas**  >  **Opções**  >  visualização de **ambiente**  >  **recursos** e, em seguida, marque a caixa de seleção **nova experiência do usuário git** .
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
 Há três maneiras de usar o Git no Visual Studio 2019:
 
-- [Abra um repositório git existente](#open-an-existing-local-repository). Se o seu código já estiver em seu computador, você poderá abri-lo usando **arquivo**  >  **aberto**  >  **projeto/solução** (ou **pasta**) e o Visual Studio detectará automaticamente se ele tem um repositório git inicializado.
+- [Abra um repositório git existente](#open-an-existing-local-repository). Se o seu código já estiver em seu computador, você poderá abri-lo usando **arquivo**  >  **aberto**  >  **projeto/solução** (ou **pasta** ) e o Visual Studio detectará automaticamente se ele tem um repositório git inicializado.
 - [Crie um novo repositório git](#create-a-new-git-repository). Se o seu código não estiver associado ao git, você poderá criar um novo repositório git.
 - [Clonar um repositório git existente](#clone-an-existing-git-repository). Se o código no qual você deseja trabalhar não estiver em seu computador, você poderá clonar quaisquer repositórios remotos existentes.
 
@@ -79,23 +79,23 @@ Você pode alternar entre a exibição aberta no momento e a lista de exibiçõe
 
 O Git rastreia alterações de arquivo em seu repositório à medida que você trabalha e separa os arquivos em seu repositório em três categorias. Essas alterações são equivalentes ao que você veria ao inserir o `git status` comando na linha de comando:
 
-- **Arquivos não modificados**: esses arquivos não foram alterados desde a última confirmação.
-- **Arquivos modificados**: esses arquivos têm alterações desde a última confirmação, mas você ainda não os preparou para a próxima confirmação.
-- **Arquivos preparados**: esses arquivos têm alterações que serão adicionadas à próxima confirmação.
+- **Arquivos não modificados** : esses arquivos não foram alterados desde a última confirmação.
+- **Arquivos modificados** : esses arquivos têm alterações desde a última confirmação, mas você ainda não os preparou para a próxima confirmação.
+- **Arquivos preparados** : esses arquivos têm alterações que serão adicionadas à próxima confirmação.
 
 Conforme você faz seu trabalho, o Visual Studio controla as alterações de arquivo em seu projeto na seção de **alterações** da janela de **alterações do git** .
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
-Quando estiver pronto para preparar as alterações, clique no **+** botão (mais) em cada arquivo que deseja preparar ou clique com o botão direito do mouse em um arquivo e selecione **estágio**. Você também pode preparar todos os arquivos modificados com um clique usando o botão preparar todos **+** (mais) na parte superior da seção de **alterações** .
+Quando estiver pronto para preparar as alterações, clique no **+** botão (mais) em cada arquivo que deseja preparar ou clique com o botão direito do mouse em um arquivo e selecione **estágio** . Você também pode preparar todos os arquivos modificados com um clique usando o botão preparar todos **+** (mais) na parte superior da seção de **alterações** .
 
-Quando você testa uma alteração, o Visual Studio cria uma seção de **alterações em etapas** . Somente as alterações na seção de **alterações em etapas** são adicionadas à próxima confirmação, que você pode fazer selecionando **confirmar preparação**. As alterações também podem ser despreparadas clicando no botão **–** (menos). O comando equivalente para essa ação é `git commit -m "Your commit message"` .
+Quando você testa uma alteração, o Visual Studio cria uma seção de **alterações em etapas** . Somente as alterações na seção de **alterações em etapas** são adicionadas à próxima confirmação, que você pode fazer selecionando **confirmar preparação** . As alterações também podem ser despreparadas clicando no botão **–** (menos). O comando equivalente para essa ação é `git commit -m "Your commit message"` .
 
-Você também pode optar por não preparar os arquivos modificados ignorando a área de preparo. Nesse caso, o Visual Studio permite que você confirme suas alterações diretamente sem precisar prepará-las. Basta inserir sua mensagem de confirmação e, em seguida, selecionar **confirmar tudo**. O comando equivalente para essa ação é `git commit -a` .
+Você também pode optar por não preparar os arquivos modificados ignorando a área de preparo. Nesse caso, o Visual Studio permite que você confirme suas alterações diretamente sem precisar prepará-las. Basta inserir sua mensagem de confirmação e, em seguida, selecionar **confirmar tudo** . O comando equivalente para essa ação é `git commit -a` .
 
 O Visual Studio também facilita a confirmação e a sincronização com um clique usando os atalhos **confirmar tudo e enviar** e **confirmar todos e sincronizar** . Quando você clica duas vezes em qualquer arquivo nas seções **alterações** e **alterações em etapas** , você pode ver uma comparação linha por linha com a versão não modificada do arquivo.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio " se estiver conectado ao repositório DevOps do Azure. Você pode conectar seu repositório DevOps do Azure por meio de **Team Explorer**  >  **gerenciar conexões**.
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio " se estiver conectado ao repositório DevOps do Azure. Você pode conectar seu repositório DevOps do Azure por meio de **Team Explorer**  >  **gerenciar conexões** .
 
 ### <a name="select-an-existing-branch"></a>Selecionar uma ramificação existente
 
@@ -139,7 +139,7 @@ O indicador também funciona como um link para levá-lo ao histórico de confirm
 
 #### <a name="commit-details"></a>Detalhes da confirmação
 
-Quando você clica duas vezes em uma **confirmação**, o Visual Studio abre seus detalhes em uma janela de ferramentas separada. A partir daqui, você pode reverter a confirmação, redefinir a confirmação, corrigir a mensagem de confirmação ou criar uma marca na confirmação. Quando você clica em um arquivo alterado na confirmação, o Visual Studio abre a exibição de **comparação** lado a lado da confirmação e seu pai.
+Quando você clica duas vezes em uma **confirmação** , o Visual Studio abre seus detalhes em uma janela de ferramentas separada. A partir daqui, você pode reverter a confirmação, redefinir a confirmação, corrigir a mensagem de confirmação ou criar uma marca na confirmação. Quando você clica em um arquivo alterado na confirmação, o Visual Studio abre a exibição de **comparação** lado a lado da confirmação e seu pai.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
@@ -151,7 +151,7 @@ O Visual Studio torna mais fácil identificar e resolver um conflito de mesclage
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
-A janela de **alterações do git** também exibe uma mensagem*de "mesclagem em andamento com conflitos*", com os arquivos não mesclados na seção separada abaixo dele.
+A janela de **alterações do git** também exibe uma mensagem *de "mesclagem em andamento com conflitos* ", com os arquivos não mesclados na seção separada abaixo dele.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
@@ -163,7 +163,7 @@ Mas se você não tiver nenhuma dessas janelas abertas e, em vez disso, acessar 
     >>>>>>> main
 ```
 
-Em vez disso, o Visual Studio exibe uma barra de informações Gold na parte superior da página que indica que o arquivo aberto tem conflitos. Em seguida, você pode clicar no link para abrir o **Editor de mesclagem**.
+Em vez disso, o Visual Studio exibe uma barra de informações Gold na parte superior da página que indica que o arquivo aberto tem conflitos. Em seguida, você pode clicar no link para abrir o **Editor de mesclagem** .
 
 :::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
@@ -177,7 +177,7 @@ Você também pode usar as alternâncias para mostrar/ocultar diferenças, mostr
 
 ## <a name="personalize-your-git-settings"></a>Personalizar as configurações do git
 
-Para personalizar e personalizar as configurações do git em um nível de repositório, bem como em um nível global, vá **Git**para  >  **configurações** de git na barra de menus ou para **ferramentas**  >  **Opções**  >  **controle de origem** na barra de menus. Em seguida, escolha as opções desejadas.
+Para personalizar e personalizar as configurações do git em um nível de repositório, bem como em um nível global, vá **Git** para  >  **configurações** de git na barra de menus ou para **ferramentas**  >  **Opções**  >  **controle de origem** na barra de menus. Em seguida, escolha as opções desejadas.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
 
