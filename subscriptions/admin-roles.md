@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: conceptual
 description: Saiba mais sobre as funções de superadministrador e administrador e como atribuir administradores.
 ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467369"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Superadministradores e administradores para contratos de assinatura do Visual Studio
@@ -28,8 +28,8 @@ Assista a uma demonstração sobre como gerenciar administradores.
 ## <a name="assigning-admins"></a>Atribuindo administradores
 Para atribuir novos administradores (administradores):
 1. Entre em https://manage.visualstudio.com usando um endereço de email atribuído como um superadministrador do contrato por meio do qual as assinaturas foram adquiridas.
-2. Clique na guia rotulada **Gerenciar Administradores**.
-3. Clique em **Adicionar**.
+2. Clique na guia rotulada **Gerenciar Administradores** .
+3. Clique em **Adicionar** .
    > [!div class="mx-imgBorder"]
    > ![Adicionar administradores](_img/admin-roles/add-admins.png "Clique na folha gerenciar administradores e, em seguida, clique em Adicionar para atribuir novos administradores.")
 4. Preencha o formulário com as informações do novo administrador.  
@@ -37,14 +37,14 @@ Para atribuir novos administradores (administradores):
    > ![Adicionar formulário de administrador](_img/admin-roles/add-form.png "Insira as informações de entrada para o novo administrador e escolha se deseja torná-las um superadministrador.  Em seguida, clique em Adicionar.")
 
    > [!NOTE]
-   > Caso deseje que esse administrador tenha a capacidade de atribuir administradores adicionais, lembre-se de marcar a caixa **Superadministrador**.
+   > Caso deseje que esse administrador tenha a capacidade de atribuir administradores adicionais, lembre-se de marcar a caixa **Superadministrador** .
 
 5. Depois de clicar em **Adicionar** para atribuir o novo administrador, ele receberá um email convidando-o para entrar no portal.  
 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

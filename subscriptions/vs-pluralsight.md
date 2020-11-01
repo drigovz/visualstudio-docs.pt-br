@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005336"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
@@ -31,7 +31,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 1. Você será redirecionado à página do Pluralsight para o benefício incluído com sua assinatura do Visual Studio.
    - Forneça as informações de contato solicitadas no formulário
    - Clique na caixa de seleção para aceitar os termos de uso
-   - Clique em **resgatar**.
+   - Clique em **resgatar** .
    > [!div class="mx-imgBorder"]
    > ![Registro da Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Preencha o formulário de registro, clique na caixa de seleção para aceitar os termos e clique em resgatar")
 
@@ -43,9 +43,9 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
    > [!NOTE]
    > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
 
-1. Clique em **Definir senha**.
+1. Clique em **Definir senha** .
 
-1. Insira a senha desejada no campo **nova senha** , insira-a novamente no campo **Confirmar senha** e clique em **salvar**.
+1. Insira a senha desejada no campo **nova senha** , insira-a novamente no campo **Confirmar senha** e clique em **salvar** .
 
 1. É isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 

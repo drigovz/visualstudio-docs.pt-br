@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561332"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Informações de log para a janela de saída usando tracepoints no Visual Studio
@@ -53,7 +53,7 @@ Você pode definir tracepoints especificando uma cadeia de caracteres de saída 
 
    ![Caixa condições verificadas](../debugger/media/checkedconditionsbox.png "Caixa condições verificadas")
 
-   Você tem três opções de condições: **expressão condicional**, **filtro**e **contagem de acesso**.
+   Você tem três opções de condições: **expressão condicional** , **filtro** e **contagem de acesso** .
 
 ## <a name="actions-menu"></a>Menu de ações
 
@@ -63,7 +63,7 @@ Por exemplo, se você quiser exibir o valor da `counter` variável no console de
 
 ![Mensagem de saída do contador](../debugger/media/counteroutputmessage.png "Mensagem de saída do contador")
 
-Se você clicar em **fechar** e depurar o programa (**F5**), você verá a seguinte saída na janela saída.
+Se você clicar em **fechar** e depurar o programa ( **F5** ), você verá a seguinte saída na janela saída.
 
 ![Mensagem de ações em Janela de Saída](../debugger/media/actionsmessageinoutputwindow.png "Mensagem de ações em Janela de Saída")
 

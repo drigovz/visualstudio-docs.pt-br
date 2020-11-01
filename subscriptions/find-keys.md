@@ -8,17 +8,17 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Saiba como encontrar, reivindicar e exportar chaves do produto (Product Keys) em assinaturas do Visual Studio
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91004961"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Encontrar e reivindicar chaves do produto (Product Keys) em assinaturas do Visual Studio
 Este artigo explica como localizar, reivindicar e exportar chaves do produto (Product Keys) do https://my.visualstudio.com/productkeys.  Para saber mais sobre como ativar um produto com uma chave, versões de varejo e de licença de volume de chaves e limites diários de reivindicação de chaves do produto (Product Keys), acesse [visão geral das chaves do produto (Product Keys)](product-keys.md).
 
 ## <a name="locating-and-claiming-product-keys"></a>Localizando e solicitando chaves do produto (Product Keys)
-Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
+Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads** , conforme mostrado abaixo.  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 > [!div class="mx-imgBorder"]
 > ![Obter chave da página de downloads](_img/product-keys/download-get-key.png "Selecione obter chave na página informações para qualquer download para obter uma chave para esse produto.")
 
@@ -56,7 +56,7 @@ Para solicitar a chave do produto (Product Key):
 > ![Procurar a chave do produto (Product Key)](_img/product-keys/search-keys.png "Role até o produto desejado ou use a caixa de pesquisa para localizar rapidamente qualquer produto.")
    
 Neste exemplo, utilizamos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visual Studio Enterprise 2019.
-Como é possível ver, há várias versões listadas.  Uma chave para cada um já foi reivindicada para o Visual Studio Enterprise 2019 versões 16.0 e 16.1.  Chaves adicionais de diferentes tipos ainda estão disponíveis para ambas as versões. Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna **Observações**.  Você pode usar isso em conjunto com a data na coluna **Solicitada** para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.
+Como é possível ver, há várias versões listadas.  Uma chave para cada um já foi reivindicada para o Visual Studio Enterprise 2019 versões 16.0 e 16.1.  Chaves adicionais de diferentes tipos ainda estão disponíveis para ambas as versões. Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna **Observações** .  Você pode usar isso em conjunto com a data na coluna **Solicitada** para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.
 
 ### <a name="exporting-your-claimed-keys"></a>Exportando as chaves solicitadas
 Você pode exportar uma lista de todas as chaves já solicitadas, juntamente com uma grande seleção de chaves estáticas e de outros tipos automaticamente marcadas como “solicitadas” por você.
