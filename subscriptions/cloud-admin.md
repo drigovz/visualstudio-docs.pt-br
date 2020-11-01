@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: how-to
 description: Configurando administradores para assinaturas mensais
 ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92904244"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Configurar administradores para assinaturas mensais do Visual Studio
@@ -49,7 +49,7 @@ Para adicionar administradores:
 9. Na lista de usuários role para baixo até o usuário que você deseja tornar administrador e selecione-o. 
    > [!div class="mx-imgBorder"]
    > ![Escolher função, administrador de acesso do usuário](_img/cloud-admin/add-role-user-access-admin.png "Escolha função, selecione administrador de acesso do usuário e, em seguida, selecione o nome do usuário para torná-lo um administrador.")
-10. Clique em **Save** (Salvar).
+10. Clique em **Salvar** .
 11. Clique na guia **Atribuições de função** para verificar se o usuário selecionado é exibido como um Administrador de Acesso do Usuário.
 
 Agora, o novo administrador pode entrar no [portal de administração](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas mensais da lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
