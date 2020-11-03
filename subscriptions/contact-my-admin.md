@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Saiba como entrar em contato com seu administrador de assinatura para obter assistência com perguntas ou problemas.
-ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904530"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289982"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>Obtenha assistência de seu administrador de assinaturas
 Se sua assinatura do Visual Studio for fornecida por seu trabalho ou escola, provavelmente ela foi atribuída a você por um administrador de assinaturas ou "admin".  Os administradores podem atribuir ou remover assinaturas, alterar endereços de email de credenciais, determinar se você tem a capacidade de baixar software e executar outras funções relacionadas à sua assinatura.
@@ -27,15 +27,15 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
    > ![Contatar meu Administrador](_img/contact-my-admin/contact-my-admin-button.png "Selecione o botão contatar meu administrador, insira sua mensagem e selecione Enviar.")
 4. Insira a mensagem para o administrador.
 5. Se você quiser receber uma cópia da mensagem enviada ao seu administrador, escolha a caixa de seleção **enviar-me uma cópia** . 
-6. Por fim, selecione **Enviar** .
+6. Por fim, selecione **Enviar**.
 
 > [!NOTE]
 > **Superadministradores:**  Para definir o endereço de email para o qual as solicitações "contatar meu administrador" são enviadas, especifique esse endereço nas [preferências de contrato](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Recursos
-- [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
