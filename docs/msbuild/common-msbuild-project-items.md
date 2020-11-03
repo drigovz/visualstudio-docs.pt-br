@@ -2,7 +2,7 @@
 title: Itens de projeto comuns do MSBuild | Microsoft Docs
 description: Saiba mais sobre os itens de projeto do MSBuild comuns. Os itens são referências nomeadas a um ou mais arquivos e têm metadados como nomes de arquivo, caminhos e números de versão.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796388"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238617"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 
@@ -57,7 +57,7 @@ Representa uma referência a um componente COM (não gerenciado) no projeto. Est
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
-|Isolada|Booliano opcional. Especifica se o componente é um componente sem registro.|
+|Isolado|Booliano opcional. Especifica se o componente é um componente sem registro.|
 
 ### <a name="comfilereference"></a>COMFileReference
 
@@ -160,7 +160,19 @@ Representa os atributos de assembly a serem gerados como `[AssemblyMetadata(key,
 | Valor | Cadeia de caracteres obrigatória. Torna-se o segundo parâmetro (o valor) no `AssemblyMetadataAttribute` Construtor de atributo. |
 
 > [!NOTE]
-> Isso se aplica a projetos usando apenas o SDK do .NET Core.
+> Este item se aplica a projetos que usam o SDK para .NET 5 (e .NET Core) e versões posteriores.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Especifica os assemblies a serem emitidos como `[InternalsVisibleTo(..)]` atributos de assembly.
+
+| Nome de metadados de item | Descrição |
+|-----------------------| - |
+| Incluir | O nome do assembly. |
+| Chave | Cadeia de caracteres opcional. A chave pública do assembly. |
+
+> [!NOTE]
+> Este item se aplica a projetos que usam o SDK para .NET 5 (e .NET Core) e versões posteriores.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
@@ -174,7 +186,7 @@ Representa o projeto do FxCop a ser importado.
 
 Representa assemblies cujos namespaces devem ser importados pelo compilador Visual Basic.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propriedades do MSBuild para projetos SDK do .NET Core](/dotnet/core/project-sdk/msbuild-props)
