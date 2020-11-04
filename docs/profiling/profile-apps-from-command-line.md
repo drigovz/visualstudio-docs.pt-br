@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053423"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344488"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Medir o desempenho do aplicativo na linha de comando
 
@@ -33,7 +33,7 @@ No exemplo descrito neste artigo, você coletará informações de desempenho pa
 
 * Familiaridade com ferramentas de linha de comando
 
-* Para coletar informações de desempenho em um computador remoto sem o Visual Studio instalado, instale as [ferramentas de desempenho do Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) no computador remoto. A versão das ferramentas deve corresponder à sua versão do Visual Studio.
+* Para coletar informações de desempenho em um computador remoto sem o Visual Studio instalado, instale o [ferramentas remotas para Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) no computador remoto. A versão das ferramentas deve corresponder à sua versão do Visual Studio.
 
 ## <a name="collect-performance-data"></a>Coletar dados de desempenho
 
@@ -71,7 +71,7 @@ A criação de perfil usando as ferramentas da CLI de Diagnóstico do Visual Stu
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Localize a saída do arquivo *. diagsession* do comando anterior e abra-o no Visual Studio (**arquivo**  >  **aberto**) para examinar as informações coletadas.
+1. Localize a saída do arquivo *. diagsession* do comando anterior e abra-o no Visual Studio ( **arquivo**  >  **aberto** ) para examinar as informações coletadas.
 
    Para analisar os resultados, consulte a documentação da ferramenta de desempenho correspondente. Por exemplo, isso pode ser o [uso da CPU](../profiling/cpu-usage.md), a [ferramenta de alocação de objeto .net](../profiling/dotnet-alloc-tool.md)ou a ferramenta de [banco de dados](../profiling/analyze-database.md) .
 

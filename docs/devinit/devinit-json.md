@@ -1,7 +1,7 @@
 ---
 title: Arquivo de configuração devinit
 description: Documentação para o .devinit.jsno arquivo de manifesto para devinit.
-ms.date: 08/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b0cfb1c41d7721598bae44f950ced01d17ff494a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29ea900b534bc03e47cfda49dba15af910189e48
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005356"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344481"
 ---
 # <a name="devinit-configuration-file"></a>arquivo de configuração devinit
 
@@ -24,11 +24,17 @@ ms.locfileid: "91005356"
 
 O `devinit.exe init` comando é controlado por meio do _.devinit.jsno_ arquivo. Por padrão, `devinit.exe` o procura o arquivo nos seguintes locais:
 
-- _{diretório atual}\\_
-- _{diretório atual} \\ . devinit\\_
-- _{diretório atual} \\ . devcontainer\\_
+* {diretório atual} \\.devinit.jsem
+* {diretório atual} \\devinit.jsem
+* {diretório atual} \\ . devinit \\.devinit.jsem
+* {diretório atual} \\ . devinit \\devinit.jsem
+* {diretório atual} \\ devinit \\.devinit.jsem
+* {diretório atual} \\ devinit \\devinit.jsem
+* {diretório atual} \\ . devcontainer \\.devinit.jsem
+* {diretório atual} \\ . devcontainer \\devinit.jsem
 
-O elemento de linguagem _._ nos nomes de diretório e arquivo podem ser omitidos.
+> [!NOTE]
+> Se vários arquivos padrão forem encontrados, o devinit usará o arquivo que aparece primeiro na lista acima.
 
 O _.devinit.jsno_ arquivo também pode ser especificado explicitamente por meio da `--file` / `-f` opção.
 
@@ -55,17 +61,17 @@ Os caminhos são relativos ao local onde devinit está em execução. Normalment
 
 ### <a name="property-values"></a>Valores de propriedade
 
-| Nome         | Tipo   | Obrigatório | Valor                              |
+| Nome         | Type   | Obrigatório | Valor                              |
 |--------------|--------|----------|------------------------------------|
 | **feitos** | Cadeia de caracteres | No       | Comentários para o arquivo.             |
-| **funcionam**      | matriz  | Sim      | [Objeto RunTool](#run-tool-object) |
+| **funcionam**      | matriz  | Yes      | [Objeto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Executar objeto de ferramenta
 
-| Nome                  | Tipo   | Obrigatório | Valor                                                                                                      |
+| Nome                  | Type   | Obrigatório | Valor                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **feitos**          | Cadeia de caracteres | No       | Comentários para a entrada da ferramenta.                                                                               |
-| **'**              | string | Sim      | O nome da ferramenta. Consulte o `devinit list` comando para obter uma lista de ferramentas disponíveis.                            |
+| **'**              | string | Yes      | O nome da ferramenta. Consulte o `devinit list` comando para obter uma lista de ferramentas disponíveis.                            |
 | **input**             | Cadeia de caracteres | No       | A entrada da ferramenta. Varia de acordo com a ferramenta. Por exemplo, a versão necessária, a ID do pacote, o nome do arquivo ou a pasta.|
 | **additionalOptions** | Cadeia de caracteres | No       | Argumentos de linha de comando adicionais a serem passados para a ferramenta.                                                |
 

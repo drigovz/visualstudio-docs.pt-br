@@ -2,7 +2,7 @@
 title: 'Tutorial: abrir um projeto de um repositório'
 description: Saiba como abrir um projeto em um repositório Git ou DevOps do Azure usando o Visual Studio.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/03/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743036"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344534"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: abrir um projeto de um repositório
 
@@ -53,7 +53,7 @@ Se você ainda não instalou o Visual Studio, vá para a página de [downloads d
 
     ![Escolher Clone na seção Repositórios Git Locais](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Na caixa que diz ***Insira a URL de um repositório Git para clonar***, digite ou cole a URL do seu repositório e pressione **Enter**. (Talvez você veja um prompt para entrar no GitHub; caso ocorra, entre).
+1. Na caixa que diz **_Inserir a URL de um repositório Git para clonar_*, digite ou cole a URL do seu repositório e pressione _* Enter**. (Talvez você veja um prompt para entrar no GitHub; caso ocorra, entre).
 
    Depois que o Visual Studio clona o repositório, o Team Explorer é fechado e o Gerenciador de Soluções é aberto. É exibida uma mensagem que diz *Clique em Soluções e Pastas acima para exibir uma lista de Soluções*. Escolha **Soluções e Pastas**.
 
@@ -93,6 +93,9 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
    Se você não tiver um arquivo de solução (especificamente, um arquivo .sln) no seu repositório, o menu suspenso mostrará a mensagem "Nenhuma solução encontrada". No entanto, você pode clicar duas vezes em qualquer arquivo no menu de pastas para abri-lo no editor de códigos do Visual Studio.
 
+> [!TIP]
+> Se você quiser experimentar uma nova experiência de git integrada no Visual Studio e estiver usando a [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6) ou posterior, poderá ativá-la acessando **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** de ambiente e, em seguida, marcando a caixa de seleção **nova experiência do usuário git** . Para obter mais informações, consulte a [nova experiência de git na página do Visual Studio](../ide/git-with-visual-studio.md) .
+
 ::: moniker-end
 
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Abrir um projeto de um repositório Azure DevOps
@@ -109,15 +112,15 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
 1. Há duas maneiras de se conectar ao repositório Azure DevOps:
 
-      - Na seção **Provedores de Serviços Hospedados**, escolha **Conectar... **.
+      - Na seção **Provedores de Serviços Hospedados** , escolha **Conectar...**.
 
         ![A seção Provedores de Serviços Hospedados da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Na lista suspensa **Gerenciar Conexões**, escolha **Conectar-se a um Projeto...**.
+      - Na lista suspensa **Gerenciar Conexões** , escolha **Conectar-se a um Projeto...**.
 
         ![A seção Gerenciar Conexões da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. Na caixa de diálogo **Conectar-se a um Projeto**, escolha o repositório a que você deseja se conectar e escolha **Clone**.
+1. Na caixa de diálogo **Conectar-se a um Projeto** , escolha o repositório a que você deseja se conectar e escolha **Clone**.
 
       ![A caixa de diálogo "Conectar-se a um Projeto" gerada a partir do Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -142,13 +145,13 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. Na seção **Navegar em um repositório**, escolha **Azure DevOps**.
+1. Na seção **Navegar em um repositório** , escolha **Azure DevOps**.
 
    ![Exibir a janela 'Clonar ou verificar código'](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Se você vir uma janela de entrada, entre em sua conta.
 
-1. Na caixa de diálogo **Conectar-se a um Projeto**, escolha o repositório a que você deseja se conectar e escolha **Clone**.
+1. Na caixa de diálogo **Conectar-se a um Projeto** , escolha o repositório a que você deseja se conectar e escolha **Clone**.
 
       ![A caixa de diálogo "Conectar-se a um Projeto" gerada a partir do Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
@@ -181,9 +184,22 @@ Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer u
 - [Tutoriais do Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Tutoriais do Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Tutoriais do Visual Studio | **Python**](../python/index.yml)
-- [Tutoriais do Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](../javascript/index.yml)
+- [Tutoriais do Visual Studio | **JavaScript** , **TypeScript** e **Node.js**](../javascript/index.yml)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
+::: moniker range="vs-2017"
 
 - [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Nova experiência de git no Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Nova experiência de git no Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

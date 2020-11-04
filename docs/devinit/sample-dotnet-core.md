@@ -1,7 +1,7 @@
 ---
 title: Aplicativo do .NET Core
 description: Repositório de exemplo que usa devinit para instalar um SDK do .NET Core específico.
-ms.date: 10/28/2020
+ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce94dc9cf4b6368a96cc027e1a9fc14e0d7e0650
-ms.sourcegitcommit: 7915cedf2f5988db25cb90042aa8466a1d3cee7f
+ms.openlocfilehash: 35971ac1fde5fc272f22579cc6640cbea6724db5
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93028140"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344514"
 ---
 # <a name="net-core-app"></a>Aplicativo do .NET Core
 
-Consulte o repositório [DevinitExample](https://github.com/microsoft/DevinitExample) para obter um exemplo completo de como usar o devinit para instalar a versão necessária do SDK do .NET Core no Codespaces.
+Consulte o repositório [DotnetCoreDevinitExample](https://github.com/microsoft/DotnetCoreDevinitExample) para obter um exemplo completo de como usar o devinit para instalar a versão necessária do SDK do .NET Core no Codespaces.
 
 ## <a name="devinitjson"></a>.devinit.json
 
