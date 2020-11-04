@@ -44,7 +44,9 @@
       href: using-the-subscriber-portal.md
     - name: Gerenciar suas assinaturas
       href: manage-vs-subscriptions.md
-    - name: Entre em contato com o administrador das suas assinaturas
+    - name: Quando as assinaturas expiram
+      href: subscription-expiration.md
+    - name: Contate o administrador das suas assinaturas
       href: contact-my-admin.md
     - name: Benefícios
       items:
