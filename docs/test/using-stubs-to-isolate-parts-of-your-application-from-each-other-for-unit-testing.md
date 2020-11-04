@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289047"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325965"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -29,7 +29,7 @@ No diagrama, o componente StockAnalyzer é aquele que desejamos testar. Ele gera
 
 ![As classes de stub e real em conformidade com uma interface.](../test/media/fakesinterfaces.png)
 
-Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como *System.dll*, normalmente, são usados shims. Confira [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como *System.dll* , normalmente, são usados shims. Confira [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Como usar stubs
 
@@ -147,11 +147,14 @@ Para usar stubs, você deve primeiro gerar tipos de stub a partir das definiçõ
 
 #### <a name="add-a-fakes-assembly"></a>Adicionar um Assembly do Fakes
 
-1. Em **Gerenciador de soluções**, expanda as **referências**do seu projeto de teste de unidade.
+1. Em **Gerenciador de soluções** , 
+    - Para um projeto de .NET Framework mais antigo (estilo não SDK), expanda o nó **referências** do seu projeto de teste de unidade.
+    ::: moniker range=">=vs-2019"
+    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies** , **projetos** ou **pacotes**.
+    ::: moniker-end
+    - Se você estiver trabalhando em Visual Basic, selecione **Mostrar todos os arquivos** na barra de ferramentas **Gerenciador de soluções** para ver o nó **referências** .
 
-   Caso esteja trabalhando no Visual Basic, selecione **Mostrar Todos os Arquivos** na barra de ferramentas do **Gerenciador de Soluções** para ver o nó **Referências**.
-
-2. Selecione o assembly que contém as definições de interface para as quais você deseja criar stubs.
+2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime** , selecione **System.dll**.
 
 3. No menu de atalhos, escolha **Adicionar Assembly do Fakes**.
 
