@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e30db0eea924fcbc9587593266323d81c4ff1b40
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3bdcf6caa52f19bc03559fb57d41fadb0ac56485
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006046"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399854"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -34,7 +34,7 @@ Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a fer
 
 ### <a name="input"></a>Entrada
 
-A `input` propriedade é usada para especificar o nome do pacote a ser instalado (por exemplo, ' MongoDB ') ou o caminho para um arquivo de configuração dos seguintes formatos _packages.config_, _. nuspec_e _. nupkg_. O valor de `input` será acrescentado a um `choco install` comando (por exemplo `choco install mongodb` ), juntamente com quaisquer argumentos específicos no [`additionalOptions`](#additional-options) e as `choco` Opções internas (definidas [abaixo](#built-in-options)). Os pacotes podem ser encontrados na [Galeria de pacotes de chocolate](https://chocolatey.org/packages). Ao usar um arquivo de configuração, você pode passar o caminho para esse arquivo na `input` propriedade, por exemplo `"input":"packages.config"` .
+A `input` propriedade é usada para especificar o nome do pacote a ser instalado (por exemplo, ' MongoDB ') ou o caminho para um arquivo de configuração dos seguintes formatos _packages.config_ , _. nuspec_ e _. nupkg_. O valor de `input` será acrescentado a um `choco install` comando (por exemplo `choco install mongodb` ), juntamente com quaisquer argumentos específicos no [`additionalOptions`](#additional-options) e as `choco` Opções internas (definidas [abaixo](#built-in-options)). Os pacotes podem ser encontrados na [Galeria de pacotes de chocolate](https://chocolatey.org/packages). Ao usar um arquivo de configuração, você pode passar o caminho para esse arquivo na `input` propriedade, por exemplo `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opções adicionais
 
@@ -54,7 +54,7 @@ A `choco-install` ferramenta define um número de `choco` argumentos de linha de
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing packages listed in a packages.config file.",

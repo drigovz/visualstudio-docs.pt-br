@@ -1,5 +1,7 @@
 ---
 title: 'Como: Use o designer de esquema XML com literais XML'
+description: Saiba como usar o designer de esquema XML para exibir um esquema associado a um literal XML em um projeto Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b515092087ab213db5d3002f00c56753c2e3de14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814636"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399164"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: usar o designer de esquema XML com literais XML
 
@@ -35,7 +37,7 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
 
 2. Salve o arquivo em algum local com o nome *PurchaseOrderSchema. xsd*.
 
-3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto, selecione **Adicionar**e, em seguida, selecione **Item existente**. A caixa de diálogo de **Item Addexisting** é exibida. Navegue até o arquivo *PurchaseOrderSchema. xsd* , selecione-o e clique em **Adicionar**.
+3. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nome do projeto, selecione **Adicionar** e, em seguida, selecione **Item existente**. A caixa de diálogo de **Item Addexisting** é exibida. Navegue até o arquivo *PurchaseOrderSchema. xsd* , selecione-o e clique em **Adicionar**.
 
      O projeto xmlliterais agora contém dois arquivos: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 115fda00f880e9c2fa1782735dd471fc3df68936
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6e3d2fdaf6be019cae504d4f71258d410d232ff5
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005970"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400201"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -34,9 +34,9 @@ A `windowsfeature-enable` ferramenta é usada para habilitar recursos do Windows
 
 A `input` propriedade deve ser a `name` do a `windows feature` ser instalada. Uma lista de recursos disponíveis pode ser encontrada executando o `Get-WindowsFeature` cmd do PowerShell.
 
-### <a name="additional-options"></a>Opções adicionais
+### <a name="additional-options"></a>Additional-Options
 
-nenhuma.
+Nenhum.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
@@ -46,7 +46,7 @@ O comportamento padrão da `windowsfeature-enable` ferramenta é erro, conforme 
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs IIS.",

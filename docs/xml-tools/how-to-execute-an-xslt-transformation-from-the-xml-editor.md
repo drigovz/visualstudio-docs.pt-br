@@ -1,5 +1,7 @@
 ---
 title: Executar uma transformação XSLT
+description: Saiba como usar o editor de XML para associar uma folha de estilos XSLT a um documento XML, executar uma transformação XSLT e exibir a saída.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
@@ -8,20 +10,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e74beb2903cd133dfdd322ce4c297692eae3411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1c7165f301c82dfaf5aa066a3e15bd7ab244089
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817184"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399476"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como executar uma transformação XSLT do editor de XML
 
 O editor de XML permite associar uma folha de estilos XSLT a um documento XML, executar a transformação e exibir a saída. A saída resultante de transformação XSLT são exibidas em uma nova janela do documento.
 
-A propriedade **output** especifica o nome do arquivo para a saída. Se a propriedade de **saída** estiver em branco, um nome de arquivo será gerado no diretório temporário. A extensão do arquivo é baseada no `xsl:output` elemento em sua folha de estilos e pode ser.* XML*,. *txt* ou. *htm*.
+A propriedade **output** especifica o nome do arquivo para a saída. Se a propriedade de **saída** estiver em branco, um nome de arquivo será gerado no diretório temporário. A extensão do arquivo é baseada no `xsl:output` elemento em sua folha de estilos e pode ser. *XML* ,. *txt* ou. *htm*.
 
-Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. extensão *HTML* , a saída XSLT é visualizada usando um navegador da Web. Todas as outras extensões de arquivo são abertas usando o editor padrão escolhido pelo Visual Studio. Por exemplo, se a extensão de arquivo for. *XML*, o Visual Studio usa o editor de XML.
+Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. extensão *HTML* , a saída XSLT é visualizada usando um navegador da Web. Todas as outras extensões de arquivo são abertas usando o editor padrão escolhido pelo Visual Studio. Por exemplo, se a extensão de arquivo for. *XML* , o Visual Studio usa o editor de XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Executar uma transformação XSLT de um arquivo XML
 
@@ -31,7 +33,7 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
 
     - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha ao prólogo do documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       - ou -
+       - ou -
 
     - Adicione a folha de estilos XSLT usando a janela **Propriedades** . Com o arquivo XML aberto no editor, clique com o botão direito do mouse em qualquer lugar no editor e escolha **Propriedades**. Na janela **Propriedades** , clique no campo **folha de estilos** e escolha o botão procurar (...). Selecione a folha de estilos XSLT e, em seguida, escolha **abrir**.
 

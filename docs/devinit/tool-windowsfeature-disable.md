@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8a649cec23a8f0090500a493fe577b3ba41788f9
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 07a15f7c0422cbc3e44bcffd8806be35dbe5717f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005977"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400208"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -34,9 +34,9 @@ A `windowsfeature-disable` ferramenta é usada para adquirir recursos do Windows
 
 A `input` propriedade deve ser a `name` do a `windows feature` ser desabilitada.
 
-### <a name="additional-options"></a>Opções adicionais
+### <a name="additional-options"></a>Additional-Options
 
-nenhuma.
+Nenhum.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
@@ -46,7 +46,7 @@ O comportamento padrão da `windowsfeature-disable` ferramenta é erro, conforme
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs IIS.",

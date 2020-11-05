@@ -4,17 +4,16 @@ description: Saiba como usar o Cloud Explorer para navegar e gerenciar recursos 
 author: ghogen
 manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 175aa7111d77e92fb29a3983db7365e068abba2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800379"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399384"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gerenciar os recursos associados com suas contas do Azure no Visual Studio Cloud Explorer
 
@@ -34,7 +33,7 @@ O Cloud Explorer é criado na pilha do Azure Resource Manager, assim como o [Por
 
 Para exibir os recursos associados a uma conta do Azure, você deve primeiro adicionar a conta ao **Cloud Explorer**.
 
-1. No **Cloud Explorer**, selecione o botão **Gerenciamento de conta** .
+1. No **Cloud Explorer** , selecione o botão **Gerenciamento de conta** .
 
    ![Ícone de configurações de conta do Azure do Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -54,13 +53,13 @@ Para exibir os recursos associados a uma conta do Azure, você deve primeiro adi
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>Remover uma conta do Azure do Cloud Explorer
 
-1. Em **Cloud Explorer**, escolha **Gerenciamento de Contas**.
+1. Em **Cloud Explorer** , escolha **Gerenciamento de Contas**.
 
-   ![Ícone de configurações de conta do Azure do Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Configurações de conta do Azure](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
 1. Do lado da conta que deseja remover, selecione **Gerenciar contas**.
 
-   ![Ícone de configurações de conta do Azure do Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
+   ![Remover conta](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
 
 1. Escolha **Remover** para remover uma conta.
 
@@ -70,7 +69,7 @@ Para exibir os recursos associados a uma conta do Azure, você deve primeiro adi
 
 Para exibir os recursos do Azure, você pode escolher um dos modos de exibição **Tipos de Recursos** ou **Grupos de Recursos**.
 
-1. Em **Cloud Explorer**, selecione a lista suspensa de modo de exibição de recursos.
+1. Em **Cloud Explorer** , selecione a lista suspensa de modo de exibição de recursos.
 
    ![Lista de lista suspensa do Cloud Explorer para selecionar o modo de exibição de recursos desejado](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
@@ -97,7 +96,7 @@ A imagem a seguir mostra uma comparação de exemplo do que você vê em cada gu
 
 Cada recurso tem a ação **Abrir no portal**. Quando você seleciona essa ação, o Cloud Explorer exibe o recurso selecionado no [Portal do Azure](https://portal.azure.com). O recurso **Abrir no Portal** é útil para navegar para recursos muito aninhados.
 
-Valores da propriedade e ações adicionais também podem aparecer de acordo com o recurso do Azure. Por exemplo, aplicativos Web e aplicativos lógicos também têm, além de **Abrir no portal**, as ações **Abrir no navegador** e **Anexar depurador**. Ações para abrir editores aparecem quando você seleciona um blob, fila ou tabela da conta de armazenamento. Os aplicativos do Azure têm as propriedades **URL** e **Status**, enquanto os recursos de armazenamento têm as propriedades de cadeia de conexão e chave.
+Valores da propriedade e ações adicionais também podem aparecer de acordo com o recurso do Azure. Por exemplo, aplicativos Web e aplicativos lógicos também têm, além de **Abrir no portal** , as ações **Abrir no navegador** e **Anexar depurador**. Ações para abrir editores aparecem quando você seleciona um blob, fila ou tabela da conta de armazenamento. Os aplicativos do Azure têm as propriedades **URL** e **Status** , enquanto os recursos de armazenamento têm as propriedades de cadeia de conexão e chave.
 
 ## <a name="find-resources-in-cloud-explorer"></a>Localizar recursos no Cloud Explorer
 
@@ -105,4 +104,4 @@ Para localizar recursos com um nome específico em suas assinaturas de conta do 
 
   ![Localizando recursos no Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Conforme você insere caracteres na caixa **Pesquisa**, apenas os recursos que correspondem a esses caracteres são exibidos na árvore de recursos.
+Conforme você insere caracteres na caixa **Pesquisa** , apenas os recursos que correspondem a esses caracteres são exibidos na árvore de recursos.

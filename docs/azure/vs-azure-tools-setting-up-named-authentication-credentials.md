@@ -4,23 +4,22 @@ description: Saiba como fornecer credenciais que o Visual Studio possa usar para
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 5f45517eb12c5443667e7a308f03943ee394190e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508386"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399325"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurar credenciais de autenticação nomeadas
 
 Para publicar um aplicativo no Azure ou monitorar um serviço de nuvem existente, o Visual Studio exige credenciais para autenticar solicitações para o Azure, ou seja, sua ID de assinatura do Azure e um certificado X.509 v3 válido com uma chave de pelo menos 2048 bits. Forneça essas credenciais por meio de um destes métodos:
 
-- No Visual Studio, selecione **Exibir > Gerenciador de Servidores**, clique com o botão direito no nó **Azure**, selecione **Conectar-se à Assinatura do Microsoft Azure** e entre.
+- No Visual Studio, selecione **Exibir > Gerenciador de Servidores** , clique com o botão direito no nó **Azure** , selecione **Conectar-se à Assinatura do Microsoft Azure** e entre.
 - Criar um arquivo de assinatura (`.publishsettings`), que contém uma chave pública para o certificado. O arquivo de assinatura pode conter credenciais para mais de uma assinatura, conforme descrito neste artigo.
 
 Observação: essas credenciais são diferentes das credenciais usadas para autenticar solicitações para os serviços de armazenamento do Azure.
@@ -30,8 +29,8 @@ Observação: essas credenciais são diferentes das credenciais usadas para aute
 No Gerenciador de Servidores, clique com o botão direito do mouse no nó **Azure** e selecione **Gerenciar e Filtrar Assinaturas**. Em seguida, selecione a guia **Certificados** e realize qualquer uma das ações a seguir:
 
 - Selecione **Importar** para abrir a caixa de diálogo **Importar Assinaturas do Microsoft Azure**. Selecione o link **Baixar arquivo de assinatura** e, no navegador, salve o arquivo baixado em um local temporário. De volta à caixa de diálogo, navegue até o local do download e, em seguida, importe-o para usar na autenticação.
-- Escolha uma assinatura ativa e selecione **Editar**, que abre uma caixa de diálogo na qual você edita uma assinatura existente para usar na autenticação.
-- Selecione **Novo** para abrir a caixa de diálogo **Nova Assinatura** e forneça os detalhes necessários. Para carregar o certificado na sua nuvem de serviço que está indicada na caixa de diálogo, entre no Portal do Azure, navegue até o serviço de nuvem, selecione **Configurações > Certificados de Gerenciamento**, selecione **Carregar**, em seguida, especifique o caminho até o arquivo `.cer`.
+- Escolha uma assinatura ativa e selecione **Editar** , que abre uma caixa de diálogo na qual você edita uma assinatura existente para usar na autenticação.
+- Selecione **Novo** para abrir a caixa de diálogo **Nova Assinatura** e forneça os detalhes necessários. Para carregar o certificado na sua nuvem de serviço que está indicada na caixa de diálogo, entre no Portal do Azure, navegue até o serviço de nuvem, selecione **Configurações > Certificados de Gerenciamento** , selecione **Carregar** , em seguida, especifique o caminho até o arquivo `.cer`.
 
 Se você deseja criar um certificado por conta própria, pode consultar as instruções em [Criar e carregar um certificado de gerenciamento do Azure](/azure/cloud-services/cloud-services-certs-create) e depois carregar manualmente o certificado para o [Portal do Azure](https://portal.azure.com/).
 

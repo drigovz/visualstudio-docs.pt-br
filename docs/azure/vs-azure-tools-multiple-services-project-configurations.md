@@ -1,7 +1,7 @@
 ---
 title: Configurar o serviço de nuvem com várias configurações
 description: Saiba como configurar um projeto de serviço de nuvem do Azure alterando os arquivos ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg e ServiceConfiguration.Cloud.cscfg.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 76dec6a238090fac6a5094221e1a1c2bb953789d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036541"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399800"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
@@ -33,13 +33,13 @@ Para obter informações sobre os esquemas subjacentes para a definição de ser
 
 ### <a name="service-configuration"></a>Configuração de Serviço
 
-Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage... ** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
+Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage...** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
 
 ### <a name="instances"></a>Instâncias
 
 Definir a **instância** propriedade de contagem para o número de instâncias o serviço deve ser executado para esta função.
 
-Defina a propriedade **Tamanho da VM** como **Extra Pequena**, **Pequena**, **Média**, **Grande** ou **Extra Grande**.  Para obter mais informações, consulte [tamanhos dos serviços de nuvem](/azure/cloud-services/cloud-services-sizes-specs).
+Defina a propriedade **Tamanho da VM** como **Extra Pequena** , **Pequena** , **Média** , **Grande** ou **Extra Grande**.  Para obter mais informações, consulte [tamanhos dos serviços de nuvem](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Ação de inicialização (somente função Web)
 
@@ -51,11 +51,11 @@ Se você já tiver adicionado um ponto de extremidade HTTPS, a opção de ponto 
 
 ### <a name="diagnostics"></a>Diagnósticos
 
-Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor (**...**) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor ( **...** ) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Página de configurações
 
-Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](/previous-versions/azure/dn602775(v=azure.11)), especificamente, o método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
+Na página **Configurações** , você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](/previous-versions/azure/dn602775(v=azure.11)), especificamente, o método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurando uma cadeia de conexão para uma conta de armazenamento
 
@@ -68,14 +68,14 @@ Você pode definir a cadeia de conexão para usar o armazenamento local conforme
 
 Para criar uma cadeia de conexão, selecione **Adicionar Configuração** e defina **Tipo** como "Cadeia de Conexão".
 
-Para cadeias de conexão novas ou existentes, selecione **... *** à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
+Para cadeias de conexão novas ou existentes, selecione **...** _ à direita do campo _ *Value* * para abrir a caixa de diálogo **criar cadeia de conexão de armazenamento** :
 
-1. Em **Conectar usando**, escolha a opção **Sua assinatura** para selecionar uma conta de armazenamento de uma assinatura. O Visual Studio, em seguida, obtém as credenciais da conta de armazenamento automaticamente do arquivo `.publishsettings`.
+1. Em **Conectar usando** , escolha a opção **Sua assinatura** para selecionar uma conta de armazenamento de uma assinatura. O Visual Studio, em seguida, obtém as credenciais da conta de armazenamento automaticamente do arquivo `.publishsettings`.
 1. Selecionar **Credenciais inseridas manualmente** permite que você especifique o nome da conta e a chave diretamente usando as informações do Portal do Azure. Para copiar a chave de conta:
     1. Navegue até a conta de armazenamento do Portal do Azure e selecione **Gerenciar Chaves**.
     1. Para copiar a chave de conta, navegue até a conta de armazenamento no portal do Azure, selecione **Configurações > Chaves de acesso** e, em seguida, use o botão Copiar para copiar a chave de acesso primária para a área de transferência.
 1. Selecione uma das opções de conexão. **Especificar pontos de extremidade personalizados** solicitará que você especifique URLs específicas para blobs, tabelas e filas. Os pontos de extremidade personalizados permitem que você use [domínios personalizados](/azure/storage/blobs/storage-custom-domain-name) e controle o acesso mais exatamente. Veja [Configurar cadeias de conexão do Armazenamento do Azure](/azure/storage/common/storage-configure-connection-string).
-1. Selecione **OK**, em seguida, **Arquivo > Salvar** para atualizar a configuração com a nova cadeia de conexão.
+1. Selecione **OK** , em seguida, **Arquivo > Salvar** para atualizar a configuração com a nova cadeia de conexão.
 
 Novamente, quando você publica seu aplicativo no Azure, escolhe a configuração do serviço que contém a conta de armazenamento do Azure para a cadeia de conexão. Depois de publicar o aplicativo, verifique se ele funciona conforme esperado nos serviços de armazenamento do Azure.
 
@@ -86,7 +86,7 @@ Para obter mais informações sobre como atualizar as configurações de serviç
 Uma função Web geralmente tem um único ponto de extremidade HTTP na porta 80. Uma função de trabalho, por outro lado, pode ter qualquer número de pontos de extremidade HTTP, HTTPS ou TCP. Pontos de extremidade podem ser pontos de extremidade de entrada, disponíveis a clientes externos, ou pontos de extremidade internos, disponíveis a outras funções em execução no serviço.
 
 - Para disponibilizar um ponto de extremidade HTTP para clientes externos e navegadores da Web, altere o tipo de ponto de extremidade para entrada e especifique um nome e um número da porta pública.
-- Para disponibilizar um ponto de extremidade HTTPS para clientes externos e navegadores da Web, altere o tipo de ponto de extremidade para **entrada**, e especifique um nome, um número da porta pública e um nome de certificado de gerenciamento. Você também deve definir o certificado na página de propriedades **Certificados** antes de especificar um certificado de gerenciamento.
+- Para disponibilizar um ponto de extremidade HTTPS para clientes externos e navegadores da Web, altere o tipo de ponto de extremidade para **entrada** , e especifique um nome, um número da porta pública e um nome de certificado de gerenciamento. Você também deve definir o certificado na página de propriedades **Certificados** antes de especificar um certificado de gerenciamento.
 - Para disponibilizar um ponto de extremidade para o acesso interno por outras funções no serviço de nuvem, altere o tipo de ponto de extremidade para interno e especifique um nome e possíveis portas privadas para esse ponto de extremidade.
 
 ## <a name="local-storage-page"></a>Página Armazenamento Local

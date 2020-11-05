@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3324cf5faa1d9385adbbdf24a8125970c5db2c40
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ec326871f5565ecaabdc8cda369b36df14029414
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862238"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399826"
 ---
 # <a name="enable-iis"></a>enable-iis
 
@@ -26,7 +26,7 @@ A `enable-iis` ferramenta é usada para habilitar recursos do IIS e instalar o [
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Type   | Obrigatório | Valor                                                                               |
+| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado.                                                                           |
@@ -48,7 +48,7 @@ O comportamento padrão da `enable-iis` ferramenta é habilitar os recursos do I
 
 ```json
 {
-    "$schema": "./devinit.schema-2.0.json",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",
     "run": [
         {
             "comments": "Example that will enable IIS features and install the latest ASP.NET hosting bundle.",

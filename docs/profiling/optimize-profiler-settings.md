@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329254"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400305"
 ---
 # <a name="optimizing-profiler-settings"></a>Otimizando as configurações do criador de perfil
 
@@ -22,7 +22,7 @@ O criador de perfil de desempenho e a janela de Ferramentas de Diagnóstico no V
 
 ## <a name="symbol-settings"></a>Configurações de Símbolo
 
-As configurações de símbolos encontradas nas opções do depurador (**Debug > options > Symbols**) têm um impacto significativo sobre o tempo necessário para gerar resultados nas ferramentas. Habilitar servidores de símbolo ou usar o **_NT_SYMBOL_PATH** faz com que o criador de perfil solicite símbolos para cada módulo carregado em um relatório. Atualmente, o criador de perfil sempre carrega automaticamente todos os símbolos, independentemente da preferência de carregamento automático de símbolos.
+As configurações de símbolos encontradas nas opções do depurador ( **depurar > opções > símbolos** ou **ferramentas > opções > depuração de símbolos de >** ) têm um impacto significativo sobre quanto tempo leva para gerar resultados nas ferramentas. Habilitar servidores de símbolo ou usar o **_NT_SYMBOL_PATH** faz com que o criador de perfil solicite símbolos para cada módulo carregado em um relatório. Atualmente, o criador de perfil sempre carrega automaticamente todos os símbolos, independentemente da preferência de carregamento automático de símbolos.
 
 ![Página de carregamento de símbolos](../profiling/media/symbolloading.png "Carregamento de símbolos")
 

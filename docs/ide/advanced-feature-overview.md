@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099421"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399247"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -44,7 +44,7 @@ O Visual Studio oferece um pacote de ferramentas que permite criar aplicativos h
 
 ::: moniker range="vs-2017"
 
-Após instalar a carga de trabalho **desenvolvimento do Azure**, os seguintes modelos de **nuvem** para C# estarão disponíveis na caixa de diálogo **Novo Projeto**:
+Após instalar a carga de trabalho **desenvolvimento do Azure** , os seguintes modelos de **nuvem** para C# estarão disponíveis na caixa de diálogo **Novo Projeto** :
 
 ![Modelos de projeto de nuvem para Visual Studio](media/cloud-project-templates.png)
 
@@ -82,7 +82,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 - Use tecnologias Web &mdash; HTML, CSS e JavaScript &mdash; padrão para criar aplicativos móveis para iOS, Android e Windows usando o [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Crie jogos 2D e 3D em C# usando [Ferramentas do Visual Studio para Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Crie jogos 2D e 3D em C# usando [Ferramentas do Visual Studio para Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Compile aplicativos C++ nativos para dispositivos iOS, Android e Windows. Compartilhe código comum em bibliotecas criadas para iOS, Android e Windows usando [C++ para desenvolvimento multiplataforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,7 +90,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 ## <a name="connect-to-databases"></a>Conectar-se aos bancos de dados
 
-**Gerenciador de servidores** ajuda a procurar e gerenciar SQL Server instâncias e ativos localmente, remotamente e no Azure, Salesforce.com, Microsoft 365 e sites. Para abrir **Gerenciador de servidores**, no menu principal, escolha **Exibir**  >  **Gerenciador de servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
+**Gerenciador de servidores** ajuda a procurar e gerenciar SQL Server instâncias e ativos localmente, remotamente e no Azure, Salesforce.com, Microsoft 365 e sites. Para abrir **Gerenciador de servidores** , no menu principal, escolha **Exibir**  >  **Gerenciador de servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 
@@ -136,8 +136,8 @@ Encontre [extensões existentes](https://marketplace.visualstudio.com/vs) para o
 
 Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do Visual Studio](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [O que há de novo no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

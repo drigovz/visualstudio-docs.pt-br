@@ -1,5 +1,7 @@
 ---
 title: Integração do designer de esquema XML com o editor de XML
+description: Saiba mais sobre a integração entre o designer de esquema XML e o editor de XML e como as alterações feitas em um são refletidas no outro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a9220d84e2fb1a15545d1a880b0084952da77f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9569e33f8f9f861bc5d89030c6fe38b0ab853a6f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592575"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400181"
 ---
 # <a name="integration-with-xml-editor"></a>Integração com editor XML
 
@@ -21,15 +23,15 @@ O designer de esquema XML é integrado ao editor de XML. Se você modificar um a
 
 - No editor de XML, clique com o botão direito do mouse em um nó e selecione **Mostrar no Gerenciador de esquema XML**.
 
-- Na exibição de gráfico e no **Gerenciador de esquema XML**, clique duas vezes em um nó ou clique com o botão direito do mouse em um nó e selecione **Exibir código**. Na exibição modelo de conteúdo, clique com o botão direito do mouse em um nó e selecione **Exibir código**.
+- Na exibição de gráfico e no **Gerenciador de esquema XML** , clique duas vezes em um nó ou clique com o botão direito do mouse em um nó e selecione **Exibir código**. Na exibição modelo de conteúdo, clique com o botão direito do mouse em um nó e selecione **Exibir código**.
 
 A captura de tela a seguir mostra um esquema XML aberto no **XML Schema Explorer**. O **XML Schema Explorer** exibe o conjunto de esquema em um modo de exibição de árvore. O editor de XML exibe a exibição de texto do nó que está atualmente ativo no **XML Schema Explorer**.
 
-![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
+![Captura de tela de um projeto do Visual Studio mostrando um nó XML no painel do editor de XML e uma exibição de árvore do conjunto de esquema no painel do Gerenciador de esquema XML.](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
 Às vezes, é útil ver o código no editor de XML e o designer gráfico lado a lado. Para exibir os dois arquivos ao mesmo tempo, clique com o botão direito do mouse em qualquer lugar no editor de XML e selecione **Exibir Designer**. No menu do Windows do Visual Studio, selecione **novo grupo de guias horizontal (ou vertical)**.
 
-![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
+![Captura de tela de um projeto do Visual Studio mostrando o painel do designer de exibição, o painel do editor de XML e o painel do Gerenciador de esquema XML.](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 
 ## <a name="see-also"></a>Confira também
 

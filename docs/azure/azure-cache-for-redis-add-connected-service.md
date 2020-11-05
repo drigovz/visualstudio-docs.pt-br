@@ -3,18 +3,17 @@ title: Adicionar o cache do Azure para Redis usando os serviços conectados | Mi
 description: Adicionar o cache do Azure para suporte do Redis ao seu aplicativo usando o Visual Studio para adicionar um serviço conectado
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643361"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398612"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Adicionar o cache do Azure para Redis usando os serviços conectados do Visual Studio
 
@@ -25,7 +24,7 @@ Com o Visual Studio, você pode conectar qualquer um dos seguintes itens ao cach
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Funções do Azure
+- Azure Functions
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -43,7 +42,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 1. Abra o projeto no Visual Studio.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
+1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
 
 1. Na guia **Serviços conectados** , selecione o ícone + para **dependências de serviço**.
 

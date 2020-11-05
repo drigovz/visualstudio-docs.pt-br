@@ -1,5 +1,7 @@
 ---
 title: Criar um esquema XML
+description: Saiba como usar o editor de XML no Visual Studio para criar um esquema XSD (linguagem de definição de esquema XML) a partir de um documento XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ce1c6dc5bd24b391a8cde184a32684270662ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18081db7537eab1d14f800e9457821679c0316b8
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815442"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399516"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: criar um esquema XML a partir de um documento XML
 

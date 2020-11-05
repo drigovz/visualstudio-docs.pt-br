@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467629"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398989"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar a uma "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
 
-* **[Instalar o Visual Studio](#install-visual-studio)**: essas tabelas incluem as URLs de domínio a serem adicionadas a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
+* **[Instalar o Visual Studio](#install-visual-studio)** : essas tabelas incluem as URLs de domínio a serem adicionadas a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
 
-* **[Usar o Visual Studio e os serviços do Azure](#use-visual-studio-and-azure-services)**: essa tabela inclui as URLs de domínio a serem adicionadas a uma lista de permissões e as portas e protocolos a serem abertos para que você tenha acesso a todos os recursos e serviços desejados.
+* **[Usar o Visual Studio e os serviços do Azure](#use-visual-studio-and-azure-services)** : essa tabela inclui as URLs de domínio a serem adicionadas a uma lista de permissões e as portas e protocolos a serem abertos para que você tenha acesso a todos os recursos e serviços desejados.
 
 > [!NOTE]
 > Este artigo foi escrito para o Visual Studio no Windows, mas determinadas informações também são aplicáveis à [instalação do Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) por trás de um firewall ou de um servidor proxy.
@@ -65,7 +65,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 #### <a name="non-microsoft-domains"></a>Domínios que não são da Microsoft
 
-| Domain | Instala essas cargas de trabalho |
+| Domínio | Instala essas cargas de trabalho |
 | - | - |
 | archive.apache.org | Desenvolvimento móvel com JavaScript (Cordova) |
 | cocos2d-x.org | Desenvolvimento de jogos com C++ (Cocos) |
@@ -81,6 +81,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 | developer.apple.com | Provisionamento do Xamarin. iOS |
 | appstoreconnect.apple.com | Provisionamento do Xamarin. iOS |
 | idmsa.apple.com | Provisionamento do Xamarin. iOS |
+| akamized.net | Rede de distribuição de conteúdo (Akamai Technologies) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usar o Visual Studio e Serviços do Azure
@@ -93,7 +94,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | - | - | -: | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
 | Start Page | vsstartpage.blob.core.windows.net | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
-| Direcionado<br> Notification <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
+| Direcionado<br> Notificação <br>Serviço | targetednotifications-tm.trafficmanager.net <br><br>www.research.net | 443<br><br>443 | Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores |
 | Extensão <br>verificação de atualização | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | 443 | Usada para fornecer notificações quando uma extensão instalada tem uma atualização disponível <br><br> Usada como um local de conexão |
 | Projeto do AI <br>Integração | az861674.vo.msecnd.net | 443<br> | Usada para configurar novos projetos para enviar dados de uso para sua conta do Application Insights registrada |
 | CodeLens | codelensprodscus1su0.app.<br>codelens.visualstudio.com | 443 | Usada para fornecer informações no editor sobre quando um arquivo foi atualizado pela última, a linha do tempo de alterações, os itens de trabalho aos quais as alterações estão associadas, os autores e muito mais |
@@ -119,7 +120,7 @@ Para garantir que você tenha acesso a tudo o que desejar quando usar o Visual S
 | Informações de ponto de extremidade de criação <br>de Recurso do Azure atualizadas | \*.blob.core.windows.net | https/443 | Usada para atualizar os pontos de extremidade usados para a criação de Recursos do Azure para determinados Serviços do Azure. Se desabilitada, as últimas localizações de ponto de extremidade baixadas ou inseridas são usadas |
 | Depuração remota e <br>Criação de perfil remota de <br>Websites do Azure | &#42;.cloudapp.net <br> &#42;.azurewebsites.net | 4022 | Usada para anexar o depurador remoto a sites do Azure. Se desabilitada, a anexação do depurador remoto a sites do Azure não funcionará |
 | Active Directory <br>Grafo | graph.windows.net | https/443 | Usada para provisionar novos aplicativos do Azure Active Directory. Também usado pelo provedor de serviços Microsoft 365 MSGraph-conectado |
-| Funções do Azure <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
+| Azure Functions <br>Atualização de CLI do <br>Verificação | functionscdn.azureedge.net | https/443 | Usada para verificar as versões atualizadas da CLI do Azure Functions. Se desabilitada, uma cópia armazenada em cache (ou a cópia carregada pelo componente do Azure Functions) da CLI será usada |
 | Cordova | npmjs.org<br>gradle.org | & de http/80<br/>https/443 | O HTTP é usado para downloads de Gradle durante o build. O HTTPS é usado para incluir plug-ins do Cordova nos projetos |
 | Gerenciador de Nuvem | 1. &#60;ponto de extremidade do cluster&#62; <br>Service Fabric <br>2. &#60;ponto de extremidade de gerenciamento&#62;<br>General Cloud Exp <br>3. &#60;ponto de extremidade do grafo&#62;<br>General Cloud Exp<br>4. &#60;ponto de extremidade da conta de armazenamento&#62;<br>Nós de Armazenamento <br>5. &#60;Azure portal URLs&#62;<br>General Cloud Exp <br>6. &#60;pontos de extremidade do key vault&#62; <br>Nós de VM do Azure Resource Manager<br>7. &#60;Endereço de IP pública do cluster&#62;<br>Depuração remota do Service Fabric e Rastreamentos de ETW | <br>1. https/19080<br>2. https/443<br>3. https/443<br>4. https/443<br>5. https/443<br>6. https/443<br>7. TCP/dinâmico | 1. exemplo: test12.eastus.cloudapp.com<br>2. recupera assinaturas e recupera/gerencia recursos do Azure<br>3. recupera Azure Stack assinaturas<br>4. gerencia recursos de armazenamento (por exemplo: mystorageaccount.blob.core.windows.net)<br>5. opção de menu de contexto "abrir no portal" (abre um recurso no portal do Azure)<br>6. cria e usa cofres de chaves para depuração de VM (exemplo: myvault.vault.azure.net) <br><br>7. o aloca dinamicamente o bloco de portas com base no número de nós no cluster e nas portas disponíveis. <br><br>Um bloco de portas tentará obter três vezes o número dos nós com um mínimo de 10 portas.<br><br>Para rastreamentos de Streaming, é feita uma tentativa para obter o bloco de portas de 810. Se qualquer um dos blocos de portas já estiver em uso, será feita uma tentativa de obter o próximo bloco e assim por diante. (O balanceador de carga está vazio, então as portas de 810 provavelmente serão usadas) <br><br>Da mesma forma para depuração, quatro conjuntos de blocos de portas são reservados: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
 | Serviços de Nuvem | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;serviço de nuvem do usuário&#62;.cloudapp.net <br> &#60;VM do usuário&#62;.&#60;região&#62;.azure.com | 1. rdp/3389 <br><br> 2. https/443 <br><br> 3. https/443 <br><br> 4. https/443 <br><br> 5. https/443 <br><br>6. tcp <br>a) 30398 <br>b) 30400 <br>c) 31398 <br>d) 31400 <br>e) 32398 <br>f) 32400 | 1. Área de Trabalho Remota à VM de serviços de nuvem <br><br> 2. componente de conta de armazenamento da configuração de diagnóstico particular <br><br> 3. portal do Azure <br><br> 4. Gerenciador de Servidores-&#42; de armazenamento do Azure é a conta de armazenamento nomeada do cliente  <br><br> 5. links para abrir o portal &#47; baixar o certificado de assinatura &#47; arquivo de configurações de publicação <br><br>6. a) Porta local do conector para depuração remota para serviço de nuvem e VM<br> 6. b) Porta pública do conector para depuração remota para serviço de nuvem e VM <br> 6. c) Porta local do encaminhador para depuração remota para serviço de nuvem e VM <br> 6. d) Porta pública do encaminhador para depuração remota para serviço de nuvem e VM  <br> 6. e) Porta local do carregador de arquivos para depuração remota para serviço de nuvem e VM <br> 6. f) Porta pública do carregador de arquivos para depuração remota para serviço de nuvem e VM |

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3374e0763a0189fb16db35b5b9ec6ec6908d9f4f
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 6bb4656dd04db576877cfdddf67869eb6d1eff35
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91106275"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399948"
 ---
 # <a name="available-tools"></a>Ferramentas disponíveis
 
@@ -29,7 +29,8 @@ A tabela a seguir contém uma lista de todas as ferramentas disponíveis no mome
 | [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Ferramenta para atualizar os pacotes de Chocolatey.                                                                       |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | Ferramenta para restaurar as dependências e as ferramentas de um projeto .NET.                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | Ferramenta para instalar as ferramentas do .NET Core (por exemplo, dotnet-EF)                                                |
-| [**Habilitar-IIS**](tool-enable-iis.md)                                                             | Ferramenta para habilitar recursos do IIS e instalar o pacote de hospedagem mais recente do ASP.NET.                                  |
+| [**enable-iis**](tool-enable-iis.md)                                                             | Ferramenta para habilitar recursos do IIS e instalar o pacote de hospedagem mais recente do ASP.NET.                                  |
+| [**msi-instalar**](tool-msi-install.md)                                                           | Ferramenta para instalar arquivos MSI dado um caminho ou URL.                                                              |
 | [**npm-install**](tool-npm-install.md)                                                           | Ferramenta para instalar pacotes do NPM.                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | Ferramenta para restaurar os pacotes NuGet.                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | Instala o provedor de credenciais Azure Artifacts.                                                           |
@@ -44,7 +45,7 @@ A tabela a seguir contém uma lista de todas as ferramentas disponíveis no mome
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Ferramenta para modificar instalações do VS com base em um `.vsconfig` arquivo.                                                |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | Conjunto de ferramentas habilitar recursos do Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Conjunto de ferramentas desabilitar recursos do Windows.                                                                          |
-| [**WindowsFeature-lista**](tool-windowsfeature-list.md)                                           | Ferramenta para listar o estado de Habilitação/desabilitação de todos os recursos do Windows.                                                                        |
+| [**windowsfeature-list**](tool-windowsfeature-list.md)                                           | Ferramenta para listar o estado de Habilitação/desabilitação de todos os recursos do Windows.                                                                        |
 | [**set-env**](tool-set-env.md)                                                                   | Ferramenta para exibir e definir variáveis de ambiente.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Ferramenta para instalar pacotes via vcpkg.                                                                         |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Ferramenta para instalar e configurar o distribuições do Linux para o subsistema do Windows para Linux.                             |

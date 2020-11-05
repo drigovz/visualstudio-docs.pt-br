@@ -1,5 +1,7 @@
 ---
 title: Como usar trechos XML
+description: Saiba como usar comandos no editor de XML para inserir trechos XML ou encapsular um trecho XML em volta do texto selecionado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c5ef5d5c33c46a9f09eb604d0a2e40cf9a6e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815910"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400109"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: usar trechos XML
 
@@ -26,7 +28,7 @@ Depois que o snippet XML foi adicionado ao editor, todos os campos editáveis no
 Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 > [!NOTE]
-> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado (**Ctrl** + **K**e **Ctrl** + **X**).
+> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado ( **Ctrl** + **K** e **Ctrl** + **X** ).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para inserir snippets do menu de atalho
 
@@ -42,7 +44,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 1. Posicionar o cursor onde você deseja inserir o snippet XML.
 
-2. No menu **Editar** , aponte para **IntelliSense**e, em seguida, selecione **Inserir trecho de código**.
+2. No menu **Editar** , aponte para **IntelliSense** e, em seguida, selecione **Inserir trecho de código**.
 
    Uma lista de snippets disponíveis XML é exibida.
 
@@ -56,7 +58,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 3. Selecione o snippet XML da lista de palavras completo.
 
-4. Pressione **Tab**e **Tab** para invocar o trecho XML.
+4. Pressione **Tab** e **Tab** para invocar o trecho XML.
 
 > [!NOTE]
 > Pode haver casos quando o snippet XML não é chamado. Por exemplo, se você tentar inserir um elemento de `xs:complexType` dentro de um nó de `xs:element` , o editor não gerencia um snippet XML. Quando um elemento de `xs:complexType` é usado dentro de um nó de `xs:element` , não houver nenhum atributo ou subelements necessário, o editor não tem nenhum dados para inserir.
@@ -76,7 +78,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 Os procedimentos a seguir descrevem como acessar o comando **surround with** .
 
 > [!NOTE]
-> O comando **surround with** também está disponível por meio do atalho de teclado (**Ctrl** + **K**, depois **Ctrl** + **S**).
+> O comando **surround with** também está disponível por meio do atalho de teclado ( **Ctrl** + **K** , depois **Ctrl** + **S** ).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar surround with no menu de contexto
 
@@ -92,7 +94,7 @@ Os procedimentos a seguir descrevem como acessar o comando **surround with** .
 
 1. Selecione o texto a ser circundado no editor de XML.
 
-2. No menu **Editar** , aponte para **IntelliSense**e, em seguida, selecione **surround com**.
+2. No menu **Editar** , aponte para **IntelliSense** e, em seguida, selecione **surround com**.
 
    Uma lista de bordadura disponíveis com snippets XML é exibida.
 

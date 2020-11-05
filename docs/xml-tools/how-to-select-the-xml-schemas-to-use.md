@@ -1,5 +1,7 @@
 ---
 title: 'Como: Selecione os esquemas XML para usar'
+description: Saiba como usar o editor de XML para selecionar um esquema XML do cache de esquema que inclui esquemas XML bem conhecidos usados para IntelliSense e validação de documento XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815962"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400148"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: selecionar os esquemas XML a serem usados
 
@@ -21,7 +23,7 @@ O editor de XML fornece um cache de esquema localizado no diretório *%VSINSTALL
 
 Use a propriedade de documento **esquemas** para selecionar um ou mais esquemas de linguagem de definição de esquema XML (XSD). Você pode selecionar esquemas do cache de esquema ou em outro lugar.
 
-Os esquemas que você especificar são salvos em um arquivo de opções de usuário da solução (oculta) (.* Suo*), juntamente com todas as outras propriedades de documento XML. Como resultado, você não precisará reinserir esses valores na próxima vez que abrir a solução.
+Os esquemas que você especificar são salvos em um arquivo de opções de usuário da solução (oculta) (. *Suo* ), juntamente com todas as outras propriedades de documento XML. Como resultado, você não precisará reinserir esses valores na próxima vez que abrir a solução.
 
 > [!NOTE]
 > O editor pode validar usando um esquema embutido ou um esquema referenciado pelo `xsd:schemaLocation` atributo. Para obter mais informações, consulte [validação de documento XML](../xml-tools/xml-document-validation.md).
@@ -40,11 +42,11 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
 
    - Selecione um esquema listado na caixa de diálogo **esquemas XML** , clique na coluna **usar** e, em seguida, selecione **usar este esquema**.
 
-     - ou -
+     - ou -
 
    - Selecione vários esquemas listados na caixa de diálogo **esquemas XML** e clique com o botão direito do mouse e selecione **usar este esquema**.
 
-4. Escolha **OK**.
+4. Selecione **OK**.
 
    A lista de esquemas selecionados é copiada de volta para a propriedade de documento **esquemas** .
 

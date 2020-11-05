@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b1299686c086feda0c51689d72a676ddc4ff00dc
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959762"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400235"
 ---
 # <a name="set-env"></a>set-env
 
@@ -26,7 +26,7 @@ Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as
 
 ## <a name="usage"></a>Uso
 
-| Nome                                         | Type   | Obrigatório | Valor                                                                       |
+| Nome                                         | Tipo   | Obrigatório | Valor                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                       |
 | [**entrada**](#input)                          | Cadeia de caracteres | No       | A entrada para a ferramenta. Consulte a [entrada](#input) abaixo para obter detalhes.               |
@@ -39,9 +39,9 @@ A `set-env` ferramenta usa uma única cadeia de caracteres como uma entrada na `
 | Ação       | Entrada            | Descrição                                                                                                                                                              | Exemplo             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | vazio ou omitido | Listar todas as variáveis de ambiente atuais.                                                                                                                              | `"input":""`        |
-| **listar um** | cadeia de caracteres           | Liste o valor de uma variável de ambiente específica por nome.                                                                                                               | `"input":"foo"`     |
-| **add**      | cadeia de caracteres           | Define o valor de uma variável de ambiente como par chave-valor. Adiciona uma nova variável de ambiente, se ainda não estiver presente, ou definir o valor de uma variável de ambiente existente | `"input":"foo=bar"` |
-| **delete**   | cadeia de caracteres           | Exclui uma variável de ambiente existente passando uma cadeia de caracteres de valor vazia.                                                                                            | `"input":"foo="`    |
+| **listar um** | string           | Liste o valor de uma variável de ambiente específica por nome.                                                                                                               | `"input":"foo"`     |
+| **add**      | string           | Define o valor de uma variável de ambiente como par chave-valor. Adiciona uma nova variável de ambiente, se ainda não estiver presente, ou definir o valor de uma variável de ambiente existente | `"input":"foo=bar"` |
+| **delete**   | string           | Exclui uma variável de ambiente existente passando uma cadeia de caracteres de valor vazia.                                                                                            | `"input":"foo="`    |
 
 Uma `input` cadeia de caracteres pode conter uma expansão de variável de ambiente, por exemplo `%userprofile%` , que é expandida quando o valor é lido.
 
@@ -57,7 +57,7 @@ Se você estiver usando um codespace, poderá definir as variáveis de ambiente 
 
 ```json
 {
-  "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
   "comments": "A sample dot-devinit file demonstrating the set-env tool.",
   "run": [
     {

@@ -4,23 +4,22 @@ description: Construindo cadeias de caracteres de filtro para o designer de tabe
 author: ghogen
 manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 13ca51a6c7b505605409cbb6bb2f17e618c45179
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e9a347be1a3b35e69d2c72d141873c62dcdeb3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911653"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398599"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o designer de tabela
 ## <a name="overview"></a>Visão geral
-Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer**do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](/rest/api/storageservices/).
+Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer** do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](/rest/api/storageservices/).
 
-O WCF Data Services é baseado no [Open Data Protocol](https://www.odata.org/) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro (**$filter**), consulte a [Especificação de convenções de URI do OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+O WCF Data Services é baseado no [Open Data Protocol](https://www.odata.org/) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro ( **$filter** ), consulte a [Especificação de convenções de URI do OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operadores de comparação
 Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade:
@@ -29,13 +28,13 @@ Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade
 | --- | --- | --- |
 | eq |Igual a |City eq 'Redmond' |
 | gt |Maior que |Preço gt 20 |
-| ge |Maior ou igual a |Preço ge 10 |
+| ge |Maior que ou igual a |Preço ge 10 |
 | lt |Menor que |Preço lt 20 |
-| le |Menor ou igual |Preço le 100 |
+| le |Menor ou igual a |Preço le 100 |
 | ne |Diferente de |City ne 'London' |
-| e |And |Preço le 200 e Preço gt 3,5 |
+| e |e |Preço le 200 e Preço gt 3,5 |
 | ou |Ou |Preço le 3,5 ou Preço gt 200 |
-| not |Not |não isAvailable |
+| not |não |não isAvailable |
 
 Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importantes:
 
@@ -46,7 +45,7 @@ Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importa
 ## <a name="filtering-on-string-properties"></a>Filtrando nas propriedades de cadeia de caracteres
 Ao filtrar nas propriedades de cadeia de caracteres, coloque a constante de cadeia de caracteres entre aspas simples.
 
-O exemplo a seguir filtra as propriedades **PartitionKey** e **RowKey**; propriedades adicionais não chave também podem ser adicionadas à cadeia de caracteres de filtro:
+O exemplo a seguir filtra as propriedades **PartitionKey** e **RowKey** ; propriedades adicionais não chave também podem ser adicionadas à cadeia de caracteres de filtro:
 
 ```
 PartitionKey eq 'Partition1' and RowKey eq '00001'
@@ -82,13 +81,13 @@ AmountDue le 100.25
 ## <a name="filtering-on-boolean-properties"></a>Filtrando em Propriedades Boolianas
 Para filtrar um valou o booliano, especifique **true** ou o **false** sem aspas.
 
-O exemplo a seguir retorna todas as entidades em que a propriedade IsActive é definida como **true**:
+O exemplo a seguir retorna todas as entidades em que a propriedade IsActive é definida como **true** :
 
 ```
 IsActive eq true
 ```
 
-Você também pode escrever essa expressão de filtro sem o operador lógico. No exemplo a seguir, o serviço Tabela também retornará todas as entidades nas quais IsActive é **true**:
+Você também pode escrever essa expressão de filtro sem o operador lógico. No exemplo a seguir, o serviço Tabela também retornará todas as entidades nas quais IsActive é **true** :
 
 ```
 IsActive

@@ -3,18 +3,17 @@ title: Adicionar informações de Aplicativo Azure usando os serviços conectado
 description: Adicionar informações de Aplicativo Azure ao seu aplicativo usando o Visual Studio para adicionar um serviço conectado
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643365"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398664"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Adicionar informações de Aplicativo Azure usando os serviços conectados do Visual Studio
 
@@ -25,7 +24,7 @@ Com o Visual Studio, você pode conectar qualquer um dos seguintes para Aplicati
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Funções do Azure
+- Azure Functions
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -43,7 +42,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 1. Abra o projeto no Visual Studio.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
+1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
 
 1. Na guia **Serviços conectados** , selecione o ícone + para **dependências de serviço**.
 

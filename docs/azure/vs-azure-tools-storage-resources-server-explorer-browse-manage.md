@@ -1,7 +1,7 @@
 ---
 title: Procurar e gerenciar recursos de armazenamento
 description: Navegando e gerenciando recursos de armazenamento com o Gerenciador de Servidores
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 059145dbce95ade9f628f26afe4f70e1d6a065e9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036438"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398859"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
@@ -32,9 +32,9 @@ A partir do Azure SDK 2.7, você pode também usar o Cloud Explorer para exibir 
 
 O Gerenciador de Servidores automaticamente mostra uma lista de blobs, filas e tabelas na conta do emulador de armazenamento. A conta do emulador de armazenamento é listada em Gerenciador de Servidores no nó de **armazenamento** como o nó de **desenvolvimento** .
 
-Para ver os recursos da conta do emulador de armazenamento, expanda o nó **Desenvolvimento** . Se o emulador de armazenamento não é iniciado quando você expande o nó **Desenvolvimento**, ele será iniciado automaticamente. Esse processo pode levar vários minutos. Você pode continuar a trabalhar em outras áreas do Visual Studio enquanto o emulador de armazenamento é iniciado.
+Para ver os recursos da conta do emulador de armazenamento, expanda o nó **Desenvolvimento** . Se o emulador de armazenamento não é iniciado quando você expande o nó **Desenvolvimento** , ele será iniciado automaticamente. Esse processo pode levar vários minutos. Você pode continuar a trabalhar em outras áreas do Visual Studio enquanto o emulador de armazenamento é iniciado.
 
-Para exibir recursos em uma conta de armazenamento, expanda o nó da conta de armazenamento no Gerenciador de Servidores, onde se vê os nós **Blobs**, **Filas** e **Tabelas**.
+Para exibir recursos em uma conta de armazenamento, expanda o nó da conta de armazenamento no Gerenciador de Servidores, onde se vê os nós **Blobs** , **Filas** e **Tabelas**.
 
 ## <a name="work-with-blob-resources"></a>Trabalhar com recursos de blob
 
@@ -43,7 +43,7 @@ O nó **Blobs** mostra a lista de contêineres da conta de armazenamento selecio
 ### <a name="to-create-a-blob-container"></a>Para criar um contêiner de blob
 
 1. Abra o menu de atalho no nó de **Blobs** e escolha **Criar Contêiner de Blob**.
-1. Na caixa de diálogo **Criar Contêiner de Blob**, insira o nome do novo contêiner.
+1. Na caixa de diálogo **Criar Contêiner de Blob** , insira o nome do novo contêiner.
 1. Pressione Enter no teclado ou você pode clicar ou tocar fora do campo de nome para salvar o contêiner de blob.
 
    > [!NOTE]
@@ -74,7 +74,7 @@ Você pode executar as seguintes operações com blobs usando os botões no cant
 
 1. Escolha o contêiner de blob no **Cloud Explorer**. Na janela do contêiner, selecione o botão **Carregar blob**.
 
-1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)**.
+1. Na caixa de diálogo **Carregar Novo Arquivo** , selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)**.
 
    ![Carregar um arquivo em uma pasta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Como as pastas nos contêineres de blob são pastas virtuais, você não pode cr
 
 Você pode filtrar os blobs que são exibidos especificando um prefixo comum.
 
-Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** (**!**), serão exibidos apenas os blobs que começam com "hello".
+Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** ( **!** ), serão exibidos apenas os blobs que começam com "hello".
 
 ![Caixa de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -102,7 +102,7 @@ A caixa de texto de filtro diferencia maiúsculas de minúsculas e não dá supo
 
 ### <a name="to-download-blob-data"></a>Para baixar os dados de blob
 
-No **Cloud Explorer**, use qualquer um dos seguintes métodos:
+No **Cloud Explorer** , use qualquer um dos seguintes métodos:
 
 * Abra o menu de atalho para um ou mais blobs e, em seguida, selecione **Abrir**.
 * Escolha o nome do blob e selecione o botão **Abrir**.
@@ -166,12 +166,12 @@ O Armazenamento de Tabelas do Microsoft Azure armazena grandes quantidades de da
 
 ### <a name="to-create-a-table"></a>Para criar uma tabela
 
-1. No **Cloud Explorer**, selecione o nó **tabelas** da conta de armazenamento e, em seguida, selecione **criar tabela**.
+1. No **Cloud Explorer** , selecione o nó **tabelas** da conta de armazenamento e, em seguida, selecione **criar tabela**.
 1. Na caixa de diálogo **Criar Tabela** , insira um nome para a tabela.
 
 ### <a name="to-view-table-data"></a>Para exibir dados da tabela
 
-1. No **Cloud Explorer**, abra o nó **do Azure** e, em seguida, abra o nó de **armazenamento** .
+1. No **Cloud Explorer** , abra o nó **do Azure** e, em seguida, abra o nó de **armazenamento** .
 1. Abra o nó de conta de armazenamento no qual está interessado e abra o nó **Tabelas** para ver uma lista de tabelas para a conta de armazenamento.
 1. Abra o menu de atalho para uma tabela e selecione **Exibir Tabela**.
 
@@ -181,7 +181,7 @@ A tabela é organizada por entidades (mostradas nas linhas) e propriedades (most
 
 ### <a name="to-edit-table-data"></a>Para editar dados da tabela
 
-No **Designer de tabela**, abra o menu de atalho para uma entidade (uma única linha) ou uma propriedade (uma única célula) e, em seguida, selecione **Editar**.
+No **Designer de tabela** , abra o menu de atalho para uma entidade (uma única linha) ou uma propriedade (uma única célula) e, em seguida, selecione **Editar**.
 
 ![Adicionar ou editar uma entidade de tabela](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,11 +194,11 @@ Entidades em uma única tabela não precisam ter o mesmo conjunto de propriedade
 
 ### <a name="to-add-entities"></a>Para adicionar entidades
 
-1. Em **Designer de tabela**, selecione o botão **Adicionar entidade** .
+1. Em **Designer de tabela** , selecione o botão **Adicionar entidade** .
 
     ![Botão Adicionar Entidade](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Na caixa de diálogo **Adicionar Entidade**, insira os valores das propriedades **PartitionKey** e **RowKey**.
+1. Na caixa de diálogo **Adicionar Entidade** , insira os valores das propriedades **PartitionKey** e **RowKey**.
 
     ![Caixa de diálogo Adicionar Entidade](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -235,7 +235,7 @@ Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de 
 ### <a name="to-refresh-table-data"></a>Para atualizar dados de tabela
 
 * Selecione o nó **Tabelas** sob **Armazenamento** e selecione o botão **Atualizar** na barra de ferramentas do Gerenciador de Servidores.
-* Para atualizar a lista de entidades que é exibida no **Designer de tabela**, selecione o botão **executar** em Designer de tabela.
+* Para atualizar a lista de entidades que é exibida no **Designer de tabela** , selecione o botão **executar** em Designer de tabela.
 
 ### <a name="to-refresh-queue-data"></a>Para atualizar os dados da fila
 
@@ -253,7 +253,7 @@ Há duas maneiras de adicionar contas de armazenamento usando o Gerenciador de S
 
 1. No Gerenciador de Servidores, abra o menu de atalho para o nó **Armazenamento** e selecione **Criar Conta de Armazenamento**.
 
-1. Na caixa de diálogo **Criar Conta de Armazenamento**, selecione ou insira as seguintes informações:
+1. Na caixa de diálogo **Criar Conta de Armazenamento** , selecione ou insira as seguintes informações:
 
    * A assinatura do Azure à qual você deseja adicionar a conta de armazenamento.
    * O nome que você deseja usar para a nova conta de armazenamento.
@@ -271,7 +271,7 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 1. No Gerenciador de Servidores, abra o menu de atalho para o nó **Armazenamento** do Azure e selecione **Anexar Armazenamento Externo**.
 
     ![Adicionar uma conta de armazenamento existente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
-1. Na caixa de diálogo **Criar Conta de Armazenamento**, selecione ou insira as seguintes informações:
+1. Na caixa de diálogo **Criar Conta de Armazenamento** , selecione ou insira as seguintes informações:
 
    * O nome da conta de armazenamento existente que você deseja anexar.
    * A chave para a conta de armazenamento selecionado. Esse valor geralmente é fornecido para você quando seleciona uma conta de armazenamento. Se desejar que o Visual Studio se lembre da chave de conta de armazenamento, marque a caixa de seleção **Lembrar chave de conta**.
@@ -279,7 +279,7 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para exibir os pontos de extremidade secundários
 
-Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando ** Propriedades**.
+Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura** , poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando **Propriedades**.
 
 ![Pontos de extremidade de armazenamento secundários](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 

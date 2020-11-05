@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928665"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400096"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo *. RunSettings*
 
@@ -24,7 +24,7 @@ Arquivos de configurações de execução são opcionais. Se você não precisar
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>Criar um arquivo de configurações de execução e personalizá-lo
 
-1. Adicione um arquivo de configurações de execução à sua solução. No **Gerenciador de soluções**, no menu de atalho da sua solução, escolha **Adicionar**  >  **novo item**e selecione **arquivo XML**. Salve o arquivo com um nome como *Test. RunSettings*.
+1. Adicione um arquivo de configurações de execução à sua solução. No **Gerenciador de soluções** , no menu de atalho da sua solução, escolha **Adicionar**  >  **novo item** e selecione **arquivo XML**. Salve o arquivo com um nome como *Test. RunSettings*.
 
    > [!TIP]
    > O nome do arquivo não é importante, desde que você use a extensão *.runsettings*.
@@ -94,7 +94,7 @@ Se a detecção automática de arquivos de configurações de execução estiver
 
 #### <a name="manually-select-the-run-settings-file"></a>Selecionar manualmente o arquivo de configurações de execução
 
-No IDE, selecione **testar** > **definir configurações de execução** > **Selecione arquivo de RunSettings de toda a solução**e, em seguida, selecione o arquivo *. RunSettings* .
+No IDE, selecione **testar** > **definir configurações de execução** > **Selecione arquivo de RunSettings de toda a solução** e, em seguida, selecione o arquivo *. RunSettings* .
 
    - Esse arquivo substitui o arquivo *. RunSettings* na raiz da solução, se houver um, e é aplicado em todos os testes executados.
    - Esta seleção de arquivo só persiste localmente.
@@ -131,7 +131,7 @@ O arquivo aparece no menu teste e você pode selecioná-lo ou desselecioná-lo. 
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>Especificar um arquivo de configurações de execução na linha de comando
 
-Para executar testes da linha de comando, use *vstest.console.exe*e especifique o arquivo de configurações usando o parâmetro **/Settings** .
+Para executar testes da linha de comando, use *vstest.console.exe* e especifique o arquivo de configurações usando o parâmetro **/Settings** .
 
 1. Abra um [prompt de comando do desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) para o Visual Studio.
 
@@ -172,6 +172,7 @@ Cada um dos elementos de configuração é opcional porque tem um valor padrão.
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -181,12 +182,13 @@ O elemento **RunConfiguration** pode incluir os seguintes elementos:
 |-|-|-|
 |**MaxCpuCount**|1|Essa configuração controla o grau de execução de teste paralela ao executar testes de unidade usando os núcleos disponíveis no computador. O mecanismo de execução de testes inicia como um processo distinto em cada núcleo disponível e fornece um contêiner para cada núcleo com testes a serem executados. Um contêiner pode ser um assembly, uma DLL ou um artefato relevante. O contêiner do teste está agendando a unidade. Em cada contêiner, os testes são executados de acordo com a estrutura de teste. Se houver muitos contêineres, à medida que os processos concluírem a execução dos testes em um contêiner, eles passarão para o próximo contêiner disponível.<br /><br />MaxCpuCount pode ser:<br /><br />n, em que 1 <= n <= número de núcleos: até n processos são iniciados<br /><br />n, em que n = qualquer outro valor: o número de processos iniciados pode ser até o número de núcleos disponíveis. Por exemplo, defina n = 0 para permitir que a plataforma decida automaticamente o número ideal de processos a serem iniciados com base no ambiente.|
 |**ResultsDirectory**||O diretório no qual os resultados do teste são colocados. O caminho é relativo ao diretório que contém o arquivo. RunSettings.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` para fontes do .NET Core, `FrameworkUap10` para fontes baseadas no UWP, `Framework45` para o .NET Framework 4.5 e posterior, `Framework40` para o .NET Framework 4.0 e `Framework35` para o .NET Framework 3.5.<br /><br />Essa configuração especifica a versão da estrutura de teste de unidade usada para descobrir e executar os testes. Pode ser diferente da versão da plataforma .NET especificada nas propriedades de compilação do projeto de teste de unidade.<br /><br />Se você omitir o elemento `TargetFrameworkVersion` a partir do arquivo *.runsettings*, a plataforma determinará automaticamente a versão da estrutura com base nos binários compilados.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` para fontes do .NET Core, `FrameworkUap10` para fontes baseadas no UWP, `Framework45` para o .NET Framework 4.5 e posterior, `Framework40` para o .NET Framework 4.0 e `Framework35` para o .NET Framework 3.5.<br /><br />Essa configuração especifica a versão da estrutura de teste de unidade usada para descobrir e executar os testes. Pode ser diferente da versão da plataforma .NET especificada nas propriedades de compilação do projeto de teste de unidade.<br /><br />Se você omitir o elemento `TargetFrameworkVersion` a partir do arquivo *.runsettings* , a plataforma determinará automaticamente a versão da estrutura com base nos binários compilados.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Um ou mais caminhos para o diretório no qual os TestAdapters estão localizados|
 |**TestSessionTimeout**||Permite que os usuários finalizem uma sessão de teste quando ele exceder o tempo limite determinado. Definir um tempo limite assegura que os recursos serão restritos e as sessões de teste serão restritas a um período de tempo. Essa configuração está disponível no **Visual Studio 2017 versão 15.5** e posterior.|
-|**DotnetHostPath**||Especifique um caminho personalizado para o host dotnet que é usado para executar o testhost. Isso é útil quando você está criando seu próprio dotnet, por exemplo, ao criar o repositório dotnet/tempo de execução. A especificação dessa opção irá ignorar a procura de testhost.exe e sempre usará o testhost.dll.
+|**DotnetHostPath**||Especifique um caminho personalizado para o host dotnet que é usado para executar o testhost. Isso é útil quando você está criando seu próprio dotnet, por exemplo, ao criar o repositório dotnet/tempo de execução. A especificação dessa opção irá ignorar a procura de testhost.exe e sempre usará o testhost.dll.|
+|**TreatNoTestsAsError**|false| true ou false <br>Especifique um valor booliano, que define o código de saída quando nenhum teste é descoberto. Se o valor for `true` e nenhum teste for descoberto, um código de saída diferente de zero será retornado. Caso contrário, zero será retornado.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elemento datacoletores (adaptadores de dados de diagnóstico)
 
@@ -231,7 +233,7 @@ Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, use
 
 ### <a name="blame-data-collector"></a>Coletor de dados de culpa
 
-Essa opção pode ajudá-lo a isolar um teste problemático que causa uma falha no host de teste. A execução do coletor cria um arquivo de saída (*Sequence.xml*) em *TestResults*, que captura a ordem de execução do teste antes da falha.
+Essa opção pode ajudá-lo a isolar um teste problemático que causa uma falha no host de teste. A execução do coletor cria um arquivo de saída ( *Sequence.xml* ) em *TestResults* , que captura a ordem de execução do teste antes da falha.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -310,7 +312,7 @@ Essas configurações são específicas para o adaptador de teste que executa os
 |**IgnoreTestImpact**|false|O recurso de impacto de teste prioriza os testes que são afetados por alterações recentes, quando executado em MSTest ou de Microsoft Test Manager (preterido no Visual Studio 2017). Essa configuração desativa o recurso. Para obter mais informações, confira [Quais testes devem ser executados desde um build anterior](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||Especifique um arquivo de configurações do teste para usar com o adaptador MSTest aqui. Você também pode especificar um arquivo de configurações do teste [no menu de configurações](#specify-a-run-settings-file-in-the-ide).<br /><br />Se você especificar esse valor, também será necessário definir o **ForcedlegacyMode** como **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Após a execução do teste ser concluída, o MSTest será fechado. Qualquer processo iniciado como parte do teste também será eliminado. Caso deseje manter o executor de teste ativo, defina o valor como **true**. Por exemplo, você pode usar essa configuração para manter o navegador em execução entre os testes de IU codificados.|
-|**DeploymentEnabled**|true|Se você definir esse valor como **false**, os itens de implantação especificados no método de teste não serão copiados para o diretório de implantação.|
+|**DeploymentEnabled**|true|Se você definir esse valor como **false** , os itens de implantação especificados no método de teste não serão copiados para o diretório de implantação.|
 |**CaptureTraceOutput**|true|Grave no rastreamento de depuração por meio do método de teste usando <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Para reter o diretório de implantação após uma execução de teste, defina esse valor como **false**.|
 |**MapInconclusiveToFailed**|false|Se um teste for concluído com um status inconclusivo, ele será mapeado para o status Ignorado no **Gerenciador de Testes**. Caso deseje que os testes inconclusivos sejam mostrados como com falha, defina esse valor como **true**.|
@@ -345,6 +347,10 @@ Cada elemento do arquivo é opcional, porque tem um valor padrão.
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -458,7 +464,7 @@ O nó **RunConfiguration** deve conter um nó **EnvironmentVariables** . Uma var
 > [!NOTE]
 > Como essas variáveis de ambiente sempre devem ser definidas quando o host de teste é iniciado, os testes sempre devem ser executados em um processo separado. Para isso, o sinalizador */InIsolation* será definido quando houver variáveis de ambiente para que o host de teste sempre seja invocado.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)

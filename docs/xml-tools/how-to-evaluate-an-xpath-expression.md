@@ -1,6 +1,8 @@
 ---
 title: Avaliar uma expressão XPath durante a depuração
 ms.date: 03/05/2019
+description: Saiba como avaliar expressões XPath usando a janela QuickWatch durante a depuração.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64113461cd081eb97e2eb927119f1cd67f8a8d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816248"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399735"
 ---
 # <a name="evaluate-xpath-expressions"></a>Avaliar expressões XPath
 
@@ -34,7 +36,7 @@ O procedimento a seguir usa o *below-Average. xsl* e os arquivos de *books.xml* 
 
 1. Inserir um ponto de interrupção na tag de início de `xsl:if` .
 
-2. Para iniciar a depuração, escolha **XML**  >  **Iniciar Depuração XSLT** na barra de menus (ou pressione **ALT** + **F5**).
+2. Para iniciar a depuração, escolha **XML**  >  **Iniciar Depuração XSLT** na barra de menus (ou pressione **ALT** + **F5** ).
 
    Inicia e as quebras do depurador na marca `xsl:if` .
 

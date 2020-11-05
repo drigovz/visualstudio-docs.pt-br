@@ -4,17 +4,16 @@ description: Saiba mais sobre como publicar projetos de serviço de nuvem do Azu
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8aa31189a04dace088f1bcf8cc7ad88e0b20ac
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313296"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399312"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicação de um serviço de nuvem usando o Visual Studio
 
@@ -43,7 +42,7 @@ Ao publicar seu aplicativo do Azure, você pode executar uma das seguintes taref
 
    a. No menu de atalho do projeto do Azure, escolha **Pacote**.
 
-   b. Na caixa de diálogo **Empacotar o aplicativo do Azure**, escolha a configuração do serviço para o qual você deseja criar um pacote e, depois, escolha a configuração de compilação.
+   b. Na caixa de diálogo **Empacotar o aplicativo do Azure** , escolha a configuração do serviço para o qual você deseja criar um pacote e, depois, escolha a configuração de compilação.
 
    c. (Opcional) Para ativar a Área de Trabalho Remota para o serviço de nuvem depois de publicá-lo, selecione **Habilitar Área de Trabalho Remota para todas as Funções** e, em seguida, **Configurações** para configurar as credenciais da Área de Trabalho Remota. Para saber mais, veja [Habilitar Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
@@ -71,7 +70,7 @@ Se a infraestrutura de back-end do aplicativo for estável, mas as funções Web
 
 - **Apenas funções web podem ser atualizadas:** funções de trabalho não podem ser atualizadas. Além disso, não é possível atualizar o `RoleEntryPoint` em `web role.cs`.
 
-- **O só pode dar suporte a uma única instância de uma função Web**: você não pode ter várias instâncias de nenhuma função Web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
+- **O só pode dar suporte a uma única instância de uma função Web** : você não pode ter várias instâncias de nenhuma função Web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
 
 - **Habilitar conexões de área de trabalho remota:** esse requisito permite que a Implantação da Web use o usuário e a senha para se conectar à máquina virtual para implantar as alterações no servidor que executa o IIS (Serviços de Informações da Internet). Além disso, talvez seja necessário conectar-se à máquina virtual para adicionar um certificado confiável ao IIS nessa máquina virtual. (Esse certificado garante que a conexão remota ao IIS usada pela Implantação da Web é segura).
 
@@ -79,7 +78,7 @@ O seguinte procedimento assume que você está usando o assistente **Publicar o 
 
 ### <a name="enable-web-deploy-when-you-publish-your-application"></a>Habilitar a Implantação da Web ao publicar seu aplicativo
 
-1. Para habilitar a opção **Habilitar Implantação da Web para todas as funções web**, primeiro, é necessário configurar conexões de área de trabalho remota. Escolha **Habilitar Área de Trabalho Remota** para todas as funções e, em seguida, forneça as credenciais que serão usadas na conexão remota na caixa **Configuração da Área de Trabalho Remota** que é mostrada. Consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
+1. Para habilitar a opção **Habilitar Implantação da Web para todas as funções web** , primeiro, é necessário configurar conexões de área de trabalho remota. Escolha **Habilitar Área de Trabalho Remota** para todas as funções e, em seguida, forneça as credenciais que serão usadas na conexão remota na caixa **Configuração da Área de Trabalho Remota** que é mostrada. Consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio).
 
 1. Para habilitar a Implantação da Web para todas as funções Web em seu aplicativo, selecione **Habilitar a Implantação da Web para todas as funções Web**.
 
@@ -96,13 +95,13 @@ O seguinte procedimento assume que você está usando o assistente **Publicar o 
 
 1. Para usar a Implantação Web, faça alterações de código no projeto para quaisquer das suas funções web no Visual Studio que você quiser publicar, e em seguida clique com o botão direito do mouse neste nó do projeto na sua solução e aponte para **Publicar**. A caixa de diálogo **Publicar Web** é exibida.
 
-1. (Opcional) Se você adicionou um certificado SSL confiável a ser usado em conexões remotas para o IIS, você pode desmarcar a caixa de seleção **Permitir certificado não confiável**. Para saber mais sobre como adicionar um certificado para proteger a Implantação da Web, veja a seção **Para tornar a Implantação da Web segura**, mais adiante neste artigo.
+1. (Opcional) Se você adicionou um certificado SSL confiável a ser usado em conexões remotas para o IIS, você pode desmarcar a caixa de seleção **Permitir certificado não confiável**. Para saber mais sobre como adicionar um certificado para proteger a Implantação da Web, veja a seção **Para tornar a Implantação da Web segura** , mais adiante neste artigo.
 
 1. Para usar a Implantação da Web, o mecanismo de publicação precisa do nome de usuário e da senha que você configurou para a conexão de Área de Trabalho Remota quando publicou o pacote pela primeira vez.
 
-   a. Em **Nome de usuário**, digite o nome de usuário.
+   a. Em **Nome de usuário** , digite o nome de usuário.
 
-   b. Em **Senha**, digite a senha.
+   b. Em **Senha** , digite a senha.
 
    c. (Opcional) Se você quiser salvar esta senha nesse perfil, escolha **Salvar senha**.
 
@@ -120,7 +119,7 @@ O seguinte procedimento assume que você está usando o assistente **Publicar o 
 
    a. Para se conectar à máquina virtual que está executando a função web, selecione a instância da função web em **Cloud Explorer** ou **Gerenciador de Servidores** e escolha o comando **Conectar-se usando a Área de Trabalho Remota**. Para obter etapas detalhadas de como se conectar à máquina virtual, consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). O navegador solicitará que você baixe um arquivo `.rdp`.
 
-   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar**e, em seguida, escolha HTTPS na lista suspensa **tipo** . Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Associações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar** e, em seguida, escolha HTTPS na lista suspensa **tipo** . Na lista **Certificado SSL** , escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Se você adicionar um certificado SSL confiável, o triângulo amarelo de aviso não aparecerá mais no **Assistente de Publicação**.
@@ -131,7 +130,7 @@ Talvez seja necessário incluir arquivos específicos em seu pacote de serviço 
 
 1. Para adicionar um assembly a um pacote de serviço, use as seguintes etapas:
 
-   a. No **Gerenciador de Soluções**, abra o nó do projeto que está sem o assembly referenciado.
+   a. No **Gerenciador de Soluções** , abra o nó do projeto que está sem o assembly referenciado.
    b. Para adicionar um assembly ao projeto, abra o menu de atalho para a pasta **Referências** e escolha **Adicionar Referência**. A caixa de diálogo Adicionar Referência é exibida.
    c. Escolha a referência que você deseja adicionar e, em seguida, escolha o botão **OK**. A referência é adicionada à lista na pasta **Referências**.
    d. Abra o menu de atalho para o assembly que você adicionou e escolha **Propriedades**. A janela **Propriedades** é exibida.
@@ -147,11 +146,11 @@ Talvez seja necessário incluir arquivos específicos em seu pacote de serviço 
 
 1. Abra o menu de atalho para o assembly que você adicionou e escolha **Propriedades**. A janela Propriedades é exibida.
 
-1. Para incluir esse assembly no pacote de serviço, na lista **Local da Cópia**, escolha **Verdadeiro**.
+1. Para incluir esse assembly no pacote de serviço, na lista **Local da Cópia** , escolha **Verdadeiro**.
 
-1. Para incluir arquivos no pacote de serviço que foram adicionados a seu projeto de função web, abra o menu de atalho para o arquivo, e em seguida escolha **Propriedades**. Da janela **Propriedades**, escolha **Conteúdo** da caixa de listagem **Compilar ação**.
+1. Para incluir arquivos no pacote de serviço que foram adicionados a seu projeto de função web, abra o menu de atalho para o arquivo, e em seguida escolha **Propriedades**. Da janela **Propriedades** , escolha **Conteúdo** da caixa de listagem **Compilar ação**.
 
-1. Para incluir arquivos no pacote de serviço que foram adicionados a seu projeto de função de trabalho, abra o menu de atalho para o arquivo e escolha **Propriedades**. Da janela **Propriedades**, escolha **Copiar se for mais novo** da caixa de listagem **Copiar para o diretório de saída**.
+1. Para incluir arquivos no pacote de serviço que foram adicionados a seu projeto de função de trabalho, abra o menu de atalho para o arquivo e escolha **Propriedades**. Da janela **Propriedades** , escolha **Copiar se for mais novo** da caixa de listagem **Copiar para o diretório de saída**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

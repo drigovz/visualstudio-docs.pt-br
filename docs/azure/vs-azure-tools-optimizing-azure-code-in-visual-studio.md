@@ -5,16 +5,15 @@ author: ghogen
 manager: jillfra
 ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508451"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399773"
 ---
 # <a name="optimizing-your-azure-code"></a>Otimizando o código do Azure
 Quando você está programando aplicativos que usam o Microsoft Azure, existem algumas práticas de codificação que você deve seguir para ajudar a evitar problemas de escalabilidade, comportamento e desempenho do aplicativo em um ambiente de nuvem. A Microsoft fornece uma ferramenta de análise de código do Azure que reconhece e identifica vários desses problemas comumente encontrados e ajuda a resolvê-los. Você pode baixar a ferramenta no Visual Studio, via NuGet.
@@ -120,7 +119,7 @@ Para evitar o início de um "loop de recebimento" a chamada ao método **OnMessa
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Ao chamar **OnMessage**, o cliente inicia uma bomba de mensagens internas que monitora constantemente a fila ou assinatura. Essa bomba de mensagens contém um loop infinito que emite uma chamada para receber mensagens. Se a chamada alcançar o tempo limite, ele emitirá uma nova chamada. O intervalo de tempo limite é determinado pelo valor da propriedade [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) do [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que está sendo usado.
+Ao chamar **OnMessage** , o cliente inicia uma bomba de mensagens internas que monitora constantemente a fila ou assinatura. Essa bomba de mensagens contém um loop infinito que emite uma chamada para receber mensagens. Se a chamada alcançar o tempo limite, ele emitirá uma nova chamada. O intervalo de tempo limite é determinado pelo valor da propriedade [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) do [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) que está sendo usado.
 
 A vantagem de usar o **OnMessage** em comparação com **Receive** é que os usuários não precisarão manualmente pesquisar mensagens, manipular exceções, processar várias mensagens em paralelo e concluir mensagens.
 
@@ -414,7 +413,7 @@ A partir do WAD 1.3 (incluído com o SDK 2.5 do Azure), não é possível usar o
 Use o designer de configuração de diagnóstico para mover as configurações de diagnóstico para o arquivo de configuração de diagnóstico (diagnostics.wadcfg ou diagnostics.wadcfgx para SDK 2.5 e posterior). Também é recomendável que você instale [SDK 2.5 do Azure](https://social.msdn.microsoft.com/Forums/en-US/home) e usar o recurso de diagnóstico mais recente.
 
 1. No menu de atalho da função que você deseja configurar, escolha Propriedades e, em seguida, escolha a guia Configuração.
-2. Na seção **Diagnóstico**, verifique se a caixa de seleção **Habilitar Diagnóstico** está marcada.
+2. Na seção **Diagnóstico** , verifique se a caixa de seleção **Habilitar Diagnóstico** está marcada.
 3. Escolha o botão **Configurar** .
 
    ![Acessando a opção Habilitar Diagnóstico](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)

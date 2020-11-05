@@ -1,5 +1,7 @@
 ---
 title: 'Como: Gerencia um snippet de um esquema XML'
+description: Saiba como usar o editor de XML para gerar um trecho XML a partir de um esquema XSD (linguagem de definição de esquema XML).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817171"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399463"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como gerar um trecho XML a partir de um esquema XML
 
@@ -50,13 +52,13 @@ As etapas nesta seção mostram como usar o recurso de trecho XML gerado pelo es
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
-1. No menu **arquivo** , aponte para **novo**e clique em **arquivo**.
+1. No menu **arquivo** , aponte para **novo** e clique em **arquivo**.
 
 2. Selecione **arquivo XML** no painel **modelos** e clique em **abrir**.
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela Propriedades do documento, clique no botão procurar (**...**) no campo **esquemas** .
+3. Na janela Propriedades do documento, clique no botão procurar ( **...** ) no campo **esquemas** .
 
      A caixa de diálogo **esquemas XSD** é exibida.
 

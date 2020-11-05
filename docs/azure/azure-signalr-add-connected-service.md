@@ -3,18 +3,17 @@ title: Adicionar o Azure Signalr usando serviços conectados | Microsoft Docs
 description: Adicionar o Azure Signalr ao seu aplicativo usando o Visual Studio para adicionar um serviço conectado
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c61d91ed3824d3ed9c33f579c321e471edb5a4e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643352"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398976"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Adicionar o Azure Signalr usando os serviços conectados do Visual Studio
 
@@ -25,7 +24,7 @@ Com o Visual Studio, você pode conectar qualquer um dos seguintes itens ao serv
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Funções do Azure
+- Azure Functions
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -43,7 +42,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 1. Abra o projeto no Visual Studio.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
+1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
 
 1. Na guia **Serviços conectados** , selecione o ícone + para **dependências de serviço**.
 

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 233393114883c2a9833aa7ec82f0d78f0ef33bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88251274"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400318"
 ---
 # <a name="convert-typeof-to-nameof"></a>Converter `typeof` em `nameof`
 
@@ -33,15 +33,16 @@ Esta refatoração aplica-se a:
 ## <a name="how-to"></a>Como fazer
 
 1. Coloque o cursor dentro da `typeof(<QualifiedType>).Name` instância do C# ou `GetType(<QualifiedType>).Name` no Visual Basic.
+
 2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
+
 3. Selecione uma das seguintes opções:
 
-- C#
-  <br>Selecione **converter ' typeof ' para ' nameof '** 
-   ![ converter typeof em nameof](media/convert-type-of.PNG)
+    - C#
+      <br>Selecione **converter ' typeof ' para ' nameof '** : ![ Convert typeof em nameof](media/convert-type-of.PNG)
 
-- Visual Basic
-  <br>Selecione **converter ' GetType ' para ' NameOf '** ![ converter typeof em NameOf](media/convert-get-type.PNG)
+    - Visual Basic
+      <br>Selecione **converter ' GetType ' em ' NameOf '** : ![ Convert typeof em NameOf](media/convert-get-type.PNG)
 
 ## <a name="see-also"></a>Confira também
 
