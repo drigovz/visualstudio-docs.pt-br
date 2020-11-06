@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927894"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414367"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compilar código TypeScript (Node.js)
 
@@ -35,11 +35,11 @@ O [pacote NPM do typescript](https://www.npmjs.com/package/typescript) adiciona 
 
    Em Gerenciador de Soluções (painel direito), abra o *package.jsna* raiz do projeto. Os pacotes listados correspondem aos pacotes sob o nó NPM no Gerenciador de Soluções. Para obter mais informações, consulte [Manage NPM Packages](../javascript/npm-package-management.md).
 
-   Para um projeto Node.js, você pode instalar o pacote NPM TypeScript usando a linha de comando ou o IDE. Para instalar usando o IDE, clique com o botão direito do mouse no nó NPM em Gerenciador de Soluções, escolha **instalar novo pacote NPM**, pesquise por **TypeScript**e instale o pacote.
+   Para um projeto Node.js, você pode instalar o pacote NPM TypeScript usando a linha de comando ou o IDE. Para instalar usando o IDE, clique com o botão direito do mouse no nó NPM em Gerenciador de Soluções, escolha **instalar novo pacote NPM** , pesquise por **TypeScript** e instale o pacote.
 
    Verifique a opção **NPM** na janela **saída** para ver o progresso da instalação do pacote. O pacote instalado aparece no nó **NPM** no Gerenciador de soluções.
 
-1. Se o seu projeto ainda não o incluir, adicione um arquivo *. tsconfig* à raiz do projeto. Para adicionar o arquivo, clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript**e clique em **Adicionar**.
+1. Se o seu projeto ainda não o incluir, adicione um arquivo *. tsconfig* à raiz do projeto. Para adicionar o arquivo, clique com o botão direito do mouse no nó do projeto e escolha **adicionar > novo item**. Escolha o **arquivo de configuração JSON do TypeScript** e clique em **Adicionar**.
 
    O Visual Studio adiciona o *tsconfig.jsno* arquivo à raiz do projeto. Você pode usar esse arquivo para [Configurar opções](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) para o compilador TypeScript.
 
@@ -72,14 +72,14 @@ O [pacote NPM do typescript](https://www.npmjs.com/package/typescript) adiciona 
 
 ## <a name="build-the-application"></a>Compilar o aplicativo
 
-1. Adicione arquivos TypeScript (*. TS*) ou typescript JSX (*. TSX*) ao seu projeto e, em seguida, adicione o código TypeScript. Para obter um exemplo simples de TypeScript, use o seguinte:
+1. Adicione arquivos TypeScript ( *. TS* ) ou typescript JSX ( *. TSX* ) ao seu projeto e, em seguida, adicione o código TypeScript. Para obter um exemplo simples de TypeScript, use o seguinte:
 
    ```typescript
    let message: string = 'Hello World';
    console.log(message);
    ```
 
-1. No *package.jsno*, adicione suporte para comandos de compilação e limpeza do Visual Studio usando os scripts a seguir.
+1. No *package.jsno* , adicione suporte para comandos de compilação e limpeza do Visual Studio usando os scripts a seguir.
 
    ```json
    "scripts": {
@@ -113,9 +113,9 @@ O [pacote NPM do typescript](https://www.npmjs.com/package/typescript) adiciona 
 
    Os arquivos de mapa de origem são necessários para [depuração](../javascript/debug-nodejs.md).
 
-### <a name="run-the-application"></a>Execute o aplicativo
+### <a name="run-the-application"></a>Executar o aplicativo
 
-Para obter instruções para executar o aplicativo depois de compilá-lo, consulte [criar seu primeiro Node.js aplicativo](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
+Para obter instruções para executar o aplicativo depois de compilá-lo, consulte [criar seu primeiro Node.js aplicativo](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application).
 
 ## <a name="automate-build-tasks"></a>Automatizar tarefas de compilação
 

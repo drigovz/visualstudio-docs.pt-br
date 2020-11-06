@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583678"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413899"
 ---
 # <a name="author-vsct-files"></a>Arquivos Author. vsct
 Este documento mostra como criar um arquivo *. vsct* para adicionar itens de menu, barras de ferramentas e outros elementos de interface do usuário ao IDE (ambiente de desenvolvimento integrado) do Visual Studio. Use estas etapas quando você adicionar elementos de interface do usuário a um pacote do Visual Studio (VSPackage) que ainda não tem um arquivo *. vsct* .
@@ -51,9 +51,9 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
 
 1. Na parte superior do `CommandTable` elemento, adicione um `Extern` elemento para cada arquivo externo a ser referenciado e defina o `href` atributo como o nome do arquivo. Você pode fazer referência aos seguintes arquivos de cabeçalho para acessar os recursos do Visual Studio:
 
-   - *Stdidcmd. h*: define as IDs para todos os comandos expostos pelo Visual Studio.
+   - *Stdidcmd. h* : define as IDs para todos os comandos expostos pelo Visual Studio.
 
-   - *Vsshlids. h*: contém IDs de comando para menus do Visual Studio.
+   - *Vsshlids. h* : contém IDs de comando para menus do Visual Studio.
 
 2. Se o pacote chamar qualquer comando que seja definido pelo Visual Studio ou por outros pacotes, adicione um `UsedCommands` elemento após o `Commands` elemento. Preencha esse elemento com um elemento [UsedCommand](../../extensibility/usedcommand-element.md) para cada comando que você chamar que não faz parte do seu pacote. Defina os `guid` `id` atributos e dos `UsedCommand` elementos para os valores de GUID e ID dos comandos a serem chamados.
 
@@ -64,7 +64,7 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
 
 #### <a name="to-declare-ui-elements"></a>Para declarar elementos da interface do usuário
 
-1. No `Symbols` elemento, adicione três elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tem um `name` atributo e um `value` atributo. Defina o `name` atributo para que ele reflita a finalidade do elemento. O `value` atributo usa um GUID. (Para gerar um GUID, no menu **ferramentas** , selecione **Criar GUID**e, em seguida, selecione **formato do registro**.)
+1. No `Symbols` elemento, adicione três elementos [GuidSymbol](../../extensibility/guidsymbol-element.md) . Cada `GuidSymbol` elemento tem um `name` atributo e um `value` atributo. Defina o `name` atributo para que ele reflita a finalidade do elemento. O `value` atributo usa um GUID. (Para gerar um GUID, no menu **ferramentas** , selecione **Criar GUID** e, em seguida, selecione **formato do registro**.)
 
      O primeiro `GuidSymbol` elemento representa seu pacote e normalmente não tem filhos. O segundo `GuidSymbol` elemento representa o conjunto de comandos e conterá todos os símbolos que definem seus menus, grupos e comandos. O terceiro `GuidSymbol` elemento representa o repositório de imagens e contém símbolos para todos os ícones de seus comandos. Se você não tiver comandos que usam ícones, poderá omitir o terceiro `GuidSymbol` elemento.
 
@@ -108,7 +108,7 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
        > [!NOTE]
        > Os botões da barra de ferramentas devem ter ícones.
 
-   Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 4. Se qualquer um dos seus comandos exigir ícones, adicione um elemento [bitmaps](../../extensibility/bitmaps-element.md) ao `Commands` elemento. Em seguida, para cada ícone, adicione um elemento [bitmap](../../extensibility/bitmap-element.md) ao `Bitmaps` elemento. É aqui que você especifica o local do recurso de bitmap. Para obter mais informações, consulte [Adicionar ícones a comandos de menu](../../extensibility/adding-icons-to-menu-commands.md).
 

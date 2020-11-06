@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b117aace6b9b74455b09d4d0c61a82a9c84bf19
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583613"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413900"
 ---
 # <a name="vstextbuffer-object"></a>Objeto VSTextBuffer
 O objeto buffer de texto representa um fluxo de texto Unicode, que geralmente está associado a um arquivo. Um <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto pode ser usado fora do contexto do editor principal, como no, um assistente.
@@ -41,7 +41,7 @@ O objeto buffer de texto representa um fluxo de texto Unicode, que geralmente es
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Dá suporte a pontos de conexão para eventos.|
 
 ## <a name="remarks"></a>Comentários
- O `VSTextBuffer` geralmente é encontrado por uma `QueryInterface` chamada em `IVsTextBuffer` . Para obter mais informações, consulte [buffer de texto](../vs-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
+ O `VSTextBuffer` geralmente é encontrado por uma `QueryInterface` chamada em `IVsTextBuffer` . Para obter mais informações, consulte [buffer de texto](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Confira também
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

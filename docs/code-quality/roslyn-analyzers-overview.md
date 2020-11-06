@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 2fd91266f4a829193296b05c9a28dc96a9a88d31
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860491"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414055"
 ---
 # <a name="overview-of-source-code-analysis"></a>Visão geral da análise de código-fonte
 
@@ -25,7 +25,7 @@ Os analisadores de .NET Compiler Platform (Roslyn) inspecionam seu código em C#
 
 Os analisadores podem ser divididos nos seguintes grupos:
 
-- Os analisadores de [estilo de código](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para saber mais, clique [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Os analisadores de [estilo de código](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) são integrados ao Visual Studio. A ID de diagnóstico ou o código para esses analisadores é do formato IDExxxx, por exemplo, IDE0067. Você pode configurar as preferências na [página Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partir do .NET 5,0, os analisadores de estilo de código estão incluídos no SDK do .NET e podem ser estritamente impostos como avisos ou erros de compilação. Para saber mais, clique [aqui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Analisadores de [qualidade de código](/dotnet/fundamentals/code-analysis/quality-rules/index) agora estão incluídos no SDK do .NET 5 e habilitados por padrão. A ID de diagnóstico ou o código para esses analisadores é do formato CAxxxx, por exemplo, CA1822. Para obter mais informações, consulte [visão geral da análise de qualidade de código do .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -37,7 +37,7 @@ Cada analisador tem um dos seguintes níveis de severidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Info | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
@@ -52,13 +52,13 @@ As violações do analisador relatadas na lista de erros correspondem à [config
 
 ![Rabiscos no editor de códigos do Visual Studio](media/diagnostics-severity-colors.png)
 
-Muitas regras de analisador ou *diagnósticos*têm uma ou mais *correções de código* associadas que você pode aplicar para corrigir a violação de regra. As correções de código são mostradas no menu do ícone de lâmpada, juntamente com outros tipos de [Ações rápidas](../ide/quick-actions.md). Para saber mais sobre essas correções de código, confira [Ações rápidas comuns](../ide/quick-actions.md).
+Muitas regras de analisador ou *diagnósticos* têm uma ou mais *correções de código* associadas que você pode aplicar para corrigir a violação de regra. As correções de código são mostradas no menu do ícone de lâmpada, juntamente com outros tipos de [Ações rápidas](../ide/quick-actions.md). Para saber mais sobre essas correções de código, confira [Ações rápidas comuns](../ide/quick-actions.md).
 
 ![Violação do analisador e correção de código de Ação Rápida](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ## <a name="configure-analyzer-severity-levels"></a>Configurar níveis de severidade do analisador
 
-Você pode configurar a severidade de regras do analisador ou *diagnósticos*, em um [arquivo EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou no [menu de lâmpada](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
+Você pode configurar a severidade de regras do analisador ou *diagnósticos* , em um [arquivo EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou no [menu de lâmpada](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Os analisadores também podem ser configurados para inspecionar o código no momento da compilação e ao vivo conforme você digita. Você pode configurar o escopo da análise de código ao vivo para ser executado somente para o documento atual, para todos os documentos abertos ou para a solução inteira. Consulte [como: configurar o escopo da análise de código ao vivo](./configure-live-code-analysis-scope-managed-code.md).
 

@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155c703ebbeb2705ac7abbba5cd2c095f520c698
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 321bd82eb83ef37dc3981e38cc23d1d4b5685802
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584549"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413938"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Estenda os serviços de editor e linguagem
 Você pode adicionar recursos de serviço de linguagem (como IntelliSense) ao seu próprio editor e estender a maioria dos recursos do editor de código do Visual Studio.  Para obter uma lista completa do que você pode estender, consulte [serviço de linguagem e pontos de extensão do editor](../extensibility/language-service-and-editor-extension-points.md).
@@ -26,7 +26,7 @@ Você pode adicionar recursos de serviço de linguagem (como IntelliSense) ao se
 
  O SDK do Visual Studio fornece adaptadores conhecidos como *shims* para dar suporte a VSPackages que foram escritos para versões anteriores. No entanto, se você tiver um VSPackage existente, recomendamos atualizá-lo para a nova tecnologia para obter melhor desempenho e confiabilidade.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ Você pode adicionar recursos de serviço de linguagem (como IntelliSense) ao se
 |[Pontos de extensão do serviço de linguagem e do editor](../extensibility/language-service-and-editor-extension-points.md)|Lista os pontos de extensão do editor. Os pontos de extensão representam os recursos do editor que podem ser estendidos.|
 |[Walkthrough: criar uma exibição Adornment, comandos e configurações (guias de coluna)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Percorre e explica como criar um Adornment de exibição que desenha linhas de guia de coluna para ajudá-lo a manter o código para uma determinada largura de exibição.  Também mostra as configurações de leitura e gravação, bem como a declaração e a implementação de comandos que você pode invocar na janela de comando.|
 |[Importações do editor](../extensibility/editor-imports.md)|Lista os serviços que uma extensão pode importar.|
-|[Adaptar o código herdado ao editor](../vs-2015/extensibility/adapting-legacy-code-to-the-editor.md?view=vs-2015&preserve-view=true)|Explica diferentes maneiras de adaptar o código herdado (pré-Visual Studio 2010) para estender o editor.|
+|[Adaptar o código herdado ao editor](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|Explica diferentes maneiras de adaptar o código herdado (pré-Visual Studio 2010) para estender o editor.|
 |[Migrar um serviço de linguagem herdado](../extensibility/internals/migrating-a-legacy-language-service.md)|Explica como migrar um serviço de linguagem baseado em VSPackage.|
 |[Walkthrough: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Mostra como vincular um tipo de conteúdo a uma extensão de nome de arquivo.|
 |[Walkthrough: criar um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md)|Mostra como adicionar um ícone a uma margem.|

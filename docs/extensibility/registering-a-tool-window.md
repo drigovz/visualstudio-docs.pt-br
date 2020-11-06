@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584710"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414328"
 ---
 # <a name="register-a-tool-window"></a>Registrar uma janela de ferramentas
 Você pode registrar suas janelas de ferramentas usando o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e o  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra as `PersistedWindowPane` janelas de `DynamicWindowPane` ferramentas e com o Visual Studio. A janela de ferramentas persistentes é encaixada e tabulada com **Gerenciador de soluções**, e a janela dinâmica recebe uma posição inicial e um tamanho padrão. A janela dinâmica torna-se transitória, o que indica que ela não é criada na inicialização. Isso grava um `DontForceCreate` valor na `ToolWindows` chave no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramentas](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true).
+ No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra as `PersistedWindowPane` janelas de `DynamicWindowPane` ferramentas e com o Visual Studio. A janela de ferramentas persistentes é encaixada e tabulada com **Gerenciador de soluções** , e a janela dinâmica recebe uma posição inicial e um tamanho padrão. A janela dinâmica torna-se transitória, o que indica que ela não é criada na inicialização. Isso grava um `DontForceCreate` valor na `ToolWindows` chave no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramentas](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583691"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414094"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Adicionar um comando à barra de ferramentas Gerenciador de Soluções
 Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerenciador de soluções** .
@@ -27,7 +27,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
  Para obter mais informações sobre menus, comandos de barra de ferramentas e arquivos *. vsct* , consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Use arquivos de tabela de comando XML (*. vsct*) em vez de arquivos de configuração de tabela de comando (*. CTC*) para definir como os menus e comandos aparecem em seu VSPackages. Para obter mais informações, consulte [tabela de comandos do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Use arquivos de tabela de comando XML ( *. vsct* ) em vez de arquivos de configuração de tabela de comando ( *. CTC* ) para definir como os menus e comandos aparecem em seu VSPackages. Para obter mais informações, consulte [tabela de comandos do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -80,7 +80,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para exibir um botão quando um ou mais projetos estão abertos
 
-1. Na `<Buttons>` seção de *ToolbarButtonPackage. vsct*, adicione dois sinalizadores de comando ao elemento existente `<Button>` , entre as `<Strings>` marcas e `<Icons>` .
+1. Na `<Buttons>` seção de *ToolbarButtonPackage. vsct* , adicione dois sinalizadores de comando ao elemento existente `<Button>` , entre as `<Strings>` marcas e `<Icons>` .
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -114,7 +114,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
 
 5. No menu **Arquivo** , clique em **Fechar Solução**. O botão desaparece da barra de ferramentas.
 
-   A visibilidade do botão é controlada pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] até que o VSPackage seja carregado. Depois que o VSPackage é carregado, a visibilidade do botão é controlada pelo VSPackage.  Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   A visibilidade do botão é controlada pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] até que o VSPackage seja carregado. Depois que o VSPackage é carregado, a visibilidade do botão é controlada pelo VSPackage.  Para obter mais informações, consulte [MenuCommands vs. OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
 ## <a name="see-also"></a>Confira também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

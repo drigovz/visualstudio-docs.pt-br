@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584263"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414263"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilo para Visual Studio
 
@@ -81,7 +81,7 @@ Antes de usar cores compartilhadas comuns, verifique se você entendeu como usá
 
 Consulte: [expondo cores para usuários finais](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-Às vezes, você desejará permitir que o usuário final Personalize sua interface do usuário, como quando você está criando um editor de código ou uma superfície de design. Os componentes da interface do usuário personalizáveis são encontrados na seção **fontes e cores** da caixa de diálogo ** &gt; Opções de ferramentas** , em que os usuários podem optar por alterar a cor do primeiro plano, a cor do plano de fundo ou ambos.
+Às vezes, você desejará permitir que o usuário final Personalize sua interface do usuário, como quando você está criando um editor de código ou uma superfície de design. Os componentes da interface do usuário personalizáveis são encontrados na seção **fontes e cores** da caixa de diálogo **&gt; Opções de ferramentas** , em que os usuários podem optar por alterar a cor do primeiro plano, a cor do plano de fundo ou ambos.
 
 ![&gt;Caixa de diálogo opções de ferramentas](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />&gt;Caixa de diálogo opções de ferramentas
 
@@ -334,13 +334,13 @@ Muitos elementos comuns da interface do usuário já têm Alto Contraste cores d
 
 ### <a name="overview"></a>Visão geral
 
-Às vezes, você desejará permitir que o usuário final Personalize sua interface do usuário, como quando você está criando um editor de código ou uma superfície de design. A maneira mais comum de fazer isso é usando a caixa de diálogo ** &gt; Opções de ferramentas** . A menos que você tenha uma interface do usuário altamente especializada que exija controles especiais, a maneira mais fácil de apresentar a personalização é por meio da página **fontes e cores** na seção **ambiente** da caixa de diálogo. Para cada elemento que você expõe para personalização, o usuário pode optar por alterar a cor do primeiro plano, a cor do plano de fundo ou ambos.
+Às vezes, você desejará permitir que o usuário final Personalize sua interface do usuário, como quando você está criando um editor de código ou uma superfície de design. A maneira mais comum de fazer isso é usando a caixa de diálogo **&gt; Opções de ferramentas** . A menos que você tenha uma interface do usuário altamente especializada que exija controles especiais, a maneira mais fácil de apresentar a personalização é por meio da página **fontes e cores** na seção **ambiente** da caixa de diálogo. Para cada elemento que você expõe para personalização, o usuário pode optar por alterar a cor do primeiro plano, a cor do plano de fundo ou ambos.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Criando um VSPackage para suas cores personalizáveis
 
 Um VSPackage pode controlar as fontes e cores por meio de categorias personalizadas e exibir itens na página de propriedades fontes e cores. Ao usar esse mecanismo, o VSPackages deve implementar a interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e suas interfaces associadas.
 
-Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Para implementar categorias personalizadas ou itens de exibição, um VSPackage deve:
 
@@ -423,7 +423,7 @@ Para fazer isso, um VSPackage deve:
 
   **OR**
 
-- **sondar o IDE em busca de alterações**. Isso pode ser feito por meio da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada pelo sistema. Embora principalmente o suporte à persistência, o método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) pode obter informações de fonte e cor para itens de exibição. Para obter mais informações sobre as configurações de fonte e cor, consulte o artigo do MSDN [acessando configurações de fonte e cor armazenadas](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- **sondar o IDE em busca de alterações**. Isso pode ser feito por meio da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementada pelo sistema. Embora principalmente o suporte à persistência, o método [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) pode obter informações de fonte e cor para itens de exibição. Para obter mais informações sobre as configurações de fonte e cor, consulte o artigo do MSDN [acessando configurações de fonte e cor armazenadas](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Para garantir que os resultados de sondagem estejam corretos, use a interface [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) para determinar se uma liberação e atualização de cache são necessárias antes de chamar os métodos de recuperação da interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .
