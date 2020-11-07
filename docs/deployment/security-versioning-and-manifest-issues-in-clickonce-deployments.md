@@ -1,5 +1,6 @@
 ---
 title: Problemas de segurança/controle de versão/manifesto (ClickOnce)
+description: Saiba mais sobre problemas com segurança do ClickOnce, controle de versão do aplicativo e sintaxe e semântica de manifesto que podem fazer com que uma implantação do ClickOnce não seja bem sucedido.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881a0f9d5062e335fb7e03653bde11e032f89aca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811241"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349367"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 
@@ -95,7 +96,7 @@ Se você quiser mover ou copiar um aplicativo, também deverá atualizar o `depl
 > [!NOTE]
 > Sempre que atualizar o manifesto, você também deverá reconectá-lo novamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [Solucionar problemas de implantações](../deployment/troubleshooting-clickonce-deployments.md) 
  do ClickOnce [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md) 

@@ -1,6 +1,8 @@
 ---
 title: Erros da política de análise do código
 ms.date: 11/04/2016
+description: Saiba mais sobre erros de política de análise de código no Visual Studio. Exibir descrições de erros que ocorrem se a política não for satisfeita quando o check-in do código for feito.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587739"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349094"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 
@@ -73,6 +75,6 @@ Esse erro é aplicado a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 
 Esse erro se aplica a projetos não gerenciados. A política de análise de código requer análise de código para C/C++, mas não está habilitada no projeto atual no cliente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Erros do aplicativo de análise do código](../code-quality/code-analysis-application-errors.md)

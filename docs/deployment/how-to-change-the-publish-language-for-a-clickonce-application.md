@@ -1,5 +1,7 @@
 ---
 title: Alterar idioma de publicação para aplicativo ClickOnce
+description: Saiba como especificar um idioma/cultura para um aplicativo localizar no ClickOnce, em vez de padronizar para o idioma/cultura do seu computador de desenvolvimento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382582"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350160"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Como alterar o idioma de publicação para um aplicativo ClickOnce
 
@@ -34,7 +36,7 @@ A `Publish language` propriedade pode ser definida na caixa de diálogo **Opçõ
 
 ## <a name="to-change-the-publish-language"></a>Para alterar a linguagem de publicação
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -44,7 +46,7 @@ A `Publish language` propriedade pode ser definida na caixa de diálogo **Opçõ
 
 5. Na caixa de diálogo **Opções de publicação** , selecione um idioma e uma cultura na lista suspensa **idioma de publicação** e clique em **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

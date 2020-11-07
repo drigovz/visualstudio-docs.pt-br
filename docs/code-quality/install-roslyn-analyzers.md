@@ -1,6 +1,8 @@
 ---
 title: Instalar analisadores de terceiros
 ms.date: 08/27/2020
+description: Saiba como instalar analisadores de terceiros no Visual Studio. Consulte Como instalar analisadores em arquivos. vsix e pacotes do NuGet Analyzer.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091445"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348678"
 ---
 # <a name="install-third-party-analyzers"></a>Instalar analisadores de terceiros
 
-O Visual Studio inclui um conjunto principal de analisadores de .NET Compiler Platform (*Roslyn*). Esses analisadores estão sempre ativados. Você pode instalar analisadores adicionais como pacotes NuGet ou como extensões do Visual Studio em arquivos *VSIX* .
+O Visual Studio inclui um conjunto principal de analisadores de .NET Compiler Platform ( *Roslyn* ). Esses analisadores estão sempre ativados. Você pode instalar analisadores adicionais como pacotes NuGet ou como extensões do Visual Studio em arquivos *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar pacotes do NuGet Analyzer
 
@@ -33,7 +35,7 @@ O Visual Studio inclui um conjunto principal de analisadores de .NET Compiler Pl
    > [!NOTE]
    > A página www.nuget.org para cada pacote do analisador mostra o comando a ser colado no **console do Gerenciador de pacotes**. Há até mesmo um botão útil para copiar o texto na área de transferência.
 
-   Os assemblies do analisador são instalados e exibidos em **Gerenciador de soluções** em **References**  >  **analisadores**de referências.
+   Os assemblies do analisador são instalados e exibidos em **Gerenciador de soluções** em **References**  >  **analisadores** de referências.
 
 ## <a name="to-install-vsix-analyzers"></a>Para instalar os analisadores VSIX
 
@@ -96,7 +98,7 @@ Se você quiser verificar se a extensão está instalada, selecione **extensões
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Instalar analisadores do FxCop](../code-quality/install-fxcop-analyzers.md)

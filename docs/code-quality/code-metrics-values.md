@@ -1,6 +1,8 @@
 ---
 title: Calcular métricas de código
 ms.date: 11/02/2018
+description: Saiba mais sobre a complexidade do ciclomática, o acoplamento de classes e outras métricas de código do Visual Studio. Veja como as métricas podem acompanhar o progresso do desenvolvimento e identificar os riscos.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599456"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348639"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -46,7 +48,7 @@ A lista a seguir mostra os resultados de métricas de código que o Visual Studi
 
 - **Linhas de código-fonte** – indica o número exato de linhas de código-fonte que estão presentes no arquivo de origem, incluindo linhas em branco. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Linhas de código executável** – indica o número aproximado de linhas ou operações de código executável. Esta é uma contagem do número de operações no código executável. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). O valor normalmente é uma correspondência próxima à métrica anterior, **linhas de código**, que é a métrica baseada em instrução MSIL usada no modo herdado.
+- **Linhas de código executável** – indica o número aproximado de linhas ou operações de código executável. Esta é uma contagem do número de operações no código executável. Essa métrica está disponível a partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). O valor normalmente é uma correspondência próxima à métrica anterior, **linhas de código** , que é a métrica baseada em instrução MSIL usada no modo herdado.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

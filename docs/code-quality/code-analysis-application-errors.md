@@ -1,6 +1,8 @@
 ---
 title: Erros do aplicativo de análise do código
 ms.date: 11/04/2016
+description: Saiba mais sobre as mensagens de erro geradas pela ferramenta de análise de código gerenciado no Visual Studio. Exibir códigos de erro e descrições correspondentes.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio ALM], code analysis
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85521310"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348496"
 ---
 # <a name="code-analysis-application-errors"></a>Erros do aplicativo de análise de código
 
@@ -39,12 +41,12 @@ Esta seção é uma referência das mensagens de erro geradas pela ferramenta de
 |[CA0058](ca0058.md)|Não é possível carregar assemblies referenciados.|
 |[CA0059](ca0059.md)|Erro de opção de linha de comando.|
 |[CA0060](ca0060.md)|Não é possível carregar assemblies referenciados indiretamente.|
-|[CA0061](ca0061.md)|Não foi possível encontrar a regra '*RuleId*'.|
-|[CA0062](ca0062.md)|A regra '*RuleId*' referenciada no conjunto de regras '*RuleSetName*' não pôde ser encontrada.|
+|[CA0061](ca0061.md)|Não foi possível encontrar a regra ' *RuleId* '.|
+|[CA0062](ca0062.md)|A regra ' *RuleId* ' referenciada no conjunto de regras ' *RuleSetName* ' não pôde ser encontrada.|
 |[CA0063](ca0063.md)|Falha ao carregar o arquivo de conjunto de regras ou um de seus arquivos de conjunto de regras dependentes.|
 |[CA0064](ca0064.md)|Nenhuma análise foi executada porque o conjunto de regras especificado não continha nenhuma regra do FxCop.|
-|[CA0065](ca0065.md)|Construção de metadados sem suporte: o tipo '*TypeName*' contém uma propriedade e um campo com o mesmo nome '*PropertyFieldName*'|
-|[CA0066](ca0066.md)|O valor '*VersionId*' fornecido para o **/TargetFrameworkVersion** não é uma versão reconhecida.|
+|[CA0065](ca0065.md)|Construção de metadados sem suporte: o tipo ' *TypeName* ' contém uma propriedade e um campo com o mesmo nome ' *PropertyFieldName* '|
+|[CA0066](ca0066.md)|O valor ' *VersionId* ' fornecido para o **/TargetFrameworkVersion** não é uma versão reconhecida.|
 |[CA0067](ca0067.md)|Diretório não encontrado.|
 |[CA0068](ca0068.md)|Não foi possível encontrar informações de depuração para o assembly de destino *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Usando a plataforma alternativa. *FrameworkVersion1* não pôde ser encontrado. Usando *FrameworkVersion2* em vez disso. Para obter melhores resultados de análise, verifique se a versão correta da estrutura está instalada.|

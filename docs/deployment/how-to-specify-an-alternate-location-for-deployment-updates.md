@@ -1,5 +1,6 @@
 ---
 title: Especificar local alternativo para atualizações de implantação
+description: Saiba como especificar um local alternativo para atualizações para seu aplicativo ClickOnce em seu manifesto de implantação.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808744"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349640"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Como especificar um local alternativo para atualizações da implantação
 Você pode instalar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo inicialmente de um CD ou de um compartilhamento de arquivos, mas o aplicativo deve verificar se há atualizações periódicas na Web. Você pode especificar um local alternativo para as atualizações em seu manifesto de implantação para que seu aplicativo possa se atualizar da Web após a instalação inicial.
@@ -39,7 +40,7 @@ Você pode instalar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
 3. Selecione a guia **Opções de implantação** .
 
-4. Na caixa de texto denominada **local de inicialização**, insira a URL para o diretório que conterá o manifesto de implantação para atualizações de aplicativo.
+4. Na caixa de texto denominada **local de inicialização** , insira a URL para o diretório que conterá o manifesto de implantação para atualizações de aplicativo.
 
 5. Salve o manifesto de implantação.
 
@@ -61,7 +62,7 @@ Você pode instalar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
 
  Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que usam `<deploymentProvider>` devem declarar explicitamente as permissões de que precisam no manifesto do aplicativo, para que o aplicativo não receba diferentes níveis de confiança em computadores diferentes.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Passo a passo: Implantar um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

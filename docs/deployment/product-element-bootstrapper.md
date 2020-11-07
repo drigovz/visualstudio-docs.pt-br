@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Product (Bootstrapper) | Microsoft Docs'
+description: O elemento Product é o elemento XML de nível superior dentro de um arquivo de produto. O elemento Product é necessário em um arquivo de produto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747446"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349471"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;&gt;Elemento Product (Bootstrapper)
 O `Product` elemento é o elemento XML de nível superior dentro de um arquivo de produto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Product
@@ -249,5 +251,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

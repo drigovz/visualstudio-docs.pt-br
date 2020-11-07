@@ -1,5 +1,6 @@
 ---
 title: Solucionando problemas de erros (implantações ClickOnce)
+description: Este artigo descreve os erros comuns que podem ocorrer quando você implanta um aplicativo ClickOnce e fornece etapas para resolver cada problema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809447"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349237"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solucionar erros específicos em implantações do ClickOnce
 Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.
@@ -90,7 +91,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
  Para usar PrivatePath (caminhos de investigação de fusão), o aplicativo deve solicitar a permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e tente novamente.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante a desinstalação, aparece uma mensagem dizendo "falha ao desinstalar o aplicativo"
- Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **OK**, a entrada **Adicionar/remover programa** será removida.
+ Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **OK** , a entrada **Adicionar/remover programa** será removida.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante a instalação, aparece uma mensagem dizendo que as dependências de plataforma não estão instaladas
  Você não tem um pré-requisito no GAC (cache de assembly global) que o aplicativo precisa para ser executado.
@@ -103,7 +104,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
  Se você estiver publicando com uma URL, verifique se o computador de destino tem as extensões de servidor do FrontPage habilitadas.
 
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensagem de erro: não é possível criar o site ' \<site> '. Os componentes para comunicação com as extensões de servidor do FrontPage não estão instalados.
- Verifique se você tem o Microsoft Visual Studio Web Authoring Component instalado no computador do qual você está publicando. Para usuários expressos, esse componente não é instalado por padrão. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
+ Verifique se você tem o Microsoft Visual Studio Web Authoring Component instalado no computador do qual você está publicando. Para usuários expressos, esse componente não é instalado por padrão. Para obter mais informações, confira [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
 
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensagem de erro: não foi possível encontrar o arquivo ' Microsoft. Windows. Common-Controls, Version = 6.0.0.0, cultura = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture = \* , Type = Win32 '
  Essa mensagem de erro é exibida quando você tenta publicar um aplicativo WPF com estilos visuais habilitados. Para resolver esse problema, consulte [como: publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
@@ -113,7 +114,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Você tentou assinar com um certificado em seu repositório de certificados e uma caixa de mensagem em branco recebida
  Na caixa de diálogo **assinatura** , você deve:
 
-- Selecione **assinar com um certificado armazenado**e
+- Selecione **assinar com um certificado armazenado** e
 
 - Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.
 
@@ -137,7 +138,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 | Os atalhos não podem ser ativados pela rede. | Os atalhos para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo só podem ser iniciados no disco rígido local. Eles não podem ser iniciados abrindo uma URL que aponta para um arquivo de atalho em um servidor remoto. |
 | O aplicativo é muito grande para ser executado online em confiança parcial. Contate o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um aplicativo que é executado em confiança parcial não pode ser maior que metade do tamanho da cota do aplicativo online, que por padrão é 250 MB. |
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Solução de problemas do Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

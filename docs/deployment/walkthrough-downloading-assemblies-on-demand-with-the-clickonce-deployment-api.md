@@ -1,5 +1,6 @@
 ---
 title: Baixar assemblies sob demanda (API do ClickOnce)
+description: Saiba como marcar determinados assemblies em seu aplicativo ClickOnce como opcionais e baixá-los quando o Common Language Runtime precisar deles.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809244"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349238"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Walkthrough: baixar assemblies sob demanda com a API de implantação do ClickOnce
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixados quando o aplicativo é executado pela primeira vez. No entanto, você pode ter partes do seu aplicativo que são usadas por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional" e como baixá-los usando classes no <xref:System.Deployment.Application> namespace quando o Common Language Runtime (CLR) os exige.
@@ -58,7 +59,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Salve o texto como um arquivo chamado *ClickOnceLibrary.cs* ou *ClickOnceLibrary. vb*, dependendo do idioma usado para o diretório *ClickOnceOnDemand* .
+6. Salve o texto como um arquivo chamado *ClickOnceLibrary.cs* ou *ClickOnceLibrary. vb* , dependendo do idioma usado para o diretório *ClickOnceOnDemand* .
 
 7. Compile o arquivo em um assembly.
 
@@ -101,7 +102,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Para marcar assemblies como opcionais em seu aplicativo ClickOnce usando MageUI.exe
 
-1. Usando *MageUI.exe*, crie um manifesto do aplicativo conforme descrito em [passo a passos: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:
+1. Usando *MageUI.exe* , crie um manifesto do aplicativo conforme descrito em [passo a passos: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:
 
     - Nomeie o manifesto do aplicativo `ClickOnceOnDemand` .
 
@@ -109,7 +110,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
     - Na página **arquivos** , na linha *ClickOnceLibrary.dll* , digite `ClickOnceLibrary.dll` a coluna **grupo** .
 
-2. Usando o *MageUI.exe*, crie um manifesto de implantação, conforme descrito em [Walkthrough: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:
+2. Usando o *MageUI.exe* , crie um manifesto de implantação, conforme descrito em [Walkthrough: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:
 
     - Nomeie o manifesto de implantação `ClickOnceOnDemand` .
 

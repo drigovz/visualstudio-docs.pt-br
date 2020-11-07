@@ -1,5 +1,7 @@
 ---
 title: Snippets XML
+description: Saiba mais sobre o recurso de trechos de código XML no editor de XML que permite que você crie arquivos XML mais rapidamente reutilizando trechos de código XML e inserindo-os em seus arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f2bcdd0c28d7b4b99c92d3346b32ed34aa92a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592315"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350186"
 ---
 # <a name="xml-snippets"></a>Snippets XML
 
-O editor de XML oferece um recurso, chamado *trechos XML*, que permite criar arquivos XML mais rapidamente. Você pode reutilizar XML inserindo snippets nos seus arquivos. Você também pode gerar dados XML com base em um esquema XSD (linguagem de definição de esquema XML).
+O editor de XML oferece um recurso, chamado *trechos XML* , que permite criar arquivos XML mais rapidamente. Você pode reutilizar XML inserindo snippets nos seus arquivos. Você também pode gerar dados XML com base em um esquema XSD (linguagem de definição de esquema XML).
 
 ## <a name="reusable-xml-snippets"></a>Trechos de código XML reutilizáveis
 
@@ -49,7 +51,7 @@ O editor de XML também tem a capacidade de gerar um trecho XML a partir de um e
 
 Além dos trechos de código incluídos no Visual Studio por padrão, você também pode criar e usar seus próprios trechos de código XML. Para obter mais informações, consulte [como: criar trechos de código XML](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Snippets de código no Visual Studio](../ide/code-snippets.md)
 - [Editor de XML](../xml-tools/xml-editor.md)

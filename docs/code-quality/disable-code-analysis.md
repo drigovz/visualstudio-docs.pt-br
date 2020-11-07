@@ -1,6 +1,8 @@
 ---
 title: Desativar análise de código
 ms.date: 09/01/2020
+description: Saiba como desativar a análise de código-fonte do Visual Studio em projetos .NET Core, .NET Standard e .NET Framework.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037140"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348548"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Desabilitar análise de código-fonte para .NET
 
@@ -67,7 +69,7 @@ Exemplos:
 
 ## <a name="source-analysis"></a>Análise de código-fonte
 
-Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do **lista de erros**, poderá suprimir todas as violações atuais selecionando **analisar**  >  **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
+Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do **lista de erros** , poderá suprimir todas as violações atuais selecionando **analisar**  >  **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
 
 A partir do Visual Studio 2019 versão 16,3, você pode desativar a análise de código-fonte ou executá-la sob demanda. Considere atualizar para o Visual Studio 2019.
 
@@ -77,7 +79,7 @@ Você pode desabilitar a análise herdada e em tempo de compilação na página 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Suprimir violações](use-roslyn-analyzers.md#suppress-violations)
 - [Como habilitar e desabilitar a análise de código herdado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

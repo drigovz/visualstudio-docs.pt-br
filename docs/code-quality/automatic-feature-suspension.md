@@ -1,6 +1,8 @@
 ---
 title: Suspensão automática de recursos
 ms.date: 11/04/2016
+description: Saiba como o Visual Studio reduz o escopo da análise, desativa o modo de baixa latência da coleta de lixo e libera os caches quando a memória do sistema é limitada.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508373"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348535"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
@@ -65,7 +67,7 @@ Além disso, os caches usados para operações internas do Visual Studio também
 > [!NOTE]
 > O aviso de suspensão de recurso automático ocorre apenas uma vez por solução, não por sessão. Isso significa que, se você alternar de Visual Basic para Visual C# (ou vice-versa) e executar outra condição de memória insuficiente, poderá obter outro aviso de suspensão de recurso automático.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como: configurar o escopo de análise de código ao vivo para código gerenciado](./configure-live-code-analysis-scope-managed-code.md)
 - [Noções básicas sobre a coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)

@@ -1,5 +1,7 @@
 ---
 title: Especifique um link para suporte técnico | Microsoft Docs
+description: Saiba mais sobre a propriedade URL de suporte para publicar um aplicativo ClickOnce, que identifica uma página da Web ou um compartilhamento de arquivos onde os usuários obtêm informações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4474845d4a3f13a404773a6c8b572ff5194e033
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0c0f0a1c6bda564367497306a572f7e9f4012031
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851743"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349757"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Como especificar um link para o Suporte técnico
 Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, a propriedade **URL de suporte** identifica uma página da Web ou um compartilhamento de arquivos, onde os usuários podem acessar obter informações sobre o aplicativo. Essa propriedade é opcional; se fornecido, a URL será exibida na caixa de diálogo **Adicionar ou remover programas** da entrada do aplicativo.
@@ -34,7 +36,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-specify-a-support-url"></a>Para especificar uma URL de suporte
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -44,6 +46,6 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 5. No campo **URL de suporte** , insira um caminho totalmente qualificado para um site, uma página da Web ou um compartilhamento UNC.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

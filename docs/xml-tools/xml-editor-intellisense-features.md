@@ -1,5 +1,7 @@
 ---
 title: Recursos do IntelliSense do editor de XML
+description: Saiba mais sobre os recursos do IntelliSense do editor de XML no Visual Studio e como você pode usá-los com os documentos XSD e XSLT (linguagem de definição de esquema XML).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592380"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350238"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 
@@ -87,7 +89,7 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 ## <a name="brace-matching"></a>Correspondência de chaves
 
-O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl** + **]**) para saltar de uma chave para a chave correspondente.
+O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado ( **Ctrl** + **]** ) para saltar de uma chave para a chave correspondente.
 
 O editor XML faz isso para os seguintes itens:
 
@@ -121,11 +123,11 @@ A seção **inserção automática** da página **diversos** controla o seguinte
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expanda **Editor de texto**, expanda **XML**e selecione **diversos**.
+2. Expanda **Editor de texto** , expanda **XML** e selecione **diversos**.
 
 3. Faça as alterações na seção **inserção automática** e clique em **OK**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Usando o IntelliSense](../ide/using-intellisense.md)

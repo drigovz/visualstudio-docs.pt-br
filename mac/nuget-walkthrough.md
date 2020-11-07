@@ -3,15 +3,15 @@ title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto usando Visual Studio para Mac. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 09/04/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127199"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349303"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalar e gerenciar pacotes NuGet no Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Para obter uma introdução ao uso do NuGet no Visual Studio para Mac, consulte 
 
 ## <a name="find-and-install-a-package"></a>Localizar e instalar um pacote
 
-1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta**pacotes** se estiver usando um projeto Xamarin) na **painel de soluções** e selecione **gerenciar pacotes NuGet...**.
+1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta **pacotes** se estiver usando um projeto Xamarin) na **painel de soluções** e selecione **gerenciar pacotes NuGet...**.
 
     ![Ação de contexto Adicionar novo pacote NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -59,17 +59,30 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Atualizando pacotes
 
-As atualizações de pacote podem ser feitas de uma só vez, clicando com o botão direito do mouse no nó de **dependências** (nó**pacotes** para projetos do Xamarin) ou individualmente em cada pacote. Quando uma nova versão de um pacote NuGet estiver disponível, um ícone de atualização aparecerá ![ na seta para cima com círculo ](media/nuget-walkthrough-update-icon.png) .
+As atualizações de pacote podem ser feitas de uma só vez, clicando com o botão direito do mouse no nó de **dependências** (nó **pacotes** para projetos do Xamarin) ou individualmente em cada pacote. Quando uma nova versão de um pacote NuGet estiver disponível, um ícone de atualização aparecerá ![ na seta para cima com círculo ](media/nuget-walkthrough-update-icon.png) .
 
 Clique com o botão direito do mouse em **dependências** para acessar o menu de contexto e escolha **Atualizar** para atualizar todos os pacotes:
 
-![Menu Pacotes](media/nuget-walkthrough-packages-menu-update.png)
+![Menu de contexto de dependências com o menu atualizar realçado](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Gerenciar pacotes NuGet** – abre a janela para adicionar mais pacotes ao projeto.
 * **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
 * **Restaurar** – Baixa todos os pacotes ausentes (sem atualizar os pacotes existentes para as versões mais recentes).
 
 As opções Atualizar e Restaurar também estão disponíveis no nível da Solução, afetando todos os projetos na solução.
+
+### <a name="updating-to-pre-release-versions-of-packages"></a>Atualizando para versões de pré-lançamento de pacotes
+Para atualizar para uma versão de pré-lançamento mais recente de um pacote, você pode clicar com o botão direito do mouse em **dependências** para abrir o menu de contexto e escolher o menu **gerenciar pacotes NuGet...** .
+
+![Menu de contexto de dependências com gerenciar pacotes NuGet... menu realçado](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Marque a caixa de seleção **Mostrar pacotes de pré-lançamento** na parte inferior da caixa de diálogo.
+
+![Caixa de diálogo gerenciar pacotes NuGet aberta com a opção ' Mostrar pacotes de pré-lançamento ' marcada](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Por fim, na guia **atualizações** da caixa de diálogo, selecione o pacote que você deseja atualizar e escolha a nova versão de pré-lançamento na lista suspensa **nova versão** e clique em **Atualizar pacote**.
+
+![Caixa de diálogo gerenciar pacotes NuGet aberta na guia instalado, com um pacote selecionado e a nova lista suspensa versão aberta.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Localizando pacotes desatualizados
 No painel de solução, você pode exibir qual versão de um pacote está instalada no momento e clicar com o botão direito do mouse no pacote a ser atualizado.
@@ -89,7 +102,7 @@ No menu mostrado, você tem duas opções:
 
 O gerenciamento de pacotes para uma solução é um meio conveniente de trabalhar com vários projetos ao mesmo tempo.
 
-1. Clique com o botão direito do mouse na solução e selecione **gerenciar pacotes NuGet...**:
+1. Clique com o botão direito do mouse na solução e selecione **gerenciar pacotes NuGet...** :
 
     ![Gerenciar Pacotes do NuGet para a solução](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -121,11 +134,11 @@ Em Visual Studio para Mac, navegue até **Visual Studio > preferências > NuGet 
 
 Clique em **Adicionar** para configurar uma nova origem. Insira um nome amigável e a URL (ou caminho de arquivo) para a origem do pacote. Se a origem for um servidor Web seguro, insira também o nome de usuário e a senha, caso contrário, deixe essas entradas em branco:
 
-![Adicionar origens de pacotes](media/nuget-walkthrough-PackageSource2.png)
+![Adicione a caixa de diálogo origem do pacote com um prompt para nome, URL do local, nome de usuário e senha.](media/nuget-walkthrough-PackageSource2.png)
 
 É possível selecionar diferentes origens ao procurar pacotes:
 
-![Adicionar origens de pacotes](media/nuget-walkthrough-PackageSource3.png)
+![Caixa de diálogo Adicionar origem do pacote mostrando um menu suspenso com uma lista de origens do pacote.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Controle de versão
 
@@ -139,6 +152,6 @@ Consulte a documentação do controle do código-fonte específico para ver deta
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 * [Instalar e usar um pacote no Visual Studio (no Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

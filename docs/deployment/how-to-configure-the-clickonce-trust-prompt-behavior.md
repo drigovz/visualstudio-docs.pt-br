@@ -1,5 +1,7 @@
 ---
 title: Configurar o comportamento do prompt de confiança do ClickOnce | Microsoft Docs
+description: Saiba como configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalar aplicativos ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852225"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350056"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como configurar o comportamento do prompt confiável do ClickOnce
 Você pode configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalar aplicativos ClickOnce, como Windows Forms aplicativos, Windows Presentation Foundation aplicativos, aplicativos de console, aplicativos de navegador WPF e soluções do Office. Configure o prompt de confiança definindo chaves do registro no computador de cada usuário final.
@@ -55,7 +57,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
     2. Na caixa **abrir** , digite `regedit` e clique em **OK**.
 
@@ -65,7 +67,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -105,7 +107,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Restringir o prompt de confiança do ClickOnce
  Restrinja o prompt de confiança para que as soluções devam ser assinadas com certificados Authenticode com identidade conhecida antes que os usuários sejam solicitados a fornecer uma decisão de confiança.
@@ -114,7 +116,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
     2. Na caixa **abrir** , digite `regedit` e clique em **OK**.
 
@@ -124,7 +126,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -162,7 +164,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Desabilitar o prompt de confiança do ClickOnce
  Você pode desabilitar o prompt de confiança para que os usuários finais não tenham a opção de instalar soluções que ainda não são confiáveis em sua política de segurança.
@@ -171,7 +173,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 1. Abra o Editor do Registro:
 
-    1. Clique em **Iniciar**e em **Executar**.
+    1. Clique em **Iniciar** e em **Executar**.
 
     2. Na caixa **abrir** , digite `regedit` e clique em **OK**.
 
@@ -181,7 +183,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
      Se a chave não existir, crie-a.
 
-3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres** , se elas ainda não existirem, com os valores associados mostrados na tabela a seguir.
 
     |Subchave de valor da cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -220,9 +222,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
     ```
 
-3. Criar e executar o aplicativo.
+3. Compile e execute o aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)

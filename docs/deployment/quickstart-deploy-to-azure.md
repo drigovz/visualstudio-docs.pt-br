@@ -1,5 +1,7 @@
 ---
 title: Publicar no Serviço de Aplicativo do Azure
+description: Saiba mais sobre os métodos para publicar aplicativos ASP.NET, ASP.NET Core, Node.js e .NET Core para Azure App serviço ou Azure App Service Linux.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 5881e1dfb1842e2a6d85efe73534f8db2e2f734e
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830741"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349575"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio
 
@@ -49,7 +51,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo**, **grupo de recursos**e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Windows)** , os campos **nome do aplicativo** , **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
 
     ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
@@ -66,7 +68,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 Nas etapas anteriores, você criou os recursos do Azure em um grupo de recursos. Se você não espera precisar desses recursos no futuro, poderá excluí-los ao excluir o grupo de recursos.
 No menu à esquerda no portal do Azure, selecione **Grupos de recursos** e, em seguida, selecione **myResourceGroup**.
 Na página do grupo de recursos, certifique-se de que os recursos listados são aqueles que deseja excluir.
-Selecione **Excluir**, digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
+Selecione **Excluir** , digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

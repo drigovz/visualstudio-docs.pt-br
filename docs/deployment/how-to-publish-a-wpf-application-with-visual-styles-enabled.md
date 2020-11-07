@@ -1,5 +1,6 @@
 ---
 title: Publicar um aplicativo WPF com estilos visuais habilitados
+description: Saiba como publicar um aplicativo WPF com estilos visuais habilitados, o que permite que a aparência dos controles seja alterada com base no tema escolhido pelo usuário.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810452"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349848"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
 
@@ -50,7 +51,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
 
     **Para abrir o arquivo de manifesto em um projeto Visual Basic**
 
-    1. Na barra de menus, escolha **Project**, *ProjectName* **Propriedades**ProjectName, em que *ProjectName* é o nome do seu projeto do WPF.
+    1. Na barra de menus, escolha **Project** , *ProjectName* **Propriedades** ProjectName, em que *ProjectName* é o nome do seu projeto do WPF.
 
          As páginas de propriedades do seu projeto WPF são exibidas.
 
@@ -60,7 +61,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
 
     **Para abrir o arquivo de manifesto em um projeto C#**
 
-    1. Na barra de menus, escolha **Project**, *ProjectName* **Propriedades**ProjectName, em que *ProjectName* é o nome do seu projeto do WPF.
+    1. Na barra de menus, escolha **Project** , *ProjectName* **Propriedades** ProjectName, em que *ProjectName* é o nome do seu projeto do WPF.
 
          As páginas de propriedades do seu projeto WPF são exibidas.
 
@@ -69,7 +70,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
         > [!NOTE]
         > Se **Inserir manifesto com configurações padrão** ou **criar aplicativo sem o manifesto** aparecer no campo manifesto, os estilos visuais não serão habilitados. Se o nome de um arquivo de manifesto aparecer no campo manifesto, vá para a próxima etapa neste procedimento.
 
-    3. Em **Gerenciador de soluções**, escolha **Mostrar todos os arquivos**.
+    3. Em **Gerenciador de soluções** , escolha **Mostrar todos os arquivos**.
 
          Esse botão mostra todos os itens de projeto, incluindo aqueles que foram excluídos e os que normalmente estão ocultos. O arquivo de manifesto aparece como um item de projeto.
 
@@ -111,7 +112,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
 
 1. Abra o **prompt de comando do Visual Studio**.
 
-    Para obter mais informações sobre como abrir o **prompt de comando do Visual Studio**, consulte [prompts de comando](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Para obter mais informações sobre como abrir o **prompt de comando do Visual Studio** , consulte [prompts de comando](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > As etapas restantes fazem as seguintes suposições sobre sua solução:
@@ -176,7 +177,7 @@ Os estilos visuais permitem a aparência de controles comuns a serem alterados c
 
    Depois de executar essas etapas, você pode mover os arquivos publicados para o local do qual deseja que os usuários finais instalem o aplicativo. Se você pretende atualizar a solução com frequência, pode mover esses comandos para um script e executar o script sempre que publicar uma nova versão.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 -[Solucionando problemas de erros específicos em implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Visão geral dos estilos visuais](/windows/desktop/Controls/visual-styles-overview)

@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Signature (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento Signature contém as informações necessárias para assinar digitalmente este manifesto de implantação. A assinatura de um manifesto de implantação é opcional, mas recomendada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835414"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349276"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (implantação do ClickOnce)
 Contém as informações necessárias para assinar digitalmente este manifesto de implantação.
@@ -28,8 +30,8 @@ Contém as informações necessárias para assinar digitalmente este manifesto d
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 
@@ -70,5 +72,5 @@ MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
 </Signature>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)

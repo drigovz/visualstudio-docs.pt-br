@@ -1,5 +1,7 @@
 ---
 title: Página de Assinatura, Designer de Projeto
+description: Use a página assinatura do designer de projeto para assinar os manifestos de aplicativo e implantação e também para assinar o assembly.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418854"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348509"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 
@@ -35,7 +37,7 @@ Observe que a assinatura dos manifestos do aplicativo e de implantação é um p
 
 Além disso, o armazenamento de informações do arquivo de chave é diferente da assinatura do manifesto e assinatura do assembly. Para a assinatura do manifesto, as informações de chave são armazenadas no banco de dados de armazenamento criptografado do computador e no repositório de certificados do Windows do usuário atual. Para a assinatura do assembly, as informações de chave são armazenadas somente no banco de dados de armazenamento criptografado do computador.
 
-Para acessar a página **Assinatura**, selecione um nó do projeto no **Gerenciador de Soluções** e em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Assinatura**.
+Para acessar a página **Assinatura** , selecione um nó do projeto no **Gerenciador de Soluções** e em seguida, no menu **Projeto** , clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Assinatura**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Assinatura de manifesto do aplicativo e de implantação
 
@@ -47,23 +49,23 @@ Botão **Selecionar do Repositório**
 
 Permite selecionar um certificado existente do repositório de certificados pessoais do usuário atual. É possível selecionar um desses certificados para assinar os manifestos do aplicativo e de implantação.
 
-Ao clicar em **Selecionar do Repositório**, a caixa de diálogo **Selecionar um Certificado** é aberta, que lista os certificados do repositório de certificados pessoais que atualmente são válidos (não expirados) e que têm chaves privadas. A finalidade do certificado selecionado deve incluir a assinatura de código.
+Ao clicar em **Selecionar do Repositório** , a caixa de diálogo **Selecionar um Certificado** é aberta, que lista os certificados do repositório de certificados pessoais que atualmente são válidos (não expirados) e que têm chaves privadas. A finalidade do certificado selecionado deve incluir a assinatura de código.
 
-Se você clicar em **exibir propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Saber mais sobre certificados** para exibir informações adicionais da Ajuda.
+Se você clicar em **exibir propriedades do certificado** , a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Saber mais sobre certificados** para exibir informações adicionais da Ajuda.
 
 Botão **Selecionar do Arquivo**
 
 Permite selecionar um certificado de um arquivo de chave existente.
 
-Ao clicar em **Selecionar do Arquivo**, a caixa de diálogo **Selecionar Arquivo** é aberta, que permite selecionar um arquivo de chave do certificado (.pfx). O arquivo deve ser protegido por senha e não pode já estar localizado no repositório de certificados pessoais.
+Ao clicar em **Selecionar do Arquivo** , a caixa de diálogo **Selecionar Arquivo** é aberta, que permite selecionar um arquivo de chave do certificado (.pfx). O arquivo deve ser protegido por senha e não pode já estar localizado no repositório de certificados pessoais.
 
-Na caixa de diálogo **Inserir senha para abrir o arquivo**, insira uma senha para abrir o arquivo de chave do certificado (.pfx). As informações de senha são armazenadas na lista de contêineres de chaves pessoais e no repositório de certificados pessoais.
+Na caixa de diálogo **Inserir senha para abrir o arquivo** , insira uma senha para abrir o arquivo de chave do certificado (.pfx). As informações de senha são armazenadas na lista de contêineres de chaves pessoais e no repositório de certificados pessoais.
 
 Botão **Criar Certificado de Teste**
 
 Permite criar um certificado para teste. O certificado de teste é usado para assinar os manifestos do aplicativo e de implantação do ClickOnce.
 
-Ao clicar em **Criar Certificado de Teste**, a caixa de diálogo **Criar Certificado de Teste** é aberta, na qual é possível digitar uma senha para o arquivo de chave de nome forte para o certificado de teste. O arquivo é nomeado *projectname*_TemporaryKey.pfx. Se você clicar em **OK** sem digitar uma senha, o arquivo .pfx não será criptografado com senha.
+Ao clicar em **Criar Certificado de Teste** , a caixa de diálogo **Criar Certificado de Teste** é aberta, na qual é possível digitar uma senha para o arquivo de chave de nome forte para o certificado de teste. O arquivo é nomeado *projectname* _TemporaryKey.pfx. Se você clicar em **OK** sem digitar uma senha, o arquivo .pfx não será criptografado com senha.
 
 Caixa **URL do servidor de carimbo de data/hora**
 
@@ -73,7 +75,7 @@ Especifica o endereço de um servidor que gera carimbos de data/hora da assinatu
 
 Caixa de seleção **Assinar o assembly**
 
-Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, consulte [Como assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto** , consulte [Como assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
 Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do Windows (SDK do Windows) para assinar o assembly. Para obter mais informações sobre o Al.exe, consulte [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
@@ -87,7 +89,7 @@ Botão **Alterar Senha**
 
 Altera a senha do arquivo de chave de Troca de Informações Pessoais (.pfx) usado para assinar o assembly.
 
-Ao clicar em **Alterar Senha**, a caixa de diálogo **Alterar Senha de Chave** é aberta. Na caixa de diálogo, **Senha antiga** é a senha atual do arquivo de chave. **Nova senha** deve ter, no mínimo, 6 caracteres. As informações de senha são armazenadas no repositório de certificados do Windows do usuário atual.
+Ao clicar em **Alterar Senha** , a caixa de diálogo **Alterar Senha de Chave** é aberta. Na caixa de diálogo, **Senha antiga** é a senha atual do arquivo de chave. **Nova senha** deve ter, no mínimo, 6 caracteres. As informações de senha são armazenadas no repositório de certificados do Windows do usuário atual.
 
 Caixa de seleção **Somente sinal de atraso**
 
@@ -98,11 +100,11 @@ Observe que um projeto com assinatura com atraso não será executado e não pod
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)
 - [Gerenciando a assinatura de assembly e de manifesto](../../ide/managing-assembly-and-manifest-signing.md)
 - [Como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Como Assinar um Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assembly de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblies de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)

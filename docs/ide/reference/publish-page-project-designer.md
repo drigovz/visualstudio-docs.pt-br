@@ -1,5 +1,7 @@
 ---
 title: Página de Publicação, Designer de Projeto
+description: A página publicar do designer de projeto é usada para configurar propriedades para sua implantação do ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -13,31 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13edc1b2e2e235eaf5a475764a98067aa4b0150d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926164"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350277"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.
 
-Para acessar a página **Publicar**, selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Publicar**.
+Para acessar a página **Publicar** , selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto** , clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Publicar**.
 
 > [!NOTE]
-> Algumas das propriedades do ClickOnce descritas aqui também podem ser definidas no **PublishWizard**, disponível no menu **Build** ou clicando no botão **PublishWizard** nesta página.
+> Algumas das propriedades do ClickOnce descritas aqui também podem ser definidas no **PublishWizard** , disponível no menu **Build** ou clicando no botão **PublishWizard** nesta página.
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
  **Local da Pasta de Publicação**
 
-Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar (**... **) funcionar.
+Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar ( **...** ) funcionar.
 
  **URL da Pasta de Instalação**
 
-Opcional. Especifica um site que os usuários acessam para instalar o aplicativo. Isso é necessário apenas quando ele difere do **Local de Publicação**, por exemplo, quando o aplicativo for publicado em um servidor de preparo.
+Opcional. Especifica um site que os usuários acessam para instalar o aplicativo. Isso é necessário apenas quando ele difere do **Local de Publicação** , por exemplo, quando o aplicativo for publicado em um servidor de preparo.
 
  **Configurações e Modo de Instalação**
 
@@ -63,7 +65,7 @@ Abre a caixa de diálogo Opções de Publicação, que é usada para especificar
 
  **Versão da Publicação**
 
-Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.
+Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação ( **Principal** , **Secundária** , **Build** , **Revisão** ) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.
 
 Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.
 
@@ -79,7 +81,7 @@ Abre o Assistente de Publicação. Concluir o Assistente de Publicação tem o m
 
 Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Publicando aplicativos ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Como publicar um Aplicativo ClickOnce usando o Assistente de Publicação](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -1,5 +1,6 @@
 ---
 title: Criar associações de arquivo (aplicativo ClickOnce)
+description: Saiba como associar um aplicativo ClickOnce a uma ou mais extensões de nome de arquivo, para que o aplicativo seja iniciado quando o usuário abrir esse arquivo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcca57415eae6480286f457755b996f22cb6507a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21f6923185dbfa79fbe18b7b5c6a5d824a5a2cfe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809775"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350030"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como criar associações de arquivo para um aplicativo ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os aplicativos podem ser associados a uma ou mais extensões de nome de arquivo, para que o aplicativo seja iniciado automaticamente quando o usuário abrir um arquivo desses tipos. Adicionar suporte à extensão de nome de arquivo a um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é simples.
@@ -54,7 +55,7 @@ ms.locfileid: "90809775"
 
     Para obter mais informações, consulte [Mage.exe (manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [\<fileAssociation> elementos](../deployment/fileassociation-element-clickonce-application.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

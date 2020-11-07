@@ -1,6 +1,8 @@
 ---
 title: Conjunto de regras de diretriz do design básico para código gerenciado
 ms.date: 11/04/2016
+description: Saiba mais sobre o conjunto de regras básicas de diretrizes de design no Visual Studio, que pode ajudar a tornar o código mais fácil de entender e usar. Consulte descrições de regra.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659121"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348399"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretriz do design básico para código gerenciado
 

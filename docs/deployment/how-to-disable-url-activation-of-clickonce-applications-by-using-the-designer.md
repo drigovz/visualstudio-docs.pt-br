@@ -1,5 +1,7 @@
 ---
 title: Desabilitar a ativação de URL de aplicativos ClickOnce usando o designer
+description: Saiba como desabilitar o início automático na instalação para um aplicativo ClickOnce usando o Visual Studio, para que os usuários devam iniciar o aplicativo no menu iniciar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382478"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350004"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Como desabilitar a ativação de aplicativos ClickOnce pela URL usando o Designer
 Normalmente, um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo será iniciado automaticamente imediatamente após ser instalado a partir de um servidor Web. Por motivos de segurança, você pode optar por desabilitar esse comportamento e dizer aos usuários para iniciar o aplicativo no menu **Iniciar** em vez disso. O procedimento a seguir descreve como desabilitar a ativação de URL.
@@ -34,7 +36,7 @@ Normalmente, um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 #### <a name="to-disable-url-activation-for-your-application"></a>Para desabilitar a ativação de URL para seu aplicativo
 
-1. Clique com o botão direito do mouse no nome do projeto em **Gerenciador de soluções**e clique em **Propriedades**.
+1. Clique com o botão direito do mouse no nome do projeto em **Gerenciador de soluções** e clique em **Propriedades**.
 
 2. Na página **Propriedades** , clique na guia **publicar** .
 
@@ -46,5 +48,5 @@ Normalmente, um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 6. Implante seu aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

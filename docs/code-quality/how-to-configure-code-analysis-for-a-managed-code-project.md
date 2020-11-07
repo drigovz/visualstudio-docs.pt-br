@@ -1,6 +1,8 @@
 ---
 title: Configurar análise de código
 ms.date: 04/04/2018
+description: Saiba como configurar o conjunto de regras usado pela análise de código herdado do Visual Studio. Consulte como aplicar um conjunto de regras a um ou vários projetos em uma solução.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801042"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348795"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Como: configurar a análise herdada para código gerenciado
 
@@ -36,15 +38,15 @@ No Visual Studio, você pode escolher em uma lista de conjuntos de [regras](../c
 
 1. Abra a guia **análise de código** nas páginas de propriedades do projeto. É possível fazer isso de qualquer uma destas maneiras:
 
-   - Em **Gerenciador de soluções**, escolha o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para **.
+   - Em **Gerenciador de soluções** , escolha o projeto. Na barra de menus, selecione **analisar**  >  **Configurar análise**  >  **de código \<projectname> para**.
 
-   - Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Propriedades**e, em seguida, selecione a guia **análise de código** .
+   - Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Propriedades** e, em seguida, selecione a guia **análise de código** .
 
 2. Nas listas de **configuração** e **plataforma** , escolha a configuração de compilação e a plataforma de destino.
 
 ::: moniker range="vs-2017"
 
-3. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, selecione **Habilitar análise de código na compilação**. Você também pode executar a análise de código manualmente selecionando **analisar**  >  **executar análise de código**  >  **executar \<projectname> análise de código em **.
+3. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, selecione **Habilitar análise de código na compilação**. Você também pode executar a análise de código manualmente selecionando **analisar**  >  **executar análise de código**  >  **executar \<projectname> análise de código em**.
 
 ::: moniker-end
 
@@ -85,7 +87,7 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos ao 
 
 2. No menu **analisar** , selecione **Configurar análise de código para solução**.
 
-3. Se necessário, expanda **Propriedades comuns**e selecione **configurações de análise de código**.
+3. Se necessário, expanda **Propriedades comuns** e selecione **configurações de análise de código**.
 
 4. Você pode especificar um conjunto de regras para um ou mais projetos:
 
@@ -97,6 +99,6 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos ao 
 
 5. Selecione o campo **conjunto de regras** de um projeto e, em seguida, selecione o nome do conjunto de regras que você deseja aplicar.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

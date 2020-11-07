@@ -1,5 +1,7 @@
 ---
 title: Criar um manifesto de pacote | Microsoft Docs
+description: Saiba como usar um pacote de bootstrapper para implantar pré-requisitos para seu aplicativo ClickOnce, que contém um manifesto de pacote para cada localidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851704"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350043"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Como criar um manifesto de pacote
 Para implantar os pré-requisitos para seu aplicativo, você pode usar um pacote de bootstrapper. Um pacote de bootstrapper contém um único arquivo de manifesto de produto, mas um manifesto de pacote para cada localidade. A funcionalidade compartilhada entre diferentes versões localizadas deve entrar no manifesto do produto.
@@ -38,7 +40,7 @@ Para implantar os pré-requisitos para seu aplicativo, você pode usar um pacote
 
 2. Crie um subdiretório com o nome da localidade, como *en* para inglês.
 
-3. No Visual Studio, crie um arquivo XML chamado *package.xml*e salve-o na pasta *C:\package\en*
+3. No Visual Studio, crie um arquivo XML chamado *package.xml* e salve-o na pasta *C:\package\en*
 
 4. Adicione XML para listar o nome do pacote de bootstrapper, a cultura para esse manifesto de pacote localizado e o contrato de licença opcional. O XML a seguir usa as variáveis `DisplayName` e `Culture` , que são definidas em um elemento posterior.
 
@@ -98,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

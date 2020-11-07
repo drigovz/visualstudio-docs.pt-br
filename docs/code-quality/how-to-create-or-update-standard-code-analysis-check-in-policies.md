@@ -1,5 +1,6 @@
 ---
 title: Criar/atualizar políticas de check-in de análise de código padrão
+description: Saiba como garantir que a análise de código seja executada em todos os projetos de código em um projeto DevOps do Azure. Consulte como configurar uma política de check-in de análise de código do projeto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad889ba106c288c07111857be965ef8d6c8295df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808620"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348756"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como criar ou atualizar políticas de check-in de análise do código padrão
 
@@ -36,11 +37,11 @@ Depois de especificar uma política de check-in para código gerenciado, os memb
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Para abrir o editor de diretiva de check-in
 
-1. Em Team Explorer, clique com o botão direito do mouse no nome do projeto, aponte para **configurações do projeto**e clique em **controle do código-fonte**.
+1. Em Team Explorer, clique com o botão direito do mouse no nome do projeto, aponte para **configurações do projeto** e clique em **controle do código-fonte**.
 
 1. Na caixa de diálogo **controle do código-fonte** , selecione a guia **política de check-in** .
 
-1. Realize um dos seguintes procedimentos:
+1. Realize uma destas ações:
 
     - Clique em **Adicionar** para criar uma nova política de check-in.
 
@@ -68,6 +69,6 @@ Na lista **executar este conjunto de regras** , use um dos seguintes métodos:
 
 Para obter mais informações sobre como criar e implementar um conjunto de regras de política de check-in personalizado, consulte [implementar políticas de check-in personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Implementar políticas de check-in de análise de código personalizadas para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

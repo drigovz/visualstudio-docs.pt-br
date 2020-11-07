@@ -1,5 +1,7 @@
 ---
 title: Implantar em uma pasta local
+description: Saiba como usar a ferramenta de publicação para publicar aplicativos ASP.NET, ASP.NET Core, .NET Core e Python em uma pasta do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036386"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349562"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Implantar um aplicativo em uma pasta usando o Visual Studio
 
@@ -28,7 +30,7 @@ Você pode usar a ferramenta de **publicação** para publicar aplicativos ASP.N
 
 ## <a name="deploy-to-a-local-folder"></a>Implantar em uma pasta local
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
+1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar** ).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
@@ -62,7 +64,7 @@ Você pode usar a ferramenta de **publicação** para publicar aplicativos ASP.N
 
 1. Para republicar, selecione **Publicar**.
 
-Implante os arquivos publicados na maneira que desejar. Por exemplo, é possível empacotá-los em um arquivo *.zip*, usar um simples comando para copiar ou implantá-los com qualquer pacote de instalação de sua escolha.
+Implante os arquivos publicados na maneira que desejar. Por exemplo, é possível empacotá-los em um arquivo *.zip* , usar um simples comando para copiar ou implantá-los com qualquer pacote de instalação de sua escolha.
 
 ## <a name="next-steps"></a>Próximas etapas
 

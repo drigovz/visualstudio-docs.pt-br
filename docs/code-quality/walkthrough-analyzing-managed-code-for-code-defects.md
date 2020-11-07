@@ -1,6 +1,8 @@
 ---
 title: Walkthrough analisando código gerenciado para defeitos de código | Microsoft Docs
 ms.date: 01/29/2018
+description: Saiba como usar a análise de código herdado para analisar assemblies de código gerenciado do .NET. Veja como verificar se há defeitos e conformidade com as diretrizes de design do .NET.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659186"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349016"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Walkthrough: usar a análise de código estático para encontrar defeitos de código
 
@@ -75,7 +77,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
 ::: moniker-end
 
-6. No menu **arquivo** , clique em **salvar itens selecionados**e feche as páginas de propriedades.
+6. No menu **arquivo** , clique em **salvar itens selecionados** e feche as páginas de propriedades.
 
 7. No menu **Compilar** , clique em **criar CodeAnalysisManagedDemo**.
 
@@ -87,7 +89,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
     Dependendo do perfil de desenvolvedor que você escolheu, talvez seja necessário apontar para **outras janelas** no menu **Exibir** e, em seguida, escolher **lista de erros**.
 
-1. Em **Gerenciador de soluções**, escolha **Mostrar todos os arquivos**.
+1. Em **Gerenciador de soluções** , escolha **Mostrar todos os arquivos**.
 
 1. Expanda o nó Propriedades e, em seguida, abra o arquivo *AssemblyInfo.cs* .
 
@@ -127,11 +129,11 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
       A caixa de diálogo **Criar Chave de Nome Forte** é aberta.
 
-   1. Para **nome de arquivo de chave**, insira **TestKey**.
+   1. Para **nome de arquivo de chave** , insira **TestKey**.
 
    1. Insira uma senha e escolha **OK**.
 
-   1. No menu **arquivo** , escolha **salvar itens selecionados**e feche as páginas de propriedades.
+   1. No menu **arquivo** , escolha **salvar itens selecionados** e feche as páginas de propriedades.
 
    Depois de concluir todas as alterações, o arquivo Class1.cs deverá ser semelhante ao seguinte:
 
@@ -170,6 +172,6 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
      O projeto é compilado sem avisos ou erros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Análise de código para código gerenciado](../code-quality/code-analysis-for-managed-code-overview.md)

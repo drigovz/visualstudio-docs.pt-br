@@ -1,6 +1,8 @@
 ---
 title: Criar um conjunto de regras de análise de código personalizado
 ms.date: 11/02/2018
+description: Saiba como personalizar conjuntos de regras de análise de código no Visual Studio. Veja como criar novos conjuntos do zero ou de conjuntos existentes. Entender a precedência de regra.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860511"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348808"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -26,7 +28,7 @@ Você pode criar um conjunto de regras personalizadas para atender às necessida
 
 Para criar um conjunto de regras personalizado, você pode abrir um conjunto de regras internas no **Editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando uma regra é violada, &mdash; por exemplo, mostrar um aviso ou um erro.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
 2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
 
@@ -57,7 +59,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 
 Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diálogo **novo arquivo** :
 
-1. Selecione **arquivo**  >  **novo**  >  **arquivo**ou pressione **Ctrl** + **N**.
+1. Selecione **arquivo**  >  **novo**  >  **arquivo** ou pressione **Ctrl** + **N**.
 
 2. Na caixa de diálogo **novo arquivo** , selecione a categoria **geral** à esquerda e, em seguida, selecione **conjunto de regras de análise de código**.
 
@@ -70,7 +72,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 > [!NOTE]
 > O procedimento a seguir não se aplica a projetos do .NET Core, que não têm uma guia de propriedade de **análise de código** .
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
+1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
 2. Nas páginas de **Propriedades** , selecione a guia **análise de código** .
 
@@ -90,7 +92,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 
    ![Caixa de diálogo Adicionar ou remover conjuntos de regras](media/add-remove-rule-sets.png)
 
-5. Selecione **salvar como**, insira um nome para o arquivo *. RuleSet* e, em seguida, selecione **salvar**.
+5. Selecione **salvar como** , insira um nome para o arquivo *. RuleSet* e, em seguida, selecione **salvar**.
 
    O novo conjunto de regras é selecionado na lista **executar este conjunto de regras** .
 
@@ -109,7 +111,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
    </RuleSet>
    ```
 
-- Se a mesma regra estiver listada duas ou mais vezes em um conjunto de regras com a *mesma* gravidade, você poderá ver o seguinte aviso no **lista de erros**:
+- Se a mesma regra estiver listada duas ou mais vezes em um conjunto de regras com a *mesma* gravidade, você poderá ver o seguinte aviso no **lista de erros** :
 
    **CA0063: falha ao carregar o arquivo de conjunto \[ de regras ' Your]. RuleSet ' ou um de seus arquivos de conjunto de regras dependentes. O arquivo não está em conformidade com o esquema do conjunto de regras.**
 
@@ -145,7 +147,7 @@ Agora que você tem um conjunto de regras, a próxima etapa é personalizar as r
 > [!div class="nextstepaction"]
 > [Modificar regras no editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras da análise de código](../code-quality/rule-set-reference.md)

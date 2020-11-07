@@ -1,5 +1,6 @@
 ---
 title: Especifique o local para onde os usuários finais são instalados
+description: Saiba como definir a propriedade URL de instalação, que é onde um aplicativo ClickOnce publicado é hospedado para instalação.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808718"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349614"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como especificar o local de onde os usuários finais instalarão
 
@@ -38,13 +39,13 @@ A `Installation URL` propriedade pode ser definida na página **publicar** do de
 
 ### <a name="to-specify-an-installation-url"></a>Para especificar uma URL de instalação
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
 3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato `https://www.contoso.com/ApplicationName` ou um caminho UNC usando o formato `\Server\ApplicationName` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como especificar para onde o Visual Studio copia os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
 - [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

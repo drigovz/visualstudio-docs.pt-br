@@ -1,5 +1,7 @@
 ---
 title: '&lt;Elemento Schedules &gt; (Bootstrapper) | Microsoft Docs'
+description: O elemento Schedules contém elementos Schedule, que definem horários específicos nos quais os comandos definidos pelo elemento Command devem ser executados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927326"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349354"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Elemento Schedules &gt; (Bootstrapper)
 O `Schedules` elemento contém `Schedule` elementos, que definem horários específicos nos quais os comandos definidos pelo `Command` elemento devem ser executados.
@@ -42,7 +44,7 @@ O `Schedules` elemento contém `Schedule` elementos, que definem horários espec
 ## <a name="elements-and-attributes"></a>Elementos e atributos
  O `Schedules` elemento é um filho do `Product` elemento. Cada `Product` elemento pode ter no máximo um `Schedules` elemento. O `Schedules` elemento não tem atributos.
 
-## <a name="schedule"></a>Agenda
+## <a name="schedule"></a>Agendamento
  O `Schedule` elemento é um filho do `Schedules` elemento. Um `Schedules` elemento deve ter pelo menos um `Schedule` elemento.
 
  `Schedule` tem o seguinte atributo.
@@ -62,6 +64,6 @@ O `Schedules` elemento contém `Schedule` elementos, que definem horários espec
 ## <a name="afterpackage"></a>AfterPackage
  O `AfterPackage` elemento instrui o instalador a executar um comando após a instalação do pacote especificado.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [\<Product> elementos](../deployment/product-element-bootstrapper.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

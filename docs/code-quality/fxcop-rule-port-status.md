@@ -1,6 +1,8 @@
 ---
 title: Status da porta de regra do FxCop
 ms.date: 05/21/2019
+description: Saiba mais sobre as regras de análise de código estático que foram portadas para analisadores de FxCop no Visual Studio. Exiba regras e recursos portados sobre atualizações de porta.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 945b26158da4c4c7788570db0c565ebbcfc2b460
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: cedd96036a6d0725dbde5f0b11400a20360a20ec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658575"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348939"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
@@ -23,11 +25,11 @@ Se você usou anteriormente a análise de código estático no Visual Studio, ta
 
 ## <a name="ported-rules"></a>Regras portadas
 
-A [página de documentação gerada automaticamente](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) no repositório Roslyn-Analyzers tem a lista mais atualizada de regras que foram modeladas para analisadores do FxCop. Essa página também tem informações adicionais, como se a regra está habilitada por padrão e se tem uma correção de *código*associada. (As[correções de código](../ide/quick-actions.md) são correções de um único clique disponíveis no menu de ícones de lâmpada no Visual Studio.)
+A [página de documentação gerada automaticamente](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) no repositório Roslyn-Analyzers tem a lista mais atualizada de regras que foram modeladas para analisadores do FxCop. Essa página também tem informações adicionais, como se a regra está habilitada por padrão e se tem uma correção de *código* associada. (As[correções de código](../ide/quick-actions.md) são correções de um único clique disponíveis no menu de ícones de lâmpada no Visual Studio.)
 
 A partir da data desta página, a lista de regras do FxCop que foram modeladas para [analisadores de FxCop](install-fxcop-analyzers.md) inclui:
 
-ID da regra | Título
+ID da regra | Title
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | Não declarar membros estáticos em tipos genéricos
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | Tipos com campos descartáveis devem ser descartáveis
@@ -200,6 +202,6 @@ CA5377 | Usar política de acesso no nível do contêiner
 CA5379 | Não usar algoritmo de função de derivação de chave fraca
 CA9999 | Incompatibilidade de versão do analisador
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Regras Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

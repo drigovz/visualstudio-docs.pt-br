@@ -1,6 +1,8 @@
 ---
 title: Análise herdada para código gerenciado
 ms.date: 06/12/2019
+description: Saiba mais sobre a análise herdada no Visual Studio. Veja como suprimir avisos e como executar análises manualmente, automaticamente e durante os check-ins e compilações.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927985"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348652"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visão geral da análise herdada para código gerenciado no Visual Studio
 
@@ -26,7 +28,7 @@ A análise de código para código gerenciado analisa os assemblies gerenciados 
 A ferramenta de análise representa as verificações que executa durante uma análise como mensagens de aviso. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.
 
 > [!NOTE]
-> A análise herdada (análise de código estático) não tem suporte para projetos .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto do .NET Core ou .NET Standard como parte do MSBuild, verá um erro semelhante a **erro: CA0055: não foi possível identificar \<your.dll> a plataforma para **. Para analisar o código em projetos .NET Core ou .NET Standard, use [analisadores de código](../code-quality/roslyn-analyzers-overview.md) em vez disso.
+> A análise herdada (análise de código estático) não tem suporte para projetos .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto do .NET Core ou .NET Standard como parte do MSBuild, verá um erro semelhante a **erro: CA0055: não foi possível identificar \<your.dll> a plataforma para**. Para analisar o código em projetos .NET Core ou .NET Standard, use [analisadores de código](../code-quality/roslyn-analyzers-overview.md) em vez disso.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integração do IDE (ambiente de desenvolvimento integrado)
 
@@ -34,7 +36,7 @@ Você pode executar a análise de código em seu projeto manualmente ou automati
 
 Para executar a análise de código cada vez que você criar um projeto, selecione a opção na página de propriedades de **análise de código** do projeto. Para obter mais informações, consulte [como habilitar e desabilitar a análise automática de código](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Para executar a análise de código manualmente em um projeto, na barra de menus, escolha **analisar**  >  **executar análise**  >  **de código \<project> executar análise de código em **.
+Para executar a análise de código manualmente em um projeto, na barra de menus, escolha **analisar**  >  **executar análise**  >  **de código \<project> executar análise de código em**.
 
 ## <a name="rule-sets"></a>Conjuntos de regras
 

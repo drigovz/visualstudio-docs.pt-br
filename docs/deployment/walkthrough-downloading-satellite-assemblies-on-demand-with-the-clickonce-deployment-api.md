@@ -1,5 +1,6 @@
 ---
 title: Baixar o assembly satélite sob demanda (API do ClickOnce)
+description: Saiba como marcar assemblies satélite como opcionais e baixar apenas o assembly de que um computador cliente precisa para suas configurações de cultura atuais.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809231"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349289"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Walkthrough: baixar assemblies satélite sob demanda com a API de implantação do ClickOnce
 Windows Forms aplicativos podem ser configurados para várias culturas por meio do uso de assemblies satélite. Um *assembly satélite* é um assembly que contém recursos de aplicativo para uma cultura diferente da cultura padrão do aplicativo.
@@ -55,7 +56,7 @@ Windows Forms aplicativos podem ser configurados para várias culturas por meio 
 
 4. Clique na guia **arquivos** .
 
-5. Clique no botão de **reticências** (**...**) e selecione o diretório que contém todos os assemblies e arquivos do seu aplicativo, incluindo os assemblies satélite gerados usando *Resgen.exe*. (Um assembly satélite terá um nome no formulário * \<isoCode>\ApplicationName.resources.dll*, em que \<isoCode> é um identificador de idioma no formato RFC 1766.)
+5. Clique no botão de **reticências** ( **...** ) e selecione o diretório que contém todos os assemblies e arquivos do seu aplicativo, incluindo os assemblies satélite gerados usando *Resgen.exe*. (Um assembly satélite terá um nome no formulário *\<isoCode>\ApplicationName.resources.dll* , em que \<isoCode> é um identificador de idioma no formato RFC 1766.)
 
 6. Clique em **popular** para adicionar os arquivos à sua implantação.
 
@@ -66,5 +67,5 @@ Windows Forms aplicativos podem ser configurados para várias culturas por meio 
 ## <a name="next-steps"></a>Próximas etapas
  Em um ambiente de produção, provavelmente você precisará remover a linha no exemplo de código que define <xref:System.Threading.Thread.CurrentUICulture%2A> para um valor específico, pois os computadores cliente terão o valor correto definido por padrão. Quando o aplicativo é executado em um computador cliente japonês, por exemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` por padrão. Definir esse valor programaticamente é uma boa maneira de testar seus assemblies satélites antes de implantar seu aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Localizar aplicativos ClickOnce](../deployment/localizing-clickonce-applications.md)
