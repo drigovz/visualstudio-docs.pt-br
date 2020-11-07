@@ -1,5 +1,6 @@
 ---
 title: Baixar assemblies sob demanda usando o designer (API do ClickOnce)
+description: Saiba como marcar determinados assemblies em seu aplicativo ClickOnce como opcionais usando o designer e baixe-os quando o Common Language Runtime precisar deles.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4451f5f4075d512c76119faceb02d2a92fff120c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 597f633c1f92b09add06909b8cb626262de1156f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809257"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350342"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Walkthrough: baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixados quando o aplicativo é executado pela primeira vez. No entanto, pode haver partes do seu aplicativo que são usadas por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional" e como baixá-los usando classes no <xref:System.Deployment.Application> namespace quando o Common Language Runtime os exige.
@@ -38,7 +39,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para criar um projeto que usa um assembly sob demanda com o Visual Studio
 
-1. Crie um novo projeto de Windows Forms no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**. Escolha um projeto de **biblioteca de classes** na caixa de diálogo e nomeie-o `ClickOnceLibrary` .
+1. Crie um novo projeto de Windows Forms no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . No menu **Arquivo** , aponte para **Adicionar** e clique em **Novo Projeto**. Escolha um projeto de **biblioteca de classes** na caixa de diálogo e nomeie-o `ClickOnceLibrary` .
 
    > [!NOTE]
    > Em Visual Basic, recomendamos que você modifique as propriedades do projeto para alterar o namespace raiz desse projeto para `Microsoft.Samples.ClickOnceOnDemand` ou para um namespace de sua escolha. Para simplificar, os dois projetos nesta explicação estão no mesmo namespace.

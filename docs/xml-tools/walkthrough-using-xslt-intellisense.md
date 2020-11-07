@@ -1,5 +1,7 @@
 ---
 title: 'Passo a passo: usando XSLT IntelliSense'
+description: Saiba como usar o IntelliSense XSLT para completar automaticamente os valores de alguns atributos seguindo as etapas neste passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a085627d598bfcc969c2e76d717a2f49a31922b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8bbed6a70316e92e2c79aaa6cabc20930f10e7
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817275"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351460"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
 
@@ -160,6 +162,6 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
 
      Observe como a lista de prefixos apareceu nos atributos `stylesheet-prefix` e `result-prefix` do elemento de `xsl:namespace-alias`.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- [Recursos do IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Recursos do IntelliSense o editor XML](../xml-tools/xml-editor-intellisense-features.md)

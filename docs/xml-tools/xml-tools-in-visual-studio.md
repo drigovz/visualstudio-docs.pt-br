@@ -1,5 +1,7 @@
 ---
 title: Editor de XML e designer de esquema
+description: Saiba mais sobre as ferramentas do Visual Studio para trabalhar com esquemas XML, XSLT e XML, incluindo o editor de XML, o designer de esquema XML e o depurador XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -32,12 +34,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e763fa3475f26b9742ea5fb7061978e711eb22ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc8cac3e16e06c23d0d51ee4483bcf5fb8abfb05
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816417"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351278"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visão geral das ferramentas XML no Visual Studio
 
@@ -72,7 +74,7 @@ O Visual Studio dá suporte à [depuração de folhas de estilo XSLT](../xml-too
 > [!NOTE]
 > O depurador XSLT só está disponível na edição Enterprise do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Xml?displayProperty=fullName>
 - [Transformações XSLT](/dotnet/standard/data/xml/xslt-transformations)

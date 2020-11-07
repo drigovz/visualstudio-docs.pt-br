@@ -1,5 +1,7 @@
 ---
 title: Gerenciar assinatura de assembly e de manifesto
+description: Saiba mais sobre as vantagens da assinatura de nome forte, que dá a um componente de software uma identidade globalmente exclusiva.
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770409"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351382"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gerenciar assinatura de assembly e de manifesto
 
@@ -38,13 +40,13 @@ Para obter informações sobre como assinar assemblies em projetos C++, consulte
 
 Você pode assinar os manifestos de aplicativo e assemblies do .NET:
 
-- Executáveis (*.exe*)
+- Executáveis ( *.exe* )
 
-- Manifestos de aplicativo (*.exe.manifest*)
+- Manifestos de aplicativo ( *.exe.manifest* )
 
-- Manifestos de implantação (*.application*)
+- Manifestos de implantação ( *.application* )
 
-- Assemblies do componente compartilhado (*.dll*)
+- Assemblies do componente compartilhado ( *.dll* )
 
 Assine os seguintes tipos de ativo:
 
@@ -58,7 +60,7 @@ Em geral, você não deve assinar executáveis. Um componente de nome forte não
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Como assinar um assembly no Visual Studio
 
-Assine um aplicativo ou um componente usando a guia **Assinatura** da janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
+Assine um aplicativo ou um componente usando a guia **Assinatura** da janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades** ). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
 
 Especifique um arquivo de chave. Se você optar por criar um arquivo de chave, os novos arquivos de chave sempre serão criados no formato *.pfx*. É necessário um nome e uma senha para o novo arquivo.
 
@@ -71,7 +73,7 @@ Se você só tiver acesso a uma chave pública, use a assinatura com atraso para
 
 Para obter informações sobre manifestos de assinatura, consulte [como assinar manifestos de aplicativo e implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Assemblies de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assemblies de nome forte (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

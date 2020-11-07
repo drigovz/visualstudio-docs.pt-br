@@ -1,5 +1,7 @@
 ---
 title: Referência de esquema de produto e pacote | Microsoft Docs
+description: Saiba mais sobre o arquivo de produto, um manifesto XML que descreve as dependências externas exigidas por um aplicativo ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745623"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350706"
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
 Um *arquivo de produto* é um manifesto XML que descreve todas as dependências externas exigidas por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas incluem o .NET Framework e o MDAC (Microsoft Data Access Components). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.
@@ -48,7 +50,7 @@ Um *arquivo de produto* é um manifesto XML que descreve todas as dependências 
 |[\<Strings> Elementos](../deployment/strings-element-bootstrapper.md)|Elemento necessário. Armazena versões localizadas das cadeias de caracteres de erro e nome do produto.|Nenhum|
 
 ## <a name="remarks"></a>Comentários
- O esquema do pacote é consumido por *Setup.exe*, um programa stub gerado pela tarefa de inicialização do MS Build que contém pouca lógica embutida em código. O esquema orienta todos os aspectos do processo de instalação.
+ O esquema do pacote é consumido por *Setup.exe* , um programa stub gerado pela tarefa de inicialização do MS Build que contém pouca lógica embutida em código. O esquema orienta todos os aspectos do processo de instalação.
 
  `InstallChecks` os testes que setup.exe devem ser executados para a existência de um determinado pacote. `PackageFiles` lista todos os pacotes que o processo de instalação pode ter para instalar, caso um determinado teste falhe. Cada entrada de comando em comandos executa um dos testes descritos por `InstallChecks` e especifica qual `PackageFile` será executado caso o teste falhe. Você pode usar o `Strings` elemento para localizar nomes de produtos e mensagens de erro, para que você possa usar um único binário de instalação para instalar seu aplicativo para qualquer número de idiomas.
 
@@ -157,6 +159,6 @@ Um *arquivo de produto* é um manifesto XML que descreve todas as dependências 
 </Product>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

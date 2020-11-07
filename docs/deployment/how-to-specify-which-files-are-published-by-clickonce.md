@@ -1,5 +1,6 @@
 ---
 title: Especificar arquivos a serem publicados (ClickOnce)
+description: Saiba como excluir arquivos, marcar arquivos como arquivos de dados ou pré-requisitos e criar grupos para instalação condicional para um aplicativo ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809486"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350877"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como especificar os arquivos a serem publicados pelo ClickOnce
 Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, todos os arquivos que não são de código no projeto são implantados junto com o aplicativo. Em alguns casos, talvez você não queira ou precise publicar determinados arquivos, ou talvez queira instalar determinados arquivos com base em condições. O Visual Studio fornece os recursos para excluir arquivos, marcar arquivos como arquivos de dados ou pré-requisitos e criar grupos de arquivos para instalação condicional.
@@ -36,9 +37,9 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
  Os arquivos com a propriedade de **ação de compilação** definida como **conteúdo** são designados como arquivos de aplicativo e serão marcados como incluídos por padrão. Eles podem ser incluídos, excluídos ou marcados como arquivos de dados. As exceções são as seguintes:
 
-- Os arquivos de dados, como os arquivos do SQL Database (*. MDF* e *. mdb*) e os arquivos XML serão marcados como arquivos de dados por padrão.
+- Os arquivos de dados, como os arquivos do SQL Database ( *. MDF* e *. mdb* ) e os arquivos XML serão marcados como arquivos de dados por padrão.
 
-- Referências a assemblies (arquivos *. dll* ) são designadas da seguinte maneira quando você adiciona a referência: se **Copy local** for **false**, ele será marcado por padrão como um assembly de pré-requisito (**pré-requisito (auto)**) que deve estar presente no GAC antes que o aplicativo seja instalado. Se **Copy local** for **true**, o assembly será marcado por padrão como um assembly de aplicativo (**include (auto)**) e será copiado para a pasta do aplicativo na instalação. Uma referência COM será exibida na caixa de diálogo **arquivos de aplicativo** (como um arquivo *. ocx* ) somente se sua propriedade **isolada** estiver definida como **true**. Por padrão, ele será incluído.
+- Referências a assemblies (arquivos *. dll* ) são designadas da seguinte maneira quando você adiciona a referência: se **Copy local** for **false** , ele será marcado por padrão como um assembly de pré-requisito ( **pré-requisito (auto)** ) que deve estar presente no GAC antes que o aplicativo seja instalado. Se **Copy local** for **true** , o assembly será marcado por padrão como um assembly de aplicativo ( **include (auto)** ) e será copiado para a pasta do aplicativo na instalação. Uma referência COM será exibida na caixa de diálogo **arquivos de aplicativo** (como um arquivo *. ocx* ) somente se sua propriedade **isolada** estiver definida como **true**. Por padrão, ele será incluído.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para adicionar arquivos à caixa de diálogo arquivos de aplicativo
 
@@ -48,7 +49,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-exclude-files-from-clickonce-publishing"></a>Para excluir arquivos da publicação do ClickOnce
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -60,7 +61,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-mark-files-as-data-files"></a>Para marcar arquivos como arquivos de dados
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -72,7 +73,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-mark-files-as-prerequisites"></a>Para marcar arquivos como pré-requisitos
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -84,7 +85,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-add-a-new-file-group"></a>Para adicionar um novo grupo de arquivos
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -101,7 +102,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 ### <a name="to-add-a-file-to-a-group"></a>Para adicionar um arquivo a um grupo
 
-1. Com um projeto selecionado no **Gerenciador de soluções**, no menu **projeto** , clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de soluções** , no menu **projeto** , clique em **Propriedades**.
 
 2. Clique na guia **Publicar**.
 
@@ -114,6 +115,6 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
     > [!NOTE]
     > Você não pode alterar o **grupo de download** para arquivos que são necessários para a execução do aplicativo.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Como publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

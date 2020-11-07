@@ -1,5 +1,7 @@
 ---
 title: Exibição inicial do Designer de Esquema XML
+description: Saiba mais sobre os comandos disponíveis na exibição inicial do designer de esquema XML (XSD).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592523"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351356"
 ---
 # <a name="start-view"></a>O modo de Início
 
@@ -45,9 +47,9 @@ Os seguintes botões estão ativados na barra de ferramentas do designer XSD qua
 |**Mostrar Exibição de Modelo de Conteúdo**|Alterna a O modo do modelo de conteúdo. Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **2**.|
 |**Mostrar Exibição de Gráfico**|Alterna a O modo de gráfico. Este modo de exibição pode ser acessado usando o atalho de teclado: **Ctrl** + **3**.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Exibição de gráfico](../xml-tools/graph-view.md)
-- [Exibição do modelo de conteúdo](../xml-tools/content-model-view.md)
+- [O modo do modelo de conteúdo](../xml-tools/content-model-view.md)
 - [Editor de XML](../xml-tools/xml-editor.md)

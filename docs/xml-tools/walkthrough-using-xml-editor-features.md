@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: usando recursos do editor de XML'
+description: Saiba como criar um novo documento XML seguindo as etapas neste passo a passos que demonstra recursos do editor de XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817392"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351473"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Walkthrough: usar recursos do editor de XML
+# <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor XML
 
 As etapas nessa explicação passo a passo mostram como criar um novo documento XML. O passo a passo também usa alguns dos recursos do editor de XML que o tornam valioso para a criação de XML.
 
@@ -24,13 +26,13 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
-1. No menu **arquivo** , aponte para **novo**e clique em **arquivo**.
+1. No menu **arquivo** , aponte para **novo** e clique em **arquivo**.
 
 2. Selecione **arquivo XML** no painel **modelos** e clique em **abrir**.
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela Propriedades do documento, clique no botão procurar (**...**) no campo **esquemas** .
+3. Na janela Propriedades do documento, clique no botão procurar ( **...** ) no campo **esquemas** .
 
      A caixa de diálogo **esquemas XSD** é exibida.
 
@@ -58,7 +60,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
     - **funcionário** para adicionar o elemento raiz.
 
-2. Selecione ** &lt; !--** para adicionar um nó de comentário e pressione **Enter**.
+2. Selecione **&lt; !--** para adicionar um nó de comentário e pressione **Enter**.
 
      O editor insere uma marca de fim do comentário e colocar o cursor entre o início e marcas de comentário final.
 
@@ -96,7 +98,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-format-the-xml-document"></a>Para formatar o documento XML
 
-- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl** + **E**,**D**.
+- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl** + **E** , **D**.
 
    ![Botão Formatar documento XML no Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +106,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
-1. No menu **arquivo**, selecione **Salvar como**.
+1. No menu **arquivo** , selecione **Salvar como**.
 
      A caixa de diálogo **salvar arquivo como** é exibida. O nome de arquivo padrão é *' xmlarquivo1 '*.
 
@@ -130,6 +132,6 @@ O seguinte arquivo de esquema é usado neste passo a passos:
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

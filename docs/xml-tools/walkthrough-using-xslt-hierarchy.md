@@ -1,16 +1,18 @@
 ---
 title: 'Passo a passo: Usando a hierarquia XSLT'
+description: Saiba como depurar em uma folha de estilos referenciada usando a ferramenta de hierarquia XSLT no Visual Studio seguindo as etapas neste passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815026"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351317"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Walkthrough: usar a hierarquia XSLT
 
@@ -46,7 +48,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </COLLECTION>
     ```
 
-1. Adicione o seguinte *xslincludefile. xsl*:
+1. Adicione o seguinte *xslincludefile. xsl* :
 
     ```xml
     <?xml version='1.0'?>
@@ -109,6 +111,6 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
 
 6. Quando o depurador parar na instrução `<xsl:include href="xslincludefile.xsl" />` , pressione o botão **Step Into** . A depuração pode continuar na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criador de perfil XSLT](../xml-tools/xslt-profiler.md)

@@ -1,5 +1,7 @@
 ---
 title: Validação de documento XML no editor de XML
+description: Saiba mais sobre a validação de documento XML no editor de XML e como ele verifica a sintaxe XML 1,0 e executa a validação de dados conforme você digita.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 389328e97f29d97962353e86f73c39c7c5459bfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592406"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351447"
 ---
 # <a name="xml-document-validation"></a>Validação de documento XML
 
@@ -43,6 +45,6 @@ Ao editar um arquivo XSLT, o arquivo *XSLT. xsd* localizado no cache de esquema 
 ## <a name="xml-schema-xsd-files"></a>Arquivos de esquema XML (XSD)
 Ao editar um arquivo de esquema XML, o arquivo *xsdSchema. xsd* localizado no cache de esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Todos os erros de compilação também são mostrados com traços ondulados vermelhos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

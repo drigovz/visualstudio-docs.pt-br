@@ -1,5 +1,7 @@
 ---
 title: Visão geral da implantação de aplicativo confiável | Microsoft Docs
+description: Saiba como implantar aplicativos ClickOnce com permissões elevadas usando a tecnologia de implantação de aplicativos confiáveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3fca6db978eefc5af751d793ad299d89688cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72806834"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350485"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas usando a tecnologia de implantação de aplicativo confiável.
@@ -38,7 +40,7 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
 |--------------------|-----------------|
 |administrator|A entidade organizacional responsável por atualizar e manter computadores cliente|
 |Gerenciador de confiança|O subsistema dentro do Common Language Runtime (CLR) responsável por impor a segurança do aplicativo cliente.|
-|publicador|A entidade que grava e mantém o aplicativo.|
+|editor|A entidade que grava e mantém o aplicativo.|
 |implantador|A entidade que empacota e distribui o aplicativo aos usuários.|
 |certificado|Uma assinatura criptográfica que consiste em uma chave pública e privada; geralmente emitido por uma autoridade de certificação (CA) que pode comprovar sua autenticidade.|
 |Certificado Authenticode|Um certificado com metadados inseridos que descrevem, entre outras coisas, os usos para os quais o certificado pode ser empregado.|
@@ -77,7 +79,7 @@ Você deve seguir estas etapas para aproveitar a implantação de aplicativos co
 
 - O namespace <xref:System.Security.Cryptography?displayProperty=fullName>.
 
-- *CertMgr.exe*, que é um componente do Internet Explorer e, portanto, existe no Windows 98 e em todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe* , que é um componente do Internet Explorer e, portanto, existe no Windows 98 e em todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Criar um aplicativo ClickOnce
  Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é um aplicativo cliente .NET Framework combinado com arquivos de manifesto que descrevem os parâmetros de instalação do aplicativo e de fornecimento. Você pode transformar seu programa em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o comando **Publish** no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Como alternativa, você pode gerar todos os arquivos necessários para a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando ferramentas incluídas no [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Para obter etapas detalhadas sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -101,6 +103,6 @@ Você deve seguir estas etapas para aproveitar a implantação de aplicativos co
 ## <a name="limitations-of-trusted-application-deployment"></a>Limitações da implantação de aplicativos confiáveis
  Você pode usar a implantação de aplicativo confiável para conceder confiança elevada a [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos implantados pela Web ou por meio de um compartilhamento de arquivos corporativo. Você não precisa usar a implantação de aplicativo confiável para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos distribuídos em um CD, porque, por padrão, esses aplicativos recebem confiança total.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Passo a passo: Implantar um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

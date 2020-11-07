@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento InstallChecks (Bootstrapper) | Microsoft Docs'
+description: O elemento InstallChecks dá suporte à inicialização de uma variedade de testes no computador local para garantir que todos os pré-requisitos de um aplicativo tenham sido instalados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536299"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350862"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (Bootstrapper)
 O `InstallChecks` elemento dá suporte à inicialização de uma variedade de testes em relação ao computador local para garantir que todos os pré-requisitos apropriados para um aplicativo tenham sido instalados.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <InstallChecks>
@@ -179,6 +181,6 @@ O `InstallChecks` elemento dá suporte à inicialização de uma variedade de te
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [\<Commands> elementos](../deployment/commands-element-bootstrapper.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

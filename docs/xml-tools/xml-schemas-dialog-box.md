@@ -1,5 +1,7 @@
 ---
 title: esquemas XML
+description: Saiba mais sobre a caixa de diálogo esquemas XML usada para selecionar quais esquemas XSD (linguagem de definição de esquema XML) associar a um documento XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592328"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351395"
 ---
 # <a name="xml-schemas-dialog-box"></a>Caixa de diálogo de esquemas XML
 
@@ -51,7 +53,7 @@ Abre a caixa de diálogo **abrir esquema XSD** , que permite que você selecione
 
 Remove o esquema do dataset selecionado de esquema. Remove o esquema de cache de memória do esquema, mas não no sistema de arquivos.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como: selecionar os esquemas XML a serem usados](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache de esquema](../xml-tools/schema-cache.md)

@@ -1,5 +1,7 @@
 ---
 title: Publicar no Serviço de Aplicativo no Linux
+description: Saiba mais sobre os métodos para publicar ASP.NET Core aplicativos em Azure App o Linux de serviço usando contêineres, incluindo opções contínuas e de uso único.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 790e88edcd5d0d77e09cc349c82c242cd3da876d
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830738"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350714"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no Serviço de Aplicativo no Linux usando o Visual Studio
 
@@ -30,7 +32,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
 ## <a name="publish-to-azure-app-service-on-linux"></a>Publicar no serviço de Azure App no Linux
 
-1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
+1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar** ).
 
     ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
@@ -48,7 +50,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
     ![Link para criar uma nova instância do serviço de Azure App](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo**, **grupo de recursos**e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
+1. Na caixa de diálogo **criar Azure app serviço (Linux)** , os campos **nome do aplicativo** , **grupo de recursos** e entrada do plano do **serviço de aplicativo** são preenchidos. Você pode manter esses nomes ou alterá-los. Quando estiver pronto, selecione **criar**.
 
     ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
@@ -65,7 +67,7 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 Nas etapas anteriores, você criou os recursos do Azure em um grupo de recursos. Se você não espera precisar desses recursos no futuro, poderá excluí-los ao excluir o grupo de recursos.
 No menu à esquerda no portal do Azure, selecione **Grupos de recursos** e, em seguida, selecione **myResourceGroup**.
 Na página do grupo de recursos, certifique-se de que os recursos listados são aqueles que deseja excluir.
-Selecione **Excluir**, digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
+Selecione **Excluir** , digite **myResourceGroup** na caixa de texto e selecione **Excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,5 +1,7 @@
 ---
 title: Solucionando problemas de implantações do ClickOnce | Microsoft Docs
+description: Use este artigo para ajudá-lo a diagnosticar e resolver os problemas mais comuns com implantações do ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ff6f65b9c3e35825c867f39e119211174a4698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235167"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350495"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solucionar problemas de implantações do ClickOnce
 Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.
@@ -56,7 +58,7 @@ Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com 
 
  Descreve uma técnica para depurar aplicativos ClickOnce que usam System. Deployment. Application.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)

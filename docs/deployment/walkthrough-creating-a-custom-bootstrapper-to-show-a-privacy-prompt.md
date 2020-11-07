@@ -1,5 +1,6 @@
 ---
 title: Criar um bootstrapper personalizado com um aviso de privacidade
+description: Saiba como configurar aplicativos ClickOnce para atualizar automaticamente quando os assemblies com versões de arquivo e versões de assembly mais recentes estiverem disponíveis.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8fbb05fcfdb1a639855ca31e9574d3037559610
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809270"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350459"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar aplicativos ClickOnce para atualizar automaticamente quando os assemblies com versões de arquivo mais recentes e versões de assembly ficarem disponíveis. Para garantir que seus clientes consentim nesse comportamento, você pode exibir um aviso de privacidade para eles. Em seguida, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tiver permissão para ser atualizado automaticamente, ele não será instalado.
@@ -42,17 +43,17 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-create-a-consent-dialog-box"></a>Para criar uma caixa de diálogo de consentimento
 
-1. No menu **Arquivo** , aponte para **Novo**e clique em **Projeto**.
+1. No menu **Arquivo** , aponte para **Novo** e clique em **Projeto**.
 
-2. Na caixa de diálogo **novo projeto** , clique em **Windows**e em **WindowsFormsApplication**.
+2. Na caixa de diálogo **novo projeto** , clique em **Windows** e em **WindowsFormsApplication**.
 
-3. Para o **nome**, digite **ConsentDialog**e clique em **OK**.
+3. Para o **nome** , digite **ConsentDialog** e clique em **OK**.
 
 4. No designer, clique no formulário.
 
 5. Na janela **Propriedades** , altere a propriedade **texto** para **atualizar a caixa de diálogo de consentimento**.
 
-6. Na **caixa de ferramentas**, expanda **todos os Windows Forms**e arraste um controle **rótulo** para o formulário.
+6. Na **caixa de ferramentas** , expanda **todos os Windows Forms** e arraste um controle **rótulo** para o formulário.
 
 7. No designer, clique no controle rótulo.
 
@@ -60,17 +61,17 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
     O aplicativo que você está prestes a instalar verifica as atualizações mais recentes na Web. Ao clicar em "concordo", você autoriza o aplicativo a verificar e instalar atualizações automaticamente da Internet.
 
-9. Na **caixa de ferramentas**, arraste um controle de **caixa de seleção** para o meio do formulário.
+9. Na **caixa de ferramentas** , arraste um controle de **caixa de seleção** para o meio do formulário.
 
 10. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **concordo**.
 
-11. Na **caixa de ferramentas**, arraste um controle de **botão** para a parte inferior esquerda do formulário.
+11. Na **caixa de ferramentas** , arraste um controle de **botão** para a parte inferior esquerda do formulário.
 
 12. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **continuar**.
 
 13. Na janela **Propriedades** , altere a propriedade **(Name)** em **design** para **ProceedButton**.
 
-14. Na **caixa de ferramentas**, arraste um controle de **botão** para a parte inferior direita do formulário.
+14. Na **caixa de ferramentas** , arraste um controle de **botão** para a parte inferior direita do formulário.
 
 15. Na janela **Propriedades** , altere a propriedade **Text** em **layout** para **Cancelar**.
 
@@ -111,15 +112,15 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
      Somente para desenvolvedores de Visual Basic:
 
-    1. Em **Gerenciador de soluções**, clique em **ConsentDialog**.
+    1. Em **Gerenciador de soluções** , clique em **ConsentDialog**.
 
-    2. No menu **projeto** , clique em **Adicionar módulo**e, em seguida, clique em **Adicionar**.
+    2. No menu **projeto** , clique em **Adicionar módulo** e, em seguida, clique em **Adicionar**.
 
     3. No arquivo de código *Module1. vb* , adicione o código a seguir.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. No menu **projeto** , clique em **ConsentDialog Propriedades**e, em seguida, clique na guia **aplicativo** .
+    4. No menu **projeto** , clique em **ConsentDialog Propriedades** e, em seguida, clique na guia **aplicativo** .
 
     5. Desmarque **habilitar estrutura do aplicativo**.
 
@@ -233,9 +234,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Para definir o aplicativo de consentimento de atualização como um pré-requisito
 
-1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e clique em **pré-requisitos**.
 
@@ -251,9 +252,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Para criar e testar o programa de instalação, não clicando em Concordo
 
-1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e, em seguida, clique em **Publicar agora**.
 
@@ -277,9 +278,9 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Para criar e testar o programa de instalação clicando em Concordo
 
-1. Em **Gerenciador de soluções**, clique no nome do aplicativo que você deseja implantar.
+1. Em **Gerenciador de soluções** , clique no nome do aplicativo que você deseja implantar.
 
-2. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
+2. No menu **Projeto** , clique em *ProjectName* **Propriedades**.
 
 3. Clique na página **publicar** e, em seguida, clique em **Publicar agora**.
 
@@ -293,13 +294,13 @@ Você pode configurar aplicativos ClickOnce para atualizar automaticamente quand
 
      O aplicativo de caixa de diálogo de consentimento de atualização aparece e mostra o seguinte texto: o aplicativo que você está prestes a instalar verifica se há atualizações mais recentes na Web. Ao clicar em Concordo, você autoriza o aplicativo a verificar se há atualizações automaticamente na Internet.
 
-7. Clique em **concordo**e em **continuar**.
+7. Clique em **concordo** e em **continuar**.
 
      O aplicativo começa a ser instalado.
 
 8. Se a caixa de diálogo instalação do aplicativo for exibida, clique em **instalar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Pré-requisitos de implantação do aplicativo](../deployment/application-deployment-prerequisites.md)
 - [Criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)
 - [Como criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md)

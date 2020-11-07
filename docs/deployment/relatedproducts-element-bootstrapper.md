@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento RelatedProducts (Bootstrapper) | Microsoft Docs'
+description: O elemento RelatedProducts define outros produtos que dependem ou estão incluídos no produto atual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747469"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350563"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;&gt;Elemento RelatedProducts (Bootstrapper)
 O `RelatedProducts` elemento define outros produtos que dependem ou estão incluídos no produto atual.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <RelatedProducts>
@@ -82,5 +84,5 @@ O `RelatedProducts` elemento define outros produtos que dependem ou estão inclu
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [\<Product> elementos](../deployment/product-element-bootstrapper.md)

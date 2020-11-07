@@ -1,5 +1,7 @@
 ---
 title: URL de suporte para pré-requisitos na implantação do ClickOnce
+description: Saiba como uma implantação do ClickOnce testa os pré-requisitos para que o aplicativo ClickOnce seja executado e como a implantação lida com os pré-requisitos ausentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381724"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350940"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Como especificar uma URL de suporte para pré-requisitos individuais em uma implantação do ClickOnce
 Uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação pode testar vários pré-requisitos que devem estar disponíveis no computador cliente para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que o aplicativo seja executado. Essas dependências incluem a versão mínima necessária do .NET Framework, a versão do sistema operacional e todos os assemblies que devem ser pré-instalados no GAC (cache de assembly global). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]no entanto, o não pode instalar nenhum desses pré-requisitos; se um pré-requisito não for encontrado, ele simplesmente interromperá a instalação e exibirá uma caixa de diálogo explicando por que a instalação falhou.
 
  Há dois métodos para instalar os pré-requisitos. Você pode instalá-los usando um aplicativo bootstrapper. Como alternativa, você pode especificar uma URL de suporte para pré-requisitos individuais, que será exibida para os usuários na caixa de diálogo se o pré-requisito não for encontrado. A página referenciada por essa URL pode conter links para instruções para instalar o pré-requisito necessário. Se um aplicativo não especificar uma URL de suporte para um pré-requisito individual, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o exibirá a URL de suporte especificada no manifesto de implantação para o aplicativo como um todo, se ele estiver definido.
 
- Embora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe*e *MageUI.exe* possam ser usados para gerar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações, nenhuma dessas ferramentas dá suporte direto à especificação de uma URL de suporte para pré-requisitos individuais. Este documento descreve como modificar o manifesto do aplicativo de implantação e o manifesto de implantação para incluir essas URLs de suporte.
+ Embora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , *Mage.exe* e *MageUI.exe* possam ser usados para gerar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações, nenhuma dessas ferramentas dá suporte direto à especificação de uma URL de suporte para pré-requisitos individuais. Este documento descreve como modificar o manifesto do aplicativo de implantação e o manifesto de implantação para incluir essas URLs de suporte.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Especificar uma URL de suporte para um pré-requisito individual
 
@@ -81,7 +83,7 @@ Uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantaç
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
  A URL de suporte não será exibida na caixa de diálogo se o aplicativo estiver marcado para ser executado em confiança parcial.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Passo a passo: Implantar um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> elementos](../deployment/compatibleframeworks-element-clickonce-deployment.md)

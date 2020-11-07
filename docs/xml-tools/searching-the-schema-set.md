@@ -1,5 +1,7 @@
 ---
 title: XML Schema Explorer-Pesquisar o conjunto de esquema
+description: Saiba como fazer uma pesquisa de palavra-chave e uma pesquisa específica de esquema do conjunto de esquema no XML Schema Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8378ebaccefaedfcc3d83f23bcab56f7417264dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c73af4f40abddaaba15e3b2cc785ab412e8884e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592497"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351512"
 ---
 # <a name="search-the-schema-set"></a>Pesquisar o conjunto de esquemas
 
@@ -43,7 +45,7 @@ O **XML Schema Explorer** também inclui pesquisas internas que você pode acess
 
 ## <a name="display-and-navigate-search-results"></a>Exibir e navegar pelos resultados da pesquisa
 
-Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados da pesquisa também são realçados no **XML Schema Explorer** e marcados por tiques na barra de rolagem vertical. Você pode navegar pelos resultados da pesquisa usando o botão **ir para o próximo resultado da pesquisa** e ir para os botões de **resultado da pesquisa anterior** no painel resultados do resumo da barra de ferramentas do **Gerenciador de esquema XML** ; usando as teclas de teclado **F3** e **Shift** + **F3**; ou clicando nas marcas de escala na barra de rolagem.
+Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados da pesquisa também são realçados no **XML Schema Explorer** e marcados por tiques na barra de rolagem vertical. Você pode navegar pelos resultados da pesquisa usando o botão **ir para o próximo resultado da pesquisa** e ir para os botões de **resultado da pesquisa anterior** no painel resultados do resumo da barra de ferramentas do **Gerenciador de esquema XML** ; usando as teclas de teclado **F3** e **Shift** + **F3** ; ou clicando nas marcas de escala na barra de rolagem.
 
 Você pode adicionar os resultados da pesquisa ao espaço de trabalho clicando no botão **adicionar nós realçados ao espaço de trabalho** no painel resultados do resumo.
 
@@ -53,6 +55,6 @@ Você pode adicionar os resultados da pesquisa ao espaço de trabalho clicando n
 
 Para limpar os resultados da pesquisa, clique no botão **x** no painel resultados do resumo da barra de ferramentas de pesquisa do **Gerenciador de esquema XML** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

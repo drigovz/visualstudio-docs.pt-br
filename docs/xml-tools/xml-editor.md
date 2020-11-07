@@ -1,5 +1,7 @@
 ---
 title: Editor de XML
+description: Saiba mais sobre o editor de XML no Visual Studio que se baseia no editor de texto e inclui suporte adicional para as linguagens XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713536"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351434"
 ---
 # <a name="xml-editor"></a>Editor de XML
 
@@ -40,7 +42,7 @@ O editor de XML inclui os seguintes recursos:
 
 - Integração com o [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Isso fornece uma exibição hierárquica de esquemas XML.
 
-O editor de XML é invocado para extensões de arquivo conhecidas, como *. xml*, *. xsd*, *. xsl*e *. config*. Ele também será invocado em qualquer extensão de arquivo desconhecida se o arquivo parecer conter XML.
+O editor de XML é invocado para extensões de arquivo conhecidas, como *. xml* , *. xsd* , *. xsl* e *. config*. Ele também será invocado em qualquer extensão de arquivo desconhecida se o arquivo parecer conter XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -54,7 +56,7 @@ O [criador de perfil XSLT](../xml-tools/xslt-profiler.md) cria relatórios de de
 
 A [ferramenta de hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) permite que você adicione pontos de interrupção em folhas de estilo incluídas e/ou regras de modelo internas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Opções do editor de XML – formatação](../ide/reference/options-text-editor-xml-formatting.md)
 - [Opções do editor de XML – diversos](../ide/reference/options-text-editor-xml-miscellaneous.md)

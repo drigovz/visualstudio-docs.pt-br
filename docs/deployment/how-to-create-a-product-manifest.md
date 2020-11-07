@@ -1,5 +1,7 @@
 ---
 title: Criar um manifesto do produto | Microsoft Docs
+description: Saiba como implantar pré-requisitos para seu aplicativo ClickOnce com um pacote que contém um manifesto de produto único e um manifesto de pacote para cada localidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852212"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351213"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
 Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um único arquivo de manifesto de produto, mas um manifesto de pacote para cada localidade. O manifesto do pacote contém aspectos específicos da localização do seu pacote. Isso inclui cadeias de caracteres, contratos de licença de usuário final e pacotes de idiomas.
@@ -36,7 +38,7 @@ Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacot
 
 1. Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.
 
-2. No Visual Studio, crie um novo arquivo XML chamado *product.xml*e salve-o na pasta *C:\package*
+2. No Visual Studio, crie um novo arquivo XML chamado *product.xml* e salve-o na pasta *C:\package*
 
 3. Adicione o XML a seguir para descrever o namespace XML e o código do produto para o pacote. Substitua o código do produto por um identificador exclusivo para o pacote.
 
@@ -64,7 +66,7 @@ Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacot
 
 6. Copie ou mova o arquivo de *CorePackage.msi* para a pasta *C:\package*
 
-7. Adicione XML para instalar o pacote usando comandos bootstrapper. O bootstrapper adiciona automaticamente o sinalizador **/qn** ao arquivo *. msi* , que será instalado silenciosamente. Se o arquivo for um *. exe*, o bootstrapper executará o arquivo *. exe* usando o Shell. O XML a seguir mostra nenhum argumento para *CorePackage.msi*, mas você pode colocar o argumento de linha de comando no `Arguments` atributo.
+7. Adicione XML para instalar o pacote usando comandos bootstrapper. O bootstrapper adiciona automaticamente o sinalizador **/qn** ao arquivo *. msi* , que será instalado silenciosamente. Se o arquivo for um *. exe* , o bootstrapper executará o arquivo *. exe* usando o Shell. O XML a seguir mostra nenhum argumento para *CorePackage.msi* , mas você pode colocar o argumento de linha de comando no `Arguments` atributo.
 
     ```xml
     <Commands>
@@ -158,5 +160,5 @@ Para implantar os pré-requisitos para seu aplicativo, você pode criar um pacot
 </Product>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

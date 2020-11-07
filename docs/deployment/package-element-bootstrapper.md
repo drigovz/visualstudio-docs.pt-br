@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Package (Bootstrapper) | Microsoft Docs'
+description: O elemento Package é o elemento XML de nível superior dentro de um arquivo de pacote. O elemento Package é obrigatório.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745756"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350732"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;&gt;Elemento Package (Bootstrapper)
 O `Package` elemento é o elemento XML de nível superior dentro de um arquivo de pacote.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <Package
@@ -147,7 +149,7 @@ O `Package` elemento é o elemento XML de nível superior dentro de um arquivo d
 |--------------------| - |
 | `Culture` | Obrigatórios. Define a cultura para este pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista cadeias de caracteres específicas de cultura para nomes de produtos e mensagens de erro durante a instalação. |
 | `Name` | Obrigatórios. O nome do pacote exibido para o desenvolvedor em uma ferramenta como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com as `Name` `Culture` Propriedades e definidas para corresponder às `Name` `Culture` Propriedades e de `Package` . |
-| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser de texto sem formatação (*. txt*) ou Rich Text. (*. rtf*) |
+| `LicenseAgreement` | Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença do End-User (EULA).  Esse arquivo pode ser de texto sem formatação ( *. txt* ) ou Rich Text. ( *. rtf* ) |
 
 ## <a name="example"></a>Exemplo
  O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuição do .NET Framework 2,0.
@@ -187,5 +189,5 @@ O `Package` elemento é o elemento XML de nível superior dentro de um arquivo d
 </Package>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)

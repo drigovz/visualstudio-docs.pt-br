@@ -1,5 +1,7 @@
 ---
 title: Cache de esquema do editor de XML
+description: Saiba mais sobre o cache de esquema fornecido pelo editor de XML que inclui esquemas XML padrão usados para IntelliSense e validação de documento XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592484"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351369"
 ---
 # <a name="schema-cache"></a>Cache de esquema
 
@@ -112,7 +114,7 @@ Você pode personalizar o local do cache de esquema usando a página opções **
 
 1. No menu **Ferramentas** , selecione **Opções**.
 
-2. Expanda **Editor de texto**, expanda **XML**e clique em **diversos**.
+2. Expanda **Editor de texto** , expanda **XML** e clique em **diversos**.
 
 3. Clique no botão **procurar** no campo **esquemas** .
 
@@ -128,6 +130,6 @@ Você pode personalizar o local do cache de esquema usando a página opções **
 
    O catálogo é recarregado automaticamente.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

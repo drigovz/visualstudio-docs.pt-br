@@ -1,5 +1,7 @@
 ---
 title: Atualizações automáticas de aplicativo usando a API de implantação do ClickOnce
+description: Saiba como escrever código no ClickOnce que usa a classe ApplicationDeployment para verificar se há atualizações com base em um evento, como uma solicitação de usuário.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382569"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351252"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce
 O ClickOnce fornece duas maneiras de atualizar um aplicativo quando ele é implantado. No primeiro método, você pode configurar a implantação do ClickOnce para verificar automaticamente se há atualizações em determinados intervalos. No segundo método, você pode escrever código que usa a <xref:System.Deployment.Application.ApplicationDeployment> classe para verificar se há atualizações com base em um evento, como uma solicitação de usuário.
@@ -59,7 +61,7 @@ O ClickOnce fornece duas maneiras de atualizar um aplicativo quando ele é impla
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
  Seu aplicativo deve ter permissões de confiança total para usar a atualização programática.
 
-## <a name="see-also"></a>Confira também
-- [Como especificar um local alternativo para atualizações da implantação](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+## <a name="see-also"></a>Veja também
+- [Como especificar um local alternativo para atualizações de implantação](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -1,5 +1,6 @@
 ---
 title: Desabilitar a ativação de URL de aplicativos ClickOnce
+description: Saiba como desabilitar o início automático na instalação para seu aplicativo ClickOnce, caso você queira que os usuários iniciem o aplicativo no menu iniciar.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809749"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351226"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como desabilitar a ativação de aplicativos ClickOnce pela URL
 
@@ -44,6 +45,6 @@ Este procedimento usa a ferramenta SDK (Software Development Kit) do Windows Mag
 
 4. Salve e assine o manifesto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

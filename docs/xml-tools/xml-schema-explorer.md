@@ -1,5 +1,7 @@
 ---
 title: XML Schema Explorer
+description: Saiba mais sobre os recursos do XML Schema Explorer integrados ao Visual Studio e ao editor de XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c6415fed131abc5a102f6ec15c69e33f21fd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592341"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351291"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
@@ -35,7 +37,7 @@ O **XML Schema Explorer** permite que você faça o seguinte:
 
 - Gere o exemplo de XML para elementos globais.
 
-O **XML Schema Explorer** fornece uma exibição hierárquica do conjunto de esquema por meio de uma exibição de árvore. O **XML Schema Explorer** também fornece pesquisa, filtragem, navegação e classificação. Para acessar o **XML Schema Explorer**, siga um destes procedimentos:
+O **XML Schema Explorer** fornece uma exibição hierárquica do conjunto de esquema por meio de uma exibição de árvore. O **XML Schema Explorer** também fornece pesquisa, filtragem, navegação e classificação. Para acessar o **XML Schema Explorer** , siga um destes procedimentos:
 
 - Se você estiver na [exibição iniciar](../xml-tools/start-view.md), clique no link do **Gerenciador de esquema XML** .
 
@@ -43,7 +45,7 @@ O **XML Schema Explorer** fornece uma exibição hierárquica do conjunto de esq
 
 - Você também pode selecionar o **Gerenciador de esquema XML** no menu **Exibir** .
 
-- Você pode acessar o **XML Schema Explorer** de um arquivo *. vb* que tem um literal XML Visual Basic associado a um arquivo *. xsd* . Para ver o conjunto de esquema no **Gerenciador de esquema XML**, clique com o botão direito do mouse em um nó XML em um literal XML ou em uma importação de namespace XML e selecione o comando **Mostrar no Gerenciador de esquema** . Para obter mais informações, consulte [integração de literais XML com o XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- Você pode acessar o **XML Schema Explorer** de um arquivo *. vb* que tem um literal XML Visual Basic associado a um arquivo *. xsd* . Para ver o conjunto de esquema no **Gerenciador de esquema XML** , clique com o botão direito do mouse em um nó XML em um literal XML ou em uma importação de namespace XML e selecione o comando **Mostrar no Gerenciador de esquema** . Para obter mais informações, consulte [integração de literais XML com o XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Modo de exibição de árvore
 O **XML Schema Explorer** exibe informações de conjunto de esquema pré-compilado em uma estrutura de árvore. A estrutura de árvore é organizada da seguinte maneira:
@@ -78,6 +80,6 @@ O descarte de arquivos na exibição adicionará todos os nós globais no arquiv
 
  Você não pode arrastar e soltar nós locais ou importações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Como adicionar nós ao espaço de trabalho do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

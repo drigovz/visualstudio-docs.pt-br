@@ -1,5 +1,7 @@
 ---
 title: Depurar folhas de estilo XSLT
+description: Saiba como usar o depurador XSLT no Visual Studio para depurar uma folha de estilos XSLT seguindo as etapas neste passo a passos.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815117"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351330"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Walkthrough: Depurar uma folha de estilos XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Passo a passo: Depurar uma folha de estilos XSLT
 
 As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT. As etapas incluem variáveis de exibição, pontos de interrupção, e percorrendo o código. O depurador permite que você execute o código uma linha por vez.
 
@@ -32,7 +34,7 @@ Para se preparar para este passo a passos, primeiro copie os dois [arquivos de e
 
    A folha de estilos é aberta no editor de XML.
 
-3. Clique no botão procurar (**...**) no campo de **entrada** da janela Propriedades do documento. (Se a janela **Propriedades** não estiver visível, clique com o botão direito do mouse em qualquer lugar do arquivo aberto no editor e escolha **Propriedades**.)
+3. Clique no botão procurar ( **...** ) no campo de **entrada** da janela Propriedades do documento. (Se a janela **Propriedades** não estiver visível, clique com o botão direito do mouse em qualquer lugar do arquivo aberto no editor e escolha **Propriedades**.)
 
 4. Localize o arquivo *books.xml* e, em seguida, escolha **abrir**.
 
@@ -44,17 +46,17 @@ Para se preparar para este passo a passos, primeiro copie os dois [arquivos de e
 
    - Clique em qualquer lugar na linha 12 e pressione **F9**.
 
-   - Clique com o botão direito do mouse na `xsl:if` marca de início e escolha ponto de interrupção de inserção de **pontos**de interrupção  >  **Insert Breakpoint**.
+   - Clique com o botão direito do mouse na `xsl:if` marca de início e escolha ponto de interrupção de inserção de **pontos** de interrupção  >  **Insert Breakpoint**.
 
       ![Inserir ponto de interrupção no arquivo XSL no Visual Studio](media/insert-breakpoint.PNG)
 
-6. Na barra de menus, escolha **XML**  >  **Iniciar Depuração XSLT** (ou pressione **ALT** + **F5**).
+6. Na barra de menus, escolha **XML**  >  **Iniciar Depuração XSLT** (ou pressione **ALT** + **F5** ).
 
    O processo de depuração é iniciado.
 
    No editor, o depurador é posicionado no `xsl:if` elemento da folha de estilos. Outro arquivo chamado *below-average.xml* é aberto no editor; Esse é o arquivo de saída que será populado como cada nó no arquivo de entrada *books.xml* é processado.
 
-   As janelas **automáticos**, **locais**e **inspecionar 1** aparecem na parte inferior da janela do Visual Studio. A janela **locais** exibe todas as variáveis locais e seus valores atuais. Isso inclui variáveis definidos na folha de estilos e também variáveis que o depurador usa para controlar os nós que estão atualmente no contexto.
+   As janelas **automáticos** , **locais** e **inspecionar 1** aparecem na parte inferior da janela do Visual Studio. A janela **locais** exibe todas as variáveis locais e seus valores atuais. Isso inclui variáveis definidos na folha de estilos e também variáveis que o depurador usa para controlar os nós que estão atualmente no contexto.
 
 ## <a name="watch-window"></a>Janela Inspecionar
 
@@ -155,6 +157,6 @@ Os seguintes dois arquivos são usados por passo a passo.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
