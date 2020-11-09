@@ -1,5 +1,6 @@
 ---
 title: Adicionar controles personalizados à janela Fontes de Dados
+description: Adicione controles personalizados à janela fontes de dados no Visual Studio. Personalize a lista de controles vinculáveis. Adicionar controles associados.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283067"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382059"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Adicionar controles personalizados à janela Fontes de Dados
 
@@ -39,7 +40,7 @@ Para adicionar ou remover controles da lista de controles disponíveis para iten
 2. Na janela **fontes de dados** , clique em um item que faz parte de uma fonte de dados que você adicionou à janela e, em seguida, clique no menu suspenso do item.
 
    > [!TIP]
-   > Se a janela fontes de dados não estiver aberta, abra-a selecionando **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+   > Se a janela fontes de dados não estiver aberta, abra-a selecionando **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 3. No menu suspenso, clique em **Personalizar**. Uma das seguintes caixas de diálogo é aberta:
 

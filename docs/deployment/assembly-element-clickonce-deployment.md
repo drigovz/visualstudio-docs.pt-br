@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento assembly (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento assembly é o elemento raiz e é necessário na implantação do ClickOnce. Seu primeiro elemento contido deve ser um elemento assemblyIdentity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929072"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383229"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;&gt;elemento assembly (implantação do ClickOnce)
 O elemento de nível superior para o manifesto de implantação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 
-      <assembly  
+      <assembly  
    manifestVersion
 />
 ```

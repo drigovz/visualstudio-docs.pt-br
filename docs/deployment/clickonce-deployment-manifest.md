@@ -1,5 +1,7 @@
 ---
 title: Manifesto de implantação do ClickOnce | Microsoft Docs
+description: Saiba mais sobre um manifesto de implantação, um arquivo XML que descreve uma implantação do ClickOnce, incluindo a versão atual do aplicativo ClickOnce a ser implantada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900473"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383086"
 ---
 # <a name="clickonce-deployment-manifest"></a>Manifesto de implantação do ClickOnce
 Um manifesto de implantação é um arquivo XML que descreve uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, incluindo a identificação da versão atual do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo a ser implantada.

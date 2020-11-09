@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento AssemblyIdentity (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento assemblyIdentity é necessário na implantação do ClickOnce. Ele não contém nenhum elemento filho e tem atributos descritos neste artigo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,22 +18,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929062"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383177"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento AssemblyIdentity (implantação do ClickOnce)
 Identifica o assembly primário do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 
-      <assemblyIdentity  
-   name 
+      <assemblyIdentity  
+   name 
    version
    publicKeyToken
    processorArchitecture

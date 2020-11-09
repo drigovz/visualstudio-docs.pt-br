@@ -1,5 +1,6 @@
 ---
 title: Adicionar validação a um conjunto de dados de n camadas
+description: Adicione validação a um conjunto de uma de n camadas no Visual Studio. Valide as alterações em colunas individuais ou linhas inteiras.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 91dbe04c85491a38a221edfb064702085136780f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283015"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382124"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 Adicionar validação a um conjunto de um DataSet que é separado em uma solução de n camadas é basicamente o mesmo que adicionar validação a um conjunto de um único arquivo (um conjunto de um DataSet em um único projeto). O local sugerido para executar a validação nos dados é durante os <xref:System.Data.DataTable.ColumnChanging> eventos e/ou <xref:System.Data.DataTable.RowChanging> de uma tabela de dados.
@@ -170,4 +171,4 @@ Crie um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> e
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
 - [Walkthrough: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
-- [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
+- [Validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)

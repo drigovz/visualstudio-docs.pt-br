@@ -1,5 +1,6 @@
 ---
 title: Adicionar novas fontes de dados
+description: Adicionar novas fontes de dados no Visual Studio. Uma fonte de dados é um objeto .NET que se conecta a um armazenamento de dados e disponibiliza os dados para um aplicativo .NET.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283041"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382111"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 
@@ -51,7 +52,7 @@ Você cria e edita fontes de dados usando o **Assistente de configuração de fo
 Depois de criar uma fonte de dados, ela aparece na janela de ferramentas de **fontes de dados** .
 
 > [!TIP]
-> Para abrir a janela **fontes de dados** , verifique se o projeto está aberto e pressione **Shift** + **ALT** + **D** ou escolha **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+> Para abrir a janela **fontes de dados** , verifique se o projeto está aberto e pressione **Shift** + **ALT** + **D** ou escolha **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 Você pode arrastar uma fonte de dados da janela **fontes de dados** para um controle ou superfície de design de formulário. Isso faz com que o código clichê seja gerado, exibindo os dados do armazenamento de dados.
 

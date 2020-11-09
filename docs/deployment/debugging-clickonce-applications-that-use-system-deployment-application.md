@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicativos ClickOnce que usam System. Deployment. Application
+description: Saiba como usar e personalizar recursos avançados de implantação do ClickOnce acessando o modelo de objeto de implantação fornecido pelo System. Deployment. Application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382647"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382982"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depurar aplicativos ClickOnce que usam System.Deployment.Application
 No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a implantação permite que você configure como um aplicativo é atualizado. No entanto, se você precisar usar e personalizar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] recursos de implantação avançados, será necessário acessar o modelo de objeto de implantação fornecido pelo <xref:System.Deployment.Application> . Você pode usar as <xref:System.Deployment.Application> APIs para tarefas avançadas, como:
@@ -43,11 +45,11 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 2. Implante a versão 1 do aplicativo.
 
-3. Crie uma nova solução em branco. No menu **Arquivo**, clique em **Novo** e, em seguida em **Projeto**. Na caixa de diálogo **novo projeto** , abra o nó **outros tipos de projeto** e, em seguida, selecione a pasta **soluções do Visual Studio** . No painel **modelos** , selecione **solução em branco**.
+3. Crie uma nova solução em branco. No menu **Arquivo** , clique em **Novo** e, em seguida em **Projeto**. Na caixa de diálogo **novo projeto** , abra o nó **outros tipos de projeto** e, em seguida, selecione a pasta **soluções do Visual Studio** . No painel **modelos** , selecione **solução em branco**.
 
-4. Adicione o local de origem arquivado às propriedades dessa nova solução. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução e clique em **Propriedades**. Na caixa de diálogo **páginas de propriedades** , selecione **depurar arquivos de origem**e, em seguida, adicione o diretório do código-fonte arquivado. Caso contrário, o depurador encontrará os arquivos de origem desatualizados, já que os caminhos do arquivo de origem são registrados no arquivo. pdb. Se o depurador usar arquivos de origem desatualizados, você verá uma mensagem informando que a origem não corresponde.
+4. Adicione o local de origem arquivado às propriedades dessa nova solução. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó da solução e clique em **Propriedades**. Na caixa de diálogo **páginas de propriedades** , selecione **depurar arquivos de origem** e, em seguida, adicione o diretório do código-fonte arquivado. Caso contrário, o depurador encontrará os arquivos de origem desatualizados, já que os caminhos do arquivo de origem são registrados no arquivo. pdb. Se o depurador usar arquivos de origem desatualizados, você verá uma mensagem informando que a origem não corresponde.
 
-5. Verifique se o depurador pode encontrar os arquivos *. pdb* . Se você os tiver implantado com seu aplicativo, o depurador os encontrará automaticamente. Ele sempre aparece ao lado do assembly em questão primeiro. Caso contrário, será necessário adicionar o caminho de arquivo morto para os **locais de arquivos de símbolo (. pdb)** (para acessar essa opção, no menu **ferramentas** , clique em **Opções**, abra o nó **depuração** e clique em **símbolos**).
+5. Verifique se o depurador pode encontrar os arquivos *. pdb* . Se você os tiver implantado com seu aplicativo, o depurador os encontrará automaticamente. Ele sempre aparece ao lado do assembly em questão primeiro. Caso contrário, será necessário adicionar o caminho de arquivo morto para os **locais de arquivos de símbolo (. pdb)** (para acessar essa opção, no menu **ferramentas** , clique em **Opções** , abra o nó **depuração** e clique em **símbolos** ).
 
 6. Depurar o que acontece entre `CheckForUpdate` as `Download` / `Update` chamadas de método e.
 

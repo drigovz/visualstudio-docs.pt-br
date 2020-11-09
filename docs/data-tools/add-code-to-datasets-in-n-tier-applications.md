@@ -1,5 +1,6 @@
 ---
 title: Adicionar código aos conjuntos de dados em aplicativos de n camadas
+description: Adicione código a conjuntos de valores em aplicativos de n camadas no Visual Studio. Crie um arquivo de classe parcial para um conjunto de um DataSet e adicione código a ele (em vez de ao DataSetName. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283080"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382189"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código aos conjuntos de dados em aplicativos de n camadas
 
@@ -26,7 +27,7 @@ Você pode estender a funcionalidade de um conjunto de um DataSet criando um arq
 
 O código que define um conjunto de um DataSet é gerado toda vez que são feitas alterações na definição do conjunto de código (no dataset tipado). Esse código também é gerado quando você faz alterações durante a execução de qualquer assistente que modifica a configuração de um conjunto de uma. Para impedir que seu código seja excluído durante a regeneração de um conjunto de um DataSet, adicione o código ao arquivo de classe parcial do conjunto de um.
 
-Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs*) que contém o código do TableAdapter. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs*). Esse arquivo contém o código do conjunto de conteúdo.
+Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs* ) que contém o código do TableAdapter. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs* ). Esse arquivo contém o código do conjunto de conteúdo.
 
 > [!NOTE]
 > Quando você separa DataSets e TableAdapters (definindo a propriedade de **projeto DataSet** ), as classes parciais DataSet existentes no projeto não serão movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto do conjunto de um.
@@ -66,7 +67,7 @@ Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultad
 ## <a name="see-also"></a>Confira também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
-- [Adicionar código a TableAdapters em aplicativos de N camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
+- [Adicionar código a TableAdapters em aplicativos de n camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Criar e configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Visão geral de atualização hierárquica](hierarchical-update.md)
 - [Ferramentas de DataSet no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

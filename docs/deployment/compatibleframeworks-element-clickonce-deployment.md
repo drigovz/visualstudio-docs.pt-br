@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento CompatibleFrameworks (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento compatibleFrameworks identifica as versões do .NET Framework em que esse aplicativo pode ser instalado e executado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746039"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383060"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento CompatibleFrameworks (implantação do ClickOnce)
 Identifica as versões do .NET Framework em que esse aplicativo pode ser instalado e executado.
@@ -31,12 +33,12 @@ Identifica as versões do .NET Framework em que esse aplicativo pode ser instala
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 

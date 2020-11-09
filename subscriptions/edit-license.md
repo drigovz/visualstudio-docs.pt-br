@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 09/21/2020
+ms.date: 11/09/2020
 ms.topic: how-to
 description: Saiba como os administradores podem editar as atribuições de assinatura.
-ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904165"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382488"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Editar atribuições de assinatura do Visual Studio
 Como administrador de assinatura, você pode fazer alterações nas assinaturas atribuídas a indivíduos dentro da sua organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias.
@@ -27,7 +27,7 @@ Para editar um assinante, selecione as reticências (...) que aparecem ao lado d
 > [!div class="mx-imgBorder"]
 > ![Selecione um assinante a ser editado](_img/edit-license/select-subscriber.png "Clique nas reticências e escolha Editar.")
 
-Você pode atualizar o nome, sobrenome, nível de assinatura, endereço de email, país, idioma, downloads e campo de referência do Assinante. Edite as informações do assinante e clique em **salvar** .
+Você pode atualizar o nome, sobrenome, nível de assinatura, endereço de email, país, idioma, downloads e campo de referência do Assinante. Edite as informações do assinante e clique em **salvar**.
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Editar vários assinantes usando a edição em massa
 
@@ -39,10 +39,8 @@ Assista a este vídeo ou Continue lendo para saber como editar vários assinante
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
-   > [!IMPORTANT]
-   > Os níveis de assinatura (ou seja, Enterprise, Professional etc.) e os GUIDs de assinatura não podem ser alterados usando a edição em massa.  Se você precisar atribuir GUIDs de assinatura específicos a seus usuários, use o processo para adicionar usuários escolhendo a ID da assinatura. Se você tentar um upload com esses itens alterados no modelo de edição em massa, o carregamento falhará.
 
-1. Para editar vários assinantes de uma vez, navegue até a guia assinantes. Na faixa de faixas na parte superior, clique em **edição em massa** .
+1. Para editar vários assinantes de uma vez, navegue até a guia assinantes. Na faixa de faixas na parte superior, clique em **edição em massa**.
 
 2. A edição em massa usa um modelo do Excel para fazer edições nas informações dos assinantes. Na caixa de edição em massa, clique em **Exportar este Excel** para baixar a lista atual de assinantes, incluindo todas as suas informações.
    > [!div class="mx-imgBorder"]
@@ -50,13 +48,13 @@ Assista a este vídeo ou Continue lendo para saber como editar vários assinante
 
 3. Em seguida, salve o arquivo localmente para que ele possa ser encontrado com facilidade e faça as alterações necessárias antes de carregá-lo. Para garantir um upload bem-sucedido, **não edite o nível da assinatura ou o GUID da assinatura** no arquivo de edição em massa, pois isso fará com que o carregamento falhe.
 
-4. Retorne ao Portal de Administração de Assinaturas do Visual Studio e na caixa de diálogo Edição em Massa, clique em **Procurar** . Selecione o arquivo do Excel que você salvou e clique em **OK** . O andamento do upload será exibido na tela.
+4. Retorne ao Portal de Administração de Assinaturas do Visual Studio e na caixa de diálogo Edição em Massa, clique em **Procurar**. Selecione o arquivo do Excel que você salvou e clique em **OK**. O andamento do upload será exibido na tela.
    > [!div class="mx-imgBorder"]
    > ![Editando uma licença – upload do arquivo de edições em massa](_img/edit-license/edit-license-bulk-file-upload1.png "Navegue até o local do arquivo concluído do Excel, selecione-o e clique em OK.")
 
 5. Depois de carregar o arquivo, será exibida uma notificação informando que o upload foi bem-sucedido. Neste ponto, suas edições serão refletidas nas informações do assinante.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

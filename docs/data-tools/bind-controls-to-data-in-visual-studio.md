@@ -1,5 +1,6 @@
 ---
 title: Associar controles a dados
+description: Associar controles a dados no Visual Studio. Crie controles vinculados a dados arrastando itens da janela fontes de dados.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283028"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382163"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
 
@@ -45,7 +46,7 @@ No contexto de vinculação de dados, uma fonte de dados representa os dados na 
 
 ## <a name="data-sources-window"></a>janela Fontes de Dados
 
-As fontes de dados estão disponíveis para seu projeto como itens na janela **fontes de dados** . Essa janela fica visível quando uma superfície de design de formulário é a janela ativa em seu projeto, ou você pode abri-la (quando um projeto estiver aberto) escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows. Você pode arrastar itens desta janela para criar controles associados aos dados subjacentes e também pode configurar as fontes de dados clicando com o botão direito do mouse.
+As fontes de dados estão disponíveis para seu projeto como itens na janela **fontes de dados** . Essa janela fica visível quando uma superfície de design de formulário é a janela ativa em seu projeto, ou você pode abri-la (quando um projeto estiver aberto) escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows. Você pode arrastar itens desta janela para criar controles associados aos dados subjacentes e também pode configurar as fontes de dados clicando com o botão direito do mouse.
 
 ![janela Fontes de Dados](../data-tools/media/raddata-data-sources-window.png)
 
@@ -63,8 +64,8 @@ A tabela a seguir lista algumas das tarefas mais comuns que você executa para a
 |Modifique a lista de controles que estão associados aos itens na janela **fontes de dados** .|[Adicionar controles personalizados à janela Fontes de Dados](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |Criar controles vinculados a dados.|[Associar controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|
 |Associar a um objeto ou uma coleção.|[Associar objetos no Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|
-|Filtre os dados que aparecem na interface do usuário.|[Filtrar e classificar dados em um Aplicativo do Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
-|Personalizar legendas para controles.|[Personalizar o modo como o Visual Studio cria legendas para controles associados a dados](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
+|Filtre os dados que aparecem na interface do usuário.|[Filtrar e classificar dados em um aplicativo do Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
+|Personalizar legendas para controles.|[Personalizar como o Visual Studio cria legendas para controles associados a dados](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Confira também
 

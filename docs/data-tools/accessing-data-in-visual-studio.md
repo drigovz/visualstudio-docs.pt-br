@@ -1,5 +1,6 @@
 ---
 title: Trabalhar com dados no Visual Studio
+description: Trabalhar com dados no Visual Studio. Crie aplicativos que se conectam a dados em outros produtos ou serviços de banco de dados em máquinas locais, LANs ou nuvens públicas ou privadas.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959816"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382085"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Trabalhar com dados no Visual Studio
 
@@ -70,13 +71,13 @@ A maioria dos outros produtos de banco de dados SQL e NoSQL listados aqui pode s
 
 ::: moniker range="vs-2017"
 
-Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **ferramentas**  >  **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio ( **ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução** ). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **ferramentas**  >  **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **extensões**  >  **gerenciar extensões** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em NuGet.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio ( **ferramentas**  >  **Gerenciador de pacotes NuGet**  >  **gerenciar pacotes NuGet para solução** ). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão. Você pode procurar essas ofertas na [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou navegando até **extensões**  >  **gerenciar extensões** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo. Para obter mais informações, consulte [sistemas de banco de dados compatíveis para o Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

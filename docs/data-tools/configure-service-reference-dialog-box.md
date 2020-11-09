@@ -1,5 +1,6 @@
 ---
 title: Caixa de diálogo Configurar Referência de Serviço
+description: Use a caixa de diálogo Configurar referência de serviço no Visual Studio para configurar o comportamento dos serviços Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586920"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382345"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -39,7 +40,7 @@ Para acessar a caixa de diálogo **Configurar referência de serviço** , clique
 
 - Para especificar os tipos de coleção de lista ou dicionário para um cliente WCF, selecione os tipos nas listas **tipo de coleção** e tipo de **coleção de dicionário** .
 
-- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **lista assemblies referenciados**.
+- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados** e selecione as referências desejadas na **lista assemblies referenciados**.
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
@@ -91,7 +92,7 @@ Quando selecionado, somente os tipos selecionados na **lista assemblies referenc
 
 **Lista de assemblies referenciados**
 
-Contém uma lista de assemblies referenciados para o projeto ou site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados**, você pode selecionar ou limpar assemblies individuais.
+Contém uma lista de assemblies referenciados para o projeto ou site. Quando você seleciona **reutilizar os tipos em assemblies referenciados especificados** , você pode selecionar ou limpar assemblies individuais.
 
 **Adicionar Referência Web**
 

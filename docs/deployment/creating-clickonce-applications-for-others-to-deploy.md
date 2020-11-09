@@ -1,5 +1,7 @@
 ---
 title: Criando aplicativos ClickOnce para outros a serem implantados | Microsoft Docs
+description: Saiba mais sobre os aplicativos ClickOnce hospedados pelo cliente desenvolvidos no .NET Framework 3,5 e versões anteriores do .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3307fc124f50e8c9f73749293c36f53be36c5e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252457"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382995"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Criar aplicativos ClickOnce para que outros usuários implantem
 Nem todos os desenvolvedores que estão criando implantações do ClickOnce planejam implantar os próprios aplicativos. Muitos deles apenas empacotam seu aplicativo usando o ClickOnce e, em seguida, entregam os arquivos para um cliente, como uma grande corporação. O cliente se torna aquele responsável por hospedar o aplicativo em sua rede. Este tópico discute alguns dos problemas inerentes a tais implantações em versões do .NET Framework antes da versão 3,5. Em seguida, ele descreve uma nova solução fornecida usando o novo recurso "usar manifesto para confiança" no .NET Framework 3,5. Por fim, ele conclui as estratégias recomendadas para a criação de implantações do ClickOnce para clientes que ainda estão usando versões mais antigas do .NET Framework.
@@ -50,7 +52,7 @@ Nem todos os desenvolvedores que estão criando implantações do ClickOnce plan
  Mesmo que o desenvolvedor e o cliente concordem que o cliente deve assinar o manifesto do aplicativo, isso gera outros problemas que envolvem a identidade do aplicativo, especialmente à medida que se aplica à implantação de aplicativos confiáveis. (Para obter mais informações sobre esse recurso, consulte [visão geral da implantação de aplicativo confiável](../deployment/trusted-application-deployment-overview.md).) Digamos que a Adventure Works queira configurar seus computadores cliente para que qualquer aplicativo fornecido a ele pela Microsoft Corporation seja executado com confiança total. Se a Adventure Works assinar o manifesto de implantação, o ClickOnce usará a assinatura de segurança da Adventure Works para determinar o nível de confiança do aplicativo.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Criar implantações de clientes usando o manifesto do aplicativo para confiança
- O ClickOnce no .NET Framework 3,5 contém um novo recurso que oferece aos desenvolvedores e clientes uma nova solução para o cenário de como os manifestos devem ser assinados. O manifesto do aplicativo ClickOnce dá suporte a um novo elemento chamado `<useManifestForTrust>` que permite a um desenvolvedor significar que a assinatura digital do manifesto do aplicativo é o que deve ser usado para tomar decisões de confiança. O desenvolvedor usa as ferramentas de empacotamento do ClickOnce, como *Mage.exe*, *MageUI.exe*e Visual Studio, para incluir esse elemento no manifesto do aplicativo, bem como inserir o nome do editor e o nome do aplicativo no manifesto.
+ O ClickOnce no .NET Framework 3,5 contém um novo recurso que oferece aos desenvolvedores e clientes uma nova solução para o cenário de como os manifestos devem ser assinados. O manifesto do aplicativo ClickOnce dá suporte a um novo elemento chamado `<useManifestForTrust>` que permite a um desenvolvedor significar que a assinatura digital do manifesto do aplicativo é o que deve ser usado para tomar decisões de confiança. O desenvolvedor usa as ferramentas de empacotamento do ClickOnce, como *Mage.exe* , *MageUI.exe* e Visual Studio, para incluir esse elemento no manifesto do aplicativo, bem como inserir o nome do editor e o nome do aplicativo no manifesto.
 
  Ao usar `<useManifestForTrust>` o, o manifesto de implantação não precisa ser assinado com um certificado Authenticode emitido por uma autoridade de certificação. Em vez disso, ele pode ser assinado com o que é conhecido como um certificado autoassinado. Um certificado autoassinado é gerado pelo cliente ou pelo desenvolvedor usando ferramentas SDK de .NET Framework padrão e, em seguida, aplicado ao manifesto de implantação usando as ferramentas de implantação padrão do ClickOnce. Para obter mais informações, consulte [MakeCert](/windows/desktop/SecCrypto/makecert).
 

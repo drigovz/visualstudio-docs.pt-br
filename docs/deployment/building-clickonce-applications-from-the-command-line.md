@@ -1,5 +1,7 @@
 ---
 title: Criando aplicativos ClickOnce a partir da linha de comando | Microsoft Docs
+description: Saiba como criar projetos do Visual Studio a partir da linha de comando, que permite reproduzir uma compilação usando um processo automatizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797205"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383184"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilar aplicativos ClickOnce usando a linha de comando
 No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] , você pode criar projetos a partir da linha de comando, mesmo que eles sejam criados no ambiente de desenvolvimento integrado (IDE). Na verdade, você pode recriar um projeto criado com [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] o em outro computador que tenha apenas o .NET Framework instalado. Isso permite que você reproduza uma compilação usando um processo automatizado, por exemplo, em um laboratório de compilação central ou usando técnicas de script avançadas além do escopo da criação do projeto em si.
@@ -29,7 +31,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Usar o MSBuild para reproduzir implantações de aplicativo ClickOnce
  Quando você invoca o MSBuild/target: publish na linha de comando, ele informa ao sistema MSBuild para compilar o projeto e criar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo na pasta de publicação. Isso é equivalente a selecionar o comando **Publish** no IDE.
 
- Esse comando executa *msbuild.exe*, que está no caminho no ambiente de prompt de comando do Visual Studio.
+ Esse comando executa *msbuild.exe* , que está no caminho no ambiente de prompt de comando do Visual Studio.
 
  Um "destino" é um indicador do MSBuild sobre como processar o comando. Os principais destinos são o destino "Build" e o destino "Publish". O destino da compilação é o equivalente a selecionar o comando de compilação (ou pressionar F5) no IDE. Se você quiser apenas compilar seu projeto, poderá conseguir isso digitando `msbuild` . Esse comando funciona porque o destino da compilação é o destino padrão para todos os projetos gerados pelo [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Isso significa que você não precisa especificar explicitamente o destino da compilação. Portanto, digitar `msbuild` é a mesma operação que digitar `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 1. Saia do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. No menu **Iniciar** do Windows, clique em **todos os programas**, **Microsoft Visual Studio**, em seguida, **Ferramentas do Visual Studio**, em seguida, prompt de **comando do Visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.
+2. No menu **Iniciar** do Windows, clique em **todos os programas** , **Microsoft Visual Studio** , em seguida, **Ferramentas do Visual Studio** , em seguida, prompt de **comando do Visual Studio**. Isso deve abrir um prompt de comando na pasta raiz do usuário atual.
 
-3. No **prompt de comando do Visual Studio**, altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. No **prompt de comando do Visual Studio** , altere o diretório atual para o local do projeto que você acabou de criar acima. Por exemplo, digite `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Para remover os arquivos existentes produzidos em "para criar e publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projeto", digite `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Digite `msbuild /target:publish`.
 
-   As etapas acima produzirão uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação completa do aplicativo em uma subpasta do projeto chamada **Publish**. *CmdLineDemo. Application* é o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. A pasta *CmdLineDemo_1.0.0.0* contém os arquivos *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest*, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo. *Setup.exe* é o bootstrapper, que, por padrão, é configurado para instalar o .NET Framework. A pasta DotNetFX contém os pacotes redistribuíveis para o .NET Framework. Esse é o conjunto inteiro de arquivos de que você precisa para implantar seu aplicativo na Web ou via UNC ou CD/DVD.
+   As etapas acima produzirão uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação completa do aplicativo em uma subpasta do projeto chamada **Publish**. *CmdLineDemo. Application* é o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação. A pasta *CmdLineDemo_1.0.0.0* contém os arquivos *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest* , o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto do aplicativo. *Setup.exe* é o bootstrapper, que, por padrão, é configurado para instalar o .NET Framework. A pasta DotNetFX contém os pacotes redistribuíveis para o .NET Framework. Esse é o conjunto inteiro de arquivos de que você precisa para implantar seu aplicativo na Web ou via UNC ou CD/DVD.
    
 > [!NOTE]
 > O sistema MSBuild usa a opção **PublishDir** para especificar o local da saída, por exemplo `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Publicar propriedades
  Quando você publica o aplicativo nos procedimentos acima, as propriedades a seguir são inseridas em seu arquivo de projeto pelo assistente de publicação. Essas propriedades influenciam diretamente como o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é produzido.
 
- Em *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ Em *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- As propriedades de publicação são controladas nas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] páginas de propriedades de **publicação**, **segurança**e **assinatura** do **Designer de projeto**. Abaixo está uma descrição das propriedades de publicação, juntamente com uma indicação de como cada uma é definida nas várias páginas de propriedades do designer de aplicativo:
+ As propriedades de publicação são controladas nas [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] páginas de propriedades de **publicação** , **segurança** e **assinatura** do **Designer de projeto**. Abaixo está uma descrição das propriedades de publicação, juntamente com uma indicação de como cada uma é definida nas várias páginas de propriedades do designer de aplicativo:
 
 - `AssemblyOriginatorKeyFile` determina o arquivo de chave usado para assinar os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos do aplicativo. Essa mesma chave também pode ser usada para atribuir um nome forte aos seus assemblies. Essa propriedade é definida na página de **assinatura** do **Designer de projeto**.
 

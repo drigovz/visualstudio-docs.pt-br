@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento customErrorReporting (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento customErrorReporting especifica um URI para mostrar quando ocorre um erro em vez de uma caixa de diálogo de erro mostrando a pilha de exceção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900365"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382514"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;elemento customErrorReporting (implantação do ClickOnce)
 Especifica um URI para mostrar quando ocorre um erro.

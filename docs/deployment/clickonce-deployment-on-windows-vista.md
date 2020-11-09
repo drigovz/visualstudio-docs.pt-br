@@ -1,5 +1,7 @@
 ---
 title: Implantação do ClickOnce no Windows Vista | Microsoft Docs
+description: Saiba como o Visual Studio gera o manifesto do UAC externo para o ClickOnce e Registration-Free aplicativos COM, que exigem um manifesto externo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b76804eb8c06acbcdeac017108773056ee38338
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641493"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383073"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Implantação do ClickOnce no Windows Vista
 
-A criação de aplicativos no Visual Studio para controle de conta de usuário (UAC) no Windows Vista normalmente gera um manifesto incorporado, codificado como dados XML binários no arquivo executável do aplicativo.  O ClickOnce e os aplicativos COM sem registro exigem um manifesto externo, portanto, o Visual Studio gera um arquivo para esses projetos que contêm os dados do UAC em vez de um manifesto incorporado. Para implantações COM ClickOnce e sem registro, o Visual Studio usa informações de um arquivo chamado *app. manifest* para gerar informações externas do manifesto do UAC. Para todos os outros casos, o Visual Studio insere os dados do UAC no arquivo executável do aplicativo.
+A criação de aplicativos no Visual Studio para controle de conta de usuário (UAC) no Windows Vista normalmente gera um manifesto incorporado, codificado como dados XML binários no arquivo executável do aplicativo.  O ClickOnce e Registration-Free aplicativos COM exigem um manifesto externo, portanto, o Visual Studio gera um arquivo para esses projetos que contêm os dados do UAC em vez de um manifesto incorporado. Para implantações do ClickOnce e Registration-Free COM, o Visual Studio usa informações de um arquivo chamado *app. manifest* para gerar informações externas do manifesto do UAC. Para todos os outros casos, o Visual Studio insere os dados do UAC no arquivo executável do aplicativo.
 
 O Visual Studio fornece as seguintes opções para a geração de manifesto:
 
@@ -36,7 +38,7 @@ O Visual Studio fornece as seguintes opções para a geração de manifesto:
 
 - Use um manifesto externo. Gere um manifesto externo usando o *app. manifest*.
 
-   Isso gera apenas o manifesto externo usando as informações em *app. manifest*. Quando você publica um aplicativo usando o ClickOnce ou o COM sem registro, o Visual Studio adiciona o *app. manifest* ao projeto e, em seguida, adiciona essa opção.
+   Isso gera apenas o manifesto externo usando as informações em *app. manifest*. Quando você publica um aplicativo usando ClickOnce ou Registration-Free COM, o Visual Studio adiciona o *app. manifest* ao projeto e, em seguida, adiciona essa opção.
 
 - Não use nenhum manifesto. Crie o aplicativo sem um manifesto.
 

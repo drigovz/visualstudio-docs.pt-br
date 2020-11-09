@@ -1,5 +1,7 @@
 ---
 title: '&lt;Elemento Commands &gt; (Bootstrapper) | Microsoft Docs'
+description: O elemento Commands implementa testes nos elementos abaixo de InstallChecks e declara o pacote a ser instalado se o teste de bootstrapper do ClickOnce falhar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900337"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383047"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Elemento Commands &gt; (Bootstrapper)
 O `Commands` elemento implementa testes descritos pelos elementos abaixo do `InstallChecks` elemento e declara qual pacote o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bootstrapper deve instalar se o teste falhar.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Commands

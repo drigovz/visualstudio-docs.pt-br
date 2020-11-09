@@ -1,5 +1,7 @@
 ---
 title: Exemplos e orientações de implantação do ClickOnce | Microsoft Docs
+description: Use esses aplicativos de exemplo, exemplos de código e passo a passo para entender as técnicas usadas para implantar Windows Forms, WPF e aplicativos de console.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641467"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383034"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemplos e explicações passo a passo para implantação do ClickOnce
 Esta seção contém aplicativos de exemplo, código de exemplo e instruções passo a passo que ilustram a sintaxe, a estrutura e as técnicas usadas para implantar Windows Forms, WPF e aplicativos de console.

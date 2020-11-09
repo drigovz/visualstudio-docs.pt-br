@@ -1,5 +1,7 @@
 ---
 title: Pré-requisitos de implantação do aplicativo | Microsoft Docs
+description: Saiba mais sobre os pré-requisitos de implantação para seus aplicativos, incluindo o uso da caixa de diálogo pré-requisitos e dos pacotes de bootstrapper.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,20 +21,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746053"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383242"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação do aplicativo
 
 Para que seu aplicativo seja instalado e executado com êxito, primeiro instale todos os componentes nos quais seu aplicativo depende do computador de destino. Por exemplo, a maioria dos aplicativos criados usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o tem uma dependência na .NET Framework. Nesse caso, a versão correta do Common Language Runtime deve estar presente no computador de destino antes da instalação do aplicativo.
 
- Você pode selecionar esses pré-requisitos na caixa de **diálogo pré-requisitos** e instalar o .NET Framework e qualquer outro redistribuível como parte de sua instalação. Essa prática é conhecida como *inicialização*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gera um programa executável do Windows chamado *Setup.exe*, também conhecido como *bootstrapper*. O bootstrapper é responsável pela instalação desses pré-requisitos antes de executar o aplicativo. Para obter mais informações sobre como selecionar esses pré-requisitos, consulte a [caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md).
+ Você pode selecionar esses pré-requisitos na caixa de **diálogo pré-requisitos** e instalar o .NET Framework e qualquer outro redistribuível como parte de sua instalação. Essa prática é conhecida como *inicialização*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gera um programa executável do Windows chamado *Setup.exe* , também conhecido como *bootstrapper*. O bootstrapper é responsável pela instalação desses pré-requisitos antes de executar o aplicativo. Para obter mais informações sobre como selecionar esses pré-requisitos, consulte a [caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md).
 
- Cada pré-requisito é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém os arquivos de manifesto que descrevem como os pré-requisitos são instalados. Se os pré-requisitos do aplicativo não estiverem listados na **Caixa de Diálogo de Pré-requisito**, você poderá criar pacotes de bootstrapper personalizados e adicioná-los ao Visual Studio. Em seguida, você pode selecionar os pré-requisitos na **caixa de diálogo Pré-requisitos**. Para obter mais informações, consulte [criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md).
+ Cada pré-requisito é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém os arquivos de manifesto que descrevem como os pré-requisitos são instalados. Se os pré-requisitos do aplicativo não estiverem listados na **Caixa de Diálogo de Pré-requisito** , você poderá criar pacotes de bootstrapper personalizados e adicioná-los ao Visual Studio. Em seguida, você pode selecionar os pré-requisitos na **caixa de diálogo Pré-requisitos**. Para obter mais informações, consulte [criar pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md).
 
  Por padrão, a inicialização está habilitada para implantação do ClickOnce. O bootstrapper gerado para implantação do ClickOnce é assinado. Você pode desabilitar a inicialização de um componente, mas somente se tiver certeza de que a versão correta do componente já está instalada em todos os computadores de destino.
 
@@ -48,7 +50,7 @@ Para que seu aplicativo seja instalado e executado com êxito, primeiro instale 
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode detectar pré-requisitos ausentes e você pode instalar os pré-requisitos usando um bootstrapper. Para obter mais informações, consulte [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
-> Para alterar os valores nos manifestos gerados por ferramentas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe*, você precisa editar o manifesto do aplicativo em um editor de texto e, em seguida, assinar novamente os manifestos de aplicativo e de implantação. Para obter mais informações, consulte [como: assinar novamente manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Para alterar os valores nos manifestos gerados por ferramentas como [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe* , você precisa editar o manifesto do aplicativo em um editor de texto e, em seguida, assinar novamente os manifestos de aplicativo e de implantação. Para obter mais informações, consulte [como: assinar novamente manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Se você usar o Visual Studio e o ClickOnce para implantar seu aplicativo, os pacotes do bootstrapper selecionados por padrão dependerão da versão do .NET Framework na solução. No entanto, se você alterar a versão do .NET Framework de destino, deverá atualizar as opções na **Caixa de Diálogo Pré-requisitos** manualmente.
 

@@ -1,5 +1,7 @@
 ---
 title: Manifesto do aplicativo ClickOnce | Microsoft Docs
+description: Saiba mais sobre o manifesto do aplicativo ClickOnce, que é um arquivo XML que descreve um aplicativo que é implantado usando o ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928967"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383112"
 ---
 # <a name="clickonce-application-manifest"></a>Manifesto do aplicativo ClickOnce
 Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de aplicativo é um arquivo XML que descreve um aplicativo que é implantado usando o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .

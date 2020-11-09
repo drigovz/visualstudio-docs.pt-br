@@ -1,5 +1,6 @@
 ---
 title: Associar controles do Windows Forms a dados
+description: Associe Windows Forms controles a dados no Visual Studio para que você possa exibir dados para os usuários do seu aplicativo.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508542"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382371"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associar controles do Windows Forms a dados no Visual Studio
 
@@ -31,7 +32,7 @@ Você pode exibir dados para os usuários do seu aplicativo ligando dados a Wind
 ![Operação de arrastar da fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Se a janela **fontes de dados** não estiver visível, você poderá abri-la escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows ou pressionando **Shift** + **ALT** + **D**. Você deve ter um projeto aberto no Visual Studio para ver a janela **fontes de dados** .
+> Se a janela **fontes de dados** não estiver visível, você poderá abri-la escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows ou pressionando **Shift** + **ALT** + **D**. Você deve ter um projeto aberto no Visual Studio para ver a janela **fontes de dados** .
 
 Antes de arrastar itens, você pode definir o tipo de controle ao qual deseja associar. Valores diferentes aparecem dependendo se você escolher a própria tabela ou uma coluna individual.  Você também pode definir valores personalizados. Para uma tabela, **detalhes** significa que cada coluna está associada a um controle separado.
 
@@ -67,7 +68,7 @@ Você também pode arrastar itens da janela **fontes de dados** para controles q
 
 ## <a name="bind-to-data-in-individual-controls"></a>Associar a dados em controles individuais
 
-Quando você associa uma fonte de dados a **detalhes**, cada coluna no conjunto é associada a um controle separado.
+Quando você associa uma fonte de dados a **detalhes** , cada coluna no conjunto é associada a um controle separado.
 
 ![Associar fonte de dados a detalhes](../data-tools/media/raddata-bind-data-source-to-details.png)
 

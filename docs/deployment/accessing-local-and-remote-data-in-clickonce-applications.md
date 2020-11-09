@@ -1,5 +1,6 @@
 ---
 title: Acessar dados remotos do & local (aplicativos ClickOnce)
+description: Saiba mais sobre a variedade de opções que o ClickOnce fornece para ler e gravar dados, tanto localmente quanto remotamente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810465"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383255"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acesso a dados locais e remotos em aplicativos ClickOnce
 A maioria dos aplicativos consome ou gera dados. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] oferece uma variedade de opções para ler e gravar dados, tanto localmente quanto remotamente.
@@ -38,7 +39,7 @@ A maioria dos aplicativos consome ou gera dados. [!INCLUDE[ndptecclick](../deplo
 ### <a name="clickonce-data-directory"></a>Diretório de dados do ClickOnce
  Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo instalado em um computador local tem um diretório de dados, armazenado na pasta Documents and Settings do usuário. Qualquer arquivo incluído em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e marcado como um arquivo de "dados" é copiado para esse diretório quando um aplicativo é instalado. Os arquivos de dados podem ser de qualquer tipo de arquivo, usados com mais frequência são arquivos de texto, XML e de banco de dado, como arquivos. mdb do Microsoft Access.
 
- O diretório de dados destina-se a dados gerenciados por aplicativo, que são dados que o aplicativo armazena e mantém explicitamente. Todos os arquivos estáticos e não de dependência não marcados como "dados" no manifesto do aplicativo residirão no diretório do aplicativo. Esse diretório é onde residem os arquivos e assemblies do executável (*. exe*) do aplicativo.
+ O diretório de dados destina-se a dados gerenciados por aplicativo, que são dados que o aplicativo armazena e mantém explicitamente. Todos os arquivos estáticos e não de dependência não marcados como "dados" no manifesto do aplicativo residirão no diretório do aplicativo. Esse diretório é onde residem os arquivos e assemblies do executável ( *. exe* ) do aplicativo.
 
 > [!NOTE]
 > Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é desinstalado, seu diretório de dados também é removido. Nunca use o diretório de dados para armazenar dados gerenciados pelo usuário final, como documentos.
@@ -61,7 +62,7 @@ A maioria dos aplicativos consome ou gera dados. [!INCLUDE[ndptecclick](../deplo
 
  Você também pode obter o caminho do diretório de dados usando as variáveis relevantes na <xref:System.Windows.Forms.Application> classe, como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A> .
 
- A manipulação de outros tipos de arquivos pode exigir permissões adicionais. Por exemplo, se você quiser usar um arquivo de banco de dados do Access (*. mdb*), seu aplicativo deverá declarar confiança total para usar as \<xref:System.Data> classes relevantes.
+ A manipulação de outros tipos de arquivos pode exigir permissões adicionais. Por exemplo, se você quiser usar um arquivo de banco de dados do Access ( *. mdb* ), seu aplicativo deverá declarar confiança total para usar as \<xref:System.Data> classes relevantes.
 
 #### <a name="data-directory-and-application-versions"></a>Versões do aplicativo e do diretório de dados
  Cada versão de um aplicativo tem seu próprio diretório de dados, que é isolado de outras versões. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cria esse diretório independentemente de os arquivos de dados serem incluídos na implantação, de forma que o aplicativo tenha um local para criar novos arquivos de dados em tempo de execução. Quando uma nova versão de um aplicativo for instalada, o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copiará todos os arquivos de dados existentes do diretório de dados da versão anterior para o diretório de dados da nova versão, independentemente de eles terem sido incluídos na implantação original ou criados pelo aplicativo.

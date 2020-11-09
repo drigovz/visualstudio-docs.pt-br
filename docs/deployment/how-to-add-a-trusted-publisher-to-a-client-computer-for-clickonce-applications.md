@@ -1,5 +1,6 @@
 ---
 title: Caixa Adicionar fornecedor confiável ao cliente (ClickOnce)
+description: Saiba como adicionar um certificado a um computador cliente para que seus aplicativos ClickOnce sejam executados em um nível de confiança mais alto sem avisar o usuário.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809801"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382696"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Como adicionar um fornecedor confiável a um computador cliente em aplicativos ClickOnce
 Com a implantação de aplicativo confiável, você pode configurar computadores cliente para que seus [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos sejam executados com um nível mais alto de confiança sem avisar o usuário. Os procedimentos a seguir mostram como usar a ferramenta de linha de comando CertMgr.exe para adicionar o certificado de um Publicador ao repositório de editores confiáveis em um computador cliente.
@@ -39,7 +40,7 @@ Com a implantação de aplicativo confiável, você pode configurar computadores
 
 1. Obtenha um certificado digital de uma autoridade de certificação.
 
-2. Exporte o certificado para o formato base64 X. 509 (*. cer*). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte o certificado para o formato base64 X. 509 ( *. cer* ). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. No prompt de comando em computadores cliente, execute o seguinte comando:
 
@@ -49,7 +50,7 @@ Com a implantação de aplicativo confiável, você pode configurar computadores
 
 1. Obtenha um certificado digital de uma autoridade de certificação.
 
-2. Exporte o certificado para o formato base64 X. 509 (*. cer*). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Exporte o certificado para o formato base64 X. 509 ( *. cer* ). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. No prompt de comando em computadores cliente, execute o seguinte comando:
 

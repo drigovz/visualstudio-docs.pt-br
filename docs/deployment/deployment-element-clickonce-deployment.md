@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento Deployment (implantação do ClickOnce) | Microsoft Docs'
+description: O elemento de implantação identifica os atributos usados para a implantação de atualizações e a exposição ao sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988ce0859ab24377395cc4077f9e6fa42e0487a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3252c8f305b97564b8fb19affa83cc7dd837c97d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70887861"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382852"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;&gt;elemento Deployment (implantação do ClickOnce)
 Identifica os atributos usados para a implantação de atualizações e a exposição ao sistema.
@@ -64,9 +66,9 @@ Identifica os atributos usados para a implantação de atualizações e a exposi
 |--------------------------| - |
 | `install` | Obrigatórios. Especifica se este aplicativo define uma presença no menu **Iniciar** do Windows e no aplicativo **Adicionar ou remover programas** do painel de controle. Os valores válidos são `true` e `false`. Se `false` , [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o sempre executará a versão mais recente deste aplicativo da rede e não reconhecerá o `subscription` elemento. |
 | `minimumRequiredVersion` | Opcional. Especifica a versão mínima deste aplicativo que pode ser executada no cliente. Se o número de versão do aplicativo for menor que o número de versão fornecido no manifesto de implantação, o aplicativo não será executado. Os números de versão devem ser especificados no formato `N.N.N.N` , em que `N` é um inteiro não assinado. Se o `install` atributo for `false` , `minimumRequiredVersion` não deve ser definido. |
-| `mapFileExtensions` | Opcional. O padrão é `false`. Se `true` , todos os arquivos na implantação devem ter uma extensão. Deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o removerá essa extensão desses arquivos assim que eles forem baixados do servidor Web. Se você publicar seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ele adicionará automaticamente essa extensão a todos os arquivos. Esse parâmetro permite que todos os arquivos em uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação sejam baixados de um servidor Web que bloqueia a transmissão de arquivos que terminam em extensões "inseguras", como. exe. |
-| `disallowUrlActivation` | Opcional. O padrão é `false`. Se `true` , impede que um aplicativo instalado seja iniciado clicando na URL ou inserindo a URL no Internet Explorer. Se o `install` atributo não estiver presente, esse atributo será ignorado. |
-| `trustURLParameters` | Opcional. O padrão é `false`. Se `true` , permite que a URL contenha parâmetros de cadeia de caracteres de consulta que são passados para o aplicativo, assim como argumentos de linha de comando são passados para um aplicativo de linha de comando. Para obter mais informações, consulte [como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se o `disallowUrlActivation` atributo for `true` , `trustUrlParameters` deve ser excluído do manifesto ou definido explicitamente como `false` . |
+| `mapFileExtensions` | Opcional. Assume o padrão de `false`. Se `true` , todos os arquivos na implantação devem ter uma extensão. Deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o removerá essa extensão desses arquivos assim que eles forem baixados do servidor Web. Se você publicar seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ele adicionará automaticamente essa extensão a todos os arquivos. Esse parâmetro permite que todos os arquivos em uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação sejam baixados de um servidor Web que bloqueia a transmissão de arquivos que terminam em extensões "inseguras", como. exe. |
+| `disallowUrlActivation` | Opcional. Assume o padrão de `false`. Se `true` , impede que um aplicativo instalado seja iniciado clicando na URL ou inserindo a URL no Internet Explorer. Se o `install` atributo não estiver presente, esse atributo será ignorado. |
+| `trustURLParameters` | Opcional. Assume o padrão de `false`. Se `true` , permite que a URL contenha parâmetros de cadeia de caracteres de consulta que são passados para o aplicativo, assim como argumentos de linha de comando são passados para um aplicativo de linha de comando. Para obter mais informações, consulte [como recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Se o `disallowUrlActivation` atributo for `true` , `trustUrlParameters` deve ser excluído do manifesto ou definido explicitamente como `false` . |
 
  O `deployment` elemento também contém os seguintes elementos filho.
 

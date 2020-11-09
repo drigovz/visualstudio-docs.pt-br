@@ -1,5 +1,7 @@
 ---
 title: Como o ClickOnce executa atualizações de aplicativos | Microsoft Docs
+description: Saiba como o ClickOnce usa informações de versão de arquivo para decidir se deseja atualizar o aplicativo. O ClickOnce usa a aplicação de patches de arquivo para evitar redundância no download.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9217558c68d47ef8f2bf34b10db16463ee76f857
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900010"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382661"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Como o ClickOnce executa atualizações de aplicativos
 O ClickOnce usa as informações de versão de arquivo especificadas no manifesto de implantação do aplicativo para decidir se os arquivos do aplicativo devem ser atualizados. Depois que uma atualização é iniciada, o ClickOnce usa uma técnica chamada *aplicação de patch de arquivo* para evitar o download redundante de arquivos de aplicativo.

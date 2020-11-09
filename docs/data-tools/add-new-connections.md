@@ -1,5 +1,6 @@
 ---
 title: Adicionar novas conexões
+description: Adicione uma conexão no Visual Studio a um BD ou serviço e explore os conteúdos e esquemas do BD, usando Gerenciador de Servidores, Cloud Explorer ou Pesquisador de Objetos do SQL Server.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283054"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382410"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
-Você pode testar a conexão com um banco de dados ou serviço e explorar o conteúdo e os esquemas do banco de dados, usando **Gerenciador de servidores**, **Cloud Explorer**ou **pesquisador de objetos do SQL Server**. A funcionalidade dessas janelas se sobrepõe a alguma extensão. As diferenças básicas são:
+Você pode testar a conexão com um banco de dados ou serviço e explorar o conteúdo e os esquemas do banco de dados, usando **Gerenciador de servidores** , **Cloud Explorer** ou **pesquisador de objetos do SQL Server**. A funcionalidade dessas janelas se sobrepõe a alguma extensão. As diferenças básicas são:
 
 - Gerenciador de Servidores
 
@@ -32,7 +33,7 @@ Você pode testar a conexão com um banco de dados ou serviço e explorar o cont
 
 ## <a name="add-a-connection-in-server-explorer"></a>Adicionar uma conexão no Gerenciador de Servidores
 
-Para criar uma conexão com o banco de dados, clique no ícone **Adicionar conexão** no **Gerenciador de servidores**ou clique com o botão direito do mouse em **Gerenciador de servidores** no nó **conexões de dados** e selecione **Adicionar conexão**. A partir daqui, você também pode se conectar a um banco de dados em outro servidor, um serviço do SharePoint ou um serviço do Azure.
+Para criar uma conexão com o banco de dados, clique no ícone **Adicionar conexão** no **Gerenciador de servidores** ou clique com o botão direito do mouse em **Gerenciador de servidores** no nó **conexões de dados** e selecione **Adicionar conexão**. A partir daqui, você também pode se conectar a um banco de dados em outro servidor, um serviço do SharePoint ou um serviço do Azure.
 
 ![Ícone de nova conexão Gerenciador de Servidores](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -52,7 +53,7 @@ Depois de escolher a fonte de dados, clique em **testar conexão**. Se não tive
 
 ![Teste a conexão](../data-tools/media/raddata-test-connection.png)
 
-Se o teste for bem sucedido, você estará pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que significa realmente um *modelo de dados* com base no serviço ou banco subjacente.
+Se o teste for bem sucedido, você estará pronto para criar uma *fonte de dados* , que é um termo do Visual Studio que significa realmente um *modelo de dados* com base no serviço ou banco subjacente.
 
 ## <a name="see-also"></a>Confira também
 

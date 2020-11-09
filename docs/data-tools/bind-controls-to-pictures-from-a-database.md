@@ -1,5 +1,6 @@
 ---
 title: Associar controles a imagens de um banco de dados
+description: Use a janela Data Sources para associar uma imagem em um banco de dados a um controle em seu aplicativo do Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282978"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382293"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 
@@ -39,7 +40,7 @@ O procedimento a seguir pressupõe que a janela de **fontes de dados** já estej
 2. Na janela **fontes de dados** , expanda a tabela ou o objeto desejado para exibir suas colunas ou propriedades.
 
    > [!TIP]
-   > Se a janela **fontes de dados** não estiver aberta, abra-a selecionando **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+   > Se a janela **fontes de dados** não estiver aberta, abra-a selecionando **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
 3. Selecione a coluna ou propriedade que contém os dados da imagem e selecione um dos seguintes controles na lista suspensa controle:
 

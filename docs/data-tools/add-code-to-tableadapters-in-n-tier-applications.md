@@ -1,5 +1,6 @@
 ---
 title: Adicionar código a TableAdapters em aplicativos de n camadas
+description: Adicione código a adaptadores de tabela em aplicativos de n camadas. Crie um arquivo de classe parcial para o TableAdapter e adicione código a ele (em vez de ao DataSetName. DataSet. Designer).
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,22 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ea451ac60de971677ee2f7910b28b334c67dff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283093"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382358"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Adicionar código a TableAdapters em aplicativos de n camadas
 Você pode estender a funcionalidade de um TableAdapter criando um arquivo de classe parcial para o TableAdapter e adicionando código a ele (em vez de adicionar código ao arquivo *DataSetName. DataSet. designer* ). As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [parcial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 O código que define um TableAdapter é gerado sempre que são feitas alterações no TableAdapter no conjunto de data. Esse código também é gerado quando são feitas alterações durante a execução de qualquer assistente que modifica a configuração do TableAdapter. Para impedir que seu código seja excluído durante a regeneração de um TableAdapter, adicione o código ao arquivo de classe parcial do TableAdapter.
 
-Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs*) que contém o código do TableAdapter. O projeto designado na Propriedade Project do **conjunto** de conteúdo tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs*) que contém o código do conjunto de conteúdo.
+Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs* ) que contém o código do TableAdapter. O projeto designado na Propriedade Project do **conjunto** de conteúdo tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs* ) que contém o código do conjunto de conteúdo.
 
 > [!NOTE]
-> Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto DataSet.
+> Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados** ), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto DataSet.
 
 > [!NOTE]
 > O conjunto de recursos fornece a funcionalidade de geração <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos quando a validação é necessária. Para obter mais informações, consulte [Adicionar validação a um conjunto](../data-tools/add-validation-to-an-n-tier-dataset.md)de dados de n camadas.
@@ -68,6 +69,6 @@ Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultad
 ## <a name="see-also"></a>Confira também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
-- [Como adicionar código a conjuntos de dados em aplicativos de N camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
+- [Adicionar código a conjuntos de dados em aplicativos de n camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Criar e configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Visão geral de atualização hierárquica](hierarchical-update.md)
