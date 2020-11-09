@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Encapsular campo
                   href: ide/reference/encapsulate-field.md
+                - name: Extrair classe base
+                  href: ide/reference/extract-base-class.md
                 - name: Extrair interface
                   href: ide/reference/extract-interface.md
                 - name: Extrair método
                   href: ide/reference/extract-method.md
                 - name: Extrair função local
                   href: ide/reference/extract-local-function.md
+                - name: Método embutido
+                  href: ide/reference/inline-method.md
                 - name: Variável temporária embutida
                   href: ide/reference/inline-temporary-variable.md
                 - name: Métodos de extensão e tipos não importados de conclusão do IntelliSense
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Inverter instrução if
                   href: ide/reference/invert-if-statement.md
-                - name: Opções de refatoração de função local estática
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Tornar a classe abstrata
+                  href: ide/reference/make-class-abstract.md
                 - name: Tornar membro estático
                   href: ide/reference/make-member-static.md
                 - name: Mover declaração para perto da referência
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: Dividir ou mesclar instruções if
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Opções de refatoração de função local estática
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Sincronizar namespace e nome da pasta
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Sincronizar o tipo e o nome de arquivo
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Usar uma expressão de lambda ou o corpo do bloco
                   href: ide/reference/use-block-body-lambda.md
+                - name: Usar new()
+                  href: ide/reference/use-new.md
+                - name: Usar correspondência de padrões
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Parâmetros, variáveis e atribuições de valor não usados'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Encapsular, recuar e alinhar refatoração'
