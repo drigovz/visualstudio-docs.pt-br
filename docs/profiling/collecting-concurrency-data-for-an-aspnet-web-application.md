@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811130"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407699"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite coletar dados de contenção de recursos.
@@ -54,5 +54,5 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
 
 - [Visualizador de Simultaneidade](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Referência
+## <a name="see-also"></a>Veja também
 - [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)

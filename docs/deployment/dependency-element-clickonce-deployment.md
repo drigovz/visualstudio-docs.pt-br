@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382956"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407673"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt;elemento Dependency (implantação do ClickOnce)
 Identifica a versão do aplicativo a ser instalada e o local do manifesto do aplicativo.
@@ -128,7 +128,7 @@ Identifica a versão do aplicativo a ser instalada e o local do manifesto do apl
 ## <a name="remarks"></a>Comentários
  Normalmente, os manifestos de implantação têm um único `assemblyIdentity` elemento que identifica o nome e a versão do manifesto do aplicativo.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
  O exemplo de código a seguir mostra um `dependency` elemento em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto de implantação.
 
 ```xml
@@ -147,7 +147,7 @@ Identifica a versão do aplicativo a ser instalada e o local do manifesto do apl
 </dependency>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
  O exemplo de código a seguir especifica uma dependência em um assembly já instalado no GAC.
 
 ```xml
@@ -158,7 +158,7 @@ Identifica a versão do aplicativo a ser instalada e o local do manifesto do apl
 </dependency>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-3"></a>Exemplo 3
  O exemplo de código a seguir especifica uma dependência em uma versão específica do Common Language Runtime.
 
 ```xml
@@ -169,7 +169,7 @@ Identifica a versão do aplicativo a ser instalada e o local do manifesto do apl
 </dependency>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-4"></a>Exemplo 4
  O exemplo de código a seguir especifica uma dependência do sistema operacional.
 
 ```xml

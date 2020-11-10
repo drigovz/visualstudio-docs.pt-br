@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282352"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407660"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -49,7 +49,7 @@ Este passo a passos percorre o seguinte processo:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -67,19 +67,19 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 Comece criando um novo aplicativo Windows Forms:
 
-1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **ConcurrencyWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **ConcurrencyWalkthrough** e escolha **OK**.
 
-     O projeto **ConcurrencyWalkthrough** é criado e adicionado ao **Gerenciador de soluções**, e um novo formulário é aberto no designer.
+     O projeto **ConcurrencyWalkthrough** é criado e adicionado ao **Gerenciador de soluções** , e um novo formulário é aberto no designer.
 
 ## <a name="create-the-northwind-dataset"></a>Criar o conjunto de conjuntos Northwind
 
-Em seguida, crie um conjunto de um DataSet chamado **NorthwindDataSet**:
+Em seguida, crie um conjunto de um DataSet chamado **NorthwindDataSet** :
 
 1. No menu **dados** , escolha **Adicionar nova fonte de dados**.
 
@@ -112,7 +112,7 @@ Nesta seção, você cria um <xref:System.Windows.Forms.DataGridView?displayProp
 
 4. Arraste a tabela para uma área vazia do formulário.
 
-     Um <xref:System.Windows.Forms.DataGridView> controle chamado **customersDataGridView**e um <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator**nomeado é adicionado ao formulário associado ao <xref:System.Windows.Forms.BindingSource> . Isso é, por sua vez, associado à tabela Customers no NorthwindDataSet.
+     Um <xref:System.Windows.Forms.DataGridView> controle chamado **customersDataGridView** e um <xref:System.Windows.Forms.BindingNavigator> **CustomersBindingNavigator** nomeado é adicionado ao formulário associado ao <xref:System.Windows.Forms.BindingSource> . Isso é, por sua vez, associado à tabela Customers no NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Testar o formulário
 
@@ -122,7 +122,7 @@ Agora você pode testar o formulário para certificar-se de que ele se comporta 
 
      O formulário é exibido com um <xref:System.Windows.Forms.DataGridView> controle que é preenchido com dados da tabela Customers.
 
-2. No menu **Depurar**, selecione **Interromper Depuração**.
+2. No menu **Depurar** , selecione **Interromper Depuração**.
 
 ## <a name="handle-concurrency-errors"></a>Tratar erros de simultaneidade
 
@@ -176,14 +176,14 @@ Crie a mensagem adicionando o código a seguir ao **Editor de código**. Insira 
 
 ### <a name="process-the-users-response"></a>Processar a resposta do usuário
 
-Você também precisa de código para processar a resposta do usuário para a caixa de mensagem. As opções são substituir o registro atual no banco de dados pela alteração proposta, ou abandonar as alterações locais e atualizar a tabela data com o registro que está atualmente no banco de dado. Se o usuário escolher **Sim**, o <xref:System.Data.DataTable.Merge%2A> método será chamado com o argumento *PreserveChanges* definido como **true**. Isso faz com que a tentativa de atualização seja bem-sucedida, porque a versão original do registro agora corresponde ao registro no banco de dados.
+Você também precisa de código para processar a resposta do usuário para a caixa de mensagem. As opções são substituir o registro atual no banco de dados pela alteração proposta, ou abandonar as alterações locais e atualizar a tabela data com o registro que está atualmente no banco de dado. Se o usuário escolher **Sim** , o <xref:System.Data.DataTable.Merge%2A> método será chamado com o argumento *PreserveChanges* definido como **true**. Isso faz com que a tentativa de atualização seja bem-sucedida, porque a versão original do registro agora corresponde ao registro no banco de dados.
 
 Adicione o código a seguir abaixo do código que foi adicionado na seção anterior:
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Testar o formulário
+## <a name="test-the-form-behavior"></a>Testar o comportamento do formulário
 
 Agora, é possível testar o formulário para garantir que ele se comporta da forma esperada. Para simular uma violação de simultaneidade, você altera os dados no banco de dado depois de preencher o NorthwindDataSet.
 
@@ -191,20 +191,20 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 2. Depois que o formulário for exibido, deixe-o em execução e alterne para o IDE do Visual Studio.
 
-3. No menu **Exibir**, escolha **Gerenciador de Servidores**.
+3. No menu **Exibir** , escolha **Gerenciador de Servidores**.
 
-4. Em **Gerenciador de servidores**, expanda a conexão que seu aplicativo está usando e, em seguida, expanda o nó **tabelas** .
+4. Em **Gerenciador de servidores** , expanda a conexão que seu aplicativo está usando e, em seguida, expanda o nó **tabelas** .
 
 5. Clique com o botão direito do mouse na tabela **clientes** e selecione **Mostrar dados da tabela**.
 
-6. No primeiro registro (**ALFKI**), altere **ContactName** para **Maria Anders2**.
+6. No primeiro registro ( **ALFKI** ), altere **ContactName** para **Maria Anders2**.
 
     > [!NOTE]
     > Navegue até uma linha diferente para confirmar a alteração.
 
 7. Alterne para o formulário em execução do ConcurrencyWalkthrough.
 
-8. No primeiro registro no formulário (**ALFKI**), altere **ContactName** para **Maria anders1**.
+8. No primeiro registro no formulário ( **ALFKI** ), altere **ContactName** para **Maria anders1**.
 
 9. Selecione o botão **Salvar**.
 
@@ -214,4 +214,4 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

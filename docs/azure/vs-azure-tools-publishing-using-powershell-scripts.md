@@ -1,7 +1,7 @@
 ---
 title: Usar o PowerShell para publicar em ambientes de desenvolvimento e teste
 description: Saiba como usar scripts do Windows PowerShell do Visual Studio para publicar em ambientes de teste e desenvolvimento.
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 68b6075ab53fac8b5ac88bc3a15e591081c010da
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0fafcd0042fce6d3f9eece8e493ee01a9a6923e5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037166"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407582"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste
 
@@ -156,7 +156,7 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
    Consulte [Como criar um pacote de implantação na Web no Visual Studio](/previous-versions/aspnet/dd465323(v=vs.110)). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
-1. No **Gerenciador de Soluções**, abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
+1. No **Gerenciador de Soluções** , abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
 1. Se você estiver executando os scripts do Windows PowerShell neste computador pela primeira vez, abra uma janela de prompt de comando com privilégios de administrador e digite o seguinte comando:
 
     ```powershell
@@ -173,7 +173,7 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
     Observe que quando você automatiza o script, esse método para fornecer credenciais do Azure não funciona. Em vez disso, você deve usar o arquivo `.publishsettings` para fornecer credenciais. Uma vez apenas, você usa o comando **Get-AzurePublishSettingsFile** para baixar o arquivo do Azure e depois usa **Import-AzurePublishSettingsFile** para importar o arquivo. Para saber mais, confira [Como instalar e configurar o Azure PowerShell](/powershell/azure/overview).
 
-1. (Opcional) Se você quiser criar recursos do Azure, como máquina virtual, banco de dados e site sem publicar o aplicativo Web, use o comando **Publish-WebApplication.ps1** com o argumento **-Configuration**, definido para o arquivo de configuração JSON. Essa linha de comando usa o arquivo de configuração JSON para determinar quais recursos criar. Como ela usa configurações padrão para outros argumentos de linha de comando, ela cria os recursos, mas não publica seu aplicativo Web. A opção –Verbose fornece mais informações sobre o que está acontecendo.
+1. (Opcional) Se você quiser criar recursos do Azure, como máquina virtual, banco de dados e site sem publicar o aplicativo Web, use o comando **Publish-WebApplication.ps1** com o argumento **-Configuration** , definido para o arquivo de configuração JSON. Essa linha de comando usa o arquivo de configuração JSON para determinar quais recursos criar. Como ela usa configurações padrão para outros argumentos de linha de comando, ela cria os recursos, mas não publica seu aplicativo Web. A opção –Verbose fornece mais informações sobre o que está acontecendo.
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
@@ -208,7 +208,7 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
 Você pode personalizar o script de publicação e o arquivo de configuração JSON. As funções no módulo do Windows PowerShell **AzureWebAppPublishModule.psm1** não se destinam a serem modificadas. Se você quiser apenas especificar um banco de dados diferente ou alterar algumas das propriedades da máquina virtual, edite o arquivo de configuração JSON. Se quiser estender a funcionalidade do script para automatizar a criação e testar o projeto, você pode implementar stubs de função em **Publish-WebApplication.ps1**.
 
-Para automatizar a criação de seu projeto, adicione o código que chama o MSBuild para `New-WebDeployPackage` conforme mostrado neste exemplo de código. O caminho para o comando MSBuild é diferente dependendo da versão do Visual Studio que você instalou. Para obter o caminho correto, você pode usar a função **Get-MSBuildCmd**, conforme mostrado neste exemplo.
+Para automatizar a criação de seu projeto, adicione o código que chama o MSBuild para `New-WebDeployPackage` conforme mostrado neste exemplo de código. O caminho para o comando MSBuild é diferente dependendo da versão do Visual Studio que você instalou. Para obter o caminho correto, você pode usar a função **Get-MSBuildCmd** , conforme mostrado neste exemplo.
 
 ### <a name="to-automate-building-your-project"></a>Para automatizar a criação de seu projeto
 
@@ -250,7 +250,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
         #Write a function to build and package your web application
     ```
 
-    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte [referência de linha de comando do MSBuild](../msbuild/msbuild-command-line-reference.md)
+    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte [referência do MSBuild Command-Line](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -317,12 +317,12 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Add-AzureVM |Cria uma máquina virtual do Azure e retorna a URL da VM implantada. A função configura os pré-requisitos e, em seguida, chama a função **New-AzureVM** (módulo do Azure) para criar uma nova máquina virtual. |
 | Add-AzureVMEndpoints |Adiciona novos pontos de extremidade de entrada a uma máquina virtual e retorna a máquina virtual com o novo ponto de extremidade. |
 | Add-AzureVMStorage |Cria uma nova conta de armazenamento do Azure na assinatura atual. O nome da conta começa com "devtest", seguido por uma cadeia de caracteres alfanumérica exclusiva. A função retorna o nome da nova conta de armazenamento. Especifique um local ou um grupo de afinidades para a nova conta de armazenamento. |
-| Add-AzureWebsite |Cria um site com nome e local especificados. Essa função chama a função **New-AzureWebsite** no módulo do Azure. Se a assinatura ainda não incluir um site com o nome especificado, essa função criará o site e retornará um objeto de site. Caso contrário, ele retornará `$null`. |
+| Add-AzureWebsite |Cria um site com nome e local especificados. Essa função chama a função **New-AzureWebsite** no módulo do Azure. Se a assinatura ainda não incluir um site com o nome especificado, essa função criará o site e retornará um objeto de site. Caso contrário, retornará `$null`. |
 | Assinatura de backup |Salva a assinatura atual do Azure na variável `$Script:originalSubscription` no escopo do script. Essa função salva a assinatura do Azure atual (conforme obtidas pelo `Get-AzureSubscription -Current`) e sua conta de armazenamento e a assinatura é alterada por esse script (armazenado na variável `$UserSpecifiedSubscription`) e sua conta de armazenamento, no escopo de script. Ao salvar os valores, você pode usar uma função, como `Restore-Subscription`, para restaurar a assinatura atual original em a conta de armazenamento ao status atual, se o status atual foi alterado. |
 | Find-AzureVM |Obtém a máquina virtual especificada do Azure. |
 | Format-DevTestMessageWithTime |Anexa data e hora a uma mensagem. Essa função destina-se a mensagens gravadas em fluxos de erro e detalhes. |
 | Get-AzureSQLDatabaseConnectionString |Monta uma cadeia de conexão para se conectar a um banco de dados SQL do Azure. |
-| Get-AzureVMStorage |Retorna o nome da primeira conta de armazenamento com o nome padrão "DevTest *" (não diferencia maiúsculas de minúsculas) no local ou grupo de afinidade especificado. Se a conta de armazenamento "DevTest*" não corresponder ao local ou ao grupo de afinidade, a função a ignorará. Especifique um local ou um grupo de afinidades. |
+| Get-AzureVMStorage |Retorna o nome da primeira conta de armazenamento com o nome padrão "DevTest *" (não diferencia maiúsculas de minúsculas) no local ou grupo de afinidade especificado. Se a conta de armazenamento "DevTest* " não corresponder ao local ou ao grupo de afinidade, a função a ignorará. Especifique um local ou um grupo de afinidades. |
 | Get-MSDeployCmd |Retorna um comando para executar a ferramenta MsDeploy.exe. |
 | New-AzureVMEnvironment |Encontra ou cria uma máquina virtual na assinatura que corresponde aos valores no arquivo de configuração JSON. |
 | Publish-WebPackage |Usa MsDeploy.exe e um arquivo .zip para implantar recursos em um site. Essa função não gera nenhuma saída. Se a chamada para MSDeploy.exe falhar, a função gerará uma exceção. Para obter uma saída mais detalhada, use a opção **-Verbose** . |
@@ -334,8 +334,8 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Test-HttpsUrl |Converte a URL de entrada em um objeto System.Uri. Retorna `$True` se a URL for absoluta e seu esquema for https. Retorna `$false` se a URL for relativa, seu esquema não for HTTPS ou a cadeia de caracteres de entrada não puder ser convertida em URL. |
 | Test-Member |Retorna `$true` se uma propriedade ou método for um membro do objeto. Caso contrário, retorna `$false`. |
 | Write-ErrorWithTime |Grava uma mensagem de erro prefixada com a hora atual. Essa função chama a função **Format-DevTestMessageWithTime** para prefixar a hora antes de gravar a mensagem no fluxo de erro. |
-| Write-HostWithTime |Grava uma mensagem no programa host (**Write-Host**) prefixada com a hora atual. O efeito da gravação no programa host varia. A maioria dos programas que hospeda o Windows PowerShell grava essas mensagens na saída padrão. |
-| Write-VerboseWithTime |Grava uma mensagem detalhada prefixada com a hora atual. Como a mensagem chama **Write-Verbose**, ela será exibida somente quando o script for executado com o parâmetro **Detalhado** ou quando a preferência **VerbosePreference** é definida como **Continuar**. |
+| Write-HostWithTime |Grava uma mensagem no programa host ( **Write-Host** ) prefixada com a hora atual. O efeito da gravação no programa host varia. A maioria dos programas que hospeda o Windows PowerShell grava essas mensagens na saída padrão. |
+| Write-VerboseWithTime |Grava uma mensagem detalhada prefixada com a hora atual. Como a mensagem chama **Write-Verbose** , ela será exibida somente quando o script for executado com o parâmetro **Detalhado** ou quando a preferência **VerbosePreference** é definida como **Continuar**. |
 
 **Publish-WebApplication**
 

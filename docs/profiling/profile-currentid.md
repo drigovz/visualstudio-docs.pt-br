@@ -11,24 +11,24 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b44bee152acbf5529acfcadaa49a19e9feb52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407569"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 O PROFILE_CURRENTID retorna o pseudotoken para a ID do thread ou a ID do processo, em uma chamada para as funções NameProfile StartProfile, StopProfile, SuspendProfile e ResumeProfile. Use-o para fazer com que a função opere no thread atual ou processo, em vez de um especificamente indicado.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
  PROFILE_CURRENTID é definido em *VSPerf.h* como:
 
 ```cpp
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
  O exemplo a seguir ilustra PROFILE_CURRENTID. O exemplo usa PROFILE_CURRENTID como um parâmetro que identifica o thread atual em uma chamada para a função [StartProfile](../profiling/startprofile.md).
 
 ```cpp

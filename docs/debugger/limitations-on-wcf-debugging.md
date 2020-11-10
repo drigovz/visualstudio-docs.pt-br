@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731502"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407738"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 Há três modos de começar a depuração de um serviço WCF:
@@ -74,11 +74,10 @@ Há três modos de começar a depuração de um serviço WCF:
   ```
 
 ## <a name="self-hosting"></a>Auto-hospedagem
- Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, do Host de Serviço WCF ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Para obter informações sobre como depurar um serviço hospedado automaticamente, consulte [como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
+ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, do Host de Serviço WCF ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. Para obter informações sobre como depurar um serviço de hospedagem interna, consulte [como depurar um serviço Self-Hosted WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md).
 
-## <a name="self-hosting"></a>Auto-hospedagem
- Para habilitar a depuração de aplicativos do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 deve ser instalado antes que o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] seja instalado. Se o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] for instalado antes do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, um erro ocorrerá quando você tentar depurar um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5. A mensagem de erro é "Não é possível entrar automaticamente no servidor". Para corrigir esse problema, use os programas e recursos do **painel de controle**do Windows  >  **Programs and Features** para reparar a [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalação.
+ Para habilitar a depuração de aplicativos do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5 deve ser instalado antes que o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] seja instalado. Se o [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] for instalado antes do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5, um erro ocorrerá quando você tentar depurar um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 ou 3.5. A mensagem de erro é "Não é possível entrar automaticamente no servidor". Para corrigir esse problema, use os programas e recursos do **painel de controle** do Windows  >  **Programs and Features** para reparar a [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] instalação.
 
 ## <a name="see-also"></a>Confira também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
-- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Como depurar um serviço WCF Self-Hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64816538"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407543"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de renderização e cadeias de troca.
@@ -54,7 +54,7 @@ Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de ren
 
  Quando a reprodução detecta esses tipos de conflitos, ela se esforça para replicar o comportamento pretendido, mas pode não ser possível reproduzir os resultados de maneira exata. Embora isso geralmente não afete o desempenho dessas variantes de maneira que seu impacto seja representado de forma inadequada, é possível que isso aconteça, por exemplo, quando o controle do fluxo em um sombreador de pixel é determinado de acordo com o conteúdo preciso de uma textura, pois a textura replicada pode não ter conteúdos idênticos.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
  Essas variantes podem ser reproduzidas para destinos de renderização criados usando `ID3D11Device::CreateTexture2D` ao utilizar um código como esse:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
  Ou para cadeias de troca criadas usando IDXGISwapChain::CreateSwapChain ou D3D11CreateDeviceAndSwapChain ao utilizar um código como esse:
 
 ```cpp

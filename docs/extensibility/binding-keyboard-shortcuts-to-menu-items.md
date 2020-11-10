@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740027"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407709"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado a itens de menu
 Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada ao arquivo *. vsct* do pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, um item de menu ou um comando de barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limitá-lo a um editor personalizado.
@@ -31,7 +31,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Para verificar a disponibilidade de um atalho de teclado
 
-1. Na **Tools**  >  janela do ambiente**Opções**de ferramentas  >  **Environment** , selecione **teclado**.
+1. Na **Tools**  >  janela do ambiente **Opções** de ferramentas  >  **Environment** , selecione **teclado**.
 
 2. Certifique-se de que **usar o novo atalho no** esteja definido como **global**.
 
@@ -59,7 +59,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 
     Defina os `guid`  `id` atributos e para aqueles do comando que você deseja invocar.
 
-    Defina o `mod1` atributo como **Control**, **ALT**ou **Shift**.
+    Defina o `mod1` atributo como **Control** , **ALT** ou **Shift**.
 
     A seção keybindings deve ser semelhante a esta:
 
@@ -81,7 +81,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 
    Para disponibilizar o comando somente em um editor personalizado, defina o `editor` atributo como o nome do editor personalizado que foi gerado pelo modelo de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pacote quando você criou o VSPackage que inclui o editor personalizado. Para localizar o valor do nome, examine a `<Symbols>` seção para um `<GuidSymbol>` nó cujo `name` atributo termina em " `editorfactory` ." Este é o nome do editor personalizado.
 
-## <a name="example"></a>Exemplo
+## <a name="example-1"></a>Exemplo 1
  Este exemplo associa o atalho de teclado **Ctrl** + **ALT** + **C** a um comando chamado `cmdidMyCommand` em um pacote denominado `MyPackage` .
 
 ```
@@ -98,7 +98,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 </CommandTable>
 ```
 
-## <a name="example"></a>Exemplo
+## <a name="example-2"></a>Exemplo 2
  Este exemplo associa o atalho de teclado **Ctrl** + **B** a um comando chamado `cmdidBold` em um projeto chamado `TestEditor` . O comando está disponível somente no editor personalizado e não em outros editores.
 
 ```xml
