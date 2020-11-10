@@ -1,5 +1,7 @@
 ---
 title: Salvar um conjunto de dados como XML
+description: Salve um conjunto de um DataSet como XML. Acesse os dados XML em um dataset chamando os métodos XML disponíveis no DataSet, como GetXml ou WriteXml.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8854581903ab58a327ff18be7b3b7c0f860a3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e454aca47f9bf6425ef2dfd98747869c27523f2c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281728"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434617"
 ---
 # <a name="save-a-dataset-as-xml"></a>Salvar um conjunto de dados como XML
 
@@ -47,4 +49,4 @@ Chamar o <xref:System.Data.DataSet.WriteXml%2A> método envia os dados formatado
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

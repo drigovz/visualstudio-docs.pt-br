@@ -1,5 +1,7 @@
 ---
 title: Designers de atividade de Designer de Fluxo de Trabalho migração
+description: Saiba como usar os designers de atividade de migração para chamar as atividades do fluxo de trabalho 3.0/3.5 de um fluxo de trabalho que tem como destino .NET Framework 4 ou posterior.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
@@ -8,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed5640495c7de8550db63d2fa48d3fab1e67de9a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189723"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435606"
 ---
 # <a name="migration-activity-designers"></a>Designers de atividade de migração
 

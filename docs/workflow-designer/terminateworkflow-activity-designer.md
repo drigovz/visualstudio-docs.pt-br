@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-TerminateWorkflow
+description: Saiba como você pode usar o designer de atividade TerminateWorkflow para criar e configurar uma atividade TerminateWorkflow.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 078dfb43b5960580327448627a30eec20297d9f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5af1f8656e796d9551e1d140b07868551d563a90
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111772"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433863"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Designer de atividade de TerminateWorkflow
 
@@ -27,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.TerminateWorkflow> finaliza a 
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Usando o designer de atividade de TerminateWorkflow
 
-O designer de atividade do **TerminateWorkflow** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
+O designer de atividade do **TerminateWorkflow** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas** , que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
 
 O designer de atividade do **TerminateWorkflow** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma <xref:System.Activities.Statements.TerminateWorkflow> atividade com um **DisplayName** padrão de TerminateWorkflow. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **TerminateWorkflow** ou na caixa **DisplayName** da grade de propriedades.
 

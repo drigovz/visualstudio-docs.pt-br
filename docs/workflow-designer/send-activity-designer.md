@@ -1,5 +1,7 @@
 ---
 title: Designer de Fluxo de Trabalho-enviar designer de atividade
+description: Saiba mais sobre a atividade enviar e como você pode usar o designer de atividade de envio para criar e configurar uma atividade enviar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1eff0a52dfb258d7f7af49b03543fd741bc88c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78925411f911f9c0dfc0c2cfff891deca0e91e3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875950"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434045"
 ---
 # <a name="send-activity-designer"></a>Enviar o designer de atividades
 

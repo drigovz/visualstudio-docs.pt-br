@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 11/09/2020
 ms.topic: how-to
 description: Saiba como os administradores podem editar as atribuições de assinatura.
-ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382488"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433551"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Editar atribuições de assinatura do Visual Studio
 Como administrador de assinatura, você pode fazer alterações nas assinaturas atribuídas a indivíduos dentro da sua organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias.
@@ -39,6 +39,8 @@ Assista a este vídeo ou Continue lendo para saber como editar vários assinante
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
+> [!NOTE]
+> Não altere os GUIDs de assinatura no modelo. Consulte nosso artigo sobre como [atribuir GUIDs de assinatura específicos](assign-guid.md).
 
 1. Para editar vários assinantes de uma vez, navegue até a guia assinantes. Na faixa de faixas na parte superior, clique em **edição em massa**.
 
@@ -46,7 +48,7 @@ Assista a este vídeo ou Continue lendo para saber como editar vários assinante
    > [!div class="mx-imgBorder"]
    > ![Editando uma licença – exportar a lista de edições em massa](_img/edit-license/edit-license-bulk-edit-export.png "Clique em exportar este Excel para criar uma lista de suas assinaturas atuais.")
 
-3. Em seguida, salve o arquivo localmente para que ele possa ser encontrado com facilidade e faça as alterações necessárias antes de carregá-lo. Para garantir um upload bem-sucedido, **não edite o nível da assinatura ou o GUID da assinatura** no arquivo de edição em massa, pois isso fará com que o carregamento falhe.
+3. Em seguida, salve o arquivo localmente para que ele possa ser encontrado com facilidade e faça as alterações necessárias antes de carregá-lo. 
 
 4. Retorne ao Portal de Administração de Assinaturas do Visual Studio e na caixa de diálogo Edição em Massa, clique em **Procurar**. Selecione o arquivo do Excel que você salvou e clique em **OK**. O andamento do upload será exibido na tela.
    > [!div class="mx-imgBorder"]

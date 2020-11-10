@@ -1,5 +1,7 @@
 ---
 title: Criar um Windows Form para pesquisar dados
+description: Leia um exemplo de como criar um formulário do Windows para pesquisar dados. Crie o aplicativo do Windows Form, a fonte de dados e o formulário. Adicionar parametrização. Testar o aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586803"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435281"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
 
@@ -47,7 +49,7 @@ As tarefas ilustradas neste passo a passo incluem:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -67,11 +69,11 @@ Crie um novo projeto de **aplicativo Windows Forms** para C# ou Visual Basic. No
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-Esta etapa cria uma fonte de dados por meio de um banco de dados usando o assistente de **Configuração de Fonte de Dados**:
+Esta etapa cria uma fonte de dados por meio de um banco de dados usando o assistente de **Configuração de Fonte de Dados** :
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 

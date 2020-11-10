@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-CompensableActivity
+description: Saiba como você pode usar o designer de atividade CompensableActivity para criar e configurar uma atividade CompensableActivity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597094"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434331"
 ---
 # <a name="compensableactivity-activity-designer"></a>Designer de atividade de CompensableActivity
 
@@ -25,7 +27,7 @@ O designer de atividade **CompensableActivity** é usado para criar e configurar
  <xref:System.Activities.Statements.CompensableActivity> define uma unidade de trabalho que pode ser compensado confirmada ou após a conclusão com êxito.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Usando o designer de atividade de CompensableActivity
- O designer de atividade **CompensableActivity** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas**, selecione a guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+ O designer de atividade **CompensableActivity** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas** , selecione a guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
  O designer de atividade do **CompensableActivity** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho. Você pode remover o designer de atividade dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.CompensableActivity> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de CompensableActivity. Edite o <xref:System.Activities.Activity.DisplayName%2A> valor no cabeçalho do designer de atividade **CompensableActivity** . Ele também pode ser editado na caixa **DisplayName** da grade de propriedades.
 
@@ -46,5 +48,5 @@ O designer de atividade **CompensableActivity** é usado para criar e configurar
 - [Transação](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [Compensar](../workflow-designer/compensate-activity-designer.md)
-- [Confirmar](../workflow-designer/confirm-activity-designer.md)
+- [Veja](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

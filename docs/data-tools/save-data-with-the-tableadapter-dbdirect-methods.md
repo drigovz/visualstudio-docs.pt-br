@@ -1,5 +1,7 @@
 ---
 title: Salvar os dados com os métodos TableAdapter DBDirect
+description: Neste tutorial, execute instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281603"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434565"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 
@@ -43,7 +45,7 @@ Durante este passo a passo, você aprenderá a:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -61,13 +63,13 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**.
 
-1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **TableAdapterDbDirectMethodsWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **TableAdapterDbDirectMethodsWalkthrough** e escolha **OK**.
 
      O projeto **TableAdapterDbDirectMethodsWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 
@@ -83,7 +85,7 @@ Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar u
 
 2. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-3. Na tela **escolher um tipo de fonte de dados** , selecione **banco**de dado e, em seguida, selecione **Avançar**.
+3. Na tela **escolher um tipo de fonte de dados** , selecione **banco** de dado e, em seguida, selecione **Avançar**.
 
 4. Na tela **escolher sua conexão de dados** , siga um destes procedimentos:
 
@@ -113,11 +115,11 @@ Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas 
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para adicionar botões que chamam os métodos individuais DbDirect de um TableAdapter
 
-1. Arraste três controles <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** para **Form1** (abaixo de **RegionDataGridView**).
+1. Arraste três controles <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** para **Form1** (abaixo de **RegionDataGridView** ).
 
 2. Defina as propriedades **Nome** e **Texto** a seguir em cada botão.
 
-    |Name|Texto|
+    |Nome|Texto|
     |----------|----------|
     |`InsertButton`|**Inserção**|
     |`UpdateButton`|**Atualização**|
@@ -170,4 +172,4 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você pode quere
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

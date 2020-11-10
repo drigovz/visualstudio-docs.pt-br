@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-WriteLine
+description: Saiba mais sobre a atividade WriteLine e como você pode usar o designer de atividade WriteLine para criar e configurar uma atividade WriteLine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e3b4da69a2d9154f36e42d3b20657e204767872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593018"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433655"
 ---
 # <a name="writeline-activity-designer"></a>Designer de atividade WriteLine
 

@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-Persist
+description: Saiba mais sobre a atividade de persistência e como usar o designer de atividade de persistência para criar e configurar uma atividade de persistência.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114761"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435567"
 ---
 # <a name="persist-activity-designer"></a>Persistir o designer de atividades
 
@@ -27,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Persist> salva um fluxo de tra
 
 ### <a name="using-the-persist-activity-designer"></a>Usando o designer de atividade de persistir
 
-O designer de atividade de **persistência** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
+O designer de atividade de **persistência** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas** , que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
 
 O designer de atividade de **persistência** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma <xref:System.Activities.Statements.Persist> atividade com um **DisplayName** padrão de persist. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **persistência** ou na caixa **DisplayName** da grade de propriedades.
 

@@ -1,5 +1,7 @@
 ---
 title: Como conectar a dados em um serviço
+description: Conecte seu aplicativo aos dados retornados de um serviço executando o assistente de configuração da fonte de dados e selecionando serviço na página escolher um tipo de fonte de dados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b49840a2190abfd223edf5643b8d70da1a59d6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282222"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435007"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Como se conectar a dados em um serviço
 
@@ -36,7 +38,7 @@ Após a conclusão do assistente, uma referência de serviço é adicionada ao s
 
 ## <a name="to-connect-your-application-to-a-service"></a>Para conectar seu aplicativo a um serviço
 
-1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
+1. No menu **Dados** , clique em **Adicionar Nova Fonte de Dados**.
 
 2. Selecione **serviço** na página **escolher um tipo de fonte de dados** e clique em **Avançar**.
 
@@ -59,5 +61,5 @@ Para adicionar funcionalidade ao seu aplicativo, selecione um item na janela **f
 
 ## <a name="see-also"></a>Confira também
 
-- [Associar controles WPF a um WCF Data Service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
+- [Associar controles do WPF a um WCF Data Service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
 - [Serviços de Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

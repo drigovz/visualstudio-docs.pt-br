@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: 5e8fa7f740275f416f80827276d74be1f05b0e21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6668e0b61c541ffc0327120cb6e699ada6f1b690
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984739"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434370"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
@@ -37,5 +37,5 @@ O VSCEIP está ativado por padrão. Para desativá-lo e ativá-lo novamente, sig
 * [Programa de Aperfeiçoamento da Experiência do Usuário (Visual Studio no Windows)](/visualstudio/ide/visual-studio-experience-improvement-program)
 * [Logs gerados pelo sistema coletados pelo Visual Studio (no Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [Como relatar um problema com o Visual Studio para Mac](report-a-problem.md)
-* [Comunidade de Desenvolvedores do Visual Studio para Mac](https://developercommunity.visualstudio.com/spaces/41/index.html)
+* [Comunidade de Desenvolvedores do Visual Studio para Mac](https://aka.ms/feedback/vsm-home)
 * [Política de Privacidade da Microsoft](https://privacy.microsoft.com/privacystatement)

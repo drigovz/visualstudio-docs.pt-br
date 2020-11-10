@@ -1,5 +1,7 @@
 ---
 title: 'Passo a passo: salvar dados em uma transação'
+description: Neste tutorial, consulte como salvar dados em uma transação usando o namespace System. Transactions no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281624"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434539"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
 
@@ -50,13 +52,13 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**.
 
-1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **SavingDataInATransactionWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **SavingDataInATransactionWalkthrough** e escolha **OK**.
 
      O projeto **SavingDataInATransactionWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 
@@ -68,7 +70,7 @@ Esta etapa usa o **Assistente de configuração de fonte de dados** para criar u
 
 2. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-3. Na tela **escolher um tipo de fonte de dados** , selecione **banco**de dado e, em seguida, selecione **Avançar**.
+3. Na tela **escolher um tipo de fonte de dados** , selecione **banco** de dado e, em seguida, selecione **Avançar**.
 
 4. Na tela **escolher sua conexão de dados** , siga um destes procedimentos:
 
@@ -108,7 +110,7 @@ As transações usam o namespace <xref:System.Transactions>. Uma referência do 
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para adicionar uma referência ao arquivo DLL System.Transactions
 
-1. No menu **Projeto**, selecione **Adicionar Referência**.
+1. No menu **Projeto** , selecione **Adicionar Referência**.
 
 2. Selecione **System. Transactions** (na guia **.net** ) e, em seguida, selecione **OK**.
 
@@ -139,28 +141,28 @@ A ordem para reconciliar as alterações aos dados relacionados é a seguinte:
 
 ### <a name="to-delete-existing-orders"></a>Para excluir pedidos existentes
 
-- Adicione o seguinte método `DeleteOrders` a **Form1**:
+- Adicione o seguinte método `DeleteOrders` a **Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Para excluir clientes existentes
 
-- Adicione o seguinte método `DeleteCustomers` a **Form1**:
+- Adicione o seguinte método `DeleteCustomers` a **Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Para adicionar novos clientes
 
-- Adicione o seguinte método `AddNewCustomers` a **Form1**:
+- Adicione o seguinte método `AddNewCustomers` a **Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Para adicionar novos pedidos
 
-- Adicione o seguinte método `AddNewOrders` a **Form1**:
+- Adicione o seguinte método `AddNewOrders` a **Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -172,4 +174,4 @@ Pressione **F5** para executar o aplicativo.
 ## <a name="see-also"></a>Confira também
 
 - [Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

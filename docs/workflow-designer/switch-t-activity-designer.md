@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade de Designer de Fluxo de Trabalho-switch &lt; T &gt;
+description: Saiba como usar o designer de <T> atividade de switch para criar e configurar uma <T> atividade switch no designer de fluxo de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,26 +13,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7430dec75e898a6695b146ce50076b8f57ed9d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6bdf05878c08b1c175b78ff2205b74c4ea5669b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711606"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433928"
 ---
 # <a name="switcht-activity-designer"></a>Designer de atividade Switch\<T>
 
 A atividade de <xref:System.Activities.Statements.Switch%601> avalia uma expressão especificada e executa a atividade de uma coleção de atividades cuja chave associado corresponde ao valor obtido de avaliação.
 
-A **opção<designer \> ** de atividade T é usada para criar e configurar uma <xref:System.Activities.Statements.Switch%601> atividade no designer de fluxo de trabalho.
+A **opção<designer \>** de atividade T é usada para criar e configurar uma <xref:System.Activities.Statements.Switch%601> atividade no designer de fluxo de trabalho.
 
 ## <a name="the-switchtactivity"></a>A \<T> atividade Switch
 
-Uma atividade de <xref:System.Activities.Statements.Switch%601> contém <xref:System.Activities.Statements.Switch%601.Expression%2A> e um dicionário de <xref:System.Activities.Statements.Switch%601.Cases%2A>. Cada caso no dicionário consiste em um par que contém uma *chave* e uma atividade que serve como seu *valor*correspondente. A atividade de <xref:System.Activities.Statements.Switch%601> avalia <xref:System.Activities.Statements.Switch%601.Expression%2A> e o compara com cada uma das chaves. Se uma correspondência for encontrada, a atividade correspondente é executada. Somente uma correspondência é possível porque as chaves de dicionário devem ser exclusivos de acordo com o tipo de igualdade definido pelo comparer de igualdade de dicionário. Se nenhuma correspondência for encontrada, a atividade de <xref:System.Activities.Statements.Switch%601.Default%2A> é executada.
+Uma atividade de <xref:System.Activities.Statements.Switch%601> contém <xref:System.Activities.Statements.Switch%601.Expression%2A> e um dicionário de <xref:System.Activities.Statements.Switch%601.Cases%2A>. Cada caso no dicionário consiste em um par que contém uma *chave* e uma atividade que serve como seu *valor* correspondente. A atividade de <xref:System.Activities.Statements.Switch%601> avalia <xref:System.Activities.Statements.Switch%601.Expression%2A> e o compara com cada uma das chaves. Se uma correspondência for encontrada, a atividade correspondente é executada. Somente uma correspondência é possível porque as chaves de dicionário devem ser exclusivos de acordo com o tipo de igualdade definido pelo comparer de igualdade de dicionário. Se nenhuma correspondência for encontrada, a atividade de <xref:System.Activities.Statements.Switch%601.Default%2A> é executada.
 
 ## <a name="how-to-use-the-switcht-activity-designer"></a>Como usar o designer de \<T> atividade de switch
 
-Acesse o designer de atividade do ** \<T> comutador** na categoria **fluxo de controle** da caixa de **ferramentas**. Depois de soltá-lo na Designer de Fluxo de Trabalho, ele exibe a caixa de diálogo **Selecionar tipos** para permitir que o usuário especifique o tipo genérico *T* usado na <xref:System.Activities.Statements.Switch%601> atividade. O valor padrão é **Int32**. Depois que o tipo genérico *T* tiver sido selecionado, uma **opção<\> ** designer de t será adicionada ao designer de fluxo de trabalho.
+Acesse o designer de atividade do **\<T> comutador** na categoria **fluxo de controle** da caixa de **ferramentas**. Depois de soltá-lo na Designer de Fluxo de Trabalho, ele exibe a caixa de diálogo **Selecionar tipos** para permitir que o usuário especifique o tipo genérico *T* usado na <xref:System.Activities.Statements.Switch%601> atividade. O valor padrão é **Int32**. Depois que o tipo genérico *T* tiver sido selecionado, uma **opção<\>** designer de t será adicionada ao designer de fluxo de trabalho.
 
 A seguir estão as propriedades de **Switch<\> T** designer. Todas essas propriedades podem ser editadas na grade de propriedade. Alguns deless também podem ser editados na superfície de designer.
 
@@ -41,7 +43,7 @@ A tabela a seguir mostra as propriedades mais úteis de <xref:System.Activities.
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.Switch%601> . O valor padrão é switch<Int32 \> . O valor pode ser editado na janela **Propriedades** ou diretamente no cabeçalho do designer.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.Switch%601.Expression%2A>|Verdadeiro|Especifica a expressão usada para comparar as chaves na coleção dos casos para determinar que casos a executar.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Especifica a atividade executada se nenhuma correspondência for encontrada. Clique no botão **Adicionar uma atividade** no designer para abrir a caixa **padrão** em que a atividade pode ser descartada.|
-|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Especifica os casos a ser avaliado. Para adicionar um caso, clique no botão **Adicionar novo caso** na parte inferior do **switch \<T> ** designer. O botão será alterado para uma caixa de texto (a box de combinação se o tipo genérico selecionado ao adicionar a opção \<T> for String ou enum). Depois de adicionar uma chave na caixa **valor do caso** , a área do caso é expandida e uma atividade pode ser descartada onde o texto de dica "soltar atividade aqui" para definir a lógica de execução para o caso.|
+|<xref:System.Activities.Statements.Switch%601.Cases%2A>||Especifica os casos a ser avaliado. Para adicionar um caso, clique no botão **Adicionar novo caso** na parte inferior do **switch \<T>** designer. O botão será alterado para uma caixa de texto (a box de combinação se o tipo genérico selecionado ao adicionar a opção \<T> for String ou enum). Depois de adicionar uma chave na caixa **valor do caso** , a área do caso é expandida e uma atividade pode ser descartada onde o texto de dica "soltar atividade aqui" para definir a lógica de execução para o caso.|
 
 Vários casos podem ser adicionados como as chaves dos casos não são duplicadas. Se não, uma caixa de diálogo de erro exibe relatar a chave especificada dos casos já existe e que você deve escolher uma chave diferente. No designer **de \<T> switch** , apenas uma área de caso pode estar na exibição expandida de cada vez. Se uma área dos casos está na visualização recolhida, clique na área dos casos para expandi-la. Observe que para casos, recolhidos de designer mostra o nome para exibição de atividade dentro dos casos no lado direito se houver. Caso contrário, ele mostra o botão **Adicionar uma atividade** que expande o caso se você clicar nele e permitirá que você adicione uma atividade.
 

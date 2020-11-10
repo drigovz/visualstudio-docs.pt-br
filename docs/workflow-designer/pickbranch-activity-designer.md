@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-PickBranch
+description: Saiba como o designer de atividade do PickBranch fornece um caminho de execução baseado em evento em uma atividade de seleção que pode ser disparada por um evento de entrada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876080"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434227"
 ---
 # <a name="pickbranch-activity-designer"></a>Designer de atividade de PickBranch
 
@@ -31,7 +33,7 @@ Acesse o designer do **PickBranch** na categoria **fluxo de controle** da **caix
 
 Dois <xref:System.Activities.Statements.PickBranch> objetos vazios com nomes de exibição de **Branch1** e **Branch2** são criados por padrão como elementos de uma <xref:System.Activities.Statements.Pick> atividade quando o designer de atividade de **seleção** é inicialmente retirado para o designer de fluxo de trabalho. Esses respectivos <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valores de propriedade podem ser editados no cabeçalho do **PickBranch** designer ou na janela **Propriedades** de cada ramificação.
 
-Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> objetos à coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastar e soltar o designer **PickBranch** da **caixa de ferramentas**ou usando o menu de atalho de dentro da superfície de design de **escolha** :
+Há duas maneiras de adicionar <xref:System.Activities.Statements.PickBranch> objetos à coleção de um <xref:System.Activities.Statements.Pick> objeto: arrastar e soltar o designer **PickBranch** da **caixa de ferramentas** ou usando o menu de atalho de dentro da superfície de design de **escolha** :
 
 - O designer **PickBranch** cria um <xref:System.Activities.Statements.PickBranch> quando ele é arrastado da **caixa de ferramentas** e é colocado em uma das ramificações de um designer de atividade de **escolha** na superfície de designer de fluxo de trabalho. Novos objetos de <xref:System.Activities.Statements.PickBranch> podem ser colocados dentro do designer de <xref:System.Activities.Statements.Pick> para a esquerda ou direita de todos os elementos existentes de <xref:System.Activities.Statements.PickBranch> já contidos na coleção. Ao arrastar um designer de **PickBranch** para o designer de **seleção** com um mouse, o designer de **seleção** usa uma faixa azul cinza vertical para indicar onde o <xref:System.Activities.Statements.PickBranch> é adicionado para um determinado posicionamento do mouse.
 

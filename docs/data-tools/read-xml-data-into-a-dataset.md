@@ -1,5 +1,7 @@
 ---
 title: Ler dados XML em um conjunto de dados
+description: Ler dados XML em um DataSet. Neste tutorial, você cria um aplicativo do Windows que carrega dados XML em um DataSet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281780"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434643"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
@@ -39,9 +41,9 @@ Crie um novo projeto de **aplicativo Windows Forms** para C# ou Visual Basic. No
 
 Como este passo a passos se concentra na leitura de dados XML em um conjunto, o conteúdo de um arquivo XML é fornecido.
 
-1. No menu **Projeto**, selecione **Adicionar novo item**.
+1. No menu **Projeto** , selecione **Adicionar novo item**.
 
-2. Selecione **arquivo XML**, nomeie o arquivo **authors.xml**e, em seguida, selecione **Adicionar**.
+2. Selecione **arquivo XML** , nomeie o arquivo **authors.xml** e, em seguida, selecione **Adicionar**.
 
    O arquivo XML é carregado no designer e está pronto para edição.
 
@@ -127,7 +129,7 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 1. Abra `Form1` no modo Design.
 
-2. Na **caixa de ferramentas**, arraste os seguintes controles para o formulário:
+2. Na **caixa de ferramentas** , arraste os seguintes controles para o formulário:
 
     - Um <xref:System.Windows.Forms.DataGridView> controle
 
@@ -150,11 +152,11 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 Nesta etapa, você cria um novo conjunto de uma chamada `authors` . Para obter mais informações sobre conjuntos de dados, consulte [ferramentas de DataSet no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. Em **Gerenciador de soluções**, selecione o arquivo de origem para o **Form1**e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
+1. Em **Gerenciador de soluções** , selecione o arquivo de origem para o **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
 
 2. Na [caixa de ferramentas, guia Data](../ide/reference/toolbox-data-tab.md), arraste um **conjunto** de dados para **Form1**.
 
-3. Na caixa de diálogo **Adicionar conjunto** de texto, selecione **conjunto de tipos não tipado**e, em seguida, selecione **OK**.
+3. Na caixa de diálogo **Adicionar conjunto** de texto, selecione **conjunto de tipos não tipado** e, em seguida, selecione **OK**.
 
      **DataSet1** é adicionado à bandeja de componentes.
 
@@ -164,7 +166,7 @@ Nesta etapa, você cria um novo conjunto de uma chamada `authors` . Para obter m
 
 O botão **ler XML** lê o arquivo XML no conjunto de os. Em seguida, ele define as propriedades no <xref:System.Windows.Forms.DataGridView> controle que a associa ao conjunto de linhas.
 
-1. Em **Gerenciador de soluções**, selecione **Form1**e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
+1. Em **Gerenciador de soluções** , selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** na barra de ferramentas **Gerenciador de soluções** .
 
 2. Selecione o botão **ler XML** .
 
@@ -181,7 +183,7 @@ O botão **ler XML** lê o arquivo XML no conjunto de os. Em seguida, ele define
 
 O botão **Mostrar esquema** cria um <xref:System.IO.StringWriter> objeto que é preenchido com o esquema e é exibido no <xref:System.Windows.Forms.TextBox> controle.
 
-1. Em **Gerenciador de soluções**, selecione **Form1**e, em seguida, selecione o botão **Designer de exibição** .
+1. Em **Gerenciador de soluções** , selecione **Form1** e, em seguida, selecione o botão **Designer de exibição** .
 
 2. Selecione o botão **Mostrar esquema** .
 

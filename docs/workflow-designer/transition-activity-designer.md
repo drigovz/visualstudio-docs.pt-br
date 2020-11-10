@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade de transição de Designer de Fluxo de Trabalho
+description: Saiba como você pode usar o designer de atividade de transição para configurar uma transição entre dois Estados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c71f31f4582a60bcfc87e4906a1447e33ffa7bd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cedc9c7b6f402ad3f5f2c40e21c29e2a0d1ad2e6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593077"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433720"
 ---
 # <a name="transition-activity-designer"></a>Fazer a transição o designer de atividades
 
@@ -32,7 +34,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|Falso|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.Transition> . O valor padrão é **T1**. O valor pode ser editado na grade de propriedade, no cabeçalho de designer expandido de transição, e o cabeçalho da seção de ação dentro do designer expandido de transição. <xref:System.Activities.Activity.DisplayName%2A> é usado em navegação de rastreamento que é exibida na parte superior do designer de fluxo de trabalho.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, especifica uma expressão que deve ser avaliada como **verdadeira** antes de o controle ser passado para o estado de destino. Essa condição pode ser editada na grade de propriedade e expandido no designer de transição. Várias condições em uma transição compartilhado são avaliadas na ordem em que aparecem no designer de transição. **Observação:**  Observe que, se a <xref:System.Activities.Statements.Transition.Condition%2A> de uma transição for avaliada como **false** (ou se todas as condições de uma transição de gatilho compartilhado forem avaliadas como **false**), a transição não ocorrerá e todos os gatilhos de todas as transições do estado serão reagendados. Neste tutorial, essa situação não pode ocorrer devido à maneira como as condições são configuradas (temos ações específicas para se o palpite está correto ou incorreto).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, especifica uma expressão que deve ser avaliada como **verdadeira** antes de o controle ser passado para o estado de destino. Essa condição pode ser editada na grade de propriedade e expandido no designer de transição. Várias condições em uma transição compartilhado são avaliadas na ordem em que aparecem no designer de transição. **Observação:**  Observe que, se a <xref:System.Activities.Statements.Transition.Condition%2A> de uma transição for avaliada como **false** (ou se todas as condições de uma transição de gatilho compartilhado forem avaliadas como **false** ), a transição não ocorrerá e todos os gatilhos de todas as transições do estado serão reagendados. Neste tutorial, essa situação não pode ocorrer devido à maneira como as condições são configuradas (temos ações específicas para se o palpite está correto ou incorreto).|
 |**Origem**|Verdadeiro|Indica o estado de que essa transição se origina. Clicando no nome do estado de origem alterna a exibição do designer para uma exibição expandida de estado. Esse valor é definido quando a transição é criada e não pode ser alterada.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|Falso|Especifica a atividade cuja conclusão inicia a transição. Para definir essa atividade, arraste uma atividade da **caixa de ferramentas** e solte-a na seção **gatilho** da transição.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|Falso|Especifica a atividade que é executada quando a atividade de gatilho é concluída e o <xref:System.Activities.Statements.Transition.Condition%2A> , se presente, é avaliado como **verdadeiro**. Esta atividade é executada ao fazer a transição para estado de destino, após a atividade de <xref:System.Activities.Statements.State.Exit%2A> para o estado de origem, se presentes, é executada. Quando o designer de transição é expandido, esse valor pode ser definido arrastando uma atividade da **caixa de ferramentas** e soltando-o na seção de **ação** da transição. Pode haver várias ações para uma única transição. As ações individuais podem ser expandidos e reduzido, e podem ser classificadas clicando para cima ou para baixo a seta que aparece em ação quando há várias ações em uma transição.|
@@ -40,7 +42,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 
 ### <a name="creating-transitions"></a>Criar transições
 
-As transições são criados arrastando uma linha de um estado para outro, ou soltando um estado em triângulos que aparecem quando um estado é arrastado sobre outro estado. Para criar uma transição, arrastando passa o mouse sobre a borda do estado de origem, e arraste uma linha de estado da fonte para o estado de destino. Para criar uma transição soltando-se, arraste o estado de destino e focalizar-lo sobre o estado de origem, e solte-o em um dos quatro triângulos que aparecem em torno do estado de exibição source. O estado de destino pode ser um novo estado arrastado da **caixa de ferramentas**ou um estado existente arrastado do designer de fluxo de trabalho.
+As transições são criados arrastando uma linha de um estado para outro, ou soltando um estado em triângulos que aparecem quando um estado é arrastado sobre outro estado. Para criar uma transição, arrastando passa o mouse sobre a borda do estado de origem, e arraste uma linha de estado da fonte para o estado de destino. Para criar uma transição soltando-se, arraste o estado de destino e focalizar-lo sobre o estado de origem, e solte-o em um dos quatro triângulos que aparecem em torno do estado de exibição source. O estado de destino pode ser um novo estado arrastado da **caixa de ferramentas** ou um estado existente arrastado do designer de fluxo de trabalho.
 
 > [!NOTE]
 > Um único estado em um computador de estado pode ter até 76 transições criadas utilizando o designer de fluxo de trabalho. O limite nas transições para um estado para fluxos de trabalho criados fora de designer é delimitado somente por recursos do sistema.

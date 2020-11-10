@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-TryCatch
+description: Saiba mais sobre a atividade TryCatch e como você pode usar o designer de atividade TryCatch para criar e configurar uma atividade TryCatch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,19 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593064"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433564"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 
 O designer de atividade **TryCatch** é usado para criar e configurar uma <xref:System.Activities.Statements.TryCatch> atividade.
 
 ## <a name="the-trycatch-activity"></a>A atividade de TryCatch
- A <xref:System.Activities.Statements.TryCatch> atividade contém uma <xref:System.Activities.Statements.TryCatch.Try%2A> atividade, uma coleção de **Catch \<TException> ** e uma <xref:System.Activities.Statements.TryCatch.Finally%2A> atividade. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A> . São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se a <xref:System.Activities.Statements.TryCatch.Try%2A> atividade lançar qualquer exceção, a <xref:System.Activities.Statements.TryCatch> atividade usará seu **Catch<\> coleção TException** para corresponder à exceção. Se houver uma correspondência, o <xref:System.Activities.Statements.Catch%601.Action%2A> do ** \<TException> Catch** correspondente será executado, servindo como a lógica de tratamento de erros para a exceção. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . Para obter mais informações, consulte [exceções de fluxo de trabalho do Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
+ A <xref:System.Activities.Statements.TryCatch> atividade contém uma <xref:System.Activities.Statements.TryCatch.Try%2A> atividade, uma coleção de **Catch \<TException>** e uma <xref:System.Activities.Statements.TryCatch.Finally%2A> atividade. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A> . São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se a <xref:System.Activities.Statements.TryCatch.Try%2A> atividade lançar qualquer exceção, a <xref:System.Activities.Statements.TryCatch> atividade usará seu **Catch<\> coleção TException** para corresponder à exceção. Se houver uma correspondência, o <xref:System.Activities.Statements.Catch%601.Action%2A> do **\<TException> Catch** correspondente será executado, servindo como a lógica de tratamento de erros para a exceção. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . Para obter mais informações, consulte [exceções de fluxo de trabalho do Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Usando o designer de atividade de TryCatch
 
@@ -31,7 +33,7 @@ Acesse o designer de atividade **TryCatch** na categoria **tratamento de erros**
 
 O designer de atividade **TryCatch** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma atividade de <xref:System.Activities.Statements.TryCatch> com <xref:System.Activities.Activity.DisplayName%2A> padrão de TryCatch. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do designer de atividade **TryCatch** ou na caixa **DisplayName** da grade de propriedades. As outras propriedades devem ser editadas na superfície do designer de atividade **TryCatch** .
 
-Clique no botão expandir no canto superior direito do **TryCatch** designer para ver as caixas **try**, **Catch**e **finally** na exibição expandida. Para adicionar um catch, clique no botão **Adicionar nova captura** no **TryCatch** designer. O botão muda para uma caixa de combinação de tipo. Selecione um tipo de exceção e pressione ENTER para adicionar a captura. Depois de adicionar um **Catch**, a área de captura se expande e uma atividade pode ser removida para o catch para definir a lógica de execução para o catch. Observe que há uma caixa de texto no lado direito da área expandida catch. Você pode nomear a variável de exceções usando esta caixa de texto. A variável de exceção só pode ser usada para atividades dentro do mesmo **Catch**.
+Clique no botão expandir no canto superior direito do **TryCatch** designer para ver as caixas **try** , **Catch** e **finally** na exibição expandida. Para adicionar um catch, clique no botão **Adicionar nova captura** no **TryCatch** designer. O botão muda para uma caixa de combinação de tipo. Selecione um tipo de exceção e pressione ENTER para adicionar a captura. Depois de adicionar um **Catch** , a área de captura se expande e uma atividade pode ser removida para o catch para definir a lógica de execução para o catch. Observe que há uma caixa de texto no lado direito da área expandida catch. Você pode nomear a variável de exceções usando esta caixa de texto. A variável de exceção só pode ser usada para atividades dentro do mesmo **Catch**.
 
 O designer **TryCatch** não oferece suporte à edição **Catch**. Se você quiser alterar o tipo de exceção, será necessário excluir o **Catch** e adicionar um novo. Um **Catch** pode ser excluído selecionando-o e excluindo-o ou selecionando **excluir** no menu de contexto que é acessado clicando com o botão direito do mouse.
 

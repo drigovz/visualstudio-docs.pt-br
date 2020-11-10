@@ -1,5 +1,7 @@
 ---
 title: Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
+description: Saiba mais sobre cenários de depuração sem suporte no Designer de Fluxo de Trabalho, por exemplo, "a execução não pode continuar após a edição do código".
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9ce8d15e44fecca673fdaa9fccd70ff13eb6783
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593031"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433512"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
 

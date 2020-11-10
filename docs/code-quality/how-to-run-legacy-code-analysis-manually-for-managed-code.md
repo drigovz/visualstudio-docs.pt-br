@@ -1,5 +1,6 @@
 ---
 title: Executar análise de código herdado manualmente (.NET)
+description: Saiba como detectar possíveis defeitos no código-fonte. Veja como executar a análise de código herdada manualmente no código gerenciado no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca865b33d59f87453cafc337e1595c9d772b17a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808607"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434734"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Como executar a análise de código herdada manualmente para código gerenciado
 
@@ -30,6 +31,6 @@ A ferramenta de análise de código fornece informações sobre possíveis defei
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. Em **Gerenciador de soluções**, clique no projeto.
+2. Em **Gerenciador de soluções** , clique no projeto.
 
 3. No menu **analisar** , clique em **executar análise de código no** *nome do projeto*.

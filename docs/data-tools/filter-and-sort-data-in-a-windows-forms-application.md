@@ -1,5 +1,7 @@
 ---
 title: Filtrar e classificar dados em um aplicativo do Windows Forms
+description: Filtrar e classificar dados em um aplicativo Windows Forms. Defina a propriedade de filtro para uma expressão de cadeia de caracteres que retorne os registros desejados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c420896a883146cf60de414100fc41080220e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 076ec70fa3a2aed3ddc65d0a4b50272c824a1cfb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282378"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435059"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>Filtrar e classificar dados em um aplicativo do Windows Forms
 

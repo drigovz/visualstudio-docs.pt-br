@@ -1,6 +1,8 @@
 ---
 title: Usar uma política de check-in de análise de código
 ms.date: 11/04/2016
+description: Saiba como usar uma política de check-in de análise de código para verificar se o código está em conformidade com a herança, acoplamento de classe, manutenção e padrões de complexidade.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371853"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434812"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como impor código passível de manutenção com uma política de check-in de análise de código
 
@@ -27,7 +29,7 @@ Os administradores do controle de versão do Team Foundation podem adicionar as 
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de políticas de análise de código
 
-1. Em **Team Explorer**, clique com o botão direito do mouse no projeto, clique em **configurações do projeto**e clique em **controle do código-fonte**.
+1. Em **Team Explorer** , clique com o botão direito do mouse no projeto, clique em **configurações do projeto** e clique em **controle do código-fonte**.
 
      A caixa de diálogo **controle do código-fonte** é exibida.
 
@@ -41,7 +43,7 @@ Os administradores do controle de versão do Team Foundation podem adicionar as 
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar regras de manutenção da análise de código
 
-1. Na caixa de diálogo **Editor de políticas de análise de código** , em configurações de **regra**, expanda o nó **regras de manutenção** .
+1. Na caixa de diálogo **Editor de políticas de análise de código** , em configurações de **regra** , expanda o nó **regras de manutenção** .
 
 2. Marque as caixas de seleção para as seguintes regras:
 

@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho TransactionScope
+description: Saiba como você pode usar o designer de atividade TransactionScope para criar e configurar uma atividade TransactionScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713471"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433577"
 ---
 # <a name="transactionscope-activity-designer"></a>Designer de atividade de TransactionScope
 
@@ -47,4 +49,4 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.T
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensar](../workflow-designer/compensate-activity-designer.md)
-- [Confirmar](../workflow-designer/confirm-activity-designer.md)
+- [Veja](../workflow-designer/confirm-activity-designer.md)

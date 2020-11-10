@@ -1,5 +1,7 @@
 ---
 title: 'Designer de Fluxo de Trabalho: System. Activities, escolher itens da caixa de ferramentas'
+description: Saiba como a guia System. Activities exibe uma lista de atividades, modelos e itens do Windows Workflow Foundation (WF) disponíveis para você.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593103"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433889"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Guia System. Activities, escolher itens da caixa de ferramentas
 
@@ -33,7 +35,7 @@ Você pode desmarcar os itens que não deseja ver na caixa de **ferramentas** de
 
 Criando uma instância da atividade, arrastando e soltando-os ao designer adiciona o assembly que contém o item à lista de módulos (assemblies) referenciados automaticamente. Também se a atividade referencia um assembly C 2.0, C 2.0 não adiciona à lista de assembly referenciado. O assembly C deve estar no GAC ou no mesmo diretório que a atividade B. No caso autônomo, o assembly deve estar no GAC ou nos caminhos de investigação do VS. Somente então você pode arrastar e soltar a atividade na superfície de fluxo de trabalho.
 
-As configurações da **caixa de ferramentas** são salvas por padrão como opções do usuário, assim, na próxima vez que você abrir a **caixa de ferramentas**, ela exibirá sua lista personalizada de atividades de fluxo de trabalho. Um efeito colateral disso é que, se você tiver adicionado seus itens de domínio específicos à caixa de **ferramentas** por meio de **escolher itens de Toolbox** , você ainda continuará vendo esses itens quando estiver trabalhando em um aplicativo de console de fluxo de trabalho também. Se você não quiser vê-los, exclua-os usando o menu de atalho ou desmarque-os na caixa de diálogo **escolher itens de caixa de ferramentas** , conforme observado anteriormente.
+As configurações da **caixa de ferramentas** são salvas por padrão como opções do usuário, assim, na próxima vez que você abrir a **caixa de ferramentas** , ela exibirá sua lista personalizada de atividades de fluxo de trabalho. Um efeito colateral disso é que, se você tiver adicionado seus itens de domínio específicos à caixa de **ferramentas** por meio de **escolher itens de Toolbox** , você ainda continuará vendo esses itens quando estiver trabalhando em um aplicativo de console de fluxo de trabalho também. Se você não quiser vê-los, exclua-os usando o menu de atalho ou desmarque-os na caixa de diálogo **escolher itens de caixa de ferramentas** , conforme observado anteriormente.
 
 As colunas nesta caixa de diálogo contém as informações a seguir:
 

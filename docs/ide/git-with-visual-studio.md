@@ -1,34 +1,30 @@
 ---
-title: Nova experiência do Git no Visual Studio (versão prévia)
+title: A experiência do git no Visual Studio
 titleSuffix: ''
-description: Saiba mais sobre a nova experiência de git integrada no Visual Studio 2019
-ms.date: 10/13/2020
+description: Saiba como a nova experiência integrada do git no Visual Studio 2019 pode ajudá-lo a ser mais produtivo.
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 71136bb634bd42eaf4933dead8c024b290177da3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "92334201"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434695"
 ---
-# <a name="new-git-experience-in-visual-studio-preview"></a>Nova experiência do Git no Visual Studio (versão prévia)
+# <a name="git-productivity-in-visual-studio"></a>Produtividade do git no Visual Studio
 
-A partir da [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6), o Visual Studio 2019 agora inclui uma nova experiência de git que torna mais fácil usar o Git do IDE. O Git é o sistema de controle de versão moderno mais amplamente usado, portanto, não importa se você é um desenvolvedor profissional ou se está aprendendo a codificar, o Git pode ser muito útil para você.
+O Git agora é a experiência de controle de versão padrão no Visual Studio 2019. Desde a [versão 16,6](/visualstudio/releases/2019/release-notes-v16.6), trabalhamos na criação do conjunto de recursos e na iteração com base em seus comentários. A nova experiência de git é ativada por padrão para todos com o lançamento da [versão 16,8](/visualstudio/releases/2019/release-notes/).
 
 > [!TIP]
-> Se você for novo no git, o https://git-scm.com/ site será um bom lugar para começar. Lá, você encontrará um livro online popular, vídeos de informações básicas do git e folhas de consulta.
+> O Git é o sistema de controle de versão moderno mais usado, portanto, se você for um desenvolvedor profissional ou se estiver aprendendo a codificar, o Git pode ser muito útil para você. Se você for novo no git, o https://git-scm.com/ site será um bom lugar para começar. Lá, você encontrará folhas de dicas, um livro online popular e vídeos de informações básicas sobre o git.
 
-## <a name="how-to-start-using-git-in-visual-studio"></a>Como começar a usar o Git no Visual Studio
+## <a name="how-to-use-git-in-visual-studio"></a>Como usar o Git no Visual Studio
 
-Para alternar a nova experiência de git, vá para **ferramentas**  >  **Opções**  >  visualização de **ambiente**  >  **recursos** e, em seguida, marque a caixa de seleção **nova experiência do usuário git** .
-
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
-
-Há três maneiras de usar o Git no Visual Studio 2019:
+Há três maneiras de começar a usar o Git com o Visual Studio 2019 para ser mais produtivo:
 
 - [Abra um repositório git existente](#open-an-existing-local-repository). Se o seu código já estiver em seu computador, você poderá abri-lo usando **arquivo**  >  **aberto**  >  **projeto/solução** (ou **pasta** ) e o Visual Studio detectará automaticamente se ele tem um repositório git inicializado.
 - [Crie um novo repositório git](#create-a-new-git-repository). Se o seu código não estiver associado ao git, você poderá criar um novo repositório git.
@@ -184,16 +180,23 @@ Para personalizar e personalizar as configurações do git em um nível de repos
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Captura de tela da caixa de diálogo opções, onde você pode escolher as configurações de personalização e personalização no IDE do Visual Studio ":::
 
+## <a name="how-to-use-legacy-team-explorer-experience-in-visual-studio"></a>Como usar a experiência de Team Explorer herdada no Visual Studio
+
+A nova experiência de git é o sistema de controle de versão padrão no Visual Studio 2019 da [versão 16,8](/visualstudio/releases/2019/release-notes/) em diante. No entanto, se você quiser desativá-lo, poderá. Vá para **ferramentas**  >  **Opções** versão  >  **Environment**  >  **prévia** do ambiente recursos e, em seguida, alterne a nova caixa de seleção **experiência do usuário git** , que o alternará de volta para a experiência de Team Explorer herdada.
+
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Captura de tela da seção recursos de visualização da caixa de diálogo opções no Visual Studio ":::
+
 ## <a name="whats-next"></a>O que vem a seguir
 
-Fique atento; atualizaremos esta página à medida que continuarmos a refinar a nova experiência de git no Visual Studio 2019.
+Embora a nova experiência de git esteja agora ativada por padrão no Visual Studio 2019 [versão 16,8](/visualstudio/releases/2019/release-notes/), continuamos a adicionar novos recursos para aprimorar a experiência. Se você quiser fazer check-out de novas atualizações para a experiência do git em uma versão de visualização, poderá baixá-la e instalá-la na página de [visualização do Visual Studio](https://aka.ms/vspreview/) .
 
 > [!IMPORTANT]
 > Se você tiver uma sugestão para nós, informe-nos! Agradecemos a oportunidade de se envolver com você em decisões de design por meio do portal [**da comunidade de desenvolvedores**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [O novo vídeo de experiência git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) no Channel 9 e no [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
+- [O lançamento da nova experiência de git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) no YouTube
+- [A série de caixas de ferramentas do Visual Studio apresenta: o novo vídeo de experiência git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) no Channel 9 e no [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Novas atualizações incríveis para a experiência de git na](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) postagem de blog do Visual Studio
 - [Experiência de git aprimorada na postagem no blog do Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
 - [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes)

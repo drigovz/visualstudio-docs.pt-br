@@ -1,5 +1,7 @@
 ---
 title: Como habilitar e desabilitar a pluralização (Designer Relacional de Objetos)
+description: Saiba como ativar e desativar a pluralização em Object Relational Designer (O/R Designer). A configuração padrão converte os nomes no plural para singular.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6675a136b2bbdc1ef19d90ee19ecf7497053bfe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ea872d96e59365f3dbef5dc3568641c30e51606
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282040"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434890"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Como habilitar e desabilitar a pluralização (Designer Relacional de Objetos)
 Por padrão, quando você arrasta objetos de banco de dados que têm nomes que terminam em s ou s de **Gerenciador de servidores** ou **Gerenciador de banco de dados** nas [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), os nomes das classes de entidade geradas são alterados de plural para singular. Isso é feito a representa mais precisamente o fato que a classe instanciado de entidade mapeia para um único registro de dados. Por exemplo, a adição de uma `Customers` tabela ao o **/R Designer** resulta em uma classe de entidade chamada `Customer` , pois a classe manterá os dados para apenas um único cliente.
@@ -27,7 +29,7 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
 
 1. No menu **Ferramentas** , clique em **Opções**.
 
-2. Na caixa de diálogo **Opções**, expanda **Ferramentas de Banco de Dados**.
+2. Na caixa de diálogo **Opções** , expanda **Ferramentas de Banco de Dados**.
 
     > [!NOTE]
     > Selecione **Mostrar todas as configurações** se o nó de **Ferramentas de Banco de Dados** não estiver visível.
@@ -40,6 +42,6 @@ Por padrão, quando você arrasta objetos de banco de dados que têm nomes que t
 
 ## <a name="see-also"></a>Confira também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

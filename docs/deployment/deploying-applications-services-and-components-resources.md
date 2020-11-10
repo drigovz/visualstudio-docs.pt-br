@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382965"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434487"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Implantar seu aplicativo em uma pasta, IIS, Azure ou outro destino
 
@@ -32,7 +32,7 @@ Obtenha ajuda para sua tarefa de implantação:
 
 - Não tem certeza de qual opção de implantação escolher? Veja [quais são as opções de publicação corretas para mim?](#what-publishing-options-are-right-for-me)
 - Para obter ajuda com problemas de implantação para Azure App serviço ou IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
-- Para obter ajuda para definir configurações de implantação do .NET, consulte [definir configurações de implantação do .net](#configure-net-deployment-settings).
+- Para obter ajuda sobre como definir as configurações de implantação do .NET, consulte [definir configurações de implantação do .net](#configure-net-deployment-settings).
 - Para implantar em um novo destino, se você tiver criado anteriormente um perfil de publicação, selecione **novo** na janela **publicar** para um perfil configurado.
 
    ![Criar um novo perfil de publicação](../deployment/media/create-a-new-publish-profile.png)
@@ -81,7 +81,7 @@ Ao escolher o Azure, você pode escolher entre:
 
 ![Escolher um serviço do Azure](../deployment/media/quickstart-choose-azure-service.png)
 
-### <a name="azure-app-service"></a>Serviço de aplicativo do Azure
+### <a name="azure-app-service"></a>Serviço de Aplicativo do Azure
 
 [Azure app serviço](/azure/app-service/app-service-web-overview) ajuda os desenvolvedores a criarem rapidamente serviços e aplicativos Web escalonáveis sem manter a infraestrutura. Um Serviço de Aplicativo é executado em máquinas virtuais hospedadas na nuvem no Azure, mas essas máquinas virtuais são gerenciadas para você. Cada aplicativo em um Serviço de Aplicativo receberá uma URL \*.azurewebsites.net exclusiva; todos os tipos de preço diferentes de Gratuito também permitem a atribuição de nomes de domínio personalizados ao site.
 
@@ -117,16 +117,16 @@ Para mais informações:
 
 ### <a name="azure-virtual-machine"></a>Máquina Virtual do Azure
 
-As [Máquinas Virtuais (VMs) do Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) permitem criar e gerenciar qualquer número de recursos de computação na nuvem. Ao assumir a responsabilidade por todos os softwares e atualizações nas VMs, é possível personalizá-los tanto quanto desejar conforme exigido pelo seu aplicativo. Você pode acessar as máquinas virtuais diretamente por meio da Área de Trabalho Remota e cada uma delas manterá seu endereço IP atribuído por quanto tempo for desejado.
+As [VMS (máquinas virtuais) do Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) permitem criar e gerenciar qualquer número de recursos de computação na nuvem. Ao assumir a responsabilidade por todos os softwares e atualizações nas VMs, é possível personalizá-los tanto quanto desejar conforme exigido pelo seu aplicativo. Você pode acessar as máquinas virtuais diretamente por meio da Área de Trabalho Remota e cada uma delas manterá seu endereço IP atribuído por quanto tempo for desejado.
 
 O dimensionamento de um aplicativo hospedado em máquinas virtuais envolve a criação VMs adicionais de acordo com a demanda e, em seguida, a implantação do software necessário. Esse nível adicional de controle permite você escalonar de maneira diferente em diferentes regiões globais. Por exemplo, se seu aplicativo estiver atendendo a funcionários em uma diversos escritórios regionais, será possível escalonar suas VMs de acordo com o número de funcionários nessas regiões, potencialmente reduzindo os custos.
 
-Para obter informações adicionais, consulte a [comparação detalhada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre o Serviço de Aplicativo do Azure, as Máquinas Virtuais do Azure e outros serviços do Azure que podem ser usados como destinos de implantação, usando a opção Personalizar no Visual Studio.
+Para obter informações adicionais, consulte a [comparação detalhada](/azure/architecture/guide/technology-choices/compute-decision-tree) entre Azure app serviço, máquinas virtuais do Azure e outros serviços do Azure que você pode usar como um destino de implantação usando a opção personalizada no Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quando escolher máquinas virtuais do Azure
 
 - Você deseja implantar um aplicativo Web que é acessível pela Internet, com controle total sobre o tempo de vida dos endereços IP atribuídos.
-- Você precisa de personalizações em nível de computador em seus servidores que incluem: software adicional, como um sistema de banco de dados especializado, configurações de rede específicas, partições de disco e assim por diante.
+- Você precisa de personalizações em nível de máquina em seus servidores, que incluem software adicional, como um sistema de banco de dados especializado, configurações de rede específicas, partições de disco e assim por diante.
 - Você deseja um nível de controle refinado sobre o escalonamento de seu aplicativo Web.
 - Você precisa ter acesso direto aos servidores que hospedam seu aplicativo por qualquer outro motivo.
 
@@ -147,19 +147,29 @@ Para saber mais, consulte o seguinte:
 
 ## <a name="folder"></a>Pasta
 
-A implantação no sistema de arquivos significa simplesmente copiar os arquivos do seu aplicativo para uma pasta específica em seu próprio computador. Isso geralmente é usado para fins de teste ou para implantar o aplicativo para uso por um número limitado de pessoas, caso o computador também esteja executando um servidor. Se a pasta de destino for compartilhada em uma rede, a implantação no sistema de arquivos poderá disponibilizar os arquivos do aplicativo Web para outras pessoas que poderão, por sua vez, implantá-la em servidores específicos.
+A implantação no sistema de arquivos significa copiar os arquivos do aplicativo para uma pasta específica em seu próprio computador. A implantação em uma pasta é usada com mais frequência para fins de teste ou para implantar o aplicativo para uso por um número limitado de pessoas, caso o computador também esteja executando um servidor. Se a pasta de destino for compartilhada em uma rede, a implantação no sistema de arquivos poderá disponibilizar os arquivos do aplicativo Web para outras pessoas que poderão, por sua vez, implantá-la em servidores específicos.
+::: moniker range=">=vs-2019"
+A partir do Visual Studio 2019 16,8, o destino da pasta inclui a capacidade de publicar um aplicativo .net do Windows usando o ClickOnce.
 
+Se você quiser publicar um aplicativo do Windows .NET Core 3,1 ou mais recente com o ClickOnce, consulte [implantar um aplicativo .net do Windows usando o ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Todas os computadores locais que estão executando um servidor podem disponibilizar seu aplicativo através da Internet ou de uma Intranet, dependendo de como estiver configurado e das redes às quais estiver conectado. (Se você conectar um computador diretamente à Internet, seja especialmente cuidadoso para protegê-lo contra ameaças de segurança externas.) Como você gerencia essas máquinas, você tem controle total sobre as configurações de software e hardware.
 
-Observe que se, por algum motivo (como acesso ao computador), não for possível usar os serviços de nuvem como o Serviço de Aplicativo do Azure ou as Máquinas Virtuais do Azure, você poderá usar o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) em seu próprio datacenter. O Azure Stack permite gerenciar e usar recursos de computação por meio do Serviço de Aplicativo do Azure e das Máquinas Virtuais do Azure e ainda manter tudo localmente.
+Se por algum motivo (como o acesso ao computador) você não puder usar serviços de nuvem como Azure App serviço ou máquinas virtuais do Azure, poderá usar o [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) em seu próprio datacenter. O Azure Stack permite gerenciar e usar recursos de computação por meio do Serviço de Aplicativo do Azure e das Máquinas Virtuais do Azure e ainda manter tudo localmente.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Quando escolher a implantação de sistema de arquivos
 
 - Você só precisa implantar o aplicativo em um compartilhamento de arquivos do qual outras pessoas vão implantá-lo em servidores diferentes.
+::: moniker range=">=vs-2019"
+- Você deseja implantar um aplicativo .NET do Windows usando o ClickOnce
+::: moniker-end
 - Você precisa apenas de uma implantação de teste local.
 - Você deseja examinar e potencialmente modificar os arquivos do aplicativo independentemente, antes de enviá-los a outro destino de implantação.
 
 Para obter mais informações, consulte [início rápido – implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Para obter mais informações sobre como implantar um aplicativo .NET do Windows usando o ClickOnce, consulte [implantar um aplicativo .net do Windows usando o ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Para obter ajuda adicional para escolher suas configurações, consulte o seguinte:
 
@@ -207,7 +217,7 @@ Você pode criar qualquer número de perfis de implantação do servidor Web do 
 
 Para obter mais informações, consulte [início rápido – implantar em um site da Web](quickstart-deploy-to-a-web-site.md).
 
-Para obter ajuda para solução de problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Para obter ajuda com a solução de problemas ASP.NET Core no IIS, consulte [solucionar problemas ASP.NET Core no serviço Azure app e no IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Importar Perfil
 

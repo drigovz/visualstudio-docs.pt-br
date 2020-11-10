@@ -1,6 +1,8 @@
 ---
 title: Suprimir violações de análise de código para código gerado
 ms.date: 05/13/2019
+description: Saiba como suprimir avisos de análise de código para o código gerado. Consulte como impedir que o Visual Studio exiba avisos de análise herdados sobre o código gerado.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371801"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435541"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Como: suprimir avisos de análise de código para código gerado
 

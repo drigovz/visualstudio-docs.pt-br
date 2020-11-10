@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade de Designer de Fluxo de Trabalho estado
+description: Saiba mais sobre a atividade StateMachine e como você pode usar o designer de atividade de estado para adicionar um estado a um fluxo de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: f1a95808ec19edba01b266ccd280603bcc4321dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5dbe0a14b007ad8e916aa9b2d8d765402dbe66b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593142"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433980"
 ---
 # <a name="state-activity-designer"></a>Designer de atividade de estado
 

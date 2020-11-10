@@ -1,6 +1,8 @@
 ---
 title: Conjunto de regras mínimas misto
 ms.date: 11/04/2016
+description: Saiba mais sobre o conjunto de regras de regras mínimas mistas no Visual Studio. Consulte descrições de regras para projetos C++ que dão suporte ao Common Language Runtime.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 5bb87da3cc668ba946c6ee607fa3be5a2c79cc32
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658458"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435320"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 

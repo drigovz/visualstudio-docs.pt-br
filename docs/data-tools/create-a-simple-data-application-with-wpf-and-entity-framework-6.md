@@ -1,5 +1,7 @@
 ---
 title: Aplicativo de dados simples com o WPF e o Entity Framework 6
+description: Neste tutorial, consulte como criar um aplicativo simples de formulários sobre dados no Visual Studio com Windows Presentation Foundation (WPF) e Entity Framework 6.
+ms.custom: SEO-VS-2020
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,16 +11,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 078b3eedc9971dfc444e86b9f8d7ce770fcdb966
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743378"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435487"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 
-Este tutorial mostra como criar um aplicativo básico "formulários sobre dados" no Visual Studio. O aplicativo usa SQL Server LocalDB, o banco de dados Northwind, Entity Framework 6 (não Entity Framework Core) e Windows Presentation Foundation para .NET Framework (não .NET Core). Ele mostra como fazer DataBinding básica com um modo de exibição de detalhes mestre e também tem um navegador de associação personalizado com botões para **mover próximo**, **mover**para o **início**, mover para **o fim**, **Atualizar** e **excluir**.
+Este tutorial mostra como criar um aplicativo básico "formulários sobre dados" no Visual Studio. O aplicativo usa SQL Server LocalDB, o banco de dados Northwind, Entity Framework 6 (não Entity Framework Core) e Windows Presentation Foundation para .NET Framework (não .NET Core). Ele mostra como fazer DataBinding básica com um modo de exibição de detalhes mestre e também tem um navegador de associação personalizado com botões para **mover próximo** , **mover** para o **início** , mover para **o fim** , **Atualizar** e **excluir**.
 
 Este artigo se concentra no uso de ferramentas de dados no Visual Studio e não tenta explicar as tecnologias subjacentes em qualquer profundidade. Ele pressupõe que você tenha uma familiaridade básica com XAML, Entity Framework e SQL. Este exemplo também não demonstra a arquitetura MVVM (Model-View-ViewModel), que é o padrão para aplicativos do WPF. No entanto, você pode copiar esse código em seu próprio aplicativo MVVM com poucas modificações.
 
@@ -26,11 +28,11 @@ Este artigo se concentra no uso de ferramentas de dados no Visual Studio e não 
 
 Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind. Se o provedor de dados ADO.NET para esse produto der suporte a Entity Framework, ele também deverá funcionar com outros produtos de banco de dado SQL.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **Instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho do **Desenvolvimento para desktop com .NET** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **Instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho do **Desenvolvimento para desktop com .NET** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
-    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O**pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no **instalador do Visual Studio**.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
+    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O **pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no **instalador do Visual Studio**.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
 
        Uma janela do editor de consultas é aberta.
 
@@ -46,11 +48,11 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
 1. No Visual Studio, crie um novo projeto de **aplicativo do WPF** em C#.
 
-2. Adicione o pacote NuGet para o Entity Framework 6. Em **Gerenciador de soluções**, selecione o nó do projeto. No menu principal, escolha **projeto**  >  **gerenciar pacotes NuGet**.
+2. Adicione o pacote NuGet para o Entity Framework 6. Em **Gerenciador de soluções** , selecione o nó do projeto. No menu principal, escolha **projeto**  >  **gerenciar pacotes NuGet**.
 
      ![Item de menu gerenciar pacotes NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. No **Gerenciador de pacotes NuGet**, clique no link **procurar** . Entity Framework é provavelmente o pacote superior na lista. Clique em **instalar** no painel direito e siga os prompts. A janela de saída informa quando a instalação é concluída.
+3. No **Gerenciador de pacotes NuGet** , clique no link **procurar** . Entity Framework é provavelmente o pacote superior na lista. Clique em **instalar** no painel direito e siga os prompts. A janela de saída informa quando a instalação é concluída.
 
      ![Entity Framework pacote NuGet](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
@@ -68,7 +70,7 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
 3. Na próxima tela, insira ou escolha a sua conexão Northwind do LocalDB (por exemplo, (LocalDB) \MSSQLLocalDB), especifique o banco de dados Northwind e clique em **Avançar**.
 
-4. Na próxima página do assistente, escolha quais tabelas, procedimentos armazenados e outros objetos de banco de dados incluir no modelo de Entity Framework. Expanda o nó dbo no modo de exibição de árvore e escolha **clientes**, **pedidos**e **detalhes do pedido**. Deixe os padrões marcados e clique em **concluir**.
+4. Na próxima página do assistente, escolha quais tabelas, procedimentos armazenados e outros objetos de banco de dados incluir no modelo de Entity Framework. Expanda o nó dbo no modo de exibição de árvore e escolha **clientes** , **pedidos** e **detalhes do pedido**. Deixe os padrões marcados e clique em **concluir**.
 
     ![Escolher objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -78,7 +80,7 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
     A superfície do designer para o arquivo *. edmx* permite que você modifique algumas propriedades e relações no modelo. Não usaremos o designer neste passo a passos.
 
-6. Os arquivos *. tt* são de uso geral e você precisa ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections. Em **Gerenciador de soluções**, expanda o Northwind_model nó até encontrar *Northwind_model. tt*. (Verifique se você não está no *. Arquivo Context.tt* , que está diretamente abaixo do arquivo *. edmx* .)
+6. Os arquivos *. tt* são de uso geral e você precisa ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections. Em **Gerenciador de soluções** , expanda o Northwind_model nó até encontrar *Northwind_model. tt*. (Verifique se você não está no *. Arquivo Context.tt* , que está diretamente abaixo do arquivo *. edmx* .)
 
    - Substitua as duas ocorrências de <xref:System.Collections.ICollection> por <xref:System.Collections.ObjectModel.ObservableCollection%601> .
 
@@ -114,11 +116,11 @@ Agora você está pronto para conectar esse modelo à página XAML para que poss
         </Grid.RowDefinitions>
     ```
 
-5. Agora, abra *MainWindow. XAML* para exibi-lo no designer. Isso faz com que a janela **fontes de dados** apareça como uma opção na margem da janela do Visual Studio ao lado da **caixa de ferramentas**. Clique na guia para abrir a janela ou pressione **Shift** + **ALT** + **D** ou escolha **Exibir**  >  **outras**  >  **fontes de dados**do Windows. Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação **clientes** e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária. Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário. Por exemplo, pode fazer sentido colocar a caixa de texto **nome** na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
+5. Agora, abra *MainWindow. XAML* para exibi-lo no designer. Isso faz com que a janela **fontes de dados** apareça como uma opção na margem da janela do Visual Studio ao lado da **caixa de ferramentas**. Clique na guia para abrir a janela ou pressione **Shift** + **ALT** + **D** ou escolha **Exibir**  >  **outras**  >  **fontes de dados** do Windows. Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação **clientes** e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária. Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário. Por exemplo, pode fazer sentido colocar a caixa de texto **nome** na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
 
      ![Associação de fonte de dados de clientes a controles individuais](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     No modo de exibição de código, agora você pode ver um novo `Grid` elemento na linha 1 (a linha intermediária) da grade pai. A grade pai tem um `DataContext` atributo que se refere a um CollectionViewSource que foi adicionado ao `Windows.Resources` elemento. Dado esse contexto de dados, quando a primeira caixa de texto é vinculada ao **endereço**, esse nome é mapeado para a `Address` propriedade no `Customer` objeto atual no CollectionViewSource.
+     No modo de exibição de código, agora você pode ver um novo `Grid` elemento na linha 1 (a linha intermediária) da grade pai. A grade pai tem um `DataContext` atributo que se refere a um CollectionViewSource que foi adicionado ao `Windows.Resources` elemento. Dado esse contexto de dados, quando a primeira caixa de texto é vinculada ao **endereço** , esse nome é mapeado para a `Address` propriedade no `Customer` objeto atual no CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
@@ -148,7 +150,7 @@ Agora você está pronto para conectar esse modelo à página XAML para que poss
 
 A organização padrão produzida pelo Visual Studio não é ideal para seu aplicativo, portanto, forneceremos o XAML final aqui para copiar em seu código. Você também precisa de alguns "formulários" (que são, na verdade, grades) para permitir que o usuário adicione um novo cliente ou pedido. Para poder adicionar um novo cliente e uma ordem, você precisa de um conjunto separado de caixas de texto que não sejam associadas a dados ao `CollectionViewSource` . Você controlará qual grade o usuário vê em um determinado momento definindo a propriedade Visible nos métodos do manipulador. Por fim, você adiciona um botão excluir a cada linha na grade Orders para permitir que o usuário exclua uma ordem individual.
 
-Primeiro, adicione esses estilos ao `Windows.Resources` elemento em *MainWindow. XAML*:
+Primeiro, adicione esses estilos ao `Windows.Resources` elemento em *MainWindow. XAML* :
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -427,7 +429,7 @@ Adicione esses métodos de manipulador à classe MainWindow em *MainWindow.XAML.
 
 Para iniciar a depuração, pressione **F5**. Você deve ver os dados do cliente e do pedido populados na grade e os botões de navegação devem funcionar conforme o esperado. Clique em **confirmar** para adicionar um novo cliente ou pedido ao modelo depois de inserir os dados. Clique em **Cancelar** para voltar a um novo formulário de cliente ou de novo pedido sem salvar os dados. Você pode fazer edições em clientes e pedidos existentes diretamente nas caixas de texto, e essas alterações são gravadas automaticamente no modelo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentação do Entity Framework](/ef/)

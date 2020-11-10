@@ -1,5 +1,7 @@
 ---
 title: Como salvar dados usando uma transação
+description: Examine como salvar dados usando uma transação com ferramentas de conjunto de dados no Visual Studio. Você salva dados em uma transação usando o namespace System. Transactions.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281689"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434578"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Como salvar dados usando uma transação
 
@@ -37,9 +39,9 @@ Para reverter a transação, acione uma exceção antes de chamar o <xref:System
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para adicionar uma referência ao System.Transactions.dll
 
-1. No menu **Projeto**, selecione **Adicionar Referência**.
+1. No menu **Projeto** , selecione **Adicionar Referência**.
 
-2. Na guia **.net** (**SQL Server** guia para projetos SQL Server), selecione **System. Transactions**e, em seguida, selecione **OK**.
+2. Na guia **.net** ( **SQL Server** guia para projetos SQL Server), selecione **System. Transactions** e, em seguida, selecione **OK**.
 
      Uma referência a *System.Transactions.dll* é adicionada ao projeto.
 
@@ -52,5 +54,5 @@ Para reverter a transação, acione uma exceção antes de chamar o <xref:System
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)

@@ -1,5 +1,7 @@
 ---
 title: Passar dados entre formulários
+description: Neste Windows Forms instruções de controles passo a passo, veja a introdução de dados de um formulário para outro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281871"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434669"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 
@@ -67,13 +69,13 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="create-the-windows-forms-app-project"></a>Criar o projeto de aplicativo Windows Forms
 
-1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **PassingDataBetweenForms**e escolha **OK**.
+4. Nomeie o projeto **PassingDataBetweenForms** e escolha **OK**.
 
      O projeto **PassingDataBetweenForms** é criado e adicionado ao **Gerenciador de Soluções**.
 
@@ -81,13 +83,13 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 
-4. Na página **Escolha um Modelo de Banco de Dados**, verifique se o **Conjunto de dados** foi especificado e clique em **Avançar**.
+4. Na página **Escolha um Modelo de Banco de Dados** , verifique se o **Conjunto de dados** foi especificado e clique em **Avançar**.
 
-5. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+5. Na página **Escolha a Conexão de Dados** , faça o seguinte:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
@@ -117,7 +119,7 @@ Você pode criar uma grade de associação de dados (um controle <xref:System.Wi
 
 Crie um segundo formulário para o qual passar dados.
 
-1. No menu **Projeto**, escolha **Adicionar Formulário do Windows**.
+1. No menu **Projeto** , escolha **Adicionar Formulário do Windows**.
 
 2. Deixe o nome padrão **Form2** e clique em **Adicionar**.
 
@@ -152,9 +154,9 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
     > [!NOTE]
     > Verifique a sintaxe de parâmetro correta para o seu banco de dados. Por exemplo, no Microsoft Access, a cláusula WHERE seria algo como: `WHERE CustomerID = ?`.
 
-6. Clique em **Avançar**.
+6. Clique em **Próximo**.
 
-7. Para o **preenchimento de um nome de DataTableMethod**, digite `FillByCustomerID` .
+7. Para o **preenchimento de um nome de DataTableMethod** , digite `FillByCustomerID` .
 
 8. Desmarque a opção **Retornar uma DataTable** e clique em **Avançar**.
 
@@ -171,9 +173,9 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Criar um método no Form1 para passar dados e exibir o Form2
 
-1. No **Form1**, clique com o botão direito do mouse na grade de dados do Cliente e clique em **Propriedades**.
+1. No **Form1** , clique com o botão direito do mouse na grade de dados do Cliente e clique em **Propriedades**.
 
-2. Na janela **Propriedades**, clique em **Eventos**.
+2. Na janela **Propriedades** , clique em **Eventos**.
 
 3. Clique duas vezes no evento **CellDoubleClick**.
 

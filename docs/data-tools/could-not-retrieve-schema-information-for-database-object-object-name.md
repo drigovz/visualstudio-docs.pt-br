@@ -1,6 +1,6 @@
 ---
 title: Não foi possível recuperar as informações do esquema
-description: Não foi possível recuperar informações de esquema para o objeto de banco de dados
+description: Não foi possível recuperar as informações de esquema do objeto de banco de dados. Exibir informações sobre esta mensagem do Visual Studio Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68e6e2050f788f30448b7e68d8c057f3bad8e972
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3d704982810b511356c5800b1b7bccdedb6d9665
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036425"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435294"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Não foi possível recuperar informações de esquema para o objeto de banco de dados \<object name>
 
-Esta mensagem aparece normalmente quando um objeto no **Gerenciador de Servidores**/**Gerenciador de Banco de Dados** é copiado para a área de transferência, excluído do banco de dados e colado no designer. Porque o objeto de base de dados não existir, esta mensagem aparece.
+Esta mensagem aparece normalmente quando um objeto no **Gerenciador de Servidores** / **Gerenciador de Banco de Dados** é copiado para a área de transferência, excluído do banco de dados e colado no designer. Porque o objeto de base de dados não existir, esta mensagem aparece.
 
 ## <a name="see-also"></a>Confira também
 

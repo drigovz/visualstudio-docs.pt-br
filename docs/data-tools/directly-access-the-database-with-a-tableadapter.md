@@ -1,5 +1,7 @@
 ---
 title: Acessar o banco de dados diretamente com um TableAdapter
+description: Acesse diretamente um banco de dados com um TableAdapter, usando métodos como INSERT, Update e Delete para manipular dados diretamente no banco de dado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 22d84e9b4beafd64cc629a295bcfa7f9f67afb6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebf6233116c62ee1e25e2bef0ab4d80bdec029b7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282560"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435176"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acessar o banco de dados diretamente com um TableAdapter
 

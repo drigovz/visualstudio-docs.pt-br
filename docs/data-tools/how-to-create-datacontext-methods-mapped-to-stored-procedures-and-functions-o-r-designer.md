@@ -1,5 +1,6 @@
 ---
 title: Mapear métodos DataContext para sprocs e funções
+description: Aprenda a criar métodos DataContext mapeados para procedimentos armazenados (sprocs) e funções usando O Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038329"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434942"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
 
@@ -34,7 +35,7 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para criar métodos DataContext que retornam tipos gerados automaticamente
 
-1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados** , expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
 2. Localize o procedimento armazenado desejado e arraste-o para uma área vazia do o **/R Designer**.
 
@@ -42,7 +43,7 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para criar métodos DataContext com o tipo de retorno de uma classe de entidade
 
-1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados** , expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
 2. Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente no o **/R Designer**.
 

@@ -1,5 +1,7 @@
 ---
 title: Criar tabelas de pesquisa em aplicativos do Windows Forms
+description: Leia como criar tabelas de pesquisa em Windows Forms aplicativos. Uma tabela de pesquisa descreve os controles associados a duas tabelas de dados relacionadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282651"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435189"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 
@@ -28,7 +30,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 ## <a name="to-databind-a-lookup-control"></a>Para associar um controle de pesquisa
 
-1. Com o projeto aberto, abra a janela **fontes de dados** escolhendo **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Com o projeto aberto, abra a janela **fontes de dados** escolhendo **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
     > [!NOTE]
     > As tabelas de pesquisa exigem que duas tabelas ou objetos relacionados estejam disponíveis na janela **fontes de dados** . Para obter mais informações, consulte [relações em conjuntos de](relationships-in-datasets.md)dados.
@@ -52,7 +54,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
     |Propriedade|Explicação da configuração|
     |--------------| - |
-    |**Fonte**|O Visual Studio define esta propriedade para o <xref:System.Windows.Forms.BindingSource> criado para a tabela que você arrasta para o controle (em oposição ao <xref:System.Windows.Forms.BindingSource> criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina-o para a <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
+    |**DataSource**|O Visual Studio define esta propriedade para o <xref:System.Windows.Forms.BindingSource> criado para a tabela que você arrasta para o controle (em oposição ao <xref:System.Windows.Forms.BindingSource> criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina-o para a <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
     |**DisplayMember**|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina-o como o nome da coluna que você deseja exibir.|
     |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina-o como a chave primária na tabela com a coluna que você deseja exibir.|
     |**SelectedValue**|O Visual Studio define essa propriedade como a coluna original descartada da janela **fontes de dados** .<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|

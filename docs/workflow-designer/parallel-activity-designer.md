@@ -1,5 +1,7 @@
 ---
 title: Designer de Fluxo de Trabalho-designer de atividade paralela
+description: Saiba mais sobre a atividade paralela e como usar o designer de atividade paralela para executar uma coleção de atividades filho simultaneamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593155"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435593"
 ---
 # <a name="parallel-activity-designer"></a>Designer paralelo de atividades
 
@@ -25,7 +27,7 @@ A atividade de <xref:System.Activities.Statements.Parallel> executa uma coleçã
 
 A atividade de <xref:System.Activities.Statements.Parallel> armazena as atividades filho em uma coleção de <xref:System.Activities.Statements.Parallel.Branches%2A> . Use a atividade de <xref:System.Activities.Statements.Parallel> em vez de atividade de <xref:System.Activities.Statements.Sequence> se algumas das atividades filho podem ir ociosa.
 
-A <xref:System.Activities.Statements.Parallel> atividade tem uma <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriedade que contém uma expressão de Visual Basic especificada pelo usuário. A atividade de <xref:System.Activities.Statements.Parallel> avalia essa propriedade após cada ramificação completa. Se for avaliada como **true**, a <xref:System.Activities.Statements.Parallel> atividade será concluída sem executar as outras ramificações. Se o <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> não for avaliado como **true**, a <xref:System.Activities.Statements.Parallel> atividade será concluída quando todas as suas atividades filhas forem concluídas.
+A <xref:System.Activities.Statements.Parallel> atividade tem uma <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriedade que contém uma expressão de Visual Basic especificada pelo usuário. A atividade de <xref:System.Activities.Statements.Parallel> avalia essa propriedade após cada ramificação completa. Se for avaliada como **true** , a <xref:System.Activities.Statements.Parallel> atividade será concluída sem executar as outras ramificações. Se o <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> não for avaliado como **true** , a <xref:System.Activities.Statements.Parallel> atividade será concluída quando todas as suas atividades filhas forem concluídas.
 
 ### <a name="using-the-parallel-activity-designer"></a>Usando o designer paralelo de atividades
 
@@ -43,7 +45,7 @@ A tabela a seguir mostra as propriedades paralelas de atividade e descreve como 
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Especifica o nome amigável para exibição do designer de atividade no cabeçalho. O valor padrão é **Parallel**. O valor pode ser editado opcionalmente na grade de **Propriedades** ou diretamente no cabeçalho do designer de atividade.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Verdadeiro|Contém a coleção de atividades filhos sejam executadas.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Avaliado após uma ramificação completa. Se for avaliado como **true**, os branches pendentes agendados serão cancelados. Se essa propriedade não for definida ou for avaliada como **false**, a atividade será concluída quando todas as suas atividades filhas forem concluídas. O valor padrão é **NULL**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Avaliado após uma ramificação completa. Se for avaliado como **true** , os branches pendentes agendados serão cancelados. Se essa propriedade não for definida ou for avaliada como **false** , a atividade será concluída quando todas as suas atividades filhas forem concluídas. O valor padrão é **NULL**.|
 
 ## <a name="see-also"></a>Confira também
 
