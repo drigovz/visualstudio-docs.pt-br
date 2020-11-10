@@ -1,5 +1,7 @@
 ---
 title: Visão geral de aplicativos de dados de N camadas
+description: Leia uma visão geral do aplicativo de dados de N camadas. Também chamados de aplicativos distribuídos ou aplicativos multicamadas, esses são aplicativos de dados separados em várias camadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426857"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436205"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 Os aplicativos *de dados de N camadas* são aplicativos de dados separados em várias *camadas*. Também chamados de "aplicativos distribuídos" e "aplicativos multicamadas", aplicativos de n camadas separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Ao desenvolver aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.
@@ -73,13 +75,13 @@ A camada de dados não pode ser acessada diretamente do cliente na camada de apr
 ## <a name="help-for-n-tier-development"></a>Ajuda para o desenvolvimento de n camadas
 Os tópicos a seguir fornecem informações sobre como trabalhar com aplicativos de n camadas:
 
-[Separar conjuntos de dados e TableAdapters em diferentes projetos](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
+[Conjuntos de dados e TableAdapters separados m diferentes projetos](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
 [Walkthrough: Criando um aplicativo de dados de n camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [Aplicativos de N camadas e remotos com LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Walkthrough: Criando um aplicativo de dados de n camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)

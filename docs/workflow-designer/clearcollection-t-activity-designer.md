@@ -1,5 +1,7 @@
 ---
 title: Designer de Fluxo de Trabalho-designer de &lt; atividade T ClearCollection &gt;
+description: Saiba como você pode usar o designer de <T> atividade ClearCollection para criar e configurar uma atividade ClearCollection <T> .
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710e221441736ecb2415aec32c7f0bfb9a2d99ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ec1820df3a12a729d534d4c07e56bb48bb46e70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711619"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435880"
 ---
 # <a name="clearcollectiont-activity-designer"></a>Designer de atividade ClearCollection\<T>
 
-O designer de atividade **ClearCollection \<T> ** é usado para criar e configurar uma <xref:System.Activities.Statements.ClearCollection%601> atividade.
+O designer de atividade **ClearCollection \<T>** é usado para criar e configurar uma <xref:System.Activities.Statements.ClearCollection%601> atividade.
 
 ## <a name="the-clearcollectiont-activity"></a>A atividade ClearCollection \<T>
 
@@ -27,9 +29,9 @@ A atividade de <xref:System.Activities.Statements.ClearCollection%601> limpa esp
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>Usando o designer de \<T> atividade ClearCollection
 
-O designer de atividade **ClearCollection \<T> ** pode ser encontrado na categoria **coleção** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade **ClearCollection \<T>** pode ser encontrado na categoria **coleção** da **caixa de ferramentas** , que é acessada clicando na guia caixa de **ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
-O designer de atividade **ClearCollection \<T> ** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde as atividades são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.ClearCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> clarocollection<Int32 \> . (Por padrão, o *TypeArgument* é **Int32**. TypeArgument pode ser alterado na grade de propriedades.) O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do designer de atividade **clearcollection \><T** ou na caixa **DisplayName** da grade de propriedades. Outras propriedades devem ser editadas na grade de propriedade.
+O designer de atividade **ClearCollection \<T>** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde as atividades são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.ClearCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> clarocollection<Int32 \> . (Por padrão, o *TypeArgument* é **Int32**. TypeArgument pode ser alterado na grade de propriedades.) O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do designer de atividade **clearcollection \><T** ou na caixa **DisplayName** da grade de propriedades. Outras propriedades devem ser editadas na grade de propriedade.
 
 ### <a name="the-clearcollectiont-properties"></a>As propriedades ClearCollection \<T>
 

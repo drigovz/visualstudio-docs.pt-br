@@ -1,5 +1,7 @@
 ---
 title: Entity Framework Tools
+description: Entenda Entity Framework Tools no Visual Studio. Entity Framework Tools são projetadas para ajudá-lo a criar aplicativos de Entity Framework (EF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916733"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436635"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools no Visual Studio
 
@@ -30,9 +32,9 @@ As ferramentas de Entity Framework são instaladas como parte da carga de trabal
 
 Essas são as ferramentas específicas que compõem Entity Framework ferramentas no Visual Studio:
 
-- Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity designer**) para criar e modificar visualmente entidades, associações, mapeamentos e relações de herança. O **Entity designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código de camada de objeto.
+- Você pode usar o [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** ( **Entity designer** ) para criar e modificar visualmente entidades, associações, mapeamentos e relações de herança. O **Entity designer** também gera [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] código de camada de objeto.
 
-- Você pode usar o ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistente** para gerar um modelo conceitual a partir de um banco de dados existente e adicionar informações de conexão de banco de dados ao seu aplicativo.
+- Você pode usar o **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Assistente** para gerar um modelo conceitual a partir de um banco de dados existente e adicionar informações de conexão de banco de dados ao seu aplicativo.
 
 - Você pode usar o **Assistente para criar banco de dados** para criar um modelo conceitual primeiro e, em seguida, criar um banco de dados que ofereça suporte ao modelo.
 

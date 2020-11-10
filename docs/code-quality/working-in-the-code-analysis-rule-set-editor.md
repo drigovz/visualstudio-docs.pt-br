@@ -1,6 +1,8 @@
 ---
 title: Trabalhar no editor de conjunto de regras de análise de Código
 ms.date: 04/04/2018
+description: Saiba como editar e exibir conjuntos de regras no Visual Studio. Consulte como definir a severidade da regra, especificar regras em um conjunto personalizado e ajustar os dados na grade do conjunto de regras.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659173"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436817"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
 
@@ -27,7 +29,7 @@ A tabela a seguir mostra as opções de gravidade:
 |-|-|
 |Aviso|Gera um aviso no **lista de erros** e também no momento da compilação.|
 |Erro|Gera um erro na **lista de erros** e também no momento da compilação.|
-|Informações|Gera uma mensagem no **lista de erros**.|
+|Info|Gera uma mensagem no **lista de erros**.|
 |Hidden|A violação não é visível para o usuário. No entanto, o IDE é notificado sobre a violação.|
 |Nenhum|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
 
@@ -85,6 +87,6 @@ Nos cabeçalhos de coluna da grade de conjunto de regras, você pode classificar
 
 - Para filtrar os conjuntos de regras pelo valor de um campo, selecione o botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Criar um conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md)

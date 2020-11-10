@@ -1,5 +1,5 @@
 ---
-title: Visualização particular
+title: Beta particular
 description: Exemplos de personalizações usadas no repositório do GitHub Codespaces Visual Studio Preview beta.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 61ef0a0575e5b86ab7cbd7c17e37c552c0c14388
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c79206295615fc984d2a95b52e0ecc0f70814e6f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005627"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437097"
 ---
-# <a name="private-preview"></a>Visualização particular
+# <a name="private-beta"></a>Beta particular
 
 Este exemplo ilustra como personalizar um codespace para que o Visual Studio tenha os mesmos recursos da versão beta particular do [GitHub Codespaces](https://github.com/features/codespaces) .
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Conteúdo do [_.devinit.jsno_](devinit-json.md) arquivo. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_.
+Conteúdo do [`.devinit.json`](devinit-json.md) arquivo. Esse arquivo precisa estar na mesma pasta que _.devcontainer.jsem_.
 
 ```json
 {

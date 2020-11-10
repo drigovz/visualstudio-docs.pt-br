@@ -1,5 +1,7 @@
 ---
 title: Preencher conjuntos de dados usando TableAdapters
+description: Preencha conjuntos de valores usando TableAdapters. Um componente TableAdapter preenche um DataSet com dados do BD, com base em uma ou mais consultas ou procedimentos armazenados que você especificar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282430"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436453"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
@@ -39,8 +41,8 @@ Para obter informações detalhadas sobre as operações do TableAdapter, você 
 |-----------|-----------------|
 |[Criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Como usar os designers para criar e configurar TableAdapters|
 |[Criar consultas TableAdapter parametrizadas](../data-tools/create-parameterized-tableadapter-queries.md)|Como permitir que os usuários forneçam argumentos para procedimentos ou consultas do TableAdapter|
-|[Acessar diretamente o banco de dados com um TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Como usar os métodos DbDirect de TableAdapters|
-|[Desligar restrições ao preencher um conjunto de dados](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Como trabalhar com restrições de chave estrangeira ao atualizar dados|
+|[Acessar o banco de dados diretamente com um TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Como usar os métodos DbDirect de TableAdapters|
+|[Desabilitar restrições ao preencher um conjunto de dados](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Como trabalhar com restrições de chave estrangeira ao atualizar dados|
 |[Como estender a funcionalidade de um TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Como adicionar código personalizado a TableAdapters|
 |[Ler dados XML em um conjunto de dados](../data-tools/read-xml-data-into-a-dataset.md)|Como trabalhar com XML|
 
@@ -52,7 +54,7 @@ Os TableAdapters são componentes gerados pelo designer que se conectam a um ban
 
 ![Fluxo de dados em um aplicativo cliente](../data-tools/media/clientdatadiagram.gif)
 
-Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter não são geradas como classes aninhadas de  <xref:System.Data.DataSet> . Eles estão localizados em namespaces separados que são específicos para cada conjunto de informações. Por exemplo, se você tiver um conjunto de um DataSet chamado `NorthwindDataSet` , os TableAdapters associados a  <xref:System.Data.DataTable> s no `NorthwindDataSet` estarão no `NorthwindDataSetTableAdapters` namespace. Para acessar um TableAdapter específico de forma programática, você deve declarar uma nova instância do TableAdapter. Por exemplo:
+Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados** , as classes do TableAdapter não são geradas como classes aninhadas de  <xref:System.Data.DataSet> . Eles estão localizados em namespaces separados que são específicos para cada conjunto de informações. Por exemplo, se você tiver um conjunto de um DataSet chamado `NorthwindDataSet` , os TableAdapters associados a  <xref:System.Data.DataTable> s no `NorthwindDataSet` estarão no `NorthwindDataSetTableAdapters` namespace. Para acessar um TableAdapter específico de forma programática, você deve declarar uma nova instância do TableAdapter. Por exemplo:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -126,7 +128,7 @@ A classe TableAdaptermanager não é um tipo .NET. Portanto, você não pode pro
 
 A seguir estão os métodos e as propriedades usados com frequência da `TableAdapterManager` classe:
 
-|Membro|DESCRIÇÃO|
+|Membro|Descrição|
 |------------|-----------------|
 |Método `UpdateAll`|Salva todos os dados de todas as tabelas de dados.|
 |Propriedade `BackUpDataSetBeforeUpdate`|Determina se deve ser criada uma cópia de backup do conjunto de um antes da execução do `TableAdapterManager.UpdateAll` método. Boolean.|

@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade de interoperabilidade Designer de Fluxo de Trabalho
+description: Saiba mais sobre o Interop Activity Designer e como você pode usar o Interop Activity Designer para criar e configurar uma atividade de interoperabilidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650203"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437769"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
@@ -27,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Interop> gerencia a execução
 
 ### <a name="use-the-interop-activity-designer"></a>Usar o Interop Activity Designer
 
-O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** . Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas** , que é acessada clicando na guia **caixa de ferramentas** . Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 A categoria de [migração](../workflow-designer/migration-activity-designers.md) que contém a <xref:System.Activities.Statements.Interop> atividade só aparecerá na **caixa de ferramentas** se seu projeto estiver direcionado .NET Framework 4 (completo) ou posterior. Se necessário, você pode alterar a versão do Framework que seu projeto tem como destino.
 

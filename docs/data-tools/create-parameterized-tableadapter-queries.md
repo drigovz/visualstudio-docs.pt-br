@@ -1,5 +1,7 @@
 ---
 title: Criar consultas TableAdapter parametrizadas
+description: Entenda como criar consultas TableAdapter parametrizadas. Uma consulta parametrizada retorna dados que atendem às condições de uma cláusula WHERE dentro da consulta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6eb2f6e1358c91a1103615aca67ede4a3561fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282599"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436661"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
 
@@ -50,16 +52,16 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 2. No menu **dados** , selecione **Adicionar consulta**.
 
-3. Preencha a caixa de diálogo **Pesquisar Construtor de Critérios**, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
+3. Preencha a caixa de diálogo **Pesquisar Construtor de Critérios** , adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Adicionar uma consulta a um formulário associado a dados existente
 
 1. Abra o formulário no **Designer de Formulários do Windows**.
 
-2. No menu **dados** , selecione Adicionar **marcas inteligentes**de **consulta** ou de dados.
+2. No menu **dados** , selecione Adicionar **marcas inteligentes** de **consulta** ou de dados.
 
     > [!NOTE]
-    > Se **Adicionar Consulta** não estiver disponível no menu **Dados**, selecione um controle no formulário que exibe a fonte de dados no qual deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.
+    > Se **Adicionar Consulta** não estiver disponível no menu **Dados** , selecione um controle no formulário que exibe a fonte de dados no qual deseja adicionar a parametrização. Por exemplo, se o formulário exibir dados em um controle <xref:System.Windows.Forms.DataGridView>, selecione-o. Se o formulário exibir dados em controles individuais, selecione qualquer controle associado a dados.
 
 3. Na área **selecionar tabela de fonte de dados** , selecione a tabela à qual você deseja adicionar a parametrização.
 
@@ -92,9 +94,9 @@ Se essa fosse uma consulta em um TableAdapter, você poderia consultar todos os 
 
 Para habilitar uma consulta para aceitar valores nulos:
 
-1. Na **Designer de conjunto de dados**, selecione a consulta do TableAdapter que precisa aceitar valores de parâmetro nulos.
+1. Na **Designer de conjunto de dados** , selecione a consulta do TableAdapter que precisa aceitar valores de parâmetro nulos.
 
-2. Na janela **Propriedades** , selecione **parâmetros**e clique no botão de reticências (**...**) para abrir o **Editor de coleção de parâmetros**.
+2. Na janela **Propriedades** , selecione **parâmetros** e clique no botão de reticências ( **...** ) para abrir o **Editor de coleção de parâmetros**.
 
 3. Selecione o parâmetro que permite valores nulos e defina a propriedade **AllowDBNull** como `true` .
 

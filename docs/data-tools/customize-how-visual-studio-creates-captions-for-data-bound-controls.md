@@ -1,5 +1,7 @@
 ---
 title: Personalizar legendas para controles vinculados a dados
+description: Personalize como o Visual Studio cria legendas para controles vinculados a dados. Modifique o comportamento de legenda inteligente da janela fontes de dados. Desative a legenda inteligente.
+ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282573"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436622"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 
@@ -26,13 +28,13 @@ Quando você arrasta itens da [janela fontes de dados](add-new-data-sources.md#d
 
 ::: moniker range="vs-2017"
 
-Você pode personalizar a maneira como esses rótulos são criados definindo os valores **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** na chave de registro **HKEY_CURRENT_USER designers do \software\microsoft\visualstudio\15.0\data** .
+Você pode personalizar a maneira como esses rótulos são criados definindo os valores **SmartCaptionExpression** , **SmartCaptionReplacement** e **SmartCaptionSuffix** na chave do registro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Você pode personalizar a maneira como esses rótulos são criados definindo os valores **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** na chave de registro **HKEY_CURRENT_USER designers do \software\microsoft\visualstudio\16.0\data** .
+Você pode personalizar a maneira como esses rótulos são criados definindo os valores **SmartCaptionExpression** , **SmartCaptionReplacement** e **SmartCaptionSuffix** na chave do registro **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 

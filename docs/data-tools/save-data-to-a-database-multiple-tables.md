@@ -1,5 +1,7 @@
 ---
 title: Salvar dados em um banco de dados (várias tabelas)
+description: Neste tutorial, salve os dados de várias tabelas em um banco de dado usando as ferramentas do conjunto de dados no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281637"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436036"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -45,7 +47,7 @@ As tarefas ilustradas neste passo a passo incluem:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -73,7 +75,7 @@ Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usand
 
 2. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados** para iniciar o **Assistente de configuração de fonte de dados**.
 
-3. Na tela **escolher um tipo de fonte de dados** , selecione **banco**de dado e, em seguida, selecione **Avançar**.
+3. Na tela **escolher um tipo de fonte de dados** , selecione **banco** de dado e, em seguida, selecione **Avançar**.
 
 4. Na tela **escolher sua conexão de dados** , siga um destes procedimentos:
 
@@ -85,7 +87,7 @@ Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usand
 
 5. Se o seu banco de dados exigir uma senha, selecione a opção para incluir um dado confidencial e, em seguida, selecione **Avançar**.
 
-6. Na **cadeia de conexão salvar no arquivo de configuração do aplicativo**, selecione **Avançar**.
+6. Na **cadeia de conexão salvar no arquivo de configuração do aplicativo** , selecione **Avançar**.
 
 7. Na tela **escolher seus objetos de banco de dados** , expanda o nó **tabelas** .
 
@@ -146,4 +148,4 @@ Você pode criar os controles associados a dados arrastando itens da janela **fo
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344474"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435782"
 ---
 # <a name="devinit-commands"></a>comandos devinit
 
@@ -26,7 +26,7 @@ ms.locfileid: "93344474"
 devinit init
 ```
 
-Inicialize o ambiente executando as ferramentas especificadas em um [_.devinit.jsno_](devinit-json.md) arquivo no diretório de trabalho atual.  
+Inicialize o ambiente executando as ferramentas especificadas em um [.devinit.jsno](devinit-json.md) arquivo.
 
 ### <a name="options-for-init"></a>Opções para init
 
@@ -34,10 +34,10 @@ Opções opcionais para o `devinit init` comando.
 
 | Argumento             | Obrigatório | Descrição                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | Não       | Caminho para o _.devinit.jsno_ arquivo.                                         |
-| --ação de erro       | Não       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
-| -v,--detalhado         | Não       | Emitir saída detalhada.                                                      |
-| -n,--execução seca         | Não       | Simulação de execução.                                                                  |
+| -f,--file            | No       | Caminho para o `.devinit.json` arquivo.                                         |
+| --ação de erro       | No       | Especifica como tratar erros. Opções: parar, ignorar, continuar (padrão).|
+| -v,--detalhado         | No       | Emitir saída detalhada.                                                      |
+| -n,--execução seca         | No       | Simulação de execução.                                                                  |
 
 #### <a name="--file-argument"></a>--argumento de arquivo
 
@@ -82,11 +82,11 @@ Opções para o `devinit run` comando.
 | Argumento                                      | Obrigatório | Descrição                                                                          |
 |-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
 | -t,--ferramenta                                     | Yes      | Obrigatórios. O nome da ferramenta.                                                             |
-| -i,--entrada                                    | Não       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                     |
-| --ação de erro                                | Não       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
-| -v,--detalhado                                  | Não       | Emitir saída detalhada.                                                                 |
-| -n,--execução seca                                  | Não       | Simulação de execução.                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | Não       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
+| -i,--entrada                                    | No       | O valor de entrada da ferramenta. Por exemplo, um FileName, um pacote ou um nome.                     |
+| --ação de erro                                | No       | Especifica como tratar erros de ferramenta: parar, ignorar, continuar. O padrão é parar. |
+| -v,--detalhado                                  | No       | Emitir saída detalhada.                                                                 |
+| -n,--execução seca                                  | No       | Simulação de execução.                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | No       | Argumentos de linha de comando adicionais para a ferramenta.                                       |
 
 #### <a name="--error-action-argument"></a>--argumento de ação de erro
 
@@ -97,6 +97,10 @@ Especifica a ação a ser tomada se uma ferramenta retornar um código de saída
 | continue | Continue processando outras ferramentas depois de emitir um erro para o erro padrão. O código de saída devinit.exe é diferente de zero (falha). Esse comportamento é semelhante à ação de erro de parada, mas o processamento é continuado. `continue` é a ação de erro padrão para o comando init.              |
 | ignore   | Continue processando outras ferramentas depois de emitir um aviso para a saída padrão. O código de saída do processo DevInit sempre deve ser zero (êxito). A `ignore` configuração ignora todos os erros.                                                                                                      |
 | parar     | Emite um erro para o erro padrão e para as ferramentas de processamento. O código de saída devinit.exe é diferente de zero (falha). Isso é semelhante à ação de erro de continuação, mas o processamento é interrompido no primeiro erro encontrado. `stop` é a ação de erro padrão para todos os comandos, exceto init. |
+
+#### <a name="--dry-run-switch"></a>--opção de execução seca
+
+Comandos da ferramenta Echo que seriam executados. Algumas ferramentas podem executar mais ações, conforme documentado para essa ferramenta. 
 
 #### <a name="--verbose-switch"></a>--opção detalhada
 

@@ -1,5 +1,6 @@
 ---
 title: Relações entre LINQ to SQL classes
+description: Crie uma associação entre LINQ to SQL classes de entidade usando a caixa de diálogo Editor de associação no Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,28 +10,28 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c8872a7dc18829ca9a0b4328c58498352385ce6
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 96932dca3d7f8799c316e05dc36c3f38a0e8110f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037062"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436314"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Como: criar uma associação entre classes de LINQ to SQL (O/R Designer)
-As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] são análogas às relações entre tabelas em um banco de dados. Você pode criar associações entre classes de entidade usando a caixa de diálogo **Editor de Associação**.
+As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] são análogas às relações entre tabelas em um banco de dados. Você pode criar associações entre classes de entidade usando a caixa de diálogo  **Editor de Associação**.
 
 Você deve selecionar uma classe pai e uma classe filho ao usar a caixa de diálogo **Editor de Associação** para criar uma associação. A classe pai é a classe de entidade que contém a chave primária; a classe filho é a classe de entidade que contém a chave estrangeira. Por exemplo, se classes de entidade foram criadas e mapeadas para as `Northwind Customers` `Orders` tabelas e, a classe `Customer` seria a classe pai e a classe seria `Order` a classe filho.
 
 > [!NOTE]
-> Quando você arrasta tabelas de **Gerenciador de servidores** ou **Gerenciador de Banco de Dados** para a **Object Relational Designer** (**o/R Designer**), as associações são criadas automaticamente com base nas relações de chave estrangeira existentes no banco de dados.
+> Quando você arrasta tabelas de **Gerenciador de servidores** ou **Gerenciador de Banco de Dados** para a **Object Relational Designer** ( **o/R Designer** ), as associações são criadas automaticamente com base nas relações de chave estrangeira existentes no banco de dados.
 
 ## <a name="association-properties"></a>Propriedades de associação
-Depois de criar uma associação, quando você seleciona a associação no **Designer Relacional de Objetos**, há algumas propriedades configuráveis na janela **Propriedades**. (A associação é a linha entre as classes relacionadas.) A tabela a seguir fornece descrições para as propriedades de uma associação.
+Depois de criar uma associação, quando você seleciona a associação no **Designer Relacional de Objetos** , há algumas propriedades configuráveis na janela **Propriedades**. (A associação é a linha entre as classes relacionadas.) A tabela a seguir fornece descrições para as propriedades de uma associação.
 
 |Propriedade|Descrição|
 |--------------|-----------------|
 |**Cardinalidade**|Controla se a associação é de um-para-muitos ou um-para-um.|
-|**Propriedade Filho**|Especifica se deve ser criada uma propriedade no pai que é uma coleção ou referência para os registros filho na parte da chave estrangeira da associação. Por exemplo, na associação entre `Customer` e `Order` , se a **Propriedade Child** for definida como **true**, uma propriedade chamada `Orders` será criada na classe pai.|
+|**Propriedade Filho**|Especifica se deve ser criada uma propriedade no pai que é uma coleção ou referência para os registros filho na parte da chave estrangeira da associação. Por exemplo, na associação entre `Customer` e `Order` , se a **Propriedade Child** for definida como **true** , uma propriedade chamada `Orders` será criada na classe pai.|
 |**Propriedade pai**|A propriedade na classe filho que referencia a classe pai associada. Por exemplo, na associação entre `Customer` e `Order` , uma propriedade chamada `Customer` que faz referência ao cliente associado para um pedido é criada na `Order` classe.|
 |**Propriedades participantes**|Exibe as propriedades de associação e fornece um botão de **reticências** (...) que reabre a caixa de diálogo **Editor de Associação**.|
 |**Exclusivo**|Especifica se as colunas de destino estrangeiras têm uma restrição de exclusividade.|

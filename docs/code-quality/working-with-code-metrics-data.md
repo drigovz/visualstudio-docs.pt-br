@@ -1,6 +1,8 @@
 ---
 title: Janela de métricas de código
 ms.date: 12/12/2017
+description: Saiba como exibir, filtrar, reorganizar e exportar dados de análise de métricas do Visual Studio Code. Consulte como criar itens de trabalho com base nos resultados da métrica de código.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927972"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436804"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar a janela de resultados de métricas de código
 
@@ -30,9 +32,9 @@ A janela **resultados de métricas de código** é exibida automaticamente quand
 
 Você pode exibir a janela de resultados de métricas de código usando uma das seguintes sequências de menu:
 
-- No menu **analisar** , escolha **Windows**  >  **resultados de métricas de código**do Windows.
+- No menu **analisar** , escolha **Windows**  >  **resultados de métricas de código** do Windows.
 
-- No menu **Exibir** , escolha **outros**  >  **resultados de métricas de código**do Windows.
+- No menu **Exibir** , escolha **outros**  >  **resultados de métricas de código** do Windows.
 
 A janela **resultados de métricas de código** é aberta, mesmo que não contenha nenhum resultado.
 
@@ -52,7 +54,7 @@ A caixa suspensa **filtro** contém os nomes das colunas de resultados. Quando u
 
 2. Em **mín**., digite o valor mínimo a ser exibido.
 
-3. Em **máximo**, digite o valor máximo a ser exibido.
+3. Em **máximo** , digite o valor máximo a ser exibido.
 
 4. Clique no botão **aplicar filtro** .
 
@@ -90,7 +92,7 @@ Para obter mais informações sobre Azure Boards itens de trabalho, consulte [it
 
 1. Clique com o botão direito do mouse no resultado.
 
-2. Aponte para **Criar item de trabalho**e clique no tipo de item de trabalho que você deseja criar (**bug**, **tarefa**e assim por diante).
+2. Aponte para **Criar item de trabalho** e clique no tipo de item de trabalho que você deseja criar ( **bug** , **tarefa** e assim por diante).
 
 3. Preencha o formulário de item de trabalho preenchendo todos os campos obrigatórios.
 
@@ -106,7 +108,7 @@ Para obter mais informações sobre Azure Boards itens de trabalho, consulte [it
 
 4. No menu **arquivo** , clique em **salvar tudo** para salvar o item de trabalho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
 - [Como gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

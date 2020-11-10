@@ -1,18 +1,20 @@
 ---
 title: Conjunto de regras recomendadas nativo
 ms.date: 11/04/2016
+description: Saiba mais sobre o conjunto de regras de regras recomendadas nativas do Visual Studio. Veja descrições de regras de segurança, robustez e outros problemas críticos no código nativo.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600014"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437025"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Conjunto de regras recomendadas nativo
 
@@ -38,20 +40,20 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C6201](/cpp/code-quality/c6201)|O índice excede o máximo do buffer da pilha|
 |[C6214](/cpp/code-quality/c6214)|Conversão de HRESULT para BOOL inválida|
 |[C6215](/cpp/code-quality/c6215)|Conversão de BOOL para HRESULT inválida|
-|[C6216](/cpp/code-quality/c6216)|Conversão de BOOL do compilador inserida inválida para HRESULT|
+|[C6216](/cpp/code-quality/c6216)|Conversão de Compiler-Inserted inválida BOOL para HRESULT|
 |[C6217](/cpp/code-quality/c6217)|Teste de HRESULT inválido com não|
 |[C6220](/cpp/code-quality/c6220)|Comparação de HRESULT com-1 inválida|
 |[C6226](/cpp/code-quality/c6226)|Atribuição de HRESULT inválida para-1|
 |[C6230](/cpp/code-quality/c6230)|Uso inválido de HRESULT como booliano|
-|[C6235](/cpp/code-quality/c6235)|Constante diferente de zero com OR lógico|
-|[C6236](/cpp/code-quality/c6236)|OR lógico com constante diferente de zero|
-|[C6237](/cpp/code-quality/c6237)|Zero com and lógico perde os efeitos colaterais|
+|[C6235](/cpp/code-quality/c6235)|Constante diferente de zero com Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or com constante diferente de zero|
+|[C6237](/cpp/code-quality/c6237)|Zero com Logical-And perde efeitos colaterais|
 |[C6242](/cpp/code-quality/c6242)|Desenrolamento local forçado|
 |[C6248](/cpp/code-quality/c6248)|Criando DACL nula|
 |[C6250](/cpp/code-quality/c6250)|Descritores de endereço não lançados|
 |[C6255](/cpp/code-quality/c6255)|Uso desprotegido de alloca|
 |[C6258](/cpp/code-quality/c6258)|Usando encerrar thread|
-|[C6259](/cpp/code-quality/c6259)|Código inativo em comutador de OR-bit ou limitado|
+|[C6259](/cpp/code-quality/c6259)|Código inativo em Bitwise-Or comutador limitado|
 |[C6260](/cpp/code-quality/c6260)|Uso de aritmética de byte|
 |[C6262](/cpp/code-quality/c6262)|Uso excessivo de pilha|
 |[C6263](/cpp/code-quality/c6263)|Usando alloca em loop|
@@ -64,18 +66,18 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C6274](/cpp/code-quality/c6274)|Argumento diferente de caractere para formatar a função|
 |[C6276](/cpp/code-quality/c6276)|Conversão de cadeia de caracteres inválida|
 |[C6277](/cpp/code-quality/c6277)|Chamada CreateProcess inválida|
-|[C6278](/cpp/code-quality/c6278)|Incompatibilidade de matriz-nova escalar-exclusão|
-|[C6279](/cpp/code-quality/c6279)|Incompatibilidade entre escalar-nova matriz-exclusão|
-|[C6280](/cpp/code-quality/c6280)|Incompatibilidade de alocação de memória-desalocação|
+|[C6278](/cpp/code-quality/c6278)|Incompatibilidade de Array-New Scalar-Delete|
+|[C6279](/cpp/code-quality/c6279)|Incompatibilidade de Scalar-New Array-Delete|
+|[C6280](/cpp/code-quality/c6280)|Memória incompatível Allocation-Deallocation|
 |[C6281](/cpp/code-quality/c6281)|Precedência de relação bit-nte|
 |[C6282](/cpp/code-quality/c6282)|A atribuição substitui o teste|
-|[C6283](/cpp/code-quality/c6283)|Matriz primitiva-incompatibilidade de novo escalar-exclusão|
+|[C6283](/cpp/code-quality/c6283)|Array-New primitivo Scalar-Delete incompatível|
 |[C6284](/cpp/code-quality/c6284)|Argumento de objeto inválido para formatar a função|
-|[C6285](/cpp/code-quality/c6285)|OR lógico de constantes|
-|[C6286](/cpp/code-quality/c6286)|Efeitos colaterais lógicos diferentes de zero|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or de constantes|
+|[C6286](/cpp/code-quality/c6286)|Diferente de zero Logical-Or perder efeitos colaterais|
 |[C6287](/cpp/code-quality/c6287)|Teste redundante|
-|[C6288](/cpp/code-quality/c6288)|Inclusão mútua sobre and lógica-and é false|
-|[C6289](/cpp/code-quality/c6289)|A exclusão mútua sobre OR lógico é verdadeira|
+|[C6288](/cpp/code-quality/c6288)|A inclusão mútua sobre Logical-And é false|
+|[C6289](/cpp/code-quality/c6289)|A exclusão mútua sobre Logical-Or é verdadeira|
 |[C6290](/cpp/code-quality/c6290)|Precedência de NOT lógico AND bit a bit|
 |[C6291](/cpp/code-quality/c6291)|Precedência de NOT lógico OR bit a bit|
 |[C6292](/cpp/code-quality/c6292)|Contagens de loops acima do máximo|
@@ -92,7 +94,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C6308](/cpp/code-quality/c6308)|Vazamento de realocação|
 |[C6310](/cpp/code-quality/c6310)|Constante de filtro de exceção ilegal|
 |[C6312](/cpp/code-quality/c6312)|Loop de execução de continuação de exceção|
-|[C6314](/cpp/code-quality/c6314)|Precedência de or|
+|[C6314](/cpp/code-quality/c6314)|Precedência de Bitwise-Or|
 |[C6317](/cpp/code-quality/c6317)|Não é complemento|
 |[C6318](/cpp/code-quality/c6318)|Exceção de continuação da pesquisa|
 |[C6319](/cpp/code-quality/c6319)|Ignorado por vírgula|
@@ -103,7 +105,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C6333](/cpp/code-quality/c6333)|VirtualFree tamanho inválido|
 |[C6335](/cpp/code-quality/c6335)|Vazamento de identificador de processo|
 |[C6381](/cpp/code-quality/c6381)|Informações de desligamento ausentes|
-|[C6383](/cpp/code-quality/c6383)|Estouro de buffer de contagem de elementos-contagem de bytes|
+|[C6383](/cpp/code-quality/c6383)|Saturação de buffer de Byte-Count Element-Count|
 |[C6384](/cpp/code-quality/c6384)|Divisão do tamanho do ponteiro|
 |[C6385](/cpp/code-quality/c6385)|Saturação de leitura|
 |[C6386](/cpp/code-quality/c6386)|Saturação de gravação|

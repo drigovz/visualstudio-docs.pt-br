@@ -1,5 +1,7 @@
 ---
 title: Criar e configurar TableAdapters
+description: Examine como criar e configurar um TableAdapter no Visual Studio. Os TableAdapters fornecem comunicação entre o aplicativo e um banco de dados.
+ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282665"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436752"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 
@@ -49,7 +51,7 @@ Se você arrastar um novo TableAdapter da caixa de ferramentas quando o **Design
 
 - Você tem a opção de criar um novo procedimento armazenado no banco de dados subjacente se tiver as permissões corretas para o banco de dados. Se você não tiver essas permissões, isso não será uma opção.
 
-- Você também pode optar por executar procedimentos armazenados existentes para os comandos **Select**, **Insert**, **Update**e **delete** do TableAdapter. O procedimento armazenado que é atribuído ao comando **Update** , por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.
+- Você também pode optar por executar procedimentos armazenados existentes para os comandos **Select** , **Insert** , **Update** e **delete** do TableAdapter. O procedimento armazenado que é atribuído ao comando **Update** , por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.
 
 Mapear parâmetros desde o procedimento armazenado selecionado até as colunas correspondentes na tabela de dados. Por exemplo, se o procedimento armazenado aceitar um parâmetro chamado `@CompanyName` que ele passa para a `CompanyName` coluna na tabela, defina a **coluna de origem** do `@CompanyName` parâmetro como `CompanyName` .
 
@@ -82,7 +84,7 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
 
 1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.
 
-2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para um <xref:System.Data.DataTable> ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable> . Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
+2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para um <xref:System.Data.DataTable> ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados** , que cria um TableAdapter sem um associado <xref:System.Data.DataTable> . Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
 
 3. Na tela **escolher sua conexão de dados** , selecione ou crie a conexão que será usada pela consulta.
 

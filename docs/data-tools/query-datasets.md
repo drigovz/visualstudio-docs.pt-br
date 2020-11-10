@@ -1,5 +1,7 @@
 ---
 title: Consultar conjuntos de dados
+description: Compreender os conjuntos de os de consulta. Saiba mais sobre a distinção entre maiúsculas e minúsculas. Localize uma linha específica em uma tabela de dados, localize linhas por valores de coluna e acesse registros relacionados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281858"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436062"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 Para pesquisar registros específicos em um conjunto de informações, use o `FindBy` método na DataTable, escreva sua própria instrução foreach para executar um loop sobre a coleção de linhas da tabela ou use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ Esta página fornece exemplos usando datasets tipados. Para obter informações 
 > [!NOTE]
 > Se você estiver trabalhando em um aplicativo Windows Forms e usando os recursos de vinculação de dados para exibir dados, o formulário gerado pelo designer poderá fornecer funcionalidade suficiente para seu aplicativo. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Especificamente, consulte [relações em conjuntos de](relationships-in-datasets.md)os.
 
-Os exemplos de código a seguir demonstram como navegar pelas relações para cima e para baixo em conjuntos de valores tipados. Os exemplos de código usam <xref:System.Data.DataRow> s tipados ( `NorthwindDataSet.OrdersRow` ) e os métodos de*PrimaryKey* () de FindBy gerados `FindByCustomerID` para localizar uma linha desejada e retornar os registros relacionados. Os exemplos são compilados e executados corretamente somente se você tiver:
+Os exemplos de código a seguir demonstram como navegar pelas relações para cima e para baixo em conjuntos de valores tipados. Os exemplos de código usam <xref:System.Data.DataRow> s tipados ( `NorthwindDataSet.OrdersRow` ) e os métodos de *PrimaryKey* () de FindBy gerados `FindByCustomerID` para localizar uma linha desejada e retornar os registros relacionados. Os exemplos são compilados e executados corretamente somente se você tiver:
 
 - Uma instância de um conjunto de uma chamada `NorthwindDataSet` com uma `Customers` tabela.
 

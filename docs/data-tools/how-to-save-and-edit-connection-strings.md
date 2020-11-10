@@ -1,5 +1,7 @@
 ---
 title: Como salvar e editar cadeias de conexão
+description: Saiba como salvar e editar cadeias de conexão em aplicativos do Visual Studio. Salve ou edite uma cadeia de conexão diretamente nas configurações do aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282014"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436283"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Como salvar e editar cadeias de conexão
 As cadeias de conexão em aplicativos do Visual Studio são salvas no arquivo de configuração do aplicativo (também conhecido como configurações do aplicativo) ou embutidas em código diretamente em seu aplicativo. Salvar cadeias de conexão no arquivo de configuração do aplicativo simplifica a tarefa de realizar a manutenção de seu aplicativo. Se a cadeia de conexão precisar ser alterada, você poderá atualizá-la no arquivo de configurações do aplicativo (em vez de alterá-la no código-fonte e recompilar o aplicativo).
@@ -24,13 +26,13 @@ Se você optar por não usar a segurança integrada do Windows e seu banco de da
 Para obter mais informações, confira [Protegendo informações de conexão](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Para salvar uma cadeia de conexão de dentro do assistente de configuração da fonte de dados
-No **Assistente de configuração da fonte de dados**, selecione a opção para salvar a conexão na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** .
+No **Assistente de configuração da fonte de dados** , selecione a opção para salvar a conexão na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** .
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Para salvar uma cadeia de conexão diretamente nas configurações do aplicativo
-1. No **Gerenciador de Soluções**, clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
+1. No **Gerenciador de Soluções** , clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
 1. Selecione a guia **Settings** (Configurações).
 1. Insira um **Nome** para a cadeia de conexão. Consulte esse nome ao acessar a cadeia de conexão no código.
-1. Configure o **Tipo** como (**Cadeia de conexão**).
+1. Configure o **Tipo** como ( **Cadeia de conexão** ).
 1. Mantenha o **Escopo** configurado como **Aplicativo**.
 1. Digite a cadeia de conexão no campo **valor** ou clique no botão de **reticências** (...) no campo **valor** para abrir a caixa de diálogo **Propriedades da conexão** para criar a cadeia de conexão.
 
@@ -38,7 +40,7 @@ No **Assistente de configuração da fonte de dados**, selecione a opção para 
 Você pode modificar as informações da conexão que são salvas nas configurações do aplicativo usando o **Designer de Projeto**.
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Para editar uma cadeia de conexão nas configurações do aplicativo
-1. No **Gerenciador de Soluções**, clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
+1. No **Gerenciador de Soluções** , clique duas vezes no ícone **Meu Projeto** (Visual Basic) ou no ícone **Propriedades** (C#) para abrir o **Designer de Projeto**.
 1. Selecione a guia **Settings** (Configurações).
 1. Localize a conexão que você deseja editar e selecione o texto no campo **valor** .
 1. Edite a cadeia de conexão no campo **valor** ou clique no botão de **reticências** (...) no campo **valor** para editar a conexão com a caixa de diálogo **Propriedades da conexão** .
@@ -47,7 +49,7 @@ Você pode modificar as informações da conexão que são salvas nas configura�
 Você pode modificar as informações de conexão para cada TableAdapter em um conjunto de dados.
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Para editar uma cadeia de conexão para um TableAdapter em um DataSet
-1. Em **Gerenciador de soluções**, clique duas vezes no conjunto de arquivos (arquivo **. xsd** ) que tem a conexão que você deseja editar.
+1. Em **Gerenciador de soluções** , clique duas vezes no conjunto de arquivos (arquivo **. xsd** ) que tem a conexão que você deseja editar.
 1. Selecione o **TableAdapter** ou a consulta que tem a conexão que você deseja editar.
 1. Na janela **Propriedades** , expanda o **nó conexão**.
 1. Para modificar rapidamente a cadeia de conexão, edite a propriedade **ConnectionString** ou clique na seta para baixo na propriedade de **conexão** e escolha **nova conexão**.

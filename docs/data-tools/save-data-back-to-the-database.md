@@ -1,5 +1,7 @@
 ---
 title: Salvar dados novamente no banco de dados
+description: Use as ferramentas de conjunto de dados para salvar de volta no banco de dados. O conjunto de dados é uma cópia na memória de data que deve ser salva novamente no banco de dado se for modificada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281741"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436049"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 
@@ -43,15 +45,15 @@ Se você estiver familiarizado com os TableAdapters, poderá ir diretamente para
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Como inserir novos registros em um banco de dados](../data-tools/insert-new-records-into-a-database.md)|Como executar atualizações e inserções usando TableAdapters ou objetos de comando|
+|[Inserir novos registros em um banco de dados](../data-tools/insert-new-records-into-a-database.md)|Como executar atualizações e inserções usando TableAdapters ou objetos de comando|
 |[Atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Como executar atualizações com TableAdapters|
 |[Atualização hierárquica](../data-tools/hierarchical-update.md)|Como executar atualizações de um conjunto de informações com duas ou mais tabelas relacionadas|
-|[Lidar com uma exceção de simultaneidade](../data-tools/handle-a-concurrency-exception.md)|Como tratar exceções quando dois usuários tentam alterar os mesmos dados em um banco de dado ao mesmo tempo|
+|[Tratar uma exceção de simultaneidade](../data-tools/handle-a-concurrency-exception.md)|Como tratar exceções quando dois usuários tentam alterar os mesmos dados em um banco de dado ao mesmo tempo|
 |[Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)|Como salvar dados em uma transação usando o sistema. Namespace de transações e um objeto TransactionScope|
-|[Salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Walkthrough que cria um aplicativo Windows Forms para demonstrar o salvamento de dados em um banco de dado dentro de uma transação|
+|[Salvando dados em uma transação](../data-tools/save-data-in-a-transaction.md)|Walkthrough que cria um aplicativo Windows Forms para demonstrar o salvamento de dados em um banco de dado dentro de uma transação|
 |[Salvar dados em um banco de dados (várias tabelas)](../data-tools/save-data-to-a-database-multiple-tables.md)|Como editar registros e salvar alterações em várias tabelas de volta no banco de dados|
 |[Salvar dados de um objeto em um banco de dados](../data-tools/save-data-from-an-object-to-a-database.md)|Como passar dados de um objeto que não está em um DataSet para um Database usando um método DbDirect TableAdapter|
-|[Salvando dados com os métodos DBDirect TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Como usar o TableAdapter para enviar consultas SQL diretamente para o banco de dados|
+|[Salvar os dados com os métodos TableAdapter DBDirect](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Como usar o TableAdapter para enviar consultas SQL diretamente para o banco de dados|
 |[Salvar um conjunto de dados como XML](../data-tools/save-a-dataset-as-xml.md)|Como salvar um conjunto de um DataSet em um documento XML|
 
 ## <a name="two-stage-updates"></a>Atualizações de dois estágios

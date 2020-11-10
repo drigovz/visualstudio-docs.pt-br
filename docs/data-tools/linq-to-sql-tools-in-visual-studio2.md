@@ -1,5 +1,7 @@
 ---
 title: Visão geral do LINQ to SQL O/R Designer
+description: Obtenha uma visão geral das ferramentas de LINQ to SQL no Visual Studio. Saiba mais sobre o Object Relational Designer (o/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 55f6fa2ad9eda2d701563d1fa99c76f5cd5c7c1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282001"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436231"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas do LINQ to SQL no Visual Studio
 
@@ -21,9 +23,9 @@ LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lançad
 
 ## <a name="install-the-linq-to-sql-tools"></a>Instalar as ferramentas de LINQ to SQL
 
-No Visual Studio, você cria LINQ to SQL classes que representam tabelas SQL usando o **Object Relational Designer** (**o/R Designer**). O o/R Designer é a interface do usuário para edição de arquivos. dbml. A edição de arquivos. dbml com uma superfície de designer requer as ferramentas de LINQ to SQL que não são instaladas por padrão como parte de qualquer uma das cargas de trabalho do Visual Studio.
+No Visual Studio, você cria LINQ to SQL classes que representam tabelas SQL usando o **Object Relational Designer** ( **o/R Designer** ). O o/R Designer é a interface do usuário para edição de arquivos. dbml. A edição de arquivos. dbml com uma superfície de designer requer as ferramentas de LINQ to SQL que não são instaladas por padrão como parte de qualquer uma das cargas de trabalho do Visual Studio.
 
-Para instalar as ferramentas de LINQ to SQL, inicie o instalador do Visual Studio, escolha **Modificar**, selecione a guia **componentes individuais** e, em seguida, selecione **LINQ to SQL ferramentas** na categoria **ferramentas de código** .
+Para instalar as ferramentas de LINQ to SQL, inicie o instalador do Visual Studio, escolha **Modificar** , selecione a guia **componentes individuais** e, em seguida, selecione **LINQ to SQL ferramentas** na categoria **ferramentas de código** .
 
 ## <a name="what-is-the-or-designer"></a>O que é o o/R Designer
 
@@ -33,7 +35,7 @@ O o **/R Designer** fornece uma superfície de Design Visual para criar [LINQ to
 
 ## <a name="open-the-or-designer"></a>Abrir o o/R Designer
 
-Para adicionar um modelo de entidade LINQ to SQL ao seu projeto, escolha **projeto**  >  **Adicionar novo item**e, em seguida, selecione **LINQ to SQL classes** na lista de itens de projeto:
+Para adicionar um modelo de entidade LINQ to SQL ao seu projeto, escolha **projeto**  >  **Adicionar novo item** e, em seguida, selecione **LINQ to SQL classes** na lista de itens de projeto:
 
 ![Classes do LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -46,22 +48,22 @@ Quando você seleciona o arquivo *. dbml* , o Visual Studio mostra a superfície
 ![Designer do LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> O o **/R Designer** é um mapeador relacional de objeto simples, pois dá suporte apenas a relações de mapeamento 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para mapeamento complexo, como mapear uma classe de entidade para uma tabela unida; Use o Entity Framework para mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. As alterações manuais no arquivo de código não são refletidas no **designer o/R**. As alterações feitas manualmente no arquivo de código são substituídas quando o designer é salvo e o código é regenerado. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela **Relational Designer**, consulte [como: Estender o código gerado pelo Designer Relacional de Objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> O o **/R Designer** é um mapeador relacional de objeto simples, pois dá suporte apenas a relações de mapeamento 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para mapeamento complexo, como mapear uma classe de entidade para uma tabela unida; Use o Entity Framework para mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. As alterações manuais no arquivo de código não são refletidas no **designer o/R**. As alterações feitas manualmente no arquivo de código são substituídas quando o designer é salvo e o código é regenerado. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela **Relational Designer** , consulte [como: Estender o código gerado pelo Designer Relacional de Objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Criar e configurar o DataContext
 
-Depois de adicionar um item de **classes de LINQ to SQL** a um projeto e abrir o o **/R Designer**, a superfície de design vazia representa um vazio <xref:System.Data.Linq.DataContext> pronto para ser configurado. O <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Portanto, o <xref:System.Data.Linq.DataContext> é configurado usando as informações de conexão do primeiro item solto na superfície de design. Para obter mais informações sobre a <xref:System.Data.Linq.DataContext> classe, consulte [métodos DataContext (o/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+Depois de adicionar um item de **classes de LINQ to SQL** a um projeto e abrir o o **/R Designer** , a superfície de design vazia representa um vazio <xref:System.Data.Linq.DataContext> pronto para ser configurado. O <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Portanto, o <xref:System.Data.Linq.DataContext> é configurado usando as informações de conexão do primeiro item solto na superfície de design. Para obter mais informações sobre a <xref:System.Data.Linq.DataContext> classe, consulte [métodos DataContext (o/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Criar classes de entidade que são mapeadas para exibições e tabelas de banco de dados
 
-Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas e exibições de banco de dados de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. Conforme indicado na seção anterior, o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente for adicionado ao o **/R Designer**, você poderá alterar a conexão para o <xref:System.Data.Linq.DataContext> . Para obter mais informações, consulte [como: criar classes de LINQ to SQL mapeadas para tabelas e exibições (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas e exibições de banco de dados de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. Conforme indicado na seção anterior, o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente for adicionado ao o **/R Designer** , você poderá alterar a conexão para o <xref:System.Data.Linq.DataContext> . Para obter mais informações, consulte [como: criar classes de LINQ to SQL mapeadas para tabelas e exibições (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Criar métodos DataContext que chamam procedimentos e funções armazenados
 
 Você pode criar <xref:System.Data.Linq.DataContext> métodos que chamam (são mapeados para) procedimentos armazenados e funções arrastando-os de **Gerenciador de Servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. Os procedimentos armazenados e funções são adicionados ao o **/R Designer** como métodos do <xref:System.Data.Linq.DataContext> .
 
 > [!NOTE]
-> Quando você arrasta procedimentos armazenados e funções de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**, o tipo de retorno do <xref:System.Data.Linq.DataContext> método gerado difere dependendo de onde você solta o item. Para obter mais informações, consulte [métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
+> Quando você arrasta procedimentos armazenados e funções de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer** , o tipo de retorno do <xref:System.Data.Linq.DataContext> método gerado difere dependendo de onde você solta o item. Para obter mais informações, consulte [métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar um DataContext para usar procedimentos armazenados a fim de salvar dados entre classes de entidade e um banco de dados
 

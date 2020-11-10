@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/05/2020
+ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: bfa6217f92ae56874a39775796a974c95a25c495
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 87b8b70f8adb10f0451d276520219c6954ff7325
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352238"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437299"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>IDs de carga de trabalho e de componente do Visual Studio
 
@@ -51,7 +51,7 @@ Para obter mais informações sobre como usar essas listas, consulte as páginas
 
 ::: moniker range="vs-2019"
 
-**Atualizado para a [versão 16,7](/visualstudio/releases/2019/release-notes/)**
+**Atualizado para a [versão 16,8](/visualstudio/releases/2019/release-notes/)**
 
 | **Edição** | **ID** | **Descrição** |
 | ----------- | ------ | --------------- |

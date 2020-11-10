@@ -1,5 +1,6 @@
 ---
 title: Usar procedimentos armazenados no LINQ to SQL para atualizar dados
+description: Use procedimentos armazenados no LINQ to SQL Object Relational Designer (O/R Designer) para executar atualizações, inserções e exclusões de dados.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036308"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436407"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 
@@ -36,7 +37,7 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 
 1. Abra o arquivo **LINQ to SQL** no designer. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
 
-2. Em **Gerenciador de Servidores** ou **Gerenciador de Banco de Dados**, expanda **Procedimentos Armazenados** e localize os procedimentos armazenados a serem usados com os comandos Insert, Update e/ou Delete da classe de entidade.
+2. Em **Gerenciador de Servidores** ou **Gerenciador de Banco de Dados** , expanda **Procedimentos Armazenados** e localize os procedimentos armazenados a serem usados com os comandos Insert, Update e/ou Delete da classe de entidade.
 
 3. Arraste o procedimento armazenado para o **Designer Relacional de Objetos**.
 
@@ -44,7 +45,7 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 
 4. Selecione a classe de entidade para a qual você deseja usar o procedimento armazenado para executar atualizações.
 
-5. Na janela **Propriedades**, selecione o comando a ser substituído (**Insert**, **Update** ou **Delete**).
+5. Na janela **Propriedades** , selecione o comando a ser substituído ( **Insert** , **Update** ou **Delete** ).
 
 6. Clique nas reticências (...) ao lado das palavras **Usar Runtime** para abrir a caixa de diálogo **Configurar Comportamento**.
 
@@ -60,9 +61,9 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 10. Clique em **OK** ou em **Aplicar**.
 
     > [!NOTE]
-    > Você pode continuar a configurar o comportamento para cada combinação de classe e comportamento desde que você clique em **aplicar** depois de fazer cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso será exibida e lhe fornecerá a oportunidade de aplicar as alterações.
+    > Você pode continuar a configurar o comportamento para cada combinação de classe e comportamento desde que você clique em **aplicar** depois de fazer cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar** , uma caixa de diálogo de aviso será exibida e lhe fornecerá a oportunidade de aplicar as alterações.
 
-Para voltar a usar a lógica padrão em runtime para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar runtime** na caixa de diálogo **Configurar Comportamento**.
+Para voltar a usar a lógica padrão em runtime para atualizações, clique nas reticências ao lado do comando **Insert** , **Update** ou **Delete** , na janela **Propriedades** , e selecione **Usar runtime** na caixa de diálogo **Configurar Comportamento**.
 
 ## <a name="see-also"></a>Confira também
 

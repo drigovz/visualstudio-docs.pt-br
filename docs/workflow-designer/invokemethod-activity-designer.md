@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-InvokeMethod
+description: Saiba mais sobre a atividade InvokeMethod e como você pode usar o designer de atividade InvokeMethod para criar e configurar uma atividade InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593194"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437730"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 

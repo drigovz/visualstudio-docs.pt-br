@@ -1,5 +1,7 @@
 ---
 title: Criar tabelas de pesquisa em aplicativos do WPF
+description: Crie tabelas de pesquisa em aplicativos WPF. Uma tabela de pesquisa é um controle que mostra informações de uma tabela de dados com base em um valor de campo de chave estrangeira em outra tabela.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282612"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436687"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
 
-A *tabela de pesquisa* de termos (às vezes chamada de *Associação de pesquisa*) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa arrastando o nó principal de uma tabela ou objeto pai na janela **fontes de dados** para um controle já associado a uma coluna ou propriedade em uma tabela filho relacionada.
+A *tabela de pesquisa* de termos (às vezes chamada de *Associação de pesquisa* ) descreve um controle que exibe informações de uma tabela de dados com base no valor de um campo de chave estrangeira em outra tabela. Você pode criar uma tabela de pesquisa arrastando o nó principal de uma tabela ou objeto pai na janela **fontes de dados** para um controle já associado a uma coluna ou propriedade em uma tabela filho relacionada.
 
 Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro na `Orders` tabela inclui um `CustomerID` que indica qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira que aponta para um registro de cliente na `Customers` tabela. Ao exibir uma lista de pedidos da `Orders` tabela, talvez você queira exibir o nome real do cliente em vez do `CustomerID` . Como o nome do cliente está na `Customers` tabela, você precisa criar uma tabela de pesquisa para exibir o nome do cliente. A tabela de pesquisa usa o `CustomerID` valor no `Orders` registro para navegar na relação e retorna o nome do cliente.
 
@@ -42,7 +44,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
     > [!NOTE]
     > Antes que você possa criar uma tabela de pesquisa, duas tabelas ou objetos relacionados devem existir como uma fonte de dados para o projeto.
 
-2. Abra o **designer do WPF**e certifique-se de que o designer contém um contêiner que é um destino de soltura válido para itens na janela **fontes de dados** .
+2. Abra o **designer do WPF** e certifique-se de que o designer contém um contêiner que é um destino de soltura válido para itens na janela **fontes de dados** .
 
      Para obter mais informações sobre destinos de destino válidos, consulte [associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 

@@ -1,5 +1,6 @@
 ---
 title: Criar controles de usuário que dão suporte à vinculação de dados simples
+description: Aprenda a criar um controle de usuário Windows Forms que dá suporte à vinculação de dados simples, usando a classe DefaultBindingPropertyAttribute no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5126c6f4c06bc52e98b952a7809ccae9c20e633
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037361"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436739"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples
 
@@ -58,7 +59,7 @@ Durante este passo a passo, você aprenderá a:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -74,15 +75,15 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="create-a-windows-forms-application"></a>Criar um aplicativo do Windows Forms
 
-A primeira etapa é criar um **aplicativo Windows Forms**:
+A primeira etapa é criar um **aplicativo Windows Forms** :
 
-1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No Visual Studio, no menu **Arquivo** , selecione **Novo** > **Projeto**.
 
 2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **SimpleControlWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **SimpleControlWalkthrough** e escolha **OK**.
 
      O projeto **SimpleControlWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 
@@ -90,7 +91,7 @@ A primeira etapa é criar um **aplicativo Windows Forms**:
 
 Este tutorial cria um controle vinculável de dados simples de um **controle de usuário**. Adicione um item de **controle de usuário** ao projeto **SimpleControlWalkthrough** :
 
-1. No menu **Projeto**, escolha **Adicionar Controle do Usuário**.
+1. No menu **Projeto** , escolha **Adicionar Controle do Usuário**.
 
 2. Digite **PhoneNumberBox** na área Nome e clique em **Adicionar**.
 
@@ -110,7 +111,7 @@ Este passo a passos se expande sobre o existente <xref:System.Windows.Forms.Mask
 
 Para controles simples que dão suporte à associação de dados, implemente o <xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
 
-1. Alterne o controle **PhoneNumberBox** para o modo de exibição de código. (No menu **Exibir**, escolha **Código**.)
+1. Alterne o controle **PhoneNumberBox** para o modo de exibição de código. (No menu **Exibir** , escolha **Código**.)
 
 2. Substitua o código no **PhoneNumberBox** pelo seguinte:
 
@@ -125,11 +126,11 @@ Esta etapa usa o assistente de **configuração de fonte de dados** para criar u
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
-3. Na página **Escolher um Tipo de Fonte de Dados**, selecione **Banco de Dados** e clique em **Avançar**.
+3. Na página **Escolher um Tipo de Fonte de Dados** , selecione **Banco de Dados** e clique em **Avançar**.
 
-4. Na página **Escolha a Conexão de Dados**, faça o seguinte:
+4. Na página **Escolha a Conexão de Dados** , faça o seguinte:
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 

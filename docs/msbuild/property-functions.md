@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048814"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437117"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
@@ -153,7 +153,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 
 Aqui está uma lista de funções da propriedade MSBuild:
 
-|Assinatura de função|Description|
+|Assinatura de função|Descrição|
 |------------------------|-----------------|
 |double Add(double a, double b)|Adicionar dois duplos.|
 |long Add(long a, long b)|Adicionar dois longos.|
@@ -342,11 +342,54 @@ Output:
 -->
 ```
 
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>Funções MSBuild TargetFramework e TargetPlatform
+
+O MSBuild define várias funções para lidar com [as propriedades TargetFramework e TargetPlatform](msbuild-target-framework-and-target-platform.md).
+
+|Assinatura de função|Descrição|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier (cadeia de caracteres targetFramework)|Analise o TargetFrameworkIdentifier do TargetFramework.|
+|GetTargetFrameworkVersion (cadeia de caracteres targetFramework)|Analise o TargetFrameworkVersion do TargetFramework.|
+|GetTargetPlatformIdentifier (cadeia de caracteres targetFramework)|Analise o TargetPlatformIdentifier do TargetFramework.|
+|GetTargetPlatformVersion (cadeia de caracteres targetFramework)|Analise o TargetPlatformVersion do TargetFramework.|
+|IsTargetFrameworkCompatible (cadeia de caracteres targetFrameworkTarget, Cadeia de caracteres targetFrameworkCandidate)|Retorne ' true ' se a estrutura de destino candidata for compatível com essa estrutura de destino e false caso contrário.|
+
+O exemplo a seguir mostra como essas funções são usadas. 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
+```
+
 ## <a name="msbuild-condition-functions"></a>Funções de condição do MSBuild
 
 As funções `Exists` e `HasTrailingSlash` não são funções de propriedade. Eles estão disponíveis para uso com o `Condition` atributo. Consulte [condições do MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [propriedades MSBuild](../msbuild/msbuild-properties.md)
 

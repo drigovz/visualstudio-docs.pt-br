@@ -1,5 +1,7 @@
 ---
 title: 'Designer de Fluxo de Trabalho-como: usar o designer de variável'
+description: Saiba como você pode usar o designer de variáveis para criar variáveis para uso em cenários de vinculação de dados e instruções condicionais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02aab6c5ecf545e0f754f1a88fa7e26a88f206d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817405"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437821"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Como: Use o designer variável
 
@@ -31,7 +33,7 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 
 3. Abra o designer de variável clicando no botão **variáveis** no canto inferior esquerdo da tela de design. O designer variável aparece.
 
-4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para o **tipo de variável**e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para o **tipo de variável** e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir uma variável, selecione a variável clicando nela e pressione a tecla **delete** .

@@ -1,6 +1,8 @@
 ---
 title: Compatibilidade da versão para políticas de check-in de análise do código
 ms.date: 11/04/2016
+description: Saiba como o Team System 2008 Team Foundation Server e Team Foundation Server 2010 avaliar as políticas de check-in do Visual Studio de forma diferente.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587154"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436869"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Compatibilidade da versão para políticas de check-in de análise do código
 
 Se você precisar avaliar e criar políticas de check-in de análise de código usando versões diferentes do [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , você deve saber as diferenças em como [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] avaliar as políticas de [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] check-in.
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidade de versão para avaliar as políticas de check-in
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilidade de versão para avaliar políticas de Check-In
 
 - Quando as políticas de check-in de análise de código são avaliadas no [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] , todas as regras que existiam no [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] , mas não existem no, [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] são ignoradas.
 
@@ -32,7 +34,7 @@ Se você precisar avaliar e criar políticas de check-in de análise de código 
 
 - Se a política de check-in da análise de código especificar assemblies de regras que não [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] reconhece, será exibida uma mensagem.
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidade de versão para criação de políticas de check-in
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilidade de versão para criação de políticas de Check-In
 
 - Se você criou uma política de check-in de análise de código usando a [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] versão do [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , não poderá usar a [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] versão do [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] para modificá-la. Além disso, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] o não pode avaliar a política.
 

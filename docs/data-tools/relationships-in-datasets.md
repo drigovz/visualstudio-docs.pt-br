@@ -1,5 +1,6 @@
 ---
 title: Criar relações entre conjuntos de dados
+description: Crie relações entre conjuntos de valores no Visual Studio. Entenda os objetos e as restrições do DataRelation. Crie manualmente uma relação de dados no DataSet Manager.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037680"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436088"
 ---
 # <a name="create-relationships-between-datasets"></a>Criar relações entre conjuntos de dados
-DataSets que contêm tabelas de dados relacionadas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e para retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Assistente de configuração de fonte de dados**ou o **Designer de conjunto de dados**, cria e configura o <xref:System.Data.DataRelation> objeto para você.
+DataSets que contêm tabelas de dados relacionadas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e para retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Assistente de configuração de fonte de dados** ou o **Designer de conjunto de dados** , cria e configura o <xref:System.Data.DataRelation> objeto para você.
 
 O <xref:System.Data.DataRelation> objeto executa duas funções:
 
@@ -69,9 +70,9 @@ Para obter mais informações sobre atualizações em tabelas de DataSet, consul
 Ao criar um <xref:System.Data.DataRelation> objeto, você tem a opção de especificar que a relação seja usada somente para impor restrições, ou seja, ela também não será usada para acessar registros relacionados. Você pode usar essa opção para gerar um conjunto de registros que seja um pouco mais eficiente e que contenha menos métodos do que um com a funcionalidade de registros relacionados. No entanto, você não poderá acessar os registros relacionados. Por exemplo, uma relação somente de restrição impede que você exclua um registro pai que ainda tem registros filho, e você não pode acessar os registros filho por meio do pai.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Criando manualmente uma relação de dados no Designer de Conjunto de Dados
-Quando você cria tabelas de dados usando as ferramentas de design de dados no Visual Studio, as relações são criadas automaticamente se as informações podem ser coletadas da origem dos seus dados. Se você adicionar tabelas de dados manualmente a partir da guia **DataSet** da **caixa de ferramentas**, talvez seja necessário criar a relação manualmente. Para obter informações sobre como criar <xref:System.Data.DataRelation> objetos programaticamente, consulte [adicionando DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
+Quando você cria tabelas de dados usando as ferramentas de design de dados no Visual Studio, as relações são criadas automaticamente se as informações podem ser coletadas da origem dos seus dados. Se você adicionar tabelas de dados manualmente a partir da guia **DataSet** da **caixa de ferramentas** , talvez seja necessário criar a relação manualmente. Para obter informações sobre como criar <xref:System.Data.DataRelation> objetos programaticamente, consulte [adicionando DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
 
-As relações entre tabelas de dados aparecem como linhas na **Designer de conjunto de dados**, com um glifo de chave e infinito, que ilustra o aspecto de um para muitos da relação. Por padrão, o nome da relação não aparece na superfície de design.
+As relações entre tabelas de dados aparecem como linhas na **Designer de conjunto de dados** , com um glifo de chave e infinito, que ilustra o aspecto de um para muitos da relação. Por padrão, o nome da relação não aparece na superfície de design.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

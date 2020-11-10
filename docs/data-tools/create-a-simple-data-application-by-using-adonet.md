@@ -1,5 +1,6 @@
 ---
 title: Criar um aplicativo de dados simples usando o ADO.NET
+description: Aprenda a criar um aplicativo simples de formulário para dados usando Windows Forms e ADO.NET no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7db4d0072f217604e7ca163e581cc8fe138ffdb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037426"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436791"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -48,7 +49,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 3. Na caixa de texto **nome do servidor** , digite **(LocalDB) \mssqllocaldb**.
 
-4. Na caixa de texto **nome do novo banco de dados** , insira **vendas**e escolha **OK**.
+4. Na caixa de texto **nome do novo banco de dados** , insira **vendas** e escolha **OK**.
 
      O banco de dados de **vendas** vazio é criado e adicionado ao nó conexões de Data no Gerenciador de servidores.
 
@@ -123,10 +124,10 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de conexão
 Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo de *App.config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
 
-Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** + **A**, **Ctrl** + **C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
+Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** + **A** , **Ctrl** + **C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
 
-1. Se você estiver usando C#, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
-    Se você estiver usando Visual Basic, em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**, expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
+1. Se você estiver usando C#, em **Gerenciador de soluções** , expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
+    Se você estiver usando Visual Basic, em **Gerenciador de soluções** , clique em **Mostrar todos os arquivos** , expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
 
 2. Na coluna **nome** , digite `connString` .
 
@@ -149,9 +150,9 @@ O formulário de navegação é aberto quando você executa o aplicativo. O bot�
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Tornar o formulário de navegação o formulário de inicialização
 
-Se você estiver usando C#, em **Gerenciador de soluções**, abra **Program.cs**e, em seguida, altere a `Application.Run` linha para: `Application.Run(new Navigation());`
+Se você estiver usando C#, em **Gerenciador de soluções** , abra **Program.cs** e, em seguida, altere a `Application.Run` linha para: `Application.Run(new Navigation());`
 
-Se você estiver usando Visual Basic, em **Gerenciador de soluções**, abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
+Se você estiver usando Visual Basic, em **Gerenciador de soluções** , abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
 
 #### <a name="create-auto-generated-event-handlers"></a>Criar manipuladores de eventos gerados automaticamente
 

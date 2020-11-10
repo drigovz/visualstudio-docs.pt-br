@@ -1,5 +1,7 @@
 ---
 title: Mapear classes de LINQ to SQL para tabelas/exibições (O-R Designer)
+description: Entenda como criar LINQ to SQL classes de entidade (classes que são mapeadas para tabelas e exibições) no Object Relational Designer (O/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282118"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436340"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)
 
@@ -32,7 +34,7 @@ Por padrão, o runtime do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlin
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Para criar classes LINQ to SQL que são mapeadas para tabelas ou exibições de banco de dados
 
-1. No **Servidor**/**Gerenciador de Banco de Dados**, expanda **Tabelas** ou **Modos de exibição** e localize a tabela ou exibição de banco de dados que você quer usar em seu aplicativo.
+1. No **Servidor** / **Gerenciador de Banco de Dados** , expanda **Tabelas** ou **Modos de exibição** e localize a tabela ou exibição de banco de dados que você quer usar em seu aplicativo.
 
 2. Arraste a tabela ou exibição para o o **/R Designer**.
 
@@ -40,15 +42,15 @@ Por padrão, o runtime do [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlin
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Crie um objeto de fonte de dados e exiba os dados em um formulário
 
-Depois de criar classes de entidade usando o o **/R Designer**, você pode criar uma fonte de dados de objeto e popular a [janela de fontes de dados](add-new-data-sources.md#data-sources-window) com as classes de entidade.
+Depois de criar classes de entidade usando o o **/R Designer** , você pode criar uma fonte de dados de objeto e popular a [janela de fontes de dados](add-new-data-sources.md#data-sources-window) com as classes de entidade.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para criar uma fonte de dados de objeto com base nas classes de entidade do LINQ to SQL
 
-1. No menu **Compilar**, clique em **Compilar Solução** para criar o seu projeto.
+1. No menu **Compilar** , clique em **Compilar Solução** para criar o seu projeto.
 
 2. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-3. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
+3. Na janela **Fontes de Dados** , clique em **Adicionar Nova Fonte de Dados**.
 
 4. Clique em **Objeto** na página **Escolher um Tipo de Fonte de Dados** e clique em **Avançar**.
 
@@ -63,9 +65,9 @@ Depois de criar classes de entidade usando o o **/R Designer**, você pode criar
 
 ## <a name="see-also"></a>Confira também
 
-- [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [O modelo de objeto LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
 - [Passo a passo: personalizando a inserção, a atualização e o comportamento de exclusão de classes de entidade](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)

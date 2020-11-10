@@ -1,5 +1,7 @@
 ---
 title: Criar um controle de usuário Windows Forms com associação de dados
+description: Entenda como criar um controle de usuário Windows Forms que dá suporte à vinculação de dados complexa, implementando a classe ComplexBindingPropertiesAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586842"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436778"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos
 
@@ -55,7 +57,7 @@ Durante este passo a passos, você aprenderá a:
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio** , você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
 1. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -75,9 +77,9 @@ A primeira etapa é criar um projeto de **aplicativo Windows Forms** para C# ou 
 
 ## <a name="add-a-user-control-to-the-project"></a>Adicionar um controle de usuário ao projeto
 
-Como este passo a passos cria um controle vinculável de dados complexo de um **controle de usuário**, adicione um item de **controle de usuário** ao projeto:
+Como este passo a passos cria um controle vinculável de dados complexo de um **controle de usuário** , adicione um item de **controle de usuário** ao projeto:
 
-1. No menu **Projeto**, escolha **Adicionar Controle do Usuário**.
+1. No menu **Projeto** , escolha **Adicionar Controle do Usuário**.
 
 1. Digite **ComplexDataGridView** na área **Nome** e clique em **Adicionar**.
 
@@ -91,7 +93,7 @@ Para adicionar um <xref:System.Windows.Forms.DataGridView> ao controle de usuár
 
 Para controles complexos que dão suporte à associação de dados, você pode implementar o <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
-1. Alterne o controle **ComplexDataGridView** para exibição de código. (No menu **Exibir**, selecione **Código**.)
+1. Alterne o controle **ComplexDataGridView** para exibição de código. (No menu **Exibir** , selecione **Código**.)
 
 1. Substitua o código no `ComplexDataGridView` pelo seguinte:
 
@@ -106,7 +108,7 @@ Use o assistente de **configuração de fonte de dados** para criar uma fonte de
 
 1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
-2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
+2. Na janela **Fontes de Dados** , selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
 3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.
 

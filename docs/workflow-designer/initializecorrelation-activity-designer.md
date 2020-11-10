@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-InitializeCorrelation
+description: Saiba como você pode usar o designer de atividade InitializeCorrelation para criar e configurar uma atividade InitializeCorrelation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875560"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437782"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Designer de atividade de InitializeCorrelation
 

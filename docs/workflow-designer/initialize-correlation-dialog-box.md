@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Designer de Fluxo de Trabalho-inicializar correlação
+description: Saiba como você pode usar a caixa de diálogo inicializar correlação no Designer de Fluxo de Trabalho para editar a propriedade CorrelationData de uma atividade InitializeCorrelation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04f0a3bb70dbab31e0faa5c38caac9b54c6154fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a35911fef39315580f402e174b0f32d443a33cf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114782"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437795"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar a caixa de diálogo correlação
 
@@ -23,7 +25,7 @@ A caixa de diálogo **inicializar correlação** é usada em Designer de fluxo d
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **inicializar correlação** :
 
-|Elemento da interface do usuário|Descrição|
+|Elemento da interface do usuário|DESCRIÇÃO|
 |-|-----------------|
 |**Correlação**|<xref:System.ServiceModel.Activities.CorrelationHandle> de correlação para inicializar.|
 |**Inicializar em**|Um par chave/valor que contém os dados para inicializar. Esse valor corresponde à <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade. Um exemplo de um par chave/valor válido é uma chave chamada "OrderID" emparelhada com uma variável chamada OrderID.|

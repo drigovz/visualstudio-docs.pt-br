@@ -1,5 +1,7 @@
 ---
 title: Ferramentas do conjunto de dados
+description: Examine as ferramentas de conjunto de ferramenta disponíveis no Visual Studio. Leia sobre fluxo de trabalho do conjunto de informações, conjuntos de valores e arquitetura de N camadas e conjuntos de informações e XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586712"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436479"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 
@@ -79,9 +81,9 @@ O Visual Studio fornece ferramentas para simplificar o trabalho com conjuntos de
 
   - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
 
-  - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
+  - [Validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
 
-  - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+  - [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
 - Consultar e Pesquisar os dados no DataSet. Para obter mais informações, consulte conjuntos de dados de [consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] habilita o [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

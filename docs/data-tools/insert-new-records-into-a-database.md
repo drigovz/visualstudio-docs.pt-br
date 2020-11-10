@@ -1,5 +1,7 @@
 ---
 title: Inserir novos registros em um banco de dados
+description: Insira novos registros em um banco de dados usando o método TableAdapter. Update, um dos métodos DBDirect do TableAdapter ou objetos de comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281988"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436270"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserir novos registros em um banco de dados
 
@@ -34,7 +36,7 @@ Se o seu aplicativo usa conjuntos de dados para armazenar, use o `TableAdapter.U
 
 Se seu aplicativo usar objetos para armazenar dados, ou se você quiser um controle mais preciso sobre a criação de novos registros no banco de dado, use o `TableAdapter.Insert` método.
 
-Se o TableAdapter não tiver um `Insert` método, significa que o TableAdapter está configurado para usar procedimentos armazenados ou sua `GenerateDBDirectMethods` propriedade é definida como `false` . Tente definir a propriedade do TableAdapter `GenerateDBDirectMethods` para `true` de dentro do **Designer de conjunto de dados**e salve o conjunto de os. Isso irá regenerar o TableAdapter. Se o TableAdapter ainda não tiver um `Insert` método, a tabela provavelmente não fornecerá informações de esquema suficientes para distinguir entre linhas individuais (por exemplo, pode não haver nenhuma chave primária definida na tabela).
+Se o TableAdapter não tiver um `Insert` método, significa que o TableAdapter está configurado para usar procedimentos armazenados ou sua `GenerateDBDirectMethods` propriedade é definida como `false` . Tente definir a propriedade do TableAdapter `GenerateDBDirectMethods` para `true` de dentro do **Designer de conjunto de dados** e salve o conjunto de os. Isso irá regenerar o TableAdapter. Se o TableAdapter ainda não tiver um `Insert` método, a tabela provavelmente não fornecerá informações de esquema suficientes para distinguir entre linhas individuais (por exemplo, pode não haver nenhuma chave primária definida na tabela).
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Inserir novos registros usando TableAdapters
 
@@ -86,4 +88,4 @@ Você deve ter acesso ao banco de dados ao qual está tentando se conectar, bem 
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)
