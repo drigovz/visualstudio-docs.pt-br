@@ -1,5 +1,7 @@
 ---
 title: Designer de Fluxo de Trabalho-confirmar designer de atividade
+description: Saiba como confirmar o designer de atividade e como você pode usar esse designer para criar e configurar uma atividade de confirmação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd7fedd958072baf23b456f9897ab67c864991d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4928dcd7a9e1b83ba797614545315022d0f36ac3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876132"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438146"
 ---
 # <a name="confirm-activity-designer"></a>Confirme que o designer de atividades
 
@@ -27,7 +29,7 @@ O designer de atividade de **confirmação** é usado para criar e configurar um
  <xref:System.Activities.Statements.CompensationToken> especificado por <xref:System.Activities.Statements.Compensate.Target%2A> fornece um meio para confirmar ou compensar explicitamente <xref:System.Activities.Statements.CompensableActivity> uma vez que <xref:System.Activities.Statements.CompensableActivity.Body%2A> de <xref:System.Activities.Statements.CompensableActivity> terminou com êxito.
 
 ### <a name="using-the-confirm-activity-designer"></a>Usando o designer de atividade de confirmação
- O designer de atividade de **confirmação** pode ser encontrado na categoria **transação** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+ O designer de atividade de **confirmação** pode ser encontrado na categoria **transação** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
  O designer de atividade de **confirmação** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma atividade de <xref:System.Activities.Statements.Confirm> com <xref:System.Activities.Activity.DisplayName%2A> padrão Confirmar. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do designer de atividade de **confirmação** ou na caixa **DisplayName** da grade de propriedades.
 

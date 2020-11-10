@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-CorrelationScope
+description: Saiba como você pode usar o designer de atividade CorrelationScope para criar e configurar uma atividade CorrelationScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 135acfbbaf9fdcbbf219fd50a504cf9262fe4d24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876093"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438107"
 ---
 # <a name="correlationscope-activity-designer"></a>Designer de atividade de CorrelationScope
 
@@ -27,7 +29,7 @@ A propriedade de <xref:System.ServiceModel.Activities.CorrelationScope.Correlate
 
 ### <a name="use-the-correlationscope-activity-designer"></a>Usar o designer de atividade do CorrelationScope
 
-O designer de atividade **CorrelationScope** pode ser encontrado na categoria **mensagens** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade **CorrelationScope** pode ser encontrado na categoria **mensagens** da **caixa de ferramentas** , que é acessada clicando na guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de atividade do **CorrelationScope** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho. Isso cria uma <xref:System.ServiceModel.Activities.CorrelationScope> atividade com um **DisplayName** padrão de CorrelationScope. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **CorrelationScope** ou na caixa **DisplayName** da janela **Propriedades** .
 

@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade de Designer de Fluxo de Trabalho atraso
+description: Saiba mais sobre as atividades de atraso e como você pode usar o designer de atividade de atraso para criar e configurar uma atividade de atraso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876106"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438081"
 ---
 # <a name="delay-activity-designer"></a>Atrasar o designer de atividades
 
@@ -27,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Delay> atrasa a execução de 
 
 ### <a name="use-the-delay-activity-designer"></a>Usar o designer de atividade de atraso
 
-O designer de atividade de **atraso** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade de **atraso** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de atividade de **atraso** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade cria uma <xref:System.Activities.Statements.Delay> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de atraso. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **atraso** ou na caixa **DisplayName** da grade de propriedades.
 

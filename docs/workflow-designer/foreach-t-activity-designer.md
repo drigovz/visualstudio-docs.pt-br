@@ -1,5 +1,7 @@
 ---
 title: '&lt;Designer de atividades T &gt; de designer de fluxo de trabalho foreach'
+description: Saiba como a <T> atividade ForEach executa a atividade contida em seu corpo para cada item em uma coleção de valores especificada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30d43351211a6ff857630b47f05be77e27bd7951
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593909"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437977"
 ---
 # <a name="foreachlttgt-activity-designer"></a>&lt;Designer de &gt; atividade ForEach T
 

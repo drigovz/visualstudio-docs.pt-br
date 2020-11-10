@@ -1,5 +1,7 @@
 ---
 title: Designers de atividade de fluxo de controle de Designer de Fluxo de Trabalho
+description: Saiba mais sobre os designers de atividade do fluxo de controle, que são atividades fornecidas pelo sistema usadas para controlar o fluxo em um fluxo de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f9de21dbf0529823690effb4285b63a3b226fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7cf2f4f05db2fbc06c6209d5b39b211dd731f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114676"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438133"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 

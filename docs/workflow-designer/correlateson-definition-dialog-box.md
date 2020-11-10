@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Definição de Designer de Fluxo de Trabalho-CorrelatesOn
+description: Saiba como você pode usar a caixa de diálogo CorrelatesOn no Designer de Fluxo de Trabalho para editar a propriedade CorrelatesOn de uma atividade Receive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876119"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438120"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Caixa de diálogo definição de CorrelatesOn
 
@@ -25,7 +27,7 @@ Correlação entre atividades de <xref:System.ServiceModel.Activities.Receive> e
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **CorrelatesOn** .
 
-|Elemento da interface do usuário|Descrição|
+|Elemento da interface do usuário|DESCRIÇÃO|
 |-|-----------------|
 |**CorrelatesWith**|<xref:System.ServiceModel.Activities.CorrelationHandle> que é usado para rotear a mensagem à instância apropriado de fluxo de trabalho.|
 |**Consultas XPath**|Um par chave/valor que contém as consultas usadas para extrair dados de correlação das mensagens de entrada. Esse valor corresponde à <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriedade. Consultas XPath estão contidas em um objeto de <xref:System.ServiceModel.MessageQuerySet> .|

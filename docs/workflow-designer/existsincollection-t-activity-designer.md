@@ -1,5 +1,7 @@
 ---
 title: Designer de atividades Designer de Fluxo de Trabalho-ExistsInCollection &lt; T &gt;
+description: Saiba como você pode usar o <T> Designer de atividade ExistsInCollection para criar e configurar uma <T> atividade ExistsInCollection.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48bb11e2aac9d542a07551df62d710c41596d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 357001651018b1b9211efc75d3b9397fb2a943cf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875651"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438016"
 ---
 # <a name="existsincollectiont-activity-designer"></a>Designer de atividade ExistsInCollection\<T>
 
-O designer de atividade ** \<T> ExistsInCollection** é usado para criar e configurar uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade.
+O designer de atividade **\<T> ExistsInCollection** é usado para criar e configurar uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade.
 
 ## <a name="the-existsincollectiont-activity"></a>A \<T> atividade ExistsInCollection
 
@@ -27,9 +29,9 @@ A atividade de <xref:System.Activities.Statements.ExistsInCollection%601> determ
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Usando o \<T> Designer de atividade ExistsInCollection
 
-O designer de atividade do **ExistsInCollection \<T> ** pode ser encontrado na categoria **coleção** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O designer de atividade do **ExistsInCollection \<T>** pode ser encontrado na categoria **coleção** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** do designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
-O designer de atividade do **ExistsInCollection \<T> ** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de ExistsInCollection<Int32 \> . (Por padrão, o *TypeArgument* é **Int32**. Ele pode ser alterado na grade de propriedades.)  O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **ExistsInCollection<T \> ** Activity Designer ou na caixa **DisplayName** da grade de propriedades. Outras propriedades devem ser editadas na grade de propriedade.
+O designer de atividade do **ExistsInCollection \<T>** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Isso cria uma <xref:System.Activities.Statements.ExistsInCollection%601> atividade com um padrão <xref:System.Activities.Activity.DisplayName%2A> de ExistsInCollection<Int32 \> . (Por padrão, o *TypeArgument* é **Int32**. Ele pode ser alterado na grade de propriedades.)  O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **ExistsInCollection<T \>** Activity Designer ou na caixa **DisplayName** da grade de propriedades. Outras propriedades devem ser editadas na grade de propriedade.
 
 ### <a name="the-existsincollectiont-properties"></a>As \<T> Propriedades ExistsInCollection
 
@@ -38,7 +40,7 @@ A tabela a seguir mostra as <xref:System.Activities.Statements.ExistsInCollectio
 |Nome da propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|O nome amigável de atividade de <xref:System.Activities.Statements.ExistsInCollection%601> . O padrão é ExistsInCollection<Int32 \> . Embora o valor de <xref:System.Activities.Activity.DisplayName%2A> não é necessário restrita, é uma prática recomendada usar um.|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Verdadeiro|O item a ser pesquisado na coleção \<T> . Este item é do tipo *T*, que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|Verdadeiro|O item a ser pesquisado na coleção \<T> . Este item é do tipo *T* , que é do tipo *TypeArgument*. Para especificar o item, digite uma expressão do Visual Basic na grade de propriedade.|
 |<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|Verdadeiro|A coleção na qual verificar se o item existe. Essa coleção é do tipo **ICollection<TypeArgument \> .** Para especificar a coleção, digite uma expressão do Visual Basic na grade de propriedade.|
 |*TypeArgument*|Verdadeiro|O tipo T de itens contidos em <xref:System.Collections.Generic.ICollection%601>. Por padrão, esse tipo de *TypeArgument* é definido como **Int32**. Para alterar o tipo, altere o valor de *TypeArgument* na caixa de combinação na grade de propriedades.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Um valor que indica se o item especificado existe na coleção. Para especificar uma variável para associar ao resultado, digite uma variável do Visual Basic na grade de propriedade.|

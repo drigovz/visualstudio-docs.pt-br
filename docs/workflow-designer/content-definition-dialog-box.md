@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Designer de Fluxo de Trabalho-definição de conteúdo
+description: Saiba como você pode usar a caixa de diálogo Definição de conteúdo para configurar as propriedades de conteúdo das atividades enviar, receber, SendReply e ReceiveReply.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e2341d458c98f01d3b58d6f77887ac1cfe6746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2858c179d05645b3e47e6be27e386168392fcb48
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876197"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438159"
 ---
 # <a name="content-definition-dialog-box"></a>Caixa de diálogo de conteúdo da definição
 
@@ -23,12 +25,12 @@ A caixa de diálogo **definição de conteúdo** é usada em Designer de fluxo d
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **inicializar correlação** :
 
-|Elemento da interface do usuário|Descrição|
+|Elemento da interface do usuário|DESCRIÇÃO|
 |-|-----------------|
-|**Mensagem**|Especifica o conteúdo da mensagem com a caixa de texto expressão de **dados da mensagem** e o tipo usando a caixa de listagem suspensa **tipo de mensagem** . Por padrão, a **definição de conteúdo** usa o <xref:System.ServiceModel.Activities.ReceiveMessageContent> , que espera um <xref:System.ServiceModel.Channels.Message> ou um tipo de contrato de mensagem na definição do serviço de fluxo de trabalho.|
+|**Message**|Especifica o conteúdo da mensagem com a caixa de texto expressão de **dados da mensagem** e o tipo usando a caixa de listagem suspensa **tipo de mensagem** . Por padrão, a **definição de conteúdo** usa o <xref:System.ServiceModel.Activities.ReceiveMessageContent> , que espera um <xref:System.ServiceModel.Channels.Message> ou um tipo de contrato de mensagem na definição do serviço de fluxo de trabalho.|
 |**Parâmetros**|Clique no botão de opção **parâmetros** a ser usado <xref:System.ServiceModel.Activities.ReceiveParametersContent> , o que espera um contrato de dados. Use a grade de dados para definir uma coleção genérica de pares chave/valor de <xref:System.Activities.OutArgument> cujos valores são atribuídos aos parâmetros variáveis no fluxo de trabalho atual.|
 
-A caixa de diálogo **definição de conteúdo** é usada pelos designers **Enviar**, **receber**, **ReceiveAndSendReply**e **SendAndReceiveReply** . Acessá-lo é semelhante em cada caso e exemplos de receptor são usados aqui para ilustrar o procedimento.
+A caixa de diálogo **definição de conteúdo** é usada pelos designers **Enviar** , **receber** , **ReceiveAndSendReply** e **SendAndReceiveReply** . Acessá-lo é semelhante em cada caso e exemplos de receptor são usados aqui para ilustrar o procedimento.
 
 O designer de atividade **Receive** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. Selecione o designer de atividade de **recebimento** e clique no botão de reticências ao lado do texto (conteúdo) da propriedade **conteúdo** na grade de propriedades da caixa de diálogo **definição de conteúdo** a ser exibida.
 

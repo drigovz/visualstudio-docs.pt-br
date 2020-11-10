@@ -1,5 +1,7 @@
 ---
 title: 'Designer de Fluxo de Trabalho: adicionar um novo item ao projeto de fluxo de trabalho'
+description: Saiba como você pode adicionar atividades de fluxo de trabalho, designers e outros itens familiares do Visual Studio ao seu projeto depois de criar um projeto de fluxo de trabalho.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814610"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437964"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Como: adicionar um novo item a um projeto de fluxo de trabalho
 
@@ -21,7 +23,7 @@ Depois de criar um projeto de fluxo de trabalho, você pode adicionar atividades
 
 A tabela a seguir lista os itens de Windows Workflow Foundation (WF) que você pode adicionar a um projeto de fluxo de trabalho:
 
-| Name | Descrição |
+| Nome | Descrição |
 |-| - |
 | Atividade | Uma atividade a ser composta de outras atividades. A seleção deste item adiciona o mesmo arquivo XAML ao projeto, como você obteria ao selecionar o modelo de **biblioteca de atividades** para um novo projeto. Para obter mais informações sobre esse procedimento, consulte [criar um projeto de fluxo de trabalho](creating-a-workflow-project.md). |
 | Designer de Activity | Um designer para personalizar a experiência em tempo de design de uma atividade. A seleção deste item adiciona os mesmos arquivos ao projeto, como você obteria ao selecionar o modelo de **biblioteca do designer de atividade** para um novo projeto. |
@@ -30,9 +32,9 @@ A tabela a seguir lista os itens de Windows Workflow Foundation (WF) que você p
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto
 
-1. No menu **Projeto**, selecione **Adicionar novo item**.
+1. No menu **Projeto** , selecione **Adicionar novo item**.
 
-   A caixa de diálogo **Adicionar Novo Item** é aberta.
+   A caixa de diálogo **Adicionar novo item** é aberta.
 
 1. No painel esquerdo, selecione a categoria fluxo de **trabalho** e, em seguida, selecione um modelo de item de fluxo de trabalho.
 

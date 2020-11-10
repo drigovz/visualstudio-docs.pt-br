@@ -1,5 +1,7 @@
 ---
 title: Designer de atividade Designer de Fluxo de Trabalho-FlowDecision
+description: Saiba como o nó FlowDecision é um nó condicional que fornece uma ramificação para o fluxo de controle em uma das duas alternativas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a70e7e44976df975be721d93e918d7c25d192bf
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76111440"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437990"
 ---
 # <a name="flowdecision-activity-designer"></a>Designer de atividade de FlowDecision
 
@@ -27,11 +29,11 @@ Use <xref:System.Activities.Statements.FlowDecision> quando o fluxo pode ser tra
 
 ### <a name="using-the-flowdecision-designer"></a>Utilizando o designer de FlowDecision
 
-O **FlowDecision** designer pode ser encontrado na categoria **fluxograma** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
+O **FlowDecision** designer pode ser encontrado na categoria **fluxograma** da caixa de **ferramentas** , que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** + **ALT** + **X**.
 
 O designer de **FlowDecision** pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de designer de fluxo de trabalho dentro de um designer de atividade de **fluxograma** . Isso cria uma <xref:System.Activities.Statements.FlowDecision> **decisão** rotulada dentro da <xref:System.Activities.Statements.Flowchart> atividade. O mouse sobre o designer e os identificadores quadrados **verdadeiro** e **falso** para as duas ramificações são exibidos.
 
-Depois de arrastar o designer de **FlowDecision** e outros designers para o **fluxograma**, os nós podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre um nó de origem (incluindo as ramificações **true** e **false** do **FlowDecision**) e um nó de destino, o mouse sobre o designer do nó de origem e os identificadores quadrados aparecem em cada lado dele. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor do nó de destino quando você o mouse sobre ele. Liberar o botão do mouse e um link é criado no meio esses dois nós que é representado como uma seta do designer de origem para o designer de destino.
+Depois de arrastar o designer de **FlowDecision** e outros designers para o **fluxograma** , os nós podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre um nó de origem (incluindo as ramificações **true** e **false** do **FlowDecision** ) e um nó de destino, o mouse sobre o designer do nó de origem e os identificadores quadrados aparecem em cada lado dele. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor do nó de destino quando você o mouse sobre ele. Liberar o botão do mouse e um link é criado no meio esses dois nós que é representado como uma seta do designer de origem para o designer de destino.
 
 A expressão que declara o <xref:System.Activities.Statements.FlowDecision.Condition%2A> pode ser digitada na caixa **condição** da janela **Propriedades** clicando em onde o texto de dica diz "inserir uma expressão vb".
 

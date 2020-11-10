@@ -1,5 +1,7 @@
 ---
 title: Criar um projeto do Workflow Foundation
+description: Saiba como criar bibliotecas e aplicativos com os modelos de projeto disponíveis no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597068"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438094"
 ---
 # <a name="workflow-project-templates"></a>Modelos de projeto de fluxo de trabalho
 
@@ -43,7 +45,7 @@ Para acessar esses modelos, primeiro instale o componente de **Windows Workflow 
 1. Continue para criar o projeto.
 
    > [!NOTE]
-   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções**e selecione **Adicionar**  >  **novo projeto**.
+   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções** e selecione **Adicionar**  >  **novo projeto**.
 
 ## <a name="workflow-console-app"></a>Aplicativo de console de fluxo de trabalho
 

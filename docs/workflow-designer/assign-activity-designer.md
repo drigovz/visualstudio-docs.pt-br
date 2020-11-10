@@ -1,5 +1,7 @@
 ---
 title: Designer de Fluxo de Trabalho-atribuir designer de atividade
+description: Saiba como você pode usar o designer de atividade assign para criar e configurar uma atividade atribuir e como a atividade atribuir atribui um valor a uma variável ou argumento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d8601951cfaba3f246e8488ab23c9b6ccad0d01
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875937"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438185"
 ---
 # <a name="assign-activity-designer"></a>Atribua o designer de atividades
 
@@ -27,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Assign> atribui um valor a uma
 
 ### <a name="using-the-assign-activity-designer"></a>Usando o designer de atividade atribuir
 
-O designer de atividade de **atribuição** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** (como alternativa, selecione caixa de **ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
+O designer de atividade de **atribuição** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas** , que é acessada clicando na guia **caixa de ferramentas** (como alternativa, selecione caixa de **ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
 
 O designer de atividade de **atribuição** pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de designer de fluxo de trabalho onde as atividades sempre são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence> . Descartar o designer de atividade de **atribuição** cria uma <xref:System.Activities.Statements.Assign> atividade com um **DisplayName** padrão de atribuir. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **assign** ou na caixa **DisplayName** da grade de propriedades.
 
