@@ -1,6 +1,7 @@
 ---
 title: Associar controles WPF a dados-parte 1
 description: Associar controles WPF a dados. Para criar esses controles associados a dados, arraste os itens da janela fontes de dados para o designer do WPF no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 697b5efb172a09f2dcd5512a6301febd7429411f
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381916"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518603"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 

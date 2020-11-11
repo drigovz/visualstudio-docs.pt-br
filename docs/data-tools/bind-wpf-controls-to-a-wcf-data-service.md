@@ -1,6 +1,7 @@
 ---
 title: Associar controles do WPF a um WCF Data Service
 description: Associar controles WPF a um serviço de dados WCF no Visual Studio. Os controles são associados a registros de cliente que são encapsulados em um serviço de dados WCF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c627a9f09d5400e321bcc8a141c36ec46cad7958
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382202"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518515"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 

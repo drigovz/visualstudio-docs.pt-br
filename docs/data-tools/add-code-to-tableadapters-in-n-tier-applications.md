@@ -1,6 +1,7 @@
 ---
 title: Adicionar código a TableAdapters em aplicativos de n camadas
 description: Adicione código a adaptadores de tabela em aplicativos de n camadas. Crie um arquivo de classe parcial para o TableAdapter e adicione código a ele (em vez de ao DataSetName. DataSet. Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382358"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518694"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Adicionar código a TableAdapters em aplicativos de n camadas
 Você pode estender a funcionalidade de um TableAdapter criando um arquivo de classe parcial para o TableAdapter e adicionando código a ele (em vez de adicionar código ao arquivo *DataSetName. DataSet. designer* ). As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [parcial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).

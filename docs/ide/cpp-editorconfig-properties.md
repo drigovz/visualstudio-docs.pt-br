@@ -1,5 +1,5 @@
 ---
-title: Convenções de formatação C++ EditorConfig
+title: Convenções de formatação de EditorConfig do C++
 titleSuffix: ''
 description: Saiba mais sobre como usar o EditorConfig para formatar o código C++ no Visual Studio.
 ms.date: 9/14/2020
@@ -14,23 +14,23 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: 31a7db73a4487267c2a74fe628d28b577d339aba
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90078834"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518538"
 ---
-# <a name="c-editorconfig-formatting-conventions"></a>Convenções de formatação C++ EditorConfig
+# <a name="c-editorconfig-formatting-conventions"></a>Convenções de formatação de EditorConfig do C++
 
 O formatador C++ do Visual Studio tem um conjunto rico de configurações configuráveis que podem ser aplicadas globalmente. Para definir as configurações de formatação de C++ para um espaço de trabalho específico, use [clangformat](https://clang.llvm.org/docs/ClangFormat.html) ou [EditorConfig](https://editorconfig.org/). Tanto o Visual Studio quanto o Visual Studio Code têm suporte interno a EditorConfig para cada uma das configurações de formatação global do Visual Studio C++, com as configurações de EditorConfig que têm precedência. Isso significa que você pode adicionar arquivos EditorConfig ao seu espaço de trabalho para configurar a formatação do C++ em um nível mais granular e impor o estilo de código consistente para todos que contribuem para o projeto.
 
 ## <a name="c-formatting-conventions"></a>Convenções de formatação de C++
 
-As configurações de EditorConfig de formatação de C++ são prefixadas com `_cpp__` . Aqui está um exemplo de como o arquivo EditorConfig pode ser:
+As configurações de EditorConfig de formatação de C++ são prefixadas com `cpp_` . Aqui está um exemplo de como o arquivo EditorConfig pode ser:
 
 ```ini
-[\*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
+[*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
 
 cpp_indent_case_contents_when_block = true
 cpp_new_line_before_open_brace_namespace = same_line
