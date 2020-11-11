@@ -1,17 +1,17 @@
 ---
 title: Configurando um Repositório Git
-description: Usando o Git e o Subversion no Visual Studio para Mac.
+description: Conectando-se a um repositório git usando Visual Studio para Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 05/13/2020
+ms.date: 11/09/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: bc981530f5493ce1899de1c888e20129c7ae0f8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214700"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493121"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
 
@@ -45,7 +45,7 @@ Para configurar um repositório Git, execute as seguintes etapas:
 
 Se você tiver um projeto existente que ainda _não está_ no controle de versão, use as seguintes etapas para configurá-lo no Git:
 
-1. Selecione o nome da Solução do Painel de Soluções do Visual Studio para Mac.
+1. Selecione o nome da solução na janela da solução em Visual Studio para Mac.
 
 2. Na barra de menus, selecione **controle de versão > publicar no controle de versão** para exibir a caixa de diálogo **clonar repositório** :
 
@@ -69,12 +69,12 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
 6. Clique em **OK** e em **Publicar** na caixa de diálogo de alerta.
 
-7. Na janela **Credenciais do Git**, insira seu nome de usuário do GitHub e a senha. 
+7. Na janela **Credenciais do Git** , insira seu nome de usuário do GitHub e a senha. 
 
 > [!NOTE]
 > Se sua conta tiver a 2FA (autenticação de dois fatores) habilitada, você precisará criar um token de acesso, que será usado no lugar de uma senha. Se você não criou um token de acesso, siga as etapas na documentação de [Token de acesso](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) do Git.
 
-8. Insira o nome de usuário e o token de acesso pessoal e pressione **OK**:
+8. Insira o nome de usuário e o token de acesso pessoal e pressione **OK** :
 
     ![Insira o nome de usuário e a senha para o git](media/version-control-git9-sml.png)
 
@@ -88,7 +88,7 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
 ## <a name="publishing-a-new-project"></a>Publicar um novo projeto
 
-A caixa de diálogo Novo projeto pode ser usada para criar um novo projeto com um repositório git local. Para habilitá-lo, selecione a caixa de seleção **Usar o git para controle de versão**, conforme ilustrado na captura de tela a seguir. Isso inicializará seu repositório e adicionará um arquivo .gitignore opcional:
+A caixa de diálogo Novo projeto pode ser usada para criar um novo projeto com um repositório git local. Para habilitá-lo, selecione a caixa de seleção **Usar o git para controle de versão** , conforme ilustrado na captura de tela a seguir. Isso inicializará seu repositório e adicionará um arquivo .gitignore opcional:
 
 ![Criar novo projeto com suporte ao git](media/version-control-git-publish-new1.png)
 
@@ -101,7 +101,7 @@ Siga as etapas abaixo para efetuar push do seu novo repositório local para um n
 
 2. Na guia Status, escolha **Confirmar** no canto superior esquerdo.
 
-3. Escreva uma mensagem de confirmação, por exemplo "Primeira Confirmação", depois clique em **Confirmar**:
+3. Escreva uma mensagem de confirmação, por exemplo "Primeira Confirmação", depois clique em **Confirmar** :
 
     ![Confirmar alterações inicias para o repositório git](media/version-control-git-publish-new2.png)
 
@@ -109,13 +109,13 @@ Siga as etapas abaixo para efetuar push do seu novo repositório local para um n
 
 5. Vá para a guia **Fontes Remotas** e, em seguida, clique em **Adicionar**.
 
-6. Na janela **Fonte Remota**, adicione os detalhes do seu repositório GitHub criado anteriormente e clique em **OK**:
+6. Na janela **Fonte Remota** , adicione os detalhes do seu repositório GitHub criado anteriormente e clique em **OK** :
 
     ![Configurar fontes remotas para o repositório git](media/version-control-git-publish-new3.png)
 
 7. Feche a janela **Configuração do Repositório Git** e depois, na barra de menus, acesse **Controle de Versão > Efetuar Push das Alterações**.
 
-8. Na janela **Efetuar Push ao Repositório**, clique no botão **Efetuar Push das Alterações**:
+8. Na janela **Efetuar Push ao Repositório** , clique no botão **Efetuar Push das Alterações** :
 
     ![Efetuar push das alterações para o repositório remoto](media/version-control-git-publish-new4.png)
 
@@ -132,7 +132,7 @@ O Visual Studio para Mac agora efetuará push das alterações para o repositór
 
 Provavelmente você precisará trabalhar com um repositório do GitHub que exista apenas remotamente e não em seu computador local. Visual Studio para Mac permite clonar esse repositório rapidamente. Siga as etapas abaixo para cloná-lo em seu computador:
 
-1. Na barra de menus, selecione **controle de versão > repositório de clones**:
+1. Na barra de menus, selecione **controle de versão > repositório de clones** :
 
 2. Isso exibe a guia **conectar-se com a URL** :
 
@@ -155,11 +155,11 @@ Se houver problemas ao inicializar seu projeto com um repositório remoto vazio,
 
 1. Acesse a pasta da solução.
 1. Pressione **Command + Shift + .** para mostrar os arquivos e as pastas ocultos.
-1. Se houver uma pasta **.git**, exclua-a.
-1. Se houver um arquivo **gitignore**, exclua-o.
+1. Se houver uma pasta **.git** , exclua-a.
+1. Se houver um arquivo **gitignore** , exclua-o.
 1. Pressione **Command + Shift + .** para ocultar os arquivos e as pastas.
 1. Abra a solução no VS para Mac.
-1. No Painel de Soluções, selecione o nó da solução.
+1. Na janela da solução, selecione o nó da solução.
 1. Navegue para o menu de Controle de versão e escolha **Publicar no controle de versão**.
 1. Siga as etapas do tutorial acima a partir da etapa 6.
 

@@ -1,18 +1,18 @@
 ---
 title: Introdução ao Azure Functions
-description: Usando o Azure Functions no Visual Studio para Mac.
+description: Introdução ao Azure Functions no Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 586d03e88ba3a2523dde00a6826980830ad54fbc
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402311"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492835"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -27,7 +27,7 @@ Para criar e implantar funções, você também precisa de uma assinatura do Azu
 ## <a name="creating-your-first-azure-functions-project"></a>Criando seu primeiro projeto do Azure Functions
 
 1. Em Visual Studio para Mac, selecione **arquivo > nova solução**.
-2. Na caixa de diálogo Novo Projeto, selecione o modelo do Azure Functions em **Nuvem > Geral** e clique em **Próximo**:
+2. Na caixa de diálogo Novo Projeto, selecione o modelo do Azure Functions em **Nuvem > Geral** e clique em **Próximo** :
 
     ![Caixa de diálogo Novo Projeto mostrando a opção do Azure Functions](media/azure-functions-image1.png)
 
@@ -47,7 +47,7 @@ Para criar e implantar funções, você também precisa de uma assinatura do Azu
 
 4. Depois de definir os parâmetros, escolha o local para o projeto e clique em **Criar**.
 
-O Visual Studio para Mac cria um projeto .NET Standard com uma função padrão incluída. Ela também inclui referências de NuGet a uma variedade de pacotes do **AzureWebJobs**, bem como ao pacote **Newtonsoft.Json**.
+O Visual Studio para Mac cria um projeto .NET Standard com uma função padrão incluída. Ela também inclui referências de NuGet a uma variedade de pacotes do **AzureWebJobs** , bem como ao pacote **Newtonsoft.Json**.
 
 ![Editor do Visual Studio para Mac exibindo uma nova função do Azure do modelo](media/azure-functions-newproj.png)
 
@@ -81,11 +81,11 @@ Com o suporte para Azure Functions no Visual Studio para Mac, você pode testar 
 
 Modelos de função permitem que você crie rapidamente novas funções usando os gatilhos e modelos mais comuns. Para criar outro tipo de função, faça o seguinte:
 
-1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...**:
+1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...** :
 
     ![Ação de contexto para adicionar nova função](media/azure-functions-addnew.png)
 
-2. Na caixa de diálogo **Nova Função do Azure**, selecione a função de que precisa:
+2. Na caixa de diálogo **Nova Função do Azure** , selecione a função de que precisa:
 
     ![Caixa de diálogo Nova Função do Azure](media/azure-functions-image4.png)
 
@@ -95,10 +95,10 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure**:  ![ opção de menu publicar no Azure](media/azure-functions-image5.png)
+1. Clique com o botão direito do mouse no nome do projeto e selecione **publicar > publicar no Azure** :  ![ menu de contexto com publicar > publicar no Azure... opção realçada](media/azure-functions-image5.png)
 2. Se você já conectou conta do Azure ao Visual Studio para Mac, uma lista de serviços de aplicativo disponíveis é exibida. Se você ainda não tiver feito logon, será solicitado que o faça.
-3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
-4. Na caixa de diálogo **Criar novo serviço de aplicativo**, insira as configurações: ![opção de menu Publicar no Azure](media/azure-functions-image7.png)
+3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure** , você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
+4. Na caixa de diálogo **criar novo serviço de aplicativo** , insira suas configurações:  ![ caixa de diálogo novo serviço de aplicativo, com campos para nome do serviço, assinatura, grupo de recursos e configurações do plano de serviço.](media/azure-functions-image7.png)
 
     |Configuração  |Descrição  |
     |---------|---------|
@@ -109,23 +109,23 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 
 5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo runtime do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
 
-    ![Opção de menu Publicar no Azure](media/azure-functions-image8.png)
+    ![Caixa de diálogo novo serviço de aplicativo com prompt para o nome da conta de armazenamento.](media/azure-functions-image8.png)
 
 6. Clique em **Criar** para criar um aplicativo de função e recursos relacionados no Azure com essas configurações e implantar seu código de projeto de função.
 
-7. Uma caixa de diálogo será exibida durante a publicação solicitando a você "Atualizar a versão do Functions no Azure". Clique em **Sim**:
+7. Uma caixa de diálogo será exibida durante a publicação solicitando a você "Atualizar a versão do Functions no Azure". Clique em **Sim** :
 
-    ![Opção de menu Publicar no Azure](media/azure-functions-image12.png)
+    ![Solicitação solicitando "atualizar as configurações do aplicativo do Azure para corresponder à versão das funções locais?" com opções Sim e não.](media/azure-functions-image12.png)
 
 ## <a name="function-app-settings"></a>Configurações do aplicativo de funções
 
 As configurações que você adicionou no local.settings.json também devem ser adicionadas ao aplicativo de funções no Azure. Essas configurações não são carregadas automaticamente quando você publicar o projeto.
 
-Para acessar as configurações do aplicativo, vá para o portal do Azure em [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . Em **Aplicativos do Functions**, selecione **Aplicativos de Funções** e realce o nome da função:
+Para acessar as configurações do aplicativo, vá para o portal do Azure em [https://ms.portal.azure.com/](https://ms.portal.azure.com/) . Em **Aplicativos do Functions** , selecione **Aplicativos de Funções** e realce o nome da função:
 
 ![menu do azure functions](media/azure-functions-image9.png)
 
-Na guia **Visão geral**, selecione **Configurações do aplicativo** em **Recursos configurados**:
+Na guia **Visão geral** , selecione **Configurações do aplicativo** em **Recursos configurados** :
 
 ![Guia Visão geral da função do azure](media/azure-functions-image10.png)
 

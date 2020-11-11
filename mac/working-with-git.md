@@ -3,15 +3,15 @@ title: Trabalhando com Git
 description: Usando o Git no Visual Studio para Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70108021"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493225"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
 
@@ -65,7 +65,7 @@ Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre 
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 
-Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...**:
+Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...** :
 
 ![Exibição Branches](media/version-control-gitBranch2.png)
 
@@ -77,21 +77,21 @@ Para criar um novo branch, selecione o botão **Novo** na caixa de diálogo Conf
 
 Você também pode definir um branch remoto como seu branch de _acompanhamento_. Leia mais sobre o acompanhamento de branches na [Documentação do Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Consulte o branch atual no Painel de Soluções, ao lado do nome do projeto:
+Consulte o Branch atual na janela da solução, ao lado do nome do projeto:
 
- ![Branch atual exibido no painel de soluções](media/version-control-gitBranchName.png)
+ ![Branch atual exibido na janela de solução](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Revisar e confirmar
 
 Para examinar as alterações nos arquivos, use as guias Alterações, Acusar, Registro em log e Mesclar em cada documento, ilustrado anteriormente neste tópico.
 
-Examine todas as alterações no seu projeto navegando para o item de menu **Controle de versão > Examinar solução e confirmar**:
+Examine todas as alterações no seu projeto navegando para o item de menu **Controle de versão > Examinar solução e confirmar** :
 
 ![Exibição Examinar código](media/version-control-gitReviewCommit.png)
 
 Isso permite exibir todas as alterações em cada arquivo de um projeto com a opção de Reverter, Criar um Patch ou Confirmar.
 
-Para confirmar um arquivo para o repositório remoto, pressione **confirmar**, insira uma mensagem de confirmação e confirme com o botão confirmar:
+Para confirmar um arquivo para o repositório remoto, pressione **confirmar** , insira uma mensagem de confirmação e confirme com o botão confirmar:
 
 ![Confirmando um arquivo](media/version-control-gitCommit.png)
 

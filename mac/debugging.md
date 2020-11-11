@@ -7,16 +7,16 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939074"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493251"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Depurando com Visual Studio para Mac
 
-Visual Studio para Mac tem depuradores com suporte para aplicativos .Net Core, .NET Framework, Unity e Xamarin.
+Visual Studio para Mac tem depuradores com suporte para aplicativos .NET Core, .NET Framework, Unity e Xamarin.
 
 O Visual Studio para Mac usa o [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), que foi implementado no runtime Mono, permitindo que o Visual Studio para Mac depure código gerenciado em todas as plataformas.
 
@@ -40,7 +40,7 @@ Para definir um ponto de interrupção no IDE, clique na área de margem do edit
 
 ![Configurando o ponto de interrupção na margem](media/debugging-image0.png)
 
-Você pode exibir todos os pontos de interrupção definidos em seu código indo para o **painel de Pontos de Interrupção**:
+Você pode exibir todos os pontos de interrupção que foram definidos em seu código acessando a  **janela pontos de interrupção** :
 
 ![Lista de pontos de interrupção](media/debugging-image0a.png)
 
@@ -61,15 +61,15 @@ Ferramentas de depuração, como aquela usada para inspecionar os valores de obj
 
 ## <a name="conditional-breakpoints"></a>Pontos de interrupção condicionais
 
-Você também pode definir as regras que regem as circunstâncias nas quais um ponto de interrupção deverá ocorrer, o que é conhecido como adicionar um *ponto de interrupção condicional*.  Para definir um ponto de interrupção condicional, acesse a **janela Propriedades do Ponto de Interrupção**, o que pode ser feito de duas maneiras:
+Você também pode definir as regras que regem as circunstâncias nas quais um ponto de interrupção deverá ocorrer, o que é conhecido como adicionar um *ponto de interrupção condicional*.  Para definir um ponto de interrupção condicional, acesse a **janela Propriedades do Ponto de Interrupção** , o que pode ser feito de duas maneiras:
 
 * Para adicionar um novo ponto de interrupção condicional, clique com o botão direito do mouse na margem do editor, à esquerda do número de linha para o código para o qual deseja definir um ponto de interrupção e selecione o novo ponto de interrupção:
 
  ![Menu de contexto do ponto de interrupção](media/debugging-image4.png)
 
-* Para adicionar uma condição a um ponto de interrupção existente, clique com o botão direito do mouse no ponto de interrupção e selecione **Propriedades de ponto de interrupção** ou, no **Painel de pontos de interrupção**, selecione o botão Editar ponto de interrupção ilustrado abaixo:
+* Para adicionar uma condição a um ponto de interrupção existente, clique com o botão direito do mouse no ponto de interrupção e selecione  **Propriedades do ponto de interrupção** ou, na  **janela pontos de interrupção** , selecione o botão Editar ponto de interrupção ilustrado abaixo:
 
- ![Editar o ponto de interrupção existente no painel de pontos de interrupção](media/debugging-image5.png)
+ ![Editar ponto de interrupção existente na janela pontos de interrupção](media/debugging-image5.png)
 
 Você poderá então inserir a condição na qual você deseja que o ponto de interrupção ocorra:
 
@@ -103,7 +103,7 @@ Os produtos Xamarin são fornecidos com o código-fonte para bibliotecas de clas
 
 Como esse recurso consome mais memória durante a depuração, ele fica desligado por padrão.
 
-Para habilitar esse recurso, navegue até  **Visual Studio para Mac preferências de > > depurador** e verifique se a opção "**etapa em código externo**" está **selecionada**, conforme ilustrado abaixo:
+Para habilitar esse recurso, navegue até  **Visual Studio para Mac preferências de > > depurador** e verifique se a opção " **etapa em código externo** " está **selecionada** , conforme ilustrado abaixo:
 
 ![Opção entrar em código externo](media/debugging-image8.png)
 

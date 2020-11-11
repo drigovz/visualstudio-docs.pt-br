@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247378"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493199"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
 
 Para obter informações sobre acessibilidade de teclado, consulte [como usar a navegação por teclado](~/accessibility-keyboard.md).
 
-Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Você também pode personalizar atalhos para um comando usando o item de menu **Visual Studio para Mac**  >  **preferências** e **Environment**escolhendo  >  **associações de chave** de ambiente na janela **preferências** .
+Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Você também pode personalizar atalhos para um comando usando o item de menu **Visual Studio para Mac**  >  **preferências** e **Environment** escolhendo  >  **associações de chave** de ambiente na janela **preferências** .
 
 > [!TIP]
 > Os atalhos de teclado exibidos neste documento e as preferências de associação de teclas no Visual Studio para Mac são apresentados usando os símbolos mais usados no macOS. Se não tiver certeza de um símbolo, confira a [Tabela de pesquisa de símbolos de teclas do macOS](#macos-key-symbols-lookup).
@@ -32,9 +32,9 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Localizar referências|**⇧⌘R**, **F12**|
-|Ir para a declaração|**⌘D**, **F12**|
-|Próximo erro|**⌥⇧⇟**, **⇧⌘F12**|
+|Localizar referências|**⇧⌘R** , **F12**|
+|Ir para a declaração|**⌘D** , **F12**|
+|Próximo erro|**⌥⇧⇟** , **⇧⌘F12**|
 |Próximo problema no arquivo|**⌥⇟**|
 |Erro anterior|**⌥⇧⇞**|
 |Problema anterior no arquivo|**⌥⇞**|
@@ -43,16 +43,16 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 
 |Comandos|Atalhos do teclado|
 |-|-|
-|Habilitar ou desabilitar ponto de interrupção|**⌥ ⌘/**, **⌘ F9**|
-|Pausar|**⌥⌘P**, **⌥⌘L5**|
+|Habilitar ou desabilitar ponto de interrupção|**⌥ ⌘/** , **⌘ F9**|
+|Pausar|**⌥⌘P** , **⌥⌘L5**|
 |Remover Todos os Pontos de Interrupção|**⇧ ⌘ F9**|
 |Executar até o cursor|**⌘ F10**|
 |Definir próxima instrução|**⇧ ⌘ F10**|
-|Mostrar Próxima Instrução|**⌥\***|
-|Depuração Completa|**⇧⌘I**, **⌘F11**|
-|Depuração Circular|**⇧⌘U**, **⇧⌘F11**|
-|Depuração Parcial|**⇧⌘O**, **F10**|
-|Alternar Ponto de Interrupção|**⌘\\**, **F9**|
+|Mostrar Próxima Instrução|**⌥ \** _|
+|Depuração Completa|_ * ⇧ ⌘ I * *, **⌘ F11**|
+|Depuração Circular|**⇧⌘U** , **⇧⌘F11**|
+|Depuração Parcial|**⇧⌘O** , **F10**|
+|Alternar Ponto de Interrupção|**⌘\\** , **F9**|
 |Exibir pontos de interrupção|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Designer
@@ -74,7 +74,7 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Colar|**⌘ V**|
 |Preferências|**⌘,**|
 |Refaz|**⇧ ⌘ Z**|
-|Renomear|**⌘R**, **F2**|
+|Renomear|**⌘R** , **F2**|
 |Selecionar Tudo|**⌘ A**|
 |Mostrar geração de código|**⌘ I**|
 |Ativar/desativar todas as dobras|**⌥⇧⌘↑**|
@@ -106,7 +106,7 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Novo arquivo|**⌘ N**|
 |Nova solução|**⇧ ⌘ N**|
 |Aberto|**⌘ O**|
-|Impressão|**⌘ P**|
+|Imprimir|**⌘ P**|
 |Encerrar|**⌘ Q**|
 |Reverter|**⌘ U**|
 |Salvar|**⌘ S**|
@@ -126,19 +126,19 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Implementar mensagens do Unity|**⇧ ⌘ M**|
 |Inspecionar|**⌥ ⌘ I**|
 
-## <a name="project"></a>Projeto
+## <a name="project"></a>Project
 
 |Comandos|Atalhos do teclado|
 |-|-|
 |Adicionar arquivos|**⌥ ⌘ A**|
-|Build|**⌘K**, **⇧F6**|
-|Compilar tudo|**⌘B**, **F6**|
+|Build|**⌘K** , **⇧F6**|
+|Compilar tudo|**⌘B** , **F6**|
 |Clean|**⇧ ⌘ K**|
 |Recompilar|**⌃ ⌘ K**|
 |Recompilar tudo|**⌃ ⌘ B**|
-|Iniciar Depuração|**⌘ ⏎**, **F5**|
-|Iniciar sem depuração|**⌥ ⌘ ⏎**, **⌃ F5**|
-|Stop|**⇧⌘⏎**, **⇧F5**|
+|Iniciar Depuração|**⌘ ⏎** , **F5**|
+|Iniciar sem depuração|**⌥ ⌘ ⏎** , **⌃ F5**|
+|Parar|**⇧⌘⏎** , **⇧F5**|
 
 ## <a name="refactoring"></a>Refatoração
 
@@ -153,16 +153,16 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |-|-|
 |Comando|**⇧ ⌘ P**|
 |Localizar em Arquivos|**⇧ ⌘ F**|
-|Localizar Próximo|**⌘G**, **F3**|
-|Localizar próxima seleção igual|**⌘E**, **⌘F3**|
-|Localizar Anterior|**⇧ ⌘ G**, **⇧ F3**|
+|Localizar Próximo|**⌘G** , **F3**|
+|Localizar próxima seleção igual|**⌘E** , **⌘F3**|
+|Localizar Anterior|**⇧ ⌘ G** , **⇧ F3**|
 |Localizar seleção igual anterior|**⇧ ⌘ F3**|
 |Localizar|**⌘ F**|
 |Ir para arquivo|**⇧ ⌘ D**|
 |Ir para linha|**⌘ L**|
 |Ir para tipo|**⇧ ⌘ T**|
 |Navegar para|**⌘.**|
-|Substituir em Arquivos|**⌥ ⇧ ⌘ F**|
+|Substituir nos Arquivos|**⌥ ⇧ ⌘ F**|
 |Substitua|**⌥ ⌘ F**|
 
 ## <a name="text-editor"></a>Editor de Texto
@@ -180,10 +180,10 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Abreviação dinâmica|**⌃/**|
 |Expandir seleção|**⌥⇧↓**|
 |Expandir seleção|**⌥⇧↑**|
-|Expandir a seleção para o final do documento|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
-|Expandir a seleção para o início do documento|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
-|Expandir a seleção para o final da linha|**⇧ ↘**, **⇧ ⌘ →**|
-|Expandir a seleção para o início da linha|**⇧ ↖**, **⇧ ⌘ ←**|
+|Expandir a seleção para o final do documento|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
+|Expandir a seleção para o início do documento|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
+|Expandir a seleção para o final da linha|**⇧ ↘** , **⇧ ⌘ →**|
+|Expandir a seleção para o início da linha|**⇧ ↖** , **⇧ ⌘ ←**|
 |Expandir a seleção para a próxima linha|**⇧↓**|
 |Expandir a seleção para a próxima palavra|**⌥ ⇧ →**|
 |Expandir a seleção para a página abaixo|**⇧⇟**|
@@ -196,9 +196,9 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Ir um caractere à esquerda|**⌃ B**|
 |Ir um caractere à direita|**⌃ F**|
 |Ir para o início do documento|**⌘↑**|
-|Ir para o início da linha|**⌘←**, **⌃A**|
+|Ir para o início da linha|**⌘←** , **⌃A**|
 |Ir para o fim do documento|**⌘↓**|
-|Ir para o fim da linha|**⌘ →**, **⌃ E**|
+|Ir para o fim da linha|**⌘ →** , **⌃ E**|
 |Ir para chave correspondente|**⇧⌘\\**|
 |Ir para a próxima linha|**⌃ N**|
 |Ir para a próxima palavra|**⌥ →**|
@@ -216,7 +216,7 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Transpor caracteres|**⌃ T**|
 |Encapsular com &lt;div&gt;|**⌥ ⇧ W**|
 
-## <a name="view"></a>Visualizar
+## <a name="view"></a>Exibir
 
 |Comandos|Atalhos do teclado|
 |-|-|
@@ -229,11 +229,11 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Avançar navegação|**⌃ ⌘ →**|
 |Tamanho normal|**⌘ 0**|
 |Uma coluna de editor|**⌥ ⌘ 1**|
-|Mostrar próximo|**⌥⌘↓**, **F8**|
-|Mostrar anterior|**⌥ ⌘ ↑**, **⇧ F8**|
+|Mostrar próximo|**⌥⌘↓** , **F8**|
+|Mostrar anterior|**⌥ ⌘ ↑** , **⇧ F8**|
 |Duas colunas de editor|**⌥ ⌘ 2**|
-|Ampliar|**⌘ +**, **⌘ =**|
-|Reduzir|**⌘-**, **⌘ _**|
+|Ampliar|**⌘ +** , **⌘ =**|
+|Reduzir|**⌘-** , **⌘ _**|
 
 ## <a name="window"></a>Janela
 
@@ -251,29 +251,29 @@ Nós compilamos os atalhos de teclado mais usados e mais úteis em um arquivo PD
 |Ocultar outros|**⌥ ⌘ H**|
 |Ocultar o Visual Studio|**⌘ H**|
 |Minimizar|**⌘ M**|
-|Próximo documento|**⌘}**, **⌘ F6**|
-|Documento anterior|**⌘{**, **⇧⌘F6**|
+|Próximo documento|**⌘}** , **⌘ F6**|
+|Documento anterior|**⌘{** , **⇧⌘F6**|
 |Alternar para o próximo documento|**⌃⇥**|
-|Alternar para o próximo painel|**⌃⌥⇥**|
+|Alternar para a próxima janela de ferramentas|**⌃⌥⇥**|
 |Alternar para o documento anterior|**⌃⇧⇥**|
-|Alternar para o painel anterior|**⌃⌥⇧⇥**|
+|Alternar para a janela de ferramentas anterior|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Pesquisa de símbolos de teclas do macOS
 
 |Símbolo|Chave|
 |-|-|
-|⌘|**Comando** (**cmd**)|
-|⌥|**Opção** (**alt**)|
-|⇧|**Alternância**|
-|⌃|**Controle** (**ctrl**)
-|⇞|**Página acima** (**Pg Up**)|
-|⇟|**Página abaixo** (**Pg Dn**)|
-|⌫|**Excluir** (**Backspace**)|
+|⌘|**Comando** ( **cmd** )|
+|⌥|**Opção** ( **alt** )|
+|⇧|**Shift**|
+|⌃|**Controle** ( **ctrl** )
+|⇞|**Página acima** ( **Pg Up** )|
+|⇟|**Página abaixo** ( **Pg Dn** )|
+|⌫|**Excluir** ( **Backspace** )|
 |⌦|**Excluir para frente**|
-|⏎|**Exibir**|
+|⏎|**Retorno**|
 |←→↑↓|**Teclas de direção**|
 |↖|**Início**|
-|↘|**Completo**|
+|↘|**End**|
 |␣|**Barra de espaço**|
 |⇥|**Guia**|
 

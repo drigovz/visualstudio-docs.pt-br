@@ -1,18 +1,19 @@
 ---
 title: Ferramentas de teste de Visual Studio para Mac
-ms.date: 08/03/2020
+description: Criando e executando testes usando Visual Studio para Mac.
+ms.date: 11/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio for Mac]
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3956c3158fd4ec1ad32b76882ac3f9d4cf1ea9bf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91580955"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493381"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Ferramentas de teste no Visual Studio para Mac
 
@@ -27,7 +28,7 @@ Para começar a usar o teste, você pode criar um novo projeto de teste em sua s
 > Para obter mais informações sobre o teste de unidade de seus aplicativos .NET Core e a seleção de estruturas de teste de unidade, consulte os [testes de unidade no .NET Core e .net Standard](/dotnet/core/testing/?pivots=xunit) documentação.
 
 ## <a name="running-tests"></a>Executando testes
-A janela de **testes de unidade** é usada para executar testes de unidade e é aberta usando o menu **exibir > painéis > testes de unidade** . Os testes de unidade em sua solução são automaticamente descobertos e mostrados nesta janela, onde você pode executar todos os testes ou um conjunto de testes que você selecionou.
+A janela de **testes de unidade** é usada para executar testes de unidade e é aberta usando o menu **Exibir > testes** . Os testes de unidade em sua solução são automaticamente descobertos e mostrados nesta janela, onde você pode executar todos os testes ou um conjunto de testes que você selecionou.
 
 ![Janela de teste mostrando uma lista de testes de unidade e uma barra de ferramentas para executar ou interromper testes.](media/test-window.PNG)
 

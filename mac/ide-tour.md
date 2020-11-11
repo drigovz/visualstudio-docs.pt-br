@@ -3,15 +3,15 @@ title: Tour do Visual Studio para Mac
 description: O Visual Studio para Mac fornece um ambiente de desenvolvimento integrado para compilar aplicativos .NET no macOS, incluindo sites ASP.NET Core e projetos Xamarin para iOS, Android, Mac e Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584003"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493264"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
 
@@ -58,11 +58,11 @@ A imagem abaixo mostra o Visual Studio para Mac com um aplicativo carregado:
 
 As seções a seguir fornecem uma visão geral das principais áreas no Visual Studio para Mac.
 
-## <a name="solution-pad"></a>Painel de Soluções
+## <a name="solution-window"></a>Janela de solução
 
-O Painel de Soluções organiza os projetos em uma solução:
+A janela da solução organiza os projetos em uma solução:
 
-![Projetos organizados no Painel de Soluções](media/ide-tour-image18.png)
+![Projetos organizados na janela da solução](media/ide-tour-image18.png)
 
 É aqui que os arquivos para o código-fonte, recursos, interface do usuário e dependências são organizados em Projetos específicos da plataforma.
 
@@ -72,9 +72,9 @@ Para saber mais sobre como usar os Projetos e Soluções no Visual Studio para M
 
 As referências de assembly para cada projeto estão disponíveis na pasta Referências:
 
-![Pasta Referências no painel de soluções](media/ide-tour-image19.png)
+![Pasta de referências na janela da solução](media/ide-tour-image19.png)
 
-As referências adicionais são adicionadas usando a caixa de diálogo **Editar Referências**, que é exibida clicando duas vezes na pasta Referências ou selecionando **Editar Referências** em suas ações de menu de contexto:
+As referências adicionais são adicionadas usando a caixa de diálogo **Editar Referências** , que é exibida clicando duas vezes na pasta Referências ou selecionando **Editar Referências** em suas ações de menu de contexto:
 
 ![Caixa de diálogo Editar Referências](media/ide-tour-image20.png)
 
@@ -86,7 +86,7 @@ Todas as dependências externas usadas em seu aplicativo são armazenadas na pas
 
 NuGet é o gerenciador de pacote mais popular para desenvolvimento .NET. Com a compatibilidade do NuGet no Visual Studio, você pode facilmente pesquisar e adicionar pacotes ao seu projeto para o aplicativo.
 
-Para adicionar uma dependência ao seu aplicativo, clique com botão direito do mouse sobre a pasta Dependências / Pacotes e selecione **Adicionar Pacotes**:
+Para adicionar uma dependência ao seu aplicativo, clique com botão direito do mouse sobre a pasta Dependências / Pacotes e selecione **Adicionar Pacotes** :
 
 ![Adicionar um pacote NuGet](media/ide-tour-image21.png)
 
@@ -135,9 +135,9 @@ O Visual Studio para Mac integra-se aos sistemas de controle do código-fonte Gi
 
 ![Nome do branch para indicar o projeto com controle do código-fonte](media/ide-tour-image22.png)
 
-Os arquivos com alterações não confirmadas têm uma anotação em seus ícones no Painel de Soluções, como mostrado na imagem abaixo:
+Os arquivos com alterações não confirmadas têm uma anotação em seus ícones na janela da solução, conforme ilustrado na imagem a seguir:
 
-![Arquivos não confirmados no painel de soluções](media/ide-tour-image23.png)
+![Arquivos não confirmados na janela da solução](media/ide-tour-image23.png)
 
 Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](./version-control.md).
 

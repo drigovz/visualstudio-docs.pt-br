@@ -3,16 +3,16 @@ title: Introdução à criação de jogos com o Unity
 description: Introdução ao Unity e ao Visual Studio para Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950657"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493576"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introdução à criação de jogos com o Unity no Visual Studio para Mac
 
@@ -74,7 +74,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![ação de contexto Revelar no Localizador](media/unity-image8.png)
 
-12. Os projetos contêm as pastas **Ativos**, **Biblioteca**, **ProjectSettings** e **Temp** como você pode ver. No entanto, a única que é exibida na interface é a pasta **Ativos**. A pasta **Biblioteca** é o cache local para os ativos importados; ela mantém todos os metadados para ativos. A pasta **ProjectSettings** armazena as configurações que podem ser definidas. A pasta **Temp** é usada para arquivos temporários do Mono e do Unity durante o processo de build. Também há um arquivo de solução que você pode abrir no Visual Studio para Mac (**UnityLab.sln**, aqui).
+12. Os projetos contêm as pastas **Ativos** , **Biblioteca** , **ProjectSettings** e **Temp** como você pode ver. No entanto, a única que é exibida na interface é a pasta **Ativos**. A pasta **Biblioteca** é o cache local para os ativos importados; ela mantém todos os metadados para ativos. A pasta **ProjectSettings** armazena as configurações que podem ser definidas. A pasta **Temp** é usada para arquivos temporários do Mono e do Unity durante o processo de build. Também há um arquivo de solução que você pode abrir no Visual Studio para Mac ( **UnityLab.sln** , aqui).
 
     ![ativos no localizador](media/unity-image9.png)
 
@@ -92,7 +92,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![propriedades do objeto de jogo](media/unity-image12.png)
 
-17. Renomeie o objeto **Cube**, que tem o nome **"Cube"** por padrão, como **"Enemy"**. Lembre-se de pressionar **Enter** para salvar a alteração. Esse será o cubo do inimigo em nosso jogo simples.
+17. Renomeie o objeto **Cube** , que tem o nome **"Cube"** por padrão, como **"Enemy"**. Lembre-se de pressionar **Enter** para salvar a alteração. Esse será o cubo do inimigo em nosso jogo simples.
 
     ![propriedade de renomeação do objeto Cube](media/unity-image13.png)
 
@@ -104,7 +104,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![como marcar o objeto de jogador](media/unity-image15.png)
 
-20. Na exibição **Cena**, mova o objeto de jogador para longe do objeto de inimigo ao longo do eixo Z usando o mouse. Você pode mover ao longo do eixo Z selecionando e arrastando o cubo pelo painel **vermelho** em direção à linha **azul**. Como o cubo reside no espaço 3D, mas pode apenas ser arrastado em 2D por vez, o eixo no qual você arrasta é especialmente importante.
+20. Na exibição **Cena** , mova o objeto de jogador para longe do objeto de inimigo ao longo do eixo Z usando o mouse. Você pode mover ao longo do eixo Z selecionando e arrastando o cubo pelo painel **vermelho** em direção à linha **azul**. Como o cubo reside no espaço 3D, mas pode apenas ser arrastado em 2D por vez, o eixo no qual você arrasta é especialmente importante.
 
     ![exibição de cena mostrando o cubo](media/unity-image16.png)
 
@@ -112,7 +112,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![como mover um cubo ao longo do eixo](media/unity-image17.png)
 
-22. Agora você pode adicionar um código para impulsionar a lógica do inimigo, de modo que ele persiga o jogador. Clique com o botão direito do mouse na pasta **Ativos** no painel **Projeto** e selecione **Criar > Script C#**.
+22. Agora você pode adicionar um código para impulsionar a lógica do inimigo, de modo que ele persiga o jogador. Clique com o botão direito do mouse na pasta **ativos** na janela do **projeto** e selecione **criar > script C#**.
 
     ![Ação de contexto do script C#](media/unity-image18.png)
 
@@ -130,7 +130,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 1. A melhor maneira de editar o código C# é usar o Visual Studio para Mac. Você pode configurar o Unity para usar o Visual Studio para Mac como seu manipulador padrão. Selecione **Unity > Preferências**.
 
-2. Selecione a guia **Ferramentas externas** . Na lista suspensa **Editor de scripts externos** , selecione **procurar** e selecione **aplicativos/Visual Studio. aplicativo**. Como alternativa, se já houver uma opção **Visual Studio**, bastará selecioná-la.
+2. Selecione a guia **Ferramentas externas** . Na lista suspensa **Editor de scripts externos** , selecione **procurar** e selecione **aplicativos/Visual Studio. aplicativo**. Como alternativa, se já houver uma opção **Visual Studio** , bastará selecioná-la.
 
     ![guia Ferramentas Externas em Preferências](media/unity-image21.png)
 
@@ -142,9 +142,9 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![Ativo de inimigo selecionado no Unity](media/unity-image23.png)
 
-5. A solução do Visual Studio é simples. Ela contém uma pasta **Ativos** (a mesma do **Localizador**) e o script **EnemyAI.cs** criado anteriormente. Em projetos mais sofisticados, a hierarquia provavelmente terá uma aparência diferente do que você vê no Unity.
+5. A solução do Visual Studio é simples. Ela contém uma pasta **Ativos** (a mesma do **Localizador** ) e o script **EnemyAI.cs** criado anteriormente. Em projetos mais sofisticados, a hierarquia provavelmente terá uma aparência diferente do que você vê no Unity.
 
-    ![Painel de Soluções do Visual Studio para Mac](media/unity-image24.png)
+    ![Janela de solução no Visual Studio para Mac](media/unity-image24.png)
 
 6. **EnemyAI.cs** é aberto no editor. O script inicial contém apenas os stubs para os métodos **Start** e **Update**.
 
@@ -186,7 +186,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
     }
     ```
 
-8. Dê uma olhada rápida no comportamento simples do inimigo que é definido aqui. No método **Start**, obtemos uma referência ao objeto de jogador (pela marcação), bem como sua **transformação**. No método **Update**, que é chamado a cada quadro, o inimigo será movido para perto do objeto de jogador. As palavras-chave e os nomes usam a codificação de cores para facilitar o entendimento da base de código no Visual Studio para Mac.
+8. Dê uma olhada rápida no comportamento simples do inimigo que é definido aqui. No método **Start** , obtemos uma referência ao objeto de jogador (pela marcação), bem como sua **transformação**. No método **Update** , que é chamado a cada quadro, o inimigo será movido para perto do objeto de jogador. As palavras-chave e os nomes usam a codificação de cores para facilitar o entendimento da base de código no Visual Studio para Mac.
 
 9. Salve as alterações no script do inimigo no **Visual Studio para Mac**.
 
@@ -194,11 +194,11 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 1. Defina um ponto de interrupção na primeira linha de código no método **Start**. Clique na margem do editor na linha de destino ou coloque o cursor na linha e pressione **F9**.
 
-    ![como definir o ponto de interrupção no Visual Studio para Mac](media/unity-image25.png)
+    ![definindo o ponto de interrupção no Visual Studio para Mac](media/unity-image25.png)
 
 2. Clique no botão **Iniciar Depuração** ou pressione **F5**. Isso criará o projeto e o anexará ao Unity para depuração.
 
-    ![botão Iniciar no Visual Studio para Mac](media/unity-image26.png)
+    ![botão iniciar no Visual Studio para Mac](media/unity-image26.png)
 
 3. Retorne ao **Unity** e clique no botão **Executar** para iniciar o jogo.
 
@@ -206,21 +206,21 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 4. O ponto de interrupção deve ser atingido e agora você pode usar as ferramentas de depuração do Visual Studio para Mac.
 
-    ![ponto de interrupção atingido no Visual Studio para Mac](media/unity-image28.png)
+    ![impacto de ponto de interrupção no Visual Studio para Mac](media/unity-image28.png)
 
-5. No painel **Locais**, localize o ponteiro **this**, que referencia um objeto **EnemyAI**. Expanda a referência e veja que você pode procurar os membros associados, como **Speed**.
+5. Na janela **locais** , **localize o ponteiro** , que faz referência a um objeto **EnemyAI** . Expanda a referência e veja que você pode procurar os membros associados, como **Speed**.
 
-    ![painel de depuração de locais no Visual Studio para Mac](media/unity-image29.png)
+    ![A janela locais no Visual Studio para Mac](media/unity-image29.png)
 
 6. Remova o ponto de interrupção do método **Start** da mesma forma que ele foi adicionado – clicando na margem dele ou selecionando a linha – e pressione **F9**.
 
-    ![ponto de interrupção atingido no Visual Studio para Mac](media/unity-image30.png)
+    ![Removendo um ponto de interrupção no Visual Studio para Mac clicando nele](media/unity-image30.png)
 
 7. Pressione **F10** para depurar de forma parcial a primeira linha de código que localiza o objeto de jogo **Player** usando uma marcação como parâmetro.
 
 8. Passe o mouse sobre a variável **player** dentro da janela do editor de código para exibir seus membros associados. Você ainda pode expandir a sobreposição para exibir as propriedades filho.
 
-    ![janela de depuração no editor do Visual Studio para Mac](media/unity-image31.png)
+    ![janela de depuração no editor de Visual Studio para Mac](media/unity-image31.png)
 
 9. Pressione **F5** ou o botão **Executar** para continuar a execução. Retorne ao Unity para ver o cubo do inimigo repetidamente se aproximar do cubo do jogador. Talvez você precise ajustar a câmera se ele não estiver visível.
 
@@ -228,7 +228,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 10. Alterne novamente para o **Visual Studio para Mac** e defina um ponto de interrupção na primeira linha do método **Update**. Ele deve ser atingido imediatamente.
 
-    ![como definir um ponto de interrupção no Visual Studio para Mac](media/unity-image33.png)
+    ![Removendo um ponto de interrupção no Visual Studio para Mac](media/unity-image33.png)
 
 11. Suponha que a velocidade seja muito rápida e desejemos testar o impacto da alteração sem reiniciar o aplicativo. Localize a variável **Speed** na janela **Automáticos** ou **Locais** e, em seguida, altere-a para **"10"** e pressione **Enter**.
 
@@ -258,21 +258,21 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![a janela do navegador é aberta na documentação](media/unity-image39.png)
 
-3. O Visual Studio para Mac também fornece alguns auxiliares para criar rapidamente classes de comportamento do Unity. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Ativos** e selecione **Adicionar > Novo MonoBehaviour**.
+3. O Visual Studio para Mac também fornece alguns auxiliares para criar rapidamente classes de comportamento do Unity. No **Gerenciador de Soluções** , clique com o botão direito do mouse em **Ativos** e selecione **Adicionar > Novo MonoBehaviour**.
 
     ![ação de contexto do novo monobehaviour](media/unity-image40.png)
 
-4. A classe recém-criada fornece stubs para os métodos **Start** e **Update**. Após a chave de fechamento do método **Update**, comece a digitar **"onmouseup"**. Conforme você digita, observe que o IntelliSense do Visual Studio rapidamente converge para o método que você pretende implementar. Selecione-o na lista de preenchimento automático fornecida. Ele preencherá um stub de método para você, incluindo todos os parâmetros.
+4. A classe recém-criada fornece stubs para os métodos **Start** e **Update**. Após a chave de fechamento do método **Update** , comece a digitar **"onmouseup"**. Conforme você digita, observe que o IntelliSense do Visual Studio rapidamente converge para o método que você pretende implementar. Selecione-o na lista de preenchimento automático fornecida. Ele preencherá um stub de método para você, incluindo todos os parâmetros.
 
     ![IntelliSense no Visual Studio para Mac](media/unity-image41.png)
 
-5. Dentro do método **OnMouseUp**, digite **"base".** para ver todos os métodos disponíveis a serem chamados. Explore também as diferentes sobrecargas de cada função usando a opção de paginação no canto superior direito do submenu do IntelliSense.
+5. Dentro do método **OnMouseUp** , digite **"base".** para ver todos os métodos disponíveis a serem chamados. Explore também as diferentes sobrecargas de cada função usando a opção de paginação no canto superior direito do submenu do IntelliSense.
 
-    ![como explorar sobrecargas no Visual Studio para Mac](media/unity-image42.png)
+    ![explorando sobrecargas no Visual Studio para Mac](media/unity-image42.png)
 
-6. O Visual Studio para Mac também permite que você defina com facilidade os novos sombreadores. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Ativos** e selecione **Adicionar > Novo Sombreador**.
+6. O Visual Studio para Mac também permite que você defina com facilidade os novos sombreadores. No **Gerenciador de Soluções** , clique com o botão direito do mouse em **Ativos** e selecione **Adicionar > Novo Sombreador**.
 
-    ![nova ação de sombreador no Visual Studio para Mac](media/unity-image43.png)
+    ![Nova ação de sombreador no Visual Studio para Mac](media/unity-image43.png)
 
 7. O formato de arquivo do sombreador obtém um tratamento completo de cores e fontes para torná-lo mais fácil de ler e entender.
 

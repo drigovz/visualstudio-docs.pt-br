@@ -1,20 +1,20 @@
 ---
 title: Snippets de código
 description: Como usar snippets de código para programar de forma eficiente no Visual Studio para Mac
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787695"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493446"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
-Snippets de código, geralmente chamados de _modelos de código_, são úteis para obter uma programação eficiente, já que permitem a inserção e a edição de blocos de código previamente escritos. O uso de snippets de código pode ser conveniente para adicionar rapidamente padrões comuns ou até mesmo para conhecer novos padrões quando, como desenvolvedor, você não tiver certeza sobre a sintaxe. Há modelos fornecidos para C#, F#, HTML, XML, Python e Razor.
+Snippets de código, geralmente chamados de _modelos de código_ , são úteis para obter uma programação eficiente, já que permitem a inserção e a edição de blocos de código previamente escritos. O uso de snippets de código pode ser conveniente para adicionar rapidamente padrões comuns ou até mesmo para conhecer novos padrões quando, como desenvolvedor, você não tiver certeza sobre a sintaxe. Há modelos fornecidos para C#, F#, HTML, XML, Python e Razor.
 
 Esta seção explica como criar, inserir e usar snippets no código.
 
@@ -22,21 +22,21 @@ Esta seção explica como criar, inserir e usar snippets no código.
 
 Há algumas maneiras de adicionar snippets de código, algumas das quais são descritas abaixo:
 
-- **Guia Expansão** &ndash; Comece digitando o nome do modelo, selecione-o na lista e pressione **Tab**, **Tab** para adicioná-lo:
+- **Guia Expansão** &ndash; Comece digitando o nome do modelo, selecione-o na lista e pressione **Tab** , **Tab** para adicioná-lo:
 
   ![Guia Expansão no código](media/source-editor-image13.png)
 
-- **Caixa de ferramentas** &ndash; Use o painel da caixa de ferramentas para exibir uma lista de todos os snippets de código. Arraste qualquer modelo da caixa de ferramentas para a posição correta no código-fonte:
+- **Caixa de ferramentas** &ndash; Use a janela caixa de ferramentas para exibir uma lista de todos os trechos de código. Arraste qualquer modelo da caixa de ferramentas para a posição correta no código-fonte:
 
   [![Trechos de código na caixa de ferramentas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando Inserir Modelos** &ndash; Atualmente, não há nenhuma associação de teclas definida para a inserção de modelos. Para criar uma, navegue até **Visual Studio > Preferências > Associações de teclas** e pesquise `template`. Isso permite adicionar a associação de teclas desejada no campo Editar associação e clicar em **Aplicar**:
+- **Comando Inserir Modelos** &ndash; Atualmente, não há nenhuma associação de teclas definida para a inserção de modelos. Para criar uma, navegue até **Visual Studio > Preferências > Associações de teclas** e pesquise `template`. Isso permite adicionar a associação de teclas desejada no campo Editar associação e clicar em **Aplicar** :
 
   ![Comando Inserir Modelo](media/source-editor-image15.png)
 
 ## <a name="creating-a-new-template"></a>Criando um novo modelo
 
-Embora haja muitos modelos existentes em uma variedade de linguagens que você pode usar e editar, novos modelos também podem ser adicionados navegando para **Visual Studio &gt; Preferências &gt; Editor de texto &gt; Snippets de código**:
+Embora haja muitos modelos existentes em uma variedade de linguagens que você pode usar e editar, novos modelos também podem ser adicionados navegando para **Visual Studio &gt; Preferências &gt; Editor de texto &gt; Snippets de código** :
 
 ![Inserir novo modelo](media/source-editor-image12.png)
 

@@ -1,18 +1,18 @@
 ---
 title: Definir vários projetos de inicialização
 description: Este artigo descreve como definir vários projetos para inicialização na execução ou na depuração.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950109"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493563"
 ---
 # <a name="set-multiple-startup-projects"></a>Definir vários projetos de inicialização
 
@@ -20,9 +20,9 @@ O Visual Studio para Mac permite especificar que mais de um projeto deve ser ini
 
 ## <a name="to-set-multiple-startup-projects"></a>Para definir vários projetos de inicialização
 
-1. No Painel de Soluções, selecione a solução (o nó superior).
+1. Na janela da solução, selecione a solução (o nó superior).
 
-2. Clique com o botão direito do mouse no nó da solução e selecione **Definir Projetos de Inicialização**:
+2. Clique com o botão direito do mouse no nó da solução e selecione **Definir Projetos de Inicialização** :
 
    ![Selecionar Definir Projetos de Inicialização](media/startup-proj-ctx-menu.png)
 
@@ -42,7 +42,7 @@ O Visual Studio para Mac permite especificar que mais de um projeto deve ser ini
 
    ![Solução com vários projetos configurados para começar a depuração ou execução](media/startup-project-configured.png)
 
-   Você pode ver que os dois projetos estão configurados para iniciar, pois ambos os projetos estão em **negrito** no Painel de Soluções. Na barra de ferramentas, a nova configuração de execução é definida como a Configuração de Execução da Solução atual.
+   Agora, os dois projetos são configurados para iniciar, que é representado por ambos os projetos que aparecem em **negrito** na janela da solução. Na barra de ferramentas, a nova configuração de execução é definida como a Configuração de Execução da Solução atual.
 
 ## <a name="next-steps"></a>Próximas etapas
 

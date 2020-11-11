@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.topic: how-to
-ms.openlocfilehash: adeab06341c0691bdb902a3bb8a813ac38d786f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7269b4272fb8ed2c73dbe9f57e94da071dc623e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938522"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493056"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Criando e editando um arquivo EditorConfig personalizado
 
@@ -41,7 +41,7 @@ O EditorConfig também dá suporte a [convenções de codificação](/visualstud
 
 1. Abra seu projeto no Visual Studio para Mac. Selecione o nó de solução ou do projeto ao qual você deseja adicionar o arquivo EditorConfig. Adicionar o arquivo ao diretório da solução aplica as configurações de .editorconfig a todos os projetos na solução.
 
-2. Clique com o botão direito do mouse no nó e selecione **Adicionar > Novo Arquivo** para abrir a caixa de diálogo **Novo Arquivo**:
+2. Clique com o botão direito do mouse no nó e selecione **Adicionar > Novo Arquivo** para abrir a caixa de diálogo **Novo Arquivo** :
 
     ![Itens de menu de conteúdo](media/editorconfig-image0.png)
 
@@ -49,9 +49,9 @@ O EditorConfig também dá suporte a [convenções de codificação](/visualstud
 
     ![Caixa de diálogo Novo Arquivo](media/editorconfig-image1.png)
 
-    Adicionar o item no nível da solução automaticamente cria e aninha-o em uma pasta **Itens de Solução**:
+    Adicionar o item no nível da solução automaticamente cria e aninha-o em uma pasta **Itens de Solução** :
 
-    ![O item de solução é exibido no painel de soluções](media/editorconfig-image1a.png)
+    ![Item de solução exibido na janela de solução](media/editorconfig-image1a.png)
 
 4. Edite o arquivo. Por exemplo:
 
@@ -86,11 +86,11 @@ Talvez você queira reutilizar um arquivo `.editorconfig` existente em seu proje
 
 3. Arquivos começando com `.` (tais como `.editorconfig`) são arquivos ocultos no macOS, então pressione **Command + Shift + .** para tornar o arquivo `.editorconfig` visível.
 
-4. Selecione o `.editorconfig` arquivo e clique em **abrir**:
+4. Selecione o `.editorconfig` arquivo e clique em **abrir** :
 
     ![janela adicionando um novo campo](media/editorconfig-image3b.png)
 
-5. Quando vir a seguinte caixa de diálogo, selecione a opção **Copiar o arquivo para o diretório** e selecione **OK**:
+5. Quando vir a seguinte caixa de diálogo, selecione a opção **Copiar o arquivo para o diretório** e selecione **OK** :
 
     ![Opções da caixa de diálogo Adicionar arquivo à pasta](media/editorconfig-image3.png)
 
@@ -123,15 +123,15 @@ csharp_new_line_before_open_brace = none
 
 Definir `root` como `true` sinalizará este arquivo como o arquivo principal da base de código e arquivos `.editorconfig` superiores no projeto serão ignorados, conforme explicado na seção [Substituir configurações de EditorConfig](#override-editorconfig-settings).
 
-Cada seção é indicada por chaves (**[ ]**) e especifica informações sobre os tipos de arquivos a que as propriedades seguintes devem se referir.
+Cada seção é indicada por chaves ( **[ ]** ) e especifica informações sobre os tipos de arquivos a que as propriedades seguintes devem se referir.
 
 No exemplo acima, algumas configurações são aplicadas a todos os arquivos no projeto e outras são adicionadas apenas a arquivos C#. As capturas de tela abaixo mostram antes e depois de as configurações `.editorconfig` serem aplicadas:
 
-**Antes**de:
+**Antes** de:
 
 ![Antes das configurações de editorconfig serem aplicadas](media/editorconfig-image4.png)
 
-**Após**:
+**Após** :
 
 ![após as configurações de editorconfig serem aplicadas](media/editorconfig-image5.png)
 

@@ -1,6 +1,7 @@
 ---
 title: Publicar em uma pasta
-ms.date: 04/02/2019
+description: Como publicar um aplicativo Web em uma pasta usando Visual Studio para Mac.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
@@ -9,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583938"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493407"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar em uma pasta usando Visual Studio para Mac
 
@@ -23,13 +24,13 @@ Você pode usar a ferramenta de publicação para publicar o console do .NET Cor
 ## <a name="prerequisites"></a>Pré-requisitos
 
 - O [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado com o .NET Core está habilitado.
-- Um console do .NET Core ou ASP.NET Core projeto. Se você ainda não tiver um projeto, [crie um](./create-new-projects.md?view=vsmac-2019).
+- Um console do .NET Core ou ASP.NET Core projeto. Se você ainda não tiver um projeto, [crie um](./create-new-projects.md).
 
 ## <a name="publish-to-folder"></a>Publicar na Pasta
 
 Usando Visual Studio para Mac você pode publicar seus projetos do .NET Core em uma pasta usando a ferramenta de publicação. Depois de publicar em uma pasta, você pode transferir os arquivos para um ambiente diferente. Para publicar uma pasta, siga estas etapas.
 
- 1. No Painel de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**.
+ 1. Na janela da solução, clique com o botão direito do mouse no projeto e escolha **publicar**.
 
     ![Menu de contexto Publicar](media/publish-context-menu.png)
 
@@ -41,7 +42,7 @@ Usando Visual Studio para Mac você pode publicar seus projetos do .NET Core em 
 
  4. A caixa de diálogo **Publicar na pasta** é exibida. Nessa caixa de diálogo, você pode personalizar a pasta em que o projeto será publicado. Você pode usar o botão **Procurar** para fazer isso ou colar em um caminho.
 
- 5. Depois que você clicar em **Publicar**, acontecerão algumas coisas. Primeiro, um perfil de publicação será criado. Um perfil de publicação é um arquivo do MSBuild que é importado para o projeto durante o processo de publicação. Ele contém as propriedades que são usadas durante o processo de publicação. Esses arquivos são armazenados no `Properties/PublishProfiles` e têm a extensão `.pubxml`. Em seguida, o processo de publicação será iniciado. Você pode monitorar o progresso observando a barra de status no Visual Studio para Mac.
+ 5. Depois que você clicar em **Publicar** , acontecerão algumas coisas. Primeiro, um perfil de publicação será criado. Um perfil de publicação é um arquivo do MSBuild que é importado para o projeto durante o processo de publicação. Ele contém as propriedades que são usadas durante o processo de publicação. Esses arquivos são armazenados no `Properties/PublishProfiles` e têm a extensão `.pubxml`. Em seguida, o processo de publicação será iniciado. Você pode monitorar o progresso observando a barra de status no Visual Studio para Mac.
 
     ![Barra de status do IDE com o status Publicar](media/publish-to-folder-status-bar.png)
 

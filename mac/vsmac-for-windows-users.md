@@ -1,20 +1,20 @@
 ---
 title: Visual Studio para Mac para usuários do Windows
-description: Introdução dos recursos de acessibilidade no Visual Studio para Mac e como eles podem ser habilitados.
+description: Uma introdução ao Visual Studio para Mac para os desenvolvedores familiarizados com o uso do Visual Studio no sistema operacional Windows.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984265"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493368"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio para Mac para usuários do Windows
 
-A migração de um sistema operacional para outro pode ser assustadora. Geralmente, há diferenças sutis em aplicativos de plataforma cruzada, da interface do usuário até a categorização de itens de menu. Os usuários também terão a curva de aprendizado de acclimatizing para a interface do usuário do novo sistema operacional. Aqui você aprenderá as diferenças mais comuns entre o Visual Studio para Mac e o Visual Studio para Windows. Você também aprenderá algumas convenções diferentes entre o macOS e o Windows.
+A migração de um sistema operacional para outro pode ser assustadora. Geralmente, há diferenças sutis em aplicativos de plataforma cruzada, da interface do usuário até a categorização de itens de menu. Aqui você aprenderá as diferenças mais comuns entre o Visual Studio para Mac e o Visual Studio para Windows. Você também aprenderá algumas convenções diferentes entre o macOS e o Windows.
 
 ## <a name="keyboard-shortcuts"></a>Atalhos do teclado
 
@@ -49,10 +49,9 @@ Os menus no macOS são organizados de forma diferente dos menus no Windows. Visu
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Preferências (opções)  |Ferramentas > opções...                                                   |Preferências de > do Visual Studio...       |
 |Extensões             |Extensões > gerenciar extensões                                       |Extensões de > do Visual Studio...        |
-|Layouts                |Janela > aplicar layout de janela > [selecionar layout]                       |Exibir > [selecionar layout]               |
+|Layouts                |Janela > aplicar layout de janela > [selecionar layout]                       |Exibir > de layout de > [selecionar layout]               |
 |Atualizações                |Ajuda > verificar se há atualizações                                             |O Visual Studio > verificar se há atualizações... |
 |Gerenciador de Pacotes NuGet  |Ferramentas > Gerenciador de pacotes NuGet > gerenciar pacotes NuGet ou solução... |Projeto > gerenciar pacotes NuGet...   |
-|Pads/janelas         |Exibir > [selecionar painel/janela]                                         |Exibir painéis de > > [selecionar painel/janela]  |
 |Localizar ferramentas             |Editar > localizar e substituir > [selecionar ferramenta]                              |Pesquisar > [selecionar ferramenta]               |
 |Sobre o Visual Studio    |Ajuda > sobre Microsoft Visual Studio                                 |Visual Studio > sobre o Visual Studio  
 

@@ -1,5 +1,6 @@
 ---
 title: Publicar no Serviço de Aplicativo do Azure
+description: Como publicar um aplicativo Web usando as ferramentas de publicação no Visual Studio para Mac.
 ms.date: 04/02/2019
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +13,12 @@ ms.custom: video
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 81ae8c8dde91655a4b9b3b8dcb4d0033af34e4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950508"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493420"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio para Mac
 
@@ -31,7 +32,7 @@ Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core 
 
 ## <a name="publish-to-azure-app-service"></a>Publicar no Serviço de Aplicativo do Azure
 
- 1. No Painel de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**.
+ 1. Na janela da solução, clique com o botão direito do mouse no projeto e escolha **publicar**.
 
     ![Menu de contexto Publicar](media/publish-context-menu.png)
 
@@ -63,11 +64,11 @@ Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core 
 
     Para criar seu Serviço de Aplicativo e publicar o projeto nele, clique em **Criar**.
 
-    Depois que você clicar em **Criar**, a caixa de diálogo **Novo Serviço de Aplicativo** será ignorada e a seguinte mensagem será exibida indicando que a criação do Serviço de Aplicativo foi iniciada.
+    Depois que você clicar em **Criar** , a caixa de diálogo **Novo Serviço de Aplicativo** será ignorada e a seguinte mensagem será exibida indicando que a criação do Serviço de Aplicativo foi iniciada.
 
       ![Mensagem de criação do Serviço de Aplicativo](media/publish-create-app-service-message.png)
 
-    Depois que você clicar em **OK**, a mensagem será descartada e você poderá continuar trabalhando no projeto. Você pode observar o status do processo de publicação com a barra de status na parte superior do IDE. Depois que o aplicativo Web for publicado com êxito, o site será aberto com o navegador padrão.
+    Depois que você clicar em **OK** , a mensagem será descartada e você poderá continuar trabalhando no projeto. Você pode observar o status do processo de publicação com a barra de status na parte superior do IDE. Depois que o aplicativo Web for publicado com êxito, o site será aberto com o navegador padrão.
 
 ## <a name="related-video"></a>Vídeo relacionados
 

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 09/19/2019
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
 ms.topic: how-to
-ms.openlocfilehash: a33b590290880a7e20e7c0ec44c0b12942b1240e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de6be4b509eff8a013f7367614e0016f810b3657
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939109"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492692"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilando e limpando Projetos e Soluções
 
@@ -22,7 +22,7 @@ Siga as etapas neste artigo para aprender a criar, recriar ou limpar todos ou al
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 
-1. Selecione o nó da solução no **painel de soluções**:
+1. Selecione o nó da solução na **janela da solução** :
 
     ![Selecionando o nó da solução](media/compiling-and-building-image1.png)
 
@@ -38,7 +38,7 @@ Siga as etapas neste artigo para aprender a criar, recriar ou limpar todos ou al
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar ou recompilar um único projeto
 
-1. Selecione o projeto no **painel de soluções**.
+1. Selecione o projeto na **janela da solução**.
 
 2. Selecione o menu **Compilar** na barra de menus.
 

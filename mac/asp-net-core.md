@@ -1,21 +1,21 @@
 ---
 title: Introdução ao ASP.NET Core
 description: Este artigo descreve como começar a usar o ASP.NET no Visual Studio para Mac, incluindo como instalar e com criar um novo projeto.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 04/02/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584055"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493355"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "91584055"
 
 ## <a name="installing-net-core"></a>Instalando o .NET Core
 
-O .NET Core 3,1 é instalado automaticamente quando você instala o Visual Studio para Mac. Para obter mais informações sobre as versões do .NET Core com suporte no Visual Studio para Mac consulte [suporte do .NET Core](./net-core-support.md).
+O .NET Core 3,1 é instalado automaticamente quando você instala o Visual Studio para Mac. Para obter mais informações sobre as versões do .NET Core com suporte no Visual Studio para Mac, consulte [suporte do .NET Core](./net-core-support.md).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Criar um aplicativo do ASP.NET Core no Visual Studio para Mac
 
@@ -44,13 +44,13 @@ Diversos projetos fornecem um modelo criado previamente para começar a criar se
 
 ![Opções do projeto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo do Solution pad, expanda a segunda seta e, em seguida, selecione **Startup.cs**. Ele deve ser semelhante à imagem abaixo:
+Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Escolha um nome para o projeto e pressione **Criar**. Isso cria um novo aplicativo ASP.NET Core. No painel esquerdo da janela de solução, expanda a segunda seta e, em seguida, selecione **Startup.cs**. Ele deve ser semelhante à imagem abaixo:
 
 ![Nova exibição Projeto ASP.NET Core vazio](media/asp-net-core-2019-empty-project.png)
 
-O modelo ASP.NET Core vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta Dependencies, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, o .NET Core Framework e os destinos do MSBuild que criam o projeto:
+O modelo ASP.NET Core vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs** , que são explicados abaixo. Ele também cria uma pasta Dependencies, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, o .NET Core Framework e os destinos do MSBuild que criam o projeto:
 
-![Painel de Soluções exibindo as dependências](media/asp-net-core-2019-solution-dependencies.png)
+![Janela da solução exibindo dependências](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Module.vb
 
@@ -70,7 +70,7 @@ Abra e inspecione o arquivo **Program.cs** no seu projeto. Observe que várias c
     }
 ```
 
-Um aplicativo ASP.NET Core cria um servidor Web em seu método principal Configurando e iniciando um host por meio de uma instância do [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
+Um aplicativo ASP.NET Core cria um servidor Web em seu método principal Configurando e iniciando um host por meio de uma instância do [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) . Este construtor fornece métodos para permitir que o host seja configurado. No aplicativo de modelo, são usadas as seguintes configurações:
 
 * `.UseStartup<Startup>()`: especifica a classe Startup.
 
@@ -128,7 +128,7 @@ Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualqu
 
 ![Execução do navegador](media/asp-net-web-picker.png)
 
-O Visual Studio para Mac usa uma porta aleatória para iniciar o projeto Web. Para descobrir qual porta é essa, abra a Saída do Aplicativo, que é listada em **Exibir > Painéis**. Você deve encontrar uma saída semelhante ao que é mostrado abaixo:
+O Visual Studio para Mac usa uma porta aleatória para iniciar o projeto Web. Para descobrir qual porta é isso, abra a saída do aplicativo, que é listada na **exibição > outro** menu do Windows. Você deve encontrar uma saída semelhante ao que é mostrado abaixo:
 
 ![Saída do Aplicativo exibindo a porta de escuta](media/asp-net-core-image6.png)
 
@@ -138,13 +138,13 @@ Quando o projeto estiver em execução, seu navegador da Web padrão deve inicia
 
 ## <a name="adding-a-controller"></a>Adicionando um controlador
 
-Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Controlador) para fornecer uma separação lógica de responsabilidades para cada parte do aplicativo. O MVC consiste no seguinte:
+Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Controlador) para fornecer uma separação lógica de responsabilidades para cada parte do aplicativo. O padrão de design MVC consiste nos seguintes conceitos:
 
-- **Modelo**: uma classe que representa os dados do aplicativo.
-- **Exibição**: exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
-- **Controlador**: uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
+- **Modelo** : uma classe que representa os dados do aplicativo.
+- **Exibição** : exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
+- **Controlador** : uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
 
-Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](/aspnet/core/mvc/overview).
+Para obter mais informações sobre como usar o MVC, consulte a [visão geral do guia do ASP.NET Core MVC](/aspnet/core/mvc/overview) .
 
 Para adicionar um controlador, faça o seguinte:
 
@@ -230,7 +230,7 @@ Para adicionar um controlador, faça o seguinte:
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Se você precisar instalar o .NET Core manualmente no Mac OS 10.12 (Sierra) e superior, faça o seguinte:
+Se você precisar instalar o .NET Core manualmente no macOS 10,12 (Sierra) e superior, faça o seguinte:
 
 1. Antes de começar a instalar o .NET Core, verifique se você atualizou todas as atualizações do sistema operacional para a versão estável mais recente. Você pode verificar isso acessando o aplicativo da App Store e selecionando a guia Atualizações.
 
@@ -241,8 +241,8 @@ Conclua todas as etapas para garantir que o .NET Core seja devidamente instalado
 ## <a name="summary"></a>Resumo
 
 Este guia forneceu uma introdução ao ASP.NET Core. Ele descreve o que é, quando usá-lo e forneceu as informações sobre como usá-lo no Visual Studio para Mac.
-Para obter mais informações sobre as próximas etapas a partir daqui, consulte os seguintes guias:
-- Documentos do [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1).
+Para obter mais informações sobre as próximas etapas aqui, consulte os seguintes guias:
+- Documentos do [ASP.NET Core](/aspnet/core/).
 - [Criando serviços de back-end para aplicativos móveis nativos](/aspnet/core/mobile/native-mobile-backend), que mostra como criar um serviço REST usando o ASP.NET Core para um aplicativo Xamarin.Forms.
 - [Laboratório prático do ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 

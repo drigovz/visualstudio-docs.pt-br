@@ -3,28 +3,28 @@ title: Depuração – Visualizações de dados
 description: A depuração é uma parte comum e necessária da programação. O Visual Studio para Mac contém um pacote inteiro de recursos para facilitar a depuração. Este artigo examina as diferentes visualizações de dados que podem ser exibidas ao inspecionar objetos no depurador.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691737"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493238"
 ---
 # <a name="data-visualizations"></a>Visualizações de dados
 
 O Visual Studio para Mac inclui suporte da interface do usuário para o depurador, permitindo visualizações dos valores de uma variável, campo ou propriedade durante a depuração. Esses visualizadores de dados mostram uma versão estendida dos dados e permitem que os desenvolvedores inspecionem estruturas conhecidas, por exemplo, mostrando a cor de um struct de cores.
 
-Os visualizadores no painel de depuração **Local** podem ser exibidos clicando no ícone de versão prévia que aparece à direita do valor quando o usuário focaliza a linha:
+Os visualizadores na janela depurar  **locais** podem ser exibidos clicando no ícone de visualização que aparece à direita do valor, quando o usuário passa o mouse sobre a linha:
 
-![Painel local](media/data-visualizations-image9.png)
+![Janela Locais](media/data-visualizations-image9.png)
 
 A lista a seguir examina muitas das novas visualizações disponíveis durante a depuração no Visual Studio para Mac.
 
 ## <a name="point"></a>Point
-Um Point/PointF ou CGPoint no iOS e no Mac será renderizado como uma tupla mostrando os valores X e Y no painel de depuração:
+Um ponto/PointF, ou CGPoint no iOS e Mac, será renderizado como uma tupla mostrando os valores X e Y nas janelas de depuração:
 
 ![Visualização de Ponto](media/data-visualizations-image10.png)
 
@@ -43,7 +43,7 @@ As coordenadas são plotadas em um mapa, com o local fixado no centro:
 
 [Visualização de Coordenada](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Cor
+## <a name="color"></a>Color
 Isso exibirá as propriedades UIColor, CGColor e Color, ilustrando a visualização de cores, os componentes RGBA, os valores de matiz-saturação-luminosidade e o valor hexadecimal da cor:
 
 ![Visualização de Cor](media/data-visualizations-image14.png)

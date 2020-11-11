@@ -1,18 +1,18 @@
 ---
 title: Usar dados de tempo de design com o Designer XAML no Visual Studio
 description: Saiba como usar dados de tempo de design em XAML.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298472"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492888"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usar dados de tempo de design com o Designer XAML no Visual Studio
 
@@ -25,7 +25,7 @@ Alguns layouts são difíceis de Visualizar sem dados. Neste documento, vamos re
 
 Os dados de tempo de design são dados fictícios que você define para facilitar a visualização dos seus controles no Designer XAML. Para começar, adicione as seguintes linhas de código ao cabeçalho do seu documento XAML se elas ainda não estiverem presentes:
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ O benefício aqui é que você pode associar seus controles a uma versão estát
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usar dados de tempo de design com tipos e propriedades personalizados
 
-Por padrão, esse recurso funciona apenas com controles de plataforma e propriedades. Nesta seção, abordaremos as etapas necessárias para permitir que você use seus próprios controles personalizados como controles de tempo de design, um novo recurso disponível para os clientes que usam o Visual Studio 2019 Preview versão [16,8](/visualstudio/releases/2019/preview-notes) ou posterior. Há três requisitos para habilitar isso:
+Por padrão, esse recurso funciona apenas com controles de plataforma e propriedades. Nesta seção, abordaremos as etapas necessárias para permitir que você use seus próprios controles personalizados como controles em tempo de design, um novo recurso disponível para os clientes que usam o Visual Studio 2019 versão [16,8](/visualstudio/releases/2019/release-notes/) ou posterior. Há três requisitos para habilitar isso:
 
-- Um namespace xmlns personalizado 
+- Um namespace xmlns personalizado
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

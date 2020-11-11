@@ -3,15 +3,15 @@ title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto usando Visual Studio para Mac. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/04/2020
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349303"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493485"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalar e gerenciar pacotes NuGet no Visual Studio para Mac
 
@@ -23,7 +23,7 @@ Para obter uma introdução ao uso do NuGet no Visual Studio para Mac, consulte 
 
 ## <a name="find-and-install-a-package"></a>Localizar e instalar um pacote
 
-1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta **pacotes** se estiver usando um projeto Xamarin) na **painel de soluções** e selecione **gerenciar pacotes NuGet...**.
+1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta **pacotes** se estiver usando um projeto do Xamarin) na **janela da solução** e selecione **gerenciar pacotes NuGet...**.
 
     ![Ação de contexto Adicionar novo pacote NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -85,7 +85,7 @@ Por fim, na guia **atualizações** da caixa de diálogo, selecione o pacote que
 ![Caixa de diálogo gerenciar pacotes NuGet aberta na guia instalado, com um pacote selecionado e a nova lista suspensa versão aberta.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Localizando pacotes desatualizados
-No painel de solução, você pode exibir qual versão de um pacote está instalada no momento e clicar com o botão direito do mouse no pacote a ser atualizado.
+Na janela da solução, você pode exibir qual versão de um pacote está instalada no momento e clicar com o botão direito do mouse no pacote a ser atualizado.
 
 ![Menu pacotes com as opções para atualizar, remover, atualizar](media/nuget-walkthrough-PackageMenu.png)
 
@@ -152,6 +152,6 @@ Consulte a documentação do controle do código-fonte específico para ver deta
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 * [Instalar e usar um pacote no Visual Studio (no Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
