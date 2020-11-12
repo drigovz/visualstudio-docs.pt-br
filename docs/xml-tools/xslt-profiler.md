@@ -2,7 +2,7 @@
 title: Desempenho do XSLT
 description: Saiba mais sobre o XSLT Profiler no Visual Studio que cria relatórios de desempenho XSLT detalhados para ajudá-lo a otimizar o desempenho do seu código XSLT.
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351408"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531882"
 ---
 # <a name="the-xslt-profiler"></a>O criador de perfil XSLT
 
@@ -23,14 +24,14 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
 
 O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
-![Perfil XSLT](../xml-tools/media/profile-xslt-menu.png)
+![Criador de perfil XSLT](../xml-tools/media/profile-xslt-menu.png "Captura de tela dos itens de menu XML no Visual Studio 2017")
 
 > [!NOTE]
-> O XSLT Profiler só está disponível na edição Enterprise do Visual Studio.
+> O XSLT Profiler só está disponível na edição Enterprise do Visual Studio 2017.
 
 ## <a name="create-a-performance-report"></a>Criar um relatório de desempenho
 
-1. Abrir um documento XSLT no Visual Studio.
+1. Abra um documento XSLT no Visual Studio 2017.
 
 2. Na barra de menus, escolha **XML**  >  **XSLT de perfil** XML.
 
@@ -108,6 +109,6 @@ Se uma função chamada `SyncToNavigator` aparece na parte média de exibição,
 
    A exibição processo exibe uma tabela que inclui a **ID do processo** , o **nome do processo** , a hora de **início** e a **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Walkthrough: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
