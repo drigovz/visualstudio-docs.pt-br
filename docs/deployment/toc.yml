@@ -24,7 +24,9 @@
           href: /dotnet/core/deploying/deploy-with-vs
         - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Implantar um aplicativo da área de trabalho usando o ClickOnce
+        - name: Implantar um aplicativo .NET do Windows usando o ClickOnce
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: Implantar um aplicativo da área de trabalho do .NET Framework usando o ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Compilar aplicativos ClickOnce usando a linha de comando
           href: building-clickonce-applications-from-the-command-line.md
