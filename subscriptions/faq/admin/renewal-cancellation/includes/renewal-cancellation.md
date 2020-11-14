@@ -1,18 +1,18 @@
 ---
 title: Quanto tempo leva para a minha assinatura de nuvem ser cancelada?
 description: Ao cancelar uma assinatura na nuvem do Visual Studio, você está cancelando a renovação automática. A assinatura continuará até a data de renovação normal...
-ms.faqid: group4_2
+ms.faqid: group4_3
 ms.topic: include
 ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 34cf5e16f8718f407c1f6c698f3a6e917219e6d8
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: d8420a48eb4e540d135d821de832b7a7c46bbefd
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838249"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575405"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>Quanto tempo leva para a minha assinatura de nuvem ser cancelada?
 
@@ -22,4 +22,4 @@ Com as assinaturas de nuvem mensais, os cancelamentos entram em vigor no primeir
 
 Para assinaturas de nuvem anuais, os cancelamentos entram em vigor no primeiro dia do mês após 12 meses da compra original ou 12 meses do último encargo de renovação anual. Por exemplo, se você comprou uma assinatura na nuvem anual do Visual Studio Professional em 3 de janeiro de 2018, ela permanece ativa até 1º de fevereiro de 2019, quando será renovada automaticamente por mais um ano. Se você cancelar em algum momento entre esse período e primeiro de fevereiro de 2020 a assinatura expirará em primeiro de fevereiro de 2020. Não há nenhum reembolso para cancelamentos durante o ano da assinatura para as assinaturas de nuvem anuais.
 
-Confira nosso tópico [Como os custos são processados](../../../../vscloud-billing-faq.md#how-charges-are-processed) para obter mais informações sobre as assinaturas de nuvem.
+Confira nosso tópico [Como os custos são processados](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq#how-charges-are-processed) para obter mais informações sobre as assinaturas de nuvem.

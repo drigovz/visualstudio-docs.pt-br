@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7ba3ff8e22923590c21333c35563a98352eeef21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 929be4682465494738d859f9fe8144b5e26aaf4f
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438232"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626164"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit e Codespaces do GitHub
 

@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870d5005cb74a3c130af3d720991a6797bb53bc5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3fd3a6153a347bcaf7d17fd265b7d9c7d4e6a5e5
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036165"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626171"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -51,19 +51,19 @@ Veja uma lista completa do que é possível esperar e fazer após entrar:
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Como entrar no Visual Studio
 
-Ao abrir o Visual Studio pela primeira vez, você será solicitado a entrar e fornecer algumas informações básicas de registro. 
+Ao abrir o Visual Studio pela primeira vez, você será solicitado a entrar e fornecer algumas informações básicas de registro.
 
 ![Prompt de entrada](../ide/media/vs2019_signinpopup.png)
 
 Você deve escolher uma conta da Microsoft ou uma conta corporativa ou de estudante que melhor lhe representa. Se você não tiver nenhuma dessas contas, poderá criar um conta Microsoft gratuitamente clicando no link sob o botão entrar. Se você tiver problemas, consulte [como fazer inscrever-se em um conta Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
-Em seguida, escolha as configurações da interface de usuário e o tema de cor que você deseja usar no Visual Studio. O Visual Studio se lembra essas configurações e sincroniza-as em todos os ambientes do Visual Studio nos quais você entrou. Para obter uma lista das configurações que são sincronizadas, consulte [configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Você poderá alterar as configurações mais tarde se abrir o **Tools**  >  menu**Opções** de ferramentas no Visual Studio.
+Em seguida, escolha as configurações da interface de usuário e o tema de cor que você deseja usar no Visual Studio. O Visual Studio se lembra essas configurações e sincroniza-as em todos os ambientes do Visual Studio nos quais você entrou. Para obter uma lista das configurações que são sincronizadas, consulte [configurações sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Você poderá alterar as configurações mais tarde se abrir o **Tools**  >  menu **Opções** de ferramentas no Visual Studio.
 
 Depois de fornecer as configurações, o Visual Studio é iniciado, e você está conectado e pronto para começar. Para verificar se você entrou, procure seu nome de perfil no canto superior direito do ambiente do Visual Studio.
 
 ![Usuário conectado no momento no VS2019](../ide/media/vs2019_username.png)
 
-Se você optar por não entrar ao abrir o Visual Studio pela primeira vez, será fácil fazer isso mais tarde. Procure o link **entrar** no canto superior direito do ambiente do Visual Studio. 
+Se você optar por não entrar ao abrir o Visual Studio pela primeira vez, será fácil fazer isso mais tarde. Procure o link **entrar** no canto superior direito do ambiente do Visual Studio.
 
 ![Usuário não conectado](../ide/media/vs2019_usernotsignedin.png)
 
@@ -81,7 +81,7 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 Se você encontrar problemas ao entrar, consulte a página de [suporte à assinatura](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 * [Estender uma versão de avaliação ou atualizar uma licença](../ide/how-to-unlock-visual-studio.md)
 * [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)

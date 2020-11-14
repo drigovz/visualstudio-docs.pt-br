@@ -7,16 +7,16 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492835"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575535"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
-O Azure Functions é uma maneira de criar e executar snippets de código controlados por eventos – funções – na nuvem sem a necessidade de gerenciar ou provisionar explicitamente a infraestrutura. Para obter mais informações sobre o Azure Functions, consulte a [Documentação do Azure Functions](/azure/azure-functions/).
+Azure Functions é uma maneira de criar e executar trechos orientados a eventos de código – funções – – na nuvem, sem precisar provisionar ou gerenciar explicitamente a infraestrutura. Para obter mais informações sobre o Azure Functions, consulte a [Documentação do Azure Functions](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,15 +29,15 @@ Para criar e implantar funções, você também precisa de uma assinatura do Azu
 1. Em Visual Studio para Mac, selecione **arquivo > nova solução**.
 2. Na caixa de diálogo Novo Projeto, selecione o modelo do Azure Functions em **Nuvem > Geral** e clique em **Próximo** :
 
-    ![Caixa de diálogo Novo Projeto mostrando a opção do Azure Functions](media/azure-functions-image1.png)
+    ![Caixa de diálogo novo projeto mostrando Azure Functions opção](media/azure-functions-image1.png)
 
 3. Selecione o modelo do Azure Functions inicial que você deseja usar, insira seu nome de função e clique em **Próximo**.
 
-    ![Caixa de diálogo Novo Projeto mostrando modelos do Azure Functions](media/azure-functions-image2.png)
+    ![Caixa de diálogo novo projeto mostrando modelos de Azure Functions](media/azure-functions-image2.png)
 
     > [!TIP]
     > Embora os modelos (CLI) e o Azure Functions Runtime em pacote sejam mantidos tão atualizados quanto possível, eles inevitavelmente ficam desatualizados. Ao criar um projeto do Functions, o Visual Studio para Mac verificará se há atualizações para a CLI e notificará você conforme mostrado na imagem abaixo. Basta clicar no botão para baixar os modelos atualizados.
-    > ![Caixa de diálogo Novo projeto mostrando que estão disponíveis atualizações do Azure Functions](media/azure-functions-update.png)
+    > ![Caixa de diálogo novo projeto mostrando Azure Functions atualizações estão disponíveis](media/azure-functions-update.png)
 
     Dependendo do tipo de função que você selecionar, a próxima página solicitará que você insira detalhes como direitos de acesso, conforme ilustrado na imagem a seguir:
 
@@ -100,7 +100,7 @@ Você pode usar o procedimento acima para adicionar mais funções a seu projeto
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure** , você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
 4. Na caixa de diálogo **criar novo serviço de aplicativo** , insira suas configurações:  ![ caixa de diálogo novo serviço de aplicativo, com campos para nome do serviço, assinatura, grupo de recursos e configurações do plano de serviço.](media/azure-functions-image7.png)
 
-    |Configuração  |Descrição  |
+    |Setting  |Descrição  |
     |---------|---------|
     |**Nome do serviço de aplicativo**|Um nome exclusivo que identifica seu novo aplicativo de funções.|
     |**Assinatura**|A assinatura do Azure a utilizar.|
@@ -147,15 +147,15 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
   - Http POST CRUD
   - Gatilho Http com parâmetros
 
-- **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
+- **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [artigo Azure Functions no tempo](/azure/azure-functions/functions-create-scheduled-function)
 
-- **Gatilho de fila** – Esta é uma função que responderá às mensagens conforme elas chegarem na fila do Armazenamento do Azure. Além do nome da função, esse modelo tem um **Caminho** (o nome da fila da qual a mensagem será lida) e uma **Conexão** da conta de armazenamento (o nome da configuração de aplicativo que contém a cadeia de conexão da conta de armazenamento). Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Armazenamento de Filas](/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Gatilho de fila** – Esta é uma função que responderá às mensagens conforme elas chegarem na fila do Armazenamento do Azure. Além do nome da função, esse modelo tem um **Caminho** (o nome da fila da qual a mensagem será lida) e uma **Conexão** da conta de armazenamento (o nome da configuração de aplicativo que contém a cadeia de conexão da conta de armazenamento). Para obter mais informações, consulte o [artigo Azure Functions sobre armazenamento de filas](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Gatilho de blob** – Processe blobs do Armazenamento do Azure quando eles forem adicionados a um contêiner. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Armazenamento de Blobs](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Gatilho de blob** – Processe blobs do Armazenamento do Azure quando eles forem adicionados a um contêiner. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Para obter mais informações, consulte o [artigo Azure Functions armazenamento de BLOBs](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **WebHook genérico** – É uma função simples que será executada sempre que receber uma solicitação de qualquer serviço que dá suporte a webhooks. Para obter mais informações, consulte o [Artigo do Azure Functions sobre webhooks genéricos](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **WebHook genérico** – É uma função simples que será executada sempre que receber uma solicitação de qualquer serviço que dá suporte a webhooks. Para obter mais informações, consulte o [artigo Azure Functions sobre WebHooks genéricos](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Orquestração de Funções Duráveis** – Funções Duráveis permitem que você escreva funções com estado em um ambiente sem servidor. A extensão gerencia estado, pontos de verificação e reinicializações para você. Para obter mais informações, consulte os guias do Azure Functions sobre [Durable Functions](/azure/azure-functions/durable-functions-overview).
+- **Orquestração de Funções Duráveis** – Funções Duráveis permitem que você escreva funções com estado em um ambiente sem servidor. A extensão gerencia estado, pontos de verificação e reinicializações para você. Para obter mais informações, consulte os guias de Azure Functions sobre [funções duráveis](/azure/azure-functions/durable-functions-overview).
 
 - **Redimensionador de imagem** – Esta função cria imagens redimensionadas sempre que um blob é adicionado a um contêiner. O modelo usa a cadeia de conexão e o caminho para o gatilho, uma saída de imagem pequena e uma saída de imagem média.
 

@@ -1,6 +1,6 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,16 +10,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214686"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626184"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
-Use a página de opções **Avançado** para modificar as configurações de formatação do editor, de refatoração de código e de comentários da documentação XML para C#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções**e, em seguida, escolha **Editor de texto**  >  **C#**  >  **avançado**.
+Use a página de opções **Avançado** para modificar as configurações de formatação do editor, de refatoração de código e de comentários da documentação XML para C#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções** e, em seguida, escolha **Editor de texto**  >  **C#**  >  **avançado**.
 
 > [!NOTE]
 > É possível que nem todas as opções estejam listadas aqui.
@@ -101,7 +101,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>Realce
+## <a name="highlighting"></a>Realçar
 
 - Realçar referências a símbolo sob o cursor
 
@@ -134,12 +134,18 @@ Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre 
     Quando selecionado, insere dicas de nome de parâmetro para literais, literais convertidos e instanciações de objeto antes de cada argumento nas chamadas de função.  
     
     ![Dicas de nome de parâmetro embutido para CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Dicas de tipo embutido 
+    
+    Quando selecionado, insere dicas de tipo para variáveis com tipos deduzidos e tipos de parâmetro lambda.  
+    
+    ![Dicas de tipo embutido para CSharp](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - Gerar comentários da documentação XML para ///
 
    Quando selecionado, insere os elementos XML dos comentários da documentação XML depois que você digita a introdução de comentário `///`. Para obter mais informações sobre a documentação XML, confira [Comentários da documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Como inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentários de documentação XML (guia de programação C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
