@@ -1,5 +1,7 @@
 ---
 title: Elemento Icon (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento icon e como ele especifica o caminho e o nome do arquivo de imagem que serve como o ícone.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710523"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672685"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelos do Visual Studio)
 Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** , para o modelo.
@@ -26,7 +28,7 @@ Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que 
  \<VSTemplate> \<TemplateData>
  \<Icon>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <Icon>
@@ -49,7 +51,7 @@ Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que 
 |`ID`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -92,6 +94,6 @@ Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

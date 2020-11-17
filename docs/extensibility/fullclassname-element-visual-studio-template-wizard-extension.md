@@ -1,5 +1,7 @@
 ---
 title: Elemento FullClassName (extensão do assistente de modelo VS)
+description: Saiba mais sobre o elemento FullClassName e como ele é o nome totalmente qualificado da classe que implementa a interface IWizard.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769598"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672737"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (extensão do assistente de modelo do Visual Studio)
 O nome totalmente qualificado da classe que implementa a `IWizard` interface.
@@ -36,10 +38,10 @@ O nome totalmente qualificado da classe que implementa a `IWizard` interface.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -86,7 +88,7 @@ O nome totalmente qualificado da classe que implementa a `IWizard` interface.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

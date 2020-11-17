@@ -1,5 +1,7 @@
 ---
 title: Diferenças entre as soluções de área restrita e de farm | Microsoft Docs
+description: Entenda as diferenças entre as soluções de área restrita e de farm. Saiba como o Visual Studio aborda a depuração com qualquer tipo de solução.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967540"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672776"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Diferenças entre soluções de área restrita e de farm
   Quando você compila uma solução do SharePoint, ela é implantada no servidor do SharePoint e um depurador é anexado para depurá-lo. O processo usado para depurar a solução depende da configuração da propriedade de solução de área restrita: solução de área restrita ou solução de farm.
@@ -38,7 +40,7 @@ ms.locfileid: "62967540"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] anexa o depurador somente aos processos W3WP ou SPUCWorkerProcess que executam o site atual. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] também anexa os mecanismos gerenciados COM e depuração de fluxo de trabalho.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Depurar soluções do SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md)

@@ -2,7 +2,7 @@
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Mac) | Microsoft Docs
 description: Exiba o log de alterações para Ferramentas do Visual Studio para Unity, Mac. Confira as alterações da versão 1.0.0.0 a 2.7.0.0 e posteriores.
 ms.custom: ''
-ms.date: 5/19/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,70 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 72e1897e8eb7f7072ba22189c6414ba2585a6711
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341458"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672841"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2830"></a>2.8.3.0
+Lançado em 10 de novembro de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Depurador**
+
+  - Correção da anexação ao Unity, mesmo que não haja nenhum projeto VSTU na solução.
+
+## <a name="2820"></a>2.8.2.0
+Lançado em 27 de outubro de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integrar**
+
+  - Diagnóstico aprimorado [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) para aplicar a tudo que herda de `Component` , não apenas `MonoBehaviour` .
+
+## <a name="2810"></a>2.8.1.0
+Lançado em 13 de outubro de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Período**
+
+  - Suporte adicionado para conversão implícita com invocações. Anteriormente, o avaliador impôs a verificação de tipo estrito, resultando em `Failed to find a match for method([parameters...])` mensagens de aviso.
+
+- **Integrar**
+
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md)Diagnóstico adicionado. Você não deve usar `System.Reflection` recursos em mensagens críticas de desempenho como `Update` , `FixedUpdate` , `LateUpdate` ou `OnGUI` .
+
+  - Melhoria [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) e [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supressers, com suporte para todos os `AssetPostprocessor` métodos estáticos.
+
+  - Adicionado o [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) supressor para `CS8618` . `C# 8.0` apresenta tipos de referência anuláveis e tipos de referência não anuláveis. A detecção de inicialização de tipos herdados de `UnityEngine.Object` não tem suporte e resultará em erros.
+
+  - Agora, usando o mesmo mecanismo de geração de projeto asmdef e de Player para o Unity 2019. x e 2020. x +.
+  
+  - Experiência do usuário aprimorada ao gerar mensagens do Unity com um assistente.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Correção de conclusão inesperada de mensagens em comentários.
+
+## <a name="2800"></a>2.8.0.0 
+Lançado em 14 de setembro de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Geração fixa de projeto de Player com Unity 2019. x.
 
 ## <a name="2710"></a>2.7.1.0
 Lançado em 5 de agosto de 2020

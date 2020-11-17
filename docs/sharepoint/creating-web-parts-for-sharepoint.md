@@ -1,5 +1,7 @@
 ---
 title: Criando Web Parts para SharePoint | Microsoft Docs
+description: Crie Web Parts para SharePoint. Usando Web Parts, você pode modificar o conteúdo, a aparência e o comportamento de páginas de um site do SharePoint usando um navegador.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740151"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672789"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Criar Web Parts para SharePoint
   Usando Web Parts, você pode modificar o conteúdo, a aparência e o comportamento de páginas de um site do SharePoint usando um navegador. As Web Parts são controles do lado do servidor que são executados dentro de uma página de Web Part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -52,7 +54,7 @@ ms.locfileid: "90740151"
  Para obter mais informações, consulte [como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).
 
 ### <a name="visual-web-part-item"></a>Item de Web Part Visual
- Uma Web Part Visual é uma Web Part que você cria usando o Visual Web Developer designer no Visual Studio. Uma Web Part Visual funciona da mesma forma que qualquer outra Web Part. Para adicionar controles, como botões e caixas de texto, a uma Web Part, você adiciona código a um arquivo XML. No entanto, você adiciona controles a uma Web Part Visual arrastando-os ou copiando-os para a Web Part da **caixa de ferramentas**do Visual Studio. Em seguida, o designer gera o código necessário no arquivo XML. Consulte [como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+ Uma Web Part Visual é uma Web Part que você cria usando o Visual Web Developer designer no Visual Studio. Uma Web Part Visual funciona da mesma forma que qualquer outra Web Part. Para adicionar controles, como botões e caixas de texto, a uma Web Part, você adiciona código a um arquivo XML. No entanto, você adiciona controles a uma Web Part Visual arrastando-os ou copiando-os para a Web Part da **caixa de ferramentas** do Visual Studio. Em seguida, o designer gera o código necessário no arquivo XML. Consulte [como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ## <a name="sharepoint-controls"></a>Controles do SharePoint
  O Visual Studio fornece alguns controles para criar páginas do SharePoint, como páginas de aplicativo. Esses controles aparecem na **caixa de ferramentas** em **controles do SharePoint**. A funcionalidade para esses controles deriva do namespace [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , que contém os controles de servidor ASP.NET que são usados nas páginas de site e de lista do SharePoint.
@@ -108,7 +110,7 @@ ms.locfileid: "90740151"
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Title|Descrição|
+|Título|Descrição|
 |-----------|-----------------|
 |[Como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar Web Parts para páginas do SharePoint.|
 |[Como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar Web Parts para o SharePoint usando uma superfície de Design Visual.|

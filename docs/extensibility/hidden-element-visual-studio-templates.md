@@ -1,5 +1,7 @@
 ---
 title: Elemento Hidden (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento oculto e como ele especifica se o modelo é exibido nas caixas de diálogo novo projeto ou adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711119"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672693"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelos do Visual Studio)
 
@@ -30,7 +32,7 @@ Especifica se o modelo é exibido nas caixas de diálogo novo projeto ou **Adici
         <Hidden>
 ```
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Hidden>true</Hidden>
@@ -43,11 +45,11 @@ As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
 
-Nenhum.
+nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 
-Nenhum.
+nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -96,7 +98,7 @@ O exemplo a seguir ilustra os metadados de um modelo C#.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

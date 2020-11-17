@@ -1,5 +1,7 @@
 ---
 title: Estendendo a implantação e empacotamento do SharePoint | Microsoft Docs
+description: Estenda o empacotamento e a implantação do SharePoint. Criar etapas e configurações de implantação. Lidar com conflitos de implantação. Personalizar regras de validação.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f0f9eb6c863a961a527fcb6fb330a2a4f88669e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967450"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672581"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estender o empacotamento e a implantação do SharePoint
   Você pode estender o processo de empacotamento e implantação para projetos do SharePoint.
@@ -52,7 +54,7 @@ ms.locfileid: "62967450"
 ## <a name="customize-validation-rules"></a>Personalizar regras de validação
  Antes de implantar um pacote de solução (. wsp), você pode criar regras de validação de pacotes e recursos personalizados para verificar se o recurso ou pacote é válido. Por exemplo, você pode relatar informações, avisos ou erros aos desenvolvedores para ajudá-los a corrigir problemas de validação. Para obter mais informações, consulte [como criar regras personalizadas de validação de pacotes e recursos para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como executar código quando as etapas de implantação são executadas](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [Walkthrough: criar uma etapa de implantação personalizada para projetos do SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [Como criar regras de validação de pacotes e recursos personalizados para soluções do SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

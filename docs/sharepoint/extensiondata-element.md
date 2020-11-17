@@ -1,5 +1,7 @@
 ---
 title: Elemento ExtensionData | Microsoft Docs
+description: Exiba informações de referência sobre o elemento ExtensionData, que é um elemento no esquema do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b700239f97153cef94ab1d7010ad16ed9aa6001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546556"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672529"
 ---
 # <a name="extensiondata-element"></a>Elemento ExtensionData
   Representa uma coleção de itens de dados personalizados que estão associados ao item de projeto do SharePoint.
@@ -34,7 +36,7 @@ ms.locfileid: "85546556"
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 

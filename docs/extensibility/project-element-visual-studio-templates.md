@@ -1,5 +1,7 @@
 ---
 title: Elemento Project (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento Project e como ele especifica os arquivos ou diretórios a serem adicionados ao projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701998"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672379"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento Project (modelos do Visual Studio)
 Especifica os arquivos ou diretórios a serem adicionados ao projeto.
@@ -100,7 +102,7 @@ Especifica os arquivos ou diretórios a serem adicionados ao projeto.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectItem (modelos de projeto do Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: Depuração de soluções do SharePoint | Microsoft Docs
+description: Depurar soluções do SharePoint usando o depurador do Visual Studio. Explore o processo de depuração e implantação do F5, depure fluxos de trabalho e depure os receptores de evento de recurso.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984486"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672854"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você inicia a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o implanta os arquivos de projeto no servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -118,7 +120,7 @@ ms.locfileid: "72984486"
 ## <a name="sharepoint-project-features"></a>Recursos do projeto do SharePoint
  Um recurso é uma unidade de funcionalidade portátil e modular que simplifica a modificação de sites usando definições de site. Ele também é um pacote de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementos (WSS) que pode ser ativado para um escopo específico e que ajuda os usuários a realizar uma determinada meta ou tarefa. Os modelos são implantados como recursos.
 
- Quando você executa um projeto no modo de depuração, o processo de implantação cria uma pasta no diretório de *recursos* em *%COMMONPROGRAMFILES%\Microsoft Shared\Web Server Extensions\14\TEMPLATE\FEATURES*. Os nomes de recursos têm o formato *nome do projeto*_Feature*x*, como TestProject_Feature1.
+ Quando você executa um projeto no modo de depuração, o processo de implantação cria uma pasta no diretório de *recursos* em *%COMMONPROGRAMFILES%\Microsoft Shared\Web Server Extensions\14\TEMPLATE\FEATURES*. Os nomes de recursos têm o formato *nome do projeto* _Feature *x*, como TestProject_Feature1.
 
  A pasta da solução no diretório de recursos contém um arquivo de *definição de recurso* e um arquivo de definição de *fluxo de trabalho* . O arquivo de definição de recurso (Feature.xml) descreve os arquivos no recurso do projeto. o arquivo de definição de projeto (*Elements.xml*) descreve o modelo de projeto. *Elements.xml* pode ser encontrado em **Gerenciador de Soluções**, mas Feature.xml é gerado quando o pacote de solução é criado. Para obter mais informações sobre esses arquivos, consulte [projeto do SharePoint e modelos de item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984486"
 ## <a name="enable-enhanced-debugging-information"></a>Habilitar informações de depuração avançadas
  Devido às vezes, as interações complexas entre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo de host do SharePoint (*vssphost4.exe*), o SharePoint e a camada do WCF, o diagnóstico de erros que ocorrem durante a criação, implantação e assim por diante pode ser um desafio. Para ajudá-lo a resolver esses erros, você pode habilitar informações de depuração avançadas. Para fazer isso, vá para a seguinte chave do registro no registro do Windows:
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  Se o valor de **REG_DWORD** "EnableDiagnostics" ainda não existir, crie-o manualmente. Defina o valor "EnableDiagnostics" como "1".
 
@@ -148,5 +150,5 @@ ms.locfileid: "72984486"
 
  Para obter mais informações sobre outras chaves do registro do SharePoint, consulte [extensões de depuração para as ferramentas do SharePoint no Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)

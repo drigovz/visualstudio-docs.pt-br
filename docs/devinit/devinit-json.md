@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: acd3b65f520a9be048fe2d0209a85a85d086df2f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438225"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672496"
 ---
 # <a name="devinit-configuration-file"></a>arquivo de configuração devinit
 
@@ -45,6 +45,7 @@ O `.devinit.json` arquivo também pode ser especificado explicitamente por meio 
 Os caminhos são relativos ao local onde devinit está em execução. Normalmente, esse é o diretório de trabalho atual do qual `devinit` foi executado.
 
 ## <a name="file-format"></a>Formato de arquivo
+Em um `.devinit.json` , você pode especificar mais de uma ferramenta a ser executada. Na `run` seção, você pode colocar qualquer número de objetos. Um exemplo disso é visto em nosso exemplo [.devinit.js](sample-all-tool.md) com todas as nossas ferramentas.
 
 ```json
 {
@@ -63,17 +64,17 @@ Os caminhos são relativos ao local onde devinit está em execução. Normalment
 
 ### <a name="property-values"></a>Valores de propriedade
 
-| Nome         | Type   | Obrigatório | Valor                              |
+| Nome         | Tipo   | Obrigatório | Valor                              |
 |--------------|--------|----------|------------------------------------|
 | **feitos** | Cadeia de caracteres | No       | Comentários para o arquivo.             |
-| **funcionam**      | matriz  | Yes      | [Objeto RunTool](#run-tool-object) |
+| **funcionam**      | matriz  | Sim      | [Objeto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Executar objeto de ferramenta
 
-| Nome                  | Type   | Obrigatório | Valor                                                                                                      |
+| Nome                  | Tipo   | Obrigatório | Valor                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **feitos**          | Cadeia de caracteres | No       | Comentários para a entrada da ferramenta.                                                                               |
-| **'**              | string | Yes      | O nome da ferramenta. Consulte o `devinit list` comando para obter uma lista de ferramentas disponíveis.                            |
+| **'**              | string | Sim      | O nome da ferramenta. Consulte o `devinit list` comando para obter uma lista de ferramentas disponíveis.                            |
 | **input**             | Cadeia de caracteres | No       | A entrada da ferramenta. Varia de acordo com a ferramenta. Por exemplo, a versão necessária, a ID do pacote, o nome do arquivo ou a pasta.|
 | **additionalOptions** | Cadeia de caracteres | No       | Argumentos de linha de comando adicionais a serem passados para a ferramenta.                                                |
 

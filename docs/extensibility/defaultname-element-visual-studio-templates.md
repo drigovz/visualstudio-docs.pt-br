@@ -1,5 +1,7 @@
 ---
 title: Elemento DefaultName (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento DefaultName e como ele especifica o nome que o sistema de projeto do Visual Studio gerará para o projeto ou item quando ele for criado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92bd29824cf1d3b91a7bdaa7220479c583ad0f23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23defc424d3e7ed5095f0e29d673c191c755f9ce
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712315"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672724"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>Elemento DefaultName (modelos do Visual Studio)
 Especifica o nome que o sistema de projeto do Visual Studio gerará para o projeto ou item quando ele for criado.
@@ -26,7 +28,7 @@ Especifica o nome que o sistema de projeto do Visual Studio gerará para o proje
  \<VSTemplate> \<TemplateData>
  \<DefaultName>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <DefaultName>
@@ -38,10 +40,10 @@ Especifica o nome que o sistema de projeto do Visual Studio gerará para o proje
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -82,6 +84,6 @@ Especifica o nome que o sistema de projeto do Visual Studio gerará para o proje
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

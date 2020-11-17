@@ -1,5 +1,7 @@
 ---
 title: Elemento NumberOfParentCategoriesToRollUp (modelos)
+description: Saiba mais sobre o elemento NumberOfParentCategoriesToRollUp e como ele especifica o número de categorias pai que exibirão o modelo na caixa de diálogo novo projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b903b9d0bdab2c17dd2e489de01badad82c15473
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702363"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672405"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (modelos do Visual Studio)
 Especifica o número de categorias pai que exibirá o modelo na caixa de diálogo **novo projeto** .
@@ -27,7 +29,7 @@ Especifica o número de categorias pai que exibirá o modelo na caixa de diálog
  \<VSTemplate> \<TemplateData>
  \<NumberOfParentCategoriesToRollUp>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <NumberOfParentCategoriesToRollUp>
@@ -39,10 +41,10 @@ Especifica o número de categorias pai que exibirá o modelo na caixa de diálog
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -86,6 +88,6 @@ Especifica o número de categorias pai que exibirá o modelo na caixa de diálog
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

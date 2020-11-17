@@ -1,5 +1,7 @@
 ---
 title: Implantando extensões para as ferramentas do SharePoint no Visual Studio | Microsoft Docs
+description: Implantar extensões para ferramentas do SharePoint no Visual Studio. Use projetos de VSIX (Visual Studio Extension) para criar pacotes VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584697"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672672"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Implantar extensões para as ferramentas do SharePoint no Visual Studio
 
@@ -188,7 +190,7 @@ Os procedimentos a seguir descrevem como adicionar entradas ao arquivo. vsixmani
 
 8. Na lista **origem** , escolha **arquivo em sistema de arquivos**.
 
-9. No campo **caminho** , insira o caminho completo para o assembly (por exemplo, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*ou use o botão **procurar** para localizar e escolher o assembly e, em seguida, escolha o botão **OK** .
+9. No campo **caminho** , insira o caminho completo para o assembly (por exemplo, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* ou use o botão **procurar** para localizar e escolher o assembly e, em seguida, escolha o botão **OK** .
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Para incluir um assistente para um modelo de projeto ou modelo de item
 
@@ -265,7 +267,7 @@ O exemplo a seguir mostra o conteúdo de um arquivo extension. vsixmanifest para
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Estenda o nó conexões do SharePoint no Gerenciador de Servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

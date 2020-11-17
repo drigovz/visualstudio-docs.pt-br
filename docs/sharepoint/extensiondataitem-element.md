@@ -1,5 +1,7 @@
 ---
 title: Elemento ExtensionDataItem | Microsoft Docs
+description: Exiba informações de referência sobre o elemento ExtensionDataItem, que é um elemento no esquema do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 295ee649cec01e50b237b4fad1798806d460727b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23bd231343b3e7a6c68883aa7fe3ee4e518ac883
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546543"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672607"
 ---
 # <a name="extensiondataitem-element"></a>Elemento ExtensionDataItem
   Um item de dados personalizado que está associado ao item de projeto do SharePoint, no formato de chave/valor. Tanto a chave quanto o valor devem ser cadeias de caracteres.
@@ -40,7 +42,7 @@ ms.locfileid: "85546543"
 |**Valor**|Atributo **xs: String** necessário.<br /><br /> O valor do item de dados.|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

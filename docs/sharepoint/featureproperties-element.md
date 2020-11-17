@@ -1,5 +1,7 @@
 ---
 title: Elemento FeatureProperties | Microsoft Docs
+description: Exiba informações de referência sobre o elemento FeatureProperties, que é um elemento no esquema do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967325"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672594"
 ---
 # <a name="featureproperties-element"></a>Elemento FeatureProperties
   Uma coleção de valores de propriedade que são incluídos com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar os valores de propriedade em seu código.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <FeatureProperties>
@@ -34,7 +36,7 @@ ms.locfileid: "62967325"
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 

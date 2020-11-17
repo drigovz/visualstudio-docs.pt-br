@@ -1,6 +1,8 @@
 ---
 title: Estendendo o nó conexões do SharePoint no Gerenciador de Servidores | Microsoft Docs
 titleSuffix: ''
+description: Estenda o nó conexões do SharePoint na janela Gerenciador de Servidores no Visual Studio. Adicione Propriedades personalizadas a nós. Obter dados para nós internos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584601"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672555"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estenda o nó conexões do SharePoint no Gerenciador de Servidores
   No Visual Studio, você pode se conectar a sites locais do SharePoint no computador de desenvolvimento usando o nó **conexões do SharePoint** na janela **Gerenciador de servidores** . Esse nó exibe muitos dos componentes de sites locais do SharePoint em um modo de exibição de árvore hierárquica. Por exemplo, você pode exibir as listas, as bibliotecas de documentos e os tipos de conteúdo em sites locais. Para obter mais informações sobre como usar **Gerenciador de servidores** para se conectar a sites locais do SharePoint, consulte [procurar conexões do SharePoint usando Gerenciador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -67,7 +69,7 @@ ms.locfileid: "91584601"
 
  Para obter mais informações sobre como usar a <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> propriedade, consulte [associar dados personalizados a extensões de ferramentas do SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: estender Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Como: estender um nó do SharePoint no Gerenciador de Servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Como: adicionar um nó personalizado do SharePoint a Gerenciador de Servidores](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

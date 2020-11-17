@@ -1,5 +1,7 @@
 ---
 title: Desenvolvendo soluções do SharePoint | Microsoft Docs
+description: Desenvolver soluções do SharePoint. Conheça os elementos de um projeto do SharePoint. Entenda as propriedades do projeto e do item do projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016793"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672815"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar sites e elementos do site do SharePoint. Para obter uma lista dos tipos de projeto disponíveis, consulte [projeto do SharePoint e modelos de item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e das propriedades de um projeto do SharePoint.
@@ -47,7 +49,7 @@ ms.locfileid: "86016793"
 
  Para adicionar um recurso manualmente, execute o comando **Adicionar recurso** no menu de atalho do nó de recurso. Você pode exibir ou alterar o conteúdo de um recurso usando o designer de recursos. Para obter mais informações, consulte [como: personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
- Quando um recurso é adicionado a um projeto do SharePoint, ele aparece em **Gerenciador de soluções** como um nó com o recurso de nome padrão*x*. Feature, em que *x* é um número exclusivo. Depois que um recurso é implantado no servidor do SharePoint, um administrador do SharePoint pode ativá-lo, disponibilizando-o para os usuários do site do SharePoint.
+ Quando um recurso é adicionado a um projeto do SharePoint, ele aparece em **Gerenciador de soluções** como um nó com o recurso de nome padrão *x*. Feature, em que *x* é um número exclusivo. Depois que um recurso é implantado no servidor do SharePoint, um administrador do SharePoint pode ativá-lo, disponibilizando-o para os usuários do site do SharePoint.
 
 #### <a name="package-node"></a>Nó do pacote
  O nó do **pacote** contém um único arquivo que serve como o mecanismo de distribuição para o projeto do SharePoint. Esse arquivo, conhecido como um *pacote de solução*, é. Baseado em CAB com um. Extensão WSP. Um pacote de solução é um arquivo implantável e reutilizável que contém um conjunto de recursos, definições de site e assemblies que se aplicam a sites do SharePoint e que você pode habilitar ou desabilitar individualmente. O nó do **pacote** também contém sempre um arquivo chamado Package. wspdef, um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de definição para o pacote. Depois que um pacote é implantado no servidor que está executando o SharePoint, o administrador do SharePoint pode instalá-lo e ativar seus recursos.
@@ -100,8 +102,8 @@ ms.locfileid: "86016793"
 |Namespace de ferramenta personalizada|O namespace no qual a saída da ferramenta personalizada é copiada. Para obter mais informações, consulte [Propriedades do arquivo](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\)).|
 |Local da implantação|O caminho totalmente qualificado do arquivo no servidor do SharePoint. Esse caminho é composto pelas subpropriedades raiz de implantação e caminho de implantação.|
 |Caminho de implantação|O caminho relativo do arquivo no arquivo do SharePoint Server, como Workflow1 \\ . O caminho totalmente qualificado para o arquivo é criado concatenando o valor do *caminho de implantação* no final do valor *raiz da implantação* .<br /><br /> A seleção de um valor de *RootFile* para a propriedade de *tipo de implantação* altera a propriedade *raiz de implantação* para \<SharePointRoot> \\ , resultando em um caminho totalmente qualificado de \<SharePointRoot> \Workflow1 \\ . Para obter mais informações, consulte [empacotando e implantando soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
-|Raiz da implantação|Cadeia de caracteres. A pasta raiz onde o arquivo é implantado no servidor do SharePoint. Por exemplo, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> O valor da propriedade *raiz da implantação* é determinado pela configuração do *tipo de implantação* .|
-|Tipo de implantação|O tipo de implantação do arquivo, que determina seu valor de *raiz de implantação* . Pode ser um dos seguintes valores:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> Elementofile: * \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ *<br /><br /> Modelo: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Raiz da implantação|Cadeia. A pasta raiz onde o arquivo é implantado no servidor do SharePoint. Por exemplo, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> O valor da propriedade *raiz da implantação* é determinado pela configuração do *tipo de implantação* .|
+|Tipo de implantação|O tipo de implantação do arquivo, que determina seu valor de *raiz de implantação* . Pode ser um dos seguintes valores:<br /><br /> NoDeployment: *\<no value>*<br /><br /> ElementManifest: *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> Elementofile: *\<SharePointRoot> \Template\Features \\ \<FeatureName> \\*<br /><br /> Modelo: *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource: *\<ClassResourcePath>\\*<br /><br /> Para obter mais informações, consulte <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |Nome do Arquivo|O nome do arquivo ou da pasta do arquivo de item.|
 |Caminho completo|O local do arquivo para o item. (Somente leitura.)|
 
@@ -128,7 +130,7 @@ ms.locfileid: "86016793"
 |[Segurança das soluções do SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Descreve as considerações de segurança para o desenvolvimento de soluções do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Caixa de diálogo Seletor de URL &#40;desenvolvimento do SharePoint no Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Descreve uma caixa de diálogo que você pode usar para adicionar referências de caminho a recursos em seu projeto ou no servidor do SharePoint local.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Introdução &#40;desenvolvimento do SharePoint no Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [Procurar conexões do SharePoint usando Gerenciador de Servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

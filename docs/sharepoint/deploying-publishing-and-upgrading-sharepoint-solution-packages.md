@@ -1,5 +1,7 @@
 ---
 title: Implantar, publicar, & atualizar pacotes de solução do SharePoint
+description: Implantar, publicar e atualizar pacotes de solução do SharePoint. Personalize o processo de implantação. Publicar pacotes em um servidor remoto ou local.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583873"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672659"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar seu arquivo de pacote (. wsp) em um servidor do SharePoint local ou publicá-lo em um servidor do SharePoint remoto ou local. Se você implantar os arquivos, poderá personalizar como os arquivos de pacote (. wsp) são implantados.
@@ -55,7 +57,7 @@ ms.locfileid: "91583873"
  Você também pode adicionar comandos para executar antes e após a implantação. Para obter mais informações, consulte [como: definir comandos de implantação do SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publicar pacotes em um servidor remoto ou local
- Para publicar uma solução do SharePoint em área restrita em um servidor remoto, na barra de menus, escolha **criar**, **publicar**e, em seguida, na caixa de diálogo **publicar** , escolha o botão de opção **publicar no SharePoint site** , fornecendo a URL do servidor remoto, como `https://someremoteserver.sharepoint.microsoftonline.com` .
+ Para publicar uma solução do SharePoint em área restrita em um servidor remoto, na barra de menus, escolha **criar**, **publicar** e, em seguida, na caixa de diálogo **publicar** , escolha o botão de opção **publicar no SharePoint site** , fornecendo a URL do servidor remoto, como `https://someremoteserver.sharepoint.microsoftonline.com` .
 
  Para publicar uma solução do SharePoint em um servidor local, na caixa de diálogo **publicar** , escolha o botão de opção **publicar no sistema de arquivos** , fornecendo um caminho do sistema local.
 
@@ -64,5 +66,5 @@ ms.locfileid: "91583873"
 ### <a name="upgrade-published-packages"></a>Atualizar pacotes publicados
  Se você fizer alterações em um projeto do SharePoint no Visual Studio depois que ele for publicado, o pacote publicado deverá ser atualizado para incluir as alterações. Para atualizar com êxito, um pacote deve ter um nome exclusivo. Se um pacote com o mesmo nome for encontrado no site do SharePoint, o que pode ocorrer quando você estiver atualizando um aplicativo existente, um erro alertará você sobre o conflito de nome de arquivo e permitirá que você renomeie o pacote. Depois de ser republicado, o novo pacote aparece no site do SharePoint e pode ser atualizado. Um pacote atualizado atualiza a solução usando dados do pacote mais antigo e ativa a solução no SharePoint. Para obter mais informações, consulte [como implantar, publicar e atualizar soluções do SharePoint em um servidor remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

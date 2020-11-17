@@ -1,5 +1,7 @@
 ---
 title: Elemento Folder (modelos de projeto do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento Folder e como ele especifica uma pasta que será adicionada ao projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769584"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672711"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento Folder (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.
@@ -127,7 +129,7 @@ Especifica uma pasta que será adicionada ao projeto.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Elemento ProjectItem (modelos de item do Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

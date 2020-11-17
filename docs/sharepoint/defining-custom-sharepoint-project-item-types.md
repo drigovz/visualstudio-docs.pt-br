@@ -1,5 +1,7 @@
 ---
 title: Definindo tipos de item de projeto personalizados do SharePoint | Microsoft Docs
+description: Defina um tipo de item de projeto do SharePoint personalizado quando desejar criar um novo tipo de item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580778"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672828"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definir tipos de item de projeto personalizados do SharePoint
   Defina um novo tipo de item de projeto do SharePoint quando desejar criar um novo tipo de item de projeto do SharePoint. Por exemplo, o Visual Studio não inclui itens de projeto do SharePoint para adicionar campos ou ações personalizadas a um site do SharePoint. Você pode definir seus próprios tipos de itens de projeto do SharePoint para criar campos, ações personalizadas ou outros tipos de componentes do SharePoint.
@@ -40,7 +42,7 @@ ms.locfileid: "62580778"
 
  Para acessar uma instância específica do tipo de item do projeto, manipule um dos <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> eventos do parâmetro *projectItemTypeDefinition* em sua implementação do <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> método. Por exemplo, para determinar quando um item de projeto do tipo personalizado é adicionado a um projeto, manipule o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> evento. Para obter mais informações, consulte [como: definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como definir um tipo de item de projeto do SharePoint](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [Como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
 - [Como: adicionar um item de menu de atalho a um tipo personalizado de item de projeto do SharePoint](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)

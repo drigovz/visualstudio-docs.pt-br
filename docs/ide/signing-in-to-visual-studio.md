@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd3a6153a347bcaf7d17fd265b7d9c7d4e6a5e5
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626171"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672763"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -81,9 +81,10 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 Se você encontrar problemas ao entrar, consulte a página de [suporte à assinatura](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Estender uma versão de avaliação ou atualizar uma licença](../ide/how-to-unlock-visual-studio.md)
+* [Trabalhar com contas do GitHub no Visual Studio](../ide/work-with-github-accounts.md)
 * [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 * [Entrar (Visual Studio para Mac)](/visualstudio/mac/signing-in)
 * [Ativação (Visual Studio para Mac)](/visualstudio/mac/activation)

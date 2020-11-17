@@ -1,5 +1,7 @@
 ---
 title: Criando um modelo de conectividade de dados corporativos | Microsoft Docs
+description: Criar um modelo de BDC (conectividade de dados corporativos). Adicione entidades e métodos. Defina os parâmetros do método. Adicionar descritores de filtro. Valide o modelo BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984461"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672646"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Criar um modelo de conectividade de dados corporativos
   Você pode desenvolver um modelo para o serviço corporativo de conectividade de dados (BDC) adicionando entidades e métodos a um arquivo de modelo. Uma entidade descreve uma coleção de campos de dados. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Um método executa uma tarefa como adicionar, excluir ou atualizar dados representados pelas entidades. Para obter mais informações, consulte [integrar dados corporativos ao SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -42,7 +44,7 @@ ms.locfileid: "72984461"
 ## <a name="define-method-parameters"></a>Definir parâmetros do método
  Quando você cria um método, o Visual Studio adiciona os parâmetros de entrada e saída apropriados para o tipo de método. Esses parâmetros são apenas espaços reservados. Na maioria dos casos, você deve modificar os parâmetros para que eles passem ou retornem o tipo correto de dados. Por exemplo, por padrão, um método Finder retorna uma cadeia de caracteres. Na maioria dos casos, você deseja modificar o parâmetro de retorno do método Finder para que ele retorne uma coleção de entidades. Você pode fazer isso modificando o descritor de tipo do parâmetro. Um descritor de tipo é uma coleção de atributos que descreve o tipo de dados de um parâmetro. Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- O Visual Studio permite que você copie os descritores de tipo entre os parâmetros no modelo. Por exemplo, você pode definir um descritor de tipo chamado `CustomerTD` para o parâmetro de retorno do `GetCustomer` método. Você pode copiar o `CustomerTD` descritor de tipo no **Gerenciador do BDC**e, em seguida, colar esse descritor de tipo no parâmetro de entrada do `CreateCustomer` método. Isso impede que você precise definir o mesmo descritor de tipo mais de uma vez.
+ O Visual Studio permite que você copie os descritores de tipo entre os parâmetros no modelo. Por exemplo, você pode definir um descritor de tipo chamado `CustomerTD` para o parâmetro de retorno do `GetCustomer` método. Você pode copiar o `CustomerTD` descritor de tipo no **Gerenciador do BDC** e, em seguida, colar esse descritor de tipo no parâmetro de entrada do `CreateCustomer` método. Isso impede que você precise definir o mesmo descritor de tipo mais de uma vez.
 
 ## <a name="method-instances"></a>Instâncias de método
  Quando você cria um método, o Visual Studio adiciona uma instância de método padrão. Uma instância de método é uma referência a um método, mais os valores padrão para os parâmetros. Um único método pode ter várias instâncias de método. Cada instância é uma combinação da assinatura do método e de um conjunto de valores padrão. Para obter mais informações, consulte [como: definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -57,7 +59,7 @@ ms.locfileid: "72984461"
  O SharePoint fornece vários recursos que permitem aos usuários fornecer valores de filtro. Por exemplo, Web Parts de dados corporativos fornecem uma caixa de texto de filtro. Os usuários podem limitar os dados em uma lista inserindo um valor na caixa de texto. Para obter mais informações sobre como adicionar um descritor de filtro a um método, consulte [como: adicionar um descritor de filtro a um método localizador](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ### <a name="filter-descriptor-properties"></a>Propriedades do descritor de filtro
- Você deve definir o valor do **descritor de tipo**, **nome**e propriedades de **tipo** associados de um descritor de filtro. Todas as outras propriedades são opcionais.
+ Você deve definir o valor do **descritor de tipo**, **nome** e propriedades de **tipo** associados de um descritor de filtro. Todas as outras propriedades são opcionais.
 
  A propriedade do **descritor de tipo associada** relaciona o descritor de filtro a um parâmetro de entrada. Quando um usuário fornece um valor de filtro, o serviço do BDC passa esse valor para o método usando o parâmetro de entrada.
 
@@ -69,11 +71,11 @@ ms.locfileid: "72984461"
  Em alguns casos, o usuário pode não fornecer um valor de filtro. Você pode fornecer um valor padrão adicionando um valor padrão à instância do método ou definindo o valor padrão no código do seu método. Para obter mais informações sobre como adicionar um valor padrão à instância do método, consulte [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)). Para obter um exemplo de como definir o valor padrão de um parâmetro de entrada no código do seu método, consulte [como: adicionar um descritor de filtro a um método localizador](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md).
 
 ## <a name="validate-the-model"></a>Validar o modelo
- Você pode validar seu modelo durante o desenvolvimento. O Visual Studio identifica problemas que podem impedir que seu modelo se comportar conforme o esperado. Esses problemas aparecem no **lista de erros**do Visual Studio.
+ Você pode validar seu modelo durante o desenvolvimento. O Visual Studio identifica problemas que podem impedir que seu modelo se comportar conforme o esperado. Esses problemas aparecem no **lista de erros** do Visual Studio.
 
  Você pode validar um modelo abrindo o menu de atalho para o BDC designer e, em seguida, escolhendo **validar**. Se o modelo contiver erros, eles aparecerão na **lista de erros**. Você pode mover rapidamente o cursor para o código que contém um erro clicando duas vezes no erro na lista. Como alternativa, você pode escolher as teclas **F8** ou **Shift** + **F8** repetidamente para avançar ou retroceder os erros na lista.
 
- Os erros de validação podem ocorrer quando as regras do modelo são violadas de alguma forma. Por exemplo, se a propriedade **IsCollection** de um descritor de tipo for definida como **true**, mas não existir nenhum descritor de tipo filho, um erro de validação será exibido. Talvez seja necessário consultar as regras de um modelo BDC para entender alguns erros que aparecem no **lista de erros**do Visual Studio. Para obter mais informações sobre as regras de um modelo BDC, consulte [BdcMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
+ Os erros de validação podem ocorrer quando as regras do modelo são violadas de alguma forma. Por exemplo, se a propriedade **IsCollection** de um descritor de tipo for definida como **true**, mas não existir nenhum descritor de tipo filho, um erro de validação será exibido. Talvez seja necessário consultar as regras de um modelo BDC para entender alguns erros que aparecem no **lista de erros** do Visual Studio. Para obter mais informações sobre as regras de um modelo BDC, consulte [BdcMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
 ## <a name="debug-the-solution-that-contains-the-model"></a>Depurar a solução que contém o modelo
  Você pode depurar seu código da mesma forma que depuraria qualquer código no Visual Studio. Para depurar seu código, defina pontos de interrupção em qualquer lugar no código e inicie o depurador. O Visual Studio abre o site do SharePoint. No SharePoint, crie uma lista ou Web Part que usa seus dados corporativos. Em seguida, você pode percorrer seu código. Para obter mais informações sobre como depurar projetos do SharePoint, consulte [solução de problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
@@ -101,7 +103,7 @@ ms.locfileid: "72984461"
 ### <a name="retract-models-that-become-corrupt"></a>Cancelar modelos que se tornam corrompidos
  Na primeira vez que você iniciar o depurador, o Visual Studio implantará todo o modelo no SharePoint. Para cada vez depois, o Visual Studio atualiza o modelo no SharePoint com as alterações feitas entre as implantações.
 
- Pode haver situações em que você queira que o Visual Studio retraia o modelo do SharePoint completamente. Por exemplo, um modelo pode ser corrompido.  Para reimplantar o modelo no SharePoint, defina a propriedade **atualização incremental** do modelo como **false**e, em seguida, inicie o depurador. A propriedade **atualização incremental** aparece na janela **Propriedades** quando você seleciona o nó que representa o modelo no **BDC Explorer**. Por padrão, o nome do modelo é **BdcModel1**.
+ Pode haver situações em que você queira que o Visual Studio retraia o modelo do SharePoint completamente. Por exemplo, um modelo pode ser corrompido.  Para reimplantar o modelo no SharePoint, defina a propriedade **atualização incremental** do modelo como **false** e, em seguida, inicie o depurador. A propriedade **atualização incremental** aparece na janela **Propriedades** quando você seleciona o nó que representa o modelo no **BDC Explorer**. Por padrão, o nome do modelo é **BdcModel1**.
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>Alterar nomes de identificador de entidades no modelo
  Se você alterar o nome de um identificador depois de implantar o modelo, você poderá receber um erro de implantação. Não é possível resolver esse erro definindo a propriedade de **atualização incremental** do modelo como **false**. Você deve retrair o modelo manualmente e, em seguida, implantar a solução novamente. Para obter mais informações, consulte [solução de problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md). Você pode evitar esse erro definindo a propriedade de **atualização incremental** como **false** antes de implantar inicialmente o modelo.

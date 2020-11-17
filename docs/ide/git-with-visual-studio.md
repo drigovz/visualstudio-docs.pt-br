@@ -2,18 +2,18 @@
 title: A experiência do git no Visual Studio
 titleSuffix: ''
 description: Saiba como a nova experiência integrada do git no Visual Studio 2019 pode ajudá-lo a ser mais produtivo.
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626262"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672516"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiência de git no Visual Studio
 
@@ -30,9 +30,12 @@ Vamos orientá-lo sobre como usar a nova experiência de git no Visual Studio 20
 
 Há três maneiras de começar a usar o Git com o Visual Studio para ser mais produtivo:
 
-- [Abra um repositório git existente](#open-an-existing-local-repository). Se o seu código já estiver em seu computador, você poderá abri-lo usando **arquivo**  >  **aberto**  >  **projeto/solução** (ou **pasta** ) e o Visual Studio detectará automaticamente se ele tem um repositório git inicializado.
+- [Abra um repositório git existente](#open-an-existing-local-repository). Se o seu código já estiver em seu computador, você poderá abri-lo usando **arquivo**  >  **aberto**  >  **projeto/solução** (ou **pasta**) e o Visual Studio detectará automaticamente se ele tem um repositório git inicializado.
 - [Crie um novo repositório git](#create-a-new-git-repository). Se o seu código não estiver associado ao git, você poderá criar um novo repositório git.
 - [Clonar um repositório git existente](#clone-an-existing-git-repository). Se o código no qual você deseja trabalhar não estiver em seu computador, você poderá clonar quaisquer repositórios remotos existentes.
+
+> [!NOTE]
+> O Visual Studio 2019 agora oferece uma experiência de conta do GitHub totalmente integrada. A partir da [versão 16,8](/visualstudio/releases/2019/release-notes/), você pode adicionar as contas do GitHub e do GitHub empresarial ao seu conjunto de chaves. Você poderá adicioná-los e aproveitá-los da mesma forma como faz com contas da Microsoft, o que significa que você terá um tempo mais fácil de acessar seus recursos do GitHub no Visual Studio. Para obter mais informações, consulte a página [trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md) .
 
 ## <a name="create-a-new-git-repository"></a>Criar um novo repositório git
 
@@ -79,9 +82,9 @@ Você pode alternar entre a exibição aberta no momento e a lista de exibiçõe
 
 O Git rastreia alterações de arquivo em seu repositório à medida que você trabalha e separa os arquivos em seu repositório em três categorias. Essas alterações são equivalentes ao que você veria ao inserir o `git status` comando na linha de comando:
 
-- **Arquivos não modificados** : esses arquivos não foram alterados desde a última confirmação.
-- **Arquivos modificados** : esses arquivos têm alterações desde a última confirmação, mas você ainda não os preparou para a próxima confirmação.
-- **Arquivos preparados** : esses arquivos têm alterações que serão adicionadas à próxima confirmação.
+- **Arquivos não modificados**: esses arquivos não foram alterados desde a última confirmação.
+- **Arquivos modificados**: esses arquivos têm alterações desde a última confirmação, mas você ainda não os preparou para a próxima confirmação.
+- **Arquivos preparados**: esses arquivos têm alterações que serão adicionadas à próxima confirmação.
 
 Conforme você faz seu trabalho, o Visual Studio controla as alterações de arquivo em seu projeto na seção de **alterações** da janela de **alterações do git** .
 
@@ -142,7 +145,7 @@ O indicador também funciona como um link para levá-lo ao histórico de confirm
 
 #### <a name="commit-details"></a>Detalhes da confirmação
 
-Quando você clica duas vezes em uma **confirmação** , o Visual Studio abre seus detalhes em uma janela de ferramentas separada. A partir daqui, você pode reverter a confirmação, redefinir a confirmação, corrigir a mensagem de confirmação ou criar uma marca na confirmação. Quando você clica em um arquivo alterado na confirmação, o Visual Studio abre a exibição de **comparação** lado a lado da confirmação e seu pai.
+Quando você clica duas vezes em uma **confirmação**, o Visual Studio abre seus detalhes em uma janela de ferramentas separada. A partir daqui, você pode reverter a confirmação, redefinir a confirmação, corrigir a mensagem de confirmação ou criar uma marca na confirmação. Quando você clica em um arquivo alterado na confirmação, o Visual Studio abre a exibição de **comparação** lado a lado da confirmação e seu pai.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Captura de tela da caixa de diálogo detalhes da confirmação no Visual Studio ":::
 
@@ -154,7 +157,7 @@ O Visual Studio torna mais fácil identificar e resolver um conflito de mesclage
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Captura de tela da mensagem &quot;mesclagem concluída com conflitos&quot; no Visual Studio ":::
 
-A janela de **alterações do git** também exibe uma mensagem *de "mesclagem em andamento com conflitos* ", com os arquivos não mesclados na seção separada abaixo dele.
+A janela de **alterações do git** também exibe uma mensagem *de "mesclagem em andamento com conflitos*", com os arquivos não mesclados na seção separada abaixo dele.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Captura de tela da mensagem &quot;Mesclar em andamento com conflitos&quot; no Visual Studio ":::
 
@@ -197,11 +200,12 @@ Embora a nova experiência de git esteja agora ativada por padrão no Visual Stu
 > [!IMPORTANT]
 > Se você tiver uma sugestão para nós, informe-nos! Agradecemos a oportunidade de se envolver com você em decisões de design por meio do portal [**da comunidade de desenvolvedores**](https://aka.ms/vs-suggest) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Anunciando o lançamento da experiência de git na](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) postagem de blog do Visual Studio
 - [O lançamento da nova experiência de git](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) no YouTube
 - [A série de caixas de ferramentas do Visual Studio apresenta: o novo vídeo de experiência git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) no Channel 9 e no [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Novas atualizações incríveis para a experiência de git na](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) postagem de blog do Visual Studio
 - [Experiência de git aprimorada na postagem no blog do Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md)
 - [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes)

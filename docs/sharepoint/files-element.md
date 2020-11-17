@@ -1,5 +1,7 @@
 ---
 title: Elemento files | Microsoft Docs
+description: Exiba informações de referência sobre o elemento files, que é um elemento no esquema do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42e919bbe25047da14940203ac86793430aeadde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03473f40bb78c866f3d93dea11a20b8747afad7b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672802"
 ---
 # <a name="files-element"></a>Elemento de arquivos
   Especifica os arquivos a serem implantados com o item de projeto do SharePoint, como arquivos de elemento de recurso e a saída de projetos dependentes que não são do SharePoint.
@@ -38,7 +40,7 @@ ms.locfileid: "85546504"
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 
