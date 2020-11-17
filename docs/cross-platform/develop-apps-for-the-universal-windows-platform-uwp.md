@@ -1,5 +1,7 @@
 ---
 title: Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
+description: Saiba como criar aplicativos usando o Visual Studio e as ferramentas de desenvolvimento de aplicativo universal do Windows.
+ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef09f58d22e3cb72af5b745f16b2acf8920900e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587141"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671413"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
 
@@ -60,7 +62,7 @@ Esta é a lista de software de que você precisa:
 
 Depois de instalar este software, você precisará habilitar o dispositivo Windows 10 para desenvolvimento. Consulte [Habilitar seu dispositivo para desenvolvimento](/windows/uwp/get-started/enable-your-device-for-development). Não é mais necessária uma licença de desenvolvedor para cada dispositivo Windows 10.
 
-## <a name="universal-windows-apps"></a>Aplicativos universais do Windows
+## <a name="universal-windows-apps"></a>Aplicativos Universais do Windows
 
 Escolha sua linguagem de desenvolvimento preferencial entre C#, Visual Basic, C++ ou JavaScript para criar um aplicativo da Plataforma Universal do Windows para dispositivos Windows 10. Leia [Criar seu primeiro aplicativo](/windows/uwp/get-started/your-first-app) ou assista ao vídeo [Tools for Windows 10 Overview](https://channel9.msdn.com/Series/ConnectOn-Demand/229) (Visão geral das ferramentas para Windows 10).
 
@@ -68,6 +70,6 @@ Se você já tiver aplicativos da Windows Store 8.1, aplicativos Windows Phone 8
 
 Depois de criar o aplicativo universal do Windows, você deverá empacotá-lo para instalá-lo em um dispositivo Windows 10 ou enviá-lo para a Windows Store. Consulte [Empacotando aplicativos](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Desenvolvimento móvel multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
 title: Elemento EnableLocationBrowseButton (modelos do Visual Studio)
+description: Saiba mais sobre o elemento EnableLocationBrowseButton e como ele especifica se o botão procurar está disponível na caixa de diálogo novo projeto.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036646"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671253"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 Especifica se o botão **procurar** está disponível na caixa de diálogo **novo projeto** , para que os usuários possam modificar facilmente o diretório padrão em que um novo projeto é salvo.
@@ -87,6 +88,6 @@ Especifica se o botão **procurar** está disponível na caixa de diálogo **nov
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

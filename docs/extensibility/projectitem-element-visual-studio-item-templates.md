@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItem (modelos de item do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento ProjectItem para modelos de item e como ele aceita atributos diferentes, dependendo se o modelo é para um projeto ou um item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770724"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672327"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelos de item do Visual Studio)
 Especifica um arquivo que está incluído no modelo de item.
@@ -57,7 +59,7 @@ Especifica um arquivo que está incluído no modelo de item.
 | `TargetFileName` | Atributo opcional.<br /><br /> Especifica o nome do item que é criado a partir do modelo. Esse atributo é útil para usar a substituição de parâmetro para criar um nome de item. |
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -100,7 +102,7 @@ Especifica um arquivo que está incluído no modelo de item.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)
 - [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)

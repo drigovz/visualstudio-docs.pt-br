@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399595"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672128"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -75,13 +75,14 @@ A `require-mssql` ferramenta define um número de argumentos de linha de comando
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Exemplo de uso
+Veja abaixo um exemplo de como executar `require-msssql` o usando um `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-mssql"></a>.devinit.js, que instalará o MSSQL:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs MSSQL.",
             "tool": "require-mssql",
             "input": "install",
         }

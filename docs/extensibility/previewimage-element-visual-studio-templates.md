@@ -1,5 +1,7 @@
 ---
 title: Elemento PreviewImage (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento PreviewImage e como ele especifica o nome do arquivo para a imagem de visualização que será exibida na caixa de diálogo novo projeto ou adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702014"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672340"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelos do Visual Studio)
 Especifica a imagem de visualização, como um nome de arquivo, para a imagem de visualização que aparecerá na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
@@ -35,10 +37,10 @@ Especifica a imagem de visualização, como um nome de arquivo, para a imagem de
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -54,6 +56,6 @@ Especifica a imagem de visualização, como um nome de arquivo, para a imagem de
 ## <a name="remarks"></a>Comentários
  `PreviewImage` é um elemento opcional.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

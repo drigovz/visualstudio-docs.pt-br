@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItem (modelos de projeto do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento ProjectItem para modelos de projeto e como ele aceita atributos diferentes, dependendo se o modelo é para um projeto ou um item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770306"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671318"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelos de projeto do Visual Studio)
 Especifica um arquivo que está incluído no modelo de projeto.
@@ -60,7 +62,7 @@ Especifica um arquivo que está incluído no modelo de projeto.
 | `OpenOrder` | Atributo opcional.<br /><br /> Especifica um valor numérico que representa a ordem em que os itens serão abertos em seus respectivos editores. Todos os valores devem ser múltiplos de 10. Os itens com `OpenOrder` valores mais altos são abertos primeiro. |
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -137,7 +139,7 @@ Especifica um arquivo que está incluído no modelo de projeto.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)

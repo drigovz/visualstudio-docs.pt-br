@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6e3d2fdaf6be019cae504d4f71258d410d232ff5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400201"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672002"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -36,35 +36,60 @@ A `input` propriedade deve ser a `name` do a `windows feature` ser instalada. Um
 
 ### <a name="additional-options"></a>Additional-Options
 
-Nenhum.
+nenhuma.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
 O comportamento padrão da `windowsfeature-enable` ferramenta é erro, conforme `input` necessário.
 
 ## <a name="example-usage"></a>Exemplo de uso
+Abaixo estão exemplos de como executar `windowsfeature-enable` o usando um `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-iis"></a>.devinit.jsno que irá instalar o IIS:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs IIS.",
             "tool": "windowsfeature-enable",
             "input": "web-server",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-net-framework"></a>.devinit.js, que instalará o .NET Framework:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the .NET Framework 3.5.",
             "tool": "windowsfeature-enable",
             "input": "net-framework-features"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-net-framework-45"></a>.devinit.js, que instalará o .NET Framework 4,5:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the .NET Framework 4.5.",
             "tool": "windowsfeature-enable",
             "input": "net-framework-45-features"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-windows-subsystem-for-linux-20"></a>.devinit.js, que instalará o subsistema do Windows para Linux 2,0:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs Windows Subsystem for Linux 2.0.",
             "tool": "windowsfeature-enable",
             "input": "Microsoft-Windows-Subsystem-Linux"
         }

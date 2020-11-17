@@ -1,5 +1,7 @@
 ---
 title: Elemento CreateInPlace (modelos do Visual Studio)
+description: Saiba mais sobre o elemento CreateInPlace e como ele especifica se deseja criar o projeto e executar a substituição de parâmetros em um local específico ou temporário.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739667"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671976"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (modelos do Visual Studio)
 Especifica se deseja criar o projeto e executar a substituição de parâmetro no local especificado, ou executar a substituição de parâmetro em um local temporário e, em seguida, salvar o projeto no local especificado.
@@ -27,7 +29,7 @@ Especifica se deseja criar o projeto e executar a substituição de parâmetro n
  \<VSTemplate> \<TemplateData>
  \<CreateInPlace>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CreateInPlace> true/false </CreateInPlace>
@@ -37,10 +39,10 @@ Especifica se deseja criar o projeto e executar a substituição de parâmetro n
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -84,6 +86,6 @@ Especifica se deseja criar o projeto e executar a substituição de parâmetro n
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

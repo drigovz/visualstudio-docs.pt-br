@@ -1,5 +1,7 @@
 ---
 title: Elemento Name (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento Name e como ele especifica o nome do modelo como ele aparece na caixa de diálogo novo projeto ou adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702450"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671175"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelos do Visual Studio)
 Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
@@ -26,7 +28,7 @@ Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto
  \<VSTemplate> \<TemplateData>
  \<Name>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Name> Template Name </Name>
@@ -47,7 +49,7 @@ Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto
 |`ID`|Atributo opcional, para cenários de usuário avançados.<br /><br /> Especifica a ID de recurso do Visual Studio.|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -90,6 +92,6 @@ Especifica o nome do modelo como ele aparece na caixa de diálogo **novo projeto
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

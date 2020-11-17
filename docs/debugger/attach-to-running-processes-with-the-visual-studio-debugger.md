@@ -1,5 +1,5 @@
 ---
-title: Anexar a processos em execução com o depurador | Microsoft Docs
+title: Anexar a processos em execução com o depurador
 ms.custom: seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959855"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671440"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 
@@ -101,10 +101,10 @@ Para obter instruções mais completas sobre a depuração de aplicativos ASP.NE
 
 1. Na caixa **destino da conexão** , selecione o computador remoto, usando um dos seguintes métodos:
 
-   - Selecione a seta suspensa ao lado de **destino da conexão**e selecione o nome do computador na lista suspensa.
+   - Selecione a seta suspensa ao lado de **destino da conexão** e selecione o nome do computador na lista suspensa.
    - Digite o nome do computador na caixa **destino da conexão** e pressione **Enter**.
 
-     Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: ** \<remote computer name> :p classificar**
+     Verifique se o Visual Studio adiciona a porta necessária ao nome do computador, que aparece no formato: **\<remote computer name> :p classificar**
 
      ::: moniker range=">= vs-2019"
 
@@ -159,85 +159,15 @@ Em alguns casos, quando você depura em uma sessão Área de Trabalho Remota (se
 
 Se nenhuma dessas soluções alternativas é possível, uma terceira opção é anexar ao processo executando `vsjitdebugger.exe -p <ProcessId>` na linha de comando do Windows. Você pode determinar a ID do processo usando *tlist.exe*. Para obter *tlist.exe*, baixe e instale as ferramentas de depuração para Windows, disponíveis em  [downloads do WDK e do WinDbg](/windows-hardware/drivers/download-the-wdk).
 
-::: moniker range=">= vs-2019"
-
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Anexar a um processo do .NET Core em execução no Linux usando SSH
 
 Para obter mais informações, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Anexar a um processo em execução em um contêiner do Docker do Linux
+::: moniker range=">= vs-2019"
 
-Você pode anexar o depurador do Visual Studio a um processo em execução em um contêiner do Docker do Linux .NET Core em seu computador local ou remoto usando a caixa de diálogo **anexar ao processo** .
+## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Anexar a um processo em execução em um contêiner do Docker
 
-> [!IMPORTANT]
-> Para usar esse recurso, você deve instalar a carga de trabalho de desenvolvimento entre plataformas do .NET Core e ter acesso local ao código-fonte.
-
-**Para anexar a um processo em execução em um contêiner do Docker do Linux:**
-
-1. No Visual Studio, selecione **depurar > anexar ao processo (CTRL + ALT + P)** para abrir a caixa de diálogo **anexar ao processo** .
-
-![Anexar ao menu processar](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
-
-2. Defina o **tipo de conexão** como **Docker (contêiner do Linux)**.
-3. Selecione **Localizar...** para definir o **destino de conexão** por meio da caixa de diálogo **selecionar contêiner do Docker** .
-
-    Você pode depurar um processo de contêiner do Docker localmente ou remotamente.
-
-    **Para depurar um processo de contêiner do Docker localmente:**
-    1. Definir **host da CLI do Docker** para o **computador local**.
-    1. Selecione um contêiner em execução para anexar na lista e clique em **OK**.
-
-    ![Selecionar menu do contêiner do Docker](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
-
-    **B. Para depurar um processo de contêiner do Docker remotamente:**
-
-    > [!NOTE]
-    > Há duas opções para se conectar remotamente a um processo em execução em um contêiner do Docker. A primeira opção, para usar SSH, é ideal se você não tiver as ferramentas do Docker instaladas em seu computador local.  Se você tiver as ferramentas do Docker instaladas localmente e tiver um daemon do Docker configurado para aceitar solicitações remotas, tente a segunda opção, usando um daemon do Docker.
-
-    1. ***Para se conectar a um computador remoto via SSH:***
-        1. Selecione **Adicionar...** para se conectar a um sistema remoto.<br/>
-        ![Conectar-se a um sistema remoto](../debugger/media/connect-remote-system.png "Conectar-se a um sistema remoto")
-        1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao SSH ou ao daemon com êxito e pressione **OK**.
-
-    1. ***Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-        1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em **host do Docker (opcional)** e clique no link atualizar.
-        1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao daemon com êxito e pressione **OK**.
-
-4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C# no Visual Studio!
-
-    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete.png "Menu de anexação do Docker do Linux concluído")
-
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Anexar a um processo em execução em um contêiner do Docker do Windows
-
-Você pode anexar o depurador do Visual Studio a um processo em execução em um contêiner do Docker do Windows em seu computador local usando a caixa de diálogo **anexar ao processo** .
-
-> [!IMPORTANT]
-> Para usar esse recurso com um processo do .NET Core, você deve instalar a carga de trabalho de desenvolvimento entre plataformas do .NET Core e ter acesso local ao código-fonte.
-
-**Para anexar a um processo em execução em um contêiner do Docker do Windows:**
-
-1. No Visual Studio, selecione **depurar > anexar ao processo** (ou **Ctrl + Alt + P**) para abrir a caixa de diálogo **anexar ao processo** .
-
-   ![Anexar ao menu processar](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
-
-2. Defina o **tipo de conexão** como **Docker (contêiner do Windows)**.
-3. Selecione **Localizar...** para definir o **destino de conexão** usando a caixa de diálogo **selecionar contêiner do Docker** .
-
-    > [!IMPORTANT]
-    > O processo de destino deve ter a mesma arquitetura de processador que o contêiner do Windows do Docker em que está sendo executado.
-
-   A definição do destino para um contêiner remoto via SSH não está disponível no momento e só pode ser feita usando um daemon do Docker.
-
-    ***Para definir o destino para um contêiner remoto executando um processo por meio de um [daemon do Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Especifique o endereço do daemon (ou seja, via TCP, IP, etc.) em **host do Docker (opcional)** e clique no link atualizar.
-
-    1. Selecione um contêiner em execução ao qual anexar depois de se conectar ao daemon com êxito e escolha OK.
-
-4. Escolha o processo de contêiner correspondente na lista de **processos disponíveis** e selecione **anexar** para iniciar a depuração do processo de contêiner do C#.
-
-    ![Menu de anexo do Docker concluído](../debugger/media/docker-attach-complete-windows.png "Menu de anexação do Docker do Windows concluído")
-
-5.  Escolha o processo de contêiner correspondente na lista de processos disponíveis e escolha **anexar** para iniciar a depuração do processo de contêiner do C#.
+A partir do Visual Studio 2019, você pode anexar o depurador do Visual Studio a um processo em execução em um contêiner do Docker. Para um contêiner do Docker do Linux .NET Core, consulte [anexar a um processo em execução em um contêiner do Docker do Linux](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container). Para um contêiner do Docker do Windows, consulte [anexar a um processo em execução em um contêiner do Docker do Windows](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container).
 
 ::: moniker-end
 
@@ -258,7 +188,7 @@ Para que o depurador se anexe ao código escrito em C++, o código precisa emiti
 
 Para depuração de script do lado do cliente, a depuração de script deve ser habilitada no navegador. Para depurar o script do lado do cliente no Chrome, escolha **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** como o tipo de código e, dependendo do seu tipo de aplicativo, talvez seja necessário fechar todas as instâncias do Chrome e iniciar o navegador no modo de depuração (tipo `chrome.exe --remote-debugging-port=9222` de uma linha de comando). Em versões anteriores do Visual Studio, o depurador de scripts do Chrome era o **Web kit**.
 
-Para selecionar rapidamente um processo em execução para anexar ao, no Visual Studio, digite **Ctrl** + **ALT** + **P**e digite a primeira letra do nome do processo.
+Para selecionar rapidamente um processo em execução para anexar ao, no Visual Studio, digite **Ctrl** + **ALT** + **P** e digite a primeira letra do nome do processo.
 
 |Cenário|Método de depuração|Nome do processo|Anotações e links|
 |-|-|-|-|
@@ -267,10 +197,11 @@ Para selecionar rapidamente um processo em execução para anexar ao, no Visual 
 |Depurar script do lado do cliente em um servidor IIS local, para tipos de aplicativos com suporte |Usar **anexar ao processo**|*chrome.exe*, *MicrosoftEdgeCP.exe* ou *iexplore.exe*|A depuração de script deve ser habilitada. Para o Chrome, você também deve executar o Chrome no modo de depuração (tipo `chrome.exe --remote-debugging-port=9222` de uma linha de comando) e selecionar **JavaScript (Chrome)** no campo **anexar a** .|
 |Depurar um aplicativo em C#, Visual Basic ou C++ no computador local|Usar a depuração padrão (**F5**) ou **anexar ao processo**|*\<appname>. exe*|Na maioria dos cenários, use a depuração padrão e não **anexe ao processo**.|
 |Depuração remota de um aplicativo de área de trabalho do Windows|Ferramentas remotas|N/D| Consulte [depuração remota de um aplicativo C# ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [depuração remota de um aplicativo C++](../debugger/remote-debugging-cpp.md)|
-|Depurar o .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe*|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para aplicativos em contêineres, consulte as seções anteriores neste artigo.|
+|Depurar o .NET Core no Linux|Usar **anexar ao processo**|*dotnet.exe* ou um nome de processo exclusivo|Para usar o SSH, consulte [depuração remota do .NET Core em execução no Linux usando SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Para aplicativos em contêineres, consulte [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
+|Depurar um aplicativo em contêineres|*dotnet.exe* ou um nome de processo exclusivo|Veja [anexar a um processo em execução em um contêiner do Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Python de depuração remota no Linux|Usar **anexar ao processo**|*debugpy*|Consulte [anexar remotamente de ferramentas do Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Depurar um aplicativo ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Usar **anexar ao processo**|*iiexpress.exe*|Isso pode ser útil para fazer com que seu aplicativo seja carregado mais rapidamente, como (por exemplo) durante a criação de perfil. |
-|Depurar outros tipos de aplicativos com suporte em um processo de servidor|Se o servidor for remoto, use as ferramentas remotas e **anexe ao processo**|*chrome.exe*, *iexplore.exe*ou outros processos|Se necessário, use Monitor de Recursos para ajudar a identificar o processo. Consulte [depuração remota](../debugger/remote-debugging.md).|
+|Depurar outros tipos de aplicativos com suporte em um processo de servidor|Se o servidor for remoto, use as ferramentas remotas e **anexe ao processo**|*chrome.exe*, *iexplore.exe* ou outros processos|Se necessário, use Monitor de Recursos para ajudar a identificar o processo. Consulte [depuração remota](../debugger/remote-debugging.md).|
 |Depuração remota de um aplicativo universal do Windows (UWP), OneCore, HoloLens ou aplicativo de IoT|Depurar pacote do aplicativo instalado|N/D|Confira [depurar um pacote do aplicativo instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|
 |Depurar um aplicativo universal do Windows (UWP), OneCore, HoloLens ou aplicativo IoT que você não iniciou no Visual Studio|Depurar pacote do aplicativo instalado|N/D|Confira [depurar um pacote do aplicativo instalado](debug-installed-app-package.md) em vez de usar **anexar ao processo**|
 

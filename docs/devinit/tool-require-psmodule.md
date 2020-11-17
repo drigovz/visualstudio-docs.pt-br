@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d899faa4c830e443c4f6f597c191313d53514efd
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672114"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -59,18 +59,27 @@ A `require-psmodule` ferramenta define um número de `Install-Module` argumentos
 
 
 ## <a name="example-usage"></a>Exemplo de uso
+Abaixo estão exemplos de como executar `require-psmodule` o usando um `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.js, que instalará o módulo PowerShellGet:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs the PowerShellGet module.",
             "tool": "require-psmodule",
             "input": "PowerShellGet",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-powershellget-module-from-a-specific-repository"></a>.devinit.js, que instalará o módulo PowerShellGet de um repositório específico:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the PowerShellGet module from a specific repository.",
             "tool": "require-psmodule",
             "input": "PowerShellGet",
             "additionalOptions": "-Repository PSGallery"

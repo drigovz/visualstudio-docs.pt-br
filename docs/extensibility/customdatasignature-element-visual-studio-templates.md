@@ -1,5 +1,7 @@
 ---
 title: Elemento CustomDataSignature (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento CustomDataSignature e como ele especifica a assinatura de texto para localizar os dados personalizados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739435"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671513"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelos do Visual Studio)
 Especifica a assinatura de texto para localizar os dados personalizados.
@@ -25,7 +27,7 @@ Especifica a assinatura de texto para localizar os dados personalizados.
  \<VSTemplate> \<TemplateData>
  \<CustomDataSignature>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CustomDataSignature>"string"</CustomDataSignature>
@@ -35,10 +37,10 @@ Especifica a assinatura de texto para localizar os dados personalizados.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -54,6 +56,6 @@ Especifica a assinatura de texto para localizar os dados personalizados.
 ## <a name="remarks"></a>Comentários
  `CustomDataSignature` é um elemento opcional.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

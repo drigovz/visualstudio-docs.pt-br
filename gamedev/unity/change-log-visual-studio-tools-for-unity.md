@@ -2,7 +2,7 @@
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Windows) | Microsoft Docs
 description: Exiba o log de alterações para Ferramentas do Visual Studio para Unity, Windows. Confira as alterações da versão 1.0.0.0 a 4.7.0.0 e posteriores.
 ms.custom: ''
-ms.date: 7/30/2020
+ms.date: 11/13/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,65 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f8a1ed0520bb1a2e5d213cd9a670769f70251ebb
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341501"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671240"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="4820"></a>4.8.2.0
+Lançado em 10 de novembro de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integrar**
+
+  - Diagnóstico aprimorado [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) para aplicar a tudo que herda de `Component` , não apenas `MonoBehaviour` .
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Correção de invalidação de mensagem de CodeLens.
+
+## <a name="4810"></a>4.8.1.0
+Lançado em 13 de outubro de 2020
+
+### <a name="new-features"></a>Novos recursos
+
+- **Período**
+
+  - Suporte adicionado para conversão implícita com invocações. Anteriormente, o avaliador impôs a verificação de tipo estrito, resultando em `Failed to find a match for method([parameters...])` mensagens de aviso.
+
+- **Integrar**
+
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md)Diagnóstico adicionado. Você não deve usar `System.Reflection` recursos em mensagens críticas de desempenho como `Update` , `FixedUpdate` , `LateUpdate` ou `OnGUI` .
+
+  - Melhoria [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) e [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) supressers, com suporte para todos os `AssetPostprocessor` métodos estáticos.
+
+  - Adicionado o [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) supressor para `CS8618` . `C# 8.0` apresenta tipos de referência anuláveis e tipos de referência não anuláveis. A detecção de inicialização de tipos herdados de `UnityEngine.Object` não tem suporte e resultará em erros.
+
+  - Agora, usando o mesmo mecanismo de geração de projeto asmdef e de Player para o Unity 2019. x e 2020. x +.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Correção de conclusão inesperada de mensagens em comentários.
+
+## <a name="4800"></a>4.8.0.0 
+Lançado em 14 de setembro de 2020
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integrar**
+
+  - Geração fixa de projeto de Player com Unity 2019. x.
 
 ## <a name="4710"></a>4.7.1.0
 Lançado em 5 de agosto de 2020
@@ -1262,19 +1311,19 @@ Lançado em 2 de abril de 2015
 
 - **Explorador de projetos de Unity:**
 
-  - renomeie a classe automaticamente ao renomear um arquivo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções** ).
+  - renomeie a classe automaticamente ao renomear um arquivo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções**).
 
   - Selecione automaticamente scripts recém-criados no Explorador de Projeto do Unity.
 
-  - Acompanhe o script ativo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções** ).
+  - Acompanhe o script ativo no Explorador de Projeto do Unity (consulte a caixa de diálogo **Opções**).
 
-  - Faça a sincronização dupla do Gerenciador de Soluções do Visual Studio (consulte a caixa de diálogo **Opções** ).
+  - Faça a sincronização dupla do Gerenciador de Soluções do Visual Studio (consulte a caixa de diálogo **Opções**).
 
   - Adote ícones do Visual Studio no Explorador de Projeto do Unity.
 
 - **Depurador**
 
-  - selecione o destino de depuração ativo em uma lista de destinos de depuração salvos ou usados recentemente (consulte a caixa de diálogo **Opções** ).
+  - selecione o destino de depuração ativo em uma lista de destinos de depuração salvos ou usados recentemente (consulte a caixa de diálogo **Opções**).
 
   - Crie pontos de interrupção de função em métodos MonoBehavior e aplique-os a várias classes de MonoBehavior.
 
@@ -1282,7 +1331,7 @@ Lançado em 2 de abril de 2015
 
   - Dê suporte à contagem de ocorrências de ponto de interrupção no depurador.
 
-  - Dê suporte a quebra na exceção no depurador (Experimental. consulte a caixa de diálogo **Opções** ).
+  - Dê suporte a quebra na exceção no depurador (Experimental. consulte a caixa de diálogo **Opções**).
 
   - Dê suporte à criação de objetos e matrizes ao avaliar expressões no depurador.
 

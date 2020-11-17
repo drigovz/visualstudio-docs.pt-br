@@ -1,5 +1,7 @@
 ---
 title: Elemento CustomParameter (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento CustomParameter e como ele contém um nome de parâmetro personalizado e um valor a ser usado quando um projeto ou item é criado a partir do modelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,17 +15,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739423"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671943"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Elemento CustomParameter (modelos do Visual Studio)
 Contém um nome de parâmetro personalizado e um valor a ser usado quando um projeto ou item é criado a partir do modelo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CustomParameter Name="name" Value="value">
@@ -40,7 +42,7 @@ Contém um nome de parâmetro personalizado e um valor a ser usado quando um pro
 |`Value`|Obrigatórios. O valor de substituição para o parâmetro.|
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -61,7 +63,7 @@ Contém um nome de parâmetro personalizado e um valor a ser usado quando um pro
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Elemento CustomParameters (modelos do Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

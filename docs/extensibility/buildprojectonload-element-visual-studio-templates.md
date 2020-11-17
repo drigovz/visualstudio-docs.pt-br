@@ -1,5 +1,7 @@
 ---
 title: Elemento BuildProjectOnload (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento BuildProjectOnload e como ele cria apenas novos projetos conforme você cria e adiciona-os a uma solução.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739960"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671586"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (modelos do Visual Studio)
 O cria apenas novos projetos conforme você cria e adiciona-os a uma solução. A solução inteira não é criada.
@@ -37,10 +39,10 @@ Hierarquia de elementos:
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -84,7 +86,7 @@ Hierarquia de elementos:
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Elemento e atributo BuildOnLoad](buildonload-visual-studio-templates.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

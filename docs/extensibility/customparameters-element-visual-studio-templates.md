@@ -1,5 +1,7 @@
 ---
 title: Elemento CustomParameters (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento CustomParameters e como ele agrupa os parâmetros personalizados que devem ser passados para o assistente de modelo quando o assistente faz substituições de parâmetro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,17 +15,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f524996c226f001c68ddc7ac9aa8cb3b99857fc5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c78c8a038df33d9b548229966402d0058f53144
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739413"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671473"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>Elemento CustomParameters (modelos do Visual Studio)
 Agrupa os parâmetros personalizados que devem ser passados para o assistente de modelo quando o assistente faz substituições de parâmetro.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CustomParameters>
@@ -36,7 +38,7 @@ Agrupa os parâmetros personalizados que devem ser passados para o assistente de
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -62,7 +64,7 @@ Agrupa os parâmetros personalizados que devem ser passados para o assistente de
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Elemento CustomParameter (modelos do Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

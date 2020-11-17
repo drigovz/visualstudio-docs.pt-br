@@ -1,5 +1,7 @@
 ---
 title: Extensões de depuração para as ferramentas do SharePoint no Visual Studio | Microsoft Docs
+description: Extensões de depuração para as ferramentas do SharePoint no Visual Studio. Depurar extensões de ferramentas do SharePoint na instância experimental ou na instância regular do VS.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584627"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671214"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Extensões de depuração para as ferramentas do SharePoint no Visual Studio
   Você pode depurar extensões de ferramentas do SharePoint na instância experimental ou na instância regular do Visual Studio. Se você precisar solucionar problemas de comportamento de uma extensão, também poderá modificar valores de registro para exibir informações de erro adicionais e configurar como o Visual Studio executa comandos do SharePoint.
@@ -92,7 +94,7 @@ ms.locfileid: "91584627"
 4. Escolha o botão **reiniciar agora** para concluir a desinstalação.
 
 ## <a name="debug-sharepoint-commands"></a>Depurar comandos do SharePoint
- Se desejar depurar um comando do SharePoint que faça parte de uma extensão de ferramentas do SharePoint, você deverá anexar o depurador ao processo de *vssphost4.exe* . Esse é o processo de host de 64 bits que executa comandos do SharePoint. Para obter mais informações sobre os comandos e *vssphost4.exe*do SharePoint, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+ Se desejar depurar um comando do SharePoint que faça parte de uma extensão de ferramentas do SharePoint, você deverá anexar o depurador ao processo de *vssphost4.exe* . Esse é o processo de host de 64 bits que executa comandos do SharePoint. Para obter mais informações sobre os comandos e *vssphost4.exe* do SharePoint, consulte [chamar os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>Para anexar o depurador ao processo de vssphost4.exe
 
@@ -110,7 +112,7 @@ ms.locfileid: "91584627"
 5. Na instância do Visual Studio que está sendo depurada, execute as etapas necessárias para executar o comando.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificar valores do registro para ajudar a depurar extensões de ferramentas do SharePoint
- Ao depurar uma extensão das ferramentas do SharePoint no Visual Studio, você pode modificar valores no registro para ajudá-lo a solucionar problemas da extensão. Os valores existem na chave **HKEY_CURRENT_USER \software\microsoft\visualstudio\11.0\SharePointTools** . Esses valores não existem por padrão.
+ Ao depurar uma extensão das ferramentas do SharePoint no Visual Studio, você pode modificar valores no registro para ajudá-lo a solucionar problemas da extensão. Os valores existem na chave de **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** . Esses valores não existem por padrão.
 
  Para ajudar a solucionar qualquer extensão das ferramentas do SharePoint, você pode criar e definir o valor EnableDiagnostics. A tabela a seguir descreve esse valor.
 
@@ -128,7 +130,7 @@ ms.locfileid: "91584627"
 |MaxReceivedMessageSize|REG_DWORD que especifica o tamanho máximo permitido, em bytes, das mensagens do WCF que são passadas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|
 |MaxStringContentLength|REG_DWORD que especifica o tamanho máximo permitido, em bytes, de cadeias de caracteres que são transmitidas entre o Visual Studio e *vssphost4.exe*.<br /><br /> O padrão é 1.048.576 bytes (1 MB).|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Estenda as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Implantar extensões para as ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

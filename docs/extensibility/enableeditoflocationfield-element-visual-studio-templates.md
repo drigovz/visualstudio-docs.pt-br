@@ -1,5 +1,6 @@
 ---
 title: Elemento EnableEditOfLocationField (modelos do Visual Studio)
+description: Saiba mais sobre o elemento EnableEditOfLocationField e como ele especifica se o usuário pode editar o campo local.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037400"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671292"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelos do Visual Studio)
 Especifica se o usuário pode editar o campo local.
@@ -86,6 +87,6 @@ Especifica se o usuário pode editar o campo local.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e item](../ide/creating-project-and-item-templates.md)

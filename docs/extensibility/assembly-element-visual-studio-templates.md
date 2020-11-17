@@ -1,5 +1,8 @@
 ---
 title: Elemento assembly (modelos do Visual Studio) | Microsoft Docs
+titleSuffix: ''
+description: Saiba mais sobre o elemento assembly e como ele especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly aos projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671640"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento assembly (modelos do Visual Studio)
 Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos.
@@ -39,10 +42,10 @@ Especifica informações sobre um assembly, que o modelo usa para adicionar uma 
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -95,6 +98,6 @@ Especifica informações sobre um assembly, que o modelo usa para adicionar uma 
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
