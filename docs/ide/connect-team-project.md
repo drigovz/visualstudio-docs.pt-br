@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4e4fdfb26c601ce6b706c1c946ea9afe9b18ecb2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850085"
+ms.locfileid: "94878251"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conectar-se a projetos no Team Explorer
 
@@ -32,7 +32,7 @@ O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, reposi
 
 ::: moniker-end
 
-![Home page do Team Explorer no Visual Studio](media/team-explorer/team-explorer.png)
+![Home page do Team Explorer no Visual Studio](media/team-explorer/team-explorer.png "A home page do Team Explorer no Visual Studio.")
 
 ::: moniker range="vs-2017"
 
@@ -45,22 +45,22 @@ O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, reposi
 
 Conecte-se a um projeto ou um repositório na página **Conectar**.
 
-![Página Conectar no Team Explorer](media/team-explorer/connect.png)
+![Página Conectar no Team Explorer](media/team-explorer/connect.png "A página Team Explorer-Connect no Visual Studio")
 
 Para se conectar a um projeto:
 
 1. Abra a página **Conectar** escolhendo o ícone **Gerenciar Conexões**.
 
-   ![Botão Gerenciar Conexões no Team Explorer](media/team-explorer/manage-connections.png)
+   ![Botão Gerenciar Conexões no Team Explorer](media/team-explorer/manage-connections.png "O botão Team Explorer-gerenciar conexões no Visual Studio.")
 
 1. Na página **Conectar**, escolha **Gerenciar Conexões** > **Conectar-se a um projeto**.
 
-   ![Conectar-se a um projeto no Team Explorer](media/team-explorer/connect-project.png)
+   ![Conectar-se a um projeto no Team Explorer](media/team-explorer/connect-project.png "A opção Team Explorer-conectar a um projeto no Visual Studio.")
 
 > [!TIP]
 > Se você quiser abrir um projeto de um repositório, consulte [abrir um projeto de um repositório](../get-started/tutorial-open-project-from-repo.md). Se você quiser criar um novo projeto ou adicionar usuários a um projeto, consulte [criar um projeto (Azure DevOps)](/azure/devops/organizations/projects/create-project) e [Adicionar usuários a um projeto ou equipe (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [A nova experiência de git no Visual Studio](git-with-visual-studio.md)
 - [Tutorial: abrir um projeto de um repositório](../get-started/tutorial-open-project-from-repo.md)

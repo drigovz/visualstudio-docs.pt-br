@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565338"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878277"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
@@ -38,11 +38,11 @@ Na lista de membros, o ícone à esquerda representa o tipo do membro, como name
 
 ![Lista de membros do Visual Studio](../ide/media/vs2015_intellisense.png)
 
-Você pode invocar o recurso **listar Membros** manualmente digitando **Ctrl** + **J**, escolhendo **Editar**  >  **IntelliSense**  >  **membros da lista**do IntelliSense ou escolhendo o botão **listar Membros** na barra de ferramentas do editor. Quando é invocada em uma linha em branco ou fora de um escopo reconhecível, a lista exibe símbolos no namespace global.
+Você pode invocar o recurso **listar Membros** manualmente digitando **Ctrl** + **J**, escolhendo **Editar**  >  **IntelliSense**  >  **membros da lista** do IntelliSense ou escolhendo o botão **listar Membros** na barra de ferramentas do editor. Quando é invocada em uma linha em branco ou fora de um escopo reconhecível, a lista exibe símbolos no namespace global.
 
 Para desativar os membros da lista por padrão (para que ele não apareça, a menos que seja especificamente invocado), vá para **ferramentas**  >  **Opções**  >  **todos os idiomas** e desmarque **listar Membros automaticamente**. Se você deseja desligar Listar Membros somente para uma linguagem específica, vá para as configurações **Gerais** dessa linguagem.
 
-Você também pode alterar para o modo de sugestão, no qual apenas o texto que você digita é inserido no código. Por exemplo, se você inserir um identificador que não está na lista e pressionar a **Guia**, no modo de preenchimento, a entrada poderá substituir o identificador digitado. Para alternar entre o modo de conclusão e o modo de sugestão, pressione **Ctrl** + **ALT** + **espaço**ou escolha **Editar**  >  **IntelliSense**  >  **modo de conclusão de alternância**do IntelliSense.
+Você também pode alterar para o modo de sugestão, no qual apenas o texto que você digita é inserido no código. Por exemplo, se você inserir um identificador que não está na lista e pressionar a **Guia**, no modo de preenchimento, a entrada poderá substituir o identificador digitado. Para alternar entre o modo de conclusão e o modo de sugestão, pressione **Ctrl** + **ALT** + **espaço** ou escolha **Editar**  >  **IntelliSense**  >  **modo de conclusão de alternância** do IntelliSense.
 
 ## <a name="parameter-info"></a>Informações de Parâmetro
 
@@ -54,7 +54,7 @@ O parâmetro em negrito indica o próximo parâmetro que é necessário à medid
 
 Quando você anota funções e parâmetros com comentários da Documentação XML, os comentários são exibidos como Informações do Parâmetro. Para obter mais informações, consulte [Fornecer comentários de código XML](reference/generate-xml-documentation-comments.md).
 
-Você pode invocar manualmente informações de parâmetro escolhendo **Editar**  >  informações de**IntelliSense**  >  **parâmetro**do IntelliSense, pressionando **Ctrl** + **Shift** + **espaço**ou escolhendo o botão **informações do parâmetro** na barra de ferramentas do editor.
+Você pode invocar manualmente informações de parâmetro escolhendo **Editar**  >  informações de **IntelliSense**  >  **parâmetro** do IntelliSense, pressionando **Ctrl** + **Shift** + **espaço** ou escolhendo o botão **informações do parâmetro** na barra de ferramentas do editor.
 
 ## <a name="quick-info"></a>Informação Rápida
 
@@ -66,15 +66,15 @@ Quando você seleciona um membro na caixa **Listar Membros**, as Informações R
 
 ![Informações do parâmetro em um arquivo de código C&#35;](../ide/media/vs2015_paraminfo.png)
 
-Você pode invocar manualmente informações rápidas escolhendo **Editar**  >  **IntelliSense**  >  **informações rápidas**do IntelliSense, pressionando **Ctrl** + **I**ou escolhendo o botão **informações rápidas** na barra de ferramentas do editor.
+Você pode invocar manualmente informações rápidas escolhendo **Editar**  >  **IntelliSense**  >  **informações rápidas** do IntelliSense, pressionando **Ctrl** + **I** ou escolhendo o botão **informações rápidas** na barra de ferramentas do editor.
 
 Se uma função estiver sobrecarregada, o IntelliSense não poderá exibir informações de todos os formulários da sobrecarga.
 
-Você pode ativar as informações rápidas para o código C++ navegando até **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C/C++**  >  **avançado**e definindo **informações rápidas automáticas** para `false` .
+Você pode ativar as informações rápidas para o código C++ navegando até **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **C/C++**  >  **avançado** e definindo **informações rápidas automáticas** para `false` .
 
 ## <a name="complete-word"></a>Completar Palavra
 
-Completar Palavra completa o restante de uma variável, um comando ou um nome de função uma vez que você tenha inserido caracteres suficientes para remover ambiguidades do termo. Você pode invocar a palavra completa escolhendo **Editar**  >  **IntelliSense**  >  **Complete Word**, pressionando **Ctrl** + **espaço**ou escolhendo o botão **concluir palavra** na barra de ferramentas do editor.
+Completar Palavra completa o restante de uma variável, um comando ou um nome de função uma vez que você tenha inserido caracteres suficientes para remover ambiguidades do termo. Você pode invocar a palavra completa escolhendo **Editar**  >  **IntelliSense**  >  **Complete Word**, pressionando **Ctrl** + **espaço** ou escolhendo o botão **concluir palavra** na barra de ferramentas do editor.
 
 ## <a name="intellisense-options"></a>Opções do IntelliSense
 
@@ -83,7 +83,7 @@ As opções do IntelliSense são ativadas por padrão. Para desativá-las, escol
 ## <a name="intellisense-icons"></a>Ícones do IntelliSense
 Os ícones no IntelliSense podem transmitir significado adicional com modificadores de ícone. Esses são estrelas, corações e cadeados sobrepostos ao ícone do objeto e que transmitem, respectivamente, os significados de protegido, interno ou privado.
 
-|    ícone    |    Acessibilidade    |    Descrição    |
+|    Ícone    |    Acessibilidade    |    Descrição    |
 |------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Modificador de ícone público](../ide/media/intellisensePublicNoModifier.png)       |    Classe pública    |    O acesso não é restrito.   |
 | ![Modificador de ícone protegido](../ide/media/intellisenseProtectedModifier.png)       |    Classe protegida    |    O acesso é limitado à classe que os contém ou aos tipos derivados da classe que os contém.    |
@@ -107,10 +107,11 @@ MessageBox( hWnd, "String literal|")
 
 **As opções automáticas estão desativadas.** Por padrão, o IntelliSense funciona automaticamente, mas é possível desabilitar isso. Mesmo se o preenchimento automático de declaração for desabilitado, é possível invocar um recurso IntelliSense.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
+- [IntelliSense do Python](../python/editing-python-code-in-visual-studio.md#intellisense)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [Escrever e refatorar o código (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Fornecer comentários de código XML](reference/generate-xml-documentation-comments.md)

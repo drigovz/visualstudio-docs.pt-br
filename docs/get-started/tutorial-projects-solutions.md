@@ -1,5 +1,6 @@
 ---
 title: Introdução a projetos e soluções
+description: Saiba mais sobre a diferença entre projetos e soluções e como usá-los no Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704047"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878264"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Saiba mais sobre projetos e soluções
 
@@ -55,7 +56,7 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 1. No painel esquerdo, expanda a opção **Outros Tipos de Projetos** e, então, selecione **Soluções do Visual Studio**. No painel central, escolha o modelo **Solução em Branco**. Nomeie a solução **QuickSolution** e, em seguida, escolha o botão **OK**.
 
-   ![Modelo de solução em branco no Visual Studio 2017](media/tutorial-projects-new-solution.png)
+   ![Modelo de solução em branco no Visual Studio 2017](media/tutorial-projects-new-solution.png "O modelo de solução em branco no Visual Studio 2017.")
 
    A **Página Inicial** é fechada e uma solução é exibida no **Gerenciador de Soluções** do lado direito da janela do Visual Studio. Você provavelmente usará o **Gerenciador de Soluções** muitas vezes para navegar pelo conteúdo de seus projetos.
 
@@ -69,7 +70,7 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 3. Na página **Criar um novo projeto**, insira **solução em branco** na caixa de pesquisa, selecione o modelo **Solução em Branco** e escolha **Avançar**.
 
-   ![Modelo de Solução em branco no Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+   ![Modelo de Solução em branco no Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png "O modelo de solução em branco no Visual Studio 2019.")
 
     > [!TIP]
     > Se você tiver várias cargas de trabalho instaladas, o modelo de **solução em branco** poderá não aparecer na parte superior da lista de resultados da pesquisa. Tente rolar para os **outros resultados com base na** seção de pesquisa da lista. Ele deve aparecer lá.
@@ -97,7 +98,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
    > [!NOTE]
    > Se você não vir o **Visual C#** no painel esquerdo da caixa de diálogo, deverá instalar a carga de **trabalho do .net desktop Development** Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar apenas os componentes de que você precisa para o tipo de desenvolvimento que você faz. Uma maneira fácil de instalar uma nova carga de trabalho é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo **Adicionar Novo Projeto**. Após o início do Instalador do Visual Studio, escolha a carga de trabalho **Desenvolvimento para área de trabalho em .NET** e, em seguida, o botão **Modificar**.
    >
-   > ![Abrir o link do Instalador do Visual Studio](media/tutorial-projects-open-installer.png)
+   > ![Abrir o link do Instalador do Visual Studio](media/tutorial-projects-open-installer.png "O link abrir Instalador do Visual Studio na caixa de diálogo Adicionar novo projeto no Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -116,9 +117,11 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
    Um projeto chamado QuickDate aparece abaixo da solução em **Gerenciador de soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
 
    > [!NOTE]
-   > Se você não vir o modelo de **projeto vazio (.NET Framework)** , deverá instalar a carga de **trabalho do .net desktop Development** Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar apenas os componentes de que você precisa para o tipo de desenvolvimento que você faz. Uma maneira fácil de instalar uma nova carga de trabalho ao criar um projeto é escolher o link **Instalar mais ferramentas e recursos** no texto que informa **Não encontra o que você está procurando?**. Após o início do Instalador do Visual Studio, escolha a carga de trabalho **Desenvolvimento para área de trabalho em .NET** e, em seguida, o botão **Modificar**.
+   > Se você não vir o modelo de **projeto vazio (.NET Framework)** , deverá instalar a carga de **trabalho do .net desktop Development** Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar apenas os componentes de que você precisa para o tipo de desenvolvimento que você faz.
    >
-   > ![Abrir o link do Instalador do Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
+   >Uma maneira fácil de instalar uma nova carga de trabalho ao criar um projeto é escolher o link **Instalar mais ferramentas e recursos** no texto que informa **Não encontra o que você está procurando?**. Após o início do Instalador do Visual Studio, escolha a carga de trabalho **Desenvolvimento para área de trabalho em .NET** e, em seguida, o botão **Modificar**.
+   >
+   > ![Abrir o link do Instalador do Visual Studio](media/vs-2019/tutorial-projects-open-installer.png "O link abrir Instalador do Visual Studio na caixa de diálogo criar um novo projeto no Visual Studio.")
 
 ::: moniker-end
 
@@ -174,7 +177,7 @@ Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, co
 
    Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado *UnitTest1.cs* é aberto no editor.
 
-   ![Gerenciador de Soluções do Visual Studio com dois projetos](media/tutorial-projects-solution-explorer.png)
+   ![Gerenciador de Soluções do Visual Studio com dois projetos](media/tutorial-projects-solution-explorer.png "Gerenciador de Soluções com dois projetos no Visual Studio 2017.")
 
 ::: moniker-end
 
@@ -188,7 +191,7 @@ Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, co
 
    Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado *UnitTest1.cs* é aberto no editor.
 
-   ![Gerenciador de Soluções do Visual Studio com dois projetos](media/vs-2019/tutorial-projects-solution-explorer.png)
+   ![Gerenciador de Soluções do Visual Studio com dois projetos](media/vs-2019/tutorial-projects-solution-explorer.png "Gerenciador de Soluções com dois projetos no Visual Studio.")
 
 ::: moniker-end
 
@@ -204,7 +207,7 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
 
    Uma referência ao projeto **QuickDate** será adicionada.
 
-   ![Gerenciador de Soluções do Visual Studio 2019 mostrando a referência do projeto](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   ![Gerenciador de Soluções do Visual Studio 2019 mostrando a referência do projeto](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Gerenciador de Soluções mostrando uma referência de projeto no Visual Studio.")
 
 ## <a name="add-test-code"></a>Adicionar código de teste
 
@@ -240,7 +243,7 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
 
    O arquivo de código deve ter esta aparência:
 
-   ![Código CSharp](media/tutorial-projects-cs-code.png)
+   ![Código CSharp](media/tutorial-projects-cs-code.png "O trecho de código da seção adicionar código de teste neste artigo.")
 
 ## <a name="project-properties"></a>Propriedades do projeto
 
@@ -250,7 +253,7 @@ A linha no arquivo *Calendar.cs* que contém o atributo <xref:System.Runtime.Com
 
    As *páginas de propriedades* do projeto abertas na guia **aplicativo** . As páginas de propriedades contêm várias configurações para o projeto. Observe que o nome do assembly do projeto **QuickTest** é, de fato, “QuickTest”. Caso deseje alterá-lo, este é o local em que você poderá fazer isso. Assim, quando você compilar o projeto de teste, o nome do arquivo binário resultante será alterado de *QuickTest.dll* para o que você escolher.
 
-   ![Propriedades do projeto](media/tutorial-projects-netcore-properties.png)
+   ![Propriedades do projeto](media/tutorial-projects-netcore-properties.png "Caixa de diálogo Propriedades do projeto no Visual Studio.")
 
 1. Explore algumas das outras guias das páginas de propriedades do projeto, como **Build** e **Depurar**. Essas guias são diferentes para diferentes tipos de projetos.
 
@@ -258,7 +261,7 @@ A linha no arquivo *Calendar.cs* que contém o atributo <xref:System.Runtime.Com
 
 Se você quiser verificar se o teste de unidade está funcionando, escolha **testar**  >  **executar**  >  **todos os testes** na barra de menus. Uma janela chamada **Gerenciador de Testes** será aberta e você verá que o teste **TestGetCurrentDate** será aprovado.
 
-![Gerenciador de Testes no Visual Studio mostrando a aprovação no teste](media/tutorial-projects-test-explorer.png)
+![Gerenciador de Testes no Visual Studio mostrando a aprovação no teste](media/tutorial-projects-test-explorer.png "Gerenciador de testes no Visual Studio mostrando um teste aprovado.")
 
 ::: moniker range="vs-2017"
 
