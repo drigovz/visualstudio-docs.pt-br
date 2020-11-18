@@ -1,6 +1,8 @@
 ---
 title: 'Como: criar um receptor de eventos para uma instância de lista específica | Microsoft Docs'
 titleSuffix: ''
+description: Crie um receptor de eventos para uma instância de lista específica. Um receptor de eventos de instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585830"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849890"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como: criar um receptor de eventos para uma instância de lista específica
   Um receptor de eventos de instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo receptor de eventos não habilite o direcionamento de uma instância de lista específica, você pode modificar um receptor de eventos que tem como escopo uma definição de lista para responder a eventos em uma instância de lista específica.
@@ -37,7 +39,7 @@ ms.locfileid: "91585830"
 
 3. Na página **conteúdo do site inteiro** , escolha o link **criar** .
 
-4. Na caixa de diálogo **criar** , escolha o tipo de **comunicados** , nomeie o anúncio **TestAnnouncements**e, em seguida, escolha o botão **criar** .
+4. Na caixa de diálogo **criar** , escolha o tipo de **comunicados** , nomeie o anúncio **TestAnnouncements** e, em seguida, escolha o botão **criar** .
 
 5. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , crie um projeto receptor de eventos.
 

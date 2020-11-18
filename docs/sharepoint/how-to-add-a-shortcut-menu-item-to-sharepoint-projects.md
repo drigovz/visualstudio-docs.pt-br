@@ -1,6 +1,8 @@
 ---
 title: Como adicionar um item de menu de atalho a projetos do SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Adicione um item de menu de atalho a um projeto do SharePoint no Visual Studio. O item de menu é exibido quando você clica com o botão direito do mouse em um nó de projeto no Gerenciador de Soluções.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585843"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850059"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Como: adicionar um item de menu de atalho a projetos do SharePoint
   Você pode adicionar um item de menu de atalho a qualquer projeto do SharePoint. O item de menu é exibido quando um usuário clica com o botão direito do mouse em um nó de projeto no **Gerenciador de soluções**.

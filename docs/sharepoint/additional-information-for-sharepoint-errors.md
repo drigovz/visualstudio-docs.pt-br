@@ -1,5 +1,7 @@
 ---
 title: Informações adicionais para erros do SharePoint | Microsoft Docs
+description: Obtenha informações adicionais sobre como solucionar erros e avisos que ocorrem nas ferramentas do Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985077"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850423"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informações adicionais para erros do SharePoint
   Você pode encontrar assistência para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos das ferramentas do SharePoint nos tópicos de solução de problemas e nos fóruns públicos.

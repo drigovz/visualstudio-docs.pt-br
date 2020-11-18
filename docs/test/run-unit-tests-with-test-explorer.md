@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386635"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850020"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -62,7 +62,7 @@ Você pode executar a maior parte do trabalho de encontrar, organizar e executar
 ### <a name="run-tests"></a>Executar testes
 
 ::: moniker range="vs-2017"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize uma destas ações:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
@@ -75,7 +75,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 A **barra de aprovação/reprovação** na parte superior da janela do **Gerenciador de Testes** é animada conforme os testes são executados. Na conclusão da execução de teste, a **barra de aprovação/reprovação** ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize uma destas ações:
 
 - Para executar todos os testes de uma solução, escolha o ícone **Executar Todos**.
 
@@ -166,7 +166,7 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 ::: moniker range=">=vs-2019"
 |Grupo|Descrição|
 |-|-----------------|
-|**Duration**|Agrupa testes por tempo de execução: **rápido**, **médio**e **lento**.|
+|**Duration**|Agrupa testes por tempo de execução: **rápido**, **médio** e **lento**.|
 |**State**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
 |**Estrutura de destino** | Agrupa testes pela estrutura de seus projetos de destino |
 |**Namespace**|Agrupa testes pelo namespace contido.|
@@ -212,7 +212,7 @@ Se os testes individuais não tiverem dependências que os impeçam de serem exe
 ::: moniker range=">=vs-2019"
 É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes na lista são exibidos em uma nova guia do Gerenciador de testes. Você pode adicionar um teste a mais de uma lista de reprodução.
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito do mouse, escolha **Adicionar à lista de**reprodução nova lista de reprodução  >  **New Playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito do mouse, escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  **New Playlist**.
 
 ![Criar uma playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
@@ -220,7 +220,7 @@ A lista de reprodução é aberta em uma nova guia do Gerenciador de testes. Voc
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-7.png)
 
-**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. Clique com o botão direito do mouse e escolha **Adicionar à lista de**reprodução nova lista de reprodução  >  **New playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. Clique com o botão direito do mouse e escolha **Adicionar à lista de** reprodução nova lista de reprodução  >  **New playlist**.
 
 **Para abrir uma playlist**, escolha o ícone da playlist na barra de ferramentas do Visual Studio e selecione no menu um arquivo de playlist salvo anteriormente.
 
@@ -233,6 +233,21 @@ A partir do Visual Studio 2019 versão 16,7, você pode escolher o botão **Edit
 Você também pode marcar ou desmarcar as caixas dos grupos pai na hierarquia. Essa ação cria uma lista de reprodução dinâmica que sempre atualiza a lista de reprodução com base nos testes que estão nesse grupo. Por exemplo, se você posicionar uma marca de seleção ao lado de uma classe, qualquer teste adicionado dessa classe se tornará parte dessa lista de reprodução. Se você excluir um teste dessa classe, ele será removido da lista de reprodução. Você pode saber mais sobre as regras salvando a lista de reprodução com o botão salvar na barra de ferramentas e abrindo o arquivo *. playlist* criado no disco. Esse arquivo lista todas as regras e testes individuais que compõem uma lista de reprodução.
 
 ![Arquivo XML de playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Se você quiser fazer uma lista de reprodução para características, use o formato abaixo. Verifique se há um espaço entre o seu `TestCategory` nome e o `[Value]` .
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

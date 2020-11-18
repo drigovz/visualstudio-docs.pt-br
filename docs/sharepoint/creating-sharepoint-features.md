@@ -1,5 +1,7 @@
 ---
 title: Criando recursos do SharePoint | Microsoft Docs
+description: Crie um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Adicione recursos à solução do SharePoint. Use o designer de recursos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952721"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850579"
 ---
 # <a name="create-sharepoint-features"></a>Criar recursos do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.
@@ -26,7 +28,7 @@ ms.locfileid: "62952721"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Adicionar recursos à solução do SharePoint
  Você pode adicionar um recurso à solução do SharePoint usando Gerenciador de Soluções ou o Gerenciador de empacotamento. Você pode usar um dos métodos a seguir para adicionar um recurso.
 
-- No **Gerenciador de soluções**, abra o menu de atalho para **recursos**e, em seguida, escolha **Adicionar recurso**.
+- No **Gerenciador de soluções**, abra o menu de atalho para **recursos** e, em seguida, escolha **Adicionar recurso**.
 
 - No **Packaging Explorer**, abra o menu de atalho para o pacote e escolha **Adicionar recurso**.
 

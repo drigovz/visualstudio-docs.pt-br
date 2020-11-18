@@ -1,18 +1,18 @@
 ---
 title: Usar dados de tempo de design com o Designer XAML no Visual Studio
 description: Saiba como usar dados de tempo de design em XAML.
-ms.date: 11/10/2020
+ms.date: 11/17/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: 992c97b188535fb39548fca4fd9d02d588a45474
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703995"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850735"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usar dados de tempo de design com o Designer XAML no Visual Studio
 
@@ -179,17 +179,17 @@ Se você tiver um problema que não esteja listado nesta seção, informe-nos us
 
 ### <a name="requirements"></a>Requisitos
 
-- Os dados de tempo de design exigem o Visual Studio 2019 versão [16,7](/visualstudio/releases/2019/release-notes) ou posterior.
+- Os dados de tempo de design exigem o Visual Studio 2019 versão [16,7](/visualstudio/releases/2019/release-notes-v16.7) ou posterior.
 
-- Dá suporte a projetos de área de trabalho do Windows que se destinam a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também está disponível no [canal de visualização](/visualstudio/releases/2019/release-notes-preview) para .NET Framework. Para habilitá-lo, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** do ambiente, selecione **novo designer XAML do WPF para .NET Framework** e reinicie o Visual Studio.
+- Dá suporte a projetos de área de trabalho do Windows que se destinam a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também está disponível para .NET Framework no [canal de visualização](/visualstudio/releases/2019/release-notes-preview). Para habilitá-lo, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** do ambiente, selecione **novo designer XAML do WPF para .NET Framework** e reinicie o Visual Studio.
 
-- A partir do Visual Studio 2019 versão 16,7, esse recurso funciona com todos os controles prontos do WPF e das estruturas UWP. O suporte para controles de terceiros agora está disponível na versão de visualização 16,8.
+- A partir do Visual Studio 2019 versão 16,7, esse recurso funciona com todos os controles prontos do WPF e das estruturas UWP. O suporte para controles de terceiros agora está disponível na [versão 16,8](/visualstudio/releases/2019/release-notes/).
 
 ### <a name="the-xaml-designer-stopped-working"></a>O Designer XAML parou de funcionar
 
 Tente fechar e reabrir o arquivo XAML e limpar e recompilar seu projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Dados de tempo de design com o webviewer Xamarin. Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML em aplicativos WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

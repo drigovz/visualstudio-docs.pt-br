@@ -1,5 +1,7 @@
 ---
 title: Como adicionar um método localizador específico | Microsoft Docs
+description: Obtenha uma instância de entidade Adicionando um método localizador. O serviço do BDC chama o método quando um usuário seleciona uma entidade em uma Web Part de dados corporativos ou em uma lista externa.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014811"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849722"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como adicionar um método localizador específico
   Você pode retornar uma única instância de entidade criando um método *localizador específico* . O serviço corporativo de conectividade de dados (BDC) executa o método localizador específico quando um usuário escolhe uma entidade em uma Web Part de dados corporativos ou em uma lista externa. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).

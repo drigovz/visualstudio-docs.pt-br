@@ -1,5 +1,7 @@
 ---
 title: Referência de API (extensibilidade de ferramentas do SharePoint) | Microsoft Docs
+description: Examine a documentação de referência da API para estender as ferramentas do SharePoint no Visual Studio. Consulte uma lista de namespaces relacionados, como Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987984"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850384"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Referência de API (extensibilidade de ferramentas do SharePoint)
   Esta seção contém documentação de referência de API para estender as ferramentas do SharePoint no Visual Studio.

@@ -1,6 +1,8 @@
 ---
 title: 'Como: adicionar uma propriedade a uma extensão de item de projeto do SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Use uma extensão de item de projeto do SharePoint para adicionar uma propriedade a qualquer item de projeto do SharePoint que já esteja instalado no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584250"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850163"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Como: adicionar uma propriedade a uma extensão de item de projeto do SharePoint
   Você pode usar uma extensão de item de projeto para adicionar uma propriedade a qualquer item de projeto do SharePoint que já esteja instalado no Visual Studio. A propriedade aparece na janela **Propriedades** quando o item de projeto é selecionado em **Gerenciador de soluções**.

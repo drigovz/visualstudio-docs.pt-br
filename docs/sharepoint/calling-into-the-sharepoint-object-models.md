@@ -1,5 +1,7 @@
 ---
 title: Chamando os modelos de objeto do SharePoint | Microsoft Docs
+description: Entenda como chamar os dois modelos de objeto diferentes que você pode usar nas extensões de ferramentas do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988405"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850046"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chamar para os modelos de objeto do SharePoint
   Quando você cria extensões para as ferramentas do SharePoint no Visual Studio, talvez seja necessário chamar as APIs do SharePoint para executar determinadas tarefas. Por exemplo, se você criar uma etapa de implantação personalizada para projetos do SharePoint, talvez precise chamar as APIs do SharePoint para executar algumas das tarefas para implantar soluções.

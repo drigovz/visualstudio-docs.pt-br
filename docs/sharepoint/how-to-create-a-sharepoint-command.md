@@ -1,5 +1,7 @@
 ---
 title: 'Como: criar um comando do SharePoint | Microsoft Docs'
+description: Saiba como criar um comando personalizado do SharePoint para chamar a API do modelo de objeto de servidor em uma extensão de ferramentas do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016217"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850696"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Como: criar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, deverá criar um *comando do SharePoint* personalizado para chamar a API. Você define o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto de servidor.
@@ -53,7 +55,7 @@ ms.locfileid: "86016217"
 
     - O segundo parâmetro e o valor de retorno devem ser um tipo que possa ser serializado pelo Windows Communication Foundation (WCF). Para obter mais informações, consulte [tipos com suporte no serializador de contrato de dados](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) e [usando a classe XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - O método pode ter qualquer visibilidade (**pública**, **interna**ou **privada**) e pode ser estático ou não estático.
+    - O método pode ter qualquer visibilidade (**pública**, **interna** ou **privada**) e pode ser estático ou não estático.
 
 4. Aplique o <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> ao método. Este atributo especifica um identificador exclusivo para o comando; Esse identificador não precisa corresponder ao nome do método.
 
@@ -75,7 +77,7 @@ ms.locfileid: "86016217"
 - Microsoft. SharePoint
 
 ## <a name="deploying-the-command"></a>Implantando o comando
- Para implantar o comando, inclua o assembly de comando no mesmo [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote do*VSIX*(a mesma extensão) com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension. vsixmanifest. Para obter mais informações, consulte [implantar extensões para as ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+ Para implantar o comando, inclua o assembly de comando no mesmo [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote do *VSIX*(a mesma extensão) com o assembly de extensão que usa o comando. Você também deve adicionar uma entrada para o assembly de comando no arquivo extension. vsixmanifest. Para obter mais informações, consulte [implantar extensões para as ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 ## <a name="see-also"></a>Confira também
 - [Chamar para os modelos de objeto do SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)

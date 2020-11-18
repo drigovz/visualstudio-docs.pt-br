@@ -1,5 +1,7 @@
 ---
 title: Visão geral das ferramentas de design de modelo do BDC | Microsoft Docs
+description: Leia uma visão geral das ferramentas de design para usar com um modelo de BDC (conectividade de dados corporativos). Saiba mais sobre o BDC designer, a janela detalhes do método BDC e o Gerenciador do BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64827945"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850306"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Visão geral das ferramentas de design de modelo do BDC
   Você pode criar um modelo de BDC (conectividade de dados corporativos) usando o designer do BDC, a janela **detalhes do método BDC** e o **Gerenciador do BDC**.
@@ -51,7 +53,7 @@ ms.locfileid: "64827945"
 
  Você pode gerar rapidamente os métodos Finder, Finder, Creator, Updater e excluidor na janela detalhes do **método do BDC** . Quando você gera esses métodos, o Visual Studio adiciona metadados, como parâmetros, instâncias e descritores de tipo, ao método. Você pode modificar esses metadados para atender ao seu cenário específico.
 
- Para abrir a janela **detalhes do método do BDC** , na barra de menus, escolha **Exibir**  >  outros detalhes do método do**Windows**  >  **BDC**.
+ Para abrir a janela **detalhes do método do BDC** , na barra de menus, escolha **Exibir**  >  outros detalhes do método do **Windows**  >  **BDC**.
 
  Para exibir os métodos na janela **detalhes do método BDC** , escolha a entidade no designer do BDC. Os métodos da entidade selecionada aparecem na janela **detalhes do método do BDC** . Se você não escolher uma entidade no designer do BDC, a janela **detalhes do método BDC** não exibirá nenhuma informação.
 

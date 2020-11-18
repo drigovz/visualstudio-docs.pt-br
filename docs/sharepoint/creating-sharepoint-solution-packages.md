@@ -1,5 +1,7 @@
 ---
 title: Criando pacotes de solução do SharePoint | Microsoft Docs
+description: Crie e personalize pacotes de implantação para soluções do SharePoint usando o designer de pacotes. Explore as ferramentas de empacotamento, as opções de designer e a estrutura de pastas.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876058"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850553"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Criar pacotes de solução do SharePoint
   Usando o designer de pacote, você pode criar e personalizar pacotes de implantação. Por exemplo, você pode adicionar recursos e itens de projeto do SharePoint, redefinir o servidor IIS, definir escopos de ativação de recursos e identificar dependências de recursos. O designer também gera um manifesto, um arquivo XML que descreve cada pacote.

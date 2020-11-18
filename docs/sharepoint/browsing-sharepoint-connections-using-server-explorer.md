@@ -1,5 +1,7 @@
 ---
 title: Procurando conexões do SharePoint usando Gerenciador de Servidores | Microsoft Docs
+description: Procurar conexões do SharePoint usando Gerenciador de Servidores. Saiba mais sobre os Gerenciador de Servidores os nós e comandos do menu de atalho do nó.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -16,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016348"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849825"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procurar conexões do SharePoint usando Gerenciador de Servidores
   Agora você pode procurar conexões locais do SharePoint em **Gerenciador de servidores**. Usando essa técnica, você pode navegar pelos componentes de um site do SharePoint em seu sistema. Os componentes do site do SharePoint, como definições de lista e tipos de conteúdo, aparecem em um nó chamado **conexões do SharePoint** no modo de exibição de árvore de **Gerenciador de servidores**. Para exibir **Gerenciador de servidores**, na barra de menus, escolha **Exibir**  >  **Gerenciador de servidores**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar o modo de exibição de árvore usando comandos no menu de atalho.
 
 > [!IMPORTANT]
-> Para procurar um site do SharePoint, você deve ser um administrador do conjunto de sites do SharePoint e deve estar executando o Visual Studio como administrador do computador local. Caso contrário, o site aparecerá em **Gerenciador de servidores**, mas você não poderá expandir seu nó. Para verificar se você é um administrador do conjunto de sites, abra o site em um navegador da Web, abra o menu **ações do site** , escolha **permissões do site**e, na página **permissões: site da equipe** , escolha o comando administradores do conjunto de **sites** no grupo **gerenciar** na faixa de seleção. Seu nome aparecerá na caixa de texto se você for um administrador do conjunto de sites. Se o comando **Administradores do conjunto de sites** não aparecer no grupo Gerenciar na faixa de, você não é um administrador do conjunto de sites e deve obter as permissões apropriadas do administrador do site.
+> Para procurar um site do SharePoint, você deve ser um administrador do conjunto de sites do SharePoint e deve estar executando o Visual Studio como administrador do computador local. Caso contrário, o site aparecerá em **Gerenciador de servidores**, mas você não poderá expandir seu nó. Para verificar se você é um administrador do conjunto de sites, abra o site em um navegador da Web, abra o menu **ações do site** , escolha **permissões do site** e, na página **permissões: site da equipe** , escolha o comando administradores do conjunto de **sites** no grupo **gerenciar** na faixa de seleção. Seu nome aparecerá na caixa de texto se você for um administrador do conjunto de sites. Se o comando **Administradores do conjunto de sites** não aparecer no grupo Gerenciar na faixa de, você não é um administrador do conjunto de sites e deve obter as permissões apropriadas do administrador do site.
 
 ## <a name="server-explorer-nodes"></a>Nós de Gerenciador de Servidores
  Cada componente de um site do SharePoint é representado por um nó no modo de exibição de árvore de **Gerenciador de servidores** em **conexões do SharePoint**. Por exemplo, sites padrão do SharePoint incluem um tipo de conteúdo chamado Discussion, que representa um tipo de discussão que é exibido na página **discussões** do site do SharePoint. O tipo de conteúdo de discussão contém vários campos. Para exibir esses campos em **Gerenciador de servidores**, expanda o nó **ContentTypes** e, em seguida, o nó **discussão** . Sob ele, há vários nós de campo, como corpo, assunto da discussão e título.

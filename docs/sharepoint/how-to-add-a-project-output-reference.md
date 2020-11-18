@@ -1,5 +1,7 @@
 ---
 title: 'Como: adicionar uma referência de saída de projeto | Microsoft Docs'
+description: Aprenda a adicionar uma referência de saída de projeto para que você possa implantar assemblies de projeto não SharePoint (ou arquivos. xap em projetos do Silverlight) no SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016751"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849864"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Como: adicionar uma referência de saída de projeto
   Para implantar assemblies de projeto não SharePoint (ou arquivos. xap em projetos do Silverlight) no SharePoint, adicione-os como uma referência de saída de projeto.
@@ -32,7 +34,7 @@ ms.locfileid: "86016751"
 
 2. Em **Gerenciador de soluções**, escolha um item no nó do projeto do SharePoint.
 
-3. Na janela **Propriedades** , escolha a propriedade de **referências de saída do projeto** e, em seguida, escolha o botão de reticências (elipse do![Designer móvel ASP.net](../sharepoint/media/mwellipsis.gif "Elipse do designer móvel ASP.NET")) ao lado dele.
+3. Na janela **Propriedades** , escolha a propriedade de **referências de saída do projeto** e, em seguida, escolha o botão de reticências (elipse do ![Designer móvel ASP.net](../sharepoint/media/mwellipsis.gif "Elipse do designer móvel ASP.NET")) ao lado dele.
 
 4. Na caixa de diálogo **referências de saída do projeto** , escolha o botão **Adicionar** .
 

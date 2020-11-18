@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862228"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850501"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Como personalizar um codespace (visualização)
 
@@ -61,7 +61,7 @@ Enquanto estiver conectado a um codespace com o Visual Studio, você poderá usa
 
 O valor real do Codespaces do GitHub vem quando você pode criar ambientes de desenvolvimento exclusivos e reproduzíveis na nuvem sob medida para seu próprio trabalho, bem como para a sua equipe. Ao criar uma instância de Codespaces do GitHub padrão, você pode personalizar o que está instalado e configurado quando você cria um novo codespace.
 
-As seções a seguir descrevem dois métodos * de configuração do* codespace usando.devcontainer.jse *.devinit.jsem* arquivos. Esses arquivos permitem que você configure as estruturas e ferramentas de instalação para um codespace e quando adicionadas ao seu repositório, qualquer pessoa que criar um codespace com base em seu repositório terá o mesmo ambiente de desenvolvimento remoto.
+As seções a seguir descrevem dois métodos *de configuração do* codespace usando.devcontainer.jse *.devinit.jsem* arquivos. Esses arquivos permitem que você configure as estruturas e ferramentas de instalação para um codespace e quando adicionadas ao seu repositório, qualquer pessoa que criar um codespace com base em seu repositório terá o mesmo ambiente de desenvolvimento remoto.
 
 ## <a name="customize-with-devcontainerjson"></a>Personalizar com devcontainer.jsem
 
@@ -84,7 +84,7 @@ O GitHub Codespaces dá suporte aos seguintes *devcontainer.jsem* Propriedades. 
 
 ## <a name="customize-with-devinit"></a>Personalizar com devinit
 
-o [devinit](../../devinit/getting-started-with-devinit.md) é uma ferramenta de linha de comando incluída no Windows codespaces que permite que você instale estruturas e ferramentas em seu ambiente. Ele pode ser executado manualmente de um prompt de comando ( `devinit -t require-dotnetcoresdk` ), mas seu potencial real vem da criação de um [ *.devinit.jspersonalizado no* ](../../devinit/devinit-json.md) arquivo para configurar uniformemente um codespace sempre que você criar um.
+o [devinit](../../devinit/getting-started-with-devinit.md) é uma ferramenta de linha de comando incluída no Windows codespaces que permite que você instale estruturas e ferramentas em seu ambiente. Ele pode ser executado manualmente de um prompt de comando ( `devinit run -t require-dotnetcoresdk` ), mas seu potencial real vem da criação de um [ *.devinit.jspersonalizado no*](../../devinit/devinit-json.md) arquivo para configurar uniformemente um codespace sempre que você criar um.
 
 `devinit` inclui um conjunto de ferramentas para a instalação de itens específicos, como SQL Server e o CLI do Azure, e também a execução de gerenciadores de pacotes gerais, como Chocolatey, NPM e vcpkg. Você pode encontrar a lista completa de `devinit` ferramentas na documentação de [ferramentas disponíveis](../../devinit/devinit-tool-list.md) .
 

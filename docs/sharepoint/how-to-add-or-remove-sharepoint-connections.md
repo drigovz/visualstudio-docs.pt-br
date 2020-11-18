@@ -1,5 +1,7 @@
 ---
 title: 'Como: Adicionar ou remover conexões do SharePoint | Microsoft Docs'
+description: Adicione ou remova as conexões do SharePoint usando o nó conexões do SharePoint na janela Gerenciador de Servidores do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014573"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850709"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Como: Adicionar ou remover conexões do SharePoint
   Gerenciador de Servidores permite que você procure sites do SharePoint, bem como conexões de dados. No entanto, antes de poder procurar o conteúdo de um site do SharePoint, você deve adicioná-lo ao nó **conexões do SharePoint** .

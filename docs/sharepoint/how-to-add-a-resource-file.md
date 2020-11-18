@@ -1,5 +1,7 @@
 ---
 title: Como adicionar um arquivo de recurso | Microsoft Docs
+description: Adicione um arquivo de recurso no Visual Studio, usando comandos no menu de atalho do nó da solução e nós de recurso no Gerenciador de Soluções.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015178"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850124"
 ---
 # <a name="how-to-add-a-resource-file"></a>Como adicionar um arquivo de recurso
   Os comandos para adicionar arquivos de recurso estão no menu de atalho do nó da solução e nós de recurso no Gerenciador de Soluções. Para obter mais informações, consulte [localizando soluções do SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
@@ -36,7 +38,7 @@ ms.locfileid: "86015178"
 
 4. Na caixa de diálogo **Adicionar recurso** , escolha uma cultura para o arquivo de recurso, como inglês (Estados Unidos).
 
-    Esta etapa adiciona um arquivo de recurso global à sua solução no formato Resource_x_**.** <em>cultura</em><strong>.</strong> resx, como, *recurso1. en-US. resx*.
+    Esta etapa adiciona um arquivo de recurso global à sua solução no formato Resource_x_ **.** <em>cultura</em><strong>.</strong> resx, como, *recurso1. en-US. resx*.
 
 5. Quando o **Editor de recursos** for aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , adicione recursos ao arquivo de recurso.
 

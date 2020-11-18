@@ -1,5 +1,7 @@
 ---
 title: Criando páginas de aplicativo para o SharePoint | Microsoft Docs
+description: Criar páginas de aplicativo para o SharePoint. Uma página de aplicativo é uma página da Web ASP.NET que é projetada para uso em um site do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981108"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850436"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo para o SharePoint
   Uma *página de aplicativo* é uma página da Web ASP.NET que é projetada para uso em um site do SharePoint. As páginas de aplicativo são um tipo especializado de página ASP.NET. A principal diferença entre uma página de aplicativo e uma página ASP.NET padrão é que uma página de aplicativo contém conteúdo que é mesclado com uma página mestra do SharePoint. Uma página mestra permite que as páginas do aplicativo compartilhem a mesma aparência e comportamento de outras páginas em um site.

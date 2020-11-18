@@ -1,6 +1,8 @@
 ---
 title: Adicionar item de menu de atalho à extensão de item de projeto do SharePoint
 titleSuffix: ''
+description: Adicione um item de menu de atalho a um item de projeto existente do SharePoint usando uma extensão de item de projeto no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3c0627849df12b98ddc16f54317faf952cb41f6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f5e6b32c418fbbdfbced5e6a6d698ad02358393d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585856"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849786"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Como: adicionar um item de menu de atalho a uma extensão de item de projeto do SharePoint
   Você pode adicionar um item de menu de atalho a um item de projeto existente do SharePoint usando uma extensão de item de projeto. O item de menu é exibido quando um usuário clica com o botão direito do mouse no item do projeto no **Gerenciador de soluções**.

@@ -1,5 +1,7 @@
 ---
 title: Criando e Depurando soluções do SharePoint | Microsoft Docs
+description: Aprenda a criar e depurar soluções do SharePoint e a entender como é diferente de criar e depurar outros tipos de projetos no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016364"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850215"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar e depurar soluções do SharePoint
   Em geral, a criação e a depuração de soluções do SharePoint são as mesmas que a criação e a depuração de outros tipos de projetos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Os tópicos nesta seção explicam as diferenças que existem.
@@ -28,10 +30,10 @@ ms.locfileid: "86016364"
 
 |Compilar item|Pasta de saída|
 |----------------|-------------------|
-|Assembly, banco de dados do programa (*. pdb*) e arquivos *. wsp* .|* \<ProjectName> \bin\Debug* ou * \<ProjectName> \bin\Release*|
-|Arquivos de item de projeto do SharePoint.|* \<ProjectName> \pkg\debug* ou * \<ProjectName> \pkg\release*|
-|Compilar arquivos intermediários.|* \<ProjectName> \obj\debug* ou * \<ProjectName> \obj\release*|
-|Empacotar arquivos intermediários.|* \<ProjectName> \pkgobj\debug* ou * \<ProjectName> \pkgobj\release*|
+|Assembly, banco de dados do programa (*. pdb*) e arquivos *. wsp* .|*\<ProjectName> \bin\Debug* ou *\<ProjectName> \bin\Release*|
+|Arquivos de item de projeto do SharePoint.|*\<ProjectName> \pkg\debug* ou *\<ProjectName> \pkg\release*|
+|Compilar arquivos intermediários.|*\<ProjectName> \obj\debug* ou *\<ProjectName> \obj\release*|
+|Empacotar arquivos intermediários.|*\<ProjectName> \pkgobj\debug* ou *\<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>Criar soluções do SharePoint
  Para criar soluções do SharePoint, o computador de desenvolvimento deve ter a versão correta do SharePoint Server instalada. Caso contrário, criar soluções do SharePoint é o mesmo que criar outros tipos de projetos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obter mais informações, consulte [como compilar soluções do SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).

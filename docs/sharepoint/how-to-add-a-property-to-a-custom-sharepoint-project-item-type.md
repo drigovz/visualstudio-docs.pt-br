@@ -1,5 +1,7 @@
 ---
 title: Adicionar Propriedade ao tipo de item de projeto personalizado do SharePoint
+description: Adicione uma propriedade a um tipo de item de projeto personalizado do SharePoint. A propriedade aparece no janela Propriedades quando o item de projeto é selecionado em Gerenciador de Soluções.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54765b9b6b82214a7deccaee4f9ee671a72dd40d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b62f41ff6b185469a61681a8845c4e96d044695
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015997"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850176"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Como: adicionar uma propriedade a um tipo de item de projeto personalizado do SharePoint
   Ao definir um tipo de item de projeto personalizado do SharePoint, você pode adicionar uma propriedade ao item de projeto. A propriedade aparece na janela **Propriedades** quando o item de projeto é selecionado em **Gerenciador de soluções**.
