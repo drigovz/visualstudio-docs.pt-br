@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672516"
+ms.locfileid: "94704060"
 ---
 # <a name="git-experience-in-visual-studio"></a>Experiência de git no Visual Studio
 
@@ -35,7 +35,7 @@ Há três maneiras de começar a usar o Git com o Visual Studio para ser mais pr
 - [Clonar um repositório git existente](#clone-an-existing-git-repository). Se o código no qual você deseja trabalhar não estiver em seu computador, você poderá clonar quaisquer repositórios remotos existentes.
 
 > [!NOTE]
-> O Visual Studio 2019 agora oferece uma experiência de conta do GitHub totalmente integrada. A partir da [versão 16,8](/visualstudio/releases/2019/release-notes/), você pode adicionar as contas do GitHub e do GitHub empresarial ao seu conjunto de chaves. Você poderá adicioná-los e aproveitá-los da mesma forma como faz com contas da Microsoft, o que significa que você terá um tempo mais fácil de acessar seus recursos do GitHub no Visual Studio. Para obter mais informações, consulte a página [trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md) .
+> Começando também com a [versão 16,8](/visualstudio/releases/2019/release-notes/), o Visual Studio 2019 inclui uma experiência de conta do GitHub totalmente integrada. Agora você pode adicionar as contas do GitHub e do GitHub empresarial ao seu conjunto de chaves. Você poderá adicioná-los e aproveitá-los da mesma forma como faz com contas da Microsoft, o que significa que você terá um tempo mais fácil de acessar seus recursos do GitHub no Visual Studio. Para obter mais informações, consulte a página [trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md) .
 
 ## <a name="create-a-new-git-repository"></a>Criar um novo repositório git
 

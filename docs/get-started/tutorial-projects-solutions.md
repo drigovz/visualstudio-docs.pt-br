@@ -1,6 +1,6 @@
 ---
 title: Introdução a projetos e soluções
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579982"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704047"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Saiba mais sobre projetos e soluções
 
@@ -71,6 +71,9 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
    ![Modelo de Solução em branco no Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
 
+    > [!TIP]
+    > Se você tiver várias cargas de trabalho instaladas, o modelo de **solução em branco** poderá não aparecer na parte superior da lista de resultados da pesquisa. Tente rolar para os **outros resultados com base na** seção de pesquisa da lista. Ele deve aparecer lá.
+
 4. Nomeie a solução como **QuickSolution** e escolha **Criar**.
 
    A solução aparece no **Gerenciador de Soluções** do lado direito da janela do Visual Studio. Você provavelmente usará o **Gerenciador de Soluções** muitas vezes para navegar pelo conteúdo de seus projetos.
@@ -125,9 +128,9 @@ Temos um projeto vazio. Vamos adicionar um arquivo de código.
 
 1. No menu de clique com o botão direito do mouse ou de contexto do projeto **QuickDate** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Item**.
 
-   A caixa de diálogo **Adicionar Novo Item** é aberta.
+   A caixa de diálogo **Adicionar novo item** é aberta.
 
-1. Expanda a opção **Itens do Visual C#** e, em seguida, escolha **Código**. No painel central, escolha o modelo de item de **classe** . Nomeie o **calendário**de classe e, em seguida, escolha o botão **Adicionar** .
+1. Expanda a opção **Itens do Visual C#** e, em seguida, escolha **Código**. No painel central, escolha o modelo de item de **classe** . Nomeie o **calendário** de classe e, em seguida, escolha o botão **Adicionar** .
 
    Um arquivo chamado *Calendar.cs* é adicionado ao projeto. O *.cs* no final é a extensão de arquivo que é fornecida aos arquivos de código C#. O arquivo é exibido na hierarquia do projeto visual no **Gerenciador de Soluções** e seu conteúdo é aberto no editor.
 
@@ -197,7 +200,7 @@ Vamos usar o novo projeto de teste de unidade para testar nosso método no proje
 
    A caixa de diálogo **Gerenciador de Referências** é aberta.
 
-1. No painel esquerdo, expanda **Projetos** e escolha **Solução**. No painel central, escolha a caixa de seleção ao lado de **QuickDate**e escolha **OK**.
+1. No painel esquerdo, expanda **Projetos** e escolha **Solução**. No painel central, escolha a caixa de seleção ao lado de **QuickDate** e escolha **OK**.
 
    Uma referência ao projeto **QuickDate** será adicionada.
 
@@ -271,7 +274,7 @@ Se você quiser verificar se o teste de unidade está funcionando, escolha **tes
 
 ::: moniker-end
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar projetos e soluções](../ide/creating-solutions-and-projects.md)
 - [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)

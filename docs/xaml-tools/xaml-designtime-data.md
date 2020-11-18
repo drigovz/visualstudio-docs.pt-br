@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492888"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703995"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usar dados de tempo de design com o Designer XAML no Visual Studio
 
@@ -181,7 +181,7 @@ Se você tiver um problema que não esteja listado nesta seção, informe-nos us
 
 - Os dados de tempo de design exigem o Visual Studio 2019 versão [16,7](/visualstudio/releases/2019/release-notes) ou posterior.
 
-- Dá suporte a projetos da área de trabalho do Windows direcionados a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também estará disponível para .NET Framework se você tiver o recurso de visualização "novo Designer XAML do WPF para .NET Framework" habilitado.
+- Dá suporte a projetos de área de trabalho do Windows que se destinam a Windows Presentation Foundation (WPF) para .NET Core e UWP. Esse recurso também está disponível no [canal de visualização](/visualstudio/releases/2019/release-notes-preview) para .NET Framework. Para habilitá-lo, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **recursos de visualização** do ambiente, selecione **novo designer XAML do WPF para .NET Framework** e reinicie o Visual Studio.
 
 - A partir do Visual Studio 2019 versão 16,7, esse recurso funciona com todos os controles prontos do WPF e das estruturas UWP. O suporte para controles de terceiros agora está disponível na versão de visualização 16,8.
 
@@ -189,7 +189,7 @@ Se você tiver um problema que não esteja listado nesta seção, informe-nos us
 
 Tente fechar e reabrir o arquivo XAML e limpar e recompilar seu projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Dados de tempo de design com o webviewer Xamarin. Forms](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
 - [XAML em aplicativos WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
