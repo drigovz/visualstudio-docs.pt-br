@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectTemplateLink (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o <element> elemento e como ele especifica o caminho para o arquivo. vstemplate de um projeto em um modelo de vários projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87b33d9b4b3863b89ecd06c3ea959c6e35ec7c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011977"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903839"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelos do Visual Studio)
 Especifica o caminho para o arquivo *. vstemplate* de um projeto em um modelo de vários projetos.
@@ -94,7 +96,7 @@ or \<VSTemplate>
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: criar modelos de vários projetos](../ide/how-to-create-multi-project-templates.md)

@@ -3,19 +3,21 @@ title: Introdução a projetos e soluções
 description: Saiba mais sobre a diferença entre projetos e soluções e como usá-los no Visual Studio.
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026e046e4bcc2291bd27907f10e6ac6a50729601
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878264"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903930"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Saiba mais sobre projetos e soluções
 
@@ -277,7 +279,7 @@ Se você quiser verificar se o teste de unidade está funcionando, escolha **tes
 
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Criar projetos e soluções](../ide/creating-solutions-and-projects.md)
 - [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)

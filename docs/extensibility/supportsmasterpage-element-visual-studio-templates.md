@@ -1,5 +1,7 @@
 ---
 title: Elemento SupportsMasterPage (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento SupportsMasterPage e como ele especifica se a caixa de seleção selecionar ou não a página mestra está habilitada no diálogo Adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699449"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903826"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelos do Visual Studio)
 Especifica se a caixa de seleção selecionar ou não a **página mestra** está habilitada no diálogo **Adicionar novo item** .
@@ -27,7 +29,7 @@ Especifica se a caixa de seleção selecionar ou não a **página mestra** está
  \<VSTemplate> \<TemplateData>
  \<SupportsMasterPage>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <SupportsMasterPage> true/false </SupportsMasterPage>
@@ -37,10 +39,10 @@ Especifica se a caixa de seleção selecionar ou não a **página mestra** está
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

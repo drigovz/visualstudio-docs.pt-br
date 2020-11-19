@@ -1,5 +1,7 @@
 ---
 title: Elemento Reference (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento Reference e como ele especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701622"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903761"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento Reference (modelos do Visual Studio)
 Especifica a referência de assembly a ser adicionada quando o item for adicionado a um projeto.
@@ -40,13 +42,13 @@ Especifica a referência de assembly a ser adicionada quando o item for adiciona
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[)](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos. Deve haver um `Assembly` elemento em todos os `Reference` elementos.|
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Elemento necessário.<br /><br /> Especifica informações sobre um assembly, que o modelo usa para adicionar uma referência desse assembly a projetos. Deve haver um `Assembly` elemento em todos os `Reference` elementos.|
 
 ### <a name="parent-elements"></a>Elementos pai
 

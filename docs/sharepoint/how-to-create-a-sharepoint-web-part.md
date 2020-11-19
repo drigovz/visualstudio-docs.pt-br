@@ -1,5 +1,7 @@
 ---
 title: 'Como: criar uma Web Part do SharePoint | Microsoft Docs'
+description: Crie e personalize uma Web Part usando um designer ou adicionando um item de Web Part a qualquer projeto do SharePoint e editando o arquivo de código para a Web Part.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a8c02cce2f55374b4d62ba5663e8b3fe85b55b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016446"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903696"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Como: criar uma Web Part do SharePoint
   Você pode criar e personalizar uma Web Part adicionando um item de **Web Part** a qualquer projeto do SharePoint e, em seguida, editando o arquivo de código para a Web Part ou usando um designer. Para obter mais informações, consulte [como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).

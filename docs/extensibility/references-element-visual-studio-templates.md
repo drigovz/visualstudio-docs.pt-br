@@ -1,5 +1,7 @@
 ---
 title: Elemento References (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento References e como ele agrupa as referências de assembly que o modelo adiciona aos projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701611"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903737"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelos do Visual Studio)
 Agrupa as referências de assembly que o modelo adiciona aos projetos.
@@ -27,7 +29,7 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
  \<VSTemplate> \<TemplateContent>
  \<References>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <References>
@@ -41,7 +43,7 @@ Agrupa as referências de assembly que o modelo adiciona aos projetos.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 

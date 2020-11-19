@@ -1,5 +1,7 @@
 ---
 title: Funcionalidades de geração de código
+description: Saiba como o Visual Studio pode ajudá-lo a gerar, corrigir e refatorar o código.
+ms.custom: SEO-VS-2020
 ms.date: 01/11/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a043c2e1e79d629b32d46f0f54d233cd0ea9cb54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14cc2965589ec46565740bf17037013f10640aea
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594247"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903865"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Recursos de geração de código no Visual Studio
 

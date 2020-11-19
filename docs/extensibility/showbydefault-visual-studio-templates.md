@@ -1,5 +1,7 @@
 ---
 title: Elemento ShowByDefault (modelos do Visual Studio)
+description: Saiba mais sobre o elemento ShowByDefault e como, quando definido como false, ele especifica que o modelo só será exibido sob o TemplateGroupID especificado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700102"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903969"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelos do Visual Studio)
 Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)especificado.
@@ -27,7 +29,7 @@ Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](.
  \<VSTemplate> \<TemplateData>
  \<ShowByDefault>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <ShowByDefault> true/false </ShowByDefault>
@@ -37,10 +39,10 @@ Se `false` , especifica que o modelo só será exibido sob o [TemplateGroupID](.
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

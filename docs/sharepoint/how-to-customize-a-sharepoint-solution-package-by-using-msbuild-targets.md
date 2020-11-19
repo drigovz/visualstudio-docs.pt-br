@@ -1,6 +1,8 @@
 ---
 title: Personalizar o pacote de solução do SharePoint usando destinos do MSBuild
 titleSuffix: ''
+description: Personalize como o Visual Studio cria arquivos de pacote de solução do SharePoint (. wsp) usando destinos do MSBuild em um prompt de comando.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585804"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903644"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Como: personalizar um pacote de solução do SharePoint usando destinos do MSBuild
   Usando destinos do MSBuild em um prompt de comando, você pode personalizar como o Visual Studio cria arquivos de pacote do SharePoint (*. wsp*). Por exemplo, você pode personalizar as propriedades do MSBuild para alterar o diretório intermediário de empacotamento e os grupos de itens do MSBuild que especificam os arquivos enumerados.
@@ -40,11 +42,11 @@ ms.locfileid: "91585804"
 
     Este exemplo exibe uma mensagem antes do empacotamento desse destino.
 
-2. Nomeie o arquivo **customLayout. SharePoint. targets**e, em seguida, salve-o na pasta do projeto do SharePoint.
+2. Nomeie o arquivo **customLayout. SharePoint. targets** e, em seguida, salve-o na pasta do projeto do SharePoint.
 
 3. Abra o projeto, abra o menu de atalho e escolha **descarregar projeto**.
 
-4. No **Gerenciador de soluções**, abra o menu de atalho para o projeto e escolha **Editar** * \<ProjectName> . vbproj* ou **Edit** * \<ProjectName> . csproj*.
+4. No **Gerenciador de soluções**, abra o menu de atalho para o projeto e escolha **Editar** *\<ProjectName> . vbproj* ou **Edit** *\<ProjectName> . csproj*.
 
 5. Após a `Import` linha próxima ao final do arquivo de projeto, adicione a linha a seguir.
 

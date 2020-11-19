@@ -1,6 +1,8 @@
 ---
 title: 'Como: criar uma Web Part do SharePoint usando um designer | Microsoft Docs'
 titleSuffix: ''
+description: Crie uma Web Part adicionando um item de Web Part Visual a um projeto do SharePoint, que abre o designer do Visual Web Developer no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584107"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903709"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Como: criar uma Web Part do SharePoint usando um designer
   Você pode criar uma Web Part adicionando um item de **Web Part Visual** a qualquer projeto do SharePoint. Isso abre o designer do Visual Web Developer no Visual Studio, no qual você pode adicionar controles e código à Web Part. As Web Parts visuais funcionam da mesma forma que as Web Parts. A única diferença é que você cria Web Parts visuais no designer do Visual Web Developer.
@@ -33,7 +35,7 @@ ms.locfileid: "91584107"
 
 2. Na caixa de diálogo **novo projeto** , em **Visual C#** ou **Visual Basic**, expanda o nó **Office/SharePoint** e escolha a categoria **soluções do SharePoint** .
 
-3. Na lista de modelos de projeto, escolha **SharePoint 2013-Web Part Visual**e, em seguida, escolha o botão **OK** .
+3. Na lista de modelos de projeto, escolha **SharePoint 2013-Web Part Visual** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido.
 

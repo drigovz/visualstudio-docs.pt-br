@@ -1,6 +1,8 @@
 ---
 title: Criar validações de recursos e pacotes para soluções do SharePoint
 titleSuffix: ''
+description: Crie regras de validação personalizadas para verificar o pacote de solução gerado pelo Visual Studio ou para verificar um recurso inteiro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8f76abeee6ace851025a29ce6d85b894bf479dfa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585817"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903683"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Criar validações de recursos e pacotes para soluções do SharePoint
 

@@ -1,5 +1,7 @@
 ---
 title: Exibição de classe ícones do Pesquisador de Objetos
+description: Saiba mais sobre Modo de Exibição de Classe e o pesquisador de objetos exibe ícones que representam entidades de código, por exemplo, namespaces, classes, funções e variáveis.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285134"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903995"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
@@ -40,7 +42,7 @@ ms.locfileid: "85285134"
 |![Símbolo do método de extensão](../ide/media/extensionmethod.gif)|Método de extensão|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Declaração externa|
 |![Símbolo de delegado](../ide/media/vxdelegate_icon.gif)|Delegar|![Ícone de erro para Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif)|Erro|
 |![Símbolo de exceção](../ide/media/vxexception_icon.gif)|Exceção|![Símbolo de modelo](../ide/media/vxtemplate_icon.gif)|Modelo|
-|![Símbolo de mapa](../ide/media/vxmap_icon.gif)|Mapa|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif)|Desconhecido|
+|![Símbolo de mapa](../ide/media/vxmap_icon.gif)|Mapeamento|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif)|Desconhecido|
 |![Símbolo de encaminhamento de tipo](../ide/media/ob_type_forward.gif)|Encaminhamento de tipo|||
 
 > [!TIP]

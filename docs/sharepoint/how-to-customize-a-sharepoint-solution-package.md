@@ -1,5 +1,7 @@
 ---
 title: 'Como: personalizar um pacote de solução do SharePoint | Microsoft Docs'
+description: Use o designer de pacote para criar e personalizar um pacote de solução do SharePoint (. wsp). Exiba ou substitua o arquivo de manifesto empacotado. Altere o modelo de manifesto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77b66160d489f711b5588fdcdd024d13769d734f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016871"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903631"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Como: personalizar um pacote de solução do SharePoint
   Você pode usar o designer de pacote para criar e personalizar um pacote (*. wsp*). Por exemplo, você pode adicionar recursos e itens de projeto do SharePoint, especificar se o servidor Web é redefinido quando a solução é implantada e definir o tipo de servidor de implantação.
@@ -31,7 +33,7 @@ ms.locfileid: "86016871"
 
 #### <a name="to-open-the-package-designer"></a>Para abrir o designer de pacotes
 
-- Em **Gerenciador de soluções**, clique duas vezes em **pacote**ou escolha **Designer de exibição** no menu de atalho do **pacote**.
+- Em **Gerenciador de soluções**, clique duas vezes em **pacote** ou escolha **Designer de exibição** no menu de atalho do **pacote**.
 
 ## <a name="view-the-packaged-manifestffile"></a>Exibir o pacote de manifestfFile
  Você pode usar o designer de pacote para modificar e gerar o arquivo de manifesto empacotado. Em seguida, você pode exibir o código XML para este arquivo no Visual Studio.

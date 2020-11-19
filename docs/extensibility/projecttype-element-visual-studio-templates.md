@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectType (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento ProjectType e como ele categoriza o modelo de projeto para que ele apareça na caixa de diálogo novo projeto ou adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701801"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903813"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelos do Visual Studio)
 Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
@@ -39,10 +41,10 @@ Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento SortOrder (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento SortOrder e como ele especifica um valor que é usado para organizar o modelo como ele aparece na caixa de diálogo novo projeto ou adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699964"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903735"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelos do Visual Studio)
 Especifica um valor que é usado para organizar o modelo, entre outros modelos na mesma categoria, como aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
@@ -27,7 +29,7 @@ Especifica um valor que é usado para organizar o modelo, entre outros modelos n
  \<VSTemplate> \<TemplateData>
  \<SortOrder>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <SortOrder> ... </SortOrder>
@@ -37,10 +39,10 @@ Especifica um valor que é usado para organizar o modelo, entre outros modelos n
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento SolutionFolder (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento SolutionFolder e como ele agrupa projetos em modelos de vários projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3262a5dcc0f226a0ac1b3aa08219fb89dbf70e83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be6cb773e2d822efe01f87b1102293898005cbc8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699996"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903774"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelos do Visual Studio)
 Agrupa projetos em modelos de vários projetos.
@@ -28,7 +30,7 @@ Agrupa projetos em modelos de vários projetos.
  \<ProjectCollection>
  \<SolutionFolder>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <SolutionFolder Name="DirectoryName">

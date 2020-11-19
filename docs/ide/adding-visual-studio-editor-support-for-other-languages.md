@@ -1,5 +1,7 @@
 ---
 title: Adicionar suporte do editor para outros idiomas
+description: Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à navegação em diferentes idiomas do computador e como você pode adicionar suporte para outros idiomas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809066"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903891"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -109,7 +111,7 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
 |*\Snippets*|A pasta de snippets. Contém snippets da linguagem.|
 
-No Windows, *% USERPROFILE%* é resolvido para o caminho: *c:\Users \\ \<user name> *. Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+No Windows, *% USERPROFILE%* é resolvido para o caminho: *c:\Users \\ \<user name>*. Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
 > [!TIP]
 > Se você tiver arquivos abertos no editor, precisará fechá-los e reabri-los para ver o realce de sintaxe depois de adicionar as Gramáticas TextMate.

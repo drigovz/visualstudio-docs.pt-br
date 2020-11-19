@@ -1,5 +1,7 @@
 ---
 title: 'Como: personalizar um recurso do SharePoint | Microsoft Docs'
+description: Personalizar recursos do SharePoint no Visual Studio. O designer de recursos é aberto quando você adiciona um novo recurso no Gerenciador de Soluções ou no Gerenciador de pacotes do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a330f3c4cbe1e410ddc6a1612796c92eeda281b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016900"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903657"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Como: personalizar um recurso do SharePoint
   Você pode criar e personalizar recursos do SharePoint usando o Feature designer no Visual Studio. Por exemplo, você pode definir o escopo do recurso e adicionar outros recursos como dependências. Por padrão, o designer de recursos é aberto quando você adiciona um novo recurso no Gerenciador de Soluções ou no Gerenciador de pacotes do SharePoint.
@@ -46,7 +48,7 @@ ms.locfileid: "86016900"
 
 1. Em **Gerenciador de soluções**, escolha o ícone **Mostrar todos os arquivos** .
 
-2. Expanda recursos, expanda FeatureName, expanda FeatureName. Feature e, em seguida, abra o arquivo * \<FeatureName>.Template.xml* .
+2. Expanda recursos, expanda FeatureName, expanda FeatureName. Feature e, em seguida, abra o arquivo *\<FeatureName>.Template.xml* .
 
     > [!NOTE]
     > Quando você abre o arquivo XML de manifesto do modelo de recurso, os arquivos são validados automaticamente e os avisos que aparecem na janela de Lista de Erros podem ser ignorados.

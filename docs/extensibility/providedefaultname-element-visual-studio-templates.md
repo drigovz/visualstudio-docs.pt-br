@@ -1,5 +1,7 @@
 ---
 title: Elemento ProvideDefaultName (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento ProvideDefaultName e como ele especifica se o Visual Studio irá gerar um nome do Visual Studio padrão na caixa de diálogo Adicionar novo item ou novo projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701713"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903800"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelos do Visual Studio)
 Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema do projeto irá gerar um nome padrão para o modelo na caixa de diálogo **Adicionar novo item** ou **novo projeto** .
@@ -36,10 +38,10 @@ Especifica se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 

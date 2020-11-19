@@ -1,6 +1,6 @@
 ---
 title: Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
-description: Saiba como criar aplicativos usando o Visual Studio e as ferramentas de desenvolvimento de aplicativo universal do Windows.
+description: Saiba como criar aplicativos usando o Visual Studio e as ferramentas de desenvolvimento de Plataforma Universal do Windows.
 ms.custom: SEO-VS-2020
 ms.date: 10/24/2017
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: e9cff517c60a67ee9bbf929c59a1150d5ace3757
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 54849cc004bdae4d4f50c1492ff79c762c2cb41b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671413"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903852"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
 
@@ -70,6 +70,6 @@ Se você já tiver aplicativos da Windows Store 8.1, aplicativos Windows Phone 8
 
 Depois de criar o aplicativo universal do Windows, você deverá empacotá-lo para instalá-lo em um dispositivo Windows 10 ou enviá-lo para a Windows Store. Consulte [Empacotando aplicativos](/windows/uwp/packaging/index).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Desenvolvimento móvel multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)
