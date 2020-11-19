@@ -82,7 +82,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
    ![Dependências de serviço](./media/azure-cosmosdb-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Página do produto Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
 - [Documentação do Azure Cosmos DB](/azure/cosmos-db/)

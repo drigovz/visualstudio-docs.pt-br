@@ -119,7 +119,7 @@ ms.locfileid: "94903592"
 
     Um novo descritor de tipo é adicionado como um filho ao descritor de tipo de coleção. Configure este descritor de tipo como uma entidade.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Como: adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
