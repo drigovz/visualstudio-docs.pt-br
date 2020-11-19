@@ -1,5 +1,7 @@
 ---
 title: Como implementar uma interface (Designer de Classe)
+description: Saiba como implementar uma interface no diagrama de classe conectando-a a uma classe que fornece código para os métodos de interface.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81b6815dd96894acd574de59c5616371220d2999
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad038774b4acfb7256edbaa35ae4c67cfe835891
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770102"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901369"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Como implementar uma interface no Designer de Classe
 

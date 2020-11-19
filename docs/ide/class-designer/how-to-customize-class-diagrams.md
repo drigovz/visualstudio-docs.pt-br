@@ -1,5 +1,7 @@
 ---
 title: Como personalizar diagramas de classe (Designer de Classe)
+description: Saiba como alterar a maneira como os diagramas de classe exibem informações e como personalizar o diagrama inteiro ou os tipos individuais na superfície de design.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770175"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901421"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Como personalizar diagramas de classe
 

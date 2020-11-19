@@ -1,8 +1,11 @@
 ---
 title: 'Tutorial: Projetos e soluções usando Visual Basic'
+description: Saiba como criar uma solução e um projeto no Visual Studio como um desenvolvedor de Visual Basic.
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0277379c44a7d0334798920759438dce52ae16f8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590209"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901265"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Saiba mais sobre projetos e soluções usando Visual Basic
 
@@ -91,7 +94,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
 
    A caixa de diálogo **Adicionar Novo Projeto** é aberta.
 
-1. No painel esquerdo, expanda **Visual Basic** e escolha **Área de Trabalho do Windows**. Em seguida, no painel central, selecione o modelo **Projeto Vazio (.NET Framework)**. Nomeie o projeto **QuickDate**e escolha o botão **OK** .
+1. No painel esquerdo, expanda **Visual Basic** e escolha **Área de Trabalho do Windows**. Em seguida, no painel central, selecione o modelo **Projeto Vazio (.NET Framework)**. Nomeie o projeto **QuickDate** e escolha o botão **OK** .
 
    Um projeto chamado QuickDate aparece abaixo da solução em **Gerenciador de soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
 
@@ -129,9 +132,9 @@ Temos um projeto vazio. Vamos adicionar um arquivo de código.
 
 1. No menu de clique com o botão direito do mouse ou de contexto do projeto **QuickDate** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Item**.
 
-   A caixa de diálogo **Adicionar Novo Item** é aberta.
+   A caixa de diálogo **Adicionar novo item** é aberta.
 
-1. Expanda **Itens Comuns** e, em seguida, escolha **Código**. No painel central, escolha o modelo de item **Classe**. Nomeie o **calendário**de classe e, em seguida, escolha o botão **Adicionar** .
+1. Expanda **Itens Comuns** e, em seguida, escolha **Código**. No painel central, escolha o modelo de item **Classe**. Nomeie o **calendário** de classe e, em seguida, escolha o botão **Adicionar** .
 
    Um arquivo chamado *Calendar.vb* é adicionado ao projeto. O *.vb* no final é a extensão de arquivo fornecida a arquivos de código Visual Basic. O arquivo é exibido na hierarquia do projeto visual no **Gerenciador de Soluções** e seu conteúdo é aberto no editor.
 

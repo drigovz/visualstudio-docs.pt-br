@@ -3,17 +3,16 @@ title: Gerenciando funções nos serviços de nuvem do Azure
 description: Saiba como adicionar e remover funções nos serviços de nuvem do Azure com o Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 897cb36ee2afa650e042b92243c6044684468a6e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 8e932084f9bf3d4631b2fae027224f8973602f13
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398833"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902578"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>Gerenciando funções nos serviços de nuvem do Azure com o Visual Studio
 Depois de criar o serviço de nuvem do Azure, é possível adicionar novas funções a ele ou remover funções existentes. Você também pode importar um projeto existente e convertê-lo em uma função. Por exemplo, você pode importar um aplicativo Web ASP.NET e designá-lo como uma função web.
@@ -23,7 +22,7 @@ As etapas a seguir explicarão como adicionar uma função web ou de trabalho a 
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções** , expanda o nó do projeto
+1. Em **Gerenciador de Soluções**, expanda o nó do projeto
 
 1. Clique com o botão direito do mouse no nó **Funções** para exibir o menu de contexto. No menu de contexto, selecione **Adicionar** e, em seguida, selecione uma função web ou função de trabalho existente da solução atual ou crie um projeto de função web ou função de trabalho. Também é possível selecionar um projeto apropriado, como um projeto de aplicativo Web ASP.NET e associá-lo a um projeto de função.
 
@@ -34,7 +33,7 @@ As etapas a seguir explicarão como remover uma função web ou de trabalho de u
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. Em **Gerenciador de Soluções** , expanda o nó do projeto
+1. Em **Gerenciador de Soluções**, expanda o nó do projeto
 
 1. Expanda o nó **Funções**.
 

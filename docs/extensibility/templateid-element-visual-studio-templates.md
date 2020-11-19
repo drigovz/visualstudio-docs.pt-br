@@ -1,5 +1,7 @@
 ---
 title: Elemento TemplateID (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento TemplateID e como ele especifica um identificador para um modelo de item que é categorizado em um grupo de modelos de item pelo elemento TemplateGroupID.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699066"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903176"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Elemento TemplateID (modelos do Visual Studio)
 Especifica um identificador para um modelo de item que é categorizado em um grupo de modelos de item pelo elemento [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
@@ -37,10 +39,10 @@ Especifica um identificador para um modelo de item que é categorizado em um gru
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
- Nenhum.
+ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -56,7 +58,7 @@ Especifica um identificador para um modelo de item que é categorizado em um gru
 
  Se um arquivo. vstemplate omitir o `TemplateID` elemento, o elemento [Name](../extensibility/name-element-visual-studio-templates.md) será usado como o identificador para o modelo.
 
- O valor do `TemplateID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\Projects \\ ) para filtrar os modelos que aparecem na caixa de diálogo **Adicionar novo item** .
+ O valor do `TemplateID` elemento é usado junto com o registro do sistema do projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\ ) para filtrar os modelos que aparecem na caixa de diálogo **Adicionar novo item** .
 
 ## <a name="see-also"></a>Confira também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

@@ -3,18 +3,17 @@ title: Depurando um serviço de nuvem ou uma máquina virtual do Azure
 description: Depuração de um Serviço de Nuvem ou Máquina Virtual no Visual Studio
 author: mikejo5000
 manager: jillfra
-ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398690"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902553"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
 
@@ -48,7 +47,7 @@ Para depurar um serviço de nuvem em um computador remoto, você deve habilitar 
 Se você habilitar a depuração remota para um serviço de nuvem, ela não mostrará degradação de desempenho nem incorrerá em cobranças adicionais. Não use a depuração remota em um serviço de produção, pois os clientes que usam o serviço podem ser prejudicados.
 
 > [!NOTE]
-> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace** , você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Usando o IntelliTrace](../debugger/intellitrace.md).
+> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace**, você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Usando o IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Para habilitar a depuração remota para um serviço de nuvem
 
@@ -123,7 +122,7 @@ Você pode depurar programas que são executados em máquinas virtuais do Azure 
 
     ![Comando Anexar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-4. Na caixa de diálogo **Anexar ao Processo** , escolha **Selecionar** a fim de limitar a lista de resultados para mostrar apenas os tipos de código que você deseja depurar. Depure um código gerenciado de 32 ou 64 bits, um código nativo ou ambos.
+4. Na caixa de diálogo **Anexar ao Processo**, escolha **Selecionar** a fim de limitar a lista de resultados para mostrar apenas os tipos de código que você deseja depurar. Depure um código gerenciado de 32 ou 64 bits, um código nativo ou ambos.
 
     ![Caixa de diálogo Selecionar tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -166,11 +165,11 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publique seu projeto, como descrito em [Como implantar um projeto Web usando a publicação de um clique no Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Como você deseja depurar na máquina virtual, na página **Configurações** do assistente **Publicar Web** , selecione **Depurar** como a configuração. Isso garante que os símbolos de código estejam disponíveis durante a depuração.
+6. Publique seu projeto, como descrito em [Como implantar um projeto Web usando a publicação de um clique no Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Como você deseja depurar na máquina virtual, na página **Configurações** do assistente **Publicar Web**, selecione **Depurar** como a configuração. Isso garante que os símbolos de código estejam disponíveis durante a depuração.
 
     ![Configurações de publicação](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. Em **Opções de Publicação de Arquivo** , selecione **Remover arquivos adicionais no destino** se o projeto já tiver sido implantado anteriormente.
+7. Em **Opções de Publicação de Arquivo**, selecione **Remover arquivos adicionais no destino** se o projeto já tiver sido implantado anteriormente.
 
 8. Depois de publicar o projeto, no menu de contexto da máquina virtual no Gerenciador de Servidores, selecione **Anexar depurador...**
 
@@ -178,7 +177,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     ![Comando Anexar depurador](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746722.png)
 
-9. Na caixa de diálogo **Anexar ao Processo** , escolha **Selecionar** a fim de limitar a lista de resultados para mostrar apenas os tipos de código que você deseja depurar. Depure um código gerenciado de 32 ou 64 bits, um código nativo ou ambos.
+9. Na caixa de diálogo **Anexar ao Processo**, escolha **Selecionar** a fim de limitar a lista de resultados para mostrar apenas os tipos de código que você deseja depurar. Depure um código gerenciado de 32 ou 64 bits, um código nativo ou ambos.
 
     ![Caixa de diálogo Selecionar tipo de código](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 

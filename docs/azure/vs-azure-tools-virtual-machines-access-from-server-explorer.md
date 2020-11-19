@@ -3,17 +3,16 @@ title: Acessando Máquinas Virtuais do Azure do Gerenciador de Servidores | Micr
 description: Obtenha uma visão geral de como exibir e gerenciar máquinas virtuais (VMs) do Azure no Gerenciador de Servidores no Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398547"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901864"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Acessando máquinas virtuais do Azure por meio do Gerenciador de Servidores
 
@@ -27,7 +26,7 @@ Se tiver máquinas virtuais hospedadas pelo Azure, você pode acessá-las no Ger
    | --- | --- |
    | Nome DNS |A URL com o endereço de Internet da máquina virtual. |
    | Ambiente |Para uma máquina virtual, o valor dessa propriedade é sempre produção. |
-   | Name |O nome da máquina virtual. |
+   | Nome |O nome da máquina virtual. |
    | Tamanho |O tamanho da máquina virtual, que reflete a quantidade de memória e espaço em disco disponível. Para obter mais informações, consulte [tamanhos de máquina virtual](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Os valores incluem Inicial, Iniciado, Parando, Parado e Recuperando Status. Se Recuperando Status aparecer, o status atual é desconhecido. Os valores para essa propriedade diferem dos valores que são usados no [Portal do Azure](https://portal.azure.com). |
    | SubscriptionID |A ID de assinatura para sua conta do Azure. Você pode mostrar essas informações no [Portal do Azure](https://portal.azure.com) exibindo as propriedades de uma assinatura. |
@@ -36,7 +35,7 @@ Se tiver máquinas virtuais hospedadas pelo Azure, você pode acessá-las no Ger
 
    | Propriedade | Descrição |
    | --- | --- |
-   | Name |Um identificador para o ponto de extremidade. |
+   | Nome |Um identificador para o ponto de extremidade. |
    | Porta privada |A porta para acesso à rede interna para o seu aplicativo. |
    | Protocolo |O protocolo de camada de transporte que este ponto de extremidade usa: TCP ou UDP. |
    | Porta pública |A porta usada para acesso público ao seu aplicativo. |

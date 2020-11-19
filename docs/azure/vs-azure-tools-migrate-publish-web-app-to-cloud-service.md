@@ -4,17 +4,16 @@ description: Saiba como migrar e publicar seu aplicativo Web em um serviço de n
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399813"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902344"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como migrar e publicar um aplicativo Web em um serviço de nuvem do Azure por meio do Visual Studio
 
@@ -58,9 +57,9 @@ Se tiver uma cadeia de conexão para seu aplicativo Web que usa um banco de dado
 1. Crie o serviço de nuvem e as contas de armazenamento necessários em sua assinatura do Azure, conforme descrito em [Preparar para publicar ou implantar um aplicativo do Azure a partir do Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. No Visual Studio, clique com botão direito no projeto do aplicativo e selecione **Publicar no Microsoft Azure...** (que é diferente do comando “Publicar...”).
 1. No **Publicar aplicativo do Azure** que aparece, entre usando a conta com sua assinatura do Azure e selecione **Avançar >**.
-1. Na guia **Configurações > Configurações Comuns** , selecione o serviço de nuvem de destino na lista suspensa **Serviço de Nuvem** , juntamente com o ambiente e as configurações escolhidas.
-1. Em **Configurações > Configurações Avançadas** , selecione a conta de armazenamento a ser usada e depois selecione **Avançar >**.
-1. Em **Diagnósticos** , escolha se deseja enviar informações ao Application Insights.
+1. Na guia **Configurações > Configurações Comuns**, selecione o serviço de nuvem de destino na lista suspensa **Serviço de Nuvem**, juntamente com o ambiente e as configurações escolhidas.
+1. Em **Configurações > Configurações Avançadas**, selecione a conta de armazenamento a ser usada e depois selecione **Avançar >**.
+1. Em **Diagnósticos**, escolha se deseja enviar informações ao Application Insights.
 1. Selecione **Avançar >** para exibir um resumo, depois selecione **Publicar** para iniciar a implantação.
 1. O Visual Studio abre uma janela de log de atividade na qual você pode acompanhar o progresso:
 

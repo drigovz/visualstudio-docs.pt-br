@@ -1,5 +1,7 @@
 ---
 title: Recursos avançados
+description: Saiba mais sobre os recursos avançados que podem ser mais apropriados para desenvolvedores experientes ou para os desenvolvedores que já estão familiarizados com o Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399247"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903293"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -44,7 +46,7 @@ O Visual Studio oferece um pacote de ferramentas que permite criar aplicativos h
 
 ::: moniker range="vs-2017"
 
-Após instalar a carga de trabalho **desenvolvimento do Azure** , os seguintes modelos de **nuvem** para C# estarão disponíveis na caixa de diálogo **Novo Projeto** :
+Após instalar a carga de trabalho **desenvolvimento do Azure**, os seguintes modelos de **nuvem** para C# estarão disponíveis na caixa de diálogo **Novo Projeto**:
 
 ![Modelos de projeto de nuvem para Visual Studio](media/cloud-project-templates.png)
 
@@ -90,7 +92,7 @@ Para obter mais informações, consulte [Ferramentas da Web modernas](https://vi
 
 ## <a name="connect-to-databases"></a>Conectar-se aos bancos de dados
 
-**Gerenciador de servidores** ajuda a procurar e gerenciar SQL Server instâncias e ativos localmente, remotamente e no Azure, Salesforce.com, Microsoft 365 e sites. Para abrir **Gerenciador de servidores** , no menu principal, escolha **Exibir**  >  **Gerenciador de servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
+**Gerenciador de servidores** ajuda a procurar e gerenciar SQL Server instâncias e ativos localmente, remotamente e no Azure, Salesforce.com, Microsoft 365 e sites. Para abrir **Gerenciador de servidores**, no menu principal, escolha **Exibir**  >  **Gerenciador de servidores**. Para obter mais informações de como usar o Gerenciador de Servidores, confira [Adicionar novas conexões](../data-tools/add-new-connections.md).
 
 O [SSDT (SQL Server Data Tools)](/sql/ssdt/download-sql-server-data-tools-ssdt) é um ambiente de desenvolvimento avançado do SQL Server, do Banco de Dados SQL do Azure e do SQL Data Warehouse do Azure. Ele permite compilar, depurar, manter e refatorar bancos de dados. Você pode trabalhar com um projeto de banco de dados ou diretamente com uma instância local ou não de banco de dados conectado.
 

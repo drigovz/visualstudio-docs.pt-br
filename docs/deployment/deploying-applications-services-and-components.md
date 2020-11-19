@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: db37c22af858cef76acda2a42d29a38d244395c8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830766"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903319"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -44,11 +44,15 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
     ![Escolha Publicar](../deployment/media/quickstart-publish.png)
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para saber mais, consulte o seguinte:
+
+  - [Implantar um aplicativo de área de trabalho do Windows .NET Framework usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Implantar um aplicativo de área de trabalho do Windows .NET usando o ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Implantar um aplicativo C++/CLR usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, consulte [implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-- **ASP.net**, **ASP.NET Core**, **Python**e **Node.js**: publicar no serviço Azure app ou Azure app serviço Linux (usando contêineres) usando um dos métodos a seguir.
+- **ASP.net**, **ASP.NET Core**, **Python** e **Node.js**: publicar no serviço Azure app ou Azure app serviço Linux (usando contêineres) usando um dos métodos a seguir.
 
   - Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
@@ -56,7 +60,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
   Para a implantação que fornece uma configuração mais personalizada do servidor, você também pode usar a ferramenta **Publicar** para implantar aplicativos para uma máquina Virtual do Azure.
 
-  Para usar a ferramenta **Publicar**, clique com o botão direito do mouse no Gerenciador de Soluções e escolha **Publicar**. (Se você tiver configurado anteriormente os perfis de publicação, deverá clicar em **criar novo perfil**.) Na caixa de diálogo publicar, escolha **serviço de aplicativo** ou **máquinas virtuais do Azure**e siga as etapas de configuração.
+  Para usar a ferramenta **Publicar**, clique com o botão direito do mouse no Gerenciador de Soluções e escolha **Publicar**. (Se você tiver configurado anteriormente os perfis de publicação, deverá clicar em **criar novo perfil**.) Na caixa de diálogo publicar, escolha **serviço de aplicativo** ou **máquinas virtuais do Azure** e siga as etapas de configuração.
 
   ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-azure-new.png "Escolher serviço de Azure App")
 
@@ -65,8 +69,6 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
   Para aplicativos do Python, confira também [Python – publicar no Serviço de Aplicativo do Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
   Para uma rápida introdução, confira [Publicar no Azure](quickstart-deploy-to-azure.md) e [Publicar no Linux](quickstart-deploy-to-linux.md). Confira também [Publicar um aplicativo ASP.NET Core no Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Para implantação usando o Git, confira [Implantação contínua do ASP.NET Core no Azure com o Git](/aspnet/core/publishing/azure-continuous-deployment).
-
-  Para obter informações sobre como importar um perfil de publicação do Serviço de Aplicativo do Azure para o Visual Studio, confira [Importar configurações de publicação e implantar no Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
   > [!NOTE]
   > Se você ainda não tem uma conta do Azure, pode [inscrever-se aqui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
@@ -83,7 +85,11 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
     Você também pode implantar aplicativos e serviços ASP.NET de várias outras maneiras. Para obter mais informações, confira [Implantando aplicativos e serviços Web ASP.NET](/aspnet/overview/deployment).
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para saber mais, consulte o seguinte:
+
+  - [Implantar um aplicativo de área de trabalho do Windows .NET Framework usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Implantar um aplicativo de área de trabalho do Windows .NET usando o ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Implantar um aplicativo C++/CLR usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
 
 ## <a name="publish-to-microsoft-store"></a>Publicar na Microsoft Store
 
@@ -103,7 +109,7 @@ Se você estiver implantando um aplicativo UWP para testar em um dispositivo, co
 
 ## <a name="create-an-installer-package-windows-desktop"></a>Criar um pacote de instalador (área de trabalho do Windows)
 
-Se precisa de uma instalação mais complexa de um aplicativo da área de trabalho do que o [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) pode oferecer, você pode criar um pacote do Windows Installer (arquivo de instalação MSI ou EXE) ou um bootstrapper personalizado.
+Se precisa de uma instalação mais complexa de um aplicativo da área de trabalho do que o ClickOnce pode oferecer, você pode criar um pacote do Windows Installer (arquivo de instalação MSI ou EXE) ou um bootstrapper personalizado.
 
 - Um pacote de instalador baseado em MSI pode ser criado usando a [Extensão WiX Toolset do Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Este é um conjunto de ferramentas de linha de comando.
 

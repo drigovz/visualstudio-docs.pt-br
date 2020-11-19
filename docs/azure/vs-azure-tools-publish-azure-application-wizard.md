@@ -3,17 +3,16 @@ title: Publicar um serviço de nuvem do Azure
 description: Saiba como definir as diversas configurações no Assistente Publicar Aplicativo do Azure do Visual Studio
 author: ghogen
 manager: jillfra
-assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399450"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902305"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso do Assistente Publicar Aplicativo do Azure do Visual Studio
 
@@ -30,15 +29,15 @@ Depois de desenvolver um aplicativo Web no Visual Studio, você poderá publicá
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. No **Gerenciador de Soluções** , clique com o botão direito do mouse no projeto e, no menu de contexto, selecione **Publicar**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e, no menu de contexto, selecione **Publicar**.
 
 **Se você tiver um projeto de aplicativo Web que não está habilitado para o Azure:**
 
 1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
 
-1. No **Gerenciador de Soluções** , clique com o botão direito do mouse e, no menu de contexto, selecione **Converter** > **Converter em Projeto de Serviço de Nuvem do Azure**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse e, no menu de contexto, selecione **Converter** > **Converter em Projeto de Serviço de Nuvem do Azure**.
 
-1. No **Gerenciador de Soluções** , clique com o botão direito do mouse no projeto do Azure recentemente criado e, no menu de contexto, selecione **Publicar**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto do Azure recentemente criado e, no menu de contexto, selecione **Publicar**.
 
 ## <a name="sign-in-page"></a>Página de entrada
 
@@ -68,23 +67,23 @@ Depois de desenvolver um aplicativo Web no Visual Studio, você poderá publicá
 
 ![Configurações avançadas](./media/vs-azure-tools-publish-azure-application-wizard/settings-advanced-settings.png)
 
-**Rótulo de implantação** : aceite o nome padrão ou insira um nome de sua escolha. Para anexar a data ao rótulo da implantação, deixe a caixa de seleção marcada.
+**Rótulo de implantação**: aceite o nome padrão ou insira um nome de sua escolha. Para anexar a data ao rótulo da implantação, deixe a caixa de seleção marcada.
 
-**Conta de armazenamento** : selecione a conta de armazenamento a ser usada para essa implantação, **&lt;Criar Novo> para criar uma conta de armazenamento. O datacenter é exibido entre parênteses para cada conta de armazenamento. É recomendável que o local de data center da conta de armazenamento seja o mesmo local de data center do serviço de nuvem (Configurações Comuns).
+**Conta de armazenamento**: selecione a conta de armazenamento a ser usada para essa implantação, **&lt;Criar Novo> para criar uma conta de armazenamento. O datacenter é exibido entre parênteses para cada conta de armazenamento. É recomendável que o local de data center da conta de armazenamento seja o mesmo local de data center do serviço de nuvem (Configurações Comuns).
 
 A conta de armazenamento do Azure armazena o pacote para a implantação do aplicativo. Depois que o aplicativo é implantado, o pacote é removido da conta de armazenamento.
 
-**Excluir a implantação em caso de falha** : selecione essa opção para que a implantação seja excluída se algum erro for encontrado durante a publicação. Ela deverá ser desmarcada se você quiser manter um endereço IP virtual constante para o serviço de nuvem.
+**Excluir a implantação em caso de falha**: selecione essa opção para que a implantação seja excluída se algum erro for encontrado durante a publicação. Ela deverá ser desmarcada se você quiser manter um endereço IP virtual constante para o serviço de nuvem.
 
-**Atualização da implantação** : selecione essa opção se quiser implantar apenas componentes atualizados. Esse tipo de implantação pode ser mais rápido do que uma implantação completa. Ela deverá ser marcada se você quiser manter um endereço IP virtual constante para o serviço de nuvem.
+**Atualização da implantação**: selecione essa opção se quiser implantar apenas componentes atualizados. Esse tipo de implantação pode ser mais rápido do que uma implantação completa. Ela deverá ser marcada se você quiser manter um endereço IP virtual constante para o serviço de nuvem.
 
-**Atualização da implantação — configurações** : essa caixa de diálogo é usada para especificar ainda mais como que você quer que as funções sejam atualizadas. Se você escolher **Atualização incremental** , cada instância do aplicativo será atualizada uma após a outra, de modo que o aplicativo estará sempre disponível. Se você escolher **Atualização simultânea** , todas as instâncias do aplicativo serão atualizadas ao mesmo tempo. A atualização simultânea é mais rápida, mas o serviço pode não estar disponível durante o processo de atualização.
+**Atualização da implantação — configurações**: essa caixa de diálogo é usada para especificar ainda mais como que você quer que as funções sejam atualizadas. Se você escolher **Atualização incremental**, cada instância do aplicativo será atualizada uma após a outra, de modo que o aplicativo estará sempre disponível. Se você escolher **Atualização simultânea**, todas as instâncias do aplicativo serão atualizadas ao mesmo tempo. A atualização simultânea é mais rápida, mas o serviço pode não estar disponível durante o processo de atualização.
 
 ![Configurações da implantação](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
-**Habilitar o IntelliTrace** : especifique se deseja habilitar o IntelliTrace. Com o IntelliTrace, você pode registrar em log informações extensas de depuração sobre uma instância de função quando ela é executada no Azure. Se precisa encontrar a causa de um problema, você pode usar os logs do IntelliTrace para examinar seu código no Visual Studio como se ele estivesse em execução no Azure. Para saber mais sobre como usar o IntelliTrace, confira [Depuração de um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+**Habilitar o IntelliTrace**: especifique se deseja habilitar o IntelliTrace. Com o IntelliTrace, você pode registrar em log informações extensas de depuração sobre uma instância de função quando ela é executada no Azure. Se precisa encontrar a causa de um problema, você pode usar os logs do IntelliTrace para examinar seu código no Visual Studio como se ele estivesse em execução no Azure. Para saber mais sobre como usar o IntelliTrace, confira [Depuração de um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](./vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
-**Habilitar criação de perfil** : especifique se deseja habilitar a criação de perfil de desempenho. O criador de perfil do Visual Studio permite obter uma análise detalhada dos aspectos computacionais de como o serviço de nuvem é executado. Para saber mais sobre como usar o criador de perfil do Visual Studio, confira [Teste do desempenho de um serviço de nuvem](./vs-azure-tools-performance-profiling-cloud-services.md).
+**Habilitar criação de perfil**: especifique se deseja habilitar a criação de perfil de desempenho. O criador de perfil do Visual Studio permite obter uma análise detalhada dos aspectos computacionais de como o serviço de nuvem é executado. Para saber mais sobre como usar o criador de perfil do Visual Studio, confira [Teste do desempenho de um serviço de nuvem](./vs-azure-tools-performance-profiling-cloud-services.md).
 
 **Habilitar Depurador Remoto para todas as funções** - especifique se deseja habilitar a depuração remota. Para saber mais sobre como depurar os serviços de nuvem usando o Visual Studio, confira [Depuração de um serviço de nuvem ou máquina virtual do Azure no Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md).
 

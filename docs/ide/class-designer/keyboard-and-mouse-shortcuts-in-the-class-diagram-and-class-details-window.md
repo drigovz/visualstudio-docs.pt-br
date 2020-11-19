@@ -1,5 +1,7 @@
 ---
 title: Atalhos de teclado e do mouse do Designer de Classe
+description: Saiba como usar o teclado além do mouse para executar ações de navegação no Designer de Classe e na janela de detalhes da classe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c184a12474e2d7ff0b626547acaaf2a37d460c8e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533660"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901096"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe
 
@@ -63,8 +65,8 @@ As seguintes ações do teclado têm suporte em diagramas de classe:
 |**Shift** + **teclas de direção**|Dentro das formas de tipo|Criar uma seleção contínua que consiste em elementos de forma, como membros, tipos aninhados ou compartimentos. Esses atalhos não dão suporte ao encapsulamento.|
 |**Início**|Dentro das formas de tipo|Navegue até o título de forma de nível superior.|
 |**Início**|Formas de nível superior|Navegue até a primeira forma no diagrama.|
-|**Completo**|Dentro das formas de tipo|Navegue até o último elemento visível dentro da forma.|
-|**Completo**|Formas de nível superior|Navegue até a última forma no diagrama.|
+|**End**|Dentro das formas de tipo|Navegue até o último elemento visível dentro da forma.|
+|**End**|Formas de nível superior|Navegue até a última forma no diagrama.|
 |**Shift** + **Página inicial**|Dentro da forma de tipo|Seleciona elementos dentro da forma, começando pelo item atual e terminando com o item superior na mesma forma.|
 |**Shift** + **Fim**|Dentro da forma de tipo|O mesmo que **Shift** + **Home** , mas na direção de cima para baixo.|
 |**Digita**|Todos os contextos|Invoca a ação padrão na forma, o que também está disponível por meio de um clique duplo. Na maioria dos casos, essa ação é Exibir Código, mas alguns elementos a definem de maneira diferente (pirulitos, cabeçalhos de compartimento, rótulos de pirulito).|
@@ -87,14 +89,14 @@ As seguintes ações do teclado têm suporte em diagramas de classe:
 
 Usar as chaves a seguir para navegar na janela **Detalhes da Classe**:
 
-|Chave|Result|
+|Chave|Resultado|
 |-|-|
 |**,** (vírgula)|Se o cursor estiver em uma linha de parâmetro, digitar uma vírgula move o cursor para o campo Nome do parâmetro seguinte. Se o cursor estiver na linha do último parâmetro de um método, ele moverá o cursor para o \<add parameter> campo, que você pode usar para criar um novo parâmetro.<br /><br /> Se o cursor estiver em outro lugar na janela **Detalhes da Classe**, digitar uma vírgula adicionará literalmente uma vírgula ao campo atual.|
 |**;** (ponto e vírgula) ou **)** (parênteses de fechamento)|Mova o cursor para o campo Nome da próxima linha de membro na grade da janela **Detalhes da Classe**.|
 |**Guia**|Move o cursor para o campo seguinte, se movendo primeiro da esquerda para a direita e, depois, de cima para baixo. Se o cursor estiver saindo de um campo no qual você digitou texto, a janela **Detalhes da Classe** processará o texto e o armazenará se ele não produzir um erro.<br /><br /> Se o cursor estiver em um campo vazio, como \<add parameter> , Tab o move para o primeiro campo da próxima linha.|
 |**Barra de espaços**|Move o cursor para o campo seguinte, se movendo primeiro da esquerda para a direita e, depois, de cima para baixo. Se o cursor estiver em um campo vazio, como \<add parameter> , ele será movido para o primeiro campo da próxima linha. Observe que \<space> é digitado imediatamente após uma vírgula ser ignorada.<br /><br /> Se o cursor estiver no campo Resumo, digitar um espaço adiciona um caractere de espaço.<br /><br /> Se o cursor estiver na coluna Ocultar de uma determinada linha, digitar um espaço alterna o valor da caixa de seleção Ocultar.|
 |**Ctrl** + **Guia**|Mude para outra janela do documento. Por exemplo, mude da janela **Detalhes da Classe** para um arquivo de código aberto.|
-|**Esc**|Se você tiver começado a digitar texto em um campo, pressionar ESC atua como uma tecla de desfazer, revertendo o conteúdo do campo para o valor anterior. Se a janela Detalhes da Classe tiver o foco geral, mas nenhuma célula específica estiver em foco, pressionar ESC removerá o foco da janela **Detalhes da Classe**.|
+|**ESC**|Se você tiver começado a digitar texto em um campo, pressionar ESC atua como uma tecla de desfazer, revertendo o conteúdo do campo para o valor anterior. Se a janela Detalhes da Classe tiver o foco geral, mas nenhuma célula específica estiver em foco, pressionar ESC removerá o foco da janela **Detalhes da Classe**.|
 |Seta para **cima** e **seta para baixo**|Essas chaves movem o cursor de uma linha para outra, verticalmente, na grade da janela **Detalhes da Classe**.|
 |**Seta para a esquerda**|Se o cursor estiver na coluna Nome, pressionar a seta para a esquerda recolhe o nó atual da hierarquia (se ele estiver aberto).|
 |**Seta para a direita**|Se o cursor estiver na coluna Nome, pressionar a seta para a direita expande o nó atual da hierarquia (se ele estiver recolhido).|

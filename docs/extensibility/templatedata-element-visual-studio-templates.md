@@ -1,5 +1,7 @@
 ---
 title: Elemento TemplateData (modelos do Visual Studio) | Microsoft Docs
+description: Saiba mais sobre o elemento TemplateData e como ele categoriza o modelo e define como ele é exibido no novo projeto ou na caixa de diálogo Adicionar novo item.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699187"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903254"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Elemento TemplateData (modelos do Visual Studio)
 Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .
@@ -41,7 +43,7 @@ Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa
  As seções a seguir descrevem atributos, elementos filho e elementos pai.
 
 ### <a name="attributes"></a>Atributos
- Nenhum.
+ nenhuma.
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -49,7 +51,7 @@ Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa
 | - | - |
 | [Nome](../extensibility/name-element-visual-studio-templates.md) | Elemento necessário.<br /><br /> Especifica o nome do modelo como ele aparece no **novo projeto** ou na caixa de diálogo **Adicionar novo item** . |
 | [Descrição](../extensibility/description-element-visual-studio-templates.md) | Elemento necessário.<br /><br /> Especifica a descrição do modelo como ele aparece no **novo projeto** ou na caixa de diálogo **Adicionar novo item** . |
-| [Cone](../extensibility/icon-element-visual-studio-templates.md) | Elemento necessário.<br /><br /> Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** , para o modelo. |
+| [Ícone](../extensibility/icon-element-visual-studio-templates.md) | Elemento necessário.<br /><br /> Especifica o caminho e o nome do arquivo de imagem que serve como o ícone, que aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** , para o modelo. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Elemento necessário.<br /><br /> Categoriza o modelo de projeto para que ele apareça sob o grupo especificado na caixa de diálogo **novo projeto** . |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Classifica o modelo de projeto para que ele apareça sob a subcategoria especificada na caixa de diálogo **novo projeto** . |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Elemento opcional.<br /><br /> Especifica a ID do modelo. |

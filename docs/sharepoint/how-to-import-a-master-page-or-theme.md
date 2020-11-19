@@ -1,5 +1,7 @@
 ---
 title: Como importar uma página mestra ou tema | Microsoft Docs
+description: Crie modelos para páginas mestras e temas no SharePoint Designer e, em seguida, importe para o Visual Studio para fornecer páginas no site do SharePoint a uma aparência consistente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015294"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903488"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Como importar uma página mestra ou tema
   Você pode dar uma aparência consistente às páginas do seu site do SharePoint criando e usando páginas mestras e temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o não fornece modelos para esses elementos, mas você pode criá-los no SharePoint Designer e, em seguida, importá-los para o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Para obter mais informações, consulte [bloco de construção: páginas e interface do usuário](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) no site da Microsoft.
@@ -41,7 +43,7 @@ ms.locfileid: "86015294"
 
 6. Escolha o nó do módulo.
 
-7. Na barra de menus, escolha **projeto**  >  **Adicionar item existente**e, em seguida, escolha a página mestra ou o arquivo de tema.
+7. Na barra de menus, escolha **projeto**  >  **Adicionar item existente** e, em seguida, escolha a página mestra ou o arquivo de tema.
 
      Os arquivos de página mestra têm uma extensão. Master, e os arquivos de tema têm uma extensão. thmx.
 

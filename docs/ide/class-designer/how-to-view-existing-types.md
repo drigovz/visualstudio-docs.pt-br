@@ -1,5 +1,7 @@
 ---
 title: Como exibir tipos existentes (Designer de Classe)
+description: Saiba como ver um tipo existente e seus membros adicionando sua forma a um diagrama de classe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770003"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901161"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Como exibir tipos existentes no Designer de Classe
 
@@ -59,7 +61,7 @@ Quando você exibe um tipo no diagrama pela primeira vez, sua forma aparece reco
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Para exibir o conteúdo de um projeto em um diagrama de classe
 
-Em **Gerenciador de soluções** ou **modo de exibição de classe**, clique com o botão direito do mouse no projeto e escolha **Exibir**e, em seguida, escolha **Exibir diagrama de classe**. Um Diagrama de Classe populado automaticamente é criado.
+Em **Gerenciador de soluções** ou **modo de exibição de classe**, clique com o botão direito do mouse no projeto e escolha **Exibir** e, em seguida, escolha **Exibir diagrama de classe**. Um Diagrama de Classe populado automaticamente é criado.
 
 ## <a name="see-also"></a>Confira também
 

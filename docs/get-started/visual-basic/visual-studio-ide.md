@@ -1,8 +1,11 @@
 ---
 title: Visão geral para desenvolvedores de Visual Basic
+description: Saiba como usar o Visual Studio para editar, depurar e compilar código e, em seguida, publicar um aplicativo como um desenvolvedor de Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928037"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901564"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Basic
 
@@ -237,7 +240,7 @@ Para alterar para o tema **Escuro**:
 
 2. Na barra de menus, escolha **ferramentas**  >  **Opções** para abrir a caixa de diálogo **Opções** .
 
-3. Na **Environment**  >  página opções**gerais** do ambiente, altere a seleção de **tema de cores** para **escuro**e, em seguida, escolha **OK**.
+3. Na **Environment**  >  página opções **gerais** do ambiente, altere a seleção de **tema de cores** para **escuro** e, em seguida, escolha **OK**.
 
    ![Alterar o tema de cores para escuro no Visual Studio](media/change-color-theme.png)
 
@@ -281,7 +284,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Arquivo > Novo projeto na barra de menus](media/file-new-project-menu.png)
 
-   A caixa de diálogo **novo projeto** mostra vários *modelos*de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
+   A caixa de diálogo **novo projeto** mostra vários *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
 1. Escolha a categoria **.NET Core** em **Visual Basic** e escolha o modelo **Aplicativo de Console (.NET Core)**. Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
 
@@ -375,7 +378,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
 
-   ![Janela do console](../media/vs-2019/overview-console-window.png)
+   ![Captura de tela da janela do console mostrando a mensagem de Olá, Mundo.](../media/vs-2019/overview-console-window.png)
 
 1. Para fechar a janela do console, pressione qualquer tecla do teclado.
 
@@ -400,7 +403,7 @@ Vamos nos aprofundar e criar um programa simples.
 
 1. Insira seu nome na janela do console e pressione **Enter**.
 
-   ![Janela do console](../media/vs-2019/overview-console-input.png)
+   ![Captura de tela da janela do console mostrando o que é sua pergunta de nome e a resposta do aplicativo.](../media/vs-2019/overview-console-input.png)
 
 1. Pressione qualquer tecla para fechar a janela do console e interromper o programa em execução.
 
@@ -509,7 +512,7 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

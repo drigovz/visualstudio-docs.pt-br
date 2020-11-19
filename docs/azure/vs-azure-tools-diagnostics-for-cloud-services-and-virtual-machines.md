@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Saiba como configurar o diagnóstico para depurar os serviços de nuvem e as VMs (máquinas virtuais) do Azure no Visual Studio.
 author: ghogen
 manager: jillfra
-ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809840"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902594"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
 Quando você precisa solucionar problemas de uma máquina virtual ou serviço de nuvem do Azure, pode usar o Visual Studio para configurar mais facilmente o Diagnóstico do Azure. O diagnóstico captura dados do sistema e dados de log em máquinas virtuais e instâncias de máquinas virtuais que executam o serviço de nuvem. Dados de diagnóstico são transferidos para uma conta de armazenamento que você escolhe. Para obter mais informações sobre o registro em log de diagnóstico no Azure, consulte [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -90,7 +89,7 @@ No Visual Studio, você pode coletar dados de diagnóstico para funções execut
     ![Habilitar a configuração e diagnóstico do Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Para este exemplo, selecione a opção **Plano personalizado** para que você possa personalizar os dados coletados.
 7. Na caixa **Cota de disco em MB**, você pode definir quanto espaço alocar na sua conta de armazenamento para dados de diagnóstico. Você pode alterar ou aceitar o valor padrão.
-8. Em cada guia dos dados de diagnóstico que você deseja coletar, marque a caixa de seleção **habilitar transferência de \<log type\> ** . Por exemplo, se você quiser coletar logs de aplicativo, na guia **Logs de aplicativo**, marque a caixa de seleção **Habilitar transferência de Logs de Aplicativos**. Além disso, especifique todas as outras informações necessárias para cada tipo de dados de diagnóstico. Para obter informações de configuração para cada guia, consulte a seção **Configurar fontes de dados de diagnóstico** posteriormente neste artigo.
+8. Em cada guia dos dados de diagnóstico que você deseja coletar, marque a caixa de seleção **habilitar transferência de \<log type\>** . Por exemplo, se você quiser coletar logs de aplicativo, na guia **Logs de aplicativo**, marque a caixa de seleção **Habilitar transferência de Logs de Aplicativos**. Além disso, especifique todas as outras informações necessárias para cada tipo de dados de diagnóstico. Para obter informações de configuração para cada guia, consulte a seção **Configurar fontes de dados de diagnóstico** posteriormente neste artigo.
 9. Depois de habilitar a coleção de todos os dados de diagnóstico que você desejar, escolha o botão **OK**.
 10. Execute seu projeto de serviço de nuvem do Azure no Visual Studio, como de costume. Conforme você usa seu aplicativo, as informações de log habilitadas são salvas na conta de armazenamento do Azure especificada.
 

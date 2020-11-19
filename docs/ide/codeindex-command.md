@@ -1,5 +1,7 @@
 ---
 title: Comando CodeIndex
+description: Saiba como usar o comando CodeIndex para gerenciar a indexação de código em Azure DevOps Server (anteriormente conhecido como Team Foundation Server).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928483"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901174"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -122,7 +124,7 @@ Para excluir o índice de código com confirmação:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Localizar alterações de código e outro histórico com o CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Gerenciando a configuração do servidor com TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

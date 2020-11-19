@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 4d720c51d7245d60d40c286c71976132a119a56f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399041"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902864"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Adicionar uma conexão ao banco de dados SQL do Azure
 
@@ -24,7 +24,7 @@ Com o Visual Studio, você pode conectar qualquer um dos seguintes itens ao banc
 - ASP.NET Core
 - .NET Core (incluindo aplicativo de console, WPF, Windows Forms, biblioteca de classes)
 - Função de trabalho do .NET Core
-- Azure Functions
+- Funções do Azure
 - Plataforma Universal do Windows aplicativo
 - Xamarin
 - Cordova
@@ -42,7 +42,7 @@ A funcionalidade do serviço conectado adiciona todas as referências necessári
 
 1. Abra o projeto no Visual Studio.
 
-1. Em **Gerenciador de soluções** , clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó **Serviços conectados** e, no menu de contexto, selecione **Adicionar serviço conectado**.
 
 1. Na guia **Serviços conectados** , selecione o ícone + para **dependências de serviço**.
 

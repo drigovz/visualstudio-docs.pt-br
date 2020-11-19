@@ -1,5 +1,7 @@
 ---
 title: Como criar tipos usando Designer de Classe
+description: Saiba como criar novos tipos para projetos em C# e Visual Basic criando-os em um diagrama de classe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770217"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901434"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
 
@@ -34,7 +36,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
     - **Classe** ou **Classe Abstrata**
 
-    - **Enumeração**
+    - **Enumera**
 
     - **Interface**
 

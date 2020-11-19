@@ -3,17 +3,16 @@ title: Testando o desempenho de um serviço de nuvem | Microsoft Docs
 description: Testar o desempenho de um serviço de nuvem usando o criador de perfil do Visual Studio
 author: mikejo5000
 manager: jillfra
-ms.assetid: 7a5501aa-f92c-457c-af9b-92ea50914e24
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 119f781e972b38c04763f7a069e3835f42e21941
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508425"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902253"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
 ## <a name="overview"></a>Visão geral

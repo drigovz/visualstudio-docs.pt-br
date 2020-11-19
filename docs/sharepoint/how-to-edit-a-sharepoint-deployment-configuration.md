@@ -1,5 +1,7 @@
 ---
 title: 'Como: editar uma configuração de implantação do SharePoint | Microsoft Docs'
+description: Saiba como criar uma configuração de implantação do SharePoint ou modificar uma configuração de implantação existente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016779"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903553"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: editar uma configuração de implantação do SharePoint
   Você pode criar uma configuração de implantação ou modificar uma configuração de implantação existente. Por exemplo, você pode executar uma única etapa ou alterar a ordem das etapas no processo de implantação. Talvez você queira criar ou modificar as configurações de implantação porque as configurações internas e adicionadas programaticamente não podem ser alteradas.
@@ -28,7 +30,7 @@ ms.locfileid: "86016779"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Para criar uma configuração de implantação do SharePoint
 
-1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha **projeto**,**Propriedades**do _ProjectName_.
+1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha **projeto**,**Propriedades** do _ProjectName_.
 
 2. Na guia **SharePoint** , escolha o botão **novo** .
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016779"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Para alterar a configuração de implantação ativa
 
-1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha **Project**  >  ** \<*ProjectName*> Propriedades**do projeto.
+1. Em **Gerenciador de soluções**, escolha um projeto do SharePoint e, na barra de menus, escolha **Project**  >  **\<*ProjectName*> Propriedades** do projeto.
 
 2. Escolha a guia **SharePoint** .
 
