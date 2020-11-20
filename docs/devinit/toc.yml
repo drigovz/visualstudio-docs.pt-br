@@ -86,3 +86,5 @@
           href: sample-dotnet-core.md
         - name: Aplicativo Node.js
           href: sample-nodejs.md
+    - name: Tutorial
+      href: tutorial.md
