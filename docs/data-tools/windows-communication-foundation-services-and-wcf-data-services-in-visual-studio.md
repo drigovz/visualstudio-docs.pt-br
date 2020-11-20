@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation e WCF Data Services
+description: Explore os serviços Windows Communication Foundation (WCF) e WCF Data Services no Visual Studio, para que você possa criar aplicativos distribuídos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281039"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997895"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 
@@ -261,7 +263,7 @@ Para evitar esse problema, os tipos em assemblies referenciados são compartilha
 | [Solucionando problemas de referências de serviço](../data-tools/troubleshooting-service-references.md) | Apresenta alguns erros comuns que podem ocorrer com referências de serviço e como evitá-los. |
 | [Depurando serviços WCF](../debugger/debugging-wcf-services.md) | Descreve problemas comuns de depuração e técnicas que você pode encontrar ao depurar serviços WCF. |
 | [Walkthrough: Criando um aplicativo de dados de n camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornece instruções passo a passo para criar um conjunto de dados tipado e separar o código do TableAdapter e do conjunto de dados em vários projetos. |
-| [Caixa de diálogo Configurar Referência de Serviço](../data-tools/configure-service-reference-dialog-box.md) | Descreve os elementos da interface do usuário da caixa de diálogo **Configurar referência de serviço** . |
+| [Caixa de diálogo Configurar referência de serviço](../data-tools/configure-service-reference-dialog-box.md) | Descreve os elementos da interface do usuário da caixa de diálogo **Configurar referência de serviço** . |
 
 ## <a name="reference"></a>Referência
 

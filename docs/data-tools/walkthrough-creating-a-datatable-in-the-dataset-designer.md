@@ -1,5 +1,6 @@
 ---
 title: Criar uma DataTable no Designer de Conjunto de Dados
+description: Neste tutorial, crie uma DataTable (sem um TableAdapter) usando o Designer de Conjunto de Dados. Crie um novo aplicativo Windows Forms e adicione um novo conjunto de um.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036763"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998246"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Walkthrough: criar uma DataTable no Designer de Conjunto de Dados
 
@@ -32,7 +33,7 @@ Este tutorial explica como criar um <xref:System.Data.DataTable> (sem um TableAd
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **DataTableWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **DataTableWalkthrough** e escolha **OK**.
 
      O projeto **DataTableWalkthrough** é criado e adicionado ao **Gerenciador de soluções**.
 
@@ -42,7 +43,7 @@ Este tutorial explica como criar um <xref:System.Data.DataTable> (sem um TableAd
 
      A caixa de diálogo **Adicionar Novo Item** aparecerá.
 
-2. No painel esquerdo, selecione **dados**e, em seguida, selecione **DataSet** no painel central.
+2. No painel esquerdo, selecione **dados** e, em seguida, selecione **DataSet** no painel central.
 
 3. Escolha **Adicionar**.
 
@@ -58,7 +59,7 @@ Este tutorial explica como criar um <xref:System.Data.DataTable> (sem um TableAd
 
 ## <a name="add-columns-to-the-datatable"></a>Adicionar colunas à DataTable
 
-1. Clique com o botão direito do mouse na tabela **música** . Aponte para **Adicionar**e clique em **coluna**.
+1. Clique com o botão direito do mouse na tabela **música** . Aponte para **Adicionar** e clique em **coluna**.
 
 2. Nomeie a coluna `SongID` .
 

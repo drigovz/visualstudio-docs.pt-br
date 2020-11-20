@@ -1,5 +1,7 @@
 ---
 title: Conjuntos de dados tipados versus. não tipados
+description: Entenda a diferença entre conjuntos de valores digitados e não tipados. Contraste o acesso a dados em datasets digitados e não tipados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586101"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998051"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de dados tipados versus. não tipados
 Um conjunto de dados tipado é um conjunto de dados que é derivado primeiro da <xref:System.Data.DataSet> classe base e, em seguida, usa informações do **Designer de conjunto de dados**, que é armazenado em um arquivo. xsd, para gerar uma nova classe de conjunto de dados com rigidez de tipos. As informações do esquema (tabelas, colunas e assim por diante) são geradas e compiladas nessa nova classe de conjunto de dados como um conjunto de objetos e propriedades de primeira classe. Como um conjunto de dados tipado herda da <xref:System.Data.DataSet> classe base, a classe tipada assume toda a funcionalidade da <xref:System.Data.DataSet> classe e pode ser usada com métodos que usam uma instância de uma <xref:System.Data.DataSet> classe como um parâmetro.
@@ -34,7 +36,7 @@ Por outro lado, se você estiver trabalhando com um conjunto de um DataSet não 
 [!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
 [!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
 
-O acesso digitado não é apenas mais fácil de ler, mas também tem suporte completo do IntelliSense no **Editor de código**do Visual Studio. Além de ser mais fácil de trabalhar com, a sintaxe para o dataset tipado fornece verificação de tipo em tempo de compilação, reduzindo significativamente a possibilidade de erros na atribuição de valores a membros de conjuntos de de DataSet. Se você alterar o nome de uma coluna em sua <xref:System.Data.DataSet> classe e, em seguida, compilar seu aplicativo, receberá um erro de compilação. Ao clicar duas vezes no erro de compilação na **lista de tarefas**, você pode ir diretamente para a linha ou linhas de código que referenciam o nome de coluna antigo. O acesso a tabelas e colunas em um dataset tipado também é ligeiramente mais rápido no tempo de execução porque o acesso é determinado em tempo de compilação, não através de coleções em tempo de execução.
+O acesso digitado não é apenas mais fácil de ler, mas também tem suporte completo do IntelliSense no **Editor de código** do Visual Studio. Além de ser mais fácil de trabalhar com, a sintaxe para o dataset tipado fornece verificação de tipo em tempo de compilação, reduzindo significativamente a possibilidade de erros na atribuição de valores a membros de conjuntos de de DataSet. Se você alterar o nome de uma coluna em sua <xref:System.Data.DataSet> classe e, em seguida, compilar seu aplicativo, receberá um erro de compilação. Ao clicar duas vezes no erro de compilação na **lista de tarefas**, você pode ir diretamente para a linha ou linhas de código que referenciam o nome de coluna antigo. O acesso a tabelas e colunas em um dataset tipado também é ligeiramente mais rápido no tempo de execução porque o acesso é determinado em tempo de compilação, não através de coleções em tempo de execução.
 
 Mesmo que os conjuntos de linhas de texto tenham muitas vantagens, um conjunto de um DataSet não tipado é útil em várias circunstâncias. O cenário mais óbvio é quando nenhum esquema está disponível para o conjunto de um. Isso pode ocorrer, por exemplo, se seu aplicativo estiver interagindo com um componente que retorna um conjunto de dados, mas você não sabe com antecedência o que é sua estrutura. Da mesma forma, há ocasiões em que você está trabalhando com dados que não têm uma estrutura estática e previsível. Nesse caso, é impraticável usar um conjunto de dados tipado, pois você precisaria regenerar a classe DataSet tipada com cada alteração na estrutura de dado.
 

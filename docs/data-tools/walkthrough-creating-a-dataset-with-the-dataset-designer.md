@@ -1,5 +1,6 @@
 ---
 title: Criar um conjunto de uma com o Designer de Conjunto de Dados
+description: Neste tutorial, crie um conjunto de um DataSet usando o Designer de Conjunto de Dados. Entenda o processo de criação de um novo projeto e adição de um novo item de conjunto de um.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036776"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998025"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Walkthrough: criar um conjunto de um DataSet com o Designer de Conjunto de Dados
 
@@ -51,7 +52,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **DatasetDesignerWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **DatasetDesignerWalkthrough** e escolha **OK**.
 
      O Visual Studio adiciona o projeto para **Gerenciador de soluções** e exibe um novo formulário no designer.
 
@@ -61,9 +62,9 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
      A caixa de diálogo **Adicionar Novo Item** aparecerá.
 
-2. No painel esquerdo, selecione **dados**e, em seguida, selecione **DataSet** no painel central.
+2. No painel esquerdo, selecione **dados** e, em seguida, selecione **DataSet** no painel central.
 
-3. Nomeie **o conjunto de DataSet e, em**seguida, escolha **Adicionar**.
+3. Nomeie **o conjunto de DataSet e, em** seguida, escolha **Adicionar**.
 
      O Visual Studio adiciona um arquivo chamado **NorthwindDataSet. xsd** ao projeto e o abre no **Designer de conjunto de dados**.
 
@@ -81,7 +82,7 @@ Esta seção explica como adicionar tabelas ao conjunto de os.
 
 ### <a name="to-create-the-customers-table"></a>Para criar a tabela Customers
 
-1. Expanda a conexão de dados que você criou em **Gerenciador de servidores**e, em seguida, expanda o nó **tabelas** .
+1. Expanda a conexão de dados que você criou em **Gerenciador de servidores** e, em seguida, expanda o nó **tabelas** .
 
 2. Arraste a tabela **Customers** de **Gerenciador de Servidores** para a **Designer de conjunto de dados**.
 
@@ -91,7 +92,7 @@ Esta seção explica como adicionar tabelas ao conjunto de os.
 
 - Arraste a tabela **Orders** de **Gerenciador de Servidores** para a **Designer de conjunto de dados**.
 
-     Uma tabela de dados **Orders** , **OrdersTableAdapter**e relação de dados entre as tabelas **Customers** e **Orders** são adicionadas ao DataSet.
+     Uma tabela de dados **Orders** , **OrdersTableAdapter** e relação de dados entre as tabelas **Customers** e **Orders** são adicionadas ao DataSet.
 
 ### <a name="to-create-the-orderdetails-table"></a>Para criar a tabela OrderDetails
 

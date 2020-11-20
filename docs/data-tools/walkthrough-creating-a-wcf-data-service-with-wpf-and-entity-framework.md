@@ -1,5 +1,7 @@
 ---
 title: Criar um serviço de dados WCF com o & do WPF Entity Framework
+description: Crie um serviço de dados WCF com o WPF e Entity Framework hospedados em um aplicativo Web ASP.NET e, em seguida, acesse-o de um aplicativo Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585984"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998259"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework
 Este passo a passo demonstra como criar um [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simples que é hospedado em um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e como acessá-lo de um aplicativo do Windows Forms.
@@ -47,7 +49,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
-    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O**pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no instalador do Visual Studio.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
+    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O **pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no instalador do Visual Studio.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
 
        Uma janela do editor de consultas é aberta.
 
@@ -134,7 +136,7 @@ Na próxima etapa, você criará e testará o serviço de dados.
 
 6. Na barra de menus, escolha **depurar**  >  **Iniciar sem depuração** para executar o serviço. Uma janela do navegador é aberta e o esquema XML para o serviço é exibido.
 
-7. Na barra de **endereços** , digite `Customers` no final da URL para **NorthwindCustomers. svc**e escolha a tecla **Enter** .
+7. Na barra de **endereços** , digite `Customers` no final da URL para **NorthwindCustomers. svc** e escolha a tecla **Enter** .
 
      Uma representação XML dos dados na `Customers` tabela é exibida.
 
@@ -178,7 +180,7 @@ Na próxima etapa, você configura uma fonte de dados para habilitar a vinculaç
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Para habilitar a associação de dados ao serviço
 
-1. Na barra de menus, escolha **Exibir**  >  **outras**  >  **fontes de dados**do Windows.
+1. Na barra de menus, escolha **Exibir**  >  **outras**  >  **fontes de dados** do Windows.
 
    A janela **Fontes de Dados** é aberta.
 
@@ -251,7 +253,7 @@ Nesta etapa, você personaliza o aplicativo para filtrar os dados pela cidade do
 
 2. Adicione um controle <xref:System.Windows.Forms.TextBox> e um controle <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** ao formulário.
 
-3. Abra o menu de atalho para o <xref:System.Windows.Forms.Button> controle, escolha **Exibir código**e, em seguida, adicione o seguinte código ao `Button1_Click` manipulador de eventos:
+3. Abra o menu de atalho para o <xref:System.Windows.Forms.Button> controle, escolha **Exibir código** e, em seguida, adicione o seguinte código ao `Button1_Click` manipulador de eventos:
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

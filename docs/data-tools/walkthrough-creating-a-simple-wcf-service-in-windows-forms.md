@@ -1,5 +1,6 @@
 ---
 title: Criar um serviço WCF simples no Windows Forms
+description: Neste tutorial, crie um serviço Windows Communication Foundation (WCF) no Visual Studio, teste-o e, em seguida, acesse-o de um aplicativo Windows Forms.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036789"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998129"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Walkthrough: criar um serviço WCF simples no Windows Forms
 
@@ -50,12 +51,12 @@ Este tutorial demonstra como criar um serviço de Windows Communication Foundati
 
 2. Na janela iniciar, escolha **criar um novo projeto**.
 
-3. Digite **biblioteca de serviços WCF** na caixa de pesquisa na página **criar um novo projeto** . Selecione o modelo C# ou Visual Basic para a **biblioteca de serviços do WCF**e clique em **Avançar**.
+3. Digite **biblioteca de serviços WCF** na caixa de pesquisa na página **criar um novo projeto** . Selecione o modelo C# ou Visual Basic para a **biblioteca de serviços do WCF** e clique em **Avançar**.
 
    ![Criar novo projeto de biblioteca de serviço WCF no Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
-   > Se você não vir nenhum modelo, talvez seja necessário instalar o componente **Windows Communication Foundation** do Visual Studio. Escolha **instalar mais ferramentas e recursos** para abrir o instalador do Visual Studio. Escolha a guia **componentes individuais** , role para baixo até **atividades de desenvolvimento**e, em seguida, selecione **Windows Communication Foundation**. Clique em **Modificar**.
+   > Se você não vir nenhum modelo, talvez seja necessário instalar o componente **Windows Communication Foundation** do Visual Studio. Escolha **instalar mais ferramentas e recursos** para abrir o instalador do Visual Studio. Escolha a guia **componentes individuais** , role para baixo até **atividades de desenvolvimento** e, em seguida, selecione **Windows Communication Foundation**. Clique em **Modificar**.
 
 4. Na página **configurar seu novo projeto** , clique em **criar**.
 
@@ -118,7 +119,7 @@ Este tutorial demonstra como criar um serviço de Windows Communication Foundati
 
 1. No menu **arquivo** , aponte para **Adicionar** e clique em **novo projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** , selecione **Windows**e, em seguida, selecione **Windows Forms aplicativo**. Clique em **OK** para abrir o projeto.
+2. Na caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** , selecione **Windows** e, em seguida, selecione **Windows Forms aplicativo**. Clique em **OK** para abrir o projeto.
 
      ![Windows Forms projeto de aplicativo](../data-tools/media/wcf7.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Atualizar dados usando um TableAdapter
+description: Atualize os dados em um conjunto. Envie os dados de volta para o Database chamando o método Update de um TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7ecca8c28ff355952907f1f0c49485117a25456
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 049137d85429d720024fa9ce075f6a102f8d7c91
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281195"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998285"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Atualizar dados usando um TableAdapter
 
@@ -53,4 +55,4 @@ Chame o `Update` método de um TableAdapter. Passe o nome da tabela de dados que
 
 ## <a name="see-also"></a>Confira também
 
-- [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+- [Salvar dados novamente no banco de dados](../data-tools/save-data-back-to-the-database.md)

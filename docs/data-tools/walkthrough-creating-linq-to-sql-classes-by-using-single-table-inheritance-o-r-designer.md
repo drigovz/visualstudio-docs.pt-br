@@ -1,5 +1,6 @@
 ---
 title: LINQ to SQL classes com herança de tabela única
+description: Neste tutorial, crie LINQ to SQL classes usando a herança de tabela única no Object Relational Designer do Visual Studio (o/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036750"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998233"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
 As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este tutorial se expande sobre as etapas genéricas fornecidas em [como configurar a herança usando o tópico o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -53,10 +54,10 @@ Para ver como a herança funciona, crie uma pequena `Person` tabela, use-a como 
     |Nome da coluna|Tipo de Dados|Permitir Nulos|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**Falso**|
-    |**Tipo**|**int**|**True**|
+    |**Tipo**|**int**|**Verdadeiro**|
     |**Nome**|**nvarchar(200)**|**Falso**|
     |**Sobrenome**|**nvarchar(200)**|**Falso**|
-    |**Gerente**|**int**|**True**|
+    |**Gerente**|**int**|**Verdadeiro**|
 
 3. Defina a coluna de identificação como a chave primária.
 
@@ -97,7 +98,7 @@ Agora que você criou a tabela, crie um novo projeto demonstrar a configuração
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **InheritanceWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **InheritanceWalkthrough** e escolha **OK**.
 
      O projeto **InheritanceWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 

@@ -1,5 +1,6 @@
 ---
 title: Personalizar comportamento de inserção/atualização/exclusão
+description: Neste tutorial, personalize o comportamento de inserção, atualização e exclusão de classes de entidade usando o LINQ (consulta integrada à linguagem) para ferramentas SQL no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036737"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997921"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Walkthrough: personalizar o comportamento de inserção, atualização e exclusão de classes de entidade
 
@@ -54,7 +55,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
-    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O**pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no **instalador do Visual Studio**.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
+    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O **pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no **instalador do Visual Studio**.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
 
        Uma janela do editor de consultas é aberta.
 
@@ -78,7 +79,7 @@ Como você está trabalhando com classes de LINQ to SQL e exibindo os dados em u
 
 3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **UpdatingWithSProcsWalkthrough**e escolha **OK**.
+4. Nomeie o projeto **UpdatingWithSProcsWalkthrough** e escolha **OK**.
 
      O projeto de **UpdatingWithSProcsWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 

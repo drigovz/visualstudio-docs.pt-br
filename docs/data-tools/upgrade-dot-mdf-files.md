@@ -1,5 +1,7 @@
 ---
 title: Atualizar arquivos .mdf
+description: Examine as opções para atualizar um arquivo de banco de dados (. MDF) depois de instalar uma versão mais recente do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281117"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998038"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 
@@ -97,7 +99,7 @@ Você também pode modificar uma conexão SQL Server Express para usar o LocalDB
 
   - Para executar o projeto, selecione a tecla **F5** .
 
-  - Para editar o banco de dados, abra o arquivo *. MDF* em **Gerenciador de soluções**e expanda o nó em **Gerenciador de servidores** para trabalhar com seu banco de dados.
+  - Para editar o banco de dados, abra o arquivo *. MDF* em **Gerenciador de soluções** e expanda o nó em **Gerenciador de servidores** para trabalhar com seu banco de dados.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para fazer SQL Server Express o mecanismo de banco de dados padrão
 

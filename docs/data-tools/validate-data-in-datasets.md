@@ -1,5 +1,7 @@
 ---
 title: Validar dados em conjuntos de dados
+description: Aprenda a validar dados em conjuntos de dados. A validação de dados envolve a confirmação de que os valores inseridos em objetos de dados estão em conformidade com as restrições dentro do esquema de um conjunto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281078"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998298"
 ---
 # <a name="validate-data-in-datasets"></a>Validar dados em conjuntos de dados
 A validação de dados é o processo de confirmar que os valores inseridos em objetos de dados estão em conformidade com as restrições no esquema de um DataSet. O processo de validação também confirma que esses valores estão seguindo as regras que foram estabelecidas para seu aplicativo. É uma boa prática validar os dados antes de enviar atualizações para o banco de dados subjacente. Isso reduz erros, bem como o número potencial de viagens de ida e volta entre um aplicativo e o banco de dados.

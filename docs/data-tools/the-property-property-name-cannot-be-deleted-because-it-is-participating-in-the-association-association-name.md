@@ -1,6 +1,6 @@
 ---
 title: A propriedade participa da Associação
-description: A propriedade não pode ser excluída porque participa da associação
+description: A propriedade não pode ser excluída porque está participando da associação. Exibir informações sobre esta mensagem de Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d473c3aa83bc5ac4ca802067b9b9eb32073d32f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0d39fa3d7740996be3fc9da75224739f1e55539
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036204"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998367"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>A propriedade &lt;nome da propriedade&gt; não pode ser excluída porque está participando da associação &lt;nome da associação&gt;
 

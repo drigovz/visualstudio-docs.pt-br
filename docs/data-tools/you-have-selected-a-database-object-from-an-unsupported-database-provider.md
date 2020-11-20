@@ -1,6 +1,6 @@
 ---
 title: Objeto de provedor sem suporte
-description: Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
+description: Você selecionou um objeto de banco de dados de um provedor de banco de dados sem suporte. Exibir informações sobre esta mensagem do Visual Studio (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 84841c5e0759618430f9c2e4f0146cbc2d21fae9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f4f4a24e085cf4d268512ca90e5d1b3205abc9fe
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036711"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998156"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
 

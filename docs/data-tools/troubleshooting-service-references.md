@@ -1,5 +1,7 @@
 ---
 title: Solucionando problemas de referências de serviço
+description: Examine os problemas comuns que podem ocorrer quando você estiver trabalhando com referências de Windows Communication Foundation (WCF) ou WCF Data Services no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586114"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998064"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
 
@@ -76,7 +78,7 @@ Para corrigir esse erro, você precisa recompilar manualmente o projeto de servi
 
 1. No menu **Ferramentas** , clique em **Opções**.
 
-2. Na caixa de diálogo **Opções** , expanda **projetos e soluções**e, em seguida, selecione **geral**.
+2. Na caixa de diálogo **Opções** , expanda **projetos e soluções** e, em seguida, selecione **geral**.
 
 3. Verifique se a caixa de seleção **Mostrar configurações avançadas de Build** está marcada e clique em **OK**.
 
