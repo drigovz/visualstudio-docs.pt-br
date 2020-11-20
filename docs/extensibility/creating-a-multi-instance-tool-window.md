@@ -1,5 +1,7 @@
 ---
 title: Criando uma janela de ferramentas de várias instâncias | Microsoft Docs
+description: Saiba como modificar uma janela de ferramentas para que várias instâncias dela possam ser abertas simultaneamente. Por padrão, as janelas de ferramentas podem ter apenas uma instância aberta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb84ed9961cac5159e15bc0c45fada5426d2f2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10de60620bcd0b56f251955f478d4d06c984d021
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904061"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973996"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Criar uma janela de ferramentas de várias instâncias
 Você pode programar uma janela de ferramentas para que várias instâncias dela possam ser abertas simultaneamente. Por padrão, as janelas de ferramentas podem ter apenas uma instância aberta.

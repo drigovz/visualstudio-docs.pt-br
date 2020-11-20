@@ -1,5 +1,7 @@
 ---
 title: Bitflags usado por comandos específicos | Microsoft Docs
+description: Saiba mais sobre o bitflags usado pela API de plug-in de controle do código-fonte, organizado pela função que as utiliza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa1fd8bf025d665977e87dc8b88da724ade5a8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6c48dbad986d8bc4be58f1ebd9c5bd1fffbd57
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740016"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974595"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags usado por comandos específicos
 O comportamento de várias funções na API de plug-in de controle do código-fonte pode ser modificado pela definição de um ou mais bits em um único valor. Esses valores são conhecidos como bitflags. Os vários bitflags usados pela API de plug-in de controle do código-fonte são detalhados aqui, agrupados pela função que os utiliza.
@@ -105,5 +107,5 @@ O comportamento de várias funções na API de plug-in de controle do código-fo
 |`SCC_OPT_SCO_NO`|0L|Os OK para fazer check-out da interface do usuário de plug-in; o diretório de trabalho está definido.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|Nenhum check-in da interface do usuário de plug-in, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

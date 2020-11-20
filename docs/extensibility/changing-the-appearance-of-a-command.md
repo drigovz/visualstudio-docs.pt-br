@@ -1,5 +1,7 @@
 ---
 title: Alterando a aparência de um comando | Microsoft Docs
+description: Saiba como fornecer comentários alterando a aparência de um comando, como tornar os comandos disponíveis/não disponíveis, ocultos/mostrados ou marcados/desmarcados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183711"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974413"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Alterar a aparência de um comando
 Você pode fornecer comentários para o usuário alterando a aparência de um comando. Por exemplo, você pode desejar que um comando pareça diferente quando não estiver disponível. Você pode tornar os comandos disponíveis ou indisponíveis, ocultá-los ou exibi-los, ou marque ou desmarque-os no menu.
@@ -84,7 +86,7 @@ Para alterar a aparência de um comando, execute uma destas ações:
 
 8. No menu **ferramentas** , agora você deve ver o **novo texto**. Clique em **novo texto**. O comando agora deve estar esmaecido.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)

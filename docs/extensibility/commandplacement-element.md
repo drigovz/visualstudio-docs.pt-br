@@ -1,5 +1,7 @@
 ---
 title: Elemento CommandPlacement | Microsoft Docs
+description: O elemento CommandPlacement permite que os botões, grupos e menus sejam incluídos em mais de um grupo ou menu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739734"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974063"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 O elemento CommandPlacement permite que os botões, grupos e menus sejam incluídos em mais de um grupo ou menu. Usando o elemento CommandPlacement, você não precisa redefinir completamente esses itens para modificar a aparência de uma interface do usuário.
 
  Para obter mais informações, consulte [criar grupos de botões reutilizáveis](../extensibility/creating-reusable-groups-of-buttons.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CommandPlacement guid="guidMyCommandSet" id="MyCommand" priority="0x001" >

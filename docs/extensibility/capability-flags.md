@@ -1,5 +1,7 @@
 ---
 title: Sinalizadores de capacidade | Microsoft Docs
+description: Saiba mais sobre os sinalizadores de SCC_CAP_xxx que indicam os recursos de um plug-in de controle do código-fonte e os sinalizadores de SCC_EXCAP_xxx que indicam recursos estendidos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739873"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974444"
 ---
 # <a name="capability-flags"></a>Sinalizadores de capacidade
-Os sinalizadores de SCC_CAP_*xxx* são sinalizadores de bits usados para indicar os recursos de um plug-in de controle do código-fonte. Os sinalizadores de SCC_EXCAP_*xxx* são sinalizadores incrementais que indicam recursos estendidos e resolvem para valores inteiros.
+Os sinalizadores de SCC_CAP_ *xxx* são sinalizadores de bits usados para indicar os recursos de um plug-in de controle do código-fonte. Os sinalizadores de SCC_EXCAP_ *xxx* são sinalizadores incrementais que indicam recursos estendidos e resolvem para valores inteiros.
 
 |Código de funcionalidade|Valor|Descrição|
 |---------------------|-----------|-----------------|
@@ -77,5 +79,5 @@ Os sinalizadores de SCC_CAP_*xxx* são sinalizadores de bits usados para indicar
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Pode excluir arquivos com check-out.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Pode renomear arquivos com check-out.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

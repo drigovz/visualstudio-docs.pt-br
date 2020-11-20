@@ -1,5 +1,7 @@
 ---
-title: Opções de linha de comando (SDK do Visual Studio) | Microsoft Docs
+title: Opções de Command-Line (SDK do Visual Studio) | Microsoft Docs
+description: O Devenv.exe dá suporte a opções de linha de comando especificamente para o desenvolvimento de VSPackages. Use os artigos desta seção para saber mais sobre as opções de linha de comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db2967a6fab128b6730fbbe35d34f23464ca2096
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b71f95fcc037b2a4bd70770b06f4b130a9ebd1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739759"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974377"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Opções de linha de comando (SDK do Visual Studio)
 *Devenv.exe*, o executável que inicia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) oferece suporte a opções de linha de comando especificamente para o desenvolvimento de VSPackages. O VSPackages também pode tornar seus próprios comutadores disponíveis na linha de comando do devenv. Os tópicos a seguir fornecem informações sobre como usar opções de linha de comando no IDE.

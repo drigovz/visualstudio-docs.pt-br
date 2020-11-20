@@ -1,5 +1,7 @@
 ---
 title: Elemento de sinalizador de comando | Microsoft Docs
+description: O elemento flag de comando modifica seu elemento pai. Examine os elementos pai e os elementos filho.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649364"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974198"
 ---
 # <a name="command-flag-eelement"></a>Sinalizador de comando Eelement
 Modifica seu elemento pai.
@@ -74,5 +76,5 @@ Modifica seu elemento pai.
 |[Elemento Buttons](../extensibility/buttons-element.md)|Fornece um grupo para elementos de [elemento de botão](../extensibility/button-element.md) .|
 |[Elemento menus](../extensibility/menus-element.md)|Define todos os menus que um VSPackage implementa.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Tabela de comandos do Visual Studio (. Arquivos de vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

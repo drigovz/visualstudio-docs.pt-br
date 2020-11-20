@@ -1,5 +1,7 @@
 ---
 title: Criando um sistema de projeto básico, parte 2 | Microsoft Docs
+description: Saiba como adicionar um modelo do Visual Studio, uma página de propriedades e outros recursos a um projeto criado em um artigo anterior.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903832"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974612"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Criar um sistema de projeto básico, parte 2
 A primeira explicação nesta série, [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este tutorial se baseia no sistema de projeto básico adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o primeiro passo a passos antes de iniciar este.
@@ -40,7 +42,7 @@ Este tutorial ensina como realizar essas tarefas:
 > As etapas neste passo a passos são baseadas em um projeto C#. No entanto, exceto para especificos, como extensões de nome de arquivo e código, você pode usar as mesmas etapas para um projeto de Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Criar um modelo do Visual Studio
-- [Criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra como criar um modelo de projeto básico e adicioná-lo ao sistema do projeto. Ele também mostra como registrar esse modelo com o Visual Studio usando o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que grava o caminho completo da pasta * \\ Templates\Projects\SimpleProject \\ * no registro do sistema.
+- [Criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra como criar um modelo de projeto básico e adicioná-lo ao sistema do projeto. Ele também mostra como registrar esse modelo com o Visual Studio usando o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que grava o caminho completo da pasta *\\ Templates\Projects\SimpleProject \\* no registro do sistema.
 
 Usando um modelo do Visual Studio (arquivo *. vstemplate* ) em vez de um modelo de projeto básico, você pode controlar como o modelo aparece na caixa de diálogo **novo projeto** e como os parâmetros de modelo são substituídos. Um arquivo *. vstemplate* é um arquivo XML que descreve como os arquivos de origem devem ser incluídos quando um projeto é criado usando o modelo do sistema de projeto. O próprio sistema de projeto é criado coletando o arquivo *. vstemplate* e os arquivos de origem em um arquivo *. zip* e implantado copiando o arquivo *. zip* em um local conhecido pelo Visual Studio. Esse processo é explicado em mais detalhes posteriormente neste passo a passos.
 
@@ -55,7 +57,7 @@ Usando um modelo do Visual Studio (arquivo *. vstemplate* ) em vez de um modelo 
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Adicione um arquivo XML chamado *SimpleProject. vstemplate* à pasta * \\ Templates\Projects\SimpleProject \\ * .
+3. Adicione um arquivo XML chamado *SimpleProject. vstemplate* à pasta *\\ Templates\Projects\SimpleProject \\* .
 
 4. Substitua o conteúdo de *SimpleProject. vstemplate* pelo código a seguir.
 
@@ -83,7 +85,7 @@ Usando um modelo do Visual Studio (arquivo *. vstemplate* ) em vez de um modelo 
     </VSTemplate>
     ```
 
-5. Na janela **Propriedades** , selecione todos os cinco arquivos na pasta * \\ Templates\Projects\SimpleProject \\ * e defina a **ação de Build** como **ZipProject**.
+5. Na janela **Propriedades** , selecione todos os cinco arquivos na pasta *\\ Templates\Projects\SimpleProject \\* e defina a **ação de Build** como **ZipProject**.
 
     ![Pasta de projeto simples](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -207,9 +209,9 @@ Nós filho são criados alterando o arquivo de projeto e adicionando \<OutputSub
 
 Esta seção mostra como criar um nó filho do console para o tipo de projeto SimpleProject.
 
-1. Renomeie a pasta * \\ Templates\Projects\SimpleProject \\ * para * \\ Templates\Projects\ConsoleApp \\ *.
+1. Renomeie a pasta *\\ Templates\Projects\SimpleProject \\* para *\\ Templates\Projects\ConsoleApp \\*.
 
-2. Na janela **Propriedades** , selecione todos os cinco arquivos na pasta * \\ Templates\Projects\ConsoleApp \\ * e verifique se a **ação de compilação** está definida como **ZipProject**.
+2. Na janela **Propriedades** , selecione todos os cinco arquivos na pasta *\\ Templates\Projects\ConsoleApp \\* e verifique se a **ação de compilação** está definida como **ZipProject**.
 
 3. No arquivo SimpleProject. vstemplate, adicione a seguinte linha ao final da \<TemplateData> seção, logo antes da marca de fechamento.
 
@@ -285,13 +287,13 @@ Quando você cria um projeto usando um modelo do Visual Studio na caixa de diál
 
 1. No arquivo *SimpleProjectNode.cs* , remova o `AddFileFromTemplate` método.
 
-2. No arquivo * \\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , localize a \<RootNamespace> propriedade e altere seu valor para $safeprojectname $.
+2. No arquivo *\\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* , localize a \<RootNamespace> propriedade e altere seu valor para $safeprojectname $.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. No arquivo * \\ Templates\Projects\SimpleProject\Program.cs* , substitua o conteúdo do arquivo pelo código a seguir:
+3. No arquivo *\\ Templates\Projects\SimpleProject\Program.cs* , substitua o conteúdo do arquivo pelo código a seguir:
 
     ```
     using System;
@@ -462,7 +464,7 @@ A página de propriedades criada nesta seção permite alterar e salvar essas pr
 
 7. O Visual Studio chama sua fábrica de projetos para criar um projeto usando o modelo do Visual Studio. O novo arquivo *Program.cs* é aberto no editor de código.
 
-8. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções**e clique em **Propriedades**. A caixa de diálogo **Páginas da Propriedade** é exibida.
+8. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e clique em **Propriedades**. A caixa de diálogo **Páginas da Propriedade** é exibida.
 
     ![Página de propriedades de projeto simples](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 

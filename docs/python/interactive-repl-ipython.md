@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1fe36a4ee74ca1b41c1db1d79a6e4683c1f2b1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e53ef96ad8fab8b26f04ccd5f7f0488d1f0d6985
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542422"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974076"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Usar o IPython na janela Interativa
 
@@ -30,7 +30,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 2. Examine a guia **Pacotes (Conda)** (que pode ser exibida como **pip** ou **Pacotes**) nesse ambiente para verificar se `ipython` e `matplotlib` estão listados. Caso contrário, instale-os nessa localização. (Confira [Janelas dos Ambientes do Python – guia Pacotes](python-environments-window-tab-reference.md).)
 
-3. Selecione a guia **visão geral** e selecione **usar o modo interativo do ipython**. (No Visual Studio 2015, selecione **Configurar opções interativas** para abrir a caixa de diálogo **Opções** e, em seguida, defina **modo interativo** como **ipython**e selecione **OK**).
+3. Selecione a guia **visão geral** e selecione **usar o modo interativo do ipython**. (No Visual Studio 2015, selecione **Configurar opções interativas** para abrir a caixa de diálogo **Opções** e, em seguida, defina **modo interativo** como **ipython** e selecione **OK**).
 
 4. Selecione **Abrir janela interativa** para exibir a janela **interativa** no modo ipython. Talvez seja necessário redefinir a janela se você acabou de mudar para o modo interativo. Talvez também seja necessário pressionar **Enter** se apenas um prompt >>> for exibido, para obter um prompt como **Em [2]**.
 
@@ -51,7 +51,7 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
     ![Gráfico embutido na janela interativa](media/ipython-repl-04.png)
 
-7. Em vez de digitar o repl, você pode escrever código no editor, selecioná-lo, clicar com o botão direito do mouse e selecionar o comando **Enviar para interativo** (ou pressionar **Ctrl** + **Enter**). Tente colar o código abaixo em um novo arquivo no editor, selecioná-lo com **Ctrl** + **a**e, em seguida, enviar para a janela **interativa** . (O visual Studio envia o código como uma unidade para evitar a necessidade de gráficos intermediários ou parciais. E se você não tiver um projeto Python aberto com um ambiente diferente selecionado, o Visual Studio abrirá uma janela **interativa** para qualquer ambiente selecionado como padrão na janela **ambientes Python** .)
+7. Em vez de digitar o repl, você pode escrever código no editor, selecioná-lo, clicar com o botão direito do mouse e selecionar o comando **Enviar para interativo** (ou pressionar **Ctrl** + **Enter**). Tente colar o código abaixo em um novo arquivo no editor, selecioná-lo com **Ctrl** + **a** e, em seguida, enviar para a janela **interativa** . (O visual Studio envia o código como uma unidade para evitar a necessidade de gráficos intermediários ou parciais. E se você não tiver um projeto Python aberto com um ambiente diferente selecionado, o Visual Studio abrirá uma janela **interativa** para qualquer ambiente selecionado como padrão na janela **ambientes Python** .)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -80,8 +80,6 @@ Para esse passo a passo, você deve ter o ambiente [Anaconda](https://www.contin
 
 O IPython tem muitos outros recursos úteis, como saída para o Shell do sistema, substituição de variáveis, saída de captura, etc. Consulte a [documentação do ipython](https://ipython.org/documentation.html) para obter mais informações.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
-- Para usar o Jupyter facilmente e sem instalação, experimente o [serviço hospedado dos Notebooks do Azure](https://notebooks.azure.com/) que permitem que você mantenha e compartilhe seus blocos de anotações com outras pessoas.
-
-- A [Máquina Virtual de Ciência de Dados do Azure](/azure/machine-learning/data-science-virtual-machine/overview) também é pré-configurada para executar Jupyter notebooks, juntamente com uma ampla variedade de outras ferramentas de ciência de dados.
+- O [máquina virtual de ciência de dados do Azure](/azure/machine-learning/data-science-virtual-machine/overview) é pré-configurado para executar notebooks Jupyter juntamente com uma ampla gama de outras ferramentas de ciência de dados.

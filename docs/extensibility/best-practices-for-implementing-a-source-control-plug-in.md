@@ -1,5 +1,6 @@
 ---
 title: Implementando um plug-in de controle do código-fonte-práticas recomendadas
+description: Examine esses detalhes técnicos para ajudá-lo a implementar de forma confiável um plug-in de controle do código-fonte no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038446"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974640"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Práticas recomendadas para implementar um plug-in de controle do código-fonte
 Os detalhes técnicos a seguir podem ajudá-lo a implementar de maneira confiável um plug-in de controle do código-fonte no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -58,6 +59,6 @@ Os detalhes técnicos a seguir podem ajudá-lo a implementar de maneira confiáv
 
  A maioria das opções de configuração configuráveis pelo usuário não são definidas dessa maneira, pois elas variam muito entre os plug-ins de controle do código-fonte. Portanto, o mecanismo recomendado é um botão **avançado** . Por exemplo, na caixa de diálogo **obter** , o IDE exibe apenas as informações que ele entende, mas também exibe um botão **avançado** se o plug-in tiver opções para esse comando. Quando o usuário clica no botão **avançado** , o IDE chama o [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) para habilitar o plug-in de controle do código-fonte para solicitar informações ao usuário, como bitflags ou uma data/hora. O plug-in retorna essas informações em uma estrutura que é passada de volta durante o `SccGet` comando.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
 - [Criar um plug-in de controle do código-fonte](../extensibility/internals/creating-a-source-control-plug-in.md)

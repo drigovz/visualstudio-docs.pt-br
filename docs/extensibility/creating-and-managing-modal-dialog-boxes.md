@@ -1,5 +1,7 @@
 ---
 title: Criando e gerenciando caixas de diálogo modais | Microsoft Docs
+description: Saiba como criar uma caixa de diálogo modal dentro do Visual Studio, usando DialogWindow e sem usar DialogWindow.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903781"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973625"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Criar e gerenciar caixas de diálogo modais
 Ao criar uma caixa de diálogo modal dentro do Visual Studio, você deve verificar se a janela pai da caixa de diálogo está desabilitada enquanto a caixa de diálogo é exibida e reabilitar a janela pai depois que a caixa de diálogo é fechada. Se você não fizer isso, poderá receber o erro: *Microsoft Visual Studio não pode ser desligado porque uma caixa de diálogo modal está ativa. Feche a caixa de diálogo ativa e tente novamente.*
@@ -68,7 +70,7 @@ Se sua caixa de diálogo não for o WPF, ou por alguma outra razão pela qual vo
     testDialog.ShowModal();
     ```
 
-7. Criar e executar o aplicativo. A instância experimental do Visual Studio deve aparecer. No menu **ferramentas** da instância experimental, você deve ver um comando chamado **Invoke OpenDialog**. Ao clicar nesse comando, você deverá ver a janela da caixa de diálogo. Você deve ser capaz de minimizar e maximizar a janela.
+7. Compile e execute o aplicativo. A instância experimental do Visual Studio deve aparecer. No menu **ferramentas** da instância experimental, você deve ver um comando chamado **Invoke OpenDialog**. Ao clicar nesse comando, você deverá ver a janela da caixa de diálogo. Você deve ser capaz de minimizar e maximizar a janela.
 
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Criar e gerenciar uma caixa de diálogo não derivada de DialogWindow
 
@@ -125,4 +127,4 @@ Se sua caixa de diálogo não for o WPF, ou por alguma outra razão pela qual vo
     }
     ```
 
-7. Criar e executar o aplicativo. No menu **ferramentas** , você deverá ver um comando chamado **Invoke OpenDialog**. Ao clicar nesse comando, você deverá ver a janela da caixa de diálogo.
+7. Compile e execute o aplicativo. No menu **ferramentas** , você deverá ver um comando chamado **Invoke OpenDialog**. Ao clicar nesse comando, você deverá ver a janela da caixa de diálogo.

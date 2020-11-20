@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a06c6dbacf21cb2ce00539af901c24c77aaf9ef5
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313738"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974087"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Flask com exibições e modelos de página
 
@@ -36,7 +36,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
 1. Na pasta do seu projeto, crie uma pasta de aplicativo chamada `HelloFlask` (clique com o botão direito do mouse no projeto em **Gerenciador de Soluções** e selecione **Adicionar** > **Nova Pasta**.)
 
-2. Na pasta *HelloFlask* , crie um arquivo chamado * \_ \_ init \_ \_ . py* com o seguinte conteúdo que cria a `Flask` instância e carrega as exibições do aplicativo (criadas na próxima etapa):
+2. Na pasta *HelloFlask* , crie um arquivo chamado *\_ \_ init \_ \_ . py* com o seguinte conteúdo que cria a `Flask` instância e carrega as exibições do aplicativo (criadas na próxima etapa):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
     import HelloFlask.views
     ```
 
-3. Na pasta *HelloFlask*, crie um arquivo chamado *views.py* com o conteúdo a seguir. O nome *views.py* é importante porque você usou `import HelloFlask.views` em * \_ \_ init \_ \_ . py*; você verá um erro em tempo de execução se os nomes não corresponderem.
+3. Na pasta *HelloFlask*, crie um arquivo chamado *views.py* com o conteúdo a seguir. O nome *views.py* é importante porque você usou `import HelloFlask.views` em *\_ \_ init \_ \_ . py*; você verá um erro em tempo de execução se os nomes não corresponderem.
 
     ```python
     from flask import Flask
@@ -57,7 +57,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
         return "Hello Flask!"
     ```
 
-    Além de renomear a função e rotear para o `home` , esse código contém o código de renderização de página de *app.py* e importa o `app` objeto declarado em * \_ \_ init \_ \_ . py*.
+    Além de renomear a função e rotear para o `home` , esse código contém o código de renderização de página de *app.py* e importa o `app` objeto declarado em *\_ \_ init \_ \_ . py*.
 
 4. Crie uma subpasta em *HelloFlask* chamada *templates*, que permanecerá vazia por enquanto.
 
@@ -84,7 +84,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
 7. Selecione **depurar**  >  **Iniciar Depuração** (**F5**) ou use o botão **servidor Web** na barra de ferramentas (o navegador que você vê pode variar) para iniciar o aplicativo e abrir um navegador. Experimente as rotas de URL / e /home.
 
-8. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\_* init_*.py* e na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie**Debug**o aplicativo (  >  **reinicialização**de depuração, **Ctrl** + **F5**ou o botão da barra de ferramentas mostrado abaixo) e percorra (**F10**) o código ou execute de cada ponto de interrupção usando **F5**.
+8. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\_* init_ *.py* e na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie o aplicativo (**depuração**  >  **reinicialização**, **Ctrl** + **Shift** + **F5** ou o botão da barra de ferramentas mostrado abaixo) e percorra (**F10**) o código ou execute de cada ponto de interrupção usando **F5**.
 
     ![Botão de reinicialização na barra de ferramentas de depuração no Visual Studio](media/debugging-restart-toolbar-button.png)
 

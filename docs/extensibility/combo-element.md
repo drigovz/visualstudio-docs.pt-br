@@ -1,5 +1,7 @@
 ---
 title: Elemento de combinação | Microsoft Docs
+description: 'O elemento de combinação define os comandos que aparecem em uma caixa de combinação. Há quatro tipos: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739811"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974306"
 ---
 # <a name="combo-element"></a>Elemento de combinação
 Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos de caixas de combinação, da seguinte maneira: DropDownCombo, DynamicCombo, IndexCombo e MRUCombo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">
@@ -53,7 +55,7 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
 |Pai|Opcional. O elemento pai do botão.|
 |CommandFlag|Obrigatórios. Consulte o [elemento flag de comando](../extensibility/command-flag-element.md). Os valores de CommandFlag válidos para um botão são os seguintes.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -Defaultdesabilitoud<br /><br /> -Invisible<br /><br /> - DynamicVisibility<br /><br /> -Teclas de filtragem<br /><br /> - IconAndText<br /><br /> - NoAutoComplete<br /><br /> - NoButtonCustomize<br /><br /> -Nopersonalizar<br /><br /> - NoKeyCustomize<br /><br /> - StretchHorizontally|
 |Cadeias de caracteres|Obrigatórios. Consulte [elemento Strings](../extensibility/strings-element.md). O elemento ButtonText filho deve ser definido.|
-|Anotação|Comentário opcional.|
+|Annotation|Comentário opcional.|
 
 ### <a name="parent-elements"></a>Elementos pai
 

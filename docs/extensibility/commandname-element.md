@@ -1,5 +1,7 @@
 ---
 title: Elemento CommandName | Microsoft Docs
+description: O elemento CommandName especifica o texto que aparece na categoria teclado na caixa de diálogo opções e na lista comandos na caixa de diálogo Personalizar.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8152942d015e21b1b80f735fd921a5ddde3674d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8447213b14a3632197ea7ce27677423460315f71
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739756"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974118"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 O `CommandName` elemento Especifica o texto que aparece na categoria teclado na caixa de diálogo **Opções** e na lista **comandos** na caixa de diálogo **Personalizar** .
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```
 <CommandName>MyCommand</CommandName>
@@ -42,5 +44,5 @@ O `CommandName` elemento Especifica o texto que aparece na categoria teclado na 
 |-------------|-----------------|
 |[Elemento Strings](../extensibility/strings-element.md)|Agrupa elementos de texto, como `ButtonText` e `CommandName` .|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

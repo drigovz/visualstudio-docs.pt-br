@@ -1,5 +1,7 @@
 ---
 title: Escolhendo entre VSPackages compartilhado e com controle de versão | Microsoft Docs
+description: Saiba mais sobre as instalações lado a lado do VSPackages por meio de estratégias compartilhadas ou com controle de versão, com várias versões do Visual Studio e do .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011925"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974400"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Escolha entre VSPackages compartilhadas e com controle de versão
 Versões diferentes do Visual Studio podem coexistir no mesmo computador. O VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versões.

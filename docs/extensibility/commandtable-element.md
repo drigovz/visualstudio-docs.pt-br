@@ -1,5 +1,7 @@
 ---
 title: Elemento commandtable | Microsoft Docs
+description: Commandtable é o elemento raiz do arquivo. vsct, que define o layout e o tipo dos comandos que um VSPackage fornece ao IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a362763d34335b9a18c4114a7c35b23f0efee020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e6792bb6199606f1d993492527d39c3f0f7f8b
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739651"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974519"
 ---
 # <a name="commandtable-element"></a>Elemento commandtable
 Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que define o layout real e o tipo dos comandos que um VSPackage fornece para o IDE. Os comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
@@ -69,5 +71,5 @@ Commandtable é o elemento raiz do arquivo *. vsct* . Esse é o arquivo que defi
 |-------------|-----------------|
 |Nenhum||
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

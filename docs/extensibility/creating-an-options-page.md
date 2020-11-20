@@ -1,5 +1,7 @@
 ---
 title: Criando uma página de opções | Microsoft Docs
+description: Saiba como criar uma página simples de ferramentas/opções que usa uma grade de propriedades para examinar e definir propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903811"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973711"
 ---
 # <a name="create-an-options-page"></a>Criar uma página de opções
 
@@ -99,7 +101,7 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
 7. Na instância experimental do Visual Studio, no menu **ferramentas** , clique em **Opções**.
 
-     No painel esquerdo, você deve ver **minha categoria**. (As categorias de opções são listadas em ordem alfabética, portanto, deve aparecer aproximadamente na metade da lista.) Abra **minha categoria** e, em seguida, clique em **minha página de grade**. A grade de opções aparece no painel direito. A categoria de propriedade é **minhas opções**e o nome da propriedade é **minha opção de inteiro**. A descrição da propriedade, **minha opção de inteiro**, aparece na parte inferior do painel. Altere o valor de seu valor inicial de 256 para outra coisa. Clique em **OK**e reabra **minha página de grade**. Você pode ver que o novo valor persiste.
+     No painel esquerdo, você deve ver **minha categoria**. (As categorias de opções são listadas em ordem alfabética, portanto, deve aparecer aproximadamente na metade da lista.) Abra **minha categoria** e, em seguida, clique em **minha página de grade**. A grade de opções aparece no painel direito. A categoria de propriedade é **minhas opções** e o nome da propriedade é **minha opção de inteiro**. A descrição da propriedade, **minha opção de inteiro**, aparece na parte inferior do painel. Altere o valor de seu valor inicial de 256 para outra coisa. Clique em **OK** e reabra **minha página de grade**. Você pode ver que o novo valor persiste.
 
      Sua página opções também está disponível por meio da caixa de pesquisa do Visual Studio. Na caixa de pesquisa próxima à parte superior do IDE, digite **minha categoria** e você verá **minha categoria – > minha página de grade** listada nos resultados.
 
@@ -225,7 +227,7 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
 12. Localizar **minha categoria** e, em seguida, **minha página personalizada**.
 
-13. Altere o valor de **optionstring**. Clique em **OK**e reabra **minha página personalizada**. Você pode ver que o novo valor foi persistido.
+13. Altere o valor de **optionstring**. Clique em **OK** e reabra **minha página personalizada**. Você pode ver que o novo valor foi persistido.
 
 ## <a name="access-options"></a>Opções de acesso
 
@@ -266,6 +268,6 @@ Este tutorial cria uma página simples de ferramentas/opções que usa uma grade
 
      Uma caixa de mensagem exibe o valor atual de `OptionInteger` .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Opções e páginas de opções](../extensibility/internals/options-and-options-pages.md)

@@ -1,5 +1,7 @@
 ---
 title: Criando uma extensão com um VSPackage | Microsoft Docs
+description: Saiba como criar um projeto VSIX e adicionar um item de projeto VSPackage usando o VSPackage para obter o serviço Shell de interface do usuário a fim de mostrar uma caixa de mensagem.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68ade2f8d334c1f93349e396d910fa300f6b5417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431de32838ad236229db5e41330aba372e30ea75
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903848"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973783"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Criar uma extensão com um VSPackage
 

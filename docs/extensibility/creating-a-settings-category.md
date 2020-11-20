@@ -1,5 +1,7 @@
 ---
 title: Criando uma categoria de configurações | Microsoft Docs
+description: Saiba como criar uma categoria de configurações do Visual Studio e usá-la para salvar e restaurar valores de um arquivo de configurações.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904021"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974550"
 ---
 # <a name="create-a-settings-category"></a>Criar uma categoria de configurações
 
@@ -37,7 +39,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
 2. Abra o arquivo *VSPackage. resx* e adicione estes três recursos de cadeia de caracteres:
 
-    |Name|Valor|
+    |Nome|Valor|
     |----------|-----------|
     |106|Minha categoria|
     |107|Minhas Configurações|
@@ -51,15 +53,15 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 3. No *MyToolsOptionsPackage.cs*, adicione uma `float` propriedade chamada `OptionFloat` à `OptionPageGrid` classe, conforme mostrado no exemplo a seguir.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -92,7 +94,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
 1. Inicie o projeto no modo de depuração pressionando **F5**. Isso inicia a instância experimental.
 
-2. Abra a **Tools**  >  caixa de diálogo**Opções** de ferramentas.
+2. Abra a **Tools**  >  caixa de diálogo **Opções** de ferramentas.
 
 3. No modo de exibição de árvore no painel esquerdo, expanda **minha categoria** e clique em **minha página de grade**.
 
@@ -118,7 +120,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
      A página **Exportar completo** relata que suas configurações foram exportadas com êxito.
 
-10. No menu **Arquivo** , aponte para **Abrir**e clique em **Arquivo**. Localize *MySettings. vssettings* e abra-o.
+10. No menu **Arquivo** , aponte para **Abrir** e clique em **Arquivo**. Localize *MySettings. vssettings* e abra-o.
 
      Você pode encontrar a categoria de propriedade exportada na seção a seguir do arquivo (seus GUIDs serão diferentes).
 
@@ -139,7 +141,7 @@ Para iniciar este passo a passos, você deve primeiro concluir a primeira seçã
 
 12. No menu **ferramentas** , clique em **Opções**, expanda **minha categoria**, clique em **minha página de grade** e altere o valor de **OptionFloat** para 1,0 e **OptionInteger** para 1. Clique em **OK**.
 
-13. No menu **ferramentas** , clique em **importar e exportar configurações**, selecione **Importar configurações de ambiente selecionadas**e clique em **Avançar**.
+13. No menu **ferramentas** , clique em **importar e exportar configurações**, selecione **Importar configurações de ambiente selecionadas** e clique em **Avançar**.
 
      A página **salvar configurações atuais** é exibida.
 

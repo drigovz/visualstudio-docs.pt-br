@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/12/2020
+ms.date: 11/19/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 1a1807102fc0f8b62d9cf4830783de1f5348499b
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 72e6e4cdc14f87080bb9e7a6faf3285c49270d78
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575457"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973966"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Channel** | **Data de lançamento** | **Versão da compilação** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.2 | Versão | 19 de novembro de 2020 | 16.8.30717.126 |
 | 16.8.1 | Versão | 12 de novembro de 2020 | 16.8.30711.63 |
 | 16.9.0 | Preview 1 | 10 de novembro de 2020 | 16.9.30709.64 |
 | 16.7.8 | Versão | 10 de novembro de 2020 | 16.7.30704.19 |
@@ -373,7 +374,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap)
 * [Ritmo de lançamento do Visual Studio](/visualstudio/productinfo/release-rhythm)

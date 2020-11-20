@@ -1,5 +1,7 @@
 ---
 title: Elemento Button | Microsoft Docs
+description: 'O elemento Button define um elemento com o qual o usuário pode interagir. Os botões podem ser tipos diferentes: Button, MenuButton e SplitDropDown.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05bd73764e96a27a92d741f144c222acc48fa518
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8da92f721f0f4333ffb32ac5cb080d87e4fc0543
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739932"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974490"
 ---
 # <a name="button-element"></a>Elemento Button
 Define um elemento com o qual o usuário pode interagir. Os botões podem ser de tipos diferentes: Button, MenuButton e SplitDropDown.
@@ -53,7 +55,7 @@ Define um elemento com o qual o usuário pode interagir. Os botões podem ser de
 |[Elemento Icon](../extensibility/icon-element.md)|Opcional. O ícone associado ao botão.|
 |[Elemento de sinalizador de comando](../extensibility/command-flag-element.md)|Obrigatórios. Os valores de CommandFlag válidos para um botão são os seguintes.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> -Defaultdesabilitoud<br /><br /> -Invisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> - DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> - NoButtonCustomize<br /><br /> -Nopersonalizar<br /><br /> - NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -PICT<br /><br /> -Exec<br /><br /> - ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -Textchanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -Somente|
 |[Elemento Strings](../extensibility/strings-element.md)|Obrigatórios. O [elemento ButtonText](../extensibility/buttontext-element.md) filho deve ser definido.|
-|Anotação|Comentário opcional.|
+|Annotation|Comentário opcional.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -76,5 +78,5 @@ Define um elemento com o qual o usuário pode interagir. Os botões podem ser de
 </Button>
  ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Arquivos de tabela de comando do Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

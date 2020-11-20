@@ -1,5 +1,7 @@
 ---
 title: Criando uma extensão com um comando de menu | Microsoft Docs
+description: Saiba como criar uma extensão com um comando de menu que inicia o bloco de notas. Crie um comando de menu e, em seguida, altere o manipulador de comandos de menu.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c8639ede4a01157718f0ab1a1514927e620fa8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972329"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974278"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Criar uma extensão com um comando de menu
 
@@ -106,7 +108,7 @@ Agora, vamos atualizar o manipulador de comandos para iniciar o bloco de notas.
 
 ## <a name="clean-up-the-experimental-environment"></a>Limpar o ambiente experimental
 
-Se você estiver desenvolvendo várias extensões ou apenas explorando resultados com versões diferentes do seu código de extensão, seu ambiente experimental pode parar de funcionar da maneira que deveria. Nesse caso, você deve executar o script de redefinição. Ele é chamado **redefinir a instância experimental do Visual Studio**e é fornecido como parte do SDK do Visual Studio. Esse script remove todas as referências às suas extensões do ambiente experimental, para que você possa começar do zero.
+Se você estiver desenvolvendo várias extensões ou apenas explorando resultados com versões diferentes do seu código de extensão, seu ambiente experimental pode parar de funcionar da maneira que deveria. Nesse caso, você deve executar o script de redefinição. Ele é chamado **redefinir a instância experimental do Visual Studio** e é fornecido como parte do SDK do Visual Studio. Esse script remove todas as referências às suas extensões do ambiente experimental, para que você possa começar do zero.
 
 Você pode acessar esse script de uma das duas maneiras:
 

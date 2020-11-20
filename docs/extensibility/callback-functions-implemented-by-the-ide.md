@@ -1,5 +1,7 @@
 ---
 title: Funções de retorno de chamada implementadas pelo IDE | Microsoft Docs
+description: Saiba mais sobre as funções de retorno de chamada que o plug-in pode chamar em momentos apropriados durante uma operação de controle do código-fonte para passar informações para o IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739896"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974459"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funções de retorno de chamada implementadas pelo IDE
 Para tornar a integração com o IDE (ambiente de desenvolvimento integrado) o mais simples possível e para fornecer uma experiência unificada do usuário final, o plug-in de controle do código-fonte pode usar funções de retorno de chamada que são implementadas pelo IDE. O plug-in pode chamar essas funções em momentos apropriados durante uma operação de controle do código-fonte para passar informações para o IDE; o IDE pode exibir essas informações como elementos incorporados em sua interface do usuário nativa. O usuário tem uma experiência menos fragmentada nesse cenário do que se o plug-in empregasse sua própria interface do usuário.
 
- O arquivo de cabeçalho necessário é *SCC. h*. O local padrão é *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ *. Também está na pasta VSIP que tem a amostra de plug-in de controle do código-fonte em *\Program Files\VSIP \\ 8.0 \ MSSCCI*.
+ O arquivo de cabeçalho necessário é *SCC. h*. O local padrão é *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\*. Também está na pasta VSIP que tem a amostra de plug-in de controle do código-fonte em *\Program Files\VSIP \\ 8.0 \ MSSCCI*.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Descreve a função de retorno de chamada usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens do plug-in de controle do código-fonte por meio do IDE.

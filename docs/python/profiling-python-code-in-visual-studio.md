@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47b59c8d45d76fae1e61584510ae39fe5a91784
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810660"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973810"
 ---
 # <a name="profile-python-code"></a>Criar perfil do código do Python
 
@@ -23,7 +23,7 @@ Você pode criar um perfil de um aplicativo Python ao usar interpretadores basea
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>Criação de perfil para interpretadores baseados em CPython
 
-A criação de perfil é iniciada por meio do comando de menu **analisar**  >  **Iniciar criação de perfil de python** , que abre uma caixa de diálogo de configuração:
+A criação de perfil é iniciada por meio do comando **debug**  >  **Launch Python Profile** menu, que abre uma caixa de diálogo de configuração:
 
 ![Caixa de diálogo de configuração de criação de perfil](media/profiling-start.png)
 

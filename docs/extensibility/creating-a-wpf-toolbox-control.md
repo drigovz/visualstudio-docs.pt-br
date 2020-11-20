@@ -1,5 +1,7 @@
 ---
 title: Criando um controle de caixa de ferramentas do WPF | Microsoft Docs
+description: Saiba como usar o modelo de controle de caixa de ferramentas do WPF para criar um controle de caixa de ferramentas que você pode distribuir para outros usuários.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903939"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973968"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Criar um controle de caixa de ferramentas do WPF
 
@@ -33,7 +35,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 
 2. Quando o projeto for aberto, adicione um modelo de item de **controle da caixa de ferramentas do WPF** denominado `MyToolboxControl` . Na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**. Na caixa de diálogo **Adicionar novo item** , vá para extensibilidade do **Visual C#**  >  **Extensibility** e selecione **controle da caixa de ferramentas WPF**. No campo **nome** na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
 
-    Agora, a solução contém um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que adiciona o controle à **caixa de ferramentas**e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
+    Agora, a solução contém um controle de usuário, um `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que adiciona o controle à **caixa de ferramentas** e uma entrada de ativo **Microsoft. VisualStudio. ToolboxControl** no manifesto do VSIX para implantação.
 
 #### <a name="to-create-the-control-ui"></a>Para criar a interface do usuário do controle
 

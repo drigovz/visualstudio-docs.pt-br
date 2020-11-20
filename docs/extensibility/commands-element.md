@@ -1,5 +1,7 @@
 ---
 title: Elemento Commands | Microsoft Docs
+description: 'O elemento Commands representa a coleção de comandos na barra de ferramentas VSPackage e pode ter estas seções: menus, grupos, botões, combinações e bitmaps.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea2400cca19a02475caecec3d022e0b78794ae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739690"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974512"
 ---
 # <a name="commands-element"></a>Elemento Commands
 Representa a coleção de comandos na barra de ferramentas VSPackage. A coleção pode ter até cinco subseções, da seguinte maneira: menus, grupos, botões, combinações e bitmaps.
 
  Cada elemento filho da subseção, por exemplo, \<Menu> , é identificado por uma ID de comando exclusiva que é um par GUID e identificador numérico. O GUID identifica o "conjunto de comandos" e é usado para agrupar comandos logicamente relacionados. O VSPackage deve definir seu próprio conjunto de comandos para evitar colisões com IDs de comando que são definidas por outros VSPackages.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```xml
 <Commands package="GuidMyPackage" >
@@ -88,6 +90,6 @@ Representa a coleção de comandos na barra de ferramentas VSPackage. A coleçã
 <Commands>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Como VSPackages adicionar elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

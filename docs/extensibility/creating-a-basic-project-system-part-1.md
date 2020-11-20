@@ -1,5 +1,7 @@
 ---
 title: Criando um sistema de projeto básico, parte 1 | Microsoft Docs
+description: Saiba como criar um tipo de projeto chamado extensão. MyProj. No Visual Studio, os projetos são contêineres usados para organizar arquivos de código-fonte e outros ativos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903429"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974530"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Criar um sistema de projeto básico, parte 1
 No Visual Studio, os projetos são os contêineres que os desenvolvedores usam para organizar arquivos de código-fonte e outros ativos. Os projetos aparecem como filhos de soluções no **Gerenciador de soluções**. Os projetos permitem organizar, compilar, depurar e implantar código-fonte e criar referências a serviços Web, bancos de dados e outros recursos.
@@ -61,14 +63,14 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
  Você também deve baixar o código-fonte da [estrutura de pacote gerenciado para projetos](https://github.com/tunnelvisionlabs/MPFProj10). Extraia o arquivo para um local que possa ser acessado pela solução que você vai criar.
 
 ## <a name="create-a-basic-project-type"></a>Criar um tipo de projeto básico
- Crie um projeto VSIX em C# chamado **SimpleProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, projeto VSIX de extensibilidade do **Visual C#**  >  **Extensibility**  >  **VSIX Project**). Adicione um modelo de item de projeto de pacote do Visual Studio (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item**e vá para **extensibilidade**do  >  **pacote do Visual Studio**). Nomeie o arquivo *SimpleProjectPackage*.
+ Crie um projeto VSIX em C# chamado **SimpleProject**. (**Arquivo**  >  **Novo**  >  **Projeto** e, em seguida, projeto VSIX de extensibilidade do **Visual C#**  >  **Extensibility**  >  **VSIX Project**). Adicione um modelo de item de projeto de pacote do Visual Studio (na **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Adicionar**  >  **novo item** e vá para **extensibilidade** do  >  **pacote do Visual Studio**). Nomeie o arquivo *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Criando um modelo de projeto básico
  Agora, você pode modificar esse VSPackage básico para implementar o novo tipo de projeto *. MyProj* . Para criar um projeto baseado no tipo de projeto *. MyProj* , o Visual Studio precisa saber quais arquivos, recursos e referências adicionar ao novo projeto. Para fornecer essas informações, coloque os arquivos de projeto em uma pasta de modelo de projeto. Quando um usuário usa o projeto *. MyProj* para criar um projeto, os arquivos são copiados para o novo projeto.
 
 ### <a name="to-create-a-basic-project-template"></a>Para criar um modelo de projeto básico
 
-1. Adicione três pastas ao projeto, uma na outra: *Templates\Projects\SimpleProject*. (Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto **SimpleProject** , aponte para **Adicionar**e clique em **nova pasta**. Nomeie a pasta *modelos*. Na pasta *modelos* , adicione uma pasta chamada *projetos*. Na pasta *projetos* , adicione uma pasta chamada *SimpleProject*.)
+1. Adicione três pastas ao projeto, uma na outra: *Templates\Projects\SimpleProject*. (Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó do projeto **SimpleProject** , aponte para **Adicionar** e clique em **nova pasta**. Nomeie a pasta *modelos*. Na pasta *modelos* , adicione uma pasta chamada *projetos*. Na pasta *projetos* , adicione uma pasta chamada *SimpleProject*.)
 
 2. Na pasta *Templates\Projects\SimpleProject* , adicione um arquivo de imagem de bitmap para usar como o ícone chamado *SimpleProject. ico*. Quando você clica em **Adicionar**, o editor de ícone é aberto.
 
@@ -154,7 +156,7 @@ No Visual Studio, os projetos são os contêineres que os desenvolvedores usam p
 
 11. Salve o arquivo.
 
-12. Na janela **Propriedades** , defina a **ação de compilação** de *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico*e *SimpleProject. MyProj* para **conteúdo**e defina sua **inclusão nas propriedades do VSIX** como **true**.
+12. Na janela **Propriedades** , defina a **ação de compilação** de *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico* e *SimpleProject. MyProj* para **conteúdo** e defina sua **inclusão nas propriedades do VSIX** como **true**.
 
     Este modelo de projeto descreve um projeto básico do Visual C# que tem uma configuração de depuração e uma configuração de versão. O projeto inclui dois arquivos de origem, *AssemblyInfo.cs* e *Program.cs*, e várias referências de assembly. Quando um projeto é criado a partir do modelo, o valor de ProjectGuid é substituído automaticamente por um novo GUID.
 
@@ -261,7 +263,7 @@ Templates
 
     4. Adicione referências aos assemblies a seguir:
 
-        - `Microsoft.VisualStudio.Designer.Interfaces`(em * \<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces`(em *\<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
         - `WindowsBase`
 
@@ -354,7 +356,7 @@ Templates
 
 - Copia o arquivo de modelo de projeto, *SimpleProject. MyProj*, para a nova pasta do projeto. A cópia é renomeada de acordo com o nome inserido na caixa de diálogo **novo projeto** . O `ProjectGuid` valor da propriedade é substituído por um novo GUID.
 
-- Percorre os elementos do MSBuild do arquivo de modelo de projeto, *SimpleProject. MyProj*e procura `Compile` elementos. Para cada `Compile` arquivo de destino, o copia o arquivo para a nova pasta do projeto.
+- Percorre os elementos do MSBuild do arquivo de modelo de projeto, *SimpleProject. MyProj* e procura `Compile` elementos. Para cada `Compile` arquivo de destino, o copia o arquivo para a nova pasta do projeto.
 
   A `SimpleProjectNode` classe derivada manipula estas tarefas:
 

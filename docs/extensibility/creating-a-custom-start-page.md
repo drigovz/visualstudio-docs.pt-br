@@ -1,5 +1,7 @@
 ---
 title: Criando uma página inicial personalizada | Microsoft Docs
+description: Saiba como criar uma página inicial personalizada. Comece com uma página inicial em branco, adicione controles ao elemento do UserControl vazio e, em seguida, teste sua página.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903666"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974563"
 ---
 # <a name="creating-a-custom-start-page"></a>Criando uma página inicial personalizada
 
@@ -75,7 +77,7 @@ Não defina a instância primária do Visual Studio para executar a página inic
 
 3. Em um prompt de comando do Visual Studio, digite **devenv/Rootsuffix exp** para abrir uma instância experimental do Visual Studio.
 
-4. Na instância experimental, vá para a **Tools**  >  página de inicialização do ambiente**Opções**de ferramentas  >  **Environment**  >  **Startup** e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
+4. Na instância experimental, vá para a **Tools**  >  página de inicialização do ambiente **Opções** de ferramentas  >  **Environment**  >  **Startup** e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
 
 5. No menu **Exibir** , clique em **página inicial**.
 
@@ -85,7 +87,7 @@ Não defina a instância primária do Visual Studio para executar a página inic
 
 - Depois de testar a página inicial e encontrá-la estável, use a opção **Personalizar página inicial** na caixa de diálogo **Opções** para selecioná-la como a página inicial na instância primária do Visual Studio
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Walkthrough: Adicionar XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [Adicionar controle de usuário à página inicial](../extensibility/adding-user-control-to-the-start-page.md)

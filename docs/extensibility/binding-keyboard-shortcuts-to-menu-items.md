@@ -1,5 +1,7 @@
 ---
 title: Vinculando atalhos de teclado a itens de menu | Microsoft Docs
+description: Saiba como mapear um atalho de teclado no Visual Studio para um botão personalizado, um item de menu ou um comando de barra de ferramentas para o editor padrão ou um editor personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407709"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974624"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado a itens de menu
 Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada ao arquivo *. vsct* do pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, um item de menu ou um comando de barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limitá-lo a um editor personalizado.
@@ -59,7 +61,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 
     Defina os `guid`  `id` atributos e para aqueles do comando que você deseja invocar.
 
-    Defina o `mod1` atributo como **Control** , **ALT** ou **Shift**.
+    Defina o `mod1` atributo como **Control**, **ALT** ou **Shift**.
 
     A seção keybindings deve ser semelhante a esta:
 
@@ -105,5 +107,5 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)
