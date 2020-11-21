@@ -1,5 +1,7 @@
 ---
 title: Carregar um subconjunto de projetos
+description: Saiba mais sobre a filtragem de soluções e como ela permite que você carregue rapidamente um subconjunto de projetos em uma solução.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,12 +12,12 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650847"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006608"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluções filtradas no Visual Studio
 
@@ -53,7 +55,7 @@ Para abrir uma solução sem carregar nenhum dos projetos usando a caixa de diá
 
    O Visual Studio lembrará de quais projetos estão carregados na próxima vez em que você abrir a solução localmente.
 
-### <a name="command-line"></a>Linha de Comando
+### <a name="command-line"></a>Linha de comando
 
 (Novo no Visual Studio 2019 versão 16.1.)
 

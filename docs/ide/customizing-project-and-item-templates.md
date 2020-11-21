@@ -1,5 +1,7 @@
 ---
 title: Personalizando modelos de projeto e de item
+description: Saiba como personalizar seus modelos de projeto e item depois que eles tiverem sido criados.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf53f572708dcacc955b9488c322227309289b9b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567548"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006270"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalizar modelos de projeto e de item
 

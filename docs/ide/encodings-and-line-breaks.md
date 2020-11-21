@@ -1,5 +1,7 @@
 ---
 title: Codificando caracteres de quebra de linha
+description: Saiba mais sobre os caracteres que o Visual Studio interpreta como quebras de linha e como a codificação original e os caracteres de quebra de linha são mantidos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045587"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006634"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
@@ -49,15 +51,15 @@ Você pode usar a **File**  >  caixa de diálogo **Opções de salvamento avanç
 ![caixa de diálogo Opções avançadas de salvar](media/line_endings.png)
 
 > [!NOTE]
-> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo** , você poderá adicioná-la. 
-> 1. Escolha **ferramentas** , **Personalizar** , 
-> 1. Escolha a guia **comandos** , selecione o botão de opção **barra de menus** e, na lista suspensa correspondente, escolha **arquivo** . Escolha o botão **Adicionar comando** . 
-> 1. Na caixa de diálogo **Adicionar Comando** , em **Categorias** , escolha **Arquivo** e, em seguida, na lista **Comandos** , escolha **Opções Avançadas de Salvamento** . Escolha o botão **OK** .
-> 1. Use os botões **mover para cima** e mover para **baixo** para mover o comando para qualquer lugar no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar** . 
+> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. 
+> 1. Escolha **ferramentas**, **Personalizar**, 
+> 1. Escolha a guia **comandos** , selecione o botão de opção **barra de menus** e, na lista suspensa correspondente, escolha **arquivo**. Escolha o botão **Adicionar comando** . 
+> 1. Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento**. Escolha o botão **OK** .
+> 1. Use os botões **mover para cima** e mover para **baixo** para mover o comando para qualquer lugar no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. 
 > Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> Como alternativa, você pode acessar a caixa de diálogo **Opções de salvamento avançadas** escolhendo **arquivo**  >  **Salvar \<file\> como** . Na caixa de diálogo **salvar arquivo como** , escolha o triângulo suspenso ao lado do botão **salvar** e, em seguida, escolha **salvar com codificação** .
+> Como alternativa, você pode acessar a caixa de diálogo **Opções de salvamento avançadas** escolhendo **arquivo**  >  **Salvar \<file\> como**. Na caixa de diálogo **salvar arquivo como** , escolha o triângulo suspenso ao lado do botão **salvar** e, em seguida, escolha **salvar com codificação**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

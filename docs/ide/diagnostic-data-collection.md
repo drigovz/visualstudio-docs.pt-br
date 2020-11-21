@@ -1,5 +1,7 @@
 ---
 title: Dados de diagnóstico e logs gerados pelo sistema
+description: Saiba mais sobre os logs gerados pelo sistema do Visual Studio, os tipos de dados coletados e como eles são usados para corrigir problemas e melhorar a qualidade do produto.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387246"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005919"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Logs gerados pelo sistema coletados pelo Visual Studio
 
@@ -24,7 +26,7 @@ O Visual Studio coleta logs gerados pelo sistema para falhas, falta de resposta 
 
 - Para alto uso da CPU e falta de resposta, são coletados rastreamentos de pilha de threads relevantes do Visual Studio.
 
-- Para casos em que os rastreamentos de pilha de alguns threads não são suficientes para determinar a causa raiz do problema, por exemplo, falhas, falta de resposta ou alto uso de memória, coletamos um *despejo*de memória. O despejo representa o estado do processo durante o erro.
+- Para casos em que os rastreamentos de pilha de alguns threads não são suficientes para determinar a causa raiz do problema, por exemplo, falhas, falta de resposta ou alto uso de memória, coletamos um *despejo* de memória. O despejo representa o estado do processo durante o erro.
 
 - Para condições de erro inesperadas, por exemplo, uma exceção ao tentar fazer uma gravação em um arquivo em disco, coletamos informações sobre a exceção. As informações incluem o nome da exceção, o rastreamento de pilha do thread no qual ocorreu a exceção, a mensagem associada à exceção e outras informações relevantes à exceção específica.
 

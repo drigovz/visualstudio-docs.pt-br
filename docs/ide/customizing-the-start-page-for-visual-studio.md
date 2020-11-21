@@ -1,5 +1,7 @@
 ---
 title: Alterar a experiência de inicialização
+description: Saiba como personalizar sua experiência de inicialização para que o Visual estúdios seja aberto com as ferramentas que são mais úteis para você.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567210"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006257"
 ---
 # <a name="customize-startup"></a>Personalizar a inicialização
 

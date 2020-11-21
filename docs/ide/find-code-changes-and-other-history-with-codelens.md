@@ -1,5 +1,7 @@
 ---
 title: Localizar alterações de código e outro histórico com o CodeLens
+description: Saiba mais sobre o CodeLens e como usá-lo explorar o histórico do seu código sem precisar sair do editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928496"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006699"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -128,7 +130,7 @@ Para ver mais detalhes sobre uma alteração, clique com o botão direito do mou
 
 Sua equipe pode ter vários branches, por exemplo, um branch principal e um branch de desenvolvimento filho, para reduzir o risco de interrupção de código estável.
 
-![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: localizar alterações em seu Branch atual](../ide/media/codelensfirstbranchconceptual.png)
 
 Você pode descobrir quantas pessoas alteraram seu código e quantas alterações foram feitas na ramificação principal pressionando **ALT** + **6**:
 
@@ -156,7 +158,7 @@ Examine a alteração sem sair do branch atual ("Main"):
 
 Você pode ver quando as alterações foram mescladas, para que você possa determinar quais alterações são incluídas no branch:
 
-![CodeLens – alterações mescladas entre branches](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens-localizar quando as alterações foram mescladas](../ide/media/codelensbranchmergedconceptual.png)
 
 Por exemplo, agora o código no branch Main tem a correção de bug do branch "Dev":
 
@@ -164,7 +166,7 @@ Por exemplo, agora o código no branch Main tem a correção de bug do branch "D
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Comparar uma alteração recebida com a versão local
 
-Compare uma alteração de entrada com sua versão local pressionando **Shift** + **F10**ou clicando duas vezes no conjunto de alterações.
+Compare uma alteração de entrada com sua versão local pressionando **Shift** + **F10** ou clicando duas vezes no conjunto de alterações.
 
 ![CodeLens: comprar a alteração recebida com a versão local](../ide/media/codelens-branch-incoming-change-menu.png)
 
@@ -354,6 +356,6 @@ Para usar o teclado:
 
 **R:** Recompile seu projeto para obter os indicadores de teste do CodeLens para carregar no seu arquivo. Para melhorar o desempenho, o Visual Studio não busca mais informações de origem para os indicadores de teste quando os arquivos de código são carregados. Os indicadores de teste são carregados após um build ou quando você navega até um teste clicando duas vezes nele no **Gerenciador de Testes**.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,5 +1,7 @@
 ---
 title: Caixa Localizar/Comando
+description: Saiba mais sobre a caixa Localizar/comando e como você pode usá-la para Pesquisar texto e executar comandos do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 341362fe74d4d8a6edbf10afec1a0d49998e857d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591522"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006595"
 ---
 # <a name="findcommand-box"></a>Caixa Localizar/Comando
 

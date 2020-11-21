@@ -1,5 +1,7 @@
 ---
 title: Localizar e instalar extensões
+description: Saiba mais sobre extensões no Visual Studio e como gerenciá-las para que você tenha os controles, exemplos, modelos, ferramentas e outros componentes de que precisa.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594403"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006530"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gerenciar extensões para o Visual Studio
 
@@ -65,7 +67,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A **Tools**  >  caixa de diálogo**extensões e atualizações** de ferramentas não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A **Tools**  >  caixa de diálogo **extensões e atualizações** de ferramentas não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo extensões e atualizações não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -106,13 +108,13 @@ Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinsta
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
 
-A maioria das extensões é por usuário e é instalada na pasta *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio \> version \\ \Extensions* . Algumas extensões são extensões administrativas e são instaladas na pasta * \<Visual Studio installation folder> \Common7\IDE\Extensions \\ * .
+A maioria das extensões é por usuário e é instalada na pasta *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio \> version \\ \Extensions* . Algumas extensões são extensões administrativas e são instaladas na pasta *\<Visual Studio installation folder> \Common7\IDE\Extensions \\* .
 
 Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões elevadas.
 
 Para restringir quando as extensões por usuário são carregadas:
 
-1. Abra a página opções de extensões (**ferramentas**  >  **Opções**  >  **Environment**  >  **extensões**de ambiente).
+1. Abra a página opções de extensões (**ferramentas**  >  **Opções**  >  **Environment**  >  **extensões** de ambiente).
 
 2. Desmarque a caixa de seleção **carregar extensões por usuário ao executar como administrador** .
 
@@ -150,7 +152,7 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 
 ::: moniker range="vs-2017"
 
-- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode reabilitar a extensão na caixa de **Tools**  >  diálogo**extensões e atualizações** de ferramentas, se desejar.
+- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode reabilitar a extensão na caixa de **Tools**  >  diálogo **extensões e atualizações** de ferramentas, se desejar.
 
 ::: moniker-end
 

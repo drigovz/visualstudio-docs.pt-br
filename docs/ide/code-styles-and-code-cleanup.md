@@ -1,5 +1,7 @@
 ---
 title: Opções de estilo de código e limpeza de código
+description: Saiba como configurar o Visual Studio para aplicar as preferências de estilo de código usando os comandos limpeza de código (Visual Studio 2019) e formatar documento (Visual Studio 2017).
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658380"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006673"
 ---
 # <a name="code-style-preferences"></a>Preferências de estilo de código
 
@@ -58,7 +60,7 @@ As opções definidas nessa janela são aplicáveis à sua conta de personaliza�
 
 ### <a name="preference-and-severity"></a>Preferência e gravidade
 
-Em cada configuração de estilo de código nessa página, é possível definir os valores de **Preferência** e **Gravidade** usando as listas suspensas de cada linha. A gravidade pode ser definida como **Somente Refatoração**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Gravidade** está definida como algo diferente de **Somente Refatoração**. O ícone de lâmpada de lâmpada de **ações rápidas** , lâmpada de erro de lâmpada de erro ou sinal de chave de fenda ![ ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) ![ ](media/screwdriver.png) é exibido quando um estilo não preferencial é usado e você pode escolher uma opção na lista **ações rápidas** para reescrever automaticamente o código para o estilo preferencial.
+Em cada configuração de estilo de código nessa página, é possível definir os valores de **Preferência** e **Gravidade** usando as listas suspensas de cada linha. A gravidade pode ser definida como **Somente Refatoração**, **Sugestão**, **Aviso** ou **Erro**. Se você quiser habilitar [Ações Rápidas](../ide/quick-actions.md) para um estilo de código, verifique se a configuração de **Gravidade** está definida como algo diferente de **Somente Refatoração**. A lâmpada de **ações rápidas** , a lâmpada de :::image type="icon" source="media/light-bulb-dropdown.png"::: erro :::image type="icon" source="media/error-bulb.png"::: ou o ícone de chave de fenda :::image type="icon" source="media/screwdriver.png"::: aparece quando um estilo não preferencial é usado e você pode escolher uma opção na lista **ações rápidas** para reescrever automaticamente o código para o estilo preferencial.
 
 ::: moniker range=">=vs-2019"
 
@@ -109,7 +111,7 @@ Se quiser que as configurações de estilo de código sejam aplicadas sempre que
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Ações Rápidas](../ide/quick-actions.md)
 - [Configurações da Convenção de codificação .NET para EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

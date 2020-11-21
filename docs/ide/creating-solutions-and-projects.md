@@ -1,5 +1,7 @@
 ---
 title: Criar soluções e projetos
+description: Saiba mais sobre a diferença entre soluções e projetos e como usá-los no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19a836847aa01038bdbb015612c4fb4a3964d9a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770547"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006439"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -122,7 +124,7 @@ Como mencionado anteriormente, você também pode abrir arquivos de código sem 
 
 Se você criar um projeto com base em .NET sem especificar um local de disco, ele será um projeto temporário. Os projetos temporários permitem fazer experimentos com projetos do .NET. A qualquer momento, enquanto você está trabalhando com um projeto temporário, é possível escolher salvá-lo ou descartá-lo.
 
-Para criar um projeto temporário, primeiro vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **geral**e desmarque a caixa de seleção **salvar novos projetos quando criados** . Em seguida, abra a caixa de diálogo **Novo projeto** como de costume.
+Para criar um projeto temporário, primeiro vá para **ferramentas**  >  **Opções**  >  **projetos e soluções**  >  **geral** e desmarque a caixa de seleção **salvar novos projetos quando criados** . Em seguida, abra a caixa de diálogo **Novo projeto** como de costume.
 
 ::: moniker-end
 

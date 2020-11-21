@@ -1,5 +1,7 @@
 ---
 title: Criar um novo projeto
+description: Saiba como criar um novo projeto no Visual Studio, passo a passo.
+ms.custom: SEO-VS-2020
 ms.date: 03/19/2019
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7cecf6a68296b3bffd07cca13fc3a3d0d5bc836
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7cba3c19ae939396132af8bb3c2ffee318b7007e
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770741"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006517"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Criar um novo projeto no Visual Studio
 

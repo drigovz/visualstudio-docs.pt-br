@@ -1,5 +1,7 @@
 ---
 title: Localizar em Arquivos
+description: Saiba mais sobre o recurso Localizar em arquivos e como usá-lo para pesquisar um conjunto específico de arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: c9aa0d1523c8ef8be73a3c5e73255ce1eeb32d57
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344501"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006569"
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 
@@ -55,7 +57,7 @@ Para pesquisar uma nova cadeia de caracteres de texto ou expressão, especifique
 A opção escolhida na lista suspensa **Examinar** determina se a opção **Localizar nos Arquivos** só pesquisará em arquivos ativos ou em todos os arquivos armazenados em determinadas pastas. Selecione um escopo da pesquisa na lista ou clique no botão **Procurar (...)** para exibir a caixa de diálogo **Escolher Pastas de Pesquisa** e insira seu próprio conjunto de diretórios. Também é possível digitar um caminho diretamente na caixa **Examinar**.
 
 > [!WARNING]
-> Com as opções **Solução Inteira** ou **Projeto Atual** , os arquivos de projeto e de solução não são pesquisados. Se você deseja examinar arquivos de projeto, escolha uma pasta de pesquisa.
+> Com as opções **Solução Inteira** ou **Projeto Atual**, os arquivos de projeto e de solução não são pesquisados. Se você deseja examinar arquivos de projeto, escolha uma pasta de pesquisa.
 
 > [!NOTE]
 > Se a opção **Examinar** selecionada fizer com que você pesquise um arquivo do qual você fez check-out do controle do código-fonte, apenas a versão desse arquivo que tiver sido baixada em seu computador local será pesquisada.

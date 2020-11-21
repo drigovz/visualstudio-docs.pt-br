@@ -1,5 +1,7 @@
 ---
 title: Desenvolver o código sem projetos nem soluções
+description: Saiba como desenvolver código diretamente no Visual Studio sem a necessidade de projetos ou soluções.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769665"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005997"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
 
@@ -28,15 +30,15 @@ Depois de abrir seus arquivos de código no Visual Studio, **Gerenciador de solu
 
 Você pode abrir o código no Visual Studio das seguintes maneiras:
 
-- Na barra de menus do Visual Studio, escolha **arquivo**  >  **abrir**  >  **pasta**e, em seguida, navegue até o local do código.
+- Na barra de menus do Visual Studio, escolha **arquivo**  >  **abrir**  >  **pasta** e, em seguida, navegue até o local do código.
 
 - No menu de contexto (acesso por clique com o botão direito do mouse) de uma pasta que contém o código, escolha o comando **Abrir no Visual Studio**.
 
 ::: moniker range="vs-2017"
-- Escolha o link **abrir pasta** na **página inicial**do Visual Studio.
+- Escolha o link **abrir pasta** na **página inicial** do Visual Studio.
 
     > [!IMPORTANT]
-    > Nem todo o código pode ser aberto usando o link **abrir pasta** da **página inicial**do Visual Studio. Por exemplo, se o arquivo de código tiver sido salvo como parte de uma solução &mdash; em outras palavras, em um arquivo. sln, &mdash; você deverá usar uma das outras opções listadas aqui para abrir seu código.
+    > Nem todo o código pode ser aberto usando o link **abrir pasta** da **página inicial** do Visual Studio. Por exemplo, se o arquivo de código tiver sido salvo como parte de uma solução &mdash; em outras palavras, em um arquivo. sln, &mdash; você deverá usar uma das outras opções listadas aqui para abrir seu código.
 
 ::: moniker-end
 

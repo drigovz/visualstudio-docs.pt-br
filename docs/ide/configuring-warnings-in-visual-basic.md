@@ -1,5 +1,7 @@
 ---
 title: Configurando avisos no Visual Basic
+description: Saiba como você pode configurar avisos no Visual Basic que, por sua vez, ajudarão você a escrever um código mais limpo, mais rápido e melhor com menos bugs.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114722"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006400"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
 
@@ -39,7 +41,7 @@ A opção de linha de comando **/warnaserror** do compilador também pode ser us
 |Opção de linha de comando|Especifica|
 | - |---------------|
 |`/warnaserror+`|Tratar todos os avisos como erros|
-|`/warnsaserror`-|Não trate avisos como erros. Esse é o padrão.|
+|`/warnsaserror`-|Não trate avisos como erros. Este é o padrão.|
 |`/warnaserror+:<warning list` `>`|Trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/warnaserror-:<warning list>`|Não trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/nowarn`|Não relate os avisos.|

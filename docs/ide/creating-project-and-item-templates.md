@@ -1,5 +1,7 @@
 ---
 title: Modelos de projetos e arquivos
+description: Saiba mais sobre como os modelos de projeto e item fornecem stubs reutilizáveis que dão a usuários algum código e estrutura básicos.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313790"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006296"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 

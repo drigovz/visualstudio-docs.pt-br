@@ -1,5 +1,7 @@
 ---
 title: Localizando referências no código
+description: Saiba mais sobre o comando Localizar todas as referências para localizar referências a elementos de código específicos em seu código.
+ms.custom: SEO-VS-2020
 ms.date: 09/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4ef16ef88e871778fd4e0c755ffb156c374109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5ee6a0792c5dbfa1661018e75806499d1aa1028
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592029"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006543"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
 Você pode usar o comando **Localizar Todas as Referências** para localizar onde elementos de código específicos são referenciados em toda a base de código. O comando **Localizar Todas as Referências** está disponível no menu de contexto (acessado com o clique do botão direito do mouse) do elemento cujas referências você deseja localizar. Ou, se você estiver usando o teclado, pressione **Shift + F12**.
 
-Os resultados aparecem em uma janela de ferramentas chamada ** \<element> References**, em que *Element* é o nome do item que você está pesquisando. Uma barra de ferramentas na janela **referências** permite que você:
+Os resultados aparecem em uma janela de ferramentas chamada **\<element> References**, em que *Element* é o nome do item que você está pesquisando. Uma barra de ferramentas na janela **referências** permite que você:
 - Altere o escopo da pesquisa em uma caixa de listagem suspensa. É possível optar por examinar apenas documentos alterados até a solução inteira.
 - Copie o item referenciado selecionado ao selecionar o botão **Copiar**.
 - Escolha os botões para acessar o local anterior ou seguinte na lista. Também é possível pressionar as teclas **F8** e **Shift + F8** para fazer isso.
@@ -40,7 +42,7 @@ Você pode usar os seguintes métodos para navegar para as referências na janel
 - Pressione **F8** para acessar a próxima referência ou **Shift + F8** para acessar a referência anterior.
 - Pressione a tecla **Enter** em uma referência ou clique duas vezes nela para acessá-la no código.
 - No menu do clique com o botão direito (menu de contexto) de uma referência, escolha os comandos **Ir para Local Anterior** ou **Ir para Próximo Local**.
-- Escolha as teclas de seta para **cima** e **seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções** ). Para habilitar essa funcionalidade, na barra de menus, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **guias de ambiente e**  >  a**guia Visualização**do Windows e, em seguida, selecione **permitir novos arquivos a serem abertos na guia Visualizar** e **visualize os arquivos selecionados em caixas de pesquisa de resultados** .
+- Escolha as teclas de seta para **cima** e **seta para baixo** (se elas estiverem habilitadas na caixa de diálogo **Opções** ). Para habilitar essa funcionalidade, na barra de menus, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **guias de ambiente e**  >  a **guia Visualização** do Windows e, em seguida, selecione **permitir novos arquivos a serem abertos na guia Visualizar** e **visualize os arquivos selecionados em caixas de pesquisa de resultados** .
 
 ## <a name="change-reference-groupings"></a>Alterar agrupamentos de referência
 Por padrão, as referências são agrupadas por projetos, depois por definição. No entanto, você pode alterar essa ordem de agrupamento alterando a configuração na caixa de listagem suspensa **Agrupar por:** na barra de ferramentas. Por exemplo, é possível alterá-la na configuração padrão de **Projeto em vez de definição** para **Definição em vez de projeto** e também para outras configurações.

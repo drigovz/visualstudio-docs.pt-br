@@ -1,5 +1,7 @@
 ---
 title: Personalizar layouts de janela
+description: Saiba como personalizar as características que o Windows exibe para criar layouts que funcionam melhor para vários fluxos de trabalho de desenvolvimento.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87546060"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006660"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -52,7 +54,7 @@ Você pode usar guias para organizar o layout de várias maneiras diferentes. Po
 
 #### <a name="preview-tab-document-windows"></a>Guia Visualização (janelas do documento)
 
-Na guia **Visualização** , você pode exibir arquivos no editor sem abri-los. Você pode visualizar os arquivos escolhendo-os no **Gerenciador de soluções**, durante a depuração, quando você entra em arquivos, com **ir para definição**e quando navega pelos resultados de uma pesquisa. Os arquivos de visualização são exibidos em uma guia à direita da caixa de guias de documentos. O arquivo será aberto para edição se você modificá-lo ou escolher **Abrir**.
+Na guia **Visualização** , você pode exibir arquivos no editor sem abri-los. Você pode visualizar os arquivos escolhendo-os no **Gerenciador de soluções**, durante a depuração, quando você entra em arquivos, com **ir para definição** e quando navega pelos resultados de uma pesquisa. Os arquivos de visualização são exibidos em uma guia à direita da caixa de guias de documentos. O arquivo será aberto para edição se você modificá-lo ou escolher **Abrir**.
 
 ::: moniker range="vs-2019"
 
@@ -62,9 +64,9 @@ Na guia **Visualização** , você pode exibir arquivos no editor sem abri-los. 
 
 Você pode aplicar guias de documento vertical das seguintes maneiras:
 
-- Escolha **ferramentas**  >  **Opções**  >  guias de**ambiente**  >  **e janelas** na barra de menus. Em seguida, no controle **Definir layout de guia** , escolha **superior**, **esquerda**ou **direita** na lista suspensa.
+- Escolha **ferramentas**  >  **Opções**  >  guias de **ambiente**  >  **e janelas** na barra de menus. Em seguida, no controle **Definir layout de guia** , escolha **superior**, **esquerda** ou **direita** na lista suspensa.
 
-- Clique com o botão direito do mouse em uma guia, escolha **Definir layout da guia**e escolha **esquerda** ou **direita**. (Para retornar as guias à sua posição padrão, escolha **superior**.)
+- Clique com o botão direito do mouse em uma guia, escolha **Definir layout da guia** e escolha **esquerda** ou **direita**. (Para retornar as guias à sua posição padrão, escolha **superior**.)
 
     :::image type="content" source="./media/vs-2019/vertical-tabs.gif" alt-text="Uma animação que mostra as guias de documento vertical em ação":::
 
@@ -167,7 +169,7 @@ Primeiro, crie uma solução de teste que tem dois projetos, cada um com um layo
 
 3. Pressione **Ctrl** + **ALT** + **X** para exibir a janela **caixa de ferramentas** . Se a janela estiver encaixada, arraste-a para que ela flutue em algum lugar que você gostaria de posicioná-la.
 
-4. Pressione **F5** para colocar o Visual Studio em modo de depuração. Ajuste a posição das janelas **automáticos**, **pilha de chamadas**e depuração de **saída** da maneira desejada. O layout que você está prestes a criar será aplicado ao modo de edição e ao modo de depuração.
+4. Pressione **F5** para colocar o Visual Studio em modo de depuração. Ajuste a posição das janelas **automáticos**, **pilha de chamadas** e depuração de **saída** da maneira desejada. O layout que você está prestes a criar será aplicado ao modo de edição e ao modo de depuração.
 
 5. Quando os layouts no modo de depuração e no modo de edição estiverem como você deseja, escolha **janela**  >  **salvar layout da janela**. Chame esse layout de "Designer".
 

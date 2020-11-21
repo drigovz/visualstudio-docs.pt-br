@@ -1,5 +1,7 @@
 ---
 title: Localizar e substituir texto, e seleção de vários cursores
+description: Saiba mais sobre o recurso Localizar e substituir e como usá-lo para localizar e substituir instâncias de um padrão.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 475f0249bd6af8176fba3ecc79ad758cc6ceceb7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334188"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006582"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
@@ -92,7 +94,7 @@ Você pode definir um escopo de pesquisa escolhendo o botão **escolher pastas d
 
 ### <a name="create-custom-component-sets"></a>Criar conjuntos de componentes personalizados
 
-Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar os componentes .NET ou COM instalados, projetos do Visual Studio incluídos em sua solução ou qualquer biblioteca de tipos ou assembly (*. dll*, *. tlb*, *. olb*, *. exe*ou *. ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
+Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar os componentes .NET ou COM instalados, projetos do Visual Studio incluídos em sua solução ou qualquer biblioteca de tipos ou assembly (*. dll*, *. tlb*, *. olb*, *. exe* ou *. ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
 
 ## <a name="multi-caret-selection"></a>Seleção de vários cursores
 
@@ -132,7 +134,7 @@ Alguns dos comandos também estão disponíveis no menu **Editar**, em **Vários
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Captura de tela do menu suspenso de múltiplos Cursors no Visual Studio":::
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refatorar um código no Visual Studio](../ide/refactoring-in-visual-studio.md)
