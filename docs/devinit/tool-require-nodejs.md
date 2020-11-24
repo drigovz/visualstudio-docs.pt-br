@@ -1,7 +1,7 @@
 ---
 title: require-nodejs
 description: a ferramenta devinit requer-NodeJS.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3da6bd121aff31c680bea2c4655ee2250f5edb05
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cc071e126baaa7231c8e2d1a6cbd764854918b3f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671783"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442108"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 
@@ -26,7 +26,7 @@ A `require-nodejs` ferramenta é usada para instalar o [Node.js](https://nodejs.
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                     |
+| Nome                                             | Type   | Obrigatório | Valor                                                                     |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                     |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | A versão do Node.JS a ser instalada. Consulte a [entrada](#input) abaixo para obter detalhes. |

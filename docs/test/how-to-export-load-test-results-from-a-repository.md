@@ -1,5 +1,7 @@
 ---
 title: Exportar os resultados do teste de carga
+description: Saiba como exportar informações do repositório de Resultados de Teste de carga usando a caixa de diálogo abrir e gerenciar Resultados de Teste de carregamento.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f9b20915d5c320ff8db4da849d20267355c26590
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960605dd35a30af1b2c8933d24cfa80ebb97f6c1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287747"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439902"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Como exportar resultados do teste de carga de um repositório
 

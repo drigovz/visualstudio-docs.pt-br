@@ -1,5 +1,7 @@
 ---
 title: Dados do IntelliTrace
+description: Saiba como configurar o adaptador de dados de diagnóstico para o IntelliTrace para coletar informações específicas de rastreamento de diagnóstico no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9da0000397042355387d21501c64c29806ddeaaa
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 7a043f2841dc5a6918036c152628ebfc346e11ee
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928509"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440102"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -83,7 +85,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 5. Escolha a guia **geral** . Selecione **eventos do IntelliTrace somente** para registrar eventos de diagnóstico significativos que têm impacto mínimo sobre o desempenho durante o teste.
 
-     -ou-
+     - ou -
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
@@ -91,7 +93,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
@@ -100,7 +102,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
 
 8. Escolha a guia **processos** . Selecione **coletar dados de todos os processos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de processos e **remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     -ou-
+     - ou -
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 
@@ -124,7 +126,7 @@ Antes de executar as etapas neste procedimento, você deverá abrir as configura
     > Para redefinir a configuração para este adaptador de dados de diagnóstico, escolha **Redefinir para a configuração padrão** no Visual Studio.
     ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)

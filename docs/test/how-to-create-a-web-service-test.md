@@ -1,5 +1,7 @@
 ---
 title: Criar um teste de serviço Web
+description: Saiba como usar um teste de desempenho para serviços Web e personalizar solicitações no Editor de Testes de Desempenho Web para localizar páginas de serviço Web.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9934f48e6d5900a418995eb96d357b4ea1ea532f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814753"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439921"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como criar um teste de serviço Web
 
@@ -24,7 +26,7 @@ Você pode usar um teste de desempenho na Web para testar serviços Web. Usando 
 >[!NOTE]
 > A funcionalidade de teste de carga e desempenho da Web foi preterida no Visual Studio 2019. Por Application Insights, os testes na Web de várias etapas dependem de arquivos do Visual Studio WebTest. Foi [anunciado](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) que o Visual Studio 2019 será a última versão com a funcionalidade webtest. É importante entender que, embora nenhum novo recurso seja adicionado, a funcionalidade webtest no Visual Studio 2019 ainda é suportada e continuará a ter suporte durante o ciclo de vida de suporte do produto. A equipe de produto do Azure Monitor respondeu perguntas sobre o futuro dos testes de disponibilidade de várias etapas [aqui](https://github.com/MicrosoftDocs/azure-docs/issues/26050#issuecomment-468814101).
 
-**Requisitos**
+**Requirements**
 
 Visual Studio Enterprise
 
@@ -34,7 +36,7 @@ Para testar, você pode usar seu próprio serviço Web ou usar o modelo ASMX (se
 
 1. No Visual Studio, crie um novo projeto usando o modelo de aplicativo Web ASP.NET (.NET Framework) e selecione o modelo **vazio** quando solicitado. Digite um nome e crie o projeto.
 
-1. Em Gerenciador de soluções, clique com o botão direito do mouse no nó do projeto, escolha **Adicionar**  >  **novo item**e escolha **serviço Web (asmx)**. Adicione o serviço Web.
+1. Em Gerenciador de soluções, clique com o botão direito do mouse no nó do projeto, escolha **Adicionar**  >  **novo item** e escolha **serviço Web (asmx)**. Adicione o serviço Web.
 
 1. Abra *WebService1. asmx* e substitua o `HelloWorld` método Web padrão pelo código a seguir.
 
@@ -89,7 +91,7 @@ Um teste na Web requer o modelo de projeto de projeto de teste de carga e desemp
 
 2. Na janela iniciar, escolha **criar um novo projeto**.
 
-3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido] ** para o modelo C#. Escolha **Próxima**.
+3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido]** para o modelo C#. Escolha **Próxima**.
 
 4. Insira um nome para o projeto se não quiser usar o nome padrão e escolha **Criar**.
 

@@ -1,5 +1,7 @@
 ---
 title: Analisar os resultados do teste de carga
+description: Saiba como acessar os resultados do teste de carga para análise, seja automaticamente por meio do analisador de testes de carga ou manualmente para testes da linha de comando.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288527"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442593"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar os resultados do teste de carga para análise
 
@@ -37,7 +39,7 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
      A caixa de diálogo **Abrir e gerenciar resultados** é exibida.
 
-3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione ** \<local> -nenhum controlador** para acessar os resultados armazenados localmente.
+3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<local> -nenhum controlador** para acessar os resultados armazenados localmente.
 
 4. Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Show results for all tests>** para ver todos os resultados de todos os testes.
 

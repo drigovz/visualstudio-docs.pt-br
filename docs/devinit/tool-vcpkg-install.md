@@ -1,7 +1,7 @@
 ---
 title: vcpkg-install
 description: devinit ferramenta vcpkg-install.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6e10887e09c329a241aab7f18c6170c873705fbf
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5247bdd262a7c5ec2c3c7e3b77ab21f2777524d1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672048"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442162"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
@@ -26,7 +26,7 @@ A `vcpkg-install` ferramenta é usada para adquirir bibliotecas C/C++ (chamadas 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                   |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                   |
 | [**entrada**](#input)                              | string | Sim      | Os pacotes a serem instalados. Consulte a [entrada](#input) abaixo para obter detalhes.                       |
@@ -45,7 +45,7 @@ Opções adicionais são passadas diretamente para o comando [vcpkg](/powershell
 O comportamento padrão da `vcpkg-install` ferramenta é erro, conforme `input` necessário.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `vcpkg-install` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `vcpkg-install` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-sdl2-port"></a>.devinit.js, que instalará a porta sdl2:
 ```json

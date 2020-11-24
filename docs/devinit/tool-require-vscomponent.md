@@ -1,7 +1,7 @@
 ---
 title: require-vscomponent
 description: a ferramenta devinit requer-vscomponent.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e9d2f546e99f83b4c53d0b76abfdaf8ec91868ac
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 4a4725ac0757f43830741afd5aefd540633f05af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672107"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442273"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -26,7 +26,7 @@ A `require-vscomponent` ferramenta é usada para importar configurações do Vis
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                     | Tipo   | Obrigatório | Valor                                                                |
+| Nome                                     | Type   | Obrigatório | Valor                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
 | **feitos**                             | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                |
 | [**entrada**](#input)                      | Cadeia de caracteres | No       | O caminho completo de `.vsconfig` . Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -45,7 +45,7 @@ Não usado.
 O comportamento padrão da `require-vscomponent` ferramenta é procurar um `.vsconfig` arquivo no diretório atual e executar o instalador do Visual Studio com esses detalhes no modo silencioso. `require-vscomponent` o só dá suporte à modificação de uma instalação existente do Visual Studio.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `require-vscomponent` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `require-vscomponent` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.js, que importará as configurações de um determinado caminho de arquivo. vsconfig:
 ```json

@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-enable
 description: ferramenta devinit WindowsFeature – habilitar.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ed1cc5379cc28c3932c96271fda27e23f4cd27c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 57c122f9ff86994d6ed262fa41834a01be5fa949
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672002"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442115"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -24,7 +24,7 @@ A `windowsfeature-enable` ferramenta é usada para habilitar recursos do Windows
 
 ## <a name="usage"></a>Uso
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                    |
+| Nome                                             | Type   | Obrigatório | Valor                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                    |
 | [**entrada**](#input)                              | string | Sim      | O recurso do Windows a ser instalado. Consulte a [entrada](#input) abaixo para obter detalhes.   |
@@ -36,14 +36,14 @@ A `input` propriedade deve ser a `name` do a `windows feature` ser instalada. Um
 
 ### <a name="additional-options"></a>Additional-Options
 
-nenhuma.
+Nenhum.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
 O comportamento padrão da `windowsfeature-enable` ferramenta é erro, conforme `input` necessário.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `windowsfeature-enable` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `windowsfeature-enable` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-iis"></a>.devinit.jsno que irá instalar o IIS:
 ```json

@@ -1,5 +1,7 @@
 ---
 title: Exemplos e instruções de desenvolvimento do SharePoint | Microsoft Docs
+description: Introdução aos aplicativos de exemplo, código de exemplo e instruções passo a passo que demonstram o desenvolvimento do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f4d52b8a94409abeffb7cc9ce2329e463cf8bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a5703958db5d981391c11ae0baceaf83231d3c7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015800"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440630"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>Exemplos e orientações de desenvolvimento do SharePoint
   Esta seção contém aplicativos de exemplo, código de exemplo e instruções passo a passo que ilustram a sintaxe, a estrutura e as técnicas usadas para criar soluções do SharePoint.

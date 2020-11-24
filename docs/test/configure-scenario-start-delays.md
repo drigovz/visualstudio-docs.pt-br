@@ -1,5 +1,7 @@
 ---
 title: Configurar atrasos de início de cenário para testes de carga
+description: Saiba como especificar um atraso antes de um cenário iniciar em um teste de carga usando o Editor de Teste de Carga e o janela Propriedades.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d425b457056e256c5c9ed927c99adf002b78dd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec94fc67dbf42cd2631af1a655d6b8deab54fabc
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288787"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441495"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar atrasos de início do cenário em testes de carga
 

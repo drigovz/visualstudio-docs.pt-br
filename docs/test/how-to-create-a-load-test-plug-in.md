@@ -1,5 +1,7 @@
 ---
 title: Criar um plug-in de teste de carga
+description: Saiba como criar um plug-in de teste de carga para executar código em momentos diferentes enquanto o teste de carga é executado, que pode expandir ou modificar a funcionalidade do teste de carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288020"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441085"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Como criar um plug-in de teste de carga
 
@@ -46,7 +48,7 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
 
 5. Escolha a guia **.NET**, role para baixo e selecione **Microsoft.VisualStudio.QualityTools.LoadTestFramework**.
 
-6. Escolha **OK**.
+6. Selecione **OK**.
 
    A referência a **Microsoft. VisualStudio. QualityTools. LoadTestFramework** é adicionada à pasta de **referência** em **Gerenciador de soluções**.
 
@@ -56,7 +58,7 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
 
 8. Escolha a guia **Projetos** e selecione o projeto da biblioteca de classes.
 
-9. Escolha **OK**.
+9. Selecione **OK**.
 
 10. No **Editor de Códigos**, adicione uma instrução `using` ao namespace <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
@@ -75,7 +77,7 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
     > [!NOTE]
     > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode alterar as propriedades de plug-in de teste de desempenho da Web mais tarde usando a janela **Propriedades** .
 
-16. Escolha **OK**.
+16. Selecione **OK**.
 
      O plug-in é adicionado à pasta **Plug-ins de teste de carga**.
 

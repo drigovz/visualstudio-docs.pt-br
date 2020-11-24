@@ -1,5 +1,6 @@
 ---
 title: Criar um editor de corpo HTTP para um teste de desempenho na Web
+description: Saiba como criar um editor de conteúdo personalizado que permite editar o conteúdo do corpo da cadeia de caracteres ou o conteúdo do corpo binário de uma solicitação de serviço Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7539f9055fb64cdbfa77ebe5beee7173b8967afb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810279"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440120"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
@@ -265,7 +266,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilar e implantar os plug-ins
 
-1. No menu **Compilar** , escolha **Compilar \<Windows Form Control Library project name> **.
+1. No menu **Compilar** , escolha **Compilar \<Windows Form Control Library project name>**.
 
 2. Feche todas as instâncias do Visual Studio.
 

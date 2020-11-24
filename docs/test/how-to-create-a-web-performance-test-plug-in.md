@@ -1,5 +1,7 @@
 ---
 title: Criar um plug-in de teste de desempenho Web
+description: Saiba como os plug-ins de teste de desempenho da Web permitem que você reutilize o código fora das principais instruções declarativas no teste de desempenho da Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddb46b3e83c86396dfea6fbcdb3584882591fce
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287929"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442333"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Como criar um plug-in de teste de desempenho Web
 
@@ -47,7 +49,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
 
 5. Escolha a guia **.NET**, role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework**
 
-6. Escolha **OK**.
+6. Selecione **OK**.
 
      A referência a **Microsoft. VisualStudio. QualityTools. WebTestFramework** é adicionada à pasta de **referência** em **Gerenciador de soluções**.
 
@@ -57,7 +59,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
 
 9. Escolha a guia **projetos** e selecione o **projeto de biblioteca de classes**.
 
-10. Escolha **OK**.
+10. Selecione **OK**.
 
 11. No **Editor de Códigos**, escreva o código do plug-in. Primeiro, crie uma nova classe pública que derive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
@@ -94,7 +96,7 @@ Você pode usar plug-ins de teste de desempenho na Web personalizados com os tes
     > [!NOTE]
     > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode alterar as propriedades de plug-in de teste de desempenho na Web mais tarde usando a janela Propriedades.
 
-18. Escolha **OK**.
+18. Selecione **OK**.
 
      O plug-in é adicionado à pasta **Plug-ins de teste na Web**.
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento SafeControl | Microsoft Docs
+description: Obtenha informações sobre o elemento SafeControl, que representa um controle ASPX ou Web Part marcado como seguro para que um usuário acesse na página ASPX de um site do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c9936054c5cc622e6f335d81d1568ebed16518f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36a8b0ed45fbdb8d2dfe8e93a027a47adf407587
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547921"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440617"
 ---
 # <a name="safecontrol-element"></a>Elemento SafeControl
   Representa um controle ASPX ou Web Part designado como seguro para qualquer usuário acessar em qualquer página ASPX no site do SharePoint.
@@ -40,7 +42,7 @@ ms.locfileid: "85547921"
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|**)**|Atributo **xs: String** opcional.<br /><br /> O nome do assembly no qual o controle ASPX ou Web Part é definido. Por padrão, esse atributo usa o parâmetro **$SharePoint. Project. AssemblyFullName $** substituível para o nome do assembly. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).|
+|**Assembly**|Atributo **xs: String** opcional.<br /><br /> O nome do assembly no qual o controle ASPX ou Web Part é definido. Por padrão, esse atributo usa o parâmetro **$SharePoint. Project. AssemblyFullName $** substituível para o nome do assembly. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).|
 |**IsSafe**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica se o controle ASPX ou Web Part é seguro para usuários não confiáveis acessarem.|
 |**IsSafeAgainstScript**|Atributo **xs: Boolean** opcional.<br /><br /> Especifica se os usuários não confiáveis podem exibir ou editar as propriedades do controle ASPX ou Web Part.|
 |**Nome**|Atributo **xs: String** opcional.<br /><br /> O nome desta entrada de controle seguro na coleção.|

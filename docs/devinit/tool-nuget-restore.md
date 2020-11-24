@@ -1,7 +1,7 @@
 ---
 title: nuget-restore
 description: ferramenta devinit NuGet-Restore.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d797e744b651eafd629ec83f20478f0142864e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8e525451ffcd691b0dab1260584946ad3d0a561c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672162"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440364"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
@@ -26,7 +26,7 @@ A `nuget-restore` ferramenta restaura dependências e ferramentas específicas d
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Caminho para o arquivo de projeto/solução a ser restaurado. Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -42,10 +42,10 @@ As opções adicionais são passadas no estado em que se encontram para o comand
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
-O comportamento padrão da `nuget-restore` ferramenta é executar ' NuGet Restore ' no diretório atual.
+O comportamento padrão da `nuget-restore` ferramenta é executar `NuGet restore` no diretório atual.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `nuget-restore` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `nuget-restore` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.jsno que irá restaurar as dependências e as ferramentas de um projeto:
 ```json

@@ -1,7 +1,7 @@
 ---
 title: require-dotnetframeworksdk
 description: a ferramenta devinit requer-dotnetframeworksdk.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a74f45d67c6f2a921d8c5a06bc60abf6f5c76cb9
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ed1d9ee019d96ebf93362db6907646ceb52b8f64
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671790"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441653"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -26,7 +26,7 @@ A `require-dotnetframeworksdk` ferramenta é usada para instalar o [SDK do .NET 
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório  | Valor                                                                                    |
+| Nome                                             | Type   | Obrigatório  | Valor                                                                                    |
 |--------------------------------------------------|--------|-----------|------------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No        | Propriedade de comentários opcional. Não usado.                                                    |
 | [**entrada**](#input)                              | Cadeia de caracteres | No        | A versão do SDK do .NET Framework para instalar. Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -45,7 +45,7 @@ Não usado.
 O comportamento padrão da `require-dotnetframeworksdk` ferramenta é instalar a versão mais recente. Consulte os [instaladores fornecidos](https://dotnet.microsoft.com/download/visual-studio-sdks) para obter a versão mais recente.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `require-dotnetframeworksdk` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `require-dotnetframeworksdk` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-latest-net-framework"></a>.devinit.jsque instalará o .NET Framework mais recente:
 ```json

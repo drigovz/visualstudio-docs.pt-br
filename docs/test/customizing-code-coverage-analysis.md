@@ -1,5 +1,7 @@
 ---
 title: Personalizando análise de cobertura de código
+description: Saiba como usar o atributo ExcludeFromCodeCoverageAttribute para excluir o código de teste dos resultados de cobertura. Você pode incluir assemblies fora de sua solução.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475985"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441822"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -28,7 +30,7 @@ O [arquivo de configurações de execução](../test/configure-unit-tests-by-usi
 
 Para personalizar a cobertura de código, siga estas etapas:
 
-1. Adicione um arquivo de configurações de execução à sua solução. No **Gerenciador de soluções**, no menu de atalho da sua solução, escolha **Adicionar**  >  **novo item**e selecione **arquivo XML**. Salve o arquivo com um nome como *CodeCoverage.runsettings*.
+1. Adicione um arquivo de configurações de execução à sua solução. No **Gerenciador de soluções**, no menu de atalho da sua solução, escolha **Adicionar**  >  **novo item** e selecione **arquivo XML**. Salve o arquivo com um nome como *CodeCoverage.runsettings*.
 
 2. Adicione o conteúdo do arquivo de exemplo no final deste artigo e personalize-o de acordo com suas necessidades, conforme descrito nas seções a seguir.
 
@@ -118,11 +120,11 @@ A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros
 
 Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Todas as correspondências não diferenciam maiúsculas de minúsculas. Alguns exemplos são:
 
-- **.\*** corresponde a uma cadeia de caracteres de qualquer caractere
+- **.\** _ corresponde a uma cadeia de caracteres de qualquer caractere
 
-- **\\.** corresponde a um ponto "."
+- _ *\\.* * corresponde a um ponto "."
 
-- ** \\ ( \\ )** faz a correspondência entre parênteses "()"
+- **\\ ( \\ )** faz a correspondência entre parênteses "()"
 
 - **\\\\** corresponde a um delimitador de caminho de arquivo " \\ "
 

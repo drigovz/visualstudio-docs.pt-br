@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectOutputFile | Microsoft Docs
+description: Obtenha informações de referência sobre o elemento ProjectOutputFile, que representa a saída de um projeto separado na referência de esquema XML do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542383"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442022"
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
   Representa a saída de um projeto separado a ser incluído com o item de projeto quando ele é implantado no SharePoint.
@@ -31,7 +33,7 @@ ms.locfileid: "85542383"
     Type = "Type of deployment for the project output" />
 ```
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Type
  **ProjectOutputFileType**
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos

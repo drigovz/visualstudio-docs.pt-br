@@ -1,5 +1,7 @@
 ---
 title: Editando Testes de IU Codificados
+description: Aprenda a usar o editor de teste de interface do usuário codificado para localizar, exibir e editar seus métodos de teste e ações de interface do usuário. Use o mapa de controle de interface do usuário para exibir e editar os controles correspondentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288722"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441437"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
@@ -24,7 +26,7 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente de teste de IU codificado

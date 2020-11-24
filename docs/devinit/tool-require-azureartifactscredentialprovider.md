@@ -1,7 +1,7 @@
 ---
 title: require-azureartifactscredentialprovider
 description: a ferramenta devinit requer-azureartifactscredentialprovider.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0aa0d250289e6bf79467c0a00ddddef5264ed6d2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ad39bc070841dae5202abca8ca4624927a100f23
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671895"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440384"
 ---
 # <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
@@ -26,7 +26,7 @@ A `require-azureartifactscredentialprovider` ferramenta instala o provedor de cr
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -42,10 +42,10 @@ As opções adicionais são passadas como estão para o comando do provedor de c
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
-O comportamento padrão da `require-azureartifactscredentialprovider` ferramenta é instalar o mais recente de Azure Artifacts provedor de credenciais.
+O comportamento padrão da `require-azureartifactscredentialprovider` ferramenta é instalar a versão mais recente do provedor de credenciais Azure Artifacts.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `require-azureartifactscredentialprovider` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `require-azureartifactscredentialprovider` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-azure-artifacts-credential-provider"></a>.devinit.js, que instalará Azure Artifacts provedor de credenciais:
 ```json

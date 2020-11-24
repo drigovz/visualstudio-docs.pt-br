@@ -1,6 +1,8 @@
 ---
 title: Salvando dados em extensões do sistema de projeto do SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Saiba como salvar os dados de cadeia de caracteres que persistem após o fechamento de um projeto do SharePoint que contém uma extensão.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30142b9aaec3df7ce0d43845e369eb538533de62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1e3c05b9ad570febcfc28fec367a8d180dd2b222
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583860"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440643"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Salvar dados em extensões do sistema de projeto do SharePoint
   Ao estender o sistema de projeto do SharePoint, você pode salvar dados de cadeia de caracteres que persistem depois que um projeto do SharePoint é fechado. Os dados normalmente são associados a um item de projeto específico ou ao próprio projeto.

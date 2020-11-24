@@ -1,5 +1,7 @@
 ---
 title: Analisando erros e resultados do teste de carga
+description: Saiba como exibir painéis que fornecem diferentes maneiras de analisar os resultados de uma execução de teste de carga, como um grafo ao longo do tempo ou tabelas detalhadas.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565169"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442502"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -53,7 +55,7 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 |Nome da tabela|Descrição|
 |-|-|
 |Errors|Exibe uma lista de erros ocorridos durante a execução do teste de carga. Para obter mais informações, consulte [a tabela de erros](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) neste tópico e [analisar os resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Páginas|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pages (Páginas)|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requests|Exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. Para obter mais informações, consulte [a tabela de solicitações](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) neste tópico.|
 |Rastreamento do SQL|Exibe os resultados do rastreamento do SQL. Essa tabela só estará disponível depois que um teste de carga for concluído, e apenas se o rastreamento do SQL tiver sido usado durante o teste. Para obter mais informações, consulte [a tabela de dados de rastreamento do SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) neste tópico.|
 |Testes|Exibe detalhes de testes individuais durante um teste de carga. Para obter mais informações, consulte [a tabela de testes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) neste tópico.|
@@ -80,7 +82,7 @@ A seguinte tabela lista as colunas na tabela **Solicitações**:
 |**Total**|O número total dessa solicitação de teste de desempenho na Web emitida durante a execução do teste de carga. O total inclui solicitações aprovadas e com falha, mas não inclui solicitações armazenadas em cache, porque não são emitidas para o servidor Web.|Sim|
 |**Aprovado**|O número de vezes em que a solicitação foi emitida e aprovada.|Não|
 |**Com falha**|O número de vezes em que a solicitação foi emitida e falhou. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais na caixa de diálogo **Erros de Teste de Carga**. Para obter mais informações, consulte [analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sim|
-|**Em cache**|O número total de vezes em que a solicitação já foi armazenada em cache.|Não|
+|**Armazenado em cache**|O número total de vezes em que a solicitação já foi armazenada em cache.|Não|
 |**Solicitações/s**|A taxa por segundo da solicitação durante a execução do teste de carga.|Não|
 |**Aprovado/s**|A taxa por segundo dessa solicitação durante a execução do teste de carga, para as instâncias dessa solicitação que passaram.|Não|
 |**Com falha/s**|A taxa por segundo dessa solicitação durante a execução do teste de carga, para as instâncias dessa solicitação que falharam.|Não|
@@ -146,7 +148,7 @@ A tabela de erros contém as seguintes colunas:
 
 |Coluna|Descrição|Visível por padrão|
 |-|-|-|
-|Tipo|O tipo do erro. Por exemplo, HttpError.|Sim|
+|Type|O tipo do erro. Por exemplo, HttpError.|Sim|
 |SubType|O subtipo do erro. Por exemplo, LoadTestException.|Sim|
 |Contagem|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
 |Última mensagem|Uma mensagem que descreve o erro. Por exemplo, 404 - NotFound.|Sim|
@@ -170,7 +172,7 @@ A tabela **Erros de Teste de Carga** contém as seguintes colunas:
 |**Cenário**|O nome do cenário no qual o erro ocorreu.|
 |**Solicitação**|A URL da solicitação na qual o erro ocorreu.|
 |**Tipo**|O tipo do erro. Por exemplo, HttpError.|
-|**Subtipo**|O subtipo do erro. Por exemplo, LoadTestException.|
+|**SubType**|O subtipo do erro. Por exemplo, LoadTestException.|
 |**Text**|O texto da mensagem de erro. Por exemplo, 404 - NotFound.|
 |**Pilha**|As entradas nessa coluna estão vazias ou a palavra **Pilha** está formatada como um hiperlink. É possível escolher o hiperlink para exibir um rastreamento de pilha do erro.|
 |**Detalhes**|As entradas nessa coluna estão vazias ou a palavra **TestLog** está formatada como um hiperlink. Esse link pode ajudar a isolar erros no teste de carga. Por exemplo, a escolha do link **TestLog** em um erro de solicitação de teste de desempenho na Web abrirá os resultados para o teste de desempenho da Web no visualizador de resultados de teste de desempenho da Web e realçará o erro de solicitação.|

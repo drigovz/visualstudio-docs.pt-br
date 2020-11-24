@@ -1,5 +1,7 @@
 ---
 title: Referência de esquema de item de projeto do SharePoint | Microsoft Docs
+description: Consulte uma visão geral da referência de esquema XML do item de projeto do SharePoint (ProjectItemModelSchema. xsd), que é usada para validar o conteúdo de arquivos. transdata.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007713"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442541"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Referência de esquema de item de projeto do SharePoint
   O Visual Studio usa o esquema de item de projeto do SharePoint para validar o conteúdo de arquivos *. transdata* . Um arquivo *. COMDATA* especifica o conteúdo e o comportamento de um item de projeto do SharePoint. Para obter mais informações sobre o conteúdo de itens de projeto do SharePoint, consulte [criar modelos de item e modelos de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

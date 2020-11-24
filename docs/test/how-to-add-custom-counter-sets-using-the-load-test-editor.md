@@ -1,5 +1,7 @@
 ---
 title: Adicionar conjuntos de contadores personalizados para teste de carga
+description: Quando você cria um teste de carga com o Novo assistente de teste de carga, um conjunto inicial de contadores é adicionado. Saiba como adicionar conjuntos de contadores personalizados usando Editor de Teste de Carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2b78cb68f1e7a7e1f47c6cc3e771353d7e46ca9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c65226a8694cbccf7c5b94f7688d1828a2526cf6
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288423"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440227"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Como adicionar conjuntos de contadores personalizados usando o Editor de Teste de Carga
 

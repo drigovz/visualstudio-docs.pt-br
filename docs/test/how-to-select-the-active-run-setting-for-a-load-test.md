@@ -1,5 +1,7 @@
 ---
 title: Selecionar uma configuração de execução para um teste de carga
+description: Um teste de carga pode incluir configurações de execução, que são propriedades que influenciam a forma como um teste de carga é executado. Saiba como selecionar a configuração de execução ativa.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8400c5afcb81215078617cca00cef9aa8ce018d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287539"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439856"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
 

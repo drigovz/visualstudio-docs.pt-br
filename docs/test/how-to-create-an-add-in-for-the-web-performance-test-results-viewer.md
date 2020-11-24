@@ -1,5 +1,7 @@
 ---
 title: Criar um suplemento para o Visualizador de Resultados do Teste de Desempenho Web
+description: Saiba como criar um suplemento do Visual Studio para estender a interface do usuário do Visualizador de Resultados de Teste de desempenho da Web e implementar as classes necessárias para estender a interface do usuário.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287825"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441072"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: criar um suplemento para o Visualizador de Resultados de Teste de desempenho da Web
 
@@ -49,7 +51,7 @@ Você usará o **Gerenciador de Suplementos** ao final deste artigo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para criar um suplemento usando o Assistente de Suplemento
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar**e, em seguida, selecione **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **novo projeto**.
 
 2. Criar um projeto de **suplemento do Visual Studio**.
 
@@ -109,7 +111,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Para criar um controle a ser usado no Visualizador de Resultados de Teste de Desempenho na Web
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar**e, em seguida, selecione **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, escolha **Adicionar** e, em seguida, selecione **novo projeto**.
 
 2. Crie um projeto da **Biblioteca de Controle do Windows Forms**.
 
@@ -164,7 +166,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 3. Role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e **System.Windows.Forms**.
 
-4. Escolha **OK**.
+4. Selecione **OK**.
 
 5. Clique com o botão direito do mouse no nó **Referências** novamente e selecione **Adicionar Referência**.
 
@@ -172,7 +174,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 7. Escolha a lista suspensa para **examinar** e navegue até *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* e selecione o arquivo *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll* .
 
-8. Escolha **OK**.
+8. Selecione **OK**.
 
 9. Clique com o botão direito do mouse no nó do projeto WebPerfTestResultsViewerAddin e selecione **Adicionar Referência**.
 
@@ -266,7 +268,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 5. Role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6. Escolha **OK**.
+6. Selecione **OK**.
 
 7. No arquivo *UserControl1.cs*, adicione as seguintes instruções Using:
 
@@ -312,7 +314,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 3. Marque a caixa de seleção do suplemento WebPerfTestResultsViewerAddin na coluna **Suplementos Disponíveis** e desmarque as caixas de seleção sob as colunas **Inicialização** e **Linha de Comando**.
 
-4. Escolha **OK**.
+4. Selecione **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Executar o teste de desempenho Web usando o Visualizador de Resultados de Teste na Web
 
@@ -324,7 +326,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 Para melhorar a segurança impedindo que suplementos mal-intencionados sejam ativados automaticamente, o Visual Studio fornece configurações em uma página de **Opções de Ferramentas** chamada **Segurança de Macros/Suplemento**.
 
-Além disso, essa página de opções permite que você especifique as pastas nas quais o Visual Studio procura *. * Arquivos de registro do suplemento. Isso melhora a segurança, permitindo que você limite os locais em que os arquivos de registro *.AddIn* podem ser lidos. Isso ajuda a impedir que arquivos *.AddIn* mal-intencionados sejam usados acidentalmente.
+Além disso, essa página de opções permite que você especifique as pastas nas quais o Visual Studio procura *.* Arquivos de registro do suplemento. Isso melhora a segurança, permitindo que você limite os locais em que os arquivos de registro *.AddIn* podem ser lidos. Isso ajuda a impedir que arquivos *.AddIn* mal-intencionados sejam usados acidentalmente.
 
 **Configurações de Segurança do Suplemento**
 

@@ -1,7 +1,7 @@
 ---
 title: enable-iis
 description: ferramenta devinit Enable-IIS.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9b6ba2e22484850dd6079cfc7e4ab9cd68371dcb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b4b7c3f9681dd636ef88a5cd9f59c84c4ecac89c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671922"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440357"
 ---
 # <a name="enable-iis"></a>enable-iis
 
@@ -26,7 +26,7 @@ A `enable-iis` ferramenta é usada para habilitar recursos do IIS e instalar o [
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
+| Nome                                             | Type   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado.                                                                           |
@@ -42,10 +42,10 @@ Não usado.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
-O comportamento padrão da `enable-iis` ferramenta é habilitar os recursos do IIS: IIS-WebServer, IIS-WebServerRole, IIS-WebSockets e IIS-webauthentication e, em seguida, instalar a versão mais recente do pacote de hospedagem do ASP.NET que inclui o módulo ASP.NET Core. 
+O comportamento padrão da `enable-iis` ferramenta é habilitar os recursos do IIS: IIS-WebServer, IIS-WebServerRole, IIS-WebSockets e IIS-webauthentication e, em seguida, instalar a versão mais recente do pacote de hospedagem do ASP.NET que inclui o módulo ASP.NET Core.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `enable-iis` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `enable-iis` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-enable-iis-development"></a>.devinit.jsno que permitirá o desenvolvimento do IIS:
 ```json

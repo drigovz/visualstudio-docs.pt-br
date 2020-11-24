@@ -1,5 +1,7 @@
 ---
 title: Adicionar contadores a conjuntos de contadores para teste de carga
+description: Quando você cria um teste de carga com o Novo assistente de teste de carga, um conjunto inicial de contadores é adicionado. Saiba como adicionar contadores usando Editor de Teste de Carga.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aabd5bc7293a73ec0fa1a304262c24776a9e38f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288371"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442567"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -57,7 +59,7 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
 
      Selecione o botão de opção **Todos os contadores** para selecionar todos os contadores disponíveis.
 
-7. Escolha **OK**.
+7. Selecione **OK**.
 
     > [!NOTE]
     > Também é possível adicionar contadores como um conjunto de contadores escolhendo um contador ou uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.

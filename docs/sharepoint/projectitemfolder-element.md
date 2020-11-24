@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItemFolder | Microsoft Docs
+description: Obtenha informações de referência sobre o elemento ProjectItemFolder, que representa uma pasta mapeada na referência de esquema XML do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99a27f8e255aa17e8b9fa604b504109976c5d36a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85539809"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440786"
 ---
 # <a name="projectitemfolder-element"></a>Elemento ProjectItemFolder
   Representa uma pasta mapeada.
@@ -29,7 +31,7 @@ ms.locfileid: "85539809"
     Type = "Type of deployment for the mapped folder" />
 ```
 
-## <a name="type"></a>Tipo
+## <a name="type"></a>Type
  **ProjectItemFolderType**
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos

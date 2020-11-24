@@ -1,5 +1,7 @@
 ---
 title: Configurar um agente de teste
+description: Saiba como executar testes automatizados que interagem com a área de trabalho configurando o agente para ser executado como um processo em vez de um serviço.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287526"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441007"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
@@ -78,7 +80,7 @@ Use o procedimento a seguir para configurar todos os agentes que são atribuído
 7. Para fechar a caixa de diálogo **Resumo da configuração**, escolha **Fechar**. Em seguida, escolha **Fechar** novamente para fechar a **Ferramenta de Configuração do Test Agent**.
 
    > [!NOTE]
-   > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo, se ele não estiver em execução, escolha **Iniciar**o  >  **Visual Studio**  >  **Microsoft Visual Studio agente de teste**.
+   > Há um ícone da área de notificação que é executado no computador para um agente de teste que está sendo executado como um processo. Ele mostra o status do agente de teste. Você poderá iniciar, parar ou reiniciar o agente se ele estiver sendo executado como um processo usando essa ferramenta. Para iniciar o agente de teste como um processo, se ele não estiver em execução, escolha **Iniciar** o  >  **Visual Studio**  >  **Microsoft Visual Studio agente de teste**.
 
    ::: moniker range="vs-2017"
    Se o controlador de teste para o agente de teste estiver registrado no Team Foundation Server, o status de um agente de teste que estiver sendo executado como um processo interativo será exibido no modo de exibição **Controladores** na **Central do Laboratório** do Microsoft Test Manager. Ele é listado com um símbolo de asterisco precedente para denotar que está sendo executado como um processo interativo. Para reiniciar o agente de teste, você deve usar a ferramenta que é executada no computador para o agente de teste e não o modo de exibição **Controladores**.

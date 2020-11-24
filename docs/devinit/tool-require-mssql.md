@@ -1,7 +1,7 @@
 ---
 title: require-mssql
 description: ferramenta devinit require-MSSQL.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672128"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442094"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -26,7 +26,7 @@ A `require-mssql` ferramenta é usada para instalar o [Microsoft SQL Server 2019
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                   |
+| Nome                                             | Type   | Obrigatório | Valor                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                   |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Consulte a [entrada](#input) abaixo para obter detalhes.                                                  |
@@ -49,11 +49,11 @@ Não usado.
 
 O comportamento padrão da `require-mssql` ferramenta é instalar o SQL Server.
 
-### <a name="builtin-options"></a>Opções internas
+### <a name="built-in-options"></a>Opções internas
 
 A `require-mssql` ferramenta define um número de argumentos de linha de comando do instalador para garantir que o instalador possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na [documentação de instalação do SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
-| Name                                                               | Descrição |
+| Nome                                                               | Descrição |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = instalar                                                    |             |
@@ -75,7 +75,7 @@ A `require-mssql` ferramenta define um número de argumentos de linha de comando
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `require-msssql` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `require-msssql` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-mssql"></a>.devinit.js, que instalará o MSSQL:
 ```json

@@ -1,7 +1,7 @@
 ---
 title: require-dotnetcoresdk
 description: a ferramenta devinit requer-dotnetcoresdk.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b75f7961008c8b575cd21b42fdb5246c3b65078d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fe860b697bb5a85ec2bb3c8221118254552b5301
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672135"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441688"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -26,7 +26,7 @@ A `require-dotnetcoresdk` ferramenta é usada para instalar o [SDK do .NET Core]
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                               |
+| Nome                                             | Type   | Obrigatório | Valor                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                               |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | A versão do SDK do .NET Core a ser instalada. Consulte a [entrada](#input) abaixo para obter detalhes. |
@@ -48,7 +48,7 @@ Opções de configuração adicionais podem ser passadas como um valor de `addit
 O comportamento padrão da `require-dotnetcoresdk` ferramenta é instalar a versão do SDK do .NET Core especificado em um `global.json` arquivo [(documentação)](/dotnet/core/tools/global-json?tabs=netcore3x) no diretório de trabalho atual. Se nenhum `global.json` arquivo for encontrado, `require-dotnetcoresdk` o instalará a versão atual mais recente do SDK do .NET Core e o tempo de execução compartilhado.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `require-dotnetcoresdk` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `require-dotnetcoresdk` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-latest-version-of-net-core"></a>.devinit.js, que instalará a versão mais recente do .NET Core:
 ```json

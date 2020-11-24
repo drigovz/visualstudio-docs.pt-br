@@ -1,7 +1,7 @@
 ---
 title: choco-install
 description: devinit ferramenta choco-instale para instalar pacotes de Chocolatey.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671936"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440506"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,11 +26,11 @@ A `choco-install` ferramenta pode ser usada para instalar e atualizar pacotes de
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta não fará nada.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                                                          |
-| [**entrada**](#input)                              | Cadeia de caracteres | No       | O pacote a instalar. Consulte a [entrada](#input) abaixo para obter detalhes.                                                 |
-| [**additionalOptions**](#additional-options)     | Cadeia de caracteres | No       | Opções adicionais a serem passadas para a ferramenta. Consulte [as opções adicionais](#additional-options) abaixo para obter detalhes.       |
+| Nome                                             | Type   | Obrigatório  | Valor                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **feitos**                                     | Cadeia de caracteres | No        | Propriedade de comentários opcional. Não usado.                                                                          |
+| [**entrada**](#input)                              | string | Sim       | O pacote a instalar. Consulte a [entrada](#input) abaixo para obter detalhes.                                                 |
+| [**additionalOptions**](#additional-options)     | Cadeia de caracteres | No        | Opções adicionais a serem passadas para a ferramenta. Consulte [as opções adicionais](#additional-options) abaixo para obter detalhes.       |
 
 ### <a name="input"></a>Entrada
 
@@ -44,14 +44,18 @@ Opções de configuração adicionais podem ser passadas como um valor de `addit
 
 A `choco-install` ferramenta define um número de `choco` argumentos de linha de comando para garantir que o `choco` possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na [documentação do Chocolatey](https://chocolatey.org/docs/).
 
-| Name                  | Descrição                                                                                        |
+| Nome                  | Descrição                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--Sim**             | Confirmar todos os prompts – escolha a resposta afirmativo em vez de solicitar. Requer `--accept-license.` |
 | **--sem progresso**     | Não mostrar o progresso-as porcentagens de progresso não serão mostradas.                                         |
 | **--Skip-PowerShell** | Ignorar PowerShell-chocolateyInstall.ps1 não será executado.                                              |
 
+### <a name="default-behavior"></a>Comportamento padrão
+
+O comportamento padrão da `choco-install` ferramenta é erro, pois a `input` propriedade é necessária.
+
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `choco-install` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `choco-install` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.jsno que instalarão os pacotes listados em packages.config:
 ```json

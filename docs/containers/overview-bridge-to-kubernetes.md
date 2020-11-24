@@ -1,7 +1,7 @@
 ---
 title: Como funciona a Ponte para Kubernetes
 ms.technology: vs-azure
-ms.date: 06/02/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 description: Descreve os processos para usar o Bridge para kubernetes para conectar seu computador de desenvolvimento ao cluster kubernetes
 keywords: Ponte para kubernetes, Docker, kubernetes, Azure, contêineres
@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: afeb612e1d092ebc1f5c33394a62dd9cef6b6a1c
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116097"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440604"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Como funciona a Ponte para Kubernetes
 
@@ -105,6 +105,37 @@ Quando você se desconecta do cluster, por padrão, a ponte para kubernetes remo
 ## <a name="diagnostics-and-logging"></a>Diagnóstico e registro em log
 
 Ao usar o Bridge para kubernetes para se conectar ao cluster, os logs de diagnóstico do cluster são registrados no diretório *Temp* do seu computador de desenvolvimento na pasta *ponte para kubernetes* .
+
+## <a name="rbac-authorization"></a>Autorização de RBAC
+
+O kubernetes fornece o RBAC (controle de acesso baseado em função) para gerenciar permissões para usuários e grupos. Para obter informações, consulte a [documentação do kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) você pode definir as permissões para um cluster habilitado para RBAC criando um arquivo YAML e usando `kubectl` para aplicá-lo ao cluster. 
+
+Para definir permissões no cluster, crie ou modifique um arquivo YAML, como *Permissions. yml* como o seguinte, usando seu próprio namespace para `<namespace>` e os assuntos (usuários e grupos) que precisam de acesso.
+
+```yml
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bridgetokubernetes-<namespace>
+  namespace: development
+subjects:
+  - kind: User
+    name: jane.w6wn8.k8s.ginger.eu-central-1.aws.gigantic.io
+    apiGroup: rbac.authorization.k8s.io
+  - kind: Group
+    name: dev-admin
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: admin
+  apiGroup: rbac.authorization.k8s.io
+```
+
+Aplique as permissões usando o comando:
+
+```cmd
+kubectl -n <namespace> apply -f <yaml file name>
+```
 
 ## <a name="limitations"></a>Limitações
 

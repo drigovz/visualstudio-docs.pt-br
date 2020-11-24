@@ -1,5 +1,7 @@
 ---
 title: Tutorial de teste de IU codificado controlado por dados
+description: Saiba como usar testes de IU codificados controlados por dados para testar condições diferentes executando seus testes várias vezes com valores de parâmetro diferentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595352"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442671"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -22,7 +24,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente de teste de IU codificado
@@ -104,7 +106,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 2. Preencha o arquivo *. csv* com os seguintes dados:
 
-    |Núm1|Núm2|SUM|
+    |Núm1|Núm2|Soma|
     |-|-|-|
     |3|4|7|
     |5|6|11|

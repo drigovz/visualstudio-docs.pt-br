@@ -1,5 +1,7 @@
 ---
 title: Analisar a Atividade de Usuário Virtual em testes de carga
+description: Saiba como usar o gráfico de atividade de usuário virtual para ver se cada usuário virtual estava em execução durante o teste para ver os padrões de atividade do usuário e outras informações.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288394"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442385"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
@@ -72,7 +74,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Para usar as opções de filtragem no Gráfico de Atividade de Usuário Virtual
 
-1. Na **legenda de detalhes**, use a lista suspensa para selecionar o **teste**, a **página**ou a **transação**.
+1. Na **legenda de detalhes**, use a lista suspensa para selecionar o **teste**, a **página** ou a **transação**.
 
     **Painel de legenda de detalhes**
 

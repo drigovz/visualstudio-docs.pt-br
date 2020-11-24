@@ -1,7 +1,7 @@
 ---
 title: wsl-install
 description: devinit ferramenta WSL-install.
-ms.date: 11/10/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4cbb30842ebbed148b2aea80f941a738d18ae262
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd48cbe0eac8438bb761029bbca4cd27e13f2319
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671969"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442087"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -29,7 +29,7 @@ A `wsl-install` ferramenta é usada para instalar o Linux distribuições para o
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                             |
+| Nome                                             | Type   | Obrigatório | Valor                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                             |
 | [**entrada**](#input)                              | string | Sim      | O distribuição a ser instalado. Consulte a [entrada](#input) abaixo para obter detalhes.     |
@@ -56,7 +56,7 @@ O URI para o pacote de distribuição de aplicativo AppX ( `.appx` ) que contém
 
 Há suporte para várias opções adicionais:
 
-| Nome                      | Tipo      | Obrigatório | Valor                                                                                                                                                                                    |
+| Nome                      | Type      | Obrigatório | Valor                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | --WSL-versão             | Cadeia de caracteres    | No       | Versão do WSL a ser usada. O valor padrão é 2.                                                                                                                                  |
 | --pós-criação-comando     | Cadeia de caracteres    | No       | O comando a ser executado dentro do distribuição do Linux quando a instalação for concluída. O comando deve ser formatado como uma única palavra ou encapsulado entre aspas. O padrão é nenhum comando.  |
@@ -66,7 +66,7 @@ Há suporte para várias opções adicionais:
 O comportamento padrão da `wsl-install` ferramenta é erro como a `input` propriedade, o distribuição a ser instalado, é necessário.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `wsl-install` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `wsl-install` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.jsem que o Ubuntu 20, 4 será instalado:
 ```json

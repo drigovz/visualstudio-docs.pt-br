@@ -1,5 +1,7 @@
 ---
 title: Criar um testes de unidade controlados por dados
+description: Saiba como usar a estrutura de teste de unidade da Microsoft para código gerenciado para configurar um método de teste de unidade para recuperar valores de uma fonte de dados.
+ms.custom: SEO-VS-2020
 ms.date: 05/08/2019
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 936c6b2ee9e05d059c09c2aa074829b35b6ca5fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e1fb08d77992e6fb592e286553196928b13ad4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287981"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441190"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como: criar um teste de unidade controlado por dados
 
@@ -67,7 +69,7 @@ public int AddIntegers(int first, int second)
 
 Para testar o método `AddIntegers`, crie uma fonte de dados que especifica um intervalo de valores para os parâmetros e a soma que você espera que seja retornada. Neste exemplo, criaremos um banco de dados do SQL Compact chamado `MathsData` e uma tabela chamada `AddIntegersData` que contém os seguintes nomes de coluna e valores
 
-|FirstNumber|SecondNumber|SUM|
+|FirstNumber|SecondNumber|Soma|
 |-|------------------|-|
 |0|1|1|
 |1|1|2|
@@ -160,7 +162,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>Executar o teste e exibir os resultados
 
-Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste é exibido em **Gerenciador de Testes**, no grupo **Testes Não Executados**. À medida que você executa, escreve e executa novamente os testes, o **Gerenciador de testes** exibe os resultados em grupos de **testes com falha**, **aprovados**nos testes e **não executa testes**. Você pode escolher **executar tudo** para executar todos os seus testes ou escolher **executar** para escolher um subconjunto de testes a serem executados.
+Ao terminar de escrever um método de teste, compile o projeto de teste. O método de teste é exibido em **Gerenciador de Testes**, no grupo **Testes Não Executados**. À medida que você executa, escreve e executa novamente os testes, o **Gerenciador de testes** exibe os resultados em grupos de **testes com falha**, **aprovados** nos testes e **não executa testes**. Você pode escolher **executar tudo** para executar todos os seus testes ou escolher **executar** para escolher um subconjunto de testes a serem executados.
 
 A barra de resultados de teste na parte superior do **Gerenciador de Testes** é animada enquanto o teste é executado. Ao final da execução de teste, a barra ficará verde se todos os testes passaram ou vermelha se algum dos testes falhou. Um resumo da execução de teste é exibido no painel detalhes na parte inferior da janela **Gerenciador de testes** . Selecione um teste para exibir seus detalhes no painel inferior.
 

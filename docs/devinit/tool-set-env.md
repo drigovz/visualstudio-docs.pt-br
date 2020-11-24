@@ -1,7 +1,7 @@
 ---
 title: set-env
 description: ferramenta devinit require-Set-env.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671735"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442280"
 ---
 # <a name="set-env"></a>set-env
 
@@ -26,7 +26,7 @@ Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as
 
 ## <a name="usage"></a>Uso
 
-| Nome                                         | Tipo   | Obrigatório | Valor                                                                       |
+| Nome                                         | Type   | Obrigatório | Valor                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                       |
 | [**entrada**](#input)                          | Cadeia de caracteres | No       | A entrada para a ferramenta. Consulte a [entrada](#input) abaixo para obter detalhes.               |
@@ -38,7 +38,7 @@ A `set-env` ferramenta usa uma única cadeia de caracteres como uma entrada na `
 
 | Ação       | Entrada            | Descrição                                                                                                                                                              | Exemplo             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| **list all** | vazio ou omitido | Listar todas as variáveis de ambiente atuais.                                                                                                                              | `"input":""`        |
+| **list all** | vazio ou omitido | Listar todas as variáveis de ambiente atuais.                                                                                                                           | `"input":""`        |
 | **listar um** | string           | Liste o valor de uma variável de ambiente específica por nome.                                                                                                               | `"input":"foo"`     |
 | **add**      | string           | Define o valor de uma variável de ambiente como par chave-valor. Adiciona uma nova variável de ambiente, se ainda não estiver presente, ou definir o valor de uma variável de ambiente existente | `"input":"foo=bar"` |
 | **delete**   | string           | Exclui uma variável de ambiente existente passando uma cadeia de caracteres de valor vazia.                                                                                            | `"input":"foo="`    |
@@ -49,12 +49,16 @@ Uma `input` cadeia de caracteres pode conter uma expansão de variável de ambie
 
 Não usado.
 
+### <a name="default-behavior"></a>Comportamento padrão
+
+O comportamento padrão da `set-env` ferramenta é listar todas as variáveis de ambiente atuais.
+
 ## <a name="usage-in-a-codespace"></a>Uso em um codespace
 
 Se você estiver usando um codespace, poderá definir as variáveis de ambiente usadas no codespace por meio da personalização da `remoteEnv` propriedade no [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) arquivo.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Abaixo estão exemplos de como executar `set-env` o usando um `.devinit.json` . 
+Abaixo estão exemplos de como executar `set-env` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.jsno que definirá uma variável de ambiente, `foo` , para value, `bar` :
 ```json

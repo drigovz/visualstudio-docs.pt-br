@@ -1,5 +1,7 @@
 ---
 title: 'Falsificações da Microsoft: gerar & código de compilação; convenções de nomenclatura'
+description: Saiba mais sobre as opções e problemas na geração e compilação de código de falsificações, incluindo as convenções de nomenclatura para falsificações geradas tipos, membros e parâmetros.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325935"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441627"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 
@@ -32,7 +34,7 @@ Este artigo discute problemas e opções na compilação e geração de código 
 
 A geração de tipos de stub é configurada em um arquivo XML que tem a extensão de arquivo *.fakes*. A estrutura do Fakes integra-se no processo de build por meio de tarefas personalizadas do MSBuild e detecta esses arquivos no momento do build. O gerador de código do Fakes compila os tipos de stub em um assembly e adiciona a referência ao projeto.
 
-O exemplo a seguir ilustra os tipos de stub definidos em *FileSystem.dll* :
+O exemplo a seguir ilustra os tipos de stub definidos em *FileSystem.dll*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +86,7 @@ As cadeias de caracteres de filtro usam uma gramática simples para definir como
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Classes concretas de stub e métodos virtuais
 
-Por padrão, os tipos de stub são gerados para todas as classes não lacradas. É possível restringir os tipos de stub para classes abstratas por meio de arquivo de configuração *.fakes* :
+Por padrão, os tipos de stub são gerados para todas as classes não lacradas. É possível restringir os tipos de stub para classes abstratas por meio de arquivo de configuração *.fakes*:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -134,7 +136,7 @@ A estrutura do Fakes usa a mesma chave para assinar assemblies gerados, então v
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Você pode especificar uma chave pública diferente para o assembly de falsificações, como uma chave que você criou para o assembly corrigido, especificando o caminho completo para o arquivo *. SNK* que contém a chave alternativa como o `KeyFile` valor do atributo no `Fakes` \\ `Compilation` elemento do arquivo *. falsificações* . Por exemplo:
+Você pode especificar uma chave pública diferente para o assembly de falsificações, como uma chave que você criou para o assembly corrigido, especificando o caminho completo para o arquivo *. SNK* que contém a chave alternativa como o `KeyFile` valor do atributo no `Fakes` \\ `Compilation` elemento do arquivo *. falsificações* . Por exemplo: 
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -183,7 +185,7 @@ Para evitar esse problema, o Fakes deve criar automaticamente nomes de assembly 
 
 Dado um assembly MyAssembly e uma versão 1.2.3.4, o nome de assembly do Fakes é MyAssembly.1.2.3.4.Fakes.
 
-Você pode alterar ou remover essa versão editando o atributo Version do elemento de Assembly no *.fakes* :
+Você pode alterar ou remover essa versão editando o atributo Version do elemento de Assembly no *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -237,14 +239,14 @@ attribute of the Assembly element in the .fakes:
 |-|-|-|
 |Um **Construtor**|`.ctor`|`Constructor`|
 |Um **construtor** estático|`.cctor`|`StaticConstructor`|
-|Um **acessador** com nome de método composto de duas partes separadas por "_" (como getters de propriedade)|*kind_name* (caso mais frequente, mas não imposto por ECMA)|*NameKind* , em que ambas as partes foram colocadas em maiusculas e trocadas|
+|Um **acessador** com nome de método composto de duas partes separadas por "_" (como getters de propriedade)|*kind_name* (caso mais frequente, mas não imposto por ECMA)|*NameKind*, em que ambas as partes foram colocadas em maiusculas e trocadas|
 ||Getter de propriedade `Prop`|`PropGet`|
 ||Setter de propriedade `Prop`|`PropSet`|
 ||Adicionador de eventos|`Add`|
 ||Removedor de eventos|`Remove`|
 |Um **operador** composto de duas partes|`op_name`|`NameOp`|
 |Por exemplo: operador +|`op_Add`|`AddOp`|
-|Para um **operador de conversão** , o tipo retornado é anexado.|`T op_Implicit`|`ImplicitOpT`|
+|Para um **operador de conversão**, o tipo retornado é anexado.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - **Getters e setters de indexadores** são tratados de modo similar à propriedade. O nome padrão de um indexador é `Item`.

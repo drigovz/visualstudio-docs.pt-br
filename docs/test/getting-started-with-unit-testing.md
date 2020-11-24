@@ -1,5 +1,7 @@
 ---
 title: Introdução ao teste de unidade
+description: Use o Visual Studio para definir e executar testes de unidade para manter a integridade de código, assegurar a cobertura de código e localizar erros e falhas antes de seus clientes.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c167e98f9419842876aed713e008b8746064669a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153045"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441775"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 

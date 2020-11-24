@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Seletor de URL (desenvolvimento do SharePoint)
+description: Saiba mais sobre a caixa de diálogo Seletor de URL, que permite que um usuário escolha arquivos localizados em seu projeto ou no servidor local que está executando o SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261937"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442528"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Caixa de diálogo Seletor de URL (desenvolvimento do SharePoint no Visual Studio)
   Na caixa de diálogo Seletor de URL, você pode escolher arquivos como arquivos de página mestra ou arquivos de imagem que estão localizados em seu projeto ou no servidor local que está executando o SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261937"
 
   Expanda o nó do **servidor** para escolher os arquivos que estão localizados no servidor local que está executando o SharePoint. Para aparecer como selecionável na caixa de diálogo, esses arquivos devem atender aos seguintes critérios:
 
-- O arquivo deve estar localizado em uma das seguintes pastas mapeadas: **imagens**, **layouts**ou **ControlTemplates**.
+- O arquivo deve estar localizado em uma das seguintes pastas mapeadas: **imagens**, **layouts** ou **ControlTemplates**.
 
 - O arquivo não pode estar localizado no banco de dados de conteúdo do SharePoint.
 

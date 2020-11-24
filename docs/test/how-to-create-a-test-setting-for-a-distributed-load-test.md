@@ -1,5 +1,7 @@
 ---
 title: Criar uma configuração de teste para um teste de carga distribuída
+description: Saiba como definir configurações de teste para seus testes de carga para que você possa distribuir esses testes em vários computadores usando agentes de teste e controladores de teste.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036087"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439960"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Como: criar um arquivo de configurações de teste para um teste de carga distribuído
 
@@ -33,7 +35,7 @@ As configurações de teste do Visual Studio são armazenadas em um arquivo. As 
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
-Quando você adiciona um projeto de teste de carga e desempenho da Web a uma solução, um arquivo *Default. testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo **.testsettings** para especificar adaptadores de dados de diagnóstico e controladores de teste.
+Quando você adiciona um projeto de teste de carga e desempenho da Web a uma solução, um arquivo *Default. testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo .testsettings para especificar adaptadores de dados de diagnóstico e controladores de teste.
 
 O controlador de teste terá agentes que podem ser usados para cada função nas configurações de teste. Para obter mais informações sobre controladores e agentes de teste, confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
@@ -41,7 +43,7 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
 ## <a name="create-a-test-settings-file"></a>Criar um arquivo de configurações do teste
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **itens de solução**, aponte para **Adicionar**e, em seguida, escolha **novo item**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em **itens de solução**, aponte para **Adicionar** e, em seguida, escolha **novo item**.
 
      A caixa de diálogo **Adicionar Novo Item** aparecerá.
 

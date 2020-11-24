@@ -1,7 +1,7 @@
 ---
 title: require-vcpkg
 description: a ferramenta devinit requer-vcpkg.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6a9559da218912b6e045c174b7ed20a60f93062e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 7fabd803645e9e79e273683c364ca427793c0aff
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671742"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442287"
 ---
 # <a name="require-vcpkg"></a>require-vcpkg
 
@@ -26,7 +26,7 @@ A `require-vcpkg` ferramenta é usada para instalar o [vcpkg](https://github.com
 
 Se as `input` Propriedades e `additionalOptions` forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                      |
+| Nome                                             | Type   | Obrigatório | Valor                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                      |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                           |
@@ -42,10 +42,10 @@ Não usado.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
-O comportamento padrão da `require-vcpkg` ferramenta é instalar o vcpkg e adicioná-lo ao caminho (somente Windows).
+O comportamento padrão da `require-vcpkg` ferramenta é instalar o vcpkg e adicioná-lo ao `PATH` .
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `require-vcpkg` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `require-vcpkg` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-vcpkg"></a>.devinit.js, que instalará o vcpkg:
 ```json

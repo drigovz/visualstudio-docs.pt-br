@@ -1,5 +1,7 @@
 ---
 title: Analisando resultados do teste de carga
+description: Saiba como usar o Load Test Analyzer para localizar afunilamentos, identificar erros e medir melhorias em seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9300dd1ebeaee9d87d2527dbc49fa66e319970c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f33898aa1c3c08179f1438a7c6e6e11a75587bc
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591223"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442476"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analisar resultados do teste de carga usando o Analisador de Teste de Carga
 

@@ -1,7 +1,7 @@
 ---
 title: azurecli-login
 description: devinit Tool azurecli-login.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 304c7b12e3b290c3e47857877b050b18873e3934
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 572f0af5f7ff586ebbda8785245637f10d66abed
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672307"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440499"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
@@ -26,7 +26,7 @@ A `azurecli-login` ferramenta é usada para entrar Azure Active Directory via [C
 
 Se ambas as propriedades forem omitidas ou vazias, a ferramenta seguirá o comportamento [padrão](#default-behavior) detalhado abaixo.
 
-| Nome                                             | Tipo   | Obrigatório | Valor                                                                          |
+| Nome                                             | Type   | Obrigatório | Valor                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **feitos**                                     | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                          |
 | [**entrada**](#input)                              | Cadeia de caracteres | No       | Não usado. Consulte a [entrada](#input) abaixo para obter detalhes.                               |
@@ -42,10 +42,10 @@ Não usado.
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
-O comportamento padrão da `azurecli-login` ferramenta é instalar a versão mais recente do CLI do Azure e adicioná-la ao caminho (somente Windows).
+O comportamento padrão da `azurecli-login` ferramenta é instalar a versão mais recente do CLI do Azure e adicioná-la ao `PATH` .
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `azurecli-login` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `azurecli-login` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-trigger-azure-login"></a>.devinit.jsno que irá disparar o logon do Azure:
 

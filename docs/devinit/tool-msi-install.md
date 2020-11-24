@@ -1,7 +1,7 @@
 ---
 title: msi-install
 description: ferramenta devinit para msiexec.
-ms.date: 10/13/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672169"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440418"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -26,7 +26,7 @@ A `msi-install` ferramenta é usada para instalar `.msi` formatos de arquivo de 
 
 Se o `input` for omitido ou ficar vazio, a ferramenta produzirá um erro.
 
-| Nome                                         | Tipo   | Obrigatório | Valor                                                                             |
+| Nome                                         | Type   | Obrigatório | Valor                                                                             |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                             |
 | [**entrada**](#input)                          | string | Sim      | O `msi` a instalar. Consulte a [entrada](#input) abaixo para obter detalhes.                      |
@@ -44,17 +44,21 @@ Opções de configuração adicionais podem ser passadas como um valor de Additi
 
 A ferramenta MSI-install define um número de `msiexec` argumentos de linha de comando para garantir que o MSI possa ser executado sem periféricos. Esses argumentos estão listados abaixo e a documentação sobre eles pode ser encontrada na `msiexec` [documentação](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)do.
 
-| Name          | Descrição                                                                                                                                                                                   |
+| Nome          | Descrição                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /i            | Executa uma instalação normal                                                                                                                                                                    | 
-| /quiet        | Especifica o modo silencioso sem interação do usuário necessária                                                                                                                                        | 
-| /qn           | Especifica que não há interface do usuário durante o processo de instalação                                                                                                                                           | 
-| /passive      | Especifica o modo autônomo em que a instalação mostra apenas uma barra de progresso                                                                                                                    | 
-| /l * V          | Ativa o registro em log e registra todas as informações, incluindo informações detalhadas, em um `devinit.log` arquivo na pasta temporária local da máquina. Se a ferramenta falhar, o caminho do arquivo de log será exibido.      | 
-| /norestart    | Interrompe a reinicialização da máquina após a conclusão da instalação, mas retornará um código de saída 3010 se for necessária uma reinicialização                                                                  | 
+| /i            | Executa uma instalação normal                                                                                                                                                                    |
+| /quiet        | Especifica o modo silencioso sem interação do usuário necessária                                                                                                                                        |
+| /qn           | Especifica que não há interface do usuário durante o processo de instalação                                                                                                                                           |
+| /passive      | Especifica o modo autônomo em que a instalação mostra apenas uma barra de progresso                                                                                                                    |
+| /l * V          | Ativa o registro em log e registra todas as informações, incluindo informações detalhadas, em um `devinit.log` arquivo na pasta temporária local da máquina. Se a ferramenta falhar, o caminho do arquivo de log será exibido.      |
+| /norestart    | Interrompe a reinicialização da máquina após a conclusão da instalação, mas retornará um código de saída 3010 se for necessária uma reinicialização                                                                  |
+
+### <a name="default-behavior"></a>Comportamento padrão
+
+O comportamento padrão da `msi-install` ferramenta é erro, pois a `input` propriedade é necessária.
 
 ## <a name="example-usage"></a>Exemplo de uso
-Veja abaixo um exemplo de como executar `msi-install` o usando um `.devinit.json` . 
+Veja abaixo um exemplo de como executar `msi-install` o usando um `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.js, que instalará o MSI 7-zip:
 ```json
