@@ -1,5 +1,7 @@
 ---
 title: Sobre extensões de nome de arquivo | Microsoft Docs
+description: Saiba como registrar extensões de nome de arquivo para VSPackages e associá-las a uma versão específica do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740351"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597659"
 ---
 # <a name="about-file-name-extensions"></a>Sobre extensões de nome de arquivo
 Ao registrar uma extensão de arquivo de um VSPackage, você o associa a uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Isso é importante se mais de uma versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalada em um computador.

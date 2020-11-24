@@ -1,5 +1,7 @@
 ---
 title: Adicionando um atributo a um item de projeto | Microsoft Docs
+description: Saiba como adicionar um atributo a um item de projeto no Visual Studio usando os métodos de interoperabilidade do Shell GetItemAttribute e SetItemAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059eef0b6a215f1f02c77df63f777fbfda5dff19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79f96be0d9b2ba661c29cdc1a25d7348bcff6eb1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740195"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597906"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>Adicionar um atributo a um item de projeto
 Os métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> Get e definem o valor dos atributos de um item de projeto. SetItemAttribute criará o atributo se ele ainda não existir, adicionando-o aos metadados do item de projeto.

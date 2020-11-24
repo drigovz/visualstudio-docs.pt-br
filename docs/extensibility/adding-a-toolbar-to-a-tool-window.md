@@ -1,5 +1,7 @@
 ---
 title: Adicionando uma barra de ferramentas a uma janela de ferramentas | Microsoft Docs
+description: Saiba como adicionar uma barra de ferramentas que contém botões vinculados a comandos a uma janela de ferramentas no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904131"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597971"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Adicionar uma barra de ferramentas a uma janela de ferramentas
 Este tutorial mostra como adicionar uma barra de ferramentas a uma janela de ferramentas.

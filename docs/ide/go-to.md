@@ -1,5 +1,7 @@
 ---
 title: Ir para arquivo, ir para símbolo, ir para linha
+description: Saiba como ir para comandos no Visual Studio e como você pode usá-los para executar pesquisas focadas em seu código.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593779"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597529"
 ---
 # <a name="find-code-using-go-to-commands"></a>Localizar código usando comandos Ir Para
 
@@ -52,7 +54,7 @@ Por padrão, o item especificado é pesquisado em todos os itens de solução. N
 
 Para restringir sua pesquisa para um tipo de elemento de código específico, especifique um prefixo na caixa de pesquisa ou selecione um dos cinco ícones de filtro:
 
-Prefixo | ícone | Atalho | Descrição
+Prefixo | Ícone | Atalho | Descrição
 :-: | - | - | -
 :| ![Ícone de linha](media/gotoall-line-icon.png) | **Ctrl** + **G** | Ir para o número de linha especificado
 f| ![Ícone de arquivos](media/gotoall-files-icon.png) | **Ctrl** + **1**, **Ctrl** + **F** | Ir para o arquivo especificado

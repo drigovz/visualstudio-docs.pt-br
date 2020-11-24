@@ -1,5 +1,7 @@
 ---
 title: Como especificar um ícone do aplicativo (Visual Basic, C#)
+description: Saiba como usar a Propriedade Icon para especificar o ícone que o explorador de arquivos e a barra de tarefas do Windows exibem para o aplicativo compilado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20e5d8a915c1621b26c070976f27db56d8f2c84e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284055"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596905"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
 
@@ -31,7 +33,7 @@ A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de
 
 1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).
 
-1. Na barra de menus, escolha **Project**  >  **Propriedades**do projeto.
+1. Na barra de menus, escolha **Project**  >  **Propriedades** do projeto.
 
 1. Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.
 

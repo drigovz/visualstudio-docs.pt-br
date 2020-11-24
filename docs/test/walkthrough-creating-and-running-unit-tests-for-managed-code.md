@@ -1,5 +1,7 @@
 ---
 title: Tutorial de teste de unidade C#
+description: Saiba como criar, executar e personalizar uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o Visual Studio Test Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223665"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598543"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -177,7 +179,7 @@ Agora você tem um projeto com métodos que você pode testar. Neste artigo, os 
 
 6. Na caixa de diálogo **Gerenciador de Referências**, expanda **Projetos**, selecione **Solução** e, em seguida, marque o item **Banco**.
 
-7. Escolha **OK**.
+7. Selecione **OK**.
 
 ## <a name="create-the-test-class"></a>Criar a classe de teste
 

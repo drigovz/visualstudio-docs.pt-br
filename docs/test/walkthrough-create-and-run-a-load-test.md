@@ -1,5 +1,7 @@
 ---
 title: Criar e executar um teste de carga
+description: Saiba como criar um teste de carga que contém testes de unidade. Você cria e executa testes de carga usando Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780485a4d42cad574cddaaa5a9ae51a65a1a9b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdcd96e8fc87a7627689af1c67a81b69b2ecee72
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093628"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598257"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
 
@@ -49,7 +51,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
      A caixa de diálogo **Adicionar Novo Projeto** é exibida.
 
-1. Na caixa de diálogo **Adicionar novo projeto** , expanda **Visual C#** e escolha **testar**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Escolha **OK**.
+1. Na caixa de diálogo **Adicionar novo projeto** , expanda **Visual C#** e escolha **testar**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Selecione **OK**.
 
      O projeto de teste de desempenho na Web e de carga BankLoadTest é adicionado à solução.
 

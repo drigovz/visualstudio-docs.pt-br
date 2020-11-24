@@ -1,5 +1,7 @@
 ---
 title: Como mover-se no IDE
+description: Saiba como mover-se no IDE do Visual Studio de janela para janela e arquivo para arquivo de várias maneiras diferentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1052deb04a93d11349ef9beb2ff667893095902f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f2e796ed122bc4dba0c1fb4cfca85c74065fb8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769842"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597035"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no IDE do Visual Studio
 
@@ -74,7 +76,7 @@ O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais rec
 
     \- ou –
 
-- Na barra de menus, escolha **Window**  >  **janelas**de janelas.
+- Na barra de menus, escolha **Window**  >  **janelas** de janelas.
 
 - Na lista, selecione o arquivo que você deseja exibir e, em seguida, escolha **Ativar**.
 

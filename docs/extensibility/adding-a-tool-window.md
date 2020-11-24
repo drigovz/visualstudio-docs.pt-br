@@ -1,5 +1,7 @@
 ---
 title: Adicionando uma janela de ferramentas | Microsoft Docs
+description: Saiba como criar uma janela de ferramentas e integrá-la ao Visual Studio adicionando um controle e uma barra de ferramentas que contém um comando à janela de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904144"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597984"
 ---
 # <a name="add-a-tool-window"></a>Adicionar uma janela de ferramentas
 
@@ -129,7 +131,7 @@ Adicione um comando à barra de ferramentas, que é exibido como um botão.
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Adicionar uma Propriedade MediaPlayer a FirstToolWindowControl
 Dos manipuladores de eventos para os controles da barra de ferramentas, seu código deve ser capaz de acessar o controle do Media Player, que é um filho da classe FirstToolWindowControl.
 
-Em **Gerenciador de soluções**, clique com o botão direito do mouse em *FirstToolWindowControl. XAML*, clique em **Exibir código**e adicione o código a seguir à classe FirstToolWindowControl.
+Em **Gerenciador de soluções**, clique com o botão direito do mouse em *FirstToolWindowControl. XAML*, clique em **Exibir código** e adicione o código a seguir à classe FirstToolWindowControl.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer

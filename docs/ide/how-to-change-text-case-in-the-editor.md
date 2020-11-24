@@ -1,5 +1,7 @@
 ---
 title: Converter um texto para maiúsculas ou minúsculas
+description: Saiba como usar comandos de menu ou atalhos de teclado para converter o caso do texto selecionado em todas as letras maiúsculas ou minúsculas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28ed534a72c542f978fc8d4121f471cad79ea64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4574874e14ee66bbfb0f11d7767d59516b6666f3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284627"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597282"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Como alterar maiúsculas e minúsculas no texto no editor
 
 É possível usar comandos de menu ou atalhos de teclado para converter o padrão de maiúsculas e minúsculas do texto selecionado e deixar todas as letras maiúsculas ou todas as letras minúsculas.
 
 > [!NOTE]
-> As caixas de diálogo e comandos de menu exibidos podem ser diferentes daqueles descritos neste artigo, que se baseiam nas configurações de ambiente **gerais**. Para alterar as configurações de ambiente, escolha **ferramentas**  >  **importar e exportar configurações**e, em seguida, escolha **redefinir todas as configurações**.
+> As caixas de diálogo e comandos de menu exibidos podem ser diferentes daqueles descritos neste artigo, que se baseiam nas configurações de ambiente **gerais**. Para alterar as configurações de ambiente, escolha **ferramentas**  >  **importar e exportar configurações** e, em seguida, escolha **redefinir todas as configurações**.
 
 ## <a name="to-change-text-case"></a>Para alterar a grafia em maiúsculas ou minúsculas do texto
 

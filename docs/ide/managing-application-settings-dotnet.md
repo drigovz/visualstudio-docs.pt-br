@@ -1,5 +1,7 @@
 ---
 title: Gerenciar configurações de aplicativo (.NET)
+description: Saiba como gerenciar as configurações do aplicativo (anteriormente chamadas de propriedades dinâmicas) que não estão incluídas no código do aplicativo, mas são necessárias no tempo de execução.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593701"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596892"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 

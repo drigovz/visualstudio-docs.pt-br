@@ -1,5 +1,7 @@
 ---
 title: Gerenciar ferramentas externas
+description: Saiba como adicionar e gerenciar novas ferramentas externas que você pode acessar por meio do menu ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591288"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596684"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
 
@@ -61,7 +63,7 @@ O menu **Ferramentas** contém vários comandos internos, incluindo:
 
 Esta é uma lista completa de argumentos que podem ser usados ao definir uma ferramenta externa:
 
-|Name|Argumento|Descrição|
+|Nome|Argumento|Descrição|
 |----------|--------------|-----------------|
 |Caminho de item|$(ItemPath)|O nome de arquivo completo do arquivo atual (unidade + caminho + nome de arquivo).|
 |Diretório do item|$(ItemDir)|O diretório do arquivo atual (unidade + caminho).|
@@ -81,7 +83,7 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 |Nome de arquivo da solução|$(SolutionFileName)|O nome de arquivo da solução atual (unidade + caminho + nome de arquivo).|
 
 > [!NOTE]
-> A barra de status do IDE exibe a **linha atual** e as variáveis da **coluna atual** para indicar onde o ponto de inserção está localizado no **Editor de código**ativo. A variável de **texto atual** retorna o texto ou o código selecionado nesse local.
+> A barra de status do IDE exibe a **linha atual** e as variáveis da **coluna atual** para indicar onde o ponto de inserção está localizado no **Editor de código** ativo. A variável de **texto atual** retorna o texto ou o código selecionado nesse local.
 
 ## <a name="see-also"></a>Confira também
 

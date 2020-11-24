@@ -1,5 +1,7 @@
 ---
 title: Adicionando comandos às barras de ferramentas | Microsoft Docs
+description: Saiba como adicionar seus próprios comandos a barras de ferramentas no Windows no Visual Studio, incluindo a janela principal, a Gerenciador de Soluções e as janelas de ferramentas personalizadas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31f8a779479d32986dfa774109a0c9a3fcd717fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e808e6f472c48dcd14aac2d81b4cd3f615397f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740177"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597711"
 ---
 # <a name="add-commands-to-toolbars"></a>Adicionar comandos a barras de ferramentas
 Uma barra de ferramentas é uma faixa horizontal ou vertical que contém botões associados a comandos. Você pode adicionar seus próprios comandos a barras de ferramentas em muitas janelas diferentes no Visual Studio: a janela principal do Visual Studio, a Gerenciador de Soluções e suas próprias janelas de ferramentas personalizadas.

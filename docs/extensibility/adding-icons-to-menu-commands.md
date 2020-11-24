@@ -1,5 +1,7 @@
 ---
 title: Adicionando ícones a comandos de menu | Microsoft Docs
+description: Saiba como adicionar ícones a comandos que podem aparecer em menus e barras de ferramentas no ambiente de desenvolvimento integrado (IDE) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903435"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597646"
 ---
 # <a name="add-icons-to-menu-commands"></a>Adicionar ícones a comandos de menu
 Os comandos podem aparecer em menus e barras de ferramentas. Nas barras de ferramentas, é comum que um comando seja exibido com apenas um ícone (para economizar espaço) enquanto nos menus um comando normalmente aparece com um ícone e texto.
@@ -33,7 +35,7 @@ Os comandos podem aparecer em menus e barras de ferramentas. Nas barras de ferra
 
      Se você usar uma profundidade de cor de 8 bits, use magenta, `RGB(255,0,255)` , como a transparência. No entanto, os ícones de cor de 32 bits são preferenciais.
 
-2. Copie o arquivo de ícone para o diretório de *recursos* em seu projeto VSPackage. No **Gerenciador de soluções**, adicione o ícone ao projeto. (Selecione **recursos**e, no menu de contexto, clique em **Adicionar**, depois em **Item existente**e selecione o arquivo de ícone.)
+2. Copie o arquivo de ícone para o diretório de *recursos* em seu projeto VSPackage. No **Gerenciador de soluções**, adicione o ícone ao projeto. (Selecione **recursos** e, no menu de contexto, clique em **Adicionar**, depois em **Item existente** e selecione o arquivo de ícone.)
 
 3. Abra o arquivo *. vsct* no editor.
 

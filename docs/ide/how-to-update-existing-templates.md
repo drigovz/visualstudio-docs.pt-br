@@ -1,5 +1,7 @@
 ---
 title: Atualizar modelos de item de projeto existentes
+description: Saiba como usar o assistente de exportação de modelo e outros processos manuais para atualizar modelos de item de projeto que você já criou.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283912"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596879"
 ---
 # <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
 

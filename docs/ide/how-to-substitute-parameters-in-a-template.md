@@ -1,5 +1,7 @@
 ---
 title: Adicionar parâmetros de nome a modelos de projeto e de item
+description: Saiba como modificar parâmetros de modelo para substituir identificadores como nomes de classe e namespaces.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba830035f441421ca0eb83404b37319d9a9e2ca3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283938"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596853"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Como substituir parâmetros em um modelo
 
@@ -26,7 +28,7 @@ A seção a seguir mostra como modificar um modelo para substituir o nome de um 
 
 ## <a name="example---namespace-name"></a>Exemplo – o nome do namespace
 
-1. Insira o parâmetro em um ou mais dos arquivos de código no modelo. Por exemplo:
+1. Insira o parâmetro em um ou mais dos arquivos de código no modelo. Por exemplo: 
 
     ```csharp
     namespace $safeprojectname$

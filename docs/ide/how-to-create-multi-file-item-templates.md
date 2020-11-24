@@ -1,5 +1,7 @@
 ---
 title: Criando modelos de item de vários arquivos
+description: Saiba como criar um modelo de item no Visual Studio composto por vários arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284419"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597256"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivos
 
@@ -36,7 +38,7 @@ Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um
 
 1. Crie o modelo de item da mesma forma em que você criaria manualmente um modelo de item de arquivo único, mas inclua cada arquivo que constitui o item multiarquivos.
 
-1. No arquivo XML *. vstemplate* , adicione um `ProjectItem` elemento para cada arquivo individual e adicione um `TargetFileName` atributo a esse elemento. Defina o valor do `TargetFileName` atributo para *$fileinputname $. FileExtension*, em que *FileExtension* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo:
+1. No arquivo XML *. vstemplate* , adicione um `ProjectItem` elemento para cada arquivo individual e adicione um `TargetFileName` atributo a esse elemento. Defina o valor do `TargetFileName` atributo para *$fileinputname $. FileExtension*, em que *FileExtension* é a extensão de arquivo do arquivo que está sendo incluído no modelo. Por exemplo: 
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

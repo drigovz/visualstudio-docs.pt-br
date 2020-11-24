@@ -1,5 +1,7 @@
 ---
 title: Adicionando pesquisa a uma janela de ferramentas | Microsoft Docs
+description: Saiba como adicionar a funcionalidade de pesquisa, incluindo uma caixa de pesquisa, filtragem e um indicador de progresso, a uma janela de ferramentas no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903410"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597633"
 ---
 # <a name="add-search-to-a-tool-window"></a>Adicionar pesquisa a uma janela de ferramentas
 Ao criar ou atualizar uma janela de ferramentas em sua extensão, você pode adicionar a mesma funcionalidade de pesquisa que aparece em outro lugar no Visual Studio. Essa funcionalidade inclui os seguintes recursos:
@@ -82,7 +84,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 
 5. Compile o projeto e comece a depuração. A instância experimental do Visual Studio é exibida.
 
-6. Na barra de menus, escolha **Exibir**  >  **outras**  >  **TestSearch**do Windows.
+6. Na barra de menus, escolha **Exibir**  >  **outras**  >  **TestSearch** do Windows.
 
      A janela de ferramentas é exibida, mas o controle de pesquisa ainda não aparece.
 
@@ -93,9 +95,9 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
      Para habilitar a pesquisa, você deve substituir a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> propriedade. A <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> e fornece uma implementação padrão que não habilita a pesquisa.
 
     ```csharp
-    public override bool SearchEnabled
+    public override bool SearchEnabled
     {
-        get { return true; }
+        get { return true; }
     }
     ```
 
@@ -242,7 +244,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 1. No arquivo * TestSearch.cs *, adicione o código a seguir à `TestSearch` classe. Esse código permite a pesquisa instantânea em vez da pesquisa sob demanda (o que significa que o usuário não precisa clicar em **Enter**). O código substitui o `ProvideSearchSettings` método na `TestSearch` classe, que é necessário para alterar as configurações padrão.
 
     ```csharp
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
     {
         Utilities.SetValue(pSearchSettings,
             SearchSettingsDataSource.SearchStartTypeProperty.Name,
@@ -290,7 +292,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum
     {
         get
         {
@@ -342,13 +344,13 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 1. No arquivo *TestSearch.cs* , adicione o código a seguir à `TestSearch` classe. O código implementa `SearchFiltersEnum` adicionando um <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> que especifica para filtrar os resultados da pesquisa para que apenas linhas iguais apareçam.
 
     ```csharp
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum
     {
         get
         {
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
         }
     }
 
@@ -359,19 +361,19 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 2. No arquivo *TestSearch.cs* , adicione os seguintes métodos à `TestSearchTask` classe, que está na `TestSearch` classe. Esses métodos oferecem suporte ao `OnStartSearch` método, que você modificará na próxima etapa.
 
     ```csharp
-    private string RemoveFromString(string origString, string stringToRemove)
+    private string RemoveFromString(string origString, string stringToRemove)
     {
         int index = origString.IndexOf(stringToRemove);
         if (index == -1)
             return origString;
-        else 
+        else 
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();
     }
 
-    private string[] GetEvenItems(string[] contentArr)
+    private string[] GetEvenItems(string[] contentArr)
     {
         int length = contentArr.Length / 2;
-        string[] evenContentArr = new string[length];
+        string[] evenContentArr = new string[length];
 
         int indexB = 0;
         for (int index = 1; index < contentArr.Length; index += 2)
@@ -387,13 +389,13 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 3. Na `TestSearchTask` classe, atualize o `OnStartSearch` método com o código a seguir. Essa alteração atualiza o código para dar suporte ao filtro.
 
     ```csharp
-    protected override void OnStartSearch()
+    protected override void OnStartSearch()
     {
-        // Use the original content of the text box as the target of the search. 
-        var separator = new string[] { Environment.NewLine };
+        // Use the original content of the text box as the target of the search. 
+        var separator = new string[] { Environment.NewLine };
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);
 
-        // Get the search option. 
+        // Get the search option. 
         bool matchCase = false;
         matchCase = m_toolWindow.MatchCaseOption.Value;
 
@@ -406,7 +408,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
         {
             string searchString = this.SearchQuery.SearchString;
 
-            // If the search string contains the filter string, filter the content array. 
+            // If the search string contains the filter string, filter the content array. 
             string filterString = "lines:\"even\"";
 
             if (this.SearchQuery.SearchString.Contains(filterString))
@@ -418,7 +420,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
                 searchString = RemoveFromString(searchString, filterString);
             }
 
-            // Determine the results. 
+            // Determine the results. 
             uint progress = 0;
             foreach (string line in contentArr)
             {
@@ -441,7 +443,7 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
 
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
 
-                // Uncomment the following line to demonstrate the progress bar. 
+                // Uncomment the following line to demonstrate the progress bar. 
                 // System.Threading.Thread.Sleep(100);
             }
         }
@@ -457,8 +459,8 @@ Seguindo este passo a passos, você aprenderá a executar as seguintes tarefas:
             this.SearchResults = resultCount;
         }
 
-        // Call the implementation of this method in the base class. 
-        // This sets the task status to complete and reports task completion. 
+        // Call the implementation of this method in the base class. 
+        // This sets the task status to complete and reports task completion. 
         base.OnStartSearch();
     }
     ```

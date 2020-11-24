@@ -1,5 +1,7 @@
 ---
 title: Adicionando um menu de atalho em uma janela de ferramentas | Microsoft Docs
+description: Saiba como adicionar um menu de atalho a uma janela de ferramentas no Visual Studio que aparece quando um botão, caixa de texto ou plano de fundo da janela é clicado com o botão direito do mouse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa8d6f5c47289e66a51653e39d31890f09e8ceb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904193"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597867"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Adicionar um menu de atalho em uma janela de ferramentas
 Este tutorial coloca um menu de atalho em uma janela de ferramentas. Um menu de atalho é um menu que aparece quando um usuário clica com o botão direito do mouse em um botão, caixa de texto ou plano de fundo da janela. Os comandos em um menu de atalho se comportam da mesma forma que comandos em outros menus ou barras de ferramentas. Para dar suporte a um menu de atalho, especifique-o no arquivo *. vsct* e exiba-o em resposta ao clique com o botão direito do mouse.
@@ -116,10 +118,10 @@ Um menu de atalho como aquele mostrado neste passo a passos permite que o usuár
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
-    public const int ColorMenu = 0x1000;
-    public const int cmdidRed = 0x102;
-    public const int cmdidYellow = 0x103;
-    public const int cmdidBlue = 0x104;
+    public const int ColorMenu = 0x1000;
+    public const int cmdidRed = 0x102;
+    public const int cmdidYellow = 0x103;
+    public const int cmdidBlue = 0x104;
     ```
 
     Essas são as mesmas IDs de comando que são definidas na seção Symbols do arquivo *ShortcutMenuPackage. vsct* . O grupo de contexto não está incluído aqui porque é necessário apenas no arquivo *. vsct* .
@@ -208,7 +210,7 @@ Um menu de atalho como aquele mostrado neste passo a passos permite que o usuár
 7. No *ShortcutMenuControl.XAML.cs*, adicione um stub para o manipulador de eventos.
 
     ```csharp
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
     {
     . . .
     }
@@ -270,7 +272,7 @@ Um menu de atalho como aquele mostrado neste passo a passos permite que o usuár
 
 1. Compile o projeto e comece a depuração. A instância experimental é exibida.
 
-2. Na instância experimental, clique em **Exibir/outras janelas**e, em seguida, clique em **ShortcutMenu**. Fazer isso deve exibir a janela da ferramenta.
+2. Na instância experimental, clique em **Exibir/outras janelas** e, em seguida, clique em **ShortcutMenu**. Fazer isso deve exibir a janela da ferramenta.
 
 3. Clique com o botão direito do mouse no corpo da janela de ferramentas. Um menu de atalho que tem uma lista de cores deve ser exibido.
 

@@ -1,6 +1,6 @@
 ---
 title: Alterar a experiência de inicialização
-description: Saiba como personalizar sua experiência de inicialização para que o Visual estúdios seja aberto com as ferramentas que são mais úteis para você.
+description: Saiba como personalizar sua experiência de inicialização para que o Visual Studio seja aberto com as ferramentas que são mais úteis para você.
 ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006257"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598101"
 ---
 # <a name="customize-startup"></a>Personalizar a inicialização
 

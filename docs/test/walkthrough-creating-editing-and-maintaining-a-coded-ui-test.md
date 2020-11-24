@@ -1,5 +1,7 @@
 ---
 title: Criar um teste de IU codificado
+description: Saiba como usar um teste de interface do usuário codificado para um aplicativo do Windows Presentation Framework e veja soluções para testes com problemas de tempo e refatoração de controles.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592055"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598530"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -160,7 +162,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 2. No menu **Compilar** , escolha **Compilar solução**.
 
-3. No arquivo *CodedUITest1.cs* , localize o método **CodedUITestMethod** , clique com o botão direito do mouse e selecione **executar testes**ou execute o teste no **Gerenciador de testes**.
+3. No arquivo *CodedUITest1.cs* , localize o método **CodedUITestMethod** , clique com o botão direito do mouse e selecione **executar testes** ou execute o teste no **Gerenciador de testes**.
 
    Durante a execução do teste de IU codificado, o SimpleWPFApp permanece visível. Ele conduz as etapas realizadas no procedimento anterior. No entanto, quando o teste tenta marcar a caixa de seleção para o controle caixa de seleção, a janela **resultados de teste** mostra que o teste falhou. Isso ocorre porque o teste tenta marcar a caixa de seleção, mas não sabe que o controle de caixa de seleção permanece desabilitado até a barra de progresso ficar 100% concluída. Você pode corrigir esse e outros problemas semelhantes usando os vários métodos `UITestControl.WaitForControlXXX()` que estão disponíveis para testes de IU codificados. O próximo procedimento demonstrará o uso do método `WaitForControlEnabled()` para corrigir o problema que causou a falha desse teste. Para obter mais informações, confira [Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 

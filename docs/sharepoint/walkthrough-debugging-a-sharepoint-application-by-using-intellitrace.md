@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicativo do SharePoint usando o IntelliTrace
+description: Use o IntelliTrace para depurar e corrigir aplicativos do SharePoint com mais facilidade. Crie e adicione código a um receptor de recursos. Teste o projeto. Coletar dados do IntelliTrace.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015757"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598478"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Walkthrough: Depurar um aplicativo do SharePoint usando o IntelliTrace
 
@@ -258,7 +260,7 @@ Agora que o código foi adicionado ao receptor de recursos e o coletor de dados 
 
 2. Exibir o conteúdo das listas de anúncios e tarefas.
 
-     A lista de comunicados deve ter um novo comunicado chamado **recurso ativado: IntelliTraceTest_Feature1**e a lista de tarefas deve ter uma nova tarefa denominada **recurso desativar: IntelliTraceTest_Feature1**. Se um desses itens estiver ausente, verifique se o recurso está ativado. Se não estiver ativado, ative-o.
+     A lista de comunicados deve ter um novo comunicado chamado **recurso ativado: IntelliTraceTest_Feature1** e a lista de tarefas deve ter uma nova tarefa denominada **recurso desativar: IntelliTraceTest_Feature1**. Se um desses itens estiver ausente, verifique se o recurso está ativado. Se não estiver ativado, ative-o.
 
 3. Desative o recurso executando as seguintes etapas:
 

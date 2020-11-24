@@ -1,5 +1,7 @@
 ---
 title: Modo tela inteira e espaço virtual
+description: Saiba como gerenciar os modos de editor do Visual Studio para exibir todas as ferramentas e janelas de uma maneira que funcione melhor para você.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -24,12 +26,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f8f86d635e1e57d82dd2d18084c91a9267f9a0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b86859f5f5718871499bb1f3e2014da59f956db
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284198"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597139"
 ---
 # <a name="how-to-manage-editor-modes"></a>Como gerenciar modos do editor
 
@@ -54,7 +56,7 @@ No modo **Espaço virtual**, os espaços são inseridos no final de cada linha d
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar números de linha somente em Visual Basic, escolha o **Basic**  >  nó**Editor de texto** básico.
+2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar números de linha somente em Visual Basic, escolha o **Basic**  >  nó **Editor de texto** básico.
 
 3. Selecione as opções **Gerais** e, em **Configurações**, selecione **Habilitar Espaço virtual**.
 

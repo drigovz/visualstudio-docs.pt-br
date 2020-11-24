@@ -1,5 +1,7 @@
 ---
 title: Adicionando uma lista usada mais recentemente a um submenu | Microsoft Docs
+description: Saiba como adicionar uma lista dinâmica que contém os comandos de menu usados mais recentemente a um submenu no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904200"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597919"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Adicionar uma lista usada mais recentemente a um submenu
 Este tutorial se baseia nas demonstrações em [Adicionar um submenu a um menu](../extensibility/adding-a-submenu-to-a-menu.md)e mostra como adicionar uma lista dinâmica a um submenu. A lista dinâmica forma a base para a criação de uma lista MRU (usada mais recentemente).
@@ -47,7 +49,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. Na `Groups` seção, adicione o grupo declarado após as entradas de grupo existentes.
@@ -85,7 +87,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. Em *TestCommand.cs* , adicione a seguinte instrução using.
@@ -147,7 +149,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
 6. Depois do `InitMRUMenu` método, adicione o método a seguir `OnMRUQueryStatus` . Esse é o manipulador que define o texto para cada item MRU.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
 7. Depois do `OnMRUQueryStatus` método, adicione o método a seguir `OnMRUExec` . Este é o manipulador para selecionar um item MRU. Esse método move o item selecionado para a parte superior da lista e, em seguida, exibe o item selecionado em uma caixa de mensagem.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ Para seguir este passo a passos, você deve instalar o SDK do Visual Studio. Par
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];

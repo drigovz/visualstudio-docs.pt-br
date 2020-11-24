@@ -1,5 +1,7 @@
 ---
-title: Adicionando opções de linha de comando | Microsoft Docs
+title: Adicionando opções de Command-Line | Microsoft Docs
+description: Saiba como adicionar opções de linha de comando que são aplicadas a um VSPackage quando o comando devenv.exe é executado.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903478"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597724"
 ---
 # <a name="add-command-line-switches"></a>Adicionar opções de linha de comando
 Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackage quando *devenv.exe* é executado. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar o nome do comutador e suas propriedades. Neste exemplo, a opção mySwitch é adicionada a uma subclasse de VSPackage chamada **AddCommandSwitchPackage** sem argumentos e com o VSPackage carregado automaticamente.
@@ -29,12 +31,12 @@ Você pode adicionar opções de linha de comando que se aplicam ao seu VSPackag
 
  Os parâmetros nomeados são mostrados nas descrições a seguir.
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 | Argumentos | O número de argumentos para a opção. Pode ser "*" ou uma lista de argumentos. |
 | À DEMANDLOAD | Carregue o VSPackage automaticamente se ele estiver definido como 1, caso contrário, definido como 0. |
 | HelpString | A cadeia de caracteres de ajuda ou a ID de recurso da cadeia de caracteres a ser exibida com **devenv/?**. |
-| Name | A opção. |
+| Nome | A opção. |
 | PackageGuid | O GUID do pacote. |
 
  O primeiro valor de argumentos é geralmente 0 ou 1. Um valor especial de ' * ' pode ser usado para indicar que todo o restante da linha de comando é o argumento. Isso pode ser útil para cenários de depuração em que um usuário deve passar uma cadeia de comando de depurador.
@@ -72,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilitário CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. Arquivos pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [Arquivos. pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

@@ -1,5 +1,7 @@
 ---
 title: Modo de mapa e modo de barra da barra de rolagem
+description: Saiba como controlar as alterações em seu código por meio da personalização da barra de rolagem e também aprender a usar o modo de barra e o modo de mapa.
+ms.custom: SEO-VS-2020
 ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1b659dabed2337013ffb84ff48277f0edacb09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c59ac152be9528ef3e01410f0a3b5f34dd882286
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283977"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596931"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Como: personalizar a barra de rolagem
 
@@ -68,7 +70,7 @@ A imagem a seguir mostra a opção **Mostrar dica de ferramenta de visualizaçã
 ![Barra de rolagem do Visual Studio com uma dica de ferramenta](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 > [!TIP]
-> Para alterar as cores que você vê no modo de mapa, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores**do ambiente. Em seguida, em **itens de exibição**, escolha qualquer um dos itens precedidos de "visão geral", faça as alterações de cor desejadas e escolha **OK**.
+> Para alterar as cores que você vê no modo de mapa, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores** do ambiente. Em seguida, em **itens de exibição**, escolha qualquer um dos itens precedidos de "visão geral", faça as alterações de cor desejadas e escolha **OK**.
 
 ## <a name="see-also"></a>Confira também
 

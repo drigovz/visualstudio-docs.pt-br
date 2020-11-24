@@ -1,5 +1,6 @@
 ---
 title: Isole seu aplicativo com shims (teste de unidade)
+description: Saiba como usar os tipos de Shim para desviar as chamadas para métodos específicos para o código que você escreve como parte do teste. Um Shim pode retornar resultados consistentes em cada chamada.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325929"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598205"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usar shims para isolar seu aplicativo para teste de unidade
 
@@ -67,14 +68,14 @@ using (ShimsContext.Create()) {
 
 Primeiro, adicione um assembly de falsificações:
 
-1. Em **Gerenciador de soluções** , 
+1. Em **Gerenciador de soluções**, 
     - Para um projeto de .NET Framework mais antigo (estilo não SDK), expanda o nó **referências** do seu projeto de teste de unidade.
     ::: moniker range=">=vs-2019"
-    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies** , **projetos** ou **pacotes**.
+    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
     ::: moniker-end
     - Se você estiver trabalhando em Visual Basic, selecione **Mostrar todos os arquivos** na barra de ferramentas **Gerenciador de soluções** para ver o nó **referências** .
 
-2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime** , selecione **System.dll**.
+2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime**, selecione **System.dll**.
 
 3. No menu de atalhos, escolha **Adicionar Assembly do Fakes**.
 
@@ -96,7 +97,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>Escrever um teste com shims
 
-No código de teste, insira um *desvio* para o método que você deseja forjar. Por exemplo:
+No código de teste, insira um *desvio* para o método que você deseja forjar. Por exemplo: 
 
 ```csharp
 [TestClass]

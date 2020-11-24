@@ -1,6 +1,6 @@
 ---
 title: Isento da Proteção de Informações do Windows
-description: Saiba como isentar o Visual estúdios da proteção de informações do Windows e ainda permitir que ele use dados corporativos.
+description: Saiba como isentar o Visual Studio da proteção de informações do Windows e ainda permitir que ele use dados corporativos.
 ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb078ee3f136a1d33f5b25040198c23411a05fb
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 34765cc7ac303bd44c3c4ccca87ea7c00a36ccda
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006621"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598387"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Configurar o Visual Studio como um aplicativo da isento da WIP
 

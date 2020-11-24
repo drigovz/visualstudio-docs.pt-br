@@ -1,5 +1,7 @@
 ---
 title: Adicionando um comando à barra de ferramentas Gerenciador de Soluções | Microsoft Docs
+description: Saiba como adicionar um botão que executa um comando à barra de ferramentas Gerenciador de Soluções no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414094"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597503"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Adicionar um comando à barra de ferramentas Gerenciador de Soluções
 Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerenciador de soluções** .
@@ -27,7 +29,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
  Para obter mais informações sobre menus, comandos de barra de ferramentas e arquivos *. vsct* , consulte [comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Use arquivos de tabela de comando XML ( *. vsct* ) em vez de arquivos de configuração de tabela de comando ( *. CTC* ) para definir como os menus e comandos aparecem em seu VSPackages. Para obter mais informações, consulte [tabela de comandos do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Use arquivos de tabela de comando XML (*. vsct*) em vez de arquivos de configuração de tabela de comando (*. CTC*) para definir como os menus e comandos aparecem em seu VSPackages. Para obter mais informações, consulte [tabela de comandos do Visual Studio (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -80,7 +82,7 @@ Este tutorial mostra como adicionar um botão à barra de ferramentas **Gerencia
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Para exibir um botão quando um ou mais projetos estão abertos
 
-1. Na `<Buttons>` seção de *ToolbarButtonPackage. vsct* , adicione dois sinalizadores de comando ao elemento existente `<Button>` , entre as `<Strings>` marcas e `<Icons>` .
+1. Na `<Buttons>` seção de *ToolbarButtonPackage. vsct*, adicione dois sinalizadores de comando ao elemento existente `<Button>` , entre as `<Strings>` marcas e `<Icons>` .
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>

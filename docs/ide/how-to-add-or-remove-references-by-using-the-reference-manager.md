@@ -1,5 +1,7 @@
 ---
 title: Adicionar referências no Gerenciador de Referências
+description: Saiba como usar a caixa de diálogo Gerenciador de referências para adicionar e gerenciar referências a componentes desenvolvidos.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87390256"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597308"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -189,11 +191,11 @@ Evite adicionar referências de arquivo às saídas de outro projeto na mesma so
 
 Não é possível navegar até o SDK e adicioná-lo ao projeto. Você só pode procurar um arquivo (por exemplo, um assembly ou *. winmd*) e adicioná-lo ao seu projeto.
 
-Ao fazer uma referência de arquivo a um WinMD, o layout esperado é que os arquivos * \<FileName> . WinMD*, * \<FileName> . dll*e * \<FileName> . pri* são todos colocados juntos. Se você referenciar um WinMD nos seguintes cenários, um conjunto incompleto de arquivos será copiado no diretório de saída do projeto e, consequentemente, falhas de compilação e de runtime ocorrerão.
+Ao fazer uma referência de arquivo a um WinMD, o layout esperado é que os arquivos *\<FileName> . WinMD*, *\<FileName> . dll* e *\<FileName> . pri* são todos colocados juntos. Se você referenciar um WinMD nos seguintes cenários, um conjunto incompleto de arquivos será copiado no diretório de saída do projeto e, consequentemente, falhas de compilação e de runtime ocorrerão.
 
-- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o nome idêntico * \<FileName> . dll* e * \<FileName> . winmd* serão copiados e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de extensão. Para obter mais informações, consulte [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o nome idêntico *\<FileName> . dll* e *\<FileName> . winmd* serão copiados e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de extensão. Para obter mais informações, consulte [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Consumindo controles**: um controle XAML consiste em, no mínimo, um *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* e um *\<ImageName>.jpg*. Quando o projeto é compilado, os arquivos de recursos associados à referência do arquivo não serão copiados no diretório de saída do projeto e somente * \<FileName> . winmd*, * \<FileName> . dll* e * \<FileName> . pri* serão copiados. Um erro de compilação é registrado para informar ao usuário que os recursos * \<XamlName> . XAML* e * \<ImageName> . jpg* estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/runtime. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:
+- **Consumindo controles**: um controle XAML consiste em, no mínimo, um *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* e um *\<ImageName>.jpg*. Quando o projeto é compilado, os arquivos de recursos associados à referência do arquivo não serão copiados no diretório de saída do projeto e somente *\<FileName> . winmd*, *\<FileName> . dll* e *\<FileName> . pri* serão copiados. Um erro de compilação é registrado para informar ao usuário que os recursos *\<XamlName> . XAML* e *\<ImageName> . jpg* estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/runtime. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:
 
     ```xml
     <PropertyGroup>
@@ -204,9 +206,9 @@ Ao fazer uma referência de arquivo a um WinMD, o layout esperado é que os arqu
     > [!NOTE]
     > Se você adicionar a propriedade, a compilação pode ficar mais lenta.
 
-## <a name="recent"></a>Recente
+## <a name="recent"></a>Recentes
 
-Os **assemblies**, **com**, **Windows**e **Browse** oferecem suporte a uma guia **recente** , que enumera a lista de componentes que foram adicionados recentemente aos projetos.
+Os **assemblies**, **com**, **Windows** e **Browse** oferecem suporte a uma guia **recente** , que enumera a lista de componentes que foram adicionados recentemente aos projetos.
 
 ## <a name="search"></a>Search
 

@@ -1,5 +1,6 @@
 ---
 title: Solucionar problemas de modelos de projeto e de item
+description: Saiba como solucionar problemas de modelos quando eles falharem ao carregar no ambiente de desenvolvimento.
 ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
@@ -8,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 42dc34d846f37ed1d7655d6758d045b2db7187d9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045704"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596840"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como solucionar problemas de modelos
 
@@ -23,7 +24,7 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 
 ::: moniker range="vs-2017"
 
-Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de modelo do Visual Studio, o modelo poderá não aparecer na caixa de diálogo **Novo Projeto** .
+Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de modelo do Visual Studio, o modelo poderá não aparecer na caixa de diálogo **Novo Projeto**.
 
 ::: moniker-end
 
@@ -39,20 +40,20 @@ Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de 
 
 1. Extraia o arquivo *. zip* .
 
-1. No menu **Arquivo** do Visual Studio, escolha **Abrir** > **Arquivo** .
+1. No menu **Arquivo** do Visual Studio, escolha **Abrir** > **Arquivo**.
 
-1. Selecione o arquivo *vstemplate* para o modelo e escolha **Abrir** .
+1. Selecione o arquivo *vstemplate* para o modelo e escolha **Abrir**.
 
-1. Verifique se o XML do arquivo *vstemplate* adota o esquema de modelo. Para obter mais informações sobre o esquema do *vstemplate* , consulte [Template schema reference](../extensibility/visual-studio-template-schema-reference.md) (Referência de esquema de modelo).
+1. Verifique se o XML do arquivo *vstemplate* adota o esquema de modelo. Para obter mais informações sobre o esquema do *vstemplate*, consulte [Template schema reference](../extensibility/visual-studio-template-schema-reference.md) (Referência de esquema de modelo).
 
     > [!NOTE]
-    > Para obter suporte do IntelliSense enquanto cria o arquivo *vstemplate* , adicione um atributo `xmlns` ao elemento `VSTemplate` e atribua um valor igual a `http://schemas.microsoft.com/developer/vstemplate/2005`.
+    > Para obter suporte do IntelliSense enquanto cria o arquivo *vstemplate*, adicione um atributo `xmlns` ao elemento `VSTemplate` e atribua um valor igual a `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
-1. Salve e feche o arquivo *vstemplate* .
+1. Salve e feche o arquivo *vstemplate*.
 
-1. Selecione os arquivos incluídos no modelo, clique com o botão direito do mouse e escolha **Enviar para**  >  **pasta compactada (zipada)** . Os arquivos que você selecionou são compactados em um arquivo *. zip* .
+1. Selecione os arquivos incluídos no modelo, clique com o botão direito do mouse e escolha **Enviar para**  >  **pasta compactada (zipada)**. Os arquivos que você selecionou são compactados em um arquivo *. zip* .
 
-1. Insira o novo arquivo *.zip* no mesmo diretório do antigo arquivo *.zip* .
+1. Insira o novo arquivo *.zip* no mesmo diretório do antigo arquivo *.zip*.
 
 1. Exclua os arquivos de modelo extraídos e o arquivo *.zip* de modelo antigo.
 
@@ -60,7 +61,7 @@ Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de 
 
 Você pode habilitar o registro em log de diagnóstico para a descoberta de modelo, seguindo as etapas em [Solucionando problemas de descoberta do modelo (extensibilidade)](../extensibility/troubleshooting-template-discovery.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Solucionar problemas de descoberta do modelo (extensibilidade)](../extensibility/troubleshooting-template-discovery.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)

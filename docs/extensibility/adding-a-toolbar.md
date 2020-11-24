@@ -1,5 +1,7 @@
 ---
 title: Adicionando uma barra de ferramentas | Microsoft Docs
+description: Saiba como adicionar uma barra de ferramentas que contém botões associados a comandos ao IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904075"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597945"
 ---
 # <a name="add-a-toolbar"></a>Adicionar uma barra de ferramentas
 Este tutorial mostra como adicionar uma barra de ferramentas ao IDE do Visual Studio.

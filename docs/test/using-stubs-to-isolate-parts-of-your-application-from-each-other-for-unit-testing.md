@@ -1,5 +1,7 @@
 ---
 title: Usar stubs para isolar partes do aplicativo para testes
+description: Saiba mais sobre um stub, que é uma pequena parte do código que assume o lugar de outro componente durante o teste. O uso de um stub retorna resultados consistentes.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325965"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598556"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -29,7 +31,7 @@ No diagrama, o componente StockAnalyzer é aquele que desejamos testar. Ele gera
 
 ![As classes de stub e real em conformidade com uma interface.](../test/media/fakesinterfaces.png)
 
-Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como *System.dll* , normalmente, são usados shims. Confira [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como *System.dll*, normalmente, são usados shims. Confira [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Como usar stubs
 
@@ -147,14 +149,14 @@ Para usar stubs, você deve primeiro gerar tipos de stub a partir das definiçõ
 
 #### <a name="add-a-fakes-assembly"></a>Adicionar um Assembly do Fakes
 
-1. Em **Gerenciador de soluções** , 
+1. Em **Gerenciador de soluções**, 
     - Para um projeto de .NET Framework mais antigo (estilo não SDK), expanda o nó **referências** do seu projeto de teste de unidade.
     ::: moniker range=">=vs-2019"
-    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies** , **projetos** ou **pacotes**.
+    - Para um projeto no estilo SDK direcionado a .NET Framework ou .NET Core, expanda o nó **dependências** para localizar o assembly que você gostaria de falsificar em **assemblies**, **projetos** ou **pacotes**.
     ::: moniker-end
     - Se você estiver trabalhando em Visual Basic, selecione **Mostrar todos os arquivos** na barra de ferramentas **Gerenciador de soluções** para ver o nó **referências** .
 
-2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime** , selecione **System.dll**.
+2. Selecione o assembly que contém as definições de classe para as quais você deseja criar shims. Por exemplo, se você quiser corrigir **DateTime**, selecione **System.dll**.
 
 3. No menu de atalhos, escolha **Adicionar Assembly do Fakes**.
 
@@ -221,7 +223,7 @@ Os stubs também são gerados para getters e setters de propriedades, para event
 
 ### <a name="verify-parameter-values"></a>Verificar valores de parâmetros
 
-Você pode verificar que, quando seu componente chama outro componente, ele passa os valores corretos. Você pode colocar uma asserção no stub ou armazenar o valor e verificá-lo no corpo principal do teste. Por exemplo:
+Você pode verificar que, quando seu componente chama outro componente, ele passa os valores corretos. Você pode colocar uma asserção no stub ou armazenar o valor e verificá-lo no corpo principal do teste. Por exemplo: 
 
 ```csharp
 [TestClass]
@@ -393,7 +395,7 @@ Se o código fosse chamar `GetValue<T>` com qualquer outra instanciação, o stu
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuais
 
-Nos exemplos anteriores, os stubs foram gerados a partir de interfaces. Você também pode gerar stubs a partir de uma classe que tenha membros virtuais ou abstratos. Por exemplo:
+Nos exemplos anteriores, os stubs foram gerados a partir de interfaces. Você também pode gerar stubs a partir de uma classe que tenha membros virtuais ou abstratos. Por exemplo: 
 
 ```csharp
 // Base class in application under test

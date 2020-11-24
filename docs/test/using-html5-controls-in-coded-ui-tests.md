@@ -1,5 +1,7 @@
 ---
 title: Usando controles HTML5 em testes de IU codificados
+description: Saiba mais sobre o suporte a testes de interface do usuário codificados para controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d902d31b0d417c32b7b3e1a2067a8bb5bcf77451
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289333"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598374"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -20,7 +22,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 

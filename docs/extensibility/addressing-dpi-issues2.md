@@ -1,5 +1,7 @@
 ---
 title: Endereçando DPI Issues2 | Microsoft Docs
+description: Saiba mais sobre os problemas envolvidos na programação para telas de alta resolução, como escalar verticalmente o conteúdo, os problemas de layout e o uso de APIs de dimensionamento de DPI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740097"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598452"
 ---
 # <a name="address-dpi-issues"></a>Problemas de endereço de DPI
 Um número cada vez maior de dispositivos é enviado com telas de "alta resolução". Essas telas normalmente têm mais de 200 pixels por polegada (ppi). Trabalhar com um aplicativo nesses computadores exigirá que o conteúdo seja dimensionado para atender às necessidades de exibição do conteúdo em uma distância de exibição normal do dispositivo. A partir de 2014, o destino principal para monitores de alta densidade é dispositivos de computação móvel (tablets, laptops Clamshell e telefones).
@@ -28,13 +30,13 @@ O Windows 8.1 e superior contém vários recursos para permitir que esses comput
 
 - O Windows pode dimensionar automaticamente o conteúdo em até 250% em novos dispositivos que excedem 280 PPI (a partir de Windows 8.1 S14).
 
-  O Windows tem uma maneira de lidar com a expansão da interface do usuário para aproveitar as maiores contagens de pixels. Um aplicativo opta por este sistema, declarando-se "reconhecimento de DPI do sistema". Os aplicativos que não fazem isso são escalados verticalmente pelo sistema. Isso pode resultar em uma experiência de usuário "difusa", em que todo o aplicativo é uniformemente alongado em pixels. Por exemplo:
+  O Windows tem uma maneira de lidar com a expansão da interface do usuário para aproveitar as maiores contagens de pixels. Um aplicativo opta por este sistema, declarando-se "reconhecimento de DPI do sistema". Os aplicativos que não fazem isso são escalados verticalmente pelo sistema. Isso pode resultar em uma experiência de usuário "difusa", em que todo o aplicativo é uniformemente alongado em pixels. Por exemplo: 
 
   ![Difusão de problemas de DPI](../extensibility/media/dpi-issues-fuzzy.png "Difusão de problemas de DPI")
 
   O Visual Studio opta por ser compatível com o dimensionamento de DPI e, portanto, não é "virtualizado".
 
-  O Windows (e o Visual Studio) aproveitam várias tecnologias de interface do usuário, que têm maneiras diferentes de lidar com fatores de dimensionamento definidos pelo sistema. Por exemplo:
+  O Windows (e o Visual Studio) aproveitam várias tecnologias de interface do usuário, que têm maneiras diferentes de lidar com fatores de dimensionamento definidos pelo sistema. Por exemplo: 
 
 - O WPF mede controles de forma independente de dispositivo (unidades, não pixels). A interface do usuário do WPF é dimensionada automaticamente para o DPI atual.
 
@@ -51,7 +53,7 @@ Embora o WPF já tenha alto reconhecimento de DPI, grande parte do nosso código
 Esta seção destina-se principalmente a desenvolvedores que estendem Visual Studio 2013. Para o Visual Studio 2015, use o serviço de imagem que é incorporado ao Visual Studio. Você também pode descobrir que precisa dar suporte/destino a várias versões do Visual Studio e, portanto, usar o serviço de imagem no 2015 não é uma opção, pois ela não existe em versões anteriores. Esta seção também é para você.
 
 ## <a name="scaling-up-images-that-are-too-small"></a>Dimensionamento de imagens muito pequenas
-Imagens muito pequenas podem ser escaladas verticalmente e renderizadas em GDI e WPF usando alguns métodos comuns. As classes auxiliares de DPI gerenciado estão disponíveis para integradores internos e externos do Visual Studio para abordar ícones de dimensionamento, bitmaps, imagestrips e imagelists. Os auxiliares C/C + + nativos baseados em Win32 estão disponíveis para dimensionar HICON, HBITMAP, HIMAGELIST e VsUI:: GdiplusImage. O dimensionamento de um bitmap normalmente requer apenas uma alteração de uma linha depois de incluir uma referência à biblioteca auxiliar. Por exemplo:
+Imagens muito pequenas podem ser escaladas verticalmente e renderizadas em GDI e WPF usando alguns métodos comuns. As classes auxiliares de DPI gerenciado estão disponíveis para integradores internos e externos do Visual Studio para abordar ícones de dimensionamento, bitmaps, imagestrips e imagelists. Os auxiliares C/C + + nativos baseados em Win32 estão disponíveis para dimensionar HICON, HBITMAP, HIMAGELIST e VsUI:: GdiplusImage. O dimensionamento de um bitmap normalmente requer apenas uma alteração de uma linha depois de incluir uma referência à biblioteca auxiliar. Por exemplo: 
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -82,7 +84,7 @@ A tabela a seguir mostra exemplos de como as imagens devem ser dimensionadas em 
 ![Escala de problemas de DPI](../extensibility/media/dpi-issues-scaling.png "Escala de problemas de DPI")
 
 ## <a name="layout-issues"></a>Problemas de layout
-Problemas de layout comuns podem ser evitados principalmente por manter os pontos na interface do usuário dimensionados e relativos entre si, em vez de usar locais absolutos (especificamente, em unidades de pixel). Por exemplo:
+Problemas de layout comuns podem ser evitados principalmente por manter os pontos na interface do usuário dimensionados e relativos entre si, em vez de usar locais absolutos (especificamente, em unidades de pixel). Por exemplo: 
 
 - As posições de layout/texto precisam ser ajustadas para considerar as imagens escaladas.
 
@@ -103,7 +105,7 @@ Problemas de layout comuns podem ser evitados principalmente por manter os ponto
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Usando a biblioteca/classe DPIHelper para dimensionar imagens e layout
 A biblioteca do Visual Studio DPI Helper está disponível em formulários nativos e gerenciados e pode ser usada fora do shell do Visual Studio por outros aplicativos.
 
-Para usar a biblioteca, vá para os [exemplos de extensibilidade do Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) e clone o exemplo de alta DPI_Images_Icons.
+Para usar a biblioteca, vá para os [exemplos de extensibilidade do Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) e clone o exemplo de High-DPI_Images_Icons.
 
 Em arquivos de origem, inclua *VsUIDpiHelper. h* e chame as funções estáticas da `VsUI::DpiHelper` classe:
 
@@ -120,15 +122,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 Para acessar as funções auxiliares de DPI do código gerenciado que será executado dentro do ambiente do Visual Studio:
 
-- O projeto de consumo deve fazer referência à versão mais recente do Shell MPF. Por exemplo:
+- O projeto de consumo deve fazer referência à versão mais recente do Shell MPF. Por exemplo: 
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Verifique se o projeto tem referências a **System. Windows. Forms**, **PresentationCore**e **PresentationUI**.
+- Verifique se o projeto tem referências a **System. Windows. Forms**, **PresentationCore** e **PresentationUI**.
 
-- No código, use o namespace **Microsoft. VisualStudio. PlatformUI** e chame funções estáticas da classe DpiHelper. Para tipos com suporte (pontos, tamanhos, retângulos e assim por diante), há funções de extensão fornecidas que retornam novos objetos dimensionados. Por exemplo:
+- No código, use o namespace **Microsoft. VisualStudio. PlatformUI** e chame funções estáticas da classe DpiHelper. Para tipos com suporte (pontos, tamanhos, retângulos e assim por diante), há funções de extensão fornecidas que retornam novos objetos dimensionados. Por exemplo: 
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -175,7 +177,7 @@ Para permitir que a interface do usuário use esse dimensionamento duplo, a marc
 
 Etapa 1: predimensionar a imagem para 200%, 300% e assim por diante usando NearestNeighbor.
 
-Predimensionar a imagem usando um conversor aplicado em uma associação ou com uma extensão de marcação XAML. Por exemplo:
+Predimensionar a imagem usando um conversor aplicado em uma associação ou com uma extensão de marcação XAML. Por exemplo: 
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -213,7 +215,7 @@ Como o WPF dimensionará a interface do usuário para o DPI atual usando a propr
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- Se o tamanho da imagem original não for conhecido, um LayoutTransform poderá ser usado para reduzir verticalmente o objeto de imagem final. Por exemplo:
+- Se o tamanho da imagem original não for conhecido, um LayoutTransform poderá ser usado para reduzir verticalmente o objeto de imagem final. Por exemplo: 
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >

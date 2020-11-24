@@ -1,5 +1,7 @@
 ---
 title: Adicionando controle de usuário à página inicial | Microsoft Docs
+description: Saiba como adicionar um controle de usuário de Windows Presentation Foundation (WPF) à página inicial no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011990"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597542"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Adicionar controle de usuário à página inicial
 
@@ -32,7 +34,7 @@ Primeiro, adicione um controle de usuário de Windows Presentation Foundation (W
 
 1. Crie uma página inicial usando nós criamos em [criar uma página inicial personalizada](../extensibility/creating-a-custom-start-page.md).
 
-2. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, clique em **Adicionar**e em **novo projeto**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução, clique em **Adicionar** e em **novo projeto**.
 
 3. No painel esquerdo da caixa de diálogo **novo projeto** , expanda o nó **Visual Basic** ou **Visual C#** e clique em **Windows**. No painel central, selecione **biblioteca de controle de usuário do WPF**.
 
@@ -111,7 +113,7 @@ Para implementar um controle de usuário do WPF, crie a interface do usuário em
 2. Preencha o manipulador de eventos SetButton_Click da seguinte maneira.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -179,17 +181,17 @@ Para disponibilizar esse controle para o projeto de página inicial, no arquivo 
 
 1. Copie o arquivo XAML e todos os arquivos de texto de suporte ou arquivos de marcação para a pasta *%USERPROFILE%\My Documentos\visual Studio 2015 \\ \ StartPages* .
 
-2. Se a página inicial fizer referência a qualquer controle ou tipo em assemblies que não são instalados pelo Visual Studio, copie os assemblies e cole-os na _pasta de instalação do Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
+2. Se a página inicial fizer referência a qualquer controle ou tipo em assemblies que não são instalados pelo Visual Studio, copie os assemblies e cole-os na _pasta de instalação do Visual Studio_**\\ \Common7\IDE\PrivateAssemblies**.
 
 3. Em um prompt de comando do Visual Studio, digite **devenv/Rootsuffix exp** para abrir uma instância experimental do Visual Studio.
 
-4. Na instância experimental, vá para a **Tools**  >  página de inicialização do ambiente**Opções**de ferramentas  >  **Environment**  >  **Startup** e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
+4. Na instância experimental, vá para a **Tools**  >  página de inicialização do ambiente **Opções** de ferramentas  >  **Environment**  >  **Startup** e selecione o arquivo XAML na lista suspensa **Personalizar página inicial** .
 
 5. No menu **Exibir** , clique em **página inicial**.
 
     Sua página inicial personalizada deve ser exibida. Se você quiser alterar todos os arquivos, deverá fechar a instância experimental, fazer as alterações, copiar e colar os arquivos alterados e, em seguida, abrir novamente a instância experimental para exibir as alterações.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Controles de contêiner do WPF](/previous-versions/bb675291(v=vs.110))
 - [Walkthrough: Adicionar XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

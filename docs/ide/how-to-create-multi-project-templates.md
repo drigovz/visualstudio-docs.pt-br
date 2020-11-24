@@ -1,5 +1,7 @@
 ---
 title: Criar modelos de multiprojeto
+description: Saiba como criar modelos de vários projetos no Visual Studio que podem atuar como contêineres para muitos projetos ao mesmo tempo.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284406"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597217"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojetos
 
@@ -46,14 +48,14 @@ Por exemplo, um arquivo *. zip* de modelo multiprojeto que tem dois projetos pod
 
 O arquivo *vstemplate* raiz para um modelo de vários projetos difere de um modelo de projeto único das seguintes maneiras:
 
-- O atributo **Type** do elemento **VSTemplate** tem o valor **ProjectGroup**, em vez de **Project**. Por exemplo:
+- O atributo **Type** do elemento **VSTemplate** tem o valor **ProjectGroup**, em vez de **Project**. Por exemplo: 
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- O elemento **TemplateContent** contém um elemento **ProjectCollection** que tem um ou mais elementos **ProjectTemplateLink** que definem os caminhos para os arquivos *vstemplate* dos projetos incluídos. Por exemplo:
+- O elemento **TemplateContent** contém um elemento **ProjectCollection** que tem um ou mais elementos **ProjectTemplateLink** que definem os caminhos para os arquivos *vstemplate* dos projetos incluídos. Por exemplo: 
 
     ```xml
     <TemplateContent>
@@ -69,7 +71,7 @@ O arquivo *vstemplate* raiz para um modelo de vários projetos difere de um mode
     ```
 
 > [!TIP]
-> Se você deseja que o modelo de multiprojetos apareça apenas na nova caixa de diálogo do projeto e não nos projetos individuais que ele contém, marque os modelos internos como [oculto](../extensibility/hidden-element-visual-studio-templates.md). Por exemplo:
+> Se você deseja que o modelo de multiprojetos apareça apenas na nova caixa de diálogo do projeto e não nos projetos individuais que ele contém, marque os modelos internos como [oculto](../extensibility/hidden-element-visual-studio-templates.md). Por exemplo: 
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

@@ -1,5 +1,7 @@
 ---
 title: Adicionando uma extensão de protocolo de servidor de linguagem | Microsoft Docs
+description: Saiba como criar uma extensão do Visual Studio que integre um servidor de idiomas com base no LSP (protocolo de servidor de idiomas).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860448"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598140"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão do Language Server Protocol
 
@@ -107,7 +109,7 @@ textDocument/renomear | sim
 
 Para criar uma extensão de serviço de idioma usando um servidor de linguagem baseado em LSP, primeiro verifique se você tem a carga de trabalho de **desenvolvimento de extensão do Visual Studio** instalada para sua instância do vs.
 
-Em seguida, crie um novo projeto VSIX navegando até **arquivo**  >  **novo projeto**projeto  >  VSIX de extensibilidade do**Visual C#**  >  **Extensibility**  >  **VSIX Project**:
+Em seguida, crie um novo projeto VSIX navegando até **arquivo**  >  **novo projeto** projeto  >  VSIX de extensibilidade do **Visual C#**  >  **Extensibility**  >  **VSIX Project**:
 
 ![Criar projeto VSIX](media/lsp-vsix-project.png)
 
@@ -125,7 +127,7 @@ O LSP não inclui especificações sobre como fornecer a colorização de texto 
 
 1. Crie uma pasta denominada "gramáticas" dentro de sua extensão (ou pode ser qualquer nome que você escolher).
 
-2. Dentro da pasta *gramáticas* , inclua quaisquer arquivos * \* . tmlanguage*, * \* . plist*, * \* . tmtheme*ou * \* . JSON* que você gostaria que forneçam a colorização personalizada.
+2. Dentro da pasta *gramáticas* , inclua quaisquer arquivos *\* . tmlanguage*, *\* . plist*, *\* . tmtheme* ou *\* . JSON* que você gostaria que forneçam a colorização personalizada.
 
    > [!TIP]
    > Um arquivo *. tmtheme* define como os escopos são mapeados para classificações do Visual Studio (chaves de cores nomeadas). Para obter orientação, você pode fazer referência ao arquivo global *. tmtheme* no diretório *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* .
@@ -292,7 +294,7 @@ O suporte para configurações específicas do servidor de idioma personalizado 
 
 Siga estas etapas abaixo para adicionar suporte para configurações para sua extensão de serviço de idioma LSP:
 
-1. Adicione um arquivo JSON (por exemplo, *MockLanguageExtensionSettings.js*) ao seu projeto que contém as configurações e seus valores padrão. Por exemplo:
+1. Adicione um arquivo JSON (por exemplo, *MockLanguageExtensionSettings.js*) ao seu projeto que contém as configurações e seus valores padrão. Por exemplo: 
 
     ```json
     {
@@ -342,7 +344,7 @@ Siga estas etapas abaixo para adicionar suporte para configurações para sua ex
 
 1. O usuário abre um espaço de trabalho que contém os arquivos que o servidor possui.
 2. O usuário adiciona um arquivo na pasta *. vs* chamada *VSWorkspaceSettings.jsno*.
-3. O usuário adiciona uma linha à *VSWorkspaceSettings.jsno* arquivo para uma configuração que o servidor fornece. Por exemplo:
+3. O usuário adiciona uma linha à *VSWorkspaceSettings.jsno* arquivo para uma configuração que o servidor fornece. Por exemplo: 
 
     ```json
     {

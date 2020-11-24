@@ -1,5 +1,7 @@
 ---
 title: Adicionando um controlador de menu a uma barra de ferramentas | Microsoft Docs
+description: Saiba como criar um controlador de menu e adicioná-lo a uma barra de ferramentas da janela de ferramentas no Visual Studio e, em seguida, implementar os comandos do controlador de menu e testá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cbbbc7784c112b33b5f720b306b8c93269bb82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903533"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597815"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>Adicionar um controlador de menu a uma barra de ferramentas
 Este tutorial se baseia na guia [Adicionar uma barra de ferramentas a uma janela](../extensibility/adding-a-toolbar-to-a-tool-window.md) de ferramentas e mostra como adicionar um controlador de menu à barra de ferramentas da janela de ferramentas. As etapas mostradas aqui também podem ser aplicadas à barra de ferramentas criada na guia [Adicionar uma barra de ferramentas](../extensibility/adding-a-toolbar.md) .
@@ -113,15 +115,15 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 1. No *TWTestCommandPackageGuids.cs*, adicione IDs de comando para os três itens de menu após as IDs de comando existentes.
 
     ```csharp
-    public const int cmdidMCItem1 = 0x130;
-    public const int cmdidMCItem2 = 0x131;
-    public const int cmdidMCItem3 = 0x132;
+    public const int cmdidMCItem1 = 0x130;
+    public const int cmdidMCItem2 = 0x131;
+    public const int cmdidMCItem3 = 0x132;
     ```
 
 2. No *TWTestCommand.cs*, adicione o código a seguir na parte superior da `TWTestCommand` classe.
 
     ```csharp
-    private int currentMCCommand; // The currently selected menu controller command
+    private int currentMCCommand; // The currently selected menu controller command
     ```
 
 3. No Construtor TWTestCommand, após a última chamada para o `AddCommand` método, adicione o código para rotear os eventos para cada comando por meio dos mesmos manipuladores.
@@ -136,7 +138,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
           EventHandler(OnMCItemClicked), cmdID);
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);
         commandService.AddCommand(mc);
-        // The first item is, by default, checked. 
+        // The first item is, by default, checked. 
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)
         {
             mc.Checked = true;
@@ -148,7 +150,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 4. Adicione um manipulador de eventos à classe **TWTestCommand** para marcar o comando selecionado como marcado.
 
     ```csharp
-    private void OnMCItemQueryStatus(object sender, EventArgs e)
+    private void OnMCItemQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)
@@ -161,7 +163,7 @@ A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a part
 5. Adicione um manipulador de eventos que exibe uma MessageBox quando o usuário seleciona um comando no controlador de menu:
 
     ```csharp
-    private void OnMCItemClicked(object sender, EventArgs e)
+    private void OnMCItemClicked(object sender, EventArgs e)
     {
         OleMenuCommand mc = sender as OleMenuCommand;
         if (null != mc)

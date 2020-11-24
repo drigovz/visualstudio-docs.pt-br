@@ -1,5 +1,7 @@
 ---
 title: Exibindo definições de tipo
+description: Saiba mais sobre os recursos de ir para definição e exibição de inspeção que permitem exibir facilmente a definição de um tipo ou membro.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592068"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597490"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -34,7 +36,7 @@ O recurso **ir para definição** navega até a origem de um tipo ou membro e ab
 
 ![Animação de Ir para Definição com o clique do mouse](../ide/media/click_gotodef.gif)
 
-Você pode alterar a tecla modificadora para o mouse-clique em **ir para definição** acessando **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral**e selecionando **ALT** ou **Ctrl** + **ALT** na lista suspensa **usar chave de modificador** . Você também pode desabilitar o clique do mouse para **Ir para Definição** desmarcando a caixa de seleção **Habilitar clique do mouse para Ir para Definição**.
+Você pode alterar a tecla modificadora para o mouse-clique em **ir para definição** acessando **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral** e selecionando **ALT** ou **Ctrl** + **ALT** na lista suspensa **usar chave de modificador** . Você também pode desabilitar o clique do mouse para **Ir para Definição** desmarcando a caixa de seleção **Habilitar clique do mouse para Ir para Definição**.
 
 ![Habilitando o clique do mouse para Ir para Definição](../ide/media/editor_options_mouse_click_gotodef.png)
 
@@ -42,7 +44,7 @@ Você pode alterar a tecla modificadora para o mouse-clique em **ir para defini�
 
 O recurso **Espiar Definição** permite visualizar a definição de um tipo sem sair do local atual no editor. Se você estiver usando um teclado, coloque o cursor de texto em algum lugar dentro do nome do tipo ou do membro e pressione **Alt + F12**. Se você estiver usando um mouse, selecione **Inspecionar Definição** no menu do clique com o botão direito.
 
-Para habilitar **Ctrl** + a funcionalidade CTRL**Click** , vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral**. Selecione a opção **Abrir definição na espiada de exibição** e clique em **OK** para fechar a caixa de diálogo **Opções**.
+Para habilitar **Ctrl** + a funcionalidade CTRL **Click** , vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **geral**. Selecione a opção **Abrir definição na espiada de exibição** e clique em **OK** para fechar a caixa de diálogo **Opções**.
 
 ![Configurando a opção de espiar definição com o clique do mouse](../ide/media/editor_options_peek_view.png)
 
@@ -69,7 +71,7 @@ Por exemplo, se você executar o comando **Ir para Definição** para o <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Exibir definições de fonte descompilada em vez de metadados (C#)
 
-Defina uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **ferramentas**  >  **Opções** na barra de menus. Em seguida, expanda **Editor de texto**  >  **C#**  >  **avançado**e selecione **habilitar navegação para fontes descompiladas**.
+Defina uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **ferramentas**  >  **Opções** na barra de menus. Em seguida, expanda **Editor de texto**  >  **C#**  >  **avançado** e selecione **habilitar navegação para fontes descompiladas**.
 
 ![Exibindo uma definição descompilada](media/go-to-definition-decompiled-sources.png)
 
