@@ -1,5 +1,7 @@
 ---
 title: Adicionar cabeçalho de arquivo
+description: Saiba como usar um arquivo EditorConfig para adicionar cabeçalhos de arquivo a arquivos, projetos e soluções existentes.
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5f2e4715c0333b02f120ec5f92d9f742196c04f3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810370"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870853"
 ---
 # <a name="add-file-header"></a>Adicionar cabeçalho de arquivo
 
@@ -28,7 +30,7 @@ Esta geração de código aplica-se a:
 
 **Por que:** Sua equipe exige que você inclua um cabeçalho de arquivo para fins de direitos autorais. 
 
-## <a name="how-to"></a>Instruções
+## <a name="how-to"></a>Como fazer
 
 1. Adicione um [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) a um projeto ou solução se você ainda não tiver um.
 
@@ -36,7 +38,7 @@ Esta geração de código aplica-se a:
 
 3. Defina o valor da regra como igual ao texto do cabeçalho que você deseja aplicar. Você pode usar `{fileName}` como um espaço reservado para o nome do arquivo.
 
-    ![Regra de cabeçalho do arquivo EditorConfig](media/add-file-header-rule.png)
+    ![Captura de tela do arquivo EditorConfig mostrando o valor de file_header_template.](media/add-file-header-rule.png)
 
     > [!NOTE]
     > Você não pode ter multilinhas explícitas em um EditorConfig e precisará usar o caractere de nova linha do UNIX para inserir novas linhas.
@@ -47,7 +49,7 @@ Esta geração de código aplica-se a:
 
 6. Selecione **Adicionar cabeçalho de arquivo**. 
 
-    ![Regra de cabeçalho do arquivo EditorConfig](media/add-file-header.png)
+    ![Captura de tela da opção Adicionar cabeçalho de arquivo.](media/add-file-header.png)
 
 7. Para aplicar o cabeçalho de arquivo a um projeto ou solução inteira, selecione **projeto** ou **solução** na opção **corrigir todas as ocorrências em:** .
 

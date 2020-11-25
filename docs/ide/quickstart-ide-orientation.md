@@ -1,5 +1,7 @@
 ---
 title: 'Início rápido: tour pelo IDE do Visual Studio'
+description: Saiba mais sobre algumas das janelas, menus e outros recursos de interface do usuário do IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238849"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870879"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
 
@@ -83,7 +85,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
    Uma caixa de diálogo é aberta com o título **Criar um novo projeto**. Aqui, você pode pesquisar, filtrar e, em seguida, escolher um modelo de projeto. Ela também mostra uma lista dos modelos de projeto usados recentemente por você.
 
-1. Na caixa de pesquisa na parte superior, digite **console** para filtrar a lista de tipos de projeto àqueles que contêm "console" no nome. Refine ainda mais os resultados da pesquisa pela separação **C# ** (ou outra linguagem de sua escolha) do seletor **Linguagem**.
+1. Na caixa de pesquisa na parte superior, digite **console** para filtrar a lista de tipos de projeto àqueles que contêm "console" no nome. Refine ainda mais os resultados da pesquisa pela separação **C#** (ou outra linguagem de sua escolha) do seletor **Linguagem**.
 
    ![Caixa de diálogo Novo Projeto no Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
@@ -147,7 +149,7 @@ A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente t
 
    ![Caixa de pesquisa Início Rápido no Visual Studio 2017](media/quickstart-IDE-quick-launch.png)
 
-   A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
+   A caixa de diálogo **Opções** é aberta na página de opções **Compilar e Executar**.
 
 ::: moniker-end
 
@@ -159,7 +161,7 @@ A caixa de pesquisa é uma maneira rápida e fácil de navegar em praticamente t
 
    ![Caixa de pesquisa no Visual Studio 2019](media/vs-2019/quick-launch-verbosity.png)
 
-   A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
+   A caixa de diálogo **Opções** é aberta na página de opções **Compilar e Executar**.
 
 ::: moniker-end
 

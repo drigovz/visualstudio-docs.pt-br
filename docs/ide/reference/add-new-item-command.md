@@ -1,5 +1,7 @@
 ---
 title: Comando Adicionar Novo Item
+description: Saiba como usar o comando Adicionar novo item para adicionar um novo item de solução ou conjunto de quadros à solução atual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38be691ae7c49ffbd6c98c9e4beb25b6ebb021b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac07b374ef08a963426b9bfd44f101a8863f04c8
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585685"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871282"
 ---
 # <a name="add-new-item-command"></a>Comando Adicionar Novo Item
 Adiciona um novo item de solução, como um .htm, .css, .txt ou conjunto de quadros à solução atual e a abre.

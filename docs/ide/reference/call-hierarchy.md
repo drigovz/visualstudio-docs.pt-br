@@ -1,5 +1,7 @@
 ---
 title: Localizar chamadas para um método
+description: Saiba como usar a janela hierarquia de chamada para navegar por todas as chamadas para e, às vezes, de um método, propriedade ou Construtor selecionado.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595794"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871399"
 ---
 # <a name="view-call-hierarchy"></a>Exibir hierarquia de chamada
 
@@ -69,5 +71,5 @@ A tabela a seguir descreve várias opções de menu de atalho que são disponibi
 |**Remover Raiz**|Remove o nó raiz selecionado do painel do modo de exibição de árvore. Esta opção está disponível somente de um nó raiz.<br /><br /> Você também pode usar o botão de barra de ferramentas **Remover Raiz** para remover o nó raiz selecionado.|
 |**Ir para Definição**|Executa o comando Ir para Definição no nó selecionado. Isso leva até a definição original de uma chamada de membro ou definição de variável.<br /><br /> Para executar o comando Ir para Definição, você também pode clicar duas vezes no nó selecionado ou pressionar F12 no nó selecionado.|
 |**Localizar todas as referências**|Executa o comando Localizar Todas as Referências no nó selecionado. Isso localiza todas as linhas de código em seu projeto que fazem referência a uma classe ou membro.<br /><br /> Também é possível usar SHIFT + F12 para executar o comando Localizar Todas as Referências no nó selecionado.|
-|**Cópia**|Copia o conteúdo do nó selecionado (mas não de seus subnós).|
+|**Copy**|Copia o conteúdo do nó selecionado (mas não de seus subnós).|
 |**Atualizar**|Recolhe o nó selecionado de forma que expandi-lo novamente exibe informações atualizadas.|

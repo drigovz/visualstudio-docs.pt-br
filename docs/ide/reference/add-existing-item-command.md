@@ -1,5 +1,7 @@
 ---
 title: Comando Adicionar Item Existente
+description: Saiba mais sobre o comando Adicionar item existente e como ele adiciona um arquivo existente a uma solução atual e o abre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d1e032150035258df4b1cc88253cefc555d826
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585698"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871022"
 ---
 # <a name="add-existing-item-command"></a>Comando Adicionar Item Existente
 Adiciona um arquivo existente à solução atual e abre-o.

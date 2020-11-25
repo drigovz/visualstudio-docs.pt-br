@@ -1,5 +1,7 @@
 ---
 title: Guia de produtividade
+description: Saiba mais sobre os atalhos de teclado e os recursos de produtividade no Visual Studio que podem ajudá-lo a escrever código, depurar código e manipular erros com eficiência.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808136"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870866"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guia de produtividade do Visual Studio
 
@@ -40,17 +42,17 @@ Economize tempo com os menus pesquisando rapidamente tudo o que você precisa, i
 
 Escreva código mais rapidamente usando os seguintes recursos.
 
-- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, você pode escolher um comando para duplicar com facilidade uma linha de código sem precisar copiá-la, reposicionar o cursor e, em seguida, colá-la. Escolha **Editar**  >  **duplicar** ou pressione **Ctrl** + **E**,**V**. Você também pode expandir ou contratar rapidamente uma seleção de texto escolhendo **Editar**  >  **Advanced**  >  **seleção de expansão** avançada ou **Editar**  >  **Advanced**  >  **seleção de contrato**avançada ou pressionando **Shift** + **ALT** + **=** ou **Shift** + **ALT** + **-** .
+- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, você pode escolher um comando para duplicar com facilidade uma linha de código sem precisar copiá-la, reposicionar o cursor e, em seguida, colá-la. Escolha **Editar**  >  **duplicar** ou pressione **Ctrl** + **E**,**V**. Você também pode expandir ou contratar rapidamente uma seleção de texto escolhendo **Editar**  >  **Advanced**  >  **seleção de expansão** avançada ou **Editar**  >  **Advanced**  >  **seleção de contrato** avançada ou pressionando **Shift** + **ALT** + **=** ou **Shift** + **ALT** + **-** .
 
 - **Use o IntelliSense**. À medida que você inserir código no editor, informações do IntelliSense, como Membros da Lista, Informações do Parâmetro, Informações Rápidas, Ajuda de Assinatura e Completar Palavras, serão exibidas. Esses recursos dão suporte à correspondência difusa de texto; por exemplo, as listas de resultados para membros da lista incluem não apenas entradas que começam com os caracteres que você inseriu, mas também entradas que contêm a combinação de caracteres em qualquer lugar em seus nomes. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
 - **Altere a inserção automática de opções do IntelliSense à medida que você insere o código**. Ao alternar o IntelliSense para o modo de sugestão, você pode especificar que opções do IntelliSense será inseridas somente se você as escolher explicitamente.
 
-     Para habilitar o modo de sugestão, escolha as teclas de barra de espaços **Ctrl** + **ALT** + **Spacebar** ou, na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **modo de conclusão de alternância**do IntelliSense.
+     Para habilitar o modo de sugestão, escolha as teclas de barra de espaços **Ctrl** + **ALT** + **Spacebar** ou, na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **modo de conclusão de alternância** do IntelliSense.
 
 - **Use trechos de código**. Você pode usar snippets internos ou criar seus próprios snippets.
 
-     Para inserir um trecho de código, na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **trecho de código de inserção** do IntelliSense ou **surround com**ou abra o menu de atalho em um arquivo e escolha **trecho de**código de  >  **inserção** ou **surround com**. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).
+     Para inserir um trecho de código, na barra de menus, escolha **Editar**  >  **IntelliSense**  >  **trecho de código de inserção** do IntelliSense ou **surround com** ou abra o menu de atalho em um arquivo e escolha **trecho de** código de  >  **inserção** ou **surround com**. Para obter mais informações, consulte [Snippets de Código](../ide/code-snippets.md).
 
 - **Corrija erros de código embutidos**. As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação. Essas ações podem ser aplicadas usando o ícone de ![ chave de fenda ](media/screwdriver-icon.png) ou ícones de ícone de lâmpada de lâmpada ou ![ ](media/light-bulb-icon.png) pressionando **ALT** + **Enter** ou **Ctrl** + **.** quando o cursor estiver sobre a linha de código apropriada. Consulte [Ações Rápidas](quick-actions.md) para obter mais informações.
 

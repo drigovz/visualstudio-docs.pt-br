@@ -1,5 +1,7 @@
 ---
 title: Comando Alias
+description: Saiba como usar o comando alias para criar um novo alias para um comando completo, o comando completo e os argumentos ou outro alias.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596899"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871503"
 ---
 # <a name="alias-command"></a>Comando Alias
 Cria um novo alias para um comando completo, comando e argumentos completos ou outro alias.

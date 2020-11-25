@@ -1,5 +1,7 @@
 ---
 title: Página Aplicativo das propriedades de projeto do C#
+description: Saiba como usar a página de aplicativo do designer de projeto C# para especificar as configurações e propriedades do aplicativo do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595820"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871373"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
@@ -99,7 +101,7 @@ As opções **Recursos** ajudam a definir as configurações de recursos para se
 
 Por padrão, este botão de opção é selecionado e as opções **Ícone** e **Manifesto** são habilitadas. Isso permite selecionar seu próprio ícone ou diferentes opções de geração de manifesto. Deixe esse botão de opção selecionado, a menos que você esteja fornecendo um arquivo de recurso para o projeto.
 
-**Cone**
+**Ícone**
 
 Define o arquivo *.ico* que você deseja usar como seu ícone do programa. Clique em **Procurar** para procurar um gráfico existente ou digite o nome do arquivo que você deseja. Consulte [-win32icon](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option) (Opções do compilador do C#) para obter mais informações.
 
@@ -121,6 +123,6 @@ Seleciona uma opção de geração de manifesto quando o aplicativo é executado
 
 Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.
 
-Insira um nome de caminho ou use o botão Procurar (**... **) para adicionar um arquivo de recurso Win32 ao projeto.
+Insira um nome de caminho ou use o botão Procurar (**...**) para adicionar um arquivo de recurso Win32 ao projeto.
 
 Para obter mais informações, confira [Criar arquivos de recurso para aplicativos .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

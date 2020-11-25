@@ -1,5 +1,7 @@
 ---
 title: Ações rápidas, lâmpadas e chaves de fenda
+description: Saiba como usar uma única ação rápida para refatorar, gerar ou modificar seu código.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036516"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870775"
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 

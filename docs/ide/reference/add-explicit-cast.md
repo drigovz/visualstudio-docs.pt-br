@@ -1,5 +1,7 @@
 ---
 title: Adicionar conversão explícita
+description: Saiba como adicionar automaticamente uma conversão explícita a uma expressão com base no contexto do seu código.
+ms.custom: SEO-VS-2020
 ms.date: 03/26/2020
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e159082266b848ce4742e436c706f3f71b2cc9ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8208ec9c84eb076ab5c313b3078d3853619fb06
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182970"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870840"
 ---
 # <a name="add-explicit-cast"></a>Adicionar conversão explícita
 

@@ -1,6 +1,8 @@
 ---
 title: Melhorar o desempenho se o Visual Studio estiver lento
 titleSuffix: ''
+description: Saiba como melhorar o desempenho do Visual Studio se você achar que ele está sendo executado lentamente.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 6495e8506e12c0c5e5f878a23c609fe53a401bde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e6f93b7709144e6682bc54d5686fde5ff650f56
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596990"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871464"
 ---
 # <a name="optimize-visual-studio-performance"></a>Otimizar o desempenho do Visual Studio
 

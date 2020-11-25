@@ -1,5 +1,7 @@
 ---
 title: Página de propriedades do aplicativo para aplicativos UWP
+description: Saiba como usar a página de aplicativo para especificar o assembly do Plataforma Universal do Windows (UWP) e as informações do pacote e a versão de destino do Windows 10.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77173083"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871360"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
 
