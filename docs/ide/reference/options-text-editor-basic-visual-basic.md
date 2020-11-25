@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, Basic (VB), Avançado
+description: Saiba como usar a página avançado na seção básica para alterar as configurações padrão da análise, as diretivas de importação e as propriedades de realce.
+ms.custom: SEO-VS-2020
 ms.date: 08/12/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 778cd1f9c126b176cafad8b33a147d284bea1b67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 530fffdf335232a76a54e66551487a89dc50b09a
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214640"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040986"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
@@ -51,7 +53,7 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
 
-## <a name="highlighting"></a>Realce
+## <a name="highlighting"></a>Realçar
 
  **Habilitar realce de referências e palavras-chave**
 

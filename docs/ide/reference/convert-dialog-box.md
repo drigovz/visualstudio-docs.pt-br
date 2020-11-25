@@ -1,5 +1,7 @@
 ---
 title: Conversores de projeto
+description: A caixa de diálogo Converter foi usada nas versões anteriores do Visual Studio e agora foi preterida.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595729"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040804"
 ---
 # <a name="convert-dialog-box"></a>Caixa de diálogo Converter
 

@@ -1,5 +1,6 @@
 ---
 title: Projetos Web na caixa de diálogo opções
+description: Saiba como usar as opções de projetos Web para definir o servidor Web que os projetos da Web usarão para desenvolvimento no Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -11,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102630"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044005"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 
-Define o servidor Web que projetos Web usarão para desenvolvimento dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acessar essas opções, selecione **Ferramentas > Opções** , expanda **Projetos e Soluções** e selecione **Projetos Web** .
+Define o servidor Web que projetos Web usarão para desenvolvimento dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Para acessar essas opções, selecione **Ferramentas > Opções**, expanda **Projetos e Soluções** e selecione **Projetos Web**.
 
 Por padrão, executar um projeto Web no Visual Studio usa o Visual Studio Development Server. Para obter mais informações, consulte [Servidores Web no Visual Studio para projetos Web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 
@@ -34,7 +35,7 @@ Selecione esta opção para usar o IIS Express, em vez do Visual Studio Developm
 
 Se essa opção for definida, você será avisado se tentar executar o aplicativo Web quando ele não for compilado sem erros.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Opções, Projetos e Soluções](projects-and-solutions-options-dialog-box.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](options-dialog-box-projects-and-solutions-web-projects.md)

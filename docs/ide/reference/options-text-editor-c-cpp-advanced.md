@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, C/C++, Avançado
+description: Saiba como usar a página avançado na seção C/C++ para alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe69471d231599c6e3eece0b56ff70fca5b6afab
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275207"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040336"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 
@@ -208,4 +210,4 @@ Se habilitado, você poderá colocar o texto selecionado entre parênteses digit
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md)
+- [Definindo opções do editor de Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)

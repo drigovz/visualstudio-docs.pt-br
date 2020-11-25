@@ -1,5 +1,7 @@
 ---
 title: Converter tipo anônimo em tupla
+description: Saiba como usar o menu ações rápidas e refatoração para converter um tipo anônimo em uma tupla no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7e89c5b5a05900fe42af62ef87f70292e94e662
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 452ba826a2765ef624e6c3d04bb20915a26c51fb
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094273"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040856"
 ---
 # <a name="convert-anonymous-type-to-tuple"></a>Converter tipo anônimo em tupla
 
@@ -40,7 +42,7 @@ Esta refatoração aplica-se a:
 
 2. Pressione **Enter** para aceitar a refatoração.
 
-   ![Converter tipo anônimo em tupla](media/convert-anon-to-tuple-complete.png)
+   ![Converter tipo anônimo em tupla aceita](media/convert-anon-to-tuple-complete.png)
 
 ## <a name="see-also"></a>Confira também
 

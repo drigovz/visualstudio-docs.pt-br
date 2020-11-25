@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, HTML (Web Forms), Formatação
+description: Saiba como usar a página formatação na seção HTML para definir opções de projeto HTML para formatar código no editor de códigos.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568315"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040973"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
-Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções**e, em seguida **Text Editor**, expanda  >  **formatação HTML do editor de texto (Web Forms)**  >  **Formatting**.
+Use a página de opções de **Formatação** para definir opções do projeto em HTML para formatação de códigos no Editor de Códigos. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida **Text Editor**, expanda  >  **formatação HTML do editor de texto (Web Forms)**  >  **Formatting**.
 
 ## <a name="capitalization"></a>Uso de maiúsculas
 
@@ -34,10 +36,10 @@ Quando essas opções são selecionadas, a exibição e editores XML de origem a
 
 Essas opções especificam como a marcação para controles de servidor Web é capitalizada.
 
-|Opção|Result|
+|Opção|Resultado|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do elemento fica exatamente como foi inserida.|
-|**Letras maiúsculas**|Nomes de elementos são reformatados para maiúsculas.|
+|**Maiúsculas**|Nomes de elementos são reformatados para maiúsculas.|
 |**Minúsculas**|Nomes de elementos são reformatados para minúsculas.|
 |**Definição do assembly**|A capitalização do elemento é determinada pelo modo como o elemento é definido na classe de tipo correspondente.|
 
@@ -45,10 +47,10 @@ Essas opções especificam como a marcação para controles de servidor Web é c
 
 Essas opções especificam se a formatação automática altera os nomes dos atributos e das propriedades HTML para maiúsculas ou minúsculas, ou se os mantêm como foram inseridos.
 
-|Opção|Result|
+|Opção|Resultado|
 |---------------------------------|------------------------------|
 |**Como inserido**|A capitalização do atributo fica exatamente como foi inserida.|
-|**Letras maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
+|**Maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
 |**Minúsculas**|Os nomes de atributo são reformatados para minúsculas.|
 
 ## <a name="automatic-formatting-options"></a>Opções de formatação automática

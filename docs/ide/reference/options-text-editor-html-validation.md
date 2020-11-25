@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, HTML (Web Forms), Validação
+description: Saiba como usar a página validação na seção HTML para definir as preferências de como o editor de HTML verifica a sintaxe da marcação HTML em seu documento.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568276"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040557"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opções, Editor de Texto, HTML (Web Forms), Validação
 
-Use a página de opções **Validação** para definir preferências de como o editor de HTML verifica a sintaxe de marcação HTML em seu documento. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções**e, em seguida **Text Editor**, expanda validação de  >  **HTML do editor de texto (Web Forms)**  >  **Validation**.
+Use a página de opções **Validação** para definir preferências de como o editor de HTML verifica a sintaxe de marcação HTML em seu documento. Para acessar essa página, na barra de menus, escolha **ferramentas**  >  **Opções** e, em seguida **Text Editor**, expanda validação de  >  **HTML do editor de texto (Web Forms)**  >  **Validation**.
 
 ## <a name="validation"></a>Validação
 

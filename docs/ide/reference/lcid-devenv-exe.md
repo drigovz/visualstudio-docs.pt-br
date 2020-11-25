@@ -1,5 +1,7 @@
 ---
 title: -LCID (devenv.exe)
+description: Saiba como usar a opção de linha de comando do LCID devenv para definir o idioma padrão usado para texto, moeda e outros valores dentro do IDE.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eda3a4d9242655af1b018664273ceb693c7e775c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77557939"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043979"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -43,7 +45,7 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="remarks"></a>Comentários
 
-Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é persistida entre sessões, e o IDE mostra essa alteração na caixa **Tools**de  >  **Options**  >  **Environment**  >  **idioma configurações internacionais**do ambiente de opções  >  **Language** de ferramentas.
+Carrega o IDE e define o idioma natural padrão do ambiente. Essa alteração é persistida entre sessões, e o IDE mostra essa alteração na caixa **Tools** de  >  **Options**  >  **Environment**  >  **idioma configurações internacionais** do ambiente de opções  >  **Language** de ferramentas.
 
 Se o idioma especificado não estiver disponível em seu sistema, a opção `/LCID` será ignorada.
 

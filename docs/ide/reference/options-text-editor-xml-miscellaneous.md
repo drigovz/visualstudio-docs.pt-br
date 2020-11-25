@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de texto, XML, Diversos
+description: Saiba como usar a página diversos na seção XAML para alterar as configurações de preenchimento automático e esquema para o editor de XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,16 +10,16 @@ ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02a2a133031661ecbf9c3719f3b1993f3b20b5b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568120"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040106"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
-Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar opções de XML diversas, escolha **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **XML**e, em seguida, escolha **diversos**.
+Use a página de opções **Diversos** para alterar as configurações de preenchimento automático e de esquema para o Editor XML. Para acessar opções de XML diversas, escolha **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **XML** e, em seguida, escolha **diversos**.
 
 ## <a name="auto-insert"></a>Inserir automaticamente
 

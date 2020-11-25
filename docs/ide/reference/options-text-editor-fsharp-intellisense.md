@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, F#, IntelliSense
+description: 'Saiba como usar a página do IntelliSense na seção F # para modificar as configurações do IntelliSense do editor de texto para F #.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72666224"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039608"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opções, Editor de Texto, F#, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para F#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções**e, em seguida, escolha **Editor de texto**  >  **F #**  >  **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar algumas configurações do editor de texto para F#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções** e, em seguida, escolha **Editor de texto**  >  **F #**  >  **IntelliSense**.
 
 ## <a name="completion-lists"></a>Listas de Conclusão
 

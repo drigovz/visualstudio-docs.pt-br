@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de texto, XAML, Diversos
+description: Saiba como usar a página diversos na seção XML para especificar como os elementos e atributos são formatados em seus documentos XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f646d52e3aae3d52f6cd24d75421fbdc71d30d66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5662381d025fa2c74ac82ac217122ea9097ab14
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544086"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040960"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -43,7 +45,7 @@ Use a página de propriedades **Diversos** para especificar como elementos e atr
 
 Use essa configuração para controlar quando marcas e aspas são geradas automaticamente.
 
-|Name|Descrição|
+|Nome|Descrição|
 |-|-|
 |**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|
 |**Citações de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|

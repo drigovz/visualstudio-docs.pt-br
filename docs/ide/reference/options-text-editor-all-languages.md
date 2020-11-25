@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, Todos os Idiomas
+description: Saiba como usar a página Geral na seção todos os idiomas para alterar o comportamento padrão do editor de código no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -42,12 +44,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 682097ca08bd570ac025e7b6a1861e45a8f761e4
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566872"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040999"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo opções: editor de texto \> todos os idiomas
 
@@ -78,7 +80,7 @@ Quando selecionada, a sintaxe completa para a declaração ou procedimento atual
 
 Quando esta opção está selecionada e a caixa de seleção **Quebra automática de linha** está desmarcada, você pode clicar em qualquer lugar além do final de uma linha no Editor de Códigos e digitar. Esse recurso pode ser usado para posicionar comentários em um ponto consistente ao lado do seu código.
 
-**Quebra automática de palavra**
+**Quebra automática de linha**
 
 Quando selecionada, qualquer parte de uma linha que se estenda horizontalmente além da área visível do editor é exibida automaticamente na próxima linha. Selecionar essa opção habilita a opção **Mostrar glifos visuais para quebra automática de linha**.
 

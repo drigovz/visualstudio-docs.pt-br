@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, C#, IntelliSense
+description: Saiba como usar a página IntelliSense na seção C# para modificar as configurações que afetam o comportamento do IntelliSense para C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e727fad6d3cb15f70cf630b1077170d16d28b7f
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596210"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039738"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Opções, Editor de Texto, C#, IntelliSense
 
-Use a página de opções **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense para C#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções**e, em seguida, escolha o **Editor de texto**  >  **C#**  >  **IntelliSense**.
+Use a página de opções **IntelliSense** para modificar as configurações que afetam o comportamento do IntelliSense para C#. Para acessar essa página de opções, escolha **ferramentas**  >  **Opções** e, em seguida, escolha o **Editor de texto**  >  **C#**  >  **IntelliSense**.
 
 As opções do **IntelliSense** contém as seguintes seções:
 

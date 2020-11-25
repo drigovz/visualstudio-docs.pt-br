@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Opções
+description: Saiba mais sobre a caixa de diálogo opções, seu layout e como o Visual estúdios aplica as opções que você seleciona para seus projetos e soluções.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211255"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039803"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Caixa de diálogo Opções (Visual Studio)
 
@@ -39,6 +41,6 @@ Opções para um recurso IDE não aparecem no painel de navegação até que o r
 
 Clicar em OK na caixa de diálogo **Opções** salva todas as configurações em todas as páginas. Clicar em Cancelar em qualquer página cancela todas as solicitações de alteração, incluindo qualquer uma recém feita em outras páginas de **Opções**. Algumas alterações nas configurações de opção, como aquelas feitas na [Caixa de Diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), apenas entrarão em vigor depois que você fechar e reabrir o Visual Studio.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)

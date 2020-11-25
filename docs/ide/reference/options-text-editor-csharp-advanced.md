@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, C#, Avançado
+description: Saiba como usar a página avançado na seção C# para modificar as configurações de formatação do editor, refatoração de código e comentários de documentação XML para C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626184"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039886"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
@@ -145,7 +147,7 @@ Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre 
 
    Quando selecionado, insere os elementos XML dos comentários da documentação XML depois que você digita a introdução de comentário `///`. Para obter mais informações sobre a documentação XML, confira [Comentários da documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Como inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentários de documentação XML (guia de programação C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)

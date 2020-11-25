@@ -1,5 +1,7 @@
 ---
 title: -Project (devenv.exe)
+description: Saiba como usar a opção de linha de comando devenv do projeto para identificar um único projeto dentro da configuração da solução especificada para compilar, limpar, recompilar ou implantar o projeto.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b57a5bd51ff20de8da87798aa398db04bc1c7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90c1cdf37ddda7209b4f951e42ad07720e5cc40b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567769"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040102"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 

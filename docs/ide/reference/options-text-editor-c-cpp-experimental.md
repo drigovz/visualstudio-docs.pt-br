@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, C/C++, Experimental
+description: Saiba como usar a página experimental na seção C/C++ para alterar os comportamentos experimentais relacionados ao IntelliSense e ao banco de dados de navegação.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77278706"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040297"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 
@@ -65,6 +67,6 @@ Você pode procurar outros recursos do editor de texto no [Visual Studio Marketp
 
 ## <a name="see-also"></a>Confira também
 
-- [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md)
+- [Definindo opções do editor de Language-Specific](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refatoração em C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

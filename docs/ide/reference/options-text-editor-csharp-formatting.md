@@ -1,5 +1,7 @@
 ---
 title: Opções de formatação do editor de C#
+description: Saiba como usar a página opções de formatação e suas subpáginas para definir opções de formatação de código no editor de código quando você estiver programando em C#.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57d95cd3f3dcf68e7af143bdde3a16474beda20c
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a29f298579d571595cbf537f99ed67b333fbbb9c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659271"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039765"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Caixa de diálogo opções: \> formatação de \> estilo de código C# do editor de texto \>
 
@@ -94,6 +96,6 @@ As opções de recuo nessa página se aplicam quando o código é formatado auto
 >
 > ![Opções de guias do editor de texto em C# no Visual Studio](media/csharp-tabs-options.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo geral, ambiente, opções](../../ide/reference/general-environment-options-dialog-box.md)

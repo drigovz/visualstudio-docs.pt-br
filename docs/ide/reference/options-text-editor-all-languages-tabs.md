@@ -1,5 +1,7 @@
 ---
 title: Opções, Editor de Texto, Todos os Idiomas, Guias
+description: Saiba como usar a página guias na seção todos os idiomas para alterar o comportamento padrão das guias do editor de código no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e66654c8ceefa2cb7983c29f441cbb0f9cf97aff
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594741"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043966"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opções, Editor de Texto, Todos os Idiomas, Guias
 
@@ -73,7 +75,7 @@ Quando selecionada, novas linhas serão posicionadas para caber no o contexto do
 
 Por exemplo, as linhas incluídas entre uma chave de abertura ({) e uma chave de fechamento (}) podem ser recuadas automaticamente em uma parada de tabulação extra da posição das chaves alinhadas.
 
-## <a name="tabs"></a>Tabulações
+## <a name="tabs"></a>Guias
 
 Tamanho da tabulação
 
