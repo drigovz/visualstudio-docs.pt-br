@@ -1,6 +1,8 @@
 ---
 title: 'Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer | Microsoft Docs'
 titleSuffix: ''
+description: Neste tutorial, importe um fluxo de trabalho reutilizável criado no SharePoint Designer para um projeto de fluxo de trabalho do Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298028"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970189"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer
 
@@ -71,7 +73,7 @@ ms.locfileid: "92298028"
 
 4. Na caixa de diálogo **novo** , escolha **modelos do SharePoint** na lista no painel esquerdo e escolha site de **equipe** na lista no painel à direita.
 
-5. Na caixa **especificar o local do site** , substitua o **subsite** do Word na URL por **SPD1**e, em seguida, escolha o botão **OK** .
+5. Na caixa **especificar o local do site** , substitua o **subsite** do Word na URL por **SPD1** e, em seguida, escolha o botão **OK** .
 
     Isso abre o novo subsite no SharePoint Designer. Feche esta instância do SharePoint Designer e volte para a primeira instância (o site de nível superior).
 
@@ -90,7 +92,7 @@ ms.locfileid: "92298028"
 
 3. Na caixa **nome** , insira **fluxo de trabalho da tarefa SPD**.
 
-4. Na lista **tipo de conteúdo** , escolha **tarefa**e, em seguida, escolha o botão **OK** .
+4. Na lista **tipo de conteúdo** , escolha **tarefa** e, em seguida, escolha o botão **OK** .
 
      O fluxo de trabalho é aberto no designer de fluxo de trabalho do SharePoint Designer.
 
@@ -157,9 +159,9 @@ ms.locfileid: "92298028"
 
 1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**.
 
-2. Na caixa de diálogo **novo projeto** , expanda o nó do **SharePoint** em **Visual C#** ou **Visual Basic**e, em seguida, escolha o nó **2010** .
+2. Na caixa de diálogo **novo projeto** , expanda o nó do **SharePoint** em **Visual C#** ou **Visual Basic** e, em seguida, escolha o nó **2010** .
 
-3. No painel **modelos** , escolha o modelo **importar fluxo de trabalho do SharePoint 2010 reutilizável** , deixe o nome do projeto como **WorkflowImportProject1**e, em seguida, escolha o botão **OK** .
+3. No painel **modelos** , escolha o modelo **importar fluxo de trabalho do SharePoint 2010 reutilizável** , deixe o nome do projeto como **WorkflowImportProject1** e, em seguida, escolha o botão **OK** .
 
     O assistente para personalização do SharePoint é exibido.
 
@@ -184,7 +186,7 @@ ms.locfileid: "92298028"
 
 9. No arquivo *Elements.xml* , exclua `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. Em **Gerenciador de soluções**, escolha **WorkflowImportProject1**e, na barra de menus, escolha **projeto**  >  **definido como projeto de inicialização** para definir **WorkflowImportProject1** como o item de inicialização.
+10. Em **Gerenciador de soluções**, escolha **WorkflowImportProject1** e, na barra de menus, escolha **projeto**  >  **definido como projeto de inicialização** para definir **WorkflowImportProject1** como o item de inicialização.
 
      Isso exibe a lista imediatamente quando você depura o projeto.
 
@@ -235,7 +237,7 @@ ms.locfileid: "92298028"
 
      A caixa de diálogo **tarefas – novo item** é aberta.
 
-4. Na caixa **título** , digite **nova tarefa**e, em seguida, escolha o botão **salvar** .
+4. Na caixa **título** , digite **nova tarefa** e, em seguida, escolha o botão **salvar** .
 
 5. Na guia **ferramentas de lista** , escolha o botão **lista** e, em seguida, escolha o botão **configurações de lista** .
 
@@ -249,20 +251,20 @@ ms.locfileid: "92298028"
 
 8. Na lista **fluxo de trabalho** , escolha **teste de fluxo de trabalho WorkflowImportProject1-SPD**.
 
-9. Na caixa **nome** , insira **teste de fluxo de trabalho SPD**e, em seguida, escolha o botão **OK** .
+9. Na caixa **nome** , insira **teste de fluxo de trabalho SPD** e, em seguida, escolha o botão **OK** .
 
 10. Na barra de início rápido, escolha a lista **tarefas** .
 
-11. Escolha a seta ao lado de **nova tarefa**e, em seguida, na lista, escolha **fluxos de trabalho**.
+11. Escolha a seta ao lado de **nova tarefa** e, em seguida, na lista, escolha **fluxos de trabalho**.
 
-12. Na seção **Iniciar um novo fluxo de trabalho** , escolha o link para **teste de fluxo de trabalho SPD**e, em seguida, escolha o botão **Iniciar** para iniciar o fluxo de trabalho.
+12. Na seção **Iniciar um novo fluxo de trabalho** , escolha o link para **teste de fluxo de trabalho SPD** e, em seguida, escolha o botão **Iniciar** para iniciar o fluxo de trabalho.
 
     > [!NOTE]
     > Como alternativa, você pode associar automaticamente um fluxo de trabalho a uma lista executando o assistente de configurações de fluxo de trabalho e definindo o fluxo de trabalho para associar automaticamente.
 
      Observe que duas ações são executadas pelo fluxo de trabalho: seu nome aparece na coluna **atribuído à** tarefa e um anúncio é exibido na lista **comunicados** .
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Importar itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

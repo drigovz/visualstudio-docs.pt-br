@@ -1,5 +1,7 @@
 ---
 title: Passo a passos de desenvolvimento do SharePoint | Microsoft Docs
+description: Consulte links para obter orientações que mostram como desenvolver e implantar soluções do SharePoint usando o Visual Studio. Os links são organizados por área de recursos.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979465"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970324"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Passo a passos de desenvolvimento do SharePoint
   As instruções a seguir demonstram como desenvolver e implantar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -93,5 +95,5 @@ ms.locfileid: "62979465"
 |[Walkthrough: estender Gerenciador de Servidores para exibir Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de Servidores. Este passo a passos também demonstra como criar um comando do SharePoint para chamar o modelo de objeto do SharePoint Server.|
 |[Walkthrough: chamar o modelo de objeto de cliente do SharePoint em uma extensão Gerenciador de Servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Demonstra como adicionar novos nós para exibir Web Parts em sites do SharePoint que são exibidos no Gerenciador de Servidores. Este passo a passos também demonstra como usar o modelo de objeto de cliente do SharePoint.|
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Exemplos e orientações de desenvolvimento do SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

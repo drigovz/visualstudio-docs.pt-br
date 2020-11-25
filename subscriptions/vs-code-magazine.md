@@ -8,11 +8,11 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
 ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005905"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970493"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
 
@@ -76,7 +76,7 @@ R: a revista de código coleta seu endereço, independentemente de a assinatura 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

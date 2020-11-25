@@ -1,5 +1,7 @@
 ---
 title: Solução de problemas de soluções do SharePoint | Microsoft Docs
+description: Veja quais problemas ou alertas podem ocorrer ao depurar soluções do SharePoint usando o depurador do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298389"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970266"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [Depurando soluções de fluxo de trabalho do SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
@@ -99,7 +101,7 @@ ms.locfileid: "92298389"
  Depois de criar e implantar uma definição de site usando uma versão diferente do inglês do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (ou seja, uma versão com uma localidade [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] diferente de 1033), a guia **personalizações do SharePoint** não aparecerá na caixa de **seleção de modelo** e o novo modelo de site não aparecerá na página **novo site do SharePoint** .
 
 ### <a name="error-message"></a>Mensagem de erro
- Nenhum.
+ nenhuma.
 
 ### <a name="resolution"></a>Resolução
  Esse problema ocorre devido a um valor incorreto na propriedade **path** do arquivo de configuração de definição de site do WebTemp, como *webtemp_SiteDefinitionProject1.xml*. Na propriedade **path** do arquivo WebTemp, localizado no **local de implantação**, altere 1033 para a localidade apropriada [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Por exemplo, para usar uma localidade japonesa, altere o valor para 1041. Para obter mais informações, consulte o artigo sobre [IDs de localidade atribuídas pela Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -139,7 +141,7 @@ ms.locfileid: "92298389"
  Quando você cria um projeto receptor de eventos e seleciona determinados eventos da Web, como "um site está sendo excluído", o evento nunca ocorre.
 
 ### <a name="error-message"></a>Mensagem de erro
- Nenhum.
+ nenhuma.
 
 ### <a name="resolution"></a>Resolução
  Esse problema ocorre porque o escopo do recurso deve ser "site" para lidar com eventos no nível do site, mas o escopo do recurso padrão para projetos receptores de eventos é "Web". Os eventos da Web afetados são:
@@ -158,7 +160,7 @@ ms.locfileid: "92298389"
 
 1. No **Gerenciador de soluções**, abra o arquivo *. Feature* do receptor de eventos no **Designer de recursos** clicando duas vezes no arquivo ou abrindo o menu de atalho e escolhendo **abrir**.
 
-2. Escolha a seta ao lado de **escopo**e escolha **site** na lista exibida.
+2. Escolha a seta ao lado de **escopo** e escolha **site** na lista exibida.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>O erro de implantação aparece depois que o nome de um identificador em um projeto de modelo de conectividade de dados corporativos é alterado
  Esse problema ocorre se você alterar o nome do identificador de uma entidade em um modelo de BDC (conectividade de dados corporativos) e, em seguida, tentar implantar a solução.
@@ -212,7 +214,7 @@ ms.locfileid: "92298389"
  Esse problema ocorre se você renomear uma instância de lista importada e executá-la no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
 ### <a name="error-message"></a>Mensagem de erro
- Erro de compilação: ocorreu um erro na etapa de implantação ' ativar recursos ': o arquivo Template\Features \\ [*nome*do<em>recurso</em>de*importação de projeto*] \Files\Lists \\ [nome da<em>lista</em>*antiga*] \Schema.xml não existe.
+ Erro de compilação: ocorreu um erro na etapa de implantação ' ativar recursos ': o arquivo Template\Features \\ [*nome* do <em>recurso</em>de *importação de projeto*] \Files\Lists \\ [nome da <em>lista</em>*antiga*] \Schema.xml não existe.
 
 ### <a name="resolution"></a>Resolução
  Quando você importa uma instância de lista, um atributo chamado CustomSchema é adicionado ao arquivo de Elements.xml da instância de lista. Elements.xml inclui o caminho de um schema.xml personalizado para a instância de lista. Quando você renomeia a instância de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , o caminho de implantação do schema.xml personalizado é alterado, mas o valor do caminho do atributo CustomSchema não é atualizado. Como resultado, a instância de lista não pode localizar o arquivo de *schema.xml* no caminho antigo que é especificado pelo atributo CustomSchema quando o recurso é ativado.
@@ -263,7 +265,7 @@ ms.locfileid: "92298389"
  Se você exportar uma solução do SharePoint, importar a solução para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o e, em seguida, implantar a solução de volta no mesmo site do qual ela foi exportada, a solução do SharePoint original será substituída. Esse problema não ocorrerá se você implantar a solução em um servidor que não tenha a solução original ativada.
 
 ### <a name="error-message"></a>Mensagem de erro
- Nenhum.
+ nenhuma.
 
 ### <a name="resolution"></a>Resolução
  Para evitar a substituição de uma solução no site do qual ela foi exportada, altere os GUIDs da SolutionId e as IDs de recurso de todos os recursos importados no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto.
@@ -277,7 +279,7 @@ ms.locfileid: "92298389"
 ### <a name="resolution"></a>Resolução
  Para resolver esse problema, verifique se o valor da propriedade URL do site do projeto do SharePoint no Visual Studio corresponde à URL atribuída à zona padrão para os mapeamentos de acesso alternativos do aplicativo Web. Você não pode resolver o erro usando outra zona, como intranet, para a URL. A URL do site para o projeto e a URL na zona padrão devem corresponder. Para acessar mapeamentos alternativos de acesso, abra o utilitário administração central do SharePoint 2010, escolha o link **Gerenciamento de aplicativos** e, em **aplicativos Web**, escolha o link **configurar mapeamentos alternativos de acesso** . Para obter mais informações, consulte [criar zonas para aplicativos Web](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Solução de problemas de empacotamento e implantação do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

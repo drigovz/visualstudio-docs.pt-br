@@ -1,5 +1,7 @@
 ---
 title: Solução de problemas de empacotamento e implantação do SharePoint | Microsoft Docs
+description: Entenda e corrija vários problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981932"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969947"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solução de problemas de empacotamento e implantação do SharePoint
   Este tópico aborda vários problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -68,7 +70,7 @@ ms.locfileid: "72981932"
  A página do SharePoint leva muito tempo para aparecer ao implantar uma Web Part Visual na pasta bin em [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)] , [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] . Se você alterar todos os arquivos em um diretório de nível superior [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] , como o diretório bin, todo o aplicativo Web será recompilado. Isso pode causar um atraso de até 25 segundos para que a página do SharePoint seja renderizada.
 
 ### <a name="error-message"></a>Mensagem de erro
- Nenhum.
+ nenhuma.
 
 ### <a name="resolution"></a>Resolução
  Para contornar esse problema, execute as seguintes etapas:
@@ -110,6 +112,6 @@ ms.locfileid: "72981932"
 
  Para remover esse aviso, compile o projeto e, em seguida, feche e reabra o designer ou desabilite a opção de cancelamento automático para o projeto. Para fazer isso, desmarque a caixa de seleção **Cancelar automaticamente após a depuração** na guia **SharePoint** da caixa de diálogo Propriedades do projeto.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

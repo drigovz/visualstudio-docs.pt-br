@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400109"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970608"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: usar trechos XML
 
@@ -28,7 +28,7 @@ Depois que o snippet XML foi adicionado ao editor, todos os campos editáveis no
 Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 > [!NOTE]
-> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado ( **Ctrl** + **K** e **Ctrl** + **X** ).
+> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado (**Ctrl** + **K** e **Ctrl** + **X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para inserir snippets do menu de atalho
 
@@ -78,7 +78,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 Os procedimentos a seguir descrevem como acessar o comando **surround with** .
 
 > [!NOTE]
-> O comando **surround with** também está disponível por meio do atalho de teclado ( **Ctrl** + **K** , depois **Ctrl** + **S** ).
+> O comando **surround with** também está disponível por meio do atalho de teclado (**Ctrl** + **K**, depois **Ctrl** + **S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar surround with no menu de contexto
 
@@ -112,7 +112,7 @@ Pressionar **Enter** ou **ESC** cancela a edição de campo e retorna o editor p
 
 As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do **campo de trecho de código** no painel **fontes e cores** da caixa de diálogo **Opções** . Para obter mais informações, consulte [como alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Snippets XML](../xml-tools/xml-snippets.md)
 - [Como gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075412"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970227"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analisar o uso de memória usando a ferramenta de alocação de objeto .NET
 
@@ -68,21 +68,21 @@ Você pode filtrar os dados tabulares para exibir a atividade apenas para um int
 
 A exibição de **alocação** mostra o local dos objetos que estão Alocando memória e a quantidade de memória que esses objetos estão alocando.
 
-- A coluna **tipo**   é uma lista de classes e estruturas que ocupam memória. Clique duas vezes em um tipo para exibir seu backtrace como uma árvore de chamada invertida. Somente na exibição de **alocação** , você pode ver os itens dentro da categoria selecionada que ocupam memória.
+- A coluna **tipo** é uma lista de classes e estruturas que ocupam memória. Clique duas vezes em um tipo para exibir seu backtrace como uma árvore de chamada invertida. Somente na exibição de **alocação** , você pode ver os itens dentro da categoria selecionada que ocupam memória.
 
-- A coluna **alocações**   mostra o número de objetos que ocupam memória dentro de um tipo ou função de alocação específico. Essa coluna aparece apenas nas exibições de **alocação**, **árvore de chamadas**e **funções**   .
+- A coluna **alocações** mostra o número de objetos que ocupam memória dentro de um tipo ou função de alocação específico. Essa coluna aparece apenas nas exibições de **alocação**, **árvore de chamadas** e **funções** .
 
-- Os **bytes**   e as colunas de **tamanho médio (bytes)**   não aparecem por padrão. Para mostrá-los, clique com o botão direito do mouse na coluna **tipo**   ou **alocações**e   selecione as opções **bytes**   e **tamanho médio (bytes)**   para adicioná-los ao gráfico. 
+- Os **bytes** e as colunas de **tamanho médio (bytes)** não aparecem por padrão. Para mostrá-los, clique com o botão direito do mouse na coluna **tipo** ou **alocações** e selecione as opções **bytes** e **tamanho médio (bytes)** para adicioná-los ao gráfico. 
 
-   As duas colunas são semelhantes ao **total (alocações)** e à **própria (alocações)**, exceto pelo fato de que elas mostram a quantidade de memória ocupada em vez do número de objetos que ocupam memória. Essas colunas aparecem apenas na exibição de **alocação** .
+   As duas colunas são semelhantes ao **total (alocações)** e à **própria (alocações)**, exceto pelo fato de que elas mostram a quantidade de memória ocupada em vez do número de objetos que ocupam memória. Essas colunas aparecem apenas na exibição de **alocação** .
 
-- A coluna **nome do módulo**   mostra o módulo que contém a função ou o processo que está chamando.
+- A coluna **nome do módulo** mostra o módulo que contém a função ou o processo que está chamando.
 
-Todas essas colunas são classificável. Para as colunas do **nome do módulo** e do **tipo** , você pode classificar itens em ordem alfabética nas ordens crescente ou decrescente. Para **alocações**, **bytes**   e **tamanho médio (bytes)**, você pode classificar itens aumentando ou diminuindo o valor numérico.
+Todas essas colunas são classificável. Para as colunas do **nome do módulo** e do **tipo** , você pode classificar itens em ordem alfabética nas ordens crescente ou decrescente. Para **alocações**, **bytes** e **tamanho médio (bytes)**, você pode classificar itens aumentando ou diminuindo o valor numérico.
 
 #### <a name="symbols"></a>Símbolos
 
-Os seguintes símbolos aparecem nas guias **alocação**, **árvore de chamadas**e **funções** :
+Os seguintes símbolos aparecem nas guias **alocação**, **árvore de chamadas** e **funções** :
 
 - ![O tipo de valor Symbol](../profiling/media/valuetypeicon.png "O símbolo de tipo de valor") -um tipo de valor como inteiro
 
@@ -96,13 +96,13 @@ Os seguintes símbolos aparecem nas guias **alocação**, **árvore de chamadas*
 
 ![O modo de exibição de árvore de chamada](../profiling/media/calltreelight.png "O modo de exibição de árvore de chamada")
 
-O modo de exibição de **árvore de chamadas**   mostra os caminhos de execução de função que contêm objetos que alocam muita memória.
+O modo de exibição de **árvore de chamadas** mostra os caminhos de execução de função que contêm objetos que alocam muita memória.
 
-- A coluna **nome da função**   mostra o processo ou o nome da função que contém objetos que alocam memória. A exibição é baseada no nível do nó que você está inspecionando.
-- As colunas **total (alocações)** e **Tamanho total (bytes)**   mostram o número de objetos alocados e a quantidade de memória usada por uma função e todas as outras funções que ele chama.
+- A coluna **nome da função** mostra o processo ou o nome da função que contém objetos que alocam memória. A exibição é baseada no nível do nó que você está inspecionando.
+- As colunas **total (alocações)** e **Tamanho total (bytes)** mostram o número de objetos alocados e a quantidade de memória usada por uma função e todas as outras funções que ele chama.
 - As colunas **auto (alocações)** e **autotamanho (bytes)** mostram o número de objetos alocados e a quantidade de memória usada por uma única função ou tipo de alocação selecionado.
 - A coluna **tamanho médio (bytes)** mostra as mesmas informações que no modo de exibição **alocações** .
-- A coluna **nome do módulo**   mostra o módulo que contém a função ou o processo que está chamando.
+- A coluna **nome do módulo** mostra o módulo que contém a função ou o processo que está chamando.
 
    ![Um Hot Path expandido](../profiling/media/hotpathlight.png "Um Hot Path expandido")
 
@@ -135,7 +135,7 @@ O modo de exibição de **coleção** mostra quantos objetos foram coletados ou 
 
 ### <a name="filtering-tools"></a>Ferramentas de filtragem
 
-As exibições de **alocações**, **árvore de chamadas**e **funções** contêm as opções **Mostrar apenas meu código** e **Mostrar código nativo** e uma caixa de filtro.
+As exibições de **alocações**, **árvore de chamadas** e **funções** contêm as opções **Mostrar apenas meu código** e **Mostrar código nativo** e uma caixa de filtro.
 
 - **Mostrar apenas meu código** recolhe sistemas, estruturas e outros códigos que não são de usuário em quadros **[código externo]** para que você possa se concentrar apenas em seu código. Para obter mais informações, consulte [depurar código do usuário com apenas meu código](../debugger/just-my-code.md).
 - **Mostrar código nativo** mostra o código nativo dentro do destino da análise e pode incluir código não-usuário.

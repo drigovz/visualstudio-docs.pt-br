@@ -1,6 +1,8 @@
 ---
 title: 'Walkthrough: importar itens de um site existente do SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Neste tutorial, importe itens de um site existente do SharePoint para um projeto do Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298647"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970135"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Walkthrough: importar itens de um site existente do SharePoint
   Este tutorial demonstra como importar itens de um site existente do SharePoint para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -56,7 +58,7 @@ ms.locfileid: "92298647"
 
 5. Depois que o site for criado, navegue no navegador de volta para o site principal, http://<em>nome do sistema</em>/SitePages/Home.aspx.
 
-6. Novamente, crie um subsite em branco fora do site principal do SharePoint abrindo o menu **ações do site** , escolhendo **novo site**e escolhendo o tipo de **site em branco** .
+6. Novamente, crie um subsite em branco fora do site principal do SharePoint abrindo o menu **ações do site** , escolhendo **novo site** e escolhendo o tipo de **site em branco** .
 
 7. Na caixa **título** , insira o **site coluna teste 2**; na caixa **nome da URL** , digite **columntest2**; Deixe as outras configurações com seus valores padrão; e, em seguida, escolha o botão **criar** .
 
@@ -84,7 +86,7 @@ ms.locfileid: "92298647"
 
 2. Na seção **ações do site** da página Configurações do site, escolha o link **salvar site como modelo** .
 
-3. Na caixa **nome do arquivo** , digite **ExampleSite**e, na caixa **nome do modelo** , digite **site de exemplo**.
+3. Na caixa **nome do arquivo** , digite **ExampleSite** e, na caixa **nome do modelo** , digite **site de exemplo**.
 
 4. Para este exemplo, deixe a caixa de seleção **incluir conteúdo** desmarcada.
 
@@ -105,7 +107,7 @@ ms.locfileid: "92298647"
 
 1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** . Se o IDE estiver definido para usar Visual Basic configurações de desenvolvimento, na barra de menus, escolha **arquivo**  >  **novo projeto**.
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. Escolha o modelo **Importar pacote de solução do SharePoint 2010** no painel **modelos** , deixe o nome do projeto como WspImportProject1 e, em seguida, escolha o botão **OK** .
 
@@ -141,7 +143,7 @@ ms.locfileid: "92298647"
 
      Observe que a coluna de site personalizada que você importou do primeiro site do SharePoint aparece na lista.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Importar itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

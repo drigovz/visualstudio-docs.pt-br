@@ -1,5 +1,7 @@
 ---
 title: Importar página mestra personalizada & página do site com imagem
+description: Neste tutorial, importe uma página mestra personalizada do SharePoint e uma página do site que tenha uma imagem em um projeto do Visual Studio SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015691"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970154"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Walkthrough: importar uma página mestra personalizada e uma página do site com uma imagem
   Este tutorial demonstra como importar uma página mestra personalizada do SharePoint e uma página do site que tem uma imagem em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -176,7 +178,7 @@ ms.locfileid: "86015691"
 
    Uma maneira alternativa de importar arquivos [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e implantá-los no SharePoint é adicionar os arquivos em módulos no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Como importar uma página mestra ou tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Importando itens de um site existente do SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Criar controles reutilizáveis para Web Parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

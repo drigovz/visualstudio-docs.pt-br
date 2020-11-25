@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017029"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970535"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site existente do SharePoint
   O modelo de projeto importar pacote de solução do SharePoint permite reutilizar elementos como tipos de conteúdo e campos de sites existentes do SharePoint em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora você possa executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar os itens depois de importá-los.
@@ -96,7 +96,7 @@ ms.locfileid: "86017029"
  Ao importar fluxos de trabalho, os formulários do InfoPath são copiados para a pasta **arquivos importados** . Se o arquivo *. wsp* contiver um modelo da Web, ele será definido como a página de inicialização no **Gerenciador de soluções**.
 
 ## <a name="import-fields-and-property-bags"></a>Importar campos e pacotes de propriedades
- Quando você importa uma solução que tem vários campos, todas as definições de campo separadas são mescladas em um único arquivo de *Elements.xml* em um nó **Solution Explorer** em Gerenciador de soluções **campos**chamados. Da mesma forma, todas as entradas do recipiente de propriedades são mescladas em um arquivo de *Elements.xml* em um nó chamado **PropertyBags**.
+ Quando você importa uma solução que tem vários campos, todas as definições de campo separadas são mescladas em um único arquivo de *Elements.xml* em um nó **Solution Explorer** em Gerenciador de soluções **campos** chamados. Da mesma forma, todas as entradas do recipiente de propriedades são mescladas em um arquivo de *Elements.xml* em um nó chamado **PropertyBags**.
 
  Os campos no SharePoint são colunas de um tipo de dados especificado, como um texto, booliano ou pesquisa. Para obter mais informações, consulte [bloco de construção: colunas e tipos de campo](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14)). Os pacotes de propriedades permitem que você adicione Propriedades a objetos no SharePoint, tudo de um farm a uma lista em um site do SharePoint. Os pacotes de propriedade são implementados como uma tabela de hash de valores e nomes de propriedade. Para obter mais informações, consulte [Gerenciando a configuração do SharePoint](/previous-versions/msp-n-p/ff647766(v=pandp.10)) ou [configurações do recipiente de propriedades do SharePoint](https://archive.codeplex.com/?p=pbs).
 
@@ -133,7 +133,7 @@ ms.locfileid: "86017029"
 
  A ausência de um controle do Gerenciador de scripts pode ser um problema quando você importa um [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] projeto do ou do [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] no [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] , porque o atributo SharePointProductVersion de todos os novos projetos está definido como 14,0. Se você implantar um projeto atualizado que tenha um formulário da Web sem um Gerenciador de scripts, o formulário não será exibido no SharePoint.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Walkthrough: importar itens de um site existente do SharePoint](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
 - [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md)
 - [Walkthrough: importar um fluxo de trabalho reutilizável do SharePoint Designer para o Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

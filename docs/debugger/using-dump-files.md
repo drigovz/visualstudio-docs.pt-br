@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599502"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970617"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Arquivos de despejo no depurador do Visual Studio
 
@@ -88,7 +88,7 @@ Com a [depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-st
 
 1. Em **ações**:
    - Para definir locais de carregamento de símbolos, selecione **definir caminhos de símbolo**.
-   - Para iniciar a depuração, selecione **depurar com somente gerenciado**, **Depurar somente nativo**, **depurar com misto**ou **depurar com memória gerenciada**.
+   - Para iniciar a depuração, selecione **depurar com somente gerenciado**, **Depurar somente nativo**, **depurar com misto** ou **depurar com memória gerenciada**.
 
 ## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar arquivos. exe,. PDB e de origem
 
@@ -107,13 +107,13 @@ O Visual Studio pesquisa automaticamente esses locais para arquivos *. exe* que 
 
 1. A pasta que contém o arquivo de despejo.
 2. O caminho do módulo que o arquivo de despejo especifica, que é o caminho do módulo no computador que coletou o despejo.
-3. Os caminhos de símbolo especificados em **ferramentas** (ou **depuração**) > **Opções**de  >  **depuração**de  >  **símbolos**. Você também pode abrir a página **símbolos** no painel **ações** da janela **Resumo do arquivo de despejo** . Nessa página, você pode adicionar mais locais para pesquisa.
+3. Os caminhos de símbolo especificados em **ferramentas** (ou **depuração**) > **Opções** de  >  **depuração** de  >  **símbolos**. Você também pode abrir a página **símbolos** no painel **ações** da janela **Resumo do arquivo de despejo** . Nessa página, você pode adicionar mais locais para pesquisa.
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Use as páginas nenhum binário, nenhum símbolo ou nenhuma fonte encontrada
 
-Se o Visual Studio não conseguir localizar os arquivos necessários para depurar um módulo no despejo, ele mostrará um **binário não encontrado**, **nenhum símbolo encontrado**ou **nenhuma página de origem encontrada** . Essas páginas fornecem informações detalhadas sobre a causa do problema e fornecem links de ação que podem ajudá-lo a localizar os arquivos. Consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Se o Visual Studio não conseguir localizar os arquivos necessários para depurar um módulo no despejo, ele mostrará um **binário não encontrado**, **nenhum símbolo encontrado** ou **nenhuma página de origem encontrada** . Essas páginas fornecem informações detalhadas sobre a causa do problema e fornecem links de ação que podem ajudá-lo a localizar os arquivos. Consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Depuração Just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

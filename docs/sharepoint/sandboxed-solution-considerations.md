@@ -1,5 +1,7 @@
 ---
 title: Considerações sobre a solução em área restrita | Microsoft Docs
+description: Explore soluções em área restrita, que são um recurso do Microsoft SharePoint que permite que os usuários do conjunto de sites Carreguem suas próprias soluções de código personalizado.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838375"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970459"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações sobre a solução em área restrita
   As *soluções de área restrita* são um recurso do Microsoft SharePoint 2010 que permite que os usuários do conjunto de sites Carreguem suas próprias soluções de código personalizado. Uma solução em área restrita comum é que os usuários carregam seus próprios Web Parts.
@@ -69,7 +71,7 @@ ms.locfileid: "90838375"
  No WSS 3,0, as soluções podiam ser implantadas somente no nível do farm. Isso significava que soluções potencialmente perigosas ou de desestabilização poderiam ser implantadas que afetaram todo o Web farm e todos os outros conjuntos de sites e aplicativos que são executados sob ele. No entanto, usando soluções de área restrita, você pode implantar suas soluções em uma subárea do farm, um conjunto de sites específico. Para fornecer proteção adicional, o assembly da solução não é carregado no processo principal [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] (*w3wp.exe*). Em vez disso, ele é carregado em um processo separado (*SPUCWorkerProcess.exe*). Esse processo é monitorado e implementa cotas e limitação para proteger o farm de soluções em área restrita que executam atividades prejudiciais, como a execução de loops apertados que consomem ciclos de CPU.
 
 ## <a name="site-collection-solution-gallery"></a>Galeria de soluções do conjunto de sites
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 tem um recurso conhecido como "Galeria de soluções de conjunto de sites". Você pode acessar esse recurso na página Administração Central do SharePoint 2010 ou abrindo o menu **ações do site** , escolhendo **configurações do site**e escolhendo o link **soluções** em  **galerias** no site do SharePoint. Galerias de soluções são repositórios de soluções que permitem que os administradores de conjuntos de sites gerenciem soluções em seus conjuntos de sites.
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 tem um recurso conhecido como "Galeria de soluções de conjunto de sites". Você pode acessar esse recurso na página Administração Central do SharePoint 2010 ou abrindo o menu **ações do site** , escolhendo **configurações do site** e escolhendo o link **soluções** em  **galerias** no site do SharePoint. Galerias de soluções são repositórios de soluções que permitem que os administradores de conjuntos de sites gerenciem soluções em seus conjuntos de sites.
 
  A Galeria de soluções é uma biblioteca de documentos armazenada na Web raiz do site do SharePoint. A Galeria de soluções substitui modelos de site e dá suporte a pacotes de solução. Quando um arquivo de pacote de solução do SharePoint (*. wsp*) é carregado, ele é processado como uma solução em área restrita.
 
@@ -137,6 +139,6 @@ ms.locfileid: "90838375"
 
 - Fluxos de trabalho com código
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Diferenças entre soluções de área restrita e de farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [Desenvolvendo soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

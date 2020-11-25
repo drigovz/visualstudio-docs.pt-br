@@ -8,11 +8,11 @@ ms.date: 07/22/2020
 ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
 ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92352947"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970502"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 Como assinante ativo do Visual Studio, você pode usar uma gama de funcionalidades do Azure DevOps que estão incluídas como benefício na assinatura. Você poderá usar essas mesmas funcionalidades em cada organização do Azure DevOps de que for membro, independentemente de ter criado a organização ou ter sido adicionado por outra pessoa.
@@ -30,12 +30,12 @@ Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua 
 ## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado  | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL| Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados |  Sim          |
-| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                        | Azure Boards & repositórios (Basic<sup>2</sup>)                                                             |  Sim          |
-| Visual Studio Professional com GitHub Enterprise | VL| Azure Boards & repositórios (Basic<sup>2</sup>)                                                             |  Sim          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans                                              |  Sim          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans                                             |  Sim          |
+| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado  | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados |  Yes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL| Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans, trabalhos paralelos auto-hospedados |  Yes          |
+| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                        | Azure Boards & repositórios (Basic<sup>2</sup>)                                                             |  Yes          |
+| Visual Studio Professional com GitHub Enterprise | VL| Azure Boards & repositórios (Basic<sup>2</sup>)                                                             |  Yes          |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans                                              |  Yes          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards & repositórios (Basic<sup>2</sup>), Azure Test Plans                                             |  Yes          |
 ||
 
 <sup>1</sup>  *inclui: não para revenda (NFR), profissional mais valioso (MVP), diretor regional (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, FTE. Exclusões: MCT software & Services, imagine.*

@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: Implantando uma definição de Lista de Tarefas de projeto | Microsoft Docs'
+description: Neste tutorial, use o Visual Studio para criar, personalizar, depurar e implantar uma lista do SharePoint para acompanhar as tarefas do projeto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015768"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970421"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Walkthrough: implantar uma definição de lista de tarefas de projeto
 
@@ -37,7 +39,7 @@ Crie um projeto de lista do SharePoint e associe a definição de lista a tarefa
 
 1. Abra a caixa de diálogo **novo projeto** , expanda o nó **SharePoint** e escolha o nó **2010** .
 
-2. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** , nomeie o projeto **ProjectTaskList**e, em seguida, escolha o botão **OK** .
+2. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** , nomeie o projeto **ProjectTaskList** e, em seguida, escolha o botão **OK** .
 
      O **Assistente para personalização do SharePoint** é exibido.
 
@@ -51,7 +53,7 @@ Crie um projeto de lista do SharePoint e associe a definição de lista a tarefa
 
 6. Na caixa o **nome que você deseja exibir para sua lista?** , insira o **projeto lista de tarefas**.
 
-7. Escolha a **lista criar uma não personalizável com base em um tipo de opção de lista existente** e, em seguida, em sua lista, escolha **tarefas**e, em seguida, escolha o botão **concluir** .
+7. Escolha a **lista criar uma não personalizável com base em um tipo de opção de lista existente** e, em seguida, em sua lista, escolha **tarefas** e, em seguida, escolha o botão **concluir** .
 
      A lista, o recurso e o pacote aparecem no **Gerenciador de soluções**.
 
@@ -59,7 +61,7 @@ Crie um projeto de lista do SharePoint e associe a definição de lista a tarefa
 
 Na lista de tarefas, você pode adicionar um receptor de eventos que define automaticamente a data de vencimento e a descrição da tarefa. O procedimento a seguir adiciona um manipulador de eventos simples à instância da lista como um receptor de eventos.
 
-1. Abra o menu de atalho para o nó do projeto, escolha **Adicionar**e, em seguida, escolha **novo item**.
+1. Abra o menu de atalho para o nó do projeto, escolha **Adicionar** e, em seguida, escolha **novo item**.
 
 2. Na lista de modelos do SharePoint, escolha o modelo **receptor de eventos** e nomeie-o **ProjectTaskListEventReceiver**.
 
@@ -69,7 +71,7 @@ Na lista de tarefas, você pode adicionar um receptor de eventos que define auto
 
 4. Na lista o **item que deve ser a origem do evento** , escolha **tarefas**.
 
-5. Na lista de eventos a serem manipulados, marque a caixa de seleção ao lado de **um item foi adicionado**e, em seguida, escolha o botão **concluir** .
+5. Na lista de eventos a serem manipulados, marque a caixa de seleção ao lado de **um item foi adicionado** e, em seguida, escolha o botão **concluir** .
 
      Um novo nó receptor de eventos é adicionado ao projeto com um arquivo de código chamado **ProjectTaskListEventReceiver**.
 
@@ -84,7 +86,7 @@ Quando você cria uma solução do SharePoint, o Visual Studio cria automaticame
 
 1. Em **Gerenciador de soluções**, expanda **recursos**.
 
-2. Abra o menu de atalho para **Feature1**e escolha **Designer de exibição**.
+2. Abra o menu de atalho para **Feature1** e escolha **Designer de exibição**.
 
 3. Na caixa **título** , digite **projeto lista de tarefas recurso**.
 
@@ -96,7 +98,7 @@ Quando você cria uma solução do SharePoint, o Visual Studio cria automaticame
 
 Quando você cria um projeto do SharePoint, o Visual Studio adiciona automaticamente os recursos que contêm os itens de projeto padrão ao pacote. Você pode personalizar as configurações da lista de tarefas do projeto para o site do SharePoint usando o designer de pacotes.
 
-1. No **SolutionExplorer**, abra o menu de atalho para **pacote**e escolha **Designer de exibição**.
+1. No **SolutionExplorer**, abra o menu de atalho para **pacote** e escolha **Designer de exibição**.
 
 2. Na caixa **nome** , digite **ProjectTaskListPackage**.
 
@@ -174,5 +176,5 @@ Você pode aprender mais sobre como personalizar e implantar soluções do Share
 
 - [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

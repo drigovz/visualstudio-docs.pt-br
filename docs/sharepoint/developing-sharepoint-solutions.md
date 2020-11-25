@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672815"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970402"
 ---
 # <a name="develop-sharepoint-solutions"></a>Desenvolver soluções do SharePoint
   Vários modelos de tipo de projeto do SharePoint estão disponíveis no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar sites e elementos do site do SharePoint. Para obter uma lista dos tipos de projeto disponíveis, consulte [projeto do SharePoint e modelos de item de projeto](../sharepoint/sharepoint-project-and-project-item-templates.md). Veja a seguir uma descrição dos elementos e das propriedades de um projeto do SharePoint.

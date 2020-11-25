@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918104"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970294"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -39,15 +39,15 @@ Para ajudar a decidir quais ferramentas e os resultados usar, considere o seguin
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
 
-Quando você inicia a depuração no Visual Studio selecionando **depurar**  >  **Iniciar Depuração** ou pressionando **F5** , a janela **ferramentas de diagnóstico** é exibida por padrão. Para abri-lo manualmente, selecione **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico** . A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
+Quando você inicia a depuração no Visual Studio selecionando **depurar**  >  **Iniciar Depuração** ou pressionando **F5**, a janela **ferramentas de diagnóstico** é exibida por padrão. Para abri-lo manualmente, selecione **depurar**  >  **janelas**  >  **Mostrar ferramentas de diagnóstico**. A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
 
 ![Captura de tela da janela de Ferramentas de Diagnóstico](../profiling/media/diagnostictoolswindow.png " Janela Ferramentas de Diagnóstico")
 
-- Use o ícone **Configurações** na barra de ferramentas para selecionar se deseja exibir **Uso de Memória** , **Análise da interface do usuário** e **Uso da CPU** .
+- Use o ícone **Configurações** na barra de ferramentas para selecionar se deseja exibir **Uso de Memória**, **Análise da interface do usuário** e **Uso da CPU**.
 
 - Selecione **configurações** na lista suspensa **configurações** para abrir as **páginas de propriedades do ferramentas de diagnóstico** com mais opções.
 
-- Se estiver executando Visual Studio Enterprise, você poderá habilitar ou desabilitar o IntelliTrace acessando **ferramentas**  >  **Opções**  >  **IntelliTrace** .
+- Se estiver executando Visual Studio Enterprise, você poderá habilitar ou desabilitar o IntelliTrace acessando **ferramentas**  >  **Opções**  >  **IntelliTrace**.
 
 A sessão de diagnóstico termina quando você interrompe a depuração.
 
@@ -74,21 +74,21 @@ Para obter mais informações, consulte [Pesquisando e filtrando a guia de Event
 
 Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do Criador de Perfil de Desempenho.
 
-1. Com um projeto aberto no Visual Studio, defina a configuração da solução como **liberar** e selecione **depurador local do Windows** (ou **computador local** ) como o destino de implantação.
+1. Com um projeto aberto no Visual Studio, defina a configuração da solução como **liberar** e selecione **depurador local do Windows** (ou **computador local**) como o destino de implantação.
 
-1. Selecione **debug**  >  **Performance Profiler** ou pressione **ALT** + **F2** .
+1. Selecione **debug**  >  **Performance Profiler** ou pressione **ALT** + **F2**.
 
 1. Na página inicialização das ferramentas de diagnóstico, selecione uma ou mais ferramentas para executar. Somente as ferramentas aplicáveis ao tipo de projeto, ao sistema operacional e à linguagem de programação são mostradas. Selecione **Mostrar todas as ferramentas** para ver também as ferramentas desabilitadas para essa sessão de diagnóstico.
 
    ![Captura de tela das ferramentas de diagnóstico](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Para iniciar a sessão de diagnóstico, selecione **Iniciar** .
+1. Para iniciar a sessão de diagnóstico, selecione **Iniciar**.
 
    Enquanto a sessão está em execução, algumas ferramentas mostram grafos de dados em tempo real na página ferramentas de diagnóstico, bem como controles para pausar e retomar a coleta de dados.
 
     ![Captura de tela da coleta de dados no criador de perfil de desempenho](../profiling/media/diaghubcollectdata.png "Coletar dados do Hub")
 
-1. Para encerrar a sessão de diagnóstico, selecione **Interromper coleta** .
+1. Para encerrar a sessão de diagnóstico, selecione **Interromper coleta**.
 
    Os dados analisados aparecem na página do **relatório** .
 

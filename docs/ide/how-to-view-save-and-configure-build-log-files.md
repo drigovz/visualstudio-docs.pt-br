@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136596"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970207"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como exibir, salvar e configurar arquivos de log de build
 
@@ -36,7 +36,7 @@ Se você criar qualquer tipo de projeto usando o MSBuild, poderá criar um arqui
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para criar um arquivo de log de build para um projeto de código gerenciado
 
-1. Na barra de menus, escolha **Compilar**compilar  >  **solução**.
+1. Na barra de menus, escolha **Compilar** compilar  >  **solução**.
 
 2. Na janela de **Saída**, clique em algum lugar no texto.
 
@@ -54,7 +54,7 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|Descrição|
+    |Nível de detalhes|Description|
     | - |-----------------|
     |**Quiet**|Exibe apenas um resumo do build.|
     |**Mínimo**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
@@ -71,7 +71,7 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 Logs binários são um recurso opcional para projetos do .NET que proporcionam uma experiência de navegação de log mais rica que pode facilitar a localização de informações em logs grandes. Para usar logs binários, instale as [Ferramentas do Sistema para Projetos](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Para obter mais informações, consulte [https://msbuildlog.com](https://msbuildlog.com) e [log binário](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)

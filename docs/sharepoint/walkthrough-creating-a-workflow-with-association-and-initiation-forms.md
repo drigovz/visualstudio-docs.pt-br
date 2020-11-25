@@ -1,5 +1,7 @@
 ---
 title: Criar fluxo de trabalho com formulários de associação e de inicialização
+description: Neste passo a passo do SharePoint, crie um fluxo de trabalho seqüencial básico que incorpora o uso de associação e formulários de inicialização.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017128"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970433"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Walkthrough: criar um fluxo de trabalho com formulários de associação e de inicialização
   Este tutorial demonstra como criar um fluxo de trabalho seqüencial básico que incorpora o uso de associação e formulários de inicialização. Esses são formulários ASPX que permitem que os parâmetros sejam adicionados a um fluxo de trabalho quando ele é associado pela primeira vez pelo administrador do SharePoint (o formulário de associação) e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).
@@ -68,7 +70,7 @@ ms.locfileid: "86017128"
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. No painel **modelos** , escolha o modelo projeto de **projeto do SharePoint 2010** .
 
@@ -259,7 +261,7 @@ ms.locfileid: "86017128"
 
     - Abra o menu de atalho para a atividade **IfElse** , escolha **copiar**, abra o menu de atalho da linha sob a atividade **OnWorkflowActivated1** no designer de fluxo de trabalho e escolha **colar**.
 
-    - Arraste a atividade **IfElse** da **caixa de ferramentas**e conecte-a à linha sob a atividade **onWorkflowActiviated1** no designer de fluxo de trabalho.
+    - Arraste a atividade **IfElse** da **caixa de ferramentas** e conecte-a à linha sob a atividade **onWorkflowActiviated1** no designer de fluxo de trabalho.
 
 4. Na caixa de ferramentas, expanda o nó **fluxo de trabalho do SharePoint** e localize a atividade **CreateTask** .
 
@@ -289,7 +291,7 @@ ms.locfileid: "86017128"
 
     - Abra o menu de atalho para a atividade **LogToHistoryListActivity** , escolha **copiar**, abra o menu de atalho para as outras **atividades soltar aqui** na área de **IfElseActivity1** no designer de fluxo de trabalho e escolha **colar**.
 
-    - Arraste a atividade **LogToHistoryListActivity** da **caixa de ferramentas**e solte-a em outras **atividades soltar aqui** na área de **IfElseActivity1**.
+    - Arraste a atividade **LogToHistoryListActivity** da **caixa de ferramentas** e solte-a em outras **atividades soltar aqui** na área de **IfElseActivity1**.
 
 ## <a name="add-code-to-the-workflow"></a>Adicionar código ao fluxo de trabalho
  Em seguida, adicione o código ao fluxo de trabalho para fornecer a funcionalidade de ti.
@@ -426,7 +428,7 @@ ms.locfileid: "86017128"
 
      Isso exibe o formulário de inicialização do fluxo de trabalho. (Observe que o valor exibido na caixa **limite de aprovação automática** é somente leitura porque foi inserido no formulário associação.)
 
-7. Na caixa de texto **total de despesas** , digite **1600**e, em seguida, escolha o botão **Iniciar fluxo de trabalho** .
+7. Na caixa de texto **total de despesas** , digite **1600** e, em seguida, escolha o botão **Iniciar fluxo de trabalho** .
 
      Isso exibirá a lista de **documentos compartilhados** novamente. Uma nova coluna denominada **ExpenseReportWorkflow** com o valor **concluído** é adicionada ao item que o fluxo de trabalho acabou de iniciar.
 
@@ -445,6 +447,6 @@ ms.locfileid: "86017128"
 
 - Para saber mais sobre os fluxos de trabalho do SharePoint, consulte [fluxos de trabalho no Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Criar soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Walkthrough: adicionar uma página de aplicativo a um fluxo de trabalho](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

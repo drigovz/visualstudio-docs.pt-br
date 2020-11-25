@@ -1,5 +1,7 @@
 ---
 title: Parâmetros substituíveis | Microsoft Docs
+description: Examine os parâmetros substituíveis (tokens), que especificam valores dentro de arquivos de projeto para itens de solução do SharePoint cujos valores reais não são conhecidos em tempo de design.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838655"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970259"
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, podem ser usados dentro de arquivos de projeto para fornecer valores para itens de solução do SharePoint cujos valores reais não são conhecidos em tempo de design. Eles são semelhantes em função aos [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo padrão. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).
@@ -105,5 +107,5 @@ ms.locfileid: "90838655"
 
  Você pode adicionar a extensão diretamente ao arquivo de destinos (*. targets*). No entanto, adicionar a extensão altera a lista de extensões para todos os projetos do SharePoint empacotados no sistema local, não apenas os seus próprios. Essa extensão pode ser conveniente quando você é o único desenvolvedor no sistema ou se a maioria de seus projetos exigir. No entanto, como ele é específico do sistema, essa abordagem não é portátil e, portanto, é recomendável que você adicione todas as extensões ao arquivo de projeto em vez disso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)

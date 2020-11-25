@@ -1,5 +1,7 @@
 ---
 title: Empacotando informações de implantação & em itens de projeto
+description: Adicione dados de empacotamento e de implantação em itens de projeto do SharePoint usando propriedades de recurso, receptores de recursos, referências de saída de projeto e entidades de controle seguro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984209"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970472"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornecer informações de empacotamento e implantação em itens de projeto
   Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:
@@ -105,7 +107,7 @@ ms.locfileid: "72984209"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Usar módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Estender o empacotamento e a implantação do SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

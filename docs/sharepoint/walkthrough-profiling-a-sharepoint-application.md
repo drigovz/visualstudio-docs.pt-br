@@ -1,5 +1,7 @@
 ---
 title: 'Walkthrough: criando perfil de um aplicativo do SharePoint | Microsoft Docs'
+description: Neste tutorial, use as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298629"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970114"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Walkthrough: criar perfil de um aplicativo do SharePoint
   Este tutorial mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que degrada o desempenho do receptor de evento de recurso. O criador de perfil do Visual Studio permite que você localize e elimine a parte mais cara (com desempenho mais lento) do projeto, também conhecida como o *caminho quente*.
@@ -51,11 +53,11 @@ ms.locfileid: "92298629"
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto** para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha o nó **2010** .
+2. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha o nó **2010** .
 
 3. No painel modelos, escolha o modelo de **projeto do SharePoint 2010** .
 
-4. Na caixa **nome** , digite **ProfileTest**e, em seguida, escolha o botão **OK** .
+4. Na caixa **nome** , digite **ProfileTest** e, em seguida, escolha o botão **OK** .
 
     O **Assistente para personalização do SharePoint** é exibido.
 
@@ -72,9 +74,9 @@ ms.locfileid: "92298629"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Para adicionar um receptor de eventos de recurso e recurso
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó **recursos** , escolha **Adicionar recurso**e deixe o nome no valor padrão, **Feature1**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó **recursos** , escolha **Adicionar recurso** e deixe o nome no valor padrão, **Feature1**.
 
-2. No **Gerenciador de soluções**, abra o menu de atalho para **Feature1**e escolha **Adicionar receptor de eventos**.
+2. No **Gerenciador de soluções**, abra o menu de atalho para **Feature1** e escolha **Adicionar receptor de eventos**.
 
      Isso adiciona um arquivo de código ao recurso com vários manipuladores de eventos comentados e abre o arquivo para edição.
 
@@ -272,7 +274,7 @@ ms.locfileid: "92298629"
 
      O recurso deve ser ativado muito mais rapidamente agora que a chamada para o loop ocioso foi eliminada. O relatório de criação de perfil de exemplo deve refletir isso.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
 - [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-performance-profiling.md)
 - [Encontrar afunilamentos de aplicativos com o Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

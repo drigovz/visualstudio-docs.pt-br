@@ -8,11 +8,11 @@ ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
 ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435848"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970303"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -97,7 +97,7 @@ R: Não, a oferta LinkedIn Learning está disponível somente para novos assinan
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

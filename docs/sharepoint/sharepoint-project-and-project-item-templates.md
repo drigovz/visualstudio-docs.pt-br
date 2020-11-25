@@ -1,5 +1,7 @@
 ---
 title: Modelos de projeto e item de projeto do SharePoint | Microsoft Docs
+description: Examine as descrições do projeto do SharePoint e dos modelos de item do projeto disponíveis e como eles são usados.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649221"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970370"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelos de projeto e item de projeto do SharePoint
   As seções a seguir descrevem o projeto do SharePoint e os modelos de item de projeto disponíveis e como eles são usados.
@@ -36,7 +38,7 @@ ms.locfileid: "81649221"
  Para obter informações sobre os conceitos básicos do SharePoint, consulte [blocos de construção do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee534971(v=office.14)). Os usuários avançados podem criar modelos de item de projeto e projeto personalizados. Para obter mais informações, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ## <a name="project-templates"></a>Modelos de projeto
- A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, na caixa de diálogo **novo projeto** , expanda o nó **do SharePoint** em **Visual C#** ou **Visual Basic**e, em seguida, escolha **2010**.
+ A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, na caixa de diálogo **novo projeto** , expanda o nó **do SharePoint** em **Visual C#** ou **Visual Basic** e, em seguida, escolha **2010**.
 
 ### <a name="sharepoint-2010-project"></a>Projeto do SharePoint 2010
  O conteúdo de um *projeto do sharepoint 2010* é incluído em cada modelo de projeto do SharePoint. Um projeto do SharePoint 2010 contém:
@@ -68,7 +70,7 @@ ms.locfileid: "81649221"
 ## <a name="project-item-templates"></a>Modelos de item de projeto
  A seguir está uma lista de modelos de item de projeto do SharePoint. Os modelos de item de projeto adicionam arquivos à solução do SharePoint para dar suporte à funcionalidade do SharePoint, como colunas de site, listas e tipos de conteúdo. Por exemplo, a adição de uma coluna de site à sua solução adiciona um projeto de coluna de site que contém um arquivo de definição de *Elements.xml* . A adição de uma Web Part Visual adiciona um projeto de Web Part Visual à sua solução que contém um arquivo de *Elements.xml* , um item de controle de usuário e um item de Web Part Visual.
 
- Para exibir os modelos de item de projeto do SharePoint, em **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e escolha **Adicionar**, **novo item**. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic**e escolha **2010**.
+ Para exibir os modelos de item de projeto do SharePoint, em **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e escolha **Adicionar**, **novo item**. Expanda o nó **do SharePoint** sob o **Visual C#** ou **Visual Basic** e escolha **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Página de aplicativo (somente solução de farm)
  Um item de **página de aplicativo (somente solução de farm)** permite que você projete uma [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página da Web para um site do SharePoint. As páginas de aplicativos podem ser usadas somente em soluções de farm. Você pode adicionar este item de projeto somente a soluções de farm. Para obter mais informações, consulte [como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md) e o [tipo de página de _layouts de aplicativo](/previous-versions/office/aa979604(v=office.14)).
@@ -140,6 +142,6 @@ ms.locfileid: "81649221"
 ### <a name="web-part"></a>Web Part
  Uma *Web Part* é um controle do lado do servidor executado dentro de um tipo especial de página chamado página de Web Parts. Eles são os blocos de construção de páginas que aparecem em um site do SharePoint. O item de Web Part fornece arquivos que permitem que você projete uma Web Part para um site do SharePoint. Para obter mais informações, consulte [como: criar uma Web Part do SharePoint e um](../sharepoint/how-to-create-a-sharepoint-web-part.md) [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Produtos e Tecnologias SharePoint](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))
