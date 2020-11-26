@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365659"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189089"
 ---
 # <a name="frequently-asked-questions"></a>Perguntas frequentes
 
@@ -49,7 +49,7 @@ a. A versão 1.0 do RTVS será somente em inglês. A versão 1.1 será localizad
 
 **Perguntas. Eu realmente gosto das minhas configurações atuais do Visual Studio, mas quero experimentar as novas configurações de ciência de dados. O que devo fazer?**
 
-a. Salve as configurações atuais do Visual Studio usando **ferramentas**  >  **importar e exportar configurações**e, em seguida, alterne para as configurações de ciência de dados. Para restaurar as configurações salvas, use o comando **Importar e Exportar Configurações** novamente.
+a. Salve as configurações atuais do Visual Studio usando **ferramentas**  >  **importar e exportar configurações** e, em seguida, alterne para as configurações de ciência de dados. Para restaurar as configurações salvas, use o comando **Importar e Exportar Configurações** novamente.
 
 **Perguntas. Posso armazenar meu projeto do Visual Studio em um compartilhamento de rede?**
 
