@@ -1,5 +1,7 @@
 ---
 title: Adicionando itens às caixas de diálogo Adicionar novo item | Microsoft Docs
+description: Saiba como adicionar itens à caixa de diálogo Adicionar novo item no Visual Studio, para que você possa exibir modelos e elementos de projeto para uso em seus projetos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710210"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190155"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Adicionar itens à caixa de diálogo Adicionar novo item
 O processo para adicionar itens à caixa de diálogo **Adicionar novo item** começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, a seção **Additemtemplates** contém o caminho e o nome do diretório no qual os itens disponibilizados na caixa de diálogo **Adicionar novo item** são colocados.
@@ -23,7 +25,7 @@ O processo para adicionar itens à caixa de diálogo **Adicionar novo item** com
 > [!NOTE]
 > A tabela imediatamente após o segmento de código contém informações adicionais sobre a entrada do registro.
 
- Esta seção está localizada em **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
+ Esta seção está localizada em **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  O primeiro GUID é o CLSID para projetos desse tipo; o segundo GUID indica o tipo de projeto registrado para os modelos adicionar itens:
 
@@ -46,7 +48,7 @@ O processo para adicionar itens à caixa de diálogo **Adicionar novo item** com
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- O diretório listado para **TemplatesDir**, que é *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *, é o nó no lado esquerdo da árvore da caixa de diálogo **Adicionar novo item** . Elementos adicionais na árvore são baseados no subdiretório dentro desse diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel direito da caixa de diálogo **Adicionar novo item** .
+ O diretório listado para **TemplatesDir**, que é *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt;*, é o nó no lado esquerdo da árvore da caixa de diálogo **Adicionar novo item** . Elementos adicionais na árvore são baseados no subdiretório dentro desse diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel direito da caixa de diálogo **Adicionar novo item** .
 
  Normalmente, essa pasta conterá os arquivos de modelo para seu projeto, como um arquivo de modelo HTML ou *. cpp* , e quaisquer arquivos *. vsz* para iniciar os assistentes. Para controlar como os itens são exibidos, você também pode incluir arquivos *. vsdir* para localizar nomes de diretório e ícones. A cadeia de caracteres localizada é a legenda que aparece na caixa de diálogo que representa esse nó na árvore da caixa de diálogo **Adicionar novo item** .
 

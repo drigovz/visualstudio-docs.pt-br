@@ -1,5 +1,7 @@
 ---
 title: Escolhendo o diretório de instalação para um VSPackage | Microsoft Docs
+description: Saiba como escolher o diretório de instalação para um VSPackage e seus arquivos de suporte usando fatores como, por exemplo, se eles são gerenciados ou não.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011899"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189973"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Escolha o diretório de instalação para um VSPackage
 Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos de um usuário. O local depende de o VSPackage ser gerenciado ou não gerenciado, seu esquema de controle de versão lado a lado e a escolha do usuário.
@@ -59,7 +61,7 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos de um
 
 Se a DLL VSPackage incluir recursos e os pontos de entrada do registro **SatelliteDll\DllName** , o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tentará carregá-los na ordem acima.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Escolha entre VSPackages compartilhadas e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)
 - [Gerenciar registro de pacote](/previous-versions/bb166783(v=vs.100))

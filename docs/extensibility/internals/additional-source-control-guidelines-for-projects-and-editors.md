@@ -1,5 +1,6 @@
 ---
 title: Diretrizes de controle do código-fonte para projetos e editores
+description: Saiba mais sobre as diretrizes que os projetos e editores devem aderir para dar suporte ao controle do código-fonte.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037628"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190129"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Diretrizes adicionais de controle do código-fonte para projetos e editores
 Há várias diretrizes que os projetos e editores devem seguir para dar suporte ao controle do código-fonte.

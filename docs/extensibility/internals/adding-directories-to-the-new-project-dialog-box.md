@@ -1,5 +1,7 @@
 ---
 title: Adicionando diretórios à caixa de diálogo novo projeto | Microsoft Docs
+description: Saiba como adicionar diretórios à caixa de diálogo novo projeto no Visual Studio, para que você possa criar novos tipos de projeto e exibi-los para uso como modelos.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 827e383bba13c9742deb654bf3d680adeb3c109b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87e4c0bcb44690a36579fe77564962515534338d
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710241"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190142"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Adicionar diretórios à caixa de diálogo novo projeto
 Ao criar novos tipos de projeto, você também pode registrar um novo diretório na caixa de diálogo **novo projeto** para exibi-los para uso como modelos. O exemplo de código a seguir explica como registrar um novo diretório, também conhecido como um nó. No exemplo, os modelos expostos pelo VSPackage, *CLSID_Package*, são registrados. Como resultado, o lado esquerdo da caixa de diálogo **novo projeto** oferece o nó adicionado, com um nome determinado pelo recurso de *Folder_Label_ResID* . Esse recurso é carregado da DLL satélite do VSPackage.

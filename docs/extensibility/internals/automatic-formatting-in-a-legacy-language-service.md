@@ -1,5 +1,7 @@
 ---
 title: Formatação automática em um serviço de linguagem herdada | Microsoft Docs
+description: Saiba mais sobre a formatação automática em um serviço de linguagem herdada, que insere automaticamente um trecho de código quando você começa a digitar uma construção de código conhecida.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651cecb20604069c6e8ccc5a5c7b983ab43d7384
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709987"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190051"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Formatação automática em um serviço de idioma herdado
 Com a formatação automática, um serviço de idioma insere automaticamente um trecho de código quando um usuário começa a digitar uma construção de código conhecida.

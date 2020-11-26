@@ -1,5 +1,7 @@
 ---
 title: 'Lista de verificação: Criando um serviço de idioma herdado | Microsoft Docs'
+description: Conheça as etapas básicas que você deve seguir para criar um serviço de linguagem herdado para o editor de núcleo do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709785"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189986"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista de verificação: criar um serviço de idioma herdado
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de idioma para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principal. Para integrar seu serviço de idioma no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrever um avaliador de expressão CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) na [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

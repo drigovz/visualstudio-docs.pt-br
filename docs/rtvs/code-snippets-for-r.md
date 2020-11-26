@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 31dfa975cea519d4d064856090a265b844f265f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238719"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189102"
 ---
 # <a name="code-snippets-for-r"></a>Snippets de código para R
 
@@ -32,7 +32,7 @@ Snippets podem ser muito mais do que apenas preenchimento de caracteres. Um snip
 
 Nesse caso, à medida que você digita `readc`, o IntelliSense exibe uma lista de conclusão. Selecionar essa conclusão na lista suspensa e pressionar **Tab** seleciona `readc` e pressionar **Tab** novamente expande o trecho de código. (Por esse motivo, a expansão de snippet geralmente é considerada como "digitar o snippet e pressionar a tecla Tab duas vezes"). Na maioria dos casos, a primeira Tab preenche a seleção do IntelliSense e a segunda Tab dispara a expansão.
 
-Para ver todos os trechos disponíveis, abra a **Tools**  >  caixa de diálogo**Gerenciador de trechos de código** de ferramentas (**Ctrl** + **K**,**B**) e selecione **R** para **linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
+Para ver todos os trechos disponíveis, abra a **Tools**  >  caixa de diálogo **Gerenciador de trechos de código** de ferramentas (**Ctrl** + **K**,**B**) e selecione **R** para **linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
 
 ![Caixa de diálogo de snippets de código para R](media/code-snippet-dialog.png)
 

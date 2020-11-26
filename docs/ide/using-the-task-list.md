@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959796"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189830"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
@@ -109,7 +109,7 @@ Para criar um atalho, insira o ponteiro no código no local em que deseja coloca
 
 Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Caixa de diálogo Lista de Tarefas, ambiente, opções](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

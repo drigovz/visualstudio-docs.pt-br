@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136726"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189713"
 ---
 # <a name="build-actions"></a>Ações de Build
 
@@ -46,7 +46,7 @@ Algumas das ações de build mais comuns para arquivos de projeto do C# e Visual
 | **Embedded Resource** | .NET | O arquivo é passado para o compilador como um recurso a ser inserido no assembly. É possível chamar <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> para ler o arquivo do assembly.|
 | **EntityDeploy** | .NET | Para arquivos .edmx do Entity Framework (EF) que especificam a implantação de artefatos do EF. |
 | **Fakes** | .NET | Usado para a estrutura de testes do Microsoft Fakes. Confira [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
-| **Nenhuma** | any | O arquivo não faz parte do build de nenhuma maneira. Esse valor pode ser usado para arquivos de documentação como "Leiame", por exemplo.|
+| **Nenhum** | any | O arquivo não faz parte do build de nenhuma maneira. Esse valor pode ser usado para arquivos de documentação como "Leiame", por exemplo.|
 | **Página** | WPF | Compile um arquivo XAML em um arquivo. BAML binário para um carregamento mais rápido em tempo de execução. |
 | **Recurso** | WPF | Especifica a inserção do arquivo em um arquivo de recursos do manifesto do assembly com a extensão *.g.resources*. |
 | **Shadow** | .NET | Usado para um arquivo .accessor que contém uma lista de nomes de arquivos do assembly inseridos, um por linha. Para cada assembly na lista, gere classes públicas com os nomes `ClassName_Accessor` que são exatamente como os originais, mas com métodos públicos ao invés de métodos privados. Usado para teste de unidade. |

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352356"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189856"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -41,9 +41,9 @@ Caso você desabilite a restauração automática de arquivos, uma maneira rápi
 
 - Para a funcionalidade **Ir para** general, selecione **Editar** > **Ir para** > **Ir para Todos** ou pressione **Ctrl**+**T**.
 
-- Vá para o último local de edição em uma solução usando **Editar**  >  **ir para**  >  **ir para o último local de edição**ou pressionando **Ctrl** + **Shift** + **Backspace**.
+- Vá para o último local de edição em uma solução usando **Editar**  >  **ir para**  >  **ir para o último local de edição** ou pressionando **Ctrl** + **Shift** + **Backspace**.
 
-- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar**  >  **ir**para  >  **ir para arquivo recente**ou pressione **Ctrl** + **1**, **Ctrl** + **R**.
+- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar**  >  **ir** para  >  **ir para arquivo recente** ou pressione **Ctrl** + **1**, **Ctrl** + **R**.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
 
@@ -59,7 +59,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
     Para a depuração nativa, carregar arquivos de símbolo (*. pdb*) é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
 
-    Para especificar o carregamento de símbolos, escolha **ferramentas**  >  **Opções**  >  **Debugging**  >  **símbolos**de depuração.
+    Para especificar o carregamento de símbolos, escolha **ferramentas**  >  **Opções**  >  **Debugging**  >  **símbolos** de depuração.
 
     Defina as opções para **Somente os módulos especificados** em vez de **Todos os módulos** e, em seguida, especifique quais módulos você deseja carregar. Durante a depuração, você também pode clicar com o botão direito do mouse em módulos específicos na janela **Módulos** para incluir explicitamente um módulo no carregamento de símbolo. (Para abrir a janela durante a depuração, escolha **depurar**  >  **Windows**  >  **Módulos**.)
 
@@ -113,7 +113,7 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
    ::: moniker range=">=vs-2019"
 
-    Para desabilitar as extensões, acesse **Extensões** > ** Gerenciar Extensões** e desabilite uma extensão específica.
+    Para desabilitar as extensões, acesse **Extensões** > **Gerenciar Extensões** e desabilite uma extensão específica.
 
    ::: moniker-end
 
@@ -121,21 +121,21 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
     O [**modo de mapa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) exibe linhas de código, em miniatura, na barra de rolagem. O modo de mapa está habilitado por padrão.
 
-    Para desabilitar o modo de mapa, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **barras de rolagem**e, na seção **comportamento** , desmarque a opção **usar modo de mapa para barra de rolagem vertical** .
+    Para desabilitar o modo de mapa, vá para **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **barras de rolagem** e, na seção **comportamento** , desmarque a opção **usar modo de mapa para barra de rolagem vertical** .
 
 - **Desabilitar quebra automática de palavra**
 
     [**Quebra automática**](./reference/how-to-manage-word-wrap-in-the-editor.md) de linha exibe a parte de um longo trecho de código que se estende além da largura atual da janela do editor de código. A quebra automática de texto está ativada por padrão.
 
-    Para desabilitar a quebra automática de texto de um projeto no qual você está trabalhando no momento, vá para **Editar**  >  **Advanced**  >  **quebra automática de palavra**avançada. (Você pode alternar essa configuração usando os mesmos comandos de menu.)
+    Para desabilitar a quebra automática de texto de um projeto no qual você está trabalhando no momento, vá para **Editar**  >  **Advanced**  >  **quebra automática de palavra** avançada. (Você pode alternar essa configuração usando os mesmos comandos de menu.)
 
-    Para desabilitar a quebra automática de palavra para todos os projetos, vá para **ferramentas**  >  **Opções**  >  **General**  >  **Editor de texto**geral  >  **todos os idiomas**  >  **geral**e, na seção **configurações** , desmarque a opção **quebra automática de palavra** .
+    Para desabilitar a quebra automática de palavra para todos os projetos, vá para **ferramentas**  >  **Opções**  >  **General**  >  **Editor de texto** geral  >  **todos os idiomas**  >  **geral** e, na seção **configurações** , desmarque a opção **quebra automática de palavra** .
 
 - **Desabilitar o XAML Designer**
 
     O designer XAML é habilitado por padrão, mas só consome recursos se você abrir um arquivo *. XAML* . Se você trabalha com arquivos XAML, mas não quer usar a funcionalidade do designer, desabilite esse recurso para liberar memória.
 
-    Para desabilitar designer XAML, vá para **ferramentas**  >  **Opções**  >  **Designer XAML**  >  **Habilitar designer XAML**e desmarque a opção.
+    Para desabilitar designer XAML, vá para **ferramentas**  >  **Opções**  >  **Designer XAML**  >  **Habilitar designer XAML** e desmarque a opção.
 
 - **Remover as cargas de trabalho**
 

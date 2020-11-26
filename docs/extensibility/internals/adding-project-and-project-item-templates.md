@@ -1,5 +1,7 @@
 ---
 title: Adicionando projetos e modelos de item de projeto | Microsoft Docs
+description: Saiba como adicionar modelos de item de projeto e projeto às caixas de diálogo no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14eb1a9e2e63fa6e63d3ba2efa4426421e6b5593
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710203"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190168"
 ---
 # <a name="add-project-and-project-item-templates"></a>Adicionar projeto e modelos de item de projeto
 Ao criar seus próprios tipos de projeto, você deve fornecer suporte para adicionar novos projetos e itens de projeto usando as caixas de diálogo padrão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem técnicas diferentes para adicionar projetos e itens de projeto.

@@ -1,5 +1,7 @@
 ---
 title: 'Lista de verificação: criando novos tipos de projeto | Microsoft Docs'
+description: Saiba mais sobre as tarefas que devem ser concluídas para criar e exibir um novo tipo de projeto no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414185"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189960"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de verificação: criar novos tipos de projeto
 Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista de verificação a seguir fornece um guia para essas tarefas:
@@ -49,13 +51,13 @@ Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista 
 
     - Objetos ou classes derivadas de `IDispatch` , disponíveis para automação.
 
-    - Arquivos de tabela de comando XML ( *. vsct* ). Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - Arquivos de tabela de comando XML (*. vsct*). Para obter mais informações, consulte [arquivos de tabela de comando do Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Teste, depure e inicie o tipo de projeto.
 
 7. Exiba o projeto na guia **projeto** da caixa de diálogo **Adicionar referência** definindo `VARIANT_TRUE` como o valor de `VSHPROPID_ShowProjInSolutionPage` . Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Crie o arquivo do Microsoft Installer ( *. msi* ) para instalar seu VSPackages. Para obter mais informações, consulte [instalar o VSPackages com Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar um tipo de projeto](../../extensibility/internals/registering-a-project-type.md)e [VSPackages](../../extensibility/internals/vspackages.md).
+8. Crie o arquivo do Microsoft Installer (*. msi*) para instalar seu VSPackages. Para obter mais informações, consulte [instalar o VSPackages com Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar um tipo de projeto](../../extensibility/internals/registering-a-project-type.md)e [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>Confira também
 - [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

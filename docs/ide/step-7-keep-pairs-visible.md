@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168717"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189336"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Etapa 7: Manter os pares visíveis
 O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que não correspondam. Porém, considere o que deve acontecer quando o jogador escolher um par correspondente. Em vez de fazer os ícones desaparecerem ativando o temporizador (usando o método <xref:System.Windows.Forms.Timer.Start>), o jogo deve redefinir a si próprio para que ele não acompanhe mais nenhum rótulo usando as variáveis de referência `firstClicked` e `secondClicked`, sem redefinir as cores dos dois rótulos que foram escolhidos.
@@ -62,7 +62,7 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
 2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par correspondente, a nova `if` instrução será executada e a instrução de retorno fará com que o método ignore o código que inicia o temporizador, para que os ícones fiquem visíveis, conforme mostrado na imagem a seguir.
 
      ![Jogo criado neste tutorial](../ide/media/express_finishedgame.png)<br/>
-***Jogo de correspondência*** *com pares de ícones visíveis*
+***Jogo de correspondência** _ _with pares de ícones visíveis *
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 

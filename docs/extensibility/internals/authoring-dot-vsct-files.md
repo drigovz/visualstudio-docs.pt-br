@@ -1,5 +1,7 @@
 ---
 title: Criação. Arquivos vsct | Microsoft Docs
+description: Saiba como criar arquivos. vsct que adicionam itens de menu, barras de ferramentas e outros elementos de interface do usuário ao IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413899"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190077"
 ---
 # <a name="author-vsct-files"></a>Arquivos Author. vsct
 Este documento mostra como criar um arquivo *. vsct* para adicionar itens de menu, barras de ferramentas e outros elementos de interface do usuário ao IDE (ambiente de desenvolvimento integrado) do Visual Studio. Use estas etapas quando você adicionar elementos de interface do usuário a um pacote do Visual Studio (VSPackage) que ainda não tem um arquivo *. vsct* .
@@ -51,9 +53,9 @@ Este documento mostra como criar um arquivo *. vsct* para adicionar itens de men
 
 1. Na parte superior do `CommandTable` elemento, adicione um `Extern` elemento para cada arquivo externo a ser referenciado e defina o `href` atributo como o nome do arquivo. Você pode fazer referência aos seguintes arquivos de cabeçalho para acessar os recursos do Visual Studio:
 
-   - *Stdidcmd. h* : define as IDs para todos os comandos expostos pelo Visual Studio.
+   - *Stdidcmd. h*: define as IDs para todos os comandos expostos pelo Visual Studio.
 
-   - *Vsshlids. h* : contém IDs de comando para menus do Visual Studio.
+   - *Vsshlids. h*: contém IDs de comando para menus do Visual Studio.
 
 2. Se o pacote chamar qualquer comando que seja definido pelo Visual Studio ou por outros pacotes, adicione um `UsedCommands` elemento após o `Commands` elemento. Preencha esse elemento com um elemento [UsedCommand](../../extensibility/usedcommand-element.md) para cada comando que você chamar que não faz parte do seu pacote. Defina os `guid` `id` atributos e dos `UsedCommand` elementos para os valores de GUID e ID dos comandos a serem chamados.
 

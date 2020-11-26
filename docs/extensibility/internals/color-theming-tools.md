@@ -1,5 +1,7 @@
 ---
 title: Ferramentas de temas de cor | Microsoft Docs
+description: Saiba mais sobre as ferramentas de editor de cores do VSIX e do compilador de cores do VSIX que são fornecidas no SDK do Visual Studio para ajudá-lo a criar e gerenciar temas de cores.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d45a7757771474cf2fd7c46a016e5ea685998e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 589ea6294361d1fa6098ca21f3b0904758557d24
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709738"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189947"
 ---
 # <a name="color-theme-tools"></a>Ferramentas de tema de cores
 O SDK do Visual Studio fornece várias ferramentas para ajudá-lo a criar e gerenciar temas de cores.

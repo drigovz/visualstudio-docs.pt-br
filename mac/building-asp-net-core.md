@@ -7,11 +7,11 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493498"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189869"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac
 
@@ -58,11 +58,11 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![Captura de tela do projeto de solução com uma classe C# denominada HomeController selecionada.](media/netcore-image4.png)
 
-3. Por convenção, a classe **HomeController** manipula todas as solicitações de entrada que começam com **/Home**. O método **Index** manipula solicitações para a raiz do diretório (como `http://site.com/Home`) e outros métodos manipulam as solicitações para seu caminho nomeado baseado em convenção, como **About()** manipula solicitações para `http://site.com/Home/About`. Obviamente, isso tudo é configurável. Um aspecto notável é que o **HomeController** é o controlador padrão em um novo projeto e, portanto, as solicitações para a raiz do site (`http://site.com`) passarão pelo **Index()** do **HomeController** , assim como as solicitações para `http://site.com/Home` ou `http://site.com/Home/Index`.
+3. Por convenção, a classe **HomeController** manipula todas as solicitações de entrada que começam com **/Home**. O método **Index** manipula solicitações para a raiz do diretório (como `http://site.com/Home`) e outros métodos manipulam as solicitações para seu caminho nomeado baseado em convenção, como **About()** manipula solicitações para `http://site.com/Home/About`. Obviamente, isso tudo é configurável. Um aspecto notável é que o **HomeController** é o controlador padrão em um novo projeto e, portanto, as solicitações para a raiz do site (`http://site.com`) passarão pelo **Index()** do **HomeController**, assim como as solicitações para `http://site.com/Home` ou `http://site.com/Home/Index`.
 
     ![Captura de tela de uma classe C# chamada HomeController.](media/netcore-image5.png)
 
-4. O projeto também tem uma pasta **Exibições** que contém outras pastas que são mapeadas para cada controlador (bem como uma para exibições **Compartilhadas** ). Por exemplo, o arquivo de exibição CSHTML (uma extensão de HTML) para o caminho **/Home/About** seria em **Views/Home/About.cshtml**. Abra esse arquivo.
+4. O projeto também tem uma pasta **Exibições** que contém outras pastas que são mapeadas para cada controlador (bem como uma para exibições **Compartilhadas**). Por exemplo, o arquivo de exibição CSHTML (uma extensão de HTML) para o caminho **/Home/About** seria em **Views/Home/About.cshtml**. Abra esse arquivo.
 
     ![Captura de tela do projeto de solução com o arquivo C S H T M chamado sobre selecionado.](media/netcore-image6.png)
 
@@ -80,15 +80,15 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarefa 3: entendendo como o aplicativo é hospedado
 
-1. No **Gerenciador de Soluções** , abra **Program.cs**. Esse é o bootstrapper que executará seu aplicativo.
+1. No **Gerenciador de Soluções**, abra **Program.cs**. Esse é o bootstrapper que executará seu aplicativo.
 
     ![Captura de tela da solução com o arquivo de origem C# chamado programa selecionado.](media/netcore-image10.png)
 
-2. Embora haja apenas duas linhas de código aqui, elas são significativas. Vamos detalhá-las. Primeiro, um **WebHostBuilder** é criado. Os aplicativos ASP.NET Core exigem um host no qual serão executados. Um host precisa implementar a interface **IWebHost** , que expõe coleções de funcionalidades e serviços, e um método **Start**. O host é normalmente criado com uma instância de um **WebHostBuilder** , que cria e retorna uma instância de **WebHost**. O **WebHost** referencia o servidor que manipulará as solicitações.
+2. Embora haja apenas duas linhas de código aqui, elas são significativas. Vamos detalhá-las. Primeiro, um **WebHostBuilder** é criado. Os aplicativos ASP.NET Core exigem um host no qual serão executados. Um host precisa implementar a interface **IWebHost**, que expõe coleções de funcionalidades e serviços, e um método **Start**. O host é normalmente criado com uma instância de um **WebHostBuilder**, que cria e retorna uma instância de **WebHost**. O **WebHost** referencia o servidor que manipulará as solicitações.
 
     ![Captura de tela do método Main do C# com uma instrução que Inicializa uma variável chamada host com o tipo WebHostBuilder.](media/netcore-image11.png)
 
-3. Embora o **WebHostBuilder** seja responsável por criar o host que irá inicializar o servidor para o aplicativo, ele requer que você forneça um servidor que implementa o **`IServer`** . Por padrão, esse é o **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , um servidor Web multiplataforma para o ASP.NET Core baseado no **libuv** , uma biblioteca de E/S assíncrona multiplataforma.
+3. Embora o **WebHostBuilder** seja responsável por criar o host que irá inicializar o servidor para o aplicativo, ele requer que você forneça um servidor que implementa o **`IServer`** . Por padrão, esse é o **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, um servidor Web multiplataforma para o ASP.NET Core baseado no **libuv**, uma biblioteca de E/S assíncrona multiplataforma.
 
     ![Captura de tela do método Main do C# realçando a variável de host definindo o servidor com o método UseKestrel.](media/netcore-image12.png)
 
@@ -114,7 +114,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="task-4-running-and-debugging-the-application"></a>Tarefa 4: executando e Depurando o aplicativo
 
-1. No **Gerenciador de Soluções** , clique com o botão direito do mouse no nó do projeto **CoreLab** e selecione **Opções**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto **CoreLab** e selecione **Opções**.
 
     ![Captura de tela mostrando o menu de contexto da solução CoreLab, opções de realce.](media/netcore-image18.png)
 
@@ -174,7 +174,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="task-5-application-startup-configuration"></a>Tarefa 5: configuração de inicialização do aplicativo
 
-1. No **Gerenciador de Soluções** , abra **Startup.cs**. Você pode observar alguns rabiscos vermelhos inicialmente, conforme os pacotes NuGet são restaurados em segundo plano e o compilador Roslyn cria um panorama completo das dependências do projeto.
+1. No **Gerenciador de Soluções**, abra **Startup.cs**. Você pode observar alguns rabiscos vermelhos inicialmente, conforme os pacotes NuGet são restaurados em segundo plano e o compilador Roslyn cria um panorama completo das dependências do projeto.
 
     ![Captura de tela da solução com o arquivo de classe C# chamado Startup selecionado.](media/netcore-image29.png)
 
@@ -200,7 +200,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="task-6-inserting-application-middleware"></a>Tarefa 6: inserindo middleware de aplicativo
 
-1. Localize o método **Configure** na classe **Startup**. É nele em que todo o middleware é configurado para que possa ser inserido no pipeline HTTP e usado para processar cada solicitação ao servidor. Embora esse método seja chamado apenas uma vez, o conteúdo dos métodos (como **UseStaticFiles** ) pode ser executado em cada solicitação.
+1. Localize o método **Configure** na classe **Startup**. É nele em que todo o middleware é configurado para que possa ser inserido no pipeline HTTP e usado para processar cada solicitação ao servidor. Embora esse método seja chamado apenas uma vez, o conteúdo dos métodos (como **UseStaticFiles**) pode ser executado em cada solicitação.
 
     ![Captura de tela mostrando o método configure na classe Startup.](media/netcore-image36.png)
 
@@ -220,7 +220,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 5. Depois que o navegador carregar o site, selecione **Safari > Preferências**.
 
-6. Na guia **Avançado** , marque **Mostrar menu Desenvolver na barra de menus** e feche a caixa de diálogo.
+6. Na guia **Avançado**, marque **Mostrar menu Desenvolver na barra de menus** e feche a caixa de diálogo.
 
     ![Captura de tela mostrando o painel avançado na caixa de diálogo Preferências do safari com o menu Mostrar desenvolver na opção barra de menus selecionada.](media/netcore-image37.png)
 
