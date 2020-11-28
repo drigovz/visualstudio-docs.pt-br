@@ -1,5 +1,7 @@
 ---
 title: Implementação de comando | Microsoft Docs
+description: Saiba mais sobre a implementação de comando no Visual Studio, como configurar um grupo de comandos em um VSPackage, adicionar um comando a ele, registrar o comando e implementá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709573"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304818"
 ---
 # <a name="command-implementation"></a>Implementação de comando
 Para implementar um comando em um VSPackage, você deve executar as seguintes tarefas:

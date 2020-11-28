@@ -1,5 +1,7 @@
 ---
 title: Como executar código quando as etapas de implantação são executadas | Microsoft Docs
+description: Execute o código para manipular eventos que são gerados por itens de projeto do SharePoint antes e depois que o Visual Studio executa uma etapa de implantação.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015525"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304459"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Como executar código quando as etapas de implantação são executadas
   Se você quiser executar tarefas adicionais para uma etapa de implantação em um projeto do SharePoint, poderá manipular eventos que são gerados por itens de projeto do SharePoint antes e depois que o Visual Studio executa cada etapa de implantação. Para obter mais informações, consulte [estendendo a implantação e empacotamento do SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Para executar o código quando as etapas de implantação são executadas
 
-1. Crie uma extensão de item de projeto, uma extensão de projeto ou uma definição de um novo tipo de item de projeto. Para obter mais informações, consulte estes tópicos:
+1. Crie uma extensão de item de projeto, uma extensão de projeto ou uma definição de um novo tipo de item de projeto. Para mais informações, consulte os seguintes tópicos:
 
     - [Como: criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 

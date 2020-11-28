@@ -1,5 +1,7 @@
 ---
 title: Visão geral das opções de configuração | Microsoft Docs
+description: Saiba mais sobre as opções de configurações de projeto no Visual Studio. Uma configuração é um tipo de compilação descrito com um conjunto nomeado de propriedades e locais de arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709406"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304743"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 Os projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podem dar suporte a várias configurações que podem ser criadas, depuradas, executadas e/ou implantadas. Uma configuração é um tipo de compilação descrito com um conjunto nomeado de propriedades, normalmente comutadores de compilador e locais de arquivo. Por padrão, novas soluções contêm duas configurações, *depuração* e *versão*. Essas configurações podem ser aplicadas usando suas configurações padrão ou modificadas para atender aos requisitos de solução e/ou projeto específicos. Alguns pacotes podem ser criados de duas maneiras: como um editor do ActiveX ou um componente in-loco. No entanto, os projetos não precisam dar suporte a várias configurações. Se houver apenas uma configuração disponível, essa configuração será mapeada em todas as configurações da solução.

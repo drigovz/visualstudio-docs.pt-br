@@ -1,5 +1,7 @@
 ---
 title: Comandos e menus que usam assemblies de interoperabilidade | Microsoft Docs
+description: Saiba mais sobre as tarefas que devem ser concluídas ao implementar comandos de menu e barra de ferramentas em um VSPackage usando assemblies de interoperabilidade.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c381abe9b4c6ea2a58342e185d7427fa56a180
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4bf3c1843db67fdadcf0fe177aa17e0f17a627e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709482"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304810"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Comandos e menus que usam assemblies de interoperabilidade
 Um VSPackage que implementa comandos de menu e barra de ferramentas usando assemblies de interoperabilidade deve:

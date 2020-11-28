@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItem | Microsoft Docs
+description: Obtenha informações de referência sobre o elemento ProjectItem, que representa um item de projeto do SharePoint na referência de esquema XML do item de projeto do SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44fc1b918960f0268d916ccfa560f118cea47144
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536871"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305049"
 ---
 # <a name="projectitem-element"></a>Elemento ProjectItem
   Representa um item de projeto do SharePoint. Esse elemento é o elemento raiz necessário do arquivo *. esdata* .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```xml
 <ProjectItem DefaultFile = "File that opens in the editor when you open the project item"
@@ -64,7 +66,7 @@ ms.locfileid: "85536871"
 |[SafeControls](../sharepoint/safecontrols-element.md)|Elemento opcional.<br /><br /> Representa uma coleção de controles ASPX e Web Parts que são designados como seguros para qualquer usuário acessar em qualquer página ASPX no site do SharePoint.<br /><br /> Você pode incluir apenas um elemento **SafeControls** .|
 
 ### <a name="parent-elements"></a>Elementos pai
- Nenhum.
+ nenhuma.
 
 ## <a name="element-information"></a>Informações do elemento
 

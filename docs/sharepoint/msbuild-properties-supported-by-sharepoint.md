@@ -1,5 +1,7 @@
 ---
 title: Propriedades do MSBuild com suporte do SharePoint | Microsoft Docs
+description: Leia uma lista de nomes de propriedade e descrições do MSBuild que são compatíveis com o e são específicos para o SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985173"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305138"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Propriedades do MsBuild com suporte no SharePoint
   Qualquer [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedade definida no arquivo Microsoft. VisualStudio. SharePoint. targets, arquivo de projeto ou arquivo de usuário do projeto pode ser usada em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos do SharePoint. Além das [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Propriedades comuns fornecidas pelo projeto, o SharePoint define propriedades adicionais que são específicas para projetos do SharePoint.

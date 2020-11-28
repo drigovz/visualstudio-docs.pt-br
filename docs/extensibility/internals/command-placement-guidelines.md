@@ -1,5 +1,7 @@
 ---
 title: Diretrizes de posicionamento de comando | Microsoft Docs
+description: Conheça as diretrizes e as práticas recomendadas para posicionar comandos no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709565"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305251"
 ---
 # <a name="command-placement-guidelines"></a>Diretrizes de posicionamento de comando
 As práticas recomendadas para posicionamento de comandos no ambiente de desenvolvimento integrado (IDE) do Visual Studio variam de acordo com o tamanho do conjunto de comandos. Os comandos são definidos e posicionados de acordo com as informações em arquivos *. vsct* .

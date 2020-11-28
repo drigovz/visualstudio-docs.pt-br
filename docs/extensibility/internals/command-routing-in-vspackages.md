@@ -1,5 +1,7 @@
 ---
 title: Roteamento de comandos em VSPackages | Microsoft Docs
+description: Saiba mais sobre o roteamento de comandos no VSPackages e como os comandos são roteados com base no contexto no qual eles são executados no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709549"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305226"
 ---
 # <a name="command-routing-in-vspackages"></a>Roteamento de comandos em VSPackages
 Um comando é roteado [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] com base no contexto no qual ele é executado. Ele é roteado do contexto inicial para fora para o contexto global.

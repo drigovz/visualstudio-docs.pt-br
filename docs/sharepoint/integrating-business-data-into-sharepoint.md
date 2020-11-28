@@ -1,5 +1,7 @@
 ---
 title: Integrando dados corporativos ao SharePoint | Microsoft Docs
+description: Leia um resumo de alto nível sobre como integrar dados corporativos ao SharePoint criando um modelo para o serviço BDC (conectividade de dados corporativos).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016306"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304349"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integre dados corporativos ao SharePoint
   Você pode integrar dados corporativos ao SharePoint. Os dados de negócios podem vir de aplicativos de servidor back-end, como o [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] Siebel e o SAP, ou um serviço Web. Os usuários podem exibir, adicionar, atualizar ou excluir dados corporativos usando listas externas ou Web Parts de dados corporativos no SharePoint.  Os usuários também podem acessar esses dados offline em um aplicativo Microsoft Office, como o Microsoft Outlook. Para obter mais informações, consulte [onde você pode mostrar dados externos](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).
@@ -41,7 +43,7 @@ ms.locfileid: "86016306"
 
  Um modelo contém entidades e métodos.
 
-### <a name="entities"></a>Entidades
+### <a name="entities"></a>Entities
  Uma entidade descreve uma coleção de campos. Por exemplo, uma entidade pode representar uma tabela em um banco de dados. Uma entidade aparece como um tipo de conteúdo externo no SharePoint. Para obter mais informações sobre tipos de conteúdo externo, consulte [o que são tipos de conteúdo externo?](/previous-versions/office/developer/sharepoint-2010/ee556391(v=office.14))
 
 ### <a name="methods"></a>Métodos

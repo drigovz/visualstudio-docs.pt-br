@@ -1,5 +1,7 @@
 ---
 title: Algoritmo de roteamento de comando | Microsoft Docs
+description: Saiba mais sobre a ordem de resolução de comando no Visual Studio, pois comandos são tratados por componentes diferentes e roteados do contexto mais interno para o mais externo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709543"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305239"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo de roteamento de comando
 Nos comandos do Visual Studio são tratados por vários componentes diferentes. Os comandos são roteados do contexto mais interno, que é baseado na seleção atual, para o contexto mais externo (também conhecido como global). Para obter mais informações, consulte [disponibilidade de comando](../../extensibility/internals/command-availability.md).
@@ -38,7 +40,7 @@ Nos comandos do Visual Studio são tratados por vários componentes diferentes. 
 
 7. Hierarquia atual: a hierarquia atual pode ser o projeto que possui a janela de documento ativo ou a hierarquia selecionada no **Gerenciador de soluções**. O Visual Studio procura a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface implementada na hierarquia atual ou ativa. A hierarquia deve dar suporte a comandos que são válidos sempre que a hierarquia estiver ativa, mesmo se uma janela de documento de um item de projeto tiver foco. No entanto, os comandos que se aplicam somente quando **Gerenciador de soluções** tem foco devem ter suporte usando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface e seus <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> métodos e.
 
-     Os comandos **recortar**, **copiar**, **colar**, **excluir**, **renomear**, **Inserir**e **DoubleClick** exigem tratamento especial. Para obter informações sobre como tratar os comandos **delete** e **Remove** em hierarquias, consulte a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interface.
+     Os comandos **recortar**, **copiar**, **colar**, **excluir**, **renomear**, **Inserir** e **DoubleClick** exigem tratamento especial. Para obter informações sobre como tratar os comandos **delete** e **Remove** em hierarquias, consulte a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interface.
 
 8. Global: se um comando não tiver sido tratado pelos contextos mencionados anteriormente, o Visual Studio tentará circulá-lo para o VSPackage que possui um comando que implementa a <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Se o VSPackage já não tiver sido carregado, ele não será carregado quando o Visual Studio chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método. O VSPackage é carregado somente quando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método é chamado.
 

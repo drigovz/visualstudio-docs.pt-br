@@ -1,5 +1,7 @@
 ---
 title: Gerenciamento de componentes | Microsoft Docs
+description: Saiba como gerenciar componentes do Windows Installer ao criar um instalador do VSPackage no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709331"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304926"
 ---
 # <a name="component-management"></a>Gerenciamento de componentes
 As unidades de tarefas no Windows Installer são chamadas de componentes Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID identifica cada WIC, que é a unidade básica de instalação e a contagem de referência para as configurações que usam Windows Installer.
@@ -29,7 +31,7 @@ As unidades de tarefas no Windows Installer são chamadas de componentes Windows
 
 - Crie arquivos e chaves do registro que são compartilhados entre versões em seus próprios componentes.
 
-     Isso permite que você os consuma facilmente na próxima versão. Por exemplo, as bibliotecas de tipos que são registradas globalmente, extensões de arquivo, outros itens registrados em **HKEY_CLASSES_ROOT**e assim por diante.
+     Isso permite que você os consuma facilmente na próxima versão. Por exemplo, as bibliotecas de tipos que são registradas globalmente, extensões de arquivo, outros itens registrados em **HKEY_CLASSES_ROOT** e assim por diante.
 
 - Agrupe componentes compartilhados em módulos de mesclagem separados.
 

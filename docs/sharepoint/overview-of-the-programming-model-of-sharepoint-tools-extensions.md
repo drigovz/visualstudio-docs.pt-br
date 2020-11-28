@@ -1,6 +1,8 @@
 ---
 title: Visão geral do modelo de programação das extensões de ferramentas do SharePoint
 titleSuffix: ''
+description: Leia uma visão geral do modelo de programação das extensões de ferramentas do SharePoint. Implemente interfaces de extensibilidade. Entenda os modelos de objeto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2f7b56b372f1f083b441a5d3e6045ffc7aff7ed
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585726"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305134"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Visão geral do modelo de programação das extensões de ferramentas do SharePoint
   Ao criar uma extensão para as ferramentas do SharePoint no Visual Studio, você começa implementando uma ou mais interfaces de extensibilidade que são expostas pelas ferramentas do SharePoint. Na maioria dos casos, você também usará outros tipos fornecidos pelas ferramentas do SharePoint para implementar recursos em sua extensão. Em alguns cenários, você também pode usar tipos em outros modelos de objeto fornecidos pelo Visual Studio e pelo SharePoint. Você deve entender a finalidade de cada um desses modelos de objeto e saber como usá-los entre si para criar extensões para as ferramentas do SharePoint.
@@ -93,7 +95,7 @@ ms.locfileid: "91585726"
 
  Você pode usar o modelo de objeto de integração se quiser adicionar um novo recurso do Visual Studio que será usado com as ferramentas internas do SharePoint. Por exemplo, se você criar um item de projeto personalizado do SharePoint que representa uma ação personalizada para um site do SharePoint, também poderá criar um VSPackage que implemente um designer para a ação personalizada. Você pode associar o designer à ação personalizada adicionando um item de menu de atalho ao item de projeto que representa a ação personalizada no **Gerenciador de soluções**. Você pode abrir seu designer abrindo o menu de atalho (clicando com o botão direito do mouse no item de projeto de ação personalizada ou escolhendo-o e escolhendo as teclas **Shift** + **F10** ) e, em seguida, escolhendo **abrir**.
 
- Esse modelo de objeto é definido em um conjunto de assemblies que são incluídos no SDK do Visual Studio. Alguns dos principais assemblies nesse modelo de objeto incluem *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*e *Microsoft.VisualStudio.OLE.Interop.dll*.
+ Esse modelo de objeto é definido em um conjunto de assemblies que são incluídos no SDK do Visual Studio. Alguns dos principais assemblies nesse modelo de objeto incluem *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll* e *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Para obter mais informações sobre o modelo de objeto de integração, consulte [visão geral do modelo de automação](../extensibility/internals/automation-model-overview.md) e [referência do SDK do Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
@@ -104,7 +106,7 @@ ms.locfileid: "91585726"
 
 |Modelo de objeto|Descrição|
 |------------------|-----------------|
-|Modelo de objeto de servidor|O modelo de objeto de servidor fornece acesso a todos os recursos que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] expõe programaticamente. Esse modelo de objeto foi projetado para ser usado por soluções do SharePoint que são executadas no servidor do SharePoint. A maior parte desse modelo de objeto é definida no assembly *Microsoft.SharePoint.dll* . Para obter mais informações sobre o modelo de objeto de servidor, consulte [usando o modelo de objeto do SharePoint Foundation Server](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Modelo de objeto de servidor|O modelo de objeto de servidor fornece acesso a todos os recursos que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] expõe programaticamente. Esse modelo de objeto foi projetado para ser usado por soluções do SharePoint que são executadas no servidor do SharePoint. A maior parte desse modelo de objeto é definida no assembly *Microsoft.SharePoint.dll* . Para obter mais informações sobre o modelo de objeto de servidor, consulte [usando o modelo de objeto de Server-Side do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
 |Modelo de objeto de cliente|O modelo de objeto de cliente é um subconjunto do modelo de objeto de servidor que pode ser usado para interoperar com dados do SharePoint de um cliente ou servidor remoto. Ele foi projetado para minimizar o número de viagens de ida e volta que devem ser executadas para executar tarefas comuns. A maior parte do modelo de objeto de cliente é definida nos assemblies *Microsoft.SharePoint.Client.dll* e *Microsoft.SharePoint.Client.Runtime.dll* . Para obter mais informações sobre o modelo de objeto de cliente, consulte [modelo de objeto de cliente gerenciado](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Confira também

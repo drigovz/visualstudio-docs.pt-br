@@ -1,5 +1,7 @@
 ---
 title: Utilitário CreatePkgDef | Microsoft Docs
+description: Saiba mais sobre o utilitário CreatePkgDef que usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um arquivo. pkgdef para acompanhar o arquivo. dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709161"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305547"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
 Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um arquivo *. pkgdef* para acompanhar o arquivo *. dll* . O arquivo *. pkgdef* contém todas as informações que, de outra forma, seriam gravadas no registro do sistema quando a extensão é instalada.

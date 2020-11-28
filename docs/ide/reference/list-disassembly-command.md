@@ -1,5 +1,7 @@
 ---
 title: Comando Listar Desmontagem
+description: Saiba mais sobre o comando listar desmontagem e como ele inicia o processo de depuração e permite que você especifique como os erros são tratados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,17 +15,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91319a8d25aaec6bdd676ed6d709dffc47100195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15e9016551b178b0a29656e615d029ddaf0ca279
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770650"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305334"
 ---
 # <a name="list-disassembly-command"></a>Comando Listar Desmontagem
 Inicia o processo de depuração e permite que você especifique como os erros são tratados.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cmd
 Debug.ListDisassembly [/count:number] [/endaddress:expression]

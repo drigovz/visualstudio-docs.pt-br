@@ -1,5 +1,7 @@
 ---
 title: Converter instrução switch em expressão switch
+description: Saiba como usar o menu ações rápidas e refatoração para converter uma instrução switch em uma expressão de comutador C# 8,0.
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc13cffe8352d9fb57f5bb991c3af615eddb2a14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: add43010fcec04cbe12889672f561f22057efb8c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68740055"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305523"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>Converter instrução switch em expressão switch
 

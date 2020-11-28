@@ -1,5 +1,7 @@
 ---
 title: Empacotando e implantando soluções do SharePoint | Microsoft Docs
+description: Empacote e implante soluções do SharePoint, que são implantadas em um servidor do SharePoint usando um arquivo de pacote de solução (. wsp).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015591"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305082"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empacotar e implantar soluções do SharePoint
   Normalmente, uma solução do SharePoint é implantada em um servidor do SharePoint usando um arquivo de pacote de solução (. wsp). Você pode usar o Visual Studio para organizar seus itens de projeto do SharePoint em recursos e criar um pacote para implantar seus recursos do SharePoint.
@@ -89,13 +91,13 @@ ms.locfileid: "86015591"
  Você também pode personalizar as etapas de implantação no computador de desenvolvimento. Para obter mais informações, consulte [implantar, publicar e atualizar pacotes de solução do SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>Implantar arquivos em soluções do SharePoint
- Normalmente, quando você adiciona um item de projeto do SharePoint à sua solução do SharePoint, todos os arquivos necessários são incluídos. Os arquivos que podem ser compilados (arquivos de código) são incorporados ao assembly de saída da solução. No entanto, você também pode adicionar arquivos não compiláveis, por exemplo, *. xml*, *. txt*ou arquivos de recurso, a um projeto do SharePoint. Esses arquivos não são empacotados automaticamente em sua solução. Para garantir que eles sejam empacotados, adicione os arquivos a uma pasta mapeada ou a um item de projeto do SharePoint.
+ Normalmente, quando você adiciona um item de projeto do SharePoint à sua solução do SharePoint, todos os arquivos necessários são incluídos. Os arquivos que podem ser compilados (arquivos de código) são incorporados ao assembly de saída da solução. No entanto, você também pode adicionar arquivos não compiláveis, por exemplo, *. xml*, *. txt* ou arquivos de recurso, a um projeto do SharePoint. Esses arquivos não são empacotados automaticamente em sua solução. Para garantir que eles sejam empacotados, adicione os arquivos a uma pasta mapeada ou a um item de projeto do SharePoint.
 
  Os arquivos adicionados às pastas mapeadas são copiados automaticamente para o hive do SharePoint quando a solução é implantada. Os arquivos adicionados a um item de projeto do SharePoint são implantados no local especificado na propriedade **local de implantação** para cada arquivo, que é parcialmente definido com base na Propriedade do **tipo de implantação** . Por padrão, o valor da Propriedade do **tipo de implantação** é **NoDeployment**, o que significa que o arquivo não é implantado com a solução. Você deve definir outro valor para a propriedade para incluir o arquivo no pacote.
 
  Por exemplo, para adicionar um arquivo *. xml* a um projeto do SharePoint, execute uma destas ações:
 
-- Adicione uma pasta mapeada de "layouts" do SharePoint ao seu projeto. Isso cria em **Gerenciador de soluções** uma pasta denominada **layouts** que tem uma subpasta para o projeto. Adicione o arquivo *. xml* à nova subpasta. Por padrão, o arquivo é implantado no sistema de arquivos do SharePoint em *.. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Para obter informações sobre como adicionar pastas mapeadas, consulte [como adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Adicione uma pasta mapeada de "layouts" do SharePoint ao seu projeto. Isso cria em **Gerenciador de soluções** uma pasta denominada **layouts** que tem uma subpasta para o projeto. Adicione o arquivo *. xml* à nova subpasta. Por padrão, o arquivo é implantado no sistema de arquivos do SharePoint em *.. \\\TEMPLATE\LAYOUTS \<Folder Name>*. Para obter informações sobre como adicionar pastas mapeadas, consulte [como adicionar e remover pastas mapeadas](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Adicione o arquivo *. xml* à pasta de um item de projeto do SharePoint e, em seguida, altere a propriedade **tipo de implantação** do arquivo *. xml* de **NoDeployment** para outra configuração, como **RootFile** ou **ElementFile**. A configuração apropriada do **tipo de implantação** depende do arquivo e do projeto. Para obter mais informações sobre as configurações de Propriedade do **tipo de implantação** , consulte [desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

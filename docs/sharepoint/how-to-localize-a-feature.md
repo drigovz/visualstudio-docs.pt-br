@@ -1,5 +1,7 @@
 ---
 title: Como localizar um recurso | Microsoft Docs
+description: Aprenda a localizar títulos e descrições de recursos no SharePoint, substituindo valores de cadeia de caracteres embutidos em código com expressões que fazem referência a recursos localizados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016137"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305191"
 ---
 # <a name="how-to-localize-a-feature"></a>Como localizar um recurso
   Por padrão, títulos e descrições de recursos usam valores de cadeia de caracteres embutidos em código. Para localizar o título e a descrição do recurso, substitua as cadeias de caracteres por expressões que fazem referência a recursos localizados.
@@ -27,7 +29,7 @@ ms.locfileid: "86016137"
 
 #### <a name="to-localize-a-feature"></a>Para localizar um recurso
 
-1. No **Gerenciador de soluções**, abra o menu de atalho para o nó **Feature1** e escolha **Adicionar recurso**de recurso.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó **Feature1** e escolha **Adicionar recurso** de recurso.
 
 2. Na caixa de diálogo **Adicionar recurso** , escolha **Idioma invariável** na lista como a cultura do arquivo de recurso de recurso de idioma padrão.
 
@@ -37,7 +39,7 @@ ms.locfileid: "86016137"
 
 4. Abra cada arquivo de recurso no editor de recursos e, em seguida, insira todas as IDs de cadeia de caracteres e seus valores.
 
-     Por exemplo, no arquivo de recurso de recurso padrão, insira uma ID de cadeia de caracteres de **título** com um valor de **meu título de recurso**e uma segunda ID de **cadeia de caracteres** com um valor de **Descrição de meu recurso**. Para cada arquivo de recurso localizado, use as mesmas IDs de cadeias de caracteres usadas no recurso de recurso padrão, mas insira cadeias localizadas para os valores.
+     Por exemplo, no arquivo de recurso de recurso padrão, insira uma ID de cadeia de caracteres de **título** com um valor de **meu título de recurso** e uma segunda ID de **cadeia de caracteres** com um valor de **Descrição de meu recurso**. Para cada arquivo de recurso localizado, use as mesmas IDs de cadeias de caracteres usadas no recurso de recurso padrão, mas insira cadeias localizadas para os valores.
 
 5. Depois de inserir todos os valores de recurso, abra o menu de atalho para o recurso (por exemplo, *Feature1. Feature*) e escolha **Designer de exibição** para abrir o recurso no designer de recursos.
 
@@ -51,7 +53,7 @@ ms.locfileid: "86016137"
 
 7. Escolha a tecla **F5** para compilar e executar o aplicativo.
 
-8. No SharePoint, abra o menu **ações do site** , escolha configurações do **site**e, na seção **ações do site** , escolha o link **gerenciar recursos do site** .
+8. No SharePoint, abra o menu **ações do site** , escolha configurações do **site** e, na seção **ações do site** , escolha o link **gerenciar recursos do site** .
 
 9. No SharePoint, altere o idioma de exibição do padrão.
 

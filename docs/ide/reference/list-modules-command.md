@@ -1,5 +1,7 @@
 ---
 title: Comando Listar Módulos
+description: Saiba mais sobre o comando list modules e como ele lista os módulos para o processo atual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595495"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305306"
 ---
 # <a name="list-modules-command"></a>Comando Listar Módulos
 Lista os módulos do processo atual.

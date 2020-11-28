@@ -1,5 +1,7 @@
 ---
 title: Opções de linha de comando do Devenv
+description: Saiba mais sobre as opções de linha de comando do devenv e como usá-las para definir opções de IDE, além de criar, depurar e implantar projetos, tudo a partir da linha de comando.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed7a36ad561daf87ec65db0f6c51c9dd7833eb9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 597a3f7e9a9b36d52f55a9215891c40b18f1a9e9
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255555"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305510"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -76,7 +78,7 @@ As seguintes opções de linha de comando apresentam o IDE e realizam a tarefa d
 |[/Run ou /R](run-devenv-exe.md)|Compila e executa a solução especificada.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compila e executa a solução especificada, minimiza o IDE quando a solução é executada e fecha o IDE depois que a solução termina a execução.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Inicia o Visual Studio no modo de segurança. Esta opção carrega somente o ambiente padrão, os serviços padrão e as versões enviadas de pacotes de terceiros.<br /><br /> Esta opção não aceita nenhum argumento.|
-|[/UseEnv](useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB para a compilação C++. Essa opção é instalada com a carga de trabalho de **Desenvolvimento para desktop com C++**. Para obter mais informações, consulte [definindo o caminho e as variáveis de ambiente para compilações de linha de comando](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB para a compilação C++. Essa opção é instalada com a carga de trabalho de **Desenvolvimento para desktop com C++**. Para obter mais informações, consulte [definindo as variáveis Path e Environment para builds Command-Line](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 As opções de linha de comando a seguir não exibem o IDE.
 

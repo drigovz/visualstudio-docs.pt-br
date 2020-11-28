@@ -1,5 +1,7 @@
 ---
 title: Caixa de diálogo Documentos, Ambiente, Opções
+description: Saiba como usar a página ambientes na seção documentos para controlar a exibição de documentos no IDE e gerenciar alterações externas em documentos e arquivos.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570057"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305477"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo opções: \> documentos de ambiente
 
@@ -85,5 +87,5 @@ Selecione esta opção para fazer com que arquivos que contêm informações inc
 
 ## <a name="see-also"></a>Confira também
 
-- [arquivos diversos](../../ide/reference/miscellaneous-files.md)
+- [Arquivos diversos](../../ide/reference/miscellaneous-files.md)
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)

@@ -1,5 +1,7 @@
 ---
 title: Utilitário CreateExpInstance | Microsoft Docs
+description: Saiba mais sobre o utilitário CreateExpInstance que permite criar, redefinir ou excluir uma instância experimental do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a6b302976495e6067fad14317856cda4ac4625f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709236"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305366"
 ---
 # <a name="createexpinstance-utility"></a>Utilitário CreateExpInstance
 Use o utilitário **CreateExpInstance** para criar, redefinir ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar as extensões do Visual Studio sem alterar o produto subjacente.

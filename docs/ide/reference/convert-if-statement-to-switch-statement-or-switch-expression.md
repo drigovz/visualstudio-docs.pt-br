@@ -1,5 +1,6 @@
 ---
 title: Converter instrução If para alternar instrução ou expressão
+description: Saiba como usar o menu ações rápidas e refatoração para converter uma instrução If em uma instrução switch ou em uma expressão de comutador C# 8,0.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102526"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305560"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Converter instrução if em instrução switch ou em expressão switch
 
@@ -32,17 +33,17 @@ Esta refatoração aplica-se a:
 ## <a name="how-to"></a>Como fazer
 
 1. Coloque o cursor na palavra-chave `if`.
-2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas** .
+2. Pressione **Ctrl** + **.** para acionar o menu **Ações e Refatorações Rápidas**.
 3. Selecione uma das duas opções a seguir:
 
-    Selecione **converter para a instrução ' switch '** .
+    Selecione **converter para a instrução ' switch '**.
 
    ![Conversão de instrução If para alternar](media/convert-if-to-switch-statement.png)
 
-    Selecione **converter para expressão ' switch '** .
+    Selecione **converter para expressão ' switch '**.
 
     ![Converter a instrução If para alternar a expressão](media/convert-if-to-switch-expression.png)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

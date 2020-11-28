@@ -1,5 +1,7 @@
 ---
 title: Comentando o código em um serviço de linguagem herdado | Microsoft Docs
+description: Saiba mais sobre as classes do MPF (Managed Package Framework) que dão suporte ao comentário de código em um serviço de linguagem herdado no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709432"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304999"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Código de comentário em um serviço de linguagem herdado
 Linguagens de programação normalmente fornecem um meio de anotar ou comentar o código. Um comentário é uma seção de texto que fornece informações adicionais sobre o código, mas é ignorada durante a compilação ou interpretação.
@@ -32,7 +34,7 @@ Há dois estilos gerais de comentário:
 
 Os comentários de linha normalmente têm um caractere inicial (ou caracteres), enquanto os comentários de bloco têm caracteres de início e término. Por exemplo, em C#, um comentário de linha começa com e `//` um comentário de bloco começa com `/*` e termina com `*/` .
 
-Quando o usuário seleciona a **seleção de comentário** do comando no menu **Editar**  >  **avançado** , o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe. Quando o usuário seleciona a **seleção Remover comentário**do comando, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.
+Quando o usuário seleciona a **seleção de comentário** do comando no menu **Editar**  >  **avançado** , o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe. Quando o usuário seleciona a **seleção Remover comentário** do comando, o comando é roteado para o <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> método.
 
 ## <a name="support-code-comments"></a>Comentários de código de suporte
  Você pode fazer com que o serviço de linguagem dê suporte a comentários de código por meio do `EnableCommenting` parâmetro nomeado do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Isso define a <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propriedade da <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Para obter mais informações sobre como definir recursos de serviço de linguagem, consulte [registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md).

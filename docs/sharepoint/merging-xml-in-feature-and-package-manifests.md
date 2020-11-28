@@ -1,5 +1,7 @@
 ---
 title: Mesclando XML em manifestos de recurso e pacote | Microsoft Docs
+description: Merge designer – código XML gerado e adicionado pelo usuário em manifestos de pacote e recurso do SharePoint. Aprenda elementos de manifesto de pacote e recurso e exceções de mesclagem.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90838488"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304233"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Mesclar XML em manifestos de recurso e pacote
   Os recursos e pacotes são definidos por [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de manifesto. Esses manifestos empacotados são uma combinação de dados gerados de designers e personalizados [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] inseridos no modelo de manifesto por usuários. No momento do empacotamento, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mescla as [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instruções personalizadas com o designer – fornecido [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar o arquivo de manifesto empacotado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] . Elementos semelhantes, com as exceções observadas posteriormente em exceções de mesclagem, são mesclados para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erros de validação depois que você implanta os arquivos no SharePoint e para tornar os arquivos de manifesto menores e mais eficientes.
@@ -51,8 +53,8 @@ ms.locfileid: "90838488"
 |ElementFile|Location|
 |ElementManifests/ElementManifest|Location|
 |Propriedades/Propriedade|Chave|
-|CustomUpgradeAction|Name|
-|CustomUpgradeActionParameter|Name|
+|CustomUpgradeAction|Nome|
+|CustomUpgradeActionParameter|Nome|
 
 > [!NOTE]
 > Como a única maneira de modificar o elemento CustomUpgradeAction está no editor personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , o efeito de não mesclagem é baixo.

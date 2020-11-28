@@ -1,5 +1,7 @@
 ---
 title: 'Como: marcar controles como controles seguros | Microsoft Docs'
+description: Marque controles como controles seguros na propriedade entradas de controle seguro de um item de projeto do SharePoint ou no designer de pacotes ao adicionar um assembly.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016254"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304502"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Como: marcar controles como controles seguros
   Por segurança, o SharePoint diferencia os controles da Web que são protegidos contra injeção de script e controles da Web que não são. Controles protegidos, ou *controles seguros*, podem ser acessados por usuários não confiáveis. Você pode marcar controles como seguros na propriedade entradas de controle seguro de um item de projeto do SharePoint ou no **Designer de pacotes** ao adicionar um assembly ao pacote. Para obter mais informações, consulte
@@ -43,7 +45,7 @@ ms.locfileid: "86016254"
 
 4. Na caixa de diálogo **entradas de controle seguro** , escolha o botão **Adicionar** duas vezes para adicionar duas entradas de controle seguro ao painel **Membros** : uma para o botão e uma para a caixa de texto.
 
-5. Escolha a primeira entrada de controle seguro e, em seguida, altere o valor de sua propriedade **Safe** para **false**, sua propriedade de **nome de tipo** para **Button1**e sua propriedade **Safe from script** como **false**.
+5. Escolha a primeira entrada de controle seguro e, em seguida, altere o valor de sua propriedade **Safe** para **false**, sua propriedade de **nome de tipo** para **Button1** e sua propriedade **Safe from script** como **false**.
 
      Esta etapa identifica o controle de botão como um controle não seguro.
 
@@ -63,7 +65,7 @@ ms.locfileid: "86016254"
 
      Anote o namespace do controle porque ele é usado posteriormente.
 
-3. Na barra de menus, escolha **Compilar**compilar  >  **solução** para compilar o projeto.
+3. Na barra de menus, escolha **Compilar** compilar  >  **solução** para compilar o projeto.
 
 4. Crie outra solução do SharePoint.
 

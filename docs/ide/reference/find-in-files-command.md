@@ -1,5 +1,7 @@
 ---
 title: Comando Localizar nos Arquivos
+description: Saiba mais sobre o comando Localizar e como ele pesquisa arquivos usando algumas das opções disponíveis na guia localizar nos arquivos da janela Localizar e substituir.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569576"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305388"
 ---
 # <a name="find-in-files-command"></a>Comando Localizar nos Arquivos
 Pesquise arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.

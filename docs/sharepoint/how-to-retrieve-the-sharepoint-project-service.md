@@ -1,5 +1,7 @@
 ---
 title: Como recuperar o serviço de projeto do SharePoint | Microsoft Docs
+description: Entenda como acessar o serviço de projeto do SharePoint em extensões de sistema de projeto, extensões de Gerenciador de Servidores ou outras extensões do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f49883337c5748c0f8bcab5d0a88e02612e51b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 553b4ae3b7ecfa9fa49065824020ebdcecf77215
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015556"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304437"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Como recuperar o serviço de projeto do SharePoint
   Você pode acessar o serviço de projeto do SharePoint nos seguintes tipos de soluções:

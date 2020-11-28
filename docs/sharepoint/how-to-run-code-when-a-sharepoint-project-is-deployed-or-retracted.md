@@ -1,6 +1,8 @@
 ---
 title: Executar o código quando o projeto do SharePoint for implantado ou retraído
 titleSuffix: ''
+description: Saiba como executar código quando um projeto do SharePoint é implantado ou cancelado para que você possa manipular eventos gerados pelo Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb83696febe9eca700ae9651492dbd188e38f856
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 24e6536dc5fdc62bb3b1c32bbd7c379fcef1f8cd
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585752"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304479"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Como executar código quando um projeto do SharePoint é implantado ou retraído
   Se você quiser executar tarefas adicionais quando um projeto do SharePoint for implantado ou retraído, poderá manipular eventos gerados pelo Visual Studio. Para obter mais informações, consulte [estender o empacotamento e a implantação do SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Para executar o código quando um projeto do SharePoint é implantado ou retraído
 
-1. Crie uma extensão de item de projeto, uma extensão de projeto ou uma definição de um novo tipo de item de projeto. Para obter mais informações, consulte estes tópicos:
+1. Crie uma extensão de item de projeto, uma extensão de projeto ou uma definição de um novo tipo de item de projeto. Para mais informações, consulte os seguintes tópicos:
 
    - [Como: criar uma extensão de item de projeto do SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 

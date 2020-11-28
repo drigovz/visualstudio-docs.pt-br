@@ -1,5 +1,7 @@
 ---
 title: Comando Listar Pilha de Chamadas
+description: Saiba mais sobre o comando listar pilha de chamadas e como ele exibe a pilha de chamadas atual.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770688"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305354"
 ---
 # <a name="list-call-stack-command"></a>Comando Listar Pilha de Chamadas
 Exibe a pilha de chamadas atual.

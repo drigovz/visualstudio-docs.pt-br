@@ -1,5 +1,7 @@
 ---
 title: 'Como: incluir arquivos usando um módulo | Microsoft Docs'
+description: Saiba como incluir arquivos usando um módulo, que é um contêiner que permite implantar arquivos como páginas mestras ASPX, arquivos de texto ou imagens no SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016300"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305418"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Como: incluir arquivos usando um módulo
   *Módulos* (não devem ser confundidos com [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) são contêineres que permitem implantar arquivos como páginas mestras aspx, arquivos de texto ou imagens no SharePoint.
@@ -35,7 +37,7 @@ ms.locfileid: "86016300"
 
 2. Em **Gerenciador de soluções**, escolha o nó do projeto e, na barra de menus, escolha **projeto**  >  **Adicionar novo item**.
 
-     A caixa de diálogo **Adicionar Novo Item** é aberta.
+     A caixa de diálogo **Adicionar novo item** é aberta.
 
 3. Na lista de modelos do SharePoint, escolha o modelo de **módulo** e, em seguida, escolha o botão **Adicionar** .
 

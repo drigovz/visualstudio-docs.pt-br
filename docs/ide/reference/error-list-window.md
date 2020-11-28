@@ -1,5 +1,7 @@
 ---
 title: Janela Lista de Erros
+description: Saiba mais sobre a janela de Lista de Erros e como usá-la para executar tarefas relacionadas à resolução dos erros que ele exibe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569657"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305439"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 
@@ -41,7 +43,7 @@ A janela **Lista de Erros** permite que você execute as seguintes tarefas:
 
 - Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.
 
-Para exibir o **lista de erros**, escolha **Exibir**  >  **lista de erros**ou pressione **Ctrl** + **\\** + **E**.
+Para exibir o **lista de erros**, escolha **Exibir**  >  **lista de erros** ou pressione **Ctrl** + **\\** + **E**.
 
 É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.
 
@@ -66,7 +68,7 @@ Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do
 
 A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.
 
-## <a name="search"></a>Search
+## <a name="search"></a>Pesquisar
 
 Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.
 
@@ -88,7 +90,7 @@ Descrição
 
 Exibe o texto da entrada.
 
-Projeto
+Project
 
 Exibe o nome do projeto atual.
 

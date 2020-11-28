@@ -1,5 +1,7 @@
 ---
 title: Comando Listar Origem
+description: Saiba mais sobre o comando de origem da lista e como ele exibe as linhas especificadas do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 286cfa87de96b75e8b79d9ee3bc31e84d7761670
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae2463a3d8dd295fcba9bf264e1ad3fa250169d4
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770618"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305286"
 ---
 # <a name="list-source-command"></a>Comando Listar Origem
 Exibe as linhas de código-fonte especificadas.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```
 Debug.ListSource [/Count:number] [/Current] [/File:filename]

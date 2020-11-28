@@ -1,5 +1,7 @@
 ---
 title: 'Como: localizar marcação ASPX | Microsoft Docs'
+description: Aprenda a localizar a marcação ASPX no SharePoint, substituindo valores de cadeia de caracteres embutidos em código por expressões que fazem referência a recursos localizados.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016279"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304660"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Como: localizar marcação ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] as páginas (. aspx) normalmente usam valores de cadeia de caracteres embutidos em código. Para localizar essas cadeias de caracteres, substitua-as por expressões que fazem referência a recursos localizados.
@@ -60,7 +62,7 @@ ms.locfileid: "86016279"
     </asp:Content>
     ```
 
-     como
+     para
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

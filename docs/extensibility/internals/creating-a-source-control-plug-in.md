@@ -1,5 +1,7 @@
 ---
 title: Criando um plug-in de controle do código-fonte | Microsoft Docs
+description: Saiba como criar um plug-in de controle do código-fonte que adiciona um recurso de controle do código-fonte ao IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709182"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305369"
 ---
 # <a name="create-a-source-control-plug-in"></a>Criar um plug-in de controle do código-fonte
 O SDK do Visual Studio fornece recursos que permitem que você adicione a funcionalidade de controle do código-fonte ao [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado). Ele permite que você use qualquer DLL de plug-in que esteja em conformidade com a API de plug-in de controle do código-fonte descrita nesta documentação.

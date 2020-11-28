@@ -1,5 +1,7 @@
 ---
 title: Comandos que devem ser executados após a instalação | Microsoft Docs
+description: Saiba mais sobre os comandos que devem ser executados como parte da instalação de uma extensão implantada por meio de um arquivo. msi no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709481"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305035"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um arquivo *. msi* , deverá executar **devenv/setup** como parte de sua instalação para que o Visual Studio descubra suas extensões.
@@ -44,7 +46,7 @@ Se você implantar sua extensão por meio de um arquivo *. msi* , deverá execut
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Por exemplo, o instalador do Visual Studio grava o valor do registro de **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** como *C:\VS2008\Common7\IDE\devenv.exe*, um caminho completo para o executável que o instalador deve executar.
+ Por exemplo, o instalador do Visual Studio grava o valor do registro de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** como *C:\VS2008\Common7\IDE\devenv.exe*, um caminho completo para o executável que o instalador deve executar.
 
 > [!NOTE]
 > Como a coluna de tipo da tabela RegLocator é 2, não é necessário especificar informações de versão adicionais na tabela de assinatura.

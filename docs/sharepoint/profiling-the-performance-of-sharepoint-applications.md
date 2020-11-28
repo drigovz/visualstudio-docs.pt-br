@@ -1,5 +1,7 @@
 ---
 title: Criação de perfil do desempenho de aplicativos do SharePoint | Microsoft Docs
+description: Criar o perfil do desempenho de aplicativos do SharePoint se eles estiverem em execução lentamente ou ineficientemente. Use os recursos de criação de perfil do Visual Studio para encontrar um código problemático.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414406"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305108"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Criar perfil do desempenho de aplicativos do SharePoint
 
@@ -39,7 +41,7 @@ Depois de criar e executar uma análise de perfil em seu aplicativo, um relatór
 
 ## <a name="performance-session-process"></a>Processo de sessão de desempenho
 
-Para criar o perfil de um aplicativo, você começa usando o assistente de desempenho de Ferramentas de Criação de Perfil para a criação de uma sessão de desempenho. Na barra de menus, escolha **analisar** , **iniciar o assistente de desempenho**. Ao concluir o assistente, você insere as informações necessárias para sua sessão de desempenho, como o método de perfil que você deseja e o aplicativo para o qual deseja criar o perfil. Para obter mais informações, consulte [como criar o perfil de um site ou aplicativo Web usando o assistente de desempenho](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, você pode usar opções de linha de comando para configurar e executar uma sessão de desempenho. Para obter mais informações, consulte [usando o ferramentas de criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Se você quiser configurar todos os aspectos de uma sessão de desempenho manualmente, consulte [como criar manualmente sessões de desempenho com o ferramentas de criação de perfil](../profiling/how-to-manually-create-performance-sessions.md). Você também pode criar uma sessão de desempenho de um teste de unidade pelo, na janela **resultados de teste** , abrindo o menu de atalho para o teste de unidade e escolhendo **criar sessão de desempenho**.
+Para criar o perfil de um aplicativo, você começa usando o assistente de desempenho de Ferramentas de Criação de Perfil para a criação de uma sessão de desempenho. Na barra de menus, escolha **analisar**, **iniciar o assistente de desempenho**. Ao concluir o assistente, você insere as informações necessárias para sua sessão de desempenho, como o método de perfil que você deseja e o aplicativo para o qual deseja criar o perfil. Para obter mais informações, consulte [como criar o perfil de um site ou aplicativo Web usando o assistente de desempenho](../profiling/how-to-collect-performance-data-for-a-web-site.md). Como alternativa, você pode usar opções de linha de comando para configurar e executar uma sessão de desempenho. Para obter mais informações, consulte [usando o ferramentas de criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Se você quiser configurar todos os aspectos de uma sessão de desempenho manualmente, consulte [como criar manualmente sessões de desempenho com o ferramentas de criação de perfil](../profiling/how-to-manually-create-performance-sessions.md). Você também pode criar uma sessão de desempenho de um teste de unidade pelo, na janela **resultados de teste** , abrindo o menu de atalho para o teste de unidade e escolhendo **criar sessão de desempenho**.
 
 Depois de configurar uma sessão de desempenho, a configuração da sessão é salva, o servidor é configurado para fornecer dados de criação de perfil e o aplicativo é executado. Conforme você usa o aplicativo, os dados de desempenho são gravados em um arquivo de log. As sessões de desempenho são listadas em **Gerenciador de desempenho** na pasta **destinos** . Após a conclusão de uma sessão de desempenho, seu relatório aparecerá na pasta **relatórios** em **Gerenciador de desempenho**. Para exibir o relatório, abra-o no **Gerenciador de desempenho**. Para exibir ou configurar as propriedades de uma sessão de desempenho, abra o menu de atalho no **Gerenciador de desempenho** e escolha **Propriedades**. Para obter mais informações sobre propriedades específicas de uma sessão de desempenho, consulte [Configuring performance Sessions for ferramentas de criação de perfil](../profiling/configuring-performance-sessions.md). Para obter informações sobre como interpretar os resultados de uma sessão de desempenho, consulte [analisando ferramentas de criação de perfil dados](../profiling/analyzing-performance-tools-data.md).
 
