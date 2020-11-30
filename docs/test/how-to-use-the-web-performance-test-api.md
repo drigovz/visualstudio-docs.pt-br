@@ -1,5 +1,7 @@
 ---
 title: API de teste de desempenho Web
+description: Saiba mais sobre a API de teste de desempenho na Web, que dá suporte a testes de desempenho da Web codificados, plug-ins de teste, plug-ins de solicitação, solicitações e regras de extração/validação.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287071"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329712"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Como usar a API de teste de desempenho Web
 
@@ -58,7 +60,7 @@ Você também pode criar plug-ins para teste de carga. Para obter mais informaç
         > [!NOTE]
         > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode editar as propriedades de plug-in de teste de desempenho na Web mais tarde usando a janela Propriedades.
 
-    4. Escolha **OK**.
+    4. Selecione **OK**.
 
 9. Execute o teste de desempenho na Web.
 

@@ -1,5 +1,7 @@
 ---
 title: Determinando qual editor abre um arquivo em um projeto | Microsoft Docs
+description: Saiba mais sobre as chaves do registro e os métodos do SDK do Visual Studio usados pelo Visual Studio para determinar qual editor abre um arquivo em um projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708653"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328399"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Determinar qual editor abre um arquivo em um projeto
 Quando um usuário abre um arquivo em um projeto, o ambiente passa por um processo de sondagem, eventualmente abrindo o editor ou designer apropriado para esse arquivo. O procedimento inicial empregado pelo ambiente é o mesmo para editores padrão e personalizados. O ambiente usa uma variedade de critérios ao sondar qual editor usar para abrir um arquivo e o VSPackage deve coordenar com o ambiente durante esse processo.
@@ -27,9 +29,9 @@ Quando um usuário abre um arquivo em um projeto, o ambiente passa por um proces
 
  O projeto de arquivos diversos declara todos os arquivos que não são reivindicados por outros projetos. Dessa forma, os editores personalizados podem abrir documentos antes que os editores padrão os abram. Se um projeto de arquivos diversos alegar um arquivo, o ambiente chamará o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método para abrir o arquivo com um editor padrão. O ambiente verifica sua lista interna de editores registrados para um que manipula arquivos *. rtf* . Essa lista está localizada no registro na seguinte chave:
 
- **HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ \<version> \Editors \\ \<editor factory guid> \Extensions**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \Editors \\ \<editor factory guid> \Extensions**
 
- O ambiente também verifica os identificadores de classe na chave **HKEY_CLASSES_ROOT \CLSID** para quaisquer objetos que tenham uma subchave **DocObject**. Se a extensão de arquivo for encontrada lá, uma versão incorporada do aplicativo, como o Microsoft Word, será criada in-loco no Visual Studio. Esses objetos de documento devem ser arquivos compostos que implementam a <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interface ou o objeto deve implementar a <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface.
+ O ambiente também verifica os identificadores de classe na chave **HKEY_CLASSES_ROOT\CLSID** para quaisquer objetos que tenham uma subchave **DocObject**. Se a extensão de arquivo for encontrada lá, uma versão incorporada do aplicativo, como o Microsoft Word, será criada in-loco no Visual Studio. Esses objetos de documento devem ser arquivos compostos que implementam a <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interface ou o objeto deve implementar a <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface.
 
  Se não houver nenhuma fábrica de editor para arquivos *. rtf* no registro, o ambiente procurará na chave **HKEY_CLASSES_ROOT \\ . rtf** e abrirá o editor especificado lá. Se a extensão de arquivo não for encontrada em **HKEY_CLASSES_ROOT**, o ambiente usará o editor de texto principal do Visual Studio para abrir o arquivo, se for um arquivo de texto.
 

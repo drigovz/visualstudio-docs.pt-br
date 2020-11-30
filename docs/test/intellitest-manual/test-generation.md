@@ -1,5 +1,7 @@
 ---
 title: Geração de teste | Ferramenta de teste para desenvolvedores do Microsoft IntelliTest
+description: Saiba como o IntelliTest gera casos de teste de métodos de sua implementação e, em seguida, gera entradas para os métodos e verifica as asserções sobre os dados.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790146e3014765224f22bd247732c7ac3f062269
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315168"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329439"
 ---
 # <a name="test-generation"></a>Geração de teste
 

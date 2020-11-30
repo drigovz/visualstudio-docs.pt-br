@@ -1,5 +1,7 @@
 ---
 title: Testes de unidade de código do Visual C#
+description: Saiba como criar testes de unidade para uma classe C# em um aplicativo UWP. Este artigo demonstra o desenvolvimento controlado por testes.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590859"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330076"
 ---
 # <a name="unit-test-c-code"></a>Executar o teste de unidade de um código C#
 
@@ -28,7 +30,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
 2. Pesquise o modelo de projeto **Aplicativo em Branco (Universal do Windows)** e selecione-o.
 
-3. Nomeie as **matemáticas**do projeto.
+3. Nomeie as **matemáticas** do projeto.
 
 4. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar**  >  **novo projeto**.
 

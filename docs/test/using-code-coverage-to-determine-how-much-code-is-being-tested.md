@@ -1,5 +1,7 @@
 ---
 title: Teste da cobertura do código
+description: Saiba como usar o recurso cobertura de código do Visual Studio para determinar qual proporção de seu código de projeto está sendo testada por testes codificados.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959769"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330050"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -57,7 +59,7 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 2. Após a execução dos testes, para ver quais linhas foram executadas, escolha ![ mostrar o ícone de colorização de cobertura de código ](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela resultados da cobertura de **código** . Por padrão, o código coberto por testes é realçado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores**  >  **do ambiente Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
+   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  >  **Opções**  >  **Environment**  >  **fontes e cores**  >  **do ambiente Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não** coberta.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -97,7 +99,7 @@ A janela de cobertura de código também pode ser usada para exibir os resultado
 
 - **Para tornar os resultados legíveis como texto**, escolha **Exportar Resultados da Cobertura de Código**. Isso gera um arquivo *. coveragexml* legível, que você pode processar com outras ferramentas ou enviar facilmente por email.
 
-- **Para enviar resultados para outra**pessoa, envie um arquivo *. Coverage* ou um arquivo *. coveragexml* exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.
+- **Para enviar resultados para outra** pessoa, envie um arquivo *. Coverage* ou um arquivo *. coveragexml* exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.
 
 ## <a name="merge-results-from-different-runs"></a>Mesclar resultados de execuções diferentes
 
@@ -304,7 +306,7 @@ Para obter mais informações, consulte [Opções de linha de comando de VSTest.
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)

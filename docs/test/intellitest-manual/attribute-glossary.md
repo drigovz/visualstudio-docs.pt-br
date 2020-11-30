@@ -1,5 +1,7 @@
 ---
 title: Glossário do atributo | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
+description: Este artigo fornece uma lista de atributos IntelliTest organizados por namespace e detalhes para os atributos.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 00d8b24d26237a3c7b4130eba4614b5ea7b7eccd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c356893b0c9716374950df3edc3dc480f022100
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315220"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330219"
 ---
 # <a name="attribute-glossary"></a>Glossário do atributo
 

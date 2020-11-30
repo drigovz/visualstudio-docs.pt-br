@@ -1,5 +1,7 @@
 ---
 title: Itens personalizáveis personalizados | Microsoft Docs
+description: Saiba como criar itens coloridos personalizados como parte de um serviço de idioma, substituindo itens na caixa de diálogo fontes e cores, como palavras-chave e comentários.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708992"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328527"
 ---
 # <a name="custom-colorable-items"></a>Itens coloridos personalizados
 Você pode substituir a lista de tipos para coloração, como palavras-chave e comentários, implementando itens colorable personalizados como parte do seu serviço de idioma.

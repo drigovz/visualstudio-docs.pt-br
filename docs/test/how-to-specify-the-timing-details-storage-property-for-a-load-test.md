@@ -1,5 +1,6 @@
 ---
 title: Propriedade de armazenamento de detalhes de tempo (configuração de execução de teste de carga)
+description: Saiba como editar a propriedade de armazenamento de detalhes de tempo para uma configuração de execução. Os valores válidos são todos os detalhes individuais, somente nenhum e estatísticas.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132c55b4cd6f716d8983358064f749eabeb9ba88
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810556"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330011"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Como especificar a propriedade de armazenamento de detalhes de tempo para uma configuração de execução de teste de carga
 
@@ -36,7 +37,7 @@ Você pode editar um valor da propriedade **Armazenamento de detalhes de mediç�
 
   **Considerações sobre a propriedade Armazenamento de detalhes de medição de tempo**
 
-  Se a propriedade **Armazenamento de detalhes de medição de tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os dados 90 º e 95 º percentil sejam mostrados no **analisador de testes de carga** nas tabelas **tests**, **Transactions**e **pages** .
+  Se a propriedade **Armazenamento de detalhes de medição de tempo** estiver habilitada, o tempo para execução de cada teste, transação e página individual durante o teste de carga será armazenado no repositório de resultados de testes de carga. Isso permite que os dados 90 º e 95 º percentil sejam mostrados no **analisador de testes de carga** nas tabelas **tests**, **Transactions** e **pages** .
 
   Se a propriedade **Armazenamento de detalhes de medição de tempo** for habilitada, ao configurar seu valor como **StatisticsOnly** ou **AllIndividualDetails**, todos os testes, páginas e transações individuais serão cronometrados e os dados de percentil serão calculados dos dados de medição de tempo individuais. A diferença é que, com a opção **StatisticsOnly**, depois que os dados de percentil são calculados, os dados de tempo individuais são excluídos do repositório. Isso reduz a quantidade de espaço necessário no repositório quando são usados detalhes de medição de tempo. No entanto, convém processar os dados de detalhes de medição de tempo de outras maneiras usando ferramentas SQL. Nesse caso, a opção **AllIndividualDetails** deve ser usada para que os dados de detalhes de tempo estejam disponíveis para esse processamento. Além disso, se você definir a propriedade como **AllIndividualDetails**, poderá analisar a atividade de usuário virtual usando o **gráfico de atividade de usuário virtual** no **analisador de testes de carga** depois que o teste de carga for concluído em execução. Para saber mais, confira [Análise da atividade de usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 

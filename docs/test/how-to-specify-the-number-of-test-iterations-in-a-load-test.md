@@ -1,5 +1,6 @@
 ---
 title: Especificar o número de iterações na configuração de execução de teste de carga
+description: Saiba como especificar o número de iterações a serem executadas em todos os testes de unidade e de desempenho da Web em todos os cenários em um teste de carga usando o Editor de Teste de Carga.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbca5bcaabbfbf87108fb057280d070006ddd718
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 754a5ad7612f6abbea52ea9d4bb4cb1d159f6dac
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810595"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328295"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Como especificar o número de iterações de teste em uma configuração de execução de teste de carga
 

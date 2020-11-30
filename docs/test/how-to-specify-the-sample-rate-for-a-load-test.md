@@ -1,5 +1,6 @@
 ---
 title: Especificar a taxa de amostragem para uma configuração de execução de teste de carga
+description: Saiba como editar a taxa de amostragem de um valor de configuração de execução no janela Propriedades usando o Editor de Teste de Carga.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 522ddebaf17a6e1c447c15732e8a60a9c4e7f5da
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c21e38671a43755c55a3f0c37c5b8ab40ae11530
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810582"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328998"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Como especificar a taxa de amostra para uma configuração de execução de teste de carga
 

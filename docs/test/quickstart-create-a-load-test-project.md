@@ -1,5 +1,7 @@
 ---
 title: Criar um projeto de teste de carga e desempenho na Web
+description: Saiba como criar e executar um projeto de teste de carga e desempenho na Web no Visual Studio com este guia de início rápido.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 3833542dc00f347014dabf96f836fbd4fa810862
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928574"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329127"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Início Rápido: Criar um projeto de teste de carga
 
@@ -64,7 +66,7 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
 2. Na janela iniciar, escolha **criar um novo projeto**.
 
-3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido] ** para o modelo C#. Escolha **Próxima**.
+3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido]** para o modelo C#. Escolha **Próxima**.
 
 4. Insira um nome para o projeto se não quiser usar o nome padrão e escolha **Criar**.
 

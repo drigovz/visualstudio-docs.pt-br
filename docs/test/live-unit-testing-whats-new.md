@@ -1,5 +1,7 @@
 ---
 title: Novidades no Live Unit Testing no Visual Studio 2017
+description: Este artigo descreve os novos recursos adicionados ao Live Unit Testing em cada versão do Visual Studio a partir do Visual Studio 2017 versão 15,3.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851457"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328828"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Novidades no Live Unit Testing para Visual Studio 2017
 
@@ -46,7 +48,7 @@ Começando com o Visual Studio 2017 versão 15.3, o Live Unit Testing apresenta 
 
 - Suporte para .NET Core e .NET Standard. Você pode usar o Live Unit Testing em soluções de .NET Core e .NET Standard, escritas em C# ou Visual Basic.
 
-- Melhorias de desempenho. Você notará que o desempenho está significativamente mais rápido após o primeiro build completo e a execução de testes no Live Unit Testing. Você também perceberá melhoria de desempenho significativa em inícios subsequentes do Live Unit Testing na mesma solução. Agora, nós persistimos os dados gerados pelo Live Unit Testing e os reutilizamos tanto quanto possível com verificações de estado de atualização.
+- Aprimoramentos no desempenho. Você notará que o desempenho está significativamente mais rápido após o primeiro build completo e a execução de testes no Live Unit Testing. Você também perceberá melhoria de desempenho significativa em inícios subsequentes do Live Unit Testing na mesma solução. Agora, nós persistimos os dados gerados pelo Live Unit Testing e os reutilizamos tanto quanto possível com verificações de estado de atualização.
 
 Além dessas importantes adições, o Live Unit Testing inclui as seguintes melhorias:
 

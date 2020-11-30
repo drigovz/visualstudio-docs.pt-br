@@ -1,5 +1,7 @@
 ---
 title: Avisos e erros | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
+description: Este artigo inclui erros e avisos do IntelliTest, dividido em categorias, com descrições para cada aviso e erro.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 639b68c4d999a5e491f6e52a2cf3a7960563ed17
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275441"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329426"
 ---
 # <a name="warnings-and-errors"></a>Avisos e erros
 
@@ -301,7 +303,7 @@ O IntelliTest [gera entradas de teste](input-generation.md) monitorando a execu�
 Esse aviso aparece porque, durante a execução do seu caso de teste, foi chamado um método que se comporta de forma não determinística ou interage com o ambiente. Os exemplos são métodos de **System.Random** e **System.IO.File**. Se quiser que o IntelliTest crie entradas de teste significativas, você deverá simular os métodos que o IntelliTest sinaliza como problemas de capacidade de teste.
 
 <a name="limitation"></a>
-## <a name="limitation"></a>Limitações
+## <a name="limitation"></a>Limitação
 
 O IntelliTest [gera as entradas de teste](input-generation.md) usando um [solver de restrição](input-generation.md#constraint-solver).
 No entanto, existem algumas operações que estão além do escopo do [solver de restrição](input-generation.md#constraint-solver).

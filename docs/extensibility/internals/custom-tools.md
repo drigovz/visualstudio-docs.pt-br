@@ -1,5 +1,7 @@
 ---
 title: Ferramentas personalizadas | Microsoft Docs
+description: Saiba como criar ferramentas personalizadas no Visual Studio que associem uma ferramenta a um item em um projeto e executem essa ferramenta sempre que o arquivo for salvo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e60f1d8cb8b25ed50b0b20c5ebb538286687ad72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba8760ce53f222ebbe4626bde0d897d4d12c8a6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708954"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329959"
 ---
 # <a name="custom-tools"></a>Ferramentas personalizadas
 As *ferramentas personalizadas* permitem associar uma ferramenta a um item em um projeto e executar essa ferramenta sempre que o arquivo é salvo. Algumas ferramentas personalizadas, às vezes chamadas de *geradores de arquivo único*, são usadas frequentemente para implementar tradutores que geram código a partir de dados e vice-versa. Por exemplo, geradores de arquivo único criam [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código-fonte fora dos arquivos *. Settings* e *. resx* . O código-fonte gerado fornece acesso fortemente tipado aos dados nos arquivos *. Settings* e *. resx* . Os [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de projeto e oferecem suporte a ferramentas personalizadas; os [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de projeto não. Seus próprios tipos de projeto também podem oferecer suporte a ferramentas personalizadas.

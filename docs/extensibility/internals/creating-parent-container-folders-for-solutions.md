@@ -1,5 +1,7 @@
 ---
 title: Criando pastas de contêiner pai para soluções | Microsoft Docs
+description: Saiba como usar a API de plug-in de controle do código-fonte versão 1,2 para especificar um destino de controle do código-fonte de raiz única para todos os projetos da Web em uma solução.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709098"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329933"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner pai para soluções
 Na API de plug-in de controle do código-fonte versão 1,2, um usuário pode especificar um destino de controle do código-fonte de raiz única para todos os projetos da Web na solução. Essa raiz única é chamada de sur (raiz unificada).
@@ -62,7 +64,7 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , é recomendáv
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o padrão é o comportamento da versão 1,1 se o plug-in de controle do código-fonte não retornar `SCC_CAP_CREATESUBPROJECT` e os `SCC_CAP_GETPARENTPROJECT` sinalizadores de funcionalidade. Além disso, os usuários de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podem optar por reverter para o comportamento da versão 1,1 definindo o valor da seguinte chave como *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
 ## <a name="see-also"></a>Confira também
 - [O que há de novo na API de plug-in de controle do código-fonte versão 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

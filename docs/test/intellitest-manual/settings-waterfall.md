@@ -1,5 +1,7 @@
 ---
 title: Cascata de configurações | Ferramenta de teste para desenvolvedores do Microsoft IntelliTest
+description: Saiba mais sobre as configurações de cascata, que organizam as configurações no nível do assembly, do acessório e da exploração.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 95a2029cee1fd13241aba727f671a164d7272543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdb053218b65924abfa64053a8a3c7e9e0543d49
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591574"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329504"
 ---
 # <a name="settings-waterfall"></a>Cascata de configurações
 
-O conceito de cascata de configurações significa que o usuário pode especificar configurações no nível do **assembly**, **acessório**e **exploração** :
+O conceito de cascata de configurações significa que o usuário pode especificar configurações no nível do **assembly**, **acessório** e **exploração** :
 
 * Assembly – [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Acessório – [PexClass](attribute-glossary.md#pexclass)

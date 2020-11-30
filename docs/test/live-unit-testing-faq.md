@@ -1,5 +1,7 @@
 ---
 title: Perguntas frequentes sobre o Live Unit Testing
+description: Examine essas Live Unit Testing perguntas frequentes, incluindo estruturas, configurações e personalizações com suporte.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb2c9a4cae25b388d5817b04ff54f6e6443b2f44
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591535"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329283"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -77,7 +79,7 @@ A janela de saída (quando a lista suspensa Live Unit Testing está selecionada)
 
 Se sua solução exigir etapas personalizadas para compilação para instrumentação (Live Unit Testing) que não são necessárias para a compilação "regular" não instrumentada, você poderá adicionar código ao seu projeto ou aos arquivos *. targets* que verificam a `BuildingForLiveUnitTesting` propriedade e executam etapas personalizadas de compilação prévia/pós. Também é possível optar por remover algumas etapas de build (como publicar ou gerar pacotes) ou adicionar etapas de build (como copiar pré-requisitos) a um build do Live Unit Testing baseado na propriedade desse projeto. A personalização do build com base nessa propriedade não altera o build normal de nenhum modo e só afeta os builds do Live Unit Testing.
 
-Por exemplo, pode haver um destino que produz pacotes NuGet durante um build normal. Provavelmente, você não desejará que os pacotes NuGet sejam gerados após cada edição feita. Portanto, é possível desabilitar esse destino no build do Live Unit Testing fazendo algo semelhante ao seguinte:  
+Por exemplo, pode haver um destino que produz pacotes NuGet durante um build normal. Provavelmente, você não desejará que os pacotes NuGet sejam gerados após cada edição feita. Portanto, é possível desabilitar esse destino no build do Live Unit Testing fazendo algo semelhante ao seguinte:  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -171,7 +173,7 @@ Durante a compilação Live Unit Testing, a `<LiveUnitTestingBuildRootPath>` pro
 
 **Quero que os artefatos de um Live Unit Testing Build vá para um local específico em vez do local padrão na pasta *. vs* . Como posso alterar isso?**
 
-Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot` com o caminho no qual você deseja que os artefatos de build do Live Unit Testing sejam soltos. 
+Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot` com o caminho no qual você deseja que os artefatos de build do Live Unit Testing sejam soltos. 
 
 ## <a name="test-explorer-versus-live-unit-testing"></a>Gerenciador de testes versus Live Unit Testing
 
@@ -179,7 +181,7 @@ Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot`
 
 Há várias diferenças:
 
-- Executar ou depurar testes da janela **Gerenciador de testes** executa binários regulares, enquanto Live Unit Testing executa binários instrumentados. Se você deseja depurar binários instrumentados, a adição de uma chamada de método [depurador. Launch](xref:System.Diagnostics.Debugger.Launch)   em seu método de teste faz com que o depurador seja iniciado sempre que esse método é executado (incluindo quando é executado por Live Unit Testing) e você pode anexar e depurar o binário instrumentado. No entanto, esperamos que a instrumentação seja transparente para você na maioria dos cenários de usuário e que você não precise depurar binários instrumentados.
+- Executar ou depurar testes da janela **Gerenciador de testes** executa binários regulares, enquanto Live Unit Testing executa binários instrumentados. Se você desejar depurar binários instrumentados, a adição de uma chamada de método [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) ao método de teste faz com que o depurador seja iniciado sempre que o método é executado (incluindo quando ele é executado pelo Live Unit Testing). Em seguida, é possível anexar e depurar o binário instrumentado. No entanto, esperamos que a instrumentação seja transparente para você na maioria dos cenários de usuário e que você não precise depurar binários instrumentados.
 
 - Live Unit Testing não cria um novo domínio de aplicativo para executar testes, mas os testes são executados na janela **Gerenciador de testes** , crie um novo domínio de aplicativo.
 
@@ -248,7 +250,7 @@ O Live Unit Testing inicia um build sempre que detecta uma alteração nos arqui
 
 **Por que não vejo nenhum ícone no editor, embora Live Unit Testing pareça estar executando os testes com base nas mensagens na janela de saída?**
 
-Talvez você não veja ícones no editor se os assemblies que o Live Unit Testing está operando não estão instrumentados por algum motivo. Por exemplo, o Live Unit Testing não é compatível com projetos que definem `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Nesse caso, o processo de build precisa ser atualizado para remover essa configuração ou alterá-la para `true`, a fim de que o Live Unit Testing funcione. 
+Talvez você não veja ícones no editor se os assemblies que o Live Unit Testing está operando não estão instrumentados por algum motivo. Por exemplo, o Live Unit Testing não é compatível com projetos que definem `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>`. Nesse caso, o processo de build precisa ser atualizado para remover essa configuração ou alterá-la para `true`, a fim de que o Live Unit Testing funcione. 
 
 ## <a name="capture-logs"></a>Coletar logs
 

@@ -1,5 +1,7 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+description: Este artigo descreve os membros do CppUnitTestFramework, que você pode usar para escrever testes de unidade em C++ com base na estrutura de teste de unidade nativa da Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109423"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329179"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tópico lista os membros públicos do namespace `Microsoft::VisualStudio::CppUnitTestFramework`. Use essas APIs para gravar testes de unidade do C++ com base em Microsoft Native Unit Test Framework. Há um [Exemplo de Uso](#example) no final do tópico.
 
-Os arquivos de cabeçalho e lib estão localizados em * \<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
+Os arquivos de cabeçalho e lib estão localizados em *\<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
 
 Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de teste nativo.
 
@@ -90,7 +92,7 @@ Caminhos de cabeçalho e lib são configurados automaticamente em um projeto de 
 
     - [Agente](#logger)
 
-    - [Gravar mensagem](#write_message)
+    - [ Gravar Mensagem](#write_message)
 
   - [Exemplo de uso](#example)
 
@@ -560,7 +562,7 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
 ### <a name="logger"></a><a name="logger"></a> Digita
 A classe de agente contém métodos estáticos para gravar na **Janela de Saída**.
 
-### <a name="write-message"></a><a name="write_message"></a> Gravar Mensagem
+### <a name="write-message"></a><a name="write_message"></a> Gravar mensagem
 Gravar uma cadeia de caracteres na **Janela de Saída**
 
 ```cpp

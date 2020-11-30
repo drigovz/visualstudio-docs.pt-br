@@ -1,5 +1,7 @@
 ---
 title: Execução simbólica dinâmica | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
+description: Saiba como o IntelliTest gera entradas para testes de unidade com parâmetros analisando as condições de ramificação no programa.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315194"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329904"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -135,4 +137,4 @@ Poste suas ideias e solicitações de recursos na [Comunidade de Desenvolvedores
 
 ## <a name="further-reading"></a>Leitura adicional
 
-* [Como ela funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Como ele funciona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

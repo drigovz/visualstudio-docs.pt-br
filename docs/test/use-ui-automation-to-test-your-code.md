@@ -1,5 +1,7 @@
 ---
 title: Testes de IU codificados
+description: Saiba como criar um teste de interface do usuário codificado no Visual Studio executando o teste manualmente enquanto o construtor de teste de interface do usuário codificado é executado em segundo plano.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928089"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330102"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Use o teste de IU codificado para testar seu código
 
@@ -69,7 +71,7 @@ Para acessar as ferramentas e os modelos de teste de interface do usuário codif
 
 2. Adicione um arquivo de teste de IU codificado.
 
-     Se tiver acabado de criar um projeto de IU codificado, o primeiro arquivo CUIT será adicionado automaticamente. Para adicionar outro arquivo de teste, abra o menu de atalho no projeto de teste de interface do usuário codificado no **Gerenciador de soluções**e escolha **Adicionar**  >  **teste de IU codificado**.
+     Se tiver acabado de criar um projeto de IU codificado, o primeiro arquivo CUIT será adicionado automaticamente. Para adicionar outro arquivo de teste, abra o menu de atalho no projeto de teste de interface do usuário codificado no **Gerenciador de soluções** e escolha **Adicionar**  >  **teste de IU codificado**.
 
      Na caixa de diálogo **Gerar Código para Teste de IU Codificado**, escolha **Registrar ações** > **Editar o mapa de interface do usuário ou adicionar declarações**.
 
@@ -94,7 +96,7 @@ Para acessar as ferramentas e os modelos de teste de interface do usuário codif
 
 4. Verifique os valores nos campos de interface do usuário, como caixas de texto.
 
-     Escolha **Adicionar asserções** no **Construtor de teste de interface do usuário codificado**e escolha um controle de interface do usuário em seu aplicativo em execução. Na lista de propriedades exibida, selecione uma propriedade, por exemplo, **Texto** em uma caixa de texto. No menu de atalho, escolha **Adicionar Asserção**. Na caixa de diálogo, selecione o operador de comparação, o valor de comparação e a mensagem de erro.
+     Escolha **Adicionar asserções** no **Construtor de teste de interface do usuário codificado** e escolha um controle de interface do usuário em seu aplicativo em execução. Na lista de propriedades exibida, selecione uma propriedade, por exemplo, **Texto** em uma caixa de texto. No menu de atalho, escolha **Adicionar Asserção**. Na caixa de diálogo, selecione o operador de comparação, o valor de comparação e a mensagem de erro.
 
      Feche a janela de asserção e escolha **Gerar Código**.
 
@@ -456,7 +458,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes automatizados, confira [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Gravar e reproduzir testes manuais](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)

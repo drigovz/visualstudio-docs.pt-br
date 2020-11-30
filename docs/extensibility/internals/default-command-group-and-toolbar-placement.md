@@ -1,5 +1,7 @@
 ---
 title: Posicionamento do comando, grupo e barra de ferramentas padrão | Microsoft Docs
+description: Saiba mais sobre os comandos do IDE, os comandos do produto e os comandos do editor, que a interface do usuário do Visual Studio exibe por padrão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708886"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329873"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posicionamento do comando, grupo e barra de ferramentas padrão
 Para a uniformidade e a estabilidade do produto, a interface do usuário exibe determinados grupos de comandos por padrão e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece definições para comandos e grupos de comandos. O VSPackages também pode usar os comandos padrão e os grupos de comandos.

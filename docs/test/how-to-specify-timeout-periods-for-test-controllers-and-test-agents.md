@@ -1,5 +1,7 @@
 ---
 title: Períodos de tempo limite para controladores de teste e agentes de teste
+description: Saiba como alterar os valores de tempo limite para o controlador de teste e o agente de teste editando os arquivos de configuração XML associados.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b06dc7d363cefd568a6e1432582744f486fa222
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc661999eb12bb679aa3622f0f14adc3ffc661a
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287279"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329998"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como especificar períodos de tempo limite para controladores e agentes de teste
 
@@ -68,7 +70,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - ou -
+    - ou -
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `AgentInitializeTimeout` na seção `<appSettings>` e especificar um valor de cinco minutos:
 
@@ -102,7 +104,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - ou -
+    - ou -
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `RemotingTimeoutSeconds` na seção `<appSettings>` e especificar um valor de quinze minutos:
 

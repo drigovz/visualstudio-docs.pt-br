@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: Saiba mais sobre Live Unit Testing durante o desenvolvimento de aplicativos, incluindo estruturas com suporte e como configurar Live Unit Testing.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249902"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329348"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Como configurar e usar Live Unit Testing
 
@@ -43,7 +45,7 @@ Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuG
 Configure Live Unit Testing selecionando **ferramentas**  >  **Opções** na barra de menus do Visual Studio de nível superior e, em seguida, selecionando **Live Unit Testing** no painel esquerdo da caixa de diálogo **Opções** .
 
 > [!TIP]
-> Após a habilitação da Live Unit Testing (consulte a próxima seção, [Iniciar, pausar e parar Live Unit Testing](#start-pause-and-stop)), você também pode abrir a caixa de diálogo **Opções** selecionando **testar**  >  **Live Unit Testing**  >  **Opções**de Live unit testing.
+> Após a habilitação da Live Unit Testing (consulte a próxima seção, [Iniciar, pausar e parar Live Unit Testing](#start-pause-and-stop)), você também pode abrir a caixa de diálogo **Opções** selecionando **testar**  >  **Live Unit Testing**  >  **Opções** de Live unit testing.
 
 A imagem a seguir mostra as opções de configuração de Live Unit Testing disponíveis na caixa de diálogo:
 
@@ -136,7 +138,7 @@ Por exemplo, a falha de teste mostrada na imagem anterior foi causada por uma pr
 O **Gerenciador de testes** fornece uma interface que permite executar e depurar testes e analisar os resultados do teste. O Live Unit Testing é integrado ao **Gerenciador de Testes**. Quando o Live Unit Testing não está habilitado ou está parado, o **Gerenciador de Testes** exibe o status dos testes de unidade na última vez que um teste foi executado. Alterações no código-fonte exigem uma nova execução dos testes. Por outro lado, quando o Live Unit Testing está habilitado, o status dos testes de unidade no **Gerenciador de Testes** é atualizado imediatamente. Você não precisa executar os testes de unidade explicitamente.
 
 > [!TIP]
-> Abra **Live Unit Testing** selecionando **testar**  >  **Windows**  >  o**Gerenciador de testes** do Windows no menu de nível superior do Visual Studio.
+> Abra **Live Unit Testing** selecionando **testar**  >  **Windows**  >  o **Gerenciador de testes** do Windows no menu de nível superior do Visual Studio.
 
 Você pode observar na janela **Test Explorer** que alguns testes estão desbotados. Por exemplo, quando você habilita Live Unit Testing depois de abrir um projeto salvo anteriormente, a janela **Gerenciador de testes** desbotau tudo, exceto o teste com falha, como mostra a imagem a seguir. Nesse caso, Live Unit Testing executou novamente o teste com falha, mas ele não executa novamente os testes bem-sucedidos. Isso ocorre porque os dados persistentes do Live Unit Testing indicam que não houve alterações desde que os testes foram executados pela última vez com êxito.
 
@@ -157,7 +159,7 @@ Há algumas diferenças entre a execução e atualização automáticas dos resu
 **Live Unit Testing**, semelhante ao **Gerenciador de testes**, fornece uma interface que permite executar e depurar testes e analisar os resultados do teste. Quando Live Unit Testing está habilitado, o status dos testes de unidade no **Gerenciador de testes** é atualizado imediatamente. Você não precisa executar os testes de unidade explicitamente. Quando Live Unit Testing não estiver habilitado ou for interrompido, **Live Unit Testing** exibirá o status dos testes de unidade na última vez em que um teste foi executado. Depois de reiniciar Live Unit Testing, uma alteração de código-fonte é necessária para executar novamente os testes.
 
 > [!TIP]
-> Inicie Live Unit Testing selecionando **testar**  >  **Live Unit Testing**  >  **Iniciar** no menu de nível superior do Visual Studio. Você também pode abrir a janela **Live Unit Testing** usando **Exibir**  >  **outra**  >  **janela**do Windows Live unit testing.
+> Inicie Live Unit Testing selecionando **testar**  >  **Live Unit Testing**  >  **Iniciar** no menu de nível superior do Visual Studio. Você também pode abrir a janela **Live Unit Testing** usando **Exibir**  >  **outra**  >  **janela** do Windows Live unit testing.
 
 Você pode observar na janela de **Live Unit Testing** que alguns testes estão desbotados. Por exemplo, quando você parar e reiniciar Live Unit Testing, a janela **Live Unit Testing** esmaecerá todos os testes, como mostra a imagem a seguir. Os resultados de teste desatualizados indicam que o teste não era parte da execução de teste de unidade dinâmica mais recente. Os testes são executados somente quando uma alteração no teste ou as dependências do teste é detectada. Se não houver nenhuma alteração, isso evita que a execução do teste seja desnecessariamente. Nesse caso, o resultado do teste esmaecido é ainda "atualizado", embora ele não faça parte da execução mais recente.
 
@@ -198,8 +200,8 @@ Para selecionar os projetos individuais em testes de unidade, faça o seguinte a
 
 É possível usar a janela do editor de código para incluir ou excluir métodos de teste individuais. Clique com o botão direito do mouse na assinatura do método de teste na janela Editor de código e selecione uma das seguintes opções:
 
-- **Live Unit Testing**  >  **Incluir \<selected method> **
-- **Live Unit Testing**  >  **Excluir \<selected method> **
+- **Live Unit Testing**  >  **Incluir \<selected method>**
+- **Live Unit Testing**  >  **Excluir \<selected method>**
 - **Live Unit Testing**  >  **Excluir tudo, \<selected method> exceto**
 
 ### <a name="exclude-tests-programmatically"></a>Excluir testes programaticamente

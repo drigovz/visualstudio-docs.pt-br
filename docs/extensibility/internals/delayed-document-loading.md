@@ -1,5 +1,7 @@
 ---
 title: Carregamento de documento atrasado | Microsoft Docs
+description: Saiba mais sobre o carregamento de documentos atrasados no Visual Studio e como codificar extensões para que eles não consultem elementos em um documento antes de serem carregados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708806"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328386"
 ---
 # <a name="delayed-document-loading"></a>Carregamento de documento atrasado
 
@@ -65,4 +67,4 @@ Uma maneira mais eficiente de acessar um documento é usar <xref:Microsoft.Visua
 
 Não há nenhuma indicação visível para indicar se um documento foi inicializado, portanto, pode ser difícil descobrir se a extensão está forçando a inicialização. Você pode definir uma chave do registro que facilita a verificação, porque ela faz com que o título de cada documento que não está totalmente inicializado tenha o texto *[stub]* no título.
 
-Em **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**, defina **StubTabTitleFormatString** como * {0} [stub]*.
+Em **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, defina **StubTabTitleFormatString** como *{0} [stub]*.

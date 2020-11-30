@@ -1,5 +1,7 @@
 ---
 title: Parâmetros personalizados | Microsoft Docs
+description: Saiba como criar parâmetros personalizados que controlam a operação de um assistente depois que um assistente é iniciado, modificando um arquivo. vsz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708943"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328438"
 ---
 # <a name="custom-parameters"></a>Parâmetros personalizados
 Parâmetros personalizados controlam a operação de um assistente após o início de um assistente. Um arquivo *. vsz* relacionado fornece uma matriz de parâmetros definidos pelo usuário que são empacotados pelo IDE (ambiente de desenvolvimento integrado) e passados para o assistente como uma matriz de cadeias de caracteres quando o assistente é iniciado. Em seguida, o assistente analisa a matriz de cadeias de caracteres e usa as informações para controlar a operação real do assistente. Dessa maneira, um assistente pode personalizar a funcionalidade dependendo do conteúdo do arquivo *. vsz* .

@@ -1,5 +1,7 @@
 ---
 title: Solução de problemas de cobertura de código
+description: Saiba como resolver mensagens de resultados vazias incorretas quando você espera que o Visual Studio colete dados para assemblies nativos e gerenciados.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80528003"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330115"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
@@ -61,9 +63,9 @@ Explicação &mdash; o mecanismo de cobertura de código requer que cada assembl
 
 O arquivo *. pdb* deve ser gerado da mesma compilação que os arquivos *. dll* ou *. exe* .
 
-Resolução certifique-se de &mdash; que as configurações de Build gerem o arquivo *. pdb* . Se os arquivos *. pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página de **compilação** , escolha **avançado**e inspecione as informações de **depuração**.
+Resolução certifique-se de &mdash; que as configurações de Build gerem o arquivo *. pdb* . Se os arquivos *. pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página de **compilação** , escolha **avançado** e inspecione as informações de **depuração**.
 
-Para projetos C++, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a depuração do **vinculador**de  >  **Debugging**  >  **geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)**.
+Para projetos C++, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a depuração do **vinculador** de  >  **Debugging**  >  **geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)**.
 
 Se os arquivos *. pdb* e *. dll* ou *. exe* estiverem em locais diferentes, copie o arquivo *. pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *. pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Testar um aplicativo grande com vários mapas de interface do usuário
+description: Saiba como usar testes de IU codificados ao testar um aplicativo grande usando vários mapas de interface do usuário. Este recurso requer Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286577"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330154"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testar um aplicativo grande com vários Mapas de Interface do Usuário
 
@@ -23,7 +25,7 @@ Este tópico aborda o uso de testes de IU codificados durante o teste de um apli
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -50,7 +52,7 @@ Crie diversos mapas em cada uma destas situações:
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Para adicionar um mapa de interface do usuário ao seu projeto de teste de IU codificado
 
-1. No **Gerenciador de soluções**, para criar uma pasta em seu projeto de teste de interface do usuário codificado para armazenar todos os mapas da interface do usuário, clique com o botão direito do mouse no arquivo de projeto de teste de interface do usuário codificado, aponte para **Adicionar**e escolha **nova pasta**. Por exemplo, você pode atribuir o nome `UIMaps`.
+1. No **Gerenciador de soluções**, para criar uma pasta em seu projeto de teste de interface do usuário codificado para armazenar todos os mapas da interface do usuário, clique com o botão direito do mouse no arquivo de projeto de teste de interface do usuário codificado, aponte para **Adicionar** e escolha **nova pasta**. Por exemplo, você pode atribuir o nome `UIMaps`.
 
     A nova pasta é exibida no projeto de teste de IU codificado.
 

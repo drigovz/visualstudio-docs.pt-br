@@ -1,5 +1,7 @@
 ---
 title: Classes auxiliares estáticas | Ferramenta de teste do desenvolvedor do Microsoft IntelliTest
+description: Saiba mais sobre as classes auxiliares estáticas que o IntelliTest fornece para a criação de testes de unidade com parâmetros.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f11b4f7d456e588e6a2920580766ce06530227e0
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315181"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329465"
 ---
 # <a name="static-helper-classes"></a>Classes auxiliares estáticas
 
@@ -95,7 +97,7 @@ A classe **PexChoose** pode operar em dois modos:
 
 * O código gerado para casos de teste específicos define o provedor de escolha de uma maneira de forma que a nova execução de tal caso de teste fará escolhas específicas para disparar um caminho de execução específico.
 
-**Usage**
+**Uso**
 
 * Basta chamar **PexChoose.Value** para gerar um novo valor:
 
@@ -141,7 +143,7 @@ public partial class MathExTests {
 
 Uma classe estática usada para ignorar restrições em parâmetros e imprimir as informações simbólicas associadas aos valores.
 
-**Usage**
+**Uso**
 
 Normalmente, o IntelliTest tenta abranger todos os caminhos de execução do código durante a execução. No entanto, especialmente ao computar condições de declaração e suposição, ele não deve explorar todos os casos possíveis.
 

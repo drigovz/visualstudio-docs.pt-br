@@ -1,5 +1,7 @@
 ---
 title: Criando instâncias de projeto usando fábricas de projeto | Microsoft Docs
+description: Saiba como criar instâncias de classe de projeto usando fábricas de projeto no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709059"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328581"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Criar instâncias de projeto usando fábricas de projeto
 Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar uma *fábrica de projetos* para criar instâncias de objetos de projeto. Uma fábrica de projetos é semelhante a uma fábrica de classes padrão para objetos COM de Cocriação. No entanto, os objetos do projeto não são cocriáveis; Eles só podem ser criados usando uma fábrica de projetos.
@@ -38,7 +40,7 @@ Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
    Os tipos de projeto são associados a uma extensão de nome de arquivo específica. Quando um usuário tenta abrir um arquivo de projeto existente ou tenta criar um novo projeto clonando um modelo, o IDE usa a extensão no arquivo para determinar o GUID do projeto correspondente.
 
-   Assim que o IDE determina se ele deve criar um novo projeto ou abrir um projeto existente de um tipo específico, o IDE usa as informações no registro do sistema em **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\Projects]** para descobrir qual VSPackage implementa a fábrica de projetos necessária. O IDE carrega esse VSPackage. No <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, o VSPackage deve registrar sua fábrica de projetos com o IDE chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.
+   Assim que o IDE determina se ele deve criar um novo projeto ou abrir um projeto existente de um tipo específico, o IDE usa as informações no registro do sistema em **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** para descobrir qual VSPackage implementa a fábrica de projetos necessária. O IDE carrega esse VSPackage. No <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> método, o VSPackage deve registrar sua fábrica de projetos com o IDE chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> método.
 
    O método principal da `IVsProjectFactory` interface é <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , que deve lidar com dois cenários: abrir um projeto existente e criar um novo projeto. A maioria dos projetos armazena seu estado de projeto em um arquivo de projeto. Normalmente, novos projetos são criados fazendo uma cópia do arquivo de modelo passado para o `CreateProject` método e, em seguida, abrindo a cópia. Os projetos existentes são instanciados abrindo diretamente o arquivo de projeto passado para o `CreateProject` método. O `CreateProject` método pode exibir recursos adicionais da interface do usuário conforme necessário.
 

@@ -1,5 +1,7 @@
 ---
 title: Criando tabela de comandos XML (. Arquivos de vsct) | Microsoft Docs
+description: Saiba como criar um arquivo de tabela de comandos XML (. vsct) que descreve o layout e a aparência de itens de comando, incluindo botões, caixas de combinação, menus e barras de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708749"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328425"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Criar arquivos de tabela de comando XML (. vsct)
 Um arquivo de tabela de comandos XML (*. vsct*) descreve o layout e a aparência de itens de comando para um VSPackage. Os itens de comando incluem botões, caixas de combinação, menus, barras de ferramentas e grupos de itens de comando. Este artigo descreve os arquivos de tabela de comando XML, como eles afetam os itens de comando e menus e como criá-los.
@@ -25,7 +27,7 @@ Um arquivo de tabela de comandos XML (*. vsct*) descreve o layout e a aparência
 
  Quando você cria um novo VSPackage executando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelo de pacote, o modelo gera um arquivo *. vsct* com os elementos necessários para um comando de menu, uma janela de ferramentas ou um editor personalizado, dependendo de suas seleções. Esse arquivo *. vsct* pode ser modificado para atender aos requisitos de um VSPackage específico. Para obter exemplos de como modificar um arquivo *. vsct* , consulte [estender menus e comandos](../../extensibility/extending-menus-and-commands.md).
 
- Para criar um novo arquivo *. vsct* em branco, consulte [como: criar um arquivo *. vsct* ](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criado, você adiciona elementos XML, atributos e valores ao arquivo para descrever o layout do item de comando. Para obter um esquema XML detalhado, consulte a [referência de esquema XML do vsct](../../extensibility/vsct-xml-schema-reference.md).
+ Para criar um novo arquivo *. vsct* em branco, consulte [como: criar um arquivo *. vsct*](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criado, você adiciona elementos XML, atributos e valores ao arquivo para descrever o layout do item de comando. Para obter um esquema XML detalhado, consulte a [referência de esquema XML do vsct](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferenças entre arquivos. CTC e. vsct
  Embora o significado por trás das marcas XML em um arquivo *. vsct* seja o mesmo que as marcas no formato de arquivo preterido Now *. CTC* , sua implementação é um pouco diferente:

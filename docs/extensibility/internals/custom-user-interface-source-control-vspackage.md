@@ -1,5 +1,7 @@
 ---
 title: Interface do usuário personalizada (VSPackage de controle do código-fonte) | Microsoft Docs
+description: Saiba como criar uma interface do usuário (IU) personalizada no Visual Studio usando um VSPackage de controle do código-fonte para especificar os elementos da interface.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708926"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328516"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interface do usuário personalizada (VSPackage de controle do código-fonte)
 Um VSPackage declara seus itens de menu e seus Estados padrão por meio do arquivo de tabela de comando (*. vsct*) do Visual Studio. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado) exibe os itens de menu em seus Estados padrão até que o VSPackage seja carregado. Subsequentemente, o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método é chamado para habilitar ou Desabilitar itens de menu.

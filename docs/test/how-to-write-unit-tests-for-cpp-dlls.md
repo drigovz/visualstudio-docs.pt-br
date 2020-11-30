@@ -1,5 +1,7 @@
 ---
 title: Escrever testes de unidade para DLLs C++
+description: Saiba mais sobre as várias maneiras de testar o código DLL, dependendo se a DLL exporta as funções que você deseja testar.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287032"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328620"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
@@ -70,7 +72,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto de teste e escolha **Adicionar** > **Referência**.
 
-  1. Selecione **Projetos**e o projeto a ser testado.
+  1. Selecione **Projetos** e o projeto a ser testado.
 
        Clique no botão **Adicionar**.
 
@@ -78,7 +80,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
        Escolha **Propriedades de configuração**  >  **diretórios vc + +**  >  **incluir diretórios**.
 
-       Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.
+       Escolha **Editar** e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
   Acesse [Escrever os testes de unidade](#addTests).
 
@@ -102,17 +104,17 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
   2. No **Gerenciador de soluções**, no menu de atalho do projeto de teste, escolha **Propriedades**.
 
-  3. Escolha **configurações Propriedades**do  >  **vinculador**  >  **entrada**  >  **dependências adicionais**.
+  3. Escolha **configurações Propriedades** do  >  **vinculador**  >  **entrada**  >  **dependências adicionais**.
 
-       Escolha **Editar**e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completo.
+       Escolha **Editar** e adicione os nomes dos arquivos **.obj** ou **.lib**. Não use os nomes de caminho completo.
 
   4. Escolha **Propriedades de configuração**  >  **vinculador**  >  **geral**  >  **diretórios de biblioteca adicionais**.
 
-       Escolha **Editar**e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
+       Escolha **Editar** e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
 
   5. Escolha **Propriedades de configuração**  >  **diretórios vc + +**  >  **incluir diretórios**.
 
-       Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.
+       Escolha **Editar** e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
   Acesse [Escrever os testes de unidade](#addTests).
 
@@ -167,7 +169,7 @@ Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sam
 
 1. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
 
-1. No **Gerenciador de testes**, escolha **executar tudo**ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
+1. No **Gerenciador de testes**, escolha **executar tudo** ou selecione os testes específicos que você deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
 
 ## <a name="see-also"></a>Confira também
 

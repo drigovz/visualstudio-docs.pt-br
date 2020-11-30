@@ -1,5 +1,7 @@
 ---
 title: Saiba como testar códigos com o Live Unit Testing
+description: Aprenda a usar Live Unit Testing criando uma biblioteca de classes simples que tem como alvo .NET Standard e criar um projeto MSTest que tem como alvo o .NET Core para testá-lo.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287006"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329491"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introdução ao Live Unit Testing
 
@@ -67,7 +69,7 @@ Agora que você criou a solução, criará uma biblioteca de classes chamada Str
 
 ::: moniker range=">=vs-2019"
 
-2. Digite **biblioteca de classes** na caixa de pesquisa de modelo e selecione o modelo **Biblioteca de Classes (.NET Standard)**. Clique em **Avançar**.
+2. Digite **biblioteca de classes** na caixa de pesquisa de modelo e selecione o modelo **Biblioteca de Classes (.NET Standard)**. Clique em **Próximo**.
 
    > [!NOTE]
    > Como nossa biblioteca tem como destino .NET Standard em vez de uma implementação .NET específica, ela pode ser chamada de qualquer implementação do .NET que dê suporte a essa versão do .NET Standard. Para obter mais informações, confira [.NET Standard](/dotnet/standard/net-standard).
@@ -115,7 +117,7 @@ A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca
 
 ::: moniker range=">=vs-2019"
 
-2. Digite **teste de unidade** na caixa de pesquisa de modelo e selecione o modelo de **projeto de teste MSTest (.NET Core)** . Clique em **Avançar**.
+2. Digite **teste de unidade** na caixa de pesquisa de modelo e selecione o modelo de **projeto de teste MSTest (.NET Core)** . Clique em **Próximo**.
 
 3. Nomeie o projeto **StringLibraryTests**.
 
@@ -260,7 +262,7 @@ Nesta seção, você vai explorar como é possível usar o Live Unit Testing par
 
    Observe que na janela **Autos** o valor da variável `phrase` é "Name\tDescription", que é o segundo elemento da matriz. O método de teste espera que `HasEmbeddedSpaces` retorne `true` ao receber essa cadeia de caracteres, mas ele retorna `false`. Evidentemente, ele não reconhece "\t", o caractere de tabulação, como um espaço inserido.
 
-1. Selecione **depurar**  >  **continuar**, pressione **F5**ou clique no botão **continuar** na barra de ferramentas para continuar executando o programa de teste. Como ocorreu uma exceção sem tratamento, o teste foi encerrado.
+1. Selecione **depurar**  >  **continuar**, pressione **F5** ou clique no botão **continuar** na barra de ferramentas para continuar executando o programa de teste. Como ocorreu uma exceção sem tratamento, o teste foi encerrado.
 Isso fornece informações suficientes para uma investigação preliminar do bug. Ou `TestHasEmbeddedSpaces` (a rotina de teste) fez uma suposição incorreta ou `HasEmbeddedSpaces` não reconhece corretamente todos os espaços inseridos.
 
 1. Para diagnosticar e corrigir o problema, comece com o `StringLibrary.HasEmbeddedSpaces` método. Examine a comparação no método `HasEmbeddedSpaces`. Ele considera um espaço inserido como U+0020. No entanto, o padrão Unicode inclui vários outros caracteres de espaço. Isso sugere que o código da biblioteca testou um caractere de espaço em branco incorretamente.

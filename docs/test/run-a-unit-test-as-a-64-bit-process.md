@@ -1,5 +1,7 @@
 ---
 title: Executar um teste de unidade como um processo de 64 bits
+description: Saiba como executar testes de unidade e capturar informações de cobertura de código como um processo de 64 bits. Você deve ter um computador de 64 bits.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507980"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329062"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Executar um teste de unidade como um processo de 64 bits
 
@@ -35,10 +37,10 @@ Se você tiver um computador de 64 bits, você poderá executar testes de unidad
 2. Defina os testes de unidade a serem executados como um processo de 64 bits.
 
    ::: moniker range=">=vs-2019"
-   No menu do Visual Studio, escolha **teste**e, em seguida, escolha **arquitetura do processador para projetos anycpu**. Escolha **x64** para executar os testes como um processo de 64 bits.
+   No menu do Visual Studio, escolha **teste** e, em seguida, escolha **arquitetura do processador para projetos anycpu**. Escolha **x64** para executar os testes como um processo de 64 bits.
    ::: moniker-end
    ::: moniker range="vs-2017"
-   No menu do Visual Studio, escolha **testar**, escolha **configurações de teste**e, em seguida, escolha **arquitetura do processador**. Escolha **x64** para executar os testes como um processo de 64 bits.
+   No menu do Visual Studio, escolha **testar**, escolha **configurações de teste** e, em seguida, escolha **arquitetura do processador**. Escolha **x64** para executar os testes como um processo de 64 bits.
    ::: moniker-end
 
    \- ou –
