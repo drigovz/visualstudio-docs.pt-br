@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442280"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96356830"
 ---
 # <a name="set-env"></a>set-env
 
@@ -26,11 +26,11 @@ Essa ferramenta utiliza a API do .NET Core `Environment.SetEnvironment` e tem as
 
 ## <a name="usage"></a>Uso
 
-| Nome                                         | Type   | Obrigatório | Valor                                                                       |
+| Nome                                         | Tipo   | Obrigatório | Valor                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **feitos**                                 | Cadeia de caracteres | No       | Propriedade de comentários opcional. Não usado.                                       |
 | [**entrada**](#input)                          | Cadeia de caracteres | No       | A entrada para a ferramenta. Consulte a [entrada](#input) abaixo para obter detalhes.               |
-| [**additionalOptions**](#additional-options) | Cadeia de caracteres | No       | Não usado. Consulte [as opções adicionais](#additional-options) abaixo para obter detalhes.  |
+| [**additionalOptions**](#additional-options) | Cadeia de caracteres | No       | Consulte [as opções adicionais](#additional-options) abaixo para obter detalhes.            |
 
 ### <a name="input"></a>Entrada
 
@@ -47,7 +47,7 @@ Uma `input` cadeia de caracteres pode conter uma expansão de variável de ambie
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Não usado.
+ `--user`, `--process` ou `--machine` pode ser incluído para especificar onde definir variáveis de ambiente. Por padrão, direcionamos o usuário. Para obter mais informações sobre possíveis destinos para variáveis de ambiente, consulte [EnvironmentVariableTarget](https://docs.microsoft.com/dotnet/api/system.environmentvariabletarget).
 
 ### <a name="default-behavior"></a>Comportamento padrão
 
@@ -68,6 +68,20 @@ Abaixo estão exemplos de como executar `set-env` o usando um `.devinit.json` .
     {
       "tool": "set-env",
       "input": "foo=bar",
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar-stored-in-the-environment-block-associated-with-the-current-process"></a>.devinit.jssobre isso definirá uma variável de ambiente, `foo` , para value, `bar` , armazenado no bloco de ambiente associado ao processo atual:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "foo=bar",
+      "additionalOptions": "--process",
     }
   ]
 }

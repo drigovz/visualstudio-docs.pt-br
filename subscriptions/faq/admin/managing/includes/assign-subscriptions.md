@@ -7,11 +7,11 @@ ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
-ms.openlocfilehash: 7493b261de24079b6b245d29749a908c54d341b1
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2020
+ms.lasthandoff: 12/01/2020
 ms.locfileid: "91838384"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Como fazer para atribuir assinaturas do Visual Studio?
@@ -39,7 +39,7 @@ Para atribuir assinaturas em massa:
 4. Volte a [manage.visualstudio.com](https://manage.visualstudio.com), selecione Adição em massa e carregue a cópia salva do modelo do Excel.
 5. Quando o upload for bem-sucedido, você verá uma página de confirmação e a lista de assinantes preenchida com os novos assinantes. Os assinantes receberão um email e poderão começar a usar a respectiva assinatura do Visual Studio imediatamente (nenhuma ativação é necessária por parte do assinante).
 
-Para saber mais sobre como atribuir assinaturas de maneira rápida e fácil, [leia mais informações](../../../../assign-license.md#add-a-single-subscriber) no portal do Administrador de Assinaturas do Visual Studio.  [Saiba mais](../../../../assign-github.md) sobre como gerenciar o Visual Studio com assinaturas do GitHub Enterprise. 
+Para saber mais sobre como atribuir assinaturas de maneira rápida e fácil, [leia mais informações](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) no portal do Administrador de Assinaturas do Visual Studio.  [Saiba mais](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sobre como gerenciar o Visual Studio com assinaturas do GitHub Enterprise. 
 
 ## <a name="what-is-the-github-enterprise-setup-process"></a>O que é o processo de configuração do GitHub Enterprise? 
 
@@ -47,4 +47,4 @@ O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do
 
 Depois que sua empresa tiver configurado uma conta do GitHub Enterprise, os assinantes atribuídos pelo Visual Studio com as assinaturas do GitHub Enterprise receberão um email do GitHub notificando-os sobre a vinculação de suas assinaturas do Visual Studio. Depois que os assinantes receberem esse email, poderão entrar em contato com o administrador da organização do GitHub para serem convidados para a organização apropriada. 
 
-[Leia mais](../../../../assign-github.md) sobre como gerenciar o Visual Studio com assinaturas do GitHub Enterprise. Consulte a [documentação do assinante](../../../../access-github.md) para saber mais detalhes sobre o processo de configuração do GitHub Enterprise. 
+[Leia mais](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sobre como gerenciar o Visual Studio com assinaturas do GitHub Enterprise. Consulte a [documentação do assinante](https://docs.microsoft.com/visualstudio/subscriptions/access-github) para saber mais detalhes sobre o processo de configuração do GitHub Enterprise. 
