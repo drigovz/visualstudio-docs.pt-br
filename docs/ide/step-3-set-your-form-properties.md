@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 3: Definir as propriedades do formulário'
+description: Saiba como usar o janela Propriedades para alterar a aparência do formulário.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579861"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480610"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 
@@ -33,7 +35,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 1. Depois que o formulário for selecionado, localize a propriedade de **Texto** na janela **Propriedades**. Dependendo de como a lista estiver classificada, talvez seja necessário rolar para baixo. Escolha **Texto**, digite **Visualizador de Imagens** e escolha **Enter**.  Seu formulário agora deve ter o **Visualizador de imagens** de texto em sua barra de título e a janela **Propriedades** deve ser semelhante à captura de tela a seguir.
 
     ![Janela Propriedades](../ide/media/express_edittextproperty.png)<br>
-   ***Properties*** *Janela* Propriedades
+   **_Propriedades_* _ _window *
 
    > [!NOTE]
    > As propriedades podem ser classificadas por um modo **Categorizado** ou **Alfabético**. É possível mude entre essas duas modos de exibição usando os botões na janela **Propriedades**. Neste tutorial, é mais fácil localizar propriedades por meio da exibição **Alfabética**.
@@ -56,7 +58,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
    - Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.
 
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
-     *Botão de barra de ferramentas* ***Iniciar Depuração***
+     **_Iniciar Depuração_* _ botão _toolbar *
 
      Assim como antes, o IDE cria e executa seu aplicativo e uma janela é exibida.
 

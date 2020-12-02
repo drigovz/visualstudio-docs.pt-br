@@ -1,5 +1,7 @@
 ---
 title: GUIDs e IDs das barras de ferramentas do Visual Studio | Microsoft Docs
+description: Exiba uma lista de valores GUID e ID para as barras de ferramentas e os grupos que eles contêm, que estão incluídos no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708223"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480376"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs e IDs das barras de ferramentas do Visual Studio
 Este tópico enumera os valores de GUID e ID das barras de ferramentas que estão incluídas no IDE (ambiente de desenvolvimento integrado) do Visual Studio e nos grupos que eles contêm. Esses valores são definidos em arquivos *. vsct* que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -41,7 +43,7 @@ Este tópico enumera os valores de GUID e ID das barras de ferramentas que estã
 |Barra de ferramentas|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Build|IDM_VS_TOOL_BUILD|
+|Compilação|IDM_VS_TOOL_BUILD|
 |Editor de texto|IDM_VS_TOOL_TEXTEDITOR|
 |Depurar|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |Local de depuração|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -95,7 +97,7 @@ Este tópico enumera os valores de GUID e ID das barras de ferramentas que estã
 |----------|--------|
 |Execução|IDM_DEBUG_TOOLBAR|
 |Depuração|IDG_DEBUG_TOOLBAR_STEPPING|
-|Inspeção|IDG_DEBUG_TOOLBAR_WATCH|
+|Assistir|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Grupos da barra de ferramentas do local de depuração

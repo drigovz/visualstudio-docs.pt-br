@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 2: executar o aplicativo visualizador de imagens'
+description: Saiba como executar o aplicativo visualizador de imagens.
+ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8204f2a32a1bb29203c75af55aa383141f17853f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579408"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480649"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Etapa 2: executar o aplicativo visualizador de imagens
 
@@ -32,17 +34,17 @@ Veja como executar seu aplicativo.
     - Na barra de ferramentas, escolha o botão **Iniciar Depuração** , que aparece da seguinte maneira:
 
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
-      *Botão de barra de ferramentas* ***Iniciar Depuração***
+      **_Iniciar Depuração_* _ botão _toolbar *
 
 1. O Visual Studio executa seu aplicativo e uma janela chamada **Form1** é exibida. A captura de tela a seguir mostra o aplicativo que você acabou de criar. O aplicativo está em execução e, em breve, você adicionará a ele.
 
      ![Windows Forms aplicativo em execução](../ide/media/express_firstrun.png)<br>
-***Windows Forms aplicativo***, *em execução*
+**_Windows Forms app_* _, _running *
 
 1. Volte para o IDE (ambiente de desenvolvimento integrado) do Visual Studio e, em seguida, examine a nova barra de ferramentas. Botões adicionais aparecem na barra de ferramentas quando você executa um aplicativo. Esses botões permitem que você faça coisas como parar e iniciar seu aplicativo e ajudá-lo a rastrear quaisquer erros (bugs) que possa ter. Para este exemplo, estamos usando-o para iniciar e parar o aplicativo.
 
      ![Barra de ferramentas de depuração](../ide/media/express_debugtoolbar.png)<br>
-***Debugging*** *Barra de ferramentas* de depuração
+***Depuração** _ _toolbar *
 
 1. Use um dos seguintes métodos para interromper seu aplicativo:
 

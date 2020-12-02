@@ -1,5 +1,7 @@
 ---
 title: Usar uma expressão de lambda ou o corpo do bloco
+description: Saiba como usar o menu ações rápidas e refatoração para refatorar uma expressão lambda para usar um corpo de expressão ou um corpo de bloco.
+ms.custom: SEO-VS-2020
 ms.date: 02/14/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 505a76a2300f2e3ddb9c1513ee64c2a17abb10ab
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531913"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480168"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Use o corpo da expressão ou o corpo do bloco para expressões lambda
 

@@ -1,5 +1,7 @@
 ---
 title: Simplificar a expressão condicional
+description: Saiba como usar o menu ações rápidas e refatoração para simplificar uma expressão condicional.
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dd7b3f29e804ec5e925c34f7994164d5a8465a50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810344"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480207"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Simplificar a refatoração de expressão condicional
 
@@ -28,7 +30,7 @@ Esta refatoração aplica-se a:
 
 **Por que:** Simplificar uma expressão condicional pode fornecer mais clareza e sintaxe concisa. Essa ferramenta de refatoração executará a tarefa automaticamente em vez de fazer isso manualmente.
 
-## <a name="how-to"></a>Instruções
+## <a name="how-to"></a>Como fazer
 
 1. Coloque o cursor na expressão condicional:
 

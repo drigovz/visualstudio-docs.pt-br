@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 6: Adicionar um temporizador'
+description: Saiba como adicionar um <xref:System.Windows.Forms.Timer> controle ao jogo correspondente.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472772"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480545"
 ---
 # <a name="step-6-add-a-timer"></a>Etapa 6: Adicionar um temporizador
 Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de correspondência. Um temporizador aguarda um número especificado de milissegundos e, em seguida, dispara um evento, conhecido como um *tique*. Isso é útil para iniciar uma ação, ou repetir uma ação, regularmente. Nesse caso, você usará um temporizador para permitir que os jogadores escolham dois ícones e, se os ícones não corresponderem, ocultar os dois ícones novamente após um curto período.
@@ -28,12 +30,12 @@ Em seguida, adicione um controle <xref:System.Windows.Forms.Timer> ao jogo de co
 1. Na caixa de ferramentas do **Designer de Formulários do Windows**, escolha **Temporizador** (na categoria **Componentes**) e escolha a tecla **Enter** ou clique duas vezes no temporizador para adicionar um controle de temporizador ao formulário. O ícone do temporizador, chamado **Timer1**, deve aparecer em um espaço abaixo do formulário, conforme mostrado na imagem a seguir.
 
      ![Timer](../ide/media/express_timer.png)<br/>
-***Timer***
+**_Timer_* _
 
     > [!NOTE]
     > Se a caixa de ferramentas estiver vazia, você deve selecionar o designer de formulário, e não o código por trás do formulário, antes de abrir a caixa de ferramentas.
 
-2. Escolha o ícone **Timer1** para selecionar o temporizador. Na janela **Propriedades**, mude do modo de exibição de eventos para o de propriedades. Em seguida, defina a propriedade **Intervalo** do temporizador como **750**, mas deixe a propriedade **Habilitado** definida como **Falso**. A propriedade **Intervalo** informa ao temporizador quanto tempo ele deve aguardar entre os *tiques* ou quando ele dispara seu evento <xref:System.Windows.Forms.Timer.Tick>. Um valor de 750 informa ao temporizador para aguardar três quartos de um segundo (750 milissegundos) antes de disparar o evento Tick. Você chamará o método <xref:System.Windows.Forms.Timer.Start> para iniciar o temporizador apenas depois que o jogador escolher o segundo rótulo.
+2. Escolha o ícone _ *Timer1** para selecionar o temporizador. Na janela **Propriedades**, mude do modo de exibição de eventos para o de propriedades. Em seguida, defina a propriedade **Intervalo** do temporizador como **750**, mas deixe a propriedade **Habilitado** definida como **Falso**. A propriedade **Intervalo** informa ao temporizador quanto tempo ele deve aguardar entre os *tiques* ou quando ele dispara seu evento <xref:System.Windows.Forms.Timer.Tick>. Um valor de 750 informa ao temporizador para aguardar três quartos de um segundo (750 milissegundos) antes de disparar o evento Tick. Você chamará o método <xref:System.Windows.Forms.Timer.Start> para iniciar o temporizador apenas depois que o jogador escolher o segundo rótulo.
 
 3. Escolha o ícone do controle de temporizador no **Designer de Formulários do Windows** e escolha a tecla **Enter** ou clique duas vezes no temporizador, para adicionar um manipulador de eventos Tick vazio. Substitua o código pelo código a seguir ou insira-o manualmente no manipulador de eventos.
 

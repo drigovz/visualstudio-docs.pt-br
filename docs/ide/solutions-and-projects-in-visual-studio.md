@@ -1,5 +1,7 @@
 ---
 title: Soluções e projetos
+description: Saiba mais sobre os projetos e soluções do Visual Studio e saiba como criar um novo projeto com a ferramenta de Gerenciador de Soluções.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468724"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480701"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -36,13 +38,13 @@ Esta página descreve o conceito de um *projeto* e uma *solução* no Visual Stu
 
 ## <a name="projects"></a>Projetos
 
-Ao criar um aplicativo ou site no Visual Studio, você começa com um *projeto*do. Em um sentido lógico, um projeto contém todos os arquivos que são compilados em um executável, biblioteca ou site. Esses arquivos podem incluir código-fonte, ícones, imagens, arquivos de dados e assim por diante. Um projeto também contém as configurações de compilador e outros arquivos de configuração que podem ser necessários para diversos serviços ou componentes com os quais seu programa se comunica.
+Ao criar um aplicativo ou site no Visual Studio, você começa com um *projeto* do. Em um sentido lógico, um projeto contém todos os arquivos que são compilados em um executável, biblioteca ou site. Esses arquivos podem incluir código-fonte, ícones, imagens, arquivos de dados e assim por diante. Um projeto também contém as configurações de compilador e outros arquivos de configuração que podem ser necessários para diversos serviços ou componentes com os quais seu programa se comunica.
 
 ### <a name="project-file"></a>Arquivo de projeto
 
 O Visual Studio usa o [MSBuild](../msbuild/msbuild.md) para compilar cada projeto em uma solução, e cada projeto contém um arquivo de projeto do MSBuild. A extensão de arquivo reflete o tipo de projeto, por exemplo, um projeto C# (. csproj), um projeto Visual Basic (. vbproj) ou um projeto de banco de dados (. dbproj). O arquivo de projeto é um documento XML que contém todas as informações e instruções de que o MSBuild precisa para criar seu projeto, incluindo conteúdo, requisitos de plataforma, informações de controle de versão, servidor Web ou configurações de servidor de banco de dados e tarefas a serem executadas.
 
-Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para examinar o conteúdo dos arquivos de projeto mais recentes do [estilo SDK](../msbuild/how-to-use-project-sdk.md) no Visual Studio, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **Editar \<projectname\> **. Para examinar o conteúdo de .NET Framework e outros projetos desse estilo, primeiro descarregue o projeto (clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **descarregar projeto**). Em seguida, clique com o botão direito do mouse no projeto e escolha **Editar \<projectname\> **.
+Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para examinar o conteúdo dos arquivos de projeto mais recentes do [estilo SDK](../msbuild/how-to-use-project-sdk.md) no Visual Studio, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **Editar \<projectname\>**. Para examinar o conteúdo de .NET Framework e outros projetos desse estilo, primeiro descarregue o projeto (clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **descarregar projeto**). Em seguida, clique com o botão direito do mouse no projeto e escolha **Editar \<projectname\>**.
 
 > [!NOTE]
 > Você não precisa usar soluções ou projetos no Visual Studio para editar, compilar e depurar código. Você pode simplesmente abrir a pasta que contém os arquivos de origem no Visual Studio e começar a editá-los. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -53,7 +55,7 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Name|Descrição|
+|Extensão|Nome|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|
@@ -75,7 +77,7 @@ Depois de criar um novo projeto, você pode usar o **Gerenciador de Soluções**
 Muitos comandos de menu estão disponíveis no menu do botão direito em vários itens no **Gerenciador de Soluções**. Esses comandos incluem criar um projeto, gerenciar pacotes do NuGet, adicionar uma referência, renomear um arquivo e executar testes, apenas para citar alguns. A barra de ferramentas na parte superior do **Gerenciador de Soluções** possui botões para alternar de uma exibição de solução para uma exibição de pasta, mostrar arquivos ocultos, recolher todos os nós e muito mais.
 
 > [!TIP]
-> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha **Window**  >  o**layout da janela de redefinição** de janela na barra de menus.
+> Se você fechou Gerenciador de soluções e deseja abri-lo novamente, escolha **Window**  >  o **layout da janela de redefinição** de janela na barra de menus.
 
 Para projetos ASP.NET Core, você pode personalizar como os arquivos são aninhados no **Gerenciador de Soluções**. Para saber mais, confira [Personalizar o aninhamento de arquivos no Gerenciador de Soluções](file-nesting-solution-explorer.md).
 

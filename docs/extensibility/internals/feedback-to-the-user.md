@@ -1,5 +1,7 @@
 ---
 title: Comentários para o usuário | Microsoft Docs
+description: Saiba como fornecer comentários visuais ao usuário sobre a funcionalidade disponível no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708407"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480519"
 ---
 # <a name="feedback-to-the-user"></a>Comentários para o usuário
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de desenvolvimento integrado), os comentários visuais relacionados à funcionalidade disponível baseiam-se na seleção atual do usuário e no contexto de seleção global. A tabela a seguir lista a funcionalidade que está disponível em contextos de seleção diferentes.
@@ -55,7 +57,7 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (ambiente de
 
 - A barra de ferramentas do **Editor** e o menu **tabela** são exibidos e a barra de título é atualizada para refletir a janela do Web Form.
 
-- A janela de hierarquia ativa, que normalmente é **Gerenciador de soluções**e sua atualização da barra de título para refletir o contexto atual e os comandos do menu de **projeto** sensível ao contexto agora se aplicam ao projeto de aplicativo Web ativo.
+- A janela de hierarquia ativa, que normalmente é **Gerenciador de soluções** e sua atualização da barra de título para refletir o contexto atual e os comandos do menu de **projeto** sensível ao contexto agora se aplicam ao projeto de aplicativo Web ativo.
 
 ## <a name="see-also"></a>Confira também
 - [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
+description: Saiba como criar o projeto de jogo correspondente e adicionar uma tabela ao formulário.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579927"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480714"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -120,7 +122,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 5. Escolha o controle de rótulo e copie-o ao lado da célula no TableLayoutPanel. (Escolha **Ctrl** + **C** , ou na barra de menus, escolha **Editar**  >  **cópia**.) Em seguida, Cole-o. (Escolha **Ctrl** + **V** Keys, ou na barra de menus, escolha **Editar**  >  **colar**.) Uma cópia do primeiro rótulo aparece na segunda célula do TableLayoutPanel. Cole-o novamente e outro rótulo aparecerá na terceira célula. Continue colando controles Label até que todas as células sejam preenchidas.
 
    > [!NOTE]
-   > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as **Ctrl** + teclas**Z** CTRL ou, na barra de menus, escolha **Editar**  >  **desfazer**.
+   > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as **Ctrl** + teclas **Z** CTRL ou, na barra de menus, escolha **Editar**  >  **desfazer**.
 
     Agora seu formulário está disposto. Ele deve ser semelhante à imagem a seguir.
 

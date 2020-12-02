@@ -1,5 +1,7 @@
 ---
 title: Expondo eventos no SDK do Visual Studio | Microsoft Docs
+description: Saiba mais sobre os métodos do SDK do Visual Studio e as entradas do registro que expõem eventos para projetos e itens de projeto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708481"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480532"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Expor eventos no SDK do Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite que você origemie eventos usando automação. É recomendável que você retenha eventos de origem para projetos e itens de projeto.
@@ -27,7 +29,7 @@ ms.locfileid: "80708481"
 
 1. O ambiente é iniciado.
 
-2. Ele lê do registro todos os nomes de valor nas chaves **Automation**, **AutomationEvents**e **AutomationProperties** de todas as VSPackages e armazena esses nomes em uma tabela.
+2. Ele lê do registro todos os nomes de valor nas chaves **Automation**, **AutomationEvents** e **AutomationProperties** de todas as VSPackages e armazena esses nomes em uma tabela.
 
 3. Um consumidor de automação chama, neste exemplo, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,7 +48,7 @@ ms.locfileid: "80708481"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entradas do registro do exemplo de projeto básico
  Esta seção mostra onde adicionar valores de evento de automação ao registro.
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = retorna o `AutomationProjectEvents` objeto.
 
@@ -62,7 +64,7 @@ ms.locfileid: "80708481"
 
  ![Eventos de projeto do Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents") Modelo de automação para eventos
 
- A classe `CProjectEventsContainer` representa o objeto de origem para *BscProjectsEvents*e `CProjectItemsEventsContainer` representa o objeto de origem para *BscProjectItemsEvents*.
+ A classe `CProjectEventsContainer` representa o objeto de origem para *BscProjectsEvents* e `CProjectItemsEventsContainer` representa o objeto de origem para *BscProjectItemsEvents*.
 
  Na maioria dos casos, você deve retornar um novo objeto para cada solicitação de evento, pois a maioria dos objetos de evento pega um objeto de filtro. Quando você acionar seu evento, marque este filtro para verificar se o manipulador de eventos está sendo chamado.
 

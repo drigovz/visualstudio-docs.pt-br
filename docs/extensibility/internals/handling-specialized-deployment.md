@@ -1,5 +1,7 @@
 ---
 title: Lidando com a implantação especializada | Microsoft Docs
+description: Saiba como lidar com a implantação especializada de um projeto de aplicativo no Visual Studio. Por exemplo, uma implantação em um servidor Web ou um dispositivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708218"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480428"
 ---
 # <a name="handle-specialized-deployment"></a>Manipular a implantação especializada
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, oferece suporte a uma implantação para permitir que um projeto atualize um servidor Web. Da mesma forma, um projeto de **dispositivo inteligente** dá suporte a uma implantação para copiar um aplicativo interno para o dispositivo de destino. Os subtipos de projeto podem fornecer um comportamento de implantação especializado implementando a <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:

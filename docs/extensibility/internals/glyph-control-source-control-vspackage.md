@@ -1,5 +1,7 @@
 ---
 title: Controle de glifo (VSPackage de controle do código-fonte) | Microsoft Docs
+description: Saiba como exibir glifos personalizados em um controle do código-fonte VSPackage para que você possa usar seus próprios ícones para indicar o status dos itens sob controle do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9db1b4542eae293e39cda674fac3eb984aa77d3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708312"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480455"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>Controle de glifo (VSPackage de controle do código-fonte)
 Parte da integração profunda disponível para o VSPackages de controle do código-fonte é a capacidade de exibir seus próprios glifos para indicar o status dos itens sob controle do código-fonte.

@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 3: Adicionar um temporizador de contagem regressiva'
+description: Saiba como adicionar um temporizador de contagem regressiva para acompanhar o número de segundos que permanecem para que o Secretário seja concluído.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 723b5daabd19d2e49462bf62d2657c6a6cd14b7f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579877"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480636"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
 

@@ -1,5 +1,7 @@
 ---
 title: Comando Inspecionar
+description: Saiba mais sobre o comando Watch e como ele cria e abre uma instância especificada de um janela Inspeção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7c89761dfc12d342747567389e39daeed4a227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 631c9cf61e6da70b3c7554a1aac0cacc8eef0294
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585646"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480142"
 ---
 # <a name="watch-command"></a>Comando Inspecionar
 Cria e abre uma instância especificada de uma janela **Inspeção**. Você pode usar uma janela **Inspeção** para calcular os valores de variáveis, expressões e registros, para editar esses valores e para salvar os resultados.

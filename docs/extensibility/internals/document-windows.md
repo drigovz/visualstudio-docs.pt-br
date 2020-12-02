@@ -1,5 +1,7 @@
 ---
 title: Janelas de documentos | Microsoft Docs
+description: Saiba mais sobre as janelas de documentos no Visual Studio, incluindo como implementá-las e como a tabela de documentos em execução (RDT) controla seu status.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca834a5414c73f6acf6ac744620a46bba54b8fbf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f39c02ece35a36ceb763a2a5b84f8431043a1b50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413730"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479999"
 ---
 # <a name="document-windows"></a>Janelas de documentos
 No Visual Studio, uma *janela de documento* é uma janela filho com quadros que está associada a uma janela MDI (interface de vários documentos). As janelas de documentos normalmente são usadas para a exibição e modificação do código-fonte ou do texto, mas também podem hospedar outros tipos funcionais. Janelas de documentos:

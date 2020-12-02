@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 5: Adicionar referências de rótulo'
+description: Saiba como adicionar referências de rótulo ao formulário.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579333"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480558"
 ---
 # <a name="step-5-add-label-references"></a>Etapa 5: Adicionar referências de rótulo
 O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualmente, o programa mostra todos os rótulos escolhidos pelo jogador. Mas isso será alterado. Depois que o primeiro rótulo é escolhido, o programa deve mostrar o ícone do rótulo. Depois que o segundo rótulo é escolhido, o programa deve exibir ambos os ícones por um breve momento e depois ocultá-los novamente. Agora seu programa rastreará qual controle de rótulo será escolhido primeiro e qual será escolhido em segundo usando *variáveis de referência*.
@@ -47,7 +49,7 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
 4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está acompanhando o primeiro rótulo que o jogador escolheu, portanto, `firstClicked` não é igual a `null` em C# ou `Nothing` em Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Portanto, somente o primeiro ícone escolhido fica preto e os outros ícones são invisíveis, conforme mostrado na imagem a seguir.
 
      ![Jogo da memória mostrando um ícone](../ide/media/express_tut4step5.png)<br/>
-***Jogo de correspondência*** *mostrando um ícone*
+***Jogo de correspondência** _ _showing um ícone *
 
      Essa situação será corrigida na primeira etapa do tutorial adicionando um controle **Temporizador**.
 

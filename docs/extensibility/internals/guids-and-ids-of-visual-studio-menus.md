@@ -1,5 +1,7 @@
 ---
 title: GUIDs e IDs dos menus do Visual Studio | Microsoft Docs
+description: Exiba uma lista de valores de GUID e ID para os menus e grupos na barra de menus do Visual Studio incluída no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708236"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480402"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs e IDs dos menus do Visual Studio
 Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus do Visual Studio. Esses valores são definidos em arquivos *. vsct* que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -32,12 +34,12 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupos na barra de menus do Visual Studio
  Para adicionar um menu à barra de menus, defina um desses grupos como seu pai.
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Arquivo/Editar/Exibir|IDG_VS_MM_FILEEDITVIEW|
 |Refatoração|IDG_VS_MM_REFACTORING:|
-|Projeto|IDG_VS_MM_PROJECT|
-|Build|IDG_VS_MM_BUILDDEBUGRUN|
+|Project|IDG_VS_MM_PROJECT|
+|Compilação|IDG_VS_MM_BUILDDEBUGRUN|
 |Formato/ferramentas|IDG_VS_MM_TOOLSADDINS|
 |Janela/ajuda/Comunidade|IDG_VS_MM_WINDOWHELP|
 |Suplementos|IDG_VS_MM_MACROS|
@@ -52,8 +54,8 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 |Editar|IDM_VS_MENU_EDIT|
 |Visualizar|IDM_VS_MENU_VIEW|
 |Refatoração|IDM_VS_MENU_REFACTORING|
-|Projeto|IDM_VS_MENU_PROJECT|
-|Build|IDM_VS_MENU_BUILD|
+|Project|IDM_VS_MENU_PROJECT|
+|Compilação|IDM_VS_MENU_BUILD|
 |Formatar|IDM_VS_MENU_FORMAT|
 |Ferramentas|IDM_VS_MENU_TOOLS|
 |Extensões|IDM_VS_MENU_EXTENSIONS|
@@ -67,7 +69,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="file-menu-groups"></a>Grupos de menus de arquivo
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Novo/abrir|IDG_VS_FILE_FILE|
 |Adicionar|IDG_VS_FILE_ADD|
@@ -76,14 +78,14 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 |Salvar|IDG_VS_FILE_SAVE|
 |Renomear|IDG_VS_FILE_RENAME|
 |Navegador|IDG_VS_FILE_BROWSER|
-|Impressão|IDG_VS_FILE_PRINT|
+|Imprimir|IDG_VS_FILE_PRINT|
 |Usado mais recentemente|IDG_VS_FILE_MRU|
 |Mover|IDG_VS_FILE_MOVE|
 |Fechar|IDG_VS_FILE_EXIT|
 
 ### <a name="edit-menu-groups"></a>Editar grupos de menus
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Desfazer/refazer|IDG_VS_EDIT_UNDOREDO|
 |Recortar/copiar/colar|IDG_VS_EDIT_CUTCOPY|
@@ -96,14 +98,14 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="refactor-menu-groups"></a>Refatorar grupos de menus
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Comum|IDG_REFACTORING_COMMON|
 |Avançado|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Exibir grupos de menus
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Código de formulário|IDG_VS_VIEW_FORMCODE|
 |Navegador|IDG_VS_VIEW_BROWSER|
@@ -124,7 +126,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="project-menu-groups"></a>Grupos de menus do projeto
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Adição de diversos|IDG_VS_PROJ_MISCADD|
 |Adicionar|IDG_VS_PROJ_ADD|
@@ -136,7 +138,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="build-menu-groups"></a>Criar grupos de menus
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Solução|IDG_VS_BUILD_SOLUTION|
 |Seleção|IDG_VS_BUILD_SELECTION|
@@ -146,9 +148,9 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="tools-menu-groups"></a>Grupos de menus de ferramentas
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
-|Linha de Comando|IDG_VS_TOOLS_CMDLINE|
+|Linha de comando|IDG_VS_TOOLS_CMDLINE|
 |Snippets|IDG_VS_TOOLS_SNIPPETS|
 |Subconjunto de objetos|IDG_VS_TOOLS_OBJSUBSET|
 |Opções|IDG_VS_TOOLS_OPTIONS|
@@ -158,7 +160,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="window-menu-groups"></a>Grupos de menus de janela
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Novo|IDG_VS_WINDOW_NEW|
 |Encaixar/fechar|IDG_VS_DOCKCLOSE|
@@ -169,7 +171,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
 
 ### <a name="help-menu-groups"></a>Grupos de menus de ajuda
 
-|Grupo|ID|
+|Agrupar|ID|
 |-----------|--------|
 |Exemplos|IDG_VS_HELP_SAMPLES|
 |Suporte|IDG_VS_HELP_SUPPORT|
@@ -179,7 +181,7 @@ Este artigo enumera os valores de GUID e ID dos menus e grupos na barra de menus
  A hierarquia a seguir mostra os submenus associados aos menus na barra de menus do Visual Studio. Como apenas um grupo pode ter um menu como seu pai, cada submenu deve ser decrescente de um grupo em um menu, em vez de diretamente do menu. Para obter mais informações sobre a relação entre menus, grupos e submenus, consulte [Adicionar um submenu a um menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> Os nomes dos menus na barra de menus do Visual Studio não são mostrados separadamente nesta hierarquia porque podem ser inferidos da Convenção de nomenclatura para grupos no IDE, da seguinte maneira: *IDG_VS_ \<Menu Name\> _ \<Group Name\> *.
+> Os nomes dos menus na barra de menus do Visual Studio não são mostrados separadamente nesta hierarquia porque podem ser inferidos da Convenção de nomenclatura para grupos no IDE, da seguinte maneira: *IDG_VS_ \<Menu Name\> _ \<Group Name\>*.
 
 |Grupo pai|Submenu|Grupos filho|
 |------------------|-------------|------------------|

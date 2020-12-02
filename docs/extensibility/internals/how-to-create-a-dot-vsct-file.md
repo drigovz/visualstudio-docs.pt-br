@@ -1,5 +1,7 @@
 ---
 title: 'Como: criar um. Arquivo vsct | Microsoft Docs'
+description: Saiba como criar manualmente um arquivo. vsct, um arquivo de configuração de tabela de comandos do Visual Studio baseado em XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905532"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480363"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Como criar um arquivo. vsct
 
@@ -35,7 +37,7 @@ Há várias maneiras de criar um arquivo de configuração de tabela de comando 
 
 1. Inicie o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-2. No menu **Arquivo** , aponte para **Novo**e clique em **Arquivo**.
+2. No menu **Arquivo** , aponte para **Novo** e clique em **Arquivo**.
 
 3. No painel **modelos** , clique em **arquivo XML** e, em seguida, clique em **abrir**.
 
@@ -61,7 +63,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo de origem *. C
 
 1. Obtenha uma cópia da linguagem Perl.
 
-2. Obtenha uma cópia do script Perl *ConvertCTCToVSCT.pl*, normalmente localizada na pasta * \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
+2. Obtenha uma cópia do script Perl *ConvertCTCToVSCT.pl*, normalmente localizada na pasta *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin* .
 
 3. Obtenha uma cópia do arquivo de origem *. CTC* que você deseja converter.
 
@@ -138,7 +140,7 @@ Você pode criar um arquivo *. vsct* baseado em XML de um arquivo binário *. CT
 
      Essa marcação deve estar dentro do `ItemGroup` elemento que contém recursos incorporados.
 
-4. Abra o arquivo de pacote, geralmente chamado * \<ProjectName\> Package.cs* ou * \<ProjectName\> Package. vb*, no editor.
+4. Abra o arquivo de pacote, geralmente chamado *\<ProjectName\> Package.cs* ou *\<ProjectName\> Package. vb*, no editor.
 
 5. Adicione um `ProvideMenuResource` atributo à classe de pacote, conforme mostrado no exemplo a seguir.
 

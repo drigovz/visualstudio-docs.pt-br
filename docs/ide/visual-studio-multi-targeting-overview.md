@@ -1,5 +1,6 @@
 ---
 title: Estruturas .NET de destino
+description: Saiba como especificar a versão do .NET Framework que você deseja que seu projeto Direcione para que o aplicativo possa usar apenas a funcionalidade disponível na versão especificada.
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770446"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479726"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 

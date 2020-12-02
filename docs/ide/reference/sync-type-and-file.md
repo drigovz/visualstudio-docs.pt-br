@@ -1,5 +1,7 @@
 ---
 title: Renomear um nome de arquivo para que ele corresponda a um tipo
+description: Saiba como usar o menu ações rápidas e refatoração para renomear um tipo para corresponder ao nome do arquivo ou renomear um nome de arquivo para corresponder ao tipo que ele contém.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594390"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479817"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refatoração Sincronizar um tipo para um nome de arquivo ou um nome de arquivo para um tipo
 

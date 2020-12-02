@@ -1,5 +1,7 @@
 ---
 title: Introdução com plug-ins de controle do código-fonte | Microsoft Docs
+description: Saiba como criar um plug-in de controle do código-fonte que implementa as funções definidas na API de plug-in de controle do código-fonte para uso no controle de versão do código-fonte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708342"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480491"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introdução aos plug-ins de controle do código-fonte
 Para criar um plug-in de controle do código-fonte, você deve criar uma DLL que implemente as funções definidas na API de plug-in de controle do código-fonte e, em seguida, registrar a DLL com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para disponibilizá-la para uso no controle de versão do código-fonte.

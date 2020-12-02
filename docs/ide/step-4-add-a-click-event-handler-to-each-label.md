@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo'
+description: Saiba como adicionar um manipulador de eventos de clique a cada rótulo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f620b097e2a565bbacf3322d03385aa70fd0356f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579338"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480597"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo
 
@@ -34,7 +36,7 @@ O jogo da memória funciona desta forma:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Para adicionar um manipulador de eventos Click a cada rótulo
 
-1. Abra o formulário no **Designer de Formulários do Windows**. No **Gerenciador de Soluções**, escolha *Form1.cs* ou *Form1.vb*. Na barra de menus, escolha **View**  >  **Designer**de exibição.
+1. Abra o formulário no **Designer de Formulários do Windows**. No **Gerenciador de Soluções**, escolha *Form1.cs* ou *Form1.vb*. Na barra de menus, escolha **View**  >  **Designer** de exibição.
 
 2. Escolha o primeiro controle de rótulo para selecioná-lo. Em seguida, mantenha pressionada a tecla **Ctrl** enquanto escolhe cada um dos outros rótulos para selecioná-los. Verifique se cada um dos rótulos foi selecionado.
 

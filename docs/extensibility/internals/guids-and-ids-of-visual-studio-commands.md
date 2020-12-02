@@ -1,5 +1,7 @@
 ---
 title: GUIDs e IDs de comandos do Visual Studio | Microsoft Docs
+description: Saiba como localizar o GUID e os valores de ID dos comandos incluídos no IDE (ambiente de desenvolvimento integrado) do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708247"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480441"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs e IDs de comandos do Visual Studio
 Os valores de GUID e ID dos comandos incluídos no IDE (ambiente de desenvolvimento integrado) do Visual Studio são definidos em arquivos. vsct que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [comandos, menus e grupos definidos pelo IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -31,7 +33,7 @@ Os valores de GUID e ID dos comandos incluídos no IDE (ambiente de desenvolvime
 
 ### <a name="to-locate-a-command-definition"></a>Para localizar uma definição de comando
 
-1. No Visual Studio, abra os seguintes arquivos na pasta *<caminho de instalação do SDK do Visual Studio \> \VisualStudioIntegration\Common\Inc \\ * : *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
+1. No Visual Studio, abra os seguintes arquivos na pasta *<caminho de instalação do SDK do Visual Studio \> \VisualStudioIntegration\Common\Inc \\* : *SharedCmdDef. vsct*, *ShellCmdDef. vsct*, *VsDbgCmdUsed. vsct*, *Venusmenu. vsct*.
 
     A maioria dos comandos do Visual Studio são definidos em *SharedCmdDef. vsct* e *ShellCmdDef. vsct*. *VsDbgCmdUsed. vsct* define os comandos que pertencem ao depurador, e *Venusmenu. vsct* define os comandos que são específicos do desenvolvimento para a Web.
 
@@ -54,11 +56,11 @@ Os valores de GUID e ID dos comandos incluídos no IDE (ambiente de desenvolvime
 
 - Itens de menu que incluem um caractere sublinhado, como o comando **Imprimir** no menu **arquivo** , no qual o *P* é sublinhado.
 
-     Os caracteres precedidos pelo caractere de e comercial (&) em nomes de itens de menu são exibidos como sublinhados. No entanto, os arquivos *. vsct* são gravados em XML, que usa o caractere de e comercial (&) para indicar caracteres especiais e requer que um e comercial seja exibido deve ser escrito como * &amp; amp;*. Portanto, em um arquivo *. vsct* , o comando **Print** é exibido como * &amp; amp; Imprimir*.
+     Os caracteres precedidos pelo caractere de e comercial (&) em nomes de itens de menu são exibidos como sublinhados. No entanto, os arquivos *. vsct* são gravados em XML, que usa o caractere de e comercial (&) para indicar caracteres especiais e requer que um e comercial seja exibido deve ser escrito como *&amp; amp;*. Portanto, em um arquivo *. vsct* , o comando **Print** é exibido como *&amp; amp; Imprimir*.
 
 - Comandos que têm texto dinâmico, como **salvar** \<Current Filename\> e itens de menu gerados dinamicamente, como os itens na lista de **arquivos recentes** .
 
-     Não há uma maneira confiável de Pesquisar texto dinâmico. Em vez disso, localize um grupo que hospede o comando desejado por [GUIDs de consultoria e IDs de menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs do Visual Studio e IDs das barras de ferramentas do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e pesquise a ID desse grupo. Se a definição do comando não tiver o grupo como seu [elemento pai](../../extensibility/parent-element.md), pesquise *SharedCmdPlace. vsct* e *ShellCmdPlace. vsct* (ou *VsDbgCmdPlace. vsct* para comandos do depurador) para um `<CommandPlacement>` elemento que defina o pai do comando. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct*e *VsDbgCmdPlace. vsct* estão na pasta * \<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\ * .
+     Não há uma maneira confiável de Pesquisar texto dinâmico. Em vez disso, localize um grupo que hospede o comando desejado por [GUIDs de consultoria e IDs de menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs do Visual Studio e IDs das barras de ferramentas do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e pesquise a ID desse grupo. Se a definição do comando não tiver o grupo como seu [elemento pai](../../extensibility/parent-element.md), pesquise *SharedCmdPlace. vsct* e *ShellCmdPlace. vsct* (ou *VsDbgCmdPlace. vsct* para comandos do depurador) para um `<CommandPlacement>` elemento que defina o pai do comando. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct* e *VsDbgCmdPlace. vsct* estão na pasta *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* .
 
 ## <a name="see-also"></a>Confira também
 

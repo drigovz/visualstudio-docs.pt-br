@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 2: Adicionar um objeto aleatório e uma lista de ícones'
+description: Saiba como criar um conjunto de símbolos correspondentes para o jogo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579426"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480688"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 
@@ -42,7 +44,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 3. Ao adicionar o objeto de lista, observe a janela do **IntelliSense** que é aberta. Veja a seguir um exemplo de C#, mas o texto semelhante é exibido quando você adiciona uma lista no Visual Basic.
 
-     ![Janela Propriedades mostrando o evento de clique](../ide/media/express_listintellisense.png)<br/>*Janela do **IntelliSense***
+     ![Janela Propriedades mostrando o evento de clique](../ide/media/express_listintellisense.png)<br/>*Janela do *_IntelliSense_**
 
     > [!NOTE]
     > A janela do IntelliSense aparece apenas quando você insere código manualmente. Se você copiar e colar o código, ela não aparecerá.

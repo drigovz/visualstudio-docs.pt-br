@@ -1,5 +1,7 @@
 ---
 title: Funcionalidades do editor de códigos
+description: Saiba mais sobre os recursos que o editor de código do Visual Studio fornece para facilitar a gravação e o gerenciamento de seu código e texto.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cf1cdbebab5d59091454e340b567eef7430efd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532620"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480181"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -37,7 +39,7 @@ As diferentes linguagens do Visual Studio oferecem conjuntos de recursos diferen
 |Coloração de sintaxe|Alguns elementos de sintaxe dos arquivos de código e de marcação são coloridos de maneiras diferentes para diferenciá-los. Por exemplo, palavras-chave (como `using` no C# e `Imports` no Visual Basic) são de uma cor, mas tipos (como `Console` e `Uri`) são de outra cor. Outros elementos de sintaxe também são coloridos, como comentários e literais de cadeia de caracteres. O C++ usa cores para fazer diferenciação entre tipos, enumerações e macros, entre outros tokens.<br /><br /> Você pode ver a cor padrão de cada tipo e pode alterar a cor de qualquer elemento de sintaxe específico na caixa de [diálogo fontes e cores, ambiente, opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), que pode ser aberta no menu **ferramentas** .|
 |Marcas de Erro e Aviso|Enquanto adiciona código e compila sua solução, você pode ver: (a)sublinhados ondulados de cores diferentes (conhecidos como rabiscos) ou (b) lâmpadas que aparecem em seu código. Rabiscos vermelhos indicam erros de sintaxe, azul indica erros de compilador, verde indica avisos e roxo indica outros tipos de erros. As [Ações Rápidas](../ide/quick-actions.md) sugerem correções para problemas e facilitam a aplicação da correção.<br /><br /> Você pode ver a cor padrão para cada erro e aviso ondulado na caixa de diálogo opções de **ferramentas**  >  **Options**  >  **Environment**  >  **e fontes** de ambiente. Procure por **Erro de Sintaxe**, **Erro do Compilador**, **Aviso** e **Outro Erro**.|
 |Correspondência de chave|Quando o ponto de inserção é colocado em uma chave de abertura em um arquivo de código, essa chave de abertura e a chave de fechamento são realçadas. Esse recurso fornece comentários imediatos sobre chaves no local incorreto ou ausentes. Você pode ativar ou desativar a correspondência de chaves com a configuração **Realce Automático de Delimitadores** (**Ferramentas** > **Opções** > **Editor de Texto**). Você pode alterar a cor do realce na configuração **Fontes e Cores** (**Ferramentas** > **Opções** > **Ambiente**). Procure **Correspondência de Chaves (Realce)** ou **Correspondência de Chaves (Retângulo)**.|
-|Visualizador de Estrutura|Linhas pontilhadas conectam chaves correspondentes nos arquivos de código, o que facilita ver a abertura e o fechamento de pares de chave. Isso pode ajudar a localizar o código em sua base de código mais rapidamente. Você pode ativar ou desativar essas linhas com as **diretrizes Mostrar estrutura** na seção **Exibir** da **Tools**  >  **Options**  >  **Text Editor**  >  página**geral** do editor de texto opções de ferramentas.|
+|Visualizador de Estrutura|Linhas pontilhadas conectam chaves correspondentes nos arquivos de código, o que facilita ver a abertura e o fechamento de pares de chave. Isso pode ajudar a localizar o código em sua base de código mais rapidamente. Você pode ativar ou desativar essas linhas com as **diretrizes Mostrar estrutura** na seção **Exibir** da **Tools**  >  **Options**  >  **Text Editor**  >  página **geral** do editor de texto opções de ferramentas.|
 |Números de Linha|Os números de linha podem ser exibidos na margem esquerda da janela de código. Eles não são exibidos por padrão. Você poderá ativar essa opção nas configurações **Todas as Linguagens do Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**). Você pode exibir números de linha para linguagens de programação individuais alterando as configurações para esses idiomas (**ferramentas**  >  **Opções**  >  **Editor de texto**  >  **\<language>** ). Para imprimir números de linha, você deve selecionar **incluir números de linha** na caixa de diálogo **Imprimir** .|
 |Controle de Alterações|A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. As alterações que foram feitas desde que o arquivo foi aberto mas não foram salvas são indicadas por uma barra amarela na margem esquerda (conhecida como a margem de seleção). Depois de salvar as alterações (mas antes de fechar o arquivo), a barra ficará verde. Se você desfizer uma alteração depois de salvar o arquivo, a barra ficará laranja. Para desativar e ativar esse recurso, altere a opção **Controlar Alterações** nas configurações **Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto**).|
 |Seleção de código e texto|É possível selecionar texto no modo padrão de fluxo contínuo ou no modo de caixa, no qual você seleciona uma parte retangular do texto em vez de um conjunto de linhas. Para fazer uma seleção no modo de caixa, pressione **ALT** ao arrastar o mouse sobre a seleção (ou pressione **ALT** + **Shift** + **\<arrow key>** ). A seleção inclui todos os caracteres dentro do retângulo definido pelo primeiro caractere e o último caractere na seleção. Tudo que é digitado ou colado na área selecionada é inserido no mesmo ponto em cada linha.|
@@ -58,8 +60,8 @@ Você pode encontrar vários recursos avançados no menu **Editar**  >  **avanç
 |Cancelar tabulação das linhas selecionadas|Troca tabulações à esquerda por espaços. Se você desejar converter todos os espaços em seu arquivo para tabulações (ou todas as tabulações para espaços), você poderá usar os comandos `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Esses comandos não aparecem nos menus do Visual Studio, mas você pode chamá-los na janela de **acesso rápido** ou na janela de comando.|
 |Colocar em Maiúsculas|Alterar todos os caracteres na seleção para maiúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para maiúsculo. Atalho: **Ctrl** + **Shift** + **U**.|
 |Colocar em Minúsculas|Alterar todos os caracteres na seleção para minúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para minúsculo. Atalho: **Ctrl** + **U**.|
-|Mover linhas selecionadas para cima|Move a linha selecionada uma linha para cima. Atalho: **Alt** + **seta para cima**Alt.|
-|Mover Linhas Selecionadas para Baixo|Move a linha selecionada uma linha para baixo. Atalho: **Alt** + **seta para baixo**Alt.|
+|Mover linhas selecionadas para cima|Move a linha selecionada uma linha para cima. Atalho: **Alt** + **seta para cima** Alt.|
+|Mover Linhas Selecionadas para Baixo|Move a linha selecionada uma linha para baixo. Atalho: **Alt** + **seta para baixo** Alt.|
 |Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual. Atalho: **Ctrl** + **K**, **Ctrl**+**\\**|
 |Exibir Espaço em Branco|Exibe espaços como pontos elevados e tabulações como setas. O final de um arquivo é exibido como um glifo retangular. Se **ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**  >  **quebra automática**  >  **de palavra Mostrar glifos visíveis para quebra automática de palavra** está selecionado, esse glifo também é exibido.|
 |Quebra automática de linha|Faz com que todas as linhas em um documento sejam visíveis na janela de código. Você pode ativar a quebra automática de palavra e ativar no **Editor de texto todas** as configurações de idiomas (**ferramentas**  >  **Opções**  >  **Editor de texto**  >  **todos os idiomas**).|
@@ -82,7 +84,7 @@ Para encontrar o local em que elementos de código específicos são referenciad
 
 É possível compartilhar configurações do Visual Studio com outro desenvolvedor, fazer com que suas configurações estejam em conformidade com um padrão ou retornar às configurações padrão do Visual Studio usando o comando **Assistente de Importação e Exportação de Configurações** no menu **Ferramentas**. No **Assistente de Importação e Exportação de Configurações**, é possível alterar configurações gerais selecionadas ou idioma e configurações específicas do projeto.
 
-Para definir novas teclas de atalhos ou redefinir as teclas de uso existentes, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **teclado**ambiente. Para obter mais informações sobre teclas de [atalho, consulte atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Para definir novas teclas de atalhos ou redefinir as teclas de uso existentes, vá para **ferramentas**  >  **Opções**  >  **Environment**  >  **teclado** ambiente. Para obter mais informações sobre teclas de [atalho, consulte atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 Para conferir opções do editor específicas ao JavaScript, confira [Opções do editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 

@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 1: Crie um projeto de aplicativo do Windows Forms'
+description: Saiba como criar um projeto de aplicativo Windows Forms para o Visualizador de imagens.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579907"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480389"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: Crie um projeto de aplicativo do Windows Forms
 
@@ -27,9 +29,9 @@ Quando você cria um visualizador de imagens, a primeira etapa é criar um proje
 
 1. Na barra de menus, escolha **arquivo**  >  **novo**  >  **projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
 
-     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>***Caixa de diálogo*** *Novo Projeto*
+     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>**_Novo projeto_* _ _dialog Box *
 
-2. No lado esquerdo da caixa de diálogo **novo projeto** , escolha **Visual C#** ou **Visual Basic**e, em seguida, escolha **área de trabalho do Windows**.
+2. No lado esquerdo da caixa de diálogo **novo projeto** , escolha **Visual C#** ou **Visual Basic** e, em seguida, escolha **área de trabalho do Windows**.
 
 3. Na lista modelos de projeto, escolha **Windows Forms aplicativo (.NET Framework)**. Dê o nome de *PictureViewer* ao novo formulário e escolha o botão **OK**.
 
@@ -105,7 +107,7 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
      Como alternativa, escolha o botão **salvar tudo** na barra de ferramentas, que mostra a imagem a seguir.
 
      ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br/>
-     Botão ***salvar todas as*** *barras de ferramentas*
+     *Botão *_salvar tudo_** _toolbar *
 
      O Visual Studio preenche automaticamente o nome da pasta e o nome do projeto e, em seguida, salva o projeto na sua pasta de projeto.
 

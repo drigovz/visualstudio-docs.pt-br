@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 5: Adicionar controles ao formulário'
+description: Saiba como adicionar controles, como um <xref:System.Windows.Forms.PictureBox> controle e um <xref:System.Windows.Forms.CheckBox> controle, ao seu formulário.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579354"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480571"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 
@@ -29,21 +31,21 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 1. Escolha o novo controle **PictureBox** para selecioná-lo e, em seguida, escolha o triângulo preto no novo controle PictureBox para exibir sua lista de tarefas, conforme mostrado na captura de tela a seguir.
 
-    ![Tarefas PictureBox](../ide/media/express_pictureboxtasks.png)<br/>*Tarefas* PictureBox * * **
+    ![Tarefas PictureBox](../ide/media/express_pictureboxtasks.png)<br/>PictureBox **_ _tasks**
 
     > [!NOTE]
-    > Se você adicionar acidentalmente o tipo errado de controle a seu TableLayoutPanel, poderá excluí-lo. Clique com o botão direito do mouse no controle e escolha **Excluir** no menu de contexto. Você pode também remover os controles de formulário usando a barra de menus. Na barra de menus, escolha **Editar**  >  **desfazer**ou **Editar**  >  **excluir**.
+    > Se você adicionar acidentalmente o tipo errado de controle a seu TableLayoutPanel, poderá excluí-lo. Clique com o botão direito do mouse no controle e escolha **Excluir** no menu de contexto. Você pode também remover os controles de formulário usando a barra de menus. Na barra de menus, escolha **Editar**  >  **desfazer** ou **Editar**  >  **excluir**.
 
 1. No menu **tarefas de PictureBox** do controle **PictureBox** , escolha o link **encaixar no contêiner pai** . Isso define automaticamente a propriedade **Dock** de PictureBox como **Fill**. Para ver isso, escolha o controle **PictureBox** para selecioná-lo, vá para a janela **Propriedades** e verifique se a propriedade **Dock** está definida como **Fill**.
 
 1. Faça a PictureBox se estender por ambas as colunas alterando sua propriedade **ColumnSpan**. Na **PictureBox**, escolha o controle **PictureBox** e defina sua propriedade **ColumnSpan** como **2**. Além disso, quando a PictureBox está vazia, você deseja mostrar uma estrutura vazia. Defina sua propriedade **BorderStyle** para **Fixed3D**.
 
     > [!NOTE]
-    > Se você não vir uma propriedade **ColumnSpan** para sua PictureBox, então será provável que a PictureBox tenha sido adicionada ao formulário em vez de ao TableLayoutPanel. Para corrigir isso, escolha **PictureBox**, Delete, escolha o **TableLayoutPanel**e, em seguida, adicione uma nova PictureBox.
+    > Se você não vir uma propriedade **ColumnSpan** para sua PictureBox, então será provável que a PictureBox tenha sido adicionada ao formulário em vez de ao TableLayoutPanel. Para corrigir isso, escolha **PictureBox**, Delete, escolha o **TableLayoutPanel** e, em seguida, adicione uma nova PictureBox.
 
-1. Escolha o **TableLayoutPanel** no formulário e, em seguida, adicione um controle de caixa de seleção ao formulário. Clique duas vezes no item de **caixa de seleção** na caixa de **ferramentas** para adicionar um novo controle de caixa de seleção à próxima célula gratuita da tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **texto** e digite a **ampliação**da palavra, conforme mostrado na imagem a seguir.
+1. Escolha o **TableLayoutPanel** no formulário e, em seguida, adicione um controle de caixa de seleção ao formulário. Clique duas vezes no item de **caixa de seleção** na caixa de **ferramentas** para adicionar um novo controle de caixa de seleção à próxima célula gratuita da tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **texto** e digite a **ampliação** da palavra, conforme mostrado na imagem a seguir.
 
-    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Controle de*** *TextBox com * ***propriedade*** *Stretch*
+    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _Control com * ***Stretch**_ _property *
 
 1. Escolha o **TableLayoutPanel** no formulário e, em seguida, vá para o grupo **contêineres** na **caixa de ferramentas** (onde você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula (canto inferior direito). Em seguida, encaixe o FlowLayoutPanel no TableLayoutPanel. Você pode fazer isso escolhendo **encaixar no contêiner pai** na lista de tarefas do triângulo preto do FlowLayoutPanel ou definindo a propriedade **Dock** do FlowLayoutPanel como **Fill**.
 
@@ -54,7 +56,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 1. Escolha o novo FlowLayoutPanel que você adicionou. Vá para **controles comuns** na **caixa de ferramentas** e clique duas vezes no item de **botão** para adicionar um controle de botão chamado **Button1** ao seu FlowLayoutPanel. Repita para adicionar outro botão. O IDE determina que já há um botão chamado **button1** e chama o próximo de **button2**.
 
-1. Normalmente, você adiciona os outros botões usando a **caixa de ferramentas**. Desta vez, escolha **Button2**e, em seguida, na barra de menus, escolha **Editar**  >  **cópia** (ou pressione **Ctrl** + **C**). Em seguida, escolha **Editar**  >  **colar** na barra de menus (ou pressione **Ctrl** + **V**) para colar uma cópia do botão. Agora cole-o novamente. Observe que o IDE adiciona **button3** e **Button4** ao FlowLayoutPanel.
+1. Normalmente, você adiciona os outros botões usando a **caixa de ferramentas**. Desta vez, escolha **Button2** e, em seguida, na barra de menus, escolha **Editar**  >  **cópia** (ou pressione **Ctrl** + **C**). Em seguida, escolha **Editar**  >  **colar** na barra de menus (ou pressione **Ctrl** + **V**) para colar uma cópia do botão. Agora cole-o novamente. Observe que o IDE adiciona **button3** e **Button4** ao FlowLayoutPanel.
 
     > [!NOTE]
     > Você pode copiar e colar qualquer controle. O IDE nomeia e coloca os novos controles de uma maneira lógica. Se você colar um controle em um contêiner, o IDE escolherá o próximo espaço lógico para posicionamento.
@@ -74,7 +76,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
    Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Desde que todos os quatro botões sejam selecionados, você pode alterar todas as quatro propriedades de **dimensionamento** ao mesmo tempo.) A imagem a seguir mostra os quatro botões.
 
-    ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>***Visualizador de imagens*** *com quatro botões*
+    ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>**_Visualizador de imagem_* _ _with quatro botões *
 
 1. Agora, execute o programa novamente para ver suas alterações.
 

@@ -1,5 +1,7 @@
 ---
 title: Trabalhar com várias contas de usuário
+description: Saiba como adicionar todas as suas contas da Microsoft ao Visual Studio para que você possa acessar os recursos de qualquer conta sem precisar entrar nele separadamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 071c6061417e26b45e5f9e67bc6ac1001bf08530
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671331"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480337"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -115,7 +117,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Em **Visual Studio**, escolha **Continuar**.
 
-   ![device-login-page.png](media/work-with-multiple-user-accounts/device-login-page.png)
+   ![Captura de tela da página de logon do dispositivo mostrando a opção continuar.](media/work-with-multiple-user-accounts/device-login-page.png)
 
 1. Siga os prompts para inserir as credenciais de sua conta.
 
@@ -134,7 +136,7 @@ A partir da versão 16,8, você poderá adicionar as contas do GitHub e do GitHu
 Para obter instruções detalhadas, consulte [trabalhar com contas do GitHub no Visual Studio](work-with-github-accounts.md).
 ::: moniker-end
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Entrar no Visual Studio](signing-in-to-visual-studio.md)
 - [Entrar no Visual Studio para Mac](/visualstudio/mac/signing-in)
