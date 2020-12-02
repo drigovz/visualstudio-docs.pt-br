@@ -1,5 +1,7 @@
 ---
 title: 'Passo a passo: Para criar um snippet de código'
+description: 'Saiba como criar um trecho de código em três etapas: criar um arquivo XML, preencher os elementos apropriados e adicionar seu código a ele.'
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b7f227344f00fe277d4bf062f83bd3c1d79fd5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800496"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479635"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Para criar um snippet de código
 
@@ -54,7 +56,7 @@ O seguinte XML é o modelo básico de snippet:
 
 2. Preencha o título do snippet no elemento **Título**. Use o título **Raiz Quadrada**.
 
-3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para o C#, use **Csharp**, por Visual Basic, use o **VB**e, para C++, use **cpp**.
+3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para o C#, use **Csharp**, por Visual Basic, use o **VB** e, para C++, use **cpp**.
 
    > [!TIP]
    > Para ver todos os valores de linguagem disponíveis, procure a [seção Atributos de elemento de código](code-snippets-schema-reference.md#attributes) na página [Referência de esquema de snippets de código](code-snippets-schema-reference.md).

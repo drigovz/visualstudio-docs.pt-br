@@ -1,5 +1,7 @@
 ---
 title: Parâmetros de modelo de projeto e de item
+description: Saiba como usar parâmetros de modelo para substituir valores em seu modelo quando o modelo for instanciado.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169359"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479190"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -65,7 +67,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |userdomain|O domínio do usuário atual.|
 |Nome de Usuário|O nome de usuário atual.|
 |webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
-|year|O ano atual no formato AAAA.|
+|ano|O ano atual no formato AAAA.|
 
 > [!NOTE]
 > Parâmetros de modelo diferenciam maiúsculas de minúsculas.

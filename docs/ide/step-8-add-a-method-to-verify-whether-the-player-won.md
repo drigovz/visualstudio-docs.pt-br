@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 8: Adicionar um método para verificar se o jogador ganhou'
+description: Saiba como adicionar um método para determinar se o jogador venceu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579754"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479284"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.
@@ -43,10 +45,10 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
 3. Salve e execute o programa. Jogue o jogo e combine todos os ícones. Quando você ganhar, o programa exibirá uma congratulary **MessageBox** (conforme mostrado na captura de tela a seguir) e, em seguida, fechará a caixa.
 
      ![Jogo da memória com MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Jogo de correspondência*** *com* ***MessageBox***
+**_Jogo de correspondência_* _ _com * ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 9: Experimente outros recursos](../ide/step-9-try-other-features.md)**.
+- Para ir para a próxima etapa do tutorial, consulte _ *[Step 9: Experimente outros recursos](../ide/step-9-try-other-features.md)* *.
 
 - Para retornar à etapa anterior do tutorial, consulte [etapa 7: manter pares visíveis](../ide/step-7-keep-pairs-visible.md).

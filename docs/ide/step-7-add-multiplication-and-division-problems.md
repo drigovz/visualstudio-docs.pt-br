@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 7: Adicionar problemas de multiplicação e divisão'
+description: Saiba como adicionar problemas de multiplicação e divisão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579785"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479492"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Etapa 7: Adicionar problemas de multiplicação e divisão
 
@@ -58,7 +60,7 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
      Os participantes de teste devem responder quatro problemas para concluir o teste, conforme mostrado na ilustração.
 
      ![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png)<br/>
-***Teste de matemática*** *com quatro problemas*
+***Teste de matemática** _ _with quatro problemas *
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 

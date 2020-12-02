@@ -1,5 +1,7 @@
 ---
 title: Expondo tipos a designers visuais | Microsoft Docs
+description: Saiba como expor definições de classe e tipo, incluindo aquelas em ferramentas personalizadas, para que o Visual Studio possa torná-las disponíveis para designers visuais.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012524"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479518"
 ---
 # <a name="expose-types-to-visual-designers"></a>Expor tipos a designers visuais
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ter acesso às definições de classe e tipo em tempo de design para exibir um designer visual. As classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto de dependências completo do projeto atual (referências mais suas dependências). Também pode ser necessário que os designers visuais acessem classes e tipos definidos em arquivos gerados por ferramentas personalizadas.
@@ -37,13 +39,13 @@ ms.locfileid: "90012524"
 
 - O código gerado deve estar no mesmo idioma que a configuração do projeto global.
 
-     O PE temporário é compilado independentemente do que a ferramenta personalizada relata como a extensão solicitada no <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> desde que **GeneratesDesignTimeSource** esteja definido como 1 no registro. A extensão não precisa ser *. vb*, *. cs*ou *. jsl*; pode ser qualquer extensão.
+     O PE temporário é compilado independentemente do que a ferramenta personalizada relata como a extensão solicitada no <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> desde que **GeneratesDesignTimeSource** esteja definido como 1 no registro. A extensão não precisa ser *. vb*, *. cs* ou *. jsl*; pode ser qualquer extensão.
 
 - O código gerado pela ferramenta personalizada deve ser válido e deve ser compilado por conta própria usando apenas o conjunto de referências presentes no projeto no momento em que a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> execução é concluída.
 
      Quando um PE temporário é compilado, o único arquivo de origem fornecido ao compilador é a saída da ferramenta personalizada. Portanto, uma ferramenta personalizada que usa um PE temporário deve gerar arquivos de saída que podem ser compilados independentemente de outros arquivos no projeto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 - [Introdução ao objeto BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementar geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registrar geradores de arquivo único](../../extensibility/internals/registering-single-file-generators.md)

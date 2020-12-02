@@ -1,5 +1,7 @@
 ---
 title: Configurar um projeto do C++ para o IntelliSense
+description: Saiba como configurar manualmente seu projeto C++ para que o IntelliSense funcione corretamente usando o IDE do Visual Studio para ajudá-lo a identificar e corrigir problemas do IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: corob-msft
@@ -7,12 +9,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509881"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478790"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 

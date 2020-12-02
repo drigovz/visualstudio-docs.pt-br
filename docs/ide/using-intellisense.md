@@ -1,5 +1,7 @@
 ---
 title: Informações do parâmetro, listar membros e informações rápidas
+description: 'Saiba como usar estes recursos do IntelliSense: listar Membros, informações de parâmetro, informações rápidas e palavra completa.'
+ms.custom: SEO-VS-2020
 ms.date: 05/25/2018
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: c60372d7268dd76bf9bbd967678490998ffa76c3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878277"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479011"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
@@ -107,7 +109,7 @@ MessageBox( hWnd, "String literal|")
 
 **As opções automáticas estão desativadas.** Por padrão, o IntelliSense funciona automaticamente, mas é possível desabilitar isso. Mesmo se o preenchimento automático de declaração for desabilitado, é possível invocar um recurso IntelliSense.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

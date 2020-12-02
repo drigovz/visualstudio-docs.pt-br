@@ -1,5 +1,7 @@
 ---
 title: C++ IntelliSense
+description: Saiba mais sobre alguns recursos do IntelliSense que você pode usar ao codificar seu projeto do C++.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594208"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478881"
 ---
 # <a name="visual-c-intellisense-features"></a>Funcionalidades do Visual C++ IntelliSense
 

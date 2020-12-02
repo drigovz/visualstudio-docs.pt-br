@@ -1,5 +1,7 @@
 ---
 title: Visual Basic IntelliSense
+description: Saiba como usar os recursos do IntelliSense oferecidos pelo editor de código-fonte Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594182"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478816"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense para arquivos de código do Visual Basic
 
@@ -39,7 +41,7 @@ Dicas de sintaxe são exibidas na sintaxe da instrução que você está digitan
 
 A conclusão pode ser desativada por padrão desmarcando **Listar membros automaticamente** na página de propriedades **Geral** na pasta **Visual Basic**.
 
-Você pode invocar manualmente a conclusão invocando membros da lista, palavra completa **Alt**ou + **seta para a direita**Alt. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
+Você pode invocar manualmente a conclusão invocando membros da lista, palavra completa **Alt** ou + **seta para a direita** Alt. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
 ## <a name="intellisense-in-zone"></a>IntelliSense por Zona
 

@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 8: Personalizar o teste'
+description: Saiba como transformar o controle de rótulo de timeLabel em uma cor diferente e dar uma dica ao seu secretário.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21403aeb51f342f607575d99a79ce2bdb7aaa54a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579375"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479310"
 ---
 # <a name="step-8-customize-the-quiz"></a>Etapa 8: Personalizar o teste
 

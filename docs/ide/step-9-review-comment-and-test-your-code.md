@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 9: Examinar, comentar e testar o código'
+description: Saiba como adicionar um comentário ao seu código e testar seu aplicativo.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579750"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479297"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Examinar, comentar e testar o código
 
@@ -65,24 +67,24 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.
     >
-    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **ferramentas**  >  **Gerenciador de trechos de código**. Para o C#, o `if` trecho de código está no **Visual C#** . Por Visual Basic, os `if` trechos estão em **Code Patterns**  >  **loops e condicionais**de padrões de código. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
+    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **ferramentas**  >  **Gerenciador de trechos de código**. Para o C#, o `if` trecho de código está no **Visual C#** . Por Visual Basic, os `if` trechos estão em **Code Patterns**  >  **loops e condicionais** de padrões de código. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
     >
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla **Tab**. Muitos snippets aparecem na janela **IntelliSense** e é por isso que você escolhe a tecla **Tab** duas vezes: primeiro para marcar o snippet na janela do **IntelliSense** e, depois, para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
 
 1. Antes de executar o aplicativo, salve o aplicativo escolhendo o botão de barra de ferramentas **salvar tudo** , que deve ser semelhante à captura de tela a seguir.
 
      ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br>
-*Botão* ***salvar tudo***
+**_Salvar tudo_* _ _button *
 
      Como alternativa, para salvar seu aplicativo, escolha **arquivo**  >  **salvar tudo** na barra de menus (ou pressione **Ctrl** + **Shift** + **S**). É uma prática recomendada salvar no início e com frequência.
 
      Quando estiver em execução, seu programa deverá ser semelhante à imagem a seguir.
 
-     ![Visualizador de imagem](../ide/media/express_pictureviewerdonerun.png)<br>***Visualizador de imagem***
+     ![Visualizador de imagem](../ide/media/express_pictureviewerdonerun.png)<br>**_Visualizador de imagens_* _
 
 ## <a name="to-test-your-app"></a>Para testar seu aplicativo
 
-1. Escolha a tecla **F5** ou escolha o botão **Iniciar Depuração** da barra de ferramentas.
+1. Escolha a chave _ *F5** ou escolha o botão **Iniciar Depuração** da barra de ferramentas.
 
 1. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o aplicativo abre uma caixa de diálogo **Abrir arquivo** . Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de *Meus Documentos*, dentro da pasta *My Pictures\Sample Pictures*.
 

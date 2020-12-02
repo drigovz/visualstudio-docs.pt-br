@@ -1,5 +1,7 @@
 ---
 title: Usar expressões regulares
+description: Saiba mais sobre alguns caracteres de expressão regular, operadores, construções e exemplos de padrões que você pode usar no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568614"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478985"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -52,7 +54,7 @@ A tabela a seguir contém alguns caracteres de expressão regular, operadores, c
 |[Escapar do caractere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) após a barra invertida| \\ |`\^` corresponde ao caractere ^|
 |Especificar o número de ocorrências do caractere ou do grupo anterior. Para saber mais, confira [Corresponder a exatamente n vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, em que “n” é o número de ocorrências|`x(ab){2}x` corresponde a "xababx"<br/>`x(ab){2,3}x` corresponde a "xababx" e "xabababx", mas não a "xababababx"|
 |[Corresponder ao texto em uma categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para saber mais sobre classes de caracteres Unicode, confira [Propriedades de caractere do Padrão Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, em que "X" é o número Unicode.|`\p{Lu}` corresponde a "T" e "D" em "Thomas Doe"|
-|[Encontrar a correspondência de um limite de palavra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin` corresponde a "in" em "Inside" mas não localiza nenhuma correspondência em "fixar"|
+|[Corresponder um limite de palavra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin` corresponde a "in" em "Inside" mas não localiza nenhuma correspondência em "fixar"|
 |Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha)|\r?\n|`End\r?\nBegin` corresponde a "End" e "Begin" somente quando "End" é a última cadeia de caracteres em uma linha e "Begin" é a primeira cadeia de caracteres na linha seguinte|
 |Encontrar a correspondência de qualquer [caractere de palavra](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` corresponde a "Add" e "A1D", mas não a "a d"|
 |Corresponder qualquer [caractere de espaço em branco](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` corresponde à frase "interface pública"|

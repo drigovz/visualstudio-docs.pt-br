@@ -1,5 +1,7 @@
 ---
 title: 'Etapa 7: Adicionar componentes de diálogo ao formulário'
+description: Saiba como adicionar um <xref:System.Windows.Forms.OpenFileDialog> componente de caixa de diálogo e um <xref:System.Windows.Forms.ColorDialog> componente de caixa de diálogo ao formulário.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579283"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479466"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Etapa 7: Adicionar componentes de diálogo ao formulário
 
@@ -32,7 +34,7 @@ Um componente é como um controle de certas maneiras. Use a **Caixa de Ferrament
 
 1. Para adicionar um componente chamado **openFileDialog1** ao formulário, clique duas vezes em **OpenFileDialog**. Para adicionar um componente chamado **colorDialog1** ao formulário, clique duas vezes em **ColorDialog** na **Caixa de Ferramentas**. (Você usará aquela na próxima etapa do tutorial.) Você deve ver uma área na parte inferior da **Designer de formulários do Windows** (abaixo do formulário do **Visualizador de imagens** ) que tem um ícone para cada um dos dois componentes de caixa de diálogo que você adicionou, conforme mostrado na imagem a seguir.
 
-     ![Componentes da caixa de diálogo](../ide/media/express_dialogsadded.png)<br>***Dialog*** *Componentes* da caixa de diálogo
+     ![Componentes da caixa de diálogo](../ide/media/express_dialogsadded.png)<br>**_Caixa de diálogo_* _ _components *
 
 1. Escolha o ícone **openFileDialog1** na área da parte inferior do **Designer de Formulários do Windows**. Defina as duas propriedades:
 
