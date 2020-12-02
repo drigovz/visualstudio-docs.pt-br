@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 328c5d91767054b3ad4516838f95769ca6d848d0
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e77316628f2251fd44d27edaec4c91354fd81a4b
+ms.sourcegitcommit: 02445b684e69c1a665a7e06e9b46072d3fcd7ba6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353402"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96516087"
 ---
 # <a name="aspnetcompiler-task"></a>Tarefa AspNetCompiler
 
@@ -72,7 +72,8 @@ O exemplo de código a seguir usa a `AspNetCompiler` tarefa para pré-compilar u
 </Project>
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 * [Tarefas](../msbuild/msbuild-tasks.md)
 * [Referência de tarefas](../msbuild/msbuild-task-reference.md)
+* [Ferramenta de compilação ASP.NET (aspnet_compiler.exe)](/previous-versions/ms229863(v=vs.100))
