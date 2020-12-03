@@ -188,7 +188,7 @@
           href: aliasing.md
         - name: Assinantes que entram com emails pessoais
           href: personal-email-sign-ins.md
-        - name: Gerenciando o Visual Studio com o GitHub Enterprise
+        - name: Como gerenciar assinaturas do Visual Studio com o GitHub Enterprise
           href: assign-github.md
 - name: Recursos
   items:
