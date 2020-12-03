@@ -1,18 +1,18 @@
 ---
-title: Entrar em Assinaturas do Visual Studio com sua conta do GitHub | Microsoft Docs
+title: Entrando nas assinaturas do Visual Studio com sua conta do GitHub | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/09/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Saiba como entrar em suas assinaturas do Visual Studio com sua conta do GitHub.
-ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005258"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537988"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Entrar em assinaturas do Visual Studio com sua conta do GitHub 
 
@@ -64,7 +64,7 @@ R: Vá para a [guia Segurança](https://account.microsoft.com/security) do Accou
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>P: Eu tento usar minha conta do GitHub para entrar, mas sou solicitado que eu já tenha uma identidade da Microsoft que devo usar em vez disso.  O que está acontecendo?
 R: se você tiver um endereço de email Azure Active Directory em sua conta do GitHub, isso significa que você já tem uma identidade da Microsoft que pode acessar o Azure e executar pipelines de CI usando o código do GitHub. Usar essa conta garante que seus recursos do Azure e os pipelines de build permaneçam dentro de seus limites organizacionais. No entanto, se você estiver fazendo trabalho pessoal, é recomendável colocar um endereço de email pessoal em sua conta do GitHub, de modo que você sempre tenha acesso a ele. Depois de fazer isso, tente entrar novamente e escolha **Usar um endereço de email diferente** quando for solicitado que você entre em sua conta corporativa ou de estudante. Isso permitirá que você crie uma nova conta Microsoft usando esse endereço de email pessoal.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

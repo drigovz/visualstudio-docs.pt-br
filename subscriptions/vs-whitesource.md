@@ -2,17 +2,17 @@
 title: Rolo de branco nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba como ativar a assinatura do WhiteSource Bolt incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435995"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537676"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt em assinaturas do Visual Studio
 
@@ -43,9 +43,9 @@ Encontre e corrija vulnerabilidades de software livre e gere relatórios de lice
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | 6 meses       |  Sim       |
-| Visual Studio Enterprise com GitHub Enterprise | VL | 6 meses       |  Sim       |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise | VL | 6 meses       |  Sim       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                           |NA         |
-| Visual Studio Professional com GitHub Enterprise | VL                                      | Não disponível                                                           |NA         |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                      | Não disponível                                                           |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                           |NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                                           |NA         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
@@ -61,7 +61,7 @@ Encontre e corrija vulnerabilidades de software livre e gere relatórios de lice
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

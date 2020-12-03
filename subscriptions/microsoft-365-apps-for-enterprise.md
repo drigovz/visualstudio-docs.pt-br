@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Saiba mais e instale os aplicativos Microsoft 365 para empresas
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006118"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537819"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 aplicativos para empresas em assinaturas do Visual Studio
 Microsoft 365 aplicativos para empresas (anteriormente conhecido como Office 365 Pro Plus) estão disponíveis em assinaturas do Visual Studio selecionadas. 
@@ -56,10 +56,10 @@ O processo de ativação de seus aplicativos Microsoft 365 para a assinatura Ent
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Sim          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise  | VL | Disponível       |  Sim          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
-| Visual Studio Professional com GitHub Enterprise | VL | Não disponível         |  N/D          |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL | Não disponível         |  N/D          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
@@ -77,7 +77,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

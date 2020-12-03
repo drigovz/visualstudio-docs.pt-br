@@ -1,5 +1,5 @@
 ---
-title: O benefício CAST Highlight para as assinaturas do Visual Studio | Microsoft Docs
+title: Realce de conversão de benefício em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353363"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538131"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o realce de conversão, os assinantes do Visual Studio podem examinar rapidamente o código-fonte do aplicativo para identificar a preparação da nuvem de seus aplicativos para migração para o Azure e monitorar o progresso de seus aplicativo durante e após uma migração.
@@ -78,9 +78,9 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por três meses|  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Avaliar 5 aplicativos por três meses|  Não.  Disponível apenas para novos assinantes          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise  | VL | Avaliar 5 aplicativos por três meses|  Não.  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Avaliar 1 aplicativo por três meses                                                             |  Não.  Disponível apenas para novos assinantes                  |
-| Visual Studio Professional com GitHub Enterprise | VL                                       | Avaliar 1 aplicativo por três meses                                                            |  Não.  Disponível apenas para novos assinantes                  |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                       | Avaliar 1 aplicativo por três meses                                                            |  Não.  Disponível apenas para novos assinantes                  |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D           |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
@@ -101,7 +101,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

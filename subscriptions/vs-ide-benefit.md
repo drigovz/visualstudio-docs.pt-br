@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Saiba como baixar e instalar o IDE do Visual Studio incluído na sua assinatura do Visual Studio
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435756"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538053"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>O benefício do Visual Studio 2019
 
@@ -24,7 +24,7 @@ Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A ve
 
 Para baixar o IDE:
 1. Entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Localize o bloco IDE do Visual Studio na seção de Ferramentas e clique no link **Download** na parte inferior do bloco do benefício.  Você também pode baixar na página [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+2. Localize o bloco IDE do Visual Studio na seção ferramentas e clique no link **baixar** na parte inferior do bloco de benefícios.  Você também pode baixar na página [Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
    > ! [Bloco do Visual Studio Enterprise] (_img/vs-IDE-Experience/vs-ide-tile.png "clique em" download "no bloco do Visual Studio para instalar o Visual Studio.")
 
@@ -63,9 +63,9 @@ Para baixar o IDE:
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | Disponível       |  Sim          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise   | VL | Disponível       |  Sim          |
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
-| Visual Studio Professional com GitHub Enterprise | VL   | Disponível              |  Sim          |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL   | Disponível              |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
 
@@ -82,7 +82,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
   - [Documentação](/visualstudio/)
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

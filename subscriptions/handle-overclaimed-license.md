@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 10/28/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver assinaturas Superalocadas
-ms.openlocfilehash: bf3c23cad87dc88b24bae3e8b31ebf8b7d9e1dfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904292"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537741"
 ---
 # <a name="over-allocated-subscriptions"></a>Assinaturas Superalocadas
 Às vezes, os pedidos são alterados após os assinantes serem adicionados, o que pode resultar em um número maior de assinaturas atribuídas que licenças pertencentes à empresa. Isso é chamado de "sobrealocação".  
@@ -37,12 +37,12 @@ Há várias maneiras de resolver sobrelocalidades:
 Se sua organização tiver um EA (Contrato Enterprise), os administradores poderão atribuir assinaturas sem comprá-las e pagar por elas mais tarde por meio de um processo de reconciliação, conhecido como adequação ("true-up").  Quando você sobrealocar, sua organização será cobrada pelo número máximo de assinaturas atribuídas aos usuários durante a "verdadeira".  Isso acontecerá mesmo se você não tiver o número máximo de assinaturas atribuído no momento em que ocorrer a adequação ("true-up").  Para saber mais sobre como monitorar seu uso máximo, acesse o tópico [Uso máximo](maximum-usage.md).
 
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
 - [Documentação do Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Próximas etapas
-- Saiba mais sobre como gerenciar [Assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md).
+- Saiba mais sobre como gerenciar [assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.

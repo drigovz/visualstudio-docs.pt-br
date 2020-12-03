@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413951"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537962"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -30,7 +30,7 @@ Ferramentas para Desenvolvedores como o IDE do Visual Studio e o Azure DevOps Se
 
 Os produtos sem desenvolvedores (como SQL, Windows, SharePoint) baixados das assinaturas do Visual Studio são elegíveis apenas para suporte base. Esses produtos são licenciados apenas para ambientes de desenvolvimento para projetar, desenvolver, testar ou demonstrar aplicativos. Esses produtos não são licenciados para ambientes de produção.
 
-Descrições de nível de produto: expanda **planos de suporte indisponíveis**. Se você vir **o plano de suporte não pode ser usado para suporte no produto especificado (código: 8)** , o contrato de suporte não poderá ser usado para a versão do produto que você selecionou.
+Descrições de nível de produto: expanda **planos de suporte indisponíveis**. Se você vir **o plano de suporte não pode ser usado para suporte no produto especificado (código: 8)**, o contrato de suporte não poderá ser usado para a versão do produto que você selecionou.
 
 > [!IMPORTANT]
 > Os incidentes de suporte fornecidos são para suporte à correção de conserto.  Eles não podem ser usados para obter assistência com problemas de codificação/desenvolvimento que envolvem os seguintes produtos:
@@ -86,11 +86,11 @@ Para enviar um incidente por meio do suporte para o portal de negócios, siga es
 0. Seu novo contrato de suporte será exibido na **etapa 2**.  Selecione-a.
 0. Indique a gravidade do seu problema.  "Importante" é o padrão. 
 0. Escolha quando você deseja receber suporte. "Somente durante o horário comercial" é selecionado por padrão. A opção de "suporte a 24/7" só estará disponível se você tiver selecionado "crítico" como a severidade.
-0. Clique em **Próximo** para continuar. 
-0. Para a **etapa 3** , forneça as informações de contato que você deseja que seu agente de suporte use para contatá-lo. 
+0. Clique em **Avançar** para continuar. 
+0. Para a **etapa 3**, forneça as informações de contato que você deseja que seu agente de suporte use para contatá-lo. 
    > [!div class="mx-imgBorder"]
    > ![Verifique suas informações de contato](_img/vs-tech-support/vs-tech-support-contact-info.png "Verifique suas informações de contato e o método de contato preferencial.") 
-0. Na **etapa 4** , você tem a opção de compartilhar essas informações de solicitação de suporte com outras pessoas em sua equipe.  Insira os endereços de email daqueles com os quais você gostaria de compartilhar a solicitação. Clique em **Avançar** para ir para a próxima etapa.
+0. Na **etapa 4**, você tem a opção de compartilhar essas informações de solicitação de suporte com outras pessoas em sua equipe.  Insira os endereços de email daqueles com os quais você gostaria de compartilhar a solicitação. Clique em **Avançar** para ir para a próxima etapa.
 0. A **etapa 5** resume todas as informações que você forneceu para o incidente.  Se estiver satisfeito se tudo estiver correto e você estiver pronto para continuar, clique em **Enviar**. 
  
 ### <a name="submit-an-incident-by-phone"></a>Enviar um incidente por telefone
@@ -108,9 +108,9 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Comercial, NFR selecionado<sup>1</sup> | 4 incidentes       |  Sim|
-| Visual Studio Enterprise com GitHub Enterprise | VL | 4 incidentes       |  Sim|
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise | VL | 4 incidentes       |  Sim|
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selecionado                                        | 2 incidentes                                                          |Sim         |
-| Visual Studio Professional com GitHub Enterprise | VL                                     | 2 incidentes                                                          |Sim         |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                     | 2 incidentes                                                          |Sim         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 2 incidentes                                             |  Sim         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 2 incidentes                                               | Sim         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
@@ -122,7 +122,7 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

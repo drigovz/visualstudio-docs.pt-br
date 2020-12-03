@@ -1,18 +1,18 @@
 ---
-title: Benefício de Conta de Desenvolvedor do Windows em assinaturas do Visual Studio | Microsoft Docs
+title: Benefício da conta de desenvolvedor do Windows nas assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435824"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537715"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 A Conta de Desenvolvedor para Windows, incluída com assinaturas selecionadas do Visual Studio, permite que você envie aplicativos do Windows gratuitos e pagos para a Windows Store.
@@ -36,7 +36,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 7. Crie seu nome de exibição do editor.  Esse será o nome exclusivo que seus clientes verão associado aos seus aplicativos, serviços e suplementos.
 8. Forneça suas informações de contato e o idioma preferencial do email e clique em **Avançar**.
 9. Poderá ser solicitado que você verifique a senha.  Insira-a e clique em **Entrar**.
-10. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Próximo**.
+10. Na página Registro – Pagamento, cole o código que você copiou anteriormente no campo Código Promocional.  A página será atualizada para mostrar que *nenhum pagamento é necessário*.  Clique em **Avançar**.
 11. Examine as informações da conta, examine o Contrato de Desenvolvedor de Aplicativos e clique na caixa de seleção para indicar que você aceita os termos e condições.  Em seguida, clique em **Concluir**.
 12. Clique em **Acessar painel** para começar a usar sua conta de desenvolvedor do Windows!
 
@@ -44,9 +44,9 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluso       |  Sim|
-| Visual Studio Enterprise com GitHub Enterprise   | VL  | Incluso       |  Sim|
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise   | VL  | Incluso       |  Sim|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluso                                                            |Sim|
-| Visual Studio Professional com GitHub Enterprise | VL                                        | Incluso                                                            |Sim|
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                        | Incluso                                                            |Sim|
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA|
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              |  Não disponível                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
@@ -65,7 +65,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

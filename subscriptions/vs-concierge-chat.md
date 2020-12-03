@@ -1,18 +1,18 @@
 ---
-title: Benefício de Atendimento via Chat da Assinatura do Visual Studio | Microsoft Docs
+title: Benefício de chat do concierge na assinatura do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353376"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538092"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Atendimento via Chat em assinaturas do Visual Studio
 O serviço de Atendimento via Chat fornece assistência para a localização de informações sobre produtos e documentação técnica, bem como ajuda para usar os benefícios de assinatura do Visual Studio.
@@ -39,9 +39,9 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise | VL| Disponível       |  Sim          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise | VL| Disponível       |  Sim          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
-| Visual Studio Professional com GitHub Enterprise | VL | Disponível                                                            |  Sim          |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL | Disponível                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Sim          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
@@ -61,7 +61,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

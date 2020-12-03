@@ -1,26 +1,26 @@
 ---
-title: Visual Studio + oferta empresarial do GitHub | Microsoft Docs
+title: Atribuir assinaturas do Visual Studio com o GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
-description: Gerenciando assinaturas na oferta Enterprise do GitHub do Visual Studio +
-ms.openlocfilehash: ef651a75a0daed1e5e975386a26d1bffcf9b4b82
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+description: Gerenciando assinaturas nas assinaturas do Visual Studio com o GitHub Enterprise
+ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467577"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538118"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gerenciar assinaturas do Visual Studio com o GitHub Enterprise
 Os clientes que têm o EA (Enterprise Agreements) com a Microsoft estão qualificados a comprar uma nova oferta de assinatura que reúne as assinaturas do Visual Studio Standard e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
 
-Quando sua organização compra as Assinaturas do Visual Studio com o GitHub Enterprise, elas são provisionadas e gerenciadas em duas partes.
+Quando sua organização adquire assinaturas do Visual Studio com o GitHub Enterprise, elas são provisionadas e gerenciadas em duas partes.
 
 ## <a name="manage-visual-studio-subscriptions"></a>Gerenciar assinaturas do Visual Studio
-Quando sua organização adquire assinaturas do Visual Studio com o GitHub Enterprise, a parte do Visual Studio das assinaturas é provisionada imediatamente e as assinaturas estão disponíveis para atribuição e gerenciamento no portal de [Administração de assinaturas](https://manage.visualstudio.com) do Visual Studio. Depois de atribuir um Visual Studio com a assinatura do GitHub, o assinante receberá um email informando que ele pode acessar sua assinatura do Visual Studio em <https://my.visualstudio.com/subscriptions> .
+Quando sua organização adquire assinaturas do Visual Studio com o GitHub Enterprise, a parte do Visual Studio das assinaturas é provisionada imediatamente e as assinaturas estão disponíveis para atribuição e gerenciamento no portal de [Administração de assinaturas](https://manage.visualstudio.com) do Visual Studio. Depois de atribuir uma assinatura do Visual Studio com o GitHub Enterprise, o assinante receberá um email informando que ele pode acessar sua assinatura do Visual Studio em <https://my.visualstudio.com/subscriptions> .
 
 Para obter mais informações sobre como gerenciar assinaturas do Visual Studio, confira estes tópicos:
 - [Usando o portal de administração](using-admin-portal.md)
@@ -30,12 +30,12 @@ Para obter mais informações sobre como gerenciar assinaturas do Visual Studio,
 - [Superalocações](handle-overclaimed-license.md)
 
 > [!Important]
-> Se as assinaturas do Visual Studio com o GitHub Enterprise forem atribuídas pelos administradores de assinatura do Visual Studio sem comprar primeiro, o GitHub não será notificado de que você deseja criar uma conta empresarial do GitHub.  **Uma compra de pelo menos uma** O Visual Studio com a assinatura do GitHub Enterprise deve ser feito antes que as assinaturas sejam atribuídas.
+> Se as assinaturas do Visual Studio com o GitHub Enterprise forem atribuídas pelos administradores de assinatura do Visual Studio sem comprar primeiro, o GitHub não será notificado de que você deseja criar uma conta empresarial do GitHub.  **Uma compra de pelo menos uma** A assinatura do Visual Studio com o GitHub Enterprise deve ser feita antes que as assinaturas sejam atribuídas.
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>O que é o processo de configuração do Visual Studio com o GitHub Enterprise?
-O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do Visual Studio. Seguindo um Visual Studio com o GitHub Enterprise Purchase, um processo de configuração de conta empresarial do GitHub é iniciado em paralelo com (mas separado do) estabelecendo um contrato no [Manage.VisualStudio.com](https://manage.visualstudio.com). O estabelecimento dessa conta do GitHub Enterprise pode demorar um pouco. 
+O GitHub Enterprise é configurado e gerenciado separadamente das assinaturas do Visual Studio. Após uma assinatura do Visual Studio com o GitHub Enterprise Purchase, um processo de configuração de conta empresarial do GitHub é iniciado em paralelo com (mas separado do) estabelecendo um contrato no [Manage.VisualStudio.com](https://manage.visualstudio.com). O estabelecimento dessa conta do GitHub Enterprise pode demorar um pouco. 
 
-Depois que sua empresa tiver configurado uma conta do GitHub Enterprise, os assinantes atribuídos pelo Visual Studio com as assinaturas do GitHub Enterprise receberão um email do GitHub notificando-os sobre a vinculação de suas assinaturas do Visual Studio. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para receber um convite para a organização apropriada.
+Depois que sua empresa tiver configurado uma conta empresarial do GitHub, os assinantes que receberam assinaturas do Visual Studio com o GitHub Enterprise receberão um email do GitHub notificando-os de que suas assinaturas do Visual Studio foram vinculadas. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para receber um convite para a organização apropriada.
 
 Para obter detalhes adicionais sobre a configuração do GitHub Enterprise, consulte a [documentação do assinante](access-github.md).   
 
@@ -55,7 +55,7 @@ O GitHub está disponível no GitHub.com baseado em nuvem ou no GitHub Enterpris
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 - Obtenha [suporte técnico](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
@@ -71,4 +71,4 @@ Saiba mais sobre como gerenciar assinaturas do Visual Studio.
 - [Excluir assinaturas](delete-license.md)
 - [Determinar o uso máximo](maximum-usage.md)
 
-Para obter mais informações sobre como gerenciar as Assinaturas do Visual Studio com o GitHub Enterprise, confira o [portal de administração de assinaturas](https://visualstudio.microsoft.com/subscriptions-administration/) do Visual Studio.
+Para obter mais informações sobre como gerenciar assinaturas do Visual Studio com o GitHub Enterprise, confira o [portal de administração de assinaturas](https://visualstudio.microsoft.com/subscriptions-administration/)do Visual Studio.

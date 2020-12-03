@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435884"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538079"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.
@@ -60,9 +60,9 @@ Você pode parar a qualquer momento e retomar seu treinamento na próxima sessã
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 meses       |  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | 3 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise   | VL | 3 meses       |  Não.  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |  Não.  Disponível apenas para novos assinantes           |
-| Visual Studio Professional com GitHub Enterprise| VL | 3 meses                                                            |  Não.  Disponível apenas para novos assinantes           |
+| Assinatura Visual Studio Professional com o GitHub Enterprise| VL | 3 meses                                                            |  Não.  Disponível apenas para novos assinantes           |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Não.  Disponível apenas para novos assinantes           |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              |  Não.  Disponível apenas para novos assinantes           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
@@ -83,7 +83,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

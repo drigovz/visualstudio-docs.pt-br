@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Saiba como você pode tirar proveito da área de trabalho virtual do Microsoft Windows por meio de sua assinatura do Visual Studio
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005040"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537949"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Acessar a área de trabalho virtual do Windows em assinaturas 
 Os assinantes do Visual Studio agora podem usar seus créditos individuais de desenvolvimento/teste do Azure para os serviços de área de trabalho virtual do Microsoft Windows.  
@@ -47,9 +47,9 @@ Quando todos os seus pré-requisitos estiverem em vigor, você desejará conclui
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Disponível|  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível|  Sim          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise  | VL | Disponível|  Sim          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                             |  Sim             |
-| Visual Studio Professional com GitHub Enterprise | VL                                       | Disponível                                        |  Sim           |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                       | Disponível                                        |  Sim           |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível|  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                         |  Sim          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
@@ -62,7 +62,7 @@ Quando todos os seus pré-requisitos estiverem em vigor, você desejará conclui
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Azure](/azure/)
 - [Documentação da Área de Trabalho Virtual do Windows](/azure/virtual-desktop/)
 

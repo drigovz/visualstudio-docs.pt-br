@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Saiba mais sobre o benefício de suporte do fórum do Microsoft Tech Community incluído nas assinaturas selecionadas do Visual Studio.
-ms.openlocfilehash: b579f407e61b4cd0b051c603bdef736e7c52fa44
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2bdd6b638ba490c2643374b15bc8b9644d519ebd
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905469"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537806"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Suporte ao fórum do Microsoft Tech Community em assinaturas do Visual Studio
 Conecte-se e entre em contato com usuários e especialistas técnicos da Microsoft sobre práticas recomendadas, arquitetura de design e as atualizações mais recentes.
@@ -44,12 +44,12 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |                                          Nível de Assinatura                                           |     Canais      |    Benefício    | Renovável? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (padrão), NFR<sup>1</sup>                            | VL, Azure, Retail |   Disponível    |    Sim     |
-|                           Visual Studio Enterprise com GitHub Enterprise                           | VL, Azure, Retail |   Disponível    |    Sim     |
+|                           Assinatura Visual Studio Enterprise com o GitHub Enterprise                           | VL, Azure, Retail |   Disponível    |    Sim     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Disponível    |    Sim     |
-|                          Visual Studio Professional com GitHub Enterprise                          | VL, Azure, Retail |   Disponível    |    Sim     |
+|                          Assinatura Visual Studio Professional com o GitHub Enterprise                          | VL, Azure, Retail |   Disponível    |    Sim     |
 |                              Visual Studio Test Professional (Padrão)                               |    VL, Retail     |   Disponível    |    Sim     |
 |                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Disponível    |    Sim     |
-| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal)|        Todos        | Não disponível |     Não     |
+| Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal)|        Tudo        | Não disponível |     Não     |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), Microsoft FTE, profissional mais valioso (MVP), diretor regional (RD), parceiro do setor do Visual Studio (VSIP), BizSpark, imagine, Microsoft Certified Trainer (MCT)*
 
@@ -62,7 +62,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Precisa de assistência para vendas, assinaturas, contas e cobrança nas assinaturas do Visual Studio?  Contate o [Suporte de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

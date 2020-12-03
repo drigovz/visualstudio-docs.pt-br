@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
-ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970303"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537884"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -72,9 +72,9 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, varejo<sup>1</sup> | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise   | VL | 6 meses       |  Não.  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Não.  Disponível apenas para novos assinantes         |
-| Visual Studio Professional com GitHub Enterprise | VL | 3 meses      | Não.  Disponível apenas para novos assinantes         |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL | 3 meses      | Não.  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              | NA         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
@@ -97,7 +97,7 @@ R: Não, a oferta LinkedIn Learning está disponível somente para novos assinan
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)

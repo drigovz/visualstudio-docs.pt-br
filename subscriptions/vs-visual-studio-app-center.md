@@ -1,18 +1,18 @@
 ---
-title: Benefício do App Center do Visual Studio em assinaturas do Visual Studio | Microsoft Docs
+title: Visual Studio App Center benefício em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435732"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537767"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -43,9 +43,9 @@ O App Center é o controle de missões para aplicativos.
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail,  NFR<sup>1</sup> | Incluso       |  Sim          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Incluso       |  Sim          |
+| Assinatura Visual Studio Enterprise com o GitHub Enterprise  | VL | Incluso       |  Sim          |
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Incluso                                                            |Sim |
-| Visual Studio Professional com GitHub Enterprise | VL                                      | Incluso                                                            |Sim |
+| Assinatura Visual Studio Professional com o GitHub Enterprise | VL                                      | Incluso                                                            |Sim |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Incluso                                                            |Sim |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Incluso                                                            |Sim |
 ||
@@ -74,7 +74,7 @@ Agora você deve ser capaz de acessar o portal do App Center e criar a conta.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Visite o [suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 - [Documentação do Visual Studio](/visualstudio/)
 - [Documentação do Azure DevOps](/azure/devops/)
 - [Documentação do Azure](/azure/)
