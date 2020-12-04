@@ -1,5 +1,7 @@
 ---
 title: Notificando a porta | Microsoft Docs
+description: Saiba como a porta é notificada depois de iniciar um programa. Este artigo contém uma descrição detalhada.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff94c20969e77bcc70af2f5a16137e09366a0d7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a838879e7c1eb590bb16cd12a6bf345de8031a
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738320"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606613"
 ---
 # <a name="notify-the-port"></a>Notificar a porta
 Depois de iniciar um programa, a porta deve ser notificada da seguinte maneira:

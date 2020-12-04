@@ -1,7 +1,7 @@
 ---
 title: Ferramentas disponíveis
 description: Lista de todas as ferramentas de devinit que podem ser usadas para personalizar um ambiente de desenvolvimento.
-ms.date: 08/28/2020
+ms.date: 12/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6bb4656dd04db576877cfdddf67869eb6d1eff35
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a8d8409cb6c959b8b2d1e9802a53775f2f360a44
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399948"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606704"
 ---
 # <a name="available-tools"></a>Ferramentas disponíveis
 
@@ -26,11 +26,11 @@ A tabela a seguir contém uma lista de todas as ferramentas disponíveis no mome
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [**azurecli-login**](tool-azurecli-login.md)                                                     | Ferramenta para executar o comando CLI do Azure `az login --device-code` .                                             |
 | [**choco-install**](tool-choco-install.md)                                                       | Ferramenta para instalar pacotes de Chocolatey.                                                                        |
-| [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Ferramenta para atualizar os pacotes de Chocolatey.                                                                       |
+| [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Ferramenta para atualizar os pacotes de Chocolatey.                                                                        |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | Ferramenta para restaurar as dependências e as ferramentas de um projeto .NET.                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | Ferramenta para instalar as ferramentas do .NET Core (por exemplo, dotnet-EF)                                                |
 | [**enable-iis**](tool-enable-iis.md)                                                             | Ferramenta para habilitar recursos do IIS e instalar o pacote de hospedagem mais recente do ASP.NET.                                  |
-| [**msi-instalar**](tool-msi-install.md)                                                           | Ferramenta para instalar arquivos MSI dado um caminho ou URL.                                                              |
+| [**msi-install**](tool-msi-install.md)                                                           | Ferramenta para instalar arquivos MSI dado um caminho ou URL.                                                              |
 | [**npm-install**](tool-npm-install.md)                                                           | Ferramenta para instalar pacotes do NPM.                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | Ferramenta para restaurar os pacotes NuGet.                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | Instala o provedor de credenciais Azure Artifacts.                                                           |
@@ -39,6 +39,7 @@ A tabela a seguir contém uma lista de todas as ferramentas disponíveis no mome
 | [**require-dotnetframeworksdk**](tool-require-dotnetframeworksdk.md)                             | Ferramenta para instalar o SDK do .NET Framework.                                                                     |
 | [**require-mssql**](tool-require-mssql.md)                                                       | Ferramenta para instalar o MS SQL Server 2019.                                                                         |
 | [**require-nodejs**](tool-require-nodejs.md)                                                     | Ferramenta para instalar o NodeJS e o NPM.                                                                             |
+| [**require-nuget**](tool-require-nuget.md)                                                       | Ferramenta para instalar o NuGet.                                                                                      |
 | [**require-npm**](tool-require-npm.md)                                                           | Ferramenta para instalar o NPM.                                                                                        |
 | [**require-psmodule**](tool-require-psmodule.md)                                                 | Ferramenta para instalar módulos do PowerShell da galeria.                                                        |
 | [**require-vcpkg**](tool-require-vcpkg.md)                                                       | Ferramenta para instalar o vcpkg.                                                                                      |

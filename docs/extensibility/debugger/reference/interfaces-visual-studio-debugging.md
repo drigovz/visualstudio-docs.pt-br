@@ -1,5 +1,7 @@
 ---
 title: Interfaces (depuração do Visual Studio) | Microsoft Docs
+description: Use esses recursos para saber mais sobre interfaces principais, interfaces de avaliação de expressão e interfaces de provedor de símbolo na depuração do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715076"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606549"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfaces (depuração no Visual Studio)
 Os métodos são listados em ordem alfabética em cada interface no sumário e na página de interface em ordem vtable.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Principais interfaces](../../../extensibility/debugger/reference/core-interfaces.md)
+- [Interfaces principais](../../../extensibility/debugger/reference/core-interfaces.md)
 
  Descreve as interfaces usadas no mecanismo de depuração.
 

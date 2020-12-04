@@ -1,5 +1,7 @@
 ---
 title: Fornecedores de porta | Microsoft Docs
+description: Este artigo descreve a definição e a função de um fornecedor de porta na arquitetura do depurador no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6313a7afce9ed272177a26d8da1a9d1516c8022e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3226053a23a45c42a45de038e44829d4a150af6
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738302"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606574"
 ---
 # <a name="port-suppliers"></a>Fornecedores de porta
 Na arquitetura do depurador, um *fornecedor de porta*:

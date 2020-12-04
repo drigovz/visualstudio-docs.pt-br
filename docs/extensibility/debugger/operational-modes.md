@@ -1,5 +1,7 @@
 ---
 title: Modos operacionais | Microsoft Docs
+description: Saiba mais sobre os três modos nos quais o IDE pode operar, que são o modo de design, o modo de execução e o modo de interrupção.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738283"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606600"
 ---
 # <a name="operational-modes"></a>Modos operacionais
 Há três modos nos quais o IDE pode operar, da seguinte maneira:

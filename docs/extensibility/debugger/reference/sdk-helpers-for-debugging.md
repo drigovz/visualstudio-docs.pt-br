@@ -1,5 +1,7 @@
 ---
 title: Auxiliares do SDK para depuração | Microsoft Docs
+description: Saiba mais sobre as funções e declarações que são funções auxiliares globais para implementar mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713644"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606535"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 Essas funções e declarações são funções auxiliares globais para implementar mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Espaço reservado|Descrição|
 |-----------------|-----------------|
 |*[GUID do mecanismo de depuração]*|O GUID de um mecanismo de depuração que oferece suporte a exceções.|
-|*[tipos de exceção]*|Um título geral para a subchave que identifica a classe de exceções que pode ser tratada. Nomes típicos são **exceções do C++**, exceções do **Win32**, **exceções do Common Language Runtime**e **verificações nativas em tempo de execução**. Esses nomes também são usados para identificar uma classe de exceção específica para o usuário.|
+|*[tipos de exceção]*|Um título geral para a subchave que identifica a classe de exceções que pode ser tratada. Nomes típicos são **exceções do C++**, exceções do **Win32**, **exceções do Common Language Runtime** e **verificações de Run-Time nativas**. Esses nomes também são usados para identificar uma classe de exceção específica para o usuário.|
 |*Exception*|Um nome para uma exceção: por exemplo, **_com_error** ou **controle-Break**. Esses nomes também são usados para identificar uma exceção específica ao usuário.|
 
 ## <a name="requirements"></a>Requisitos

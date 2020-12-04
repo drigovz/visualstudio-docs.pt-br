@@ -1,5 +1,7 @@
 ---
 title: Programas | Microsoft Docs
+description: Este artigo descreve a definição e a função de um programa na arquitetura do depurador no Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fd1db5add74d2d94467e1f369916feb5f30d4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf0d3adb174e9b13cb09f9506927217326890c32
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738201"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606509"
 ---
 # <a name="programs"></a>Programas
 Na arquitetura do depurador, um *programa*:

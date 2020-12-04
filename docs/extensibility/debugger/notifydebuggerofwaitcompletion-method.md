@@ -1,5 +1,7 @@
 ---
 title: Método NotifyDebuggerOfWaitCompletion | Microsoft Docs
+description: Saiba mais sobre o método NotifyDebuggerOfWaitCompletion, que é um espaço reservado usado como um destino de ponto de interrupção pelo depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8963e29a067754c0e8c89b9db336b239ac682ce1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35571b28287ecdea48a2ff089cb25cf3ed742d60
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738339"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606626"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Método NotifyDebuggerOfWaitCompletion
 Método de espaço reservado usado como um destino de ponto de interrupção pelo depurador. Este método não deve ser embutido nem ser otimizado.

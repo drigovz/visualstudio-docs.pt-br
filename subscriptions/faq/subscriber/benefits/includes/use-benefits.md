@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 10/13/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 6533a68c334f52310c20a79cf1e6d93d0b967be0
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 3c13e82af88030a33d5bedc6b8e9d8f518b8c88e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92526132"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560755"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Como fazer para usar meus benefícios?
 
@@ -26,7 +26,7 @@ As assinaturas do Visual Studio com o GitHub Enterprise são gerenciadas em duas
 - A assinatura do Visual Studio (Enterprise ou Professional)  
 - GitHub Enterprise  
 
-Quando a atribuição de uma assinatura do Visual Studio com o GitHub for feita, você receberá um email avisando que o administrador de Assinaturas do Visual Studio atribuiu uma assinatura a você. Nesse ponto, você poderá visualizar os benefícios da assinatura disponíveis em <https://my.visualstudio.com/benefits>. Isso inclui o benefício do GitHub Enterprise. 
+Quando você receber a atribuição de uma assinatura do Visual Studio com o GitHub Enterprise, receberá um email avisando que o administrador de Assinaturas do Visual Studio atribuiu uma assinatura a você. Nesse ponto, você poderá visualizar os benefícios da assinatura disponíveis em <https://my.visualstudio.com/benefits>. Isso inclui o benefício do GitHub Enterprise. 
 
 O GitHub Enterprise é gerenciado por um administrador do GitHub separadamente das assinaturas do Visual Studio. Quando sua empresa tiver configurado uma conta do GitHub Enterprise, você receberá um email do GitHub notificando que sua assinatura do Visual Studio foi vinculada e que o bloco de benefícios será atualizado. A configuração dessa conta pode demorar um pouco e depende da conclusão do processo de instalação pela sua empresa. Depois que os assinantes receberem esse email, eles poderão entrar em contato com o administrador da organização do GitHub para solicitarem um convite para sua organização e/ou repositório. 
 
