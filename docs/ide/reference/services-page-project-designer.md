@@ -1,5 +1,7 @@
 ---
 title: Página Serviços, Designer de Projeto
+description: Saiba como usar a página serviços do designer de projeto para habilitar e configurar serviços de aplicativo cliente para seu projeto.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593558"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560792"
 ---
 # <a name="services-page-project-designer"></a>Página Serviços, Designer de Projeto
 
@@ -33,7 +35,7 @@ Para acessar a página **Serviços**, selecione um nó do projeto no **Gerenciad
 
 ## <a name="uielement-list"></a>Lista de elementos de interface do usuário
 
- **Configuração**
+ **Configuration**
 
 Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) ou [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
@@ -75,7 +77,7 @@ Abre [Configurações Avançadas para a Caixa de Diálogo Serviços](../../ide/r
 
 ## <a name="see-also"></a>Confira também
 
-- [Serviços de aplicativos cliente](/dotnet/framework/common-client-technologies/client-application-services)
+- [Serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Caixa de diálogo Configurações Avançadas para Serviços](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Como configurar serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Página de Compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

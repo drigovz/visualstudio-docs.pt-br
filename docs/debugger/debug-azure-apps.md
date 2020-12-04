@@ -1,5 +1,7 @@
 ---
 title: Depurar serviços do Azure | Microsoft Docs
+description: Você pode depurar os serviços do Azure com o Visual Studio. Use os links neste artigo para saber mais sobre as várias maneiras de fazer isso.
+ms.custom: SEO-VS-2020
 ms.date: 09/14/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 18635e4ecbbdb3c3c52be20b197c01168cdb12ff
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 36619ae1b1cfc1d380eb85a3e7a2273493ebaa13
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878729"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560363"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>Depurar serviços do Azure no Visual Studio
 
@@ -37,6 +39,6 @@ Para depuração remota:
 
 - ASP.NET no Azure Service Fabric, consulte [depurar um aplicativo de Service Fabric remoto](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Depurando no Visual Studio](../debugger/index.yml)

@@ -1,5 +1,7 @@
 ---
 title: Aliases de comando
+description: Saiba como usar aliases de comando para digitar menos caracteres quando desejar executar um comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596405"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561065"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 
@@ -44,7 +46,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Alternar Ponto de Interrupção|bp|Debug.ToggleBreakPoint|
 |janela de Pilha de Chamadas|CallStack|Debug.CallStack|
 |Limpar Indicadores|ClearBook|Edit.ClearBookmarks|
-|Feche|Feche|File.Close|
+|Fechar|Fechar|File.Close|
 |Fechar Todos os Documentos|CloseAll|Window.CloseAllDocuments|
 |Limpar Tudo|cls|Edit.ClearAll|
 |Modo de comando|cmd|View.CommandWindow|
@@ -65,7 +67,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |[Comando Evaluate Statement](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Fechar|Fechar|File.Exit|
 |Formatar Seleção|format|Edit.FormatSelection|
-|Tela inteira|Tela Inteira|View.FullScreen|
+|Tela inteira|FullScreen|View.FullScreen|
 |[Comando iniciar](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Comando ir para](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir para Chave|GotoBrace|Edit.GotoBrace|
@@ -78,7 +80,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Excluir linha|LineDel|Edit.LineDelete|
 |Listar Membros|ListMembers|Edit.ListMembers|
 |Janela Locais|Locais|Debug.Locals|
-|[Comando de saída da janela comando de log](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
+|[Comando de saída da janela comando de log](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
 |Modo de marca da janela Comando|marca|Tools.CommandWindowMarkMode|
 |Janela Memória|Memória Memory1|Debug.Memory1|
 |Janela Memória 2|Memory2|Debug.Memory2|
@@ -98,7 +100,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Indicador Anterior|PrevBook|Edit.PreviousBookmark|
 |Imprimir arquivo|print|File.Print|
 |Janela Propriedades|props|View.PropertiesWindow|
-|Stop|q|Debug.StopDebugging|
+|Parar|q|Debug.StopDebugging|
 |Refaz|refazer|Edit.Redo|
 |Janela Registros|registros|Debug.Registers|
 |Executar até o cursor|rtc|Debug.RunToCursor|
@@ -120,7 +122,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Colocar em Maiúsculas|Ucase|Edit.MakeUppercase|
 |Desfazer|desfazer|Edit.Undo|
 |Cancelar Tabulação da Seleção|Cancelar Tabulação|Edit.UntabifySelection|
-|Janela Inspecionar|Inspeção|Debug.WatchN|
+|Janela Inspecionar|Assistir|Debug.WatchN|
 |Ativar/Desativar Quebra Automática de Linha|WordWrap|Edit.ToggleWordWrap|
 |Listar Processos|&#124;|Debug.ListProcesses|
 |[Comando listar threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|

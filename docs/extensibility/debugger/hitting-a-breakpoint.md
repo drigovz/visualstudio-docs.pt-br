@@ -1,5 +1,7 @@
 ---
 title: Atingir um ponto de interrupção | Microsoft Docs
+description: Este artigo descreve o processo que ocorre quando o mecanismo de depuração atinge um ponto de interrupção durante a execução ou a depuração.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e75eb1e807e72f3bd035b5dd0534860f5fd8df2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc796689b56518948c62196407ddeaefe3ea822f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738572"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560844"
 ---
 # <a name="hit-a-breakpoint"></a>Atingir um ponto de interrupção
 A seção a seguir descreve o processo quando o mecanismo de depuração (DE) atinge um ponto de interrupção durante a execução ou a depuração:

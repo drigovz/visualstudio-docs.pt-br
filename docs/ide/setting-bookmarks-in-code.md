@@ -1,5 +1,7 @@
 ---
 title: Definir indicadores de código
+description: Saiba como usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente a um local específico ou ir para frente e para trás entre locais.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595430"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560857"
 ---
 # <a name="set-bookmarks-in-code"></a>Definir indicadores no código
 
-Você pode usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente para um local específico ou alternar entre locais. Os comandos e ícones de indicador estão disponíveis em dois locais: a **janela de indicadores** (janela**Exibir**  >  **indicador**) e a barra de ferramentas do editor de texto.
+Você pode usar indicadores para marcar linhas em seu código para que você possa retornar rapidamente para um local específico ou alternar entre locais. Os comandos e ícones de indicador estão disponíveis em dois locais: a **janela de indicadores** (janela **Exibir**  >  **indicador**) e a barra de ferramentas do editor de texto.
 
 ![Barra de ferramentas de indicador](media/bookmark-toolbar.png)
 

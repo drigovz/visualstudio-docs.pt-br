@@ -1,5 +1,7 @@
 ---
 title: Criar visualizadores de dados personalizados | Microsoft Docs
+description: Os visualizadores do depurador do Visual Studio são componentes que exibem dados. Saiba mais sobre os seis visualizadores padrão e sobre como você pode escrever ou baixar outros.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280870"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560675"
 ---
 # <a name="create-custom-data-visualizers"></a>Criar visualizadores de dados personalizados
 
@@ -99,5 +101,5 @@ No código do lado do depurador:
 - [Passo a passo: Escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Como instalar um visualizador](../debugger/how-to-install-a-visualizer.md)
 - [Como testar e depurar um visualizador](../debugger/how-to-test-and-debug-a-visualizer.md)
-- [Referência da API do Visualizador](../debugger/visualizer-api-reference.md)
+- [Referência da API do visualizador](../debugger/visualizer-api-reference.md)
 - [Exibir dados no depurador](../debugger/viewing-data-in-the-debugger.md)

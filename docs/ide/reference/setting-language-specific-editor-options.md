@@ -1,5 +1,7 @@
 ---
 title: Definindo opções do Editor específicas do idioma
+description: Saiba como definir uma variedade de opções do editor de texto que se aplicam a linguagens de programação específicas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590833"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560740"
 ---
 # <a name="set-language-specific-editor-options"></a>Definir opções do editor específicas a um idioma
 

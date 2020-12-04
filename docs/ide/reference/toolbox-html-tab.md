@@ -1,5 +1,7 @@
 ---
 title: Caixa de Ferramentas, Guia HTML
+description: Saiba mais sobre os componentes HTML que você encontrará na guia HTML da janela caixa de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f91e832e33d6a65d9fc70ee594d0c0670242306e
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596431"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560454"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
@@ -168,7 +170,7 @@ Ao arrastar **Área de texto** para a superfície do modo de exibição de Desig
 > [!IMPORTANT]
 > É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validating User Input in ASP.NET Web Pages (Razor) Sites](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) (Validando a entrada do usuário em Páginas da Web do ASP.NET (Razor)).
 
-**Table**
+**Tabela**
 
 ![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 

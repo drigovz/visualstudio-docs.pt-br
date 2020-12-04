@@ -1,5 +1,7 @@
 ---
 title: Caixa de Ferramentas, Guia Componentes
+description: Saiba mais sobre os componentes que você encontrará na guia componentes da janela caixa de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597302"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560935"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
@@ -80,7 +82,7 @@ Cria uma instância do componente <xref:System.IO.Ports.SerialPort> que fornece 
 
 Cria uma instância do componente <xref:System.ServiceProcess.ServiceController>, que pode ser usada para manipular serviços existentes, incluindo a inicialização e a interrupção de serviços e o envio de comandos para eles.
 
-**Timer**
+**Temporizador**
 
 Cria uma instância do componente <xref:System.Windows.Forms.Timer>, que pode ser usada para adicionar funcionalidade baseada em tempo aos aplicativos baseados no Windows. Para obter mais informações, confira [Componente Timer](/dotnet/framework/winforms/controls/timer-component-windows-forms).
 

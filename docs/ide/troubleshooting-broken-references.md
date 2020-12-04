@@ -1,6 +1,6 @@
 ---
 title: Solução de problemas de referências desfeitas
-description: Saiba como solucionar problemas de referências quebradas que podem ser causadas por algo diferente de seus aplicativos impossibilidade de encontrar o componente referenciado.
+description: Saiba como solucionar problemas de referências quebradas que podem ser causadas por algo diferente da incapacidade do seu aplicativo de encontrar o componente referenciado.
 ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6c47f8c399c89df9bf91879abc7cf926eac925bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479167"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560233"
 ---
 # <a name="troubleshoot-broken-references"></a>Solução de problemas de referências desfeitas
 

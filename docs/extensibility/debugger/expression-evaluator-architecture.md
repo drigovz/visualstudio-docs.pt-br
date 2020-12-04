@@ -1,5 +1,7 @@
 ---
 title: Arquitetura do avaliador de expressão | Microsoft Docs
+description: Saiba mais sobre como integrar uma linguagem proprietária ao pacote de depuração do Visual Studio, incluindo o avaliador de expressão e interfaces de provedor/associador de símbolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aac782c653f230d5598a49d43eb70f548de6dc41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738701"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560155"
 ---
 # <a name="expression-evaluator-architecture"></a>Arquitetura do avaliador de expressão
 > [!IMPORTANT]
@@ -37,7 +39,7 @@ ms.locfileid: "80738701"
 ### <a name="evaluate-the-expression"></a>Avaliar a expressão
  O Visual Studio chama [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) para avaliar a expressão analisada. Ambos os métodos chamam [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ( `IDebugExpression2::EvaluateSync` chama o método imediatamente, enquanto `IDebugExpression2::EvaluateAsync` chama o método por meio de um thread em segundo plano) para avaliar a expressão analisada e retornar uma interface [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) que representa o valor e o tipo da expressão analisada. `IDebugParsedExpression::EvaluateSync` usa o SH, o endereço e o associado fornecidos para converter a expressão analisada em um valor real, representado pela `IDebugProperty2` interface.
 
-### <a name="for-example"></a>Por exemplo,
+### <a name="for-example"></a>Por exemplo
  Depois que um ponto de interrupção é atingido em um programa em execução, o usuário escolhe exibir uma variável na caixa de diálogo **QuickWatch** . Essa caixa de diálogo mostra o nome da variável, seu valor e seu tipo. Normalmente, o usuário pode alterar o valor.
 
  Quando a caixa de diálogo **QuickWatch** é mostrada, o nome da variável que está sendo examinada é enviado como texto para [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Isso retorna um objeto [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) que representa a expressão analisada, nesse caso, a variável. Em seguida, [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) é chamado para produzir um `IDebugProperty2` objeto que representa o valor e o tipo da variável, bem como seu nome. São essas informações exibidas.

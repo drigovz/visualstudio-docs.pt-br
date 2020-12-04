@@ -1,16 +1,18 @@
 ---
 title: Referência do Team Explorer
+description: Saiba mais sobre as várias funções em Team Explorer para gerenciar o trabalho e coordenar com outros membros da equipe para desenvolver um projeto.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928076"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560987"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
 
@@ -100,12 +102,12 @@ Consulte:
 
 ## <a name="settings-page"></a>Página de configurações
 
-A página **Configurações** permite configurar funcionalidades administrativas para um projeto ou uma coleção de projetos. Confira os seguintes artigos:
+A página **Configurações** permite configurar funcionalidades administrativas para um projeto ou uma coleção de projetos. Veja os artigos a seguir:
 
-| Projeto | Coleção de projetos | Outros |
+| Project | Coleção de projetos | Outro |
 | - | - | - |
 | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Segurança, controle do código-fonte (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Áreas de itens de trabalho](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterações de item de trabalho](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Configurações do portal](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertas do projeto](/azure/devops/notifications/howto-manage-team-notifications) | [Segurança, associação a um grupo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controle do código-fonte (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gerenciador de Modelos de Processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Configurações globais do Git](/azure/devops/repos/git/git-config)<br/>[Configurações do repositório Git](/azure/devops/repos/git/git-config) |
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Conectar-se a projetos no Team Explorer](../../ide/connect-team-project.md)

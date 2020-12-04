@@ -1,5 +1,7 @@
 ---
 title: Página Configurações, Designer de Projeto
+description: Saiba como usar a página Configurações do designer de projeto para especificar as configurações de aplicativo de um projeto.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566768"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560311"
 ---
 # <a name="settings-page-project-designer"></a>Página de configurações, Designer de Projeto
 
@@ -29,7 +31,7 @@ Para acessar a página **Configurações**, selecione um nó do projeto no **Ger
 
 A barra de cabeçalho na parte superior da página **Configurações** contém vários controles:
 
-**Novamente**
+**Sincronizar**
 
 **Sincronizar** restaura as configurações no escopo do usuário que o aplicativo usa no tempo de execução ou durante a depuração para seus valores padrão, conforme a definição no tempo de design. Para restaurar os dados, remova os arquivos específicos do aplicativo gerados pelo tempo de execução do disco, não dos dados do projeto.
 

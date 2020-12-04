@@ -1,6 +1,7 @@
 ---
 title: Inspecionar dados usando janelas do depurador | Microsoft Docs
-ms.custom: seodec18
+description: Há muitos tipos de janelas de depurador que fornecem informações. Este artigo fornece uma lista dos tipos. Para cada um, há um link para mais informações.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188545"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560727"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecionar dados usando janelas do depurador no Visual Studio
 
@@ -25,7 +26,7 @@ Você pode abrir a maioria das janelas do depurador enquanto estiver Depurando s
 |Pontos de interrupção|CTRL+ALT+B|[Usar pontos de interrupção](../debugger/using-breakpoints.md)|
 |Configurações de exceção|CTRL + ALT + E|[Gerenciar exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)|
 |Saída|CTRL+ALT+O|[Janela de Saída](../ide/reference/output-window.md)|
-|Inspeção|CTRL + ALT + W, (1, 2, 3, 4)|[Janelas de Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)|
+|Assistir|CTRL + ALT + W, (1, 2, 3, 4)|[Janelas de Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)|
 |QuickWatch|SHIFT+F9|[Janelas de Inspeção e QuickWatch](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|CTRL+ALT+V, A|[Janelas autos e locais](../debugger/autos-and-locals-windows.md)|
 |Locais|CTRL+ALT+V, L|[Janelas autos e locais](../debugger/autos-and-locals-windows.md)|

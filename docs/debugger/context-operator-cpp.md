@@ -1,5 +1,7 @@
 ---
 title: Operador de contexto no depurador (C++) | Microsoft Docs
+description: Talvez seja necessário fornecer contexto para um nome C++ que esteja em um escopo externo e que esteja oculto por um nome local. Saiba como usar o operador de contexto para fazer isso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564698"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559752"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operador de contexto no depurador do Visual Studio (C++)
 Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, um nome de variável ou uma expressão. O operador de contexto é útil para especificar um nome de um escopo externo que, de outra forma, é oculto por um nome local.

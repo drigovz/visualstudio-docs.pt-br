@@ -1,5 +1,7 @@
 ---
 title: Obtendo uma porta | Microsoft Docs
+description: Saiba como o Visual Studio fornece uma porta para o mecanismo de depuração para registrar nós de programa com a porta e atender a solicitações de informações de processo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738634"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560042"
 ---
 # <a name="get-a-port"></a>Obter uma porta
 Uma porta representa uma conexão com um computador no qual os processos estão em execução. Esse computador pode ser o computador local ou um computador remoto (que poderia estar executando um sistema operacional não baseado no Windows; consulte [portas](../../extensibility/debugger/ports.md) para obter mais informações).

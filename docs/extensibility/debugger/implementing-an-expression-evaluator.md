@@ -1,5 +1,7 @@
 ---
 title: Implementando um avaliador de expressão | Microsoft Docs
+description: Saiba mais sobre como avaliar uma expressão, que envolve o mecanismo de depuração, o provedor de símbolos, o objeto de fichário e o avaliador de expressão.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738547"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559960"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementar um avaliador de expressão
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738547"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  O EE executa [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que exibe as informações apropriadas na janela **locais**, **inspecionar**ou **imediato** .
+  O EE executa [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornece o mecanismo para descrever o resultado de uma avaliação de expressão, como uma variável local, um primitivo ou um objeto para o Visual Studio, que exibe as informações apropriadas na janela **locais**, **inspecionar** ou **imediato** .
 
   O SP é fornecido ao EE pelo DE quando ele solicita informações. O SP executa interfaces que descrevem endereços e campos, como as seguintes interfaces e seus derivados:
 

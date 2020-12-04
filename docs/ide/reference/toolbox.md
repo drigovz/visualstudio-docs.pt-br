@@ -1,5 +1,7 @@
 ---
 title: Janela caixa de ferramentas
+description: Saiba mais sobre a janela caixa de ferramentas e como ela exibe os controles que você pode adicionar aos projetos do Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285317"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560272"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 
 A janela **Caixa de Ferramentas** exibe os controles que você pode adicionar a projetos do Visual Studio. Para abrir a **caixa de ferramentas**, escolha **Exibir**  >  **caixa de ferramentas** na barra de menus ou pressione **Ctrl** + **ALT** + **X**.
 
-![Janela caixa de ferramentas](media/vs-2019/toolbox.png "Captura de tela da janela caixa de ferramentas")
+![Captura de tela da janela caixa de ferramentas mostrando as opções na seção contêineres.](media/vs-2019/toolbox.png "Captura de tela da janela caixa de ferramentas")
 
 Você pode arrastar e soltar diferentes controles na superfície do designer que você está usando, redimensionar e posicionar os controles.
 
@@ -37,7 +39,7 @@ A versão do .NET direcionada pelo projeto também afeta o conjunto de controles
 
 ::: moniker range="vs-2019"
 
-![Janela caixa de ferramentas](media/vs-2019/toolbox-change-dotnet-version.png "Captura de tela da caixa de diálogo onde você pode alterar a versão do .NET")
+![Captura de tela da caixa de diálogo do aplicativo mostrando as opções na lista suspensa estrutura de destino.](media/vs-2019/toolbox-change-dotnet-version.png "Captura de tela da caixa de diálogo onde você pode alterar a versão do .NET")
 
 ::: moniker-end
 
@@ -46,7 +48,7 @@ A versão do .NET direcionada pelo projeto também afeta o conjunto de controles
 Por padrão, a **caixa de ferramentas** é recolhida ao longo do lado esquerdo do IDE do Visual Studio e aparece quando o cursor é movido sobre ele. É possível fixar a **Caixa de Ferramentas** (clicando no ícone **Fixar** da barra de ferramentas) para que ela permaneça aberta enquanto você move o cursor. Você também pode desencaixar a janela **Caixa de Ferramentas** e arrastá-la para qualquer lugar na tela. Você pode encaixar, desencaixar e ocultar a **Caixa de Ferramentas**, clicando com o botão direito do mouse na barra de ferramentas e selecionando uma das opções.
 
 > [!TIP]
-> Se a caixa de ferramentas não aparecer mais como recolhida ao longo do lado esquerdo do IDE do Visual Studio, você poderá adicioná- **Window**la de volta escolhendo  >  **layout da janela de redefinição** de janela na barra de menus.
+> Se a caixa de ferramentas não aparecer mais como recolhida ao longo do lado esquerdo do IDE do Visual Studio, você poderá adicioná- **Window** la de volta escolhendo  >  **layout da janela de redefinição** de janela na barra de menus.
 
 Você pode reorganizar os itens em uma guia da **caixa de ferramentas** ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto do clique com o botão direito do mouse:
 

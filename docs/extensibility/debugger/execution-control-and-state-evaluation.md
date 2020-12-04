@@ -1,5 +1,7 @@
 ---
 title: Controle de execução e avaliação de estado | Microsoft Docs
+description: Saiba como a depuração do Visual Studio baseia seu controle de execução em eventos enviados entre componentes do depurador.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc76ae97e8baa6ce78dd4d565109d6a19e2051e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 021fab07cfaf1ec17821a8ef9a33a03f2d6ec714
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738747"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560896"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Controle de execução e avaliação de estado
 A depuração de um aplicativo requer a implementação desses recursos de controle de execução como depuração em funções, parando em pontos de interrupção e continuando a execução. A depuração do Visual Studio baseia seu controle de execução em eventos enviados entre componentes do depurador.

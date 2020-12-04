@@ -1,5 +1,7 @@
 ---
 title: Criar minidespejos com todas as pilhas de chamadas
+description: Saiba como criar minidespejos para um processo do Visual Studio que inclui informações para todas as pilhas de chamadas.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 8af2ef642a1c2422d470c716e14dca7d2e0168eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5cf6add1a20a0ee45ec69ade0d5f2839483bb9f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770845"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560870"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Criar minidespejos para um processo do Visual Studio com todas as pilhas de chamadas
 
@@ -40,7 +42,7 @@ Em alguns casos, a Microsoft pode solicitar o minidespejo de um processo em exec
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Obter as pilhas de chamadas do minidespejo
 
 1. Abra o arquivo de despejo no Visual Studio.
-1. Vá para **ferramentas**  >  **Opções**  >  **depuração**de  >  **símbolos** e verifique se os **servidores de símbolos da Microsoft** estão marcados nos locais do arquivo de **símbolo (. pdb)**.
+1. Vá para **ferramentas**  >  **Opções**  >  **depuração** de  >  **símbolos** e verifique se os **servidores de símbolos da Microsoft** estão marcados nos locais do arquivo de **símbolo (. pdb)**.
 1. Abra a janela **Comando** (**Exibição** > **Outras janelas** > **Janela de Comando**)
 1. Digite '~*k'. A janela exibe as pilhas de chamadas de todos os threads.
 1. Copie todo o texto da Janela de Comando e salve em um arquivo de texto.

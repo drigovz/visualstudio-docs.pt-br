@@ -1,6 +1,6 @@
 ---
 title: Sincronizar as configurações
-description: Saiba como sincronizar as configurações do Visual estúdios em vários computadores conectando-se à mesma conta de personalização.
+description: Saiba como sincronizar as configurações do Visual Studio em vários computadores entrando na mesma conta de personalização.
 ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479191"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560909"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 

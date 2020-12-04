@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341455"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559804"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
@@ -34,13 +34,13 @@ Para habilitar o runtime de script do .NET 4.x, execute as seguintes etapas:
 
 1. Abra as PlayerSettings no Inspetor do Unity, selecionando **Editar > Configurações do projeto > Player**.
 
-1. No cabeçalho **Configuração** , clique no menu suspenso **Versão do Runtime de Script** e selecione **Equivalente ao .NET 4.x**. Será solicitado que você reinicie o Unity.
+1. No cabeçalho **Configuração**, clique no menu suspenso **Versão do Runtime de Script** e selecione **Equivalente ao .NET 4.x**. Será solicitado que você reinicie o Unity.
 
 ![Selecionar o equivalente do .NET 4.x](media/vs/vstu-scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Escolher entre perfis do .NET 4.x e do .NET Standard 2.0
 
-Depois de mudar para o runtime de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings ( **Editar &gt; Configurações do projeto &gt; Player** ). Há duas opções:
+Depois de mudar para o runtime de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings (**Editar &gt; Configurações do projeto &gt; Player**). Há duas opções:
 
 * **.NET Standard 2,0**. Esse perfil corresponde ao [perfil do .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado pela .NET Foundation. O Unity recomenda o .NET Standard 2.0 para novos projetos. Ele é menor do que o .NET 4.x, o que é vantajoso para plataformas com restrições de tamanho. Além disso, o Unity se comprometeu a dar suporte a esse perfil em todas as plataformas compatíveis com o Unity.
 
@@ -50,7 +50,7 @@ Você pode ler mais sobre essas opções na [postagem de blog](https://blogs.uni
 
 ### <a name="adding-assembly-references-when-using-the-net-4x-api-compatibility-level"></a>Adicionar referências de assembly ao usar o nível de compatibilidade de API do .NET 4.x
 
-Ao usar a configuração do .NET Standard 2.0 no menu suspenso **Nível de compatibilidade de API** , todos os assemblies no perfil de API são referenciados e utilizáveis. No entanto, ao usar o perfil maior do .NET 4.x, alguns dos assemblies que acompanham o Unity não são referenciados por padrão. Para usar essas APIs, você deve adicionar manualmente uma referência de assembly. Você pode exibir os assemblies com os quais o Unity é fornecido no diretório **MonoBleedingEdge/lib/mono** da instalação do editor do Unity:
+Ao usar a configuração do .NET Standard 2.0 no menu suspenso **Nível de compatibilidade de API**, todos os assemblies no perfil de API são referenciados e utilizáveis. No entanto, ao usar o perfil maior do .NET 4.x, alguns dos assemblies que acompanham o Unity não são referenciados por padrão. Para usar essas APIs, você deve adicionar manualmente uma referência de assembly. Você pode exibir os assemblies com os quais o Unity é fornecido no diretório **MonoBleedingEdge/lib/mono** da instalação do editor do Unity:
 
 ![Diretório MonoBleedingEdge](media/vs/vstu-monobleedingedge.png)
 
@@ -58,9 +58,9 @@ Por exemplo, se estiver usando o perfil do .NET 4.x e desejar usar `HttpClient`,
 
 ![referência de assembly ausente](media/vs/vstu-missing-reference.png)
 
-O Visual Studio regenera os arquivos .csproj e .sln para projetos do Unity cada vez que eles são abertos. Como resultado, não será possível adicionar referências de assembly diretamente no Visual Studio, porque elas serão perdidas ao reabrir o projeto. Em vez disso, é preciso usar um arquivo de texto especial denominado **mcs.rsp** :
+O Visual Studio regenera os arquivos .csproj e .sln para projetos do Unity cada vez que eles são abertos. Como resultado, não será possível adicionar referências de assembly diretamente no Visual Studio, porque elas serão perdidas ao reabrir o projeto. Em vez disso, um arquivo de texto especial chamado **CSC. rsp** deve ser usado:
 
-1. Crie um novo arquivo de texto chamado **mcs.rsp** no diretório **Ativos** da raiz do projeto do Unity.
+1. Crie um novo arquivo de texto chamado **CSC. rsp** no diretório de **ativos** raiz do projeto de Unity.
 
 1. Na primeira linha no arquivo de texto vazio, digite: `-r:System.Net.Http.dll` e, em seguida, salve o arquivo. Você pode substituir "System.Net.Http.dll" com qualquer assembly incluído no qual uma referência pode estar ausente.
 

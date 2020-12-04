@@ -1,5 +1,7 @@
 ---
 title: Comando Ativar/Desativar Ponto de Interrupção
+description: Saiba como usar o comando Alternar ponto de interrupção para ativar ou desativar o ponto de interrupção, dependendo de seu estado atual, no local atual do arquivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65144271f91d518dd6649fa1e97fc627d1b0009
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597315"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560961"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Ativar/Desativar Ponto de Interrupção
 Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo.

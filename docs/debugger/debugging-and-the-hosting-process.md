@@ -1,5 +1,7 @@
 ---
 title: Depuração e o processo de hospedagem | Microsoft Docs
+description: Para versões do Visual Studio anteriores à 2017, use o processo de hospedagem para melhorar o desempenho do depurador e para acessar alguns recursos do depurador.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b6f2650da6a83d936869d01fdc661bc9ddf8fc0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188461"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560688"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuração e o processo de hospedagem
 O processo de hospedagem do Visual Studio melhora o desempenho do depurador e habilita novos recursos do depurador, como a depuração de confiança parcial e a avaliação de expressão de tempo de design. Você pode desabilitar o processo de hospedagem se isso for necessário. As seções a seguir descrevem algumas diferenças entre a depuração com e sem o processo de hospedagem.

@@ -1,5 +1,7 @@
 ---
 title: Continuando a execução após uma exceção | Microsoft Docs
+description: Saiba o que acontece quando o depurador interrompe a execução devido a uma exceção sem tratamento. Talvez você possa continuar a execução no mesmo thread.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350674"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559375"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 Quando o depurador interromper a execução devido a uma exceção, você verá o **auxiliar de exceção**, por padrão. Se você tiver desabilitado **o auxiliar de exceção** na caixa de diálogo **Opções** , verá o **Assistente de exceção** (C# ou Visual Basic) ou a caixa de diálogo de **exceção** (C++).

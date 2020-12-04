@@ -1,5 +1,7 @@
 ---
 title: Criar exibições personalizadas de objetos gerenciados | Microsoft Docs
+description: O depurador do Visual Studio exibe dados em suas janelas variáveis. Saiba como personalizar como os tipos de dados, incluindo tipos personalizados, são exibidos.
+ms.custom: SEO-VS-2020
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2248a361837f664b0f78acfe61f6d7588f5258b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188641"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560207"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Criar exibições personalizadas de objetos gerenciados (C#, Visual Basic, F #, C++/CLI)
 Você pode personalizar o modo como o Visual Studio exibe tipos de dados nas janelas variáveis do depurador.

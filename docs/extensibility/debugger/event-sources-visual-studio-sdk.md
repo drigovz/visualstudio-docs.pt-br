@@ -1,5 +1,7 @@
 ---
 title: Origens de eventos (SDK do Visual Studio) | Microsoft Docs
+description: 'Saiba mais sobre as duas fontes de eventos na depuração do Visual Studio: o mecanismo de depuração e o Gerenciador de depuração de sessão.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738778"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559661"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Origens de eventos (SDK do Visual Studio)
 Há duas fontes de eventos: o mecanismo de depuração (DE) e o SDM (Gerenciador de depuração de sessão). Os eventos enviados de um DE têm um mecanismo não nulo, enquanto os eventos enviados do SDM têm um mecanismo nulo.

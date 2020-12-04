@@ -1,5 +1,7 @@
 ---
 title: Caixa de Ferramentas, Guia Dados
+description: Saiba mais sobre os objetos de dados que você encontrará na guia dados da janela caixa de ferramentas.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590248"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561078"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de ferramentas, guia Dados
 
@@ -30,7 +32,7 @@ Exibe objetos de dados que é possível adicionar a formulários e componentes. 
 
 Para acessar diretamente a página de referência .NET de um componente, pressione **F1** no item na **Caixa de ferramentas** ou no item de componente na bandeja do designer.
 
-|Name|Descrição|
+|Nome|Descrição|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|Adiciona uma instância de um conjunto de dados tipado ou não tipado ao formulário ou ao componente. Quando você arrasta esse objeto para um designer, ele exibe uma caixa de diálogo que permite selecionar uma classe de conjunto de dados tipado existente ou especificar se você deseja criar um conjunto de dados novo, em branco e não tipado. **Observação:** não use o objeto <xref:System.Data.DataSet> na **Caixa de Ferramentas** para criar um novo esquema e uma nova classe de conjunto de dados tipado. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|
 |<xref:System.Windows.Forms.DataGridView>|Fornece uma maneira avançada e flexível para exibir dados em um formato de tabela.|
@@ -45,4 +47,4 @@ Para acessar diretamente a página de referência .NET de um componente, pressio
 - [Associar controles a dados no Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associar controles do Windows Forms a dados no Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Editar dados em conjuntos de dados](../../data-tools/edit-data-in-datasets.md)
-- [Validando dados em conjuntos de dados](../../data-tools/validate-data-in-datasets.md)
+- [Validar dados em conjuntos de dados](../../data-tools/validate-data-in-datasets.md)

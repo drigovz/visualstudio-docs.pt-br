@@ -1,5 +1,7 @@
 ---
 title: Depurar aplicativos de 64 bits | Microsoft Docs
+description: Saiba como depurar um aplicativo de 64 bits com o Visual Studio. Há dicas para solução de problemas de atrasos de depuração inesperados.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386245"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560441"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.

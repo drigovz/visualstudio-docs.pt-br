@@ -1,5 +1,7 @@
 ---
 title: Implementando um fornecedor de porta | Microsoft Docs
+description: Saiba mais sobre como implementar um fornecedor de porta, que é necessário ao depurar para um computador não DCOM ou quando um novo dispositivo requer suporte.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738560"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560662"
 ---
 # <a name="implement-a-port-supplier"></a>Implementar um fornecedor de porta
 Um fornecedor de porta fornece portas na solicitação para o SDM (Gerenciador de depuração de sessão). Um fornecedor de porta deve ser implementado durante a depuração em um computador não DCOM ou quando um novo dispositivo precisar de suporte. Por exemplo, para fornecer depuração para um telefone celular, você pode configurar um fornecedor de porta que fornece portas, que se conectam ao telefone celular (talvez por meio de IR ou uma conexão de célula) e enumeram os processos e programas em execução no telefone.
