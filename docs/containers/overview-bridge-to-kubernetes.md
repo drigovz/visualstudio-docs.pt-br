@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440604"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595260"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Como funciona a Ponte para Kubernetes
 
@@ -72,7 +72,8 @@ Quando você habilita o trabalho em isolamento, o Bridge to kubernetes faz o seg
 Se o Bridge para o kubernetes detectar que Azure Dev Spaces está habilitado no cluster do kubernetes, será solicitado que você desabilite Azure Dev Spaces antes de poder usar a ponte para o kubernetes.
 
 O Gerenciador de roteamento faz o seguinte quando é iniciado:
-* Duplica todas as insere encontradas no namespace usando o *GENERATED_NAME* para o subdomínio.
+
+* Duplica todas as insere (incluindo insere do balanceador de carga) encontradas no namespace usando o *GENERATED_NAME* para o subdomínio.
 * Cria um pod Envoy para cada serviço associado ao insere duplicado com o subdomínio *GENERATED_NAME* .
 * Cria um pod Envoy adicional para o serviço no qual você está trabalhando isoladamente. Isso permite que as solicitações com o subdomínio sejam roteadas para o computador de desenvolvimento.
 * Configura as regras de roteamento para cada pod Envoy para manipular o roteamento de serviços com o subdomínio.
@@ -144,7 +145,7 @@ A ponte para o kubernetes tem as seguintes limitações:
 * Um serviço deve ser apoiado por um único pod para se conectar a esse serviço. Você não pode se conectar a um serviço com vários pods, como um serviço com réplicas.
 * Um pod pode ter apenas um único contêiner em execução nesse pod para que a ponte para kubernetes se conecte com êxito. A ponte para o kubernetes não pode se conectar a serviços com pods que têm contêineres adicionais, como contêineres sidecar injetados por malhas de serviços.
 * Atualmente, a ponte para kubernetes pods deve ser contêineres do Linux. Contêineres do Windows não têm suporte.
-* O isolamento não pode ser usado com HTTPS.
+* O isolamento não pode ser usado com HTTPS quando você usa a ponte para kubernetes com o Visual Studio. Somente há suporte para HTTPS no modo de isolamento quando você usa Visual Studio Code.
 * O Bridge para kubernetes precisa de permissões elevadas para ser executado em seu computador de desenvolvimento para editar o arquivo de hosts.
 * A ponte para kubernetes não pode ser usada em clusters com Azure Dev Spaces habilitado.
 
